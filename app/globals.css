@@ -1,26 +1,190 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
+
+/* ──────────────────────────────────────────────────────────────────
+   Sprout brand tokens — see docs/BRAND.md for the full spec.
+   Forest = brand identity, Lime = energy/CTAs, Ink = text/dark surfaces,
+   Cream = light backgrounds, Sage = soft secondary surfaces.
+   ────────────────────────────────────────────────────────────────── */
 
 @theme inline {
+  /* Sprout brand palette — direct color utilities (bg-sprout-forest, etc.) */
+  --color-sprout-forest: oklch(0.42 0.10 150);
+  --color-sprout-lime: oklch(0.95 0.18 130);
+  --color-sprout-ink: oklch(0.15 0.01 150);
+  --color-sprout-cream: oklch(0.985 0 0);
+  --color-sprout-sage: oklch(0.82 0.05 145);
+
+  /* shadcn semantic tokens (mapped to brand) */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Light mode = marketing pages (cream background, forest brand, ink text).
+   Lime is reserved for hero CTAs — use bg-sprout-lime text-sprout-ink directly. */
+:root {
+  --background: oklch(0.985 0 0);              /* Sprout Cream */
+  --foreground: oklch(0.15 0.01 150);          /* Sprout Ink */
+  --card: oklch(0.985 0 0);
+  --card-foreground: oklch(0.15 0.01 150);
+  --popover: oklch(0.985 0 0);
+  --popover-foreground: oklch(0.15 0.01 150);
+  --primary: oklch(0.42 0.10 150);             /* Sprout Forest */
+  --primary-foreground: oklch(0.985 0 0);      /* Sprout Cream */
+  --secondary: oklch(0.97 0.01 150);
+  --secondary-foreground: oklch(0.42 0.10 150);
+  --muted: oklch(0.97 0.005 150);
+  --muted-foreground: oklch(0.50 0.01 150);
+  --accent: oklch(0.95 0.02 150);
+  --accent-foreground: oklch(0.42 0.10 150);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.92 0.005 150);
+  --input: oklch(0.92 0.005 150);
+  --ring: oklch(0.42 0.10 150);                /* Forest focus rings */
+  --chart-1: oklch(0.42 0.10 150);             /* Forest */
+  --chart-2: oklch(0.95 0.18 130);             /* Lime */
+  --chart-3: oklch(0.82 0.05 145);             /* Sage */
+  --chart-4: oklch(0.55 0.10 150);
+  --chart-5: oklch(0.30 0.08 150);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.15 0.01 150);
+  --sidebar-primary: oklch(0.42 0.10 150);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.95 0.02 150);
+  --sidebar-accent-foreground: oklch(0.42 0.10 150);
+  --sidebar-border: oklch(0.92 0.005 150);
+  --sidebar-ring: oklch(0.42 0.10 150);
+}
+
+/* Dark mode = app interior (Ink background, glassmorphic surfaces, Lime CTAs).
+   In dark mode primary IS lime — that's the natural action color for the immersive app feel. */
+.dark {
+  --background: oklch(0.15 0.01 150);          /* Sprout Ink */
+  --foreground: oklch(0.985 0 0);              /* Sprout Cream */
+  --card: oklch(0.20 0.01 150);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.20 0.01 150);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.95 0.18 130);             /* Sprout Lime — primary CTA in app */
+  --primary-foreground: oklch(0.15 0.01 150);  /* Ink text on lime */
+  --secondary: oklch(0.25 0.02 150);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.25 0.02 150);
+  --muted-foreground: oklch(0.70 0.02 150);
+  --accent: oklch(0.30 0.04 150);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.95 0.18 130);                /* Lime focus rings in app */
+  --chart-1: oklch(0.95 0.18 130);             /* Lime */
+  --chart-2: oklch(0.62 0.13 150);             /* Forest mid */
+  --chart-3: oklch(0.82 0.05 145);             /* Sage */
+  --chart-4: oklch(0.50 0.10 150);
+  --chart-5: oklch(0.40 0.08 150);
+  --sidebar: oklch(0.18 0.01 150);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.95 0.18 130);
+  --sidebar-primary-foreground: oklch(0.15 0.01 150);
+  --sidebar-accent: oklch(0.25 0.02 150);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: oklch(0.95 0.18 130);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  html {
+    @apply font-sans;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ──────────────────────────────────────────────────────────────────
+   Atmospheric depth for the landing page
+   Slow drifting glows, breathing light, headline atmospheric glow.
+   Performance: opacity + transform only. No layout thrash.
+   ────────────────────────────────────────────────────────────────── */
+
+@keyframes ambient-drift-1 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.55; }
+  50%      { transform: translate3d(60px, -40px, 0) scale(1.1); opacity: 0.75; }
+}
+@keyframes ambient-drift-2 {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.4; }
+  50%      { transform: translate3d(-50px, 50px, 0) scale(0.95); opacity: 0.6; }
+}
+@keyframes ambient-breathe {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50%      { transform: scale(1.06); opacity: 0.7; }
+}
+@keyframes light-shimmer {
+  0%, 100% { opacity: 0.35; }
+  50%      { opacity: 0.55; }
+}
+
+.animate-drift-1 { animation: ambient-drift-1 22s ease-in-out infinite; will-change: transform, opacity; }
+.animate-drift-2 { animation: ambient-drift-2 28s ease-in-out infinite; will-change: transform, opacity; }
+.animate-breathe { animation: ambient-breathe 9s ease-in-out infinite; will-change: transform, opacity; }
+.animate-shimmer { animation: light-shimmer 6s ease-in-out infinite; will-change: opacity; }
+
+/* Headline lit by environment — subtle glow, not a drop shadow */
+.headline-lit {
+  text-shadow:
+    0 0 60px rgba(164, 201, 168, 0.18),
+    0 0 120px rgba(164, 201, 168, 0.10);
+}
+
+/* Honor users who don't want motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-drift-1, .animate-drift-2, .animate-breathe, .animate-shimmer {
+    animation: none;
+  }
 }
