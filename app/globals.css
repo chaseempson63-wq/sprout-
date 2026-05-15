@@ -148,43 +148,14 @@
 }
 
 /* ──────────────────────────────────────────────────────────────────
-   Atmospheric depth for the landing page
-   Slow drifting glows, breathing light, headline atmospheric glow.
-   Performance: opacity + transform only. No layout thrash.
+   Typography hierarchy
+   Cabinet Grotesk for display headlines (loaded in layout.tsx head)
+   Geist Sans for body (already loaded as default)
+   Two-font system gives clear headline/body differentiation.
    ────────────────────────────────────────────────────────────────── */
 
-@keyframes ambient-drift-1 {
-  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.55; }
-  50%      { transform: translate3d(60px, -40px, 0) scale(1.1); opacity: 0.75; }
-}
-@keyframes ambient-drift-2 {
-  0%, 100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.4; }
-  50%      { transform: translate3d(-50px, 50px, 0) scale(0.95); opacity: 0.6; }
-}
-@keyframes ambient-breathe {
-  0%, 100% { transform: scale(1); opacity: 0.5; }
-  50%      { transform: scale(1.06); opacity: 0.7; }
-}
-@keyframes light-shimmer {
-  0%, 100% { opacity: 0.35; }
-  50%      { opacity: 0.55; }
-}
-
-.animate-drift-1 { animation: ambient-drift-1 22s ease-in-out infinite; will-change: transform, opacity; }
-.animate-drift-2 { animation: ambient-drift-2 28s ease-in-out infinite; will-change: transform, opacity; }
-.animate-breathe { animation: ambient-breathe 9s ease-in-out infinite; will-change: transform, opacity; }
-.animate-shimmer { animation: light-shimmer 6s ease-in-out infinite; will-change: opacity; }
-
-/* Headline lit by environment — subtle glow, not a drop shadow */
-.headline-lit {
-  text-shadow:
-    0 0 60px rgba(164, 201, 168, 0.18),
-    0 0 120px rgba(164, 201, 168, 0.10);
-}
-
-/* Honor users who don't want motion */
-@media (prefers-reduced-motion: reduce) {
-  .animate-drift-1, .animate-drift-2, .animate-breathe, .animate-shimmer {
-    animation: none;
-  }
+.font-display {
+  font-family: 'Cabinet Grotesk', var(--font-geist-sans), -apple-system, system-ui, sans-serif;
+  font-feature-settings: 'ss01', 'ss02';
+  letter-spacing: -0.035em;
 }

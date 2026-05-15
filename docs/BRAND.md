@@ -62,21 +62,37 @@ Sprout is a **premium editorial wellness-tier homeschool product** — confident
 
 ## Typography
 
-### Current (provisional)
+### Locked: two-font system (updated 2026-05-14)
 
-**Geist Sans** (Vercel's font, free, geometric sans). Two weights only:
-- **Bold (700)** — headings, all caps moments, CTAs
-- **Regular (400)** — body, captions, supporting text
+**Cabinet Grotesk** — display headlines (loaded via Fontshare CDN in layout.tsx).
+- Use via `.font-display` utility class (defined in globals.css)
+- Weights: 700 Bold, 800 Extra Bold for big display moments
+- Letter-spacing: `-0.035em` (tight)
+- Apply to ALL major H1/H2 headlines, big numbers ($29, $249), key card titles
 
-### Pending Chase's font preference
+**Geist Sans** (Vercel's font, free, geometric sans) — body text.
+- Default font for everything that's not a display headline
+- Weights: 400 Regular (body), 700 Bold (subheads, emphasis)
+- No need for utility class — it's the default via `--font-geist-sans`
 
-Candidates if we move beyond Geist Sans:
-- **Cabinet Grotesk** (more distinctive, slightly chunkier)
-- **General Sans** (cleaner, modern, very versatile)
-- **Söhne** (premium, used by The New Yorker, OpenAI — paid license)
-- **Inter Display** (modern, slightly more characterful than Inter)
+### Why two fonts now (was previously one)
 
-Once chosen, swap globally. One typeface, two weights, forever.
+Single-font system left headlines and body subheads visually too close — same family, similar weights, only size separation. Adding Cabinet Grotesk for display creates real hierarchy: bold geometric *display* sans for headlines, clean *body* sans for everything else. Premium editorial feel without going serif.
+
+### Hierarchy in practice
+
+| Tier | Font | Weight | Tracking | Example |
+|------|------|--------|----------|---------|
+| Display | Cabinet Grotesk | 800 Extra Bold | -0.035em | Hero h1, section h2s, $29, "Sprout" wordmark in cards |
+| Subhead | Geist Sans | 700 Bold | tight | Card titles, eyebrow labels |
+| Body | Geist Sans | 400 Regular | default | All paragraph text, captions |
+
+### Rules unchanged
+
+- One display font, one body font. Two weights of body only. Don't add more.
+- All caps reserved for tracking-wide eyebrows + section labels.
+- No italics in UI. Italics only for editorial poster moments + verbatim quote attributions.
+- No serifs anywhere.
 
 ### Type scale
 
