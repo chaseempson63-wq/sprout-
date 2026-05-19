@@ -87,20 +87,22 @@ export function FloatingGlass({
       <div
         className="relative overflow-hidden rounded-2xl p-3.5"
         style={{
-          background:
-            "linear-gradient(135deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.08) 100%)",
-          backdropFilter: "blur(50px) saturate(220%) brightness(125%)",
-          WebkitBackdropFilter: "blur(50px) saturate(220%) brightness(125%)",
-          border: "1px solid rgba(255,255,255,0.30)",
+          background: `
+            radial-gradient(ellipse 85% 75% at 35% 35%, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0.14) 70%, rgba(255,255,255,0.08) 100%),
+            linear-gradient(135deg, rgba(27,55,34,0.62) 0%, rgba(15,38,22,0.78) 100%)
+          `,
+          backdropFilter: "blur(60px) saturate(200%) brightness(95%) contrast(112%)",
+          WebkitBackdropFilter: "blur(60px) saturate(200%) brightness(95%) contrast(112%)",
+          border: "1px solid rgba(255,255,255,0.38)",
           boxShadow:
-            "inset 1.5px 1.5px 0 rgba(255,255,255,0.55), inset -1px -1px 0 rgba(0,0,0,0.10), 0 20px 40px -8px rgba(0,0,0,0.55), 0 40px 80px -20px rgba(0,0,0,0.35)",
+            "inset 2px 2px 0 rgba(255,255,255,0.55), inset -1px -1px 0 rgba(0,0,0,0.20), 0 24px 48px -8px rgba(0,0,0,0.70), 0 48px 96px -20px rgba(0,0,0,0.45)",
         }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 60% 50% at 12% 12%, rgba(255,255,255,0.18) 0%, transparent 55%)",
+              "radial-gradient(ellipse 60% 50% at 12% 12%, rgba(255,255,255,0.22) 0%, transparent 60%)",
           }}
         />
         <div className="relative">{children}</div>
