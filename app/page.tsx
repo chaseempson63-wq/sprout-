@@ -414,8 +414,8 @@ export default function HomeV2() {
                     <PhoneScreenMemory />
                   </PhoneFrame>
                   <FloatingGlass
-                    className="absolute top-12 -right-12 md:-right-24 w-[220px] z-20 hidden md:block"
-                    tilt="rotateY(-14deg) rotateX(2deg) rotateZ(4deg)"
+                    className="absolute -bottom-4 -right-10 md:-right-20 w-[220px] z-20 hidden md:block"
+                    tilt="rotateY(-14deg) rotateX(-4deg) rotateZ(3deg)"
                   >
                     <div className="text-[9px] uppercase tracking-[0.2em] text-sprout-cream/85 font-bold mb-2">
                       Pattern · 6 weeks
@@ -523,8 +523,8 @@ export default function HomeV2() {
                     <PhoneScreenYear />
                   </PhoneFrame>
                   <FloatingGlass
-                    className="absolute top-1/4 -right-10 md:-right-24 w-[210px] z-20 hidden md:block"
-                    tilt="rotateY(-14deg) rotateX(2deg) rotateZ(4deg)"
+                    className="absolute -bottom-4 -right-10 md:-right-20 w-[210px] z-20 hidden md:block"
+                    tilt="rotateY(-14deg) rotateX(-4deg) rotateZ(3deg)"
                   >
                     <div className="text-[9px] uppercase tracking-[0.2em] text-sprout-cream/85 font-bold mb-2">
                       Year-end · Term 1
