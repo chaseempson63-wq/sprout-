@@ -96,9 +96,6 @@ export default function HomeV2() {
                 Start your first week free
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
               </Link>
-              <p className="text-sprout-cream/80 font-semibold" style={{ fontSize: "clamp(15px, 1.3vw, 17px)" }}>
-                One flat price for every kid. Not per child.
-              </p>
               <p className="text-sm text-sprout-cream/60">
                 7 days free · no card required · cancel anytime
               </p>
