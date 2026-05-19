@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Plus, ArrowRight, Check } from "lucide-react";
-import { SproutLogo, GlassCard, GlassGlow, GLASS_CARD_SOFT, FloatingGlass } from "./_components/Glass";
+import { SproutLogo, GlassCard, GLASS_CARD_SOFT, FloatingGlass } from "./_components/Glass";
 import {
   PhoneFrame,
   PhoneScreenDropIn,
@@ -821,7 +821,6 @@ export default function HomeV2() {
               },
             ].map((item, i) => (
               <details key={i} className={`${GLASS_CARD_SOFT} group rounded-2xl`}>
-                <GlassGlow tint={i % 2 === 0 ? "lime" : "sage"} />
                 <summary className="relative cursor-pointer list-none p-6 flex items-start justify-between gap-6">
                   <span className="font-bold text-sprout-cream leading-tight" style={{ fontSize: "clamp(17px, 1.5vw, 19px)" }} dangerouslySetInnerHTML={{ __html: item.q }} />
                   <span className="flex-shrink-0 w-7 h-7 rounded-full bg-white/25 flex items-center justify-center text-sprout-cream font-bold group-open:rotate-45 transition-transform border border-white/40 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)]">

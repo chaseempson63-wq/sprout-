@@ -27,7 +27,7 @@ export function GlassGlow({ tint = "lime" }: { tint?: "lime" | "sage" | "warm" }
 export function GlassCard({
   children,
   className = "",
-  glow = "lime",
+  glow: _glow = "lime",
   soft = false,
 }: {
   children: ReactNode;
@@ -35,43 +35,31 @@ export function GlassCard({
   glow?: "lime" | "sage" | "warm";
   soft?: boolean;
 }) {
+  void _glow;
   const surface = soft
-    ? "linear-gradient(135deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 100%)"
-    : "linear-gradient(135deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.03) 100%)";
-  const borderColor = soft ? "rgba(255,255,255,0.20)" : "rgba(255,255,255,0.30)";
+    ? "linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%)"
+    : "linear-gradient(135deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.05) 100%)";
+  const borderColor = soft ? "rgba(255,255,255,0.14)" : "rgba(255,255,255,0.18)";
 
   return (
     <div
       className={`relative overflow-hidden ${className}`}
       style={{
         background: surface,
-        backdropFilter: "blur(70px) saturate(220%) brightness(122%) contrast(108%)",
-        WebkitBackdropFilter: "blur(70px) saturate(220%) brightness(122%) contrast(108%)",
+        backdropFilter: "blur(40px)",
+        WebkitBackdropFilter: "blur(40px)",
         border: `1px solid ${borderColor}`,
-        boxShadow: `
-          inset 1.5px 1.5px 0 rgba(255,255,255,0.55),
-          inset -1px -1px 0 rgba(0,0,0,0.10),
-          0 2px 6px rgba(0,0,0,0.20),
-          0 30px 80px -10px rgba(0,0,0,0.55),
-          0 80px 160px -40px rgba(0,0,0,0.30)
-        `,
+        boxShadow:
+          "inset 0 1px 0 rgba(255,255,255,0.22), 0 8px 24px -8px rgba(0,0,0,0.32), 0 20px 40px -16px rgba(0,0,0,0.20)",
       }}
     >
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(ellipse 60% 45% at 10% 10%, rgba(255,255,255,0.16) 0%, transparent 55%)",
-        }}
-      />
-      <GlassGlow tint={glow} />
       <div className="relative">{children}</div>
     </div>
   );
 }
 
 export const GLASS_CARD_SOFT =
-  "relative overflow-hidden bg-gradient-to-br from-white/10 via-white/5 to-white/3 backdrop-blur-[70px] backdrop-saturate-[2.2] backdrop-brightness-[1.22] backdrop-contrast-[1.08] border border-white/20 shadow-[inset_1.5px_1.5px_0_rgba(255,255,255,0.55),inset_-1px_-1px_0_rgba(0,0,0,0.10),0_2px_6px_rgba(0,0,0,0.20),0_25px_60px_-10px_rgba(0,0,0,0.5),0_60px_120px_-30px_rgba(0,0,0,0.28)] before:absolute before:inset-0 before:pointer-events-none before:bg-[radial-gradient(ellipse_60%_45%_at_10%_10%,rgba(255,255,255,0.16)_0%,transparent_55%)]";
+  "relative overflow-hidden bg-white/[0.06] backdrop-blur-2xl border border-white/[0.14] shadow-[inset_0_1px_0_rgba(255,255,255,0.22),0_8px_24px_-8px_rgba(0,0,0,0.32),0_20px_40px_-16px_rgba(0,0,0,0.20)]";
 
 export function FloatingGlass({
   children,
