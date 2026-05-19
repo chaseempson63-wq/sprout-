@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Plus, ArrowRight, Check, Star } from "lucide-react";
+import { Plus, ArrowRight, Check } from "lucide-react";
 import { SproutLogo, GlassCard, GlassGlow, GLASS_CARD_SOFT, FloatingGlass } from "./_components/Glass";
 import {
   PhoneFrame,
@@ -71,7 +71,7 @@ export default function HomeV2() {
             <div className="flex justify-center mb-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-xs uppercase tracking-[0.25em] font-semibold">
                 <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                For homeschool mums · AU + NZ
+                For homeschool families · AU + NZ
               </div>
             </div>
 
@@ -107,11 +107,7 @@ export default function HomeV2() {
             {/* Hero-tier social proof: small rating-style badge (bevel-equivalent of 4.8 stars / 28.6k ratings) */}
             <div className="mt-14 flex justify-center">
               <div className="inline-flex items-center gap-4 px-5 py-3 rounded-full bg-sprout-cream/8 backdrop-blur-md border border-sprout-cream/15">
-                <div className="flex items-center gap-0.5 text-[#A4C9A8]">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-current" strokeWidth={0} />
-                  ))}
-                </div>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#A4C9A8]" />
                 <span className="text-sprout-cream/85 text-xs font-semibold tracking-wide">
                   Voiced by real AU + NZ homeschool mums
                 </span>
@@ -211,22 +207,22 @@ export default function HomeV2() {
               source="Mum Central · Australia"
             />
             <VerbatimCard
-              quote="Quote awaiting verbatim research · sourced from forum thread"
+              quote="Pending verbatim from this thread."
               source="Placeholder · AU homeschool group"
               variant="placeholder"
             />
             <VerbatimCard
-              quote="Quote awaiting verbatim research · sourced from forum thread"
+              quote="Pending verbatim from this thread."
               source="Placeholder · NZ homeschool group"
               variant="placeholder"
             />
             <VerbatimCard
-              quote="Quote awaiting verbatim research · sourced from forum thread"
+              quote="Pending verbatim from this thread."
               source="Placeholder · Hess UnAcademy"
               variant="placeholder"
             />
             <VerbatimCard
-              quote="Quote awaiting verbatim research · sourced from forum thread"
+              quote="Pending verbatim from this thread."
               source="Placeholder · Mum Central"
               variant="placeholder"
             />
@@ -332,7 +328,7 @@ export default function HomeV2() {
               Three stupid simple<br />moves. One Sunday<br />artifact.
             </h2>
             <p className="mt-8 text-sprout-cream/70 max-w-xl leading-relaxed" style={{ fontSize: "clamp(17px, 1.5vw, 19px)" }}>
-              Built for the mum who&apos;s already doing too much.
+              For when you&apos;re already doing too much.
               No daily goals. No streaks. No guilt.
             </p>
           </div>
@@ -455,7 +451,7 @@ export default function HomeV2() {
                   </p>
                   <ul className="mt-6 space-y-3">
                     {[
-                      "Reframes everyday moments as legitimate learning",
+                      "Shows what felt like chaos was actually learning.",
                       "Print it, share it, show your kid Monday morning",
                       "Doubles as a record of learning if your registration officer ever asks",
                     ].map((item) => (
@@ -724,8 +720,7 @@ export default function HomeV2() {
                 <span className="text-[#1B3722]/60 text-base">/year</span>
               </div>
               <p className="text-[#1B3722]/80 mb-8 leading-relaxed text-sm">
-                Less than $0.68 a day. Most mums pick this once they&apos;ve felt
-                the first Sunday land.
+                Less than $0.68 a day. Saves $99 over the year.
               </p>
               <Link
                 href="#start"
@@ -758,7 +753,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-4xl mx-auto text-center">
 
-          <CenteredEyebrow number="06" label="The mums Sprout is for" />
+          <CenteredEyebrow number="06" label="Who Sprout is for" />
 
           <p className="text-sprout-cream/85 leading-relaxed italic"
              style={{ fontSize: "clamp(28px, 4vw, 52px)", lineHeight: "1.15" }}>
@@ -787,7 +782,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-5xl mx-auto">
 
-          <SectionEyebrow number="07" label="What mums actually ask first" />
+          <SectionEyebrow number="07" label="What you&apos;ll ask first" />
 
           <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream mb-16 headline-lit"
               style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
@@ -905,11 +900,7 @@ export default function HomeV2() {
 
             <div className="mt-14 flex justify-center">
               <div className="inline-flex items-center gap-4 px-5 py-3 rounded-full bg-sprout-cream/8 backdrop-blur-md border border-sprout-cream/15">
-                <div className="flex items-center gap-0.5 text-[#A4C9A8]">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-current" strokeWidth={0} />
-                  ))}
-                </div>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#A4C9A8]" />
                 <span className="text-sprout-cream/85 text-xs font-semibold tracking-wide">
                   Voiced by real AU + NZ homeschool mums
                 </span>
