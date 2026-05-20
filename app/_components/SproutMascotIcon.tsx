@@ -45,8 +45,13 @@ const CHEEK_R = 1.7 * 1.09; //  cheek-dot radius
 
 export function SproutMascotIcon({ className = "" }: { className?: string }) {
   return (
+    // Tight viewBox below (135 85 330 460): hugs the character (leaves
+    // x=145-455, stem to y=540, top of leaves at y=92) with ~10px margin
+    // for the leaf drop-shadow halo. Replaces the original 0 0 600 600
+    // viewBox so the SVG renders edge-to-edge as the character — no empty
+    // padding inside its wrapper.
     <svg
-      viewBox="0 0 600 600"
+      viewBox="135 85 330 460"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-hidden="true"

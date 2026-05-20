@@ -91,7 +91,7 @@ export function Mascot() {
 
   return (
     <div
-      className="fixed z-50 bottom-5 right-5 md:bottom-8 md:right-8 flex flex-col items-end gap-2 pointer-events-none select-none"
+      className="fixed z-50 bottom-3 right-3 md:bottom-4 md:right-4 flex flex-col items-end gap-2 pointer-events-none select-none"
       aria-live="polite"
     >
       {/* speech bubble — re-mounts on line change for a soft pop.
@@ -125,13 +125,13 @@ export function Mascot() {
       </div>
 
       {/* mascot — real Sprout character SVG, floating freely (no chip,
-          no pill, no background). Sized for presence on the page; the
-          idle float keeps it alive. Note: the SVG viewBox has ~24%
-          horizontal padding baked in, so the visible character sits
-          inset from the wrapper's right edge — change SproutMascotIcon's
-          viewBox if you want it hugging the corner. */}
+          no pill, no background). Wrapper aspect matches the SVG's
+          tight viewBox (330/460) so the visible character fills the
+          wrapper edge-to-edge — no internal padding pushing it away
+          from the corner. Heights tuned to preserve the previous
+          character size on screen. */}
       <div
-        className="pointer-events-auto w-44 h-44 md:w-56 md:h-56 animate-mascot-float"
+        className="pointer-events-auto h-[132px] md:h-[168px] aspect-[330/460] animate-mascot-float"
         aria-hidden="true"
       >
         <SproutMascotIcon className="w-full h-full" />
