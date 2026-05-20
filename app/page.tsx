@@ -204,24 +204,20 @@ export default function HomeV2() {
               source="Mum Central · Australia"
             />
             <VerbatimCard
-              quote="Pending verbatim from this thread."
-              source="Placeholder · AU homeschool group"
-              variant="placeholder"
+              quote="Today was shit."
+              source="Mum Central · Australia"
             />
             <VerbatimCard
-              quote="Pending verbatim from this thread."
-              source="Placeholder · NZ homeschool group"
-              variant="placeholder"
+              quote="Is my child up-to-snuff with her peers?"
+              source="Hess UnAcademy"
             />
             <VerbatimCard
-              quote="Pending verbatim from this thread."
-              source="Placeholder · Hess UnAcademy"
-              variant="placeholder"
+              quote="In survival mode, learning is impossible."
+              source="School Can&apos;t Australia · NSW"
             />
             <VerbatimCard
-              quote="Pending verbatim from this thread."
-              source="Placeholder · Mum Central"
-              variant="placeholder"
+              quote={`This is our first year homeschooling and I'm so afraid of my daughter being "behind"!!!`}
+              source="Not That Hard To Homeschool"
             />
           </div>
 
