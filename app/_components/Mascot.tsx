@@ -28,21 +28,17 @@ const sproutLines = [
   "ok. your first sunday's on me.",           // 9  Final CTA — Sleep on Sunday
 ];
 
-const STORAGE_KEY = "sprout-mascot-dismissed";
-
 export function Mascot() {
   const [mounted, setMounted] = useState(false);
+  // Dismiss is in-page only — refresh or new tab restores the mascot.
   const [dismissed, setDismissed] = useState(false);
   const [activeIdx, setActiveIdx] = useState(0);
   const ratiosRef = useRef<Map<Element, number>>(new Map());
 
-  // On mount: check sessionStorage. Avoids SSR hydration mismatch by
-  // gating render on `mounted`.
+  // Gate render on `mounted` to avoid SSR hydration mismatch (the SSR
+  // pass renders nothing; client mount triggers the real render).
   useEffect(() => {
     setMounted(true);
-    if (typeof window !== "undefined") {
-      setDismissed(window.sessionStorage.getItem(STORAGE_KEY) === "1");
-    }
   }, []);
 
   // IntersectionObserver: pick the section with highest intersection ratio.
@@ -78,19 +74,8 @@ export function Mascot() {
     return () => observer.disconnect();
   }, [mounted, dismissed]);
 
-  const handleDismiss = () => {
-    setDismissed(true);
-    if (typeof window !== "undefined") {
-      window.sessionStorage.setItem(STORAGE_KEY, "1");
-    }
-  };
-
-  const handleRestore = () => {
-    setDismissed(false);
-    if (typeof window !== "undefined") {
-      window.sessionStorage.removeItem(STORAGE_KEY);
-    }
-  };
+  const handleDismiss = () => setDismissed(true);
+  const handleRestore = () => setDismissed(false);
 
   if (!mounted) return null;
 
