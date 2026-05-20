@@ -124,11 +124,14 @@ export function Mascot() {
         />
       </div>
 
-      {/* mascot — real Sprout character SVG (from Claude Design bundle),
-          in the same soft cream pill. Icon fills the pill so the face
-          (eyes + smile) is legible at small mobile sizes. */}
+      {/* mascot — real Sprout character SVG, floating freely (no chip,
+          no pill, no background). Sized for presence on the page; the
+          idle float keeps it alive. Note: the SVG viewBox has ~24%
+          horizontal padding baked in, so the visible character sits
+          inset from the wrapper's right edge — change SproutMascotIcon's
+          viewBox if you want it hugging the corner. */}
       <div
-        className="pointer-events-auto w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#FBF6EB] text-[#1B3722] flex items-center justify-center shadow-[0_15px_40px_-10px_rgba(0,0,0,0.45)] ring-1 ring-[#1B3722]/10 animate-mascot-float"
+        className="pointer-events-auto w-44 h-44 md:w-56 md:h-56 animate-mascot-float"
         aria-hidden="true"
       >
         <SproutMascotIcon className="w-full h-full" />
