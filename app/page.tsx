@@ -15,6 +15,7 @@ import {
   VerbatimCard,
 } from "./_components/Sections";
 import { PhoneShowcase } from "./_components/PhoneShowcase";
+import { Mascot } from "./_components/Mascot";
 
 /* ─────────────────────────────────────────────────────────────────────
    Sprout landing page v2 — structural rebuild against bevel.health
@@ -909,6 +910,7 @@ export default function HomeV2() {
         </div>
       </footer>
 
+      <Mascot />
     </main>
   );
 }

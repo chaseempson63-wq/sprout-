@@ -159,3 +159,35 @@
   font-feature-settings: 'ss01', 'ss02';
   letter-spacing: -0.035em;
 }
+
+/* ──────────────────────────────────────────────────────────────────
+   Mascot — companion float + bubble pop
+   Used by app/_components/Mascot.tsx. Subtle motion, ~3s loop.
+   Respects prefers-reduced-motion.
+   ────────────────────────────────────────────────────────────────── */
+
+@keyframes mascot-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+@keyframes mascot-pop {
+  0%   { opacity: 0; transform: translateY(4px) scale(0.96); }
+  60%  { opacity: 1; transform: translateY(0)  scale(1.02); }
+  100% { opacity: 1; transform: translateY(0)  scale(1); }
+}
+
+.animate-mascot-float {
+  animation: mascot-float 3s ease-in-out infinite;
+}
+
+.animate-mascot-pop {
+  animation: mascot-pop 320ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-mascot-float,
+  .animate-mascot-pop {
+    animation: none;
+  }
+}

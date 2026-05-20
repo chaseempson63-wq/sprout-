@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,6 +9,15 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+// Nunito 700 — scoped to the Sprout mascot's speech bubble in Mascot.tsx.
+// The mascot is a character; this font is its voice. Don't apply it
+// elsewhere — the rest of the page stays on Geist / Cabinet Grotesk.
+const nunito = Nunito({
+  variable: "--font-nunito",
+  weight: "700",
   subsets: ["latin"],
 });
 
@@ -26,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} h-full antialiased`}
     >
       <head>
         {/* Cabinet Grotesk for display headlines — distinct from Geist body

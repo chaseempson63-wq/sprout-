@@ -1,0 +1,138 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { X } from "lucide-react";
+import { SproutMascotIcon } from "./SproutMascotIcon";
+
+/* ─────────────────────────────────────────────────────────────────────
+   Mascot — floating Sprout companion.
+   Fixed bottom-right. Idle float. IntersectionObserver picks the
+   most-visible <main> section and shows that section's line. One
+   short, in-character line per section. Dismissible per session.
+   See globals.css for `animate-mascot-float` / `animate-mascot-pop`.
+   ───────────────────────────────────────────────────────────────────── */
+
+/* Lines are indexed against DOM order of <main> > <section>.
+   If the page section order changes, re-check sproutLines indexing. */
+const sproutLines = [
+  "oh hi. scroll, i'll come with you.",       // 0  Hero
+  "voice memo. photo. one line. that's me.",  // 1  Product reveal (phones)
+  "you're not making this feeling up.",       // 2  01 — Verbatim wall
+  "yeah. this is the part i was made for.",   // 3  02 — 11:42pm / reason Sprout exists
+  "three moves. that's it. promise.",         // 4  03 — How it works
+  "notes apps forget. i remember every week.",// 5  04 — Why Sprout, not another tool
+  "one price. all your kids. no maths.",      // 6  05 — Pricing
+  "read this one slow. it's the one.",        // 7  06 — "I see you. I feel you."
+  "the bits you were already wondering.",     // 8  07 — FAQ
+  "ok. your first sunday's on me.",           // 9  Final CTA — Sleep on Sunday
+];
+
+const STORAGE_KEY = "sprout-mascot-dismissed";
+
+export function Mascot() {
+  const [mounted, setMounted] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
+  const [activeIdx, setActiveIdx] = useState(0);
+  const ratiosRef = useRef<Map<Element, number>>(new Map());
+
+  // On mount: check sessionStorage. Avoids SSR hydration mismatch by
+  // gating render on `mounted`.
+  useEffect(() => {
+    setMounted(true);
+    if (typeof window !== "undefined") {
+      setDismissed(window.sessionStorage.getItem(STORAGE_KEY) === "1");
+    }
+  }, []);
+
+  // IntersectionObserver: pick the section with highest intersection ratio.
+  // Only observes <main> > section to avoid picking up footer or nested.
+  useEffect(() => {
+    if (!mounted || dismissed) return;
+
+    const sections = Array.from(
+      document.querySelectorAll<HTMLElement>("main > section")
+    );
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          ratiosRef.current.set(entry.target, entry.intersectionRatio);
+        }
+        let bestIdx = 0;
+        let bestRatio = -1;
+        sections.forEach((sec, i) => {
+          const r = ratiosRef.current.get(sec) ?? 0;
+          if (r > bestRatio) {
+            bestRatio = r;
+            bestIdx = i;
+          }
+        });
+        setActiveIdx(bestIdx);
+      },
+      { threshold: [0, 0.1, 0.25, 0.5, 0.75, 1] }
+    );
+
+    sections.forEach((sec) => observer.observe(sec));
+    return () => observer.disconnect();
+  }, [mounted, dismissed]);
+
+  const handleDismiss = () => {
+    setDismissed(true);
+    if (typeof window !== "undefined") {
+      window.sessionStorage.setItem(STORAGE_KEY, "1");
+    }
+  };
+
+  if (!mounted || dismissed) return null;
+
+  const line =
+    sproutLines[Math.min(activeIdx, sproutLines.length - 1)] ?? sproutLines[0];
+
+  return (
+    <div
+      className="fixed z-50 bottom-5 right-5 md:bottom-8 md:right-8 flex flex-col items-end gap-2 pointer-events-none select-none"
+      aria-live="polite"
+    >
+      {/* speech bubble — re-mounts on line change for a soft pop.
+          Background + text colour match the existing cream-card system
+          on the page (see "The Sprout way" card in page.tsx). Font is
+          Nunito 700 so the line reads as the mascot's chunky character
+          voice, not as a system notification. */}
+      <div
+        key={line}
+        className="pointer-events-auto relative max-w-[220px] md:max-w-[260px] rounded-2xl bg-[#F4EDE0] text-[#1B3722] px-4 py-3 pr-5 text-[13px] md:text-[15px] font-bold leading-snug shadow-[0_15px_40px_-10px_rgba(0,0,0,0.35)] animate-mascot-pop"
+        style={{ fontFamily: "var(--font-nunito), system-ui, sans-serif" }}
+        role="status"
+      >
+        {line}
+
+        {/* dismiss × — top-right corner of bubble */}
+        <button
+          type="button"
+          onClick={handleDismiss}
+          aria-label="Dismiss Sprout companion"
+          className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#1B3722] text-[#FBF6EB] flex items-center justify-center hover:bg-[#0F1311] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D8FF9A]/60"
+        >
+          <X className="w-3 h-3" strokeWidth={2.5} />
+        </button>
+
+        {/* tail pointing down toward mascot — matches bubble cream */}
+        <span
+          aria-hidden="true"
+          className="absolute -bottom-1.5 right-7 w-3 h-3 rotate-45 bg-[#F4EDE0]"
+        />
+      </div>
+
+      {/* mascot — real Sprout character SVG (from Claude Design bundle),
+          in the same soft cream pill. Icon fills the pill so the face
+          (eyes + smile) is legible at small mobile sizes. */}
+      <div
+        className="pointer-events-auto w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#FBF6EB] text-[#1B3722] flex items-center justify-center shadow-[0_15px_40px_-10px_rgba(0,0,0,0.45)] ring-1 ring-[#1B3722]/10 animate-mascot-float"
+        aria-hidden="true"
+      >
+        <SproutMascotIcon className="w-full h-full" />
+      </div>
+    </div>
+  );
+}
