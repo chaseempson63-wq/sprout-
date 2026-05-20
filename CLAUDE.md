@@ -87,6 +87,10 @@ A clean save-state for future sessions. Read this first before assuming what's b
 - **What time does the doubt actually surface** — Sunday night, Friday afternoon, mid-week? The "Sunday night" framing is a brand assumption, not a researched truth.
 - **Does the sparse-input failure mode kill the magic?** If a mum logs 2 voice memos in a chaotic week, is the report still good?
 
+### Market context (the bull-case backdrop the 5/10 doesn't capture)
+
+AI tracking apps are in a major boom cycle right now — Cal AI (photo-based calorie tracking) exited for ~9 figures, and the category leaders aren't winning on tracking, they're winning on removing input friction with AI. Sprout's mechanic (voice memo / photo / sentence → AI compiles meaning) is the Cal AI playbook applied to homeschool, in a niche with no direct competitor: Tinybeans is typical-parent memory-keeping, Day One is personal journaling — neither sits in the "AI compiles your homeschool week into proof your kid is learning" mental slot. AU/NZ homeschool is a defensible beachhead before US expansion. The bear case in the viability read still stands (behaviour adoption unproven, wallet unvalidated, founder distribution problem mitigated by warm-contact motion) — but both cases coexist. This is a higher-variance bet than the 5/10 captures: a niche-leading AI tracker in a booming category with no direct competitor and unproven behaviour adoption is the shape of a bet that goes to zero or to nine figures, not mediocre.
+
 ### Honest viability read (2026-05-20)
 
 **5/10.** Sitting exactly on the validation gate.
