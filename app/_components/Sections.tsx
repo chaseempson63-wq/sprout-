@@ -70,18 +70,17 @@ export function FeatureBlock({
 
 export function VerbatimCard({
   quote,
-  source,
-  variant = "real",
+  name,
+  location,
 }: {
   quote: string;
-  source: string;
-  variant?: "real" | "placeholder";
+  name: string;
+  location: string;
 }) {
-  const isPlaceholder = variant === "placeholder";
   return (
-    <GlassCard className={`p-6 md:p-7 rounded-3xl h-full ${isPlaceholder ? "opacity-55" : ""}`} glow={isPlaceholder ? "sage" : "warm"} soft>
+    <GlassCard className="p-6 md:p-7 rounded-3xl h-full" glow="warm" soft>
       <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-4">
-        {isPlaceholder ? "✱ Research in progress · verbatim quote coming" : "✱ Real mum"}
+        ✱ {name}
       </div>
       <p
         className="text-sprout-cream leading-relaxed italic"
@@ -90,7 +89,7 @@ export function VerbatimCard({
         &ldquo;{quote}&rdquo;
       </p>
       <div className="mt-6 text-[10px] text-sprout-cream/65 uppercase tracking-[0.25em]">
-        {source}
+        {location}
       </div>
     </GlassCard>
   );

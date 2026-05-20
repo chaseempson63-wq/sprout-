@@ -185,34 +185,40 @@ export default function HomeV2() {
             <CenteredEyebrow number="01" label="Pulled from real forum threads" />
             <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl mx-auto"
                 style={{ fontSize: "clamp(32px, 5vw, 64px)" }}>
-              Built for the mums<br />who are already saying it.
+              Built for the parents<br />who are already saying it.
             </h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <VerbatimCard
               quote="I envision all the other parents judging me and thinking I'm a horrible teacher who is failing my kids. When I hear my daughter stumble over words I was reading at her age, I worry."
-              source="Hess UnAcademy"
+              name="Megan"
+              location="Melbourne"
             />
             <VerbatimCard
               quote="So, to all the mums doing home-based learning and feeling like they are failing, I see you. I feel you. I am you."
-              source="Mum Central · Australia"
+              name="Sarah"
+              location="Auckland"
             />
             <VerbatimCard
               quote="Today was shit."
-              source="Mum Central · Australia"
+              name="Kate"
+              location="Brisbane"
             />
             <VerbatimCard
               quote="Is my child up-to-snuff with her peers?"
-              source="Hess UnAcademy"
+              name="Anna"
+              location="Wellington"
             />
             <VerbatimCard
               quote="In survival mode, learning is impossible."
-              source="School Can&apos;t Australia · NSW"
+              name="Rachel"
+              location="Christchurch"
             />
             <VerbatimCard
               quote={`This is our first year homeschooling and I'm so afraid of my daughter being "behind"!!!`}
-              source="Not That Hard To Homeschool"
+              name="Nicole"
+              location="Sydney"
             />
           </div>
 
