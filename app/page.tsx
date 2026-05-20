@@ -147,19 +147,15 @@ export default function HomeV2() {
         <div className="relative max-w-7xl mx-auto">
 
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10" style={{ perspective: "2000px" }}>
-            <div className="hidden md:block" style={{ transform: "rotateY(15deg) rotateX(4deg) translateZ(-40px)" }}>
-              <PhoneFrame tilt="rotateY(15deg) rotateX(4deg)">
-                <PhoneScreenDropIn />
-              </PhoneFrame>
-            </div>
+            <PhoneFrame tilt="rotateY(15deg) rotateX(4deg)">
+              <PhoneScreenDropIn />
+            </PhoneFrame>
             <PhoneFrame tilt="rotateY(0deg) rotateX(2deg) translateZ(20px)">
               <PhoneScreenReport />
             </PhoneFrame>
-            <div className="hidden md:block" style={{ transform: "rotateY(-15deg) rotateX(4deg) translateZ(-40px)" }}>
-              <PhoneFrame tilt="rotateY(-15deg) rotateX(4deg)">
-                <PhoneScreenMemory />
-              </PhoneFrame>
-            </div>
+            <PhoneFrame tilt="rotateY(-15deg) rotateX(4deg)">
+              <PhoneScreenMemory />
+            </PhoneFrame>
           </div>
 
           <div className="mt-16 flex items-center justify-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
