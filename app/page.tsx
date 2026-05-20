@@ -200,7 +200,7 @@ export default function HomeV2() {
               source="Hess UnAcademy"
             />
             <VerbatimCard
-              quote="To all the mums doing home-based learning and feeling like they are failing. I see you. I feel you. I am you."
+              quote="So, to all the mums doing home-based learning and feeling like they are failing, I see you. I feel you. I am you."
               source="Mum Central · Australia"
             />
             <VerbatimCard
@@ -754,8 +754,8 @@ export default function HomeV2() {
 
           <p className="text-sprout-cream/85 leading-relaxed italic"
              style={{ fontSize: "clamp(28px, 4vw, 52px)", lineHeight: "1.15" }}>
-            &ldquo;To all the mums doing home-based learning and feeling like they
-            are failing.<br /><span className="text-sprout-cream">I see you. I feel you. I am you.</span>&rdquo;
+            &ldquo;So, to all the mums doing home-based learning and feeling like they
+            are failing,<br /><span className="text-sprout-cream">I see you. I feel you. I am you.</span>&rdquo;
           </p>
           <div className="mt-10 inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
             <span className="block w-8 h-px bg-sprout-cream/30" />
