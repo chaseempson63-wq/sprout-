@@ -13,7 +13,6 @@ import {
   CenteredEyebrow,
   FeatureBlock,
   VerbatimCard,
-  StatTile,
 } from "./_components/Sections";
 
 /* ─────────────────────────────────────────────────────────────────────
@@ -527,30 +526,6 @@ export default function HomeV2() {
             />
 
           </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          SOCIAL PROOF #2 — STATS STRIP (density shift)
-          (bevel position 14 — high-density logo wall. Sprout has no
-          partner logos, so we use stat tiles instead — same density
-          rhythm, different content.)
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative px-6 md:px-12 py-20 md:py-28 overflow-hidden">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1B3722]/40 via-[#2A5132]/30 to-[#1B3722]/40" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto">
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            <StatTile value="$0.95" label="Per day, all your kids" />
-            <StatTile value="52" label="Weekly reports a year" />
-            <StatTile value="All" label="AU + NZ states · NESA, HEU, VRQA, MoE" />
-            <StatTile value="0" label="Streaks. Reminders. Guilt." />
-          </div>
-
         </div>
       </section>
 
