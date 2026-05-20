@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { X } from "lucide-react";
 import { SproutMascotIcon } from "./SproutMascotIcon";
+import { SproutLogo } from "./Glass";
 
 /* ─────────────────────────────────────────────────────────────────────
    Mascot — floating Sprout companion.
@@ -84,7 +85,29 @@ export function Mascot() {
     }
   };
 
-  if (!mounted || dismissed) return null;
+  const handleRestore = () => {
+    setDismissed(false);
+    if (typeof window !== "undefined") {
+      window.sessionStorage.removeItem(STORAGE_KEY);
+    }
+  };
+
+  if (!mounted) return null;
+
+  // Dismissed state — show a small cream "bring back" affordance in the
+  // same corner. Tap it to restore the mascot for the rest of the session.
+  if (dismissed) {
+    return (
+      <button
+        type="button"
+        onClick={handleRestore}
+        aria-label="Bring back Sprout"
+        className="fixed z-50 bottom-3 right-3 md:bottom-4 md:right-4 w-11 h-11 rounded-full bg-[#F4EDE0] text-[#1B3722] flex items-center justify-center shadow-[0_8px_24px_-6px_rgba(0,0,0,0.4)] ring-1 ring-[#1B3722]/10 hover:scale-105 active:scale-95 transition-transform animate-mascot-pop focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1B3722]/40"
+      >
+        <SproutLogo className="w-5 h-5" />
+      </button>
+    );
+  }
 
   const line =
     sproutLines[Math.min(activeIdx, sproutLines.length - 1)] ?? sproutLines[0];
