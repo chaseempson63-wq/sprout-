@@ -637,6 +637,43 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
+          SHARED MOMENT  (unnumbered scene between Why-Sprout and Pricing)
+          Kitchen table on Friday — parent + kid + the printed report.
+          Closes the emotional loop the 3am section opens. One scene, no
+          marketing claims. Voice = founder, painted, AU/NZ register.
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
+
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2A5132]/30 via-[#3D6643]/20 to-[#1B3722]/40" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#94BC8E]/10 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-3xl mx-auto text-center">
+
+          <div className="inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold mb-10 md:mb-12">
+            <span className="block w-8 h-px bg-sprout-cream/30" />
+            <span>Friday afternoon</span>
+            <span className="block w-8 h-px bg-sprout-cream/30" />
+          </div>
+
+          <p className="text-sprout-cream/85 leading-snug"
+             style={{ fontSize: "clamp(24px, 3.8vw, 44px)", lineHeight: "1.2" }}>
+            The printed report sits on the kitchen table, still warm.
+            Charlie climbs up next to you and points at the volcano
+            week —{" "}
+            <span className="text-sprout-cream italic">&ldquo;we did that.&rdquo;</span>
+          </p>
+
+          <p className="mt-8 text-sprout-cream/65 leading-relaxed max-w-xl mx-auto"
+             style={{ fontSize: "clamp(15px, 1.4vw, 18px)" }}>
+            Both of you see what the week was.
+          </p>
+
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
           PRICING  (existing block — kept in roughly the same position)
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">

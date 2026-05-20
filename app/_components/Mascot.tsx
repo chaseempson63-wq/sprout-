@@ -22,10 +22,11 @@ const sproutLines = [
   "yeah. this is the part i was made for.",   // 3  02 — 11:42pm / reason Sprout exists
   "three moves. that's it. promise.",         // 4  03 — How it works
   "notes apps forget. i remember every week.",// 5  04 — Why Sprout, not another tool
-  "one price. all your kids. no maths.",      // 6  05 — Pricing
-  "read this one slow. it's the one.",        // 7  06 — "I see you. I feel you."
-  "the bits you were already wondering.",     // 8  07 — FAQ
-  "ok. your first sunday's on me.",           // 9  Final CTA — Sleep on Sunday
+  "this is the good bit.",                    // 6  Shared moment — Friday kitchen table
+  "one price. all your kids. no maths.",      // 7  05 — Pricing
+  "read this one slow. it's the one.",        // 8  06 — "I see you. I feel you."
+  "the bits you were already wondering.",     // 9  07 — FAQ
+  "ok. your first sunday's on me.",           // 10 Final CTA — Sleep on Sunday
 ];
 
 export function Mascot() {
