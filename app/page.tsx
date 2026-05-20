@@ -145,16 +145,22 @@ export default function HomeV2() {
 
         <div className="relative max-w-7xl mx-auto">
 
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10" style={{ perspective: "2000px" }}>
-            <PhoneFrame tilt="rotateY(15deg) rotateX(4deg)">
-              <PhoneScreenDropIn />
-            </PhoneFrame>
-            <PhoneFrame tilt="rotateY(0deg) rotateX(2deg) translateZ(20px)">
-              <PhoneScreenReport />
-            </PhoneFrame>
-            <PhoneFrame tilt="rotateY(-15deg) rotateX(4deg)">
-              <PhoneScreenMemory />
-            </PhoneFrame>
+          <div className="flex items-center md:flex-wrap justify-start md:justify-center gap-6 md:gap-10 overflow-x-auto md:overflow-visible snap-x snap-mandatory -mx-6 px-6 md:mx-0 md:px-0 pb-4 md:pb-0" style={{ perspective: "2000px" }}>
+            <div className="snap-center shrink-0">
+              <PhoneFrame tilt="rotateY(15deg) rotateX(4deg)">
+                <PhoneScreenDropIn />
+              </PhoneFrame>
+            </div>
+            <div className="snap-center shrink-0">
+              <PhoneFrame tilt="rotateY(0deg) rotateX(2deg) translateZ(20px)">
+                <PhoneScreenReport />
+              </PhoneFrame>
+            </div>
+            <div className="snap-center shrink-0">
+              <PhoneFrame tilt="rotateY(-15deg) rotateX(4deg)">
+                <PhoneScreenMemory />
+              </PhoneFrame>
+            </div>
           </div>
 
           <div className="mt-16 flex items-center justify-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
