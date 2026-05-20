@@ -24,8 +24,8 @@ const sproutLines = [
   "notes apps forget. i remember every week.",// 5  04 — Why Sprout, not another tool
   "this is the good bit.",                    // 6  Shared moment — Friday kitchen table
   "one price. all your kids. no maths.",      // 7  05 — Pricing
-  "read this one slow. it's the one.",        // 8  06 — "I see you. I feel you."
-  "the bits you were already wondering.",     // 9  07 — FAQ
+  "the bits you were already wondering.",     // 8  06 — FAQ (moved up)
+  "read this one slow. it's the one.",        // 9  07 — "I see you. I feel you." (trust seal)
   "ok. your first sunday's on me.",           // 10 Final CTA — Sleep on Sunday
 ];
 

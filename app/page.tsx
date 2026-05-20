@@ -748,38 +748,9 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          SOCIAL PROOF #3 — TESTIMONIAL SPOTLIGHT
-          (bevel position 23 — testimonial carousel. We treat it as a
-          single hero-sized verbatim instead of a carousel — different
-          visual treatment from the wall in section #1.)
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#3D6643]/30 via-[#4D7B53]/40 to-[#76A77A]/20" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full bg-[#A4C9A8]/12 blur-3xl animate-breathe" />
-        </div>
-
-        <div className="relative max-w-4xl mx-auto text-center">
-
-          <CenteredEyebrow number="06" label="Who Sprout is for" />
-
-          <p className="text-sprout-cream/85 leading-relaxed italic"
-             style={{ fontSize: "clamp(28px, 4vw, 52px)", lineHeight: "1.15" }}>
-            &ldquo;So, to all the mums doing home-based learning and feeling like they
-            are failing,<br /><span className="text-sprout-cream">I see you. I feel you. I am you.</span>&rdquo;
-          </p>
-          <div className="mt-10 inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
-            <span className="block w-8 h-px bg-sprout-cream/30" />
-            <span>Verbatim · Mum Central · Australia</span>
-            <span className="block w-8 h-px bg-sprout-cream/30" />
-          </div>
-
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          FAQ / OBJECTIONS  (existing — kept structurally)
+          FAQ / OBJECTIONS  (moved up to sit between Pricing and the
+          "I see you" trust seal — pricing → objections handled →
+          emotional re-warm → close.)
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
 
@@ -791,7 +762,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-5xl mx-auto">
 
-          <SectionEyebrow number="07" label="What you&apos;ll ask first" />
+          <SectionEyebrow number="06" label="What you&apos;ll ask first" />
 
           <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream mb-16 headline-lit"
               style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
@@ -839,6 +810,36 @@ export default function HomeV2() {
                 <div className="relative px-6 pb-6 -mt-2 text-sprout-cream/85 leading-relaxed" style={{ fontSize: "16px" }} dangerouslySetInnerHTML={{ __html: item.a }} />
               </details>
             ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          TRUST SEAL — "I see you. I feel you. I am you."
+          (Mum Central verbatim. Moved below FAQ so the strongest single
+          trust moment sits immediately before the close CTA.)
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
+
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#3D6643]/30 via-[#4D7B53]/40 to-[#76A77A]/20" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full bg-[#A4C9A8]/12 blur-3xl animate-breathe" />
+        </div>
+
+        <div className="relative max-w-4xl mx-auto text-center">
+
+          <CenteredEyebrow number="07" label="Who Sprout is for" />
+
+          <p className="text-sprout-cream/85 leading-relaxed italic"
+             style={{ fontSize: "clamp(28px, 4vw, 52px)", lineHeight: "1.15" }}>
+            &ldquo;So, to all the mums doing home-based learning and feeling like they
+            are failing,<br /><span className="text-sprout-cream">I see you. I feel you. I am you.</span>&rdquo;
+          </p>
+          <div className="mt-10 inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
+            <span className="block w-8 h-px bg-sprout-cream/30" />
+            <span>Verbatim · Mum Central · Australia</span>
+            <span className="block w-8 h-px bg-sprout-cream/30" />
           </div>
 
         </div>
