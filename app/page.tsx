@@ -700,7 +700,15 @@ export default function HomeV2() {
               },
               {
                 q: "How is Sprout different from my Notes app or ChatGPT?",
-                a: "Notes apps don&apos;t compile your week, they give you a longer scroll. ChatGPT forgets every session. Sprout remembers every moment and references back. Continuity is the whole product.",
+                a: "Notes apps don&apos;t compile your week, they give you a longer scroll. ChatGPT forgets every session — and trains on what you tell it. Sprout remembers every moment and references back, but only for you. Continuity is the whole product. Your week stays yours.",
+              },
+              {
+                q: "Do you sell or train on our data?",
+                a: "No, and we never will. Your kid&apos;s voice memos, photos, and weekly reports stay yours. We don&apos;t sell them, we don&apos;t use them to train AI models, we don&apos;t share them with advertisers. The whole point of Sprout is that your family&apos;s week is yours alone. Selling it would defeat the entire reason this exists.",
+              },
+              {
+                q: "Can my kid record their own entries?",
+                a: "Yes — and we&apos;d encourage it. Daily reflection is one of the most durable habits a child can build, and it forms faster between ages six and eleven than at any later age. Hand them the phone, let them voice-memo what they made, what they figured out, what they got stuck on. Their report becomes their voice — not just yours about them. It&apos;s healthy for both of you, and it teaches a skill they keep for life.",
               },
               {
                 q: "What if I forget to log for a week?",
