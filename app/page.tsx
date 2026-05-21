@@ -16,6 +16,7 @@ import {
 } from "./_components/Sections";
 import { PhoneShowcase } from "./_components/PhoneShowcase";
 import { Mascot } from "./_components/Mascot";
+import { Waitlist } from "./_components/Waitlist";
 
 /* ─────────────────────────────────────────────────────────────────────
    Sprout landing page v2 — structural rebuild against bevel.health
@@ -94,11 +95,11 @@ export default function HomeV2() {
                 href="#start"
                 className="group inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-[#F4EDE0] text-[#1B3722] font-bold text-base hover:bg-[#FBF6EB] transition-colors focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-sprout-cream/40"
               >
-                Start your first week free
+                Join the waitlist
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
               </Link>
               <p className="text-sm text-sprout-cream/60">
-                7 days free · no card required · cancel anytime
+                Free to join · 100 founding spots · doubles at 25
               </p>
             </div>
 
@@ -355,7 +356,7 @@ export default function HomeV2() {
                     <PhoneScreenDropIn />
                   </PhoneFrame>
                   <FloatingGlass
-                    className="absolute -bottom-4 -left-10 md:-left-20 w-[200px] z-20 hidden md:block"
+                    className="absolute -bottom-2 md:-bottom-4 -left-3 md:-left-20 w-[150px] md:w-[200px] z-20"
                     tilt="rotateY(14deg) rotateX(-4deg) rotateZ(-3deg)"
                   >
                     <div className="flex items-center gap-2 mb-1.5">
@@ -406,7 +407,7 @@ export default function HomeV2() {
                     <PhoneScreenMemory />
                   </PhoneFrame>
                   <FloatingGlass
-                    className="absolute -bottom-4 -right-10 md:-right-20 w-[220px] z-20 hidden md:block"
+                    className="absolute -bottom-2 md:-bottom-4 -right-3 md:-right-20 w-[155px] md:w-[220px] z-20"
                     tilt="rotateY(-14deg) rotateX(-4deg) rotateZ(3deg)"
                   >
                     <div className="text-[9px] uppercase tracking-[0.2em] text-sprout-cream/85 font-bold mb-2">
@@ -468,7 +469,7 @@ export default function HomeV2() {
                     <PhoneScreenReport />
                   </PhoneFrame>
                   <FloatingGlass
-                    className="absolute -top-6 -left-12 md:-left-24 w-[210px] z-20 hidden md:block"
+                    className="absolute -top-3 md:-top-6 -left-3 md:-left-24 w-[150px] md:w-[210px] z-20"
                     tilt="rotateY(12deg) rotateX(-4deg) rotateZ(-3deg)"
                   >
                     <div className="flex items-center gap-2 mb-1.5">
@@ -515,7 +516,7 @@ export default function HomeV2() {
                     <PhoneScreenYear />
                   </PhoneFrame>
                   <FloatingGlass
-                    className="absolute -bottom-4 -right-10 md:-right-20 w-[210px] z-20 hidden md:block"
+                    className="absolute -bottom-2 md:-bottom-4 -right-3 md:-right-20 w-[150px] md:w-[210px] z-20"
                     tilt="rotateY(-14deg) rotateX(-4deg) rotateZ(3deg)"
                   >
                     <div className="text-[9px] uppercase tracking-[0.2em] text-sprout-cream/85 font-bold mb-2">
@@ -874,40 +875,34 @@ export default function HomeV2() {
         </div>
 
         <div className="relative z-10 flex-1 flex flex-col items-center justify-center py-16">
-          <div className="max-w-3xl w-full text-center">
+          <div className="w-full">
 
-            <div className="flex justify-center mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-xs uppercase tracking-[0.25em] font-semibold">
-                <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                Your first Sunday is on us
+            <div className="text-center max-w-3xl mx-auto">
+
+              <div className="flex justify-center mb-8">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-xs uppercase tracking-[0.25em] font-semibold">
+                  <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
+                  Two ways in
+                </div>
               </div>
-            </div>
 
-            <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream headline-lit"
-                style={{ fontSize: "clamp(48px, 9vw, 120px)" }}>
-              Sleep on<br />Sunday.
-            </h2>
+              <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream headline-lit"
+                  style={{ fontSize: "clamp(48px, 9vw, 120px)" }}>
+                Sleep on<br />Sunday.
+              </h2>
 
-            <p className="mt-10 text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
-               style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
-              Try Sprout free for 7 days. Get one full weekly report, yours
-              to keep forever, even if you cancel.
-            </p>
-
-            <div className="mt-12 flex flex-col items-center gap-4">
-              <Link
-                href="https://app.sprout.example/signup"
-                className="group inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-[#F4EDE0] text-[#1B3722] font-bold text-base hover:bg-[#FBF6EB] transition-colors shadow-[0_15px_40px_-10px_rgba(0,0,0,0.4)]"
-              >
-                Start your first week free
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
-              </Link>
-              <p className="text-sm text-sprout-cream/60">
-                No card required · Cancel anytime · For homeschool families AU + NZ
+              <p className="mt-8 md:mt-10 text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
+                 style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
+                Join the waitlist.
               </p>
+
             </div>
 
-            <div className="mt-14 flex justify-center">
+            {/* Two-card section: free waitlist + founding family. Same
+                backend pattern lifted from Ether's Ask.tsx, Sprout-painted. */}
+            <Waitlist />
+
+            <div className="mt-12 md:mt-16 flex justify-center">
               <div className="inline-flex items-center gap-4 px-5 py-3 rounded-full bg-sprout-cream/8 backdrop-blur-md border border-sprout-cream/15">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#A4C9A8]" />
                 <span className="text-sprout-cream/85 text-xs font-semibold tracking-wide">

@@ -26,7 +26,7 @@ const sproutLines = [
   "one price. all your kids. no maths.",      // 7  05 — Pricing
   "the bits you were already wondering.",     // 8  06 — FAQ (moved up)
   "read this one slow. it's the one.",        // 9  07 — "I see you. I feel you." (trust seal)
-  "ok. your first sunday's on me.",           // 10 Final CTA — Sleep on Sunday
+  "ok. ready when you are.",                  // 10 Final CTA — Sleep on Sunday + waitlist
 ];
 
 export function Mascot() {
