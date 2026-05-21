@@ -675,83 +675,11 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          PRICING  (existing block — kept in roughly the same position)
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#3D6643]/30 via-[#2A5132]/40 to-[#1B3722]/50" />
-          <svg className="absolute inset-0 w-full h-full opacity-30" preserveAspectRatio="none" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,300 C480,180 960,420 1440,280 L1440,900 L0,900 Z" fill="#1B3722" opacity="0.5" />
-          </svg>
-        </div>
-
-        <div className="relative max-w-5xl mx-auto">
-
-          <div className="text-center mb-20">
-            <CenteredEyebrow number="05" label="Pricing" />
-
-            <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream headline-lit"
-                style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
-              Less than $1 a day.
-            </h2>
-            <p className="mt-8 text-sprout-cream/70 max-w-xl mx-auto leading-relaxed" style={{ fontSize: "17px" }}>
-              All your kids. Every week. One flat price. No per-child upsells.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-
-            <GlassCard className="p-8 md:p-10 rounded-3xl" glow="warm">
-              <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/75 font-bold mb-4">Monthly</div>
-              <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-sprout-cream font-bold" style={{ fontSize: "60px" }}>$29</span>
-                <span className="text-sprout-cream/70 text-base">/month</span>
-              </div>
-              <p className="text-sprout-cream/85 mb-8 leading-relaxed text-sm">
-                Pay as you go. Cancel anytime. Your first weekly report is yours
-                forever, even if you cancel.
-              </p>
-              <Link
-                href="#start"
-                className="block text-center w-full h-12 leading-[3rem] rounded-full bg-white/20 backdrop-blur border border-white/40 text-sprout-cream font-semibold hover:bg-white/25 transition-colors shadow-[inset_0_1px_0_rgba(255,255,255,0.4)]"
-              >
-                Start free trial
-              </Link>
-            </GlassCard>
-
-            <div className="relative p-8 md:p-10 rounded-3xl bg-[#F4EDE0] backdrop-blur-xl border-2 border-[#F4EDE0] shadow-[inset_0_1px_0_rgba(255,255,255,0.6),0_15px_40px_-10px_rgba(0,0,0,0.5),0_30px_60px_-20px_rgba(0,0,0,0.3)]">
-              <div className="absolute -top-3 left-8 px-3 py-1 rounded-full bg-[#1B3722] text-sprout-cream text-[10px] uppercase tracking-[0.2em] font-bold">
-                Save $99/yr
-              </div>
-              <div className="text-[10px] uppercase tracking-[0.3em] text-[#1B3722]/70 font-bold mb-4">Annual</div>
-              <div className="flex items-baseline gap-1 mb-6">
-                <span className="text-[#1B3722] font-bold" style={{ fontSize: "60px" }}>$249</span>
-                <span className="text-[#1B3722]/60 text-base">/year</span>
-              </div>
-              <p className="text-[#1B3722]/80 mb-8 leading-relaxed text-sm">
-                Less than $0.68 a day. Saves $99 over the year.
-              </p>
-              <Link
-                href="#start"
-                className="block text-center w-full h-12 leading-[3rem] rounded-full bg-[#1B3722] text-[#F4EDE0] font-bold hover:bg-[#0F2614] transition-colors"
-              >
-                Start free trial
-              </Link>
-            </div>
-
-          </div>
-
-          <p className="text-center mt-10 text-sprout-cream/50 text-sm">
-            7 days free · No card required · Works with all your kids · AU + NZ
-          </p>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          FAQ / OBJECTIONS  (moved up to sit between Pricing and the
-          "I see you" trust seal — pricing → objections handled →
-          emotional re-warm → close.)
+          FAQ / OBJECTIONS  (sits between the Friday scene and the
+          "I see you" trust seal — payoff → objections handled →
+          emotional re-warm → close. Pricing section removed; the
+          waitlist + Founding Family block in the Final CTA is the
+          single offer surface now.)
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
 
@@ -763,7 +691,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-5xl mx-auto">
 
-          <SectionEyebrow number="06" label="What you&apos;ll ask first" />
+          <SectionEyebrow number="05" label="What you&apos;ll ask first" />
 
           <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream mb-16 headline-lit"
               style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
@@ -830,7 +758,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-4xl mx-auto text-center">
 
-          <CenteredEyebrow number="07" label="Who Sprout is for" />
+          <CenteredEyebrow number="06" label="Who Sprout is for" />
 
           <p className="text-sprout-cream/85 leading-relaxed italic"
              style={{ fontSize: "clamp(28px, 4vw, 52px)", lineHeight: "1.15" }}>

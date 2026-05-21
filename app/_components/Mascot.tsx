@@ -23,10 +23,9 @@ const sproutLines = [
   "three moves. that's it. promise.",         // 4  03 — How it works
   "notes apps forget. i remember every week.",// 5  04 — Why Sprout, not another tool
   "this is the good bit.",                    // 6  Shared moment — Friday kitchen table
-  "one price. all your kids. no maths.",      // 7  05 — Pricing
-  "the bits you were already wondering.",     // 8  06 — FAQ (moved up)
-  "read this one slow. it's the one.",        // 9  07 — "I see you. I feel you." (trust seal)
-  "ok. ready when you are.",                  // 10 Final CTA — Sleep on Sunday + waitlist
+  "the bits you were already wondering.",     // 7  05 — FAQ
+  "read this one slow. it's the one.",        // 8  06 — "I see you. I feel you." (trust seal)
+  "ok. ready when you are.",                  // 9  Final CTA — Sleep on Sunday + waitlist
 ];
 
 export function Mascot() {
