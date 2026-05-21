@@ -75,7 +75,7 @@ export function VerbatimCard({
 }: {
   quote: string;
   name: string;
-  location: string;
+  location?: string;
 }) {
   return (
     <GlassCard className="p-6 md:p-7 rounded-3xl h-full" glow="warm" soft>
@@ -88,9 +88,11 @@ export function VerbatimCard({
       >
         &ldquo;{quote}&rdquo;
       </p>
-      <div className="mt-6 text-[10px] text-sprout-cream/65 uppercase tracking-[0.25em]">
-        {location}
-      </div>
+      {location && (
+        <div className="mt-6 text-[10px] text-sprout-cream/65 uppercase tracking-[0.25em]">
+          {location}
+        </div>
+      )}
     </GlassCard>
   );
 }

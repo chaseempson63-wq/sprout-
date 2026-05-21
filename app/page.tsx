@@ -73,7 +73,7 @@ export default function HomeV2() {
             <div className="flex justify-center mb-8">
               <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                For homeschool families · AU + NZ
+                For homeschool families
               </div>
             </div>
 
@@ -108,7 +108,7 @@ export default function HomeV2() {
               <div className="inline-flex items-center gap-4 px-5 py-3 rounded-full bg-sprout-cream/8 backdrop-blur-md border border-sprout-cream/15">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#A4C9A8]" />
                 <span className="text-sprout-cream/85 text-xs font-semibold tracking-wide">
-                  Voiced by real AU + NZ homeschool mums
+                  Voiced by real homeschool mums
                 </span>
                 <span className="block w-px h-3 bg-sprout-cream/20" />
                 <span className="text-sprout-cream/60 text-[11px] uppercase tracking-[0.2em] font-bold">
@@ -196,32 +196,26 @@ export default function HomeV2() {
             <VerbatimCard
               quote="I envision all the other parents judging me and thinking I'm a horrible teacher who is failing my kids. When I hear my daughter stumble over words I was reading at her age, I worry."
               name="Megan"
-              location="Melbourne"
             />
             <VerbatimCard
               quote="So, to all the mums doing home-based learning and feeling like they are failing, I see you. I feel you. I am you."
               name="Sarah"
-              location="Auckland"
             />
             <VerbatimCard
               quote="Today was shit."
               name="Kate"
-              location="Brisbane"
             />
             <VerbatimCard
               quote="Is my child up-to-snuff with her peers?"
               name="Anna"
-              location="Wellington"
             />
             <VerbatimCard
               quote="In survival mode, learning is impossible."
               name="Rachel"
-              location="Christchurch"
             />
             <VerbatimCard
               quote={`This is our first year homeschooling and I'm so afraid of my daughter being "behind"!!!`}
               name="Nicole"
-              location="Sydney"
             />
           </div>
 
@@ -641,7 +635,7 @@ export default function HomeV2() {
           SHARED MOMENT  (unnumbered scene between Why-Sprout and Pricing)
           Kitchen table on Friday — parent + kid + the printed report.
           Closes the emotional loop the 3am section opens. One scene, no
-          marketing claims. Voice = founder, painted, AU/NZ register.
+          marketing claims. Voice = founder, painted.
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
 
@@ -714,7 +708,7 @@ export default function HomeV2() {
               },
               {
                 q: "Will Sprout help with my state&apos;s record-keeping?",
-                a: "Indirectly, yes. NSW NESA, QLD HEU, VIC VRQA, NZ MoE all want a 'record of learning.' Sprout&apos;s monthly and yearly compilations give you that, without you scrambling the night before review. It&apos;s not the headline, but it&apos;s there.",
+                a: "Indirectly, yes. Most regulators that ask homeschool families for some form of &apos;record of learning&apos; will accept what Sprout produces — its monthly and yearly compilations are designed for exactly that, without you scrambling the night before review. It&apos;s not the headline, but it&apos;s there.",
               },
               {
                 q: "I&apos;m not techy. Will I be able to use it?",
@@ -834,7 +828,7 @@ export default function HomeV2() {
               <div className="inline-flex items-center gap-4 px-5 py-3 rounded-full bg-sprout-cream/8 backdrop-blur-md border border-sprout-cream/15">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#A4C9A8]" />
                 <span className="text-sprout-cream/85 text-xs font-semibold tracking-wide">
-                  Voiced by real AU + NZ homeschool mums
+                  Voiced by real homeschool mums
                 </span>
               </div>
             </div>
@@ -863,7 +857,7 @@ export default function HomeV2() {
             <span>Sprout</span>
           </div>
           <div className="text-xs uppercase tracking-[0.3em]">
-            For homeschool families · AU & NZ · Made with care
+            For homeschool families · Made with care
           </div>
           <div className="text-xs uppercase tracking-[0.3em]">
             © 2026 · vol.01 · issue 26

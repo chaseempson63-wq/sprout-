@@ -92,7 +92,19 @@ Single-font system left headlines and body subheads visually too close — same 
 - One display font, one body font. Two weights of body only. Don't add more.
 - All caps reserved for tracking-wide eyebrows + section labels.
 - No italics in UI. Italics only for editorial poster moments + verbatim quote attributions.
-- No serifs anywhere.
+- No serifs in app, landing, email, or weekly artifact.
+
+### Scoped exception — IG/FB carousels (added 2026-05-21)
+
+**Cormorant Garamond** (Google Fonts, free) is the locked serif for typographic IG/FB story-arc carousels only.
+
+- Channel scope: IG carousels + FB carousels. Nowhere else. Not landing, not app, not artifact, not email.
+- Why: warm, editorial, book-feeling register is the right match for story-arc carousels aimed at homeschool mums. Cabinet Grotesk's premium-tech register fights the warmth the format needs. See `~/.claude/skills/sprout-truth/playbooks/instagram-carousel.md` for the full reasoning and layout rules.
+- Weights: 500 Medium for hooks, 400 Regular for texture/reframe lines. No Bold (the serif's own weight carries it).
+- Colour pairings: Sprout Forest type on Sprout Cream background, or Sprout Cream type on Sprout Forest background. Never on white. Never on lime.
+- Fallback: EB Garamond if Cormorant unavailable for any reason.
+
+This is a **scoped exception, not a brand evolution.** Cabinet Grotesk + Geist Sans remain the system for everything else.
 
 ### Type scale
 
@@ -115,7 +127,7 @@ Body tier:
 
 ### Typography rules
 
-- **One typeface throughout the entire brand.** Never mix.
+- **One typeface throughout the entire brand**, with one scoped exception: Cormorant Garamond on typographic IG/FB carousels only (see "Scoped exception" above). Never mix on a single surface.
 - **Two weights only.** Never use Light, Medium, or Black variants.
 - **Bold for type that has confidence to assert.** Regular for everything else.
 - **Tight tracking on display tier.** Loose tracking is for editorial small-caps moments only.
