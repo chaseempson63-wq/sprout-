@@ -34,20 +34,20 @@ Voice: direct & confident. Linear/Vercel register. AU/NZ English. No exclamation
 
 Push back on scope creep, premature feature work, anti-shareability monetization, and overconfident market claims. Don't gas the founder up. Don't reference Chase's other projects — Sprout only.
 
-**Trust the outbound loop you can't see.** Chase runs his warm conversations and outbound in day-to-day life on his phone — not in CC sessions. When he's prompting here, he's doing building/testing/strategy work, which has its own value. Don't reflexively pivot prompts toward *"have you talked to a parent yet."* Don't lecture on drift if the work he's prompting for is real (mobile fixes, mascot, content, copy, etc). The 5/10 viability read and concierge MVP plan are noted and locked (see Current state below) — don't re-surface them every session. If a genuine polish-forever pattern shows up across multiple sessions in a row, flag it **once**, briefly, and drop it. One mention max, no repeats. Ship what Chase prompts for; trust the loop.
+**Trust the outbound loop you can't see.** Chase runs his content production, warm conversations, and outbound in day-to-day life on his phone — not in CC sessions. When he's prompting here, he's doing building/testing/strategy work, which has its own value. Don't reflexively pivot prompts toward *"have you talked to a parent yet"* or *"how many posts did you ship today."* Don't lecture on drift if the work he's prompting for is real (mobile fixes, mascot, content, copy, etc). The 5/10 viability read and the 30-day sprint plan are noted and locked (see Current state below) — don't re-surface them every session; the Monday check-in routine handles accountability. If a genuine polish-forever pattern shows up across multiple sessions in a row, flag it **once**, briefly, and drop it. One mention max, no repeats. Ship what Chase prompts for; trust the loop.
 
 12-month north star: **100 paying users.**
 
 ---
 
-## Current state (snapshot · 2026-05-20)
+## Current state (snapshot · 2026-05-23)
 
 A clean save-state for future sessions. Read this first before assuming what's been built or decided.
 
 ### Operating context (where Sprout actually is right now)
 
-- **Acquisition motion**: warm conversations with homeschool family friends Chase already has access to. **NOT** cold outbound into auth-walled FB groups. The cold-distribution problem (founder is non-member of AU/NZ homeschool community) is real but **deferred** — only resurfaces if/when Sprout grows past Chase's warm network.
-- **Landing page job**: concept-explainer for warm contacts who've already heard about Sprout from Chase. Someone he's talked to should land on the page and think *"oh that's the thing."* It is **not** a cold-traffic conversion page. Polish should match that job, not exceed it.
+- **Acquisition motion (as of 2026-05-23 sprint)**: dual track. (1) Broad distribution via 3x/day TikTok + 3x/day Instagram + Facebook warming to drive a 1,000-person waitlist in 30 days. (2) Warm parent conversations — showing the landing page to homeschool parents Chase has access to and capturing verbal value-feedback (NOT for site iteration; for validation that the wound and the artifact-promise actually land). The earlier "deferred cold distribution" posture is superseded by this sprint — Chase has decided to test broad distribution and the founder-non-member problem in the same 30-day window.
+- **Landing page job (updated 2026-05-23)**: dual purpose. (1) Concept-explainer for warm contacts ("oh that's the thing"). (2) Waitlist conversion surface for cold TikTok/IG/FB traffic arriving from the 30-day content sprint. Polish should match those two jobs — clear value prop, frictionless waitlist signup — and not exceed them.
 - **Pricing status**: **exploratory placeholder, not committed.** The $29/mo number in [`docs/MASTER.md`](docs/MASTER.md) is an anchor for thinking, not a decision. Real pricing gets discovered after warm contacts have felt the artifact land — ask "what would you pay?" then, not now. Earlier comparisons to Tinybeans / Day One were treating a placeholder as a decision; ignore that framing.
 - **Product framing**: stupid simple. One pain (parents lose track of what their kid learned this week). One output (a printable weekly report the parent can show their kid). Not a SaaS platform thesis. Not a journaling app. One input flow, one artifact.
 
@@ -103,26 +103,37 @@ AI tracking apps are in a major boom cycle right now — Cal AI (photo-based cal
 
 The next 30 days of validation decide whether this is a 7/10 (5 concierge mums say "yes I'd pay") or a 3/10 (the wound proves soft and the pricing thesis dies). The cost of validating is 30 days; the cost of not validating is 6 months of polish on something that may not work. Asymmetry says validate.
 
-### Single highest-leverage next action (the only thing that moves Sprout forward right now)
+### 30-day sprint (2026-05-23 → 2026-06-22) — the only thing that matters right now
 
-**Concierge MVP with 5 warm-contact homeschool families.** Chase manually generates a printable weekly report (PDF) for each family, every Sunday, for 3-4 weeks. Free. No pricing conversation upfront.
+**Primary goal:** 1,000 waitlist signups by 2026-06-22.
 
-Watch for: (a) does the wound surface in the conversations unprompted, (b) does the artifact actually land — do they cry-in-a-good-way, show it to the kid, screenshot it, want next week's, (c) what do they call it back to Chase in their own words.
+**Stretch goal:** ~10 founding members at $29/mo. Small backend revenue (helps cover software costs) and a signal that some people actively want to connect with Chase personally about the product. Not the main objective — the waitlist is.
 
-Only *after* the artifact has been felt — week 3 or 4 — ask what they'd pay for this delivered automatically every Sunday. That's where price gets discovered, not before.
+**Post-launch goals (after app is live and Chase emails the waitlist):** 500 downloads, 25% convert to $29/mo plan. After that, every $ goes to ads — aggressive distribution scaling and properly establishing the biz.
 
-The binding constraint is not DMs sent or landing-page polish. It is: 5 warm-contact families committed, weeks of manual reports done well, real reactions captured.
+**The weekly work** (held accountable via the Monday check-in routine — see Routines reference below):
+
+1. **Content cadence**: 3x/day TikTok + 3x/day Instagram. 42 posts/week total.
+2. **Facebook warming**: joining homeschool groups, posting, commenting, building genuine presence (not extraction outreach).
+3. **Parent conversations**: showing the landing page to real homeschool parents in Chase's network. Capturing what they actually SAY about it — quotes, not vibes. This is value-validation, not site iteration.
+
+**The binding constraint** is not landing-page polish or product-code building. It is: posts shipped, parents shown the site, waitlist count climbing.
+
+**Monday check-in routine**: `trig_01LW9mZkr44UfMEWq9Qd1APf` — fires every Monday 9am NZST with a structured accountability report (pro-rata targets, self-report checklist, honest flags, one-thing-this-week). Disable around 2026-06-22 when the sprint ends, or extend if Chase keeps scaling. URL: https://claude.ai/code/routines/trig_01LW9mZkr44UfMEWq9Qd1APf
+
+**The earlier concierge-MVP-with-5-families plan is superseded** by this sprint. The validation motion has shifted from "5 mums experience a manual PDF artifact for 4 weeks" to "1,000 waitlist signups + verbal value-feedback from warm parent conversations + post-launch conversion data." Different bet, deliberately taken.
 
 ### What NOT to do next (procrastination-as-progress patterns to flag)
 
-- More landing page copy passes (it's a concept-explainer for warm contacts now, not a conversion page — polish should match that job, not exceed it)
+- More landing page copy passes beyond what the dual job requires (warm-contact concept-explanation + cold-traffic waitlist conversion)
 - More brand polish / more glassmorphism tuning
-- Building any product code (auth, Supabase, AI pipeline, etc.) before concierge has proven the artifact lands
+- Building any product code (auth, Supabase, AI pipeline, etc.) before the 30-day sprint validates that there's a waitlist worth building for
 - More quote bank mining
 - More research skill building
-- More content generation (FB drafts, IG captions, emails) — useful when Sprout goes past warm contacts, not now
 - Domain selection / waiting on Chase's font preference
-- Cold DMs into auth-walled communities — wrong motion for this phase
-- Anything that lets Chase do visible craftwork instead of invisible relationship work with the 5 warm-contact families
+- Cold extraction DMs masquerading as engagement (Facebook warming = genuine group participation; if it feels like spam, it is)
+- Anything that lets Chase do visible craftwork in CC instead of (a) shipping 42 posts/week, (b) showing the site to real parents, (c) growing the waitlist
 
-All of the above are downstream of validation. None of them get Chase to a felt-artifact moment with a real family.
+All of the above are downstream of the 30-day sprint. None of them get Chase to 1,000 waitlist signups or a felt-artifact moment with a real parent.
+
+**Note on content generation in CC**: content drafts (FB posts, IG captions, video hooks, emails) are no longer flagged as procrastination — they're directly upstream of the 42-posts/week target. Help when asked; help well. The `sprout-truth` skill is the source of truth for voice.
