@@ -137,3 +137,10 @@ The next 30 days of validation decide whether this is a 7/10 (5 concierge mums s
 All of the above are downstream of the 30-day sprint. None of them get Chase to 1,000 waitlist signups or a felt-artifact moment with a real parent.
 
 **Note on content generation in CC**: content drafts (FB posts, IG captions, video hooks, emails) are no longer flagged as procrastination — they're directly upstream of the 42-posts/week target. Help when asked; help well. The `sprout-truth` skill is the source of truth for voice.
+
+### Deferred for next visual pass (when one happens)
+
+Items deliberately noted and skipped during this session — out of scope for copy-only work, queued for whenever real photography / illustration enters the picture:
+
+- **Photo or illustration of parent + kid + printed report on a kitchen table** — the highest-leverage way to land the shared-pride beat. The page currently carries this through the Friday-afternoon scene + Feature 3 bullet + FAQ #4 (verbal/textual), and that's enough — but a real visual would do more than another paragraph could. Surfaced 2026-05-24 when proposing a third narrative scene; explicitly chose visual-future over copy-now.
+- **Real human imagery generally** — the page is 100% SVG / glassmorphism / typography. No actual humans, no actual kids, no actual artifacts in real environments. A future visual pass could selectively introduce one or two on-brand photographs without breaking the design system.
