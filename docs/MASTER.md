@@ -2,9 +2,11 @@
 
 The single source of truth for everything Sprout. A-Z, decision-by-decision, written so any new collaborator (human or AI) can read this once and be fully onboarded.
 
-**Last updated:** 2026-05-14
+**Last updated:** 2026-05-24
 **Founder:** Chase Empson
 **Version:** v0.1 spec
+
+> **2026-05-24 pivot note (load-bearing — read before anything else here):** Sprout's mechanic has shifted from "AI-generated weekly artifact, Sunday-night delivery" to a **fitness-app-mimic documentation product** (Strava / MyFitnessPal / Apple Health pattern). No AI synthesis in the app loop. Inputs accumulate into a per-kid navigable timeline + weekly view, both parent and kid can see. Calendar / deadlines / scheduled activities are now in scope as captured input types. Privacy (no data sold, no model training) is the positioning weapon. **Where any section below still describes "AI generation," "Sunday-night artifact," or "the AI compiler," treat it as stale — CLAUDE.md "Current state" reflects the current model.** Surgical updates have been applied to the most load-bearing sections (pitch, product, scope, weekly-artifact-section, data model, stack, privacy); other sections retain valid material that didn't change with the pivot (wound, ICP, marketing register split, pricing structure, distribution channels, risks, working agreement).
 
 ---
 
@@ -35,7 +37,7 @@ The single source of truth for everything Sprout. A-Z, decision-by-decision, wri
 
 ## One-paragraph pitch
 
-Sprout is a weekly reflection app for AU/NZ homeschool parents. Parents log small daily moments — a voice memo, a photo of worksheets, a sentence of text — across the week. On Sunday night, Sprout's AI generates a beautiful, shareable weekly report that proves their child's week counted. The product solves one problem: the universal homeschool-parent anxiety of *"am I screwing my kid up?"* — by replacing 3am self-doubt with Sunday-night relief and a portfolio of evidence the parent can show to their kid, their family, or post in their community. **One job. One artifact. One reason to keep paying every month.**
+Sprout is a homeschool documentation app for AU/NZ parents. Across the week, the parent captures what's happening — voice memos, photos, sentences, scheduled activities, deadlines, calendar items. The app compiles all of it into a per-kid navigable timeline and a weekly view, both visible to the parent (for clarity) and the kid (as proof of the work they're building). **No AI synthesis** — Sprout organises and visualises, doesn't generate. The product solves one problem: the universal homeschool-parent anxiety of *"am I screwing my kid up?"* — by replacing 3am self-doubt with a visible record the parent and kid can scroll any time, and by replacing scattered notes / photo gallery / Google Docs / spreadsheets with one private place. The positioning weapon: privacy. Sprout doesn't sell data, doesn't train AI on the kid's voice memos, doesn't share with advertisers. The fitness-app pattern (Strava / MyFitnessPal / Apple Health) applied to homeschool. **One job: make the week visible — to her and to the kid. One reason to keep paying: it's the only private place where the year accumulates.**
 
 ---
 
@@ -115,60 +117,66 @@ She is NOT on TikTok in large numbers. She is NOT on Twitter/X. She is NOT readi
 
 ### What it is
 
-A web app (responsive, mobile-first design) that lets a parent log small inputs across the week and receive a beautifully designed weekly reflection artifact every Sunday night.
+A web app (responsive, mobile-first design) where a homeschool parent captures what's happening across the week, and the app auto-compiles everything into a per-kid navigable timeline + weekly view that both parent and kid can see. **Fitness-app pattern** (Strava / MyFitnessPal / Apple Health) applied to homeschool documentation — structured logging in, visible accumulation out, no AI synthesis.
 
 ### The core loop (the entire product)
 
-1. **Welcomed daily input** — parent opens Sprout (web, mobile-optimised) and dumps whatever happened that day. Voice memo, photo of worksheets, typed bullets, or a single sentence. Tagged to a kid (or "all kids"). 30-60 seconds typical.
+1. **Welcomed inputs across the week** — parent opens Sprout (web, mobile-optimised) and captures what's happening: voice memo, photo of worksheets, typed sentence, scheduled activity ("library Thursday 10am"), deadline ("term paper due Friday"), calendar entry. Tagged to a kid (or "all kids"). 30-60 seconds per input typical.
 2. **No daily pressure** — no streaks, no "you missed a day" guilt, no red dots. Logging is a *welcomed gesture*, not an obligation. The brand promise is *we sell relief, not chores.*
-3. **Sunday-night report generation** — AI compiles the week's inputs into a per-kid weekly artifact. Generated automatically, no parent action required.
-4. **Email + in-app delivery** — beautiful email lands Sunday evening. Tap through to see the full report. Downloadable as PDF. Screenshot-friendly. Shareable.
-5. **The arc builds** — each weekly report references prior weeks, builds the growth narrative. Week 12's report reflects on week 1's child. This is the moat ChatGPT can't replicate.
+3. **Auto-compile, always available** — the app organises every input by kid, by day, by week, by term, by year. The parent can open the app and scroll the timeline at any time. The weekly view is just the timeline filtered to this week. There is no scheduled generation event — the timeline IS the artifact, continuously present.
+4. **Kid-facing parallel view** — the same per-kid timeline is presented in a kid-appropriate visual ("look what you did this week / month / year"). Accessed from the parent's session for now. Works like Apple Health's step count for the kid — they see their own work accumulate, not as grades or comparison, just as theirs.
+5. **Export + share** — any view (day, week, term) can be exported as a clean shareable artifact (PDF / screenshot-friendly web page). First week's export is free forever even if the parent cancels (shareability = marketing).
+6. **The arc builds without AI** — by week 12, the timeline already shows weeks 1-11 in scrollable context. The continuity is structural (it's the same database, presented chronologically), not synthesised. The moat vs Notes / ChatGPT / a folder of photos: those don't compile, they just store. Sprout compiles into a navigable record.
 
 ### The emotional arc (what the user experiences)
 
 | Day | Touchpoint | Feeling |
 |-----|-----------|---------|
-| Mon-Sat | Open app, drop a voice memo | Light, low-friction, "I'm capturing this" |
-| Sunday 6pm | Notification: "Your weekly report is ready" | Anticipation |
-| Sunday 8pm | Open the report | Relief, pride, reframing |
-| Sunday 9pm | Screenshot, share to FB group / family WhatsApp | Validation, status, community |
-| Monday morning | Show the report to the kid | Connection, "I'm so proud of you" moment |
-| Throughout week | Glance at "this week so far" view | Reinforcement, momentum |
+| Mon-Sat | Open app, drop a voice memo or photo | Light, low-friction, "I'm capturing this" |
+| Mid-week | Glance at "this week so far" view | Reinforcement, "we're doing more than I thought" |
+| Sunday (or any quiet moment) | Open the weekly view, scroll the per-kid timeline | Relief, pride, the chaos resolves into pattern |
+| Whenever proud | Export and share to FB group / family WhatsApp | Validation, status, community |
+| Anytime | Show the kid their own view | Connection, "look at everything you did" |
+| Monthly | Scroll back through the month / term / year view | The accumulation lands — this IS the proof |
+| Registration time | Export the year's compiled view | Quiet relief — the record is already there |
 
 ---
 
 ## Strict scope (in / out)
 
-### IN for v0.1
+### IN for v0.1 (updated 2026-05-24)
 
 - Multi-child accounts (parent → multiple kids)
 - 60-second onboarding (parent details, each kid's name + age + broad style)
-- Daily input form: voice memo + photo + text, tagged to kid(s)
-- "This week so far" running view (per-kid)
-- AI-generated weekly report (per-kid, auto-generated Sunday)
-- Beautiful weekly artifact: web view + downloadable PDF + email delivery
-- Timeline view of all past weekly reports per kid
-- Free-trial mechanic (7 days, first weekly report fully unlocked, no watermark on first report)
-- Stripe subscription paywall (week 2+ reports gated for non-paying users)
-- Light "Made with Sprout" watermark on free-tier shares only (corner placement, can't be cropped without breaking the report layout)
+- **Input capture**: voice memo + photo + text, tagged to kid(s)
+- **Calendar with deadlines** (e.g. "term paper due Friday", "library Thursday 10am") — also tagged per-kid or "all"
+- **Scheduled activities** (planning what's happening tomorrow / this week)
+- **Per-kid navigable timeline** — day / week / month / term / year scroll views
+- **"This week so far" weekly view** — same data, filtered to current week
+- **Kid-facing visual view** — same per-kid timeline rendered in a kid-appropriate frame ("look what you did this week"). Accessed from parent's session for now.
+- **Export / share** — any view (week, term, year) exportable as clean PDF + screenshot-friendly web page
+- **First week's exported view is free forever** even if user cancels (no watermark removal needed — clean export from day one)
+- Free-trial mechanic (7 days, full feature access)
+- Stripe subscription paywall (after trial, ongoing access to compiled timeline requires subscription)
 - AU + NZ launch (same product, AUD primary currency with NZD support, no US-isms in copy)
 
 ### OUT for v0.1 — push back if requested
 
 - Curriculum recommendations
 - Lesson plans
-- Reports for state regulators (NESA, HEU, etc.) — *latent benefit, never marketed*
-- Kid-facing logins or kid-facing UI
+- Reports for state regulators (NESA, HEU, etc.) — *latent benefit only, never marketed as headline*
+- **AI synthesis of any kind** — no generated reports, no AI summaries, no AI reflections on what the kid learned. The app compiles inputs, doesn't interpret them. (Voice memo transcription is the one borderline case — see Technical Stack.)
+- **Selling, sharing, or training AI on user data** — this is the positioning weapon, not just a policy. Hard out.
+- Separate kid logins (kid view accessed from parent's session for now — TBD post-validation)
 - Community / social features (no in-app feed, no comments, no following)
 - Native iOS/Android apps (responsive web only)
 - Streaks, daily goals, gamification, "you missed a day" notifications
-- Anything that smells like school software
+- Anything that smells like school grading or surveillance
 - US/UK/Canada launch
 - Family sharing (parent A and parent B sharing one account) — handle later
 - Partner integrations (no Google Classroom, no Khan Academy import)
 
-**The discipline:** every feature request gets one question — *"does this help the parent feel their week counted, or is it scope creep?"* Default to no.
+**The discipline:** every feature request gets one question — *"does this help the parent see what the week added up to, or the kid see their own work — without compromising privacy?"* Default to no. The fitness-app comparison helps: would Strava add this? Would MyFitnessPal? If they wouldn't, Sprout probably shouldn't either.
 
 ---
 
@@ -352,7 +360,7 @@ Emotional pain commands premium. $29/mo is positioned as *"less than $1 a day fo
 
 ---
 
-## Data model
+## Data model (updated 2026-05-24)
 
 ### Entities
 
@@ -361,23 +369,27 @@ Account (1)
 ├── Parent profile (1)
 ├── Subscription (1)
 └── Kids (1..N)
-    ├── Daily inputs (0..N) — voice/photo/text, tagged to kid(s) or "all"
-    └── Weekly reports (1 per ISO week, generated Sunday)
+    └── TimelineEntries (0..N) — one row per input, tagged to kid(s) or "all"
+        ├── type: voice | photo | text | scheduled_activity | deadline | calendar_event
+        ├── content: voice file ref | photo file ref | text body | event metadata
+        ├── timestamp: when it occurred (not just when logged)
+        └── tags: per-kid id(s) or "all"
 ```
 
 ### Notes
 
 - One account = one parent (in v0.1). Multi-parent / family-sharing in v0.2.
-- Inputs can be tagged to one kid, multiple kids, or "all kids" (whole family activity).
-- Reports are always per-kid. Inputs tagged "all" are referenced in every kid's report.
-- Reports are immutable once generated (artifact integrity). Re-generation requires a deliberate action.
+- Inputs (now called TimelineEntries) can be tagged to one kid, multiple kids, or "all kids" (whole family activity).
+- **No weekly-report entity exists.** The "weekly view" is a query — a filter over TimelineEntries by ISO week. The "monthly view" is the same filter at a different granularity. The "year view" is the same filter at year scope. The data is the source; the views are presentational.
+- This means: nothing to "regenerate," nothing to "lock in" as immutable. The timeline is the truth; views are computed on read.
+- Exports (PDF / shareable web page) are rendered from the filtered query at export-time. Stored only if the parent explicitly saves a snapshot.
 
 ### Storage
 
-- Voice memos: file storage (Supabase Storage), transcribed on upload
-- Photos: file storage, with optional AI description on upload
-- Text inputs: database
-- Reports: stored as both structured data (for the timeline view) and rendered HTML/PDF (for the artifact)
+- Voice memos: file storage (Supabase Storage AU region). Transcription is optional and the transcript stays in user's account — never sent to third-party training. If a third-party transcription provider is used, it must have a zero-retention contract (no model training on user audio).
+- Photos: file storage AU region. No AI description on upload — Sprout doesn't synthesise from photos. (If a future feature adds optional photo captioning, it has to be opt-in and run on-device or with zero-retention.)
+- Text / scheduled activities / deadlines / calendar entries: database.
+- Exports: generated on demand from the underlying timeline. Not pre-stored.
 
 ---
 
@@ -394,15 +406,15 @@ Account (1)
 - **Lucide icons**
 - **Hosting**: Vercel (default for Next.js, free tier covers v0.1)
 
-### Planned (add when needed)
+### Planned (add when needed) — updated 2026-05-24
 
 - **Supabase**: auth, Postgres database, file storage. AU region.
-- **Anthropic Claude API**: weekly report generation (Sonnet for quality, Haiku for transcription if needed)
-- **OpenAI Whisper** (or Deepgram): voice memo transcription
-- **Resend**: transactional emails (welcome, weekly report ready, etc.)
-- **Stripe**: subscription billing, AUD primary, NZD support
-- **react-pdf** or **Puppeteer**: PDF generation of reports
-- **Posthog**: product analytics (privacy-respecting)
+- **No LLM API in the app loop.** Earlier spec planned Anthropic Claude API for weekly-report generation — that's retired with the model pivot. Sprout doesn't synthesise.
+- **Voice memo transcription**: deferred decision. Options: (a) on-device (Web Speech API, no upload), (b) Deepgram with zero-retention contract, (c) skip transcription entirely and present voice memos as scrubbable audio in the timeline. Privacy stance demands (a) or (c) by default; (b) only with airtight zero-training contract.
+- **Resend**: transactional emails (welcome, weekly digest email pointing to the in-app weekly view — no AI-generated content in the email body itself).
+- **Stripe**: subscription billing, AUD primary, NZD support.
+- **react-pdf** or **Puppeteer**: PDF export from timeline views.
+- **Plausible / Posthog (self-hosted)**: product analytics. No third-party trackers. No Meta pixel, no Google Analytics. Privacy stance is non-negotiable.
 
 ### Will NOT use
 
@@ -431,13 +443,15 @@ Account (1)
 3. **Tag the kid(s)** — pre-selected to "all kids" or last-tagged kid
 4. **Submit** — quick confirmation, return to dashboard with input added to the running "this week so far" view
 
-### Sunday report delivery
+### Weekly view delivery (updated 2026-05-24)
 
-1. **6pm local Sunday**: AI generation kicks off (background job)
-2. **Sunday delivery time**: email lands ("Charlie's week is ready 🌱")
-3. **Tap email**: open report in browser (no login required if using a signed link)
-4. **View / download / share**: the report screen has prominent download and share actions
-5. **Subscription prompt** (week 2+ only, free-trial users): elegant inline upsell at bottom of report
+There is no longer a "Sunday-night AI generation event" — the timeline is always present. The Sunday touchpoint is a gentle nudge, not a generation moment.
+
+1. **Sunday evening (default — parent-configurable)**: optional digest email lands ("Charlie's week is here · 7 captures · open to scroll").
+2. **Tap email**: open the per-kid weekly view in browser (signed link, no full login required to read).
+3. **Scroll**: chronological list of the week's captures — voice memo cards, photo thumbnails, text snippets, scheduled-activity completions, deadline check-ins.
+4. **Export / share**: prominent export button generates PDF + clean web view at any time.
+5. **Subscription prompt** (post-trial only): elegant inline reminder if subscription has lapsed; full timeline access requires active subscription, but the parent's first week's export remains theirs forever.
 
 ### Subscription
 
@@ -448,36 +462,52 @@ Account (1)
 
 ---
 
-## The weekly report artifact
+## The timeline + weekly view artifact (updated 2026-05-24 — replaces "the weekly report artifact")
 
 This is the entire product. Get this right and Sprout works. Get this wrong and nothing else matters.
 
-### Structure (single page, vertical scroll, designed for screenshot/print)
+**Structural shift from earlier spec**: there is no AI-generated weekly report. The artifact is the timeline itself, presented at multiple zoom levels (day, week, month, term, year). The "weekly view" is the timeline zoomed to the current ISO week. The "weekly digest email" is a Sunday nudge, not a generation event. The continuity moat is structural (the same data accumulates over months and years), not synthesised.
 
-1. **Hero** — Kid's name + week dates + soft tagline ("This week, Charlie grew.")
-2. **The week in skills** — 4-6 developmental dimensions visualised (Curiosity, Communication, Problem-Solving, Self-Direction, Physical, Social-Emotional). Each as a soft progress indicator + a one-sentence reflection grounded in the parent's actual inputs.
-3. **Learning highlights** — 3-5 specific moments, reframed. Example: *"Baking cookies on Tuesday touched maths (fractions, sequencing) and life skills (following instructions, patience)."* This is the magic — turning chaotic real life into legitimate learning.
-4. **A moment to remember** — one specific moment from the week, written warmly, evocatively. The "save-this-forever" piece.
-5. **Forward suggestion** — ONE gentle next-week prompt. *"Charlie loved the volcano doc — a follow-up library trip might extend that spark."* Specific, not generic.
-6. **Footer** — week number ("Week 12 of Charlie's Sprout journey"), a subtle "Made with Sprout 🌱" mark for free tier.
+### Structure of the weekly view (single page, vertical scroll, designed for screenshot/print)
+
+1. **Hero strip** — Kid's name + week dates + capture-count ("Charlie · Week 12 · 7 captures · 8-14 May 2026"). Sober factual register; no AI-generated tagline.
+2. **The week in chronological order** — every capture from the week, in order. Voice memos as scrubbable audio cards (with timestamp + tag). Photos as inline thumbnails (clickable to expand). Text snippets verbatim. Scheduled activities marked as planned vs completed. Deadlines shown with status.
+3. **Optional parent annotations** — the parent can add a single sentence at the top of any week ("this was the volcano week") that surfaces in shared views. Author-by-parent, not AI.
+4. **Footer** — week number, subscription state, export button. Clean.
+
+### The kid-facing parallel view
+
+Same data, rendered kid-appropriately:
+- "Look what you did this week" header in age-appropriate type weight
+- Photos and voice memos surfaced more prominently (kid recognises their own work)
+- Capture count as a friendly number ("7 things you did this week" — not "7/X target")
+- No comparison to other kids, no grades, no rubrics. Just their week.
+- Same week / month / term / year zoom available
 
 ### Design principles
 
-- One screen, designed to look complete in a screenshot
+- One screen at week zoom; designed to look complete in a screenshot
 - Print-perfect at A4
-- The kid's name is the largest element on the page
-- Warm photography (if parent uploaded photos, one feature image)
-- Forest green section headers, lime green accents on the visual indicators
-- No data dashboards, no graphs, no metrics that look "EdTech"
-- Reads like a *letter to the parent about their kid*, not a *report card*
+- The kid's name is the largest element at the top
+- Warm photography (parent-uploaded photos appear inline at thumbnail size, expandable)
+- Forest green section headers
+- No data dashboards, no graphs, no metrics that look "EdTech" — but timeline density (a denser week looks denser than a sparser week) is structural, not styled
+- Reads like a *parent-curated record book*, not a *generated report*
 
-### AI generation
+### What replaces "AI generation"
 
-- **Model**: Claude Sonnet (quality matters more than cost on this — it's the entire product)
-- **Input context**: all inputs from the past week, the kid's profile, prior weekly reports (for arc continuity)
-- **Output**: structured JSON → rendered template
-- **Tone**: warm, specific, never generic, never patronising, never inflated. If the week was thin, acknowledge it gently — don't fabricate growth.
-- **Quality bar**: every report should make the parent feel SEEN. Not impressed by the AI. Seen.
+Nothing. The timeline IS the product. Sprout's value is:
+
+- Capturing inputs frictionlessly (voice memo, photo, scheduled activity, calendar item, sentence)
+- Organising them into a navigable per-kid record
+- Presenting that record at useful zoom levels (day / week / month / term / year)
+- Letting both parent and kid see it
+- Keeping it private (no data sold, no model training)
+- Exporting it cleanly when wanted
+
+The "quality bar" is: every time the parent or kid opens the app, the timeline should feel like proof of work — because it is. The accumulation is the feeling. The parent's job is capture; the app's job is organisation; the felt-meaning happens when she scrolls back through three months and sees the year building.
+
+**If the week was thin, the week looks thin.** Sprout doesn't pad. That honesty is part of the trust.
 
 ---
 
@@ -492,23 +522,35 @@ This is the entire product. Get this right and Sprout works. Get this wrong and 
 
 ---
 
-## Privacy & data handling
+## Privacy & data handling (the positioning weapon — updated 2026-05-24)
 
-### Principles
+Privacy is no longer just "compliance done well." It is **the structural moat**. Every other tool in the homeschool-tracking / parent-journaling / family-memory space either trains AI on user data, sells data to advertisers, or both. Sprout structurally cannot — there is no AI synthesis loop to feed, and there is no advertiser business model. That stance is impossible for ChatGPT-memory, Tinybeans (acquired by ad-supported parent network), or any LLM-backed tracker to copy without retreating from their own stack.
 
-- AU/NZ user data lives in **AU region** (Supabase Sydney region or equivalent)
-- No data sold, ever
-- No third-party tracking pixels (analytics via Posthog self-hosted or privacy mode)
-- Photos / voice memos of children are treated with extreme care — never used for training, never shared
-- Parent can export all their data at any time (JSON + media bundle)
-- Parent can delete account and all data with one click (real deletion, not soft delete)
+### Principles (hard guarantees, not aspirations)
+
+- **AU/NZ user data lives in AU region** (Supabase Sydney region or equivalent).
+- **No data sold to anyone, ever.** Not aggregated, not anonymised, not "research partners." None.
+- **No model training on user data, ever.** Voice memos, photos, text inputs, calendar entries, scheduled activities — none of it ever feeds an AI model, Sprout's or anyone else's. If a third-party transcription provider is used, it must have a contractually enforced zero-retention / zero-training clause.
+- **No third-party tracking pixels.** No Meta pixel, no Google Analytics, no Hotjar. Analytics via Plausible or self-hosted Posthog only.
+- **Photos and voice memos of children** are treated as the most sensitive category — never shared with any third party for any reason.
+- **Parent can export all their data at any time** (JSON + media bundle).
+- **Parent can delete account and all data with one click** — real deletion (including media storage), not soft delete. 30-day grace period for accidental delete, then permanent erasure.
+- **Plain-English privacy policy**, readable in 60 seconds, no legalese.
+
+### How privacy shows up in messaging
+
+- "We don't sell. We don't train. We don't share." (the three-beat hammer)
+- "Your week stays yours."
+- "We're not building a panel of homeschool parent data."
+- "There's no AI inside the app — so there's nothing to train."
+- Concrete > abstract: name the specific things we don't do, don't make abstract claims about "bank-grade encryption" (audience reads that as corporate-deflection).
 
 ### Compliance
 
 - AU Privacy Act 1988 (Australian Privacy Principles)
 - NZ Privacy Act 2020
-- COPPA-equivalent care for kid-related content (we don't collect from kids, but we hold info about them — extra care)
-- Clear privacy policy in plain English (not legalese)
+- COPPA-equivalent care for kid-related content (we hold info about kids; extra care, even though they don't have accounts)
+- Plain-English privacy policy (not legalese)
 
 ---
 
