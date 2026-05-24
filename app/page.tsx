@@ -154,7 +154,7 @@ export default function HomeV2() {
         <div className="relative max-w-7xl mx-auto">
 
           <PhoneShowcase>
-            <PhoneFrame tilt="rotateY(15deg) rotateX(4deg)">
+            <PhoneFrame tilt="rotateY(15deg) rotateX(4deg)" theme="dark">
               <PhoneScreenDropIn />
             </PhoneFrame>
             <PhoneFrame tilt="rotateY(0deg) rotateX(2deg) translateZ(20px)">
@@ -358,7 +358,7 @@ export default function HomeV2() {
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
                   <div className="absolute -inset-16 rounded-full bg-gradient-to-br from-[#A4C9A8]/25 via-[#94BC8E]/15 to-transparent blur-3xl -z-10" />
-                  <PhoneFrame tilt="rotateY(-8deg) rotateX(3deg) rotateZ(-1deg)">
+                  <PhoneFrame tilt="rotateY(-8deg) rotateX(3deg) rotateZ(-1deg)" theme="dark">
                     <PhoneScreenDropIn />
                   </PhoneFrame>
                   <FloatingGlass
@@ -410,7 +410,7 @@ export default function HomeV2() {
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
                   <div className="absolute -inset-16 rounded-full bg-gradient-to-br from-[#94BC8E]/20 via-[#76A77A]/10 to-transparent blur-3xl -z-10" />
-                  <PhoneFrame tilt="rotateY(8deg) rotateX(3deg) rotateZ(1deg)">
+                  <PhoneFrame tilt="rotateY(8deg) rotateX(3deg) rotateZ(1deg)" theme="dark">
                     <PhoneScreenMemory />
                   </PhoneFrame>
                   <FloatingGlass

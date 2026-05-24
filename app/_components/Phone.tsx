@@ -16,48 +16,57 @@ import {
 import { SproutMascotIcon } from "./SproutMascotIcon";
 
 /* ─────────────────────────────────────────────────────────────────────
-   Phone mockups — density pass 2026-05-24.
+   Phone mockups — themed (light/dark) + mascot-branded.
 
-   Layered on top of the Apple-Health rebuild: real iOS chrome
-   (signal/wifi/battery), pill segmented controls, sparklines,
-   growth-domain progress bars, multi-line highlight cards, pattern
-   callouts, connection graphs, heatmap with weekday labels + legend,
-   per-month trend bars, year highlights carousel, FAB on capture.
+   Three-mood brand spec (see CLAUDE.md):
+   - app interior (capture · memory) → DARK forest, glassmorphic chrome,
+     cream/white cards, lime CTAs                    → theme="dark"
+   - artifact (weekly report · year)  → LIGHT cream, dark hero capsules,
+     dark CTAs                                       → theme="light"
 
-   References: Apple Health Summary, Strava Home Feed, Oura 2025.
+   Mascot is rendered top-left of every screen as the brand mark.
    ───────────────────────────────────────────────────────────────────── */
 
-/* ─── Status-bar mini icons (signal · wifi · battery) ────────────── */
+/* ─── Status-bar mini icons (color flips by theme) ───────────────── */
 
-function SignalBars() {
+function SignalBars({ color = "#1B3722" }: { color?: string }) {
   return (
     <div className="flex items-end gap-[1.5px] h-2.5">
-      <div className="w-[2px] h-1 rounded-[1px] bg-[#1B3722]" />
-      <div className="w-[2px] h-1.5 rounded-[1px] bg-[#1B3722]" />
-      <div className="w-[2px] h-2 rounded-[1px] bg-[#1B3722]" />
-      <div className="w-[2px] h-2.5 rounded-[1px] bg-[#1B3722]" />
+      <div className="w-[2px] h-1 rounded-[1px]" style={{ backgroundColor: color }} />
+      <div className="w-[2px] h-1.5 rounded-[1px]" style={{ backgroundColor: color }} />
+      <div className="w-[2px] h-2 rounded-[1px]" style={{ backgroundColor: color }} />
+      <div className="w-[2px] h-2.5 rounded-[1px]" style={{ backgroundColor: color }} />
     </div>
   );
 }
 
-function WifiIcon() {
+function WifiIcon({ color = "#1B3722" }: { color?: string }) {
   return (
     <svg viewBox="0 0 16 12" className="w-3 h-2.5">
       <path
         d="M8 11a0.9 0.9 0 100-1.8 0.9 0.9 0 000 1.8zM4.7 7.5l1.05 1.05a3 3 0 014.5 0L11.3 7.5a5 5 0 00-6.6 0zM2.4 5.2l1.05 1.05a7 7 0 018.9 0L13.6 5.2a9 9 0 00-11 0z"
-        fill="#1B3722"
+        fill={color}
       />
     </svg>
   );
 }
 
-function BatteryIcon() {
+function BatteryIcon({ color = "#1B3722" }: { color?: string }) {
   return (
     <div className="flex items-center">
-      <div className="w-[22px] h-2.5 rounded-[3px] border border-[#1B3722]/60 p-[1.5px]">
-        <div className="h-full w-[14px] rounded-[1px] bg-[#1B3722]" />
+      <div
+        className="w-[22px] h-2.5 rounded-[3px] border p-[1.5px]"
+        style={{ borderColor: `${color}99` }}
+      >
+        <div
+          className="h-full w-[14px] rounded-[1px]"
+          style={{ backgroundColor: color }}
+        />
       </div>
-      <div className="w-[1.5px] h-[5px] rounded-r-[1px] bg-[#1B3722]/60 ml-[0.5px]" />
+      <div
+        className="w-[1.5px] h-[5px] rounded-r-[1px] ml-[0.5px]"
+        style={{ backgroundColor: `${color}99` }}
+      />
     </div>
   );
 }
@@ -67,27 +76,41 @@ function BatteryIcon() {
 export function PhoneFrame({
   children,
   tilt,
+  theme = "light",
   className = "",
 }: {
   children: ReactNode;
   tilt?: string;
+  theme?: "light" | "dark";
   className?: string;
 }) {
+  const isDark = theme === "dark";
+  const chromeColor = isDark ? "#FBF8EE" : "#1B3722";
+
   return (
     <div
       className={`relative w-[230px] md:w-[300px] aspect-[9/19.5] rounded-[44px] bg-gradient-to-b from-[#0F1A12] to-[#050A07] p-[3px] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.65),0_80px_160px_-40px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.1)] ${className}`}
       style={tilt ? { transform: tilt, transformStyle: "preserve-3d" } : undefined}
     >
       <div className="relative w-full h-full rounded-[42px] bg-[#0A1208] p-[2px]">
-        <div className="relative w-full h-full rounded-[40px] overflow-hidden bg-gradient-to-b from-[#FBF8EE] to-[#F6F1E0]">
-          {/* Status bar — 9:41 · notch · signal/wifi/battery */}
-          <div className="absolute top-0 inset-x-0 h-10 px-5 flex items-center justify-between text-[10px] font-bold text-[#1B3722] z-20">
+        <div
+          className={`relative w-full h-full rounded-[40px] overflow-hidden bg-gradient-to-b ${
+            isDark
+              ? "from-[#0F1A12] to-[#15291A]"
+              : "from-[#FBF8EE] to-[#F6F1E0]"
+          }`}
+        >
+          {/* Status bar */}
+          <div
+            className="absolute top-0 inset-x-0 h-10 px-5 flex items-center justify-between text-[10px] font-bold z-20"
+            style={{ color: chromeColor }}
+          >
             <span>9:41</span>
             <div className="absolute top-1.5 left-1/2 -translate-x-1/2 w-24 h-6 rounded-full bg-black" />
             <div className="flex items-center gap-1">
-              <SignalBars />
-              <WifiIcon />
-              <BatteryIcon />
+              <SignalBars color={chromeColor} />
+              <WifiIcon color={chromeColor} />
+              <BatteryIcon color={chromeColor} />
             </div>
           </div>
 
@@ -97,20 +120,43 @@ export function PhoneFrame({
           </div>
 
           {/* Tab bar */}
-          <div className="absolute bottom-0 inset-x-0 h-12 px-3 pb-2 pt-1.5 flex items-center justify-around bg-[#FBF8EE]/85 backdrop-blur-xl border-t border-[#1B3722]/5 z-30">
-            <div className="flex flex-col items-center gap-0.5 px-3 py-1 rounded-full bg-[#1B3722]">
-              <HomeIcon className="w-3.5 h-3.5 text-[#F4EDE0]" strokeWidth={2.5} />
+          <div
+            className={`absolute bottom-0 inset-x-0 h-12 px-3 pb-2 pt-1.5 flex items-center justify-around backdrop-blur-xl border-t z-30 ${
+              isDark
+                ? "bg-[#0F1A12]/85 border-[#FBF8EE]/8"
+                : "bg-[#FBF8EE]/85 border-[#1B3722]/5"
+            }`}
+          >
+            <div
+              className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-full ${
+                isDark ? "bg-[#A4C9A8]/20" : "bg-[#1B3722]"
+              }`}
+            >
+              <HomeIcon
+                className={`w-3.5 h-3.5 ${isDark ? "text-[#A4C9A8]" : "text-[#F4EDE0]"}`}
+                strokeWidth={2.5}
+              />
             </div>
             <div className="flex flex-col items-center gap-0.5 px-3 py-1">
-              <BarChart3 className="w-3.5 h-3.5 text-[#1B3722]/35" strokeWidth={2} />
+              <BarChart3
+                className={`w-3.5 h-3.5 ${isDark ? "text-[#FBF8EE]/35" : "text-[#1B3722]/35"}`}
+                strokeWidth={2}
+              />
             </div>
             <div className="flex flex-col items-center gap-0.5 px-3 py-1">
-              <SettingsIcon className="w-3.5 h-3.5 text-[#1B3722]/35" strokeWidth={2} />
+              <SettingsIcon
+                className={`w-3.5 h-3.5 ${isDark ? "text-[#FBF8EE]/35" : "text-[#1B3722]/35"}`}
+                strokeWidth={2}
+              />
             </div>
           </div>
 
           {/* Home indicator */}
-          <div className="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full bg-[#1B3722]/40 z-40" />
+          <div
+            className={`absolute bottom-1.5 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full z-40 ${
+              isDark ? "bg-[#FBF8EE]/40" : "bg-[#1B3722]/40"
+            }`}
+          />
         </div>
       </div>
     </div>
@@ -121,8 +167,10 @@ export function PhoneFrame({
 
 const CARD =
   "rounded-[16px] bg-white border border-[#1B3722]/6 shadow-[0_1px_3px_rgba(0,0,0,0.04)]";
-const EYEBROW =
+const EYEBROW_LIGHT =
   "text-[8.5px] uppercase tracking-[0.18em] text-[#1B3722]/55 font-bold";
+const EYEBROW_DARK =
+  "text-[8.5px] uppercase tracking-[0.18em] text-[#FBF8EE]/55 font-bold";
 const PAGE_TITLE = { fontSize: "22px", lineHeight: "1.1", letterSpacing: "-0.02em" };
 const HERO_NUMBER = { fontSize: "44px", lineHeight: "1", letterSpacing: "-0.03em" };
 
@@ -135,13 +183,20 @@ const CAT = {
   do: "#1B3722",
 } as const;
 
-function ShareIconButton() {
+function ShareIconButton({ dark = false }: { dark?: boolean }) {
   return (
     <button
-      className="w-7 h-7 rounded-full bg-white flex items-center justify-center border border-[#1B3722]/8 shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
+      className={`w-7 h-7 rounded-full flex items-center justify-center shadow-[0_1px_2px_rgba(0,0,0,0.04)] ${
+        dark
+          ? "bg-[#FBF8EE]/10 border border-[#FBF8EE]/20"
+          : "bg-white border border-[#1B3722]/8"
+      }`}
       aria-label="Share"
     >
-      <Share2 className="w-3 h-3 text-[#1B3722]" strokeWidth={2.5} />
+      <Share2
+        className={`w-3 h-3 ${dark ? "text-[#FBF8EE]" : "text-[#1B3722]"}`}
+        strokeWidth={2.5}
+      />
     </button>
   );
 }
@@ -191,15 +246,18 @@ function ProgressBar({ pct, color = "#1B3722" }: { pct: number; color?: string }
   );
 }
 
-function PullToRefreshHint() {
+function PullToRefreshHint({ dark = false }: { dark?: boolean }) {
   return (
     <div className="flex justify-center mb-1 -mt-0.5">
-      <ChevronDown className="w-3 h-3 text-[#1B3722]/25" strokeWidth={2.5} />
+      <ChevronDown
+        className={`w-3 h-3 ${dark ? "text-[#FBF8EE]/30" : "text-[#1B3722]/25"}`}
+        strokeWidth={2.5}
+      />
     </div>
   );
 }
 
-/* ─── TODAY (Quick log) ───────────────────────────────────────────── */
+/* ─── TODAY (Quick log) — DARK theme ──────────────────────────────── */
 
 export function PhoneScreenDropIn() {
   const recents = [
@@ -242,27 +300,30 @@ export function PhoneScreenDropIn() {
 
   return (
     <>
-      <PullToRefreshHint />
+      <PullToRefreshHint dark />
 
-      {/* Header: eyebrow + streak pill + share */}
-      <div className="mb-2.5 px-0.5">
-        <div className="flex items-center justify-between mb-1.5">
-          <div className="flex items-center gap-1.5">
-            <span className={EYEBROW}>Wednesday</span>
-            <span className="inline-flex items-center gap-0.5 px-1.5 py-[2px] rounded-full bg-[#B8945E]/15 text-[8.5px] font-semibold text-[#8B6A3E] leading-none">
-              🔥 12-day streak
-            </span>
-          </div>
-          <ShareIconButton />
-        </div>
-        <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
-          Today
-        </h1>
+      {/* Mascot + share */}
+      <div className="flex items-center justify-between mb-2 px-0.5">
+        <SproutMascotIcon className="w-7 h-7" />
+        <ShareIconButton dark />
       </div>
 
-      {/* Composer — eyebrow + question + hint + bottom row (timestamp · drafts · +) */}
+      {/* Eyebrow + streak pill */}
+      <div className="flex items-center gap-1.5 mb-1 px-0.5">
+        <span className={EYEBROW_DARK}>Wednesday</span>
+        <span className="inline-flex items-center gap-0.5 px-1.5 py-[2px] rounded-full bg-[#B8945E]/30 text-[8.5px] font-semibold text-[#F4E4C1] leading-none">
+          🔥 12-day streak
+        </span>
+      </div>
+
+      {/* Title */}
+      <h1 className="text-[#FBF8EE] font-bold mb-3 px-0.5" style={PAGE_TITLE}>
+        Today
+      </h1>
+
+      {/* Composer card */}
       <div className={`${CARD} px-3 py-2.5 mb-2`}>
-        <div className={`${EYEBROW} mb-1`}>5:42 PM</div>
+        <div className={`${EYEBROW_LIGHT} mb-1`}>5:42 PM</div>
         <p
           className="text-[#1B3722] font-semibold leading-tight mb-0.5"
           style={{ fontSize: "13px", letterSpacing: "-0.01em" }}
@@ -285,7 +346,7 @@ export function PhoneScreenDropIn() {
         </div>
       </div>
 
-      {/* Input chips — Voice / Photo / Text with contextual hints */}
+      {/* Input chips — Voice / Photo / Text */}
       <div className="grid grid-cols-3 gap-1.5 mb-2.5">
         {[
           { icon: Mic, label: "Voice", hint: "30 sec" },
@@ -309,7 +370,7 @@ export function PhoneScreenDropIn() {
         ))}
       </div>
 
-      {/* This week mini-summary with progress bar */}
+      {/* This week mini-summary */}
       <div className={`${CARD} px-3 py-2 mb-2.5`}>
         <div className="flex items-center justify-between mb-1">
           <span className="text-[9.5px] font-semibold text-[#1B3722]">
@@ -323,9 +384,9 @@ export function PhoneScreenDropIn() {
       </div>
 
       {/* Recent eyebrow */}
-      <div className={`${EYEBROW} mb-1.5 px-0.5`}>Recent</div>
+      <div className={`${EYEBROW_DARK} mb-1.5 px-0.5`}>Recent</div>
 
-      {/* Recent capture cards (5) */}
+      {/* Recent capture cards */}
       {recents.map((r, i) => (
         <div
           key={i}
@@ -353,18 +414,18 @@ export function PhoneScreenDropIn() {
         </div>
       ))}
 
-      {/* FAB — bottom-right, above tab bar */}
+      {/* FAB — lime CTA in dark theme */}
       <button
-        className="absolute bottom-[60px] right-3 w-10 h-10 rounded-full bg-[#1B3722] flex items-center justify-center shadow-[0_6px_16px_-4px_rgba(27,55,34,0.5)] z-10"
+        className="absolute bottom-[60px] right-3 w-10 h-10 rounded-full bg-sprout-lime flex items-center justify-center shadow-[0_6px_16px_-4px_rgba(167,229,84,0.45)] z-10"
         aria-label="Quick capture"
       >
-        <Plus className="w-4 h-4 text-[#FBF8EE]" strokeWidth={2.5} />
+        <Plus className="w-4 h-4 text-sprout-ink" strokeWidth={2.5} />
       </button>
     </>
   );
 }
 
-/* ─── MEMORY (Charlie) ────────────────────────────────────────────── */
+/* ─── MEMORY (Charlie) — DARK theme ──────────────────────────────── */
 
 export function PhoneScreenMemory() {
   const weeks = [
@@ -412,14 +473,18 @@ export function PhoneScreenMemory() {
 
   return (
     <>
-      <PullToRefreshHint />
+      <PullToRefreshHint dark />
 
-      <div className="mb-2.5 px-0.5">
-        <div className="flex items-center justify-between mb-1.5">
-          <span className={EYEBROW}>Memory</span>
-          <ShareIconButton />
-        </div>
-        <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
+      {/* Mascot + share */}
+      <div className="flex items-center justify-between mb-2 px-0.5">
+        <SproutMascotIcon className="w-7 h-7" />
+        <ShareIconButton dark />
+      </div>
+
+      {/* Eyebrow + title */}
+      <div className="mb-3 px-0.5">
+        <span className={`${EYEBROW_DARK} block mb-1`}>Memory</span>
+        <h1 className="text-[#FBF8EE] font-bold" style={PAGE_TITLE}>
           Charlie
         </h1>
       </div>
@@ -431,8 +496,8 @@ export function PhoneScreenMemory() {
             key={f}
             className={`px-2 py-1 rounded-full text-[8.5px] font-semibold whitespace-nowrap leading-none ${
               i === 0
-                ? "bg-[#1B3722] text-[#FBF8EE]"
-                : "bg-white text-[#1B3722]/70 border border-[#1B3722]/8"
+                ? "bg-[#FBF8EE] text-[#1B3722]"
+                : "bg-[#FBF8EE]/10 text-[#FBF8EE]/70 border border-[#FBF8EE]/15"
             }`}
           >
             {f}
@@ -442,7 +507,7 @@ export function PhoneScreenMemory() {
 
       {/* Pattern callout with connection graph */}
       <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
-        <div className={`${EYEBROW} mb-1`}>Pattern · this term</div>
+        <div className={`${EYEBROW_LIGHT} mb-1`}>Pattern · this term</div>
         <p
           className="text-[#1B3722] font-semibold leading-snug mb-2"
           style={{ fontSize: "12px", letterSpacing: "-0.01em" }}
@@ -470,9 +535,9 @@ export function PhoneScreenMemory() {
       </div>
 
       {/* Section eyebrow */}
-      <div className={`${EYEBROW} mb-1 px-0.5`}>6 weeks · 24 moments</div>
+      <div className={`${EYEBROW_DARK} mb-1 px-0.5`}>6 weeks · 24 moments</div>
 
-      {/* Week cards (5) — emoji + label + date + snippet + dots + count + arrow */}
+      {/* Week cards */}
       {weeks.map((m) => (
         <div
           key={m.week}
@@ -513,13 +578,15 @@ export function PhoneScreenMemory() {
         </div>
       ))}
 
-      {/* Connections mini-section */}
-      <div className="rounded-[16px] bg-[#A4C9A8]/15 border border-[#A4C9A8]/30 px-3 py-2 mt-1.5">
-        <div className={`${EYEBROW} mb-1`}>Connections</div>
-        <p className="text-[9px] leading-snug text-[#1B3722]/75">
+      {/* Connections mini-section — cream tint, fits dark theme */}
+      <div className="rounded-[16px] bg-[#FBF8EE]/10 border border-[#FBF8EE]/15 px-3 py-2 mt-1.5">
+        <div className="text-[8.5px] uppercase tracking-[0.18em] text-[#FBF8EE]/65 font-bold mb-1">
+          Connections
+        </div>
+        <p className="text-[9px] leading-snug text-[#FBF8EE]/75">
           Week 12 → Week 10: both touched numeracy through making.
         </p>
-        <p className="text-[9px] leading-snug text-[#1B3722]/75 mt-0.5">
+        <p className="text-[9px] leading-snug text-[#FBF8EE]/75 mt-0.5">
           Week 11 → Week 8: counting and classification both rose.
         </p>
       </div>
@@ -527,22 +594,22 @@ export function PhoneScreenMemory() {
   );
 }
 
-/* ─── WEEKLY REPORT (Charlie's week) ─────────────────────────────── */
+/* ─── WEEKLY REPORT (Charlie's week) — LIGHT theme ───────────────── */
 
 export function PhoneScreenReport() {
   return (
     <>
       <PullToRefreshHint />
 
-      {/* Header */}
-      <div className="mb-2.5 px-0.5">
-        <div className="flex items-center justify-between mb-1.5">
-          <div className="flex items-center gap-1.5">
-            <SproutMascotIcon className="w-3.5 h-3.5" />
-            <span className={EYEBROW}>Week 12 · Nov 17–23</span>
-          </div>
-          <ShareIconButton />
-        </div>
+      {/* Mascot + share */}
+      <div className="flex items-center justify-between mb-2 px-0.5">
+        <SproutMascotIcon className="w-7 h-7" />
+        <ShareIconButton />
+      </div>
+
+      {/* Eyebrow + title */}
+      <div className="mb-3 px-0.5">
+        <span className={`${EYEBROW_LIGHT} block mb-1`}>Week 12 · Nov 17–23</span>
         <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
           Charlie&apos;s week
         </h1>
@@ -554,7 +621,7 @@ export function PhoneScreenReport() {
         active={0}
       />
 
-      {/* HERO — number + delta + sparkline + day-by-day footer */}
+      {/* HERO */}
       <div className="rounded-[20px] bg-gradient-to-b from-[#2A5132] to-[#1B3722] px-3.5 py-3 mb-2.5 shadow-[0_4px_16px_-4px_rgba(27,55,34,0.35)]">
         <div className="text-[8.5px] uppercase tracking-[0.2em] text-[#A4C9A8]/85 font-bold mb-1">
           This week
@@ -579,7 +646,6 @@ export function PhoneScreenReport() {
             </span>
           </div>
         </div>
-        {/* sparkline — 7 day bars */}
         <div className="flex items-end gap-1 h-6 mb-1.5">
           {[2, 4, 3, 2, 4, 2, 1].map((v, i) => (
             <div
@@ -593,7 +659,6 @@ export function PhoneScreenReport() {
             />
           ))}
         </div>
-        {/* day-by-day footer */}
         <div className="flex justify-between text-[7.5px] text-[#FBF8EE]/55 font-medium">
           {[
             { d: "Mon", n: 2 },
@@ -612,9 +677,9 @@ export function PhoneScreenReport() {
       </div>
 
       {/* Categories eyebrow */}
-      <div className={`${EYEBROW} mb-1 px-0.5`}>Categories</div>
+      <div className={`${EYEBROW_LIGHT} mb-1 px-0.5`}>Categories</div>
 
-      {/* Capsules — 5 categories */}
+      {/* Capsules */}
       <div className="flex flex-wrap gap-1 mb-2.5">
         {[
           { label: "Talk", count: 5, bg: CAT.talk },
@@ -638,9 +703,9 @@ export function PhoneScreenReport() {
         ))}
       </div>
 
-      {/* Growth domains — 4 progress bars */}
+      {/* Growth domains */}
       <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
-        <div className={`${EYEBROW} mb-2`}>Growth domains</div>
+        <div className={`${EYEBROW_LIGHT} mb-2`}>Growth domains</div>
         <div className="space-y-1.5">
           {[
             { name: "Communication", pct: 78, count: 7, color: CAT.talk },
@@ -664,9 +729,9 @@ export function PhoneScreenReport() {
       </div>
 
       {/* Highlights eyebrow */}
-      <div className={`${EYEBROW} mb-1 px-0.5`}>Highlights</div>
+      <div className={`${EYEBROW_LIGHT} mb-1 px-0.5`}>Highlights</div>
 
-      {/* Highlight cards (3) — emoji + day + snippet + tag + arrow */}
+      {/* Highlight cards */}
       {[
         {
           emoji: "🍪",
@@ -720,7 +785,7 @@ export function PhoneScreenReport() {
         </div>
       ))}
 
-      {/* Patterns this week callout */}
+      {/* Patterns callout */}
       <div className="rounded-[16px] bg-[#B8945E]/12 border border-[#B8945E]/25 px-3 py-2 mb-2 mt-1.5">
         <div className="text-[8px] uppercase tracking-[0.18em] text-[#8B6A3E] font-bold mb-0.5">
           Pattern this week
@@ -745,10 +810,9 @@ export function PhoneScreenReport() {
   );
 }
 
-/* ─── YEAR (Charlie's year) ───────────────────────────────────────── */
+/* ─── YEAR (Charlie's year) — LIGHT theme ─────────────────────────── */
 
-/* Deterministic heatmap so SSR/CSR don't diverge. 7 rows (M T W T F S S)
-   × 12 cols (weeks). Row-major: first 12 = Monday across 12 weeks. */
+/* Deterministic heatmap intensity grid — 7 rows (M T W T F S S) × 12 weeks */
 const HEATMAP_INTENSITIES = [
   1, 2, 1, 3, 2, 1, 3, 2, 4, 3, 2, 3, // Mon
   2, 3, 2, 1, 4, 3, 2, 1, 3, 2, 4, 3, // Tue
@@ -779,14 +843,15 @@ export function PhoneScreenYear() {
     <>
       <PullToRefreshHint />
 
-      <div className="mb-2.5 px-0.5">
-        <div className="flex items-center justify-between mb-1.5">
-          <div className="flex items-center gap-1.5">
-            <SproutMascotIcon className="w-3.5 h-3.5" />
-            <span className={EYEBROW}>2026 · Term 1</span>
-          </div>
-          <ShareIconButton />
-        </div>
+      {/* Mascot + share */}
+      <div className="flex items-center justify-between mb-2 px-0.5">
+        <SproutMascotIcon className="w-7 h-7" />
+        <ShareIconButton />
+      </div>
+
+      {/* Eyebrow + title */}
+      <div className="mb-3 px-0.5">
+        <span className={`${EYEBROW_LIGHT} block mb-1`}>2026 · Term 1</span>
         <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
           Charlie&apos;s year
         </h1>
@@ -798,7 +863,7 @@ export function PhoneScreenYear() {
         active={0}
       />
 
-      {/* HERO — number + delta + 12-week sparkline + 3 micro-stats */}
+      {/* HERO */}
       <div className="rounded-[20px] bg-gradient-to-b from-[#2A5132] to-[#1B3722] px-3.5 py-3 mb-2.5 shadow-[0_4px_16px_-4px_rgba(27,55,34,0.35)]">
         <div className="text-[8.5px] uppercase tracking-[0.2em] text-[#A4C9A8]/85 font-bold mb-1">
           Term 1
@@ -823,7 +888,6 @@ export function PhoneScreenYear() {
             </span>
           </div>
         </div>
-        {/* 12-week sparkline */}
         <div className="flex items-end gap-[2px] h-5 mb-2">
           {[1, 2, 3, 2, 4, 3, 5, 4, 3, 5, 6, 4].map((v, i) => (
             <div
@@ -837,7 +901,6 @@ export function PhoneScreenYear() {
             />
           ))}
         </div>
-        {/* micro-stats */}
         <div className="grid grid-cols-3 gap-1.5 pt-2 border-t border-[#A4C9A8]/15">
           <div>
             <div className="text-[7px] uppercase tracking-wider text-[#A4C9A8]/65 font-bold leading-tight">
@@ -866,10 +929,10 @@ export function PhoneScreenYear() {
         </div>
       </div>
 
-      {/* Heatmap — weekday labels left, week numbers top, legend right */}
+      {/* Heatmap */}
       <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
         <div className="flex items-center justify-between mb-1.5">
-          <div className={EYEBROW}>Moments by week</div>
+          <div className={EYEBROW_LIGHT}>Moments by week</div>
           <div className="flex items-center gap-1 text-[7px] text-[#1B3722]/55 font-bold">
             <span>Low</span>
             <div className="flex gap-[1px]">
@@ -883,7 +946,6 @@ export function PhoneScreenYear() {
             <span>High</span>
           </div>
         </div>
-        {/* week numbers row */}
         <div className="flex gap-1 mb-0.5">
           <div className="w-3 flex-shrink-0" />
           <div className="flex-1 grid grid-cols-12 gap-[2px] text-[6.5px] text-[#1B3722]/40 font-bold">
@@ -894,7 +956,6 @@ export function PhoneScreenYear() {
             ))}
           </div>
         </div>
-        {/* heatmap with weekday labels */}
         <div className="flex gap-1">
           <div className="flex flex-col justify-between text-[7px] text-[#1B3722]/40 font-bold py-[1px] w-3 flex-shrink-0">
             {["M", "T", "W", "T", "F", "S", "S"].map((d, i) => (
@@ -914,9 +975,9 @@ export function PhoneScreenYear() {
         </div>
       </div>
 
-      {/* Domains this term — sorted by count */}
+      {/* Domains this term */}
       <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
-        <div className={`${EYEBROW} mb-2`}>Domains this term</div>
+        <div className={`${EYEBROW_LIGHT} mb-2`}>Domains this term</div>
         <div className="space-y-1.5">
           {[
             { name: "Communication", count: 18, pct: 100, color: CAT.talk },
@@ -940,9 +1001,9 @@ export function PhoneScreenYear() {
       </div>
 
       {/* Monthly eyebrow */}
-      <div className={`${EYEBROW} mb-1 px-0.5`}>Monthly</div>
+      <div className={`${EYEBROW_LIGHT} mb-1 px-0.5`}>Monthly</div>
 
-      {/* Monthly rows — name + per-month sparkline + count + delta */}
+      {/* Monthly rows */}
       {[
         { month: "March", count: 18, delta: "+4", trend: [3, 4, 5, 6] },
         { month: "April", count: 22, delta: "+4", trend: [4, 6, 5, 7] },
@@ -985,7 +1046,7 @@ export function PhoneScreenYear() {
       ))}
 
       {/* Year highlights carousel */}
-      <div className={`${EYEBROW} mb-1 px-0.5 mt-2`}>Year highlights</div>
+      <div className={`${EYEBROW_LIGHT} mb-1 px-0.5 mt-2`}>Year highlights</div>
       <div className="flex gap-1.5 overflow-x-hidden -mx-4 px-4 pb-1">
         {[
           { emoji: "🌋", title: "Volcano month", note: "Apr · 12 moments" },
