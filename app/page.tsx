@@ -85,10 +85,14 @@ export default function HomeV2() {
             <p className="mt-10 text-center text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
                style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
               It&apos;s Sunday night and you&apos;re wondering if today counted.
-              Drop in the voice memos, the photos, the bits you scribbled
-              at 9pm &mdash; Sprout puts the week somewhere you can both
-              see it. Yours to scroll. Theirs to see. Never sold.
-              Never trained on.
+              Voice memos, photos, structured journaling, the bits you scribbled
+              at 9pm &mdash; Sprout is where you document what your homeschool
+              week actually was. Clarity for you. A sense of achievement for them.
+            </p>
+            <p className="mt-5 text-center text-sprout-cream font-bold leading-relaxed max-w-xl mx-auto"
+               style={{ fontSize: "clamp(15px, 1.4vw, 18px)" }}>
+              Your kid&apos;s data is yours. We never sell it. AI is never trained
+              on a single thing you or your kids log.
             </p>
 
             <div className="mt-12 flex flex-col items-center gap-4">
@@ -435,27 +439,33 @@ export default function HomeV2() {
             {/* Feature 3 — Sunday becomes art */}
             <FeatureBlock
               index="03"
-              eyebrow="Sunday becomes art"
+              eyebrow="Clarity for you. Pride for them."
               title={
                 <>
-                  Watch your week become <em className="not-italic text-[#A4C9A8]">their growth.</em>
+                  The same week, <em className="not-italic text-[#A4C9A8]">seen two ways.</em>
                 </>
               }
               body={
                 <>
                   <p>
                     Open it any Sunday night. The week is already there
-                    &mdash; voice memos, photos, the scheduled days, the
-                    deadlines met, what your kid actually did. No AI
-                    making anything up. Just the captures, organised.
-                    One timeline per kid. Charlie&apos;s grows separately
-                    to Emma&apos;s.
+                    &mdash; voice memos, photos, structured journaling,
+                    scheduled days, deadlines met, what your kid actually
+                    did. No AI making anything up. Just the captures,
+                    organised. One timeline per kid. Charlie&apos;s grows
+                    separately to Emma&apos;s.
+                  </p>
+                  <p className="mt-5 text-sprout-cream/65">
+                    You scroll the week and the chaos turns into clarity.
+                    Your kid scrolls their own view and feels a sense of
+                    achievement. Same week, two screens, no model in the
+                    middle.
                   </p>
                   <ul className="mt-6 space-y-3">
                     {[
-                      "Same week, two views. Yours to scroll. Theirs to see.",
-                      "Hand it to your kid Monday morning. The week, added up — they see what they built.",
-                      "Doubles as a record of learning if your registration officer ever asks",
+                      "Documenting your week is a new habit — Sprout makes it the easy one.",
+                      "Teaching your kid to journal is a life-long skill. Hand them the phone.",
+                      "Doubles as a record of learning if your registration officer ever asks.",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3 text-sprout-cream/80" style={{ fontSize: "15px" }}>
                         <span className="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-sprout-cream/15 flex items-center justify-center border border-sprout-cream/10">
@@ -488,7 +498,7 @@ export default function HomeV2() {
                       Charlie&apos;s week is ready 🌱
                     </p>
                     <p className="text-[10px] text-sprout-cream/75 leading-snug">
-                      Volcano doc sparked 90 mins of Earth-science questions.
+                      Open it together. 7 captures this week.
                     </p>
                   </FloatingGlass>
                 </div>
@@ -643,8 +653,67 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
+          PRIVACY PROMISE  (between Differentiator and Friday scene)
+          Three-card explicit statement: data ownership, no selling, no
+          AI training. Chase wanted this stated plainly, not buried in FAQ.
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
+
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1B3722]/40 via-[#2A5132]/30 to-[#3D6643]/30" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#A4C9A8]/8 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-5xl mx-auto">
+          <CenteredEyebrow number="05" label="What we promise about your kid's data" />
+
+          <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream text-center max-w-3xl mx-auto mb-16 headline-lit"
+              style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
+            Your kid&apos;s stuff<br />stays yours.
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-5">
+            <GlassCard className="p-7 rounded-3xl h-full" glow="warm" soft>
+              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">01 · Yours</div>
+              <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
+                Your data is yours.
+              </h3>
+              <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
+                Voice memos, photos, journaling, what your kid did. All of
+                it lives in your account, in Australia. Export it any time.
+                Delete it any time.
+              </p>
+            </GlassCard>
+            <GlassCard className="p-7 rounded-3xl h-full" glow="sage" soft>
+              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">02 · Never sold</div>
+              <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
+                We never sell it.
+              </h3>
+              <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
+                No advertisers. No &ldquo;research partners.&rdquo; No
+                anonymised data exports. Sprout makes money one way
+                &mdash; your subscription. There&apos;s no one to sell
+                your week to.
+              </p>
+            </GlassCard>
+            <GlassCard className="p-7 rounded-3xl h-full" glow="warm" soft>
+              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">03 · Never trained</div>
+              <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
+                AI isn&apos;t trained on it.
+              </h3>
+              <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
+                There&apos;s no AI inside Sprout. Nothing generates,
+                nothing summarises, nothing learns from what you or your
+                kids log. The week stays the week.
+              </p>
+            </GlassCard>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
           SHARED MOMENT  (unnumbered scene between Why-Sprout and Pricing)
-          Kitchen table on Friday — parent + kid + the printed report.
+          Kitchen table on Friday — parent + kid + the printed week.
           Closes the emotional loop the 3am section opens. One scene, no
           marketing claims. Voice = founder, painted.
           ═══════════════════════════════════════════════════════════════ */}
@@ -665,7 +734,7 @@ export default function HomeV2() {
 
           <p className="text-sprout-cream/85 leading-snug"
              style={{ fontSize: "clamp(24px, 3.8vw, 44px)", lineHeight: "1.2" }}>
-            The printed report sits on the kitchen table, still warm.
+            The printed week sits on the kitchen table, still warm.
             Charlie climbs up next to you and points at the volcano
             week —{" "}
             <span className="text-sprout-cream italic">&ldquo;we did that.&rdquo;</span>
@@ -696,7 +765,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-5xl mx-auto">
 
-          <SectionEyebrow number="05" label="What you&apos;ll ask first" />
+          <SectionEyebrow number="06" label="What you&apos;ll ask first" />
 
           <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream mb-16 headline-lit"
               style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
@@ -707,7 +776,7 @@ export default function HomeV2() {
             {[
               {
                 q: "Will this turn into another app I forget I&apos;m using?",
-                a: "No. The whole loop is one voice memo or sentence, dropped in when life lets you. If a week goes by quiet, the next Sunday&apos;s report is shorter — that&apos;s it. Sprout is welcomed-not-required by design; the artifact arrives whether you put in five inputs or one.",
+                a: "No. The whole loop is one voice memo, photo, or sentence — dropped in when life lets you. If a week goes by quiet, the next week&apos;s view is shorter, that&apos;s it. Sprout is welcomed-not-required by design; the timeline keeps building whether you put in five captures this week or one.",
               },
               {
                 q: "How is Sprout different from my Notes app or ChatGPT?",
@@ -715,15 +784,15 @@ export default function HomeV2() {
               },
               {
                 q: "Do you sell or train on our data?",
-                a: "No, and we never will. Your kid&apos;s voice memos, photos, and weekly reports stay yours. We don&apos;t sell them, we don&apos;t use them to train AI models, we don&apos;t share them with advertisers. The whole point of Sprout is that your family&apos;s week is yours alone. Selling it would defeat the entire reason this exists.",
+                a: "No, and we never will. Your kid&apos;s voice memos, photos, journaling, and timeline stay yours. We don&apos;t sell them. We don&apos;t train AI on them — there&apos;s no AI inside Sprout to train. We don&apos;t share them with advertisers. The whole point of Sprout is that your family&apos;s week is yours alone. Selling it or feeding it to a model would defeat the entire reason this exists.",
               },
               {
                 q: "Can my kid record their own entries?",
-                a: "Yes — and we&apos;d encourage it. Daily reflection is one of the most durable habits a child can build, and it forms faster between ages six and eleven than at any later age. Hand them the phone, let them voice-memo what they made, what they figured out, what they got stuck on. Their report becomes their voice — not just yours about them. It&apos;s healthy for both of you, and it teaches a skill they keep for life.",
+                a: "Yes — and we&apos;d encourage it. Journaling is a life-long skill, and it forms faster between ages six and eleven than at any later age. Hand them the phone, let them voice-memo what they made, what they figured out, what they got stuck on. Their timeline becomes their voice — not just yours about them. It&apos;s healthy for both of you, and it teaches a habit they keep for life.",
               },
               {
                 q: "What if I forget to log for a week?",
-                a: "Then your weekly report is shorter. The next week, whatever you capture compiles into what&apos;s there. The thing builds on what&apos;s there, not what isn&apos;t.",
+                a: "Then that week&apos;s view is shorter. Next week, whatever you capture compiles into what&apos;s there. The timeline builds on what&apos;s there, not what isn&apos;t.",
               },
               {
                 q: "Will Sprout help with my state&apos;s record-keeping?",
@@ -739,7 +808,7 @@ export default function HomeV2() {
               },
               {
                 q: "Can I track more than one kid?",
-                a: "Yes. Each kid gets their own thread, their own report, their own year. Sprout treats them as the distinct humans they are.",
+                a: "Yes. Each kid gets their own timeline, their own week, their own year. Sprout treats them as the distinct humans they are.",
               },
             ].map((item, i) => (
               <details key={i} className={`${GLASS_CARD_SOFT} group rounded-2xl`}>
@@ -771,7 +840,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-4xl mx-auto text-center">
 
-          <CenteredEyebrow number="06" label="Who Sprout is for" />
+          <CenteredEyebrow number="07" label="Who Sprout is for" />
 
           <p className="text-sprout-cream/85 leading-relaxed italic"
              style={{ fontSize: "clamp(28px, 4vw, 52px)", lineHeight: "1.15" }}>
