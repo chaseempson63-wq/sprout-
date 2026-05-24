@@ -84,10 +84,11 @@ export default function HomeV2() {
 
             <p className="mt-10 text-center text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
                style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
-              It&apos;s Sunday night and you&apos;re wondering if this week counted.
-              Sprout turns the chaos of your week (the voice memos, the photos,
-              the bits you scribbled at 9pm) into a beautiful weekly reflection.
-              Every Sunday, before bed.
+              It&apos;s Sunday night and you&apos;re wondering if today counted.
+              Drop in the voice memos, the photos, the bits you scribbled
+              at 9pm &mdash; Sprout puts the week somewhere you can both
+              see it. Yours to scroll. Theirs to see. Never sold.
+              Never trained on.
             </p>
 
             <div className="mt-12 flex flex-col items-center gap-4">
@@ -162,7 +163,7 @@ export default function HomeV2() {
 
           <div className="mt-16 flex items-center justify-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
             <span className="block w-8 h-px bg-sprout-cream/30" />
-            <span>Drop in · Sprout remembers · Sunday becomes art</span>
+            <span>Drop in · the week compiles · scroll any time</span>
             <span className="block w-8 h-px bg-sprout-cream/30" />
           </div>
 
@@ -195,27 +196,33 @@ export default function HomeV2() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <VerbatimCard
               quote="I envision all the other parents judging me and thinking I'm a horrible teacher who is failing my kids. When I hear my daughter stumble over words I was reading at her age, I worry."
-              name="Megan"
-            />
-            <VerbatimCard
-              quote="So, to all the mums doing home-based learning and feeling like they are failing, I see you. I feel you. I am you."
-              name="Sarah"
+              name="Charlene"
+              location="Verbatim · Hess UnAcademy · US"
             />
             <VerbatimCard
               quote="Today was shit."
-              name="Kate"
-            />
-            <VerbatimCard
-              quote="Is my child up-to-snuff with her peers?"
-              name="Anna"
+              name="Jenna"
+              location="Verbatim · Mum Central · AU"
             />
             <VerbatimCard
               quote="In survival mode, learning is impossible."
-              name="Rachel"
+              name="Louise"
+              location="Verbatim · School Can't Australia · NSW"
             />
             <VerbatimCard
-              quote={`This is our first year homeschooling and I'm so afraid of my daughter being "behind"!!!`}
-              name="Nicole"
+              quote={`I'm so afraid of my daughter being "behind"!!!`}
+              name="Amanda"
+              location="Verbatim · Not That Hard To Homeschool · US"
+            />
+            <VerbatimCard
+              quote="'Just keep trying' is slow harm, not strategy."
+              name="Louise"
+              location="Verbatim · School Can't Australia · NSW"
+            />
+            <VerbatimCard
+              quote="I'm having the time of my life. Thank God I chose this."
+              name="Sara"
+              location="Verbatim · Australian Homeschool Stories · QLD"
             />
           </div>
 
@@ -316,11 +323,11 @@ export default function HomeV2() {
             <SectionEyebrow number="03" label="How it works" />
             <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl headline-lit"
                 style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
-              Three stupid simple<br />moves. One Sunday<br />artifact.
+              Three stupid simple<br />moves. The year<br />builds itself.
             </h2>
             <p className="mt-8 text-sprout-cream/70 max-w-xl leading-relaxed" style={{ fontSize: "clamp(17px, 1.5vw, 19px)" }}>
               For when you&apos;re already doing too much.
-              The week compiles itself.
+              You capture; Sprout compiles. No AI making things up about your kid.
             </p>
           </div>
 
@@ -334,12 +341,13 @@ export default function HomeV2() {
               body={
                 <>
                   <p>
-                    Voice memo. Photo. One sentence at 9pm. Tag which kid (or
+                    Voice memo. Photo. One sentence at 9pm. A scheduled
+                    activity. A deadline coming Friday. Tag which kid (or
                     the whole family). That&apos;s the entire input.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    Just there when Sunday comes. The bits you captured add
-                    up to more than you remember.
+                    There when you open it &mdash; Sunday, Tuesday, whenever.
+                    The bits you captured add up to more than you remember.
                   </p>
                 </>
               }
@@ -384,13 +392,14 @@ export default function HomeV2() {
               body={
                 <>
                   <p>
-                    Notes apps don&apos;t compile your week, they give you a
-                    longer scroll. ChatGPT forgets every session. Sprout
-                    remembers every moment and references back.
+                    Notes apps give you a longer scroll. ChatGPT forgets
+                    every session &mdash; and trains on what you tell it.
+                    Sprout keeps every moment, organised by kid, and lets
+                    you scroll back through six weeks or six months.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    Continuity is the whole product. One kid&apos;s memory bank,
-                    growing every week.
+                    Continuity is the whole product. One kid&apos;s record,
+                    growing every week. Yours, not anyone else&apos;s.
                   </p>
                 </>
               }
@@ -435,15 +444,17 @@ export default function HomeV2() {
               body={
                 <>
                   <p>
-                    Every Sunday night, a beautiful weekly reflection of what
-                    your kid actually learned, even if your week felt like
-                    chaos. One report per kid. Charlie&apos;s grows separately
+                    Open it any Sunday night. The week is already there
+                    &mdash; voice memos, photos, the scheduled days, the
+                    deadlines met, what your kid actually did. No AI
+                    making anything up. Just the captures, organised.
+                    One timeline per kid. Charlie&apos;s grows separately
                     to Emma&apos;s.
                   </p>
                   <ul className="mt-6 space-y-3">
                     {[
-                      "Shows what felt like chaos was actually learning.",
-                      "Hand it to your kid Monday morning. The week, added up — they see what they did.",
+                      "Same week, two views. Yours to scroll. Theirs to see.",
+                      "Hand it to your kid Monday morning. The week, added up — they see what they built.",
                       "Doubles as a record of learning if your registration officer ever asks",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3 text-sprout-cream/80" style={{ fontSize: "15px" }}>
@@ -618,11 +629,11 @@ export default function HomeV2() {
               <div className="space-y-4 text-[#1B3722]/85" style={{ fontSize: "13.5px", lineHeight: "1.6" }}>
                 <div>
                   <div className="text-[9px] uppercase tracking-widest text-[#1B3722]/55 mb-1">What you do</div>
-                  <div>Drop in a moment. Voice memo, photo, sentence.</div>
+                  <div>Drop in a moment. Voice memo, photo, sentence, scheduled day.</div>
                 </div>
                 <div>
                   <div className="text-[9px] uppercase tracking-widest text-[#1B3722]/55 mb-1">What you get</div>
-                  <div>A weekly report that knows your kid, references prior weeks, lands Sunday night. Stays yours — never trains anyone else&apos;s model.</div>
+                  <div>Every voice memo, every photo, every deadline &mdash; organised by kid, scroll-able by week, month, year. Yours to see. Theirs to see. Never sold. Never trained on.</div>
                 </div>
               </div>
             </div>
@@ -724,7 +735,7 @@ export default function HomeV2() {
               },
               {
                 q: "What if I unschool? My week doesn&apos;t look like school.",
-                a: "Even better. Sprout translates the cooking, the questions, the YouTube rabbit holes, into the developmental skills your kid is actually building. We don&apos;t measure curriculum.",
+                a: "Even better. The cooking, the questions, the YouTube rabbit holes, the library walks &mdash; all of it goes in the timeline, exactly as it happened. You and your kid can scroll the week and see what was actually there. We don&apos;t measure curriculum.",
               },
               {
                 q: "Can I track more than one kid?",
