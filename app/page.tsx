@@ -156,7 +156,7 @@ export default function HomeV2() {
               <PhoneScreenReport />
             </PhoneFrame>
             <PhoneFrame tilt="rotateY(-15deg) rotateX(4deg)">
-              <PhoneScreenMemory />
+              <PhoneScreenYear />
             </PhoneFrame>
           </PhoneShowcase>
 
