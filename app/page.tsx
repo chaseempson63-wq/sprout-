@@ -95,11 +95,11 @@ export default function HomeV2() {
                 href="#start"
                 className="group inline-flex items-center justify-center gap-2 h-14 px-8 rounded-full bg-[#F4EDE0] text-[#1B3722] font-bold text-base hover:bg-[#FBF6EB] transition-colors focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-sprout-cream/40"
               >
-                Join the waitlist
+                Save my spot
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
               </Link>
               <p className="text-sm text-sprout-cream/60">
-                Free to join · 100 founding spots · doubles at 25
+                Free · 100 founding spots · doubles at 25
               </p>
             </div>
 
@@ -443,7 +443,7 @@ export default function HomeV2() {
                   <ul className="mt-6 space-y-3">
                     {[
                       "Shows what felt like chaos was actually learning.",
-                      "Print it, share it, show your kid Monday morning",
+                      "Hand it to your kid Monday morning. Quiet pride beats stickers or streaks.",
                       "Doubles as a record of learning if your registration officer ever asks",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3 text-sprout-cream/80" style={{ fontSize: "15px" }}>
@@ -583,7 +583,7 @@ export default function HomeV2() {
               {
                 title: "ChatGPT",
                 you: "Re-explain who Charlie is. Every. Single. Time.",
-                get: "An answer that's gone next session. No memory.",
+                get: "An answer that's gone next session. And trained on what you told it.",
               },
               {
                 title: "Spreadsheets",
@@ -622,7 +622,7 @@ export default function HomeV2() {
                 </div>
                 <div>
                   <div className="text-[9px] uppercase tracking-widest text-[#1B3722]/55 mb-1">What you get</div>
-                  <div>A weekly report that knows your kid, references prior weeks, lands Sunday night.</div>
+                  <div>A weekly report that knows your kid, references prior weeks, lands Sunday night. Stays yours — never trains anyone else&apos;s model.</div>
                 </div>
               </div>
             </div>
