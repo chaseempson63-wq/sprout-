@@ -320,7 +320,7 @@ export default function HomeV2() {
             </h2>
             <p className="mt-8 text-sprout-cream/70 max-w-xl leading-relaxed" style={{ fontSize: "clamp(17px, 1.5vw, 19px)" }}>
               For when you&apos;re already doing too much.
-              No daily goals. No streaks. No guilt.
+              The week compiles itself.
             </p>
           </div>
 
@@ -338,8 +338,8 @@ export default function HomeV2() {
                     the whole family). That&apos;s the entire input.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    No daily prompts. No streaks. No &ldquo;you missed a day&rdquo;
-                    guilt. Just there when Sunday comes.
+                    Just there when Sunday comes. The bits you captured add
+                    up to more than you remember.
                   </p>
                 </>
               }
@@ -443,7 +443,7 @@ export default function HomeV2() {
                   <ul className="mt-6 space-y-3">
                     {[
                       "Shows what felt like chaos was actually learning.",
-                      "Hand it to your kid Monday morning. Quiet pride beats stickers or streaks.",
+                      "Hand it to your kid Monday morning. The week, added up — they see what they did.",
                       "Doubles as a record of learning if your registration officer ever asks",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3 text-sprout-cream/80" style={{ fontSize: "15px" }}>
@@ -588,7 +588,7 @@ export default function HomeV2() {
               {
                 title: "Spreadsheets",
                 you: "Fill cells. Format columns. Maintain it.",
-                get: "Data you don't read. Another guilt.",
+                get: "Data you don't read. Effort with no payoff.",
               },
             ].map((alt) => (
               <GlassCard key={alt.title} className="p-7 rounded-3xl" glow="sage" soft>
@@ -712,7 +712,7 @@ export default function HomeV2() {
               },
               {
                 q: "What if I forget to log for a week?",
-                a: "Then your weekly report is shorter. That&apos;s it. No streaks. No guilt. No nagging notifications.",
+                a: "Then your weekly report is shorter. The next week, whatever you capture compiles into what&apos;s there. The thing builds on what&apos;s there, not what isn&apos;t.",
               },
               {
                 q: "Will Sprout help with my state&apos;s record-keeping?",
