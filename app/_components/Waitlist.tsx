@@ -4,9 +4,7 @@ import { useRef, useState } from "react";
 import {
   ArrowRight,
   MessageCircle,
-  PiggyBank,
   ShieldCheck,
-  Stars,
   Wrench,
   Zap,
   type LucideIcon,
@@ -28,36 +26,24 @@ type FMBenefit = {
 const FM_BENEFITS: FMBenefit[] = [
   {
     icon: ShieldCheck,
-    heading: "Lifetime Founding Family status.",
+    heading: "Founding member status for life.",
     description: "Once-ever badge. After 100, it's closed forever.",
   },
   {
     icon: Zap,
-    heading: "Front of the line, day one.",
-    description:
-      "While the waitlist waits, you're in the app the moment Sprout opens.",
+    heading: "Skip the wait.",
+    description: "In Sprout the day it opens. No queue, no email-when-ready.",
   },
   {
     icon: MessageCircle,
-    heading: "A direct line to the founder.",
+    heading: "A direct line to the founder and team.",
     description:
-      "Private channel. A small room with the team, not a Discord with 12,000 strangers.",
+      "Private channel. A small room, not a Discord with strangers.",
   },
   {
     icon: Wrench,
-    heading: "Real input on what gets built.",
-    description: "See roadmap drafts before anyone. Your feedback ships.",
-  },
-  {
-    icon: PiggyBank,
-    heading: "Your $29 credits against your first paid year.",
-    description:
-      "When subscriptions launch, the gesture comes off the top. Real risk: zero.",
-  },
-  {
-    icon: Stars,
-    heading: "Your name in the founding ledger.",
-    description: "The first 100 are permanent.",
+    heading: "Help shape what Sprout becomes.",
+    description: "See the roadmap before anyone. Your feedback ships.",
   },
 ];
 
@@ -208,9 +194,6 @@ export function Waitlist() {
               <FMBenefitRow key={b.heading} benefit={b} />
             ))}
           </ul>
-          <p className="text-[11px] uppercase tracking-[0.22em] text-[#1B3722] font-bold mb-4">
-            $29 today · doubles at 25 · closes at 100
-          </p>
           <button
             type="button"
             onClick={() => setModalOpen(true)}
@@ -229,7 +212,7 @@ export function Waitlist() {
           0 / 100 founding families.
         </p>
         <p className="text-[#A4C9A8] text-[13px]">
-          Price doubles at 25 families.
+          Doubles at 25.
         </p>
       </div>
 
@@ -260,16 +243,15 @@ export function Waitlist() {
               You&apos;re stepping in. Here&apos;s what happens next.
             </h3>
             <p className="text-[#1B3722]/80 leading-relaxed text-[16px] mb-4">
-              <span className="text-[#1B3722] font-bold">$29 one-time.</span>{" "}
-              That&apos;s the gesture. What you get back:
+              You&apos;re about to claim a Founding Family spot. Here&apos;s
+              what comes with it:
             </p>
             <ul className="space-y-2.5 mb-5">
               {[
-                "Lifetime Founding Family status — once-ever, can't be bought later",
-                "Immediate access to Sprout — start using it right after checkout",
-                "Direct line to the founder and team",
-                "Real input on what gets built next",
-                "Your $29 credited against your first year's subscription when paid plans launch",
+                "Founding member status for life — once-ever, can't be bought later",
+                "Skip the wait — in Sprout the day it opens",
+                "A direct line to the founder and team",
+                "Help shape what Sprout becomes — see roadmap, your feedback ships",
               ].map((line) => (
                 <li
                   key={line}
@@ -284,7 +266,7 @@ export function Waitlist() {
               ))}
             </ul>
             <p className="text-[#1B3722]/55 italic text-[14px] mb-6">
-              $29 today. Doubles at 25 families. Closes at 100.
+              Closes at 100 spots.
             </p>
             <div className="flex flex-col gap-3">
               <button
@@ -292,7 +274,7 @@ export function Waitlist() {
                 onClick={handleCheckout}
                 className="w-full h-12 rounded-full bg-[#1B3722] text-[#F4EDE0] font-bold text-[14px] hover:bg-[#0F2614] transition-colors inline-flex items-center justify-center gap-2"
               >
-                Continue to checkout
+                Claim my spot
                 <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
               </button>
               <button
