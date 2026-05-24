@@ -16,57 +16,50 @@ import {
 import { SproutMascotIcon } from "./SproutMascotIcon";
 
 /* ─────────────────────────────────────────────────────────────────────
-   Phone mockups — themed (light/dark) + mascot-branded.
+   Phone mockups — single cream phone surface. Mascot top-left, w-7 h-7.
 
-   Three-mood brand spec (see CLAUDE.md):
-   - app interior (capture · memory) → DARK forest, glassmorphic chrome,
-     cream/white cards, lime CTAs                    → theme="dark"
-   - artifact (weekly report · year)  → LIGHT cream, dark hero capsules,
-     dark CTAs                                       → theme="light"
-
-   Mascot is rendered top-left of every screen as the brand mark.
+   Card treatment per Chase's brief (2026-05-24):
+   - Today: chip cards, This-week summary, Recent capture cards →
+     dark-green cards with cream content (mirrors hero capsule on
+     Week/Year for visual continuity).
+   - Today: composer card stays white (it's a write surface).
+   - Memory: Pattern card with connection graph → dark-green.
+   - Memory: filter chips, week feed cards, Connections callout
+     stay light.
+   - Week / Year: unchanged — light cards, green hero.
    ───────────────────────────────────────────────────────────────────── */
 
-/* ─── Status-bar mini icons (color flips by theme) ───────────────── */
+/* ─── Status-bar mini icons ──────────────────────────────────────── */
 
-function SignalBars({ color = "#1B3722" }: { color?: string }) {
+function SignalBars() {
   return (
     <div className="flex items-end gap-[1.5px] h-2.5">
-      <div className="w-[2px] h-1 rounded-[1px]" style={{ backgroundColor: color }} />
-      <div className="w-[2px] h-1.5 rounded-[1px]" style={{ backgroundColor: color }} />
-      <div className="w-[2px] h-2 rounded-[1px]" style={{ backgroundColor: color }} />
-      <div className="w-[2px] h-2.5 rounded-[1px]" style={{ backgroundColor: color }} />
+      <div className="w-[2px] h-1 rounded-[1px] bg-[#1B3722]" />
+      <div className="w-[2px] h-1.5 rounded-[1px] bg-[#1B3722]" />
+      <div className="w-[2px] h-2 rounded-[1px] bg-[#1B3722]" />
+      <div className="w-[2px] h-2.5 rounded-[1px] bg-[#1B3722]" />
     </div>
   );
 }
 
-function WifiIcon({ color = "#1B3722" }: { color?: string }) {
+function WifiIcon() {
   return (
     <svg viewBox="0 0 16 12" className="w-3 h-2.5">
       <path
         d="M8 11a0.9 0.9 0 100-1.8 0.9 0.9 0 000 1.8zM4.7 7.5l1.05 1.05a3 3 0 014.5 0L11.3 7.5a5 5 0 00-6.6 0zM2.4 5.2l1.05 1.05a7 7 0 018.9 0L13.6 5.2a9 9 0 00-11 0z"
-        fill={color}
+        fill="#1B3722"
       />
     </svg>
   );
 }
 
-function BatteryIcon({ color = "#1B3722" }: { color?: string }) {
+function BatteryIcon() {
   return (
     <div className="flex items-center">
-      <div
-        className="w-[22px] h-2.5 rounded-[3px] border p-[1.5px]"
-        style={{ borderColor: `${color}99` }}
-      >
-        <div
-          className="h-full w-[14px] rounded-[1px]"
-          style={{ backgroundColor: color }}
-        />
+      <div className="w-[22px] h-2.5 rounded-[3px] border border-[#1B3722]/60 p-[1.5px]">
+        <div className="h-full w-[14px] rounded-[1px] bg-[#1B3722]" />
       </div>
-      <div
-        className="w-[1.5px] h-[5px] rounded-r-[1px] ml-[0.5px]"
-        style={{ backgroundColor: `${color}99` }}
-      />
+      <div className="w-[1.5px] h-[5px] rounded-r-[1px] bg-[#1B3722]/60 ml-[0.5px]" />
     </div>
   );
 }
@@ -76,41 +69,27 @@ function BatteryIcon({ color = "#1B3722" }: { color?: string }) {
 export function PhoneFrame({
   children,
   tilt,
-  theme = "light",
   className = "",
 }: {
   children: ReactNode;
   tilt?: string;
-  theme?: "light" | "dark";
   className?: string;
 }) {
-  const isDark = theme === "dark";
-  const chromeColor = isDark ? "#FBF8EE" : "#1B3722";
-
   return (
     <div
       className={`relative w-[230px] md:w-[300px] aspect-[9/19.5] rounded-[44px] bg-gradient-to-b from-[#0F1A12] to-[#050A07] p-[3px] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.65),0_80px_160px_-40px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.1)] ${className}`}
       style={tilt ? { transform: tilt, transformStyle: "preserve-3d" } : undefined}
     >
       <div className="relative w-full h-full rounded-[42px] bg-[#0A1208] p-[2px]">
-        <div
-          className={`relative w-full h-full rounded-[40px] overflow-hidden bg-gradient-to-b ${
-            isDark
-              ? "from-[#0F1A12] to-[#15291A]"
-              : "from-[#FBF8EE] to-[#F6F1E0]"
-          }`}
-        >
+        <div className="relative w-full h-full rounded-[40px] overflow-hidden bg-gradient-to-b from-[#FBF8EE] to-[#F6F1E0]">
           {/* Status bar */}
-          <div
-            className="absolute top-0 inset-x-0 h-10 px-5 flex items-center justify-between text-[10px] font-bold z-20"
-            style={{ color: chromeColor }}
-          >
+          <div className="absolute top-0 inset-x-0 h-10 px-5 flex items-center justify-between text-[10px] font-bold text-[#1B3722] z-20">
             <span>9:41</span>
             <div className="absolute top-1.5 left-1/2 -translate-x-1/2 w-24 h-6 rounded-full bg-black" />
             <div className="flex items-center gap-1">
-              <SignalBars color={chromeColor} />
-              <WifiIcon color={chromeColor} />
-              <BatteryIcon color={chromeColor} />
+              <SignalBars />
+              <WifiIcon />
+              <BatteryIcon />
             </div>
           </div>
 
@@ -120,43 +99,29 @@ export function PhoneFrame({
           </div>
 
           {/* Tab bar */}
-          <div
-            className={`absolute bottom-0 inset-x-0 h-12 px-3 pb-2 pt-1.5 flex items-center justify-around backdrop-blur-xl border-t z-30 ${
-              isDark
-                ? "bg-[#0F1A12]/85 border-[#FBF8EE]/8"
-                : "bg-[#FBF8EE]/85 border-[#1B3722]/5"
-            }`}
-          >
-            <div
-              className={`flex flex-col items-center gap-0.5 px-3 py-1 rounded-full ${
-                isDark ? "bg-[#A4C9A8]/20" : "bg-[#1B3722]"
-              }`}
-            >
+          <div className="absolute bottom-0 inset-x-0 h-12 px-3 pb-2 pt-1.5 flex items-center justify-around bg-[#FBF8EE]/85 backdrop-blur-xl border-t border-[#1B3722]/5 z-30">
+            <div className="flex flex-col items-center gap-0.5 px-3 py-1 rounded-full bg-[#1B3722]">
               <HomeIcon
-                className={`w-3.5 h-3.5 ${isDark ? "text-[#A4C9A8]" : "text-[#F4EDE0]"}`}
+                className="w-3.5 h-3.5 text-[#F4EDE0]"
                 strokeWidth={2.5}
               />
             </div>
             <div className="flex flex-col items-center gap-0.5 px-3 py-1">
               <BarChart3
-                className={`w-3.5 h-3.5 ${isDark ? "text-[#FBF8EE]/35" : "text-[#1B3722]/35"}`}
+                className="w-3.5 h-3.5 text-[#1B3722]/35"
                 strokeWidth={2}
               />
             </div>
             <div className="flex flex-col items-center gap-0.5 px-3 py-1">
               <SettingsIcon
-                className={`w-3.5 h-3.5 ${isDark ? "text-[#FBF8EE]/35" : "text-[#1B3722]/35"}`}
+                className="w-3.5 h-3.5 text-[#1B3722]/35"
                 strokeWidth={2}
               />
             </div>
           </div>
 
           {/* Home indicator */}
-          <div
-            className={`absolute bottom-1.5 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full z-40 ${
-              isDark ? "bg-[#FBF8EE]/40" : "bg-[#1B3722]/40"
-            }`}
-          />
+          <div className="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full bg-[#1B3722]/40 z-40" />
         </div>
       </div>
     </div>
@@ -167,14 +132,15 @@ export function PhoneFrame({
 
 const CARD =
   "rounded-[16px] bg-white border border-[#1B3722]/6 shadow-[0_1px_3px_rgba(0,0,0,0.04)]";
-const EYEBROW_LIGHT =
+const DARK_CARD =
+  "rounded-[16px] bg-gradient-to-b from-[#2A5132] to-[#1B3722] shadow-[0_2px_8px_-2px_rgba(27,55,34,0.3)]";
+const EYEBROW =
   "text-[8.5px] uppercase tracking-[0.18em] text-[#1B3722]/55 font-bold";
-const EYEBROW_DARK =
+const EYEBROW_ON_DARK =
   "text-[8.5px] uppercase tracking-[0.18em] text-[#FBF8EE]/55 font-bold";
 const PAGE_TITLE = { fontSize: "22px", lineHeight: "1.1", letterSpacing: "-0.02em" };
 const HERO_NUMBER = { fontSize: "44px", lineHeight: "1", letterSpacing: "-0.03em" };
 
-/* category palette — Talk / Count / Ask / Make / Do */
 const CAT = {
   talk: "#2A5132",
   count: "#4D7B53",
@@ -183,20 +149,22 @@ const CAT = {
   do: "#1B3722",
 } as const;
 
-function ShareIconButton({ dark = false }: { dark?: boolean }) {
+/* brighter dots for use inside dark-green cards (darker greens merge) */
+const CAT_ON_DARK = {
+  talk: "#A4C9A8",
+  count: "#D4E6B5",
+  ask: "#E5C892",
+  make: "#76A77A",
+  do: "#FBF8EE",
+} as const;
+
+function ShareIconButton() {
   return (
     <button
-      className={`w-7 h-7 rounded-full flex items-center justify-center shadow-[0_1px_2px_rgba(0,0,0,0.04)] ${
-        dark
-          ? "bg-[#FBF8EE]/10 border border-[#FBF8EE]/20"
-          : "bg-white border border-[#1B3722]/8"
-      }`}
+      className="w-7 h-7 rounded-full bg-white flex items-center justify-center border border-[#1B3722]/8 shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
       aria-label="Share"
     >
-      <Share2
-        className={`w-3 h-3 ${dark ? "text-[#FBF8EE]" : "text-[#1B3722]"}`}
-        strokeWidth={2.5}
-      />
+      <Share2 className="w-3 h-3 text-[#1B3722]" strokeWidth={2.5} />
     </button>
   );
 }
@@ -246,18 +214,26 @@ function ProgressBar({ pct, color = "#1B3722" }: { pct: number; color?: string }
   );
 }
 
-function PullToRefreshHint({ dark = false }: { dark?: boolean }) {
+function DarkProgressBar({ pct, color = "#A4C9A8" }: { pct: number; color?: string }) {
   return (
-    <div className="flex justify-center mb-1 -mt-0.5">
-      <ChevronDown
-        className={`w-3 h-3 ${dark ? "text-[#FBF8EE]/30" : "text-[#1B3722]/25"}`}
-        strokeWidth={2.5}
+    <div className="h-1 rounded-full bg-[#FBF8EE]/15 overflow-hidden">
+      <div
+        className="h-full rounded-full"
+        style={{ width: `${pct}%`, backgroundColor: color }}
       />
     </div>
   );
 }
 
-/* ─── TODAY (Quick log) — DARK theme ──────────────────────────────── */
+function PullToRefreshHint() {
+  return (
+    <div className="flex justify-center mb-1 -mt-0.5">
+      <ChevronDown className="w-3 h-3 text-[#1B3722]/25" strokeWidth={2.5} />
+    </div>
+  );
+}
+
+/* ─── TODAY (Quick log) ──────────────────────────────────────────── */
 
 export function PhoneScreenDropIn() {
   const recents = [
@@ -266,64 +242,64 @@ export function PhoneScreenDropIn() {
       time: "5:42 PM",
       kid: "Charlie",
       note: "\"40 mins on volcano questions today.\"",
-      color: CAT.ask,
+      color: CAT_ON_DARK.ask,
     },
     {
       icon: ImageIcon,
       time: "2:18 PM",
       kid: "Charlie",
       note: "Lego tower — counted 84 blocks.",
-      color: CAT.count,
+      color: CAT_ON_DARK.count,
     },
     {
       icon: FileText,
       time: "11:04 AM",
       kid: "Maya",
       note: "Asked why the moon changes shape.",
-      color: CAT.talk,
+      color: CAT_ON_DARK.talk,
     },
     {
       icon: Mic,
       time: "Yesterday",
       kid: "Charlie",
       note: "Sourdough day. Fractions in the recipe.",
-      color: CAT.make,
+      color: CAT_ON_DARK.make,
     },
     {
       icon: ImageIcon,
       time: "Yesterday",
       kid: "Maya",
       note: "Watercolour of the backyard tree.",
-      color: CAT.do,
+      color: CAT_ON_DARK.do,
     },
   ];
 
   return (
     <>
-      <PullToRefreshHint dark />
+      <PullToRefreshHint />
 
       {/* Mascot + share */}
       <div className="flex items-center justify-between mb-2 px-0.5">
         <SproutMascotIcon className="w-7 h-7" />
-        <ShareIconButton dark />
+        <ShareIconButton />
       </div>
 
       {/* Eyebrow + streak pill */}
       <div className="flex items-center gap-1.5 mb-1 px-0.5">
-        <span className={EYEBROW_DARK}>Wednesday</span>
-        <span className="inline-flex items-center gap-0.5 px-1.5 py-[2px] rounded-full bg-[#B8945E]/30 text-[8.5px] font-semibold text-[#F4E4C1] leading-none">
+        <span className={EYEBROW}>Wednesday</span>
+        <span className="inline-flex items-center gap-0.5 px-1.5 py-[2px] rounded-full bg-[#B8945E]/15 text-[8.5px] font-semibold text-[#8B6A3E] leading-none">
           🔥 12-day streak
         </span>
       </div>
 
       {/* Title */}
-      <h1 className="text-[#FBF8EE] font-bold mb-3 px-0.5" style={PAGE_TITLE}>
+      <h1 className="text-[#1B3722] font-bold mb-3 px-0.5" style={PAGE_TITLE}>
         Today
       </h1>
 
-      {/* Composer card */}
+      {/* Composer card — stays white (write surface) */}
       <div className={`${CARD} px-3 py-2.5 mb-2`}>
-        <div className={`${EYEBROW_LIGHT} mb-1`}>5:42 PM</div>
+        <div className={`${EYEBROW} mb-1`}>5:42 PM</div>
         <p
           className="text-[#1B3722] font-semibold leading-tight mb-0.5"
           style={{ fontSize: "13px", letterSpacing: "-0.01em" }}
@@ -346,7 +322,7 @@ export function PhoneScreenDropIn() {
         </div>
       </div>
 
-      {/* Input chips — Voice / Photo / Text */}
+      {/* Input chips — DARK cards */}
       <div className="grid grid-cols-3 gap-1.5 mb-2.5">
         {[
           { icon: Mic, label: "Voice", hint: "30 sec" },
@@ -355,77 +331,77 @@ export function PhoneScreenDropIn() {
         ].map((opt) => (
           <div
             key={opt.label}
-            className={`${CARD} px-1 py-2 flex flex-col items-center gap-0.5`}
+            className={`${DARK_CARD} px-1 py-2 flex flex-col items-center gap-0.5`}
           >
-            <div className="w-7 h-7 rounded-full bg-[#A4C9A8]/25 flex items-center justify-center mb-0.5">
-              <opt.icon className="w-3 h-3 text-[#1B3722]" strokeWidth={2} />
+            <div className="w-7 h-7 rounded-full bg-[#FBF8EE]/15 flex items-center justify-center mb-0.5">
+              <opt.icon className="w-3 h-3 text-[#FBF8EE]" strokeWidth={2} />
             </div>
-            <span className="text-[9px] font-semibold text-[#1B3722]/85 leading-none">
+            <span className="text-[9px] font-semibold text-[#FBF8EE] leading-none">
               {opt.label}
             </span>
-            <span className="text-[7px] text-[#1B3722]/50 leading-none">
+            <span className="text-[7px] text-[#FBF8EE]/60 leading-none">
               {opt.hint}
             </span>
           </div>
         ))}
       </div>
 
-      {/* This week mini-summary */}
-      <div className={`${CARD} px-3 py-2 mb-2.5`}>
+      {/* This week summary — DARK card */}
+      <div className={`${DARK_CARD} px-3 py-2 mb-2.5`}>
         <div className="flex items-center justify-between mb-1">
-          <span className="text-[9.5px] font-semibold text-[#1B3722]">
+          <span className="text-[9.5px] font-semibold text-[#FBF8EE]">
             This week
           </span>
-          <span className="text-[8.5px] text-[#1B3722]/55">
+          <span className="text-[8.5px] text-[#FBF8EE]/65">
             12 moments · 3 days left
           </span>
         </div>
-        <ProgressBar pct={60} color={CAT.count} />
+        <DarkProgressBar pct={60} color="#A4C9A8" />
       </div>
 
-      {/* Recent eyebrow */}
-      <div className={`${EYEBROW_DARK} mb-1.5 px-0.5`}>Recent</div>
+      {/* Recent eyebrow (on cream phone bg) */}
+      <div className={`${EYEBROW} mb-1.5 px-0.5`}>Recent</div>
 
-      {/* Recent capture cards */}
+      {/* Recent capture cards — DARK */}
       {recents.map((r, i) => (
         <div
           key={i}
-          className={`${CARD} px-2.5 py-1.5 mb-1 flex items-start gap-2`}
+          className={`${DARK_CARD} px-2.5 py-1.5 mb-1 flex items-start gap-2`}
         >
-          <div className="w-6 h-6 rounded-full bg-[#A4C9A8]/25 flex items-center justify-center flex-shrink-0 mt-0.5">
-            <r.icon className="w-3 h-3 text-[#1B3722]" strokeWidth={2} />
+          <div className="w-6 h-6 rounded-full bg-[#FBF8EE]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <r.icon className="w-3 h-3 text-[#FBF8EE]" strokeWidth={2} />
           </div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between mb-0.5">
               <div className="flex items-center gap-1.5">
-                <span className="text-[9.5px] font-semibold text-[#1B3722] leading-none">
+                <span className="text-[9.5px] font-semibold text-[#FBF8EE] leading-none">
                   {r.kid}
                 </span>
                 <CategoryDot color={r.color} />
               </div>
-              <span className="text-[8.5px] text-[#1B3722]/45 leading-none">
+              <span className="text-[8.5px] text-[#FBF8EE]/55 leading-none">
                 {r.time}
               </span>
             </div>
-            <p className="text-[9px] leading-snug text-[#1B3722]/70 truncate">
+            <p className="text-[9px] leading-snug text-[#FBF8EE]/80 truncate">
               {r.note}
             </p>
           </div>
         </div>
       ))}
 
-      {/* FAB — lime CTA in dark theme */}
+      {/* FAB — dark forest on cream */}
       <button
-        className="absolute bottom-[60px] right-3 w-10 h-10 rounded-full bg-sprout-lime flex items-center justify-center shadow-[0_6px_16px_-4px_rgba(167,229,84,0.45)] z-10"
+        className="absolute bottom-[60px] right-3 w-10 h-10 rounded-full bg-[#1B3722] flex items-center justify-center shadow-[0_6px_16px_-4px_rgba(27,55,34,0.45)] z-10"
         aria-label="Quick capture"
       >
-        <Plus className="w-4 h-4 text-sprout-ink" strokeWidth={2.5} />
+        <Plus className="w-4 h-4 text-[#FBF8EE]" strokeWidth={2.5} />
       </button>
     </>
   );
 }
 
-/* ─── MEMORY (Charlie) — DARK theme ──────────────────────────────── */
+/* ─── MEMORY (Charlie) ────────────────────────────────────────────── */
 
 export function PhoneScreenMemory() {
   const weeks = [
@@ -473,31 +449,31 @@ export function PhoneScreenMemory() {
 
   return (
     <>
-      <PullToRefreshHint dark />
+      <PullToRefreshHint />
 
       {/* Mascot + share */}
       <div className="flex items-center justify-between mb-2 px-0.5">
         <SproutMascotIcon className="w-7 h-7" />
-        <ShareIconButton dark />
+        <ShareIconButton />
       </div>
 
       {/* Eyebrow + title */}
       <div className="mb-3 px-0.5">
-        <span className={`${EYEBROW_DARK} block mb-1`}>Memory</span>
-        <h1 className="text-[#FBF8EE] font-bold" style={PAGE_TITLE}>
+        <span className={`${EYEBROW} block mb-1`}>Memory</span>
+        <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
           Charlie
         </h1>
       </div>
 
-      {/* Filter chips */}
+      {/* Filter chips — unchanged (light) */}
       <div className="flex gap-1 mb-2.5 overflow-x-hidden">
         {["All", "Earth science", "Numeracy", "Reading"].map((f, i) => (
           <div
             key={f}
             className={`px-2 py-1 rounded-full text-[8.5px] font-semibold whitespace-nowrap leading-none ${
               i === 0
-                ? "bg-[#FBF8EE] text-[#1B3722]"
-                : "bg-[#FBF8EE]/10 text-[#FBF8EE]/70 border border-[#FBF8EE]/15"
+                ? "bg-[#1B3722] text-[#FBF8EE]"
+                : "bg-white text-[#1B3722]/70 border border-[#1B3722]/8"
             }`}
           >
             {f}
@@ -505,29 +481,29 @@ export function PhoneScreenMemory() {
         ))}
       </div>
 
-      {/* Pattern callout with connection graph */}
-      <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
-        <div className={`${EYEBROW_LIGHT} mb-1`}>Pattern · this term</div>
+      {/* Pattern callout with connection graph — DARK */}
+      <div className={`${DARK_CARD} px-3 py-2.5 mb-2.5`}>
+        <div className={`${EYEBROW_ON_DARK} mb-1`}>Pattern · this term</div>
         <p
-          className="text-[#1B3722] font-semibold leading-snug mb-2"
+          className="text-[#FBF8EE] font-semibold leading-snug mb-2"
           style={{ fontSize: "12px", letterSpacing: "-0.01em" }}
         >
           Earth science: volcanoes → tectonics → ocean trenches.
         </p>
         <div className="flex items-center gap-1">
-          <div className="w-5 h-5 rounded-full bg-[#2A5132] flex items-center justify-center flex-shrink-0">
+          <div className="w-5 h-5 rounded-full bg-[#A4C9A8] flex items-center justify-center flex-shrink-0">
             <span className="text-[8px] leading-none">🌋</span>
           </div>
-          <div className="flex-1 h-px bg-[#1B3722]/20" />
-          <div className="w-5 h-5 rounded-full bg-[#4D7B53] flex items-center justify-center flex-shrink-0">
+          <div className="flex-1 h-px bg-[#FBF8EE]/25" />
+          <div className="w-5 h-5 rounded-full bg-[#D4E6B5] flex items-center justify-center flex-shrink-0">
             <span className="text-[8px] leading-none">🌍</span>
           </div>
-          <div className="flex-1 h-px bg-[#1B3722]/20" />
-          <div className="w-5 h-5 rounded-full bg-[#76A77A] flex items-center justify-center flex-shrink-0">
+          <div className="flex-1 h-px bg-[#FBF8EE]/25" />
+          <div className="w-5 h-5 rounded-full bg-[#FBF8EE] flex items-center justify-center flex-shrink-0">
             <span className="text-[8px] leading-none">🌊</span>
           </div>
         </div>
-        <div className="flex justify-between mt-1 text-[7.5px] text-[#1B3722]/55 font-medium">
+        <div className="flex justify-between mt-1 text-[7.5px] text-[#FBF8EE]/70 font-medium">
           <span>Volcanoes</span>
           <span>Tectonics</span>
           <span>Trenches</span>
@@ -535,9 +511,9 @@ export function PhoneScreenMemory() {
       </div>
 
       {/* Section eyebrow */}
-      <div className={`${EYEBROW_DARK} mb-1 px-0.5`}>6 weeks · 24 moments</div>
+      <div className={`${EYEBROW} mb-1 px-0.5`}>6 weeks · 24 moments</div>
 
-      {/* Week cards */}
+      {/* Week feed cards — unchanged (white) */}
       {weeks.map((m) => (
         <div
           key={m.week}
@@ -578,15 +554,13 @@ export function PhoneScreenMemory() {
         </div>
       ))}
 
-      {/* Connections mini-section — cream tint, fits dark theme */}
-      <div className="rounded-[16px] bg-[#FBF8EE]/10 border border-[#FBF8EE]/15 px-3 py-2 mt-1.5">
-        <div className="text-[8.5px] uppercase tracking-[0.18em] text-[#FBF8EE]/65 font-bold mb-1">
-          Connections
-        </div>
-        <p className="text-[9px] leading-snug text-[#FBF8EE]/75">
+      {/* Connections mini-section — unchanged (sage-tinted) */}
+      <div className="rounded-[16px] bg-[#A4C9A8]/15 border border-[#A4C9A8]/30 px-3 py-2 mt-1.5">
+        <div className={`${EYEBROW} mb-1`}>Connections</div>
+        <p className="text-[9px] leading-snug text-[#1B3722]/75">
           Week 12 → Week 10: both touched numeracy through making.
         </p>
-        <p className="text-[9px] leading-snug text-[#FBF8EE]/75 mt-0.5">
+        <p className="text-[9px] leading-snug text-[#1B3722]/75 mt-0.5">
           Week 11 → Week 8: counting and classification both rose.
         </p>
       </div>
@@ -594,7 +568,7 @@ export function PhoneScreenMemory() {
   );
 }
 
-/* ─── WEEKLY REPORT (Charlie's week) — LIGHT theme ───────────────── */
+/* ─── WEEKLY REPORT (Charlie's week) ─────────────────────────────── */
 
 export function PhoneScreenReport() {
   return (
@@ -609,7 +583,7 @@ export function PhoneScreenReport() {
 
       {/* Eyebrow + title */}
       <div className="mb-3 px-0.5">
-        <span className={`${EYEBROW_LIGHT} block mb-1`}>Week 12 · Nov 17–23</span>
+        <span className={`${EYEBROW} block mb-1`}>Week 12 · Nov 17–23</span>
         <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
           Charlie&apos;s week
         </h1>
@@ -677,7 +651,7 @@ export function PhoneScreenReport() {
       </div>
 
       {/* Categories eyebrow */}
-      <div className={`${EYEBROW_LIGHT} mb-1 px-0.5`}>Categories</div>
+      <div className={`${EYEBROW} mb-1 px-0.5`}>Categories</div>
 
       {/* Capsules */}
       <div className="flex flex-wrap gap-1 mb-2.5">
@@ -705,7 +679,7 @@ export function PhoneScreenReport() {
 
       {/* Growth domains */}
       <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
-        <div className={`${EYEBROW_LIGHT} mb-2`}>Growth domains</div>
+        <div className={`${EYEBROW} mb-2`}>Growth domains</div>
         <div className="space-y-1.5">
           {[
             { name: "Communication", pct: 78, count: 7, color: CAT.talk },
@@ -729,7 +703,7 @@ export function PhoneScreenReport() {
       </div>
 
       {/* Highlights eyebrow */}
-      <div className={`${EYEBROW_LIGHT} mb-1 px-0.5`}>Highlights</div>
+      <div className={`${EYEBROW} mb-1 px-0.5`}>Highlights</div>
 
       {/* Highlight cards */}
       {[
@@ -795,7 +769,7 @@ export function PhoneScreenReport() {
         </p>
       </div>
 
-      {/* Pinned bottom: fade + View full report + Share */}
+      {/* Pinned bottom */}
       <div className="absolute inset-x-0 bottom-[48px] z-20 pt-7 px-4 pb-2 bg-gradient-to-b from-transparent via-[#FBF8EE]/85 to-[#FBF8EE]">
         <button className="flex items-center justify-center gap-1 w-full py-1 text-[9px] font-semibold text-[#1B3722]/65 mb-1">
           View full report
@@ -810,9 +784,8 @@ export function PhoneScreenReport() {
   );
 }
 
-/* ─── YEAR (Charlie's year) — LIGHT theme ─────────────────────────── */
+/* ─── YEAR (Charlie's year) ──────────────────────────────────────── */
 
-/* Deterministic heatmap intensity grid — 7 rows (M T W T F S S) × 12 weeks */
 const HEATMAP_INTENSITIES = [
   1, 2, 1, 3, 2, 1, 3, 2, 4, 3, 2, 3, // Mon
   2, 3, 2, 1, 4, 3, 2, 1, 3, 2, 4, 3, // Tue
@@ -851,7 +824,7 @@ export function PhoneScreenYear() {
 
       {/* Eyebrow + title */}
       <div className="mb-3 px-0.5">
-        <span className={`${EYEBROW_LIGHT} block mb-1`}>2026 · Term 1</span>
+        <span className={`${EYEBROW} block mb-1`}>2026 · Term 1</span>
         <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
           Charlie&apos;s year
         </h1>
@@ -932,7 +905,7 @@ export function PhoneScreenYear() {
       {/* Heatmap */}
       <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
         <div className="flex items-center justify-between mb-1.5">
-          <div className={EYEBROW_LIGHT}>Moments by week</div>
+          <div className={EYEBROW}>Moments by week</div>
           <div className="flex items-center gap-1 text-[7px] text-[#1B3722]/55 font-bold">
             <span>Low</span>
             <div className="flex gap-[1px]">
@@ -977,7 +950,7 @@ export function PhoneScreenYear() {
 
       {/* Domains this term */}
       <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
-        <div className={`${EYEBROW_LIGHT} mb-2`}>Domains this term</div>
+        <div className={`${EYEBROW} mb-2`}>Domains this term</div>
         <div className="space-y-1.5">
           {[
             { name: "Communication", count: 18, pct: 100, color: CAT.talk },
@@ -1001,7 +974,7 @@ export function PhoneScreenYear() {
       </div>
 
       {/* Monthly eyebrow */}
-      <div className={`${EYEBROW_LIGHT} mb-1 px-0.5`}>Monthly</div>
+      <div className={`${EYEBROW} mb-1 px-0.5`}>Monthly</div>
 
       {/* Monthly rows */}
       {[
@@ -1046,7 +1019,7 @@ export function PhoneScreenYear() {
       ))}
 
       {/* Year highlights carousel */}
-      <div className={`${EYEBROW_LIGHT} mb-1 px-0.5 mt-2`}>Year highlights</div>
+      <div className={`${EYEBROW} mb-1 px-0.5 mt-2`}>Year highlights</div>
       <div className="flex gap-1.5 overflow-x-hidden -mx-4 px-4 pb-1">
         {[
           { emoji: "🌋", title: "Volcano month", note: "Apr · 12 moments" },
