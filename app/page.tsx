@@ -63,7 +63,7 @@ export default function HomeV2() {
             href="#start"
             className="hidden md:inline-flex items-center justify-center h-10 px-5 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/20 text-sprout-cream text-sm font-semibold hover:bg-sprout-cream/15 transition-colors"
           >
-            Start free trial
+            Save my spot
           </Link>
         </nav>
 
@@ -498,8 +498,8 @@ export default function HomeV2() {
                     your hand and hand to your kid.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    Same flat price for every child you&apos;ve added. The
-                    record builds itself while you&apos;re busy living.
+                    Every kid you add grows their own year. The record
+                    builds itself while you&apos;re busy living.
                   </p>
                 </>
               }
@@ -695,8 +695,8 @@ export default function HomeV2() {
           <div className="space-y-4">
             {[
               {
-                q: "Is this another subscription that&apos;ll drain my budget?",
-                a: "$29/mo covers all your kids on one price. Your first weekly report is yours forever, even if you cancel mid-trial. You&apos;ll know within seven days if it&apos;s worth keeping.",
+                q: "Will this turn into another app I forget I&apos;m using?",
+                a: "No. The whole loop is one voice memo or sentence, dropped in when life lets you. If a week goes by quiet, the next Sunday&apos;s report is shorter — that&apos;s it. Sprout is welcomed-not-required by design; the artifact arrives whether you put in five inputs or one.",
               },
               {
                 q: "How is Sprout different from my Notes app or ChatGPT?",
@@ -727,8 +727,8 @@ export default function HomeV2() {
                 a: "Even better. Sprout translates the cooking, the questions, the YouTube rabbit holes, into the developmental skills your kid is actually building. We don&apos;t measure curriculum.",
               },
               {
-                q: "I have three kids. Do I pay three times?",
-                a: "No. $29/mo covers your whole family. Each kid gets their own weekly report. One flat price.",
+                q: "Can I track more than one kid?",
+                a: "Yes. Each kid gets their own thread, their own report, their own year. Sprout treats them as the distinct humans they are.",
               },
             ].map((item, i) => (
               <details key={i} className={`${GLASS_CARD_SOFT} group rounded-2xl`}>
