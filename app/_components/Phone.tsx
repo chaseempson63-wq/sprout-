@@ -8,9 +8,26 @@ import {
   BarChart3,
   Settings as SettingsIcon,
   ChevronUp,
+  ChevronRight,
 } from "lucide-react";
-import { SproutLogo } from "./Glass";
 import { SproutMascotIcon } from "./SproutMascotIcon";
+
+/* ─────────────────────────────────────────────────────────────────────
+   Phone mockups — full rebuild 2026-05-24.
+
+   Reference DNA:
+   - Apple Health Summary: large native-iOS page title at top, pinned
+     white cards on cream background with single hairline border +
+     subtle shadow, generous 14-18px padding, type-as-design hierarchy
+   - Oura 2025 redesign: oversized hero number (50px+ at phone scale),
+     single-signal focus, breathing room
+   - Sprout brand: cream/forest palette, mascot present on artifact
+     screens, no decorative marketing flourishes
+
+   Replaces the prior cream-on-cream illustration style with white
+   cards on cream surface (real elevation), 22px native page titles,
+   52px hero metrics on Report + Year.
+   ───────────────────────────────────────────────────────────────────── */
 
 export function PhoneFrame({
   children,
@@ -27,16 +44,19 @@ export function PhoneFrame({
       style={tilt ? { transform: tilt, transformStyle: "preserve-3d" } : undefined}
     >
       <div className="relative w-full h-full rounded-[42px] bg-[#0A1208] p-[2px]">
-        <div className="relative w-full h-full rounded-[40px] overflow-hidden bg-gradient-to-b from-[#FBF8EE] via-[#F6F1E0] to-[#EFE7CF]">
+        <div className="relative w-full h-full rounded-[40px] overflow-hidden bg-gradient-to-b from-[#FBF8EE] to-[#F6F1E0]">
+          {/* Status bar */}
           <div className="absolute top-0 inset-x-0 h-10 px-6 flex items-center justify-between text-[10px] font-bold text-[#1B3722] z-20">
             <span>9:41</span>
             <div className="absolute top-1.5 left-1/2 -translate-x-1/2 w-24 h-6 rounded-full bg-black" />
             <span>·</span>
           </div>
 
-          <div className="absolute inset-0 pt-12 pb-14 px-3.5 flex flex-col">{children}</div>
+          {/* Content area */}
+          <div className="absolute inset-0 pt-11 pb-14 px-4 flex flex-col">{children}</div>
 
-          <div className="absolute bottom-0 inset-x-0 h-12 px-3 pb-2 pt-1.5 flex items-center justify-around bg-gradient-to-t from-[#FBF8EE] via-[#FBF8EE]/95 to-[#FBF8EE]/40 backdrop-blur-xl border-t border-[#1B3722]/5">
+          {/* Tab bar */}
+          <div className="absolute bottom-0 inset-x-0 h-12 px-3 pb-2 pt-1.5 flex items-center justify-around bg-[#FBF8EE]/85 backdrop-blur-xl border-t border-[#1B3722]/5">
             <div className="flex flex-col items-center gap-0.5 px-3 py-1 rounded-full bg-[#1B3722]">
               <HomeIcon className="w-3.5 h-3.5 text-[#F4EDE0]" strokeWidth={2.5} />
             </div>
@@ -48,6 +68,7 @@ export function PhoneFrame({
             </div>
           </div>
 
+          {/* Home indicator */}
           <div className="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full bg-[#1B3722]/40" />
         </div>
       </div>
@@ -55,57 +76,57 @@ export function PhoneFrame({
   );
 }
 
-/* ─── Small header used by non-hero screens (Quick log, Memory) ─── */
-function PhoneHeader({ title }: { title: string }) {
+/* ─── Shared atoms ────────────────────────────────────────────────── */
+
+function ShareIconButton() {
   return (
-    <div className="flex items-center justify-between mb-3 px-1">
-      <div className="flex items-center gap-1.5 text-[#1B3722]">
-        <SproutLogo className="w-3.5 h-3.5" />
-        <span className="text-[10px] uppercase tracking-[0.2em] font-bold">{title}</span>
-      </div>
-      <button className="w-7 h-7 rounded-full bg-white/80 backdrop-blur flex items-center justify-center border border-[#1B3722]/8" aria-label="Share">
-        <Share2 className="w-3 h-3 text-[#1B3722]" strokeWidth={2.5} />
-      </button>
-    </div>
+    <button
+      className="w-7 h-7 rounded-full bg-white flex items-center justify-center border border-[#1B3722]/8 shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
+      aria-label="Share"
+    >
+      <Share2 className="w-3 h-3 text-[#1B3722]" strokeWidth={2.5} />
+    </button>
   );
 }
 
-/* ─── Hero header with mascot — used by Report + Year ───────────── */
-function PhoneHeroHeader({ title }: { title: string }) {
-  return (
-    <div className="flex items-center justify-between mb-3 px-1">
-      <div className="flex items-center gap-1.5 text-[#1B3722]">
-        <SproutMascotIcon className="w-5 h-5" />
-        <span className="text-[11px] font-bold tracking-tight">{title}</span>
-      </div>
-      <button className="w-7 h-7 rounded-full bg-white/80 backdrop-blur flex items-center justify-center border border-[#1B3722]/8" aria-label="Share">
-        <Share2 className="w-3 h-3 text-[#1B3722]" strokeWidth={2.5} />
-      </button>
-    </div>
-  );
-}
+const CARD =
+  "rounded-[20px] bg-white border border-[#1B3722]/6 shadow-[0_1px_3px_rgba(0,0,0,0.04)]";
+const EYEBROW =
+  "text-[9px] uppercase tracking-[0.18em] text-[#1B3722]/55 font-bold";
+const PAGE_TITLE = { fontSize: "22px", lineHeight: "1.1", letterSpacing: "-0.02em" };
+const HERO_NUMBER = { fontSize: "52px", lineHeight: "1", letterSpacing: "-0.03em" };
 
-/* ─── Phone content: quick log — composer + chips + recent drops ─── */
+/* ─── DROP IN — Apple Health Summary feel ─────────────────────────── */
 export function PhoneScreenDropIn() {
   return (
     <>
-      <PhoneHeader title="Today" />
-
-      {/* Composer hero card — cream-on-cream, calm */}
-      <div className="rounded-3xl bg-gradient-to-br from-[#FBF8EE] to-[#F6F1E0] border border-[#1B3722]/8 p-3.5 mb-2.5 shadow-[0_4px_12px_-4px_rgba(0,0,0,0.06)]">
-        <div className="text-[8px] uppercase tracking-[0.2em] text-[#1B3722]/55 font-bold mb-1.5">
-          Wed · 5:42pm
+      {/* Native iOS header */}
+      <div className="mb-3 px-0.5">
+        <div className="flex items-center justify-between mb-1.5">
+          <span className={EYEBROW}>Wednesday</span>
+          <ShareIconButton />
         </div>
-        <p className="text-[13px] font-bold text-[#1B3722] leading-tight mb-1.5">
+        <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
+          Today
+        </h1>
+      </div>
+
+      {/* Composer card */}
+      <div className={`${CARD} px-3.5 py-3 mb-2.5`}>
+        <div className={`${EYEBROW} mb-1.5`}>5:42 PM</div>
+        <p
+          className="text-[#1B3722] font-semibold leading-tight mb-1"
+          style={{ fontSize: "14px", letterSpacing: "-0.01em" }}
+        >
           What did Charlie do today?
         </p>
-        <p className="text-[10px] text-[#1B3722]/65 leading-snug">
-          Drop in anything. Voice memo, photo, one sentence.
+        <p className="text-[10.5px] text-[#1B3722]/60 leading-snug">
+          Voice memo, photo, or one sentence.
         </p>
       </div>
 
-      {/* Three input chips */}
-      <div className="grid grid-cols-3 gap-1.5 mb-3">
+      {/* Input chips */}
+      <div className="grid grid-cols-3 gap-1.5 mb-4">
         {[
           { icon: Mic, label: "Voice" },
           { icon: ImageIcon, label: "Photo" },
@@ -113,39 +134,39 @@ export function PhoneScreenDropIn() {
         ].map((opt) => (
           <div
             key={opt.label}
-            className="rounded-2xl bg-white/85 border border-[#1B3722]/8 p-2.5 flex flex-col items-center gap-1 shadow-[0_2px_6px_-2px_rgba(0,0,0,0.04)]"
+            className={`${CARD} px-2 py-3 flex flex-col items-center gap-1.5`}
           >
-            <div className="w-7 h-7 rounded-xl bg-gradient-to-br from-[#F4EDE0] to-[#E6DDC2] flex items-center justify-center">
-              <opt.icon className="w-3.5 h-3.5 text-[#1B3722]" strokeWidth={2} />
+            <div className="w-9 h-9 rounded-full bg-[#A4C9A8]/25 flex items-center justify-center">
+              <opt.icon className="w-4 h-4 text-[#1B3722]" strokeWidth={2} />
             </div>
-            <span className="text-[8px] uppercase tracking-wider text-[#1B3722]/70 font-bold">
+            <span className="text-[9.5px] font-semibold text-[#1B3722]/85">
               {opt.label}
             </span>
           </div>
         ))}
       </div>
 
-      {/* Recent drops stack */}
-      <div className="text-[8px] uppercase tracking-[0.2em] text-[#1B3722]/55 font-bold mb-1.5 px-1">
-        Recent drops
-      </div>
-      <div className="rounded-2xl bg-white/75 border border-[#1B3722]/8 p-2.5 mb-1.5">
-        <div className="text-[8px] uppercase tracking-[0.2em] text-[#1B3722]/45 font-bold mb-1">
-          Wed · 5:42pm
+      {/* Recent eyebrow */}
+      <div className={`${EYEBROW} mb-1.5 px-0.5`}>Recent</div>
+
+      {/* Recent drops list */}
+      <div className={`${CARD} px-3 py-2.5 mb-1.5`}>
+        <div className="flex items-center justify-between mb-0.5">
+          <span className="text-[10px] font-semibold text-[#1B3722]">Charlie</span>
+          <span className="text-[9px] text-[#1B3722]/45">5:42 PM</span>
         </div>
-        <p className="text-[9px] leading-snug text-[#1B3722]/75">
-          &ldquo;Charlie spent 40 mins on volcano questions today.&rdquo;
+        <p className="text-[10px] leading-snug text-[#1B3722]/70">
+          &ldquo;40 mins on volcano questions today.&rdquo;
         </p>
-        <div className="text-[8px] text-[#1B3722]/40 mt-1">Tagged · Charlie</div>
       </div>
-      <div className="rounded-2xl bg-white/75 border border-[#1B3722]/8 p-2.5">
-        <div className="text-[8px] uppercase tracking-[0.2em] text-[#1B3722]/45 font-bold mb-1">
-          Tue · 7:18pm
+      <div className={`${CARD} px-3 py-2.5`}>
+        <div className="flex items-center justify-between mb-0.5">
+          <span className="text-[10px] font-semibold text-[#1B3722]">Charlie</span>
+          <span className="text-[9px] text-[#1B3722]/45">Yesterday</span>
         </div>
-        <p className="text-[9px] leading-snug text-[#1B3722]/75">
-          Baked sourdough together. Fractions in the recipe.
+        <p className="text-[10px] leading-snug text-[#1B3722]/70">
+          Baked sourdough. Fractions in the recipe.
         </p>
-        <div className="text-[8px] text-[#1B3722]/40 mt-1">Tagged · Charlie</div>
       </div>
 
       <div className="flex-1" />
@@ -153,44 +174,55 @@ export function PhoneScreenDropIn() {
   );
 }
 
-/* ─── Phone content: memory thread — pattern callout + week feed ─── */
+/* ─── MEMORY — pattern hero + week feed ──────────────────────────── */
 export function PhoneScreenMemory() {
   return (
     <>
-      <PhoneHeader title="Charlie" />
-
-      {/* Pattern callout — the narrative one-liner */}
-      <div className="rounded-2xl bg-gradient-to-br from-[#FBF8EE] to-[#F6F1E0] border border-[#1B3722]/8 p-3 mb-3 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.05)]">
-        <div className="text-[8px] uppercase tracking-[0.2em] text-[#1B3722]/55 font-bold mb-1">
-          Pattern this term
+      <div className="mb-3 px-0.5">
+        <div className="flex items-center justify-between mb-1.5">
+          <span className={EYEBROW}>Memory</span>
+          <ShareIconButton />
         </div>
-        <p className="text-[11px] font-bold text-[#1B3722] leading-snug">
+        <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
+          Charlie
+        </h1>
+      </div>
+
+      {/* Pattern callout */}
+      <div className={`${CARD} px-3.5 py-3 mb-3`}>
+        <div className={`${EYEBROW} mb-1.5`}>Pattern · this term</div>
+        <p
+          className="text-[#1B3722] font-semibold leading-snug"
+          style={{ fontSize: "13px", letterSpacing: "-0.01em" }}
+        >
           Earth science: volcanoes → tectonics → ocean trenches.
         </p>
       </div>
 
-      <div className="text-[8px] uppercase tracking-[0.2em] text-[#1B3722]/55 font-bold mb-1.5 px-1">
-        6 weeks of moments
-      </div>
+      {/* Section eyebrow */}
+      <div className={`${EYEBROW} mb-1.5 px-0.5`}>6 weeks · 24 moments</div>
 
+      {/* Week cards */}
       {[
-        { week: "Week 12", note: "Volcano docs · 90 mins unprompted Earth science.", icon: "🌋" },
-        { week: "Week 11", note: "Sourdough Tuesday · fractions through cookies.", icon: "🍪" },
-        { week: "Week 10", note: "Library walk · picked 4 books on insects.", icon: "📚" },
-        { week: "Week 9", note: "First poem written. Read out loud at dinner.", icon: "✍️" },
+        { week: "Week 12", date: "Nov 24", note: "Volcano docs. 90 mins unprompted.", emoji: "🌋" },
+        { week: "Week 11", date: "Nov 17", note: "Sourdough Tuesday. Fractions through cookies.", emoji: "🍪" },
+        { week: "Week 10", date: "Nov 10", note: "Library walk. 4 books on insects.", emoji: "📚" },
       ].map((m) => (
         <div
           key={m.week}
-          className="rounded-2xl bg-white/75 border border-[#1B3722]/8 p-2.5 mb-1.5"
+          className={`${CARD} px-3 py-2.5 mb-1.5 flex items-start gap-2.5`}
         >
-          <div className="flex items-start gap-2">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#F4EDE0] to-[#E6DDC2] flex items-center justify-center flex-shrink-0">
-              <span className="text-sm">{m.icon}</span>
+          <div className="w-9 h-9 rounded-full bg-[#A4C9A8]/25 flex items-center justify-center flex-shrink-0">
+            <span className="text-base leading-none">{m.emoji}</span>
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center justify-between mb-0.5">
+              <span className="text-[10px] font-semibold text-[#1B3722]">
+                {m.week}
+              </span>
+              <span className="text-[9px] text-[#1B3722]/45">{m.date}</span>
             </div>
-            <div className="flex-1">
-              <div className="text-[9px] font-bold text-[#1B3722]">{m.week}</div>
-              <p className="text-[9px] leading-snug text-[#1B3722]/75">{m.note}</p>
-            </div>
+            <p className="text-[10px] leading-snug text-[#1B3722]/70">{m.note}</p>
           </div>
         </div>
       ))}
@@ -200,43 +232,53 @@ export function PhoneScreenMemory() {
   );
 }
 
-/* ─── Phone content: weekly report — marquee artifact ──────────────
-   Hero: mascot header → forest-gradient hero card with eyebrow, giant
-   number, soft sage delta pill. Below: 5 category capsules (Sprout
-   palette + 1 warm amber). Below: highlights stack. Bottom: share. */
+/* ─── REPORT — Oura single-signal hero + capsules + highlights ───── */
 export function PhoneScreenReport() {
   return (
     <>
-      <PhoneHeroHeader title="Charlie's week" />
+      {/* Header with mascot inline */}
+      <div className="mb-3 px-0.5">
+        <div className="flex items-center justify-between mb-1.5">
+          <div className="flex items-center gap-1.5">
+            <SproutMascotIcon className="w-3.5 h-3.5" />
+            <span className={EYEBROW}>Week 12 · Nov 17–23</span>
+          </div>
+          <ShareIconButton />
+        </div>
+        <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
+          Charlie&apos;s week
+        </h1>
+      </div>
 
-      {/* Hero card — forest gradient with hero metric + delta pill */}
-      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#3D6643] via-[#2A5132] to-[#1B3722] p-4 mb-3 shadow-[0_8px_24px_-6px_rgba(27,55,34,0.45)]">
-        <div className="absolute -top-12 -right-12 w-32 h-32 rounded-full bg-[#94BC8E]/30 blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-16 -left-12 w-32 h-32 rounded-full bg-[#76A77A]/25 blur-3xl pointer-events-none" />
-        <div className="relative">
-          <div className="text-[8px] uppercase tracking-[0.2em] text-[#A4C9A8] font-bold mb-2">
-            Week 12 of 52
-          </div>
-          <div className="text-[9px] uppercase tracking-[0.18em] text-[#A4C9A8]/70 font-bold mb-1">
-            This week
-          </div>
-          <div className="flex items-end gap-2">
-            <span className="text-[#FBF8EE] font-bold leading-none" style={{ fontSize: "34px" }}>
-              18
-            </span>
-            <span className="text-[#FBF8EE]/85 font-bold leading-tight pb-1" style={{ fontSize: "11px" }}>
-              moments
-            </span>
-            <div className="ml-auto inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-[#A4C9A8]/25 border border-[#A4C9A8]/35 text-[#A4C9A8] text-[9px] font-bold">
-              <ChevronUp className="w-2.5 h-2.5" strokeWidth={3} />
-              23%
-            </div>
-          </div>
+      {/* HERO — Oura DNA, oversized single signal */}
+      <div className="rounded-[22px] bg-gradient-to-b from-[#2A5132] to-[#1B3722] px-4 py-4 mb-3 shadow-[0_4px_16px_-4px_rgba(27,55,34,0.35)]">
+        <div className="text-[9px] uppercase tracking-[0.2em] text-[#A4C9A8]/85 font-bold mb-1.5">
+          This week
+        </div>
+        <div className="flex items-baseline gap-1.5 mb-2">
+          <span className="text-[#FBF8EE] font-bold" style={HERO_NUMBER}>
+            18
+          </span>
+          <span
+            className="text-[#FBF8EE]/85 font-semibold pb-1.5"
+            style={{ fontSize: "13px", letterSpacing: "-0.01em" }}
+          >
+            moments
+          </span>
+        </div>
+        <div className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-[#A4C9A8]/15 border border-[#A4C9A8]/25">
+          <ChevronUp className="w-2.5 h-2.5 text-[#A4C9A8]" strokeWidth={3} />
+          <span className="text-[9px] font-semibold text-[#A4C9A8]">
+            23% vs last week
+          </span>
         </div>
       </div>
 
-      {/* Category capsules — 5 in Sprout palette (4 greens + 1 warm amber) */}
-      <div className="flex flex-wrap gap-1 mb-3 px-0.5">
+      {/* Categories eyebrow */}
+      <div className={`${EYEBROW} mb-1.5 px-0.5`}>Categories</div>
+
+      {/* Capsules — 4 greens + 1 warm amber */}
+      <div className="flex flex-wrap gap-1 mb-3">
         {[
           { label: "Talk", count: 5, bg: "#2A5132" },
           { label: "Count", count: 3, bg: "#4D7B53" },
@@ -246,38 +288,44 @@ export function PhoneScreenReport() {
         ].map((c) => (
           <div
             key={c.label}
-            className="inline-flex items-center gap-1 px-2 py-1 rounded-full"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full"
             style={{ backgroundColor: c.bg }}
           >
-            <span className="text-[8px] font-bold uppercase tracking-wider text-[#FBF8EE]">
+            <span className="text-[9px] font-semibold text-[#FBF8EE]">
               {c.label}
             </span>
-            <span className="text-[8px] font-bold text-[#FBF8EE]/75">{c.count}</span>
+            <span className="text-[9px] font-bold text-[#FBF8EE]/70">
+              {c.count}
+            </span>
           </div>
         ))}
       </div>
 
-      {/* Highlights eyebrow + card */}
-      <div className="text-[8px] uppercase tracking-[0.2em] text-[#1B3722]/55 font-bold mb-1.5 px-1">
-        Highlights
-      </div>
-      <div className="rounded-2xl bg-white/85 border border-[#1B3722]/6 p-2.5 mb-1.5">
-        <div className="flex items-start gap-2">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#F4EDE0] to-[#E6DDC2] flex items-center justify-center flex-shrink-0">
-            <span className="text-sm">🍪</span>
+      {/* Highlights eyebrow */}
+      <div className={`${EYEBROW} mb-1.5 px-0.5`}>Highlights</div>
+
+      {/* Highlight card */}
+      <div className={`${CARD} px-3 py-2.5 mb-1.5 flex items-start gap-2.5`}>
+        <div className="w-9 h-9 rounded-full bg-[#A4C9A8]/25 flex items-center justify-center flex-shrink-0">
+          <span className="text-base leading-none">🍪</span>
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center justify-between mb-0.5">
+            <span className="text-[10px] font-semibold text-[#1B3722]">
+              Tuesday · Baking
+            </span>
+            <ChevronRight className="w-3 h-3 text-[#1B3722]/35" strokeWidth={2} />
           </div>
-          <div className="flex-1">
-            <div className="text-[9px] font-bold text-[#1B3722]">Tuesday · Baking</div>
-            <p className="text-[9px] leading-snug text-[#1B3722]/75">
-              Fractions, sequencing, patience.
-            </p>
-          </div>
+          <p className="text-[10px] leading-snug text-[#1B3722]/70">
+            Fractions, sequencing, patience.
+          </p>
         </div>
       </div>
 
       <div className="flex-1" />
 
-      <button className="w-full h-9 rounded-full bg-gradient-to-b from-[#2A5132] to-[#1B3722] text-[#F4EDE0] text-[10px] font-bold flex items-center justify-center gap-1.5 shadow-[0_6px_16px_-2px_rgba(27,55,34,0.5),inset_0_1px_0_rgba(255,255,255,0.15)]">
+      {/* Share button — flat native iOS style, not gradient */}
+      <button className="w-full h-10 rounded-full bg-[#1B3722] text-[#FBF8EE] text-[11px] font-semibold flex items-center justify-center gap-1.5">
         <Share2 className="w-3 h-3" strokeWidth={2.5} />
         Share Charlie&apos;s week
       </button>
@@ -285,49 +333,51 @@ export function PhoneScreenReport() {
   );
 }
 
-/* ─── Phone content: year snapshot — cumulative growth ─────────────
-   Hero: mascot header → forest-gradient hero card matching Weekly
-   report for cohesion. Below: heatmap module. Below: monthly snapshot
-   rows with up/down chevrons for direction. */
+/* ─── YEAR — same hero treatment, heatmap, monthly rows ──────────── */
 export function PhoneScreenYear() {
   return (
     <>
-      <PhoneHeroHeader title="Year · 2026" />
+      <div className="mb-3 px-0.5">
+        <div className="flex items-center justify-between mb-1.5">
+          <div className="flex items-center gap-1.5">
+            <SproutMascotIcon className="w-3.5 h-3.5" />
+            <span className={EYEBROW}>2026 · Term 1</span>
+          </div>
+          <ShareIconButton />
+        </div>
+        <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
+          Charlie&apos;s year
+        </h1>
+      </div>
 
-      {/* Hero card — same forest gradient as Weekly report */}
-      <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#3D6643] via-[#2A5132] to-[#1B3722] p-4 mb-3 shadow-[0_8px_24px_-6px_rgba(27,55,34,0.45)]">
-        <div className="absolute -top-12 -right-12 w-32 h-32 rounded-full bg-[#94BC8E]/30 blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-16 -left-12 w-32 h-32 rounded-full bg-[#76A77A]/25 blur-3xl pointer-events-none" />
-        <div className="relative">
-          <div className="text-[8px] uppercase tracking-[0.2em] text-[#A4C9A8] font-bold mb-2">
-            Charlie · Term 1
-          </div>
-          <div className="flex items-end gap-2">
-            <span className="text-[#FBF8EE] font-bold leading-none" style={{ fontSize: "34px" }}>
-              47
-            </span>
-            <span className="text-[#FBF8EE]/85 font-bold leading-tight pb-1" style={{ fontSize: "11px" }}>
-              moments
-            </span>
-            <div className="ml-auto inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-[#A4C9A8]/25 border border-[#A4C9A8]/35 text-[#A4C9A8] text-[9px] font-bold">
-              <ChevronUp className="w-2.5 h-2.5" strokeWidth={3} />
-              +8 vs T0
-            </div>
-          </div>
-          <div className="text-[9px] text-[#FBF8EE]/65 mt-1.5">
-            12 weeks · March through May
-          </div>
+      {/* HERO — same as Weekly for cohesion */}
+      <div className="rounded-[22px] bg-gradient-to-b from-[#2A5132] to-[#1B3722] px-4 py-4 mb-3 shadow-[0_4px_16px_-4px_rgba(27,55,34,0.35)]">
+        <div className="text-[9px] uppercase tracking-[0.2em] text-[#A4C9A8]/85 font-bold mb-1.5">
+          Term 1
+        </div>
+        <div className="flex items-baseline gap-1.5 mb-2">
+          <span className="text-[#FBF8EE] font-bold" style={HERO_NUMBER}>
+            47
+          </span>
+          <span
+            className="text-[#FBF8EE]/85 font-semibold pb-1.5"
+            style={{ fontSize: "13px", letterSpacing: "-0.01em" }}
+          >
+            moments
+          </span>
+        </div>
+        <div className="text-[10px] text-[#FBF8EE]/65">
+          12 weeks · March → May
         </div>
       </div>
 
-      {/* Heatmap module */}
-      <div className="rounded-2xl bg-white/85 border border-[#1B3722]/8 p-3 mb-3 shadow-[0_2px_8px_-3px_rgba(0,0,0,0.04)]">
-        <div className="text-[8px] uppercase tracking-[0.2em] text-[#1B3722]/55 font-bold mb-2">
-          Moments by week
-        </div>
-        <div className="grid grid-cols-12 gap-0.5">
+      {/* Heatmap card */}
+      <div className={`${CARD} px-3 py-3 mb-3`}>
+        <div className={`${EYEBROW} mb-2`}>Moments by week</div>
+        <div className="grid grid-cols-12 gap-[3px]">
           {Array.from({ length: 48 }).map((_, i) => {
-            const intensity = Math.random() > 0.3 ? "bg-[#76A77A]" : "bg-[#A4C9A8]/40";
+            const intensity =
+              Math.random() > 0.3 ? "bg-[#76A77A]" : "bg-[#A4C9A8]/30";
             return (
               <div
                 key={i}
@@ -339,26 +389,31 @@ export function PhoneScreenYear() {
         </div>
       </div>
 
-      {/* Monthly snapshots — with up/down delta chevrons */}
-      <div className="text-[8px] uppercase tracking-[0.2em] text-[#1B3722]/55 font-bold mb-1.5 px-1">
-        Monthly snapshots
-      </div>
+      {/* Monthly eyebrow */}
+      <div className={`${EYEBROW} mb-1.5 px-0.5`}>Monthly</div>
+
+      {/* Monthly rows */}
       {[
-        { month: "March", count: 18, delta: "up" as const },
-        { month: "April", count: 22, delta: "up" as const },
-        { month: "May", count: 7, delta: "down" as const },
+        { month: "March", count: 18, delta: "+4" },
+        { month: "April", count: 22, delta: "+4" },
+        { month: "May", count: 7, delta: "−15" },
       ].map((m) => (
         <div
           key={m.month}
-          className="rounded-2xl bg-white/75 border border-[#1B3722]/8 p-2.5 mb-1 flex items-center justify-between"
+          className={`${CARD} px-3 py-2.5 mb-1.5 flex items-center justify-between`}
         >
-          <div className="text-[10px] font-bold text-[#1B3722]">{m.month}</div>
-          <div className="flex items-center gap-1.5">
-            <div className="text-[9px] text-[#1B3722]/65">{m.count} moments</div>
-            <ChevronUp
-              className={`w-2.5 h-2.5 ${m.delta === "up" ? "text-[#76A77A]" : "text-[#B8945E] rotate-180"}`}
-              strokeWidth={3}
-            />
+          <span className="text-[11px] font-semibold text-[#1B3722]">
+            {m.month}
+          </span>
+          <div className="flex items-center gap-2.5">
+            <span className="text-[10px] text-[#1B3722]/60">{m.count}</span>
+            <span
+              className={`text-[9px] font-semibold ${
+                m.delta.startsWith("+") ? "text-[#76A77A]" : "text-[#B8945E]"
+              }`}
+            >
+              {m.delta}
+            </span>
           </div>
         </div>
       ))}
