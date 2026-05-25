@@ -309,7 +309,7 @@ export default function HomeV2() {
 
           <div className="inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold mb-8 md:mb-10">
             <span className="block w-8 h-px bg-sprout-cream/30" />
-            <span>The thing you&apos;ve been trying</span>
+            <span>The thing you&apos;ve already been doing</span>
             <span className="block w-8 h-px bg-sprout-cream/30" />
           </div>
 
@@ -775,10 +775,6 @@ export default function HomeV2() {
           <p className="mt-10 md:mt-12 text-sprout-cream leading-snug max-w-xl mx-auto"
              style={{ fontSize: "clamp(18px, 2vw, 24px)", lineHeight: "1.3" }}>
             The week, captured. Nothing slipping through.
-          </p>
-          <p className="mt-3 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
-             style={{ fontSize: "clamp(15px, 1.4vw, 18px)" }}>
-            And the doing of it is good for both of you.
           </p>
 
         </div>
