@@ -911,12 +911,7 @@ export default function HomeV2() {
                 Sleep on<br />Sunday.
               </h2>
 
-              <p className="mt-8 md:mt-12 text-sprout-cream font-bold leading-tight"
-                 style={{ fontSize: "clamp(22px, 3vw, 36px)" }}>
-                Not on track. Off it on purpose.
-              </p>
-
-              <p className="mt-6 md:mt-8 text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
+              <p className="mt-8 md:mt-12 text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
                  style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
                 You&apos;re not the only one doing it this way.
               </p>
