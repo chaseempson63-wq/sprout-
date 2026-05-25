@@ -85,7 +85,7 @@ export default function HomeV2() {
             <p className="mt-10 text-center text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
                style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
               It&apos;s 11pm on Wednesday night and you&apos;re wondering if
-              today counted. The endless pages of notes, the endless tabs, and
+              today counted. The endless pages of notes, the countless tabs, and
               the book they scribble in scattered everywhere. Sprout is where
               you document what your homeschooling week actually was. Clarity
               for you. A sense of achievement for them.
