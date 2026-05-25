@@ -39,7 +39,7 @@ const FM_BENEFITS: FMBenefit[] = [
     icon: MessageCircle,
     heading: "A direct line to the founder and team.",
     description:
-      "Private channel. A small room, not a Discord with strangers.",
+      "Private channel. A small room.",
   },
   {
     icon: Wrench,
@@ -112,7 +112,7 @@ export function Waitlist() {
     <div className="relative w-full max-w-5xl mx-auto mt-12 md:mt-16">
 
       {/* Two cards: free waitlist (left) + founding family (right). */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-6 mb-8 md:mb-10">
 
         {/* ── Card 1: free waitlist ─────────────────────────────── */}
         <div className="rounded-2xl border border-sprout-cream/15 bg-sprout-cream/[0.04] backdrop-blur-md p-6 md:p-8 flex flex-col text-left">
@@ -199,15 +199,11 @@ export function Waitlist() {
             Limited to 100
           </p>
           <h3
-            className="font-bold text-[#1B3722] mb-3 leading-tight"
+            className="font-bold text-[#1B3722] mb-5 leading-tight"
             style={{ fontSize: "clamp(20px, 2vw, 24px)" }}
           >
             The founding 100. The ones who got there first.
           </h3>
-          <p className="text-[#1B3722]/75 mb-5 leading-snug text-[15px]">
-            Not a customer. A co-builder. Help build the record the corps will
-            never build for you.
-          </p>
           <ul className="space-y-3 mb-6 flex-1">
             {FM_BENEFITS.map((b) => (
               <FMBenefitRow key={b.heading} benefit={b} />
