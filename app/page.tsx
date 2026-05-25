@@ -826,47 +826,6 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          TRUST SEAL — "I see you. I feel you. I am you."
-          (Mum Central verbatim. Moved below FAQ so the strongest single
-          trust moment sits immediately before the close CTA.)
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#3D6643]/30 via-[#4D7B53]/40 to-[#76A77A]/20" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] rounded-full bg-[#A4C9A8]/12 blur-3xl animate-breathe" />
-        </div>
-
-        <div className="relative max-w-4xl mx-auto text-center">
-
-          <CenteredEyebrow number="07" label="Not failing. Walking away." />
-
-          <p className="text-sprout-cream/85 leading-relaxed italic"
-             style={{ fontSize: "clamp(28px, 4vw, 52px)", lineHeight: "1.15" }}>
-            &ldquo;So, to all the mums doing home-based learning and feeling like they
-            are failing,<br /><span className="text-sprout-cream">I see you. I feel you. I am you.</span>&rdquo;
-          </p>
-          <div className="mt-8 inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
-            <span className="block w-8 h-px bg-sprout-cream/30" />
-            <span>Verbatim · Mum Central · Australia</span>
-            <span className="block w-8 h-px bg-sprout-cream/30" />
-          </div>
-
-          <p className="mt-16 text-sprout-cream leading-relaxed italic"
-             style={{ fontSize: "clamp(24px, 3.4vw, 44px)", lineHeight: "1.2" }}>
-            &ldquo;I&apos;m having the time of my life.<br />
-            <span className="text-sprout-cream/85">Thank God I chose this.&rdquo;</span>
-          </p>
-          <div className="mt-8 inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
-            <span className="block w-8 h-px bg-sprout-cream/30" />
-            <span>Verbatim · Australian Homeschool Stories · QLD</span>
-            <span className="block w-8 h-px bg-sprout-cream/30" />
-          </div>
-
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
           FINAL CTA — MIRRORS HERO  (bevel position 24)
           Same structural shape as the hero: centered headline + sub +
           primary CTA + small badge above. Bookend.
