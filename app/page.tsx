@@ -78,7 +78,7 @@ export default function HomeV2() {
             </div>
 
             <h1 className="text-center font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream headline-lit"
-                style={{ fontSize: "clamp(48px, 9vw, 120px)" }}>
+                style={{ fontSize: "clamp(64px, 11vw, 140px)" }}>
               You did more<br />than you think.
             </h1>
 
@@ -105,17 +105,12 @@ export default function HomeV2() {
               </Link>
             </div>
 
-            {/* Hero-tier social proof: small rating-style badge (bevel-equivalent of 4.8 stars / 28.6k ratings) */}
+            {/* Hero-tier social proof — stripped to single label, sized to
+                match the top audience pill for visual consistency. */}
             <div className="mt-14 flex justify-center">
-              <div className="inline-flex items-center gap-4 px-5 py-3 rounded-full bg-sprout-cream/8 backdrop-blur-md border border-sprout-cream/15">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#A4C9A8]" />
-                <span className="text-sprout-cream/85 text-xs font-semibold tracking-wide">
-                  Voiced by real homeschool mums
-                </span>
-                <span className="block w-px h-3 bg-sprout-cream/20" />
-                <span className="text-sprout-cream/60 text-[11px] uppercase tracking-[0.2em] font-bold">
-                  Verbatim research · 2026
-                </span>
+              <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
+                <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
+                Voiced by real homeschool mums
               </div>
             </div>
 
@@ -162,12 +157,6 @@ export default function HomeV2() {
             </PhoneFrame>
           </PhoneShowcase>
 
-          <div className="mt-16 flex items-center justify-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
-            <span className="block w-8 h-px bg-sprout-cream/30" />
-            <span>Drop in · the week compiles · scroll any time</span>
-            <span className="block w-8 h-px bg-sprout-cream/30" />
-          </div>
-
         </div>
       </section>
 
@@ -189,7 +178,7 @@ export default function HomeV2() {
           <div className="text-center mb-16">
             <CenteredEyebrow number="01" label="Pulled from real forum threads" />
             <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl mx-auto"
-                style={{ fontSize: "clamp(32px, 5vw, 64px)" }}>
+                style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
               Built for the parents<br />who walked away from the system.
             </h2>
           </div>
@@ -255,19 +244,19 @@ export default function HomeV2() {
 
           <div className="space-y-2 mb-16">
             <h2 className="font-bold tracking-[-0.04em] leading-[0.9] text-sprout-cream"
-                style={{ fontSize: "clamp(30px, 6vw, 82px)" }}>
+                style={{ fontSize: "clamp(40px, 6vw, 82px)" }}>
               It&apos;s 11:42 PM.
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.9] text-sprout-cream/65"
-                style={{ fontSize: "clamp(30px, 6vw, 82px)" }}>
+                style={{ fontSize: "clamp(40px, 6vw, 82px)" }}>
               You&apos;re staring
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.9] text-sprout-cream/65"
-                style={{ fontSize: "clamp(30px, 6vw, 82px)" }}>
+                style={{ fontSize: "clamp(40px, 6vw, 82px)" }}>
               at the ceiling.
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.9] text-sprout-cream pt-6 headline-lit"
-                style={{ fontSize: "clamp(30px, 6vw, 82px)" }}>
+                style={{ fontSize: "clamp(40px, 6vw, 82px)" }}>
               Wondering if<br />today counted.
             </h2>
           </div>
@@ -568,15 +557,15 @@ export default function HomeV2() {
 
           <div className="space-y-2 mb-12">
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream/65"
-                style={{ fontSize: "clamp(25px, 4.5vw, 62px)" }}>
+                style={{ fontSize: "clamp(40px, 5.5vw, 62px)" }}>
               Books on the floor. Pages on the bench.
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream/65"
-                style={{ fontSize: "clamp(25px, 4.5vw, 62px)" }}>
+                style={{ fontSize: "clamp(40px, 5.5vw, 62px)" }}>
               ChatGPT trains on every word you tell it.
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream pt-4 headline-lit"
-                style={{ fontSize: "clamp(25px, 4.5vw, 62px)" }}>
+                style={{ fontSize: "clamp(40px, 5.5vw, 62px)" }}>
               Sprout doesn&apos;t sell. Doesn&apos;t train. Doesn&apos;t forget.
             </h2>
           </div>
@@ -666,7 +655,7 @@ export default function HomeV2() {
           <CenteredEyebrow number="05" label="Yours. Not ours. Not big tech's." />
 
           <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream text-center max-w-3xl mx-auto mb-16 headline-lit"
-              style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
+              style={{ fontSize: "clamp(48px, 7vw, 80px)" }}>
             Your kid&apos;s stuff<br />stays yours.
           </h2>
 
@@ -866,7 +855,7 @@ export default function HomeV2() {
               </div>
 
               <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream headline-lit"
-                  style={{ fontSize: "clamp(48px, 9vw, 120px)" }}>
+                  style={{ fontSize: "clamp(64px, 11vw, 120px)" }}>
                 Sleep on<br />Sunday.
               </h2>
 
@@ -882,11 +871,9 @@ export default function HomeV2() {
             <Waitlist />
 
             <div className="mt-12 md:mt-16 flex justify-center">
-              <div className="inline-flex items-center gap-4 px-5 py-3 rounded-full bg-sprout-cream/8 backdrop-blur-md border border-sprout-cream/15">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#A4C9A8]" />
-                <span className="text-sprout-cream/85 text-xs font-semibold tracking-wide">
-                  Voiced by real homeschool mums
-                </span>
+              <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
+                <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
+                Voiced by real homeschool mums
               </div>
             </div>
 
