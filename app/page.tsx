@@ -84,20 +84,15 @@ export default function HomeV2() {
 
             <p className="mt-10 text-center text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
                style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
-              It&apos;s Sunday night and you&apos;re wondering if today counted.
-              Voice memos, photos, structured journaling, the bits you scribbled
-              at 9pm &mdash; Sprout is where you document what your homeschool
-              week actually was. Clarity for you. A sense of achievement for them.
-            </p>
-            <p className="mt-5 text-center text-sprout-cream leading-relaxed max-w-xl mx-auto"
-               style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
-              If the system stopped working for your kid &mdash; and you stopped
-              trying to make it work &mdash; you&apos;re in the right place.
+              It&apos;s 11pm on Wednesday night and you&apos;re wondering if
+              today counted. The endless pages of notes, the endless tabs, and
+              the book they scribble in scattered everywhere. Sprout is where
+              you document what your homeschooling week actually was. Clarity
+              for you. A sense of achievement for them.
             </p>
             <p className="mt-5 text-center text-sprout-cream font-bold leading-relaxed max-w-xl mx-auto"
-               style={{ fontSize: "clamp(15px, 1.4vw, 18px)" }}>
-              Your kid&apos;s data is yours. We never sell it. AI is never trained
-              on a single thing you or your kids log.
+               style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
+              Preserving Human Intelligence &mdash; Growing The Next Generation.
             </p>
 
             <div className="mt-12 flex flex-col items-center gap-4">
@@ -108,9 +103,6 @@ export default function HomeV2() {
                 Save my spot
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
               </Link>
-              <p className="text-sm text-sprout-cream/60">
-                Free · 100 founding spots · doubles at 25
-              </p>
             </div>
 
             {/* Hero-tier social proof: small rating-style badge (bevel-equivalent of 4.8 stars / 28.6k ratings) */}
@@ -577,11 +569,11 @@ export default function HomeV2() {
           <div className="space-y-2 mb-12">
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream/65"
                 style={{ fontSize: "clamp(25px, 4.5vw, 62px)" }}>
-              Your iPhone Notes are scattered.
+              Books on the floor. Pages on the bench.
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream/65"
                 style={{ fontSize: "clamp(25px, 4.5vw, 62px)" }}>
-              ChatGPT forgets by next week.
+              ChatGPT trains on every word you tell it.
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream pt-4 headline-lit"
                 style={{ fontSize: "clamp(25px, 4.5vw, 62px)" }}>
@@ -590,15 +582,23 @@ export default function HomeV2() {
           </div>
 
           <p className="text-sprout-cream/75 leading-relaxed max-w-2xl mb-20" style={{ fontSize: "clamp(17px, 1.6vw, 20px)" }}>
-            You can have all the notes app entries in the world. The draft email
-            you keep adding sentences to. The Notion doc, the spreadsheet, the
-            ChatGPT chats saved in a folder. None of them <em className="not-italic text-sprout-cream">remember</em> Charlie
-            from week to week. None connect this Tuesday to six weeks ago.
+            The kid&apos;s scribble book on the kitchen counter. Library books
+            stacked in the corner. The half-finished worksheet on the table.
+            Hundreds of photos buried in your camera roll. The Notes app you
+            stopped scrolling. The ChatGPT chats that get used to train someone
+            else&apos;s model. None of it <em className="not-italic text-sprout-cream">remembers</em> Charlie
+            from week to week. None connects this Tuesday to six weeks ago. And
+            none of it stays yours.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
 
             {[
+              {
+                title: "Books & paper",
+                you: "The kid's scribble book. The pile of library books. The half-finished worksheet.",
+                get: "Stacks no one re-opens. Pages that lose what was on them.",
+              },
               {
                 title: "iPhone Notes",
                 you: "Type fast. Promise to come back to it.",
@@ -607,12 +607,7 @@ export default function HomeV2() {
               {
                 title: "ChatGPT",
                 you: "Re-explain who Charlie is. Every. Single. Time.",
-                get: "An answer that's gone next session. And trained on what you told it.",
-              },
-              {
-                title: "Spreadsheets",
-                you: "Fill cells. Format columns. Maintain it.",
-                get: "Data you don't read. Effort with no payoff.",
+                get: "An answer that's gone next session. And every word you typed trains the next model. Yours, used for theirs.",
               },
             ].map((alt) => (
               <GlassCard key={alt.title} className="p-7 rounded-3xl" glow="sage" soft>
@@ -646,7 +641,7 @@ export default function HomeV2() {
                 </div>
                 <div>
                   <div className="text-[9px] uppercase tracking-widest text-[#1B3722]/55 mb-1">What you get</div>
-                  <div>Every voice memo, every photo, every deadline &mdash; organised by kid, scroll-able by week, month, year. Yours to see. Theirs to see. Never sold. Never trained on.</div>
+                  <div>Every voice memo, every photo, every deadline &mdash; organised by kid, scrollable by week, month, year. Yours to keep. Theirs to see. The corps don&apos;t get a single byte.</div>
                 </div>
               </div>
             </div>
@@ -668,7 +663,7 @@ export default function HomeV2() {
         </div>
 
         <div className="relative max-w-5xl mx-auto">
-          <CenteredEyebrow number="05" label="What we promise about your kid's data" />
+          <CenteredEyebrow number="05" label="Yours. Not ours. Not big tech's." />
 
           <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream text-center max-w-3xl mx-auto mb-16 headline-lit"
               style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
@@ -677,37 +672,38 @@ export default function HomeV2() {
 
           <div className="grid md:grid-cols-3 gap-5">
             <GlassCard className="p-7 rounded-3xl h-full" glow="warm" soft>
-              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">01 · Yours</div>
+              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">01 · You own it</div>
               <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
-                Your data is yours.
+                The data is yours.
               </h3>
               <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
-                Voice memos, photos, journaling, what your kid did. All of
-                it lives in your account, in Australia. Export it any time.
-                Delete it any time.
+                Voice memos, photos, journaling, what your kid did
+                &mdash; all of it belongs to your family. Stored on your
+                device, backed up to your private cloud. Yours to export.
+                Yours to delete. Yours to keep.
               </p>
             </GlassCard>
             <GlassCard className="p-7 rounded-3xl h-full" glow="sage" soft>
-              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">02 · Never sold</div>
+              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">02 · Not ours to sell</div>
               <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
-                We never sell it.
+                We can&apos;t sell what isn&apos;t ours.
               </h3>
               <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
-                No advertisers. No &ldquo;research partners.&rdquo; No
-                anonymised data exports. Sprout makes money one way
-                &mdash; your subscription. There&apos;s no one to sell
-                your week to.
+                Sprout is the platform. Your captures are your
+                family&apos;s, not ours. The architecture is built that
+                way &mdash; there&apos;s nothing for us to sell, even if
+                we wanted to.
               </p>
             </GlassCard>
             <GlassCard className="p-7 rounded-3xl h-full" glow="warm" soft>
-              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">03 · Never trained</div>
+              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">03 · Not training big tech</div>
               <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
-                AI isn&apos;t trained on it.
+                AI isn&apos;t being trained on you or your kids.
               </h3>
               <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
-                There&apos;s no AI inside Sprout. Nothing generates,
-                nothing summarises, nothing learns from what you or your
-                kids log. The week stays the week.
+                No AI inside Sprout. Nothing summarises, nothing learns
+                from what your kid says. Big tech doesn&apos;t get to
+                train on your family&apos;s week.
               </p>
             </GlassCard>
           </div>
