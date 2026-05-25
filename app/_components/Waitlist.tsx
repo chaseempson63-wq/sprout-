@@ -122,11 +122,13 @@ export function Waitlist() {
             className="font-bold text-sprout-cream mb-3 leading-tight"
             style={{ fontSize: "clamp(20px, 2vw, 24px)" }}
           >
-            Be there when it opens.
+            Join before the door opens.
           </h3>
           <p className="text-sprout-cream/75 mb-6 flex-1 leading-relaxed text-[15px]">
-            We&apos;ll let you know the moment Sprout opens to families. No
-            spam. No pressure. Just the door, when it&apos;s open.
+            Corps are selling people&apos;s data to AI in the race to the end.
+            Sprout is what they don&apos;t build &mdash; a private record of
+            your kid&apos;s week, never sold, never trained on. Be on the list
+            when it opens.
           </p>
 
           {!submitted ? (
@@ -184,10 +186,11 @@ export function Waitlist() {
             className="font-bold text-[#1B3722] mb-3 leading-tight"
             style={{ fontSize: "clamp(20px, 2vw, 24px)" }}
           >
-            First hundred families. Permanent.
+            The founding 100. The ones who got there first.
           </h3>
           <p className="text-[#1B3722]/75 mb-5 leading-snug text-[15px]">
-            Not a customer. A co-builder. Here&apos;s what comes with it:
+            Not a customer. A co-builder. Help build the record the corps will
+            never build for you.
           </p>
           <ul className="space-y-3 mb-6 flex-1">
             {FM_BENEFITS.map((b) => (

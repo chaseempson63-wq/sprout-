@@ -7,8 +7,6 @@ import {
   Home as HomeIcon,
   BarChart3,
   Settings as SettingsIcon,
-  ChevronUp,
-  ChevronRight,
   ChevronDown,
   Plus,
   ArrowRight,
@@ -23,10 +21,17 @@ import { SproutMascotIcon } from "./SproutMascotIcon";
      dark-green cards with cream content (mirrors hero capsule on
      Week/Year for visual continuity).
    - Today: composer card stays white (it's a write surface).
-   - Memory: Pattern card with connection graph → dark-green.
-   - Memory: filter chips, week feed cards, Connections callout
-     stay light.
-   - Week / Year: unchanged — light cards, green hero.
+   - Week / Year: light cards, green hero.
+
+   Content rebuild (2026-05-25, Option 1 — Pure Timeline Feed):
+   Stripped streak mechanics, system-aligned category labels
+   (Talk/Count/Ask/Make/Do, Growth Domains, Numeracy, Comms),
+   AI-synthesis pattern callouts (Pattern this week, Charlie returns
+   to Earth science, Connections inferences), and comparison-stat
+   deltas (23%, 11%). The week view now shows a chronological
+   day-by-day list of captures; the year view shows simple monthly
+   counts + visual density. No synthesis, no insights, no percentages,
+   no streaks.
    ───────────────────────────────────────────────────────────────────── */
 
 /* ─── Status-bar mini icons ──────────────────────────────────────── */
@@ -136,27 +141,16 @@ const DARK_CARD =
   "rounded-[16px] bg-gradient-to-b from-[#2A5132] to-[#1B3722] shadow-[0_2px_8px_-2px_rgba(27,55,34,0.3)]";
 const EYEBROW =
   "text-[8.5px] uppercase tracking-[0.18em] text-[#1B3722]/55 font-bold";
-const EYEBROW_ON_DARK =
-  "text-[8.5px] uppercase tracking-[0.18em] text-[#FBF8EE]/55 font-bold";
 const PAGE_TITLE = { fontSize: "22px", lineHeight: "1.1", letterSpacing: "-0.02em" };
 const HERO_NUMBER = { fontSize: "44px", lineHeight: "1", letterSpacing: "-0.03em" };
 
-const CAT = {
-  talk: "#2A5132",
-  count: "#4D7B53",
-  ask: "#B8945E",
-  make: "#76A77A",
-  do: "#1B3722",
-} as const;
-
-/* brighter dots for use inside dark-green cards (darker greens merge) */
-const CAT_ON_DARK = {
-  talk: "#A4C9A8",
-  count: "#D4E6B5",
-  ask: "#E5C892",
-  make: "#76A77A",
-  do: "#FBF8EE",
-} as const;
+/* Per-kid colour palette — colour-codes timeline entries by who the
+   capture is for, not by curriculum category. Forest = Charlie,
+   Sage = Maya. Extend if more kids added. */
+const KID_COLOR: Record<string, string> = {
+  Charlie: "#A4C9A8",
+  Maya: "#D4E6B5",
+};
 
 function ShareIconButton() {
   return (
@@ -194,34 +188,12 @@ function SegmentedControl({
   );
 }
 
-function CategoryDot({ color }: { color: string }) {
+function KidDot({ kid }: { kid: string }) {
   return (
     <div
       className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-      style={{ backgroundColor: color }}
+      style={{ backgroundColor: KID_COLOR[kid] ?? "#A4C9A8" }}
     />
-  );
-}
-
-function ProgressBar({ pct, color = "#1B3722" }: { pct: number; color?: string }) {
-  return (
-    <div className="h-1 rounded-full bg-[#1B3722]/10 overflow-hidden">
-      <div
-        className="h-full rounded-full"
-        style={{ width: `${pct}%`, backgroundColor: color }}
-      />
-    </div>
-  );
-}
-
-function DarkProgressBar({ pct, color = "#A4C9A8" }: { pct: number; color?: string }) {
-  return (
-    <div className="h-1 rounded-full bg-[#FBF8EE]/15 overflow-hidden">
-      <div
-        className="h-full rounded-full"
-        style={{ width: `${pct}%`, backgroundColor: color }}
-      />
-    </div>
   );
 }
 
@@ -233,7 +205,7 @@ function PullToRefreshHint() {
   );
 }
 
-/* ─── TODAY (Quick log) ──────────────────────────────────────────── */
+/* ─── TODAY (Quick log) — dark cards preserved, streak stripped ─── */
 
 export function PhoneScreenDropIn() {
   const recents = [
@@ -242,35 +214,30 @@ export function PhoneScreenDropIn() {
       time: "5:42 PM",
       kid: "Charlie",
       note: "\"40 mins on volcano questions today.\"",
-      color: CAT_ON_DARK.ask,
     },
     {
       icon: ImageIcon,
       time: "2:18 PM",
       kid: "Charlie",
       note: "Lego tower — counted 84 blocks.",
-      color: CAT_ON_DARK.count,
     },
     {
       icon: FileText,
       time: "11:04 AM",
       kid: "Maya",
       note: "Asked why the moon changes shape.",
-      color: CAT_ON_DARK.talk,
     },
     {
       icon: Mic,
       time: "Yesterday",
       kid: "Charlie",
       note: "Sourdough day. Fractions in the recipe.",
-      color: CAT_ON_DARK.make,
     },
     {
       icon: ImageIcon,
       time: "Yesterday",
       kid: "Maya",
       note: "Watercolour of the backyard tree.",
-      color: CAT_ON_DARK.do,
     },
   ];
 
@@ -284,12 +251,9 @@ export function PhoneScreenDropIn() {
         <ShareIconButton />
       </div>
 
-      {/* Eyebrow + streak pill */}
+      {/* Eyebrow — streak pill stripped per 2026-05-25 spec */}
       <div className="flex items-center gap-1.5 mb-1 px-0.5">
-        <span className={EYEBROW}>Wednesday</span>
-        <span className="inline-flex items-center gap-0.5 px-1.5 py-[2px] rounded-full bg-[#B8945E]/15 text-[8.5px] font-semibold text-[#8B6A3E] leading-none">
-          🔥 12-day streak
-        </span>
+        <span className={EYEBROW}>Wednesday · Nov 19</span>
       </div>
 
       {/* Title */}
@@ -346,23 +310,26 @@ export function PhoneScreenDropIn() {
         ))}
       </div>
 
-      {/* This week summary — DARK card */}
+      {/* This week — DARK card, capture count only.
+          Stripped: "3 days left" countdown + DarkProgressBar (both
+          implied a target/quota — the timeline doesn't have a target). */}
       <div className={`${DARK_CARD} px-3 py-2 mb-2.5`}>
-        <div className="flex items-center justify-between mb-1">
+        <div className="flex items-center justify-between">
           <span className="text-[9.5px] font-semibold text-[#FBF8EE]">
             This week
           </span>
           <span className="text-[8.5px] text-[#FBF8EE]/65">
-            12 moments · 3 days left
+            12 captures so far
           </span>
         </div>
-        <DarkProgressBar pct={60} color="#A4C9A8" />
       </div>
 
       {/* Recent eyebrow (on cream phone bg) */}
       <div className={`${EYEBROW} mb-1.5 px-0.5`}>Recent</div>
 
-      {/* Recent capture cards — DARK */}
+      {/* Recent capture cards — DARK, per-kid colour dots
+          (replaces CAT_ON_DARK category coding — colour now signals
+          which kid, not which curriculum-aligned category). */}
       {recents.map((r, i) => (
         <div
           key={i}
@@ -377,7 +344,7 @@ export function PhoneScreenDropIn() {
                 <span className="text-[9.5px] font-semibold text-[#FBF8EE] leading-none">
                   {r.kid}
                 </span>
-                <CategoryDot color={r.color} />
+                <KidDot kid={r.kid} />
               </div>
               <span className="text-[8.5px] text-[#FBF8EE]/55 leading-none">
                 {r.time}
@@ -401,7 +368,7 @@ export function PhoneScreenDropIn() {
   );
 }
 
-/* ─── MEMORY (Charlie) ────────────────────────────────────────────── */
+/* ─── MEMORY (Charlie's scroll-back) — Pattern + Connections stripped */
 
 export function PhoneScreenMemory() {
   const weeks = [
@@ -411,7 +378,6 @@ export function PhoneScreenMemory() {
       note: "Volcano docs. 90 mins unprompted.",
       emoji: "🌋",
       count: 5,
-      dots: [CAT.talk, CAT.ask, CAT.make],
     },
     {
       week: "Week 11",
@@ -419,7 +385,6 @@ export function PhoneScreenMemory() {
       note: "Sourdough Tuesday. Fractions through cookies.",
       emoji: "🍪",
       count: 4,
-      dots: [CAT.count, CAT.make],
     },
     {
       week: "Week 10",
@@ -427,7 +392,6 @@ export function PhoneScreenMemory() {
       note: "Library walk. 4 books on insects.",
       emoji: "📚",
       count: 3,
-      dots: [CAT.talk, CAT.ask],
     },
     {
       week: "Week 09",
@@ -435,15 +399,13 @@ export function PhoneScreenMemory() {
       note: "Built marble run. 2 hours straight.",
       emoji: "🎯",
       count: 6,
-      dots: [CAT.make, CAT.count, CAT.ask],
     },
     {
       week: "Week 08",
       date: "Oct 27",
-      note: "Beach day. Classified 8 tide-pool shells.",
+      note: "Beach day. 8 tide-pool shells in a row.",
       emoji: "🐚",
       count: 6,
-      dots: [CAT.talk, CAT.ask, CAT.make, CAT.count],
     },
   ];
 
@@ -451,73 +413,26 @@ export function PhoneScreenMemory() {
     <>
       <PullToRefreshHint />
 
-      {/* Mascot + share */}
-      <div className="flex items-center justify-between mb-2 px-0.5">
-        <SproutMascotIcon className="w-7 h-7" />
-        <ShareIconButton />
-      </div>
-
-      {/* Eyebrow + title */}
-      <div className="mb-3 px-0.5">
-        <span className={`${EYEBROW} block mb-1`}>Memory</span>
+      <div className="mb-2.5 px-0.5">
+        <div className="flex items-center justify-between mb-1.5">
+          <span className={EYEBROW}>Timeline</span>
+          <ShareIconButton />
+        </div>
         <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
           Charlie
         </h1>
       </div>
 
-      {/* Filter chips — unchanged (light) */}
-      <div className="flex gap-1 mb-2.5 overflow-x-hidden">
-        {["All", "Earth science", "Numeracy", "Reading"].map((f, i) => (
-          <div
-            key={f}
-            className={`px-2 py-1 rounded-full text-[8.5px] font-semibold whitespace-nowrap leading-none ${
-              i === 0
-                ? "bg-[#1B3722] text-[#FBF8EE]"
-                : "bg-white text-[#1B3722]/70 border border-[#1B3722]/8"
-            }`}
-          >
-            {f}
-          </div>
-        ))}
-      </div>
+      {/* Section eyebrow — captures, not moments */}
+      <div className={`${EYEBROW} mb-1 px-0.5`}>6 weeks · 24 captures</div>
 
-      {/* Pattern callout with connection graph — DARK */}
-      <div className={`${DARK_CARD} px-3 py-2.5 mb-2.5`}>
-        <div className={`${EYEBROW_ON_DARK} mb-1`}>Pattern · this term</div>
-        <p
-          className="text-[#FBF8EE] font-semibold leading-snug mb-2"
-          style={{ fontSize: "12px", letterSpacing: "-0.01em" }}
-        >
-          Earth science: volcanoes → tectonics → ocean trenches.
-        </p>
-        <div className="flex items-center gap-1">
-          <div className="w-5 h-5 rounded-full bg-[#A4C9A8] flex items-center justify-center flex-shrink-0">
-            <span className="text-[8px] leading-none">🌋</span>
-          </div>
-          <div className="flex-1 h-px bg-[#FBF8EE]/25" />
-          <div className="w-5 h-5 rounded-full bg-[#D4E6B5] flex items-center justify-center flex-shrink-0">
-            <span className="text-[8px] leading-none">🌍</span>
-          </div>
-          <div className="flex-1 h-px bg-[#FBF8EE]/25" />
-          <div className="w-5 h-5 rounded-full bg-[#FBF8EE] flex items-center justify-center flex-shrink-0">
-            <span className="text-[8px] leading-none">🌊</span>
-          </div>
-        </div>
-        <div className="flex justify-between mt-1 text-[7.5px] text-[#FBF8EE]/70 font-medium">
-          <span>Volcanoes</span>
-          <span>Tectonics</span>
-          <span>Trenches</span>
-        </div>
-      </div>
-
-      {/* Section eyebrow */}
-      <div className={`${EYEBROW} mb-1 px-0.5`}>6 weeks · 24 moments</div>
-
-      {/* Week feed cards — unchanged (white) */}
+      {/* Week cards (5) — emoji + label + date + snippet + count.
+          Stripped: filter chips (curriculum names), Pattern callout
+          (AI synthesis), Connections inference. */}
       {weeks.map((m) => (
         <div
           key={m.week}
-          className={`${CARD} px-2.5 py-1.5 mb-1 flex items-start gap-2`}
+          className={`${CARD} px-2.5 py-2 mb-1 flex items-start gap-2`}
         >
           <div className="w-7 h-7 rounded-full bg-[#A4C9A8]/25 flex items-center justify-center flex-shrink-0 mt-0.5">
             <span className="text-sm leading-none">{m.emoji}</span>
@@ -527,63 +442,89 @@ export function PhoneScreenMemory() {
               <span className="text-[9.5px] font-semibold text-[#1B3722] leading-none">
                 {m.week}
               </span>
-              <div className="flex items-center gap-1">
-                <span className="text-[8.5px] text-[#1B3722]/45 leading-none">
-                  {m.date}
-                </span>
-                <ChevronRight
-                  className="w-2.5 h-2.5 text-[#1B3722]/35"
-                  strokeWidth={2}
-                />
-              </div>
+              <span className="text-[8.5px] text-[#1B3722]/45 leading-none">
+                {m.date}
+              </span>
             </div>
             <p className="text-[9px] leading-snug text-[#1B3722]/70 mb-1">
               {m.note}
             </p>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-1">
-                {m.dots.map((d, i) => (
-                  <CategoryDot key={i} color={d} />
-                ))}
-              </div>
-              <span className="text-[7.5px] text-[#1B3722]/45 font-medium leading-none">
-                {m.count} moments
-              </span>
-            </div>
+            <span className="text-[7.5px] text-[#1B3722]/45 font-medium leading-none">
+              {m.count} captures
+            </span>
           </div>
         </div>
       ))}
 
-      {/* Connections mini-section — unchanged (sage-tinted) */}
-      <div className="rounded-[16px] bg-[#A4C9A8]/15 border border-[#A4C9A8]/30 px-3 py-2 mt-1.5">
-        <div className={`${EYEBROW} mb-1`}>Connections</div>
-        <p className="text-[9px] leading-snug text-[#1B3722]/75">
-          Week 12 → Week 10: both touched numeracy through making.
-        </p>
-        <p className="text-[9px] leading-snug text-[#1B3722]/75 mt-0.5">
-          Week 11 → Week 8: counting and classification both rose.
-        </p>
+      {/* Footer — scroll prompt, no AI inference */}
+      <div className="text-center mt-1.5 text-[8.5px] text-[#1B3722]/45 font-medium">
+        Scroll back any week.
       </div>
     </>
   );
 }
 
-/* ─── WEEKLY REPORT (Charlie's week) ─────────────────────────────── */
+/* ─── WEEKLY VIEW (Charlie's week) ────────────────────────────────
+   Pure chronological day-by-day list — each day's captures stacked.
+   No categories. No growth domains. No pattern callouts. No deltas. */
 
 export function PhoneScreenReport() {
+  const days = [
+    {
+      label: "Mon · Nov 17",
+      captures: [
+        { icon: Mic, time: "10:14am", text: "Library walk. Clouds." },
+        { icon: ImageIcon, time: "4:30pm", text: "Lego tower." },
+      ],
+    },
+    {
+      label: "Tue · Nov 18",
+      captures: [
+        { icon: ImageIcon, time: "9:42am", text: "Sourdough rising." },
+        { icon: Mic, time: "2:45pm", text: "Fractions through cookies." },
+        { icon: FileText, time: "5:18pm", text: "Patience won today." },
+        { icon: ImageIcon, time: "7:02pm", text: "Bread out of the oven." },
+      ],
+    },
+    {
+      label: "Wed · Nov 19",
+      captures: [
+        { icon: Mic, time: "11:02am", text: "Volcano questions, don't stop." },
+        { icon: ImageIcon, time: "1:30pm", text: "Volcano drawing." },
+        { icon: FileText, time: "8:14pm", text: "90 mins on Earth science." },
+      ],
+    },
+    {
+      label: "Thu · Nov 20",
+      captures: [
+        { icon: Mic, time: "9:30am", text: "Asked about earthquakes." },
+        { icon: FileText, time: "6:45pm", text: "Ocean trench print-out." },
+      ],
+    },
+    {
+      label: "Fri · Nov 21",
+      captures: [
+        { icon: ImageIcon, time: "10:00am", text: "Park climbing." },
+        { icon: Mic, time: "11:15am", text: "Counted ants on the path." },
+        { icon: FileText, time: "4:22pm", text: "Wrote a list of insects." },
+        { icon: ImageIcon, time: "7:00pm", text: "Bug jar on the table." },
+      ],
+    },
+  ];
+
   return (
     <>
       <PullToRefreshHint />
 
-      {/* Mascot + share */}
-      <div className="flex items-center justify-between mb-2 px-0.5">
-        <SproutMascotIcon className="w-7 h-7" />
-        <ShareIconButton />
-      </div>
-
-      {/* Eyebrow + title */}
-      <div className="mb-3 px-0.5">
-        <span className={`${EYEBROW} block mb-1`}>Week 12 · Nov 17–23</span>
+      {/* Header */}
+      <div className="mb-2.5 px-0.5">
+        <div className="flex items-center justify-between mb-1.5">
+          <div className="flex items-center gap-1.5">
+            <SproutMascotIcon className="w-3.5 h-3.5" />
+            <span className={EYEBROW}>Week 12 · Nov 17–23</span>
+          </div>
+          <ShareIconButton />
+        </div>
         <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
           Charlie&apos;s week
         </h1>
@@ -595,7 +536,8 @@ export function PhoneScreenReport() {
         active={0}
       />
 
-      {/* HERO */}
+      {/* HERO — capture count + 7-day sparkline + day-by-day counts.
+          Stripped: 23% delta chip + comparison register. */}
       <div className="rounded-[20px] bg-gradient-to-b from-[#2A5132] to-[#1B3722] px-3.5 py-3 mb-2.5 shadow-[0_4px_16px_-4px_rgba(27,55,34,0.35)]">
         <div className="text-[8.5px] uppercase tracking-[0.2em] text-[#A4C9A8]/85 font-bold mb-1">
           This week
@@ -608,18 +550,10 @@ export function PhoneScreenReport() {
             className="text-[#FBF8EE]/85 font-semibold pb-1"
             style={{ fontSize: "12px", letterSpacing: "-0.01em" }}
           >
-            moments
+            captures
           </span>
-          <div className="ml-auto inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-[#A4C9A8]/15 border border-[#A4C9A8]/25">
-            <ChevronUp
-              className="w-2.5 h-2.5 text-[#A4C9A8]"
-              strokeWidth={3}
-            />
-            <span className="text-[8.5px] font-semibold text-[#A4C9A8]">
-              23%
-            </span>
-          </div>
         </div>
+        {/* sparkline — 7 day bars */}
         <div className="flex items-end gap-1 h-6 mb-1.5">
           {[2, 4, 3, 2, 4, 2, 1].map((v, i) => (
             <div
@@ -633,6 +567,7 @@ export function PhoneScreenReport() {
             />
           ))}
         </div>
+        {/* day-by-day footer */}
         <div className="flex justify-between text-[7.5px] text-[#FBF8EE]/55 font-medium">
           {[
             { d: "Mon", n: 2 },
@@ -650,129 +585,49 @@ export function PhoneScreenReport() {
         </div>
       </div>
 
-      {/* Categories eyebrow */}
-      <div className={`${EYEBROW} mb-1 px-0.5`}>Categories</div>
+      {/* Chronological day-by-day stack — replaces Categories,
+          Growth domains, Highlights cards, Pattern callout. */}
+      <div className={`${EYEBROW} mb-1 px-0.5`}>The week</div>
 
-      {/* Capsules */}
-      <div className="flex flex-wrap gap-1 mb-2.5">
-        {[
-          { label: "Talk", count: 5, bg: CAT.talk },
-          { label: "Count", count: 3, bg: CAT.count },
-          { label: "Ask", count: 4, bg: CAT.ask },
-          { label: "Make", count: 2, bg: CAT.make },
-          { label: "Do", count: 4, bg: CAT.do },
-        ].map((c) => (
-          <div
-            key={c.label}
-            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full"
-            style={{ backgroundColor: c.bg }}
-          >
-            <span className="text-[8.5px] font-semibold text-[#FBF8EE] leading-none">
-              {c.label}
+      {days.map((day) => (
+        <div key={day.label} className={`${CARD} px-2.5 py-2 mb-1.5`}>
+          <div className="flex items-center justify-between mb-1.5">
+            <span className="text-[9.5px] font-semibold text-[#1B3722] leading-none">
+              {day.label}
             </span>
-            <span className="text-[8.5px] font-bold text-[#FBF8EE]/70 leading-none">
-              {c.count}
+            <span className="text-[7.5px] text-[#1B3722]/45 font-medium leading-none">
+              {day.captures.length}{" "}
+              {day.captures.length === 1 ? "capture" : "captures"}
             </span>
           </div>
-        ))}
-      </div>
-
-      {/* Growth domains */}
-      <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
-        <div className={`${EYEBROW} mb-2`}>Growth domains</div>
-        <div className="space-y-1.5">
-          {[
-            { name: "Communication", pct: 78, count: 7, color: CAT.talk },
-            { name: "Numeracy", pct: 45, count: 4, color: CAT.count },
-            { name: "Curiosity", pct: 90, count: 8, color: CAT.ask },
-            { name: "Making", pct: 30, count: 3, color: CAT.make },
-          ].map((d) => (
-            <div key={d.name} className="flex items-center gap-2">
-              <span className="text-[9px] font-semibold text-[#1B3722] w-[64px] flex-shrink-0 leading-none">
-                {d.name}
-              </span>
-              <div className="flex-1">
-                <ProgressBar pct={d.pct} color={d.color} />
-              </div>
-              <span className="text-[8.5px] text-[#1B3722]/55 w-2.5 text-right font-semibold leading-none">
-                {d.count}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Highlights eyebrow */}
-      <div className={`${EYEBROW} mb-1 px-0.5`}>Highlights</div>
-
-      {/* Highlight cards */}
-      {[
-        {
-          emoji: "🍪",
-          day: "Tue · Baking",
-          note: "Fractions, sequencing, patience.",
-          tag: "Make",
-          tagColor: CAT.make,
-        },
-        {
-          emoji: "🌋",
-          day: "Thu · Earth science",
-          note: "Volcano docs. 90 mins unprompted.",
-          tag: "Ask",
-          tagColor: CAT.ask,
-        },
-        {
-          emoji: "📚",
-          day: "Sat · Library",
-          note: "Picked 4 books on insects.",
-          tag: "Talk",
-          tagColor: CAT.talk,
-        },
-      ].map((h, i) => (
-        <div
-          key={i}
-          className={`${CARD} px-2.5 py-1.5 mb-1 flex items-start gap-2`}
-        >
-          <div className="w-7 h-7 rounded-full bg-[#A4C9A8]/25 flex items-center justify-center flex-shrink-0">
-            <span className="text-sm leading-none">{h.emoji}</span>
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="flex items-center justify-between mb-0.5">
-              <span className="text-[9.5px] font-semibold text-[#1B3722] leading-none">
-                {h.day}
-              </span>
-              <ChevronRight
-                className="w-2.5 h-2.5 text-[#1B3722]/35"
-                strokeWidth={2}
-              />
-            </div>
-            <p className="text-[9px] leading-snug text-[#1B3722]/70 mb-1">
-              {h.note}
-            </p>
-            <span
-              className="inline-block px-1.5 py-[2px] rounded-full text-[7.5px] font-semibold text-white leading-none"
-              style={{ backgroundColor: h.tagColor }}
-            >
-              {h.tag}
-            </span>
+          <div className="space-y-1">
+            {day.captures.map((c, i) => {
+              const Icon = c.icon;
+              return (
+                <div key={i} className="flex items-center gap-1.5">
+                  <div className="w-4 h-4 rounded-full bg-[#A4C9A8]/25 flex items-center justify-center flex-shrink-0">
+                    <Icon
+                      className="w-2 h-2 text-[#1B3722]"
+                      strokeWidth={2}
+                    />
+                  </div>
+                  <span className="text-[8.5px] text-[#1B3722]/45 leading-none whitespace-nowrap">
+                    {c.time}
+                  </span>
+                  <p className="text-[9px] leading-snug text-[#1B3722]/75 truncate flex-1">
+                    {c.text}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       ))}
 
-      {/* Patterns callout */}
-      <div className="rounded-[16px] bg-[#B8945E]/12 border border-[#B8945E]/25 px-3 py-2 mb-2 mt-1.5">
-        <div className="text-[8px] uppercase tracking-[0.18em] text-[#8B6A3E] font-bold mb-0.5">
-          Pattern this week
-        </div>
-        <p className="text-[9.5px] leading-snug text-[#1B3722]/80 font-medium">
-          Charlie returned to volcanoes 3 times — earth science is sticking.
-        </p>
-      </div>
-
-      {/* Pinned bottom */}
+      {/* Pinned bottom: fade + Export + Share */}
       <div className="absolute inset-x-0 bottom-[48px] z-20 pt-7 px-4 pb-2 bg-gradient-to-b from-transparent via-[#FBF8EE]/85 to-[#FBF8EE]">
         <button className="flex items-center justify-center gap-1 w-full py-1 text-[9px] font-semibold text-[#1B3722]/65 mb-1">
-          View full report
+          Export this week
           <ArrowRight className="w-2.5 h-2.5" strokeWidth={2.5} />
         </button>
         <button className="w-full h-9 rounded-full bg-[#1B3722] text-[#FBF8EE] text-[11px] font-semibold flex items-center justify-center gap-1.5">
@@ -784,8 +639,12 @@ export function PhoneScreenReport() {
   );
 }
 
-/* ─── YEAR (Charlie's year) ──────────────────────────────────────── */
+/* ─── YEAR VIEW (Charlie's year) ──────────────────────────────────
+   Simple monthly stack + visual heatmap. No deltas, no "top domain",
+   no streak, no growth-domain bars, no per-month delta arrows. */
 
+/* Deterministic heatmap so SSR/CSR don't diverge. 7 rows (M T W T F S S)
+   × 12 cols (weeks). Row-major: first 12 = Monday across 12 weeks. */
 const HEATMAP_INTENSITIES = [
   1, 2, 1, 3, 2, 1, 3, 2, 4, 3, 2, 3, // Mon
   2, 3, 2, 1, 4, 3, 2, 1, 3, 2, 4, 3, // Tue
@@ -816,30 +675,29 @@ export function PhoneScreenYear() {
     <>
       <PullToRefreshHint />
 
-      {/* Mascot + share */}
-      <div className="flex items-center justify-between mb-2 px-0.5">
-        <SproutMascotIcon className="w-7 h-7" />
-        <ShareIconButton />
-      </div>
-
-      {/* Eyebrow + title */}
-      <div className="mb-3 px-0.5">
-        <span className={`${EYEBROW} block mb-1`}>2026 · Term 1</span>
+      <div className="mb-2.5 px-0.5">
+        <div className="flex items-center justify-between mb-1.5">
+          <div className="flex items-center gap-1.5">
+            <SproutMascotIcon className="w-3.5 h-3.5" />
+            <span className={EYEBROW}>2026 · Term 1</span>
+          </div>
+          <ShareIconButton />
+        </div>
         <h1 className="text-[#1B3722] font-bold" style={PAGE_TITLE}>
           Charlie&apos;s year
         </h1>
       </div>
 
-      {/* Segmented control */}
       <SegmentedControl
         segments={["Term 1", "Term 2", "Term 3", "Full year"]}
         active={0}
       />
 
-      {/* HERO */}
+      {/* HERO — capture count + 12-week sparkline.
+          Stripped: 11% delta + Top month/Top domain/Streak micro-stats. */}
       <div className="rounded-[20px] bg-gradient-to-b from-[#2A5132] to-[#1B3722] px-3.5 py-3 mb-2.5 shadow-[0_4px_16px_-4px_rgba(27,55,34,0.35)]">
         <div className="text-[8.5px] uppercase tracking-[0.2em] text-[#A4C9A8]/85 font-bold mb-1">
-          Term 1
+          Term 1 · 12 weeks
         </div>
         <div className="flex items-baseline gap-1.5 mb-2">
           <span className="text-[#FBF8EE] font-bold" style={HERO_NUMBER}>
@@ -849,19 +707,11 @@ export function PhoneScreenYear() {
             className="text-[#FBF8EE]/85 font-semibold pb-1"
             style={{ fontSize: "12px", letterSpacing: "-0.01em" }}
           >
-            moments
+            captures
           </span>
-          <div className="ml-auto inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-[#A4C9A8]/15 border border-[#A4C9A8]/25">
-            <ChevronUp
-              className="w-2.5 h-2.5 text-[#A4C9A8]"
-              strokeWidth={3}
-            />
-            <span className="text-[8.5px] font-semibold text-[#A4C9A8]">
-              11%
-            </span>
-          </div>
         </div>
-        <div className="flex items-end gap-[2px] h-5 mb-2">
+        {/* 12-week sparkline */}
+        <div className="flex items-end gap-[2px] h-6">
           {[1, 2, 3, 2, 4, 3, 5, 4, 3, 5, 6, 4].map((v, i) => (
             <div
               key={i}
@@ -874,38 +724,12 @@ export function PhoneScreenYear() {
             />
           ))}
         </div>
-        <div className="grid grid-cols-3 gap-1.5 pt-2 border-t border-[#A4C9A8]/15">
-          <div>
-            <div className="text-[7px] uppercase tracking-wider text-[#A4C9A8]/65 font-bold leading-tight">
-              Top month
-            </div>
-            <div className="text-[9px] text-[#FBF8EE] font-semibold leading-tight mt-0.5">
-              April
-            </div>
-          </div>
-          <div>
-            <div className="text-[7px] uppercase tracking-wider text-[#A4C9A8]/65 font-bold leading-tight">
-              Top domain
-            </div>
-            <div className="text-[9px] text-[#FBF8EE] font-semibold leading-tight mt-0.5">
-              Comms
-            </div>
-          </div>
-          <div>
-            <div className="text-[7px] uppercase tracking-wider text-[#A4C9A8]/65 font-bold leading-tight">
-              Streak
-            </div>
-            <div className="text-[9px] text-[#FBF8EE] font-semibold leading-tight mt-0.5">
-              14 days
-            </div>
-          </div>
-        </div>
       </div>
 
-      {/* Heatmap */}
+      {/* Heatmap — visual density only. No category overlay. */}
       <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
         <div className="flex items-center justify-between mb-1.5">
-          <div className={EYEBROW}>Moments by week</div>
+          <div className={EYEBROW}>Captures by week</div>
           <div className="flex items-center gap-1 text-[7px] text-[#1B3722]/55 font-bold">
             <span>Low</span>
             <div className="flex gap-[1px]">
@@ -919,6 +743,7 @@ export function PhoneScreenYear() {
             <span>High</span>
           </div>
         </div>
+        {/* week numbers row */}
         <div className="flex gap-1 mb-0.5">
           <div className="w-3 flex-shrink-0" />
           <div className="flex-1 grid grid-cols-12 gap-[2px] text-[6.5px] text-[#1B3722]/40 font-bold">
@@ -929,6 +754,7 @@ export function PhoneScreenYear() {
             ))}
           </div>
         </div>
+        {/* heatmap with weekday labels */}
         <div className="flex gap-1">
           <div className="flex flex-col justify-between text-[7px] text-[#1B3722]/40 font-bold py-[1px] w-3 flex-shrink-0">
             {["M", "T", "W", "T", "F", "S", "S"].map((d, i) => (
@@ -948,83 +774,36 @@ export function PhoneScreenYear() {
         </div>
       </div>
 
-      {/* Domains this term */}
-      <div className={`${CARD} px-3 py-2.5 mb-2.5`}>
-        <div className={`${EYEBROW} mb-2`}>Domains this term</div>
-        <div className="space-y-1.5">
-          {[
-            { name: "Communication", count: 18, pct: 100, color: CAT.talk },
-            { name: "Curiosity", count: 14, pct: 78, color: CAT.ask },
-            { name: "Making", count: 9, pct: 50, color: CAT.make },
-            { name: "Numeracy", count: 6, pct: 33, color: CAT.count },
-          ].map((d) => (
-            <div key={d.name} className="flex items-center gap-2">
-              <span className="text-[9px] font-semibold text-[#1B3722] w-[64px] flex-shrink-0 leading-none">
-                {d.name}
-              </span>
-              <div className="flex-1">
-                <ProgressBar pct={d.pct} color={d.color} />
-              </div>
-              <span className="text-[8.5px] text-[#1B3722]/55 w-3 text-right font-semibold leading-none">
-                {d.count}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Monthly eyebrow */}
+      {/* Monthly stack — simple count per month.
+          Stripped: per-month trend bars + delta arrows. */}
       <div className={`${EYEBROW} mb-1 px-0.5`}>Monthly</div>
 
-      {/* Monthly rows */}
       {[
-        { month: "March", count: 18, delta: "+4", trend: [3, 4, 5, 6] },
-        { month: "April", count: 22, delta: "+4", trend: [4, 6, 5, 7] },
-        { month: "May", count: 7, delta: "−15", trend: [3, 2, 1, 1] },
+        { month: "March", count: 18 },
+        { month: "April", count: 22 },
+        { month: "May", count: 7 },
       ].map((m) => (
         <div
           key={m.month}
-          className={`${CARD} px-2.5 py-1.5 mb-1 flex items-center gap-2`}
+          className={`${CARD} px-3 py-2 mb-1 flex items-center justify-between`}
         >
-          <span className="text-[10px] font-semibold text-[#1B3722] w-10 leading-none">
+          <span className="text-[11px] font-semibold text-[#1B3722] leading-none">
             {m.month}
           </span>
-          <div className="flex-1 flex items-end gap-[2px] h-4">
-            {m.trend.map((v, i) => (
-              <div
-                key={i}
-                className="flex-1 rounded-sm"
-                style={{
-                  height: `${(v / 7) * 100}%`,
-                  minHeight: "2px",
-                  backgroundColor: m.delta.startsWith("+")
-                    ? "#76A77A"
-                    : "#B8945E",
-                  opacity: 0.85,
-                }}
-              />
-            ))}
-          </div>
-          <span className="text-[9.5px] text-[#1B3722]/65 font-medium leading-none">
-            {m.count}
-          </span>
-          <span
-            className={`text-[8.5px] font-semibold w-7 text-right leading-none ${
-              m.delta.startsWith("+") ? "text-[#76A77A]" : "text-[#B8945E]"
-            }`}
-          >
-            {m.delta}
+          <span className="text-[9.5px] text-[#1B3722]/55 font-medium leading-none">
+            {m.count} captures
           </span>
         </div>
       ))}
 
-      {/* Year highlights carousel */}
+      {/* Year highlights carousel — concrete months, kid-readable
+          descriptions, no AI inference. */}
       <div className={`${EYEBROW} mb-1 px-0.5 mt-2`}>Year highlights</div>
       <div className="flex gap-1.5 overflow-x-hidden -mx-4 px-4 pb-1">
         {[
-          { emoji: "🌋", title: "Volcano month", note: "Apr · 12 moments" },
-          { emoji: "🍪", title: "Sourdough run", note: "Mar · 7 moments" },
-          { emoji: "📚", title: "Insect deep-dive", note: "May · 5 moments" },
+          { emoji: "🌋", title: "Volcano month", note: "Apr · 12 captures" },
+          { emoji: "🍪", title: "Sourdough run", note: "Mar · 7 captures" },
+          { emoji: "📚", title: "Insect deep-dive", note: "May · 5 captures" },
         ].map((h, i) => (
           <div key={i} className={`${CARD} px-2 py-2 flex-shrink-0 w-[110px]`}>
             <div className="w-6 h-6 rounded-full bg-[#A4C9A8]/25 flex items-center justify-center mb-1">

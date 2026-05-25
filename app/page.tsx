@@ -73,7 +73,7 @@ export default function HomeV2() {
             <div className="flex justify-center mb-8">
               <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                For homeschool families
+                For parents who walked away
               </div>
             </div>
 
@@ -88,6 +88,11 @@ export default function HomeV2() {
               Voice memos, photos, structured journaling, the bits you scribbled
               at 9pm &mdash; Sprout is where you document what your homeschool
               week actually was. Clarity for you. A sense of achievement for them.
+            </p>
+            <p className="mt-5 text-center text-sprout-cream leading-relaxed max-w-xl mx-auto"
+               style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
+              If the system stopped working for your kid &mdash; and you stopped
+              trying to make it work &mdash; you&apos;re in the right place.
             </p>
             <p className="mt-5 text-center text-sprout-cream font-bold leading-relaxed max-w-xl mx-auto"
                style={{ fontSize: "clamp(15px, 1.4vw, 18px)" }}>
@@ -193,7 +198,7 @@ export default function HomeV2() {
             <CenteredEyebrow number="01" label="Pulled from real forum threads" />
             <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl mx-auto"
                 style={{ fontSize: "clamp(32px, 5vw, 64px)" }}>
-              Built for the parents<br />who are already saying it.
+              Built for the parents<br />who walked away from the system.
             </h2>
           </div>
 
@@ -291,15 +296,13 @@ export default function HomeV2() {
             <div className="md:col-span-5">
               <GlassCard className="p-8 rounded-3xl" glow="warm">
                 <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-4">
-                  ✱ A real homeschool mum
+                  ✱ Charlie · 4:17pm
                 </div>
                 <p className="text-sprout-cream leading-relaxed italic" style={{ fontSize: "clamp(15px, 1.4vw, 17px)" }}>
-                  &ldquo;I envision all the other parents judging me and thinking
-                  I&apos;m a horrible teacher who is failing my kids. When I hear
-                  my daughter stumble over words I was reading at her age, I worry.&rdquo;
+                  &ldquo;Mum, why does the volcano have fire inside?&rdquo;
                 </p>
                 <div className="mt-6 text-xs text-sprout-cream/65 uppercase tracking-widest">
-                  Verbatim · Hess UnAcademy
+                  Voice memo · Tuesday
                 </div>
               </GlassCard>
             </div>
@@ -376,7 +379,7 @@ export default function HomeV2() {
                       Voice memo · 0:47s
                     </p>
                     <p className="text-[10px] text-sprout-cream/75 leading-snug">
-                      Tagged for Charlie · Sunday roll-up
+                      Tagged for Charlie · Added to the timeline
                     </p>
                   </FloatingGlass>
                 </div>
@@ -387,7 +390,7 @@ export default function HomeV2() {
             <FeatureBlock
               reverse
               index="02"
-              eyebrow="Sprout remembers"
+              eyebrow="The timeline holds"
               title={
                 <>
                   Connects this Tuesday <em className="not-italic text-[#A4C9A8]">to six weeks ago.</em>
@@ -418,10 +421,10 @@ export default function HomeV2() {
                     tilt="rotateY(-14deg) rotateX(-4deg) rotateZ(3deg)"
                   >
                     <div className="text-[9px] uppercase tracking-[0.2em] text-sprout-cream/85 font-bold mb-2">
-                      Pattern · 6 weeks
+                      6 weeks · 24 captures
                     </div>
                     <p className="text-[11px] font-bold text-sprout-cream leading-tight mb-1.5">
-                      Charlie returns to Earth science.
+                      Scroll back any week.
                     </p>
                     <div className="grid grid-cols-6 gap-1">
                       {[0.3, 0.5, 0.2, 0.7, 0.4, 0.9].map((h, i) => (
@@ -429,7 +432,7 @@ export default function HomeV2() {
                       ))}
                     </div>
                     <p className="text-[9px] text-sprout-cream/65 mt-2 leading-snug">
-                      Volcanoes Wk6 → tectonics Wk9 → ocean trenches Wk12.
+                      Wk 8 · Wk 9 · Wk 10 · Wk 11 · Wk 12 · this week.
                     </p>
                   </FloatingGlass>
                 </div>
@@ -582,7 +585,7 @@ export default function HomeV2() {
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream pt-4 headline-lit"
                 style={{ fontSize: "clamp(25px, 4.5vw, 62px)" }}>
-              Sprout remembers everything.
+              Sprout doesn&apos;t sell. Doesn&apos;t train. Doesn&apos;t forget.
             </h2>
           </div>
 
@@ -804,7 +807,7 @@ export default function HomeV2() {
               },
               {
                 q: "What if I unschool? My week doesn&apos;t look like school.",
-                a: "Even better. The cooking, the questions, the YouTube rabbit holes, the library walks &mdash; all of it goes in the timeline, exactly as it happened. You and your kid can scroll the week and see what was actually there. We don&apos;t measure curriculum.",
+                a: "Even better. The cooking, the questions, the YouTube rabbit holes, the library walks &mdash; all of it goes in the timeline, exactly as it happened. You and your kid can scroll the week and see what was actually there. We don&apos;t measure. We just show what happened.",
               },
               {
                 q: "Can I track more than one kid?",
@@ -840,16 +843,27 @@ export default function HomeV2() {
 
         <div className="relative max-w-4xl mx-auto text-center">
 
-          <CenteredEyebrow number="07" label="Who Sprout is for" />
+          <CenteredEyebrow number="07" label="Not failing. Walking away." />
 
           <p className="text-sprout-cream/85 leading-relaxed italic"
              style={{ fontSize: "clamp(28px, 4vw, 52px)", lineHeight: "1.15" }}>
             &ldquo;So, to all the mums doing home-based learning and feeling like they
             are failing,<br /><span className="text-sprout-cream">I see you. I feel you. I am you.</span>&rdquo;
           </p>
-          <div className="mt-10 inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
+          <div className="mt-8 inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
             <span className="block w-8 h-px bg-sprout-cream/30" />
             <span>Verbatim · Mum Central · Australia</span>
+            <span className="block w-8 h-px bg-sprout-cream/30" />
+          </div>
+
+          <p className="mt-16 text-sprout-cream leading-relaxed italic"
+             style={{ fontSize: "clamp(24px, 3.4vw, 44px)", lineHeight: "1.2" }}>
+            &ldquo;I&apos;m having the time of my life.<br />
+            <span className="text-sprout-cream/85">Thank God I chose this.&rdquo;</span>
+          </p>
+          <div className="mt-8 inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold">
+            <span className="block w-8 h-px bg-sprout-cream/30" />
+            <span>Verbatim · Australian Homeschool Stories · QLD</span>
             <span className="block w-8 h-px bg-sprout-cream/30" />
           </div>
 
@@ -903,7 +917,7 @@ export default function HomeV2() {
 
               <p className="mt-8 md:mt-12 text-sprout-cream font-bold leading-tight"
                  style={{ fontSize: "clamp(22px, 3vw, 36px)" }}>
-                Finally, we&apos;re on track.
+                Not on track. Off it on purpose.
               </p>
 
               <p className="mt-6 md:mt-8 text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
