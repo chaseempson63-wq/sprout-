@@ -856,14 +856,14 @@ export default function HomeV2() {
                 </div>
               </div>
 
-              <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream headline-lit"
-                  style={{ fontSize: "clamp(64px, 11vw, 120px)" }}>
-                Sleep on<br />Sunday.
+              <h2 className="font-bold tracking-[-0.03em] leading-[1.02] text-sprout-cream headline-lit max-w-4xl mx-auto"
+                  style={{ fontSize: "clamp(40px, 7.5vw, 92px)" }}>
+                Their week of learning,<br />summarized while you sleep.
               </h2>
 
-              <p className="mt-8 md:mt-12 text-sprout-cream/85 leading-snug max-w-xl mx-auto"
-                 style={{ fontSize: "clamp(18px, 2vw, 26px)", lineHeight: "1.3" }}>
-                The week, captured. Nothing slipping through.
+              <p className="mt-8 md:mt-10 font-bold text-sprout-cream/90 leading-snug max-w-xl mx-auto"
+                 style={{ fontSize: "clamp(22px, 2.6vw, 32px)", lineHeight: "1.2" }}>
+                Sleep on Sunday.
               </p>
 
               <p className="mt-6 md:mt-8 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
