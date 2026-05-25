@@ -78,7 +78,7 @@ export default function HomeV2() {
             </div>
 
             <h1 className="text-center font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream headline-lit"
-                style={{ fontSize: "clamp(64px, 11vw, 140px)" }}>
+                style={{ fontSize: "clamp(56px, 9.5vw, 128px)" }}>
               You did more<br />than you think.
             </h1>
 
