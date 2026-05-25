@@ -293,6 +293,45 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
+          EMOTIONAL BRIDGE — unnumbered scene between 3am wound
+          (Section 02) and How It Works mechanic (Section 03). Mirrors
+          the Friday-afternoon scene structurally. Lands the
+          fragments-have-a-home relief before the mechanic kicks in.
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
+
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#3D6643]/30 via-[#4D7B53]/20 to-[#3D6643]/30" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#A4C9A8]/8 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-3xl mx-auto text-center">
+
+          <div className="inline-flex items-center gap-3 text-sprout-cream/55 text-[10px] uppercase tracking-[0.3em] font-bold mb-8 md:mb-10">
+            <span className="block w-8 h-px bg-sprout-cream/30" />
+            <span>The thing you&apos;ve been trying</span>
+            <span className="block w-8 h-px bg-sprout-cream/30" />
+          </div>
+
+          <p className="text-sprout-cream leading-snug"
+             style={{ fontSize: "clamp(24px, 3.8vw, 44px)", lineHeight: "1.2" }}>
+            You&apos;re already doing it.
+          </p>
+
+          <p className="mt-5 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
+             style={{ fontSize: "clamp(15px, 1.5vw, 19px)" }}>
+            The voice memos. The photos. The bits scribbled in the back of the calendar.
+          </p>
+
+          <p className="mt-10 md:mt-12 text-sprout-cream leading-snug"
+             style={{ fontSize: "clamp(24px, 3.8vw, 44px)", lineHeight: "1.2" }}>
+            What you needed was somewhere for it to live.
+          </p>
+
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
           REPEATING FEATURE BLOCKS  (bevel positions 9–12)
           Same 2-column shape, alternating left/right. Four blocks.
           Each one: eyebrow + H3 + body + phone + floating UI card.
@@ -733,6 +772,15 @@ export default function HomeV2() {
             Both of you see what the week was.
           </p>
 
+          <p className="mt-10 md:mt-12 text-sprout-cream leading-snug max-w-xl mx-auto"
+             style={{ fontSize: "clamp(18px, 2vw, 24px)", lineHeight: "1.3" }}>
+            The week, captured. Nothing slipping through.
+          </p>
+          <p className="mt-3 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
+             style={{ fontSize: "clamp(15px, 1.4vw, 18px)" }}>
+            And the doing of it is good for both of you.
+          </p>
+
         </div>
       </section>
 
@@ -859,7 +907,12 @@ export default function HomeV2() {
                 Sleep on<br />Sunday.
               </h2>
 
-              <p className="mt-8 md:mt-12 text-sprout-cream/85 leading-relaxed max-w-xl mx-auto"
+              <p className="mt-8 md:mt-12 text-sprout-cream/85 leading-snug max-w-xl mx-auto"
+                 style={{ fontSize: "clamp(18px, 2vw, 26px)", lineHeight: "1.3" }}>
+                The week is there. So is next week.
+              </p>
+
+              <p className="mt-6 md:mt-8 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
                  style={{ fontSize: "clamp(17px, 1.6vw, 21px)" }}>
                 You&apos;re not the only one doing it this way.
               </p>
