@@ -189,9 +189,58 @@
   animation: mascot-pop 320ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
+/* Celebrate — parabolic jump + double Y-axis spin + squash/stretch.
+   Used in waitlist-success state via MascotCelebration. Translate
+   values scaled for the ~140px container the celebration renders in
+   (vs the 720px stage in the standalone mascot demo). */
+@keyframes mascot-celebrate {
+  0%   { transform: translateY(0)     rotateX(0deg)   rotateY(0deg)   scale(1, 1); }
+  6%   { transform: translateY(0)     rotateX(0deg)   rotateY(0deg)   scale(1.12, 0.82); }
+  14%  { transform: translateY(-10px) rotateX(-10deg) rotateY(60deg)  scale(0.94, 1.10); }
+  35%  { transform: translateY(-26px) rotateX(-14deg) rotateY(280deg) scale(1, 1); }
+  50%  { transform: translateY(-32px) rotateX(-14deg) rotateY(360deg) scale(1, 1); }
+  65%  { transform: translateY(-26px) rotateX(-14deg) rotateY(440deg) scale(1, 1); }
+  86%  { transform: translateY(-10px) rotateX(-10deg) rotateY(660deg) scale(0.94, 1.10); }
+  94%  { transform: translateY(0)     rotateX(0deg)   rotateY(720deg) scale(1.12, 0.82); }
+  100% { transform: translateY(0)     rotateX(0deg)   rotateY(720deg) scale(1, 1); }
+}
+
+/* Sparkle visibility window — sparkles fade in around the peak of
+   the jump (~30%) and fade out by ~78% so they bracket the spin. */
+@keyframes mascot-sparkle-hold {
+  0%, 22%   { opacity: 0; }
+  32%, 62%  { opacity: 1; }
+  78%, 100% { opacity: 0; }
+}
+
+/* Per-sparkle pop — travels from centre outward to (--tx, --ty),
+   rotating + scaling. Each sparkle's stagger comes from
+   animation-delay set inline per element. */
+@keyframes mascot-sparkle-pop {
+  0%   { transform: translate(0, 0) scale(0) rotate(0deg); opacity: 0; }
+  25%  { transform: translate(calc(var(--tx) * 0.6), calc(var(--ty) * 0.6)) scale(1.1) rotate(60deg); opacity: 1; }
+  65%  { transform: translate(var(--tx), var(--ty)) scale(1) rotate(120deg); opacity: 1; }
+  100% { transform: translate(calc(var(--tx) * 1.15), calc(var(--ty) * 1.15 - 14px)) scale(0) rotate(180deg); opacity: 0; }
+}
+
+.animate-mascot-celebrate {
+  animation: mascot-celebrate 1.5s cubic-bezier(0.5, 0.05, 0.5, 0.95) both;
+}
+
+.animate-mascot-sparkle-hold {
+  animation: mascot-sparkle-hold 1.5s ease-out both;
+}
+
+.animate-mascot-sparkle-pop {
+  animation: mascot-sparkle-pop 0.9s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-mascot-float,
-  .animate-mascot-pop {
+  .animate-mascot-pop,
+  .animate-mascot-celebrate,
+  .animate-mascot-sparkle-hold,
+  .animate-mascot-sparkle-pop {
     animation: none;
   }
 }

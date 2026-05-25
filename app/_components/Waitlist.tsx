@@ -10,6 +10,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { supabase } from "@/lib/supabase";
+import { MascotCelebration } from "./MascotCelebration";
 
 // Founding-Member checkout URL. Configured via env var so it can be
 // swapped per environment without touching code. If unset, the button
@@ -155,18 +156,33 @@ export function Waitlist() {
               )}
             </form>
           ) : (
-            <div>
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#A4C9A8] font-bold mb-2">
-                ✓ You&apos;re in
+            <div className="flex flex-col items-center text-center py-2">
+              <MascotCelebration size={140} />
+
+              {/* "Thank you" fades in roughly during the jump peak via the
+                  shared mascot-pop animation + a small inline delay so it
+                  lands as the sprout tops out. */}
+              <p
+                className="mt-4 font-bold text-sprout-cream leading-tight animate-mascot-pop"
+                style={{
+                  fontSize: "clamp(22px, 2.4vw, 28px)",
+                  animationDelay: "500ms",
+                }}
+              >
+                Thank you.
               </p>
-              <p className="text-sprout-cream/75 mb-4 leading-relaxed text-[15px]">
-                We&apos;ll be in touch. While you wait — there&apos;s another
-                way to help.
+              <p
+                className="mt-2 text-sprout-cream/75 leading-relaxed max-w-xs text-[14px] animate-mascot-pop"
+                style={{ animationDelay: "650ms" }}
+              >
+                We&apos;ll let you know the moment the door opens.
               </p>
+
               <button
                 type="button"
                 onClick={goToFM}
-                className="text-[14px] text-sprout-cream hover:underline font-semibold inline-flex items-center gap-1"
+                className="mt-6 text-[13px] text-sprout-cream/70 hover:text-sprout-cream hover:underline font-semibold inline-flex items-center gap-1 animate-mascot-pop"
+                style={{ animationDelay: "900ms" }}
               >
                 → Become a Founding Family
               </button>
