@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Plus, ArrowRight, Check } from "lucide-react";
+import { Plus, ArrowRight } from "lucide-react";
 import { SproutLogo, GlassCard, GLASS_CARD_SOFT, FloatingGlass } from "./_components/Glass";
 import {
   PhoneFrame,
@@ -325,19 +325,13 @@ export default function HomeV2() {
             <FeatureBlock
               index="01"
               eyebrow="Drop in a moment"
-              title="A voice memo while you fold the washing."
-              body={
+              title={
                 <>
-                  <p>
-                    Voice memo. Photo. One sentence at 9pm. A scheduled
-                    activity. A deadline coming Friday. Tag which kid (or
-                    the whole family). That&apos;s the entire input.
-                  </p>
-                  <p className="mt-5 text-sprout-cream/65">
-                    There when you open it &mdash; Sunday, Tuesday, whenever.
-                    The bits you captured add up to more than you remember.
-                  </p>
+                  Did today even <em className="not-italic text-[#A4C9A8]">count?</em>
                 </>
+              }
+              body={
+                <p>Drop in one thing. Done.</p>
               }
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
@@ -371,27 +365,14 @@ export default function HomeV2() {
             <FeatureBlock
               reverse
               index="02"
-              eyebrow="The thing you've already been doing"
+              eyebrow="Somewhere it lives"
               title={
                 <>
-                  Somewhere for it <em className="not-italic text-[#A4C9A8]">to live.</em>
+                  What do I have to <em className="not-italic text-[#A4C9A8]">show for it?</em>
                 </>
               }
               body={
-                <>
-                  <p>
-                    You&apos;re already doing it &mdash; voice memos,
-                    photos, the bits scribbled in the back of the calendar.
-                    Notes apps give you a longer scroll. ChatGPT forgets
-                    every session, and trains on what you tell it. Sprout
-                    keeps every moment, organised by kid, and lets you
-                    scroll back through six weeks or six months.
-                  </p>
-                  <p className="mt-5 text-sprout-cream/65">
-                    Continuity is the whole product. One kid&apos;s record,
-                    growing every week. Yours, not anyone else&apos;s.
-                  </p>
-                </>
+                <p>Scroll back. It&apos;s all still here.</p>
               }
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
@@ -425,43 +406,14 @@ export default function HomeV2() {
             {/* Feature 3 — Sunday becomes art */}
             <FeatureBlock
               index="03"
-              eyebrow="Clarity for you. Pride for them."
+              eyebrow="The week, seen"
               title={
                 <>
-                  The same week, <em className="not-italic text-[#A4C9A8]">seen two ways.</em>
+                  What did we actually <em className="not-italic text-[#A4C9A8]">do this week?</em>
                 </>
               }
               body={
-                <>
-                  <p>
-                    Open it any Sunday night. The week is already there
-                    &mdash; voice memos, photos, structured journaling,
-                    scheduled days, deadlines met, what your kid actually
-                    did. No AI making anything up. Just the captures,
-                    organised. One timeline per kid. Charlie&apos;s grows
-                    separately to Emma&apos;s.
-                  </p>
-                  <p className="mt-5 text-sprout-cream/65">
-                    You scroll the week and the chaos turns into clarity.
-                    Your kid scrolls their own view and feels a sense of
-                    achievement. Same week, two screens, no model in the
-                    middle.
-                  </p>
-                  <ul className="mt-6 space-y-3">
-                    {[
-                      "Documenting your week is a new habit — Sprout makes it the easy one.",
-                      "Teaching your kid to journal is a life-long skill. Hand them the phone.",
-                      "Doubles as a record of learning if your registration officer ever asks.",
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3 text-sprout-cream/80" style={{ fontSize: "15px" }}>
-                        <span className="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-sprout-cream/15 flex items-center justify-center border border-sprout-cream/10">
-                          <Check className="w-2.5 h-2.5 text-sprout-cream" strokeWidth={3} />
-                        </span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </>
+                <p>Open it Sunday. The week&apos;s right there.</p>
               }
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
@@ -495,20 +447,14 @@ export default function HomeV2() {
             <FeatureBlock
               reverse
               index="04"
-              eyebrow="A year of growth"
-              title="Weeks stack into months. Months into a year."
-              body={
+              eyebrow="A year of it"
+              title={
                 <>
-                  <p>
-                    Weeks compile into monthly snapshots. Monthly snapshots
-                    compile into a year-end retrospective you can hold in
-                    your hand and hand to your kid.
-                  </p>
-                  <p className="mt-5 text-sprout-cream/65">
-                    Every kid you add grows their own year. The record
-                    builds itself while you&apos;re busy living.
-                  </p>
+                  Is this going to <em className="not-italic text-[#A4C9A8]">add up to something?</em>
                 </>
+              }
+              body={
+                <p>Print the year. Hand it to whoever&apos;s asking.</p>
               }
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
