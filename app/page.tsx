@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Plus, ArrowRight } from "lucide-react";
+import { Plus, ArrowRight, Check } from "lucide-react";
 import { SproutLogo, GlassCard, GLASS_CARD_SOFT, FloatingGlass } from "./_components/Glass";
 import {
   PhoneFrame,
@@ -331,7 +331,18 @@ export default function HomeV2() {
                 </>
               }
               body={
-                <p>Drop in one thing. Done.</p>
+                <>
+                  <p className="font-semibold">Drop in one thing. Done.</p>
+                  <p className="mt-5">
+                    Voice memo. Photo. One sentence at 9pm. A scheduled
+                    activity. A deadline coming Friday. Tag which kid (or
+                    the whole family). That&apos;s the entire input.
+                  </p>
+                  <p className="mt-5 text-sprout-cream/65">
+                    There when you open it &mdash; Sunday, Tuesday, whenever.
+                    The bits you captured add up to more than you remember.
+                  </p>
+                </>
               }
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
@@ -372,7 +383,21 @@ export default function HomeV2() {
                 </>
               }
               body={
-                <p>Scroll back. It&apos;s all still here.</p>
+                <>
+                  <p className="font-semibold">Scroll back. It&apos;s all still here.</p>
+                  <p className="mt-5">
+                    You&apos;re already doing it &mdash; voice memos,
+                    photos, the bits scribbled in the back of the calendar.
+                    Notes apps give you a longer scroll. ChatGPT forgets
+                    every session, and trains on what you tell it. Sprout
+                    keeps every moment, organised by kid, and lets you
+                    scroll back through six weeks or six months.
+                  </p>
+                  <p className="mt-5 text-sprout-cream/65">
+                    Continuity is the whole product. One kid&apos;s record,
+                    growing every week. Yours, not anyone else&apos;s.
+                  </p>
+                </>
               }
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
@@ -413,7 +438,36 @@ export default function HomeV2() {
                 </>
               }
               body={
-                <p>Open it Sunday. The week&apos;s right there.</p>
+                <>
+                  <p className="font-semibold">Open it Sunday. The week&apos;s right there.</p>
+                  <p className="mt-5">
+                    Voice memos, photos, structured journaling, scheduled
+                    days, deadlines met, what your kid actually did. No AI
+                    making anything up. Just the captures, organised. One
+                    timeline per kid. Charlie&apos;s grows separately to
+                    Emma&apos;s.
+                  </p>
+                  <p className="mt-5 text-sprout-cream/65">
+                    You scroll the week and the chaos turns into clarity.
+                    Your kid scrolls their own view and feels a sense of
+                    achievement. Same week, two screens, no model in the
+                    middle.
+                  </p>
+                  <ul className="mt-6 space-y-3">
+                    {[
+                      "Documenting your week is a new habit — Sprout makes it the easy one.",
+                      "Teaching your kid to journal is a life-long skill. Hand them the phone.",
+                      "Doubles as a record of learning if your registration officer ever asks.",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-sprout-cream/80" style={{ fontSize: "15px" }}>
+                        <span className="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-sprout-cream/15 flex items-center justify-center border border-sprout-cream/10">
+                          <Check className="w-2.5 h-2.5 text-sprout-cream" strokeWidth={3} />
+                        </span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </>
               }
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
@@ -454,7 +508,18 @@ export default function HomeV2() {
                 </>
               }
               body={
-                <p>Print the year. Hand it to whoever&apos;s asking.</p>
+                <>
+                  <p className="font-semibold">Print the year. Hand it to whoever&apos;s asking.</p>
+                  <p className="mt-5">
+                    Weeks compile into monthly snapshots. Monthly snapshots
+                    compile into a year-end retrospective you can hold in
+                    your hand and hand to your kid.
+                  </p>
+                  <p className="mt-5 text-sprout-cream/65">
+                    Every kid you add grows their own year. The record
+                    builds itself while you&apos;re busy living.
+                  </p>
+                </>
               }
               visual={
                 <div className="relative" style={{ perspective: "1600px" }}>
