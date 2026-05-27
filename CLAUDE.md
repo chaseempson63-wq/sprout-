@@ -53,7 +53,7 @@ A clean save-state for future sessions. Read this first before assuming what's b
 
 ### Shipped
 
-- **Landing page** at `sprout-sigma-eight.vercel.app` (deploys auto-trigger from `main` push via Vercel GitHub integration). Voice/copy locked, fake stats removed, 5-star badge removed, "homeschool families" labels aligned across hero/footer/CTA, multi-kid pricing line removed from hero, Step 02 + Step 04 floating cards repositioned off cream phone screen.
+- **Landing page** at `hisprout.app` (registered via Cloudflare 2026-05-27, primary on Vercel; deploys auto-trigger from `main` push via Vercel GitHub integration). Voice/copy locked, fake stats removed, 5-star badge removed, "homeschool families" labels aligned across hero/footer/CTA, multi-kid pricing line removed from hero, Step 02 + Step 04 floating cards repositioned off cream phone screen.
 - **Brand voice rules** documented in [`docs/MASTER.md`](docs/MASTER.md) and [`docs/BRAND.md`](docs/BRAND.md).
 - **`sprout-truth` skill** (lives in `~/.claude/skills/sprout-truth/`, not committed to repo):
   - `quote-bank.md` — ~25 verbatim quotes, ~13 cross-verified AU + ~5 cross-verified US. Anchors: Charlene Hess (Hess UnAcademy, US), Jenna Galley (Mum Central, AU), Louise (School Can't Australia, NSW), Sara (Australian Homeschool Stories Podcast, QLD). Gaps: Category 3 (scattered records), Category 4 (registration-officer dread), Category 8 (post-launch reaction) all empty.
