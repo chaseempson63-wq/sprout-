@@ -573,7 +573,7 @@ export default function HomeV2() {
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream/65"
                 style={{ fontSize: "clamp(40px, 5.5vw, 62px)" }}>
-              ChatGPT keeps every word. OpenAI owns it. Forgets you next session.
+              ChatGPT owns your data and sells it.
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream pt-4 headline-lit"
                 style={{ fontSize: "clamp(40px, 5.5vw, 62px)" }}>
