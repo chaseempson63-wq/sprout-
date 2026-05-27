@@ -1,14 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import {
-  ArrowRight,
-  MessageCircle,
-  ShieldCheck,
-  Wrench,
-  Zap,
-  type LucideIcon,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { MascotCelebration } from "./MascotCelebration";
 
@@ -17,57 +10,6 @@ import { MascotCelebration } from "./MascotCelebration";
 // links to a no-op anchor (clicks won't navigate anywhere harmful).
 const STRIPE_URL =
   process.env.NEXT_PUBLIC_STRIPE_CHECKOUT_URL ?? "#stripe-url-not-set";
-
-type FMBenefit = {
-  icon: LucideIcon;
-  heading: string;
-  description: string;
-};
-
-const FM_BENEFITS: FMBenefit[] = [
-  {
-    icon: ShieldCheck,
-    heading: "Founding member status for life.",
-    description: "Once-ever badge. After 100, it's closed forever.",
-  },
-  {
-    icon: Zap,
-    heading: "Skip the wait.",
-    description: "In Sprout the day it opens. No queue, no email-when-ready.",
-  },
-  {
-    icon: MessageCircle,
-    heading: "A direct line to the founder and team.",
-    description:
-      "Private channel. A small room.",
-  },
-  {
-    icon: Wrench,
-    heading: "Help shape what Sprout becomes.",
-    description: "See the roadmap before anyone. Your feedback ships.",
-  },
-];
-
-function FMBenefitRow({ benefit }: { benefit: FMBenefit }) {
-  const Icon = benefit.icon;
-  return (
-    <li className="flex items-start gap-3">
-      <Icon
-        className="flex-shrink-0 mt-[3px] text-[#1B3722]"
-        size={18}
-        aria-hidden
-      />
-      <div className="min-w-0">
-        <span className="font-bold text-[#1B3722] text-[14px] leading-[1.45]">
-          {benefit.heading}
-        </span>{" "}
-        <span className="text-[#1B3722]/75 text-[14px] leading-[1.45]">
-          {benefit.description}
-        </span>
-      </div>
-    </li>
-  );
-}
 
 export function Waitlist() {
   const [email, setEmail] = useState("");
@@ -199,36 +141,22 @@ export function Waitlist() {
             Limited to 100
           </p>
           <h3
-            className="font-bold text-[#1B3722] mb-5 leading-tight"
+            className="font-bold text-[#1B3722] leading-tight"
             style={{ fontSize: "clamp(20px, 2vw, 24px)" }}
           >
             The founding 100. The ones who got there first.
           </h3>
-          <ul className="space-y-3 mb-6 flex-1">
-            {FM_BENEFITS.map((b) => (
-              <FMBenefitRow key={b.heading} benefit={b} />
-            ))}
-          </ul>
+          <div className="flex-1" />
           <button
             type="button"
-            onClick={() => setModalOpen(true)}
-            className="w-full h-12 rounded-full bg-[#1B3722] text-[#F4EDE0] font-bold text-[14px] hover:bg-[#0F2614] transition-colors inline-flex items-center justify-center gap-2"
+            disabled
+            aria-disabled="true"
+            className="w-full h-12 rounded-full bg-[#1B3722]/70 text-[#F4EDE0]/80 font-bold text-[12px] tracking-[0.22em] uppercase cursor-not-allowed inline-flex items-center justify-center"
           >
-            Become a Founding Family
-            <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+            Coming soon
           </button>
         </div>
 
-      </div>
-
-      {/* Counter under the cards — hardcoded for v1, matches Ether's pattern. */}
-      <div className="text-center space-y-1">
-        <p className="text-sprout-cream text-[14px] font-semibold">
-          0 / 100 founding families.
-        </p>
-        <p className="text-[#A4C9A8] text-[13px]">
-          Doubles at 25.
-        </p>
       </div>
 
       {/* ── Confirmation modal ───────────────────────────────────

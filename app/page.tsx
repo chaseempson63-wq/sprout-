@@ -780,32 +780,16 @@ export default function HomeV2() {
                 a: "No. The whole loop is one voice memo, photo, or sentence — dropped in when life lets you. If a week goes by quiet, the next week&apos;s view is shorter, that&apos;s it. Sprout is welcomed-not-required by design; the timeline keeps building whether you put in five captures this week or one.",
               },
               {
-                q: "How is Sprout different from my Notes app or ChatGPT?",
-                a: "Notes apps don&apos;t compile your week, they give you a longer scroll. ChatGPT forgets every session — and trains on what you tell it. Sprout remembers every moment and references back, but only for you. Continuity is the whole product. Your week stays yours.",
-              },
-              {
                 q: "Do you sell or train on our data?",
                 a: "No, and we never will. Your kid&apos;s voice memos, photos, journaling, and timeline stay yours. We don&apos;t sell them. We don&apos;t train AI on them — there&apos;s no AI inside Sprout to train. We don&apos;t share them with advertisers. The whole point of Sprout is that your family&apos;s week is yours alone. Selling it or feeding it to a model would defeat the entire reason this exists.",
               },
               {
                 q: "Can my kid record their own entries?",
-                a: "Yes — and we&apos;d encourage it. Journaling is a life-long skill, and it forms faster between ages six and eleven than at any later age. Hand them the phone, let them voice-memo what they made, what they figured out, what they got stuck on. Their timeline becomes their voice — not just yours about them. It&apos;s healthy for both of you, and it teaches a habit they keep for life.",
-              },
-              {
-                q: "What if I forget to log for a week?",
-                a: "Then that week&apos;s view is shorter. Next week, whatever you capture compiles into what&apos;s there. The timeline builds on what&apos;s there, not what isn&apos;t.",
-              },
-              {
-                q: "Will Sprout help with my state&apos;s record-keeping?",
-                a: "Indirectly, yes. Most regulators that ask homeschool families for some form of &apos;record of learning&apos; will accept what Sprout produces — its monthly and yearly compilations are designed for exactly that, without you scrambling the night before review. It&apos;s not the headline, but it&apos;s there.",
+                a: "Yes — and we&apos;d encourage it. Hand them the phone, let them voice-memo what they made, what they figured out, what they got stuck on. Their timeline becomes their voice — not just yours about them.",
               },
               {
                 q: "I&apos;m not techy. Will I be able to use it?",
                 a: "If you can send a voice memo or take a photo, you can use Sprout. No setup. No dashboard. Open, drop in, close.",
-              },
-              {
-                q: "What if I unschool? My week doesn&apos;t look like school.",
-                a: "Even better. The cooking, the questions, the YouTube rabbit holes, the library walks &mdash; all of it goes in the timeline, exactly as it happened. You and your kid can scroll the week and see what was actually there. We don&apos;t measure. We just show what happened.",
               },
               {
                 q: "Can I track more than one kid?",
