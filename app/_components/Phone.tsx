@@ -458,7 +458,7 @@ export function PhoneScreenMemory() {
 
       {/* Footer — scroll prompt, no AI inference */}
       <div className="text-center mt-1.5 text-[8.5px] text-[#1B3722]/45 font-medium">
-        Scroll back any week.
+        Look back any week.
       </div>
     </>
   );

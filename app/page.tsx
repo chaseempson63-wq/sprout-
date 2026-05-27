@@ -311,11 +311,11 @@ export default function HomeV2() {
             <SectionEyebrow number="03" label="How it works" />
             <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl headline-lit"
                 style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
-              Three stupid simple<br />moves. The year<br />builds itself.
+              Four stupid simple<br />moves. The year<br />builds itself.
             </h2>
             <p className="mt-8 text-sprout-cream/70 max-w-xl leading-relaxed" style={{ fontSize: "clamp(17px, 1.5vw, 19px)" }}>
               For when you&apos;re already doing too much.
-              You capture; Sprout compiles. No AI making things up about your kid.
+              You capture. Sprout compiles. That&apos;s the loop.
             </p>
           </div>
 
@@ -384,14 +384,15 @@ export default function HomeV2() {
               }
               body={
                 <>
-                  <p className="font-semibold">Scroll back. It&apos;s all still here.</p>
+                  <p className="font-semibold">Look back. It&apos;s all still here.</p>
                   <p className="mt-5">
-                    You&apos;re already doing it &mdash; voice memos,
-                    photos, the bits scribbled in the back of the calendar.
-                    Notes apps give you a longer scroll. ChatGPT forgets
-                    every session, and trains on what you tell it. Sprout
-                    keeps every moment, organised by kid, and lets you
-                    scroll back through six weeks or six months.
+                    You&apos;re already doing it &mdash; scattered across
+                    your phone, your camera roll, the back of the calendar.
+                    Notes pile up but never connect. ChatGPT loses the
+                    thread between sessions &mdash; and what you typed
+                    becomes theirs, not yours. Sprout keeps every moment,
+                    organised by kid, and lets you look back through six
+                    weeks or six months.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
                     Continuity is the whole product. One kid&apos;s record,
@@ -413,7 +414,7 @@ export default function HomeV2() {
                       6 weeks · 24 captures
                     </div>
                     <p className="text-[11px] font-bold text-sprout-cream leading-tight mb-1.5">
-                      Scroll back any week.
+                      Look back any week.
                     </p>
                     <div className="grid grid-cols-6 gap-1">
                       {[0.3, 0.5, 0.2, 0.7, 0.4, 0.9].map((h, i) => (
@@ -441,17 +442,14 @@ export default function HomeV2() {
                 <>
                   <p className="font-semibold">Open it Sunday. The week&apos;s right there.</p>
                   <p className="mt-5">
-                    Voice memos, photos, structured journaling, scheduled
-                    days, deadlines met, what your kid actually did. No AI
-                    making anything up. Just the captures, organised. One
-                    timeline per kid. Charlie&apos;s grows separately to
-                    Emma&apos;s.
+                    Every capture this week, sitting in one place.
+                    Charlie&apos;s timeline stays Charlie&apos;s.
+                    Emma&apos;s stays Emma&apos;s.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    You scroll the week and the chaos turns into clarity.
-                    Your kid scrolls their own view and feels a sense of
-                    achievement. Same week, two screens, no model in the
-                    middle.
+                    Open the week. Chaos turns into clarity. The kid
+                    opens theirs and sees what they actually built.
+                    Same week. Two screens.
                   </p>
                   <ul className="mt-6 space-y-3">
                     {[
@@ -512,12 +510,12 @@ export default function HomeV2() {
                   <p className="font-semibold">Print the year. Hand it to whoever&apos;s asking.</p>
                   <p className="mt-5">
                     Weeks compile into monthly snapshots. Monthly snapshots
-                    compile into a year-end retrospective you can hold in
-                    your hand and hand to your kid.
+                    compile into a year-end retrospective you can hold and
+                    hand to your kid.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    Every kid you add grows their own year. The record
-                    builds itself while you&apos;re busy living.
+                    Every kid you add gets their own year. Print it,
+                    hand it over, keep it on the shelf.
                   </p>
                 </>
               }
@@ -575,7 +573,7 @@ export default function HomeV2() {
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream/65"
                 style={{ fontSize: "clamp(40px, 5.5vw, 62px)" }}>
-              ChatGPT trains on every word you tell it.
+              ChatGPT keeps every word. OpenAI owns it. Forgets you next session.
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream pt-4 headline-lit"
                 style={{ fontSize: "clamp(40px, 5.5vw, 62px)" }}>
@@ -587,8 +585,8 @@ export default function HomeV2() {
             The kid&apos;s scribble book on the kitchen counter. Library books
             stacked in the corner. The half-finished worksheet on the table.
             Hundreds of photos buried in your camera roll. The Notes app you
-            stopped scrolling. The ChatGPT chats that get used to train someone
-            else&apos;s model. None of it <em className="not-italic text-sprout-cream">remembers</em> Charlie
+            stopped opening. The ChatGPT chats OpenAI now owns and feeds to
+            their next model. None of it <em className="not-italic text-sprout-cream">remembers</em> Charlie
             from week to week. None connects this Tuesday to six weeks ago. And
             none of it stays yours.
           </p>
@@ -604,12 +602,12 @@ export default function HomeV2() {
               {
                 title: "iPhone Notes",
                 you: "Type fast. Promise to come back to it.",
-                get: "A list you scroll past. Forgotten by Friday.",
+                get: "A list you skim past. Forgotten by Friday.",
               },
               {
                 title: "ChatGPT",
                 you: "Re-explain who Charlie is. Every. Single. Time.",
-                get: "An answer that's gone next session. And every word you typed trains the next model. Yours, used for theirs.",
+                get: "An answer that's gone next session. Your words become OpenAI's — logged, owned, sold to whoever pays for the dataset.",
               },
             ].map((alt) => (
               <GlassCard key={alt.title} className="p-7 rounded-3xl" glow="sage" soft>
@@ -639,11 +637,11 @@ export default function HomeV2() {
               <div className="space-y-4 text-[#1B3722]/85" style={{ fontSize: "13.5px", lineHeight: "1.6" }}>
                 <div>
                   <div className="text-[9px] uppercase tracking-widest text-[#1B3722]/55 mb-1">What you do</div>
-                  <div>Drop in a moment. Voice memo, photo, sentence, scheduled day.</div>
+                  <div>Open. Drop in. Close. Back to the day.</div>
                 </div>
                 <div>
                   <div className="text-[9px] uppercase tracking-widest text-[#1B3722]/55 mb-1">What you get</div>
-                  <div>Every voice memo, every photo, every deadline &mdash; organised by kid, scrollable by week, month, year. Yours to keep. Theirs to see. The corps don&apos;t get a single byte.</div>
+                  <div>A continuous per-kid record. Browse any week, month, year. Yours to keep. Theirs to see. The corps don&apos;t get a single byte.</div>
                 </div>
               </div>
             </div>
