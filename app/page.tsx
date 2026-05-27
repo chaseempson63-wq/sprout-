@@ -577,7 +577,7 @@ export default function HomeV2() {
             </h2>
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream pt-4 headline-lit"
                 style={{ fontSize: "clamp(40px, 5.5vw, 62px)" }}>
-              Sprout doesn&apos;t sell. Doesn&apos;t train. Doesn&apos;t forget.
+              Sprout doesn&apos;t own, sell or forget.
             </h2>
           </div>
 
