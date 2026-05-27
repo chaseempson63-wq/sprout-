@@ -637,7 +637,7 @@ export default function HomeV2() {
               <div className="space-y-4 text-[#1B3722]/85" style={{ fontSize: "13.5px", lineHeight: "1.6" }}>
                 <div>
                   <div className="text-[9px] uppercase tracking-widest text-[#1B3722]/55 mb-1">What you do</div>
-                  <div>Open. Drop in. Close. Back to the day.</div>
+                  <div>Open. Drop in. Close. 20 seconds, then back to the day.</div>
                 </div>
                 <div>
                   <div className="text-[9px] uppercase tracking-widest text-[#1B3722]/55 mb-1">What you get</div>
