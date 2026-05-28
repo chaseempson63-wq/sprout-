@@ -7,6 +7,7 @@
 
 - Mum creators show **natural 3-5s usage** of Sprout in their content (not a hard promo) → soft CTA in the description → link in bio → their affiliate link.
 - Deal: **20% off for the buyer (first 3 months)** + **20% commission for the creator.**
+- **Zero commitment for creators (locked 2026-05-28):** no required posting cadence or quota — they share as much or as little as they want. Commission vests: if they stop promoting, they still get paid the remainder of the 12-month term on every subscriber they already referred. The only obligation is Sprout's — pay them on time. (Page states the no-commitment + vesting part; the "pay on time" obligation is internal, not on the page.)
 - Optimising trust/distribution over margin for ~3 months (priority ladder: trust + distribution → refinement → LTV).
 
 ## Positioning: "side-hustle mama" (the sharp bit)

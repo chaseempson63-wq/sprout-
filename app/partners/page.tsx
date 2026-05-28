@@ -50,6 +50,9 @@ const MOVEMENT = [
   "And you get paid properly for carrying it — a full year per family, not a one-off. The people doing the work should be the ones who get rewarded for it.",
 ];
 
+const NO_STRINGS =
+  "There's no commitment and nothing to keep up — no set number of posts a week, no quotas. Share it as much or as little as you like; what you put in is what you get back. And if you bring 50 families in and then stop posting tomorrow, you still get paid on every one of them, every month, right to the end of their 12 months. Once they're yours, they're yours.";
+
 export default function PartnersPage() {
   return (
     <main className="text-sprout-cream min-h-screen overflow-x-hidden relative">
@@ -242,6 +245,15 @@ export default function PartnersPage() {
           </div>
 
           <EmailApply email={CONTACT_EMAIL} />
+
+          <div className="mt-6 rounded-2xl border border-sprout-cream/15 bg-sprout-cream/5 p-6">
+            <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-3">
+              No strings
+            </div>
+            <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
+              {NO_STRINGS}
+            </p>
+          </div>
 
           <p className="mt-8 text-center text-sprout-cream/55 text-sm">&mdash; Chase</p>
         </div>
