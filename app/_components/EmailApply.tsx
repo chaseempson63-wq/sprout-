@@ -3,16 +3,16 @@
 import { useState } from "react";
 import { Copy, Check, Mail } from "lucide-react";
 
-/* The copy-paste note a creator sends to apply. Kept deliberately short —
+/* The copy-paste note a creator sends to apply. Kept deliberately short:
    four questions, no friction. Plain string so apostrophes are fine here. */
 const TEMPLATE = `Hi Chase,
 
 I'd love to join the Sprout partner program.
 
-– Who I am:
-– Where I post (platform + handle):
-– My audience size:
-– What got me interested:
+- Who I am:
+- Where I post (platform + handle):
+- My audience size:
+- What got me interested:
 
 Cheers,`;
 
@@ -25,7 +25,7 @@ export function EmailApply({ email }: { email: string }) {
       setCopied(true);
       setTimeout(() => setCopied(false), 2200);
     } catch {
-      // Clipboard blocked — the template is on screen to copy by hand.
+      // Clipboard blocked. The template is on screen to copy by hand.
     }
   };
 

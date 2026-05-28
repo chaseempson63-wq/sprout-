@@ -6,7 +6,7 @@
 ## The model (locked-ish)
 
 - Mum creators show **natural 3-5s usage** of Sprout in their content (not a hard promo) → soft CTA in the description → link in bio → their affiliate link.
-- Deal: **20% off for the buyer (first 3 months)** + **20% commission for the creator.**
+- Deal: **20% off for the buyer for their whole first 12 months** + **20% commission for the creator (recurring 12 months).** (Buyer discount changed from 3mo → full 12mo on 2026-05-28: it doubles as the creator's marketing anchor — "use my link, 20% off the whole year.")
 - **Zero commitment for creators (locked 2026-05-28):** no required posting cadence or quota — they share as much or as little as they want. Commission vests: if they stop promoting, they still get paid the remainder of the 12-month term on every subscriber they already referred. The only obligation is Sprout's — pay them on time. (Page states the no-commitment + vesting part; the "pay on time" obligation is internal, not on the page.)
 - Optimising trust/distribution over margin for ~3 months (priority ladder: trust + distribution → refinement → LTV).
 
@@ -25,7 +25,7 @@ Homeschool mums / homesteaders **already** push affiliate links (Amazon books, g
 
 ## Open decisions (need locking)
 
-1. **Commission duration — DECIDED 2026-05-28: 20% recurring for 12 months** per referred subscriber (not lifetime, not 3mo-capped). The "20% off" applies to the buyer for their first 3 months; the creator earns 20% of every payment that subscriber makes for a full 12 months. That recurring-for-a-year structure is what makes the "side hustle that keeps paying" pitch honest vs a one-off Amazon link. (Recruitment page now live at `/partners`, linked from the footer.)
+1. **Commission duration — DECIDED 2026-05-28: 20% recurring for 12 months** per referred subscriber (not lifetime, not 3mo-capped). Both sides run 12 months: the buyer gets 20% off their whole first 12 months, and the creator earns 20% of every payment that subscriber makes for a full 12 months. That recurring-for-a-year structure is what makes the "side hustle that keeps paying" pitch honest vs a one-off Amazon link. (Recruitment page now live at `/partners`, linked from the footer.)
 2. **Tool pick.** Start PromoteKit (free) to prove it; or Tolt if the branded mum-dashboard matters for recruiting early (it probably does — it's part of the "passive income machine" feeling).
 3. **Economics / expectation-setting** (below) — pitch "compounds over months," not "couple grand fast."
 4. **Disclosure.** Creators must disclose affiliate/#ad (AU ACCC / general). Bake it into the creator guidelines so the program doesn't create compliance headaches.
@@ -33,7 +33,7 @@ Homeschool mums / homesteaders **already** push affiliate links (Amazon books, g
 
 ## Economics reality (so creators aren't over-promised)
 
-At $29/mo, 20% commission ≈ **~$5/mo per active referred subscriber** (≈$4.64 during the 3-month discount window, ~$5.80 after).
+At $29/mo, 20% commission ≈ **~$5/mo per active referred subscriber** (≈$4.64/mo at the 20%-off price, held across the full 12-month term).
 
 | Active retained referrals | Creator/mo (recurring) |
 |---|---|
