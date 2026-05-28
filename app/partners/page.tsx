@@ -44,9 +44,9 @@ const STEPS = [
 ];
 
 const MOVEMENT = [
-  "Homeschool mums are a tight-knit community, and we're here to grow together. Not with ad budgets and strangers. One mum telling another, the way it should grow.",
-  "Every family you bring in is one more documenting the small things that add up. That's the movement. Growing the next generation. Raising humans, not students. One week at a time.",
-  "You're part of building this. And you get paid properly for it, a full year per family. The people doing the work should be the ones who get rewarded for it.",
+  "We see you. We have the most tight-knit community on this edge of the internet. We're growing together. We're getting stronger together. We're mums growing with other mums.",
+  "Every family you bring on means more of us getting stronger by the day, documenting the small things that add up. This is the movement. Sprout is here for the people. Sprout is here for the parents growing the next generation and raising humans, not students, one week at a time.",
+  "You are a part of this. You're not only compensated for it, you're giving your audience, and giving back to the community, something it's been craving for a long time. And we all get rewarded for it, and grow together as a community.",
 ];
 
 const NO_STRINGS =
@@ -204,7 +204,7 @@ export default function PartnersPage() {
             className="font-bold tracking-[-0.03em] leading-[1.04] text-sprout-cream headline-lit mb-8"
             style={{ fontSize: "clamp(32px, 4.8vw, 56px)" }}
           >
-            For the people.
+            For the homeschool mums.
           </h2>
           <div className="space-y-6">
             {MOVEMENT.map((para, i) => (
