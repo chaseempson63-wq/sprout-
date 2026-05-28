@@ -110,7 +110,7 @@ export default function HomeV2() {
             <div className="mt-14 flex justify-center">
               <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                Voiced by real homeschool mums
+                Voiced by real homeschool moms
               </div>
             </div>
 
@@ -265,7 +265,7 @@ export default function HomeV2() {
             <div className="md:col-span-7">
               <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "clamp(18px, 1.8vw, 22px)" }}>
                 You baked. You walked to the library. She wouldn&apos;t stop asking
-                about volcanoes. You answered the phone twice during her maths.
+                about volcanoes. You answered the phone twice during her math.
                 You think she got through one page. Maybe two. The washing&apos;s
                 still on the line.
               </p>
@@ -280,7 +280,7 @@ export default function HomeV2() {
                   ✱ Charlie · 4:17pm
                 </div>
                 <p className="text-sprout-cream leading-relaxed italic" style={{ fontSize: "clamp(15px, 1.4vw, 17px)" }}>
-                  &ldquo;Mum, why does the volcano have fire inside?&rdquo;
+                  &ldquo;Mom, why does the volcano have fire inside?&rdquo;
                 </p>
                 <div className="mt-6 text-xs text-sprout-cream/65 uppercase tracking-widest">
                   Voice memo · Tuesday
@@ -868,7 +868,7 @@ export default function HomeV2() {
             <div className="mt-12 md:mt-16 flex justify-center">
               <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                Voiced by real homeschool mums
+                Voiced by real homeschool moms
               </div>
             </div>
 

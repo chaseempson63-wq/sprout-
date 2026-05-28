@@ -6,10 +6,10 @@ import { EmailApply } from "../_components/EmailApply";
 
 /*
   Sprout partner / affiliate recruitment page  (/partners)
-  Audience: homeschool + homesteader mums who already share what they use
+  Audience: homeschool + homesteader moms who already share what they use
   and have an audience that trusts them.
   Frame: this is carrying the flag, not an affiliate hustle. For the people.
-  Grown mum to mum. Money is honest and generous (20% recurring for 12
+  Grown mom to mom. Money is honest and generous (20% recurring for 12
   months, buyer gets 20% off the whole first year) but the stand carries
   the page, not the payout. App screenshots get added once the MVP exists.
   Style: founder voice, AU/NZ, no exclamation marks, NO em dashes.
@@ -20,9 +20,9 @@ import { EmailApply } from "../_components/EmailApply";
 const CONTACT_EMAIL = "chaseempson63@gmail.com";
 
 export const metadata: Metadata = {
-  title: "Earn with Sprout: bring mums in, get paid for a year",
+  title: "Earn with Sprout: bring moms in, get paid for a year",
   description:
-    "You're already the mum others ask. Share Sprout: your followers get 20% off for their whole first year, and you keep 20% of every subscription for 12 months. For the people. Raising humans, not students.",
+    "You're already the mom others ask. Share Sprout: your followers get 20% off for their whole first year, and you keep 20% of every subscription for 12 months. For the people. Raising humans, not students.",
 };
 
 const STEPS = [
@@ -44,7 +44,7 @@ const STEPS = [
 ];
 
 const MOVEMENT = [
-  "We see you. We have the most tight-knit community on this edge of the internet. We're growing together. We're getting stronger together. We're mums growing with other mums.",
+  "We see you. We have the most tight-knit community on this edge of the internet. We're growing together. We're getting stronger together. We're moms growing with other moms.",
   "Every family you bring on means more of us getting stronger by the day, documenting the small things that add up. This is the movement. Sprout is here for the people. Sprout is here for the parents growing the next generation and raising humans, not students, one week at a time.",
   "You are a part of this. You're not only compensated for it, you're giving your audience, and giving back to the community, something it's been craving for a long time. And we all get rewarded for it, and grow together as a community.",
 ];
@@ -87,7 +87,7 @@ export default function PartnersPage() {
         <div className="relative max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.25em] font-semibold mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-            For the mums other mums already ask
+            For the moms other moms already ask
           </div>
 
           <h1
@@ -152,12 +152,12 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* Quick maths, the price anchor they can headcount against */}
+      {/* Quick math, the price anchor they can headcount against */}
       <section className="relative px-6 md:px-12 py-16 md:py-24">
         <div className="relative max-w-4xl mx-auto">
           <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-8 flex items-center gap-3">
             <span className="block w-8 h-px bg-sprout-cream/30" />
-            Do the maths on your own audience
+            Do the math on your own audience
           </div>
 
           <p
@@ -192,7 +192,7 @@ export default function PartnersPage() {
             style={{ fontSize: "clamp(16px, 1.5vw, 18px)" }}
           >
             Recurring, and it builds as more of your people come across. You already know how many
-            mums in your world have been quietly drowning. That&apos;s your starting line.
+            moms in your world have been quietly drowning. That&apos;s your starting line.
           </p>
         </div>
       </section>
@@ -204,7 +204,7 @@ export default function PartnersPage() {
             className="font-bold tracking-[-0.03em] leading-[1.04] text-sprout-cream headline-lit mb-8"
             style={{ fontSize: "clamp(32px, 4.8vw, 56px)" }}
           >
-            For the homeschool mums.
+            For the homeschool moms.
           </h2>
           <div className="space-y-6">
             {MOVEMENT.map((para, i) => (
