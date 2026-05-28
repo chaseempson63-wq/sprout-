@@ -24,7 +24,7 @@ Homeschool mums / homesteaders **already** push affiliate links (Amazon books, g
 
 ## Open decisions (need locking)
 
-1. **Commission duration — load-bearing.** Recurring-lifetime vs 12-month vs 3-month-capped. **Recommendation: recurring for the life of the subscription** (min 12mo). This is the difference between a real compounding "passive income" pitch and a treadmill. The "20% off / first 3 months" window applies to the BUYER discount — the creator fee should NOT be capped at 3 months if the side-hustle pitch is to be honest.
+1. **Commission duration — DECIDED 2026-05-28: 20% recurring for 12 months** per referred subscriber (not lifetime, not 3mo-capped). The "20% off" applies to the buyer for their first 3 months; the creator earns 20% of every payment that subscriber makes for a full 12 months. That recurring-for-a-year structure is what makes the "side hustle that keeps paying" pitch honest vs a one-off Amazon link. (Recruitment page now live at `/partners`, linked from the footer.)
 2. **Tool pick.** Start PromoteKit (free) to prove it; or Tolt if the branded mum-dashboard matters for recruiting early (it probably does — it's part of the "passive income machine" feeling).
 3. **Economics / expectation-setting** (below) — pitch "compounds over months," not "couple grand fast."
 4. **Disclosure.** Creators must disclose affiliate/#ad (AU ACCC / general). Bake it into the creator guidelines so the program doesn't create compliance headaches.
