@@ -103,14 +103,14 @@ export default function PartnersPage() {
             className="mt-8 text-sprout-cream/85 leading-relaxed max-w-2xl"
             style={{ fontSize: "clamp(17px, 1.7vw, 21px)" }}
           >
-            You already share the books, the readers, the gear you use with your kids.
-            Share Sprout and you keep{" "}
+            You already share what works for your own kids.
+            Sprout works the same way, except you keep{" "}
             <strong className="text-sprout-cream font-bold">
               20% of every subscription you bring in, every month, for a full 12 months
             </strong>
             . Your followers get{" "}
             <strong className="text-sprout-cream font-bold">20% off for their whole first year</strong>.
-            Most affiliate links pay you once. This one pays for a year.
+            Most affiliate links pay you once. This one keeps paying.
           </p>
 
           <div className="mt-10">
@@ -188,11 +188,11 @@ export default function PartnersPage() {
           </div>
 
           <p
-            className="mt-10 text-sprout-cream/75 leading-relaxed max-w-2xl"
+            className="mt-10 text-sprout-cream font-semibold leading-relaxed max-w-2xl"
             style={{ fontSize: "clamp(16px, 1.5vw, 18px)" }}
           >
-            Recurring, and it builds as more of your people come across. You already know how many
-            moms in your world have been quietly drowning. That&apos;s your starting line.
+            If you&apos;ve been looking for the next side hustle that actually serves the people and is stupid simple to be a part of, you&apos;ve found the gem.
+            Become a part of the team and start growing with Sprout.
           </p>
         </div>
       </section>
