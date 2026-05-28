@@ -87,7 +87,7 @@ export default function PartnersPage() {
         <div className="relative max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.25em] font-semibold mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-            For the moms other moms already ask
+            For the Side Hustle Mammas
           </div>
 
           <h1
