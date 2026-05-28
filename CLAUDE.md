@@ -26,9 +26,9 @@ Next.js 16 (App Router, Turbopack) · React 19 · TypeScript · Tailwind v4 · s
 Three moods, one brand:
 - **Marketing/landing**: light + confident (white, deep forest green, lime accents, bold sans)
 - **App interior**: dark + immersive + glassmorphic (deep almost-black, frosted cards, lime CTAs)
-- **Timeline / weekly view artifact**: light + warm + shareable (cream/white, forest green headers, designed for screenshot + print). Both parent-side and kid-side render with the same warm shareable aesthetic — the kid-facing view is the same artifact, not a dumbed-down version.
+- **Timeline / weekly view**: light + warm + shareable (cream/white, forest green headers, designed for screenshot + print). Both parent-side and kid-side render with the same warm shareable aesthetic — the kid-facing view is the same thing, not a dumbed-down version.
 
-Voice: direct & confident. Linear/Vercel register. AU/NZ English. No exclamation marks. No emojis-as-decoration. **One well-placed swear is now in-bounds** when it mirrors the audience's actual register — "shit" / "eff" are verified-corpus anchors (Jenna Galley, Mum Central AU). Stronger swears ("fuck") need an attributed mum-verbatim before they go in Sprout's voice — don't write them on training-data assumption alone. Never gratuitous. Never in CTA microcopy. Warmth comes from what we say, not how excitedly we say it.
+Voice: direct & confident. Linear/Vercel register. AU/NZ English. No exclamation marks. No emojis-as-decoration. **One well-placed swear is now in-bounds** when it mirrors the audience's actual register — "shit" / "eff" are verified-corpus anchors (Jenna Galley, Mum Central AU). Stronger swears ("fuck") need an attributed mum-verbatim before they go in Sprout's voice — don't write them on training-data assumption alone. Never gratuitous. Never in CTA microcopy. Warmth comes from what we say, not how excitedly we say it. **Sprout reads as a movement, not a corporate product** — warm, plain, rallying. The word "artifact" is retired (2026-05-28, founder's call): say "the timeline," "your week," "what they built," "the thing."
 
 ## Working agreement
 
@@ -40,41 +40,44 @@ Push back on scope creep, premature feature work, anti-shareability monetization
 
 ---
 
-## Current state (snapshot · 2026-05-23)
+## Current state (snapshot · 2026-05-28)
 
 A clean save-state for future sessions. Read this first before assuming what's been built or decided.
 
 ### Operating context (where Sprout actually is right now)
 
-- **Acquisition motion (as of 2026-05-23 sprint)**: dual track. (1) Broad distribution via 3x/day TikTok + 3x/day Instagram + Facebook warming to drive a 1,000-person waitlist in 30 days. (2) Warm parent conversations — showing the landing page to homeschool parents Chase has access to and capturing verbal value-feedback (NOT for site iteration; for validation that the wound and the artifact-promise actually land). The earlier "deferred cold distribution" posture is superseded by this sprint — Chase has decided to test broad distribution and the founder-non-member problem in the same 30-day window.
+- **Acquisition motion (updated 2026-05-28)**: a 5-lane distribution stack, all pointing at the waitlist. (1) **Sprout TikTok + Instagram** — organic ~3x/day, niche memes swung Sprout's way + typographic carousels. (2) **Facebook Page** — live, posting, ramping daily. (3) **Personal-account value funnel (Chase + his girlfriend)** — both inside the homeschool groups; gf posts one high-value giveaway on the week's hot topic, conversation moves to DMs, value delivered first, waitlist link as soft follow-up. (4) **UGC affiliate (planned, blocked on the MVP existing)** — find mums who already believe, app shown 3-5s of natural use (not a pitch), soft CTA in the description, their affiliate link = 20% off (first 3mo only) + 20% creator fee; zero upfront promo spend. (5) **YouTube (planned)** — AI homeschool content with Sprout as the channel sponsor. Warm parent conversations run alongside for value-validation (not site iteration). gf is now a genuine collaborator on the distribution side. The earlier "dual track" framing is folded into this fuller stack.
 - **Landing page job (updated 2026-05-23)**: dual purpose. (1) Concept-explainer for warm contacts ("oh that's the thing"). (2) Waitlist conversion surface for cold TikTok/IG/FB traffic arriving from the 30-day content sprint. Polish should match those two jobs — clear value prop, frictionless waitlist signup — and not exceed them.
-- **Pricing status**: **exploratory placeholder, not committed.** The $29/mo number in [`docs/MASTER.md`](docs/MASTER.md) is an anchor for thinking, not a decision. Real pricing gets discovered after warm contacts have felt the artifact land — ask "what would you pay?" then, not now. Earlier comparisons to Tinybeans / Day One were treating a placeholder as a decision; ignore that framing.
+- **Pricing status**: **exploratory placeholder, not committed.** The $29/mo number in [`docs/MASTER.md`](docs/MASTER.md) is an anchor for thinking, not a decision. Real pricing gets discovered after warm contacts have felt the thing land — ask "what would you pay?" then, not now. Earlier comparisons to Tinybeans / Day One were treating a placeholder as a decision; ignore that framing.
 - **Product framing (updated 2026-05-24)**: stupid simple. One pain (parent can't see what the week added up to + the kid can't see their own work building over time). One output (a navigable per-kid timeline + weekly view, both parent and kid can see). **Fitness-app for homeschool documentation** — Strava / MyFitnessPal / Apple Health pattern: structured logging in, visible accumulation out, no AI synthesis. Not a SaaS platform thesis. Not a curriculum. Not a journaling app. Not a planner — though scheduling, deadlines, and calendar items live inside it. The structural differentiator vs every existing tracker/journal: Sprout doesn't sell or train AI on your kid's data. Privacy is the moat.
 
 ### Shipped
 
-- **Landing page** at `hisprout.app` (registered via Cloudflare 2026-05-27, primary on Vercel; deploys auto-trigger from `main` push via Vercel GitHub integration). Voice/copy locked, fake stats removed, 5-star badge removed, "homeschool families" labels aligned across hero/footer/CTA, multi-kid pricing line removed from hero, Step 02 + Step 04 floating cards repositioned off cream phone screen.
+- **Landing page** at `hisprout.app` (registered via Cloudflare 2026-05-27, primary on Vercel; deploys auto-trigger from `main` push via Vercel GitHub integration). Voice/copy locked, fake stats removed, 5-star badge removed, "homeschool families" labels aligned across hero/footer/CTA, multi-kid pricing line removed from hero, Step 02 + Step 04 floating cards repositioned off cream phone screen. **Status (2026-05-28): Chase considers the page good enough for both jobs — do not reopen copy passes unprompted.**
+- **Mascot** — shipped and live on the site and across marketing. Not a pending item.
+- **Distribution accounts live** — Sprout TikTok + Instagram (active, posting; organic follows from reputable people in the niche, though IG isn't pushing posts in-feed yet), Facebook Page (posting, ramping daily), plus Chase's + his girlfriend's personal accounts inside homeschool FB groups. gf is a genuine collaborator on distribution.
 - **Brand voice rules** documented in [`docs/MASTER.md`](docs/MASTER.md) and [`docs/BRAND.md`](docs/BRAND.md).
 - **`sprout-truth` skill** (lives in `~/.claude/skills/sprout-truth/`, not committed to repo):
   - `quote-bank.md` — ~25 verbatim quotes, ~13 cross-verified AU + ~5 cross-verified US. Anchors: Charlene Hess (Hess UnAcademy, US), Jenna Galley (Mum Central, AU), Louise (School Can't Australia, NSW), Sara (Australian Homeschool Stories Podcast, QLD). Gaps: Category 3 (scattered records), Category 4 (registration-officer dread), Category 8 (post-launch reaction) all empty.
   - `audience-truths.md` — primary persona ("the anxious-but-committed mum"), niche segments, channel truths, research-pending list.
   - `language-inventory.md` — avoid/use vocab, SaaS-marketing register vs forum vernacular, AU/NZ register markers.
   - `voice-and-positioning.md` — five voice rules with reasoning, positioning frame, structural responses to strongest critiques.
-  - `playbooks/` — facebook-static-post, facebook-group-engagement, instagram-caption, email, landing-copy.
+  - `cult-mechanics.md` — the stand / manifesto vocabulary; the operational filter drafts run through.
+  - `playbooks/` — facebook-static-post, facebook-group-engagement, instagram-caption, instagram-carousel, email, landing-copy.
 
-### Not shipped (and not on the critical path right now)
+### Not shipped (status updated 2026-05-28)
 
-- **The product itself.** Codebase is landing-page-only. No auth, no Supabase, no Stripe, no AI pipeline, no daily input UI, no report generation, no email delivery, no app interior. Stack in `package.json` is Next.js 16 + Tailwind + shadcn only.
-- **Customer conversations.** Zero mum interviews conducted. Zero concierge MVP deliveries.
-- **Distribution presence.** No FB group access (auth-walled, Chase is non-member). No IG account. No Substack. No podcast guesting.
+- **The product (thin MVP now in-flight).** Codebase is still landing-page-only (some Supabase scaffolding present, no working app interior yet). **Shift from the earlier posture:** a thin MVP is now ON the near-term path (~1 week target) — explicitly to unblock the UGC lane (creators need something real to film) and to give warm contacts something to actually use. Distribution-driven, not polish. The fence: ship a usable thin slice, don't gold-plate it.
+- **Customer conversations (in motion, no longer zero).** 20+ parents DM'd, 10+ shown the site. Reactions warm but surface-level ("omg yes, love seeing someone help the community"; the new-ideas crowd responds well). No "yes I'd pay" yet — deliberate: Chase gives value first, doesn't chase the sale. No deep interviews or paid commitments yet.
+- **Founding members / revenue.** None yet. Stretch goal (~10 at $29/mo) unchanged; not the focus.
 
 ### Locked decisions (do not relitigate without strong evidence)
 
 - **Audience**: AU/NZ homeschool families. Mums dominant; on-page label is "families" for inclusivity but voice writes to the mum.
 - **Wound**: parental anxiety ("am I screwing my kid up?"), never curriculum.
-- **Mechanic (updated 2026-05-24)**: voice/photo/text inputs + calendar/scheduled-activities/deadlines across the week → app auto-compiles into a per-kid timeline + weekly view → both parent and kid can see it accumulate. **No AI synthesis in the app loop.** No data sold, shared, or trained on. Fitness-app pattern (Strava / MyFitnessPal / Apple Health) applied to homeschool documentation. The "Sunday-night AI-generated artifact" mechanic from earlier spec is retired — the artifact IS the timeline, accessible any time, naturally surfaced as a weekly view.
+- **Mechanic (updated 2026-05-24)**: voice/photo/text inputs + calendar/scheduled-activities/deadlines across the week → app auto-compiles into a per-kid timeline + weekly view → both parent and kid can see it accumulate. **No AI synthesis in the app loop.** No data sold, shared, or trained on. Fitness-app pattern (Strava / MyFitnessPal / Apple Health) applied to homeschool documentation. The earlier "Sunday-night AI-generated report" mechanic is retired — the weekly view IS the timeline, accessible any time, naturally surfaced as a weekly view.
 - **Pricing structure** (locked): flat per family, not per kid. 7-day trial. First weekly report unlocked + watermarked + yours-forever even if user cancels. **The specific price number is NOT locked** — see Operating context above.
-- **Voice**: AU/NZ register, no exclamation marks, no SaaS jargon, no emojis-as-decoration, founder voice / lowercase energy. **One well-placed swear permitted** (anchored to verified-corpus "shit"/"eff" — Jenna Galley, Mum Central AU); stronger swears need attributed mum-verbatim before use in Sprout's voice.
+- **Voice**: AU/NZ register, no exclamation marks, no SaaS jargon, no emojis-as-decoration, founder voice / lowercase energy. **One well-placed swear permitted** (anchored to verified-corpus "shit"/"eff" — Jenna Galley, Mum Central AU); stronger swears need attributed mum-verbatim before use in Sprout's voice. **"Artifact" is retired vocab (2026-05-28, founder's call):** Sprout is a movement, not a formal/corporate product — never use "artifact" in copy or internal framing; say "the timeline," "your week," "what they built," "the thing." Register runs warmer/plainer/more rallying, less SaaS-formal.
 - **Scope fence (updated 2026-05-24)**: no curriculum, no lesson plans, no compliance positioning (rego-officer use is latent benefit, not headline), no streaks/gamification, no native mobile app (web responsive), no community features, no AI synthesis in the app loop, no data sold or shared or trained on. **Calendar, deadlines, scheduled activities, and a kid-facing visual view are IN scope** — accessed from the parent's session for now (separate kid logins TBD, not blocked).
 - **12-month north star**: 100 paying users.
 
@@ -116,30 +119,36 @@ The next 30 days of validation decide whether this is a 7/10 (5 concierge mums s
 
 **Post-launch goals (after app is live and Chase emails the waitlist):** 500 downloads, 25% convert to $29/mo plan. After that, every $ goes to ads — aggressive distribution scaling and properly establishing the biz.
 
+**Progress (as of 2026-05-28, ~day 5-6):** 4 waitlist signups · 14 posts shipped (reach rough — IG not pushing in-feed yet despite organic follows; algos still learning) · 20+ parents DM'd (throttled to avoid fresh-account flags) · 10+ shown the site. Early-and-learning, not a scoreboard — the Monday routine handles accountability.
+
 **The weekly work** (held accountable via the Monday check-in routine — see Routines reference below):
 
-1. **Content cadence**: 3x/day TikTok + 3x/day Instagram. 42 posts/week total.
-2. **Facebook warming**: joining homeschool groups, posting, commenting, building genuine presence (not extraction outreach).
-3. **Parent conversations**: showing the landing page to real homeschool parents in Chase's network. Capturing what they actually SAY about it — quotes, not vibes. This is value-validation, not site iteration.
+1. **Sprout TikTok + IG**: organic posting (niche memes swung Sprout's way + typographic carousels), pointing at the waitlist. Volume ramping as the accounts warm; links/DMs throttled to avoid fresh-account flags.
+2. **Facebook — value-drop, not daily grind (refined 2026-05-28).** NOT grinding daily group activity. Textbook play: one high-value post per week on whatever the groups are stuck on, delivered via Chase's + gf's personal accounts, then move on. Quality over quantity. Supersedes the earlier "build genuine daily presence" framing.
+3. **Parent conversations**: showing the site to real homeschool parents, capturing what they actually SAY — quotes, not vibes. Value-first, not chasing the sale.
+4. **UGC affiliate (once the MVP exists)**: mums who already believe → natural 3-5s app use in their videos → affiliate link (20% off first 3mo + 20% creator fee). No upfront spend.
+5. **YouTube (planned)**: AI homeschool content, Sprout as the channel sponsor.
 
-**The binding constraint** is not landing-page polish or product-code building. It is: posts shipped, parents shown the site, waitlist count climbing.
+**Priority ladder (Chase's stated order):** trust + distribution → refinement → LTV. Margins don't matter for the first ~3 months — the discount/fee generosity is deliberate; get people using it, optimise the economics later.
+
+**The binding constraint** is not landing-page polish or product-code-beyond-the-thin-MVP. It is: posts shipped, parents shown the site, waitlist count climbing.
 
 **Monday check-in routine**: `trig_01LW9mZkr44UfMEWq9Qd1APf` — fires every Monday 9am NZST with a structured accountability report (pro-rata targets, self-report checklist, honest flags, one-thing-this-week). Disable around 2026-06-22 when the sprint ends, or extend if Chase keeps scaling. URL: https://claude.ai/code/routines/trig_01LW9mZkr44UfMEWq9Qd1APf
 
-**The earlier concierge-MVP-with-5-families plan is superseded** by this sprint. The validation motion has shifted from "5 mums experience a manual PDF artifact for 4 weeks" to "1,000 waitlist signups + verbal value-feedback from warm parent conversations + post-launch conversion data." Different bet, deliberately taken.
+**The earlier concierge-MVP-with-5-families plan is superseded** by this sprint. The validation motion has shifted from "5 mums experience a manual PDF for 4 weeks" to "1,000 waitlist signups + verbal value-feedback from warm parent conversations + post-launch conversion data." Different bet, deliberately taken.
 
 ### What NOT to do next (procrastination-as-progress patterns to flag)
 
-- More landing page copy passes beyond what the dual job requires (warm-contact concept-explanation + cold-traffic waitlist conversion)
-- More brand polish / more glassmorphism tuning
-- Building any product code (auth, Supabase, AI pipeline, etc.) before the 30-day sprint validates that there's a waitlist worth building for
-- More quote bank mining
-- More research skill building
-- Domain selection / waiting on Chase's font preference
-- Cold extraction DMs masquerading as engagement (Facebook warming = genuine group participation; if it feels like spam, it is)
-- Anything that lets Chase do visible craftwork in CC instead of (a) shipping 42 posts/week, (b) showing the site to real parents, (c) growing the waitlist
+- More landing page copy passes — Chase considers the page good enough for both jobs. Don't reopen it unprompted.
+- More brand polish / more glassmorphism tuning.
+- **Gold-plating the MVP.** A thin MVP is now sanctioned (it unblocks UGC) — but ship a usable slice; don't disappear into building the full app interior before the waitlist + UGC motion prove out.
+- More quote bank mining / research-skill building beyond what a live content task needs.
+- Cold extraction DMs masquerading as engagement — the FB play is one genuine high-value post per week, not spammy outreach. If it feels like spam, it is.
+- Anything that lets Chase do visible craftwork in CC instead of (a) shipping content, (b) showing the site to real parents, (c) growing the waitlist, (d) shipping the thin MVP.
 
-All of the above are downstream of the 30-day sprint. None of them get Chase to 1,000 waitlist signups or a felt-artifact moment with a real parent.
+**Note (2026-05-28):** the earlier blanket "don't build any product code" line is relaxed — a thin MVP is now on the critical path *because* it unblocks distribution (UGC). Spirit unchanged: don't build product as procrastination; build only the slice the distribution motion needs.
+
+All of the above are downstream of the 30-day sprint. None of them get Chase to 1,000 waitlist signups or a real parent feeling the thing land.
 
 **Note on content generation in CC**: content drafts (FB posts, IG captions, video hooks, emails) are no longer flagged as procrastination — they're directly upstream of the 42-posts/week target. Help when asked; help well. The `sprout-truth` skill is the source of truth for voice.
 
@@ -148,4 +157,4 @@ All of the above are downstream of the 30-day sprint. None of them get Chase to 
 Items deliberately noted and skipped during this session — out of scope for copy-only work, queued for whenever real photography / illustration enters the picture:
 
 - **Photo or illustration of parent + kid + printed report on a kitchen table** — the highest-leverage way to land the shared-pride beat. The page currently carries this through the Friday-afternoon scene + Feature 3 bullet + FAQ #4 (verbal/textual), and that's enough — but a real visual would do more than another paragraph could. Surfaced 2026-05-24 when proposing a third narrative scene; explicitly chose visual-future over copy-now.
-- **Real human imagery generally** — the page is 100% SVG / glassmorphism / typography. No actual humans, no actual kids, no actual artifacts in real environments. A future visual pass could selectively introduce one or two on-brand photographs without breaking the design system.
+- **Real human imagery generally** — the page is 100% SVG / glassmorphism / typography. No actual humans, no actual kids, no actual printouts or timelines in real environments. A future visual pass could selectively introduce one or two on-brand photographs without breaking the design system.

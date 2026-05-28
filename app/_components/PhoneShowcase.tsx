@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 /* ─────────────────────────────────────────────────────────────────────
    PhoneShowcase
    Mobile: horizontal scroll-snap row that loads centered on the middle
-   phone (Report/artifact view), with peeks of phone 1 and phone 3
+   phone (Report/timeline view), with peeks of phone 1 and phone 3
    on either side. Apple-style pagination dots below; active dot
    tracks the currently-snapped phone via IntersectionObserver.
    Desktop (md+): falls back to a centered flex-wrap row, dots hidden.
