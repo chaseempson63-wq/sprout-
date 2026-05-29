@@ -16,7 +16,7 @@ import { SproutMascotIcon } from "./SproutMascotIcon";
 /* ─────────────────────────────────────────────────────────────────────
    Phone mockups — single cream phone surface. Mascot top-left, w-7 h-7.
 
-   Card treatment per Chase's brief (2026-05-24):
+   Card treatment per the brief (2026-05-24):
    - Today: chip cards, This-week summary, Recent capture cards →
      dark-green cards with cream content (mirrors hero capsule on
      Week/Year for visual continuity).

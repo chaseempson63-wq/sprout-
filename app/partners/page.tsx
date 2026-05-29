@@ -17,7 +17,7 @@ import { EmailApply } from "../_components/EmailApply";
 
 // Single source of truth for the contact address. Swap to a branded inbox
 // (e.g. partners@hisprout.app) here when one exists.
-const CONTACT_EMAIL = "chaseempson63@gmail.com";
+const CONTACT_EMAIL = "sprout.humanintelligence@gmail.com";
 
 export const metadata: Metadata = {
   title: "Earn with Sprout: bring moms in, get paid for a year",
@@ -292,7 +292,7 @@ export default function PartnersPage() {
               className="mt-6 text-sprout-cream/75 leading-relaxed max-w-xl mx-auto"
               style={{ fontSize: "clamp(16px, 1.5vw, 18px)" }}
             >
-              I read every note myself and reply. Tell me who you are, where you post, your
+              We read every note and reply. Tell us who you are, where you post, your
               audience size, and what got you interested.
             </p>
           </div>
@@ -308,7 +308,7 @@ export default function PartnersPage() {
             </p>
           </div>
 
-          <p className="mt-8 text-center text-sprout-cream/55 text-sm">Chase</p>
+          <p className="mt-8 text-center text-sprout-cream/55 text-sm">The Sprout team</p>
         </div>
       </section>
 

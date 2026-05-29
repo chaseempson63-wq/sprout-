@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { LegalPage, type LegalSection } from "../_components/LegalPage";
 
-const CONTACT = "chaseempson63@gmail.com";
+const CONTACT = "sprout.humanintelligence@gmail.com";
 
 export const metadata: Metadata = {
   title: "Terms of Service · Sprout",

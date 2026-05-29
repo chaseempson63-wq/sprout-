@@ -653,7 +653,7 @@ export default function HomeV2() {
       {/* ═══════════════════════════════════════════════════════════════
           PRIVACY PROMISE  (between Differentiator and Friday scene)
           Three-card explicit statement: data ownership, no selling, no
-          AI training. Chase wanted this stated plainly, not buried in FAQ.
+          AI training. stated plainly, not buried in FAQ.
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
 

@@ -5,7 +5,7 @@ import { Copy, Check, Mail } from "lucide-react";
 
 /* The copy-paste note a creator sends to apply. Kept deliberately short:
    four questions, no friction. Plain string so apostrophes are fine here. */
-const TEMPLATE = `Hi Chase,
+const TEMPLATE = `Hi Sprout team,
 
 I'd love to join the Sprout partner program.
 

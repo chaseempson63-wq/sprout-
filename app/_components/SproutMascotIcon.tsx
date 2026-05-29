@@ -16,7 +16,7 @@
    Visible depth comes from the sheen + leaf highlight overlays, which
    use `shade(BASE, ...)`, NOT from the linear gradient stops (which all
    resolve to BASE at contrast=0). The gradient defs are kept anyway —
-   they preserve the asset structure if Chase ever wants to dial contrast
+   they preserve the asset structure if we ever want to dial contrast
    back up at render time.
 
    Gradient and filter ids are namespaced `sm-*` so they can't collide
