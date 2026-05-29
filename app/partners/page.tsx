@@ -171,12 +171,12 @@ export default function PartnersPage() {
             How to plug it in
           </div>
 
-          <p
-            className="text-sprout-cream/85 leading-relaxed max-w-2xl mb-8"
-            style={{ fontSize: "clamp(17px, 1.7vw, 21px)" }}
+          <h2
+            className="font-bold tracking-[-0.02em] text-sprout-cream leading-tight max-w-2xl mb-10"
+            style={{ fontSize: "clamp(24px, 3.4vw, 36px)" }}
           >
             It fits into what you already do. No extra work, no selling.
-          </p>
+          </h2>
 
           <ul className="space-y-4 mb-10">
             {PLUG.map((item, i) => (
