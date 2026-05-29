@@ -269,9 +269,11 @@ export default function PartnersPage() {
             <SproutLogo className="w-5 h-5 text-sprout-cream" />
             <span>Sprout</span>
           </Link>
-          <Link href="/" className="text-xs uppercase tracking-[0.3em] hover:text-sprout-cream transition-colors">
-            Back to Sprout
-          </Link>
+          <div className="flex items-center gap-5 text-xs uppercase tracking-[0.3em]">
+            <Link href="/" className="hover:text-sprout-cream transition-colors">Back to Sprout</Link>
+            <Link href="/privacy" className="hover:text-sprout-cream transition-colors">Privacy</Link>
+            <Link href="/terms" className="hover:text-sprout-cream transition-colors">Terms</Link>
+          </div>
           <div className="text-xs uppercase tracking-[0.3em]">© 2026 · vol.01 · issue 26</div>
         </div>
       </footer>

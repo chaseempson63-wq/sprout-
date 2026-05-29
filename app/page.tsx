@@ -895,12 +895,11 @@ export default function HomeV2() {
             <SproutLogo className="w-5 h-5 text-sprout-cream" />
             <span>Sprout</span>
           </div>
-          <Link
-            href="/partners"
-            className="text-xs uppercase tracking-[0.3em] hover:text-sprout-cream transition-colors"
-          >
-            Earn with Sprout
-          </Link>
+          <div className="flex items-center gap-5 text-xs uppercase tracking-[0.3em]">
+            <Link href="/partners" className="hover:text-sprout-cream transition-colors">Earn with Sprout</Link>
+            <Link href="/privacy" className="hover:text-sprout-cream transition-colors">Privacy</Link>
+            <Link href="/terms" className="hover:text-sprout-cream transition-colors">Terms</Link>
+          </div>
           <div className="text-xs uppercase tracking-[0.3em]">
             For homeschool families · Made with care
           </div>
