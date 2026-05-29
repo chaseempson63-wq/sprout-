@@ -52,6 +52,17 @@ const MOVEMENT = [
 const NO_STRINGS =
   "There's no commitment and nothing to keep up. No set number of posts a week, no quotas. Share it as much or as little as you like, and what you put in is what you get back. If you bring 50 families in and then stop posting tomorrow, you still get paid on every one of them, every month, right to the end of their 12 months. Once they're yours, they're yours.";
 
+const PLUG = [
+  "Record your homeschool day like you already do. Nothing about how you film has to change.",
+  "When your kid finishes something, pull out your phone and capture it in Sprout. Snap a photo, it logs it for you and sorts the documenting and the reporting.",
+  "That's your 3 to 5 seconds of screen time. No full promo, no script, no hard sell.",
+  "Drop a soft line in your caption: tell them to DM you for your link, or send them to your link in bio. Whatever setup you run.",
+  "It keeps your brand yours. You're not pitching your audience, you're showing them something you actually use. It comes across natural, because it is.",
+];
+
+const EXAMPLE_CAPTION =
+  "Documenting our homeschool days was always the thing I'd forget to do. Now I just take a photo when [kid] finishes something and Sprout logs it and sorts the reporting for me. Honestly stupid simple. Link's in my bio if you want to try it, and you'll get 20% off. Or DM me and I'll send it over.";
+
 export default function PartnersPage() {
   return (
     <main className="text-sprout-cream min-h-screen overflow-x-hidden relative">
@@ -148,6 +159,45 @@ export default function PartnersPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How to plug it into your content */}
+      <section className="relative px-6 md:px-12 py-16 md:py-24">
+        <div className="relative max-w-3xl mx-auto">
+          <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-8 flex items-center gap-3">
+            <span className="block w-8 h-px bg-sprout-cream/30" />
+            How to plug it in
+          </div>
+
+          <p
+            className="text-sprout-cream/85 leading-relaxed max-w-2xl mb-8"
+            style={{ fontSize: "clamp(17px, 1.7vw, 21px)" }}
+          >
+            It fits into what you already do. No extra work, no selling.
+          </p>
+
+          <ul className="space-y-4 mb-10">
+            {PLUG.map((item, i) => (
+              <li
+                key={i}
+                className="text-sprout-cream/85 leading-relaxed pl-5 relative"
+                style={{ fontSize: "16px" }}
+              >
+                <span className="absolute left-0 top-2.5 w-1.5 h-1.5 rounded-full bg-sprout-cream/50" />
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          <div className="rounded-3xl bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 p-7">
+            <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-4">
+              An example caption
+            </div>
+            <p className="text-sprout-cream/90 leading-relaxed italic" style={{ fontSize: "16px" }}>
+              {EXAMPLE_CAPTION}
+            </p>
           </div>
         </div>
       </section>
