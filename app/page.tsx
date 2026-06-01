@@ -195,21 +195,6 @@ export default function HomeV2() {
               location="Verbatim · Mum Central · AU"
             />
             <VerbatimCard
-              quote="In survival mode, learning is impossible."
-              name="Louise"
-              location="Verbatim · School Can't Australia · NSW"
-            />
-            <VerbatimCard
-              quote={`I'm so afraid of my daughter being "behind"!!!`}
-              name="Amanda"
-              location="Verbatim · Not That Hard To Homeschool · US"
-            />
-            <VerbatimCard
-              quote="'Just keep trying' is slow harm, not strategy."
-              name="Louise"
-              location="Verbatim · School Can't Australia · NSW"
-            />
-            <VerbatimCard
               quote="I'm having the time of my life. Thank God I chose this."
               name="Sara"
               location="Verbatim · Australian Homeschool Stories · QLD"

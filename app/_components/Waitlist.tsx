@@ -122,15 +122,17 @@ export function Waitlist() {
             Earn with Sprout
           </p>
           <h3
-            className="font-bold text-[#1B3722] leading-tight mb-3"
+            className="font-bold text-[#1B3722] leading-tight mb-4"
             style={{ fontSize: "clamp(20px, 2vw, 24px)" }}
           >
             Share Sprout. Take a cut.
           </h3>
-          <p className="text-[#1B3722]/75 leading-relaxed text-[15px]">
-            20% off for every mom you send. 20% creator fee on every
-            month they stay. Twelve months recurring, no upfront spend.
-          </p>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1B3722]/8 border border-[#1B3722]/15 self-start">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#1B3722] animate-pulse" />
+            <span className="text-[10px] uppercase tracking-[0.22em] text-[#1B3722]/85 font-bold">
+              Closing soon · first 10 creator spots
+            </span>
+          </div>
           <div className="flex-1" />
           <Link
             href="/partners"
