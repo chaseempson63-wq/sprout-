@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Plus, ArrowRight, Check } from "lucide-react";
-import { SproutLogo, GlassCard, GLASS_CARD_SOFT, FloatingGlass } from "./_components/Glass";
+import { SproutLogo, GlassCard, FloatingGlass } from "./_components/Glass";
 import {
   PhoneFrame,
   PhoneScreenDropIn,
@@ -54,7 +54,7 @@ export default function HomeV2() {
           <div className="absolute bottom-1/3 -left-32 w-[400px] h-[400px] rounded-full bg-[#76A77A]/10 blur-3xl animate-drift-2" />
         </div>
 
-        <nav className="relative z-10 flex items-center justify-between px-6 md:px-12 py-6">
+        <nav className="relative z-10 flex items-center justify-between px-6 md:px-12 py-4">
           <div className="flex items-center gap-2 text-sprout-cream font-bold text-lg">
             <SproutLogo className="w-5 h-5 text-sprout-cream" />
             <span>Sprout</span>
@@ -67,7 +67,7 @@ export default function HomeV2() {
           </Link>
         </nav>
 
-        <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 py-16">
+        <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 py-10">
           <div className="max-w-3xl w-full">
 
             <div className="flex justify-center mb-8">
@@ -183,37 +183,59 @@ export default function HomeV2() {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <VerbatimCard
-              quote="I envision all the other parents judging me and thinking I'm a horrible teacher who is failing my kids. When I hear my daughter stumble over words I was reading at her age, I worry."
-              name="Charlene"
-              location="Verbatim · Hess UnAcademy · US"
-            />
-            <VerbatimCard
-              quote="Today was shit."
-              name="Jenna"
-              location="Verbatim · Mum Central · AU"
-            />
-            <VerbatimCard
-              quote="In survival mode, learning is impossible."
-              name="Louise"
-              location="Verbatim · School Can't Australia · NSW"
-            />
-            <VerbatimCard
-              quote={`I'm so afraid of my daughter being "behind"!!!`}
-              name="Amanda"
-              location="Verbatim · Not That Hard To Homeschool · US"
-            />
-            <VerbatimCard
-              quote="'Just keep trying' is slow harm, not strategy."
-              name="Louise"
-              location="Verbatim · School Can't Australia · NSW"
-            />
-            <VerbatimCard
-              quote="I'm having the time of my life. Thank God I chose this."
-              name="Sara"
-              location="Verbatim · Australian Homeschool Stories · QLD"
-            />
+          {/* 2-row horizontal-scroll carousel — 3 cards visible per row on
+              desktop, ~2 on tablet, ~1 (with peek) on mobile. Each row scrolls
+              independently. Scroll-snap for clean swipe stops. */}
+          <div className="space-y-5">
+            {/* Row 1 — the wound */}
+            <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-2 -mx-6 px-6 md:-mx-12 md:px-12 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+              <div className="flex-shrink-0 w-[85%] sm:w-[46%] lg:w-[32%] snap-start">
+                <VerbatimCard
+                  quote="I envision all the other parents judging me and thinking I'm a horrible teacher who is failing my kids. When I hear my daughter stumble over words I was reading at her age, I worry."
+                  name="Charlene"
+                  location="Verbatim · Hess UnAcademy · US"
+                />
+              </div>
+              <div className="flex-shrink-0 w-[85%] sm:w-[46%] lg:w-[32%] snap-start">
+                <VerbatimCard
+                  quote="In survival mode, learning is impossible."
+                  name="Louise"
+                  location="Verbatim · School Can't Australia · NSW"
+                />
+              </div>
+              <div className="flex-shrink-0 w-[85%] sm:w-[46%] lg:w-[32%] snap-start">
+                <VerbatimCard
+                  quote={`I'm so afraid of my daughter being "behind"!!!`}
+                  name="Amanda"
+                  location="Verbatim · Not That Hard To Homeschool · US"
+                />
+              </div>
+            </div>
+
+            {/* Row 2 — raw, wise, payoff */}
+            <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-2 -mx-6 px-6 md:-mx-12 md:px-12 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+              <div className="flex-shrink-0 w-[85%] sm:w-[46%] lg:w-[32%] snap-start">
+                <VerbatimCard
+                  quote="Today was shit."
+                  name="Jenna"
+                  location="Verbatim · Mum Central · AU"
+                />
+              </div>
+              <div className="flex-shrink-0 w-[85%] sm:w-[46%] lg:w-[32%] snap-start">
+                <VerbatimCard
+                  quote="'Just keep trying' is slow harm, not strategy."
+                  name="Louise"
+                  location="Verbatim · School Can't Australia · NSW"
+                />
+              </div>
+              <div className="flex-shrink-0 w-[85%] sm:w-[46%] lg:w-[32%] snap-start">
+                <VerbatimCard
+                  quote="I'm having the time of my life. Thank God I chose this."
+                  name="Sara"
+                  location="Verbatim · Australian Homeschool Stories · QLD"
+                />
+              </div>
+            </div>
           </div>
 
         </div>
@@ -653,7 +675,7 @@ export default function HomeV2() {
       {/* ═══════════════════════════════════════════════════════════════
           PRIVACY PROMISE  (between Differentiator and Friday scene)
           Three-card explicit statement: data ownership, no selling, no
-          AI training. stated plainly, not buried in FAQ.
+          AI training. Mobile: horizontal-scroll carousel.
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
 
@@ -670,42 +692,75 @@ export default function HomeV2() {
             Your kid&apos;s stuff<br />stays yours.
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-5">
-            <GlassCard className="p-7 rounded-3xl h-full" glow="warm" soft>
-              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">01 · You own it</div>
-              <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
-                The data is yours.
-              </h3>
-              <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
-                Voice memos, photos, journaling, what your kid did
-                &mdash; all of it belongs to your family. Stored on your
-                device, backed up to your private cloud. Yours to export.
-                Yours to delete. Yours to keep.
-              </p>
-            </GlassCard>
-            <GlassCard className="p-7 rounded-3xl h-full" glow="sage" soft>
-              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">02 · Not ours to sell</div>
-              <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
-                We can&apos;t sell what isn&apos;t ours.
-              </h3>
-              <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
-                Sprout is the platform. Your captures are your
-                family&apos;s, not ours. The architecture is built that
-                way &mdash; there&apos;s nothing for us to sell, even if
-                we wanted to.
-              </p>
-            </GlassCard>
-            <GlassCard className="p-7 rounded-3xl h-full" glow="warm" soft>
-              <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">03 · Not training big tech</div>
-              <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
-                AI isn&apos;t being trained on you or your kids.
-              </h3>
-              <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "15px" }}>
-                No AI inside Sprout. Nothing summarises, nothing learns
-                from what your kid says. Big tech doesn&apos;t get to
-                train on your family&apos;s week.
-              </p>
-            </GlassCard>
+          {/* Mobile: horizontal-scroll carousel, 1 card visible with peek.
+              Desktop (md+): standard 3-column grid. */}
+          <div className="flex md:grid md:grid-cols-3 gap-5 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none pb-2 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+            <div className="flex-shrink-0 w-[85%] md:w-auto snap-start">
+              <GlassCard className="p-7 rounded-3xl h-full" glow="warm" soft>
+                <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">01 · You own it</div>
+                <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
+                  The data is yours.
+                </h3>
+                <ul className="space-y-2.5 text-sprout-cream/80" style={{ fontSize: "15px" }}>
+                  <li className="flex items-start gap-2.5">
+                    <span aria-hidden className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-sprout-cream/60" />
+                    <span>On your device. Backed up to your private cloud.</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span aria-hidden className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-sprout-cream/60" />
+                    <span>Export anytime.</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span aria-hidden className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-sprout-cream/60" />
+                    <span>Delete anytime.</span>
+                  </li>
+                </ul>
+              </GlassCard>
+            </div>
+            <div className="flex-shrink-0 w-[85%] md:w-auto snap-start">
+              <GlassCard className="p-7 rounded-3xl h-full" glow="sage" soft>
+                <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">02 · Not ours to sell</div>
+                <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
+                  We can&apos;t sell what isn&apos;t ours.
+                </h3>
+                <ul className="space-y-2.5 text-sprout-cream/80" style={{ fontSize: "15px" }}>
+                  <li className="flex items-start gap-2.5">
+                    <span aria-hidden className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-sprout-cream/60" />
+                    <span>You hold the captures, not Sprout.</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span aria-hidden className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-sprout-cream/60" />
+                    <span>Architecture leaves us nothing to sell.</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span aria-hidden className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-sprout-cream/60" />
+                    <span>Even if we wanted to.</span>
+                  </li>
+                </ul>
+              </GlassCard>
+            </div>
+            <div className="flex-shrink-0 w-[85%] md:w-auto snap-start">
+              <GlassCard className="p-7 rounded-3xl h-full" glow="warm" soft>
+                <div className="text-sprout-cream/65 text-[10px] uppercase tracking-[0.3em] font-bold mb-4">03 · Not training big tech</div>
+                <h3 className="font-bold tracking-tight text-sprout-cream mb-4" style={{ fontSize: "22px" }}>
+                  No AI in Sprout. None.
+                </h3>
+                <ul className="space-y-2.5 text-sprout-cream/80" style={{ fontSize: "15px" }}>
+                  <li className="flex items-start gap-2.5">
+                    <span aria-hidden className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-sprout-cream/60" />
+                    <span>Nothing summarises.</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span aria-hidden className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-sprout-cream/60" />
+                    <span>Nothing learns from your kid.</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span aria-hidden className="mt-[7px] flex-shrink-0 w-1.5 h-1.5 rounded-full bg-sprout-cream/60" />
+                    <span>Big tech doesn&apos;t get a byte.</span>
+                  </li>
+                </ul>
+              </GlassCard>
+            </div>
           </div>
         </div>
       </section>
@@ -743,68 +798,6 @@ export default function HomeV2() {
              style={{ fontSize: "clamp(15px, 1.4vw, 18px)" }}>
             Both of you see what the week was.
           </p>
-
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          FAQ / OBJECTIONS  (sits between the Friday scene and the
-          "I see you" trust seal — payoff → objections handled →
-          emotional re-warm → close. Pricing section removed; the
-          waitlist + Founding Family block in the Final CTA is the
-          single offer surface now.)
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#3D6643]/40 via-[#4D7B53]/30 to-[#76A77A]/20" />
-          <div className="absolute -top-40 right-0 w-[500px] h-[500px] rounded-full bg-[#A4C9A8]/8 blur-3xl animate-drift-1" />
-          <div className="absolute bottom-0 -left-40 w-[500px] h-[500px] rounded-full bg-[#76A77A]/10 blur-3xl animate-drift-2" />
-        </div>
-
-        <div className="relative max-w-5xl mx-auto">
-
-          <SectionEyebrow number="06" label="What you&apos;ll ask first" />
-
-          <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream mb-16 headline-lit"
-              style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
-            Pulled from real forum<br />threads. Answered straight.
-          </h2>
-
-          <div className="space-y-4">
-            {[
-              {
-                q: "Will this turn into another app I forget I&apos;m using?",
-                a: "No. The whole loop is one voice memo, photo, or sentence — dropped in when life lets you. If a week goes by quiet, the next week&apos;s view is shorter, that&apos;s it. Sprout is welcomed-not-required by design; the timeline keeps building whether you put in five captures this week or one.",
-              },
-              {
-                q: "Do you sell or train on our data?",
-                a: "No, and we never will. Your kid&apos;s voice memos, photos, journaling, and timeline stay yours. We don&apos;t sell them. We don&apos;t train AI on them — there&apos;s no AI inside Sprout to train. We don&apos;t share them with advertisers. The whole point of Sprout is that your family&apos;s week is yours alone. Selling it or feeding it to a model would defeat the entire reason this exists.",
-              },
-              {
-                q: "Can my kid record their own entries?",
-                a: "Yes — and we&apos;d encourage it. Hand them the phone, let them voice-memo what they made, what they figured out, what they got stuck on. Their timeline becomes their voice — not just yours about them.",
-              },
-              {
-                q: "I&apos;m not techy. Will I be able to use it?",
-                a: "If you can send a voice memo or take a photo, you can use Sprout. No setup. No dashboard. Open, drop in, close.",
-              },
-              {
-                q: "Can I track more than one kid?",
-                a: "Yes. Each kid gets their own timeline, their own week, their own year. Sprout treats them as the distinct humans they are.",
-              },
-            ].map((item, i) => (
-              <details key={i} className={`${GLASS_CARD_SOFT} group rounded-2xl`}>
-                <summary className="relative cursor-pointer list-none p-6 flex items-start justify-between gap-6">
-                  <span className="font-bold text-sprout-cream leading-tight" style={{ fontSize: "clamp(17px, 1.5vw, 19px)" }} dangerouslySetInnerHTML={{ __html: item.q }} />
-                  <span className="flex-shrink-0 w-7 h-7 rounded-full bg-white/25 flex items-center justify-center text-sprout-cream font-bold group-open:rotate-45 transition-transform border border-white/40 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)]">
-                    <Plus className="w-3.5 h-3.5" strokeWidth={2.5} />
-                  </span>
-                </summary>
-                <div className="relative px-6 pb-6 -mt-2 text-sprout-cream/85 leading-relaxed" style={{ fontSize: "16px" }} dangerouslySetInnerHTML={{ __html: item.a }} />
-              </details>
-            ))}
-          </div>
 
         </div>
       </section>

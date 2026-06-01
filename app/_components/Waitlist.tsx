@@ -1,23 +1,16 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { MascotCelebration } from "./MascotCelebration";
-
-// Founding-Member checkout URL. Configured via env var so it can be
-// swapped per environment without touching code. If unset, the button
-// links to a no-op anchor (clicks won't navigate anywhere harmful).
-const STRIPE_URL =
-  process.env.NEXT_PUBLIC_STRIPE_CHECKOUT_URL ?? "#stripe-url-not-set";
 
 export function Waitlist() {
   const [email, setEmail] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [modalOpen, setModalOpen] = useState(false);
-  const fmCardRef = useRef<HTMLDivElement>(null);
 
   const handleWaitlistSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,14 +33,6 @@ export function Waitlist() {
       return;
     }
     setSubmitted(true);
-  };
-
-  const goToFM = () => {
-    fmCardRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-  };
-
-  const handleCheckout = () => {
-    window.location.href = STRIPE_URL;
   };
 
   return (
@@ -120,117 +105,43 @@ export function Waitlist() {
                 We&apos;ll let you know the moment the door opens.
               </p>
 
-              <button
-                type="button"
-                onClick={goToFM}
+              <Link
+                href="/partners"
                 className="mt-6 text-[13px] text-sprout-cream/70 hover:text-sprout-cream hover:underline font-semibold inline-flex items-center gap-1 animate-mascot-pop"
                 style={{ animationDelay: "900ms" }}
               >
-                → Become a Founding Family
-              </button>
+                → Earn with Sprout
+              </Link>
             </div>
           )}
         </div>
 
-        {/* ── Card 2: Founding Family ───────────────────────────── */}
-        <div
-          ref={fmCardRef}
-          className="rounded-2xl border-2 border-[#F4EDE0] bg-[#F4EDE0] p-6 md:p-8 flex flex-col text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.6),0_15px_40px_-10px_rgba(0,0,0,0.5),0_30px_60px_-20px_rgba(0,0,0,0.3)]"
-        >
+        {/* ── Card 2: Earn with Sprout ──────────────────────────── */}
+        <div className="rounded-2xl border-2 border-[#F4EDE0] bg-[#F4EDE0] p-6 md:p-8 flex flex-col text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.6),0_15px_40px_-10px_rgba(0,0,0,0.5),0_30px_60px_-20px_rgba(0,0,0,0.3)]">
           <p className="text-[11px] uppercase tracking-[0.22em] text-[#1B3722]/70 font-bold mb-3">
-            Limited to 100
+            Earn with Sprout
           </p>
           <h3
-            className="font-bold text-[#1B3722] leading-tight"
+            className="font-bold text-[#1B3722] leading-tight mb-3"
             style={{ fontSize: "clamp(20px, 2vw, 24px)" }}
           >
-            The founding 100. The ones who got there first.
+            Share Sprout. Take a cut.
           </h3>
+          <p className="text-[#1B3722]/75 leading-relaxed text-[15px]">
+            20% off for every mom you send. 20% creator fee on every
+            month they stay. Twelve months recurring, no upfront spend.
+          </p>
           <div className="flex-1" />
-          <button
-            type="button"
-            disabled
-            aria-disabled="true"
-            className="w-full h-12 rounded-full bg-[#1B3722]/70 text-[#F4EDE0]/80 font-bold text-[12px] tracking-[0.22em] uppercase cursor-not-allowed inline-flex items-center justify-center"
+          <Link
+            href="/partners"
+            className="mt-6 w-full h-12 rounded-full bg-[#1B3722] text-[#F4EDE0] font-bold text-[14px] hover:bg-[#0F2614] transition-colors inline-flex items-center justify-center gap-2"
           >
-            Coming soon
-          </button>
+            See how it works
+            <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
+          </Link>
         </div>
 
       </div>
-
-      {/* ── Confirmation modal ───────────────────────────────────
-          Opened by the FM card's primary button. Click outside or the
-          Cancel button to close. Continue button redirects to Stripe. */}
-      {modalOpen && (
-        <div
-          className="fixed inset-0 z-[2000] flex items-center justify-center p-4"
-          style={{
-            background: "rgba(15, 19, 17, 0.85)",
-            backdropFilter: "blur(8px)",
-          }}
-          onClick={() => setModalOpen(false)}
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="fm-modal-heading"
-        >
-          <div
-            className="relative max-w-[480px] w-full rounded-2xl border-2 border-[#F4EDE0] bg-[#F4EDE0] p-7 md:p-8 text-left shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3
-              id="fm-modal-heading"
-              className="font-bold text-[#1B3722] mb-4 leading-tight"
-              style={{ fontSize: "clamp(20px, 2.4vw, 24px)" }}
-            >
-              You&apos;re stepping in. Here&apos;s what happens next.
-            </h3>
-            <p className="text-[#1B3722]/80 leading-relaxed text-[16px] mb-4">
-              You&apos;re about to claim a Founding Family spot. Here&apos;s
-              what comes with it:
-            </p>
-            <ul className="space-y-2.5 mb-5">
-              {[
-                "Founding member status for life — once-ever, can't be bought later",
-                "Skip the wait — in Sprout the day it opens",
-                "A direct line to the founder and team",
-                "Help shape what Sprout becomes — see roadmap, your feedback ships",
-              ].map((line) => (
-                <li
-                  key={line}
-                  className="flex items-start gap-2.5 text-[#1B3722] text-[14px] leading-[1.55]"
-                >
-                  <span
-                    aria-hidden
-                    className="inline-block flex-shrink-0 mt-[7px] w-1.5 h-1.5 rounded-full bg-[#1B3722]"
-                  />
-                  <span>{line}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-[#1B3722]/55 italic text-[14px] mb-6">
-              Closes at 100 spots.
-            </p>
-            <div className="flex flex-col gap-3">
-              <button
-                type="button"
-                onClick={handleCheckout}
-                className="w-full h-12 rounded-full bg-[#1B3722] text-[#F4EDE0] font-bold text-[14px] hover:bg-[#0F2614] transition-colors inline-flex items-center justify-center gap-2"
-              >
-                Claim my spot
-                <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
-              </button>
-              <button
-                type="button"
-                onClick={() => setModalOpen(false)}
-                className="text-[14px] text-[#1B3722]/60 hover:underline"
-              >
-                Cancel
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
