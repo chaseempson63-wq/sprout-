@@ -111,7 +111,11 @@ The earlier framing was "Cal AI playbook applied to homeschool" — AI removing 
 
 Sprout's wedge in this version: the **niche homeschool-documentation fitness-app, with a privacy stance that says "we don't sell your data, we don't train AI on your kid's voice memos, your week stays yours."** That stance is structurally impossible for ChatGPT-memory or any LLM-backed tracker to copy without retreating from their own training stack. Tinybeans is parent memory-keeping with no kid-facing view. Day One is personal journaling. Sprout sits in a vacant slot: a privacy-first homeschool tracker that compiles a parent's documentation and shows it back to both her and the kid as a navigable timeline. AU/NZ is the beachhead before US expansion.
 
+**Newly-noted competitors (2026-06-03, from founder market scan):** Finch and Homeschooly — both App Store apps that homeschool moms in the forum / FB-group conversations are recommending. Founder read: this is market validation, not threat — *"people are starting to use platforms to find what works, I'll own distribution and positioning and scale tf out of this."* The competitive posture is distribution-and-positioning-first, product-feature-second.
+
 The bear case still stands (behaviour-adoption unproven, wallet unvalidated, founder distribution problem mitigated by warm-contact motion). The variance shape is different now: less Cal-AI moonshot, more durable niche-leader with a structural privacy moat. The honest tradeoff: fitness-app behaviour adoption depends on either passive sensors (which Sprout doesn't have) or a strong reflection-habit (which Sprout has to build via UX). That's the load-bearing risk to watch.
+
+**Founder time horizon (logged 2026-06-03):** 12-month commitment with **zero personal drawings** from Sprout revenue — every dollar of any income reinvested back into doubling down on the lanes (distribution, MVP, paid ads, creator program). The stated goal: *"Sprout will be a homeschool household name."* This is the runway / patience posture that frames every operating decision below.
 
 ### Honest viability read (last full read 2026-05-20; sprint day-12 update 2026-06-03)
 
