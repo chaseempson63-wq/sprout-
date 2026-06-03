@@ -115,7 +115,7 @@ Sprout's wedge in this version: the **niche homeschool-documentation fitness-app
 
 The bear case still stands (behaviour-adoption unproven, wallet unvalidated, founder distribution problem mitigated by warm-contact motion). The variance shape is different now: less Cal-AI moonshot, more durable niche-leader with a structural privacy moat. The honest tradeoff: fitness-app behaviour adoption depends on either passive sensors (which Sprout doesn't have) or a strong reflection-habit (which Sprout has to build via UX). That's the load-bearing risk to watch.
 
-**Founder time horizon (logged 2026-06-03):** 12-month commitment with **zero personal drawings** from Sprout revenue — every dollar of any income reinvested back into doubling down on the lanes (distribution, MVP, paid ads, creator program). The stated goal: *"Sprout will be a homeschool household name."* This is the runway / patience posture that frames every operating decision below.
+**Founder time horizon (logged 2026-06-03):** 12-month commitment. Personal draw ~**$3k/mo** to cover NZ living baseline (food, transport, basic costs). Operating expenses (Apple Dev, App Store fees, Stripe, Supabase, email service, Vercel, Meta ads test budget, etc.) are treated as biz expenses. **Everything beyond the $3k draw + op costs gets reinvested back into doubling down on the lanes** (distribution, MVP, paid ads, creator program). Stated goal: *"Sprout will be a homeschool household name."* This is the runway / patience posture that frames every operating decision below.
 
 ### Honest viability read (last full read 2026-05-20; sprint day-12 update 2026-06-03)
 
