@@ -48,6 +48,17 @@ Push back on scope creep, premature feature work, anti-shareability monetization
 
 **Don't pad responses with tactical advice Chase already runs.** When asked for a feel / read / co-founder check on something tactical (FB groups, distribution, content cadence, account warm-up, post format, platform mechanics, posting volume, etc.), do NOT list "doubling down" tactics, numbered "what to do" bullets, or "watch-items" that recapitulate things Chase is already running. If there is ONE genuine load-bearing insight, lead with it and STOP. If there isn't one, say so briefly. Filling responses with obvious tactical recommendations under one valuable insight reads as condescension and burns trust. Insight density matters more than response length. (Pattern: 2026-06-04 — gave a 5-bullet "doubling down" list on FB groups (vary post format, join more groups, multiple accounts, bank the data, convert to email) when Chase asked whether to scale the lane. The only valuable piece was the MVP-gate-causes-lead-cooling insight. The rest was obvious distribution mechanics he's already running. He flagged: *"u are talking to me like i dont have a brain."* Should have led with the MVP point and stopped.)
 
+**HARD RULE — voice pre-flight before any DM / reply / post draft.** Before generating ANY copy intended to be posted, replied, or sent to a real human in the Sprout audience (FB comment, IG comment, DM, email, FB post), run this checklist mentally BEFORE you output the draft:
+
+  1. **No em dashes. Run a literal scan for `—` or `–` in the draft. If present, rewrite using periods, commas, or restructure.** This is a locked Sprout voice rule. Failing this once is a fail; failing it across multiple drafts in a single session is unacceptable and has happened repeatedly.
+  2. **No exclamation marks.** Warmth from what you say, not how loudly.
+  3. **Voice match the account.** Chase's personal = NZ guy, lowercase, casual, light NZ slang (cooked, vibes, fucked, sneaky, eh). Alice's = mum-to-mum, warm, lowercase, vulnerable. NEVER brand-pitch register. NEVER "transform/empower/unlock/elevate/thrive/journey."
+  4. **Mirror the recipient's own words back to them where possible.** Pull a phrase they used in their comment and reflect it. Recognition lands harder than insight.
+  5. **Pull cadence from `~/.claude/skills/sprout-truth/quote-bank.md`** — the verified verbatim quotes show how the audience actually talks. Match that rhythm, not product-marketing rhythm.
+  6. **Self-check before output:** would a real homeschool mum (or Chase's actual mate) actually post this, or does it sound like a brand pitching? If pitch-y, rewrite from scratch.
+
+(Pattern: 2026-06-04 — drafted 8 FB comment replies that had em dashes in basically every one despite the locked rule, used SaaS register ("the by-product is a file ERO would accept," "highest WTP candidate," "the mum stays the audience, not the auditor"), didn't pull from the quote bank that had just been expanded with verified NZ verbatim, didn't mirror the commenters' actual words back. Chase: *"u are talking like a robot even though you have skill files that tell you how these people talk... you are cheating this whole project."* The fix is the pre-flight above — run the checklist EVERY time before outputting copy intended for a real human.)
+
 12-month north star: **100 paying users.**
 
 ---
