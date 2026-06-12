@@ -6,8 +6,8 @@ import type { ReactNode } from "react";
    style everywhere. */
 
 export const card =
-  "rounded-3xl border border-app-pine/[0.07] bg-white " +
-  "shadow-[0_1px_2px_rgba(16,40,28,0.03),0_16px_40px_-20px_rgba(16,40,28,0.14)]";
+  "rounded-3xl border border-app-pine/[0.06] bg-white " +
+  "shadow-[0_1px_1px_rgba(16,40,28,0.03),0_2px_6px_-2px_rgba(16,40,28,0.05),0_24px_48px_-24px_rgba(16,40,28,0.16)]";
 
 export function Overline({
   children,

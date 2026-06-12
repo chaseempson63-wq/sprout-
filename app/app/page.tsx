@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { Camera, ChevronRight } from "lucide-react";
 import { useSprout } from "@/lib/sprout/store";
@@ -17,15 +18,16 @@ import {
   weekSubLabel,
 } from "@/lib/sprout/stats";
 import { subjectById } from "@/lib/sprout/subjects";
-import type { Kid, SubjectId } from "@/lib/sprout/types";
-import { ActivityRings } from "./_components/ActivityRings";
+import { alpha } from "@/lib/sprout/color";
+import type { Entry, Kid, SubjectId } from "@/lib/sprout/types";
+import { ActivityRings, MiniRing } from "./_components/ActivityRings";
 import { WeekBars } from "./_components/WeekBars";
 import { EntryCard } from "./_components/EntryCard";
 import { KidAvatar } from "./_components/chips";
 import { card, Overline, SectionTitle } from "./_components/ui";
 
 const RING_COLORS = {
-  days: "#b7e34f",
+  days: "#aad63e",
   moments: "#1e4636",
   variety: "#c39434",
 };
@@ -49,6 +51,7 @@ function Dashboard() {
   const moments = week.length;
   const mix = subjectMix(week).slice(0, 5);
   const kidCounts = perKidCounts(week);
+  const photos = week.filter((e) => e.photo || e.photoUrl);
 
   const midnight = new Date(now);
   midnight.setHours(0, 0, 0, 0);
@@ -68,31 +71,31 @@ function Dashboard() {
     <div className="space-y-7">
       <div>
         <Overline>This week</Overline>
-        <h1 className="mt-1 font-display text-[28px] font-bold leading-none tracking-tight text-app-forest">
+        <h1 className="mt-1 font-display text-[29px] font-bold leading-none tracking-tight text-app-forest">
           {weekSubLabel(now)}
         </h1>
-        <p className="mt-2 text-[13px] text-app-pine/55">
+        <p className="mt-2 text-[13px] tabular-nums text-app-pine/55">
           {moments} {moments === 1 ? "moment" : "moments"} · {days}{" "}
           {days === 1 ? "day" : "days"} · {kids.length} kids
         </p>
       </div>
 
       {demo && !demoNoticeDismissed && (
-        <div className="rounded-3xl bg-app-sand p-4">
-          <p className="text-[13px] leading-relaxed text-app-pine/75">
+        <div className="flex flex-col gap-2.5 rounded-2xl border border-app-pine/[0.05] bg-app-sand/80 p-4">
+          <p className="text-[12.5px] leading-relaxed text-app-pine/75">
             A demo family lives here so you can poke around. When you&apos;re
             ready, start clean and make it yours.
           </p>
-          <div className="mt-3 flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <button
               onClick={startClean}
-              className="rounded-full border border-app-pine/[0.08] bg-white px-3.5 py-1.5 text-xs font-semibold text-app-forest"
+              className="pressable rounded-full border border-app-pine/[0.08] bg-white px-3.5 py-1.5 text-xs font-semibold text-app-forest"
             >
               Start clean
             </button>
             <button
               onClick={dismissDemoNotice}
-              className="rounded-full px-3.5 py-1.5 text-xs font-semibold text-app-pine/55"
+              className="rounded-full px-3 py-1.5 text-xs font-semibold text-app-pine/50 transition-colors hover:text-app-pine/75"
             >
               Keep exploring
             </button>
@@ -100,8 +103,12 @@ function Dashboard() {
         </div>
       )}
 
-      <section className={`${card} p-5`}>
-        <div className="flex justify-center pt-1">
+      <section className={`${card} relative overflow-hidden p-5`}>
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-20 left-1/2 size-72 -translate-x-1/2 rounded-full bg-app-lime/[0.13] blur-3xl"
+        />
+        <div className="relative flex justify-center pt-1">
           <ActivityRings
             size={176}
             rings={[
@@ -111,7 +118,7 @@ function Dashboard() {
             ]}
             center={
               <div className="text-center">
-                <div className="font-display text-[32px] font-extrabold leading-none text-app-forest">
+                <div className="font-display text-[32px] font-extrabold leading-none tracking-tight text-app-forest">
                   {days}
                 </div>
                 <div className="mt-1 text-[10px] font-semibold uppercase tracking-[0.1em] text-app-pine/45">
@@ -121,7 +128,7 @@ function Dashboard() {
             }
           />
         </div>
-        <div className="mt-5 grid grid-cols-3 gap-2">
+        <div className="relative mt-5 grid grid-cols-3 gap-2">
           <LegendCell
             color={RING_COLORS.days}
             label="Days"
@@ -141,15 +148,17 @@ function Dashboard() {
             detail={variety === 1 ? "area" : "areas"}
           />
         </div>
-        <p className="mt-4 border-t border-app-pine/[0.06] pt-3.5 text-[13px] leading-relaxed text-app-pine/60">
+        <p className="relative mt-4 border-t border-app-pine/[0.06] pt-3.5 text-[13px] leading-relaxed text-app-pine/60">
           {encouragement}
         </p>
       </section>
 
+      {photos.length >= 3 && <Filmstrip photos={photos} />}
+
       <section className={`${card} p-5`}>
         <div className="flex items-baseline justify-between">
           <SectionTitle>Daily rhythm</SectionTitle>
-          <span className="text-[11.5px] text-app-pine/45">
+          <span className="text-[11.5px] tabular-nums text-app-pine/45">
             {moments} this week
           </span>
         </div>
@@ -171,7 +180,7 @@ function Dashboard() {
                 <div key={subjectId ?? "untagged"} className="flex items-center gap-3">
                   <span
                     className="grid size-7 shrink-0 place-items-center rounded-lg"
-                    style={{ backgroundColor: `${color}14`, color }}
+                    style={{ backgroundColor: alpha(color, 0.08), color }}
                   >
                     <Icon size={14} strokeWidth={2.25} aria-hidden="true" />
                   </span>
@@ -181,10 +190,13 @@ function Dashboard() {
                   <span className="h-1.5 w-24 overflow-hidden rounded-full bg-app-pine/[0.06]">
                     <span
                       className="block h-full rounded-full"
-                      style={{ width: `${(count / max) * 100}%`, backgroundColor: color }}
+                      style={{
+                        width: `${(count / max) * 100}%`,
+                        background: `linear-gradient(to right, ${alpha(color, 0.75)}, ${color})`,
+                      }}
                     />
                   </span>
-                  <span className="w-4 text-right text-xs font-semibold text-app-pine/55">
+                  <span className="w-4 text-right text-xs font-semibold tabular-nums text-app-pine/55">
                     {count}
                   </span>
                 </div>
@@ -202,6 +214,11 @@ function Dashboard() {
               key={kid.id}
               kid={kid}
               count={kidCounts.get(kid.id) ?? 0}
+              share={
+                kids.length > 0
+                  ? (kidCounts.get(kid.id) ?? 0) / Math.ceil(GOALS.moments / kids.length)
+                  : 0
+              }
               subjectIds={kidSubjects(week, kid.id)}
             />
           ))}
@@ -233,7 +250,7 @@ function Dashboard() {
               </p>
               <Link
                 href="/app/new"
-                className="mt-4 inline-block rounded-full bg-app-forest px-5 py-2.5 text-[13.5px] font-semibold text-app-cream"
+                className="pressable mt-4 inline-block rounded-full bg-app-forest px-5 py-2.5 text-[13.5px] font-semibold text-app-cream"
               >
                 Log the first moment
               </Link>
@@ -246,6 +263,62 @@ function Dashboard() {
         </div>
       </section>
     </div>
+  );
+}
+
+/* This week's photos as a horizontally scrolling strip. The image-centric
+   summary: the week at a glance before any chart. */
+function Filmstrip({ photos }: { photos: Entry[] }) {
+  return (
+    <section>
+      <div className="flex items-baseline justify-between">
+        <SectionTitle>In pictures</SectionTitle>
+        <span className="text-[11.5px] tabular-nums text-app-pine/45">
+          {photos.length} this week
+        </span>
+      </div>
+      <div className="mask-fade-x scrollbar-none -mx-5 mt-3 flex snap-x snap-mandatory gap-2.5 overflow-x-auto scroll-pl-5 px-5 pb-1">
+        {photos.slice(0, 12).map((entry) => (
+          <FilmThumb key={entry.id} entry={entry} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function FilmThumb({ entry }: { entry: Entry }) {
+  const [failed, setFailed] = useState(false);
+  const subject = subjectById(entry.subjectId);
+  const color = subject?.color ?? "#1e4636";
+  const Icon = subject?.icon ?? Camera;
+  const src = entry.photo ?? entry.photoUrl ?? "";
+
+  return (
+    <Link
+      href="/app/timeline"
+      aria-label="Open the timeline"
+      className="pressable relative block size-24 shrink-0 snap-start overflow-hidden rounded-2xl"
+      style={failed ? { backgroundColor: alpha(color, 0.08) } : undefined}
+    >
+      {failed ? (
+        <span className="grid size-full place-items-center">
+          <Icon size={20} strokeWidth={2} style={{ color: alpha(color, 0.65) }} aria-hidden="true" />
+        </span>
+      ) : (
+        // eslint-disable-next-line @next/next/no-img-element -- local data URLs + demo images
+        <img
+          src={src}
+          alt=""
+          loading="lazy"
+          onError={() => setFailed(true)}
+          className="size-full object-cover"
+        />
+      )}
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 rounded-2xl shadow-[inset_0_0_0_1px_rgba(20,46,34,0.07)]"
+      />
+    </Link>
   );
 }
 
@@ -279,24 +352,28 @@ function LegendCell({
 function KidCard({
   kid,
   count,
+  share,
   subjectIds,
 }: {
   kid: Kid;
   count: number;
+  share: number;
   subjectIds: SubjectId[];
 }) {
   return (
     <Link
       href={`/app/timeline?kid=${kid.id}`}
-      className={`${card} flex flex-col gap-3 p-4 transition-transform active:scale-[0.98]`}
+      className={`${card} pressable flex flex-col gap-3 p-4`}
     >
       <div className="flex items-center gap-2.5">
-        <KidAvatar kid={kid} size={34} />
+        <MiniRing pct={share} color={kid.color} size={44} stroke={3}>
+          <KidAvatar kid={kid} size={32} />
+        </MiniRing>
         <div className="min-w-0 flex-1">
           <p className="truncate font-display text-[15px] font-bold text-app-forest">
             {kid.name}
           </p>
-          <p className="whitespace-nowrap text-[11px] text-app-pine/50">
+          <p className="whitespace-nowrap text-[11px] tabular-nums text-app-pine/50">
             {count} {count === 1 ? "moment" : "moments"}
           </p>
         </div>
@@ -330,7 +407,7 @@ function Skeleton() {
         <div className="h-3 w-16 rounded-full bg-app-pine/[0.06]" />
         <div className="h-8 w-44 rounded-xl bg-app-pine/[0.06]" />
       </div>
-      <div className="h-56 rounded-3xl bg-app-pine/[0.05]" />
+      <div className="h-72 rounded-3xl bg-app-pine/[0.05]" />
       <div className="h-44 rounded-3xl bg-app-pine/[0.05]" />
       <div className="grid grid-cols-2 gap-3">
         <div className="h-24 rounded-3xl bg-app-pine/[0.05]" />

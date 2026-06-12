@@ -26,11 +26,13 @@ interface Script {
 const unsplash = (id: string) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=900&q=70`;
 
+/* Demo photo rule, same as the brand's: the work, never the kid's face.
+   Hands, objects, places. */
 const PHOTOS = {
   books: unsplash("photo-1481627834876-b7833e8f5570"),
   lego: unsplash("photo-1587654780291-39c9404d746b"),
-  paint: unsplash("photo-1503454537195-1dcabb73ffb9"),
-  baking: unsplash("photo-1556910103-1c02745aae4d"),
+  paint: unsplash("photo-1513364776144-60967b0f800f"),
+  baking: unsplash("photo-1509440159596-0249088772ff"),
   forest: unsplash("photo-1441974231531-c6227db76b6e"),
   night: unsplash("photo-1462331940025-496dfbfc7564"),
   garden: unsplash("photo-1416879595882-3373a0480b5b"),

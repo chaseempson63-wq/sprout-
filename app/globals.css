@@ -279,3 +279,118 @@
     animation: none;
   }
 }
+
+/* ── App craft layer ─────────────────────────────────────────────
+   Texture, easing, and motion choreography. The goal is depth you
+   feel rather than see: grain instead of flat fills, springy
+   easings instead of linear, shared-element morphs instead of
+   cuts. */
+
+:root {
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-back: cubic-bezier(0.3, 1.28, 0.55, 1);
+}
+
+/* Barely-there photographic grain over the cream canvas. Kills the
+   dead-flat gradient look without ever reading as noise. */
+.app-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Soft warm vignette behind the app: slightly brighter center, a
+   touch deeper at the edges. Imperceptible until it's missing. */
+.app-canvas {
+  background-color: #faf6ec;
+  background-image:
+    radial-gradient(120% 70% at 50% 0%, #fdfaf3 0%, rgba(253, 250, 243, 0) 60%),
+    linear-gradient(180deg, #faf6ec 0%, #f6f1e3 100%);
+}
+
+.pressable {
+  transition:
+    transform 340ms var(--ease-out-quart),
+    box-shadow 340ms var(--ease-out-quart);
+}
+.pressable:active {
+  transform: scale(0.97);
+  transition-duration: 90ms;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.mask-fade-x {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 20px,
+    black calc(100% - 20px),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    black 20px,
+    black calc(100% - 20px),
+    transparent 100%
+  );
+}
+
+/* ── View transitions ────────────────────────────────────────────
+   Per-entry shared-element morphs when the timeline flips between
+   card and grid layouts; directional feed slides when paging weeks;
+   a soft crossfade for everything unnamed. */
+
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-group(*) {
+    animation-duration: 440ms;
+    animation-timing-function: var(--ease-out-quart);
+  }
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 440ms;
+    animation-timing-function: var(--ease-out-quart);
+  }
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 300ms;
+  }
+
+  @keyframes vt-slide-out-right {
+    to { opacity: 0; transform: translateX(28px); }
+  }
+  @keyframes vt-slide-in-left {
+    from { opacity: 0; transform: translateX(-28px); }
+  }
+  @keyframes vt-slide-out-left {
+    to { opacity: 0; transform: translateX(-28px); }
+  }
+  @keyframes vt-slide-in-right {
+    from { opacity: 0; transform: translateX(28px); }
+  }
+
+  /* Earlier week: content arrives from the left (walking back in time). */
+  html[data-vt="back"] ::view-transition-old(timeline-feed) {
+    animation: vt-slide-out-right 280ms var(--ease-out-quart) both;
+  }
+  html[data-vt="back"] ::view-transition-new(timeline-feed) {
+    animation: vt-slide-in-left 360ms var(--ease-out-quart) both;
+  }
+  html[data-vt="fwd"] ::view-transition-old(timeline-feed) {
+    animation: vt-slide-out-left 280ms var(--ease-out-quart) both;
+  }
+  html[data-vt="fwd"] ::view-transition-new(timeline-feed) {
+    animation: vt-slide-in-right 360ms var(--ease-out-quart) both;
+  }
+}

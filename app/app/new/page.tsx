@@ -7,9 +7,10 @@ import { cn } from "@/lib/utils";
 import { useSprout } from "@/lib/sprout/store";
 import { fileToDataUrl } from "@/lib/sprout/image";
 import { SUBJECTS } from "@/lib/sprout/subjects";
+import { alpha } from "@/lib/sprout/color";
 import type { SubjectId } from "@/lib/sprout/types";
 import { KidAvatar } from "../_components/chips";
-import { Overline } from "../_components/ui";
+import { card, Overline } from "../_components/ui";
 
 /* Capture. The whole job: photo or sentence in, tagged to a kid, under
    ten seconds. Everything optional except the moment itself. */
@@ -62,12 +63,12 @@ export default function NewMomentPage() {
   }
 
   return (
-    <div className="pb-10">
+    <div className="pb-32">
       <div className="flex items-center justify-between">
         <button
           onClick={() => router.back()}
           aria-label="Cancel"
-          className="grid size-10 place-items-center rounded-full border border-app-pine/[0.08] bg-white text-app-forest"
+          className="pressable grid size-10 place-items-center rounded-full border border-app-pine/[0.08] bg-white text-app-forest"
         >
           <X size={18} strokeWidth={2.25} aria-hidden="true" />
         </button>
@@ -88,17 +89,21 @@ export default function NewMomentPage() {
           onChange={(e) => onPickFile(e.target.files?.[0])}
         />
         {photo ? (
-          <div className="relative overflow-hidden rounded-3xl">
+          <div className="relative overflow-hidden rounded-3xl shadow-[0_2px_6px_-2px_rgba(16,40,28,0.08),0_24px_48px_-24px_rgba(16,40,28,0.2)]">
             {/* eslint-disable-next-line @next/next/no-img-element -- local data URL preview */}
             <img
               src={photo}
               alt="The photo you just added"
               className="aspect-[4/3] w-full object-cover"
             />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 rounded-3xl shadow-[inset_0_0_0_1px_rgba(20,46,34,0.07)]"
+            />
             <button
               onClick={() => setPhoto(null)}
               aria-label="Remove photo"
-              className="absolute right-3 top-3 grid size-8 place-items-center rounded-full bg-app-pine/70 text-white backdrop-blur"
+              className="pressable absolute right-3 top-3 grid size-8 place-items-center rounded-full bg-app-pine/70 text-white backdrop-blur"
             >
               <X size={15} strokeWidth={2.5} aria-hidden="true" />
             </button>
@@ -106,10 +111,16 @@ export default function NewMomentPage() {
         ) : (
           <label
             htmlFor="moment-photo"
-            className="flex h-44 cursor-pointer flex-col items-center justify-center gap-2.5 rounded-3xl border-2 border-dashed border-app-pine/15 bg-white"
+            className={cn(
+              card,
+              "pressable flex h-44 cursor-pointer flex-col items-center justify-center gap-2.5",
+            )}
           >
-            <span className="grid size-12 place-items-center rounded-full bg-app-lime text-app-forest">
-              <Camera size={20} strokeWidth={2.25} aria-hidden="true" />
+            <span
+              className="grid size-13 place-items-center rounded-full text-app-forest shadow-[inset_0_1px_0_rgba(255,255,255,0.5),0_4px_14px_rgba(133,176,44,0.4)]"
+              style={{ background: "linear-gradient(165deg, #cdf271 0%, #aad63e 90%)" }}
+            >
+              <Camera size={21} strokeWidth={2.25} aria-hidden="true" />
             </span>
             <span className="text-sm font-semibold text-app-forest">
               {photoBusy ? "Getting the photo" : "Add a photo"}
@@ -127,7 +138,7 @@ export default function NewMomentPage() {
           onChange={(e) => setNote(e.target.value)}
           rows={3}
           placeholder="What did they do? One line is plenty."
-          className="w-full resize-none rounded-3xl border border-app-pine/[0.08] bg-white p-4 text-[15px] leading-relaxed text-app-pine placeholder:text-app-pine/35 focus:outline-none focus:ring-2 focus:ring-app-forest/40"
+          className="w-full resize-none rounded-3xl border border-app-pine/[0.08] bg-white p-4 text-[15px] leading-relaxed text-app-pine shadow-[0_1px_1px_rgba(16,40,28,0.03)] transition-shadow placeholder:text-app-pine/35 focus:outline-none focus:ring-2 focus:ring-app-forest/35"
         />
       </div>
 
@@ -142,9 +153,9 @@ export default function NewMomentPage() {
                 onClick={() => toggleKid(kid.id)}
                 aria-pressed={active}
                 className={cn(
-                  "flex items-center gap-2 rounded-full px-3.5 py-2 text-[13.5px] font-semibold transition-colors",
+                  "pressable flex items-center gap-2 rounded-full px-3.5 py-2 text-[13.5px] font-semibold transition-colors",
                   active
-                    ? "bg-app-forest text-app-cream"
+                    ? "bg-app-forest text-app-cream shadow-[inset_0_1px_0_rgba(255,255,255,0.12)]"
                     : "border border-app-pine/[0.08] bg-white text-app-forest/70",
                 )}
               >
@@ -168,14 +179,14 @@ export default function NewMomentPage() {
                 onClick={() => setSubjectId(active ? null : subject.id)}
                 aria-pressed={active}
                 className={cn(
-                  "flex items-center gap-2 rounded-2xl border px-3 py-2.5 text-left text-[13px] font-semibold transition-colors",
+                  "pressable flex items-center gap-2 rounded-2xl border px-3 py-2.5 text-left text-[13px] font-semibold transition-colors",
                   !active && "border-app-pine/[0.08] bg-white text-app-pine/65",
                 )}
                 style={
                   active
                     ? {
-                        backgroundColor: `${subject.color}14`,
-                        borderColor: `${subject.color}66`,
+                        backgroundColor: alpha(subject.color, 0.08),
+                        borderColor: alpha(subject.color, 0.4),
                         color: subject.color,
                       }
                     : undefined
@@ -192,19 +203,26 @@ export default function NewMomentPage() {
         </p>
       </div>
 
-      {error && (
-        <p className="mt-5 rounded-2xl bg-[#b04030]/10 px-4 py-3 text-[13px] font-medium text-[#8a2f22]">
-          {error}
-        </p>
-      )}
-
-      <button
-        onClick={save}
-        disabled={!canSave}
-        className="mt-7 h-[52px] w-full rounded-full bg-app-lime text-[15px] font-bold tracking-tight text-app-forest shadow-[0_6px_20px_rgba(133,176,44,0.4)] transition-opacity disabled:opacity-40 disabled:shadow-none"
+      <div
+        className="fixed inset-x-0 bottom-0 z-30 bg-gradient-to-t from-[#f6f1e3] via-[#f6f1e3]/95 to-transparent pt-8"
+        style={{ paddingBottom: "max(1.1rem, env(safe-area-inset-bottom))" }}
       >
-        Add to the week
-      </button>
+        <div className="mx-auto w-full max-w-lg px-5">
+          {error && (
+            <p className="mb-3 rounded-2xl bg-[#b04030]/10 px-4 py-3 text-[13px] font-medium text-[#8a2f22]">
+              {error}
+            </p>
+          )}
+          <button
+            onClick={save}
+            disabled={!canSave}
+            className="pressable h-[52px] w-full rounded-full text-[15px] font-bold tracking-tight text-app-forest shadow-[inset_0_1px_0_rgba(255,255,255,0.5),0_6px_20px_rgba(133,176,44,0.45)] transition-opacity disabled:opacity-40 disabled:shadow-none"
+            style={{ background: "linear-gradient(165deg, #cdf271 0%, #aad63e 90%)" }}
+          >
+            Add to the week
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
