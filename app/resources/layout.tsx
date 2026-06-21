@@ -5,7 +5,7 @@ import { AccountChip } from "./_components/AccountChip";
 import { ResourcesProvider } from "@/lib/resources/store";
 
 export const metadata: Metadata = {
-  title: "Sprout Resources — make resources tailored to your child",
+  title: "Sprout Resources. Worksheets tailored to your child.",
   description:
     "Create worksheets, activities, and lesson plans tailored to each child in minutes. Your data stays yours.",
 };

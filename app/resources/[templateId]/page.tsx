@@ -72,7 +72,7 @@ export default function Builder() {
         setMessages([
           {
             role: "assistant",
-            content: `Here is a ${data.worksheet.title} worksheet for age ${ageVal}. Tell me what to change: a theme like space or dinosaurs, make it harder or easier, add more questions, or hit the arrows to flick through fresh versions.`,
+            content: `Fresh worksheet for age ${ageVal}, ready below. Tell me what to change: a theme like space or dinosaurs, make it harder or easier, or add more questions. Or use the arrows to flick through new versions.`,
           },
         ]);
       } else if (kind === "send") {
@@ -295,7 +295,7 @@ export default function Builder() {
             >
               <ChevronLeft className="size-4" />
             </button>
-            <span className="text-sprout-cream/70 min-w-[110px] text-center text-sm">{worksheet ? `Variation ${idx + 1} of ${variants.length}` : "—"}</span>
+            <span className="text-sprout-cream/70 min-w-[110px] text-center text-sm">{worksheet ? `Variation ${idx + 1} of ${variants.length}` : "…"}</span>
             <button
               onClick={() => {
                 setView("editor");

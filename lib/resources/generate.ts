@@ -357,18 +357,20 @@ const ALLOWED = new Set([
 function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate, age: number, childName?: string): Worksheet | null {
   const rawBlocks = Array.isArray(parsed.blocks) ? parsed.blocks : [];
   const strArr = (v: unknown) => (Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : undefined);
+  // Sprout voice: no em/en dashes, ever. Strip any the model emits from prose.
+  const noDash = (s: string) => s.replace(/\s*[—–]\s*/g, ", ");
   const blocks: WorksheetBlock[] = [];
   for (const b of rawBlocks) {
     if (!b || typeof b !== "object") continue;
     const o = b as Record<string, unknown>;
     if (typeof o.kind !== "string" || !ALLOWED.has(o.kind)) continue;
     const block: WorksheetBlock = { kind: o.kind as WorksheetBlock["kind"] };
-    if (typeof o.prompt === "string") block.prompt = o.prompt;
-    if (typeof o.text === "string") block.text = o.text;
+    if (typeof o.prompt === "string") block.prompt = noDash(o.prompt);
+    if (typeof o.text === "string") block.text = noDash(o.text);
     if (typeof o.emoji === "string") block.emoji = o.emoji;
     if (typeof o.rows === "number") block.rows = o.rows;
     const items = strArr(o.items);
-    if (items) block.items = items;
+    if (items) block.items = items.map(noDash);
     const wb = strArr(o.wordBank);
     if (wb) block.wordBank = wb;
     const ans = strArr(o.answers);
@@ -383,9 +385,9 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
   }
   if (blocks.length === 0) return null;
   return {
-    title: typeof parsed.title === "string" && parsed.title.trim() ? parsed.title : template.title,
-    subtitle: typeof parsed.subtitle === "string" && parsed.subtitle.trim() ? parsed.subtitle : `Age ${age}`,
-    intro: typeof parsed.intro === "string" ? parsed.intro : undefined,
+    title: typeof parsed.title === "string" && parsed.title.trim() ? noDash(parsed.title) : template.title,
+    subtitle: typeof parsed.subtitle === "string" && parsed.subtitle.trim() ? noDash(parsed.subtitle) : `Age ${age}`,
+    intro: typeof parsed.intro === "string" ? noDash(parsed.intro) : undefined,
     blocks,
     meta: { templateId: template.id, templateLabel: template.title, age, childName: childName?.trim() || undefined },
   };

@@ -270,7 +270,7 @@ export default function ChildProfile() {
             <textarea
               value={momentText}
               onChange={(e) => setMomentText(e.target.value)}
-              placeholder={`Capture a learning moment for ${child.name} — what they did, said, or made.`}
+              placeholder={`Capture a learning moment for ${child.name}. What they did, said, or made.`}
               rows={2}
               className="w-full resize-none rounded-lg border border-black/10 bg-white px-3 py-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]"
             />
