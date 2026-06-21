@@ -1,14 +1,19 @@
 "use client";
 
 // Sprout Resources — client store (v0, local-first).
-// Holds the parent's children and their saved/published worksheets in
-// localStorage. Shape matches the planned Supabase tables for a clean swap.
+// Holds the account/creator, children, learning moments, saved/published
+// worksheets, and likes in localStorage. Shape matches the planned Supabase
+// tables so a real multi-user backend is a drop-in swap later.
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import type { ChildProfile, SavedWorksheet, Worksheet } from "./types";
+import type { ChildProfile, CreatorProfile, LearningMoment, SavedWorksheet, Worksheet } from "./types";
 
 const CHILDREN_KEY = "sprout.resources.children.v2";
 const WORKSHEETS_KEY = "sprout.resources.worksheets.v2";
+const MOMENTS_KEY = "sprout.resources.moments.v1";
+const ACCOUNT_KEY = "sprout.resources.account.v1";
+const LIKES_KEY = "sprout.resources.likes.v1";
+const MYLIKES_KEY = "sprout.resources.mylikes.v1";
 
 // Bright fills chosen to read clearly against the dark forest-green canvas.
 export const AVATAR_COLORS: { key: string; bg: string }[] = [
@@ -41,26 +46,37 @@ function readJSON<T>(key: string, fallback: T): T {
 
 interface ResourcesContextValue {
   ready: boolean;
+  account: CreatorProfile | null;
   kids: ChildProfile[];
   worksheets: SavedWorksheet[];
+  moments: LearningMoment[];
+  setAccount: (profile: CreatorProfile) => void;
   addChild: (data: Omit<ChildProfile, "id" | "createdAt">) => ChildProfile;
   updateChild: (id: string, patch: Partial<Omit<ChildProfile, "id" | "createdAt">>) => void;
   removeChild: (id: string) => void;
   getChild: (id: string) => ChildProfile | undefined;
+  addMoment: (childId: string, data: { text: string; photo?: string }) => void;
+  removeMoment: (id: string) => void;
+  momentsFor: (childId: string) => LearningMoment[];
   saveWorksheet: (worksheet: Worksheet, source: "ai" | "template", childId?: string) => SavedWorksheet;
   toggleFavorite: (id: string) => void;
   togglePublish: (id: string) => void;
   removeWorksheet: (id: string) => void;
+  toggleLike: (id: string) => void;
+  likeCount: (id: string) => number;
+  likedByMe: (id: string) => boolean;
 }
 
 const ResourcesContext = createContext<ResourcesContextValue | null>(null);
 
 export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
+  const [account, setAccountState] = useState<CreatorProfile | null>(() => readJSON<CreatorProfile | null>(ACCOUNT_KEY, null));
   const [kids, setKids] = useState<ChildProfile[]>(() => readJSON<ChildProfile[]>(CHILDREN_KEY, []));
-  const [worksheets, setWorksheets] = useState<SavedWorksheet[]>(() =>
-    readJSON<SavedWorksheet[]>(WORKSHEETS_KEY, []),
-  );
+  const [worksheets, setWorksheets] = useState<SavedWorksheet[]>(() => readJSON<SavedWorksheet[]>(WORKSHEETS_KEY, []));
+  const [moments, setMoments] = useState<LearningMoment[]>(() => readJSON<LearningMoment[]>(MOMENTS_KEY, []));
+  const [likes, setLikes] = useState<Record<string, number>>(() => readJSON<Record<string, number>>(LIKES_KEY, {}));
+  const [myLikes, setMyLikes] = useState<string[]>(() => readJSON<string[]>(MYLIKES_KEY, []));
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time hydration gate flip after mount
@@ -68,11 +84,25 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
+    if (ready) localStorage.setItem(ACCOUNT_KEY, JSON.stringify(account));
+  }, [account, ready]);
+  useEffect(() => {
     if (ready) localStorage.setItem(CHILDREN_KEY, JSON.stringify(kids));
   }, [kids, ready]);
   useEffect(() => {
     if (ready) localStorage.setItem(WORKSHEETS_KEY, JSON.stringify(worksheets));
   }, [worksheets, ready]);
+  useEffect(() => {
+    if (ready) localStorage.setItem(MOMENTS_KEY, JSON.stringify(moments));
+  }, [moments, ready]);
+  useEffect(() => {
+    if (ready) localStorage.setItem(LIKES_KEY, JSON.stringify(likes));
+  }, [likes, ready]);
+  useEffect(() => {
+    if (ready) localStorage.setItem(MYLIKES_KEY, JSON.stringify(myLikes));
+  }, [myLikes, ready]);
+
+  const setAccount = useCallback((profile: CreatorProfile) => setAccountState(profile), []);
 
   const addChild = useCallback((data: Omit<ChildProfile, "id" | "createdAt">) => {
     const child: ChildProfile = { ...data, id: uid(), createdAt: Date.now() };
@@ -86,10 +116,25 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
 
   const removeChild = useCallback((id: string) => {
     setKids((prev) => prev.filter((c) => c.id !== id));
+    setMoments((prev) => prev.filter((m) => m.childId !== id));
     setWorksheets((prev) => prev.map((w) => (w.childId === id ? { ...w, childId: undefined } : w)));
   }, []);
 
   const getChild = useCallback((id: string) => kids.find((c) => c.id === id), [kids]);
+
+  const addMoment = useCallback((childId: string, data: { text: string; photo?: string }) => {
+    const moment: LearningMoment = { id: uid(), childId, text: data.text, photo: data.photo, createdAt: Date.now() };
+    setMoments((prev) => [moment, ...prev]);
+  }, []);
+
+  const removeMoment = useCallback((id: string) => {
+    setMoments((prev) => prev.filter((m) => m.id !== id));
+  }, []);
+
+  const momentsFor = useCallback(
+    (childId: string) => moments.filter((m) => m.childId === childId).sort((a, b) => b.createdAt - a.createdAt),
+    [moments],
+  );
 
   const saveWorksheet = useCallback(
     (worksheet: Worksheet, source: "ai" | "template", childId?: string) => {
@@ -99,13 +144,15 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
         childId,
         favorite: false,
         published: false,
+        creatorHandle: account?.handle,
+        creatorName: account?.displayName,
         createdAt: Date.now(),
         source,
       };
       setWorksheets((prev) => [saved, ...prev]);
       return saved;
     },
-    [],
+    [account],
   );
 
   const toggleFavorite = useCallback((id: string) => {
@@ -113,28 +160,58 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const togglePublish = useCallback((id: string) => {
-    setWorksheets((prev) => prev.map((w) => (w.id === id ? { ...w, published: !w.published } : w)));
-  }, []);
+    setWorksheets((prev) =>
+      prev.map((w) =>
+        w.id === id
+          ? { ...w, published: !w.published, creatorHandle: w.creatorHandle ?? account?.handle, creatorName: w.creatorName ?? account?.displayName }
+          : w,
+      ),
+    );
+  }, [account]);
 
   const removeWorksheet = useCallback((id: string) => {
     setWorksheets((prev) => prev.filter((w) => w.id !== id));
   }, []);
 
+  const toggleLike = useCallback((id: string) => {
+    setMyLikes((prev) => {
+      const has = prev.includes(id);
+      setLikes((lk) => ({ ...lk, [id]: Math.max(0, (lk[id] ?? 0) + (has ? -1 : 1)) }));
+      return has ? prev.filter((x) => x !== id) : [...prev, id];
+    });
+  }, []);
+
+  const likeCount = useCallback((id: string) => likes[id] ?? 0, [likes]);
+  const likedByMe = useCallback((id: string) => myLikes.includes(id), [myLikes]);
+
   const value = useMemo<ResourcesContextValue>(
     () => ({
       ready,
+      account,
       kids,
       worksheets,
+      moments,
+      setAccount,
       addChild,
       updateChild,
       removeChild,
       getChild,
+      addMoment,
+      removeMoment,
+      momentsFor,
       saveWorksheet,
       toggleFavorite,
       togglePublish,
       removeWorksheet,
+      toggleLike,
+      likeCount,
+      likedByMe,
     }),
-    [ready, kids, worksheets, addChild, updateChild, removeChild, getChild, saveWorksheet, toggleFavorite, togglePublish, removeWorksheet],
+    [
+      ready, account, kids, worksheets, moments, setAccount, addChild, updateChild, removeChild, getChild,
+      addMoment, removeMoment, momentsFor, saveWorksheet, toggleFavorite, togglePublish, removeWorksheet,
+      toggleLike, likeCount, likedByMe,
+    ],
   );
 
   return <ResourcesContext.Provider value={value}>{children}</ResourcesContext.Provider>;

@@ -47,6 +47,8 @@ export interface SavedWorksheet extends Worksheet {
   childId?: string;
   favorite: boolean;
   published: boolean;
+  creatorHandle?: string; // attribution (the creator who made it)
+  creatorName?: string;
   createdAt: number;
   source: "ai" | "template";
 }
@@ -55,8 +57,29 @@ export interface ChildProfile {
   id: string;
   name: string;
   age: number;
+  birthday?: string; // ISO date (optional; age drives difficulty)
+  photo?: string; // data URL (optional; falls back to colored avatar)
   interests: string[];
+  learningStyle?: string;
   color: string;
+  createdAt: number;
+}
+
+// A logged learning-story moment on a child's profile feed.
+export interface LearningMoment {
+  id: string;
+  childId: string;
+  text: string;
+  photo?: string; // data URL (optional)
+  createdAt: number;
+}
+
+// The local account / public creator identity.
+export interface CreatorProfile {
+  handle: string; // unique-ish slug, e.g. "daniel"
+  displayName: string;
+  photo?: string;
+  bio?: string;
   createdAt: number;
 }
 

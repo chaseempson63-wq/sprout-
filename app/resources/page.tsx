@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, Check, Globe, Search, Star, Trash2, UserPlus, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Globe, Heart, Search, Star, Trash2, UserPlus, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
 import { ageBand, TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
@@ -17,39 +17,43 @@ const glassBtn =
   "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-sprout-cream/10 border border-sprout-cream/20 text-sprout-cream text-sm font-semibold hover:bg-sprout-cream/15 transition-colors";
 
 type Tab = "templates" | "mine" | "community";
+type Creation = { id: string; worksheet: Worksheet; creatorName: string; creatorHandle: string };
 
 function match(q: string, text: string): boolean {
   return q.trim() === "" || text.toLowerCase().includes(q.trim().toLowerCase());
 }
 
 export default function LibraryHome() {
-  const { ready, kids, worksheets, addChild, toggleFavorite, togglePublish, removeWorksheet } = useResources();
+  const { ready, kids, worksheets, account, addChild, toggleFavorite, togglePublish, removeWorksheet, toggleLike, likeCount, likedByMe } = useResources();
   const [tab, setTab] = useState<Tab>("templates");
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState<string>("all");
   const [communitySel, setCommunitySel] = useState<string | null>(null);
   const [viewing, setViewing] = useState<{ ws: Worksheet; savedId?: string } | null>(null);
 
-  const published = ready ? worksheets.filter((w) => w.published) : [];
-  const community: Worksheet[] = [...COMMUNITY_SAMPLES, ...published];
-
   const inTopic = (templateId: string) => topic === "all" || topicForTemplate(templateId) === topic;
-
   const templates = TEMPLATES.filter((t) => inTopic(t.id) && match(query, `${t.title} ${t.blurb}`));
   const mine = (ready ? worksheets : []).filter((w) => inTopic(w.meta.templateId) && match(query, `${w.title} ${w.subtitle}`));
-  const communityInSel = community.filter(
-    (w) => (communitySel ? topicForTemplate(w.meta.templateId) === communitySel : true) && match(query, `${w.title} ${w.subtitle}`),
-  );
+
+  // Community creations = everyone's published worksheets + the seed placeholders.
+  const creations: Creation[] = [
+    ...(ready ? worksheets : [])
+      .filter((w) => w.published)
+      .map((w) => ({ id: w.id, worksheet: w as Worksheet, creatorName: w.creatorName || account?.displayName || "You", creatorHandle: w.creatorHandle || account?.handle || "me" })),
+    ...COMMUNITY_SAMPLES.map((s) => ({ id: s.id, worksheet: s.worksheet, creatorName: s.creatorName, creatorHandle: s.creatorHandle })),
+  ];
+  const communityInSel = creations
+    .filter((c) => (communitySel ? topicForTemplate(c.worksheet.meta.templateId) === communitySel : true) && match(query, `${c.worksheet.title} ${c.worksheet.subtitle} ${c.creatorName}`))
+    .sort((a, b) => likeCount(b.id) - likeCount(a.id));
 
   const tabs: { key: Tab; label: string; count: number }[] = [
     { key: "templates", label: "Templates", count: templates.length },
     { key: "mine", label: "My worksheets", count: mine.length },
-    { key: "community", label: "Community", count: community.length },
+    { key: "community", label: "Community", count: creations.length },
   ];
 
   return (
     <div>
-      {/* hero */}
       <div className="mb-6 flex items-center gap-4">
         <span className="bg-sprout-cream/95 grid size-16 shrink-0 place-items-center rounded-2xl shadow-md">
           <SproutMascotIcon className="h-11 w-11" />
@@ -60,18 +64,11 @@ export default function LibraryHome() {
         </div>
       </div>
 
-      {/* kids */}
       {ready && <KidsManager kids={kids} onAdd={addChild} />}
 
-      {/* search */}
       <div className="border-sprout-cream/20 bg-sprout-cream/10 mb-3 flex items-center gap-2 rounded-full border px-4">
         <Search className="text-sprout-cream/50 size-4 shrink-0" />
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search worksheets..."
-          className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none"
-        />
+        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none" />
         {query && (
           <button onClick={() => setQuery("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
             <X className="size-4" />
@@ -79,7 +76,6 @@ export default function LibraryHome() {
         )}
       </div>
 
-      {/* topics (filter for templates + my worksheets; community has its own topic hub below) */}
       {tab !== "community" && (
         <div className="mb-6 flex flex-wrap gap-2">
           <TopicChip active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
@@ -89,15 +85,12 @@ export default function LibraryHome() {
         </div>
       )}
 
-      {/* tabs */}
       <div className="mb-6 flex flex-wrap gap-2">
         {tabs.map((t) => (
           <button
             key={t.key}
             onClick={() => setTab(t.key)}
-            className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition ${
-              tab === t.key ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream bg-sprout-cream/10"
-            }`}
+            className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition ${tab === t.key ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream bg-sprout-cream/10"}`}
           >
             {t.label}
             <span className={`rounded-full px-1.5 text-xs ${tab === t.key ? "bg-[#1B3722]/10" : "bg-sprout-cream/15"}`}>{t.count}</span>
@@ -147,19 +140,17 @@ export default function LibraryHome() {
       {tab === "community" && (
         <div>
           <p className="text-sprout-cream/65 mb-4 flex items-center gap-2 text-sm">
-            <Globe className="size-4" /> Worksheets shared by the Sprout community. Pick a topic to explore, or publish your own from a saved worksheet.
+            <Globe className="size-4" /> Worksheets shared by the Sprout community. Pick a topic to explore, like the best, and watch them climb.
           </p>
           {communitySel === null ? (
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {TOPICS.map((t) => {
-                const count = community.filter((w) => topicForTemplate(w.meta.templateId) === t.key).length;
+                const count = creations.filter((c) => topicForTemplate(c.worksheet.meta.templateId) === t.key).length;
                 return (
                   <button key={t.key} onClick={() => setCommunitySel(t.key)} className={`${lightCard} block p-6 text-left transition hover:-translate-y-0.5`}>
                     <div className="text-4xl">{t.emoji}</div>
                     <h3 className="mt-3 text-lg font-bold text-[#1B3722]">{t.label}</h3>
-                    <p className="mt-1 text-sm text-[#1B3722]/60">
-                      {count} {count === 1 ? "worksheet" : "worksheets"}
-                    </p>
+                    <p className="mt-1 text-sm text-[#1B3722]/60">{count} {count === 1 ? "worksheet" : "worksheets"}</p>
                   </button>
                 );
               })}
@@ -170,14 +161,26 @@ export default function LibraryHome() {
                 <ArrowLeft className="size-4" /> All topics
               </button>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {communityInSel.map((w, i) => (
-                  <button key={i} onClick={() => setViewing({ ws: w })} className={`${lightCard} block p-5 text-left transition hover:-translate-y-0.5`}>
-                    <h3 className="text-lg font-bold text-[#1B3722]">{w.title}</h3>
-                    <p className="mt-1 text-sm text-[#1B3722]/65">{w.subtitle}</p>
-                    <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[#2E5A35]">
-                      Preview <ArrowRight className="size-4" />
-                    </span>
-                  </button>
+                {communityInSel.map((c, i) => (
+                  <div key={c.id} className={`${lightCard} flex flex-col p-5`}>
+                    <button onClick={() => setViewing({ ws: c.worksheet })} className="min-w-0 flex-1 text-left">
+                      <span className="text-[11px] font-semibold tracking-wide text-[#2E5A35]/70 uppercase">#{i + 1}</span>
+                      <h3 className="truncate font-bold text-[#1B3722]">{c.worksheet.title}</h3>
+                      <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
+                    </button>
+                    <div className="mt-3 flex items-center justify-between border-t border-black/5 pt-3">
+                      <Link href={`/resources/creator/${c.creatorHandle}`} className="truncate text-xs font-medium text-[#2E5A35] hover:underline">
+                        by {c.creatorName}
+                      </Link>
+                      <button
+                        onClick={() => toggleLike(c.id)}
+                        className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm transition ${likedByMe(c.id) ? "bg-rose-100 text-rose-600" : "bg-black/5 text-[#1B3722]/70 hover:bg-black/10"}`}
+                        aria-label="Like"
+                      >
+                        <Heart className={`size-4 ${likedByMe(c.id) ? "fill-rose-500 text-rose-500" : ""}`} /> {likeCount(c.id)}
+                      </button>
+                    </div>
+                  </div>
                 ))}
                 {communityInSel.length === 0 && <p className="text-sprout-cream/60 text-sm">No worksheets here yet. Publish one from your saved worksheets.</p>}
               </div>
@@ -202,9 +205,7 @@ function TopicChip({ active, onClick, label, emoji }: { active: boolean; onClick
   return (
     <button
       onClick={onClick}
-      className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition ${
-        active ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream bg-sprout-cream/10 border border-sprout-cream/15"
-      }`}
+      className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition ${active ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream bg-sprout-cream/10 border border-sprout-cream/15"}`}
     >
       <span>{emoji}</span>
       {label}
@@ -256,7 +257,7 @@ function Viewer({
         </button>
         {onPublish && (
           <button onClick={onPublish} className={glassBtn}>
-            <Globe className="size-4" /> {published ? "Unpublish" : "Publish"}
+            <Globe className="size-4" /> {published ? "Unpublish" : "Publish to community"}
           </button>
         )}
         <button onClick={onClose} aria-label="Close" className={glassBtn}>
@@ -310,11 +311,7 @@ function KidsManager({
         {kids.map((k) => {
           const cc = colorClasses(k.color);
           return (
-            <Link
-              key={k.id}
-              href={`/resources/child/${k.id}`}
-              className="flex items-center gap-2 rounded-full border border-[#2E5A35]/15 bg-white py-1 pr-3 pl-1 transition hover:border-[#2E5A35]/40 hover:shadow-sm"
-            >
+            <Link key={k.id} href={`/resources/child/${k.id}`} className="flex items-center gap-2 rounded-full border border-[#2E5A35]/15 bg-white py-1 pr-3 pl-1 transition hover:border-[#2E5A35]/40 hover:shadow-sm">
               <span className={`grid size-7 place-items-center rounded-full text-sm font-bold ${cc.bg}`}>{k.name.charAt(0).toUpperCase()}</span>
               <span className="text-sm font-medium text-[#1B3722]">
                 {k.name} <span className="text-[#1B3722]/50">· {k.age}</span>

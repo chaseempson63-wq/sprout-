@@ -7,33 +7,10 @@
 //                           so the product works before the key is wired.
 
 import { getTemplate } from "./catalog";
+import { detectTheme, intentPreamble } from "./intent";
 import type { ChatMessage, Worksheet, WorksheetBlock, WorksheetTemplate } from "./types";
 
-// ── theme + difficulty + length parsing (offline path) ──────────────────────
-
-const THEMES: Record<string, { emoji: string; nouns: string[] }> = {
-  space: { emoji: "🚀", nouns: ["rockets", "planets", "stars", "astronauts", "moons"] },
-  dinosaur: { emoji: "🦕", nouns: ["dinosaurs", "eggs", "bones", "ferns", "volcanoes"] },
-  ocean: { emoji: "🐠", nouns: ["fish", "shells", "crabs", "waves", "boats"] },
-  animal: { emoji: "🐢", nouns: ["animals", "puppies", "kittens", "rabbits", "ducks"] },
-  horse: { emoji: "🐴", nouns: ["horses", "ponies", "saddles", "carrots", "foals"] },
-  food: { emoji: "🍎", nouns: ["apples", "cookies", "pizzas", "bananas", "cupcakes"] },
-  sport: { emoji: "⚽", nouns: ["balls", "goals", "medals", "jerseys", "trophies"] },
-  flower: { emoji: "🌸", nouns: ["flowers", "petals", "seeds", "leaves", "gardens"] },
-  car: { emoji: "🚗", nouns: ["cars", "wheels", "trucks", "roads", "races"] },
-  bug: { emoji: "🐛", nouns: ["bugs", "ants", "bees", "ladybugs", "leaves"] },
-};
-const DEFAULT_THEME = { emoji: "⭐", nouns: ["stars", "apples", "blocks", "balls", "leaves"] };
-
-function detectTheme(text: string): { key?: string; emoji: string; nouns: string[] } {
-  const t = text.toLowerCase();
-  for (const key of Object.keys(THEMES)) {
-    if (t.includes(key) || t.includes(`${key}s`)) return { key, ...THEMES[key] };
-  }
-  if (/dino/.test(t)) return { key: "dinosaur", ...THEMES.dinosaur };
-  if (/sea|under the sea|fish|shark/.test(t)) return { key: "ocean", ...THEMES.ocean };
-  return { emoji: DEFAULT_THEME.emoji, nouns: DEFAULT_THEME.nouns };
-}
+// ── difficulty + length parsing (offline path); themes live in intent.ts ────
 
 function detectDifficulty(text: string): number {
   const t = text.toLowerCase();
@@ -327,7 +304,7 @@ export function templateWorksheet(template: WorksheetTemplate, age: number, inst
   const name = childName?.trim() || "your child";
   const ctx: Ctx = { template, age, diff, more, theme, name };
   const blocks = template.plan.map((kind) => buildBlock(kind, ctx));
-  const themeLabel = theme.key ? ` · ${theme.key}` : "";
+  const themeLabel = theme.key && theme.key !== "everyday" ? ` · ${theme.key}` : "";
   return {
     title: template.title,
     subtitle: `Age ${age}${themeLabel}`,
@@ -361,11 +338,11 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
     ? `The child is named ${childName.trim()}, age ${age}.`
     : `The child is age ${age}; no name was given, so do not state or invent a name.`;
   const user =
-    `Worksheet type: ${template.title}. ${template.brief} ` +
+    `${intentPreamble(template.id, age)} ` +
     `${who} ` +
-    `Parent requests in order: ${askText} ` +
-    `Build the latest request, keeping earlier context (theme, difficulty, length). Size difficulty to age ${age}. ` +
-    `Make it a FULL A4 page of work (aim for 4 to 6 blocks).`;
+    `Parent requests, newest last: ${askText}. ` +
+    `Apply the newest request as an edit, keeping earlier context (theme, difficulty, length). ` +
+    `Make it a FULL A4 page of work (aim for 4 to 6 blocks). Return ONLY the worksheet JSON.`;
   return [
     { role: "system", content: SYSTEM },
     { role: "user", content: user },

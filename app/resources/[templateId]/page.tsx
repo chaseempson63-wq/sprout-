@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { getTemplate } from "@/lib/resources/catalog";
+import { INPUT_VOCABULARY } from "@/lib/resources/intent";
 import { useResources } from "@/lib/resources/store";
 import type { ChatMessage, Worksheet } from "@/lib/resources/types";
 
@@ -242,6 +243,27 @@ export default function Builder() {
 
           {source === "template" && <p className="text-sprout-cream/50 px-4 pb-1 text-[11px]">Sample mode. Add the Venice key in Vercel for full AI generation.</p>}
 
+          <div className="no-print border-sprout-cream/15 flex flex-wrap gap-1.5 border-t px-3 pt-2">
+            {INPUT_VOCABULARY.edits.slice(0, 5).map((k) => (
+              <button
+                key={k.word}
+                onClick={() => setInput(k.word)}
+                title={k.does}
+                className="bg-sprout-cream/10 text-sprout-cream/80 hover:bg-sprout-cream/20 rounded-full px-2 py-0.5 text-[11px] transition"
+              >
+                {k.word}
+              </button>
+            ))}
+            {INPUT_VOCABULARY.themes.slice(0, 4).map((t) => (
+              <button
+                key={t.key}
+                onClick={() => setInput(`make it about ${t.label.toLowerCase()}`)}
+                className="bg-sprout-cream/10 text-sprout-cream/80 hover:bg-sprout-cream/20 rounded-full px-2 py-0.5 text-[11px] transition"
+              >
+                {t.emoji} {t.label}
+              </button>
+            ))}
+          </div>
           <div className="border-sprout-cream/15 flex items-center gap-2 border-t p-3">
             <input
               value={input}
