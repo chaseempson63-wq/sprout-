@@ -6,7 +6,7 @@
 // builder so the chat still produces a real worksheet with zero setup.
 
 import { getTemplate } from "@/lib/resources/catalog";
-import { aiWorksheet, diagnoseVenice, templateWorksheet } from "@/lib/resources/generate";
+import { aiWorksheet, templateWorksheet } from "@/lib/resources/generate";
 import type { ChatMessage, GenerateRequest } from "@/lib/resources/types";
 
 export const runtime = "nodejs";
@@ -17,11 +17,6 @@ export async function POST(request: Request) {
     process.env.VENUS_API_KEY ||
     process.env.VENICE_INFERENCE_KEY ||
     "";
-
-  if (new URL(request.url).searchParams.get("debug") === "venice") {
-    const diagnose = key ? await diagnoseVenice(key) : null;
-    return Response.json({ keyPresent: !!key, keyLen: key.length, model: process.env.VENICE_MODEL || "default", diagnose });
-  }
 
   let body: unknown;
   try {
@@ -52,7 +47,6 @@ export async function POST(request: Request) {
     .map((m) => m.content)
     .join(" ");
 
-  console.log(`[resources] key present: ${!!key} (len ${key.length}); model ${process.env.VENICE_MODEL || "default"}`);
   if (key) {
     const ai = await aiWorksheet(template, age, messages, key, childName);
     if (ai) return Response.json({ worksheet: ai, source: "ai" });

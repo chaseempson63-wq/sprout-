@@ -465,47 +465,18 @@ export async function aiWorksheet(
   try {
     let res = await call(true);
     if (!res.ok) {
-      const errText = await res.text().catch(() => "");
-      console.log(`[venice] attempt1 status=${res.status} body=${errText.slice(0, 300)}`);
-      // Some models reject response_format; retry plain.
+      // Some models reject response_format; retry without it.
       res = await call(false);
-      if (!res.ok) {
-        console.log(`[venice] attempt2 status=${res.status}`);
-        return null;
-      }
+      if (!res.ok) return null;
     }
     const data = (await res.json()) as { choices?: { message?: { content?: string } }[] };
     const text = data?.choices?.[0]?.message?.content;
-    if (!text) {
-      console.log("[venice] ok but no content");
-      return null;
-    }
+    if (!text) return null;
     const parsed = extractJson(text);
-    if (!parsed) {
-      console.log("[venice] could not parse JSON from content");
-      return null;
-    }
+    if (!parsed) return null;
     return normalize(parsed, template, age, childName);
-  } catch (e) {
-    console.log(`[venice] threw ${String(e).slice(0, 200)}`);
+  } catch {
     return null;
-  }
-}
-
-// Temporary diagnostic: does the key reach Venice and what does Venice say.
-export async function diagnoseVenice(key: string): Promise<{ status: number; body: string; model: string }> {
-  const base = process.env.VENICE_BASE_URL || "https://api.venice.ai/api/v1";
-  const model = process.env.VENICE_MODEL || "venice-uncensored-1-2";
-  try {
-    const res = await fetch(`${base}/chat/completions`, {
-      method: "POST",
-      headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
-      body: JSON.stringify({ model, messages: [{ role: "user", content: 'Reply with JSON {"ok":true}' }], max_tokens: 50 }),
-    });
-    const body = await res.text();
-    return { status: res.status, body: body.slice(0, 600), model };
-  } catch (e) {
-    return { status: -1, body: String(e).slice(0, 300), model };
   }
 }
 
