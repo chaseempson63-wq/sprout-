@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { getTemplate } from "@/lib/resources/catalog";
 import { useResources } from "@/lib/resources/store";
@@ -13,6 +13,11 @@ const primaryBtn =
   "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-[#F4EDE0] text-[#1B3722] font-bold text-sm hover:bg-[#FBF6EB] transition-colors disabled:opacity-50";
 const glassBtn =
   "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-sprout-cream/10 border border-sprout-cream/20 text-sprout-cream text-sm font-semibold hover:bg-sprout-cream/15 transition-colors disabled:opacity-50";
+
+function summarize(w: Worksheet): string {
+  const items = w.blocks.reduce((s, b) => s + (b.items?.length ?? (b.text ? 1 : 0)), 0);
+  return `${w.blocks.length} sections · ${items} items`;
+}
 
 export default function Builder() {
   const params = useParams();
@@ -26,6 +31,7 @@ export default function Builder() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [variants, setVariants] = useState<Worksheet[]>([]);
   const [idx, setIdx] = useState(-1);
+  const [view, setView] = useState<"editor" | "gallery">("editor");
   const [source, setSource] = useState<"ai" | "template" | null>(null);
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState("");
@@ -255,20 +261,61 @@ export default function Builder() {
         {/* preview */}
         <div className="min-w-0">
           {/* variation controls */}
-          <div className="no-print mb-3 flex items-center justify-center gap-2">
-            <button onClick={() => idx > 0 && setIdx(idx - 1)} disabled={idx <= 0 || loading} aria-label="Previous" className={`${glassBtn} size-10 px-0`}>
+          <div className="no-print mb-3 flex flex-wrap items-center justify-center gap-2">
+            <button
+              onClick={() => {
+                setView("editor");
+                if (idx > 0) setIdx(idx - 1);
+              }}
+              disabled={idx <= 0 || loading}
+              aria-label="Previous"
+              className={`${glassBtn} size-10 px-0`}
+            >
               <ChevronLeft className="size-4" />
             </button>
             <span className="text-sprout-cream/70 min-w-[110px] text-center text-sm">{worksheet ? `Variation ${idx + 1} of ${variants.length}` : "—"}</span>
-            <button onClick={nextVariant} disabled={loading} aria-label="Next / new" className={`${glassBtn} size-10 px-0`}>
+            <button
+              onClick={() => {
+                setView("editor");
+                nextVariant();
+              }}
+              disabled={loading}
+              aria-label="Next / new"
+              className={`${glassBtn} size-10 px-0`}
+            >
               {loading ? <Loader2 className="size-4 animate-spin" /> : <ChevronRight className="size-4" />}
             </button>
             <button onClick={regenerate} disabled={loading} className={`${glassBtn} ml-2`}>
               <RefreshCw className="size-4" /> New version
             </button>
+            {variants.length > 1 && (
+              <button onClick={() => setView(view === "gallery" ? "editor" : "gallery")} className={glassBtn}>
+                <LayoutGrid className="size-4" /> {view === "gallery" ? "Editor" : `All ${variants.length}`}
+              </button>
+            )}
           </div>
 
-          {worksheet ? (
+          {view === "gallery" ? (
+            <div className="grid gap-3 sm:grid-cols-2">
+              {variants.map((v, i) => (
+                <button
+                  key={i}
+                  onClick={() => {
+                    setIdx(i);
+                    setView("editor");
+                  }}
+                  className={`rounded-2xl bg-[#FBF7EE] p-4 text-left shadow-[0_12px_30px_-14px_rgba(0,0,0,0.6)] transition hover:-translate-y-0.5 ${
+                    i === idx ? "ring-2 ring-[#F4EDE0]" : "border border-[#2E5A35]/15"
+                  }`}
+                >
+                  <div className="text-[11px] font-semibold tracking-wide text-[#2E5A35] uppercase">Variation {i + 1}</div>
+                  <h3 className="mt-1 truncate font-bold text-[#1B3722]">{v.title}</h3>
+                  <p className="text-xs text-[#1B3722]/60">{v.subtitle}</p>
+                  <p className="mt-2 text-xs text-[#1B3722]/70">{summarize(v)}</p>
+                </button>
+              ))}
+            </div>
+          ) : worksheet ? (
             <WorksheetDoc worksheet={worksheet} />
           ) : (
             <div className="text-sprout-cream/60 flex h-[60vh] items-center justify-center rounded-2xl border border-dashed border-sprout-cream/20 text-sm">

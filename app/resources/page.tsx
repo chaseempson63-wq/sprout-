@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { ArrowRight, Check, Globe, Pencil, Search, Star, Trash2, UserPlus, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Globe, Search, Star, Trash2, UserPlus, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
 import { ageBand, TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
-import { useResources } from "@/lib/resources/store";
+import { colorClasses, useResources } from "@/lib/resources/store";
 import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
 const lightCard =
@@ -22,10 +23,11 @@ function match(q: string, text: string): boolean {
 }
 
 export default function LibraryHome() {
-  const { ready, kids, worksheets, addChild, updateChild, removeChild, toggleFavorite, togglePublish, removeWorksheet } = useResources();
+  const { ready, kids, worksheets, addChild, toggleFavorite, togglePublish, removeWorksheet } = useResources();
   const [tab, setTab] = useState<Tab>("templates");
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState<string>("all");
+  const [communitySel, setCommunitySel] = useState<string | null>(null);
   const [viewing, setViewing] = useState<{ ws: Worksheet; savedId?: string } | null>(null);
 
   const published = ready ? worksheets.filter((w) => w.published) : [];
@@ -35,12 +37,14 @@ export default function LibraryHome() {
 
   const templates = TEMPLATES.filter((t) => inTopic(t.id) && match(query, `${t.title} ${t.blurb}`));
   const mine = (ready ? worksheets : []).filter((w) => inTopic(w.meta.templateId) && match(query, `${w.title} ${w.subtitle}`));
-  const communityFiltered = community.filter((w) => inTopic(w.meta.templateId) && match(query, `${w.title} ${w.subtitle}`));
+  const communityInSel = community.filter(
+    (w) => (communitySel ? topicForTemplate(w.meta.templateId) === communitySel : true) && match(query, `${w.title} ${w.subtitle}`),
+  );
 
   const tabs: { key: Tab; label: string; count: number }[] = [
     { key: "templates", label: "Templates", count: templates.length },
     { key: "mine", label: "My worksheets", count: mine.length },
-    { key: "community", label: "Community", count: communityFiltered.length },
+    { key: "community", label: "Community", count: community.length },
   ];
 
   return (
@@ -57,7 +61,7 @@ export default function LibraryHome() {
       </div>
 
       {/* kids */}
-      {ready && <KidsManager kids={kids} onAdd={addChild} onUpdate={updateChild} onRemove={removeChild} />}
+      {ready && <KidsManager kids={kids} onAdd={addChild} />}
 
       {/* search */}
       <div className="border-sprout-cream/20 bg-sprout-cream/10 mb-3 flex items-center gap-2 rounded-full border px-4">
@@ -75,13 +79,15 @@ export default function LibraryHome() {
         )}
       </div>
 
-      {/* topics */}
-      <div className="mb-6 flex flex-wrap gap-2">
-        <TopicChip active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
-        {TOPICS.map((t) => (
-          <TopicChip key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
-        ))}
-      </div>
+      {/* topics (filter for templates + my worksheets; community has its own topic hub below) */}
+      {tab !== "community" && (
+        <div className="mb-6 flex flex-wrap gap-2">
+          <TopicChip active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
+          {TOPICS.map((t) => (
+            <TopicChip key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
+          ))}
+        </div>
+      )}
 
       {/* tabs */}
       <div className="mb-6 flex flex-wrap gap-2">
@@ -141,20 +147,42 @@ export default function LibraryHome() {
       {tab === "community" && (
         <div>
           <p className="text-sprout-cream/65 mb-4 flex items-center gap-2 text-sm">
-            <Globe className="size-4" /> Worksheets made by the Sprout community. Publish your own from a saved worksheet.
+            <Globe className="size-4" /> Worksheets shared by the Sprout community. Pick a topic to explore, or publish your own from a saved worksheet.
           </p>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {communityFiltered.map((w, i) => (
-              <button key={i} onClick={() => setViewing({ ws: w })} className={`${lightCard} block p-5 text-left transition hover:-translate-y-0.5`}>
-                <h3 className="text-lg font-bold text-[#1B3722]">{w.title}</h3>
-                <p className="mt-1 text-sm text-[#1B3722]/65">{w.subtitle}</p>
-                <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[#2E5A35]">
-                  Preview <ArrowRight className="size-4" />
-                </span>
+          {communitySel === null ? (
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {TOPICS.map((t) => {
+                const count = community.filter((w) => topicForTemplate(w.meta.templateId) === t.key).length;
+                return (
+                  <button key={t.key} onClick={() => setCommunitySel(t.key)} className={`${lightCard} block p-6 text-left transition hover:-translate-y-0.5`}>
+                    <div className="text-4xl">{t.emoji}</div>
+                    <h3 className="mt-3 text-lg font-bold text-[#1B3722]">{t.label}</h3>
+                    <p className="mt-1 text-sm text-[#1B3722]/60">
+                      {count} {count === 1 ? "worksheet" : "worksheets"}
+                    </p>
+                  </button>
+                );
+              })}
+            </div>
+          ) : (
+            <div>
+              <button onClick={() => setCommunitySel(null)} className="text-sprout-cream/80 hover:text-sprout-cream mb-4 inline-flex items-center gap-1 text-sm font-semibold">
+                <ArrowLeft className="size-4" /> All topics
               </button>
-            ))}
-            {communityFiltered.length === 0 && <p className="text-sprout-cream/60 text-sm">Nothing matches that yet.</p>}
-          </div>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {communityInSel.map((w, i) => (
+                  <button key={i} onClick={() => setViewing({ ws: w })} className={`${lightCard} block p-5 text-left transition hover:-translate-y-0.5`}>
+                    <h3 className="text-lg font-bold text-[#1B3722]">{w.title}</h3>
+                    <p className="mt-1 text-sm text-[#1B3722]/65">{w.subtitle}</p>
+                    <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[#2E5A35]">
+                      Preview <ArrowRight className="size-4" />
+                    </span>
+                  </button>
+                ))}
+                {communityInSel.length === 0 && <p className="text-sprout-cream/60 text-sm">No worksheets here yet. Publish one from your saved worksheets.</p>}
+              </div>
+            </div>
+          )}
         </div>
       )}
 
@@ -247,36 +275,22 @@ const kidInput = "rounded-lg border border-black/10 bg-white px-2 py-1 text-sm t
 function KidsManager({
   kids,
   onAdd,
-  onUpdate,
-  onRemove,
 }: {
-  kids: { id: string; name: string; age: number }[];
-  onAdd: (d: { name: string; age: number; interests: string[]; color: string }) => void;
-  onUpdate: (id: string, patch: { name?: string; age?: number }) => void;
-  onRemove: (id: string) => void;
+  kids: { id: string; name: string; age: number; color: string }[];
+  onAdd: (d: { name: string; age: number; interests: string[]; color: string }) => { id: string };
 }) {
+  const router = useRouter();
   const [adding, setAdding] = useState(false);
   const [aName, setAName] = useState("");
   const [aAge, setAAge] = useState("7");
-  const [editId, setEditId] = useState<string | null>(null);
-  const [eName, setEName] = useState("");
-  const [eAge, setEAge] = useState("7");
 
-  function startEdit(id: string, name: string, age: number) {
-    setEditId(id);
-    setEName(name);
-    setEAge(String(age));
-  }
-  function saveEdit() {
-    if (editId) onUpdate(editId, { name: eName.trim() || "Kid", age: Math.min(12, Math.max(3, parseInt(eAge, 10) || 7)) });
-    setEditId(null);
-  }
   function add() {
     const nm = aName.trim();
     if (!nm) return;
-    onAdd({ name: nm, age: Math.min(12, Math.max(3, parseInt(aAge, 10) || 7)), interests: [], color: "lime" });
+    const k = onAdd({ name: nm, age: Math.min(13, Math.max(3, parseInt(aAge, 10) || 7)), interests: [], color: "lime" });
     setAName("");
     setAdding(false);
+    router.push(`/resources/child/${k.id}`);
   }
 
   return (
@@ -290,36 +304,28 @@ function KidsManager({
         )}
       </div>
       <div className="mt-3 flex flex-wrap gap-2">
-        {kids.length === 0 && !adding && <p className="text-sm text-[#1B3722]/60">No kids yet. Add one so worksheets get their name and the right age.</p>}
-        {kids.map((k) => (
-          <div key={k.id} className="flex items-center gap-1 rounded-full border border-black/10 bg-white px-2 py-1">
-            {editId === k.id ? (
-              <>
-                <input value={eName} onChange={(e) => setEName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && saveEdit()} className={`${kidInput} w-24`} />
-                <input type="number" min={3} max={12} value={eAge} onChange={(e) => setEAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && saveEdit()} className={`${kidInput} w-12`} />
-                <button onClick={saveEdit} aria-label="Save" className="grid size-7 place-items-center rounded-full bg-[#2E5A35] text-white">
-                  <Check className="size-4" />
-                </button>
-              </>
-            ) : (
-              <>
-                <span className="px-1 text-sm font-medium text-[#1B3722]">
-                  {k.name} <span className="text-[#1B3722]/50">· {k.age}</span>
-                </span>
-                <button onClick={() => startEdit(k.id, k.name, k.age)} aria-label="Edit" className="p-1 text-[#1B3722]/50 hover:text-[#1B3722]">
-                  <Pencil className="size-3.5" />
-                </button>
-                <button onClick={() => onRemove(k.id)} aria-label="Remove" className="p-1 text-[#1B3722]/50 hover:text-[#1B3722]">
-                  <Trash2 className="size-3.5" />
-                </button>
-              </>
-            )}
-          </div>
-        ))}
+        {kids.length === 0 && !adding && (
+          <p className="text-sm text-[#1B3722]/60">No kids yet. Add one to give worksheets their name and right age, and keep their saved sheets together. Tap a child to open their profile.</p>
+        )}
+        {kids.map((k) => {
+          const cc = colorClasses(k.color);
+          return (
+            <Link
+              key={k.id}
+              href={`/resources/child/${k.id}`}
+              className="flex items-center gap-2 rounded-full border border-[#2E5A35]/15 bg-white py-1 pr-3 pl-1 transition hover:border-[#2E5A35]/40 hover:shadow-sm"
+            >
+              <span className={`grid size-7 place-items-center rounded-full text-sm font-bold ${cc.bg}`}>{k.name.charAt(0).toUpperCase()}</span>
+              <span className="text-sm font-medium text-[#1B3722]">
+                {k.name} <span className="text-[#1B3722]/50">· {k.age}</span>
+              </span>
+            </Link>
+          );
+        })}
         {adding && (
           <div className="flex items-center gap-1 rounded-full border border-black/10 bg-white px-2 py-1">
             <input value={aName} onChange={(e) => setAName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} placeholder="Name" autoFocus className={`${kidInput} w-24`} />
-            <input type="number" min={3} max={12} value={aAge} onChange={(e) => setAAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} className={`${kidInput} w-12`} />
+            <input type="number" min={3} max={13} value={aAge} onChange={(e) => setAAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} className={`${kidInput} w-12`} />
             <button onClick={add} aria-label="Add" className="grid size-7 place-items-center rounded-full bg-[#2E5A35] text-white">
               <Check className="size-4" />
             </button>
