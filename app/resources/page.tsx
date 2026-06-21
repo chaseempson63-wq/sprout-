@@ -6,6 +6,7 @@ import { useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Globe, Heart, Plus, Search, Star, Trash2, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
+import { Typewriter } from "./_components/Typewriter";
 import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { colorClasses, useResources } from "@/lib/resources/store";
@@ -15,6 +16,9 @@ import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
 const lightCard =
   "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
+
+// Hero: "We were born to ___" cycles the final word only.
+const BORN_TO = ["create", "learn", "grow", "wonder", "explore", "imagine", "discover", "make", "build", "question"];
 
 type Tab = "templates" | "mine" | "community";
 type Creation = { id: string; worksheet: Worksheet; creatorName: string; creatorHandle: string };
@@ -59,8 +63,13 @@ export default function LibraryHome() {
           <SproutMascotIcon className="h-11 w-11" />
         </span>
         <div>
-          <h1 className="text-sprout-cream text-3xl font-bold tracking-[-0.02em]">What should we make today?</h1>
+          <h1 className="text-sprout-cream text-3xl font-bold tracking-[-0.02em]">
+            We were born to <Typewriter words={BORN_TO} className="text-sprout-lime" />
+          </h1>
           <p className="text-sprout-cream/70 mt-1">Pick a worksheet, tell Sprout about your kid, and print it in a minute.</p>
+          <Link href="/resources/privacy" className="text-sprout-cream/55 hover:text-sprout-cream mt-1.5 inline-flex items-center gap-1 text-xs font-medium underline-offset-2 hover:underline">
+            Your data stays yours. See how.
+          </Link>
         </div>
       </div>
 
