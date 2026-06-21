@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight, Globe, Search, Star, Trash2, X } from "lucide-react";
+import { ArrowRight, Check, Globe, Pencil, Search, Star, Trash2, UserPlus, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
 import { ageBand, TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
@@ -21,7 +21,7 @@ function match(q: string, text: string): boolean {
 }
 
 export default function LibraryHome() {
-  const { ready, worksheets, toggleFavorite, togglePublish, removeWorksheet } = useResources();
+  const { ready, kids, worksheets, addChild, updateChild, removeChild, toggleFavorite, togglePublish, removeWorksheet } = useResources();
   const [tab, setTab] = useState<Tab>("templates");
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState<string>("all");
@@ -54,6 +54,9 @@ export default function LibraryHome() {
           <p className="text-sprout-cream/70 mt-1">Pick a worksheet, tell Sprout about your kid, and print it in a minute.</p>
         </div>
       </div>
+
+      {/* kids */}
+      {ready && <KidsManager kids={kids} onAdd={addChild} onUpdate={updateChild} onRemove={removeChild} />}
 
       {/* search */}
       <div className="border-sprout-cream/20 bg-sprout-cream/10 mb-3 flex items-center gap-2 rounded-full border px-4">
@@ -233,6 +236,94 @@ function Viewer({
       </div>
       <div className="mx-auto w-full max-w-3xl px-4 pb-16">
         <WorksheetDoc worksheet={entry.ws} />
+      </div>
+    </div>
+  );
+}
+
+const kidInput = "rounded-lg border border-black/10 bg-white px-2 py-1 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]";
+
+function KidsManager({
+  kids,
+  onAdd,
+  onUpdate,
+  onRemove,
+}: {
+  kids: { id: string; name: string; age: number }[];
+  onAdd: (d: { name: string; age: number; interests: string[]; color: string }) => void;
+  onUpdate: (id: string, patch: { name?: string; age?: number }) => void;
+  onRemove: (id: string) => void;
+}) {
+  const [adding, setAdding] = useState(false);
+  const [aName, setAName] = useState("");
+  const [aAge, setAAge] = useState("7");
+  const [editId, setEditId] = useState<string | null>(null);
+  const [eName, setEName] = useState("");
+  const [eAge, setEAge] = useState("7");
+
+  function startEdit(id: string, name: string, age: number) {
+    setEditId(id);
+    setEName(name);
+    setEAge(String(age));
+  }
+  function saveEdit() {
+    if (editId) onUpdate(editId, { name: eName.trim() || "Kid", age: Math.min(12, Math.max(3, parseInt(eAge, 10) || 7)) });
+    setEditId(null);
+  }
+  function add() {
+    const nm = aName.trim();
+    if (!nm) return;
+    onAdd({ name: nm, age: Math.min(12, Math.max(3, parseInt(aAge, 10) || 7)), interests: [], color: "lime" });
+    setAName("");
+    setAdding(false);
+  }
+
+  return (
+    <div className={`${lightCard} mb-6 p-4`}>
+      <div className="flex items-center justify-between">
+        <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Your kids</h2>
+        {!adding && (
+          <button onClick={() => setAdding(true)} className="inline-flex items-center gap-1 text-sm font-semibold text-[#2E5A35]">
+            <UserPlus className="size-4" /> Add child
+          </button>
+        )}
+      </div>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {kids.length === 0 && !adding && <p className="text-sm text-[#1B3722]/60">No kids yet. Add one so worksheets get their name and the right age.</p>}
+        {kids.map((k) => (
+          <div key={k.id} className="flex items-center gap-1 rounded-full border border-black/10 bg-white px-2 py-1">
+            {editId === k.id ? (
+              <>
+                <input value={eName} onChange={(e) => setEName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && saveEdit()} className={`${kidInput} w-24`} />
+                <input type="number" min={3} max={12} value={eAge} onChange={(e) => setEAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && saveEdit()} className={`${kidInput} w-12`} />
+                <button onClick={saveEdit} aria-label="Save" className="grid size-7 place-items-center rounded-full bg-[#2E5A35] text-white">
+                  <Check className="size-4" />
+                </button>
+              </>
+            ) : (
+              <>
+                <span className="px-1 text-sm font-medium text-[#1B3722]">
+                  {k.name} <span className="text-[#1B3722]/50">· {k.age}</span>
+                </span>
+                <button onClick={() => startEdit(k.id, k.name, k.age)} aria-label="Edit" className="p-1 text-[#1B3722]/50 hover:text-[#1B3722]">
+                  <Pencil className="size-3.5" />
+                </button>
+                <button onClick={() => onRemove(k.id)} aria-label="Remove" className="p-1 text-[#1B3722]/50 hover:text-[#1B3722]">
+                  <Trash2 className="size-3.5" />
+                </button>
+              </>
+            )}
+          </div>
+        ))}
+        {adding && (
+          <div className="flex items-center gap-1 rounded-full border border-black/10 bg-white px-2 py-1">
+            <input value={aName} onChange={(e) => setAName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} placeholder="Name" autoFocus className={`${kidInput} w-24`} />
+            <input type="number" min={3} max={12} value={aAge} onChange={(e) => setAAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} className={`${kidInput} w-12`} />
+            <button onClick={add} aria-label="Add" className="grid size-7 place-items-center rounded-full bg-[#2E5A35] text-white">
+              <Check className="size-4" />
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

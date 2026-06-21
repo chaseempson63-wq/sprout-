@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Check, Download, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { getTemplate } from "@/lib/resources/catalog";
 import { useResources } from "@/lib/resources/store";
@@ -24,7 +24,8 @@ export default function Builder() {
   const [childId, setChildId] = useState("");
   const [age, setAge] = useState(() => (template ? Math.min(12, Math.max(3, Math.round((template.ageMin + template.ageMax) / 2))) : 7));
   const [messages, setMessages] = useState<ChatMessage[]>([]);
-  const [worksheet, setWorksheet] = useState<Worksheet | null>(null);
+  const [variants, setVariants] = useState<Worksheet[]>([]);
+  const [idx, setIdx] = useState(-1);
   const [source, setSource] = useState<"ai" | "template" | null>(null);
   const [loading, setLoading] = useState(false);
   const [input, setInput] = useState("");
@@ -33,32 +34,42 @@ export default function Builder() {
   const [newName, setNewName] = useState("");
   const [newAge, setNewAge] = useState("7");
   const didInit = useRef(false);
+  const variantsRef = useRef<Worksheet[]>([]);
 
   const child = getChild(childId);
   const childName = child?.name;
+  const worksheet = idx >= 0 ? variants[idx] : null;
 
-  async function runGenerate(msgs: ChatMessage[], ageVal: number, kind: "init" | "send" | "silent", nameVal?: string) {
+  function pushVariant(ws: Worksheet) {
+    const next = [...variantsRef.current, ws];
+    variantsRef.current = next;
+    setVariants(next);
+    setIdx(next.length - 1);
+  }
+
+  async function runGenerate(msgs: ChatMessage[], ageVal: number, kind: "init" | "send" | "silent", nameVal?: string, nudge?: string) {
     if (!template) return;
     setLoading(true);
+    const sent = nudge ? [...msgs, { role: "user" as const, content: nudge }] : msgs;
     try {
       const res = await fetch("/api/resources/generate", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ templateId: template.id, age: ageVal, childName: nameVal, messages: msgs }),
+        body: JSON.stringify({ templateId: template.id, age: ageVal, childName: nameVal, messages: sent }),
       });
       if (!res.ok) throw new Error("failed");
       const data = (await res.json()) as { worksheet: Worksheet; source: "ai" | "template" };
-      setWorksheet(data.worksheet);
+      pushVariant(data.worksheet);
       setSource(data.source);
       if (kind === "init") {
         setMessages([
           {
             role: "assistant",
-            content: `Here is a ${data.worksheet.title} worksheet for age ${ageVal}. Tell me what to change: a theme like space or dinosaurs, make it harder or easier, or ask for more questions.`,
+            content: `Here is a ${data.worksheet.title} worksheet for age ${ageVal}. Tell me what to change: a theme like space or dinosaurs, make it harder or easier, add more questions, or hit the arrows to flick through fresh versions.`,
           },
         ]);
       } else if (kind === "send") {
-        setMessages((prev) => [...prev, { role: "assistant", content: "Updated. Anything else you want changed?" }]);
+        setMessages((prev) => [...prev, { role: "assistant", content: "Done, here is the updated version. Anything else?" }]);
       }
     } catch {
       if (kind !== "silent") setMessages((prev) => [...prev, { role: "assistant", content: "Something went wrong. Try that again." }]);
@@ -99,6 +110,16 @@ export default function Builder() {
     if (next === age) return;
     setAge(next);
     void runGenerate(messages, next, "silent", childName);
+  }
+
+  function regenerate() {
+    if (loading) return;
+    void runGenerate(messages, age, "silent", childName, "Make a fresh, different version of this worksheet with different numbers, examples and wording.");
+  }
+
+  function nextVariant() {
+    if (idx < variants.length - 1) setIdx(idx + 1);
+    else regenerate();
   }
 
   function selectKid(id: string, kidAge: number, kidName: string) {
@@ -182,23 +203,8 @@ export default function Builder() {
         ))}
         {addingKid ? (
           <span className="border-sprout-cream/20 bg-sprout-cream/10 inline-flex items-center gap-1 rounded-full border p-1">
-            <input
-              value={newName}
-              onChange={(e) => setNewName(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && addKid()}
-              placeholder="Name"
-              autoFocus
-              className="text-sprout-cream placeholder:text-sprout-cream/40 h-7 w-24 bg-transparent px-2 text-sm outline-none"
-            />
-            <input
-              value={newAge}
-              onChange={(e) => setNewAge(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && addKid()}
-              type="number"
-              min={3}
-              max={12}
-              className="text-sprout-cream h-7 w-12 bg-transparent px-1 text-sm outline-none"
-            />
+            <input value={newName} onChange={(e) => setNewName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addKid()} placeholder="Name" autoFocus className="text-sprout-cream placeholder:text-sprout-cream/40 h-7 w-24 bg-transparent px-2 text-sm outline-none" />
+            <input value={newAge} onChange={(e) => setNewAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addKid()} type="number" min={3} max={12} className="text-sprout-cream h-7 w-12 bg-transparent px-1 text-sm outline-none" />
             <button onClick={addKid} className="bg-[#F4EDE0] text-[#1B3722] grid size-7 place-items-center rounded-full">
               <Check className="size-4" />
             </button>
@@ -216,9 +222,7 @@ export default function Builder() {
           <div className="flex-1 space-y-3 overflow-y-auto p-4">
             {messages.map((m, i) => (
               <div key={i} className={m.role === "user" ? "flex justify-end" : "flex justify-start"}>
-                <div className={`max-w-[85%] rounded-2xl px-3 py-2 text-sm leading-relaxed ${m.role === "user" ? "bg-[#F4EDE0] text-[#1B3722]" : "bg-sprout-cream/10 text-sprout-cream"}`}>
-                  {m.content}
-                </div>
+                <div className={`max-w-[85%] rounded-2xl px-3 py-2 text-sm leading-relaxed ${m.role === "user" ? "bg-[#F4EDE0] text-[#1B3722]" : "bg-sprout-cream/10 text-sprout-cream"}`}>{m.content}</div>
               </div>
             ))}
             {loading && (
@@ -230,7 +234,7 @@ export default function Builder() {
             )}
           </div>
 
-          {source === "template" && <p className="text-sprout-cream/50 px-4 pb-1 text-[11px]">Sample mode. Add a Venice key for full AI generation.</p>}
+          {source === "template" && <p className="text-sprout-cream/50 px-4 pb-1 text-[11px]">Sample mode. Add the Venice key in Vercel for full AI generation.</p>}
 
           <div className="border-sprout-cream/15 flex items-center gap-2 border-t p-3">
             <input
@@ -239,7 +243,7 @@ export default function Builder() {
               onKeyDown={(e) => {
                 if (e.key === "Enter") send();
               }}
-              placeholder="make it about space, make it harder..."
+              placeholder="make it about space, add more questions, harder..."
               className="text-sprout-cream placeholder:text-sprout-cream/40 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none"
             />
             <button onClick={send} disabled={loading || !input.trim()} aria-label="Send" className="bg-[#F4EDE0] text-[#1B3722] grid size-9 shrink-0 place-items-center rounded-full disabled:opacity-40">
@@ -250,6 +254,20 @@ export default function Builder() {
 
         {/* preview */}
         <div className="min-w-0">
+          {/* variation controls */}
+          <div className="no-print mb-3 flex items-center justify-center gap-2">
+            <button onClick={() => idx > 0 && setIdx(idx - 1)} disabled={idx <= 0 || loading} aria-label="Previous" className={`${glassBtn} size-10 px-0`}>
+              <ChevronLeft className="size-4" />
+            </button>
+            <span className="text-sprout-cream/70 min-w-[110px] text-center text-sm">{worksheet ? `Variation ${idx + 1} of ${variants.length}` : "—"}</span>
+            <button onClick={nextVariant} disabled={loading} aria-label="Next / new" className={`${glassBtn} size-10 px-0`}>
+              {loading ? <Loader2 className="size-4 animate-spin" /> : <ChevronRight className="size-4" />}
+            </button>
+            <button onClick={regenerate} disabled={loading} className={`${glassBtn} ml-2`}>
+              <RefreshCw className="size-4" /> New version
+            </button>
+          </div>
+
           {worksheet ? (
             <WorksheetDoc worksheet={worksheet} />
           ) : (
@@ -257,13 +275,6 @@ export default function Builder() {
               <span className="inline-flex items-center gap-2">
                 <Loader2 className="size-4 animate-spin" /> Building your first worksheet
               </span>
-            </div>
-          )}
-          {worksheet && (
-            <div className="no-print mt-3 flex justify-center">
-              <button onClick={() => runGenerate(messages, age, "silent", childName)} disabled={loading} className={glassBtn}>
-                <RefreshCw className="size-4" /> Regenerate
-              </button>
             </div>
           )}
         </div>
