@@ -244,3 +244,31 @@
     animation: none;
   }
 }
+
+/* ──────────────────────────────────────────────────────────────────
+   Print — Sprout Resources. The "Download PDF" button calls
+   window.print(); these rules show only the resource document
+   (.print-area) so worksheets come out clean. .no-print hides chrome
+   and the answer key.
+   ────────────────────────────────────────────────────────────────── */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+  .print-area {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #fff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
