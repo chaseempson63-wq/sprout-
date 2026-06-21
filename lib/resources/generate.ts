@@ -492,4 +492,21 @@ export async function aiWorksheet(
   }
 }
 
+// Temporary diagnostic: does the key reach Venice and what does Venice say.
+export async function diagnoseVenice(key: string): Promise<{ status: number; body: string; model: string }> {
+  const base = process.env.VENICE_BASE_URL || "https://api.venice.ai/api/v1";
+  const model = process.env.VENICE_MODEL || "venice-uncensored-1-2";
+  try {
+    const res = await fetch(`${base}/chat/completions`, {
+      method: "POST",
+      headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
+      body: JSON.stringify({ model, messages: [{ role: "user", content: 'Reply with JSON {"ok":true}' }], max_tokens: 50 }),
+    });
+    const body = await res.text();
+    return { status: res.status, body: body.slice(0, 600), model };
+  } catch (e) {
+    return { status: -1, body: String(e).slice(0, 300), model };
+  }
+}
+
 export { getTemplate };
