@@ -100,8 +100,8 @@ export default function LibraryHome() {
 
       {tab === "templates" && (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {templates.map((t) => (
-            <Link key={t.id} href={`/resources/${t.id}`} className="group block transition hover:-translate-y-0.5">
+          {templates.map((t, i) => (
+            <Link key={t.id} href={`/resources/${t.id}`} style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }} className="group animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500 transition hover:-translate-y-0.5">
               <div className={`${lightCard} h-full p-5`}>
                 <div className="flex items-start justify-between">
                   <span className={`grid size-11 place-items-center rounded-xl text-2xl ${t.accent}`}>{t.emoji}</span>
@@ -162,7 +162,7 @@ export default function LibraryHome() {
               </button>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {communityInSel.map((c, i) => (
-                  <div key={c.id} className={`${lightCard} flex flex-col p-5`}>
+                  <div key={c.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${lightCard} animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-5 duration-500`}>
                     <button onClick={() => setViewing({ ws: c.worksheet })} className="min-w-0 flex-1 text-left">
                       <span className="text-[11px] font-semibold tracking-wide text-[#2E5A35]/70 uppercase">#{i + 1}</span>
                       <h3 className="truncate font-bold text-[#1B3722]">{c.worksheet.title}</h3>
@@ -174,7 +174,7 @@ export default function LibraryHome() {
                       </Link>
                       <button
                         onClick={() => toggleLike(c.id)}
-                        className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm transition ${likedByMe(c.id) ? "bg-rose-100 text-rose-600" : "bg-black/5 text-[#1B3722]/70 hover:bg-black/10"}`}
+                        className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm transition active:scale-90 ${likedByMe(c.id) ? "bg-rose-100 text-rose-600" : "bg-black/5 text-[#1B3722]/70 hover:bg-black/10"}`}
                         aria-label="Like"
                       >
                         <Heart className={`size-4 ${likedByMe(c.id) ? "fill-rose-500 text-rose-500" : ""}`} /> {likeCount(c.id)}
@@ -304,7 +304,7 @@ function KidsManager({
       <div className="mt-4 flex flex-wrap items-start gap-5">
         {/* main account */}
         {account && (
-          <Link href={`/resources/creator/${account.handle}`} className="group flex w-20 flex-col items-center gap-2 text-center">
+          <Link href={`/resources/creator/${account.handle}`} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-20 flex-col items-center gap-2 text-center duration-300">
             {account.photo ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={account.photo} alt="" className={`size-16 rounded-2xl object-cover ${tileRing}`} />
@@ -316,10 +316,10 @@ function KidsManager({
           </Link>
         )}
         {/* kid sub-profiles */}
-        {kids.map((k) => {
+        {kids.map((k, i) => {
           const cc = colorClasses(k.color);
           return (
-            <Link key={k.id} href={`/resources/child/${k.id}`} className="group flex w-20 flex-col items-center gap-2 text-center">
+            <Link key={k.id} href={`/resources/child/${k.id}`} style={{ animationDelay: `${(i + 1) * 60}ms` }} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-20 flex-col items-center gap-2 text-center duration-300">
               <span className={`grid size-16 place-items-center rounded-2xl text-xl font-bold ${cc.bg} ${tileRing}`}>{k.name.charAt(0).toUpperCase()}</span>
               <span className={tileLabel}>{k.name}</span>
               <span className={tileSub}>age {k.age}</span>
@@ -328,7 +328,7 @@ function KidsManager({
         })}
         {/* add a child */}
         {!adding ? (
-          <button onClick={() => setAdding(true)} className="group flex w-20 flex-col items-center gap-2 text-center">
+          <button onClick={() => setAdding(true)} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-20 flex-col items-center gap-2 text-center duration-300">
             <span className="grid size-16 place-items-center rounded-2xl border-2 border-dashed border-[#2E5A35]/30 text-[#2E5A35] transition group-hover:border-[#2E5A35]/60 group-hover:bg-[#2E5A35]/5">
               <Plus className="size-6" />
             </span>

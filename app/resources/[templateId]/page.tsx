@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
+import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY } from "@/lib/resources/intent";
 import { useResources } from "@/lib/resources/store";
@@ -46,6 +47,8 @@ export default function Builder() {
   const child = getChild(childId);
   const childName = child?.name;
   const worksheet = idx >= 0 ? variants[idx] : null;
+  const lastUser = [...messages].reverse().find((m) => m.role === "user")?.content ?? "";
+  const agentSteps = buildSteps(template?.title ?? "worksheet", age, lastUser);
 
   function pushVariant(ws: Worksheet) {
     const next = [...variantsRef.current, ws];
@@ -57,6 +60,7 @@ export default function Builder() {
   async function runGenerate(msgs: ChatMessage[], ageVal: number, kind: "init" | "send" | "silent", nameVal?: string, nudge?: string) {
     if (!template) return;
     setLoading(true);
+    const start = Date.now();
     const sent = nudge ? [...msgs, { role: "user" as const, content: nudge }] : msgs;
     try {
       const res = await fetch("/api/resources/generate", {
@@ -81,6 +85,8 @@ export default function Builder() {
     } catch {
       if (kind !== "silent") setMessages((prev) => [...prev, { role: "assistant", content: "Something went wrong. Try that again." }]);
     } finally {
+      const elapsed = Date.now() - start;
+      if (elapsed < 900) await new Promise((r) => window.setTimeout(r, 900 - elapsed));
       setLoading(false);
     }
   }
@@ -227,15 +233,21 @@ export default function Builder() {
         {/* chat */}
         <div className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] flex h-[70vh] flex-col rounded-2xl border lg:sticky lg:top-20">
           <div className="flex-1 space-y-3 overflow-y-auto p-4">
-            {messages.map((m, i) => (
-              <div key={i} className={m.role === "user" ? "flex justify-end" : "flex justify-start"}>
-                <div className={`max-w-[85%] rounded-2xl px-3 py-2 text-sm leading-relaxed ${m.role === "user" ? "bg-[#F4EDE0] text-[#1B3722]" : "bg-sprout-cream/10 text-sprout-cream"}`}>{m.content}</div>
-              </div>
-            ))}
+            {messages.map((m, i) =>
+              m.role === "user" ? (
+                <div key={i} className="animate-in fade-in slide-in-from-bottom-1 flex justify-end duration-200">
+                  <div className="max-w-[85%] rounded-2xl bg-[#F4EDE0] px-3 py-2 text-sm leading-relaxed text-[#1B3722]">{m.content}</div>
+                </div>
+              ) : (
+                <div key={i} className="animate-in fade-in slide-in-from-bottom-1 flex justify-start duration-200">
+                  <AssistantBubble text={m.content} />
+                </div>
+              ),
+            )}
             {loading && (
-              <div className="flex justify-start">
-                <div className="bg-sprout-cream/10 text-sprout-cream/80 inline-flex items-center gap-2 rounded-2xl px-3 py-2 text-sm">
-                  <Loader2 className="size-4 animate-spin" /> Working on it
+              <div className="animate-in fade-in flex justify-start">
+                <div className="bg-sprout-cream/10 rounded-2xl px-3.5 py-3">
+                  <TypingDots />
                 </div>
               </div>
             )}
@@ -274,8 +286,8 @@ export default function Builder() {
               placeholder="make it about space, add more questions, harder..."
               className="text-sprout-cream placeholder:text-sprout-cream/40 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none"
             />
-            <button onClick={send} disabled={loading || !input.trim()} aria-label="Send" className="bg-[#F4EDE0] text-[#1B3722] grid size-9 shrink-0 place-items-center rounded-full disabled:opacity-40">
-              <Send className="size-4" />
+            <button onClick={send} disabled={loading || !input.trim()} aria-label="Send" className="bg-[#F4EDE0] text-[#1B3722] grid size-9 shrink-0 place-items-center rounded-full transition active:scale-95 disabled:opacity-40">
+              {loading ? <Loader2 className="size-4 animate-spin" /> : <Send className="size-4" />}
             </button>
           </div>
         </div>
@@ -337,15 +349,107 @@ export default function Builder() {
                 </button>
               ))}
             </div>
+          ) : loading ? (
+            <ThinkingTrace steps={agentSteps} />
           ) : worksheet ? (
-            <WorksheetDoc worksheet={worksheet} />
+            <div key={idx} className="animate-in fade-in zoom-in-95 slide-in-from-bottom-3 fill-mode-both duration-500">
+              <WorksheetDoc worksheet={worksheet} />
+            </div>
           ) : (
             <div className="text-sprout-cream/60 flex h-[60vh] items-center justify-center rounded-2xl border border-dashed border-sprout-cream/20 text-sm">
-              <span className="inline-flex items-center gap-2">
-                <Loader2 className="size-4 animate-spin" /> Building your first worksheet
-              </span>
+              Pick a child or hit New version and Sprout will build one.
             </div>
           )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Agentic build steps, shaped by what the parent just asked for.
+function buildSteps(templateTitle: string, age: number, lastUser: string): string[] {
+  const u = lastUser.toLowerCase();
+  const steps = [`Reading the ${templateTitle.toLowerCase()} intent`];
+  const theme = INPUT_VOCABULARY.themes.find((t) => u.includes(t.label.toLowerCase()) || u.includes(t.key));
+  if (theme) steps.push(`Theming it around ${theme.label.toLowerCase()}`);
+  if (u.includes("harder") || u.includes("challeng")) steps.push("Turning up the difficulty");
+  else if (u.includes("easier") || u.includes("simpl")) steps.push("Making it a little gentler");
+  if (u.includes("more")) steps.push("Adding more problems");
+  steps.push(`Writing real problems for age ${age}`, "Laying out the page", "Checking the answer key");
+  return steps;
+}
+
+function TypingDots() {
+  return (
+    <span className="flex items-center gap-1">
+      {[0, 1, 2].map((i) => (
+        <span key={i} className="bg-sprout-cream/60 size-1.5 animate-bounce rounded-full" style={{ animationDelay: `${i * 150}ms` }} />
+      ))}
+    </span>
+  );
+}
+
+// Reveals the assistant message word-by-word so replies feel typed, not pasted.
+function AssistantBubble({ text }: { text: string }) {
+  const [shown, setShown] = useState("");
+  const [done, setDone] = useState(false);
+  useEffect(() => {
+    const words = text.split(" ");
+    let i = 0;
+    const t = window.setInterval(() => {
+      i += 1;
+      setShown(words.slice(0, i).join(" "));
+      if (i >= words.length) {
+        window.clearInterval(t);
+        setDone(true);
+      }
+    }, 32);
+    return () => window.clearInterval(t);
+  }, [text]);
+  return (
+    <div className="bg-sprout-cream/10 text-sprout-cream max-w-[85%] rounded-2xl px-3 py-2 text-sm leading-relaxed">
+      {shown || "​"}
+      {!done && <span className="bg-sprout-cream/70 ml-0.5 inline-block h-3.5 w-px -translate-y-px animate-pulse align-middle" />}
+    </div>
+  );
+}
+
+// The live "agent at work" trace that plays where the worksheet will land.
+function ThinkingTrace({ steps }: { steps: string[] }) {
+  const [active, setActive] = useState(0);
+  useEffect(() => {
+    if (active >= steps.length - 1) return;
+    const t = window.setTimeout(() => setActive((a) => Math.min(a + 1, steps.length - 1)), 720);
+    return () => window.clearTimeout(t);
+  }, [active, steps.length]);
+  return (
+    <div className="border-sprout-cream/20 bg-sprout-cream/[0.04] flex h-[60vh] items-center justify-center rounded-2xl border border-dashed p-6">
+      <div className="w-full max-w-sm">
+        <div className="mb-5 flex items-center gap-3">
+          <span className="bg-sprout-cream/95 grid size-11 shrink-0 place-items-center rounded-2xl shadow">
+            <SproutMascotIcon className="animate-mascot-float h-7 w-7" />
+          </span>
+          <div>
+            <p className="text-sprout-cream font-semibold">Sprout is building it</p>
+            <p className="text-sprout-cream/50 text-xs">grounded in real examples, never filler</p>
+          </div>
+        </div>
+        <div className="space-y-2.5">
+          {steps.slice(0, active + 1).map((s, i) => {
+            const current = i === active;
+            return (
+              <div key={i} className="animate-in fade-in slide-in-from-bottom-1 fill-mode-both flex items-center gap-2.5 duration-300">
+                {current ? (
+                  <Loader2 className="text-sprout-lime size-4 shrink-0 animate-spin" />
+                ) : (
+                  <span className="bg-sprout-lime/20 text-sprout-lime grid size-4 shrink-0 place-items-center rounded-full">
+                    <Check className="size-3" />
+                  </span>
+                )}
+                <span className={`text-sm ${current ? "text-sprout-cream" : "text-sprout-cream/55"}`}>{s}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
