@@ -22,7 +22,7 @@ export default function Builder() {
   const { kids, addChild, getChild, saveWorksheet } = useResources();
 
   const [childId, setChildId] = useState("");
-  const [age, setAge] = useState(() => (template ? Math.min(12, Math.max(3, Math.round((template.ageMin + template.ageMax) / 2))) : 7));
+  const [age, setAge] = useState(() => (template ? Math.min(13, Math.max(3, Math.round((template.ageMin + template.ageMax) / 2))) : 7));
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [variants, setVariants] = useState<Worksheet[]>([]);
   const [idx, setIdx] = useState(-1);
@@ -106,7 +106,7 @@ export default function Builder() {
   }
 
   function changeAge(delta: number) {
-    const next = Math.min(12, Math.max(3, age + delta));
+    const next = Math.min(13, Math.max(3, age + delta));
     if (next === age) return;
     setAge(next);
     void runGenerate(messages, next, "silent", childName);

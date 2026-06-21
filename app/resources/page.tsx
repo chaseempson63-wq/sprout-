@@ -10,7 +10,8 @@ import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { useResources } from "@/lib/resources/store";
 import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
-const lightCard = "rounded-2xl bg-[#F7F2E7] border border-black/5 shadow-[0_12px_30px_-14px_rgba(0,0,0,0.45)]";
+const lightCard =
+  "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
 const glassBtn =
   "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-sprout-cream/10 border border-sprout-cream/20 text-sprout-cream text-sm font-semibold hover:bg-sprout-cream/15 transition-colors";
 

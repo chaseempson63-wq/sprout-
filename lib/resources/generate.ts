@@ -52,7 +52,7 @@ function rint(min: number, max: number): number {
 
 // Difficulty rises with age AND with explicit "harder/easier" asks.
 function scaleFactor(age: number, diff: number): number {
-  const byAge = 0.5 + (Math.min(12, Math.max(3, age)) - 3) * 0.18; // 0.5 at age 3 -> ~2.1 at age 12
+  const byAge = 0.4 + (Math.min(13, Math.max(3, age)) - 3) * 0.22; // ~0.4 at age 3 -> ~2.6 at age 13
   const byAsk = diff === 1 ? 1.6 : diff === -1 ? 0.6 : 1;
   return byAge * byAsk;
 }
@@ -346,8 +346,9 @@ const SYSTEM = [
   'Block = {"kind":string,"prompt"?:string,"text"?:string,"items"?:[string],"pairs"?:[{"left":string,"right":string}],"emoji"?:string,"wordBank"?:[string],"rows"?:number,"answers"?:[string]}.',
   "Allowed kinds: instructions, trace, handwriting, fill-blank, word-bank, math, column-math, count, matching, multiple-choice, short-answer, missing-numbers, passage, draw.",
   "FILL A FULL A4 PAGE. A worksheet must be substantial: practice sheets need 12 to 20 items; reading needs a passage of 6 to 10 sentences plus 4 to 6 questions; tracing needs several rows. Never return a tiny 2-3 item sheet.",
-  "Difficulty MUST match the age (a 4 year old: numbers under 10, single letters; a 10-12 year old: larger numbers, multi-step, longer text). Put real gaps with ____ where the child writes.",
-  "math/column-math items look like '7 + 8 ='. Money MUST use a $ sign and real change problems. For count, set emoji and items to the quantities to draw. For matching use pairs. For missing-numbers, items are sequences containing ____ .",
+  "Difficulty MUST scale to the EXACT age on this ladder: 3-4 = numbers to 5, single letters, tracing, matching; 5-6 = numbers to 20, simple sounds and CVC words; 7-8 = numbers to 100, times tables, two-step ideas; 9-10 = multi-digit add/sub/multiply, division, simple fractions, longer reading; 11-13 = multi-digit and multi-step problems, fractions and decimals, place value to thousands, richer writing.",
+  "HARDER means genuinely MORE COMPLEX: bigger and multi-digit numbers, carrying/borrowing, more steps, harder vocabulary. NEVER just reshuffle the same answers (do not give 10+11 and 9+12). Every item must be distinct and non-trivial.",
+  "Use PLAIN TEXT only: no LaTeX, no markdown, no $ around math. math/column-math hold ONLY bare equations like '24 × 37 =' or '156 + 88 ='; put any word problems in SHORT-ANSWER blocks, never in math blocks. Money uses a $ sign for amounts and real change problems. For count, set emoji and items to the quantities to draw. For matching use pairs. For missing-numbers, items are sequences containing ____ . For draw and creativity, harder means more parts to label and a more detailed subject. Put real gaps with ____ where the child writes.",
   "Treat each parent message as an EDIT to the current worksheet: 'add more' or 'longer' means add items and blocks; 'more in depth' or 'more questions' means add richer questions; 'harder'/'easier' changes difficulty; a theme word re-themes everything. Always return the FULL updated worksheet, not a fragment.",
   "If asked to regenerate or for a different version, keep the same type but change the numbers, wording and examples so it is genuinely different.",
   "If a child's name is given, use it in word problems and the story; if no name is given, address the child as 'you' and never invent a name. Always include an 'answers' array for blocks with correct answers. Keep language warm and simple. Do not put raw line breaks inside JSON string values.",
@@ -448,27 +449,22 @@ export async function aiWorksheet(
   childName?: string,
 ): Promise<Worksheet | null> {
   const base = process.env.VENICE_BASE_URL || "https://api.venice.ai/api/v1";
-  const model = process.env.VENICE_MODEL || "venice-uncensored-1-2";
+  const model = process.env.VENICE_MODEL || "qwen3-235b-a22b-instruct-2507";
   const msgs = buildMessages(template, age, messages, childName);
-  const call = (useFormat: boolean) =>
-    fetch(`${base}/chat/completions`, {
+  try {
+    const res = await fetch(`${base}/chat/completions`, {
       method: "POST",
       headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
       body: JSON.stringify({
         model,
         messages: msgs,
-        temperature: 0.8,
-        max_tokens: 3500,
-        ...(useFormat ? { response_format: { type: "json_object" } } : {}),
+        temperature: 0.7,
+        max_tokens: 4000,
+        // Venice's own injected system prompt interferes with strict JSON output.
+        venice_parameters: { include_venice_system_prompt: false },
       }),
     });
-  try {
-    let res = await call(true);
-    if (!res.ok) {
-      // Some models reject response_format; retry without it.
-      res = await call(false);
-      if (!res.ok) return null;
-    }
+    if (!res.ok) return null;
     const data = (await res.json()) as { choices?: { message?: { content?: string } }[] };
     const text = data?.choices?.[0]?.message?.content;
     if (!text) return null;

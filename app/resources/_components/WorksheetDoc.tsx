@@ -77,40 +77,66 @@ function BlockView({ block }: { block: WorksheetBlock }) {
         </div>
       );
 
-    case "math":
+    case "math": {
+      const items = (block.items ?? []).map((p) => p.replace(/_{2,}\s*$/, "").trim());
+      const isWord = (s: string) => /[a-zA-Z]{3,}/.test(s); // a word problem slipped into a math block
+      const eqs = items.filter((s) => !isWord(s));
+      const words = items.filter(isWord);
       return (
         <div>
           {prompt}
-          <div className="mt-3 grid grid-cols-2 gap-x-8 gap-y-4 sm:grid-cols-3">
-            {(block.items ?? []).map((p, i) => (
-              <div key={i} className="flex items-center text-[17px] text-[#1B3722]">
-                <span className="mr-1 text-[#2E5A35]/70">{i + 1}.</span>
-                <span className="font-medium">{p.replace(/_{2,}\s*$/, "").trim()}</span>
-                <AnswerBox />
-              </div>
-            ))}
-          </div>
+          {eqs.length > 0 && (
+            <div className="mt-3 grid grid-cols-2 gap-x-8 gap-y-4 sm:grid-cols-3">
+              {eqs.map((p, i) => (
+                <div key={i} className="flex items-center text-[17px] text-[#1B3722]">
+                  <span className="mr-1 text-[#2E5A35]/70">{i + 1}.</span>
+                  <span className="font-medium">{p}</span>
+                  <AnswerBox />
+                </div>
+              ))}
+            </div>
+          )}
+          {words.length > 0 && (
+            <ol className="mt-3 space-y-4 text-[15px] text-[#1B3722]">
+              {words.map((q, i) => (
+                <li key={i}>
+                  <span className="mr-2 font-semibold text-[#2E5A35]">{eqs.length + i + 1}.</span>
+                  {q}
+                  <Lines count={2} />
+                </li>
+              ))}
+            </ol>
+          )}
         </div>
       );
+    }
 
     case "column-math":
       return (
         <div>
           {prompt}
-          <div className="mt-3 flex flex-wrap gap-6">
+          <div className="mt-3 flex flex-wrap gap-x-10 gap-y-6">
             {(block.items ?? []).map((p, i) => {
-              const m = p.match(/(\d+)\s*([+\-−×])\s*(\d+)/);
-              const a = m?.[1] ?? p;
-              const op = m?.[2] ?? "+";
-              const b = m?.[3] ?? "";
-              return (
-                <div key={i} className="w-24 font-mono text-[18px] text-[#1B3722]">
-                  <div className="text-right">{a}</div>
-                  <div className="flex justify-between border-b-2 border-[#1B3722] pb-1">
-                    <span>{op}</span>
-                    <span>{b}</span>
+              const clean = p.replace(/=/g, "").replace(/_+/g, "").replace(/\s+/g, " ").trim();
+              const m = clean.match(/^(\d[\d,]*)\s*([+\-−×÷])\s*(\d[\d,]*)$/);
+              if (m) {
+                return (
+                  <div key={i} className="w-28 font-mono text-[18px] text-[#1B3722]">
+                    <div className="text-right">{m[1]}</div>
+                    <div className="flex justify-between border-b-2 border-[#1B3722] pb-1">
+                      <span>{m[2]}</span>
+                      <span>{m[3]}</span>
+                    </div>
+                    <div className="h-8" />
                   </div>
-                  <div className="h-8" />
+                );
+              }
+              // multi-addend / decimals / anything complex: render inline with an answer box
+              return (
+                <div key={i} className="flex w-full items-center text-[16px] text-[#1B3722] sm:w-[46%]">
+                  <span className="mr-1 text-[#2E5A35]/70">{i + 1}.</span>
+                  <span className="font-medium">{clean} =</span>
+                  <AnswerBox />
                 </div>
               );
             })}

@@ -30,7 +30,7 @@ export async function POST(request: Request) {
   if (!template) return Response.json({ error: "Unknown template" }, { status: 400 });
 
   const ageNum = Number(o.age);
-  const age = Number.isFinite(ageNum) ? Math.min(12, Math.max(3, Math.round(ageNum))) : 7;
+  const age = Number.isFinite(ageNum) ? Math.min(13, Math.max(3, Math.round(ageNum))) : 7;
   const childName = typeof o.childName === "string" ? o.childName.trim().slice(0, 40) : undefined;
 
   const messages: ChatMessage[] = Array.isArray(o.messages)
