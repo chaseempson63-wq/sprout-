@@ -19,7 +19,7 @@ import {
   Star,
   Trash2,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { GlassCard } from "../../_components/Glass";
 import { RESOURCE_META, RESOURCE_ORDER } from "@/lib/resources/catalog";
 import { colorClasses, useResources } from "@/lib/resources/store";
 import type { Difficulty, GeneratedResource, GenerateInput, ResourceType, SavedResource } from "@/lib/resources/types";
@@ -42,7 +42,13 @@ const DIFFICULTIES: { key: Difficulty; label: string }[] = [
 ];
 
 const inputCls =
-  "w-full rounded-lg border border-border bg-white px-3 py-2 text-sm outline-none focus:border-sprout-forest focus:ring-2 focus:ring-sprout-forest/20";
+  "w-full rounded-xl bg-sprout-cream/10 border border-sprout-cream/20 px-3 py-2.5 text-sm text-sprout-cream placeholder:text-sprout-cream/40 outline-none focus:border-sprout-cream/40 focus:bg-sprout-cream/15 transition-colors";
+const primaryBtn =
+  "inline-flex items-center justify-center gap-2 h-11 px-5 rounded-full bg-[#F4EDE0] text-[#1B3722] font-bold text-sm hover:bg-[#FBF6EB] transition-colors disabled:opacity-50";
+const glassBtn =
+  "inline-flex items-center justify-center gap-2 h-11 px-5 rounded-full bg-sprout-cream/10 border border-sprout-cream/20 text-sprout-cream text-sm font-semibold hover:bg-sprout-cream/15 transition-colors backdrop-blur-md disabled:opacity-50";
+const ghostBtn =
+  "inline-flex items-center justify-center gap-2 h-11 px-4 rounded-full text-sprout-cream/80 text-sm font-semibold hover:text-sprout-cream hover:bg-sprout-cream/10 transition-colors";
 
 export default function ChildSpace() {
   const params = useParams();
@@ -67,15 +73,15 @@ export default function ChildSpace() {
   if (ready && !child) {
     return (
       <div className="py-20 text-center">
-        <p className="text-muted-foreground">That child was not found.</p>
-        <Button className="mt-4" onClick={() => router.push("/resources")}>
+        <p className="text-sprout-cream/70">That child was not found.</p>
+        <button className={`${primaryBtn} mt-4`} onClick={() => router.push("/resources")}>
           Back to children
-        </Button>
+        </button>
       </div>
     );
   }
   if (!ready || !child) {
-    return <div className="text-muted-foreground py-20 text-center text-sm">Loading…</div>;
+    return <div className="text-sprout-cream/60 py-20 text-center text-sm">Loading…</div>;
   }
 
   const cc = colorClasses(child.color);
@@ -151,27 +157,27 @@ export default function ChildSpace() {
   return (
     <div>
       {toast && (
-        <div className="no-print bg-sprout-ink text-sprout-cream fixed bottom-6 left-1/2 z-30 -translate-x-1/2 rounded-full px-4 py-2 text-sm shadow-lg">
+        <div className="no-print text-sprout-cream border-sprout-cream/15 fixed bottom-6 left-1/2 z-30 -translate-x-1/2 rounded-full border bg-[#0F1A12] px-4 py-2 text-sm shadow-lg">
           {toast}
         </div>
       )}
 
-      <div className="no-print mb-6 flex items-center justify-between gap-3">
+      <div className="no-print mb-8 flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <span className={`font-display grid size-11 place-items-center rounded-full text-lg ${cc.bg}`}>
+          <span className={`grid size-11 place-items-center rounded-full text-lg font-bold ${cc.bg}`}>
             {child.name.charAt(0).toUpperCase()}
           </span>
           <div>
-            <h1 className="font-display text-2xl leading-none tracking-tight">{child.name}</h1>
-            <p className="text-muted-foreground text-xs">
+            <h1 className="text-sprout-cream text-2xl leading-none font-bold tracking-[-0.02em]">{child.name}</h1>
+            <p className="text-sprout-cream/60 mt-1 text-xs">
               Age {child.age}
               {child.level ? ` · ${child.level}` : ""}
             </p>
           </div>
         </div>
-        <Button variant="ghost" onClick={() => router.push("/resources")}>
+        <button className={ghostBtn} onClick={() => router.push("/resources")}>
           <ArrowLeft className="size-4" /> Switch child
-        </Button>
+        </button>
       </div>
 
       {viewing && (
@@ -193,68 +199,70 @@ export default function ChildSpace() {
 
       {showBrowse && (
         <>
-          <h2 className="font-display text-xl">What would you like to make for {child.name} today?</h2>
+          <h2 className="text-sprout-cream text-xl font-bold tracking-[-0.01em]">
+            What would you like to make for {child.name} today?
+          </h2>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {RESOURCE_ORDER.map((t) => {
               const Icon = ICONS[t];
               const m = RESOURCE_META[t];
               return (
-                <button
-                  key={t}
-                  onClick={() => startType(t)}
-                  className="group border-border hover:border-sprout-forest/40 flex items-start gap-3 rounded-2xl border bg-white p-4 text-left shadow-sm transition hover:shadow-md"
-                >
-                  <span className="bg-sprout-forest/10 text-sprout-forest grid size-10 shrink-0 place-items-center rounded-xl">
-                    <Icon className="size-5" />
-                  </span>
-                  <span>
-                    <span className="block font-semibold">{m.label}</span>
-                    <span className="text-muted-foreground mt-0.5 block text-xs">{m.tagline}</span>
-                  </span>
+                <button key={t} onClick={() => startType(t)} className="group block text-left transition hover:-translate-y-0.5">
+                  <GlassCard className="rounded-2xl p-4" soft>
+                    <div className="flex items-start gap-3">
+                      <span className="bg-sprout-cream/10 grid size-10 shrink-0 place-items-center rounded-xl text-[#A4C9A8]">
+                        <Icon className="size-5" />
+                      </span>
+                      <span>
+                        <span className="text-sprout-cream block font-bold">{m.label}</span>
+                        <span className="text-sprout-cream/60 mt-0.5 block text-xs">{m.tagline}</span>
+                      </span>
+                    </div>
+                  </GlassCard>
                 </button>
               );
             })}
           </div>
 
           <div className="mt-10">
-            <h2 className="font-display text-xl">{child.name + "'s library"}</h2>
+            <h2 className="text-sprout-cream text-xl font-bold tracking-[-0.01em]">{child.name + "'s library"}</h2>
             {library.length === 0 ? (
-              <p className="text-muted-foreground mt-2 text-sm">
-                Nothing saved yet. Make something above and save it here.
-              </p>
+              <p className="text-sprout-cream/60 mt-2 text-sm">Nothing saved yet. Make something above and save it here.</p>
             ) : (
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 {library.map((r) => (
-                  <div key={r.id} className="border-border flex items-center justify-between gap-3 rounded-xl border bg-white p-3 shadow-sm">
-                    <button onClick={() => setViewing(r)} className="min-w-0 flex-1 text-left">
-                      <span className="flex items-center gap-2">
-                        {r.favorite && <Star className="size-3.5 fill-amber-400 text-amber-400" />}
-                        <span className="truncate font-medium">{r.title}</span>
-                      </span>
-                      <span className="text-muted-foreground mt-0.5 block text-xs">
-                        {RESOURCE_META[r.meta.type].label} · {new Date(r.createdAt).toLocaleDateString()}
-                      </span>
-                    </button>
-                    <div className="flex shrink-0 items-center gap-1">
-                      <button
-                        onClick={() => toggleFavorite(r.id)}
-                        aria-label="Favorite"
-                        className="hover:bg-muted text-muted-foreground rounded-md p-1.5"
-                      >
-                        <Star className={`size-4 ${r.favorite ? "fill-amber-400 text-amber-400" : ""}`} />
+                  <GlassCard key={r.id} className="rounded-xl p-3" soft>
+                    <div className="flex items-center justify-between gap-3">
+                      <button onClick={() => setViewing(r)} className="min-w-0 flex-1 text-left">
+                        <span className="flex items-center gap-2">
+                          {r.favorite && <Star className="size-3.5 fill-amber-300 text-amber-300" />}
+                          <span className="text-sprout-cream truncate font-medium">{r.title}</span>
+                        </span>
+                        <span className="text-sprout-cream/55 mt-0.5 block text-xs">
+                          {RESOURCE_META[r.meta.type].label} · {new Date(r.createdAt).toLocaleDateString()}
+                        </span>
                       </button>
-                      <button
-                        onClick={() => {
-                          removeResource(r.id);
-                          showToast("Deleted");
-                        }}
-                        aria-label="Delete"
-                        className="hover:bg-muted text-muted-foreground rounded-md p-1.5"
-                      >
-                        <Trash2 className="size-4" />
-                      </button>
+                      <div className="flex shrink-0 items-center gap-1">
+                        <button
+                          onClick={() => toggleFavorite(r.id)}
+                          aria-label="Favorite"
+                          className="text-sprout-cream/70 hover:bg-sprout-cream/10 hover:text-sprout-cream rounded-md p-1.5"
+                        >
+                          <Star className={`size-4 ${r.favorite ? "fill-amber-300 text-amber-300" : ""}`} />
+                        </button>
+                        <button
+                          onClick={() => {
+                            removeResource(r.id);
+                            showToast("Deleted");
+                          }}
+                          aria-label="Delete"
+                          className="text-sprout-cream/70 hover:bg-sprout-cream/10 hover:text-sprout-cream rounded-md p-1.5"
+                        >
+                          <Trash2 className="size-4" />
+                        </button>
+                      </div>
                     </div>
-                  </div>
+                  </GlassCard>
                 ))}
               </div>
             )}
@@ -263,21 +271,21 @@ export default function ChildSpace() {
       )}
 
       {showForm && type && (
-        <div className="border-border rounded-2xl border bg-white p-5 shadow-sm sm:p-6">
-          <div className="text-sprout-forest flex items-center gap-2">
+        <GlassCard className="rounded-3xl p-5 sm:p-6" soft>
+          <div className="text-sprout-cream flex items-center gap-2">
             {(() => {
               const Icon = ICONS[type];
-              return <Icon className="size-5" />;
+              return <Icon className="size-5 text-[#A4C9A8]" />;
             })()}
-            <h2 className="font-display text-xl">{RESOURCE_META[type].label}</h2>
+            <h2 className="text-xl font-bold">{RESOURCE_META[type].label}</h2>
           </div>
-          <p className="text-muted-foreground mt-1 text-sm">
+          <p className="text-sprout-cream/70 mt-1 text-sm">
             For {child.name}, age {child.age}. Change anything below, then generate.
           </p>
 
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             <label className="block sm:col-span-2">
-              <span className="mb-1 block text-sm font-medium">Topic</span>
+              <span className="text-sprout-cream/90 mb-1.5 block text-sm font-medium">Topic</span>
               <input
                 className={inputCls}
                 value={topic}
@@ -287,29 +295,26 @@ export default function ChildSpace() {
               />
             </label>
             <label className="block">
-              <span className="mb-1 block text-sm font-medium">Subject</span>
+              <span className="text-sprout-cream/90 mb-1.5 block text-sm font-medium">Subject</span>
               <input className={inputCls} value={subject} onChange={(e) => setSubject(e.target.value)} />
             </label>
             <label className="block">
-              <span className="mb-1 block text-sm font-medium">Interests</span>
-              <input
-                className={inputCls}
-                value={interests}
-                onChange={(e) => setInterests(e.target.value)}
-                placeholder="horses, space"
-              />
+              <span className="text-sprout-cream/90 mb-1.5 block text-sm font-medium">Interests</span>
+              <input className={inputCls} value={interests} onChange={(e) => setInterests(e.target.value)} placeholder="horses, space" />
             </label>
           </div>
 
           <div className="mt-4">
-            <span className="mb-1 block text-sm font-medium">Difficulty</span>
-            <div className="border-border inline-flex rounded-lg border p-0.5">
+            <span className="text-sprout-cream/90 mb-1.5 block text-sm font-medium">Difficulty</span>
+            <div className="border-sprout-cream/20 inline-flex rounded-xl border p-0.5">
               {DIFFICULTIES.map((d) => (
                 <button
                   key={d.key}
                   onClick={() => setDifficulty(d.key)}
-                  className={`rounded-md px-3 py-1.5 text-sm transition ${
-                    difficulty === d.key ? "bg-sprout-forest text-sprout-cream" : "text-muted-foreground hover:text-foreground"
+                  className={`rounded-lg px-3 py-1.5 text-sm transition ${
+                    difficulty === d.key
+                      ? "bg-[#F4EDE0] font-semibold text-[#1B3722]"
+                      : "text-sprout-cream/70 hover:text-sprout-cream"
                   }`}
                 >
                   {d.label}
@@ -318,15 +323,10 @@ export default function ChildSpace() {
             </div>
           </div>
 
-          {error && <p className="text-destructive mt-4 text-sm">{error}</p>}
+          {error && <p className="mt-4 text-sm text-rose-200">{error}</p>}
 
           <div className="mt-6 flex flex-wrap gap-2">
-            <Button
-              size="lg"
-              onClick={generate}
-              disabled={generating}
-              className="bg-sprout-lime text-sprout-ink hover:bg-sprout-lime/90"
-            >
+            <button className={primaryBtn} onClick={generate} disabled={generating}>
               {generating ? (
                 <>
                   <Loader2 className="size-4 animate-spin" /> Generating…
@@ -336,31 +336,31 @@ export default function ChildSpace() {
                   <Sparkles className="size-4" /> Generate
                 </>
               )}
-            </Button>
-            <Button size="lg" variant="ghost" onClick={resetToBrowse} disabled={generating}>
+            </button>
+            <button className={ghostBtn} onClick={resetToBrowse} disabled={generating}>
               Cancel
-            </Button>
+            </button>
           </div>
-        </div>
+        </GlassCard>
       )}
 
       {showResult && result && (
         <div>
           <div className="no-print mb-4 flex flex-wrap items-center gap-2">
-            <Button size="lg" onClick={save} className="bg-sprout-forest text-sprout-cream hover:bg-sprout-forest/90">
+            <button className={primaryBtn} onClick={save}>
               <Check className="size-4" /> {`Save to ${child.name}'s library`}
-            </Button>
-            <Button size="lg" variant="outline" onClick={() => window.print()}>
+            </button>
+            <button className={glassBtn} onClick={() => window.print()}>
               <Download className="size-4" /> Download PDF
-            </Button>
-            <Button size="lg" variant="outline" onClick={generate} disabled={generating}>
+            </button>
+            <button className={glassBtn} onClick={generate} disabled={generating}>
               {generating ? <Loader2 className="size-4 animate-spin" /> : <RefreshCw className="size-4" />} Regenerate
-            </Button>
-            <Button size="lg" variant="ghost" onClick={resetToBrowse}>
+            </button>
+            <button className={ghostBtn} onClick={resetToBrowse}>
               Start over
-            </Button>
+            </button>
             {result.source === "template" && (
-              <span className="text-muted-foreground ml-auto text-xs">Sample mode · add a Venice key for full AI</span>
+              <span className="text-sprout-cream/55 ml-auto text-xs">Sample mode · add a Venice key for full AI</span>
             )}
           </div>
           <ResourceDoc resource={result.resource} />
@@ -386,19 +386,19 @@ function ViewSaved({
   return (
     <div>
       <div className="no-print mb-4 flex flex-wrap items-center gap-2">
-        <Button size="lg" variant="ghost" onClick={onBack}>
+        <button className={ghostBtn} onClick={onBack}>
           <ArrowLeft className="size-4" /> Back
-        </Button>
-        <Button size="lg" variant="outline" onClick={onPrint}>
+        </button>
+        <button className={glassBtn} onClick={onPrint}>
           <Download className="size-4" /> Download PDF
-        </Button>
-        <Button size="lg" variant="outline" onClick={onFavorite}>
-          <Star className={`size-4 ${resource.favorite ? "fill-amber-400 text-amber-400" : ""}`} />{" "}
+        </button>
+        <button className={glassBtn} onClick={onFavorite}>
+          <Star className={`size-4 ${resource.favorite ? "fill-amber-300 text-amber-300" : ""}`} />{" "}
           {resource.favorite ? "Favorited" : "Favorite"}
-        </Button>
-        <Button size="lg" variant="ghost" onClick={onDelete}>
+        </button>
+        <button className={ghostBtn} onClick={onDelete}>
           <Trash2 className="size-4" /> Delete
-        </Button>
+        </button>
       </div>
       <ResourceDoc resource={resource} />
     </div>

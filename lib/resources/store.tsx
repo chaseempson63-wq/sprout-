@@ -20,14 +20,15 @@ import type { ChildProfile, GeneratedResource, SavedResource } from "./types";
 const CHILDREN_KEY = "sprout.resources.children.v1";
 const RESOURCES_KEY = "sprout.resources.saved.v1";
 
-export const AVATAR_COLORS: { key: string; bg: string; ring: string }[] = [
-  { key: "forest", bg: "bg-sprout-forest text-sprout-cream", ring: "ring-sprout-forest/30" },
-  { key: "lime", bg: "bg-sprout-lime text-sprout-ink", ring: "ring-sprout-lime/40" },
-  { key: "sage", bg: "bg-sprout-sage text-sprout-ink", ring: "ring-sprout-sage/40" },
-  { key: "sky", bg: "bg-sky-500 text-white", ring: "ring-sky-500/30" },
-  { key: "amber", bg: "bg-amber-400 text-sprout-ink", ring: "ring-amber-400/40" },
-  { key: "rose", bg: "bg-rose-400 text-white", ring: "ring-rose-400/30" },
-  { key: "violet", bg: "bg-violet-500 text-white", ring: "ring-violet-500/30" },
+// Bright fills chosen to read clearly against the dark forest-green canvas.
+export const AVATAR_COLORS: { key: string; bg: string }[] = [
+  { key: "lime", bg: "bg-sprout-lime text-sprout-ink" },
+  { key: "sage", bg: "bg-[#A4C9A8] text-[#1B3722]" },
+  { key: "amber", bg: "bg-amber-300 text-[#1B3722]" },
+  { key: "sky", bg: "bg-sky-300 text-[#0F1A12]" },
+  { key: "rose", bg: "bg-rose-300 text-[#1B3722]" },
+  { key: "violet", bg: "bg-violet-300 text-[#1B3722]" },
+  { key: "cream", bg: "bg-[#F4EDE0] text-[#1B3722]" },
 ];
 
 export function colorClasses(key: string) {
