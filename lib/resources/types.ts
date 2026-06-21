@@ -39,7 +39,7 @@ export interface Worksheet {
   subtitle: string;
   intro?: string;
   blocks: WorksheetBlock[];
-  meta: { templateId: string; templateLabel: string; age: number; theme?: string };
+  meta: { templateId: string; templateLabel: string; age: number; theme?: string; childName?: string };
 }
 
 export interface SavedWorksheet extends Worksheet {
@@ -81,5 +81,6 @@ export interface WorksheetTemplate {
 export interface GenerateRequest {
   templateId: string;
   age: number;
+  childName?: string;
   messages: ChatMessage[]; // conversation so far; last user message is the new ask
 }

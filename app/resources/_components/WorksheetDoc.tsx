@@ -1,43 +1,9 @@
-// The printable worksheet. White paper inside a wavy green Sprout border, with
-// the colored mascot + wordmark up top. Each block renders as something a child
-// fills in by hand. This is the .print-area print target.
+// The printable worksheet. A white sheet with a layered-green Sprout wave
+// banner across the top (bigger mascot + the child's name), then each block as
+// something the child fills in by hand. This is the .print-area print target.
 
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import type { Worksheet, WorksheetBlock } from "@/lib/resources/types";
-
-const FOREST = "#2E5A35";
-
-// A scalloped (wavy) rounded rectangle path. Stretched to fill the sheet with a
-// non-scaling stroke so the border reads as an even wavy green frame.
-function scallopPath(w = 1000, h = 1400, s = 32): string {
-  const nx = Math.max(4, Math.round(w / (s * 2)));
-  const ny = Math.max(6, Math.round(h / (s * 2)));
-  const dx = w / nx;
-  const dy = h / ny;
-  const out: string[] = ["M 0 0"];
-  for (let i = 0; i < nx; i++) {
-    const x0 = i * dx;
-    const x1 = (i + 1) * dx;
-    out.push(`Q ${(x0 + x1) / 2} ${s} ${x1} 0`);
-  }
-  for (let i = 0; i < ny; i++) {
-    const y0 = i * dy;
-    const y1 = (i + 1) * dy;
-    out.push(`Q ${w - s} ${(y0 + y1) / 2} ${w} ${y1}`);
-  }
-  for (let i = 0; i < nx; i++) {
-    const x0 = w - i * dx;
-    const x1 = w - (i + 1) * dx;
-    out.push(`Q ${(x0 + x1) / 2} ${h - s} ${x1} ${h}`);
-  }
-  for (let i = 0; i < ny; i++) {
-    const y0 = h - i * dy;
-    const y1 = h - (i + 1) * dy;
-    out.push(`Q ${s} ${(y0 + y1) / 2} 0 ${y1}`);
-  }
-  out.push("Z");
-  return out.join(" ");
-}
 
 function Lines({ count = 3 }: { count?: number }) {
   return (
@@ -54,19 +20,17 @@ function AnswerBox() {
 }
 
 function BlockView({ block }: { block: WorksheetBlock }) {
-  const prompt = block.prompt ? (
-    <p className="text-[13px] font-semibold text-[#2E5A35]">{block.prompt}</p>
-  ) : null;
+  const prompt = block.prompt ? <p className="text-[13px] font-semibold text-[#2E5A35]">{block.prompt}</p> : null;
 
   switch (block.kind) {
     case "instructions":
-      return <p className="text-[15px] leading-relaxed font-medium text-[#1B3722]">{block.prompt}</p>;
+      return <p className="text-[15px] leading-relaxed font-medium text-[#1B3722]">{block.prompt || block.text}</p>;
 
     case "trace":
       return (
         <div>
           {prompt}
-          <div className="mt-3 select-none text-4xl font-bold tracking-[0.15em] text-[#1B3722]/20" style={{ fontFamily: "var(--font-geist-sans)" }}>
+          <div className="mt-3 text-4xl font-bold tracking-[0.15em] text-[#1B3722]/20 select-none" style={{ fontFamily: "var(--font-geist-sans)" }}>
             {block.text}
           </div>
           <div className="mt-3 border-b-2 border-dashed border-[#1B3722]/25 pb-8" />
@@ -121,7 +85,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
             {(block.items ?? []).map((p, i) => (
               <div key={i} className="flex items-center text-[17px] text-[#1B3722]">
                 <span className="mr-1 text-[#2E5A35]/70">{i + 1}.</span>
-                <span className="font-medium">{p}</span>
+                <span className="font-medium">{p.replace(/_{2,}\s*$/, "").trim()}</span>
                 <AnswerBox />
               </div>
             ))}
@@ -234,21 +198,27 @@ function BlockView({ block }: { block: WorksheetBlock }) {
         </div>
       );
 
-    case "short-answer":
+    case "short-answer": {
+      const qs = block.items ?? [];
       return (
         <div>
           {prompt}
-          <ol className="mt-2 space-y-4 text-[15px] text-[#1B3722]">
-            {(block.items ?? []).map((q, i) => (
-              <li key={i}>
-                <span className="mr-2 font-semibold text-[#2E5A35]">{i + 1}.</span>
-                {q}
-                <Lines count={block.rows ?? 2} />
-              </li>
-            ))}
-          </ol>
+          {qs.length > 0 ? (
+            <ol className="mt-2 space-y-4 text-[15px] text-[#1B3722]">
+              {qs.map((q, i) => (
+                <li key={i}>
+                  <span className="mr-2 font-semibold text-[#2E5A35]">{i + 1}.</span>
+                  {q}
+                  <Lines count={block.rows ?? 2} />
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <Lines count={block.rows ?? 3} />
+          )}
         </div>
       );
+    }
 
     case "passage":
       return (
@@ -275,32 +245,39 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 }
 
 export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
+  const name = worksheet.meta.childName;
   const answerBlocks = worksheet.blocks
     .map((b, i) => ({ b, i }))
     .filter(({ b }) => b.answers && b.answers.length > 0);
 
   return (
-    <article className="print-area relative text-[#1B3722]">
-      <svg viewBox="0 0 1000 1400" preserveAspectRatio="none" className="absolute inset-0 h-full w-full" aria-hidden="true">
-        <path d={scallopPath()} fill="#FFFEFB" stroke={FOREST} strokeWidth="5" vectorEffect="non-scaling-stroke" />
-        <path d={scallopPath(1000, 1400, 32)} fill="none" stroke={FOREST} strokeOpacity="0.25" strokeWidth="1.5" vectorEffect="non-scaling-stroke" transform="translate(0 0) scale(0.985) translate(8 11)" />
-      </svg>
-
-      <div className="relative px-7 py-9 sm:px-12 sm:py-11">
-        <header className="flex items-center gap-3 border-b-2 border-dashed border-[#2E5A35]/25 pb-4">
-          <SproutMascotIcon className="h-10 w-10 shrink-0" />
-          <div className="min-w-0 flex-1">
-            <h1 className="text-2xl leading-tight font-bold tracking-[-0.01em] text-[#1B3722]">{worksheet.title}</h1>
-            <p className="text-sm text-[#2E5A35]">{worksheet.subtitle}</p>
+    <article className="print-area relative overflow-hidden rounded-[28px] border-2 border-[#2E5A35]/25 bg-[#FFFEFB] text-[#1B3722] shadow-[0_18px_50px_-20px_rgba(0,0,0,0.55)]">
+      {/* layered green wave banner */}
+      <div className="relative h-[132px]">
+        <svg viewBox="0 0 1000 200" preserveAspectRatio="none" className="absolute inset-0 h-full w-full" aria-hidden="true">
+          <path d="M0,0 H1000 V120 C820,172 660,92 500,132 C340,168 180,96 0,142 Z" fill="#2E5A35" />
+          <path d="M0,0 H1000 V102 C820,150 660,72 500,112 C340,146 180,78 0,122 Z" fill="#4D7B53" opacity="0.55" />
+          <path d="M0,0 H1000 V82 C820,122 660,56 500,96 C340,126 180,62 0,102 Z" fill="#76A77A" opacity="0.45" />
+        </svg>
+        <div className="relative flex items-center gap-4 px-7 pt-6 sm:px-10">
+          <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-[#FFFEFB] shadow-md">
+            <SproutMascotIcon className="h-12 w-12" />
+          </span>
+          <div className="text-sprout-cream min-w-0">
+            {name && <p className="text-sprout-cream/90 text-sm font-semibold">{`${name}'s worksheet`}</p>}
+            <h1 className="truncate text-2xl leading-tight font-bold">{worksheet.title}</h1>
+            <p className="text-sprout-cream/85 text-sm">{worksheet.subtitle}</p>
           </div>
-          <div className="hidden text-right text-[11px] font-bold tracking-[0.2em] text-[#2E5A35]/70 uppercase sm:block">
+          <span className="text-sprout-cream/90 ml-auto hidden self-start pt-1 text-xs font-bold tracking-[0.2em] uppercase sm:block">
             Sprout
-          </div>
-        </header>
+          </span>
+        </div>
+      </div>
 
-        {worksheet.intro && <p className="mt-4 text-[15px] leading-relaxed text-[#1B3722]/80">{worksheet.intro}</p>}
+      <div className="px-7 pt-3 pb-9 sm:px-10">
+        {worksheet.intro && <p className="mb-5 text-[15px] leading-relaxed text-[#1B3722]/80">{worksheet.intro}</p>}
 
-        <div className="mt-5 space-y-7">
+        <div className="space-y-7">
           {worksheet.blocks.map((b, i) => (
             <BlockView key={i} block={b} />
           ))}
@@ -313,7 +290,7 @@ export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
       </div>
 
       {answerBlocks.length > 0 && (
-        <details className="no-print mt-4 rounded-xl border border-[#2E5A35]/20 bg-[#F3F7F0] p-3 text-[#1B3722]">
+        <details className="no-print mx-5 mb-5 rounded-xl border border-[#2E5A35]/20 bg-[#F3F7F0] p-3 text-[#1B3722]">
           <summary className="cursor-pointer text-sm font-semibold text-[#2E5A35]">Answer key (for the grown-up)</summary>
           <div className="mt-2 space-y-2 text-sm">
             {answerBlocks.map(({ b, i }) => (

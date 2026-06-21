@@ -25,6 +25,7 @@ export async function POST(request: Request) {
 
   const ageNum = Number(o.age);
   const age = Number.isFinite(ageNum) ? Math.min(12, Math.max(3, Math.round(ageNum))) : 7;
+  const childName = typeof o.childName === "string" ? o.childName.trim().slice(0, 40) : undefined;
 
   const messages: ChatMessage[] = Array.isArray(o.messages)
     ? o.messages
@@ -42,9 +43,9 @@ export async function POST(request: Request) {
 
   const key = process.env.VENICE_API_KEY;
   if (key) {
-    const ai = await aiWorksheet(template, age, messages, key);
+    const ai = await aiWorksheet(template, age, messages, key, childName);
     if (ai) return Response.json({ worksheet: ai, source: "ai" });
   }
 
-  return Response.json({ worksheet: templateWorksheet(template, age, instruction), source: "template" });
+  return Response.json({ worksheet: templateWorksheet(template, age, instruction, childName), source: "template" });
 }

@@ -186,3 +186,34 @@ export const BLOCK_KINDS: BlockKind[] = [
   "passage",
   "draw",
 ];
+
+// The six top-level topics shown in the library for browse + search.
+export const TOPICS: { key: string; label: string; emoji: string }[] = [
+  { key: "math", label: "Math", emoji: "🔢" },
+  { key: "reading", label: "Reading", emoji: "📚" },
+  { key: "writing", label: "Writing", emoji: "✏️" },
+  { key: "tracing", label: "Tracing", emoji: "🔤" },
+  { key: "counting", label: "Counting", emoji: "🧮" },
+  { key: "creativity", label: "Creativity", emoji: "🎨" },
+];
+
+const TOPIC_MAP: Record<string, string> = {
+  addition: "math",
+  subtraction: "math",
+  multiplication: "math",
+  "missing-numbers": "math",
+  money: "math",
+  "word-problems": "math",
+  reading: "reading",
+  "fill-blank-story": "writing",
+  spelling: "writing",
+  "letter-tracing": "tracing",
+  "number-tracing": "tracing",
+  counting: "counting",
+  matching: "counting",
+  "draw-label": "creativity",
+};
+
+export function topicForTemplate(id: string): string {
+  return TOPIC_MAP[id] ?? "math";
+}

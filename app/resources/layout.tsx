@@ -20,6 +20,11 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
         {/* Continuous green canvas — same brand surface as the homepage. */}
         <div className="fixed inset-0 -z-20">
           <div className="absolute inset-0 bg-gradient-to-br from-[#2A5132] via-[#3D6643] to-[#1B3722]" />
+          <svg className="absolute inset-x-0 top-0 h-[75vh] w-full" preserveAspectRatio="none" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0,400 C320,280 480,520 720,420 C960,320 1120,560 1440,440 L1440,900 L0,900 Z" fill="#94BC8E" opacity="0.10" />
+            <path d="M0,560 C240,460 560,640 880,540 C1120,460 1280,620 1440,560 L1440,900 L0,900 Z" fill="#4D7B53" opacity="0.18" />
+            <path d="M0,700 C320,620 720,800 1100,720 C1300,680 1380,740 1440,720 L1440,900 L0,900 Z" fill="#1B3722" opacity="0.30" />
+          </svg>
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.10] mix-blend-overlay"
             style={{ backgroundImage: NOISE }}
