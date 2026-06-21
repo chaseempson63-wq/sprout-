@@ -1,21 +1,26 @@
 // Sprout Resources — worksheet generation (server-side).
 //
-//   aiWorksheet()        -> Venice AI when VENICE_API_KEY is set. Private model,
-//                           structured JSON. Produces a full-page, themed,
-//                           editable worksheet from the chat.
-//   templateWorksheet()  -> offline fallback that builds REAL, full-length blocks
-//                           so the product works before the key is wired.
+//   templateWorksheet()  -> the deterministic engine. Subject-aware, on-template
+//                           content for EVERY template, sized to the age,
+//                           re-themed and re-leveled by the chat. This is the
+//                           reliable backbone and the AI fallback.
+//   aiWorksheet()        -> Venice AI when a key is set. Enhances variety; its
+//                           output is validated and, if weak, we use the
+//                           deterministic engine instead.
 
 import { getTemplate } from "./catalog";
 import { detectTheme, intentPreamble } from "./intent";
+import { capName } from "./util";
 import type { ChatMessage, Worksheet, WorksheetBlock, WorksheetTemplate } from "./types";
 
-// ── difficulty + length parsing (offline path); themes live in intent.ts ────
+// ── shared helpers ───────────────────────────────────────────────────────────
+
+const article = (w: string) => (/^[aeiou]/i.test(w.trim()) ? "an" : "a");
 
 function detectDifficulty(text: string): number {
   const t = text.toLowerCase();
   if (/harder|tricky|trickier|challeng|advanced|tougher|more difficult/.test(t)) return 1;
-  if (/easier|simpler|simple|gentle|beginner|too hard/.test(t)) return -1;
+  if (/easier|simpler|simple|gentle|beginner|too hard|younger/.test(t)) return -1;
   return 0;
 }
 
@@ -29,8 +34,8 @@ function rint(min: number, max: number): number {
 
 // Difficulty rises with age AND with explicit "harder/easier" asks.
 function scaleFactor(age: number, diff: number): number {
-  const byAge = 0.4 + (Math.min(13, Math.max(3, age)) - 3) * 0.22; // ~0.4 at age 3 -> ~2.6 at age 13
-  const byAsk = diff === 1 ? 1.6 : diff === -1 ? 0.6 : 1;
+  const byAge = 0.4 + (Math.min(13, Math.max(3, age)) - 3) * 0.22; // ~0.4 at 3 -> ~2.6 at 13
+  const byAsk = diff === 1 ? 1.7 : diff === -1 ? 0.55 : 1;
   return byAge * byAsk;
 }
 
@@ -39,24 +44,34 @@ interface Ctx {
   age: number;
   diff: number;
   more: number;
-  theme: { emoji: string; nouns: string[] };
-  name: string;
+  theme: { key: string; emoji: string; nouns: string[]; facts: string[] };
+  name: string; // capitalized, or "" if none
 }
 
-const n = (base: number, ctx: Ctx, max = 30) => Math.min(max, Math.round(base * ctx.more));
+const who = (c: Ctx) => c.name || "you";
+const cnt = (base: number, ctx: Ctx, max = 30) => Math.min(max, Math.round(base * ctx.more));
+// "harder"/"easier" always win over age, so an explicit ask is always honored.
+const harder = (ctx: Ctx) => ctx.diff === 1 || (ctx.age >= 9 && ctx.diff !== -1);
+const older = (ctx: Ctx) => ctx.diff === 1 || (ctx.age >= 7 && ctx.diff !== -1);
 
-// ── offline block builders ───────────────────────────────────────────────────
+// child-directed opening line (identity lives in the named title)
+function intro(ctx: Ctx): WorksheetBlock {
+  const lead = ctx.name ? `${ctx.name}, take your time and do your best.` : "Take your time and do your best.";
+  return { kind: "instructions", prompt: lead };
+}
+
+// ── numeric builders ──────────────────────────────────────────────────────────
 
 function mathBlock(ctx: Ctx, op: "add" | "sub" | "mul" | "div"): WorksheetBlock {
-  const count = n(12, ctx, 24);
+  const count = cnt(12, ctx, 24);
   const items: string[] = [];
   const answers: string[] = [];
   const f = scaleFactor(ctx.age, ctx.diff);
   if (op === "mul") {
     const fmax = Math.max(2, Math.round(6 * f));
     for (let i = 0; i < count; i++) {
-      const a = rint(1, Math.min(12, fmax));
-      const b = rint(1, Math.min(12, fmax));
+      const a = rint(2, Math.min(12, fmax));
+      const b = rint(2, Math.min(12, fmax));
       items.push(`${a} × ${b} =`);
       answers.push(`${a * b}`);
     }
@@ -64,7 +79,7 @@ function mathBlock(ctx: Ctx, op: "add" | "sub" | "mul" | "div"): WorksheetBlock 
     const fmax = Math.max(2, Math.round(6 * f));
     for (let i = 0; i < count; i++) {
       const b = rint(2, Math.min(12, fmax));
-      const ans = rint(1, Math.min(12, fmax));
+      const ans = rint(2, Math.min(12, fmax));
       items.push(`${b * ans} ÷ ${b} =`);
       answers.push(`${ans}`);
     }
@@ -83,7 +98,7 @@ function mathBlock(ctx: Ctx, op: "add" | "sub" | "mul" | "div"): WorksheetBlock 
 function columnMathBlock(ctx: Ctx, op: "add" | "sub"): WorksheetBlock {
   const f = scaleFactor(ctx.age, ctx.diff);
   const max = Math.max(12, Math.round(60 * f));
-  const count = n(6, ctx, 12);
+  const count = cnt(6, ctx, 12);
   const items: string[] = [];
   const answers: string[] = [];
   for (let i = 0; i < count; i++) {
@@ -98,7 +113,7 @@ function columnMathBlock(ctx: Ctx, op: "add" | "sub"): WorksheetBlock {
 function moneyBlock(ctx: Ctx): WorksheetBlock {
   const f = scaleFactor(ctx.age, ctx.diff);
   const hi = Math.max(2, Math.round(12 * f));
-  const count = n(8, ctx, 16);
+  const count = cnt(8, ctx, 16);
   const items: string[] = [];
   const answers: string[] = [];
   for (let i = 0; i < count; i++) {
@@ -120,10 +135,10 @@ function moneyWordProblems(ctx: Ctx): WorksheetBlock {
     kind: "short-answer",
     prompt: "Work it out, then write the answer with a $ or ¢ sign.",
     items: [
-      `${ctx.name} buys a toy for $${price} and pays with $${paid}. How much change? $____`,
-      `A snack costs $${snack} and a drink costs $${drink}. How much for both? $____`,
-      `How many cents are in 2 dimes and 1 nickel? ____ ¢`,
-      `${ctx.name} saves $${rint(1, 5)} a week. How much after 4 weeks? $____`,
+      `${who(ctx)} ${ctx.name ? "buys" : "buy"} a toy for $${price} and ${ctx.name ? "pays" : "pay"} with $${paid}. How much change?  $____`,
+      `A snack costs $${snack} and a drink costs $${drink}. How much for both?  $____`,
+      `How many cents are in 2 dimes and 1 nickel?  ____ ¢`,
+      `${who(ctx)} ${ctx.name ? "saves" : "save"} $${rint(1, 5)} a week. How much after 4 weeks?  $____`,
     ],
     rows: 2,
     answers: [`$${paid - price}`, `$${snack + drink}`, "25 ¢", `$${(price % 5) + 4}`],
@@ -132,14 +147,17 @@ function moneyWordProblems(ctx: Ctx): WorksheetBlock {
 
 function countBlock(ctx: Ctx): WorksheetBlock {
   const hi = ctx.age <= 4 ? 6 : ctx.age <= 6 ? 10 : 15;
-  const rows = n(4, ctx, 6);
+  const rows = cnt(4, ctx, 6);
   const items = Array.from({ length: rows }, () => String(rint(2, hi)));
-  return { kind: "count", prompt: "Count the pictures in each row. Write how many in the box.", emoji: ctx.theme.emoji, items, answers: items };
+  const what = ctx.theme.key !== "everyday" ? ctx.theme.nouns[0] : "pictures";
+  return { kind: "count", prompt: `Count the ${what} in each row. Write how many in the box.`, emoji: ctx.theme.emoji, items, answers: items };
 }
 
-function missingNumbersBlock(ctx: Ctx): WorksheetBlock {
-  const steps = ctx.diff === 1 || ctx.age >= 8 ? [2, 3, 5, 10] : ctx.diff === -1 ? [1, 2] : [1, 2, 5];
-  const rows = n(4, ctx, 8);
+function missingNumbersBlock(ctx: Ctx, skipOnly = false): WorksheetBlock {
+  const steps = skipOnly
+    ? harder(ctx) ? [3, 4, 5, 10] : [2, 5, 10]
+    : harder(ctx) ? [2, 3, 5, 10] : ctx.diff === -1 ? [1, 2] : [1, 2, 5];
+  const rows = cnt(5, ctx, 8);
   const items: string[] = [];
   const answers: string[] = [];
   for (let r = 0; r < rows; r++) {
@@ -153,147 +171,552 @@ function missingNumbersBlock(ctx: Ctx): WorksheetBlock {
   return { kind: "missing-numbers", prompt: "Fill in the missing numbers.", items, answers };
 }
 
-function traceBlock(ctx: Ctx): WorksheetBlock {
-  let text: string;
-  if (ctx.template.id === "number-tracing") {
-    text = ctx.age <= 4 ? "0  1  2  3  4  5" : ctx.age <= 6 ? "0  1  2  3  4  5  6  7  8  9" : "10  11  12  13  14  15  16  17  18  19  20";
-  } else if (ctx.template.id === "line-tracing") {
-    text = "|   |   /   \\   ∿   ◠   ◡   O";
-  } else if (ctx.template.id === "phonics" || ctx.template.id === "sight-words" || ctx.template.id === "spelling") {
-    text = ctx.theme.nouns.slice(0, 4).join("    ");
-  } else {
-    text = ctx.age <= 4 ? "A a    B b    C c" : "A a   B b   C c   D d   E e   F f   G g";
-  }
-  return { kind: "trace", prompt: "Trace each one, then keep going on your own.", text };
-}
-
-function fillBlankBlock(ctx: Ctx): WorksheetBlock {
-  const [n1, n2, n3, n4] = ctx.theme.nouns;
-  const all = [
-    `The two ____ played in the sun all day.`,
-    `I can see ____ near the big ____.`,
-    `My favorite thing is the ____.`,
-    `We found ____ on the way home.`,
-    `The ____ was the best part of the day.`,
-    `Can you count all the ____ ?`,
-  ];
-  const count = n(5, ctx, 6);
-  return {
-    kind: "fill-blank",
-    prompt: "Use the word bank to finish each sentence.",
-    items: all.slice(0, count),
-    wordBank: [n1, n2, n3, n4].filter(Boolean),
-    answers: [n1, `${n2}, ${n3}`, n1, n2, n3, n4].slice(0, count),
-  };
-}
-
 function shortAnswerMath(ctx: Ctx): WorksheetBlock {
   const noun = ctx.theme.nouns[0];
   const f = scaleFactor(ctx.age, ctx.diff);
-  const count = n(5, ctx, 8);
+  const count = cnt(5, ctx, 8);
   const items: string[] = [];
   const answers: string[] = [];
+  const subj = who(ctx);
+  const has = ctx.name ? "has" : "have";
+  const gave = ctx.name ? "gives" : "give";
   for (let i = 0; i < count; i++) {
     const a = rint(2, Math.max(4, Math.round(8 * f)));
     const b = rint(2, Math.max(4, Math.round(8 * f)));
     if (i % 2 === 0) {
-      items.push(`${ctx.name} has ${a} bags of ${noun} with ${b} in each. How many ${noun} in all?`);
+      items.push(`${subj} ${has} ${a} bags of ${noun} with ${b} in each. How many ${noun} in all?`);
       answers.push(`${a * b}`);
     } else {
-      items.push(`${ctx.name} had ${a * b} ${noun} and gave ${b} away. How many are left?`);
+      items.push(`${subj} ${has} ${a * b} ${noun} and ${gave} ${b} away. How many are left?`);
       answers.push(`${a * b - b}`);
     }
   }
   return { kind: "short-answer", prompt: "Show your work, then write the answer.", items, rows: 2, answers };
 }
 
+// ── fractions ──────────────────────────────────────────────────────────────
+
+function fractionsBlocks(ctx: Ctx): WorksheetBlock[] {
+  const name: WorksheetBlock = {
+    kind: "short-answer",
+    prompt: "Write the fraction (top number over bottom number).",
+    items: harder(ctx)
+      ? ["Two out of five equal parts = ____", "Three out of eight = ____", "Five out of six = ____", "Seven out of ten = ____"]
+      : ["One out of two equal parts = ____", "One out of four = ____", "Three out of four = ____", "Two out of three = ____"],
+    rows: 1,
+    answers: harder(ctx) ? ["2/5", "3/8", "5/6", "7/10"] : ["1/2", "1/4", "3/4", "2/3"],
+  };
+  const f = scaleFactor(ctx.age, ctx.diff);
+  const ofItems: string[] = [];
+  const ofAns: string[] = [];
+  const denoms = harder(ctx) ? [3, 4, 5, 8] : [2, 3, 4];
+  for (let i = 0; i < cnt(4, ctx, 8); i++) {
+    const d = denoms[rint(0, denoms.length - 1)];
+    const mult = rint(1, Math.max(2, Math.round(3 * f)));
+    const whole = d * mult;
+    ofItems.push(`1/${d} of ${whole} =`);
+    ofAns.push(`${whole / d}`);
+  }
+  const ofNum: WorksheetBlock = { kind: "math", prompt: "Find the fraction of the number.", items: ofItems, answers: ofAns };
+  const compare: WorksheetBlock = {
+    kind: "short-answer",
+    prompt: harder(ctx) ? "Write the bigger fraction, then complete the equivalent fraction." : "Circle the bigger fraction.",
+    items: harder(ctx)
+      ? ["3/4 or 2/3 → ____", "5/8 or 1/2 → ____", "1/2 = ?/4 → ____", "1/3 = ?/9 → ____"]
+      : ["1/2 or 1/4 → ____", "2/3 or 1/3 → ____", "3/4 or 1/2 → ____"],
+    rows: 1,
+    answers: harder(ctx) ? ["3/4", "5/8", "2/4", "3/9"] : ["1/2", "2/3", "3/4"],
+  };
+  return [intro(ctx), name, ofNum, compare];
+}
+
+// ── place value ──────────────────────────────────────────────────────────────
+
+function placeValueBlocks(ctx: Ctx): WorksheetBlock[] {
+  const big = harder(ctx);
+  const value: WorksheetBlock = {
+    kind: "short-answer",
+    prompt: "Write what the bold digit is worth.",
+    items: big
+      ? ["In 4,827 the 8 is worth ____", "In 1,560 the 1 is worth ____", "In 3,094 the 9 is worth ____", "In 7,213 the 2 is worth ____"]
+      : ["In 53 the 5 is worth ____", "In 248 the 2 is worth ____", "In 91 the 9 is worth ____", "In 607 the 6 is worth ____"],
+    rows: 1,
+    answers: big ? ["800", "1,000", "90", "200"] : ["50", "200", "90", "600"],
+  };
+  const expand: WorksheetBlock = {
+    kind: "short-answer",
+    prompt: "Write the number.",
+    items: big
+      ? ["3 thousands, 4 hundreds, 0 tens, 6 ones = ____", "5,000 + 200 + 70 + 1 = ____", "Expanded form of 2,408 = ____"]
+      : ["4 tens and 3 ones = ____", "2 hundreds, 0 tens, 7 ones = ____", "300 + 50 + 6 = ____"],
+    rows: 1,
+    answers: big ? ["3,406", "5,271", "2,000 + 400 + 0 + 8"] : ["43", "207", "356"],
+  };
+  const order: WorksheetBlock = {
+    kind: "short-answer",
+    prompt: "Put the numbers in order, smallest first.",
+    items: big ? ["1,240   980   1,209   875 → ____", "3,001   3,010   2,999 → ____"] : ["34   7   19   52 → ____", "105   99   150 → ____"],
+    rows: 1,
+    answers: big ? ["875, 980, 1,209, 1,240", "2,999, 3,001, 3,010"] : ["7, 19, 34, 52", "99, 105, 150"],
+  };
+  return [intro(ctx), value, expand, order];
+}
+
+// ── telling time ───────────────────────────────────────────────────────────
+
+function timeBlocks(ctx: Ctx): WorksheetBlock[] {
+  const adv = older(ctx) || ctx.diff === 1;
+  const write: WorksheetBlock = {
+    kind: "short-answer",
+    prompt: "Write each time with numbers, like 3:00.",
+    items: adv
+      ? ["Quarter past 4 = ____", "Quarter to 8 = ____", "Half past 6 = ____", "Ten o'clock = ____", "Twenty-five past 2 = ____"]
+      : ["Three o'clock = ____", "Half past 6 = ____", "Nine o'clock = ____", "Half past 11 = ____"],
+    rows: 1,
+    answers: adv ? ["4:15", "7:45", "6:30", "10:00", "2:25"] : ["3:00", "6:30", "9:00", "11:30"],
+  };
+  const match: WorksheetBlock = {
+    kind: "matching",
+    prompt: "Draw a line to match each time to the way we say it.",
+    pairs: adv
+      ? [
+          { left: "2:15", right: "quarter past two" },
+          { left: "5:45", right: "quarter to six" },
+          { left: "8:30", right: "half past eight" },
+          { left: "11:00", right: "eleven o'clock" },
+        ]
+      : [
+          { left: "3:00", right: "three o'clock" },
+          { left: "6:30", right: "half past six" },
+          { left: "9:00", right: "nine o'clock" },
+          { left: "12:30", right: "half past twelve" },
+        ],
+  };
+  const blocks = [intro(ctx), write, match];
+  if (adv) {
+    blocks.push({
+      kind: "short-answer",
+      prompt: "Work out the time.",
+      items: ["It is 2:00. What time is it 3 hours later? ____", "It is 4:30. What time is it 1 hour later? ____", "School starts at 9:00 and lunch is 3 hours later. What time is lunch? ____"],
+      rows: 1,
+      answers: ["5:00", "5:30", "12:00"],
+    });
+  }
+  return blocks;
+}
+
+// ── shapes & geometry ────────────────────────────────────────────────────────
+
+function shapesBlocks(ctx: Ctx): WorksheetBlock[] {
+  const young = ctx.age <= 5 && ctx.diff !== 1;
+  const sides: WorksheetBlock = {
+    kind: "short-answer",
+    prompt: "Write how many sides each shape has.",
+    items: young
+      ? ["A triangle has ____ sides.", "A square has ____ sides.", "A circle has ____ sides.", "A rectangle has ____ sides."]
+      : ["A triangle has ____ sides.", "A square has ____ sides.", "A pentagon has ____ sides.", "A hexagon has ____ sides.", "An octagon has ____ sides."],
+    rows: 1,
+    answers: young ? ["3", "4", "0", "4"] : ["3", "4", "5", "6", "8"],
+  };
+  const match: WorksheetBlock = {
+    kind: "matching",
+    prompt: "Draw a line to match each shape to the number of sides it has.",
+    pairs: young
+      ? [
+          { left: "triangle", right: "3 sides" },
+          { left: "square", right: "4 sides" },
+          { left: "circle", right: "round, 0 sides" },
+        ]
+      : [
+          { left: "triangle", right: "3 sides" },
+          { left: "rectangle", right: "4 sides" },
+          { left: "pentagon", right: "5 sides" },
+          { left: "hexagon", right: "6 sides" },
+        ],
+  };
+  const draw: WorksheetBlock = {
+    kind: "draw",
+    prompt: young
+      ? "Draw a circle, a square and a triangle. Write the name under each one."
+      : "Draw a pentagon and a hexagon. Next to each, write how many sides and corners it has.",
+    rows: 7,
+  };
+  return [intro(ctx), sides, match, draw];
+}
+
+// ── patterns ─────────────────────────────────────────────────────────────────
+
+function patternsBlocks(ctx: Ctx): WorksheetBlock[] {
+  const num = older(ctx) || ctx.diff === 1;
+  const complete: WorksheetBlock = {
+    kind: "missing-numbers",
+    prompt: "Finish each pattern. Write what comes in the blanks.",
+    items: num
+      ? ["2,  4,  6,  ____,  ____", "5,  10,  15,  ____,  ____", "A,  B,  C,  ____,  ____", "1,  2,  4,  8,  ____"]
+      : ["red,  blue,  red,  blue,  ____", "circle,  square,  circle,  square,  ____", "A,  B,  A,  B,  ____,  ____", "up,  down,  up,  ____"],
+    answers: num ? ["8, 10", "20, 25", "D, E", "16"] : ["red", "circle", "A, B", "down"],
+  };
+  const draw: WorksheetBlock = {
+    kind: "draw",
+    prompt: "Make your own pattern. Draw at least six shapes or colors in a row that repeat.",
+    rows: 5,
+  };
+  return [intro(ctx), complete, draw];
+}
+
+// ── phonics ──────────────────────────────────────────────────────────────────
+
+function phonicsBlocks(ctx: Ctx): WorksheetBlock[] {
+  const adv = ctx.age >= 6 || ctx.diff === 1;
+  const trace: WorksheetBlock = {
+    kind: "trace",
+    prompt: "Trace each one, then say the sound out loud.",
+    text: adv ? "-at: cat  hat  bat    -ig: pig  dig  wig    sh   ch   th" : "s   a   t   p   i   n   m   d",
+  };
+  const fill: WorksheetBlock = {
+    kind: "fill-blank",
+    prompt: "Add the missing letter to finish each word. Use the word bank.",
+    items: adv ? ["__at  (a cat says meow)", "p__g  (lives on a farm)", "__un  (it is hot)", "d__g  (man's best friend)"] : ["c__t", "d__g", "s__n", "b__g"],
+    wordBank: adv ? ["c", "i", "s", "o"] : ["a", "o", "u"],
+    answers: adv ? ["cat", "pig", "sun", "dog"] : ["cat", "dog", "sun", "bug"],
+  };
+  return [intro(ctx), trace, fill];
+}
+
+// ── sight words ──────────────────────────────────────────────────────────────
+
+function sightWordsBlocks(ctx: Ctx): WorksheetBlock[] {
+  const adv = ctx.age >= 7 || ctx.diff === 1;
+  const words = adv ? ["because", "there", "their", "would", "could"] : ["the", "and", "you", "was", "said"];
+  const trace: WorksheetBlock = { kind: "trace", prompt: "Trace each word, then write it once on your own.", text: words.join("    ") };
+  const use: WorksheetBlock = {
+    kind: "fill-blank",
+    prompt: "Finish each sentence with a word from the list.",
+    items: adv
+      ? ["I stayed inside ____ it was raining.", "We left our bags over ____.", "The kids lost ____ ball.", "I ____ like to help."]
+      : ["I can see ____ dog.", "____ you like it?", "We ____ very happy.", "Mum ____ hello."],
+    wordBank: words,
+    answers: adv ? ["because", "there", "their", "would"] : ["the", "and", "was", "said"],
+  };
+  return [intro(ctx), trace, use];
+}
+
+// ── rhyming ──────────────────────────────────────────────────────────────────
+
+function rhymingBlocks(ctx: Ctx): WorksheetBlock[] {
+  const match: WorksheetBlock = {
+    kind: "matching",
+    prompt: "Draw a line to match each word to the word that rhymes with it.",
+    pairs: [
+      { left: "cat", right: "hat" },
+      { left: "dog", right: "log" },
+      { left: "star", right: "car" },
+      { left: "sun", right: "bun" },
+      { left: "tree", right: "bee" },
+    ],
+  };
+  const fill: WorksheetBlock = {
+    kind: "fill-blank",
+    prompt: "Finish each line with a word that rhymes. Use the word bank.",
+    items: ["The cat sat on a ____.", "A frog jumped over a ____.", "The bright star is in a ____.", "I had fun in the ____."],
+    wordBank: ["mat", "log", "jar", "sun"],
+    answers: ["mat", "log", "jar", "sun"],
+  };
+  return [intro(ctx), match, fill];
+}
+
+// ── spelling ─────────────────────────────────────────────────────────────────
+
+function spellingBlocks(ctx: Ctx): WorksheetBlock[] {
+  const words = ctx.age <= 6 && ctx.diff !== 1 ? ["cat", "dog", "sun", "big", "red"] : ctx.age <= 8 ? ["jump", "play", "rain", "tree", "fish"] : ["because", "friend", "enough", "beautiful", "different"];
+  const trace: WorksheetBlock = { kind: "trace", prompt: "Trace each spelling word, then cover it and write it again.", text: words.join("    ") };
+  const use: WorksheetBlock = {
+    kind: "fill-blank",
+    prompt: "Write the missing letters, then read the word.",
+    items: words.map((w) => `${w[0]}${"_".repeat(Math.max(1, w.length - 2))}${w[w.length - 1]}`),
+    wordBank: words,
+    answers: words,
+  };
+  const write: WorksheetBlock = { kind: "handwriting", prompt: "Pick two words and write a sentence with each.", rows: cnt(4, ctx, 8) };
+  return [intro(ctx), trace, use, write];
+}
+
+// ── grammar ──────────────────────────────────────────────────────────────────
+
+function grammarBlocks(ctx: Ctx): WorksheetBlock[] {
+  const adv = older(ctx) || ctx.diff === 1;
+  const id: WorksheetBlock = {
+    kind: "short-answer",
+    prompt: adv ? "Write N for noun, V for verb, or A for adjective." : "Write N for naming word (noun) or V for doing word (verb).",
+    items: adv ? ["dog → ____", "run → ____", "happy → ____", "table → ____", "quickly jump → ____", "bright → ____"] : ["dog → ____", "run → ____", "cat → ____", "jump → ____", "sing → ____"],
+    rows: 1,
+    answers: adv ? ["N", "V", "A", "N", "V", "A"] : ["N", "V", "N", "V", "V"],
+  };
+  const fix: WorksheetBlock = {
+    kind: "short-answer",
+    prompt: "Rewrite each sentence with a capital letter at the start and the right end mark.",
+    items: adv ? ["the dog ran to the park", "do you like ice cream", "what a big tree that is", "we read books on saturday"] : ["the sun is hot", "my dog likes to run", "we went to the park"],
+    rows: 1,
+    answers: adv ? ["The dog ran to the park.", "Do you like ice cream?", "What a big tree that is!", "We read books on Saturday."] : ["The sun is hot.", "My dog likes to run.", "We went to the park."],
+  };
+  return [intro(ctx), id, fix];
+}
+
+// ── reading + comprehension ───────────────────────────────────────────────────
+
 function passageBlock(ctx: Ctx): WorksheetBlock {
   const m = ctx.theme.nouns;
-  const hero = ctx.name === "your child" ? "Milo" : ctx.name;
+  const hero = ctx.name || "Milo";
   const text =
     ctx.age <= 7
-      ? `${hero} woke up early. The sun was warm. ${hero} went outside to find ${m[1]}. On the way, ${hero} saw ${m[2]} and waved hello. Then ${hero} found a path and followed it to the top of a little hill. From there, everything looked tiny and bright. It was a very happy day.`
-      : `Every morning, ${hero} set off to explore. Today ${hero} wanted to find ${m[1]} near the old hill. Along the winding path were ${m[2]}, shining in the light. ${hero} counted them, made a quick map, and kept going. The climb was steep, but ${hero} did not give up. At the top was the best view of all, and ${hero} knew the long walk had been worth it.`;
+      ? `${hero} woke up early. The sun was warm. ${hero} went outside to look for ${m[1]}. On the way, ${hero} saw ${m[2]} and waved hello. Then ${hero} found a little path and followed it to the top of a hill. From the top, everything looked tiny and bright. It was a very happy day.`
+      : `Every morning, ${hero} set off to explore. Today ${hero} wanted to find ${m[1]} near the old hill. Along the winding path were ${m[2]}, shining in the light. ${hero} counted them, drew a quick map, and kept going. The climb was steep, but ${hero} did not give up. At the top was the best view of all, and ${hero} knew the long walk had been worth it.`;
   return { kind: "passage", prompt: "Read the story, then answer the questions.", text };
 }
 
 function comprehensionQs(ctx: Ctx): WorksheetBlock {
+  const hero = ctx.name || "the character";
   return {
     kind: "short-answer",
-    prompt: "Answer in a full sentence.",
-    items: [
-      `Who is the story about?`,
-      `What did ${ctx.name === "your child" ? "the character" : ctx.name} go to find?`,
-      `Where did the path lead?`,
-      `How do you think they felt at the end? Why?`,
-      `What was your favorite part?`,
-    ],
+    prompt: "Answer each question in a full sentence.",
+    items: [`Who is the story about?`, `What did ${hero} go out to find?`, `Where did the path lead?`, `How do you think ${hero} felt at the end? Why?`, `What was your favorite part?`],
     rows: 2,
-    answers: [ctx.name === "your child" ? "Milo" : ctx.name, ctx.theme.nouns[1], "the top of the hill", "happy / proud", "(opinion)"],
+    answers: [ctx.name || "Milo", ctx.theme.nouns[1], "the top of the hill", "happy / proud", "(opinion)"],
   };
 }
 
 function comprehensionMC(ctx: Ctx): WorksheetBlock {
-  const who = ctx.name === "your child" ? "the character" : ctx.name;
+  const hero = ctx.name || "the character";
   return {
     kind: "multiple-choice",
     prompt: "Circle the best answer. What is the story mostly about?",
-    items: [`${who} exploring to find ${ctx.theme.nouns[1]}`, "A rainy day indoors", "A trip to the dentist"],
-    answers: [`${who} exploring to find ${ctx.theme.nouns[1]}`],
+    items: [`${hero} exploring to find ${ctx.theme.nouns[1]}`, "A rainy day indoors", "A trip to the dentist"],
+    answers: [`${hero} exploring to find ${ctx.theme.nouns[1]}`],
   };
 }
 
-function matchingBlock(): WorksheetBlock {
-  return {
-    kind: "matching",
-    prompt: "Draw a line to match each number to its word.",
-    pairs: [
-      { left: "1", right: "one" },
-      { left: "2", right: "two" },
-      { left: "3", right: "three" },
-      { left: "4", right: "four" },
-      { left: "5", right: "five" },
-      { left: "6", right: "six" },
+// ── fill-in-the-blank story ────────────────────────────────────────────────────
+
+function fillStoryBlocks(ctx: Ctx): WorksheetBlock[] {
+  const m = ctx.theme.nouns;
+  const hero = ctx.name || "Sam";
+  const bank = [m[0], m[1], m[2], "happy", "big"];
+  const story: WorksheetBlock = {
+    kind: "fill-blank",
+    prompt: "Read the story and fill each blank with a word from the bank.",
+    items: [
+      `One day ${hero} went to see the ____.`,
+      `There were so many ____ everywhere.`,
+      `The biggest one was very ____.`,
+      `${hero} felt ____ and ran home to tell everyone about the ____.`,
     ],
+    wordBank: bank.filter(Boolean),
+    answers: [m[0], m[1], "big", "happy", m[2]],
   };
+  return [intro(ctx), { kind: "word-bank", prompt: "Word bank", wordBank: bank.filter(Boolean) }, story];
 }
 
-function buildBlock(kind: WorksheetBlock["kind"], ctx: Ctx): WorksheetBlock {
-  const { template, name } = ctx;
-  const isMoney = template.id === "money";
-  const op: "add" | "sub" | "mul" | "div" =
-    template.id === "subtraction" ? "sub" : template.id === "multiplication" ? "mul" : template.id === "division" ? "div" : "add";
-  switch (kind) {
-    case "instructions":
-      return { kind: "instructions", prompt: `${template.title} for ${name}. Take your time and do your best.` };
-    case "trace":
-      return traceBlock(ctx);
-    case "handwriting":
-      return { kind: "handwriting", prompt: "Now write it yourself on the lines.", rows: n(4, ctx, 8) };
-    case "math":
-      return isMoney ? moneyBlock(ctx) : mathBlock(ctx, op);
-    case "column-math":
-      return columnMathBlock(ctx, op === "sub" ? "sub" : "add");
-    case "count":
-      return countBlock(ctx);
+// ── creative writing ──────────────────────────────────────────────────────────
+
+function creativeWritingBlocks(ctx: Ctx): WorksheetBlock[] {
+  const prompts: Record<string, string> = {
+    space: "You are the first kid to land on a new planet. Write about what you see and the first thing you do.",
+    dinosaur: "You find a real dinosaur egg in your backyard, and it starts to hatch. Write what happens next.",
+    ocean: "You can breathe underwater for one day. Write about your adventure in the deep ocean.",
+    animal: "Your pet can talk for one day. Write about the first conversation you have together.",
+    everyday: "Imagine you woke up and could fly. Write a story about where you go first and what you see.",
+  };
+  const p = prompts[ctx.theme.key] || prompts.everyday;
+  const prompt: WorksheetBlock = {
+    kind: "instructions",
+    prompt: `${p}  You could start with: "It all began when..." or "I could not believe my eyes when..."`,
+  };
+  const lines: WorksheetBlock = { kind: "handwriting", prompt: "Write your story on the lines below.", rows: cnt(8, ctx, 14) };
+  return [prompt, lines];
+}
+
+// ── sentence building ──────────────────────────────────────────────────────────
+
+function sentenceBuildingBlocks(ctx: Ctx): WorksheetBlock[] {
+  const bank = ["the", "dog", "ran", "fast", "big", "jumped", "happy", "park"];
+  return [
+    intro(ctx),
+    { kind: "word-bank", prompt: "Word bank", wordBank: bank },
+    {
+      kind: "handwriting",
+      prompt: "Use the words to build three full sentences. Start each with a capital letter and end with a full stop.",
+      rows: cnt(6, ctx, 10),
+    },
+  ];
+}
+
+// ── tracing ──────────────────────────────────────────────────────────────────
+
+function traceBlock(ctx: Ctx): WorksheetBlock {
+  let text: string;
+  if (ctx.template.id === "number-tracing") {
+    text = ctx.age <= 4 ? "0  1  2  3  4  5" : ctx.age <= 6 ? "0  1  2  3  4  5  6  7  8  9" : "10  11  12  13  14  15  16  17  18  19  20";
+  } else if (ctx.template.id === "line-tracing") {
+    text = "|   |   /   \\   ∿   ◠   ◡   O";
+  } else {
+    text = ctx.age <= 4 ? "A a    B b    C c    D d" : "A a   B b   C c   D d   E e   F f   G g";
+  }
+  return { kind: "trace", prompt: "Trace each one, then keep going on your own.", text };
+}
+
+// ── creativity ──────────────────────────────────────────────────────────────
+
+function drawLabelBlocks(ctx: Ctx): WorksheetBlock[] {
+  let subject = "a plant";
+  let parts = "the roots, the stem, a leaf and the flower";
+  if (ctx.theme.key === "animal" || ctx.theme.key === "ocean" || ctx.theme.key === "dinosaur") {
+    const noun = ctx.theme.nouns[0].replace(/s$/, "");
+    subject = `${article(noun)} ${noun}`;
+    parts = "the head, the body, the legs and the tail";
+  } else if (ctx.theme.key === "space") {
+    subject = "a rocket";
+    parts = "the nose, the body, the fins and the flames";
+  } else if (ctx.theme.key === "vehicle") {
+    subject = "a car";
+    parts = "the wheels, the windows, the doors and the lights";
+  }
+  return [
+    intro(ctx),
+    { kind: "draw", prompt: `Draw ${subject}. Then label ${parts}.`, rows: 8 },
+    { kind: "handwriting", prompt: "Write one sentence about what you drew.", rows: cnt(3, ctx, 6) },
+  ];
+}
+
+function colorByNumberBlocks(ctx: Ctx): WorksheetBlock[] {
+  const f = scaleFactor(ctx.age, ctx.diff);
+  const items: string[] = [];
+  const answers: string[] = [];
+  const hi = Math.max(3, Math.round(5 * f));
+  for (let i = 0; i < cnt(8, ctx, 12); i++) {
+    const a = rint(1, hi);
+    const b = rint(0, hi);
+    items.push(`${a} + ${b} =`);
+    answers.push(`${a + b}`);
+  }
+  return [
+    { kind: "instructions", prompt: "Color key:  1 = red   2 = blue   3 = green   4 = yellow   5 = orange.  Solve each problem, then color its box the color of the answer." },
+    { kind: "math", prompt: "Solve each one.", items, answers },
+    { kind: "draw", prompt: "Color the picture using your answers and the color key above.", rows: 7 },
+  ];
+}
+
+function lifeCycleBlocks(ctx: Ctx): WorksheetBlock[] {
+  let cycle = "a butterfly: egg, caterpillar, chrysalis, butterfly";
+  let after = "What does the caterpillar turn into?";
+  let afterAns = "a chrysalis";
+  if (ctx.theme.key === "animal" || /frog/.test(ctx.theme.nouns.join(" "))) {
+    cycle = "a frog: egg, tadpole, froglet, frog";
+    after = "What does the tadpole grow into?";
+    afterAns = "a froglet, then a frog";
+  } else if (ctx.theme.key === "food" || ctx.theme.key === "everyday") {
+    cycle = "a plant: seed, sprout, plant, flower";
+    after = "What does the seed grow into first?";
+    afterAns = "a sprout";
+  }
+  return [
+    intro(ctx),
+    { kind: "draw", prompt: `Draw the life cycle of ${cycle}. Draw the four stages in order and label each one.`, rows: 9 },
+    {
+      kind: "short-answer",
+      prompt: "Answer each question in a full sentence.",
+      items: ["What is the first stage?", after, "Why is each stage important?"],
+      rows: 2,
+      answers: ["the egg / seed", afterAns, "(each stage helps it grow to the next)"],
+    },
+  ];
+}
+
+function matchingBlocks(ctx: Ctx): WorksheetBlock[] {
+  const young = ctx.age <= 5 && ctx.diff !== 1;
+  const pairs = young
+    ? [
+        { left: "1", right: "one" },
+        { left: "2", right: "two" },
+        { left: "3", right: "three" },
+        { left: "4", right: "four" },
+        { left: "5", right: "five" },
+      ]
+    : [
+        { left: "big", right: "small" },
+        { left: "hot", right: "cold" },
+        { left: "up", right: "down" },
+        { left: "day", right: "night" },
+        { left: "fast", right: "slow" },
+      ];
+  return [intro(ctx), { kind: "matching", prompt: young ? "Draw a line to match each number to its word." : "Draw a line to match each word to its opposite.", pairs }];
+}
+
+// ── per-template composition ──────────────────────────────────────────────────
+
+function compose(ctx: Ctx): WorksheetBlock[] {
+  const id = ctx.template.id;
+  switch (id) {
+    case "addition":
+      return [intro(ctx), mathBlock(ctx, "add"), columnMathBlock(ctx, "add")];
+    case "subtraction":
+      return [intro(ctx), mathBlock(ctx, "sub"), columnMathBlock(ctx, "sub")];
+    case "multiplication":
+      return [intro(ctx), mathBlock(ctx, "mul"), shortAnswerMath(ctx)];
+    case "division":
+      return [intro(ctx), mathBlock(ctx, "div"), shortAnswerMath(ctx)];
+    case "money":
+      return [intro(ctx), moneyBlock(ctx), moneyWordProblems(ctx)];
+    case "word-problems":
+      return [intro(ctx), shortAnswerMath(ctx)];
     case "missing-numbers":
-      return missingNumbersBlock(ctx);
+      return [intro(ctx), missingNumbersBlock(ctx)];
+    case "skip-counting":
+      return [intro(ctx), missingNumbersBlock(ctx, true)];
+    case "counting":
+      return [intro(ctx), countBlock(ctx), missingNumbersBlock(ctx)];
+    case "fractions":
+      return fractionsBlocks(ctx);
+    case "place-value":
+      return placeValueBlocks(ctx);
+    case "telling-time":
+      return timeBlocks(ctx);
+    case "shapes":
+      return shapesBlocks(ctx);
+    case "patterns":
+      return patternsBlocks(ctx);
     case "matching":
-      return matchingBlock();
-    case "fill-blank":
-      return fillBlankBlock(ctx);
-    case "word-bank":
-      return { kind: "word-bank", prompt: "Word bank", wordBank: ctx.theme.nouns.slice(0, 5) };
-    case "short-answer":
-      return isMoney ? moneyWordProblems(ctx) : template.id === "reading" ? comprehensionQs(ctx) : shortAnswerMath(ctx);
-    case "multiple-choice":
-      return comprehensionMC(ctx);
-    case "passage":
-      return passageBlock(ctx);
-    case "draw":
-      return { kind: "draw", prompt: `Draw a ${ctx.theme.nouns[0].replace(/s$/, "")} and label two parts.`, rows: 7 };
+      return matchingBlocks(ctx);
+    case "reading":
+      return [passageBlock(ctx), comprehensionQs(ctx), comprehensionMC(ctx)];
+    case "phonics":
+      return phonicsBlocks(ctx);
+    case "sight-words":
+      return sightWordsBlocks(ctx);
+    case "rhyming":
+      return rhymingBlocks(ctx);
+    case "spelling":
+      return spellingBlocks(ctx);
+    case "grammar":
+      return grammarBlocks(ctx);
+    case "fill-blank-story":
+      return fillStoryBlocks(ctx);
+    case "creative-writing":
+      return creativeWritingBlocks(ctx);
+    case "sentence-building":
+      return sentenceBuildingBlocks(ctx);
+    case "letter-tracing":
+    case "number-tracing":
+      return [intro(ctx), traceBlock(ctx), { kind: "handwriting", prompt: "Now write each one yourself on the lines.", rows: cnt(5, ctx, 8) }];
+    case "line-tracing":
+      return [intro(ctx), traceBlock(ctx), { kind: "draw", prompt: "Copy each line and curve in the space below.", rows: 6 }];
+    case "draw-label":
+      return drawLabelBlocks(ctx);
+    case "color-by-number":
+      return colorByNumberBlocks(ctx);
+    case "life-cycle":
+      return lifeCycleBlocks(ctx);
     default:
-      return { kind: "instructions", prompt: "" };
+      return [intro(ctx), shortAnswerMath(ctx)];
   }
 }
 
@@ -301,15 +724,15 @@ export function templateWorksheet(template: WorksheetTemplate, age: number, inst
   const theme = detectTheme(instruction);
   const diff = detectDifficulty(instruction);
   const more = detectMore(instruction);
-  const name = childName?.trim() || "your child";
+  const name = capName(childName);
   const ctx: Ctx = { template, age, diff, more, theme, name };
-  const blocks = template.plan.map((kind) => buildBlock(kind, ctx));
-  const themeLabel = theme.key && theme.key !== "everyday" ? ` · ${theme.key}` : "";
+  const blocks = compose(ctx);
+  const themed = theme.key && theme.key !== "everyday";
   return {
-    title: template.title,
-    subtitle: `Age ${age}${themeLabel}`,
+    title: name ? `${name}'s ${template.title}` : template.title,
+    subtitle: themed ? `A ${theme.label.toLowerCase()} worksheet` : "",
     blocks,
-    meta: { templateId: template.id, templateLabel: template.title, age, theme: theme.key, childName: childName?.trim() || undefined },
+    meta: { templateId: template.id, templateLabel: template.title, age, theme: theme.key, childName: name || undefined },
   };
 }
 
@@ -317,32 +740,30 @@ export function templateWorksheet(template: WorksheetTemplate, age: number, inst
 
 const SYSTEM = [
   "You design printable worksheets that a CHILD completes by hand after a parent prints them (ages 3-12).",
-  "NEVER write directions addressed to the parent. Write the actual exercises the child fills in:",
-  "problems to solve, blanks to complete, letters or numbers to trace, objects to count, lines to match.",
-  'Return ONLY valid JSON: {"title":string,"subtitle":string,"intro":string,"blocks":[Block]}.',
+  "Write everything ADDRESSED TO THE CHILD ('Solve each one', 'Trace the shapes'). NEVER write directions to the parent and never use the phrase 'your child'.",
+  "Produce ONLY content that matches the requested worksheet type. A shapes worksheet must be about shapes; a telling-time worksheet must be about clocks. Never drift into number-word matching or generic drawing.",
+  'Return ONLY valid JSON: {"title":string,"subtitle":string,"blocks":[Block]}.',
   'Block = {"kind":string,"prompt"?:string,"text"?:string,"items"?:[string],"pairs"?:[{"left":string,"right":string}],"emoji"?:string,"wordBank"?:[string],"rows"?:number,"answers"?:[string]}.',
   "Allowed kinds: instructions, trace, handwriting, fill-blank, word-bank, math, column-math, count, matching, multiple-choice, short-answer, missing-numbers, passage, draw.",
-  "FILL A FULL A4 PAGE. A worksheet must be substantial: practice sheets need 12 to 20 items; reading needs a passage of 6 to 10 sentences plus 4 to 6 questions; tracing needs several rows. Never return a tiny 2-3 item sheet.",
-  "Difficulty MUST scale to the EXACT age on this ladder: 3-4 = numbers to 5, single letters, tracing, matching; 5-6 = numbers to 20, simple sounds and CVC words; 7-8 = numbers to 100, times tables, two-step ideas; 9-10 = multi-digit add/sub/multiply, division, simple fractions, longer reading; 11-13 = multi-digit and multi-step problems, fractions and decimals, place value to thousands, richer writing.",
-  "HARDER means genuinely MORE COMPLEX: bigger and multi-digit numbers, carrying/borrowing, more steps, harder vocabulary. NEVER just reshuffle the same answers (do not give 10+11 and 9+12). Every item must be distinct and non-trivial.",
-  "Use PLAIN TEXT only: no LaTeX, no markdown, no $ around math. math/column-math hold ONLY bare equations like '24 × 37 =' or '156 + 88 ='; put any word problems in SHORT-ANSWER blocks, never in math blocks. Money uses a $ sign for amounts and real change problems. For count, set emoji and items to the quantities to draw. For matching use pairs. For missing-numbers, items are sequences containing ____ . For draw and creativity, harder means more parts to label and a more detailed subject. Put real gaps with ____ where the child writes.",
-  "Treat each parent message as an EDIT to the current worksheet: 'add more' or 'longer' means add items and blocks; 'more in depth' or 'more questions' means add richer questions; 'harder'/'easier' changes difficulty; a theme word re-themes everything. Always return the FULL updated worksheet, not a fragment.",
-  "If asked to regenerate or for a different version, keep the same type but change the numbers, wording and examples so it is genuinely different.",
-  "If a child's name is given, use it in word problems and the story; if no name is given, address the child as 'you' and never invent a name. Always include an 'answers' array for blocks with correct answers. Keep language warm and simple. Do not put raw line breaks inside JSON string values.",
+  "FILL A FULL A4 PAGE: 3 to 5 blocks. Practice sheets need 12 to 20 items; reading needs a passage of 6 to 10 sentences plus 4 to 6 questions; tracing needs several rows. Never return a tiny 2-3 item sheet.",
+  "Difficulty MUST scale to the EXACT age: 3-4 = numbers to 5, single letters, tracing, simple shapes; 5-6 = numbers to 20, CVC words, basic shapes and patterns; 7-8 = numbers to 100, times tables, fractions of a shape; 9-10 = multi-digit operations, division, fractions, longer reading; 11-13 = multi-step problems, fractions and decimals, place value to thousands.",
+  "HARDER means genuinely MORE COMPLEX (bigger and multi-digit numbers, carrying/borrowing, more steps, harder vocabulary), never the same answers reshuffled. EASIER means simpler. Every item must be distinct.",
+  "Use PLAIN TEXT only: no LaTeX, no markdown. math/column-math hold ONLY bare equations like '24 × 37 ='; put word problems in short-answer. Money uses $ and ¢. For count, set emoji and items to quantities. For matching use pairs. For missing-numbers, items are sequences containing ____.",
+  "Treat each parent message as an EDIT: a theme word re-themes every item; 'harder'/'easier' changes difficulty; 'more'/'longer' adds items. Always return the FULL updated worksheet.",
+  "Do not include an answer-key section in the prompts; put correct answers only in each block's 'answers' array. If a child's name is given use it in word problems and stories; otherwise address the child as 'you' and never invent a name. Do not put raw line breaks inside JSON string values.",
 ].join(" ");
 
 export function buildMessages(template: WorksheetTemplate, age: number, messages: ChatMessage[], childName?: string) {
   const asks = messages.filter((m) => m.role === "user").map((m) => m.content.trim()).filter(Boolean);
   const askText = asks.length ? asks.map((a, i) => `(${i + 1}) ${a}`).join(" ") : "Make a standard full-page one.";
-  const who = childName?.trim()
-    ? `The child is named ${childName.trim()}, age ${age}.`
-    : `The child is age ${age}; no name was given, so do not state or invent a name.`;
+  const name = capName(childName);
+  const who2 = name ? `The child is named ${name}, age ${age}. Use ${name} in word problems and stories.` : `The child is age ${age}; no name was given, so address them as 'you' and never invent a name.`;
   const user =
     `${intentPreamble(template.id, age)} ` +
-    `${who} ` +
-    `Parent requests, newest last: ${askText}. ` +
-    `Apply the newest request as an edit, keeping earlier context (theme, difficulty, length). ` +
-    `Make it a FULL A4 page of work (aim for 4 to 6 blocks). Return ONLY the worksheet JSON.`;
+    `This worksheet type is "${template.title}" (${template.brief}). Produce ONLY ${template.title} content. ` +
+    `${who2} ` +
+    `Parent requests, newest last: ${askText}. Apply the newest as an edit, keeping earlier theme/difficulty/length. ` +
+    `Make it a FULL A4 page (3 to 5 blocks). Address the child directly. Return ONLY the worksheet JSON.`;
   return [
     { role: "system", content: SYSTEM },
     { role: "user", content: user },
@@ -357,7 +778,6 @@ const ALLOWED = new Set([
 function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate, age: number, childName?: string): Worksheet | null {
   const rawBlocks = Array.isArray(parsed.blocks) ? parsed.blocks : [];
   const strArr = (v: unknown) => (Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : undefined);
-  // Sprout voice: no em/en dashes, ever. Strip any the model emits from prose.
   const noDash = (s: string) => s.replace(/\s*[—–]\s*/g, ", ");
   const blocks: WorksheetBlock[] = [];
   for (const b of rawBlocks) {
@@ -383,24 +803,24 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
     }
     blocks.push(block);
   }
-  if (blocks.length === 0) return null;
+  // Validation: reject weak AI output so the caller falls back to the engine.
+  const items = blocks.reduce((s, b) => s + (b.items?.length ?? 0) + (b.pairs?.length ?? 0) + (b.text ? 3 : 0), 0);
+  if (blocks.length < 2 || items < 5) return null;
+
+  const name = capName(childName);
+  const subtitleRaw = typeof parsed.subtitle === "string" ? noDash(parsed.subtitle) : "";
+  const subtitle = subtitleRaw.replace(/\bages?\s*\d+\s*(-\s*\d+)?\b/gi, "").replace(/^[\s·,-]+|[\s·,-]+$/g, "");
   return {
-    title: typeof parsed.title === "string" && parsed.title.trim() ? noDash(parsed.title) : template.title,
-    subtitle: typeof parsed.subtitle === "string" && parsed.subtitle.trim() ? noDash(parsed.subtitle) : `Age ${age}`,
-    intro: typeof parsed.intro === "string" ? noDash(parsed.intro) : undefined,
+    title: name ? `${name}'s ${template.title}` : template.title,
+    subtitle,
     blocks,
-    meta: { templateId: template.id, templateLabel: template.title, age, childName: childName?.trim() || undefined },
+    meta: { templateId: template.id, templateLabel: template.title, age, childName: name || undefined },
   };
 }
 
-// Replace control characters (raw newlines/tabs) with spaces. Some models emit
-// them inside JSON string values, which is invalid JSON; this lets us recover
-// instead of silently falling back to sample mode.
 function stripControlChars(s: string): string {
   let out = "";
-  for (let i = 0; i < s.length; i++) {
-    out += s.charCodeAt(i) < 32 ? " " : s[i];
-  }
+  for (let i = 0; i < s.length; i++) out += s.charCodeAt(i) < 32 ? " " : s[i];
   return out;
 }
 
@@ -439,7 +859,6 @@ export async function aiWorksheet(
         messages: msgs,
         temperature: 0.7,
         max_tokens: 4000,
-        // Venice's own injected system prompt interferes with strict JSON output.
         venice_parameters: { include_venice_system_prompt: false },
       }),
     });

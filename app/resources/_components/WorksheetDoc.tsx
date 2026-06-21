@@ -271,11 +271,6 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 }
 
 export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
-  const name = worksheet.meta.childName;
-  const answerBlocks = worksheet.blocks
-    .map((b, i) => ({ b, i }))
-    .filter(({ b }) => b.answers && b.answers.length > 0);
-
   return (
     <article className="print-area relative overflow-hidden rounded-[28px] border-2 border-[#2E5A35]/25 bg-[#FFFEFB] text-[#1B3722] shadow-[0_18px_50px_-20px_rgba(0,0,0,0.55)]">
       {/* layered green wave banner */}
@@ -290,11 +285,10 @@ export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
             <SproutMascotIcon className="h-12 w-12" />
           </span>
           <div className="text-sprout-cream min-w-0">
-            {name && <p className="text-sprout-cream/90 text-sm font-semibold">{`${name}'s worksheet`}</p>}
             <h1 className="truncate text-2xl leading-tight font-bold">{worksheet.title}</h1>
-            <p className="text-sprout-cream/85 text-sm">{worksheet.subtitle}</p>
+            {worksheet.subtitle ? <p className="text-sprout-cream/85 text-sm">{worksheet.subtitle}</p> : null}
           </div>
-          <span className="text-sprout-cream/90 ml-auto hidden self-start pt-1 text-xs font-bold tracking-[0.2em] uppercase sm:block">
+          <span className="text-sprout-cream ml-auto hidden self-start pt-1 text-sm font-extrabold tracking-[0.25em] uppercase sm:block">
             Sprout
           </span>
         </div>
@@ -309,25 +303,16 @@ export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
           ))}
         </div>
 
-        <div className="mt-8 flex items-center justify-between border-t border-[#2E5A35]/20 pt-3 text-[11px] text-[#2E5A35]/70">
-          <span>Name: ___________________</span>
-          <span>Made with Sprout · hisprout.app</span>
+        <div className="mt-8 flex items-center justify-between border-t border-[#2E5A35]/15 pt-4">
+          <span className="text-[12px] text-[#1B3722]/50">Name: ______________________</span>
+          <span className="inline-flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-[#2E5A35]">
+            <span className="grid size-6 place-items-center rounded-lg bg-[#2E5A35]/10">
+              <SproutMascotIcon className="h-4 w-4" />
+            </span>
+            Made with Sprout
+          </span>
         </div>
       </div>
-
-      {answerBlocks.length > 0 && (
-        <details className="no-print mx-5 mb-5 rounded-xl border border-[#2E5A35]/20 bg-[#F3F7F0] p-3 text-[#1B3722]">
-          <summary className="cursor-pointer text-sm font-semibold text-[#2E5A35]">Answer key (for the grown-up)</summary>
-          <div className="mt-2 space-y-2 text-sm">
-            {answerBlocks.map(({ b, i }) => (
-              <div key={i}>
-                <span className="font-medium text-[#2E5A35]">{b.prompt ? b.prompt.slice(0, 40) : b.kind}:</span>{" "}
-                {(b.answers ?? []).join("  ·  ")}
-              </div>
-            ))}
-          </div>
-        </details>
-      )}
     </article>
   );
 }

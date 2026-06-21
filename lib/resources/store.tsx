@@ -6,6 +6,7 @@
 // tables so a real multi-user backend is a drop-in swap later.
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { capName } from "./util";
 import type { ChildProfile, CreatorProfile, LearningMoment, SavedWorksheet, Worksheet } from "./types";
 
 const CHILDREN_KEY = "sprout.resources.children.v2";
@@ -102,16 +103,20 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
     if (ready) localStorage.setItem(MYLIKES_KEY, JSON.stringify(myLikes));
   }, [myLikes, ready]);
 
-  const setAccount = useCallback((profile: CreatorProfile) => setAccountState(profile), []);
+  const setAccount = useCallback(
+    (profile: CreatorProfile) => setAccountState({ ...profile, displayName: capName(profile.displayName) || profile.displayName }),
+    [],
+  );
 
   const addChild = useCallback((data: Omit<ChildProfile, "id" | "createdAt">) => {
-    const child: ChildProfile = { ...data, id: uid(), createdAt: Date.now() };
+    const child: ChildProfile = { ...data, name: capName(data.name) || data.name, id: uid(), createdAt: Date.now() };
     setKids((prev) => [...prev, child]);
     return child;
   }, []);
 
   const updateChild = useCallback((id: string, patch: Partial<Omit<ChildProfile, "id" | "createdAt">>) => {
-    setKids((prev) => prev.map((c) => (c.id === id ? { ...c, ...patch } : c)));
+    const next = patch.name !== undefined ? { ...patch, name: capName(patch.name) || patch.name } : patch;
+    setKids((prev) => prev.map((c) => (c.id === id ? { ...c, ...next } : c)));
   }, []);
 
   const removeChild = useCallback((id: string) => {

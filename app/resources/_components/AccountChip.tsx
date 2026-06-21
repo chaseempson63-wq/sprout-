@@ -6,6 +6,7 @@ import { Dialog } from "@base-ui/react/dialog";
 import { Check, ImagePlus, UserCircle, X } from "lucide-react";
 import { downscaleImage } from "@/lib/resources/image";
 import { useResources } from "@/lib/resources/store";
+import { capName } from "@/lib/resources/util";
 
 function slug(s: string): string {
   return (
@@ -47,9 +48,9 @@ export function AccountChip() {
           // eslint-disable-next-line @next/next/no-img-element
           <img src={account.photo} alt="" className="size-7 rounded-full object-cover" />
         ) : (
-          <span className="grid size-7 place-items-center rounded-full bg-[#F4EDE0] text-sm font-bold text-[#1B3722]">{account.displayName.charAt(0).toUpperCase()}</span>
+          <span className="grid size-7 place-items-center rounded-full bg-[#F4EDE0] text-sm font-bold text-[#1B3722]">{capName(account.displayName).charAt(0)}</span>
         )}
-        <span className="text-sm font-semibold">{account.displayName}</span>
+        <span className="text-sm font-semibold">{capName(account.displayName)}</span>
       </Link>
     );
   }

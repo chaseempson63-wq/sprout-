@@ -110,9 +110,13 @@ export function detectTheme(text: string): Theme {
     if (t.includes(key) || t.includes(`${key}s`)) return THEMES[key];
   }
   if (/dino/.test(t)) return THEMES.dinosaur;
-  if (/sea|under the sea|fish|shark|whale/.test(t)) return THEMES.ocean;
-  if (/car|truck|train|plane|boat/.test(t)) return THEMES.vehicle;
-  if (/dragon|castle|knight|princess|wizard/.test(t)) return THEMES.fairytale;
+  if (/sea|under the sea|fish|shark|whale|mermaid|underwater/.test(t)) return THEMES.ocean;
+  if (/fruit|apple|banana|veg|snack|pizza|cookie|cake/.test(t)) return THEMES.food;
+  if (/puppy|dog|cat|bear|lion|tiger|jungle|safari|zoo|bug|insect|frog|bird/.test(t)) return THEMES.animal;
+  if (/soccer|football|basketball|tennis|race|swim|cricket|rugby|ball/.test(t)) return THEMES.sport;
+  if (/rocket|planet|star|moon|galaxy|alien|astronaut/.test(t)) return THEMES.space;
+  if (/car|truck|train|plane|boat|bike|bus/.test(t)) return THEMES.vehicle;
+  if (/dragon|castle|knight|princess|prince|wizard|fairy/.test(t)) return THEMES.fairytale;
   return DEFAULT_THEME;
 }
 

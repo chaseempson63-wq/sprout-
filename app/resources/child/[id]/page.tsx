@@ -7,6 +7,7 @@ import { ArrowLeft, Check, ImagePlus, Pencil, Plus, Sparkles, Star, Trash2, X } 
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { topicForTemplate } from "@/lib/resources/catalog";
 import { AVATAR_COLORS, colorClasses, useResources } from "@/lib/resources/store";
+import { capName } from "@/lib/resources/util";
 import type { LearningMoment, SavedWorksheet } from "@/lib/resources/types";
 
 const lightCard =
@@ -216,10 +217,10 @@ export default function ChildProfile() {
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={child.photo} alt={child.name} className="size-16 shrink-0 rounded-full object-cover" />
               ) : (
-                <span className={`grid size-16 shrink-0 place-items-center rounded-full text-2xl font-bold ${cc.bg}`}>{child.name.charAt(0).toUpperCase()}</span>
+                <span className={`grid size-16 shrink-0 place-items-center rounded-full text-2xl font-bold ${cc.bg}`}>{capName(child.name).charAt(0)}</span>
               )}
               <div className="flex-1">
-                <h1 className="text-2xl font-bold text-[#1B3722]">{child.name}</h1>
+                <h1 className="text-2xl font-bold text-[#1B3722]">{capName(child.name)}</h1>
                 <p className="text-[#1B3722]/60">
                   Age {child.age}
                   {child.birthday ? ` · born ${new Date(child.birthday).toLocaleDateString()}` : ""}
@@ -256,7 +257,7 @@ export default function ChildProfile() {
               ))}
             </div>
             <Link href="/resources" className={`${primaryBtn} mt-5`}>
-              <Plus className="size-4" /> Make something for {child.name}
+              <Plus className="size-4" /> Make something for {capName(child.name)}
             </Link>
           </>
         )}
@@ -270,7 +271,7 @@ export default function ChildProfile() {
             <textarea
               value={momentText}
               onChange={(e) => setMomentText(e.target.value)}
-              placeholder={`Capture a learning moment for ${child.name}. What they did, said, or made.`}
+              placeholder={`Capture a learning moment for ${capName(child.name)}. What they did, said, or made.`}
               rows={2}
               className="w-full resize-none rounded-lg border border-black/10 bg-white px-3 py-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]"
             />
@@ -292,7 +293,7 @@ export default function ChildProfile() {
       </div>
 
       {/* feed */}
-      <h2 className="text-sprout-cream mb-3 text-xl font-bold">{child.name + "'s story"}</h2>
+      <h2 className="text-sprout-cream mb-3 text-xl font-bold">{capName(child.name) + "'s story"}</h2>
       {feed.length === 0 ? (
         <div className={`${lightCard} p-8 text-center`}>
           <p className="text-[#1B3722]/70">Nothing yet. Make a worksheet or add a learning moment and it shows up here.</p>

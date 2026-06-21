@@ -9,6 +9,7 @@ import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY } from "@/lib/resources/intent";
 import { useResources } from "@/lib/resources/store";
+import { capName } from "@/lib/resources/util";
 import type { ChatMessage, Worksheet } from "@/lib/resources/types";
 
 const primaryBtn =
@@ -76,7 +77,7 @@ export default function Builder() {
         setMessages([
           {
             role: "assistant",
-            content: `Fresh worksheet for age ${ageVal}, ready below. Tell me what to change: a theme like space or dinosaurs, make it harder or easier, or add more questions. Or use the arrows to flick through new versions.`,
+            content: `Fresh worksheet ready below. Tell me what to change: a theme like space or dinosaurs, make it harder or easier, or add more questions. Or use the arrows to flick through new versions.`,
           },
         ]);
       } else if (kind === "send") {
@@ -211,7 +212,7 @@ export default function Builder() {
               childId === k.id ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream bg-sprout-cream/10 border border-sprout-cream/15"
             }`}
           >
-            {k.name} <span className="opacity-60">· {k.age}</span>
+            {capName(k.name)} <span className="opacity-60">· {k.age}</span>
           </button>
         ))}
         {addingKid ? (

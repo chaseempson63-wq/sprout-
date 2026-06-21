@@ -6,9 +6,10 @@ import { useState } from "react";
 import { ArrowLeft, ArrowRight, Check, Globe, Heart, Plus, Search, Star, Trash2, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
-import { ageBand, TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
+import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { colorClasses, useResources } from "@/lib/resources/store";
+import { capName } from "@/lib/resources/util";
 import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
 const lightCard =
@@ -105,7 +106,6 @@ export default function LibraryHome() {
               <div className={`${lightCard} h-full p-5`}>
                 <div className="flex items-start justify-between">
                   <span className={`grid size-11 place-items-center rounded-xl text-2xl ${t.accent}`}>{t.emoji}</span>
-                  <span className="rounded-full bg-[#2E5A35]/10 px-2 py-0.5 text-[11px] font-semibold text-[#2E5A35]">{ageBand(t)}</span>
                 </div>
                 <h3 className="mt-3 text-lg font-bold text-[#1B3722]">{t.title}</h3>
                 <p className="mt-1 text-sm leading-relaxed text-[#1B3722]/70">{t.blurb}</p>
@@ -307,11 +307,11 @@ function KidsManager({
           <Link href={`/resources/creator/${account.handle}`} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-20 flex-col items-center gap-2 text-center duration-300">
             {account.photo ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={account.photo} alt="" className={`size-16 rounded-2xl object-cover ${tileRing}`} />
+              <img src={account.photo} alt="" className={`size-16 rounded-full object-cover ${tileRing}`} />
             ) : (
-              <span className={`grid size-16 place-items-center rounded-2xl bg-[#2E5A35] text-xl font-bold text-white ${tileRing}`}>{account.displayName.charAt(0).toUpperCase()}</span>
+              <span className={`grid size-16 place-items-center rounded-full bg-[#2E5A35] text-xl font-bold text-white ${tileRing}`}>{capName(account.displayName).charAt(0)}</span>
             )}
-            <span className={tileLabel}>{account.displayName}</span>
+            <span className={tileLabel}>{capName(account.displayName)}</span>
             <span className={tileSub}>account</span>
           </Link>
         )}
@@ -320,8 +320,8 @@ function KidsManager({
           const cc = colorClasses(k.color);
           return (
             <Link key={k.id} href={`/resources/child/${k.id}`} style={{ animationDelay: `${(i + 1) * 60}ms` }} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-20 flex-col items-center gap-2 text-center duration-300">
-              <span className={`grid size-16 place-items-center rounded-2xl text-xl font-bold ${cc.bg} ${tileRing}`}>{k.name.charAt(0).toUpperCase()}</span>
-              <span className={tileLabel}>{k.name}</span>
+              <span className={`grid size-16 place-items-center rounded-full text-xl font-bold ${cc.bg} ${tileRing}`}>{capName(k.name).charAt(0)}</span>
+              <span className={tileLabel}>{capName(k.name)}</span>
               <span className={tileSub}>age {k.age}</span>
             </Link>
           );
@@ -329,7 +329,7 @@ function KidsManager({
         {/* add a child */}
         {!adding ? (
           <button onClick={() => setAdding(true)} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-20 flex-col items-center gap-2 text-center duration-300">
-            <span className="grid size-16 place-items-center rounded-2xl border-2 border-dashed border-[#2E5A35]/30 text-[#2E5A35] transition group-hover:border-[#2E5A35]/60 group-hover:bg-[#2E5A35]/5">
+            <span className="grid size-16 place-items-center rounded-full border-2 border-dashed border-[#2E5A35]/30 text-[#2E5A35] transition group-hover:border-[#2E5A35]/60 group-hover:bg-[#2E5A35]/5">
               <Plus className="size-6" />
             </span>
             <span className="text-xs font-semibold text-[#2E5A35]">Add child</span>
