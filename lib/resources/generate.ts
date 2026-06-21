@@ -448,27 +448,46 @@ export async function aiWorksheet(
   childName?: string,
 ): Promise<Worksheet | null> {
   const base = process.env.VENICE_BASE_URL || "https://api.venice.ai/api/v1";
-  const model = process.env.VENICE_MODEL || "venice-uncensored";
-  try {
-    const res = await fetch(`${base}/chat/completions`, {
+  const model = process.env.VENICE_MODEL || "venice-uncensored-1-2";
+  const msgs = buildMessages(template, age, messages, childName);
+  const call = (useFormat: boolean) =>
+    fetch(`${base}/chat/completions`, {
       method: "POST",
       headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
       body: JSON.stringify({
         model,
-        messages: buildMessages(template, age, messages, childName),
+        messages: msgs,
         temperature: 0.8,
         max_tokens: 3500,
-        response_format: { type: "json_object" },
+        ...(useFormat ? { response_format: { type: "json_object" } } : {}),
       }),
     });
-    if (!res.ok) return null;
+  try {
+    let res = await call(true);
+    if (!res.ok) {
+      const errText = await res.text().catch(() => "");
+      console.log(`[venice] attempt1 status=${res.status} body=${errText.slice(0, 300)}`);
+      // Some models reject response_format; retry plain.
+      res = await call(false);
+      if (!res.ok) {
+        console.log(`[venice] attempt2 status=${res.status}`);
+        return null;
+      }
+    }
     const data = (await res.json()) as { choices?: { message?: { content?: string } }[] };
     const text = data?.choices?.[0]?.message?.content;
-    if (!text) return null;
+    if (!text) {
+      console.log("[venice] ok but no content");
+      return null;
+    }
     const parsed = extractJson(text);
-    if (!parsed) return null;
+    if (!parsed) {
+      console.log("[venice] could not parse JSON from content");
+      return null;
+    }
     return normalize(parsed, template, age, childName);
-  } catch {
+  } catch (e) {
+    console.log(`[venice] threw ${String(e).slice(0, 200)}`);
     return null;
   }
 }

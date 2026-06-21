@@ -42,6 +42,7 @@ export async function POST(request: Request) {
     .join(" ");
 
   const key = process.env.VENICE_API_KEY;
+  console.log(`[resources] venice key present: ${!!key} (len ${key?.length ?? 0}); model ${process.env.VENICE_MODEL || "default"}`);
   if (key) {
     const ai = await aiWorksheet(template, age, messages, key, childName);
     if (ai) return Response.json({ worksheet: ai, source: "ai" });
