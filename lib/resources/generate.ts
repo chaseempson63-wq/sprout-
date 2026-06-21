@@ -126,36 +126,74 @@ function columnMathBlock(ctx: Ctx, op: "add" | "sub"): WorksheetBlock {
 
 function moneyBlock(ctx: Ctx): WorksheetBlock {
   const f = scaleFactor(ctx.age, ctx.diff);
-  const hi = Math.max(2, Math.round(12 * f));
   const count = cnt(8, ctx, 16);
   const items: string[] = [];
   const answers: string[] = [];
-  for (let i = 0; i < count; i++) {
-    const a = rint(1, hi);
-    const b = rint(1, hi);
-    items.push(`$${a} + $${b} =`);
-    answers.push(`$${a + b}`);
+  // Age 9+ (or harder) work in dollars AND cents with decimals.
+  const cents = ctx.age >= 9 || ctx.diff >= 1;
+  if (cents) {
+    const hi = Math.max(500, Math.round(4000 * f)); // up to ~$40+ scaled
+    const fmt = (c: number) => `$${(c / 100).toFixed(2)}`;
+    for (let i = 0; i < count; i++) {
+      const a = rint(125, hi);
+      const b = rint(125, hi);
+      items.push(`${fmt(a)} + ${fmt(b)} =`);
+      answers.push(fmt(a + b));
+    }
+  } else {
+    const hi = Math.max(2, Math.round(12 * f));
+    for (let i = 0; i < count; i++) {
+      const a = rint(1, hi);
+      const b = rint(1, hi);
+      items.push(`$${a} + $${b} =`);
+      answers.push(`$${a + b}`);
+    }
   }
   return { kind: "math", prompt: "Add up the money. Write the total with a $ sign.", items, answers };
 }
 
 function moneyWordProblems(ctx: Ctx): WorksheetBlock {
-  const f = scaleFactor(ctx.age, ctx.diff);
-  const price = rint(2, Math.max(4, Math.round(9 * f)));
+  const subj = who(ctx);
+  const buys = ctx.name ? "buys" : "buy";
+  const pays = ctx.name ? "pays" : "pay";
+  const adv = ctx.age >= 9 || ctx.diff >= 1;
+  const d = (c: number) => `$${(c / 100).toFixed(2)}`;
+  if (adv) {
+    const priceC = rint(500, 4000);
+    const paidC = priceC + rint(75, 2500);
+    const aC = rint(300, 2500);
+    const bC = rint(300, 2500);
+    const jacketC = Math.round(rint(2000, 9000) / 4) * 4; // clean 25% off
+    const billC = Math.round(rint(1500, 6000) / 10) * 10; // clean 10% tax
+    return {
+      kind: "short-answer",
+      prompt: "Work it out. Write the answer with a $ sign.",
+      items: [
+        `${subj} ${buys} a book for ${d(priceC)} and ${pays} with ${d(paidC)}. How much change?  $____`,
+        `One item costs ${d(aC)} and another costs ${d(bC)}. What is the total?  $____`,
+        `A ${d(jacketC)} jacket is 25% off. What is the sale price?  $____`,
+        `A bill is ${d(billC)}. Add 10% tax. What is the total?  $____`,
+      ],
+      rows: 2,
+      answers: [d(paidC - priceC), d(aC + bC), d(jacketC * 0.75), d(Math.round(billC * 1.1))],
+    };
+  }
+  const price = rint(2, 9);
   const paid = price + rint(1, 9);
   const snack = rint(2, 6);
   const drink = rint(1, 4);
+  const save = rint(1, 5);
   return {
     kind: "short-answer",
     prompt: "Work it out, then write the answer with a $ or ¢ sign.",
     items: [
-      `${who(ctx)} ${ctx.name ? "buys" : "buy"} a toy for $${price} and ${ctx.name ? "pays" : "pay"} with $${paid}. How much change?  $____`,
+      `${subj} ${buys} a toy for $${price} and ${pays} with $${paid}. How much change?  $____`,
       `A snack costs $${snack} and a drink costs $${drink}. How much for both?  $____`,
       `How many cents are in 2 dimes and 1 nickel?  ____ ¢`,
-      `${who(ctx)} ${ctx.name ? "saves" : "save"} $${rint(1, 5)} a week. How much after 4 weeks?  $____`,
+      `${subj} ${ctx.name ? "saves" : "save"} $${save} a week. How much after 4 weeks?  $____`,
     ],
     rows: 2,
-    answers: [`$${paid - price}`, `$${snack + drink}`, "25 ¢", `$${(price % 5) + 4}`],
+    answers: [`$${paid - price}`, `$${snack + drink}`, "25 ¢", `$${save * 4}`],
   };
 }
 
@@ -185,6 +223,8 @@ function missingNumbersBlock(ctx: Ctx, skipOnly = false): WorksheetBlock {
   return { kind: "missing-numbers", prompt: "Fill in the missing numbers.", items, answers };
 }
 
+// Word problems whose OPERATION matches the template, so a multiplication sheet
+// never carries a subtraction problem. Generic "word-problems" stays a real mix.
 function shortAnswerMath(ctx: Ctx): WorksheetBlock {
   const noun = ctx.theme.nouns[0];
   const f = scaleFactor(ctx.age, ctx.diff);
@@ -193,16 +233,31 @@ function shortAnswerMath(ctx: Ctx): WorksheetBlock {
   const answers: string[] = [];
   const subj = who(ctx);
   const has = ctx.name ? "has" : "have";
-  const gave = ctx.name ? "gives" : "give";
+  const id = ctx.template.id;
+  const hi = Math.max(4, Math.round(8 * f));
   for (let i = 0; i < count; i++) {
-    const a = rint(2, Math.max(4, Math.round(8 * f)));
-    const b = rint(2, Math.max(4, Math.round(8 * f)));
-    if (i % 2 === 0) {
-      items.push(`${subj} ${has} ${a} bags of ${noun} with ${b} in each. How many ${noun} in all?`);
+    const a = rint(2, hi);
+    const b = rint(2, hi);
+    if (id === "multiplication") {
+      items.push(`${subj} ${has} ${a} boxes of ${noun} with ${b} in each box. How many ${noun} in all?`);
       answers.push(`${a * b}`);
+    } else if (id === "division") {
+      const groups = rint(2, Math.min(12, hi));
+      const each = rint(2, hi);
+      items.push(`${subj} ${has} ${groups * each} ${noun} to share equally among ${groups} friends. How many does each friend get?`);
+      answers.push(`${each}`);
     } else {
-      items.push(`${subj} ${has} ${a * b} ${noun} and ${gave} ${b} away. How many are left?`);
-      answers.push(`${a * b - b}`);
+      const r = i % 3;
+      if (r === 0) {
+        items.push(`${subj} ${has} ${a} bags of ${noun} with ${b} in each. How many ${noun} in all?`);
+        answers.push(`${a * b}`);
+      } else if (r === 1) {
+        items.push(`${subj} ${has} ${a + b} ${noun} and ${ctx.name ? "gives" : "give"} ${b} away. How many are left?`);
+        answers.push(`${a}`);
+      } else {
+        items.push(`${subj} ${has} ${a} ${noun} and ${ctx.name ? "finds" : "find"} ${b} more. How many ${noun} now?`);
+        answers.push(`${a + b}`);
+      }
     }
   }
   return { kind: "short-answer", prompt: "Show your work, then write the answer.", items, rows: 2, answers };

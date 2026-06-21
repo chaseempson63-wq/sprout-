@@ -168,9 +168,9 @@ export const TEMPLATE_INTENT: Record<string, TemplateIntent> = {
     grounding: ["real clock times; for older children, simple elapsed-time questions"],
   },
   money: {
-    defines: "counting money and making change",
-    skills: ["adding amounts", "counting coins", "making change"],
-    grounding: ["real coins and notes (1c, 5c, 10c, 25c, $1, $5, $10) shown with $ and ¢"],
+    defines: "counting money, making change, and money operations with decimals",
+    skills: ["counting coins (young)", "dollars and cents with decimals", "change, discount and tax for older children"],
+    grounding: ["whole-dollar amounts only for ages 6-8; for age 9+ use dollars AND cents with decimals (e.g. $11.27 + $97.82) plus change, discount and tax problems; never give an older child whole-dollar sums under $50"],
   },
   "missing-numbers": {
     defines: "completing number sequences",
