@@ -10,6 +10,7 @@ import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY } from "@/lib/resources/intent";
 import { useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
+import { LiquidButton, LiquidGlass } from "@/components/ui/liquid-button";
 import type { ChatMessage, Worksheet } from "@/lib/resources/types";
 
 const primaryBtn =
@@ -232,7 +233,8 @@ export default function Builder() {
 
       <div className="grid gap-5 lg:grid-cols-[360px_minmax(0,1fr)]">
         {/* chat */}
-        <div className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] flex h-[70vh] flex-col rounded-2xl border lg:sticky lg:top-20">
+        <LiquidGlass className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] h-[70vh] rounded-2xl border lg:sticky lg:top-20">
+          <div className="flex h-full flex-col">
           <div className="flex-1 space-y-3 overflow-y-auto p-4">
             {messages.map((m, i) =>
               m.role === "user" ? (
@@ -258,23 +260,25 @@ export default function Builder() {
 
           <div className="no-print border-sprout-cream/15 flex flex-wrap gap-1.5 border-t px-3 pt-2">
             {INPUT_VOCABULARY.edits.slice(0, 5).map((k) => (
-              <button
+              <LiquidButton
                 key={k.word}
                 onClick={() => setInput(k.word)}
                 title={k.does}
-                className="bg-sprout-cream/10 text-sprout-cream/80 hover:bg-sprout-cream/20 rounded-full px-2 py-0.5 text-[11px] transition"
+                size="sm"
+                className="text-sprout-cream/80 hover:text-sprout-cream h-7 gap-1 rounded-full px-3 text-[11px]"
               >
                 {k.word}
-              </button>
+              </LiquidButton>
             ))}
             {INPUT_VOCABULARY.themes.slice(0, 4).map((t) => (
-              <button
+              <LiquidButton
                 key={t.key}
                 onClick={() => setInput(`make it about ${t.label.toLowerCase()}`)}
-                className="bg-sprout-cream/10 text-sprout-cream/80 hover:bg-sprout-cream/20 rounded-full px-2 py-0.5 text-[11px] transition"
+                size="sm"
+                className="text-sprout-cream/80 hover:text-sprout-cream h-7 gap-1 rounded-full px-3 text-[11px]"
               >
                 {t.emoji} {t.label}
-              </button>
+              </LiquidButton>
             ))}
           </div>
           <div className="border-sprout-cream/15 flex items-center gap-2 border-t p-3">
@@ -287,11 +291,12 @@ export default function Builder() {
               placeholder="make it about space, add more questions, harder..."
               className="text-sprout-cream placeholder:text-sprout-cream/40 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none"
             />
-            <button onClick={send} disabled={loading || !input.trim()} aria-label="Send" className="bg-[#F4EDE0] text-[#1B3722] grid size-9 shrink-0 place-items-center rounded-full transition active:scale-95 disabled:opacity-40">
+            <LiquidButton onClick={send} disabled={loading || !input.trim()} aria-label="Send" size="icon" className="bg-[#F4EDE0] text-[#1B3722] shrink-0 rounded-full disabled:opacity-40">
               {loading ? <Loader2 className="size-4 animate-spin" /> : <Send className="size-4" />}
-            </button>
+            </LiquidButton>
           </div>
-        </div>
+          </div>
+        </LiquidGlass>
 
         {/* preview */}
         <div className="min-w-0">

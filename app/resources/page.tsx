@@ -10,6 +10,7 @@ import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { colorClasses, useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
+import { LiquidButton, LiquidGlass } from "@/components/ui/liquid-button";
 import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
 const lightCard =
@@ -67,15 +68,17 @@ export default function LibraryHome() {
 
       {ready && <KidsManager kids={kids} account={account} onAdd={addChild} />}
 
-      <div className="border-sprout-cream/20 bg-sprout-cream/10 mb-3 flex items-center gap-2 rounded-full border px-4">
-        <Search className="text-sprout-cream/50 size-4 shrink-0" />
-        <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none" />
-        {query && (
-          <button onClick={() => setQuery("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
-            <X className="size-4" />
-          </button>
-        )}
-      </div>
+      <LiquidGlass className="border-sprout-cream/20 bg-sprout-cream/10 mb-3 rounded-full border">
+        <div className="flex items-center gap-2 px-4">
+          <Search className="text-sprout-cream/50 size-4 shrink-0" />
+          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none" />
+          {query && (
+            <button onClick={() => setQuery("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
+              <X className="size-4" />
+            </button>
+          )}
+        </div>
+      </LiquidGlass>
 
       {tab !== "community" && (
         <div className="mb-6 flex flex-wrap gap-2">
@@ -88,14 +91,15 @@ export default function LibraryHome() {
 
       <div className="mb-6 flex flex-wrap gap-2">
         {tabs.map((t) => (
-          <button
+          <LiquidButton
             key={t.key}
             onClick={() => setTab(t.key)}
-            className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition ${tab === t.key ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream bg-sprout-cream/10"}`}
+            size="sm"
+            className={`gap-2 rounded-full px-4 text-sm font-semibold ${tab === t.key ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream"}`}
           >
             {t.label}
             <span className={`rounded-full px-1.5 text-xs ${tab === t.key ? "bg-[#1B3722]/10" : "bg-sprout-cream/15"}`}>{t.count}</span>
-          </button>
+          </LiquidButton>
         ))}
       </div>
 
@@ -203,13 +207,14 @@ export default function LibraryHome() {
 
 function TopicChip({ active, onClick, label, emoji }: { active: boolean; onClick: () => void; label: string; emoji: string }) {
   return (
-    <button
+    <LiquidButton
       onClick={onClick}
-      className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition ${active ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream bg-sprout-cream/10 border border-sprout-cream/15"}`}
+      size="sm"
+      className={`gap-1.5 rounded-full text-sm font-medium ${active ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream border border-sprout-cream/15"}`}
     >
       <span>{emoji}</span>
       {label}
-    </button>
+    </LiquidButton>
   );
 }
 
