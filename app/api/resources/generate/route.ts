@@ -41,8 +41,13 @@ export async function POST(request: Request) {
     .map((m) => m.content)
     .join(" ");
 
-  const key = process.env.VENICE_API_KEY;
-  console.log(`[resources] venice key present: ${!!key} (len ${key?.length ?? 0}); model ${process.env.VENICE_MODEL || "default"}`);
+  // Accept the key under either spelling so a Venice/Venus naming slip can't block it.
+  const key =
+    process.env.VENICE_API_KEY ||
+    process.env.VENUS_API_KEY ||
+    process.env.VENICE_INFERENCE_KEY ||
+    "";
+  console.log(`[resources] key present: ${!!key} (len ${key.length}); model ${process.env.VENICE_MODEL || "default"}`);
   if (key) {
     const ai = await aiWorksheet(template, age, messages, key, childName);
     if (ai) return Response.json({ worksheet: ai, source: "ai" });
