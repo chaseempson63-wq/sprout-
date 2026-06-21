@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { Dialog } from "@base-ui/react/dialog";
 import { Check, ImagePlus, UserCircle, X } from "lucide-react";
 import { downscaleImage } from "@/lib/resources/image";
 import { useResources } from "@/lib/resources/store";
@@ -54,38 +55,37 @@ export function AccountChip() {
   }
 
   return (
-    <>
-      <button onClick={() => setOpen(true)} className="bg-sprout-cream/10 border-sprout-cream/20 text-sprout-cream hover:bg-sprout-cream/15 inline-flex h-9 items-center gap-1.5 rounded-full border px-3 text-xs font-semibold">
+    <Dialog.Root open={open} onOpenChange={setOpen}>
+      <Dialog.Trigger className="bg-sprout-cream/10 border-sprout-cream/20 text-sprout-cream hover:bg-sprout-cream/15 inline-flex h-9 cursor-pointer items-center gap-1.5 rounded-full border px-3 text-xs font-semibold transition">
         <UserCircle className="size-4" /> Create profile
-      </button>
-      {open && (
-        <div className="fixed inset-0 z-50 grid place-items-center bg-[#0F1A12]/80 p-4 backdrop-blur-sm">
-          <div className="w-full max-w-sm rounded-2xl bg-[#FBF7EE] p-6 shadow-2xl">
-            <div className="flex items-center justify-between">
-              <h2 className="text-lg font-bold text-[#1B3722]">Create your creator profile</h2>
-              <button onClick={() => setOpen(false)} aria-label="Close" className="rounded-md p-1 text-[#1B3722]/50 hover:bg-black/5">
-                <X className="size-4" />
-              </button>
-            </div>
-            <p className="mt-1 text-sm text-[#1B3722]/60">This is the name shown on everything you make and publish.</p>
-            <div className="mt-4 flex items-center gap-3">
-              <button onClick={() => fileRef.current?.click()} className="relative grid size-14 place-items-center overflow-hidden rounded-full bg-[#2E5A35]/10" aria-label="Add photo">
-                {photo ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={photo} alt="" className="size-14 object-cover" />
-                ) : (
-                  <ImagePlus className="size-5 text-[#2E5A35]" />
-                )}
-              </button>
-              <input ref={fileRef} type="file" accept="image/*" hidden onChange={pick} />
-              <input value={name} onChange={(e) => setName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && create()} placeholder="Your name" autoFocus className="flex-1 rounded-lg border border-black/10 bg-white px-3 py-2 text-[#1B3722] outline-none focus:border-[#2E5A35]" />
-            </div>
-            <button onClick={create} disabled={!name.trim()} className="mt-4 inline-flex h-10 w-full items-center justify-center gap-2 rounded-full bg-[#2E5A35] text-sm font-bold text-white disabled:opacity-50">
-              <Check className="size-4" /> Create profile
-            </button>
+      </Dialog.Trigger>
+      <Dialog.Portal>
+        <Dialog.Backdrop className="fixed inset-0 z-[100] bg-[#0F1A12]/80 backdrop-blur-sm transition-opacity duration-200 data-[ending-style]:opacity-0 data-[starting-style]:opacity-0" />
+        <Dialog.Popup className="fixed top-1/2 left-1/2 z-[101] w-[calc(100vw-2rem)] max-w-sm -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-[#FBF7EE] p-6 shadow-2xl outline-none max-h-[90vh] overflow-y-auto transition-all duration-200 data-[ending-style]:scale-95 data-[ending-style]:opacity-0 data-[starting-style]:scale-95 data-[starting-style]:opacity-0">
+          <div className="flex items-start justify-between gap-3">
+            <Dialog.Title className="text-lg font-bold text-[#1B3722]">Create your creator profile</Dialog.Title>
+            <Dialog.Close aria-label="Close" className="-mt-1 -mr-1 shrink-0 rounded-md p-1.5 text-[#1B3722]/50 hover:bg-black/5">
+              <X className="size-4" />
+            </Dialog.Close>
           </div>
-        </div>
-      )}
-    </>
+          <Dialog.Description className="mt-1 text-sm text-[#1B3722]/60">This is the name shown on everything you make and publish.</Dialog.Description>
+          <div className="mt-5 flex items-center gap-3">
+            <button type="button" onClick={() => fileRef.current?.click()} className="relative grid size-14 shrink-0 place-items-center overflow-hidden rounded-full bg-[#2E5A35]/10" aria-label="Add photo">
+              {photo ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={photo} alt="" className="size-14 object-cover" />
+              ) : (
+                <ImagePlus className="size-5 text-[#2E5A35]" />
+              )}
+            </button>
+            <input ref={fileRef} type="file" accept="image/*" hidden onChange={pick} />
+            <input value={name} onChange={(e) => setName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && create()} placeholder="Your name" autoFocus className="h-11 flex-1 rounded-lg border border-black/10 bg-white px-3 text-[#1B3722] outline-none focus:border-[#2E5A35]" />
+          </div>
+          <button type="button" onClick={create} disabled={!name.trim()} className="mt-5 inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-[#2E5A35] text-sm font-bold text-white transition hover:bg-[#26492C] disabled:opacity-50">
+            <Check className="size-4" /> Create profile
+          </button>
+        </Dialog.Popup>
+      </Dialog.Portal>
+    </Dialog.Root>
   );
 }

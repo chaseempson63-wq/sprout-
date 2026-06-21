@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, Check, Globe, Heart, Search, Star, Trash2, UserPlus, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Globe, Heart, Plus, Search, Star, Trash2, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
 import { ageBand, TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
@@ -64,7 +64,7 @@ export default function LibraryHome() {
         </div>
       </div>
 
-      {ready && <KidsManager kids={kids} onAdd={addChild} />}
+      {ready && <KidsManager kids={kids} account={account} onAdd={addChild} />}
 
       <div className="border-sprout-cream/20 bg-sprout-cream/10 mb-3 flex items-center gap-2 rounded-full border px-4">
         <Search className="text-sprout-cream/50 size-4 shrink-0" />
@@ -99,7 +99,7 @@ export default function LibraryHome() {
       </div>
 
       {tab === "templates" && (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {templates.map((t) => (
             <Link key={t.id} href={`/resources/${t.id}`} className="group block transition hover:-translate-y-0.5">
               <div className={`${lightCard} h-full p-5`}>
@@ -128,7 +128,7 @@ export default function LibraryHome() {
               <p className="text-[#1B3722]/70">Nothing here yet. Make a worksheet, hit save, and it lands here.</p>
             </div>
           ) : (
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {mine.map((w) => (
                 <SavedCard key={w.id} ws={w} onOpen={() => setViewing({ ws: w, savedId: w.id })} onFavorite={() => toggleFavorite(w.id)} onDelete={() => removeWorksheet(w.id)} />
               ))}
@@ -143,7 +143,7 @@ export default function LibraryHome() {
             <Globe className="size-4" /> Worksheets shared by the Sprout community. Pick a topic to explore, like the best, and watch them climb.
           </p>
           {communitySel === null ? (
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
               {TOPICS.map((t) => {
                 const count = creations.filter((c) => topicForTemplate(c.worksheet.meta.templateId) === t.key).length;
                 return (
@@ -160,7 +160,7 @@ export default function LibraryHome() {
               <button onClick={() => setCommunitySel(null)} className="text-sprout-cream/80 hover:text-sprout-cream mb-4 inline-flex items-center gap-1 text-sm font-semibold">
                 <ArrowLeft className="size-4" /> All topics
               </button>
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {communityInSel.map((c, i) => (
                   <div key={c.id} className={`${lightCard} flex flex-col p-5`}>
                     <button onClick={() => setViewing({ ws: c.worksheet })} className="min-w-0 flex-1 text-left">
@@ -271,13 +271,17 @@ function Viewer({
   );
 }
 
-const kidInput = "rounded-lg border border-black/10 bg-white px-2 py-1 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]";
+const tileLabel = "w-full truncate text-xs font-semibold text-[#1B3722]";
+const tileSub = "-mt-0.5 text-[10px] text-[#1B3722]/50";
+const tileRing = "ring-2 ring-transparent transition group-hover:ring-[#2E5A35]/45";
 
 function KidsManager({
   kids,
+  account,
   onAdd,
 }: {
   kids: { id: string; name: string; age: number; color: string }[];
+  account: { handle: string; displayName: string; photo?: string } | null;
   onAdd: (d: { name: string; age: number; interests: string[]; color: string }) => { id: string };
 }) {
   const router = useRouter();
@@ -295,40 +299,59 @@ function KidsManager({
   }
 
   return (
-    <div className={`${lightCard} mb-6 p-4`}>
-      <div className="flex items-center justify-between">
-        <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Your kids</h2>
-        {!adding && (
-          <button onClick={() => setAdding(true)} className="inline-flex items-center gap-1 text-sm font-semibold text-[#2E5A35]">
-            <UserPlus className="size-4" /> Add child
-          </button>
+    <div className={`${lightCard} mb-7 p-5`}>
+      <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Profiles</h2>
+      <div className="mt-4 flex flex-wrap items-start gap-5">
+        {/* main account */}
+        {account && (
+          <Link href={`/resources/creator/${account.handle}`} className="group flex w-20 flex-col items-center gap-2 text-center">
+            {account.photo ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={account.photo} alt="" className={`size-16 rounded-2xl object-cover ${tileRing}`} />
+            ) : (
+              <span className={`grid size-16 place-items-center rounded-2xl bg-[#2E5A35] text-xl font-bold text-white ${tileRing}`}>{account.displayName.charAt(0).toUpperCase()}</span>
+            )}
+            <span className={tileLabel}>{account.displayName}</span>
+            <span className={tileSub}>account</span>
+          </Link>
         )}
-      </div>
-      <div className="mt-3 flex flex-wrap gap-2">
-        {kids.length === 0 && !adding && (
-          <p className="text-sm text-[#1B3722]/60">No kids yet. Add one to give worksheets their name and right age, and keep their saved sheets together. Tap a child to open their profile.</p>
-        )}
+        {/* kid sub-profiles */}
         {kids.map((k) => {
           const cc = colorClasses(k.color);
           return (
-            <Link key={k.id} href={`/resources/child/${k.id}`} className="flex items-center gap-2 rounded-full border border-[#2E5A35]/15 bg-white py-1 pr-3 pl-1 transition hover:border-[#2E5A35]/40 hover:shadow-sm">
-              <span className={`grid size-7 place-items-center rounded-full text-sm font-bold ${cc.bg}`}>{k.name.charAt(0).toUpperCase()}</span>
-              <span className="text-sm font-medium text-[#1B3722]">
-                {k.name} <span className="text-[#1B3722]/50">· {k.age}</span>
-              </span>
+            <Link key={k.id} href={`/resources/child/${k.id}`} className="group flex w-20 flex-col items-center gap-2 text-center">
+              <span className={`grid size-16 place-items-center rounded-2xl text-xl font-bold ${cc.bg} ${tileRing}`}>{k.name.charAt(0).toUpperCase()}</span>
+              <span className={tileLabel}>{k.name}</span>
+              <span className={tileSub}>age {k.age}</span>
             </Link>
           );
         })}
-        {adding && (
-          <div className="flex items-center gap-1 rounded-full border border-black/10 bg-white px-2 py-1">
-            <input value={aName} onChange={(e) => setAName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} placeholder="Name" autoFocus className={`${kidInput} w-24`} />
-            <input type="number" min={3} max={13} value={aAge} onChange={(e) => setAAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} className={`${kidInput} w-12`} />
-            <button onClick={add} aria-label="Add" className="grid size-7 place-items-center rounded-full bg-[#2E5A35] text-white">
-              <Check className="size-4" />
-            </button>
+        {/* add a child */}
+        {!adding ? (
+          <button onClick={() => setAdding(true)} className="group flex w-20 flex-col items-center gap-2 text-center">
+            <span className="grid size-16 place-items-center rounded-2xl border-2 border-dashed border-[#2E5A35]/30 text-[#2E5A35] transition group-hover:border-[#2E5A35]/60 group-hover:bg-[#2E5A35]/5">
+              <Plus className="size-6" />
+            </span>
+            <span className="text-xs font-semibold text-[#2E5A35]">Add child</span>
+          </button>
+        ) : (
+          <div className="flex w-48 flex-col gap-2 rounded-2xl border border-black/10 bg-white p-3">
+            <input value={aName} onChange={(e) => setAName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} placeholder="Name" autoFocus className="h-9 rounded-lg border border-black/10 bg-white px-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]" />
+            <div className="flex items-center gap-2">
+              <input type="number" min={3} max={13} value={aAge} onChange={(e) => setAAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} className="h-9 w-16 rounded-lg border border-black/10 bg-white px-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]" aria-label="Age" />
+              <button onClick={add} className="ml-auto inline-flex h-9 items-center gap-1 rounded-full bg-[#2E5A35] px-3 text-xs font-bold text-white">
+                <Check className="size-3.5" /> Add
+              </button>
+              <button onClick={() => setAdding(false)} aria-label="Cancel" className="rounded-md p-1.5 text-[#1B3722]/50 hover:bg-black/5">
+                <X className="size-4" />
+              </button>
+            </div>
           </div>
         )}
       </div>
+      {kids.length === 0 && !adding && (
+        <p className="mt-4 text-sm text-[#1B3722]/55">Add a child to make worksheets with their name and right age, all kept together in their own profile.</p>
+      )}
     </div>
   );
 }
