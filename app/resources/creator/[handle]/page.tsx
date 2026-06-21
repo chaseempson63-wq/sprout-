@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import { ArrowLeft, Heart, X } from "lucide-react";
@@ -8,12 +7,11 @@ import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { earnedBadges } from "@/lib/resources/badges";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { useResources } from "@/lib/resources/store";
+import { GlassButton, GlassLink } from "@/components/ui/glass";
 import type { Worksheet } from "@/lib/resources/types";
 
 const lightCard =
   "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
-const glassBtn =
-  "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-sprout-cream/10 border border-sprout-cream/20 text-sprout-cream text-sm font-semibold hover:bg-sprout-cream/15 transition-colors";
 
 type Creation = { id: string; worksheet: Worksheet; creatorName: string };
 
@@ -49,9 +47,9 @@ export default function CreatorProfile() {
 
   return (
     <div>
-      <Link href="/resources" className="no-print text-sprout-cream/80 hover:text-sprout-cream mb-5 inline-flex items-center gap-1 text-sm font-semibold">
+      <GlassLink href="/resources" className="no-print mb-5 h-9 gap-1 px-3 text-sm">
         <ArrowLeft className="size-4" /> Library
-      </Link>
+      </GlassLink>
 
       <div className={`${lightCard} mb-6 p-6`}>
         <div className="flex flex-wrap items-center gap-4">
@@ -106,13 +104,13 @@ export default function CreatorProfile() {
                 <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
               </button>
               <div className="mt-3 flex items-center justify-end border-t border-black/5 pt-3">
-                <button
+                <GlassButton
                   onClick={() => toggleLike(c.id)}
-                  className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm transition ${likedByMe(c.id) ? "bg-rose-100 text-rose-600" : "bg-black/5 text-[#1B3722]/70 hover:bg-black/10"}`}
                   aria-label="Like"
+                  className={`h-8 gap-1 px-2.5 text-sm ${likedByMe(c.id) ? "text-rose-600 ring-2 ring-rose-300" : "text-[#1B3722]/70"}`}
                 >
                   <Heart className={`size-4 ${likedByMe(c.id) ? "fill-rose-500 text-rose-500" : ""}`} /> {likeCount(c.id)}
-                </button>
+                </GlassButton>
               </div>
             </div>
           ))}
@@ -122,12 +120,12 @@ export default function CreatorProfile() {
       {viewing && (
         <div className="fixed inset-0 z-40 overflow-y-auto bg-[#0F1A12]/80 backdrop-blur-sm">
           <div className="no-print sticky top-0 flex items-center justify-end gap-2 p-4">
-            <button onClick={() => window.print()} className={glassBtn}>
+            <GlassButton onClick={() => window.print()} className="h-10 px-4 text-sm">
               Print / PDF
-            </button>
-            <button onClick={() => setViewing(null)} className={glassBtn}>
+            </GlassButton>
+            <GlassButton onClick={() => setViewing(null)} className="h-10 px-4 text-sm">
               <X className="size-4" /> Close
-            </button>
+            </GlassButton>
           </div>
           <div className="mx-auto w-full max-w-3xl px-4 pb-16">
             <WorksheetDoc worksheet={viewing} />

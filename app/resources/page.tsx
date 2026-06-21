@@ -10,13 +10,11 @@ import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { colorClasses, useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
-import { LiquidButton, LiquidGlass } from "@/components/ui/liquid-button";
+import { GlassButton, GlassPanel } from "@/components/ui/glass";
 import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
 const lightCard =
   "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
-const glassBtn =
-  "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-sprout-cream/10 border border-sprout-cream/20 text-sprout-cream text-sm font-semibold hover:bg-sprout-cream/15 transition-colors";
 
 type Tab = "templates" | "mine" | "community";
 type Creation = { id: string; worksheet: Worksheet; creatorName: string; creatorHandle: string };
@@ -68,17 +66,17 @@ export default function LibraryHome() {
 
       {ready && <KidsManager kids={kids} account={account} onAdd={addChild} />}
 
-      <LiquidGlass className="border-sprout-cream/20 bg-sprout-cream/10 mb-3 rounded-full border">
+      <GlassPanel radius="rounded-full" className="mb-3">
         <div className="flex items-center gap-2 px-4">
-          <Search className="text-sprout-cream/50 size-4 shrink-0" />
-          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none" />
+          <Search className="size-4 shrink-0 text-[#1B3722]/50" />
+          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="h-11 w-full bg-transparent text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/45" />
           {query && (
-            <button onClick={() => setQuery("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
+            <button onClick={() => setQuery("")} aria-label="Clear" className="text-[#1B3722]/50 hover:text-[#1B3722]">
               <X className="size-4" />
             </button>
           )}
         </div>
-      </LiquidGlass>
+      </GlassPanel>
 
       {tab !== "community" && (
         <div className="mb-6 flex flex-wrap gap-2">
@@ -91,15 +89,14 @@ export default function LibraryHome() {
 
       <div className="mb-6 flex flex-wrap gap-2">
         {tabs.map((t) => (
-          <LiquidButton
+          <GlassButton
             key={t.key}
             onClick={() => setTab(t.key)}
-            size="sm"
-            className={`gap-2 rounded-full px-4 text-sm font-semibold ${tab === t.key ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream"}`}
+            className={`h-9 gap-2 px-4 text-sm ${tab === t.key ? "ring-2 ring-[#2E5A35]/45" : ""}`}
           >
             {t.label}
-            <span className={`rounded-full px-1.5 text-xs ${tab === t.key ? "bg-[#1B3722]/10" : "bg-sprout-cream/15"}`}>{t.count}</span>
-          </LiquidButton>
+            <span className="rounded-full bg-[#1B3722]/10 px-1.5 text-xs">{t.count}</span>
+          </GlassButton>
         ))}
       </div>
 
@@ -161,9 +158,9 @@ export default function LibraryHome() {
             </div>
           ) : (
             <div>
-              <button onClick={() => setCommunitySel(null)} className="text-sprout-cream/80 hover:text-sprout-cream mb-4 inline-flex items-center gap-1 text-sm font-semibold">
+              <GlassButton onClick={() => setCommunitySel(null)} className="mb-4 h-9 gap-1 px-4 text-sm">
                 <ArrowLeft className="size-4" /> All topics
-              </button>
+              </GlassButton>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {communityInSel.map((c, i) => (
                   <div key={c.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${lightCard} animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-5 duration-500`}>
@@ -176,13 +173,13 @@ export default function LibraryHome() {
                       <Link href={`/resources/creator/${c.creatorHandle}`} className="truncate text-xs font-medium text-[#2E5A35] hover:underline">
                         by {c.creatorName}
                       </Link>
-                      <button
+                      <GlassButton
                         onClick={() => toggleLike(c.id)}
-                        className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-sm transition active:scale-90 ${likedByMe(c.id) ? "bg-rose-100 text-rose-600" : "bg-black/5 text-[#1B3722]/70 hover:bg-black/10"}`}
                         aria-label="Like"
+                        className={`h-8 gap-1 px-2.5 text-sm ${likedByMe(c.id) ? "text-rose-600 ring-2 ring-rose-300" : "text-[#1B3722]/70"}`}
                       >
                         <Heart className={`size-4 ${likedByMe(c.id) ? "fill-rose-500 text-rose-500" : ""}`} /> {likeCount(c.id)}
-                      </button>
+                      </GlassButton>
                     </div>
                   </div>
                 ))}
@@ -207,14 +204,13 @@ export default function LibraryHome() {
 
 function TopicChip({ active, onClick, label, emoji }: { active: boolean; onClick: () => void; label: string; emoji: string }) {
   return (
-    <LiquidButton
+    <GlassButton
       onClick={onClick}
-      size="sm"
-      className={`gap-1.5 rounded-full text-sm font-medium ${active ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream border border-sprout-cream/15"}`}
+      className={`h-9 gap-1.5 px-4 text-sm ${active ? "ring-2 ring-[#2E5A35]/45" : ""}`}
     >
       <span>{emoji}</span>
       {label}
-    </LiquidButton>
+    </GlassButton>
   );
 }
 
@@ -232,12 +228,12 @@ function SavedCard({ ws, onOpen, onFavorite, onDelete }: { ws: SavedWorksheet; o
         </span>
       </button>
       <div className="flex shrink-0 items-center gap-1">
-        <button onClick={onFavorite} aria-label="Favorite" className="rounded-md p-1.5 text-[#1B3722]/60 hover:bg-black/5">
+        <GlassButton onClick={onFavorite} aria-label="Favorite" className="size-8">
           <Star className={`size-4 ${ws.favorite ? "fill-amber-400 text-amber-400" : ""}`} />
-        </button>
-        <button onClick={onDelete} aria-label="Delete" className="rounded-md p-1.5 text-[#1B3722]/60 hover:bg-black/5">
+        </GlassButton>
+        <GlassButton onClick={onDelete} aria-label="Delete" className="size-8">
           <Trash2 className="size-4" />
-        </button>
+        </GlassButton>
       </div>
     </div>
   );
@@ -257,17 +253,17 @@ function Viewer({
   return (
     <div className="fixed inset-0 z-40 overflow-y-auto bg-[#0F1A12]/80 backdrop-blur-sm">
       <div className="no-print sticky top-0 flex items-center justify-end gap-2 p-4">
-        <button onClick={() => window.print()} className={glassBtn}>
+        <GlassButton onClick={() => window.print()} className="h-10 px-4 text-sm">
           Print / PDF
-        </button>
+        </GlassButton>
         {onPublish && (
-          <button onClick={onPublish} className={glassBtn}>
+          <GlassButton onClick={onPublish} className="h-10 px-4 text-sm">
             <Globe className="size-4" /> {published ? "Unpublish" : "Publish to community"}
-          </button>
+          </GlassButton>
         )}
-        <button onClick={onClose} aria-label="Close" className={glassBtn}>
+        <GlassButton onClick={onClose} aria-label="Close" className="h-10 px-4 text-sm">
           <X className="size-4" /> Close
-        </button>
+        </GlassButton>
       </div>
       <div className="mx-auto w-full max-w-3xl px-4 pb-16">
         <WorksheetDoc worksheet={entry.ws} />

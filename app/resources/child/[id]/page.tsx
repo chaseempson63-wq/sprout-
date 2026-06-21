@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import { ArrowLeft, Check, ImagePlus, Pencil, Plus, Sparkles, Star, Trash2, X } from "lucide-react";
@@ -8,14 +7,11 @@ import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { topicForTemplate } from "@/lib/resources/catalog";
 import { AVATAR_COLORS, colorClasses, useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
+import { GlassButton, GlassLink } from "@/components/ui/glass";
 import type { LearningMoment, SavedWorksheet } from "@/lib/resources/types";
 
 const lightCard =
   "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
-const primaryBtn =
-  "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-[#F4EDE0] text-[#1B3722] font-bold text-sm hover:bg-[#FBF6EB] transition-colors disabled:opacity-50";
-const glassBtn =
-  "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-sprout-cream/10 border border-sprout-cream/20 text-sprout-cream text-sm font-semibold hover:bg-sprout-cream/15 transition-colors";
 const fieldCls = "w-full rounded-lg border border-black/10 bg-white px-3 py-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]";
 
 const LEARNING_STYLES = ["Hands-on", "Visual", "Listening & talking", "Reading & writing", "Movement", "Quiet & focused"];
@@ -69,9 +65,9 @@ export default function ChildProfile() {
     return (
       <div className="py-20 text-center">
         <p className="text-sprout-cream/70">That child was not found.</p>
-        <Link href="/resources" className={`${primaryBtn} mt-4`}>
+        <GlassLink href="/resources" className="mt-4 h-10 px-4">
           Back to the library
-        </Link>
+        </GlassLink>
       </div>
     );
   }
@@ -139,9 +135,9 @@ export default function ChildProfile() {
 
   return (
     <div>
-      <Link href="/resources" className="no-print text-sprout-cream/80 hover:text-sprout-cream mb-5 inline-flex items-center gap-1 text-sm font-semibold">
+      <GlassLink href="/resources" className="no-print mb-5 h-9 gap-1 px-3 text-sm">
         <ArrowLeft className="size-4" /> Library
-      </Link>
+      </GlassLink>
 
       <div className={`${lightCard} mb-6 p-6`}>
         {editing ? (
@@ -197,16 +193,16 @@ export default function ChildProfile() {
               </div>
             </div>
             <div className="flex gap-2">
-              <button onClick={saveEdit} className={primaryBtn}>
+              <GlassButton onClick={saveEdit} className="h-10 px-4 text-sm">
                 <Check className="size-4" /> Save profile
-              </button>
-              <button onClick={() => setEditing(false)} className="inline-flex h-10 items-center rounded-full px-4 text-sm font-semibold text-[#1B3722]/60 hover:bg-black/5">
+              </GlassButton>
+              <GlassButton onClick={() => setEditing(false)} className="h-10 px-4 text-sm">
                 Cancel
-              </button>
+              </GlassButton>
               {f.photo && (
-                <button onClick={() => setF((s) => ({ ...s, photo: "" }))} className="inline-flex h-10 items-center rounded-full px-4 text-sm font-semibold text-[#1B3722]/60 hover:bg-black/5">
+                <GlassButton onClick={() => setF((s) => ({ ...s, photo: "" }))} className="h-10 px-4 text-sm">
                   Remove photo
-                </button>
+                </GlassButton>
               )}
             </div>
           </div>
@@ -226,13 +222,13 @@ export default function ChildProfile() {
                   {child.birthday ? ` · born ${new Date(child.birthday).toLocaleDateString()}` : ""}
                 </p>
               </div>
-              <div className="flex items-center gap-1">
-                <button onClick={startEdit} aria-label="Edit" className="rounded-md p-2 text-[#1B3722]/60 hover:bg-black/5">
+              <div className="flex items-center gap-1.5">
+                <GlassButton onClick={startEdit} aria-label="Edit" className="size-9">
                   <Pencil className="size-4" />
-                </button>
-                <button onClick={del} aria-label="Remove" className="rounded-md p-2 text-[#1B3722]/60 hover:bg-black/5">
+                </GlassButton>
+                <GlassButton onClick={del} aria-label="Remove" className="size-9">
                   <Trash2 className="size-4" />
-                </button>
+                </GlassButton>
               </div>
             </div>
             {(child.learningStyle || child.interests.length > 0) && (
@@ -256,9 +252,9 @@ export default function ChildProfile() {
                 </div>
               ))}
             </div>
-            <Link href="/resources" className={`${primaryBtn} mt-5`}>
+            <GlassLink href="/resources" className="mt-5 h-10 px-4 text-sm">
               <Plus className="size-4" /> Make something for {capName(child.name)}
-            </Link>
+            </GlassLink>
           </>
         )}
       </div>
@@ -280,13 +276,13 @@ export default function ChildProfile() {
               <img src={momentPhoto} alt="" className="mt-2 h-28 rounded-lg object-cover" />
             )}
             <div className="mt-2 flex items-center gap-2">
-              <button onClick={() => momentPhotoRef.current?.click()} className="inline-flex items-center gap-1 rounded-full bg-black/5 px-3 py-1.5 text-sm font-medium text-[#1B3722]/70 hover:bg-black/10">
+              <GlassButton onClick={() => momentPhotoRef.current?.click()} className="h-9 gap-1 px-3 text-sm">
                 <ImagePlus className="size-4" /> Photo
-              </button>
+              </GlassButton>
               <input ref={momentPhotoRef} type="file" accept="image/*" hidden onChange={(e) => pickPhoto(e, "moment")} />
-              <button onClick={postMoment} disabled={!momentText.trim() && !momentPhoto} className={`${primaryBtn} ml-auto`}>
+              <GlassButton onClick={postMoment} disabled={!momentText.trim() && !momentPhoto} className="ml-auto h-9 px-4 text-sm">
                 Add moment
-              </button>
+              </GlassButton>
             </div>
           </div>
         </div>
@@ -312,21 +308,21 @@ export default function ChildProfile() {
                   <span className="mt-0.5 block text-xs text-[#1B3722]/60">{entry.w.subtitle} · {new Date(entry.w.createdAt).toLocaleDateString()}</span>
                 </button>
                 <div className="flex shrink-0 items-center gap-1">
-                  <button onClick={() => toggleFavorite(entry.w.id)} aria-label="Favorite" className="rounded-md p-1.5 text-[#1B3722]/60 hover:bg-black/5">
+                  <GlassButton onClick={() => toggleFavorite(entry.w.id)} aria-label="Favorite" className="size-8">
                     <Star className={`size-4 ${entry.w.favorite ? "fill-amber-400 text-amber-400" : ""}`} />
-                  </button>
-                  <button onClick={() => removeWorksheet(entry.w.id)} aria-label="Delete" className="rounded-md p-1.5 text-[#1B3722]/60 hover:bg-black/5">
+                  </GlassButton>
+                  <GlassButton onClick={() => removeWorksheet(entry.w.id)} aria-label="Delete" className="size-8">
                     <Trash2 className="size-4" />
-                  </button>
+                  </GlassButton>
                 </div>
               </div>
             ) : (
               <div key={entry.m.id} className={`${lightCard} p-4`}>
                 <div className="flex items-center justify-between">
                   <span className="text-[11px] font-semibold tracking-wide text-[#2E5A35] uppercase">Learning moment</span>
-                  <button onClick={() => removeMoment(entry.m.id)} aria-label="Delete" className="rounded-md p-1 text-[#1B3722]/50 hover:bg-black/5">
+                  <GlassButton onClick={() => removeMoment(entry.m.id)} aria-label="Delete" className="size-7">
                     <X className="size-4" />
-                  </button>
+                  </GlassButton>
                 </div>
                 <p className="mt-1 text-[15px] leading-relaxed text-[#1B3722]">{entry.m.text}</p>
                 {entry.m.photo && (
@@ -343,12 +339,12 @@ export default function ChildProfile() {
       {viewing && (
         <div className="fixed inset-0 z-40 overflow-y-auto bg-[#0F1A12]/80 backdrop-blur-sm">
           <div className="no-print sticky top-0 flex items-center justify-end gap-2 p-4">
-            <button onClick={() => window.print()} className={glassBtn}>
+            <GlassButton onClick={() => window.print()} className="h-10 px-4 text-sm">
               Print / PDF
-            </button>
-            <button onClick={() => setViewing(null)} className={glassBtn}>
+            </GlassButton>
+            <GlassButton onClick={() => setViewing(null)} className="h-10 px-4 text-sm">
               <X className="size-4" /> Close
-            </button>
+            </GlassButton>
           </div>
           <div className="mx-auto w-full max-w-3xl px-4 pb-16">
             <WorksheetDoc worksheet={viewing} />

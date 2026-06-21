@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { AccountChip } from "./_components/AccountChip";
+import { FeedbackButton } from "./_components/FeedbackButton";
+import { GlassFilter, GlassLink } from "@/components/ui/glass";
 import { ResourcesProvider } from "@/lib/resources/store";
 
 export const metadata: Metadata = {
@@ -17,6 +19,7 @@ const NOISE =
 export default function ResourcesLayout({ children }: { children: React.ReactNode }) {
   return (
     <ResourcesProvider>
+      <GlassFilter />
       <div className="text-sprout-cream relative flex min-h-screen flex-col overflow-x-hidden">
         {/* Continuous green canvas — same brand surface as the homepage. */}
         <div className="fixed inset-0 -z-20">
@@ -44,12 +47,10 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
             </Link>
             <div className="flex items-center gap-2">
               <AccountChip />
-              <Link
-                href="/"
-                className="bg-sprout-cream/10 border-sprout-cream/20 text-sprout-cream hover:bg-sprout-cream/15 hidden h-9 items-center rounded-full border px-4 text-xs font-semibold backdrop-blur-md transition-colors sm:inline-flex"
-              >
+              <FeedbackButton />
+              <GlassLink href="/" className="hidden h-9 px-4 text-xs sm:inline-flex">
                 Back to site
-              </Link>
+              </GlassLink>
             </div>
           </div>
         </header>

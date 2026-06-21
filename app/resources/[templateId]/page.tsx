@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
@@ -10,13 +9,8 @@ import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY } from "@/lib/resources/intent";
 import { useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
-import { LiquidButton, LiquidGlass } from "@/components/ui/liquid-button";
+import { GlassButton, GlassLink, GlassPanel } from "@/components/ui/glass";
 import type { ChatMessage, Worksheet } from "@/lib/resources/types";
-
-const primaryBtn =
-  "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-[#F4EDE0] text-[#1B3722] font-bold text-sm hover:bg-[#FBF6EB] transition-colors disabled:opacity-50";
-const glassBtn =
-  "inline-flex items-center justify-center gap-2 h-10 px-4 rounded-full bg-sprout-cream/10 border border-sprout-cream/20 text-sprout-cream text-sm font-semibold hover:bg-sprout-cream/15 transition-colors disabled:opacity-50";
 
 function summarize(w: Worksheet): string {
   const items = w.blocks.reduce((s, b) => s + (b.items?.length ?? (b.text ? 1 : 0)), 0);
@@ -104,9 +98,9 @@ export default function Builder() {
     return (
       <div className="py-20 text-center">
         <p className="text-sprout-cream/70">That template was not found.</p>
-        <Link href="/resources" className={`${primaryBtn} mt-4`}>
+        <GlassLink href="/resources" className="mt-4 h-10 px-4">
           Back to the library
-        </Link>
+        </GlassLink>
       </div>
     );
   }
@@ -175,30 +169,32 @@ export default function Builder() {
       {/* header row */}
       <div className="no-print mb-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <Link href="/resources" className="text-sprout-cream/80 hover:text-sprout-cream inline-flex items-center gap-1 text-sm font-semibold">
+          <GlassLink href="/resources" className="h-9 gap-1 px-3 text-sm">
             <ArrowLeft className="size-4" /> Library
-          </Link>
+          </GlassLink>
           <span className="text-sprout-cream/40">/</span>
           <span className="text-sprout-cream flex items-center gap-2 font-bold">
             <span className="text-xl">{template.emoji}</span> {template.title}
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="text-sprout-cream border-sprout-cream/20 bg-sprout-cream/10 flex items-center gap-1 rounded-full border p-1">
-            <button onClick={() => changeAge(-1)} aria-label="Younger" className="hover:bg-sprout-cream/10 grid size-7 place-items-center rounded-full">
-              <Minus className="size-4" />
-            </button>
-            <span className="px-1 text-sm font-semibold">Age {age}</span>
-            <button onClick={() => changeAge(1)} aria-label="Older" className="hover:bg-sprout-cream/10 grid size-7 place-items-center rounded-full">
-              <Plus className="size-4" />
-            </button>
-          </div>
-          <button onClick={save} disabled={!worksheet} className={primaryBtn}>
+          <GlassPanel radius="rounded-full" className="text-[#1B3722]">
+            <div className="flex items-center gap-1 p-1">
+              <button onClick={() => changeAge(-1)} aria-label="Younger" className="grid size-7 place-items-center rounded-full hover:bg-black/10">
+                <Minus className="size-4" />
+              </button>
+              <span className="px-1 text-sm font-semibold">Age {age}</span>
+              <button onClick={() => changeAge(1)} aria-label="Older" className="grid size-7 place-items-center rounded-full hover:bg-black/10">
+                <Plus className="size-4" />
+              </button>
+            </div>
+          </GlassPanel>
+          <GlassButton onClick={save} disabled={!worksheet} className="h-10 px-4 text-sm">
             <Check className="size-4" /> Save
-          </button>
-          <button onClick={() => window.print()} disabled={!worksheet} className={glassBtn}>
+          </GlassButton>
+          <GlassButton onClick={() => window.print()} disabled={!worksheet} className="h-10 px-4 text-sm">
             <Download className="size-4" /> PDF
-          </button>
+          </GlassButton>
         </div>
       </div>
 
@@ -206,35 +202,34 @@ export default function Builder() {
       <div className="no-print mb-5 flex flex-wrap items-center gap-2">
         <span className="text-sprout-cream/60 text-sm">Making for:</span>
         {kids.map((k) => (
-          <button
+          <GlassButton
             key={k.id}
             onClick={() => selectKid(k.id, k.age, k.name)}
-            className={`rounded-full px-3 py-1.5 text-sm font-medium transition ${
-              childId === k.id ? "bg-[#F4EDE0] text-[#1B3722]" : "text-sprout-cream/80 hover:text-sprout-cream bg-sprout-cream/10 border border-sprout-cream/15"
-            }`}
+            className={`h-9 px-3 text-sm ${childId === k.id ? "ring-2 ring-[#2E5A35]/45" : ""}`}
           >
             {capName(k.name)} <span className="opacity-60">· {k.age}</span>
-          </button>
+          </GlassButton>
         ))}
         {addingKid ? (
-          <span className="border-sprout-cream/20 bg-sprout-cream/10 inline-flex items-center gap-1 rounded-full border p-1">
-            <input value={newName} onChange={(e) => setNewName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addKid()} placeholder="Name" autoFocus className="text-sprout-cream placeholder:text-sprout-cream/40 h-7 w-24 bg-transparent px-2 text-sm outline-none" />
-            <input value={newAge} onChange={(e) => setNewAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addKid()} type="number" min={3} max={12} className="text-sprout-cream h-7 w-12 bg-transparent px-1 text-sm outline-none" />
-            <button onClick={addKid} className="bg-[#F4EDE0] text-[#1B3722] grid size-7 place-items-center rounded-full">
-              <Check className="size-4" />
-            </button>
-          </span>
+          <GlassPanel radius="rounded-full" className="text-[#1B3722]">
+            <div className="flex items-center gap-1 p-1">
+              <input value={newName} onChange={(e) => setNewName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addKid()} placeholder="Name" autoFocus className="h-7 w-24 bg-transparent px-2 text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/45" />
+              <input value={newAge} onChange={(e) => setNewAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addKid()} type="number" min={3} max={12} className="h-7 w-12 bg-transparent px-1 text-sm text-[#1B3722] outline-none" />
+              <button onClick={addKid} aria-label="Add" className="grid size-7 place-items-center rounded-full hover:bg-black/10">
+                <Check className="size-4" />
+              </button>
+            </div>
+          </GlassPanel>
         ) : (
-          <button onClick={() => setAddingKid(true)} className="text-sprout-cream/80 hover:text-sprout-cream bg-sprout-cream/10 border-sprout-cream/15 inline-flex items-center gap-1 rounded-full border px-3 py-1.5 text-sm font-medium">
+          <GlassButton onClick={() => setAddingKid(true)} className="h-9 gap-1 px-3 text-sm">
             <UserPlus className="size-4" /> Add child
-          </button>
+          </GlassButton>
         )}
       </div>
 
       <div className="grid gap-5 lg:grid-cols-[360px_minmax(0,1fr)]">
         {/* chat */}
-        <LiquidGlass className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] h-[70vh] rounded-2xl border lg:sticky lg:top-20">
-          <div className="flex h-full flex-col">
+        <div className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] flex h-[70vh] flex-col rounded-2xl border lg:sticky lg:top-20">
           <div className="flex-1 space-y-3 overflow-y-auto p-4">
             {messages.map((m, i) =>
               m.role === "user" ? (
@@ -260,25 +255,14 @@ export default function Builder() {
 
           <div className="no-print border-sprout-cream/15 flex flex-wrap gap-1.5 border-t px-3 pt-2">
             {INPUT_VOCABULARY.edits.slice(0, 5).map((k) => (
-              <LiquidButton
-                key={k.word}
-                onClick={() => setInput(k.word)}
-                title={k.does}
-                size="sm"
-                className="text-sprout-cream/80 hover:text-sprout-cream h-7 gap-1 rounded-full px-3 text-[11px]"
-              >
+              <GlassButton key={k.word} onClick={() => setInput(k.word)} title={k.does} className="h-7 gap-1 px-3 text-[11px]">
                 {k.word}
-              </LiquidButton>
+              </GlassButton>
             ))}
             {INPUT_VOCABULARY.themes.slice(0, 4).map((t) => (
-              <LiquidButton
-                key={t.key}
-                onClick={() => setInput(`make it about ${t.label.toLowerCase()}`)}
-                size="sm"
-                className="text-sprout-cream/80 hover:text-sprout-cream h-7 gap-1 rounded-full px-3 text-[11px]"
-              >
+              <GlassButton key={t.key} onClick={() => setInput(`make it about ${t.label.toLowerCase()}`)} className="h-7 gap-1 px-3 text-[11px]">
                 {t.emoji} {t.label}
-              </LiquidButton>
+              </GlassButton>
             ))}
           </div>
           <div className="border-sprout-cream/15 flex items-center gap-2 border-t p-3">
@@ -291,47 +275,46 @@ export default function Builder() {
               placeholder="make it about space, add more questions, harder..."
               className="text-sprout-cream placeholder:text-sprout-cream/40 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none"
             />
-            <LiquidButton onClick={send} disabled={loading || !input.trim()} aria-label="Send" size="icon" className="bg-[#F4EDE0] text-[#1B3722] shrink-0 rounded-full disabled:opacity-40">
+            <GlassButton onClick={send} disabled={loading || !input.trim()} aria-label="Send" className="size-9 shrink-0">
               {loading ? <Loader2 className="size-4 animate-spin" /> : <Send className="size-4" />}
-            </LiquidButton>
+            </GlassButton>
           </div>
-          </div>
-        </LiquidGlass>
+        </div>
 
         {/* preview */}
         <div className="min-w-0">
           {/* variation controls */}
           <div className="no-print mb-3 flex flex-wrap items-center justify-center gap-2">
-            <button
+            <GlassButton
               onClick={() => {
                 setView("editor");
                 if (idx > 0) setIdx(idx - 1);
               }}
               disabled={idx <= 0 || loading}
               aria-label="Previous"
-              className={`${glassBtn} size-10 px-0`}
+              className="size-10"
             >
               <ChevronLeft className="size-4" />
-            </button>
+            </GlassButton>
             <span className="text-sprout-cream/70 min-w-[110px] text-center text-sm">{worksheet ? `Variation ${idx + 1} of ${variants.length}` : "…"}</span>
-            <button
+            <GlassButton
               onClick={() => {
                 setView("editor");
                 nextVariant();
               }}
               disabled={loading}
               aria-label="Next / new"
-              className={`${glassBtn} size-10 px-0`}
+              className="size-10"
             >
               {loading ? <Loader2 className="size-4 animate-spin" /> : <ChevronRight className="size-4" />}
-            </button>
-            <button onClick={regenerate} disabled={loading} className={`${glassBtn} ml-2`}>
+            </GlassButton>
+            <GlassButton onClick={regenerate} disabled={loading} className="ml-2 h-10 px-4 text-sm">
               <RefreshCw className="size-4" /> New version
-            </button>
+            </GlassButton>
             {variants.length > 1 && (
-              <button onClick={() => setView(view === "gallery" ? "editor" : "gallery")} className={glassBtn}>
+              <GlassButton onClick={() => setView(view === "gallery" ? "editor" : "gallery")} className="h-10 px-4 text-sm">
                 <LayoutGrid className="size-4" /> {view === "gallery" ? "Editor" : `All ${variants.length}`}
-              </button>
+              </GlassButton>
             )}
           </div>
 
