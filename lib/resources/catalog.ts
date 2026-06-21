@@ -1,69 +1,188 @@
-// Sprout Resources — client-safe catalog of resource types and labels.
-// Kept separate from generate.ts so the UI can import this without pulling
-// the server-only generator (fetch / process.env) into the client bundle.
+// Sprout Resources — the template library users browse and pick from.
+// Each template is a kind of printable worksheet, grounded in the formats that
+// are actually common for ages 3-12 (tracing, counting, matching, the four
+// operations, fill-in-the-blank, reading comprehension, handwriting, etc.).
 
-import type { Difficulty, ResourceType } from "./types";
+import type { BlockKind, WorksheetTemplate } from "./types";
 
-export const RESOURCE_ORDER: ResourceType[] = [
-  "math",
-  "reading",
-  "writing",
-  "science",
-  "unit-study",
-  "lesson-plan",
-  "project",
+export const TEMPLATES: WorksheetTemplate[] = [
+  {
+    id: "letter-tracing",
+    title: "Letter Tracing",
+    blurb: "Trace the letters, then write them. Builds early handwriting.",
+    emoji: "🔤",
+    ageMin: 3,
+    ageMax: 6,
+    accent: "bg-rose-100 text-rose-700",
+    plan: ["instructions", "trace", "handwriting"],
+    brief: "Letter formation practice. Trace rows of letters, then a row to write independently.",
+  },
+  {
+    id: "number-tracing",
+    title: "Number Tracing",
+    blurb: "Trace numbers 0-9 and practise writing them.",
+    emoji: "🔢",
+    ageMin: 3,
+    ageMax: 6,
+    accent: "bg-sky-100 text-sky-700",
+    plan: ["instructions", "trace", "handwriting"],
+    brief: "Number formation. Trace numerals, then write them, then count a small set.",
+  },
+  {
+    id: "counting",
+    title: "Counting & Numbers",
+    blurb: "Count the objects and write how many.",
+    emoji: "🧮",
+    ageMin: 3,
+    ageMax: 7,
+    accent: "bg-amber-100 text-amber-700",
+    plan: ["instructions", "count", "missing-numbers"],
+    brief: "Count sets of objects and write the total. Then fill the gaps in a number line.",
+  },
+  {
+    id: "matching",
+    title: "Matching",
+    blurb: "Draw a line to connect the pairs.",
+    emoji: "🧩",
+    ageMin: 3,
+    ageMax: 8,
+    accent: "bg-violet-100 text-violet-700",
+    plan: ["instructions", "matching"],
+    brief: "Match items across two columns (numeral to word, picture to label, opposite pairs).",
+  },
+  {
+    id: "addition",
+    title: "Addition",
+    blurb: "Practice problems with room to work them out.",
+    emoji: "➕",
+    ageMin: 5,
+    ageMax: 9,
+    accent: "bg-emerald-100 text-emerald-700",
+    plan: ["instructions", "math", "column-math"],
+    brief: "Addition facts sized to the age. A row of horizontal problems and some stacked column sums.",
+  },
+  {
+    id: "subtraction",
+    title: "Subtraction",
+    blurb: "Take-away practice with answer boxes.",
+    emoji: "➖",
+    ageMin: 5,
+    ageMax: 9,
+    accent: "bg-emerald-100 text-emerald-700",
+    plan: ["instructions", "math", "column-math"],
+    brief: "Subtraction facts sized to the age. Horizontal problems plus stacked column problems.",
+  },
+  {
+    id: "multiplication",
+    title: "Multiplication",
+    blurb: "Times-table practice and a couple of word problems.",
+    emoji: "✖️",
+    ageMin: 7,
+    ageMax: 12,
+    accent: "bg-teal-100 text-teal-700",
+    plan: ["instructions", "math", "short-answer"],
+    brief: "Multiplication facts to the right level, then two short word problems to solve.",
+  },
+  {
+    id: "missing-numbers",
+    title: "Missing Numbers",
+    blurb: "Fill the gaps in the sequence.",
+    emoji: "🔟",
+    ageMin: 5,
+    ageMax: 9,
+    accent: "bg-amber-100 text-amber-700",
+    plan: ["instructions", "missing-numbers"],
+    brief: "Number sequences (counting on, skip counting) with several blanks to fill.",
+  },
+  {
+    id: "money",
+    title: "Money Math",
+    blurb: "Add up coins and make change.",
+    emoji: "💰",
+    ageMin: 6,
+    ageMax: 11,
+    accent: "bg-lime-100 text-lime-700",
+    plan: ["instructions", "math", "short-answer"],
+    brief: "Money problems: totalling amounts and simple change, with short word problems.",
+  },
+  {
+    id: "fill-blank-story",
+    title: "Fill-in-the-Blank Story",
+    blurb: "Complete the sentences using the word bank.",
+    emoji: "📖",
+    ageMin: 6,
+    ageMax: 12,
+    accent: "bg-orange-100 text-orange-700",
+    plan: ["instructions", "word-bank", "fill-blank"],
+    brief: "A short themed story or set of sentences with blanks, plus a word bank to choose from.",
+  },
+  {
+    id: "reading",
+    title: "Reading Comprehension",
+    blurb: "Read the passage, then answer the questions.",
+    emoji: "📚",
+    ageMin: 6,
+    ageMax: 12,
+    accent: "bg-indigo-100 text-indigo-700",
+    plan: ["passage", "short-answer", "multiple-choice"],
+    brief: "A short age-appropriate passage, then comprehension questions (main idea, detail, why).",
+  },
+  {
+    id: "spelling",
+    title: "Spelling & Sight Words",
+    blurb: "Trace, write, and use this week's words.",
+    emoji: "✏️",
+    ageMin: 5,
+    ageMax: 10,
+    accent: "bg-pink-100 text-pink-700",
+    plan: ["instructions", "trace", "fill-blank"],
+    brief: "A small set of age-appropriate words: trace them, then use each in a fill-in-the-blank sentence.",
+  },
+  {
+    id: "word-problems",
+    title: "Word Problems",
+    blurb: "Real-life math with space to show your work.",
+    emoji: "🧠",
+    ageMin: 6,
+    ageMax: 12,
+    accent: "bg-teal-100 text-teal-700",
+    plan: ["instructions", "short-answer"],
+    brief: "Several one- and two-step word problems sized to the age, with room to work and answer.",
+  },
+  {
+    id: "draw-label",
+    title: "Draw & Label",
+    blurb: "Draw it, then label the parts.",
+    emoji: "🎨",
+    ageMin: 4,
+    ageMax: 10,
+    accent: "bg-fuchsia-100 text-fuchsia-700",
+    plan: ["instructions", "draw", "handwriting"],
+    brief: "A draw-and-label activity (a plant, an animal, a scene) with lines to write labels or a sentence.",
+  },
 ];
 
-export const RESOURCE_META: Record<
-  ResourceType,
-  { label: string; tagline: string; defaultSubject: string; sampleTopic: string }
-> = {
-  math: {
-    label: "Math Worksheet",
-    tagline: "Practice problems tuned to their level",
-    defaultSubject: "Math",
-    sampleTopic: "multiplication facts",
-  },
-  reading: {
-    label: "Reading Comprehension",
-    tagline: "A reading task plus questions",
-    defaultSubject: "Reading",
-    sampleTopic: "main idea and details",
-  },
-  writing: {
-    label: "Writing Prompt",
-    tagline: "Get them writing about something they care about",
-    defaultSubject: "Writing",
-    sampleTopic: "a short story",
-  },
-  science: {
-    label: "Science Activity",
-    tagline: "Hands-on, low-prep, kitchen-table science",
-    defaultSubject: "Science",
-    sampleTopic: "how plants grow",
-  },
-  "unit-study": {
-    label: "Unit Study",
-    tagline: "One theme across every subject for a week",
-    defaultSubject: "Cross-curricular",
-    sampleTopic: "the solar system",
-  },
-  "lesson-plan": {
-    label: "Lesson Plan",
-    tagline: "A simple plan you can teach today",
-    defaultSubject: "General",
-    sampleTopic: "telling time",
-  },
-  project: {
-    label: "Project-Based Activity",
-    tagline: "One bigger build to sink into",
-    defaultSubject: "General",
-    sampleTopic: "build a bird feeder",
-  },
-};
+export function getTemplate(id: string): WorksheetTemplate | undefined {
+  return TEMPLATES.find((t) => t.id === id);
+}
 
-export const DIFFICULTY_LABEL: Record<Difficulty, string> = {
-  easier: "Gentle",
-  "on-level": "On level",
-  challenge: "Challenge",
-};
+export function ageBand(t: WorksheetTemplate): string {
+  return `Ages ${t.ageMin}-${t.ageMax}`;
+}
+
+export const BLOCK_KINDS: BlockKind[] = [
+  "instructions",
+  "trace",
+  "handwriting",
+  "fill-blank",
+  "word-bank",
+  "math",
+  "column-math",
+  "count",
+  "matching",
+  "multiple-choice",
+  "short-answer",
+  "missing-numbers",
+  "passage",
+  "draw",
+];

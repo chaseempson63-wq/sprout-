@@ -1,24 +1,14 @@
 "use client";
 
-// Sprout Resources — client-side store (v0, local-first).
-//
-// Holds the parent's children (subaccounts) and each child's saved resources
-// in localStorage so the whole product works on day one with no backend.
-// The shape matches the planned Supabase tables, so swapping this for real
-// auth + DB later is a drop-in: same methods, same data.
+// Sprout Resources — client store (v0, local-first).
+// Holds the parent's children and their saved/published worksheets in
+// localStorage. Shape matches the planned Supabase tables for a clean swap.
 
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
-import type { ChildProfile, GeneratedResource, SavedResource } from "./types";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import type { ChildProfile, SavedWorksheet, Worksheet } from "./types";
 
-const CHILDREN_KEY = "sprout.resources.children.v1";
-const RESOURCES_KEY = "sprout.resources.saved.v1";
+const CHILDREN_KEY = "sprout.resources.children.v2";
+const WORKSHEETS_KEY = "sprout.resources.worksheets.v2";
 
 // Bright fills chosen to read clearly against the dark forest-green canvas.
 export const AVATAR_COLORS: { key: string; bg: string }[] = [
@@ -52,27 +42,24 @@ function readJSON<T>(key: string, fallback: T): T {
 interface ResourcesContextValue {
   ready: boolean;
   kids: ChildProfile[];
+  worksheets: SavedWorksheet[];
   addChild: (data: Omit<ChildProfile, "id" | "createdAt">) => ChildProfile;
   updateChild: (id: string, patch: Partial<Omit<ChildProfile, "id" | "createdAt">>) => void;
   removeChild: (id: string) => void;
   getChild: (id: string) => ChildProfile | undefined;
-  resourcesFor: (childId: string) => SavedResource[];
-  saveResource: (childId: string, gen: GeneratedResource, source: "ai" | "template") => SavedResource;
+  saveWorksheet: (worksheet: Worksheet, source: "ai" | "template", childId?: string) => SavedWorksheet;
   toggleFavorite: (id: string) => void;
-  removeResource: (id: string) => void;
+  togglePublish: (id: string) => void;
+  removeWorksheet: (id: string) => void;
 }
 
 const ResourcesContext = createContext<ResourcesContextValue | null>(null);
 
 export function ResourcesProvider({ children }: { children: React.ReactNode }) {
-  // Lazy-init from localStorage so children/resources are present on the first
-  // client render (no setState-in-effect). The `ready` gate stays false until
-  // after mount so the server render (empty) and first client render match,
-  // avoiding a hydration mismatch.
   const [ready, setReady] = useState(false);
   const [kids, setKids] = useState<ChildProfile[]>(() => readJSON<ChildProfile[]>(CHILDREN_KEY, []));
-  const [resources, setResources] = useState<SavedResource[]>(() =>
-    readJSON<SavedResource[]>(RESOURCES_KEY, []),
+  const [worksheets, setWorksheets] = useState<SavedWorksheet[]>(() =>
+    readJSON<SavedWorksheet[]>(WORKSHEETS_KEY, []),
   );
 
   useEffect(() => {
@@ -83,10 +70,9 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (ready) localStorage.setItem(CHILDREN_KEY, JSON.stringify(kids));
   }, [kids, ready]);
-
   useEffect(() => {
-    if (ready) localStorage.setItem(RESOURCES_KEY, JSON.stringify(resources));
-  }, [resources, ready]);
+    if (ready) localStorage.setItem(WORKSHEETS_KEY, JSON.stringify(worksheets));
+  }, [worksheets, ready]);
 
   const addChild = useCallback((data: Omit<ChildProfile, "id" | "createdAt">) => {
     const child: ChildProfile = { ...data, id: uid(), createdAt: Date.now() };
@@ -94,77 +80,61 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
     return child;
   }, []);
 
-  const updateChild = useCallback(
-    (id: string, patch: Partial<Omit<ChildProfile, "id" | "createdAt">>) => {
-      setKids((prev) => prev.map((c) => (c.id === id ? { ...c, ...patch } : c)));
-    },
-    [],
-  );
+  const updateChild = useCallback((id: string, patch: Partial<Omit<ChildProfile, "id" | "createdAt">>) => {
+    setKids((prev) => prev.map((c) => (c.id === id ? { ...c, ...patch } : c)));
+  }, []);
 
   const removeChild = useCallback((id: string) => {
     setKids((prev) => prev.filter((c) => c.id !== id));
-    setResources((prev) => prev.filter((r) => r.childId !== id));
+    setWorksheets((prev) => prev.map((w) => (w.childId === id ? { ...w, childId: undefined } : w)));
   }, []);
 
   const getChild = useCallback((id: string) => kids.find((c) => c.id === id), [kids]);
 
-  const resourcesFor = useCallback(
-    (childId: string) =>
-      resources
-        .filter((r) => r.childId === childId)
-        .sort((a, b) => b.createdAt - a.createdAt),
-    [resources],
-  );
-
-  const saveResource = useCallback(
-    (childId: string, gen: GeneratedResource, source: "ai" | "template") => {
-      const saved: SavedResource = {
-        ...gen,
+  const saveWorksheet = useCallback(
+    (worksheet: Worksheet, source: "ai" | "template", childId?: string) => {
+      const saved: SavedWorksheet = {
+        ...worksheet,
         id: uid(),
         childId,
         favorite: false,
+        published: false,
         createdAt: Date.now(),
         source,
       };
-      setResources((prev) => [saved, ...prev]);
+      setWorksheets((prev) => [saved, ...prev]);
       return saved;
     },
     [],
   );
 
   const toggleFavorite = useCallback((id: string) => {
-    setResources((prev) => prev.map((r) => (r.id === id ? { ...r, favorite: !r.favorite } : r)));
+    setWorksheets((prev) => prev.map((w) => (w.id === id ? { ...w, favorite: !w.favorite } : w)));
   }, []);
 
-  const removeResource = useCallback((id: string) => {
-    setResources((prev) => prev.filter((r) => r.id !== id));
+  const togglePublish = useCallback((id: string) => {
+    setWorksheets((prev) => prev.map((w) => (w.id === id ? { ...w, published: !w.published } : w)));
+  }, []);
+
+  const removeWorksheet = useCallback((id: string) => {
+    setWorksheets((prev) => prev.filter((w) => w.id !== id));
   }, []);
 
   const value = useMemo<ResourcesContextValue>(
     () => ({
       ready,
       kids,
+      worksheets,
       addChild,
       updateChild,
       removeChild,
       getChild,
-      resourcesFor,
-      saveResource,
+      saveWorksheet,
       toggleFavorite,
-      removeResource,
+      togglePublish,
+      removeWorksheet,
     }),
-    [
-      ready,
-      kids,
-      addChild,
-      updateChild,
-      removeChild,
-      getChild,
-      resourcesFor,
-      saveResource,
-      toggleFavorite,
-      removeResource,
-    ],
+    [ready, kids, worksheets, addChild, updateChild, removeChild, getChild, saveWorksheet, toggleFavorite, togglePublish, removeWorksheet],
   );
 
   return <ResourcesContext.Provider value={value}>{children}</ResourcesContext.Provider>;

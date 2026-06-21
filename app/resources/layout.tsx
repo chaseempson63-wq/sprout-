@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SproutLogo } from "../_components/Glass";
+import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { ResourcesProvider } from "@/lib/resources/store";
 
 export const metadata: Metadata = {
@@ -28,10 +28,12 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
 
         <header className="no-print relative z-10">
           <div className="mx-auto flex h-16 w-full max-w-5xl items-center justify-between px-6">
-            <Link href="/resources" className="text-sprout-cream flex items-center gap-2 text-lg font-bold">
-              <SproutLogo className="text-sprout-cream h-5 w-5" />
+            <Link href="/resources" className="text-sprout-cream flex items-center gap-2.5 text-lg font-bold">
+              <span className="bg-sprout-cream/95 grid size-9 place-items-center rounded-xl shadow-sm">
+                <SproutMascotIcon className="h-6 w-6" />
+              </span>
               <span>
-                Sprout <span className="text-sprout-cream/55 font-semibold">Resources</span>
+                Sprout <span className="text-sprout-cream/60 font-semibold">Resources</span>
               </span>
             </Link>
             <Link
