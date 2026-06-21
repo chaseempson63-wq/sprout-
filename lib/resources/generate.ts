@@ -42,6 +42,17 @@ function scaleFactor(age: number, diff: number): number {
   return byAge * byAsk;
 }
 
+// Real-world anchor: what an average child that age actually does at school
+// (rough US grade bands). Difficulty is grounded in this, not guessed.
+function ageBenchmark(age: number): string {
+  const a = Math.min(13, Math.max(3, age));
+  if (a <= 4) return "preschool: counting and recognising numbers to 5";
+  if (a <= 6) return "Kindergarten to Grade 1: numbers to 20, single-digit addition and subtraction, basic shapes and letters";
+  if (a <= 8) return "Grade 2 to 3: numbers into the hundreds and thousands, the times tables, multi-digit addition and subtraction, simple fractions";
+  if (a <= 10) return "Grade 4 to 5: multi-digit multiplication and division, fractions and decimals, longer reading";
+  return "Grade 6 to 8: multi-digit and multi-step problems, fractions, decimals, percentages, negative numbers and early algebra";
+}
+
 interface Ctx {
   template: WorksheetTemplate;
   age: number;
@@ -739,6 +750,34 @@ export function templateWorksheet(template: WorksheetTemplate, age: number, inst
   };
 }
 
+// Drop duplicate problems, treating commutative pairs (a+b/b+a, a×b/b×a) as the
+// same so a sheet never shows both. Runs on every worksheet, AI or fallback.
+export function dedupeWorksheet(ws: Worksheet): Worksheet {
+  const blocks = ws.blocks.map((b) => {
+    if ((b.kind !== "math" && b.kind !== "column-math") || !b.items) return b;
+    const seen = new Set<string>();
+    const items: string[] = [];
+    const answers: string[] = [];
+    b.items.forEach((it, i) => {
+      const m = it.replace(/=/g, "").trim().match(/^(\d[\d.,]*)\s*([+\-−×x*÷/])\s*(\d[\d.,]*)/);
+      let key = it.trim().toLowerCase();
+      if (m) {
+        const a = m[1].replace(/,/g, "");
+        const op = m[2];
+        const c = m[3].replace(/,/g, "");
+        const commutative = /[+×x*]/.test(op);
+        key = commutative ? `${[a, c].sort().join("|")}|${op}` : `${a}|${op}|${c}`;
+      }
+      if (seen.has(key)) return;
+      seen.add(key);
+      items.push(it);
+      if (b.answers) answers.push(b.answers[i]);
+    });
+    return { ...b, items, ...(b.answers ? { answers } : {}) };
+  });
+  return { ...ws, blocks };
+}
+
 // ── AI path (Venice, OpenAI-compatible, structured output) ───────────────────
 
 const SYSTEM = [
@@ -769,12 +808,13 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
       : lvl < 0
         ? `DIFFICULTY: the parent has asked to make it easier. Make this clearly gentler than a standard age-${age} sheet: smaller numbers (up to about ${target}) and fewer steps. `
         : "";
+  const benchNote = `An average ${age}-year-old works at this level in school: ${ageBenchmark(age)}. Match that grade level and never go below it. `;
   const user =
     `${intentPreamble(template.id, age)} ` +
     `This worksheet type is "${template.title}" (${template.brief}). Produce ONLY ${template.title} content. ` +
-    `${who2} ${diffNote}` +
+    `${who2} ${benchNote}${diffNote}` +
     `Parent requests, newest last: ${askText}. Apply the newest as an edit, keeping earlier theme/difficulty/length. ` +
-    `Make it a FULL A4 page (3 to 5 blocks). Address the child directly. Return ONLY the worksheet JSON.`;
+    `Make it a FULL A4 page (3 to 5 blocks). Address the child directly. No problem and its reverse (e.g. 7x11 and 11x7) on the same sheet. Return ONLY the worksheet JSON.`;
   return [
     { role: "system", content: SYSTEM },
     { role: "user", content: user },

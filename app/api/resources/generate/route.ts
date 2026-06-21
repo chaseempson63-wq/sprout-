@@ -6,7 +6,7 @@
 // builder so the chat still produces a real worksheet with zero setup.
 
 import { getTemplate } from "@/lib/resources/catalog";
-import { aiWorksheet, templateWorksheet } from "@/lib/resources/generate";
+import { aiWorksheet, dedupeWorksheet, templateWorksheet } from "@/lib/resources/generate";
 import type { ChatMessage, GenerateRequest } from "@/lib/resources/types";
 
 export const runtime = "nodejs";
@@ -49,8 +49,8 @@ export async function POST(request: Request) {
 
   if (key) {
     const ai = await aiWorksheet(template, age, messages, key, childName);
-    if (ai) return Response.json({ worksheet: ai, source: "ai" });
+    if (ai) return Response.json({ worksheet: dedupeWorksheet(ai), source: "ai" });
   }
 
-  return Response.json({ worksheet: templateWorksheet(template, age, instruction, childName), source: "template" });
+  return Response.json({ worksheet: dedupeWorksheet(templateWorksheet(template, age, instruction, childName)), source: "template" });
 }

@@ -39,6 +39,9 @@ export default function Builder() {
   const [newAge, setNewAge] = useState("7");
   const didInit = useRef(false);
   const variantsRef = useRef<Worksheet[]>([]);
+  const genSeq = useRef(0); // only the latest request's result is applied (kills the race)
+  const ageTimer = useRef<number | null>(null);
+  const pendingAge = useRef(age); // tracks the target age across rapid stepper clicks
 
   const child = getChild(childId);
   const childName = child?.name;
@@ -55,6 +58,7 @@ export default function Builder() {
 
   async function runGenerate(msgs: ChatMessage[], ageVal: number, kind: "init" | "send" | "silent", nameVal?: string, nudge?: string) {
     if (!template) return;
+    const myseq = ++genSeq.current; // claim the latest slot
     setLoading(true);
     const start = Date.now();
     const sent = nudge ? [...msgs, { role: "user" as const, content: nudge }] : msgs;
@@ -66,6 +70,7 @@ export default function Builder() {
       });
       if (!res.ok) throw new Error("failed");
       const data = (await res.json()) as { worksheet: Worksheet; source: "ai" | "template" };
+      if (myseq !== genSeq.current) return; // a newer request superseded this one; drop it
       pushVariant(data.worksheet);
       setSource(data.source);
       if (kind === "init") {
@@ -79,11 +84,13 @@ export default function Builder() {
         setMessages((prev) => [...prev, { role: "assistant", content: "Done, here is the updated version. Anything else?" }]);
       }
     } catch {
-      if (kind !== "silent") setMessages((prev) => [...prev, { role: "assistant", content: "Something went wrong. Try that again." }]);
+      if (myseq === genSeq.current && kind !== "silent") setMessages((prev) => [...prev, { role: "assistant", content: "Something went wrong. Try that again." }]);
     } finally {
-      const elapsed = Date.now() - start;
-      if (elapsed < 900) await new Promise((r) => window.setTimeout(r, 900 - elapsed));
-      setLoading(false);
+      if (myseq === genSeq.current) {
+        const elapsed = Date.now() - start;
+        if (elapsed < 900) await new Promise((r) => window.setTimeout(r, 900 - elapsed));
+        if (myseq === genSeq.current) setLoading(false);
+      }
     }
   }
 
@@ -107,7 +114,7 @@ export default function Builder() {
 
   function send() {
     const text = input.trim();
-    if (!text || loading) return;
+    if (!text) return; // never block on loading: a new send supersedes the in-flight one
     const msgs: ChatMessage[] = [...messages, { role: "user", content: text }];
     setMessages(msgs);
     setInput("");
@@ -115,10 +122,13 @@ export default function Builder() {
   }
 
   function changeAge(delta: number) {
-    const next = Math.min(13, Math.max(3, age + delta));
-    if (next === age) return;
+    const next = Math.min(13, Math.max(3, pendingAge.current + delta));
+    if (next === pendingAge.current) return;
+    pendingAge.current = next;
     setAge(next);
-    void runGenerate(messages, next, "silent", childName);
+    // Debounce: rapid stepper clicks fire ONE request at the final age (no race).
+    if (ageTimer.current) window.clearTimeout(ageTimer.current);
+    ageTimer.current = window.setTimeout(() => void runGenerate(messages, next, "silent", childName), 350);
   }
 
   function regenerate() {
@@ -134,6 +144,8 @@ export default function Builder() {
   function selectKid(id: string, kidAge: number, kidName: string) {
     setChildId(id);
     setAge(kidAge);
+    pendingAge.current = kidAge;
+    if (ageTimer.current) window.clearTimeout(ageTimer.current);
     void runGenerate(messages, kidAge, "silent", kidName);
   }
 
@@ -268,7 +280,7 @@ export default function Builder() {
               placeholder="make it about space, add more questions, harder..."
               className="text-sprout-cream placeholder:text-sprout-cream/40 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none"
             />
-            <GlassButton onClick={send} disabled={loading || !input.trim()} aria-label="Send" className="size-9 shrink-0">
+            <GlassButton onClick={send} disabled={!input.trim()} aria-label="Send" className="size-9 shrink-0">
               {loading ? <Loader2 className="size-4 animate-spin" /> : <Send className="size-4" />}
             </GlassButton>
           </div>

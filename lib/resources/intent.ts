@@ -143,14 +143,14 @@ export const TEMPLATE_INTENT: Record<string, TemplateIntent> = {
     grounding: ["real number ranges sized to the age, no negative answers for young children"],
   },
   multiplication: {
-    defines: "multiplication facts and times tables, building to 2-digit",
-    skills: ["times tables 1-12", "arrays", "multi-digit multiplication for older children"],
-    grounding: ["the standard 1-12 times tables"],
+    defines: "multiplication: times tables for younger children, genuine multi-digit for older",
+    skills: ["times tables for ages 7-9", "2-digit by 1-digit for age 9-10", "2-digit by 2-digit and beyond for age 11+"],
+    grounding: ["times tables only for ages 7-9; real multi-digit multiplication (e.g. 34 x 27, 128 x 6) for ages 10+; NEVER cap an older child at the 1-12 tables"],
   },
   division: {
-    defines: "division as sharing and grouping, with and without remainders",
-    skills: ["dividing by 1-12", "sharing equally", "remainders for older children"],
-    grounding: ["division facts that invert the 1-12 times tables"],
+    defines: "division as sharing and grouping, scaling to long division for older",
+    skills: ["table-based division for ages 8-9", "multi-digit division and remainders for age 10+"],
+    grounding: ["table facts only for ages 8-9; real multi-digit division (e.g. 864 / 6, 1,250 / 25) for ages 10+; NEVER cap an older child at the 1-12 tables"],
   },
   fractions: {
     defines: "naming, shading and comparing fractions",
