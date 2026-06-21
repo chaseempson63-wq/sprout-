@@ -251,17 +251,10 @@ export default function Builder() {
             )}
           </div>
 
-          {source === "template" && <p className="text-sprout-cream/50 px-4 pb-1 text-[11px]">Sample mode. Add the Venice key in Vercel for full AI generation.</p>}
-
           <div className="no-print border-sprout-cream/15 flex flex-wrap gap-1.5 border-t px-3 pt-2">
             {INPUT_VOCABULARY.edits.slice(0, 5).map((k) => (
               <GlassButton key={k.word} onClick={() => setInput(k.word)} title={k.does} className="h-7 gap-1 px-3 text-[11px]">
                 {k.word}
-              </GlassButton>
-            ))}
-            {INPUT_VOCABULARY.themes.slice(0, 4).map((t) => (
-              <GlassButton key={t.key} onClick={() => setInput(`make it about ${t.label.toLowerCase()}`)} className="h-7 gap-1 px-3 text-[11px]">
-                {t.emoji} {t.label}
               </GlassButton>
             ))}
           </div>

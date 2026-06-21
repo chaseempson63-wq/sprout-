@@ -17,25 +17,28 @@ import type { ChatMessage, Worksheet, WorksheetBlock, WorksheetTemplate } from "
 
 const article = (w: string) => (/^[aeiou]/i.test(w.trim()) ? "an" : "a");
 
+// Each "make it harder" compounds and each "easier" steps back, so pressing
+// harder again visibly raises difficulty every time. Returns the net level.
 function detectDifficulty(text: string): number {
   const t = text.toLowerCase();
-  if (/harder|tricky|trickier|challeng|advanced|tougher|more difficult/.test(t)) return 1;
-  if (/easier|simpler|simple|gentle|beginner|too hard|younger/.test(t)) return -1;
-  return 0;
+  const up = (t.match(/harder|tricky|trickier|challeng|advanced|tougher|more difficult/g) || []).length;
+  const down = (t.match(/easier|simpler|simple|gentle|beginner|too hard|younger/g) || []).length;
+  return Math.max(-3, Math.min(5, up - down));
 }
 
 function detectMore(text: string): number {
-  return /\b(more|longer|add|extra|additional|another|lots|fill the page|in.?depth)\b/.test(text.toLowerCase()) ? 1.7 : 1;
+  const c = (text.toLowerCase().match(/\b(more|longer|add|extra|additional|another|lots|in.?depth)\b/g) || []).length;
+  return Math.min(2.8, 1 + c * 0.6);
 }
 
 function rint(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Difficulty rises with age AND with explicit "harder/easier" asks.
+// Difficulty rises with age AND compounds with each harder/easier ask.
 function scaleFactor(age: number, diff: number): number {
   const byAge = 0.4 + (Math.min(13, Math.max(3, age)) - 3) * 0.22; // ~0.4 at 3 -> ~2.6 at 13
-  const byAsk = diff === 1 ? 1.7 : diff === -1 ? 0.55 : 1;
+  const byAsk = Math.pow(1.45, diff); // 0=1x, +1=1.45x, +2=2.1x, +3=3.05x, -1=0.69x
   return byAge * byAsk;
 }
 
@@ -51,8 +54,8 @@ interface Ctx {
 const who = (c: Ctx) => c.name || "you";
 const cnt = (base: number, ctx: Ctx, max = 30) => Math.min(max, Math.round(base * ctx.more));
 // "harder"/"easier" always win over age, so an explicit ask is always honored.
-const harder = (ctx: Ctx) => ctx.diff === 1 || (ctx.age >= 9 && ctx.diff !== -1);
-const older = (ctx: Ctx) => ctx.diff === 1 || (ctx.age >= 7 && ctx.diff !== -1);
+const harder = (ctx: Ctx) => ctx.diff >= 1 || (ctx.age >= 9 && ctx.diff >= 0);
+const older = (ctx: Ctx) => ctx.diff >= 1 || (ctx.age >= 7 && ctx.diff >= 0);
 
 // child-directed opening line (identity lives in the named title)
 function intro(ctx: Ctx): WorksheetBlock {
@@ -758,10 +761,18 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
   const askText = asks.length ? asks.map((a, i) => `(${i + 1}) ${a}`).join(" ") : "Make a standard full-page one.";
   const name = capName(childName);
   const who2 = name ? `The child is named ${name}, age ${age}. Use ${name} in word problems and stories.` : `The child is age ${age}; no name was given, so address them as 'you' and never invent a name.`;
+  const lvl = detectDifficulty(asks.join(" "));
+  const target = Math.round(20 * scaleFactor(age, lvl));
+  const diffNote =
+    lvl > 0
+      ? `DIFFICULTY: the parent has asked to make it harder ${lvl} time(s). Make this clearly harder than a standard age-${age} sheet, and harder with each request: for number problems use values up to roughly ${target}, with carrying/borrowing and multi-step where it fits; for words and reading use longer, richer content. `
+      : lvl < 0
+        ? `DIFFICULTY: the parent has asked to make it easier. Make this clearly gentler than a standard age-${age} sheet: smaller numbers (up to about ${target}) and fewer steps. `
+        : "";
   const user =
     `${intentPreamble(template.id, age)} ` +
     `This worksheet type is "${template.title}" (${template.brief}). Produce ONLY ${template.title} content. ` +
-    `${who2} ` +
+    `${who2} ${diffNote}` +
     `Parent requests, newest last: ${askText}. Apply the newest as an edit, keeping earlier theme/difficulty/length. ` +
     `Make it a FULL A4 page (3 to 5 blocks). Address the child directly. Return ONLY the worksheet JSON.`;
   return [
@@ -857,7 +868,7 @@ export async function aiWorksheet(
       body: JSON.stringify({
         model,
         messages: msgs,
-        temperature: 0.7,
+        temperature: 0.55,
         max_tokens: 4000,
         venice_parameters: { include_venice_system_prompt: false },
       }),

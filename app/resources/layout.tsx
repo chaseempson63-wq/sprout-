@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ShieldCheck } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { AccountChip } from "./_components/AccountChip";
 import { FeedbackButton } from "./_components/FeedbackButton";
@@ -48,7 +49,10 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
             <div className="flex items-center gap-2">
               <AccountChip />
               <FeedbackButton />
-              <GlassLink href="/" className="hidden h-9 px-4 text-xs sm:inline-flex">
+              <GlassLink href="/resources/privacy" className="hidden h-9 gap-1 px-3 text-xs sm:inline-flex">
+                <ShieldCheck className="size-4" /> Privacy
+              </GlassLink>
+              <GlassLink href="/" className="hidden h-9 px-4 text-xs md:inline-flex">
                 Back to site
               </GlassLink>
             </div>
@@ -58,7 +62,11 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
         <main className="relative z-10 mx-auto w-full max-w-7xl flex-1 px-6 py-8 lg:px-8">{children}</main>
 
         <footer className="no-print border-sprout-cream/10 text-sprout-cream/55 relative z-10 border-t px-6 py-6 text-center text-xs">
-          Made with Sprout · your data stays yours, never sold, never used to train AI.
+          Made with Sprout ·{" "}
+          <Link href="/resources/privacy" className="hover:text-sprout-cream underline-offset-2 hover:underline">
+            your data stays yours, never sold, never used to train AI
+          </Link>
+          .
         </footer>
       </div>
     </ResourcesProvider>
