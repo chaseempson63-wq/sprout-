@@ -2,12 +2,14 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 It is the single source of truth for current state, locked decisions, the open
-risk, and the next job. Last updated 2026-06-23: five things are MERGED to main,
+risk, and the next job. Last updated 2026-06-23: six things are MERGED to main,
 deployed, and CONFIRMED on prod (hisprout.app) — the mul/div fallback cap fix +
 masked presets (`1150413`), the Build-your-own + Community social layer
-(`f3bed5e`), the custom-sheet blank-PDF print fix (`64c0e21`), and the print
-pagination + banner/mascot-color fix (`3b893d4`). See section 3. Nothing is
-pending prod re-test.
+(`f3bed5e`), the custom-sheet blank-PDF print fix (`64c0e21`), the print
+pagination + banner/mascot-color fix (`3b893d4`), and resource MODES — teach mode
++ honest SVG visuals + the field-coercion fix (`d694a2e` / `e56a5bd`). See section
+3. Nothing is pending prod re-test. **Next: the multi-page BOOKLET format (pass 2),
+built on this proven single-sheet engine. Raster image gen stays deferred.**
 
 Resources is the web worksheet-maker at route `/resources` in this landing repo
 (a SEPARATE product from the Sprout Journal mobile app). Full spec: `docs/RESOURCES.md`.
@@ -170,6 +172,35 @@ production, READY, aliased to hisprout.app. Full battery run on hisprout.app:
   (~248,248,248), and mascot green (header + footer). Confirmed hisprout.app serves
   SHA `3b893d4` (deployed CSS carries the new rules, old `position:absolute` print rule
   gone). Zero footprint — generated, tested, discarded; nothing saved or published.
+
+- **Resource MODES + honest visuals (`d694a2e`) + field coercion (`e56a5bd`) —
+  CONFIRMED on the live prod deploy.** Fixes the "everything renders as a flat
+  intro-then-questions doc" problem. `detectMode` routes each request to teach |
+  practice | activity; structure adapts per mode instead of one fixed frame.
+  Practice keeps the EXACT old `SYSTEM` + path, byte-for-byte (math/etc.
+  unchanged). TEACH (freeform "teach me about X"): `SYSTEM_TEACH` leads with a
+  hook + 2-4 headed teaching passages + `fact` callouts + an `image`, questions
+  optional and last (<=3). ACTIVITY (freeform color/maze/trace + the
+  color-by-number/draw-label/life-cycle templates): `SYSTEM_ACTIVITY`, real
+  line-art, tiny instructions. New blocks: `fact` (did-you-know) + `image`
+  (curated SVG by `svgKey`, `lib/resources/svg-art.ts`, 24 stroke-only keys that
+  print as dark line art and dodge the url()-fill print rule). Visual honesty: an
+  invalid/invented `svgKey` degrades to an honest draw box; the model may never
+  write a picture as text. The validator was reweighted FIRST so teaching-rich
+  sheets (passages scored by sentence; fact/image/draw count) stop being
+  discarded as "weak". **Field coercion (`e56a5bd`):** the renderer reads one
+  primary field per kind; if the model packs content elsewhere (e.g. a math
+  equation in `text` when the renderer reads `items`) normalize moves it. Covers
+  all items-based kinds (math, column-math, fill-blank, count, missing-numbers,
+  multiple-choice, short-answer) + word-bank, so a misplaced field never renders
+  blank again. Prod-verified live (`source: ai`): "teach my 6-year-old about the
+  ocean" -> TEACH ("The Amazing Ocean": hook -> 3 passages -> 3 facts -> whale
+  image -> 3 light Qs); "color by number fish" -> ACTIVITY (fish image + color
+  key + 6 math blocks, every equation in `items` after the coercion). Note: a
+  burst of generations can hit Venice's rate limit and fall back to the template
+  engine (`source: template`); it recovers after a short cooldown. Lesson for any
+  future block kind: the renderer reads ONE field per kind, so either emit that
+  field or add a coercion in normalize.
 
 Nothing is pending prod re-test anymore. (Earlier dev/local verification notes for
 these moved here once confirmed live.)
