@@ -26,7 +26,7 @@ Next.js 16 (App Router, Turbopack) · React 19 · TypeScript · Tailwind v4 · s
 
 Three moods, one brand:
 - **Marketing/landing**: light + confident (white, deep forest green, lime accents, bold sans)
-- **App interior**: dark + immersive + glassmorphic (deep almost-black, frosted cards, lime CTAs)
+- **App interior**: warm + light + glassmorphic (cream + forest green like the landing page, frosted cards) — **updated 2026-06-22, flipped from dark; the dark interior read too techy. Full Rork redesign in flight (5 growth domains + warm-light); brief at `02-projects/sprout/rork-full-redesign-master-prompt.md`**
 - **Timeline / weekly view**: light + warm + shareable (cream/white, forest green headers, designed for screenshot + print). Both parent-side and kid-side render with the same warm shareable aesthetic — the kid-facing view is the same thing, not a dumbed-down version.
 
 Voice: direct & confident. Linear/Vercel register. US English (mom not mum, math not maths). No exclamation marks. No em dashes (founder's hard rule). No emojis-as-decoration. **One well-placed swear is now in-bounds** when it mirrors the audience's actual register — "shit" / "eff" are verified-corpus anchors (Jenna Galley, Mum Central AU). Stronger swears ("fuck") need an attributed mum-verbatim before they go in Sprout's voice — don't write them on training-data assumption alone. Never gratuitous. Never in CTA microcopy. Warmth comes from what we say, not how excitedly we say it. **Sprout reads as a movement, not a corporate product** — warm, plain, rallying. The word "artifact" is retired (2026-05-28, founder's call): say "the timeline," "your week," "what they built," "the thing."
