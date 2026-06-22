@@ -53,6 +53,23 @@ function ageBenchmark(age: number): string {
   return "Grade 6 to 8: multi-digit and multi-step problems, fractions, decimals, percentages, negative numbers and early algebra";
 }
 
+// The largest single factor a multiplication/division problem should use at this
+// age. This is the deterministic fallback's operand ceiling, and it MUST track
+// the stepper age the same way the Venice path does — that is the whole point.
+// Bug it fixes: the old code pinned every age at the 12x times tables
+// (Math.min(12, ...)), so when Venice was unavailable a 13-year-old silently got
+// 4x6. Young children still land in the friendly times-table range (unchanged);
+// from age 10 the numbers go genuinely multi-digit, climbing with age to match
+// the age benchmark. The chat's harder/easier (diff) still nudges it either way.
+function factorCeiling(age: number, diff: number): number {
+  const a = Math.min(13, Math.max(3, age));
+  // Ages 3-9: keep the existing gentle ramp (age 5 ~ up to 5, age 9 ~ up to 10).
+  if (a <= 9) return Math.min(12, Math.max(2, Math.round(6 * scaleFactor(a, diff))));
+  // Ages 10+: real multi-digit, tracking the benchmark (Grade 4-5 then Grade 6-8).
+  const base = a === 10 ? 25 : a === 11 ? 45 : a === 12 ? 70 : 99;
+  return Math.max(12, Math.round(base * Math.pow(1.4, diff)));
+}
+
 interface Ctx {
   template: WorksheetTemplate;
   age: number;
@@ -82,18 +99,18 @@ function mathBlock(ctx: Ctx, op: "add" | "sub" | "mul" | "div"): WorksheetBlock 
   const answers: string[] = [];
   const f = scaleFactor(ctx.age, ctx.diff);
   if (op === "mul") {
-    const fmax = Math.max(2, Math.round(6 * f));
+    const hi = factorCeiling(ctx.age, ctx.diff);
     for (let i = 0; i < count; i++) {
-      const a = rint(2, Math.min(12, fmax));
-      const b = rint(2, Math.min(12, fmax));
+      const a = rint(2, hi);
+      const b = rint(2, hi);
       items.push(`${a} × ${b} =`);
       answers.push(`${a * b}`);
     }
   } else if (op === "div") {
-    const fmax = Math.max(2, Math.round(6 * f));
+    const hi = factorCeiling(ctx.age, ctx.diff);
     for (let i = 0; i < count; i++) {
-      const b = rint(2, Math.min(12, fmax));
-      const ans = rint(2, Math.min(12, fmax));
+      const b = rint(2, Math.min(12, hi)); // divisor stays a clean 1-2 digit, like Venice
+      const ans = rint(2, hi); // quotient scales with age -> multi-digit dividend
       items.push(`${b * ans} ÷ ${b} =`);
       answers.push(`${ans}`);
     }
