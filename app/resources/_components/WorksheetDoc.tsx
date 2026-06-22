@@ -3,6 +3,7 @@
 // something the child fills in by hand. This is the .print-area print target.
 
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
+import { SVG_ART } from "@/lib/resources/svg-art";
 import type { Worksheet, WorksheetBlock } from "@/lib/resources/types";
 
 function Lines({ count = 3 }: { count?: number }) {
@@ -264,6 +265,35 @@ function BlockView({ block }: { block: WorksheetBlock }) {
           <Lines count={2} />
         </div>
       );
+
+    case "fact":
+      return (
+        <div className="rounded-2xl border border-[#2E5A35]/25 bg-[#FBF6E7] px-5 py-3">
+          <p className="text-[12px] font-extrabold uppercase tracking-wide text-[#2E5A35]">★ {block.prompt || "Did you know?"}</p>
+          {block.text ? <p className="mt-1 text-[15px] leading-relaxed text-[#1B3722]">{block.text}</p> : null}
+        </div>
+      );
+
+    case "image": {
+      const art = block.svgKey ? SVG_ART[block.svgKey] : undefined;
+      if (!art) return null; // normalize converts unknown keys to draw boxes; this is a guard
+      return (
+        <div>
+          {prompt}
+          <div className="mt-2 flex justify-center">
+            <svg
+              viewBox="0 0 100 100"
+              className="h-52 w-52"
+              role="img"
+              aria-label={block.svgKey}
+              dangerouslySetInnerHTML={{
+                __html: `<g fill="none" stroke="#1B3722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">${art}</g>`,
+              }}
+            />
+          </div>
+        </div>
+      );
+    }
 
     default:
       return null;

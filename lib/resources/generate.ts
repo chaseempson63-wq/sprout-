@@ -10,6 +10,7 @@
 
 import { getTemplate } from "./catalog";
 import { detectTheme, intentPreamble } from "./intent";
+import { SVG_ART, SVG_KEYS } from "./svg-art";
 import { capName } from "./util";
 import type { ChatMessage, Worksheet, WorksheetBlock, WorksheetTemplate } from "./types";
 
@@ -884,6 +885,64 @@ const SYSTEM = [
   "Do not include an answer-key section in the prompts; put correct answers only in each block's 'answers' array. If a child's name is given use it in word problems and stories; otherwise address the child as 'you' and never invent a name. Do not put raw line breaks inside JSON string values.",
 ].join(" ");
 
+// ── resource MODE: structure adapts to intent, not one fixed worksheet frame ──
+// practice = the existing block/fill-in path (SYSTEM above, UNCHANGED).
+// teach    = lead with real teaching; questions optional and light.
+// activity = a hands-on doing sheet with real line-art, not described pictures.
+type ResourceMode = "teach" | "practice" | "activity";
+
+// Templates that are hands-on visual activities rather than practice drills.
+const ACTIVITY_TEMPLATES = new Set(["color-by-number", "draw-label", "life-cycle"]);
+
+const TEACH_RE =
+  /\b(teach|learn(ing)?|tell me|all about|explain|lesson|introduce|facts? about|what (is|are|was|were|do|does|happens?)|who (is|are|was|were)|where (is|are|do|does)|how (do|does|did|is|are|can)|why (do|does|did|is|are))\b/i;
+const ACTIVITY_RE =
+  /\b(colou?r by number|colou?r[- ]?in|colou?ring|colou?r the|dot[- ]?to[- ]?dot|connect the dots|maze|trace|tracing|cut[- ]?out|spot the|find the|matching game|draw and colou?r)\b/i;
+
+// Classify a request. Templates keep their lane (practice unless explicitly an
+// activity); only freeform "Build your own" is classified from the parent's words.
+function detectMode(template: WorksheetTemplate, messages: ChatMessage[]): ResourceMode {
+  if (template.id !== "custom") return ACTIVITY_TEMPLATES.has(template.id) ? "activity" : "practice";
+  const text = messages.filter((m) => m.role === "user").map((m) => m.content).join(" ");
+  if (ACTIVITY_RE.test(text)) return "activity";
+  if (TEACH_RE.test(text)) return "teach";
+  return "practice";
+}
+
+// Shared JSON-shape + visual-honesty rules for teach and activity modes. (The
+// practice SYSTEM above is left byte-for-byte as-is so practice never changes.)
+const SCHEMA_SPEC = [
+  'Return ONLY valid JSON: {"title":string,"subtitle":string,"blocks":[Block]}.',
+  'Block = {"kind":string,"prompt"?:string,"text"?:string,"items"?:[string],"pairs"?:[{"left":string,"right":string}],"emoji"?:string,"wordBank"?:[string],"rows"?:number,"answers"?:[string],"svgKey"?:string}.',
+  "Allowed kinds: instructions, passage, fact, image, draw, short-answer, multiple-choice, fill-blank, word-bank, matching, count, missing-numbers, trace, handwriting, math, column-math.",
+  "passage = a short heading in 'prompt' and the teaching text in 'text'. fact = one surprising fact in 'text'. image = a picture, set 'svgKey' only. draw = a box the child draws in, say what in 'prompt'.",
+  `NEVER write a picture as words or a bracketed description like "[a friendly fish]". To show a picture, use an image block whose svgKey is EXACTLY ONE of: ${SVG_KEYS.join(", ")}. If none of those fits, use a draw block telling the child what to draw themselves.`,
+  "Write everything ADDRESSED TO THE CHILD; never write directions to the parent and never say 'your child'. If a name is given use it; otherwise say 'you' and never invent a name.",
+  "Use PLAIN TEXT only: no LaTeX, no markdown. Do not put raw line breaks inside JSON string values. Do not include an answer-key section in the prompts; put any answers only in each block's 'answers' array.",
+];
+
+const SYSTEM_TEACH = [
+  "You design printable LEARNING resources for a child (ages 3-12) that TEACH a topic, printed and read at home.",
+  "The child wants to LEARN about the topic. TEACH them first. Do NOT just ask questions.",
+  "Open with ONE warm, exciting hook sentence (an 'instructions' block) that makes the child want to know more.",
+  "Then TEACH with 2 to 4 'passage' blocks. Each passage has a short, fun heading in 'prompt' and 3 to 6 vivid sentences in 'text', using simple words, real examples, and things the child can picture. This teaching is the whole point: make it genuinely interesting and rich.",
+  "Add 2 to 4 'fact' blocks, each a single surprising 'did you know?' fact in 'text'.",
+  "Include at least one 'image' block with an svgKey that fits the topic so there is something to look at; if nothing fits, use a 'draw' block inviting them to draw it.",
+  "Questions are OPTIONAL and come LAST: at most 3 short-answer or multiple-choice items, each answerable from what you just taught. Default to MORE teaching and FEWER questions. A sheet that asks questions WITHOUT teaching first is WRONG.",
+  "Order: hook, then teaching passages and facts and a picture, then (optionally) a few light questions.",
+  "Pitch every word so a curious child of the given age leans in and actually learns something, never like homework.",
+  ...SCHEMA_SPEC,
+].join(" ");
+
+const SYSTEM_ACTIVITY = [
+  "You design printable hands-on ACTIVITY sheets for a child (ages 3-12) to DO after printing.",
+  "The DOING is the point. Keep instructions tiny and the activity big and fun.",
+  "For any picture to colour, trace, label, count, or complete, use an 'image' block with a fitting svgKey, or a 'draw' block if none fits. Never describe the picture in words.",
+  "Colour by number: give an 'image' block plus a short answer-to-colour key (e.g. '1 = blue, 2 = green') as an 'instructions' block; the child solves simple problems and colours each part by its answer.",
+  "Make it something a curious child of the given age wants to pick up and finish, never like homework.",
+  ...SCHEMA_SPEC,
+].join(" ");
+
 export function buildMessages(template: WorksheetTemplate, age: number, messages: ChatMessage[], childName?: string) {
   const asks = messages.filter((m) => m.role === "user").map((m) => m.content.trim()).filter(Boolean);
   const askText = asks.length ? asks.map((a, i) => `(${i + 1}) ${a}`).join(" ") : "Make a standard full-page one.";
@@ -898,6 +957,37 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
         ? `DIFFICULTY: the parent has asked to make it easier. Make this clearly gentler than a standard age-${age} sheet: smaller numbers (up to about ${target}) and fewer steps. `
         : "";
   const benchNote = `An average ${age}-year-old works at this level in school: ${ageBenchmark(age)}. Match that grade level and never go below it. `;
+
+  const mode = detectMode(template, messages);
+
+  // TEACH: lead with real teaching content; questions optional. (Freeform only.)
+  if (mode === "teach") {
+    const teachUser =
+      `The child wants to learn about this topic, newest message last: ${askText}. ` +
+      `${who2} ${benchNote}${diffNote}` +
+      `Teach it for a ${age}-year-old following the rules above: a hook, rich teaching passages, fun facts, a picture, and only a few light questions at the end if any. Give it a clear, specific title that names the topic. Return ONLY the worksheet JSON.`;
+    return [
+      { role: "system", content: SYSTEM_TEACH },
+      { role: "user", content: teachUser },
+    ];
+  }
+
+  // ACTIVITY: a hands-on doing sheet with real line-art (freeform or an activity template).
+  if (mode === "activity") {
+    const what =
+      template.id === "custom"
+        ? `The child wants this activity, newest message last: ${askText}.`
+        : `This is a "${template.title}" activity (${template.brief}). Parent requests, newest last: ${askText}.`;
+    const activityUser =
+      `${what} ${who2} ${benchNote}${diffNote}` +
+      `Build it for a ${age}-year-old following the rules above, using a real picture (an image block with a fitting svgKey) wherever one helps. Give it a clear, specific title. Return ONLY the worksheet JSON.`;
+    return [
+      { role: "system", content: SYSTEM_ACTIVITY },
+      { role: "user", content: activityUser },
+    ];
+  }
+
+  // PRACTICE (unchanged from here down).
   // Freeform "Build your own": the parent's own description is the spec. Reuse the
   // same SYSTEM rules + pipeline, but let the model pick the format and topic.
   if (template.id === "custom") {
@@ -925,7 +1015,8 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
 
 const ALLOWED = new Set([
   "instructions", "trace", "handwriting", "fill-blank", "word-bank", "math",
-  "column-math", "count", "matching", "multiple-choice", "short-answer", "missing-numbers", "passage", "draw",
+  "column-math", "count", "matching", "multiple-choice", "short-answer", "missing-numbers",
+  "passage", "fact", "image", "draw",
 ]);
 
 function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate, age: number, childName?: string): Worksheet | null {
@@ -942,6 +1033,16 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
     if (typeof o.text === "string") block.text = noDash(o.text);
     if (typeof o.emoji === "string") block.emoji = o.emoji;
     if (typeof o.rows === "number") block.rows = o.rows;
+    if (typeof o.svgKey === "string") block.svgKey = o.svgKey;
+    // Visual honesty: a picture must be REAL art from the library. An invalid or
+    // invented svgKey degrades to a draw box ("draw it yourself"), never a blank
+    // or a description pretending to be an image.
+    if (block.kind === "image" && (!block.svgKey || !SVG_ART[block.svgKey])) {
+      block.prompt = block.prompt || (block.svgKey ? `Draw a ${block.svgKey} here.` : "Draw the picture here.");
+      block.kind = "draw";
+      block.rows = block.rows ?? 7;
+      delete block.svgKey;
+    }
     const items = strArr(o.items);
     if (items) block.items = items.map(noDash);
     const wb = strArr(o.wordBank);
@@ -957,8 +1058,19 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
     blocks.push(block);
   }
   // Validation: reject weak AI output so the caller falls back to the engine.
-  const items = blocks.reduce((s, b) => s + (b.items?.length ?? 0) + (b.pairs?.length ?? 0) + (b.text ? 3 : 0), 0);
-  if (blocks.length < 2 || items < 5) return null;
+  // Teaching content is real content: a passage is weighted by its sentences (not a
+  // flat 3), and fact/image/draw blocks count too, so a teach sheet that leads with
+  // explanation instead of a long item list is no longer discarded as "weak".
+  const sentences = (t?: string) =>
+    t ? Math.min(12, (t.match(/[.!?]+/g)?.length ?? Math.ceil(t.length / 60)) || 1) : 0;
+  const weight = blocks.reduce((s, b) => {
+    let w = (b.items?.length ?? 0) + (b.pairs?.length ?? 0);
+    if (b.text) w += b.kind === "passage" ? sentences(b.text) : 1;
+    if (b.kind === "fact") w += 2; // a fun-fact callout is real teaching
+    if (b.kind === "image" || b.kind === "draw") w += 1; // a visual is real content
+    return s + w;
+  }, 0);
+  if (blocks.length < 2 || weight < 5) return null;
 
   const name = capName(childName);
   const subtitleRaw = typeof parsed.subtitle === "string" ? noDash(parsed.subtitle) : "";

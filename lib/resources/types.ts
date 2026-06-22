@@ -19,7 +19,9 @@ export type BlockKind =
   | "multiple-choice" // question + options to circle
   | "short-answer" // question + blank lines
   | "missing-numbers" // a sequence with gaps to fill
-  | "passage" // a short reading passage
+  | "passage" // a reading/teaching passage (heading in prompt, body in text)
+  | "fact" // a "did you know?" fun-fact callout (the fact in text)
+  | "image" // a real picture: on-brand line art looked up by svgKey
   | "draw"; // a labelled box to draw in
 
 export interface WorksheetBlock {
@@ -32,6 +34,7 @@ export interface WorksheetBlock {
   wordBank?: string[]; // words for a word-bank block
   rows?: number; // blank lines (handwriting) or draw-box height hint
   answers?: string[]; // answer-key entries for this block
+  svgKey?: string; // image block: key into the curated SVG line-art library
 }
 
 export interface Worksheet {
