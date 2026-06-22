@@ -2,9 +2,10 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 It is the single source of truth for current state, locked decisions, the open
-risk, and the next job. Last updated 2026-06-22: the mul/div fallback cap fix
-(`931a24f`) is committed on branch `claude/silly-rubin-e31ec9` but NOT yet
-merged to main, so it is NOT on prod yet. Everything else is on `main` / prod.
+risk, and the next job. Last updated 2026-06-22: TWO fixes are committed on branch
+`claude/silly-rubin-e31ec9` but NOT yet merged to main, so NOT on prod yet — the
+mul/div fallback cap fix (`931a24f`) and the masked-preset instructions
+(`012d467`). Everything else is on `main` / prod. Next step is a merge to main.
 
 Resources is the web worksheet-maker at route `/resources` in this landing repo
 (a SEPARATE product from the Sprout Journal mobile app). Full spec: `docs/RESOURCES.md`.
@@ -62,6 +63,22 @@ Newest last. Every commit is deployed to prod.
   age 13 -> `71 x 90`, `1023 / 11`; age 7 -> `8 x 6`, `28 / 7`. All four of Chase's
   quality gates pass. **To reach prod it must be merged to main.**
 
+- `012d467` — masked preset instructions (the chip -> Venice layer). Each edit chip
+  (harder/easier/longer/shorter/more questions) still shows ONE word but now sends
+  Venice a concrete, template-specific instruction built from the stepper age, with
+  a worked example along the template's natural dimension (more digits for
+  arithmetic, more sides/faces for geometry, change/tax/discount for money). New
+  `DIFFICULTY_HINTS` (all 30 templates) + `presetPrompt()` in
+  `lib/resources/intent.ts`; `ChatMessage.display` so the bubble shows the word not
+  the masked text; `app/resources/[templateId]/page.tsx` chips call `sendPreset()`.
+  Each difficulty chip carries exactly one keyword so cumulative compounding holds;
+  a generic grade-benchmark recital tested WORSE than baseline so it is deliberately
+  NOT used. Verified: a 150-string audit (30x5) = 0 keyword failures, 0 theme
+  triggers; a live-Venice quality test across arithmetic/geometry/money all move the
+  right way (age 13 "harder" multiplication -> 3-digit x 2-digit not times tables;
+  money "harder" doubles change/tax, "easier" -> whole-dollar <= $20). Type-clean.
+  **To reach prod it must be merged to main.**
+
 ## 2. Verified working
 
 - AI generation is LIVE on prod (Venice, `source: ai` confirmed via the API).
@@ -85,6 +102,10 @@ Newest last. Every commit is deployed to prod.
   when Venice is down/slow, so a normal healthy-Venice click on prod will look the
   same; to actually exercise it Chase would need a moment where prod falls back.
   Treat as OPEN until merged to main AND confirmed.
+- **The masked preset instructions (`012d467`) are verified against live Venice but
+  not merged to main / not on prod yet.** On prod, clicking "harder" should visibly
+  step the sheet up (e.g. multiplication into 3-digit) and the chat bubble should
+  still show just the word. Treat as OPEN until merged AND confirmed on prod.
 
 ## 4. Locked product decisions (do not relitigate)
 
@@ -136,12 +157,18 @@ PROD. There may be an environment/caching gap between local and production. If a
 - Hit the prod API directly (`POST https://hisprout.app/api/resources/generate`)
   to separate "prod serving stale code" from "browser cached".
 
-## 6. NEXT PRIORITY — first build of the next session
+## 6. NEXT PRIORITY — merge to main, then Chase re-tests on prod
 
-**Still the preset masking (below). This session it was STARTED, then parked:**
-Chase reprioritized to the fallback cap fix (section 1) after probing surfaced it.
-Before parking, candidate phrasings were tested against LIVE Venice (prod endpoint,
-multiplication age 13, 3 reps each). Key findings — DO NOT re-derive:
+**Both builds for this session are DONE on the branch** (cap fix `931a24f`, masked
+presets `012d467`) and verified locally + against live Venice. No new build is
+queued. Next step: merge `claude/silly-rubin-e31ec9` to main (auto-deploys to
+prod), then Chase re-tests on prod: the age-source fix (§3), the fallback cap
+(a 13yo never gets times tables even when Venice falls back), and the masked
+presets (clicking "harder" visibly steps the sheet up; chip still shows one word).
+
+**The masked-preset findings are kept below as the record of WHY it is built this
+way — DO NOT re-derive.** Tested against LIVE Venice (prod endpoint, multiplication
+age 13, 3 reps each):
 
 - **Output genuinely changes.** "easier" -> max product ~70; baseline ~8.4k; a
   concrete "harder" -> ~42k. Confirmed not-just-the-prompt.
