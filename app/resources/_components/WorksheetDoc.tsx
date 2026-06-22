@@ -6,9 +6,18 @@ import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { SVG_ART } from "@/lib/resources/svg-art";
 import type { Worksheet, WorksheetBlock } from "@/lib/resources/types";
 
+// Raw print rules injected inline so the build CSS pipeline (Lightning CSS) can't
+// strip break-inside. Tightens print rhythm a touch and keeps the footer intact +
+// pulled in, so a slight overflow doesn't orphan it onto a near-empty trailing
+// page. Print-only; on-screen layout and content are untouched.
+const PRINT_RULES = `@media print {
+  .worksheet-lines > * + * { margin-top: 13px !important; }
+  .worksheet-footer { break-inside: avoid; margin-top: 14px !important; padding-top: 8px !important; }
+}`;
+
 function Lines({ count = 3 }: { count?: number }) {
   return (
-    <div className="mt-2 space-y-5">
+    <div className="worksheet-lines mt-2 space-y-5">
       {Array.from({ length: count }).map((_, i) => (
         <div key={i} className="border-b border-dashed border-[#1B3722]/35" />
       ))}
@@ -261,7 +270,9 @@ function BlockView({ block }: { block: WorksheetBlock }) {
       return (
         <div>
           {prompt}
-          <div className="mt-2 rounded-2xl border-2 border-dashed border-[#2E5A35]/35" style={{ height: `${(block.rows ?? 6) * 26}px` }} />
+          {/* cap the EMPTY box height to a sensible drawing space (never most of a
+              page); this bounds an empty box, not the amount of teaching content */}
+          <div className="mt-2 rounded-2xl border-2 border-dashed border-[#2E5A35]/35" style={{ height: `${Math.min(block.rows ?? 6, 8) * 26}px` }} />
           <Lines count={2} />
         </div>
       );
@@ -303,37 +314,41 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
   return (
     <article className="print-area relative overflow-hidden rounded-[28px] border-2 border-[#2E5A35]/25 bg-[#FFFEFB] text-[#1B3722] shadow-[0_18px_50px_-20px_rgba(0,0,0,0.55)]">
-      {/* layered green wave banner */}
-      <div className="relative h-[132px]">
-        <svg viewBox="0 0 1000 200" preserveAspectRatio="none" className="absolute inset-0 h-full w-full" aria-hidden="true">
-          <path d="M0,0 H1000 V120 C820,172 660,92 500,132 C340,168 180,96 0,142 Z" fill="#2E5A35" />
-          <path d="M0,0 H1000 V102 C820,150 660,72 500,112 C340,146 180,78 0,122 Z" fill="#4D7B53" opacity="0.55" />
-          <path d="M0,0 H1000 V82 C820,122 660,56 500,96 C340,126 180,62 0,102 Z" fill="#76A77A" opacity="0.45" />
-        </svg>
-        <div className="relative flex items-center gap-4 px-7 pt-6 sm:px-10">
+      <style dangerouslySetInnerHTML={{ __html: PRINT_RULES }} />
+      {/* green banner: solid green behind the content so the wave can never cut
+          through it; the wavy edge is carved along the BOTTOM. Auto-height so a
+          long title wraps in full and lifts the band with it (never truncates). */}
+      <div className="relative bg-[#2E5A35]">
+        <div className="relative z-10 flex items-start gap-4 px-7 pt-7 pb-12 sm:px-10">
           <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-[#FFFEFB] shadow-md">
             <SproutMascotIcon className="h-12 w-12" />
           </span>
-          <div className="text-sprout-cream min-w-0">
-            <h1 className="truncate text-2xl leading-tight font-bold">{worksheet.title}</h1>
-            {worksheet.subtitle ? <p className="text-sprout-cream/85 text-sm">{worksheet.subtitle}</p> : null}
+          <div className="text-sprout-cream min-w-0 flex-1">
+            <h1 className="text-2xl leading-tight font-bold break-words">{worksheet.title}</h1>
+            {worksheet.subtitle ? <p className="text-sprout-cream/85 mt-0.5 text-sm">{worksheet.subtitle}</p> : null}
           </div>
-          <span className="text-sprout-cream ml-auto hidden self-start pt-1 text-sm font-extrabold tracking-[0.25em] uppercase sm:block">
+          <span className="text-sprout-cream hidden shrink-0 self-start text-sm font-extrabold tracking-[0.25em] uppercase sm:block">
             Sprout
           </span>
         </div>
+        {/* layered wavy bottom edge, carved out by the cream sheet color */}
+        <svg viewBox="0 0 1000 60" preserveAspectRatio="none" className="pointer-events-none absolute inset-x-0 bottom-0 h-7 w-full" aria-hidden="true">
+          <path d="M0,60 V34 C200,58 340,18 500,32 C660,46 820,12 1000,30 V60 Z" fill="#76A77A" opacity="0.5" />
+          <path d="M0,60 V44 C200,64 340,28 500,42 C660,56 820,22 1000,40 V60 Z" fill="#4D7B53" opacity="0.6" />
+          <path d="M0,60 V52 C200,70 340,36 500,50 C660,64 820,30 1000,48 V60 Z" fill="#FFFEFB" />
+        </svg>
       </div>
 
-      <div className="px-7 pt-3 pb-9 sm:px-10">
+      <div className="worksheet-body px-7 pt-4 pb-6 sm:px-10">
         {worksheet.intro && <p className="mb-5 text-[15px] leading-relaxed text-[#1B3722]/80">{worksheet.intro}</p>}
 
-        <div className="space-y-7">
+        <div className="worksheet-blocks space-y-7">
           {worksheet.blocks.map((b, i) => (
             <BlockView key={i} block={b} />
           ))}
         </div>
 
-        <div className="mt-8 flex items-center justify-between border-t border-[#2E5A35]/15 pt-4">
+        <div className="worksheet-footer mt-6 flex items-center justify-between border-t border-[#2E5A35]/15 pt-4">
           <span className="text-[12px] text-[#1B3722]/50">Name: ______________________</span>
           <span className="inline-flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-[#2E5A35]">
             <span className="grid size-6 place-items-center rounded-lg bg-[#2E5A35]/10">

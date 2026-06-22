@@ -1083,6 +1083,13 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
         delete block.text;
       }
     }
+    // De-dupe the fact label: the renderer already prints a "Did you know?" header,
+    // so strip a leading "did you know?" the model also wrote into the fact text
+    // (any casing/punctuation), then re-capitalize. Label de-dup, not a fact cap.
+    if (block.kind === "fact" && block.text) {
+      const stripped = block.text.replace(/^\s*did\s+you\s+know(\s+that)?[\s?!.:,-]*/i, "").trim();
+      if (stripped && stripped !== block.text) block.text = stripped.charAt(0).toUpperCase() + stripped.slice(1);
+    }
     blocks.push(block);
   }
   // Validation: reject weak AI output so the caller falls back to the engine.
