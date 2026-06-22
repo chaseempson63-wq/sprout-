@@ -4,6 +4,7 @@ import { ShieldCheck } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { AccountChip } from "./_components/AccountChip";
 import { FeedbackButton } from "./_components/FeedbackButton";
+import { ResourcesIntro } from "./_components/ResourcesIntro";
 import { GlassFilter, GlassLink } from "@/components/ui/glass";
 import { ResourcesProvider } from "@/lib/resources/store";
 
@@ -17,9 +18,19 @@ export const metadata: Metadata = {
 const NOISE =
   "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")";
 
+// Pre-paint gate for the page-load intro (ResourcesIntro). Runs synchronously
+// before first paint so a first-time hub visit shows the curtain immediately,
+// and returning / reduced-motion / no-JS visitors never flash it. The component
+// takes over once hydrated (drives "reveal" → "off").
+const INTRO_GATE =
+  "(()=>{try{var seen=sessionStorage.getItem('sprout:resources:intro:v1')==='1';var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;var hub=location.pathname==='/resources';document.documentElement.setAttribute('data-resources-intro',(hub&&!seen&&!rm)?'play':'off');}catch(e){document.documentElement.setAttribute('data-resources-intro','off');}})()";
+
 export default function ResourcesLayout({ children }: { children: React.ReactNode }) {
   return (
     <ResourcesProvider>
+      {/* Pre-paint gate must run before the overlay below is parsed. */}
+      <script dangerouslySetInnerHTML={{ __html: INTRO_GATE }} />
+      <ResourcesIntro />
       <GlassFilter />
       <div className="text-sprout-cream relative flex min-h-screen flex-col overflow-x-hidden">
         {/* Continuous green canvas — same brand surface as the homepage. */}

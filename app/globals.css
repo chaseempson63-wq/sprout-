@@ -308,3 +308,93 @@
     fill: #4e9a3e !important;
   }
 }
+
+/* ──────────────────────────────────────────────────────────────────
+   Resources hub — page-load intro (see ResourcesIntro.tsx).
+   A skippable, once-per-session curtain that types the Sprout name, pops
+   the mascot, raises the headline, then lifts as the page assembles.
+   ────────────────────────────────────────────────────────────────── */
+
+/* No-flash gate. The curtain is rendered on the hub but only PAINTS on a
+   first-time visit — the layout's inline script sets data-resources-intro
+   to "play" before first paint, and the component drives "reveal" → "off".
+   Default (no/other value) keeps it hidden, so returning visitors and the
+   no-JS case never flash it. */
+html:not([data-resources-intro="play"]):not([data-resources-intro="reveal"]) .resources-intro-overlay {
+  display: none;
+}
+
+/* 3. Mascot pop — springy, slightly overshooting, a little cheeky. */
+.intro-mascot {
+  opacity: 0;
+  transform-origin: center;
+}
+.intro-mascot-pop {
+  animation: intro-mascot-pop 560ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@keyframes intro-mascot-pop {
+  0%   { opacity: 0; transform: scale(0.2)  translateY(10px) rotate(-14deg); }
+  55%  { opacity: 1; transform: scale(1.14) translateY(-2px) rotate(5deg); }
+  72%  {             transform: scale(0.93)                  rotate(-2deg); }
+  86%  {             transform: scale(1.04)                  rotate(1deg); }
+  100% { opacity: 1; transform: scale(1)    translateY(0)    rotate(0deg); }
+}
+
+/* 4. Headline rises in; the brand wordmark rises out of the way. */
+.intro-rise-in {
+  animation: intro-rise-in 420ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+@keyframes intro-rise-in {
+  0%   { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.intro-rise-out {
+  animation: intro-rise-out 300ms ease both;
+}
+@keyframes intro-rise-out {
+  0%   { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-14px); }
+}
+
+/* 5-7. The page assembles as the curtain lifts. Top-level blocks of the hub
+   ease up, staggered; the hero (child 1) only fades so it hands off without
+   moving. These are one-shot animations that END in the natural visible state,
+   so even if the attribute is never cleared the page resolves correctly and is
+   never trapped. */
+html[data-resources-intro="reveal"] main > div > * {
+  animation: intro-reveal-up 520ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+html[data-resources-intro="reveal"] main > div > *:nth-child(1) {
+  animation: intro-reveal-fade 360ms ease both;
+}
+html[data-resources-intro="reveal"] main > div > *:nth-child(2) { animation-delay: 70ms; }
+html[data-resources-intro="reveal"] main > div > *:nth-child(3) { animation-delay: 140ms; }
+html[data-resources-intro="reveal"] main > div > *:nth-child(4) { animation-delay: 210ms; }
+html[data-resources-intro="reveal"] main > div > *:nth-child(5) { animation-delay: 280ms; }
+html[data-resources-intro="reveal"] main > div > *:nth-child(n + 6) { animation-delay: 340ms; }
+html[data-resources-intro="reveal"] header { animation: intro-reveal-fade 440ms ease both; }
+@keyframes intro-reveal-up {
+  0%   { opacity: 0; transform: translateY(18px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes intro-reveal-fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Reduced motion — never play, never hold anything back. */
+@media (prefers-reduced-motion: reduce) {
+  .resources-intro-overlay {
+    display: none !important;
+  }
+  .intro-mascot {
+    opacity: 1;
+  }
+  .intro-mascot-pop,
+  .intro-rise-in,
+  .intro-rise-out,
+  html[data-resources-intro="reveal"] main > div > *,
+  html[data-resources-intro="reveal"] header {
+    animation: none !important;
+  }
+}
