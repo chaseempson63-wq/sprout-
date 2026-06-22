@@ -2,10 +2,11 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 It is the single source of truth for current state, locked decisions, the open
-risk, and the next job. Last updated 2026-06-22: three things are MERGED to main,
+risk, and the next job. Last updated 2026-06-22: four things are MERGED to main,
 deployed, and CONFIRMED on prod (hisprout.app) — the mul/div fallback cap fix +
-masked presets (`1150413`), and the Build-your-own + Community social layer
-(`f3bed5e`). See section 3. Nothing is pending prod re-test.
+masked presets (`1150413`), the Build-your-own + Community social layer
+(`f3bed5e`), and the custom-sheet blank-PDF print fix (`64c0e21`). See section 3.
+Nothing is pending prod re-test.
 
 Resources is the web worksheet-maker at route `/resources` in this landing repo
 (a SEPARATE product from the Sprout Journal mobile app). Full spec: `docs/RESOURCES.md`.
@@ -126,6 +127,24 @@ production, READY, aliased to hisprout.app. Full battery run on hisprout.app:
   reading passage + comprehension questions), NOT the retry fallback. No test data
   was published to the live Community. NOTE: the Venice key is Production-scoped, so
   preview deploys can't do freeform gen (they show the customFallback) — expected.
+- **Custom-sheet blank-PDF fix (`64c0e21`) — CONFIRMED (deployed) on prod.** Bug:
+  freeform sheets exported a blank PDF (templates were fine). Root cause, diagnosed
+  by measuring `.print-area` in the live app: the builder's tailwindcss-animate
+  entrance wrapper keeps a transform, which makes it the containing block for the
+  absolutely-positioned sheet; out of flow, that wrapper collapses to 0 height (and
+  the builder grid pins it to one 360px column), so `inset:0` resolved to 360x0 and
+  `overflow-hidden` clipped it. Fix (print CSS only, `app/globals.css @media print`):
+  kill entrance animations in print (`[class*="animate-"]{animation:none;
+  transform:none;filter:none}`) so the sheet anchors to the page, and use `top:0` +
+  auto height + `overflow:visible` (not `inset:0`) so tall sheets paginate. No grid
+  rule touched -> the worksheet's internal math grids are preserved. Verified: live
+  measurement (360x0 -> full-size box anchored to MAIN), on-screen render of the
+  real prod sheet (full content), headless Chrome (15-question sheet -> 2 pages,
+  content on both), template still renders full with columns, and the exact fixed
+  `@media print` rules confirmed present in the DEPLOYED prod CSS. (The literal
+  native PDF-button click wasn't automated cleanly — Chase's Chrome spans a second
+  monitor / multiple windows and is read-tier — but everything that determines the
+  output is confirmed; a single click on prod is the only manual step left.)
 
 Nothing is pending prod re-test anymore. (Earlier dev/local verification notes for
 these moved here once confirmed live.)
