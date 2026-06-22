@@ -2,13 +2,13 @@
 
 import { useParams, useRouter } from "next/navigation";
 import { useRef, useState } from "react";
-import { ArrowLeft, Check, ImagePlus, Pencil, Plus, Sparkles, Star, Trash2, X } from "lucide-react";
+import { ArrowLeft, Check, ImagePlus, Pencil, Plus, Star, Trash2, X } from "lucide-react";
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { topicForTemplate } from "@/lib/resources/catalog";
 import { AVATAR_COLORS, colorClasses, useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
 import { GlassButton, GlassLink } from "@/components/ui/glass";
-import type { LearningMoment, SavedWorksheet } from "@/lib/resources/types";
+import type { SavedWorksheet } from "@/lib/resources/types";
 
 const lightCard =
   "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
@@ -46,19 +46,15 @@ export default function ChildProfile() {
   const raw = params?.id;
   const id = Array.isArray(raw) ? raw[0] : (raw ?? "");
   const router = useRouter();
-  const { ready, getChild, worksheets, updateChild, removeChild, toggleFavorite, removeWorksheet, momentsFor, addMoment, removeMoment } = useResources();
+  const { ready, getChild, worksheets, updateChild, removeChild, toggleFavorite, removeWorksheet } = useResources();
 
   const child = ready ? getChild(id) : undefined;
   const mine = ready ? worksheets.filter((w) => w.childId === id) : [];
-  const moments = ready ? momentsFor(id) : [];
 
   const [viewing, setViewing] = useState<SavedWorksheet | null>(null);
   const [editing, setEditing] = useState(false);
   const [f, setF] = useState({ name: "", age: "7", birthday: "", color: "lime", photo: "", interests: "", learningStyle: "" });
-  const [momentText, setMomentText] = useState("");
-  const [momentPhoto, setMomentPhoto] = useState("");
   const photoRef = useRef<HTMLInputElement>(null);
-  const momentPhotoRef = useRef<HTMLInputElement>(null);
 
   if (!ready) return <div className="text-sprout-cream/60 py-20 text-center text-sm">Loading…</div>;
   if (!child) {
@@ -76,13 +72,8 @@ export default function ChildProfile() {
   const topicsCovered = new Set(mine.map((w) => topicForTemplate(w.meta.templateId)));
   const favorites = mine.filter((w) => w.favorite).length;
 
-  // feed = creations + moments, newest first
-  const feed: ({ kind: "worksheet"; w: SavedWorksheet } | { kind: "moment"; m: LearningMoment })[] = [
-    ...mine.map((w) => ({ kind: "worksheet" as const, w, createdAt: w.createdAt })),
-    ...moments.map((m) => ({ kind: "moment" as const, m, createdAt: m.createdAt })),
-  ]
-    .sort((a, b) => b.createdAt - a.createdAt)
-    .map(({ createdAt: _c, ...rest }) => rest);
+  // On web a child profile is just the worksheets made for them, newest first.
+  const sortedWorksheets = [...mine].sort((a, b) => b.createdAt - a.createdAt);
 
   function startEdit() {
     setF({
@@ -108,23 +99,15 @@ export default function ChildProfile() {
     });
     setEditing(false);
   }
-  async function pickPhoto(e: React.ChangeEvent<HTMLInputElement>, target: "profile" | "moment") {
+  async function pickPhoto(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
     try {
       const data = await downscaleImage(file);
-      if (target === "profile") setF((s) => ({ ...s, photo: data }));
-      else setMomentPhoto(data);
+      setF((s) => ({ ...s, photo: data }));
     } catch {
       /* ignore bad image */
     }
-  }
-  function postMoment() {
-    const text = momentText.trim();
-    if (!text && !momentPhoto) return;
-    addMoment(child!.id, { text: text || "A moment worth keeping.", photo: momentPhoto || undefined });
-    setMomentText("");
-    setMomentPhoto("");
   }
   function del() {
     if (typeof window !== "undefined" && window.confirm(`Remove ${child!.name}? Their saved worksheets stay in your library.`)) {
@@ -154,7 +137,7 @@ export default function ChildProfile() {
                   <ImagePlus className="size-5" />
                 </span>
               </button>
-              <input ref={photoRef} type="file" accept="image/*" hidden onChange={(e) => pickPhoto(e, "profile")} />
+              <input ref={photoRef} type="file" accept="image/*" hidden onChange={pickPhoto} />
               <div className="grid flex-1 gap-2 sm:grid-cols-2">
                 <input className={fieldCls} value={f.name} onChange={(e) => setF((s) => ({ ...s, name: e.target.value }))} placeholder="Name" />
                 <input className={fieldCls} type="number" min={3} max={13} value={f.age} onChange={(e) => setF((s) => ({ ...s, age: e.target.value }))} placeholder="Age" />
@@ -239,12 +222,11 @@ export default function ChildProfile() {
                 ))}
               </div>
             )}
-            <div className="mt-5 grid grid-cols-4 gap-3">
+            <div className="mt-5 grid grid-cols-3 gap-3">
               {[
                 { n: mine.length, l: "worksheets" },
                 { n: topicsCovered.size, l: "topics" },
                 { n: favorites, l: "favorites" },
-                { n: moments.length, l: "moments" },
               ].map((s, i) => (
                 <div key={i} className="rounded-xl bg-[#2E5A35]/8 px-2 py-3 text-center">
                   <div className="text-xl font-bold text-[#2E5A35]">{s.n}</div>
@@ -259,80 +241,34 @@ export default function ChildProfile() {
         )}
       </div>
 
-      {/* moment composer */}
-      <div className={`${lightCard} mb-6 p-4`}>
-        <div className="flex items-start gap-3">
-          <Sparkles className="mt-2 size-5 shrink-0 text-[#2E5A35]" />
-          <div className="flex-1">
-            <textarea
-              value={momentText}
-              onChange={(e) => setMomentText(e.target.value)}
-              placeholder={`Capture a learning moment for ${capName(child.name)}. What they did, said, or made.`}
-              rows={2}
-              className="w-full resize-none rounded-lg border border-black/10 bg-white px-3 py-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]"
-            />
-            {momentPhoto && (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={momentPhoto} alt="" className="mt-2 h-28 rounded-lg object-cover" />
-            )}
-            <div className="mt-2 flex items-center gap-2">
-              <GlassButton onClick={() => momentPhotoRef.current?.click()} className="h-9 gap-1 px-3 text-sm">
-                <ImagePlus className="size-4" /> Photo
-              </GlassButton>
-              <input ref={momentPhotoRef} type="file" accept="image/*" hidden onChange={(e) => pickPhoto(e, "moment")} />
-              <GlassButton onClick={postMoment} disabled={!momentText.trim() && !momentPhoto} className="ml-auto h-9 px-4 text-sm">
-                Add moment
-              </GlassButton>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* feed */}
-      <h2 className="text-sprout-cream mb-3 text-xl font-bold">{capName(child.name) + "'s story"}</h2>
-      {feed.length === 0 ? (
+      {/* worksheets made for this child, newest first */}
+      <h2 className="text-sprout-cream mb-3 text-xl font-bold">Worksheets for {capName(child.name)}</h2>
+      {sortedWorksheets.length === 0 ? (
         <div className={`${lightCard} p-8 text-center`}>
-          <p className="text-[#1B3722]/70">Nothing yet. Make a worksheet or add a learning moment and it shows up here.</p>
+          <p className="text-[#1B3722]/70">No worksheets yet. Make one and it shows up here.</p>
         </div>
       ) : (
         <div className="space-y-3">
-          {feed.map((entry) =>
-            entry.kind === "worksheet" ? (
-              <div key={entry.w.id} className={`${lightCard} flex items-center justify-between gap-3 p-4`}>
-                <button onClick={() => setViewing(entry.w)} className="min-w-0 flex-1 text-left">
-                  <span className="text-[11px] font-semibold tracking-wide text-[#2E5A35] uppercase">Worksheet</span>
-                  <span className="flex items-center gap-2">
-                    {entry.w.favorite && <Star className="size-3.5 fill-amber-400 text-amber-400" />}
-                    <span className="truncate font-bold text-[#1B3722]">{entry.w.title}</span>
-                  </span>
-                  <span className="mt-0.5 block text-xs text-[#1B3722]/60">{entry.w.subtitle} · {new Date(entry.w.createdAt).toLocaleDateString()}</span>
-                </button>
-                <div className="flex shrink-0 items-center gap-1">
-                  <GlassButton onClick={() => toggleFavorite(entry.w.id)} aria-label="Favorite" className="size-8">
-                    <Star className={`size-4 ${entry.w.favorite ? "fill-amber-400 text-amber-400" : ""}`} />
-                  </GlassButton>
-                  <GlassButton onClick={() => removeWorksheet(entry.w.id)} aria-label="Delete" className="size-8">
-                    <Trash2 className="size-4" />
-                  </GlassButton>
-                </div>
+          {sortedWorksheets.map((w) => (
+            <div key={w.id} className={`${lightCard} flex items-center justify-between gap-3 p-4`}>
+              <button onClick={() => setViewing(w)} className="min-w-0 flex-1 text-left">
+                <span className="text-[11px] font-semibold tracking-wide text-[#2E5A35] uppercase">Worksheet</span>
+                <span className="flex items-center gap-2">
+                  {w.favorite && <Star className="size-3.5 fill-amber-400 text-amber-400" />}
+                  <span className="truncate font-bold text-[#1B3722]">{w.title}</span>
+                </span>
+                <span className="mt-0.5 block text-xs text-[#1B3722]/60">{w.subtitle} · {new Date(w.createdAt).toLocaleDateString()}</span>
+              </button>
+              <div className="flex shrink-0 items-center gap-1">
+                <GlassButton onClick={() => toggleFavorite(w.id)} aria-label="Favorite" className="size-8">
+                  <Star className={`size-4 ${w.favorite ? "fill-amber-400 text-amber-400" : ""}`} />
+                </GlassButton>
+                <GlassButton onClick={() => removeWorksheet(w.id)} aria-label="Delete" className="size-8">
+                  <Trash2 className="size-4" />
+                </GlassButton>
               </div>
-            ) : (
-              <div key={entry.m.id} className={`${lightCard} p-4`}>
-                <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-semibold tracking-wide text-[#2E5A35] uppercase">Learning moment</span>
-                  <GlassButton onClick={() => removeMoment(entry.m.id)} aria-label="Delete" className="size-7">
-                    <X className="size-4" />
-                  </GlassButton>
-                </div>
-                <p className="mt-1 text-[15px] leading-relaxed text-[#1B3722]">{entry.m.text}</p>
-                {entry.m.photo && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={entry.m.photo} alt="" className="mt-2 max-h-64 rounded-lg object-cover" />
-                )}
-                <p className="mt-2 text-xs text-[#1B3722]/50">{new Date(entry.m.createdAt).toLocaleString()}</p>
-              </div>
-            ),
-          )}
+            </div>
+          ))}
         </div>
       )}
 

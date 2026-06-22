@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, Check, Globe, Plus, Search, Sparkles, Star, Trash2, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Globe, Plus, Search, Sprout, Star, Trash2, Users, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
 import { Typewriter } from "./_components/Typewriter";
@@ -54,20 +54,19 @@ export default function LibraryHome() {
   const tabs: { key: Tab; label: string; count: number }[] = [
     { key: "templates", label: "Templates", count: templates.length },
     { key: "mine", label: "My worksheets", count: mine.length },
-    { key: "community", label: "Community", count: creations.length },
   ];
 
   return (
     <div>
-      <div className="mb-6 flex items-center gap-4">
-        <span className="bg-sprout-cream/95 grid size-16 shrink-0 place-items-center rounded-2xl shadow-md">
-          <SproutMascotIcon className="h-11 w-11" />
+      <div className="mb-8 flex items-center gap-4 sm:gap-5">
+        <span className="bg-sprout-cream/95 grid size-20 shrink-0 place-items-center rounded-3xl shadow-md sm:size-24">
+          <SproutMascotIcon className="h-14 w-14 sm:h-16 sm:w-16" />
         </span>
         <div>
-          <h1 className="text-sprout-cream text-3xl font-bold tracking-[-0.02em]">
+          <h1 className="text-sprout-cream text-5xl font-bold tracking-[-0.02em] sm:text-6xl">
             We were born to <Typewriter words={BORN_TO} className="text-sprout-lime" />
           </h1>
-          <p className="text-sprout-cream/70 mt-1">Pick a worksheet, tell Sprout about your kid, and print it in a minute.</p>
+          <p className="text-sprout-cream/70 mt-2">Pick a worksheet, tell Sprout about your kid, and print it in a minute.</p>
           <Link href="/resources/privacy" className="text-sprout-cream/55 hover:text-sprout-cream mt-1.5 inline-flex items-center gap-1 text-xs font-medium underline-offset-2 hover:underline">
             Your data stays yours. See how.
           </Link>
@@ -75,9 +74,14 @@ export default function LibraryHome() {
       </div>
 
       {ready && (
-        <div className="mb-7 grid items-stretch gap-5 lg:grid-cols-2">
+        <div className="mb-8 grid items-stretch gap-4 md:grid-cols-3">
           <KidsManager kids={kids} account={account} onAdd={addChild} />
           <BuildYourOwnCard />
+          <CommunityCard
+            count={creations.length}
+            active={tab === "community"}
+            onOpen={() => setTab(tab === "community" ? "templates" : "community")}
+          />
         </div>
       )}
 
@@ -216,25 +220,47 @@ export default function LibraryHome() {
 
 // Equal-billing sibling to the Profiles card: the freeform "I know what I want"
 // path into the same builder, and the only path whose sheets can be published.
+// Compact (half its old footprint) so all three top cards read as one row.
 function BuildYourOwnCard() {
   return (
     <Link href="/resources/custom" className="group block h-full">
       <div className={`${lightCard} flex h-full flex-col p-5 transition group-hover:-translate-y-0.5`}>
         <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Build your own</h2>
-        <div className="mt-4 flex flex-1 flex-col items-start justify-center">
-          <span className="grid size-14 place-items-center rounded-2xl bg-[#2E5A35] text-white shadow-md">
-            <Sparkles className="size-7" />
-          </span>
-          <h3 className="mt-4 text-xl font-bold text-[#1B3722]">Start from scratch</h3>
-          <p className="mt-1 max-w-sm text-sm leading-relaxed text-[#1B3722]/70">
-            Describe any worksheet in your own words and Sprout builds it. Sheets you make here are the ones you can share to the community.
-          </p>
-        </div>
-        <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#2E5A35]">
+        <span className="mt-4 grid size-12 place-items-center rounded-2xl bg-[#2E5A35] text-white shadow-md">
+          <Sprout className="size-6" />
+        </span>
+        <h3 className="mt-3 text-lg font-bold text-[#1B3722]">Start from scratch</h3>
+        <p className="mt-1 text-sm leading-relaxed text-[#1B3722]/70">
+          Describe any worksheet and Sprout builds it. Yours to share with the community.
+        </p>
+        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-[#2E5A35]">
           Build one <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
         </span>
       </div>
     </Link>
+  );
+}
+
+// Third member of the top row: the doorway into community-made sheets. Promoted
+// up here as a peer to Profiles + Build your own instead of buried in the tab
+// pills. Clicking it flips the library below to the community view (and back).
+function CommunityCard({ count, active, onOpen }: { count: number; active: boolean; onOpen: () => void }) {
+  return (
+    <button onClick={onOpen} className="group h-full w-full text-left">
+      <div className={`${lightCard} flex h-full flex-col p-5 transition group-hover:-translate-y-0.5 ${active ? "ring-2 ring-[#2E5A35]/45" : ""}`}>
+        <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Community</h2>
+        <span className="mt-4 grid size-12 place-items-center rounded-2xl bg-[#2E5A35] text-white shadow-md">
+          <Users className="size-6" />
+        </span>
+        <h3 className="mt-3 text-lg font-bold text-[#1B3722]">Community library</h3>
+        <p className="mt-1 text-sm leading-relaxed text-[#1B3722]/70">
+          Worksheets built and shared by Sprout parents. {count} to explore.
+        </p>
+        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-[#2E5A35]">
+          Browse <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+        </span>
+      </div>
+    </button>
   );
 }
 
@@ -338,15 +364,15 @@ function KidsManager({
   return (
     <div className={`${lightCard} h-full p-5`}>
       <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Profiles</h2>
-      <div className="mt-4 flex flex-wrap items-start gap-5">
+      <div className="mt-4 flex flex-wrap items-start gap-4">
         {/* main account */}
         {account && (
-          <Link href={`/resources/creator/${account.handle}`} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-20 flex-col items-center gap-2 text-center duration-300">
+          <Link href={`/resources/creator/${account.handle}`} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-16 flex-col items-center gap-2 text-center duration-300">
             {account.photo ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={account.photo} alt="" className={`size-16 rounded-full object-cover ${tileRing}`} />
+              <img src={account.photo} alt="" className={`size-14 rounded-full object-cover ${tileRing}`} />
             ) : (
-              <span className={`grid size-16 place-items-center rounded-full bg-[#2E5A35] text-xl font-bold text-white ${tileRing}`}>{capName(account.displayName).charAt(0)}</span>
+              <span className={`grid size-14 place-items-center rounded-full bg-[#2E5A35] text-xl font-bold text-white ${tileRing}`}>{capName(account.displayName).charAt(0)}</span>
             )}
             <span className={tileLabel}>{capName(account.displayName)}</span>
             <span className={tileSub}>account</span>
@@ -356,8 +382,8 @@ function KidsManager({
         {kids.map((k, i) => {
           const cc = colorClasses(k.color);
           return (
-            <Link key={k.id} href={`/resources/child/${k.id}`} style={{ animationDelay: `${(i + 1) * 60}ms` }} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-20 flex-col items-center gap-2 text-center duration-300">
-              <span className={`grid size-16 place-items-center rounded-full text-xl font-bold ${cc.bg} ${tileRing}`}>{capName(k.name).charAt(0)}</span>
+            <Link key={k.id} href={`/resources/child/${k.id}`} style={{ animationDelay: `${(i + 1) * 60}ms` }} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-16 flex-col items-center gap-2 text-center duration-300">
+              <span className={`grid size-14 place-items-center rounded-full text-xl font-bold ${cc.bg} ${tileRing}`}>{capName(k.name).charAt(0)}</span>
               <span className={tileLabel}>{capName(k.name)}</span>
               <span className={tileSub}>age {k.age}</span>
             </Link>
@@ -365,8 +391,8 @@ function KidsManager({
         })}
         {/* add a child */}
         {!adding ? (
-          <button onClick={() => setAdding(true)} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-20 flex-col items-center gap-2 text-center duration-300">
-            <span className="grid size-16 place-items-center rounded-full border-2 border-dashed border-[#2E5A35]/30 text-[#2E5A35] transition group-hover:border-[#2E5A35]/60 group-hover:bg-[#2E5A35]/5">
+          <button onClick={() => setAdding(true)} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-16 flex-col items-center gap-2 text-center duration-300">
+            <span className="grid size-14 place-items-center rounded-full border-2 border-dashed border-[#2E5A35]/30 text-[#2E5A35] transition group-hover:border-[#2E5A35]/60 group-hover:bg-[#2E5A35]/5">
               <Plus className="size-6" />
             </span>
             <span className="text-xs font-semibold text-[#2E5A35]">Add child</span>

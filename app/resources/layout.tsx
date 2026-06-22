@@ -52,9 +52,6 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
               <GlassLink href="/resources/privacy" className="hidden h-9 gap-1 px-3 text-xs sm:inline-flex">
                 <ShieldCheck className="size-4" /> Privacy
               </GlassLink>
-              <GlassLink href="/" className="hidden h-9 px-4 text-xs md:inline-flex">
-                Back to site
-              </GlassLink>
             </div>
           </div>
         </header>
