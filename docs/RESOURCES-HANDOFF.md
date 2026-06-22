@@ -2,7 +2,9 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 It is the single source of truth for current state, locked decisions, the open
-risk, and the next job. Last updated end of the session that shipped `3deae6c`.
+risk, and the next job. Last updated 2026-06-22: the mul/div fallback cap fix
+(`931a24f`) is committed on branch `claude/silly-rubin-e31ec9` but NOT yet
+merged to main, so it is NOT on prod yet. Everything else is on `main` / prod.
 
 Resources is the web worksheet-maker at route `/resources` in this landing repo
 (a SEPARATE product from the Sprout Journal mobile app). Full spec: `docs/RESOURCES.md`.
@@ -45,6 +47,21 @@ Newest last. Every commit is deployed to prod.
 - `3deae6c` — multiplication word problems are multiplication-only (fixed the
   subtraction leak); money uses dollars-and-cents for age 9+, whole-dollar for young.
 
+**This session (2026-06-22) — on branch `claude/silly-rubin-e31ec9`, NOT yet on main/prod:**
+
+- `931a24f` — age-aware operand ceiling for the deterministic mul/div fallback.
+  The fallback hard-capped multiplication AND division at the 12x times tables for
+  EVERY age (`Math.min(12, fmax)` in `mathBlock`), so when Venice was unavailable a
+  13-year-old silently got `4 x 6`. New `factorCeiling(age, diff)` in
+  `lib/resources/generate.ts`: ages 3-9 keep the existing friendly times-table ramp
+  unchanged; age 10+ climbs to genuine multi-digit, tracking `ageBenchmark`. Chat
+  harder/easier still nudges it; divisor stays 1-2 digit while the quotient scales
+  (multi-digit dividend, like Venice). This is the most likely root cause of the
+  local-vs-prod difficulty gap (section 5). Verified by a pure-function test AND a
+  real-module e2e run of `templateWorksheet` (the exact fallback path):
+  age 13 -> `71 x 90`, `1023 / 11`; age 7 -> `8 x 6`, `28 / 7`. All four of Chase's
+  quality gates pass. **To reach prod it must be merged to main.**
+
 ## 2. Verified working
 
 - AI generation is LIVE on prod (Venice, `source: ai` confirmed via the API).
@@ -63,6 +80,11 @@ Newest last. Every commit is deployed to prod.
   selected and the stepper at 13, the outgoing request carried age 13 and the
   rendered sheet was multi-digit. BUT Chase still needs to confirm this on the
   LIVE prod deploy before it is considered done. Do not assume it is closed.
+- **The mul/div fallback cap fix (`931a24f`) is verified locally but not on prod**
+  (and not even merged to main yet). It only changes the fallback, which prod uses
+  when Venice is down/slow, so a normal healthy-Venice click on prod will look the
+  same; to actually exercise it Chase would need a moment where prod falls back.
+  Treat as OPEN until merged to main AND confirmed.
 
 ## 4. Locked product decisions (do not relitigate)
 
@@ -92,10 +114,20 @@ Newest last. Every commit is deployed to prod.
 
 ## 5. KNOWN OPEN RISK — local vs prod gap (most important thread)
 
+**Likely root cause FOUND this session (2026-06-22).** For the *difficulty* gap
+specifically, it was not a cache/env gap at all: the deterministic FALLBACK
+capped mul/div at the 12x times tables for every age. Prod runs Venice (correct,
+multi-digit) until Venice is slow or rate-limited, then it silently falls back to
+the capped engine. Same code, different Venice availability = "fine in dev, broken
+on prod." Fixed in `931a24f` (see section 1). NOTE: while probing I rate-limited
+the Venice key with ~40 rapid calls and prod started returning `source: template`;
+it recovered on its own. So sustained traffic CAN push prod onto the fallback.
+
+For any OTHER "fixed in dev, broken on prod" bug, still run the checklist:
+
 CC's fixes have verified in DEV but Chase has REPEATEDLY hit them still broken on
 PROD. There may be an environment/caching gap between local and production. If a
-"fixed" bug (especially the age bug) survives on prod, investigate the gap BEFORE
-assuming the code is wrong:
+"fixed" bug survives on prod, investigate the gap BEFORE assuming the code is wrong:
 - Confirm the prod deployment's commit sha matches `HEAD` and its `target` is
   `production` and state is `READY` (Vercel MCP `list_deployments`).
 - Confirm env vars are present on the production deployment (they snapshot per
@@ -106,6 +138,29 @@ assuming the code is wrong:
 
 ## 6. NEXT PRIORITY — first build of the next session
 
+**Still the preset masking (below). This session it was STARTED, then parked:**
+Chase reprioritized to the fallback cap fix (section 1) after probing surfaced it.
+Before parking, candidate phrasings were tested against LIVE Venice (prod endpoint,
+multiplication age 13, 3 reps each). Key findings — DO NOT re-derive:
+
+- **Output genuinely changes.** "easier" -> max product ~70; baseline ~8.4k; a
+  concrete "harder" -> ~42k. Confirmed not-just-the-prompt.
+- **Concrete, template-specific phrasing WINS.** "make it harder; 3-digit by
+  2-digit like 426 x 38, never times tables" reliably produced the hardest output.
+- **A generic benchmark RECITAL BACKFIRED.** Pasting "Grade 6-8: fractions,
+  decimals, percentages..." came back EASIER than baseline (it diluted the
+  multiplication signal). So the lever is a concrete per-template escalation WITH an
+  example, NOT a longer generic prompt. The benchmark is already in `buildMessages`
+  (`benchNote`); do not re-recite it in the ask.
+- **Design to implement:** each chip sends `"Make this {harder/easier} for a
+  {age}-year-old. For this worksheet that means {concrete per-template hint + an
+  example}..."`, ONE difficulty keyword per send (so cumulative compounding stays
+  intact), chip still shows one word. Will need a per-template hint map (likely
+  `harder`/`easier` fields on `TEMPLATE_INTENT`) + a `presetPrompt()` composer +
+  a `display?: string` on `ChatMessage` so the bubble shows the word, not the
+  hidden prompt. NOT YET BUILT.
+
+**The original spec —**
 **Mask the chat presets behind fuller prompts to Venice.** Right now each preset
 chip just does `setInput(k.word)` — it drops the literal word ("harder") into the
 chat input. Rework so each preset sends a FULLER, behind-the-scenes instruction to
