@@ -2,24 +2,24 @@
 
 import { useParams } from "next/navigation";
 import { useState } from "react";
-import { ArrowLeft, Heart, X } from "lucide-react";
+import { ArrowLeft, X } from "lucide-react";
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
-import { earnedBadges } from "@/lib/resources/badges";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { useResources } from "@/lib/resources/store";
+import { cardTint } from "@/lib/resources/util";
 import { GlassButton, GlassLink } from "@/components/ui/glass";
 import type { Worksheet } from "@/lib/resources/types";
 
 const lightCard =
   "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
 
-type Creation = { id: string; worksheet: Worksheet; creatorName: string };
+type Creation = { id: string; worksheet: Worksheet; creatorName: string; createdAt: number };
 
 export default function CreatorProfile() {
   const params = useParams();
   const raw = params?.handle;
   const handle = Array.isArray(raw) ? raw[0] : (raw ?? "");
-  const { ready, account, worksheets, kids, moments, likeCount, toggleLike, likedByMe } = useResources();
+  const { ready, account, worksheets } = useResources();
   const [viewing, setViewing] = useState<Worksheet | null>(null);
 
   if (!ready) return <div className="text-sprout-cream/60 py-20 text-center text-sm">Loading…</div>;
@@ -31,19 +31,10 @@ export default function CreatorProfile() {
 
   const creations: Creation[] = [
     ...worksheets
-      .filter((w) => w.published && (isMe || w.creatorHandle === handle))
-      .map((w) => ({ id: w.id, worksheet: w as Worksheet, creatorName: w.creatorName || displayName })),
-    ...COMMUNITY_SAMPLES.filter((s) => s.creatorHandle === handle).map((s) => ({ id: s.id, worksheet: s.worksheet, creatorName: s.creatorName })),
-  ].sort((a, b) => likeCount(b.id) - likeCount(a.id));
-
-  const totalLikes = creations.reduce((s, c) => s + likeCount(c.id), 0);
-  const badges = earnedBadges({
-    published: creations.length,
-    totalLikes,
-    worksheetsMade: isMe ? worksheets.length : creations.length,
-    kids: isMe ? kids.length : 0,
-    moments: isMe ? moments.length : 0,
-  });
+      .filter((w) => w.published && w.meta.templateId === "custom" && (isMe || w.creatorHandle === handle))
+      .map((w) => ({ id: w.id, worksheet: w as Worksheet, creatorName: w.creatorName || displayName, createdAt: w.createdAt })),
+    ...COMMUNITY_SAMPLES.filter((s) => s.creatorHandle === handle).map((s) => ({ id: s.id, worksheet: s.worksheet, creatorName: s.creatorName, createdAt: 0 })),
+  ].sort((a, b) => b.createdAt - a.createdAt);
 
   return (
     <div>
@@ -64,29 +55,9 @@ export default function CreatorProfile() {
             <p className="text-sm text-[#1B3722]/55">@{handle}{isMe ? " · this is you" : ""}</p>
           </div>
         </div>
-        <div className="mt-5 grid grid-cols-3 gap-3">
-          {[
-            { n: creations.length, l: creations.length === 1 ? "creation" : "creations" },
-            { n: totalLikes, l: "likes" },
-            { n: badges.length, l: "badges" },
-          ].map((s, i) => (
-            <div key={i} className="rounded-xl bg-[#2E5A35]/8 px-2 py-3 text-center">
-              <div className="text-xl font-bold text-[#2E5A35]">{s.n}</div>
-              <div className="text-[11px] text-[#1B3722]/60">{s.l}</div>
-            </div>
-          ))}
-        </div>
-        {badges.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-2">
-            {badges.map((b) => (
-              <span key={b.id} title={b.desc} className="inline-flex items-center gap-1 rounded-full bg-[#2E5A35]/10 px-2.5 py-1 text-xs font-semibold text-[#2E5A35]">
-                <span>{b.emoji}</span> {b.label}
-              </span>
-            ))}
-          </div>
-        )}
+        <p className="mt-4 text-sm font-medium text-[#2E5A35]">{creations.length} published {creations.length === 1 ? "worksheet" : "worksheets"}</p>
         {isMe && creations.length === 0 && (
-          <p className="mt-4 text-sm text-[#1B3722]/60">You have not published anything yet. Make a worksheet, save it, then hit Publish to share it here.</p>
+          <p className="mt-2 text-sm text-[#1B3722]/60">You have not published anything yet. Build a worksheet from scratch, then hit Publish to share it here.</p>
         )}
       </div>
 
@@ -97,22 +68,11 @@ export default function CreatorProfile() {
         </div>
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {creations.map((c) => (
-            <div key={c.id} className={`${lightCard} flex flex-col p-5`}>
-              <button onClick={() => setViewing(c.worksheet)} className="min-w-0 flex-1 text-left">
-                <h3 className="truncate font-bold text-[#1B3722]">{c.worksheet.title}</h3>
-                <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
-              </button>
-              <div className="mt-3 flex items-center justify-end border-t border-black/5 pt-3">
-                <GlassButton
-                  onClick={() => toggleLike(c.id)}
-                  aria-label="Like"
-                  className={`h-8 gap-1 px-2.5 text-sm ${likedByMe(c.id) ? "text-rose-600 ring-2 ring-rose-300" : "text-[#1B3722]/70"}`}
-                >
-                  <Heart className={`size-4 ${likedByMe(c.id) ? "fill-rose-500 text-rose-500" : ""}`} /> {likeCount(c.id)}
-                </GlassButton>
-              </div>
-            </div>
+          {creations.map((c, i) => (
+            <button key={c.id} onClick={() => setViewing(c.worksheet)} className={`${cardTint(i)} block p-5 text-left transition hover:-translate-y-0.5`}>
+              <h3 className="truncate font-bold text-[#1B3722]">{c.worksheet.title}</h3>
+              <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
+            </button>
           ))}
         </div>
       )}

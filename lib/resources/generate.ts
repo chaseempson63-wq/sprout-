@@ -822,6 +822,23 @@ export function templateWorksheet(template: WorksheetTemplate, age: number, inst
   };
 }
 
+// Freeform "Build your own" has no deterministic generator (it can be any topic),
+// so when Venice is unavailable we return an honest, friendly retry sheet rather
+// than bogus filler. The builder renders it like any worksheet.
+export function customFallback(age: number, childName?: string): Worksheet {
+  return {
+    title: "Let's try that again",
+    subtitle: "",
+    blocks: [
+      {
+        kind: "instructions",
+        prompt: "I could not build that one just now. Describe what you want in a bit more detail (the topic, how many questions, and any theme) and send it again.",
+      },
+    ],
+    meta: { templateId: "custom", templateLabel: "Build Your Own", age, childName: capName(childName) || undefined },
+  };
+}
+
 // Drop duplicate problems, treating commutative pairs (a+b/b+a, a×b/b×a) as the
 // same so a sheet never shows both. Runs on every worksheet, AI or fallback.
 export function dedupeWorksheet(ws: Worksheet): Worksheet {
@@ -881,6 +898,19 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
         ? `DIFFICULTY: the parent has asked to make it easier. Make this clearly gentler than a standard age-${age} sheet: smaller numbers (up to about ${target}) and fewer steps. `
         : "";
   const benchNote = `An average ${age}-year-old works at this level in school: ${ageBenchmark(age)}. Match that grade level and never go below it. `;
+  // Freeform "Build your own": the parent's own description is the spec. Reuse the
+  // same SYSTEM rules + pipeline, but let the model pick the format and topic.
+  if (template.id === "custom") {
+    const customUser =
+      `The parent will describe the worksheet they want, newest message last: ${askText}. ` +
+      `Build EXACTLY what they describe as a printable worksheet for a ${age}-year-old. Pick whatever block types fit the request (math, column-math, short-answer, passage, fill-blank, word-bank, matching, multiple-choice, missing-numbers, count, trace, handwriting, draw). ` +
+      `${who2} ${benchNote}${diffNote}` +
+      `Give it a clear, specific title that names the topic (never the words "Build Your Own"). Make it a FULL A4 page (3 to 5 blocks). Address the child directly. Return ONLY the worksheet JSON.`;
+    return [
+      { role: "system", content: SYSTEM },
+      { role: "user", content: customUser },
+    ];
+  }
   const user =
     `${intentPreamble(template.id, age)} ` +
     `This worksheet type is "${template.title}" (${template.brief}). Produce ONLY ${template.title} content. ` +
@@ -933,8 +963,19 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
   const name = capName(childName);
   const subtitleRaw = typeof parsed.subtitle === "string" ? noDash(parsed.subtitle) : "";
   const subtitle = subtitleRaw.replace(/\bages?\s*\d+\s*(-\s*\d+)?\b/gi, "").replace(/^[\s·,-]+|[\s·,-]+$/g, "");
+  // Freeform sheets keep the model's own topic title; templates use the named pattern.
+  const parsedTitle = (typeof parsed.title === "string" ? noDash(parsed.title) : "")
+    .replace(/\bages?\s*\d+\s*(-\s*\d+)?\b/gi, "")
+    .replace(/^[\s·,-]+|[\s·,-]+$/g, "")
+    .trim();
+  const title =
+    template.id === "custom"
+      ? parsedTitle || "Custom Worksheet"
+      : name
+        ? `${name}'s ${template.title}`
+        : template.title;
   return {
-    title: name ? `${name}'s ${template.title}` : template.title,
+    title,
     subtitle,
     blocks,
     meta: { templateId: template.id, templateLabel: template.title, age, childName: name || undefined },

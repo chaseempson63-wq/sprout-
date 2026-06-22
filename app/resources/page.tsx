@@ -3,14 +3,14 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { ArrowLeft, ArrowRight, Check, Globe, Heart, Plus, Search, Star, Trash2, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Globe, Plus, Search, Sparkles, Star, Trash2, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
 import { Typewriter } from "./_components/Typewriter";
 import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { colorClasses, useResources } from "@/lib/resources/store";
-import { capName } from "@/lib/resources/util";
+import { capName, cardTint } from "@/lib/resources/util";
 import { GlassButton, GlassPanel } from "@/components/ui/glass";
 import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
@@ -21,14 +21,14 @@ const lightCard =
 const BORN_TO = ["create", "learn", "grow", "wonder", "explore", "imagine", "discover", "make", "build", "question"];
 
 type Tab = "templates" | "mine" | "community";
-type Creation = { id: string; worksheet: Worksheet; creatorName: string; creatorHandle: string };
+type Creation = { id: string; worksheet: Worksheet; creatorName: string; creatorHandle: string; createdAt: number };
 
 function match(q: string, text: string): boolean {
   return q.trim() === "" || text.toLowerCase().includes(q.trim().toLowerCase());
 }
 
 export default function LibraryHome() {
-  const { ready, kids, worksheets, account, addChild, toggleFavorite, togglePublish, removeWorksheet, toggleLike, likeCount, likedByMe } = useResources();
+  const { ready, kids, worksheets, account, addChild, toggleFavorite, togglePublish, removeWorksheet } = useResources();
   const [tab, setTab] = useState<Tab>("templates");
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState<string>("all");
@@ -39,16 +39,17 @@ export default function LibraryHome() {
   const templates = TEMPLATES.filter((t) => inTopic(t.id) && match(query, `${t.title} ${t.blurb}`));
   const mine = (ready ? worksheets : []).filter((w) => inTopic(w.meta.templateId) && match(query, `${w.title} ${w.subtitle}`));
 
-  // Community creations = everyone's published worksheets + the seed placeholders.
+  // Community = published BUILD-YOUR-OWN sheets (templateId "custom" only — a
+  // template, edited or not, can never land here) + the seed placeholders.
   const creations: Creation[] = [
     ...(ready ? worksheets : [])
-      .filter((w) => w.published)
-      .map((w) => ({ id: w.id, worksheet: w as Worksheet, creatorName: w.creatorName || account?.displayName || "You", creatorHandle: w.creatorHandle || account?.handle || "me" })),
-    ...COMMUNITY_SAMPLES.map((s) => ({ id: s.id, worksheet: s.worksheet, creatorName: s.creatorName, creatorHandle: s.creatorHandle })),
+      .filter((w) => w.published && w.meta.templateId === "custom")
+      .map((w) => ({ id: w.id, worksheet: w as Worksheet, creatorName: w.creatorName || account?.displayName || "a Sprout parent", creatorHandle: w.creatorHandle || account?.handle || "", createdAt: w.createdAt })),
+    ...COMMUNITY_SAMPLES.map((s) => ({ id: s.id, worksheet: s.worksheet, creatorName: s.creatorName, creatorHandle: s.creatorHandle, createdAt: 0 })),
   ];
   const communityInSel = creations
     .filter((c) => (communitySel ? topicForTemplate(c.worksheet.meta.templateId) === communitySel : true) && match(query, `${c.worksheet.title} ${c.worksheet.subtitle} ${c.creatorName}`))
-    .sort((a, b) => likeCount(b.id) - likeCount(a.id));
+    .sort((a, b) => b.createdAt - a.createdAt);
 
   const tabs: { key: Tab; label: string; count: number }[] = [
     { key: "templates", label: "Templates", count: templates.length },
@@ -73,7 +74,12 @@ export default function LibraryHome() {
         </div>
       </div>
 
-      {ready && <KidsManager kids={kids} account={account} onAdd={addChild} />}
+      {ready && (
+        <div className="mb-7 grid items-stretch gap-5 lg:grid-cols-2">
+          <KidsManager kids={kids} account={account} onAdd={addChild} />
+          <BuildYourOwnCard />
+        </div>
+      )}
 
       <GlassPanel radius="rounded-full" className="mb-3">
         <div className="flex items-center gap-2 px-4">
@@ -113,7 +119,7 @@ export default function LibraryHome() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {templates.map((t, i) => (
             <Link key={t.id} href={`/resources/${t.id}`} style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }} className="group animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500 transition hover:-translate-y-0.5">
-              <div className={`${lightCard} h-full p-5`}>
+              <div className={`${cardTint(i)} h-full p-5`}>
                 <div className="flex items-start justify-between">
                   <span className={`grid size-11 place-items-center rounded-xl text-2xl ${t.accent}`}>{t.emoji}</span>
                 </div>
@@ -139,8 +145,8 @@ export default function LibraryHome() {
             </div>
           ) : (
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {mine.map((w) => (
-                <SavedCard key={w.id} ws={w} onOpen={() => setViewing({ ws: w, savedId: w.id })} onFavorite={() => toggleFavorite(w.id)} onDelete={() => removeWorksheet(w.id)} />
+              {mine.map((w, i) => (
+                <SavedCard key={w.id} i={i} ws={w} onOpen={() => setViewing({ ws: w, savedId: w.id })} onFavorite={() => toggleFavorite(w.id)} onDelete={() => removeWorksheet(w.id)} />
               ))}
             </div>
           )}
@@ -150,14 +156,14 @@ export default function LibraryHome() {
       {tab === "community" && (
         <div>
           <p className="text-sprout-cream/65 mb-4 flex items-center gap-2 text-sm">
-            <Globe className="size-4" /> Worksheets shared by the Sprout community. Pick a topic to explore, like the best, and watch them climb.
+            <Globe className="size-4" /> Worksheets built and shared by the Sprout community. Tap a maker's name to see everything they've made.
           </p>
           {communitySel === null ? (
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
-              {TOPICS.map((t) => {
+              {TOPICS.map((t, i) => {
                 const count = creations.filter((c) => topicForTemplate(c.worksheet.meta.templateId) === t.key).length;
                 return (
-                  <button key={t.key} onClick={() => setCommunitySel(t.key)} className={`${lightCard} block p-6 text-left transition hover:-translate-y-0.5`}>
+                  <button key={t.key} onClick={() => setCommunitySel(t.key)} className={`${cardTint(i)} block p-6 text-left transition hover:-translate-y-0.5`}>
                     <div className="text-4xl">{t.emoji}</div>
                     <h3 className="mt-3 text-lg font-bold text-[#1B3722]">{t.label}</h3>
                     <p className="mt-1 text-sm text-[#1B3722]/60">{count} {count === 1 ? "worksheet" : "worksheets"}</p>
@@ -172,27 +178,24 @@ export default function LibraryHome() {
               </GlassButton>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {communityInSel.map((c, i) => (
-                  <div key={c.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${lightCard} animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-5 duration-500`}>
+                  <div key={c.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${cardTint(i)} animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-5 duration-500`}>
                     <button onClick={() => setViewing({ ws: c.worksheet })} className="min-w-0 flex-1 text-left">
-                      <span className="text-[11px] font-semibold tracking-wide text-[#2E5A35]/70 uppercase">#{i + 1}</span>
                       <h3 className="truncate font-bold text-[#1B3722]">{c.worksheet.title}</h3>
                       <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
                     </button>
-                    <div className="mt-3 flex items-center justify-between border-t border-black/5 pt-3">
-                      <Link href={`/resources/creator/${c.creatorHandle}`} className="truncate text-xs font-medium text-[#2E5A35] hover:underline">
-                        by {c.creatorName}
-                      </Link>
-                      <GlassButton
-                        onClick={() => toggleLike(c.id)}
-                        aria-label="Like"
-                        className={`h-8 gap-1 px-2.5 text-sm ${likedByMe(c.id) ? "text-rose-600 ring-2 ring-rose-300" : "text-[#1B3722]/70"}`}
-                      >
-                        <Heart className={`size-4 ${likedByMe(c.id) ? "fill-rose-500 text-rose-500" : ""}`} /> {likeCount(c.id)}
-                      </GlassButton>
-                    </div>
+                    <p className="mt-3 truncate border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
+                      Made with Sprout by{" "}
+                      {c.creatorHandle ? (
+                        <Link href={`/resources/creator/${c.creatorHandle}`} className="font-semibold text-[#2E5A35] hover:underline">
+                          {c.creatorName}
+                        </Link>
+                      ) : (
+                        <span className="font-semibold text-[#2E5A35]">{c.creatorName}</span>
+                      )}
+                    </p>
                   </div>
                 ))}
-                {communityInSel.length === 0 && <p className="text-sprout-cream/60 text-sm">No worksheets here yet. Publish one from your saved worksheets.</p>}
+                {communityInSel.length === 0 && <p className="text-sprout-cream/60 text-sm">No worksheets here yet. Build one from scratch and publish it.</p>}
               </div>
             </div>
           )}
@@ -203,11 +206,35 @@ export default function LibraryHome() {
         <Viewer
           entry={viewing}
           onClose={() => setViewing(null)}
-          onPublish={viewing.savedId ? () => togglePublish(viewing.savedId!) : undefined}
+          onPublish={viewing.savedId && worksheets.find((w) => w.id === viewing.savedId)?.meta.templateId === "custom" ? () => togglePublish(viewing.savedId!) : undefined}
           published={viewing.savedId ? worksheets.find((w) => w.id === viewing.savedId)?.published : undefined}
         />
       )}
     </div>
+  );
+}
+
+// Equal-billing sibling to the Profiles card: the freeform "I know what I want"
+// path into the same builder, and the only path whose sheets can be published.
+function BuildYourOwnCard() {
+  return (
+    <Link href="/resources/custom" className="group block h-full">
+      <div className={`${lightCard} flex h-full flex-col p-5 transition group-hover:-translate-y-0.5`}>
+        <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Build your own</h2>
+        <div className="mt-4 flex flex-1 flex-col items-start justify-center">
+          <span className="grid size-14 place-items-center rounded-2xl bg-[#2E5A35] text-white shadow-md">
+            <Sparkles className="size-7" />
+          </span>
+          <h3 className="mt-4 text-xl font-bold text-[#1B3722]">Start from scratch</h3>
+          <p className="mt-1 max-w-sm text-sm leading-relaxed text-[#1B3722]/70">
+            Describe any worksheet in your own words and Sprout builds it. Sheets you make here are the ones you can share to the community.
+          </p>
+        </div>
+        <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#2E5A35]">
+          Build one <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+        </span>
+      </div>
+    </Link>
   );
 }
 
@@ -223,9 +250,9 @@ function TopicChip({ active, onClick, label, emoji }: { active: boolean; onClick
   );
 }
 
-function SavedCard({ ws, onOpen, onFavorite, onDelete }: { ws: SavedWorksheet; onOpen: () => void; onFavorite: () => void; onDelete: () => void }) {
+function SavedCard({ ws, i, onOpen, onFavorite, onDelete }: { ws: SavedWorksheet; i: number; onOpen: () => void; onFavorite: () => void; onDelete: () => void }) {
   return (
-    <div className={`${lightCard} flex items-center justify-between gap-3 p-4`}>
+    <div className={`${cardTint(i)} flex items-center justify-between gap-3 p-4`}>
       <button onClick={onOpen} className="min-w-0 flex-1 text-left">
         <span className="flex items-center gap-2">
           {ws.favorite && <Star className="size-3.5 fill-amber-400 text-amber-400" />}
@@ -309,7 +336,7 @@ function KidsManager({
   }
 
   return (
-    <div className={`${lightCard} mb-7 p-5`}>
+    <div className={`${lightCard} h-full p-5`}>
       <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Profiles</h2>
       <div className="mt-4 flex flex-wrap items-start gap-5">
         {/* main account */}

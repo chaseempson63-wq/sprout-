@@ -348,7 +348,25 @@ export const TEMPLATES: WorksheetTemplate[] = [
   },
 ];
 
+// The freeform "Build your own" path. A pseudo-template, deliberately NOT in
+// TEMPLATES (so it never shows as a library card). getTemplate serves it so
+// /resources/custom reuses the exact builder — same chat, render, edit presets,
+// save. Only the entry point differs. Generation reuses the Venice pipeline in
+// a freeform branch; sheets made this way are the only ones publishable.
+export const CUSTOM_TEMPLATE: WorksheetTemplate = {
+  id: "custom",
+  title: "Build Your Own",
+  blurb: "Describe any worksheet and Sprout builds it from scratch.",
+  emoji: "✨",
+  ageMin: 3,
+  ageMax: 13,
+  accent: "bg-lime-100 text-lime-700",
+  plan: ["instructions", "short-answer"],
+  brief: "Whatever the parent describes, built as a real printable worksheet.",
+};
+
 export function getTemplate(id: string): WorksheetTemplate | undefined {
+  if (id === CUSTOM_TEMPLATE.id) return CUSTOM_TEMPLATE;
   return TEMPLATES.find((t) => t.id === id);
 }
 

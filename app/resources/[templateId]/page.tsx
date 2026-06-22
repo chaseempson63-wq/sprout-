@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
@@ -17,12 +17,17 @@ function summarize(w: Worksheet): string {
   return `${w.blocks.length} sections · ${items} items`;
 }
 
+// Shown first in the freeform builder so a blank input is never intimidating.
+const HOW_TO_PROMPT =
+  "Tell me what you want and I'll build it. The more you describe, the better it comes out. Try something like: \"a one-page worksheet on the water cycle for a 9-year-old, a short reading part then 5 questions\" or \"beginner addition with a dinosaur theme, 12 problems with answer boxes.\" Helpful to include: the topic, the age, how many questions, and any theme.";
+
 export default function Builder() {
   const params = useParams();
   const raw = params?.templateId;
   const templateId = Array.isArray(raw) ? raw[0] : (raw ?? "");
   const template = getTemplate(templateId);
-  const { kids, addChild, getChild, saveWorksheet } = useResources();
+  const isCustom = template?.id === "custom"; // freeform "Build your own" entry point
+  const { kids, addChild, getChild, saveWorksheet, togglePublish, account } = useResources();
 
   const [childId, setChildId] = useState("");
   const [age, setAge] = useState(() => (template ? Math.min(13, Math.max(3, Math.round((template.ageMin + template.ageMax) / 2))) : 7));
@@ -37,6 +42,7 @@ export default function Builder() {
   const [addingKid, setAddingKid] = useState(false);
   const [newName, setNewName] = useState("");
   const [newAge, setNewAge] = useState("7");
+  const [publishedIdx, setPublishedIdx] = useState<number | null>(null); // which variant was published (custom only)
   const didInit = useRef(false);
   const variantsRef = useRef<Worksheet[]>([]);
   const genSeq = useRef(0); // only the latest request's result is applied (kills the race)
@@ -97,7 +103,12 @@ export default function Builder() {
   useEffect(() => {
     if (didInit.current || !template) return;
     didInit.current = true;
-    void runGenerate([], age, "init", undefined);
+    if (template.id === "custom") {
+      // Freeform: don't auto-generate a blank sheet — teach how to prompt and wait.
+      setMessages([{ role: "assistant", content: HOW_TO_PROMPT }]);
+    } else {
+      void runGenerate([], age, "init", undefined);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -180,6 +191,19 @@ export default function Builder() {
     showToast("Saved to your worksheets");
   }
 
+  // Only build-your-own sheets are publish-eligible. Saves a copy and publishes it.
+  function publishCustom() {
+    if (!worksheet || !source || !isCustom) return;
+    if (!account) {
+      showToast("Add your name first — tap Create profile, top right");
+      return;
+    }
+    const saved = saveWorksheet(worksheet, source, childId || undefined);
+    togglePublish(saved.id);
+    setPublishedIdx(idx);
+    showToast("Published to the community");
+  }
+
   return (
     <div>
       {toast && (
@@ -214,6 +238,11 @@ export default function Builder() {
           <GlassButton onClick={save} disabled={!worksheet} className="h-10 px-4 text-sm">
             <Check className="size-4" /> Save
           </GlassButton>
+          {isCustom && (
+            <GlassButton onClick={publishCustom} disabled={!worksheet || publishedIdx === idx} className="h-10 px-4 text-sm">
+              <Globe className="size-4" /> {publishedIdx === idx ? "Published" : "Publish"}
+            </GlassButton>
+          )}
           <GlassButton onClick={() => window.print()} disabled={!worksheet} className="h-10 px-4 text-sm">
             <Download className="size-4" /> PDF
           </GlassButton>
@@ -273,13 +302,15 @@ export default function Builder() {
             )}
           </div>
 
-          <div className="no-print border-sprout-cream/15 flex flex-wrap gap-1.5 border-t px-3 pt-2">
-            {INPUT_VOCABULARY.edits.slice(0, 5).map((k) => (
-              <GlassButton key={k.word} onClick={() => sendPreset(k.word)} title={k.does} className="h-7 gap-1 px-3 text-[11px]">
-                {k.word}
-              </GlassButton>
-            ))}
-          </div>
+          {(!isCustom || variants.length > 0) && (
+            <div className="no-print border-sprout-cream/15 flex flex-wrap gap-1.5 border-t px-3 pt-2">
+              {INPUT_VOCABULARY.edits.slice(0, 5).map((k) => (
+                <GlassButton key={k.word} onClick={() => sendPreset(k.word)} title={k.does} className="h-7 gap-1 px-3 text-[11px]">
+                  {k.word}
+                </GlassButton>
+              ))}
+            </div>
+          )}
           <div className="border-sprout-cream/15 flex items-center gap-2 border-t p-3">
             <input
               value={input}
@@ -287,7 +318,7 @@ export default function Builder() {
               onKeyDown={(e) => {
                 if (e.key === "Enter") send();
               }}
-              placeholder="make it about space, add more questions, harder..."
+              placeholder={isCustom ? "Describe the worksheet you want to build..." : "make it about space, add more questions, harder..."}
               className="text-sprout-cream placeholder:text-sprout-cream/40 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none"
             />
             <GlassButton onClick={send} disabled={!input.trim()} aria-label="Send" className="size-9 shrink-0">
@@ -299,6 +330,7 @@ export default function Builder() {
         {/* preview */}
         <div className="min-w-0">
           {/* variation controls */}
+          {(!isCustom || variants.length > 0) && (
           <div className="no-print mb-3 flex flex-wrap items-center justify-center gap-2">
             <GlassButton
               onClick={() => {
@@ -332,6 +364,7 @@ export default function Builder() {
               </GlassButton>
             )}
           </div>
+          )}
 
           {view === "gallery" ? (
             <div className="grid gap-3 sm:grid-cols-2">
@@ -360,8 +393,8 @@ export default function Builder() {
               <WorksheetDoc worksheet={worksheet} />
             </div>
           ) : (
-            <div className="text-sprout-cream/60 flex h-[60vh] items-center justify-center rounded-2xl border border-dashed border-sprout-cream/20 text-sm">
-              Pick a child or hit New version and Sprout will build one.
+            <div className="text-sprout-cream/60 flex h-[60vh] items-center justify-center rounded-2xl border border-dashed border-sprout-cream/20 px-6 text-center text-sm">
+              {isCustom ? "Describe a worksheet in the chat and I'll build it here." : "Pick a child or hit New version and Sprout will build one."}
             </div>
           )}
         </div>

@@ -6,7 +6,7 @@
 // builder so the chat still produces a real worksheet with zero setup.
 
 import { getTemplate } from "@/lib/resources/catalog";
-import { aiWorksheet, dedupeWorksheet, templateWorksheet } from "@/lib/resources/generate";
+import { aiWorksheet, customFallback, dedupeWorksheet, templateWorksheet } from "@/lib/resources/generate";
 import type { ChatMessage, GenerateRequest } from "@/lib/resources/types";
 
 export const runtime = "nodejs";
@@ -52,5 +52,11 @@ export async function POST(request: Request) {
     if (ai) return Response.json({ worksheet: dedupeWorksheet(ai), source: "ai" });
   }
 
-  return Response.json({ worksheet: dedupeWorksheet(templateWorksheet(template, age, instruction, childName)), source: "template" });
+  // Freeform "Build your own" has no deterministic generator; fall back to a
+  // friendly retry sheet instead of the template engine.
+  const fallback =
+    template.id === "custom"
+      ? customFallback(age, childName)
+      : templateWorksheet(template, age, instruction, childName);
+  return Response.json({ worksheet: dedupeWorksheet(fallback), source: "template" });
 }
