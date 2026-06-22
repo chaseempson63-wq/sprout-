@@ -85,7 +85,8 @@ export interface CreatorProfile {
 
 export interface ChatMessage {
   role: "user" | "assistant";
-  content: string;
+  content: string; // what the model receives (for a preset chip, the masked instruction)
+  display?: string; // what the chat bubble shows instead of content (the one-word chip label)
 }
 
 export interface WorksheetTemplate {

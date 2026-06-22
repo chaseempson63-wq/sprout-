@@ -307,3 +307,172 @@ export const INPUT_VOCABULARY = {
   edits: EDIT_KEYWORDS,
   themes: Object.values(THEMES).map((t) => ({ key: t.key, label: t.label, emoji: t.emoji })),
 };
+
+// ── 6. Masked preset instructions (the chip -> Venice layer) ─────────────────
+//
+// Each edit chip shows ONE word but sends Venice a concrete, template-specific
+// instruction WITH a worked example. Testing settled the design: concrete+example
+// produced ~5x the difficulty of baseline, consistently; reciting a generic grade
+// benchmark ("fractions, decimals, percentages") came back EASIER than baseline.
+// So each hint names a real harder/easier example along the dimension that fits
+// the template (more digits for arithmetic, more sides/faces for geometry, real
+// money amounts for money math). The wrapper supplies exactly ONE difficulty
+// keyword (harder/easier); the hint text itself stays free of difficulty AND
+// length keywords, so cumulative compounding and the length edits stay clean.
+
+interface DifficultyHint {
+  harder: string;
+  easier: string;
+}
+
+const DIFFICULTY_HINTS: Record<string, DifficultyHint> = {
+  addition: {
+    harder: "two and three-digit sums with regrouping, like 367 + 248, set out in columns",
+    easier: "single-digit sums within ten, like 4 + 3, no regrouping",
+  },
+  subtraction: {
+    harder: "two and three-digit problems that need borrowing, like 504 - 178, set out in columns",
+    easier: "small take-aways within ten, like 9 - 4, with no borrowing",
+  },
+  multiplication: {
+    harder: "up to 3-digit by 2-digit, like 426 × 38, never times tables",
+    easier: "single-digit times tables, like 4 × 6",
+  },
+  division: {
+    harder: "multi-digit division with remainders, like 847 ÷ 6, not basic tables",
+    easier: "basic table facts, like 12 ÷ 3",
+  },
+  money: {
+    harder: "dollars and cents with change, discount or tax, like 15% off a $42.80 jacket",
+    easier: "whole-dollar amounts under twenty, like $5 + $3",
+  },
+  "word-problems": {
+    harder: "two-step problems combining operations, like buy 3 packs of 12 then share among 4",
+    easier: "one-step problems with small numbers, like 5 plus 3 makes 8",
+  },
+  fractions: {
+    harder: "unlike denominators and fraction-of-a-number, like 3/8 of 24, and equivalents",
+    easier: "halves and quarters of a shape, like shading 1/2 of a circle",
+  },
+  "place-value": {
+    harder: "numbers into the thousands, like the value of 8 in 4,827, and ordering them",
+    easier: "tens and ones to 100, like the value of 5 in 53",
+  },
+  "telling-time": {
+    harder: "five-minute intervals and elapsed time, like what time is 40 minutes after 3:15",
+    easier: "o'clock and half past only, like reading 3:00 and 6:30",
+  },
+  "missing-numbers": {
+    harder: "bigger steps from larger first numbers, like 150, 175, ____, 225",
+    easier: "count by ones and twos with small numbers, like 2, 4, ____, 8",
+  },
+  "skip-counting": {
+    harder: "skip count by 3s, 4s and 6s from a larger first number, like 24, 30, 36, ____",
+    easier: "skip count by twos, fives and tens from zero, like 5, 10, ____",
+  },
+  counting: {
+    harder: "count sets up to twenty and write the numeral, like counting 17 dots",
+    easier: "count small sets up to five, like counting 4 dots",
+  },
+  patterns: {
+    harder: "number and growing patterns, like 1, 2, 4, 8, ____, and ABC shape patterns",
+    easier: "two-step color patterns, like red, blue, red, blue, ____",
+  },
+  shapes: {
+    harder: "pentagons, hexagons and octagons, and basic 3D shapes, naming sides, corners and faces, like a cube's 6 faces",
+    easier: "naming circle, square and triangle, and counting their sides",
+  },
+  matching: {
+    harder: "abstract pairs like opposites or synonyms, such as matching 'big' to 'enormous'",
+    easier: "match numerals to number words, like 3 to three",
+  },
+  reading: {
+    harder: "a fuller passage with inference and cause-and-effect questions, like why a character felt worried, not just recall",
+    easier: "a short, plain passage with literal who and what questions",
+  },
+  phonics: {
+    harder: "digraphs and blends, like sh, ch, th and decoding words like 'shrub'",
+    easier: "single beginning sounds and short CVC words, like 'mat' and 'pin'",
+  },
+  "sight-words": {
+    harder: "less common multi-letter sight words, like 'because', 'through' and 'would'",
+    easier: "the most common short sight words, like 'the', 'and', 'you'",
+  },
+  rhyming: {
+    harder: "completing rhyming couplets and less obvious rhymes, like 'mountain' and 'fountain'",
+    easier: "matching short rhyming pairs, like 'top' and 'hop'",
+  },
+  spelling: {
+    harder: "multi-syllable words with patterns like magic-e and suffixes, such as 'beautiful'",
+    easier: "short CVC words, like 'big', 'red', 'top'",
+  },
+  "fill-blank-story": {
+    harder: "a fuller story with blanks needing context to solve, not obvious word-bank picks",
+    easier: "a short story with a few clear blanks straight from the word bank",
+  },
+  "creative-writing": {
+    harder: "a richer prompt asking for detail, dialogue and a full piece, like describing a character's feelings",
+    easier: "a short prompt with sentence openers and a few lines",
+  },
+  grammar: {
+    harder: "adjectives and adverbs, not just nouns and verbs, plus fixing punctuation, like correcting 'the small boy ran fast'",
+    easier: "telling nouns from verbs, and putting a capital and full stop on each sentence",
+  },
+  "sentence-building": {
+    harder: "fuller sentences to arrange that include describing words, like 'the tall tree swayed slowly'",
+    easier: "short three or four word sentences, like 'the boy ran'",
+  },
+  "letter-tracing": {
+    harder: "the full alphabet in upper and lower case, like Aa Bb Cc through Zz",
+    easier: "a few first letters, like A, B and C",
+  },
+  "number-tracing": {
+    harder: "teen and two-digit numbers, like 10 through 20",
+    easier: "single digits, like 0 to 5",
+  },
+  "line-tracing": {
+    harder: "curved, looping and zig-zag strokes, like waves and spirals",
+    easier: "straight up-and-down and across lines",
+  },
+  "draw-label": {
+    harder: "several parts to label with a sentence on each, like a plant's roots, stem, leaf and flower and what each does",
+    easier: "a few main parts to label, like the head, body and legs",
+  },
+  "color-by-number": {
+    harder: "two-step problems behind each color, like 6 × 7 mapping to a color",
+    easier: "single-digit sums behind each color, like 2 + 3",
+  },
+  "life-cycle": {
+    harder: "all stages in order with a sentence on why each matters, like the four stages of a butterfly",
+    easier: "naming the main stages in order, like seed then plant",
+  },
+};
+
+// Safety net only — every catalog template has a real hint above.
+const GENERIC_HINT: DifficultyHint = {
+  harder: "bigger numbers and one further reasoning step",
+  easier: "smaller numbers and fewer steps",
+};
+
+// Compose the masked instruction for an edit chip. The chip shows `word`; Venice
+// receives this. Difficulty edits carry exactly one keyword (harder/easier) so
+// repeated presses still compound; length edits stay difficulty-neutral. The
+// concrete example is anchored (e.g. "up to 3-digit by 2-digit") so repeated
+// "harder" escalates within a sane ceiling, not into absurd operands.
+export function presetPrompt(word: string, templateId: string, age: number): string {
+  const hint = DIFFICULTY_HINTS[templateId] ?? GENERIC_HINT;
+  switch (word) {
+    case "harder":
+      return `Make this harder for a ${age}-year-old: ${hint.harder}. Keep every item distinct.`;
+    case "easier":
+      return `Make this easier for a ${age}-year-old: ${hint.easier}. Keep every item distinct.`;
+    case "longer":
+      return `Make this longer so it fills the whole page for a ${age}-year-old, keeping the difficulty the same: a fuller set of questions and one further section.`;
+    case "shorter":
+      return `Make this shorter and tighter for a ${age}-year-old, keeping the difficulty the same: only the handful of core questions, trim the rest.`;
+    case "more questions":
+      return `Include more questions of the same kind and difficulty for a ${age}-year-old, keeping the existing ones, with no repeats or reverses.`;
+    default:
+      return word;
+  }
+}

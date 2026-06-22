@@ -6,7 +6,7 @@ import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, LayoutGrid, Load
 import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
-import { INPUT_VOCABULARY } from "@/lib/resources/intent";
+import { INPUT_VOCABULARY, presetPrompt } from "@/lib/resources/intent";
 import { useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
 import { GlassButton, GlassLink, GlassPanel } from "@/components/ui/glass";
@@ -118,6 +118,16 @@ export default function Builder() {
     const msgs: ChatMessage[] = [...messages, { role: "user", content: text }];
     setMessages(msgs);
     setInput("");
+    void runGenerate(msgs, age, "send", childName);
+  }
+
+  // An edit chip: the bubble shows the one word, Venice receives a fuller,
+  // template-specific instruction built from the current stepper age.
+  function sendPreset(word: string) {
+    if (!template) return;
+    const masked = presetPrompt(word, template.id, age);
+    const msgs: ChatMessage[] = [...messages, { role: "user", content: masked, display: word }];
+    setMessages(msgs);
     void runGenerate(msgs, age, "send", childName);
   }
 
@@ -246,7 +256,7 @@ export default function Builder() {
             {messages.map((m, i) =>
               m.role === "user" ? (
                 <div key={i} className="animate-in fade-in slide-in-from-bottom-1 flex justify-end duration-200">
-                  <div className="max-w-[85%] rounded-2xl bg-[#F4EDE0] px-3 py-2 text-sm leading-relaxed text-[#1B3722]">{m.content}</div>
+                  <div className="max-w-[85%] rounded-2xl bg-[#F4EDE0] px-3 py-2 text-sm leading-relaxed text-[#1B3722]">{m.display ?? m.content}</div>
                 </div>
               ) : (
                 <div key={i} className="animate-in fade-in slide-in-from-bottom-1 flex justify-start duration-200">
@@ -265,7 +275,7 @@ export default function Builder() {
 
           <div className="no-print border-sprout-cream/15 flex flex-wrap gap-1.5 border-t px-3 pt-2">
             {INPUT_VOCABULARY.edits.slice(0, 5).map((k) => (
-              <GlassButton key={k.word} onClick={() => setInput(k.word)} title={k.does} className="h-7 gap-1 px-3 text-[11px]">
+              <GlassButton key={k.word} onClick={() => sendPreset(k.word)} title={k.does} className="h-7 gap-1 px-3 text-[11px]">
                 {k.word}
               </GlassButton>
             ))}
