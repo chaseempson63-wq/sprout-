@@ -6,6 +6,7 @@ A homeschool documentation app for AU/NZ parents (multi-child, ages 5-17). One j
 
 ## Source of truth
 
+- **ACTIVE WORK — [`docs/RESOURCES-HANDOFF.md`](docs/RESOURCES-HANDOFF.md)** — the Sprout Resources worksheet platform (route `/resources`, live at hisprout.app/resources). **Read this FIRST when resuming Resources work.** It holds what shipped this session (with commit hashes, HEAD `3deae6c`), what's verified, what's still **pending Chase's prod re-test (the age-source fix — not closed)**, every locked decision, the known local-vs-prod risk, and the next job (mask the chat presets behind fuller Venice prompts).
 - **[`docs/MASTER.md`](docs/MASTER.md)** — full A-Z product/strategy spec. Read it before making any product, scope, or positioning decision. When in doubt, MASTER wins.
 - **[`docs/BRAND.md`](docs/BRAND.md)** — visual brand spec (palette, typography, premium-feel rules, paste-ready image gen prompts). Read before making any design, copy, or asset-generation decision.
 
