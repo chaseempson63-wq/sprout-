@@ -2,11 +2,12 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 It is the single source of truth for current state, locked decisions, the open
-risk, and the next job. Last updated 2026-06-22: four things are MERGED to main,
+risk, and the next job. Last updated 2026-06-23: five things are MERGED to main,
 deployed, and CONFIRMED on prod (hisprout.app) — the mul/div fallback cap fix +
 masked presets (`1150413`), the Build-your-own + Community social layer
-(`f3bed5e`), and the custom-sheet blank-PDF print fix (`64c0e21`). See section 3.
-Nothing is pending prod re-test.
+(`f3bed5e`), the custom-sheet blank-PDF print fix (`64c0e21`), and the print
+pagination + banner/mascot-color fix (`3b893d4`). See section 3. Nothing is
+pending prod re-test.
 
 Resources is the web worksheet-maker at route `/resources` in this landing repo
 (a SEPARATE product from the Sprout Journal mobile app). Full spec: `docs/RESOURCES.md`.
@@ -49,7 +50,7 @@ Newest last. Every commit is deployed to prod.
 - `3deae6c` — multiplication word problems are multiplication-only (fixed the
   subtraction leak); money uses dollars-and-cents for age 9+, whole-dollar for young.
 
-**This session (2026-06-22) — on branch `claude/silly-rubin-e31ec9`, NOT yet on main/prod:**
+**These two were built on branch, then MERGED to main via `1150413` and CONFIRMED on prod (see §3):**
 
 - `931a24f` — age-aware operand ceiling for the deterministic mul/div fallback.
   The fallback hard-capped multiplication AND division at the 12x times tables for
@@ -62,7 +63,7 @@ Newest last. Every commit is deployed to prod.
   local-vs-prod difficulty gap (section 5). Verified by a pure-function test AND a
   real-module e2e run of `templateWorksheet` (the exact fallback path):
   age 13 -> `71 x 90`, `1023 / 11`; age 7 -> `8 x 6`, `28 / 7`. All four of Chase's
-  quality gates pass. **To reach prod it must be merged to main.**
+  quality gates pass. **Merged + confirmed on prod (§3).**
 
 - `012d467` — masked preset instructions (the chip -> Venice layer). Each edit chip
   (harder/easier/longer/shorter/more questions) still shows ONE word but now sends
@@ -78,7 +79,7 @@ Newest last. Every commit is deployed to prod.
   triggers; a live-Venice quality test across arithmetic/geometry/money all move the
   right way (age 13 "harder" multiplication -> 3-digit x 2-digit not times tables;
   money "harder" doubles change/tax, "easier" -> whole-dollar <= $20). Type-clean.
-  **To reach prod it must be merged to main.**
+  **Merged + confirmed on prod (§3).**
 
 ## 2. Verified working
 
@@ -145,6 +146,30 @@ production, READY, aliased to hisprout.app. Full battery run on hisprout.app:
   native PDF-button click wasn't automated cleanly — Chase's Chrome spans a second
   monitor / multiple windows and is read-tier — but everything that determines the
   output is confirmed; a single click on prod is the only manual step left.)
+
+- **Print pagination + banner/mascot colors (`3b893d4`) — CONFIRMED on the live prod
+  deploy.** The `64c0e21` blank fix used `position:absolute; top:0`, which renders on
+  ONE page and clips overflow — so on a real (taller) prod sheet everything after page
+  1 (the math section + draw box) was silently dropped, the green banner's white
+  title/subtitle printed muddy gray, and the header mascot printed white/invisible.
+  Three fixes, print CSS only (`app/globals.css @media print`): (1) `.print-area`
+  switched to `position:static` (normal flow) so a tall sheet PAGINATES instead of
+  clipping — abspos elements can't fragment across pages; (2) `[class*="360px"]
+  {display:block}` flattens ONLY the builder's 360px chat/preview grid so the sheet
+  fills the page (the worksheet's own `grid-cols-2/3` math grids are untouched);
+  (3) `print-color-adjust:exact` on the sheet for the banner colors, plus
+  `.print-area svg [fill^="url("]{fill:#4e9a3e}` because the mascot fills via a
+  `url(#gradient)` whose id is reused across the page and resolved to a `display:none`
+  (`.no-print`) instance in print, leaving it unpainted. Verified the RIGHT way this
+  time (the earlier blank-fix verification used a synthetic repro that passed while
+  prod clipped): pulled the ACTUAL live prod sheet's HTML + the live deployed CSS
+  (`0hl1u-b5a7egm.css`) through headless Chrome `--print-to-pdf` (real Blink engine).
+  A tall custom sheet (rainforest: passage + 8 questions + column math + word bank +
+  draw box) AND the multiplication template both render 2 pages, with the math
+  columns + draw box on page 2, math columns intact, banner title/subtitle white
+  (~248,248,248), and mascot green (header + footer). Confirmed hisprout.app serves
+  SHA `3b893d4` (deployed CSS carries the new rules, old `position:absolute` print rule
+  gone). Zero footprint — generated, tested, discarded; nothing saved or published.
 
 Nothing is pending prod re-test anymore. (Earlier dev/local verification notes for
 these moved here once confirmed live.)
