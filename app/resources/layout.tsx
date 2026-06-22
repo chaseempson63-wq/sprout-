@@ -23,7 +23,7 @@ const NOISE =
 // and returning / reduced-motion / no-JS visitors never flash it. The component
 // takes over once hydrated (drives "reveal" → "off").
 const INTRO_GATE =
-  "(()=>{try{var seen=sessionStorage.getItem('sprout:resources:intro:v1')==='1';var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;var hub=location.pathname==='/resources';document.documentElement.setAttribute('data-resources-intro',(hub&&!seen&&!rm)?'play':'off');}catch(e){document.documentElement.setAttribute('data-resources-intro','off');}})()";
+  "(()=>{try{var seen=sessionStorage.getItem('sprout:resources:intro:v1')==='1';var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;var hub=location.pathname==='/resources';var force=location.search.indexOf('intro=replay')>-1;document.documentElement.setAttribute('data-resources-intro',(hub&&(force||(!seen&&!rm)))?'play':'off');}catch(e){document.documentElement.setAttribute('data-resources-intro','off');}})()";
 
 export default function ResourcesLayout({ children }: { children: React.ReactNode }) {
   return (

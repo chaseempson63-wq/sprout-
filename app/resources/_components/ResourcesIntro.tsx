@@ -83,17 +83,21 @@ export function ResourcesIntro() {
 
     let seen = false;
     let reduce = false;
+    let force = false;
     try {
       seen = sessionStorage.getItem(SS_KEY) === "1";
       reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      // ?intro=replay forces a fresh play (for testing) — overrides the seen flag
+      // without weakening the default once-per-session behavior.
+      force = new URLSearchParams(window.location.search).get("intro") === "replay";
     } catch {
       /* storage/matchMedia unavailable — fall through to "don't play" */
     }
 
-    // Not the hub, already played this session, or reduced motion → no intro.
-    // Leave the overlay mounted but CSS-hidden via the attribute; no synchronous
-    // setState in the effect body (active already reflects isHub).
-    if (!isHub || seen || reduce) {
+    // Not the hub, or (without a forced replay) already played / reduced motion →
+    // no intro. Leave the overlay mounted but CSS-hidden via the attribute; no
+    // synchronous setState in the effect body (active already reflects isHub).
+    if (!isHub || (!force && (seen || reduce))) {
       root.setAttribute("data-resources-intro", "off");
       return;
     }
@@ -225,20 +229,25 @@ export function ResourcesIntro() {
               <SproutMascotIcon className="h-14 w-14 sm:h-16 sm:w-16" />
             </span>
             <div className="relative">
-              {/* Settled headline — what we hand off to the page. */}
+              {/* Settled headline — what we hand off to the page. The nbsp keeps
+                  a full line box reserved before it types, so the line never
+                  collapses to 0 height (which would mis-center the brand wordmark
+                  against the mascot and jump when the headline appears). */}
               <h1
                 className={`text-sprout-cream text-5xl font-bold tracking-[-0.02em] sm:text-6xl ${
                   phase === "idle" || phase === "brand" ? "opacity-0" : "intro-rise-in"
                 }`}
               >
-                {lead}
+                {lead || " "}
                 <span className="text-sprout-lime">{word}</span>
                 {(phase === "headline" || phase === "resolving") && <Caret />}
               </h1>
-              {/* Brand wordmark types first, then rises out of the way. */}
+              {/* Brand wordmark types first, then rises out of the way. Anchored
+                  left + nowrap so it never inherits the (empty) headline line's
+                  width and wraps "Sprout" character-by-character. */}
               {phase !== "resolving" && (
                 <h1
-                  className={`text-sprout-cream absolute inset-x-0 top-0 text-5xl font-bold tracking-[-0.02em] sm:text-6xl ${
+                  className={`text-sprout-cream absolute top-0 left-0 text-5xl font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl ${
                     brandLeaving ? "intro-rise-out" : ""
                   }`}
                 >
