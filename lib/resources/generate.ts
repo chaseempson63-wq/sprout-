@@ -1019,6 +1019,14 @@ const ALLOWED = new Set([
   "passage", "fact", "image", "draw",
 ]);
 
+// Block kinds whose renderer reads `items` as its primary content. If the model
+// instead packs that content into `text` (e.g. a math equation, a fill-blank
+// sentence), normalize moves it into `items` so it isn't silently dropped.
+// (instructions/passage/fact read text or prompt, so they are NOT in this set.)
+const ITEM_KINDS = new Set([
+  "math", "column-math", "fill-blank", "count", "missing-numbers", "multiple-choice", "short-answer",
+]);
+
 function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate, age: number, childName?: string): Worksheet | null {
   const rawBlocks = Array.isArray(parsed.blocks) ? parsed.blocks : [];
   const strArr = (v: unknown) => (Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : undefined);
@@ -1054,6 +1062,26 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
         .map((p) => (p && typeof p === "object" ? (p as Record<string, unknown>) : null))
         .filter((p): p is Record<string, unknown> => !!p && typeof p.left === "string" && typeof p.right === "string")
         .map((p) => ({ left: p.left as string, right: p.right as string }));
+    }
+    // Field-shape coercion: each kind's renderer reads ONE primary field. If the
+    // model put the content where the renderer never looks, move it. Common case:
+    // an items-based block (a math equation, a fill-blank line) arrives as `text`.
+    // Newline-split so multiple items packed into one string still separate, with
+    // the whole string as a single item otherwise. The `prompt` label is kept.
+    if (ITEM_KINDS.has(block.kind) && (!block.items || block.items.length === 0) && block.text && block.text.trim()) {
+      const parts = block.text.split(/\r?\n+/).map((s) => s.trim()).filter(Boolean);
+      block.items = (parts.length ? parts : [block.text.trim()]).map(noDash);
+      delete block.text;
+    }
+    // word-bank reads `wordBank`; accept items (or a comma/newline list in text).
+    if (block.kind === "word-bank" && (!block.wordBank || block.wordBank.length === 0)) {
+      if (block.items && block.items.length) {
+        block.wordBank = block.items;
+        delete block.items;
+      } else if (block.text && block.text.trim()) {
+        block.wordBank = block.text.split(/[,\n]+/).map((s) => s.trim()).filter(Boolean);
+        delete block.text;
+      }
     }
     blocks.push(block);
   }
