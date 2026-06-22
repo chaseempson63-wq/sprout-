@@ -2,10 +2,9 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 It is the single source of truth for current state, locked decisions, the open
-risk, and the next job. Last updated 2026-06-22: TWO fixes are committed on branch
-`claude/silly-rubin-e31ec9` but NOT yet merged to main, so NOT on prod yet — the
-mul/div fallback cap fix (`931a24f`) and the masked-preset instructions
-(`012d467`). Everything else is on `main` / prod. Next step is a merge to main.
+risk, and the next job. Last updated 2026-06-22: the mul/div fallback cap fix and
+the masked-preset instructions are MERGED to main (`1150413`), deployed, and
+CONFIRMED on prod (hisprout.app) — see section 3. Nothing is pending prod re-test.
 
 Resources is the web worksheet-maker at route `/resources` in this landing repo
 (a SEPARATE product from the Sprout Journal mobile app). Full spec: `docs/RESOURCES.md`.
@@ -91,21 +90,35 @@ Newest last. Every commit is deployed to prod.
 - Glass on every button; copy-paste feedback popup; privacy page + header/footer
   links; typewriter hero — all verified in preview.
 
-## 3. PENDING CHASE'S PROD RE-TEST (NOT closed)
+## 3. CONFIRMED ON PROD — 2026-06-22 (the PENDING items are now CLOSED)
 
-- **The age-source fix is verified in DEV only.** With Chase (profile age 7)
-  selected and the stepper at 13, the outgoing request carried age 13 and the
-  rendered sheet was multi-digit. BUT Chase still needs to confirm this on the
-  LIVE prod deploy before it is considered done. Do not assume it is closed.
-- **The mul/div fallback cap fix (`931a24f`) is verified locally but not on prod**
-  (and not even merged to main yet). It only changes the fallback, which prod uses
-  when Venice is down/slow, so a normal healthy-Venice click on prod will look the
-  same; to actually exercise it Chase would need a moment where prod falls back.
-  Treat as OPEN until merged to main AND confirmed.
-- **The masked preset instructions (`012d467`) are verified against live Venice but
-  not merged to main / not on prod yet.** On prod, clicking "harder" should visibly
-  step the sheet up (e.g. multiplication into 3-digit) and the chat bubble should
-  still show just the word. Treat as OPEN until merged AND confirmed on prod.
+Branch `claude/silly-rubin-e31ec9` was merged to main (`1150413`) and deployed:
+prod deployment `dpl_FytLsMrj2UqP5DvK15CM7Q198x3j`, sha `1150413`, target
+production, READY, aliased to hisprout.app. Full battery run on hisprout.app:
+
+- **Age source — CONFIRMED on prod (the long-pending item).** Driven through the
+  real prod UI: created a child profile age 7, selected it (stepper defaulted to 7),
+  then bumped the stepper to 13. Every outgoing request carried the STEPPER age
+  (captured ages 8,9,10,11,12,13), the final request `age:13`, and the rendered
+  sheet was "Testkid's Multiplication" with 3-digit x 2-digit problems (426x38,
+  509x47...). The profile age 7 did NOT override the stepper. Test child removed
+  after (localStorage clean).
+- **Fallback cap — CONFIRMED on prod (the important one).** Forced the fallback by
+  rate-limiting Venice with a concurrent burst (3 of 42 calls returned
+  `source: template`). The fallback responses: mult age 13 multi-digit (92x67,
+  96x31, max operand 96 — NOT 4x6), mult age 7 friendly times tables (8x5, 2x7,
+  max 8), div age 13 multi-digit dividend (712/8, max 1023). The fallback that
+  looked broken on prod every time is now correct on prod.
+- **Masked presets — CONFIRMED on prod.** Captured the actual chip-click request on
+  the prod UI: clicking "harder" sent `content:"Make this harder for a 10-year-old:
+  up to 3-digit by 2-digit, like 426 × 38, never times tables..."` with
+  `display:"harder"` — the bubble showed only the word, the model got the masked
+  instruction built from the stepper age. Sheet stepped up to multi-digit. Also
+  via API on prod: shapes "harder" skews advanced / "easier" basic; money "harder"
+  decimals + change/tax / "easier" whole-dollar <= $20. All directions correct.
+
+Nothing is pending prod re-test anymore. (Earlier dev/local verification notes for
+these moved here once confirmed live.)
 
 ## 4. Locked product decisions (do not relitigate)
 
@@ -157,14 +170,12 @@ PROD. There may be an environment/caching gap between local and production. If a
 - Hit the prod API directly (`POST https://hisprout.app/api/resources/generate`)
   to separate "prod serving stale code" from "browser cached".
 
-## 6. NEXT PRIORITY — merge to main, then Chase re-tests on prod
+## 6. NEXT PRIORITY — none queued; this session's work is shipped + prod-confirmed
 
-**Both builds for this session are DONE on the branch** (cap fix `931a24f`, masked
-presets `012d467`) and verified locally + against live Venice. No new build is
-queued. Next step: merge `claude/silly-rubin-e31ec9` to main (auto-deploys to
-prod), then Chase re-tests on prod: the age-source fix (§3), the fallback cap
-(a 13yo never gets times tables even when Venice falls back), and the masked
-presets (clicking "harder" visibly steps the sheet up; chip still shows one word).
+**Both builds shipped and CONFIRMED on prod (§3):** cap fix `931a24f`, masked
+presets `012d467`, merged as `1150413`. The age-source item that had been pending
+across sessions is also confirmed closed. No specific next build is queued — pick
+the next item from the broader Resources roadmap (`docs/RESOURCES.md`) with Chase.
 
 **The masked-preset findings are kept below as the record of WHY it is built this
 way — DO NOT re-derive.** Tested against LIVE Venice (prod endpoint, multiplication
