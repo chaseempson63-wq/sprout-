@@ -252,6 +252,11 @@
    and the answer key.
    ────────────────────────────────────────────────────────────────── */
 @media print {
+  /* Show only the worksheet document (.print-area). Hide all app chrome and the
+     answer key (.no-print), plus the page's green background. */
+  .no-print {
+    display: none !important;
+  }
   body * {
     visibility: hidden;
   }
@@ -260,33 +265,46 @@
     visibility: visible;
   }
   /* Entrance animations (tailwindcss-animate) leave a transform on the worksheet
-     wrapper. A transformed ancestor becomes the containing block for the
-     absolutely-positioned sheet; because the sheet is out of flow, that wrapper
-     collapses to zero height (and the builder grid pins it to one narrow column),
-     so the sheet clips to nothing — a blank PDF for open-ended freeform sheets.
-     Killing the animation in print drops the transform so the sheet anchors to the
-     page instead. (Print never animates, so this is safe everywhere.) */
+     wrapper. A transformed ancestor becomes the containing block for any positioned
+     descendant AND renders as one monolithic box that cannot fragment across pages.
+     Dropping the transform lets the sheet sit in normal flow and paginate. (Print
+     never animates, so this is safe everywhere.) */
   [class*="animate-"] {
     animation: none !important;
     transform: none !important;
     filter: none !important;
   }
+  /* Flatten the builder's two-column shell (chat + preview) so the worksheet fills
+     the page width instead of being pinned to the 360px chat column. Targets ONLY
+     the builder grid's arbitrary value; the worksheet's own math grids
+     (grid-cols-2 / grid-cols-3) are untouched. */
+  [class*="360px"] {
+    display: block !important;
+  }
   .print-area {
-    position: absolute;
-    /* Anchor to the top with AUTO height (not inset:0) so tall, open-ended sheets
-       paginate across pages instead of being squeezed into one collapsed box;
-       overflow:visible defeats the card's rounded overflow-hidden in print. */
-    top: 0;
-    left: 0;
-    right: 0;
+    /* Normal flow — NOT position:absolute. Absolutely positioned elements render on
+       a single page and clip their overflow, so a tall sheet lost everything after
+       page 1 (the math section, draw box, footer). Static flow paginates. */
+    position: static !important;
     overflow: visible !important;
-    margin: 0;
-    padding: 0 !important;
+    margin: 0 !important;
     border: none !important;
     box-shadow: none !important;
-    background: #fff !important;
+    /* Print every color exactly — no ink-saving lightening. Without this the green
+       banner washes out and its white title/subtitle print muddy gray. */
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
   }
-  .no-print {
-    display: none !important;
+  .print-area * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+  /* The Sprout mascot fills via url(#gradient). That gradient id is reused by the
+     header/footer/chat mascots, so in print the reference resolves to an instance
+     inside a display:none (.no-print) element — leaving the mascot unpainted
+     (white). Force gradient-filled SVG shapes to a solid brand green. The banner
+     waves use solid hex fills (not url()) so they are unaffected. */
+  .print-area svg [fill^="url("] {
+    fill: #4e9a3e !important;
   }
 }
