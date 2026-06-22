@@ -2,14 +2,19 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 It is the single source of truth for current state, locked decisions, the open
-risk, and the next job. Last updated 2026-06-23: six things are MERGED to main,
+risk, and the next job. Last updated 2026-06-23: seven things are MERGED to main,
 deployed, and CONFIRMED on prod (hisprout.app) — the mul/div fallback cap fix +
 masked presets (`1150413`), the Build-your-own + Community social layer
 (`f3bed5e`), the custom-sheet blank-PDF print fix (`64c0e21`), the print
-pagination + banner/mascot-color fix (`3b893d4`), and resource MODES — teach mode
-+ honest SVG visuals + the field-coercion fix (`d694a2e` / `e56a5bd`). See section
-3. Nothing is pending prod re-test. **Next: the multi-page BOOKLET format (pass 2),
-built on this proven single-sheet engine. Raster image gen stays deferred.**
+pagination + banner/mascot-color fix (`3b893d4`), resource MODES — teach mode +
+honest SVG visuals + the field-coercion fix (`d694a2e` / `e56a5bd`), and the
+worksheet layout fixes — banner wrap + draw-box cap + de-duped fact label
+(`160add5`). See section 3. Nothing is pending prod re-test. **Next: the multi-page
+BOOKLET format (pass 2), built on this proven single-sheet engine. Raster image gen
+stays deferred. KNOWN ITEM for the booklet pass: the orphaned-footer case is
+"better, not bulletproof" (`160add5` minimized it but CSS print can't guarantee it,
+and Lightning CSS strips `break-*` + Chrome ignores `break-before`) — solve it there
+via real page-height measurement, NOT more print-CSS hacks.**
 
 Resources is the web worksheet-maker at route `/resources` in this landing repo
 (a SEPARATE product from the Sprout Journal mobile app). Full spec: `docs/RESOURCES.md`.
@@ -201,6 +206,28 @@ production, READY, aliased to hisprout.app. Full battery run on hisprout.app:
   engine (`source: template`); it recovers after a short cooldown. Lesson for any
   future block kind: the renderer reads ONE field per kind, so either emit that
   field or add a coercion in normalize.
+
+- **Worksheet layout fixes (`160add5`) — three CONFIRMED on the live prod print,
+  one mitigated.** Rendering/print-layout only; engine/modes/practice untouched.
+  (1) Banner overlap + title truncation: rebuilt the banner as a solid green band
+  with the wavy edge carved along the BOTTOM, content top-aligned, auto-height;
+  removed `truncate`, long titles WRAP in full (never shrink/cut). (2) Draw-box
+  height cap: empty box clamped to <=8 rows (~208px) so a fallback "draw it
+  yourself" box can't take most a page. (3) Fact-label de-dup (normalize): strip a
+  leading "did you know?" (any casing, optional "that") from fact text +
+  re-capitalize, so the "★ DID YOU KNOW?" header isn't doubled. Prod-verified by
+  rendering a real prod teach sheet ("The Great Barrier Reef and Its Colorful
+  Creatures") through headless `--print-to-pdf` against the live CSS: long title
+  wraps to 2 lines with no overlap, draw box a sensible size with content flowing
+  around it, 3 fact callouts each with a single header (JS check: 0 fact texts
+  still start with "did you know"). (4) Footer orphan: "better, not bulletproof" —
+  trimmed trailing space + inline print `<style>` (Lightning CSS strips `break-*`
+  from globals.css; Chrome ignores `break-before` anyway), so content rides with
+  the footer and slight overflows pull back, but a pathological exact-boundary
+  sheet can still orphan it. Deferred to the BOOKLET pass for a real page-height
+  measurement fix (see header). Note: keep Chrome `--user-data-dir` OUT of the
+  project when a dev server runs — Turbopack's file watcher panics on the udir's
+  SingletonSocket (use /tmp).
 
 Nothing is pending prod re-test anymore. (Earlier dev/local verification notes for
 these moved here once confirmed live.)
