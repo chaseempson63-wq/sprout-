@@ -259,9 +259,27 @@
   .print-area * {
     visibility: visible;
   }
+  /* Entrance animations (tailwindcss-animate) leave a transform on the worksheet
+     wrapper. A transformed ancestor becomes the containing block for the
+     absolutely-positioned sheet; because the sheet is out of flow, that wrapper
+     collapses to zero height (and the builder grid pins it to one narrow column),
+     so the sheet clips to nothing — a blank PDF for open-ended freeform sheets.
+     Killing the animation in print drops the transform so the sheet anchors to the
+     page instead. (Print never animates, so this is safe everywhere.) */
+  [class*="animate-"] {
+    animation: none !important;
+    transform: none !important;
+    filter: none !important;
+  }
   .print-area {
     position: absolute;
-    inset: 0;
+    /* Anchor to the top with AUTO height (not inset:0) so tall, open-ended sheets
+       paginate across pages instead of being squeezed into one collapsed box;
+       overflow:visible defeats the card's rounded overflow-hidden in print. */
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: visible !important;
     margin: 0;
     padding: 0 !important;
     border: none !important;
