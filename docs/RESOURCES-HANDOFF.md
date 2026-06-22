@@ -2,9 +2,10 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 It is the single source of truth for current state, locked decisions, the open
-risk, and the next job. Last updated 2026-06-22: the mul/div fallback cap fix and
-the masked-preset instructions are MERGED to main (`1150413`), deployed, and
-CONFIRMED on prod (hisprout.app) — see section 3. Nothing is pending prod re-test.
+risk, and the next job. Last updated 2026-06-22: three things are MERGED to main,
+deployed, and CONFIRMED on prod (hisprout.app) — the mul/div fallback cap fix +
+masked presets (`1150413`), and the Build-your-own + Community social layer
+(`f3bed5e`). See section 3. Nothing is pending prod re-test.
 
 Resources is the web worksheet-maker at route `/resources` in this landing repo
 (a SEPARATE product from the Sprout Journal mobile app). Full spec: `docs/RESOURCES.md`.
@@ -116,6 +117,15 @@ production, READY, aliased to hisprout.app. Full battery run on hisprout.app:
   instruction built from the stepper age. Sheet stepped up to multi-digit. Also
   via API on prod: shapes "harder" skews advanced / "easier" basic; money "harder"
   decimals + change/tax / "easier" whole-dollar <= $20. All directions correct.
+- **Build-your-own + Community social layer (`f3bed5e`) — CONFIRMED.** Full
+  click-through verified on the Vercel PREVIEW first (layout half-width + tints;
+  publish gate both ways — template/edited-template show no Publish, custom
+  publishes; community "Made with Sprout by {name}" → maker profile; seed credits
+  resolve; how-this-works bubble + presets-gating). Then on PROD: freeform Venice
+  generation returns a REAL topic-titled sheet ("The Solar System" with an accurate
+  reading passage + comprehension questions), NOT the retry fallback. No test data
+  was published to the live Community. NOTE: the Venice key is Production-scoped, so
+  preview deploys can't do freeform gen (they show the customFallback) — expected.
 
 Nothing is pending prod re-test anymore. (Earlier dev/local verification notes for
 these moved here once confirmed live.)
