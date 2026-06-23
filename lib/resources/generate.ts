@@ -17,6 +17,7 @@ import type { ChatMessage, Worksheet, WorksheetBlock, WorksheetTemplate } from "
 // ── shared helpers ───────────────────────────────────────────────────────────
 
 const article = (w: string) => (/^[aeiou]/i.test(w.trim()) ? "an" : "a");
+const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
 // Each "make it harder" compounds and each "easier" steps back, so pressing
 // harder again visibly raises difficulty every time. Returns the net level.
@@ -921,7 +922,7 @@ function imageModel(): string {
 }
 function imageMax(): number {
   const n = Number(process.env.VENICE_IMAGE_MAX);
-  return Number.isFinite(n) && n > 0 ? Math.min(4, Math.round(n)) : 2;
+  return Number.isFinite(n) && n > 0 ? Math.min(4, Math.round(n)) : 1;
 }
 
 // Shared JSON-shape + visual-honesty rules for teach and activity modes. (The
@@ -1196,8 +1197,9 @@ const IMAGE_NEG =
 // One image. Returns a data: URL or null (caller degrades nulls to a draw box).
 async function generateImage(imagePrompt: string, mode: ResourceMode, key: string): Promise<string | null> {
   const base = process.env.VENICE_BASE_URL || "https://api.venice.ai/api/v1";
+  const size = Math.min(1280, Math.max(256, Number(process.env.VENICE_IMAGE_SIZE) || 768));
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 45000);
+  const timer = setTimeout(() => controller.abort(), 30000);
   try {
     const res = await fetch(`${base}/image/generate`, {
       method: "POST",
@@ -1207,8 +1209,8 @@ async function generateImage(imagePrompt: string, mode: ResourceMode, key: strin
         model: imageModel(),
         prompt: `${imagePrompt}. ${IMAGE_STYLE[mode]}.`.slice(0, 1400),
         negative_prompt: IMAGE_NEG,
-        width: 1024,
-        height: 1024,
+        width: size,
+        height: size,
         format: "webp",
         safe_mode: true,
         return_binary: false,
@@ -1260,30 +1262,46 @@ export async function aiWorksheet(
   const base = process.env.VENICE_BASE_URL || "https://api.venice.ai/api/v1";
   const model = process.env.VENICE_MODEL || "qwen3-235b-a22b-instruct-2507";
   const msgs = buildMessages(template, age, messages, childName);
-  try {
-    const res = await fetch(`${base}/chat/completions`, {
-      method: "POST",
-      headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
-      body: JSON.stringify({
-        model,
-        messages: msgs,
-        temperature: 0.55,
-        max_tokens: 4000,
-        venice_parameters: { include_venice_system_prompt: false },
-      }),
-    });
-    if (!res.ok) return null;
-    const data = (await res.json()) as { choices?: { message?: { content?: string } }[] };
-    const text = data?.choices?.[0]?.message?.content;
-    if (!text) return null;
-    const parsed = extractJson(text);
-    if (!parsed) return null;
-    const ws = normalize(parsed, template, age, childName);
-    if (ws && imagesEnabled()) await attachImages(ws, detectMode(template, messages), key);
-    return ws;
-  } catch {
-    return null;
+  const reqBody = JSON.stringify({
+    model,
+    messages: msgs,
+    temperature: 0.55,
+    max_tokens: 4000,
+    venice_parameters: { include_venice_system_prompt: false },
+  });
+  // One retry on a transient Venice failure (a 429 under load, or a 5xx/network
+  // blip), so a brief rate-limit does not drop the whole sheet to the fallback.
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await fetch(`${base}/chat/completions`, {
+        method: "POST",
+        headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
+        body: reqBody,
+      });
+      if (!res.ok) {
+        if (attempt === 0 && (res.status === 429 || res.status >= 500)) {
+          await sleep(1800);
+          continue;
+        }
+        return null;
+      }
+      const data = (await res.json()) as { choices?: { message?: { content?: string } }[] };
+      const text = data?.choices?.[0]?.message?.content;
+      if (!text) return null;
+      const parsed = extractJson(text);
+      if (!parsed) return null;
+      const ws = normalize(parsed, template, age, childName);
+      if (ws && imagesEnabled()) await attachImages(ws, detectMode(template, messages), key);
+      return ws;
+    } catch {
+      if (attempt === 0) {
+        await sleep(1800);
+        continue;
+      }
+      return null;
+    }
   }
+  return null;
 }
 
 export { getTemplate };
