@@ -5,6 +5,7 @@
 // Uses Venice AI when VENICE_API_KEY is set, otherwise the offline template
 // builder so the chat still produces a real worksheet with zero setup.
 
+import { guardResourcesRequest } from "@/lib/resources/abuse-guard";
 import { getTemplate } from "@/lib/resources/catalog";
 import { aiWorksheet, customFallback, dedupeWorksheet, templateWorksheet } from "@/lib/resources/generate";
 import type { ChatMessage, GenerateRequest } from "@/lib/resources/types";
@@ -12,6 +13,12 @@ import type { ChatMessage, GenerateRequest } from "@/lib/resources/types";
 export const runtime = "nodejs";
 
 export async function POST(request: Request) {
+  // Stopgap until the real subscriber gate lands: refuse drive-by callers and
+  // throttle hammering so the open endpoint can't burn Venice credits. The
+  // entitlement check replaces this. See lib/resources/abuse-guard.ts.
+  const guard = guardResourcesRequest(request);
+  if (!guard.ok) return Response.json({ error: guard.error }, { status: guard.status });
+
   const key =
     process.env.VENICE_API_KEY ||
     process.env.VENUS_API_KEY ||
