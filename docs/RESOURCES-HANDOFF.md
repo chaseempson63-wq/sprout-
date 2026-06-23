@@ -282,7 +282,7 @@ PROD. There may be an environment/caching gap between local and production. If a
 - Hit the prod API directly (`POST https://hisprout.app/api/resources/generate`)
   to separate "prod serving stale code" from "browser cached".
 
-## 6. NEXT PRIORITY — none queued; this session's work is shipped + prod-confirmed
+## 6. Generation platform — shipped + prod-confirmed; next workstream = subscriber gate (§7)
 
 **Both builds shipped and CONFIRMED on prod (§3):** cap fix `931a24f`, masked
 presets `012d467`, merged as `1150413`. The age-source item that had been pending
@@ -357,3 +357,61 @@ decimals)" — built from the current age + `ageBenchmark` + the template intent
 - `temperature: 0.55`, `venice_parameters.include_venice_system_prompt: false`,
   NO `response_format` (qwen rejects it; rely on strict-JSON instruction + tolerant
   parser). Venice is private/no-train (the privacy promise).
+
+## 7. Subscriber gate — web access (NEW workstream, opened 2026-06-23)
+
+Goal: only active paying iOS subscribers can use the web resource library. The web
+SELLS NOTHING — access only. All payment is Apple IAP in the app. RevenueCat is the
+entitlement source of truth; the web just asks it. Full cross-session record:
+memory `sprout-resources-gate.md`.
+
+**Settled architecture (locked).**
+- Apple sign-in is the single shared identity. App: `Purchases.logIn(appleSub)`
+  sets the RevenueCat App User ID = the raw Apple `sub` (native
+  `ASAuthorizationAppleIDCredential.user`).
+- Web: Supabase Auth (Apple provider), extract the SAME Apple sub from the provider
+  identity (NOT the Supabase UUID), check RevenueCat GA REST `/v1/subscribers/{sub}`
+  (secret key, server-only).
+- Three states: not-signed-in → sign-in screen; signed-in-not-entitled → fog wall;
+  entitled → site. Enforced at the SERVER layout (non-entitled browsers never
+  receive the content; never a client CSS blur). The Venice spend endpoint does a
+  FRESH entitlement check, not the cached fog value.
+
+**Rejected — do NOT reopen:** Stripe / web-first "Spotify play" (committed to Apple
+IAP, web sells nothing); RevenueCat Redemption Links (wrong direction, web→app, and
+we sell nothing on web); magic-link / email-capture entry (replaced by the Apple
+shared identity); RevenueCat Web SDK / Web Billing (beta — GA REST only); Supabase
+UUID as identity (must be the Apple sub); client-side CSS blur (server gate instead);
+emailed access link (superseded).
+
+**Built — web (this repo, branch `claude/youthful-wright-0217e3`; commits 6055539,
+fa20181, a19c2f4, 816efea). Auth layer DORMANT behind `RESOURCES_AUTH_ENABLED`
+(default false).**
+- `lib/resources/abuse-guard.ts` — origin + rate-limit stopgap on the generate
+  endpoint. Active in code (NOT flag-gated), but only protects PROD once this branch
+  merges to main (prod deploys from main); merging is safe (auth stays dormant).
+  Until merge, the prod endpoint is still open.
+- `lib/supabase/client.ts` + `server.ts` + `middleware.ts` — Supabase SSR auth +
+  session refresh, env+flag guarded.
+- `app/resources/login/page.tsx` (+ `app/auth/callback`, `app/auth/signout`) — Apple
+  OAuth login; the login page displays the extracted Apple sub as a web-side proof.
+- `lib/resources/entitlement.ts` — `getAppleSub` + `checkEntitlement`.
+- Support + feedback both → `sprout.humanintelligence@gmail.com`.
+- NOT built: gate enforcement (fog wall + layout wiring) — deliberate, so live
+  /resources isn't locked out. tsc + eslint clean; branch safe to merge (dormant).
+
+**Built — app (`rork-sprout-homeschool-journal`, main, commit c7d4327).**
+`AppleSignInStep.swift` before the paywall in `OnboardingView` (between `reminders`
+and `paywallValue`). Native ASAuthorization, displays + logs `credential.user` as a
+runtime proof. `logIn()` / RevenueCat off-stub NOT wired — held until the sub is
+confirmed on a device.
+
+**Blocked on Chase:** (1) Apple Developer account. (2) enable Sign in with Apple on
+the App ID; ASC agreements/tax/banking + subscription products; RevenueCat mapping.
+(3) Apple Services ID (same team + primary App ID) + Supabase Apple provider creds +
+allowlist `https://hisprout.app/auth/callback`. (4) signed device build for the proof
+— Rork companion broke; use Rork Max cloud Build → TestFlight (needs the dev account).
+
+**Resume / build order:** on a device, confirm `AppleSignInStep` shows the raw Apple
+sub AND it equals the web login's sub → app `logIn()` + RevenueCat off-stub → web
+entitlement enforcement (fog + layout) → flip `RESOURCES_AUTH_ENABLED`.
