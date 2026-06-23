@@ -60,7 +60,7 @@ export function FeedbackButton() {
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <GlassButton onClick={openDialog} aria-label="Message us privately" className="hidden h-9 px-3 text-xs sm:inline-flex">
+      <GlassButton onClick={openDialog} aria-label="Message us privately" className="inline-flex h-9 shrink-0 px-3 text-xs">
         <MessageSquare className="size-4" /> Message us
       </GlassButton>
       <Dialog.Portal>

@@ -48,22 +48,27 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
         </div>
 
         <header className="no-print relative z-10">
-          <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-            <Link href="/resources" className="text-sprout-cream flex items-center gap-2.5 text-lg font-bold">
-              <span className="bg-sprout-cream/95 grid size-9 place-items-center rounded-xl shadow-sm">
+          <div className="mx-auto flex h-16 w-full max-w-7xl items-center gap-3 px-4 sm:px-6 lg:px-8">
+            <Link href="/resources" className="text-sprout-cream flex shrink-0 items-center gap-2.5 text-lg font-bold whitespace-nowrap">
+              {/* Mascot is the top-left header logo on desktop; hidden on mobile to
+                  free room so the wordmark + nav read across one line. */}
+              <span className="bg-sprout-cream/95 hidden size-9 place-items-center rounded-xl shadow-sm sm:grid">
                 <SproutMascotIcon className="h-6 w-6" />
               </span>
               <span>
                 Sprout <span className="text-sprout-cream/60 font-semibold">Resources</span>
               </span>
             </Link>
-            <div className="flex items-center gap-2">
+            {/* On mobile the options don't fit, so the bar scrolls sideways and
+                shows them all (Create profile, Forum, Message us, Privacy) instead
+                of hiding some. Desktop is right-aligned and fits, no scroll. */}
+            <div className="flex min-w-0 flex-1 items-center justify-start gap-2 overflow-x-auto sm:justify-end">
               <AccountChip />
-              <GlassLink href="/resources/forum" className="h-9 gap-1 px-3 text-xs">
+              <GlassLink href="/resources/forum" className="h-9 shrink-0 gap-1 px-3 text-xs">
                 <MessagesSquare className="size-4" /> Forum
               </GlassLink>
               <FeedbackButton />
-              <GlassLink href="/resources/privacy" className="hidden h-9 gap-1 px-3 text-xs sm:inline-flex">
+              <GlassLink href="/resources/privacy" className="inline-flex h-9 shrink-0 gap-1 px-3 text-xs">
                 <ShieldCheck className="size-4" /> Privacy
               </GlassLink>
             </div>

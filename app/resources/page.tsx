@@ -99,7 +99,7 @@ export default function LibraryHome() {
   return (
     <div>
       <div className="mb-8 flex flex-col gap-4 sm:mb-16 sm:flex-row sm:items-center sm:gap-5">
-        <span className="bg-sprout-cream/95 grid size-16 shrink-0 place-items-center rounded-2xl shadow-md sm:size-24 sm:rounded-3xl">
+        <span className="bg-sprout-cream/95 hidden size-16 shrink-0 place-items-center rounded-2xl shadow-md sm:grid sm:size-24 sm:rounded-3xl">
           <SproutMascotIcon className="h-11 w-11 sm:h-16 sm:w-16" />
         </span>
         <div>
@@ -107,7 +107,7 @@ export default function LibraryHome() {
               (that jumped the page every few seconds as the word cycled). One line,
               and the rare long word just clips at the edge instead of wrapping.
               Desktop is unchanged (sm: restores text-6xl + normal wrapping). */}
-          <h1 className="text-sprout-cream overflow-hidden text-[clamp(1.6rem,8vw,2.75rem)] font-bold tracking-[-0.02em] whitespace-nowrap sm:overflow-visible sm:text-6xl sm:whitespace-normal">
+          <h1 className="text-sprout-cream overflow-hidden text-[clamp(1.9rem,9.5vw,3.25rem)] font-bold tracking-[-0.02em] whitespace-nowrap sm:overflow-visible sm:text-6xl sm:whitespace-normal">
             We were born to <Typewriter words={BORN_TO} className="text-sprout-lime" />
           </h1>
           <p className="text-sprout-cream/70 mt-2">Pick a worksheet, tell Sprout about your kid, and print it in a minute.</p>

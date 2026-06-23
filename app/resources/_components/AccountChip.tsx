@@ -43,7 +43,7 @@ export function AccountChip() {
 
   if (account) {
     return (
-      <GlassLink href={`/resources/creator/${account.handle}`} className="h-9 gap-2 py-1 pr-3 pl-1">
+      <GlassLink href={`/resources/creator/${account.handle}`} className="h-9 shrink-0 gap-2 py-1 pr-3 pl-1">
         {account.photo ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={account.photo} alt="" className="size-7 rounded-full object-cover" />
@@ -57,7 +57,7 @@ export function AccountChip() {
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <GlassButton onClick={() => setOpen(true)} className="h-9 px-3 text-xs">
+      <GlassButton onClick={() => setOpen(true)} className="h-9 shrink-0 px-3 text-xs">
         <UserCircle className="size-4" /> Create profile
       </GlassButton>
       <Dialog.Portal>
