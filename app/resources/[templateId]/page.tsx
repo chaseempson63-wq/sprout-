@@ -7,6 +7,7 @@ import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY, presetPrompt } from "@/lib/resources/intent";
+import { makerWire, publishWorksheet } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
 import { GlassButton, GlassLink, GlassPanel } from "@/components/ui/glass";
@@ -191,17 +192,21 @@ export default function Builder() {
     showToast("Saved to your worksheets");
   }
 
-  // Only build-your-own sheets are publish-eligible. Saves a copy and publishes it.
-  function publishCustom() {
+  // Only build-your-own sheets are publish-eligible. Saves a local copy and
+  // publishes it to the shared community DB (degrades gracefully when off).
+  async function publishCustom() {
     if (!worksheet || !source || !isCustom) return;
     if (!account) {
-      showToast("Add your name first — tap Create profile, top right");
+      showToast("Add your name first. Tap Create profile, top right.");
       return;
     }
     const saved = saveWorksheet(worksheet, source, childId || undefined);
     togglePublish(saved.id);
     setPublishedIdx(idx);
-    showToast("Published to the community");
+    const res = await publishWorksheet(makerWire(account), worksheet);
+    if (res.id) showToast("Published to the community");
+    else if (res.disabled) showToast("Saved to your worksheets. The community is offline right now.");
+    else showToast(res.error || "Saved to your worksheets. Could not publish right now.");
   }
 
   return (
@@ -239,7 +244,7 @@ export default function Builder() {
             <Check className="size-4" /> Save
           </GlassButton>
           {isCustom && (
-            <GlassButton onClick={publishCustom} disabled={!worksheet || publishedIdx === idx} className="h-10 px-4 text-sm">
+            <GlassButton onClick={() => void publishCustom()} disabled={!worksheet || publishedIdx === idx} className="h-10 px-4 text-sm">
               <Globe className="size-4" /> {publishedIdx === idx ? "Published" : "Publish"}
             </GlassButton>
           )}

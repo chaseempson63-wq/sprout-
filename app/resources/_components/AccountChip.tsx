@@ -5,7 +5,7 @@ import { Dialog } from "@base-ui/react/dialog";
 import { Check, ImagePlus, UserCircle, X } from "lucide-react";
 import { downscaleImage } from "@/lib/resources/image";
 import { useResources } from "@/lib/resources/store";
-import { capName } from "@/lib/resources/util";
+import { capName, newId } from "@/lib/resources/util";
 import { GlassButton, GlassLink } from "@/components/ui/glass";
 
 function slug(s: string): string {
@@ -37,7 +37,7 @@ export function AccountChip() {
   function create() {
     const n = name.trim();
     if (!n) return;
-    setAccount({ handle: slug(n), displayName: n, photo: photo || undefined, createdAt: Date.now() });
+    setAccount({ id: newId(), handle: slug(n), displayName: n, photo: photo || undefined, createdAt: Date.now() });
     setOpen(false);
   }
 

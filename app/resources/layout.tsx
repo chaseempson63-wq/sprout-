@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ShieldCheck } from "lucide-react";
+import { MessagesSquare, ShieldCheck } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { AccountChip } from "./_components/AccountChip";
 import { FeedbackButton } from "./_components/FeedbackButton";
@@ -59,6 +59,9 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
             </Link>
             <div className="flex items-center gap-2">
               <AccountChip />
+              <GlassLink href="/resources/forum" className="h-9 gap-1 px-3 text-xs">
+                <MessagesSquare className="size-4" /> Forum
+              </GlassLink>
               <FeedbackButton />
               <GlassLink href="/resources/privacy" className="hidden h-9 gap-1 px-3 text-xs sm:inline-flex">
                 <ShieldCheck className="size-4" /> Privacy

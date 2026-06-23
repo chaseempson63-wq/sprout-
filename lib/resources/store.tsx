@@ -6,7 +6,7 @@
 // tables so a real multi-user backend is a drop-in swap later.
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import { capName } from "./util";
+import { capName, newId } from "./util";
 import type { ChildProfile, CreatorProfile, LearningMoment, SavedWorksheet, Worksheet } from "./types";
 
 const CHILDREN_KEY = "sprout.resources.children.v2";
@@ -80,7 +80,11 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   const [myLikes, setMyLikes] = useState<string[]>(() => readJSON<string[]>(MYLIKES_KEY, []));
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time hydration gate flip after mount
+    // One-time hydration after mount. Also backfill a stable account id for
+    // accounts created before the social layer existed, so they can post,
+    // comment, and vote (and converge to a real maker id) on first load.
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time hydration + id backfill after mount
+    setAccountState((a) => (a && !a.id ? { ...a, id: newId() } : a));
     setReady(true);
   }, []);
 
@@ -104,7 +108,8 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   }, [myLikes, ready]);
 
   const setAccount = useCallback(
-    (profile: CreatorProfile) => setAccountState({ ...profile, displayName: capName(profile.displayName) || profile.displayName }),
+    (profile: CreatorProfile) =>
+      setAccountState({ ...profile, id: profile.id || newId(), displayName: capName(profile.displayName) || profile.displayName }),
     [],
   );
 

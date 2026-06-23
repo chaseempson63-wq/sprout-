@@ -1,5 +1,21 @@
 // Small shared helpers used by both the server engine and the client UI.
 
+// A canonical UUID, used for the stable per-browser maker id. crypto.randomUUID
+// exists in browsers (secure contexts) and Node 19+; the fallback keeps UUID
+// format so Supabase's uuid columns accept it either way.
+export function newId(): string {
+  try {
+    if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") return crypto.randomUUID();
+  } catch {
+    /* fall through to the manual builder */
+  }
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
+    const r = (Math.random() * 16) | 0;
+    const v = c === "x" ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}
+
 // Capitalize a child's (or creator's) name regardless of how it was typed:
 // "chase" -> "Chase", "mary jane" -> "Mary Jane". A lowercase name should
 // never show anywhere in the product.
@@ -28,4 +44,16 @@ const CARD_TINTS = [
 
 export function cardTint(i: number): string {
   return `${CARD_SHADOW} ${CARD_TINTS[((i % CARD_TINTS.length) + CARD_TINTS.length) % CARD_TINTS.length]}`;
+}
+
+// Short relative time for community/forum timestamps: "just now", "5m", "3h",
+// "2d", then a plain date. Takes ms-epoch. Safe when passed 0 / NaN.
+export function timeAgo(ms: number): string {
+  if (!ms || !Number.isFinite(ms)) return "";
+  const s = Math.floor((Date.now() - ms) / 1000);
+  if (s < 45) return "just now";
+  if (s < 3600) return `${Math.round(s / 60)}m`;
+  if (s < 86400) return `${Math.round(s / 3600)}h`;
+  if (s < 604800) return `${Math.round(s / 86400)}d`;
+  return new Date(ms).toLocaleDateString(undefined, { month: "short", day: "numeric" });
 }

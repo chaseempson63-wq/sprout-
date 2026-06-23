@@ -79,6 +79,7 @@ export interface LearningMoment {
 
 // The local account / public creator identity.
 export interface CreatorProfile {
+  id: string; // stable per-browser uuid; sent to the server as the maker id
   handle: string; // unique-ish slug, e.g. "daniel"
   displayName: string;
   photo?: string;
@@ -110,4 +111,68 @@ export interface GenerateRequest {
   age: number;
   childName?: string;
   messages: ChatMessage[]; // conversation so far; last user message is the new ask
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Social layer — shared web wire types (the camelCase shapes the API
+// returns and the client sends). DB rows are snake_case; the server
+// routes map between the two. createdAt is always ms-epoch here.
+// ─────────────────────────────────────────────────────────────────
+
+export type VoteTarget = "post" | "thread" | "comment";
+
+// Anonymous maker identity sent with every social write, built from the
+// local CreatorProfile. There is no login — the id is a per-browser uuid.
+export interface MakerRef {
+  id: string;
+  handle: string;
+  displayName: string;
+  photo?: string;
+  bio?: string;
+}
+
+// A published community worksheet.
+export interface CommunityPost {
+  id: string;
+  makerId: string;
+  handle: string;
+  creatorName: string;
+  photo?: string; // maker avatar, for cards + profile header
+  title: string;
+  subtitle: string;
+  templateId: string;
+  topic: string;
+  worksheet: Worksheet;
+  upvotes: number;
+  commentCount: number;
+  createdAt: number;
+}
+
+// A forum discussion thread (the public feedback surface).
+export interface ForumThread {
+  id: string;
+  makerId: string;
+  handle: string;
+  creatorName: string;
+  title: string;
+  body: string;
+  upvotes: number;
+  commentCount: number;
+  createdAt: number;
+}
+
+// A threaded comment on a post or a thread. `replies` is populated after
+// the flat rows are assembled into a tree.
+export interface Comment {
+  id: string;
+  targetType: "post" | "thread";
+  targetId: string;
+  parentId: string | null;
+  makerId: string;
+  handle: string;
+  creatorName: string;
+  body: string;
+  upvotes: number;
+  createdAt: number;
+  replies?: Comment[];
 }

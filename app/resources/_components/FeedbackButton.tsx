@@ -60,8 +60,8 @@ export function FeedbackButton() {
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <GlassButton onClick={openDialog} aria-label="Send feedback" className="h-9 px-3 text-xs">
-        <MessageSquare className="size-4" /> Feedback
+      <GlassButton onClick={openDialog} aria-label="Message us privately" className="hidden h-9 px-3 text-xs sm:inline-flex">
+        <MessageSquare className="size-4" /> Message us
       </GlassButton>
       <Dialog.Portal>
         <Dialog.Backdrop className="fixed inset-0 z-[100] bg-[#0F1A12]/80 backdrop-blur-sm transition-opacity duration-200 data-[ending-style]:opacity-0 data-[starting-style]:opacity-0" />
@@ -73,7 +73,7 @@ export function FeedbackButton() {
             </GlassButton>
           </div>
           <Dialog.Description className="mt-1 text-sm leading-relaxed text-[#1B3722]/70">
-            We're building Sprout with the parents who use it, and every bit of feedback shapes what comes next. Copy the template, fill in what you think, and send it to us at{" "}
+            For ideas and requests, post in the Forum so other parents can chime in and upvote. For something private like a bug or your account, copy this note and email us at{" "}
             <span className="font-semibold text-[#2E5A35]">{FEEDBACK_EMAIL}</span>.
           </Dialog.Description>
           <textarea

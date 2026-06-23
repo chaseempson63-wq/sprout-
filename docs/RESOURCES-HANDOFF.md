@@ -23,6 +23,75 @@ Live at **hisprout.app/resources** (unlinked from the homepage nav). Push to
 
 ---
 
+## 0. Community social layer — BUILT on branch, DORMANT until provisioned (2026-06-23)
+
+The Reddit-style social + data layer. Turns the community from a publish-only
+showcase (which was secretly **localStorage-only** — each person saw only their own
+published sheets + hardcoded samples, nothing shared) into a genuinely multi-user
+space on a NEW shared Supabase backend. Built on branch `claude/heuristic-taussig-038418`,
+NOT yet on prod, dormant until the two infra steps below are done.
+
+**What shipped (social + data layer ONLY — generation / difficulty stepper / PDF untouched):**
+- Threaded (Reddit-style) comments on community worksheets + on forum threads.
+- A public **Forum** (`/resources/forum`, `/resources/forum/[id]`) — the primary public
+  feedback surface. The private copy-paste "Message us" popup is KEPT as a secondary
+  private channel (Chase's call). Header now has a "Forum" link.
+- Upvotes (toggle, one per maker, DB-trigger-maintained counts) on posts, threads, comments.
+- Community is now a **flat searchable feed** (topic-folders dropped — every published
+  sheet is `custom`, so topic faceting was meaningless): search bar + **filter by maker**
+  + **"Yours"** toggle. Shareable permalink per worksheet at `/resources/community/[id]`.
+- Publishing now writes the worksheet to the DB (`resource_posts`) so others actually see
+  it. Gate unchanged + re-enforced server-side: only `meta.templateId === "custom"` publishes.
+- Identity stays **anonymous, no login**: a stable per-browser uuid (`CreatorProfile.id`,
+  backfilled for existing local accounts) sent as the maker id on every write.
+- Moderation: **report** (→ `resource_reports` queue), **owner-hide** (UI), **admin hide-anyone**
+  + **global kill switch** via `POST /api/resources/admin` (`x-admin-token`), plus the
+  `RESOURCES_SOCIAL_KILL=1` env panic switch.
+
+**⚠️ INFRA STEPS CHASE MUST DO (feature is dormant + the site degrades safely until both are done):**
+1. Run the appended SQL in `supabase/schema.sql` (the "Resources social layer" block: 7
+   tables + 2 triggers + RLS) in the Supabase SQL editor, against the project behind
+   `NEXT_PUBLIC_SUPABASE_URL`.
+2. Add **`SUPABASE_SERVICE_ROLE_KEY`** + **`RESOURCES_ADMIN_TOKEN`** to Vercel env (and
+   `.env.local`). Both are server-only (never `NEXT_PUBLIC_`). See `.env.example`.
+
+**⚠️ PRIVACY COPY — CHASE OWNS THIS, NOT DONE (do before public launch).** I deliberately
+did NOT touch `app/resources/privacy/page.tsx`. It (and the footer line "your data stays
+yours, never sold, never used to train AI") currently implies everything lives in your
+browser, not on a Sprout server. That was true; it no longer is for PUBLISHED content.
+The copy needs to distinguish **private** worksheets (still local, never uploaded) from
+**published / community** content + comments + forum posts (stored on Sprout's Supabase, by
+the user's choice). The privacy page also has pre-existing `react/no-unescaped-entities`
+lint errors (apostrophes) — harmless (Next 16 doesn't lint at build), fix while you're in there.
+
+**Verified (2026-06-23, local):** `tsc --noEmit` clean; `next build` clean with all new
+routes present (`/api/resources/{community,community/[id],threads,threads/[id],comments,vote,report,admin}`,
+`/resources/community/[id]`, `/resources/forum`, `/resources/forum/[id]`); ESLint clean for
+all new files (only pre-existing `set-state-in-effect` / privacy-quote errors remain, which
+already ship on main). **Graceful degradation confirmed at runtime** via `next start` with NO
+Supabase env: every social endpoint returns `{disabled:true}` at HTTP 200 (no 500s), admin is
+token-gated (401), pages render. So the live site cannot break before provisioning.
+
+**After provisioning, verify the multi-user property on prod with TWO browsers** (publish in
+one, see it + comment/upvote in an incognito window). That is the whole point and the one
+thing local testing can't prove.
+
+**Known limits (by design, v1):** anonymous identity is per-browser + spoofable (the report
+queue + hide + kill switch are the safety net); rate limiting is best-effort in-memory only
+(a durable limiter — Vercel WAF rate rules / Upstash — is the real fix before heavy promotion);
+the community starts genuinely EMPTY (no fake seeds — that violates Sprout's no-fake-stats
+stance; publish a few real sheets from your own account to seed it); denormalized maker
+name/handle on posts/comments don't backfill if a maker later renames.
+
+**Key files:** `supabase/schema.sql` (SQL), `lib/resources/social-server.ts` (service-role
+client + guards + mappers + moderation helpers), `lib/resources/social.ts` (client fetch
+helpers), `app/api/resources/*` (routes), `app/resources/_components/{ThreadedComments,
+UpvoteButton,ReportControl,HideControl}.tsx`, `app/resources/community/[id]/page.tsx`,
+`app/resources/forum/{page,[id]/page}.tsx`, plus edits to `page.tsx` / `[templateId]/page.tsx` /
+`creator/[handle]/page.tsx` / `layout.tsx` / `store.tsx` / `types.ts` / `util.ts`.
+
+---
+
 ## 1. What shipped this session (all on `main`, HEAD = `3deae6c`)
 
 Newest last. Every commit is deployed to prod.
