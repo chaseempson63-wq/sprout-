@@ -10,6 +10,12 @@ import {
   ChevronDown,
   Plus,
   ArrowRight,
+  MessageCircle,
+  Hash,
+  Search,
+  Palette,
+  Utensils,
+  Leaf,
 } from "lucide-react";
 import { SproutMascotIcon } from "./SproutMascotIcon";
 
@@ -151,6 +157,18 @@ const KID_COLOR: Record<string, string> = {
   Charlie: "#A4C9A8",
   Maya: "#D4E6B5",
 };
+
+/* The growth domains, colour-coded exactly as in the app. The home screen's
+   "this week" hero is a little garden of these — a bar per domain, height by
+   how much was captured. */
+const DOMAINS = [
+  { label: "Talk", color: "#4F86C6", icon: MessageCircle, bar: 70 },
+  { label: "Count", color: "#D8A23C", icon: Hash, bar: 45 },
+  { label: "Ask", color: "#3DA59B", icon: Search, bar: 90 },
+  { label: "Make", color: "#E0795B", icon: Palette, bar: 55 },
+  { label: "Do", color: "#7FA86B", icon: Utensils, bar: 40 },
+  { label: "Explore", color: "#4FA85F", icon: Leaf, bar: 65 },
+];
 
 function ShareIconButton() {
   return (
@@ -310,17 +328,34 @@ export function PhoneScreenDropIn() {
         ))}
       </div>
 
-      {/* This week — DARK card, capture count only.
-          Stripped: "3 days left" countdown + DarkProgressBar (both
-          implied a target/quota — the timeline doesn't have a target). */}
-      <div className={`${DARK_CARD} px-3 py-2 mb-2.5`}>
-        <div className="flex items-center justify-between">
+      {/* This week — the growth-domains garden (the app's home hero): a
+          colour-coded bar per domain, height by how much was captured. */}
+      <div className={`${DARK_CARD} px-3 py-2.5 mb-2.5`}>
+        <div className="flex items-center justify-between mb-2">
           <span className="text-[9.5px] font-semibold text-[#FBF8EE]">
             This week
           </span>
-          <span className="text-[8.5px] text-[#FBF8EE]/65">
-            12 captures so far
-          </span>
+          <span className="text-[8.5px] text-[#FBF8EE]/65">18 moments</span>
+        </div>
+        <div className="flex items-end justify-between gap-1.5 h-12 mb-1.5">
+          {DOMAINS.map((d) => (
+            <div key={d.label} className="flex-1 flex items-end justify-center h-full">
+              <div
+                className="w-[11px] rounded-full"
+                style={{ height: `${d.bar}%`, minHeight: "6px", backgroundColor: d.color }}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-between gap-1.5">
+          {DOMAINS.map((d) => (
+            <span
+              key={`l-${d.label}`}
+              className="flex-1 text-center text-[6.5px] font-semibold text-[#FBF8EE]/75 leading-none"
+            >
+              {d.label}
+            </span>
+          ))}
         </div>
       </div>
 

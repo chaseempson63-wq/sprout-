@@ -17,6 +17,7 @@ import {
 import { PhoneShowcase } from "./_components/PhoneShowcase";
 import { Mascot } from "./_components/Mascot";
 import { Waitlist } from "./_components/Waitlist";
+import { PartnerDashboard } from "./_components/PartnerDashboard";
 
 /* ─────────────────────────────────────────────────────────────────────
    Sprout landing page v2 — structural rebuild against bevel.health
@@ -205,6 +206,50 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
+          EARN WITH SPROUT — teaser, pulled up from the footer.
+          The partner-portal preview + a big green button. Full program
+          lives on /partners.
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
+
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2A5132]/30 via-[#1B3722]/45 to-[#2A5132]/30" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-[#CDEFA0]/8 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-5xl mx-auto">
+
+          <div className="text-center mb-12">
+            <CenteredEyebrow number="02" label="Earn with Sprout" />
+            <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl mx-auto"
+                style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
+              Love Sprout? Get paid<br />to share it.
+            </h2>
+            <p className="mt-6 text-sprout-cream/75 leading-relaxed max-w-xl mx-auto"
+               style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
+              Share it with the parents who need it. When a family joins through
+              you, you earn every month they stay. For a whole year.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <PartnerDashboard />
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <Link
+              href="/partners"
+              className="group inline-flex items-center justify-center gap-2 h-14 px-9 rounded-full bg-gradient-to-r from-[#3D6643] to-[#2A5132] text-sprout-cream font-bold text-base border border-[#CDEFA0]/40 shadow-[0_12px_34px_-10px_rgba(0,0,0,0.55)] hover:from-[#46734D] hover:to-[#2F5D38] transition-colors focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#CDEFA0]/40"
+            >
+              Earn with Sprout
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
           SECTION INTRO HEADING — THE 3AM MOMENT
           (bevel position 8 — "Start the day with confidence" intro
           heading. Here we use it as the section transition into the
@@ -225,7 +270,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-5xl mx-auto">
 
-          <SectionEyebrow number="02" label="The reason Sprout exists" />
+          <SectionEyebrow number="03" label="The reason Sprout exists" />
 
           <div className="space-y-2 mb-16">
             <h2 className="font-bold tracking-[-0.04em] leading-[0.9] text-sprout-cream"
@@ -293,7 +338,7 @@ export default function HomeV2() {
         <div className="relative max-w-7xl mx-auto">
 
           <div className="mb-24">
-            <SectionEyebrow number="03" label="How it works" />
+            <SectionEyebrow number="04" label="How it works" />
             <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl headline-lit"
                 style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
               Four stupid simple<br />moves. The year<br />builds itself.
@@ -549,7 +594,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-7xl mx-auto">
 
-          <SectionEyebrow number="04" label="Why Sprout, not another tool" />
+          <SectionEyebrow number="05" label="Why Sprout, not another tool" />
 
           <div className="space-y-2 mb-12">
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream/65"
