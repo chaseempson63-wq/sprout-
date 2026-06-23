@@ -11,10 +11,16 @@ import type { User } from "@supabase/supabase-js";
 const URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
 const ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
 
-// True once real Supabase creds are set. Until then the auth layer stays inert
-// so it can't break the live site or make doomed calls to the placeholder host.
+// True only when auth is explicitly switched on AND real creds exist. The flag
+// keeps the whole auth layer inert on prod (where the waitlist already uses the
+// same Supabase project) until launch, so it can't gate or add calls early.
 export function isAuthConfigured(): boolean {
-  return !!URL && !!ANON && !URL.includes("placeholder");
+  return (
+    process.env.RESOURCES_AUTH_ENABLED === "true" &&
+    !!URL &&
+    !!ANON &&
+    !URL.includes("placeholder")
+  );
 }
 
 export async function createClient() {

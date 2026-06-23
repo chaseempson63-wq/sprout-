@@ -14,7 +14,11 @@ import { NextResponse, type NextRequest } from "next/server";
 export async function middleware(request: NextRequest) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  if (!url || !key || url.includes("placeholder")) {
+  const enabled = process.env.RESOURCES_AUTH_ENABLED === "true";
+  // Dormant until explicitly enabled, even though Supabase creds already exist on
+  // prod (the waitlist uses the same project). Flip RESOURCES_AUTH_ENABLED only
+  // when the Apple provider + RevenueCat config are in. Until then: zero effect.
+  if (!enabled || !url || !key || url.includes("placeholder")) {
     return NextResponse.next();
   }
 
