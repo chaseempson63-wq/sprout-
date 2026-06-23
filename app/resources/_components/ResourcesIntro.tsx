@@ -19,13 +19,11 @@ import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
      "We were born to ___") in its exact resting position, so lifting it is
      a seamless settle onto the page, not a swap.
    - SKIPPABLE. Any pointer / key / wheel / touch instantly finishes.
-   - ONCE PER SESSION. sessionStorage flag; never replays on nav or refresh
-     within the tab session. (Pre-paint gate lives in the layout's inline
-     script so first paint is already correct — no flash.)
+   - EVERY LOAD. Plays on every load/reload of the hub, any path in — no
+     once-per-session suppression. (Pre-paint gate lives in the layout's
+     inline script so first paint is already correct — no flash.)
    - REDUCED MOTION. Skipped entirely; the page shows immediately.
    ───────────────────────────────────────────────────────────────────── */
-
-const SS_KEY = "sprout:resources:intro:v1";
 
 // Beat timings (ms from start). Tight + overlapping; the curtain lifts ~3s.
 const HELD = 180; // 1. clean held beat
@@ -81,44 +79,30 @@ export function ResourcesIntro() {
   useEffect(() => {
     const root = document.documentElement;
 
-    let seen = false;
     let reduce = false;
-    let force = false;
     try {
-      seen = sessionStorage.getItem(SS_KEY) === "1";
       reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      // ?intro=replay forces a fresh play (for testing) — overrides the seen flag
-      // without weakening the default once-per-session behavior.
-      force = new URLSearchParams(window.location.search).get("intro") === "replay";
     } catch {
-      /* storage/matchMedia unavailable — fall through to "don't play" */
+      /* matchMedia unavailable — fall through (the overlay is still CSS-gated) */
     }
 
-    // Not the hub, or (without a forced replay) already played / reduced motion →
-    // no intro. Leave the overlay mounted but CSS-hidden via the attribute; no
-    // synchronous setState in the effect body (active already reflects isHub).
-    if (!isHub || (!force && (seen || reduce))) {
+    // The intro plays on EVERY load of the hub — no once-per-session gate. Only
+    // reduced motion (or not being on the hub) suppresses it. When suppressed the
+    // overlay stays mounted but CSS-hidden via the attribute; with the unique-id
+    // mascot fix a hidden overlay no longer affects the page's own mascots, and
+    // there's no synchronous setState here (active already reflects isHub).
+    if (!isHub || reduce) {
       root.setAttribute("data-resources-intro", "off");
       return;
     }
 
-    // Committing to play (active already started true on the hub).
+    // Committing to play.
     root.setAttribute("data-resources-intro", "play");
 
     const timers: number[] = [];
     let safety = 0;
     const at = (ms: number, fn: () => void) => {
       timers.push(window.setTimeout(fn, ms));
-    };
-    // Mark seen on the next tick — not synchronously — so React strict-mode's
-    // dev double-invoke doesn't catch the flag on its second pass and skip the
-    // intro; a real refresh during or after the run still finds it set.
-    const markSeen = () => {
-      try {
-        sessionStorage.setItem(SS_KEY, "1");
-      } catch {
-        /* ignore */
-      }
     };
     const type = (start: number, str: string, per: number, set: (s: string) => void) => {
       for (let i = 1; i <= str.length; i++) at(start + i * per, () => set(str.slice(0, i)));
@@ -132,7 +116,6 @@ export function ResourcesIntro() {
     const finish = (instant: boolean) => {
       if (doneRef.current) return;
       doneRef.current = true;
-      markSeen();
       timers.forEach(clearTimeout);
       clearTimeout(safety);
       if (instant) {
@@ -148,8 +131,6 @@ export function ResourcesIntro() {
       window.setTimeout(() => setActive(false), FADE_MS);
       window.setTimeout(() => root.setAttribute("data-resources-intro", "off"), REST_AT);
     };
-
-    at(0, markSeen);
 
     // Beat 1 → 2: held, then "Sprout" types.
     at(HELD, () => setPhase("brand"));

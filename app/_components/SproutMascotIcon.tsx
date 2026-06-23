@@ -23,6 +23,10 @@
    with the existing SproutLogo (Glass.tsx) or any future SVG asset.
    ───────────────────────────────────────────────────────────────────── */
 
+"use client";
+
+import { useId } from "react";
+
 // Frozen palette resolved at TWEAK_DEFAULTS.
 const BASE = "#5fa53a";
 // shade("#3a7222", -0.25) — used for vein strokes, stem shadow side, eye shade.
@@ -44,6 +48,11 @@ const CHEEK_DY = 5 * 1.09;  //  cheek-dot y-offset (added, sits low)
 const CHEEK_R = 1.7 * 1.09; //  cheek-dot radius
 
 export function SproutMascotIcon({ className = "" }: { className?: string }) {
+  // Unique per-instance prefix for the gradient/filter ids below. Several
+  // mascots can share one page (header, hero, intro overlay); with identical
+  // ids a hidden duplicate first in the DOM steals the others' fills and they
+  // render unpainted (white/black). useId keeps the prefix stable SSR↔client.
+  const p = "i" + useId().replace(/[^a-zA-Z0-9]/g, "") + "-";
   return (
     // Tight viewBox below (135 85 330 460): hugs the character (leaves
     // x=145-455, stem to y=540, top of leaves at y=92) with ~10px margin
@@ -58,20 +67,20 @@ export function SproutMascotIcon({ className = "" }: { className?: string }) {
     >
       <defs>
         {/* stem body — flat BASE at contrast=0 */}
-        <linearGradient id="sm-stemBody" x1="0" y1="0" x2="1" y2="0">
+        <linearGradient id={`${p}sm-stemBody`} x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%"   stopColor={BASE} />
           <stop offset="45%"  stopColor={BASE} />
           <stop offset="100%" stopColor={BASE} />
         </linearGradient>
         {/* vertical sheen on the stem's left side */}
-        <linearGradient id="sm-stemSheen" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id={`${p}sm-stemSheen`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%"  stopColor={HIGHLIGHT_STRONG} stopOpacity="0.55" />
           <stop offset="60%" stopColor={HIGHLIGHT_STRONG} stopOpacity="0" />
         </linearGradient>
 
         {/* left leaf — flat at contrast=0 */}
         <linearGradient
-          id="sm-leafLeft"
+          id={`${p}sm-leafLeft`}
           x1="180" y1="100" x2="320" y2="270"
           gradientUnits="userSpaceOnUse"
         >
@@ -80,7 +89,7 @@ export function SproutMascotIcon({ className = "" }: { className?: string }) {
           <stop offset="100%" stopColor={BASE} />
         </linearGradient>
         <radialGradient
-          id="sm-leafLeftHL"
+          id={`${p}sm-leafLeftHL`}
           cx="225" cy="135" r="90"
           gradientUnits="userSpaceOnUse"
         >
@@ -90,7 +99,7 @@ export function SproutMascotIcon({ className = "" }: { className?: string }) {
 
         {/* right leaf — flat at contrast=0 */}
         <linearGradient
-          id="sm-leafRight"
+          id={`${p}sm-leafRight`}
           x1="420" y1="100" x2="280" y2="270"
           gradientUnits="userSpaceOnUse"
         >
@@ -99,7 +108,7 @@ export function SproutMascotIcon({ className = "" }: { className?: string }) {
           <stop offset="100%" stopColor={BASE} />
         </linearGradient>
         <radialGradient
-          id="sm-leafRightHL"
+          id={`${p}sm-leafRightHL`}
           cx="375" cy="135" r="90"
           gradientUnits="userSpaceOnUse"
         >
@@ -108,13 +117,13 @@ export function SproutMascotIcon({ className = "" }: { className?: string }) {
         </radialGradient>
 
         {/* eye sphere shading */}
-        <radialGradient id="sm-eyeShade" cx="0.5" cy="0.55" r="0.5">
+        <radialGradient id={`${p}sm-eyeShade`} cx="0.5" cy="0.55" r="0.5">
           <stop offset="60%"  stopColor="#ffffff" stopOpacity="0" />
           <stop offset="100%" stopColor={DEEP}    stopOpacity="0.30" />
         </radialGradient>
 
         {/* soft drop-shadow under each leaf */}
-        <filter id="sm-leafShadow" x="-30%" y="-30%" width="160%" height="160%">
+        <filter id={`${p}sm-leafShadow`} x="-30%" y="-30%" width="160%" height="160%">
           <feGaussianBlur in="SourceAlpha" stdDeviation="4" />
           <feOffset dx="0" dy="5" result="b" />
           <feComponentTransfer in="b" result="b2">
@@ -131,11 +140,11 @@ export function SproutMascotIcon({ className = "" }: { className?: string }) {
       <g>
         <path
           d="M 282 540 C 274 540, 268 534, 268 525 L 268 290 C 268 270, 282 258, 300 258 C 318 258, 332 270, 332 290 L 332 525 C 332 534, 326 540, 318 540 Z"
-          fill="url(#sm-stemBody)"
+          fill={`url(#${p}sm-stemBody)`}
         />
         <path
           d="M 278 295 C 278 278, 287 268, 296 266 L 296 532 C 287 532, 278 524, 278 514 Z"
-          fill="url(#sm-stemSheen)"
+          fill={`url(#${p}sm-stemSheen)`}
         />
         <path
           d="M 322 296 L 322 520 C 322 530, 316 536, 310 537 L 310 268 C 316 272, 322 284, 322 296 Z"
@@ -147,14 +156,14 @@ export function SproutMascotIcon({ className = "" }: { className?: string }) {
       {/* ── LEAVES — scaled 0.95 around the join (300, 270) ───── */}
       <g transform="translate(300 270) scale(0.95) translate(-300 -270)">
         {/* left leaf */}
-        <g filter="url(#sm-leafShadow)">
+        <g filter={`url(#${p}sm-leafShadow)`}>
           <path
             d="M 300 270 C 200 260, 145 200, 152 110 C 158 95, 175 92, 200 105 C 260 138, 300 200, 300 270 Z"
-            fill="url(#sm-leafLeft)"
+            fill={`url(#${p}sm-leafLeft)`}
           />
           <path
             d="M 300 270 C 200 260, 145 200, 152 110 C 158 95, 175 92, 200 105 C 260 138, 300 200, 300 270 Z"
-            fill="url(#sm-leafLeftHL)"
+            fill={`url(#${p}sm-leafLeftHL)`}
           />
           <path
             d="M 300 268 C 240 240, 190 195, 158 118"
@@ -167,14 +176,14 @@ export function SproutMascotIcon({ className = "" }: { className?: string }) {
         </g>
 
         {/* right leaf */}
-        <g filter="url(#sm-leafShadow)">
+        <g filter={`url(#${p}sm-leafShadow)`}>
           <path
             d="M 300 270 C 400 260, 455 200, 448 110 C 442 95, 425 92, 400 105 C 340 138, 300 200, 300 270 Z"
-            fill="url(#sm-leafRight)"
+            fill={`url(#${p}sm-leafRight)`}
           />
           <path
             d="M 300 270 C 400 260, 455 200, 448 110 C 442 95, 425 92, 400 105 C 340 138, 300 200, 300 270 Z"
-            fill="url(#sm-leafRightHL)"
+            fill={`url(#${p}sm-leafRightHL)`}
           />
           <path
             d="M 300 268 C 360 240, 410 195, 442 118"
@@ -199,8 +208,8 @@ export function SproutMascotIcon({ className = "" }: { className?: string }) {
         <circle cx={287 - CHEEK_DX} cy={370 + CHEEK_DY} r={CHEEK_R} fill="#ffffff" opacity="0.9" />
         <circle cx={318 - CHEEK_DX} cy={370 + CHEEK_DY} r={CHEEK_R} fill="#ffffff" opacity="0.9" />
         {/* eye sphere shading */}
-        <ellipse cx={287} cy={370} rx={E_RX + 1.5} ry={E_RY + 1.5} fill="url(#sm-eyeShade)" opacity="0.55" />
-        <ellipse cx={318} cy={370} rx={E_RX + 1.5} ry={E_RY + 1.5} fill="url(#sm-eyeShade)" opacity="0.55" />
+        <ellipse cx={287} cy={370} rx={E_RX + 1.5} ry={E_RY + 1.5} fill={`url(#${p}sm-eyeShade)`} opacity="0.55" />
+        <ellipse cx={318} cy={370} rx={E_RX + 1.5} ry={E_RY + 1.5} fill={`url(#${p}sm-eyeShade)`} opacity="0.55" />
         {/* mouth */}
         <path
           d="M 295 414 Q 302.5 421 310 414"
