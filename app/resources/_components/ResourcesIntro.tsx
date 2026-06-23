@@ -26,22 +26,22 @@ import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
    ───────────────────────────────────────────────────────────────────── */
 
 // Beat timings (ms from start). Tight + overlapping; the curtain lifts ~3s.
-const HELD = 180; // 1. clean held beat
+const HELD = 380; // 1. clean held beat
 const BRAND = "Sprout";
-const BRAND_CHAR = 52; // 2. brand types in
-const MASCOT_AT = 430; // 3. mascot pops (overlaps the brand typing)
-const HEADLINE_AT = 920; // 4. brand rises out, headline rises in + types
+const BRAND_CHAR = 90; // 2. brand types in
+const MASCOT_AT = 680; // 3. mascot pops (overlaps the brand typing)
+const HEADLINE_AT = 1450; // 4. brand rises out, headline rises in + types
 const LEAD = "We were born to ";
-const LEAD_CHAR = 16;
+const LEAD_CHAR = 30;
 const ROTATE = ["learn", "wonder"]; // words that flash past
 const SETTLE = "create"; // final word — matches the page's first word
-const WORD_TYPE = 42;
-const WORD_HOLD = 120;
-const WORD_DEL = 26;
-const SETTLE_HOLD = 220;
-const FADE_MS = 380; // curtain fade-out
-const REST_AT = 1000; // settle to the resting attribute after resolve
-const SAFETY_MS = 6000; // absolute fail-safe: show the page no matter what
+const WORD_TYPE = 70;
+const WORD_HOLD = 260;
+const WORD_DEL = 44;
+const SETTLE_HOLD = 480;
+const FADE_MS = 480; // curtain fade-out
+const REST_AT = 1400; // settle to the resting attribute after resolve
+const SAFETY_MS = 9000; // absolute fail-safe: show the page no matter what
 
 // Same fractal-noise overlay the layout uses over the green canvas, so the
 // curtain's background is pixel-identical and the green never shifts on lift.
@@ -196,12 +196,11 @@ export function ResourcesIntro() {
       </svg>
       <div className="pointer-events-none absolute inset-0 opacity-[0.10] mix-blend-overlay" style={{ backgroundImage: NOISE }} />
 
-      {/* Hero lockup, pinned to the EXACT resting position of the real hero:
-          header (h-16 = 64px) + main's py-8 top (32px) = pt-24, and the same
-          max-w-7xl + px-6 lg:px-8 as <main>. */}
-      <div className="absolute inset-x-0 top-0">
-        <div className="mx-auto w-full max-w-7xl px-6 pt-24 lg:px-8">
-          <div className="flex items-center gap-4 sm:gap-5">
+      {/* Centered lockup — a splash-style brand moment in the middle of the
+          viewport: mascot on top, the typing line below, both centered. The
+          text block is a stable max-width so growing/rotating text centers
+          symmetrically instead of shoving the mascot sideways. */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 px-6 text-center sm:gap-6">
             <span
               className={`intro-mascot bg-sprout-cream/95 grid size-20 shrink-0 place-items-center rounded-3xl shadow-md sm:size-24 ${
                 showMascot ? "intro-mascot-pop" : ""
@@ -209,7 +208,7 @@ export function ResourcesIntro() {
             >
               <SproutMascotIcon className="h-14 w-14 sm:h-16 sm:w-16" />
             </span>
-            <div className="relative">
+            <div className="relative w-full max-w-4xl">
               {/* Settled headline — what we hand off to the page. The nbsp keeps
                   a full line box reserved before it types, so the line never
                   collapses to 0 height (which would mis-center the brand wordmark
@@ -223,12 +222,12 @@ export function ResourcesIntro() {
                 <span className="text-sprout-lime">{word}</span>
                 {(phase === "headline" || phase === "resolving") && <Caret />}
               </h1>
-              {/* Brand wordmark types first, then rises out of the way. Anchored
-                  left + nowrap so it never inherits the (empty) headline line's
-                  width and wraps "Sprout" character-by-character. */}
+              {/* Brand wordmark types first, then rises out of the way. Full-width
+                  + nowrap + centered (text-center on the parent) so "Sprout" sits
+                  centered and never wraps character-by-character. */}
               {phase !== "resolving" && (
                 <h1
-                  className={`text-sprout-cream absolute top-0 left-0 text-5xl font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl ${
+                  className={`text-sprout-cream absolute inset-x-0 top-0 text-5xl font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl ${
                     brandLeaving ? "intro-rise-out" : ""
                   }`}
                 >
@@ -237,8 +236,6 @@ export function ResourcesIntro() {
                 </h1>
               )}
             </div>
-          </div>
-        </div>
       </div>
     </div>
   );
