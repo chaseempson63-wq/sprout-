@@ -1,12 +1,9 @@
 // Simple support contact. A mailto, zero infra. Upgrade to a real form later if
-// volume warrants it.
-//
-// NOTE: support@hisprout.app only delivers if email receiving/forwarding is set
-// up on the hisprout.app domain (e.g. Cloudflare Email Routing -> your inbox).
-// If that's not configured yet, point this at a known-good inbox instead, or
-// these messages go nowhere.
+// volume warrants it. Points at the shared Sprout inbox (same place feedback
+// lands). Swap to a branded support@hisprout.app once domain email routing
+// (e.g. Cloudflare Email Routing) is set up.
 
-const SUPPORT_EMAIL = "support@hisprout.app";
+const SUPPORT_EMAIL = "sprout.humanintelligence@gmail.com";
 
 export function SupportLink({ className }: { className?: string }) {
   const href = `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent("Sprout Resources — need help")}`;

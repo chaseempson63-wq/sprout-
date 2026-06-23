@@ -7,7 +7,7 @@ import { Check, Copy, MessageSquare, X } from "lucide-react";
 import { getTemplate } from "@/lib/resources/catalog";
 import { GlassButton } from "@/components/ui/glass";
 
-const FEEDBACK_EMAIL = "chaseempson63@gmail.com";
+const FEEDBACK_EMAIL = "sprout.humanintelligence@gmail.com";
 
 function screenLabel(path: string | null): string {
   if (!path) return "Sprout Resources";
