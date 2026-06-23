@@ -200,7 +200,17 @@ export function ResourcesIntro() {
           viewport: mascot on top, the typing line below, both centered. The
           text block is a stable max-width so growing/rotating text centers
           symmetrically instead of shoving the mascot sideways. */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 px-6 text-center sm:gap-6">
+      <div
+        className="absolute inset-0 flex flex-col items-center justify-center gap-5 px-6 text-center sm:gap-6"
+        style={{
+          // On resolve the centered lockup lifts + fades FAST (ahead of the
+          // slower green-curtain fade on the root), so the splash is gone before
+          // the curtain reveals the page's own top-left hero — no double headline.
+          opacity: fading ? 0 : 1,
+          transform: fading ? "translateY(-16px)" : "none",
+          transition: "opacity 240ms ease, transform 360ms cubic-bezier(0.22,0.61,0.36,1)",
+        }}
+      >
             <span
               className={`intro-mascot bg-sprout-cream/95 grid size-20 shrink-0 place-items-center rounded-3xl shadow-md sm:size-24 ${
                 showMascot ? "intro-mascot-pop" : ""
