@@ -13,6 +13,7 @@ import type { Worksheet, WorksheetBlock } from "@/lib/resources/types";
 const PRINT_RULES = `@media print {
   .worksheet-lines > * + * { margin-top: 13px !important; }
   .worksheet-footer { break-inside: avoid; margin-top: 14px !important; padding-top: 8px !important; }
+  .worksheet-img { break-inside: avoid; width: auto !important; max-width: 90%; max-height: 8cm; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }`;
 
 function Lines({ count = 3 }: { count?: number }) {
@@ -286,6 +287,23 @@ function BlockView({ block }: { block: WorksheetBlock }) {
       );
 
     case "image": {
+      // Preferred: a real AI-generated illustration (data: URL). Falls back to the
+      // curated SVG line art when image generation is off or failed.
+      if (block.dataUrl) {
+        return (
+          <div>
+            {prompt}
+            <div className="mt-2 flex justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element -- data: URL into a printable doc; next/image adds nothing here */}
+              <img
+                src={block.dataUrl}
+                alt={block.imagePrompt || block.prompt || "illustration"}
+                className="worksheet-img w-full max-w-[380px] rounded-2xl border border-[#2E5A35]/15"
+              />
+            </div>
+          </div>
+        );
+      }
       const art = block.svgKey ? SVG_ART[block.svgKey] : undefined;
       if (!art) return null; // normalize converts unknown keys to draw boxes; this is a guard
       return (

@@ -909,39 +909,67 @@ function detectMode(template: WorksheetTemplate, messages: ChatMessage[]): Resou
   return "practice";
 }
 
+// ── AI image generation config (Venice /image/generate) ──────────────────────
+// On by default whenever a Venice key is present. Turn off with RESOURCES_IMAGES=0
+// to fall back to the curated SVG line-art / draw boxes. The model + per-sheet cap
+// are env-tunable so quality vs cost can be dialed without a code change.
+function imagesEnabled(): boolean {
+  return process.env.RESOURCES_IMAGES !== "0";
+}
+function imageModel(): string {
+  return process.env.VENICE_IMAGE_MODEL || "venice-sd35";
+}
+function imageMax(): number {
+  const n = Number(process.env.VENICE_IMAGE_MAX);
+  return Number.isFinite(n) && n > 0 ? Math.min(4, Math.round(n)) : 2;
+}
+
 // Shared JSON-shape + visual-honesty rules for teach and activity modes. (The
 // practice SYSTEM above is left byte-for-byte as-is so practice never changes.)
-const SCHEMA_SPEC = [
-  'Return ONLY valid JSON: {"title":string,"subtitle":string,"blocks":[Block]}.',
-  'Block = {"kind":string,"prompt"?:string,"text"?:string,"items"?:[string],"pairs"?:[{"left":string,"right":string}],"emoji"?:string,"wordBank"?:[string],"rows"?:number,"answers"?:[string],"svgKey"?:string}.',
-  "Allowed kinds: instructions, passage, fact, image, draw, short-answer, multiple-choice, fill-blank, word-bank, matching, count, missing-numbers, trace, handwriting, math, column-math.",
-  "passage = a short heading in 'prompt' and the teaching text in 'text'. fact = one surprising fact in 'text'. image = a picture, set 'svgKey' only. draw = a box the child draws in, say what in 'prompt'.",
-  `NEVER write a picture as words or a bracketed description like "[a friendly fish]". To show a picture, use an image block whose svgKey is EXACTLY ONE of: ${SVG_KEYS.join(", ")}. If none of those fits, use a draw block telling the child what to draw themselves.`,
-  "Write everything ADDRESSED TO THE CHILD; never write directions to the parent and never say 'your child'. If a name is given use it; otherwise say 'you' and never invent a name.",
-  "Use PLAIN TEXT only: no LaTeX, no markdown. Do not put raw line breaks inside JSON string values. Do not include an answer-key section in the prompts; put any answers only in each block's 'answers' array.",
-];
+// imagesOn flips the picture rule: when AI image generation is enabled the model
+// describes a picture freely in 'imagePrompt'; when off it picks a key from the
+// curated SVG menu, exactly as before.
+function schemaSpec(imagesOn: boolean): string[] {
+  const imageLine = imagesOn
+    ? "image = a picture: set 'imagePrompt' to ONE vivid sentence describing exactly what the picture shows (the subject, a couple of details, a simple setting). Draw anything that fits the topic, you are NOT limited to a list."
+    : `image = a picture: set 'svgKey' to EXACTLY ONE of: ${SVG_KEYS.join(", ")}. If none of those fits, use a draw block instead.`;
+  return [
+    'Return ONLY valid JSON: {"title":string,"subtitle":string,"blocks":[Block]}.',
+    'Block = {"kind":string,"prompt"?:string,"text"?:string,"items"?:[string],"pairs"?:[{"left":string,"right":string}],"emoji"?:string,"wordBank"?:[string],"rows"?:number,"answers"?:[string],"svgKey"?:string,"imagePrompt"?:string}.',
+    "Allowed kinds: instructions, passage, fact, image, draw, short-answer, multiple-choice, fill-blank, word-bank, matching, count, missing-numbers, trace, handwriting, math, column-math.",
+    "passage = a short heading in 'prompt' and the teaching text in 'text'. fact = one surprising fact in 'text'. draw = a box the child draws in, say what in 'prompt'.",
+    imageLine,
+    'NEVER write a picture as words or a bracketed description like "[a friendly fish]"; use an image or draw block.',
+    "Write everything ADDRESSED TO THE CHILD; never write directions to the parent and never say 'your child'. If a name is given use it; otherwise say 'you' and never invent a name.",
+    "Use PLAIN TEXT only: no LaTeX, no markdown. Do not put raw line breaks inside JSON string values. Do not include an answer-key section in the prompts; put any answers only in each block's 'answers' array.",
+  ];
+}
 
-const SYSTEM_TEACH = [
-  "You design printable LEARNING resources for a child (ages 3-12) that TEACH a topic, printed and read at home.",
-  "The child wants to LEARN about the topic. TEACH them first. Do NOT just ask questions.",
-  "Open with ONE warm, exciting hook sentence (an 'instructions' block) that makes the child want to know more.",
-  "Then TEACH with 2 to 4 'passage' blocks. Each passage has a short, fun heading in 'prompt' and 3 to 6 vivid sentences in 'text', using simple words, real examples, and things the child can picture. This teaching is the whole point: make it genuinely interesting and rich.",
-  "Add 2 to 4 'fact' blocks, each a single surprising 'did you know?' fact in 'text'.",
-  "Include at least one 'image' block with an svgKey that fits the topic so there is something to look at; if nothing fits, use a 'draw' block inviting them to draw it.",
-  "Questions are OPTIONAL and come LAST: at most 3 short-answer or multiple-choice items, each answerable from what you just taught. Default to MORE teaching and FEWER questions. A sheet that asks questions WITHOUT teaching first is WRONG.",
-  "Order: hook, then teaching passages and facts and a picture, then (optionally) a few light questions.",
-  "Pitch every word so a curious child of the given age leans in and actually learns something, never like homework.",
-  ...SCHEMA_SPEC,
-].join(" ");
+function systemTeach(imagesOn: boolean): string {
+  return [
+    "You design printable LEARNING resources for a child (ages 3-12) that TEACH a topic, printed and read at home.",
+    "The child wants to LEARN about the topic. TEACH them first. Do NOT just ask questions.",
+    "Open with ONE warm, exciting hook sentence (an 'instructions' block) that makes the child want to know more.",
+    "Then TEACH with 2 to 4 'passage' blocks. Each passage has a short, fun heading in 'prompt' and 3 to 6 vivid sentences in 'text', using simple words, real examples, and things the child can picture. This teaching is the whole point: make it genuinely interesting and rich.",
+    "Add 2 to 4 'fact' blocks, each a single surprising 'did you know?' fact in 'text'.",
+    "Include at least one 'image' block so there is something to look at.",
+    "Questions are OPTIONAL and come LAST: at most 3 short-answer or multiple-choice items, each answerable from what you just taught. Default to MORE teaching and FEWER questions. A sheet that asks questions WITHOUT teaching first is WRONG.",
+    "Order: hook, then teaching passages and facts and a picture, then (optionally) a few light questions.",
+    "Pitch every word so a curious child of the given age leans in and actually learns something, never like homework.",
+    ...schemaSpec(imagesOn),
+  ].join(" ");
+}
 
-const SYSTEM_ACTIVITY = [
-  "You design printable hands-on ACTIVITY sheets for a child (ages 3-12) to DO after printing.",
-  "The DOING is the point. Keep instructions tiny and the activity big and fun.",
-  "For any picture to colour, trace, label, count, or complete, use an 'image' block with a fitting svgKey, or a 'draw' block if none fits. Never describe the picture in words.",
-  "Colour by number: give an 'image' block plus a short answer-to-colour key (e.g. '1 = blue, 2 = green') as an 'instructions' block; the child solves simple problems and colours each part by its answer.",
-  "Make it something a curious child of the given age wants to pick up and finish, never like homework.",
-  ...SCHEMA_SPEC,
-].join(" ");
+function systemActivity(imagesOn: boolean): string {
+  return [
+    "You design printable hands-on ACTIVITY sheets for a child (ages 3-12) to DO after printing.",
+    "The DOING is the point. Keep instructions tiny and the activity big and fun.",
+    "For any picture to colour, trace, label, count, or complete, use an 'image' block. Never describe the picture in words.",
+    "Colour by number: give an 'image' block plus a short answer-to-colour key (e.g. '1 = blue, 2 = green') as an 'instructions' block; the child solves simple problems and colours each part by its answer.",
+    "Make it something a curious child of the given age wants to pick up and finish, never like homework.",
+    ...schemaSpec(imagesOn),
+  ].join(" ");
+}
 
 export function buildMessages(template: WorksheetTemplate, age: number, messages: ChatMessage[], childName?: string) {
   const asks = messages.filter((m) => m.role === "user").map((m) => m.content.trim()).filter(Boolean);
@@ -959,6 +987,7 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
   const benchNote = `An average ${age}-year-old works at this level in school: ${ageBenchmark(age)}. Match that grade level and never go below it. `;
 
   const mode = detectMode(template, messages);
+  const imagesOn = imagesEnabled();
 
   // TEACH: lead with real teaching content; questions optional. (Freeform only.)
   if (mode === "teach") {
@@ -967,7 +996,7 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
       `${who2} ${benchNote}${diffNote}` +
       `Teach it for a ${age}-year-old following the rules above: a hook, rich teaching passages, fun facts, a picture, and only a few light questions at the end if any. Give it a clear, specific title that names the topic. Return ONLY the worksheet JSON.`;
     return [
-      { role: "system", content: SYSTEM_TEACH },
+      { role: "system", content: systemTeach(imagesOn) },
       { role: "user", content: teachUser },
     ];
   }
@@ -980,9 +1009,9 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
         : `This is a "${template.title}" activity (${template.brief}). Parent requests, newest last: ${askText}.`;
     const activityUser =
       `${what} ${who2} ${benchNote}${diffNote}` +
-      `Build it for a ${age}-year-old following the rules above, using a real picture (an image block with a fitting svgKey) wherever one helps. Give it a clear, specific title. Return ONLY the worksheet JSON.`;
+      `Build it for a ${age}-year-old following the rules above, using a real picture (an image block) wherever one helps. Give it a clear, specific title. Return ONLY the worksheet JSON.`;
     return [
-      { role: "system", content: SYSTEM_ACTIVITY },
+      { role: "system", content: systemActivity(imagesOn) },
       { role: "user", content: activityUser },
     ];
   }
@@ -1042,10 +1071,11 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
     if (typeof o.emoji === "string") block.emoji = o.emoji;
     if (typeof o.rows === "number") block.rows = o.rows;
     if (typeof o.svgKey === "string") block.svgKey = o.svgKey;
-    // Visual honesty: a picture must be REAL art from the library. An invalid or
-    // invented svgKey degrades to a draw box ("draw it yourself"), never a blank
-    // or a description pretending to be an image.
-    if (block.kind === "image" && (!block.svgKey || !SVG_ART[block.svgKey])) {
+    if (typeof o.imagePrompt === "string") block.imagePrompt = noDash(o.imagePrompt).trim().slice(0, 300);
+    // Visual honesty: an image must resolve to REAL art, either an imagePrompt we can
+    // generate from or a valid curated svgKey. With neither it degrades to a draw box
+    // ("draw it yourself"), never a blank or a text description pretending to be a picture.
+    if (block.kind === "image" && !block.imagePrompt && !(block.svgKey && SVG_ART[block.svgKey])) {
       block.prompt = block.prompt || (block.svgKey ? `Draw a ${block.svgKey} here.` : "Draw the picture here.");
       block.kind = "draw";
       block.rows = block.rows ?? 7;
@@ -1151,6 +1181,74 @@ function extractJson(text: string): Record<string, unknown> | null {
   }
 }
 
+// Per-mode art direction appended to the model's imagePrompt. Teach gets a warm
+// full-color storybook look; activity gets clean colour-in line art; practice (rare)
+// gets a simple friendly picture. A shared negative prompt keeps text/watermarks out.
+const IMAGE_STYLE: Record<ResourceMode, string> = {
+  teach: "children's book illustration, friendly and colorful, soft rounded shapes, simple, on a clean solid white background",
+  activity: "black and white coloring-book line art, bold clean even outlines, no shading, no fill, no grey, on a pure white background",
+  practice: "simple friendly illustration, clean solid white background",
+};
+const IMAGE_NEG =
+  "text, words, letters, numbers, labels, captions, watermark, signature, frame, border, blurry, deformed, extra limbs, scary, gore, photorealistic, nsfw";
+
+// One image. Returns a data: URL or null (caller degrades nulls to a draw box).
+async function generateImage(imagePrompt: string, mode: ResourceMode, key: string): Promise<string | null> {
+  const base = process.env.VENICE_BASE_URL || "https://api.venice.ai/api/v1";
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 45000);
+  try {
+    const res = await fetch(`${base}/image/generate`, {
+      method: "POST",
+      headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
+      signal: controller.signal,
+      body: JSON.stringify({
+        model: imageModel(),
+        prompt: `${imagePrompt}. ${IMAGE_STYLE[mode]}.`.slice(0, 1400),
+        negative_prompt: IMAGE_NEG,
+        width: 1024,
+        height: 1024,
+        format: "webp",
+        safe_mode: true,
+        return_binary: false,
+        hide_watermark: true,
+      }),
+    });
+    if (!res.ok) return null;
+    const data = (await res.json()) as { images?: string[] };
+    const b64 = data?.images?.[0];
+    return typeof b64 === "string" && b64.length > 0 ? `data:image/webp;base64,${b64}` : null;
+  } catch {
+    return null;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+// Fill the worksheet's image blocks with real generated art (in parallel, capped),
+// then enforce visual honesty: any image block left with neither a generated picture
+// nor a real curated svgKey degrades to an honest "draw it yourself" box, never blank.
+async function attachImages(ws: Worksheet, mode: ResourceMode, key: string): Promise<void> {
+  const targets = ws.blocks.filter((b) => b.kind === "image" && b.imagePrompt);
+  await Promise.all(
+    targets.slice(0, imageMax()).map(async (b) => {
+      const url = await generateImage(b.imagePrompt as string, mode, key);
+      if (url) b.dataUrl = url;
+    }),
+  );
+  for (const b of ws.blocks) {
+    if (b.kind !== "image") continue;
+    const hasArt = b.dataUrl || (b.svgKey && SVG_ART[b.svgKey]);
+    if (!hasArt) {
+      b.kind = "draw";
+      b.prompt = b.prompt || "Draw the picture here.";
+      b.rows = b.rows ?? 7;
+      delete b.imagePrompt;
+      delete b.svgKey;
+    }
+  }
+}
+
 export async function aiWorksheet(
   template: WorksheetTemplate,
   age: number,
@@ -1179,7 +1277,9 @@ export async function aiWorksheet(
     if (!text) return null;
     const parsed = extractJson(text);
     if (!parsed) return null;
-    return normalize(parsed, template, age, childName);
+    const ws = normalize(parsed, template, age, childName);
+    if (ws && imagesEnabled()) await attachImages(ws, detectMode(template, messages), key);
+    return ws;
   } catch {
     return null;
   }

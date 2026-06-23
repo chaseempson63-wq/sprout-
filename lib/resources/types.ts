@@ -21,7 +21,7 @@ export type BlockKind =
   | "missing-numbers" // a sequence with gaps to fill
   | "passage" // a reading/teaching passage (heading in prompt, body in text)
   | "fact" // a "did you know?" fun-fact callout (the fact in text)
-  | "image" // a real picture: on-brand line art looked up by svgKey
+  | "image" // a real picture: AI-generated (imagePrompt -> dataUrl) or curated svg line art
   | "draw"; // a labelled box to draw in
 
 export interface WorksheetBlock {
@@ -34,7 +34,9 @@ export interface WorksheetBlock {
   wordBank?: string[]; // words for a word-bank block
   rows?: number; // blank lines (handwriting) or draw-box height hint
   answers?: string[]; // answer-key entries for this block
-  svgKey?: string; // image block: key into the curated SVG line-art library
+  svgKey?: string; // image block: key into the curated SVG line-art library (legacy fallback)
+  imagePrompt?: string; // image block: a description of the picture, for AI image generation
+  dataUrl?: string; // image block: the generated raster image as a data: URL (set server-side)
 }
 
 export interface Worksheet {
