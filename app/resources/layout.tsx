@@ -48,7 +48,7 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
         </div>
 
         <header className="no-print relative z-10">
-          <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-6 lg:px-8">
+          <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
             <Link href="/resources" className="text-sprout-cream flex items-center gap-2.5 text-lg font-bold">
               <span className="bg-sprout-cream/95 grid size-9 place-items-center rounded-xl shadow-sm">
                 <SproutMascotIcon className="h-6 w-6" />
@@ -70,7 +70,7 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
           </div>
         </header>
 
-        <main className="relative z-10 mx-auto w-full max-w-7xl flex-1 px-6 py-12 sm:py-16 lg:px-12">{children}</main>
+        <main className="relative z-10 mx-auto w-full max-w-7xl flex-1 px-4 py-8 sm:px-6 sm:py-16 lg:px-12">{children}</main>
 
         <footer className="no-print border-sprout-cream/10 text-sprout-cream/55 relative z-10 border-t px-6 py-6 text-center text-xs">
           Made with Sprout ·{" "}

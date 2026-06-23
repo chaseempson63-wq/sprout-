@@ -98,7 +98,7 @@ export default function LibraryHome() {
 
   return (
     <div>
-      <div className="mb-12 flex items-center gap-4 sm:mb-16 sm:gap-5">
+      <div className="mb-8 flex flex-col gap-4 sm:mb-16 sm:flex-row sm:items-center sm:gap-5">
         <span className="bg-sprout-cream/95 grid size-20 shrink-0 place-items-center rounded-3xl shadow-md sm:size-24">
           <SproutMascotIcon className="h-14 w-14 sm:h-16 sm:w-16" />
         </span>
@@ -113,10 +113,10 @@ export default function LibraryHome() {
         </div>
       </div>
 
-      <HowItWorks steps={HOME_STEPS} className="mb-12 sm:mb-16" />
+      <HowItWorks steps={HOME_STEPS} className="mb-8 sm:mb-16" />
 
       {ready && (
-        <div className="mb-12 grid items-stretch gap-6 sm:mb-16 md:grid-cols-[1fr_1.15fr_1fr]">
+        <div className="mb-8 grid items-stretch gap-5 sm:mb-16 sm:gap-6 md:grid-cols-[1fr_1.15fr_1fr]">
           <KidsManager kids={kids} account={account} onAdd={addChild} />
           <BuildYourOwnCard />
           <CommunityCard
@@ -129,7 +129,7 @@ export default function LibraryHome() {
 
       {/* One grouped control area: search, what you're looking at, and how to
           narrow it. Built for a parent seeing this cold, not a power-user strip. */}
-      <div className="border-sprout-cream/15 bg-sprout-cream/[0.05] mb-12 rounded-3xl border p-5 sm:mb-16 sm:p-7">
+      <div className="border-sprout-cream/15 bg-sprout-cream/[0.05] mb-8 rounded-3xl border p-4 sm:mb-16 sm:p-7">
         <GlassPanel radius="rounded-full">
           <div className="flex items-center gap-3 px-5">
             <Search className="size-5 shrink-0 text-[#1B3722]/50" />
@@ -192,10 +192,10 @@ export default function LibraryHome() {
       </div>
 
       {tab === "templates" && (
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
           {templates.map((t, i) => (
             <Link key={t.id} href={`/resources/${t.id}`} style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }} className="group animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500 transition hover:-translate-y-0.5">
-              <div className={`${cardTint(i)} h-full p-7`}>
+              <div className={`${cardTint(i)} h-full p-6 sm:p-7`}>
                 <div className="flex items-start justify-between">
                   <span className={`grid size-11 place-items-center rounded-xl text-2xl ${t.accent}`}>{t.emoji}</span>
                 </div>
@@ -220,7 +220,7 @@ export default function LibraryHome() {
               <p className="text-[#1B3722]/70">Nothing here yet. Make a worksheet, hit save, and it lands here.</p>
             </div>
           ) : (
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-5 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
               {mine.map((w, i) => (
                 <SavedCard key={w.id} i={i} ws={w} onOpen={() => setViewing({ ws: w, savedId: w.id })} onFavorite={() => toggleFavorite(w.id)} onDelete={() => removeWorksheet(w.id)} />
               ))}
@@ -243,7 +243,7 @@ export default function LibraryHome() {
                   <p className="text-[#1B3722]/70">No worksheets here yet. Build one from scratch and publish it.</p>
                 </div>
               ) : (
-                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-5 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
                   {fallbackCreations.map((c, i) => (
                     <div key={c.id} className={`${cardTint(i)} flex flex-col p-5`}>
                       <button onClick={() => setViewing({ ws: c.worksheet })} className="min-w-0 flex-1 text-left">
@@ -274,7 +274,7 @@ export default function LibraryHome() {
               </p>
             </div>
           ) : (
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-5 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
               {posts.map((p, i) => (
                 <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${cardTint(i)} animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-5 duration-500`}>
                   <Link href={`/resources/community/${p.id}`} className="min-w-0 flex-1">
@@ -319,7 +319,7 @@ export default function LibraryHome() {
 function BuildYourOwnCard() {
   return (
     <Link href="/resources/custom" className="group block h-full">
-      <div className="border-sprout-lime/40 group-hover:-translate-y-1 flex h-full flex-col rounded-2xl border bg-gradient-to-br from-[#2E5A35] to-[#16331E] p-8 shadow-[0_26px_55px_-18px_rgba(15,32,20,0.9),inset_0_1px_0_rgba(255,255,255,0.12)] transition">
+      <div className="border-sprout-lime/40 group-hover:-translate-y-1 flex h-full flex-col rounded-2xl border bg-gradient-to-br from-[#2E5A35] to-[#16331E] p-6 shadow-[0_26px_55px_-18px_rgba(15,32,20,0.9),inset_0_1px_0_rgba(255,255,255,0.12)] transition sm:p-8">
         <h2 className="text-sprout-lime text-sm font-bold tracking-wide uppercase">Build your own</h2>
         <span className="bg-sprout-lime text-sprout-ink mt-4 grid size-14 place-items-center rounded-2xl shadow-md">
           <Sprout className="size-7" />
@@ -342,7 +342,7 @@ function BuildYourOwnCard() {
 function CommunityCard({ count, active, onOpen }: { count: number; active: boolean; onOpen: () => void }) {
   return (
     <button onClick={onOpen} className="group h-full w-full text-left">
-      <div className={`${lightCard} flex h-full flex-col p-7 transition group-hover:-translate-y-0.5 ${active ? "ring-2 ring-[#2E5A35]/45" : ""}`}>
+      <div className={`${lightCard} flex h-full flex-col p-6 transition group-hover:-translate-y-0.5 sm:p-7 ${active ? "ring-2 ring-[#2E5A35]/45" : ""}`}>
         <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Community</h2>
         <span className="mt-4 grid size-12 place-items-center rounded-2xl bg-[#2E5A35] text-white shadow-md">
           <Users className="size-6" />
@@ -457,7 +457,7 @@ function KidsManager({
   }
 
   return (
-    <div className={`${lightCard} h-full p-7`}>
+    <div className={`${lightCard} h-full p-6 sm:p-7`}>
       <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Profiles</h2>
       <div className="mt-4 flex flex-wrap items-start gap-4">
         {/* main account */}

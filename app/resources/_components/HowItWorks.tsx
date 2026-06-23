@@ -13,7 +13,7 @@ export type HowStep = {
 export function HowItWorks({ steps, className = "" }: { steps: HowStep[]; className?: string }) {
   return (
     <section className={className}>
-      <div className="grid gap-8 sm:grid-cols-3 sm:gap-12">
+      <div className="grid gap-6 sm:grid-cols-3 sm:gap-12">
         {steps.map((s, i) => (
           <div key={i} className="flex items-start gap-3.5">
             <span className="bg-sprout-lime/15 text-sprout-lime grid size-10 shrink-0 place-items-center rounded-full">
