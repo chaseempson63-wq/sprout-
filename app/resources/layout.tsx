@@ -4,6 +4,7 @@ import { ShieldCheck } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { AccountChip } from "./_components/AccountChip";
 import { FeedbackButton } from "./_components/FeedbackButton";
+import { SupportLink } from "./_components/SupportLink";
 import { GlassFilter, GlassLink } from "@/components/ui/glass";
 import { ResourcesProvider } from "@/lib/resources/store";
 
@@ -63,7 +64,8 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
           <Link href="/resources/privacy" className="hover:text-sprout-cream underline-offset-2 hover:underline">
             your data stays yours, never sold, never used to train AI
           </Link>
-          .
+          {" · "}
+          <SupportLink />
         </footer>
       </div>
     </ResourcesProvider>
