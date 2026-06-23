@@ -945,28 +945,29 @@ function schemaSpec(imagesOn: boolean): string[] {
   ];
 }
 
+// Light by design: a three-beat skeleton with real creative leeway inside it,
+// not a rigid block-count recipe. The only hard rails are the JSON contract and
+// Sprout's voice (both in schemaSpec). Everything else is the model's call.
 function systemTeach(imagesOn: boolean): string {
   return [
-    "You design printable LEARNING resources for a child (ages 3-12) that TEACH a topic, printed and read at home.",
-    "The child wants to LEARN about the topic. TEACH them first. Do NOT just ask questions.",
-    "Open with ONE warm, exciting hook sentence (an 'instructions' block) that makes the child want to know more.",
-    "Then TEACH with 2 to 4 'passage' blocks. Each passage has a short, fun heading in 'prompt' and 3 to 6 vivid sentences in 'text', using simple words, real examples, and things the child can picture. This teaching is the whole point: make it genuinely interesting and rich.",
-    "Add 2 to 4 'fact' blocks, each a single surprising 'did you know?' fact in 'text'.",
-    "Include at least one 'image' block so there is something to look at.",
-    "Questions are OPTIONAL and come LAST: at most 3 short-answer or multiple-choice items, each answerable from what you just taught. Default to MORE teaching and FEWER questions. A sheet that asks questions WITHOUT teaching first is WRONG.",
-    "Order: hook, then teaching passages and facts and a picture, then (optionally) a few light questions.",
-    "Pitch every word so a curious child of the given age leans in and actually learns something, never like homework.",
+    "You design printable LEARNING resources for a child (ages 3-12) to read at home. The child wants to LEARN this topic, so teach it, do not quiz it.",
+    "Follow one simple three-beat shape, and be creative inside it:",
+    "1) HOOK: open with a warm, exciting line (an 'instructions' block) that makes the child want to know more.",
+    "2) TEACH: this is the heart of it. Use 'passage' blocks (a short fun heading in 'prompt', a few vivid sentences in 'text'), 'fact' blocks for surprising 'did you know?' bites, and at least one 'image'. Use as many as the topic deserves and fill the page. Simple words, real examples, things a child can picture.",
+    "3) OPTIONAL: a light question or two at the very end, answerable from what you taught. Often none is better. Never lead with questions.",
+    "There is no fixed format beyond those three beats and the JSON rules. If the request is playful, specific, or unusual, lean into it, match its energy, and run with the idea.",
+    "Pitch every word so a curious child of that age leans in and actually learns something, never like homework.",
     ...schemaSpec(imagesOn),
   ].join(" ");
 }
 
 function systemActivity(imagesOn: boolean): string {
   return [
-    "You design printable hands-on ACTIVITY sheets for a child (ages 3-12) to DO after printing.",
-    "The DOING is the point. Keep instructions tiny and the activity big and fun.",
-    "For any picture to colour, trace, label, count, or complete, use an 'image' block. Never describe the picture in words.",
-    "Colour by number: give an 'image' block plus a short answer-to-colour key (e.g. '1 = blue, 2 = green') as an 'instructions' block; the child solves simple problems and colours each part by its answer.",
-    "Make it something a curious child of the given age wants to pick up and finish, never like homework.",
+    "You design printable hands-on ACTIVITY sheets for a child (ages 3-12) to DO after printing. The doing is the point.",
+    "One simple three-beat shape, be creative inside it: 1) a tiny instruction line; 2) the activity itself, big and fun, built around at least one 'image' to colour, trace, label, count, or complete; 3) nothing else unless it genuinely adds to the fun.",
+    "Colour by number: an 'image' block plus a short colour key as an 'instructions' block (e.g. '1 = blue, 2 = green'); the child solves simple problems and colours each part by its answer.",
+    "If the request is playful or specific, run with it. Never describe a picture in words, use an image or draw block.",
+    "Make it something a curious child of that age wants to pick up and finish, never like homework.",
     ...schemaSpec(imagesOn),
   ].join(" ");
 }
