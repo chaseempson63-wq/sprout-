@@ -2,9 +2,8 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, MessageCircle, Minus, Plus, RefreshCw, Send, SlidersHorizontal, Sparkles, Type, UserPlus, Wand2 } from "lucide-react";
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
-import { HowItWorks, type HowStep } from "../_components/HowItWorks";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY, presetPrompt } from "@/lib/resources/intent";
@@ -27,18 +26,6 @@ const HOW_TO_PROMPT =
 // hand already is when you're done.
 const greenBtn =
   "inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#2E5A35] px-6 text-base font-bold text-white shadow-[0_12px_28px_-10px_rgba(46,90,53,0.7)] transition hover:-translate-y-0.5 hover:bg-[#346a3f] active:scale-95 disabled:pointer-events-none disabled:opacity-50";
-
-// "How this works" teaching cards, tailored to each entry point.
-const CUSTOM_STEPS: HowStep[] = [
-  { icon: MessageCircle, title: "Say what and who", blurb: "Like: a spelling sheet for my 7 year old." },
-  { icon: Type, title: "Add a few details", blurb: "Topic, how many questions, a theme they'd love." },
-  { icon: Wand2, title: "Then shape it", blurb: "Tap harder, easier, or more to dial it in." },
-];
-const TEMPLATE_STEPS: HowStep[] = [
-  { icon: SlidersHorizontal, title: "Set the age", blurb: "Nudge the age up or down so it lands right for your kid." },
-  { icon: Sparkles, title: "Make it theirs", blurb: "Tell the chat a theme they love, like space or dinosaurs." },
-  { icon: Wand2, title: "Shape it", blurb: "Tap harder, easier, or more until it feels right." },
-];
 
 export default function Builder() {
   const params = useParams();
@@ -236,7 +223,7 @@ export default function Builder() {
       )}
 
       {/* header row */}
-      <div className="no-print mb-4 flex flex-wrap items-center justify-between gap-3">
+      <div className="no-print mb-6 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           <GlassLink href="/resources" className="h-9 gap-1 px-3 text-sm">
             <ArrowLeft className="size-4" /> Library
@@ -273,7 +260,7 @@ export default function Builder() {
       </div>
 
       {/* who is this for */}
-      <div className="no-print mb-5 flex flex-wrap items-center gap-2">
+      <div className="no-print mb-7 flex flex-wrap items-center gap-2">
         <span className="text-sprout-cream/60 text-sm">Making for:</span>
         {kids.map((k) => (
           <GlassButton
@@ -301,14 +288,7 @@ export default function Builder() {
         )}
       </div>
 
-      <HowItWorks
-        eyebrow={isCustom ? "How to ask" : "Getting a good one"}
-        steps={isCustom ? CUSTOM_STEPS : TEMPLATE_STEPS}
-        dismissKey={isCustom ? "sprout.how.custom" : "sprout.how.template"}
-        className="no-print mb-6"
-      />
-
-      <div className="grid gap-5 lg:grid-cols-[360px_minmax(0,1fr)]">
+      <div className="grid gap-8 lg:grid-cols-[360px_minmax(0,1fr)]">
         {/* chat */}
         <div className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] flex h-[70vh] flex-col rounded-2xl border lg:sticky lg:top-20">
           <div className="flex-1 space-y-3 overflow-y-auto p-4">
