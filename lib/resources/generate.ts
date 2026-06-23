@@ -915,7 +915,11 @@ function detectMode(template: WorksheetTemplate, messages: ChatMessage[]): Resou
 // to fall back to the curated SVG line-art / draw boxes. The model + per-sheet cap
 // are env-tunable so quality vs cost can be dialed without a code change.
 function imagesEnabled(): boolean {
-  return process.env.RESOURCES_IMAGES !== "0";
+  // OFF by default (opt-in via RESOURCES_IMAGES=1). The blocking per-sheet image
+  // call adds ~15-25s latency, costs real money per attempt, and the extra Venice
+  // load starves the text call (rate-limit -> the whole sheet drops to the
+  // fallback). Re-enable only behind a non-blocking, budget-aware design.
+  return process.env.RESOURCES_IMAGES === "1";
 }
 function imageModel(): string {
   return process.env.VENICE_IMAGE_MODEL || "venice-sd35";
