@@ -103,7 +103,10 @@ export default function LibraryHome() {
           <SproutMascotIcon className="h-11 w-11 sm:h-16 sm:w-16" />
         </span>
         <div>
-          <h1 className="text-sprout-cream text-4xl font-bold tracking-[-0.02em] sm:text-6xl">
+          {/* Mobile: never wrap (a 2nd line would jump the page every few seconds
+              as the word cycles); scale the font to the viewport so the longest
+              word still fits one line. Desktop is unchanged (sm: restores). */}
+          <h1 className="text-sprout-cream text-[clamp(1.15rem,6vw,2.25rem)] font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl sm:whitespace-normal">
             We were born to <Typewriter words={BORN_TO} className="text-sprout-lime" />
           </h1>
           <p className="text-sprout-cream/70 mt-2">Pick a worksheet, tell Sprout about your kid, and print it in a minute.</p>
