@@ -93,6 +93,7 @@ export default function LibraryHome() {
   const tabs: { key: Tab; label: string; count: number }[] = [
     { key: "templates", label: "Templates", count: templates.length },
     { key: "mine", label: "My worksheets", count: mine.length },
+    { key: "community", label: "Community", count: communityCount },
   ];
 
   return (
@@ -115,7 +116,7 @@ export default function LibraryHome() {
       <HowItWorks steps={HOME_STEPS} className="mb-12 sm:mb-16" />
 
       {ready && (
-        <div className="mb-12 grid items-stretch gap-6 sm:mb-16 md:grid-cols-3">
+        <div className="mb-12 grid items-stretch gap-6 sm:mb-16 md:grid-cols-[1fr_1.15fr_1fr]">
           <KidsManager kids={kids} account={account} onAdd={addChild} />
           <BuildYourOwnCard />
           <CommunityCard
@@ -126,42 +127,72 @@ export default function LibraryHome() {
         </div>
       )}
 
-      <GlassPanel radius="rounded-full" className="mb-4">
-        <div className="flex items-center gap-2 px-4">
-          <Search className="size-4 shrink-0 text-[#1B3722]/50" />
-          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="h-11 w-full bg-transparent text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/45" />
-          {query && (
-            <button onClick={() => setQuery("")} aria-label="Clear" className="text-[#1B3722]/50 hover:text-[#1B3722]">
-              <X className="size-4" />
-            </button>
-          )}
-        </div>
-      </GlassPanel>
+      {/* One grouped control area: search, what you're looking at, and how to
+          narrow it. Built for a parent seeing this cold, not a power-user strip. */}
+      <div className="border-sprout-cream/15 bg-sprout-cream/[0.05] mb-12 rounded-3xl border p-5 sm:mb-16 sm:p-7">
+        <GlassPanel radius="rounded-full">
+          <div className="flex items-center gap-3 px-5">
+            <Search className="size-5 shrink-0 text-[#1B3722]/50" />
+            <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="h-12 w-full bg-transparent text-[15px] text-[#1B3722] outline-none placeholder:text-[#1B3722]/45" />
+            {query && (
+              <button onClick={() => setQuery("")} aria-label="Clear search" className="text-[#1B3722]/50 hover:text-[#1B3722]">
+                <X className="size-4" />
+              </button>
+            )}
+          </div>
+        </GlassPanel>
 
-      {tab !== "community" && (
-        <div className="mb-8 flex flex-wrap gap-2">
-          <TopicChip active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
-          {TOPICS.map((t) => (
-            <TopicChip key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
+        <div className="mt-6 flex flex-wrap gap-2.5">
+          {tabs.map((t) => (
+            <GlassButton
+              key={t.key}
+              onClick={() => setTab(t.key)}
+              className={`h-10 gap-2 px-4 text-sm ${tab === t.key ? "ring-2 ring-[#2E5A35]/45" : ""}`}
+            >
+              {t.label}
+              <span className="rounded-full bg-[#1B3722]/10 px-1.5 text-xs">{t.count}</span>
+            </GlassButton>
           ))}
         </div>
-      )}
 
-      <div className="mb-8 flex flex-wrap gap-2">
-        {tabs.map((t) => (
-          <GlassButton
-            key={t.key}
-            onClick={() => setTab(t.key)}
-            className={`h-9 gap-2 px-4 text-sm ${tab === t.key ? "ring-2 ring-[#2E5A35]/45" : ""}`}
-          >
-            {t.label}
-            <span className="rounded-full bg-[#1B3722]/10 px-1.5 text-xs">{t.count}</span>
-          </GlassButton>
-        ))}
+        <div className="border-sprout-cream/10 mt-5 border-t pt-5">
+          {tab === "community" ? (
+            <div className="flex flex-wrap items-center gap-2.5">
+              <GlassPanel radius="rounded-full">
+                <div className="flex items-center gap-2 px-4">
+                  <Users className="size-4 shrink-0 text-[#1B3722]/50" />
+                  <input
+                    value={creator}
+                    onChange={(e) => setCreator(e.target.value)}
+                    placeholder="Filter by creator..."
+                    className="h-10 w-44 bg-transparent text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/45"
+                  />
+                  {creator && (
+                    <button onClick={() => setCreator("")} aria-label="Clear creator filter" className="text-[#1B3722]/50 hover:text-[#1B3722]">
+                      <X className="size-4" />
+                    </button>
+                  )}
+                </div>
+              </GlassPanel>
+              {account && (
+                <GlassButton onClick={() => setYoursOn((v) => !v)} className={`h-10 px-5 text-sm ${yoursOn ? "ring-2 ring-[#2E5A35]/45" : ""}`}>
+                  Yours
+                </GlassButton>
+              )}
+            </div>
+          ) : (
+            <div className="flex flex-wrap gap-2.5">
+              <TopicChip active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
+              {TOPICS.map((t) => (
+                <TopicChip key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
       {tab === "templates" && (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {templates.map((t, i) => (
             <Link key={t.id} href={`/resources/${t.id}`} style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }} className="group animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500 transition hover:-translate-y-0.5">
               <div className={`${cardTint(i)} h-full p-7`}>
@@ -189,7 +220,7 @@ export default function LibraryHome() {
               <p className="text-[#1B3722]/70">Nothing here yet. Make a worksheet, hit save, and it lands here.</p>
             </div>
           ) : (
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {mine.map((w, i) => (
                 <SavedCard key={w.id} i={i} ws={w} onOpen={() => setViewing({ ws: w, savedId: w.id })} onFavorite={() => toggleFavorite(w.id)} onDelete={() => removeWorksheet(w.id)} />
               ))}
@@ -200,34 +231,9 @@ export default function LibraryHome() {
 
       {tab === "community" && (
         <div>
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <p className="text-sprout-cream/65 flex items-center gap-2 text-sm">
-              <Globe className="size-4" /> Worksheets built and shared by Sprout parents. Tap a maker to see everything they have made.
-            </p>
-            <div className="flex flex-wrap items-center gap-2">
-              <GlassPanel radius="rounded-full">
-                <div className="flex items-center gap-2 px-3">
-                  <Users className="size-4 shrink-0 text-[#1B3722]/50" />
-                  <input
-                    value={creator}
-                    onChange={(e) => setCreator(e.target.value)}
-                    placeholder="Filter by maker..."
-                    className="h-9 w-40 bg-transparent text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/45"
-                  />
-                  {creator && (
-                    <button onClick={() => setCreator("")} aria-label="Clear maker filter" className="text-[#1B3722]/50 hover:text-[#1B3722]">
-                      <X className="size-4" />
-                    </button>
-                  )}
-                </div>
-              </GlassPanel>
-              {account && (
-                <GlassButton onClick={() => setYoursOn((v) => !v)} className={`h-9 px-4 text-sm ${yoursOn ? "ring-2 ring-[#2E5A35]/45" : ""}`}>
-                  Yours
-                </GlassButton>
-              )}
-            </div>
-          </div>
+          <p className="text-sprout-cream/65 mb-6 flex items-center gap-2 text-sm">
+            <Globe className="size-4" /> Worksheets built and shared by Sprout parents. Tap a creator to see everything they have made.
+          </p>
 
           {socialOff ? (
             <>
@@ -237,7 +243,7 @@ export default function LibraryHome() {
                   <p className="text-[#1B3722]/70">No worksheets here yet. Build one from scratch and publish it.</p>
                 </div>
               ) : (
-                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                   {fallbackCreations.map((c, i) => (
                     <div key={c.id} className={`${cardTint(i)} flex flex-col p-5`}>
                       <button onClick={() => setViewing({ ws: c.worksheet })} className="min-w-0 flex-1 text-left">
@@ -268,7 +274,7 @@ export default function LibraryHome() {
               </p>
             </div>
           ) : (
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {posts.map((p, i) => (
                 <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${cardTint(i)} animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-5 duration-500`}>
                   <Link href={`/resources/community/${p.id}`} className="min-w-0 flex-1">
@@ -307,22 +313,22 @@ export default function LibraryHome() {
   );
 }
 
-// Equal-billing sibling to the Profiles card: the freeform "I know what I want"
-// path into the same builder, and the only path whose sheets can be published.
-// Compact (half its old footprint) so all three top cards read as one row.
+// The hero of the top row, not an equal sibling. Building on the platform is the
+// behaviour we most want, so this card is the green one and the widest column
+// (~15% wider, set on the grid) so it pulls the eye first.
 function BuildYourOwnCard() {
   return (
     <Link href="/resources/custom" className="group block h-full">
-      <div className={`${lightCard} flex h-full flex-col p-7 transition group-hover:-translate-y-0.5`}>
-        <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Build your own</h2>
-        <span className="mt-4 grid size-12 place-items-center rounded-2xl bg-[#2E5A35] text-white shadow-md">
-          <Sprout className="size-6" />
+      <div className="border-sprout-lime/40 group-hover:-translate-y-1 flex h-full flex-col rounded-2xl border bg-gradient-to-br from-[#2E5A35] to-[#16331E] p-8 shadow-[0_26px_55px_-18px_rgba(15,32,20,0.9),inset_0_1px_0_rgba(255,255,255,0.12)] transition">
+        <h2 className="text-sprout-lime text-sm font-bold tracking-wide uppercase">Build your own</h2>
+        <span className="bg-sprout-lime text-sprout-ink mt-4 grid size-14 place-items-center rounded-2xl shadow-md">
+          <Sprout className="size-7" />
         </span>
-        <h3 className="mt-3 text-lg font-bold text-[#1B3722]">Start from scratch</h3>
-        <p className="mt-1 text-sm leading-relaxed text-[#1B3722]/70">
-          Describe any worksheet and Sprout builds it. Yours to share with the community.
+        <h3 className="text-sprout-cream mt-4 text-xl font-bold">Start from scratch</h3>
+        <p className="text-sprout-cream/75 mt-1.5 text-sm leading-relaxed">
+          Describe any worksheet and Sprout builds it. Yours to keep, print, and share.
         </p>
-        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-[#2E5A35]">
+        <span className="text-sprout-lime mt-auto inline-flex items-center gap-1 pt-5 text-sm font-bold">
           Build one <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
         </span>
       </div>
@@ -357,7 +363,7 @@ function TopicChip({ active, onClick, label, emoji }: { active: boolean; onClick
   return (
     <GlassButton
       onClick={onClick}
-      className={`h-9 gap-1.5 px-4 text-sm ${active ? "ring-2 ring-[#2E5A35]/45" : ""}`}
+      className={`h-10 gap-1.5 px-4 text-sm ${active ? "ring-2 ring-[#2E5A35]/45" : ""}`}
     >
       <span>{emoji}</span>
       {label}
