@@ -70,7 +70,7 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
           </div>
         </header>
 
-        <main className="relative z-10 mx-auto w-full max-w-7xl flex-1 px-6 py-8 lg:px-8">{children}</main>
+        <main className="relative z-10 mx-auto w-full max-w-7xl flex-1 px-6 py-10 sm:py-12 lg:px-10">{children}</main>
 
         <footer className="no-print border-sprout-cream/10 text-sprout-cream/55 relative z-10 border-t px-6 py-6 text-center text-xs">
           Made with Sprout ·{" "}

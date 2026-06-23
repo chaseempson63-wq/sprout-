@@ -86,6 +86,15 @@ export default function CommunityPostPage() {
 
           <WorksheetDoc worksheet={post.worksheet} />
 
+          <div className="no-print mt-5 flex justify-center">
+            <button
+              onClick={() => window.print()}
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#2E5A35] px-6 text-base font-bold text-white shadow-[0_12px_28px_-10px_rgba(46,90,53,0.7)] transition hover:-translate-y-0.5 hover:bg-[#346a3f] active:scale-95"
+            >
+              <Download className="size-5" /> Download PDF
+            </button>
+          </div>
+
           <div className="no-print mt-8">
             <h2 className="text-sprout-cream mb-3 text-xl font-bold">
               Comments {post.commentCount > 0 ? <span className="text-sprout-cream/50">· {post.commentCount}</span> : null}

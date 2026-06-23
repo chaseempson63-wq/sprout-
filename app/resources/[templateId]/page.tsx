@@ -2,8 +2,9 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, MessageCircle, Minus, Plus, RefreshCw, Send, SlidersHorizontal, Sparkles, Type, UserPlus, Wand2 } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
+import { HowItWorks, type HowStep } from "../_components/HowItWorks";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY, presetPrompt } from "@/lib/resources/intent";
@@ -21,6 +22,23 @@ function summarize(w: Worksheet): string {
 // Shown first in the freeform builder so a blank input is never intimidating.
 const HOW_TO_PROMPT =
   "Tell me what you want and I'll build it. The more you describe, the better it comes out. Try something like: \"a one-page worksheet on the water cycle for a 9-year-old, a short reading part then 5 questions\" or \"beginner addition with a dinosaur theme, 12 problems with answer boxes.\" Helpful to include: the topic, the age, how many questions, and any theme.";
+
+// Big green finish buttons mirrored at the bottom of the worksheet, where your
+// hand already is when you're done.
+const greenBtn =
+  "inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#2E5A35] px-6 text-base font-bold text-white shadow-[0_12px_28px_-10px_rgba(46,90,53,0.7)] transition hover:-translate-y-0.5 hover:bg-[#346a3f] active:scale-95 disabled:pointer-events-none disabled:opacity-50";
+
+// "How this works" teaching cards, tailored to each entry point.
+const CUSTOM_STEPS: HowStep[] = [
+  { icon: MessageCircle, title: "Say what and who", blurb: "Like: a spelling sheet for my 7 year old." },
+  { icon: Type, title: "Add a few details", blurb: "Topic, how many questions, a theme they'd love." },
+  { icon: Wand2, title: "Then shape it", blurb: "Tap harder, easier, or more to dial it in." },
+];
+const TEMPLATE_STEPS: HowStep[] = [
+  { icon: SlidersHorizontal, title: "Set the age", blurb: "Nudge the age up or down so it lands right for your kid." },
+  { icon: Sparkles, title: "Make it theirs", blurb: "Tell the chat a theme they love, like space or dinosaurs." },
+  { icon: Wand2, title: "Shape it", blurb: "Tap harder, easier, or more until it feels right." },
+];
 
 export default function Builder() {
   const params = useParams();
@@ -283,6 +301,13 @@ export default function Builder() {
         )}
       </div>
 
+      <HowItWorks
+        eyebrow={isCustom ? "How to ask" : "Getting a good one"}
+        steps={isCustom ? CUSTOM_STEPS : TEMPLATE_STEPS}
+        dismissKey={isCustom ? "sprout.how.custom" : "sprout.how.template"}
+        className="no-print mb-6"
+      />
+
       <div className="grid gap-5 lg:grid-cols-[360px_minmax(0,1fr)]">
         {/* chat */}
         <div className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] flex h-[70vh] flex-col rounded-2xl border lg:sticky lg:top-20">
@@ -396,6 +421,19 @@ export default function Builder() {
           ) : worksheet ? (
             <div key={idx} className="animate-in fade-in zoom-in-95 slide-in-from-bottom-3 fill-mode-both duration-500">
               <WorksheetDoc worksheet={worksheet} />
+              <div className="no-print mt-5 flex flex-wrap items-center justify-center gap-3">
+                <button onClick={save} className={greenBtn}>
+                  <Check className="size-5" /> Save
+                </button>
+                {isCustom && (
+                  <button onClick={() => void publishCustom()} disabled={publishedIdx === idx} className={greenBtn}>
+                    <Globe className="size-5" /> {publishedIdx === idx ? "Published" : "Publish"}
+                  </button>
+                )}
+                <button onClick={() => window.print()} className={greenBtn}>
+                  <Download className="size-5" /> Download PDF
+                </button>
+              </div>
             </div>
           ) : (
             <div className="text-sprout-cream/60 flex h-[60vh] items-center justify-center rounded-2xl border border-dashed border-sprout-cream/20 px-6 text-center text-sm">
