@@ -12,6 +12,7 @@ import { OnboardingVisual } from "./_components/OnboardingVisuals";
 import { Mascot } from "./_components/Mascot";
 import { Waitlist } from "./_components/Waitlist";
 import { PartnerDashboard } from "./_components/PartnerDashboard";
+import { PhoneShowcase } from "./_components/PhoneShowcase";
 
 /* A rendered App Store phone screenshot, floated on the green canvas. */
 function PhoneShot({
@@ -166,25 +167,37 @@ export default function HomeV2() {
 
         <div className="relative max-w-7xl mx-auto">
 
-          <div className="flex items-center justify-center gap-3 md:gap-6" style={{ perspective: "1800px" }}>
+          {/* Desktop (md+): the fanned 3D trio, unchanged. */}
+          <div className="hidden md:flex items-center justify-center gap-6" style={{ perspective: "1800px" }}>
             <PhoneShot
               src="/app-capture.png"
               alt="Capturing a moment in the Sprout app"
               tilt="rotateY(16deg) rotateX(4deg)"
-              className="hidden md:block w-[30%]"
+              className="w-[30%]"
             />
             <PhoneShot
               src="/app-week.png"
               alt="A week sorted into a printable report"
               tilt="rotateY(0deg) rotateX(2deg) translateZ(30px)"
-              className="w-[64%] sm:w-[48%] md:w-[34%] relative z-10"
+              className="w-[34%] relative z-10"
             />
             <PhoneShot
               src="/app-journey.png"
               alt="A timeline of the year, kept"
               tilt="rotateY(-16deg) rotateX(4deg)"
-              className="hidden md:block w-[30%]"
+              className="w-[30%]"
             />
+          </div>
+
+          {/* Mobile (<md): swipeable carousel — one full-size phone per view,
+              swipe through all three, pagination dots below. Opens centered on
+              the report (middle) phone, matching the desktop trio's emphasis. */}
+          <div className="md:hidden">
+            <PhoneShowcase>
+              <PhoneShot src="/app-capture.png" alt="Capturing a moment in the Sprout app" tilt="none" className="w-[74vw] max-w-[280px]" />
+              <PhoneShot src="/app-week.png" alt="A week sorted into a printable report" tilt="none" className="w-[74vw] max-w-[280px]" />
+              <PhoneShot src="/app-journey.png" alt="A timeline of the year, kept" tilt="none" className="w-[74vw] max-w-[280px]" />
+            </PhoneShowcase>
           </div>
 
         </div>
