@@ -90,19 +90,25 @@ async function main() {
 
   let done = 0;
   const failed = [];
-  for (const it of todo) {
-    process.stdout.write(`  ${it.key} ... `);
-    try {
-      await generateOne(it.key, it.prompt, apiKey);
-      done++;
-      console.log("ok");
-    } catch (e) {
-      failed.push(it.key);
-      console.log(`FAILED (${e.message})`);
+  const queue = [...todo];
+  const CONCURRENCY = Math.max(1, Number(process.env.GEN_CONCURRENCY) || 4);
+  async function worker() {
+    while (queue.length) {
+      const it = queue.shift();
+      if (!it) break;
+      try {
+        await generateOne(it.key, it.prompt, apiKey);
+        done++;
+        console.log(`  ok    ${it.key}  (${done + failed.length}/${todo.length})`);
+      } catch (e) {
+        failed.push(it.key);
+        console.log(`  FAIL  ${it.key}  (${e.message})`);
+      }
     }
-    // small gap so a long run does not trip the per-minute rate limit
-    await new Promise((r) => setTimeout(r, 1200));
   }
+  // A few in parallel so the run finishes in minutes. If a few rate-limit and
+  // fail, they are listed and a re-run (idempotent) picks up only those.
+  await Promise.all(Array.from({ length: Math.min(CONCURRENCY, queue.length) }, () => worker()));
 
   console.log(`\nGenerated ${done}, skipped ${existing.size}, failed ${failed.length}.`);
   if (failed.length) console.log(`Re-run to retry the ${failed.length} that failed: ${failed.join(", ")}`);
