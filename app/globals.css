@@ -24,6 +24,14 @@
   --font-sans: var(--font-nunito);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-nunito);
+
+  /* Headlines, subheads, and labels read THICK. Remap the weight tokens so the
+     main headlines/subheads (font-bold) and display accents (font-extrabold)
+     hit Nunito Black, and labels (font-semibold) go heavy too. Body (normal 400
+     / medium 500) stays exactly as is. */
+  --font-weight-semibold: 700;
+  --font-weight-bold: 900;
+  --font-weight-extrabold: 900;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
