@@ -9,11 +9,12 @@ masked presets (`1150413`), the Build-your-own + Community social layer
 pagination + banner/mascot-color fix (`3b893d4`), resource MODES — teach mode +
 honest SVG visuals + the field-coercion fix (`d694a2e` / `e56a5bd`), and the
 worksheet layout fixes — banner wrap + draw-box cap + de-duped fact label
-(`160add5`). See section 3. **UPDATE 2026-06-24: real AI image generation is now
-LIVE on prod (the 24-icon SVG library is superseded for teach/activity sheets) —
-see section 7. Raster image gen is NO LONGER deferred.** **Next: the multi-page
-BOOKLET format (pass 2), built on this proven single-sheet engine. KNOWN ITEM for
-the booklet pass: the orphaned-footer case is
+(`160add5`). See section 3. **UPDATE 2026-06-24: kid illustrations are now solved via
+a PRE-BUILT set of 86 static illustrations the model matches by imageKey (free,
+instant, prod-verified) — see section 7. Live per-sheet image gen was tried and
+rejected (cost/latency/rate-limit); it's dormant behind `RESOURCES_IMAGES=1`.**
+**Next: the multi-page BOOKLET format (pass 2), built on this proven single-sheet
+engine. KNOWN ITEM for the booklet pass: the orphaned-footer case is
 "better, not bulletproof" (`160add5` minimized it but CSS print can't guarantee it,
 and Lightning CSS strips `break-*` + Chrome ignores `break-before`) — solve it there
 via real page-height measurement, NOT more print-CSS hacks.**
@@ -397,56 +398,57 @@ decimals)" — built from the current age + `ageBenchmark` + the template intent
   (compose a richer message on click) or in `lib/resources/generate.ts` /
   `intent.ts`. `ageBenchmark` + `intentPreamble` already exist to draw context from.
 
-## 7. AI image generation — LIVE on prod (2026-06-24, `b5876da`)
+## 7. Kid illustrations — PRE-BUILT SET, live + prod-verified (2026-06-24, `3eaf7fe`)
 
-**What changed and why.** The "fish looked like a crap outline" problem was never
-Venice and never the model: the text model (`qwen3`) cannot draw, it only ever
-picked a key from the 24 hand-coded SVGs in `svg-art.ts`. That library is now
-superseded for teach/activity sheets by REAL image generation via Venice's
-`/image/generate` endpoint.
+**The "fish was a crap outline" thread, resolved.** It was never Venice and never
+the text model: `qwen3` cannot draw, it only ever picked a key from the 24 hand-coded
+SVGs in `svg-art.ts`. The final fix is a **pre-built illustration set**, NOT live
+per-sheet generation (see "what we tried first" below for why).
 
-**How it works.** Image blocks now carry an `imagePrompt` (the model describes the
-picture in words, no longer limited to a fixed list). Server-side, `attachImages()`
-calls `generateImage()` for each (in parallel, capped), and sets `dataUrl` (base64
-webp). Art direction is mode-aware: teach = warm full-colour storybook, activity =
-clean coloring-book line art. Visual honesty preserved: any image that can't be
-generated (off / failure / over-cap / invalid) degrades to an honest draw box,
-never a blank. **Practice + the 30 structured templates emit no image blocks, so
-they make ZERO image calls (no added cost/latency).**
+**How it works now.** `lib/resources/illustrations.ts` is a catalog of **86 curated
+kid topics** (animals, ocean, space, nature, dinosaurs, body, vehicles, food, places).
+They were generated ONCE, offline, by `scripts/gen-illustrations.mjs` (Venice
+`venice-sd35`, 1024² webp, ~$0.86 total) and committed as static assets in
+`public/resources/illustrations/<key>.webp` (~16MB). At request time the model picks
+the closest `imageKey` from the list (`ILLUSTRATION_HINT` injected in `schemaSpec`);
+`normalize` validates it against the catalog (casing/space-normalized) and degrades an
+unknown key to an honest draw box; `WorksheetDoc` renders it through
+`IllustrationImg.tsx` (a client component whose `onError` falls back to a draw box, so
+a missing asset never shows broken). **No image API call at request time → free,
+instant, reliable.** Practice + the 30 templates emit no image blocks at all.
 
-**Also shipped same commit:** the teach/activity prompts were loosened from rigid
-block-counts to a light 3-beat skeleton + explicit creative freedom (Chase's
-"3-step structure, branding the only hard rail" ask). The JSON contract + Sprout
-voice (in `schemaSpec`) are the only hard rails. The 30 templates are untouched.
+**Prod-verified:** every asset returns `200 image/webp`; "teach me about sea turtles"
+→ `imageKey: sea-turtle`, "volcanoes" → `volcano`; `source: ai`, ~29s (text only), no
+fallback. Spot-checked 8 (cat, frog, volcano, solar-system, sea-turtle, rocket, tree,
+apple) — warm children's-book style, strong and consistent.
 
-**Env knobs (no code change):**
-- `RESOURCES_IMAGES=0` — off switch, reverts to the SVG line art.
-- `VENICE_IMAGE_MODEL` — default `venice-sd35`; try `flux-2-pro` / `nano-banana-pro`
-  for higher quality (more credits).
-- `VENICE_IMAGE_MAX` — images per sheet, default 2 (cost + latency cap, 1-4).
+**To add or redo a topic:** edit `illustrations.ts`, put a Venice key in `.env.local`,
+run `node scripts/gen-illustrations.mjs` (idempotent — only fills missing/failed; use
+`GEN_CONCURRENCY=2` if it rate-limits), then commit the new webp(s).
 
-**Status.** Deployed `b5876da`, prod deployment `dpl_371SErdCtK8XwzmgVvGdRsxsvFr6`
-READY / target production / aliased to hisprout.app. The deterministic LOGIC is
-stress-tested 26/26 (Venice mocked: routing, the image cap, every degradation
-path, the off-switch, zero-cost-on-practice). **Real image QUALITY is pending
-Chase's eval on prod — iterate model/prompt from there.** The Venice key is
-Production-scoped, so preview deploys fall back to no-images (expected, same as
-freeform gen).
+**Also shipped (`b5876da`, same thread):** teach/activity prompts loosened from rigid
+block-counts to a light 3-beat skeleton + creative freedom (Chase's "3-step, branding
+the only rail" ask). JSON contract + voice in `schemaSpec` are the only rails; the 30
+templates are untouched.
 
-**Open considerations for next session:**
-- Latency: image gen adds a few seconds per teach/activity sheet (text call, then
-  up to 2 images in parallel; 45s per-image timeout then graceful degrade).
-- Storage: generated images persist as base64 in saved worksheets (localStorage),
-  same pattern as child photos. Fine now; if it gets heavy, move to blob storage.
-  NOTE: publishing an image-heavy custom sheet would also bloat the Supabase
-  `resource_posts` row when the (dormant) social layer is provisioned.
-- `hide_watermark: true` is requested but tier-dependent; confirm on the real eval.
+**What we tried first and rejected (don't repeat it):** LIVE per-sheet Venice image
+gen (`/image/generate`; model writes `imagePrompt` → server `attachImages`/
+`generateImage` fills a base64 `dataUrl`). It produced real, good illustrations BUT was
+the wrong design: it blocked the sheet ~25s, cost real $ on every attempt, and its
+Venice load rate-limited the TEXT call so the whole sheet dropped to the "try again"
+fallback (Chase paid ~10c and saw no image). That code is still present but **dormant
+behind `RESOURCES_IMAGES=1`** (off by default; `imagesEnabled()` requires `=1`).
+Decomposition proved the ~26s text latency is qwen3 itself, separate from images.
+**Lesson: never block the user response on slow/paid per-request generation — pre-build
+or cache static assets instead.**
 
-**Key files:** `lib/resources/generate.ts` (`imagesEnabled`/`imageModel`/`imageMax`,
-`schemaSpec`/`systemTeach`/`systemActivity` now `imagesOn`-aware, `generateImage`,
-`attachImages`, image-aware `normalize`), `lib/resources/types.ts` (`imagePrompt` +
-`dataUrl` on `WorksheetBlock`), `app/resources/_components/WorksheetDoc.tsx` (renders
-the `<img>`, print rule `.worksheet-img`), `.env.example`.
+**Key files:** `lib/resources/illustrations.ts` (the 86-topic catalog + `imageKey`
+validation), `scripts/gen-illustrations.mjs` (one-time generator), `public/resources/
+illustrations/*.webp` (the assets), `lib/resources/generate.ts` (`schemaSpec` →
+`imageKey`, `normalize` validates against the catalog), `app/resources/_components/
+IllustrationImg.tsx` (renders the asset, `onError`→draw box), `WorksheetDoc.tsx`,
+`lib/resources/types.ts` (`imageKey` on `WorksheetBlock`). Dormant live-gen path:
+`imagesEnabled`/`imageModel`/`imageMax`/`generateImage`/`attachImages` in `generate.ts`.
 
 ## File map (so nothing needs re-explaining)
 
