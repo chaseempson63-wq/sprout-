@@ -1,24 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Nunito } from "next/font/google";
+import { Geist_Mono, Nunito } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-// Nunito 700 — scoped to the Sprout mascot's speech bubble in Mascot.tsx.
-// The mascot is a character; this font is its voice. Don't apply it
-// elsewhere — the rest of the page stays on Geist / Cabinet Grotesk.
+// Nunito: the rounded, warm voice of the entire product. Mirrors the app's
+// SF Pro Rounded interior. One friendly rounded family from body to display,
+// with weight (not a second typeface) carrying the hierarchy. Variable font,
+// full weight range loaded.
 const nunito = Nunito({
   variable: "--font-nunito",
-  weight: "700",
+  subsets: ["latin"],
+});
+
+// Geist Mono: kept only for the occasional monospace accent.
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -36,17 +32,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} h-full antialiased`}
+      className={`${nunito.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <head>
-        {/* Cabinet Grotesk for display headlines — distinct from Geist body
-            for proper hierarchy. Free via Fontshare. */}
-        <link rel="preconnect" href="https://api.fontshare.com" />
-        <link
-          rel="stylesheet"
-          href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800,900&display=swap"
-        />
-      </head>
       <body className="min-h-full flex flex-col">
         {children}
         <Analytics />

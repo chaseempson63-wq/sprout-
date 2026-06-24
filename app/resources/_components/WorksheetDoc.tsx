@@ -42,7 +42,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
       return (
         <div>
           {prompt}
-          <div className="mt-3 text-4xl font-bold tracking-[0.15em] text-[#1B3722]/20 select-none" style={{ fontFamily: "var(--font-geist-sans)" }}>
+          <div className="mt-3 text-4xl font-bold tracking-[0.15em] text-[#1B3722]/20 select-none" style={{ fontFamily: "var(--font-nunito)" }}>
             {block.text}
           </div>
           <div className="mt-3 border-b-2 border-dashed border-[#1B3722]/25 pb-8" />

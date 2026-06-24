@@ -64,37 +64,31 @@ Sprout is a **premium editorial wellness-tier homeschool product** — confident
 
 ## Typography
 
-### Locked: two-font system (updated 2026-05-14)
+### Locked: one warm rounded family (updated 2026-06-24)
 
-**Cabinet Grotesk** — display headlines (loaded via Fontshare CDN in layout.tsx).
-- Use via `.font-display` utility class (defined in globals.css)
-- Weights: 700 Bold, 800 Extra Bold for big display moments
-- Letter-spacing: `-0.035em` (tight)
-- Apply to ALL major H1/H2 headlines, big numbers ($29, $249), key card titles
+Sprout runs on a single rounded typeface, the same warmth across the app, the website, the weekly report, and the printables. Rounded terminals are the whole point: this is a kid-facing product, so the type reads warm, not corporate. Hierarchy comes from weight and size, never a second typeface.
 
-**Geist Sans** (Vercel's font, free, geometric sans) — body text.
-- Default font for everything that's not a display headline
-- Weights: 400 Regular (body), 700 Bold (subheads, emphasis)
-- No need for utility class — it's the default via `--font-geist-sans`
+- **App interior:** SF Pro Rounded (Apple's native rounded system face). Everything routes through `Theme.swift`'s `Typo` helper plus a global `.fontDesign(.rounded)` at the root. No sharp SF Pro anywhere, including the PDF report.
+- **Web:** Nunito (Google Fonts, free, variable), the closest rounded analog to SF Pro Rounded. Loaded full-weight in layout.tsx, exposed as `--font-nunito` and wired to `--font-sans`. Display uses the `.font-display` utility (defined in globals.css); body is the default.
 
-### Why two fonts now (was previously one)
-
-Single-font system left headlines and body subheads visually too close — same family, similar weights, only size separation. Adding Cabinet Grotesk for display creates real hierarchy: bold geometric *display* sans for headlines, clean *body* sans for everything else. Premium editorial feel without going serif.
+**Why the change (was Cabinet Grotesk + Geist Sans):** the old two-font system read too sharp and professional for a kids' app. The app onboarding already ran on SF Pro Rounded and felt right, so the brand collapsed to that one warm rounded family everywhere. Cabinet Grotesk and Geist Sans are retired.
 
 ### Hierarchy in practice
 
-| Tier | Font | Weight | Tracking | Example |
+| Tier | Font (web / app) | Weight | Tracking | Example |
 |------|------|--------|----------|---------|
-| Display | Cabinet Grotesk | 800 Extra Bold | -0.035em | Hero h1, section h2s, $29, "Sprout" wordmark in cards |
-| Subhead | Geist Sans | 700 Bold | tight | Card titles, eyebrow labels |
-| Body | Geist Sans | 400 Regular | default | All paragraph text, captions |
+| Display | Nunito / SF Pro Rounded | 800 Extra Bold | -0.02em | Hero h1, section h2s, $29, "Sprout" wordmark in cards |
+| Subhead | Nunito / SF Pro Rounded | 700 Bold | tight | Card titles, eyebrow labels |
+| Body | Nunito / SF Pro Rounded | 400 Regular | default | All paragraph text, captions |
+
+Weight carries the hierarchy now, so a wider weight gap (800 display vs 400 body) does the work the second typeface used to.
 
 ### Rules unchanged
 
-- One display font, one body font. Two weights of body only. Don't add more.
+- One rounded family. Weight and size carry the hierarchy. Don't add a second UI typeface.
 - All caps reserved for tracking-wide eyebrows + section labels.
 - No italics in UI. Italics only for editorial poster moments + verbatim quote attributions.
-- No serifs in app, landing, email, or weekly artifact.
+- No serifs in app, landing, email, or the weekly report.
 
 ### Scoped exception — IG/FB carousels (added 2026-05-21)
 
@@ -106,7 +100,7 @@ Single-font system left headlines and body subheads visually too close — same 
 - Colour pairings: Sprout Forest type on Sprout Cream background, or Sprout Cream type on Sprout Forest background. Never on white. Never on lime.
 - Fallback: EB Garamond if Cormorant unavailable for any reason.
 
-This is a **scoped exception, not a brand evolution.** Cabinet Grotesk + Geist Sans remain the system for everything else.
+This is a **scoped exception, not a brand evolution.** The rounded family (Nunito on web, SF Pro Rounded in-app) remains the system for everything else.
 
 ### Type scale
 
