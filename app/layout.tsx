@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Nunito } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { SiteIntro } from "./_components/SiteIntro";
 import "./globals.css";
 
 // Nunito: the rounded, warm voice of the entire product. Mirrors the app's
@@ -24,6 +25,13 @@ export const metadata: Metadata = {
     "A weekly reflection of your child's homeschool journey. Sunday-night relief, not 3am anxiety.",
 };
 
+// Pre-paint gate for the site-wide page-load intro (SiteIntro). Runs
+// synchronously before first paint so every full load shows the curtain
+// immediately, and reduced-motion / no-JS visitors never flash it. The
+// component takes over once hydrated (drives "play" → "reveal" → "off").
+const INTRO_GATE =
+  "(()=>{try{var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;document.documentElement.setAttribute('data-site-intro',rm?'off':'play');}catch(e){document.documentElement.setAttribute('data-site-intro','off');}})()";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,9 +40,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${nunito.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        {/* Pre-paint gate must run before the overlay below is parsed. */}
+        <script dangerouslySetInnerHTML={{ __html: INTRO_GATE }} />
+        <SiteIntro />
         {children}
         <Analytics />
       </body>

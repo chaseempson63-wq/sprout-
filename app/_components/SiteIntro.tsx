@@ -1,27 +1,31 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
-import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
+import { SproutMascotIcon } from "./SproutMascotIcon";
 
 /* ─────────────────────────────────────────────────────────────────────
-   Resources hub — page-load intro.
+   Site-wide — page-load intro.
 
    A short, theatrical reveal that sets the feeling before anyone reads:
    the Sprout name types in, the mascot pops to life, the headline rises
-   and rotates a word, then the real page assembles in.
+   and rotates a word, then the real page assembles in. Plays on EVERY
+   page of the site (landing, resources, partners, legal), not just one.
 
    Design rules baked in:
    - PURE OVERLAY. The real page renders normally underneath and is NEVER
      gated by JS, so the intro can never trap anyone on a blank screen. The
-     curtain just covers, then lifts.
-   - HANDS OFF EXACTLY. The overlay reproduces the live hero (mascot chip +
-     "We were born to ___") in its exact resting position, so lifting it is
-     a seamless settle onto the page, not a swap.
+     curtain just covers, then lifts. The green canvas under the curtain is
+     pixel-identical to every page's own green canvas, so the lift is a
+     settle onto the page, not a colour swap.
+   - SPLASH, NOT HANDOFF. The lockup is centered in the viewport (a brand
+     moment), then lifts + fades FAST — gone before the curtain reveals the
+     page's own hero, so there's never a double headline on any route.
    - SKIPPABLE. Any pointer / key / wheel / touch instantly finishes.
-   - EVERY LOAD. Plays on every load/reload of the hub, any path in — no
-     once-per-session suppression. (Pre-paint gate lives in the layout's
-     inline script so first paint is already correct — no flash.)
+   - EVERY LOAD. Plays on every full load/reload, any route in — no
+     once-per-session suppression. (Client-side navigations don't remount
+     this, so internal link clicks never re-trigger it.) The pre-paint gate
+     lives in the root layout's inline script so first paint is already
+     correct — no flash.
    - REDUCED MOTION. Skipped entirely; the page shows immediately.
    ───────────────────────────────────────────────────────────────────── */
 
@@ -34,7 +38,7 @@ const HEADLINE_AT = 1450; // 4. brand rises out, headline rises in + types
 const LEAD = "We were born to ";
 const LEAD_CHAR = 30;
 const ROTATE = ["learn", "wonder"]; // words that flash past
-const SETTLE = "create"; // final word — matches the page's first word
+const SETTLE = "create"; // final word
 const WORD_TYPE = 70;
 const WORD_HOLD = 260;
 const WORD_DEL = 44;
@@ -43,7 +47,7 @@ const FADE_MS = 480; // curtain fade-out
 const REST_AT = 1400; // settle to the resting attribute after resolve
 const SAFETY_MS = 9000; // absolute fail-safe: show the page no matter what
 
-// Same fractal-noise overlay the layout uses over the green canvas, so the
+// Same fractal-noise overlay every page uses over the green canvas, so the
 // curtain's background is pixel-identical and the green never shifts on lift.
 const NOISE =
   "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E\")";
@@ -59,14 +63,11 @@ function Caret() {
   );
 }
 
-export function ResourcesIntro() {
-  const pathname = usePathname();
-  const isHub = pathname === "/resources";
-
-  // Initial render (SSR + hydration) shows the held stage on the hub; the
+export function SiteIntro() {
+  // Initial render (SSR + hydration) shows the held stage on every page; the
   // effect decides whether to actually play or remove it. Deterministic, so no
   // hydration mismatch (no storage / matchMedia is read during render).
-  const [active, setActive] = useState(isHub);
+  const [active, setActive] = useState(true);
   const [phase, setPhase] = useState<Phase>("idle");
   const [brand, setBrand] = useState("");
   const [lead, setLead] = useState("");
@@ -86,18 +87,17 @@ export function ResourcesIntro() {
       /* matchMedia unavailable — fall through (the overlay is still CSS-gated) */
     }
 
-    // The intro plays on EVERY load of the hub — no once-per-session gate. Only
-    // reduced motion (or not being on the hub) suppresses it. When suppressed the
-    // overlay stays mounted but CSS-hidden via the attribute; with the unique-id
-    // mascot fix a hidden overlay no longer affects the page's own mascots, and
-    // there's no synchronous setState here (active already reflects isHub).
-    if (!isHub || reduce) {
-      root.setAttribute("data-resources-intro", "off");
+    // The intro plays on EVERY full load of any page — no once-per-session
+    // gate. Only reduced motion suppresses it. When suppressed the overlay
+    // stays mounted but CSS-hidden via the attribute; with the unique-id
+    // mascot fix a hidden overlay no longer affects the page's own mascots.
+    if (reduce) {
+      root.setAttribute("data-site-intro", "off");
       return;
     }
 
     // Committing to play.
-    root.setAttribute("data-resources-intro", "play");
+    root.setAttribute("data-site-intro", "play");
 
     const timers: number[] = [];
     let safety = 0;
@@ -120,16 +120,16 @@ export function ResourcesIntro() {
       clearTimeout(safety);
       if (instant) {
         // Skip → jump straight to the finished page, no staged reveal.
-        root.setAttribute("data-resources-intro", "off");
+        root.setAttribute("data-site-intro", "off");
         setActive(false);
         return;
       }
       // Natural end → fade the curtain while the page assembles beneath it.
       setPhase("resolving");
       setFading(true);
-      root.setAttribute("data-resources-intro", "reveal");
+      root.setAttribute("data-site-intro", "reveal");
       window.setTimeout(() => setActive(false), FADE_MS);
-      window.setTimeout(() => root.setAttribute("data-resources-intro", "off"), REST_AT);
+      window.setTimeout(() => root.setAttribute("data-site-intro", "off"), REST_AT);
     };
 
     // Beat 1 → 2: held, then "Sprout" types.
@@ -169,18 +169,18 @@ export function ResourcesIntro() {
       window.removeEventListener("wheel", onSkip, opts);
       window.removeEventListener("touchstart", onSkip, opts);
     };
-  }, [isHub]);
+  }, []);
 
   if (!active) return null;
 
   return (
     <div
-      className="resources-intro-overlay fixed inset-0 z-[70] cursor-pointer select-none"
+      className="site-intro-overlay fixed inset-0 z-[70] cursor-pointer select-none"
       style={{ opacity: fading ? 0 : 1, transition: `opacity ${FADE_MS}ms ease` }}
       role="presentation"
       aria-hidden
     >
-      {/* Background — identical to the layout's green canvas, so when the curtain
+      {/* Background — identical to every page's green canvas, so when the curtain
           fades the green stays put; only the hero hands off + the page assembles. */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#2A5132] via-[#3D6643] to-[#1B3722]" />
       <svg
@@ -228,7 +228,7 @@ export function ResourcesIntro() {
                   phase === "idle" || phase === "brand" ? "opacity-0" : "intro-rise-in"
                 }`}
               >
-                {lead || " "}
+                {lead || " "}
                 <span className="text-sprout-lime">{word}</span>
                 {(phase === "headline" || phase === "resolving") && <Caret />}
               </h1>

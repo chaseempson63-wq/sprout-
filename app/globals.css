@@ -317,17 +317,16 @@
 }
 
 /* ──────────────────────────────────────────────────────────────────
-   Resources hub — page-load intro (see ResourcesIntro.tsx).
-   A skippable, once-per-session curtain that types the Sprout name, pops
-   the mascot, raises the headline, then lifts as the page assembles.
+   Site-wide — page-load intro (see SiteIntro.tsx).
+   A skippable curtain that types the Sprout name, pops the mascot, raises
+   the headline, then lifts as the page assembles. Plays on every page.
    ────────────────────────────────────────────────────────────────── */
 
-/* No-flash gate. The curtain is rendered on the hub but only PAINTS on a
-   first-time visit — the layout's inline script sets data-resources-intro
-   to "play" before first paint, and the component drives "reveal" → "off".
-   Default (no/other value) keeps it hidden, so returning visitors and the
-   no-JS case never flash it. */
-html:not([data-resources-intro="play"]):not([data-resources-intro="reveal"]) .resources-intro-overlay {
+/* No-flash gate. The curtain is rendered on every page but only PAINTS when
+   the root layout's inline script sets data-site-intro to "play" before first
+   paint; the component drives "reveal" → "off". Default (no/other value) keeps
+   it hidden, so reduced-motion and the no-JS case never flash it. */
+html:not([data-site-intro="play"]):not([data-site-intro="reveal"]) .site-intro-overlay {
   display: none;
 }
 
@@ -363,23 +362,27 @@ html:not([data-resources-intro="play"]):not([data-resources-intro="reveal"]) .re
   100% { opacity: 0; transform: translateY(-14px); }
 }
 
-/* 5-7. The page assembles as the curtain lifts. Top-level blocks of the hub
-   ease up, staggered; the hero (child 1) only fades so it hands off without
-   moving. These are one-shot animations that END in the natural visible state,
+/* 5-7. The page assembles as the curtain lifts. Scoped to the resources hub
+   (the .intro-stagger main) so only its top-level blocks ease up, staggered;
+   the hero (child 1) only fades so it hands off without moving. Other pages get
+   just the clean curtain fade — this stagger never touches their background
+   canvas. These are one-shot animations that END in the natural visible state,
    so even if the attribute is never cleared the page resolves correctly and is
    never trapped. */
-html[data-resources-intro="reveal"] main > div > * {
+html[data-site-intro="reveal"] .intro-stagger > div > * {
   animation: intro-reveal-up 520ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
 }
-html[data-resources-intro="reveal"] main > div > *:nth-child(1) {
+html[data-site-intro="reveal"] .intro-stagger > div > *:nth-child(1) {
   animation: intro-reveal-fade 360ms ease both;
 }
-html[data-resources-intro="reveal"] main > div > *:nth-child(2) { animation-delay: 70ms; }
-html[data-resources-intro="reveal"] main > div > *:nth-child(3) { animation-delay: 140ms; }
-html[data-resources-intro="reveal"] main > div > *:nth-child(4) { animation-delay: 210ms; }
-html[data-resources-intro="reveal"] main > div > *:nth-child(5) { animation-delay: 280ms; }
-html[data-resources-intro="reveal"] main > div > *:nth-child(n + 6) { animation-delay: 340ms; }
-html[data-resources-intro="reveal"] header { animation: intro-reveal-fade 440ms ease both; }
+html[data-site-intro="reveal"] .intro-stagger > div > *:nth-child(2) { animation-delay: 70ms; }
+html[data-site-intro="reveal"] .intro-stagger > div > *:nth-child(3) { animation-delay: 140ms; }
+html[data-site-intro="reveal"] .intro-stagger > div > *:nth-child(4) { animation-delay: 210ms; }
+html[data-site-intro="reveal"] .intro-stagger > div > *:nth-child(5) { animation-delay: 280ms; }
+html[data-site-intro="reveal"] .intro-stagger > div > *:nth-child(n + 6) { animation-delay: 340ms; }
+/* Only the resources layout uses <header> (other pages use <nav>), so this
+   fade is effectively scoped to the hub already. */
+html[data-site-intro="reveal"] header { animation: intro-reveal-fade 440ms ease both; }
 @keyframes intro-reveal-up {
   0%   { opacity: 0; transform: translateY(18px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -391,7 +394,7 @@ html[data-resources-intro="reveal"] header { animation: intro-reveal-fade 440ms 
 
 /* Reduced motion — never play, never hold anything back. */
 @media (prefers-reduced-motion: reduce) {
-  .resources-intro-overlay {
+  .site-intro-overlay {
     display: none !important;
   }
   .intro-mascot {
@@ -400,8 +403,8 @@ html[data-resources-intro="reveal"] header { animation: intro-reveal-fade 440ms 
   .intro-mascot-pop,
   .intro-rise-in,
   .intro-rise-out,
-  html[data-resources-intro="reveal"] main > div > *,
-  html[data-resources-intro="reveal"] header {
+  html[data-site-intro="reveal"] .intro-stagger > div > *,
+  html[data-site-intro="reveal"] header {
     animation: none !important;
   }
 }
