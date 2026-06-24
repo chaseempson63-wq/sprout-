@@ -34,9 +34,10 @@ export interface WorksheetBlock {
   wordBank?: string[]; // words for a word-bank block
   rows?: number; // blank lines (handwriting) or draw-box height hint
   answers?: string[]; // answer-key entries for this block
+  imageKey?: string; // image block: key into the pre-built illustration set (public/resources/illustrations)
   svgKey?: string; // image block: key into the curated SVG line-art library (legacy fallback)
-  imagePrompt?: string; // image block: a description of the picture, for AI image generation
-  dataUrl?: string; // image block: the generated raster image as a data: URL (set server-side)
+  imagePrompt?: string; // image block: description for live AI image gen (dormant, opt-in path)
+  dataUrl?: string; // image block: a generated raster as a data: URL (dormant, opt-in path)
 }
 
 export interface Worksheet {

@@ -9,8 +9,9 @@
 //                           deterministic engine instead.
 
 import { getTemplate } from "./catalog";
+import { ILLUSTRATION_HINT, hasIllustration } from "./illustrations";
 import { detectTheme, intentPreamble } from "./intent";
-import { SVG_ART, SVG_KEYS } from "./svg-art";
+import { SVG_ART } from "./svg-art";
 import { capName } from "./util";
 import type { ChatMessage, Worksheet, WorksheetBlock, WorksheetTemplate } from "./types";
 
@@ -931,19 +932,16 @@ function imageMax(): number {
 
 // Shared JSON-shape + visual-honesty rules for teach and activity modes. (The
 // practice SYSTEM above is left byte-for-byte as-is so practice never changes.)
-// imagesOn flips the picture rule: when AI image generation is enabled the model
-// describes a picture freely in 'imagePrompt'; when off it picks a key from the
-// curated SVG menu, exactly as before.
-function schemaSpec(imagesOn: boolean): string[] {
-  const imageLine = imagesOn
-    ? "image = a picture: set 'imagePrompt' to ONE vivid sentence describing exactly what the picture shows (the subject, a couple of details, a simple setting). Draw anything that fits the topic, you are NOT limited to a list."
-    : `image = a picture: set 'svgKey' to EXACTLY ONE of: ${SVG_KEYS.join(", ")}. If none of those fits, use a draw block instead.`;
+// Pictures are chosen from the pre-built illustration set by imageKey; the
+// renderer shows the matching static asset (free, instant, no API call). When no
+// listed key is genuinely close, the model uses a draw box instead.
+function schemaSpec(): string[] {
   return [
     'Return ONLY valid JSON: {"title":string,"subtitle":string,"blocks":[Block]}.',
-    'Block = {"kind":string,"prompt"?:string,"text"?:string,"items"?:[string],"pairs"?:[{"left":string,"right":string}],"emoji"?:string,"wordBank"?:[string],"rows"?:number,"answers"?:[string],"svgKey"?:string,"imagePrompt"?:string}.',
+    'Block = {"kind":string,"prompt"?:string,"text"?:string,"items"?:[string],"pairs"?:[{"left":string,"right":string}],"emoji"?:string,"wordBank"?:[string],"rows"?:number,"answers"?:[string],"imageKey"?:string}.',
     "Allowed kinds: instructions, passage, fact, image, draw, short-answer, multiple-choice, fill-blank, word-bank, matching, count, missing-numbers, trace, handwriting, math, column-math.",
     "passage = a short heading in 'prompt' and the teaching text in 'text'. fact = one surprising fact in 'text'. draw = a box the child draws in, say what in 'prompt'.",
-    imageLine,
+    `image = a picture: set 'imageKey' to the ONE closest match from this list: ${ILLUSTRATION_HINT}. If nothing on the list is genuinely close, use a draw block instead, never force a bad match.`,
     'NEVER write a picture as words or a bracketed description like "[a friendly fish]"; use an image or draw block.',
     "Write everything ADDRESSED TO THE CHILD; never write directions to the parent and never say 'your child'. If a name is given use it; otherwise say 'you' and never invent a name.",
     "Use PLAIN TEXT only: no LaTeX, no markdown. Do not put raw line breaks inside JSON string values. Do not include an answer-key section in the prompts; put any answers only in each block's 'answers' array.",
@@ -953,7 +951,7 @@ function schemaSpec(imagesOn: boolean): string[] {
 // Light by design: a three-beat skeleton with real creative leeway inside it,
 // not a rigid block-count recipe. The only hard rails are the JSON contract and
 // Sprout's voice (both in schemaSpec). Everything else is the model's call.
-function systemTeach(imagesOn: boolean): string {
+function systemTeach(): string {
   return [
     "You design printable LEARNING resources for a child (ages 3-12) to read at home. The child wants to LEARN this topic, so teach it, do not quiz it.",
     "Follow one simple three-beat shape, and be creative inside it:",
@@ -962,18 +960,18 @@ function systemTeach(imagesOn: boolean): string {
     "3) OPTIONAL: a light question or two at the very end, answerable from what you taught. Often none is better. Never lead with questions.",
     "There is no fixed format beyond those three beats and the JSON rules. If the request is playful, specific, or unusual, lean into it, match its energy, and run with the idea.",
     "Pitch every word so a curious child of that age leans in and actually learns something, never like homework.",
-    ...schemaSpec(imagesOn),
+    ...schemaSpec(),
   ].join(" ");
 }
 
-function systemActivity(imagesOn: boolean): string {
+function systemActivity(): string {
   return [
     "You design printable hands-on ACTIVITY sheets for a child (ages 3-12) to DO after printing. The doing is the point.",
     "One simple three-beat shape, be creative inside it: 1) a tiny instruction line; 2) the activity itself, big and fun, built around at least one 'image' to colour, trace, label, count, or complete; 3) nothing else unless it genuinely adds to the fun.",
     "Colour by number: an 'image' block plus a short colour key as an 'instructions' block (e.g. '1 = blue, 2 = green'); the child solves simple problems and colours each part by its answer.",
     "If the request is playful or specific, run with it. Never describe a picture in words, use an image or draw block.",
     "Make it something a curious child of that age wants to pick up and finish, never like homework.",
-    ...schemaSpec(imagesOn),
+    ...schemaSpec(),
   ].join(" ");
 }
 
@@ -993,7 +991,6 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
   const benchNote = `An average ${age}-year-old works at this level in school: ${ageBenchmark(age)}. Match that grade level and never go below it. `;
 
   const mode = detectMode(template, messages);
-  const imagesOn = imagesEnabled();
 
   // TEACH: lead with real teaching content; questions optional. (Freeform only.)
   if (mode === "teach") {
@@ -1002,7 +999,7 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
       `${who2} ${benchNote}${diffNote}` +
       `Teach it for a ${age}-year-old following the rules above: a hook, rich teaching passages, fun facts, a picture, and only a few light questions at the end if any. Give it a clear, specific title that names the topic. Return ONLY the worksheet JSON.`;
     return [
-      { role: "system", content: systemTeach(imagesOn) },
+      { role: "system", content: systemTeach() },
       { role: "user", content: teachUser },
     ];
   }
@@ -1017,7 +1014,7 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
       `${what} ${who2} ${benchNote}${diffNote}` +
       `Build it for a ${age}-year-old following the rules above, using a real picture (an image block) wherever one helps. Give it a clear, specific title. Return ONLY the worksheet JSON.`;
     return [
-      { role: "system", content: systemActivity(imagesOn) },
+      { role: "system", content: systemActivity() },
       { role: "user", content: activityUser },
     ];
   }
@@ -1076,16 +1073,19 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
     if (typeof o.text === "string") block.text = noDash(o.text);
     if (typeof o.emoji === "string") block.emoji = o.emoji;
     if (typeof o.rows === "number") block.rows = o.rows;
+    if (typeof o.imageKey === "string") block.imageKey = o.imageKey.trim().toLowerCase().replace(/\s+/g, "-");
     if (typeof o.svgKey === "string") block.svgKey = o.svgKey;
     if (typeof o.imagePrompt === "string") block.imagePrompt = noDash(o.imagePrompt).trim().slice(0, 300);
-    // Visual honesty: an image must resolve to REAL art, either an imagePrompt we can
-    // generate from or a valid curated svgKey. With neither it degrades to a draw box
-    // ("draw it yourself"), never a blank or a text description pretending to be a picture.
-    if (block.kind === "image" && !block.imagePrompt && !(block.svgKey && SVG_ART[block.svgKey])) {
-      block.prompt = block.prompt || (block.svgKey ? `Draw a ${block.svgKey} here.` : "Draw the picture here.");
+    // Visual honesty: an image must resolve to a real picture, normally a pre-built
+    // illustration (imageKey). With no usable picture (invented/unknown key) it
+    // degrades to an honest draw box, never a blank or a forced bad match.
+    if (block.kind === "image" && !hasIllustration(block.imageKey) && !block.dataUrl && !(block.svgKey && SVG_ART[block.svgKey]) && !block.imagePrompt) {
+      const want = (block.imageKey || block.svgKey || "").replace(/-/g, " ");
+      block.prompt = block.prompt || (want ? `Draw ${article(want)} ${want} here.` : "Draw the picture here.");
       block.kind = "draw";
       block.rows = block.rows ?? 7;
       delete block.svgKey;
+      delete block.imageKey;
     }
     const items = strArr(o.items);
     if (items) block.items = items.map(noDash);
@@ -1245,7 +1245,7 @@ async function attachImages(ws: Worksheet, mode: ResourceMode, key: string): Pro
   );
   for (const b of ws.blocks) {
     if (b.kind !== "image") continue;
-    const hasArt = b.dataUrl || (b.svgKey && SVG_ART[b.svgKey]);
+    const hasArt = b.dataUrl || hasIllustration(b.imageKey) || (b.svgKey && SVG_ART[b.svgKey]);
     if (!hasArt) {
       b.kind = "draw";
       b.prompt = b.prompt || "Draw the picture here.";

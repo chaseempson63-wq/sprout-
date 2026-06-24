@@ -2,6 +2,7 @@
 // banner across the top (bigger mascot + the child's name), then each block as
 // something the child fills in by hand. This is the .print-area print target.
 
+import { IllustrationImg } from "./IllustrationImg";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { SVG_ART } from "@/lib/resources/svg-art";
 import type { Worksheet, WorksheetBlock } from "@/lib/resources/types";
@@ -287,8 +288,18 @@ function BlockView({ block }: { block: WorksheetBlock }) {
       );
 
     case "image": {
-      // Preferred: a real AI-generated illustration (data: URL). Falls back to the
-      // curated SVG line art when image generation is off or failed.
+      // Normal path: a pre-built illustration picked by imageKey (static asset).
+      if (block.imageKey) {
+        return (
+          <div>
+            {prompt}
+            <div className="mt-2 flex justify-center">
+              <IllustrationImg imageKey={block.imageKey} alt={block.prompt} />
+            </div>
+          </div>
+        );
+      }
+      // Dormant opt-in path: a live-generated raster (data: URL).
       if (block.dataUrl) {
         return (
           <div>
