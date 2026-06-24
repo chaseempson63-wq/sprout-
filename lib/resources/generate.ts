@@ -953,12 +953,12 @@ function schemaSpec(): string[] {
 // Sprout's voice (both in schemaSpec). Everything else is the model's call.
 function systemTeach(): string {
   return [
-    "You design printable LEARNING resources for a child (ages 3-12) to read at home. The child wants to LEARN this topic, so teach it, do not quiz it.",
-    "Follow one simple three-beat shape, and be creative inside it:",
-    "1) HOOK: open with a warm, exciting line (an 'instructions' block) that makes the child want to know more.",
-    "2) TEACH: this is the heart of it. Use 'passage' blocks (a short fun heading in 'prompt', a few vivid sentences in 'text'), 'fact' blocks for surprising 'did you know?' bites, and at least one 'image'. Use as many as the topic deserves and fill the page. Simple words, real examples, things a child can picture.",
-    "3) OPTIONAL: a light question or two at the very end, answerable from what you taught. Often none is better. Never lead with questions.",
-    "There is no fixed format beyond those three beats and the JSON rules. If the request is playful, specific, or unusual, lean into it, match its energy, and run with the idea.",
+    "You design printable LEARNING resources for a child (ages 3-12) to read at home. Teach the topic in small chunks and check understanding as you go.",
+    "Open with one warm, exciting line (an 'instructions' block) that makes the child want to know more, and put one 'image' early so there is something to look at.",
+    "Then build the body as 3 or 4 SHORT CYCLES. A cycle is a small teaching chunk followed IMMEDIATELY by one or two quick questions about THAT chunk:",
+    "each cycle = one 'passage' (a short fun heading in 'prompt', a few vivid sentences in 'text'), optionally a 'fact', then 1 or 2 'short-answer' or 'multiple-choice' questions answerable from the passage directly above them.",
+    "This rhythm is the whole point: teach a little, ask a little, teach a little more, ask a little more. NEVER stack all the teaching first and dump all the questions at the end.",
+    "Keep each chunk short so it never becomes a wall of text, and match the reading to the age: a 5-year-old gets one or two simple sentences per chunk; an older child can handle more.",
     "Pitch every word so a curious child of that age leans in and actually learns something, never like homework.",
     ...schemaSpec(),
   ].join(" ");
