@@ -4,6 +4,8 @@ The visual brand specification. Pair this with [`MASTER.md`](MASTER.md) (which h
 
 This doc is designed to be paste-able into any design tool (Claude Design, Midjourney, Figma, a hired designer's brief) and produce on-brand work.
 
+> **Update 2026-06-22 — app interior warmed up (green stays default).** The Sprout iOS app's DEFAULT interior stays a GREEN canvas but warms from the old cold near-black techy green to a **warm forest-green canvas like the landing page** (hisprout.app), with frosted cream glass cards. Cream is the **light-mode toggle** (matches the mockups), NOT the default. The old "app interior = deep almost-black" guidance below is retired (the green warms; it does not go cream). Marketing/landing aesthetic unchanged. Full Rork redesign brief: `~/Desktop/chase-brain/02-projects/sprout/rork-full-redesign-master-prompt.md`.
+
 ---
 
 ## The brand in one sentence
