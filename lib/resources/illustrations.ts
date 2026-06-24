@@ -12,6 +12,8 @@
 export interface Illustration {
   key: string; // slug; also the asset filename (<key>.webp) and what the model picks
   prompt: string; // subject description for the one-time generator (shared style is added by the script)
+  labels?: string[]; // diagram topics: real label text the APP renders flanking the image
+  //                    (never baked into the picture, so spelling is always correct)
 }
 
 // Grouped only for human readability; order does not matter to the code.
@@ -63,7 +65,7 @@ export const ILLUSTRATIONS: Illustration[] = [
   { key: "sun", prompt: "a bright smiling sun" },
   { key: "moon", prompt: "a crescent moon at night" },
   { key: "earth", prompt: "planet Earth from space" },
-  { key: "solar-system", prompt: "the solar system with the sun and planets in a row" },
+  { key: "solar-system", prompt: "the eight planets of our solar system in their correct order out from the sun, with the sun on the left, accurate relative sizes and colors", labels: ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"] },
   { key: "rocket", prompt: "a rocket ship blasting off" },
   { key: "astronaut", prompt: "an astronaut floating in space" },
   { key: "star", prompt: "a single bright twinkling star" },
@@ -80,7 +82,7 @@ export const ILLUSTRATIONS: Illustration[] = [
   { key: "snowflake", prompt: "a single detailed snowflake" },
   { key: "leaf", prompt: "a single autumn leaf" },
   { key: "forest", prompt: "a small forest of trees" },
-  { key: "water-cycle", prompt: "a simple water cycle diagram with sun, cloud, rain, and a lake, drawn in a friendly style" },
+  { key: "water-cycle", prompt: "a simple water cycle scene with sun, a cloud, rain falling, and a lake, drawn in a friendly style, no text", labels: ["Evaporation", "Condensation", "Precipitation", "Collection"] },
   // ── dinosaurs ─────────────────────────────────────────────────────────────
   { key: "t-rex", prompt: "a friendly cartoon Tyrannosaurus Rex" },
   { key: "triceratops", prompt: "a friendly triceratops with three horns" },
@@ -88,7 +90,7 @@ export const ILLUSTRATIONS: Illustration[] = [
   { key: "brachiosaurus", prompt: "a long-necked brachiosaurus" },
   { key: "dinosaur-egg", prompt: "a dinosaur egg hatching" },
   // ── the body ──────────────────────────────────────────────────────────────
-  { key: "human-body", prompt: "a friendly diagram of a child's body" },
+  { key: "human-body", prompt: "a friendly front-facing illustration of a child's whole body, arms slightly out, no text", labels: ["Head", "Arm", "Hand", "Body", "Leg", "Foot"] },
   { key: "heart", prompt: "a simple anatomical human heart" },
   { key: "brain", prompt: "a simple friendly human brain" },
   { key: "teeth", prompt: "a smiling set of clean white teeth" },
@@ -103,7 +105,7 @@ export const ILLUSTRATIONS: Illustration[] = [
   // ── food & plants ─────────────────────────────────────────────────────────
   { key: "apple", prompt: "a shiny red apple" },
   { key: "vegetables", prompt: "a friendly group of vegetables" },
-  { key: "seed-to-plant", prompt: "the stages of a seed growing into a plant, left to right" },
+  { key: "seed-to-plant", prompt: "the stages of a seed growing into a plant, left to right, no text", labels: ["Seed", "Sprout", "Plant", "Flower"] },
   { key: "pumpkin", prompt: "an orange pumpkin" },
   { key: "corn", prompt: "an ear of corn" },
   // ── places & make-believe ─────────────────────────────────────────────────
@@ -123,3 +125,11 @@ export function hasIllustration(key: string | undefined): key is string {
 // Grouped, comma-joined slug list handed to the model so it only picks keys that
 // exist. Kept compact; the model reads slugs fine.
 export const ILLUSTRATION_HINT = ILLUSTRATIONS.map((i) => i.key).join(", ");
+
+const BY_KEY = new Map(ILLUSTRATIONS.map((i) => [i.key, i] as const));
+
+// Real label text the renderer shows flanking a diagram illustration (e.g. the
+// 8 planet names beside the solar system). Undefined for a plain illustration.
+export function illustrationLabels(key: string | undefined): string[] | undefined {
+  return key ? BY_KEY.get(key)?.labels : undefined;
+}
