@@ -8,8 +8,8 @@ import { EarningsCalculator } from "../_components/EarningsCalculator";
 
 /*
   Sprout partner / affiliate recruitment page  (/partners)
-  Audience: homeschool + homesteader moms who already share what they use.
-  Frame: carrying the flag, for the people, grown mom to mom. Money is honest
+  Audience: homeschool + homesteader parents who already share what they use.
+  Frame: carrying the flag, for the people, grown parent to parent. Money is honest
   and generous (20% recurring for 12 months, buyer gets 20% off the whole
   first year). Rebuilt 2026-06-08 to be visual-first: half the prose cut,
   a live partner-dashboard mock + interactive earnings calculator carry the
@@ -22,9 +22,9 @@ import { EarningsCalculator } from "../_components/EarningsCalculator";
 const CONTACT_EMAIL = "sprout.humanintelligence@gmail.com";
 
 export const metadata: Metadata = {
-  title: "Earn with Sprout: bring moms in, get paid for a year",
+  title: "Earn with Sprout: bring parents in, get paid for a year",
   description:
-    "You're already the mom others ask. Share Sprout: your followers get 20% off for their whole first year, and you keep 20% of every subscription for 12 months. For the people. Raising humans, not students.",
+    "You're already the parent others ask. Share Sprout: your followers get 20% off for their whole first year, and you keep 20% of every subscription for 12 months. For the people. Raising humans, not students.",
 };
 
 const HERO_STATS = [
@@ -52,7 +52,7 @@ const STEPS = [
 ];
 
 const STAND =
-  "This isn't a referral code for something you've never touched. It's the thing you already use with your own kids. You bring a mom in, she gets a real discount, you get paid for a year, and the community gets something it has been craving. We grow together. Raising humans, not students.";
+  "This isn't a referral code for something you've never touched. It's the thing you already use with your own kids. You bring a parent in, they get a real discount, you get paid for a year, and the community gets something it has been craving. We grow together. Raising humans, not students.";
 
 const NO_STRINGS =
   "No quotas, no posting schedule. Share it as much or as little as you like. Bring 50 families in and stop tomorrow, you still get paid on every one, every month, right to the end of their year. Once they're yours, they're yours.";
@@ -224,7 +224,7 @@ export default function PartnersPage() {
             className="font-bold tracking-[-0.03em] leading-[1.04] text-sprout-cream headline-lit mb-8"
             style={{ fontSize: "clamp(32px, 4.8vw, 56px)" }}
           >
-            For the homeschool moms.
+            For the homeschool parents.
           </h2>
           <p
             className="text-sprout-cream/85 leading-relaxed"

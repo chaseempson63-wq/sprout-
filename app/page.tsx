@@ -1,23 +1,43 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Plus, ArrowRight, Check } from "lucide-react";
-import { SproutLogo, GlassCard, FloatingGlass } from "./_components/Glass";
-import {
-  PhoneFrame,
-  PhoneScreenDropIn,
-  PhoneScreenMemory,
-  PhoneScreenReport,
-  PhoneScreenYear,
-} from "./_components/Phone";
+import { SproutLogo, GlassCard } from "./_components/Glass";
 import {
   SectionEyebrow,
   CenteredEyebrow,
   FeatureBlock,
   VerbatimCard,
 } from "./_components/Sections";
-import { PhoneShowcase } from "./_components/PhoneShowcase";
+import { OnboardingVisual } from "./_components/OnboardingVisuals";
 import { Mascot } from "./_components/Mascot";
 import { Waitlist } from "./_components/Waitlist";
 import { PartnerDashboard } from "./_components/PartnerDashboard";
+
+/* A rendered App Store phone screenshot, floated on the green canvas. */
+function PhoneShot({
+  src,
+  alt,
+  tilt,
+  className = "",
+}: {
+  src: string;
+  alt: string;
+  tilt: string;
+  className?: string;
+}) {
+  return (
+    <div className={className} style={{ transform: tilt, transformStyle: "preserve-3d" }}>
+      <Image
+        src={src}
+        alt={alt}
+        width={960}
+        height={2160}
+        sizes="(max-width: 768px) 70vw, 32vw"
+        className="w-full h-auto drop-shadow-[0_45px_90px_rgba(0,0,0,0.55)]"
+      />
+    </div>
+  );
+}
 
 /* ─────────────────────────────────────────────────────────────────────
    Sprout landing page v2 — structural rebuild against bevel.health
@@ -111,7 +131,7 @@ export default function HomeV2() {
             <div className="mt-14 flex justify-center">
               <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                Voiced by real homeschool moms
+                Voiced by real homeschool parents
               </div>
             </div>
 
@@ -146,17 +166,26 @@ export default function HomeV2() {
 
         <div className="relative max-w-7xl mx-auto">
 
-          <PhoneShowcase>
-            <PhoneFrame tilt="rotateY(15deg) rotateX(4deg)">
-              <PhoneScreenDropIn />
-            </PhoneFrame>
-            <PhoneFrame tilt="rotateY(0deg) rotateX(2deg) translateZ(20px)">
-              <PhoneScreenReport />
-            </PhoneFrame>
-            <PhoneFrame tilt="rotateY(-15deg) rotateX(4deg)">
-              <PhoneScreenYear />
-            </PhoneFrame>
-          </PhoneShowcase>
+          <div className="flex items-center justify-center gap-3 md:gap-6" style={{ perspective: "1800px" }}>
+            <PhoneShot
+              src="/app-capture.png"
+              alt="Capturing a moment in the Sprout app"
+              tilt="rotateY(16deg) rotateX(4deg)"
+              className="hidden md:block w-[30%]"
+            />
+            <PhoneShot
+              src="/app-week.png"
+              alt="A week sorted into a printable report"
+              tilt="rotateY(0deg) rotateX(2deg) translateZ(30px)"
+              className="w-[64%] sm:w-[48%] md:w-[34%] relative z-10"
+            />
+            <PhoneShot
+              src="/app-journey.png"
+              alt="A timeline of the year, kept"
+              tilt="rotateY(-16deg) rotateX(4deg)"
+              className="hidden md:block w-[30%]"
+            />
+          </div>
 
         </div>
       </section>
@@ -206,50 +235,6 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          EARN WITH SPROUT — teaser, pulled up from the footer.
-          The partner-portal preview + a big green button. Full program
-          lives on /partners.
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2A5132]/30 via-[#1B3722]/45 to-[#2A5132]/30" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-[#CDEFA0]/8 blur-3xl" />
-        </div>
-
-        <div className="relative max-w-5xl mx-auto">
-
-          <div className="text-center mb-12">
-            <CenteredEyebrow number="02" label="Earn with Sprout" />
-            <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl mx-auto"
-                style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
-              Love Sprout? Get paid<br />to share it.
-            </h2>
-            <p className="mt-6 text-sprout-cream/75 leading-relaxed max-w-xl mx-auto"
-               style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
-              Share it with the parents who need it. When a family joins through
-              you, you earn every month they stay. For a whole year.
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto">
-            <PartnerDashboard />
-          </div>
-
-          <div className="mt-10 flex justify-center">
-            <Link
-              href="/partners"
-              className="group inline-flex items-center justify-center gap-2 h-14 px-9 rounded-full bg-gradient-to-r from-[#3D6643] to-[#2A5132] text-sprout-cream font-bold text-base border border-[#CDEFA0]/40 shadow-[0_12px_34px_-10px_rgba(0,0,0,0.55)] hover:from-[#46734D] hover:to-[#2F5D38] transition-colors focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#CDEFA0]/40"
-            >
-              Earn with Sprout
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
-            </Link>
-          </div>
-
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
           SECTION INTRO HEADING — THE 3AM MOMENT
           (bevel position 8 — "Start the day with confidence" intro
           heading. Here we use it as the section transition into the
@@ -270,7 +255,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-5xl mx-auto">
 
-          <SectionEyebrow number="03" label="The reason Sprout exists" />
+          <SectionEyebrow number="02" label="The reason Sprout exists" />
 
           <div className="space-y-2 mb-16">
             <h2 className="font-bold tracking-[-0.04em] leading-[0.9] text-sprout-cream"
@@ -310,7 +295,7 @@ export default function HomeV2() {
                   ✱ Charlie · 4:17pm
                 </div>
                 <p className="text-sprout-cream leading-relaxed italic" style={{ fontSize: "clamp(15px, 1.4vw, 17px)" }}>
-                  &ldquo;Mom, why does the volcano have fire inside?&rdquo;
+                  &ldquo;Why does the volcano have fire inside?&rdquo;
                 </p>
                 <div className="mt-6 text-xs text-sprout-cream/65 uppercase tracking-widest">
                   Voice memo · Tuesday
@@ -337,16 +322,8 @@ export default function HomeV2() {
 
         <div className="relative max-w-7xl mx-auto">
 
-          <div className="mb-24">
-            <SectionEyebrow number="04" label="How it works" />
-            <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl headline-lit"
-                style={{ fontSize: "clamp(40px, 6vw, 80px)" }}>
-              Four stupid simple<br />moves. The year<br />builds itself.
-            </h2>
-            <p className="mt-8 text-sprout-cream/70 max-w-xl leading-relaxed" style={{ fontSize: "clamp(17px, 1.5vw, 19px)" }}>
-              For when you&apos;re already doing too much.
-              You capture. Sprout compiles. That&apos;s the loop.
-            </p>
+          <div className="mb-16">
+            <SectionEyebrow number="03" label="How it works" />
           </div>
 
           <div className="space-y-32 md:space-y-48">
@@ -374,32 +351,7 @@ export default function HomeV2() {
                   </p>
                 </>
               }
-              visual={
-                <div className="relative" style={{ perspective: "1600px" }}>
-                  <div className="absolute -inset-16 rounded-full bg-gradient-to-br from-[#A4C9A8]/25 via-[#94BC8E]/15 to-transparent blur-3xl -z-10" />
-                  <PhoneFrame tilt="rotateY(-8deg) rotateX(3deg) rotateZ(-1deg)">
-                    <PhoneScreenDropIn />
-                  </PhoneFrame>
-                  <FloatingGlass
-                    className="absolute -bottom-2 md:-bottom-4 -left-3 md:-left-20 w-[150px] md:w-[200px] z-20"
-                    tilt="rotateY(14deg) rotateX(-4deg) rotateZ(-3deg)"
-                  >
-                    <div className="flex items-center gap-2 mb-1.5">
-                      <div className="w-5 h-5 rounded-md bg-[#F4EDE0] flex items-center justify-center">
-                        <SproutLogo className="w-3 h-3 text-[#1B3722]" />
-                      </div>
-                      <span className="text-[9px] uppercase tracking-[0.2em] text-sprout-cream/85 font-bold">Captured</span>
-                      <span className="ml-auto text-[8px] text-sprout-cream/55">just now</span>
-                    </div>
-                    <p className="text-[11px] font-bold text-sprout-cream leading-tight mb-0.5">
-                      Voice memo · 0:47s
-                    </p>
-                    <p className="text-[10px] text-sprout-cream/75 leading-snug">
-                      Tagged for Charlie · Added to the timeline
-                    </p>
-                  </FloatingGlass>
-                </div>
-              }
+              visual={<OnboardingVisual variant="capture" />}
             />
 
             {/* Feature 2 — Sprout remembers (text right, phone left) */}
@@ -430,33 +382,7 @@ export default function HomeV2() {
                   </p>
                 </>
               }
-              visual={
-                <div className="relative" style={{ perspective: "1600px" }}>
-                  <div className="absolute -inset-16 rounded-full bg-gradient-to-br from-[#94BC8E]/20 via-[#76A77A]/10 to-transparent blur-3xl -z-10" />
-                  <PhoneFrame tilt="rotateY(8deg) rotateX(3deg) rotateZ(1deg)">
-                    <PhoneScreenMemory />
-                  </PhoneFrame>
-                  <FloatingGlass
-                    className="absolute -bottom-2 md:-bottom-4 -right-3 md:-right-20 w-[155px] md:w-[220px] z-20"
-                    tilt="rotateY(-14deg) rotateX(-4deg) rotateZ(3deg)"
-                  >
-                    <div className="text-[9px] uppercase tracking-[0.2em] text-sprout-cream/85 font-bold mb-2">
-                      6 weeks · 24 captures
-                    </div>
-                    <p className="text-[11px] font-bold text-sprout-cream leading-tight mb-1.5">
-                      Look back any week.
-                    </p>
-                    <div className="grid grid-cols-6 gap-1">
-                      {[0.3, 0.5, 0.2, 0.7, 0.4, 0.9].map((h, i) => (
-                        <div key={i} className="rounded-sm bg-[#A4C9A8]" style={{ height: `${10 + h * 20}px`, opacity: 0.4 + h * 0.5 }} />
-                      ))}
-                    </div>
-                    <p className="text-[9px] text-sprout-cream/65 mt-2 leading-snug">
-                      Wk 8 · Wk 9 · Wk 10 · Wk 11 · Wk 12 · this week.
-                    </p>
-                  </FloatingGlass>
-                </div>
-              }
+              visual={<OnboardingVisual variant="sort" />}
             />
 
             {/* Feature 3 — Sunday becomes art */}
@@ -497,32 +423,7 @@ export default function HomeV2() {
                   </ul>
                 </>
               }
-              visual={
-                <div className="relative" style={{ perspective: "1600px" }}>
-                  <div className="absolute -inset-16 rounded-full bg-gradient-to-br from-[#A4C9A8]/30 via-[#94BC8E]/15 to-transparent blur-3xl -z-10 animate-breathe" />
-                  <PhoneFrame tilt="rotateY(-9deg) rotateX(3deg) rotateZ(-1deg)">
-                    <PhoneScreenReport />
-                  </PhoneFrame>
-                  <FloatingGlass
-                    className="absolute -top-3 md:-top-6 -left-3 md:-left-24 w-[150px] md:w-[210px] z-20"
-                    tilt="rotateY(12deg) rotateX(-4deg) rotateZ(-3deg)"
-                  >
-                    <div className="flex items-center gap-2 mb-1.5">
-                      <div className="w-5 h-5 rounded-md bg-[#F4EDE0] flex items-center justify-center">
-                        <SproutLogo className="w-3 h-3 text-[#1B3722]" />
-                      </div>
-                      <span className="text-[9px] uppercase tracking-[0.2em] text-sprout-cream/85 font-bold">Sprout</span>
-                      <span className="ml-auto text-[8px] text-sprout-cream/55">Sun · 6pm</span>
-                    </div>
-                    <p className="text-[12px] font-bold text-sprout-cream leading-tight mb-0.5">
-                      Charlie&apos;s week is ready 🌱
-                    </p>
-                    <p className="text-[10px] text-sprout-cream/75 leading-snug">
-                      Open it together. 7 captures this week.
-                    </p>
-                  </FloatingGlass>
-                </div>
-              }
+              visual={<OnboardingVisual variant="together" />}
             />
 
             {/* Feature 4 — Year of growth */}
@@ -549,32 +450,53 @@ export default function HomeV2() {
                   </p>
                 </>
               }
-              visual={
-                <div className="relative" style={{ perspective: "1600px" }}>
-                  <div className="absolute -inset-16 rounded-full bg-gradient-to-br from-[#76A77A]/20 via-[#A4C9A8]/10 to-transparent blur-3xl -z-10" />
-                  <PhoneFrame tilt="rotateY(8deg) rotateX(3deg) rotateZ(1deg)">
-                    <PhoneScreenYear />
-                  </PhoneFrame>
-                  <FloatingGlass
-                    className="absolute -bottom-2 md:-bottom-4 -right-3 md:-right-20 w-[150px] md:w-[210px] z-20"
-                    tilt="rotateY(-14deg) rotateX(-4deg) rotateZ(3deg)"
-                  >
-                    <div className="text-[9px] uppercase tracking-[0.2em] text-sprout-cream/85 font-bold mb-2">
-                      Year-end · Term 1
-                    </div>
-                    <p className="text-[18px] font-bold text-sprout-cream leading-none mb-1">
-                      47 moments
-                    </p>
-                    <p className="text-[10px] text-sprout-cream/75 leading-snug">
-                      12 weeks captured across 3 months. Ready to print on
-                      the kitchen wall.
-                    </p>
-                  </FloatingGlass>
-                </div>
-              }
+              visual={<OnboardingVisual variant="report" />}
             />
 
           </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          EARN WITH SPROUT — teaser, between How it works and Why Sprout.
+          Partner-portal preview + a big green button. Full program on /partners.
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
+
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2A5132]/30 via-[#1B3722]/45 to-[#2A5132]/30" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-[#CDEFA0]/8 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-5xl mx-auto">
+
+          <div className="text-center mb-12">
+            <CenteredEyebrow number="04" label="Earn with Sprout" />
+            <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl mx-auto"
+                style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
+              Love Sprout? Get paid<br />to share it.
+            </h2>
+            <p className="mt-6 text-sprout-cream/75 leading-relaxed max-w-xl mx-auto"
+               style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
+              Share it with the parents who need it. When a family joins through
+              you, you earn every month they stay. For a whole year.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <PartnerDashboard />
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <Link
+              href="/partners"
+              className="group inline-flex items-center justify-center gap-2 h-14 px-9 rounded-full bg-gradient-to-r from-[#3D6643] to-[#2A5132] text-sprout-cream font-bold text-base border border-[#CDEFA0]/40 shadow-[0_12px_34px_-10px_rgba(0,0,0,0.55)] hover:from-[#46734D] hover:to-[#2F5D38] transition-colors focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#CDEFA0]/40"
+            >
+              Earn with Sprout
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
+            </Link>
+          </div>
+
         </div>
       </section>
 
@@ -721,8 +643,8 @@ export default function HomeV2() {
               </div>
 
               <h2 className="font-bold tracking-[-0.03em] text-sprout-cream headline-lit max-w-4xl mx-auto"
-                  style={{ fontSize: "clamp(44px, 8vw, 96px)", lineHeight: "1.06" }}>
-                Their week of learning.<br />Summarized while<br />you sleep on Sunday.
+                  style={{ fontSize: "clamp(30px, 5.5vw, 60px)", lineHeight: "1.12" }}>
+                Their week of learning.<br />Summarized while you<br />sleep on Sunday.
               </h2>
 
               <p className="mt-6 md:mt-8 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
@@ -739,7 +661,7 @@ export default function HomeV2() {
             <div className="mt-12 md:mt-16 flex justify-center">
               <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                Voiced by real homeschool moms
+                Voiced by real homeschool parents
               </div>
             </div>
 

@@ -116,7 +116,7 @@ export function Waitlist() {
           )}
         </div>
 
-        {/* ── Card 2: Earn with Sprout ──────────────────────────── */}
+        {/* ── Card 2: Earn with Sprout — simplified partner dashboard ─ */}
         <div className="rounded-2xl border-2 border-[#F4EDE0] bg-[#F4EDE0] p-6 md:p-8 flex flex-col text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.6),0_15px_40px_-10px_rgba(0,0,0,0.5),0_30px_60px_-20px_rgba(0,0,0,0.3)]">
           <p className="text-[11px] uppercase tracking-[0.22em] text-[#1B3722]/70 font-bold mb-3">
             Earn with Sprout
@@ -127,6 +127,36 @@ export function Waitlist() {
           >
             Share Sprout. Take a cut.
           </h3>
+
+          {/* A simplified version of the partner dashboard. */}
+          <div className="rounded-2xl bg-[#0C1610] border border-[#1B3722]/25 p-4 mb-5">
+            <div className="flex items-end justify-between mb-3">
+              <div>
+                <div className="text-sprout-cream/55 text-[9px] uppercase tracking-[0.22em] font-bold mb-1">
+                  Earned this month
+                </div>
+                <div className="font-display font-extrabold text-[#CDEFA0] text-[28px] leading-none">
+                  $1,285
+                </div>
+              </div>
+              <svg viewBox="0 0 96 34" className="w-24 h-9 shrink-0" fill="none" aria-hidden="true">
+                <path d="M0,28 L16,24 L32,26 L48,16 L64,18 L80,8 L96,4" stroke="#CDEFA0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                ["277", "families"],
+                ["41", "this mo"],
+                ["12 mo", "paid out"],
+              ].map(([v, l]) => (
+                <div key={l} className="rounded-lg bg-sprout-cream/[0.05] border border-sprout-cream/10 px-2 py-2">
+                  <div className="font-display font-extrabold text-sprout-cream text-[15px] leading-none">{v}</div>
+                  <div className="text-sprout-cream/50 text-[9px] mt-1 leading-none">{l}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1B3722]/8 border border-[#1B3722]/15 self-start">
             <span className="w-1.5 h-1.5 rounded-full bg-[#1B3722] animate-pulse" />
             <span className="text-[10px] uppercase tracking-[0.22em] text-[#1B3722]/85 font-bold">
