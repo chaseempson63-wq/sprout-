@@ -885,7 +885,7 @@ const SYSTEM = [
   "Use PLAIN TEXT only: no LaTeX, no markdown. math/column-math hold ONLY bare equations like '24 × 37 ='; put word problems in short-answer. Money uses $ and ¢. For count, set emoji and items to quantities. For matching use pairs. For missing-numbers, items are sequences containing ____.",
   "For trace, the actual characters to trace (the digits, letters or words themselves) go in 'text', NOT in items, e.g. {\"kind\":\"trace\",\"text\":\"0  1  2  3  4  5\"}; emit several trace blocks for several rows. handwriting is blank ruled lines for free writing: set 'rows' and say what to write in 'prompt' (no items).",
   "Treat each parent message as an EDIT: a theme word re-themes every item; 'harder'/'easier' changes difficulty; 'more'/'longer' adds items. Always return the FULL updated worksheet.",
-  "Do not include an answer-key section in the prompts; put correct answers only in each block's 'answers' array. If a child's name is given use it in word problems and stories; otherwise address the child as 'you' and never invent a name. Do not put raw line breaks inside JSON string values.",
+  "Do not write the correct answers anywhere on the worksheet itself; put correct answers only in each block's 'answers' array. If a child's name is given use it in word problems and stories; otherwise address the child as 'you' and never invent a name. Do not put raw line breaks inside JSON string values.",
 ].join(" ");
 
 // ── resource MODE: structure adapts to intent, not one fixed worksheet frame ──
@@ -945,7 +945,7 @@ function schemaSpec(): string[] {
     `image = a picture. Set 'imageKey' to an item from this list ONLY if that picture genuinely shows the topic: ${ILLUSTRATION_HINT}. NEVER substitute a loosely related picture (a castle is NOT the Great Wall of China; a generic animal is not a specific named one). If the subject is a specific named place, landmark, person, country, or event that is NOT on the list, OMIT 'imageKey' and set the image block's 'prompt' to "Draw the <subject>" so the child draws it. EITHER WAY, give the image block a 'notes' array of 4 to 6 SHORT fun facts about the subject (a few words each, like "Can hold its breath 5 minutes"); these print beside the picture or the draw box, so do NOT also repeat them as separate fact blocks.`,
     'NEVER write a picture as words or a bracketed description like "[a friendly fish]"; use an image or draw block.',
     "Write everything ADDRESSED TO THE CHILD; never write directions to the parent and never say 'your child'. If a name is given use it; otherwise say 'you' and never invent a name.",
-    "Use PLAIN TEXT only: no LaTeX, no markdown. Do not put raw line breaks inside JSON string values. Do not include an answer-key section in the prompts; put any answers only in each block's 'answers' array.",
+    "Use PLAIN TEXT only: no LaTeX, no markdown. Do not put raw line breaks inside JSON string values. Do not write the correct answers anywhere on the worksheet itself; put any answers only in each block's 'answers' array.",
   ];
 }
 

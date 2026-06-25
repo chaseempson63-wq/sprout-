@@ -33,7 +33,7 @@ export interface WorksheetBlock {
   emoji?: string; // object drawn for count blocks
   wordBank?: string[]; // words for a word-bank block
   rows?: number; // blank lines (handwriting) or draw-box height hint
-  answers?: string[]; // answer-key entries for this block
+  answers?: string[]; // correct answers for this block, stored only, never printed on the sheet
   imageKey?: string; // image block: key into the pre-built illustration set (public/resources/illustrations)
   notes?: string[]; // image block: short fun facts about the subject, printed flanking the picture
   svgKey?: string; // image block: key into the curated SVG line-art library (legacy fallback)

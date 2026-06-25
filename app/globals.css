@@ -255,12 +255,11 @@
 /* ──────────────────────────────────────────────────────────────────
    Print — Sprout Resources. The "Download PDF" button calls
    window.print(); these rules show only the resource document
-   (.print-area) so worksheets come out clean. .no-print hides chrome
-   and the answer key.
+   (.print-area) so worksheets come out clean. .no-print hides app chrome.
    ────────────────────────────────────────────────────────────────── */
 @media print {
-  /* Show only the worksheet document (.print-area). Hide all app chrome and the
-     answer key (.no-print), plus the page's green background. */
+  /* Show only the worksheet document (.print-area). Hide all app chrome
+     (.no-print), plus the page's green background. */
   .no-print {
     display: none !important;
   }

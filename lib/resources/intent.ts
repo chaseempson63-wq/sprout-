@@ -23,7 +23,6 @@ export const EDIT_KEYWORDS: EditKeyword[] = [
   { word: "shorter", does: "Keep only the core items, trim the rest." },
   { word: "more questions", does: "Add more distinct questions of the same kind." },
   { word: "in depth", does: "Ask richer questions that need explanation, not just recall." },
-  { word: "answer key", does: "Include the answers for the grown-up." },
   { word: "a theme word", does: "Re-theme every item around that subject. Try space, dinosaurs, ocean, animals, sports, food, vehicles, fairy tales." },
 ];
 

@@ -12,6 +12,7 @@ import {
   Printer,
   SlidersHorizontal,
   Sparkles,
+  Wand2,
 } from "lucide-react";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 
@@ -38,7 +39,12 @@ const STEPS = [
   {
     icon: Sparkles,
     title: "Sprout builds it",
-    body: "It writes the whole worksheet in a second or two. Want it different? Just tell it: make it harder, add a space theme, more questions.",
+    body: "It writes the whole worksheet in a second or two. Watch it come together, then it's ready to change.",
+  },
+  {
+    icon: Wand2,
+    title: "Tweak it with one tap",
+    body: "Under the sheet is a row of presets: harder, easier, more questions, or a theme like space or dinosaurs. Tap one and it rebuilds that way in a second. Tap a few and they stack. Want something specific? Just type it in the chat.",
   },
   {
     icon: Printer,
@@ -111,10 +117,6 @@ const FAQS = [
   {
     q: "It's slow, or it threw an error.",
     a: "Most sheets land in a second or two. If one trips, you'll see a try that again message. Just send it again.",
-  },
-  {
-    q: "Can I get an answer key?",
-    a: "Ask for one. Tap the answer key chip or type add an answer key, and Sprout includes it.",
   },
 ];
 

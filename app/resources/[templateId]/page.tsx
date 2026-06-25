@@ -439,7 +439,7 @@ function buildSteps(templateTitle: string, age: number, lastUser: string): strin
   if (u.includes("harder") || u.includes("challeng")) steps.push("Turning up the difficulty");
   else if (u.includes("easier") || u.includes("simpl")) steps.push("Making it a little gentler");
   if (u.includes("more")) steps.push("Adding more problems");
-  steps.push(`Writing real problems for age ${age}`, "Laying out the page", "Checking the answer key");
+  steps.push(`Writing real problems for age ${age}`, "Laying out the page", "Giving it a final check");
   return steps;
 }
 
