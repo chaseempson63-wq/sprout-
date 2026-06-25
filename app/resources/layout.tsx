@@ -4,6 +4,7 @@ import { MessagesSquare, ShieldCheck } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { AccountChip } from "./_components/AccountChip";
 import { FeedbackButton } from "./_components/FeedbackButton";
+import { HelpMascot } from "./_components/HelpMascot";
 import { GlassFilter, GlassLink } from "@/components/ui/glass";
 import { ResourcesProvider } from "@/lib/resources/store";
 
@@ -22,6 +23,8 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
     <ResourcesProvider>
       {/* The page-load intro is mounted site-wide in the root layout. */}
       <GlassFilter />
+      {/* Floating "need help?" Sprout → the how-to guide (hides itself on it). */}
+      <HelpMascot />
       <div className="text-sprout-cream relative flex min-h-screen flex-col overflow-x-hidden">
         {/* Continuous green canvas — same brand surface as the homepage. */}
         <div className="fixed inset-0 -z-20">

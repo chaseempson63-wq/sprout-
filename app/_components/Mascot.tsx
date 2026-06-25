@@ -13,19 +13,18 @@ import { SproutLogo } from "./Glass";
    See globals.css for `animate-mascot-float` / `animate-mascot-pop`.
    ───────────────────────────────────────────────────────────────────── */
 
-/* Lines are indexed against DOM order of <main> > <section>.
-   If the page section order changes, re-check sproutLines indexing. */
+/* One short, in-character line per <main> > <section>, indexed in DOM
+   order. The landing has 8 sections now; if the section order changes,
+   re-check this mapping against page.tsx. */
 const sproutLines = [
-  "oh hi. scroll, i'll come with you.",       // 0  Hero
-  "voice memo. photo. one line. that's me.",  // 1  Product reveal (phones)
-  "you're not making this feeling up.",       // 2  01 — Verbatim wall
-  "yeah. this is the part i was made for.",   // 3  02 — 11:42pm / reason Sprout exists
-  "three moves. that's it. promise.",         // 4  03 — How it works
-  "notes apps forget. i remember every week.",// 5  04 — Why Sprout, not another tool
-  "this is the good bit.",                    // 6  Shared moment — Friday kitchen table
-  "the bits you were already wondering.",     // 7  05 — FAQ
-  "read this one slow. it's the one.",        // 8  06 — "I see you. I feel you." (trust seal)
-  "ok. ready when you are.",                  // 9  Final CTA — Sleep on Sunday + waitlist
+  "oh hi. scroll, i'll come with you.",               // 0  Hero: "you did more than you think"
+  "voice memo, photo, one line. that's all i need.",  // 1  Product showcase: the app screens
+  "see, you're not making this up.",                  // 2  Verbatim wall: real parent quotes
+  "this exact feeling. it's why i'm here.",           // 3  11:42pm: the reason Sprout exists
+  "drop it in, i'll keep it. that's the whole job.",  // 4  How it works
+  "share me around. earn every month they stay.",     // 5  Earn with Sprout
+  "notes forget. i don't. and i never sell you out.", // 6  Why Sprout: vs notes / ChatGPT
+  "ok. ready when you are.",                          // 7  Final CTA: sleep on Sunday + waitlist
 ];
 
 export function Mascot() {
