@@ -36,7 +36,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 
   switch (block.kind) {
     case "instructions":
-      return <p className="text-[15px] leading-relaxed font-medium text-[#1B3722]">{block.prompt || block.text}</p>;
+      return <p className="text-[17px] leading-[1.6] font-bold text-[#2E5A35]">{block.prompt || block.text}</p>;
 
     case "trace":
       return (
@@ -261,10 +261,8 @@ function BlockView({ block }: { block: WorksheetBlock }) {
     case "passage":
       return (
         <div>
-          {prompt}
-          <div className="mt-2 rounded-2xl border border-[#2E5A35]/20 bg-[#F3F7F0] px-5 py-4 text-[15px] leading-relaxed text-[#1B3722]">
-            {block.text}
-          </div>
+          {block.prompt ? <h3 className="mb-2 text-[19px] leading-snug font-extrabold text-[#2E5A35]">{block.prompt}</h3> : null}
+          <p className="rounded-3xl bg-[#F1F6EC] px-6 py-5 text-[16.5px] leading-[1.7] text-[#22402A]">{block.text}</p>
         </div>
       );
 
@@ -281,9 +279,9 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 
     case "fact":
       return (
-        <div className="rounded-2xl border border-[#2E5A35]/25 bg-[#FBF6E7] px-5 py-3">
-          <p className="text-[12px] font-extrabold uppercase tracking-wide text-[#2E5A35]">★ {block.prompt || "Did you know?"}</p>
-          {block.text ? <p className="mt-1 text-[15px] leading-relaxed text-[#1B3722]">{block.text}</p> : null}
+        <div className="rounded-3xl bg-[#FBF1D9] px-6 py-4">
+          <p className="text-[13px] font-extrabold tracking-wide text-[#C6881A] uppercase">★ {block.prompt || "Did you know?"}</p>
+          {block.text ? <p className="mt-1 text-[16px] leading-[1.6] text-[#3A3320]">{block.text}</p> : null}
         </div>
       );
 
@@ -294,7 +292,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
           <div>
             {prompt}
             <div className="mt-2 flex justify-center">
-              <IllustrationImg imageKey={block.imageKey} alt={block.prompt} />
+              <IllustrationImg imageKey={block.imageKey} alt={block.prompt} notes={block.notes} />
             </div>
           </div>
         );

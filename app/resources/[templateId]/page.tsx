@@ -153,6 +153,9 @@ export default function Builder() {
     if (next === pendingAge.current) return;
     pendingAge.current = next;
     setAge(next);
+    // Only regenerate if a sheet already exists. On Build-your-own, changing the
+    // age before the user has prompted must NOT auto-generate a default sheet.
+    if (idx < 0) return;
     // Debounce: rapid stepper clicks fire ONE request at the final age (no race).
     if (ageTimer.current) window.clearTimeout(ageTimer.current);
     ageTimer.current = window.setTimeout(() => void runGenerate(messages, next, "silent", childName), 350);
@@ -173,7 +176,8 @@ export default function Builder() {
     setAge(kidAge);
     pendingAge.current = kidAge;
     if (ageTimer.current) window.clearTimeout(ageTimer.current);
-    void runGenerate(messages, kidAge, "silent", kidName);
+    // Same guard: don't auto-generate before the user has made a sheet.
+    if (idx >= 0) void runGenerate(messages, kidAge, "silent", kidName);
   }
 
   function addKid() {

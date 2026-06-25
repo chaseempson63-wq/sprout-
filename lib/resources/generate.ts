@@ -938,10 +938,10 @@ function imageMax(): number {
 function schemaSpec(): string[] {
   return [
     'Return ONLY valid JSON: {"title":string,"subtitle":string,"blocks":[Block]}.',
-    'Block = {"kind":string,"prompt"?:string,"text"?:string,"items"?:[string],"pairs"?:[{"left":string,"right":string}],"emoji"?:string,"wordBank"?:[string],"rows"?:number,"answers"?:[string],"imageKey"?:string}.',
+    'Block = {"kind":string,"prompt"?:string,"text"?:string,"items"?:[string],"pairs"?:[{"left":string,"right":string}],"emoji"?:string,"wordBank"?:[string],"rows"?:number,"answers"?:[string],"imageKey"?:string,"notes"?:[string]}.',
     "Allowed kinds: instructions, passage, fact, image, draw, short-answer, multiple-choice, fill-blank, word-bank, matching, count, missing-numbers, trace, handwriting, math, column-math.",
     "passage = a short heading in 'prompt' and the teaching text in 'text'. fact = one surprising fact in 'text'. draw = a box the child draws in, say what in 'prompt'.",
-    `image = a picture: set 'imageKey' to the ONE closest match from this list: ${ILLUSTRATION_HINT}. If nothing on the list is genuinely close, use a draw block instead, never force a bad match.`,
+    `image = a picture: set 'imageKey' to the ONE closest match from this list: ${ILLUSTRATION_HINT}. If nothing on the list is genuinely close, use a draw block instead, never force a bad match. ALSO give the image block a 'notes' array of 4 to 6 SHORT fun facts about the subject (a few words each, like "Can hold its breath 5 minutes" or "Spends 16 hours a day in water"); these print beside the picture to fill the space, so do NOT also repeat them as separate fact blocks.`,
     'NEVER write a picture as words or a bracketed description like "[a friendly fish]"; use an image or draw block.',
     "Write everything ADDRESSED TO THE CHILD; never write directions to the parent and never say 'your child'. If a name is given use it; otherwise say 'you' and never invent a name.",
     "Use PLAIN TEXT only: no LaTeX, no markdown. Do not put raw line breaks inside JSON string values. Do not include an answer-key section in the prompts; put any answers only in each block's 'answers' array.",
@@ -954,7 +954,7 @@ function schemaSpec(): string[] {
 function systemTeach(): string {
   return [
     "You design printable LEARNING resources for a child (ages 3-12) to read at home. Teach the topic in small chunks and check understanding as you go.",
-    "Open with one warm, exciting line (an 'instructions' block) that makes the child want to know more, and put one 'image' early so there is something to look at.",
+    "Open with one warm, exciting line (an 'instructions' block) that makes the child want to know more, and put one 'image' early (with 4 to 6 short fun facts as its 'notes', which print beside the picture) so there is something to look at and learn from.",
     "Then build the body as 3 or 4 SHORT CYCLES. A cycle is a small teaching chunk followed IMMEDIATELY by one or two quick questions about THAT chunk:",
     "each cycle = one 'passage' (a short fun heading in 'prompt', a few vivid sentences in 'text'), optionally a 'fact', then 1 or 2 'short-answer' or 'multiple-choice' questions answerable from the passage directly above them.",
     "This rhythm is the whole point: teach a little, ask a little, teach a little more, ask a little more. NEVER stack all the teaching first and dump all the questions at the end.",
@@ -1074,6 +1074,8 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
     if (typeof o.emoji === "string") block.emoji = o.emoji;
     if (typeof o.rows === "number") block.rows = o.rows;
     if (typeof o.imageKey === "string") block.imageKey = o.imageKey.trim().toLowerCase().replace(/\s+/g, "-");
+    const notesArr = strArr(o.notes);
+    if (notesArr) block.notes = notesArr.map((s) => noDash(s).trim()).filter(Boolean).slice(0, 6);
     if (typeof o.svgKey === "string") block.svgKey = o.svgKey;
     if (typeof o.imagePrompt === "string") block.imagePrompt = noDash(o.imagePrompt).trim().slice(0, 300);
     // Visual honesty: an image must resolve to a real picture, normally a pre-built

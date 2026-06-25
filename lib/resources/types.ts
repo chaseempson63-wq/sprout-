@@ -35,6 +35,7 @@ export interface WorksheetBlock {
   rows?: number; // blank lines (handwriting) or draw-box height hint
   answers?: string[]; // answer-key entries for this block
   imageKey?: string; // image block: key into the pre-built illustration set (public/resources/illustrations)
+  notes?: string[]; // image block: short fun facts about the subject, printed flanking the picture
   svgKey?: string; // image block: key into the curated SVG line-art library (legacy fallback)
   imagePrompt?: string; // image block: description for live AI image gen (dormant, opt-in path)
   dataUrl?: string; // image block: a generated raster as a data: URL (dormant, opt-in path)

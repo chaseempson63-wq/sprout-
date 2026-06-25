@@ -3,14 +3,18 @@
 import { useState } from "react";
 import { illustrationLabels } from "@/lib/resources/illustrations";
 
-// Renders a pre-built illustration from public/resources/illustrations/<key>.webp.
-// Diagram topics (e.g. solar-system) carry real label text in the catalog, which
-// the APP prints flanking the picture (half on the left, half on the right) so the
-// spelling is always correct and never baked into the generated image. If the asset
-// is missing the <img> errors and we fall back to a clean draw box.
-export function IllustrationImg({ imageKey, alt }: { imageKey: string; alt?: string }) {
+// Renders a pre-built illustration from public/resources/illustrations/<key>.webp,
+// and fills the whitespace beside it. Diagram topics carry part-name LABELS in the
+// catalog (short, e.g. the 8 planets). Any other image gets the model's NOTES (a
+// few short fun facts about the subject). Either way the text is app-rendered, half
+// down the left and half down the right, so spelling is always correct. A missing
+// asset errors and falls back to a clean draw box.
+export function IllustrationImg({ imageKey, alt, notes }: { imageKey: string; alt?: string; notes?: string[] }) {
   const [failed, setFailed] = useState(false);
   const labels = illustrationLabels(imageKey);
+  const facts = !labels && notes ? notes.filter((n) => n && n.trim()).slice(0, 6) : undefined;
+  const side = labels && labels.length >= 2 ? labels : facts && facts.length >= 2 ? facts : null;
+  const isFacts = !labels && !!side;
 
   if (failed) {
     return (
@@ -33,25 +37,26 @@ export function IllustrationImg({ imageKey, alt }: { imageKey: string; alt?: str
     />
   );
 
-  // Plain illustration: just the picture.
-  if (!labels || labels.length < 2) {
+  if (!side) {
     return <div className="w-full max-w-[380px]">{picture}</div>;
   }
 
-  // Diagram: real label text the app prints flanking the picture (always correct,
-  // never inside the generated pixels). Half the labels left, half right.
-  const mid = Math.ceil(labels.length / 2);
-  const renderLabel = (t: string, side: "l" | "r") => (
-    <li key={`${side}-${t}`} className={`flex items-center gap-2 ${side === "l" ? "flex-row-reverse text-right" : "text-left"}`}>
-      <span className="inline-block size-1.5 shrink-0 rounded-full bg-[#2E5A35]" />
-      <span className="text-[13px] leading-tight font-semibold text-[#1B3722]">{t}</span>
+  const mid = Math.ceil(side.length / 2);
+  const renderItem = (t: string, key: string, leftSide: boolean) => (
+    <li key={key} className={`flex gap-2 ${isFacts ? "items-start" : "items-center"} ${leftSide ? "flex-row-reverse text-right" : "text-left"}`}>
+      <span className={`inline-block size-1.5 shrink-0 rounded-full bg-[#5B8C4E] ${isFacts ? "mt-1.5" : ""}`} />
+      <span className={isFacts ? "text-[12.5px] leading-snug text-[#2E5A35]" : "text-[13px] leading-tight font-bold text-[#1B3722]"}>{t}</span>
     </li>
   );
   return (
-    <div className="flex w-full max-w-[580px] items-center justify-center gap-2 sm:gap-4">
-      <ul className="flex shrink-0 flex-col gap-2.5">{labels.slice(0, mid).map((t) => renderLabel(t, "l"))}</ul>
-      <div className="min-w-0 max-w-[220px] flex-1">{picture}</div>
-      <ul className="flex shrink-0 flex-col gap-2.5">{labels.slice(mid).map((t) => renderLabel(t, "r"))}</ul>
+    <div className={`flex w-full items-center justify-center gap-2 sm:gap-4 ${isFacts ? "max-w-[680px]" : "max-w-[560px]"}`}>
+      <ul className={`flex shrink-0 flex-col gap-3 ${isFacts ? "w-[33%] max-w-[190px]" : ""}`}>
+        {side.slice(0, mid).map((t, i) => renderItem(t, `l-${i}`, true))}
+      </ul>
+      <div className={`min-w-0 flex-1 ${isFacts ? "max-w-[210px]" : "max-w-[200px]"}`}>{picture}</div>
+      <ul className={`flex shrink-0 flex-col gap-3 ${isFacts ? "w-[33%] max-w-[190px]" : ""}`}>
+        {side.slice(mid).map((t, i) => renderItem(t, `r-${i}`, false))}
+      </ul>
     </div>
   );
 }
