@@ -44,7 +44,7 @@ function loadKey() {
 
 async function parseCatalog() {
   const src = await readFile(CATALOG, "utf8");
-  const re = /\{\s*key:\s*"([^"]+)",\s*prompt:\s*"([^"]+)"\s*\}/g;
+  const re = /\{\s*key:\s*"([^"]+)",\s*prompt:\s*"([^"]+)"/g;
   const items = [];
   let m;
   while ((m = re.exec(src))) items.push({ key: m[1], prompt: m[2] });
