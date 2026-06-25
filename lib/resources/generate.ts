@@ -883,6 +883,7 @@ const SYSTEM = [
   "Difficulty MUST scale to the EXACT age: 3-4 = numbers to 5, single letters, tracing, simple shapes; 5-6 = numbers to 20, CVC words, basic shapes and patterns; 7-8 = numbers to 100, times tables, fractions of a shape; 9-10 = multi-digit operations, division, fractions, longer reading; 11-13 = multi-step problems, fractions and decimals, place value to thousands.",
   "HARDER means genuinely MORE COMPLEX (bigger and multi-digit numbers, carrying/borrowing, more steps, harder vocabulary), never the same answers reshuffled. EASIER means simpler. Every item must be distinct.",
   "Use PLAIN TEXT only: no LaTeX, no markdown. math/column-math hold ONLY bare equations like '24 × 37 ='; put word problems in short-answer. Money uses $ and ¢. For count, set emoji and items to quantities. For matching use pairs. For missing-numbers, items are sequences containing ____.",
+  "For trace, the actual characters to trace (the digits, letters or words themselves) go in 'text', NOT in items, e.g. {\"kind\":\"trace\",\"text\":\"0  1  2  3  4  5\"}; emit several trace blocks for several rows. handwriting is blank ruled lines for free writing: set 'rows' and say what to write in 'prompt' (no items).",
   "Treat each parent message as an EDIT: a theme word re-themes every item; 'harder'/'easier' changes difficulty; 'more'/'longer' adds items. Always return the FULL updated worksheet.",
   "Do not include an answer-key section in the prompts; put correct answers only in each block's 'answers' array. If a child's name is given use it in word problems and stories; otherwise address the child as 'you' and never invent a name. Do not put raw line breaks inside JSON string values.",
 ].join(" ");
@@ -1110,6 +1111,27 @@ function normalize(parsed: Record<string, unknown>, template: WorksheetTemplate,
       const parts = block.text.split(/\r?\n+/).map((s) => s.trim()).filter(Boolean);
       block.items = (parts.length ? parts : [block.text.trim()]).map(noDash);
       delete block.text;
+    }
+    // trace renders its glyphs from `text` (e.g. "0  1  2  3"). The model very
+    // often packs the digits/letters/words into `items` (or wordBank) instead,
+    // which the trace renderer never reads -> the characters vanish and only the
+    // dashed line shows (a "trace the numbers" sheet with no numbers). Join them
+    // back into `text`.
+    if (block.kind === "trace" && (!block.text || !block.text.trim())) {
+      const glyphs = (block.items && block.items.length ? block.items : block.wordBank) ?? [];
+      if (glyphs.length) {
+        block.text = glyphs.join("   ");
+        delete block.items;
+        delete block.wordBank;
+      }
+    }
+    // handwriting is a prompt + blank ruled lines; it has no slot for `items`.
+    // If the model listed specific things to write, fold them into the prompt so
+    // the child sees them above the lines instead of losing them entirely.
+    if (block.kind === "handwriting" && block.items && block.items.length) {
+      const list = block.items.join("    ");
+      block.prompt = block.prompt ? `${block.prompt}  ${list}` : list;
+      delete block.items;
     }
     // word-bank reads `wordBank`; accept items (or a comma/newline list in text).
     if (block.kind === "word-bank" && (!block.wordBank || block.wordBank.length === 0)) {
