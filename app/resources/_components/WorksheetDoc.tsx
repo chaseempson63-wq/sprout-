@@ -266,16 +266,41 @@ function BlockView({ block }: { block: WorksheetBlock }) {
         </div>
       );
 
-    case "draw":
+    case "draw": {
+      // cap the EMPTY box height to a sensible drawing space (never most of a page)
+      const boxH = `${Math.min(block.rows ?? 6, 8) * 26}px`;
+      const box = <div className="rounded-2xl border-2 border-dashed border-[#2E5A35]/35" style={{ height: boxH }} />;
+      const notes = (block.notes ?? []).filter((n) => n && n.trim());
+      // When an off-list topic degrades to a draw box, keep the fun facts flanking
+      // it (half left, half right) so the page is still rich, same as an image.
+      if (notes.length >= 2) {
+        const mid = Math.ceil(notes.length / 2);
+        const note = (t: string, key: string, left: boolean) => (
+          <li key={key} className={`flex items-start gap-2 ${left ? "flex-row-reverse text-right" : "text-left"}`}>
+            <span className="mt-1.5 inline-block size-1.5 shrink-0 rounded-full bg-[#5B8C4E]" />
+            <span className="text-[12.5px] leading-snug text-[#2E5A35]">{t}</span>
+          </li>
+        );
+        return (
+          <div>
+            {prompt}
+            <div className="mt-2 flex items-stretch justify-center gap-3 sm:gap-4">
+              <ul className="flex w-[33%] max-w-[190px] shrink-0 flex-col justify-center gap-3">{notes.slice(0, mid).map((t, i) => note(t, `l-${i}`, true))}</ul>
+              <div className="min-w-0 max-w-[210px] flex-1">{box}</div>
+              <ul className="flex w-[33%] max-w-[190px] shrink-0 flex-col justify-center gap-3">{notes.slice(mid).map((t, i) => note(t, `r-${i}`, false))}</ul>
+            </div>
+            <Lines count={2} />
+          </div>
+        );
+      }
       return (
         <div>
           {prompt}
-          {/* cap the EMPTY box height to a sensible drawing space (never most of a
-              page); this bounds an empty box, not the amount of teaching content */}
-          <div className="mt-2 rounded-2xl border-2 border-dashed border-[#2E5A35]/35" style={{ height: `${Math.min(block.rows ?? 6, 8) * 26}px` }} />
+          <div className="mt-2">{box}</div>
           <Lines count={2} />
         </div>
       );
+    }
 
     case "fact":
       return (
