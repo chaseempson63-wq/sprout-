@@ -267,12 +267,10 @@ function BlockView({ block }: { block: WorksheetBlock }) {
       );
 
     case "draw": {
-      // cap the EMPTY box height to a sensible drawing space (never most of a page)
-      const boxH = `${Math.min(block.rows ?? 6, 8) * 26}px`;
-      const box = <div className="rounded-2xl border-2 border-dashed border-[#2E5A35]/35" style={{ height: boxH }} />;
       const notes = (block.notes ?? []).filter((n) => n && n.trim());
-      // When an off-list topic degrades to a draw box, keep the fun facts flanking
-      // it (half left, half right) so the page is still rich, same as an image.
+      const boxClass = "rounded-2xl border-2 border-dashed border-[#2E5A35]/35 bg-[#FBFDF9]";
+      // Off-list "draw the subject": a GENEROUS drawing area (about a quarter page)
+      // with the fun facts flanking it, half left and half right.
       if (notes.length >= 2) {
         const mid = Math.ceil(notes.length / 2);
         const note = (t: string, key: string, left: boolean) => (
@@ -285,18 +283,19 @@ function BlockView({ block }: { block: WorksheetBlock }) {
           <div>
             {prompt}
             <div className="mt-2 flex items-stretch justify-center gap-3 sm:gap-4">
-              <ul className="flex w-[33%] max-w-[190px] shrink-0 flex-col justify-center gap-3">{notes.slice(0, mid).map((t, i) => note(t, `l-${i}`, true))}</ul>
-              <div className="min-w-0 max-w-[210px] flex-1">{box}</div>
-              <ul className="flex w-[33%] max-w-[190px] shrink-0 flex-col justify-center gap-3">{notes.slice(mid).map((t, i) => note(t, `r-${i}`, false))}</ul>
+              <ul className="flex w-[26%] max-w-[160px] shrink-0 flex-col justify-center gap-3.5">{notes.slice(0, mid).map((t, i) => note(t, `l-${i}`, true))}</ul>
+              <div className={`${boxClass} min-h-[340px] w-[46%] max-w-[330px] flex-1`} />
+              <ul className="flex w-[26%] max-w-[160px] shrink-0 flex-col justify-center gap-3.5">{notes.slice(mid).map((t, i) => note(t, `r-${i}`, false))}</ul>
             </div>
-            <Lines count={2} />
           </div>
         );
       }
+      // plain draw box: generous room to draw, bigger than the old ~200px cap
+      const boxH = `${Math.min(Math.max(block.rows ?? 10, 9), 14) * 28}px`;
       return (
         <div>
           {prompt}
-          <div className="mt-2">{box}</div>
+          <div className={`mt-2 ${boxClass}`} style={{ height: boxH }} />
           <Lines count={2} />
         </div>
       );
