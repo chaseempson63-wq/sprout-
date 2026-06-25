@@ -984,22 +984,30 @@ export function buildMessages(template: WorksheetTemplate, age: number, messages
   const who2 = name ? `The child is named ${name}, age ${age}. Use ${name} in word problems and stories.` : `The child is age ${age}; no name was given, so address them as 'you' and never invent a name.`;
   const lvl = detectDifficulty(asks.join(" "));
   const target = Math.round(20 * scaleFactor(age, lvl));
+  const mode = detectMode(template, messages);
+  // teach/activity are CONTENT modes — difficulty + benchmark must be about reading
+  // and depth, NEVER the math grade level (which would drag a nature lesson to math).
+  const teachy = mode === "teach" || mode === "activity";
   const diffNote =
     lvl > 0
-      ? `DIFFICULTY: the parent has asked to make it harder ${lvl} time(s). Make this clearly harder than a standard age-${age} sheet, and harder with each request: for number problems use values up to roughly ${target}, with carrying/borrowing and multi-step where it fits; for words and reading use longer, richer content. `
+      ? teachy
+        ? `DIFFICULTY: asked to make it harder ${lvl} time(s). Go clearly DEEPER than a standard age-${age} sheet, and deeper each time: richer ideas, longer reading, tougher vocabulary and harder (but still on-topic) questions. Never switch to math. `
+        : `DIFFICULTY: the parent has asked to make it harder ${lvl} time(s). Make this clearly harder than a standard age-${age} sheet, and harder with each request: for number problems use values up to roughly ${target}, with carrying/borrowing and multi-step where it fits; for words and reading use longer, richer content. `
       : lvl < 0
-        ? `DIFFICULTY: the parent has asked to make it easier. Make this clearly gentler than a standard age-${age} sheet: smaller numbers (up to about ${target}) and fewer steps. `
+        ? teachy
+          ? `DIFFICULTY: asked to make it easier. Make it clearly gentler than a standard age-${age} sheet: simpler words, shorter passages, easier questions. `
+          : `DIFFICULTY: the parent has asked to make it easier. Make this clearly gentler than a standard age-${age} sheet: smaller numbers (up to about ${target}) and fewer steps. `
         : "";
-  const benchNote = `An average ${age}-year-old works at this level in school: ${ageBenchmark(age)}. Match that grade level and never go below it. `;
-
-  const mode = detectMode(template, messages);
+  const benchNote = teachy
+    ? `Pitch the vocabulary, sentence length and ideas at what an average ${age}-year-old can read and understand, and never go below that level. `
+    : `An average ${age}-year-old works at this level in school: ${ageBenchmark(age)}. Match that grade level and never go below it. `;
 
   // TEACH: lead with real teaching content; questions optional. (Freeform only.)
   if (mode === "teach") {
     const teachUser =
       `The child wants to learn about this topic, newest message last: ${askText}. ` +
       `${who2} ${benchNote}${diffNote}` +
-      `Teach it for a ${age}-year-old following the rules above: a hook, rich teaching passages, fun facts, a picture, and only a few light questions at the end if any. Give it a clear, specific title that names the topic. Return ONLY the worksheet JSON.`;
+      `Teach it for a ${age}-year-old following the CYCLE rules above (teach a little, ask a little, all about the topic). Honor exactly what they asked for: if they asked for a quiz, include a solid set of questions about the topic. Give it a clear, specific title that names the topic. Return ONLY the worksheet JSON.`;
     return [
       { role: "system", content: systemTeach() },
       { role: "user", content: teachUser },
