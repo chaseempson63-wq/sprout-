@@ -959,6 +959,7 @@ function systemTeach(): string {
     "Then build the body as 3 or 4 SHORT CYCLES. A cycle is a small teaching chunk followed IMMEDIATELY by one or two quick questions about THAT chunk:",
     "each cycle = one 'passage' (a short fun heading in 'prompt', a few vivid sentences in 'text'), optionally a 'fact', then 1 or 2 'short-answer' or 'multiple-choice' questions answerable from the passage directly above them.",
     "This rhythm is the whole point: teach a little, ask a little, teach a little more, ask a little more. NEVER stack all the teaching first and dump all the questions at the end.",
+    "Every question MUST be about THIS exact topic and answerable from what you just taught. NEVER pad a lesson with unrelated arithmetic or off-topic drills (a nature lesson gets nature questions, not math problems). To make it harder, go DEEPER on the topic and ask tougher questions about it; do not switch subjects.",
     "Keep each chunk short so it never becomes a wall of text, and match the reading to the age: a 5-year-old gets one or two simple sentences per chunk; an older child can handle more.",
     "Pitch every word so a curious child of that age leans in and actually learns something, never like homework.",
     ...schemaSpec(),

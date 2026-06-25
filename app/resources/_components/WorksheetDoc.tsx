@@ -32,7 +32,7 @@ function AnswerBox() {
 }
 
 function BlockView({ block }: { block: WorksheetBlock }) {
-  const prompt = block.prompt ? <p className="text-[13px] font-semibold text-[#2E5A35]">{block.prompt}</p> : null;
+  const prompt = block.prompt ? <p className="text-[14px] font-bold text-[#2E5A35]">{block.prompt}</p> : null;
 
   switch (block.kind) {
     case "instructions":
@@ -225,10 +225,10 @@ function BlockView({ block }: { block: WorksheetBlock }) {
       return (
         <div>
           {prompt}
-          <ul className="mt-2 space-y-2 text-[15px] text-[#1B3722]">
+          <ul className="mt-2.5 space-y-3 text-[16px] leading-relaxed text-[#1B3722]">
             {(block.items ?? []).map((opt, i) => (
               <li key={i} className="flex items-center gap-3">
-                <span className="inline-block size-5 rounded-full border-2 border-[#2E5A35]/50" />
+                <span className="inline-block size-5 shrink-0 rounded-full border-2 border-[#2E5A35]/50" />
                 {opt}
               </li>
             ))}
@@ -242,10 +242,10 @@ function BlockView({ block }: { block: WorksheetBlock }) {
         <div>
           {prompt}
           {qs.length > 0 ? (
-            <ol className="mt-2 space-y-4 text-[15px] text-[#1B3722]">
+            <ol className="mt-2.5 space-y-4 text-[16px] leading-relaxed text-[#1B3722]">
               {qs.map((q, i) => (
                 <li key={i}>
-                  <span className="mr-2 font-semibold text-[#2E5A35]">{i + 1}.</span>
+                  <span className="mr-2 font-extrabold text-[#2E5A35]">{i + 1}.</span>
                   {q}
                   <Lines count={block.rows ?? 2} />
                 </li>
@@ -261,8 +261,8 @@ function BlockView({ block }: { block: WorksheetBlock }) {
     case "passage":
       return (
         <div>
-          {block.prompt ? <h3 className="mb-2 text-[19px] leading-snug font-extrabold text-[#2E5A35]">{block.prompt}</h3> : null}
-          <p className="rounded-3xl bg-[#F1F6EC] px-6 py-5 text-[16.5px] leading-[1.7] text-[#22402A]">{block.text}</p>
+          {block.prompt ? <h3 className="mb-1.5 text-[17px] leading-snug font-extrabold text-[#2E5A35]">{block.prompt}</h3> : null}
+          <p className="rounded-2xl bg-[#F1F6EC] px-5 py-3.5 text-[15.5px] leading-[1.6] text-[#22402A]">{block.text}</p>
         </div>
       );
 
