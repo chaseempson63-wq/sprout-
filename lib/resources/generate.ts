@@ -1272,7 +1272,7 @@ export async function aiWorksheet(
     model,
     messages: msgs,
     temperature: 0.55,
-    max_tokens: 4000,
+    max_tokens: 5200,
     venice_parameters: { include_venice_system_prompt: false },
   });
   // One retry on a transient Venice failure (a 429 under load, or a 5xx/network
@@ -1293,11 +1293,20 @@ export async function aiWorksheet(
       }
       const data = (await res.json()) as { choices?: { message?: { content?: string } }[] };
       const text = data?.choices?.[0]?.message?.content;
-      if (!text) return null;
-      const parsed = extractJson(text);
-      if (!parsed) return null;
-      const ws = normalize(parsed, template, age, childName);
-      if (ws && imagesEnabled()) await attachImages(ws, detectMode(template, messages), key);
+      const parsed = text ? extractJson(text) : null;
+      const ws = parsed ? normalize(parsed, template, age, childName) : null;
+      if (!ws) {
+        // Soft failure: the call succeeded (200) but the output was empty,
+        // unparseable, or too thin. The model does this intermittently, and a
+        // fresh attempt almost always succeeds, so retry once before dropping to
+        // the "let's try that again" fallback.
+        if (attempt === 0) {
+          await sleep(700);
+          continue;
+        }
+        return null;
+      }
+      if (imagesEnabled()) await attachImages(ws, detectMode(template, messages), key);
       return ws;
     } catch {
       if (attempt === 0) {
