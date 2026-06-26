@@ -62,7 +62,8 @@ export function FeedbackButton() {
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <button onClick={openDialog} aria-label="Message us privately" className={pill(false, "h-9 shrink-0 px-3 text-xs")}>
-        <MessageSquare className="size-4" /> Message us
+        <MessageSquare className="size-4" />
+        <span className="hidden sm:inline">Message us</span>
       </button>
       <Dialog.Portal>
         <Dialog.Backdrop className="fixed inset-0 z-[100] bg-[#0F1A12]/80 backdrop-blur-sm transition-opacity duration-200 data-[ending-style]:opacity-0 data-[starting-style]:opacity-0" />

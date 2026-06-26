@@ -45,22 +45,23 @@ export function AccountChip() {
 
   if (account) {
     return (
-      <Link href={`/resources/creator/${account.handle}`} className={pill(false, "h-9 shrink-0 py-1 pr-3 pl-1 text-sm")}>
+      <Link href={`/resources/creator/${account.handle}`} className={pill(false, "h-9 shrink-0 py-1 pr-1.5 pl-1 text-sm sm:pr-3")}>
         {account.photo ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={account.photo} alt="" className="size-7 rounded-full object-cover" />
         ) : (
           <span className="grid size-7 place-items-center rounded-full bg-[#2E5A35] text-sm font-bold text-white">{capName(account.displayName).charAt(0)}</span>
         )}
-        <span className="font-semibold">{capName(account.displayName)}</span>
+        <span className="hidden font-semibold sm:inline">{capName(account.displayName)}</span>
       </Link>
     );
   }
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <button onClick={() => setOpen(true)} className={pill(false, "h-9 shrink-0 px-3 text-xs")}>
-        <UserCircle className="size-4" /> Create profile
+      <button onClick={() => setOpen(true)} aria-label="Create profile" className={pill(false, "h-9 shrink-0 px-3 text-xs")}>
+        <UserCircle className="size-4" />
+        <span className="hidden sm:inline">Create profile</span>
       </button>
       <Dialog.Portal>
         <Dialog.Backdrop className="fixed inset-0 z-[100] bg-[#0F1A12]/80 backdrop-blur-sm transition-opacity duration-200 data-[ending-style]:opacity-0 data-[starting-style]:opacity-0" />
