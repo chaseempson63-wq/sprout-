@@ -251,6 +251,26 @@ export function hasIllustration(key: string | undefined): key is string {
 // exist. Kept compact; the model reads slugs fine.
 export const ILLUSTRATION_HINT = ILLUSTRATIONS.map((i) => i.key).join(", ");
 
+// Longest key first so multi-word topics ("sea-turtle", "solar-system") win over
+// a contained single word.
+const KEYS_BY_LEN = [...ILLUSTRATION_KEYS].sort((a, b) => b.length - a.length);
+
+// Best-effort topic -> illustration key from free text (the sheet title + the
+// parent's prompt). Word-boundary match so "cat" never hits "education"; tolerant
+// of simple plurals ("lions" -> lion, "sheep" -> sheep). Used as a deterministic
+// fallback when the model forgets to pick an image from the long list even though
+// one genuinely exists for the topic.
+export function pickIllustrationFor(text: string): string | undefined {
+  const t = ` ${text.toLowerCase().replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ")} `;
+  for (const key of KEYS_BY_LEN) {
+    const p = key.replace(/-/g, " ");
+    if (t.includes(` ${p} `) || t.includes(` ${p}s `) || t.includes(` ${p}es `) || (p.endsWith("s") && t.includes(` ${p.slice(0, -1)} `))) {
+      return key;
+    }
+  }
+  return undefined;
+}
+
 const BY_KEY = new Map(ILLUSTRATIONS.map((i) => [i.key, i] as const));
 
 // Real label text the renderer shows flanking a diagram illustration (e.g. the

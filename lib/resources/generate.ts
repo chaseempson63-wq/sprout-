@@ -9,7 +9,7 @@
 //                           deterministic engine instead.
 
 import { getTemplate } from "./catalog";
-import { ILLUSTRATION_HINT, hasIllustration } from "./illustrations";
+import { ILLUSTRATION_HINT, hasIllustration, pickIllustrationFor } from "./illustrations";
 import { detectTheme, intentPreamble } from "./intent";
 import { SVG_ART } from "./svg-art";
 import { capName } from "./util";
@@ -1280,6 +1280,24 @@ async function attachImages(ws: Worksheet, mode: ResourceMode, key: string): Pro
   }
 }
 
+// Deterministic image safety net. A teach/activity sheet should lead with a
+// picture, but the model picks from a 197-item list and intermittently emits no
+// image at all (e.g. "teach me about sheep" came back image-less though a sheep
+// illustration exists). If there's no real picture, match the topic (title +
+// prompt) to a pre-built illustration and drop it in near the top.
+function injectIllustrationIfMissing(ws: Worksheet, template: WorksheetTemplate, messages: ChatMessage[]): void {
+  const mode = detectMode(template, messages);
+  if (mode !== "teach" && mode !== "activity") return;
+  const hasPic = ws.blocks.some(
+    (b) => b.kind === "image" && (hasIllustration(b.imageKey) || !!b.dataUrl || !!b.imagePrompt || !!(b.svgKey && SVG_ART[b.svgKey])),
+  );
+  if (hasPic) return;
+  const lastUser = [...messages].reverse().find((m) => m.role === "user")?.content ?? "";
+  const key = pickIllustrationFor(`${ws.title} ${lastUser}`);
+  if (!key) return;
+  ws.blocks.splice(ws.blocks.length > 1 ? 1 : 0, 0, { kind: "image", imageKey: key });
+}
+
 export async function aiWorksheet(
   template: WorksheetTemplate,
   age: number,
@@ -1328,6 +1346,7 @@ export async function aiWorksheet(
         }
         return null;
       }
+      injectIllustrationIfMissing(ws, template, messages);
       if (imagesEnabled()) await attachImages(ws, detectMode(template, messages), key);
       return ws;
     } catch {
