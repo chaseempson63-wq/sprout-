@@ -48,6 +48,12 @@ export function cardTint(i: number): string {
 
 // Short relative time for community/forum timestamps: "just now", "5m", "3h",
 // "2d", then a plain date. Takes ms-epoch. Safe when passed 0 / NaN.
+// The first illustration on a worksheet, so cards can show a real picture
+// instead of reading like a plain document. Undefined when it has no image.
+export function firstImageKey(w: { blocks?: { imageKey?: string }[] } | null | undefined): string | undefined {
+  return w?.blocks?.find((b) => b.imageKey)?.imageKey;
+}
+
 export function timeAgo(ms: number): string {
   if (!ms || !Number.isFinite(ms)) return "";
   const s = Math.floor((Date.now() - ms) / 1000);

@@ -11,7 +11,7 @@ import { ArrowBigUp, ArrowLeft, MessageSquare } from "lucide-react";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { listCommunity } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
-import { capName, cardTint, timeAgo } from "@/lib/resources/util";
+import { capName, cardTint, firstImageKey, timeAgo } from "@/lib/resources/util";
 import { GlassLink } from "@/components/ui/glass";
 import type { CommunityPost } from "@/lib/resources/types";
 
@@ -19,7 +19,7 @@ const lightCard =
   "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
 
 // A unified card shape so the DB feed and the offline fallback render the same.
-type Card = { id: string; title: string; subtitle: string; createdAt: number; upvotes: number; commentCount: number; href?: string };
+type Card = { id: string; title: string; subtitle: string; createdAt: number; upvotes: number; commentCount: number; href?: string; imageKey?: string };
 
 export default function CreatorProfile() {
   const params = useParams();
@@ -51,7 +51,7 @@ export default function CreatorProfile() {
   const fallbackCards: Card[] = [
     ...worksheets
       .filter((w) => w.published && w.meta.templateId === "custom" && (isMe || w.creatorHandle === handle))
-      .map((w) => ({ id: w.id, title: w.title, subtitle: w.subtitle, createdAt: w.createdAt, upvotes: 0, commentCount: 0 })),
+      .map((w) => ({ id: w.id, title: w.title, subtitle: w.subtitle, createdAt: w.createdAt, upvotes: 0, commentCount: 0, imageKey: firstImageKey(w) })),
     ...COMMUNITY_SAMPLES.filter((s) => s.creatorHandle === handle).map((s) => ({
       id: s.id,
       title: s.worksheet.title,
@@ -59,6 +59,7 @@ export default function CreatorProfile() {
       createdAt: 0,
       upvotes: 0,
       commentCount: 0,
+      imageKey: firstImageKey(s.worksheet),
     })),
   ].sort((a, b) => b.createdAt - a.createdAt);
 
@@ -72,6 +73,7 @@ export default function CreatorProfile() {
         upvotes: p.upvotes,
         commentCount: p.commentCount,
         href: `/resources/community/${p.id}`,
+        imageKey: firstImageKey(p.worksheet),
       }));
 
   const displayName = isMe ? (account?.displayName ?? handle) : (posts[0]?.creatorName ?? sampleMatch?.creatorName ?? handle);
@@ -118,32 +120,40 @@ export default function CreatorProfile() {
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((c, i) => {
-            const inner = (
+            const body = (
               <>
-                <h3 className="truncate font-bold text-[#1B3722]">{c.title}</h3>
-                {c.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.subtitle}</p>}
-                {c.href && (
-                  <div className="mt-3 flex items-center gap-3 border-t border-black/5 pt-3 text-xs text-[#1B3722]/55">
-                    <span className="inline-flex items-center gap-0.5">
-                      <ArrowBigUp className="size-3.5" />
-                      {c.upvotes}
-                    </span>
-                    <span className="inline-flex items-center gap-0.5">
-                      <MessageSquare className="size-3.5" />
-                      {c.commentCount}
-                    </span>
-                    {c.createdAt > 0 && <span className="text-[#1B3722]/40">· {timeAgo(c.createdAt)}</span>}
+                {c.imageKey && (
+                  <div className="aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`/resources/illustrations/${c.imageKey}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
                   </div>
                 )}
+                <div className="p-5">
+                  <h3 className="truncate font-bold text-[#1B3722]">{c.title}</h3>
+                  {c.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.subtitle}</p>}
+                  {c.href && (
+                    <div className="mt-3 flex items-center gap-3 border-t border-black/5 pt-3 text-xs text-[#1B3722]/55">
+                      <span className="inline-flex items-center gap-0.5">
+                        <ArrowBigUp className="size-3.5" />
+                        {c.upvotes}
+                      </span>
+                      <span className="inline-flex items-center gap-0.5">
+                        <MessageSquare className="size-3.5" />
+                        {c.commentCount}
+                      </span>
+                      {c.createdAt > 0 && <span className="text-[#1B3722]/40">· {timeAgo(c.createdAt)}</span>}
+                    </div>
+                  )}
+                </div>
               </>
             );
             return c.href ? (
-              <Link key={c.id} href={c.href} className={`${cardTint(i)} block p-5 transition hover:-translate-y-0.5`}>
-                {inner}
+              <Link key={c.id} href={c.href} className={`${cardTint(i)} group block overflow-hidden transition hover:-translate-y-0.5`}>
+                {body}
               </Link>
             ) : (
-              <div key={c.id} className={`${cardTint(i)} p-5`}>
-                {inner}
+              <div key={c.id} className={`${cardTint(i)} group overflow-hidden`}>
+                {body}
               </div>
             );
           })}

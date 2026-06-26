@@ -14,7 +14,7 @@ import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { listCommunity } from "@/lib/resources/social";
 import { colorClasses, useResources } from "@/lib/resources/store";
-import { capName, cardTint, timeAgo } from "@/lib/resources/util";
+import { capName, cardTint, firstImageKey, timeAgo } from "@/lib/resources/util";
 import { GlassButton } from "@/components/ui/glass";
 import { pill } from "@/lib/resources/pill";
 import type { CommunityPost, SavedWorksheet, Worksheet } from "@/lib/resources/types";
@@ -263,24 +263,35 @@ export default function LibraryHome() {
                 </div>
               ) : (
                 <div className="grid grid-cols-2 gap-3 sm:gap-8 lg:grid-cols-3">
-                  {fallbackCreations.map((c, i) => (
-                    <div key={c.id} className={`${cardTint(i)} flex flex-col p-3 sm:p-5`}>
-                      <button onClick={() => setViewing({ ws: c.worksheet })} className="min-w-0 flex-1 text-left">
-                        <h3 className="truncate font-bold text-[#1B3722]">{c.worksheet.title}</h3>
-                        <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
-                      </button>
-                      <p className="mt-3 truncate border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
-                        Made with Sprout by{" "}
-                        {c.creatorHandle ? (
-                          <Link href={`/resources/creator/${c.creatorHandle}`} className="font-semibold text-[#2E5A35] hover:underline">
-                            {c.creatorName}
-                          </Link>
-                        ) : (
-                          <span className="font-semibold text-[#2E5A35]">{c.creatorName}</span>
+                  {fallbackCreations.map((c, i) => {
+                    const img = firstImageKey(c.worksheet);
+                    return (
+                      <div key={c.id} className={`${cardTint(i)} group flex flex-col overflow-hidden`}>
+                        {img && (
+                          <button onClick={() => setViewing({ ws: c.worksheet })} className="block aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={`/resources/illustrations/${img}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
+                          </button>
                         )}
-                      </p>
-                    </div>
-                  ))}
+                        <div className="flex flex-1 flex-col p-3 sm:p-5">
+                          <button onClick={() => setViewing({ ws: c.worksheet })} className="min-w-0 flex-1 text-left">
+                            <h3 className="truncate font-bold text-[#1B3722]">{c.worksheet.title}</h3>
+                            <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
+                          </button>
+                          <p className="mt-3 truncate border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
+                            Made with Sprout by{" "}
+                            {c.creatorHandle ? (
+                              <Link href={`/resources/creator/${c.creatorHandle}`} className="font-semibold text-[#2E5A35] hover:underline">
+                                {c.creatorName}
+                              </Link>
+                            ) : (
+                              <span className="font-semibold text-[#2E5A35]">{c.creatorName}</span>
+                            )}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               )}
             </>
@@ -294,29 +305,40 @@ export default function LibraryHome() {
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-3 sm:gap-8 lg:grid-cols-3">
-              {posts.map((p, i) => (
-                <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${cardTint(i)} animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-3 sm:p-5 duration-500`}>
-                  <Link href={`/resources/community/${p.id}`} className="min-w-0 flex-1">
-                    <h3 className="truncate font-bold text-[#1B3722]">{p.title}</h3>
-                    {p.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{p.subtitle}</p>}
-                  </Link>
-                  <div className="mt-3 flex items-center justify-between gap-2 border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
-                    <span className="min-w-0 truncate">
-                      by{" "}
-                      <Link href={`/resources/creator/${p.handle}`} className="font-semibold text-[#2E5A35] hover:underline">
-                        {capName(p.creatorName)}
+              {posts.map((p, i) => {
+                const img = firstImageKey(p.worksheet);
+                return (
+                  <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${cardTint(i)} animate-in fade-in slide-in-from-bottom-2 fill-mode-both group flex flex-col overflow-hidden duration-500`}>
+                    {img && (
+                      <Link href={`/resources/community/${p.id}`} className="block aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={`/resources/illustrations/${img}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
                       </Link>
-                      <span className="text-[#1B3722]/45"> · {timeAgo(p.createdAt)}</span>
-                    </span>
-                    <span className="flex shrink-0 items-center gap-1.5">
-                      <UpvoteButton targetType="post" targetId={p.id} count={p.upvotes} />
-                      <Link href={`/resources/community/${p.id}#comments`} aria-label="Comments" className="inline-flex h-8 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/45 px-2.5 text-xs font-semibold text-[#1B3722]/75 transition hover:bg-white/75">
-                        <MessageSquare className="size-3.5" /> {p.commentCount}
+                    )}
+                    <div className="flex flex-1 flex-col p-3 sm:p-5">
+                      <Link href={`/resources/community/${p.id}`} className="min-w-0 flex-1">
+                        <h3 className="truncate font-bold text-[#1B3722]">{p.title}</h3>
+                        {p.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{p.subtitle}</p>}
                       </Link>
-                    </span>
+                      <div className="mt-3 flex items-center justify-between gap-2 border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
+                        <span className="min-w-0 truncate">
+                          by{" "}
+                          <Link href={`/resources/creator/${p.handle}`} className="font-semibold text-[#2E5A35] hover:underline">
+                            {capName(p.creatorName)}
+                          </Link>
+                          <span className="text-[#1B3722]/45"> · {timeAgo(p.createdAt)}</span>
+                        </span>
+                        <span className="flex shrink-0 items-center gap-1.5">
+                          <UpvoteButton targetType="post" targetId={p.id} count={p.upvotes} />
+                          <Link href={`/resources/community/${p.id}#comments`} aria-label="Comments" className="inline-flex h-8 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/45 px-2.5 text-xs font-semibold text-[#1B3722]/75 transition hover:bg-white/75">
+                            <MessageSquare className="size-3.5" /> {p.commentCount}
+                          </Link>
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
