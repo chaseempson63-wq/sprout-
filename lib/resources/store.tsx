@@ -16,6 +16,7 @@ const ACCOUNT_KEY = "sprout.resources.account.v1";
 const LIKES_KEY = "sprout.resources.likes.v1";
 const MYLIKES_KEY = "sprout.resources.mylikes.v1";
 const FOLLOWING_KEY = "sprout.resources.following.v1";
+const FOLLOWERS_KEY = "sprout.resources.followers.v1";
 
 // Bright fills chosen to read clearly against the dark forest-green canvas.
 export const AVATAR_COLORS: { key: string; bg: string }[] = [
@@ -37,15 +38,6 @@ function uid(): string {
 }
 
 export type FollowedMaker = { handle: string; name: string; photo?: string };
-
-// Stable pseudo follower count per handle. Placeholder until a real follow
-// backend exists, so a profile reads as "23 followers" not a flat zero. Same
-// handle always yields the same number; following adds one (see followerCount).
-function baseFollowers(handle: string): number {
-  let h = 2166136261;
-  for (let i = 0; i < handle.length; i++) h = Math.imul(h ^ handle.charCodeAt(i), 16777619) >>> 0;
-  return 4 + (h % 38);
-}
 
 function readJSON<T>(key: string, fallback: T): T {
   if (typeof window === "undefined") return fallback;
@@ -95,6 +87,7 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   const [likes, setLikes] = useState<Record<string, number>>(() => readJSON<Record<string, number>>(LIKES_KEY, {}));
   const [myLikes, setMyLikes] = useState<string[]>(() => readJSON<string[]>(MYLIKES_KEY, []));
   const [following, setFollowing] = useState<FollowedMaker[]>(() => readJSON<FollowedMaker[]>(FOLLOWING_KEY, []));
+  const [followerCounts, setFollowerCounts] = useState<Record<string, number>>(() => readJSON<Record<string, number>>(FOLLOWERS_KEY, {}));
 
   useEffect(() => {
     // One-time hydration after mount. Also backfill a stable account id for
@@ -126,6 +119,9 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (ready) localStorage.setItem(FOLLOWING_KEY, JSON.stringify(following));
   }, [following, ready]);
+  useEffect(() => {
+    if (ready) localStorage.setItem(FOLLOWERS_KEY, JSON.stringify(followerCounts));
+  }, [followerCounts, ready]);
 
   const setAccount = useCallback(
     (profile: CreatorProfile) =>
@@ -216,9 +212,15 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
 
   const isFollowing = useCallback((handle: string) => following.some((f) => f.handle === handle), [following]);
   const toggleFollow = useCallback((maker: FollowedMaker) => {
-    setFollowing((prev) => (prev.some((f) => f.handle === maker.handle) ? prev.filter((f) => f.handle !== maker.handle) : [...prev, maker]));
+    setFollowing((prev) => {
+      const has = prev.some((f) => f.handle === maker.handle);
+      // Follower count moves like an upvote: +1 on follow, -1 on unfollow, never
+      // below zero. Every account starts at zero; no backend, no seeding.
+      setFollowerCounts((fc) => ({ ...fc, [maker.handle]: Math.max(0, (fc[maker.handle] ?? 0) + (has ? -1 : 1)) }));
+      return has ? prev.filter((f) => f.handle !== maker.handle) : [...prev, maker];
+    });
   }, []);
-  const followerCount = useCallback((handle: string) => baseFollowers(handle) + (following.some((f) => f.handle === handle) ? 1 : 0), [following]);
+  const followerCount = useCallback((handle: string) => followerCounts[handle] ?? 0, [followerCounts]);
 
   const value = useMemo<ResourcesContextValue>(
     () => ({

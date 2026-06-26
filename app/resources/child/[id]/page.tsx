@@ -6,7 +6,7 @@ import { ArrowLeft, Check, ImagePlus, Pencil, Plus, Star, Trash2, X } from "luci
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { topicForTemplate } from "@/lib/resources/catalog";
 import { AVATAR_COLORS, colorClasses, useResources } from "@/lib/resources/store";
-import { capName } from "@/lib/resources/util";
+import { capName, firstImageKey } from "@/lib/resources/util";
 import { GlassButton, GlassLink } from "@/components/ui/glass";
 import type { SavedWorksheet } from "@/lib/resources/types";
 
@@ -248,27 +248,37 @@ export default function ChildProfile() {
           <p className="text-[#1B3722]/70">No worksheets yet. Make one and it shows up here.</p>
         </div>
       ) : (
-        <div className="space-y-3">
-          {sortedWorksheets.map((w) => (
-            <div key={w.id} className={`${lightCard} flex items-center justify-between gap-3 p-4`}>
-              <button onClick={() => setViewing(w)} className="min-w-0 flex-1 text-left">
-                <span className="text-[11px] font-semibold tracking-wide text-[#2E5A35] uppercase">Worksheet</span>
-                <span className="flex items-center gap-2">
-                  {w.favorite && <Star className="size-3.5 fill-amber-400 text-amber-400" />}
-                  <span className="truncate font-bold text-[#1B3722]">{w.title}</span>
-                </span>
-                <span className="mt-0.5 block text-xs text-[#1B3722]/60">{w.subtitle} · {new Date(w.createdAt).toLocaleDateString()}</span>
-              </button>
-              <div className="flex shrink-0 items-center gap-1">
-                <GlassButton onClick={() => toggleFavorite(w.id)} aria-label="Favorite" className="size-8">
-                  <Star className={`size-4 ${w.favorite ? "fill-amber-400 text-amber-400" : ""}`} />
-                </GlassButton>
-                <GlassButton onClick={() => removeWorksheet(w.id)} aria-label="Delete" className="size-8">
-                  <Trash2 className="size-4" />
-                </GlassButton>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {sortedWorksheets.map((w) => {
+            const img = firstImageKey(w);
+            return (
+              <div key={w.id} className={`${lightCard} group flex flex-col overflow-hidden`}>
+                {img && (
+                  <button onClick={() => setViewing(w)} className="block aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`/resources/illustrations/${img}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
+                  </button>
+                )}
+                <div className="flex flex-1 flex-col p-4">
+                  <button onClick={() => setViewing(w)} className="min-w-0 flex-1 text-left">
+                    <span className="flex items-center gap-2">
+                      {w.favorite && <Star className="size-3.5 shrink-0 fill-amber-400 text-amber-400" />}
+                      <span className="truncate font-bold text-[#1B3722]">{w.title}</span>
+                    </span>
+                    <span className="mt-0.5 block text-xs text-[#1B3722]/60">{w.subtitle} · {new Date(w.createdAt).toLocaleDateString()}</span>
+                  </button>
+                  <div className="mt-3 flex items-center justify-end gap-1 border-t border-black/5 pt-3">
+                    <GlassButton onClick={() => toggleFavorite(w.id)} aria-label="Favorite" className="size-8">
+                      <Star className={`size-4 ${w.favorite ? "fill-amber-400 text-amber-400" : ""}`} />
+                    </GlassButton>
+                    <GlassButton onClick={() => removeWorksheet(w.id)} aria-label="Delete" className="size-8">
+                      <Trash2 className="size-4" />
+                    </GlassButton>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
 
