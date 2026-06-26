@@ -6,6 +6,7 @@ import { Dialog } from "@base-ui/react/dialog";
 import { Check, Copy, MessageSquare, X } from "lucide-react";
 import { getTemplate } from "@/lib/resources/catalog";
 import { GlassButton } from "@/components/ui/glass";
+import { pill } from "@/lib/resources/pill";
 
 const FEEDBACK_EMAIL = "sprout.humanintelligence@gmail.com";
 
@@ -60,9 +61,9 @@ export function FeedbackButton() {
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <GlassButton onClick={openDialog} aria-label="Message us privately" className="inline-flex h-9 shrink-0 px-3 text-xs">
+      <button onClick={openDialog} aria-label="Message us privately" className={pill(false, "h-9 shrink-0 px-3 text-xs")}>
         <MessageSquare className="size-4" /> Message us
-      </GlassButton>
+      </button>
       <Dialog.Portal>
         <Dialog.Backdrop className="fixed inset-0 z-[100] bg-[#0F1A12]/80 backdrop-blur-sm transition-opacity duration-200 data-[ending-style]:opacity-0 data-[starting-style]:opacity-0" />
         <Dialog.Popup className="fixed top-1/2 left-1/2 z-[101] max-h-[90vh] w-[calc(100vw-2rem)] max-w-md -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl bg-[#FBF7EE] p-6 shadow-2xl outline-none transition-all duration-200 data-[ending-style]:scale-95 data-[ending-style]:opacity-0 data-[starting-style]:scale-95 data-[starting-style]:opacity-0">

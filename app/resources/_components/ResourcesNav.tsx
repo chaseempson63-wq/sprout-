@@ -26,7 +26,7 @@ export function ResourcesNav() {
   if (!showsResourcesNav(pathname)) return null;
 
   return (
-    <div className="no-print pointer-events-none fixed inset-x-0 bottom-0 z-40 flex justify-center px-3 pb-[max(0.85rem,env(safe-area-inset-bottom))]">
+    <div className="no-print pointer-events-none fixed inset-x-0 bottom-0 z-40 flex justify-center px-3 pb-[max(1.5rem,calc(env(safe-area-inset-bottom)+0.5rem))]">
       <div className="pointer-events-auto relative">
         {/* Soft glow halo behind the blob. */}
         <div aria-hidden className="absolute -inset-3 rounded-[2.5rem] bg-[#9BD27E]/25 blur-2xl" />

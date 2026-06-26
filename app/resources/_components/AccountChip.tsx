@@ -5,8 +5,10 @@ import { Dialog } from "@base-ui/react/dialog";
 import { Check, ImagePlus, UserCircle, X } from "lucide-react";
 import { downscaleImage } from "@/lib/resources/image";
 import { useResources } from "@/lib/resources/store";
+import Link from "next/link";
 import { capName, newId } from "@/lib/resources/util";
-import { GlassButton, GlassLink } from "@/components/ui/glass";
+import { GlassButton } from "@/components/ui/glass";
+import { pill } from "@/lib/resources/pill";
 
 function slug(s: string): string {
   return (
@@ -43,23 +45,23 @@ export function AccountChip() {
 
   if (account) {
     return (
-      <GlassLink href={`/resources/creator/${account.handle}`} className="h-9 shrink-0 gap-2 py-1 pr-3 pl-1">
+      <Link href={`/resources/creator/${account.handle}`} className={pill(false, "h-9 shrink-0 py-1 pr-3 pl-1 text-sm")}>
         {account.photo ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={account.photo} alt="" className="size-7 rounded-full object-cover" />
         ) : (
           <span className="grid size-7 place-items-center rounded-full bg-[#2E5A35] text-sm font-bold text-white">{capName(account.displayName).charAt(0)}</span>
         )}
-        <span className="text-sm font-semibold">{capName(account.displayName)}</span>
-      </GlassLink>
+        <span className="font-semibold">{capName(account.displayName)}</span>
+      </Link>
     );
   }
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <GlassButton onClick={() => setOpen(true)} className="h-9 shrink-0 px-3 text-xs">
+      <button onClick={() => setOpen(true)} className={pill(false, "h-9 shrink-0 px-3 text-xs")}>
         <UserCircle className="size-4" /> Create profile
-      </GlassButton>
+      </button>
       <Dialog.Portal>
         <Dialog.Backdrop className="fixed inset-0 z-[100] bg-[#0F1A12]/80 backdrop-blur-sm transition-opacity duration-200 data-[ending-style]:opacity-0 data-[starting-style]:opacity-0" />
         <Dialog.Popup className="fixed top-1/2 left-1/2 z-[101] max-h-[90vh] w-[calc(100vw-2rem)] max-w-sm -translate-x-1/2 -translate-y-1/2 overflow-y-auto rounded-2xl bg-[#FBF7EE] p-6 shadow-2xl outline-none transition-all duration-200 data-[ending-style]:scale-95 data-[ending-style]:opacity-0 data-[starting-style]:scale-95 data-[starting-style]:opacity-0">

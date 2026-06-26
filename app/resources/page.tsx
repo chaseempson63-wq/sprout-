@@ -13,7 +13,8 @@ import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { listCommunity } from "@/lib/resources/social";
 import { colorClasses, useResources } from "@/lib/resources/store";
 import { capName, cardTint, timeAgo } from "@/lib/resources/util";
-import { GlassButton, GlassPanel } from "@/components/ui/glass";
+import { GlassButton } from "@/components/ui/glass";
+import { pill } from "@/lib/resources/pill";
 import type { CommunityPost, SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
 const lightCard =
@@ -21,6 +22,21 @@ const lightCard =
 
 // Hero: "We were born to ___" cycles the final word only.
 const BORN_TO = ["create", "learn", "grow", "wonder", "explore", "imagine", "discover", "make", "build", "question"];
+
+// The Build-your-own hero types through real example prompts, the way a parent
+// would actually ask, so the card previews exactly what the builder does.
+const BUILD_EXAMPLES = [
+  "a science sheet on how grass grows",
+  "addition with dinosaurs, 12 problems",
+  "a reading passage about the moon, age 7",
+  "spelling practice for the -ight word family",
+  "telling time, o'clock and half past",
+  "fractions of a shape for a 9 year old",
+  "handwriting practice for b and d",
+  "a money worksheet, making change up to $5",
+  "label the butterfly life cycle",
+  "a story starter about a dragon, with lines to write on",
+];
 
 // The loop, in three quiet lines under the hero. A friend showing you, not a
 // help desk. Few words.
@@ -120,68 +136,65 @@ export default function LibraryHome() {
       <HowItWorks steps={HOME_STEPS} className="hidden sm:mb-16 sm:block" />
 
       {ready && (
-        <div className="mb-8 grid grid-cols-2 items-stretch gap-3 sm:mb-16 sm:grid-cols-1 sm:gap-6 md:grid-cols-[1fr_1.15fr_1fr]">
-          <KidsManager kids={kids} account={account} onAdd={addChild} />
-          <BuildYourOwnCard />
-          <CommunityCard
-            count={communityCount}
-            active={tab === "community"}
-            onOpen={() => setTab(tab === "community" ? "templates" : "community")}
-          />
+        <div className="mb-8 space-y-3 sm:mb-16 sm:space-y-6">
+          <BuildYourOwnHero />
+          <div className="grid grid-cols-1 items-stretch gap-3 sm:grid-cols-2 sm:gap-6">
+            <KidsManager kids={kids} account={account} onAdd={addChild} />
+            <CommunityCard
+              count={communityCount}
+              active={tab === "community"}
+              onOpen={() => setTab(tab === "community" ? "templates" : "community")}
+            />
+          </div>
         </div>
       )}
 
       {/* One grouped control area: search, what you're looking at, and how to
           narrow it. Built for a parent seeing this cold, not a power-user strip. */}
       <div className="border-sprout-cream/15 bg-sprout-cream/[0.05] mb-8 rounded-3xl border p-4 sm:mb-16 sm:p-7">
-        <GlassPanel radius="rounded-full">
-          <div className="flex items-center gap-3 px-5">
-            <Search className="size-5 shrink-0 text-[#1B3722]/50" />
-            <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="h-12 w-full bg-transparent text-[15px] text-[#1B3722] outline-none placeholder:text-[#1B3722]/45" />
-            {query && (
-              <button onClick={() => setQuery("")} aria-label="Clear search" className="text-[#1B3722]/50 hover:text-[#1B3722]">
-                <X className="size-4" />
-              </button>
-            )}
-          </div>
-        </GlassPanel>
+        <div className="flex items-center gap-3 rounded-full border border-[#2E5A35]/15 bg-sprout-cream px-5 shadow-[0_12px_28px_-14px_rgba(0,0,0,0.55)]">
+          <Search className="size-5 shrink-0 text-[#1B3722]/50" />
+          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="h-12 w-full bg-transparent text-[15px] text-[#1B3722] outline-none placeholder:text-[#1B3722]/45" />
+          {query && (
+            <button onClick={() => setQuery("")} aria-label="Clear search" className="text-[#1B3722]/50 hover:text-[#1B3722]">
+              <X className="size-4" />
+            </button>
+          )}
+        </div>
 
         <div className="mt-6 flex flex-wrap gap-2.5">
-          {tabs.map((t) => (
-            <GlassButton
-              key={t.key}
-              onClick={() => setTab(t.key)}
-              className={`h-10 gap-2 px-4 text-sm ${tab === t.key ? "ring-2 ring-[#2E5A35]/45" : ""}`}
-            >
-              {t.label}
-              <span className="rounded-full bg-[#1B3722]/10 px-1.5 text-xs">{t.count}</span>
-            </GlassButton>
-          ))}
+          {tabs.map((t) => {
+            const on = tab === t.key;
+            return (
+              <button key={t.key} onClick={() => setTab(t.key)} className={pill(on, "h-10 px-4 text-sm")}>
+                {t.label}
+                <span className={`rounded-full px-1.5 text-xs ${on ? "bg-[#1B3722]/10 text-[#1B3722]" : "bg-sprout-cream/15"}`}>{t.count}</span>
+              </button>
+            );
+          })}
         </div>
 
         <div className="border-sprout-cream/10 mt-5 border-t pt-5">
           {tab === "community" ? (
             <div className="flex flex-wrap items-center gap-2.5">
-              <GlassPanel radius="rounded-full">
-                <div className="flex items-center gap-2 px-4">
-                  <Users className="size-4 shrink-0 text-[#1B3722]/50" />
-                  <input
-                    value={creator}
-                    onChange={(e) => setCreator(e.target.value)}
-                    placeholder="Filter by creator..."
-                    className="h-10 w-44 bg-transparent text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/45"
-                  />
-                  {creator && (
-                    <button onClick={() => setCreator("")} aria-label="Clear creator filter" className="text-[#1B3722]/50 hover:text-[#1B3722]">
-                      <X className="size-4" />
-                    </button>
-                  )}
-                </div>
-              </GlassPanel>
+              <div className="flex items-center gap-2 rounded-full border border-[#2E5A35]/15 bg-sprout-cream px-4">
+                <Users className="size-4 shrink-0 text-[#1B3722]/50" />
+                <input
+                  value={creator}
+                  onChange={(e) => setCreator(e.target.value)}
+                  placeholder="Filter by creator..."
+                  className="h-10 w-44 bg-transparent text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/45"
+                />
+                {creator && (
+                  <button onClick={() => setCreator("")} aria-label="Clear creator filter" className="text-[#1B3722]/50 hover:text-[#1B3722]">
+                    <X className="size-4" />
+                  </button>
+                )}
+              </div>
               {account && (
-                <GlassButton onClick={() => setYoursOn((v) => !v)} className={`h-10 px-5 text-sm ${yoursOn ? "ring-2 ring-[#2E5A35]/45" : ""}`}>
+                <button onClick={() => setYoursOn((v) => !v)} className={pill(yoursOn, "h-10 px-5 text-sm")}>
                   Yours
-                </GlassButton>
+                </button>
               )}
             </div>
           ) : (
@@ -317,24 +330,40 @@ export default function LibraryHome() {
   );
 }
 
-// The hero of the top row, not an equal sibling. Building on the platform is the
-// behaviour we most want, so this card is the green one and the widest column
-// (~15% wider, set on the grid) so it pulls the eye first.
-function BuildYourOwnCard() {
+// The headline action of the whole hub. A big, full-width hero whose mock prompt
+// box types through real example prompts, previewing the builder before you open
+// it. Tapping anywhere goes to the freeform builder.
+function BuildYourOwnHero() {
   return (
-    <Link href="/resources/custom" className="group col-span-2 order-first block h-full sm:order-none md:col-span-1">
-      <div className="border-sprout-lime/40 group-hover:-translate-y-1 flex h-full flex-col rounded-2xl border bg-gradient-to-br from-[#2E5A35] to-[#16331E] p-6 shadow-[0_26px_55px_-18px_rgba(15,32,20,0.9),inset_0_1px_0_rgba(255,255,255,0.12)] transition sm:p-8">
-        <h2 className="text-sprout-lime text-sm font-bold tracking-wide uppercase">Build your own</h2>
-        <span className="bg-sprout-lime text-sprout-ink mt-4 grid size-14 place-items-center rounded-2xl shadow-md">
-          <Sprout className="size-7" />
-        </span>
-        <h3 className="text-sprout-cream mt-4 text-xl font-bold">Start from scratch</h3>
-        <p className="text-sprout-cream/75 mt-1.5 text-sm leading-relaxed">
-          Describe any worksheet and Sprout builds it. Yours to keep, print, and share.
-        </p>
-        <span className="text-sprout-lime mt-auto inline-flex items-center gap-1 pt-5 text-sm font-bold">
-          Build one <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
-        </span>
+    <Link href="/resources/custom" className="group block">
+      <div className="border-sprout-lime/40 group-hover:-translate-y-1 relative overflow-hidden rounded-3xl border bg-gradient-to-br from-[#2E5A35] to-[#16331E] p-6 shadow-[0_30px_60px_-20px_rgba(15,32,20,0.9),inset_0_1px_0_rgba(255,255,255,0.12)] transition sm:p-10">
+        <div aria-hidden className="bg-sprout-lime/15 pointer-events-none absolute -top-16 -right-16 size-64 rounded-full blur-3xl" />
+        <div className="relative">
+          <div className="flex items-center gap-2.5">
+            <span className="bg-sprout-lime text-sprout-ink grid size-10 place-items-center rounded-xl shadow-md sm:size-11">
+              <Sprout className="size-6" />
+            </span>
+            <span className="text-sprout-lime text-xs font-bold tracking-[0.15em] uppercase sm:text-sm">Build your own</span>
+          </div>
+
+          <h2 className="text-sprout-cream mt-5 text-3xl font-bold tracking-[-0.02em] sm:mt-6 sm:text-5xl">
+            Describe it. Sprout builds it.
+          </h2>
+          <p className="text-sprout-cream/75 mt-3 max-w-xl text-sm leading-relaxed sm:text-base">
+            Any worksheet, any topic, any age. Just type what you want, in your own words.
+          </p>
+
+          {/* Mock prompt box — looks like the builder's input, typing real prompts. */}
+          <div className="border-sprout-cream/15 mt-6 flex items-center gap-3 rounded-2xl border bg-[#0F2114]/60 px-4 py-3.5 backdrop-blur-sm sm:mt-8 sm:px-5 sm:py-4">
+            <Sparkles className="text-sprout-lime size-5 shrink-0" />
+            <span className="text-sprout-cream min-w-0 flex-1 overflow-hidden text-[15px] whitespace-nowrap sm:text-lg">
+              <Typewriter words={BUILD_EXAMPLES} holdMs={1600} className="text-sprout-cream" />
+            </span>
+            <span className="bg-sprout-lime text-sprout-ink ml-1 hidden shrink-0 items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold sm:inline-flex">
+              Build <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+            </span>
+          </div>
+        </div>
       </div>
     </Link>
   );
@@ -365,13 +394,10 @@ function CommunityCard({ count, active, onOpen }: { count: number; active: boole
 
 function TopicChip({ active, onClick, label, emoji }: { active: boolean; onClick: () => void; label: string; emoji: string }) {
   return (
-    <GlassButton
-      onClick={onClick}
-      className={`h-10 gap-1.5 px-4 text-sm ${active ? "ring-2 ring-[#2E5A35]/45" : ""}`}
-    >
+    <button onClick={onClick} className={pill(active, "h-10 px-4 text-sm")}>
       <span>{emoji}</span>
       {label}
-    </GlassButton>
+    </button>
   );
 }
 
