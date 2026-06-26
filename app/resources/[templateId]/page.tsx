@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useRef, useState, type ComponentType } from "react";
 import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
+import { AddToKid } from "../_components/AddToKid";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY, presetPrompt } from "@/lib/resources/intent";
@@ -383,6 +384,7 @@ export default function Builder() {
                 <button onClick={save} className={greenBtn}>
                   <Check className="size-5" /> Save
                 </button>
+                <AddToKid worksheet={worksheet} source={source ?? "ai"} className="h-12 px-6 text-base" />
                 {isCustom && (
                   <button onClick={() => void publishCustom()} disabled={publishedIdx === idx} className={greenBtn}>
                     <Globe className="size-5" /> {publishedIdx === idx ? "Published" : "Publish"}

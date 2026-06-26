@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeft, Download, Loader2 } from "lucide-react";
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { UpvoteButton } from "../../_components/UpvoteButton";
+import { AddToKid } from "../../_components/AddToKid";
 import { ReportControl } from "../../_components/ReportControl";
 import { HideControl } from "../../_components/HideControl";
 import { ThreadedComments } from "../../_components/ThreadedComments";
@@ -79,8 +80,9 @@ export default function CommunityPostPage() {
                 <span className="block text-xs text-[#1B3722]/55">View profile · {timeAgo(post.createdAt)}</span>
               </span>
             </Link>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <UpvoteButton targetType="post" targetId={post.id} count={post.upvotes} voted={votedIds.includes(post.id)} />
+              <AddToKid worksheet={post.worksheet} source="ai" className="h-8 px-3 text-xs" />
               <GlassButton onClick={() => window.print()} className="h-8 gap-1 px-3 text-xs">
                 <Download className="size-3.5" /> PDF
               </GlassButton>
