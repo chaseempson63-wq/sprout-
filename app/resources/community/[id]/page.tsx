@@ -67,13 +67,18 @@ export default function CommunityPostPage() {
       ) : (
         <>
           <div className={`${lightCard} no-print mb-4 flex flex-wrap items-center justify-between gap-3 p-4`}>
-            <p className="min-w-0 text-xs text-[#1B3722]/65">
-              Made with Sprout by{" "}
-              <Link href={`/resources/creator/${post.handle}`} className="font-semibold text-[#2E5A35] hover:underline">
-                {capName(post.creatorName)}
-              </Link>{" "}
-              · {timeAgo(post.createdAt)}
-            </p>
+            <Link href={`/resources/creator/${post.handle}`} className="group flex min-w-0 items-center gap-2.5">
+              {post.photo ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={post.photo} alt="" className="size-9 shrink-0 rounded-full object-cover" />
+              ) : (
+                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#2E5A35] text-sm font-bold text-white">{capName(post.creatorName).charAt(0)}</span>
+              )}
+              <span className="min-w-0">
+                <span className="block truncate text-sm font-bold text-[#1B3722] group-hover:underline">{capName(post.creatorName)}</span>
+                <span className="block text-xs text-[#1B3722]/55">View profile · {timeAgo(post.createdAt)}</span>
+              </span>
+            </Link>
             <div className="flex items-center gap-2">
               <UpvoteButton targetType="post" targetId={post.id} count={post.upvotes} voted={votedIds.includes(post.id)} />
               <GlassButton onClick={() => window.print()} className="h-8 gap-1 px-3 text-xs">

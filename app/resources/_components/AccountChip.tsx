@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { Dialog } from "@base-ui/react/dialog";
-import { Check, ImagePlus, UserCircle, X } from "lucide-react";
+import { Check, ImagePlus, Shuffle, UserCircle, X } from "lucide-react";
 import { downscaleImage } from "@/lib/resources/image";
 import { useResources } from "@/lib/resources/store";
 import Link from "next/link";
@@ -20,12 +20,32 @@ function slug(s: string): string {
   );
 }
 
+// Friendly, kid-safe two-word pseudonyms for parents who'd rather stay
+// anonymous (a few AU/NZ critters in the mix).
+const ANON_ADJ = ["Brave", "Quiet", "Sunny", "Clever", "Gentle", "Merry", "Swift", "Cosy", "Bright", "Curious", "Kind", "Bold", "Happy", "Wild", "Calm", "Wandering"];
+const ANON_NOUN = ["Otter", "Wren", "Maple", "Fox", "Robin", "Willow", "Sparrow", "Badger", "Heron", "Finch", "Hare", "Wombat", "Koala", "Possum", "Magpie", "Quokka"];
+function randomTwoWordName(): string {
+  return `${ANON_ADJ[Math.floor(Math.random() * ANON_ADJ.length)]} ${ANON_NOUN[Math.floor(Math.random() * ANON_NOUN.length)]}`;
+}
+
 export function AccountChip() {
   const { account, setAccount } = useResources();
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
+  const [anon, setAnon] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+
+  function toggleAnon() {
+    if (anon) {
+      setAnon(false);
+      setName("");
+    } else {
+      setAnon(true);
+      setPhoto("");
+      setName(randomTwoWordName());
+    }
+  }
 
   async function pick(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
@@ -73,18 +93,39 @@ export function AccountChip() {
             </GlassButton>
           </div>
           <Dialog.Description className="mt-1 text-sm text-[#1B3722]/60">This is the name shown on everything you make and publish.</Dialog.Description>
-          <div className="mt-5 flex items-center gap-3">
-            <GlassButton type="button" onClick={() => fileRef.current?.click()} aria-label="Add photo" className="size-14 shrink-0">
-              {photo ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={photo} alt="" className="absolute inset-0 z-40 size-14 rounded-full object-cover" />
-              ) : (
-                <ImagePlus className="size-5 text-[#2E5A35]" />
-              )}
-            </GlassButton>
-            <input ref={fileRef} type="file" accept="image/*" hidden onChange={pick} />
-            <input value={name} onChange={(e) => setName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && create()} placeholder="Your name" autoFocus className="h-11 flex-1 rounded-lg border border-black/10 bg-white px-3 text-[#1B3722] outline-none focus:border-[#2E5A35]" />
-          </div>
+          {anon ? (
+            <div className="mt-5 flex items-center gap-3 rounded-lg border border-[#2E5A35]/20 bg-[#2E5A35]/5 px-3 py-2.5">
+              <span className="grid size-10 shrink-0 place-items-center rounded-full bg-[#2E5A35] text-base font-bold text-white">{name.charAt(0)}</span>
+              <span className="min-w-0 flex-1 truncate font-semibold text-[#1B3722]">{name}</span>
+              <button type="button" onClick={() => setName(randomTwoWordName())} aria-label="Shuffle name" className="grid size-9 shrink-0 place-items-center rounded-full text-[#2E5A35] transition hover:bg-[#2E5A35]/10">
+                <Shuffle className="size-4" />
+              </button>
+            </div>
+          ) : (
+            <div className="mt-5 flex items-center gap-3">
+              <GlassButton type="button" onClick={() => fileRef.current?.click()} aria-label="Add photo" className="size-14 shrink-0">
+                {photo ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={photo} alt="" className="absolute inset-0 z-40 size-14 rounded-full object-cover" />
+                ) : (
+                  <ImagePlus className="size-5 text-[#2E5A35]" />
+                )}
+              </GlassButton>
+              <input ref={fileRef} type="file" accept="image/*" hidden onChange={pick} />
+              <input value={name} onChange={(e) => setName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && create()} placeholder="Your name" autoFocus className="h-11 flex-1 rounded-lg border border-black/10 bg-white px-3 text-[#1B3722] outline-none focus:border-[#2E5A35]" />
+            </div>
+          )}
+
+          {/* Anonymous: a random two-word name, no photo. */}
+          <button type="button" onClick={toggleAnon} role="switch" aria-checked={anon} className="mt-3 flex w-full items-center justify-between gap-3 rounded-lg px-1 py-1 text-left">
+            <span>
+              <span className="block text-sm font-semibold text-[#1B3722]">Stay anonymous</span>
+              <span className="block text-xs text-[#1B3722]/55">Use a random name, no photo.</span>
+            </span>
+            <span className={`relative h-6 w-11 shrink-0 rounded-full transition-colors ${anon ? "bg-[#2E5A35]" : "bg-black/15"}`}>
+              <span className={`absolute top-0.5 size-5 rounded-full bg-white shadow transition-all ${anon ? "left-[1.375rem]" : "left-0.5"}`} />
+            </span>
+          </button>
           <GlassButton type="button" onClick={create} disabled={!name.trim()} className="mt-5 h-11 w-full">
             <Check className="size-4" /> Create profile
           </GlassButton>

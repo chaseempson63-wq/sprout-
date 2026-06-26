@@ -13,6 +13,7 @@ import { listCommunity } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
 import { capName, cardTint, firstImageKey, timeAgo } from "@/lib/resources/util";
 import { GlassLink } from "@/components/ui/glass";
+import { FollowButton } from "../../_components/FollowButton";
 import type { CommunityPost } from "@/lib/resources/types";
 
 const lightCard =
@@ -25,7 +26,7 @@ export default function CreatorProfile() {
   const params = useParams();
   const raw = params?.handle;
   const handle = Array.isArray(raw) ? raw[0] : (raw ?? "");
-  const { ready, account, worksheets } = useResources();
+  const { ready, account, worksheets, following, followerCount } = useResources();
   const [posts, setPosts] = useState<CommunityPost[]>([]);
   const [off, setOff] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -97,13 +98,14 @@ export default function CreatorProfile() {
               {capName(displayName).charAt(0)}
             </span>
           )}
-          <div className="flex-1">
+          <div className="min-w-0 flex-1">
             <h1 className="text-2xl font-bold text-[#1B3722]">{capName(displayName)}</h1>
             <p className="text-sm text-[#1B3722]/55">@{handle}{isMe ? " · this is you" : ""}</p>
           </div>
+          {!isMe && <FollowButton handle={handle} name={displayName} photo={photo} />}
         </div>
         <p className="mt-4 text-sm font-medium text-[#2E5A35]">
-          {cards.length} published {cards.length === 1 ? "worksheet" : "worksheets"}
+          {followerCount(handle)} {followerCount(handle) === 1 ? "follower" : "followers"} · {cards.length} published {cards.length === 1 ? "worksheet" : "worksheets"}
         </p>
         {isMe && cards.length === 0 && (
           <p className="mt-2 text-sm text-[#1B3722]/60">
@@ -111,6 +113,25 @@ export default function CreatorProfile() {
           </p>
         )}
       </div>
+
+      {isMe && following.length > 0 && (
+        <div className="mb-6">
+          <h2 className="text-sprout-cream mb-3 text-xl font-bold">Following</h2>
+          <div className="flex flex-wrap gap-3">
+            {following.map((f) => (
+              <Link key={f.handle} href={`/resources/creator/${f.handle}`} className={`${lightCard} flex items-center gap-2.5 p-2.5 pr-4 transition hover:-translate-y-0.5`}>
+                {f.photo ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={f.photo} alt="" className="size-9 shrink-0 rounded-full object-cover" />
+                ) : (
+                  <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#2E5A35] text-sm font-bold text-white">{capName(f.name).charAt(0)}</span>
+                )}
+                <span className="font-semibold text-[#1B3722]">{capName(f.name)}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       <h2 className="text-sprout-cream mb-3 text-xl font-bold">Creations</h2>
       {cards.length === 0 ? (
