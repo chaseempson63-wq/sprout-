@@ -12,6 +12,7 @@ import { ArrowLeft, Download, Loader2 } from "lucide-react";
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { UpvoteButton } from "../../_components/UpvoteButton";
 import { AddToKid } from "../../_components/AddToKid";
+import { DocumentNudge } from "../../_components/DocumentNudge";
 import { ReportControl } from "../../_components/ReportControl";
 import { HideControl } from "../../_components/HideControl";
 import { ThreadedComments } from "../../_components/ThreadedComments";
@@ -101,6 +102,8 @@ export default function CommunityPostPage() {
               <Download className="size-5" /> Download PDF
             </button>
           </div>
+
+          <DocumentNudge />
 
           <div id="comments" className="no-print mt-8 scroll-mt-24">
             <h2 className="text-sprout-cream mb-3 text-xl font-bold">

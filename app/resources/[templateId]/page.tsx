@@ -5,6 +5,7 @@ import { useEffect, useRef, useState, type ComponentType } from "react";
 import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { AddToKid } from "../_components/AddToKid";
+import { DocumentNudge } from "../_components/DocumentNudge";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY, presetPrompt } from "@/lib/resources/intent";
@@ -394,6 +395,7 @@ export default function Builder() {
                   <Download className="size-5" /> Download PDF
                 </button>
               </div>
+              <DocumentNudge />
             </div>
           ) : (
             <div className="text-sprout-cream/60 flex h-[60vh] items-center justify-center rounded-2xl border border-dashed border-sprout-cream/20 px-6 text-center text-sm">

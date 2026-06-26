@@ -4,6 +4,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import { ArrowLeft, Check, ImagePlus, Pencil, Plus, Star, Trash2, X } from "lucide-react";
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
+import { DocumentNudge } from "../../_components/DocumentNudge";
 import { topicForTemplate } from "@/lib/resources/catalog";
 import { AVATAR_COLORS, colorClasses, useResources } from "@/lib/resources/store";
 import { capName, firstImageKey } from "@/lib/resources/util";
@@ -294,6 +295,7 @@ export default function ChildProfile() {
           </div>
           <div className="mx-auto w-full max-w-3xl px-4 pb-16">
             <WorksheetDoc worksheet={viewing} />
+            <DocumentNudge />
           </div>
         </div>
       )}

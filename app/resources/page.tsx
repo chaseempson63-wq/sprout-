@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Check, Globe, MessageSquare, Plus, Search, Star, Trash2, Users, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
+import { DocumentNudge } from "./_components/DocumentNudge";
 import { HowItWorks, type HowStep } from "./_components/HowItWorks";
 import { Typewriter } from "./_components/Typewriter";
 import { UpvoteButton } from "./_components/UpvoteButton";
@@ -479,6 +480,7 @@ function Viewer({
       </div>
       <div className="mx-auto w-full max-w-3xl px-4 pb-16">
         <WorksheetDoc worksheet={entry.ws} />
+        <DocumentNudge />
       </div>
     </div>
   );
