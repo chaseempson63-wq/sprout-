@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { X } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { showsResourcesNav } from "@/lib/resources/nav";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { SproutLogo } from "../../_components/Glass";
 
@@ -14,11 +16,21 @@ import { SproutLogo } from "../../_components/Glass";
    "go back" prompt instead of vanishing. Dismiss state lives here, and this is
    mounted in the resources layout (which persists across resources navigations),
    so it stays hidden as you move around and resets on reload, exactly like the
-   landing mascot. */
+   landing mascot.
+
+   Position: on pages that show the bottom nav, it sits higher on mobile so the
+   two don't overlap (on desktop the nav is centered, so the corner is clear). */
 export function HelpMascot() {
   const pathname = usePathname();
   const onGuide = pathname === "/resources/how-to";
   const [dismissed, setDismissed] = useState(false);
+
+  // Clear the bottom nav on mobile when it's present; desktop stays low (the
+  // nav is centered, far from the corner).
+  const corner = cn(
+    "fixed right-3 z-50 md:right-5 md:bottom-5",
+    showsResourcesNav(pathname) ? "bottom-28" : "bottom-3",
+  );
 
   // Dismissed → a small cream "bring back" pill in the same corner.
   if (dismissed) {
@@ -27,7 +39,10 @@ export function HelpMascot() {
         type="button"
         onClick={() => setDismissed(false)}
         aria-label="Bring back Sprout help"
-        className="no-print animate-mascot-pop fixed right-3 bottom-3 z-50 flex size-11 items-center justify-center rounded-full bg-[#F4EDE0] text-[#1B3722] shadow-[0_8px_24px_-6px_rgba(0,0,0,0.4)] ring-1 ring-[#1B3722]/10 transition-transform hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-[#1B3722]/40 focus-visible:outline-none md:right-5 md:bottom-5"
+        className={cn(
+          "no-print animate-mascot-pop flex size-11 items-center justify-center rounded-full bg-[#F4EDE0] text-[#1B3722] shadow-[0_8px_24px_-6px_rgba(0,0,0,0.4)] ring-1 ring-[#1B3722]/10 transition-transform hover:scale-105 active:scale-95 focus-visible:ring-2 focus-visible:ring-[#1B3722]/40 focus-visible:outline-none",
+          corner,
+        )}
       >
         <SproutLogo className="size-5" />
       </button>
@@ -39,7 +54,7 @@ export function HelpMascot() {
   const label = onGuide ? "Go back to the worksheets" : "Need help? Open the how-to guide";
 
   return (
-    <div className="no-print fixed right-3 bottom-3 z-50 md:right-5 md:bottom-5">
+    <div className={cn("no-print", corner)}>
       <div className="relative flex flex-col items-end gap-2">
         {/* Dismiss × — a sibling of the link (not inside it) so a tap here hides
             the mascot and never navigates. Same look as the landing mascot. */}
