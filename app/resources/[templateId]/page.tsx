@@ -51,6 +51,7 @@ export default function Builder() {
   const [newName, setNewName] = useState("");
   const [newAge, setNewAge] = useState("7");
   const [publishedIdx, setPublishedIdx] = useState<number | null>(null); // which variant was published (custom only)
+  const [savedIdxs, setSavedIdxs] = useState<number[]>([]); // variants already saved, so Save can't double-save
   const didInit = useRef(false);
   const variantsRef = useRef<Worksheet[]>([]);
   const genSeq = useRef(0); // only the latest request's result is applied (kills the race)
@@ -58,6 +59,7 @@ export default function Builder() {
   const child = getChild(childId);
   const childName = child?.name;
   const worksheet = idx >= 0 ? variants[idx] : null;
+  const isSaved = savedIdxs.includes(idx);
   const lastUser = [...messages].reverse().find((m) => m.role === "user")?.content ?? "";
   const agentSteps = buildSteps(template?.title ?? "worksheet", age, lastUser);
 
@@ -184,8 +186,9 @@ export default function Builder() {
   }
 
   function save() {
-    if (!worksheet || !source) return;
+    if (!worksheet || !source || isSaved) return;
     saveWorksheet(worksheet, source, childId || undefined);
+    setSavedIdxs((p) => [...p, idx]);
     showToast("Saved to your worksheets");
   }
 
@@ -231,7 +234,7 @@ export default function Builder() {
         </div>
         {/* One pill, three actions — icons that pop their label out on hover, like the nav. */}
         <div className="border-sprout-cream/20 bg-sprout-cream/10 flex shrink-0 items-center gap-1 rounded-full border p-1 backdrop-blur-sm">
-          <ActionItem icon={Check} label="Save" onClick={save} disabled={!worksheet} />
+          <ActionItem icon={Check} label={isSaved ? "Saved" : "Save"} onClick={save} disabled={!worksheet || isSaved} />
           {isCustom && (
             <ActionItem icon={Globe} label={publishedIdx === idx ? "Published" : "Publish"} onClick={() => void publishCustom()} disabled={!worksheet || publishedIdx === idx} />
           )}
@@ -382,8 +385,8 @@ export default function Builder() {
             <div key={idx} className="animate-in fade-in zoom-in-95 slide-in-from-bottom-3 fill-mode-both duration-500">
               <WorksheetDoc worksheet={worksheet} />
               <div className="no-print mt-5 flex flex-wrap items-center justify-center gap-3">
-                <button onClick={save} className={greenBtn}>
-                  <Check className="size-5" /> Save
+                <button onClick={save} disabled={isSaved} className={greenBtn}>
+                  <Check className="size-5" /> {isSaved ? "Saved" : "Save"}
                 </button>
                 <AddToKid worksheet={worksheet} source={source ?? "ai"} className="h-12 px-6 text-base" />
                 {isCustom && (
