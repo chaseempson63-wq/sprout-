@@ -38,7 +38,7 @@ export function IllustrationImg({ imageKey, alt, notes }: { imageKey: string; al
   );
 
   if (!side) {
-    return <div className="w-full max-w-[380px]">{picture}</div>;
+    return <div className="w-full max-w-[600px]">{picture}</div>;
   }
 
   const mid = Math.ceil(side.length / 2);
@@ -49,12 +49,12 @@ export function IllustrationImg({ imageKey, alt, notes }: { imageKey: string; al
     </li>
   );
   return (
-    <div className={`flex w-full items-center justify-center gap-2 sm:gap-4 ${isFacts ? "max-w-[680px]" : "max-w-[560px]"}`}>
-      <ul className={`flex shrink-0 flex-col gap-3 ${isFacts ? "w-[33%] max-w-[190px]" : ""}`}>
+    <div className={`flex w-full items-center justify-center gap-2 sm:gap-4 ${isFacts ? "max-w-[920px]" : "max-w-[800px]"}`}>
+      <ul className={`flex shrink-0 flex-col gap-3 ${isFacts ? "w-[30%] max-w-[165px]" : ""}`}>
         {side.slice(0, mid).map((t, i) => renderItem(t, `l-${i}`, true))}
       </ul>
-      <div className={`min-w-0 flex-1 ${isFacts ? "max-w-[210px]" : "max-w-[200px]"}`}>{picture}</div>
-      <ul className={`flex shrink-0 flex-col gap-3 ${isFacts ? "w-[33%] max-w-[190px]" : ""}`}>
+      <div className={`min-w-0 flex-1 ${isFacts ? "max-w-[420px]" : "max-w-[400px]"}`}>{picture}</div>
+      <ul className={`flex shrink-0 flex-col gap-3 ${isFacts ? "w-[30%] max-w-[165px]" : ""}`}>
         {side.slice(mid).map((t, i) => renderItem(t, `r-${i}`, false))}
       </ul>
     </div>
