@@ -62,7 +62,7 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
           </div>
         </header>
 
-        <main className="intro-stagger relative z-10 mx-auto w-full max-w-7xl flex-1 px-4 py-8 sm:px-6 sm:py-16 lg:px-12">{children}</main>
+        <main className="intro-stagger relative z-10 mx-auto w-full max-w-7xl flex-1 px-5 py-8 sm:px-10 sm:py-16 lg:px-16">{children}</main>
 
         <footer className="no-print border-sprout-cream/10 text-sprout-cream/55 relative z-10 border-t px-6 pt-6 pb-28 text-center text-xs">
           Made with Sprout ·{" "}

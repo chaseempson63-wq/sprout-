@@ -1,8 +1,8 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
+import { useEffect, useRef, useState, type ComponentType } from "react";
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
@@ -52,8 +52,6 @@ export default function Builder() {
   const didInit = useRef(false);
   const variantsRef = useRef<Worksheet[]>([]);
   const genSeq = useRef(0); // only the latest request's result is applied (kills the race)
-  const ageTimer = useRef<number | null>(null);
-  const pendingAge = useRef(age); // tracks the target age across rapid stepper clicks
 
   const child = getChild(childId);
   const childName = child?.name;
@@ -132,10 +130,13 @@ export default function Builder() {
   function send() {
     const text = input.trim();
     if (!text) return; // never block on loading: a new send supersedes the in-flight one
+    // Age comes from the prompt now: if they name one, that drives the difficulty.
+    const promptAge = parseAge(text);
+    if (promptAge) setAge(promptAge);
     const msgs: ChatMessage[] = [...messages, { role: "user", content: text }];
     setMessages(msgs);
     setInput("");
-    void runGenerate(msgs, age, "send", childName);
+    void runGenerate(msgs, promptAge ?? age, "send", childName);
   }
 
   // An edit chip: the bubble shows the one word, Venice receives a fuller,
@@ -146,19 +147,6 @@ export default function Builder() {
     const msgs: ChatMessage[] = [...messages, { role: "user", content: masked, display: word }];
     setMessages(msgs);
     void runGenerate(msgs, age, "send", childName);
-  }
-
-  function changeAge(delta: number) {
-    const next = Math.min(13, Math.max(3, pendingAge.current + delta));
-    if (next === pendingAge.current) return;
-    pendingAge.current = next;
-    setAge(next);
-    // Only regenerate if a sheet already exists. On Build-your-own, changing the
-    // age before the user has prompted must NOT auto-generate a default sheet.
-    if (idx < 0) return;
-    // Debounce: rapid stepper clicks fire ONE request at the final age (no race).
-    if (ageTimer.current) window.clearTimeout(ageTimer.current);
-    ageTimer.current = window.setTimeout(() => void runGenerate(messages, next, "silent", childName), 350);
   }
 
   function regenerate() {
@@ -174,9 +162,7 @@ export default function Builder() {
   function selectKid(id: string, kidAge: number, kidName: string) {
     setChildId(id);
     setAge(kidAge);
-    pendingAge.current = kidAge;
-    if (ageTimer.current) window.clearTimeout(ageTimer.current);
-    // Same guard: don't auto-generate before the user has made a sheet.
+    // Don't auto-generate before the user has made a sheet.
     if (idx >= 0) void runGenerate(messages, kidAge, "silent", kidName);
   }
 
@@ -228,38 +214,26 @@ export default function Builder() {
 
       {/* header row */}
       <div className="no-print mb-6 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <GlassLink href="/resources" className="h-9 gap-1 px-3 text-sm">
+        <div className="flex min-w-0 items-center gap-3">
+          <GlassLink href="/resources" className="h-9 shrink-0 gap-1 px-3 text-sm">
             <ArrowLeft className="size-4" /> Library
           </GlassLink>
-          <span className="text-sprout-cream/40">/</span>
-          <span className="text-sprout-cream flex items-center gap-2 font-bold">
-            <span className="text-xl">{template.emoji}</span> {template.title}
+          <span className="text-sprout-cream flex min-w-0 items-center gap-2.5 text-lg font-bold sm:text-2xl">
+            {isCustom && (
+              <span className="bg-sprout-cream grid size-8 shrink-0 place-items-center rounded-xl shadow-sm sm:size-9">
+                <SproutMascotIcon className="size-5 sm:size-6" />
+              </span>
+            )}
+            <span className="truncate">{template.title}</span>
           </span>
         </div>
-        <div className="flex items-center gap-2">
-          <GlassPanel radius="rounded-full" className="text-[#1B3722]">
-            <div className="flex items-center gap-1 p-1">
-              <button onClick={() => changeAge(-1)} aria-label="Younger" className="grid size-7 place-items-center rounded-full hover:bg-black/10">
-                <Minus className="size-4" />
-              </button>
-              <span className="px-1 text-sm font-semibold">Age {age}</span>
-              <button onClick={() => changeAge(1)} aria-label="Older" className="grid size-7 place-items-center rounded-full hover:bg-black/10">
-                <Plus className="size-4" />
-              </button>
-            </div>
-          </GlassPanel>
-          <GlassButton onClick={save} disabled={!worksheet} className="h-10 px-4 text-sm">
-            <Check className="size-4" /> Save
-          </GlassButton>
+        {/* One pill, three actions — icons that pop their label out on hover, like the nav. */}
+        <div className="border-sprout-cream/20 bg-sprout-cream/10 flex shrink-0 items-center gap-1 rounded-full border p-1 backdrop-blur-sm">
+          <ActionItem icon={Check} label="Save" onClick={save} disabled={!worksheet} />
           {isCustom && (
-            <GlassButton onClick={() => void publishCustom()} disabled={!worksheet || publishedIdx === idx} className="h-10 px-4 text-sm">
-              <Globe className="size-4" /> {publishedIdx === idx ? "Published" : "Publish"}
-            </GlassButton>
+            <ActionItem icon={Globe} label={publishedIdx === idx ? "Published" : "Publish"} onClick={() => void publishCustom()} disabled={!worksheet || publishedIdx === idx} />
           )}
-          <GlassButton onClick={() => window.print()} disabled={!worksheet} className="h-10 px-4 text-sm">
-            <Download className="size-4" /> PDF
-          </GlassButton>
+          <ActionItem icon={Download} label="PDF" onClick={() => window.print()} disabled={!worksheet} />
         </div>
       </div>
 
@@ -441,6 +415,38 @@ function buildSteps(templateTitle: string, age: number, lastUser: string): strin
   if (u.includes("more")) steps.push("Adding more problems");
   steps.push(`Writing real problems for age ${age}`, "Laying out the page", "Giving it a final check");
   return steps;
+}
+
+// Pull an age out of the prompt ("for a 7 year old", "age 9", "9yo") so the
+// builder sizes difficulty from what the parent typed.
+function parseAge(text: string): number | null {
+  const t = text.toLowerCase();
+  const m =
+    t.match(/\bage\s*(\d{1,2})\b/) ||
+    t.match(/\b(\d{1,2})\s*[-\s]?\s*year[\s-]*olds?\b/) ||
+    t.match(/\b(\d{1,2})\s*yo\b/);
+  if (!m) return null;
+  const n = parseInt(m[1], 10);
+  return n >= 3 && n <= 13 ? n : null;
+}
+
+// One action in the builder's segmented pill — icon at rest, label pops out on
+// hover (mobile keeps the label inline so the buttons stay legible without hover).
+function ActionItem({ icon: Icon, label, onClick, disabled }: { icon: ComponentType<{ className?: string }>; label: string; onClick: () => void; disabled?: boolean }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      title={label}
+      className="group/act text-sprout-cream/90 hover:bg-sprout-cream hover:text-sprout-ink flex items-center rounded-full px-2.5 py-2 text-sm font-bold transition-colors disabled:pointer-events-none disabled:opacity-40"
+    >
+      <Icon className="size-4 shrink-0" />
+      <span className="max-w-[5rem] overflow-hidden pl-1.5 whitespace-nowrap opacity-100 transition-all duration-200 md:max-w-0 md:pl-0 md:opacity-0 md:group-hover/act:max-w-[5rem] md:group-hover/act:pl-1.5 md:group-hover/act:opacity-100">
+        {label}
+      </span>
+    </button>
+  );
 }
 
 function TypingDots() {

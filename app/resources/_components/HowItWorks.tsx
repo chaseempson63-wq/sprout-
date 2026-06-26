@@ -1,6 +1,5 @@
-// A quiet, minimal "how it works" row: a small icon, a short title, one line.
-// Deliberately NOT a frosted feature-card grid — just calm wayfinding with lots
-// of air around it. Presentational only.
+// "How it works" — each step on its own card so it reads as a distinct beat,
+// not floating text on the canvas. Presentational only.
 
 import type { ComponentType } from "react";
 
@@ -13,16 +12,14 @@ export type HowStep = {
 export function HowItWorks({ steps, className = "" }: { steps: HowStep[]; className?: string }) {
   return (
     <section className={className}>
-      <div className="grid gap-6 sm:grid-cols-3 sm:gap-12">
+      <div className="grid gap-4 sm:grid-cols-3 sm:gap-5">
         {steps.map((s, i) => (
-          <div key={i} className="flex items-start gap-3.5">
-            <span className="bg-sprout-lime/15 text-sprout-lime grid size-10 shrink-0 place-items-center rounded-full">
-              <s.icon className="size-5" />
+          <div key={i} className="border-sprout-cream/12 bg-sprout-cream/[0.06] rounded-2xl border p-5 backdrop-blur-sm sm:p-6">
+            <span className="bg-sprout-lime/15 text-sprout-lime grid size-11 place-items-center rounded-2xl">
+              <s.icon className="size-6" />
             </span>
-            <div className="pt-0.5">
-              <h3 className="text-sprout-cream font-semibold">{s.title}</h3>
-              <p className="text-sprout-cream/55 mt-1 text-sm leading-relaxed">{s.blurb}</p>
-            </div>
+            <h3 className="text-sprout-cream mt-4 font-bold">{s.title}</h3>
+            <p className="text-sprout-cream/60 mt-1.5 text-sm leading-relaxed">{s.blurb}</p>
           </div>
         ))}
       </div>

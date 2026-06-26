@@ -3,11 +3,13 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ArrowBigUp, ArrowRight, Check, Globe, MessageSquare, Plus, Printer, Search, SlidersHorizontal, Sparkles, Sprout, Star, Trash2, Users, X } from "lucide-react";
+import { ArrowRight, Check, Globe, MessageSquare, Plus, Search, Star, Trash2, Users, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
 import { HowItWorks, type HowStep } from "./_components/HowItWorks";
 import { Typewriter } from "./_components/Typewriter";
+import { UpvoteButton } from "./_components/UpvoteButton";
+import { DescribeIcon, ShareSheetIcon, SproutStepIcon } from "./_components/StepIcons";
 import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { listCommunity } from "@/lib/resources/social";
@@ -41,9 +43,9 @@ const BUILD_EXAMPLES = [
 // The loop, in three quiet lines under the hero. A friend showing you, not a
 // help desk. Few words.
 const HOME_STEPS: HowStep[] = [
-  { icon: Sparkles, title: "Pick or describe", blurb: "Start from a worksheet, or tell Sprout what you want." },
-  { icon: SlidersHorizontal, title: "Make it theirs", blurb: "Add their age and something they love." },
-  { icon: Printer, title: "Print or share", blurb: "Keep it, print it, or post it for other parents." },
+  { icon: DescribeIcon, title: "Pick or describe", blurb: "Start from a worksheet, or tell Sprout what you want." },
+  { icon: SproutStepIcon, title: "Make it theirs", blurb: "Add their age and something they love." },
+  { icon: ShareSheetIcon, title: "Print or share", blurb: "Keep it, print it, or post it for other parents." },
 ];
 
 type Tab = "templates" | "mine" | "community";
@@ -306,9 +308,11 @@ export default function LibraryHome() {
                       </Link>
                       <span className="text-[#1B3722]/45"> · {timeAgo(p.createdAt)}</span>
                     </span>
-                    <span className="flex shrink-0 items-center gap-2 text-[#1B3722]/55">
-                      <span className="inline-flex items-center gap-0.5"><ArrowBigUp className="size-3.5" />{p.upvotes}</span>
-                      <span className="inline-flex items-center gap-0.5"><MessageSquare className="size-3.5" />{p.commentCount}</span>
+                    <span className="flex shrink-0 items-center gap-1.5">
+                      <UpvoteButton targetType="post" targetId={p.id} count={p.upvotes} />
+                      <Link href={`/resources/community/${p.id}#comments`} aria-label="Comments" className="inline-flex h-8 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/45 px-2.5 text-xs font-semibold text-[#1B3722]/75 transition hover:bg-white/75">
+                        <MessageSquare className="size-3.5" /> {p.commentCount}
+                      </Link>
                     </span>
                   </div>
                 </div>
@@ -340,8 +344,8 @@ function BuildYourOwnHero() {
         <div aria-hidden className="bg-sprout-lime/15 pointer-events-none absolute -top-16 -right-16 size-64 rounded-full blur-3xl" />
         <div className="relative">
           <div className="flex items-center gap-2.5">
-            <span className="bg-sprout-lime text-sprout-ink grid size-10 place-items-center rounded-xl shadow-md sm:size-11">
-              <Sprout className="size-6" />
+            <span className="bg-sprout-cream grid size-11 place-items-center rounded-2xl shadow-md sm:size-12">
+              <SproutMascotIcon className="size-7 sm:size-8" />
             </span>
             <span className="text-sprout-lime text-xs font-bold tracking-[0.15em] uppercase sm:text-sm">Build your own</span>
           </div>
@@ -355,7 +359,6 @@ function BuildYourOwnHero() {
 
           {/* Mock prompt box — looks like the builder's input, typing real prompts. */}
           <div className="border-sprout-cream/15 mt-6 flex items-center gap-3 rounded-2xl border bg-[#0F2114]/60 px-4 py-3.5 backdrop-blur-sm sm:mt-8 sm:px-5 sm:py-4">
-            <Sparkles className="text-sprout-lime size-5 shrink-0" />
             <span className="text-sprout-cream min-w-0 flex-1 overflow-hidden text-[15px] whitespace-nowrap sm:text-lg">
               <Typewriter words={BUILD_EXAMPLES} holdMs={1600} className="text-sprout-cream" />
             </span>

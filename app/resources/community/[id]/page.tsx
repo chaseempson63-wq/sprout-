@@ -51,7 +51,7 @@ export default function CommunityPostPage() {
   }, [id, ready, account?.id]);
 
   return (
-    <div>
+    <div className="mx-auto max-w-3xl">
       <GlassLink href="/resources" className="no-print mb-5 h-9 gap-1 px-3 text-sm">
         <ArrowLeft className="size-4" /> Library
       </GlassLink>
@@ -95,7 +95,7 @@ export default function CommunityPostPage() {
             </button>
           </div>
 
-          <div className="no-print mt-8">
+          <div id="comments" className="no-print mt-8 scroll-mt-24">
             <h2 className="text-sprout-cream mb-3 text-xl font-bold">
               Comments {post.commentCount > 0 ? <span className="text-sprout-cream/50">· {post.commentCount}</span> : null}
             </h2>
