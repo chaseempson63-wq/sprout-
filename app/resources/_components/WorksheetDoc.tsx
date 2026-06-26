@@ -399,14 +399,19 @@ export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
           ))}
         </div>
 
-        <div className="worksheet-footer mt-6 flex items-center justify-between border-t border-[#2E5A35]/15 pt-4">
-          <span className="text-[12px] text-[#1B3722]/50">Name: ______________________</span>
-          <span className="inline-flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-[#2E5A35]">
-            <span className="grid size-6 place-items-center rounded-lg bg-[#2E5A35]/10">
-              <SproutMascotIcon className="h-4 w-4" />
+        <div className="worksheet-footer mt-6 border-t border-[#2E5A35]/15 pt-4">
+          <div className="flex items-center justify-between">
+            <span className="text-[12px] text-[#1B3722]/50">Name: ______________________</span>
+            <span className="inline-flex items-center gap-2 text-[15px] font-extrabold tracking-tight text-[#2E5A35]">
+              <span className="grid size-6 place-items-center rounded-lg bg-[#2E5A35]/10">
+                <SproutMascotIcon className="h-4 w-4" />
+              </span>
+              Made with Sprout
             </span>
-            Made with Sprout
-          </span>
+          </div>
+          <p className="mt-3 text-center text-[11px] font-semibold text-[#2E5A35]/70">
+            Finished? Snap a photo in the Sprout app to save it to their week.
+          </p>
         </div>
       </div>
     </article>
