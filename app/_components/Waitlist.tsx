@@ -54,8 +54,8 @@ export function Waitlist() {
           </h3>
           <p className="text-sprout-cream/75 mb-6 flex-1 leading-relaxed text-[15px]">
             Corps are selling people&apos;s data to AI in the race to the end.
-            Sprout is what they don&apos;t build &mdash; a private record of
-            your kid&apos;s week, never sold, never trained on. Be on the list
+            Sprout is what they don&apos;t build. A private record of your
+            kid&apos;s week, never sold, never trained on. Be on the list
             when it opens.
           </p>
 
@@ -116,7 +116,7 @@ export function Waitlist() {
           )}
         </div>
 
-        {/* ── Card 2: Earn with Sprout — simplified partner dashboard ─ */}
+        {/* ── Card 2: Earn with Sprout - simplified partner dashboard ─ */}
         <div className="rounded-2xl border-2 border-[#F4EDE0] bg-[#F4EDE0] p-6 md:p-8 flex flex-col text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.6),0_15px_40px_-10px_rgba(0,0,0,0.5),0_30px_60px_-20px_rgba(0,0,0,0.3)]">
           <p className="text-[11px] uppercase tracking-[0.22em] text-[#1B3722]/70 font-bold mb-3">
             Earn with Sprout

@@ -39,7 +39,7 @@ function PhoneShot({
 }
 
 /* ─────────────────────────────────────────────────────────────────────
-   Sprout landing page v2 — structural rebuild against bevel.health
+   Sprout landing page v2 - structural rebuild against bevel.health
    layout. All Sprout brand, copy, colors, fonts stay exactly as on
    app/page.tsx. The shape changes: product shown before explained,
    social proof distributed at 3 distinct points, feature blocks
@@ -50,7 +50,7 @@ export default function HomeV2() {
   return (
     <main className="text-sprout-cream min-h-screen overflow-x-hidden relative">
 
-      {/* Continuous green canvas — same brand surface as v1 */}
+      {/* Continuous green canvas - same brand surface as v1 */}
       <div className="fixed inset-0 -z-20">
         <div className="absolute inset-0 bg-gradient-to-br from-[#2A5132] via-[#3D6643] to-[#1B3722]" />
         <div className="absolute inset-0 opacity-[0.10] mix-blend-overlay pointer-events-none" style={{
@@ -59,7 +59,7 @@ export default function HomeV2() {
       </div>
 
       {/* ═══════════════════════════════════════════════════════════════
-          HERO  (bevel position 2 — heading + sub + CTA + rating badge)
+          HERO  (bevel position 2 - heading + sub + CTA + rating badge)
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative min-h-screen flex flex-col">
 
@@ -112,7 +112,7 @@ export default function HomeV2() {
             </p>
             <p className="mt-5 text-center text-sprout-cream font-bold leading-relaxed max-w-xl mx-auto"
                style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
-              Preserving Human Intelligence &mdash; Growing The Next Generation.
+              Preserving Human Intelligence. Growing The Next Generation.
             </p>
 
             <div className="mt-12 flex flex-col items-center gap-4">
@@ -125,7 +125,7 @@ export default function HomeV2() {
               </Link>
             </div>
 
-            {/* Hero-tier social proof — stripped to single label, sized to
+            {/* Hero-tier social proof - stripped to single label, sized to
                 match the top audience pill for visual consistency. */}
             <div className="mt-14 flex justify-center">
               <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
@@ -153,7 +153,7 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          PRODUCT SHOWCASE STRIP  (bevel position 3 — show before explain)
+          PRODUCT SHOWCASE STRIP  (bevel position 3 - show before explain)
           Three phone screens, side-by-side, no copy on top.
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
@@ -188,7 +188,7 @@ export default function HomeV2() {
           </div>
 
           {/* Mobile (<md): static fanned trio that fits the screen in one
-              frame — center phone forward, two tucked behind and angled.
+              frame - center phone forward, two tucked behind and angled.
               Replaces the old full-width swipe carousel (which rendered each
               phone at 74vw and looked oversized). */}
           <div className="md:hidden flex items-center justify-center" style={{ perspective: "1400px" }}>
@@ -215,9 +215,54 @@ export default function HomeV2() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════
-          SOCIAL PROOF #1 — VERBATIM WALL
-          (bevel position 4–5: logo wall + awards. Sprout has no
+      {/* ===============================================================
+          WHERE IT ALL LIVES  (01) - permanence / memory frame.
+          Sits right under the phone trio: show the product, then say
+          what it is. The category line.
+          =============================================================== */}
+      <section className="relative px-6 md:px-12 py-20 md:py-28 overflow-hidden">
+
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2A5132]/30 via-[#1B3722]/45 to-[#2A5132]/30" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-[#94BC8E]/8 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-4xl mx-auto text-center">
+          <CenteredEyebrow number="01" label="Where it all lives" />
+          <h2 className="font-bold tracking-[-0.03em] leading-[0.98] text-sprout-cream max-w-3xl mx-auto headline-lit"
+              style={{ fontSize: "clamp(40px, 6.5vw, 72px)" }}>
+            Your child&apos;s permanent<br />learning memory.
+          </h2>
+          <p className="mt-8 text-sprout-cream/80 leading-relaxed max-w-xl mx-auto"
+             style={{ fontSize: "clamp(17px, 1.7vw, 21px)" }}>
+            Every voice memo, every photo, every small moment. Kept,
+            compiled, and theirs to look back on. The notes app forgets.
+            The camera roll buries it. Sprout keeps it.
+          </p>
+          <p className="mt-6 text-sprout-cream font-bold leading-relaxed max-w-xl mx-auto"
+             style={{ fontSize: "clamp(18px, 1.8vw, 22px)" }}>
+            Years from now, it&apos;s all still here. One day, you hand it to them.
+          </p>
+        </div>
+
+        <div className="relative max-w-5xl mx-auto mt-14 grid sm:grid-cols-3 gap-5">
+          {[
+            "See what they're actually doing. All in one place.",
+            "Keep the small moments you'd otherwise forget.",
+            "Show it to them later. It means something.",
+          ].map((line) => (
+            <GlassCard key={line} className="p-7 rounded-3xl" glow="sage" soft>
+              <p className="text-sprout-cream leading-relaxed font-semibold" style={{ fontSize: "clamp(16px, 1.5vw, 18px)" }}>
+                {line}
+              </p>
+            </GlassCard>
+          ))}
+        </div>
+      </section>
+
+      {/* ===============================================================
+          SOCIAL PROOF #1 - VERBATIM WALL
+          (logo-wall slot. Sprout has no
           integrations to brag about, so we lean on what we DO have:
           verbatim quotes pulled from real forum threads.)
           ═══════════════════════════════════════════════════════════════ */}
@@ -231,7 +276,7 @@ export default function HomeV2() {
         <div className="relative max-w-7xl mx-auto">
 
           <div className="text-center mb-16">
-            <CenteredEyebrow number="01" label="Pulled from real forum threads" />
+            <CenteredEyebrow number="02" label="Pulled from real forum threads" />
             <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl mx-auto"
                 style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
               Built for the parents<br />who walked away from the system.
@@ -260,8 +305,8 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          SECTION INTRO HEADING — THE 3AM MOMENT
-          (bevel position 8 — "Start the day with confidence" intro
+          SECTION INTRO HEADING - THE 3AM MOMENT
+          (bevel position 8 - "Start the day with confidence" intro
           heading. Here we use it as the section transition into the
           repeating feature blocks.)
           ═══════════════════════════════════════════════════════════════ */}
@@ -280,7 +325,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-5xl mx-auto">
 
-          <SectionEyebrow number="02" label="The reason Sprout exists" />
+          <SectionEyebrow number="03" label="The reason Sprout exists" />
 
           <div className="space-y-2 mb-16">
             <h2 className="font-bold tracking-[-0.04em] leading-[0.9] text-sprout-cream"
@@ -333,7 +378,7 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          REPEATING FEATURE BLOCKS  (bevel positions 9–12)
+          REPEATING FEATURE BLOCKS  (bevel positions 9-12)
           Same 2-column shape, alternating left/right. Four blocks.
           Each one: eyebrow + H3 + body + phone + floating UI card.
           Repetition IS the point.
@@ -348,12 +393,12 @@ export default function HomeV2() {
         <div className="relative max-w-7xl mx-auto">
 
           <div className="mb-16">
-            <SectionEyebrow number="03" label="How it works" />
+            <SectionEyebrow number="04" label="How it works" />
           </div>
 
           <div className="space-y-32 md:space-y-48">
 
-            {/* Feature 1 — Drop in a moment */}
+            {/* Feature 1 - Drop in a moment */}
             <FeatureBlock
               index="01"
               eyebrow="Drop in a moment"
@@ -366,20 +411,18 @@ export default function HomeV2() {
                 <>
                   <p className="font-semibold">Drop in one thing. Done.</p>
                   <p className="mt-5">
-                    Voice memo. Photo. One sentence at 9pm. A scheduled
-                    activity. A deadline coming Friday. Tag which kid (or
-                    the whole family). That&apos;s the entire input.
+                    Voice memo. Photo. A line at 9pm. Tag which kid.
+                    That&apos;s the whole input.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    There when you open it &mdash; Sunday, Tuesday, whenever.
-                    The bits you captured add up to more than you remember.
+                    Open it whenever. It adds up to more than you remember.
                   </p>
                 </>
               }
               visual={<OnboardingVisual variant="capture" />}
             />
 
-            {/* Feature 2 — Sprout remembers (text right, phone left) */}
+            {/* Feature 2 - Sprout remembers (text right, phone left) */}
             <FeatureBlock
               reverse
               index="02"
@@ -393,24 +436,21 @@ export default function HomeV2() {
                 <>
                   <p className="font-semibold">Look back. It&apos;s all still here.</p>
                   <p className="mt-5">
-                    You&apos;re already doing it &mdash; scattered across
-                    your phone, your camera roll, the back of the calendar.
-                    Notes pile up but never connect. ChatGPT loses the
-                    thread between sessions &mdash; and what you typed
-                    becomes theirs, not yours. Sprout keeps every moment,
-                    organised by kid, and lets you look back through six
-                    weeks or six months.
+                    Your phone, your camera roll, a notes app you never
+                    reopen. None of it connects. ChatGPT forgets, and your
+                    words become theirs. Sprout keeps every moment, sorted
+                    by kid.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    Continuity is the whole product. One kid&apos;s record,
-                    growing every week. Yours, not anyone else&apos;s.
+                    One kid&apos;s record, growing every week. Yours, not
+                    anyone else&apos;s.
                   </p>
                 </>
               }
               visual={<OnboardingVisual variant="sort" />}
             />
 
-            {/* Feature 3 — Sunday becomes art */}
+            {/* Feature 3 - Sunday becomes art */}
             <FeatureBlock
               index="03"
               eyebrow="The week, seen"
@@ -423,20 +463,18 @@ export default function HomeV2() {
                 <>
                   <p className="font-semibold">Open it Sunday. The week&apos;s right there.</p>
                   <p className="mt-5">
-                    Every capture this week, sitting in one place.
-                    Charlie&apos;s timeline stays Charlie&apos;s.
-                    Emma&apos;s stays Emma&apos;s.
+                    Every capture in one place. Charlie&apos;s stays
+                    Charlie&apos;s. Emma&apos;s stays Emma&apos;s.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    Open the week. Chaos turns into clarity. The kid
-                    opens theirs and sees what they actually built.
-                    Same week. Two screens.
+                    Chaos turns into clarity. Your kid opens theirs and
+                    sees what they built. Same week, two screens.
                   </p>
                   <ul className="mt-6 space-y-3">
                     {[
-                      "Documenting your week is a new habit — Sprout makes it the easy one.",
-                      "Teaching your kid to journal is a life-long skill. Hand them the phone.",
-                      "Doubles as a record of learning if your registration officer ever asks.",
+                      "A new habit, made the easy one.",
+                      "Teaches your kid to journal. Hand them the phone.",
+                      "Doubles as a record of learning, if anyone ever asks.",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3 text-sprout-cream/80" style={{ fontSize: "15px" }}>
                         <span className="mt-1 flex-shrink-0 w-4 h-4 rounded-full bg-sprout-cream/15 flex items-center justify-center border border-sprout-cream/10">
@@ -451,7 +489,7 @@ export default function HomeV2() {
               visual={<OnboardingVisual variant="together" />}
             />
 
-            {/* Feature 4 — Year of growth */}
+            {/* Feature 4 - Year of growth */}
             <FeatureBlock
               reverse
               index="04"
@@ -463,15 +501,14 @@ export default function HomeV2() {
               }
               body={
                 <>
-                  <p className="font-semibold">Print the year. Hand it to whoever&apos;s asking.</p>
+                  <p className="font-semibold">Print the year. Hand it over.</p>
                   <p className="mt-5">
-                    Weeks compile into monthly snapshots. Monthly snapshots
-                    compile into a year-end retrospective you can hold and
-                    hand to your kid.
+                    Weeks build into months. Months build into a year you
+                    can hold and hand to your kid.
                   </p>
                   <p className="mt-5 text-sprout-cream/65">
-                    Every kid you add gets their own year. Print it,
-                    hand it over, keep it on the shelf.
+                    Every kid gets their own year. Print it, keep it on
+                    the shelf.
                   </p>
                 </>
               }
@@ -482,54 +519,8 @@ export default function HomeV2() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════
-          WHERE IT ALL LIVES — the permanence / memory frame.
-          The aspirational counterweight to the hero's wound: not just
-          relief from Sunday-night doubt, but a permanent place the whole
-          education is remembered. The category line.
-          ═══════════════════════════════════════════════════════════════ */}
-      <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#2A5132]/30 via-[#1B3722]/45 to-[#2A5132]/30" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-[#94BC8E]/8 blur-3xl" />
-        </div>
-
-        <div className="relative max-w-4xl mx-auto text-center">
-          <CenteredEyebrow number="04" label="Where it all lives" />
-          <h2 className="font-bold tracking-[-0.03em] leading-[0.98] text-sprout-cream max-w-3xl mx-auto headline-lit"
-              style={{ fontSize: "clamp(40px, 6.5vw, 72px)" }}>
-            Your child&apos;s permanent<br />learning memory.
-          </h2>
-          <p className="mt-8 text-sprout-cream/80 leading-relaxed max-w-xl mx-auto"
-             style={{ fontSize: "clamp(17px, 1.7vw, 21px)" }}>
-            Every voice memo, every photo, every small moment they learn
-            something. Kept, compiled, and theirs to look back on. The notes
-            app forgets. The camera roll buries it. Sprout keeps it.
-          </p>
-          <p className="mt-6 text-sprout-cream font-bold leading-relaxed max-w-xl mx-auto"
-             style={{ fontSize: "clamp(18px, 1.8vw, 22px)" }}>
-            Years from now, it&apos;s all still here. One day, you hand it to them.
-          </p>
-        </div>
-
-        <div className="relative max-w-5xl mx-auto mt-16 grid sm:grid-cols-3 gap-5">
-          {[
-            "See what they're actually doing. Finally, all in one place.",
-            "Keep the small but important moments you'd otherwise forget.",
-            "Show it to them later. It means something.",
-          ].map((line) => (
-            <GlassCard key={line} className="p-7 rounded-3xl" glow="sage" soft>
-              <p className="text-sprout-cream leading-relaxed font-semibold" style={{ fontSize: "clamp(16px, 1.5vw, 18px)" }}>
-                {line}
-              </p>
-            </GlassCard>
-          ))}
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════
-          DIFFERENTIATOR  (bevel position 21 — "And that's not all" grid)
+      {/* ===============================================================
+          DIFFERENTIATOR  (bevel position 21 - "And that's not all" grid)
           Notes vs ChatGPT vs Spreadsheets vs Sprout. Existing copy.
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative px-6 md:px-12 py-32 md:py-48 overflow-hidden">
@@ -587,7 +578,7 @@ export default function HomeV2() {
               {
                 title: "ChatGPT",
                 you: "Re-explain who Charlie is. Every. Single. Time.",
-                get: "An answer that's gone next session. Your words become OpenAI's — logged, owned, sold to whoever pays for the dataset.",
+                get: "An answer that's gone next session. Your words become OpenAI's. Logged, owned, sold to whoever pays for the dataset.",
               },
             ].map((alt) => (
               <GlassCard key={alt.title} className="p-7 rounded-3xl" glow="sage" soft>
@@ -631,7 +622,7 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          FINAL CTA — MIRRORS HERO  (bevel position 24)
+          FINAL CTA - MIRRORS HERO  (bevel position 24)
           Same structural shape as the hero: centered headline + sub +
           primary CTA + small badge above. Bookend.
           ═══════════════════════════════════════════════════════════════ */}

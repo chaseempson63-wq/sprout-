@@ -6,7 +6,7 @@ import { SproutMascotIcon } from "./SproutMascotIcon";
 import { SproutLogo } from "./Glass";
 
 /* ─────────────────────────────────────────────────────────────────────
-   Mascot — floating Sprout companion.
+   Mascot - floating Sprout companion.
    Fixed bottom-right. Idle float. IntersectionObserver picks the
    most-visible <main> section and shows that section's line. One
    short, in-character line per section. Dismissible per session.
@@ -14,22 +14,22 @@ import { SproutLogo } from "./Glass";
    ───────────────────────────────────────────────────────────────────── */
 
 /* One short, in-character line per <main> > <section>, indexed in DOM
-   order. The landing has 8 sections now; if the section order changes,
+   order. The landing has 8 sections; if the section order changes,
    re-check this mapping against page.tsx. */
 const sproutLines = [
   "oh hi. scroll, i'll come with you.",               // 0  Hero: "you did more than you think"
   "voice memo, photo, one line. that's all i need.",  // 1  Product showcase: the app screens
-  "see, you're not making this up.",                  // 2  Verbatim wall: real parent quotes
-  "this exact feeling. it's why i'm here.",           // 3  11:42pm: the reason Sprout exists
-  "drop it in, i'll keep it. that's the whole job.",  // 4  How it works
-  "share me around. earn every month they stay.",     // 5  Earn with Sprout
+  "years of it, all in one place. i lose nothing.",   // 2  Where it all lives: permanence frame
+  "see, you're not making this up.",                  // 3  Verbatim wall: real parent quotes
+  "this exact feeling. it's why i'm here.",           // 4  11:42pm: the reason Sprout exists
+  "drop it in, i'll keep it. that's the whole job.",  // 5  How it works
   "notes forget. i don't. and i never sell you out.", // 6  Why Sprout: vs notes / ChatGPT
   "ok. ready when you are.",                          // 7  Final CTA: sleep on Sunday + waitlist
 ];
 
 export function Mascot() {
   const [mounted, setMounted] = useState(false);
-  // Dismiss is in-page only — refresh or new tab restores the mascot.
+  // Dismiss is in-page only - refresh or new tab restores the mascot.
   const [dismissed, setDismissed] = useState(false);
   const [activeIdx, setActiveIdx] = useState(0);
   const ratiosRef = useRef<Map<Element, number>>(new Map());
@@ -78,7 +78,7 @@ export function Mascot() {
 
   if (!mounted) return null;
 
-  // Dismissed state — show a small cream "bring back" affordance in the
+  // Dismissed state - show a small cream "bring back" affordance in the
   // same corner. Tap it to restore the mascot for the rest of the session.
   if (dismissed) {
     return (
@@ -101,7 +101,7 @@ export function Mascot() {
       className="fixed z-50 bottom-3 right-3 md:bottom-4 md:right-4 flex flex-col items-end gap-2 pointer-events-none select-none"
       aria-live="polite"
     >
-      {/* speech bubble — re-mounts on line change for a soft pop.
+      {/* speech bubble - re-mounts on line change for a soft pop.
           Background + text colour match the existing cream-card system
           on the page (see "The Sprout way" card in page.tsx). Font is
           Nunito 700 so the line reads as the mascot's chunky character
@@ -114,7 +114,7 @@ export function Mascot() {
       >
         {line}
 
-        {/* dismiss × — top-right corner of bubble */}
+        {/* dismiss × - top-right corner of bubble */}
         <button
           type="button"
           onClick={handleDismiss}
@@ -124,17 +124,17 @@ export function Mascot() {
           <X className="w-3 h-3" strokeWidth={2.5} />
         </button>
 
-        {/* tail pointing down toward mascot — matches bubble cream */}
+        {/* tail pointing down toward mascot - matches bubble cream */}
         <span
           aria-hidden="true"
           className="absolute -bottom-1.5 right-7 w-3 h-3 rotate-45 bg-[#F4EDE0]"
         />
       </div>
 
-      {/* mascot — real Sprout character SVG, floating freely (no chip,
+      {/* mascot - real Sprout character SVG, floating freely (no chip,
           no pill, no background). Wrapper aspect matches the SVG's
           tight viewBox (330/460) so the visible character fills the
-          wrapper edge-to-edge — no internal padding pushing it away
+          wrapper edge-to-edge - no internal padding pushing it away
           from the corner. Heights tuned to preserve the previous
           character size on screen. */}
       <div
