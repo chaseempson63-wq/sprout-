@@ -11,8 +11,6 @@ import {
 import { OnboardingVisual } from "./_components/OnboardingVisuals";
 import { Mascot } from "./_components/Mascot";
 import { Waitlist } from "./_components/Waitlist";
-import { PartnerDashboard } from "./_components/PartnerDashboard";
-import { PhoneShowcase } from "./_components/PhoneShowcase";
 
 /* A rendered App Store phone screenshot, floated on the green canvas. */
 function PhoneShot({
@@ -189,15 +187,29 @@ export default function HomeV2() {
             />
           </div>
 
-          {/* Mobile (<md): swipeable carousel — one full-size phone per view,
-              swipe through all three, pagination dots below. Opens centered on
-              the report (middle) phone, matching the desktop trio's emphasis. */}
-          <div className="md:hidden">
-            <PhoneShowcase>
-              <PhoneShot src="/app-capture.png" alt="Capturing a moment in the Sprout app" tilt="none" className="w-[74vw] max-w-[280px]" />
-              <PhoneShot src="/app-week.png" alt="A week sorted into a printable report" tilt="none" className="w-[74vw] max-w-[280px]" />
-              <PhoneShot src="/app-journey.png" alt="A timeline of the year, kept" tilt="none" className="w-[74vw] max-w-[280px]" />
-            </PhoneShowcase>
+          {/* Mobile (<md): static fanned trio that fits the screen in one
+              frame — center phone forward, two tucked behind and angled.
+              Replaces the old full-width swipe carousel (which rendered each
+              phone at 74vw and looked oversized). */}
+          <div className="md:hidden flex items-center justify-center" style={{ perspective: "1400px" }}>
+            <PhoneShot
+              src="/app-capture.png"
+              alt="Capturing a moment in the Sprout app"
+              tilt="rotateY(20deg) rotateZ(-6deg)"
+              className="w-[34%] -mr-[9%] translate-y-5 z-0"
+            />
+            <PhoneShot
+              src="/app-week.png"
+              alt="A week sorted into a printable report"
+              tilt="rotateX(2deg)"
+              className="w-[48%] relative z-10"
+            />
+            <PhoneShot
+              src="/app-journey.png"
+              alt="A timeline of the year, kept"
+              tilt="rotateY(-20deg) rotateZ(6deg)"
+              className="w-[34%] -ml-[9%] translate-y-5 z-0"
+            />
           </div>
 
         </div>
@@ -471,45 +483,48 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          EARN WITH SPROUT — teaser, between How it works and Why Sprout.
-          Partner-portal preview + a big green button. Full program on /partners.
+          WHERE IT ALL LIVES — the permanence / memory frame.
+          The aspirational counterweight to the hero's wound: not just
+          relief from Sunday-night doubt, but a permanent place the whole
+          education is remembered. The category line.
           ═══════════════════════════════════════════════════════════════ */}
       <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
 
         <div className="absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-gradient-to-b from-[#2A5132]/30 via-[#1B3722]/45 to-[#2A5132]/30" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-[#CDEFA0]/8 blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-[#94BC8E]/8 blur-3xl" />
         </div>
 
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-4xl mx-auto text-center">
+          <CenteredEyebrow number="04" label="Where it all lives" />
+          <h2 className="font-bold tracking-[-0.03em] leading-[0.98] text-sprout-cream max-w-3xl mx-auto headline-lit"
+              style={{ fontSize: "clamp(40px, 6.5vw, 72px)" }}>
+            Your child&apos;s permanent<br />learning memory.
+          </h2>
+          <p className="mt-8 text-sprout-cream/80 leading-relaxed max-w-xl mx-auto"
+             style={{ fontSize: "clamp(17px, 1.7vw, 21px)" }}>
+            Every voice memo, every photo, every small moment they learn
+            something. Kept, compiled, and theirs to look back on. The notes
+            app forgets. The camera roll buries it. Sprout keeps it.
+          </p>
+          <p className="mt-6 text-sprout-cream font-bold leading-relaxed max-w-xl mx-auto"
+             style={{ fontSize: "clamp(18px, 1.8vw, 22px)" }}>
+            Years from now, it&apos;s all still here. One day, you hand it to them.
+          </p>
+        </div>
 
-          <div className="text-center mb-12">
-            <CenteredEyebrow number="04" label="Earn with Sprout" />
-            <h2 className="font-bold tracking-[-0.03em] leading-[0.95] text-sprout-cream max-w-3xl mx-auto"
-                style={{ fontSize: "clamp(40px, 6vw, 64px)" }}>
-              Love Sprout? Get paid<br />to share it.
-            </h2>
-            <p className="mt-6 text-sprout-cream/75 leading-relaxed max-w-xl mx-auto"
-               style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
-              Share it with the parents who need it. When a family joins through
-              you, you earn every month they stay. For a whole year.
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto">
-            <PartnerDashboard />
-          </div>
-
-          <div className="mt-10 flex justify-center">
-            <Link
-              href="/partners"
-              className="group inline-flex items-center justify-center gap-2 h-14 px-9 rounded-full bg-gradient-to-r from-[#3D6643] to-[#2A5132] text-sprout-cream font-bold text-base border border-[#CDEFA0]/40 shadow-[0_12px_34px_-10px_rgba(0,0,0,0.55)] hover:from-[#46734D] hover:to-[#2F5D38] transition-colors focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#CDEFA0]/40"
-            >
-              Earn with Sprout
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
-            </Link>
-          </div>
-
+        <div className="relative max-w-5xl mx-auto mt-16 grid sm:grid-cols-3 gap-5">
+          {[
+            "See what they're actually doing. Finally, all in one place.",
+            "Keep the small but important moments you'd otherwise forget.",
+            "Show it to them later. It means something.",
+          ].map((line) => (
+            <GlassCard key={line} className="p-7 rounded-3xl" glow="sage" soft>
+              <p className="text-sprout-cream leading-relaxed font-semibold" style={{ fontSize: "clamp(16px, 1.5vw, 18px)" }}>
+                {line}
+              </p>
+            </GlassCard>
+          ))}
         </div>
       </section>
 
@@ -671,7 +686,17 @@ export default function HomeV2() {
                 backend pattern lifted from Ether's Ask.tsx, Sprout-painted. */}
             <Waitlist />
 
-            <div className="mt-12 md:mt-16 flex justify-center">
+            <div className="mt-10 flex justify-center">
+              <Link
+                href="/partners"
+                className="group inline-flex items-center gap-2 text-sprout-cream/70 hover:text-sprout-cream text-sm font-semibold transition-colors"
+              >
+                Love Sprout? Get paid to share it
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
+              </Link>
+            </div>
+
+            <div className="mt-10 md:mt-12 flex justify-center">
               <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
                 Voiced by real homeschool parents
