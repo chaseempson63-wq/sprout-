@@ -10,6 +10,7 @@ import {
 } from "./_components/Sections";
 import { OnboardingVisual } from "./_components/OnboardingVisuals";
 import { Mascot } from "./_components/Mascot";
+import { JoinTicker } from "./_components/JoinTicker";
 import { Waitlist } from "./_components/Waitlist";
 
 /* A rendered App Store phone screenshot, floated on the green canvas. */
@@ -732,6 +733,7 @@ export default function HomeV2() {
       </footer>
 
       <Mascot />
+      <JoinTicker />
     </main>
   );
 }
