@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { X } from "lucide-react";
 
 /* ─────────────────────────────────────────────────────────────────────
    JoinTicker — live "just joined" social-proof toast.
@@ -61,8 +60,14 @@ const PEOPLE: [string, string][] = [
 // Light rotation of phrasings so the stream reads organic, not templated.
 const ACTIONS = ["just joined the waitlist", "saved their spot", "just joined Sprout"];
 
-// Forest-toned avatar backgrounds, picked by entry so each face feels distinct.
-const AVATAR_BG = ["#2A5132", "#3D6643", "#4D7B53", "#1B3722", "#5A8A60"];
+// Vibrant green avatar gradients, picked by entry so each face feels distinct.
+const AVATAR_GRAD = [
+  "linear-gradient(135deg,#3D6643,#8FBF6A)",
+  "linear-gradient(135deg,#2A5132,#6FB04A)",
+  "linear-gradient(135deg,#4D7B53,#A8D86A)",
+  "linear-gradient(135deg,#356B3C,#7CC25A)",
+  "linear-gradient(135deg,#1B3722,#5DBB46)",
+];
 
 function shuffle<T>(arr: T[]): T[] {
   const a = arr.slice();
@@ -83,7 +88,6 @@ export function JoinTicker() {
   const [shown, setShown] = useState(false);
   const [armed, setArmed] = useState(false);
   const [paused, setPaused] = useState(false);
-  const [dismissed, setDismissed] = useState(false);
   const reduceRef = useRef(false);
 
   // Read reduced-motion once (client only).
@@ -128,13 +132,13 @@ export function JoinTicker() {
   // The cycle: show → hold → hide → random gap → next. Re-keys on idx so each
   // entry runs its own clean set of timers.
   useEffect(() => {
-    if (!armed || dismissed || paused) return;
+    if (!armed || paused) return;
     const timers: number[] = [];
     setShown(true);
     timers.push(window.setTimeout(() => setShown(false), IN_MS + HOLD_MS));
     timers.push(
       window.setTimeout(() => {
-        const gap = 3000 + Math.random() * 7000; // 3–10s
+        const gap = 6000 + Math.random() * 14000; // 6–20s
         timers.push(
           window.setTimeout(
             () => setIdx((i) => (i + 1) % order.length),
@@ -144,9 +148,9 @@ export function JoinTicker() {
       }, IN_MS + HOLD_MS + OUT_MS),
     );
     return () => timers.forEach(clearTimeout);
-  }, [idx, armed, dismissed, paused, order.length]);
+  }, [idx, armed, paused, order.length]);
 
-  if (dismissed || !armed) return null;
+  if (!armed) return null;
 
   const [name, place] = order[idx];
   const action = ACTIONS[idx % ACTIONS.length];
@@ -156,11 +160,12 @@ export function JoinTicker() {
   return (
     <div
       className="pointer-events-none fixed inset-x-0 top-3 z-[60] flex justify-center px-4 md:top-5"
-      aria-live="off"
+      aria-hidden
     >
       <div
-        className="pointer-events-auto flex items-center gap-2.5 rounded-full bg-[#F4EDE0] py-1.5 pl-1.5 pr-2.5 shadow-[0_14px_34px_-10px_rgba(0,0,0,0.45)] ring-1 ring-[#1B3722]/10"
+        className="flex items-center gap-2.5 rounded-full py-1.5 pl-1.5 pr-3.5 shadow-[0_14px_34px_-10px_rgba(27,55,34,0.45)] ring-1 ring-[#4D7B53]/30"
         style={{
+          background: "linear-gradient(135deg,#F6F1E6,#E4F0D8)",
           opacity: shown ? 1 : 0,
           transform: reduce ? "none" : shown ? "translateY(0)" : "translateY(-14px)",
           transition: `opacity ${shown ? IN_MS : OUT_MS}ms ease, transform ${
@@ -169,31 +174,21 @@ export function JoinTicker() {
         }}
       >
         <span
-          className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-[13px] font-bold text-[#F4EDE0]"
-          style={{ backgroundColor: AVATAR_BG[idx % AVATAR_BG.length] }}
-          aria-hidden
+          className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-[13px] font-bold text-[#F4EDE0] shadow-[inset_0_-2px_4px_rgba(0,0,0,0.18)]"
+          style={{ backgroundImage: AVATAR_GRAD[idx % AVATAR_GRAD.length] }}
         >
           {initial}
         </span>
         <span className="text-[12.5px] leading-tight text-[#1B3722] md:text-[13px]">
           <span className="font-bold">{name}</span>
-          <span className="text-[#1B3722]/55"> from </span>
+          <span className="text-[#3D6643]/75"> from </span>
           <span className="font-semibold">{place}</span>
           <br className="sm:hidden" />
-          <span className="text-[#1B3722]/55"> {action}</span>
+          <span className="text-[#3D6643]/75"> {action}</span>
         </span>
-        <span className="ml-0.5 flex items-center gap-1 pl-1.5 text-[9px] font-bold uppercase tracking-[0.12em] text-[#1B3722]/45">
-          <span className="h-1.5 w-1.5 rounded-full bg-sprout-lime motion-safe:animate-pulse" />
-          live
-        </span>
-        <button
-          type="button"
-          onClick={() => setDismissed(true)}
-          aria-label="Dismiss notifications"
-          className="ml-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full text-[#1B3722]/40 transition-colors hover:bg-[#1B3722]/8 hover:text-[#1B3722]/70"
-        >
-          <X className="h-3 w-3" strokeWidth={2.5} />
-        </button>
+        <span
+          className="ml-1 h-2.5 w-2.5 shrink-0 rounded-full bg-[#3FC152] shadow-[0_0_0_3px_rgba(63,193,82,0.25)] motion-safe:animate-pulse"
+        />
       </div>
     </div>
   );
