@@ -33,6 +33,7 @@ export function AccountChip() {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const [photo, setPhoto] = useState("");
+  const [bio, setBio] = useState("");
   const [anon, setAnon] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -59,7 +60,7 @@ export function AccountChip() {
   function create() {
     const n = name.trim();
     if (!n) return;
-    setAccount({ id: newId(), handle: slug(n), displayName: n, photo: photo || undefined, createdAt: Date.now() });
+    setAccount({ id: newId(), handle: slug(n), displayName: n, photo: photo || undefined, bio: bio.trim() || undefined, createdAt: Date.now() });
     setOpen(false);
   }
 
@@ -115,6 +116,18 @@ export function AccountChip() {
               <input value={name} onChange={(e) => setName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && create()} placeholder="Your name" autoFocus className="h-11 flex-1 rounded-lg border border-black/10 bg-white px-3 text-[#1B3722] outline-none focus:border-[#2E5A35]" />
             </div>
           )}
+
+          {/* Bio: optional. A line or two about you. People can use it to share
+              what they do (e.g. "I tutor maths, email me") — it shows on your
+              public profile. */}
+          <textarea
+            value={bio}
+            onChange={(e) => setBio(e.target.value.slice(0, 280))}
+            placeholder="A short bio (optional). What you do, what you offer, how to reach you."
+            rows={3}
+            className="mt-3 w-full resize-none rounded-lg border border-black/10 bg-white px-3 py-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]"
+          />
+          <p className="mt-1 text-right text-[11px] text-[#1B3722]/40">{bio.length}/280</p>
 
           {/* Anonymous: a random two-word name, no photo. */}
           <button type="button" onClick={toggleAnon} role="switch" aria-checked={anon} className="mt-3 flex w-full items-center justify-between gap-3 rounded-lg px-1 py-1 text-left">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { SproutLogo } from "../_components/Glass";
 import { EmailApply } from "../_components/EmailApply";
+import { PartnerGate } from "../_components/PartnerGate";
 import { PartnerDashboard } from "../_components/PartnerDashboard";
 import { EarningsCalculator } from "../_components/EarningsCalculator";
 
@@ -59,6 +60,7 @@ const NO_STRINGS =
 
 export default function PartnersPage() {
   return (
+    <PartnerGate>
     <main className="text-sprout-cream min-h-screen overflow-x-hidden relative">
       {/* Continuous green canvas, same brand surface as the landing page */}
       <div className="fixed inset-0 -z-20">
@@ -289,5 +291,6 @@ export default function PartnersPage() {
         </div>
       </footer>
     </main>
+    </PartnerGate>
   );
 }

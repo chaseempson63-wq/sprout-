@@ -34,7 +34,7 @@ export async function GET(request: Request) {
 
   let query = serverSupabase()
     .from("resource_posts")
-    .select("*, maker:resource_makers(photo)")
+    .select("*, maker:resource_makers(photo,bio)")
     .eq("hidden", false)
     .order("created_at", { ascending: false })
     .limit(limit);

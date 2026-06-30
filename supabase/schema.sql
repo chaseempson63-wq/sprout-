@@ -42,6 +42,31 @@ create policy "Anyone can join the waitlist"
   with check (true);
 
 -- ─────────────────────────────────────────────────────────────────
+-- partner_applications
+-- One row per "Earn with Sprout" application (name + email + why).
+-- Insert-only for the anon browser role; reads require the service_role
+-- key (dashboard only). Same pattern as the waitlist.
+-- ─────────────────────────────────────────────────────────────────
+
+create table if not exists public.partner_applications (
+  id         uuid        primary key default gen_random_uuid(),
+  name       text        not null,
+  email      text        not null,
+  reason     text        not null,
+  created_at timestamptz not null default now()
+);
+create index if not exists partner_applications_created_idx
+  on public.partner_applications (created_at desc);
+
+alter table public.partner_applications enable row level security;
+drop policy if exists "Anyone can apply to partner" on public.partner_applications;
+create policy "Anyone can apply to partner"
+  on public.partner_applications
+  for insert
+  to anon, authenticated
+  with check (true);
+
+-- ─────────────────────────────────────────────────────────────────
 -- Resources social layer (community comments, forum, upvotes)
 --
 -- Powers the Reddit-style social layer on /resources: published

@@ -142,6 +142,7 @@ export interface CommunityPost {
   handle: string;
   creatorName: string;
   photo?: string; // maker avatar, for cards + profile header
+  bio?: string; // maker bio, surfaced on the profile header
   title: string;
   subtitle: string;
   templateId: string;

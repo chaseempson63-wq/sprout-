@@ -26,10 +26,12 @@ export default function CreatorProfile() {
   const params = useParams();
   const raw = params?.handle;
   const handle = Array.isArray(raw) ? raw[0] : (raw ?? "");
-  const { ready, account, worksheets, following, followerCount, loadFollowerCount } = useResources();
+  const { ready, account, setAccount, worksheets, following, followerCount, loadFollowerCount } = useResources();
   const [posts, setPosts] = useState<CommunityPost[]>([]);
   const [off, setOff] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [editingBio, setEditingBio] = useState(false);
+  const [draftBio, setDraftBio] = useState("");
 
   const isMe = account?.handle === handle;
 
@@ -80,6 +82,7 @@ export default function CreatorProfile() {
 
   const displayName = isMe ? (account?.displayName ?? handle) : (posts[0]?.creatorName ?? sampleMatch?.creatorName ?? handle);
   const photo = isMe ? account?.photo : posts[0]?.photo;
+  const bioText = isMe ? (account?.bio ?? "") : (posts[0]?.bio ?? "");
 
   if (!ready || loading) return <div className="text-sprout-cream/60 py-20 text-center text-sm">Loading…</div>;
 
@@ -108,6 +111,46 @@ export default function CreatorProfile() {
         <p className="mt-4 text-sm font-medium text-[#2E5A35]">
           {followerCount(handle)} {followerCount(handle) === 1 ? "follower" : "followers"} · {cards.length} published {cards.length === 1 ? "worksheet" : "worksheets"}
         </p>
+
+        {/* Bio — anyone can read it; the owner can edit it inline. Creators can
+            use it to point people to their own work (tutoring, etc). */}
+        {bioText && !editingBio && (
+          <p className="mt-3 text-sm leading-relaxed whitespace-pre-wrap text-[#1B3722]/75">{bioText}</p>
+        )}
+        {isMe && !editingBio && (
+          <button
+            type="button"
+            onClick={() => { setDraftBio(account?.bio ?? ""); setEditingBio(true); }}
+            className="mt-2 text-xs font-semibold text-[#2E5A35] hover:underline"
+          >
+            {account?.bio ? "Edit bio" : "Add a bio"}
+          </button>
+        )}
+        {isMe && editingBio && (
+          <div className="mt-3">
+            <textarea
+              value={draftBio}
+              onChange={(e) => setDraftBio(e.target.value.slice(0, 280))}
+              rows={3}
+              autoFocus
+              placeholder="A short bio. What you do, what you offer, how to reach you."
+              className="w-full resize-none rounded-lg border border-black/10 bg-white px-3 py-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]"
+            />
+            <div className="mt-2 flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => { if (account) setAccount({ ...account, bio: draftBio.trim() || undefined }); setEditingBio(false); }}
+                className="rounded-full bg-[#2E5A35] px-4 py-1.5 text-xs font-bold text-white"
+              >
+                Save
+              </button>
+              <button type="button" onClick={() => setEditingBio(false)} className="rounded-full px-3 py-1.5 text-xs font-semibold text-[#1B3722]/60">
+                Cancel
+              </button>
+              <span className="ml-auto text-[11px] text-[#1B3722]/40">{draftBio.length}/280</span>
+            </div>
+          </div>
+        )}
         {isMe && cards.length === 0 && (
           <p className="mt-2 text-sm text-[#1B3722]/60">
             You have not published anything yet. Build a worksheet from scratch, then hit Publish to share it here.

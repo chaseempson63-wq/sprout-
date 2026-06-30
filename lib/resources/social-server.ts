@@ -148,6 +148,7 @@ export function coerceWorksheet(input: unknown): Worksheet | null {
 
 interface MakerEmbed {
   photo: string | null;
+  bio?: string | null;
 }
 interface PostRow {
   id: string;
@@ -198,6 +199,7 @@ export function mapPost(r: PostRow): CommunityPost {
     handle: r.handle,
     creatorName: r.creator_name,
     photo: m?.photo ?? undefined,
+    bio: m?.bio ?? undefined,
     title: r.title,
     subtitle: r.subtitle ?? "",
     templateId: r.template_id,

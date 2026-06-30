@@ -130,6 +130,12 @@ export function toggleVote(
   return postJSON(`/api/resources/vote`, { maker, targetType, targetId }, { voted: false, upvotes: 0, disabled: true });
 }
 
+// ── Profile ──
+
+export function saveProfile(maker: MakerRef): Promise<{ ok: boolean }> {
+  return postJSON(`/api/resources/profile`, { maker }, { ok: false });
+}
+
 // ── Follows ──
 
 export function getFollowInfo(

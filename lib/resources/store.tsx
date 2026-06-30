@@ -7,7 +7,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { capName, newId } from "./util";
-import { getFollowInfo, makerWire, toggleFollowServer } from "./social";
+import { getFollowInfo, makerWire, saveProfile, toggleFollowServer } from "./social";
 import type { ChildProfile, CreatorProfile, LearningMoment, SavedWorksheet, Worksheet } from "./types";
 
 const CHILDREN_KEY = "sprout.resources.children.v2";
@@ -126,8 +126,13 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   }, [followerCounts, ready]);
 
   const setAccount = useCallback(
-    (profile: CreatorProfile) =>
-      setAccountState({ ...profile, id: profile.id || newId(), displayName: capName(profile.displayName) || profile.displayName }),
+    (profile: CreatorProfile) => {
+      const next = { ...profile, id: profile.id || newId(), displayName: capName(profile.displayName) || profile.displayName };
+      setAccountState(next);
+      // Push name / photo / bio to the shared maker row so it shows on the
+      // public profile straight away (not only after the next social write).
+      void saveProfile(makerWire(next));
+    },
     [],
   );
 
