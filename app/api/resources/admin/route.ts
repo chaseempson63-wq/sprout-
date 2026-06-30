@@ -9,7 +9,7 @@
 // while the kill switch is OFF, to turn it back on). It requires the env vars.
 
 import { adminOk, isUuid, serverSupabase, socialConfigured } from "@/lib/resources/social-server";
-import { SEED_MAKERS, POST_SPECS, buildThreads, postMeta, seedMakerIds, uid, SEED_VERSION } from "@/lib/resources/seed-data";
+import { SEED_MAKERS, POST_SPECS, buildFollows, buildThreads, postMeta, seedMakerIds, uid, SEED_VERSION } from "@/lib/resources/seed-data";
 import { getTemplate, topicForTemplate } from "@/lib/resources/catalog";
 import { aiWorksheet, dedupeWorksheet, templateWorksheet } from "@/lib/resources/generate";
 import { hasIllustration } from "@/lib/resources/illustrations";
@@ -120,6 +120,7 @@ export async function POST(request: Request) {
       ["threads", () => ins("resource_threads", threadRows)],
       ["comments", () => ins("resource_comments", topComments.map(commentRow))],
       ["replies", () => ins("resource_comments", replies.map(commentRow))],
+      ["follows", () => ins("resource_follows", buildFollows())],
     ];
     const result: Record<string, number> = {};
     for (const [name, run] of steps) {

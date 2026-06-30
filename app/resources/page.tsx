@@ -14,6 +14,7 @@ import { DescribeIcon, ShareSheetIcon, SproutStepIcon } from "./_components/Step
 import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { listCommunity } from "@/lib/resources/social";
+import { printWorksheet } from "@/lib/resources/print-fit";
 import { colorClasses, useResources } from "@/lib/resources/store";
 import { capName, cardTint, firstImageKey, timeAgo } from "@/lib/resources/util";
 import { GlassButton } from "@/components/ui/glass";
@@ -466,7 +467,7 @@ function Viewer({
   return (
     <div className="fixed inset-0 z-40 overflow-y-auto bg-[#0F1A12]/80 backdrop-blur-sm">
       <div className="no-print sticky top-0 flex items-center justify-end gap-2 p-4">
-        <GlassButton onClick={() => window.print()} className="h-10 px-4 text-sm">
+        <GlassButton onClick={() => printWorksheet()} className="h-10 px-4 text-sm">
           Print / PDF
         </GlassButton>
         {onPublish && (

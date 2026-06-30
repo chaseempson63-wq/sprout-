@@ -26,7 +26,7 @@ export default function CreatorProfile() {
   const params = useParams();
   const raw = params?.handle;
   const handle = Array.isArray(raw) ? raw[0] : (raw ?? "");
-  const { ready, account, worksheets, following, followerCount } = useResources();
+  const { ready, account, worksheets, following, followerCount, loadFollowerCount } = useResources();
   const [posts, setPosts] = useState<CommunityPost[]>([]);
   const [off, setOff] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -36,6 +36,7 @@ export default function CreatorProfile() {
   useEffect(() => {
     if (!ready) return;
     let live = true;
+    loadFollowerCount(handle);
     listCommunity({ creator: handle }).then((res) => {
       if (!live) return;
       setPosts(res.posts);
@@ -45,7 +46,7 @@ export default function CreatorProfile() {
     return () => {
       live = false;
     };
-  }, [ready, handle]);
+  }, [ready, handle, loadFollowerCount]);
 
   // Offline fallback: this maker's own local published sheets + matching samples.
   const sampleMatch = COMMUNITY_SAMPLES.find((s) => s.creatorHandle === handle);

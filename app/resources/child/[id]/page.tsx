@@ -7,6 +7,7 @@ import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { DocumentNudge } from "../../_components/DocumentNudge";
 import { topicForTemplate } from "@/lib/resources/catalog";
 import { AVATAR_COLORS, colorClasses, useResources } from "@/lib/resources/store";
+import { printWorksheet } from "@/lib/resources/print-fit";
 import { capName, firstImageKey } from "@/lib/resources/util";
 import { GlassButton, GlassLink } from "@/components/ui/glass";
 import type { SavedWorksheet } from "@/lib/resources/types";
@@ -286,7 +287,7 @@ export default function ChildProfile() {
       {viewing && (
         <div className="fixed inset-0 z-40 overflow-y-auto bg-[#0F1A12]/80 backdrop-blur-sm">
           <div className="no-print sticky top-0 flex items-center justify-end gap-2 p-4">
-            <GlassButton onClick={() => window.print()} className="h-10 px-4 text-sm">
+            <GlassButton onClick={() => printWorksheet()} className="h-10 px-4 text-sm">
               Print / PDF
             </GlassButton>
             <GlassButton onClick={() => setViewing(null)} className="h-10 px-4 text-sm">

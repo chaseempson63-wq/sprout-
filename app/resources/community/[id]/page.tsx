@@ -17,6 +17,7 @@ import { ReportControl } from "../../_components/ReportControl";
 import { HideControl } from "../../_components/HideControl";
 import { ThreadedComments } from "../../_components/ThreadedComments";
 import { getCommunityPost } from "@/lib/resources/social";
+import { printWorksheet } from "@/lib/resources/print-fit";
 import { useResources } from "@/lib/resources/store";
 import { capName, timeAgo } from "@/lib/resources/util";
 import { GlassButton, GlassLink } from "@/components/ui/glass";
@@ -84,7 +85,7 @@ export default function CommunityPostPage() {
             <div className="flex flex-wrap items-center gap-2">
               <UpvoteButton targetType="post" targetId={post.id} count={post.upvotes} voted={votedIds.includes(post.id)} />
               <AddToKid worksheet={post.worksheet} source="ai" className="h-8 px-3 text-xs" />
-              <GlassButton onClick={() => window.print()} className="h-8 gap-1 px-3 text-xs">
+              <GlassButton onClick={() => printWorksheet()} className="h-8 gap-1 px-3 text-xs">
                 <Download className="size-3.5" /> PDF
               </GlassButton>
               <ReportControl targetType="post" targetId={post.id} />
@@ -96,7 +97,7 @@ export default function CommunityPostPage() {
 
           <div className="no-print mt-5 flex justify-center">
             <button
-              onClick={() => window.print()}
+              onClick={() => printWorksheet()}
               className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#2E5A35] px-6 text-base font-bold text-white shadow-[0_12px_28px_-10px_rgba(46,90,53,0.7)] transition hover:-translate-y-0.5 hover:bg-[#346a3f] active:scale-95"
             >
               <Download className="size-5" /> Download PDF

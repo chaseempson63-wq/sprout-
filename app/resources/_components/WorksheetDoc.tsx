@@ -13,6 +13,7 @@ import type { Worksheet, WorksheetBlock } from "@/lib/resources/types";
 // page. Print-only; on-screen layout and content are untouched.
 const PRINT_RULES = `@page { size: A4; margin: 12mm; }
 @media print {
+  .print-area { zoom: var(--ws-print-scale, 1); }
   .worksheet-lines > * + * { margin-top: 18px !important; }
   .worksheet-blocks > * { break-inside: avoid; }
   .worksheet-footer { break-inside: avoid; margin-top: 16px !important; padding-top: 8px !important; }

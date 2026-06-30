@@ -138,6 +138,19 @@ create table if not exists public.resource_votes (
 );
 create index if not exists resource_votes_target_idx on public.resource_votes (target_type, target_id);
 
+-- follows: one maker follows a creator (by handle). Follower counts are read
+-- as count(*) per target_handle; idempotent via the unique constraint.
+create table if not exists public.resource_follows (
+  id            uuid        primary key default gen_random_uuid(),
+  follower_id   uuid        not null references public.resource_makers(id) on delete cascade,
+  target_handle text        not null,
+  created_at    timestamptz not null default now(),
+  constraint resource_follows_unique unique (follower_id, target_handle)
+);
+create index if not exists resource_follows_target_idx   on public.resource_follows (target_handle);
+create index if not exists resource_follows_follower_idx on public.resource_follows (follower_id);
+alter table public.resource_follows enable row level security;
+
 -- reports: a moderation signal row (a queue read directly in Supabase).
 create table if not exists public.resource_reports (
   id          uuid        primary key default gen_random_uuid(),

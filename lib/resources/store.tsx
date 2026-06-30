@@ -7,6 +7,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { capName, newId } from "./util";
+import { getFollowInfo, makerWire, toggleFollowServer } from "./social";
 import type { ChildProfile, CreatorProfile, LearningMoment, SavedWorksheet, Worksheet } from "./types";
 
 const CHILDREN_KEY = "sprout.resources.children.v2";
@@ -74,6 +75,7 @@ interface ResourcesContextValue {
   isFollowing: (handle: string) => boolean;
   toggleFollow: (maker: FollowedMaker) => void;
   followerCount: (handle: string) => number;
+  loadFollowerCount: (handle: string) => void;
 }
 
 const ResourcesContext = createContext<ResourcesContextValue | null>(null);
@@ -214,13 +216,25 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   const toggleFollow = useCallback((maker: FollowedMaker) => {
     setFollowing((prev) => {
       const has = prev.some((f) => f.handle === maker.handle);
-      // Follower count moves like an upvote: +1 on follow, -1 on unfollow, never
-      // below zero. Every account starts at zero; no backend, no seeding.
+      // Optimistic local move: +1 on follow, -1 on unfollow, never below zero.
       setFollowerCounts((fc) => ({ ...fc, [maker.handle]: Math.max(0, (fc[maker.handle] ?? 0) + (has ? -1 : 1)) }));
       return has ? prev.filter((f) => f.handle !== maker.handle) : [...prev, maker];
     });
-  }, []);
+    // Persist to the shared backend so the count is real + aggregate across
+    // everyone; reconcile the displayed count with the authoritative value.
+    if (account?.id && account.handle) {
+      void toggleFollowServer(makerWire(account), maker.handle).then((res) => {
+        if (!res.disabled) setFollowerCounts((fc) => ({ ...fc, [maker.handle]: res.count }));
+      });
+    }
+  }, [account]);
   const followerCount = useCallback((handle: string) => followerCounts[handle] ?? 0, [followerCounts]);
+  // Pull the real, aggregate follower count for a handle from the server.
+  const loadFollowerCount = useCallback((handle: string) => {
+    void getFollowInfo(handle, account?.id).then((res) => {
+      if (!res.disabled) setFollowerCounts((fc) => ({ ...fc, [handle]: res.count }));
+    });
+  }, [account]);
 
   const value = useMemo<ResourcesContextValue>(
     () => ({
@@ -248,11 +262,12 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
       isFollowing,
       toggleFollow,
       followerCount,
+      loadFollowerCount,
     }),
     [
       ready, account, kids, worksheets, moments, setAccount, addChild, updateChild, removeChild, getChild,
       addMoment, removeMoment, momentsFor, saveWorksheet, toggleFavorite, togglePublish, removeWorksheet,
-      toggleLike, likeCount, likedByMe, following, isFollowing, toggleFollow, followerCount,
+      toggleLike, likeCount, likedByMe, following, isFollowing, toggleFollow, followerCount, loadFollowerCount,
     ],
   );
 

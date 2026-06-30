@@ -130,6 +130,24 @@ export function toggleVote(
   return postJSON(`/api/resources/vote`, { maker, targetType, targetId }, { voted: false, upvotes: 0, disabled: true });
 }
 
+// ── Follows ──
+
+export function getFollowInfo(
+  handle: string,
+  me?: string,
+): Promise<{ count: number; following: boolean; disabled?: boolean }> {
+  const p = new URLSearchParams({ handle });
+  if (me) p.set("follower", me);
+  return getJSON(`/api/resources/follow?${p.toString()}`, { count: 0, following: false, disabled: true });
+}
+
+export function toggleFollowServer(
+  maker: MakerRef,
+  targetHandle: string,
+): Promise<{ following: boolean; count: number; disabled?: boolean }> {
+  return postJSON(`/api/resources/follow`, { maker, targetHandle }, { following: false, count: 0, disabled: true });
+}
+
 // ── Reports ──
 
 export function reportTarget(

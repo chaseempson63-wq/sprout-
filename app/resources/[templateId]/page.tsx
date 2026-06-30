@@ -10,6 +10,7 @@ import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getTemplate } from "@/lib/resources/catalog";
 import { INPUT_VOCABULARY, presetPrompt } from "@/lib/resources/intent";
 import { makerWire, publishWorksheet } from "@/lib/resources/social";
+import { printWorksheet } from "@/lib/resources/print-fit";
 import { useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
 import { GlassButton, GlassLink, GlassPanel } from "@/components/ui/glass";
@@ -238,7 +239,7 @@ export default function Builder() {
           {isCustom && (
             <ActionItem icon={Globe} label={publishedIdx === idx ? "Published" : "Publish"} onClick={() => void publishCustom()} disabled={!worksheet || publishedIdx === idx} />
           )}
-          <ActionItem icon={Download} label="PDF" onClick={() => window.print()} disabled={!worksheet} />
+          <ActionItem icon={Download} label="PDF" onClick={() => printWorksheet()} disabled={!worksheet} />
         </div>
       </div>
 
@@ -394,7 +395,7 @@ export default function Builder() {
                     <Globe className="size-5" /> {publishedIdx === idx ? "Published" : "Publish"}
                   </button>
                 )}
-                <button onClick={() => window.print()} className={greenBtn}>
+                <button onClick={() => printWorksheet()} className={greenBtn}>
                   <Download className="size-5" /> Download PDF
                 </button>
               </div>

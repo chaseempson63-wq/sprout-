@@ -395,4 +395,25 @@ export function postMeta(spec: PostSpec): { id: string; maker_id: string; handle
   };
 }
 
+// Seed follows among the makers so each creator has a plausible, varied
+// follower count (4-18) and the community reads as established. Deterministic
+// ids → idempotent.
+export function buildFollows(): { id: string; follower_id: string; target_handle: string }[] {
+  const out: { id: string; follower_id: string; target_handle: string }[] = [];
+  for (const target of SEED_MAKERS) {
+    const want = 4 + num(`fol:${target.slug}`, 15);
+    const others = SEED_MAKERS.filter((m) => m.slug !== target.slug);
+    const start = num(`folidx:${target.slug}`, others.length);
+    for (let i = 0; i < want && i < others.length; i++) {
+      const f = others[(start + i) % others.length];
+      out.push({
+        id: uid(`follow:${f.slug}:${target.slug}`),
+        follower_id: uid(`maker:${f.slug}`),
+        target_handle: target.handle,
+      });
+    }
+  }
+  return out;
+}
+
 export const SEED_VERSION = "2026-06-30.2";
