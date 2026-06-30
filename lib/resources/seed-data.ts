@@ -2,29 +2,25 @@
 //
 // A one-time curated seed so the community + forum read as a lived-in space
 // from day one instead of a ghost town (the cold-start problem every
-// marketplace has). Inserted via the token-gated `seed` action on
-// /api/resources/admin. Idempotent: every row has a deterministic UUID
-// derived from a stable slug, so re-running conflict-ignores instead of
-// duplicating.
+// marketplace has). Inserted via the token-gated admin actions:
+//   - `seed`   → makers + forum threads + comments (text, hand-authored)
+//   - `reseed` → community worksheet POSTS, generated through the REAL engine
+//                (aiWorksheet / Venice) on prod, batched, with the themed
+//                illustration forced on. This is what makes the seeded sheets
+//                indistinguishable from a sheet a real user builds.
 //
-// Content stance: this is genuine homeschool resource-sharing and discussion
-// (worksheets, themes, questions), NOT fabricated testimonials about Sprout.
-// It seeds an active community, which is normal cold-start practice.
-//
-// Cost: zero AI calls. Worksheets are hand-authored cores expanded by theme;
-// threads + comments are hand-authored in homeschool-parent voice.
+// Content stance: genuine homeschool resource-sharing and discussion, NOT
+// fabricated testimonials about Sprout.
 
 import { createHash } from "node:crypto";
-import type { Worksheet, WorksheetBlock } from "./types";
 
 // Deterministic UUID from a slug (stable across runs → idempotent upserts).
-// Shaped to satisfy the uuid format check; the DB only needs a valid uuid.
 export function uid(slug: string): string {
   const h = createHash("sha1").update(`sprout-seed:${slug}`).digest("hex");
   return `${h.slice(0, 8)}-${h.slice(8, 12)}-4${h.slice(13, 16)}-8${h.slice(17, 20)}-${h.slice(20, 32)}`;
 }
 
-// Deterministic small integer from a slug (for plausible, stable upvote counts).
+// Deterministic small integer from a slug (for plausible, stable upvotes).
 function num(slug: string, mod: number, min = 0): number {
   const h = createHash("sha1").update(`n:${slug}`).digest("hex");
   return min + (parseInt(h.slice(0, 6), 16) % mod);
@@ -68,219 +64,99 @@ export const SEED_MAKERS: SeedMaker[] = [
 
 const makerBySlug = (slug: string) => SEED_MAKERS.find((m) => m.slug === slug)!;
 
-// ── Worksheet cores ──────────────────────────────────────────────────
-// Each is a complete, printable worksheet (same shape the generator emits).
-// `variants` re-themes a cosmetic core (maths/counting/trace) into extra
-// posts so the feed has volume without obvious duplicates dominating.
+export const seedMakerIds = (): string[] => SEED_MAKERS.map((m) => uid(`maker:${m.slug}`));
 
-interface SeedCore {
+// ── Post specs ───────────────────────────────────────────────────────
+// Each spec drives the REAL generator on prod: aiWorksheet(getTemplate(
+// templateId), age, [{role:"user", content: instruction}]) → a genuine
+// worksheet. `imageKey` is a verified key from lib/resources/illustrations
+// and is force-injected near the top so the themed sheet always shows its
+// picture (the dino sheet shows a dinosaur), with `notes` printed beside it.
+
+export interface PostSpec {
   slug: string;
   maker: string;
-  topic: string;
-  templateId: string;
-  templateLabel: string;
-  worksheet: Worksheet;
-  variants?: { theme: string; title: string }[]; // cosmetic re-themes
+  templateId: string; // a REAL catalog id (lib/resources/catalog)
+  age: number;
+  theme: string;
+  instruction: string; // the user message that drives generation
+  imageKey: string; // a real illustration key (lib/resources/illustrations)
+  notes: string[]; // 3-4 short fun facts printed beside the picture
 }
 
-const w = (
-  title: string,
-  subtitle: string,
-  templateId: string,
-  templateLabel: string,
-  age: number,
-  theme: string,
-  blocks: WorksheetBlock[],
-): Worksheet => ({ title, subtitle, blocks, meta: { templateId, templateLabel, age, theme } });
-
-const CORES: SeedCore[] = [
-  {
-    slug: "dino-addition", maker: "danielle", topic: "addition", templateId: "addition", templateLabel: "Addition",
-    worksheet: w("Dinosaur Egg Addition", "Age 6 · dinosaurs", "addition", "Addition", 6, "dinosaurs", [
-      { kind: "instructions", prompt: "Help each dino count its eggs. Solve every problem." },
-      { kind: "math", prompt: "Write your answer in the box.", items: ["3 + 4 =", "5 + 2 =", "6 + 3 =", "4 + 4 =", "7 + 2 =", "1 + 8 ="], answers: ["7", "7", "9", "8", "9", "9"] },
-      { kind: "count", prompt: "Count the eggs in each nest.", emoji: "🥚", items: ["4", "6", "3"], answers: ["4", "6", "3"] },
-    ]),
-    variants: [
-      { theme: "space", title: "Rocket Addition" },
-      { theme: "farm animals", title: "Barnyard Addition" },
-      { theme: "trucks", title: "Big Rig Addition" },
-      { theme: "bugs", title: "Busy Bug Addition" },
-    ],
-  },
-  {
-    slug: "ocean-counting", maker: "imogen", topic: "counting", templateId: "counting", templateLabel: "Counting & Numbers",
-    worksheet: w("Under the Sea Counting", "Age 4 · ocean", "counting", "Counting & Numbers", 4, "ocean", [
-      { kind: "instructions", prompt: "Count the sea friends and finish each line." },
-      { kind: "count", prompt: "How many in each row?", emoji: "🐠", items: ["3", "5", "2"], answers: ["3", "5", "2"] },
-      { kind: "missing-numbers", prompt: "Fill in the missing numbers.", items: ["1, 2, ____, 4, ____", "2, ____, 6, ____, 10"], answers: ["3, 5", "4, 8"] },
-    ]),
-    variants: [
-      { theme: "jungle", title: "Jungle Friends Counting" },
-      { theme: "outer space", title: "Counting Stars" },
-      { theme: "the garden", title: "Garden Bugs Counting" },
-    ],
-  },
-  {
-    slug: "space-reading", maker: "whitney", topic: "reading", templateId: "reading", templateLabel: "Reading Comprehension",
-    worksheet: w("A Trip to Space", "Age 8 · space", "reading", "Reading Comprehension", 8, "space", [
-      { kind: "passage", prompt: "Read the story, then answer the questions.", text: "Nova zipped past the moon in her little rocket. She wanted to find the brightest star in the sky. Along the way she counted seven planets, waved at a comet, and ate her lunch upside down. The best part of the trip was still ahead of her." },
-      { kind: "short-answer", prompt: "Answer in a full sentence.", items: ["Who is the story about?", "What did Nova want to find?", "How many planets did she count?"], rows: 2, answers: ["Nova", "the brightest star", "seven"] },
-      { kind: "fact", text: "The Sun is so big that about one million Earths could fit inside it." },
-    ]),
-  },
-  {
-    slug: "farm-trace", maker: "kelsey", topic: "handwriting", templateId: "tracing", templateLabel: "Letter Tracing",
-    worksheet: w("Farm Animal Tracing", "Age 5 · farm animals", "tracing", "Letter Tracing", 5, "farm animals", [
-      { kind: "instructions", prompt: "Trace each animal word. Say it out loud as you go." },
-      { kind: "trace", text: "cow" }, { kind: "trace", text: "pig" }, { kind: "trace", text: "hen" }, { kind: "trace", text: "duck" },
-      { kind: "handwriting", prompt: "Now write your favourite animal.", rows: 2 },
-    ]),
-    variants: [
-      { theme: "ocean", title: "Sea Animal Tracing" },
-      { theme: "dinosaurs", title: "Dino Word Tracing" },
-      { theme: "the zoo", title: "Zoo Animal Tracing" },
-    ],
-  },
-  {
-    slug: "bug-subtraction", maker: "court", topic: "subtraction", templateId: "subtraction", templateLabel: "Subtraction",
-    worksheet: w("Buggy Take-Away", "Age 7 · bugs", "subtraction", "Subtraction", 7, "bugs", [
-      { kind: "instructions", prompt: "Some bugs flew away. How many are left?" },
-      { kind: "math", prompt: "Solve each one.", items: ["9 - 4 =", "8 - 3 =", "10 - 6 =", "7 - 5 =", "6 - 2 =", "10 - 8 ="], answers: ["5", "5", "4", "2", "4", "2"] },
-    ]),
-    variants: [
-      { theme: "lollies", title: "Lolly Jar Take-Away" },
-      { theme: "balloons", title: "Pop! Subtraction" },
-      { theme: "fish", title: "Fishy Subtraction" },
-    ],
-  },
-  {
-    slug: "weather-fillblank", maker: "fiona", topic: "vocabulary", templateId: "fill-blank", templateLabel: "Fill in the Blank",
-    worksheet: w("Weather Words", "Age 7 · weather", "fill-blank", "Fill in the Blank", 7, "weather", [
-      { kind: "word-bank", prompt: "Use these words to fill the gaps.", wordBank: ["rain", "wind", "sunny", "cloudy", "storm"] },
-      { kind: "fill-blank", prompt: "Finish each sentence.", items: ["We need an umbrella when it starts to ____.", "On a ____ day the sky is blue.", "The ____ blew my hat off.", "A loud ____ can have thunder and lightning."], answers: ["rain", "sunny", "wind", "storm"] },
-    ]),
-  },
-  {
-    slug: "truck-columnmath", maker: "renee", topic: "addition", templateId: "column-math", templateLabel: "Column Addition",
-    worksheet: w("Truck Yard Column Addition", "Age 8 · trucks", "column-math", "Column Addition", 8, "trucks", [
-      { kind: "instructions", prompt: "Stack and add. Carry when you need to." },
-      { kind: "column-math", prompt: "Add each pair.", items: ["24 + 18", "37 + 26", "45 + 39", "58 + 27", "63 + 19", "46 + 48"], answers: ["42", "63", "84", "85", "82", "94"] },
-    ]),
-    variants: [
-      { theme: "rockets", title: "Rocket Fuel Column Addition" },
-      { theme: "sports", title: "Scoreboard Column Addition" },
-    ],
-  },
-  {
-    slug: "shapes-matching", maker: "bel", topic: "shapes", templateId: "matching", templateLabel: "Matching",
-    worksheet: w("Match the Shapes", "Age 5 · shapes", "matching", "Matching", 5, "shapes", [
-      { kind: "instructions", prompt: "Draw a line to match each shape to its name." },
-      { kind: "matching", prompt: "Match them up.", pairs: [{ left: "▲", right: "triangle" }, { left: "●", right: "circle" }, { left: "■", right: "square" }, { left: "★", right: "star" }] },
-    ]),
-    variants: [
-      { theme: "colors", title: "Match the Colours" },
-      { theme: "animals", title: "Match Animal to Home" },
-    ],
-  },
-  {
-    slug: "skip-counting", maker: "danielle", topic: "counting", templateId: "missing-numbers", templateLabel: "Missing Numbers",
-    worksheet: w("Counting by 2s and 5s", "Age 6 · numbers", "missing-numbers", "Missing Numbers", 6, "numbers", [
-      { kind: "instructions", prompt: "Fill the gaps. Count carefully." },
-      { kind: "missing-numbers", prompt: "Count by 2s.", items: ["2, 4, ____, 8, ____, 12", "10, ____, 14, ____, 18"], answers: ["6, 10", "12, 16"] },
-      { kind: "missing-numbers", prompt: "Count by 5s.", items: ["5, 10, ____, 20, ____", "25, ____, 35, ____, 45"], answers: ["15, 25", "30, 40"] },
-    ]),
-  },
-  {
-    slug: "body-mc", maker: "priya", topic: "science", templateId: "multiple-choice", templateLabel: "Multiple Choice",
-    worksheet: w("The Human Body", "Age 9 · science", "multiple-choice", "Multiple Choice", 9, "the human body", [
-      { kind: "multiple-choice", prompt: "Circle the best answer.", items: ["Which part pumps blood? a) lungs b) heart c) brain", "What do your lungs help you do? a) think b) breathe c) run", "How many bones does an adult have? a) about 50 b) about 100 c) about 206"], answers: ["b) heart", "b) breathe", "c) about 206"] },
-      { kind: "fact", text: "Your heart beats around 100,000 times every single day." },
-    ]),
-  },
-  {
-    slug: "volcano-passage", maker: "steph", topic: "science", templateId: "reading", templateLabel: "Reading Comprehension",
-    worksheet: w("How Volcanoes Work", "Age 9 · earth science", "reading", "Reading Comprehension", 9, "volcanoes", [
-      { kind: "passage", prompt: "Read about volcanoes.", text: "Deep under the ground, rock gets so hot it melts into a thick liquid called magma. The magma rises until it bursts out of an opening in the Earth. Once it is out, we call it lava. As the lava cools, it hardens into new rock. Over many years, that rock can build up into a mountain." },
-      { kind: "short-answer", prompt: "Answer in full sentences.", items: ["What is melted rock under the ground called?", "What do we call magma once it is out?", "What happens as lava cools?"], rows: 2, answers: ["magma", "lava", "it hardens into new rock"] },
-    ]),
-  },
-  {
-    slug: "rainforest-comp", maker: "tabitha", topic: "reading", templateId: "reading", templateLabel: "Reading Comprehension",
-    worksheet: w("Life in the Rainforest", "Age 10 · geography", "reading", "Reading Comprehension", 10, "rainforest", [
-      { kind: "passage", prompt: "Read, then answer.", text: "Rainforests are warm and wet all year round. They are home to more kinds of plants and animals than anywhere else on Earth. The tallest trees form a roof called the canopy. Far below, the forest floor is dark and quiet, because very little sunlight reaches it." },
-      { kind: "short-answer", prompt: "Use full sentences.", items: ["What is the weather like in a rainforest?", "What is the canopy?", "Why is the forest floor dark?"], rows: 2, answers: ["warm and wet all year", "the roof of tall trees", "little sunlight reaches it"] },
-    ]),
-  },
-  {
-    slug: "sports-times", maker: "lucy", topic: "multiplication", templateId: "multiplication", templateLabel: "Multiplication",
-    worksheet: w("Game Day Times Tables", "Age 9 · sports", "multiplication", "Multiplication", 9, "sports", [
-      { kind: "instructions", prompt: "Each team scores in groups. Multiply to find the total." },
-      { kind: "math", prompt: "Solve each one.", items: ["3 × 4 =", "5 × 6 =", "7 × 3 =", "8 × 4 =", "6 × 6 =", "9 × 5 ="], answers: ["12", "30", "21", "32", "36", "45"] },
-    ]),
-    variants: [
-      { theme: "baking", title: "Bakery Times Tables" },
-      { theme: "trucks", title: "Delivery Times Tables" },
-    ],
-  },
-  {
-    slug: "number-trace", maker: "imogen", topic: "handwriting", templateId: "tracing", templateLabel: "Number Tracing",
-    worksheet: w("Trace Numbers 1 to 10", "Age 4 · numbers", "tracing", "Number Tracing", 4, "numbers", [
-      { kind: "instructions", prompt: "Trace each number. Count out loud." },
-      { kind: "trace", text: "1 2 3 4 5" }, { kind: "trace", text: "6 7 8 9 10" },
-      { kind: "count", prompt: "Count and write how many.", emoji: "⭐", items: ["3", "5"], answers: ["3", "5"] },
-    ]),
-  },
-  {
-    slug: "grammar-nouns", maker: "becca", topic: "grammar", templateId: "fill-blank", templateLabel: "Grammar",
-    worksheet: w("Nouns and Verbs", "Age 8 · grammar", "fill-blank", "Grammar", 8, "pets", [
-      { kind: "instructions", prompt: "A noun is a thing. A verb is an action." },
-      { kind: "fill-blank", prompt: "Underline the noun, circle the verb. Then write the missing word.", items: ["The dog ____ across the yard.", "My cat ____ on the warm windowsill.", "The bird ____ a happy song."], answers: ["ran", "sleeps", "sings"] },
-    ]),
-  },
-  {
-    slug: "money-count", maker: "heather", topic: "money", templateId: "counting", templateLabel: "Money & Counting",
-    worksheet: w("At the Market", "Age 8 · money", "counting", "Money & Counting", 8, "the market", [
-      { kind: "instructions", prompt: "Add up the coins to find each price." },
-      { kind: "math", prompt: "How much altogether?", items: ["10c + 20c + 5c =", "50c + 20c + 20c =", "$1 + 50c + 10c =", "20c + 20c + 20c ="], answers: ["35c", "90c", "$1.60", "60c"] },
-    ]),
-  },
-  {
-    slug: "kindness-copywork", maker: "ruth", topic: "handwriting", templateId: "handwriting", templateLabel: "Handwriting",
-    worksheet: w("Kind Words Copywork", "Age 7 · handwriting", "handwriting", "Handwriting", 7, "kindness", [
-      { kind: "instructions", prompt: "Copy each sentence in your neatest writing." },
-      { kind: "handwriting", prompt: "Please and thank you go a long way.", rows: 2 },
-      { kind: "handwriting", prompt: "I can be a good friend today.", rows: 2 },
-    ]),
-  },
-  {
-    slug: "pizza-division", maker: "kayla", topic: "division", templateId: "division", templateLabel: "Division",
-    worksheet: w("Pizza Party Division", "Age 10 · division", "division", "Division", 10, "pizza", [
-      { kind: "instructions", prompt: "Share the slices evenly. How many does each person get?" },
-      { kind: "math", prompt: "Solve each one.", items: ["12 ÷ 4 =", "20 ÷ 5 =", "18 ÷ 3 =", "24 ÷ 6 =", "15 ÷ 5 =", "16 ÷ 4 ="], answers: ["3", "4", "6", "4", "3", "4"] },
-    ]),
-    variants: [
-      { theme: "cookies", title: "Cookie Jar Division" },
-      { theme: "sports cards", title: "Card Swap Division" },
-    ],
-  },
-  {
-    slug: "egypt-mc", maker: "steph", topic: "history", templateId: "multiple-choice", templateLabel: "Multiple Choice",
-    worksheet: w("Ancient Egypt", "Age 11 · history", "multiple-choice", "Multiple Choice", 11, "ancient egypt", [
-      { kind: "multiple-choice", prompt: "Circle the best answer.", items: ["The Egyptians built huge tombs called: a) castles b) pyramids c) temples", "They wrote using pictures called: a) letters b) numbers c) hieroglyphs", "The long river they lived beside was the: a) Amazon b) Nile c) Thames"], answers: ["b) pyramids", "c) hieroglyphs", "b) Nile"] },
-      { kind: "fact", text: "The Great Pyramid stood as the tallest building on Earth for over 3,800 years." },
-    ]),
-  },
-  {
-    slug: "butterfly-draw", maker: "manaia", topic: "science", templateId: "draw", templateLabel: "Draw & Label",
-    worksheet: w("Butterfly Life Cycle", "Age 6 · science", "draw", "Draw & Label", 6, "butterflies", [
-      { kind: "instructions", prompt: "Draw each stage of the butterfly's life in order." },
-      { kind: "draw", prompt: "1. The egg on a leaf", rows: 3 },
-      { kind: "draw", prompt: "2. The hungry caterpillar", rows: 3 },
-      { kind: "draw", prompt: "3. The chrysalis", rows: 3 },
-      { kind: "draw", prompt: "4. The butterfly", rows: 3 },
-    ]),
-  },
+export const POST_SPECS: PostSpec[] = [
+  { slug: "dino-addition", maker: "danielle", templateId: "addition", age: 6, theme: "dinosaurs", imageKey: "t-rex",
+    instruction: "Make an addition worksheet for a 6 year old, dinosaur theme. About 6 single-digit problems plus a short count-the-eggs section.",
+    notes: ["Some were taller than a house", "Lived millions of years ago", "T-rex had tiny arms"] },
+  { slug: "bug-subtraction", maker: "court", templateId: "subtraction", age: 7, theme: "bugs", imageKey: "bee",
+    instruction: "Make a subtraction worksheet for a 7 year old, friendly bug theme. Around 8 take-away problems within 20.",
+    notes: ["Bees visit hundreds of flowers a day", "They dance to give directions", "Honey never goes off"] },
+  { slug: "ocean-counting", maker: "imogen", templateId: "counting", age: 4, theme: "ocean", imageKey: "fish",
+    instruction: "Make a counting worksheet for a 4 year old, ocean animals. Count the sea creatures and fill in a short number line.",
+    notes: ["Fish breathe through gills", "Some fish change colour", "They swim in groups called schools"] },
+  { slug: "rocket-multiplication", maker: "lucy", templateId: "multiplication", age: 9, theme: "space rockets", imageKey: "rocket",
+    instruction: "Make a multiplication worksheet for a 9 year old, space rocket theme. About 8 times-table problems.",
+    notes: ["Rockets push down to fly up", "Space has no air", "Astronauts float in orbit"] },
+  { slug: "pizza-division", maker: "kayla", templateId: "division", age: 10, theme: "pizza", imageKey: "pizza",
+    instruction: "Make a division worksheet for a 10 year old, pizza-sharing theme. Around 8 problems about sharing slices evenly.",
+    notes: ["Sharing equally is division", "A whole splits into equal parts", "Pizza comes from Italy"] },
+  { slug: "cake-fractions", maker: "priya", templateId: "fractions", age: 9, theme: "baking", imageKey: "cake",
+    instruction: "Make a fractions worksheet for a 9 year old, baking and cake theme. Halves, quarters and thirds, about 6 questions.",
+    notes: ["Half means two equal parts", "A quarter is one of four", "Bakers measure carefully"] },
+  { slug: "volcano-reading", maker: "steph", templateId: "reading", age: 9, theme: "volcanoes", imageKey: "volcano",
+    instruction: "Make a reading comprehension worksheet for a 9 year old about how volcanoes work. A short passage then a few questions.",
+    notes: ["Magma is melted rock", "Lava cools into new rock", "Some volcanoes sleep for years"] },
+  { slug: "space-reading", maker: "whitney", templateId: "reading", age: 8, theme: "space", imageKey: "rocket",
+    instruction: "Make a reading comprehension worksheet for an 8 year old, a fun space-adventure passage with a few questions.",
+    notes: ["The Sun is a star", "Eight planets orbit it", "A comet has a glowing tail"] },
+  { slug: "rainforest-reading", maker: "tabitha", templateId: "reading", age: 10, theme: "rainforest", imageKey: "parrot",
+    instruction: "Make a reading comprehension worksheet for a 10 year old about life in the rainforest, passage plus questions.",
+    notes: ["Rainforests are warm and wet", "Home to millions of species", "The canopy is the leafy roof"] },
+  { slug: "butterfly-lifecycle", maker: "manaia", templateId: "life-cycle", age: 6, theme: "butterflies", imageKey: "butterfly-life-cycle",
+    instruction: "Make a life cycle worksheet for a 6 year old about the butterfly: order or label the four stages.",
+    notes: ["Egg, caterpillar, chrysalis, butterfly", "A caterpillar eats a lot", "Wings dry before the first flight"] },
+  { slug: "body-drawlabel", maker: "becca", templateId: "draw-label", age: 7, theme: "the human body", imageKey: "human-body",
+    instruction: "Make a draw-and-label worksheet for a 7 year old about the human body: label a few main parts.",
+    notes: ["The heart pumps blood", "Lungs help you breathe", "Bones keep you upright"] },
+  { slug: "farm-letter-trace", maker: "kelsey", templateId: "letter-tracing", age: 5, theme: "farm animals", imageKey: "pig",
+    instruction: "Make a letter tracing worksheet for a 5 year old, farm animal words to trace like cow, pig, hen and duck.",
+    notes: ["Pigs are very clever", "Cows have four stomachs", "Hens lay an egg most days"] },
+  { slug: "ocean-number-trace", maker: "imogen", templateId: "number-tracing", age: 4, theme: "ocean", imageKey: "whale",
+    instruction: "Make a number tracing worksheet for a 4 year old, numbers 1 to 10, ocean theme, with a small counting picture.",
+    notes: ["The blue whale is the biggest animal", "It sings to other whales", "It spouts water to breathe"] },
+  { slug: "bakery-money", maker: "heather", templateId: "money", age: 8, theme: "bakery", imageKey: "cake",
+    instruction: "Make a money worksheet for an 8 year old, adding coins to buy bakery treats. About 6 problems.",
+    notes: ["Coins add up to dollars", "Count the biggest coin first", "Change is what you get back"] },
+  { slug: "robot-shapes", maker: "bel", templateId: "shapes", age: 5, theme: "robots", imageKey: "robot",
+    instruction: "Make a shapes worksheet for a 5 year old, find and match the shapes that build a friendly robot.",
+    notes: ["A square has 4 equal sides", "A circle has no corners", "A triangle has 3 sides"] },
+  { slug: "frog-skip-counting", maker: "danielle", templateId: "skip-counting", age: 6, theme: "frogs", imageKey: "frog",
+    instruction: "Make a skip counting worksheet for a 6 year old, counting by 2s and 5s, frogs hopping on lily pads.",
+    notes: ["Frogs start as tadpoles", "They hop and swim", "Counting by 2s skips one"] },
+  { slug: "caterpillar-missing-numbers", maker: "ruth", templateId: "missing-numbers", age: 6, theme: "caterpillars", imageKey: "caterpillar",
+    instruction: "Make a missing numbers worksheet for a 6 year old, fill the gaps along a caterpillar number line.",
+    notes: ["A caterpillar has many legs", "It munches leaves all day", "It becomes a butterfly"] },
+  { slug: "zoo-word-problems", maker: "naomi", templateId: "word-problems", age: 8, theme: "zoo animals", imageKey: "elephant",
+    instruction: "Make a word problems worksheet for an 8 year old, simple add and subtract zoo-animal stories. About 5 problems.",
+    notes: ["Elephants are the biggest land animal", "They greet with their trunks", "They love a mud bath"] },
+  { slug: "cat-phonics", maker: "grace", templateId: "phonics", age: 5, theme: "animals", imageKey: "cat",
+    instruction: "Make a phonics worksheet for a 5 year old, beginning sounds with simple animal words.",
+    notes: ["Cats purr when happy", "They have great night sight", "Whiskers help them feel"] },
+  { slug: "rhyming-cat-hat", maker: "monique", templateId: "rhyming", age: 5, theme: "cats and hats", imageKey: "cat",
+    instruction: "Make a rhyming worksheet for a 5 year old, match words that rhyme like cat, hat and mat.",
+    notes: ["Rhyming words end the same", "Cat rhymes with hat", "Reading rhymes is fun"] },
+  { slug: "pets-grammar", maker: "becca", templateId: "grammar", age: 8, theme: "pets", imageKey: "dog",
+    instruction: "Make a grammar worksheet for an 8 year old, nouns and verbs using sentences about pets.",
+    notes: ["A noun is a person, place or thing", "A verb is an action", "Dogs are loyal friends"] },
+  { slug: "owl-spelling", maker: "naomi", templateId: "spelling", age: 9, theme: "animals", imageKey: "owl",
+    instruction: "Make a spelling worksheet for a 9 year old, animal theme, with a word bank and practice lines.",
+    notes: ["Owls can turn their heads far", "They hunt at night", "Their feathers are silent"] },
+  { slug: "space-fill-blank", maker: "whitney", templateId: "fill-blank-story", age: 7, theme: "space", imageKey: "rocket",
+    instruction: "Make a fill-in-the-blank story worksheet for a 7 year old, a short space adventure with a word bank.",
+    notes: ["A rocket needs lots of fuel", "The Moon has no air", "Stars are giant balls of gas"] },
+  { slug: "truck-multiplication", maker: "dawn", templateId: "multiplication", age: 9, theme: "trucks", imageKey: "truck",
+    instruction: "Make a multiplication worksheet for a 9 year old, delivery-truck theme, times tables. About 8 problems.",
+    notes: ["Big rigs have many wheels", "They carry heavy loads", "Drivers travel long roads"] },
 ];
 
 // ── Forum threads + comments (hand-authored, homeschool-parent voice) ─
@@ -420,7 +296,7 @@ export const SEED_THREADS: SeedThread[] = [
     title: "co-op worksheet swap, who's keen",
     body: "thinking it'd be cool if we each shared a few of our best themed sheets so we all get variety without making everything ourselves. drop yours below and i'll start.",
     comments: [
-      { maker: "manaia", up: 5, body: "love this. i've put up a butterfly life cycle draw and label one, my 6yo adored it." },
+      { maker: "manaia", up: 5, body: "love this. i've put up a butterfly life cycle one, my 6yo adored it." },
       { maker: "court", up: 3, body: "in. will publish my twins' favourite addition ones tonight." },
     ],
   },
@@ -448,60 +324,10 @@ export const SEED_THREADS: SeedThread[] = [
     body: "new to all this and a bit overwhelmed. is making the worksheets free or is there a catch i'm missing?",
     comments: [
       { maker: "monique", up: 4, body: "make away, it's free. welcome, you've found a good spot." },
-      { maker: "heather", up: 3, body: "welcome! ask anything, this lot are lovely and nobody judges the overwhelm. we've all been there." },
+      { maker: "heather", up: 3, body: "welcome. ask anything, this lot are lovely and nobody judges the overwhelm. we've all been there." },
     ],
   },
 ];
-
-export interface BuiltPost {
-  id: string; maker_id: string; handle: string; creator_name: string;
-  title: string; subtitle: string; template_id: string; topic: string;
-  worksheet: Worksheet; upvotes: number; daysAgo: number;
-}
-
-// Expand cores (+ cosmetic variants) into the full post list, assigned to
-// makers, with deterministic upvotes and a spread of created_at offsets.
-export function buildPosts(): BuiltPost[] {
-  const out: BuiltPost[] = [];
-  let i = 0;
-  const push = (slug: string, makerSlug: string, ws: Worksheet, topic: string) => {
-    const m = makerBySlug(makerSlug);
-    out.push({
-      id: uid(`post:${slug}`),
-      maker_id: uid(`maker:${m.slug}`),
-      handle: m.handle,
-      creator_name: m.name,
-      title: ws.title,
-      subtitle: ws.subtitle,
-      template_id: ws.meta.templateId,
-      topic,
-      worksheet: ws,
-      upvotes: num(`up:${slug}`, 46, 1),
-      // Most-recent slots go to the base (hand-authored) cores so the top of
-      // the feed is the strongest content; variants spread further back.
-      daysAgo: 1 + (num(`d:${slug}`, 95)),
-    });
-    i++;
-  };
-
-  for (const core of CORES) {
-    push(core.slug, core.maker, core.worksheet, core.topic);
-    const variants = core.variants ?? [];
-    variants.forEach((v, vi) => {
-      const base = core.worksheet;
-      const ws: Worksheet = {
-        ...base,
-        title: v.title,
-        subtitle: base.subtitle.replace(/·.*/, `· ${v.theme}`),
-        meta: { ...base.meta, theme: v.theme },
-      };
-      // round-robin a different maker to the variant so it isn't all one person
-      const m = SEED_MAKERS[(CORES.indexOf(core) + vi + 1) % SEED_MAKERS.length];
-      push(`${core.slug}-${vi}`, m.slug, ws, core.topic);
-    });
-  }
-  return out;
-}
 
 export interface BuiltRow {
   id: string; maker_id: string; handle: string; creator_name: string;
@@ -556,4 +382,17 @@ export function buildThreads(): {
   return { threads, topComments, replies };
 }
 
-export const SEED_VERSION = "2026-06-30.1";
+// Deterministic upvotes + created_at offset for a generated post.
+export function postMeta(spec: PostSpec): { id: string; maker_id: string; handle: string; creator_name: string; upvotes: number; daysAgo: number } {
+  const m = makerBySlug(spec.maker);
+  return {
+    id: uid(`post:${spec.slug}`),
+    maker_id: uid(`maker:${m.slug}`),
+    handle: m.handle,
+    creator_name: m.name,
+    upvotes: num(`up:${spec.slug}`, 46, 2),
+    daysAgo: 1 + num(`d:${spec.slug}`, 80),
+  };
+}
+
+export const SEED_VERSION = "2026-06-30.2";
