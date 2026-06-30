@@ -10,7 +10,7 @@
 
 import { getTemplate } from "./catalog";
 import { ILLUSTRATION_HINT, hasIllustration, pickIllustrationFor } from "./illustrations";
-import { detectTheme, intentPreamble } from "./intent";
+import { detectTheme, intentPreamble, type Theme } from "./intent";
 import { SVG_ART } from "./svg-art";
 import { capName } from "./util";
 import type { ChatMessage, Worksheet, WorksheetBlock, WorksheetTemplate } from "./types";
@@ -78,7 +78,7 @@ interface Ctx {
   age: number;
   diff: number;
   more: number;
-  theme: { key: string; emoji: string; nouns: string[]; facts: string[] };
+  theme: Theme;
   name: string; // capitalized, or "" if none
 }
 
@@ -553,34 +553,64 @@ function grammarBlocks(ctx: Ctx): WorksheetBlock[] {
 
 // ── reading + comprehension ───────────────────────────────────────────────────
 
+// Themed reading uses a short INFORMATIONAL passage built from the theme's real
+// facts (always accurate + coherent). The everyday case keeps a clean narrative.
+function isInformational(ctx: Ctx): boolean {
+  return ctx.theme.key !== "everyday" && ctx.theme.facts.length >= 2;
+}
+
 function passageBlock(ctx: Ctx): WorksheetBlock {
-  const m = ctx.theme.nouns;
   const hero = ctx.name || "Milo";
-  const text =
-    ctx.age <= 7
-      ? `${hero} woke up early. The sun was warm. ${hero} went outside to look for ${m[1]}. On the way, ${hero} saw ${m[2]} and waved hello. Then ${hero} found a little path and followed it to the top of a hill. From the top, everything looked tiny and bright. It was a very happy day.`
-      : `Every morning, ${hero} set off to explore. Today ${hero} wanted to find ${m[1]} near the old hill. Along the winding path were ${m[2]}, shining in the light. ${hero} counted them, drew a quick map, and kept going. The climb was steep, but ${hero} did not give up. At the top was the best view of all, and ${hero} knew the long walk had been worth it.`;
-  return { kind: "passage", prompt: "Read the story, then answer the questions.", text };
+  if (!isInformational(ctx)) {
+    const text =
+      ctx.age <= 7
+        ? `${hero} woke up early. The sun was warm, so ${hero} went outside to play. ${hero} found a little path and followed it all the way to the top of a hill. From the top, everything looked tiny and bright. ${hero} smiled. It had been a very good morning.`
+        : `Every Saturday, ${hero} set off to explore. Today ${hero} followed a winding path past the old oak tree and up a steep hill. The climb was hard and ${hero} wanted to stop, but kept going one step at a time. At the very top was the best view in the whole town, and ${hero} knew the long walk had been worth it.`;
+    return { kind: "passage", prompt: "Read the story, then answer the questions.", text };
+  }
+  const label = ctx.theme.label.toLowerCase();
+  const n = ctx.age <= 7 ? 3 : Math.min(5, ctx.theme.facts.length);
+  const text = `Let's learn about ${label}. ${ctx.theme.facts.slice(0, n).join(" ")}`;
+  return { kind: "passage", prompt: "Read the passage, then answer the questions.", text };
 }
 
 function comprehensionQs(ctx: Ctx): WorksheetBlock {
   const hero = ctx.name || "the character";
+  if (!isInformational(ctx)) {
+    return {
+      kind: "short-answer",
+      prompt: "Answer each question in a full sentence.",
+      items: [`Who is the story about?`, `Where did ${hero} go?`, `Where did the path lead?`, `How do you think ${hero} felt at the end? Why?`, `What was your favorite part?`],
+      rows: 2,
+      answers: [ctx.name || "Milo", "outside to explore", "the top of the hill", "happy / proud", "(opinion)"],
+    };
+  }
+  const label = ctx.theme.label.toLowerCase();
   return {
     kind: "short-answer",
-    prompt: "Answer each question in a full sentence.",
-    items: [`Who is the story about?`, `What did ${hero} go out to find?`, `Where did the path lead?`, `How do you think ${hero} felt at the end? Why?`, `What was your favorite part?`],
+    prompt: "Answer each question. You can look back at the passage.",
+    items: ["What is the passage mostly about?", "Write two facts you learned from the passage.", `Which fact about ${label} did you find the most interesting? Why?`, `Use the passage to write one sentence of your own about ${label}.`],
     rows: 2,
-    answers: [ctx.name || "Milo", ctx.theme.nouns[1], "the top of the hill", "happy / proud", "(opinion)"],
+    answers: [ctx.theme.label, "(two facts from the passage)", "(opinion)", "(child's own sentence)"],
   };
 }
 
 function comprehensionMC(ctx: Ctx): WorksheetBlock {
   const hero = ctx.name || "the character";
+  if (!isInformational(ctx)) {
+    const right = `${hero} climbing to the top of a hill`;
+    return {
+      kind: "multiple-choice",
+      prompt: "Circle the best answer. What is the story mostly about?",
+      items: [right, "A rainy day indoors", "A trip to the dentist"],
+      answers: [right],
+    };
+  }
   return {
     kind: "multiple-choice",
-    prompt: "Circle the best answer. What is the story mostly about?",
-    items: [`${hero} exploring to find ${ctx.theme.nouns[1]}`, "A rainy day indoors", "A trip to the dentist"],
-    answers: [`${hero} exploring to find ${ctx.theme.nouns[1]}`],
+    prompt: "Circle the best title for this passage.",
+    items: [ctx.theme.label, "My Trip to the Dentist", "A Lost Library Book"],
+    answers: [ctx.theme.label],
   };
 }
 
@@ -809,6 +839,24 @@ function compose(ctx: Ctx): WorksheetBlock[] {
   }
 }
 
+// Offline enrichment: give a themed fallback sheet the same finish as a
+// generated one — a real illustration with fun facts beside it (near the top),
+// or, when the theme has no matching picture, a "did you know?" fact callout.
+// Mutates the block list in place. No-op for the everyday/no-theme case.
+function enrichOffline(blocks: WorksheetBlock[], theme: Theme): void {
+  if (theme.key === "everyday") return;
+  const hasImage = blocks.some((b) => b.kind === "image");
+  if (!hasImage && theme.image && hasIllustration(theme.image)) {
+    const at = blocks.length > 1 ? 1 : blocks.length;
+    blocks.splice(at, 0, { kind: "image", imageKey: theme.image, notes: theme.facts.slice(0, 3) });
+    return;
+  }
+  const hasFact = blocks.some((b) => b.kind === "fact" || b.kind === "image");
+  if (!hasFact && theme.facts.length) {
+    blocks.push({ kind: "fact", text: theme.facts[rint(0, theme.facts.length - 1)] });
+  }
+}
+
 export function templateWorksheet(template: WorksheetTemplate, age: number, instruction: string, childName?: string): Worksheet {
   const theme = detectTheme(instruction);
   const diff = detectDifficulty(instruction);
@@ -816,6 +864,7 @@ export function templateWorksheet(template: WorksheetTemplate, age: number, inst
   const name = capName(childName);
   const ctx: Ctx = { template, age, diff, more, theme, name };
   const blocks = compose(ctx);
+  enrichOffline(blocks, theme);
   const themed = theme.key && theme.key !== "everyday";
   return {
     title: name ? `${name}'s ${template.title}` : template.title,

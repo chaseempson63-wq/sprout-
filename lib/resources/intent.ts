@@ -34,6 +34,7 @@ export interface Theme {
   emoji: string;
   nouns: string[];
   facts: string[];
+  image?: string; // a real illustration key (lib/resources/illustrations) for offline enrichment
 }
 
 export const THEMES: Record<string, Theme> = {
@@ -41,6 +42,7 @@ export const THEMES: Record<string, Theme> = {
     key: "space",
     label: "Space",
     emoji: "🚀",
+    image: "rocket",
     nouns: ["planets", "rockets", "astronauts", "stars", "moons", "comets"],
     facts: ["There are eight planets in our solar system.", "The Sun is a star.", "The Moon orbits the Earth.", "Mars is called the red planet.", "Astronauts float because of microgravity."],
   },
@@ -48,13 +50,15 @@ export const THEMES: Record<string, Theme> = {
     key: "dinosaur",
     label: "Dinosaurs",
     emoji: "🦕",
-    nouns: ["dinosaurs", "fossils", "eggs", "footprints", "ferns", "volcanoes"],
+    image: "t-rex",
+    nouns: ["dinosaurs", "fossils", "eggs", "footprints", "ferns", "claws"],
     facts: ["A T. rex had tiny arms and huge teeth.", "Some dinosaurs ate only plants.", "Fossils are bones turned to rock.", "Triceratops had three horns.", "Dinosaurs lived millions of years ago."],
   },
   ocean: {
     key: "ocean",
     label: "Ocean",
     emoji: "🐠",
+    image: "fish",
     nouns: ["fish", "whales", "crabs", "shells", "waves", "coral"],
     facts: ["A whale is a mammal, not a fish.", "Crabs walk sideways.", "Coral reefs are built by tiny animals.", "The ocean covers most of the Earth.", "Octopuses have eight arms."],
   },
@@ -62,6 +66,7 @@ export const THEMES: Record<string, Theme> = {
     key: "animal",
     label: "Animals",
     emoji: "🦊",
+    image: "fox",
     nouns: ["foxes", "rabbits", "owls", "deer", "frogs", "bees"],
     facts: ["A baby frog is called a tadpole.", "Owls can turn their heads far around.", "Bees make honey.", "Rabbits have strong back legs.", "Foxes are part of the dog family."],
   },
@@ -76,6 +81,7 @@ export const THEMES: Record<string, Theme> = {
     key: "food",
     label: "Food",
     emoji: "🍎",
+    image: "apple",
     nouns: ["apples", "bread", "carrots", "eggs", "berries", "cheese"],
     facts: ["Fruit grows on trees and plants.", "Bread is made from flour.", "Carrots grow underground.", "Bees help fruit grow."],
   },
@@ -83,6 +89,7 @@ export const THEMES: Record<string, Theme> = {
     key: "vehicle",
     label: "Vehicles",
     emoji: "🚗",
+    image: "car",
     nouns: ["cars", "trucks", "trains", "planes", "boats", "bikes"],
     facts: ["A train runs on tracks.", "Planes have wings to fly.", "A bike has two wheels.", "Boats float on water."],
   },
@@ -90,8 +97,89 @@ export const THEMES: Record<string, Theme> = {
     key: "fairytale",
     label: "Fairy tales",
     emoji: "🏰",
+    image: "castle",
     nouns: ["dragons", "castles", "knights", "crowns", "forests", "wizards"],
     facts: ["A castle has tall stone walls.", "Knights wore armour.", "Dragons are make-believe.", "A crown is worn by a king or queen."],
+  },
+  weather: {
+    key: "weather",
+    label: "Weather",
+    emoji: "🌦️",
+    image: "rainbow",
+    nouns: ["clouds", "rain", "snow", "wind", "storms", "rainbows"],
+    facts: ["Rain falls from clouds.", "Snow is frozen water.", "A rainbow has seven colours.", "Wind is moving air.", "Thunder comes after lightning."],
+  },
+  garden: {
+    key: "garden",
+    label: "The Garden",
+    emoji: "🌻",
+    image: "sunflower",
+    nouns: ["seeds", "flowers", "leaves", "roots", "bees", "soil"],
+    facts: ["Plants need sunlight and water.", "Roots drink water from the soil.", "Bees help flowers make seeds.", "Leaves make food from sunlight.", "A seed grows into a plant."],
+  },
+  bug: {
+    key: "bug",
+    label: "Bugs & Insects",
+    emoji: "🐝",
+    image: "bee",
+    nouns: ["ants", "bees", "beetles", "ladybugs", "butterflies", "grasshoppers"],
+    facts: ["Insects have six legs.", "A butterfly begins as a caterpillar.", "Ants can lift many times their own weight.", "Bees live together in a hive.", "Ladybugs eat tiny garden pests."],
+  },
+  body: {
+    key: "body",
+    label: "The Human Body",
+    emoji: "🫀",
+    image: "human-body",
+    nouns: ["hearts", "lungs", "bones", "muscles", "brains", "teeth"],
+    facts: ["The heart pumps blood around your body.", "Lungs help you breathe in air.", "Adults have 206 bones.", "Your brain controls everything you do.", "Muscles help you move."],
+  },
+  robot: {
+    key: "robot",
+    label: "Robots",
+    emoji: "🤖",
+    image: "robot",
+    nouns: ["robots", "gears", "sensors", "wires", "batteries", "circuits"],
+    facts: ["Robots follow instructions called code.", "A sensor helps a robot sense the world.", "Gears turn to move the parts.", "Many robots run on batteries.", "Some robots explore space and the deep sea."],
+  },
+  music: {
+    key: "music",
+    label: "Music",
+    emoji: "🎵",
+    image: "drum",
+    nouns: ["drums", "guitars", "pianos", "notes", "songs", "beats"],
+    facts: ["Music is made of notes.", "A drum keeps the beat.", "A piano has 88 keys.", "Soft and loud sounds are called dynamics.", "Singing uses your breath."],
+  },
+  farm: {
+    key: "farm",
+    label: "The Farm",
+    emoji: "🐄",
+    image: "cow",
+    nouns: ["cows", "sheep", "hens", "tractors", "hay", "barns"],
+    facts: ["Cows give us milk.", "Hens lay eggs.", "Sheep give us wool.", "A tractor pulls heavy loads.", "Crops grow in big fields."],
+  },
+  jungle: {
+    key: "jungle",
+    label: "The Jungle",
+    emoji: "🐒",
+    image: "monkey",
+    nouns: ["monkeys", "parrots", "snakes", "tigers", "frogs", "vines"],
+    facts: ["Rainforests are warm and wet all year.", "Monkeys swing through the trees.", "Parrots can copy sounds they hear.", "The tallest trees form the canopy.", "Many animals live nowhere else on Earth."],
+  },
+  season: {
+    key: "season",
+    label: "The Seasons",
+    emoji: "🍂",
+    image: "sun",
+    nouns: ["spring", "summer", "autumn", "winter", "leaves", "snow"],
+    facts: ["There are four seasons.", "Leaves fall from trees in autumn.", "Many plants grow in spring.", "Winter is the coldest season.", "Summer has the longest days."],
+  },
+  volcano: {
+    key: "volcano",
+    label: "Volcanoes",
+    emoji: "🌋",
+    image: "volcano",
+    nouns: ["volcanoes", "lava", "magma", "rocks", "ash", "craters"],
+    facts: ["Magma is melted rock under the ground.", "Lava is magma once it reaches the surface.", "Lava cools and hardens into new rock.", "Some volcanoes stay quiet for hundreds of years.", "The Earth has many active volcanoes."],
   },
 };
 
@@ -108,14 +196,30 @@ export function detectTheme(text: string): Theme {
   for (const key of Object.keys(THEMES)) {
     if (t.includes(key) || t.includes(`${key}s`)) return THEMES[key];
   }
+  // Specific subject regexes (run before the broad animal/ocean catches so
+  // "rainforest" -> jungle, "insect" -> bug, "skeleton" -> body, etc.).
   if (/dino/.test(t)) return THEMES.dinosaur;
-  if (/sea|under the sea|fish|shark|whale|mermaid|underwater/.test(t)) return THEMES.ocean;
-  if (/fruit|apple|banana|veg|snack|pizza|cookie|cake/.test(t)) return THEMES.food;
-  if (/puppy|dog|cat|bear|lion|tiger|jungle|safari|zoo|bug|insect|frog|bird/.test(t)) return THEMES.animal;
-  if (/soccer|football|basketball|tennis|race|swim|cricket|rugby|ball/.test(t)) return THEMES.sport;
-  if (/rocket|planet|star|moon|galaxy|alien|astronaut/.test(t)) return THEMES.space;
-  if (/car|truck|train|plane|boat|bike|bus/.test(t)) return THEMES.vehicle;
+  if (/volcano|lava|magma|eruption|crater|earthquake/.test(t)) return THEMES.volcano;
+  if (/rocket|planet|star|moon|galaxy|alien|astronaut|solar/.test(t)) return THEMES.space;
+  if (/weather|\brain\b|cloud|snow|storm|wind|rainbow|thunder|lightning/.test(t)) return THEMES.weather;
+  if (/garden|plant|flower|seed|grow|soil|sunflower/.test(t)) return THEMES.garden;
+  if (/insect|\bbug\b|\bant\b|beetle|ladybug|caterpillar|grasshopper/.test(t)) return THEMES.bug;
+  if (/\bbody\b|heart|lungs|bones|muscle|brain|skeleton|teeth|organ/.test(t)) return THEMES.body;
+  if (/robot|android|machine|gear|circuit|cyborg/.test(t)) return THEMES.robot;
+  if (/music|drum|guitar|piano|song|instrument|melody|\bnote/.test(t)) return THEMES.music;
+  if (/farm|\bcow\b|sheep|\bhen\b|tractor|barn|chicken|pony/.test(t)) return THEMES.farm;
+  if (/jungle|rainforest|monkey|tiger|gorilla|parrot/.test(t)) return THEMES.jungle;
+  if (/season|spring|summer|autumn|\bfall\b|winter/.test(t)) return THEMES.season;
+  if (/sea|under the sea|fish|shark|whale|mermaid|underwater|dolphin|octopus/.test(t)) return THEMES.ocean;
+  if (/fruit|apple|banana|veg|snack|pizza|cookie|cake|bread/.test(t)) return THEMES.food;
+  if (/puppy|dog|cat|bear|lion|safari|zoo|frog|bird|rabbit|\bfox\b|\bowl\b/.test(t)) return THEMES.animal;
+  if (/soccer|football|basketball|tennis|race|swim|cricket|rugby|\bball\b/.test(t)) return THEMES.sport;
+  if (/\bcar\b|truck|train|plane|boat|bike|\bbus\b/.test(t)) return THEMES.vehicle;
   if (/dragon|castle|knight|princess|prince|wizard|fairy/.test(t)) return THEMES.fairytale;
+  // Noun fallback: any theme noun appearing in the text wins before "everyday".
+  for (const theme of Object.values(THEMES)) {
+    if (theme.nouns.some((n) => t.includes(n) || t.includes(n.replace(/s$/, "")))) return theme;
+  }
   return DEFAULT_THEME;
 }
 
