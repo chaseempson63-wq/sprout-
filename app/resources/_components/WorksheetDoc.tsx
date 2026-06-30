@@ -11,15 +11,17 @@ import type { Worksheet, WorksheetBlock } from "@/lib/resources/types";
 // strip break-inside. Tightens print rhythm a touch and keeps the footer intact +
 // pulled in, so a slight overflow doesn't orphan it onto a near-empty trailing
 // page. Print-only; on-screen layout and content are untouched.
-const PRINT_RULES = `@media print {
-  .worksheet-lines > * + * { margin-top: 13px !important; }
-  .worksheet-footer { break-inside: avoid; margin-top: 14px !important; padding-top: 8px !important; }
+const PRINT_RULES = `@page { size: A4; margin: 12mm; }
+@media print {
+  .worksheet-lines > * + * { margin-top: 18px !important; }
+  .worksheet-blocks > * { break-inside: avoid; }
+  .worksheet-footer { break-inside: avoid; margin-top: 16px !important; padding-top: 8px !important; }
   .worksheet-img { break-inside: avoid; width: auto !important; max-width: 90%; max-height: 8cm; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }`;
 
 function Lines({ count = 3 }: { count?: number }) {
   return (
-    <div className="worksheet-lines mt-2 space-y-5">
+    <div className="worksheet-lines mt-2 space-y-7">
       {Array.from({ length: count }).map((_, i) => (
         <div key={i} className="border-b border-dashed border-[#1B3722]/35" />
       ))}
@@ -98,23 +100,26 @@ function BlockView({ block }: { block: WorksheetBlock }) {
         <div>
           {prompt}
           {eqs.length > 0 && (
-            <div className="mt-3 grid grid-cols-2 gap-x-8 gap-y-4 sm:grid-cols-3">
+            // Two columns, generous open white space under each problem so the
+            // kid can actually work it out by hand. No answer box, no lines.
+            <div className="mt-4 grid grid-cols-1 gap-y-9 sm:grid-cols-2 sm:gap-x-12">
               {eqs.map((p, i) => (
-                <div key={i} className="flex items-center text-[17px] text-[#1B3722]">
-                  <span className="mr-1 text-[#2E5A35]/70">{i + 1}.</span>
+                <div key={i} className="text-[18px] leading-[1.5] text-[#1B3722]">
+                  <span className="mr-1.5 text-[#2E5A35]/70">{i + 1}.</span>
                   <span className="font-medium">{p}</span>
-                  <AnswerBox />
+                  <div className="h-16" aria-hidden />
                 </div>
               ))}
             </div>
           )}
           {words.length > 0 && (
-            <ol className="mt-3 space-y-4 text-[15px] text-[#1B3722]">
+            // Word problems get open working space, not cramped lines.
+            <ol className="mt-4 space-y-8 text-[15px] leading-relaxed text-[#1B3722]">
               {words.map((q, i) => (
                 <li key={i}>
                   <span className="mr-2 font-semibold text-[#2E5A35]">{eqs.length + i + 1}.</span>
                   {q}
-                  <Lines count={2} />
+                  <div className="h-24" aria-hidden />
                 </li>
               ))}
             </ol>
@@ -139,7 +144,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
                       <span>{m[2]}</span>
                       <span>{m[3]}</span>
                     </div>
-                    <div className="h-8" />
+                    <div className="h-14" />
                   </div>
                 );
               }
@@ -393,7 +398,7 @@ export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
       <div className="worksheet-body px-7 pt-4 pb-6 sm:px-10">
         {worksheet.intro && <p className="mb-5 text-[15px] leading-relaxed text-[#1B3722]/80">{worksheet.intro}</p>}
 
-        <div className="worksheet-blocks space-y-7">
+        <div className="worksheet-blocks space-y-9">
           {worksheet.blocks.map((b, i) => (
             <BlockView key={i} block={b} />
           ))}
