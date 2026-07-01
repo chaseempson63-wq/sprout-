@@ -26,9 +26,6 @@ const veniceKey = (): string =>
 const at = (daysAgo: number): string =>
   new Date(Date.now() - Math.max(60_000, daysAgo * 86_400_000)).toISOString();
 
-// True if the worksheet already carries a real, renderable illustration.
-const hasRealImage = (ws: Worksheet): boolean =>
-  ws.blocks.some((b) => b.kind === "image" && (hasIllustration(b.imageKey) || !!b.dataUrl));
 
 const TABLES: Record<VoteTarget, string> = {
   post: "resource_posts",
@@ -167,12 +164,13 @@ export async function POST(request: Request) {
       ws = dedupeWorksheet(ws);
       ws.meta = { ...ws.meta, theme: spec.theme };
 
-      // Force the themed picture on if the sheet has no real illustration, so a
-      // dinosaur sheet always shows a dinosaur (the model often omits images on
-      // pure-practice sheets).
-      if (!hasRealImage(ws) && hasIllustration(spec.imageKey)) {
-        const idx = ws.blocks.length > 1 ? 1 : 0;
-        ws.blocks.splice(idx, 0, { kind: "image", imageKey: spec.imageKey, notes: spec.notes });
+      // Force the exact intended illustration on: strip whatever the engine
+      // added and inject the spec's imageKey near the top, so every seeded post
+      // shows a distinct, matching picture (no repeated theme fallbacks).
+      if (spec.imageKey && hasIllustration(spec.imageKey)) {
+        ws.blocks = ws.blocks.filter((b) => b.kind !== "image");
+        const idx = ws.blocks.length > 1 ? 1 : ws.blocks.length;
+        ws.blocks.splice(idx, 0, { kind: "image", imageKey: spec.imageKey, notes: spec.notes ?? [] });
       }
 
       const meta = postMeta(spec);

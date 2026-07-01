@@ -108,7 +108,7 @@ const HERO_SPECS: PostSpec[] = [
   { slug: "volcano-reading", maker: "steph", templateId: "reading", age: 9, theme: "volcanoes", imageKey: "volcano",
     instruction: "Make a reading comprehension worksheet for a 9 year old about how volcanoes work. A short passage then a few questions.",
     notes: ["Magma is melted rock", "Lava cools into new rock", "Some volcanoes sleep for years"] },
-  { slug: "space-reading", maker: "whitney", templateId: "reading", age: 8, theme: "space", imageKey: "rocket",
+  { slug: "space-reading", maker: "whitney", templateId: "reading", age: 8, theme: "space", imageKey: "moon",
     instruction: "Make a reading comprehension worksheet for an 8 year old, a fun space-adventure passage with a few questions.",
     notes: ["The Sun is a star", "Eight planets orbit it", "A comet has a glowing tail"] },
   { slug: "rainforest-reading", maker: "tabitha", templateId: "reading", age: 10, theme: "rainforest", imageKey: "parrot",
@@ -126,7 +126,7 @@ const HERO_SPECS: PostSpec[] = [
   { slug: "ocean-number-trace", maker: "imogen", templateId: "number-tracing", age: 4, theme: "ocean", imageKey: "whale",
     instruction: "Make a number tracing worksheet for a 4 year old, numbers 1 to 10, ocean theme, with a small counting picture.",
     notes: ["The blue whale is the biggest animal", "It sings to other whales", "It spouts water to breathe"] },
-  { slug: "bakery-money", maker: "heather", templateId: "money", age: 8, theme: "bakery", imageKey: "cake",
+  { slug: "bakery-money", maker: "heather", templateId: "money", age: 8, theme: "bakery", imageKey: "strawberry",
     instruction: "Make a money worksheet for an 8 year old, adding coins to buy bakery treats. About 6 problems.",
     notes: ["Coins add up to dollars", "Count the biggest coin first", "Change is what you get back"] },
   { slug: "robot-shapes", maker: "bel", templateId: "shapes", age: 5, theme: "robots", imageKey: "robot",
@@ -144,7 +144,7 @@ const HERO_SPECS: PostSpec[] = [
   { slug: "cat-phonics", maker: "grace", templateId: "phonics", age: 5, theme: "animals", imageKey: "cat",
     instruction: "Make a phonics worksheet for a 5 year old, beginning sounds with simple animal words.",
     notes: ["Cats purr when happy", "They have great night sight", "Whiskers help them feel"] },
-  { slug: "rhyming-cat-hat", maker: "monique", templateId: "rhyming", age: 5, theme: "cats and hats", imageKey: "cat",
+  { slug: "rhyming-cat-hat", maker: "monique", templateId: "rhyming", age: 5, theme: "cats and hats", imageKey: "bat",
     instruction: "Make a rhyming worksheet for a 5 year old, match words that rhyme like cat, hat and mat.",
     notes: ["Rhyming words end the same", "Cat rhymes with hat", "Reading rhymes is fun"] },
   { slug: "pets-grammar", maker: "becca", templateId: "grammar", age: 8, theme: "pets", imageKey: "dog",
@@ -153,7 +153,7 @@ const HERO_SPECS: PostSpec[] = [
   { slug: "owl-spelling", maker: "naomi", templateId: "spelling", age: 9, theme: "animals", imageKey: "owl",
     instruction: "Make a spelling worksheet for a 9 year old, animal theme, with a word bank and practice lines.",
     notes: ["Owls can turn their heads far", "They hunt at night", "Their feathers are silent"] },
-  { slug: "space-fill-blank", maker: "whitney", templateId: "fill-blank-story", age: 7, theme: "space", imageKey: "rocket",
+  { slug: "space-fill-blank", maker: "whitney", templateId: "fill-blank-story", age: 7, theme: "space", imageKey: "comet",
     instruction: "Make a fill-in-the-blank story worksheet for a 7 year old, a short space adventure with a word bank.",
     notes: ["A rocket needs lots of fuel", "The Moon has no air", "Stars are giant balls of gas"] },
   { slug: "truck-multiplication", maker: "dawn", templateId: "multiplication", age: 9, theme: "trucks", imageKey: "truck",
@@ -161,49 +161,51 @@ const HERO_SPECS: PostSpec[] = [
     notes: ["Big rigs have many wheels", "They carry heavy loads", "Drivers travel long roads"] },
 ];
 
-// Extra published sheets per maker so profiles look active, not one-and-done,
-// and roughly match each maker's bio/interests. Generated through the optimized
-// OFFLINE engine (instant, free, themed + illustrated) rather than Venice.
-// Format: [templateId, age, theme]. Themes must resolve in lib/resources/intent.
-const MAKER_EXTRAS: Record<string, [string, number, string][]> = {
-  danielle: [["subtraction", 8, "dinosaurs"], ["counting", 5, "dinosaurs"], ["fractions", 9, "baking food"]],
-  megan: [["addition", 7, "animals"], ["reading", 8, "the jungle"], ["shapes", 5, "robots"]],
-  aroha: [["counting", 5, "the ocean"], ["letter-tracing", 5, "farm animals"], ["reading", 9, "the seasons"]],
-  becca: [["grammar", 8, "pets"], ["reading", 9, "volcanoes"], ["spelling", 8, "animals"]],
-  kayla: [["multiplication", 9, "trucks"], ["subtraction", 7, "dinosaurs"], ["word-problems", 8, "sports"]],
-  fiona: [["fill-blank-story", 7, "space"], ["missing-numbers", 6, "the garden"], ["reading", 9, "the human body"]],
-  tania: [["counting", 4, "the ocean"], ["reading", 8, "the ocean"], ["draw-label", 6, "ocean animals"]],
-  heather: [["addition", 6, "farm animals"], ["phonics", 5, "animals"], ["money", 8, "the bakery food"]],
-  renee: [["addition", 7, "trucks"], ["counting", 6, "vehicles"], ["multiplication", 8, "trucks"]],
-  court: [["counting", 6, "bugs"], ["shapes", 5, "the garden"], ["missing-numbers", 6, "animals"]],
-  naomi: [["reading", 10, "the rainforest"], ["spelling", 9, "animals"], ["reading", 10, "volcanoes"]],
-  priya: [["reading", 10, "the human body"], ["life-cycle", 7, "butterflies"], ["multiplication", 9, "space rockets"]],
-  whitney: [["reading", 8, "space"], ["addition", 6, "space rockets"], ["fill-blank-story", 7, "space"]],
-  manaia: [["life-cycle", 6, "butterflies"], ["counting", 5, "the garden"], ["reading", 9, "the jungle"]],
-  steph: [["reading", 11, "volcanoes"], ["reading", 10, "space"], ["skip-counting", 8, "the seasons"]],
-  bel: [["counting", 6, "dinosaurs"], ["matching", 5, "animals"], ["addition", 6, "bugs"]],
-  grace: [["phonics", 5, "animals"], ["letter-tracing", 5, "farm animals"], ["rhyming", 5, "the garden"]],
-  monique: [["reading", 8, "the ocean"], ["counting", 5, "animals"], ["fractions", 9, "baking food"]],
-  kelsey: [["counting", 5, "farm animals"], ["letter-tracing", 5, "animals"], ["shapes", 5, "the garden"]],
-  ruth: [["addition", 6, "animals"], ["reading", 8, "the seasons"], ["spelling", 8, "space"]],
-  tabitha: [["reading", 10, "the human body"], ["sentence-building", 8, "pets"], ["reading", 9, "the rainforest"]],
-  lucy: [["multiplication", 9, "sports"], ["addition", 7, "sports"], ["word-problems", 8, "sports"]],
-  imogen: [["counting", 4, "the ocean"], ["letter-tracing", 5, "ocean animals"], ["number-tracing", 4, "the ocean"]],
-  dawn: [["division", 10, "pizza food"], ["reading", 10, "volcanoes"], ["fractions", 9, "baking food"]],
+// Extra published sheets per maker so profiles look active, not one-and-done.
+// Each is a DISTINCT subject with its own unique illustration (from the 197-key
+// set) so the library reads varied, not ten fish and ten volcanoes. Format:
+// [templateId, age, topic, imageKey]. Every imageKey below is unique and exists
+// in public/resources/illustrations. Generated via Venice for real topic
+// content; the reseed force-pins the imageKey so the picture always matches.
+const MAKER_EXTRAS: Record<string, [string, number, string, string][]> = {
+  danielle: [["reading", 8, "triceratops", "triceratops"], ["counting", 6, "dinosaur eggs", "dinosaur-egg"]],
+  megan: [["multiplication", 9, "pandas", "panda"], ["reading", 8, "the water cycle", "water-cycle"]],
+  aroha: [["reading", 9, "mountains", "mountain"], ["counting", 5, "penguins", "penguin"]],
+  becca: [["reading", 9, "the human skeleton", "skeleton"], ["grammar", 8, "a visit to the doctor", "doctor"]],
+  kayla: [["subtraction", 8, "sharks", "shark"], ["addition", 7, "aeroplanes", "airplane"]],
+  fiona: [["reading", 9, "tornadoes", "tornado"], ["fractions", 9, "sharing a watermelon", "watermelon"]],
+  tania: [["reading", 8, "sea turtles", "sea-turtle"], ["counting", 4, "starfish", "starfish"]],
+  heather: [["addition", 6, "ducks on the farm", "duck"], ["reading", 8, "lighthouses", "lighthouse"]],
+  renee: [["counting", 6, "trains", "train"], ["subtraction", 7, "helicopters", "helicopter"]],
+  court: [["counting", 6, "ladybugs", "ladybug"], ["reading", 7, "dragonflies", "dragonfly"]],
+  naomi: [["reading", 10, "the sloth", "sloth"], ["reading", 10, "glaciers", "glacier"]],
+  priya: [["reading", 9, "the human brain", "brain"], ["reading", 10, "how magnets work", "magnet"]],
+  whitney: [["reading", 8, "astronauts", "astronaut"], ["reading", 9, "the solar system", "solar-system"]],
+  manaia: [["reading", 7, "how seeds grow", "seed-to-plant"], ["counting", 5, "flowers in the garden", "flower"]],
+  steph: [["reading", 11, "Egyptian mummies", "mummy"], ["reading", 10, "knights and castles", "knight"]],
+  bel: [["counting", 6, "koalas", "koala"], ["matching", 5, "jungle animals", "tiger"]],
+  grace: [["phonics", 5, "animals at the zoo", "giraffe"], ["counting", 5, "rabbits", "rabbit"]],
+  monique: [["reading", 8, "the octopus", "octopus"], ["counting", 5, "snails", "snail"]],
+  kelsey: [["shapes", 5, "kites", "kite"], ["counting", 5, "peacocks", "peacock"]],
+  ruth: [["addition", 6, "hedgehogs", "hedgehog"], ["reading", 8, "how a rainbow forms", "rainbow"]],
+  tabitha: [["reading", 10, "whales and narwhals", "narwhal"], ["reading", 9, "spiders", "spider"]],
+  lucy: [["multiplication", 9, "the zebra herd", "zebra"], ["addition", 7, "flamingos", "flamingo"]],
+  imogen: [["counting", 4, "seahorses", "seahorse"], ["counting", 4, "jellyfish", "jellyfish"]],
+  dawn: [["reading", 10, "the planet Saturn", "saturn"], ["division", 10, "sharing at the ice cream shop", "ice-cream"]],
 };
 
 function buildExtraSpecs(): PostSpec[] {
   const out: PostSpec[] = [];
   for (const [maker, list] of Object.entries(MAKER_EXTRAS)) {
-    list.forEach(([templateId, age, theme], i) => {
+    list.forEach(([templateId, age, topic, imageKey], i) => {
       out.push({
         slug: `${maker}-x${i}`,
         maker,
         templateId,
         age,
-        theme,
-        instruction: `Make a ${templateId.replace(/-/g, " ")} worksheet for a ${age} year old, ${theme} theme.`,
-        offline: true,
+        theme: topic,
+        instruction: `Make a ${templateId.replace(/-/g, " ")} worksheet for a ${age} year old about ${topic}.`,
+        imageKey,
       });
     });
   }
