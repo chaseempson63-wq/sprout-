@@ -80,11 +80,13 @@ export interface PostSpec {
   age: number;
   theme: string;
   instruction: string; // the user message that drives generation
-  imageKey: string; // a real illustration key (lib/resources/illustrations)
-  notes: string[]; // 3-4 short fun facts printed beside the picture
+  imageKey?: string; // hero specs pin an explicit illustration; offline extras use the theme's own
+  notes?: string[]; // 3-4 short fun facts printed beside the picture
+  offline?: boolean; // generate via the offline engine (instant/free) instead of Venice
 }
 
-export const POST_SPECS: PostSpec[] = [
+// One rich, Venice-generated "hero" sheet per maker.
+const HERO_SPECS: PostSpec[] = [
   { slug: "dino-addition", maker: "danielle", templateId: "addition", age: 6, theme: "dinosaurs", imageKey: "t-rex",
     instruction: "Make an addition worksheet for a 6 year old, dinosaur theme. About 6 single-digit problems plus a short count-the-eggs section.",
     notes: ["Some were taller than a house", "Lived millions of years ago", "T-rex had tiny arms"] },
@@ -158,6 +160,58 @@ export const POST_SPECS: PostSpec[] = [
     instruction: "Make a multiplication worksheet for a 9 year old, delivery-truck theme, times tables. About 8 problems.",
     notes: ["Big rigs have many wheels", "They carry heavy loads", "Drivers travel long roads"] },
 ];
+
+// Extra published sheets per maker so profiles look active, not one-and-done,
+// and roughly match each maker's bio/interests. Generated through the optimized
+// OFFLINE engine (instant, free, themed + illustrated) rather than Venice.
+// Format: [templateId, age, theme]. Themes must resolve in lib/resources/intent.
+const MAKER_EXTRAS: Record<string, [string, number, string][]> = {
+  danielle: [["subtraction", 8, "dinosaurs"], ["counting", 5, "dinosaurs"], ["fractions", 9, "baking food"]],
+  megan: [["addition", 7, "animals"], ["reading", 8, "the jungle"], ["shapes", 5, "robots"]],
+  aroha: [["counting", 5, "the ocean"], ["letter-tracing", 5, "farm animals"], ["reading", 9, "the seasons"]],
+  becca: [["grammar", 8, "pets"], ["reading", 9, "volcanoes"], ["spelling", 8, "animals"]],
+  kayla: [["multiplication", 9, "trucks"], ["subtraction", 7, "dinosaurs"], ["word-problems", 8, "sports"]],
+  fiona: [["fill-blank-story", 7, "space"], ["missing-numbers", 6, "the garden"], ["reading", 9, "the human body"]],
+  tania: [["counting", 4, "the ocean"], ["reading", 8, "the ocean"], ["draw-label", 6, "ocean animals"]],
+  heather: [["addition", 6, "farm animals"], ["phonics", 5, "animals"], ["money", 8, "the bakery food"]],
+  renee: [["addition", 7, "trucks"], ["counting", 6, "vehicles"], ["multiplication", 8, "trucks"]],
+  court: [["counting", 6, "bugs"], ["shapes", 5, "the garden"], ["missing-numbers", 6, "animals"]],
+  naomi: [["reading", 10, "the rainforest"], ["spelling", 9, "animals"], ["reading", 10, "volcanoes"]],
+  priya: [["reading", 10, "the human body"], ["life-cycle", 7, "butterflies"], ["multiplication", 9, "space rockets"]],
+  whitney: [["reading", 8, "space"], ["addition", 6, "space rockets"], ["fill-blank-story", 7, "space"]],
+  manaia: [["life-cycle", 6, "butterflies"], ["counting", 5, "the garden"], ["reading", 9, "the jungle"]],
+  steph: [["reading", 11, "volcanoes"], ["reading", 10, "space"], ["skip-counting", 8, "the seasons"]],
+  bel: [["counting", 6, "dinosaurs"], ["matching", 5, "animals"], ["addition", 6, "bugs"]],
+  grace: [["phonics", 5, "animals"], ["letter-tracing", 5, "farm animals"], ["rhyming", 5, "the garden"]],
+  monique: [["reading", 8, "the ocean"], ["counting", 5, "animals"], ["fractions", 9, "baking food"]],
+  kelsey: [["counting", 5, "farm animals"], ["letter-tracing", 5, "animals"], ["shapes", 5, "the garden"]],
+  ruth: [["addition", 6, "animals"], ["reading", 8, "the seasons"], ["spelling", 8, "space"]],
+  tabitha: [["reading", 10, "the human body"], ["sentence-building", 8, "pets"], ["reading", 9, "the rainforest"]],
+  lucy: [["multiplication", 9, "sports"], ["addition", 7, "sports"], ["word-problems", 8, "sports"]],
+  imogen: [["counting", 4, "the ocean"], ["letter-tracing", 5, "ocean animals"], ["number-tracing", 4, "the ocean"]],
+  dawn: [["division", 10, "pizza food"], ["reading", 10, "volcanoes"], ["fractions", 9, "baking food"]],
+};
+
+function buildExtraSpecs(): PostSpec[] {
+  const out: PostSpec[] = [];
+  for (const [maker, list] of Object.entries(MAKER_EXTRAS)) {
+    list.forEach(([templateId, age, theme], i) => {
+      out.push({
+        slug: `${maker}-x${i}`,
+        maker,
+        templateId,
+        age,
+        theme,
+        instruction: `Make a ${templateId.replace(/-/g, " ")} worksheet for a ${age} year old, ${theme} theme.`,
+        offline: true,
+      });
+    });
+  }
+  return out;
+}
+
+// Everything the reseed generates: the Venice heroes + the offline extras.
+export const POST_SPECS: PostSpec[] = [...HERO_SPECS, ...buildExtraSpecs()];
 
 // ── Forum threads + comments (hand-authored, homeschool-parent voice) ─
 

@@ -161,7 +161,7 @@ export async function POST(request: Request) {
       if (!template) { failed.push(`${spec.slug}:unknown-template`); continue; }
       const messages: ChatMessage[] = [{ role: "user", content: spec.instruction }];
 
-      let ws: Worksheet | null = key ? await aiWorksheet(template, spec.age, messages, key) : null;
+      let ws: Worksheet | null = !spec.offline && key ? await aiWorksheet(template, spec.age, messages, key) : null;
       if (ws) src.ai++;
       else { ws = templateWorksheet(template, spec.age, spec.instruction); src.template++; }
       ws = dedupeWorksheet(ws);
