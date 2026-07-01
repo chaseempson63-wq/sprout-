@@ -144,7 +144,6 @@ export default function HomeV2() {
             <span>SPROUT·CO</span>
           </div>
           <div className="flex items-center gap-2">
-            <span>SCROLL</span>
             <span className="block w-px h-8 bg-sprout-cream/30" />
           </div>
           <div className="font-mono text-[9px]">
@@ -664,7 +663,7 @@ export default function HomeV2() {
 
               <h2 className="font-bold tracking-[-0.03em] text-sprout-cream headline-lit max-w-4xl mx-auto"
                   style={{ fontSize: "clamp(30px, 5.5vw, 60px)", lineHeight: "1.12" }}>
-                Their week of learning.<br />Summarized while you<br />sleep on Sunday.
+                Their week of learning.<br />Sorted and ready<br />when you open it Sunday.
               </h2>
 
               <p className="mt-6 md:mt-8 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"

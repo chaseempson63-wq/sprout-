@@ -84,11 +84,11 @@ const EXTRAS = [
 const FAQS = [
   {
     q: "Is it free?",
-    a: "Yes. No account, no card, no limits. Make and print as many as you want.",
+    a: "Yes. No account, no card, no limits. We're parents building this for parents, not a company mining you for data to sell on. Make and print as many as you want.",
   },
   {
     q: "Is my data safe? Do you train AI on it?",
-    a: "No, and no. Worksheets are built by Venice AI, and nothing you type is stored or used to train anything. Your worksheets and your kids' profiles are saved in your browser, on your device, not on our servers. It's all yours.",
+    a: "Yes, and no. This is the whole reason Sprout exists. Worksheets are built by Venice AI, and nothing you type is stored or used to train anything. Your worksheets and your kids' profiles are saved in your browser, on your device, not on our servers. The tech giants take everything. Here, your kid's stuff stays yours.",
   },
   {
     q: "Where do my worksheets live? Could I lose them?",
@@ -136,7 +136,9 @@ export default function HowToPage() {
         </div>
       </div>
       <p className="text-sprout-cream/75 mt-5 text-lg leading-relaxed">
-        Pick a worksheet, tell Sprout about your kid, and print it. Here&apos;s the whole thing, start to
+        Pick a worksheet, tell Sprout about your kid, and print it. That&apos;s the whole thing. No account, nothing
+        sold off behind your back, no catch. You&apos;re in with the parents who wanted their own corner of the
+        internet to do this, one the tech giants don&apos;t get to touch. Here&apos;s how it all works, start to
         finish, plus the questions people usually ask.
       </p>
 
@@ -198,7 +200,8 @@ export default function HowToPage() {
       <div className="border-sprout-cream/15 bg-sprout-cream/10 mt-14 flex flex-col items-center gap-4 rounded-3xl border p-8 text-center backdrop-blur-sm">
         <h2 className="text-sprout-cream text-2xl font-bold">Still stuck?</h2>
         <p className="text-sprout-cream/75 max-w-md">
-          Pop a question in the Community. Real Sprout parents and the team answer.
+          Pop a question in the Community. Real Sprout parents and the team answer. You&apos;re not doing this
+          on your own anymore.
         </p>
         <div className="mt-1 flex flex-wrap items-center justify-center gap-3">
           <Link

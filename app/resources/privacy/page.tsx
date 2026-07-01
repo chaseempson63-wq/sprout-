@@ -3,7 +3,7 @@ import { ArrowLeft, Ban, Check, Cpu, ExternalLink, Laptop, Lock } from "lucide-r
 import { GlassLink } from "@/components/ui/glass";
 
 export const metadata: Metadata = {
-  title: "Your data is yours — Sprout Resources",
+  title: "Your data is yours · Sprout Resources",
   description: "Exactly how Sprout Resources handles your data: the Venice model we run, what is never stored, and proof from the source.",
 };
 
@@ -47,7 +47,7 @@ export default function ResourcesPrivacy() {
 
       <h1 className="text-sprout-cream text-3xl font-bold tracking-[-0.02em]">Your data is yours</h1>
       <p className="text-sprout-cream/70 mt-2 max-w-xl">
-        Sprout Resources makes worksheets with AI, privately. Here is exactly how it works, and how to check it for yourself.
+        You make the worksheets. You keep them. No tech giant gets a copy, no data broker gets a row in a spreadsheet, no model gets trained on your kid. This is what taking it back looks like. Here is exactly how it works, so you can check it for yourself.
       </p>
 
       <div className={`${lightCard} mt-6 divide-y divide-[#2E5A35]/10`}>
@@ -71,6 +71,12 @@ export default function ResourcesPrivacy() {
         <GlassLink href="https://venice.ai/privacy" target="_blank" rel="noopener noreferrer" className="mt-4 h-10 px-4 text-sm text-[#1B3722]">
           Read Venice's privacy policy <ExternalLink className="size-4" />
         </GlassLink>
+      </div>
+
+      <div className={`${lightCard} mt-5 p-5`}>
+        <p className="text-[15px] leading-relaxed text-[#1B3722]/80">
+          Most of the internet is built the other way around. You are the product, your kids are the training data, and your week gets sold to whoever pays. Sprout is the corner that does not work like that. You are one of the parents taking it back and growing the next generation on your own terms. That is the whole reason we built this.
+        </p>
       </div>
 
       <p className="text-sprout-cream/45 mt-6 text-xs">

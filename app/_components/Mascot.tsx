@@ -17,7 +17,7 @@ import { SproutLogo } from "./Glass";
    order. The landing has 8 sections; if the section order changes,
    re-check this mapping against page.tsx. */
 const sproutLines = [
-  "oh hi. scroll, i'll come with you.",               // 0  Hero: "you did more than you think"
+  "oh hi. keep going, i'll come with you.",           // 0  Hero: "you did more than you think"
   "voice memo, photo, one line. that's all i need.",  // 1  Product showcase: the app screens
   "years of it, all in one place. i lose nothing.",   // 2  Where it all lives: permanence frame
   "see, you're not making this up.",                  // 3  Verbatim wall: real parent quotes

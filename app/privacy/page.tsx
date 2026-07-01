@@ -13,8 +13,8 @@ const SECTIONS: LegalSection[] = [
   {
     h: "1. Who we are",
     p: [
-      `Sprout ("Sprout," "we," "us," "our") operates this website at hisprout.app. Sprout is a homeschool documentation product currently in pre-launch. Right now this site lets you join our waitlist and learn about our partner program.`,
-      `If you have any questions about this policy or your data, email us at ${CONTACT}.`,
+      `Sprout ("Sprout," "we," "us," "our") runs this website at hisprout.app. We are a homeschool documentation product built by parents who were done handing their family's life to companies that sell it back to them. Right now the site lets you make and print worksheets in Sprout Resources, join a community of parents doing the same, sign up for the waitlist, and learn about our partner program. The full Sprout app is on the way.`,
+      `If you have any questions about this policy or your data, email us at ${CONTACT} and a real person answers.`,
     ],
   },
   {
@@ -27,6 +27,7 @@ const SECTIONS: LegalSection[] = [
       "Cookies and similar technologies: see the Cookies and analytics section below.",
     ],
     after: [
+      "Sprout Resources is different on purpose. The worksheets you make and your kids' profiles are saved in your own browser, on your device, not on our servers. We never see them. What you type to build a worksheet is passed to our AI provider to build it and is not stored or trained on. See the Sprout Resources privacy page for exactly how that works.",
       "We do not ask for sensitive information, and we do not knowingly collect information from children through this site.",
     ],
   },
@@ -43,7 +44,8 @@ const SECTIONS: LegalSection[] = [
   {
     h: "4. Our privacy promise",
     p: [
-      "This is the part that matters. We do not sell your personal information. We do not train AI on it. We are not building or selling a panel of homeschool data. The only reason we collect anything is to run the waitlist, answer partner applications, and keep the site working. If that ever changes, we will update this policy and tell you first.",
+      "This is the part that matters, and we mean every word of it. We do not sell your personal information. We do not train AI on it. We are not quietly building a panel of homeschool data to auction off later. That is the line the tech giants crossed, and it is the exact line Sprout will not. The only reason we hold anything at all is to run the waitlist, answer partner notes, and keep the site working.",
+      "Your family's life is yours. You are one of the parents choosing to grow the next generation on your own terms, out of reach of the algorithms and the data brokers, and we are building Sprout to keep it that way. If any of this ever changes, we update this page and tell you first, before it takes effect.",
     ],
   },
   {
@@ -114,8 +116,8 @@ export default function PrivacyPage() {
   return (
     <LegalPage
       title="Privacy Policy"
-      updated="May 29, 2026"
-      intro="Your privacy is the whole point of Sprout, so we keep this honest and plain. We collect as little as possible, we do not sell your information, and we do not train AI on it. Here is exactly what we do."
+      updated="July 1, 2026"
+      intro="Sprout exists because your kid's week belongs to you. Not to a tech giant's training set, not to a data broker's spreadsheet, not to anyone but you. That is the whole point of this thing. So this page is honest and plain: we collect as little as we can, we never sell what we hold, and we never train AI on it. You are taking a small piece of ground back here. Here is exactly how we protect it."
       sections={SECTIONS}
     />
   );
