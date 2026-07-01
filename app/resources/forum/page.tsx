@@ -1,27 +1,36 @@
 "use client";
 
-// The community space: a chat-style feed where parents post, discuss, and
-// upvote, with a pinned Announcements bar for Sprout product updates at the top.
+// The community space, two sections behind a simple filter:
+//   Announcements — Sprout Team product updates (read-only broadcasts).
+//   Community     — parent posts/discussion, each its own card, upvote + reply.
 // Reads/writes the shared DB; degrades to a friendly offline panel when social
 // is off. Opening this page clears the announcement badge in the nav.
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ArrowBigUp, ArrowLeft, ArrowRight, Megaphone, MessageSquare, Plus, Search, Send, X } from "lucide-react";
+import type { CSSProperties } from "react";
+import { ArrowBigUp, ArrowLeft, MessageSquare, Plus, Search, Send, X } from "lucide-react";
 import { createThread, listThreads, makerWire } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
 import { capName, timeAgo } from "@/lib/resources/util";
 import { cn } from "@/lib/utils";
 import { pill } from "@/lib/resources/pill";
-import { ANNOUNCEMENTS } from "@/lib/resources/announcements";
+import { ANNOUNCEMENTS, unseenAnnouncements } from "@/lib/resources/announcements";
+import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { GlassLink } from "@/components/ui/glass";
 import type { ForumThread } from "@/lib/resources/types";
 
-const lightCard =
-  "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
+// A rich, creamy card: warm cream base with a very light yellow glow easing in
+// from the top-left corner and a very light green glow from the bottom-right, so
+// each one pops off the dark canvas instead of a flat panel or a see-through row.
+const CARD_CLS =
+  "rounded-2xl border border-[#2E5A35]/12 shadow-[0_16px_36px_-14px_rgba(0,0,0,0.55),inset_0_1px_0_rgba(255,255,255,0.7)]";
+const CARD_BG: CSSProperties = {
+  background:
+    "radial-gradient(125% 125% at 0% 0%, #F6E7B6 0%, rgba(246,231,182,0) 42%), radial-gradient(125% 125% at 100% 100%, #D9EDC8 0%, rgba(217,237,200,0) 46%), #FCF8EF",
+};
 
-// Deterministic pastel avatar per name so the feed reads like people talking.
 const AVATARS = [
   "bg-[#CDEFA0] text-[#1B3722]",
   "bg-[#A4C9A8] text-[#1B3722]",
@@ -36,9 +45,16 @@ function avatarClass(name: string): string {
   return AVATARS[h % AVATARS.length];
 }
 
+function fmtDate(ts: number): string {
+  return new Date(ts).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+
 export default function CommunityHome() {
   const router = useRouter();
-  const { ready, account, markAnnouncementsSeen } = useResources();
+  const { ready, account, markAnnouncementsSeen, announcementsSeenAt } = useResources();
+  const [tab, setTab] = useState<"announcements" | "community">(() =>
+    unseenAnnouncements(announcementsSeenAt) > 0 ? "announcements" : "community",
+  );
   const [threads, setThreads] = useState<ForumThread[]>([]);
   const [loading, setLoading] = useState(true);
   const [off, setOff] = useState(false);
@@ -83,141 +99,156 @@ export default function CommunityHome() {
   }
 
   return (
-    <div className="mx-auto max-w-2xl">
+    <div className="mx-auto max-w-5xl">
       <GlassLink href="/resources" className="mb-5 h-9 gap-1 px-3 text-sm">
         <ArrowLeft className="size-4" /> Library
       </GlassLink>
 
-      <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
-        <div>
-          <h1 className="text-sprout-cream flex items-center gap-2.5 text-3xl font-bold tracking-[-0.02em] sm:text-4xl">
-            <MessageSquare className="size-7" /> Community
-          </h1>
-          <p className="text-sprout-cream/70 mt-1.5 text-sm sm:text-base">
-            Ask anything, swap ideas, and tell Sprout what to build next.
-          </p>
-        </div>
-        {account ? (
-          <button
-            onClick={() => setComposing((v) => !v)}
-            className="inline-flex h-10 shrink-0 items-center gap-1.5 rounded-full bg-[#2E5A35] px-4 text-sm font-bold text-white shadow-[0_10px_24px_-10px_rgba(46,90,53,0.7)] transition hover:bg-[#346a3f] active:scale-95"
-          >
-            {composing ? <X className="size-4" /> : <Plus className="size-4" />} {composing ? "Cancel" : "New post"}
-          </button>
-        ) : (
-          <span className="text-sprout-cream/60 text-sm">Add your name (top right) to post.</span>
-        )}
+      <div className="mb-6">
+        <h1 className="text-sprout-cream flex items-center gap-2.5 text-3xl font-bold tracking-[-0.02em] sm:text-4xl">
+          <MessageSquare className="size-7" /> Community
+        </h1>
+        <p className="text-sprout-cream/70 mt-1.5 text-sm sm:text-base">
+          Updates from the Sprout team, and a place to ask, swap ideas, and tell us what to build next.
+        </p>
       </div>
 
-      {/* Announcements — pinned Sprout product updates. */}
-      {ANNOUNCEMENTS.length > 0 && (
-        <div className="border-sprout-lime/30 mb-6 overflow-hidden rounded-2xl border bg-gradient-to-br from-[#2E5A35] to-[#16331E] p-4 shadow-[0_18px_40px_-18px_rgba(15,32,20,0.9)] sm:p-5">
-          <div className="text-sprout-lime flex items-center gap-2 text-xs font-bold tracking-[0.12em] uppercase">
-            <Megaphone className="size-4" /> Announcements
-          </div>
-          <div className="mt-3 space-y-3">
-            {ANNOUNCEMENTS.slice(0, 3).map((a) => (
-              <div key={a.id} className="border-sprout-lime/40 border-l-2 pl-3">
-                <p className="text-sprout-cream font-bold">{a.title}</p>
-                <p className="text-sprout-cream/70 mt-0.5 text-sm leading-relaxed">{a.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {composing && account && (
-        <div className={`${lightCard} mb-6 p-4`}>
-          <input
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="What's on your mind? e.g. Can you add more multiplication packs?"
-            autoFocus
-            className="h-11 w-full rounded-lg border border-black/10 bg-white px-3 text-[#1B3722] outline-none focus:border-[#2E5A35]"
-          />
-          <textarea
-            value={body}
-            onChange={(e) => setBody(e.target.value)}
-            placeholder="Add detail (optional)."
-            rows={4}
-            className="mt-2 w-full resize-none rounded-lg border border-black/10 bg-white px-3 py-2 text-sm leading-relaxed text-[#1B3722] outline-none focus:border-[#2E5A35]"
-          />
-          <div className="mt-3 flex justify-end">
-            <button
-              onClick={post}
-              disabled={!title.trim() || posting}
-              className="inline-flex h-10 items-center gap-1.5 rounded-full bg-[#2E5A35] px-4 text-sm font-bold text-white transition hover:bg-[#346a3f] active:scale-95 disabled:pointer-events-none disabled:opacity-50"
-            >
-              <Send className="size-4" /> {posting ? "Posting..." : "Post"}
-            </button>
-          </div>
-        </div>
-      )}
-
-      <div className="mb-4 flex flex-wrap items-center gap-2">
-        <div className="border-sprout-cream/15 bg-sprout-cream/10 flex min-w-0 flex-1 items-center gap-2 rounded-full border px-4">
-          <Search className="text-sprout-cream/50 size-4 shrink-0" />
-          <input
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-            placeholder="Search the community..."
-            className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none"
-          />
-          {q && (
-            <button onClick={() => setQ("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
-              <X className="size-4" />
-            </button>
+      {/* Filter: the two sections people switch between. */}
+      <div className="mb-6 flex items-center gap-2">
+        <button onClick={() => setTab("announcements")} className={pill(tab === "announcements", "h-10 px-5 text-sm")}>
+          Announcements
+          {unseenAnnouncements(announcementsSeenAt) > 0 && tab !== "announcements" && (
+            <span className="grid size-4 min-w-4 place-items-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white">
+              {unseenAnnouncements(announcementsSeenAt)}
+            </span>
           )}
-        </div>
-        <button onClick={() => setSort("new")} className={pill(sort === "new", "h-9 px-4 text-sm")}>
-          New
         </button>
-        <button onClick={() => setSort("top")} className={pill(sort === "top", "h-9 px-4 text-sm")}>
-          Top
+        <button onClick={() => setTab("community")} className={pill(tab === "community", "h-10 px-5 text-sm")}>
+          Community
         </button>
       </div>
 
-      {loading ? (
-        <p className="text-sprout-cream/60 text-sm">Loading…</p>
-      ) : off ? (
-        <div className={`${lightCard} p-8 text-center`}>
-          <p className="text-[#1B3722]/70">The community is offline right now. Check back soon.</p>
-        </div>
-      ) : threads.length === 0 ? (
-        <div className={`${lightCard} p-8 text-center`}>
-          <p className="text-[#1B3722]/70">{q ? "No posts match that." : "No posts yet. Start the first conversation."}</p>
-        </div>
-      ) : (
-        <div className="divide-sprout-cream/10 border-sprout-cream/10 bg-sprout-cream/[0.04] divide-y overflow-hidden rounded-2xl border">
-          {threads.map((t, i) => (
-            <Link
-              key={t.id}
-              href={`/resources/forum/${t.id}`}
-              style={{ animationDelay: `${Math.min(i, 11) * 30}ms` }}
-              className="group animate-in fade-in fill-mode-both hover:bg-sprout-cream/[0.07] flex gap-3 px-3 py-3.5 duration-500 transition sm:px-4"
-            >
-              <span className={cn("grid size-9 shrink-0 place-items-center rounded-full text-sm font-bold", avatarClass(t.creatorName))}>
-                {capName(t.creatorName).charAt(0)}
-              </span>
-              <div className="min-w-0 flex-1">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-sprout-cream truncate text-sm font-bold">{capName(t.creatorName)}</span>
-                  <span className="text-sprout-cream/40 shrink-0 text-xs">{timeAgo(t.createdAt)}</span>
-                </div>
-                <p className="text-sprout-cream/90 mt-0.5 leading-snug">{t.title}</p>
-                <div className="text-sprout-cream/50 mt-2 flex items-center gap-4 text-xs">
-                  <span className="inline-flex items-center gap-1">
-                    <ArrowBigUp className="size-3.5" /> {t.upvotes}
+      {tab === "announcements" ? (
+        <div className="grid gap-4 sm:grid-cols-2">
+          {ANNOUNCEMENTS.map((a) => (
+            <div key={a.id} className={cn(CARD_CLS, "p-5")} style={CARD_BG}>
+              <div className="flex items-center justify-between gap-2">
+                <span className="inline-flex items-center gap-2">
+                  <span className="ring-[#2E5A35]/15 grid size-7 place-items-center rounded-full bg-white shadow-sm ring-1">
+                    <SproutMascotIcon className="size-5" />
                   </span>
-                  <span className="inline-flex items-center gap-1">
-                    <MessageSquare className="size-3.5" /> {t.commentCount} {t.commentCount === 1 ? "reply" : "replies"}
-                  </span>
-                </div>
+                  <span className="text-sm font-bold text-[#2E5A35]">Sprout Team</span>
+                </span>
+                <span className="text-xs font-medium text-[#1B3722]/45">{fmtDate(a.ts)}</span>
               </div>
-              <ArrowRight className="text-sprout-cream/25 group-hover:text-sprout-cream/60 size-4 shrink-0 self-center transition-colors" />
-            </Link>
+              <h3 className="mt-3 text-lg font-bold text-[#1B3722]">{a.title}</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-[#1B3722]/70">{a.body}</p>
+            </div>
           ))}
         </div>
+      ) : (
+        <>
+          <div className="mb-5 flex flex-wrap items-center gap-2">
+            <div className="border-sprout-cream/15 bg-sprout-cream/10 flex min-w-0 flex-1 items-center gap-2 rounded-full border px-4">
+              <Search className="text-sprout-cream/50 size-4 shrink-0" />
+              <input
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                placeholder="Search the community..."
+                className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none"
+              />
+              {q && (
+                <button onClick={() => setQ("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
+                  <X className="size-4" />
+                </button>
+              )}
+            </div>
+            <button onClick={() => setSort("new")} className={pill(sort === "new", "h-9 px-4 text-sm")}>
+              New
+            </button>
+            <button onClick={() => setSort("top")} className={pill(sort === "top", "h-9 px-4 text-sm")}>
+              Top
+            </button>
+            {account ? (
+              <button
+                onClick={() => setComposing((v) => !v)}
+                className="inline-flex h-9 shrink-0 items-center gap-1.5 rounded-full bg-[#2E5A35] px-4 text-sm font-bold text-white shadow-[0_10px_24px_-10px_rgba(46,90,53,0.7)] transition hover:bg-[#346a3f] active:scale-95"
+              >
+                {composing ? <X className="size-4" /> : <Plus className="size-4" />} {composing ? "Cancel" : "New post"}
+              </button>
+            ) : (
+              <span className="text-sprout-cream/60 text-sm">Add your name (top right) to post.</span>
+            )}
+          </div>
+
+          {composing && account && (
+            <div className={cn(CARD_CLS, "mb-5 p-4")} style={CARD_BG}>
+              <input
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                placeholder="What's on your mind? e.g. Can you add more multiplication packs?"
+                autoFocus
+                className="h-11 w-full rounded-lg border border-black/10 bg-white px-3 text-[#1B3722] outline-none focus:border-[#2E5A35]"
+              />
+              <textarea
+                value={body}
+                onChange={(e) => setBody(e.target.value)}
+                placeholder="Add detail (optional)."
+                rows={4}
+                className="mt-2 w-full resize-none rounded-lg border border-black/10 bg-white px-3 py-2 text-sm leading-relaxed text-[#1B3722] outline-none focus:border-[#2E5A35]"
+              />
+              <div className="mt-3 flex justify-end">
+                <button
+                  onClick={post}
+                  disabled={!title.trim() || posting}
+                  className="inline-flex h-10 items-center gap-1.5 rounded-full bg-[#2E5A35] px-4 text-sm font-bold text-white transition hover:bg-[#346a3f] active:scale-95 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  <Send className="size-4" /> {posting ? "Posting..." : "Post"}
+                </button>
+              </div>
+            </div>
+          )}
+
+          {loading ? (
+            <p className="text-sprout-cream/60 text-sm">Loading…</p>
+          ) : off ? (
+            <div className={cn(CARD_CLS, "p-8 text-center")} style={CARD_BG}>
+              <p className="text-[#1B3722]/70">The community is offline right now. Check back soon.</p>
+            </div>
+          ) : threads.length === 0 ? (
+            <div className={cn(CARD_CLS, "p-8 text-center")} style={CARD_BG}>
+              <p className="text-[#1B3722]/70">{q ? "No posts match that." : "No posts yet. Start the first conversation."}</p>
+            </div>
+          ) : (
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {threads.map((t, i) => (
+                <Link
+                  key={t.id}
+                  href={`/resources/forum/${t.id}`}
+                  style={{ ...CARD_BG, animationDelay: `${Math.min(i, 11) * 35}ms` }}
+                  className={cn(CARD_CLS, "group animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-4 duration-500 transition hover:-translate-y-1")}
+                >
+                  <div className="flex items-center gap-2">
+                    <span className={cn("grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold", avatarClass(t.creatorName))}>
+                      {capName(t.creatorName).charAt(0)}
+                    </span>
+                    <span className="min-w-0 truncate text-sm font-bold text-[#1B3722]">{capName(t.creatorName)}</span>
+                    <span className="shrink-0 text-xs text-[#1B3722]/45">{timeAgo(t.createdAt)}</span>
+                  </div>
+                  <p className="mt-2.5 flex-1 font-bold leading-snug text-[#1B3722]">{t.title}</p>
+                  <div className="mt-3 flex items-center gap-4 border-t border-[#2E5A35]/10 pt-3 text-xs text-[#1B3722]/55">
+                    <span className="inline-flex items-center gap-1">
+                      <ArrowBigUp className="size-3.5" /> {t.upvotes}
+                    </span>
+                    <span className="inline-flex items-center gap-1">
+                      <MessageSquare className="size-3.5" /> {t.commentCount} {t.commentCount === 1 ? "reply" : "replies"}
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </>
       )}
     </div>
   );
