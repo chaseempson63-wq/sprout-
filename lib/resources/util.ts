@@ -35,19 +35,19 @@ export function capName(s?: string): string {
 // templates, the Build-your-own card, and Community sheets feel cohesive.
 const CARD_SHADOW = "rounded-2xl border shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
 const CARD_TINTS = [
-  "bg-[#FBF7EE] border-[#2E5A35]/15", // cream
-  "bg-[#ECF4E9] border-[#3C6B3F]/20", // mint
-  "bg-[#F4F7E6] border-[#5E7E2F]/18", // pale lime
-  "bg-[#E9F2EE] border-[#2E6A5A]/16", // cool sage
-  "bg-[#F7F2E2] border-[#9A7A3A]/16", // warm sand
-  "bg-[#FBEEE6] border-[#B5683C]/16", // soft peach
-  "bg-[#FBEAEA] border-[#B54C4C]/15", // soft rose
-  "bg-[#F3EDF9] border-[#7A5AA0]/15", // soft lavender
-  "bg-[#E7F1F8] border-[#3A6E97]/16", // soft sky
-  "bg-[#E6F3EF] border-[#2E8A76]/15", // soft teal
-  "bg-[#FBF2D9] border-[#B59A3A]/16", // soft butter
-  "bg-[#F1F2DE] border-[#6E7E2F]/16", // soft olive
-  "bg-[#FBE8F0] border-[#B54C86]/15", // soft pink
+  "bg-[#FDFBF5] border-[#2E5A35]/12", // cream
+  "bg-[#F2F8EF] border-[#3C6B3F]/12", // mint
+  "bg-[#F7FAEC] border-[#5E7E2F]/12", // pale lime
+  "bg-[#F0F7F3] border-[#2E6A5A]/12", // cool sage
+  "bg-[#FAF6EA] border-[#9A7A3A]/12", // warm sand
+  "bg-[#FDF4EC] border-[#B5683C]/12", // soft peach
+  "bg-[#FDF1F0] border-[#B54C4C]/12", // soft rose
+  "bg-[#F7F3FB] border-[#7A5AA0]/12", // soft lavender
+  "bg-[#EFF6FB] border-[#3A6E97]/12", // soft sky
+  "bg-[#EEF8F3] border-[#2E8A76]/12", // soft teal
+  "bg-[#FDF6E3] border-[#B59A3A]/12", // soft butter
+  "bg-[#F6F7E8] border-[#6E7E2F]/12", // soft olive
+  "bg-[#FDEFF5] border-[#B54C86]/12", // soft pink
 ];
 
 export function cardTint(i: number): string {

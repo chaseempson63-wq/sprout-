@@ -105,7 +105,7 @@ export default function CommunityHome() {
       {/* Filter: the two sections people switch between. */}
       <div className="mb-6 flex items-center gap-2">
         <button onClick={() => setTab("announcements")} className={pill(tab === "announcements", "h-10 px-5 text-sm")}>
-          Announcements
+          🚨 Announcements
           {unseenAnnouncements(announcementsSeenAt) > 0 && tab !== "announcements" && (
             <span className="grid size-4 min-w-4 place-items-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white">
               {unseenAnnouncements(announcementsSeenAt)}
@@ -118,22 +118,31 @@ export default function CommunityHome() {
       </div>
 
       {tab === "announcements" ? (
-        <div className="grid gap-4 sm:grid-cols-2">
-          {ANNOUNCEMENTS.map((a) => (
-            <div key={a.id} className={cn(cardTintFor(a.id), "p-5")}>
-              <div className="flex items-center justify-between gap-2">
-                <span className="inline-flex items-center gap-2">
-                  <span className="ring-[#2E5A35]/15 grid size-7 place-items-center rounded-full bg-white shadow-sm ring-1">
-                    <SproutMascotIcon className="size-5" />
+        <div className="space-y-4">
+          {ANNOUNCEMENTS.map((a, i) => {
+            const latest = i === 0;
+            return (
+              <div
+                key={a.id}
+                className={cn(
+                  "rounded-2xl border p-5 shadow-[0_16px_36px_-14px_rgba(0,0,0,0.5)]",
+                  latest ? "border-[#CDEFA0]/30 bg-gradient-to-br from-[#2E5A35] to-[#16331E]" : "border-[#2E5A35]/15 bg-[#E9F3E6]",
+                )}
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="inline-flex items-center gap-2">
+                    <span className={cn("grid size-7 place-items-center rounded-full shadow-sm", latest ? "bg-sprout-cream" : "ring-[#2E5A35]/15 bg-white ring-1")}>
+                      <SproutMascotIcon className="size-5" />
+                    </span>
+                    <span className={cn("text-sm font-bold", latest ? "text-sprout-lime" : "text-[#2E5A35]")}>🚨 Sprout Team</span>
                   </span>
-                  <span className="text-sm font-bold text-[#2E5A35]">Sprout Team</span>
-                </span>
-                <span className="text-xs font-medium text-[#1B3722]/45">{fmtDate(a.ts)}</span>
+                  <span className={cn("text-xs font-medium", latest ? "text-sprout-cream/50" : "text-[#1B3722]/45")}>{fmtDate(a.ts)}</span>
+                </div>
+                <h3 className={cn("mt-3 text-lg font-bold", latest ? "text-sprout-cream" : "text-[#1B3722]")}>{a.title}</h3>
+                <p className={cn("mt-1.5 text-sm leading-relaxed", latest ? "text-sprout-cream/75" : "text-[#1B3722]/70")}>{a.body}</p>
               </div>
-              <h3 className="mt-3 text-lg font-bold text-[#1B3722]">{a.title}</h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-[#1B3722]/70">{a.body}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       ) : (
         <>
