@@ -40,10 +40,26 @@ const CARD_TINTS = [
   "bg-[#F4F7E6] border-[#5E7E2F]/18", // pale lime
   "bg-[#E9F2EE] border-[#2E6A5A]/16", // cool sage
   "bg-[#F7F2E2] border-[#9A7A3A]/16", // warm sand
+  "bg-[#FBEEE6] border-[#B5683C]/16", // soft peach
+  "bg-[#FBEAEA] border-[#B54C4C]/15", // soft rose
+  "bg-[#F3EDF9] border-[#7A5AA0]/15", // soft lavender
+  "bg-[#E7F1F8] border-[#3A6E97]/16", // soft sky
+  "bg-[#E6F3EF] border-[#2E8A76]/15", // soft teal
+  "bg-[#FBF2D9] border-[#B59A3A]/16", // soft butter
+  "bg-[#F1F2DE] border-[#6E7E2F]/16", // soft olive
+  "bg-[#FBE8F0] border-[#B54C86]/15", // soft pink
 ];
 
 export function cardTint(i: number): string {
   return `${CARD_SHADOW} ${CARD_TINTS[((i % CARD_TINTS.length) + CARD_TINTS.length) % CARD_TINTS.length]}`;
+}
+
+// Stable pseudo-random tint from a string seed (e.g. a post id), so every
+// community card gets its own colour that stays put across re-sorts.
+export function cardTintFor(seed: string): string {
+  let h = 2166136261;
+  for (let i = 0; i < seed.length; i++) h = Math.imul(h ^ seed.charCodeAt(i), 16777619) >>> 0;
+  return cardTint(h);
 }
 
 // Short relative time for community/forum timestamps: "just now", "5m", "3h",

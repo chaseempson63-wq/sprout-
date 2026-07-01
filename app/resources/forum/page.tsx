@@ -9,27 +9,16 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import type { CSSProperties } from "react";
 import { ArrowBigUp, ArrowLeft, MessageSquare, Plus, Search, Send, X } from "lucide-react";
 import { createThread, listThreads, makerWire } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
-import { capName, timeAgo } from "@/lib/resources/util";
+import { capName, cardTint, cardTintFor, timeAgo } from "@/lib/resources/util";
 import { cn } from "@/lib/utils";
 import { pill } from "@/lib/resources/pill";
 import { ANNOUNCEMENTS, unseenAnnouncements } from "@/lib/resources/announcements";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { GlassLink } from "@/components/ui/glass";
 import type { ForumThread } from "@/lib/resources/types";
-
-// A rich, creamy card: warm cream base with a very light yellow glow easing in
-// from the top-left corner and a very light green glow from the bottom-right, so
-// each one pops off the dark canvas instead of a flat panel or a see-through row.
-const CARD_CLS =
-  "rounded-2xl border border-[#2E5A35]/12 shadow-[0_16px_36px_-14px_rgba(0,0,0,0.55),inset_0_1px_0_rgba(255,255,255,0.7)]";
-const CARD_BG: CSSProperties = {
-  background:
-    "radial-gradient(125% 125% at 0% 0%, #F6E7B6 0%, rgba(246,231,182,0) 42%), radial-gradient(125% 125% at 100% 100%, #D9EDC8 0%, rgba(217,237,200,0) 46%), #FCF8EF",
-};
 
 const AVATARS = [
   "bg-[#CDEFA0] text-[#1B3722]",
@@ -131,7 +120,7 @@ export default function CommunityHome() {
       {tab === "announcements" ? (
         <div className="grid gap-4 sm:grid-cols-2">
           {ANNOUNCEMENTS.map((a) => (
-            <div key={a.id} className={cn(CARD_CLS, "p-5")} style={CARD_BG}>
+            <div key={a.id} className={cn(cardTintFor(a.id), "p-5")}>
               <div className="flex items-center justify-between gap-2">
                 <span className="inline-flex items-center gap-2">
                   <span className="ring-[#2E5A35]/15 grid size-7 place-items-center rounded-full bg-white shadow-sm ring-1">
@@ -182,7 +171,7 @@ export default function CommunityHome() {
           </div>
 
           {composing && account && (
-            <div className={cn(CARD_CLS, "mb-5 p-4")} style={CARD_BG}>
+            <div className={cn(cardTint(0), "mb-5 p-4")}>
               <input
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
@@ -212,11 +201,11 @@ export default function CommunityHome() {
           {loading ? (
             <p className="text-sprout-cream/60 text-sm">Loading…</p>
           ) : off ? (
-            <div className={cn(CARD_CLS, "p-8 text-center")} style={CARD_BG}>
+            <div className={cn(cardTint(0), "p-8 text-center")}>
               <p className="text-[#1B3722]/70">The community is offline right now. Check back soon.</p>
             </div>
           ) : threads.length === 0 ? (
-            <div className={cn(CARD_CLS, "p-8 text-center")} style={CARD_BG}>
+            <div className={cn(cardTint(0), "p-8 text-center")}>
               <p className="text-[#1B3722]/70">{q ? "No posts match that." : "No posts yet. Start the first conversation."}</p>
             </div>
           ) : (
@@ -225,8 +214,8 @@ export default function CommunityHome() {
                 <Link
                   key={t.id}
                   href={`/resources/forum/${t.id}`}
-                  style={{ ...CARD_BG, animationDelay: `${Math.min(i, 11) * 35}ms` }}
-                  className={cn(CARD_CLS, "group animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-4 duration-500 transition hover:-translate-y-1")}
+                  style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }}
+                  className={cn(cardTintFor(t.id), "group animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-4 duration-500 transition hover:-translate-y-1")}
                 >
                   <div className="flex items-center gap-2">
                     {t.photo ? (
