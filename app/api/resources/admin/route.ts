@@ -84,14 +84,17 @@ export async function POST(request: Request) {
   // only inserts what's missing. Inserts parents before children (FK order),
   // and lets the comment-count trigger maintain counts.
   if (o.action === "seed") {
+    // merge=true updates existing rows on conflict (so re-running the seed
+    // refreshes text like thread/comment bodies), otherwise it skips them.
     const ins = async (
       table: string,
       rows: Record<string, unknown>[],
+      merge = false,
     ): Promise<{ inserted: number; error: string | null }> => {
       if (rows.length === 0) return { inserted: 0, error: null };
       const { data, error } = await sb
         .from(table)
-        .upsert(rows, { onConflict: "id", ignoreDuplicates: true })
+        .upsert(rows, { onConflict: "id", ignoreDuplicates: !merge })
         .select("id");
       return { inserted: data?.length ?? 0, error: error?.message ?? null };
     };
@@ -116,10 +119,10 @@ export async function POST(request: Request) {
     // Makers first (FK target), then posts + threads, then comments (parents
     // before replies). Stop and report on the first hard error.
     const steps: [string, () => Promise<{ inserted: number; error: string | null }>][] = [
-      ["makers", () => ins("resource_makers", makerRows)],
-      ["threads", () => ins("resource_threads", threadRows)],
-      ["comments", () => ins("resource_comments", topComments.map(commentRow))],
-      ["replies", () => ins("resource_comments", replies.map(commentRow))],
+      ["makers", () => ins("resource_makers", makerRows, true)],
+      ["threads", () => ins("resource_threads", threadRows, true)],
+      ["comments", () => ins("resource_comments", topComments.map(commentRow), true)],
+      ["replies", () => ins("resource_comments", replies.map(commentRow), true)],
       ["follows", () => ins("resource_follows", buildFollows())],
     ];
     const result: Record<string, number> = {};
