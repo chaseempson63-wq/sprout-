@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Check, Globe, MessageSquare, Plus, Search, Star, Trash2, Users, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
+import { MakerAvatar } from "./_components/MakerAvatar";
 import { DocumentNudge } from "./_components/DocumentNudge";
 import { HowItWorks, type HowStep } from "./_components/HowItWorks";
 import { Typewriter } from "./_components/Typewriter";
@@ -323,8 +324,8 @@ export default function LibraryHome() {
                         {p.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{p.subtitle}</p>}
                       </Link>
                       <div className="mt-3 flex items-center justify-between gap-2 border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
-                        <span className="min-w-0 truncate">
-                          by{" "}
+                        <span className="flex min-w-0 items-center gap-1.5 truncate">
+                          <MakerAvatar name={p.creatorName} photo={p.photo} px={22} />
                           <Link href={`/resources/creator/${p.handle}`} className="font-semibold text-[#2E5A35] hover:underline">
                             {capName(p.creatorName)}
                           </Link>

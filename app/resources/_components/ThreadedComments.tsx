@@ -14,6 +14,7 @@ import { capName, timeAgo } from "@/lib/resources/util";
 import { GlassButton } from "@/components/ui/glass";
 import type { Comment } from "@/lib/resources/types";
 import { UpvoteButton } from "./UpvoteButton";
+import { MakerAvatar } from "./MakerAvatar";
 import { ReportControl } from "./ReportControl";
 import { HideControl } from "./HideControl";
 
@@ -98,9 +99,7 @@ function CommentNode({
     <div className="text-sm">
       <div className="rounded-xl bg-white/70 px-3 py-2 ring-1 ring-[#2E5A35]/10">
         <div className="flex items-center gap-2">
-          <span className="grid size-6 shrink-0 place-items-center rounded-full bg-[#2E5A35] text-[11px] font-bold text-white">
-            {capName(node.creatorName).charAt(0)}
-          </span>
+          <MakerAvatar name={node.creatorName} photo={node.photo} px={24} />
           <Link href={`/resources/creator/${node.handle}`} className="font-semibold text-[#1B3722] hover:underline">
             {capName(node.creatorName)}
           </Link>
@@ -169,7 +168,8 @@ export function ThreadedComments({
     if (!account) return false;
     const res = await postComment(makerWire(account), targetType, targetId, text, parentId ?? undefined);
     if (res.comment) {
-      setComments((prev) => insertComment(prev, res.comment!));
+      const c = { ...res.comment, photo: res.comment.photo ?? account.photo };
+      setComments((prev) => insertComment(prev, c));
       return true;
     }
     return false;

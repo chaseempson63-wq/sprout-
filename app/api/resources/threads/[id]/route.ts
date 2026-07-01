@@ -20,7 +20,7 @@ export async function GET(request: Request, ctx: { params: Promise<{ id: string 
 
   const { data, error } = await serverSupabase()
     .from("resource_threads")
-    .select("*")
+    .select("*, maker:resource_makers(photo)")
     .eq("id", id)
     .eq("hidden", false)
     .maybeSingle();

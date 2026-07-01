@@ -9,6 +9,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import { UpvoteButton } from "../../_components/UpvoteButton";
+import { MakerAvatar } from "../../_components/MakerAvatar";
 import { ReportControl } from "../../_components/ReportControl";
 import { HideControl } from "../../_components/HideControl";
 import { ThreadedComments } from "../../_components/ThreadedComments";
@@ -66,12 +67,15 @@ export default function ForumThreadPage() {
         <>
           <div className={`${lightCard} mb-6 p-6`}>
             <h1 className="text-2xl font-bold text-[#1B3722]">{thread.title}</h1>
-            <p className="mt-1 text-xs text-[#1B3722]/55">
-              <Link href={`/resources/creator/${thread.handle}`} className="font-semibold text-[#2E5A35] hover:underline">
-                {capName(thread.creatorName)}
-              </Link>{" "}
-              · {timeAgo(thread.createdAt)}
-            </p>
+            <div className="mt-2 flex items-center gap-2">
+              <MakerAvatar name={thread.creatorName} photo={thread.photo} px={30} />
+              <p className="text-xs text-[#1B3722]/55">
+                <Link href={`/resources/creator/${thread.handle}`} className="font-semibold text-[#2E5A35] hover:underline">
+                  {capName(thread.creatorName)}
+                </Link>{" "}
+                · {timeAgo(thread.createdAt)}
+              </p>
+            </div>
             {thread.body && <p className="mt-4 break-words whitespace-pre-wrap text-[#1B3722]/85">{thread.body}</p>}
             <div className="mt-4 flex flex-wrap items-center gap-2">
               <UpvoteButton targetType="thread" targetId={thread.id} count={thread.upvotes} voted={votedIds.includes(thread.id)} />

@@ -48,15 +48,36 @@ export function UpvoteButton({
     setBusy(false);
   }
 
+  const label = account ? (on ? "Remove your upvote" : "Upvote") : "Add your name to vote";
+
+  // Active = a solid green pill (unmistakable "upvoted"). Inactive keeps the
+  // glass look. Rendering a plain button when on avoids the glass overlay
+  // swallowing the fill.
+  if (on) {
+    return (
+      <button
+        type="button"
+        onClick={click}
+        disabled={!account || busy}
+        aria-pressed
+        title={label}
+        className={`inline-flex h-8 shrink-0 items-center gap-1 rounded-full bg-[#2E7D32] px-2.5 text-xs font-bold text-white shadow-[0_6px_16px_-6px_rgba(46,125,50,0.65)] transition active:scale-95 disabled:opacity-70 ${className}`}
+      >
+        <ArrowBigUp className="size-4 fill-white text-white" />
+        {n}
+      </button>
+    );
+  }
+
   return (
     <GlassButton
       onClick={click}
       disabled={!account || busy}
-      aria-pressed={on}
-      title={account ? (on ? "Remove your upvote" : "Upvote") : "Add your name to vote"}
-      className={`h-8 gap-1 px-2.5 text-xs ${on ? "ring-2 ring-[#2E5A35]/50" : ""} ${className}`}
+      aria-pressed={false}
+      title={label}
+      className={`h-8 gap-1 px-2.5 text-xs ${className}`}
     >
-      <ArrowBigUp className={`size-4 ${on ? "fill-[#2E5A35] text-[#2E5A35]" : ""}`} />
+      <ArrowBigUp className="size-4" />
       {n}
     </GlassButton>
   );

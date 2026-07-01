@@ -159,6 +159,7 @@ export interface ForumThread {
   makerId: string;
   handle: string;
   creatorName: string;
+  photo?: string;
   title: string;
   body: string;
   upvotes: number;
@@ -176,6 +177,7 @@ export interface Comment {
   makerId: string;
   handle: string;
   creatorName: string;
+  photo?: string;
   body: string;
   upvotes: number;
   createdAt: number;

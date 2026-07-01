@@ -175,6 +175,7 @@ interface ThreadRow {
   upvotes: number | null;
   comment_count: number | null;
   created_at: string;
+  maker?: MakerEmbed | MakerEmbed[] | null;
 }
 interface CommentRow {
   id: string;
@@ -187,6 +188,7 @@ interface CommentRow {
   body: string;
   upvotes: number | null;
   created_at: string;
+  maker?: MakerEmbed | MakerEmbed[] | null;
 }
 
 const ms = (t: string | null): number => (t ? new Date(t).getTime() : 0);
@@ -212,11 +214,13 @@ export function mapPost(r: PostRow): CommunityPost {
 }
 
 export function mapThread(r: ThreadRow): ForumThread {
+  const m = Array.isArray(r.maker) ? r.maker[0] : r.maker;
   return {
     id: r.id,
     makerId: r.maker_id,
     handle: r.handle,
     creatorName: r.creator_name,
+    photo: m?.photo ?? undefined,
     title: r.title,
     body: r.body ?? "",
     upvotes: r.upvotes ?? 0,
@@ -226,6 +230,7 @@ export function mapThread(r: ThreadRow): ForumThread {
 }
 
 export function mapComment(r: CommentRow): Comment {
+  const m = Array.isArray(r.maker) ? r.maker[0] : r.maker;
   return {
     id: r.id,
     targetType: r.target_type,
@@ -234,6 +239,7 @@ export function mapComment(r: CommentRow): Comment {
     makerId: r.maker_id,
     handle: r.handle,
     creatorName: r.creator_name,
+    photo: m?.photo ?? undefined,
     body: r.body,
     upvotes: r.upvotes ?? 0,
     createdAt: ms(r.created_at),
@@ -307,7 +313,7 @@ export async function votedSet(
 export async function commentsFor(targetType: "post" | "thread", targetId: string): Promise<Comment[]> {
   const { data, error } = await serverSupabase()
     .from("resource_comments")
-    .select("*")
+    .select("*, maker:resource_makers(photo)")
     .eq("target_type", targetType)
     .eq("target_id", targetId)
     .eq("hidden", false)

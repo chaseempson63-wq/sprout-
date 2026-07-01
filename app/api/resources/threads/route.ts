@@ -25,7 +25,7 @@ export async function GET(request: Request) {
   const q = url.searchParams.get("q")?.trim();
   const sort = url.searchParams.get("sort") === "top" ? "top" : "new";
 
-  let query = serverSupabase().from("resource_threads").select("*").eq("hidden", false).limit(50);
+  let query = serverSupabase().from("resource_threads").select("*, maker:resource_makers(photo)").eq("hidden", false).limit(50);
   query =
     sort === "top"
       ? query.order("upvotes", { ascending: false }).order("created_at", { ascending: false })

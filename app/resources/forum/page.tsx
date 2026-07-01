@@ -229,9 +229,14 @@ export default function CommunityHome() {
                   className={cn(CARD_CLS, "group animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-4 duration-500 transition hover:-translate-y-1")}
                 >
                   <div className="flex items-center gap-2">
-                    <span className={cn("grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold", avatarClass(t.creatorName))}>
-                      {capName(t.creatorName).charAt(0)}
-                    </span>
+                    {t.photo ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={t.photo} alt="" className="size-8 shrink-0 rounded-full object-cover" />
+                    ) : (
+                      <span className={cn("grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold", avatarClass(t.creatorName))}>
+                        {capName(t.creatorName).charAt(0)}
+                      </span>
+                    )}
                     <span className="min-w-0 truncate text-sm font-bold text-[#1B3722]">{capName(t.creatorName)}</span>
                     <span className="shrink-0 text-xs text-[#1B3722]/45">{timeAgo(t.createdAt)}</span>
                   </div>
