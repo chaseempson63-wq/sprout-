@@ -36,30 +36,30 @@ export interface SeedMaker {
 }
 
 export const SEED_MAKERS: SeedMaker[] = [
-  { slug: "danielle", handle: "danielle", name: "Danielle R.", bio: "Homeschooling 3 (ages 5, 8, 11). Dinosaurs, baking, and chaos." },
-  { slug: "megan", handle: "meganmakes", name: "Megan L.", bio: "Gold Coast mum of 2. Unschool-leaning, but I like a good worksheet." },
-  { slug: "aroha", handle: "aroha", name: "Aroha W.", bio: "Kia ora. Home learning 4 tamariki in Whangārei." },
-  { slug: "becca", handle: "becca", name: "Rebecca W.", bio: "Former teacher, now home with my own 3. Adelaide." },
-  { slug: "kayla", handle: "kayla_m", name: "Kayla M.", bio: "Spokane, WA. Boy mum times two, both allergic to handwriting." },
-  { slug: "fiona", handle: "fionahomeed", name: "Fiona M.", bio: "Hastings, NZ. Ages 6 and 9. Tea-fuelled." },
-  { slug: "tania", handle: "taniag", name: "Tania G.", bio: "Cairns. Homeschooling since Covid and never looked back." },
-  { slug: "heather", handle: "heathers", name: "Heather S.", bio: "Greenville, SC. Four kids, one income, all heart." },
-  { slug: "renee", handle: "reneec", name: "Renee C.", bio: "Palmy. My 7-year-old only does maths if it is about trucks." },
-  { slug: "court", handle: "courtb", name: "Courtney B.", bio: "Mackay. Twins (6) and a threenager." },
-  { slug: "naomi", handle: "naomik", name: "Naomi K.", bio: "Launceston. A reading-obsessed 10-year-old and a reluctant 7-year-old." },
-  { slug: "priya", handle: "priyas", name: "Priya S.", bio: "Melbourne. Two girls, science everything." },
-  { slug: "whitney", handle: "whitneyk", name: "Whitney K.", bio: "Austin, TX. Road-schooling family of 5." },
-  { slug: "manaia", handle: "manaia", name: "Manaia T.", bio: "Kerikeri. Home learning, beach learning, garden learning." },
-  { slug: "steph", handle: "stephv", name: "Steph V.", bio: "Rotorua. Ages 8 and 11, mad keen on history." },
-  { slug: "bel", handle: "belj", name: "Bel J.", bio: "Dunedin. One wild 6-year-old. Survives on coffee and lamination." },
-  { slug: "grace", handle: "gracep", name: "Grace P.", bio: "Lubbock, TX. Three littles, big on phonics." },
-  { slug: "monique", handle: "moniqued", name: "Monique D.", bio: "Gisborne. Unschool, plus worksheets when the mood strikes." },
-  { slug: "kelsey", handle: "kelseyt", name: "Kelsey T.", bio: "Bunbury, WA. My 5-year-old is starting out, and I am learning as I go." },
-  { slug: "ruth", handle: "ruthp", name: "Ruth P.", bio: "Masterton. Four kids, two dogs, one chaotic table." },
-  { slug: "tabitha", handle: "tabitha", name: "Tabitha R.", bio: "Springfield, MO. Comprehension and copywork are my jam." },
-  { slug: "lucy", handle: "lucyp", name: "Lucy P.", bio: "Orange, NSW. Ages 6 and 8, sport-mad both of them." },
-  { slug: "imogen", handle: "imogenr", name: "Imogen R.", bio: "Mount Maunganui. Ocean-theme everything for my 4-year-old." },
-  { slug: "dawn", handle: "dawnk", name: "Dawn K.", bio: "Salem, OR. Veteran homeschooler, 15 years deep." },
+  { slug: "danielle", handle: "danielle", name: "Danielle Roberts", bio: "Homeschooling 3 (ages 5, 8, 11). Dinosaurs, baking, and chaos." },
+  { slug: "megan", handle: "meganmakes", name: "Megan Lewis", bio: "Gold Coast mum of 2. Unschool-leaning, but I like a good worksheet." },
+  { slug: "aroha", handle: "aroha", name: "Aroha Wiremu", bio: "Kia ora. Home learning 4 tamariki in Whangārei." },
+  { slug: "becca", handle: "quietwren", name: "Quiet Wren", bio: "Former teacher, now home with my own 3. Keeping this one low-key." },
+  { slug: "kayla", handle: "kayla_m", name: "Kayla Morrison", bio: "Spokane, WA. Boy mum times two, both allergic to handwriting." },
+  { slug: "fiona", handle: "fionahomeed", name: "Fiona Mercer", bio: "Hastings, NZ. Ages 6 and 9. Tea-fuelled." },
+  { slug: "tania", handle: "taniag", name: "Tania Grant", bio: "Cairns. Homeschooling since Covid and never looked back." },
+  { slug: "heather", handle: "heathers", name: "Heather Sullivan", bio: "Greenville, SC. Four kids, one income, all heart." },
+  { slug: "renee", handle: "reneec", name: "Renee Carter", bio: "Palmy. My 7-year-old only does maths if it is about trucks." },
+  { slug: "court", handle: "braveotter", name: "Brave Otter", bio: "Twins (6) and a threenager. Here anonymously, just sharing what works." },
+  { slug: "naomi", handle: "curiouskoala", name: "Curious Koala", bio: "A reading-obsessed 10-year-old and a reluctant 7-year-old." },
+  { slug: "priya", handle: "priyas", name: "Priya Sharma", bio: "Melbourne. Two girls, science everything." },
+  { slug: "whitney", handle: "whitneyk", name: "Whitney Koch", bio: "Austin, TX. Road-schooling family of 5." },
+  { slug: "manaia", handle: "manaia", name: "Manaia Tui", bio: "Kerikeri. Home learning, beach learning, garden learning." },
+  { slug: "steph", handle: "stephv", name: "Steph Vaughan", bio: "Rotorua. Ages 8 and 11, mad keen on history." },
+  { slug: "bel", handle: "boldmagpie", name: "Bold Magpie", bio: "One wild 6-year-old. Survives on coffee and lamination." },
+  { slug: "grace", handle: "gracep", name: "Grace Palmer", bio: "Lubbock, TX. Three littles, big on phonics." },
+  { slug: "monique", handle: "wanderingwillow", name: "Wandering Willow", bio: "Unschool, plus worksheets when the mood strikes." },
+  { slug: "kelsey", handle: "sunnyfinch", name: "Sunny Finch", bio: "My 5-year-old is starting out, and I am learning as I go." },
+  { slug: "ruth", handle: "gentlehare", name: "Gentle Hare", bio: "Four kids, two dogs, one chaotic table." },
+  { slug: "tabitha", handle: "tabitha", name: "Tabitha Reed", bio: "Springfield, MO. Comprehension and copywork are my jam." },
+  { slug: "lucy", handle: "lucyp", name: "Lucy Prescott", bio: "Orange, NSW. Ages 6 and 8, sport-mad both of them." },
+  { slug: "imogen", handle: "imogenr", name: "Imogen Rhodes", bio: "Mount Maunganui. Ocean-theme everything for my 4-year-old." },
+  { slug: "dawn", handle: "dawnk", name: "Dawn Kessler", bio: "Salem, OR. Veteran homeschooler, 15 years deep." },
 ];
 
 const makerBySlug = (slug: string) => SEED_MAKERS.find((m) => m.slug === slug)!;
@@ -85,135 +85,76 @@ export interface PostSpec {
   offline?: boolean; // generate via the offline engine (instant/free) instead of Venice
 }
 
-// One rich, Venice-generated "hero" sheet per maker.
-const HERO_SPECS: PostSpec[] = [
-  { slug: "dino-addition", maker: "danielle", templateId: "addition", age: 6, theme: "dinosaurs", imageKey: "t-rex",
-    instruction: "Make an addition worksheet for a 6 year old, dinosaur theme. About 6 single-digit problems plus a short count-the-eggs section.",
-    notes: ["Some were taller than a house", "Lived millions of years ago", "T-rex had tiny arms"] },
-  { slug: "bug-subtraction", maker: "court", templateId: "subtraction", age: 7, theme: "bugs", imageKey: "bee",
-    instruction: "Make a subtraction worksheet for a 7 year old, friendly bug theme. Around 8 take-away problems within 20.",
-    notes: ["Bees visit hundreds of flowers a day", "They dance to give directions", "Honey never goes off"] },
-  { slug: "ocean-counting", maker: "imogen", templateId: "counting", age: 4, theme: "ocean", imageKey: "fish",
-    instruction: "Make a counting worksheet for a 4 year old, ocean animals. Count the sea creatures and fill in a short number line.",
-    notes: ["Fish breathe through gills", "Some fish change colour", "They swim in groups called schools"] },
-  { slug: "rocket-multiplication", maker: "lucy", templateId: "multiplication", age: 9, theme: "space rockets", imageKey: "rocket",
-    instruction: "Make a multiplication worksheet for a 9 year old, space rocket theme. About 8 times-table problems.",
-    notes: ["Rockets push down to fly up", "Space has no air", "Astronauts float in orbit"] },
-  { slug: "pizza-division", maker: "kayla", templateId: "division", age: 10, theme: "pizza", imageKey: "pizza",
-    instruction: "Make a division worksheet for a 10 year old, pizza-sharing theme. Around 8 problems about sharing slices evenly.",
-    notes: ["Sharing equally is division", "A whole splits into equal parts", "Pizza comes from Italy"] },
-  { slug: "cake-fractions", maker: "priya", templateId: "fractions", age: 9, theme: "baking", imageKey: "cake",
-    instruction: "Make a fractions worksheet for a 9 year old, baking and cake theme. Halves, quarters and thirds, about 6 questions.",
-    notes: ["Half means two equal parts", "A quarter is one of four", "Bakers measure carefully"] },
-  { slug: "volcano-reading", maker: "steph", templateId: "reading", age: 9, theme: "volcanoes", imageKey: "volcano",
-    instruction: "Make a reading comprehension worksheet for a 9 year old about how volcanoes work. A short passage then a few questions.",
-    notes: ["Magma is melted rock", "Lava cools into new rock", "Some volcanoes sleep for years"] },
-  { slug: "space-reading", maker: "whitney", templateId: "reading", age: 8, theme: "space", imageKey: "moon",
-    instruction: "Make a reading comprehension worksheet for an 8 year old, a fun space-adventure passage with a few questions.",
-    notes: ["The Sun is a star", "Eight planets orbit it", "A comet has a glowing tail"] },
-  { slug: "rainforest-reading", maker: "tabitha", templateId: "reading", age: 10, theme: "rainforest", imageKey: "parrot",
-    instruction: "Make a reading comprehension worksheet for a 10 year old about life in the rainforest, passage plus questions.",
-    notes: ["Rainforests are warm and wet", "Home to millions of species", "The canopy is the leafy roof"] },
-  { slug: "butterfly-lifecycle", maker: "manaia", templateId: "life-cycle", age: 6, theme: "butterflies", imageKey: "butterfly-life-cycle",
-    instruction: "Make a life cycle worksheet for a 6 year old about the butterfly: order or label the four stages.",
-    notes: ["Egg, caterpillar, chrysalis, butterfly", "A caterpillar eats a lot", "Wings dry before the first flight"] },
-  { slug: "body-drawlabel", maker: "becca", templateId: "draw-label", age: 7, theme: "the human body", imageKey: "human-body",
-    instruction: "Make a draw-and-label worksheet for a 7 year old about the human body: label a few main parts.",
-    notes: ["The heart pumps blood", "Lungs help you breathe", "Bones keep you upright"] },
-  { slug: "farm-letter-trace", maker: "kelsey", templateId: "letter-tracing", age: 5, theme: "farm animals", imageKey: "pig",
-    instruction: "Make a letter tracing worksheet for a 5 year old, farm animal words to trace like cow, pig, hen and duck.",
-    notes: ["Pigs are very clever", "Cows have four stomachs", "Hens lay an egg most days"] },
-  { slug: "ocean-number-trace", maker: "imogen", templateId: "number-tracing", age: 4, theme: "ocean", imageKey: "whale",
-    instruction: "Make a number tracing worksheet for a 4 year old, numbers 1 to 10, ocean theme, with a small counting picture.",
-    notes: ["The blue whale is the biggest animal", "It sings to other whales", "It spouts water to breathe"] },
-  { slug: "bakery-money", maker: "heather", templateId: "money", age: 8, theme: "bakery", imageKey: "strawberry",
-    instruction: "Make a money worksheet for an 8 year old, adding coins to buy bakery treats. About 6 problems.",
-    notes: ["Coins add up to dollars", "Count the biggest coin first", "Change is what you get back"] },
-  { slug: "robot-shapes", maker: "bel", templateId: "shapes", age: 5, theme: "robots", imageKey: "robot",
-    instruction: "Make a shapes worksheet for a 5 year old, find and match the shapes that build a friendly robot.",
-    notes: ["A square has 4 equal sides", "A circle has no corners", "A triangle has 3 sides"] },
-  { slug: "frog-skip-counting", maker: "danielle", templateId: "skip-counting", age: 6, theme: "frogs", imageKey: "frog",
-    instruction: "Make a skip counting worksheet for a 6 year old, counting by 2s and 5s, frogs hopping on lily pads.",
-    notes: ["Frogs start as tadpoles", "They hop and swim", "Counting by 2s skips one"] },
-  { slug: "caterpillar-missing-numbers", maker: "ruth", templateId: "missing-numbers", age: 6, theme: "caterpillars", imageKey: "caterpillar",
-    instruction: "Make a missing numbers worksheet for a 6 year old, fill the gaps along a caterpillar number line.",
-    notes: ["A caterpillar has many legs", "It munches leaves all day", "It becomes a butterfly"] },
-  { slug: "zoo-word-problems", maker: "naomi", templateId: "word-problems", age: 8, theme: "zoo animals", imageKey: "elephant",
-    instruction: "Make a word problems worksheet for an 8 year old, simple add and subtract zoo-animal stories. About 5 problems.",
-    notes: ["Elephants are the biggest land animal", "They greet with their trunks", "They love a mud bath"] },
-  { slug: "cat-phonics", maker: "grace", templateId: "phonics", age: 5, theme: "animals", imageKey: "cat",
-    instruction: "Make a phonics worksheet for a 5 year old, beginning sounds with simple animal words.",
-    notes: ["Cats purr when happy", "They have great night sight", "Whiskers help them feel"] },
-  { slug: "rhyming-cat-hat", maker: "monique", templateId: "rhyming", age: 5, theme: "cats and hats", imageKey: "bat",
-    instruction: "Make a rhyming worksheet for a 5 year old, match words that rhyme like cat, hat and mat.",
-    notes: ["Rhyming words end the same", "Cat rhymes with hat", "Reading rhymes is fun"] },
-  { slug: "pets-grammar", maker: "becca", templateId: "grammar", age: 8, theme: "pets", imageKey: "dog",
-    instruction: "Make a grammar worksheet for an 8 year old, nouns and verbs using sentences about pets.",
-    notes: ["A noun is a person, place or thing", "A verb is an action", "Dogs are loyal friends"] },
-  { slug: "owl-spelling", maker: "naomi", templateId: "spelling", age: 9, theme: "animals", imageKey: "owl",
-    instruction: "Make a spelling worksheet for a 9 year old, animal theme, with a word bank and practice lines.",
-    notes: ["Owls can turn their heads far", "They hunt at night", "Their feathers are silent"] },
-  { slug: "space-fill-blank", maker: "whitney", templateId: "fill-blank-story", age: 7, theme: "space", imageKey: "comet",
-    instruction: "Make a fill-in-the-blank story worksheet for a 7 year old, a short space adventure with a word bank.",
-    notes: ["A rocket needs lots of fuel", "The Moon has no air", "Stars are giant balls of gas"] },
-  { slug: "truck-multiplication", maker: "dawn", templateId: "multiplication", age: 9, theme: "trucks", imageKey: "truck",
-    instruction: "Make a multiplication worksheet for a 9 year old, delivery-truck theme, times tables. About 8 problems.",
-    notes: ["Big rigs have many wheels", "They carry heavy loads", "Drivers travel long roads"] },
+// The 50 seeded community sheets. All Venice-generated, every one a DISTINCT
+// subject with a unique illustration. NO reading/comprehension (there were far
+// too many). Spread across creative topics + varied templates.
+// [maker, templateId, age, topic, imageKey]. Every imageKey is unique and
+// exists in public/resources/illustrations.
+const SPEC_ROWS: [string, string, number, string, string][] = [
+  ["danielle", "multiplication", 8, "T-rex hunting packs", "t-rex"],
+  ["danielle", "counting", 6, "dinosaur eggs in the nest", "dinosaur-egg"],
+  ["danielle", "fractions", 9, "sharing slices of cake", "cake"],
+  ["megan", "division", 9, "sharing bananas with the monkeys", "monkey"],
+  ["megan", "color-by-number", 7, "a bright peacock", "peacock"],
+  ["aroha", "counting", 5, "penguins on the ice", "penguin"],
+  ["aroha", "draw-label", 7, "the parts of a volcano", "volcano"],
+  ["becca", "draw-label", 9, "the human skeleton", "skeleton"],
+  ["becca", "grammar", 8, "a day at the doctor", "doctor"],
+  ["kayla", "subtraction", 8, "sharks in the reef", "shark"],
+  ["kayla", "addition", 7, "aeroplanes at the airport", "airplane"],
+  ["fiona", "fractions", 9, "sharing a watermelon", "watermelon"],
+  ["fiona", "life-cycle", 7, "the life cycle of a frog", "frog-life-cycle"],
+  ["tania", "counting", 4, "sea turtles swimming", "sea-turtle"],
+  ["tania", "matching", 6, "reef animals and where they live", "coral-reef"],
+  ["heather", "addition", 6, "ducks on the pond", "duck"],
+  ["heather", "money", 8, "shopping at the vegetable market", "vegetables"],
+  ["renee", "counting", 6, "trains at the station", "train"],
+  ["renee", "subtraction", 7, "helicopters taking off", "helicopter"],
+  ["court", "counting", 6, "ladybugs in the garden", "ladybug"],
+  ["court", "patterns", 5, "patterns on butterfly wings", "butterfly"],
+  ["naomi", "spelling", 9, "wild jungle animals", "tiger"],
+  ["naomi", "word-problems", 10, "a trip to the zoo", "elephant"],
+  ["priya", "draw-label", 9, "the planets of the solar system", "solar-system"],
+  ["priya", "life-cycle", 7, "the life cycle of a butterfly", "butterfly-life-cycle"],
+  ["priya", "draw-label", 9, "the parts of the human brain", "brain"],
+  ["whitney", "multiplication", 9, "astronauts and rocket crews", "astronaut"],
+  ["whitney", "fill-blank-story", 7, "a rocket trip into space", "rocket"],
+  ["manaia", "draw-label", 7, "the parts of a flower", "flower-parts"],
+  ["manaia", "counting", 5, "flowers in the garden", "flower"],
+  ["steph", "creative-writing", 11, "finding a hidden treasure chest", "treasure-chest"],
+  ["steph", "word-problems", 10, "knights defending the castle", "knight"],
+  ["bel", "counting", 6, "koalas up a gum tree", "koala"],
+  ["bel", "shapes", 5, "building a robot from shapes", "robot"],
+  ["grace", "phonics", 5, "animals at the zoo", "giraffe"],
+  ["grace", "letter-tracing", 5, "animals on the farm", "cow"],
+  ["monique", "counting", 5, "snails in the garden", "snail"],
+  ["monique", "color-by-number", 6, "a rainbow after the rain", "rainbow"],
+  ["kelsey", "number-tracing", 4, "counting seahorses", "seahorse"],
+  ["kelsey", "shapes", 5, "kites in the sky", "kite"],
+  ["ruth", "addition", 6, "hedgehogs in the hedge", "hedgehog"],
+  ["ruth", "division", 10, "sharing a pizza fairly", "pizza"],
+  ["tabitha", "sentence-building", 8, "our pet dog", "dog"],
+  ["tabitha", "draw-label", 8, "a tree through the four seasons", "tree"],
+  ["lucy", "multiplication", 9, "the zebra herd", "zebra"],
+  ["lucy", "addition", 7, "flamingos at the lake", "flamingo"],
+  ["imogen", "counting", 4, "jellyfish drifting by", "jellyfish"],
+  ["imogen", "letter-tracing", 5, "under-the-sea words", "dolphin"],
+  ["dawn", "division", 10, "sharing scoops of ice cream", "ice-cream"],
+  ["dawn", "place-value", 10, "the rings of Saturn", "saturn"],
 ];
 
-// Extra published sheets per maker so profiles look active, not one-and-done.
-// Each is a DISTINCT subject with its own unique illustration (from the 197-key
-// set) so the library reads varied, not ten fish and ten volcanoes. Format:
-// [templateId, age, topic, imageKey]. Every imageKey below is unique and exists
-// in public/resources/illustrations. Generated via Venice for real topic
-// content; the reseed force-pins the imageKey so the picture always matches.
-const MAKER_EXTRAS: Record<string, [string, number, string, string][]> = {
-  danielle: [["reading", 8, "triceratops", "triceratops"], ["counting", 6, "dinosaur eggs", "dinosaur-egg"]],
-  megan: [["multiplication", 9, "pandas", "panda"], ["reading", 8, "the water cycle", "water-cycle"]],
-  aroha: [["reading", 9, "mountains", "mountain"], ["counting", 5, "penguins", "penguin"]],
-  becca: [["reading", 9, "the human skeleton", "skeleton"], ["grammar", 8, "a visit to the doctor", "doctor"]],
-  kayla: [["subtraction", 8, "sharks", "shark"], ["addition", 7, "aeroplanes", "airplane"]],
-  fiona: [["reading", 9, "tornadoes", "tornado"], ["fractions", 9, "sharing a watermelon", "watermelon"]],
-  tania: [["reading", 8, "sea turtles", "sea-turtle"], ["counting", 4, "starfish", "starfish"]],
-  heather: [["addition", 6, "ducks on the farm", "duck"], ["reading", 8, "lighthouses", "lighthouse"]],
-  renee: [["counting", 6, "trains", "train"], ["subtraction", 7, "helicopters", "helicopter"]],
-  court: [["counting", 6, "ladybugs", "ladybug"], ["reading", 7, "dragonflies", "dragonfly"]],
-  naomi: [["reading", 10, "the sloth", "sloth"], ["reading", 10, "glaciers", "glacier"]],
-  priya: [["reading", 9, "the human brain", "brain"], ["reading", 10, "how magnets work", "magnet"]],
-  whitney: [["reading", 8, "astronauts", "astronaut"], ["reading", 9, "the solar system", "solar-system"]],
-  manaia: [["reading", 7, "how seeds grow", "seed-to-plant"], ["counting", 5, "flowers in the garden", "flower"]],
-  steph: [["reading", 11, "Egyptian mummies", "mummy"], ["reading", 10, "knights and castles", "knight"]],
-  bel: [["counting", 6, "koalas", "koala"], ["matching", 5, "jungle animals", "tiger"]],
-  grace: [["phonics", 5, "animals at the zoo", "giraffe"], ["counting", 5, "rabbits", "rabbit"]],
-  monique: [["reading", 8, "the octopus", "octopus"], ["counting", 5, "snails", "snail"]],
-  kelsey: [["shapes", 5, "kites", "kite"], ["counting", 5, "peacocks", "peacock"]],
-  ruth: [["addition", 6, "hedgehogs", "hedgehog"], ["reading", 8, "how a rainbow forms", "rainbow"]],
-  tabitha: [["reading", 10, "whales and narwhals", "narwhal"], ["reading", 9, "spiders", "spider"]],
-  lucy: [["multiplication", 9, "the zebra herd", "zebra"], ["addition", 7, "flamingos", "flamingo"]],
-  imogen: [["counting", 4, "seahorses", "seahorse"], ["counting", 4, "jellyfish", "jellyfish"]],
-  dawn: [["reading", 10, "the planet Saturn", "saturn"], ["division", 10, "sharing at the ice cream shop", "ice-cream"]],
-};
-
-function buildExtraSpecs(): PostSpec[] {
-  const out: PostSpec[] = [];
-  for (const [maker, list] of Object.entries(MAKER_EXTRAS)) {
-    list.forEach(([templateId, age, topic, imageKey], i) => {
-      out.push({
-        slug: `${maker}-x${i}`,
-        maker,
-        templateId,
-        age,
-        theme: topic,
-        instruction: `Make a ${templateId.replace(/-/g, " ")} worksheet for a ${age} year old about ${topic}.`,
-        imageKey,
-      });
-    });
-  }
-  return out;
-}
-
-// Everything the reseed generates: the Venice heroes + the offline extras.
-export const POST_SPECS: PostSpec[] = [...HERO_SPECS, ...buildExtraSpecs()];
+export const POST_SPECS: PostSpec[] = SPEC_ROWS.map(([maker, templateId, age, topic, imageKey], i) => ({
+  slug: `${maker}-${i}`,
+  maker,
+  templateId,
+  age,
+  theme: topic,
+  instruction:
+    `Make a ${templateId.replace(/-/g, " ")} worksheet for a ${age} year old about ${topic}. ` +
+    `Keep every question at a single consistent difficulty for that age. Do NOT start with trivially easy questions and ramp up to much harder ones on the same sheet. ` +
+    `Be specific and genuinely interesting about ${topic}, not generic filler.`,
+  imageKey,
+}));
 
 // ── Forum threads + comments (hand-authored, homeschool-parent voice) ─
 

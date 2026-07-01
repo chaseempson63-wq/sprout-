@@ -120,7 +120,7 @@ export async function POST(request: Request) {
       ["threads", () => ins("resource_threads", threadRows, true)],
       ["comments", () => ins("resource_comments", topComments.map(commentRow), true)],
       ["replies", () => ins("resource_comments", replies.map(commentRow), true)],
-      ["follows", () => ins("resource_follows", buildFollows())],
+      ["follows", () => ins("resource_follows", buildFollows(), true)],
     ];
     const result: Record<string, number> = {};
     for (const [name, run] of steps) {

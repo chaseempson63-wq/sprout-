@@ -71,7 +71,6 @@ export default function LibraryHome() {
   const [posts, setPosts] = useState<CommunityPost[]>([]);
   const [socialOff, setSocialOff] = useState(false);
   const [loadingCommunity, setLoadingCommunity] = useState(true);
-  const [creator, setCreator] = useState("");
   const [yoursOn, setYoursOn] = useState(false);
 
   const inTopic = (templateId: string) => topic === "all" || topicForTemplate(templateId) === topic;
@@ -90,13 +89,13 @@ export default function LibraryHome() {
     .sort((a, b) => b.createdAt - a.createdAt);
 
   // The real community feed lives in the shared DB. Refetch (debounced) when the
-  // search, creator filter, or "Yours" toggle change.
+  // search, topic filter, or "Yours" toggle change.
   useEffect(() => {
     if (!ready) return;
     let live = true;
     const t = window.setTimeout(() => {
       setLoadingCommunity(true);
-      listCommunity({ q: query, creator: creator || undefined, mine: yoursOn ? account?.id : undefined }).then((res) => {
+      listCommunity({ q: query, topic: topic !== "all" ? topic : undefined, mine: yoursOn ? account?.id : undefined }).then((res) => {
         if (!live) return;
         setPosts(res.posts);
         setSocialOff(res.disabled);
@@ -107,7 +106,7 @@ export default function LibraryHome() {
       live = false;
       window.clearTimeout(t);
     };
-  }, [ready, query, creator, yoursOn, account?.id]);
+  }, [ready, query, topic, yoursOn, account?.id]);
 
   const communityCount = socialOff ? fallbackCreations.length : posts.length;
 
@@ -180,36 +179,17 @@ export default function LibraryHome() {
         </div>
 
         <div className="border-sprout-cream/10 mt-5 border-t pt-5">
-          {tab === "community" ? (
-            <div className="flex flex-wrap items-center gap-2.5">
-              <div className="flex items-center gap-2 rounded-full border border-[#2E5A35]/15 bg-sprout-cream px-4">
-                <Users className="size-4 shrink-0 text-[#1B3722]/50" />
-                <input
-                  value={creator}
-                  onChange={(e) => setCreator(e.target.value)}
-                  placeholder="Filter by creator..."
-                  className="h-10 w-44 bg-transparent text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/45"
-                />
-                {creator && (
-                  <button onClick={() => setCreator("")} aria-label="Clear creator filter" className="text-[#1B3722]/50 hover:text-[#1B3722]">
-                    <X className="size-4" />
-                  </button>
-                )}
-              </div>
-              {account && (
-                <button onClick={() => setYoursOn((v) => !v)} className={pill(yoursOn, "h-10 px-5 text-sm")}>
-                  Yours
-                </button>
-              )}
-            </div>
-          ) : (
-            <div className="flex flex-wrap gap-2.5">
-              <TopicChip active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
-              {TOPICS.map((t) => (
-                <TopicChip key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
-              ))}
-            </div>
-          )}
+          <div className="flex flex-wrap items-center gap-2.5">
+            <TopicChip active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
+            {TOPICS.map((t) => (
+              <TopicChip key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
+            ))}
+            {tab === "community" && account && (
+              <button onClick={() => setYoursOn((v) => !v)} className={pill(yoursOn, "h-10 px-5 text-sm")}>
+                Yours
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
@@ -254,7 +234,7 @@ export default function LibraryHome() {
       {tab === "community" && (
         <div>
           <p className="text-sprout-cream/65 mb-6 flex items-center gap-2 text-sm">
-            <Globe className="size-4" /> Worksheets built and shared by Sprout parents. Tap a creator to see everything they have made.
+            <Globe className="size-4" /> Worksheets shared by Sprout parents. Filter by subject, or tap a creator to see everything they have made.
           </p>
 
           {socialOff ? (
@@ -303,7 +283,7 @@ export default function LibraryHome() {
           ) : posts.length === 0 ? (
             <div className={`${lightCard} p-8 text-center`}>
               <p className="text-[#1B3722]/70">
-                {query || creator || yoursOn ? "No worksheets match that." : "No worksheets here yet. Build one from scratch and publish it."}
+                {query || topic !== "all" || yoursOn ? "No worksheets match that." : "No worksheets here yet. Build one from scratch and publish it."}
               </p>
             </div>
           ) : (
