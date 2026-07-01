@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { BookOpen, LayoutGrid, MessagesSquare, PenLine, ShieldCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { showsResourcesNav } from "@/lib/resources/nav";
+import { useResources } from "@/lib/resources/store";
+import { unseenAnnouncements } from "@/lib/resources/announcements";
 
 /* Floating bottom nav for Sprout Resources. A row of icon pills sitting on a
    raised, 3D, wavy green "blob" a couple shades brighter than the page canvas,
@@ -13,17 +15,19 @@ import { showsResourcesNav } from "@/lib/resources/nav";
    on desktop, hovering any other item expands it too. No animation library —
    pure CSS width/opacity transitions. */
 
-const ITEMS: { href: string; label: string; Icon: typeof LayoutGrid; match: (p: string) => boolean }[] = [
+const ITEMS: { href: string; label: string; Icon: typeof LayoutGrid; match: (p: string) => boolean; notify?: boolean }[] = [
   { href: "/resources", label: "Library", Icon: LayoutGrid, match: (p) => p === "/resources" },
   { href: "/resources/custom", label: "Build", Icon: PenLine, match: (p) => p === "/resources/custom" },
-  { href: "/resources/forum", label: "Forum", Icon: MessagesSquare, match: (p) => p.startsWith("/resources/forum") },
+  { href: "/resources/forum", label: "Community", Icon: MessagesSquare, match: (p) => p.startsWith("/resources/forum"), notify: true },
   { href: "/resources/how-to", label: "Guide", Icon: BookOpen, match: (p) => p === "/resources/how-to" },
   { href: "/resources/privacy", label: "Privacy", Icon: ShieldCheck, match: (p) => p === "/resources/privacy" },
 ];
 
 export function ResourcesNav() {
   const pathname = usePathname();
+  const { announcementsSeenAt } = useResources();
   if (!showsResourcesNav(pathname)) return null;
+  const unseen = unseenAnnouncements(announcementsSeenAt);
 
   return (
     <div className="no-print pointer-events-none fixed inset-x-0 bottom-0 z-40 flex justify-center px-3 pb-[max(1.5rem,calc(env(safe-area-inset-bottom)+0.5rem))]">
@@ -50,14 +54,14 @@ export function ResourcesNav() {
 
         {/* Nav items. */}
         <nav className="relative flex items-center gap-1 px-1.5 py-1.5" aria-label="Sprout Resources">
-          {ITEMS.map(({ href, label, Icon, match }) => {
+          {ITEMS.map(({ href, label, Icon, match, notify }) => {
             const active = match(pathname);
             return (
               <Link
                 key={href}
                 href={href}
                 aria-current={active ? "page" : undefined}
-                title={label}
+                title={notify && unseen > 0 ? `${label} (${unseen} new)` : label}
                 className={cn(
                   "group/item relative flex items-center justify-center rounded-full px-3 py-2.5 text-sm font-bold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sprout-cream/60",
                   active
@@ -65,6 +69,11 @@ export function ResourcesNav() {
                     : "text-sprout-cream/90 hover:bg-white/15",
                 )}
               >
+                {notify && unseen > 0 && (
+                  <span className="absolute -top-1 -right-1 z-10 grid h-4 min-w-4 place-items-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white ring-2 ring-[#4c7a52]">
+                    {unseen}
+                  </span>
+                )}
                 <Icon className="size-5 shrink-0" strokeWidth={2.2} />
                 <span
                   className={cn(

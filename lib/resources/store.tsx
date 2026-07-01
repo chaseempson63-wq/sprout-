@@ -18,6 +18,7 @@ const LIKES_KEY = "sprout.resources.likes.v1";
 const MYLIKES_KEY = "sprout.resources.mylikes.v1";
 const FOLLOWING_KEY = "sprout.resources.following.v1";
 const FOLLOWERS_KEY = "sprout.resources.followers.v1";
+const ANN_SEEN_KEY = "sprout.resources.annseen.v1";
 
 // Bright fills chosen to read clearly against the dark forest-green canvas.
 export const AVATAR_COLORS: { key: string; bg: string }[] = [
@@ -76,6 +77,8 @@ interface ResourcesContextValue {
   toggleFollow: (maker: FollowedMaker) => void;
   followerCount: (handle: string) => number;
   loadFollowerCount: (handle: string) => void;
+  announcementsSeenAt: number;
+  markAnnouncementsSeen: () => void;
 }
 
 const ResourcesContext = createContext<ResourcesContextValue | null>(null);
@@ -90,6 +93,7 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   const [myLikes, setMyLikes] = useState<string[]>(() => readJSON<string[]>(MYLIKES_KEY, []));
   const [following, setFollowing] = useState<FollowedMaker[]>(() => readJSON<FollowedMaker[]>(FOLLOWING_KEY, []));
   const [followerCounts, setFollowerCounts] = useState<Record<string, number>>(() => readJSON<Record<string, number>>(FOLLOWERS_KEY, {}));
+  const [announcementsSeenAt, setAnnouncementsSeenAt] = useState<number>(() => readJSON<number>(ANN_SEEN_KEY, 0));
 
   useEffect(() => {
     // One-time hydration after mount. Also backfill a stable account id for
@@ -124,6 +128,9 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (ready) localStorage.setItem(FOLLOWERS_KEY, JSON.stringify(followerCounts));
   }, [followerCounts, ready]);
+  useEffect(() => {
+    if (ready) localStorage.setItem(ANN_SEEN_KEY, JSON.stringify(announcementsSeenAt));
+  }, [announcementsSeenAt, ready]);
 
   const setAccount = useCallback(
     (profile: CreatorProfile) => {
@@ -240,6 +247,7 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
       if (!res.disabled) setFollowerCounts((fc) => ({ ...fc, [handle]: res.count }));
     });
   }, [account]);
+  const markAnnouncementsSeen = useCallback(() => setAnnouncementsSeenAt(Date.now()), []);
 
   const value = useMemo<ResourcesContextValue>(
     () => ({
@@ -268,11 +276,14 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
       toggleFollow,
       followerCount,
       loadFollowerCount,
+      announcementsSeenAt,
+      markAnnouncementsSeen,
     }),
     [
       ready, account, kids, worksheets, moments, setAccount, addChild, updateChild, removeChild, getChild,
       addMoment, removeMoment, momentsFor, saveWorksheet, toggleFavorite, togglePublish, removeWorksheet,
       toggleLike, likeCount, likedByMe, following, isFollowing, toggleFollow, followerCount, loadFollowerCount,
+      announcementsSeenAt, markAnnouncementsSeen,
     ],
   );
 

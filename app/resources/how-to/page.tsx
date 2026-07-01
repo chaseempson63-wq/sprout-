@@ -77,7 +77,7 @@ const EXTRAS = [
   {
     icon: MessagesSquare,
     title: "Ask for more",
-    body: "Want a pack that doesn't exist yet? Drop it in the Forum and we'll build it.",
+    body: "Want a pack that doesn't exist yet? Drop it in the Community and we'll build it.",
   },
 ];
 
@@ -108,7 +108,7 @@ const FAQS = [
   },
   {
     q: "Do I need an account?",
-    a: "Not to make and print. You only add a name if you want to publish to the Community or post in the Forum. No email, no password, just a name.",
+    a: "Not to make and print. You only add a name if you want to publish a worksheet or post in the Community. No email, no password, just a name.",
   },
   {
     q: "What's the Community? Can people see my kid's stuff?",
@@ -198,7 +198,7 @@ export default function HowToPage() {
       <div className="border-sprout-cream/15 bg-sprout-cream/10 mt-14 flex flex-col items-center gap-4 rounded-3xl border p-8 text-center backdrop-blur-sm">
         <h2 className="text-sprout-cream text-2xl font-bold">Still stuck?</h2>
         <p className="text-sprout-cream/75 max-w-md">
-          Pop a question in the Forum. Real Sprout parents and the team answer.
+          Pop a question in the Community. Real Sprout parents and the team answer.
         </p>
         <div className="mt-1 flex flex-wrap items-center justify-center gap-3">
           <Link
@@ -211,7 +211,7 @@ export default function HowToPage() {
             href="/resources/forum"
             className="border-sprout-cream/25 text-sprout-cream hover:bg-sprout-cream/10 inline-flex h-12 items-center gap-2 rounded-full border px-6 font-bold transition-colors"
           >
-            Open the Forum
+            Open the Community
           </Link>
         </div>
       </div>

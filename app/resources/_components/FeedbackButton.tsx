@@ -75,7 +75,7 @@ export function FeedbackButton() {
             </GlassButton>
           </div>
           <Dialog.Description className="mt-1 text-sm leading-relaxed text-[#1B3722]/70">
-            For ideas and requests, post in the Forum so other parents can chime in and upvote. For something private like a bug or your account, copy this note and email us at{" "}
+            For ideas and requests, post in the Community so other parents can chime in and upvote. For something private like a bug or your account, copy this note and email us at{" "}
             <span className="font-semibold text-[#2E5A35]">{FEEDBACK_EMAIL}</span>.
           </Dialog.Description>
           <textarea
