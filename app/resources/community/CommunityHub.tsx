@@ -28,7 +28,7 @@ import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { DocumentNudge } from "../_components/DocumentNudge";
 import { MakerAvatar } from "../_components/MakerAvatar";
 import { UpvoteButton } from "../_components/UpvoteButton";
-import { SheetStack, Sticker, sheet, tiltFor } from "../_components/paper";
+import { SheetStack, sheet } from "../_components/paper";
 import { GlassButton } from "@/components/ui/glass";
 import type { CommunityPost, ForumThread, Worksheet } from "@/lib/resources/types";
 
@@ -153,38 +153,36 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
 
   return (
     <div className="mx-auto max-w-6xl">
-      <div className="mb-6">
+      <div className="mb-8">
         <h1 className="text-sprout-cream flex items-center gap-3 text-3xl font-bold tracking-[-0.02em] sm:text-4xl">
           <span className="bg-sprout-cream/95 grid size-11 shrink-0 place-items-center rounded-2xl shadow-md">
             <SproutMascotIcon className="size-7" />
           </span>
           Community
         </h1>
-        <p className="text-sprout-cream/70 mt-2 text-sm sm:text-base">
+        <p className="text-sprout-cream/70 mt-3 text-sm sm:text-base">
           Worksheets built by Sprout parents, a place to ask and swap ideas, and updates from the team.
         </p>
       </div>
 
-      {/* The three rooms. */}
-      <div className="mb-7 flex flex-wrap items-center gap-2">
-        <button onClick={() => setTab("worksheets")} className={pill(tab === "worksheets", "h-10 px-5 text-sm")}>
-          <Globe className="size-4" /> Worksheets
-        </button>
-        <button onClick={() => setTab("chat")} className={pill(tab === "chat", "h-10 px-5 text-sm")}>
-          <MessagesSquare className="size-4" /> Chat
-        </button>
-        <button onClick={() => setTab("announcements")} className={pill(tab === "announcements", "h-10 px-5 text-sm")}>
-          🚨 Announcements
-          {unseen > 0 && tab !== "announcements" && (
-            <span className="grid size-4 min-w-4 place-items-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white">{unseen}</span>
-          )}
-        </button>
+      {/* The three rooms — three main cards. */}
+      <div className="mb-10 grid grid-cols-3 gap-3 sm:gap-4">
+        <RoomCard active={tab === "worksheets"} onClick={() => setTab("worksheets")} icon={<Globe className="size-5" />} title="Worksheets" sub="Sheets parents built and shared" />
+        <RoomCard active={tab === "chat"} onClick={() => setTab("chat")} icon={<MessagesSquare className="size-5" />} title="Chat" sub="Ask and swap ideas" />
+        <RoomCard
+          active={tab === "announcements"}
+          onClick={() => setTab("announcements")}
+          icon={<span className="text-lg leading-none">🚨</span>}
+          title="Announcements"
+          sub="News from the team"
+          badge={unseen > 0 && tab !== "announcements" ? unseen : undefined}
+        />
       </div>
 
       {/* ── Worksheets ──────────────────────────────────────────────── */}
       {tab === "worksheets" && (
         <div>
-          <div className="mb-5 flex flex-wrap items-center gap-2">
+          <div className="mb-4 flex flex-wrap items-center gap-2">
             <div className="border-sprout-cream/15 bg-sprout-cream/10 flex min-w-0 flex-1 items-center gap-2 rounded-full border px-4">
               <Search className="text-sprout-cream/50 size-4 shrink-0" />
               <input
@@ -200,12 +198,12 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
               )}
             </div>
             {account && (
-              <button onClick={() => setYoursOn((v) => !v)} className={pill(yoursOn, "h-9 px-4 text-sm")}>
+              <button onClick={() => setYoursOn((v) => !v)} className={pill(yoursOn, "h-11 px-4 text-sm")}>
                 Yours
               </button>
             )}
           </div>
-          <div className="mb-6 flex flex-wrap items-center gap-2">
+          <div className="mb-8 flex flex-wrap items-center gap-2">
             <button onClick={() => setTopic("all")} className={pill(topic === "all", "h-9 px-4 text-sm")}>
               ✨ All
             </button>
@@ -222,31 +220,36 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
               {fallbackCreations.length === 0 ? (
                 <EmptyCard text="No worksheets here yet. Build one from scratch and publish it." />
               ) : (
-                <div className="grid grid-cols-2 gap-x-4 gap-y-9 sm:gap-x-7 sm:gap-y-12 lg:grid-cols-3">
-                  {fallbackCreations.map((c, i) => {
+                <div className="grid grid-cols-2 gap-x-4 gap-y-6 sm:gap-x-6 sm:gap-y-8 lg:grid-cols-3">
+                  {fallbackCreations.map((c) => {
                     const img = firstImageKey(c.worksheet);
                     return (
                       <div key={c.id}>
-                        <SheetStack tilt={tiltFor(i)} className={`flex h-full flex-col p-4 ${img ? "pt-8" : ""} sm:p-5 ${img ? "sm:pt-9" : ""}`}>
-                          {img && (
-                            <button onClick={() => setViewing(c.worksheet)} aria-label={c.worksheet.title} className="absolute -top-5 left-4 sm:-top-6 sm:left-5">
-                              <Sticker imageKey={img} size={72} angle={i % 2 ? 4 : -4} />
-                            </button>
-                          )}
-                          <button onClick={() => setViewing(c.worksheet)} className="min-w-0 flex-1 text-left">
-                            <h3 className="leading-snug font-bold text-[#1B3722]">{c.worksheet.title}</h3>
-                            <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
-                          </button>
-                          <p className="mt-3 truncate border-t border-[#2E5A35]/10 pt-3 text-xs text-[#1B3722]/70">
-                            Made with Sprout by{" "}
-                            {c.creatorHandle ? (
-                              <Link href={`/resources/creator/${c.creatorHandle}`} className="font-bold text-[#2E5A35] hover:underline">
-                                {c.creatorName}
-                              </Link>
+                        <SheetStack flat className="flex h-full flex-col overflow-hidden">
+                          <button onClick={() => setViewing(c.worksheet)} aria-label={c.worksheet.title} className="grid aspect-[16/10] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
+                            {img ? (
+                              // eslint-disable-next-line @next/next/no-img-element -- static webp
+                              <img src={`/resources/illustrations/${img}.webp`} alt="" className="h-full w-full object-contain p-3" />
                             ) : (
-                              <span className="font-bold text-[#2E5A35]">{c.creatorName}</span>
+                              <span className="text-4xl">📄</span>
                             )}
-                          </p>
+                          </button>
+                          <div className="flex flex-1 flex-col p-4 sm:p-5">
+                            <button onClick={() => setViewing(c.worksheet)} className="min-w-0 flex-1 text-left">
+                              <h3 className="leading-snug font-bold text-[#1B3722]">{c.worksheet.title}</h3>
+                              <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
+                            </button>
+                            <p className="mt-3 truncate border-t border-[#2E5A35]/10 pt-3 text-xs text-[#1B3722]/70">
+                              Made with Sprout by{" "}
+                              {c.creatorHandle ? (
+                                <Link href={`/resources/creator/${c.creatorHandle}`} className="font-bold text-[#2E5A35] hover:underline">
+                                  {c.creatorName}
+                                </Link>
+                              ) : (
+                                <span className="font-bold text-[#2E5A35]">{c.creatorName}</span>
+                              )}
+                            </p>
+                          </div>
                         </SheetStack>
                       </div>
                     );
@@ -259,35 +262,40 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
           ) : posts.length === 0 ? (
             <EmptyCard text={query || topic !== "all" || yoursOn ? "No worksheets match that." : "No worksheets here yet. Build one from scratch and publish it."} />
           ) : (
-            <div className="grid grid-cols-2 gap-x-4 gap-y-9 sm:gap-x-7 sm:gap-y-12 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-6 sm:gap-x-6 sm:gap-y-8 lg:grid-cols-3">
               {posts.map((p, i) => {
                 const img = firstImageKey(p.worksheet);
                 return (
                   <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className="animate-in fade-in slide-in-from-bottom-2 fill-mode-both duration-500">
-                    <SheetStack tilt={tiltFor(i)} className={`flex h-full flex-col p-4 ${img ? "pt-8" : ""} sm:p-5 ${img ? "sm:pt-9" : ""}`}>
-                      {img && (
-                        <Link href={`/resources/community/${p.id}`} aria-label={p.title} className="absolute -top-5 left-4 sm:-top-6 sm:left-5">
-                          <Sticker imageKey={img} size={72} angle={i % 2 ? 4 : -4} />
-                        </Link>
-                      )}
-                      <Link href={`/resources/community/${p.id}`} className="min-w-0 flex-1">
-                        <h3 className="leading-snug font-bold text-[#1B3722]">{p.title}</h3>
-                        {p.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{p.subtitle}</p>}
+                    <SheetStack flat className="flex h-full flex-col overflow-hidden">
+                      <Link href={`/resources/community/${p.id}`} aria-label={p.title} className="grid aspect-[16/10] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
+                        {img ? (
+                          // eslint-disable-next-line @next/next/no-img-element -- static webp
+                          <img src={`/resources/illustrations/${img}.webp`} alt="" className="h-full w-full object-contain p-3" />
+                        ) : (
+                          <span className="text-4xl">📄</span>
+                        )}
                       </Link>
-                      <div className="mt-3 flex items-center justify-between gap-2 border-t border-[#2E5A35]/10 pt-3 text-xs text-[#1B3722]/70">
-                        <span className="flex min-w-0 items-center gap-1.5 truncate">
-                          <MakerAvatar name={p.creatorName} photo={p.photo} px={22} />
-                          <Link href={`/resources/creator/${p.handle}`} className="truncate font-bold text-[#2E5A35] hover:underline">
-                            {capName(p.creatorName)}
-                          </Link>
-                          <span className="shrink-0 text-[#1B3722]/45">· {timeAgo(p.createdAt)}</span>
-                        </span>
-                        <span className="flex shrink-0 items-center gap-1.5">
-                          <UpvoteButton targetType="post" targetId={p.id} count={p.upvotes} />
-                          <Link href={`/resources/community/${p.id}#comments`} aria-label="Comments" className="inline-flex h-8 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/60 px-2.5 text-xs font-bold text-[#1B3722]/75 transition hover:bg-white">
-                            <MessageSquare className="size-3.5" /> {p.commentCount}
-                          </Link>
-                        </span>
+                      <div className="flex flex-1 flex-col p-4 sm:p-5">
+                        <Link href={`/resources/community/${p.id}`} className="min-w-0 flex-1">
+                          <h3 className="leading-snug font-bold text-[#1B3722]">{p.title}</h3>
+                          {p.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{p.subtitle}</p>}
+                        </Link>
+                        <div className="mt-3 flex items-center justify-between gap-2 border-t border-[#2E5A35]/10 pt-3 text-xs text-[#1B3722]/70">
+                          <span className="flex min-w-0 items-center gap-1.5 truncate">
+                            <MakerAvatar name={p.creatorName} photo={p.photo} px={22} />
+                            <Link href={`/resources/creator/${p.handle}`} className="truncate font-bold text-[#2E5A35] hover:underline">
+                              {capName(p.creatorName)}
+                            </Link>
+                            <span className="shrink-0 text-[#1B3722]/45">· {timeAgo(p.createdAt)}</span>
+                          </span>
+                          <span className="flex shrink-0 items-center gap-1.5">
+                            <UpvoteButton targetType="post" targetId={p.id} count={p.upvotes} />
+                            <Link href={`/resources/community/${p.id}#comments`} aria-label="Comments" className="inline-flex h-8 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/60 px-2.5 text-xs font-bold text-[#1B3722]/75 transition hover:bg-white">
+                              <MessageSquare className="size-3.5" /> {p.commentCount}
+                            </Link>
+                          </span>
+                        </div>
                       </div>
                     </SheetStack>
                   </div>
@@ -376,23 +384,23 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
           ) : threads.length === 0 ? (
             <EmptyCard text={q ? "No posts match that." : "No posts yet. Start the first conversation."} />
           ) : (
-            <div className="grid gap-x-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
               {threads.map((t, i) => (
                 <Link
                   key={t.id}
                   href={`/resources/forum/${t.id}`}
-                  style={{ animationDelay: `${Math.min(i, 11) * 35}ms`, transform: `rotate(${tiltFor(i)}deg)` }}
+                  style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }}
                   className="group animate-in fade-in slide-in-from-bottom-2 fill-mode-both block duration-500"
                 >
-                  {/* a sticky note pinned to the desk, with a strip of tape */}
+                  {/* a sticky note pinned to the desk, with a strip of tape — flat, not tilted */}
                   <div
                     className={cn(
-                      "relative flex h-full flex-col rounded-lg p-4 pt-5 ring-1 ring-black/5 transition duration-300 group-hover:-translate-y-1.5",
+                      "relative flex h-full flex-col rounded-lg p-5 pt-6 ring-1 ring-black/5 transition duration-300 group-hover:-translate-y-1.5",
                       "shadow-[0_12px_26px_-12px_rgba(8,22,12,0.55),0_26px_50px_-28px_rgba(8,22,12,0.4)]",
                       noteTint(t.id),
                     )}
                   >
-                    <span aria-hidden className="absolute -top-2 left-1/2 h-4 w-14 -translate-x-1/2 rotate-[-2deg] rounded-[2px] bg-white/55 shadow-[0_1px_2px_rgba(8,22,12,0.15)]" />
+                    <span aria-hidden className="absolute -top-2 left-1/2 h-4 w-14 -translate-x-1/2 rounded-[2px] bg-white/55 shadow-[0_1px_2px_rgba(8,22,12,0.15)]" />
                     <div className="flex items-center gap-2">
                       {t.photo ? (
                         // eslint-disable-next-line @next/next/no-img-element
@@ -479,5 +487,48 @@ function EmptyCard({ text }: { text: string }) {
     <div className={cn(sheet, "p-8 text-center")}>
       <p className="text-[#1B3722]/70">{text}</p>
     </div>
+  );
+}
+
+// One of the three big room cards at the top of the Community.
+function RoomCard({
+  active,
+  onClick,
+  icon,
+  title,
+  sub,
+  badge,
+}: {
+  active: boolean;
+  onClick: () => void;
+  icon: React.ReactNode;
+  title: string;
+  sub: string;
+  badge?: number;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        "flex flex-col items-start gap-2.5 rounded-2xl p-4 text-left transition sm:gap-3 sm:p-5",
+        active
+          ? "bg-sprout-cream text-sprout-ink shadow-[0_14px_30px_-12px_rgba(0,0,0,0.45)]"
+          : "border-sprout-cream/20 bg-sprout-cream/10 text-sprout-cream hover:bg-sprout-cream/20 border",
+      )}
+    >
+      <span
+        className={cn(
+          "relative grid size-10 shrink-0 place-items-center rounded-xl sm:size-11",
+          active ? "bg-[#2E5A35]/10 text-[#2E5A35]" : "bg-sprout-cream/15 text-sprout-cream",
+        )}
+      >
+        {icon}
+        {badge ? (
+          <span className="absolute -top-1.5 -right-1.5 grid size-5 min-w-5 place-items-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white">{badge}</span>
+        ) : null}
+      </span>
+      <span className="text-sm font-bold sm:text-base">{title}</span>
+      <span className={cn("hidden text-xs leading-snug sm:block", active ? "text-[#1B3722]/60" : "text-sprout-cream/60")}>{sub}</span>
+    </button>
   );
 }

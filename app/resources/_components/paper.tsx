@@ -34,13 +34,25 @@ export const sheet =
 export function SheetStack({
   className,
   tilt = 0,
+  flat = false,
   children,
 }: {
   className?: string;
   /** degrees; the whole pile leans, the top sheet straightens on hover */
   tilt?: number;
+  /** plain rectangular sheet: no angled papers behind, no lean (keeps hover lift) */
+  flat?: boolean;
   children: React.ReactNode;
 }) {
+  if (flat) {
+    return (
+      <div className="group/sheet relative h-full">
+        <div className={cn(sheet, "relative h-full transition-transform duration-300 ease-out group-hover/sheet:-translate-y-1.5", className)}>
+          {children}
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="group/sheet relative h-full" style={{ transform: `rotate(${tilt}deg)` }}>
       <span

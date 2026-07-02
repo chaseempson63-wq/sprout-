@@ -77,8 +77,8 @@ export default function LibraryHome() {
           <h1 className="text-sprout-cream text-[clamp(1.8rem,8.5vw,3rem)] font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl sm:whitespace-normal">
             We were born to <Typewriter words={BORN_TO} className="text-sprout-lime" />
           </h1>
-          <p className="text-sprout-cream/70 mt-2">Worksheets and slideshows, made to order for your kid. Free to print, always.</p>
-          <Link href="/resources/privacy" className="text-sprout-cream/55 hover:text-sprout-cream mt-1.5 inline-flex items-center gap-1 text-xs font-medium underline-offset-2 hover:underline">
+          <p className="text-sprout-cream/70 mt-5 text-base sm:mt-6 sm:text-lg">Worksheets and slideshows, made to order for your kid. Free to print, always.</p>
+          <Link href="/resources/privacy" className="text-sprout-cream/55 hover:text-sprout-cream mt-3 inline-flex items-center gap-1 text-xs font-medium underline-offset-2 hover:underline">
             Your data stays yours. See how.
           </Link>
         </div>
@@ -145,34 +145,30 @@ export default function LibraryHome() {
 
       {/* 5 · the wall */}
       {tab === "templates" && (
-        <div className="grid grid-cols-2 gap-x-4 gap-y-9 sm:gap-x-7 sm:gap-y-12 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-6 sm:gap-x-6 sm:gap-y-8 lg:grid-cols-3 xl:grid-cols-4">
           {templates.map((t, i) => {
             const art = artFor(t.id);
             return (
-              <Link key={t.id} href={`/resources/${t.id}`} style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }} className="animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500">
-                <SheetStack tilt={tiltFor(i)} className="flex h-full flex-col p-4 pt-7 sm:p-5 sm:pt-9">
-                  {/* the illustration sticker, stuck over the top edge */}
-                  <span className="absolute -top-5 left-4 sm:-top-6 sm:left-5">
+              <Link key={t.id} href={`/resources/${t.id}`} style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }} className="group animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500">
+                <SheetStack tilt={tiltFor(i)} className="flex h-full flex-col overflow-hidden">
+                  {/* full-width illustration, straight, sitting at the top of the card */}
+                  <div className="grid aspect-[16/10] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
                     {art ? (
-                      <Sticker imageKey={art} size={62} angle={i % 2 ? 4 : -4} className="sm:hidden" />
+                      // eslint-disable-next-line @next/next/no-img-element -- static webp
+                      <img src={`/resources/illustrations/${art}.webp`} alt="" className="h-full w-full object-contain p-3" />
                     ) : (
-                      <span className="grid size-[62px] -rotate-3 place-items-center rounded-2xl bg-white text-3xl shadow-[0_8px_18px_-8px_rgba(8,22,12,0.5)] ring-1 ring-[#2E5A35]/10 sm:hidden">{t.emoji}</span>
+                      <span className="text-5xl">{t.emoji}</span>
                     )}
-                    {art ? (
-                      <Sticker imageKey={art} size={84} angle={i % 2 ? 4 : -4} className="hidden sm:block" />
-                    ) : (
-                      <span className="hidden size-[84px] -rotate-3 place-items-center rounded-2xl bg-white text-4xl shadow-[0_8px_18px_-8px_rgba(8,22,12,0.5)] ring-1 ring-[#2E5A35]/10 sm:grid">{t.emoji}</span>
-                    )}
-                  </span>
-                  <div className="mt-5 sm:mt-7">
+                  </div>
+                  <div className="flex flex-1 flex-col p-4 sm:p-5">
                     <h3 className="text-[15px] leading-snug font-bold text-[#1B3722] sm:text-lg">{t.title}</h3>
                     <p className="mt-1 hidden text-sm leading-relaxed text-[#1B3722]/65 sm:block">{t.blurb}</p>
-                  </div>
-                  <div className="mt-auto flex items-center justify-between pt-3.5">
-                    <AgeTag min={t.ageMin} max={t.ageMax} />
-                    <span className="inline-flex items-center gap-1 text-sm font-bold text-[#2E5A35]">
-                      Make one <ArrowRight className="size-4 transition group-hover/sheet:translate-x-0.5" />
-                    </span>
+                    <div className="mt-auto flex items-center justify-between pt-3.5">
+                      <AgeTag min={t.ageMin} max={t.ageMax} />
+                      <span className="inline-flex items-center gap-1 text-sm font-bold text-[#2E5A35]">
+                        Make one <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+                      </span>
+                    </div>
                   </div>
                 </SheetStack>
               </Link>
@@ -225,7 +221,7 @@ function PromptBar() {
 
   return (
     <div>
-      <SheetStack className="p-2.5 sm:p-3">
+      <SheetStack flat className="p-2.5 sm:p-3">
         <div className="flex items-center gap-2 sm:gap-3">
           <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-[#2E5A35]/8 sm:size-12 sm:rounded-2xl">
             <SproutMascotIcon className="size-7 sm:size-8" />
@@ -269,7 +265,7 @@ function PromptBar() {
 function SlideshowCard() {
   return (
     <Link href="/resources/slides" className="group block h-full">
-      <SheetStack className="h-full overflow-hidden !bg-gradient-to-br !from-[#2E5A35] !to-[#16331E] text-[#FFFDF6]">
+      <SheetStack flat className="h-full overflow-hidden !bg-gradient-to-br !from-[#2E5A35] !to-[#16331E] text-[#FFFDF6]">
         <div className="flex h-full flex-col p-5 sm:p-6">
           <span className="text-sprout-lime inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.18em] uppercase">
             <Play className="size-3.5" /> New
@@ -288,7 +284,7 @@ function SlideshowCard() {
 function CommunityCard() {
   return (
     <Link href="/resources/community" className="group block h-full">
-      <SheetStack className="h-full">
+      <SheetStack flat className="h-full">
         <div className="flex h-full flex-col p-5 sm:p-6">
           <span className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.18em] text-[#2E5A35] uppercase">
             <Globe className="size-3.5" /> Community
@@ -412,7 +408,7 @@ function KidsManager({
   }
 
   return (
-    <SheetStack className="flex h-full flex-col p-5 sm:p-6">
+    <SheetStack flat className="flex h-full flex-col p-5 sm:p-6">
       <span className="text-[11px] font-bold tracking-[0.18em] text-[#2E5A35] uppercase">Profiles</span>
       <div className="mt-3.5 flex flex-wrap items-start gap-3.5">
         {account && (
