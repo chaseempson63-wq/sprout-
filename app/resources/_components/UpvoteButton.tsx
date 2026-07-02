@@ -8,7 +8,6 @@ import { useState } from "react";
 import { ArrowBigUp } from "lucide-react";
 import { makerWire, toggleVote } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
-import { GlassButton } from "@/components/ui/glass";
 import type { VoteTarget } from "@/lib/resources/types";
 
 export function UpvoteButton({
@@ -69,16 +68,19 @@ export function UpvoteButton({
     );
   }
 
+  // Inactive: a quiet paper chip (the cards it sits on are cream sheets now,
+  // where the old glass treatment disappeared).
   return (
-    <GlassButton
+    <button
+      type="button"
       onClick={click}
       disabled={!account || busy}
       aria-pressed={false}
       title={label}
-      className={`h-8 gap-1 px-2.5 text-xs ${className}`}
+      className={`inline-flex h-8 shrink-0 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/60 px-2.5 text-xs font-bold text-[#1B3722]/75 transition hover:bg-white active:scale-95 disabled:opacity-60 ${className}`}
     >
       <ArrowBigUp className="size-4" />
       {n}
-    </GlassButton>
+    </button>
   );
 }

@@ -1,32 +1,39 @@
 "use client";
 
+// The Resources library, on the "paper on the green desk" system (see
+// _components/paper.tsx). Structure, top to bottom:
+//   1. Hero — mascot + the born-to line.
+//   2. The PROMPT BAR — the hero DOES the thing: type what you want, press
+//      Build, land in the freeform builder with your words already sent.
+//   3. The creation row — Slideshows (new), Community, Profiles.
+//   4. The paper control sheet — search, Templates/Mine, topic tags.
+//   5. The template wall — every template wears a real illustration sticker,
+//      hand-placed with a slight tilt, like a wall of picture books.
+
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { ArrowRight, Check, Globe, Plus, Search, Star, Trash2, Users, X } from "lucide-react";
+import { ArrowRight, Check, Globe, Play, Plus, Search, Send, Star, Trash2, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
 import { BackupControl } from "./_components/BackupControl";
 import { DocumentNudge } from "./_components/DocumentNudge";
-import { HowItWorks, type HowStep } from "./_components/HowItWorks";
 import { Typewriter } from "./_components/Typewriter";
-import { DescribeIcon, ShareSheetIcon, SproutStepIcon } from "./_components/StepIcons";
+import { AgeTag, SheetStack, Sticker, forestCta, sheet, tiltFor } from "./_components/paper";
 import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
+import { artFor } from "@/lib/resources/template-art";
 import { printWorksheet } from "@/lib/resources/print-fit";
 import { colorClasses, useResources } from "@/lib/resources/store";
-import { capName, cardTint } from "@/lib/resources/util";
+import { capName, firstImageKey } from "@/lib/resources/util";
 import { GlassButton } from "@/components/ui/glass";
-import { pill } from "@/lib/resources/pill";
+import { cn } from "@/lib/utils";
 import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
-
-const lightCard =
-  "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
 
 // Hero: "We were born to ___" cycles the final word only.
 const BORN_TO = ["create", "learn", "grow", "wonder", "explore", "imagine", "discover", "make", "build", "question"];
 
-// The Build-your-own hero types through real example prompts, the way a parent
-// would actually ask, so the card previews exactly what the builder does.
+// The prompt bar types through real asks while empty, previewing exactly what
+// the builder does before you touch it.
 const BUILD_EXAMPLES = [
   "a science sheet on how grass grows",
   "addition with dinosaurs, 12 problems",
@@ -40,13 +47,7 @@ const BUILD_EXAMPLES = [
   "a story starter about a dragon, with lines to write on",
 ];
 
-// The loop, in three quiet lines under the hero. A friend showing you, not a
-// help desk. Few words.
-const HOME_STEPS: HowStep[] = [
-  { icon: DescribeIcon, title: "Pick or describe", blurb: "Start from a worksheet, or tell Sprout what you want." },
-  { icon: SproutStepIcon, title: "Make it theirs", blurb: "Add their age and something they love." },
-  { icon: ShareSheetIcon, title: "Print or share", blurb: "Keep it, print it, or post it for other parents." },
-];
+const STARTER_CHIPS = ["addition with dinosaurs", "the water cycle, age 9", "sight words for a 6 year old"];
 
 type Tab = "templates" | "mine";
 
@@ -65,99 +66,119 @@ export default function LibraryHome() {
   const templates = TEMPLATES.filter((t) => inTopic(t.id) && match(query, `${t.title} ${t.blurb}`));
   const mine = (ready ? worksheets : []).filter((w) => inTopic(w.meta.templateId) && match(query, `${w.title} ${w.subtitle}`));
 
-  const tabs: { key: Tab; label: string; count: number }[] = [
-    { key: "templates", label: "Templates", count: templates.length },
-    { key: "mine", label: "My worksheets", count: mine.length },
-  ];
-
   return (
     <div>
-      <div className="mb-8 flex flex-col gap-4 sm:mb-16 sm:flex-row sm:items-center sm:gap-5">
-        <span className="bg-sprout-cream/95 grid size-16 shrink-0 place-items-center rounded-2xl shadow-md sm:size-24 sm:rounded-3xl">
+      {/* 1 · hero */}
+      <div className="mb-7 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:items-center sm:gap-6">
+        <span className="grid size-16 shrink-0 -rotate-3 place-items-center rounded-2xl bg-[#FFFDF6] shadow-[0_14px_30px_-12px_rgba(8,22,12,0.6)] ring-1 ring-[#2E5A35]/10 sm:size-24 sm:rounded-3xl">
           <SproutMascotIcon className="h-11 w-11 sm:h-16 sm:w-16" />
         </span>
         <div>
-          {/* Mobile: big, one line (never wraps — a 2nd line jumped the page as the
-              word cycled), and sized with a viewport clamp so the longest word fits
-              INSIDE the screen (no early cutoff box; the phone edge is the only
-              bound). Desktop unchanged (sm: restores text-6xl + normal wrapping). */}
           <h1 className="text-sprout-cream text-[clamp(1.8rem,8.5vw,3rem)] font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl sm:whitespace-normal">
             We were born to <Typewriter words={BORN_TO} className="text-sprout-lime" />
           </h1>
-          <p className="text-sprout-cream/70 mt-2">Pick a worksheet, tell Sprout about your kid, and print it in a minute.</p>
+          <p className="text-sprout-cream/70 mt-2">Worksheets and slideshows, made to order for your kid. Free to print, always.</p>
           <Link href="/resources/privacy" className="text-sprout-cream/55 hover:text-sprout-cream mt-1.5 inline-flex items-center gap-1 text-xs font-medium underline-offset-2 hover:underline">
             Your data stays yours. See how.
           </Link>
         </div>
       </div>
 
-      <HowItWorks steps={HOME_STEPS} className="hidden sm:mb-16 sm:block" />
+      {/* 2 · the prompt bar — the hero action */}
+      {ready && <PromptBar />}
 
+      {/* 3 · creation row */}
       {ready && (
-        <div className="mb-8 space-y-3 sm:mb-16 sm:space-y-6">
-          <BuildYourOwnHero />
-          <div className="grid grid-cols-1 items-stretch gap-3 sm:grid-cols-2 sm:gap-6">
-            <KidsManager kids={kids} account={account} onAdd={addChild} />
-            <CommunityCard />
-          </div>
+        <div className="mt-8 mb-10 grid grid-cols-1 items-stretch gap-5 sm:mt-10 sm:mb-14 md:grid-cols-3">
+          <SlideshowCard />
+          <CommunityCard />
+          <KidsManager kids={kids} account={account} onAdd={addChild} />
         </div>
       )}
 
-      {/* One grouped control area: search, what you're looking at, and how to
-          narrow it. Built for a parent seeing this cold, not a power-user strip. */}
-      <div className="border-sprout-cream/15 bg-sprout-cream/[0.05] mb-8 rounded-3xl border p-4 sm:mb-16 sm:p-7">
-        <div className="flex items-center gap-3 rounded-full border border-[#2E5A35]/15 bg-sprout-cream px-5 shadow-[0_12px_28px_-14px_rgba(0,0,0,0.55)]">
-          <Search className="size-5 shrink-0 text-[#1B3722]/50" />
-          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="h-12 w-full bg-transparent text-[15px] text-[#1B3722] outline-none placeholder:text-[#1B3722]/45" />
-          {query && (
-            <button onClick={() => setQuery("")} aria-label="Clear search" className="text-[#1B3722]/50 hover:text-[#1B3722]">
-              <X className="size-4" />
-            </button>
-          )}
-        </div>
-
-        <div className="mt-6 flex flex-wrap gap-2.5">
-          {tabs.map((t) => {
-            const on = tab === t.key;
-            return (
-              <button key={t.key} onClick={() => setTab(t.key)} className={pill(on, "h-10 px-4 text-sm")}>
-                {t.label}
-                <span className={`rounded-full px-1.5 text-xs ${on ? "bg-[#1B3722]/10 text-[#1B3722]" : "bg-sprout-cream/15"}`}>{t.count}</span>
+      {/* 4 · the paper control sheet */}
+      <div className={cn(sheet, "mb-10 p-4 sm:p-6")}>
+        <div className="flex flex-wrap items-center gap-3">
+          <div className="flex min-w-0 flex-1 items-center gap-3 rounded-full border border-[#2E5A35]/15 bg-white px-5">
+            <Search className="size-5 shrink-0 text-[#1B3722]/45" />
+            <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search worksheets..." className="h-12 w-full bg-transparent text-[15px] text-[#1B3722] outline-none placeholder:text-[#1B3722]/40" />
+            {query && (
+              <button onClick={() => setQuery("")} aria-label="Clear search" className="text-[#1B3722]/45 hover:text-[#1B3722]">
+                <X className="size-4" />
               </button>
-            );
-          })}
-          <Link href="/resources/community" className={pill(false, "h-10 px-4 text-sm")}>
-            <Globe className="size-4" /> Community
-          </Link>
+            )}
+          </div>
+          {/* Templates / Mine segmented switch */}
+          <div className="flex items-center gap-1 rounded-full border border-[#2E5A35]/15 bg-white p-1">
+            {(
+              [
+                { key: "templates" as Tab, label: "Templates", count: templates.length },
+                { key: "mine" as Tab, label: "My worksheets", count: mine.length },
+              ]
+            ).map((t) => {
+              const on = tab === t.key;
+              return (
+                <button
+                  key={t.key}
+                  onClick={() => setTab(t.key)}
+                  className={cn(
+                    "inline-flex h-10 items-center gap-1.5 rounded-full px-4 text-sm font-bold transition",
+                    on ? "bg-[#2E5A35] text-white shadow-sm" : "text-[#1B3722]/60 hover:bg-[#2E5A35]/8",
+                  )}
+                >
+                  {t.label}
+                  <span className={cn("rounded-full px-1.5 text-xs", on ? "bg-white/20" : "bg-[#2E5A35]/10 text-[#2E5A35]")}>{t.count}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="border-sprout-cream/10 mt-5 border-t pt-5">
-          <div className="flex flex-wrap items-center gap-2.5">
-            <TopicChip active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
-            {TOPICS.map((t) => (
-              <TopicChip key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
-            ))}
-          </div>
+        {/* topic tags: little paper labels */}
+        <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-[#2E5A35]/10 pt-4">
+          <TopicTag active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
+          {TOPICS.map((t) => (
+            <TopicTag key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
+          ))}
         </div>
       </div>
 
+      {/* 5 · the wall */}
       {tab === "templates" && (
-        <div className="grid grid-cols-2 gap-3 sm:gap-8 lg:grid-cols-3">
-          {templates.map((t, i) => (
-            <Link key={t.id} href={`/resources/${t.id}`} style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }} className="group animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500 transition hover:-translate-y-0.5">
-              <div className={`${cardTint(i)} h-full p-3 sm:p-7`}>
-                <div className="flex items-start justify-between">
-                  <span className={`grid size-9 place-items-center rounded-xl text-xl sm:size-11 sm:text-2xl ${t.accent}`}>{t.emoji}</span>
-                </div>
-                <h3 className="mt-2 text-sm leading-snug font-bold text-[#1B3722] sm:mt-3 sm:text-lg sm:leading-normal">{t.title}</h3>
-                <p className="mt-1 hidden text-sm leading-relaxed text-[#1B3722]/70 sm:block">{t.blurb}</p>
-                <span className="mt-3 hidden items-center gap-1 text-sm font-semibold text-[#2E5A35] sm:inline-flex">
-                  Make one <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
-                </span>
-              </div>
-            </Link>
-          ))}
-          {templates.length === 0 && <p className="text-sprout-cream/60 text-sm">No templates match that. Try another topic or search.</p>}
+        <div className="grid grid-cols-2 gap-x-4 gap-y-9 sm:gap-x-7 sm:gap-y-12 lg:grid-cols-3 xl:grid-cols-4">
+          {templates.map((t, i) => {
+            const art = artFor(t.id);
+            return (
+              <Link key={t.id} href={`/resources/${t.id}`} style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }} className="animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500">
+                <SheetStack tilt={tiltFor(i)} className="flex h-full flex-col p-4 pt-7 sm:p-5 sm:pt-9">
+                  {/* the illustration sticker, stuck over the top edge */}
+                  <span className="absolute -top-5 left-4 sm:-top-6 sm:left-5">
+                    {art ? (
+                      <Sticker imageKey={art} size={62} angle={i % 2 ? 4 : -4} className="sm:hidden" />
+                    ) : (
+                      <span className="grid size-[62px] -rotate-3 place-items-center rounded-2xl bg-white text-3xl shadow-[0_8px_18px_-8px_rgba(8,22,12,0.5)] ring-1 ring-[#2E5A35]/10 sm:hidden">{t.emoji}</span>
+                    )}
+                    {art ? (
+                      <Sticker imageKey={art} size={84} angle={i % 2 ? 4 : -4} className="hidden sm:block" />
+                    ) : (
+                      <span className="hidden size-[84px] -rotate-3 place-items-center rounded-2xl bg-white text-4xl shadow-[0_8px_18px_-8px_rgba(8,22,12,0.5)] ring-1 ring-[#2E5A35]/10 sm:grid">{t.emoji}</span>
+                    )}
+                  </span>
+                  <div className="mt-5 sm:mt-7">
+                    <h3 className="text-[15px] leading-snug font-bold text-[#1B3722] sm:text-lg">{t.title}</h3>
+                    <p className="mt-1 hidden text-sm leading-relaxed text-[#1B3722]/65 sm:block">{t.blurb}</p>
+                  </div>
+                  <div className="mt-auto flex items-center justify-between pt-3.5">
+                    <AgeTag min={t.ageMin} max={t.ageMax} />
+                    <span className="inline-flex items-center gap-1 text-sm font-bold text-[#2E5A35]">
+                      Make one <ArrowRight className="size-4 transition group-hover/sheet:translate-x-0.5" />
+                    </span>
+                  </div>
+                </SheetStack>
+              </Link>
+            );
+          })}
+          {templates.length === 0 && <p className="text-sprout-cream/60 col-span-full text-sm">No templates match that. Try another topic or search.</p>}
         </div>
       )}
 
@@ -166,11 +187,11 @@ export default function LibraryHome() {
           {!ready ? (
             <p className="text-sprout-cream/60 text-sm">Loading…</p>
           ) : mine.length === 0 ? (
-            <div className={`${lightCard} p-8 text-center`}>
+            <div className={cn(sheet, "p-8 text-center")}>
               <p className="text-[#1B3722]/70">Nothing here yet. Make a worksheet, hit save, and it lands here.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-x-5 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
               {mine.map((w, i) => (
                 <SavedCard key={w.id} i={i} ws={w} onOpen={() => setViewing({ ws: w, savedId: w.id })} onFavorite={() => toggleFavorite(w.id)} onDelete={() => removeWorksheet(w.id)} />
               ))}
@@ -191,99 +212,139 @@ export default function LibraryHome() {
   );
 }
 
-// The headline action of the whole hub. A big, full-width hero whose mock prompt
-// box types through real example prompts, previewing the builder before you open
-// it. Tapping anywhere goes to the freeform builder.
-function BuildYourOwnHero() {
+// ── 2 · The prompt bar ────────────────────────────────────────────────
+
+function PromptBar() {
+  const router = useRouter();
+  const [text, setText] = useState("");
+
+  function go(t?: string) {
+    const q = (t ?? text).trim();
+    router.push(q ? `/resources/custom?prompt=${encodeURIComponent(q)}` : "/resources/custom");
+  }
+
   return (
-    <Link href="/resources/custom" className="group block">
-      <div className="border-sprout-lime/40 group-hover:-translate-y-1 relative overflow-hidden rounded-3xl border bg-gradient-to-br from-[#2E5A35] to-[#16331E] p-6 shadow-[0_30px_60px_-20px_rgba(15,32,20,0.9),inset_0_1px_0_rgba(255,255,255,0.12)] transition sm:p-10">
-        <div aria-hidden className="bg-sprout-lime/15 pointer-events-none absolute -top-16 -right-16 size-64 rounded-full blur-3xl" />
-        <div className="relative">
-          <div className="flex items-center gap-2.5">
-            <span className="bg-sprout-cream grid size-11 place-items-center rounded-2xl shadow-md sm:size-12">
-              <SproutMascotIcon className="size-7 sm:size-8" />
-            </span>
-            <span className="text-sprout-lime text-xs font-bold tracking-[0.15em] uppercase sm:text-sm">Build your own</span>
+    <div>
+      <SheetStack className="p-2.5 sm:p-3">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-[#2E5A35]/8 sm:size-12 sm:rounded-2xl">
+            <SproutMascotIcon className="size-7 sm:size-8" />
+          </span>
+          <div className="relative min-w-0 flex-1">
+            <input
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && go()}
+              aria-label="Describe the worksheet you want"
+              className="h-12 w-full bg-transparent text-[15px] text-[#1B3722] outline-none sm:text-lg"
+            />
+            {/* the living placeholder */}
+            {!text && (
+              <span aria-hidden className="pointer-events-none absolute inset-y-0 left-0 flex items-center overflow-hidden text-[15px] whitespace-nowrap text-[#1B3722]/45 sm:text-lg">
+                <Typewriter words={BUILD_EXAMPLES} holdMs={1600} />
+              </span>
+            )}
           </div>
-
-          <h2 className="text-sprout-cream mt-5 text-3xl font-bold tracking-[-0.02em] sm:mt-6 sm:text-5xl">
-            Describe it. Sprout builds it.
-          </h2>
-          <p className="text-sprout-cream/75 mt-3 max-w-xl text-sm leading-relaxed sm:text-base">
-            Any worksheet, any topic, any age. Just type what you want, in your own words.
-          </p>
-
-          {/* Mock prompt box — looks like the builder's input, typing real prompts. */}
-          <div className="border-sprout-cream/15 mt-6 flex items-center gap-3 rounded-2xl border bg-[#0F2114]/60 px-4 py-3.5 backdrop-blur-sm sm:mt-8 sm:px-5 sm:py-4">
-            <span className="text-sprout-cream min-w-0 flex-1 overflow-hidden text-[15px] whitespace-nowrap sm:text-lg">
-              <Typewriter words={BUILD_EXAMPLES} holdMs={1600} className="text-sprout-cream" />
-            </span>
-            <span className="bg-sprout-lime text-sprout-ink ml-1 hidden shrink-0 items-center gap-1.5 rounded-full px-4 py-2 text-sm font-bold sm:inline-flex">
-              Build <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
-            </span>
-          </div>
+          <button onClick={() => go()} className={cn(forestCta, "h-11 shrink-0 px-4 text-sm sm:h-12 sm:px-6 sm:text-base")}>
+            <span className="hidden sm:inline">Build it</span>
+            <Send className="size-4 sm:hidden" />
+            <ArrowRight className="hidden size-4 sm:block" />
+          </button>
         </div>
+      </SheetStack>
+      <div className="mt-3 flex flex-wrap items-center gap-1.5 px-1">
+        <span className="text-sprout-cream/50 mr-1 text-xs">Try:</span>
+        {STARTER_CHIPS.map((s) => (
+          <button key={s} onClick={() => go(s)} className="border-sprout-cream/20 bg-sprout-cream/10 text-sprout-cream/85 hover:bg-sprout-cream/20 rounded-full border px-3 py-1.5 text-xs font-bold transition">
+            {s}
+          </button>
+        ))}
       </div>
+    </div>
+  );
+}
+
+// ── 3 · creation row cards ────────────────────────────────────────────
+
+function SlideshowCard() {
+  return (
+    <Link href="/resources/slides" className="group block h-full">
+      <SheetStack className="h-full overflow-hidden !bg-gradient-to-br !from-[#2E5A35] !to-[#16331E] text-[#FFFDF6]">
+        <div className="flex h-full flex-col p-5 sm:p-6">
+          <span className="text-sprout-lime inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.18em] uppercase">
+            <Play className="size-3.5" /> New
+          </span>
+          <h3 className="mt-3 text-xl font-bold tracking-[-0.01em]">Slideshow generator</h3>
+          <p className="text-sprout-cream/70 mt-1 text-sm leading-relaxed">Type a topic, present a little illustrated lesson. Full screen or printed.</p>
+          <span className="text-sprout-lime mt-auto inline-flex items-center gap-1 pt-4 text-sm font-bold">
+            Make one <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+          </span>
+        </div>
+      </SheetStack>
     </Link>
   );
 }
 
-// Third member of the top row: the doorway into everything shared — the
-// community's worksheets, chat, and team announcements now live in ONE place
-// at /resources/community (they used to be split across two surfaces that were
-// both called "Community", which sent people to the wrong one).
 function CommunityCard() {
   return (
     <Link href="/resources/community" className="group block h-full">
-      <div className={`${lightCard} flex h-full flex-col p-4 transition group-hover:-translate-y-0.5 sm:p-7`}>
-        <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Community</h2>
-        <span className="mt-4 grid size-12 place-items-center rounded-2xl bg-[#2E5A35] text-white shadow-md">
-          <Users className="size-6" />
-        </span>
-        <h3 className="mt-3 text-lg font-bold text-[#1B3722]">Worksheets, chat, and updates</h3>
-        <p className="mt-1 text-sm leading-relaxed text-[#1B3722]/70">
-          Sheets other parents built and shared, a place to ask and swap ideas, and news from the team.
-        </p>
-        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-[#2E5A35]">
-          Open the Community <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
-        </span>
-      </div>
+      <SheetStack className="h-full">
+        <div className="flex h-full flex-col p-5 sm:p-6">
+          <span className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.18em] text-[#2E5A35] uppercase">
+            <Globe className="size-3.5" /> Community
+          </span>
+          <h3 className="mt-3 text-xl font-bold tracking-[-0.01em] text-[#1B3722]">Worksheets, chat, updates</h3>
+          <p className="mt-1 text-sm leading-relaxed text-[#1B3722]/65">Sheets other parents built and shared, a place to swap ideas, and news from the team.</p>
+          <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-bold text-[#2E5A35]">
+            Open it <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+          </span>
+        </div>
+      </SheetStack>
     </Link>
   );
 }
 
-function TopicChip({ active, onClick, label, emoji }: { active: boolean; onClick: () => void; label: string; emoji: string }) {
-  return (
-    <button onClick={onClick} className={pill(active, "h-10 px-4 text-sm")}>
-      <span>{emoji}</span>
-      {label}
-    </button>
-  );
-}
+// ── 5 · saved cards ───────────────────────────────────────────────────
 
 function SavedCard({ ws, i, onOpen, onFavorite, onDelete }: { ws: SavedWorksheet; i: number; onOpen: () => void; onFavorite: () => void; onDelete: () => void }) {
+  const img = firstImageKey(ws) ?? artFor(ws.meta.templateId);
   return (
-    <div className={`${cardTint(i)} flex items-center justify-between gap-3 p-4`}>
+    <SheetStack tilt={tiltFor(i)} className="flex h-full items-center gap-3.5 p-4">
+      {img && <Sticker imageKey={img} size={56} angle={i % 2 ? 3 : -3} className="shrink-0" />}
       <button onClick={onOpen} className="min-w-0 flex-1 text-left">
         <span className="flex items-center gap-2">
-          {ws.favorite && <Star className="size-3.5 fill-amber-400 text-amber-400" />}
+          {ws.favorite && <Star className="size-3.5 shrink-0 fill-amber-400 text-amber-400" />}
           <span className="truncate font-bold text-[#1B3722]">{ws.title}</span>
         </span>
-        <span className="mt-0.5 block text-xs text-[#1B3722]/60">
+        <span className="mt-0.5 block text-xs text-[#1B3722]/55">
           {ws.subtitle}
           {ws.published ? " · published" : ""}
         </span>
       </button>
       <div className="flex shrink-0 items-center gap-1">
-        <GlassButton onClick={onFavorite} aria-label="Favorite" className="size-8">
-          <Star className={`size-4 ${ws.favorite ? "fill-amber-400 text-amber-400" : ""}`} />
-        </GlassButton>
-        <GlassButton onClick={onDelete} aria-label="Delete" className="size-8">
+        <button onClick={onFavorite} aria-label="Favorite" className="grid size-9 place-items-center rounded-full text-[#1B3722]/55 transition hover:bg-[#2E5A35]/8">
+          <Star className={cn("size-4", ws.favorite && "fill-amber-400 text-amber-400")} />
+        </button>
+        <button onClick={onDelete} aria-label="Delete" className="grid size-9 place-items-center rounded-full text-[#1B3722]/55 transition hover:bg-[#2E5A35]/8">
           <Trash2 className="size-4" />
-        </GlassButton>
+        </button>
       </div>
-    </div>
+    </SheetStack>
+  );
+}
+
+function TopicTag({ active, onClick, label, emoji }: { active: boolean; onClick: () => void; label: string; emoji: string }) {
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        "inline-flex h-10 items-center gap-1.5 rounded-full px-4 text-sm font-bold transition active:scale-95",
+        active ? "bg-[#2E5A35] text-white shadow-[0_8px_18px_-6px_rgba(46,90,53,0.6)]" : "border border-[#2E5A35]/15 bg-white/70 text-[#1B3722]/70 hover:bg-white",
+      )}
+    >
+      <span>{emoji}</span>
+      {label}
+    </button>
   );
 }
 
@@ -321,7 +382,9 @@ function Viewer({
   );
 }
 
-const tileLabel = "w-full truncate text-xs font-semibold text-[#1B3722]";
+// ── Profiles (kids + account + backup) ────────────────────────────────
+
+const tileLabel = "w-full truncate text-xs font-bold text-[#1B3722]";
 const tileSub = "-mt-0.5 text-[10px] text-[#1B3722]/50";
 const tileRing = "ring-2 ring-transparent transition group-hover:ring-[#2E5A35]/45";
 
@@ -349,43 +412,40 @@ function KidsManager({
   }
 
   return (
-    <div className={`${lightCard} flex h-full flex-col p-4 sm:p-7`}>
-      <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Profiles</h2>
-      <div className="mt-4 flex flex-wrap items-start gap-4">
-        {/* main account */}
+    <SheetStack className="flex h-full flex-col p-5 sm:p-6">
+      <span className="text-[11px] font-bold tracking-[0.18em] text-[#2E5A35] uppercase">Profiles</span>
+      <div className="mt-3.5 flex flex-wrap items-start gap-3.5">
         {account && (
-          <Link href={`/resources/creator/${account.handle}`} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-16 flex-col items-center gap-2 text-center duration-300">
+          <Link href={`/resources/creator/${account.handle}`} className="group flex w-14 flex-col items-center gap-1.5 text-center">
             {account.photo ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={account.photo} alt="" className={`size-14 rounded-full object-cover ${tileRing}`} />
+              <img src={account.photo} alt="" className={cn("size-12 rounded-full object-cover", tileRing)} />
             ) : (
-              <span className={`grid size-14 place-items-center rounded-full bg-[#2E5A35] text-xl font-bold text-white ${tileRing}`}>{capName(account.displayName).charAt(0)}</span>
+              <span className={cn("grid size-12 place-items-center rounded-full bg-[#2E5A35] text-lg font-bold text-white", tileRing)}>{capName(account.displayName).charAt(0)}</span>
             )}
             <span className={tileLabel}>{capName(account.displayName)}</span>
             <span className={tileSub}>account</span>
           </Link>
         )}
-        {/* kid sub-profiles */}
-        {kids.map((k, i) => {
+        {kids.map((k) => {
           const cc = colorClasses(k.color);
           return (
-            <Link key={k.id} href={`/resources/child/${k.id}`} style={{ animationDelay: `${(i + 1) * 60}ms` }} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-16 flex-col items-center gap-2 text-center duration-300">
-              <span className={`grid size-14 place-items-center rounded-full text-xl font-bold ${cc.bg} ${tileRing}`}>{capName(k.name).charAt(0)}</span>
+            <Link key={k.id} href={`/resources/child/${k.id}`} className="group flex w-14 flex-col items-center gap-1.5 text-center">
+              <span className={cn("grid size-12 place-items-center rounded-full text-lg font-bold", cc.bg, tileRing)}>{capName(k.name).charAt(0)}</span>
               <span className={tileLabel}>{capName(k.name)}</span>
               <span className={tileSub}>age {k.age}</span>
             </Link>
           );
         })}
-        {/* add a child */}
         {!adding ? (
-          <button onClick={() => setAdding(true)} className="group animate-in fade-in zoom-in-95 fill-mode-both flex w-16 flex-col items-center gap-2 text-center duration-300">
-            <span className="grid size-14 place-items-center rounded-full border-2 border-dashed border-[#2E5A35]/30 text-[#2E5A35] transition group-hover:border-[#2E5A35]/60 group-hover:bg-[#2E5A35]/5">
-              <Plus className="size-6" />
+          <button onClick={() => setAdding(true)} className="group flex w-14 flex-col items-center gap-1.5 text-center">
+            <span className="grid size-12 place-items-center rounded-full border-2 border-dashed border-[#2E5A35]/30 text-[#2E5A35] transition group-hover:border-[#2E5A35]/60 group-hover:bg-[#2E5A35]/5">
+              <Plus className="size-5" />
             </span>
-            <span className="text-xs font-semibold text-[#2E5A35]">Add child</span>
+            <span className="text-xs font-bold text-[#2E5A35]">Add</span>
           </button>
         ) : (
-          <div className="flex w-full flex-col gap-2 rounded-2xl border border-black/10 bg-white p-3 sm:w-48">
+          <div className="flex w-full flex-col gap-2 rounded-2xl border border-[#2E5A35]/12 bg-white p-3">
             <input value={aName} onChange={(e) => setAName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} placeholder="Name" autoFocus className="h-9 rounded-lg border border-black/10 bg-white px-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]" />
             <div className="flex items-center gap-2">
               <input type="number" min={3} max={13} value={aAge} onChange={(e) => setAAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && add()} className="h-9 w-16 rounded-lg border border-black/10 bg-white px-2 text-sm text-[#1B3722] outline-none focus:border-[#2E5A35]" aria-label="Age" />
@@ -399,14 +459,10 @@ function KidsManager({
           </div>
         )}
       </div>
-      {kids.length === 0 && !adding && (
-        <p className="mt-4 text-sm text-[#1B3722]/55">Add a child to make worksheets with their name and right age, all kept together in their own profile.</p>
-      )}
-      {/* Everything above lives in this browser only. One tap saves a copy you
-          can carry to another device or restore after a cleared browser. */}
+      {kids.length === 0 && !adding && <p className="mt-3 text-xs leading-relaxed text-[#1B3722]/55">Add a child to make worksheets with their name and right age.</p>}
       <div className="mt-auto pt-4">
         <BackupControl />
       </div>
-    </div>
+    </SheetStack>
   );
 }

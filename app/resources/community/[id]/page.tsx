@@ -24,7 +24,7 @@ import { GlassButton, GlassLink } from "@/components/ui/glass";
 import type { Comment, CommunityPost } from "@/lib/resources/types";
 
 const lightCard =
-  "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
+  "rounded-[22px] bg-[#FFFDF6] ring-1 ring-[#2E5A35]/10 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_14px_30px_-14px_rgba(8,22,12,0.55),0_30px_60px_-30px_rgba(8,22,12,0.4)]";
 
 // Copy this worksheet's permalink — the share moment IS the marketing, so it
 // gets a one-tap control instead of relying on the address bar.
@@ -119,7 +119,7 @@ export default function CommunityPostPage() {
           <div className="no-print mt-5 flex justify-center">
             <button
               onClick={() => printWorksheet()}
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#2E5A35] px-6 text-base font-bold text-white shadow-[0_12px_28px_-10px_rgba(46,90,53,0.7)] transition hover:-translate-y-0.5 hover:bg-[#346a3f] active:scale-95"
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#FFFDF6] px-6 text-base font-bold text-[#1B3722] shadow-[0_14px_30px_-12px_rgba(8,22,12,0.65),inset_0_1px_0_rgba(255,255,255,0.9)] transition hover:-translate-y-0.5 active:scale-95"
             >
               <Download className="size-5" /> Download PDF
             </button>

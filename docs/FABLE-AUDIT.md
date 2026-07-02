@@ -220,3 +220,33 @@ Decisions and reasoning. Every web change gated on `tsc --noEmit` + `next build`
 **12. Swift repo (`7aee485`, pushed to main for Rork to pull).** Two copy fixes: (a) the paywall testimonial claimed "her first week with Sprout" — the speaker was a waitlist signup before the product existed; attribution now reads "a real mom, on why she joined Sprout" and the quote returns to her actual two-sentence rhythm; (b) the last user-facing em dash (Settings privacy card) restructured per the locked rule. Verified during the sweep: `Typo.serif` is actually SF Pro Rounded (no serif violation, name kept for call-site stability); the calendar does query and render ScheduledItems (the sweep agent's "display gap" flag was wrong); the three onboarding social-proof quotes all trace to real people in the FB research log (Karen Beattie, Linda Kimpton, Erin Manning); "maths" inside Karen's quote stays because verbatim quotes stay as sourced. Left alone deliberately: VoiceRecorder (built, unreachable — needs a product call: wire a voice-capture surface or cut it), SIWA→RevenueCat (blocked on Chase's device run), test stubs, the App Store link TODO (needs the real link).
 
 **13. Docs.** CLAUDE.md's "5 growth domains" line corrected to the 6 the app actually ships. RESOURCES-HANDOFF.md got a dated update block pointing here.
+
+---
+
+## Part 6 — The redesign session (2026-07-02, second run)
+
+Chase's brief: full visual redesign (delete-and-rebuild permission), the onboarding unlock animation in the app, and a slideshow generator. Design decisions and reasoning below. Gates: `tsc` clean, `next build` clean, live smoke test (routes 200, slides API verified both fallback paths), visual verification in a real browser (library, builder, community, slides screenshotted; two capture artifacts chased down and confirmed tool-side, not page-side — computed styles fully opaque). Dev server stopped gracefully, zero orphaned workers.
+
+### The design language: "paper on the green desk" (`app/resources/_components/paper.tsx`)
+
+One idea drives everything: the platform is a warm forest-green desk, and everything you can pick up is a piece of warm cream paper. It comes straight from what the product makes — printable sheets — so the interface and the output are finally the same material.
+
+- **Sheets, not cards.** Every card is now warm paper (#FFFDF6) on a small pile: two offset under-papers plus a deep soft shadow (`SheetStack`). Cards sit hand-placed with a deterministic ±1° tilt (`tiltFor`) that straightens when you reach for one. Composition changed, not just skin: no more flat pastel tints cycling 13 hues (retired; the noise read craft-store, which BRAND.md names as an anti-reference).
+- **Illustration stickers.** Every template card wears a REAL illustration from the pre-built 86-asset set, stuck over the sheet's top edge in a white sticker frame at a slight angle (`Sticker` + `lib/resources/template-art.ts`, a visual pun per template: the bee for spelling, the frog for skip counting, the train for place value). The emoji-chip system is gone from the wall; emoji survive only as a fallback for unmapped templates and in the topic tags.
+- **The CTA inversion rule, enforced.** BRAND.md locks "CTAs are CREAM with FOREST text" on green; the old UI used forest-on-green buttons everywhere. Now: on the green desk, primary actions are cream pills; on cream paper, they invert to forest. Encoded as `creamCta` / `forestCta` so the rule survives future edits.
+- **Kept deliberately:** the green canvas + waves (it IS the brand surface), the mascot, the typewriter hero, the bottom-nav blob, glass buttons for on-green chrome (glass stays the on-green secondary language; paper is the content language). These shipped recently by founder's call and they're what makes the site Sprout's.
+
+### Layout recompositions
+
+- **Library:** the hero now DOES the thing — a full-width paper **prompt bar** types real examples as a living placeholder; typing + Build lands in the freeform builder with the words already sent (`?prompt=` handoff, age parsed from the text per the stepper rule). Creation row: Slideshow (new, forest-gradient sheet) · Community · Profiles. One paper control sheet holds search + a Templates/Mine segmented switch + topic tags. The wall: 4-up on xl, stickers overlapping, age tags like price tags. The old Build-your-own banner card died; the prompt bar replaced it at higher rank.
+- **Builder:** the chat is now a cream paper panel ("passing notes with Sprout") with a mascot header, sage assistant bubbles, forest user bubbles; the worksheet stays the hero. Finish buttons under the sheet flipped to cream per the CTA rule. All locked logic untouched (stepper=dial, 5 masked presets, publish gate, sequence guard).
+- **Community:** worksheet posts are sheets with illustration stickers; **chat threads are sticky notes** (four warm paper tints hashed stably per thread, a tape strip, slight tilt) so the two content types read as different physical objects at a glance; announcements are paper, latest on the forest gradient. Upvote's idle state moved from glass to a paper chip (glass vanished on cream).
+- **Permalink/creator/child/thread pages:** re-papered via the shared sheet treatment.
+
+### Job 3 — Slideshow generator: built REAL, not coming-soon
+
+`lib/resources/slides.ts` + `POST /api/resources/slides` + `/resources/slides` (SlidesStudio). Same architecture as the worksheet engine: Venice writes a 7-9 slide deck (title / content / fact / recap slides, strict JSON, age-benchmarked style note, no em dashes, imageKeys validated against the illustration catalog) with one retry; the deterministic fallback is HONEST — a topic matching a curated theme gets a real mini-deck built from the theme's verified facts (verified live: "volcanoes" → title/content/3 facts/recap), anything else gets a friendly try-again slide, never filler dressed as teaching (the "everyday" catch-all theme is explicitly excluded). Viewer: 16:9 slides in four compositions (forest title slide, paper teaching slide with sticker, butter fact slide, sage talk-about-it recap), arrows + dots + keyboard paging, Present (real fullscreen on the green desk), Print (one slide per A4-landscape page via a print-only stacked copy). The age stepper is the same dial with the same rule. Entry: the New card on the library. Events: `resources_slides_generate` / `_print`. Deferred: saving decks to My worksheets (different type, wants its own pass) and Venice-live quality tuning on prod.
+
+### Job 2 — Onboarding unlock animation (app repo)
+
+See the app-side commit trail: decision and wiring notes recorded below when landed.

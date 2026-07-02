@@ -11,13 +11,13 @@ import { ArrowBigUp, ArrowLeft, MessageSquare } from "lucide-react";
 import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
 import { listCommunity } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
-import { capName, cardTint, firstImageKey, timeAgo } from "@/lib/resources/util";
+import { capName, firstImageKey, timeAgo } from "@/lib/resources/util";
 import { GlassLink } from "@/components/ui/glass";
 import { FollowButton } from "../../_components/FollowButton";
 import type { CommunityPost } from "@/lib/resources/types";
 
 const lightCard =
-  "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
+  "rounded-[22px] bg-[#FFFDF6] ring-1 ring-[#2E5A35]/10 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_14px_30px_-14px_rgba(8,22,12,0.55),0_30px_60px_-30px_rgba(8,22,12,0.4)]";
 
 // A unified card shape so the DB feed and the offline fallback render the same.
 type Card = { id: string; title: string; subtitle: string; createdAt: number; upvotes: number; commentCount: number; href?: string; imageKey?: string };
@@ -213,11 +213,11 @@ export default function CreatorProfile() {
               </>
             );
             return c.href ? (
-              <Link key={c.id} href={c.href} className={`${cardTint(i)} group block overflow-hidden transition hover:-translate-y-0.5`}>
+              <Link key={c.id} href={c.href} className={`${lightCard} group block overflow-hidden transition hover:-translate-y-1`}>
                 {body}
               </Link>
             ) : (
-              <div key={c.id} className={`${cardTint(i)} group overflow-hidden`}>
+              <div key={c.id} className={`${lightCard} group overflow-hidden`}>
                 {body}
               </div>
             );

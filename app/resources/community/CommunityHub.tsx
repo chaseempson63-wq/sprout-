@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 import { ArrowBigUp, Globe, MessageSquare, MessagesSquare, Plus, Search, Send, X } from "lucide-react";
 import { createThread, listCommunity, listThreads, makerWire } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
-import { capName, cardTint, cardTintFor, firstImageKey, timeAgo } from "@/lib/resources/util";
+import { capName, firstImageKey, timeAgo } from "@/lib/resources/util";
 import { cn } from "@/lib/utils";
 import { pill } from "@/lib/resources/pill";
 import { ANNOUNCEMENTS, unseenAnnouncements } from "@/lib/resources/announcements";
@@ -28,13 +28,20 @@ import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { DocumentNudge } from "../_components/DocumentNudge";
 import { MakerAvatar } from "../_components/MakerAvatar";
 import { UpvoteButton } from "../_components/UpvoteButton";
+import { SheetStack, Sticker, sheet, tiltFor } from "../_components/paper";
 import { GlassButton } from "@/components/ui/glass";
 import type { CommunityPost, ForumThread, Worksheet } from "@/lib/resources/types";
 
 export type CommunityTab = "worksheets" | "chat" | "announcements";
 
-const lightCard =
-  "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
+// Chat threads read as sticky notes pinned to the desk — a few warm paper
+// tints, cycled stably per thread so colors stay put across re-sorts.
+const NOTE_TINTS = ["bg-[#FDF6DF]", "bg-[#F1F6EC]", "bg-[#FFF4E8]", "bg-[#F6F1E3]"];
+function noteTint(id: string): string {
+  let h = 2166136261;
+  for (let i = 0; i < id.length; i++) h = Math.imul(h ^ id.charCodeAt(i), 16777619) >>> 0;
+  return NOTE_TINTS[h % NOTE_TINTS.length];
+}
 
 const AVATARS = [
   "bg-[#CDEFA0] text-[#1B3722]",
@@ -215,33 +222,32 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
               {fallbackCreations.length === 0 ? (
                 <EmptyCard text="No worksheets here yet. Build one from scratch and publish it." />
               ) : (
-                <div className="grid grid-cols-2 gap-3 sm:gap-8 lg:grid-cols-3">
+                <div className="grid grid-cols-2 gap-x-4 gap-y-9 sm:gap-x-7 sm:gap-y-12 lg:grid-cols-3">
                   {fallbackCreations.map((c, i) => {
                     const img = firstImageKey(c.worksheet);
                     return (
-                      <div key={c.id} className={`${cardTint(i)} group flex flex-col overflow-hidden`}>
-                        {img && (
-                          <button onClick={() => setViewing(c.worksheet)} className="block aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={`/resources/illustrations/${img}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
-                          </button>
-                        )}
-                        <div className="flex flex-1 flex-col p-3 sm:p-5">
+                      <div key={c.id}>
+                        <SheetStack tilt={tiltFor(i)} className={`flex h-full flex-col p-4 ${img ? "pt-8" : ""} sm:p-5 ${img ? "sm:pt-9" : ""}`}>
+                          {img && (
+                            <button onClick={() => setViewing(c.worksheet)} aria-label={c.worksheet.title} className="absolute -top-5 left-4 sm:-top-6 sm:left-5">
+                              <Sticker imageKey={img} size={72} angle={i % 2 ? 4 : -4} />
+                            </button>
+                          )}
                           <button onClick={() => setViewing(c.worksheet)} className="min-w-0 flex-1 text-left">
-                            <h3 className="truncate font-bold text-[#1B3722]">{c.worksheet.title}</h3>
+                            <h3 className="leading-snug font-bold text-[#1B3722]">{c.worksheet.title}</h3>
                             <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
                           </button>
-                          <p className="mt-3 truncate border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
+                          <p className="mt-3 truncate border-t border-[#2E5A35]/10 pt-3 text-xs text-[#1B3722]/70">
                             Made with Sprout by{" "}
                             {c.creatorHandle ? (
-                              <Link href={`/resources/creator/${c.creatorHandle}`} className="font-semibold text-[#2E5A35] hover:underline">
+                              <Link href={`/resources/creator/${c.creatorHandle}`} className="font-bold text-[#2E5A35] hover:underline">
                                 {c.creatorName}
                               </Link>
                             ) : (
-                              <span className="font-semibold text-[#2E5A35]">{c.creatorName}</span>
+                              <span className="font-bold text-[#2E5A35]">{c.creatorName}</span>
                             )}
                           </p>
-                        </div>
+                        </SheetStack>
                       </div>
                     );
                   })}
@@ -253,38 +259,37 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
           ) : posts.length === 0 ? (
             <EmptyCard text={query || topic !== "all" || yoursOn ? "No worksheets match that." : "No worksheets here yet. Build one from scratch and publish it."} />
           ) : (
-            <div className="grid grid-cols-2 gap-3 sm:gap-8 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-9 sm:gap-x-7 sm:gap-y-12 lg:grid-cols-3">
               {posts.map((p, i) => {
                 const img = firstImageKey(p.worksheet);
                 return (
-                  <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${cardTint(i)} animate-in fade-in slide-in-from-bottom-2 fill-mode-both group flex flex-col overflow-hidden duration-500`}>
-                    {img && (
-                      <Link href={`/resources/community/${p.id}`} className="block aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={`/resources/illustrations/${img}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
-                      </Link>
-                    )}
-                    <div className="flex flex-1 flex-col p-3 sm:p-5">
+                  <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className="animate-in fade-in slide-in-from-bottom-2 fill-mode-both duration-500">
+                    <SheetStack tilt={tiltFor(i)} className={`flex h-full flex-col p-4 ${img ? "pt-8" : ""} sm:p-5 ${img ? "sm:pt-9" : ""}`}>
+                      {img && (
+                        <Link href={`/resources/community/${p.id}`} aria-label={p.title} className="absolute -top-5 left-4 sm:-top-6 sm:left-5">
+                          <Sticker imageKey={img} size={72} angle={i % 2 ? 4 : -4} />
+                        </Link>
+                      )}
                       <Link href={`/resources/community/${p.id}`} className="min-w-0 flex-1">
-                        <h3 className="truncate font-bold text-[#1B3722]">{p.title}</h3>
+                        <h3 className="leading-snug font-bold text-[#1B3722]">{p.title}</h3>
                         {p.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{p.subtitle}</p>}
                       </Link>
-                      <div className="mt-3 flex items-center justify-between gap-2 border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
+                      <div className="mt-3 flex items-center justify-between gap-2 border-t border-[#2E5A35]/10 pt-3 text-xs text-[#1B3722]/70">
                         <span className="flex min-w-0 items-center gap-1.5 truncate">
                           <MakerAvatar name={p.creatorName} photo={p.photo} px={22} />
-                          <Link href={`/resources/creator/${p.handle}`} className="font-semibold text-[#2E5A35] hover:underline">
+                          <Link href={`/resources/creator/${p.handle}`} className="truncate font-bold text-[#2E5A35] hover:underline">
                             {capName(p.creatorName)}
                           </Link>
-                          <span className="text-[#1B3722]/45"> · {timeAgo(p.createdAt)}</span>
+                          <span className="shrink-0 text-[#1B3722]/45">· {timeAgo(p.createdAt)}</span>
                         </span>
                         <span className="flex shrink-0 items-center gap-1.5">
                           <UpvoteButton targetType="post" targetId={p.id} count={p.upvotes} />
-                          <Link href={`/resources/community/${p.id}#comments`} aria-label="Comments" className="inline-flex h-8 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/45 px-2.5 text-xs font-semibold text-[#1B3722]/75 transition hover:bg-white/75">
+                          <Link href={`/resources/community/${p.id}#comments`} aria-label="Comments" className="inline-flex h-8 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/60 px-2.5 text-xs font-bold text-[#1B3722]/75 transition hover:bg-white">
                             <MessageSquare className="size-3.5" /> {p.commentCount}
                           </Link>
                         </span>
                       </div>
-                    </div>
+                    </SheetStack>
                   </div>
                 );
               })}
@@ -337,7 +342,7 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
           </div>
 
           {composing && account && (
-            <div className={cn(cardTint(0), "mb-5 p-4")}>
+            <div className={cn(sheet, "mb-5 p-4")}>
               <input
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
@@ -371,34 +376,44 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
           ) : threads.length === 0 ? (
             <EmptyCard text={q ? "No posts match that." : "No posts yet. Start the first conversation."} />
           ) : (
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-x-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
               {threads.map((t, i) => (
                 <Link
                   key={t.id}
                   href={`/resources/forum/${t.id}`}
-                  style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }}
-                  className={cn(cardTintFor(t.id), "group animate-in fade-in slide-in-from-bottom-2 fill-mode-both flex flex-col p-4 duration-500 transition hover:-translate-y-1")}
+                  style={{ animationDelay: `${Math.min(i, 11) * 35}ms`, transform: `rotate(${tiltFor(i)}deg)` }}
+                  className="group animate-in fade-in slide-in-from-bottom-2 fill-mode-both block duration-500"
                 >
-                  <div className="flex items-center gap-2">
-                    {t.photo ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img src={t.photo} alt="" className="size-8 shrink-0 rounded-full object-cover" />
-                    ) : (
-                      <span className={cn("grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold", avatarClass(t.creatorName))}>
-                        {capName(t.creatorName).charAt(0)}
-                      </span>
+                  {/* a sticky note pinned to the desk, with a strip of tape */}
+                  <div
+                    className={cn(
+                      "relative flex h-full flex-col rounded-lg p-4 pt-5 ring-1 ring-black/5 transition duration-300 group-hover:-translate-y-1.5",
+                      "shadow-[0_12px_26px_-12px_rgba(8,22,12,0.55),0_26px_50px_-28px_rgba(8,22,12,0.4)]",
+                      noteTint(t.id),
                     )}
-                    <span className="min-w-0 truncate text-sm font-bold text-[#1B3722]">{capName(t.creatorName)}</span>
-                    <span className="shrink-0 text-xs text-[#1B3722]/45">{timeAgo(t.createdAt)}</span>
-                  </div>
-                  <p className="mt-2.5 flex-1 font-bold leading-snug text-[#1B3722]">{t.title}</p>
-                  <div className="mt-3 flex items-center gap-4 border-t border-[#2E5A35]/10 pt-3 text-xs text-[#1B3722]/55">
-                    <span className="inline-flex items-center gap-1">
-                      <ArrowBigUp className="size-3.5" /> {t.upvotes}
-                    </span>
-                    <span className="inline-flex items-center gap-1">
-                      <MessageSquare className="size-3.5" /> {t.commentCount} {t.commentCount === 1 ? "reply" : "replies"}
-                    </span>
+                  >
+                    <span aria-hidden className="absolute -top-2 left-1/2 h-4 w-14 -translate-x-1/2 rotate-[-2deg] rounded-[2px] bg-white/55 shadow-[0_1px_2px_rgba(8,22,12,0.15)]" />
+                    <div className="flex items-center gap-2">
+                      {t.photo ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={t.photo} alt="" className="size-8 shrink-0 rounded-full object-cover" />
+                      ) : (
+                        <span className={cn("grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold", avatarClass(t.creatorName))}>
+                          {capName(t.creatorName).charAt(0)}
+                        </span>
+                      )}
+                      <span className="min-w-0 truncate text-sm font-bold text-[#1B3722]">{capName(t.creatorName)}</span>
+                      <span className="shrink-0 text-xs text-[#1B3722]/45">{timeAgo(t.createdAt)}</span>
+                    </div>
+                    <p className="mt-2.5 flex-1 leading-snug font-bold text-[#1B3722]">{t.title}</p>
+                    <div className="mt-3 flex items-center gap-4 border-t border-[#1B3722]/10 pt-3 text-xs text-[#1B3722]/55">
+                      <span className="inline-flex items-center gap-1">
+                        <ArrowBigUp className="size-3.5" /> {t.upvotes}
+                      </span>
+                      <span className="inline-flex items-center gap-1">
+                        <MessageSquare className="size-3.5" /> {t.commentCount} {t.commentCount === 1 ? "reply" : "replies"}
+                      </span>
+                    </div>
                   </div>
                 </Link>
               ))}
@@ -416,8 +431,9 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
               <div
                 key={a.id}
                 className={cn(
-                  "rounded-2xl border p-5 shadow-[0_16px_36px_-14px_rgba(0,0,0,0.5)]",
-                  latest ? "border-[#CDEFA0]/30 bg-gradient-to-br from-[#2E5A35] to-[#16331E]" : "border-[#2E5A35]/15 bg-[#E9F3E6]",
+                  latest
+                    ? "rounded-[22px] border border-[#CDEFA0]/30 bg-gradient-to-br from-[#2E5A35] to-[#16331E] p-5 shadow-[0_16px_36px_-14px_rgba(0,0,0,0.5)]"
+                    : cn(sheet, "p-5"),
                 )}
               >
                 <div className="flex items-center justify-between gap-2">
@@ -460,7 +476,7 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
 
 function EmptyCard({ text }: { text: string }) {
   return (
-    <div className={`${lightCard} p-8 text-center`}>
+    <div className={cn(sheet, "p-8 text-center")}>
       <p className="text-[#1B3722]/70">{text}</p>
     </div>
   );

@@ -37,10 +37,11 @@ const STARTERS = [
   "a story starter about a dragon with lines to write on, age 10",
 ];
 
-// Big green finish buttons mirrored at the bottom of the worksheet, where your
-// hand already is when you're done.
-const greenBtn =
-  "inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#2E5A35] px-6 text-base font-bold text-white shadow-[0_12px_28px_-10px_rgba(46,90,53,0.7)] transition hover:-translate-y-0.5 hover:bg-[#346a3f] active:scale-95 disabled:pointer-events-none disabled:opacity-50";
+// Big finish buttons mirrored at the bottom of the worksheet, where your hand
+// already is when you're done. They sit on the green desk, so per the brand
+// rule they're CREAM pills with forest text (see _components/paper.tsx).
+const finishBtn =
+  "inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#FFFDF6] px-6 text-base font-bold text-[#1B3722] shadow-[0_14px_30px_-12px_rgba(8,22,12,0.65),inset_0_1px_0_rgba(255,255,255,0.9)] transition hover:-translate-y-0.5 active:scale-95 disabled:pointer-events-none disabled:opacity-50";
 
 export default function Builder() {
   const params = useParams();
@@ -133,8 +134,19 @@ export default function Builder() {
     if (didInit.current || !template) return;
     didInit.current = true;
     if (template.id === "custom") {
-      // Freeform: don't auto-generate a blank sheet — teach how to prompt and wait.
-      setMessages([{ role: "assistant", content: HOW_TO_PROMPT }]);
+      // The library's prompt bar hands its text over via ?prompt= — build it
+      // straight away so the hero action lands in one step. Otherwise teach
+      // how to prompt and wait (never auto-generate a blank freeform sheet).
+      const handed = new URLSearchParams(window.location.search).get("prompt")?.trim();
+      if (handed) {
+        const promptAge = parseAge(handed);
+        if (promptAge) setAge(promptAge);
+        const msgs: ChatMessage[] = [{ role: "user", content: handed }];
+        setMessages(msgs);
+        void runGenerate(msgs, promptAge ?? age, "send", undefined);
+      } else {
+        setMessages([{ role: "assistant", content: HOW_TO_PROMPT }]);
+      }
     } else {
       void runGenerate([], age, "init", undefined);
     }
@@ -340,13 +352,22 @@ export default function Builder() {
       {/* Mobile shows the worksheet first (the thing you came for) with the chat
           right under it; desktop keeps the sticky chat rail on the left. */}
       <div className="grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8">
-        {/* chat */}
-        <div className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] order-2 flex flex-col rounded-2xl border lg:order-1 lg:sticky lg:top-20 lg:h-[70vh]">
+        {/* chat — a warm paper sheet, like passing notes with Sprout. The
+            assistant writes on paper (soft sage bubbles + mini mascot); you
+            write in forest. */}
+        <div className="no-print order-2 flex flex-col rounded-[22px] bg-[#FFFDF6] ring-1 ring-[#2E5A35]/10 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_14px_30px_-14px_rgba(8,22,12,0.55)] lg:order-1 lg:sticky lg:top-20 lg:h-[70vh]">
+          <div className="flex items-center gap-2 border-b border-[#2E5A35]/10 px-4 py-2.5">
+            <span className="grid size-7 place-items-center rounded-lg bg-[#2E5A35]/8">
+              <SproutMascotIcon className="size-5" />
+            </span>
+            <span className="text-sm font-bold text-[#1B3722]">Sprout</span>
+            <span className="text-xs text-[#1B3722]/45">tell it what to change</span>
+          </div>
           <div className="max-h-72 flex-1 space-y-3 overflow-y-auto p-4 lg:max-h-none">
             {messages.map((m, i) =>
               m.role === "user" ? (
                 <div key={i} className="animate-in fade-in slide-in-from-bottom-1 flex justify-end duration-200">
-                  <div className="max-w-[85%] rounded-2xl bg-[#F4EDE0] px-3 py-2 text-sm leading-relaxed text-[#1B3722]">{m.display ?? m.content}</div>
+                  <div className="max-w-[85%] rounded-2xl rounded-br-md bg-[#2E5A35] px-3 py-2 text-sm leading-relaxed text-white">{m.display ?? m.content}</div>
                 </div>
               ) : (
                 <div key={i} className="animate-in fade-in slide-in-from-bottom-1 flex justify-start duration-200">
@@ -361,7 +382,7 @@ export default function Builder() {
                   <button
                     key={s}
                     onClick={() => send(s)}
-                    className="border-sprout-cream/20 bg-sprout-cream/10 text-sprout-cream/90 hover:bg-sprout-cream/20 rounded-2xl border px-3 py-1.5 text-left text-xs leading-snug transition"
+                    className="rounded-2xl border border-[#2E5A35]/20 bg-white/70 px-3 py-1.5 text-left text-xs leading-snug text-[#1B3722]/80 transition hover:bg-white"
                   >
                     {s}
                   </button>
@@ -370,7 +391,7 @@ export default function Builder() {
             )}
             {loading && (
               <div className="animate-in fade-in flex justify-start">
-                <div className="bg-sprout-cream/10 rounded-2xl px-3.5 py-3">
+                <div className="rounded-2xl bg-[#F1F6EC] px-3.5 py-3">
                   <TypingDots />
                 </div>
               </div>
@@ -379,15 +400,20 @@ export default function Builder() {
           </div>
 
           {(!isCustom || variants.length > 0) && (
-            <div className="no-print border-sprout-cream/15 flex flex-wrap gap-1.5 border-t px-3 pt-2">
+            <div className="no-print flex flex-wrap gap-1.5 border-t border-[#2E5A35]/10 px-3 pt-2">
               {INPUT_VOCABULARY.edits.slice(0, 5).map((k) => (
-                <GlassButton key={k.word} onClick={() => sendPreset(k.word)} title={k.does} className="h-7 gap-1 px-3 text-[11px]">
+                <button
+                  key={k.word}
+                  onClick={() => sendPreset(k.word)}
+                  title={k.does}
+                  className="inline-flex h-7 items-center rounded-full border border-[#2E5A35]/20 bg-white/70 px-3 text-[11px] font-bold text-[#2E5A35] transition hover:bg-white active:scale-95"
+                >
                   {k.word}
-                </GlassButton>
+                </button>
               ))}
             </div>
           )}
-          <div className="border-sprout-cream/15 flex items-center gap-2 border-t p-3">
+          <div className="flex items-center gap-2 border-t border-[#2E5A35]/10 p-3">
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
@@ -395,11 +421,16 @@ export default function Builder() {
                 if (e.key === "Enter") send();
               }}
               placeholder={isCustom ? "Describe the worksheet you want to build..." : "make it about space, add more questions, harder..."}
-              className="text-sprout-cream placeholder:text-sprout-cream/40 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none"
+              className="min-w-0 flex-1 bg-transparent px-2 text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/40"
             />
-            <GlassButton onClick={() => send()} disabled={!input.trim()} aria-label="Send" className="size-9 shrink-0">
+            <button
+              onClick={() => send()}
+              disabled={!input.trim()}
+              aria-label="Send"
+              className="grid size-9 shrink-0 place-items-center rounded-full bg-[#2E5A35] text-white shadow-sm transition hover:bg-[#346a3f] active:scale-95 disabled:pointer-events-none disabled:opacity-40"
+            >
               {loading ? <Loader2 className="size-4 animate-spin" /> : <Send className="size-4" />}
-            </GlassButton>
+            </button>
           </div>
         </div>
 
@@ -468,16 +499,16 @@ export default function Builder() {
             <div key={idx} className="animate-in fade-in zoom-in-95 slide-in-from-bottom-3 fill-mode-both duration-500">
               <WorksheetDoc worksheet={worksheet} />
               <div className="no-print mt-5 flex flex-wrap items-center justify-center gap-3">
-                <button onClick={save} disabled={isSaved} className={greenBtn}>
+                <button onClick={save} disabled={isSaved} className={finishBtn}>
                   <Check className="size-5" /> {isSaved ? "Saved" : "Save"}
                 </button>
                 <AddToKid worksheet={worksheet} source={source ?? "ai"} className="h-12 px-6 text-base" />
                 {isCustom && (
-                  <button onClick={() => void publishCustom()} disabled={publishedIdx === idx} className={greenBtn}>
+                  <button onClick={() => void publishCustom()} disabled={publishedIdx === idx} className={finishBtn}>
                     <Globe className="size-5" /> {publishedIdx === idx ? "Published" : "Publish"}
                   </button>
                 )}
-                <button onClick={print} className={greenBtn}>
+                <button onClick={print} className={finishBtn}>
                   <Download className="size-5" /> Download PDF
                 </button>
               </div>
@@ -543,7 +574,7 @@ function TypingDots() {
   return (
     <span className="flex items-center gap-1">
       {[0, 1, 2].map((i) => (
-        <span key={i} className="bg-sprout-cream/60 size-1.5 animate-bounce rounded-full" style={{ animationDelay: `${i * 150}ms` }} />
+        <span key={i} className="size-1.5 animate-bounce rounded-full bg-[#2E5A35]/50" style={{ animationDelay: `${i * 150}ms` }} />
       ))}
     </span>
   );
@@ -567,9 +598,9 @@ function AssistantBubble({ text }: { text: string }) {
     return () => window.clearInterval(t);
   }, [text]);
   return (
-    <div className="bg-sprout-cream/10 text-sprout-cream max-w-[85%] rounded-2xl px-3 py-2 text-sm leading-relaxed">
+    <div className="max-w-[85%] rounded-2xl rounded-bl-md bg-[#F1F6EC] px-3 py-2 text-sm leading-relaxed text-[#1B3722]">
       {shown || "​"}
-      {!done && <span className="bg-sprout-cream/70 ml-0.5 inline-block h-3.5 w-px -translate-y-px animate-pulse align-middle" />}
+      {!done && <span className="ml-0.5 inline-block h-3.5 w-px -translate-y-px animate-pulse bg-[#2E5A35]/70 align-middle" />}
     </div>
   );
 }

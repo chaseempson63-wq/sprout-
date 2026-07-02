@@ -20,7 +20,7 @@ import { GlassLink } from "@/components/ui/glass";
 import type { Comment, ForumThread } from "@/lib/resources/types";
 
 const lightCard =
-  "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
+  "rounded-[22px] bg-[#FFFDF6] ring-1 ring-[#2E5A35]/10 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_14px_30px_-14px_rgba(8,22,12,0.55),0_30px_60px_-30px_rgba(8,22,12,0.4)]";
 
 export default function ForumThreadPage() {
   const params = useParams();
