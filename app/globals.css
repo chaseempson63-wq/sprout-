@@ -407,3 +407,24 @@ html[data-site-intro="reveal"] header { animation: intro-reveal-fade 440ms ease 
     animation: none !important;
   }
 }
+
+/* Testimonial rail — horizontal auto-scroll that loops seamlessly. The track
+   holds two identical sets; translating -50% lands exactly on the second set.
+   Cards carry their gap as margin-right so -50% stays aligned. */
+@keyframes marquee-x {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee-x 70s linear infinite;
+  will-change: transform;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+    transform: none;
+  }
+}

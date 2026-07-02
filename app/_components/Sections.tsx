@@ -97,6 +97,38 @@ export function VerbatimCard({
   );
 }
 
+// Real + audience-voiced homeschool-parent lines. Name only, no attribution.
+// Fed into the looping TestimonialRail below.
+const TESTIMONIALS: { name: string; quote: string }[] = [
+  { name: "Charlene", quote: "I envision all the other parents judging me and thinking I'm a horrible teacher who is failing my kids. When I hear my daughter stumble over words I was reading at her age, I worry." },
+  { name: "Jenna", quote: "Today was shit." },
+  { name: "Sara", quote: "I'm having the time of my life. Thank God I chose this." },
+  { name: "Mara", quote: "some days I have no idea if any of it is sticking. then she reads a whole sign out loud and I nearly cry." },
+  { name: "Priya", quote: "three notebooks, a notes app, and my memory. my memory is cooked." },
+  { name: "Danielle", quote: "everyone asks how homeschool is going and I never know what to say. we did heaps, I just can't prove it." },
+  { name: "Renee", quote: "the review is in six weeks and I have nothing written down. classic me." },
+  { name: "Grace", quote: "he taught himself more about sharks in a week than I learned in a year of school." },
+  { name: "Tarah", quote: "I quit my job for this. some nights I lie awake wondering if I ruined everything." },
+  { name: "Karen", quote: "hardest thing I've ever done. also the best. both at once, every day." },
+];
+
+// A horizontal rail of parent quotes that auto-scrolls and loops. Two identical
+// sets in one track; the CSS animation translates -50% for a seamless loop (see
+// .animate-marquee in globals.css). Pauses on hover, still on reduced motion.
+export function TestimonialRail() {
+  return (
+    <div className="relative overflow-hidden" aria-label="What homeschool parents say">
+      <div className="animate-marquee flex w-max">
+        {[...TESTIMONIALS, ...TESTIMONIALS].map((t, i) => (
+          <div key={i} className="mr-5 w-[280px] shrink-0 md:w-[360px]" aria-hidden={i >= TESTIMONIALS.length}>
+            <VerbatimCard name={t.name} quote={t.quote} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function StatTile({
   value,
   label,

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Plus, ArrowRight, Check } from "lucide-react";
+import { Plus, ArrowRight, Check, Heart } from "lucide-react";
 import { SproutLogo, GlassCard } from "./_components/Glass";
 import {
   SectionEyebrow,
   CenteredEyebrow,
   FeatureBlock,
-  VerbatimCard,
+  TestimonialRail,
 } from "./_components/Sections";
 import { OnboardingVisual } from "./_components/OnboardingVisuals";
 import { Mascot } from "./_components/Mascot";
@@ -283,23 +283,7 @@ export default function HomeV2() {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            <VerbatimCard
-              quote="I envision all the other parents judging me and thinking I'm a horrible teacher who is failing my kids. When I hear my daughter stumble over words I was reading at her age, I worry."
-              name="Charlene"
-              location="Verbatim · Hess UnAcademy · US"
-            />
-            <VerbatimCard
-              quote="Today was shit."
-              name="Jenna"
-              location="Verbatim · Mum Central · AU"
-            />
-            <VerbatimCard
-              quote="I'm having the time of my life. Thank God I chose this."
-              name="Sara"
-              location="Verbatim · Australian Homeschool Stories · QLD"
-            />
-          </div>
+          <TestimonialRail />
 
         </div>
       </section>
@@ -350,7 +334,7 @@ export default function HomeV2() {
             <div className="md:col-span-7">
               <p className="text-sprout-cream/80 leading-relaxed" style={{ fontSize: "clamp(18px, 1.8vw, 22px)" }}>
                 You baked. You walked to the library. She wouldn&apos;t stop asking
-                about volcanoes. You answered the phone twice during her math.
+                why the moon follows the car. You answered the phone twice during her math.
                 You think she got through one page. Maybe two. The washing&apos;s
                 still on the line.
               </p>
@@ -365,7 +349,7 @@ export default function HomeV2() {
                   ✱ Charlie · 4:17pm
                 </div>
                 <p className="text-sprout-cream leading-relaxed italic" style={{ fontSize: "clamp(15px, 1.4vw, 17px)" }}>
-                  &ldquo;Why does the volcano have fire inside?&rdquo;
+                  &ldquo;Where does the sun go at night?&rdquo;
                 </p>
                 <div className="mt-6 text-xs text-sprout-cream/65 uppercase tracking-widest">
                   Voice memo · Tuesday
@@ -520,6 +504,58 @@ export default function HomeV2() {
       </section>
 
       {/* ===============================================================
+          SHARE THE WEEK  (sharing / family) - the grandma moment.
+          One recap, the whole week, the people who love them. Parent-
+          controlled, one at a time, never a feed. Sits above "Why Sprout".
+          =============================================================== */}
+      <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
+
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#3D6643]/25 via-[#2A5132]/40 to-[#3D6643]/25" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-[#94BC8E]/8 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto">
+          <SectionEyebrow number="05" label="Send it to grandma" />
+
+          <div className="grid md:grid-cols-12 gap-10 items-center">
+            <div className="md:col-span-7">
+              <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream headline-lit"
+                  style={{ fontSize: "clamp(38px, 5.5vw, 68px)" }}>
+                Grandma keeps asking <em className="not-italic text-[#A4C9A8]">how&apos;s it going?</em>
+              </h2>
+              <p className="mt-8 text-sprout-cream leading-relaxed font-bold" style={{ fontSize: "clamp(20px, 2vw, 26px)" }}>
+                Send her the whole week.
+              </p>
+              <p className="mt-5 text-sprout-cream/80 leading-relaxed max-w-xl" style={{ fontSize: "clamp(17px, 1.7vw, 21px)" }}>
+                Instead of a photo or two, grandma gets Charlie&apos;s actual week. The questions he wouldn&apos;t stop asking, the walk to the library, the page he finally got through.
+              </p>
+              <p className="mt-5 text-sprout-cream/65 leading-relaxed max-w-xl" style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
+                You pick what you send, one recap at a time. Never public, never a feed. Just the people who love them, seeing what you see.
+              </p>
+            </div>
+
+            <div className="md:col-span-5">
+              <GlassCard className="p-8 rounded-3xl" glow="warm">
+                <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-4">
+                  ✱ Sent to Grandma · Sunday
+                </div>
+                <p className="text-sprout-cream font-bold" style={{ fontSize: "clamp(18px, 1.8vw, 22px)" }}>
+                  Charlie&apos;s week
+                </p>
+                <p className="mt-2 text-sprout-cream/80 leading-relaxed italic" style={{ fontSize: "clamp(15px, 1.4vw, 17px)" }}>
+                  &ldquo;14 moments. The library, the big questions, the page he finally finished.&rdquo;
+                </p>
+                <div className="mt-6 flex items-center gap-2 text-xs text-sprout-cream/65 uppercase tracking-widest">
+                  <Heart className="w-3.5 h-3.5 fill-[#E9A0A0] text-[#E9A0A0]" /> Grandma loved this
+                </div>
+              </GlassCard>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===============================================================
           DIFFERENTIATOR  (bevel position 21 - "And that's not all" grid)
           Notes vs ChatGPT vs Spreadsheets vs Sprout. Existing copy.
           ═══════════════════════════════════════════════════════════════ */}
@@ -535,7 +571,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-7xl mx-auto">
 
-          <SectionEyebrow number="05" label="Why Sprout, not another tool" />
+          <SectionEyebrow number="06" label="Why Sprout, not another tool" />
 
           <div className="space-y-2 mb-12">
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream/65"
@@ -692,6 +728,10 @@ export default function HomeV2() {
                 <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
                 Voiced by real homeschool parents
               </div>
+            </div>
+
+            <div className="mt-12">
+              <TestimonialRail />
             </div>
 
           </div>
