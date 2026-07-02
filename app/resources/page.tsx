@@ -2,25 +2,22 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import { ArrowRight, Check, Globe, MessageSquare, Plus, Search, Star, Trash2, Users, X } from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, Check, Globe, Plus, Search, Star, Trash2, Users, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
-import { MakerAvatar } from "./_components/MakerAvatar";
+import { BackupControl } from "./_components/BackupControl";
 import { DocumentNudge } from "./_components/DocumentNudge";
 import { HowItWorks, type HowStep } from "./_components/HowItWorks";
 import { Typewriter } from "./_components/Typewriter";
-import { UpvoteButton } from "./_components/UpvoteButton";
 import { DescribeIcon, ShareSheetIcon, SproutStepIcon } from "./_components/StepIcons";
 import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
-import { COMMUNITY_SAMPLES } from "@/lib/resources/samples";
-import { listCommunity } from "@/lib/resources/social";
 import { printWorksheet } from "@/lib/resources/print-fit";
 import { colorClasses, useResources } from "@/lib/resources/store";
-import { capName, cardTint, firstImageKey, timeAgo } from "@/lib/resources/util";
+import { capName, cardTint } from "@/lib/resources/util";
 import { GlassButton } from "@/components/ui/glass";
 import { pill } from "@/lib/resources/pill";
-import type { CommunityPost, SavedWorksheet, Worksheet } from "@/lib/resources/types";
+import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
 const lightCard =
   "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
@@ -51,8 +48,7 @@ const HOME_STEPS: HowStep[] = [
   { icon: ShareSheetIcon, title: "Print or share", blurb: "Keep it, print it, or post it for other parents." },
 ];
 
-type Tab = "templates" | "mine" | "community";
-type Creation = { id: string; worksheet: Worksheet; creatorName: string; creatorHandle: string; createdAt: number };
+type Tab = "templates" | "mine";
 
 function match(q: string, text: string): boolean {
   return q.trim() === "" || text.toLowerCase().includes(q.trim().toLowerCase());
@@ -65,55 +61,13 @@ export default function LibraryHome() {
   const [topic, setTopic] = useState<string>("all");
   const [viewing, setViewing] = useState<{ ws: Worksheet; savedId?: string } | null>(null);
 
-  // Community is the shared DB feed. When the social layer is off (unconfigured
-  // / kill switch) socialOff flips and we fall back to the local + sample
-  // showcase below, read-only, so the page never breaks.
-  const [posts, setPosts] = useState<CommunityPost[]>([]);
-  const [socialOff, setSocialOff] = useState(false);
-  const [loadingCommunity, setLoadingCommunity] = useState(true);
-  const [yoursOn, setYoursOn] = useState(false);
-
   const inTopic = (templateId: string) => topic === "all" || topicForTemplate(templateId) === topic;
   const templates = TEMPLATES.filter((t) => inTopic(t.id) && match(query, `${t.title} ${t.blurb}`));
   const mine = (ready ? worksheets : []).filter((w) => inTopic(w.meta.templateId) && match(query, `${w.title} ${w.subtitle}`));
 
-  // Fallback community (used ONLY when the social backend is off): the user's own
-  // published custom sheets + the seed placeholders, read-only.
-  const fallbackCreations: Creation[] = [
-    ...(ready ? worksheets : [])
-      .filter((w) => w.published && w.meta.templateId === "custom")
-      .map((w) => ({ id: w.id, worksheet: w as Worksheet, creatorName: w.creatorName || account?.displayName || "a Sprout parent", creatorHandle: w.creatorHandle || account?.handle || "", createdAt: w.createdAt })),
-    ...COMMUNITY_SAMPLES.map((s) => ({ id: s.id, worksheet: s.worksheet, creatorName: s.creatorName, creatorHandle: s.creatorHandle, createdAt: 0 })),
-  ]
-    .filter((c) => match(query, `${c.worksheet.title} ${c.worksheet.subtitle} ${c.creatorName}`))
-    .sort((a, b) => b.createdAt - a.createdAt);
-
-  // The real community feed lives in the shared DB. Refetch (debounced) when the
-  // search, topic filter, or "Yours" toggle change.
-  useEffect(() => {
-    if (!ready) return;
-    let live = true;
-    const t = window.setTimeout(() => {
-      setLoadingCommunity(true);
-      listCommunity({ q: query, topic: topic !== "all" ? topic : undefined, mine: yoursOn ? account?.id : undefined }).then((res) => {
-        if (!live) return;
-        setPosts(res.posts);
-        setSocialOff(res.disabled);
-        setLoadingCommunity(false);
-      });
-    }, 250);
-    return () => {
-      live = false;
-      window.clearTimeout(t);
-    };
-  }, [ready, query, topic, yoursOn, account?.id]);
-
-  const communityCount = socialOff ? fallbackCreations.length : posts.length;
-
   const tabs: { key: Tab; label: string; count: number }[] = [
     { key: "templates", label: "Templates", count: templates.length },
     { key: "mine", label: "My worksheets", count: mine.length },
-    { key: "community", label: "Community", count: communityCount },
   ];
 
   return (
@@ -144,11 +98,7 @@ export default function LibraryHome() {
           <BuildYourOwnHero />
           <div className="grid grid-cols-1 items-stretch gap-3 sm:grid-cols-2 sm:gap-6">
             <KidsManager kids={kids} account={account} onAdd={addChild} />
-            <CommunityCard
-              count={communityCount}
-              active={tab === "community"}
-              onOpen={() => setTab(tab === "community" ? "templates" : "community")}
-            />
+            <CommunityCard />
           </div>
         </div>
       )}
@@ -176,6 +126,9 @@ export default function LibraryHome() {
               </button>
             );
           })}
+          <Link href="/resources/community" className={pill(false, "h-10 px-4 text-sm")}>
+            <Globe className="size-4" /> Community
+          </Link>
         </div>
 
         <div className="border-sprout-cream/10 mt-5 border-t pt-5">
@@ -184,11 +137,6 @@ export default function LibraryHome() {
             {TOPICS.map((t) => (
               <TopicChip key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
             ))}
-            {tab === "community" && account && (
-              <button onClick={() => setYoursOn((v) => !v)} className={pill(yoursOn, "h-10 px-5 text-sm")}>
-                Yours
-              </button>
-            )}
           </div>
         </div>
       </div>
@@ -229,102 +177,6 @@ export default function LibraryHome() {
             </div>
           )}
         </>
-      )}
-
-      {tab === "community" && (
-        <div>
-          <p className="text-sprout-cream/65 mb-6 flex items-center gap-2 text-sm">
-            <Globe className="size-4" /> Worksheets shared by Sprout parents. Filter by subject, or tap a creator to see everything they have made.
-          </p>
-
-          {socialOff ? (
-            <>
-              <p className="text-sprout-cream/55 mb-3 text-xs">Showing your own published worksheets. The shared community is offline right now.</p>
-              {fallbackCreations.length === 0 ? (
-                <div className={`${lightCard} p-8 text-center`}>
-                  <p className="text-[#1B3722]/70">No worksheets here yet. Build one from scratch and publish it.</p>
-                </div>
-              ) : (
-                <div className="grid grid-cols-2 gap-3 sm:gap-8 lg:grid-cols-3">
-                  {fallbackCreations.map((c, i) => {
-                    const img = firstImageKey(c.worksheet);
-                    return (
-                      <div key={c.id} className={`${cardTint(i)} group flex flex-col overflow-hidden`}>
-                        {img && (
-                          <button onClick={() => setViewing({ ws: c.worksheet })} className="block aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={`/resources/illustrations/${img}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
-                          </button>
-                        )}
-                        <div className="flex flex-1 flex-col p-3 sm:p-5">
-                          <button onClick={() => setViewing({ ws: c.worksheet })} className="min-w-0 flex-1 text-left">
-                            <h3 className="truncate font-bold text-[#1B3722]">{c.worksheet.title}</h3>
-                            <p className="mt-0.5 text-xs text-[#1B3722]/60">{c.worksheet.subtitle}</p>
-                          </button>
-                          <p className="mt-3 truncate border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
-                            Made with Sprout by{" "}
-                            {c.creatorHandle ? (
-                              <Link href={`/resources/creator/${c.creatorHandle}`} className="font-semibold text-[#2E5A35] hover:underline">
-                                {c.creatorName}
-                              </Link>
-                            ) : (
-                              <span className="font-semibold text-[#2E5A35]">{c.creatorName}</span>
-                            )}
-                          </p>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-            </>
-          ) : loadingCommunity ? (
-            <p className="text-sprout-cream/60 text-sm">Loading…</p>
-          ) : posts.length === 0 ? (
-            <div className={`${lightCard} p-8 text-center`}>
-              <p className="text-[#1B3722]/70">
-                {query || topic !== "all" || yoursOn ? "No worksheets match that." : "No worksheets here yet. Build one from scratch and publish it."}
-              </p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-2 gap-3 sm:gap-8 lg:grid-cols-3">
-              {posts.map((p, i) => {
-                const img = firstImageKey(p.worksheet);
-                return (
-                  <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className={`${cardTint(i)} animate-in fade-in slide-in-from-bottom-2 fill-mode-both group flex flex-col overflow-hidden duration-500`}>
-                    {img && (
-                      <Link href={`/resources/community/${p.id}`} className="block aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={`/resources/illustrations/${img}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
-                      </Link>
-                    )}
-                    <div className="flex flex-1 flex-col p-3 sm:p-5">
-                      <Link href={`/resources/community/${p.id}`} className="min-w-0 flex-1">
-                        <h3 className="truncate font-bold text-[#1B3722]">{p.title}</h3>
-                        {p.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{p.subtitle}</p>}
-                      </Link>
-                      <div className="mt-3 flex items-center justify-between gap-2 border-t border-black/5 pt-3 text-xs text-[#1B3722]/70">
-                        <span className="flex min-w-0 items-center gap-1.5 truncate">
-                          <MakerAvatar name={p.creatorName} photo={p.photo} px={22} />
-                          <Link href={`/resources/creator/${p.handle}`} className="font-semibold text-[#2E5A35] hover:underline">
-                            {capName(p.creatorName)}
-                          </Link>
-                          <span className="text-[#1B3722]/45"> · {timeAgo(p.createdAt)}</span>
-                        </span>
-                        <span className="flex shrink-0 items-center gap-1.5">
-                          <UpvoteButton targetType="post" targetId={p.id} count={p.upvotes} />
-                          <Link href={`/resources/community/${p.id}#comments`} aria-label="Comments" className="inline-flex h-8 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/45 px-2.5 text-xs font-semibold text-[#1B3722]/75 transition hover:bg-white/75">
-                            <MessageSquare className="size-3.5" /> {p.commentCount}
-                          </Link>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
       )}
 
       {viewing && (
@@ -377,26 +229,27 @@ function BuildYourOwnHero() {
   );
 }
 
-// Third member of the top row: the doorway into community-made sheets. Promoted
-// up here as a peer to Profiles + Build your own instead of buried in the tab
-// pills. Clicking it flips the library below to the community view (and back).
-function CommunityCard({ count, active, onOpen }: { count: number; active: boolean; onOpen: () => void }) {
+// Third member of the top row: the doorway into everything shared — the
+// community's worksheets, chat, and team announcements now live in ONE place
+// at /resources/community (they used to be split across two surfaces that were
+// both called "Community", which sent people to the wrong one).
+function CommunityCard() {
   return (
-    <button onClick={onOpen} className="group h-full w-full text-left">
-      <div className={`${lightCard} flex h-full flex-col p-4 transition group-hover:-translate-y-0.5 sm:p-7 ${active ? "ring-2 ring-[#2E5A35]/45" : ""}`}>
+    <Link href="/resources/community" className="group block h-full">
+      <div className={`${lightCard} flex h-full flex-col p-4 transition group-hover:-translate-y-0.5 sm:p-7`}>
         <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Community</h2>
         <span className="mt-4 grid size-12 place-items-center rounded-2xl bg-[#2E5A35] text-white shadow-md">
           <Users className="size-6" />
         </span>
-        <h3 className="mt-3 text-lg font-bold text-[#1B3722]">Community library</h3>
+        <h3 className="mt-3 text-lg font-bold text-[#1B3722]">Worksheets, chat, and updates</h3>
         <p className="mt-1 text-sm leading-relaxed text-[#1B3722]/70">
-          Worksheets built and shared by Sprout parents. {count} to explore.
+          Sheets other parents built and shared, a place to ask and swap ideas, and news from the team.
         </p>
         <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-[#2E5A35]">
-          Browse <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+          Open the Community <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
         </span>
       </div>
-    </button>
+    </Link>
   );
 }
 
@@ -496,7 +349,7 @@ function KidsManager({
   }
 
   return (
-    <div className={`${lightCard} h-full p-4 sm:p-7`}>
+    <div className={`${lightCard} flex h-full flex-col p-4 sm:p-7`}>
       <h2 className="text-sm font-bold tracking-wide text-[#2E5A35] uppercase">Profiles</h2>
       <div className="mt-4 flex flex-wrap items-start gap-4">
         {/* main account */}
@@ -549,6 +402,11 @@ function KidsManager({
       {kids.length === 0 && !adding && (
         <p className="mt-4 text-sm text-[#1B3722]/55">Add a child to make worksheets with their name and right age, all kept together in their own profile.</p>
       )}
+      {/* Everything above lives in this browser only. One tap saves a copy you
+          can carry to another device or restore after a cleared browser. */}
+      <div className="mt-auto pt-4">
+        <BackupControl />
+      </div>
     </div>
   );
 }

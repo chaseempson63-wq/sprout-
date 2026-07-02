@@ -51,8 +51,8 @@ export default function ForumThreadPage() {
 
   return (
     <div>
-      <GlassLink href="/resources/forum" className="mb-5 h-9 gap-1 px-3 text-sm">
-        <ArrowLeft className="size-4" /> Forum
+      <GlassLink href="/resources/community?tab=chat" className="mb-5 h-9 gap-1 px-3 text-sm">
+        <ArrowLeft className="size-4" /> Community
       </GlassLink>
 
       {loading ? (
@@ -80,7 +80,7 @@ export default function ForumThreadPage() {
             <div className="mt-4 flex flex-wrap items-center gap-2">
               <UpvoteButton targetType="thread" targetId={thread.id} count={thread.upvotes} voted={votedIds.includes(thread.id)} />
               <ReportControl targetType="thread" targetId={thread.id} />
-              <HideControl targetType="thread" targetId={thread.id} ownerId={thread.makerId} onHidden={() => router.push("/resources/forum")} />
+              <HideControl targetType="thread" targetId={thread.id} ownerId={thread.makerId} onHidden={() => router.push("/resources/community?tab=chat")} />
             </div>
           </div>
 

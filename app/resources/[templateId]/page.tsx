@@ -2,7 +2,8 @@
 
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState, type ComponentType } from "react";
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, RefreshCw, Send, UserPlus } from "lucide-react";
+import { track } from "@vercel/analytics";
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { AddToKid } from "../_components/AddToKid";
 import { DocumentNudge } from "../_components/DocumentNudge";
@@ -21,9 +22,20 @@ function summarize(w: Worksheet): string {
   return `${w.blocks.length} sections · ${items} items`;
 }
 
-// Shown first in the freeform builder so a blank input is never intimidating.
+// Freeform welcome: short, then the starter chips below do the teaching.
 const HOW_TO_PROMPT =
-  "Tell me what you want and I'll build it. The more you describe, the better it comes out. Try something like: \"a one-page worksheet on the water cycle for a 9-year-old, a short reading part then 5 questions\" or \"beginner addition with a dinosaur theme, 12 problems with answer boxes.\" Helpful to include: the topic, the age, how many questions, and any theme.";
+  "Tell me what you want and I'll build it. Include the topic, the age, and anything they love. Tap an example below to see how it works, or just start typing.";
+
+// One-tap starter prompts for the freeform builder, written the way a parent
+// would actually ask. Tapping one sends it straight in.
+const STARTERS = [
+  "a science sheet on how grass grows, age 6",
+  "addition with dinosaurs, 12 problems, age 7",
+  "a reading passage about the moon with 5 questions, age 9",
+  "telling time, o'clock and half past, age 6",
+  "label the butterfly life cycle, age 8",
+  "a story starter about a dragon with lines to write on, age 10",
+];
 
 // Big green finish buttons mirrored at the bottom of the worksheet, where your
 // hand already is when you're done.
@@ -56,6 +68,8 @@ export default function Builder() {
   const didInit = useRef(false);
   const variantsRef = useRef<Worksheet[]>([]);
   const genSeq = useRef(0); // only the latest request's result is applied (kills the race)
+  const ageTimer = useRef<number | null>(null); // debounce: stepper taps settle before regenerating
+  const chatEnd = useRef<HTMLDivElement>(null);
 
   const child = getChild(childId);
   const childName = child?.name;
@@ -63,6 +77,11 @@ export default function Builder() {
   const isSaved = savedIdxs.includes(idx);
   const lastUser = [...messages].reverse().find((m) => m.role === "user")?.content ?? "";
   const agentSteps = buildSteps(template?.title ?? "worksheet", age, lastUser);
+
+  // Keep the conversation pinned to the newest message.
+  useEffect(() => {
+    chatEnd.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }, [messages, loading]);
 
   function pushVariant(ws: Worksheet) {
     const next = [...variantsRef.current, ws];
@@ -88,6 +107,7 @@ export default function Builder() {
       if (myseq !== genSeq.current) return; // a newer request superseded this one; drop it
       pushVariant(data.worksheet);
       setSource(data.source);
+      track("resources_generate", { template: template.id, age: ageVal, source: data.source });
       if (kind === "init") {
         setMessages([
           {
@@ -132,15 +152,15 @@ export default function Builder() {
     );
   }
 
-  function send() {
-    const text = input.trim();
+  function send(preset?: string) {
+    const text = (preset ?? input).trim();
     if (!text) return; // never block on loading: a new send supersedes the in-flight one
-    // Age comes from the prompt now: if they name one, that drives the difficulty.
+    // Age comes from the prompt too: if they name one, it drives the stepper.
     const promptAge = parseAge(text);
     if (promptAge) setAge(promptAge);
     const msgs: ChatMessage[] = [...messages, { role: "user", content: text }];
     setMessages(msgs);
-    setInput("");
+    if (!preset) setInput("");
     void runGenerate(msgs, promptAge ?? age, "send", childName);
   }
 
@@ -164,6 +184,21 @@ export default function Builder() {
     else regenerate();
   }
 
+  // The stepper is the difficulty dial (the locked rule: it is the ONLY thing
+  // that drives difficulty). Taps settle for a beat, then the sheet rebuilds at
+  // the new age. Before the first sheet exists it just sets the number.
+  function stepAge(next: number) {
+    const a = Math.min(13, Math.max(3, next));
+    setAge(a);
+    if (ageTimer.current) window.clearTimeout(ageTimer.current);
+    if (idx >= 0) {
+      ageTimer.current = window.setTimeout(() => {
+        void runGenerate(messages, a, "silent", childName);
+      }, 650);
+    }
+  }
+
+  // Picking a kid MAY set the stepper to their age, but never overrides it after.
   function selectKid(id: string, kidAge: number, kidName: string) {
     setChildId(id);
     setAge(kidAge);
@@ -174,7 +209,7 @@ export default function Builder() {
   function addKid() {
     const name = newName.trim();
     if (!name) return;
-    const a = Math.min(12, Math.max(3, parseInt(newAge, 10) || 7));
+    const a = Math.min(13, Math.max(3, parseInt(newAge, 10) || 7));
     const k = addChild({ name, age: a, interests: [], color: "lime" });
     setAddingKid(false);
     setNewName("");
@@ -190,7 +225,13 @@ export default function Builder() {
     if (!worksheet || !source || isSaved) return;
     saveWorksheet(worksheet, source, childId || undefined);
     setSavedIdxs((p) => [...p, idx]);
+    track("resources_save", { template: template?.id ?? "" });
     showToast("Saved to your worksheets");
+  }
+
+  function print() {
+    track("resources_print", { template: template?.id ?? "" });
+    printWorksheet();
   }
 
   // Only build-your-own sheets are publish-eligible. Saves a local copy and
@@ -205,8 +246,10 @@ export default function Builder() {
     togglePublish(saved.id);
     setPublishedIdx(idx);
     const res = await publishWorksheet(makerWire(account), worksheet);
-    if (res.id) showToast("Published to the community");
-    else if (res.disabled) showToast("Saved to your worksheets. The community is offline right now.");
+    if (res.id) {
+      track("resources_publish", {});
+      showToast("Published to the community");
+    } else if (res.disabled) showToast("Saved to your worksheets. The community is offline right now.");
     else showToast(res.error || "Saved to your worksheets. Could not publish right now.");
   }
 
@@ -219,7 +262,7 @@ export default function Builder() {
       )}
 
       {/* header row */}
-      <div className="no-print mb-6 flex flex-wrap items-center justify-between gap-3">
+      <div className="no-print mb-5 flex flex-wrap items-center justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
           <GlassLink href="/resources" className="h-9 shrink-0 gap-1 px-3 text-sm">
             <ArrowLeft className="size-4" /> Library
@@ -239,13 +282,35 @@ export default function Builder() {
           {isCustom && (
             <ActionItem icon={Globe} label={publishedIdx === idx ? "Published" : "Publish"} onClick={() => void publishCustom()} disabled={!worksheet || publishedIdx === idx} />
           )}
-          <ActionItem icon={Download} label="PDF" onClick={() => printWorksheet()} disabled={!worksheet} />
+          <ActionItem icon={Download} label="PDF" onClick={print} disabled={!worksheet} />
         </div>
       </div>
 
-      {/* who is this for */}
-      <div className="no-print mb-7 flex flex-wrap items-center gap-2">
-        <span className="text-sprout-cream/60 text-sm">Making for:</span>
+      {/* who is this for + the difficulty dial. The stepper age is the ONLY
+          thing that drives difficulty; a kid chip just sets it to their age. */}
+      <div className="no-print mb-6 flex flex-wrap items-center gap-2">
+        <div className="border-sprout-cream/20 bg-sprout-cream/10 flex items-center gap-0.5 rounded-full border p-1">
+          <button
+            type="button"
+            onClick={() => stepAge(age - 1)}
+            disabled={age <= 3}
+            aria-label="Younger"
+            className="text-sprout-cream hover:bg-sprout-cream hover:text-sprout-ink grid size-8 place-items-center rounded-full transition-colors disabled:pointer-events-none disabled:opacity-35"
+          >
+            <Minus className="size-4" />
+          </button>
+          <span className="text-sprout-cream min-w-[3.6rem] text-center text-sm font-bold">Age {age}</span>
+          <button
+            type="button"
+            onClick={() => stepAge(age + 1)}
+            disabled={age >= 13}
+            aria-label="Older"
+            className="text-sprout-cream hover:bg-sprout-cream hover:text-sprout-ink grid size-8 place-items-center rounded-full transition-colors disabled:pointer-events-none disabled:opacity-35"
+          >
+            <Plus className="size-4" />
+          </button>
+        </div>
+        <span className="text-sprout-cream/60 ml-1 text-sm">Making for:</span>
         {kids.map((k) => (
           <GlassButton
             key={k.id}
@@ -259,7 +324,7 @@ export default function Builder() {
           <GlassPanel radius="rounded-full" className="text-[#1B3722]">
             <div className="flex items-center gap-1 p-1">
               <input value={newName} onChange={(e) => setNewName(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addKid()} placeholder="Name" autoFocus className="h-7 w-24 bg-transparent px-2 text-sm text-[#1B3722] outline-none placeholder:text-[#1B3722]/45" />
-              <input value={newAge} onChange={(e) => setNewAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addKid()} type="number" min={3} max={12} className="h-7 w-12 bg-transparent px-1 text-sm text-[#1B3722] outline-none" />
+              <input value={newAge} onChange={(e) => setNewAge(e.target.value)} onKeyDown={(e) => e.key === "Enter" && addKid()} type="number" min={3} max={13} className="h-7 w-12 bg-transparent px-1 text-sm text-[#1B3722] outline-none" />
               <button onClick={addKid} aria-label="Add" className="grid size-7 place-items-center rounded-full hover:bg-black/10">
                 <Check className="size-4" />
               </button>
@@ -272,10 +337,12 @@ export default function Builder() {
         )}
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-[360px_minmax(0,1fr)]">
+      {/* Mobile shows the worksheet first (the thing you came for) with the chat
+          right under it; desktop keeps the sticky chat rail on the left. */}
+      <div className="grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8">
         {/* chat */}
-        <div className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] flex h-[70vh] flex-col rounded-2xl border lg:sticky lg:top-20">
-          <div className="flex-1 space-y-3 overflow-y-auto p-4">
+        <div className="no-print border-sprout-cream/15 bg-sprout-cream/[0.06] order-2 flex flex-col rounded-2xl border lg:order-1 lg:sticky lg:top-20 lg:h-[70vh]">
+          <div className="max-h-72 flex-1 space-y-3 overflow-y-auto p-4 lg:max-h-none">
             {messages.map((m, i) =>
               m.role === "user" ? (
                 <div key={i} className="animate-in fade-in slide-in-from-bottom-1 flex justify-end duration-200">
@@ -287,6 +354,20 @@ export default function Builder() {
                 </div>
               ),
             )}
+            {/* Freeform starters: teach by example until the first sheet exists. */}
+            {isCustom && variants.length === 0 && !loading && (
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                {STARTERS.map((s) => (
+                  <button
+                    key={s}
+                    onClick={() => send(s)}
+                    className="border-sprout-cream/20 bg-sprout-cream/10 text-sprout-cream/90 hover:bg-sprout-cream/20 rounded-2xl border px-3 py-1.5 text-left text-xs leading-snug transition"
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+            )}
             {loading && (
               <div className="animate-in fade-in flex justify-start">
                 <div className="bg-sprout-cream/10 rounded-2xl px-3.5 py-3">
@@ -294,6 +375,7 @@ export default function Builder() {
                 </div>
               </div>
             )}
+            <div ref={chatEnd} />
           </div>
 
           {(!isCustom || variants.length > 0) && (
@@ -315,14 +397,14 @@ export default function Builder() {
               placeholder={isCustom ? "Describe the worksheet you want to build..." : "make it about space, add more questions, harder..."}
               className="text-sprout-cream placeholder:text-sprout-cream/40 min-w-0 flex-1 bg-transparent px-2 text-sm outline-none"
             />
-            <GlassButton onClick={send} disabled={!input.trim()} aria-label="Send" className="size-9 shrink-0">
+            <GlassButton onClick={() => send()} disabled={!input.trim()} aria-label="Send" className="size-9 shrink-0">
               {loading ? <Loader2 className="size-4 animate-spin" /> : <Send className="size-4" />}
             </GlassButton>
           </div>
         </div>
 
         {/* preview */}
-        <div className="min-w-0">
+        <div className="order-1 min-w-0 lg:order-2">
           {/* variation controls */}
           {(!isCustom || variants.length > 0) && (
           <div className="no-print mb-3 flex flex-wrap items-center justify-center gap-2">
@@ -395,14 +477,14 @@ export default function Builder() {
                     <Globe className="size-5" /> {publishedIdx === idx ? "Published" : "Publish"}
                   </button>
                 )}
-                <button onClick={() => printWorksheet()} className={greenBtn}>
+                <button onClick={print} className={greenBtn}>
                   <Download className="size-5" /> Download PDF
                 </button>
               </div>
               <DocumentNudge />
             </div>
           ) : (
-            <div className="text-sprout-cream/60 flex h-[60vh] items-center justify-center rounded-2xl border border-dashed border-sprout-cream/20 px-6 text-center text-sm">
+            <div className="text-sprout-cream/60 flex h-[38vh] items-center justify-center rounded-2xl border border-dashed border-sprout-cream/20 px-6 text-center text-sm lg:h-[60vh]">
               {isCustom ? "Describe a worksheet in the chat and I'll build it here." : "Pick a child or hit New version and Sprout will build one."}
             </div>
           )}
@@ -501,7 +583,7 @@ function ThinkingTrace({ steps }: { steps: string[] }) {
     return () => window.clearTimeout(t);
   }, [active, steps.length]);
   return (
-    <div className="border-sprout-cream/20 bg-sprout-cream/[0.04] flex h-[60vh] items-center justify-center rounded-2xl border border-dashed p-6">
+    <div className="border-sprout-cream/20 bg-sprout-cream/[0.04] flex h-[38vh] items-center justify-center rounded-2xl border border-dashed p-6 lg:h-[60vh]">
       <div className="w-full max-w-sm">
         <div className="mb-5 flex items-center gap-3">
           <span className="bg-sprout-cream/95 grid size-11 shrink-0 place-items-center rounded-2xl shadow">

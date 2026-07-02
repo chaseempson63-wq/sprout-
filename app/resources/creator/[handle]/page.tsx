@@ -88,8 +88,8 @@ export default function CreatorProfile() {
 
   return (
     <div>
-      <GlassLink href="/resources" className="mb-5 h-9 gap-1 px-3 text-sm">
-        <ArrowLeft className="size-4" /> Library
+      <GlassLink href="/resources/community" className="mb-5 h-9 gap-1 px-3 text-sm">
+        <ArrowLeft className="size-4" /> Community
       </GlassLink>
 
       <div className={`${lightCard} mb-6 p-6`}>

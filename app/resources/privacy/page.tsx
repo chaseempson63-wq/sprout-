@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowLeft, Ban, Check, Cpu, ExternalLink, Laptop, Lock } from "lucide-react";
+import { ArrowLeft, Ban, Check, Cpu, ExternalLink, Globe, Laptop, Lock } from "lucide-react";
 import { GlassLink } from "@/components/ui/glass";
 
 export const metadata: Metadata = {
@@ -30,6 +30,11 @@ const POINTS = [
     icon: Laptop,
     title: "We don't keep it either",
     body: "Your worksheets and your kids' profiles are saved in your own browser, on your device, not on a Sprout server.",
+  },
+  {
+    icon: Globe,
+    title: "The one exception: what you choose to publish",
+    body: "If you tap Publish on a worksheet you built, or post in the Community, that content and your creator name are stored on Sprout's server so other parents can see them. That's the whole point of publishing, and it only ever happens when you choose it. Your private worksheets and your kids' profiles never go there.",
   },
   {
     icon: Check,
@@ -66,10 +71,10 @@ export default function ResourcesPrivacy() {
 
       <div className={`${lightCard} mt-5 p-5`}>
         <p className="text-[15px] leading-relaxed text-[#1B3722]/80">
-          Don't take our word for it. Venice spells out the same thing in their own privacy policy, including that your prompts pass through without being stored and your history stays on your device.
+          Don&apos;t take our word for it. Venice spells out the same thing in their own privacy policy, including that your prompts pass through without being stored and your history stays on your device.
         </p>
         <GlassLink href="https://venice.ai/privacy" target="_blank" rel="noopener noreferrer" className="mt-4 h-10 px-4 text-sm text-[#1B3722]">
-          Read Venice's privacy policy <ExternalLink className="size-4" />
+          Read Venice&apos;s privacy policy <ExternalLink className="size-4" />
         </GlassLink>
       </div>
 
@@ -80,7 +85,7 @@ export default function ResourcesPrivacy() {
       </div>
 
       <p className="text-sprout-cream/45 mt-6 text-xs">
-        This page describes how Sprout Resources generates worksheets. Venice's guarantees are Venice's own; we link to their policy as the source of truth.
+        This page describes how Sprout Resources generates worksheets. Venice&apos;s guarantees are Venice&apos;s own; we link to their policy as the source of truth.
       </p>
     </div>
   );

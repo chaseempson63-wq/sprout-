@@ -1,6 +1,16 @@
 # Sprout Resources — session handoff
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
+
+> **UPDATE 2026-07-02 (Fable audit + rebuild session — see `docs/FABLE-AUDIT.md` for the full audit, reasoning, and build log):**
+> - **The age stepper is BACK in the builder** (it had silently regressed out while the locked decision and the how-to guide still assumed it). A minus/plus Age control sits next to the kid chips; taps debounce 650ms then silently rebuild at the new age. Kid chips still only default it, never override it.
+> - **Community IA unified.** ONE Community at `/resources/community` with three tabs: Worksheets (the published feed, moved off the library page), Chat (the old forum threads), Announcements. `/resources/forum` now redirects (`?tab=chat`); thread permalinks `/resources/forum/[id]` unchanged. Library page tabs are now Templates | My worksheets, with a Community link-out. Nav badge logic unchanged.
+> - **Builder mobile is preview-first** (worksheet above, chat under it, capped message list) and the chat auto-scrolls. Freeform empty state now shows one-tap starter prompts instead of the wall of text.
+> - **Privacy page tells the published-content truth** (new point: what you Publish/post lives on Sprout's server, by choice) — this closes the open copy job flagged 2026-06-23. Pre-existing apostrophe lint errors fixed. How-to guide synced to the real UI + backup FAQ added.
+> - **Backup/restore** for all local data (kids, worksheets, account) via the Profiles card on the library page — JSON export/import, closes the cleared-browser data-loss cliff.
+> - **Funnel analytics** via `track()` on generate/save/publish/print/add-to-kid.
+> - **SEO**: per-template `generateMetadata` (server layout at `app/resources/[templateId]/layout.tsx`) + metadata on the Community hub. Full SSR of community permalinks is still open (P1).
+> - **Dead code removed**: `PhoneShowcase.tsx`, the store's unused local like API (`toggleLike`/`likeCount`/`likedByMe` + 2 storage keys). Share (copy-link) button added on community worksheet permalinks.
 It is the single source of truth for current state, locked decisions, the open
 risk, and the next job. Last updated 2026-06-23: seven things are MERGED to main,
 deployed, and CONFIRMED on prod (hisprout.app) — the mul/div fallback cap fix +

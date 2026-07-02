@@ -8,7 +8,7 @@
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ArrowLeft, Download, Loader2 } from "lucide-react";
+import { ArrowLeft, Check, Download, Link2, Loader2 } from "lucide-react";
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { UpvoteButton } from "../../_components/UpvoteButton";
 import { AddToKid } from "../../_components/AddToKid";
@@ -25,6 +25,26 @@ import type { Comment, CommunityPost } from "@/lib/resources/types";
 
 const lightCard =
   "rounded-2xl bg-[#FBF7EE] border border-[#2E5A35]/15 shadow-[0_16px_36px_-12px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.7)]";
+
+// Copy this worksheet's permalink — the share moment IS the marketing, so it
+// gets a one-tap control instead of relying on the address bar.
+function ShareLink() {
+  const [copied, setCopied] = useState(false);
+  async function copy() {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2200);
+    } catch {
+      /* clipboard unavailable; the address bar still works */
+    }
+  }
+  return (
+    <GlassButton onClick={copy} className="h-8 gap-1 px-3 text-xs">
+      {copied ? <Check className="size-3.5" /> : <Link2 className="size-3.5" />} {copied ? "Copied" : "Share"}
+    </GlassButton>
+  );
+}
 
 export default function CommunityPostPage() {
   const params = useParams();
@@ -55,8 +75,8 @@ export default function CommunityPostPage() {
 
   return (
     <div className="mx-auto max-w-3xl">
-      <GlassLink href="/resources" className="no-print mb-5 h-9 gap-1 px-3 text-sm">
-        <ArrowLeft className="size-4" /> Library
+      <GlassLink href="/resources/community" className="no-print mb-5 h-9 gap-1 px-3 text-sm">
+        <ArrowLeft className="size-4" /> Community
       </GlassLink>
 
       {loading ? (
@@ -84,6 +104,7 @@ export default function CommunityPostPage() {
             </Link>
             <div className="flex flex-wrap items-center gap-2">
               <UpvoteButton targetType="post" targetId={post.id} count={post.upvotes} voted={votedIds.includes(post.id)} />
+              <ShareLink />
               <AddToKid worksheet={post.worksheet} source="ai" className="h-8 px-3 text-xs" />
               <GlassButton onClick={() => printWorksheet()} className="h-8 gap-1 px-3 text-xs">
                 <Download className="size-3.5" /> PDF

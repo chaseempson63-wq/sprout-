@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { track } from "@vercel/analytics";
 import { Check, FolderPlus } from "lucide-react";
 import { useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
@@ -18,6 +19,7 @@ export function AddToKid({ worksheet, source = "ai", className = "" }: { workshe
 
   function add(kidId: string, kidName: string) {
     saveWorksheet(worksheet, source, kidId);
+    track("resources_add_to_kid", {});
     setOpen(false);
     setDone(capName(kidName));
     window.setTimeout(() => setDone(null), 2600);

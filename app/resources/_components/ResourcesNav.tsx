@@ -18,7 +18,7 @@ import { unseenAnnouncements } from "@/lib/resources/announcements";
 const ITEMS: { href: string; label: string; Icon: typeof LayoutGrid; match: (p: string) => boolean; notify?: boolean }[] = [
   { href: "/resources", label: "Library", Icon: LayoutGrid, match: (p) => p === "/resources" },
   { href: "/resources/custom", label: "Build", Icon: PenLine, match: (p) => p === "/resources/custom" },
-  { href: "/resources/forum", label: "Community", Icon: MessagesSquare, match: (p) => p.startsWith("/resources/forum"), notify: true },
+  { href: "/resources/community", label: "Community", Icon: MessagesSquare, match: (p) => p.startsWith("/resources/community") || p.startsWith("/resources/forum"), notify: true },
   { href: "/resources/how-to", label: "Guide", Icon: BookOpen, match: (p) => p === "/resources/how-to" },
   { href: "/resources/privacy", label: "Privacy", Icon: ShieldCheck, match: (p) => p === "/resources/privacy" },
 ];

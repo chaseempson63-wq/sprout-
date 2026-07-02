@@ -44,7 +44,7 @@ const STEPS = [
   {
     icon: Wand2,
     title: "Tweak it with one tap",
-    body: "Under the sheet is a row of presets: harder, easier, more questions, or a theme like space or dinosaurs. Tap one and it rebuilds that way in a second. Tap a few and they stack. Want something specific? Just type it in the chat.",
+    body: "Above the chat box is a row of presets: harder, easier, longer, shorter, more questions. Tap one and it rebuilds that way in a second. Tap a few and they stack. Want a theme like space or dinosaurs, or anything specific? Just type it in the chat.",
   },
   {
     icon: Printer,
@@ -112,7 +112,11 @@ const FAQS = [
   },
   {
     q: "What's the Community? Can people see my kid's stuff?",
-    a: "It's worksheets other parents chose to share. Nothing of yours goes public unless you build your own sheet and tap Publish. Your saved sheets and your kids' profiles never leave your browser.",
+    a: "One place with three rooms: worksheets other parents chose to share, a chat to ask and swap ideas, and updates from the team. Nothing of yours goes public unless you build your own sheet and tap Publish, or post in the chat. Your saved sheets and your kids' profiles never leave your browser.",
+  },
+  {
+    q: "Could I lose my saved stuff if I clear my browser?",
+    a: "Yes, that's the honest trade-off of keeping it off our servers. So there's a Back up button in the Profiles card on the library page. It downloads one file with everything; Restore brings it back on any device.",
   },
   {
     q: "It's slow, or it threw an error.",
@@ -211,7 +215,7 @@ export default function HowToPage() {
             Start making <ArrowRight className="size-4" />
           </Link>
           <Link
-            href="/resources/forum"
+            href="/resources/community"
             className="border-sprout-cream/25 text-sprout-cream hover:bg-sprout-cream/10 inline-flex h-12 items-center gap-2 rounded-full border px-6 font-bold transition-colors"
           >
             Open the Community

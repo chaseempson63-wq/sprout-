@@ -14,8 +14,6 @@ const CHILDREN_KEY = "sprout.resources.children.v2";
 const WORKSHEETS_KEY = "sprout.resources.worksheets.v2";
 const MOMENTS_KEY = "sprout.resources.moments.v1";
 const ACCOUNT_KEY = "sprout.resources.account.v1";
-const LIKES_KEY = "sprout.resources.likes.v1";
-const MYLIKES_KEY = "sprout.resources.mylikes.v1";
 const FOLLOWING_KEY = "sprout.resources.following.v1";
 const FOLLOWERS_KEY = "sprout.resources.followers.v1";
 const ANN_SEEN_KEY = "sprout.resources.annseen.v1";
@@ -69,9 +67,6 @@ interface ResourcesContextValue {
   toggleFavorite: (id: string) => void;
   togglePublish: (id: string) => void;
   removeWorksheet: (id: string) => void;
-  toggleLike: (id: string) => void;
-  likeCount: (id: string) => number;
-  likedByMe: (id: string) => boolean;
   following: FollowedMaker[];
   isFollowing: (handle: string) => boolean;
   toggleFollow: (maker: FollowedMaker) => void;
@@ -89,8 +84,6 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   const [kids, setKids] = useState<ChildProfile[]>(() => readJSON<ChildProfile[]>(CHILDREN_KEY, []));
   const [worksheets, setWorksheets] = useState<SavedWorksheet[]>(() => readJSON<SavedWorksheet[]>(WORKSHEETS_KEY, []));
   const [moments, setMoments] = useState<LearningMoment[]>(() => readJSON<LearningMoment[]>(MOMENTS_KEY, []));
-  const [likes, setLikes] = useState<Record<string, number>>(() => readJSON<Record<string, number>>(LIKES_KEY, {}));
-  const [myLikes, setMyLikes] = useState<string[]>(() => readJSON<string[]>(MYLIKES_KEY, []));
   const [following, setFollowing] = useState<FollowedMaker[]>(() => readJSON<FollowedMaker[]>(FOLLOWING_KEY, []));
   const [followerCounts, setFollowerCounts] = useState<Record<string, number>>(() => readJSON<Record<string, number>>(FOLLOWERS_KEY, {}));
   const [announcementsSeenAt, setAnnouncementsSeenAt] = useState<number>(() => readJSON<number>(ANN_SEEN_KEY, 0));
@@ -116,12 +109,6 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (ready) localStorage.setItem(MOMENTS_KEY, JSON.stringify(moments));
   }, [moments, ready]);
-  useEffect(() => {
-    if (ready) localStorage.setItem(LIKES_KEY, JSON.stringify(likes));
-  }, [likes, ready]);
-  useEffect(() => {
-    if (ready) localStorage.setItem(MYLIKES_KEY, JSON.stringify(myLikes));
-  }, [myLikes, ready]);
   useEffect(() => {
     if (ready) localStorage.setItem(FOLLOWING_KEY, JSON.stringify(following));
   }, [following, ready]);
@@ -213,17 +200,6 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
     setWorksheets((prev) => prev.filter((w) => w.id !== id));
   }, []);
 
-  const toggleLike = useCallback((id: string) => {
-    setMyLikes((prev) => {
-      const has = prev.includes(id);
-      setLikes((lk) => ({ ...lk, [id]: Math.max(0, (lk[id] ?? 0) + (has ? -1 : 1)) }));
-      return has ? prev.filter((x) => x !== id) : [...prev, id];
-    });
-  }, []);
-
-  const likeCount = useCallback((id: string) => likes[id] ?? 0, [likes]);
-  const likedByMe = useCallback((id: string) => myLikes.includes(id), [myLikes]);
-
   const isFollowing = useCallback((handle: string) => following.some((f) => f.handle === handle), [following]);
   const toggleFollow = useCallback((maker: FollowedMaker) => {
     setFollowing((prev) => {
@@ -268,9 +244,6 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
       toggleFavorite,
       togglePublish,
       removeWorksheet,
-      toggleLike,
-      likeCount,
-      likedByMe,
       following,
       isFollowing,
       toggleFollow,
@@ -282,7 +255,7 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
     [
       ready, account, kids, worksheets, moments, setAccount, addChild, updateChild, removeChild, getChild,
       addMoment, removeMoment, momentsFor, saveWorksheet, toggleFavorite, togglePublish, removeWorksheet,
-      toggleLike, likeCount, likedByMe, following, isFollowing, toggleFollow, followerCount, loadFollowerCount,
+      following, isFollowing, toggleFollow, followerCount, loadFollowerCount,
       announcementsSeenAt, markAnnouncementsSeen,
     ],
   );
