@@ -188,6 +188,18 @@ create table if not exists public.resource_reports (
 );
 create index if not exists resource_reports_open_idx on public.resource_reports (created_at desc) where resolved = false;
 
+-- announcement hearts: reactions on team announcements, keyed by the code id
+-- (text, not a uuid). Count as count(*) per announcement_id; idempotent toggle
+-- via the unique constraint. Same model as resource_follows.
+create table if not exists public.resource_announcement_hearts (
+  id              uuid        primary key default gen_random_uuid(),
+  announcement_id text        not null,
+  maker_id        uuid        not null references public.resource_makers (id) on delete cascade,
+  created_at      timestamptz not null default now(),
+  constraint resource_announcement_hearts_unique unique (announcement_id, maker_id)
+);
+create index if not exists resource_announcement_hearts_idx on public.resource_announcement_hearts (announcement_id);
+
 -- settings: singleton (id=1) holding the global kill switch.
 create table if not exists public.resource_settings (
   id             integer     primary key default 1,
@@ -244,3 +256,4 @@ alter table public.resource_comments enable row level security;
 alter table public.resource_votes    enable row level security;
 alter table public.resource_reports  enable row level security;
 alter table public.resource_settings enable row level security;
+alter table public.resource_announcement_hearts enable row level security;

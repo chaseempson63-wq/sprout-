@@ -14,13 +14,18 @@ import { ReportControl } from "../../_components/ReportControl";
 import { HideControl } from "../../_components/HideControl";
 import { ThreadedComments } from "../../_components/ThreadedComments";
 import { getThread } from "@/lib/resources/social";
+import { noteTint } from "@/lib/resources/note-tint";
 import { useResources } from "@/lib/resources/store";
 import { capName, timeAgo } from "@/lib/resources/util";
+import { cn } from "@/lib/utils";
 import { GlassLink } from "@/components/ui/glass";
 import type { Comment, ForumThread } from "@/lib/resources/types";
 
-const lightCard =
-  "rounded-[22px] bg-[#FFFDF6] ring-1 ring-[#2E5A35]/10 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_14px_30px_-14px_rgba(8,22,12,0.55),0_30px_60px_-30px_rgba(8,22,12,0.4)]";
+// Card shell without a background, so the thread's own sticky-note tint (matched
+// to its preview in the chat list) can fill it.
+const cardShell =
+  "rounded-[22px] ring-1 ring-[#2E5A35]/10 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_14px_30px_-14px_rgba(8,22,12,0.55),0_30px_60px_-30px_rgba(8,22,12,0.4)]";
+const lightCard = cn(cardShell, "bg-[#FFFDF6]");
 
 export default function ForumThreadPage() {
   const params = useParams();
@@ -65,7 +70,7 @@ export default function ForumThreadPage() {
         </div>
       ) : (
         <>
-          <div className={`${lightCard} mb-6 p-6`}>
+          <div className={cn(cardShell, noteTint(thread.id), "mb-6 p-6")}>
             <h1 className="text-2xl font-bold text-[#1B3722]">{thread.title}</h1>
             <div className="mt-2 flex items-center gap-2">
               <MakerAvatar name={thread.creatorName} photo={thread.photo} px={30} />

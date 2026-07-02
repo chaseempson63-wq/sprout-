@@ -13,8 +13,8 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ArrowBigUp, Globe, MessageSquare, MessagesSquare, Plus, Search, Send, X } from "lucide-react";
-import { createThread, listCommunity, listThreads, makerWire } from "@/lib/resources/social";
+import { Globe, MessageSquare, MessagesSquare, Plus, Search, Send, X } from "lucide-react";
+import { createThread, listAnnouncementHearts, listCommunity, listThreads, makerWire } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
 import { capName, firstImageKey, timeAgo } from "@/lib/resources/util";
 import { cn } from "@/lib/utils";
@@ -29,19 +29,12 @@ import { DocumentNudge } from "../_components/DocumentNudge";
 import { MakerAvatar } from "../_components/MakerAvatar";
 import { UpvoteButton } from "../_components/UpvoteButton";
 import { SheetStack, sheet } from "../_components/paper";
+import { AnnouncementHeart } from "../_components/AnnouncementHeart";
+import { noteTint } from "@/lib/resources/note-tint";
 import { GlassButton } from "@/components/ui/glass";
 import type { CommunityPost, ForumThread, Worksheet } from "@/lib/resources/types";
 
 export type CommunityTab = "worksheets" | "chat" | "announcements";
-
-// Chat threads read as sticky notes pinned to the desk — a few warm paper
-// tints, cycled stably per thread so colors stay put across re-sorts.
-const NOTE_TINTS = ["bg-[#FDF6DF]", "bg-[#F1F6EC]", "bg-[#FFF4E8]", "bg-[#F6F1E3]"];
-function noteTint(id: string): string {
-  let h = 2166136261;
-  for (let i = 0; i < id.length; i++) h = Math.imul(h ^ id.charCodeAt(i), 16777619) >>> 0;
-  return NOTE_TINTS[h % NOTE_TINTS.length];
-}
 
 const AVATARS = [
   "bg-[#CDEFA0] text-[#1B3722]",
@@ -88,10 +81,28 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
   const [body, setBody] = useState("");
   const [posting, setPosting] = useState(false);
 
+  // ── Announcement hearts ─────────────────────────────────────────────
+  const [heartCounts, setHeartCounts] = useState<Record<string, number>>({});
+  const [heartMine, setHeartMine] = useState<string[]>([]);
+
   // Opening the Community clears the announcement badge in the nav.
   useEffect(() => {
     markAnnouncementsSeen();
   }, [markAnnouncementsSeen]);
+
+  // Load announcement heart counts when the Announcements tab is open.
+  useEffect(() => {
+    if (!ready || tab !== "announcements") return;
+    let live = true;
+    listAnnouncementHearts(account?.id).then((res) => {
+      if (!live) return;
+      setHeartCounts(res.counts);
+      setHeartMine(res.mine);
+    });
+    return () => {
+      live = false;
+    };
+  }, [ready, tab, account?.id]);
 
   // Worksheet feed: refetch (debounced) when search / topic / Yours change.
   useEffect(() => {
@@ -386,9 +397,8 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
           ) : (
             <div className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
               {threads.map((t, i) => (
-                <Link
+                <div
                   key={t.id}
-                  href={`/resources/forum/${t.id}`}
                   style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }}
                   className="group animate-in fade-in slide-in-from-bottom-2 fill-mode-both block duration-500"
                 >
@@ -401,29 +411,34 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
                     )}
                   >
                     <span aria-hidden className="absolute -top-2 left-1/2 h-4 w-14 -translate-x-1/2 rounded-[2px] bg-white/55 shadow-[0_1px_2px_rgba(8,22,12,0.15)]" />
-                    <div className="flex items-center gap-2">
-                      {t.photo ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img src={t.photo} alt="" className="size-8 shrink-0 rounded-full object-cover" />
-                      ) : (
-                        <span className={cn("grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold", avatarClass(t.creatorName))}>
-                          {capName(t.creatorName).charAt(0)}
-                        </span>
-                      )}
-                      <span className="min-w-0 truncate text-sm font-bold text-[#1B3722]">{capName(t.creatorName)}</span>
-                      <span className="shrink-0 text-xs text-[#1B3722]/45">{timeAgo(t.createdAt)}</span>
-                    </div>
-                    <p className="mt-2.5 flex-1 leading-snug font-bold text-[#1B3722]">{t.title}</p>
-                    <div className="mt-3 flex items-center gap-4 border-t border-[#1B3722]/10 pt-3 text-xs text-[#1B3722]/55">
-                      <span className="inline-flex items-center gap-1">
-                        <ArrowBigUp className="size-3.5" /> {t.upvotes}
-                      </span>
-                      <span className="inline-flex items-center gap-1">
-                        <MessageSquare className="size-3.5" /> {t.commentCount} {t.commentCount === 1 ? "reply" : "replies"}
-                      </span>
+                    {/* Card body opens the post; the upvote below does NOT navigate. */}
+                    <Link href={`/resources/forum/${t.id}`} className="block flex-1">
+                      <div className="flex items-center gap-2">
+                        {t.photo ? (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={t.photo} alt="" className="size-8 shrink-0 rounded-full object-cover" />
+                        ) : (
+                          <span className={cn("grid size-8 shrink-0 place-items-center rounded-full text-sm font-bold", avatarClass(t.creatorName))}>
+                            {capName(t.creatorName).charAt(0)}
+                          </span>
+                        )}
+                        <span className="min-w-0 truncate text-sm font-bold text-[#1B3722]">{capName(t.creatorName)}</span>
+                        <span className="shrink-0 text-xs text-[#1B3722]/45">{timeAgo(t.createdAt)}</span>
+                      </div>
+                      <p className="mt-2.5 leading-snug font-bold text-[#1B3722]">{t.title}</p>
+                    </Link>
+                    <div className="mt-3 flex items-center gap-2 border-t border-[#1B3722]/10 pt-3">
+                      <UpvoteButton targetType="thread" targetId={t.id} count={t.upvotes} />
+                      <Link
+                        href={`/resources/forum/${t.id}#comments`}
+                        aria-label="Replies"
+                        className="inline-flex h-8 items-center gap-1 rounded-full border border-[#1B3722]/15 bg-white/55 px-2.5 text-xs font-bold text-[#1B3722]/70 transition hover:bg-white/85"
+                      >
+                        <MessageSquare className="size-3.5" /> {t.commentCount}
+                      </Link>
                     </div>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           )}
@@ -451,7 +466,16 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
                     </span>
                     <span className={cn("text-sm font-bold", latest ? "text-sprout-lime" : "text-[#2E5A35]")}>🚨 Sprout Team</span>
                   </span>
-                  <span className={cn("text-xs font-medium", latest ? "text-sprout-cream/50" : "text-[#1B3722]/45")}>{fmtDate(a.ts)}</span>
+                  <span className="flex shrink-0 items-center gap-2.5">
+                    <AnnouncementHeart
+                      key={`${a.id}:${heartCounts[a.id] ?? 0}:${heartMine.includes(a.id)}`}
+                      id={a.id}
+                      count={heartCounts[a.id] ?? 0}
+                      hearted={heartMine.includes(a.id)}
+                      light={latest}
+                    />
+                    <span className={cn("text-xs font-medium", latest ? "text-sprout-cream/50" : "text-[#1B3722]/45")}>{fmtDate(a.ts)}</span>
+                  </span>
                 </div>
                 <h3 className={cn("mt-3 text-lg font-bold", latest ? "text-sprout-cream" : "text-[#1B3722]")}>{a.title}</h3>
                 <p className={cn("mt-1.5 text-sm leading-relaxed", latest ? "text-sprout-cream/75" : "text-[#1B3722]/70")}>{a.body}</p>

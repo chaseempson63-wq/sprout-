@@ -130,6 +130,22 @@ export function toggleVote(
   return postJSON(`/api/resources/vote`, { maker, targetType, targetId }, { voted: false, upvotes: 0, disabled: true });
 }
 
+// ── Announcement hearts ──
+
+export function listAnnouncementHearts(
+  me?: string,
+): Promise<{ counts: Record<string, number>; mine: string[]; disabled?: boolean }> {
+  const p = me ? `?maker=${encodeURIComponent(me)}` : "";
+  return getJSON(`/api/resources/announcement-hearts${p}`, { counts: {}, mine: [], disabled: true });
+}
+
+export function toggleAnnouncementHeart(
+  maker: MakerRef,
+  announcementId: string,
+): Promise<{ hearted: boolean; count: number; disabled?: boolean }> {
+  return postJSON(`/api/resources/announcement-hearts`, { maker, announcementId }, { hearted: false, count: 0, disabled: true });
+}
+
 // ── Profile ──
 
 export function saveProfile(maker: MakerRef): Promise<{ ok: boolean }> {
