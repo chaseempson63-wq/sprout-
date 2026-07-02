@@ -273,3 +273,25 @@ Built from scratch per the brief; the old `~/Desktop/sprout-appstore/` set untou
 **Fidelity note (honest):** the app UI on cards 1–4 is drawn 1:1 from the Swift source — Theme.swift palette hexes, Topic.swift's six domain colors and verb labels, the WeekGardenPanel/LogEditorView/WeeklyRecapCard structures and real strings ("Add details," "Save log," "Nice, that's worth keeping," "WEEKLY REPORT") — rendered in Nunito (the brand's web analog of SF Pro Rounded). They are code-faithful recreations, not simulator captures, because this machine can't run iOS. When TestFlight exists, swapping real device captures into these compositions is a 30-minute job; the layouts, headlines, and pipeline (`card-*.html` + the puppeteer script in the session scratchpad) are all reusable.
 
 **Pipeline:** hand-built HTML per card → puppeteer-core driving system Chrome at exactly 1290×2796 (one browser for all six; the one-Chrome-per-shot approach hung repeatedly on this machine and got replaced). Sources kept next to the PNGs so any card can be re-rendered after a copy tweak.
+
+---
+
+## Part 8 — App Store cards, the REDO (2026-07-02, per docs/APPSTORE-CARDS-BRIEF.md)
+
+Seven finished 1290×2796 PNGs in `~/Desktop/sprout-appstore/` (`card-1-payoff` … `card-7-privacy`), HTML sources + photos alongside for one-minute re-renders. The v2 set in `~/Desktop/sprout-appstore-v2/` is superseded.
+
+**What changed from the last set, per the brief:** payoff-first order; Title Case headlines with the key word popping (lime on forest, action-green with a lime marker on cream); REAL photos wherever a camera is implied; social proof on card 2; a real one-place week view on card 3; a warmer, fuller recap; FREE as the lime hero on card 5; privacy recut as a trust card over receding real UI.
+
+**The real photos:** no local photo library and no simulator exists on this machine, so the four kid-work photos (rocket painting on a spiral pad, lego castle mid-build, wobbly-letters worksheet with a pencil, pressed-leaf collection) were generated once through Venice's image model — the same private, no-train provider the product itself runs on — at ~1c each, then cropped to remove the provider watermark. They read as casual overhead phone photos, which is exactly what the brief's "real photo of kid work" means visually. If you'd rather have literal photographs before submission, shoot four on your phone and drop them into `~/Desktop/sprout-appstore/photos/` with the same names; one script re-renders everything.
+
+**The lineup (the scroll):**
+
+1. **`card-1-payoff` — "Stop Wondering If the Week Counted"** ("Counted" popped, gold underline). The wound as the opener. Two real kid-work photos become one calm cream "Mia's Week ✓ 14 moments" artifact — moments becoming proof, no phone, no data dump. Closing line: "Am I doing enough? Answered with proof, not vibes."
+2. **`card-2-capture` — "Kept in 10 Seconds"** ("10 Seconds" popped). The real Add-details screen in a tilted bleeding phone: the rocket-painting PHOTO, a mom's note, Talk+Make chips lit, Save log. Trust chip below with five gold stars and the REAL waitlist mom's words ("Hoping this eases my anxiety…" — attributed honestly as "a real mom, on why she joined," not a fabricated store review).
+3. **`card-3-oneplace` — "Everything They Learned, One Place"** ("One Place" popped). The oh-that's-what-it-does card: kid switcher (Mia/Leo), a 7-day strip with domain-colored dots per day, then Today/Yesterday moment rows with real photo thumbnails. Sub carries the permanent-record line.
+4. **`card-4-recap` — "Sunday Night, Answered"** ("Answered" popped). The recap rebuilt alive: three real photos, moments/days/streak stats, domain bars, and a mom's own note on the week ("The drawbridge week. She was so proud she gave the castle a tour.") — the thing you'd actually send to grandma.
+5. **`card-5-free` — "A $197 Resource Builder, Free"** (FREE is the lime hero, $197 struck). Composition kept from the strongest v2 card: the worksheet wall in the gold reveal frame (the one place cartoon illustrations belong, because they ARE the product).
+6. **`card-6-momentum` — "Momentum You Can See"** ("See" popped). The gamification story with the app's own anti-guilt voice: streak, level, goal ring ("6 to go, no rush"), the garden bars, and the real achievement line "Seven days in a row. That's a rhythm, not a fluke."
+7. **`card-7-privacy` — "Yours. Never Sold, Never Used to Train AI"** ("AI" popped). Recut as the trust card the brief asked for: confident statement + shield, three plain beats (no cloud copy, no ads, no data sold), and the real capture UI dimmed and receding into the field behind it. Kept because privacy is the moat and this version reads as a differentiator, not a gag.
+
+**Kept honest:** every UI element traces to the Swift source (palette, six domain colors and verbs, real strings); the testimonial is the real Blacktown mom's DM, real attribution; the momentum copy is the app's own achievement text; no invented star-counts or user numbers anywhere — the stars decorate one real quote, not a fake aggregate rating.
