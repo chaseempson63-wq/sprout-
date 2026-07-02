@@ -29,7 +29,7 @@ import { DocumentNudge } from "../_components/DocumentNudge";
 import { MakerAvatar } from "../_components/MakerAvatar";
 import { UpvoteButton } from "../_components/UpvoteButton";
 import { SheetStack, sheet } from "../_components/paper";
-import { GlassButton } from "@/components/ui/glass";
+import { GlassButton, GlassPanel } from "@/components/ui/glass";
 import type { CommunityPost, ForumThread, Worksheet } from "@/lib/resources/types";
 
 export type CommunityTab = "worksheets" | "chat" | "announcements";
@@ -183,20 +183,22 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
       {tab === "worksheets" && (
         <div>
           <div className="mb-4 flex flex-wrap items-center gap-2">
-            <div className="border-sprout-cream/15 bg-sprout-cream/10 flex min-w-0 flex-1 items-center gap-2 rounded-full border px-4">
-              <Search className="text-sprout-cream/50 size-4 shrink-0" />
-              <input
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search shared worksheets..."
-                className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none"
-              />
-              {query && (
-                <button onClick={() => setQuery("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
-                  <X className="size-4" />
-                </button>
-              )}
-            </div>
+            <GlassPanel radius="rounded-full" className="min-w-0 flex-1">
+              <div className="flex items-center gap-2 px-4">
+                <Search className="size-4 shrink-0 text-[#10301a]/50" />
+                <input
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="Search shared worksheets..."
+                  className="h-11 w-full bg-transparent text-sm text-[#10301a] outline-none placeholder:text-[#10301a]/45"
+                />
+                {query && (
+                  <button onClick={() => setQuery("")} aria-label="Clear" className="text-[#10301a]/50 hover:text-[#10301a]">
+                    <X className="size-4" />
+                  </button>
+                )}
+              </div>
+            </GlassPanel>
             {account && (
               <button onClick={() => setYoursOn((v) => !v)} className={pill(yoursOn, "h-11 px-4 text-sm")}>
                 Yours
@@ -317,20 +319,22 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
       {tab === "chat" && (
         <>
           <div className="mb-5 flex flex-wrap items-center gap-2">
-            <div className="border-sprout-cream/15 bg-sprout-cream/10 flex min-w-0 flex-1 items-center gap-2 rounded-full border px-4">
-              <Search className="text-sprout-cream/50 size-4 shrink-0" />
-              <input
-                value={q}
-                onChange={(e) => setQ(e.target.value)}
-                placeholder="Search the chat..."
-                className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none"
-              />
-              {q && (
-                <button onClick={() => setQ("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
-                  <X className="size-4" />
-                </button>
-              )}
-            </div>
+            <GlassPanel radius="rounded-full" className="min-w-0 flex-1">
+              <div className="flex items-center gap-2 px-4">
+                <Search className="size-4 shrink-0 text-[#10301a]/50" />
+                <input
+                  value={q}
+                  onChange={(e) => setQ(e.target.value)}
+                  placeholder="Search the chat..."
+                  className="h-11 w-full bg-transparent text-sm text-[#10301a] outline-none placeholder:text-[#10301a]/45"
+                />
+                {q && (
+                  <button onClick={() => setQ("")} aria-label="Clear" className="text-[#10301a]/50 hover:text-[#10301a]">
+                    <X className="size-4" />
+                  </button>
+                )}
+              </div>
+            </GlassPanel>
             <button onClick={() => setSort("new")} className={pill(sort === "new", "h-9 px-4 text-sm")}>
               New
             </button>
@@ -490,7 +494,8 @@ function EmptyCard({ text }: { text: string }) {
   );
 }
 
-// One of the three big room cards at the top of the Community.
+// One of the three big room cards at the top of the Community — real liquid
+// glass (same surface as the header pills), with a lit ring on the active one.
 function RoomCard({
   active,
   onClick,
@@ -507,28 +512,34 @@ function RoomCard({
   badge?: number;
 }) {
   return (
-    <button
+    <GlassPanel
+      radius="rounded-2xl"
       onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), onClick())}
       className={cn(
-        "flex flex-col items-start gap-2.5 rounded-2xl p-4 text-left transition sm:gap-3 sm:p-5",
-        active
-          ? "bg-sprout-cream text-sprout-ink shadow-[0_14px_30px_-12px_rgba(0,0,0,0.45)]"
-          : "border-sprout-cream/20 bg-sprout-cream/10 text-sprout-cream hover:bg-sprout-cream/20 border",
+        "cursor-pointer text-left transition-transform duration-300 hover:-translate-y-0.5",
+        active && "-translate-y-0.5",
       )}
     >
-      <span
-        className={cn(
-          "relative grid size-10 shrink-0 place-items-center rounded-xl sm:size-11",
-          active ? "bg-[#2E5A35]/10 text-[#2E5A35]" : "bg-sprout-cream/15 text-sprout-cream",
-        )}
-      >
-        {icon}
-        {badge ? (
-          <span className="absolute -top-1.5 -right-1.5 grid size-5 min-w-5 place-items-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white">{badge}</span>
-        ) : null}
-      </span>
-      <span className="text-sm font-bold sm:text-base">{title}</span>
-      <span className={cn("hidden text-xs leading-snug sm:block", active ? "text-[#1B3722]/60" : "text-sprout-cream/60")}>{sub}</span>
-    </button>
+      {/* lit ring on the active room */}
+      {active && <span aria-hidden className="pointer-events-none absolute inset-0 z-40 rounded-2xl ring-2 ring-inset ring-[#2E5A35]/70" />}
+      <div className="flex flex-col items-start gap-2.5 p-4 sm:gap-3 sm:p-5">
+        <span
+          className={cn(
+            "relative grid size-10 shrink-0 place-items-center rounded-xl sm:size-11",
+            active ? "bg-[#2E5A35] text-white" : "bg-white/45 text-[#10301a]",
+          )}
+        >
+          {icon}
+          {badge ? (
+            <span className="absolute -top-1.5 -right-1.5 grid size-5 min-w-5 place-items-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white">{badge}</span>
+          ) : null}
+        </span>
+        <span className="text-sm font-bold text-[#10301a] sm:text-base">{title}</span>
+        <span className="hidden text-xs leading-snug text-[#10301a]/70 sm:block">{sub}</span>
+      </div>
+    </GlassPanel>
   );
 }

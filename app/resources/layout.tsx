@@ -5,6 +5,7 @@ import { AccountChip } from "./_components/AccountChip";
 import { FeedbackButton } from "./_components/FeedbackButton";
 import { HelpMascot } from "./_components/HelpMascot";
 import { ResourcesNav } from "./_components/ResourcesNav";
+import { ResourcesTutorial } from "./_components/ResourcesTutorial";
 import { GlassFilter } from "@/components/ui/glass";
 import { ResourcesProvider } from "@/lib/resources/store";
 
@@ -23,6 +24,8 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
     <ResourcesProvider>
       {/* The page-load intro is mounted site-wide in the root layout. */}
       <GlassFilter />
+      {/* First-run how-to, once per session, after the intro finishes. */}
+      <ResourcesTutorial />
       {/* Floating "need help?" Sprout → the how-to guide (hides itself on it). */}
       <HelpMascot />
       {/* Floating bottom nav on a 3D green blob (hidden on the builder; see lib/resources/nav). */}

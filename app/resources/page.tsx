@@ -69,8 +69,8 @@ export default function LibraryHome() {
   return (
     <div>
       {/* 1 · hero */}
-      <div className="mb-7 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:items-center sm:gap-6">
-        <span className="grid size-16 shrink-0 -rotate-3 place-items-center rounded-2xl bg-[#FFFDF6] shadow-[0_14px_30px_-12px_rgba(8,22,12,0.6)] ring-1 ring-[#2E5A35]/10 sm:size-24 sm:rounded-3xl">
+      <div className="mb-10 flex flex-col gap-5 sm:mb-16 sm:flex-row sm:items-center sm:gap-7">
+        <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-[#FFFDF6] shadow-[0_20px_48px_-14px_rgba(8,22,12,0.7),0_0_36px_-6px_rgba(180,230,120,0.45)] ring-2 ring-sprout-lime/55 sm:size-24 sm:rounded-3xl">
           <SproutMascotIcon className="h-11 w-11 sm:h-16 sm:w-16" />
         </span>
         <div>
@@ -89,7 +89,7 @@ export default function LibraryHome() {
 
       {/* 3 · creation row */}
       {ready && (
-        <div className="mt-8 mb-10 grid grid-cols-1 items-stretch gap-5 sm:mt-10 sm:mb-14 md:grid-cols-3">
+        <div className="mt-12 mb-14 grid grid-cols-1 items-stretch gap-5 sm:mt-16 sm:mb-20 md:grid-cols-3">
           <SlideshowCard />
           <CommunityCard />
           <KidsManager kids={kids} account={account} onAdd={addChild} />
@@ -97,7 +97,7 @@ export default function LibraryHome() {
       )}
 
       {/* 4 · the paper control sheet */}
-      <div className={cn(sheet, "mb-10 p-4 sm:p-6")}>
+      <div className={cn(sheet, "mb-12 p-4 sm:p-6")}>
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex min-w-0 flex-1 items-center gap-3 rounded-full border border-[#2E5A35]/15 bg-white px-5">
             <Search className="size-5 shrink-0 text-[#1B3722]/45" />
@@ -221,7 +221,7 @@ function PromptBar() {
 
   return (
     <div>
-      <SheetStack flat className="p-2.5 sm:p-3">
+      <SheetStack flat className="p-2.5 ring-2 ring-sprout-lime shadow-[0_0_0_5px_rgba(180,230,120,0.18),0_0_34px_-2px_rgba(180,230,120,0.55),0_18px_40px_-16px_rgba(8,22,12,0.5)] sm:p-3">
         <div className="flex items-center gap-2 sm:gap-3">
           <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-[#2E5A35]/8 sm:size-12 sm:rounded-2xl">
             <SproutMascotIcon className="size-7 sm:size-8" />
