@@ -231,7 +231,7 @@ export default function HomeV2() {
           <CenteredEyebrow number="01" label="Where it all lives" />
           <h2 className="font-bold tracking-[-0.03em] leading-[0.98] text-sprout-cream max-w-3xl mx-auto headline-lit"
               style={{ fontSize: "clamp(40px, 6.5vw, 72px)" }}>
-            Your child&apos;s permanent<br />learning memory.
+            Sprout is where your kid&apos;s week of learning lives
           </h2>
           <p className="mt-8 text-sprout-cream/80 leading-relaxed max-w-xl mx-auto"
              style={{ fontSize: "clamp(17px, 1.7vw, 21px)" }}>
@@ -663,7 +663,7 @@ export default function HomeV2() {
 
               <h2 className="font-bold tracking-[-0.03em] text-sprout-cream headline-lit max-w-4xl mx-auto"
                   style={{ fontSize: "clamp(30px, 5.5vw, 60px)", lineHeight: "1.12" }}>
-                Their week of learning.<br />Sorted and ready<br />when you open it Sunday.
+                A place for your kid&apos;s learning journey, in your pocket
               </h2>
 
               <p className="mt-6 md:mt-8 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
