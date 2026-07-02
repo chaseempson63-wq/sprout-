@@ -29,7 +29,7 @@ import { DocumentNudge } from "../_components/DocumentNudge";
 import { MakerAvatar } from "../_components/MakerAvatar";
 import { UpvoteButton } from "../_components/UpvoteButton";
 import { SheetStack, sheet } from "../_components/paper";
-import { GlassButton, GlassPanel } from "@/components/ui/glass";
+import { GlassButton } from "@/components/ui/glass";
 import type { CommunityPost, ForumThread, Worksheet } from "@/lib/resources/types";
 
 export type CommunityTab = "worksheets" | "chat" | "announcements";
@@ -183,22 +183,20 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
       {tab === "worksheets" && (
         <div>
           <div className="mb-4 flex flex-wrap items-center gap-2">
-            <GlassPanel radius="rounded-full" className="min-w-0 flex-1">
-              <div className="flex items-center gap-2 px-4">
-                <Search className="size-4 shrink-0 text-[#10301a]/50" />
-                <input
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search shared worksheets..."
-                  className="h-11 w-full bg-transparent text-sm text-[#10301a] outline-none placeholder:text-[#10301a]/45"
-                />
-                {query && (
-                  <button onClick={() => setQuery("")} aria-label="Clear" className="text-[#10301a]/50 hover:text-[#10301a]">
-                    <X className="size-4" />
-                  </button>
-                )}
-              </div>
-            </GlassPanel>
+            <div className="border-sprout-cream/15 bg-sprout-cream/10 flex min-w-0 flex-1 items-center gap-2 rounded-full border px-4 backdrop-blur-sm">
+              <Search className="text-sprout-cream/50 size-4 shrink-0" />
+              <input
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search shared worksheets..."
+                className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none"
+              />
+              {query && (
+                <button onClick={() => setQuery("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
+                  <X className="size-4" />
+                </button>
+              )}
+            </div>
             {account && (
               <button onClick={() => setYoursOn((v) => !v)} className={pill(yoursOn, "h-11 px-4 text-sm")}>
                 Yours
@@ -228,10 +226,10 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
                     return (
                       <div key={c.id}>
                         <SheetStack flat className="flex h-full flex-col overflow-hidden">
-                          <button onClick={() => setViewing(c.worksheet)} aria-label={c.worksheet.title} className="grid aspect-[16/10] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
+                          <button onClick={() => setViewing(c.worksheet)} aria-label={c.worksheet.title} className="grid aspect-[4/3] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
                             {img ? (
                               // eslint-disable-next-line @next/next/no-img-element -- static webp
-                              <img src={`/resources/illustrations/${img}.webp`} alt="" className="h-full w-full object-contain p-3" />
+                              <img src={`/resources/illustrations/${img}.webp`} alt="" className="h-full w-full object-contain" />
                             ) : (
                               <span className="text-4xl">📄</span>
                             )}
@@ -270,10 +268,10 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
                 return (
                   <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className="animate-in fade-in slide-in-from-bottom-2 fill-mode-both duration-500">
                     <SheetStack flat className="flex h-full flex-col overflow-hidden">
-                      <Link href={`/resources/community/${p.id}`} aria-label={p.title} className="grid aspect-[16/10] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
+                      <Link href={`/resources/community/${p.id}`} aria-label={p.title} className="grid aspect-[4/3] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
                         {img ? (
                           // eslint-disable-next-line @next/next/no-img-element -- static webp
-                          <img src={`/resources/illustrations/${img}.webp`} alt="" className="h-full w-full object-contain p-3" />
+                          <img src={`/resources/illustrations/${img}.webp`} alt="" className="h-full w-full object-contain" />
                         ) : (
                           <span className="text-4xl">📄</span>
                         )}
@@ -319,22 +317,20 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
       {tab === "chat" && (
         <>
           <div className="mb-5 flex flex-wrap items-center gap-2">
-            <GlassPanel radius="rounded-full" className="min-w-0 flex-1">
-              <div className="flex items-center gap-2 px-4">
-                <Search className="size-4 shrink-0 text-[#10301a]/50" />
-                <input
-                  value={q}
-                  onChange={(e) => setQ(e.target.value)}
-                  placeholder="Search the chat..."
-                  className="h-11 w-full bg-transparent text-sm text-[#10301a] outline-none placeholder:text-[#10301a]/45"
-                />
-                {q && (
-                  <button onClick={() => setQ("")} aria-label="Clear" className="text-[#10301a]/50 hover:text-[#10301a]">
-                    <X className="size-4" />
-                  </button>
-                )}
-              </div>
-            </GlassPanel>
+            <div className="border-sprout-cream/15 bg-sprout-cream/10 flex min-w-0 flex-1 items-center gap-2 rounded-full border px-4 backdrop-blur-sm">
+              <Search className="text-sprout-cream/50 size-4 shrink-0" />
+              <input
+                value={q}
+                onChange={(e) => setQ(e.target.value)}
+                placeholder="Search the chat..."
+                className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none"
+              />
+              {q && (
+                <button onClick={() => setQ("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
+                  <X className="size-4" />
+                </button>
+              )}
+            </div>
             <button onClick={() => setSort("new")} className={pill(sort === "new", "h-9 px-4 text-sm")}>
               New
             </button>
@@ -494,8 +490,9 @@ function EmptyCard({ text }: { text: string }) {
   );
 }
 
-// One of the three big room cards at the top of the Community — real liquid
-// glass (same surface as the header pills), with a lit ring on the active one.
+// One of the three big room cards — the frosted-glass panel (same as the guide's
+// "Still stuck?" card): translucent cream over the green, backdrop blur, hairline
+// cream border. The active room just reads brighter; no colour swap.
 function RoomCard({
   active,
   onClick,
@@ -512,34 +509,23 @@ function RoomCard({
   badge?: number;
 }) {
   return (
-    <GlassPanel
-      radius="rounded-2xl"
+    <button
       onClick={onClick}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && (e.preventDefault(), onClick())}
       className={cn(
-        "cursor-pointer text-left transition-transform duration-300 hover:-translate-y-0.5",
-        active && "-translate-y-0.5",
+        "text-sprout-cream flex flex-col items-start gap-2.5 rounded-2xl border p-4 text-left backdrop-blur-sm transition sm:gap-3 sm:p-5",
+        active
+          ? "border-sprout-cream/40 bg-sprout-cream/20 shadow-[0_14px_30px_-14px_rgba(8,22,12,0.5)]"
+          : "border-sprout-cream/15 bg-sprout-cream/10 hover:bg-sprout-cream/[0.16]",
       )}
     >
-      {/* lit ring on the active room */}
-      {active && <span aria-hidden className="pointer-events-none absolute inset-0 z-40 rounded-2xl ring-2 ring-inset ring-[#2E5A35]/70" />}
-      <div className="flex flex-col items-start gap-2.5 p-4 sm:gap-3 sm:p-5">
-        <span
-          className={cn(
-            "relative grid size-10 shrink-0 place-items-center rounded-xl sm:size-11",
-            active ? "bg-[#2E5A35] text-white" : "bg-white/45 text-[#10301a]",
-          )}
-        >
-          {icon}
-          {badge ? (
-            <span className="absolute -top-1.5 -right-1.5 grid size-5 min-w-5 place-items-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white">{badge}</span>
-          ) : null}
-        </span>
-        <span className="text-sm font-bold text-[#10301a] sm:text-base">{title}</span>
-        <span className="hidden text-xs leading-snug text-[#10301a]/70 sm:block">{sub}</span>
-      </div>
-    </GlassPanel>
+      <span className={cn("relative grid size-10 shrink-0 place-items-center rounded-xl sm:size-11", active ? "bg-sprout-cream/30" : "bg-sprout-cream/15")}>
+        {icon}
+        {badge ? (
+          <span className="absolute -top-1.5 -right-1.5 grid size-5 min-w-5 place-items-center rounded-full bg-red-500 px-1 text-[10px] font-bold text-white">{badge}</span>
+        ) : null}
+      </span>
+      <span className="text-sm font-bold sm:text-base">{title}</span>
+      <span className="text-sprout-cream/65 hidden text-xs leading-snug sm:block">{sub}</span>
+    </button>
   );
 }

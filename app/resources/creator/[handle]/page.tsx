@@ -188,9 +188,9 @@ export default function CreatorProfile() {
             const body = (
               <>
                 {c.imageKey && (
-                  <div className="aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
+                  <div className="grid aspect-[4/3] w-full place-items-center overflow-hidden border-b border-black/5 bg-white">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`/resources/illustrations/${c.imageKey}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
+                    <img src={`/resources/illustrations/${c.imageKey}.webp`} alt="" className="size-full object-contain transition duration-500 group-hover:scale-105" />
                   </div>
                 )}
                 <div className="p-5">

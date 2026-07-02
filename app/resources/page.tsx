@@ -151,11 +151,12 @@ export default function LibraryHome() {
             return (
               <Link key={t.id} href={`/resources/${t.id}`} style={{ animationDelay: `${Math.min(i, 11) * 35}ms` }} className="group animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500">
                 <SheetStack tilt={tiltFor(i)} className="flex h-full flex-col overflow-hidden">
-                  {/* full-width illustration, straight, sitting at the top of the card */}
-                  <div className="grid aspect-[16/10] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
+                  {/* full-width illustration, straight, sitting at the top of the card.
+                      4:3 band matches the illustration files so nothing crops or floats. */}
+                  <div className="grid aspect-[4/3] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
                     {art ? (
                       // eslint-disable-next-line @next/next/no-img-element -- static webp
-                      <img src={`/resources/illustrations/${art}.webp`} alt="" className="h-full w-full object-contain p-3" />
+                      <img src={`/resources/illustrations/${art}.webp`} alt="" className="h-full w-full object-contain" />
                     ) : (
                       <span className="text-5xl">{t.emoji}</span>
                     )}
@@ -221,7 +222,7 @@ function PromptBar() {
 
   return (
     <div>
-      <SheetStack flat className="p-2.5 ring-2 ring-sprout-lime shadow-[0_0_0_5px_rgba(180,230,120,0.18),0_0_34px_-2px_rgba(180,230,120,0.55),0_18px_40px_-16px_rgba(8,22,12,0.5)] sm:p-3">
+      <SheetStack flat className="p-2.5 ring-2 ring-[#4E8A57] shadow-[0_0_0_4px_rgba(78,138,87,0.14),0_0_26px_-4px_rgba(78,138,87,0.45),0_18px_40px_-16px_rgba(8,22,12,0.5)] sm:p-3">
         <div className="flex items-center gap-2 sm:gap-3">
           <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-[#2E5A35]/8 sm:size-12 sm:rounded-2xl">
             <SproutMascotIcon className="size-7 sm:size-8" />

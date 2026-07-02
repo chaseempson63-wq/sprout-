@@ -256,9 +256,9 @@ export default function ChildProfile() {
             return (
               <div key={w.id} className={`${lightCard} group flex flex-col overflow-hidden`}>
                 {img && (
-                  <button onClick={() => setViewing(w)} className="block aspect-[16/10] w-full overflow-hidden border-b border-black/5 bg-white/60">
+                  <button onClick={() => setViewing(w)} className="grid aspect-[4/3] w-full place-items-center overflow-hidden border-b border-black/5 bg-white">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`/resources/illustrations/${img}.webp`} alt="" className="size-full object-cover transition duration-500 group-hover:scale-105" />
+                    <img src={`/resources/illustrations/${img}.webp`} alt="" className="size-full object-contain transition duration-500 group-hover:scale-105" />
                   </button>
                 )}
                 <div className="flex flex-1 flex-col p-4">
