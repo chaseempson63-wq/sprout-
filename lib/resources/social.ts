@@ -13,6 +13,7 @@ import type {
   VoteTarget,
   Worksheet,
 } from "./types";
+import type { SlideshowBundle } from "./slides";
 
 const JSON_HEADERS = { "content-type": "application/json" };
 
@@ -50,13 +51,14 @@ async function postJSON<T>(url: string, body: unknown, fallback: T): Promise<T> 
 // ── Community ──
 
 export function listCommunity(
-  opts: { creator?: string; topic?: string; q?: string; mine?: string } = {},
+  opts: { creator?: string; topic?: string; q?: string; mine?: string; kind?: "slides" | "sheets" } = {},
 ): Promise<{ posts: CommunityPost[]; disabled: boolean }> {
   const p = new URLSearchParams();
   if (opts.creator) p.set("creator", opts.creator);
   if (opts.topic && opts.topic !== "all") p.set("topic", opts.topic);
   if (opts.q?.trim()) p.set("q", opts.q.trim());
   if (opts.mine) p.set("mine", opts.mine);
+  if (opts.kind) p.set("kind", opts.kind);
   const qs = p.toString();
   return getJSON(`/api/resources/community${qs ? `?${qs}` : ""}`, { posts: [], disabled: true });
 }
@@ -74,6 +76,13 @@ export function publishWorksheet(
   worksheet: Worksheet,
 ): Promise<{ id: string | null; error?: string; disabled?: boolean }> {
   return postJSON(`/api/resources/community`, { maker, worksheet }, { id: null, disabled: true });
+}
+
+export function publishSlideshow(
+  maker: MakerRef,
+  bundle: SlideshowBundle,
+): Promise<{ id: string | null; error?: string; disabled?: boolean }> {
+  return postJSON(`/api/resources/community`, { maker, slideshow: bundle }, { id: null, disabled: true });
 }
 
 // ── Forum ──

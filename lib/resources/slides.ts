@@ -30,6 +30,50 @@ export interface Slideshow {
   meta: { topic: string; age: number };
 }
 
+// ── Publishing (the deck as a community post) ─────────────────────────
+//
+// A published slideshow rides the existing resource_posts pipe: the post's
+// JSONB `worksheet` column holds this bundle instead of a worksheet, marked by
+// meta.templateId === "slideshow" so every existing surface can branch on the
+// post's templateId. An optional attached worksheet makes the pair one lesson.
+
+export interface SlideshowBundle {
+  kind: "slideshow";
+  title: string;
+  subtitle: string;
+  slideshow: Slideshow;
+  worksheet?: import("./types").Worksheet; // the linked matching sheet, if the maker built one
+  meta: { templateId: "slideshow"; age: number };
+}
+
+export function makeBundle(slideshow: Slideshow, worksheet?: import("./types").Worksheet): SlideshowBundle {
+  return {
+    kind: "slideshow",
+    title: slideshow.title,
+    subtitle: slideshow.subtitle,
+    slideshow,
+    worksheet,
+    meta: { templateId: "slideshow", age: slideshow.meta.age },
+  };
+}
+
+/** True when a community post's payload is a slideshow bundle, not a worksheet. */
+export function isSlideshowPost(p: { templateId?: string } | null | undefined): boolean {
+  return p?.templateId === "slideshow";
+}
+
+/** Pull the bundle back out of a post's `worksheet` payload (null if not one). */
+export function bundleOf(payload: unknown): SlideshowBundle | null {
+  const b = payload as SlideshowBundle | null;
+  if (!b || b.kind !== "slideshow" || !b.slideshow || !Array.isArray(b.slideshow.slides)) return null;
+  return b;
+}
+
+/** The picture a slideshow card leads with: the title slide's art, or the first art anywhere. */
+export function deckImageKey(deck: Slideshow): string | undefined {
+  return deck.slides.find((s) => s.kind === "title" && s.imageKey)?.imageKey ?? deck.slides.find((s) => s.imageKey)?.imageKey;
+}
+
 // ── Prompt ────────────────────────────────────────────────────────────
 
 function benchNote(age: number): string {

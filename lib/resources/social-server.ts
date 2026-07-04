@@ -11,6 +11,7 @@
 
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import type { Comment, CommunityPost, ForumThread, MakerRef, VoteTarget, Worksheet } from "./types";
+import type { SlideshowBundle } from "./slides";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://placeholder.supabase.co";
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY ?? "placeholder-service-key";
@@ -142,6 +143,25 @@ export function coerceWorksheet(input: unknown): Worksheet | null {
   if (!Array.isArray(w.blocks) || w.blocks.length === 0 || w.blocks.length > 80) return null;
   if (typeof w.title !== "string" || !w.title.trim()) return null;
   return input as Worksheet;
+}
+
+// Same defense-in-depth gate for a published slideshow bundle: a real deck
+// (sane slide count, string titles), an optional attached worksheet that must
+// itself pass the build-your-own gate, and hard size caps.
+export function coerceSlideshowBundle(input: unknown): SlideshowBundle | null {
+  if (!input || typeof input !== "object") return null;
+  const b = input as Partial<SlideshowBundle> & { slideshow?: { title?: unknown; slides?: unknown } };
+  if (b.kind !== "slideshow" || b.meta?.templateId !== "slideshow") return null;
+  const deck = b.slideshow;
+  if (!deck || typeof deck.title !== "string" || !deck.title.trim()) return null;
+  if (!Array.isArray(deck.slides) || deck.slides.length === 0 || deck.slides.length > 16) return null;
+  for (const s of deck.slides as { title?: unknown; points?: unknown }[]) {
+    if (typeof s?.title !== "string" || s.title.length > 300) return null;
+    if (s.points !== undefined && (!Array.isArray(s.points) || s.points.length > 8)) return null;
+  }
+  if (b.worksheet !== undefined && !coerceWorksheet(b.worksheet)) return null;
+  if (typeof b.title !== "string" || !b.title.trim()) return null;
+  return input as SlideshowBundle;
 }
 
 // ── Row → wire mappers (DB is snake_case; the client wants camelCase) ──

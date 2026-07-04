@@ -1,14 +1,15 @@
 "use client";
 
-// Shareable permalink for one published community worksheet: the worksheet
-// itself (printable) plus a Reddit-style comment thread, an upvote, a report,
-// and an owner-only hide. Reads from the shared DB; degrades to a friendly
-// panel when the social layer is off.
+// Shareable permalink for one published community post — a worksheet, or a
+// slideshow (optionally carrying its linked matching worksheet as one lesson,
+// shown behind Slideshow | Worksheet tabs) — plus a Reddit-style comment
+// thread, an upvote, a report, and an owner-only hide. Reads from the shared
+// DB; degrades to a friendly panel when the social layer is off.
 
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ArrowLeft, Check, Download, Link2, Loader2 } from "lucide-react";
+import { ArrowLeft, Check, Download, FileText, Link2, Loader2, Play } from "lucide-react";
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { UpvoteButton } from "../../_components/UpvoteButton";
 import { AddToKid } from "../../_components/AddToKid";
@@ -16,10 +17,14 @@ import { DocumentNudge } from "../../_components/DocumentNudge";
 import { ReportControl } from "../../_components/ReportControl";
 import { HideControl } from "../../_components/HideControl";
 import { ThreadedComments } from "../../_components/ThreadedComments";
+import { SlideDeckPlayer, SlideDeckPrintCopy } from "../../_components/SlideDeck";
 import { getCommunityPost } from "@/lib/resources/social";
+import { bundleOf, isSlideshowPost } from "@/lib/resources/slides";
 import { printWorksheet } from "@/lib/resources/print-fit";
 import { useResources } from "@/lib/resources/store";
 import { capName, timeAgo } from "@/lib/resources/util";
+import { cn } from "@/lib/utils";
+import { pill } from "@/lib/resources/pill";
 import { GlassButton, GlassLink } from "@/components/ui/glass";
 import type { Comment, CommunityPost } from "@/lib/resources/types";
 
@@ -51,12 +56,13 @@ export default function CommunityPostPage() {
   const raw = params?.id;
   const id = Array.isArray(raw) ? raw[0] : (raw ?? "");
   const router = useRouter();
-  const { ready, account } = useResources();
+  const { ready, account, saveSlideshow } = useResources();
 
   const [loading, setLoading] = useState(true);
   const [post, setPost] = useState<CommunityPost | null>(null);
   const [comments, setComments] = useState<Comment[]>([]);
   const [votedIds, setVotedIds] = useState<string[]>([]);
+  const [view, setView] = useState<"slides" | "worksheet">("slides");
 
   useEffect(() => {
     if (!ready) return;
@@ -89,6 +95,10 @@ export default function CommunityPostPage() {
         </div>
       ) : (
         <>
+          {(() => {
+            const bundle = isSlideshowPost(post) ? bundleOf(post.worksheet) : null;
+            return (
+              <>
           <div className={`${lightCard} no-print mb-4 flex flex-wrap items-center justify-between gap-3 p-4`}>
             <Link href={`/resources/creator/${post.handle}`} className="group flex min-w-0 items-center gap-2.5">
               {post.photo ? (
@@ -105,25 +115,70 @@ export default function CommunityPostPage() {
             <div className="flex flex-wrap items-center gap-2">
               <UpvoteButton targetType="post" targetId={post.id} count={post.upvotes} voted={votedIds.includes(post.id)} />
               <ShareLink />
-              <AddToKid worksheet={post.worksheet} source="ai" className="h-8 px-3 text-xs" />
-              <GlassButton onClick={() => printWorksheet()} className="h-8 gap-1 px-3 text-xs">
-                <Download className="size-3.5" /> PDF
-              </GlassButton>
+              {bundle ? (
+                <AddToKid onAdd={(kidId) => saveSlideshow(bundle.slideshow, bundle.worksheet, kidId)} className="h-8 px-3 text-xs" />
+              ) : (
+                <>
+                  <AddToKid worksheet={post.worksheet} source="ai" className="h-8 px-3 text-xs" />
+                  <GlassButton onClick={() => printWorksheet()} className="h-8 gap-1 px-3 text-xs">
+                    <Download className="size-3.5" /> PDF
+                  </GlassButton>
+                </>
+              )}
               <ReportControl targetType="post" targetId={post.id} />
               <HideControl targetType="post" targetId={post.id} ownerId={post.makerId} onHidden={() => router.push("/resources")} />
             </div>
           </div>
 
-          <WorksheetDoc worksheet={post.worksheet} />
+          {bundle ? (
+            <>
+              {/* one lesson: the deck, and its linked worksheet behind a tab */}
+              {bundle.worksheet && (
+                <div className="no-print mb-4 flex items-center justify-center gap-2">
+                  <button onClick={() => setView("slides")} className={pill(view === "slides", "h-10 px-5 text-sm")}>
+                    <Play className="size-4" /> Slideshow
+                  </button>
+                  <button onClick={() => setView("worksheet")} className={pill(view === "worksheet", "h-10 px-5 text-sm")}>
+                    <FileText className="size-4" /> Worksheet
+                  </button>
+                </div>
+              )}
+              {view === "worksheet" && bundle.worksheet ? (
+                <>
+                  <WorksheetDoc worksheet={bundle.worksheet} />
+                  <div className="no-print mt-5 flex justify-center">
+                    <button
+                      onClick={() => printWorksheet()}
+                      className={cn(
+                        "inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#FFFDF6] px-6 text-base font-bold text-[#1B3722]",
+                        "shadow-[0_14px_30px_-12px_rgba(8,22,12,0.65),inset_0_1px_0_rgba(255,255,255,0.9)] transition hover:-translate-y-0.5 active:scale-95",
+                      )}
+                    >
+                      <Download className="size-5" /> Download PDF
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <SlideDeckPlayer deck={bundle.slideshow} />
+                  <SlideDeckPrintCopy deck={bundle.slideshow} />
+                </>
+              )}
+            </>
+          ) : (
+            <>
+              <WorksheetDoc worksheet={post.worksheet} />
 
-          <div className="no-print mt-5 flex justify-center">
-            <button
-              onClick={() => printWorksheet()}
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#FFFDF6] px-6 text-base font-bold text-[#1B3722] shadow-[0_14px_30px_-12px_rgba(8,22,12,0.65),inset_0_1px_0_rgba(255,255,255,0.9)] transition hover:-translate-y-0.5 active:scale-95"
-            >
-              <Download className="size-5" /> Download PDF
-            </button>
-          </div>
+              <div className="no-print mt-5 flex justify-center">
+                <button
+                  onClick={() => printWorksheet()}
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#FFFDF6] px-6 text-base font-bold text-[#1B3722] shadow-[0_14px_30px_-12px_rgba(8,22,12,0.65),inset_0_1px_0_rgba(255,255,255,0.9)] transition hover:-translate-y-0.5 active:scale-95"
+                >
+                  <Download className="size-5" /> Download PDF
+                </button>
+              </div>
+            </>
+          )}
 
           <DocumentNudge />
 
@@ -133,6 +188,9 @@ export default function CommunityPostPage() {
             </h2>
             <ThreadedComments targetType="post" targetId={post.id} initialComments={comments} votedIds={votedIds} />
           </div>
+              </>
+            );
+          })()}
         </>
       )}
     </div>

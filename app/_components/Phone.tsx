@@ -231,7 +231,7 @@ export function PhoneScreenDropIn() {
       icon: Mic,
       time: "5:42 PM",
       kid: "Charlie",
-      note: "\"40 mins on volcano questions today.\"",
+      note: "\"40 mins of why-does-the-moon-follow-the-car today.\"",
     },
     {
       icon: ImageIcon,

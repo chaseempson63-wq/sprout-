@@ -5,39 +5,70 @@
 // teaching deck. Present it full screen, flick with arrows or keys, or print
 // it one slide per landscape page. Venice builds the real thing; the engine's
 // honest fallback covers the gaps (lib/resources/slides.ts).
+//
+// A deck is shareable like a worksheet now: Save keeps it in your library,
+// Add to a kid files it on their profile, and Publish puts it in the
+// Community's Slideshows tab. "Add the matching worksheet" builds a sheet on
+// the same topic and links the pair, so they save and publish as one lesson.
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { track } from "@vercel/analytics";
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Loader2, Maximize2, Minus, Play, Plus, Printer, Sparkles } from "lucide-react";
+import { ArrowLeft, Check, FileText, Globe, Loader2, Minus, Play, Plus, Sparkles, Trash2 } from "lucide-react";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
-import { Sticker, creamCta, forestCta, sheet } from "../_components/paper";
+import { WorksheetDoc } from "../_components/WorksheetDoc";
+import { AddToKid } from "../_components/AddToKid";
+import { SlideDeckPlayer, SlideDeckPrintCopy } from "../_components/SlideDeck";
+import { forestCta, sheet } from "../_components/paper";
+import { makeBundle } from "@/lib/resources/slides";
+import { makerWire, publishSlideshow } from "@/lib/resources/social";
+import { useResources } from "@/lib/resources/store";
 import { GlassButton, GlassLink } from "@/components/ui/glass";
 import { cn } from "@/lib/utils";
-import type { Slide, Slideshow } from "@/lib/resources/slides";
+import { pill } from "@/lib/resources/pill";
+import type { Slideshow } from "@/lib/resources/slides";
+import type { Worksheet } from "@/lib/resources/types";
 
-const STARTERS = ["the water cycle", "sea turtles", "how volcanoes work", "the solar system", "ancient dinosaurs", "how plants grow"];
-
-// One slide per A4 landscape page when printing; the global print CSS shows
-// only .print-area, so the stacked print list is the whole print output.
-const PRINT_RULES = `@media print {
-  @page { size: A4 landscape; margin: 10mm; }
-  .slide-print-page { break-after: page; }
-  .slide-print-page:last-child { break-after: auto; }
-}
-/* Present mode: the stage fills the screen, the slide centers on the desk green. */
-.slides-stage:fullscreen { display: grid; place-items: center; padding: 4vmin; background: linear-gradient(135deg, #2A5132, #1B3722); }
-.slides-stage:fullscreen > div { max-width: min(88vw, calc(88vh * 16 / 9)); width: 100%; }`;
+const STARTERS = ["the water cycle", "sea turtles", "how rainbows form", "the solar system", "ancient dinosaurs", "how plants grow"];
 
 export function SlidesStudio() {
+  const { ready, account, slideshows, saveSlideshow, markSlideshowPublished } = useResources();
   const [topic, setTopic] = useState("");
   const [age, setAge] = useState(7);
   const [deck, setDeck] = useState<Slideshow | null>(null);
   const [source, setSource] = useState<"ai" | "template" | null>(null);
-  const [i, setI] = useState(0);
   const [loading, setLoading] = useState(false);
+  // the linked matching worksheet (the pair travels as one lesson)
+  const [linked, setLinked] = useState<Worksheet | null>(null);
+  const [linking, setLinking] = useState(false);
+  const [view, setView] = useState<"slides" | "worksheet">("slides");
+  const [savedId, setSavedId] = useState<string | null>(null);
+  const [publishedId, setPublishedId] = useState<string | null>(null);
+  const [toast, setToast] = useState<string | null>(null);
   const genSeq = useRef(0);
-  const stage = useRef<HTMLDivElement>(null);
+  const didInit = useRef(false);
+
+  // Reopen a saved deck: /resources/slides?saved=<id> (window.location keeps
+  // this out of the prerender path; no Suspense dance needed).
+  useEffect(() => {
+    if (didInit.current || !ready) return;
+    didInit.current = true;
+    const id = new URLSearchParams(window.location.search).get("saved");
+    if (!id) return;
+    const s = slideshows.find((x) => x.id === id);
+    if (!s) return;
+    setDeck(s.slideshow);
+    setLinked(s.worksheet ?? null);
+    setSource("ai");
+    setSavedId(s.id);
+    setTopic(s.slideshow.meta.topic);
+    setAge(s.slideshow.meta.age);
+  }, [ready, slideshows]);
+
+  function showToast(m: string) {
+    setToast(m);
+    window.setTimeout(() => setToast(null), 2600);
+  }
 
   async function generate(t?: string) {
     const q = (t ?? topic).trim();
@@ -56,7 +87,10 @@ export function SlidesStudio() {
       if (myseq !== genSeq.current) return;
       setDeck(data.slideshow);
       setSource(data.source);
-      setI(0);
+      setLinked(null);
+      setView("slides");
+      setSavedId(null);
+      setPublishedId(null);
       track("resources_slides_generate", { age, source: data.source });
     } catch {
       if (myseq === genSeq.current) {
@@ -68,30 +102,67 @@ export function SlidesStudio() {
     }
   }
 
-  // Arrow keys page the deck once one exists.
-  useEffect(() => {
-    if (!deck) return;
-    function onKey(e: KeyboardEvent) {
-      if (e.key === "ArrowRight") setI((v) => Math.min(v + 1, deck!.slides.length - 1));
-      if (e.key === "ArrowLeft") setI((v) => Math.max(v - 1, 0));
+  // Build the matching worksheet on the same topic and link it to the deck.
+  async function addWorksheet() {
+    if (!deck || linking) return;
+    setLinking(true);
+    try {
+      const res = await fetch("/api/resources/generate", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          templateId: "custom",
+          age: deck.meta.age,
+          messages: [{ role: "user", content: `Build a one-page practice worksheet about ${deck.meta.topic}, matching a lesson a parent just presented on it.` }],
+        }),
+      });
+      if (!res.ok) throw new Error("failed");
+      const data = (await res.json()) as { worksheet: Worksheet };
+      setLinked(data.worksheet);
+      setView("worksheet");
+      setSavedId(null); // the lesson changed; save again to keep the pair
+      track("resources_slides_link_worksheet", {});
+      showToast("Worksheet linked to this slideshow");
+    } catch {
+      showToast("Could not build the worksheet. Try again.");
+    } finally {
+      setLinking(false);
     }
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [deck]);
-
-  function present() {
-    void stage.current?.requestFullscreen?.();
-  }
-  function print() {
-    track("resources_slides_print", {});
-    window.print();
   }
 
-  const slide = deck?.slides[i];
+  function save(childId?: string) {
+    if (!deck) return;
+    const s = saveSlideshow(deck, linked ?? undefined, childId);
+    setSavedId(s.id);
+    track("resources_slides_save", {});
+    showToast(childId ? "Saved to their profile" : "Saved to your slideshows");
+    return s;
+  }
+
+  async function publish() {
+    if (!deck) return;
+    if (!account) {
+      showToast("Add your name first. Tap Create profile, top right.");
+      return;
+    }
+    const saved = savedId ? { id: savedId } : save();
+    const res = await publishSlideshow(makerWire(account), makeBundle(deck, linked ?? undefined));
+    if (res.id) {
+      if (saved) markSlideshowPublished(saved.id);
+      setPublishedId(res.id);
+      track("resources_slides_publish", { linked: !!linked });
+      showToast("Published to the community");
+    } else if (res.disabled) showToast("Saved. The community is offline right now.");
+    else showToast(res.error || "Saved. Could not publish right now.");
+  }
 
   return (
     <div className="mx-auto max-w-5xl">
-      <style dangerouslySetInnerHTML={{ __html: PRINT_RULES }} />
+      {toast && (
+        <div className="no-print text-sprout-cream border-sprout-cream/15 fixed bottom-6 left-1/2 z-[130] -translate-x-1/2 rounded-full border bg-[#0F1A12] px-4 py-2 text-sm shadow-lg">
+          {toast}
+        </div>
+      )}
 
       <GlassLink href="/resources" className="no-print mb-6 h-9 gap-1 px-3 text-sm">
         <ArrowLeft className="size-4" /> Library
@@ -104,7 +175,7 @@ export function SlidesStudio() {
         <div>
           <p className="text-sprout-lime text-xs font-bold tracking-[0.2em] uppercase">New</p>
           <h1 className="text-sprout-cream text-3xl font-bold tracking-[-0.02em] sm:text-4xl">Slideshow generator</h1>
-          <p className="text-sprout-cream/70 mt-1 text-sm sm:text-base">Type a topic, and Sprout builds a little lesson you can present or print.</p>
+          <p className="text-sprout-cream/70 mt-1 text-sm sm:text-base">Type a topic, and Sprout builds a little lesson you can present, print, or share.</p>
         </div>
       </div>
 
@@ -145,48 +216,83 @@ export function SlidesStudio() {
       {/* The stage. */}
       {loading ? (
         <BuildingTrace topic={topic} age={age} />
-      ) : deck && slide ? (
-        <div className="no-print">
-          <div ref={stage} className="slides-stage group/stage relative rounded-[24px] bg-[#22452A]/0">
-            <div className="mx-auto w-full max-w-4xl">
-              <div key={i} className="animate-in fade-in zoom-in-95 duration-300">
-                <SlideView slide={slide} deckTitle={deck.title} index={i} total={deck.slides.length} />
+      ) : deck ? (
+        <div>
+          {/* the lesson tabs, once a worksheet is linked */}
+          {linked && (
+            <div className="no-print mb-4 flex items-center justify-center gap-2">
+              <button onClick={() => setView("slides")} className={pill(view === "slides", "h-10 px-5 text-sm")}>
+                <Play className="size-4" /> Slideshow
+              </button>
+              <button onClick={() => setView("worksheet")} className={pill(view === "worksheet", "h-10 px-5 text-sm")}>
+                <FileText className="size-4" /> Worksheet
+              </button>
+              <button
+                onClick={() => {
+                  setLinked(null);
+                  setView("slides");
+                  setSavedId(null);
+                }}
+                aria-label="Remove the linked worksheet"
+                title="Remove the linked worksheet"
+                className="text-sprout-cream/60 hover:text-sprout-cream grid size-9 place-items-center rounded-full transition hover:bg-white/10"
+              >
+                <Trash2 className="size-4" />
+              </button>
+            </div>
+          )}
+
+          {view === "worksheet" && linked ? (
+            <div>
+              <WorksheetDoc worksheet={linked} />
+              <div className="no-print mt-5 flex justify-center">
+                <button onClick={() => window.print()} className={cn(forestCta, "h-11 text-sm")}>Print the worksheet</button>
               </div>
             </div>
-            {/* in-stage arrows (visible in fullscreen too) */}
-            <button onClick={() => setI((v) => Math.max(v - 1, 0))} disabled={i === 0} aria-label="Previous slide" className="absolute top-1/2 left-2 grid size-11 -translate-y-1/2 place-items-center rounded-full bg-black/25 text-white opacity-0 transition group-hover/stage:opacity-100 disabled:opacity-0">
-              <ChevronLeft className="size-6" />
-            </button>
-            <button onClick={() => setI((v) => Math.min(v + 1, deck.slides.length - 1))} disabled={i >= deck.slides.length - 1} aria-label="Next slide" className="absolute top-1/2 right-2 grid size-11 -translate-y-1/2 place-items-center rounded-full bg-black/25 text-white opacity-0 transition group-hover/stage:opacity-100 disabled:opacity-0">
-              <ChevronRight className="size-6" />
-            </button>
-          </div>
+          ) : (
+            <>
+              <SlideDeckPlayer
+                deck={deck}
+                onPrint={() => track("resources_slides_print", {})}
+                controlsExtra={
+                  <>
+                    <GlassButton onClick={() => save()} disabled={!!savedId} className="h-11 px-4 text-sm">
+                      <Check className="size-4" /> {savedId ? "Saved" : "Save"}
+                    </GlassButton>
+                    <AddToKid onAdd={(kidId) => void save(kidId)} className="h-11 px-4 text-sm" />
+                    <GlassButton onClick={() => void publish()} disabled={!!publishedId} className="h-11 px-4 text-sm">
+                      <Globe className="size-4" /> {publishedId ? "Published" : "Publish"}
+                    </GlassButton>
+                  </>
+                }
+              />
+              {/* deck print copy lives only in the slides view so the print
+                  output is exactly what's on screen (one .print-area at a time) */}
+              <SlideDeckPrintCopy deck={deck} />
+            </>
+          )}
 
-          {/* controls under the stage */}
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
-            <GlassButton onClick={() => setI((v) => Math.max(v - 1, 0))} disabled={i === 0} aria-label="Previous" className="size-10">
-              <ChevronLeft className="size-4" />
-            </GlassButton>
-            <div className="flex items-center gap-1.5">
-              {deck.slides.map((_, d) => (
-                <button key={d} onClick={() => setI(d)} aria-label={`Slide ${d + 1}`} className={cn("size-2.5 rounded-full transition", d === i ? "bg-sprout-cream scale-125" : "bg-sprout-cream/30 hover:bg-sprout-cream/60")} />
-              ))}
+          {source === "template" && view === "slides" && (
+            <p className="no-print text-sprout-cream/55 mt-3 text-center text-xs">Built from Sprout&apos;s curated facts while the AI builder is busy.</p>
+          )}
+
+          {/* one lesson: the matching worksheet */}
+          {!linked && (
+            <div className="no-print mt-8 flex flex-col items-center gap-1.5 text-center">
+              <button onClick={() => void addWorksheet()} disabled={linking} className={cn(forestCta, "h-11 text-sm")}>
+                {linking ? <Loader2 className="size-4 animate-spin" /> : <FileText className="size-4" />}
+                {linking ? "Building the worksheet..." : "Add the matching worksheet"}
+              </button>
+              <p className="text-sprout-cream/55 text-xs">Sprout builds a practice sheet on the same topic. They save and publish together, one lesson.</p>
             </div>
-            <GlassButton onClick={() => setI((v) => Math.min(v + 1, deck.slides.length - 1))} disabled={i >= deck.slides.length - 1} aria-label="Next" className="size-10">
-              <ChevronRight className="size-4" />
-            </GlassButton>
-            <span className="text-sprout-cream/60 mx-1 text-sm">
-              {i + 1} / {deck.slides.length}
-            </span>
-            <button onClick={present} className={cn(creamCta, "h-11 text-sm")}>
-              <Maximize2 className="size-4" /> Present
-            </button>
-            <button onClick={print} className={cn(creamCta, "h-11 text-sm")}>
-              <Printer className="size-4" /> Print
-            </button>
-          </div>
-          {source === "template" && (
-            <p className="text-sprout-cream/55 mt-3 text-center text-xs">Built from Sprout&apos;s curated facts while the AI builder is busy.</p>
+          )}
+          {publishedId && (
+            <p className="no-print text-sprout-cream/70 mt-6 text-center text-sm">
+              Live in the community.{" "}
+              <Link href={`/resources/community/${publishedId}`} className="text-sprout-cream font-bold underline-offset-2 hover:underline">
+                See your post
+              </Link>
+            </p>
           )}
         </div>
       ) : (
@@ -195,119 +301,6 @@ export function SlidesStudio() {
           Type a topic above and Sprout builds the whole deck: title, teaching slides, real facts, and talk-about-it questions.
         </div>
       )}
-
-      {/* Print copy of the whole deck, one slide per landscape page. */}
-      {deck && (
-        <div className="print-area hidden print:block">
-          {deck.slides.map((s, d) => (
-            <div key={d} className="slide-print-page">
-              <SlideView slide={s} deckTitle={deck.title} index={d} total={deck.slides.length} print />
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* the cross-product nudge, same as worksheets */}
-      {deck && !loading && (
-        <p className="no-print text-sprout-cream/55 mt-8 text-center text-sm">
-          Presented it? <Link href="/resources" className="text-sprout-cream font-bold underline-offset-2 hover:underline">Make a worksheet</Link> on the same topic to finish the lesson.
-        </p>
-      )}
-    </div>
-  );
-}
-
-// ── One slide, four compositions ─────────────────────────────────────
-
-function SlideView({ slide, deckTitle, index, total, print }: { slide: Slide; deckTitle: string; index: number; total: number; print?: boolean }) {
-  const frame = cn(
-    "relative w-full overflow-hidden rounded-[24px] ring-1 ring-black/10",
-    print ? "aspect-[297/190]" : "aspect-video shadow-[0_30px_70px_-25px_rgba(5,15,8,0.8)]",
-  );
-  const footer = (
-    <div className="absolute inset-x-0 bottom-0 flex items-center justify-between px-6 pb-3.5 text-[11px] font-bold tracking-wide opacity-70">
-      <span className="inline-flex items-center gap-1.5">
-        <SproutMascotIcon className="size-4" /> Made with Sprout
-      </span>
-      <span>
-        {deckTitle} · {index + 1}/{total}
-      </span>
-    </div>
-  );
-
-  if (slide.kind === "title") {
-    return (
-      <div className={cn(frame, "bg-gradient-to-br from-[#2E5A35] to-[#16331E] text-[#FFFDF6]")}>
-        <div className="flex h-full flex-col items-center justify-center gap-5 px-10 text-center">
-          {slide.imageKey ? (
-            <Sticker imageKey={slide.imageKey} size={110} angle={-3} />
-          ) : (
-            <span className="bg-sprout-cream grid size-20 place-items-center rounded-3xl shadow-md">
-              <SproutMascotIcon className="size-12" />
-            </span>
-          )}
-          <h2 className="max-w-3xl text-4xl leading-tight font-bold tracking-[-0.02em] sm:text-5xl">{slide.title}</h2>
-        </div>
-        {footer}
-      </div>
-    );
-  }
-
-  if (slide.kind === "fact") {
-    return (
-      <div className={cn(frame, "bg-[#FBF1D9] text-[#3A3320]")}>
-        <div className="flex h-full items-center gap-8 px-10 py-8 sm:px-14">
-          <div className="min-w-0 flex-1">
-            <p className="text-[13px] font-bold tracking-[0.2em] text-[#C6881A] uppercase">★ {slide.title || "Did you know?"}</p>
-            <p className="mt-4 text-2xl leading-snug font-bold sm:text-3xl">{slide.fact}</p>
-          </div>
-          {slide.imageKey && <Sticker imageKey={slide.imageKey} size={150} angle={4} className="hidden shrink-0 sm:block" />}
-        </div>
-        {footer}
-      </div>
-    );
-  }
-
-  if (slide.kind === "recap") {
-    return (
-      <div className={cn(frame, "bg-[#F1F6EC] text-[#1B3722]")}>
-        <div className="flex h-full flex-col justify-center px-10 py-8 sm:px-14">
-          <p className="text-[13px] font-bold tracking-[0.2em] text-[#2E5A35] uppercase">Talk about it</p>
-          <h3 className="mt-1 text-3xl font-bold tracking-[-0.01em]">{slide.title}</h3>
-          <ol className="mt-6 space-y-4">
-            {(slide.points ?? []).map((p, n) => (
-              <li key={n} className="flex items-start gap-3 text-lg leading-snug sm:text-xl">
-                <span className="mt-0.5 grid size-7 shrink-0 place-items-center rounded-full bg-[#2E5A35] text-sm font-bold text-white">{n + 1}</span>
-                {p}
-              </li>
-            ))}
-          </ol>
-        </div>
-        {footer}
-      </div>
-    );
-  }
-
-  // content
-  return (
-    <div className={cn(frame, "bg-[#FFFDF6] text-[#1B3722]")}>
-      <div className="flex h-full items-center gap-8 px-10 py-8 sm:px-14">
-        <div className="min-w-0 flex-1">
-          <h3 className="text-3xl font-bold tracking-[-0.01em] text-[#1B3722] sm:text-4xl">{slide.title}</h3>
-          <ul className="mt-6 space-y-3.5">
-            {(slide.points ?? []).map((p, n) => (
-              <li key={n} className="flex items-start gap-3 text-lg leading-snug sm:text-xl">
-                <span className="mt-1 grid size-5 shrink-0 place-items-center rounded-full bg-[#2E5A35]/12 text-[#2E5A35]">
-                  <Check className="size-3.5" />
-                </span>
-                {p}
-              </li>
-            ))}
-          </ul>
-        </div>
-        {slide.imageKey && <Sticker imageKey={slide.imageKey} size={170} angle={-4} className="hidden shrink-0 sm:block" />}
-      </div>
-      {footer}
     </div>
   );
 }

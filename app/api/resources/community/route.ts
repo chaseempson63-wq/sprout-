@@ -8,6 +8,7 @@ import { topicForTemplate } from "@/lib/resources/catalog";
 import {
   clampText,
   clientKey,
+  coerceSlideshowBundle,
   coerceWorksheet,
   hideIfOwner,
   isUuid,
@@ -30,6 +31,7 @@ export async function GET(request: Request) {
   const topic = url.searchParams.get("topic")?.trim();
   const q = url.searchParams.get("q")?.trim();
   const mine = url.searchParams.get("mine")?.trim();
+  const kind = url.searchParams.get("kind")?.trim(); // "slides" | "sheets" | absent = everything
   const limit = Math.min(50, Math.max(1, Number(url.searchParams.get("limit")) || 50));
 
   let query = serverSupabase()
@@ -41,6 +43,8 @@ export async function GET(request: Request) {
   if (creator) query = query.eq("handle", creator);
   if (topic) query = query.eq("topic", topic);
   if (mine && isUuid(mine)) query = query.eq("maker_id", mine);
+  if (kind === "slides") query = query.eq("template_id", "slideshow");
+  if (kind === "sheets") query = query.neq("template_id", "slideshow");
   if (q) query = query.ilike("title", `%${q}%`);
 
   const { data, error } = await query;
@@ -57,7 +61,7 @@ export async function POST(request: Request) {
   } catch {
     return Response.json({ error: "Invalid JSON" }, { status: 400 });
   }
-  const o = (body ?? {}) as { op?: string; maker?: MakerRef; worksheet?: unknown; id?: string };
+  const o = (body ?? {}) as { op?: string; maker?: MakerRef; worksheet?: unknown; slideshow?: unknown; id?: string };
   const maker = o.maker;
 
   if (!rateLimit("publish:" + clientKey(request, maker?.id), 10)) {
@@ -72,6 +76,31 @@ export async function POST(request: Request) {
   }
 
   if (!(await upsertMaker(maker))) return Response.json({ error: "Add your name first." }, { status: 400 });
+
+  // Publish a slideshow (optionally carrying its linked worksheet as one
+  // lesson). The bundle rides the same JSONB column, marked template_id
+  // "slideshow" so every surface can branch on the post's templateId.
+  if (o.slideshow !== undefined) {
+    const bundle = coerceSlideshowBundle(o.slideshow);
+    if (!bundle) return Response.json({ error: "That slideshow could not be published." }, { status: 400 });
+    const { data, error } = await serverSupabase()
+      .from("resource_posts")
+      .insert({
+        maker_id: maker!.id,
+        handle: clampText(maker!.handle, 40) || "maker",
+        creator_name: clampText(maker!.displayName, 60),
+        title: clampText(bundle.title, 120) || "Untitled slideshow",
+        subtitle: clampText(bundle.subtitle, 200),
+        template_id: "slideshow",
+        topic: "slideshow",
+        worksheet: bundle,
+      })
+      .select("id")
+      .single();
+    if (error || !data) return Response.json({ error: "Could not publish." }, { status: 500 });
+    return Response.json({ id: (data as { id: string }).id });
+  }
+
   const ws = coerceWorksheet(o.worksheet);
   if (!ws) return Response.json({ error: "Only build-your-own worksheets can be published." }, { status: 400 });
 

@@ -56,7 +56,7 @@ function match(q: string, text: string): boolean {
 }
 
 export default function LibraryHome() {
-  const { ready, kids, worksheets, account, addChild, toggleFavorite, togglePublish, removeWorksheet } = useResources();
+  const { ready, kids, worksheets, slideshows, account, addChild, toggleFavorite, togglePublish, removeWorksheet, removeSlideshow } = useResources();
   const [tab, setTab] = useState<Tab>("templates");
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState<string>("all");
@@ -183,16 +183,46 @@ export default function LibraryHome() {
         <>
           {!ready ? (
             <p className="text-sprout-cream/60 text-sm">Loading…</p>
-          ) : mine.length === 0 ? (
+          ) : mine.length === 0 && slideshows.length === 0 ? (
             <div className={cn(sheet, "p-8 text-center")}>
-              <p className="text-[#1B3722]/70">Nothing here yet. Make a worksheet, hit save, and it lands here.</p>
+              <p className="text-[#1B3722]/70">Nothing here yet. Make a worksheet or a slideshow, hit save, and it lands here.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-x-5 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
-              {mine.map((w, i) => (
-                <SavedCard key={w.id} i={i} ws={w} onOpen={() => setViewing({ ws: w, savedId: w.id })} onFavorite={() => toggleFavorite(w.id)} onDelete={() => removeWorksheet(w.id)} />
-              ))}
-            </div>
+            <>
+              {/* saved slideshows, one row above the sheets */}
+              {slideshows.length > 0 && (
+                <div className="mb-10">
+                  <h2 className="text-sprout-cream mb-4 text-lg font-bold">My slideshows</h2>
+                  <div className="grid grid-cols-1 gap-x-5 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {slideshows.map((s) => (
+                      <div key={s.id} className={cn(sheet, "flex items-center justify-between gap-3 p-4")}>
+                        <Link href={`/resources/slides?saved=${s.id}`} className="min-w-0 flex-1">
+                          <span className="block truncate font-bold text-[#1B3722]">{s.slideshow.title}</span>
+                          <span className="mt-0.5 block text-xs text-[#1B3722]/60">
+                            {s.slideshow.slides.length} slides
+                            {s.worksheet ? " · with worksheet" : ""}
+                            {s.published ? " · published" : ""}
+                          </span>
+                        </Link>
+                        <GlassButton onClick={() => removeSlideshow(s.id)} aria-label="Delete" className="size-8 shrink-0">
+                          <Trash2 className="size-4" />
+                        </GlassButton>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {mine.length > 0 && (
+                <>
+                  {slideshows.length > 0 && <h2 className="text-sprout-cream mb-4 text-lg font-bold">My worksheets</h2>}
+                  <div className="grid grid-cols-1 gap-x-5 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
+                    {mine.map((w, i) => (
+                      <SavedCard key={w.id} i={i} ws={w} onOpen={() => setViewing({ ws: w, savedId: w.id })} onFavorite={() => toggleFavorite(w.id)} onDelete={() => removeWorksheet(w.id)} />
+                    ))}
+                  </div>
+                </>
+              )}
+            </>
           )}
         </>
       )}

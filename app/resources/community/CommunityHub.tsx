@@ -13,7 +13,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Globe, MessageSquare, MessagesSquare, Plus, Search, Send, X } from "lucide-react";
+import { FileText, Globe, MessageSquare, MessagesSquare, Play, Plus, Presentation, Search, Send, X } from "lucide-react";
 import { createThread, listAnnouncementHearts, listCommunity, listThreads, makerWire } from "@/lib/resources/social";
 import { useResources } from "@/lib/resources/store";
 import { capName, firstImageKey, timeAgo } from "@/lib/resources/util";
@@ -32,9 +32,10 @@ import { SheetStack, sheet } from "../_components/paper";
 import { AnnouncementHeart } from "../_components/AnnouncementHeart";
 import { noteTint } from "@/lib/resources/note-tint";
 import { GlassButton } from "@/components/ui/glass";
+import { bundleOf, deckImageKey } from "@/lib/resources/slides";
 import type { CommunityPost, ForumThread, Worksheet } from "@/lib/resources/types";
 
-export type CommunityTab = "worksheets" | "chat" | "announcements";
+export type CommunityTab = "worksheets" | "slideshows" | "chat" | "announcements";
 
 const AVATARS = [
   "bg-[#CDEFA0] text-[#1B3722]",
@@ -69,6 +70,13 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
   const [topic, setTopic] = useState("all");
   const [yoursOn, setYoursOn] = useState(false);
   const [viewing, setViewing] = useState<Worksheet | null>(null);
+
+  // ── Slideshows tab state ─────────────────────────────────────────────
+  const [decks, setDecks] = useState<CommunityPost[]>([]);
+  const [loadingDecks, setLoadingDecks] = useState(true);
+  const [decksOff, setDecksOff] = useState(false);
+  const [deckQuery, setDeckQuery] = useState("");
+  const [deckYours, setDeckYours] = useState(false);
 
   // ── Chat tab state ───────────────────────────────────────────────────
   const [threads, setThreads] = useState<ForumThread[]>([]);
@@ -110,7 +118,7 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
     let live = true;
     const t = window.setTimeout(() => {
       setLoadingPosts(true);
-      listCommunity({ q: query, topic: topic !== "all" ? topic : undefined, mine: yoursOn ? account?.id : undefined }).then((res) => {
+      listCommunity({ q: query, topic: topic !== "all" ? topic : undefined, mine: yoursOn ? account?.id : undefined, kind: "sheets" }).then((res) => {
         if (!live) return;
         setPosts(res.posts);
         setSocialOff(res.disabled);
@@ -122,6 +130,25 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
       window.clearTimeout(t);
     };
   }, [ready, query, topic, yoursOn, account?.id]);
+
+  // Slideshow feed: refetch (debounced) when search / Yours change.
+  useEffect(() => {
+    if (!ready) return;
+    let live = true;
+    const t = window.setTimeout(() => {
+      setLoadingDecks(true);
+      listCommunity({ q: deckQuery, mine: deckYours ? account?.id : undefined, kind: "slides" }).then((res) => {
+        if (!live) return;
+        setDecks(res.posts);
+        setDecksOff(res.disabled);
+        setLoadingDecks(false);
+      });
+    }, 250);
+    return () => {
+      live = false;
+      window.clearTimeout(t);
+    };
+  }, [ready, deckQuery, deckYours, account?.id]);
 
   // Chat threads: refetch (debounced) when search / sort change.
   useEffect(() => {
@@ -172,13 +199,14 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
           Community
         </h1>
         <p className="text-sprout-cream/70 mt-3 text-sm sm:text-base">
-          Worksheets built by Sprout parents, a place to ask and swap ideas, and updates from the team.
+          Worksheets and slideshows built by Sprout parents, a place to ask and swap ideas, and updates from the team.
         </p>
       </div>
 
-      {/* The three rooms — three main cards. */}
-      <div className="mb-10 grid grid-cols-3 gap-3 sm:gap-4">
+      {/* The four rooms — main cards. */}
+      <div className="mb-10 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
         <RoomCard active={tab === "worksheets"} onClick={() => setTab("worksheets")} icon={<Globe className="size-5" />} title="Worksheets" sub="Sheets parents built and shared" />
+        <RoomCard active={tab === "slideshows"} onClick={() => setTab("slideshows")} icon={<Presentation className="size-5" />} title="Slideshows" sub="Little lessons to present" />
         <RoomCard active={tab === "chat"} onClick={() => setTab("chat")} icon={<MessagesSquare className="size-5" />} title="Chat" sub="Ask and swap ideas" />
         <RoomCard
           active={tab === "announcements"}
@@ -319,6 +347,98 @@ export function CommunityHub({ initialTab }: { initialTab: CommunityTab }) {
           <div className="mt-8 flex justify-center">
             <Link href="/resources/custom" className="inline-flex h-11 items-center gap-2 rounded-full bg-[#2E5A35] px-5 text-sm font-bold text-white shadow-[0_10px_24px_-10px_rgba(46,90,53,0.7)] transition hover:-translate-y-0.5 hover:bg-[#346a3f]">
               <Plus className="size-4" /> Build your own to share
+            </Link>
+          </div>
+        </div>
+      )}
+
+      {/* ── Slideshows ──────────────────────────────────────────────── */}
+      {tab === "slideshows" && (
+        <div>
+          <div className="mb-8 flex flex-wrap items-center gap-2">
+            <div className="border-sprout-cream/15 bg-sprout-cream/10 flex min-w-0 flex-1 items-center gap-2 rounded-full border px-4 backdrop-blur-sm">
+              <Search className="text-sprout-cream/50 size-4 shrink-0" />
+              <input
+                value={deckQuery}
+                onChange={(e) => setDeckQuery(e.target.value)}
+                placeholder="Search shared slideshows..."
+                className="text-sprout-cream placeholder:text-sprout-cream/40 h-11 w-full bg-transparent text-sm outline-none"
+              />
+              {deckQuery && (
+                <button onClick={() => setDeckQuery("")} aria-label="Clear" className="text-sprout-cream/50 hover:text-sprout-cream">
+                  <X className="size-4" />
+                </button>
+              )}
+            </div>
+            {account && (
+              <button onClick={() => setDeckYours((v) => !v)} className={pill(deckYours, "h-11 px-4 text-sm")}>
+                Yours
+              </button>
+            )}
+          </div>
+
+          {decksOff ? (
+            <EmptyCard text="The shared community is offline right now. Check back soon." />
+          ) : loadingDecks ? (
+            <p className="text-sprout-cream/60 text-sm">Loading…</p>
+          ) : decks.length === 0 ? (
+            <EmptyCard text={deckQuery || deckYours ? "No slideshows match that." : "No slideshows here yet. Build one in the studio and publish it."} />
+          ) : (
+            <div className="grid grid-cols-2 gap-x-4 gap-y-6 sm:gap-x-6 sm:gap-y-8 lg:grid-cols-3">
+              {decks.map((p, i) => {
+                const bundle = bundleOf(p.worksheet);
+                const img = bundle ? deckImageKey(bundle.slideshow) : undefined;
+                const count = bundle?.slideshow.slides.length ?? 0;
+                return (
+                  <div key={p.id} style={{ animationDelay: `${Math.min(i, 11) * 40}ms` }} className="animate-in fade-in slide-in-from-bottom-2 fill-mode-both duration-500">
+                    <SheetStack flat className="flex h-full flex-col overflow-hidden">
+                      <Link href={`/resources/community/${p.id}`} aria-label={p.title} className="relative grid aspect-[4/3] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-gradient-to-br from-[#2E5A35] to-[#16331E]">
+                        {img ? (
+                          // eslint-disable-next-line @next/next/no-img-element -- static webp
+                          <img src={`/resources/illustrations/${img}.webp`} alt="" className="h-3/4 w-auto rounded-2xl bg-white object-contain p-1 shadow-md" />
+                        ) : (
+                          <SproutMascotIcon className="size-16" />
+                        )}
+                        <span className="absolute right-2.5 bottom-2.5 inline-flex items-center gap-1 rounded-full bg-black/40 px-2.5 py-1 text-[11px] font-bold text-white">
+                          <Play className="size-3" /> {count} slides
+                        </span>
+                        {bundle?.worksheet && (
+                          <span className="absolute bottom-2.5 left-2.5 inline-flex items-center gap-1 rounded-full bg-[#FFFDF6]/90 px-2.5 py-1 text-[11px] font-bold text-[#1B3722]">
+                            <FileText className="size-3" /> + worksheet
+                          </span>
+                        )}
+                      </Link>
+                      <div className="flex flex-1 flex-col p-4 sm:p-5">
+                        <Link href={`/resources/community/${p.id}`} className="min-w-0 flex-1">
+                          <h3 className="leading-snug font-bold text-[#1B3722]">{p.title}</h3>
+                          {p.subtitle && <p className="mt-0.5 text-xs text-[#1B3722]/60">{p.subtitle}</p>}
+                        </Link>
+                        <div className="mt-3 flex items-center justify-between gap-2 border-t border-[#2E5A35]/10 pt-3 text-xs text-[#1B3722]/70">
+                          <span className="flex min-w-0 items-center gap-1.5 truncate">
+                            <MakerAvatar name={p.creatorName} photo={p.photo} px={22} />
+                            <Link href={`/resources/creator/${p.handle}`} className="truncate font-bold text-[#2E5A35] hover:underline">
+                              {capName(p.creatorName)}
+                            </Link>
+                            <span className="shrink-0 text-[#1B3722]/45">· {timeAgo(p.createdAt)}</span>
+                          </span>
+                          <span className="flex shrink-0 items-center gap-1.5">
+                            <UpvoteButton targetType="post" targetId={p.id} count={p.upvotes} />
+                            <Link href={`/resources/community/${p.id}#comments`} aria-label="Comments" className="inline-flex h-8 items-center gap-1 rounded-full border border-[#2E5A35]/20 bg-white/60 px-2.5 text-xs font-bold text-[#1B3722]/75 transition hover:bg-white">
+                              <MessageSquare className="size-3.5" /> {p.commentCount}
+                            </Link>
+                          </span>
+                        </div>
+                      </div>
+                    </SheetStack>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          <div className="mt-8 flex justify-center">
+            <Link href="/resources/slides" className="inline-flex h-11 items-center gap-2 rounded-full bg-[#2E5A35] px-5 text-sm font-bold text-white shadow-[0_10px_24px_-10px_rgba(46,90,53,0.7)] transition hover:-translate-y-0.5 hover:bg-[#346a3f]">
+              <Plus className="size-4" /> Build a slideshow to share
             </Link>
           </div>
         </div>

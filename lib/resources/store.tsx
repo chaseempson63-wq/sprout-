@@ -8,10 +8,12 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { capName, newId } from "./util";
 import { getFollowInfo, makerWire, saveProfile, toggleFollowServer } from "./social";
-import type { ChildProfile, CreatorProfile, LearningMoment, SavedWorksheet, Worksheet } from "./types";
+import type { ChildProfile, CreatorProfile, LearningMoment, SavedSlideshow, SavedWorksheet, Worksheet } from "./types";
+import type { Slideshow } from "./slides";
 
 const CHILDREN_KEY = "sprout.resources.children.v2";
 const WORKSHEETS_KEY = "sprout.resources.worksheets.v2";
+const SLIDESHOWS_KEY = "sprout.resources.slideshows.v1";
 const MOMENTS_KEY = "sprout.resources.moments.v1";
 const ACCOUNT_KEY = "sprout.resources.account.v1";
 const FOLLOWING_KEY = "sprout.resources.following.v1";
@@ -67,6 +69,10 @@ interface ResourcesContextValue {
   toggleFavorite: (id: string) => void;
   togglePublish: (id: string) => void;
   removeWorksheet: (id: string) => void;
+  slideshows: SavedSlideshow[];
+  saveSlideshow: (slideshow: Slideshow, worksheet?: Worksheet, childId?: string) => SavedSlideshow;
+  removeSlideshow: (id: string) => void;
+  markSlideshowPublished: (id: string) => void;
   following: FollowedMaker[];
   isFollowing: (handle: string) => boolean;
   toggleFollow: (maker: FollowedMaker) => void;
@@ -83,6 +89,7 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   const [account, setAccountState] = useState<CreatorProfile | null>(() => readJSON<CreatorProfile | null>(ACCOUNT_KEY, null));
   const [kids, setKids] = useState<ChildProfile[]>(() => readJSON<ChildProfile[]>(CHILDREN_KEY, []));
   const [worksheets, setWorksheets] = useState<SavedWorksheet[]>(() => readJSON<SavedWorksheet[]>(WORKSHEETS_KEY, []));
+  const [slideshows, setSlideshows] = useState<SavedSlideshow[]>(() => readJSON<SavedSlideshow[]>(SLIDESHOWS_KEY, []));
   const [moments, setMoments] = useState<LearningMoment[]>(() => readJSON<LearningMoment[]>(MOMENTS_KEY, []));
   const [following, setFollowing] = useState<FollowedMaker[]>(() => readJSON<FollowedMaker[]>(FOLLOWING_KEY, []));
   const [followerCounts, setFollowerCounts] = useState<Record<string, number>>(() => readJSON<Record<string, number>>(FOLLOWERS_KEY, {}));
@@ -106,6 +113,9 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (ready) localStorage.setItem(WORKSHEETS_KEY, JSON.stringify(worksheets));
   }, [worksheets, ready]);
+  useEffect(() => {
+    if (ready) localStorage.setItem(SLIDESHOWS_KEY, JSON.stringify(slideshows));
+  }, [slideshows, ready]);
   useEffect(() => {
     if (ready) localStorage.setItem(MOMENTS_KEY, JSON.stringify(moments));
   }, [moments, ready]);
@@ -200,6 +210,22 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
     setWorksheets((prev) => prev.filter((w) => w.id !== id));
   }, []);
 
+  // Slideshows mirror the worksheet library: local-first, optional kid tag,
+  // optional linked worksheet so the pair stays one lesson.
+  const saveSlideshow = useCallback((slideshow: Slideshow, worksheet?: Worksheet, childId?: string) => {
+    const saved: SavedSlideshow = { id: uid(), slideshow, worksheet, childId, published: false, createdAt: Date.now() };
+    setSlideshows((prev) => [saved, ...prev]);
+    return saved;
+  }, []);
+
+  const removeSlideshow = useCallback((id: string) => {
+    setSlideshows((prev) => prev.filter((s) => s.id !== id));
+  }, []);
+
+  const markSlideshowPublished = useCallback((id: string) => {
+    setSlideshows((prev) => prev.map((s) => (s.id === id ? { ...s, published: true } : s)));
+  }, []);
+
   const isFollowing = useCallback((handle: string) => following.some((f) => f.handle === handle), [following]);
   const toggleFollow = useCallback((maker: FollowedMaker) => {
     setFollowing((prev) => {
@@ -244,6 +270,10 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
       toggleFavorite,
       togglePublish,
       removeWorksheet,
+      slideshows,
+      saveSlideshow,
+      removeSlideshow,
+      markSlideshowPublished,
       following,
       isFollowing,
       toggleFollow,
@@ -255,6 +285,7 @@ export function ResourcesProvider({ children }: { children: React.ReactNode }) {
     [
       ready, account, kids, worksheets, moments, setAccount, addChild, updateChild, removeChild, getChild,
       addMoment, removeMoment, momentsFor, saveWorksheet, toggleFavorite, togglePublish, removeWorksheet,
+      slideshows, saveSlideshow, removeSlideshow, markSlideshowPublished,
       following, isFollowing, toggleFollow, followerCount, loadFollowerCount,
       announcementsSeenAt, markAnnouncementsSeen,
     ],

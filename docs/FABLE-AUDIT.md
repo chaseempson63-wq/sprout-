@@ -295,3 +295,22 @@ Seven finished 1290×2796 PNGs in `~/Desktop/sprout-appstore/` (`card-1-payoff` 
 7. **`card-7-privacy` — "Yours. Never Sold, Never Used to Train AI"** ("AI" popped). Recut as the trust card the brief asked for: confident statement + shield, three plain beats (no cloud copy, no ads, no data sold), and the real capture UI dimmed and receding into the field behind it. Kept because privacy is the moat and this version reads as a differentiator, not a gag.
 
 **Kept honest:** every UI element traces to the Swift source (palette, six domain colors and verbs, real strings); the testimonial is the real Blacktown mom's DM, real attribution; the momentum copy is the app's own achievement text; no invented star-counts or user numbers anywhere — the stars decorate one real quote, not a fake aggregate rating.
+
+---
+
+## Part 9 — Slides: the Present fix + shareable lessons (2026-07-04)
+
+**The Present bug, diagnosed.** Fullscreen scaled the slide FRAME to ~88vw while every font, gap, and illustration inside stayed at fixed pixel sizes tuned for the ~900px builder preview — small text jammed left, small art jammed right, dead white space everywhere. And on iOS, Present did literally nothing (`requestFullscreen` doesn't exist on divs in Safari).
+
+**The fix: slides are now proportional, like a real deck.** The slide frame is a CSS container (`@container`) and every dimension inside is in `cqw` (percent of frame width) — headline 5.4cqw, points 2.5cqw, art 19cqw, footer 1.35cqw. The builder preview, a 27-inch fullscreen, a phone, and the printed landscape page now render the same composition, just scaled. Verified live: a 1203px presented frame renders the content title at 50.5px (4.2cqw exactly); the ~900px preview renders the identical layout smaller.
+
+**Present is an overlay, not element-fullscreen.** A portaled (`document.body`) fixed overlay works on every browser including iOS; desktop additionally requests real fullscreen as a bonus. Portaling matters: the first cut rendered inside the studio's animated ancestors, whose stacking context let the floating nav and help mascot punch through the presentation. Small portrait screens rotate the slide 90 degrees, video-player style — and the box centers via `translate(-50%,-50%)` because grid-centering an overflow-wide rotated box falls into the classic overflow-centering trap (caught live on the 375px viewport, slide clipped off-screen; fixed and re-verified centered on both axes).
+
+**Shareable slideshows, riding the existing rails (no new tables, no new patterns):**
+- A published deck is a `resource_posts` row whose JSONB payload holds a `SlideshowBundle` (`kind:"slideshow"`, marked `template_id:"slideshow"`), gated server-side by `coerceSlideshowBundle` exactly like `coerceWorksheet` gates sheets. GET grows a `kind=slides|sheets` filter.
+- **Community gets a fourth room: Slideshows** (Worksheets | Slideshows | Chat | Announcements), with search, Yours, deck cards (title-slide art on the forest gradient, slide count, "+ worksheet" badge when the lesson carries one).
+- **Linking a worksheet and a deck = one lesson.** In the studio, "Add the matching worksheet" builds a custom sheet on the deck's topic and links the pair; they save, add-to-a-kid, and publish together as ONE post, shown behind Slideshow | Worksheet tabs on the permalink. One post instead of two cross-referencing posts means no cross-post update plumbing and no half-broken links.
+- Local library mirrors worksheets: `slideshows` collection in the store (covered automatically by Backup/restore via the key prefix), a My slideshows row on the library's Mine tab, reopen via `/resources/slides?saved=<id>`, AddToKid gains an `onAdd` override so decks file onto kid profiles through the same picker.
+- Privacy stance intact: decks live in the browser until the maker taps Publish; the privacy page's published-content exception already covers what leaves.
+
+**Volcano blacklist sweep** (the 2026-07-02 rule): purged from the slides starters, the landing Phone mockup note, the partners-page IG mock, and the seed spec ("the parts of a flower" now; the old seeded sheet remains in the DB until the next admin reseed). `intent.ts`'s volcano THEME stays — that's the engine honoring a user's own typed topic, not Sprout copy.

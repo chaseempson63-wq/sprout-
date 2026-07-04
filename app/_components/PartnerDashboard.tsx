@@ -223,8 +223,8 @@ export function PartnerDashboard() {
                 <span className="text-sprout-cream/90 font-bold">
                   thehomeschool.mama
                 </span>{" "}
-                took a photo when she finished her volcano and sprout sorted the
-                rest. link in bio.
+                took a photo when she finished her leaf collection and sprout
+                sorted the rest. link in bio.
               </p>
             </div>
           </div>

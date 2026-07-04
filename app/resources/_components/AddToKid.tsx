@@ -9,16 +9,29 @@ import { capName } from "@/lib/resources/util";
 import { cn } from "@/lib/utils";
 import type { Worksheet } from "@/lib/resources/types";
 
-// "Add to a kid's profile" — saves the worksheet you're looking at into one of
+// "Add to a kid's profile" — saves the thing you're looking at into one of
 // your kids' private profiles (kid profiles never leave this browser). Opens a
 // small picker of your kids; if you have none yet, it points you to add one.
-export function AddToKid({ worksheet, source = "ai", className = "" }: { worksheet: Worksheet; source?: "ai" | "template"; className?: string }) {
+// Saves the worksheet by default; pass `onAdd` to save something else (a
+// slideshow) through the same picker.
+export function AddToKid({
+  worksheet,
+  source = "ai",
+  className = "",
+  onAdd,
+}: {
+  worksheet?: Worksheet;
+  source?: "ai" | "template";
+  className?: string;
+  onAdd?: (kidId: string) => void;
+}) {
   const { kids, saveWorksheet } = useResources();
   const [open, setOpen] = useState(false);
   const [done, setDone] = useState<string | null>(null);
 
   function add(kidId: string, kidName: string) {
-    saveWorksheet(worksheet, source, kidId);
+    if (onAdd) onAdd(kidId);
+    else if (worksheet) saveWorksheet(worksheet, source, kidId);
     track("resources_add_to_kid", {});
     setOpen(false);
     setDone(capName(kidName));

@@ -60,6 +60,17 @@ export interface SavedWorksheet extends Worksheet {
   source: "ai" | "template";
 }
 
+// A slideshow kept in the local library, mirroring SavedWorksheet. The optional
+// worksheet is the linked matching sheet, so the pair travels as one lesson.
+export interface SavedSlideshow {
+  id: string;
+  slideshow: import("./slides").Slideshow;
+  worksheet?: Worksheet;
+  childId?: string;
+  published: boolean;
+  createdAt: number;
+}
+
 export interface ChildProfile {
   id: string;
   name: string;

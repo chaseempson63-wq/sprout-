@@ -97,7 +97,7 @@ const SPEC_ROWS: [string, string, number, string, string][] = [
   ["megan", "division", 9, "sharing bananas with the monkeys", "monkey"],
   ["megan", "color-by-number", 7, "a bright peacock", "peacock"],
   ["aroha", "counting", 5, "penguins on the ice", "penguin"],
-  ["aroha", "draw-label", 7, "the parts of a volcano", "volcano"],
+  ["aroha", "draw-label", 7, "the parts of a flower", "flower-parts"],
   ["becca", "draw-label", 9, "the human skeleton", "skeleton"],
   ["becca", "grammar", 8, "a day at the doctor", "doctor"],
   ["kayla", "subtraction", 8, "sharks in the reef", "shark"],
