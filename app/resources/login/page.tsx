@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { getCurrentUser, isAuthConfigured } from "@/lib/supabase/server";
-import { getAppleSub } from "@/lib/resources/entitlement";
+import { getAppleSub, checkEntitlement } from "@/lib/resources/entitlement";
 import { GlassLink } from "@/components/ui/glass";
 import { ResourcesSignIn } from "../_components/ResourcesSignIn";
 
@@ -33,6 +33,10 @@ export default async function ResourcesLoginPage({
   const { error } = await searchParams;
   const user = await getCurrentUser();
   const appleSub = getAppleSub(user);
+  // Active subscriber = the "premium" entitlement on this Apple sub. The middleware
+  // gate already blocks non-entitled users from the real /resources content; here we
+  // just tailor what the login screen itself shows them.
+  const entitled = user ? (await checkEntitlement(appleSub)).active : false;
 
   return (
     <div className="mx-auto flex min-h-[55vh] max-w-md flex-col items-center justify-center text-center">
@@ -55,16 +59,12 @@ export default async function ResourcesLoginPage({
       )}
 
       <div className="mt-8 w-full">
-        {user ? (
+        {!user ? (
+          <ResourcesSignIn />
+        ) : entitled ? (
           <div className={`${lightCard} p-6 text-left`}>
             <p className="text-[11px] font-bold tracking-[0.2em] text-[#2E5A35]/70 uppercase">Signed in</p>
             <p className="mt-2 text-[15px] font-semibold text-[#1B3722]">{user.email ?? "Apple account"}</p>
-            {/* Identity-bridge proof: this Apple sub must equal the iOS app's
-                RevenueCat App User ID, or the entitlement check can't match the
-                same person across phone and web. */}
-            <p className="mt-2 font-mono text-[12px] break-all text-[#1B3722]/55">
-              Apple sub: {appleSub ?? "not found on identity"}
-            </p>
             <div className="mt-5 flex flex-wrap items-center gap-3">
               <GlassLink href="/resources" className="h-10 px-4 text-[13px] text-[#1B3722]">
                 Go to the library
@@ -80,7 +80,28 @@ export default async function ResourcesLoginPage({
             </div>
           </div>
         ) : (
-          <ResourcesSignIn />
+          <div className={`${lightCard} p-6 text-left`}>
+            <p className="text-[11px] font-bold tracking-[0.2em] text-[#2E5A35]/70 uppercase">Signed in as</p>
+            <p className="mt-2 text-[15px] font-semibold text-[#1B3722]">{user.email ?? "Apple account"}</p>
+            <p className="mt-3 text-[14px] leading-relaxed text-[#1B3722]/75">
+              We don't see an active Sprout subscription on this Apple ID. The resource builder is
+              included with the Sprout app plan. Subscribe in the app, then come back and it opens
+              here.
+            </p>
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              <GlassLink href="/" className="h-10 px-4 text-[13px] text-[#1B3722]">
+                Get Sprout
+              </GlassLink>
+              <form action="/auth/signout" method="post">
+                <button
+                  type="submit"
+                  className="text-[13px] font-semibold text-[#1B3722]/60 hover:text-[#1B3722]"
+                >
+                  Use a different Apple ID
+                </button>
+              </form>
+            </div>
+          </div>
         )}
       </div>
 
