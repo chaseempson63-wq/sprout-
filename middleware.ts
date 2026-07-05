@@ -1,23 +1,24 @@
-// Supabase session-refresh middleware.
+// Supabase session refresh + the resource-library subscriber gate.
 //
-// Keeps the auth cookie fresh so server components / route handlers read a valid
-// session. It does NOT gate anything yet — the resource-library entitlement gate
-// is wired in deliberately later, once RevenueCat + the Apple Services ID exist.
-//
-// Dormant-safe: if real Supabase creds aren't set, it no-ops immediately, so it
-// can ship to prod without touching the live /resources behavior. Matcher is
-// scoped to the auth-relevant paths only, never the marketing pages.
+// Dormant-safe: with RESOURCES_AUTH_ENABLED unset (or no real Supabase creds) it
+// no-ops immediately, so it ships to prod without touching the live, open
+// /resources. When the flag is "true" it enforces the HARD gate:
+//   - /resources/login and /auth/* stay open (so sign-in can actually happen)
+//   - every other /resources path requires a signed-in Apple user whose RevenueCat
+//     "premium" entitlement is active; anyone else is redirected to /resources/login
+//     (which then shows the right state: sign in, or subscribe in the app).
+// A non-entitled browser never receives the real content — the redirect happens
+// before the page renders (no client-side blur).
 
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { getAppleSub, checkEntitlement } from "@/lib/resources/entitlement";
 
 export async function middleware(request: NextRequest) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   const enabled = process.env.RESOURCES_AUTH_ENABLED === "true";
-  // Dormant until explicitly enabled, even though Supabase creds already exist on
-  // prod (the waitlist uses the same project). Flip RESOURCES_AUTH_ENABLED only
-  // when the Apple provider + RevenueCat config are in. Until then: zero effect.
+  // Dormant until explicitly enabled. Until then: zero effect, /resources stays open.
   if (!enabled || !url || !key || url.includes("placeholder")) {
     return NextResponse.next();
   }
@@ -36,8 +37,30 @@ export async function middleware(request: NextRequest) {
     },
   });
 
-  // Refreshes the session if it's expired. Required for server-side auth reads.
-  await supabase.auth.getUser();
+  // Refresh the session so the read below is valid.
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const path = request.nextUrl.pathname;
+  // The login screen and the OAuth routes must stay open, or there's no way in.
+  if (path === "/resources/login" || path.startsWith("/auth/")) {
+    return response;
+  }
+
+  // Redirect anyone who isn't an active subscriber to the login screen, carrying
+  // any refreshed auth cookies so the session isn't dropped on the way.
+  const toLogin = () => {
+    const redirect = NextResponse.redirect(new URL("/resources/login", request.url));
+    response.cookies.getAll().forEach((c) => redirect.cookies.set(c));
+    return redirect;
+  };
+
+  if (!user) return toLogin();
+  const { active } = await checkEntitlement(getAppleSub(user));
+  if (!active) return toLogin();
+
+  // Signed in + active subscription -> through to the real content.
   return response;
 }
 
