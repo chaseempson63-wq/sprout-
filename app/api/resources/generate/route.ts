@@ -47,16 +47,22 @@ export async function POST(request: Request) {
     .map((m) => m.content)
     .join(" ");
 
-  if (key) {
-    const ai = await aiWorksheet(template, age, messages, key, childName);
-    if (ai) return Response.json({ worksheet: dedupeWorksheet(ai), source: "ai" });
+  // Freeform "Build your own" is the ONLY path that needs open-ended AI
+  // generation, so it's the only one that calls Venice (with an honest retry
+  // sheet when the key is missing or the call fails).
+  if (template.id === "custom") {
+    if (key) {
+      const ai = await aiWorksheet(template, age, messages, key, childName);
+      if (ai) return Response.json({ worksheet: dedupeWorksheet(ai), source: "ai" });
+    }
+    return Response.json({ worksheet: dedupeWorksheet(customFallback(age, childName)), source: "template" });
   }
 
-  // Freeform "Build your own" has no deterministic generator; fall back to a
-  // friendly retry sheet instead of the template engine.
-  const fallback =
-    template.id === "custom"
-      ? customFallback(age, childName)
-      : templateWorksheet(template, age, instruction, childName);
-  return Response.json({ worksheet: dedupeWorksheet(fallback), source: "template" });
+  // Fixed templates render INSTANTLY from the deterministic engine — themed,
+  // illustrated, and scaled to the age/difficulty. No Venice call, so no ~26s
+  // wait, no per-request cost, and the same request always prints the same sheet.
+  return Response.json({
+    worksheet: dedupeWorksheet(templateWorksheet(template, age, instruction, childName)),
+    source: "template",
+  });
 }

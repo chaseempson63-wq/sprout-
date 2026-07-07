@@ -123,8 +123,13 @@ export default function Builder() {
       if (myseq === genSeq.current && kind !== "silent") setMessages((prev) => [...prev, { role: "assistant", content: "Something went wrong. Try that again." }]);
     } finally {
       if (myseq === genSeq.current) {
-        const elapsed = Date.now() - start;
-        if (elapsed < 900) await new Promise((r) => window.setTimeout(r, 900 - elapsed));
+        // Templates render instantly (deterministic engine, no AI call), so show
+        // them the moment they land. Only the freeform "build your own" path has
+        // a real wait worth cushioning with a minimum beat.
+        if (template.id === "custom") {
+          const elapsed = Date.now() - start;
+          if (elapsed < 900) await new Promise((r) => window.setTimeout(r, 900 - elapsed));
+        }
         if (myseq === genSeq.current) setLoading(false);
       }
     }
@@ -494,7 +499,11 @@ export default function Builder() {
               ))}
             </div>
           ) : loading ? (
-            <ThinkingTrace steps={agentSteps} />
+            isCustom ? (
+              <ThinkingTrace steps={agentSteps} />
+            ) : (
+              <div className="py-20 text-center text-sm text-[#1B3722]/50">Building it…</div>
+            )
           ) : worksheet ? (
             <div key={idx} className="animate-in fade-in zoom-in-95 slide-in-from-bottom-3 fill-mode-both duration-500">
               <WorksheetDoc worksheet={worksheet} />
