@@ -6,7 +6,19 @@ The single source of truth for everything Sprout. A-Z, decision-by-decision, wri
 **Founder:** Chase Empson
 **Version:** v0.1 spec
 
-> **2026-05-24 pivot note (load-bearing — read before anything else here):** Sprout's mechanic has shifted from "AI-generated weekly artifact, Sunday-night delivery" to a **fitness-app-mimic documentation product** (Strava / MyFitnessPal / Apple Health pattern). No AI synthesis in the app loop. Inputs accumulate into a per-kid navigable timeline + weekly view, both parent and kid can see. Calendar / deadlines / scheduled activities are now in scope as captured input types. Privacy (no data sold, no model training) is the positioning weapon. **Where any section below still describes "AI generation," "Sunday-night artifact," or "the AI compiler," treat it as stale — CLAUDE.md "Current state" reflects the current model.** Surgical updates have been applied to the most load-bearing sections (pitch, product, scope, weekly-artifact-section, data model, stack, privacy); other sections retain valid material that didn't change with the pivot (wound, ICP, marketing register split, pricing structure, distribution channels, risks, working agreement).
+> **⚠️ CURRENT STATE — updated 2026-07-07. READ THIS FIRST. It overrides everything below.** This document is now a **historical A-Z spec**. Most of the body describes the pre-launch model and is stale. Where the body conflicts with this block, THIS BLOCK WINS. Use the body only for durable strategy texture (the wound, the ICP's inner life, the marketing register), never for current product/pricing/scope facts.
+>
+> **The product shipped. There are now TWO live products:**
+> 1. **Sprout Journal** — the **native iOS app** (built in Rork/Swift, v1 shipped). Capture (photo, text, dictation) auto-compiles into a per-kid dashboard + weekly recap. On-device, **no AI synthesis in this loop** (the privacy moat). It HAS **streaks, points, levels, a garden graph, progress rings, achievements, a calendar, a shareable recap card, and PDF export**. The body's "no streaks / no gamification / no native mobile app / no community" scope fences are **DEAD** — accountability mechanics are core now.
+> 2. **Sprout Resources** — the **web platform**, live at **hisprout.app/resources**. An AI worksheet + slideshow builder + a community where parents publish and share. This one **DOES generate** (Venice AI for freeform; a deterministic engine renders the fixed templates instantly), under a **no-train / no-sell / no-share** promise. Separate product; the Journal's "no AI" fence does not bind it.
+>
+> **6 growth domains** (replaced "subjects"): **Talk · Count · Ask · Make · Do · Explore.**
+> **Audience:** US-default (mom, math). Homeschool = **beachhead, not ceiling**; end-state is all parents.
+> **Pricing (set, from onboarding v1):** $29.99/mo · $14.99/wk · $287.99/yr **USD**, **hard paywall** (no free trial), **$197 resource builder included free**. The body's "AUD $29/mo placeholder" is dead.
+> **Wound (unchanged):** parental anxiety — "am I doing enough?" — answered with **proof, not vibes.** Never curriculum.
+> **Voice (current):** supplied copy is **verbatim and untouchable**; approved landing headlines are locked; **"volcano" is a blacklisted word**; **"artifact" is retired vocab** (the body still says "artifact" everywhere — that word is dead; say "the recap / the week / what they built"); no em dashes, no exclamation marks; movement, not corporate.
+> **Alice is out** (2026-06-21) — not part of Sprout; the old gf-run FB funnel is not active.
+> Canonical current facts live in the repo `CLAUDE.md` top section and the `sprout-truth` skill's CURRENT STATE block.
 
 ---
 
