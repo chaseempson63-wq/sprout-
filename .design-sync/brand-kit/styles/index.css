@@ -1,0 +1,199 @@
+/* ══════════════════════════════════════════════════════════════════════
+   Sprout Brand Kit — styling source of truth.
+   Values pulled verbatim from the live landing page (hisprout.app) and
+   docs/BRAND.md. One warm rounded family (Nunito), continuous forest-green
+   canvas, frosted cream glass, cream-on-forest CTAs. No serifs anywhere.
+   ══════════════════════════════════════════════════════════════════════ */
+
+@import './fonts.css';
+
+:root {
+  /* ── Locked palette (docs/BRAND.md) ─────────────────────────────── */
+  --sprout-forest: #1F4D2E;   /* primary brand, headings, CTA text on cream */
+  --sprout-deep:   #0F2614;   /* deepest green, page-bottom gradients */
+  --sprout-mid:    #3A5F3F;   /* mid-tone gradients, organic base */
+  --sprout-sage:   #A4C9A8;   /* soft accents, decorative — a whisper */
+  --sprout-cream:  #FDFDFD;   /* text on green, CTA buttons, card bg */
+  --sprout-ink:    #0F1311;   /* text on light surfaces */
+
+  /* ── Continuous canvas gradient stops (verbatim from app/page.tsx) ─ */
+  --sprout-canvas-1:  #2A5132;
+  --sprout-canvas-2:  #3D6643;
+  --sprout-canvas-3:  #1B3722;
+  --sprout-wave-hi:   #76A77A;
+  --sprout-wave-mid:  #4D7B53;
+  --sprout-wave-lo:   #1B3722;
+  --sprout-orb:       #94BC8E;
+
+  /* ── Frosted cream glass ────────────────────────────────────────── */
+  --sprout-glass-bg:        rgba(255, 255, 255, 0.10);
+  --sprout-glass-bg-soft:   rgba(255, 255, 255, 0.07);
+  --sprout-glass-border:     rgba(255, 255, 255, 0.18);
+  --sprout-glass-border-soft: rgba(255, 255, 255, 0.14);
+  --sprout-glass-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 8px 24px -8px rgba(0, 0, 0, 0.32),
+    0 20px 40px -16px rgba(0, 0, 0, 0.20);
+
+  /* ── Type ───────────────────────────────────────────────────────── */
+  --sprout-font: 'Nunito', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --sprout-tracking-display: -0.02em;
+  --sprout-tracking-eyebrow: 0.16em;
+}
+
+/* Every component roots through this: the warm rounded family + smoothing. */
+.sprout-font,
+.sprout-poster,
+.sprout-canvas {
+  font-family: var(--sprout-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── Typography utilities. Hierarchy is weight + size, never a 2nd face. ── */
+.sprout-display {
+  font-weight: 800;
+  letter-spacing: var(--sprout-tracking-display);
+  line-height: 0.98;
+  margin: 0;
+}
+.sprout-subhead {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin: 0;
+}
+.sprout-body {
+  font-weight: 400;
+  line-height: 1.55;
+  margin: 0;
+}
+.sprout-eyebrow {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--sprout-tracking-eyebrow);
+  line-height: 1;
+  margin: 0;
+}
+
+/* ══ Continuous green canvas ═════════════════════════════════════════════
+   The base surface every marketing image sits on: one forest-green gradient
+   plus a faint fractal-noise overlay (mix-blend-overlay, ~10%). Wave layers
+   and blurred orbs are added by the GradientCanvas component as children. */
+.sprout-canvas {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  color: var(--sprout-cream);
+  background: linear-gradient(
+    to bottom right,
+    var(--sprout-canvas-1),
+    var(--sprout-canvas-2),
+    var(--sprout-canvas-3)
+  );
+}
+.sprout-canvas__noise {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.10;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
+}
+.sprout-canvas__waves {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.6;
+}
+.sprout-canvas__orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(64px);
+  pointer-events: none;
+  z-index: 0;
+}
+.sprout-canvas__content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+/* ══ Frosted cream glass card ════════════════════════════════════════════ */
+.sprout-glass {
+  position: relative;
+  overflow: hidden;
+  color: var(--sprout-cream);
+  background: linear-gradient(135deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.05) 100%);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  border: 1px solid var(--sprout-glass-border);
+  box-shadow: var(--sprout-glass-shadow);
+  border-radius: 24px;
+}
+.sprout-glass--soft {
+  background: linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%);
+  border-color: var(--sprout-glass-border-soft);
+}
+
+/* ══ CTA — cream pill with forest text (the premium move). Never lime. ════ */
+.sprout-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: filter 200ms ease, background-color 200ms ease;
+  background: var(--sprout-cream);
+  color: var(--sprout-forest);
+  padding: 0.85em 1.6em;
+  font-size: 1rem;
+}
+.sprout-cta:hover { filter: brightness(0.97); }
+/* Frosted secondary variant — matches the landing nav's "Save my spot". */
+.sprout-cta--glass {
+  background: rgba(255, 255, 255, 0.10);
+  color: var(--sprout-cream);
+  border-color: rgba(255, 255, 255, 0.20);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.sprout-cta--glass:hover { background: rgba(255, 255, 255, 0.16); filter: none; }
+.sprout-cta--sm { padding: 0.6em 1.2em; font-size: 0.875rem; }
+.sprout-cta--lg { padding: 1em 2em; font-size: 1.125rem; }
+
+/* ══ Poster frames — container-query sized so a card render at any width
+   looks identical to a full 1080px export (type/space scale in cqw). ═══════ */
+.sprout-poster {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: var(--sprout-cream);
+}
+.sprout-poster--square   { aspect-ratio: 1 / 1; }
+.sprout-poster--portrait { aspect-ratio: 4 / 5; }   /* 1080 × 1350 */
+.sprout-poster--story    { aspect-ratio: 9 / 16; }
+
+/* Swatch grid for the palette card. Chip fills the top, a label bar (name +
+   hex + use) sits underneath — the chip flexes so the label never clips. */
+.sprout-swatch {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.sprout-swatch__chip { flex: 1; min-height: 0; width: 100%; }
+.sprout-swatch__label { background: rgba(255, 255, 255, 0.04); }
