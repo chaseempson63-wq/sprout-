@@ -16,6 +16,8 @@ import { useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
 import { GlassButton, GlassLink, GlassPanel } from "@/components/ui/glass";
 import type { ChatMessage, Worksheet } from "@/lib/resources/types";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
+import { ComingSoonPage } from "../_components/ComingSoon";
 
 function summarize(w: Worksheet): string {
   const items = w.blocks.reduce((s, b) => s + (b.items?.length ?? (b.text ? 1 : 0)), 0);
@@ -49,6 +51,9 @@ export default function Builder() {
   const templateId = Array.isArray(raw) ? raw[0] : (raw ?? "");
   const template = getTemplate(templateId);
   const isCustom = template?.id === "custom"; // freeform "Build your own" entry point
+
+  // Demo stage: build-your-own is teased, not open. Templates stay free.
+  if (RESOURCES_DEMO && isCustom) return <ComingSoonPage feature="build" />;
   const { kids, addChild, getChild, saveWorksheet, togglePublish, account } = useResources();
 
   const [childId, setChildId] = useState("");

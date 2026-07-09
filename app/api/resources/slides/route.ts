@@ -8,10 +8,18 @@
 
 import { aiSlideshow, fallbackSlideshow } from "@/lib/resources/slides";
 import { requirePremium } from "@/lib/resources/premium";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
 export const runtime = "nodejs";
 
 export async function POST(request: Request) {
+  // Demo stage: slideshows are closed everywhere (the UI only teases them).
+  if (RESOURCES_DEMO) {
+    return Response.json(
+      { error: "Slideshows are coming soon. The templates are free while you wait." },
+      { status: 403 },
+    );
+  }
   // Slideshows are a premium feature (access model 2026-07-09). The middleware
   // gates the page; this is the fresh server-side check on the spend itself.
   // Dormant no-op until RESOURCES_AUTH_ENABLED flips on.

@@ -428,3 +428,27 @@ html[data-site-intro="reveal"] header { animation: intro-reveal-fade 440ms ease 
     transform: none;
   }
 }
+
+/* ── Coming-soon demo vignettes (Resources demo stage) ─────────────── */
+@keyframes cs-line {
+  0% { width: 10%; opacity: 0.35; }
+  45% { width: var(--cs-w, 55%); opacity: 1; }
+  80% { width: var(--cs-w, 55%); opacity: 1; }
+  100% { width: 10%; opacity: 0.35; }
+}
+@keyframes cs-slide {
+  0%, 28% { opacity: 1; transform: translateY(0); }
+  33%, 95% { opacity: 0; transform: translateY(-8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes cs-scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+@keyframes cs-pop {
+  0%, 70%, 100% { transform: scale(1); }
+  80% { transform: scale(1.3); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cs-demo, .cs-demo * { animation: none !important; }
+}

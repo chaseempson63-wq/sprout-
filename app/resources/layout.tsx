@@ -8,6 +8,7 @@ import { ResourcesNav } from "./_components/ResourcesNav";
 import { ResourcesTutorial } from "./_components/ResourcesTutorial";
 import { GlassFilter } from "@/components/ui/glass";
 import { ResourcesProvider } from "@/lib/resources/store";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
 export const metadata: Metadata = {
   title: "Sprout Resources. Worksheets tailored to your child.",
@@ -59,7 +60,8 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
             </Link>
             {/* Brand actions only — Forum and Privacy now live in the bottom nav. */}
             <div className="flex min-w-0 flex-1 items-center justify-end gap-2">
-              <AccountChip />
+              {/* Creator profiles pair with the community — hidden while it's teased. */}
+              {!RESOURCES_DEMO && <AccountChip />}
               <FeedbackButton />
             </div>
           </div>
@@ -69,7 +71,10 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
 
         <footer className="no-print border-sprout-cream/10 text-sprout-cream/55 relative z-10 border-t px-6 pt-6 pb-28 text-center text-xs">
           Made with Sprout ·{" "}
-          <Link href="/resources/privacy" className="hover:text-sprout-cream underline-offset-2 hover:underline">
+          <Link
+            href={RESOURCES_DEMO ? "/privacy" : "/resources/privacy"}
+            className="hover:text-sprout-cream underline-offset-2 hover:underline"
+          >
             your data stays yours, never sold, never used to train AI
           </Link>
           .

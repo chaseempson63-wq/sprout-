@@ -9,12 +9,15 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, PencilLine, ShieldCheck, SlidersHorizontal, Sparkles, Users, X } from "lucide-react";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
-const KEY = "sprout.res.tutorial.v1"; // bump the suffix to re-show after big changes
+// Separate storage keys so the demo tour shows once now, and the full tour
+// shows once again when the platform opens up at launch.
+const KEY = RESOURCES_DEMO ? "sprout.res.tutorial.demo.v1" : "sprout.res.tutorial.v1";
 
 type Step = { icon: React.ReactNode; title: string; body: string };
 
-const STEPS: Step[] = [
+const FULL_STEPS: Step[] = [
   {
     icon: "mascot",
     title: "Welcome to your worksheet maker",
@@ -41,6 +44,37 @@ const STEPS: Step[] = [
     body: "Your kids' names and worksheets live in your own browser. Never sold, never used to train AI. That's the whole promise.",
   },
 ];
+
+// Demo-stage tour: the templates are the product, the rest is teased.
+const DEMO_STEPS: Step[] = [
+  {
+    icon: "mascot",
+    title: "Welcome to the free worksheet library",
+    body: "30 worksheet templates, tailored to your kid's age, free to print. Here's the 30-second version.",
+  },
+  {
+    icon: <PencilLine className="size-6" />,
+    title: "Pick a template",
+    body: "Addition, reading, handwriting, telling time, and plenty more. Tap one and it builds itself for your kid.",
+  },
+  {
+    icon: <SlidersHorizontal className="size-6" />,
+    title: "Set the age",
+    body: "The age dial is how hard the sheet is. Nudge it up or down and the sheet rebuilds to fit your kid. That's the only setting that changes difficulty.",
+  },
+  {
+    icon: <Sparkles className="size-6" />,
+    title: "More is on the way",
+    body: "Build-your-own worksheets, slideshows, and the community are coming soon. Tap any of them for a sneak peek. The templates are free while you wait.",
+  },
+  {
+    icon: <ShieldCheck className="size-6" />,
+    title: "Your stuff stays yours",
+    body: "Your kids' names and worksheets live in your own browser. Never sold, never used to train AI. That's the whole promise.",
+  },
+];
+
+const STEPS: Step[] = RESOURCES_DEMO ? DEMO_STEPS : FULL_STEPS;
 
 export function ResourcesTutorial() {
   const [open, setOpen] = useState(false);

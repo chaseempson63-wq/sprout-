@@ -27,6 +27,8 @@ import { colorClasses, useResources } from "@/lib/resources/store";
 import { capName, firstImageKey } from "@/lib/resources/util";
 import { GlassButton } from "@/components/ui/glass";
 import { cn } from "@/lib/utils";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
+import { ComingSoonModal, type TeaseFeature } from "./_components/ComingSoon";
 import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
 // Hero: "We were born to ___" cycles the final word only.
@@ -61,6 +63,8 @@ export default function LibraryHome() {
   const [query, setQuery] = useState("");
   const [topic, setTopic] = useState<string>("all");
   const [viewing, setViewing] = useState<{ ws: Worksheet; savedId?: string } | null>(null);
+  // Demo stage: which coming-soon feature preview is open (null = none).
+  const [tease, setTease] = useState<TeaseFeature | null>(null);
 
   const inTopic = (templateId: string) => topic === "all" || topicForTemplate(templateId) === topic;
   const templates = TEMPLATES.filter((t) => inTopic(t.id) && match(query, `${t.title} ${t.blurb}`));
@@ -77,24 +81,34 @@ export default function LibraryHome() {
           <h1 className="text-sprout-cream text-[clamp(1.8rem,8.5vw,3rem)] font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl sm:whitespace-normal">
             We were born to <Typewriter words={BORN_TO} className="text-sprout-lime" />
           </h1>
-          <p className="text-sprout-cream/70 mt-5 text-base sm:mt-6 sm:text-lg">Worksheets and slideshows, made to order for your kid. Free to print, always.</p>
-          <Link href="/resources/privacy" className="text-sprout-cream/55 hover:text-sprout-cream mt-3 inline-flex items-center gap-1 text-xs font-medium underline-offset-2 hover:underline">
+          <p className="text-sprout-cream/70 mt-5 text-base sm:mt-6 sm:text-lg">
+            {RESOURCES_DEMO
+              ? "30 worksheet templates, tailored to your kid's age, free to print. Build-your-own and slideshows are coming soon."
+              : "Worksheets and slideshows, made to order for your kid. Free to print, always."}
+          </p>
+          <Link
+            href={RESOURCES_DEMO ? "/privacy" : "/resources/privacy"}
+            className="text-sprout-cream/55 hover:text-sprout-cream mt-3 inline-flex items-center gap-1 text-xs font-medium underline-offset-2 hover:underline"
+          >
             Your data stays yours. See how.
           </Link>
         </div>
       </div>
 
-      {/* 2 · the prompt bar — the hero action */}
-      {ready && <PromptBar />}
+      {/* 2 · the prompt bar — the hero action (teases the builder in demo) */}
+      {ready && <PromptBar onTease={() => setTease("build")} />}
 
       {/* 3 · creation row */}
       {ready && (
         <div className="mt-12 mb-14 grid grid-cols-1 items-stretch gap-5 sm:mt-16 sm:mb-20 md:grid-cols-3">
-          <SlideshowCard />
-          <CommunityCard />
+          <SlideshowCard onTease={() => setTease("slides")} />
+          <CommunityCard onTease={() => setTease("community")} />
           <KidsManager kids={kids} account={account} onAdd={addChild} />
         </div>
       )}
+
+      {/* demo stage: the coming-soon preview pop-up */}
+      {tease && <ComingSoonModal feature={tease} onClose={() => setTease(null)} />}
 
       {/* 4 · the paper control sheet */}
       <div className={cn(sheet, "mb-12 p-4 sm:p-6")}>
@@ -241,29 +255,41 @@ export default function LibraryHome() {
 
 // ── 2 · The prompt bar ────────────────────────────────────────────────
 
-function PromptBar() {
+function PromptBar({ onTease }: { onTease: () => void }) {
   const router = useRouter();
   const [text, setText] = useState("");
 
   function go(t?: string) {
+    // Demo stage: the builder is a tease — every path in opens the preview.
+    if (RESOURCES_DEMO) {
+      onTease();
+      return;
+    }
     const q = (t ?? text).trim();
     router.push(q ? `/resources/custom?prompt=${encodeURIComponent(q)}` : "/resources/custom");
   }
 
   return (
     <div>
-      <SheetStack flat className="p-2.5 ring-2 ring-[#4E8A57] shadow-[0_0_0_4px_rgba(78,138,87,0.14),0_0_26px_-4px_rgba(78,138,87,0.45),0_18px_40px_-16px_rgba(8,22,12,0.5)] sm:p-3">
-        <div className="flex items-center gap-2 sm:gap-3">
+      <SheetStack flat className="relative p-2.5 ring-2 ring-[#4E8A57] shadow-[0_0_0_4px_rgba(78,138,87,0.14),0_0_26px_-4px_rgba(78,138,87,0.45),0_18px_40px_-16px_rgba(8,22,12,0.5)] sm:p-3">
+        {RESOURCES_DEMO && (
+          <span className="bg-sprout-lime absolute -top-2.5 right-4 z-10 rounded-full px-2.5 py-1 text-[9px] font-extrabold tracking-[0.16em] text-[#1B3722] uppercase shadow">
+            Coming soon
+          </span>
+        )}
+        <div className={cn("flex items-center gap-2 sm:gap-3", RESOURCES_DEMO && "opacity-90")}>
           <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-[#2E5A35]/8 sm:size-12 sm:rounded-2xl">
             <SproutMascotIcon className="size-7 sm:size-8" />
           </span>
           <div className="relative min-w-0 flex-1">
             <input
               value={text}
+              readOnly={RESOURCES_DEMO}
+              onFocus={RESOURCES_DEMO ? () => go() : undefined}
               onChange={(e) => setText(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && go()}
-              aria-label="Describe the worksheet you want"
-              className="h-12 w-full bg-transparent text-[15px] text-[#1B3722] outline-none sm:text-lg"
+              aria-label={RESOURCES_DEMO ? "Build your own is coming soon. See the preview." : "Describe the worksheet you want"}
+              className={cn("h-12 w-full bg-transparent text-[15px] text-[#1B3722] outline-none sm:text-lg", RESOURCES_DEMO && "cursor-pointer")}
             />
             {/* the living placeholder */}
             {!text && (
@@ -273,14 +299,14 @@ function PromptBar() {
             )}
           </div>
           <button onClick={() => go()} className={cn(forestCta, "h-11 shrink-0 px-4 text-sm sm:h-12 sm:px-6 sm:text-base")}>
-            <span className="hidden sm:inline">Build it</span>
+            <span className="hidden sm:inline">{RESOURCES_DEMO ? "Sneak peek" : "Build it"}</span>
             <Send className="size-4 sm:hidden" />
             <ArrowRight className="hidden size-4 sm:block" />
           </button>
         </div>
       </SheetStack>
       <div className="mt-3 flex flex-wrap items-center gap-1.5 px-1">
-        <span className="text-sprout-cream/50 mr-1 text-xs">Try:</span>
+        <span className="text-sprout-cream/50 mr-1 text-xs">{RESOURCES_DEMO ? "Soon you can build:" : "Try:"}</span>
         {STARTER_CHIPS.map((s) => (
           <button key={s} onClick={() => go(s)} className="border-sprout-cream/20 bg-sprout-cream/10 text-sprout-cream/85 hover:bg-sprout-cream/20 rounded-full border px-3 py-1.5 text-xs font-bold transition">
             {s}
@@ -293,40 +319,70 @@ function PromptBar() {
 
 // ── 3 · creation row cards ────────────────────────────────────────────
 
-function SlideshowCard() {
+function SlideshowCard({ onTease }: { onTease: () => void }) {
+  const inner = (
+    <SheetStack flat className="relative h-full overflow-hidden !bg-gradient-to-br !from-[#2E5A35] !to-[#16331E] text-[#FFFDF6]">
+      {RESOURCES_DEMO && (
+        <span className="bg-sprout-lime absolute top-3 right-3 z-10 rounded-full px-2.5 py-1 text-[9px] font-extrabold tracking-[0.16em] text-[#1B3722] uppercase shadow">
+          Coming soon
+        </span>
+      )}
+      <div className={cn("flex h-full flex-col p-5 sm:p-6", RESOURCES_DEMO && "opacity-85")}>
+        <span className="text-sprout-lime inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.18em] uppercase">
+          <Play className="size-3.5" /> {RESOURCES_DEMO ? "On the way" : "New"}
+        </span>
+        <h3 className="mt-3 text-xl font-bold tracking-[-0.01em]">Slideshow generator</h3>
+        <p className="text-sprout-cream/70 mt-1 text-sm leading-relaxed">Type a topic, present a little illustrated lesson. Full screen or printed.</p>
+        <span className="text-sprout-lime mt-auto inline-flex items-center gap-1 pt-4 text-sm font-bold">
+          {RESOURCES_DEMO ? "Sneak peek" : "Make one"} <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+        </span>
+      </div>
+    </SheetStack>
+  );
+  if (RESOURCES_DEMO) {
+    return (
+      <button onClick={onTease} className="group block h-full w-full text-left">
+        {inner}
+      </button>
+    );
+  }
   return (
     <Link href="/resources/slides" className="group block h-full">
-      <SheetStack flat className="h-full overflow-hidden !bg-gradient-to-br !from-[#2E5A35] !to-[#16331E] text-[#FFFDF6]">
-        <div className="flex h-full flex-col p-5 sm:p-6">
-          <span className="text-sprout-lime inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.18em] uppercase">
-            <Play className="size-3.5" /> New
-          </span>
-          <h3 className="mt-3 text-xl font-bold tracking-[-0.01em]">Slideshow generator</h3>
-          <p className="text-sprout-cream/70 mt-1 text-sm leading-relaxed">Type a topic, present a little illustrated lesson. Full screen or printed.</p>
-          <span className="text-sprout-lime mt-auto inline-flex items-center gap-1 pt-4 text-sm font-bold">
-            Make one <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
-          </span>
-        </div>
-      </SheetStack>
+      {inner}
     </Link>
   );
 }
 
-function CommunityCard() {
+function CommunityCard({ onTease }: { onTease: () => void }) {
+  const inner = (
+    <SheetStack flat className="relative h-full">
+      {RESOURCES_DEMO && (
+        <span className="bg-sprout-lime absolute top-3 right-3 z-10 rounded-full px-2.5 py-1 text-[9px] font-extrabold tracking-[0.16em] text-[#1B3722] uppercase shadow">
+          Coming soon
+        </span>
+      )}
+      <div className={cn("flex h-full flex-col p-5 sm:p-6", RESOURCES_DEMO && "opacity-85")}>
+        <span className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.18em] text-[#2E5A35] uppercase">
+          <Globe className="size-3.5" /> Community
+        </span>
+        <h3 className="mt-3 text-xl font-bold tracking-[-0.01em] text-[#1B3722]">Worksheets, chat, updates</h3>
+        <p className="mt-1 text-sm leading-relaxed text-[#1B3722]/65">Sheets other parents built and shared, a place to swap ideas, and news from the team.</p>
+        <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-bold text-[#2E5A35]">
+          {RESOURCES_DEMO ? "Sneak peek" : "Open it"} <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+        </span>
+      </div>
+    </SheetStack>
+  );
+  if (RESOURCES_DEMO) {
+    return (
+      <button onClick={onTease} className="group block h-full w-full text-left">
+        {inner}
+      </button>
+    );
+  }
   return (
     <Link href="/resources/community" className="group block h-full">
-      <SheetStack flat className="h-full">
-        <div className="flex h-full flex-col p-5 sm:p-6">
-          <span className="inline-flex items-center gap-1.5 text-[11px] font-bold tracking-[0.18em] text-[#2E5A35] uppercase">
-            <Globe className="size-3.5" /> Community
-          </span>
-          <h3 className="mt-3 text-xl font-bold tracking-[-0.01em] text-[#1B3722]">Worksheets, chat, updates</h3>
-          <p className="mt-1 text-sm leading-relaxed text-[#1B3722]/65">Sheets other parents built and shared, a place to swap ideas, and news from the team.</p>
-          <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-bold text-[#2E5A35]">
-            Open it <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
-          </span>
-        </div>
-      </SheetStack>
+      {inner}
     </Link>
   );
 }

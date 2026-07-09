@@ -20,6 +20,8 @@ import { capName, timeAgo } from "@/lib/resources/util";
 import { cn } from "@/lib/utils";
 import { GlassLink } from "@/components/ui/glass";
 import type { Comment, ForumThread } from "@/lib/resources/types";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
+import { ComingSoonPage } from "../../_components/ComingSoon";
 
 // Card shell without a background, so the thread's own sticky-note tint (matched
 // to its preview in the chat list) can fill it.
@@ -28,6 +30,7 @@ const cardShell =
 const lightCard = cn(cardShell, "bg-[#FFFDF6]");
 
 export default function ForumThreadPage() {
+  if (RESOURCES_DEMO) return <ComingSoonPage feature="community" />;
   const params = useParams();
   const raw = params?.id;
   const id = Array.isArray(raw) ? raw[0] : (raw ?? "");

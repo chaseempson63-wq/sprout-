@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { ArrowLeft, Ban, Check, Cpu, ExternalLink, Globe, Laptop, Lock } from "lucide-react";
 import { GlassLink } from "@/components/ui/glass";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
 export const metadata: Metadata = {
   title: "Your data is yours · Sprout Resources",
@@ -44,6 +46,9 @@ const POINTS = [
 ];
 
 export default function ResourcesPrivacy() {
+  // Demo stage: no accounts, no sign-in, nothing server-side to explain yet.
+  // The site-wide policy covers the site; this page returns at launch.
+  if (RESOURCES_DEMO) redirect("/privacy");
   return (
     <div className="mx-auto max-w-2xl">
       <GlassLink href="/resources" className="mb-6 h-9 gap-1 px-3 text-sm">

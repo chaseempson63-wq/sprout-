@@ -8,7 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/`, changeFrequency: "weekly", priority: 1 },
     { url: `${BASE}/blog`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/resources`, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE}/resources/community`, changeFrequency: "weekly", priority: 0.6 },
+    // /resources/community returns to the sitemap when it opens (demo stage
+    // shows a coming-soon tease there — not worth indexing).
     { url: `${BASE}/resources/how-to`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE}/partners`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE}/privacy`, changeFrequency: "yearly", priority: 0.2 },

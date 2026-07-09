@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { showsResourcesNav } from "@/lib/resources/nav";
 import { useResources } from "@/lib/resources/store";
 import { unseenAnnouncements } from "@/lib/resources/announcements";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
 /* Floating bottom nav for Sprout Resources. A row of icon pills sitting on a
    raised, 3D, wavy green "blob" a couple shades brighter than the page canvas,
@@ -27,7 +28,11 @@ export function ResourcesNav() {
   const pathname = usePathname();
   const { announcementsSeenAt } = useResources();
   if (!showsResourcesNav(pathname)) return null;
-  const unseen = unseenAnnouncements(announcementsSeenAt);
+  // Demo stage: Privacy moves to the site-wide policy; Build + Community stay
+  // visible as coming-soon teases (their pages carry the preview). No unread
+  // badge while the community is closed.
+  const items = RESOURCES_DEMO ? ITEMS.filter((i) => i.label !== "Privacy") : ITEMS;
+  const unseen = RESOURCES_DEMO ? 0 : unseenAnnouncements(announcementsSeenAt);
 
   return (
     <div className="no-print pointer-events-none fixed inset-x-0 bottom-0 z-40 flex justify-center px-3 pb-[max(1.5rem,calc(env(safe-area-inset-bottom)+0.5rem))]">
@@ -54,7 +59,7 @@ export function ResourcesNav() {
 
         {/* Nav items. */}
         <nav className="relative flex items-center gap-1 px-1.5 py-1.5" aria-label="Sprout Resources">
-          {ITEMS.map(({ href, label, Icon, match, notify }) => {
+          {items.map(({ href, label, Icon, match, notify }) => {
             const active = match(pathname);
             return (
               <Link

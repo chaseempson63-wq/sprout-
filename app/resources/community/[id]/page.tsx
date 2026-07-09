@@ -27,6 +27,8 @@ import { cn } from "@/lib/utils";
 import { pill } from "@/lib/resources/pill";
 import { GlassButton, GlassLink } from "@/components/ui/glass";
 import type { Comment, CommunityPost } from "@/lib/resources/types";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
+import { ComingSoonPage } from "../../_components/ComingSoon";
 
 const lightCard =
   "rounded-[22px] bg-[#FFFDF6] ring-1 ring-[#2E5A35]/10 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_14px_30px_-14px_rgba(8,22,12,0.55),0_30px_60px_-30px_rgba(8,22,12,0.4)]";
@@ -52,6 +54,7 @@ function ShareLink() {
 }
 
 export default function CommunityPostPage() {
+  if (RESOURCES_DEMO) return <ComingSoonPage feature="community" />;
   const params = useParams();
   const raw = params?.id;
   const id = Array.isArray(raw) ? raw[0] : (raw ?? "");

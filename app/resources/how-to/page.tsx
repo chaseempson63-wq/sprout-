@@ -15,6 +15,7 @@ import {
   Wand2,
 } from "lucide-react";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
 export const metadata: Metadata = {
   title: "How Sprout Resources works",
@@ -29,7 +30,9 @@ const STEPS = [
   {
     icon: LayoutGrid,
     title: "Pick a worksheet",
-    body: "Browse the templates and tap one. Or hit Build your own and describe anything you want in plain words.",
+    body: RESOURCES_DEMO
+      ? "Browse the templates and tap one. Addition, reading, handwriting, telling time, and plenty more."
+      : "Browse the templates and tap one. Or hit Build your own and describe anything you want in plain words.",
   },
   {
     icon: SlidersHorizontal,
@@ -56,8 +59,10 @@ const STEPS = [
 const EXTRAS = [
   {
     icon: PenLine,
-    title: "Build your own",
-    body: "Don't see what you need? Describe it from scratch and Sprout builds it. The age, the topic, how many questions, any theme.",
+    title: RESOURCES_DEMO ? "Build your own (coming soon)" : "Build your own",
+    body: RESOURCES_DEMO
+      ? "Describe any worksheet from scratch and Sprout builds it. Nearly ready. Tap Build on the library page for a sneak peek."
+      : "Don't see what you need? Describe it from scratch and Sprout builds it. The age, the topic, how many questions, any theme.",
   },
   {
     icon: Baby,
@@ -71,13 +76,17 @@ const EXTRAS = [
   },
   {
     icon: Globe,
-    title: "Share with other parents",
-    body: "Built something good? Publish it to the Community. Only the sheets you build yourself can be shared.",
+    title: RESOURCES_DEMO ? "The community (coming soon)" : "Share with other parents",
+    body: RESOURCES_DEMO
+      ? "Worksheets other parents built and shared, a chat to swap ideas, and updates from the team. Opening soon. Tap Community for a peek."
+      : "Built something good? Publish it to the Community. Only the sheets you build yourself can be shared.",
   },
   {
     icon: MessagesSquare,
-    title: "Ask for more",
-    body: "Want a pack that doesn't exist yet? Drop it in the Community and we'll build it.",
+    title: RESOURCES_DEMO ? "Slideshows (coming soon)" : "Ask for more",
+    body: RESOURCES_DEMO
+      ? "Type a topic, get a warm illustrated mini lesson to present full screen or print. On the way."
+      : "Want a pack that doesn't exist yet? Drop it in the Community and we'll build it.",
   },
 ];
 
@@ -108,11 +117,15 @@ const FAQS = [
   },
   {
     q: "Do I need an account?",
-    a: "Not to make and print. You only add a name if you want to publish a worksheet or post in the Community. No email, no password, just a name.",
+    a: RESOURCES_DEMO
+      ? "No. There's nothing to sign up for. Pick a template, print it, done."
+      : "Not to make and print. You only add a name if you want to publish a worksheet or post in the Community. No email, no password, just a name.",
   },
   {
-    q: "What's the Community? Can people see my kid's stuff?",
-    a: "One place with three rooms: worksheets other parents chose to share, a chat to ask and swap ideas, and updates from the team. Nothing of yours goes public unless you build your own sheet and tap Publish, or post in the chat. Your saved sheets and your kids' profiles never leave your browser.",
+    q: RESOURCES_DEMO ? "When do build-your-own, slideshows, and the community open?" : "What's the Community? Can people see my kid's stuff?",
+    a: RESOURCES_DEMO
+      ? "Soon. They open alongside the Sprout app. Join the waitlist on the home page and you'll hear the day it happens. The templates stay free either way."
+      : "One place with three rooms: worksheets other parents chose to share, a chat to ask and swap ideas, and updates from the team. Nothing of yours goes public unless you build your own sheet and tap Publish, or post in the chat. Your saved sheets and your kids' profiles never leave your browser.",
   },
   {
     q: "Could I lose my saved stuff if I clear my browser?",

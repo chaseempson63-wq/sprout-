@@ -21,6 +21,7 @@
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { getAppleSub, checkEntitlement } from "@/lib/resources/entitlement";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
 // Premium page prefixes. Everything else under /resources stays free.
 const PREMIUM_PAGES = [
@@ -47,7 +48,35 @@ const PREMIUM_APIS = [
   "/api/resources/profile",
 ];
 
+// Demo stage (RESOURCES_DEMO): the community/social APIs are closed at the
+// edge so the teased features can't be driven through raw requests while the
+// UI shows coming-soon. Reads and writes both — the pages that used them are
+// gated. NOT in this list: generate (templates stay free; its custom path
+// refuses in-handler), report + feedback (stay open), admin (token-gated,
+// used for seeding).
+const DEMO_BLOCKED_APIS = [
+  "/api/resources/slides",
+  "/api/resources/threads",
+  "/api/resources/vote",
+  "/api/resources/comments",
+  "/api/resources/follow",
+  "/api/resources/community",
+  "/api/resources/announcement-hearts",
+  "/api/resources/profile",
+];
+
 export async function middleware(request: NextRequest) {
+  const path = request.nextUrl.pathname;
+
+  // Demo-stage API wall. Runs on the LIVE site (independent of the dormant
+  // auth flag below) and disappears when RESOURCES_DEMO flips off at launch.
+  if (RESOURCES_DEMO && DEMO_BLOCKED_APIS.some((p) => path === p || path.startsWith(`${p}/`))) {
+    return Response.json(
+      { error: "This part of Sprout Resources is coming soon. The templates are free while you wait." },
+      { status: 403 },
+    );
+  }
+
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   const enabled = process.env.RESOURCES_AUTH_ENABLED === "true";
@@ -56,7 +85,6 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const path = request.nextUrl.pathname;
   const premiumPage = PREMIUM_PAGES.some((p) => path === p || path.startsWith(`${p}/`));
   const premiumApi = PREMIUM_APIS.some((p) => path === p || path.startsWith(`${p}/`));
 

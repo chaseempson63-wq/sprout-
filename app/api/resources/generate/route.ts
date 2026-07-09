@@ -8,6 +8,7 @@
 import { getTemplate } from "@/lib/resources/catalog";
 import { aiWorksheet, customFallback, dedupeWorksheet, templateWorksheet } from "@/lib/resources/generate";
 import { requirePremium } from "@/lib/resources/premium";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
 import type { ChatMessage, GenerateRequest } from "@/lib/resources/types";
 
 export const runtime = "nodejs";
@@ -52,6 +53,14 @@ export async function POST(request: Request) {
   // generation, so it's the only one that calls Venice (with an honest retry
   // sheet when the key is missing or the call fails).
   if (template.id === "custom") {
+    // Demo stage: build-your-own is closed everywhere (the UI only teases it),
+    // so the raw endpoint refuses too — no Venice spend possible.
+    if (RESOURCES_DEMO) {
+      return Response.json(
+        { error: "Build-your-own is coming soon. The templates are free while you wait." },
+        { status: 403 },
+      );
+    }
     // Build-your-own is the only PREMIUM path in this route (template generation
     // stays free-tier), so the fresh entitlement check — the Venice-spend gate —
     // runs only here. Dormant no-op until RESOURCES_AUTH_ENABLED flips on.
