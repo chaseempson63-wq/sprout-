@@ -7,10 +7,17 @@
 // facts, a friendly try-again slide when it doesn't.
 
 import { aiSlideshow, fallbackSlideshow } from "@/lib/resources/slides";
+import { requirePremium } from "@/lib/resources/premium";
 
 export const runtime = "nodejs";
 
 export async function POST(request: Request) {
+  // Slideshows are a premium feature (access model 2026-07-09). The middleware
+  // gates the page; this is the fresh server-side check on the spend itself.
+  // Dormant no-op until RESOURCES_AUTH_ENABLED flips on.
+  const gate = await requirePremium();
+  if (!gate.ok) return Response.json({ error: gate.error }, { status: gate.status });
+
   const key =
     process.env.VENICE_API_KEY ||
     process.env.VENUS_API_KEY ||

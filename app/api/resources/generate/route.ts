@@ -7,6 +7,7 @@
 
 import { getTemplate } from "@/lib/resources/catalog";
 import { aiWorksheet, customFallback, dedupeWorksheet, templateWorksheet } from "@/lib/resources/generate";
+import { requirePremium } from "@/lib/resources/premium";
 import type { ChatMessage, GenerateRequest } from "@/lib/resources/types";
 
 export const runtime = "nodejs";
@@ -51,6 +52,11 @@ export async function POST(request: Request) {
   // generation, so it's the only one that calls Venice (with an honest retry
   // sheet when the key is missing or the call fails).
   if (template.id === "custom") {
+    // Build-your-own is the only PREMIUM path in this route (template generation
+    // stays free-tier), so the fresh entitlement check — the Venice-spend gate —
+    // runs only here. Dormant no-op until RESOURCES_AUTH_ENABLED flips on.
+    const gate = await requirePremium();
+    if (!gate.ok) return Response.json({ error: gate.error }, { status: gate.status });
     if (key) {
       const ai = await aiWorksheet(template, age, messages, key, childName);
       if (ai) return Response.json({ worksheet: dedupeWorksheet(ai), source: "ai" });

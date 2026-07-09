@@ -38,6 +38,15 @@ export default async function ResourcesLoginPage({
   // just tailor what the login screen itself shows them.
   const entitled = user ? (await checkEntitlement(appleSub)).active : false;
 
+  // The standalone web plan (Stripe payment link). Only rendered for signed-in
+  // users, and always with client_reference_id = their Apple sub, so the
+  // webhook can hand the purchase to RevenueCat under the shared identity.
+  const paymentLink = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK;
+  const stripeLink =
+    paymentLink && appleSub
+      ? `${paymentLink}${paymentLink.includes("?") ? "&" : "?"}client_reference_id=${encodeURIComponent(appleSub)}`
+      : null;
+
   return (
     <div className="mx-auto flex min-h-[55vh] max-w-md flex-col items-center justify-center text-center">
       <span className="bg-sprout-cream/95 mb-6 grid size-14 place-items-center rounded-2xl shadow-sm">
@@ -46,7 +55,8 @@ export default async function ResourcesLoginPage({
 
       <h1 className="text-sprout-cream text-3xl font-bold tracking-[-0.02em]">Your resource library</h1>
       <p className="text-sprout-cream/70 mt-3 text-[15px] leading-relaxed">
-        Sign in with the same Apple ID you use in the Sprout app, and your library opens right here.
+        Sign in with your Apple ID. Any Sprout plan on it, from the app or the web, opens the full
+        library right here.
       </p>
 
       {error === "auth" && (
@@ -84,13 +94,39 @@ export default async function ResourcesLoginPage({
             <p className="text-[11px] font-bold tracking-[0.2em] text-[#2E5A35]/70 uppercase">Signed in as</p>
             <p className="mt-2 text-[15px] font-semibold text-[#1B3722]">{user.email ?? "Apple account"}</p>
             <p className="mt-3 text-[14px] leading-relaxed text-[#1B3722]/75">
-              We don't see an active Sprout subscription on this Apple ID. The resource builder is
-              included with the Sprout app plan. Subscribe in the app, then come back and it opens
-              here.
+              We don't see an active Sprout plan on this Apple ID yet. There are two ways in, and
+              they cost the same. Each one includes the other.
             </p>
-            <div className="mt-5 flex flex-wrap items-center gap-3">
-              <GlassLink href="/" className="h-10 px-4 text-[13px] text-[#1B3722]">
-                Get Sprout
+
+            <div className="mt-5 space-y-3">
+              <div className="rounded-xl border border-[#2E5A35]/15 bg-white/60 p-4">
+                <p className="text-[13px] font-bold text-[#1B3722]">The Sprout app</p>
+                <p className="mt-1 text-[13px] leading-relaxed text-[#1B3722]/70">
+                  The journal plus the full builder. Subscribe in the app with this Apple ID and
+                  everything opens here too.
+                </p>
+                <GlassLink href="/" className="mt-3 h-9 px-4 text-[13px] text-[#1B3722]">
+                  Get Sprout
+                </GlassLink>
+              </div>
+
+              {stripeLink && (
+                <div className="rounded-xl border border-[#2E5A35]/15 bg-white/60 p-4">
+                  <p className="text-[13px] font-bold text-[#1B3722]">The web plan</p>
+                  <p className="mt-1 text-[13px] leading-relaxed text-[#1B3722]/70">
+                    The full builder, slideshows, and community, right here. No iPhone needed. The
+                    app comes included the day you want it.
+                  </p>
+                  <GlassLink href={stripeLink} className="mt-3 h-9 px-4 text-[13px] text-[#1B3722]">
+                    Subscribe on the web
+                  </GlassLink>
+                </div>
+              )}
+            </div>
+
+            <div className="mt-5 flex flex-wrap items-center gap-4">
+              <GlassLink href="/resources" className="h-9 px-4 text-[13px] text-[#1B3722]">
+                Keep using the free templates
               </GlassLink>
               <form action="/auth/signout" method="post">
                 <button
@@ -105,7 +141,7 @@ export default async function ResourcesLoginPage({
         )}
       </div>
 
-      <p className="text-sprout-cream/45 mt-10 text-[12px]">No subscription yet? Sprout is on the iOS App Store.</p>
+      <p className="text-sprout-cream/45 mt-10 text-[12px]">The templates are free for everyone. The full builder comes with any Sprout plan.</p>
     </div>
   );
 }

@@ -2,6 +2,46 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 
+> **UPDATE 2026-07-09 (access model v2 + the whole gate now on MAIN, dormant):**
+> Chase re-set the access model (supersedes the 2026-06-29 "hard gate, no free
+> tier" call): **free tier = the 30 templates only, forever** (it's the SEO/link
+> magnet); **premium = build-your-own, slideshows, community, forum, creator +
+> child profiles**, unlockable two ways at the SAME price, each including the
+> other: the Sprout app subscription (Apple IAP) or a standalone ~$30/mo web plan
+> (Stripe). Built this session, all dormant behind `RESOURCES_AUTH_ENABLED`:
+> - The 2026-07-05 auth branch (`claude/practical-herschel-5ffa98`, 3 commits) is
+>   CHERRY-PICKED ONTO MAIN — the "rebase before launch" debt is closed. The old
+>   branch is now historical; work on main.
+> - `middleware.ts` is TIER-AWARE (free paths pass with no sign-in; premium pages
+>   redirect to `/resources/login`; premium APIs answer 401/402 JSON). Premium
+>   page prefixes: `/resources/{custom,slides,community,forum,creator,child}`.
+> - `lib/resources/premium.ts` `requirePremium()` — fresh in-handler entitlement
+>   check on the Venice-spend routes: `/api/resources/generate` (ONLY the
+>   `custom` path; template generation stays free) + `/api/resources/slides`.
+>   This also closes the old "middleware gates pages not the raw API" exposure.
+> - `/api/stripe/webhook` — verifies Stripe signatures (no SDK), takes
+>   `checkout.session.completed`, forwards the subscription to RevenueCat
+>   (`POST /v1/receipts`, `X-Platform: stripe`) under `client_reference_id` =
+>   the buyer's Apple sub. So a web purchase grants the SAME `premium`
+>   entitlement the app grants — web buyers unlock the app, app buyers unlock
+>   the web. RevenueCat stays the single source of truth; no second entitlement
+>   path.
+> - `/resources/login` not-entitled state now shows BOTH offers (app + web plan)
+>   plus "keep using the free templates". The web-plan card only renders when
+>   `NEXT_PUBLIC_STRIPE_PAYMENT_LINK` is set, and always appends
+>   `client_reference_id=<Apple sub>` — never hand the payment link out bare.
+> - Verified locally both ways: flag OFF = byte-identical open behavior; flag ON
+>   (fake creds) = free paths open + template generation 200, premium pages →
+>   login, custom-generate/slides/threads 401, webhook unconfigured 503.
+> - STILL NEEDED to go live (in order): (1) Chase: Stripe payment link +
+>   webhook endpoint (→ `STRIPE_WEBHOOK_SECRET`, `NEXT_PUBLIC_STRIPE_PAYMENT_LINK`)
+>   + connect Stripe in RevenueCat (→ `REVENUECAT_STRIPE_PUBLIC_KEY`); (2) the
+>   TestFlight device sandbox test of the Apple loop (unchanged, still THE
+>   blocker); (3) flip `RESOURCES_AUTH_ENABLED=true` + `REVENUECAT_SECRET_KEY`
+>   in Vercel at launch. Free-tier UX inside the library page (locking the
+>   Build-your-own tab/chips visually for signed-out users instead of a redirect)
+>   is an open polish item — the redirect covers correctness.
+
 > **UPDATE 2026-07-02 (Fable audit + rebuild session — see `docs/FABLE-AUDIT.md` for the full audit, reasoning, and build log):**
 > - **The age stepper is BACK in the builder** (it had silently regressed out while the locked decision and the how-to guide still assumed it). A minus/plus Age control sits next to the kid chips; taps debounce 650ms then silently rebuild at the new age. Kid chips still only default it, never override it.
 > - **Community IA unified.** ONE Community at `/resources/community` with three tabs: Worksheets (the published feed, moved off the library page), Chat (the old forum threads), Announcements. `/resources/forum` now redirects (`?tab=chat`); thread permalinks `/resources/forum/[id]` unchanged. Library page tabs are now Templates | My worksheets, with a Community link-out. Nav badge logic unchanged.
