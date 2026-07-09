@@ -94,10 +94,10 @@ export function LegalPage({
             <span>Sprout</span>
           </Link>
           <div className="flex items-center gap-5 text-xs uppercase tracking-[0.3em]">
+            <Link href="/resources" className="hover:text-sprout-cream transition-colors">Free resources</Link>
             <Link href="/blog" className="hover:text-sprout-cream transition-colors">Blog</Link>
             <Link href="/privacy" className="hover:text-sprout-cream transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-sprout-cream transition-colors">Terms</Link>
-            <Link href="/partners" className="hover:text-sprout-cream transition-colors">Earn with Sprout</Link>
           </div>
           <div className="text-xs uppercase tracking-[0.3em]">© 2026 · vol.01 · issue 26</div>
         </div>

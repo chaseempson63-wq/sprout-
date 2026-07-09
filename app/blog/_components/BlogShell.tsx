@@ -25,17 +25,19 @@ export function BlogShell({ children }: { children: React.ReactNode }) {
           >
             Blog
           </Link>
-          <Link
-            href="/resources"
-            className="text-[#1B3722]/70 text-sm font-semibold hover:text-[#1B3722] transition-colors hidden sm:inline"
-          >
-            Free worksheets
-          </Link>
+          {/* The free resource builder is the converter — it gets the pill.
+              The waitlist stays reachable as a quiet desktop link. */}
           <Link
             href="/#start"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1B3722] text-sprout-cream text-sm font-semibold hover:bg-[#2A5132] transition-colors"
+            className="text-[#1B3722]/70 text-sm font-semibold hover:text-[#1B3722] transition-colors hidden sm:inline"
           >
             Join the waitlist
+          </Link>
+          <Link
+            href="/resources"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1B3722] text-sprout-cream text-sm font-semibold hover:bg-[#2A5132] transition-colors"
+          >
+            Free resources
           </Link>
         </div>
       </nav>
@@ -52,14 +54,11 @@ export function BlogShell({ children }: { children: React.ReactNode }) {
             <span>Sprout</span>
           </Link>
           <div className="flex items-center gap-5 text-xs uppercase tracking-[0.3em]">
+            <Link href="/resources" className="hover:text-sprout-cream transition-colors">
+              Free resources
+            </Link>
             <Link href="/blog" className="hover:text-sprout-cream transition-colors">
               Blog
-            </Link>
-            <Link href="/resources" className="hover:text-sprout-cream transition-colors">
-              Resources
-            </Link>
-            <Link href="/partners" className="hover:text-sprout-cream transition-colors">
-              Earn with Sprout
             </Link>
             <Link href="/privacy" className="hover:text-sprout-cream transition-colors">
               Privacy
@@ -74,8 +73,8 @@ export function BlogShell({ children }: { children: React.ReactNode }) {
   );
 }
 
-/* The article-end conversion card. Headline is a locked approved line, so it
-   ships verbatim. One CTA to the waitlist, one soft path to Resources. */
+/* The article-end conversion card. The free resource builder is the lead
+   magnet, so it gets the primary button; the waitlist rides along quietly. */
 export function ArticleCta() {
   return (
     <aside className="mt-14 rounded-3xl bg-[#1B3722] text-sprout-cream px-7 py-9 md:px-10 md:py-11 relative overflow-hidden">
@@ -83,35 +82,35 @@ export function ArticleCta() {
       <div className="relative">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sprout-cream/10 border border-sprout-cream/15 text-sprout-cream/90 text-[10px] uppercase tracking-[0.25em] font-semibold mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-          Sprout
+          Free from Sprout
         </div>
         <h2
           className="font-bold tracking-[-0.02em] text-sprout-cream"
           style={{ fontSize: "clamp(26px, 4vw, 38px)", lineHeight: 1.15 }}
         >
-          You did more than you think.
+          Make your kid a worksheet while you&apos;re here
         </h2>
         <p
           className="mt-4 text-sprout-cream/75 leading-relaxed max-w-xl"
           style={{ fontSize: "17px" }}
         >
-          Sprout puts the week somewhere you can see it. The photos, the voice
-          memos, the one-line notes, compiled into a timeline per kid. Never
-          sold. Never trained on.
+          The Sprout worksheet library is free. 30 templates, tailored to your
+          kid&apos;s age, ready to print in seconds. No account, no card,
+          nothing sold, nothing trained on.
         </p>
         <div className="mt-7 flex flex-wrap items-center gap-5">
           <Link
-            href="/#start"
+            href="/resources"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-sprout-cream text-[#1B3722] font-bold hover:bg-white transition-colors"
           >
-            Join the waitlist
+            Open the free library
             <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
           </Link>
           <Link
-            href="/resources"
+            href="/#start"
             className="text-sprout-cream/70 hover:text-sprout-cream text-sm font-semibold transition-colors"
           >
-            Or make a free worksheet while you wait
+            Or join the waitlist for the app
           </Link>
         </div>
       </div>

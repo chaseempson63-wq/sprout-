@@ -658,6 +658,60 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
+          07 · FREE RESOURCES — the lead magnet
+          The worksheet library is the free thing that converts. The ticker
+          video (Chase's animation) shows the wall of real illustrated
+          templates; one CTA into /resources. Sits right before the final
+          CTA so the not-ready-to-buy visitor gets the free offramp.
+          ═══════════════════════════════════════════════════════════════ */}
+      <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center">
+            <CenteredEyebrow number="07" label="Free, starting today" />
+            <h2
+              className="font-bold tracking-[-0.03em] leading-[0.98] text-sprout-cream max-w-3xl mx-auto headline-lit"
+              style={{ fontSize: "clamp(32px, 5vw, 56px)" }}
+            >
+              The worksheet library is already open
+            </h2>
+            <p
+              className="mt-6 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
+              style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}
+            >
+              30 worksheet templates, tailored to your kid&apos;s age, ready to print in seconds.
+              No account, no card. Free while we build the app.
+            </p>
+          </div>
+
+          <div className="mt-12 md:mt-16 rounded-3xl overflow-hidden ring-1 ring-sprout-cream/15 shadow-[0_40px_90px_-30px_rgba(0,0,0,0.8)]">
+            <video
+              src="/resources-ticker.mp4"
+              poster="/resources-ticker-poster.jpg"
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label="A scrolling wall of Sprout's illustrated worksheet templates"
+              className="w-full h-auto block"
+            />
+          </div>
+
+          <div className="mt-10 flex flex-col items-center gap-4">
+            <Link
+              href="/resources"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-sprout-lime text-sprout-ink font-bold text-lg transition hover:brightness-105 hover:-translate-y-0.5"
+            >
+              Make a free worksheet
+              <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
+            </Link>
+            <p className="text-sprout-cream/55 text-sm">
+              Addition, reading, handwriting, telling time, and plenty more. Pick one and it builds itself.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════
           FINAL CTA - MIRRORS HERO  (bevel position 24)
           Same structural shape as the hero: centered headline + sub +
           primary CTA + small badge above. Bookend.
@@ -715,10 +769,10 @@ export default function HomeV2() {
 
             <div className="mt-10 flex justify-center">
               <Link
-                href="/partners"
+                href="/resources"
                 className="group inline-flex items-center gap-2 text-sprout-cream/70 hover:text-sprout-cream text-sm font-semibold transition-colors"
               >
-                Love Sprout? Get paid to share it
+                Not ready? Make a free worksheet first
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
               </Link>
             </div>
@@ -758,8 +812,8 @@ export default function HomeV2() {
             <span>Sprout</span>
           </div>
           <div className="flex items-center gap-5 text-xs uppercase tracking-[0.3em]">
+            <Link href="/resources" className="hover:text-sprout-cream transition-colors">Free resources</Link>
             <Link href="/blog" className="hover:text-sprout-cream transition-colors">Blog</Link>
-            <Link href="/partners" className="hover:text-sprout-cream transition-colors">Earn with Sprout</Link>
             <Link href="/privacy" className="hover:text-sprout-cream transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-sprout-cream transition-colors">Terms</Link>
           </div>
