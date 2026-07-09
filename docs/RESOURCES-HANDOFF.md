@@ -2,6 +2,23 @@
 
 Read this first when resuming work on the Sprout Resources worksheet platform.
 
+> **UPDATE 2026-07-10 — the LIVE SITE is now in FREE DEMO STAGE (`213e474` on
+> main).** `lib/resources/demo.ts` (`RESOURCES_DEMO = true`) puts /resources in
+> tease mode: the 30 templates are fully open (no sign-in, free, the funnel);
+> build-your-own, slideshows, community/forum/creator pages all render a
+> COMING SOON tease — `app/resources/_components/ComingSoon.tsx` (modal on the
+> library page, full page on direct visits, live CSS-animated previews per
+> feature). First-run tutorial + how-to guide have demo copy variants;
+> /resources/privacy redirects to /privacy (returns at launch); Privacy is out
+> of the bottom nav; the creator-profile chip is hidden. Server-side: the
+> generate route's custom path + the slides API 403 in demo (no Venice spend
+> possible at all), and the social APIs (threads/vote/comments/follow/
+> community/announcement-hearts/profile) are blocked at the middleware edge.
+> report/feedback/admin (seeding) stay open. **LAUNCH FLIP = set
+> `RESOURCES_DEMO = false` in lib/resources/demo.ts (one line, push main) AND
+> `RESOURCES_AUTH_ENABLED=true` in Vercel** — the teases disappear and the
+> tier-aware subscriber gate takes over the exact same routes.
+
 > **UPDATE 2026-07-09 (access model v2 + the whole gate now on MAIN, dormant):**
 > Chase re-set the access model (supersedes the 2026-06-29 "hard gate, no free
 > tier" call): **free tier = the 30 templates only, forever** (it's the SEO/link
