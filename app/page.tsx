@@ -758,6 +758,7 @@ export default function HomeV2() {
             <span>Sprout</span>
           </div>
           <div className="flex items-center gap-5 text-xs uppercase tracking-[0.3em]">
+            <Link href="/blog" className="hover:text-sprout-cream transition-colors">Blog</Link>
             <Link href="/partners" className="hover:text-sprout-cream transition-colors">Earn with Sprout</Link>
             <Link href="/privacy" className="hover:text-sprout-cream transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-sprout-cream transition-colors">Terms</Link>
