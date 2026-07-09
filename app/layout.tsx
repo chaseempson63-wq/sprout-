@@ -21,9 +21,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hisprout.app"),
-  title: "Sprout — Prove the week counted",
+  title: "Sprout · Where your kid's week of learning lives",
   description:
     "A weekly reflection of your child's homeschool journey. Sunday-night relief, not 3am anxiety.",
+  openGraph: {
+    title: "Sprout · Where your kid's week of learning lives",
+    description:
+      "A weekly reflection of your child's homeschool journey. Sunday-night relief, not 3am anxiety.",
+    url: "https://hisprout.app",
+    siteName: "Sprout",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 // Pre-paint gate for the site-wide page-load intro (SiteIntro). Runs
