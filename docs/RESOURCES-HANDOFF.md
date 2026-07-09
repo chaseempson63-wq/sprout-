@@ -33,14 +33,21 @@ Read this first when resuming work on the Sprout Resources worksheet platform.
 > - Verified locally both ways: flag OFF = byte-identical open behavior; flag ON
 >   (fake creds) = free paths open + template generation 200, premium pages →
 >   login, custom-generate/slides/threads 401, webhook unconfigured 503.
-> - STILL NEEDED to go live (in order): (1) Chase: Stripe payment link +
->   webhook endpoint (→ `STRIPE_WEBHOOK_SECRET`, `NEXT_PUBLIC_STRIPE_PAYMENT_LINK`)
->   + connect Stripe in RevenueCat (→ `REVENUECAT_STRIPE_PUBLIC_KEY`); (2) the
->   TestFlight device sandbox test of the Apple loop (unchanged, still THE
->   blocker); (3) flip `RESOURCES_AUTH_ENABLED=true` + `REVENUECAT_SECRET_KEY`
->   in Vercel at launch. Free-tier UX inside the library page (locking the
->   Build-your-own tab/chips visually for signed-out users instead of a redirect)
->   is an open polish item — the redirect covers correctness.
+> - PROVISIONING DONE (Chase, same evening, guided): Stripe payment link
+>   "Sprout Premium" US$29.97/mo; webhook #1 "dynamic-harmony" →
+>   hisprout.app/api/stripe/webhook (checkout.session.completed); webhook #2
+>   "memorable-excellence" → RevenueCat's incoming-webhook URL (4 subscription/
+>   invoice events, secret Set in RC); RC Stripe config created (Managed
+>   Payments 3.5% box UNTICKED — only applies to RC-hosted checkout, unused);
+>   Sprout Premium imported + ATTACHED to the `premium` entitlement; ALL FOUR
+>   env vars in Vercel (payment link, webhook secret, RC Stripe public key,
+>   RC secret key). Full key/value log in the sprout-resources-gate memory.
+> - STILL NEEDED to go live: (1) the TestFlight device sandbox test of the
+>   Apple loop (unchanged, still THE blocker); (2) flip
+>   `RESOURCES_AUTH_ENABLED=true` in Vercel at launch — everything else is
+>   already in place. Free-tier UX inside the library page (locking the
+>   Build-your-own tab/chips visually for signed-out users instead of a
+>   redirect) is an open polish item — the redirect covers correctness.
 
 > **UPDATE 2026-07-02 (Fable audit + rebuild session — see `docs/FABLE-AUDIT.md` for the full audit, reasoning, and build log):**
 > - **The age stepper is BACK in the builder** (it had silently regressed out while the locked decision and the how-to guide still assumed it). A minus/plus Age control sits next to the kid chips; taps debounce 650ms then silently rebuild at the new age. Kid chips still only default it, never override it.
