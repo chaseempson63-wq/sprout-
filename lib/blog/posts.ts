@@ -19,6 +19,94 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "how-to-start-homeschooling",
+    title: "How to Start Homeschooling When You Have No Idea Where to Begin",
+    description:
+      "A calm, honest guide to starting homeschooling: the one legal step, why not to buy curriculum first, what deschooling is, and how to find your rhythm.",
+    keyword: "how to start homeschooling",
+    date: "2026-07-11",
+    content: `
+You've either just decided, or you're standing at the edge of deciding, and your stomach is somewhere around your knees. What if you get it wrong. What if you miss something that matters. What if the kid who was fine, mostly, ends up behind because of a choice you made at a kitchen table one night.
+
+Breathe. Every homeschool parent you admire started exactly here, knowing nothing, sure they were unqualified. The difference between them and you is about six months, not some quality you're missing. This is the honest guide to those first months: the one legal thing you actually have to do, the thing everyone does too early, and how to start in a way that doesn't require you to become a teacher overnight.
+
+## First, the part the checklists skip
+
+Search "how to start homeschooling" and you'll get a dozen listicles that open with "Step 1: choose your curriculum." That's the wrong first step, and it's why so many new homeschoolers burn out by October. They buy a boxed program built for a classroom of thirty, try to run it at their kitchen table for one tired kid, and conclude they're failing at week three.
+
+You are not starting a school. You're taking one specific child, who you know better than any teacher ever will, out of a system and into your home. That is a smaller and more human thing than "run a school," and the guides that treat it like launching an institution are the reason you feel overwhelmed before you've begun.
+
+For a lot of you, this started because school stopped working. As one mom put it, describing the term before she pulled her son out:
+
+> "Term 2 of year 3, we'd had a full term of sitting in the car at the school gate each morning, never going in."
+— Louise, School Can't Australia
+
+If that's your story, know this: you are not choosing homeschool over a working option. The working option already failed. You're choosing your kid over a building. That reframe matters, because it takes the pressure off "being as good as school." You've already cleared that bar.
+
+## Step one: the legal part, and it's smaller than the fear
+
+Do this first, because it's the only step with actual rules, and getting it done quiets the loudest worry. The good news: in most places, the legal requirement to homeschool is far less than you imagine.
+
+The specifics depend entirely on where you live. In some US states you file a one-page notice of intent and you're done. Others ask for a portfolio or an annual evaluation. A few ask for standardized testing. In New Zealand you apply to the Ministry of Education for an exemption. In Australia you register with your state. None of it requires a teaching degree, and almost none of it requires you to prove anything before you begin.
+
+If your child is currently enrolled in a school, there's usually one concrete action: a formal letter of withdrawal, so the school stops marking your kid absent and reporting it. Look up your specific state or country's requirement, do the paperwork, keep a copy. That's the whole legal mountain, and from up close it's a hill. (When you're ready for what to actually keep on file after this, we wrote [the honest guide to homeschool record keeping](/blog/homeschool-record-keeping).)
+
+## Step two: don't start school yet
+
+This is the step no checklist tells you about, and it's the one that saves families. It's called deschooling.
+
+When a kid comes out of a classroom, they carry the classroom with them for a while. They wait to be told what to do. They ask if something will be graded before they'll try it. They think learning is the thing that happens when an adult stands at the front, and that the rest of the day is just waiting. Deschooling is the deliberate pause where that wiring loosens.
+
+The rough rule of thumb passed around homeschool circles is one month of deschooling for every year your child was in school, though most families find a few weeks to a couple of months does it. During that time you do not do "school." You go to the library and let them pick anything. You bake and let the measuring cups teach fractions without saying the word fractions. You follow the questions they ask in the car. You watch what they reach for when nobody is assigning anything, because that is the single most useful piece of information you will get about how your kid actually learns.
+
+Parents deschool too. You've spent your whole life believing education looks like a worksheet and a bell. Letting go of that takes a minute. Give yourself the same grace you're giving the kid.
+
+## Step three: start with your child, not a curriculum
+
+Here's the reframe that makes all of this easier. You are not trying to recreate a school day. You're trying to raise a human who stays curious. Those are different jobs, and the second one is the one you actually signed up for.
+
+So before you buy anything, watch. The kid who takes the vacuum apart on the kitchen floor to see how it works is telling you something. The one who reads the same three books until the spines give out is telling you something. The one who won't stop asking why the moon follows the car is telling you the most important thing of all, that their mind still works the way it's supposed to, reaching for the world. Your job at the start is not to fill them. It's to notice them, and to build the days around what you notice.
+
+This is also where the quiet fear lives, the "am I doing enough" question that will visit you at 11pm more than once. We wrote a [whole piece on that one](/blog/am-i-doing-enough-homeschooling), because it deserves a real answer and not a pep talk. The short version: if your kid is asking questions and someone is engaging with them, the education is already happening.
+
+## Step four: a rhythm beats a schedule
+
+New homeschoolers love a color-coded timetable. It feels like control. It survives about a week.
+
+A rhythm survives, because it bends. A rhythm is "we read together after breakfast, we do something with numbers before lunch, the afternoon is for making and moving and going places." Inside that, the specifics can collapse and rebuild around a sick day, a good day, a day the whole thing falls apart and everyone eats cereal on the couch. A homeschool day that genuinely covers the ground a classroom covers usually takes two or three focused hours, not six, because you're not managing a crowd or waiting in any lines. The empty hours are not wasted. They're where the actual childhood happens.
+
+## Step five: curriculum comes later, and lighter than you think
+
+Now, finally, the thing the other guides put first. Once you've deschooled and watched your kid for a few weeks, you'll know far more about what to buy, and you'll waste far less money.
+
+Most families anchor on two things at the start: something for reading and writing, and something for math, because those two build in sequence and benefit from a spine. Everything else, science, history, art, the world, can be led by curiosity and library books and real life for a good long while. You do not need a boxed set for every subject. You do not need to spend hundreds of dollars before you know your kid as a learner. Start with less than you think, add only what you reach for and miss.
+
+If you want ready-made worksheets and activities without paying for a full curriculum you might not stick with, [Sprout's worksheet library is free](/resources): pick a topic, set your kid's age, print it. It's a low-stakes way to put something real on the table on the days you want structure, without committing to a program before you're ready.
+
+## Do I need to be a teacher?
+
+No. This is the fear that keeps the most people from starting, and it's built on a misunderstanding of what teaching a class and raising a learner have in common, which is less than you'd think. A classroom teacher's hardest skill is managing thirty children at once. You have one, or a few, and you love them. What you actually need is to stay one step ahead, be willing to look things up alongside them, and know when to hand a subject to a book, a video, a tutor, or a co-op. Homeschooling is less "teach everything" and more "make sure learning keeps happening, by whatever means."
+
+## What about socialization?
+
+The question everyone at the supermarket will ask you, usually with a frown. The honest answer is that homeschooled kids socialize through co-ops, sports, clubs, playgrounds, siblings, neighbors, and the actual adult world, often across more ages than a classroom of same-age peers ever offers. Socialization was never the strong argument for school. Find your local homeschool groups, say yes to the park days, and this worry quietly disappears within a term.
+
+## The one habit that saves you later
+
+Here's the thing nobody tells the beginner, and it costs you nothing to start on day one: keep a light record of what your kid actually does.
+
+Not a lesson plan. Not a gradebook. Just a photo of the thing they built, a voice memo while you fold the laundry about the question that took two coffees to answer, one line at 9pm about the chapter that finally clicked. Do it from the very first week, and two things happen. When the 11pm doubt comes, you have something real to scroll instead of an anxious blank. And when a portfolio or an evaluation eventually asks what you've been doing, you're not scrambling, because the record built itself out of the life you were already living. (If you want to see what a finished one looks like, here are [real homeschool portfolio examples](/blog/homeschool-portfolio-examples).)
+
+That capture habit is the entire reason we're building [Sprout](/): the photos and voice memos you already take, compiled into one timeline per kid, so the invisible week becomes visible and "did we do enough" becomes a question you can answer by looking. Nothing gets sold, nothing trains an AI, your family's week stays yours.
+
+## Start smaller than you think
+
+You do not need to have it figured out. You need to do the one legal step, give everyone room to breathe, watch your kid, and begin. The families who are years in and thriving are not smarter than you. They just started, badly and unsure, and adjusted as they went. That's the whole method.
+
+Sprout stands for the parents raising humans, not students, and for the ones lying awake at the start wondering if they can do this. You can. [Make a free worksheet](/resources) for tomorrow, keep a record of how it goes, and take the first small step tonight.
+`,
+  },
+  {
     slug: "homeschool-record-keeping",
     title: "Homeschool Record Keeping That Doesn't Take Over Your Life",
     description:
