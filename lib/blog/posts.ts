@@ -91,6 +91,14 @@ No. This is the fear that keeps the most people from starting, and it's built on
 
 The question everyone at the supermarket will ask you, usually with a frown. The honest answer is that homeschooled kids socialize through co-ops, sports, clubs, playgrounds, siblings, neighbors, and the actual adult world, often across more ages than a classroom of same-age peers ever offers. Socialization was never the strong argument for school. Find your local homeschool groups, say yes to the park days, and this worry quietly disappears within a term.
 
+## Can homeschooled kids get into college?
+
+Yes, and admissions offices have gotten good at reading homeschool applications. Homeschooled students go to community colleges, state universities, and the most selective schools in the country every year. What they hand in instead of a standard transcript is a record of what they actually did: the books, the projects, the courses, the real work. Which is one more reason to keep that record from the start rather than reconstruct four years of it the summer before applications are due. The fear is real, but it's a solved problem, and it's years away besides.
+
+## You will want to quit in month two
+
+Nearly everyone does, so let's name it now. There's a stretch, usually a few weeks to a couple of months in, where the newness wears off, the kid pushes back, the house is a wreck, and you're certain you've ruined everything. This is not a sign you're failing. It is the most predictable phase of the entire thing, and it passes. The families who are still going years later are not the ones who never hit that wall. They're the ones who lowered the bar for a week, went outside more, and let the wall pass instead of quitting into it. Protect your own energy like it's part of the curriculum, because it is.
+
 ## The one habit that saves you later
 
 Here's the thing nobody tells the beginner, and it costs you nothing to start on day one: keep a light record of what your kid actually does.
