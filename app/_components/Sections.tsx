@@ -78,13 +78,13 @@ export function VerbatimCard({
   location?: string;
 }) {
   return (
-    <GlassCard className="p-6 md:p-7 rounded-3xl h-full" glow="warm" soft>
-      <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-4">
+    <GlassCard className="p-4 sm:p-6 md:p-7 rounded-2xl md:rounded-3xl h-full" glow="warm" soft>
+      <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-3 md:mb-4">
         ✱ {name}
       </div>
       <p
         className="text-sprout-cream leading-relaxed italic"
-        style={{ fontSize: "clamp(14px, 1.2vw, 16px)" }}
+        style={{ fontSize: "clamp(13px, 1.2vw, 16px)" }}
       >
         &ldquo;{quote}&rdquo;
       </p>
@@ -115,12 +115,18 @@ const TESTIMONIALS: { name: string; quote: string }[] = [
 // A horizontal rail of parent quotes that auto-scrolls and loops. Two identical
 // sets in one track; the CSS animation translates -50% for a seamless loop (see
 // .animate-marquee in globals.css). Pauses on hover, still on reduced motion.
+// Breaks out of its container to full viewport width (edge-to-edge, no early
+// clipping) with a soft fade mask on both sides; cards shrink on mobile so a
+// full card plus most of the next is always readable.
 export function TestimonialRail() {
   return (
-    <div className="relative overflow-hidden" aria-label="What homeschool parents say">
+    <div
+      className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]"
+      aria-label="What homeschool parents say"
+    >
       <div className="animate-marquee flex w-max">
         {[...TESTIMONIALS, ...TESTIMONIALS].map((t, i) => (
-          <div key={i} className="mr-5 w-[280px] shrink-0 md:w-[360px]" aria-hidden={i >= TESTIMONIALS.length}>
+          <div key={i} className="mr-3.5 w-[225px] shrink-0 sm:w-[280px] md:mr-5 md:w-[360px]" aria-hidden={i >= TESTIMONIALS.length}>
             <VerbatimCard name={t.name} quote={t.quote} />
           </div>
         ))}

@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { MascotCelebration } from "./MascotCelebration";
 
@@ -36,12 +34,14 @@ export function Waitlist() {
   };
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto mt-12 md:mt-16">
+    <div className="relative w-full max-w-xl mx-auto mt-12 md:mt-16">
 
-      {/* Two cards: free waitlist (left) + founding family (right). */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-6 mb-8 md:mb-10">
+      {/* One card: the free waitlist. (The earn/partner teaser card was
+          removed 2026-07-10 — the partner program lives at /partners via the
+          footer link only, until it reopens.) */}
+      <div className="mb-8 md:mb-10">
 
-        {/* ── Card 1: free waitlist ─────────────────────────────── */}
+        {/* ── The waitlist card ─────────────────────────────────── */}
         <div className="rounded-2xl border border-sprout-cream/15 bg-sprout-cream/[0.04] backdrop-blur-md p-6 md:p-8 flex flex-col text-left">
           <p className="text-[11px] uppercase tracking-[0.22em] text-sprout-cream/65 font-bold mb-3">
             The waitlist
@@ -105,72 +105,8 @@ export function Waitlist() {
                 We&apos;ll let you know the moment the door opens.
               </p>
 
-              <Link
-                href="/partners"
-                className="mt-6 text-[13px] text-sprout-cream/70 hover:text-sprout-cream hover:underline font-semibold inline-flex items-center gap-1 animate-mascot-pop"
-                style={{ animationDelay: "900ms" }}
-              >
-                → Earn with Sprout
-              </Link>
             </div>
           )}
-        </div>
-
-        {/* ── Card 2: Earn with Sprout - simplified partner dashboard ─ */}
-        <div className="rounded-2xl border-2 border-[#F4EDE0] bg-[#F4EDE0] p-6 md:p-8 flex flex-col text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.6),0_15px_40px_-10px_rgba(0,0,0,0.5),0_30px_60px_-20px_rgba(0,0,0,0.3)]">
-          <p className="text-[11px] uppercase tracking-[0.22em] text-[#1B3722]/70 font-bold mb-3">
-            Earn with Sprout
-          </p>
-          <h3
-            className="font-bold text-[#1B3722] leading-tight mb-4"
-            style={{ fontSize: "clamp(20px, 2vw, 24px)" }}
-          >
-            Share Sprout. Take a cut.
-          </h3>
-
-          {/* A simplified version of the partner dashboard. */}
-          <div className="rounded-2xl bg-[#0C1610] border border-[#1B3722]/25 p-4 mb-5">
-            <div className="flex items-end justify-between mb-3">
-              <div>
-                <div className="text-sprout-cream/55 text-[9px] uppercase tracking-[0.22em] font-bold mb-1">
-                  Earned this month
-                </div>
-                <div className="font-display font-extrabold text-[#CDEFA0] text-[28px] leading-none">
-                  $1,285
-                </div>
-              </div>
-              <svg viewBox="0 0 96 34" className="w-24 h-9 shrink-0" fill="none" aria-hidden="true">
-                <path d="M0,28 L16,24 L32,26 L48,16 L64,18 L80,8 L96,4" stroke="#CDEFA0" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              {[
-                ["277", "families"],
-                ["41", "this mo"],
-                ["12 mo", "paid out"],
-              ].map(([v, l]) => (
-                <div key={l} className="rounded-lg bg-sprout-cream/[0.05] border border-sprout-cream/10 px-2 py-2">
-                  <div className="font-display font-extrabold text-sprout-cream text-[15px] leading-none">{v}</div>
-                  <div className="text-sprout-cream/50 text-[9px] mt-1 leading-none">{l}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1B3722]/8 border border-[#1B3722]/15 self-start">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#1B3722] animate-pulse" />
-            <span className="text-[10px] uppercase tracking-[0.22em] text-[#1B3722]/85 font-bold">
-              Closing soon · first 10 creator spots
-            </span>
-          </div>
-          <div className="flex-1" />
-          <Link
-            href="/partners"
-            className="mt-6 w-full h-12 rounded-full bg-[#1B3722] text-[#F4EDE0] font-bold text-[14px] hover:bg-[#0F2614] transition-colors inline-flex items-center justify-center gap-2"
-          >
-            See how it works
-            <ArrowRight className="w-4 h-4" strokeWidth={2.5} />
-          </Link>
         </div>
 
       </div>

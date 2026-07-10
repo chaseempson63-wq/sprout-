@@ -747,7 +747,7 @@ export default function HomeV2() {
               <div className="flex justify-center mb-8">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-xs uppercase tracking-[0.25em] font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                  Two ways in
+                  The waitlist
                 </div>
               </div>
 
@@ -811,9 +811,10 @@ export default function HomeV2() {
             <SproutLogo className="w-5 h-5 text-sprout-cream" />
             <span>Sprout</span>
           </div>
-          <div className="flex items-center gap-5 text-xs uppercase tracking-[0.3em]">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs uppercase tracking-[0.3em]">
             <Link href="/resources" className="hover:text-sprout-cream transition-colors">Free resources</Link>
             <Link href="/blog" className="hover:text-sprout-cream transition-colors">Blog</Link>
+            <Link href="/partners" className="hover:text-sprout-cream transition-colors">Earn with Sprout</Link>
             <Link href="/privacy" className="hover:text-sprout-cream transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-sprout-cream transition-colors">Terms</Link>
           </div>

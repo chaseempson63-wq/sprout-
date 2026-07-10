@@ -78,7 +78,9 @@ export default function LibraryHome() {
           <SproutMascotIcon className="h-11 w-11 sm:h-16 sm:w-16" />
         </span>
         <div>
-          <h1 className="text-sprout-cream text-[clamp(1.8rem,8.5vw,3rem)] font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl sm:whitespace-normal">
+          {/* 6.6vw fits the longest cycled word ("discover" + cursor) at 375px
+              with no clipping — the nowrap line must never outgrow the screen. */}
+          <h1 className="text-sprout-cream text-[clamp(1.5rem,6.6vw,3rem)] font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl sm:whitespace-normal">
             We were born to <Typewriter words={BORN_TO} className="text-sprout-lime" />
           </h1>
           <p className="text-sprout-cream/70 mt-5 text-base sm:mt-6 sm:text-lg">
