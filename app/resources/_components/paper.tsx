@@ -117,10 +117,12 @@ export function Sticker({
 // ── Small paper details ──────────────────────────────────────────────
 
 /** Age range pill, worn like a price tag. */
-export function AgeTag({ min, max, className }: { min: number; max: number; className?: string }) {
+export function AgeTag({ min, className }: { min: number; max?: number; className?: string }) {
+  // "ages 6+" reads on one line everywhere; the full range wrapped on the
+  // narrow 2-column mobile grid.
   return (
-    <span className={cn("inline-flex items-center rounded-full bg-[#2E5A35]/10 px-2.5 py-0.5 text-[11px] font-bold text-[#2E5A35]", className)}>
-      ages {min}–{max}
+    <span className={cn("inline-flex items-center rounded-full bg-[#2E5A35]/10 px-2.5 py-0.5 text-[11px] font-bold whitespace-nowrap text-[#2E5A35]", className)}>
+      ages {min}+
     </span>
   );
 }

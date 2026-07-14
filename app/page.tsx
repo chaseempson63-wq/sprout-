@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Plus, ArrowRight, Check, Heart } from "lucide-react";
+import { Plus, ArrowRight, Check } from "lucide-react";
 import { SproutLogo, GlassCard } from "./_components/Glass";
 import {
   SectionEyebrow,
@@ -124,15 +124,6 @@ export default function HomeV2() {
                 Save my spot
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={2.5} />
               </Link>
-            </div>
-
-            {/* Hero-tier social proof - stripped to single label, sized to
-                match the top audience pill for visual consistency. */}
-            <div className="mt-14 flex justify-center">
-              <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
-                <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                Voiced by real homeschool parents
-              </div>
             </div>
 
           </div>
@@ -376,8 +367,12 @@ export default function HomeV2() {
 
         <div className="relative max-w-7xl mx-auto">
 
-          <div className="mb-16">
-            <SectionEyebrow number="04" label="How it works" />
+          <div className="mb-16 md:mb-24">
+            <span className="block text-sprout-cream/60 text-xs uppercase tracking-[0.3em] font-bold mb-4">04</span>
+            <h2 className="font-bold tracking-[-0.04em] leading-[0.9] text-sprout-cream headline-lit"
+                style={{ fontSize: "clamp(48px, 8vw, 110px)" }}>
+              How it works
+            </h2>
           </div>
 
           <div className="space-y-32 md:space-y-48">
@@ -504,58 +499,6 @@ export default function HomeV2() {
       </section>
 
       {/* ===============================================================
-          SHARE THE WEEK  (sharing / family) - the grandma moment.
-          One recap, the whole week, the people who love them. Parent-
-          controlled, one at a time, never a feed. Sits above "Why Sprout".
-          =============================================================== */}
-      <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
-
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#3D6643]/25 via-[#2A5132]/40 to-[#3D6643]/25" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] rounded-full bg-[#94BC8E]/8 blur-3xl" />
-        </div>
-
-        <div className="relative max-w-7xl mx-auto">
-          <SectionEyebrow number="05" label="Send it to grandma" />
-
-          <div className="grid md:grid-cols-12 gap-10 items-center">
-            <div className="md:col-span-7">
-              <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream headline-lit"
-                  style={{ fontSize: "clamp(38px, 5.5vw, 68px)" }}>
-                Grandma keeps asking <em className="not-italic text-[#A4C9A8]">how&apos;s it going?</em>
-              </h2>
-              <p className="mt-8 text-sprout-cream leading-relaxed font-bold" style={{ fontSize: "clamp(20px, 2vw, 26px)" }}>
-                Send her the whole week.
-              </p>
-              <p className="mt-5 text-sprout-cream/80 leading-relaxed max-w-xl" style={{ fontSize: "clamp(17px, 1.7vw, 21px)" }}>
-                Instead of a photo or two, grandma gets Charlie&apos;s actual week. The questions he wouldn&apos;t stop asking, the walk to the library, the page he finally got through.
-              </p>
-              <p className="mt-5 text-sprout-cream/65 leading-relaxed max-w-xl" style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}>
-                You pick what you send, one recap at a time. Never public, never a feed. Just the people who love them, seeing what you see.
-              </p>
-            </div>
-
-            <div className="md:col-span-5">
-              <GlassCard className="p-8 rounded-3xl" glow="warm">
-                <div className="text-[10px] uppercase tracking-[0.3em] text-sprout-cream/65 font-bold mb-4">
-                  ✱ Sent to Grandma · Sunday
-                </div>
-                <p className="text-sprout-cream font-bold" style={{ fontSize: "clamp(18px, 1.8vw, 22px)" }}>
-                  Charlie&apos;s week
-                </p>
-                <p className="mt-2 text-sprout-cream/80 leading-relaxed italic" style={{ fontSize: "clamp(15px, 1.4vw, 17px)" }}>
-                  &ldquo;14 moments. The library, the big questions, the page he finally finished.&rdquo;
-                </p>
-                <div className="mt-6 flex items-center gap-2 text-xs text-sprout-cream/65 uppercase tracking-widest">
-                  <Heart className="w-3.5 h-3.5 fill-[#E9A0A0] text-[#E9A0A0]" /> Grandma loved this
-                </div>
-              </GlassCard>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===============================================================
           DIFFERENTIATOR  (bevel position 21 - "And that's not all" grid)
           Notes vs ChatGPT vs Spreadsheets vs Sprout. Existing copy.
           ═══════════════════════════════════════════════════════════════ */}
@@ -571,7 +514,7 @@ export default function HomeV2() {
 
         <div className="relative max-w-7xl mx-auto">
 
-          <SectionEyebrow number="06" label="Why Sprout, not another tool" />
+          <SectionEyebrow number="05" label="Why Sprout, not another tool" />
 
           <div className="space-y-2 mb-12">
             <h2 className="font-bold tracking-[-0.04em] leading-[0.95] text-sprout-cream/65"
@@ -658,7 +601,7 @@ export default function HomeV2() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════
-          07 · FREE RESOURCES — the lead magnet
+          06 · FREE RESOURCES — the lead magnet
           The worksheet library is the free thing that converts. The ticker
           video (Chase's animation) shows the wall of real illustrated
           templates; one CTA into /resources. Sits right before the final
@@ -667,19 +610,19 @@ export default function HomeV2() {
       <section className="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
         <div className="max-w-5xl mx-auto">
           <div className="text-center">
-            <CenteredEyebrow number="07" label="Free, starting today" />
+            <CenteredEyebrow number="06" label="Free today" />
             <h2
               className="font-bold tracking-[-0.03em] leading-[0.98] text-sprout-cream max-w-3xl mx-auto headline-lit"
               style={{ fontSize: "clamp(32px, 5vw, 56px)" }}
             >
-              The worksheet library is already open
+              Free resource library
             </h2>
             <p
               className="mt-6 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
               style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}
             >
-              30 worksheet templates, tailored to your kid&apos;s age, ready to print in seconds.
-              No account, no card. Free while we build the app.
+              100+ worksheet templates, tailored to your kid&apos;s age, ready to print in seconds.
+              No account, no card. Free.
             </p>
           </div>
 
@@ -699,7 +642,7 @@ export default function HomeV2() {
           <div className="mt-10 flex flex-col items-center gap-4">
             <Link
               href="/resources"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-sprout-lime text-sprout-ink font-bold text-lg transition hover:brightness-105 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#F4EDE0] text-[#1B3722] font-bold text-lg transition hover:bg-[#FBF6EB] hover:-translate-y-0.5"
             >
               Make a free worksheet
               <ArrowRight className="w-5 h-5" strokeWidth={2.5} />
@@ -777,13 +720,6 @@ export default function HomeV2() {
               </Link>
             </div>
 
-            <div className="mt-10 md:mt-12 flex justify-center">
-              <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-sprout-cream/10 backdrop-blur-md border border-sprout-cream/15 text-sprout-cream/90 text-[10px] md:text-xs uppercase tracking-[0.18em] md:tracking-[0.25em] font-semibold whitespace-nowrap">
-                <span className="w-1.5 h-1.5 rounded-full bg-sprout-cream" />
-                Voiced by real homeschool parents
-              </div>
-            </div>
-
             <div className="mt-12">
               <TestimonialRail />
             </div>
@@ -806,24 +742,31 @@ export default function HomeV2() {
           FOOTER
           ═══════════════════════════════════════════════════════════════ */}
       <footer className="relative bg-[#0F1A12] text-sprout-cream/70 px-6 md:px-12 py-12">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div className="flex items-center gap-2 text-sprout-cream font-bold">
-            <SproutLogo className="w-5 h-5 text-sprout-cream" />
-            <span>Sprout</span>
+        <div className="max-w-7xl mx-auto">
+
+          {/* Row 1: brand + nav. Mobile: brand on top, links in a tidy
+              2-column grid. Desktop: one row, brand left, links right. */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+            <div className="flex items-center gap-2 text-sprout-cream font-bold">
+              <SproutLogo className="w-5 h-5 text-sprout-cream" />
+              <span>Sprout</span>
+            </div>
+            <nav className="grid grid-cols-2 gap-x-6 gap-y-4 md:flex md:items-center md:gap-x-6 text-xs uppercase tracking-[0.2em] md:tracking-[0.3em]">
+              <Link href="/resources" className="hover:text-sprout-cream transition-colors">Free resources</Link>
+              <Link href="/blog" className="hover:text-sprout-cream transition-colors">Blog</Link>
+              <Link href="/partners" className="hover:text-sprout-cream transition-colors">Earn with Sprout</Link>
+              <Link href="/privacy" className="hover:text-sprout-cream transition-colors">Privacy</Link>
+              <Link href="/terms" className="hover:text-sprout-cream transition-colors">Terms</Link>
+            </nav>
           </div>
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs uppercase tracking-[0.3em]">
-            <Link href="/resources" className="hover:text-sprout-cream transition-colors">Free resources</Link>
-            <Link href="/blog" className="hover:text-sprout-cream transition-colors">Blog</Link>
-            <Link href="/partners" className="hover:text-sprout-cream transition-colors">Earn with Sprout</Link>
-            <Link href="/privacy" className="hover:text-sprout-cream transition-colors">Privacy</Link>
-            <Link href="/terms" className="hover:text-sprout-cream transition-colors">Terms</Link>
+
+          {/* Row 2: the small print, separated by a rule so it never
+              tangles with the nav on small screens. */}
+          <div className="mt-10 pt-6 border-t border-sprout-cream/10 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-[11px] uppercase tracking-[0.2em] md:tracking-[0.3em] text-sprout-cream/50">
+            <span>For homeschool families · Made with care</span>
+            <span>© 2026 · vol.01 · issue 26</span>
           </div>
-          <div className="text-xs uppercase tracking-[0.3em]">
-            For homeschool families · Made with care
-          </div>
-          <div className="text-xs uppercase tracking-[0.3em]">
-            © 2026 · vol.01 · issue 26
-          </div>
+
         </div>
       </footer>
 

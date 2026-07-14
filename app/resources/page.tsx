@@ -78,14 +78,15 @@ export default function LibraryHome() {
           <SproutMascotIcon className="h-11 w-11 sm:h-16 sm:w-16" />
         </span>
         <div>
-          {/* 6.6vw fits the longest cycled word ("discover" + cursor) at 375px
-              with no clipping — the nowrap line must never outgrow the screen. */}
-          <h1 className="text-sprout-cream text-[clamp(1.5rem,6.6vw,3rem)] font-bold tracking-[-0.02em] whitespace-nowrap sm:text-6xl sm:whitespace-normal">
-            We were born to <Typewriter words={BORN_TO} className="text-sprout-lime" />
+          {/* The line wraps freely on mobile so the type can run big; the
+              cycled word + cursor stay glued together via nowrap on the
+              Typewriter span itself. */}
+          <h1 className="text-sprout-cream text-[clamp(2.1rem,10vw,3rem)] leading-[1.05] font-bold tracking-[-0.02em] sm:text-6xl">
+            We were born to <Typewriter words={BORN_TO} className="text-sprout-lime whitespace-nowrap" />
           </h1>
           <p className="text-sprout-cream/70 mt-5 text-base sm:mt-6 sm:text-lg">
             {RESOURCES_DEMO
-              ? "30 worksheet templates, tailored to your kid's age, free to print. Build-your-own and slideshows are coming soon."
+              ? "100+ worksheet templates, tailored to your kid's age, free to print. Build-your-own and slideshows are coming soon."
               : "Worksheets and slideshows, made to order for your kid. Free to print, always."}
           </p>
           <Link
@@ -182,7 +183,7 @@ export default function LibraryHome() {
                     <p className="mt-1 hidden text-sm leading-relaxed text-[#1B3722]/65 sm:block">{t.blurb}</p>
                     <div className="mt-auto flex items-center justify-between pt-3.5">
                       <AgeTag min={t.ageMin} max={t.ageMax} />
-                      <span className="inline-flex items-center gap-1 text-sm font-bold text-[#2E5A35]">
+                      <span className="inline-flex items-center gap-1 text-sm font-bold whitespace-nowrap text-[#2E5A35]">
                         Make one <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
                       </span>
                     </div>
@@ -308,7 +309,9 @@ function PromptBar({ onTease }: { onTease: () => void }) {
         </div>
       </SheetStack>
       <div className="mt-3 flex flex-wrap items-center gap-1.5 px-1">
-        <span className="text-sprout-cream/50 mr-1 text-xs">{RESOURCES_DEMO ? "Soon you can build:" : "Try:"}</span>
+        {/* w-full puts the label on its own line on mobile so the chips wrap
+            as a tidy group beneath it; inline again from sm up. */}
+        <span className="text-sprout-cream/50 w-full text-xs sm:mr-1 sm:w-auto">{RESOURCES_DEMO ? "Soon you can build:" : "Try:"}</span>
         {STARTER_CHIPS.map((s) => (
           <button key={s} onClick={() => go(s)} className="border-sprout-cream/20 bg-sprout-cream/10 text-sprout-cream/85 hover:bg-sprout-cream/20 rounded-full border px-3 py-1.5 text-xs font-bold transition">
             {s}

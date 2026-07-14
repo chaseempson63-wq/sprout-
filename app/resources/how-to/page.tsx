@@ -1,19 +1,7 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
-import {
-  ArrowRight,
-  Baby,
-  Bookmark,
-  ChevronDown,
-  Globe,
-  LayoutGrid,
-  MessagesSquare,
-  PenLine,
-  Printer,
-  SlidersHorizontal,
-  Sparkles,
-  Wand2,
-} from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
@@ -24,33 +12,78 @@ export const metadata: Metadata = {
 };
 
 /* Content lives in plain data so the copy reads native and stays easy to edit.
-   Strings (not JSX text) keep apostrophes clean and lint-safe. */
+   Strings (not JSX text) keep apostrophes clean and lint-safe.
 
-const STEPS = [
+   Steps carry small custom visuals (real template illustrations, a mock of
+   the actual age dial) instead of generic icon glyphs — show, don't decorate. */
+
+// A tiny strip of the real template wall.
+function MiniTemplates() {
+  return (
+    <div className="mt-3 flex items-center gap-2">
+      {["apple", "clock", "brachiosaurus", "books"].map((a, i) => (
+        <span
+          key={a}
+          className="grid h-14 w-[72px] place-items-center overflow-hidden rounded-lg bg-white shadow ring-1 ring-[#1B3722]/10"
+          style={{ transform: `rotate(${i % 2 ? 1.4 : -1.4}deg)` }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element -- static webp */}
+          <img src={`/resources/illustrations/${a}.webp`} alt="" className="h-full w-full object-contain p-1" />
+        </span>
+      ))}
+    </div>
+  );
+}
+
+// The age dial as it appears in the builder.
+function MiniAgeDial() {
+  return (
+    <div className="mt-3 flex w-fit items-center gap-3 rounded-full bg-white px-4 py-1.5 shadow ring-1 ring-[#1B3722]/10">
+      <span className="grid size-7 place-items-center rounded-full bg-[#2E5A35]/10 text-base font-extrabold text-[#2E5A35]">−</span>
+      <span className="text-sm font-extrabold text-[#1B3722]">
+        Age <span className="text-[#2E5A35]">7</span>
+      </span>
+      <span className="grid size-7 place-items-center rounded-full bg-[#2E5A35]/10 text-base font-extrabold text-[#2E5A35]">+</span>
+    </div>
+  );
+}
+
+// The preset chips row from the builder.
+function MiniPresets() {
+  return (
+    <div className="mt-3 flex flex-wrap items-center gap-1.5">
+      {["harder", "easier", "longer", "more questions", "dinosaurs"].map((p) => (
+        <span key={p} className="rounded-full border border-[#2E5A35]/20 bg-white px-2.5 py-1 text-[11px] font-bold text-[#2E5A35] shadow-sm">
+          {p}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+const STEPS: { title: string; body: string; visual?: ReactNode }[] = [
   {
-    icon: LayoutGrid,
     title: "Pick a worksheet",
     body: RESOURCES_DEMO
       ? "Browse the templates and tap one. Addition, reading, handwriting, telling time, and plenty more."
       : "Browse the templates and tap one. Or hit Build your own and describe anything you want in plain words.",
+    visual: <MiniTemplates />,
   },
   {
-    icon: SlidersHorizontal,
     title: "Set your kid's age",
     body: "Use the minus and plus next to Age. That's the dial for how hard the sheet is. Save a kid's profile and Sprout sets the age for you next time.",
+    visual: <MiniAgeDial />,
   },
   {
-    icon: Sparkles,
     title: "Sprout builds it",
     body: "It writes the whole worksheet in a second or two. Watch it come together, then it's ready to change.",
   },
   {
-    icon: Wand2,
     title: "Tweak it with one tap",
     body: "Above the chat box is a row of presets: harder, easier, longer, shorter, more questions. Tap one and it rebuilds that way in a second. Tap a few and they stack. Want a theme like space or dinosaurs, or anything specific? Just type it in the chat.",
+    visual: <MiniPresets />,
   },
   {
-    icon: Printer,
     title: "Print it or save it",
     body: "Download PDF opens your print screen to print or save as a PDF. Save keeps it in My worksheets for later. No watermark, no catch.",
   },
@@ -58,31 +91,26 @@ const STEPS = [
 
 const EXTRAS = [
   {
-    icon: PenLine,
     title: RESOURCES_DEMO ? "Build your own (coming soon)" : "Build your own",
     body: RESOURCES_DEMO
       ? "Describe any worksheet from scratch and Sprout builds it. Nearly ready. Tap Build on the library page for a sneak peek."
       : "Don't see what you need? Describe it from scratch and Sprout builds it. The age, the topic, how many questions, any theme.",
   },
   {
-    icon: Baby,
     title: "Add your kids",
     body: "Save a profile for each kid so their age and their worksheets are one tap away.",
   },
   {
-    icon: Bookmark,
     title: "Save for later",
     body: "Anything you make can be saved to My worksheets and reopened whenever you want.",
   },
   {
-    icon: Globe,
     title: RESOURCES_DEMO ? "The community (coming soon)" : "Share with other parents",
     body: RESOURCES_DEMO
       ? "Worksheets other parents built and shared, a chat to swap ideas, and updates from the team. Opening soon. Tap Community for a peek."
       : "Built something good? Publish it to the Community. Only the sheets you build yourself can be shared.",
   },
   {
-    icon: MessagesSquare,
     title: RESOURCES_DEMO ? "Slideshows (coming soon)" : "Ask for more",
     body: RESOURCES_DEMO
       ? "Type a topic, get a warm illustrated mini lesson to present full screen or print. On the way."
@@ -124,7 +152,7 @@ const FAQS = [
   {
     q: RESOURCES_DEMO ? "When do build-your-own, slideshows, and the community open?" : "What's the Community? Can people see my kid's stuff?",
     a: RESOURCES_DEMO
-      ? "Soon. They open alongside the Sprout app. Join the waitlist on the home page and you'll hear the day it happens. The templates stay free either way."
+      ? "Soon. They open alongside the Sprout app. Tap any of the coming-soon previews and join the waitlist right there, you'll hear the day it happens. The templates stay free either way."
       : "One place with three rooms: worksheets other parents chose to share, a chat to ask and swap ideas, and updates from the team. Nothing of yours goes public unless you build your own sheet and tap Publish, or post in the chat. Your saved sheets and your kids' profiles never leave your browser.",
   },
   {
@@ -153,10 +181,10 @@ export default function HowToPage() {
         </div>
       </div>
       <p className="text-sprout-cream/75 mt-5 text-lg leading-relaxed">
-        Pick a worksheet, tell Sprout about your kid, and print it. That&apos;s the whole thing. No account, nothing
-        sold off behind your back, no catch. You&apos;re in with the parents who wanted their own corner of the
-        internet to do this, one the tech giants don&apos;t get to touch. Here&apos;s how it all works, start to
-        finish, plus the questions people usually ask.
+        Pick a worksheet, tell Sprout about your kid, and print it. That&apos;s the whole thing. 100+ templates,
+        no account, nothing sold off behind your back, no catch. You&apos;re in with the parents who wanted their
+        own corner of the internet to do this, one the tech giants don&apos;t get to touch. Here&apos;s how it all
+        works, start to finish, plus the questions people usually ask.
       </p>
 
       {/* Steps */}
@@ -169,11 +197,10 @@ export default function HowToPage() {
             <span className="bg-sprout-lime grid size-9 shrink-0 place-items-center rounded-full text-[15px] font-extrabold text-[#1B3722]">
               {i + 1}
             </span>
-            <div>
-              <h2 className="flex items-center gap-2 text-lg font-extrabold">
-                <s.icon className="size-5 shrink-0 text-[#2A5132]" /> {s.title}
-              </h2>
+            <div className="min-w-0">
+              <h2 className="text-lg font-extrabold">{s.title}</h2>
               <p className="mt-1 leading-relaxed text-[#1B3722]/75">{s.body}</p>
+              {s.visual}
             </div>
           </li>
         ))}
@@ -189,8 +216,7 @@ export default function HowToPage() {
             key={e.title}
             className="border-sprout-cream/15 bg-sprout-cream/10 rounded-2xl border p-5 backdrop-blur-sm"
           >
-            <e.icon className="text-sprout-lime size-6" />
-            <h3 className="text-sprout-cream mt-3 font-bold">{e.title}</h3>
+            <h3 className="text-sprout-cream font-bold">{e.title}</h3>
             <p className="text-sprout-cream/70 mt-1 text-sm leading-relaxed">{e.body}</p>
           </div>
         ))}

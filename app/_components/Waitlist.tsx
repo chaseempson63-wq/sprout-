@@ -4,7 +4,7 @@ import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 import { MascotCelebration } from "./MascotCelebration";
 
-export function Waitlist() {
+export function Waitlist({ compact = false }: { compact?: boolean }) {
   const [email, setEmail] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -34,12 +34,12 @@ export function Waitlist() {
   };
 
   return (
-    <div className="relative w-full max-w-xl mx-auto mt-12 md:mt-16">
+    <div className={`relative w-full max-w-xl mx-auto ${compact ? "" : "mt-12 md:mt-16"}`}>
 
       {/* One card: the free waitlist. (The earn/partner teaser card was
           removed 2026-07-10 — the partner program lives at /partners via the
           footer link only, until it reopens.) */}
-      <div className="mb-8 md:mb-10">
+      <div className={compact ? "" : "mb-8 md:mb-10"}>
 
         {/* ── The waitlist card ─────────────────────────────────── */}
         <div className="rounded-2xl border border-sprout-cream/15 bg-sprout-cream/[0.04] backdrop-blur-md p-6 md:p-8 flex flex-col text-left">

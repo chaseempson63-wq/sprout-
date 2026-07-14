@@ -14,7 +14,7 @@ import { SproutLogo } from "./Glass";
    ───────────────────────────────────────────────────────────────────── */
 
 /* One short, in-character line per <main> > <section>, indexed in DOM
-   order. The landing has 9 sections; if the section order changes,
+   order. The landing has 8 sections; if the section order changes,
    re-check this mapping against page.tsx. */
 const sproutLines = [
   "oh hi. keep going, i'll come with you.",           // 0  Hero: "you did more than you think"
@@ -23,9 +23,8 @@ const sproutLines = [
   "see, you're not making this up.",                  // 3  Verbatim wall: real parent quotes
   "this exact feeling. it's why i'm here.",           // 4  11:42pm: the reason Sprout exists
   "drop it in, i'll keep it. that's the whole job.",  // 5  How it works
-  "send it to grandma. she's been asking.",           // 6  Share the week: the grandma moment
-  "notes forget. i don't. and i never sell you out.", // 7  Why Sprout: vs notes / ChatGPT
-  "ok. ready when you are.",                          // 8  Final CTA: sleep on Sunday + waitlist
+  "notes forget. i don't. and i never sell you out.", // 6  Why Sprout: vs notes / ChatGPT
+  "ok. ready when you are.",                          // 7  Free library + final CTA
 ];
 
 export function Mascot() {

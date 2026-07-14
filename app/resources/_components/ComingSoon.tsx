@@ -9,11 +9,12 @@
 // files) so the tease shows the thing instead of describing it. Swap these for
 // real screen-recorded clips post-launch if wanted — the frame is video-shaped.
 
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Heart, X } from "lucide-react";
 import { SproutMascotIcon } from "../../_components/SproutMascotIcon";
 import { Typewriter } from "./Typewriter";
+import { WaitlistModal } from "./WaitlistModal";
 
 export type TeaseFeature = "build" | "slides" | "community";
 
@@ -25,19 +26,19 @@ const COPY: Record<
     chip: "Coming soon",
     title: "Build your own",
     body: "Describe any worksheet in plain words, addition with dinosaurs, a reading passage about the moon, and Sprout builds it for your kid's age in seconds. We're getting it ready.",
-    footnote: "The 30 templates are free while you wait.",
+    footnote: "The 100+ templates are free while you wait.",
   },
   slides: {
     chip: "Coming soon",
     title: "Slideshows",
     body: "Type a topic and get a warm, illustrated mini lesson to present full screen or print. Nearly ready.",
-    footnote: "The 30 templates are free while you wait.",
+    footnote: "The 100+ templates are free while you wait.",
   },
   community: {
     chip: "Coming soon",
     title: "The community",
     body: "Worksheets other parents built and shared, a chat to swap ideas, and updates from the team. Opening soon.",
-    footnote: "The 30 templates are free while you wait.",
+    footnote: "The 100+ templates are free while you wait.",
   },
 };
 
@@ -154,8 +155,11 @@ function Demo({ feature }: { feature: TeaseFeature }) {
 
 function TeaseContent({ feature, onClose }: { feature: TeaseFeature; onClose?: () => void }) {
   const c = COPY[feature];
+  // The waitlist opens as a pop-up over the tease — you never leave the page.
+  const [waitlist, setWaitlist] = useState(false);
   return (
     <>
+      {waitlist && <WaitlistModal onClose={() => setWaitlist(false)} />}
       <Demo feature={feature} />
       <div className="mt-5 flex items-center gap-2">
         <span className="bg-sprout-lime rounded-full px-3 py-1 text-[10px] font-extrabold tracking-[0.18em] text-[#1B3722] uppercase">
@@ -165,13 +169,13 @@ function TeaseContent({ feature, onClose }: { feature: TeaseFeature; onClose?: (
       <h2 className="mt-3 text-2xl font-bold tracking-[-0.01em] text-[#1B3722]">{c.title}</h2>
       <p className="mt-2 leading-relaxed text-[#1B3722]/75">{c.body}</p>
       <div className="mt-6 flex flex-wrap items-center gap-3">
-        <Link
-          href="/#start"
+        <button
+          onClick={() => setWaitlist(true)}
           className="inline-flex h-11 items-center gap-2 rounded-full bg-[#1B3722] px-5 text-sm font-bold text-[#FFFDF6] transition hover:bg-[#2A5132]"
         >
-          Join the waitlist, hear the day it opens
+          Join the waitlist
           <ArrowRight className="size-4" />
-        </Link>
+        </button>
         {onClose ? (
           <button onClick={onClose} className="text-sm font-semibold text-[#1B3722]/60 transition hover:text-[#1B3722]">
             Keep making free worksheets
