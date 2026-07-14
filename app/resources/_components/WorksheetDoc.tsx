@@ -11,11 +11,20 @@ import type { Worksheet, WorksheetBlock } from "@/lib/resources/types";
 // strip break-inside. Tightens print rhythm a touch and keeps the footer intact +
 // pulled in, so a slight overflow doesn't orphan it onto a near-empty trailing
 // page. Print-only; on-screen layout and content are untouched.
-const PRINT_RULES = `@page { size: A4; margin: 12mm; }
+// Zero margin: the banner sits at the true top of page one and the browser has
+// no margin band to draw its date/title header in (print-fit.ts prints the
+// sheet alone in a clean iframe; the sheet's own padding does the spacing).
+const PRINT_RULES = `@page { size: A4; margin: 0; }
 @media print {
   .print-area { zoom: var(--ws-print-scale, 1); }
   .worksheet-lines > * + * { margin-top: 18px !important; }
   .worksheet-blocks > * { break-inside: avoid; }
+  /* Problem lists can be taller than a page. A blanket avoid shoves the whole
+     section onto the next page (leaving page one near-empty), so these break
+     BETWEEN problems instead — each item stays whole, the list flows. */
+  .worksheet-blocks > .ws-splittable { break-inside: auto; }
+  .ws-splittable li, .ws-splittable .ws-item { break-inside: avoid; }
+  .ws-splittable > p:first-child { break-after: avoid; }
   .worksheet-footer { break-inside: avoid; margin-top: 16px !important; padding-top: 8px !important; }
   .worksheet-img { break-inside: avoid; width: auto !important; max-width: 90%; max-height: 8cm; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }`;
@@ -62,7 +71,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 
     case "fill-blank":
       return (
-        <div>
+        <div className="ws-splittable">
           {prompt}
           <ol className="mt-2 space-y-3 text-[15px] text-[#1B3722]">
             {(block.items ?? []).map((s, i) => (
@@ -98,14 +107,14 @@ function BlockView({ block }: { block: WorksheetBlock }) {
       const eqs = items.filter((s) => !isWord(s));
       const words = items.filter(isWord);
       return (
-        <div>
+        <div className="ws-splittable">
           {prompt}
           {eqs.length > 0 && (
             // Two columns, generous open white space under each problem so the
             // kid can actually work it out by hand. No answer box, no lines.
             <div className="mt-4 grid grid-cols-1 gap-y-9 sm:grid-cols-2 sm:gap-x-12">
               {eqs.map((p, i) => (
-                <div key={i} className="text-[18px] leading-[1.5] text-[#1B3722]">
+                <div key={i} className="ws-item text-[18px] leading-[1.5] text-[#1B3722]">
                   <span className="mr-1.5 text-[#2E5A35]/70">{i + 1}.</span>
                   <span className="font-medium">{p}</span>
                   <div className="h-16" aria-hidden />
@@ -131,7 +140,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 
     case "column-math":
       return (
-        <div>
+        <div className="ws-splittable">
           {prompt}
           <div className="mt-3 flex flex-wrap gap-x-10 gap-y-6">
             {(block.items ?? []).map((p, i) => {
@@ -139,7 +148,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
               const m = clean.match(/^(\d[\d,]*)\s*([+\-−×÷])\s*(\d[\d,]*)$/);
               if (m) {
                 return (
-                  <div key={i} className="w-28 font-mono text-[18px] text-[#1B3722]">
+                  <div key={i} className="ws-item w-28 font-mono text-[18px] text-[#1B3722]">
                     <div className="text-right">{m[1]}</div>
                     <div className="flex justify-between border-b-2 border-[#1B3722] pb-1">
                       <span>{m[2]}</span>
@@ -151,7 +160,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
               }
               // multi-addend / decimals / anything complex: render inline with an answer box
               return (
-                <div key={i} className="flex w-full items-center text-[16px] text-[#1B3722] sm:w-[46%]">
+                <div key={i} className="ws-item flex w-full items-center text-[16px] text-[#1B3722] sm:w-[46%]">
                   <span className="mr-1 text-[#2E5A35]/70">{i + 1}.</span>
                   <span className="font-medium">{clean} =</span>
                   <AnswerBox />
@@ -164,13 +173,13 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 
     case "count":
       return (
-        <div>
+        <div className="ws-splittable">
           {prompt}
           <div className="mt-3 space-y-4">
             {(block.items ?? []).map((n, i) => {
               const qty = Math.max(0, Math.min(20, parseInt(n, 10) || 0));
               return (
-                <div key={i} className="flex items-center gap-3">
+                <div key={i} className="ws-item flex items-center gap-3">
                   <div className="flex flex-1 flex-wrap gap-1 text-2xl leading-none">
                     {Array.from({ length: qty }).map((_, j) => (
                       <span key={j}>{block.emoji ?? "⭐"}</span>
@@ -186,7 +195,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 
     case "missing-numbers":
       return (
-        <div>
+        <div className="ws-splittable">
           {prompt}
           <ol className="mt-2 space-y-3 text-[17px] font-medium text-[#1B3722]">
             {(block.items ?? []).map((seq, i) => (
@@ -229,7 +238,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
 
     case "multiple-choice":
       return (
-        <div>
+        <div className="ws-splittable">
           {prompt}
           <ul className="mt-2.5 space-y-3 text-[16px] leading-relaxed text-[#1B3722]">
             {(block.items ?? []).map((opt, i) => (
@@ -245,7 +254,7 @@ function BlockView({ block }: { block: WorksheetBlock }) {
     case "short-answer": {
       const qs = block.items ?? [];
       return (
-        <div>
+        <div className="ws-splittable">
           {prompt}
           {qs.length > 0 ? (
             <ol className="mt-2.5 space-y-4 text-[16px] leading-relaxed text-[#1B3722]">

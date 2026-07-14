@@ -126,7 +126,9 @@ function mathBlock(ctx: Ctx, op: "add" | "sub" | "mul" | "div"): WorksheetBlock 
       answers.push(`${op === "sub" ? a - b : a + b}`);
     }
   }
-  return { kind: "math", prompt: "Solve each one. Write your answer in the box.", items, answers };
+  // The math renderer gives open working space under each problem, no answer
+  // box — the instruction has to match what's on the page.
+  return { kind: "math", prompt: "Solve each one. Show your work.", items, answers };
 }
 
 function columnMathBlock(ctx: Ctx, op: "add" | "sub"): WorksheetBlock {

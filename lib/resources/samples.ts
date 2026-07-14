@@ -22,7 +22,7 @@ export const COMMUNITY_SAMPLES: CommunitySample[] = [
       subtitle: "Age 6 · dinosaur",
       blocks: [
         { kind: "instructions", prompt: "Help the dinosaurs count their eggs. Solve each problem." },
-        { kind: "math", prompt: "Write your answer in the box.", items: ["3 + 4 =", "5 + 2 =", "6 + 3 =", "4 + 4 =", "7 + 2 =", "1 + 8 ="], answers: ["7", "7", "9", "8", "9", "9"] },
+        { kind: "math", prompt: "Solve each one. Show your work.", items: ["3 + 4 =", "5 + 2 =", "6 + 3 =", "4 + 4 =", "7 + 2 =", "1 + 8 ="], answers: ["7", "7", "9", "8", "9", "9"] },
         { kind: "count", prompt: "Count the eggs in each row and write how many.", emoji: "🥚", items: ["4", "6", "3"], answers: ["4", "6", "3"] },
       ],
       meta: { templateId: "addition", templateLabel: "Addition", age: 6, theme: "dinosaur" },
