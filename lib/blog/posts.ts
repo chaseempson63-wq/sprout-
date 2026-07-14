@@ -19,6 +19,68 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "free-homeschool-worksheets",
+    title: "Free Homeschool Worksheets for the Gaps in Your Day",
+    description:
+      "What to do with the in-between moments of a homeschool day: no-prep ideas that count as learning, when a worksheet is the right call, and a free worksheet builder with no email wall.",
+    keyword: "free homeschool worksheets",
+    date: "2026-07-14",
+    content: `
+Every homeschool day has gaps. One kid finishes the math page at 10:12 and the next thing isn't until 11. The read-aloud ends early because somebody needed a snack, then a bandage, then a completely different snack. The dentist appointment eats the middle of the morning and you come home to two kids who've lost the thread entirely.
+
+Nobody warns you about the gaps. The curriculum catalogs sell you the lessons. The in-between is yours to figure out, usually live, usually while you're still mid-something with the other kid.
+
+This is about what to do with those moments, and about the honest place worksheets have in them.
+
+## The gaps are not a failure
+
+First, the reframe. School is mostly gaps. Lining up, waiting for 25 kids to settle, handing out papers, packing up early because the bell system says so. A classroom fills its gaps with logistics and calls it a day of learning.
+
+At home the gaps are visible, so they feel like holes in your teaching. They're not. They're just the texture of a real day. The goal isn't to eliminate them. It's to have a small set of things you can reach for without prep, so a gap doesn't turn into an hour of negotiating about screens.
+
+## No-prep things that count
+
+A few that work between things, none of which need a printer or a plan:
+
+- **Hand over a real job with numbers in it.** Doubling the muffin recipe so everyone gets two. Working out the change at the store. Measuring the shelf twice before Dad cuts once. Ten minutes of real-life math beats a page of drills the kid didn't need.
+- **Follow the morning's question.** Whatever they asked at breakfast, that's the thread. Why the moon follows the car. Whether fish sleep. Pull it up together, read one thing about it, let it run until it runs out.
+- **The quiet anchors.** Reading to the little brother. Reading to the cat, who sits still for it. The sketchbook that lives on the table. A kid who defaults to one of these when a gap opens has learned something schools spend years failing to teach.
+- **Let one gap just be a gap.** The trampoline counts. Boredom counts. Some of the best afternoons start with twenty unscheduled minutes and end with a fort.
+
+## When a worksheet is actually the right call
+
+Here's the honest version, because homeschool parents can smell busywork a mile off.
+
+A worksheet is the wrong tool for introducing anything. It's the right tool for exactly three moments:
+
+- **Practice.** The kid who just got fractions needs fifteen quiet minutes of actually doing fractions. Repetition is how it sticks, and a page is the calmest way to get it.
+- **Independence while you're with the other kid.** This is the multi-kid reality. You cannot be in two rooms at once. A sheet pitched at the right level is twenty minutes where one kid works alone and doesn't need you, which is twenty minutes the other kid gets you fully.
+- **The wobble days.** Somebody's sick, the plumber is here, the morning fell apart. A familiar page keeps the thread of the day without asking anything of you. That's not lazy. That's triage, and every homeschool family runs it.
+
+The trap is when the worksheet becomes the curriculum. It shouldn't be the meal. It's the thing that holds the day together between meals.
+
+## The problem with "free printables"
+
+Search for free homeschool worksheets and you'll find thousands. Then the routine starts: the "free" download that wants your email first, the newsletter you didn't ask for, the pack that's the wrong level so you're back to searching, the five open tabs, the $6 you pay on a teachers marketplace anyway because it's 9pm and you just need a fractions page for tomorrow.
+
+The sheets aren't the expensive part. The finding is.
+
+## A free builder instead
+
+So we built one and made it free. The [Sprout resource builder](/resources) has 30 worksheet templates across math, reading, spelling, and handwriting. You pick the topic, set your kid's age, and print. The difficulty tunes itself to the age you set, so a multiplication page for your 7-year-old and one for your 12-year-old come out looking like they belong to different kids, because they do.
+
+No account. No email wall. No newsletter. You need a sharks reading page because that's the current obsession, you make a sharks reading page, you print it, you're done before the kettle boils.
+
+Keep a small stack of them in a drawer for the wobble days. Make one the night before when you know tomorrow has a dentist-shaped hole in it. That's the whole system.
+
+## The gaps are where the good stuff hides
+
+One last thing. Some of what your kids will remember about homeschooling won't be the lessons. It'll be the in-between: the question that took over a morning, the recipe math, the fort. The gaps aren't the weak part of your day. Handled loosely, with a couple of calm tools in the drawer, they're the part school could never give them.
+
+[Sprout](/) exists for families who teach through life, not textbooks, and the resource builder is our way of handing the community something genuinely useful for free. We don't sell your data, we don't train AI on your kids, and the worksheets are yours to print forever. Make your first one at [hisprout.app/resources](/resources) and keep the drawer stocked.
+`,
+  },
+  {
     slug: "how-to-start-homeschooling",
     title: "How to Start Homeschooling When You Have No Idea Where to Begin",
     description:
