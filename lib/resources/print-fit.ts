@@ -1,4 +1,5 @@
-// Print a clean document that contains ONLY the worksheet.
+// Print a clean document that contains ONLY the worksheet, paginated into
+// explicit A4 pages.
 //
 // Printing the app page in place was broken three ways: the visibility-based
 // print CSS hid the app shell but kept its layout, so the sheet printed below
@@ -7,18 +8,22 @@
 // clipped); and the default @page margin framed the sheet in white and gave
 // the browser room to draw its date/title header line.
 //
-// So instead of printing the page, clone the visible worksheet(s) into a
-// hidden same-origin iframe whose body IS the sheet, copy the stylesheets so
-// it renders exactly as on screen, and print the iframe. Zero @page margin
-// puts the green banner at the true top of page one and leaves the browser
-// nowhere to draw its header/footer. The app page itself never enters the
-// print flow.
+// The old fix cloned the sheet into an iframe as ONE tall flow and leaned on
+// CSS fragmentation (break-inside) plus a zoom-based orphan squeeze. That was
+// still fragile: zoom interacts badly with Chrome's fragmenter (the mangled
+// page 2), and page 2+ printed with no Sprout header at all.
+//
+// Now the iframe document is built as REAL pages: fixed A4-height containers,
+// each with a header (the full wave banner on page 1, a slim running Sprout
+// header after) and, on multi-page sheets, a footer with the page number.
+// Blocks are measured live and moved page to page; long lists split BETWEEN
+// items, never through one. Every page is complete by construction, so there
+// is nothing left for the browser's fragmenter to get wrong.
 
 // A4 at 96 CSS px per inch.
 const PAGE_W_PX = 794; // 210mm
 const PAGE_H_PX = 1123; // 297mm
-const MIN_SCALE = 0.8; // never shrink past this; readability floor
-const ORPHAN_FRACTION = 0.35; // only pull back a last page this empty or emptier
+const MAX_PAGES = 40; // runaway guard; no real sheet gets near this
 
 const FRAME_ID = "sprout-print-frame";
 
@@ -33,6 +38,7 @@ const PRINT_DOC_CSS = `
     print-color-adjust: exact;
   }
   body * { visibility: visible !important; }
+  /* Fallback path only (pagination bailed): print the sheet as one flow. */
   .print-area {
     position: static !important;
     overflow: visible !important;
@@ -40,12 +46,33 @@ const PRINT_DOC_CSS = `
     border: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    zoom: var(--ws-print-scale, 1);
-    /* bottom padding renders on the sheet's last page only */
     padding-bottom: 8mm;
   }
-  /* several sheets at once (a kid's saved stack): one per page */
   .print-area + .print-area { break-before: page; }
+  /* Paginated path: each .ws-page IS one A4 page. */
+  .ws-page {
+    position: relative;
+    box-sizing: border-box;
+    width: ${PAGE_W_PX}px;
+    height: ${PAGE_H_PX}px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #FFFEFB;
+    break-after: page;
+    page-break-after: always;
+    break-inside: avoid;
+  }
+  .ws-page:last-child { break-after: auto; page-break-after: auto; }
+  .ws-page-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    box-sizing: border-box;
+    padding: 16px 40px 8px;
+  }
+  .ws-page-foot { flex: 0 0 auto; margin-top: auto; padding: 6px 40px 14px; }
+  /* Belt and braces: inside built pages nothing may re-fragment. */
+  .ws-page .worksheet-blocks > * { break-inside: avoid; }
 `;
 
 export function printWorksheet(): void {
@@ -116,7 +143,8 @@ async function printInFrame(areas: HTMLElement[]): Promise<void> {
 
   // Let stylesheets land, THEN fonts (they only start loading once the CSS is
   // in) and images, before measuring or printing. Capped so a straggler can
-  // never block the print.
+  // never block the print. Everything below measures live layout, so this
+  // wait matters: unloaded webfonts or images would skew block heights.
   const settled = (async () => {
     await Promise.all(sheetLoads);
     await Promise.all([
@@ -128,19 +156,26 @@ async function printInFrame(areas: HTMLElement[]): Promise<void> {
   })();
   await Promise.race([settled, new Promise((r) => window.setTimeout(r, 4000))]);
 
-  // Measured orphan fit: if a single sheet spills just past a page boundary,
-  // shrink it slightly so it settles onto a whole number of pages.
-  if (areas.length === 1) {
-    const h = doc.body.scrollHeight;
-    const pages = h / PAGE_H_PX;
-    const whole = Math.floor(pages);
-    const frac = pages - whole;
-    if (whole >= 1 && frac > 0 && frac < ORPHAN_FRACTION) {
-      const scale = (whole * PAGE_H_PX) / h;
-      // Below the readability floor the shrink can't reach a whole page count
-      // anyway — it would just make the text smaller AND leave a worse orphan.
-      if (scale >= MIN_SCALE) doc.documentElement.style.setProperty("--ws-print-scale", String(scale));
-    }
+  try {
+    paginate(doc);
+  } catch {
+    // Anything unexpected: leave the flowed sheet in place — the fallback CSS
+    // path still prints, just without the per-page chrome.
+  }
+
+  // Debug hook (QA): localStorage sprout-print-debug=1 shows the paginated
+  // frame instead of opening the dialog, and stashes the doc HTML for
+  // headless-Chrome PDF rendering.
+  let debug = false;
+  try {
+    debug = window.localStorage.getItem("sprout-print-debug") === "1";
+  } catch {
+    /* storage blocked; not debugging */
+  }
+  if (debug) {
+    frame.style.cssText = `position:fixed;right:0;top:0;width:${PAGE_W_PX}px;height:100%;border:0;visibility:visible;pointer-events:auto;z-index:2147483647;background:#fff;box-shadow:0 0 0 3px #C6881A;`;
+    (window as unknown as Record<string, unknown>).__sproutPrintHTML = doc.documentElement.outerHTML;
+    return;
   }
 
   win.addEventListener("afterprint", () => {
@@ -149,4 +184,204 @@ async function printInFrame(areas: HTMLElement[]): Promise<void> {
   });
   win.focus();
   win.print();
+}
+
+// ── pagination ────────────────────────────────────────────────────────────────
+
+interface PageCtx {
+  page: HTMLElement;
+  blocks: HTMLElement;
+  body: HTMLElement;
+}
+
+const pageOverflows = (p: PageCtx) => p.body.scrollHeight > p.body.clientHeight;
+
+function paginate(doc: Document): void {
+  const areas = Array.from(doc.body.querySelectorAll<HTMLElement>(".print-area"));
+  // Validate EVERY sheet before mutating anything: pagination moves nodes out
+  // of the source sheets, so a mid-run bail would leave duplicated content.
+  // One unexpected sheet keeps them all on the (correct, just plainer) flow path.
+  for (const area of areas) {
+    if (!area.querySelector(".ws-banner") || !area.querySelector(".worksheet-blocks") || !area.querySelector(".worksheet-body")) {
+      return;
+    }
+  }
+  const built = areas.map((area) => paginateSheet(doc, area));
+  for (const area of areas) area.remove();
+  for (const pages of built) {
+    const n = pages.length;
+    pages.forEach((page, i) => {
+      const num = page.querySelector<HTMLElement>(".ws-page-num");
+      if (num) num.textContent = `Page ${i + 1} of ${n}`;
+      // A single-page sheet keeps today's exact look: no page-number footer.
+      if (n === 1) page.querySelector(".ws-page-foot")?.remove();
+    });
+  }
+}
+
+function paginateSheet(doc: Document, area: HTMLElement): HTMLElement[] {
+  const banner = area.querySelector<HTMLElement>(".ws-banner") as HTMLElement;
+  const blocksWrap = area.querySelector<HTMLElement>(".worksheet-blocks") as HTMLElement;
+  const runTpl = area.querySelector<HTMLElement>(".ws-running-header > div");
+  const footTpl = area.querySelector<HTMLElement>(".ws-page-footer > div");
+
+  // Content in print order: intro, every block, then the sheet footer.
+  const content: HTMLElement[] = [];
+  const intro = area.querySelector<HTMLElement>(".ws-intro");
+  if (intro) content.push(intro);
+  content.push(...(Array.from(blocksWrap.children) as HTMLElement[]));
+  const sheetFooter = area.querySelector<HTMLElement>(".worksheet-footer");
+  if (sheetFooter) content.push(sheetFooter as HTMLElement);
+
+  const pages: HTMLElement[] = [];
+  const newPage = (first: boolean): PageCtx => {
+    const page = doc.createElement("div");
+    page.className = "ws-page";
+    // Header: page 1 gets the real wave banner (moved, so its mascot keeps its
+    // unique SVG ids); later pages get a clone of the slim running header.
+    if (first) {
+      page.appendChild(banner);
+    } else if (runTpl) {
+      page.appendChild(runTpl.cloneNode(true));
+    }
+    const pageBody = doc.createElement("div");
+    pageBody.className = "ws-page-body";
+    const blocks = doc.createElement("div");
+    // Same wrapper class as on screen so the block spacing rules (space-y-9)
+    // and any .worksheet-blocks selectors keep applying inside pages.
+    blocks.className = blocksWrap.className;
+    pageBody.appendChild(blocks);
+    page.appendChild(pageBody);
+    if (footTpl) {
+      const foot = doc.createElement("div");
+      foot.className = "ws-page-foot";
+      foot.appendChild(footTpl.cloneNode(true));
+      page.appendChild(foot);
+    }
+    // Attached immediately: fit checks below measure live layout.
+    doc.body.appendChild(page);
+    pages.push(page);
+    return { page, blocks, body: pageBody };
+  };
+
+  let cur = newPage(true);
+  for (const node of content) {
+    if (pages.length > MAX_PAGES) break;
+    cur.blocks.appendChild(node);
+    if (!pageOverflows(cur)) continue;
+    cur.blocks.removeChild(node);
+
+    // A long list block splits BETWEEN items across pages.
+    if (node.classList.contains("ws-splittable") && splitAcross(node, cur, () => (cur = newPage(false)))) continue;
+
+    // Whole block onto a fresh page. If the page it lands on is empty and the
+    // block STILL overflows, grow that page rather than clip content.
+    if (cur.blocks.childElementCount > 0) cur = newPage(false);
+    cur.blocks.appendChild(node);
+    if (pageOverflows(cur)) {
+      cur.page.style.height = "auto";
+      cur = newPage(false);
+    }
+  }
+
+  // Drop trailing empty pages the loop may have opened.
+  while (pages.length > 1) {
+    const last = pages[pages.length - 1];
+    const blocks = last.querySelector(".worksheet-blocks");
+    if (blocks && blocks.childElementCount === 0) {
+      last.remove();
+      pages.pop();
+    } else break;
+  }
+  return pages;
+}
+
+// Split a .ws-splittable block between its items (li / .ws-item), moving whole
+// items page to page. The prompt paragraph stays with the first fragment only.
+// Returns false without touching the DOM if the block can't be split safely
+// (caller then places it whole).
+//
+// Fragments are cloned from a PRISTINE shell built once up front — never from
+// the live block, which drains as its items are moved out (re-cloning it for
+// fragment 2 was the bug that scrambled multi-page sheets: the clone walk no
+// longer matched and items landed in a dead fragment).
+function splitAcross(block: HTMLElement, first: PageCtx, nextPage: () => PageCtx): boolean {
+  const ITEM_SEL = "li, .ws-item";
+  const CONT_ATTR = "data-ws-cont";
+  const topLevel = (root: HTMLElement) =>
+    Array.from(root.querySelectorAll<HTMLElement>(ITEM_SEL)).filter(
+      // only top-level items: an item nested inside another item moves with its parent
+      (el) => el.parentElement && el.parentElement.closest(ITEM_SEL) === null,
+    );
+
+  const items = topLevel(block);
+  if (items.length < 2) return false;
+
+  // Tag each item container on the original so every shell clone carries an
+  // addressable copy, then record which container each item belongs to.
+  const containers: HTMLElement[] = [];
+  for (const it of items) {
+    const p = it.parentElement as HTMLElement;
+    if (!containers.includes(p)) containers.push(p);
+  }
+  containers.forEach((c, i) => c.setAttribute(CONT_ATTR, String(i)));
+  const itemHome = items.map((it) => containers.indexOf(it.parentElement as HTMLElement));
+
+  // The shell: the block minus its items, cloned while the block is untouched.
+  const shell = block.cloneNode(true) as HTMLElement;
+  for (const it of topLevel(shell)) it.remove();
+
+  const makeFragment = (withPrompt: boolean): { frag: HTMLElement; conts: HTMLElement[] } => {
+    const frag = shell.cloneNode(true) as HTMLElement;
+    const conts: HTMLElement[] = new Array(containers.length);
+    frag.querySelectorAll<HTMLElement>(`[${CONT_ATTR}]`).forEach((c) => {
+      conts[Number(c.getAttribute(CONT_ATTR))] = c;
+    });
+    if (conts.some((c) => !c)) return { frag, conts: [] }; // impossible-shape guard
+    if (!withPrompt) frag.querySelector(":scope > p:first-child")?.remove();
+    return { frag, conts };
+  };
+
+  let made = makeFragment(true);
+  if (made.conts.length === 0) {
+    containers.forEach((c) => c.removeAttribute(CONT_ATTR));
+    return false;
+  }
+
+  const finishFragment = (f: HTMLElement, c: HTMLElement[]) => {
+    // Containers that got no items would print as stray empty boxes — drop them.
+    for (const cont of c) if (cont.childElementCount === 0) cont.remove();
+    if (f.childElementCount === 0) f.remove();
+    f.querySelectorAll(`[${CONT_ATTR}]`).forEach((el) => el.removeAttribute(CONT_ATTR));
+  };
+
+  let target = first;
+  target.blocks.appendChild(made.frag);
+  let placedInFragment = 0;
+  for (const [i, item] of items.entries()) {
+    made.conts[itemHome[i]].appendChild(item);
+    if (!pageOverflows(target)) {
+      placedInFragment++;
+      continue;
+    }
+    made.conts[itemHome[i]].removeChild(item);
+    if (placedInFragment === 0) {
+      // Not even one item fit beside the shell here; retry on a fresh page.
+      made.frag.remove();
+    } else {
+      finishFragment(made.frag, made.conts);
+    }
+    target = nextPage();
+    made = makeFragment(false);
+    target.blocks.appendChild(made.frag);
+    made.conts[itemHome[i]].appendChild(item);
+    placedInFragment = 1;
+    if (pageOverflows(target)) {
+      // A single item taller than an empty page: grow rather than clip.
+      target.page.style.height = "auto";
+    }
+  }
+  finishFragment(made.frag, made.conts);
+  containers.forEach((c) => c.removeAttribute(CONT_ATTR));
+  return true;
 }

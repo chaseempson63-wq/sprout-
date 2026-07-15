@@ -16,7 +16,6 @@ import type { Worksheet, WorksheetBlock } from "@/lib/resources/types";
 // sheet alone in a clean iframe; the sheet's own padding does the spacing).
 const PRINT_RULES = `@page { size: A4; margin: 0; }
 @media print {
-  .print-area { zoom: var(--ws-print-scale, 1); }
   .worksheet-lines > * + * { margin-top: 18px !important; }
   .worksheet-blocks > * { break-inside: avoid; }
   /* Problem lists can be taller than a page. A blanket avoid shoves the whole
@@ -384,7 +383,7 @@ export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
       {/* green banner: solid green behind the content so the wave can never cut
           through it; the wavy edge is carved along the BOTTOM. Auto-height so a
           long title wraps in full and lifts the band with it (never truncates). */}
-      <div className="relative bg-[#2E5A35]">
+      <div className="ws-banner relative bg-[#2E5A35]">
         <div className="relative z-10 flex items-start gap-4 px-7 pt-7 pb-12 sm:px-10">
           <span className="grid size-16 shrink-0 place-items-center rounded-2xl bg-[#FFFEFB] shadow-md">
             <SproutMascotIcon className="h-12 w-12" />
@@ -405,8 +404,37 @@ export function WorksheetDoc({ worksheet }: { worksheet: Worksheet }) {
         </svg>
       </div>
 
+      {/* Print-only templates. Hidden on screen; print-fit.ts clones the running
+          header onto every continuation page and the page footer onto every page
+          of a multi-page sheet, so page 2+ still reads as a Sprout sheet. */}
+      <div className="ws-running-header hidden" aria-hidden="true">
+        <div className="relative bg-[#2E5A35]">
+          <div className="relative z-10 flex items-center gap-3 px-7 pt-3 pb-6 sm:px-10">
+            <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-[#FFFEFB] shadow-sm">
+              <SproutMascotIcon className="h-7 w-7" />
+            </span>
+            <p className="text-sprout-cream min-w-0 flex-1 truncate text-[15px] font-bold">{worksheet.title}</p>
+            <span className="text-sprout-cream shrink-0 text-xs font-extrabold tracking-[0.25em] uppercase">Sprout</span>
+          </div>
+          <svg viewBox="0 0 1000 60" preserveAspectRatio="none" className="pointer-events-none absolute inset-x-0 bottom-0 h-4 w-full" aria-hidden="true">
+            <path d="M0,60 V34 C200,58 340,18 500,32 C660,46 820,12 1000,30 V60 Z" fill="#76A77A" opacity="0.5" />
+            <path d="M0,60 V44 C200,64 340,28 500,42 C660,56 820,22 1000,40 V60 Z" fill="#4D7B53" opacity="0.6" />
+            <path d="M0,60 V52 C200,70 340,36 500,50 C660,64 820,30 1000,48 V60 Z" fill="#FFFEFB" />
+          </svg>
+        </div>
+      </div>
+      <div className="ws-page-footer hidden" aria-hidden="true">
+        <div className="flex items-center justify-between border-t border-[#2E5A35]/15 pt-2 text-[10.5px] font-semibold text-[#2E5A35]/60">
+          <span className="inline-flex items-center gap-1.5">
+            <SproutMascotIcon className="h-3.5 w-3.5" />
+            Made with Sprout · hisprout.app/resources
+          </span>
+          <span className="ws-page-num" />
+        </div>
+      </div>
+
       <div className="worksheet-body px-7 pt-4 pb-6 sm:px-10">
-        {worksheet.intro && <p className="mb-5 text-[15px] leading-relaxed text-[#1B3722]/80">{worksheet.intro}</p>}
+        {worksheet.intro && <p className="ws-intro mb-5 text-[15px] leading-relaxed text-[#1B3722]/80">{worksheet.intro}</p>}
 
         <div className="worksheet-blocks space-y-9">
           {worksheet.blocks.map((b, i) => (
