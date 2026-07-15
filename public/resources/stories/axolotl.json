@@ -1,0 +1,299 @@
+{
+  "key": "axolotl",
+  "title": "The Axolotl That Never Grew Up",
+  "blurb": "The smiling salamander that keeps its baby gills for life, and can regrow a whole leg.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Axolotl That Never Grew Up",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-axolotl", "templateLabel": "The Axolotl That Never Grew Up", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the axolotl." },
+        {
+          "kind": "image",
+          "imageKey": "axolotl",
+          "notes": ["It has pink feathers on its head", "It lives in the water", "It never leaves the water", "Its mouth curves up like a smile"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an axolotl. Say it like this: AK-suh-lot-ul. The axolotl is pink. It lives in the water all day. It has soft feathers on its head. The feathers help it breathe. The axolotl looks like it is smiling. It swims and swims. It is happy in the water."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the feathers on each row. Write how many in the box.",
+          "emoji": "🌸",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "pink    swim" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "axolotl", "right": "water" },
+            { "left": "bird", "right": "sky" },
+            { "left": "cat", "right": "house" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own axolotl. Give it a big smile.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Axolotl That Never Grew Up",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-axolotl", "templateLabel": "The Axolotl That Never Grew Up", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "axolotl",
+          "notes": ["Say it AK-suh-lot-ul", "The feathers are called gills", "It lives in lakes in Mexico", "It can grow a new leg", "It stays a baby its whole life"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Axolotl That Never Grew Up",
+          "text": "Most tadpoles grow up. They lose their gills. They climb out of the water and hop away as frogs. The axolotl does not do that. The axolotl keeps its feathery gills. It keeps its little tail. It stays in the water its whole life. An axolotl can lose a leg and grow a brand new one. It can do this again and again. Its mouth curves up, so it always looks like it is smiling."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does the axolotl live?", "What does the axolotl keep on its head?", "What can it grow back?"],
+          "rows": 2,
+          "answers": ["in the water", "its feathery gills", "a new leg"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The axolotl lives in the ____.", "It has feathery ____ on its head.", "It can grow a new ____.", "It looks like it is ____."],
+          "wordBank": ["water", "gills", "leg", "smiling"],
+          "answers": ["water", "gills", "leg", "smiling"]
+        },
+        { "kind": "draw", "prompt": "Draw the axolotl in its lake. Add some plants and rocks.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Axolotl That Never Grew Up",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-axolotl", "templateLabel": "The Axolotl That Never Grew Up", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "axolotl",
+          "notes": ["Say it AK-suh-lot-ul", "Those pink feathers are gills", "It only lives wild near Mexico City", "It can regrow legs, tail, even parts of its heart", "Scientists study it to learn about healing"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Salamander That Stayed a Baby",
+          "text": "Almost every salamander begins life in the water. It hatches with feathery gills and a long tail for swimming. As it grows, its body changes. The gills shrink away, lungs take over, and the grown salamander walks out onto the land. The axolotl skips that last step. It keeps its feathery gills. It keeps its swimming tail. It never leaves the water. Scientists call this staying young forever, and it is very unusual. The axolotl has a second trick that is even stranger. If it loses a leg, it grows a new one. Not a scar, not a stump, but a whole new leg with new bones and new toes. It can do this over and over. Wild axolotls now live in only one place on Earth: a few canals near Mexico City. There are very few left."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens to most salamanders as they grow up?",
+            "Which two baby features does the axolotl keep?",
+            "What grows back when an axolotl loses a leg?",
+            "Why do you think so few axolotls are left in the wild?"
+          ],
+          "rows": 2,
+          "answers": ["their gills shrink and they move onto land", "its feathery gills and its swimming tail", "a whole new leg with new bones and toes", "(inference: they live in only one small place)"]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Salamander That Stayed a Baby", "How to Care for a Pet Frog", "The Longest River in Mexico"],
+          "answers": ["The Salamander That Stayed a Baby"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The axolotl breathes with feathery ____.", "Most salamanders grow ____ and walk on land.", "Wild axolotls live in canals near Mexico ____."],
+          "wordBank": ["gills", "lungs", "City"],
+          "answers": ["gills", "lungs", "City"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about the axolotl, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Axolotl That Never Grew Up",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-axolotl", "templateLabel": "The Axolotl That Never Grew Up", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "axolotl",
+          "notes": ["Say it AK-suh-lot-ul", "The pink feathers are external gills", "Neoteny: keeping baby features for life", "Regrows legs, tail, spine, even heart tissue", "Critically endangered in the wild", "Its name comes from an Aztec god, Xolotl"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever Young, and Nearly Gone",
+          "text": "Almost every salamander lives two lives. The first is spent underwater, breathing through feathery gills. Then comes metamorphosis: the gills shrink, lungs develop, the body reshapes itself, and the animal walks out onto land to begin its second life. The axolotl refuses. It keeps its gills, keeps its paddle tail, and spends every day of its life underwater. Biologists call this neoteny, which means holding on to childhood features forever. The axolotl grows up in every way except its body. Its healing is stranger still. Cut off an axolotl's leg and it does not form a scar. Instead, cells gather at the wound and rebuild the limb from scratch, bone by bone, toe by toe. It can regrow its tail, parts of its spine, and even some of its heart. It can do this dozens of times. Researchers study the axolotl closely, hoping to learn how it heals so completely. Here is the sad part. Wild axolotls survive in one place only: a handful of canals near Mexico City, where the great lake of the Aztecs once spread across the valley. Pollution and hungry introduced fish have taken almost all of them. Thousands live in tanks and laboratories around the world, while the wild population may number in the dozens."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is metamorphosis, in your own words?",
+            "What does neoteny mean, and how does the axolotl show it?",
+            "Explain the difference between healing with a scar and the way an axolotl heals.",
+            "The passage says thousands live in tanks while the wild population may number in the dozens. Why is that still a problem?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(the change from a water animal to a land animal)",
+            "keeping baby features for life; it keeps its gills and tail and never leaves the water",
+            "a scar covers a wound; the axolotl rebuilds the whole limb, bone by bone",
+            "(inference: a species that survives only in captivity has lost its wild home and its natural role)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "An unusual salamander that stays young and heals completely is nearly extinct in the wild",
+            "Salamanders are the most common animal in Mexico",
+            "Scientists have already cured every human injury"
+          ],
+          "answers": ["An unusual salamander that stays young and heals completely is nearly extinct in the wild"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["metamorphosis → ____", "neoteny → ____", "introduced (fish) → ____"],
+          "rows": 1,
+          "answers": ["the body change from water life to land life", "keeping young features for life", "brought in from somewhere else by people"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: should scientists keep studying axolotls in laboratories? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Axolotl That Never Grew Up",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-axolotl", "templateLabel": "The Axolotl That Never Grew Up", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "axolotl",
+          "notes": ["Ambystoma mexicanum", "Neoteny: keeps larval gills and tail for life", "Regenerates limbs, spinal cord, heart tissue, retina", "Genome is about 10x the size of a human's", "Critically endangered: wild numbers in the dozens", "Named for Xolotl, an Aztec god who hid as a salamander"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Refused to Grow Up",
+          "text": "Most salamanders live two separate lives. The first is aquatic: the larva hatches with feathery external gills and a broad paddle tail. Then a surge of thyroid hormone triggers metamorphosis. Gills are reabsorbed, lungs develop, the skull reshapes, and the adult hauls itself onto land. The axolotl never receives that signal. It matures, reproduces, and dies still wearing the body of a larva, gills fanned out around its head like a feathered crown. Biologists call the condition neoteny, and the axolotl is its most famous example. Its second peculiarity is more useful and far less understood. Most animals, humans included, answer injury with scar tissue: a fast, cheap patch that seals the wound and stops there. The axolotl answers differently. Cells near the wound reverse their training, forget what they had specialized into, and gather into a blastema, a bud of unfinished cells that rebuilds the missing part from first principles. A leg returns complete with bone, muscle, nerve, and toes, correctly sized and correctly aimed. The axolotl regrows its tail, portions of its spinal cord, its heart, even parts of its eye, and it will do so dozens of times without error. Laboratories worldwide study it for exactly this reason. The irony is bitter. This animal, one of the most studied vertebrates on the planet, is nearly gone from the only place it has ever lived. Wild axolotls persist in a fragment of canals at Xochimilco, near Mexico City, the last damp remainder of the vast lake system the Aztecs built their capital upon. Pollution, urban growth, and introduced carp and tilapia have emptied the water of them. Hundreds of thousands live in tanks; the wild population may be counted in dozens. A creature that can rebuild almost any part of itself cannot rebuild its own lake."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What triggers metamorphosis in most salamanders, and what does the axolotl not receive?",
+            "Explain what a blastema is and why it matters. Quote the phrase the passage uses to describe it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering neoteny + regeneration + endangerment)",
+            "a surge of thyroid hormone; the axolotl never receives that signal",
+            "a bud of unfinished cells that rebuilds the missing part; quote: a bud of unfinished cells",
+            "(inform, with detail: it defines terms and presents facts; some persuasive tone at the end)",
+            "(it can heal itself but cannot fix habitat loss; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["neoteny → ____", "blastema → ____", "reabsorbed → ____", "persist → ____"],
+          "rows": 1,
+          "answers": ["keeping larval features into adulthood", "a bud of unspecialized cells that rebuilds a body part", "taken back into the body", "continue to survive"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls the irony bitter. Explain the irony in your own words.",
+            "Why might an animal that never leaves the water be more at risk than one that lives on land too?"
+          ],
+          "rows": 3,
+          "answers": ["(the best healer on Earth is nearly extinct)", "(inference: it depends entirely on one habitat and cannot escape pollution)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it enough to save a species in tanks if its wild home is gone? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Axolotl That Never Grew Up",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-axolotl", "templateLabel": "The Axolotl That Never Grew Up", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "axolotl",
+          "notes": ["Ambystoma mexicanum", "Neoteny driven by low thyroid hormone response", "Blastema-based regeneration: limbs, cord, heart, retina", "Genome about 32 billion base pairs, roughly 10x human", "Wild range: the canals of Xochimilco only", "Named for Xolotl, the Aztec god of fire and lightning"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever Young: The Axolotl's Two Impossible Tricks",
+          "text": "The axolotl performs two tricks that should not be possible, and it performs them at the same time. The first is that it never grows up. A typical salamander begins as an aquatic larva with feathery external gills and a paddle tail. In time, a rising tide of thyroid hormone commands metamorphosis: the gills are reabsorbed, lungs mature, the skull remodels, the skin thickens, and the animal steps onto land as a fundamentally different creature. The axolotl's body largely ignores that command. It reaches full sexual maturity while still wearing its larval form, gills fanned around its head like a crown, and it spends its entire life underwater. Biologists call this neoteny. It is not a defect. In the cold, stable, permanent water of its ancestral lakes, there was simply never much reason to leave, and evolution does not build what is not needed. The second trick is regeneration, and it is the reason the axolotl sits in laboratories on every continent. When most vertebrates are injured, they seal the damage with scar tissue. Scarring is fast and cheap, and it is final: the original structure is never restored. The axolotl takes the expensive route. Cells surrounding the wound dedifferentiate, meaning they abandon their specialized identities and revert to a flexible state. They mass into a blastema, and from that unpromising bud a new limb is constructed: bone, cartilage, muscle, blood vessels, nerve, and toes, correctly proportioned and correctly oriented. The animal repeats this dozens of times without accumulating errors. It regrows tail, jaw, portions of the spinal cord, retinal tissue, and sections of its heart. Researchers want to know what instructions the blastema is following, and whether human cells still remember any of them. Here the story turns. The axolotl is among the most intensively studied vertebrates alive and is simultaneously among the most endangered. Its entire natural range is a remnant of canals and floating gardens at Xochimilco, on the southern edge of Mexico City, the last wet trace of the lake system on which the Aztecs founded Tenochtitlan. Sewage, urban expansion, and introduced carp and tilapia have hollowed out that habitat. Surveys once counted thousands of axolotls per square kilometer; recent surveys have struggled to find any. Hundreds of thousands thrive in aquariums and laboratory tanks, genetically narrow and utterly dependent on people. The animal that can rebuild its own heart cannot rebuild its lake, and that limitation is not biological. It is ours."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain neoteny and why the passage insists it is not a defect. Cite the evidence.",
+            "Contrast scarring with blastema-based regeneration. Why does the author call scarring cheap and final?",
+            "Identify the shift in the passage: where does it turn, and how does the author signal it?",
+            "The last two sentences say the limitation is not biological, it is ours. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it stays larval because leaving the water was never needed; cite: evolution does not build what is not needed)",
+            "(scar seals fast without restoring structure; regeneration rebuilds the original completely)",
+            "(at Here the story turns; a short sentence signals the pivot from wonder to loss)",
+            "(it shifts blame from the animal to human habitat destruction; supported by the pollution and introduced-fish evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["neoteny → ____", "dedifferentiate → ____", "blastema → ____", "remnant → ____"],
+          "rows": 2,
+          "answers": [
+            "keeping larval traits into sexual maturity",
+            "to abandon a specialized cell identity and revert to a flexible state",
+            "a mass of unspecialized cells that rebuilds a lost structure",
+            "a small surviving piece of something once much larger"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the captive population is genetically narrow. Explain why that matters for a species' long-term survival.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(low genetic diversity means less resilience to disease and change)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A species that survives only in laboratories has already gone extinct in every way that matters. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

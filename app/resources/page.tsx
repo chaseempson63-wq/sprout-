@@ -21,6 +21,7 @@ import { DocumentNudge } from "./_components/DocumentNudge";
 import { Typewriter } from "./_components/Typewriter";
 import { AgeTag, SheetStack, Sticker, forestCta, sheet, tiltFor } from "./_components/paper";
 import { TEMPLATES, TOPICS, topicForTemplate } from "@/lib/resources/catalog";
+import { STORY_INDEX, STORY_TOPICS } from "@/lib/resources/stories";
 import { artFor } from "@/lib/resources/template-art";
 import { printWorksheet } from "@/lib/resources/print-fit";
 import { colorClasses, useResources } from "@/lib/resources/store";
@@ -68,6 +69,9 @@ export default function LibraryHome() {
 
   const inTopic = (templateId: string) => topic === "all" || topicForTemplate(templateId) === topic;
   const templates = TEMPLATES.filter((t) => inTopic(t.id) && match(query, `${t.title} ${t.blurb}`));
+  // Story templates (the illustrated topic library) browse alongside the
+  // skill templates: their own topic tags, same search box, same wall.
+  const stories = STORY_INDEX.filter((s) => (topic === "all" || s.topic === topic) && match(query, `${s.title} ${s.blurb} ${s.key}`));
   const mine = (ready ? worksheets : []).filter((w) => inTopic(w.meta.templateId) && match(query, `${w.title} ${w.subtitle}`));
 
   return (
@@ -157,6 +161,10 @@ export default function LibraryHome() {
           {TOPICS.map((t) => (
             <TopicTag key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
           ))}
+          {STORY_INDEX.length > 0 &&
+            STORY_TOPICS.filter((t) => STORY_INDEX.some((s) => s.topic === t.key)).map((t) => (
+              <TopicTag key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
+            ))}
         </div>
       </div>
 
@@ -192,7 +200,37 @@ export default function LibraryHome() {
               </Link>
             );
           })}
-          {templates.length === 0 && <p className="text-sprout-cream/60 col-span-full text-sm">No templates match that. Try another topic or search.</p>}
+          {stories.map((s, i) => {
+            const j = templates.length + i;
+            return (
+              <Link
+                key={`story-${s.key}`}
+                href={`/resources/story/${s.key}`}
+                style={{ animationDelay: `${Math.min(j, 11) * 35}ms` }}
+                className="group animate-in fade-in slide-in-from-bottom-3 fill-mode-both block duration-500"
+              >
+                <SheetStack tilt={tiltFor(j)} className="flex h-full flex-col overflow-hidden">
+                  <div className="grid aspect-[4/3] w-full place-items-center overflow-hidden border-b border-[#2E5A35]/10 bg-white">
+                    {/* eslint-disable-next-line @next/next/no-img-element -- static webp */}
+                    <img src={`/resources/illustrations/${s.key}.webp`} alt="" loading="lazy" className="h-full w-full object-contain" />
+                  </div>
+                  <div className="flex flex-1 flex-col p-4 sm:p-5">
+                    <h3 className="text-[15px] leading-snug font-bold text-[#1B3722] sm:text-lg">{s.title}</h3>
+                    <p className="mt-1 hidden text-sm leading-relaxed text-[#1B3722]/65 sm:block">{s.blurb}</p>
+                    <div className="mt-auto flex items-center justify-between pt-3.5">
+                      <AgeTag min={3} max={13} />
+                      <span className="inline-flex items-center gap-1 text-sm font-bold whitespace-nowrap text-[#2E5A35]">
+                        Open it <ArrowRight className="size-4 transition group-hover:translate-x-0.5" />
+                      </span>
+                    </div>
+                  </div>
+                </SheetStack>
+              </Link>
+            );
+          })}
+          {templates.length === 0 && stories.length === 0 && (
+            <p className="text-sprout-cream/60 col-span-full text-sm">No templates match that. Try another topic or search.</p>
+          )}
         </div>
       )}
 
