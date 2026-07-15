@@ -1,0 +1,319 @@
+{
+  "key": "wolf",
+  "title": "The Wolf Pack Is Just a Family",
+  "blurb": "The howl, the pups, and the alpha wolf that never existed. A wolf pack turns out to be a mom, a dad, and their kids.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Wolf Pack Is Just a Family",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-wolf", "templateLabel": "The Wolf Pack Is Just a Family", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the wolf's ears and nose." },
+        {
+          "kind": "image",
+          "imageKey": "wolf",
+          "notes": ["It looks like a big dog", "It lives with its family", "It howls to talk", "Baby wolves are called pups", "Its fur keeps out the snow"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a wolf. A wolf looks a lot like a big dog. Wolves live together in a family. The mom, the dad, and the pups all stay close. When night comes, the wolves point their noses up. They howl. The howl says, I am here. Where are you? Far away, the rest of the family hears it. They howl back."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the paw prints in each row. Write how many in the box.",
+          "emoji": "🐾",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "howl    pack" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its sound.",
+          "pairs": [
+            { "left": "wolf", "right": "howl" },
+            { "left": "cow", "right": "moo" },
+            { "left": "duck", "right": "quack" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a wolf howling at night. Add a moon and some trees.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Wolf Pack Is Just a Family",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-wolf", "templateLabel": "The Wolf Pack Is Just a Family", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "wolf",
+          "notes": ["A pack is one family", "Pups are born in a den", "Pups are born blind", "The whole family feeds the pups", "A howl can travel for miles"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wolf Pack Is Just a Family",
+          "text": "A wolf pack is not a gang. It is a family. Most packs are just a mom, a dad, and their pups. The pups are born in spring inside a den in the ground. They are born blind. Their eyes open after about two weeks. Every wolf in the family helps feed the pups. When the pups are big enough, they come out and play. They chew on sticks. They pounce on each other. They practice being wolves. At night the whole family howls together. The howl can carry for miles."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Who is in most wolf packs?", "Where are wolf pups born?", "What do the pups do when they play?"],
+          "rows": 2,
+          "answers": ["a mom, a dad, and their pups", "in a den in the ground", "they chew sticks and pounce on each other"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A wolf pack is really a ____.", "The pups are born inside a ____.", "Wolf pups are born ____.", "At night the family likes to ____."],
+          "wordBank": ["family", "den", "blind", "howl"],
+          "answers": ["family", "den", "blind", "howl"]
+        },
+        { "kind": "draw", "prompt": "Draw the wolf family outside their den. Put the pups where you think they play.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Wolf Pack Is Just a Family",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-wolf", "templateLabel": "The Wolf Pack Is Just a Family", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "wolf",
+          "notes": ["Canis lupus, the gray wolf", "A howl can carry six miles", "Every wolf has its own voice", "A pack can cross 30 miles in a day", "Wolves do not howl at the moon"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Wolves Howl",
+          "text": "A wolf howl is not a spooky sound made for the movies. It is a phone call. Wolves live in families that roam over huge stretches of land. A pack can cross thirty miles in a single day looking for food, so family members get separated. That is when they howl. A howl is low and long, and low, long sounds travel far. In open country a howl can reach other wolves six miles away. The howl carries real information. It says where the wolf is. It also says who the wolf is, because every wolf has its own voice, and packmates can tell each other apart. When the whole family howls at once, they slide their voices up and down instead of matching each other. Researchers think this makes a small pack sound bigger to any stranger listening. Wolves howl for one more reason: to warn other packs to stay off their land. And wolves do not howl at the moon. They howl at night because night is when they travel, and they tilt their heads up because it lifts the sound over the trees."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "The passage calls a howl a phone call. What does it mean by that?",
+            "How can a wolf tell which packmate is howling?",
+            "Why do wolves tilt their heads up when they howl?",
+            "Why do you think a pack would want to sound bigger than it really is?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is how wolves send a message to family far away",
+            "every wolf has its own voice",
+            "it lifts the sound up over the trees so it travels farther",
+            "(inference: strange wolves may stay away from a pack that sounds large)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A Howl Is a Phone Call", "How to Train a Puppy", "The Coldest Night of the Year"],
+          "answers": ["A Howl Is a Phone Call"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A howl can reach wolves six ____ away.", "Every wolf has its own ____.", "Wolves howl at ____ because that is when they travel."],
+          "wordBank": ["miles", "voice", "night"],
+          "answers": ["miles", "voice", "night"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you could send one message by howling, what would it say, and who would you want to hear it?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Wolf Pack Is Just a Family",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-wolf", "templateLabel": "The Wolf Pack Is Just a Family", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "wolf",
+          "notes": ["Largest wild member of the dog family", "Sprints near 35 miles an hour", "Paws splay out like snowshoes", "Smells prey over a mile away", "Most elk hunts end in failure", "One elk kick can kill a wolf"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hunt That Usually Fails",
+          "text": "A wolf is built for the long chase, not the ambush. A cat creeps close and explodes. A wolf does something harder. It runs. Wolves can trot for hours without tiring and can sprint close to thirty five miles an hour in short bursts. Their legs are long, their chests are narrow, and their broad paws splay out on deep snow like snowshoes. The nose does the finding. A wolf can pick up the scent of an elk from more than a mile away when the wind is right. Once the pack locates a herd, the hunt opens with a test. The wolves move at the animals and watch what happens next. A healthy elk stands its ground or runs strong, and a healthy elk can kill a wolf with a single kick to the skull. So the pack reads the herd, looking for the animal that is old, sick, injured, or very young. Most of the time the wolves find nothing worth the risk, and they quit. Biologists who follow packs in Yellowstone have found that the great majority of elk hunts end in failure. A pack may test dozens of animals for every one it catches, and wolves are regularly injured or killed by the prey they chase. This is why a wolf pack is not a gang of killers drifting through the woods. It is a family doing dangerous, exhausting work, and losing far more often than it wins."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the difference between how a cat hunts and how a wolf hunts.",
+            "What is the pack looking for when it tests a herd, and why?",
+            "The passage says wolves quit most hunts. What does that tell you about how wolves make decisions?",
+            "Why do you think the author ends by calling the pack a family doing dangerous work?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a cat sneaks close and ambushes; a wolf runs the prey down over distance",
+            "an animal that is old, sick, injured, or young, because a healthy elk can kill a wolf",
+            "(inference: they weigh the risk and only commit when the odds are good)",
+            "(inference: to correct the idea that wolves are cruel, and show the hunt as hard, risky work)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Wolves hunt by endurance and careful testing, and most of their hunts fail",
+            "Elk are the fastest animal in North America",
+            "Wolves catch every animal they chase"
+          ],
+          "answers": ["Wolves hunt by endurance and careful testing, and most of their hunts fail"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["ambush → ____", "splay → ____", "test (a herd) → ____"],
+          "rows": 1,
+          "answers": [
+            "a surprise attack from hiding",
+            "to spread out wide",
+            "to push at the animals and watch which one is weak"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is it fair to call a wolf a cruel animal? Use two details from the passage to support your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Wolf Pack Is Just a Family",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-wolf", "templateLabel": "The Wolf Pack Is Just a Family", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "wolf",
+          "notes": ["Canis lupus", "The alpha wolf is a myth", "Wild packs are parents plus their pups", "Alpha came from captive strangers in a pen", "Mech asked his publisher to stop printing his book", "Young wolves leave to start their own family"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Alpha Wolf That Never Existed",
+          "text": "In 1970 a biologist named L. David Mech published a book called The Wolf. It was careful, thorough, and enormously popular, and one idea inside it escaped into the world and refused to die: the alpha wolf. The alpha, readers learned, was the wolf that had fought its way to the top of the pack. Below it ranked the betas. At the bottom crouched the omega, the wolf that ate last and took the abuse. The picture was vivid, and it was wrong, and Mech has spent much of his career since then saying so. The trouble was the wolves the idea came from. The dominance research had been done on captive wolves: unrelated adults, collected from different places and dropped together into an enclosure with no way out. Strangers forced into a pen do fight over food and space, and a ranking does emerge. But that is a description of a prison, not of a wolf. When researchers finally spent years watching wild packs, on Ellesmere Island and in Minnesota and later in Yellowstone, the ranking dissolved. A wild pack is almost always a family. It is a breeding pair and their offspring from the last few years. The two wolves in charge are in charge for the same reason your parents are in charge, which is that they are the parents. Nobody fought anyone for the job. The young wolves do not challenge them either. They grow up, leave home, find a mate, and start a family of their own. Mech asked his own publisher to stop printing his book. He has written papers, given talks, and posted videos trying to retire a word he helped release. It has not worked. The alpha wolf lives on in gym slogans and business books and internet advice: a fierce, lonely animal that turned out to be somebody's dad."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Where did the alpha idea come from, and what was wrong with the wolves it was based on?",
+            "Explain who actually leads a wild pack. Quote the phrase the passage uses to explain why.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Mech tried to take back his own idea and failed. Why do you think the alpha myth is so hard to kill?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: the alpha idea came from captive strangers; wild packs are families led by parents)",
+            "from captive research on unrelated adult wolves penned together; they were strangers with no way out, so they fought",
+            "the breeding pair, who are simply the mom and dad; quote: in charge for the same reason your parents are in charge, which is that they are the parents",
+            "(inform, and partly persuade: it defines terms and gives evidence, but argues against a popular belief)",
+            "(opinion: people like the idea and use it about themselves, so it spread beyond science)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["captive → ____", "dominance → ____", "offspring → ____", "vivid → ____"],
+          "rows": 1,
+          "answers": [
+            "kept by people, not living free",
+            "control of others by force or rank",
+            "the young that an animal produces",
+            "sharp and clear in the mind"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a pen full of strangers is a description of a prison, not of a wolf. Explain what that means about studying animals in captivity.",
+            "The last sentence calls the alpha a fierce, lonely animal that turned out to be somebody's dad. Why does the author end there?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: captive conditions create behavior that never happens in the wild, so the results describe the cage)",
+            "(it deflates the myth in one image and returns the wolf to being a parent)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when a scientist proves their own famous idea was wrong, does the old idea deserve to keep being taught? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Wolf Pack Is Just a Family",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-wolf", "templateLabel": "The Wolf Pack Is Just a Family", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "wolf",
+          "notes": ["Yellowstone's last wolves were killed in the 1920s", "31 wolves released in 1995 and 1996", "How Wolves Change Rivers: tens of millions of views", "Willows recover best where beavers hold water", "Wolf carcasses feed ravens, eagles, and bears", "Coyote numbers fell, foxes gained"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wolves That Changed the Rivers, or Did They",
+          "text": "For seventy years, Yellowstone National Park had no wolves. The last of them were shot and trapped in the 1920s, back when the government paid people to kill predators and the park itself did much of the killing. Then, in 1995 and 1996, biologists captured wolves in Canada, drove them south, and released thirty one of them into the park. What happened next became one of the most famous stories in modern science, and it is worth learning twice: once because parts of it are true, and once because parts of it are not. The story goes like this. With no wolves, elk had grown numerous and comfortable. They stood in the open valleys and along the streams and ate the young willows and aspens down to stubble. Wolves returned, and suddenly an elk could not afford to stand still in an open valley. The elk moved, and they moved away from the places where a wolf could corner them. Released from constant grazing, the willows shot up. Beavers, which need willow, came back and built dams. The dams made ponds, the ponds held fish and birds and frogs, and the roots of the new trees knit the crumbling banks together until the rivers themselves stopped wandering and settled into their channels. A short film called How Wolves Change Rivers set this account to music in 2014, and it has been watched tens of millions of times. It ends by telling you the wolves changed the rivers. Ecologists who have spent their careers in that valley have spent the years since carefully taking the story apart. Elk numbers on the northern range did collapse, from roughly seventeen thousand to a few thousand, but wolves were only one cause. Human hunters killed thousands of elk in those same years, a long drought dried the range, and grizzly bears and cougars, also recovering, took many of the calves. Untangling those causes is genuinely difficult, and no careful scientist hands the wolves all the credit. The willows are the sharper problem. When researchers went out and measured them, they found real recovery in some places and almost none in others. The best predictor of a thriving willow was not the presence of wolves. It was the presence of water, which usually meant a beaver dam. Yellowstone had lost its beavers along with its wolves, and without dams the water table had dropped so far that even an ungrazed willow could not grow tall. The system had not simply been paused by the absence of wolves. It had changed state, and a changed state does not spring back just because the missing piece is put back in the box. As for the rivers, the geologists were blunt: there is little evidence that channels reshaped themselves the way the film describes. So what did the wolves actually do? Real things, measurable ones. They are a large part of why elk no longer loiter in the most dangerous places. They leave carcasses that feed ravens, eagles, bears, magpies, and beetles through the winter. They have pushed coyote numbers down, which appears to have helped foxes and pronghorn fawns. Those are genuine ecological effects and they matter. But the tidy version, the one where a predator returns and a broken world reassembles itself, is a story humans wanted rather than a result nature delivered. It is easy to see why we wanted it. It offers the possibility that our damage is reversible, that we can undo what we did by returning the piece we removed. The Yellowstone data suggests something harder and more useful: it is far cheaper to keep an ecosystem than to rebuild one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the film How Wolves Change Rivers claims, and name three things the passage says the film gets wrong or overstates.",
+            "According to the passage, what actually predicts whether a willow thrives? Cite the evidence exactly.",
+            "Identify the structure of this passage: it tells a story, then does something to it. Where does it turn, and how does the author signal the turn?",
+            "The passage says the tidy version is a story humans wanted rather than a result nature delivered. Analyze what that claim is doing, and decide whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the famous Yellowstone recovery story is partly true but much messier than the popular version)",
+            "(claim: wolves moved elk, willows grew, beavers returned, rivers reshaped; wrong or overstated: wolves were only one cause of the elk collapse, willow recovery depended on water not wolves, and there is little evidence the channels reshaped)",
+            "water, usually from a beaver dam; cite: The best predictor of a thriving willow was not the presence of wolves. It was the presence of water",
+            "(it turns at Ecologists who have spent their careers in that valley have spent the years since carefully taking the story apart; the author first tells the popular story straight, then dismantles it with measurements)",
+            "(it reframes the cascade as a human wish rather than a finding, and shifts the subject from wolves to us; earned, because the author supplies the contrary evidence first)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["numerous → ____", "untangle (causes) → ____", "loiter → ____", "reversible → ____"],
+          "rows": 2,
+          "answers": [
+            "many in number",
+            "to separate causes that are tangled together so you can tell which did what",
+            "to hang around a place with no urgency",
+            "able to be undone"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the system had changed state. Explain why that idea is more troubling than simply saying the wolves were missing.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a changed state means the damage is not a pause you can undo; putting the piece back does not restore the old system)",
+            "(student question plus a credible source type, such as a long-term field study or a park biologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The film How Wolves Change Rivers does more good than harm, because getting people to care about wolves matters more than getting every detail right. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

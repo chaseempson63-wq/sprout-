@@ -1,0 +1,330 @@
+{
+  "key": "bee",
+  "title": "The Bee That Dances Directions",
+  "blurb": "A bee finds the flowers, flies home in the dark, and dances a map on the wall of the hive.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bee That Dances Directions",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-bee", "templateLabel": "The Bee That Dances Directions", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the bee's stripes with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "bee",
+          "notes": ["She is small and fuzzy", "She loves flowers", "Her home is called a hive", "The bees make honey inside", "Buzz is the sound of her wings"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a bee. The bee is small and fuzzy. She has stripes. She flies from flower to flower. She drinks the sweet juice inside. It is called nectar. Yellow dust sticks to her fuzzy legs. She carries it home. Her home is called a hive. Inside the hive, the bees make honey. Buzz, buzz. The bee is busy all day."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the flowers in each row. Write how many in the box.",
+          "emoji": "🌼",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bee    buzz" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its home.",
+          "pairs": [
+            { "left": "bee", "right": "hive" },
+            { "left": "bird", "right": "nest" },
+            { "left": "fish", "right": "pond" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a bee on a big flower. Give her stripes and wings.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bee That Dances Directions",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-bee", "templateLabel": "The Bee That Dances Directions", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "bee",
+          "notes": ["One queen lays all the eggs", "The worker bees are all girls", "Her wings beat about 200 times a second", "A hive can hold 50,000 bees", "Bees build with wax they make themselves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Bee Has a Job",
+          "text": "A hive is a busy town. Every bee in it has a job. The queen bee has one job. She lays the eggs. She can lay more than a thousand eggs in a day. The worker bees do everything else. Some clean the rooms. Some feed the babies. Some build walls out of wax. Some stand at the door and guard it. The oldest workers get the best job of all. They fly out to the flowers. They bring back nectar and pollen. Then the whole hive eats."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the queen bee's job?", "Name one job a worker bee does.", "What do the oldest workers bring home?"],
+          "rows": 2,
+          "answers": ["she lays the eggs", "(cleaning, feeding the babies, building with wax, or guarding the door)", "nectar and pollen"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The ____ bee lays the eggs.", "Worker bees build walls out of ____.", "Some bees stand at the door and ____ it.", "The oldest workers fly out to the ____."],
+          "wordBank": ["queen", "wax", "guard", "flowers"],
+          "answers": ["queen", "wax", "guard", "flowers"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each bee to what she does.",
+          "pairs": [
+            { "left": "queen bee", "right": "lays the eggs" },
+            { "left": "nurse bee", "right": "feeds the babies" },
+            { "left": "guard bee", "right": "stands at the door" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the inside of a hive. Show one bee doing each job.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bee That Dances Directions",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-bee", "templateLabel": "The Bee That Dances Directions", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "bee",
+          "notes": ["A worker lives about six weeks in summer", "Every cell in the comb is a hexagon", "Wax pushes out through her belly", "A bee has five eyes", "Baby bees are called larvae"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bee That Changes Jobs",
+          "text": "A worker bee lives for about six weeks in summer, and in that short life she does almost every job in the hive. She starts on her first day by cleaning out the cell she hatched from. Nothing goes into a dirty cell. For the next week she is a nurse. She feeds the tiny white grubs, called larvae, that will become the next bees. Then her wax glands start working. She eats honey, and flakes of wax push out through her belly. She chews the flakes soft and builds them into six sided rooms. Every room is a hexagon, because hexagons fit together with no gaps and use the least wax. Later she guards the door, sniffing every bee that lands to check it belongs. Only at the end of her life does she fly out to the flowers. She has waited her whole life for the sky."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the very first job a worker bee does?",
+            "Where does the wax come from?",
+            "Why does the hive build hexagons instead of circles?",
+            "Why do you think the youngest bees stay inside and the oldest bees fly out?"
+          ],
+          "rows": 2,
+          "answers": [
+            "she cleans out the cell she hatched from",
+            "flakes of wax push out through her belly after she eats honey",
+            "hexagons fit together with no gaps and use the least wax",
+            "(inference: flying outside is the most dangerous job, so it is saved for the end of her life)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Bee That Changes Jobs", "How to Build a Wooden House", "The Tallest Tree in the Forest"],
+          "answers": ["The Bee That Changes Jobs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Baby bees are called ____.", "A bee makes ____ to build the comb.", "Each room in the comb is a ____."],
+          "wordBank": ["larvae", "wax", "hexagon"],
+          "answers": ["larvae", "wax", "hexagon"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which bee job would you want, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bee That Dances Directions",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-bee", "templateLabel": "The Bee That Dances Directions", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bee",
+          "notes": ["The waggle dance is a map", "Bees steer by the sun", "They can see ultraviolet light", "Karl von Frisch won a Nobel Prize in 1973", "The whole dance happens in the dark"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dance That Draws a Map",
+          "text": "A bee finds a patch of clover half a mile from the hive. She fills up on nectar and flies home. Now she has a problem. She cannot lead the others there one by one, and she cannot point. So she dances. Inside the hive it is dark and crowded. The bee climbs onto the wall of the honeycomb and runs in a straight line, shaking her body from side to side. Then she loops back and runs the same line again, and again, tracing a shape like the number eight. Other bees crowd around her and feel the dance with their antennae. Everything they need is in that straight run. The angle of the run tells them the direction. If she runs straight up the wall, the flowers lie toward the sun. If she runs at forty degrees to the right of straight up, the flowers lie forty degrees to the right of the sun. The length of the waggle tells them the distance. A longer shake means a longer flight. A scientist named Karl von Frisch spent years watching bees through glass, marking them with tiny dots of paint, until he worked out what the dance meant. In 1973 he was given a Nobel Prize for reading it. A bee had been giving directions in the dark all along, and nobody had understood a word."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What problem does the bee have when she gets home, and how does she solve it?",
+            "The dance tells the other bees two things. What are they, and which part of the dance carries each one?",
+            "The other bees cannot see the dance. How do they read it?",
+            "Straight up the wall of a dark hive means toward the sun. Why is that surprising, and what does it tell you about how well bees keep track of the sun?"
+          ],
+          "rows": 2,
+          "answers": [
+            "she cannot lead them or point to the flowers, so she dances the directions",
+            "direction, from the angle of the straight run; distance, from the length of the waggle",
+            "they crowd around and feel the dance with their antennae",
+            "(inference: she is in the dark and cannot see the sun, so she must remember its position and keep updating it as it moves)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A bee gives other bees exact directions to food by dancing a code that took scientists years to read",
+            "Clover is the only flower honey bees will visit",
+            "Bees prefer to fly at night because the hive is dark"
+          ],
+          "answers": ["A bee gives other bees exact directions to food by dancing a code that took scientists years to read"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["waggle → ____", "antennae → ____", "angle → ____"],
+          "rows": 1,
+          "answers": [
+            "the side to side shaking of the bee's body during the straight run",
+            "the two feelers on a bee's head that she senses with",
+            "how far a line turns away from another line, measured in degrees"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the waggle dance to someone who has never heard of it. Say what the angle means and what the length means.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bee That Dances Directions",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-bee", "templateLabel": "The Bee That Dances Directions", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bee",
+          "notes": ["Nectar is about 80 percent water", "Finished honey is about 17 percent water", "One worker makes about 1/12 of a teaspoon in her life", "Roughly two million flowers fill one jar", "Capped honey keeps for years without spoiling", "Enzymes in her honey stomach start the work mid flight"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Million Flowers",
+          "text": "Honey does not come out of a flower. It has to be made, and making it is one of the strangest manufacturing jobs in nature. It starts as nectar, which is mostly water with some sugar dissolved in it. A forager bee drinks nectar into a stomach she does not digest with, a stretchy pouch sometimes called a honey stomach. Flying home, enzymes in that pouch begin splitting the long sugar in nectar into two simpler sugars. Back at the hive she does not store it herself. She passes the load mouth to mouth to a younger house bee, who works it over with her tongue, exposing it to the warm air, adding more enzymes, and passing it on again. The nectar is chewed and handed around until its chemistry has changed. Then comes the drying. The house bees spread the thin syrup into wax cells and fan it with their wings, thousands of them, hour after hour, driving off water until what began as roughly eighty percent water is down to about seventeen. That is the whole trick. Honey is too sweet and too dry for mold or bacteria to live in, and it is slightly acidic besides. Sealed under a wax cap, it will keep for years without spoiling. When the water is gone, a bee caps the cell with fresh wax and the pantry is closed. The cost is enormous. A single worker bee, over her entire six week life, produces about one twelfth of a teaspoon of honey. To fill one jar, the hive must visit roughly two million flowers and fly a distance greater than the trip around the Earth. No bee ever sees the jar filled. Each one contributes a smear of sweetness to a store she is unlikely to eat, in a winter she will not live to see."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "List the steps that turn nectar into honey, in order.",
+            "Why does honey not spoil? Quote the phrase the passage uses to explain it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What do the last two sentences do that the rest of the passage does not, and why does the author put them last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering nectar collection, enzymes and passing mouth to mouth, fanning off the water, and the enormous cost per bee)",
+            "forager drinks nectar into her honey stomach; enzymes split the sugar in flight; she passes it mouth to mouth to house bees who chew it and add more enzymes; the bees spread it in cells and fan off the water to about seventeen percent; a bee caps the cell with wax",
+            "it is too dry and too sweet for anything to grow in it; quote: too sweet and too dry for mold or bacteria to live in",
+            "(inform, with detail: it explains a process step by step and gives numbers; the closing lines add a persuasive, emotional note)",
+            "(they shift from process to meaning: one bee's whole life buys a smear of honey she will never eat; ending there leaves the reader with the cost, not the facts)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["nectar → ____", "enzymes → ____", "acidic → ____", "forager → ____"],
+          "rows": 1,
+          "answers": [
+            "the sugary liquid inside a flower, mostly water",
+            "substances in the bee that change one chemical into another, here splitting sugar",
+            "sour, like lemon juice; sharp enough that microbes struggle to grow",
+            "a bee whose job is flying out to collect nectar and pollen"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls making honey a manufacturing job. Explain why that word fits better than gathering.",
+            "The hive spends a huge amount of work to remove water it collected on purpose. Why is that not wasteful?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the bees do not just collect nectar, they change it chemically and physically into a different substance, like a factory)",
+            "(inference: the water is the only way to carry the sugar home; drying it is what turns food that would rot into food that keeps all winter)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: knowing what one jar costs a hive, should people keep taking honey from bees? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bee That Dances Directions",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-bee", "templateLabel": "The Bee That Dances Directions", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bee",
+          "notes": ["Apis mellifera", "A swarm is half a colony leaving with the old queen", "Scouts dance harder for better homes", "A quorum of about 15 bees ends the debate", "Thomas Seeley worked this out on an island", "Piping warms the flight muscles for takeoff"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Swarm Makes Up Its Mind",
+          "text": "In late spring a healthy hive does something that looks like a disaster and is actually a birth. The old queen leaves, and roughly half the colony leaves with her. Ten thousand bees pour out of the entrance, fill the air, and then settle into a hanging beard on a nearby branch. They have no home. They are carrying only the honey in their stomachs, enough for about three days. Somewhere within a few miles there is a hollow tree that will keep them alive through winter, and somewhere else there are a dozen hollows that will kill them. The swarm has to choose, and it has no leader. What happens next was worked out over decades, largely by a biologist named Thomas Seeley, who carried hives to an island with almost no natural nest sites, built wooden boxes of different sizes, and watched which ones the bees picked. A few hundred of the oldest bees leave the cluster as scouts. Each one searches alone. When a scout finds a possible home she inspects it carefully, walking the inside walls, measuring the volume by crawling around it, checking the size of the entrance and its height off the ground. Then she flies back and dances on the surface of the swarm, the same waggle dance foragers use for flowers, except that here it advertises real estate. And here is the part that matters. She dances with an enthusiasm that matches the quality of what she found. A superb cavity earns a hundred circuits of dancing. A mediocre one earns ten. A poor one earns none, because she does not bother to dance at all. Other scouts watch, fly out to inspect the advertised site themselves, and come back with their own independent opinion. They do not simply copy the dancer. A bee who visits a mediocre cavity dances weakly for it no matter how hard the first bee sold it. Good sites accumulate dancers. Bad sites lose them. Every dancer also fades, dancing a little less on each return, so a site only holds support if new bees keep confirming it. Support has to be earned again and again or it evaporates. Eventually scouts gathered at one site notice that a crowd has formed there, a quorum of perhaps fifteen or twenty bees. That threshold, not a majority vote, is the decision. The scouts race home, run through the cluster piping a high shrill signal that warms the flight muscles of ten thousand bees, and the whole swarm lifts off and flies, usually straight, to a hole in a tree that most of them have never seen. The colony has no leader, no map, and no shared language beyond a shaking body and a shrill note. It still makes the right choice almost every time. Seeley's point, put plainly, is that a group can be smarter than any of its members if it gathers many independent opinions, lets evidence rather than volume decide, and does not let the loudest scout win."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how a scout's dance carries information about quality, not just location. Cite the evidence.",
+            "The passage says the scouts do not simply copy the dancer. Explain why that independence is the thing that makes the system work.",
+            "Explain the difference between a quorum and a majority vote, and why the passage bothers to make that distinction. Cite the sentence that draws it.",
+            "Analyze the last sentence. What is the author doing by ending on people rather than on bees, and has the passage earned that move?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a leaderless swarm picks a new home by having scouts inspect sites independently and advertise them in proportion to quality until enough agree)",
+            "(dance length scales with site quality; cite: A superb cavity earns a hundred circuits of dancing. A mediocre one earns ten.)",
+            "(if bees copied the dancer, an early enthusiastic scout could sell a bad site; independent inspection means the site itself, not the salesmanship, generates support)",
+            "(a quorum is a threshold of bees gathered at the site, not a count of the whole group; cite: That threshold, not a majority vote, is the decision)",
+            "(it turns a nature passage into an argument about how groups should decide; earned if the reader accepts the independence and decay evidence, arguable because bees are not people and the passage offers no human example)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["quorum → ____", "cavity → ____", "mediocre → ____", "evaporates → ____"],
+          "rows": 2,
+          "answers": [
+            "the number of members that must gather before a decision counts",
+            "a hollow space, here a hole in a tree big enough to nest in",
+            "ordinary, not bad but not good enough to be worth much",
+            "fades away to nothing, here used for support that is not renewed"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says every dancer fades, dancing a little less on each return. Explain what would go wrong if dances never faded.",
+            "Seeley studied bees on an island with almost no natural nest sites. Explain why he chose that island, and name one thing the choice might have hidden from him.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(support for the first site found would never decline, so the swarm could lock onto a poor home before better ones were discovered; the decay is what lets the group change its mind)",
+            "(with no natural competition he controlled every option and knew exactly what each site was worth; it may have hidden how bees behave when real, varied, natural sites are available)",
+            "(student question plus a credible source type, for example a peer reviewed study or a beekeeping researcher)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Human groups should make decisions the way a swarm does. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

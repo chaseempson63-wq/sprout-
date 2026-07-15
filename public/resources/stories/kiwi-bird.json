@@ -1,0 +1,327 @@
+{
+  "key": "kiwi-bird",
+  "title": "The Bird With Its Nose on the Wrong End",
+  "blurb": "The flightless New Zealand bird that hunts by smell in the dark and lays an egg a fifth of its own size.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird With Its Nose on the Wrong End",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-kiwi-bird", "templateLabel": "The Bird With Its Nose on the Wrong End", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the kiwi's long beak." },
+        {
+          "kind": "image",
+          "imageKey": "kiwi-bird",
+          "notes": ["It is a bird that cannot fly", "Its feathers feel like fur", "It sleeps all day", "It smells with the tip of its beak", "It loves to eat worms"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a kiwi. A kiwi is a bird. But a kiwi cannot fly. It has no big wings. It has soft feathers like fur. A kiwi has a long beak. Its nose is on the tip of its beak. It sniffs the ground. Sniff, sniff, sniff. It smells a worm. The kiwi pulls the worm up. The kiwi sleeps all day. It walks in the dark night."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the worms in each row. Write how many in the box.",
+          "emoji": "🪱",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "kiwi    beak" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to where it sleeps.",
+          "pairs": [
+            { "left": "kiwi", "right": "burrow" },
+            { "left": "bird", "right": "nest" },
+            { "left": "dog", "right": "house" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own kiwi. Give it a very long beak.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird With Its Nose on the Wrong End",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-kiwi-bird", "templateLabel": "The Bird With Its Nose on the Wrong End", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "kiwi-bird",
+          "notes": ["Say it KEE-wee", "It lives only in New Zealand", "Its wings are as long as your finger", "It digs a burrow to sleep in", "Its call sounds like its name"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Sniffs for Dinner",
+          "text": "A kiwi is a bird that lives in New Zealand. It cannot fly. Its wings are tiny and hide under its feathers. Its feathers are shaggy and feel like hair. Most birds have their nostrils up near their eyes. The kiwi does not. The kiwi has its nostrils at the very tip of its long beak. It pokes the beak into the soft dirt and sniffs. When it smells a worm, it pulls the worm out and eats it. A kiwi sleeps in a burrow all day. At night it comes out to hunt. Its cry sounds a lot like its name: kee-wee."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does the kiwi live?", "Where are the kiwi's nostrils?", "When does a kiwi hunt?"],
+          "rows": 2,
+          "answers": ["in New Zealand", "at the tip of its long beak", "at night"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A kiwi cannot ____.", "Its feathers feel like ____.", "It sleeps in a ____ all day.", "It sniffs the dirt to find a ____."],
+          "wordBank": ["fly", "hair", "burrow", "worm"],
+          "answers": ["fly", "hair", "burrow", "worm"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each body part to its job.",
+          "pairs": [
+            { "left": "long beak", "right": "smells worms in the dirt" },
+            { "left": "strong legs", "right": "dig a burrow" },
+            { "left": "shaggy feathers", "right": "keep the kiwi warm" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the kiwi hunting at night. Add some trees and a moon.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird With Its Nose on the Wrong End",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-kiwi-bird", "templateLabel": "The Bird With Its Nose on the Wrong End", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "kiwi-bird",
+          "notes": ["Say it KEE-wee", "The only bird with nostrils at the beak tip", "Small eyes, poor sight, excellent nose", "Whiskers on its face help it feel the dark", "Its bones are heavy, not hollow", "It is about the size of a chicken"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Sniffs for Its Dinner",
+          "text": "Every bird you know has its nostrils up near its eyes. The kiwi is the only bird on Earth that does not. Its two nostrils sit at the very tip of its long beak, so the kiwi can push that beak deep into the forest floor and smell what is hiding down there. Most birds have a weak sense of smell and sharp eyes. The kiwi is the other way around. Its eyes are small and its sight is poor, but its nose is excellent, and stiff whiskers around its face help it feel its way through the dark. A kiwi does almost everything at night. It sleeps through the day in a burrow it digs with its strong legs. When the sun goes down it comes out to hunt worms, grubs, beetles, and spiders. Kiwi live only in New Zealand, and they cannot fly. Their wings are about as long as your finger and are buried under shaggy feathers that feel more like hair than like feathers. Their bones are heavy and full of marrow, not hollow and light like the bones of a flying bird. A kiwi is not built for the sky. It is built for the ground, in the dark, with its nose down."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What makes the kiwi's nostrils different from every other bird's?",
+            "Name two things a kiwi eats.",
+            "How is a kiwi's bone different from a flying bird's bone?",
+            "Why do you think a kiwi needs whiskers on its face?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they sit at the tip of its beak instead of near its eyes",
+            "any two of: worms, grubs, beetles, spiders",
+            "a kiwi's bones are heavy and full of marrow, not hollow and light",
+            "(inference: it hunts at night and cannot see well, so it feels its way)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Bird That Sniffs for Its Dinner", "How to Teach a Bird to Fly", "The Tallest Tree in New Zealand"],
+          "answers": ["The Bird That Sniffs for Its Dinner"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The kiwi digs a ____ and sleeps in it all day.", "Its ____ are small and its sight is poor.", "Kiwi live only in New ____."],
+          "wordBank": ["burrow", "eyes", "Zealand"],
+          "answers": ["burrow", "eyes", "Zealand"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which kiwi fact surprised you most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird With Its Nose on the Wrong End",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-kiwi-bird", "templateLabel": "The Bird With Its Nose on the Wrong End", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "kiwi-bird",
+          "notes": ["Dense marrow-filled bones, not hollow", "Body temperature near 38 degrees Celsius, low for a bird", "Whiskers around the beak, like a cat", "The egg can be a fifth of the mother's weight", "Chicks hatch fully feathered and feed themselves", "New Zealand had no land mammals except bats"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Bird Built Like a Mammal",
+          "text": "Scientists sometimes joke that the kiwi is an honorary mammal. The joke has a point. A kiwi has no hollow flight bones; its bones are dense and filled with marrow, like yours. It has whiskers around its beak, the way a cat does. It digs a burrow and sleeps in it through the daylight. It hunts by smell in the dark. Its body temperature sits near 38 degrees Celsius, lower than almost any other bird and much closer to a mammal's. Its feathers have lost the neat zip-together structure that makes a wing work, so they hang loose and shaggy, more like fur. None of this is an accident. New Zealand spent millions of years with no land mammals in its forests except bats. The jobs a hedgehog or a badger might have taken were simply empty, and birds moved in. A flying bird that has nothing to escape from can afford to stop flying, and flight is expensive to build and to fuel. The kiwi's ancestors put that energy somewhere else: into legs, into a nose, into a night shift on the forest floor. There is one more oddity, and it is the strangest of all. The female lays an egg so large that it can weigh a fifth of her whole body. Inside that enormous egg the chick grows for about eleven weeks, far longer than most birds, and it hatches fully feathered, looking like a small copy of its parents. Nobody feeds it. Within a week or two it walks out of the burrow and starts sniffing for its own worms. Then people arrived, and brought stoats, cats, dogs, and rats with them. The kiwi's whole design assumes that nothing is hunting it on the ground. That assumption is now false, and it is the reason kiwi are in trouble."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "List three ways a kiwi is more like a mammal than like a typical bird.",
+            "The passage says flight is expensive. What does it mean by that?",
+            "Why did losing the ability to fly not hurt the kiwi's ancestors?",
+            "The passage says the kiwi's design assumes nothing is hunting it on the ground. Why is that assumption dangerous now?"
+          ],
+          "rows": 2,
+          "answers": [
+            "any three of: marrow-filled bones, whiskers, burrows, hunts by smell, low body temperature, fur-like feathers",
+            "(it costs a lot of energy to build and to fuel a flying body)",
+            "(inference: no land mammals hunted them, so there was nothing to escape from)",
+            "(inference: stoats, cats, dogs, and rats now hunt on the ground and the kiwi has no defense)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A bird evolved into a mammal-like ground animal in a land with no predators, and that design now puts it at risk",
+            "Kiwi are the only birds that can dig",
+            "All birds should give up flying to save energy"
+          ],
+          "answers": ["A bird evolved into a mammal-like ground animal in a land with no predators, and that design now puts it at risk"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["honorary → ____", "ancestors → ____", "burrow → ____"],
+          "rows": 1,
+          "answers": [
+            "given a title you have not really earned, as a kind of joke or honor",
+            "the relatives an animal is descended from, long ago",
+            "a hole an animal digs to live or sleep in"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: was giving up flight a good decision for the kiwi's ancestors? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird With Its Nose on the Wrong End",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-kiwi-bird", "templateLabel": "The Bird With Its Nose on the Wrong End", "age": 12 },
+      "blocks": [
+        { "kind": "image",
+          "imageKey": "kiwi-bird",
+          "notes": ["Five species, from the little spotted kiwi to the great spotted kiwi", "Egg is about 20 percent of the female's weight", "An ostrich egg is only about 2 percent of its mother", "Incubation runs about 75 to 85 days", "In brown kiwi the father sits on the egg", "Stoats were released in New Zealand in the 1880s"]
+        },
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "passage",
+          "prompt": "The Egg That Should Not Fit",
+          "text": "Hold a chicken egg in your hand. Now imagine an egg six times that size, laid by a bird barely larger than the chicken. That is a kiwi egg. Measured against the body that produces it, the kiwi lays one of the largest eggs of any bird alive: roughly twenty percent of the female's weight. An ostrich egg, which looks enormous sitting on a table, is only about two percent of its mother. In the final days before laying, the egg crowds the kiwi's insides so completely that she can barely eat, and she spends much of her time standing in cold water to take the weight off her feet. Why bother? The answer is inside the shell. A kiwi egg is unusually rich in yolk, and that yolk funds an extremely long development. The chick sits in there for around eleven or twelve weeks, while a robin manages the whole job in two. It hatches with a full coat of feathers and a working set of instincts, a miniature adult rather than a helpless pink beggar with its mouth open. No parent feeds it. It lives off the last of its yolk for the first few days, then walks out into the forest and begins sniffing for worms on its own. In the brown kiwi, incubation is mostly the father's work: he sits on the egg for those eleven weeks, slipping out of the burrow only to feed at night. For millions of years this was an excellent strategy. A chick that starts life large and capable does not need parents, and in a country with no ground predators, hatching small and helpless would not have mattered much anyway. Then stoats arrived. A stoat is a slim, ferocious hunter about the size of a rolled-up sock, and it was released in New Zealand in the 1880s to control rabbits. It found kiwi chicks instead. Where nothing is done to stop them, stoats and cats and dogs kill about ninety-five of every hundred kiwi chicks before those chicks are old enough to breed. The clever response is called Operation Nest Egg. Rangers lift eggs out of wild burrows, hatch them in safety, raise the chicks until each one weighs about a kilogram, and then carry them back to the forest. At that size a kiwi can kick hard enough to fight off a stoat. Survival for those chicks climbs from around five percent to about sixty-five. It is an odd kind of rescue. The egg was already the kiwi's answer to danger, an answer worked out over millions of years, and it was a good one. It is simply an answer to the wrong question now."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the passage compare the kiwi egg to an ostrich egg instead of just giving the kiwi number?",
+            "Explain what the rich yolk pays for. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the huge egg, the self-sufficient chick, and the predator threat)",
+            "(inference: 20 percent means little on its own; the 2 percent ostrich comparison shows how extreme the kiwi is)",
+            "an extremely long development, about eleven or twelve weeks; quote: funds an extremely long development",
+            "(inform, with detail: it defines and explains and gives numbers; the closing lines lean persuasive)",
+            "(the egg strategy solved the old danger but not the new one; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["incubation → ____", "instincts → ____", "ferocious → ____", "strategy → ____"],
+          "rows": 1,
+          "answers": [
+            "sitting on an egg to keep it warm while the chick grows",
+            "knowledge an animal is born with rather than taught",
+            "fierce and aggressive",
+            "a plan or approach that solves a problem"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Operation Nest Egg lifts about five percent survival to about sixty-five percent. Explain why returning chicks at one kilogram is the part that matters.",
+            "The passage calls Operation Nest Egg an odd kind of rescue. Explain the author's point in your own words."
+          ],
+          "rows": 3,
+          "answers": [
+            "(at that size a chick can fight off a stoat, so the danger window is the small-chick stage)",
+            "(inference: people are patching a problem people created, not fixing the kiwi, which was never broken)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should rangers keep taking eggs out of the wild to hatch them, or should the work go into removing stoats instead? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird With Its Nose on the Wrong End",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-kiwi-bird", "templateLabel": "The Bird With Its Nose on the Wrong End", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "kiwi-bird",
+          "notes": ["Genus Apteryx, meaning without wings", "The only bird with nostrils at the tip of its beak", "Wings about 3 cm long, tipped with a small claw", "Closest known relative: the extinct elephant bird of Madagascar", "Legs are about a third of its body weight", "Its genome shows color vision genes decaying", "A taonga, a treasure, in Maori tradition"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Gave Up the Sky",
+          "text": "A kiwi is a bird in roughly the way a whale is a mammal: technically obvious, visually confusing. It has feathers, a beak, and it lays eggs, and there the resemblance to the sparrow on your fence largely ends. It is about the size of a chicken. Its wings are three centimeters long, tipped with a small useless claw and buried so deep in its plumage that you cannot find them without going looking. It has no real tail. Its feathers have lost the tiny hooks that zip neighboring strands into a smooth flight surface, so each one hangs loose and the whole bird reads as furred rather than feathered. Its bones are dense and marrow-filled instead of hollow. It runs on thick legs that account for about a third of its body weight, and it cannot leave the ground at all. Its scientific name, Apteryx, simply means without wings. For a long time the story told about the kiwi was tidy. Kiwi belong to a group called the ratites, which also includes the ostrich of Africa, the emu of Australia, the rhea of South America, and the extinct moa of New Zealand. All are flightless. All live, or lived, on land that was once joined in the southern supercontinent Gondwana. The obvious conclusion was that one flightless ancestor had been carried apart on drifting continents, and the kiwi had simply ridden New Zealand away from its cousins. Ancient DNA broke that story. When researchers sequenced material from the extinct elephant bird of Madagascar, a creature that stood up to three meters tall and weighed as much as half a ton, they expected it to sit beside the ostrich, its nearest neighbor on the map. Instead the elephant bird turned out to be the kiwi's closest known relative. Two birds, one enormous and one the size of a football, on opposite sides of an ocean. The only way to explain that is that their shared ancestor could fly. Flight was not lost once, long ago, on a splitting continent. It was lost again and again, independently, by birds that flew somewhere safe and then discovered they no longer needed wings. New Zealand was exactly that kind of safe. Until people landed roughly 750 years ago, the islands held no land mammals except bats. Nothing hunted the forest floor by scent at night, and nothing hunted the animals that might. The job was open. The kiwi took it, and took it thoroughly. It moved its nostrils to the tip of its beak, the only bird known to have done so, and grew an unusually large olfactory region in its brain to process what those nostrils find. It grew whiskers. It let its body temperature settle near 38 degrees Celsius, several degrees below a typical bird, because it no longer needed the furnace that powers flight. It gave up much of its eyesight: kiwi have among the smallest eyes for their body size of any bird, and their genome shows the color vision genes quietly decaying, the way genes do when selection stops paying attention to them. Every one of those trades was a bargain for millions of years. Every one of them is now a liability. A ground-nesting bird that cannot fly, cannot see well, and has never had reason to fear anything with teeth is close to an ideal prey animal, and stoats have been in these forests since the 1880s. Without predator control, around ninety-five percent of kiwi chicks die before they are old enough to breed. The bird is on the coins, on the rugby shirts, and in the name New Zealanders use for themselves. It is also vanishing from the country it named, for reasons that have nothing to do with any flaw in the kiwi and everything to do with what came off the boats."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the tidy Gondwana story and exactly what the elephant bird evidence does to it. Cite the sentence that states the conclusion.",
+            "The passage lists trades the kiwi made. Choose two and explain what was given up and what was gained.",
+            "Identify the shift in the passage: where does it turn from wonder to warning, and how does the author signal it?",
+            "The final sentence blames what came off the boats. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the tidy story: one flightless ancestor split apart by drifting continents; cite: The only way to explain that is that their shared ancestor could fly)",
+            "(any two: eyesight for smell; flight for legs and a night niche; high body temperature for lower energy cost)",
+            "(at Every one of those trades was a bargain for millions of years. Every one of them is now a liability; the parallel sentences flip the meaning)",
+            "(it moves responsibility from the animal's biology to human introductions; supported by the stoat and 95 percent evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["plumage → ____", "olfactory → ____", "liability → ____", "independently → ____"],
+          "rows": 2,
+          "answers": [
+            "the whole covering of feathers on a bird",
+            "having to do with the sense of smell",
+            "something that is now a disadvantage or a risk",
+            "happening separately, without one causing the other"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says genes decay when selection stops paying attention to them. Explain what that means about how evolution works.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(traits that stop being useful are no longer maintained, so mutations accumulate unchecked)",
+            "(student question plus a credible source type, such as a conservation survey or a genome study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The kiwi is not badly built, it is well built for a world that no longer exists. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

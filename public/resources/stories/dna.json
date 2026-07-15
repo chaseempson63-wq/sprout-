@@ -1,0 +1,323 @@
+{
+  "key": "dna",
+  "title": "The Twisted Ladder Inside You",
+  "blurb": "Four letters, three billion of them, coiled inside almost every cell. How DNA holds the instructions for building a living thing, and how we learned to read them.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Twisted Ladder Inside You",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-dna", "templateLabel": "The Twisted Ladder Inside You", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Trace the twisty shape with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "dna",
+          "notes": ["It is shaped like a twisty ladder", "It is inside almost every cell", "It is far too small to see", "You got yours from your parents", "Every plant and animal has it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Inside you there are tiny, tiny parts called cells. You cannot see them. Inside almost every cell is DNA. Say it like the letters: D, N, A. DNA is shaped like a twisty ladder. DNA is a set of instructions. It tells your body how to grow. It told your eyes what color to be. It told your hair how to curl. Your dog has DNA too. So does the grass."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the colored beads in each row. Write how many in the box.",
+          "emoji": "🔵",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "DNA    cell" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its shape.",
+          "pairs": [
+            { "left": "DNA", "right": "a twisty ladder" },
+            { "left": "a ball", "right": "a circle" },
+            { "left": "a box", "right": "a square" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own twisty ladder. Color every rung a different color.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Twisted Ladder Inside You",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-dna", "templateLabel": "The Twisted Ladder Inside You", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "dna",
+          "notes": ["DNA stands for a very long word", "The twisted shape is called a helix", "The rungs hold the instructions", "Half of yours came from each parent", "A dog, a tree, and a bug all have DNA"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ladder in Every Cell",
+          "text": "Your body is made of tiny parts called cells. A cell is so small that you need a microscope to see even one. Curled up inside almost every cell is a long thread called DNA. DNA is shaped like a ladder that has been twisted around and around. The two long sides hold up the rungs in the middle. The rungs are the important part. They spell out instructions, a bit like words on a page. Those instructions tell your cells what to build. Half of your DNA came from your mom. Half came from your dad. That is why you look a little like both of them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where is DNA found?", "What shape is DNA?", "Which part of the ladder holds the instructions?", "Who did your DNA come from?"],
+          "rows": 2,
+          "answers": ["inside almost every cell", "a twisted ladder", "the rungs in the middle", "half from your mom and half from your dad"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Your body is made of tiny parts called ____.", "DNA is shaped like a twisted ____.", "The ____ in the middle spell out the instructions.", "DNA tells your cells what to ____."],
+          "wordBank": ["cells", "ladder", "rungs", "build"],
+          "answers": ["cells", "ladder", "rungs", "build"]
+        },
+        { "kind": "draw", "prompt": "Draw a big twisted ladder. Add a rung for each person in your family.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Twisted Ladder Inside You",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-dna", "templateLabel": "The Twisted Ladder Inside You", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "dna",
+          "notes": ["The twisted shape is called a double helix", "The instructions use only four letters", "A always pairs with T", "G always pairs with C", "The ladder unzips when a cell copies itself"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Twisted Ladder in Every Cell",
+          "text": "Almost every cell in your body carries a full set of instructions for building you. Those instructions are written in DNA. If you could pull a strand of DNA straight, it would look like a ladder. Two long rails run up the sides. Between them sit the rungs. Then the whole ladder twists, like a rope ladder someone spun around. Scientists call that shape a double helix. The instructions are written with only four letters: A, T, G, and C. Each letter is a chemical, and each rung of the ladder is made of two letters holding hands. The pairing never changes. A always joins with T. G always joins with C. That simple rule is what makes DNA so useful. If you know one side of the ladder, you can work out the other side every time. Your cells use that rule when they copy themselves. The ladder unzips down the middle. Each half then builds a new partner, letter by letter, until there are two complete ladders where there was one. Your body does this billions of times a day, and it almost never makes a mistake."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What shape is a strand of DNA, and what do scientists call that shape?",
+            "Which four letters are the instructions written with?",
+            "Which letter always joins with A? Which letter always joins with G?",
+            "Why do you think it helps that A always joins with T and G always joins with C?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a twisted ladder; scientists call it a double helix",
+            "A, T, G, and C",
+            "T always joins with A; C always joins with G",
+            "(inference: one side tells you what the other side must be, so a cell can copy it correctly)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Twisted Ladder in Every Cell", "How to Build a Wooden Ladder", "The Best Way to Climb a Rope"],
+          "answers": ["The Twisted Ladder in Every Cell"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The two long sides of the DNA ladder are called ____.", "Scientists call the twisted shape a double ____.", "To copy itself, the ladder ____ down the middle."],
+          "wordBank": ["rails", "helix", "unzips"],
+          "answers": ["rails", "helix", "unzips"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about DNA, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Twisted Ladder Inside You",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-dna", "templateLabel": "The Twisted Ladder Inside You", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dna",
+          "notes": ["About six feet of DNA is packed into one cell", "46 chromosomes in almost every human cell", "Roughly three billion pairs of letters", "About 20,000 protein-coding genes", "Any two people match at about 99.9 percent", "Oak trees and bacteria use the same four letters"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Four Letters, Three Billion Long",
+          "text": "Stretch out the DNA from a single one of your cells and it would run about six feet, longer than most adults are tall. Now consider that it is packed inside a cell you cannot see without a microscope. To fit, the strand winds around tiny protein spools, coils, and coils again, until it forms the compact bundles we call chromosomes. You have 46 of them in almost every cell, arranged in 23 pairs. What is written on all that thread? A message, spelled with an alphabet of four chemical letters: A, T, G, and C. Your copy runs to roughly three billion pairs of letters. Stretches of that message are called genes, and each gene is a set of directions for building one protein. Proteins do the actual work of a body. They digest your lunch, carry oxygen in your blood, and build the lens of your eye. Humans have around 20,000 protein-coding genes, which is fewer than scientists expected when they started counting. The four-letter alphabet is not unique to you. It is the same alphabet used by oak trees, by mushrooms, by the bacteria in a puddle. Only the message differs. That is a clue about the deep past. Every living thing we have ever examined runs on the same code, which suggests they all inherited it from a shared ancestor that lived billions of years ago. And the message is nearly identical between people. Compare your DNA to a stranger's on the other side of the world and about 99.9 percent of it matches. Everything that makes you look and sound like yourself is written in the remaining tenth of a percent."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "How does six feet of DNA fit inside a cell too small to see? Explain in your own words.",
+            "What is a gene, and what does a protein do?",
+            "The passage says every living thing runs on the same code. What does the author say that suggests?",
+            "If two strangers match at about 99.9 percent, why do people look so different from each other?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it winds around protein spools and coils again and again into chromosomes",
+            "a gene is a set of directions for building one protein; proteins do the work of the body, like digesting food and carrying oxygen",
+            "that all living things inherited the code from a shared ancestor billions of years ago",
+            "(inference: all the differences are written in the remaining tenth of a percent, which is still millions of letters)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A four-letter code, shared by all life and nearly identical between people, is packed into every cell",
+            "Oak trees and mushrooms are closely related to human beings",
+            "Scientists have counted every protein in the human body"
+          ],
+          "answers": ["A four-letter code, shared by all life and nearly identical between people, is packed into every cell"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["chromosomes → ____", "gene → ____", "unique → ____"],
+          "rows": 1,
+          "answers": [
+            "the compact bundles DNA coils into inside a cell",
+            "a stretch of DNA with the directions for building one protein",
+            "belonging to only one thing and nothing else"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says humans have fewer genes than scientists expected. Why might a small number of genes still build something as complicated as a person? Give two ideas.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Twisted Ladder Inside You",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-dna", "templateLabel": "The Twisted Ladder Inside You", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dna",
+          "notes": ["Photo 51 was taken in May 1952", "Rosalind Franklin used X-ray crystallography", "Watson and Crick published the structure in 1953", "The two strands run in opposite directions", "The Nobel Prize went to three men in 1962", "Franklin died in 1958, aged 37"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Photograph That Cracked the Code",
+          "text": "By 1952, biologists agreed that DNA carried heredity. What nobody could explain was how. A molecule that stores instructions must do two jobs at once: hold a message, and copy that message perfectly. No one had seen a shape that could manage both. At King's College London, Rosalind Franklin was working on the shape. Her method was X-ray crystallography: fire X-rays at a fiber of DNA and photograph the pattern they scatter into. The molecule itself stays invisible. What you get is a smudged arrangement of spots, and from that pattern you calculate backward to the structure. It is a demanding kind of detective work, and Franklin was exceptionally good at it. In May 1952, she and her student Raymond Gosling produced an image now known as Photo 51. Its blurred X of spots was the signature of a helix, and the spacing carried the measurements. Franklin was still working carefully through her calculations when Maurice Wilkins, a colleague, showed Photo 51 to James Watson without her knowledge. Watson and Francis Crick, at Cambridge, had been building models out of cardboard and wire. The photograph, along with unpublished data of Franklin's that reached them through a report, gave them what they lacked. In 1953 they published the answer: two strands winding around each other in opposite directions, sugar and phosphate on the outside, the four bases paired in the middle, A with T and G with C. The pairing rule solved both problems in one stroke. It explained the message, and it explained the copying, because an unzipped strand dictates its own replacement. Watson and Crick noted the point in a famously restrained sentence, observing that the pairing they had proposed immediately suggests a possible copying mechanism. Watson, Crick, and Wilkins shared the Nobel Prize in 1962. Franklin was not named. She had died of ovarian cancer in 1958, aged 37, and the prize is not awarded after death. Whether she would have been included had she lived is a question the people involved answered differently for the rest of their lives."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What two jobs does the passage say a molecule of heredity must do at once?",
+            "Explain how X-ray crystallography works, given that the molecule itself stays invisible.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Quote the phrase the passage uses to describe what Photo 51 revealed about the shape of DNA."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering Franklin's photograph + the double helix + the credit dispute)",
+            "hold a message, and copy that message perfectly",
+            "X-rays are fired at a fiber of DNA, the scattered pattern is photographed, and the structure is calculated backward from the pattern of spots",
+            "(inform, with detail: it defines crystallography and gives dates and names; the closing paragraphs carry a quieter argument about credit)",
+            "quote: the signature of a helix"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["heredity → ____", "crystallography → ____", "unpublished → ____", "restrained → ____"],
+          "rows": 1,
+          "answers": [
+            "the passing of traits from parents to children",
+            "working out a structure from the pattern X-rays scatter into",
+            "not yet shared or printed for other scientists to read",
+            "held back, understated, not showing much feeling"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why does the pairing rule explain the copying? Walk through what happens when the ladder unzips.",
+            "The passage says Franklin was still working carefully through her calculations when her photograph was shown to Watson. What is the author implying by putting those two facts in the same sentence?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(each strand dictates its partner, so an unzipped half can rebuild the missing side exactly)",
+            "(inference: her caution cost her the race, and the speed of others depended on work she had not agreed to share)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when a discovery depends on someone else's data, who should get the credit? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Twisted Ladder Inside You",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-dna", "templateLabel": "The Twisted Ladder Inside You", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dna",
+          "notes": ["Structure published in 1953", "The Human Genome Project ran from 1990 to 2003", "The last gaps were not closed until 2022", "Sequencing fell from billions of dollars to hundreds", "CRISPR began as a bacterial defense against viruses", "First CRISPR therapy approved in 2023"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Three Billion Letters and the Right to Read Them",
+          "text": "Ask what DNA is and you get a tidy answer: a molecule shaped like a twisted ladder, its rungs built from four bases, A, T, G, and C, paired by a rule that never varies. A with T. G with C. That answer is correct, and it is also the least interesting thing about DNA. The interesting part is what the rule made possible. Because the pairing is rigid, each strand of the ladder contains the full information of the other. Unzip the molecule and you do not destroy the message. You produce two copies of it. Watson and Crick saw this the moment they had the structure and said so, in one of the most understated sentences in science, noting that the pairing they had postulated immediately suggests a possible copying mechanism for the genetic material. Heredity, which had been a mystery for as long as people had noticed that children resemble their parents, turned out to be a consequence of geometry. For fifty years after 1953, reading a genome was brutally slow. Sequencing meant working out the order of the letters, and early methods produced them a few hundred at a time. The Human Genome Project set out in 1990 to read all three billion pairs in a single human genome. It took thirteen years and roughly three billion dollars, and even then it left gaps in the hardest, most repetitive stretches. Those final gaps were not closed until 2022. Then the price collapsed. A human genome that cost billions in 2003 can now be sequenced for a few hundred dollars in a day or two. Nothing about the biology changed. The machines changed, and a rate of improvement that outran even the semiconductor industry turned an epic national project into a routine order. Cheap reading produced an obvious next question. If we can read the message, can we edit it? In 2012, researchers described how a bacterial defense system called CRISPR could be aimed at any chosen sequence of DNA and made to cut it, letting the cell's own repair machinery rewrite what was there. Bacteria had been using the system to shred invading viruses for a very long time. Turned into a tool, it made editing a gene something a well-equipped lab could attempt in an afternoon. In 2023, regulators approved the first CRISPR-based therapy for patients, a treatment for sickle cell disease that corrects the problem in a patient's own blood cells. So here is where the tidy molecule leaves us. We can read a person's genome quickly and cheaply, and we can increasingly rewrite it. Both abilities cut in more than one direction. A genome predicts some things about a person's health, which is precisely why an insurer, an employer, or a police department might want to see it, and why a genome donated to a testing company is not only the donor's information. Your close relatives are written in your sample too, and they never consented. Editing raises the sharper version of the question. Repairing a gene that causes a painful disease in a living patient is hard to argue against. Editing an embryo, whose changes would pass to every descendant, is a different act, and in 2018 a Chinese scientist did it anyway, to widespread condemnation and a prison sentence. None of these questions are biological. The chemistry is settled and it is not complicated. The four letters pair the same way in a laboratory in Shenzhen, in a bacterium in a hot spring, and in the cells reading this page. What is unsettled is who decides what gets read, what gets written, and on whose behalf. That decision has never belonged to the molecule."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author calls the tidy answer the least interesting thing about DNA. Quote the sentence that says what the author finds interesting instead, and explain why the passage opens this way.",
+            "Explain why a rigid pairing rule makes copying possible. Cite the phrase the passage uses for what heredity turned out to be.",
+            "Quote the exact phrase describing how fast sequencing costs fell compared to other technology, and explain what the comparison is meant to do.",
+            "Identify where the passage turns from science to ethics. How does the author signal the shift?",
+            "Analyze the final sentence. What claim is it making, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a simple chemical rule made reading and rewriting life routine, leaving the hard questions to people rather than to biology)",
+            "(quote: The interesting part is what the rule made possible. It sets up the passage's real subject, the consequences rather than the structure)",
+            "(each strand contains the full information of the other, so an unzipped molecule yields two copies; cite: a consequence of geometry)",
+            "(quote: outran even the semiconductor industry. It frames the collapse in cost as historically extreme, not just a normal improvement)",
+            "(at So here is where the tidy molecule leaves us; the author pivots with a direct address and stops giving dates)",
+            "(it claims the limits are human choices, not scientific ones; supported by the privacy, consent, and embryo-editing evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["postulated → ____", "sequencing → ____", "consented → ____", "condemnation → ____"],
+          "rows": 2,
+          "answers": [
+            "proposed as an idea before it was proven",
+            "working out the exact order of the letters in a stretch of DNA",
+            "gave permission after being asked",
+            "strong public disapproval of an action"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says your close relatives are written in your sample too. Explain why that complicates the idea that a genome is private property.",
+            "The author separates repairing a gene in a living patient from editing an embryo. Explain the distinction, then argue whether it holds up.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(you share most of your sequence with relatives, so donating yours exposes information about people who were never asked)",
+            "(an embryo edit is heritable and passes to every descendant, and the person edited cannot consent; student argument either way)",
+            "(student question + a credible source type, such as a peer-reviewed journal or a national bioethics commission)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Anyone who can afford to read their own genome should be free to do whatever they like with the information. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

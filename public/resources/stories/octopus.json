@@ -1,0 +1,319 @@
+{
+  "key": "octopus",
+  "title": "The Octopus With Three Hearts",
+  "blurb": "Blue blood, eight arms that think for themselves, and a mind that evolved on its own branch of the tree of life.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Octopus With Three Hearts",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-octopus", "templateLabel": "The Octopus With Three Hearts", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Count the arms with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "octopus",
+          "notes": ["It has eight arms", "It lives in the sea", "It has no bones at all", "Its blood is blue", "It has three hearts"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an octopus. Say it like this: OK-tuh-pus. The octopus has eight long arms. Each arm has little round suckers. The suckers hold on tight. The octopus lives in the sea. It hides in a small cave in the rocks. It has no bones inside. It is soft all over. It can squeeze into a tiny hole. Then it peeks out with one big eye."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the suckers in each row. Write how many in the box.",
+          "emoji": "⚪",
+          "items": ["4", "2", "6", "3"],
+          "answers": ["4", "2", "6", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "arms    soft" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its home.",
+          "pairs": [
+            { "left": "octopus", "right": "sea" },
+            { "left": "bee", "right": "flower" },
+            { "left": "dog", "right": "house" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own octopus. Give it eight arms.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Octopus With Three Hearts",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-octopus", "templateLabel": "The Octopus With Three Hearts", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "octopus",
+          "notes": ["It has three hearts", "Its blood is blue, not red", "Eight arms and no bones", "It squirts black ink to hide", "The only hard part is its beak"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Octopus With Three Hearts",
+          "text": "An octopus has eight arms. It also has three hearts. Two of the hearts push blood to its gills. The third heart pushes the blood all around its body. Its blood is not red like yours. Its blood is blue. An octopus has no bones. The only hard part is its beak, and the beak is small. So if the beak fits through a hole, the rest of the octopus can squeeze through too. It can slip through a gap the size of a coin. When an octopus is scared, it squirts a cloud of black ink. Then it swims away while the water is dark."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many hearts does an octopus have?", "What color is its blood?", "What does it squirt when it is scared?"],
+          "rows": 2,
+          "answers": ["three hearts", "blue", "a cloud of black ink"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["An octopus has eight ____.", "Its blood is ____.", "The only hard part is its ____.", "It hides in a cloud of black ____."],
+          "wordBank": ["arms", "blue", "beak", "ink"],
+          "answers": ["arms", "blue", "beak", "ink"]
+        },
+        { "kind": "draw", "prompt": "Draw the octopus hiding in its rocky cave. Add some fish swimming past.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Octopus With Three Hearts",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-octopus", "templateLabel": "The Octopus With Three Hearts", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "octopus",
+          "notes": ["Three hearts, blue blood", "Copper in the blood makes it blue", "The big heart stops when it swims", "No bones except a beak like a parrot's", "It would rather walk than swim"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal With Three Hearts and Blue Blood",
+          "text": "Your blood is red because it carries oxygen using iron. An octopus does the job differently. Its blood carries oxygen using copper, and copper turns the blood blue. Cold sea water does not give up its oxygen easily, and copper blood is good at pulling it out. An octopus also has three hearts. Two of them are small. They sit beside the gills and push blood through them to pick up oxygen. The third heart is bigger. It sends that blood on to the rest of the body. Here is the odd part. When an octopus swims, the big heart stops beating. Swimming wears the animal out quickly. That is why an octopus would usually rather walk along the seafloor on its arms than swim above it. An octopus has no bones anywhere. The only hard piece is a beak, tucked underneath where all eight arms meet, shaped a lot like a parrot's. If the beak fits through a gap, the rest of the octopus can pour through after it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What makes octopus blood blue?",
+            "What job do the two small hearts do?",
+            "What happens to the big heart when an octopus swims?",
+            "Why do you think an octopus can squeeze through such a small gap?"
+          ],
+          "rows": 2,
+          "answers": [
+            "copper, which its blood uses to carry oxygen",
+            "they push blood through the gills to pick up oxygen",
+            "it stops beating",
+            "(inference: it has no bones, so only the small beak has to fit)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Animal With Three Hearts and Blue Blood", "How to Catch Fish From a Boat", "The Deepest Trench in the Ocean"],
+          "answers": ["The Animal With Three Hearts and Blue Blood"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Octopus blood carries oxygen using ____.", "The two small hearts sit beside the ____.", "The only hard part of an octopus is its ____."],
+          "wordBank": ["copper", "gills", "beak"],
+          "answers": ["copper", "gills", "beak"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which octopus fact surprised you most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Octopus With Three Hearts",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-octopus", "templateLabel": "The Octopus With Three Hearts", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "octopus",
+          "notes": ["About 500 million neurons", "Two thirds of them sit in the arms", "Every sucker can taste what it touches", "Chromatophores repaint the skin in under a second", "Most octopuses are colorblind", "Three hearts, blue blood, no bones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Arms That Think for Themselves",
+          "text": "An octopus is built nothing like you. You keep almost all of your neurons, the cells that carry thought, locked inside your skull. An octopus keeps about two thirds of its neurons out in its eight arms. Each arm has its own cord of nerves and can taste, touch, reach, and grip without waiting for orders from the brain. If an octopus pushes an arm into a crack in the reef, the arm hunts around on its own. The brain does not need to watch. Those arms are covered in suckers, and the suckers are not only for holding on. Every sucker is lined with sensors that taste whatever it touches. An octopus feeling its way over a rock is licking it with hundreds of small tongues at once. It can tell a crab from a stone in total darkness. The skin does something just as strange. Under the surface sit millions of tiny bags of color called chromatophores. Muscles pull each bag open or let it snap shut, and the skin repaints itself in less than a second. Other cells scatter light to add shine, and the skin itself lifts into bumps and spikes to copy the rough texture of coral. An octopus can vanish against a rock while you are looking straight at it. The strangest part is this. Scientists are fairly sure that almost every octopus is colorblind. It cannot see color the way you can, and yet it matches the colors around it almost perfectly. Nobody has fully explained how. One idea is that an octopus reads color with its skin."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Where does an octopus keep most of its neurons, and why does that matter?",
+            "What can the suckers do besides hold on?",
+            "Explain in your own words how an octopus changes color.",
+            "Why does the author say the colorblind part is the strangest?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about two thirds are in the arms, so each arm can taste, feel, and act without the brain",
+            "they taste whatever they touch",
+            "(muscles open and close tiny bags of color called chromatophores under the skin)",
+            "(inference: an animal that cannot see color still matches color perfectly, which should not be possible)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "An octopus senses and hides in ways no other animal can, and its arms do much of the thinking",
+            "Octopuses are the largest animals living in coral reefs",
+            "Scientists have explained everything about how octopuses see"
+          ],
+          "answers": ["An octopus senses and hides in ways no other animal can, and its arms do much of the thinking"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["neurons → ____", "chromatophores → ____", "colorblind → ____"],
+          "rows": 1,
+          "answers": [
+            "the cells that carry thought",
+            "tiny bags of color under the skin that muscles open and close",
+            "unable to see color the way most people do"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if each of your arms could taste and decide on its own, what would be easier about your day, and what would be harder? Give two examples.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Octopus With Three Hearts",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-octopus", "templateLabel": "The Octopus With Three Hearts", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "octopus",
+          "notes": ["Roughly 500 million neurons, only a third in the brain", "Our lineages split over 500 million years ago", "The coconut octopus carries shells as portable armor", "Most species live only one or two years", "A gland behind the eyes ends her life after brooding", "Three hearts, blue blood, no bones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Eight Arms, Three Hearts, Two Years",
+          "text": "An octopus and a human last shared an ancestor more than 500 million years ago. That ancestor was probably a small flat worm with nothing worth calling a brain. Everything clever that octopuses do, they invented on their own branch of the tree of life, with no help from ours. This is the closest thing to meeting an alien mind that Earth has to offer. The hardware is unfamiliar. An octopus carries roughly 500 million neurons, about as many as a dog, but only a third of them sit in its brain. The rest are spread through the eight arms, which means each arm can taste, feel, and decide for itself. The brain seems to give a general instruction, something like find food in that crack, and the arm works out the rest alone. Biologists still argue about where the octopus ends and the arm begins. The software is unfamiliar too. Octopuses open screw-top jars from the inside. They learn mazes and remember the answer weeks later. In one laboratory, octopuses learned to tell their keepers apart and squirted cold water at the keeper they disliked. Off the coast of Indonesia, a species called the coconut octopus collects empty coconut shells, cleans them out, carries them stacked under its body across open sand, and assembles them into a shelter when it needs one. Carrying a shell is slow and clumsy, and it protects the animal from nothing while it is being carried. The octopus is paying a cost now for a benefit later, and that is one of the standard tests for using a tool. And then there is the ending. Almost every octopus lives one or two years. A female lays her eggs, fastens them to the roof of a den, and guards them without ever leaving to hunt. She fans clean water over them for weeks or months. By the time they hatch, she is starved and worn out, and she dies. This is not bad luck. A gland behind her eyes drives it. In the laboratory, scientists have removed that gland, and the females went back to eating and lived far longer than they ever would in the sea. So the cleverest animal without a backbone gets almost no time to be clever, and it never meets its own young. Nothing it learns is passed down. Every octopus starts from nothing, works the ocean out alone, and takes what it knows with it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the author call an octopus the closest thing to an alien mind? Use the text.",
+            "Explain why the coconut octopus counts as a tool user. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author choose to end there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the separate evolution, the distributed nervous system, and the short life)",
+            "(our lineages split over 500 million years ago, so its intelligence evolved with no help from ours)",
+            "it pays a cost now for a benefit later; quote: paying a cost now for a benefit later",
+            "(inform, with detail: it defines terms and gives evidence; the closing turns persuasive)",
+            "(inference: no octopus can pass on what it learns, so each one begins again; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["ancestor → ____", "neurons → ____", "assembles → ____", "gland → ____"],
+          "rows": 1,
+          "answers": [
+            "a relative that a living thing is descended from",
+            "the cells that carry signals and thought",
+            "puts the pieces together into one thing",
+            "an organ in the body that releases a signal or chemical"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Biologists argue about where the octopus ends and the arm begins. Explain what that argument is really about.",
+            "Humans teach their children what they know. Octopuses cannot. What does that cost a species over time?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(whether one animal has a single mind, or many partly independent ones)",
+            "(inference: no culture, no build-up of knowledge, every generation starts from zero)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should we keep intelligent animals like octopuses in tanks to study them? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Octopus With Three Hearts",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-octopus", "templateLabel": "The Octopus With Three Hearts", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "octopus",
+          "notes": ["Class Cephalopoda, order Octopoda", "About 500 million neurons, two thirds in the arms", "Chromatophores, reflecting cells, and skin papillae", "One visual pigment: almost certainly colorblind", "Semelparous: one brood, then death", "Wodinsky, 1977: removing the optic gland extended life"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mind That Earth Invented Twice",
+          "text": "Somewhere around 550 million years ago, a small flat animal in a shallow sea gave rise to two lines of descendants. One line eventually produced fish, frogs, dogs, and you. The other produced snails, clams, and the octopus. At the moment of that split, neither branch had anything worth calling a brain. Complex intelligence had not been invented yet. It would be invented twice, independently, on two branches that never met again. This is why biologists reach for the word alien when they describe an octopus. It is the only intelligence on Earth that owes nothing to ours. Start with the body, because the body explains a great deal. An octopus has no skeleton. Its only hard part is a beak, and a beak is a small thing, so any gap the beak clears the animal can pour itself through. Freedom like that comes at a price. There is nothing to brace against, no fixed joints, no fixed length, and an almost infinite number of ways to bend. A human arm has about seven degrees of freedom, and your brain finds that hard enough to manage. An octopus arm has effectively unlimited ones, and there are eight of them. Evolution's answer was to stop trying to run everything from the top. Of the roughly 500 million neurons in an octopus, around two thirds live in the arms rather than the brain. Each arm carries its own nerve cord, tastes with every sucker, and can run a search, a grab, and a rejection without consulting the brain at all. A severed arm will still reach for food. The brain appears to hand down goals rather than commands, and the arms fill in the details. Whether that means an octopus has one mind or nine is not a settled question, and it may not even be a good question. The skin is a second surprise. Beneath it lie millions of chromatophores, elastic sacs of pigment ringed by muscles that stretch them open in under a second, along with reflecting cells that scatter light and muscles that raise the skin into ridges and spikes. An octopus can match the color, the brightness, and the texture of a rock while you watch, then walk off it and do the same to sand. Yet the eye of almost every octopus contains only a single kind of light-sensing pigment, which should leave the animal colorblind. A colorblind animal is running the best color display in the ocean. One leading explanation is that its strange dumbbell-shaped pupil smears colors apart at slightly different focus depths, so the animal reads color by focusing rather than by comparing. Another is that the skin itself is light-sensitive and reads what the eyes cannot. Neither has been proven. For all of that, the octopus is granted almost no time. Most species live one or two years. Reproduction ends the animal. A female fastens her eggs to the roof of a den, then guards, cleans, and fans them for weeks or months, does not hunt, and dies at about the time they hatch. This is not simple exhaustion. It is programmed. A gland behind the eyes releases the signal, and when Jerome Wodinsky removed that gland from brooding females in 1977, they left their eggs, began eating again, and lived on. So the most intelligent animal without a backbone is given two years, dies alone in a den, and teaches its young nothing, because it never meets them. Whatever an octopus works out about the world, it works out from scratch, and the knowledge dies with it. Culture is impossible. Every generation begins again at zero. The wonder is not that octopuses are clever. It is how clever they manage to become in the time they are allowed."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by saying intelligence was invented twice. Cite the evidence.",
+            "The passage argues the octopus body explains its nervous system. Reconstruct that argument in your own words.",
+            "Identify the contradiction the author sets up about color, and quote the sentence that states it most sharply.",
+            "The passage ends by saying the wonder is how clever they become in the time they are allowed. Analyze what that final move is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(our line and the octopus line split before either had a brain, so each evolved intelligence alone; cite: It is the only intelligence on Earth that owes nothing to ours)",
+            "(a boneless body has unlimited ways to bend, too much for one central brain, so control was pushed out into the arms)",
+            "(an animal that cannot see color camouflages perfectly; quote: A colorblind animal is running the best color display in the ocean)",
+            "(it reframes the short life from tragedy to achievement; supported by the two-year lifespan and the impossibility of culture)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["independently → ____", "chromatophores → ____", "degrees of freedom → ____", "programmed → ____"],
+          "rows": 2,
+          "answers": [
+            "separately, without influence from the other",
+            "elastic sacs of pigment that muscles stretch open to color the skin",
+            "the number of different ways a part can move",
+            "built in and set to happen, not caused by chance or wear"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says whether an octopus has one mind or nine may not even be a good question. Explain why a question can be badly formed rather than simply unanswered.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it assumes minds come in countable units, which may not fit an animal built this way)",
+            "(student question + a credible source type, such as a peer-reviewed study or a marine biologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An intelligence that cannot teach what it learns is wasted. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

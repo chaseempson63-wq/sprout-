@@ -1,0 +1,304 @@
+{
+  "key": "sea-turtle",
+  "title": "The Turtle That Never Forgets the Way Home",
+  "blurb": "A green sea turtle can cross an ocean, wait thirty years, and still find the exact beach where it hatched.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Turtle That Never Forgets the Way Home",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-sea-turtle", "templateLabel": "The Turtle That Never Forgets the Way Home", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the turtle's four flippers." },
+        {
+          "kind": "image",
+          "imageKey": "sea-turtle",
+          "notes": ["It has four flippers", "It lives in the ocean", "It comes up for air", "Its shell is smooth and flat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a sea turtle. It swims in the big blue sea. It has four flippers. The flippers move like wings. The sea turtle flaps and flaps. It goes up for air. Then it swims back down. It eats green grass under the water. The sea turtle is slow on the sand. In the water it is fast."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the turtles in each row. Write how many in the box.",
+          "emoji": "🐢",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "swim    sea" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its home.",
+          "pairs": [
+            { "left": "sea turtle", "right": "ocean" },
+            { "left": "bird", "right": "sky" },
+            { "left": "worm", "right": "dirt" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own sea turtle. Add waves on the top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Turtle That Never Forgets the Way Home",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-sea-turtle", "templateLabel": "The Turtle That Never Forgets the Way Home", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "sea-turtle",
+          "notes": ["It flies through the water with its flippers", "It cannot hide inside its shell", "Mothers lay eggs in the sand at night", "A baby turtle is smaller than your hand", "It can live more than 60 years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Turtle That Never Forgets the Way Home",
+          "text": "A green sea turtle spends almost all of its life in the ocean. It flaps its long front flippers and flies through the water. But every mother turtle has one job on land. She crawls up a beach at night. She digs a deep hole in the sand with her back flippers. She lays her eggs. Then she covers them up and goes back to the sea. The eggs sit warm in the sand for about two months. One night the babies dig their way out. They run down the sand and swim away. Here is the strange part. That mother turtle hatched on that same beach, years and years ago."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does a green sea turtle spend most of its life?", "What does the mother turtle dig in the sand?", "How long do the eggs sit in the sand?"],
+          "rows": 2,
+          "answers": ["in the ocean", "a deep hole for her eggs", "about two months"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A sea turtle flies through the water with its ____.", "The mother digs her nest in the ____.", "The babies dig their way out at ____.", "The mother hatched on that same ____."],
+          "wordBank": ["flippers", "sand", "night", "beach"],
+          "answers": ["flippers", "sand", "night", "beach"]
+        },
+        { "kind": "draw", "prompt": "Draw the mother turtle on the beach at night. Add the moon and her nest.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Turtle That Never Forgets the Way Home",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-sea-turtle", "templateLabel": "The Turtle That Never Forgets the Way Home", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "sea-turtle",
+          "notes": ["A nest holds about 100 eggs", "Hatchlings dig out at night", "About 1 in 1,000 reaches adulthood", "They cannot pull their heads inside", "They swim for days without stopping"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Longest Run of Their Lives",
+          "text": "A green sea turtle egg is soft and round, about the size of a ping pong ball. The mother buries about a hundred of them in the warm sand and then leaves. She never comes back. Nobody guards the nest. About two months later, the hatchlings break out of their shells. They dig upward together, a whole nest of them pushing the sand down under their feet. They wait just below the surface until the sand feels cool. Cool sand means the sun has gone down, and the dark is safer. Then the run begins. The hatchlings scramble across the beach toward the brightest thing they can see. On a wild beach, that bright thing is the open sky above the water. Crabs and gulls are waiting. Most hatchlings never make it. The ones that reach the waves keep swimming for days without stopping. Out of every thousand hatchlings, only about one will live long enough to grow up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How big is a green sea turtle egg?",
+            "What do the hatchlings do while they wait under the surface?",
+            "What tells the hatchlings which way the water is?",
+            "Why do you think the mother turtle lays about a hundred eggs instead of one or two?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about the size of a ping pong ball",
+            "they wait until the sand feels cool, which means it is dark",
+            "they run toward the brightest thing, the sky over the water",
+            "(inference: so few survive that she needs many eggs for any to make it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Longest Run of Their Lives", "How to Build a Sand Castle", "The Deepest Part of the Ocean"],
+          "answers": ["The Longest Run of Their Lives"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The mother buries about a ____ eggs in the sand.", "The babies wait until the sand feels ____.", "The hatchlings run toward the ____ thing they can see."],
+          "wordBank": ["hundred", "cool", "brightest"],
+          "answers": ["hundred", "cool", "brightest"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of the hatchling's run sounds hardest to you, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Turtle That Never Forgets the Way Home",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-sea-turtle", "templateLabel": "The Turtle That Never Forgets the Way Home", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sea-turtle",
+          "notes": ["Named for its green fat, not its shell", "Adults eat seagrass and algae", "Young ones hide in floating sargassum", "Salt glands near the eyes drip out extra salt", "Grazing keeps seagrass meadows healthy", "Chelonia mydas"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lost Years",
+          "text": "For a long time, scientists could follow the life of a green sea turtle only at its two ends. They could watch the hatchlings sprint down the beach. They could watch the grown females crawl back up it decades later. In between there was nothing. The little turtles swam out past the surf and simply vanished. Researchers gave that gap a name: the lost years. We now know roughly where they go. Currents carry the hatchlings out into the open ocean, where they shelter in drifting mats of sargassum, a floating seaweed that gathers into long golden lines on the surface. Tucked into that tangle, a young turtle finds food and cover far from the beaches where everything wanted to eat it. It stays out there for years. When a green turtle finally returns to shallow water, it changes its diet completely. Young ones eat almost anything they find: jellyfish, crabs, small drifting animals. Adults become vegetarians. They spend their days cropping seagrass and scraping algae off rocks, and their bodies fill with green fat from all those plants. That fat is where the name comes from. Their shells are not really green at all. The grazing matters more than it sounds. A seagrass meadow that is never cropped grows long, mats over, and rots from underneath. Turtles mow it, and the meadow stays healthy, which keeps the fish and shrimp that live in it alive too. Take out the turtles and the meadow can go with them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did scientists call the middle of a turtle's life the lost years?",
+            "How does sargassum help a young turtle survive?",
+            "The passage says a green turtle's shell is not really green. So why is it called a green turtle?",
+            "Explain why a seagrass meadow needs turtles as much as the turtles need it."
+          ],
+          "rows": 2,
+          "answers": [
+            "they could see hatchlings and adults but not the years in between",
+            "it gives food and cover far out at sea, away from the animals that hunt them",
+            "the plants it eats turn its fat green, and the name comes from the fat",
+            "(inference: uncropped seagrass mats over and rots, so grazing keeps the meadow and its fish alive)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A green turtle disappears for years at sea, then returns as a grazer that keeps seagrass meadows alive",
+            "Sargassum is the most common seaweed in the world",
+            "Scientists have now tracked every sea turtle from hatching to death"
+          ],
+          "answers": ["A green turtle disappears for years at sea, then returns as a grazer that keeps seagrass meadows alive"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["sargassum → ____", "cropping → ____", "vegetarian → ____"],
+          "rows": 1,
+          "answers": ["a floating seaweed that drifts in mats on the surface", "biting off short, the way an animal grazes", "an animal that eats only plants"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the lost years to someone who has never heard of them. Say what the gap was and what we now think happens in it.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Turtle That Never Forgets the Way Home",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-sea-turtle", "templateLabel": "The Turtle That Never Forgets the Way Home", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sea-turtle",
+          "notes": ["Chelonia mydas", "Natal homing: back to their own hatching beach", "They can read the Earth's magnetic field", "Females may nest 30 years after hatching", "Some migrate over 1,000 miles to nest", "Hatchling light confusion is a real threat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Map They Are Born With",
+          "text": "A female green sea turtle may spend thirty years and several thousand miles away from the beach where she hatched. Then, one season, she turns around and swims back to it. Not to that stretch of coast in general. To that beach. Turtles marked as hatchlings have been found nesting within a few miles of the sand they crawled out of, decades later. Biologists call this natal homing, and for most of the last century nobody could explain it. The leading answer is magnetism. The Earth is wrapped in a magnetic field, and that field is not identical everywhere. Its angle and its strength shift gradually as you move north or south along a coastline, so each stretch of beach sits under a slightly different magnetic signature. The current explanation is that a hatchling records the signature of its home beach during those first frantic minutes in the water, files it away, and carries that number around for the rest of its life. The evidence is strong. Researchers have placed young sea turtles in tanks ringed with coils that can imitate the magnetic field of a faraway location. Feed a turtle the field of a spot north of its range and it swims south. Feed it the field of a spot to the south and it turns north. It has never been to either place. It is correcting course on a map it was born holding. There is a stranger piece still. Along real coastlines, nesting beaches with similar magnetic signatures tend to host genetically similar turtles, even when those beaches are far apart. The turtles are not sorting themselves by distance. They are sorting themselves by field. None of this makes them safe. A turtle can navigate an entire ocean and still arrive at a beach that is now a parking lot, a seawall, or a row of lights bright enough to send her hatchlings running the wrong way. The map in her head is older than the buildings on the shore, and nobody has updated it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is natal homing, and what makes it hard to explain?",
+            "Describe the coil experiment and what its result shows. Quote the phrase the passage uses to describe the turtle's sense of direction.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering natal homing + the magnetic map + the human threat)",
+            "returning to nest on the exact beach where she hatched; she leaves as a hatchling and returns decades later",
+            "turtles in coils that fake a distant field swim as if they were there; quote: a map it was born holding",
+            "(inform, with detail: it defines terms and reports experiments; the last paragraph turns persuasive)",
+            "(her navigation still works but the beach has been ruined; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["natal homing → ____", "signature → ____", "imitate → ____", "seawall → ____"],
+          "rows": 1,
+          "answers": ["returning to breed at the place you were born", "a unique pattern that identifies one place", "to copy something closely", "a built barrier along a shoreline"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why is it useful for a turtle to sort by magnetic field rather than by distance?",
+            "The author says nobody has updated the map. Explain what an animal cannot do that a person can."
+          ],
+          "rows": 3,
+          "answers": ["(a field signature marks one exact beach; distance alone would not)", "(inference: instinct cannot learn that a beach became a parking lot within one lifetime)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should beachfront towns be required to turn off their lights during hatching season? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Turtle That Never Forgets the Way Home",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-sea-turtle", "templateLabel": "The Turtle That Never Forgets the Way Home", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sea-turtle",
+          "notes": ["Chelonia mydas", "The sea turtle line is over 100 million years old", "Sand temperature decides male or female", "No sex chromosomes at all", "Adults can top 300 pounds", "Turtle excluder devices cut deaths in nets", "Hawaii and Florida nesting numbers have climbed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Temperature of the Sand",
+          "text": "Sea turtles have been doing this for a very long time. Their lineage was swimming and nesting before the extinction that ended the dinosaurs, and it came through that event intact. The animal hauling itself up a beach tonight is running a program that has already survived an asteroid. It is worth knowing what that program depends on. Start with the shell. A land tortoise, threatened, pulls its head and legs inside and waits it out. A sea turtle cannot. Its shell is flattened into a wing shape and its limbs have stretched into paddles, and there is simply nowhere for the head to go. Speed and size replaced armor. An adult green turtle can weigh over three hundred pounds and drives itself forward with its front flippers in a motion that looks much less like swimming than like flying. The trade was straightforward: the ocean got easier, and hiding became impossible. Then the eggs. A green sea turtle has no sex chromosomes deciding whether a hatchling becomes male or female. The sand decides. Eggs incubating in cooler sand, below roughly 82 degrees Fahrenheit, produce mostly males. Warmer sand, above about 88 degrees, produces mostly females. Between those numbers sits a narrow band that yields a mix. The entire system is balanced on a few degrees of beach. For a hundred million years that was a reasonable bet. Beaches varied, some nests sat in shade and some in sun, and the numbers averaged out across a season. It is a worse bet now. On some heavily studied nesting grounds, surveys of young green turtles have come back over ninety percent female. A population can absorb that for a while, because one male will mate with several females. It cannot absorb it forever. A species does not need to be hunted to disappear. It only needs to stop producing males. The rest of the pressure is more ordinary. Hatchlings find the water by running toward the brightest horizon, a rule that worked flawlessly until people lit the land. Now the brightest horizon is often a road. Adults mistake plastic bags for jellyfish. Nesting beaches become hotels. Fishing nets drown air-breathing animals that cannot reach the surface. And yet the honest ending is not despair, because this is one of the few conservation stories where the fixes demonstrably work. Escape hatches built into trawl nets, called turtle excluder devices, let a caught turtle push its way out. Protected beaches, shielded streetlights, and shaded nests raise the number of hatchlings that reach the water. Green turtle nesting has climbed substantially at major sites in Hawaii and Florida since protections began. Slow animals respond slowly, and decades passed before those graphs turned upward, which is exactly why this work is hard to fund and easy to abandon. The turtle carries a magnetic map, a shell built for the open ocean, and a hundred million years of successful practice. What it does not carry is any way to notice that the sand got warmer. That part is our job."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the trade-off the passage describes between a tortoise's shell and a sea turtle's. Cite the evidence.",
+            "Explain temperature-dependent sex determination and why a warming beach threatens a species that is not being hunted. Cite the sentence that states this most directly.",
+            "Identify the shift in the passage: where does it turn away from threat, and how does the author signal it?",
+            "The passage ends with three words: That part is our job. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a tortoise hides, a sea turtle traded hiding for ocean speed; cite: Speed and size replaced armor)",
+            "(sand temperature sets the sex; too-warm beaches produce almost no males; cite: A species does not need to be hunted to disappear. It only needs to stop producing males.)",
+            "(at And yet the honest ending is not despair; the author pivots from loss to fixes that work)",
+            "(it assigns responsibility to humans; earned by the evidence that protections raised nesting numbers)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["lineage → ____", "incubating → ____", "absorb (a loss) → ____", "demonstrably → ____"],
+          "rows": 2,
+          "answers": [
+            "a line of ancestors stretching back through time",
+            "developing under steady warmth until hatching",
+            "to take on a cost and keep going",
+            "in a way that can be shown with evidence"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says slow animals respond slowly. Explain why that makes conservation work politically difficult.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(results arrive decades later, long after the funding decision, so the payoff is invisible to whoever pays)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If a species cannot adapt to the world people have built, protecting it is only delaying the inevitable. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

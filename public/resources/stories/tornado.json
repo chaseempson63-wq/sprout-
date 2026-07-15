@@ -1,0 +1,322 @@
+{
+  "key": "tornado",
+  "title": "The Storm That Touches the Ground",
+  "blurb": "The spinning column of air that hangs out of a thundercloud, and why it only counts once it reaches the grass.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Storm That Touches the Ground",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-tornado", "templateLabel": "The Storm That Touches the Ground", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Show me the top. Show me the pointy bottom." },
+        {
+          "kind": "image",
+          "imageKey": "tornado",
+          "notes": ["It is made of spinning air", "It hangs down from a big cloud", "It is wide at the top", "It sounds like a train", "You go inside and get low"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A tornado is made of wind. The wind goes around and around. It looks like a big gray top spinning on the ground. A tornado starts up in a storm cloud. Then it reaches all the way down. It touches the grass. It is very loud. It sounds like a train. When you hear the siren, you go inside. You go down low. You stay safe with your family."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the clouds in each row. Write how many in the box.",
+          "emoji": "☁️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "wind    spin" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match the weather to the thing you would use.",
+          "pairs": [
+            { "left": "rain", "right": "umbrella" },
+            { "left": "snow", "right": "mittens" },
+            { "left": "sun", "right": "hat" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a tornado. Make it wide at the top and pointy at the bottom.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Storm That Touches the Ground",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-tornado", "templateLabel": "The Storm That Touches the Ground", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "tornado",
+          "notes": ["A tube of spinning air", "It hangs down from a thunderstorm", "It has to touch the ground", "You see the dust, not the wind", "Most are gone in a few minutes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Storm That Touches the Ground",
+          "text": "A tornado is a tube of spinning air. It hangs down from a thunderstorm. To be a real tornado, it has to touch the cloud and the ground at the same time. If it does not touch the ground, it is only a funnel. You can see a tornado because it picks up dust and dirt. The air by itself is invisible. Most tornadoes are small. Most of them are gone in a few minutes. But the wind inside can lift a roof off a house. When a warning comes, your family goes to the lowest room. You stay away from windows. You wait until it passes."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does a tornado have to touch to be a real tornado?",
+            "What do you call it if it never reaches the ground?",
+            "Why can you see a tornado if air is invisible?",
+            "Where does your family go when a warning comes?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the cloud and the ground at the same time",
+            "a funnel",
+            "it picks up dust and dirt",
+            "to the lowest room, away from windows"
+          ]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A tornado is a tube of spinning ____.", "It hangs down from a ____.", "If it does not touch the ground, it is only a ____.", "Stay away from the ____."],
+          "wordBank": ["air", "thunderstorm", "funnel", "windows"],
+          "answers": ["air", "thunderstorm", "funnel", "windows"]
+        },
+        { "kind": "draw", "prompt": "Draw a tornado under a big storm cloud. Show it touching the ground.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Storm That Touches the Ground",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-tornado", "templateLabel": "The Storm That Touches the Ground", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "tornado",
+          "notes": ["Warm wet air meets cool dry air", "Wind at different heights makes air roll", "The storm tips the roll upright", "Touching the ground makes it a tornado", "The wind is invisible, the dust is not"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Storm Grows a Tail",
+          "text": "Warm wet air near the ground wants to rise. Cool dry air sits above it. When the warm air pushes up fast, it builds a thunderstorm that can stand taller than a mountain. Now add wind. Near the ground the wind blows one way, and high up it blows a different way at a different speed. That difference makes the air between them roll over, like a log spinning on its side. The rising air in the storm grabs that rolling log and tips it upright. Now the whole middle of the storm is turning. If that spinning column stretches down out of the cloud and touches the ground, it is a tornado. If it hangs in the air and never reaches the ground, it is only a funnel cloud. You do not see the wind. Wind is invisible. You see the tornado because the spinning air pulls water droplets out of the sky and rips dirt off the field. What you are watching is the mess it carries."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What two kinds of air have to meet before a thunderstorm can build?",
+            "What does the rising air do to the rolling tube of air?",
+            "What is the one thing a funnel cloud has to do to become a tornado?",
+            "Why do you think a storm needs wind blowing different ways at different heights before it can spin?"
+          ],
+          "rows": 2,
+          "answers": [
+            "warm wet air near the ground and cool dry air above it",
+            "it tips it upright, so the middle of the storm turns",
+            "touch the ground",
+            "(inference: the difference between the two winds is what starts the air rolling)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Storm Grows a Tail", "The Best Way to Grow Corn", "A History of Airplanes"],
+          "answers": ["How a Storm Grows a Tail"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A spinning column that touches the ground is a ____.", "If it never reaches the ground, it is only a ____ cloud.", "You cannot see wind, because wind is ____."],
+          "wordBank": ["tornado", "funnel", "invisible"],
+          "answers": ["tornado", "funnel", "invisible"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest part of how a tornado is built, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Storm That Touches the Ground",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-tornado", "templateLabel": "The Storm That Touches the Ground", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tornado",
+          "notes": ["Most strong ones come from supercells", "The spinning core is a mesocyclone", "Nothing survives inside to measure it", "Ted Fujita built his scale in 1971", "EF0 peels shingles, EF5 clears a house", "The rating is given after the storm is gone"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Measuring a Wind Nobody Can Reach",
+          "text": "Most strong tornadoes are born inside a supercell, a thunderstorm with a rotating engine at its heart. Meteorologists call that spinning core a mesocyclone. It can be several miles wide, and it turns slowly enough that a person standing underneath might not notice it at all. The tornado itself is the narrow part. As the mesocyclone tightens, it spins faster, the way a skater spins faster by pulling her arms in. A column of air drops out of the cloud base, and if it reaches the ground, the storm has a tornado. Here is the problem for scientists. You cannot put a thermometer or a wind gauge inside a tornado. Anything you leave in its path is likely to be destroyed or carried away. So for years there was no good way to say how strong one was. Ted Fujita solved it backward. In 1971 he built a scale that measures the damage instead of the wind, then works out the wind speed from what the storm broke. The United States now uses an updated version called the Enhanced Fujita scale. EF0 peels shingles off a roof. EF5 sweeps a well built house clean off its foundation. The rating is always assigned after the tornado is gone, by people walking through the wreckage. That is why a tornado on the news has no number at first. The number comes later, once someone has seen what it did."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is a mesocyclone, in your own words?",
+            "Explain why scientists cannot simply measure a tornado's wind with a wind gauge.",
+            "The passage says Fujita solved it backward. What does backward mean here?",
+            "A tornado is rated EF1. What can you not tell from that rating alone?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the wide spinning core of a supercell thunderstorm",
+            "anything left in its path is destroyed or carried away",
+            "he measured the damage first and worked back to the wind speed",
+            "(inference: whether the wind was truly weak, or whether it was strong but hit little worth breaking)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Because nobody can measure inside a tornado, its strength is judged afterward from the damage it left",
+            "Ted Fujita invented the thunderstorm in 1971",
+            "Every tornado in the United States is rated EF5"
+          ],
+          "answers": ["Because nobody can measure inside a tornado, its strength is judged afterward from the damage it left"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["supercell → ____", "mesocyclone → ____", "assigned → ____"],
+          "rows": 1,
+          "answers": ["a thunderstorm with a rotating updraft inside it", "the spinning core of a supercell", "given or handed out"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is it fair to rate a storm by the damage it caused instead of the wind it carried? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Storm That Touches the Ground",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-tornado", "templateLabel": "The Storm That Touches the Ground", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tornado",
+          "notes": ["The US records about 1,200 a year", "No east to west mountains to keep the air apart", "Recorded in every state", "Watch means conditions are right", "Warning means move now", "Warnings average about 13 minutes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Country That Gets the Most",
+          "text": "The United States records roughly 1,200 tornadoes a year, more than any other country on Earth. That is not bad luck. It is geography. Look at a map. The Rocky Mountains run down the west of the continent, and the Gulf of Mexico sits open at the south. Warm, wet air streams north off the Gulf and slides along near the ground. Cool, dry air comes over the Rockies and rides above it. Nothing blocks them from meeting. There is no mountain range running east to west across the middle of the country to keep the two apart. So they collide over the Great Plains, one air mass stacked on top of the other, and the atmosphere becomes unstable in exactly the way a supercell needs. For decades this stretch of the Plains has been nicknamed Tornado Alley. The nickname is useful and slightly misleading. Tornadoes have been recorded in every state, and researchers tracking recent decades have noted that damaging tornadoes are becoming more common further east, across states like Mississippi, Alabama, and Tennessee. Those states are more wooded, more densely populated, and get more of their tornadoes at night, which makes them harder to see coming and harder to escape. The American answer to all this is warning. Doppler radar does not show a tornado directly. It shows the wind moving toward and away from the radar, and where those two sit side by side, the storm is rotating. Forecasters watching that signature can issue a warning before anything touches the ground. A tornado watch means the ingredients are present and you should pay attention. A tornado warning means one has been sighted or shows on radar, and you should already be moving. The average warning now arrives about thirteen minutes ahead. Thirteen minutes is not long. It is enough to reach a basement, and that is the whole point of it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why the shape of North America makes tornadoes more likely there than anywhere else.",
+            "What is the difference between a tornado watch and a tornado warning? Quote the passage.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author calls the nickname Tornado Alley useful and slightly misleading. Explain both halves of that.",
+            "Why does the author end on thirteen minutes?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the geography + the eastward shift + the warning system)",
+            "warm Gulf air and cool Rocky Mountain air meet over the Plains with no east to west range to keep them apart",
+            "a watch means the ingredients are present; quote: A tornado warning means one has been sighted or shows on radar, and you should already be moving",
+            "(inform, with detail: it defines terms and gives figures, though the closing lines carry some persuasion)",
+            "(useful: the Plains really do get many tornadoes; misleading: they happen in every state and are shifting east)",
+            "(inference: it is the payoff of the whole passage, the small margin that turns knowledge into survival)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["unstable → ____", "signature → ____", "densely populated → ____", "misleading → ____"],
+          "rows": 1,
+          "answers": ["easily tipped into violent change", "a recognizable pattern that identifies something", "with many people living close together", "giving a wrong impression"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might a tornado at night be more dangerous than the same tornado at noon?",
+            "Doppler radar shows rotation, not tornadoes. Why does that mean some warnings will turn out to be false alarms?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: people are asleep, cannot see it coming, and have less time to react)",
+            "(inference: a storm can rotate without ever putting a tornado on the ground)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: some people ignore tornado warnings because most warnings do not end with a tornado at their house. Whose job is it to fix that, the forecasters or the public? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Storm That Touches the Ground",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-tornado", "templateLabel": "The Storm That Touches the Ground", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tornado",
+          "notes": ["Tornadogenesis is still an open question", "Wind shear rolls the air, the updraft tilts it", "Fastest wind on record: about 300 mph, Oklahoma, 1999", "Widest on record: 2.6 miles, El Reno, 2013", "Deadliest US tornado: Tri-State, 1925, 695 dead", "The EF scale rates damage, not wind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Question Nobody Has Answered Yet",
+          "text": "Here is something strange about tornadoes. We can photograph them, fly aircraft around them, and hit them with research radar that samples the wind every few seconds. We can forecast the conditions that produce them days in advance. And we still cannot reliably say why one supercell drops a tornado while the supercell twenty miles behind it, sitting in what looks like identical air, never does. The broad picture is settled. A supercell is a thunderstorm with a rotating updraft called a mesocyclone, born when wind shear, meaning wind that changes speed and direction with height, sets a horizontal tube of air rolling, and the storm's updraft tilts that tube upright. Stretch a spinning column and it spins faster, the same reason a skater accelerates when she pulls in her arms. What remains unsettled is the last step down. Tornadoes appear to require rotation gathered near the ground, not just borrowed from above, and the processes that concentrate it there involve the storm's cold downdraft, its outflow, and temperature differences of only a few degrees. Get those wrong and the storm produces nothing. The measurement problem makes this worse. Instruments placed in a tornado's path are usually destroyed, and the few that survive sample one point for a few seconds. So meteorologists went mobile. The VORTEX projects sent fleets of trucks, radars, and weather balloons chasing storms across the Plains, and Doppler on Wheels radar took the fastest wind ever recorded on Earth: about 300 miles per hour, near Bridge Creek, Oklahoma, on May 3, 1999. That reading came from radar aimed at the tornado from a safe distance, not from a gauge inside it. Nothing survives inside it. Rating tornadoes has the same problem, which is why the Enhanced Fujita scale still works backward from damage rather than forward from wind. It is an ingenious workaround, and it has a real weakness. A violent tornado that crosses empty pasture breaks nothing worth rating, so it may be logged as weak. The scale measures what a storm hit, not what it was. The extremes are worth knowing. The widest tornado ever measured was 2.6 miles across, near El Reno, Oklahoma, in 2013. The deadliest in American history was the Tri-State Tornado of March 18, 1925, which ran roughly 219 miles across Missouri, Illinois, and Indiana and killed 695 people, in an era with no radar, no watches, and no warnings. Compare that to now. The average tornado warning arrives about thirteen minutes before the storm, and those thirteen minutes are the difference between 1925 and today. So the honest summary is this. We know what tornadoes are made of. We know roughly where and when to expect them. We can warn you. We cannot yet tell you which storm."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the passage means by the last step down, and why that step is the hard one. Cite the evidence.",
+            "Contrast what the EF scale actually measures with what people assume it measures. Quote the sentence that states the gap.",
+            "Why does the author include the Tri-State Tornado of 1925 right after the section on measurement? What is it doing there?",
+            "The passage closes: We cannot yet tell you which storm. Analyze that ending. What is the word yet doing, and does the passage earn the claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering: tornado science is well understood except for the moment of formation)",
+            "(the drop from a rotating storm to a tornado on the ground; cite: Tornadoes appear to require rotation gathered near the ground, not just borrowed from above)",
+            "(it rates damage, not wind; quote: The scale measures what a storm hit, not what it was)",
+            "(inference: it contrasts an era with no warning against the modern system, showing what the science bought)",
+            "(yet frames the gap as unsolved rather than unsolvable; earned by the opening supercell puzzle and the measurement problem)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["wind shear → ____", "mesocyclone → ____", "outflow → ____", "ingenious → ____"],
+          "rows": 2,
+          "answers": [
+            "wind that changes speed and direction with height",
+            "the rotating updraft at the core of a supercell",
+            "the cool air a storm pushes out along the ground",
+            "clever and inventive, especially at solving a hard problem"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a violent tornado crossing empty pasture may be logged as weak. Explain how that flaw could distort the historical record scientists rely on.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(rural tornadoes get under-rated, so old records may understate how many violent tornadoes there really were)",
+            "(student question + a credible source type, such as a peer reviewed meteorology journal or the National Weather Service)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: a warning system that cannot say which storm will produce a tornado is not really a warning system. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

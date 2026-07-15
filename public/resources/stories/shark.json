@@ -1,0 +1,315 @@
+{
+  "key": "shark",
+  "title": "The Shark That Never Stops Growing Teeth",
+  "blurb": "The fish with no bones, a body wrapped in tiny teeth, and a family older than the first tree.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Shark That Never Stops Growing Teeth",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-shark", "templateLabel": "The Shark That Never Stops Growing Teeth", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the shark." },
+        {
+          "kind": "image",
+          "imageKey": "shark",
+          "notes": ["A shark is a fish", "It has no bones inside", "Its skin feels like sand", "New teeth grow all the time"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a shark. A shark is a fish. It swims in the sea. A shark has lots of teeth. When one tooth falls out, a new tooth grows in. A shark has no bones. It is soft and bendy inside. Its skin feels rough, like sand. The shark swims all day. It swims all night too. Swim, shark, swim."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the sharks in each row. Write how many in the box.",
+          "emoji": "🦈",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "fish    swim" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "shark", "right": "the sea" },
+            { "left": "bee", "right": "a flower" },
+            { "left": "owl", "right": "a tree" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own shark. Give it lots of teeth.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Shark That Never Stops Growing Teeth",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-shark", "templateLabel": "The Shark That Never Stops Growing Teeth", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "shark",
+          "notes": ["A shark is a fish", "It has no bones, only cartilage", "Cartilage is in your nose too", "Its skin feels like sandpaper", "New teeth wait in rows behind the old ones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fish With No Bones",
+          "text": "Every shark is a fish, but a shark is not built like other fish. Other fish have bones. A shark has none. Its whole body is held up by cartilage, the same bendy stuff inside your ears and your nose. Cartilage is light, so a shark can turn fast without getting tired. A shark's mouth is full of teeth, and behind those teeth are more teeth waiting in rows. When a tooth breaks, a new one slides forward to take its place. A shark can go through thousands of teeth in its life. Rub a shark the wrong way and its skin feels like sandpaper. It is covered in tiny scales shaped like little teeth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a shark's body held up by?", "What happens when a shark's tooth breaks?", "What does a shark's skin feel like?"],
+          "rows": 2,
+          "answers": ["cartilage", "a new tooth slides forward to take its place", "sandpaper"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A shark is a kind of ____.", "A shark has no ____ in its body.", "Its body is held up by ____.", "Its skin feels like ____."],
+          "wordBank": ["fish", "bones", "cartilage", "sandpaper"],
+          "answers": ["fish", "bones", "cartilage", "sandpaper"]
+        },
+        { "kind": "draw", "prompt": "Draw a shark swimming in the sea. Add some fish and some seaweed.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Shark That Never Stops Growing Teeth",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-shark", "templateLabel": "The Shark That Never Stops Growing Teeth", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "shark",
+          "notes": ["Sharks are older than trees", "No bones, only cartilage", "No air bag inside, just an oily liver", "Whale shark: the biggest fish alive", "Dwarf lanternshark fits in your hand"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Older Than Trees",
+          "text": "Sharks were swimming in the ocean before there were trees on land. The first sharks appeared more than 400 million years ago. They were here before the dinosaurs, they were still here after the dinosaurs were gone, and they are here now. A shark is not like most other fish. It has no bones. Its skeleton is made of cartilage, the bendy material in your nose and your ears. Cartilage is much lighter than bone, which helps a shark stay up in the water without sinking. Most fish have a bag of air inside them, called a swim bladder, that keeps them afloat. Sharks do not have one. Instead a shark has a huge liver full of oil, and oil floats. Sharks come in surprising sizes. The whale shark is the biggest fish in the world. It can grow longer than a school bus, and it eats tiny drifting plankton. The dwarf lanternshark could sit in your hand, and it glows in the dark."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How long ago did the first sharks appear?",
+            "What is a shark's skeleton made of?",
+            "How does a shark stay afloat without a swim bladder?",
+            "Why do you think sharks are still here when the dinosaurs are not?"
+          ],
+          "rows": 2,
+          "answers": [
+            "more than 400 million years ago",
+            "cartilage",
+            "it has a huge liver full of oil, and oil floats",
+            "(inference: their body plan works well, so they survived changes that other animals did not)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Older Than Trees", "How to Build a School Bus", "The Deepest Cave in the World"],
+          "answers": ["Older Than Trees"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A shark's skeleton is made of ____.", "Most fish float using a swim ____.", "The biggest fish in the world is the ____ shark."],
+          "wordBank": ["cartilage", "bladder", "whale"],
+          "answers": ["cartilage", "bladder", "whale"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which shark in the passage surprised you most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Shark That Never Stops Growing Teeth",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-shark", "templateLabel": "The Shark That Never Stops Growing Teeth", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "shark",
+          "notes": ["A shark's nostrils smell, they do not breathe", "The lateral line feels movement in the water", "Ampullae of Lorenzini sense electricity", "It can find a flatfish buried in sand", "Sharks breathe through gills, not nostrils"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Shark Reads the Ocean",
+          "text": "A shark hunts in water that is often dark, or cloudy, or both. Eyes alone would not be enough, so a shark reads the ocean with a whole set of senses, and some of them are senses you do not have. Start with smell. A shark's nostrils are not for breathing. A shark breathes through its gills. The nostrils do one job only: they sample the water. Seawater flows in one side and out the other, carrying scent with it, and a shark can pick up a trace of blood or fish oil spread thin through a great deal of water. People like to say a shark can smell a single drop of blood from miles away. That is an exaggeration, but the real ability is impressive enough. Next comes the lateral line, a row of tiny sensors running down each side of the body. It feels movement. A struggling fish pushes pressure waves out through the water, and the shark feels them arrive the way you might feel someone walking across a wooden floor. Then there is the strangest sense of all. Scattered across a shark's snout are small pores filled with jelly, called ampullae of Lorenzini. They detect electricity. Every living animal leaks a faint electrical field simply by moving its muscles and beating its heart, and a shark can sense that field. A flatfish buried under the sand is invisible and silent, but it cannot switch off its own heartbeat. In the final moments of a hunt, when the shark is close and, in some species, its eyes have rolled back for protection, electricity is what guides the bite. None of this makes a shark a monster. It makes it a very good reader. The ocean is full of signals, and sharks have had 400 million years of practice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What job do a shark's nostrils do, and what job do they NOT do?",
+            "Explain how the lateral line works, in your own words.",
+            "Why can a shark find a flatfish that is buried, invisible, and silent?",
+            "The author says a shark is not a monster, it is a very good reader. What does the author mean by that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they sample the water for scent; they do not breathe, the gills do that",
+            "(tiny sensors along the body feel pressure waves made by moving animals)",
+            "the buried fish still leaks a faint electrical field from its muscles and heart, and the shark senses it",
+            "(inference: a shark is gathering information, not being cruel; its senses are tools, not weapons of malice)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A shark hunts using a set of senses that goes far beyond sight, including one that detects electricity",
+            "Sharks are the most dangerous animals in the ocean",
+            "The best way to catch a fish is to use your nose"
+          ],
+          "answers": ["A shark hunts using a set of senses that goes far beyond sight, including one that detects electricity"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["sample (the water) → ____", "exaggeration → ____", "lateral → ____"],
+          "rows": 1,
+          "answers": ["to take in a small amount to test what is in it", "a claim stretched bigger than the truth", "on the side"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if you could borrow one shark sense for a day, which would you pick and what would you use it for? Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Shark That Never Stops Growing Teeth",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-shark", "templateLabel": "The Shark That Never Stops Growing Teeth", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "shark",
+          "notes": ["Greenland shark: Somniosus microcephalus", "Grows less than half an inch a year", "The longest-lived vertebrate known", "Its flesh is toxic when fresh", "Not old enough to breed until about age 150", "Many carry a parasite on the eye"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Shark That Was Born Before Your Country",
+          "text": "In the cold black water of the North Atlantic there lives a shark that does almost nothing quickly. The Greenland shark grows less than half an inch a year. It cruises at a pace a person could out-walk. Its flesh is loaded with chemicals that keep it from freezing in near-zero water, and those same chemicals make it poisonous to eat unless it is buried and fermented for months, which is exactly what Icelanders once learned to do. Many Greenland sharks carry a small parasite anchored to the surface of the eye, and a great number of them are effectively blind. In water this cold and this dark, sight was never worth much anyway. For a long time nobody knew how old these animals were. You cannot count growth rings in a shark's skeleton, because a shark has no bones to leave rings in. So researchers tried something clever. The lens at the center of an eye is built before birth and never replaced, which means the tissue at its core is exactly as old as the animal. By radiocarbon dating those cores, scientists estimated that the largest Greenland shark they measured was somewhere near 400 years old, and almost certainly older than 270. That makes it the longest-lived vertebrate we know of. A shark alive in the Arctic today may have been swimming while people were still writing with quill pens. There is a catch buried inside that number. A Greenland shark does not become old enough to have young of its own until it is roughly 150. A species that slow has no way to bounce back from being hunted, and thousands are still hauled up every year by accident, in nets set for other fish. This is the part of the shark story that usually gets told backward. People fear sharks. Sharks kill fewer than ten of us worldwide in a normal year. We kill somewhere near 80 million of them. The math is not close, and it never has been."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why can scientists not age a shark by counting growth rings? Quote the phrase from the passage that explains it.",
+            "Explain the eye lens method and why it works.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author calls the last part of the story one that gets told backward. Explain what is backward about it."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the Greenland shark's slow life, its record age, and the reversal of who is dangerous to whom)",
+            "sharks have no bones; quote: a shark has no bones to leave rings in",
+            "(the lens core is built before birth and never replaced, so radiocarbon dating it dates the animal)",
+            "(inform, with a persuasive turn at the end; it defines methods and gives figures, then argues about human harm)",
+            "(people fear sharks, but humans kill vastly more sharks than sharks kill humans)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["fermented → ____", "parasite → ____", "vertebrate → ____", "hauled → ____"],
+          "rows": 1,
+          "answers": [
+            "changed and preserved over time by tiny living things",
+            "a living thing that survives on or in another animal at its expense",
+            "an animal with a backbone",
+            "dragged or pulled up with effort"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why does growing slowly and breeding late make a species harder to protect than a fast-breeding one?",
+            "The sharks caught in nets meant for other fish were not the target. Does that make the loss less serious? Explain your thinking."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: losses are replaced very slowly, so a population cannot recover at the rate it is being reduced)",
+            "(opinion, supported: intent does not change the outcome for the population)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should fishing be restricted in places where slow-growing sharks are caught by accident? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Shark That Never Stops Growing Teeth",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-shark", "templateLabel": "The Shark That Never Stops Growing Teeth", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "shark",
+          "notes": ["Sharks predate the first forests", "Skeleton is cartilage, never bone", "Dermal denticles are built like teeth", "Great whites are partly warm-bodied", "More than 500 shark species", "About a third of sharks and rays are threatened"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Oldest Predator in the Room",
+          "text": "Sharks are older than trees. That sounds like a trick sentence, but the fossil record supports it. Recognizable sharks were hunting the oceans more than 400 million years ago, before the first forests took hold on land, before the dinosaurs arrived, and long before the dinosaurs left. Four mass extinctions have swept the planet since then. Sharks came through all four. Whatever a shark is doing, it works. Part of what it is doing is building itself cheaply. A shark has no bones. Its skeleton is cartilage, lighter and more flexible than bone, which lets a large animal stay agile without hauling a heavy frame around. Because a shark also lacks the gas-filled swim bladder that holds most fish at depth, it solves the floating problem with an enormous liver full of low-density oil. Its skin is not smooth, either. It is armored in dermal denticles, microscopic scales built from the same dentine and hard outer coating as its teeth, angled so that water slides past with less turbulence than it would over bare skin. A shark is, quite literally, wrapped in teeth. The teeth in its mouth are only the ones at the front of the line. Rows of replacements sit behind them inside the jaw, rotating forward as the working teeth snap off in use. A shark discards and rebuilds its bite continuously for its whole life. This is also why the fossil record is so tooth-heavy. Cartilage rots away, but teeth are mineral, and a single shark can leave thousands of them behind. None of this makes sharks one kind of animal. There are more than 500 species, and they behave nothing alike. The whale shark, the largest fish alive at up to about 60 feet, strains drifting plankton out of the water and could not harm you if it wanted to. The dwarf lanternshark fits in a human hand and glows. The cookiecutter shark, barely longer than your forearm, bites neat round plugs out of animals many times its size and swims away. The great white and its close relatives are partly warm-bodied, using dense bundles of blood vessels to trap the heat their swimming muscles produce and hold parts of the body well above the temperature of the sea around them, which is why they can hunt hard in cold water that would slow an ordinary fish to a crawl. And yet, in the story most people carry around, sharks are one thing: a threat. Here the numbers deserve a hearing. Worldwide, sharks bite roughly 60 to 80 people a year without being provoked, and about five to ten of those people die. Meanwhile, recent estimates put human killing of sharks near 80 million animals a year, many of them finned and dumped back over the side for a soup. Around a third of all shark and ray species are now threatened with extinction, and populations of open-ocean sharks and rays have fallen by more than seventy percent in fifty years. That collapse matters beyond the sharks themselves. Large sharks sit at the top of ocean food webs, and pulling a predator off the top of a food web does not leave the rest of it unchanged. Remove the animals that eat the animals that graze the reef, and the reef finds out. Four hundred million years is a long apprenticeship. The shark survived every catastrophe the planet could arrange on its own. The open question is whether it survives us, and that question is not really about the shark. It is about what we decide is worth keeping."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how a shark solves two problems that bone and a swim bladder solve for other fish. Cite the evidence.",
+            "The author writes that a shark is wrapped in teeth. Explain what that means literally, not just as a figure of speech.",
+            "Identify the shift in the passage: where does it turn from wonder to warning, and how does the author signal it?",
+            "The final line says the question is about what we decide is worth keeping. Analyze what that claim is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering deep-time survival, unusual body design, and human-driven decline)",
+            "(cartilage replaces bone: lighter and more flexible; an oily liver replaces the swim bladder; cite: an enormous liver full of low-density oil)",
+            "(its scales are dermal denticles made of the same dentine and outer coating as teeth, so its skin is built from tooth material)",
+            "(at And yet, in the story most people carry around; the author pivots from biology to human numbers and moral weight)",
+            "(it moves responsibility from the animal to human choice; earned by the bite figures set against the 80 million killed and the seventy percent decline)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["denticle → ____", "turbulence → ____", "apprenticeship → ____", "provoked → ____"],
+          "rows": 2,
+          "answers": [
+            "a microscopic tooth-like scale covering shark skin",
+            "rough, churning movement in a fluid that slows something down",
+            "a long stretch of learning a skill",
+            "deliberately stirred up or interfered with first"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says pulling a predator off the top of a food web does not leave the rest of it unchanged. Explain what could happen to a reef when its large sharks disappear.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(mid-level predators increase, the animals that graze algae are eaten down, and the reef can be overgrown)",
+            "(student question + a credible source type, such as a peer-reviewed marine biology study or a fisheries survey)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal that has survived four mass extinctions does not need our protection. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

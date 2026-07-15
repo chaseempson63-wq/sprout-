@@ -1,0 +1,304 @@
+{
+  "key": "t-rex",
+  "title": "The King That Crunched Bones",
+  "blurb": "The tyrant lizard king: a bite that broke through bone, eyes that looked straight ahead, and two small arms nobody has explained yet.",
+  "topic": "dinosaurs",
+  "bands": {
+    "1": {
+      "title": "The King That Crunched Bones",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-t-rex", "templateLabel": "The King That Crunched Bones", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Show me the big teeth." },
+        {
+          "kind": "image",
+          "imageKey": "t-rex",
+          "notes": ["Say it TEE REX", "It was as long as a bus", "It walked on two big legs", "Its arms were little", "We dig up its bones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is T. rex. Say it like this: TEE REX. T. rex was a dinosaur. It was very big. It had a big head and big teeth. It had two small arms. T. rex walked on two strong legs. It had a long tail behind it. The tail helped it stay up. T. rex is gone now. We find its bones in the ground."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the teeth in each row. Write how many in the box.",
+          "emoji": "🦷",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "big    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "T. rex", "right": "teeth" },
+            { "left": "bird", "right": "wings" },
+            { "left": "fish", "right": "fins" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own T. rex. Give it a long tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The King That Crunched Bones",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-t-rex", "templateLabel": "The King That Crunched Bones", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "t-rex",
+          "notes": ["Its name means tyrant lizard king", "It had about sixty teeth", "Each big tooth looked like a banana", "Its head was longer than you are tall", "It lived a very long time ago"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The King That Crunched Bones",
+          "text": "T. rex was one of the biggest hunters that ever walked on land. It was as long as a school bus. Its head was longer than you are tall, and it had about sixty teeth. Each big tooth was shaped like a banana, thick and pointy. T. rex could bite so hard that it broke bone. Its arms were small next to the rest of it, but they were strong. It walked on two legs and held its long tail out straight behind it. T. rex lived a very long time ago. Now we dig up its bones and put them back together."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How long was T. rex?", "What was each big tooth shaped like?", "How hard could T. rex bite?"],
+          "rows": 2,
+          "answers": ["as long as a school bus", "a banana, thick and pointy", "hard enough to break bone"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["T. rex had about sixty ____.", "Its ____ were small but strong.", "It walked on two ____.", "We dig up its ____."],
+          "wordBank": ["teeth", "arms", "legs", "bones"],
+          "answers": ["teeth", "arms", "legs", "bones"]
+        },
+        { "kind": "draw", "prompt": "Draw T. rex walking through a forest. Add some trees and a river.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The King That Crunched Bones",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-t-rex", "templateLabel": "The King That Crunched Bones", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "t-rex",
+          "notes": ["Tyrannosaurus rex means tyrant lizard king", "About forty feet from nose to tail", "The skull is five feet long", "The biggest tooth found is a foot long", "It lived in western North America", "Nobody knows what the arms were for"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tyrant Lizard King",
+          "text": "Its full name is Tyrannosaurus rex, which means tyrant lizard king. A tyrant is a ruler who takes whatever it wants. T. rex lived in the warm forests and river plains of western North America about sixty-six million years ago. From nose to tail it stretched about forty feet, longer than a school bus, and it weighed as much as a big elephant. The head did the work. A T. rex skull is five feet long and holds about sixty teeth. The biggest tooth ever found is a foot long, counting the root buried in the jaw. Most hunters have teeth like knives, made for slicing. T. rex had teeth like thick spikes, made for pressing down hard without snapping. It did not slice. It crushed. We know this because scientists have found fossil dung with smashed bone inside it. T. rex bit straight through bone and swallowed the pieces. Then there are the arms. Each one was about three feet long, roughly the length of a grown-up's arm, which sounds fine until you remember the rest of the animal was the size of a bus. They were thick with muscle, so they were good for something. Nobody has worked out what. That is one of the best things about dinosaurs. Even now, there are questions we cannot answer."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does the name Tyrannosaurus rex mean?",
+            "How are T. rex teeth different from most hunters' teeth?",
+            "How do we know T. rex ate bone?",
+            "Why do you think scientists still argue about the arms?"
+          ],
+          "rows": 2,
+          "answers": [
+            "tyrant lizard king",
+            "they are thick spikes for crushing, not thin knives for slicing",
+            "fossil dung has been found with smashed bone inside it",
+            "(inference: the arms are strong but too short to reach the mouth, and fossils cannot show behavior)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Tyrant Lizard King", "How to Take Care of a Pet Lizard", "The Tallest Trees in North America"],
+          "answers": ["The Tyrant Lizard King"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A T. rex skull is five ____ long.", "T. rex did not slice its food. It ____ it.", "Scientists found fossil ____ with bone inside."],
+          "wordBank": ["feet", "crushed", "dung"],
+          "answers": ["feet", "crushed", "dung"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you could ask a scientist one question about T. rex, what would it be, and why do you want to know?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The King That Crunched Bones",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-t-rex", "templateLabel": "The King That Crunched Bones", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "t-rex",
+          "notes": ["Huge smell center in the brain", "Eyes faced forward, like yours", "Bite estimated near eight thousand pounds", "Broken teeth were replaced for life", "Built to walk far, not to sprint", "Weighed six tons or more"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How to Build a King",
+          "text": "A T. rex skull is a toolbox, and every tool in it tells you something about how the animal lived. Start with the nose. The part of the brain that handled smell was enormous, larger in proportion than in almost any other dinosaur we know of. An animal that smells that well can find a meal from a long way off, alive or long dead, without ever seeing it. Now the eyes. Most hunted animals have eyes on the sides of the head so they can watch for danger in every direction at once. T. rex had eyes pointing forward, like yours. Two eyes aimed at the same object from slightly different angles give you depth. You can tell exactly how far away something is, which matters a great deal if you plan to close that distance. Then the jaw. T. rex teeth are not blades. They are thick, round-sided spikes with rough sawing edges, built to take enormous pressure instead of shattering. The skull bones were fused and braced to carry the load. Scientists estimate that load at around eight thousand pounds at the back teeth, the hardest bite ever measured for a land animal. And the teeth kept coming. When one broke off in a meal, a fresh one grew in behind it, over and over, for the whole of the animal's life. Last, the legs. T. rex had long shins and tightly packed foot bones, a design that usually belongs to animals built to cover ground steadily rather than to sprint. A six-ton body cannot afford to trip. None of this proves how T. rex hunted, or whether it hunted at all. It tells us what the animal was equipped to do. The rest is argument."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What does the size of the smell center in the brain suggest about how T. rex found food?",
+            "Explain why forward-facing eyes are useful to a hunter and not to a hunted animal.",
+            "The passage says T. rex teeth are built to take pressure instead of shattering. What does that tell you about how it ate?",
+            "The last line says the rest is argument. What does the author mean by that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it could find food from far away without seeing it",
+            "forward eyes judge distance; side eyes watch for danger all around",
+            "(inference: it bit down hard on hard things, including bone, rather than slicing meat)",
+            "(fossils show equipment, not behavior, so scientists debate what it actually did)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A T. rex skeleton shows what the animal was built to do, but not what it actually did",
+            "T. rex was the largest animal that has ever lived on Earth",
+            "Scientists agree on everything about how T. rex hunted"
+          ],
+          "answers": ["A T. rex skeleton shows what the animal was built to do, but not what it actually did"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["in proportion → ____", "fused → ____", "braced → ____", "equipped → ____"],
+          "rows": 1,
+          "answers": ["compared to the size of the whole thing", "joined together into one solid piece", "strengthened to hold a heavy load", "given the tools or body parts to do something"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which T. rex tool would help it most, the nose, the eyes, or the jaw? Pick one and give two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The King That Crunched Bones",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-t-rex", "templateLabel": "The King That Crunched Bones", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "t-rex",
+          "notes": ["Named by Henry Fairfield Osborn in 1905", "Sue, in Chicago, is about 90 percent complete", "Teenage T. rex gained roughly four pounds a day", "Sue died at about twenty-eight years old", "Healed bite marks prove it attacked living animals", "Probably walked near three miles an hour"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Argument About the King",
+          "text": "For most of the twentieth century, T. rex was drawn as a monster: upright, tail dragging, roaring at the sky. Almost every part of that picture has since been thrown out, and the story of how it was thrown out is more interesting than the monster ever was. Take posture. The tail does not drag. A T. rex skeleton balances at the hip like a seesaw, body forward, tail counterweighted behind, and no fossil trackway has ever shown a tail groove. Take speed. Films sprint T. rex after a car at forty miles an hour. Computer models of its muscles and leg bones say otherwise: at a run, the forces would likely have shattered its own legs. Recent studies suggest a comfortable walking pace close to three miles an hour, which is roughly your pace on the way to the mailbox. Slow, but relentless. Then take the loudest argument of all. In the 1990s the paleontologist Jack Horner made a case that T. rex was mainly a scavenger, an eater of the already dead, pointing to the huge smell center in its brain and to arms too short to grapple with anything. The evidence answered him. Fossil hunters found an Edmontosaurus with T. rex tooth marks in its tail, and the bone around the wound had healed over. Healing requires a living animal. Something the size of a T. rex bit that dinosaur, and that dinosaur walked away. Growth studies added more. By measuring rings inside T. rex bones, the way you read rings in a tree, scientists found a violent teenage growth spurt: roughly four pounds a day, every day, for several years. Sue, the great skeleton in Chicago, is about ninety percent complete and shows an animal that lived to about twenty-eight. Almost none of this came from finding a bigger fossil. It came from asking better questions of the fossils already in the drawer. The monster shrank. The animal got stranger, and far more real."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What evidence does the passage give that the tail did not drag?",
+            "Explain the Edmontosaurus evidence and what it settles. Quote the sentence the passage uses to explain why.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the author mean by the last two sentences, and why put them last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the old monster picture + the evidence that replaced it)",
+            "the skeleton balances at the hip and no trackway shows a tail groove",
+            "healed T. rex tooth marks in a tail; quote: Healing requires a living animal.",
+            "(inform, with detail: it defines evidence and corrects errors; the closing lines lean persuasive)",
+            "(the exciting myth got smaller but the real animal got more interesting; it lands the argument at the end)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["counterweighted → ____", "scavenger → ____", "relentless → ____", "trackway → ____"],
+          "rows": 1,
+          "answers": ["balanced by weight on the opposite side", "an animal that eats things already dead", "never stopping or letting up", "a line of fossil footprints"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says almost none of this came from finding a bigger fossil. Why is that point important?",
+            "Horner's scavenger idea turned out to be wrong. Was it still useful science? Explain your thinking."
+          ],
+          "rows": 3,
+          "answers": ["(progress came from better questions and methods, not new discoveries)", "(opinion: a testable wrong idea forces people to look for evidence, which is how the healed bite was noticed)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should movies have to get dinosaurs right? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The King That Crunched Bones",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-t-rex", "templateLabel": "The King That Crunched Bones", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "t-rex",
+          "notes": ["Lived about 68 to 66 million years ago", "Roughly 2.5 billion may have lived in total", "About fifty good skeletons have been found", "Skin patches found so far show scales", "Its relative Yutyrannus had feathers", "Birds are living dinosaurs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Reading the King: What a Fossil Can and Cannot Say",
+          "text": "Tyrannosaurus rex is the most famous animal that no human has ever seen, and that sentence contains the whole problem. Everything we claim about it is an inference, built from stone copies of bones by people who arrived sixty-six million years too late. What makes T. rex worth studying is not that it was enormous. It is that it shows you exactly how far careful inference can be pushed, and precisely where it stops. Start with what the bones say plainly. The skull is five feet long, fused and buttressed to absorb force. The teeth are not blades but thick serrated spikes, and their arrangement, combined with jaw muscle reconstructions, yields an estimated bite near eight thousand pounds at the back teeth, the highest ever calculated for a land animal. Fossil dung containing pulverized bone confirms that the bite was used the way the anatomy suggests. The olfactory bulbs are proportionally vast. The eye sockets face forward, granting binocular overlap and true depth perception. That is not interpretation. That is measurement. Now watch inference do real work. Nobody watched a T. rex grow, yet we know how it grew. Cut a fossil bone across and it holds growth lines, like a tree. Plot the lines from many individuals of different sizes and a curve appears: a slow start, then an explosive adolescence adding roughly four pounds a day for several years, then a plateau. Sue, the Chicago skeleton, died at about twenty-eight. Inference reaches further still. In 2021, researchers combined body size, energy needs, and range to estimate that about twenty thousand adult T. rex were alive at any moment, that some two and a half billion lived across the species' existence, and that we have recovered around fifty decent skeletons from that number. Roughly one individual in every eighty million left a fossil we later found. The species we consider well understood is known from a statistical rounding error. And here is where inference stops. We do not know what the arms were for. They are three feet long, densely muscled, capable by one estimate of lifting several hundred pounds, and unable to reach the mouth. Every explanation offered, mating grip, pushing up off the ground, holding prey, remains an untested story. We do not know its color. We do not know whether it was feathered. Its close relative Yutyrannus wore a coat of filaments, and every skin patch recovered from T. rex itself so far is scaly, which settles nothing about the parts we have not found. We do not know the sound it made. The roar you are imagining was engineered by a sound designer from an elephant and an alligator. So the honest summary is this. We can weigh its bite to the pound and count the years of its life, and we cannot tell you its color, its voice, or the purpose of its own arms. That gap is not a failure of science. It is science being precise about the edge of its evidence, which is the one habit that separates it from a good story. The tyrant lizard king rules a kingdom of careful uncertainty, and he is more interesting there than he ever was in the movies."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author separates measurement from interpretation. Explain the difference using an example of each, and cite the line that marks the boundary.",
+            "Explain the population estimate and what the author means by calling T. rex known from a statistical rounding error.",
+            "Identify the structural turn in the passage: where does it come, and how does the author signal it?",
+            "The author claims the gap in our knowledge is not a failure of science. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering evidence, inference, and the limits of both)",
+            "(measurement: skull length, bite force; interpretation: arm purpose, feathers; cite: That is not interpretation. That is measurement.)",
+            "(about 2.5 billion lived, roughly fifty skeletons found, so about 1 in 80 million; our confident picture rests on a tiny sample)",
+            "(at And here is where inference stops; a short blunt sentence pivots from what we know to what we do not)",
+            "(it reframes admitted ignorance as rigor; earned by first showing how much the evidence does establish)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["inference → ____", "buttressed → ____", "pulverized → ____", "plateau → ____"],
+          "rows": 2,
+          "answers": [
+            "a conclusion reached from evidence rather than direct observation",
+            "supported and strengthened against force",
+            "crushed into small pieces or powder",
+            "a leveling off after a period of rapid change"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says every skin patch recovered so far is scaly, which settles nothing about the parts we have not found. Explain why absence of evidence is not evidence of absence here.",
+            "Write a question this passage cannot answer, and name the kind of source or discovery that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(we have sampled only a few patches of one animal's skin; unsampled regions could differ, as they do in living animals)", "(student question + a credible source or find, such as a feathered skin impression)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Scientists should not present T. rex to the public until they can answer basic questions like what its arms were for. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

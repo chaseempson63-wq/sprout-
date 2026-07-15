@@ -1,0 +1,319 @@
+{
+  "key": "jupiter",
+  "title": "The Planet Where the Storm Never Stops",
+  "blurb": "The biggest planet in the solar system, its ninety-odd moons, and a storm wider than Earth that has been spinning for longer than anyone alive.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Planet Where the Storm Never Stops",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-jupiter", "templateLabel": "The Planet Where the Storm Never Stops", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the big red spot." },
+        {
+          "kind": "image",
+          "imageKey": "jupiter",
+          "notes": ["It is the biggest planet", "The stripes are clouds", "The red spot is a storm", "It has lots of moons", "You could not stand on it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is Jupiter. Jupiter is a planet. It is very, very big. It is the biggest planet of all. Jupiter has stripes. The stripes are clouds. Jupiter has a big red spot. The red spot is a storm. The storm goes round and round. It never stops. You could not stand on Jupiter. There is no ground on Jupiter. It is all clouds and wind."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the moons in each row. Write how many in the box.",
+          "emoji": "🌕",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "big    red    spot" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "Jupiter", "right": "red spot" },
+            { "left": "Sun", "right": "star" },
+            { "left": "Earth", "right": "home" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw Jupiter. Give it stripes and one big red spot.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Planet Where the Storm Never Stops",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-jupiter", "templateLabel": "The Planet Where the Storm Never Stops", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "jupiter",
+          "notes": ["More than a thousand Earths could fit inside", "It is made of gas, not rock", "The red spot is a giant storm", "The storm is wider than Earth", "Jupiter has more than ninety moons"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Planet Where the Storm Never Stops",
+          "text": "Jupiter is a planet. It is the biggest planet that goes around our Sun. Jupiter is so big that more than a thousand Earths could fit inside it. Jupiter is not made of rock like Earth. It is made of gas. If you tried to land on Jupiter, there would be nothing to land on. You would just keep falling. Jupiter has a big red spot. The spot is a storm, a bit like a hurricane. It is wider than the whole Earth. People have watched that storm through telescopes for a very long time. It has been spinning for longer than anyone has been alive."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Which planet is the biggest one going around our Sun?", "What is Jupiter made of?", "What is the big red spot?"],
+          "rows": 2,
+          "answers": ["Jupiter", "gas", "a storm"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Jupiter is the ____ planet.", "Jupiter is made of ____.", "The red spot is a ____.", "More than a thousand ____ could fit inside Jupiter."],
+          "wordBank": ["biggest", "gas", "storm", "Earths"],
+          "answers": ["biggest", "gas", "storm", "Earths"]
+        },
+        { "kind": "draw", "prompt": "Draw Jupiter with its stripes and its red spot. Add some of its moons around it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Planet Where the Storm Never Stops",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-jupiter", "templateLabel": "The Planet Where the Storm Never Stops", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "jupiter",
+          "notes": ["About 1,300 Earths would fit inside", "Made mostly of hydrogen and helium", "The Great Red Spot is wider than Earth", "A day on Jupiter lasts only about 10 hours", "Galileo saw its four big moons in 1610"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Giant With No Ground",
+          "text": "Jupiter is the biggest planet in our solar system. Every other planet could be packed inside it, and there would still be room left over. But Jupiter is not made of rock the way Earth is. It is a huge ball of gas, mostly hydrogen and helium, and it has no hard ground anywhere. A spaceship could not land on Jupiter. It would sink into thicker and thicker cloud until the weight of the air above it crushed the ship flat. The stripes you can see on Jupiter are bands of cloud. Some bands race one way. Some race the other. Where two bands rub past each other, storms are born. The biggest storm is called the Great Red Spot. It is wider than our whole planet, and people with telescopes have watched it spin for more than 150 years. Nobody knows exactly when it started. Jupiter has moons too. More than ninety of them. Four are big enough to spot with a small telescope. In 1610, an Italian scientist named Galileo pointed his telescope at Jupiter and saw those four moons circling it night after night. That changed everything. Most people back then believed every single thing in the sky went around Earth. Galileo could see with his own eyes that these four went around something else."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is Jupiter made of?",
+            "What are the stripes on Jupiter?",
+            "How long have people watched the Great Red Spot?",
+            "Why do you think Galileo's four moons changed what people believed about the sky?"
+          ],
+          "rows": 2,
+          "answers": [
+            "gas, mostly hydrogen and helium",
+            "bands of cloud moving in different directions",
+            "more than 150 years",
+            "(inference: they proved not everything goes around Earth)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Giant With No Ground", "How to Build a Telescope", "The Coldest Winter in Italy"],
+          "answers": ["The Giant With No Ground"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Jupiter is made mostly of hydrogen and ____.", "The stripes on Jupiter are bands of ____.", "Galileo saw four ____ going around Jupiter."],
+          "wordBank": ["helium", "cloud", "moons"],
+          "answers": ["helium", "cloud", "moons"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about Jupiter, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Planet Where the Storm Never Stops",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-jupiter", "templateLabel": "The Planet Where the Storm Never Stops", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "jupiter",
+          "notes": ["Heavier than all the other planets put together", "A gas giant: hydrogen and helium, no solid surface", "Cloud tops sit near 234 degrees below zero Fahrenheit", "The Galileo probe fell in and lasted about an hour", "The Great Red Spot has been tracked for over 150 years", "One Jupiter year takes about 12 Earth years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Planet You Could Fall Through",
+          "text": "Ask someone to name the biggest thing in the solar system and they will probably say the Sun. They are right. Ask for the second biggest, and the answer is Jupiter, and it is not a close contest. Jupiter contains more than twice as much material as every other planet added together. Roughly 1,300 Earths would fit inside it. Yet you could never stand on it. Jupiter is a gas giant. Its outer layers are hydrogen and helium, the same two elements that make up most of the Sun. There is no rock, no beach, no floor. If you fell into Jupiter, you would drop first through freezing clouds of ammonia, then through warmer layers, then into gas so tightly squeezed that it behaves more like a liquid than like air. The deeper you sank, the more the weight of everything above would press in on you. This is not a guess. In 1995, a small probe released by the Galileo spacecraft parachuted into those clouds on purpose. It sent measurements home for about an hour before the heat and the pressure destroyed it. It never reached anything solid, because there is nothing solid to reach. The stripes are clouds traveling in opposite directions at hundreds of miles per hour. Where opposing bands grind past one another, storms spin up. The Great Red Spot is the largest of them, a single storm wider than our entire planet, and astronomers have tracked it for more than 150 years. On Earth, a hurricane weakens and dies within a week or two, because it drags across land and cool water that starve it. Jupiter offers no land to drag across. So the storm just keeps turning."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What does it mean to call Jupiter a gas giant?",
+            "The passage says This is not a guess. What evidence does it give straight afterward?",
+            "Explain why hurricanes on Earth die out but the Great Red Spot does not.",
+            "The Galileo probe was destroyed after about an hour. Why might scientists send a probe somewhere knowing it will be destroyed?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is made of gas, mostly hydrogen and helium, with no solid surface",
+            "the 1995 Galileo probe fell in and sent data for about an hour before being destroyed",
+            "hurricanes drag across land and cool water that starve them; Jupiter has no land",
+            "(inference: the data is worth more than the probe; there is no other way to measure inside the clouds)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Jupiter is a vast ball of gas with no surface, and its storms can last far longer than any storm on Earth",
+            "The Sun is the biggest object in the solar system",
+            "Spacecraft are too fragile to be useful to scientists"
+          ],
+          "answers": ["Jupiter is a vast ball of gas with no surface, and its storms can last far longer than any storm on Earth"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["gas giant → ____", "probe → ____", "pressure → ____"],
+          "rows": 1,
+          "answers": [
+            "a huge planet made of gas with no solid ground",
+            "a small craft sent to measure a place people cannot go",
+            "the squeezing force of everything pressing down from above"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph describing what you would see, hear, and feel as you fell through Jupiter's clouds. Use at least three details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Planet Where the Storm Never Stops",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-jupiter", "templateLabel": "The Planet Where the Storm Never Stops", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "jupiter",
+          "notes": ["Diameter about 11 times Earth's", "Spins once in under 10 hours, the fastest of any planet", "The spin bulges its middle outward", "The Great Red Spot has been shrinking for decades", "Ganymede is bigger than the planet Mercury", "Europa hides a salty ocean under its ice"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Storm That Will Not Die",
+          "text": "Jupiter is built on a scale that resists imagination. Its diameter is about eleven times Earth's, and it outweighs every other planet in the solar system combined, twice over. It is also in a hurry. Despite its size, Jupiter completes one full rotation in under ten hours, which is the shortest day of any planet we know. Spin something that large that fast and it cannot hold a neat shape. Jupiter bulges at its equator and flattens at its poles, a squashed giant of a world. That rotation is what draws the stripes. Jupiter's atmosphere is stretched into bands that run parallel to the equator, alternating light zones and dark belts, each racing in the opposite direction to its neighbor. Along the seams where they scrape past each other, the atmosphere tears into swirls and storms. The most famous of these is the Great Red Spot, a rotating storm wide enough to swallow Earth, with winds near its edge running at hundreds of miles per hour. Astronomers have watched it continuously since the 1800s, and possibly far longer. Here is what makes it remarkable. A hurricane on Earth is a temporary thing. It draws its energy from warm ocean water, and the moment it crosses land or cool sea, it starves and unravels. It rarely lasts a fortnight. The Great Red Spot has no coastline to strike, no cold water to cross, and nothing beneath it but more atmosphere. It has been spinning for centuries. Even so, it is not permanent. Measurements taken over the last hundred years show the spot steadily shrinking. It was once wide enough to hold two or three Earths side by side. Today it holds barely one. Nobody can say with confidence whether it will fade out entirely or settle at a smaller size. Jupiter's other wonders are not on Jupiter at all. It is orbited by more than ninety moons. Ganymede, the largest, is bigger than the planet Mercury. Europa is wrapped in a shell of ice, and beneath that ice, evidence points to a salty ocean holding more water than every ocean on Earth put together. We call Jupiter the giant. Its moons may turn out to be the interesting part."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "How does Jupiter's rotation explain both its shape and its stripes?",
+            "Explain why the Great Red Spot lasts so much longer than a hurricane. Quote the phrase the passage uses about what lies beneath the storm.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the author suggesting in the final sentence, and why place it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering scale and fast spin, the banded storms and the Red Spot, and the moons)",
+            "the fast spin bulges the equator and flattens the poles, and it stretches the atmosphere into bands that scrape past each other",
+            "no land or cool water to starve it; quote: nothing beneath it but more atmosphere",
+            "(inform, with detail: it defines terms and cites measurements; some persuasive turn at the end)",
+            "(that Europa and Ganymede may matter more than Jupiter itself; ending there leaves the reader with the open question)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["rotation → ____", "equator → ____", "atmosphere → ____", "continuously → ____"],
+          "rows": 1,
+          "answers": [
+            "one full spin of a planet on its axis",
+            "the imaginary line around the widest part of a planet",
+            "the layer of gas surrounding a planet",
+            "without stopping, from then until now"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the Great Red Spot is not permanent. Explain how scientists could know a storm is shrinking when no one has ever visited it.",
+            "Why might a salty ocean under Europa's ice interest scientists more than Jupiter's clouds do?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(a century of telescope measurements compared over time)",
+            "(inference: liquid water is where life might exist; the clouds have no surface or water for it)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: if we can only afford to send one mission, should it study Jupiter itself or the moon Europa? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Planet Where the Storm Never Stops",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-jupiter", "templateLabel": "The Planet Where the Storm Never Stops", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "jupiter",
+          "notes": ["Same recipe as the Sun: mostly hydrogen and helium", "Would need roughly 80 times more mass to ignite", "Metallic hydrogen inside drives the strongest planetary magnetic field", "Juno has orbited since 2016 and found a fuzzy core", "Galileo's four moons broke the Earth-centered sky in 1610", "Europa's hidden ocean may hold twice Earth's water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Almost a Star: The Planet That Missed",
+          "text": "Jupiter is often called a failed star, and the phrase is doing a lot of work. It is not wrong about the ingredients. Jupiter is made of roughly the same stuff as the Sun, overwhelmingly hydrogen and helium, gathered from the same disk of gas and dust that built everything else in the neighborhood. Had more material fallen into it, its core would have been squeezed harder and hotter, until hydrogen atoms began fusing into helium and the thing lit up. That is what a star is. But the shortfall was not narrow. Jupiter would need about eighty times its current mass to reach that threshold. Calling it a failed star is a bit like calling a pebble a failed mountain. It missed by a wide margin, and it became something far stranger instead. What happens inside Jupiter has no equivalent on Earth. Descend through the ammonia clouds and the pressure climbs relentlessly. There is no surface to cross, only gas that thickens until the distinction between gas and liquid stops meaning anything. Deeper still, the squeeze becomes so extreme that hydrogen abandons its normal behavior entirely. Its electrons are stripped loose and set free to roam, and the hydrogen begins to conduct electricity like a metal. This is liquid metallic hydrogen, an ocean of it, thousands of miles deep, churning as the planet whips around once every ten hours. That churning ocean is a dynamo, and it generates the most powerful magnetic field of any planet in the solar system. The field is enormous. It traps charged particles into radiation belts fierce enough to kill an unshielded astronaut, and it drives permanent auroras over Jupiter's poles that dwarf anything seen on Earth. The Juno spacecraft, in orbit since 2016, was built with a titanium vault around its electronics simply to survive taking the measurements. What Juno found underneath surprised people. Astronomers had expected a compact rocky core. Instead the gravity data suggests a fuzzy core, a smeared and partly dissolved center blending gradually into the layers above it, which hints that something violent happened early in Jupiter's history. There is a reason Jupiter keeps rearranging what we think we know. In January 1610, Galileo Galilei aimed a homemade telescope at the planet and noticed three small stars beside it. He watched for weeks. The stars moved, night after night, and never wandered away. There were four of them. They were not stars at all. They were worlds, circling Jupiter, plainly and repeatedly going around something that was not Earth. That single observation cracked the foundation of an entire cosmology, and the idea it supported would eventually put Galileo on trial. Four centuries later, those same moons are still the most interesting thing in the neighborhood. Ganymede outsizes the planet Mercury and generates a magnetic field of its own. Europa is sheathed in fractured ice, and beneath that shell the evidence points to a global saltwater ocean holding perhaps twice as much water as every ocean on Earth combined. The giant, in the end, may matter most for what it keeps close."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author accepts part of the failed star label and rejects part of it. Explain both halves, and cite the comparison the author uses to reject it.",
+            "Trace the chain of cause and effect from Jupiter's pressure to its auroras. Use at least three steps.",
+            "Identify the shift in the passage: where does it turn from Jupiter itself to Galileo, and what sentence signals the turn?",
+            "The final sentence says the giant may matter most for what it keeps close. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(accepts the shared composition with the Sun; rejects the near-miss framing; cite: like calling a pebble a failed mountain)",
+            "(pressure strips electrons from hydrogen, creating liquid metallic hydrogen, which churns as a dynamo, which makes the magnetic field, which traps particles and drives auroras)",
+            "(at There is a reason Jupiter keeps rearranging what we think we know; a short bridging sentence pivots from the planet to its history of overturning ideas)",
+            "(it redirects the reader from the planet to its moons, especially Europa; earned by the ocean and Ganymede evidence in the closing lines)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["fusing → ____", "dynamo → ____", "cosmology → ____", "sheathed → ____"],
+          "rows": 2,
+          "answers": [
+            "joining lighter atoms into heavier ones, releasing energy",
+            "a moving conductor that generates a magnetic field",
+            "a model of how the universe is arranged",
+            "wrapped or covered in a close outer layer"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says Juno was built with a titanium vault around its electronics. Explain what that detail tells you about the environment, and why the author includes it rather than just stating the field is strong.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the radiation is destructive enough to require shielding; a concrete engineering detail proves the claim better than an adjective)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Calling Jupiter a failed star tells you more about how people think than about Jupiter. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

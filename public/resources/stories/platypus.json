@@ -1,0 +1,322 @@
+{
+  "key": "platypus",
+  "title": "The Animal Nobody Believed In",
+  "blurb": "The egg-laying, venomous, duck-billed mammal that hunts with its eyes shut. Scientists took scissors to the first one, hunting for the stitches.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Animal Nobody Believed In",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-platypus", "templateLabel": "The Animal Nobody Believed In", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the flat bill. Find the flat tail." },
+        {
+          "kind": "image",
+          "imageKey": "platypus",
+          "notes": ["It has a bill like a duck", "It has a tail like a beaver", "It swims with its eyes shut", "It lays eggs", "It lives in Australia"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a platypus. Say it like this: PLAT-uh-puss. It has a bill like a duck. It has a tail like a beaver. It has feet like an otter. The platypus lives in a river. It swims down to the mud. It shuts its eyes. Its bill can still find food. Then it comes up to eat. The platypus is soft and brown and small."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the eggs in each nest. Write how many in the box.",
+          "emoji": "🥚",
+          "items": ["2", "1", "3", "2"],
+          "answers": ["2", "1", "3", "2"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bill    swim" },
+        {
+          "kind": "matching",
+          "prompt": "The platypus shares a part with each animal. Draw a line to match them.",
+          "pairs": [
+            { "left": "duck", "right": "flat bill" },
+            { "left": "beaver", "right": "flat tail" },
+            { "left": "otter", "right": "webbed feet" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own platypus swimming in the river. Give it a wide flat tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Animal Nobody Believed In",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-platypus", "templateLabel": "The Animal Nobody Believed In", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "platypus",
+          "notes": ["Say it PLAT-uh-puss", "It is a mammal that lays eggs", "Only five mammals on Earth lay eggs", "It lives in rivers in Australia", "Babies drink milk from her fur"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Eggs in the River Bank",
+          "text": "Almost every mammal has babies that are born alive. The platypus does not. The mother platypus digs a long burrow in the river bank. She lays two small eggs, softer than a bird's egg. She curls around them to keep them warm. In about ten days the babies hatch. They are pink and blind and smaller than your thumb. The mother has no way to feed them milk from a teat. Her milk leaks out through her skin instead. The babies lap it up from her fur."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does the mother platypus dig her burrow?", "How many eggs does she lay?", "How do the babies get their milk?"],
+          "rows": 2,
+          "answers": ["in the river bank", "two", "they lap it up from her fur"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The mother platypus lays two ____.", "She digs a ____ in the river bank.", "Her milk comes out through her ____.", "The babies ____ the milk from her fur."],
+          "wordBank": ["eggs", "burrow", "skin", "lap"],
+          "answers": ["eggs", "burrow", "skin", "lap"]
+        },
+        { "kind": "draw", "prompt": "Draw the mother platypus curled around her eggs inside her burrow.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Animal Nobody Believed In",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-platypus", "templateLabel": "The Animal Nobody Believed In", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "platypus",
+          "notes": ["Say it PLAT-uh-puss", "It shuts its eyes, ears, and nose to dive", "About 40,000 sensors in its bill pick up electricity", "It feels the spark in a shrimp's muscle", "Grown platypuses have no teeth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Hunting Blind",
+          "text": "A platypus hunts in muddy water where almost nothing can be seen. So it does something strange. Just before it dives, it shuts its eyes. It shuts its ears. It shuts its nostrils too. For the whole dive, the platypus is blind and deaf, and it does not care. The trick is the bill. A platypus bill is not hard like a duck's beak. It is soft and rubbery, and it is packed with about a hundred thousand tiny sensors. Most of those sensors feel pressure, the way your fingertip feels a nudge. About forty thousand of them do something no other mammal in the world can do well. They pick up electricity. Every time a shrimp flicks its tail, its muscles give off a faint spark of electricity. The water carries that spark. The platypus sweeps its bill from side to side, catches the signal, and turns straight toward it. It finds its dinner in the dark without ever opening its eyes."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What three things does the platypus close before it dives?",
+            "How is a platypus bill different from a duck's beak?",
+            "What do the sensors in the bill pick up?",
+            "Why do you think shutting its eyes is not a problem for a hunting platypus?"
+          ],
+          "rows": 2,
+          "answers": [
+            "its eyes, its ears, and its nostrils",
+            "it is soft and rubbery instead of hard",
+            "pressure, and electricity from a shrimp's muscles",
+            "(inference: eyes are no use in muddy water, so the bill tells it more than seeing would)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Hunting Blind", "How to Train a Pet Duck", "The Longest River in Australia"],
+          "answers": ["Hunting Blind"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A platypus bill is soft and ____.", "Most of the sensors in the bill feel ____.", "A shrimp's muscles give off a spark of ____."],
+          "wordBank": ["rubbery", "pressure", "electricity"],
+          "answers": ["rubbery", "pressure", "electricity"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you had to find your lunch with your eyes closed, what would you use instead, and how would it help?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Animal Nobody Believed In",
+      "subtitle": "A reading and history of science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-platypus", "templateLabel": "The Animal Nobody Believed In", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "platypus",
+          "notes": ["Ornithorhynchus anatinus", "A monotreme: a mammal that lays eggs", "Only 5 monotreme species are alive today", "Males carry venom in a spur on each back ankle", "Its body runs cool, near 90 degrees Fahrenheit", "The first specimen was checked for stitches"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Skin That Looked Like a Lie",
+          "text": "In 1799 a package arrived in London from the new British colony in Australia. Inside was the dried skin of an animal that could not exist. It had the flat bill of a duck stitched, apparently, onto the furred body of a mole. It had webbed feet, and a tail like a beaver's paddle. George Shaw, a naturalist at the British Museum, was not fooled. Or rather, he expected to prove he was not fooled. Taxidermists in Asia were known to sew monkey bodies onto fish tails and sell them as mermaids, so Shaw took a pair of scissors to the bill and hunted for the stitches. He found none. The bill had grown there. He published a careful description and admitted, in print, that he could not shake the suspicion of trickery. The animal was worse than Shaw imagined. Over the following decades, reports came back from Australia claiming that this furred, warm-blooded creature laid eggs. European scientists argued about it for nearly ninety years. Mammals had fur and milk and live young. Birds and reptiles laid eggs. The categories were tidy, and the platypus sat in the wrong one. It was not settled until 1884, when William Caldwell found a platypus with an egg and sent a short telegram to a meeting of scientists in Montreal. Today we know the platypus is a monotreme, a mammal that lays eggs. There are only five monotreme species left on Earth: the platypus and four kinds of echidna. They are not a failed experiment. They are the oldest branch of the mammal family still living."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did George Shaw take a pair of scissors to the specimen?",
+            "What made the platypus so hard for European scientists to classify?",
+            "The passage says the categories were tidy, and the platypus sat in the wrong one. What does that tell you about how science handles a surprise?",
+            "Why do you think the author ends by saying monotremes are not a failed experiment?"
+          ],
+          "rows": 2,
+          "answers": [
+            "he thought the bill had been sewn on, and he was hunting for the stitches",
+            "it had fur and milk like a mammal but laid eggs like a bird or a reptile",
+            "(inference: the categories were made by people, so the evidence forced the categories to change)",
+            "(inference: to push back on the idea that laying eggs makes an animal primitive or lesser)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A real animal broke the rules European science had written, and the rules had to change",
+            "British museums in 1799 were full of fake animals",
+            "Ducks and moles are closely related"
+          ],
+          "answers": ["A real animal broke the rules European science had written, and the rules had to change"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["naturalist → ____", "monotreme → ____", "taxidermist → ____", "suspicion → ____"],
+          "rows": 1,
+          "answers": [
+            "a scientist who studies living things",
+            "a mammal that lays eggs",
+            "someone who prepares and mounts animal skins",
+            "a feeling that something is not honest"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: you are George Shaw in 1799, holding this skin. Would you publish it and risk looking foolish, or wait for more evidence? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Animal Nobody Believed In",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-platypus", "templateLabel": "The Animal Nobody Believed In", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "platypus",
+          "notes": ["Ornithorhynchus anatinus", "Bill: about 40,000 electric sensors, about 60,000 pressure sensors", "Males have a venom spur on each hind ankle", "No teeth: it grinds its food with gravel", "Ten sex chromosomes, not two", "The monotreme line split off over 160 million years ago"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Mammal Assembled From Spare Parts",
+          "text": "People like to describe the platypus as an animal built from leftover parts: a duck's bill, an otter's feet, a beaver's tail, all stapled onto something like a mole. It is a good joke and a bad description. Nothing about the platypus is borrowed. Every piece of it evolved on its own, in Australian rivers, for a reason. Start with the bill, which is nothing like a duck's. A duck's beak is hard keratin. The platypus bill is soft, flexible skin stretched over bone, and it works as a sense organ rather than a tool. Around sixty thousand receptors in it detect pressure. Around forty thousand more detect electricity, and researchers think the platypus uses both together: the electric signal from a shrimp's twitching muscle arrives at the bill a fraction of a second before the pressure wave from the same movement does. The size of that gap tells the platypus how far away the shrimp is. It is hunting by a kind of biological arithmetic, in total darkness, with its eyes squeezed shut. Then there is the spur. On the inside of each hind ankle, a male platypus carries a hollow, curved spike connected to a venom gland. The venom will not kill a person, which is the only reassuring thing about it. Victims describe pain so severe that morphine does not touch it, and swelling that can last for months. The gland swells during breeding season and shrinks afterward, which tells us what the venom is for. It is not aimed at predators or at prey. It is aimed at other males. The feeding is stranger still. An adult platypus has no teeth at all. It scoops up prey along with a mouthful of gravel, stores the lot in its cheek pouches, surfaces, and grinds the meal against horny pads using the grit as sandpaper. The oddest fact is the one you cannot see. Most mammals, including you, carry two sex chromosomes. The platypus carries ten, and they link together in a chain during reproduction. Its genome, read in full in 2008, contains genes that look reptilian sitting next to genes that look thoroughly mammalian. None of this makes the platypus primitive. It makes it old. The monotreme line split from the rest of the mammals more than one hundred and sixty million years ago and has been quietly refining itself in Australian water ever since."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The author calls the leftover-parts description a good joke and a bad description. Explain what is wrong with it.",
+            "How does the platypus work out how far away its prey is? Quote the phrase the passage uses for that skill.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the venom spur for, and what evidence in the passage tells you so?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the bill, the venom, and the ancient monotreme line)",
+            "it suggests the parts were borrowed from other animals, but each one evolved separately in Australian rivers for its own reason",
+            "it measures the gap between the electric signal and the slower pressure wave; quote: a kind of biological arithmetic",
+            "(inform, with a persuasive edge: it defines terms and gives facts, but argues against calling the platypus primitive)",
+            "it is aimed at other males; evidence: the gland swells during breeding season and shrinks afterward"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["keratin → ____", "receptor → ____", "primitive → ____", "refining → ____"],
+          "rows": 1,
+          "answers": [
+            "the hard material a beak, a nail, or a horn is made of",
+            "a cell or organ that picks up a signal",
+            "early and undeveloped, used here as a label the author rejects",
+            "improving something slowly, bit by bit"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the venom will not kill a person, which is the only reassuring thing about it. What is that line doing?",
+            "Why might an animal that hunts in muddy rivers evolve electric sensors instead of better eyes?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(understatement for effect: it sets up how bad the pain actually is)",
+            "(inference: eyes are useless in mud, so a sense that works in the dark is worth more)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the platypus is often used as a punchline, an animal that looks like a mistake. Is that fair? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Animal Nobody Believed In",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-platypus", "templateLabel": "The Animal Nobody Believed In", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "platypus",
+          "notes": ["Ornithorhynchus anatinus: bird-snout, duck-like", "Monotreme: lays eggs, makes milk, has fur", "Bill: about 40,000 electroreceptors, about 60,000 push rods", "Ten sex chromosomes that link in a chain", "Genome sequenced in 2008: reptile and mammal genes side by side", "Its fur glows blue-green under UV light, reported in 2020", "IUCN status: Near Threatened"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Broke the Categories",
+          "text": "For most of the nineteenth century, the platypus was a scandal. The trouble began in 1799, when a dried skin reached London from the penal colony at New South Wales. George Shaw, describing it for the British Museum, could not persuade himself it was real. Asian taxidermists had a known trade in mermaids assembled from monkeys and fish, and this thing looked like a better version of the same fraud: a duck's bill on a mole's body, with webbed feet and a flat, furred paddle for a tail. Shaw took scissors to the bill and searched for stitching. There was none. He published anyway, and confessed in the same breath that he could not shake his doubts. The scandal deepened when colonists reported that the animal laid eggs. This was not a curiosity. It was a threat. European naturalists had spent a century sorting life into clean containers: mammals have fur, produce milk, and bear live young; birds and reptiles lay eggs. A furred, milk-producing egg-layer did not belong in any container, and rather than widen the containers, many scientists simply refused to believe the reports. The argument ran for eighty-five years. It ended in 1884, when William Caldwell, working in Queensland, found a platypus with an egg and sent a telegram to a scientific meeting in Montreal, confirming what Aboriginal Australians had known for thousands of years and colonists had been saying for decades. What the platypus exposed was not a gap in nature. It was a gap in the filing system. Nature never agreed to the categories; people invented them, working mostly from the animals of Europe, and then mistook their own invention for a law. The platypus was never a contradiction. It was simply older than the rule it appeared to break. The monotreme lineage split from the rest of the mammals more than one hundred and sixty million years ago, long before live birth became the standard, and it kept the egg because the egg kept working. Look closely and the platypus stops looking like a mixture at all. The bill is not a duck's beak; a duck's beak is hard keratin, while the platypus bill is soft skin over bone, carrying roughly forty thousand electroreceptors and sixty thousand pressure receptors. Diving with its eyes, ears, and nostrils clamped shut, the animal reads the faint electrical twitch of a shrimp's muscle and, researchers believe, judges distance from the delay between that electric signal and the slower pressure wave behind it. The male's ankle spur delivers a venom that will not kill a human but produces pain that morphine reportedly cannot reach. The gland feeding it swells in breeding season, which suggests the weapon is for settling disputes with rival males, not for defense. Each of these is a specialist solution to a specific Australian problem. None of them is borrowed. The modern chapter is quieter and worse. The platypus is not a scandal now; it is a species in slow retreat. It needs permanent freshwater, stable banks to burrow into, and enough shrimp and insect larvae to fuel a metabolism that burns through roughly a fifth of its body weight in food each night. Dams fragment its rivers, drought dries them, and the animal cannot cross dry country to find better water. The IUCN lists it as Near Threatened, and long stretches of river that carried platypuses within living memory now carry none. The nineteenth century argued about whether the platypus could possibly exist. That question is settled. The one left is whether we intend to let it keep existing, and unlike the first, this one is not about evidence. It is about choice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author writes that the platypus exposed a gap in the filing system, not a gap in nature. Explain that claim and cite the sentence that supports it.",
+            "Why does the author call the egg-laying reports a threat rather than a curiosity? Quote the evidence.",
+            "Analyze the author's move in the sentence about Aboriginal Australians. What is it doing, and why is it placed at the end of that paragraph?",
+            "Identify where the passage turns from history to the present. How does the author signal the turn?",
+            "The final lines say this one is not about evidence. It is about choice. Does the passage earn that claim? Use the text."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(scientific categories are human inventions, not natural laws; cite: Nature never agreed to the categories; people invented them)",
+            "(it broke the definition of a mammal itself; quote: rather than widen the containers, many scientists simply refused to believe the reports)",
+            "(it reframes an 85-year scientific argument as European ignorance rather than a real mystery; end position gives it the weight of the paragraph)",
+            "(at The modern chapter is quieter and worse; a short blunt sentence marks the pivot)",
+            "(analysis: earned via the dams, drought, and IUCN evidence, or not earned because the passage offers no solutions)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["scandal → ____", "lineage → ____", "electroreceptor → ____", "fragment (verb) → ____"],
+          "rows": 2,
+          "answers": [
+            "an outrage, something that offends the accepted rules",
+            "a line of descent from a common ancestor",
+            "a sensor that detects electrical signals",
+            "to break something continuous into separate pieces"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says it kept the egg because the egg kept working. Explain what that suggests about how evolution actually operates.",
+            "Name one claim in this passage a careful reader should check against another source, and explain why."
+          ],
+          "rows": 3,
+          "answers": [
+            "(traits persist when they work; evolution is not climbing toward a better standard form)",
+            "(student choice plus reasoning, for example the morphine claim, which the author hedges with reportedly)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Scientific categories like mammal, bird, and reptile do more harm than good, because nature ignores them. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

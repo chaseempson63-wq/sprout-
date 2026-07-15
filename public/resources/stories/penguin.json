@@ -1,0 +1,319 @@
+{
+  "key": "penguin",
+  "title": "The Bird That Flies Underwater",
+  "blurb": "The bird that traded the sky for the ocean, and became the deepest diver with feathers.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-penguin", "templateLabel": "The Bird That Flies Underwater", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the penguin." },
+        {
+          "kind": "image",
+          "imageKey": "penguin",
+          "notes": ["It is a bird that cannot fly", "It swims with its wings", "It is black on top and white below", "It walks with a waddle"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a penguin. A penguin is a bird. But a penguin does not fly in the sky. A penguin swims. Its wings are flat like paddles. It flaps them under the water. Zoom. A penguin is black on top and white on its tummy. It waddles on the ice. Then it dives into the cold sea to catch a fish."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fish in each row. Write how many in the box.",
+          "emoji": "🐟",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "swim    fish" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "penguin", "right": "ice" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own penguin. Give it a big white tummy.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-penguin", "templateLabel": "The Bird That Flies Underwater", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "penguin",
+          "notes": ["A bird that swims instead of flies", "Its wings are called flippers", "Black back, white tummy", "It slides on its belly on the ice", "Nearly all penguins live south of the equator"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Flies Underwater",
+          "text": "A penguin is a bird, but it cannot fly. Its wings are not soft and wide like a robin's wings. They are hard and flat, like two little paddles. On land, a penguin waddles. It looks slow and funny. In the water, everything changes. The penguin flaps its paddle wings and shoots through the sea like a rocket. It can turn and roll and chase a fish. A penguin's back is black. Its tummy is white. If a hungry seal looks up from below, the white tummy hides against the bright sky. If a bird looks down from above, the black back hides against the dark water."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What kind of animal is a penguin?", "What are a penguin's wings like?", "What color is a penguin's tummy?"],
+          "rows": 2,
+          "answers": ["a bird", "hard and flat, like two little paddles", "white"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A penguin is a bird that cannot ____.", "Its wings are flat like ____.", "On land a penguin ____.", "Its back is ____ and its tummy is white."],
+          "wordBank": ["fly", "paddles", "waddles", "black"],
+          "answers": ["fly", "paddles", "waddles", "black"]
+        },
+        { "kind": "draw", "prompt": "Draw the penguin swimming in the sea. Add a fish for it to chase.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-penguin", "templateLabel": "The Bird That Flies Underwater", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "penguin",
+          "notes": ["18 kinds of penguin, all in the southern half of the world", "Its wing joints barely bend, so the flipper stays stiff", "Its bones are solid, not hollow like other birds'", "Gentoos swim about 22 miles an hour", "The little blue penguin is only about a foot tall"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Gave Up the Sky",
+          "text": "Every penguin is a bird, and every bird's ancestors could fly. Millions of years ago, the ancestors of penguins could fly too. So what happened? A wing is a tricky thing. A wing built for the air needs to be long, light, and wide. A wing built for pushing through water needs to be short, stiff, and narrow. A bird cannot have both. Little by little, penguins traded one for the other. Their wings grew flatter and stiffer until they became flippers. Their bones grew heavy and solid, which is bad for flying and perfect for diving. Today a penguin cannot lift itself one inch off the ground. Look at what it got in return. A penguin flies through the ocean. It beats its flippers just like a sparrow beats its wings, only the sea is a thousand times thicker than air. A gentoo penguin can swim faster than you can ride a bike. An emperor penguin can dive deeper than a skyscraper is tall, and hold its breath for twenty minutes. The sky was not much use to a bird whose food all lives underwater."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why can a bird not have wings that work well in both air and water?",
+            "Name two ways a penguin's body changed as it stopped flying.",
+            "What does the passage say a penguin got in return for giving up flight?",
+            "Why do you think losing the ability to fly did not hurt penguins?"
+          ],
+          "rows": 2,
+          "answers": [
+            "an air wing must be long and wide; a water wing must be short and stiff",
+            "its wings became flat stiff flippers and its bones became heavy and solid",
+            "it can swim very fast and dive very deep",
+            "(inference: all of their food lives underwater, so they did not need the sky)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Bird That Gave Up the Sky", "How to Build a Model Airplane", "The Coldest Place in the World"],
+          "answers": ["The Bird That Gave Up the Sky"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A penguin's wings became stiff, flat ____.", "Penguin bones are heavy and ____, which helps it dive.", "A ____ penguin can swim faster than you can ride a bike."],
+          "wordBank": ["flippers", "solid", "gentoo"],
+          "answers": ["flippers", "solid", "gentoo"]
+        },
+        { "kind": "handwriting", "prompt": "Write two or three sentences: was it a good trade for the penguin to give up flying? Say why you think so.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-penguin", "templateLabel": "The Bird That Flies Underwater", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "penguin",
+          "notes": ["Emperor penguin: the biggest, about four feet tall", "Males hold the egg on their feet for about 65 days", "They breed on sea ice in the Antarctic winter", "A huddle can hold thousands of birds", "Chicks are covered in gray fluff", "Emperors never build a nest"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Coldest Nursery on Earth",
+          "text": "Winter arrives in Antarctica in March, and every sensible animal leaves. The whales swim north. The other birds fly north. The emperor penguins walk south. They march up to sixty miles inland across the frozen sea to a patch of ice their colony has used for generations. There each female lays a single egg, passes it carefully to her mate, and leaves. She has been fasting for weeks and must return to the ocean to eat. That leaves the male holding the egg. He balances it on top of his feet and folds a flap of warm skin, called a brood pouch, down over it. If the egg touches the ice for more than a few seconds, it freezes and the chick inside dies. So he does not put it down. Not once. For about sixty-five days he stands in the dark, in cold near forty below, in winds strong enough to knock a person over, eating nothing at all. He does not stand alone. Thousands of males press together into a huddle so tight that the birds at the center warm up to nearly one hundred degrees Fahrenheit. The huddle is fair. It turns slowly, like a wheel, so that the penguins on the freezing outside edge shuffle inward and the warm ones take their turn in the wind. When the chick hatches, the male has lost nearly half his body weight. Then the female returns across the ice, finds her mate among thousands of identical birds by the sound of his voice alone, and feeds the chick. He walks to the sea to eat. They will trade places all winter."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why does the male emperor keep the egg on his feet instead of setting it on the ice?",
+            "Explain how the huddle works and why the passage calls it fair.",
+            "The passage says every sensible animal leaves, and then the emperor penguins walk south. What is the author suggesting by choosing the word sensible?",
+            "The female finds her mate among thousands of identical birds by his voice alone. What does that tell you about what emperor penguins can hear?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the ice would freeze the egg in seconds and the chick inside would die",
+            "the birds take turns; the huddle rotates so the outside birds move into the warm middle",
+            "(inference: the penguins are doing the opposite of sensible, and the author is being playful about how extreme it is)",
+            "(inference: they can pick one individual voice out of enormous noise)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Emperor penguins raise their chicks through the worst winter on Earth by taking turns and holding on",
+            "Antarctica is the windiest place people have ever measured",
+            "Penguin eggs hatch faster than chicken eggs"
+          ],
+          "answers": ["Emperor penguins raise their chicks through the worst winter on Earth by taking turns and holding on"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["brood pouch → ____", "colony → ____", "fasting → ____"],
+          "rows": 1,
+          "answers": [
+            "a flap of warm skin the male folds down over the egg",
+            "a large group of the same animal living and breeding together",
+            "going without any food for a long stretch of time"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which parent has the harder job, the male who holds the egg or the female who crosses the ice twice? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-penguin", "templateLabel": "The Bird That Flies Underwater", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "penguin",
+          "notes": ["Deepest bird dive on record: 1,850 feet, by an emperor", "Longest dive on record: about 28 minutes", "A salt gland above each eye drains seawater", "Solid bones help it sink instead of float", "Preen oil from a gland near the tail waterproofs the coat", "Heart rate can drop to a few beats per minute on a dive"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Deepest Breath of Any Bird",
+          "text": "A bird that hunts underwater faces a set of problems that a bird in the air never meets. Water is eight hundred times denser than air, it steals heat from a body twenty-five times faster, and it is salty. The penguin has solved all three, and it has done so by rebuilding almost every part of itself. Start with the feathers. A penguin's feathers are short, stiff, and packed more densely than almost any other bird's, and each one is anchored so tightly that water cannot force its way between them. Before every swim the penguin works oil from a gland near its tail through the whole coat. The result is a waterproof shell with a layer of trapped air underneath, and beneath that a thick pad of fat. Cold water never touches penguin skin. Then the salt. A penguin swallows seawater with every fish it catches, and seawater would kill a person who drank it. Above each eye sits a supraorbital gland that pulls salt out of the blood and dumps it into the nasal passages as a concentrated brine. The penguin simply shakes its head and flicks it away. Then the dive, which is the real feat. Flying birds have hollow, air-filled bones, because weight is the enemy of flight. Penguin bones are solid, which makes the bird heavier than it looks and helps it sink without effort. Before a deep dive an emperor penguin slows its heart to a handful of beats per minute, shuts down blood flow to muscles it does not need, and lets its body run on oxygen already loaded into its blood and muscle. Its air sacs compress under the pressure of the deep, so the air it carried down is worth little. The deepest emperor dive ever recorded reached 1,850 feet, deeper than any bird has ever gone, and the longest lasted almost twenty-eight minutes. The trade is written all over the animal. Every feature that makes a penguin a superb swimmer makes it a worse bird by the standards of the sky: heavy bones, stubby wings, a body shaped like a torpedo instead of a glider. On land it looks like a mistake. Watch it hunt, and it looks like the ocean built it on purpose."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the three problems the passage says water creates for a hunting bird, and say how the penguin solves each one.",
+            "Quote the phrase the passage uses to describe a penguin's body shape. What is that shape being contrasted with?",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "The last sentence says the ocean built it on purpose. Oceans do not build anything. What does the author actually mean?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering density, cold, and salt, plus feathers, salt gland, and diving)",
+            "it is dense, it steals heat, and it is salty; flippers and solid bones, oiled feathers over fat, and a salt gland above each eye",
+            "quote: shaped like a torpedo instead of a glider; contrasted with the gliding shape of a flying bird",
+            "(inform, with detail: it defines terms and gives measured numbers; the closing lines turn persuasive)",
+            "(evolution shaped the penguin to fit the ocean; built is a figure of speech)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["denser → ____", "supraorbital → ____", "brine → ____", "superb → ____"],
+          "rows": 1,
+          "answers": [
+            "packed more tightly, so heavier for its size",
+            "sitting above the eye socket",
+            "very salty water",
+            "excellent, better than almost anything else"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Flying birds have hollow bones and penguins have solid ones. Explain how the same feature can be an advantage for one bird and a disadvantage for another.",
+            "A penguin cannot fly away from a bad season. Why might that make it more fragile than a seabird that can?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: light bones help a bird stay up; heavy bones help a bird sink and stay down)",
+            "(inference: it cannot move to new food or escape a home that has changed)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it better to be the best in the world at one thing, or pretty good at several? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-penguin", "templateLabel": "The Bird That Flies Underwater", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "penguin",
+          "notes": ["Penguins have been flightless for about 60 million years", "Kumimanu fordycei may have weighed about 150 kg", "Water is about 800 times denser than air", "Emperors breed on fast ice from April to December", "18 living species, all southern except one", "Aptenodytes forsteri: 'featherless diver' from the Greek"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cost of Being Perfect at One Thing",
+          "text": "Somewhere around sixty million years ago, not long after the asteroid, a seabird in the southern ocean made a choice it could not take back. It is not a choice in the way you make choices. No penguin decided anything. But generation by generation, the birds whose wings were slightly stiffer and slightly shorter caught slightly more fish, and the birds that could still climb into the sky did not. Evolution kept score. The sky lost. The reason is a problem of engineering, and it is a genuinely hard one. A wing works by pushing a fluid backward. Air is thin, so an air wing must be enormous relative to the body and swept through a huge arc. Water is roughly eight hundred times denser, so a water wing must be short, rigid, and narrow or it will simply be torn from the shoulder. These are not two settings on one dial. They are opposite designs, and a bird that tries to do both does both poorly. Biologists have measured this cost directly in birds that still attempt the compromise. The thick-billed murre can fly and dive, and it pays for the privilege: it burns more energy in flight than nearly any other vertebrate its size, and it dives far worse than a penguin. The murre is stuck in the middle. The penguin walked off the fence. Once flight was gone, the constraints that had shaped birds for a hundred million years lifted all at once. Bones no longer had to be hollow, so they filled in and became ballast. Bodies no longer had to stay light, so they grew. The fossil record of the early southern ocean holds penguins that would look at a modern emperor the way an emperor looks at a chick. Palaeeudyptes klekowskii, which swam off Antarctica roughly thirty-seven million years ago, stood about as tall as a grown adult and outweighed a modern emperor penguin twice over. Kumimanu, from New Zealand, may have been heavier still. For tens of millions of years, some of the largest things hunting fish in that ocean were birds. They are gone now, and the smaller penguins remain, which raises the obvious question: was the trade worth it? The answer depends entirely on whether the world holds still. Specialization is a bet that tomorrow will resemble today. A penguin is exquisitely matched to cold, productive, ice-fringed water. It has no plan B. When seals and toothed whales spread through the same water, hunting the same prey and, many researchers think, doing it better, the giant penguins had nowhere to retreat to. They could not fly north. They could not leave. The emperor penguin is running the same experiment right now. Its entire breeding cycle is staked on fast ice, the frozen sea that clamps onto the Antarctic coast, and that ice must hold from April until December for a chick to fledge. It is not a preference. It is a requirement, written into the bird by millions of years in which the ice was simply always there. In 2022, in the Bellingshausen Sea, the ice broke up before the chicks had grown their waterproof feathers. Four of the five colonies there lost almost every chick. That is the bill for perfection. A generalist that is mediocre at everything can shuffle sideways when its world shifts. A specialist that is unmatched at one thing has, by definition, given up the alternatives. The penguin is the best underwater bird that has ever existed, and it is the best because it burned every other option to get there. Nothing on Earth hunts a fish better. Nothing on Earth is more completely at the mercy of one kind of water staying exactly the way it is."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage says a seabird made a choice, then immediately says no penguin decided anything. Explain why the author does that, and whether the opening is still fair.",
+            "Explain the wing problem in your own words. Why does the passage bring in the thick-billed murre, and what would be lost if that example were cut?",
+            "Cite the sentence that states the passage's central claim about specialization, then explain what it means.",
+            "The passage saves the emperor penguin and the sea ice for the second-to-last paragraph. Analyze why the author puts it there instead of opening with it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the author uses choice as a hook, then corrects it so the reader does not think evolution has intent; cite: Evolution kept score)",
+            "(air wings and water wings are opposite designs; the murre is real measured evidence that the compromise is costly, not just an argument)",
+            "(cite: Specialization is a bet that tomorrow will resemble today; being perfectly matched to a world only pays while that world lasts)",
+            "(the fossil giants set up the pattern first, so the living emperor lands as the same story happening now, not as a separate warning)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["constraints → ____", "ballast → ____", "specialization → ____", "fledge → ____"],
+          "rows": 2,
+          "answers": [
+            "limits that shape what is possible",
+            "heavy weight carried to help something sink or stay steady",
+            "becoming extremely good at one narrow way of living",
+            "to grow the feathers a young bird needs before it can leave"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage uses the murre as evidence and the giant fossil penguins as evidence. Explain what each one is evidence FOR. They are not supporting the same claim.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the murre supports the claim that air and water wings conflict; the fossils support the claim that flight was the limit on body size)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The penguin's specialization was a mistake, because a species that cannot adapt is a species waiting to die. State your position, cite two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}
