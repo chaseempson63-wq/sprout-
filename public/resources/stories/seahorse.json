@@ -1,0 +1,320 @@
+{
+  "key": "seahorse",
+  "title": "The Fish Where the Dad Has the Babies",
+  "blurb": "The slowest fish in the ocean has a square tail, no stomach, and a father who gives birth.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Fish Where the Dad Has the Babies",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-seahorse", "templateLabel": "The Fish Where the Dad Has the Babies", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the seahorse's curly tail." },
+        {
+          "kind": "image",
+          "imageKey": "seahorse",
+          "notes": ["It is a fish", "It swims standing up", "Its tail curls like a spring", "It has a long nose like a straw", "The dad carries the babies"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a seahorse. It is a fish. It does not swim like other fish. It swims standing up. Its tail curls around the grass. That way it can hold on tight. Look at its long nose. It sucks up tiny food, like a straw. The dad seahorse carries the babies in a pouch on his tummy. When they are ready, the babies swim out."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the little shrimp in each row. Write how many in the box.",
+          "emoji": "🦐",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "fish    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "seahorse", "right": "sea" },
+            { "left": "bird", "right": "sky" },
+            { "left": "dog", "right": "house" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own seahorse. Give it a long curly tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Fish Where the Dad Has the Babies",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-seahorse", "templateLabel": "The Fish Where the Dad Has the Babies", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "seahorse",
+          "notes": ["A seahorse really is a fish", "It has no teeth", "It has no stomach, so it eats all day", "Its tail holds on to seagrass", "The dad has the babies, not the mom"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fish Where the Dad Has the Babies",
+          "text": "A seahorse is a fish, but it swims standing straight up. A little fin on its back beats so fast that you can hardly see it. Even so, a seahorse is slow. The smallest kind is the slowest fish in the sea. It would take a whole hour to cross a bathtub. A seahorse has no teeth. It has a long snout, and it sucks up its food like a straw. The dad is the one who has the babies. The mom puts her eggs into a pouch on his front. He keeps them safe. Weeks later, he pushes out tiny seahorses, no bigger than a grain of rice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How does a seahorse swim?", "Why can a seahorse not bite its food?", "Who carries the eggs, the mom or the dad?"],
+          "rows": 2,
+          "answers": ["it swims standing straight up", "it has no teeth, so it sucks food up its snout", "the dad carries them in his pouch"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A seahorse is a ____.", "It swims standing straight ____.", "It sucks food through its long ____.", "The dad keeps the eggs in a ____."],
+          "wordBank": ["fish", "up", "snout", "pouch"],
+          "answers": ["fish", "up", "snout", "pouch"]
+        },
+        { "kind": "draw", "prompt": "Draw a seahorse holding on to some seagrass. Add fish and shells around it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Fish Where the Dad Has the Babies",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-seahorse", "templateLabel": "The Fish Where the Dad Has the Babies", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "seahorse",
+          "notes": ["Bony rings instead of scales", "The back fin beats about 30 times a second", "The dwarf seahorse is the slowest fish", "Its eyes move one at a time", "Dads get pregnant and give birth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fish That Swims Standing Up",
+          "text": "A seahorse does not look like a fish, but it is one. It has gills. It has fins. It is covered in bony rings instead of scales, which makes it feel like a tiny suit of armor.\n\nAlmost nothing about a seahorse works the way you would expect. It swims upright, pushed along by one small fin on its back that beats about thirty times a second. Even with all that effort, it barely moves. The dwarf seahorse is the slowest fish anyone has ever measured. It travels about five feet in an hour.\n\nBeing slow is fine, because a seahorse does not chase anything. It wraps its tail around a blade of seagrass and waits. Its two eyes move on their own, so one can look up while the other looks down. When a tiny shrimp drifts past, the seahorse snaps its head forward and sucks the shrimp in through its snout. The whole thing is over in less than the blink of an eye.\n\nThe strangest part comes last. Seahorse dads get pregnant. The mom lays her eggs inside a pouch on the dad's belly, and he carries them until they hatch."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What covers a seahorse's body instead of scales?",
+            "How does a seahorse move itself through the water?",
+            "How does a seahorse catch a shrimp without chasing it?",
+            "Why do you think it helps a seahorse to have eyes that move on their own?"
+          ],
+          "rows": 2,
+          "answers": [
+            "bony rings, like a tiny suit of armor",
+            "one small fin on its back beats about thirty times a second",
+            "it holds on to seagrass and waits, then snaps its head forward and sucks the shrimp in",
+            "(inference: it can watch for food and for danger at the same time without moving)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Fish That Swims Standing Up", "How to Build a Fish Tank", "The Fastest Shark in the Ocean"],
+          "answers": ["The Fish That Swims Standing Up"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A seahorse breathes with ____.", "It wraps its ____ around a blade of seagrass.", "The ____ seahorse is the slowest fish ever measured."],
+          "wordBank": ["gills", "tail", "dwarf"],
+          "answers": ["gills", "tail", "dwarf"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about a seahorse, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Fish Where the Dad Has the Babies",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-seahorse", "templateLabel": "The Fish Where the Dad Has the Babies", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "seahorse",
+          "notes": ["Genus name: Hippocampus", "Prehensile tail: a tail that can grip", "No stomach, so food rushes straight through", "Eats copepods, tiny drifting shrimp", "The male's pouch feeds the eggs oxygen", "The slowest fish on record"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built Wrong, Working Perfectly",
+          "text": "Everything about a seahorse looks like a mistake. It is a fish that cannot swim well. It has no teeth and no stomach. Its body is ringed with bony plates instead of scales. And the males, not the females, are the ones who get pregnant. Somehow, none of this is a problem.\n\nStart with the swimming. A seahorse holds itself upright and moves by fluttering a single fin on its back, roughly thirty beats every second. That buzzing fin produces almost no speed. The dwarf seahorse, measured carefully by scientists, covers about five feet in an hour, which makes it the slowest fish on record.\n\nA slow fish should starve. Instead, a seahorse anchors itself. Its tail is prehensile, meaning it can grip, and it curls around a stem of seagrass and holds on while the current pushes food past. Its eyes swivel independently, watching two directions at once.\n\nThen comes the ambush. A seahorse eats copepods, specks of shrimp so alert that they can feel water moving toward them and flick away. So the seahorse cheats. The shape of its head barely disturbs the water in front of the snout, creating a quiet zone the copepod never feels. The seahorse drifts in, then snaps its head up and slurps. The strike is faster than you can blink, and it usually works.\n\nThe lack of a stomach explains the rest. Food rushes through a seahorse so quickly that it has to eat almost constantly, hunting all day long.\n\nAnd the pregnancy is real, not a nickname. The female deposits her eggs into a pouch on the male's belly. He fertilizes them, feeds them oxygen, and adjusts the fluid inside until it matches the sea. Weeks later, he pumps hundreds of finished seahorses out into the water."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says a slow fish should starve. Explain why the seahorse does not.",
+            "What is a quiet zone, and why does a copepod never feel it?",
+            "Why does having no stomach change how a seahorse spends its day?",
+            "The author says the pregnancy is real, not a nickname. What does the male actually do that makes it a real pregnancy?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it does not chase food; it anchors with its tail and ambushes prey that drifts past",
+            "still water in front of the snout; the seahorse's head shape barely disturbs the water, so the copepod feels nothing coming",
+            "(inference: food passes through so fast it must eat almost constantly, so it hunts all day)",
+            "he fertilizes the eggs, feeds them oxygen, adjusts the fluid to match the sea, and gives birth"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A seahorse's strangest features are not flaws, they are what let it survive",
+            "Seahorses are the fastest hunters in the ocean",
+            "Male animals are usually better parents than female animals"
+          ],
+          "answers": ["A seahorse's strangest features are not flaws, they are what let it survive"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["prehensile → ____", "copepod → ____", "independently → ____", "ambush → ____"],
+          "rows": 1,
+          "answers": [
+            "able to grip or hold on",
+            "a tiny drifting shrimp that seahorses eat",
+            "separately, on its own",
+            "a surprise attack from hiding"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the title says Built Wrong, Working Perfectly. Choose two seahorse features that look like mistakes and explain what each one is actually good for.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Fish Where the Dad Has the Babies",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-seahorse", "templateLabel": "The Fish Where the Dad Has the Babies", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "seahorse",
+          "notes": ["Hippocampus: Greek for horse and sea monster", "The only tail in nature that is square in cross section", "Dorsal fin beats around 30 times a second", "Strike success around 9 out of 10", "No stomach at all", "The male runs a placenta in his pouch"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Slowest Hunter in the Sea",
+          "text": "A seahorse is a fish that has abandoned almost every advantage a fish has. It cannot outrun anything. It has no teeth to bite with and no stomach to store a meal in. Its body is stiff, ringed in bony plates, and held upright like a chess piece. Every one of those apparent failures turns out to be a trade.\n\nConsider speed. The seahorse's only real engine is the dorsal fin on its back, which flickers around thirty times a second and produces almost nothing. The dwarf seahorse holds the record as the slowest fish ever measured, at roughly five feet an hour. But a seahorse is not trying to travel. It is trying to disappear. It grips a stem of seagrass with a prehensile tail and becomes, for all practical purposes, part of the plant.\n\nThat tail is stranger than it looks. Most animal tails are round in cross section. A seahorse tail is square. When engineers built models of both and crushed them, the square tail proved harder to break and better at gripping, and it snapped back into shape afterward. Nature arrived at a design a mechanical engineer would recognize.\n\nThe hunting is where the trade pays off. Seahorses eat copepods, which are among the twitchiest animals alive. A copepod can sense water pushing ahead of a predator and escape in a few thousandths of a second. So the seahorse does not push water. The curve of its snout and head creates a pocket of nearly still water directly ahead, and the seahorse eases into striking range through that quiet pocket. Then its head pivots upward and its snout draws the copepod in like a pipette. In tests, dwarf seahorses succeeded on roughly nine out of ten strikes, an extraordinary rate for any hunter.\n\nThe missing stomach forces the pace. Food passes through so fast that a seahorse must feed for most of the day, picking off prey one at a time.\n\nThen there is the pregnancy, which is not a figure of speech. The female transfers her eggs into a sealed pouch on the male's abdomen. Inside, he fertilizes them, supplies oxygen through a network of blood vessels, feeds them, and slowly shifts the saltiness of the pouch fluid toward seawater so the newborns will survive the outside. He then labors, sometimes for hours, and releases them. Fewer than one in a hundred will reach adulthood."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The author says every apparent failure turns out to be a trade. Explain what a seahorse trades away and what it gets back.",
+            "Why can a seahorse catch a copepod when faster hunters cannot? Quote the phrase the passage uses for the water in front of its snout.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author compares the seahorse's snout to a pipette and its body to a chess piece. What does each comparison help you picture?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the trade of speed for stillness, the ambush hunting, and male pregnancy)",
+            "it trades speed and mobility for stillness, camouflage, and a grip that lets it ambush food",
+            "its head does not push water ahead of it, so the copepod feels nothing; quote: a pocket of nearly still water",
+            "(inform, with detail: it defines terms and cites measurements; some entertaining tone in the comparisons)",
+            "(pipette: the snout sucks prey in; chess piece: the body is stiff and stands upright)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["prehensile → ____", "dorsal → ____", "abdomen → ____", "extraordinary → ____"],
+          "rows": 1,
+          "answers": [
+            "able to grip and hold on",
+            "on the back of an animal",
+            "the belly part of the body",
+            "far beyond what is usual"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says nature arrived at a design a mechanical engineer would recognize. Explain what the author means by that.",
+            "Only a few of the hundreds of babies survive. Why might an animal produce so many young instead of a few well-protected ones?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the square tail solves a real engineering problem, grip plus crush resistance, the way a designed part would)",
+            "(inference: the newborns are tiny and defenseless, so numbers, not protection, are what keep the species going)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is the seahorse a badly built fish or a brilliantly built one? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Fish Where the Dad Has the Babies",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-seahorse", "templateLabel": "The Fish Where the Dad Has the Babies", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "seahorse",
+          "notes": ["Genus Hippocampus, family Syngnathidae", "More than 40 species, from 2 cm to 35 cm", "Square-sectioned prehensile tail", "Pivot feeding inside a hydrodynamic quiet zone", "Male pouch functions like a placenta", "All species under CITES trade controls since 2004"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forty Ways to Be a Bad Fish",
+          "text": "Every schoolbook definition of a fish is a list the seahorse quietly breaks. Fish are fast; the seahorse is the slowest swimmer in the ocean. Fish are flexible; the seahorse is a rigid tube of bony rings, held vertical, moved by a fin that flutters like an insect's wing and gets it almost nowhere. Fish are, with famous exceptions, not the sort of animal where the father gives birth. And yet there are more than forty species of them, from a pygmy seahorse the length of your fingernail to an Australian big-belly seahorse the length of your forearm, and they have been doing this for millions of years. The seahorse is not a badly built fish. It is a fish built for a job nobody else applied for.\n\nBiologists group seahorses in the genus Hippocampus, from the Greek for horse and sea monster, alongside their relatives the pipefish and sea dragons. Their strange body plan appears to have followed the spread of seagrass meadows across shallow tropical seas. In open water, speed is survival. In a meadow, speed is pointless and stillness is everything. So the seahorse traded its engine for an anchor.\n\nThe anchor is the tail, and it is the first place the engineering shows. Nearly every prehensile tail in nature, from a monkey's to a chameleon's, is round in cross section. A seahorse's tail is built from square, stacked bony plates. When researchers printed both shapes and tested them, the square version gripped better, absorbed crushing force without shattering, and slid back into alignment afterward. Roundness is elegant; squareness is armor that still bends. A predator can bite a seahorse's tail and the tail survives.\n\nThe second place the engineering shows is the head, and it is the reason a slow animal does not starve. Seahorses eat copepods, tiny crustaceans with a reflex that borders on unfair: they detect the bow wave of an approaching mouth and fire themselves away within milliseconds. Almost nothing catches them reliably. The seahorse does, because it never makes a bow wave. The narrow snout and the shape of the head above it leave a zone of nearly motionless water directly in front, and the seahorse creeps forward inside that silence. When it is close enough, the head snaps upward and the snout inhales. The whole capture takes roughly a thousandth of a second. Watch a dwarf seahorse hunt and it will hit about nine strikes out of ten, which is a better record than a shark, a wolf, or a hawk.\n\nIt has to be. A seahorse has no stomach at all. Food falls through its digestive tract so quickly that almost the only thing a seahorse does is eat, picking off prey after prey for most of the daylight hours.\n\nThen there is the pregnancy, which biologists mean literally. The female produces the eggs and deposits them, through a tube, into a sealed pouch on the male's abdomen. What happens next is not simple babysitting. He fertilizes the clutch, grows blood vessels through the pouch wall to deliver oxygen, secretes nutrients into it, and gradually raises the salt content of the pouch fluid until it matches the sea outside, so that his young are not shocked the moment they leave him. He is running a placenta. After several weeks, he goes into labor, and hundreds of fully formed seahorses are pumped out into the current. Fewer than one in a hundred will survive to breed.\n\nThe irony is that this careful animal is being emptied out of the ocean faster than it can replace itself. Seagrass meadows are disappearing under sediment and development. Seahorses are hauled up as bycatch in shrimp trawls by the tens of millions each year, dried, and sold for traditional medicine and souvenirs. Every species was placed under international trade controls in 2004. A fish that survived by being impossible to notice is being taken by nets that were never even looking for it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author opens by listing rules the seahorse breaks, then denies it is badly built. Cite the sentence that states the author's actual claim, and explain it.",
+            "Explain the seagrass argument: why would a meadow favor an animal that cannot swim? Cite the two sentences the author uses to make this point.",
+            "Contrast a round prehensile tail with the seahorse's square one. Why does the author write that squareness is armor that still bends?",
+            "The author writes He is running a placenta. Analyze what that four-word sentence is doing after the long sentence before it, and whether the passage earns the claim."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the trade of speed for stillness, the tail and snout engineering, male pregnancy, and the trade threat)",
+            "(cite: It is a fish built for a job nobody else applied for; the seahorse is specialized for a niche, not defective)",
+            "(cite: In open water, speed is survival. In a meadow, speed is pointless and stillness is everything; stillness beats speed among the stems)",
+            "(round tails are common and flexible; the square tail grips better and resists crushing while returning to shape, so it is protective without being rigid)",
+            "(a short blunt sentence lands the claim after a long technical list; earned, because the sentence before it names oxygen delivery, nutrients, and salt regulation)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["prehensile → ____", "bow wave → ____", "clutch → ____", "bycatch → ____"],
+          "rows": 2,
+          "answers": [
+            "able to grasp and hold on",
+            "the push of water sent ahead of a moving body",
+            "a group of eggs produced at one time",
+            "animals caught by accident in nets set for something else"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The final sentence says the nets were never even looking for it. Explain why accidental harm can be harder to stop than deliberate hunting.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(no one profits from stopping it directly, the damage is spread across a whole industry, and trade bans do not govern what a net sweeps up by accident)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal that survives only by hiding cannot be saved by laws about trade. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

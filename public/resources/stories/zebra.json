@@ -1,0 +1,329 @@
+{
+  "key": "zebra",
+  "title": "The Zebra Nobody Could Tame",
+  "blurb": "Every zebra wears a stripe pattern no other zebra has, and in ten thousand years nobody has managed to tame one.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Zebra Nobody Could Tame",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-zebra", "templateLabel": "The Zebra Nobody Could Tame", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the stripes with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "zebra",
+          "notes": ["Its stripes are black and white", "It lives in Africa", "It eats grass", "Every zebra has its own stripes", "A baby zebra can run on day one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a zebra. A zebra has black and white stripes. The stripes go all over. They go on its neck. They go on its legs. Every zebra has its own stripes. No two zebras look the same. A zebra eats grass all day. A baby zebra can stand up and walk on the day it is born. Nobody rides a zebra. A zebra likes to run free."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the zebras in each row. Write how many in the box.",
+          "emoji": "🦓",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "zebra    run" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its food.",
+          "pairs": [
+            { "left": "zebra", "right": "grass" },
+            { "left": "rabbit", "right": "carrot" },
+            { "left": "bird", "right": "seeds" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own zebra. Give it lots of stripes.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Zebra Nobody Could Tame",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-zebra", "templateLabel": "The Zebra Nobody Could Tame", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "zebra",
+          "notes": ["A group of zebras is called a dazzle", "Zebras live in Africa", "No two zebras have the same stripes", "They can sleep standing up", "A baby zebra is called a foal"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Zebra Nobody Could Tame",
+          "text": "A zebra looks like a horse in striped pajamas. But a zebra is not a horse. Zebras live in Africa. They live in big groups. A big group of zebras is called a dazzle. Every zebra has its own stripes. No other zebra has the same ones. A mother zebra keeps her baby close for a few days. She wants her baby to learn her stripes. That way the baby can find her in the dazzle. Zebras eat grass. They can sleep standing up. One zebra stays awake and watches for lions while the others rest."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where do zebras live?", "What is a big group of zebras called?", "Why does a mother zebra keep her baby close?"],
+          "rows": 2,
+          "answers": ["in Africa", "a dazzle", "so the baby can learn her stripes and find her"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A group of zebras is called a ____.", "Zebras live in ____.", "Zebras eat ____.", "Every zebra has its own ____."],
+          "wordBank": ["dazzle", "Africa", "grass", "stripes"],
+          "answers": ["dazzle", "Africa", "grass", "stripes"]
+        },
+        { "kind": "draw", "prompt": "Draw a dazzle of zebras eating grass. Give every zebra different stripes.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Zebra Nobody Could Tame",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-zebra", "templateLabel": "The Zebra Nobody Could Tame", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "zebra",
+          "notes": ["A zebra's skin is black under the fur", "Stripes work like fingerprints", "A group is called a dazzle", "A foal can run within an hour of birth", "Zebras live in Africa and eat grass"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Nobody Wears the Same Coat",
+          "text": "Shave a zebra and you would find something surprising. Its skin is black. The white stripes are places where the black color simply never grew in. So a zebra is a black animal wearing white stripes, not the other way around. No two zebras carry the same pattern. The stripes are as personal as a fingerprint. Scientists use this. They photograph zebras and let a computer read the stripes, and that is how they count how many are left. Baby zebras use the stripes too. For the first few days of its life, a foal's mother keeps it away from the rest of the herd. She stands where it can see her, again and again, until it has learned her pattern by heart. After that, the foal can pick its own mother out of a crowd of a hundred zebras. A foal is standing within about twenty minutes of being born. Within an hour it can run. It has to. On the open grass of Africa, an animal that cannot run does not last long."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What color is a zebra's skin under its fur?",
+            "How do scientists use stripes to count zebras?",
+            "Why does a mother zebra keep her foal away from the herd at first?",
+            "Why do you think a newborn zebra needs to run so soon?"
+          ],
+          "rows": 2,
+          "answers": [
+            "black",
+            "they photograph them and a computer reads each pattern",
+            "so the foal learns her stripe pattern and can find her",
+            "(inference: predators hunt on the open grass, so it has to keep up with the herd)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Nobody Wears the Same Coat", "How to Ride a Horse", "The Tallest Mountain in Africa"],
+          "answers": ["Nobody Wears the Same Coat"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A zebra's skin is ____ under its fur.", "Stripes are as personal as a ____.", "A baby zebra is called a ____."],
+          "wordBank": ["black", "fingerprint", "foal"],
+          "answers": ["black", "fingerprint", "foal"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the most surprising thing you learned about zebras, and why does it surprise you?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Zebra Nobody Could Tame",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-zebra", "templateLabel": "The Zebra Nobody Could Tame", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "zebra",
+          "notes": ["Three species: plains, mountain, and Grevy's", "The skin is black; white stripes have no pigment", "Best evidence for stripes: biting flies cannot land", "Stripe patterns are unique, like fingerprints", "Grevy's zebra is endangered", "A group is called a dazzle"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Stripes?",
+          "text": "For more than a century, people argued about zebra stripes. Some said the stripes were camouflage, blurring the herd into the tall grass. Some said they confused a charging lion, which could not pick one animal out of a swirling mass. Some said they worked like a radiator, cooling the animal down. Everyone had a theory. Nobody had a test. Then a biologist named Tim Caro decided to check. He compared where the striped zebras live with where each threat is worst. Lions live everywhere zebras do, so predators did not explain the pattern. Heat did not explain it either. But one thing lined up almost exactly: biting flies. The heavier the stripes on a zebra, the worse the horsefly season in that region. So Caro's team ran an experiment. They dressed ordinary horses in striped coats and filmed the flies. The flies flew toward the striped horses just as often as toward the plain ones. They simply could not land. Instead of slowing down for a careful touchdown, they sped straight into the horse and bounced off, or veered away at the last second. Something about the stripes wrecks a fly's ability to judge distance in the final moment of a landing. That matters more than it sounds. African horseflies carry disease, and a zebra has thin fur and no way to swat what it cannot reach. A coat that flies cannot land on is not decoration. It is armor. The old theories are not dead. Stripes may help zebras recognize each other, and they may do a little of everything. But the strongest evidence, so far, points at the flies."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Name two theories about zebra stripes that people believed before Caro tested them.",
+            "How did Caro work out that predators and heat did not explain the stripes?",
+            "The passage says the flies could not land, not that they stayed away. Why is that difference important?",
+            "Why does the author call the zebra's coat armor instead of decoration?"
+          ],
+          "rows": 2,
+          "answers": [
+            "camouflage, confusing predators, or cooling the animal down",
+            "he compared where stripes are heaviest with where each threat is worst, and they did not line up",
+            "(inference: the flies still come, so the stripes break the landing rather than keep flies away)",
+            "(inference: it does a job, protecting the zebra from flies that carry disease)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Careful testing showed that zebra stripes most likely stop biting flies from landing",
+            "Zebras are the fastest animals in Africa",
+            "Horses look better when they wear striped coats"
+          ],
+          "answers": ["Careful testing showed that zebra stripes most likely stop biting flies from landing"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["camouflage → ____", "theory → ____", "veered → ____"],
+          "rows": 1,
+          "answers": [
+            "coloring that hides an animal against its background",
+            "an idea offered to explain something, here one nobody had tested yet",
+            "turned sharply to one side"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a paragraph. Caro tested the fly idea by dressing horses in striped coats. Describe an experiment someone could run to test whether stripes confuse predators instead. Say what you would measure.",
+          "rows": 7
+        }
+      ]
+    },
+    "5": {
+      "title": "The Zebra Nobody Could Tame",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-zebra", "templateLabel": "The Zebra Nobody Could Tame", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "zebra",
+          "notes": ["Three species: plains, mountain, Grevy's", "Individual zebras have been tamed; the species never domesticated", "Walter Rothschild drove a zebra carriage in 1890s London", "A zebra bites and does not let go", "It ducks a swinging rope by reflex", "Grevy's zebra is endangered"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Horse That Would Not Be Broken",
+          "text": "Humans have tamed an astonishing number of animals. Horses, donkeys, cattle, camels, reindeer, water buffalo, yaks. Africa had zebras standing right there, in enormous numbers, and in ten thousand years nobody turned one into a working animal. It was not for lack of trying. The most famous attempt belongs to Walter Rothschild, a wealthy British collector who, in the 1890s, hitched a team of zebras to a carriage and drove through London to Buckingham Palace. He meant to prove that zebras could be tamed. What he proved was narrower than that. Individual zebras have been trained. The zebra has never been domesticated. Those are different things, and the difference is the whole argument. Taming is one animal, one person, and a great deal of patience. Domestication is a whole species reshaped over generations until it is dependable in ordinary hands. So why did the horse give in and the zebra never? The biologist Jared Diamond laid out the case. Start with temperament. A horse startles and runs. A zebra startles and fights. Zebras bite, and unlike most animals they clamp down and will not let go. Their kick is strong enough to badly injure a lion, and they aim it. Diamond noted that zebras injure more zookeepers in the United States each year than tigers do. Then there is the ducking reflex. A zebra spends its whole life within a few strides of lions, and it has evolved to watch anything swinging toward its head and slide out of the way. That reflex makes a zebra almost impossible to catch with a rope, and a rope is where domestication usually starts. Last comes the social problem. Horses live in herds with a clear ranking, and a person can step into that ladder and be followed. Zebra groups do not stack up the same way. There is no leader's place for a human to take. The lesson is bigger than zebras. We tend to assume that a useful animal will eventually give in if people want it badly enough. The zebra says otherwise. A species is not raw material waiting to be shaped. It arrives with a nervous system built by its own history, and that history did not include us."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the difference between taming and domestication. Quote the phrase the passage uses for domestication.",
+            "What did Rothschild's carriage ride actually prove, and what did it not prove?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: zebras were never domesticated despite real attempts; temperament, the ducking reflex, and social structure explain why)",
+            "taming is one animal and one person; domestication reshapes a species; quote: a whole species reshaped over generations",
+            "it proved a few individual zebras could be trained to pull a cart; it did not prove the species could be depended on",
+            "(inform, turning to persuade at the end: it defines terms and gives evidence, then argues a wider lesson)",
+            "(zebras were shaped by their own history, not for our use; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["temperament → ____", "reflex → ____", "domestication → ____", "dependable → ____"],
+          "rows": 1,
+          "answers": [
+            "an animal's built-in way of reacting",
+            "an automatic reaction the animal does not have to think about",
+            "reshaping a whole species over generations until it works with people",
+            "able to be relied on every time"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Zebras bite and refuse to let go, and they duck anything swinging at their head. Explain how living near lions could produce both of those.",
+            "Diamond's zookeeper claim is striking. What would you want to know before you trusted it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: an animal hunted by ambush predators gains from fighting without hesitation and from dodging fast)",
+            "(the source, how many years were counted, how many zebras and tigers are kept, what counts as an injury)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a short opinion paragraph: was Rothschild's experiment worth doing? Take a position and support it with two reasons.",
+          "rows": 8
+        }
+      ]
+    },
+    "6": {
+      "title": "The Zebra Nobody Could Tame",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-zebra", "templateLabel": "The Zebra Nobody Could Tame", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "zebra",
+          "notes": ["The plains zebra: Equus quagga", "The quagga was a plains zebra, brown at the rear", "The last one died in Amsterdam on 12 August 1883", "1984: the first DNA ever read from an extinct animal", "The Quagga Project has bred the coat back since 1987", "Every zebra's stripe pattern is unique"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Bringing Back the Quagga, Or Something That Looks Like It",
+          "text": "In 1870, a photographer set up his camera at the London Zoo and took five pictures of a mare standing in her enclosure. She was brown at the front, striped only across her head, neck, and shoulders, and plain as a donkey from the middle back. She was a quagga. Those five photographs are the only images of a living quagga that anyone will ever have. The quagga was not a separate kind of animal from the zebra, though for a long time people assumed it was. It was a southern population of the plains zebra, living on the dry grasslands of what is now South Africa, wearing the family stripes only on its front half. Settlers shot quaggas in enormous numbers, for meat, for hides, and to clear the grass for sheep. Nobody kept a count. The animal was so ordinary that its disappearance went unnoticed until it had already happened. The last wild quagga was killed in the late 1870s. The last quagga alive anywhere was a mare at the Artis zoo in Amsterdam, and she died on 12 August 1883. Her keepers had no idea she was the last of anything. They had written to ask for a replacement. For a century that was the end of the story. Then, in 1984, a team of scientists in California took a scrap of dried muscle from a quagga skin that had sat in a German museum for 140 years and pulled DNA out of it. It was the first time anyone had read the genetic code of an extinct animal, and it changed what people thought was possible. The sequence settled the old argument at once. The quagga was not its own species. It was a plains zebra, close kin to the striped zebras still running in Africa today. That result gave one man an idea. Reinhold Rau, a museum taxidermist in Cape Town, reasoned that if the quagga was only a plains zebra with unusual coloring, then the instructions for making a quagga were not gone. They were scattered among living zebras. Find the zebras with the faintest stripes and the brownest coats, breed them together, repeat, and the pattern should reassemble. He began in 1987. The project is still running. After several generations its animals are brown at the rear with stripes only on the front, and from a distance they look much like the 1870 photographs. The question is what has actually been achieved. Rau's animals were selected for appearance, and appearance is a thin slice of what an animal is. A real quagga was shaped by a particular grassland, a particular set of parasites and predators and seasons, and by whatever behavior went with all of that, most of which was never recorded and cannot now be checked. Breeding a coat pattern back into existence is not the same as breeding an animal back into existence. On the other hand, these zebras carry quagga genes, they carry them in a quagga-like arrangement, and they are grazing the grasslands the quagga grazed, which is more than a museum drawer can say. Perhaps the most useful thing about the project is the argument it starts. Extinction has always been described as permanent, and that permanence is what gives conservation its urgency. If we begin to believe that lost animals can be reassembled later, the pressure to keep the ones we still have gets weaker. The quagga is a warning wearing a fresh coat. It was killed because it was common."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "What did the 1984 DNA result prove, and why did it matter to Reinhold Rau? Cite the sentence that states the finding.",
+            "The author writes that appearance is a thin slice of what an animal is. Explain the objection this raises to the Quagga Project.",
+            "The author gives the other side too. Find the sentence that begins the counterargument and explain what it concedes.",
+            "The detail about the keepers writing to ask for a replacement is not needed to explain the extinction. Why does the author include it?",
+            "Analyze the final paragraph. What is the author's real argument, and how do the last two sentences do the work? Quote them."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it proved the quagga was a plains zebra, not a separate species, so its traits still exist in living zebras; cite: It was a plains zebra, close kin to the striped zebras still running in Africa today)",
+            "(a quagga was shaped by a habitat, parasites, predators, and behavior that selecting for coat color cannot restore)",
+            "(On the other hand, these zebras carry quagga genes; it concedes the animals are genuinely quagga kin and are back on quagga land)",
+            "(it dramatizes how invisible the loss was; the ordinariness of the animal is the author's point)",
+            "(that believing in de-extinction weakens the urgency to protect living species; quote: The quagga is a warning wearing a fresh coat. It was killed because it was common.)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["taxidermist → ____", "reassemble → ____", "permanence → ____", "conservation → ____"],
+          "rows": 2,
+          "answers": [
+            "someone who prepares and mounts animal skins, often for a museum",
+            "to put back together from scattered pieces",
+            "the quality of lasting for good and not being undone",
+            "the work of protecting species and habitats from being lost"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the quagga's behavior was never recorded and cannot now be checked. Explain why that is a problem for judging whether the project has succeeded.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(with no record of the original animal there is no standard to test the new one against)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If we can breed an extinct animal's appearance back, we should stop calling it extinct. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

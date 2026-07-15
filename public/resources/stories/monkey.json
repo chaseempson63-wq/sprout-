@@ -1,0 +1,315 @@
+{
+  "key": "monkey",
+  "title": "The Monkey With a Hand for a Tail",
+  "blurb": "Some monkeys grow a fifth hand out the back. It can hold their whole weight, or pick up a single grape.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Monkey With a Hand for a Tail",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-monkey", "templateLabel": "The Monkey With a Hand for a Tail", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the monkey's long tail." },
+        {
+          "kind": "image",
+          "imageKey": "monkey",
+          "notes": ["It lives up in the trees", "Its tail can hold a branch", "It has hands and feet", "It eats fruit and leaves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a monkey. The monkey lives in a tree. It has two hands. It has two feet. It has one long tail. The tail can hold on to a branch. The monkey can hang by its tail. It swings and swings. It picks a fruit and eats it. Then it climbs up to nap."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bananas in each row. Write how many in the box.",
+          "emoji": "🍌",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "tail    swing" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its home.",
+          "pairs": [
+            { "left": "monkey", "right": "tree" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own monkey. Give it a very long tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Monkey With a Hand for a Tail",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-monkey", "templateLabel": "The Monkey With a Hand for a Tail", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "monkey",
+          "notes": ["Its tail can grab like a hand", "The tip of the tail has a bare patch", "It can hang by its tail alone", "It can pick fruit upside down", "It lives in warm forests"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tail That Can Hold On",
+          "text": "A monkey can climb with its hands and its feet. Some monkeys can climb with their tail too. The tail wraps around a branch and holds tight. It is strong enough to hold the whole monkey in the air. Then both hands are free. The monkey can pick fruit while it hangs upside down. The tip of the tail has no fur on one side. That bare patch grips the branch, the way your bare foot grips a wet floor. Not every monkey can do this. The ones that can live in the warm forests of South America."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does the tail wrap around?", "What can the monkey do while it hangs upside down?", "Which part of the tail has no fur?"],
+          "rows": 2,
+          "answers": ["a branch", "pick fruit with both hands", "one side of the tip"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The tail wraps around a ____.", "The monkey can hang upside ____.", "The tip of the tail has a ____ patch.", "These monkeys live in South ____."],
+          "wordBank": ["branch", "down", "bare", "America"],
+          "answers": ["branch", "down", "bare", "America"]
+        },
+        { "kind": "draw", "prompt": "Draw a monkey hanging by its tail. Put some fruit in its hands.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Monkey With a Hand for a Tail",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-monkey", "templateLabel": "The Monkey With a Hand for a Tail", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "monkey",
+          "notes": ["A spider monkey's tail is longer than its body", "The tail tip has ridges like fingerprints", "It has almost no thumb", "Its tail can pick up a grape", "It can hang by its tail alone"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fifth Hand",
+          "text": "Hold your arm out and count your limbs. Two arms, two legs. A spider monkey has four limbs too, and then it has one more. Its tail works like a fifth hand. A spider monkey's tail is longer than its body. The last part of the underside has no fur at all. That naked patch is covered in tiny ridges, like the ones on your fingertips, and it grips a branch the way your fingers grip a pencil. The tail is strong enough to hold the monkey's whole weight while it reaches for fruit with both hands. It is also careful. A spider monkey can curl the tip of its tail around a single grape and lift it. Here is the strange part. A spider monkey has almost no thumb. Its four long fingers hook over a branch like a coat hanger, so it can swing fast and far without gripping. The hand gave up its thumb. The tail took over the job."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How long is a spider monkey's tail compared to its body?",
+            "What is on the underside of the tail tip, and what does it do?",
+            "What is unusual about a spider monkey's hand?",
+            "Why do you think a spider monkey can manage without a thumb?"
+          ],
+          "rows": 2,
+          "answers": [
+            "longer than its body",
+            "a bare patch covered in tiny ridges that grips the branch",
+            "it has almost no thumb",
+            "(inference: its tail does the gripping, and its long fingers hook over branches)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Fifth Hand", "How to Train a Pet Monkey", "The Tallest Trees in the World"],
+          "answers": ["The Fifth Hand"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A spider monkey's tail is ____ than its body.", "The bare patch is covered in tiny ____.", "A spider monkey has almost no ____."],
+          "wordBank": ["longer", "ridges", "thumb"],
+          "answers": ["longer", "ridges", "thumb"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: name one thing a spider monkey can do with its tail that you cannot do with yours, and say why that would help up in a tree.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Monkey With a Hand for a Tail",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-monkey", "templateLabel": "The Monkey With a Hand for a Tail", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "monkey",
+          "notes": ["New World monkeys live in the Americas", "Old World monkeys live in Africa and Asia", "Prehensile means able to grip", "Only New World monkeys have gripping tails", "Apes have no tail at all", "There are more than 260 kinds of monkey"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Kinds of Monkey, One Kind of Tail",
+          "text": "Split every monkey on Earth into two groups and you can do it with a map. New World monkeys live in the forests of Central and South America. Old World monkeys live in Africa and Asia. The two groups have been apart for tens of millions of years, and it shows. Look at the nose first. A New World monkey's nostrils sit far apart and open out to the sides. An Old World monkey's nostrils sit close together and point down, like yours. Scientists sorted the two groups this way long before they had any other test. Now look at the tail. Some New World monkeys have a prehensile tail, which means a tail that can grip. Spider monkeys, howler monkeys, woolly monkeys, and capuchins all use theirs to hold on. Not one Old World monkey can do it. A baboon or a macaque can wave its tail and balance with it, but it cannot hang from it. Why the difference? Nobody is certain. The best guess is about the forest itself. New World monkeys spend almost their whole lives up in the branches, where a spare grip is worth the trouble of growing one. Many Old World monkeys travel on the ground as well, walking on all fours between trees, and a gripping tail buys them less. One more thing worth knowing. Chimpanzees, gorillas, orangutans, and gibbons are not monkeys at all. They are apes, and no ape has a tail. Neither does a human. If you ever want to tell a monkey from an ape at the zoo, look behind it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "How can you tell a New World monkey from an Old World monkey by its nose?",
+            "What does prehensile mean, and which monkeys have a prehensile tail?",
+            "The passage says a gripping tail buys Old World monkeys less. Explain what that means.",
+            "How would you tell a monkey from an ape at the zoo, and why does that work?"
+          ],
+          "rows": 2,
+          "answers": [
+            "New World nostrils sit far apart and open to the sides; Old World nostrils sit close together and point down",
+            "able to grip; only some New World monkeys, such as spider, howler, and woolly monkeys and capuchins",
+            "(inference: they spend part of their time on the ground, where a gripping tail is not worth what it costs to grow)",
+            "look for a tail; apes do not have one"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A gripping tail belongs to New World monkeys only, and the forest is probably the reason",
+            "Every monkey in the world can hang by its tail",
+            "Apes are a kind of monkey with a very short tail"
+          ],
+          "answers": ["A gripping tail belongs to New World monkeys only, and the forest is probably the reason"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each one means.",
+          "items": ["prehensile → ____", "New World monkeys → ____", "Old World monkeys → ____"],
+          "rows": 1,
+          "answers": ["able to grip or hold", "monkeys from Central and South America", "monkeys from Africa and Asia"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if you could add one gripping tail to your own body, what would you use it for, and what would be hard about having one? Give two ideas for each.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Monkey With a Hand for a Tail",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-monkey", "templateLabel": "The Monkey With a Hand for a Tail", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "monkey",
+          "notes": ["Prehensile tail: a tail that can grip", "Atelids: spider, howler, woolly, muriqui", "The gripping pad carries fingerprint ridges", "Capuchins evolved a gripping tail separately", "Monkeys reached South America about 35 million years ago", "No Old World monkey has a prehensile tail"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tail That Evolved Twice",
+          "text": "Around 35 million years ago, a small group of monkeys arrived in South America. Nobody saw them come. The best evidence says they drifted across the Atlantic from Africa on a raft of storm-torn trees and matted vegetation, at a time when the ocean was narrower than it is now. It sounds absurd. It is also the only explanation that fits the fossils and the genes. What they found was a continent of forest and no competition. Their descendants, the New World monkeys, spread through the canopy and stayed there. And in that canopy, something remarkable happened twice. The first group to manage it was the atelids: spider monkeys, howler monkeys, woolly monkeys, and muriquis. Their tails became true fifth limbs. The underside of the tip lost its fur entirely and grew a pad ribbed with fine ridges, the same kind of ridges that make your fingerprints. Beneath the skin, the tail is packed with touch receptors, and the brain gives it a generous share of its map of the body, the way your brain devotes an outsized area to your hands. A spider monkey does not merely hook its tail over a branch. It feels the branch through its tail. The second group was the capuchins, and they are not close cousins of the atelids. Their tail grips too, but it kept its fur and has no ridged pad. It works, and it works differently. Two separate lineages, in the same forest, solved the same problem in their own way. Biologists call that convergent evolution, and it is one of the strongest hints that a trait is genuinely useful rather than an accident of family history. Which raises the obvious question: why has no Old World monkey ever grown one? Africa and Asia have plenty of forest and plenty of monkeys. The likeliest answer is that a gripping tail pays only if you almost never come down. Baboons, macaques, and vervets move on the ground as well as in the trees, and a tail built for hanging is expensive to grow and useless on a plain. Evolution does not reward a tool you rarely pick up. So the fifth hand is not a monkey feature. It is a New World feature, invented twice, in one forest, by animals whose ancestors got there by accident."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "How did monkeys most likely reach South America, and what evidence supports that story?",
+            "Explain what convergent evolution is. Quote the phrase the passage uses to say why it matters.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end on the word accident?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the crossing + gripping tails evolving twice + why the Old World has none)",
+            "on a raft of storm-torn trees across a narrower Atlantic; the fossils and the genes fit that explanation",
+            "two separate groups evolving the same solution on their own; quote: one of the strongest hints that a trait is genuinely useful",
+            "(inform, with detail: it defines terms and weighs evidence, though the tone is playful in places)",
+            "(it circles back to the raft and underlines that none of this was planned)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["canopy → ____", "descendants → ____", "lineages → ____", "convergent evolution → ____"],
+          "rows": 1,
+          "answers": [
+            "the layer of branches and leaves at the top of a forest",
+            "the animals that come later in a family line",
+            "separate lines of descent",
+            "separate groups arriving at the same solution independently"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls the raft crossing absurd, then accepts it anyway. Explain why scientists would accept an explanation that sounds absurd.",
+            "Why is a trait that evolved twice stronger evidence of usefulness than a trait that evolved once?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the evidence fits it and nothing else does; sounding strange is not a reason to reject it)",
+            "(inference: once could be chance or family history; twice suggests the environment is driving it)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: for life in the trees, which is the better tool, a gripping tail or a hand with a thumb? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Monkey With a Hand for a Tail",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-monkey", "templateLabel": "The Monkey With a Hand for a Tail", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "monkey",
+          "notes": ["Prehensile tails evolved at least twice", "Atelid tail pads carry ridges, like fingerprints", "Capuchin tails grip but keep their fur", "Apes lost their tails about 25 million years ago", "TBXT: the gene linked to ape tail loss", "Monkeys rafted to South America across the Atlantic"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fifth Hand: How a Tail Became a Limb",
+          "text": "Start with an accident. Roughly 35 million years ago, a few small primates washed up on the coast of South America, almost certainly carried from Africa on a mat of storm-wrecked vegetation across an Atlantic narrower than today's. It is an absurd way to colonize a continent, and the fossils and the genetics agree that it is what happened. The passengers found an unbroken forest and almost no rivals in it. Their descendants, the New World monkeys, climbed into the canopy and, in a sense, never came back down. Life in the canopy sets a hard problem. Every meal is at the end of a branch too thin to stand on, and every mistake is a long fall. A monkey needs to reach out while still holding on. Four limbs make that a trade: let go with one hand and you lose a third of your grip. At least two separate lineages of New World monkey solved the problem the same way, by promoting the tail. The atelids went furthest. Spider monkeys, howler monkeys, woolly monkeys, and muriquis carry a tail longer than the rest of the body, driven by extra vertebrae, thickened muscle, and heavy tendons. The underside of the tip is bare. It carries a pad of ridged skin with the same looping patterns that give you fingerprints, and it is dense with touch receptors. In the brain, the region that receives signals from that pad is disproportionately large, arranged much as the region for your hand is arranged in yours. This is what separates a fifth limb from a hook. A spider monkey can hang its full weight from its tail, and it can also curl the tip around a single grape and lift it without crushing it. The tail is not just strong. It is skilled. The capuchins arrived at a gripping tail independently, and they built a different one. It stayed furred, it has no friction pad, and it wraps and anchors rather than manipulates. Capuchins are not close relatives of the atelids, which makes this a textbook case of convergent evolution: two lineages, one forest, one problem, two answers that are not copies of each other. When a trait shows up twice by separate routes, that is strong evidence it is being built by the environment rather than inherited by chance. The obvious control experiment is on the other side of the world, and it comes out negative. Africa and Asia have enormous forests and hundreds of monkey species, and not one of them has a prehensile tail. Baboons, macaques, and vervets balance with their tails, signal with them, and nothing more. The likeliest explanation is a cost calculation. A gripping tail is expensive: extra bone, extra muscle, extra nerve, all of it carried everywhere for life. It pays only for an animal that essentially never leaves the branches. Old World monkeys forage on the ground routinely, and for them the tail would be a tool bought at full price and rarely used. Apes went the other way entirely. Chimpanzees, gorillas, orangutans, gibbons, and humans have no tail at all. In 2024, researchers reported a likely reason: a stray piece of DNA that inserted itself into a gene called TBXT in a common ancestor of the apes, roughly 25 million years ago. When they engineered the same insertion into mice, the mice were born with shortened tails or none. One accident of copy-and-paste, and a whole branch of the primate family lost its tail forever. So look at the two ends of the story. One group of primates spent millions of years turning a tail into a hand. Another lost the tail in what may have been a single genetic slip. Neither outcome was planned. Both are still walking around."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the author calls the Old World an obvious control experiment. Cite the three words he uses for its result.",
+            "Contrast the atelid tail with the capuchin tail, then quote the sentence in which the author sums up the difference between a fifth limb and a hook.",
+            "The author describes a gripping tail as a tool bought at full price and rarely used. Explain what that comparison argues.",
+            "Analyze the final paragraph. What is it claiming about evolution, and does the rest of the passage earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(Africa and Asia have forest and monkeys but no prehensile tails, which tests the forest explanation; cite: it comes out negative)",
+            "(atelid: bare ridged pad, touch receptors, skilled; capuchin: furred, no pad, anchors rather than manipulates; quote: This is what separates a fifth limb from a hook.)",
+            "(the tail costs bone, muscle, and nerve to grow and carry, so an animal that often walks on the ground does not use it enough to be worth the price)",
+            "(that nothing here was planned: one lineage built a tail into a hand, another lost tails to a stray insertion; earned by the raft, the double evolution, and the TBXT work)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["prehensile → ____", "lineages → ____", "disproportionately → ____", "forage → ____"],
+          "rows": 2,
+          "answers": [
+            "able to grip and hold on",
+            "separate lines of descent within a family tree",
+            "much more than the size or share you would expect",
+            "to search around for food"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The mouse experiment is offered as support for the TBXT explanation. Explain what it shows and what it does not prove.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it shows the insertion can shorten a tail in a living animal; it does not prove that this alone caused tail loss in apes)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A gripping tail is a better invention than a hand with a thumb. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

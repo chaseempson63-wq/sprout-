@@ -1,0 +1,304 @@
+{
+  "key": "bear",
+  "title": "The Bear That Sleeps Through Winter",
+  "blurb": "Seven months with no food, no water, and no bathroom, and it comes out with its muscle and bone intact.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Bear That Sleeps Through Winter",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-bear", "templateLabel": "The Bear That Sleeps Through Winter", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the bear's round ears." },
+        {
+          "kind": "image",
+          "imageKey": "bear",
+          "notes": ["It has thick brown fur", "It sleeps all winter", "It loves berries", "It walks on flat feet like you do"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a bear. The bear is big and furry. In fall, the bear eats and eats. It eats berries and fish and nuts. Then it digs a warm den. The bear curls up in the den. It sleeps all winter long. It does not eat. It does not drink. When spring comes, the bear wakes up. It walks out into the sun."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the berries in each row. Write how many in the box.",
+          "emoji": "🫐",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bear    den" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "bear", "right": "den" },
+            { "left": "bird", "right": "nest" },
+            { "left": "fish", "right": "river" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the bear asleep in its den. Add snow on top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bear That Sleeps Through Winter",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-bear", "templateLabel": "The Bear That Sleeps Through Winter", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "bear",
+          "notes": ["A winter sleep is called hibernation", "Its home is called a den", "It can sleep for months", "Baby bears are called cubs", "It wakes up thin and hungry"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bear That Sleeps Through Winter",
+          "text": "A bear does not sleep the way you do. Your sleep lasts one night. A bear's winter sleep lasts for months. First the bear eats all fall. It puts on thick fat. Then it finds a den. A den can be a cave, or a hole under a big tree, or just a pile of leaves. The bear curls up small. Its heart slows down. It breathes slowly. Snow falls on top of the den. The bear stays warm inside. All winter it does not eat one bite. In spring, it walks out thin and hungry."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How long does a bear's winter sleep last?", "What does the bear put on in the fall?", "What are three places a den can be?", "How does the bear feel in spring?"],
+          "rows": 2,
+          "answers": ["for months", "thick fat", "a cave, a hole under a tree, or a pile of leaves", "thin and hungry"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The bear sleeps in a ____.", "It eats all ____ to get ready.", "Its ____ slows down while it sleeps.", "It wakes up in the ____."],
+          "wordBank": ["den", "fall", "heart", "spring"],
+          "answers": ["den", "fall", "heart", "spring"]
+        },
+        { "kind": "draw", "prompt": "Draw the bear in the fall, eating everything it can find.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bear That Sleeps Through Winter",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-bear", "templateLabel": "The Bear That Sleeps Through Winter", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "bear",
+          "notes": ["There are 8 kinds of bear in the world", "A black bear can eat 20,000 calories in a day", "Its heart can slow to 10 beats a minute", "It can go 7 months without a meal", "It can smell food from miles away"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Long Winter Sleep",
+          "text": "Winter is hard on animals. The berries are gone. The fish are under ice. There is almost nothing to eat for months. Some animals fly south. Some grow thick coats and tough it out. The bear does something else. It quits. In the fall, a black bear eats like it will never eat again. It can pack away twenty thousand calories in one day, which is about ten times what you eat. All that food turns into fat. The fat is the bear's whole winter food supply. Then the bear digs a den. It curls up, and its body slows almost to a stop. Its heart can drop from fifty beats a minute to about ten. Sometimes it goes a full minute without taking a breath. For up to seven months it does not eat, does not drink, and does not go to the bathroom. In spring the bear walks out. It is thinner. It is hungry. But it is fine."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why is winter hard for a bear?",
+            "What does all the fall food turn into?",
+            "What happens to the bear's heart in the den?",
+            "Why do you think the bear eats so much before winter instead of during it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the berries are gone and the fish are under ice, so there is almost nothing to eat",
+            "fat, which is its whole winter food supply",
+            "it slows from about fifty beats a minute to about ten",
+            "(inference: there is no food in winter, so it has to carry the food on its body)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Long Winter Sleep", "How to Catch a Fish", "The Tallest Mountain in the World"],
+          "answers": ["The Long Winter Sleep"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The bear's fall food turns into ____.", "The bear sleeps inside a ____.", "It can sleep for up to ____ months."],
+          "wordBank": ["fat", "den", "seven"],
+          "answers": ["fat", "den", "seven"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing a bear does in winter, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bear That Sleeps Through Winter",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-bear", "templateLabel": "The Bear That Sleeps Through Winter", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bear",
+          "notes": ["Hyperphagia: the fall eating frenzy", "Can gain 2 pounds in a single day", "Body temperature only drops a few degrees", "It recycles its own waste into protein", "Cubs are born in the den in January", "Bears walk flat-footed, the way people do"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Seven Months Without a Meal",
+          "text": "Every fall, a bear starts eating and does not stop. Biologists call this hyperphagia, which means over-eating. A black bear may spend twenty hours a day feeding and gain two pounds a day doing it. It is not being greedy. It is building the only food supply it will have until spring. When the snow comes, the bear digs a den and shuts down. Its heart rate falls from about fifty beats a minute to as few as eight. It may pause a whole minute between breaths. Its body burns fuel at about a quarter of its normal rate. But here is the strange part: its temperature only drops a few degrees. A ground squirrel hibernating nearby gets so cold it is nearly frozen. The bear stays warm enough to wake up and defend itself if something disturbs the den. Then there is the plumbing problem. You could not go seven months without a bathroom. The waste in your blood would poison you. The bear solves this by recycling. It takes the waste chemical urea, breaks it apart, and uses the pieces to build fresh protein. Nothing has to leave the body, because nothing is wasted. Strangest of all, mother bears give birth in the middle of this. Cubs arrive in January, blind and roughly the weight of a can of soda, and nurse in the dark while their mother dozes. When the den opens in spring, she walks out thin, and they walk out fat."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is hyperphagia, in your own words?",
+            "The passage says the bear is not being greedy. What is it actually doing?",
+            "Explain the difference between how a bear and a ground squirrel handle the cold, and what the bear gains from it.",
+            "Why is it surprising that a mother bear gives birth in the den, given what else is happening to her body?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(the fall eating frenzy; eating far more than normal)",
+            "building the only food supply it will have until spring",
+            "the squirrel gets nearly frozen; the bear stays warm and can wake up and defend itself",
+            "(inference: she is feeding cubs while eating and drinking nothing at all)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A bear survives winter by eating ahead, shutting down slowly, and recycling its own waste",
+            "Ground squirrels are better at winter than bears",
+            "Bears eat two pounds of food per year"
+          ],
+          "answers": ["A bear survives winter by eating ahead, shutting down slowly, and recycling its own waste"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["hyperphagia → ____", "urea → ____", "den → ____"],
+          "rows": 1,
+          "answers": ["eating far more than usual, for weeks on end", "a waste chemical the body normally gets rid of", "the sheltered place a bear spends the winter"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which of the bear's winter tricks is the most useful, and which is the most surprising? Give a reason for each.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bear That Sleeps Through Winter",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-bear", "templateLabel": "The Bear That Sleeps Through Winter", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bear",
+          "notes": ["Metabolism drops to about 25% of normal", "Core temperature falls only to the upper 80s F", "Gut bacteria split urea so nitrogen can be reused", "Loses fat, but keeps bone and muscle", "An arctic ground squirrel chills below freezing", "Studied by kidney, bone, and diabetes researchers"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Best Hibernator on Earth",
+          "text": "For a long time, textbooks said bears do not really hibernate. The argument was about temperature. A hibernating ground squirrel is a startling thing to hold. Its body cools to just above freezing, its heart beats a few times a minute, and it is, for practical purposes, switched off. A denning bear does nothing so dramatic. Its temperature slips from about 100 degrees to the upper 80s, a drop you might get from a bad night's sleep. So the bear got demoted. Not a true hibernator, the books said. Just a deep sleeper. The books were wrong, and the reason is a matter of scale. A ground squirrel is small, and small bodies shed heat fast, so it has to go cold to save fuel. A bear is enormous and well insulated. It can cut its metabolism to a quarter of normal while staying warm, which is the whole point of hibernating. Measured by what actually matters, energy saved and time survived, the bear is arguably the best hibernator on the planet, and the warmth buys it something a squirrel cannot have. Disturb a denning bear and it wakes up. Disturb a hibernating squirrel and it needs hours to thaw. What a bear does inside the den is harder to explain than the sleeping. For up to seven months it does not eat, drink, urinate, or defecate. Your body could not manage a week of that. Urea, the waste your kidneys flush out in urine, would build up in your blood and kill you. The bear does not flush it. Bacteria in its gut split the urea apart, and the bear reuses the nitrogen to build new protein. It is drinking its own waste, chemically speaking, and coming out healthier for it. It also does not fall apart. Put a person in bed for seven months and they lose muscle and bone. The bear emerges in spring with its skeleton intact and most of its muscle still on it. It has lost fat, and almost nothing else. None of this is fully understood. That is exactly why kidney specialists, bone researchers, and diabetes labs all keep files on bears."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What was the old argument for saying bears are not true hibernators, and why does the passage reject it?",
+            "Explain why a small animal has to get colder than a large one. Quote the phrase the passage uses about small bodies.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end on kidney specialists, bone researchers, and diabetes labs rather than on the bear?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the hibernation argument + urea recycling + keeping bone and muscle)",
+            "(its temperature barely drops; rejected because energy saved matters more than temperature)",
+            "(small bodies lose heat quickly so cooling saves fuel; quote: small bodies shed heat fast)",
+            "(inform, with a persuasive thread: it defines terms and gives figures, but argues the books were wrong)",
+            "(it shows the stakes: the bear does on purpose what humans cannot fix)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["metabolism → ____", "urea → ____", "insulated → ____", "demoted → ____"],
+          "rows": 1,
+          "answers": ["the rate at which the body burns fuel", "the waste the kidneys normally flush out in urine", "wrapped in something that holds heat in", "moved down to a lower rank"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the bear is drinking its own waste, chemically speaking. Explain what that actually means.",
+            "Why would being able to wake up quickly be worth more to a bear than to a ground squirrel?"
+          ],
+          "rows": 3,
+          "answers": ["(it reuses the nitrogen from urea to build protein instead of flushing it out)", "(inference: a bear is big enough to fight off a threat, so staying alert is useful; a squirrel would just hide)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should the word hibernation be defined by body temperature, or by energy saved? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bear That Sleeps Through Winter",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-bear", "templateLabel": "The Bear That Sleeps Through Winter", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bear",
+          "notes": ["Hyperphagia can run 20 hours a day", "Insulin sensitivity flips on a seasonal schedule", "PTEN: a protein linked to the bear's insulin switch", "Metabolic rate falls to roughly 25% of normal", "Gut bacteria hydrolyze urea; nitrogen gets reused", "Emerges with skeleton and muscle largely intact"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What the Bear Does in the Dark",
+          "text": "Twice a year a bear performs a metabolic maneuver that no human doctor can reproduce, and it does it without a hospital, a monitor, or a single conscious decision. Start in autumn. The bear enters hyperphagia, a state of driven overeating that can run twenty hours a day. A grizzly fattening on salmon or whitebark pine seeds may take in tens of thousands of calories daily and gain several pounds in twenty-four hours. In a human, this would be catastrophic. Weight like that, laid on that fast, would push blood sugar out of control and drive the body toward diabetes. The bear gains it and stays healthy. In autumn its cells remain exquisitely sensitive to insulin, packing fuel into fat as fast as it arrives. Then, as the bear dens, a switch flips and the same cells turn insulin resistant, which stops them from burning the fat too quickly. In spring the switch flips back. Researchers have narrowed part of this to a single protein, PTEN, that the bear's fat cells appear to turn down and up on schedule. Human bodies possess the same machinery. Ours simply does not do that. Now the den. For as long as seven months the bear does not eat, drink, urinate, or defecate. Its metabolic rate falls to roughly a quarter of normal, its heart can slow to eight beats a minute, and it may go a full minute between breaths. Yet its core temperature drops only from about 100 degrees Fahrenheit to the upper 80s. That modest cooling is why textbooks once refused the bear the title of true hibernator, reserving it for small mammals like the arctic ground squirrel, which chills to below freezing. The objection has not aged well. Hibernation is a strategy for surviving scarcity on stored fuel, and by that measure the bear is the most accomplished hibernator known. It also gains something the squirrel forfeits: a warm bear can wake, stand, and fight within seconds. A frozen squirrel needs hours. Then there is the waste. Urea is the nitrogen-bearing byproduct of breaking down protein, and your kidneys spend your whole life clearing it. Let it accumulate and it will kill you. The denning bear never clears it. Instead, bacteria in its gut hydrolyze the urea, and the bear captures the freed nitrogen and reassembles it into new protein. The waste stream is closed. Nothing goes out because nothing is discarded, and this is a large part of why the bear does not waste away: it is quietly rebuilding itself from its own garbage all winter. That rebuilding shows up in the numbers. Immobilize a human for seven months and the losses are severe, on the order of a percent of bone mass per month, plus substantial muscle. The bear lies still for a comparable stretch and emerges with its skeleton essentially unchanged and most of its muscle intact. It has burned fat, and mostly only fat. Somewhere in the middle of all this, a pregnant female gives birth, in the dark, to cubs weighing less than a pound, and nurses them for months on a body that is taking in nothing at all. Every one of these tricks describes a disease we cannot fix. Osteoporosis is bone lost without load. Muscle atrophy is disuse. Chronic kidney disease is urea unremoved. Type 2 diabetes is insulin resistance arriving at the wrong time. The bear does all four on purpose, on a calendar, and reverses them by April. The instructions are written in a genome that is largely shared with ours. Reading them is another matter."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the bear's insulin switch: what changes in autumn, what changes in the den, and why each is useful. Cite the evidence.",
+            "The passage says the objection has not aged well. What objection, and what is the author's counter-argument?",
+            "Identify the structure of this passage: name the three tricks it works through in order, and explain why the author saves the medical point for last.",
+            "The final paragraph reframes the whole passage. Analyze what it is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(autumn: cells stay insulin sensitive, packing fuel into fat; den: cells turn insulin resistant to stop burning fat too fast; cite: packing fuel into fat as fast as it arrives)",
+            "(that bears are not true hibernators because their temperature barely drops; counter: hibernation is about surviving scarcity on stored fuel, and by that measure the bear leads)",
+            "(the insulin switch, the shutdown, the urea recycling; the medical point lands last because the earlier facts make the stakes legible)",
+            "(it converts a nature passage into a medical argument by naming four human diseases the bear reverses on schedule; supported by the insulin, bone, muscle and urea evidence already given)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["hyperphagia → ____", "insulin resistant → ____", "hydrolyze → ____", "atrophy → ____"],
+          "rows": 2,
+          "answers": [
+            "a driven state of overeating, laying on fat before winter",
+            "no longer responding to insulin, so fuel is not pulled into cells",
+            "to split a compound apart using water",
+            "the wasting away of muscle from lack of use"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the same machinery exists in human bodies and ours simply does not do that. Explain why sharing the machinery is not the same as being able to use it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(having the genes is not the same as having the seasonal signals that switch them on and off in the right order)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Studying hibernating bears is a better use of medical funding than studying human patients. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

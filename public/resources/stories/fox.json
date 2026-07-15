@@ -1,0 +1,311 @@
+{
+  "key": "fox",
+  "title": "The Fox That Hunts by Ear",
+  "blurb": "A dog that stalks like a cat, hears a mouse through snow, and lives on more of the Earth than any other wild hunter.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Fox That Hunts by Ear",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-fox", "templateLabel": "The Fox That Hunts by Ear", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the fox's big ears." },
+        {
+          "kind": "image",
+          "imageKey": "fox",
+          "notes": ["It has tall pointy ears", "Its tail is soft and bushy", "The tip of the tail is white", "It sleeps in a hole called a den"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a fox. The fox has big ears. The fox has a long soft tail. Snow is on the ground. The fox stops. The fox listens. A little mouse is under the snow. The fox cannot see it. But the fox can hear it. Up jumps the fox. Down it goes, nose first, into the snow. At night the fox curls up. It puts its tail over its nose like a blanket."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the paw prints in each row. Write how many in the box.",
+          "emoji": "🐾",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "fox    ears" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "fox", "right": "den" },
+            { "left": "bird", "right": "nest" },
+            { "left": "bee", "right": "hive" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own fox. Give it a big bushy tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Fox That Hunts by Ear",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-fox", "templateLabel": "The Fox That Hunts by Ear", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "fox",
+          "notes": ["Its ears turn to catch sounds", "A fox baby is called a kit", "Its bushy tail is called a brush", "It hunts by itself, not in a pack", "It can hear a mouse under the snow"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fox That Hunts by Ear",
+          "text": "A fox does not need to see a mouse to catch it. It needs to hear one. A fox has tall ears that turn like little cups. It stands very still in the snow. Its ears move. It is listening for a soft scratch under the snow. When the fox knows where the mouse is, it jumps. It jumps high, then dives down nose first. The snow is deep, but the fox has already worked out the spot. At night the fox curls up in a ball. It wraps its bushy tail around its nose to stay warm. The tip of that tail is white."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How does the fox find the mouse?", "What does the fox do when it knows where the mouse is?", "What does the fox wrap around its nose at night?"],
+          "rows": 2,
+          "answers": ["it hears it with its ears", "it jumps up high and dives down nose first", "its bushy tail"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The fox has tall ____ that turn.", "The fox is ____ for a mouse.", "The fox dives into the ____.", "The tip of its tail is ____."],
+          "wordBank": ["ears", "listening", "snow", "white"],
+          "answers": ["ears", "listening", "snow", "white"]
+        },
+        { "kind": "handwriting", "prompt": "Write one sentence: what does the fox use to find the mouse?", "rows": 3 },
+        { "kind": "draw", "prompt": "Draw the fox listening in the snow. Add its ears turning and the mouse hiding under the snow.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Fox That Hunts by Ear",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-fox", "templateLabel": "The Fox That Hunts by Ear", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "fox",
+          "notes": ["Foxes are in the dog family", "They have slit pupils like a cat", "They have whiskers on their front legs", "Under the fur, a fox weighs about as much as a house cat", "The gray fox can climb trees"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dog That Hunts Like a Cat",
+          "text": "A fox is a dog that behaves like a cat. Foxes belong to the dog family, along with wolves and pet dogs. But a wolf hunts in a pack, and a fox hunts alone. That one difference changed the whole animal. A wolf can chase a deer for miles because it has help. A fox is small. Under all that fur it weighs about as much as a house cat, and it has nobody to help it. So the fox does not chase. It creeps. It freezes. It waits with its ears turning, and then it pounces, exactly like a cat on a lawn. Look closer and the cat keeps showing up. A fox has narrow pupils that close into a slit, which most dogs do not have. It has stiff whiskers on its face, and more whiskers partway down its front legs, so it can feel what it has caught even in the dark. In America, the gray fox goes further and climbs trees. It is still a dog. It just found a cat's way of making a living."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Which animal family do foxes belong to?",
+            "What does a wolf do that a fox cannot do?",
+            "Name two ways a fox is like a cat.",
+            "Why do you think hunting alone made the fox a creeper instead of a chaser?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the dog family, with wolves and pet dogs",
+            "hunt in a pack and chase big prey like a deer",
+            "slit pupils, whiskers, pouncing, stalking, climbing (any two)",
+            "(inference: it is small and has no help, so it must get close instead of running prey down)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Dog That Hunts Like a Cat", "How to Train a Pet Wolf", "Why Cats Sleep All Day"],
+          "answers": ["The Dog That Hunts Like a Cat"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A wolf hunts in a ____.", "A fox waits, then it ____.", "A fox has narrow pupils that close into a ____.", "The gray fox can ____ trees."],
+          "wordBank": ["pack", "pounces", "slit", "climb"],
+          "answers": ["pack", "pounces", "slit", "climb"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather hunt like a wolf or like a fox, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Fox That Hunts by Ear",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-fox", "templateLabel": "The Fox That Hunts by Ear", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fox",
+          "notes": ["Red fox: Vulpes vulpes", "Hears low sounds better than most hunters its size", "The snow dive is called the mousing pounce", "It can leap higher than a person's waist", "It buries extra food and remembers the spot", "Its ears swivel one at a time"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Fox Finds a Mouse It Cannot See",
+          "text": "A red fox standing still in a snowy field is doing something remarkable, and from the outside it looks like nothing at all. The mouse is under the snow. The fox cannot see it and cannot smell much through the frozen crust. All it has is sound. Foxes hear low sounds better than almost any other hunter their size, and low is exactly what a small animal makes when it shuffles through dead grass or scratches at the wall of its tunnel. Those tall ears swivel one at a time. The tiny difference between what the left ear hears and what the right ear hears tells the fox where the mouse is standing, to within a few inches, under a blanket it cannot see through. Then comes the strange part. The fox rears onto its back legs and throws itself into the air, sometimes higher than a person's waist, and drops nose first through the crust with its front paws tucked beside its jaw. It is aiming at a target it has never once laid eyes on. Scientists in the Czech Republic spent years recording these leaps. They noticed something nobody expected. When the fox could not see its prey, it tended to line itself up facing roughly north before it jumped, and those north facing leaps succeeded far more often than leaps in any other direction. One idea is that the fox is somehow reading the Earth's magnetic field, using it like a compass to judge the distance to a sound. Nobody has proved it yet. It is one of the best unanswered questions about an animal most of us walk straight past."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why is sound the only sense that can help the fox in this situation?",
+            "Explain how having two ears helps the fox find the exact spot.",
+            "The passage says the fox aims at a target it has never once laid eyes on. What makes that so difficult?",
+            "The author says nobody has proved the compass idea. Why is it important to say that instead of leaving it out?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it cannot see through the snow and cannot smell much through the frozen crust",
+            "the small difference between what each ear hears tells it the direction and distance",
+            "(inference: it has to judge depth and distance to something invisible, and commit to the jump before it knows)",
+            "(inference: it separates what is known from what is still a guess, which keeps the writing honest)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A fox hunts prey it cannot see by using its hearing, and possibly something even stranger",
+            "Snow is the biggest danger facing foxes today",
+            "Czech scientists have taught foxes to use a compass"
+          ],
+          "answers": ["A fox hunts prey it cannot see by using its hearing, and possibly something even stranger"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["crust → ____", "swivel → ____", "magnetic field → ____"],
+          "rows": 1,
+          "answers": ["the hard frozen layer on top of the snow", "to turn or pivot in place", "the invisible force around the Earth that a compass points along"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the fox's pounce fails most of the time, but it keeps trying. What does that tell you about how wild animals get food? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Fox That Hunts by Ear",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-fox", "templateLabel": "The Fox That Hunts by Ear", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fox",
+          "notes": ["The most widespread wild carnivore on Earth", "Native across the whole northern half of the world", "Introduced to Australia in the 1850s for sport hunting", "Omnivore: mice, beetles, worms, berries, scraps", "Caches surplus food and remembers the spot", "City foxes range over much smaller patches than country foxes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fox That Moved to Town",
+          "text": "No wild meat eater on Earth lives in more places than the red fox. It hunts above the Arctic Circle, where the ground stays frozen most of the year. It hunts at the dry edges of the Sahara. It lives in the forests of Japan, the farmland of France, the hills of Afghanistan, and the back streets of Chicago and London. In the 1850s, settlers shipped red foxes to Australia so they would have something to chase on horseback. Within about seventy years the foxes had spread across most of the continent, eating their way through small native animals that had never encountered a predator like them and had no idea what to do. Why does the fox win everywhere? Because it is not fussy. A wolf needs large prey and a great deal of empty space. A panda needs bamboo. A fox needs almost nothing in particular. It eats mice, rabbits, beetles, earthworms, birds, eggs, blackberries, windfall apples, and, in a city, whatever ends up on the sidewalk. When it finds more food than it can eat, it digs a hole, buries the surplus, and comes back later, and it remembers where. Its chest is narrow, so it slips through a gap barely wider than its own head. Its den can be a hole it dug, a hole something else dug, the dark under a shed, or the space beneath a set of steps. That is why the fox came to town. Not because it grew fond of us, and not because anyone invited it. A city is warm. It is full of scraps. Nobody hunts a fox on a street corner, and there are a thousand quiet gaps to sleep in. City foxes now live on much smaller patches of ground than country foxes, because they never have to walk far to eat. It is worth sitting with what that means. The fox did not change itself to fit our world. It was already, long before we built anything, exactly the animal our cities would reward."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "According to the passage, why did red foxes end up in Australia, and what happened next?",
+            "The passage compares the fox to a wolf and a panda. Explain what that comparison is doing. Quote the phrase the author uses about the fox.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last sentence in your own words, and say why the author saved it for the end."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the fox's range + why it is not fussy + why cities suit it)",
+            "settlers shipped them there in the 1850s for sport hunting; they spread across most of the continent and ate through native animals",
+            "the wolf and panda need one specific thing, so they show the fox's advantage by contrast; quote: A fox needs almost nothing in particular",
+            "(inform, with detail: it defines and gives facts and examples; some persuasive tone in the closing lines)",
+            "(the fox was already suited to cities before cities existed; it lands last because it reframes everything before it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["fussy → ____", "surplus → ____", "predator → ____", "reward → ____"],
+          "rows": 1,
+          "answers": ["hard to please, needing very particular things", "more than is needed right now", "an animal that hunts and eats other animals", "to give an advantage to"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Australia's small native animals had never met a predator like the fox. Explain why that made them so easy to catch.",
+            "Being able to eat almost anything helps a fox. Name one situation where being a picky eater could be an advantage instead."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: they had no instincts or defenses evolved against this kind of hunter)",
+            "(opinion with reasoning: a specialist faces less competition where its one food is plentiful)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: foxes living in our cities were not invited, and some people want them removed. Should we leave them alone? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Fox That Hunts by Ear",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-fox", "templateLabel": "The Fox That Hunts by Ear", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fox",
+          "notes": ["A silver fox is a red fox with black fur", "Dmitri Belyaev began the fox experiment in 1959", "Site: Novosibirsk, Siberia", "Bred on one rule only: calmness toward a human hand", "Lyudmila Trut ran the study for decades after", "In 2020 other researchers challenged what it proves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Foxes That Were Supposed to Explain Dogs",
+          "text": "In 1959, a Russian scientist named Dmitri Belyaev began an experiment on a fur farm in Siberia, and the animal he chose was the fox. The question underneath it was really about dogs. Every dog alive descends from wolves, but the change from wolf to dog is baffling. Dogs do not merely behave differently from wolves. They look different. Floppy ears, curled tails, blotchy white coats, shorter faces. Nobody ever bred a wolf for floppy ears, and yet tame animals all over the world keep arriving at the same odd collection of features. Pigs, goats, rabbits, horses, and cows each show pieces of the same pattern. Belyaev's insight was that you could not answer this by studying dogs, because dogs finished changing thousands of years ago. You would have to start again, with an animal nobody had tamed, and watch it happen in real time. So he took silver foxes, which are red foxes born with black fur, and he bred them on one rule and one rule only. Each generation, a worker opened a cage and offered a hand. Foxes that snapped or cowered were not bred. The calmest few were. No one selected for looks. No one selected for ear shape, tail curl, or coat pattern. Calmness was the only thing ever chosen, generation after generation, in the cold outside Novosibirsk. The foxes changed quickly. Within roughly ten generations some of them whimpered for attention, licked hands, and wagged their tails when a person approached. Then the uninvited things arrived. Floppy ears. Curled tails. White patches across the face. Shorter snouts. Animals breeding at strange times of year. Belyaev appeared to have caught domestication in the act, compressed from millennia into decades, and his colleague Lyudmila Trut kept the work running for the rest of the century. It is a beautiful result. It may also be less tidy than it sounds. In 2020, a group of researchers examined where Belyaev's foxes had actually come from. They were not wild. They had been bought from fur farms on Prince Edward Island in Canada, where foxes had already been bred in captivity for around fifty years, and where farmers had long been quietly favoring whichever animals were easiest to handle. Records and photographs from those farms show foxes with floppy ears and patchy coats before the Siberian experiment ever began. If those traits were already sitting in the population, then the experiment did not conjure them out of tameness. It concentrated what was there. The Siberian foxes are still real. They are still tame, still extraordinary, still unlike any wild fox. What is in dispute is not the foxes. It is what they prove. And that is not a failure of science. That is science working exactly as intended: a gorgeous story gets told, someone goes back and checks the paperwork, and the story comes back smaller and truer than before."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why Belyaev believed he had to use foxes rather than study dogs. Cite the evidence.",
+            "The passage calls the extra traits uninvited. Explain what makes them uninvited, and why that word choice matters to Belyaev's argument.",
+            "Identify the shift in the passage: where does it turn, and how does the author signal it?",
+            "The 2020 objection is that the experiment concentrated what was there. Analyze how that single claim damages the original conclusion, and say whether the author thinks the experiment was worthless."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(dogs finished changing long ago, so the process could not be observed; cite: dogs finished changing thousands of years ago)",
+            "(nobody selected for them, so they seemed to come along with tameness by themselves; the word carries the whole claim that behavior drags looks with it)",
+            "(at It is a beautiful result. It may also be less tidy than it sounds; two short sentences pivot from wonder to doubt)",
+            "(if the traits pre-existed, tameness did not generate them, so the causal claim collapses into selection of existing variation; no, the author calls the foxes extraordinary and calls the checking science working)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["domestication → ____", "generation → ____", "conjure → ____", "in dispute → ____"],
+          "rows": 2,
+          "answers": [
+            "the long process of changing a wild animal into one that lives alongside people",
+            "one round of offspring in a breeding line",
+            "to produce something seemingly out of nothing",
+            "argued over, not settled"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The founder foxes came from farms where handlers already favored calm animals. Explain why a scientist must know an experiment's starting conditions before trusting its result.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(without the baseline you cannot tell what the experiment caused and what was already present)",
+            "(student question + a credible source type, such as the original fur farm breeding records or a peer reviewed genetics paper)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Belyaev's fox experiment failed, because its most famous conclusion did not hold up. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

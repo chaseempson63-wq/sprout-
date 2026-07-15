@@ -1,0 +1,319 @@
+{
+  "key": "cat",
+  "title": "The Cat That Let Itself In",
+  "blurb": "The small hunter that walked into our grain sheds 10,000 years ago and never left, with mirror eyes, swiveling ears, and a tongue full of hooks.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Cat That Let Itself In",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-cat", "templateLabel": "The Cat That Let Itself In", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the cat." },
+        {
+          "kind": "image",
+          "imageKey": "cat",
+          "notes": ["It walks with no sound", "Its ears can turn to listen", "A purr is a soft rumble", "It sleeps most of the day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a cat. The cat sits very still. Look at its long whiskers. Look at its round eyes. The cat has soft paws. It can walk with no sound at all. When the cat is happy, it makes a little rumble. That sound is called a purr. You can feel a purr with your hand. The cat turns its ears to listen to you."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the paw prints in each row. Write how many in the box.",
+          "emoji": "🐾",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "cat    purr" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its sound.",
+          "pairs": [
+            { "left": "cat", "right": "purr" },
+            { "left": "dog", "right": "bark" },
+            { "left": "cow", "right": "moo" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own cat. Give it long whiskers.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Cat That Let Itself In",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-cat", "templateLabel": "The Cat That Let Itself In", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "cat",
+          "notes": ["Whiskers can feel moving air", "It has whiskers on its front legs too", "It cannot see well up close", "Whiskers help it move in the dark", "Each whisker sits deep in the skin"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What the Whiskers Are For",
+          "text": "A cat has whiskers on its face. It has whiskers over its eyes and under its chin. It even has short whiskers on the back of its front legs. Whiskers are not hairs for warmth. Each whisker sits deep in the skin, and it can feel the tiniest push of air. A cat cannot see well up close. The food in its bowl is a blur. So the cat leans in and lets its whiskers do the looking. In a dark room, whiskers tell the cat where the chair leg is before it bumps into it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Name two places a cat has whiskers besides its face.", "What can one whisker feel?", "Why does a cat lean in close to its food bowl?"],
+          "rows": 2,
+          "answers": ["over its eyes, under its chin, or on the back of its front legs", "the tiniest push of air", "it cannot see well up close, so its whiskers do the looking"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A cat has short whiskers on the back of its front ____.", "Each whisker can feel a tiny push of ____.", "A cat cannot see well up ____.", "Whiskers help a cat move in a ____ room."],
+          "wordBank": ["legs", "air", "close", "dark"],
+          "answers": ["legs", "air", "close", "dark"]
+        },
+        { "kind": "draw", "prompt": "Draw a cat in a dark room. Draw the whiskers finding the way.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Cat That Let Itself In",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-cat", "templateLabel": "The Cat That Let Itself In", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "cat",
+          "notes": ["Its tongue is covered in tiny hooks", "The hooks are called papillae", "They are made of keratin, like your nails", "Each hook is scooped like a ladle", "A cat sweats only through its paws"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tongue With Hooks In It",
+          "text": "Run your hand along a cat's tongue and it feels like sandpaper. That is not an accident. A cat's tongue is covered in hundreds of tiny spines called papillae. They are made of keratin, the same hard stuff as your fingernails, and every one of them curves backward toward the cat's throat. Those hooks do real work. When a cat eats, they scrape meat off bone. When a cat washes, they rake through fur like a comb and drag out loose hair and dirt. Scientists took a close look at the spines in 2018 and found something nobody expected. Each spine is not a solid point. It is scooped out, like a tiny ladle, and it carries a drop of spit down to the skin at the bottom of the fur. That is why a cat can clean itself so well. The tongue is not just brushing the outside. It is delivering water where the brush cannot reach. The spit dries and cools the cat down too, which matters, because a cat sweats only through its paws. There is one catch. All that raked out fur has to go somewhere, and the hooks point backward, so the cat cannot spit it out. It swallows it. That is where hairballs come from."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are the tiny spines on a cat's tongue called?",
+            "What are the spines made of?",
+            "Name two jobs the hooks do.",
+            "Why do you think a cat with straight spines instead of backward hooks would not get hairballs?"
+          ],
+          "rows": 2,
+          "answers": [
+            "papillae",
+            "keratin, the same hard stuff as fingernails",
+            "they scrape meat off bone and rake loose fur and dirt out",
+            "(inference: the hooks point backward, so fur can only travel down the throat)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Tongue With Hooks In It", "How to Train a Cat to Sit", "The Biggest Cats in the World"],
+          "answers": ["The Tongue With Hooks In It"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The spines curve ____ toward the cat's throat.", "Papillae are made of ____, like your fingernails.", "A cat sweats only through its ____."],
+          "wordBank": ["backward", "keratin", "paws"],
+          "answers": ["backward", "keratin", "paws"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the cleverest thing about a cat's tongue, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Cat That Let Itself In",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-cat", "templateLabel": "The Cat That Let Itself In", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cat",
+          "notes": ["Tapetum lucidum: a mirror behind the retina", "Sees in about one sixth of our light", "Each ear has around thirty muscles", "Hears up to about 64,000 vibrations a second", "Most awake at dawn and dusk", "Eyeshine is light bouncing back out"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built for the Dark",
+          "text": "A house cat is most awake at dawn and dusk, when the light is thin and the mice are moving. Almost everything about its head is built for that hour. Start with the eyes. Behind a cat's retina sits a layer called the tapetum lucidum, a mirror made of tiny crystals. Light that the retina misses on the way in bounces off that mirror and passes back through for a second chance. Almost nothing is wasted. A cat can see in about one sixth of the light a person needs. The mirror is also why cat eyes flash green in a flashlight beam. You are seeing the light come back out. There is a price. A retina packed for dim light is packed with rods, the cells that catch faint light, and rods do not read color or fine detail. A cat sees a duller, blurrier world than you do. It gained the night and gave up the sharpness. Now the ears. Each ear is a cup of skin and cartilage moved by around thirty muscles, and each one swivels on its own to aim at a sound. A cat hears far higher notes than we do, up to about 64,000 vibrations a second. That is not a random number. It is roughly the pitch of a mouse. Mice call to each other in squeaks too high for human ears, and the cat has spent millions of years listening in on a private conversation. Then the whiskers finish the job. Up close, where the eyes go soft, whiskers read the shape of a mouse in the dark by the air moving around it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, how does the tapetum lucidum help a cat see at night?",
+            "The passage says the cat gained the night and gave up the sharpness. Explain that trade.",
+            "Why does the author say 64,000 is not a random number?",
+            "Why would swiveling each ear separately be more useful to a hunter than turning its whole head?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(it is a mirror that bounces missed light back through the retina for a second chance)",
+            "it packed its retina with rods for dim light, so it lost color and fine detail",
+            "it matches the pitch of a mouse, so the hearing evolved to catch mouse squeaks",
+            "(inference: it can aim at a sound without moving, so it stays still and unseen)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Nearly every part of a cat's head is shaped for hunting in low light",
+            "Cats are the fastest animal on land",
+            "Mice are easy to keep as pets"
+          ],
+          "answers": ["Nearly every part of a cat's head is shaped for hunting in low light"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["tapetum lucidum → ____", "rods → ____", "swivels → ____"],
+          "rows": 1,
+          "answers": [
+            "a mirror layer behind the retina that sends light back through",
+            "retina cells that catch faint light but not color or detail",
+            "turns to aim in a direction"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: a cat sees a blurrier world than you do, but it can hunt in near darkness. Which would you rather have, and why? Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Cat That Let Itself In",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-cat", "templateLabel": "The Cat That Let Itself In", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cat",
+          "notes": ["The righting reflex: bend, tuck, twist", "Around 230 bones", "The collarbone floats free in muscle", "Marey photographed a falling cat in 1894", "Falls at roughly 60 miles an hour, half a person's speed", "The inner ear reports which way is down"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cat That Always Lands Feet First",
+          "text": "Drop a wrench and it tumbles. Drop a cat from the same height and it arrives on its feet, calm, as if the whole thing had been its idea. For a long time this looked like a violation of physics. The problem is a real one. A body that starts a fall without spinning has no angular momentum, and nothing in midair can hand it any. There is no floor to push against, no wall, nothing but air. By the strict rule, a cat that begins a fall upside down should stay upside down. The cat gets around the rule instead of breaking it. In 1894 a French scientist named Etienne Jules Marey photographed a falling cat sixty times a second and finally saw the trick. The cat bends sharply at the waist, folding into two halves that can turn separately. It pulls its front legs in tight and throws its back legs out wide. A tucked half spins easily; a spread half resists. So the front end whips around while the back end barely moves. Then the cat swaps: back legs in, front legs out, and now the rear catches up to the front. Two half turns, and the whole animal has rotated without ever gaining any net spin. The books balance. Physics never noticed. The equipment behind this is worth knowing. In the inner ear sits the vestibular system, which tells the cat instantly which way is down. Its skeleton is unusually forgiving: around 230 bones, a spine with loose, flexible joints, and a collarbone that floats free in muscle instead of bolting to the shoulder. That floating collarbone is why a cat can pour itself through a gap barely wider than its head. One more thing. A falling cat that spreads out reaches a top speed of roughly 60 miles an hour, about half what a falling person reaches, because a cat is light for its surface area and the air has more to push on. Landing feet first is only half the story. The other half is that a cat is simply harder for gravity to hurry."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does a falling cat have no angular momentum to work with? Use the passage to explain.",
+            "Explain the two half turns in your own words. Quote the phrase the passage uses for what a tucked half does.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the author mean by the line: Physics never noticed?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the physics problem + the bend-and-twist solution)",
+            "it starts the fall without spinning and has nothing to push against in midair",
+            "front legs in and back legs out turns the front, then the reverse turns the rear; quote: A tucked half spins easily",
+            "(inform, with detail: it defines terms and gives dates and numbers; the playful tone also entertains)",
+            "(the cat obeyed the rule the whole time, so no law was broken)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["angular momentum → ____", "vestibular system → ____", "net (spin) → ____", "forgiving → ____"],
+          "rows": 1,
+          "answers": [
+            "the spin a body already has, which it cannot create in midair",
+            "the inner ear parts that sense which way is down",
+            "the total left over once everything is added up",
+            "able to bend and flex without being damaged"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says the cat gets around the rule instead of breaking it. Explain the difference.",
+            "Why does a cat come off better than a person in the same fall? Give the passage's reason."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it never gains net spin, so it satisfies the law while still turning over)",
+            "it is light for its surface area, so it falls at about half the speed"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: people repeat that cats always land on their feet. Is that a fair thing to say, or does it leave something important out? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Cat That Let Itself In",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-cat", "templateLabel": "The Cat That Let Itself In", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cat",
+          "notes": ["Felis catus, descended from the African wildcat", "Domesticated itself around 10,000 years ago", "A cat was buried beside a person on Cyprus 9,500 years ago", "Barely changed from its wild ancestor", "Hearing reaches about 64,000 vibrations a second", "Now on every continent except Antarctica"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Domesticated Itself",
+          "text": "Every other domestic animal has the same origin story. People wanted something, went out and got it, and bred it until it was useful. The dog, the cow, the sheep, the horse: all of them were taken. The cat walked in on its own. About 10,000 years ago, in the Fertile Crescent, people stopped following their food and started growing it. Farming produced something the world had never seen before: a pile. Grain in one place, in quantity, sitting still. Mice found the pile almost immediately. And a small, striped, short-tempered predator called the African wildcat found the mice. Nobody recruited it. The cats that could tolerate being near people ate well and raised more kittens. The cats that could not stayed in the hills. Over many generations the tolerant ones changed slightly, mostly in temperament, and became a separate thing. Biologists call this the commensal pathway, from a Latin phrase meaning sharing a table. The cat was not domesticated so much as it accepted a job offer and negotiated its own hours. The oldest hard evidence is a grave. On the island of Cyprus, at a site called Shillourokambos, archaeologists uncovered a human burial about 9,500 years old with a cat laid carefully beside it, roughly sixteen inches away, facing the same direction. What makes the grave remarkable is the geography. Cyprus has no native wildcats. Someone put that animal on a boat and carried it across open sea, which means that by then the relationship was already worth the trouble. From there the cat sailed everywhere. Egypt made it sacred and gave it a goddess, Bastet. Roman ships carried it along trade routes. Later ships carried it to islands that had never held a land predator of any kind. And that is where the story stops being charming. Compare a cat to a dog and the difference is stark. Ten thousand years of dog breeding produced the Chihuahua and the Great Dane. Ten thousand years of cats produced a slightly friendlier African wildcat. Genetically and physically, the house cat is nearly its wild ancestor with the volume turned down. Its eyes, its ears, its claws, its reflexes are the equipment we hired it for, and none of it was ever switched off. A well fed cat still hunts. Hunger was never the trigger. The bill for that is enormous. One widely cited study estimated that free ranging cats in the United States kill somewhere between 1.3 and 4.0 billion birds a year, and several times that many small mammals. On islands, where the local birds evolved with no ground predators and no instinct to fear one, cats have helped push dozens of species out of existence entirely. It is tempting to be angry at the cat. That would be a mistake, and it would also be a dodge. The cat is doing the exact thing it has done for 10,000 years, the thing we valued it for, the thing we shipped it around the planet to do. It has not changed. Our accounting has. We put a wild predator on every continent except one, called it a pet, and are now surprised to find that it hunts."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the commensal pathway in your own words. Cite the phrase the passage uses to describe the cat's side of the bargain.",
+            "Why does the author say the Cyprus grave is remarkable because of its geography? Use evidence from the text.",
+            "Identify the shift in the passage: where does it turn, and how does the author signal it?",
+            "The author writes that the cat has not changed, but our accounting has. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering self-domestication + the unchanged hunter + the ecological cost)",
+            "(cats moved in for the mice and were never bred for the job; cite: it accepted a job offer and negotiated its own hours)",
+            "(Cyprus has no native wildcats, so a person carried one across open sea; that proves the bond was already valued)",
+            "(at And that is where the story stops being charming; a short one-sentence paragraph marks the pivot from charm to cost)",
+            "(it moves blame from the animal to the people who spread it; earned by the wildcat comparison and the bird numbers)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["commensal → ____", "temperament → ____", "free ranging → ____", "dodge → ____"],
+          "rows": 2,
+          "answers": [
+            "sharing a table; living alongside another and feeding on what it leaves",
+            "an animal's natural mood and tolerance",
+            "roaming outdoors without being confined or controlled",
+            "a way of avoiding responsibility for something"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage sets the Chihuahua and the Great Dane against a slightly friendlier African wildcat. What point is that comparison making, and why is it stronger than simply stating the point?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(dogs were reshaped by breeding while cats were barely altered; the concrete extremes make the contrast land)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: because cats kill billions of wild animals, letting a pet cat outdoors is never acceptable. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

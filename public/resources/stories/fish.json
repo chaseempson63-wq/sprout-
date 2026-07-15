@@ -1,0 +1,315 @@
+{
+  "key": "fish",
+  "title": "How a Fish Breathes Water",
+  "blurb": "Water holds barely any air, and a fish pulls it out anyway. Gills, the line down its side, and why a lungfish is your cousin.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "How a Fish Breathes Water",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-fish", "templateLabel": "How a Fish Breathes Water", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the fish's mouth. Find its tail." },
+        {
+          "kind": "image",
+          "imageKey": "fish",
+          "notes": ["It lives in the water", "It breathes with gills", "Fins push it along", "It has no eyelids"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a fish. The fish lives in the water. It does not come up for air. The fish has soft flaps behind its head. They are called gills. The gills take air out of the water. The fish opens its mouth. The water goes in. The water goes out the gills. Then the fish swims away."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fish in each row. Write how many in the box.",
+          "emoji": "🐟",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "gills    swim" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part to its job.",
+          "pairs": [
+            { "left": "fins", "right": "swim" },
+            { "left": "gills", "right": "breathe" },
+            { "left": "eyes", "right": "see" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own fish. Give it big fins and a long tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "How a Fish Breathes Water",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-fish", "templateLabel": "How a Fish Breathes Water", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "fish",
+          "notes": ["Gills are the red flaps behind the head", "A fish breathes water, not air", "Most fish cannot close their eyes", "Scales overlap like roof tiles", "Slime helps it slip through the water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Fish Breathes Water",
+          "text": "You breathe air. A fish cannot. So a fish does something clever with its mouth. Watch a fish in a tank. Its mouth opens and closes all day long. It is not eating. It is breathing. The fish takes a gulp of water. It pushes the water back over its gills. The gills are red and feathery, and they sit behind a flap on each side of the head. There is a little bit of air hiding in the water. The gills grab it. Then the used water slips out the flap, and the fish gulps again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a fish doing when it opens and closes its mouth?", "Where does the water go after it goes in the mouth?", "What do the gills grab out of the water?"],
+          "rows": 2,
+          "answers": ["it is breathing", "back over its gills and out the flap", "the air hiding in the water"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A fish breathes with its ____.", "A fish takes a gulp of ____.", "The gills are red and ____.", "The used water goes out a ____."],
+          "wordBank": ["gills", "water", "feathery", "flap"],
+          "answers": ["gills", "water", "feathery", "flap"]
+        },
+        { "kind": "draw", "prompt": "Draw the fish in its water. Add some plants and a rock.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "How a Fish Breathes Water",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-fish", "templateLabel": "How a Fish Breathes Water", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "fish",
+          "notes": ["Water holds about 30x less oxygen than air", "Gills are stacked like red feathers", "About half of all backboned animals are fish", "Most fish have no eyelids", "Fish have been around for 500 million years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Trick of Breathing Water",
+          "text": "Air is easy to breathe. It is about one fifth oxygen, and it is light, so your chest barely works to move it. Water is a much harder place to live. A mouthful of water holds around thirty times less oxygen than a mouthful of air, and water is heavy. A fish has to move a lot of it to get a little. So a fish never stops working. It gulps water in through its mouth and pushes it out over its gills. Gills look like red feathers, stacked in rows behind a bony flap. Each feather is covered in even smaller folds, so the gill has a huge surface pressed against the water. Oxygen slips out of the water and into the fish's blood. The tired water washes away out the flap. A fish is doing this every second of its life. It is the reason a fish out of water dies so fast. On land the gill feathers stick together in a wet clump. There is plenty of oxygen all around, and the fish has no way left to reach it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why is water a harder place to breathe than air?",
+            "Trace the path of the water. Where does it go in, and where does it come out?",
+            "What do the gills take out of the water?",
+            "Why do you think a fish dies out of water, even though there is oxygen all around it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "water holds about thirty times less oxygen than air, and it is heavy to move",
+            "in through the mouth, out over the gills and through the flap",
+            "oxygen",
+            "(inference: the gill feathers stick together in a clump, so the fish cannot reach the oxygen)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Trick of Breathing Water", "How to Build a Fish Tank", "The Biggest Ocean in the World"],
+          "answers": ["The Trick of Breathing Water"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Gills are stacked in rows behind a bony ____.", "Air is about one fifth ____.", "Oxygen slips out of the water and into the fish's ____."],
+          "wordBank": ["flap", "oxygen", "blood"],
+          "answers": ["flap", "oxygen", "blood"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of breathing water sounds hardest to you, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "How a Fish Breathes Water",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-fish", "templateLabel": "How a Fish Breathes Water", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fish",
+          "notes": ["The lateral line feels water move", "Blind cave fish map walls with it", "The swim bladder is a balloon of gas", "Sharks have no swim bladder", "A school of hundreds turns as one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Line Down a Fish's Side",
+          "text": "Look closely at a fish and you will find a faint line running from its gill flap to its tail. It is easy to mistake for a scratch. It is a sense organ, and you do not have anything like it. The line is a row of tiny pores in the skin. Under each pore sits a bundle of hair cells in jelly. When water moves, the jelly bends, and the fish feels it. That is the whole trick: a fish feels water the way you feel a breeze on your arm, except it can feel a shape in the water it has not seen. A hand reaching into a tank pushes a small wall of water ahead of it, and the fish knows before it looks. This is how a school of hundreds turns as one body without crashing. It is how a blind cave fish, with no eyes at all, maps a cave wall it cannot see. A fish carries another quiet invention inside it. Most bony fish have a swim bladder, a balloon of gas tucked under the spine. Add gas and the fish floats up. Take gas out and it sinks. Once the bladder is set, the fish can hang motionless in the water without a single flick of a fin. Sharks were never given one. A shark has a huge oily liver instead, and many kinds must keep swimming or slowly settle to the bottom."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is the lateral line, and what does it let a fish do?",
+            "The passage says the fish knows before it looks. Explain what it knows and how it knows it.",
+            "How does a swim bladder let a fish hang still in the water?",
+            "Sharks have no swim bladder. What does the passage suggest that costs them?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a row of pores holding hair cells in jelly; it lets a fish feel water moving around it",
+            "(inference: it feels the wall of water a hand pushes ahead of it, through the lateral line)",
+            "gas is added or taken out until the fish neither floats up nor sinks",
+            "(inference: many kinds must keep swimming or they settle to the bottom)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A fish senses and balances itself using organs people do not have",
+            "Sharks are the fastest animals in the ocean",
+            "Fish tanks should always be kept covered"
+          ],
+          "answers": ["A fish senses and balances itself using organs people do not have"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["sense organ → ____", "school (of fish) → ____", "motionless → ____"],
+          "rows": 1,
+          "answers": ["a body part that collects information about the world", "a large group of fish swimming together", "not moving at all"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if you could borrow one fish part for a day, would you take the lateral line or the swim bladder? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "How a Fish Breathes Water",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-fish", "templateLabel": "How a Fish Breathes Water", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fish",
+          "notes": ["Water holds about 30x less oxygen than air", "Water is about 800x denser than air", "Countercurrent: blood and water run opposite ways", "Gills can pull out up to 80% of the oxygen", "Human lungs manage about 25%", "Gill surface can exceed the whole fish's skin"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Thirty Times Less Air",
+          "text": "Breathing air is close to free. Air is about twenty one percent oxygen, it weighs almost nothing, and your lungs take what they need with a movement so small you forget you are doing it. Water is a far meaner deal. A liter of seawater carries roughly thirty times less oxygen than a liter of air, and water is around eight hundred times denser. A fish must therefore shift a heavy, stingy fluid across its body, all day, forever, and it may spend a tenth of its energy simply on the act of breathing. Given that bill, evolution built the fish a better lung than yours. Water enters the mouth and is driven out across four gill arches on each side. Each arch carries rows of filaments, and each filament is stacked with thousands of thin plates called lamellae. Fold upon fold, the surface adds up to something enormous, often larger than the outside of the entire fish. Blood runs through those plates under a skin only a cell or two thick. The clever part is the direction. Inside each lamella, blood flows one way and water flows the other. They pass each other head on. This is called countercurrent exchange, and it means that blood which has already collected plenty of oxygen still meets water that is fresher and richer than itself. All the way along, the gradient holds. Oxygen keeps crossing, from the first plate to the last. Compare that to your own chest. Your lungs are a dead end. Air goes in, mixes with stale air already sitting there, and comes back out the way it came, and you strip out around a quarter of the oxygen you inhaled. A fish, working in water that barely has any, pulls out as much as eighty percent. So the next time you watch a goldfish work its mouth, notice what you are looking at. It is not idle. It is running one of the most efficient gas exchangers on the planet, and it cannot stop for a second."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the author call breathing air close to free and water a far meaner deal? Give two facts from the passage.",
+            "Explain countercurrent exchange in your own words. Quote the sentence the passage uses to describe how blood and water meet.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author finish with a goldfish rather than another fact?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: water is a poor source of oxygen; gills solve it with countercurrent exchange)",
+            "(air is about 21 percent oxygen and weighs almost nothing; water holds 30x less oxygen and is 800x denser)",
+            "blood and water flow in opposite directions so the gradient never runs out; quote: They pass each other head on",
+            "(inform, with a persuasive close: it defines terms and gives figures, then argues for noticing)",
+            "(inference: an ordinary animal brings the science close and turns a fact into something to go look at)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["lamellae → ____", "countercurrent → ____", "gradient → ____", "denser → ____"],
+          "rows": 1,
+          "answers": [
+            "thin stacked plates on a gill filament where gas is exchanged",
+            "two flows running in opposite directions past each other",
+            "a difference in amount between two places that makes something move",
+            "having more matter packed into the same space"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "A fish may spend a tenth of its energy on breathing alone. What does that cost mean for how a fish has to live?",
+            "The author calls your lungs a dead end. Explain why that design wastes oxygen."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: it must eat more, cannot stop pumping, and suffers quickly when oxygen drops)",
+            "(fresh air mixes with stale air that never left, so the incoming air is diluted before it is used)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which is the better design for the world it lives in, a gill or a lung? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "How a Fish Breathes Water",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-fish", "templateLabel": "How a Fish Breathes Water", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fish",
+          "notes": ["Ray fins and lobe fins split about 420 million years ago", "Lungfish are our closest living relatives in the water", "'Fish' is paraphyletic, not a true branch", "The swim bladder and your lungs are the same old organ", "'Reptile' had the same flaw until birds were added", "About 34,000 named species and counting"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "There Is No Such Thing as a Fish",
+          "text": "Start with a fact that sounds like a trick and is not. A lungfish is more closely related to you than it is to a salmon. That claim is not about size or cleverness or where an animal lives. It is about ancestry, and ancestry is the only family tree biology recognizes. Roughly four hundred and twenty million years ago, the bony vertebrates split into two great limbs. One limb, the ray fins, went on to produce the salmon, the goldfish, the tuna, and very nearly every fish you could name. The other limb, the lobe fins, produced coelacanths, lungfish, and every animal that has ever walked on land, including you. Within that second limb, the lungfish are our nearest living relatives left in the water. So a lungfish and a person share a more recent ancestor than a lungfish and a salmon do. The tree says so, and the tree is not taking votes. Now count what that means. Any group called 'fish' that contains both the salmon and the lungfish, but leaves you out, is not a real group. It is a bag with a hole in the bottom. Biologists have a word for this: paraphyletic, a category made by taking a genuine branch of the tree and quietly deleting some of the descendants you would rather not talk about. 'Fish' is such a category. So was 'reptile' until birds were let in. The honest version is that a fish is not a kind of animal. It is a job description. It means: a vertebrate that lives in water, breathes with gills, and swims with fins. Hagfish, sharks, sturgeon, seahorses, and lungfish all do that job, and they are separated from one another by hundreds of millions of years. Some have skeletons of bone and some of cartilage. Some have jaws and some have never had them. Calling them all fish tells you what they do for a living. It tells you almost nothing about who they are. The evidence for the tree is hiding inside the animals themselves. Consider the swim bladder, the gas filled sac that lets a bony fish hang weightless in the water. It looks like a marvel of underwater engineering, so it is strange to learn that it is a modified lung. Early bony fishes in warm, oxygen poor shallows gulped air into a pouch off the gut, and that pouch is the same organ that became a lung in one lineage and a buoyancy tank in another. Your chest and a goldfish's swim bladder are the same idea, running in different directions for four hundred million years. None of this means the word should be thrown away. Ecology needs it. If you study who eats whom in a reef, 'fish' is a useful and honest word, because the reef cares what an animal does, not who its ancestors were. The lesson is smaller and sharper than that. It is that some of our oldest, most obvious categories were drawn by eye, from the outside, by people standing on a shore. When the evidence arrived, the categories did not survive contact with it. That happens more often than we like to admit, and the word 'fish' is simply the case where it is easiest to see."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what paraphyletic means and why 'fish' qualifies. Cite the image the author uses for it.",
+            "The author writes that a fish 'is a job description.' Explain what that claim does to the word, and cite one detail that supports it.",
+            "Identify where the passage turns from taking the word apart to defending it. How does the author signal that turn?",
+            "The passage ends by calling fish 'the case where it is easiest to see.' Easiest to see what? Analyze whether the passage has earned that claim."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the word fish names a lifestyle, not a branch of the family tree)",
+            "(a group that leaves out some descendants of its own ancestor; cite: It is a bag with a hole in the bottom)",
+            "(it turns fish from an identity into a description of behavior; cite: they are separated from one another by hundreds of millions of years)",
+            "(at None of this means the word should be thrown away; a short flat sentence pivots from dismantling to defense)",
+            "(that everyday categories built by eye collapse under evidence; earned by the lungfish and swim bladder evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["paraphyletic → ____", "ancestry → ____", "vertebrate → ____", "buoyancy → ____"],
+          "rows": 2,
+          "answers": [
+            "a group that excludes some descendants of its own common ancestor",
+            "the line of ancestors an organism descends from",
+            "an animal with a backbone",
+            "the tendency to float or to sink in a fluid"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the reef 'cares what an animal does, not who its ancestors were.' Explain how one word can be wrong in biology and useful in ecology at the same time.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the two fields ask different questions: one classifies by descent, one by role, so a word can serve one and fail the other)",
+            "(student question + a credible source type, such as a phylogenetics paper or a museum collection)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Because 'fish' is not a real biological group, science should stop using the word. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "key": "bird",
+  "title": "The Bird That Has to Learn Its Song",
+  "blurb": "A songbird is not born knowing its song. It listens, it babbles, it practices for weeks, and it sings with an instrument you do not have.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird That Has to Learn Its Song",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-bird", "templateLabel": "The Bird That Has to Learn Its Song", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the bird's beak." },
+        {
+          "kind": "image",
+          "imageKey": "bird",
+          "notes": ["It sings with its beak open", "Baby birds only peep", "Birds sing the most in the morning", "It has to learn its song"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a bird. The bird can sing. Listen. Peep, peep, peep. Baby birds cannot sing yet. They only peep. The baby bird listens to its mom and dad. It listens and listens. Then it tries. At first the song is a mess. The bird tries again. And again. One day the song comes out right."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the birds on each branch. Write how many in the box.",
+          "emoji": "🐦",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sing    peep" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its sound.",
+          "pairs": [
+            { "left": "bird", "right": "peep" },
+            { "left": "cow", "right": "moo" },
+            { "left": "dog", "right": "woof" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your bird singing. Draw its beak wide open.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird That Has to Learn Its Song",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-bird", "templateLabel": "The Bird That Has to Learn Its Song", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "bird",
+          "notes": ["A baby bird cannot sing yet", "It learns by listening", "Its first tries sound wobbly", "It practices for weeks", "Birds have hollow bones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Has to Learn Its Song",
+          "text": "A baby bird does not know its song. It has to learn it. First it listens. It sits in the nest and hears the grown up birds sing the same song again and again. The baby bird keeps that song in its head. Then it starts to practice. Its first tries sound wobbly and wrong, like a baby learning to talk. It practices for weeks. Little by little the song gets better. One day it sings the song right, and then it can sing it for the rest of its life."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does the baby bird do first?", "Where does it keep the song?", "How do its first tries sound?"],
+          "rows": 2,
+          "answers": ["it listens to the grown up birds", "in its head", "wobbly and wrong"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A baby bird has to ____ its song.", "First it sits and ____.", "Its first tries sound ____.", "It practices for many ____."],
+          "wordBank": ["learn", "listens", "wobbly", "weeks"],
+          "answers": ["learn", "listens", "wobbly", "weeks"]
+        },
+        { "kind": "draw", "prompt": "Draw the baby bird in its nest. Draw a grown up bird singing to it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird That Has to Learn Its Song",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-bird", "templateLabel": "The Bird That Has to Learn Its Song", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "bird",
+          "notes": ["Chickens are born knowing how to cluck", "Songbirds are not born knowing their song", "First tries are called babbling", "A young bird may practice thousands of times", "About half of all bird species are songbirds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Song Nobody Is Born Knowing",
+          "text": "A chicken hatches knowing how to cluck. A duck hatches knowing how to quack. But a songbird hatches knowing almost nothing about its song. It has to learn it, the way you learned to talk. Here is how it works. In its first weeks, a young sparrow listens to the adult birds around it and remembers their song. It does not sing yet. It just stores the sound. Later, when the bird finally opens its beak, what comes out is a mumbly mess. Scientists call this babbling, and it sounds a lot like a baby saying bababa. The bird keeps trying. It listens to itself, compares what it hears to the song stored in its memory, and fixes the parts that are wrong. This takes weeks of practice, sometimes thousands of tries. Then the song locks in. From that day on, the bird sings that song, and it stays the same for years. If a young songbird grows up alone and never hears an adult sing, it still sings. But the song comes out strange and broken, because nobody ever taught it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does a chicken already know when it hatches?",
+            "What does a young sparrow do before it starts singing?",
+            "What do scientists call a young bird's first mumbly tries?",
+            "Why do you think a bird raised alone still sings, even though its song comes out wrong?"
+          ],
+          "rows": 2,
+          "answers": [
+            "how to cluck",
+            "it listens to the adult birds and remembers their song",
+            "babbling",
+            "(inference: the urge to sing is built in, but the song itself has to be learned)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Song Nobody Is Born Knowing", "How to Build a Birdhouse", "The Fastest Bird in the World"],
+          "answers": ["The Song Nobody Is Born Knowing"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A songbird has to ____ its song.", "The bird stores the song in its ____.", "A young bird's first tries are called ____."],
+          "wordBank": ["learn", "memory", "babbling"],
+          "answers": ["learn", "memory", "babbling"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is one thing you had to practice before you got it right, and how did practicing feel?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird That Has to Learn Its Song",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-bird", "templateLabel": "The Bird That Has to Learn Its Song", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bird",
+          "notes": ["Birds sing with a syrinx, not a voice box", "The syrinx sits deep in the chest", "It has two sides that work separately", "A wood thrush can harmonize with itself", "Canaries sip air between syllables", "Only a few animals can learn new sounds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Voices in One Throat",
+          "text": "You make sound with your voice box, up in your throat, where two flaps of tissue vibrate as air rushes past. A bird does not sing with a voice box. Instead it has a syrinx, and the syrinx sits much deeper, right at the bottom of the windpipe, at the exact spot where the tube splits into two branches heading for the lungs. That location is the whole trick. Because the syrinx sits at a fork, it has two sides, and a songbird can control each side separately. A wood thrush can sing two different notes at the same time, then harmonize with itself. No human singer can do that. Some birds even use one side for the low notes and the other for the high ones, switching between them faster than you can hear. The syrinx is also remarkably efficient. A canary singing a long, fast trill takes tiny sips of air between syllables, dozens of times a second, so it never runs out of breath in the middle of a phrase. None of this comes free. A young songbird must still learn what to do with the instrument it was born with. It memorizes the songs of the adults around it, babbles for weeks, listens to its own mistakes, and slowly steers its two sided syrinx toward the remembered sound. A bird that is deafened before it finishes learning never gets there, because it cannot hear itself practice. So the next time you hear a bird outside the window, remember what you are listening to. That is an animal playing a two piece wind instrument buried in its chest, performing a song it had to learn by heart."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Where is the syrinx, and why does that spot matter so much?",
+            "Explain how a wood thrush can harmonize with itself.",
+            "Why can a canary sing a long trill without stopping for a breath?",
+            "The passage says a deafened bird never finishes learning its song. What does that tell you about how the learning works?"
+          ],
+          "rows": 2,
+          "answers": [
+            "at the bottom of the windpipe where it forks into two branches; the fork gives it two sides the bird can control separately",
+            "its syrinx has two sides it can control separately, so it makes two notes at once",
+            "it takes tiny sips of air between syllables, dozens of times a second",
+            "(inference: the bird has to hear itself to compare its song to the one it remembers and fix its mistakes)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A songbird sings with a two sided instrument deep in its chest, and it still has to learn the song by ear",
+            "Birds are louder than any other animal",
+            "Human singers can copy any sound a bird makes"
+          ],
+          "answers": ["A songbird sings with a two sided instrument deep in its chest, and it still has to learn the song by ear"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["syrinx → ____", "harmonize → ____", "deafened → ____"],
+          "rows": 1,
+          "answers": ["the two sided organ a bird sings with, at the fork of the windpipe", "to sing notes that go together at the same time", "made unable to hear"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which is stranger, that a bird can sing two notes at once, or that it has to learn its song by listening? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird That Has to Learn Its Song",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-bird", "templateLabel": "The Bird That Has to Learn Its Song", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bird",
+          "notes": ["Vocal learning: hear it, store it, copy it", "Only humans, birds, whales, bats, elephants and a few others do it", "Subsong is a bird's version of babbling", "Sensitive period: a window when the brain can absorb song", "White crowned sparrows sing in local accents", "Female song is common and was there from the start"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Learns a Language",
+          "text": "Sound is easy to make. Almost any animal with lungs can force air past a flap of tissue and produce noise. Learning a sound is rare. Out of all the animals on Earth, only a handful can hear something, remember it, and then teach their own bodies to copy it. Humans can. Parrots, hummingbirds, and songbirds can. So can whales, dolphins, some bats, and elephants. That is nearly the entire club. Your dog cannot do it, and neither can a chimpanzee, which is an odd fact when you consider how closely related to us it is. A songbird learns like you did. In its first weeks it does almost nothing but listen, storing the songs of the adults nearby in memory. This window does not stay open forever. In many species there is a sensitive period, a stretch of early life when the brain is ready to absorb song, and a bird that hears nothing during that window will never sing normally afterward. Next comes the babbling. A young bird's first attempts are formless and rambling, and researchers call it subsong for a reason: it sounds startlingly like a human baby experimenting with bababa. Over the following weeks the bird practices, sometimes tens of thousands of times, listening to itself and nudging each attempt closer to the version stored in its head. Eventually the song crystallizes and stops changing. Because song is learned rather than inherited, it drifts, and it drifts by neighborhood. White crowned sparrows in one valley sing a noticeably different version from sparrows a few miles away. Birds in each area learn from the birds around them, small differences accumulate, and the result is a genuine local accent. Researchers can record a sparrow and often say where it grew up. There is a piece of this story that got told wrong for a long time. Biologists in Europe and North America mostly studied birds where the male sings and the female does not, and concluded that birdsong was essentially a male performance. Then researchers surveyed songbirds worldwide, including the tropics, where most species actually live. Female song turned out to be common, and the evidence suggests it was there from the beginning. The silent female was not the rule. She was a local exception that a few scientists mistook for the whole picture, because they were listening in the wrong place."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is a sensitive period, and what happens to a bird that hears no song during it?",
+            "Explain why songbird dialects exist. Quote the phrase the passage uses for the result.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentence summary covering vocal learning + the listen, babble, crystallize stages + dialects and the female song correction)",
+            "an early window when the brain is ready to absorb song; a bird that hears nothing then will never sing normally afterward",
+            "each generation learns from the birds nearby, so small differences build up; quote: a genuine local accent",
+            "(inform, with detail: it defines terms like subsong and sensitive period and reports research findings; the ending has a persuasive edge)",
+            "(the scientists studied only one region and mistook it for the whole world; the author ends there so the lesson about listening lands last)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["subsong → ____", "crystallizes → ____", "inherited → ____", "accumulate → ____"],
+          "rows": 1,
+          "answers": ["a young bird's formless first attempts at singing", "settles into a final form and stops changing", "passed down through birth rather than learned", "build up little by little"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a songbird learns like you did. Name two ways the two kinds of learning match.",
+            "Why would a local accent be useful to a sparrow, rather than just an accident?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(both listen first and store the sound, both babble, both practice and correct themselves, both have an early window)",
+            "(opinion with reasoning: it could help a bird recognize neighbors or find a mate suited to the same area)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a bird's song count as culture, the way your accent does? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird That Has to Learn Its Song",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-bird", "templateLabel": "The Bird That Has to Learn Its Song", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bird",
+          "notes": ["Oscines: the true songbirds, roughly half of all bird species", "The syrinx sits at the fork of the windpipe and has two sides", "Stages: sensory, sensorimotor, crystallization", "Zebra finches fix their song for life; canaries keep revising", "Deafening after crystallization slowly wrecks the song", "Female song is widespread and likely ancestral"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Song Is Not in the Egg",
+          "text": "A chicken does not need lessons to cluck. A dove does not need lessons to coo. Those sounds arrive with the body, written into the animal in advance, and they come out correctly the first time whether or not the bird has ever heard another of its kind. A song sparrow is different. A song sparrow that never hears an adult sparrow will grow up and sing something, and that something will be wrong. The song is not in the egg. It has to be learned, and the learning looks remarkably like yours. Start with the instrument, because it is not the one you have. You speak with a larynx, a valve near the top of your throat. Birds have a larynx as well, but it is not what makes their song. They sing with a syrinx, which sits at the far bottom of the windpipe, exactly where the tube forks toward the two lungs. That fork is the point. A syrinx has two sides, and a songbird can drive each side independently, which means one animal can produce two unrelated notes at once and harmonize with itself. A canary running a rapid trill takes minibreaths between syllables, dozens per second, so the phrase never stops for air. The bird is not using a voice. It is playing a two piece wind instrument mounted inside its chest. The learning happens in stages, and the stages have names. First the sensory phase: a young bird listens to nearby adults and stores their song in memory, singing nothing itself. This window does not stay open, and a bird kept in silence through it is permanently marked. Then the sensorimotor phase, which opens with subsong, a rambling, formless babble that sounds uncannily like a human infant working through bababa. The bird then spends weeks converging on the memory, running tens of thousands of repetitions, listening to each attempt and correcting the gap between what it hears and what it stored. Finally the song crystallizes and stops moving. A zebra finch will sing essentially the same song for the rest of its life. A canary, an open ended learner, keeps revising and adds new material each year. The role of hearing is the part that shows the mechanism most clearly. A bird deafened before crystallization cannot converge, because it has no way to compare its output to its target, and its song stays a mess. More tellingly, a bird deafened after crystallization, one that already sings perfectly, slowly falls apart. The song degrades over months. It was never running on autopilot. The bird had been listening to itself the entire time. Because the song is transmitted by listening rather than by inheritance, it behaves like culture, and it does what culture does. It drifts locally. White crowned sparrows in one valley sing a version measurably different from birds a few miles off, since each generation learns from the neighbors it happens to have. These are dialects in the ordinary sense of the word, and a trained ear can often place a bird by its accent. One more thing, and it is a lesson about scientists rather than birds. For most of the last century the textbooks said that birdsong is a male display, sung to hold territory and attract females. That conclusion came from ornithologists working in Europe and North America, where the species around them mostly fit it. When researchers finally surveyed songbirds across the whole family, including the tropics, where the majority of species actually live, female song turned out to be widespread, and the evidence pointed to it being present in the common ancestor. The old rule was never a rule. It was a regional accent in the data, and the people writing it down had only ever listened in one valley."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the title means using the opening paragraph. Cite the sentence that states it directly.",
+            "Contrast a larynx with a syrinx, and explain why the position of the syrinx is what gives a bird two voices.",
+            "The passage calls the deafening evidence more telling. Explain what a bird that already sings perfectly proves when its song falls apart. Cite the line the author uses to make the point.",
+            "Analyze the final paragraph. What is the author doing by ending an article about birds with a claim about scientists, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one sentence summary)",
+            "(the song is learned, not inborn; cite: The song is not in the egg)",
+            "(a larynx sits high in the throat; a syrinx sits at the fork of the windpipe, so it has two sides the bird drives independently)",
+            "(it proves the bird keeps listening to itself and correcting forever, not just while learning; cite: It was never running on autopilot)",
+            "(it turns the dialect idea back on the researchers: they generalized from one region; earned, since the tropics survey evidence is given)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["syrinx → ____", "subsong → ____", "crystallizes → ____", "ancestral → ____"],
+          "rows": 2,
+          "answers": [
+            "the two sided sound organ at the fork of a bird's windpipe",
+            "the rambling, formless babble of a young bird's first attempts",
+            "settles into a fixed final form and stops changing",
+            "present in the common ancestor, there from the beginning"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "A zebra finch fixes its song for life; a canary revises every year. Explain what each strategy would be good for.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a fixed song is a reliable signal of identity and species; an open ended one can track a changing neighborhood or keep impressing mates)",
+            "(student question + a credible source type such as a peer reviewed ornithology study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If a songbird's dialect is passed down by learning and drifts from valley to valley, then birds have culture in the same sense people do. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

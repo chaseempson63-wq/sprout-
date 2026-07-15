@@ -1,0 +1,319 @@
+{
+  "key": "panda",
+  "title": "The Bear That Eats Grass All Day",
+  "blurb": "A meat eater's body, a grass eater's diet, and a wrist bone that does the job of a thumb.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Bear That Eats Grass All Day",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-panda", "templateLabel": "The Bear That Eats Grass All Day", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the panda's black ears." },
+        {
+          "kind": "image",
+          "imageKey": "panda",
+          "notes": ["A panda is a bear", "It is black and white", "It eats a plant called bamboo", "It lives in China", "It sits down to eat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a panda. A panda is a bear. Pandas live in China. They sit in the forest and eat bamboo. Bamboo is a tall green plant. A panda eats a lot of it. It eats all morning. It eats all afternoon. A panda is black and white. It has black ears. It has black spots around its eyes."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bamboo stalks in each row. Write how many in the box.",
+          "emoji": "🎋",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace each word, then say it out loud.", "text": "bear    eat" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its food.",
+          "pairs": [
+            { "left": "panda", "right": "bamboo" },
+            { "left": "bird", "right": "seeds" },
+            { "left": "rabbit", "right": "carrot" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own panda. Give it something to eat.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bear That Eats Grass All Day",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-panda", "templateLabel": "The Bear That Eats Grass All Day", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "panda",
+          "notes": ["Bamboo is a kind of grass", "A panda eats for ten hours a day", "It has a bone in its wrist that works like a thumb", "Pandas live in mountain forests in China", "A baby panda is smaller than your hand"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bear That Eats Grass All Day",
+          "text": "Most bears eat many things. They eat fish and berries and bugs. The panda picked one food. It eats bamboo. Bamboo is a kind of grass, and it grows very tall. A panda eats bamboo for ten hours or more every day. It sits down to eat. It holds the stalk in its paw and pulls off the leaves. A panda has a lump of bone in its wrist. The lump works like a thumb. It helps the panda hold on to the bamboo. No other bear has one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a panda eat?", "How long does a panda eat each day?", "What helps a panda hold the bamboo?"],
+          "rows": 2,
+          "answers": ["bamboo", "ten hours or more", "a lump of bone in its wrist that works like a thumb"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Bamboo is a kind of ____.", "A panda is a kind of ____.", "The panda holds the stalk in its ____.", "The bone in its wrist works like a ____."],
+          "wordBank": ["grass", "bear", "paw", "thumb"],
+          "answers": ["grass", "bear", "paw", "thumb"]
+        },
+        { "kind": "draw", "prompt": "Draw a panda sitting in a bamboo forest. Add some tall stalks around it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bear That Eats Grass All Day",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-panda", "templateLabel": "The Bear That Eats Grass All Day", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "panda",
+          "notes": ["Bamboo is a grass, not a tree", "A panda's gut is short, like a wolf's", "It can eat forty pounds of bamboo a day", "The false thumb is a wrist bone", "Pandas do not hibernate"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bear With the Wrong Stomach",
+          "text": "Almost every bear eats a little of everything. A brown bear will take fish from a river, dig up roots, raid a beehive, and finish with a mouthful of berries. The giant panda gave all of that up. It eats bamboo, and it eats almost nothing else. That choice is strange, because the panda still has the body of a meat eater. Its gut is short and simple, like a wolf's. It has no extra stomach for breaking down plants, the way a cow does. So the panda gets very little food out of every bite. It solves the problem by eating an enormous amount. A grown panda can eat forty pounds of bamboo in a day, and it spends ten to sixteen hours a day chewing. Holding bamboo takes a good grip. A panda has five fingers on each front paw, and none of them is a thumb. Instead it has a knob of bone in its wrist that sticks out and presses against the other fingers. It is not a real thumb. It works anyway."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name three things a brown bear eats.",
+            "Why does the panda get very little food out of each bite of bamboo?",
+            "How does the panda make up for that?",
+            "Why do you think a panda has so little time left for anything except eating?"
+          ],
+          "rows": 2,
+          "answers": [
+            "fish, roots, honey from a beehive, or berries",
+            "its gut is short and simple, built for meat, so it cannot break down plants well",
+            "it eats an enormous amount, up to forty pounds a day",
+            "(inference: bamboo gives so little food that it has to chew for ten to sixteen hours to get enough)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Bear With the Wrong Stomach", "How to Grow Bamboo in a Garden", "The Tallest Mountains in China"],
+          "answers": ["The Bear With the Wrong Stomach"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A panda's gut is short and simple, like a ____.", "A ____ has an extra stomach for breaking down plants.", "The panda's false thumb is a knob of bone in its ____."],
+          "wordBank": ["wolf", "cow", "wrist"],
+          "answers": ["wolf", "cow", "wrist"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about the panda, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bear That Eats Grass All Day",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-panda", "templateLabel": "The Bear That Eats Grass All Day", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "panda",
+          "notes": ["Bamboo is about 99 percent of its diet", "It digests only about a sixth of what it eats", "Burns energy at about a third the normal rate for its size", "Small organs save energy", "The false thumb is a wrist bone called the radial sesamoid", "Cannot hibernate: no fat to spare"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bear With the Wrong Body for Its Job",
+          "text": "The giant panda is a bear that behaves like a cow and is built like a wolf. All three of those things are true at once, and together they make the panda one of the strangest animals alive. Start with the food. Bamboo makes up about ninety-nine percent of a panda's diet. Bamboo is not a tree. It is a grass, and like most grasses it is mostly tough fiber with very little nourishment locked inside. Cows and deer handle food like this with long, complicated guts full of bacteria that spend days fermenting every mouthful. The panda has none of that. Its digestive system is short and simple, the standard equipment of a meat eater, inherited from bear ancestors who hunted. A panda pushes bamboo through that system in about half a day and absorbs roughly a sixth of it. The rest comes out the other end, sometimes forty times a day. The only fix is volume. An adult panda eats between twenty-six and eighty-four pounds of bamboo daily and spends ten to sixteen hours doing it. That leaves little time for anything else, which is why pandas look so unhurried. They cannot afford to hurry. Their bodies run on a famously low budget: one study found a panda burns energy at about a third of the rate expected for an animal its size, closer to a sloth than to a grizzly. Other bears sleep through winter. A panda cannot store enough fat to try, so it walks downhill to warmer slopes and keeps chewing. There is one more piece of mismatched equipment. Pandas have no thumb, but they need to grip bamboo stalks, so a small wrist bone grew outward until it could press against the paw like one. Biologists call it a false thumb. It is the panda making do."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says the panda is built like a wolf. What does it mean by that?",
+            "Explain why a cow gets more out of a mouthful of grass than a panda gets out of a mouthful of bamboo.",
+            "The passage says pandas look unhurried and then says they cannot afford to hurry. Explain what that means.",
+            "Why can a grizzly hibernate when a panda cannot?"
+          ],
+          "rows": 2,
+          "answers": [
+            "its digestive system is short and simple, the standard equipment of a meat eater",
+            "a cow has a long, complicated gut full of bacteria that ferment the plant for days; the panda's short gut absorbs only about a sixth",
+            "(inference: moving costs energy it does not have, so slowness is a strategy, not laziness)",
+            "a grizzly can store enough fat; the panda's food is too poor to bank a surplus"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A bear with a meat eater's body survives on a plant it can barely digest, and its whole life is shaped around that",
+            "Bamboo is the healthiest food in the mountain forests of China",
+            "Pandas are lazy animals that would rather sleep than hunt"
+          ],
+          "answers": ["A bear with a meat eater's body survives on a plant it can barely digest, and its whole life is shaped around that"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["fermenting → ____", "inherited → ____", "mismatched → ____"],
+          "rows": 1,
+          "answers": [
+            "slowly breaking food down with bacteria",
+            "passed down from ancestors",
+            "not suited to each other, wrong for the job"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage calls the false thumb the panda making do. Describe a time you had to make do with the wrong tool for a job. Give two details about how it went.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bear That Eats Grass All Day",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-panda", "templateLabel": "The Bear That Eats Grass All Day", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "panda",
+          "notes": ["Ailuropoda melanoleuca", "T1R1, the meat-taste gene, went dead about 4 million years ago", "Absorbs roughly 17 percent of what it swallows", "Thyroid mutation slows the whole body down", "Bamboo flowers and dies all at once", "Moved from endangered to vulnerable in 2016"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Bear Stopped Eating Meat",
+          "text": "Somewhere around four million years ago, the ancestors of the giant panda quietly lost the ability to enjoy meat. The evidence is written in the panda's genes. Mammals detect the savory flavor of meat using a receptor built from a gene called T1R1. In pandas, that gene is broken. It is still there, sitting in the genome like an unplugged appliance, but the mutations that disabled it are estimated to be around four million years old, which lines up with the fossil evidence for when pandas turned toward bamboo. A panda can still eat meat and will occasionally scavenge it. It simply has no strong reason to want it. What it wanted instead was bamboo, and bamboo is a poor bargain. It is a grass: abundant, evergreen, defended by almost nothing, and available in enormous quantities in the cold mountain forests of central China. It is also mostly indigestible fiber. The panda never evolved the long fermenting gut that cows and deer use to unlock plant matter. It kept the short, simple digestive tract of a carnivore and simply pushes more material through it, absorbing perhaps seventeen percent of what it swallows. Everything else about the panda follows from that thin margin. It eats for ten to sixteen hours a day. Its organs, including its brain, liver, and kidneys, are small for its size, because organs are expensive to run. Its thyroid hormone signaling is damped by a mutation, which slows the whole body down. Measurements show a wild panda burning energy at close to sloth levels, roughly a third of what a bear its size should need. It does not hibernate, because it can never bank the fat. There is one more catch, and it is the dangerous one. Bamboo does something no other staple food does. A bamboo species will flower once, all at the same time, across an entire mountainside, and then the whole stand dies. Pandas used to walk to the next valley. Roads, farms, and towns have cut the forest into islands, and a panda that cannot walk out of a dying stand of bamboo has nowhere to go. China's answer has been to build the corridors back. More than sixty reserves now protect panda forest, and replanted strips of bamboo stitch isolated groups together. It has worked better than most people expected. In 2016 the giant panda was moved off the endangered list and reclassified as vulnerable, with a wild count near 1,864. That is not a rescue. It is a reprieve."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What does the broken T1R1 gene tell scientists, and why does its age matter?",
+            "The passage compares the T1R1 gene to an unplugged appliance. Explain what that comparison is saying.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last three sentences. Why does the author end on a reprieve rather than a rescue?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the switch to bamboo + the low-energy body + the fragmentation threat)",
+            "it shows pandas lost the taste for meat about four million years ago, which lines up with the fossil evidence for when they turned toward bamboo",
+            "(the gene is still present but does nothing; it was switched off, not removed)",
+            "(inform, with detail: it defines terms and gives figures; some persuasive tone in the closing lines)",
+            "(numbers improved but the habitat is still fragmented and bamboo still dies off, so the danger is postponed, not solved)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["scavenge → ____", "indigestible → ____", "damped → ____", "reprieve → ____"],
+          "rows": 1,
+          "answers": [
+            "to eat meat the animal did not kill itself",
+            "not able to be broken down for food",
+            "turned down or weakened",
+            "a delay of something bad, not a cancellation of it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls bamboo a poor bargain and also says it is abundant and defended by almost nothing. Explain how both can be true.",
+            "Why is a food that dies across a whole mountainside at once more dangerous to a panda now than it was a thousand years ago?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it gives very little energy per bite, but there is so much of it and no competition, so a slow enough animal can live on it)",
+            "(inference: the forest is now cut into islands by roads and farms, so a panda cannot walk to the next valley)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the passage says the panda's recovery is a reprieve, not a rescue. Do you agree that a species is only truly saved when its habitat is whole? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bear That Eats Grass All Day",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-panda", "templateLabel": "The Bear That Eats Grass All Day", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "panda",
+          "notes": ["The false thumb is the radial sesamoid, a wrist bone", "Stephen Jay Gould wrote about it in 1980", "A 6-million-year-old fossil relative already had one", "It stays short because it also bears weight when walking", "Meat-taste gene inactive for about 4 million years", "Metabolism idles near sloth levels"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Panda's Thumb, and What It Proves",
+          "text": "In 1980 the biologist Stephen Jay Gould wrote an essay about a bone in a panda's wrist, and he used it to make a point about how evolution actually works. The essay has outlived most of the science writing of its decade, because the bone deserves the attention. A giant panda spends ten to sixteen hours a day stripping leaves from bamboo stalks. That job needs a grip, and a grip needs an opposable thumb. The panda does not have one. Like every other bear, it has five fingers on each front paw, all pointing the same direction, none of them able to swing across and meet the others. Evolution could not simply hand the panda a thumb, because the panda's ancestors had already committed those five fingers to walking. So it improvised. A small bone in the wrist, called the radial sesamoid, grew outward and downward until it formed a padded knob that the panda can press bamboo against. It is not a finger. It has no real joints and it barely moves. It is a repurposed wrist bone doing a passable impression of a thumb. Gould's point was that this is exactly what you should expect. A designer starting fresh would have given the panda a proper thumb. Evolution cannot start fresh. It can only modify what is already there, and the awkwardness of the result is the evidence that no one planned it. Clumsy solutions, he argued, are better proof of evolution than elegant ones. The story has since gotten better. In 2022, researchers described a six-million-year-old fossil of an early panda relative with the same enlarged wrist bone already in place. The false thumb is ancient, older than the modern panda itself. The fossil also suggested why the bone never grew longer, a question that had puzzled people for decades: the same bone helps carry the animal's weight when it walks. Lengthen it and the panda grips better but limps. The false thumb is short because it is doing two jobs, and neither one is allowed to win. That tension runs through the whole animal. The panda is a carnivore by ancestry and by equipment, with the short gut of a bear, living on a grass it can barely digest. It absorbs about seventeen percent of what it eats and compensates by eating almost constantly. Its gene for tasting the savory flavor of meat went dead roughly four million years ago and has sat inert in the genome ever since. Its metabolism idles at close to sloth levels. It cannot hibernate, because there is no surplus to store. For a long time all of this was read as a species in trouble, an evolutionary dead end shuffling toward extinction with or without human help. That reading is wrong, and it matters that it is wrong. The panda held an enormous range across China and Southeast Asia for millions of years on this exact strategy. Bamboo is a spectacular resource: evergreen, abundant, defended by nothing, and ignored by almost every large competitor. A body that runs slowly enough to live on it is not a failure. It is a specialist that solved a hard problem cheaply. What went wrong was not the panda. Its habitat has been cut into fragments by roads, farms, and towns, and fragmentation is uniquely dangerous for an animal whose food dies on purpose. Bamboo flowers synchronously, whole stands at once, and then dies back and takes years to return. A panda in an unbroken forest walks to the next valley. A panda on an island waits. China's response, sixty-odd reserves and replanted corridors linking them, has done what most conservation programs do not. It has worked. The giant panda was moved from endangered to vulnerable in 2016. The animal built entirely out of compromises is still here, still holding its bamboo with a wrist bone, still getting away with it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain Gould's argument about why a clumsy thumb is strong evidence for evolution. Cite the sentence that states it.",
+            "The passage says the false thumb is short because it is doing two jobs. Explain the trade-off in your own words.",
+            "Identify the turn in the passage: where does the author stop describing and start arguing, and how is the shift signaled?",
+            "The author writes that the reading of the panda as an evolutionary dead end is wrong, and that it matters that it is wrong. Analyze why the author thinks it matters, and decide whether the passage earns that claim."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(evolution can only rework existing parts, so an awkward result shows no designer; cite: Clumsy solutions, he argued, are better proof of evolution than elegant ones)",
+            "(the same bone grips bamboo and carries body weight; making it better at one makes it worse at the other, so it stays a compromise)",
+            "(at That reading is wrong, and it matters that it is wrong; a blunt short claim pivots the passage from description to argument)",
+            "(calling the panda doomed shifts blame off human habitat destruction and onto the animal; supported by its millions of years of success and the fragmentation evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["repurposed → ____", "inert → ____", "fragmentation → ____", "synchronously → ____"],
+          "rows": 2,
+          "answers": [
+            "taken from one use and put to a different one",
+            "inactive, doing nothing",
+            "the breaking of a habitat into separated pieces",
+            "all at the same time"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls bamboo a spectacular resource and elsewhere says the panda absorbs only about seventeen percent of it. Explain how a food can be both a bad meal and a good strategy.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(low value per bite, but unlimited supply and no competitors, so a low-energy specialist wins by volume)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal as poorly built for its own diet as the panda was always going to fail, and conservation is only delaying the inevitable. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "key": "cow",
+  "title": "The Cow That Cannot Digest Grass",
+  "blurb": "No cow has ever been able to digest a blade of grass. The trick is who she keeps inside her.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Cow That Cannot Digest Grass",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-cow", "templateLabel": "The Cow That Cannot Digest Grass", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the cow's big soft nose." },
+        {
+          "kind": "image",
+          "imageKey": "cow",
+          "notes": ["A cow eats grass all day", "Her tongue is long and rough", "She chews and chews and chews", "She lies down to rest in the sun"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a cow. The cow eats grass all day. She has a long rough tongue. She wraps it around the grass and pulls. Chew, chew, chew. A cow chews and chews and chews. When she is full, she lies down in the sun. Then she chews some more. The cow says moo. She is very good at eating grass."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the flowers in each row. Write how many in the box.",
+          "emoji": "🌼",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "cow    grass" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its food.",
+          "pairs": [
+            { "left": "cow", "right": "grass" },
+            { "left": "bee", "right": "flower" },
+            { "left": "bird", "right": "seed" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own cow. Give her a field of grass to eat.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Cow That Cannot Digest Grass",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-cow", "templateLabel": "The Cow That Cannot Digest Grass", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "cow",
+          "notes": ["A cow eats fast and chews later", "The lump she chews is called cud", "She chews for about eight hours a day", "She has no top front teeth", "She has a hard pad up there instead"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cow Who Eats Twice",
+          "text": "A cow eats grass fast. She does not chew it much. She swallows it in a big green lump. Later the cow lies down. She is done eating, but she is not done. Up comes the lump of grass, back into her mouth. Now she chews it slowly. This lump is called cud. Chewing it again is called chewing the cud. A cow chews her cud for about eight hours every day. Her jaw goes around and around. Grass is tough. Chewing it twice helps break it down."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How does a cow eat her grass at first?", "What is the lump of grass called?", "How long does a cow chew her cud each day?"],
+          "rows": 2,
+          "answers": ["fast, without chewing it much", "it is called cud", "about eight hours every day"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A cow eats her grass very ____.", "The lump she chews again is called ____.", "She chews her cud for about eight ____.", "Grass is very ____ to break down."],
+          "wordBank": ["fast", "cud", "hours", "tough"],
+          "answers": ["fast", "cud", "hours", "tough"]
+        },
+        { "kind": "draw", "prompt": "Draw the cow lying down, chewing her cud. Add the field around her.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Cow That Cannot Digest Grass",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-cow", "templateLabel": "The Cow That Cannot Digest Grass", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "cow",
+          "notes": ["Her stomach has four chambers, not one", "The first one is called the rumen", "The rumen holds about as much as a bathtub", "She can make forty thousand jaw movements a day", "Grass is built out of stiff stuff called cellulose"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Four Rooms",
+          "text": "Grass is one of the toughest foods on Earth. It is built out of a stiff material called cellulose, and that is what makes a blade of grass stand up straight instead of flopping over. Most animals cannot break cellulose down at all. A cow can, and her secret is her stomach. It is not one bag. It is four rooms in a row. The first room is called the rumen, and it is enormous. It can hold about as much as a bathtub. Grass goes in there and sits, warm and wet, while it softens. Then the cow does something odd. She brings a lump of that softened grass back up into her mouth and chews it all over again. The lump is called cud. She may chew her cud for eight hours a day, making as many as forty thousand jaw movements, grinding the grass finer and finer. The mash then moves on through the other three rooms. Each one takes out something the cow needs. By the end, tough grass has become milk and muscle and bone. A cow can spend half her life chewing, and she does it without any upper front teeth. She has a hard pad up there instead."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is cellulose, and what does it do for a blade of grass?",
+            "How many rooms does a cow's stomach have, and what is the first one called?",
+            "What is cud, and what does the cow do with it?",
+            "Why do you think chewing the grass twice helps the cow?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a stiff material in grass that makes the blade stand up straight",
+            "four rooms; the first is called the rumen",
+            "a lump of softened grass she brings back up and chews again",
+            "(inference: grass is tough, so grinding it finer helps break it down)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Inside a Cow's Four Stomach Rooms", "How to Milk a Cow by Hand", "The Tallest Grass in the World"],
+          "answers": ["Inside a Cow's Four Stomach Rooms"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Grass is built out of stiff ____.", "The first room of the stomach is the ____.", "The lump she chews again is called ____."],
+          "wordBank": ["cellulose", "rumen", "cud"],
+          "answers": ["cellulose", "rumen", "cud"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a cow eats, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Cow That Cannot Digest Grass",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-cow", "templateLabel": "The Cow That Cannot Digest Grass", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cow",
+          "notes": ["No cow can digest grass on her own", "Billions of microbes live in her rumen", "They own the enzyme she lacks", "She absorbs the acids they leave behind", "Later she digests the microbes themselves", "That is where most of her protein comes from"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Rents Out Its Digestion",
+          "text": "Here is a strange fact about cows. A cow cannot digest grass. Not one blade. No cow has ever produced the chemical needed to break down cellulose, the stiff material that makes a grass stem stand up straight. Neither can you, which is why a bowl of lawn clippings would leave you starving. So how does a cow live on a field of the stuff? She does not digest her food. She rents out the job. Inside the rumen, the first and largest chamber of her stomach, live billions upon billions of microbes: bacteria, fungi, and single celled creatures far too small to see. A single teaspoon of rumen fluid can hold more of them than there are people on Earth. The cow supplies them with a warm, wet, airless tank and a steady delivery of chopped grass. They supply her with the one thing she lacks, the enzyme that cuts cellulose apart. The microbes eat the grass. As they feed, they release simple acids into the fluid around them, and the cow absorbs those acids straight through the wall of her rumen. Those acids, not the grass, are her actual food. She is not living on the meadow. She is living on what her tenants leave behind. Then comes the part that seems unfair. The mash flows out of the rumen into the later chambers, where the cow digests the microbes themselves. They are where most of her protein comes from. She grows them, harvests them, and eats them, over and over, for her whole life."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The title says the cow rents out her digestion. Explain what that means in your own words.",
+            "What does the cow give the microbes, and what do they give her?",
+            "The passage says the acids, not the grass, are her actual food. Explain why that is true.",
+            "Why might it be an advantage for an animal to eat a food almost nothing else can eat?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(she cannot break down grass herself, so microbes inside her do the job for her)",
+            "she gives them a warm, wet, airless tank and chopped grass; they give her the enzyme that cuts cellulose apart",
+            "she cannot break down cellulose, so she absorbs the acids the microbes release instead",
+            "(inference: less competition for food, and she can live on land that grows nothing else)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A cow survives on grass by housing microbes that digest it for her, then digesting the microbes too",
+            "Cows are the largest farm animal in the world",
+            "Grass is the healthiest food a person can eat"
+          ],
+          "answers": ["A cow survives on grass by housing microbes that digest it for her, then digesting the microbes too"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["cellulose → ____", "enzyme → ____", "microbes → ____", "tenants → ____"],
+          "rows": 1,
+          "answers": [
+            "the stiff material that makes a grass stem stand up straight",
+            "the chemical that cuts cellulose apart",
+            "living things far too small to see, like bacteria and fungi",
+            "(the microbes; renters who live inside her rumen)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is the cow using the microbes, or are the microbes using the cow? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Cow That Cannot Digest Grass",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-cow", "templateLabel": "The Cow That Cannot Digest Grass", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cow",
+          "notes": ["Every cow descends from a wild animal called the aurochs", "The last aurochs died in Poland in 1627", "Cattle were domesticated about 10,500 years ago", "Genetics point to roughly 80 founding wild females", "About 1.5 billion cattle are alive today", "Grass grows where wheat will not"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Eighty Animals Became a Billion",
+          "text": "Walk past a field and you will see an animal so ordinary it is almost invisible. There are roughly one and a half billion cattle alive right now, on every continent except Antarctica. It is easy to assume they have always been there, standing around, waiting for us. They have not. Every cow on Earth descends from a wild animal called the aurochs. An aurochs bull stood nearly six feet at the shoulder, carried horns that swept forward like a dare, and was fierce enough that Roman writers treated hunting one as a test of nerve. Around ten thousand five hundred years ago, in the hills of the Near East, people began keeping them instead of hunting them. Genetic studies suggest that the entire taurine cattle line traces back to a founding group of only about eighty wild females. Eighty animals became a billion and a half. The aurochs itself did not survive the arrangement. Forests were cleared, herds were hunted, and the last known aurochs died in 1627, in the Jaktorow Forest in Poland. The wild original is gone. Its tame descendants are everywhere. What made cattle worth keeping was not their size alone. It was a trick they had perfected long before people arrived: turning grass into food. Grass grows on land that will not grow wheat. It survives drought, frost, and grazing, and it comes back. But grass is armored in cellulose, and no mammal can break cellulose down. The cow gets around that by carrying a fermentation tank inside her body. Her rumen holds about fifty gallons of warm fluid packed with microbes that can cut cellulose apart. They digest the grass, she absorbs the acids they release, and later she digests the microbes themselves. That is the real bargain. A cow converts a landscape people cannot eat into milk, meat, leather, and pulling power. For most of history she was also the tractor. Some human populations changed in response: the ability to drink milk as an adult spread through herding peoples, because those who could do it got through hungry years better than those who could not. We did not simply tame the cow. Over ten thousand years we reshaped her, and she reshaped us."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What was the aurochs, and what happened to it? Quote the passage to support your answer.",
+            "Explain why grass was the trait that made cattle worth keeping.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentence summary covering the aurochs, domestication, and grass into food)",
+            "the wild ancestor of all cattle, hunted and cleared until it died out; quote: the last known aurochs died in 1627",
+            "grass grows on land that will not grow wheat, and the cow can turn it into food people can use",
+            "(inform, with detail: it defines terms and gives dates and figures, though the ending is persuasive in tone)",
+            "(domestication changed both species; the author ends there so the reader sees it went both ways)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["aurochs → ____", "domesticated → ____", "fermentation → ____", "descends → ____"],
+          "rows": 1,
+          "answers": [
+            "the extinct wild ancestor of all cattle",
+            "(kept and bred by people rather than living wild)",
+            "the process where microbes break food down in a warm, airless tank",
+            "comes down from an ancestor"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says eighty animals became a billion and a half. What does that suggest about how much variety today's cattle carry?",
+            "The author says we reshaped her, and she reshaped us. Give one example of each from the passage."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: a small founding group means limited genetic variety across a huge population)",
+            "(we bred them from the aurochs into today's cattle; they changed us by spreading the ability to drink milk as adults)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was domestication a fair deal for the cow? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Cow That Cannot Digest Grass",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-cow", "templateLabel": "The Cow That Cannot Digest Grass", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cow",
+          "notes": ["Bos taurus, descended from the wild aurochs", "The rumen: a 50 gallon fermentation vat kept at body heat", "Microbes make the enzyme; the cow never has", "She lives on their waste acids, then digests them", "Methanogens in the rumen make methane, released by belching", "About 1.5 billion cattle alive, all of it our doing"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Borrowed Stomach",
+          "text": "Consider what a cow is actually doing when she stands in a field, apparently doing nothing. She is eating grass, which sounds unremarkable until you look at grass closely. A blade of grass stands upright because its cells are wrapped in cellulose, a molecule built from sugar rings locked together in a chain so stable that it works as structural material. Wood is mostly cellulose. Cotton is nearly pure cellulose. Paper is cellulose. It is one of the most abundant substances on the planet, it is packed with energy, and almost nothing with a backbone can open it. The cow certainly cannot. No cow has ever produced the enzyme that cuts a cellulose chain, and neither have you. To a vertebrate, a meadow is a locked pantry. The cow solves this by not solving it. She subcontracts. The first chamber of her four part stomach, the rumen, is a fifty gallon fermentation vat held at body heat with the oxygen kept out, and it is not empty. It teems. A single drop of rumen fluid holds billions of bacteria, along with fungi, protozoa, and archaea. Those organisms do own the enzyme. The cow provides the tank, the warmth, the constant stirring, and the raw material. Her tenants provide the chemistry. Then the arrangement gets stranger. As the microbes ferment cellulose, they release short carbon chains called volatile fatty acids, and the cow absorbs them directly through the rumen wall. Those acids supply most of her energy. She is not fueled by grass. She is fueled by microbial waste. And when the fermented mash finally moves into her later chambers, she digests the microbes themselves, which is where most of her protein comes from. She grows them, then eats them. A cow is less an animal that eats plants than a farmer running the same farm inside herself. The cud is part of the machinery. Grass swallowed quickly comes back up in lumps to be reground, up to forty thousand jaw movements a day, because microbes work on surface area and chewing creates more of it. A cow may spend eight hours a day at it. She does this without upper front teeth, using a hard pad instead, and it is enough. There is a cost, and it is why cattle turn up in climate reports. Fermentation without oxygen produces methane. The archaea in the rumen make it, and the cow disposes of it by belching, roughly once a minute, all day long. Methane traps far more heat in the atmosphere than the same weight of carbon dioxide does over the twenty years after it is released. With around one and a half billion cattle alive, that belching adds up to one of the largest single sources of methane on Earth. Here is the part worth sitting with. One and a half billion is not a natural number. Cattle descend from the aurochs, a wild animal domesticated in the Near East roughly ten thousand five hundred years ago and hunted out of existence by 1627. Every cow alive is the result of a decision people made, and repeated for four hundred generations, to keep the animals that turned useless land into milk. The rumen is ancient. The scale is ours."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the author calls a meadow a locked pantry, and cite the evidence for the claim.",
+            "The passage says she is not fueled by grass. Explain what she is fueled by, and why that distinction matters.",
+            "Identify the shift in the passage: where does it turn from wonder to cost, and how does the author signal it?",
+            "The passage ends: The rumen is ancient. The scale is ours. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one sentence summary)",
+            "(grass holds energy that vertebrates cannot unlock; cite: almost nothing with a backbone can open it)",
+            "(volatile fatty acids released by the microbes; it shows her digestion is outsourced, not her own)",
+            "(at There is a cost; a blunt short clause pivots the piece from the biology to the climate figure)",
+            "(it separates the ancient biology from the human scale, placing responsibility on us; supported by the 1.5 billion figure and the domestication history)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["cellulose → ____", "subcontracts → ____", "ferment → ____", "vertebrate → ____"],
+          "rows": 2,
+          "answers": [
+            "a stable chain of locked sugar rings that plants use as structural material",
+            "hands a job to someone else rather than doing it yourself",
+            "to break food down with microbes in a warm, airless space",
+            "an animal with a backbone"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that a cow is less an animal that eats plants than a farmer running the same farm inside herself. Evaluate that comparison: what does it capture, and where does it break down?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it captures that she cultivates and harvests her microbes; it breaks down because she does not choose or plan any of it)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The methane problem is the cow's fault. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

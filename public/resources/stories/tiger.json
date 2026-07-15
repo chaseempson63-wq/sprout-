@@ -1,0 +1,319 @@
+{
+  "key": "tiger",
+  "title": "The Tiger With Stripes on Its Skin",
+  "blurb": "The biggest cat alive. Its stripes go all the way down to its skin, and no two tigers wear the same pattern.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Tiger With Stripes on Its Skin",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-tiger", "templateLabel": "The Tiger With Stripes on Its Skin", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the tiger's stripes with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "tiger",
+          "notes": ["It is the biggest cat", "Orange fur with black stripes", "Its feet are soft and quiet", "It likes to swim"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a tiger. A tiger is a big cat. It has orange fur. It has black stripes. The tiger walks in the tall grass. Its stripes look like the grass. So the tiger is hard to see. A tiger has soft feet. It can walk with no sound. A tiger likes to swim. Most cats do not."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stripes in each row. Write how many in the box.",
+          "emoji": "🐾",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "big    cat" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "tiger", "right": "stripes" },
+            { "left": "bird", "right": "wings" },
+            { "left": "fish", "right": "fins" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own tiger. Give it lots of stripes.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tiger With Stripes on Its Skin",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-tiger", "templateLabel": "The Tiger With Stripes on Its Skin", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "tiger",
+          "notes": ["The biggest cat in the world", "Bigger than a lion", "It hunts by itself", "Baby tigers are called cubs", "Most tigers live in Asia"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tiger With Stripes on Its Skin",
+          "text": "A tiger is the biggest cat in the world. It is bigger than a lion. A tiger has orange fur with black stripes. The stripes help it hide. In tall grass, the stripes look like shadows. A tiger hunts by itself. It creeps up slow and low. Its paws have soft pads, so it makes no sound. Then it jumps. Most tigers live in forests in Asia. Baby tigers are called cubs. A cub stays with its mom for about two years. She teaches it how to hunt."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the biggest cat in the world?", "What do the stripes help the tiger do?", "How long does a cub stay with its mom?"],
+          "rows": 2,
+          "answers": ["the tiger", "hide in the tall grass", "about two years"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A tiger has orange fur with black ____.", "Soft pads on its paws help it make no ____.", "A baby tiger is called a ____.", "Most tigers live in forests in ____."],
+          "wordBank": ["stripes", "sound", "cub", "Asia"],
+          "answers": ["stripes", "sound", "cub", "Asia"]
+        },
+        { "kind": "draw", "prompt": "Draw a tiger creeping through the tall grass. Add trees behind it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tiger With Stripes on Its Skin",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-tiger", "templateLabel": "The Tiger With Stripes on Its Skin", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "tiger",
+          "notes": ["Lions live in groups, tigers live alone", "A deer cannot see the color orange", "Only about one hunt in ten works", "Shave a tiger and the stripes are still there", "Its paws have thick, silent pads"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cat That Hunts Alone",
+          "text": "Lions live in groups called prides. Tigers do not. A tiger lives alone, walks alone, and hunts alone. The only tigers that share a home are a mother and her cubs. A tiger is built for one thing: getting close without being noticed. Its orange coat with black stripes looks bright to you, but a deer cannot see the color orange the way you can. To a deer, a tiger in tall grass looks like grass. The tiger's paws have thick pads, so it moves in silence. It creeps closer and closer, sometimes for an hour, until it is only a few steps away. Then it explodes forward. Even so, the tiger usually fails. Deer are fast and they listen well. Only about one hunt in ten ends with a meal. A tiger may go days without eating, then eat a huge amount at once. The strangest fact is this. If you shaved a tiger, it would still have stripes. The pattern is in its skin, not just its fur."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How is a tiger different from a lion?",
+            "Why can a tiger move without making a sound?",
+            "How many hunts out of ten end with a meal?",
+            "Why do you think a tiger creeps for a whole hour instead of just running at the deer?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a lion lives in a group called a pride, but a tiger lives and hunts alone",
+            "its paws have thick pads that move in silence",
+            "about one hunt in ten",
+            "(inference: deer are fast, so the tiger has to get very close first or it will lose the chase)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Cat That Hunts Alone", "How to Train a House Cat", "The Tallest Grass in the World"],
+          "answers": ["The Cat That Hunts Alone"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A group of lions is called a ____.", "A deer cannot see the color ____.", "The stripe pattern is in the tiger's ____, not just its fur."],
+          "wordBank": ["pride", "orange", "skin"],
+          "answers": ["pride", "orange", "skin"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about the tiger, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tiger With Stripes on Its Skin",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-tiger", "templateLabel": "The Tiger With Stripes on Its Skin", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tiger",
+          "notes": ["An ambush hunter, not a chaser", "You have three color sensors, a deer has two", "Disruptive coloration breaks up its outline", "Stripes are unique, like a fingerprint", "Camera traps count tigers by their stripes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Hidden in Plain Orange",
+          "text": "Here is a puzzle. The tiger is an ambush hunter. Everything about it is built for going unseen: silent pads on its feet, patience that can last an hour, a body that can cross a wide gap in one leap. And then it wears bright orange. The answer is that the tiger is not hiding from you. It is hiding from deer and wild pigs, and their eyes are not built like yours. You have three kinds of color sensors in your eyes. A deer has two. It cannot tell orange from green. To a deer, a tiger creeping through tall grass is a gray-green smudge broken up by black bars. The stripes finish the trick. They cut the outline of a huge cat into pieces, so the deer's brain never assembles a tiger out of them. Scientists call this disruptive coloration. The stripes do a second job. No two tigers wear the same pattern, the way no two people share a fingerprint. Researchers hide cameras along forest trails and count individual tigers by their stripes, and that is how we know how few are left. Those stripes are not only fur. The pattern is printed into the tiger's skin as well. Shave one, and the design is still there."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is the puzzle the passage opens with?",
+            "Explain why bright orange fur still works as camouflage.",
+            "How do researchers know how many tigers there are?",
+            "The passage says a deer's brain never assembles a tiger out of the pieces. What does that tell you about how seeing actually works?"
+          ],
+          "rows": 2,
+          "answers": [
+            "an animal built entirely to go unseen wears a bright color",
+            "the deer it hunts cannot tell orange from green, so the coat looks gray-green to them",
+            "they hide cameras on forest trails and identify each tiger by its unique stripe pattern",
+            "(inference: the brain has to put shapes together, so breaking up an outline can hide something in plain sight)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A tiger's stripes hide it from the animals it hunts and also identify it like a fingerprint",
+            "Deer have better eyesight than any other forest animal",
+            "Orange is the most common color in the forest"
+          ],
+          "answers": ["A tiger's stripes hide it from the animals it hunts and also identify it like a fingerprint"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["ambush → ____", "disruptive coloration → ____", "individual (tigers) → ____"],
+          "rows": 1,
+          "answers": [
+            "a surprise attack made from hiding",
+            "a pattern that breaks up an animal's outline so it is hard to recognize",
+            "one particular tiger, told apart from all the others"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: a deer and a person look at the same tiger and see two different things. Explain who sees what, and why. Use two details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tiger With Stripes on Its Skin",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-tiger", "templateLabel": "The Tiger With Stripes on Its Skin", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tiger",
+          "notes": ["Panthera tigris, the largest living cat", "An Amur male can pass six hundred pounds", "One male may hold four hundred square miles", "Caspian, Javan and Bali tigers are extinct", "Wild tigers now number around five thousand five hundred", "They hold about five percent of their old range"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cat That Is Losing Its Ground",
+          "text": "A tiger is a contradiction that works. It is the largest cat alive, and an Amur tiger from the forests of the Russian Far East can pass six hundred pounds. It is also, when it wants to be, invisible. The invisibility is not luck. It is arithmetic. Your eyes carry three kinds of color sensor. A deer carries two, and without the third it cannot separate orange from green. The tiger's coat, so loud to you, dissolves into the grass for the animal that matters. The black bars finish the job by breaking the cat's outline into fragments, a trick biologists call disruptive coloration. Add pads that silence a four-hundred-pound footfall and the patience to close a hundred paces over an hour, and you have an ambush that works about one time in ten. That failure rate is not a flaw. It is the price of hunting animals that are faster than you. Almost everything about the tiger is solitary. Lions cooperate; tigers do not. An adult tiger holds a territory and patrols it alone, marking the edges with scent and clawed trees. In the Russian Far East, where prey is thin, a single male may claim more than four hundred square miles. The only lasting company a tiger keeps is a mother with her cubs, and even that ends after about two years, when she drives them off to find ground of their own. Which brings us to the trouble. A solitary animal that needs hundreds of square miles of forest, and a full-grown deer every week or so, needs one thing above all: space. Space is what has been taken. Tigers once ranged from Turkey to the eastern coast of Russia and south to Bali. Three kinds are already gone forever. Today wild tigers occupy roughly five percent of the land they once held, and they number somewhere near five thousand five hundred. Here is the fact that should stop you. There are thousands of tigers living in cages, back yards, and roadside attractions in the United States alone, a captive population that rivals the number walking free in the whole world. The species is not rare because it failed. It is rare because we took the ground it was standing on."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The author says the tiger's invisibility is arithmetic, not luck. Explain what the arithmetic is.",
+            "Why does the author say a one-in-ten success rate is not a flaw? Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering camouflage + solitary territory + habitat loss)",
+            "(a deer has two color sensors instead of three, so it cannot separate orange from green, and the stripes break up the outline)",
+            "it is the cost of hunting faster animals; quote: the price of hunting animals that are faster than you",
+            "(both: it informs with facts about eyes and territory, then turns persuasive in the last paragraph)",
+            "(the tiger is endangered because of human choices, not its own weakness; ending there puts the responsibility on the reader)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["solitary → ____", "territory → ____", "captive → ____", "prey → ____"],
+          "rows": 1,
+          "answers": [
+            "living alone rather than in a group",
+            "an area an animal claims, patrols, and defends",
+            "kept by people, not living free",
+            "the animals a hunter eats"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls the tiger a contradiction that works. Explain the contradiction in your own words.",
+            "Why is a solitary animal that needs four hundred square miles harder to protect than a herd animal that needs four?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it is the largest cat alive and yet almost impossible to see)",
+            "(inference: saving it takes an enormous protected area, and small parks cannot hold even a few adults)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is a tiger in a cage still doing the job of a tiger? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tiger With Stripes on Its Skin",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-tiger", "templateLabel": "The Tiger With Stripes on Its Skin", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tiger",
+          "notes": ["Panthera tigris, the largest living cat", "Hind legs longer than front legs, loaded like a spring", "Deer are dichromats: no sensor for red or orange", "Disruptive coloration slices up the outline", "Stripes are printed into the skin, not just the fur", "Three tiger populations are already extinct"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ambush and the Arithmetic",
+          "text": "Start with the contradiction, because everything interesting about the tiger lives inside it. Here is an animal built entirely for concealment. Its feet are padded so that four hundred pounds of cat can cross dry leaves without a sound. It will hold a crouch for an hour to gain twenty paces. Its hind legs are longer than its front legs, loading the body like a spring. And it carries all of this equipment while wearing bright orange. The contradiction dissolves the moment you stop asking who the tiger is hiding from. It is not hiding from us. Human eyes carry three kinds of color sensor; a deer's eyes carry two, and the missing one is the one that reads red and orange. A deer looking at a tiger in dry grass is not looking at orange at all. It is looking at a dull green-gray shape, and the black bars are already at work on that shape, slicing the outline of an enormous predator into disconnected fragments that the deer's brain never bothers to assemble. Biologists call the technique disruptive coloration. The tiger is not badly camouflaged. It is camouflaged for the correct audience. The stripes carry a second signature that the tiger never intended. No two tigers wear the same pattern. Field researchers string camera traps along forest paths and identify individuals by their bars, the way a detective works a fingerprint, and it is precisely this method that gives us our census. The pattern also runs deeper than fur: it is printed into the skin underneath, so a shaved tiger is still a striped tiger. Now the arithmetic, which is less charming. All that engineering produces a hunt that succeeds roughly one time in ten. A tiger is not a machine that catches deer; it is a machine that fails nine times and survives anyway, because the tenth attempt feeds it for days. To run those odds, a tiger needs prey in quantity, and to hold prey in quantity it needs land. An adult patrols alone, marking boundaries with scent and clawed trunks, tolerating no rival. In the Russian Far East, where deer are scarce, one male's territory can exceed four hundred square miles. That number is the whole conservation problem stated in one line. You cannot keep a solitary animal that requires four hundred square miles by protecting a park of forty. Tigers once ran from eastern Turkey to the Pacific coast of Russia and south through the islands to Bali. Three of those populations, the Caspian, the Javan, and the Bali tigers, are gone and are not coming back. What remains occupies roughly five percent of that old map, and the whole wild species now numbers around five thousand five hundred animals, fewer than the people in a small town. There is a tempting way to feel better about this. Tigers breed readily in captivity; thousands live in zoos, private compounds, and roadside attractions, and in the United States alone the captive population rivals the wild one worldwide. But a tiger in a cage is not doing any of the things described above. It is not holding a territory, not running the ten-to-one odds, not keeping deer numbers in check across a forest. It is a tiger-shaped animal in a box. The species is not endangered because its design failed. Every part of the design still works. It is endangered because the design requires room, and room is the one thing we have not been willing to leave it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the author says the tiger is not badly camouflaged. Cite the exact phrase that resolves the contradiction.",
+            "The author calls the tiger a machine that fails nine times and survives anyway. Explain what that reframing is doing to the idea of failure.",
+            "Identify the shift in the passage: where does it turn from wonder to warning, and how does the author signal it?",
+            "Analyze the last three sentences. What claim is the author making about blame, and has the passage earned it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering camouflage, solitary range, and habitat loss)",
+            "(its camouflage is aimed at deer, which cannot see orange; cite: It is camouflaged for the correct audience)",
+            "(a one-in-ten hunt sounds like failure, but the author reframes it as the working design; cite: a machine that fails nine times and survives anyway)",
+            "(at Now the arithmetic, which is less charming; a blunt short clause signals the pivot, and That number is the whole conservation problem stated in one line completes it)",
+            "(the author shifts blame from the animal to people who took its space; supported by the range loss, the extinct populations, and the captive-versus-wild comparison)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["concealment → ____", "disruptive coloration → ____", "census → ____", "solitary → ____"],
+          "rows": 2,
+          "answers": [
+            "the act of staying hidden",
+            "a pattern that slices an outline into fragments so a viewer cannot recognize the whole shape",
+            "an official count of a population",
+            "living and hunting alone rather than in a group"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that a caged tiger is not keeping deer numbers in check across a forest. Explain why that matters to the whole forest, not just to the tiger.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a top predator limits prey numbers; without it, deer can strip the plants and the whole system shifts)",
+            "(student question + a credible source type, such as a field survey or a wildlife biologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Breeding tigers in captivity is enough, because the species survives either way. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

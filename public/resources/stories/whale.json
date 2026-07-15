@@ -1,0 +1,320 @@
+{
+  "key": "whale",
+  "title": "The Biggest Animal That Ever Lived",
+  "blurb": "The blue whale is larger than any dinosaur, breathes air like you do, and its family once walked on land.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Biggest Animal That Ever Lived",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-whale", "templateLabel": "The Biggest Animal That Ever Lived", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Show me how big the whale is with your arms." },
+        {
+          "kind": "image",
+          "imageKey": "whale",
+          "notes": ["It is the biggest animal on Earth", "It lives in the sea", "It breathes air like you", "A baby whale is called a calf"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a whale. The whale is very big. The whale lives in the sea. A whale is not a fish. A whale breathes air, just like you. It comes up to the top of the water. It blows out a puff of misty air. Then it takes a big breath and goes back down. A baby whale drinks milk from its mom. It swims close beside her all day."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the whales in each row. Write how many in the box.",
+          "emoji": "🐋",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "big    swim" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "whale", "right": "the sea" },
+            { "left": "bird", "right": "the sky" },
+            { "left": "worm", "right": "the dirt" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own whale. Add the puff of misty air on top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Biggest Animal That Ever Lived",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-whale", "templateLabel": "The Biggest Animal That Ever Lived", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "whale",
+          "notes": ["A whale is a mammal, not a fish", "It breathes through a blowhole", "The blowhole is on top of its head", "A baby whale drinks its mom's milk", "A blue whale is longer than a school bus"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Whale That Breathes Air",
+          "text": "A whale looks like a fish, but it is not one. A fish breathes underwater with gills. A whale cannot do that. A whale has lungs, the same as you do. It must come up to the top of the sea to breathe. A whale breathes through a hole on top of its head. The hole is called a blowhole. When the whale comes up, it pushes out old air in a warm, misty spout. Then it takes a fresh breath and dives. A baby whale is called a calf. The calf drinks its mom's milk and grows fast. Some whales grow bigger than a school bus."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a fish breathe with?", "Where is the whale's blowhole?", "What does a baby whale drink?"],
+          "rows": 2,
+          "answers": ["gills", "on top of its head", "its mom's milk"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A whale breathes with its ____.", "The hole on its head is called a ____.", "A baby whale is called a ____.", "A whale must come up to ____."],
+          "wordBank": ["lungs", "blowhole", "calf", "breathe"],
+          "answers": ["lungs", "blowhole", "calf", "breathe"]
+        },
+        { "kind": "draw", "prompt": "Draw a whale and her calf swimming together. Add some fish and waves.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Biggest Animal That Ever Lived",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-whale", "templateLabel": "The Biggest Animal That Ever Lived", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "whale",
+          "notes": ["A blue whale can reach almost 100 feet", "Its heart is about the size of a golf cart", "Its tongue weighs as much as an elephant", "It eats krill, a shrimp the size of your thumb", "Baleen is made of keratin, like your fingernails"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Biggest Animal Eats the Smallest Food",
+          "text": "The blue whale is the biggest animal that has ever lived on Earth. It is bigger than any dinosaur. A grown blue whale can be almost a hundred feet long. Its heart is about the size of a golf cart. Its tongue weighs as much as an elephant. You might think an animal that huge eats huge food. It does not. The blue whale eats krill, and a krill is a pink shrimp about the size of your thumb. To get enough, the whale takes an enormous gulp of seawater, krill and all. Then it pushes the water back out through hundreds of stiff plates that hang in its mouth. Those plates are called baleen. They are made of keratin, the same stuff as your fingernails. The water streams out and the krill stay behind. A blue whale can eat four tons of krill in one day. That is millions of tiny animals, swallowed by the largest heart in the ocean."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does a blue whale eat?",
+            "What are the stiff plates in its mouth called?",
+            "How does the whale get the seawater back out of its mouth?",
+            "Why do you think a blue whale has to eat so much krill every day?"
+          ],
+          "rows": 2,
+          "answers": [
+            "krill, a pink shrimp about the size of your thumb",
+            "baleen",
+            "it pushes the water out through the baleen and the krill stay behind",
+            "(inference: krill are tiny and the whale's body is enormous, so it needs millions of them)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Biggest Animal Eats the Smallest Food", "How to Catch a Shark", "The Deepest Trench in the Sea"],
+          "answers": ["The Biggest Animal Eats the Smallest Food"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A blue whale is bigger than any ____.", "The stiff plates in its mouth are called ____.", "Baleen is made of ____, the same as your fingernails."],
+          "wordBank": ["dinosaur", "baleen", "keratin"],
+          "answers": ["dinosaur", "baleen", "keratin"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the blue whale, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Biggest Animal That Ever Lived",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-whale", "templateLabel": "The Biggest Animal That Ever Lived", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "whale",
+          "notes": ["Whales are mammals, not fish", "Their ancestors walked on land about 50 million years ago", "The closest living relative of a whale is the hippopotamus", "Whales still carry small leftover hip bones", "A whale embryo grows leg buds, then loses them"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Whale That Used to Walk",
+          "text": "Fifty million years ago, an animal about the size of a wolf walked along the rivers of what is now Pakistan. It had four legs, and its feet ended in small hooves. It drank fresh water and hunted in the shallows. Scientists named it Pakicetus, and they can tell from one strange bone in its ear that it was not a wolf at all. It was an early whale. What happened next took millions of years. Generation by generation, the animals that swam best had the most young. Legs shrank. Back feet all but vanished. The tail widened into two flat blades called flukes. The nostrils, which began at the tip of the snout like a dog's nose, crept slowly backward until they sat on top of the head. That is why a whale can breathe without lifting its face out of the sea. Even the ears changed jobs. Many whales now hear through the jaw, which carries sound through fat-filled channels to the ear bones inside the skull. The evidence has not been erased. Inside a whale's body, buried in muscle and attached to no other bone, float two small hips, left over from legs that no longer exist. A whale embryo even begins to grow leg buds, then reabsorbs them before birth. And the closest living relative of the whale is not a fish at all. It is the hippopotamus, standing in an African river, still doing roughly what Pakicetus did."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What was Pakicetus, and how can scientists tell it was an early whale?",
+            "Name two ways the whale's body changed as it moved into the water, and explain what each change is good for.",
+            "The passage says the hip bones are attached to no other bone. Why is that a clue about the whale's past?",
+            "Why do you think a whale embryo starts growing legs it will never use?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a wolf-sized, four-legged animal from about fifty million years ago; a strange bone in its ear shows it was an early whale",
+            "(any two: legs shrank and the tail widened into flukes for swimming; the nostrils moved to the top of the head so it can breathe without lifting its face out)",
+            "(inference: they are leftovers from legs its ancestors walked on, so they are evidence of a land past)",
+            "(inference: the body still carries old instructions from its land ancestors)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Whales came from four-legged land animals, and their bodies still carry the evidence",
+            "Whales and sharks are close relatives",
+            "Hippos are slowly learning to swim like whales"
+          ],
+          "answers": ["Whales came from four-legged land animals, and their bodies still carry the evidence"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["flukes → ____", "vanished → ____", "embryo → ____", "reabsorbs → ____"],
+          "rows": 1,
+          "answers": [
+            "the two flat blades of a whale's tail",
+            "disappeared completely",
+            "an animal at the earliest stage of growing, before it is born",
+            "takes something back into the body"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which piece of evidence in this passage proves best that whales came from land animals? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Biggest Animal That Ever Lived",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-whale", "templateLabel": "The Biggest Animal That Ever Lived", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "whale",
+          "notes": ["Sound travels about four times faster in water than in air", "Sperm whales dive a mile down to hunt squid", "Their clicks are the loudest sound any animal makes", "Only male humpbacks sing, and the whole population learns the same song", "Blue whale calls are too low for people to hear", "Ship propellers crowd the same low frequencies"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Songs in the Dark",
+          "text": "Seawater swallows light. Go down a few hundred feet and the red is gone, then the yellow, then the green, until there is nothing left but blue, and then nothing at all. Below about three thousand feet, the ocean is permanently black. Eyes are close to useless there. Sound is a different story. Sound travels through water roughly four times faster than through air, and it keeps going. A noise made in the deep ocean can be heard hundreds of miles away. Whales figured this out long before we did, and they built their lives around it. A sperm whale hunts in that darkness. It dives half a mile down, sometimes a full mile, and stays under for close to an hour looking for squid. It does not look for them. It listens. The whale's enormous forehead is not brain. It is a chamber of waxy oil that focuses a click into a narrow beam, fires it into the black, and reads what comes back. Those clicks are the loudest sound any animal is known to make, and yet almost no one has ever heard one, because the sperm whale aims them down into the deep. Humpbacks do something we have no word for. The males sing. A song runs ten or twenty minutes, built from repeated phrases in a set order, and a whale will sing it over and over for hours. Here is the strange part. Every male humpback in the same stretch of ocean sings the same song. When one detail of the song changes, the change spreads, whale by whale, until an entire population has learned the new version. Researchers have tracked a song traveling east across the Pacific like a hit record, taking a couple of years to cross. For most of history, the loudest things in the ocean were whales. That has changed. Propellers from cargo ships fill the water with low-frequency noise, exactly the frequencies blue whales use to call across open sea. A whale that could once be heard from a hundred miles away now shouts into a crowded room. Nothing about that is illegal, and almost nothing about it is visible from the surface."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the passage say eyes are close to useless in the deep ocean, and what works instead?",
+            "Explain how a sperm whale finds squid in the dark. Quote the phrase the passage uses to describe its forehead.",
+            "The author compares a humpback song to a hit record. What does that comparison tell you about how the song spreads?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering: light fails in the deep but sound carries, so whales hunt and sing with it; ship noise now competes with them)",
+            "no sunlight reaches below about three thousand feet, so the ocean is permanently black; sound works instead because it travels far and fast",
+            "it sends out a click and reads the echo; quote: a chamber of waxy oil",
+            "(the song spreads whale to whale until a whole population adopts the new version, the way a song spreads through an audience)",
+            "(mainly inform, turning persuasive at the end; details: the facts about sound speed and dive depth, then the crowded room image and the closing line)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["permanently → ____", "frequencies → ____", "propellers → ____", "population → ____"],
+          "rows": 1,
+          "answers": [
+            "for good, without changing back",
+            "the pitches of a sound, from low to high",
+            "the spinning blades that push a ship through water",
+            "all the animals of one kind living in the same area"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage ends by saying almost nothing about it is visible from the surface. Explain what the author means.",
+            "Why would it matter if two blue whales could no longer hear each other across open ocean?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the noise problem is real but invisible to people above the water, so it is easy to ignore)",
+            "(inference: they depend on sound to find each other and mates across huge distances, so losing it isolates them)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should ships be required to slow down or run quieter where whales feed? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Biggest Animal That Ever Lived",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-whale", "templateLabel": "The Biggest Animal That Ever Lived", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "whale",
+          "notes": ["Twentieth-century whaling killed close to three million whales", "The commercial whaling moratorium took effect in 1986", "A whale fall can feed the seafloor for decades", "Osedax worms have no mouth and no stomach", "The whale pump fertilizes plankton at the surface", "Economists once priced a great whale at about two million dollars"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Whale Is Worth",
+          "text": "A blue whale can weigh a hundred and fifty tons. For most of the twentieth century, people looked at that number and saw oil, and the industry that followed killed close to three million whales in less than a hundred years. In the Southern Ocean, blue whales went from roughly a quarter of a million animals to a few hundred. By sheer weight, it may be the largest removal of wild animals humans have ever carried out. Then, in 1986, most of it stopped. What scientists have learned since is that we had the accounting backward. A whale is worth far more in the water, and that remains true after it dies. Start with the death. When a great whale dies it usually sinks, and it lands on a seafloor where food is desperately scarce. Out there, a meal arrives as marine snow: flakes of dead plankton drifting down for weeks. Then a forty-ton body hits the mud. Biologists call this a whale fall, and they have watched what follows with deep-sea robots. First come the scavengers. Hagfish, sleeper sharks, and swarms of shrimp-like amphipods strip the soft tissue, sometimes in months. Next, worms and crustaceans move into the enriched sediment around the skeleton and live off the scraps for years. Last comes the strangest stage. Bacteria work their way into the bones, breaking down the fat locked inside and releasing hydrogen sulfide, and around that chemical seep an entire community assembles that never needs sunlight at all, close cousins of the communities living at deep-sea vents. Bone-eating worms called Osedax, which have no mouth and no stomach, sink root-like threads into the skeleton and let bacteria digest it for them. A single whale fall can support that community for decades. One dead animal becomes a small city with a lifespan longer than a dog's. Now the living whale, which turns out to be busier still. Whales feed deep and surface to breathe, and they release their waste at the top of the water. Those plumes are loaded with iron and nitrogen, exactly the nutrients that surface plankton run short of. Fertilized plankton bloom. Plankton make oxygen and pull carbon dioxide out of the air, and the small animals that graze on them feed the fish people eat. Scientists named the loop the whale pump. Migrating whales run a second version of it, hauling nutrients thousands of miles from cold feeding grounds to warm breeding ones and leaving them there. The whale is not a passenger in the ocean. It is a piece of the machinery. In 2019 a team of economists tried to price all of this and arrived at roughly two million dollars for a single great whale, counting the carbon it stores and the plankton it feeds. You can argue with the number. It is harder to argue with the direction of it. Whaling treated a whale as a barrel of oil worth a few hundred dollars, and to get it we spent an animal that was quietly running part of the sea. Some of it is coming back. Humpbacks in the western South Atlantic fell to a few hundred animals and now number in the tens of thousands. Recovery is possible. It is simply much slower than removal was."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by saying we had the accounting backward. Cite two pieces of evidence the passage gives.",
+            "Describe the three stages of a whale fall in order, and explain why the author calls the last one the strangest.",
+            "Find where the passage turns from description to argument. Quote the sentence that signals the turn and explain how it works.",
+            "Analyze this claim: The whale is not a passenger in the ocean. It is a piece of the machinery. What is the metaphor doing, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(whaling valued a whale only as oil; the passage shows a living whale fertilizes plankton and stores carbon, and a dead one feeds a seafloor community for decades; cite: A whale is worth far more in the water / a barrel of oil worth a few hundred dollars)",
+            "(scavengers strip the soft tissue in months; worms and crustaceans work the enriched sediment for years; bacteria release hydrogen sulfide and a community forms that never needs sunlight, like the deep-sea vents)",
+            "(quote: You can argue with the number. the author concedes the weak point first, then pivots to the direction of it)",
+            "(it reframes the whale as infrastructure rather than scenery; earned by the whale pump and whale fall evidence given just before it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["scarce → ____", "sediment → ____", "seep → ____", "recovery → ____"],
+          "rows": 2,
+          "answers": [
+            "in short supply, hard to come by",
+            "the loose material that settles on the seafloor",
+            "a place where something slowly leaks out",
+            "the return of a population toward its former numbers"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage prices a whale in dollars. Explain one risk of defending a species with a price tag.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(if the number falls, or something cheaper does the same job, the argument for protection collapses; it also treats the animal as a product)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: putting a dollar value on a whale is the only argument that will actually protect it. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

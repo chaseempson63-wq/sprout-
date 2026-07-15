@@ -1,0 +1,315 @@
+{
+  "key": "sheep",
+  "title": "The Sheep That Never Stops Growing Its Coat",
+  "blurb": "Wild sheep drop their wool every spring. We bred that out, and now the woolliest animal on Earth needs a haircut to stay alive.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Sheep That Never Stops Growing Its Coat",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-sheep", "templateLabel": "The Sheep That Never Stops Growing Its Coat", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the sheep." },
+        {
+          "kind": "image",
+          "imageKey": "sheep",
+          "notes": ["Its fluffy coat is called wool", "It eats grass all day", "A baby sheep is called a lamb", "Sheep stand together in a flock"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a sheep. The sheep has a thick white coat. The coat is called wool. The sheep eats grass all day. It chews and chews. A baby sheep is called a lamb. The lamb stays close to its mother. Sheep like to stand together in a group. The group is called a flock. When the wool gets too long, a farmer gives the sheep a haircut."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the sheep in each row. Write how many in the box.",
+          "emoji": "🐑",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "wool    lamb" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to what it gives us.",
+          "pairs": [
+            { "left": "sheep", "right": "wool" },
+            { "left": "cow", "right": "milk" },
+            { "left": "hen", "right": "egg" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own sheep. Make its coat nice and fluffy.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Sheep That Never Stops Growing Its Coat",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-sheep", "templateLabel": "The Sheep That Never Stops Growing Its Coat", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "sheep",
+          "notes": ["The wool grows all year long", "A sheep haircut is called shearing", "Sheep chew their food twice", "A group of sheep is a flock", "Wool is spun into yarn"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Coat That Keeps Growing",
+          "text": "A sheep wears a coat it can never take off. The coat is made of wool, and it grows all year long. It grows in summer. It grows in winter. It never stops. Once a year the farmer shears the sheep. Sharp clippers cut the wool off in one big piece. The sheep does not feel it. The wool is soft and warm, and people spin it into yarn for socks and hats. Then the sheep starts growing a new coat. Sheep eat grass all day. They stay in a flock so no one gets left alone."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a sheep's coat made of?", "How often does the farmer shear the sheep?", "What do people make out of wool?"],
+          "rows": 2,
+          "answers": ["wool", "once a year", "yarn for socks and hats"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A sheep's coat is made of ____.", "The wool grows all ____.", "The farmer ____ the sheep once a year.", "Sheep stay together in a ____."],
+          "wordBank": ["wool", "year", "shears", "flock"],
+          "answers": ["wool", "year", "shears", "flock"]
+        },
+        { "kind": "draw", "prompt": "Draw a sheep in a green field. Add the farmer and some clippers.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Sheep That Never Stops Growing Its Coat",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-sheep", "templateLabel": "The Sheep That Never Stops Growing Its Coat", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "sheep",
+          "notes": ["Wild sheep shed their wool", "Farm sheep cannot shed", "Shrek the sheep hid for six years", "His fleece weighed about sixty pounds", "Sheep have no top front teeth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Coat That Cannot Fall Off",
+          "text": "Wild sheep do not need haircuts. A wild sheep grows a warm coat for winter, and when spring comes, the coat falls out on its own. The sheep rubs against a rock, the old wool drops off, and that is that. Farm sheep cannot do this. For thousands of years, people picked the sheep with the thickest wool and bred more sheep like them. Little by little, the shedding stopped. Today most farm sheep grow wool all year and never let it go. They need people to cut it off. A sheep in New Zealand named Shrek proved what happens if nobody does. Shrek ran away and hid in a cave for six years. When he was finally found, he was a giant ball of wool. His fleece weighed about sixty pounds. That is enough wool for twenty suits. Shrek could barely see. Once he was shorn, he looked like a sheep again, and he seemed much happier about it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens to a wild sheep's coat when spring comes?",
+            "Why can farm sheep not drop their wool like wild sheep can?",
+            "How long did Shrek hide in the cave?",
+            "Why do you think Shrek seemed happier after he was shorn?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it falls out on its own",
+            "people bred the shedding out of them by picking the woolliest sheep",
+            "six years",
+            "(inference: the huge fleece was heavy and he could barely see)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Coat That Cannot Fall Off", "How to Knit a Sweater", "The Tallest Mountain in New Zealand"],
+          "answers": ["The Coat That Cannot Fall Off"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Wild sheep ____ their wool in spring.", "Shrek hid in a ____ for six years.", "The wool that comes off a sheep is called a ____."],
+          "wordBank": ["shed", "cave", "fleece"],
+          "answers": ["shed", "cave", "fleece"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather be a wild sheep or a farm sheep, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Sheep That Never Stops Growing Its Coat",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-sheep", "templateLabel": "The Sheep That Never Stops Growing Its Coat", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sheep",
+          "notes": ["Its pupils are wide rectangles", "It can see almost all the way around itself", "Its eyes stay level while it grazes", "Sheep can remember fifty faces", "Sheep are prey animals"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Can See Behind Itself",
+          "text": "Look closely at a sheep's eye and you will see something odd. The pupil is not a circle. It is a wide black rectangle lying on its side, like a letter box. That shape is not an accident. A sheep is a prey animal. It spends its day with its head down in the grass, and the whole time it needs to know what is sneaking up behind it. The rectangular pupil works like a panoramic window. It lets in light from a wide strip of the world and blurs out the sky above and the dirt below, which a sheep does not need to watch. With eyes set on the sides of its head, a sheep can see almost all the way around itself, roughly three hundred degrees, without moving its head at all. There is a stranger part. When a sheep lowers its head to graze, its eyes rotate in their sockets to keep those rectangles level with the horizon. The head tips down. The pupils stay flat. The panorama never tilts. Sheep are also better at recognizing faces than most people expect. In one experiment, sheep learned to tell fifty other sheep apart from photographs and still remembered them two years later. The animal we use as a symbol of mindless following is quietly keeping track of everyone in the flock."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe the shape of a sheep's pupil in your own words.",
+            "Why does a prey animal need to see behind itself while it eats?",
+            "What happens to a sheep's eyes when it lowers its head, and why is that useful?",
+            "The passage calls the sheep a symbol of mindless following. What is the author suggesting by ending the way it does?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a wide rectangle lying on its side, like a letter box",
+            "(inference: its head is down in the grass, so a predator could approach unseen)",
+            "the eyes rotate to keep the rectangles level with the horizon, so its wide view never tilts",
+            "(inference: sheep are smarter than their reputation; the symbol is unfair)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A sheep's body is built to watch for danger while it keeps eating",
+            "Sheep are the fastest animals on a farm",
+            "Rectangles are the most common shape in nature"
+          ],
+          "answers": ["A sheep's body is built to watch for danger while it keeps eating"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["prey animal → ____", "panoramic → ____", "rotate → ____"],
+          "rows": 1,
+          "answers": ["an animal that other animals hunt and eat", "showing a very wide view all around", "to turn in place"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: design an eye for an animal that hunts instead of grazing. What shape would the pupil be, and where on the head would you put the eyes? Give a reason for each choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Sheep That Never Stops Growing Its Coat",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-sheep", "templateLabel": "The Sheep That Never Stops Growing Its Coat", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sheep",
+          "notes": ["Wool is keratin, like your fingernails", "Crimp traps still air", "Lanolin makes rain roll off", "Wool holds a third of its weight in water", "Wool is very hard to set alight", "Merino fibers are finer than a human hair"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Wool Is a Solved Problem",
+          "text": "Wool is the strangest thing a farm produces, because it is not really a product at all. It is a solved problem. Start with the fiber. A single strand of wool is made of keratin, the same protein in your fingernails, but it does not grow straight. It grows in a wave, a natural spring called crimp. Merino wool can crimp as many as a hundred times in a single inch. Pack millions of those springs together and they cannot lie flat. They hold each other apart, and the gaps fill with still air. That trapped air, not the fiber, is what keeps a sheep warm on a freezing hillside. Wool is mostly nothing, arranged carefully. Then there is water. Every wool fiber is coated in lanolin, a waxy grease the sheep makes in its own skin, and rain rolls off it. But the inside of the fiber does the opposite: it drinks. Wool can take on about a third of its own weight in moisture before it feels wet to the touch, and as it absorbs water it releases a small amount of heat. A wet sheep in a cold wind is doing better than it looks. Wool is also very hard to burn. It holds water and nitrogen, it needs more oxygen to stay alight than the air around it contains, and when the flame leaves, it goes out. This is why wool ends up in airplane seats and firefighters' clothing long after cheaper fibers were available. None of this was designed in a laboratory. It was assembled by evolution on wild sheep in cold mountains, and then pushed much further by ten thousand years of humans choosing which sheep got to have lambs. We did not invent wool. We just kept turning up the volume on it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how crimp keeps a sheep warm. Quote the phrase the passage uses to sum this up.",
+            "The passage says the inside of the fiber does the opposite of the lanolin. Explain the contrast it is drawing.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author choose to end there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering crimp and trapped air, water handling, fire resistance, and breeding)",
+            "crimp holds the fibers apart so still air fills the gaps and insulates; quote: Wool is mostly nothing, arranged carefully",
+            "lanolin sheds rain from the outside while the inside of the fiber absorbs moisture",
+            "(inform, with detail: it defines crimp, lanolin, and keratin and gives facts; the closing lines lean persuasive)",
+            "(humans did not create wool, they exaggerated a trait that already existed; it lands the point last for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["crimp → ____", "lanolin → ____", "keratin → ____", "alight → ____"],
+          "rows": 1,
+          "answers": [
+            "the natural wave or spring in a wool fiber",
+            "the waxy grease on wool that makes rain roll off",
+            "the protein wool is made of, also found in fingernails",
+            "on fire, burning"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls wool a solved problem rather than a product. Explain what that phrase is doing.",
+            "Wool has been beaten on price by cheaper fibers, yet airplanes and firefighters still use it. What does that tell you about what those buyers value?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it frames wool as an answer evolution worked out, not something people manufactured)",
+            "(inference: safety and performance matter more to them than cost)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: if a factory could make a fiber that matched wool exactly, would there still be a reason to keep sheep? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Sheep That Never Stops Growing Its Coat",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-sheep", "templateLabel": "The Sheep That Never Stops Growing Its Coat", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sheep",
+          "notes": ["Ovis aries, bred from the wild mouflon", "Domesticated about 11,000 years ago", "Woolly fleeces appear about 6,000 years ago", "Dolly the sheep was cloned in 1996", "The Woolsack still sits in the House of Lords", "Over a billion sheep alive today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal We Redesigned",
+          "text": "There is a wild sheep still living in the mountains of western Asia. It is called the mouflon. It is lean and quick, it has curling horns, and its coat is short, coarse hair over a thin layer of soft fluff. In spring, that fluff falls out on its own. If you met a mouflon on a hillside, you would not think of a sweater. Every domestic sheep alive descends from an animal like that. Around eleven thousand years ago, in the hills of the Fertile Crescent, people began keeping mouflon instead of hunting them. The first flocks were not kept for wool. They were kept for meat, milk, and skins, and for several thousand years the sheep in those pens looked much like the sheep on the mountain. Then something slow and enormous happened. People noticed that a few animals carried more of the soft undercoat than the coarse outer hair, and that a few of those animals were slower to shed it. Those were the sheep that were allowed to breed. Repeat that choice for a hundred generations, then a thousand, and the undercoat takes over the whole animal. By around six thousand years ago, sheep with true woolly fleeces appear in the archaeological record. The shedding had been bred out. The haircut had been bred in. Consider what that means. A modern Merino cannot survive without us. Left alone, its fleece keeps growing until the animal overheats, cannot move well, and cannot escape. We did not domesticate a woolly animal. We built one, and in building it we made it permanently dependent on the species that built it. The wool paid us back. Medieval England ran on it. Wool taxes funded wars, wool merchants funded cathedrals, and to this day the presiding officer of the House of Lords sits on the Woolsack, a large cushion stuffed with wool, placed there in the fourteenth century so that nobody in government could forget where the money came from. The sheep has stayed at the center of our experiments ever since. In 1996, at the Roslin Institute near Edinburgh, a lamb was born who had no father and whose genetic instructions came from a single udder cell taken from a six year old ewe. Her name was Dolly, and she was the first mammal cloned from an adult body cell. The animal chosen for the most radical biological experiment of the century was, once again, a sheep. Eleven thousand years in, we are still editing the same animal. What we have never done is finish."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how selective breeding turned a shedding mouflon into a Merino. Cite the two short sentences the author uses to close that argument.",
+            "What does the author mean by claiming we built the modern sheep rather than domesticated it? Quote the exact sentence.",
+            "Identify the structure of this passage. Name the three stages it moves through and explain how the Woolsack and Dolly serve different jobs.",
+            "Analyze the final two sentences. What is the author implying, and does the passage earn that implication?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering domestication, breeding for wool, and dependence)",
+            "(people bred from the woolliest, slowest-shedding animals for thousands of generations; cite: The shedding had been bred out. The haircut had been bred in.)",
+            "(the woolly fleece is a human creation, not a natural trait we adopted; cite: We did not domesticate a woolly animal.)",
+            "(wild origin, then the slow breeding of wool, then what the sheep has meant to us; the Woolsack shows economic power, Dolly shows the sheep as an ongoing experiment)",
+            "(that human redesign of the sheep is unfinished and ongoing; supported by the mouflon-to-Merino evidence and Dolly)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["domesticate → ____", "undercoat → ____", "descends from → ____", "dependent → ____"],
+          "rows": 2,
+          "answers": [
+            "to tame and breed a wild species to live alongside people",
+            "the soft layer of fluff underneath the coarse outer hair",
+            "comes down from an ancestor over many generations",
+            "unable to survive without something or someone else"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a modern Merino cannot survive without us. Explain what responsibility, if any, that creates for people who keep sheep.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: we created the dependence, so the duty of care is ours)",
+            "(student question + a credible source type such as a peer-reviewed archaeology or animal science journal)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Breeding an animal that cannot survive without human help is something people should never do again. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

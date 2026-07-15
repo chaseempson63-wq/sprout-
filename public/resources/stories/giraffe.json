@@ -1,0 +1,319 @@
+{
+  "key": "giraffe",
+  "title": "The Giraffe and the Trees That Fight Back",
+  "blurb": "The tallest animal on Earth, the seven bones in its neck, and the acacia trees that warn each other it is coming.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Giraffe and the Trees That Fight Back",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-giraffe", "templateLabel": "The Giraffe and the Trees That Fight Back", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the giraffe's long neck." },
+        {
+          "kind": "image",
+          "imageKey": "giraffe",
+          "notes": ["It is the tallest animal on Earth", "It eats leaves from the treetops", "Its tongue is dark purple", "Its tongue is longer than your arm", "It has two little horns on its head"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a giraffe. The giraffe is very tall. It is the tallest animal on Earth. A giraffe can look right into an upstairs window. Its neck is long. Its legs are long. It eats leaves at the very top of the trees. Its tongue is long too. The tongue is dark purple. The giraffe wraps its tongue around a leaf and pulls."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves on each branch. Write how many in the box.",
+          "emoji": "🌿",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "tall    leaf" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to what it eats.",
+          "pairs": [
+            { "left": "giraffe", "right": "leaves" },
+            { "left": "mouse", "right": "seeds" },
+            { "left": "rabbit", "right": "carrot" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own giraffe. Make its neck as long as you like.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Giraffe and the Trees That Fight Back",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-giraffe", "templateLabel": "The Giraffe and the Trees That Fight Back", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "giraffe",
+          "notes": ["A baby giraffe is born falling", "It can stand up in under an hour", "The horns are called ossicones", "A newborn is already six feet tall", "It can run by the end of its first day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Baby That Falls Out of the Sky",
+          "text": "A giraffe is born by falling. Its mom stands up to give birth, and the baby drops about six feet to the ground. That is a hard landing. But the baby giraffe gets up in under an hour. By the end of the day, it can run. A baby giraffe is already taller than most grown people. It has two little horns on its head. They are called ossicones. They lie flat when the baby is born, so they do not hurt the mom on the way out. Then, after a few days, they stand up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How is a baby giraffe born?", "How long until the baby can stand up?", "What are the little horns called?"],
+          "rows": 2,
+          "answers": ["it falls about six feet to the ground", "under an hour", "ossicones"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The baby giraffe drops about six ____.", "It can stand up in under an ____.", "The two horns are called ____.", "The horns lie ____ when the baby is born."],
+          "wordBank": ["feet", "hour", "ossicones", "flat"],
+          "answers": ["feet", "hour", "ossicones", "flat"]
+        },
+        { "kind": "draw", "prompt": "Draw the baby giraffe standing next to its mom. Show how tall each one is.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Giraffe and the Trees That Fight Back",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-giraffe", "templateLabel": "The Giraffe and the Trees That Fight Back", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "giraffe",
+          "notes": ["Seven neck bones, same as you", "Each neck bone can be ten inches long", "A big male reaches almost nineteen feet", "It splays its legs to reach the water", "It gets most of its water from leaves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Seven Bones",
+          "text": "A giraffe's neck is about six feet long. That is taller than most adults. So how many bones are inside it? You might guess fifty. The answer is seven. You have seven bones in your neck too. A giraffe's are just enormous. Each one can be as long as your forearm. Those seven bones make the giraffe the tallest animal on Earth. A big male can reach almost nineteen feet. He eats leaves that no other animal can reach, which means he almost never has to share his food. But the long neck causes a problem. When a giraffe wants a drink, it cannot bend its neck down to the water. Its neck is long, but its legs are longer. So it has to slide its front feet apart and lower itself, slowly, like a folding chair. For a few seconds it is stuck down there. A lion knows this. That is why giraffes drink fast, and why they would rather get their water out of wet leaves and skip the pond."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How many bones are in a giraffe's neck?",
+            "How tall can a big male giraffe get?",
+            "Why does a giraffe have to splay its front feet apart to drink?",
+            "Why do you think a giraffe would rather get water from leaves than from a pond?"
+          ],
+          "rows": 2,
+          "answers": [
+            "seven",
+            "almost nineteen feet",
+            "its legs are longer than its neck, so it cannot reach the water standing up",
+            "(inference: it is stuck and easy for a lion to catch while it is down)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Seven Bones", "How to Build a Folding Chair", "The Biggest Lions in Africa"],
+          "answers": ["Seven Bones"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A giraffe's neck holds ____ bones.", "The giraffe is the ____ animal on Earth.", "A ____ waits for the giraffe to lower its head."],
+          "wordBank": ["seven", "tallest", "lion"],
+          "answers": ["seven", "tallest", "lion"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather be very tall or very fast, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Giraffe and the Trees That Fight Back",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-giraffe", "templateLabel": "The Giraffe and the Trees That Fight Back", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "giraffe",
+          "notes": ["Favorite food: the thorny acacia tree", "Its tongue is about eighteen inches long", "Acacias turn bitter minutes after browsing starts", "Wounded trees release a gas that warns their neighbors", "Giraffes often feed into the wind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Trees Fight Back",
+          "text": "A giraffe spends most of its day eating leaves, and its favorite tree is the acacia. The acacia does not agree to this arrangement. The first defense is thorns. Acacia branches are armed with spikes, some as long as your finger. The giraffe does not seem to care. Its tongue is about eighteen inches long and tough as a work glove, coated in thick saliva that lets it slide around the spikes and strip the leaves out from between them. So the tree tries something cleverer. Within minutes of a giraffe starting to feed, the acacia floods its leaves with bitter chemicals called tannins. The leaves turn foul. In large amounts, tannins can make an animal sick. The giraffe usually quits that tree after a few minutes and moves on. Here is the strange part. The wounded tree also releases a gas called ethylene into the air. Nearby acacias pick it up and start making tannins of their own, before a giraffe has even touched them. Researchers in South Africa noticed that giraffes rarely feed on two neighboring trees in a row. Instead they skip ahead, or they walk into the wind, where the warning gas has not traveled. So an animal that could eat whatever it wanted is being steered around the savanna by trees that cannot move, cannot see, and have no brain at all. The giraffe is not just tall. It is careful."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe the acacia's two defenses, in order.",
+            "How does the giraffe's tongue beat the thorns?",
+            "Explain what ethylene does for a tree that has not been touched yet.",
+            "The passage says giraffes often walk into the wind while feeding. Why would that help them?"
+          ],
+          "rows": 2,
+          "answers": [
+            "first thorns, then bitter tannins in the leaves",
+            "it is long, tough as a work glove, and coated in thick saliva, so it slides around the spikes",
+            "it warns the neighbors, so they make tannins before the giraffe arrives",
+            "(inference: the warning gas blows downwind, so upwind trees have not been warned yet)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Acacia trees defend themselves so well that they change how giraffes feed",
+            "Giraffes are the tallest animals in Africa",
+            "Thorns are the only way a plant can protect itself"
+          ],
+          "answers": ["Acacia trees defend themselves so well that they change how giraffes feed"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["tannins → ____", "ethylene → ____", "defense → ____"],
+          "rows": 1,
+          "answers": [
+            "bitter chemicals a tree puts in its leaves to spoil them",
+            "a gas a wounded tree releases that warns nearby trees",
+            "something that protects you from being harmed"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says trees that cannot move, see, or think still outsmart a giraffe. Do you agree that the tree is outsmarting the giraffe? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Giraffe and the Trees That Fight Back",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-giraffe", "templateLabel": "The Giraffe and the Trees That Fight Back", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "giraffe",
+          "notes": ["The brain sits about six feet above the heart", "Blood pressure roughly twice a human's", "The heart weighs about twenty-five pounds", "Leg skin works like a compression stocking", "Rete mirabile: Latin for wonderful net", "One-way valves in the neck veins"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Plumbing Problem",
+          "text": "Think about what it takes to be eighteen feet tall. Not the eating, not the walking. The plumbing. A giraffe's brain sits about six feet above its heart. To push blood that high against gravity, the giraffe runs a blood pressure roughly twice that of a healthy human, around 220 over 180. In a person, numbers like those would be a medical emergency. In a giraffe, they are an ordinary Tuesday. The pump behind them is a heart weighing about twenty-five pounds, with a left ventricle wall several inches thick, built like a muscular fist. That solves the problem of getting blood up. It creates the problem of getting blood back down. Blood in the legs of a tall animal should pool under its own weight until the skin swells and splits. It does not, because giraffe legs are wrapped in skin so tight and fibrous that scientists compare it to the compression stockings pilots and astronauts wear. The skin squeezes inward and holds the pressure in. Then there is the drinking problem. When a giraffe splays its legs and drops its head eight feet to reach water, all that pressure aims straight at its brain. Nothing about that should end well. Two things save it. The jugular veins in the neck carry one-way valves that snap shut and stop blood from running backward into the skull. And at the base of the brain sits a dense sponge of tiny branching vessels called the rete mirabile, Latin for wonderful net, which spreads the surge out and softens it before it arrives. When the giraffe snaps its head up again, the same system keeps the blood from draining away and dropping it in a faint. None of this was designed. Each piece is a repair for a problem the previous piece caused. Getting taller let giraffes reach food nothing else could reach, and every inch of that advantage had to be paid for somewhere else in the body. A giraffe is not simply a tall animal. It is a tall animal's worth of solutions, stacked on top of each other, walking around the savanna eating leaves."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does a giraffe need blood pressure twice as high as a human's?",
+            "Explain what the rete mirabile does. Quote the phrase the passage uses to translate its name.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author writes that in a giraffe those numbers are an ordinary Tuesday. What is that phrase doing, and why not just say normal?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering high pressure up, tight skin and valves and the net managing it coming down)",
+            "its brain sits about six feet above its heart, so blood has to be pushed that high against gravity",
+            "it spreads out and softens the surge of blood before it reaches the brain; quote: wonderful net",
+            "(inform, with detail: it defines terms and gives measurements; the joking tone also entertains)",
+            "(it makes a strange fact feel casual and keeps the tone light; normal would be flatter and less memorable)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["fibrous → ____", "ventricle → ____", "splays → ____", "surge → ____"],
+          "rows": 1,
+          "answers": [
+            "made of tough stringy fibers",
+            "a pumping chamber of the heart",
+            "spreads apart wide",
+            "a sudden rush or push forward"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says each piece is a repair for a problem the previous piece caused. Explain that idea in your own words, using the giraffe as your example.",
+            "Astronauts wear compression suits for the same reason a giraffe has tight leg skin. What does that tell you about how bodies handle gravity?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(getting tall forced a bigger heart, which forced tight skin and valves and the net; each fix answers the last fix)",
+            "(inference: gravity pulls blood toward the feet, so any tall or stressed body needs pressure held in from outside)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the giraffe pays a high price in its body for the food its height lets it reach. Was the trade worth it? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Giraffe and the Trees That Fight Back",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-giraffe", "templateLabel": "The Giraffe and the Trees That Fight Back", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "giraffe",
+          "notes": ["Giraffa camelopardalis: the camel-leopard", "Wild numbers fell about 40 percent in 30 years", "Fewer giraffes in Africa than elephants", "2016 genetics proposed four species, not one", "Coat patches are inherited from the mother", "Giraffes hum near 92 hertz at night"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Silent Extinction",
+          "text": "Everyone knows the giraffe. It is on the alphabet poster, the nursery wall, the zoo map, the cartoon. It is one of the most recognizable animals on Earth, which turns out to be exactly the problem. Between the late 1980s and the 2010s, the wild giraffe population fell by roughly forty percent, from about 155,000 animals to under 100,000. Conservationists gave the collapse a name: the silent extinction. Silent, because almost nobody noticed. Elephants and rhinos have poaching crises with photographs attached, and the photographs made the news. The giraffe simply thinned out. Habitat was cleared for farmland, herds were cut into fragments too small to mix, conflict pushed hunting into the last strongholds, and a familiar animal quietly stopped being common. Until 2016, the giraffe was not even listed as threatened. There are now fewer giraffes in Africa than elephants, a sentence almost nobody would guess is true. The science was not paying close attention either. For most of the last century, every giraffe on the continent was filed as a single species, Giraffa camelopardalis, the camel-leopard, with a handful of subspecies sorted mainly by coat pattern. Then, in 2016, a team led by Julian Fennessy published a genetic survey of around two hundred giraffes and reported something nobody expected: the major groups had not interbred for perhaps a million years. They proposed four separate species. Some researchers accept that reading, some argue the data supports fewer, and the question is not settled. But the stakes are not academic. A population of 100,000 spread across one species sounds stable. That same population split four ways contains groups counted in the tens of thousands and one, the northern giraffe, with fewer than six thousand animals left. The same animals, counted differently, become an emergency. It matters that we misread them, because giraffes are stranger than their reputation. Males settle disputes by necking, swinging their skulls at each other like slow wrecking balls, and the bone of an adult male's head keeps thickening throughout his life to survive it. Their coat patches are unique to each animal, like fingerprints, and calves inherit the shape of their mother's spots. Underneath each patch runs a network of blood vessels that researchers think works as a thermal window, dumping heat. And for a long time people said giraffes were mute. In 2015, researchers at the University of Vienna recorded nearly a thousand hours of giraffes across three zoos and found that was wrong. At night, the giraffes hum, a low sound near ninety-two hertz, quiet enough that generations of keepers had walked past it. Nobody yet knows what the humming is for. That is the honest shape of the thing. We put this animal on the wall of every nursery in the world and never learned how many kinds of it there were, or that it talks at night. Fame is not the same as attention. The giraffe was hiding in plain sight, at eighteen feet tall, and we managed to lose almost half of them without looking up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the decline is called the silent extinction. Cite the evidence the author uses to contrast it with elephants and rhinos.",
+            "Explain how splitting one species into four turns a stable number into an emergency. Use the figures in the passage.",
+            "The author writes that being recognizable turns out to be exactly the problem. Trace how the passage supports that claim across the whole text.",
+            "Analyze the final paragraph. What does the phrase without looking up do that a plain statement of the facts would not?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(no photographs, no visible crisis, so nobody noticed; cite: Elephants and rhinos have poaching crises with photographs attached)",
+            "(100,000 across one species looks safe, but split four ways one group holds fewer than six thousand)",
+            "(familiarity bred inattention: not listed as threatened until 2016, species count unresolved, humming missed for a century)",
+            "(it puns on the giraffe's height and turns the facts into an accusation of our own inattention)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["conservationists → ____", "subspecies → ____", "interbred → ____", "fragments → ____"],
+          "rows": 2,
+          "answers": [
+            "people who work to protect species and habitats",
+            "a distinct group within a species that has not split off completely",
+            "bred with one another and mixed their genes",
+            "small broken-off pieces of what was once continuous"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says herds were cut into fragments too small to mix. Explain why that is dangerous even when the total population is still large.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(isolated herds lose genetic diversity and cannot recover from local losses, so the total number hides the risk)",
+            "(student question + a credible source type, for example a peer-reviewed survey or a field conservation group)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal as famous as the giraffe was never really at risk of being ignored. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

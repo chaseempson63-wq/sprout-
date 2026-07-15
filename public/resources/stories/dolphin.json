@@ -1,0 +1,321 @@
+{
+  "key": "dolphin",
+  "title": "The Dolphin That Sees With Sound",
+  "blurb": "A land mammal that walked into the sea, named itself, and learned to hunt with a sponge on its nose.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Dolphin That Sees With Sound",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-dolphin", "templateLabel": "The Dolphin That Sees With Sound", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the dolphin's nose and its tail." },
+        {
+          "kind": "image",
+          "imageKey": "dolphin",
+          "notes": ["It lives in the sea", "It breathes air like you", "It has a hole on top of its head", "It can jump right out of the water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a dolphin. A dolphin lives in the sea. A dolphin is not a fish. It breathes air, just like you. On top of its head is a little hole. The hole is called a blowhole. The dolphin swims up. It opens the hole. It takes a big breath of air. Then it dives back down. A baby dolphin swims close to its mom."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the dolphins in each row. Write how many in the box.",
+          "emoji": "🐬",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "swim    jump" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its home.",
+          "pairs": [
+            { "left": "dolphin", "right": "sea" },
+            { "left": "bird", "right": "sky" },
+            { "left": "bee", "right": "flower" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a dolphin jumping out of the water. Add some waves.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Dolphin That Sees With Sound",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-dolphin", "templateLabel": "The Dolphin That Sees With Sound", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "dolphin",
+          "notes": ["A dolphin is a mammal, not a fish", "It breathes through its blowhole", "A baby dolphin is called a calf", "Dolphins live in groups called pods", "It has to come up for air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dolphin Is Not a Fish",
+          "text": "A dolphin looks like a fish, but it is not one. A dolphin is a mammal, the same as a dog or a cow or you. Mammals breathe air. A fish can stay under the water all day. A dolphin cannot. It holds its breath, then swims up and puffs the old air out of its blowhole. You can hear the puff from far away. A baby dolphin is called a calf. The calf drinks milk from its mom and stays close to her for years. Dolphins live in groups called pods. The pod swims together, hunts together, and rests together."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Is a dolphin a fish or a mammal?", "How does a dolphin breathe?", "What do we call a baby dolphin?", "What do we call a group of dolphins?"],
+          "rows": 2,
+          "answers": ["it is a mammal", "it breathes air through its blowhole", "a calf", "a pod"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A dolphin is a ____, not a fish.", "It breathes air through its ____.", "A baby dolphin is called a ____.", "Dolphins live in groups called ____."],
+          "wordBank": ["mammal", "blowhole", "calf", "pods"],
+          "answers": ["mammal", "blowhole", "calf", "pods"]
+        },
+        { "kind": "draw", "prompt": "Draw a pod of dolphins swimming together. Draw one coming up for air.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Dolphin That Sees With Sound",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-dolphin", "templateLabel": "The Dolphin That Sees With Sound", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "dolphin",
+          "notes": ["It finds fish using sound, not sight", "The clicks come out of its forehead", "Bats hunt with sound too", "It can click hundreds of times a second", "The trick is called echolocation"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Seeing in the Dark Water",
+          "text": "The sea is a dark place. Sunlight reaches the top of the water and then gives up. Below that, everything turns murky and gray. A dolphin can still find one fish in all that water, and it can do it with its eyes shut. Here is how. The dolphin makes a stream of fast clicks inside its head. The clicks shoot out through its forehead and travel away through the water. When a click hits a fish, it bounces back. The dolphin hears that echo. From the echo it knows where the fish is, how big it is, and which way it is turning. Using sound this way is called echolocation. Bats do the same thing in the air at night. A dolphin can click hundreds of times a second. As it closes in, it clicks faster and faster, until the clicks blur together into a buzz. Divers who have been near a hunting dolphin say the buzz feels like a tingle on your skin. To a dolphin, sound is a way of seeing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why is it hard to see under the water?",
+            "What happens when a dolphin's click hits a fish?",
+            "What three things does the dolphin learn from the echo?",
+            "Why do you think a dolphin clicks faster and faster as it gets close to a fish?"
+          ],
+          "rows": 2,
+          "answers": [
+            "sunlight only reaches the top, so below that it is murky and gray",
+            "the click bounces back to the dolphin as an echo",
+            "where the fish is, how big it is, and which way it is turning",
+            "(inference: faster clicks give it more information, so it can track a moving fish)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Seeing in the Dark Water", "How to Swim Faster Than a Fish", "The Deepest Trench in the Ocean"],
+          "answers": ["Seeing in the Dark Water"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A dolphin's clicks shoot out through its ____.", "A click that bounces back is called an ____.", "Finding things with sound is called ____."],
+          "wordBank": ["forehead", "echo", "echolocation"],
+          "answers": ["forehead", "echo", "echolocation"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather find your way with your eyes or with sound, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Dolphin That Sees With Sound",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-dolphin", "templateLabel": "The Dolphin That Sees With Sound", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dolphin",
+          "notes": ["Sound moves about 4 times faster in water than in air", "The melon is a lens made of fat", "A dolphin hears through its lower jaw", "Clicks are aimed in a narrow beam", "Dolphins had sonar long before people built it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Lens Made of Fat",
+          "text": "Point a flashlight into the ocean and the beam dies within a few dozen feet. Water swallows light. Sound has the opposite habit. It travels through water about four times faster than it travels through air, and it carries much further before it fades. Dolphins worked this out tens of millions of years before people built the first sonar.\n\nA dolphin's clicks do not come from its mouth. They are made by tissue just under the blowhole, then pushed forward into a lump of fat in the forehead called the melon. The melon works like a lens, except it bends sound instead of light. By squeezing and relaxing the melon, a dolphin can shape its clicks into a narrow beam and aim it, the way you might narrow a flashlight down to a spot.\n\nThe return trip is stranger. A dolphin has ear holes, but it barely uses them. The echo comes back and passes into the thin bone of the lower jaw, which is filled with fat that carries the sound straight to the inner ear. A dolphin hears through its chin.\n\nWhat comes back is not a picture the way your eyes make a picture. It is a shape built out of timing. A close echo returns sooner than a far one. A hard thing like bone returns a sharper echo than soft flesh. In tests, dolphins have found a target the size of a small orange from the length of a football field away, and they can tell one metal from another by echo alone."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why is sound more useful than light for hunting under water?",
+            "Explain what the melon does. Why does the passage compare it to a lens?",
+            "The passage says a dolphin hears through its chin. Explain what it means.",
+            "The author says the echo is a shape built out of timing. What do you think that means?"
+          ],
+          "rows": 2,
+          "answers": [
+            "water swallows light, but sound travels about four times faster in water and carries much further",
+            "it bends and aims the clicks into a narrow beam; a lens bends light the same way it bends sound",
+            "the echo enters the fat-filled bone of the lower jaw and travels to the inner ear",
+            "(inference: a nearer object returns its echo sooner, so the delays tell the dolphin the shape and distance)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A dolphin's body is built to send, aim, and receive sound instead of relying on sight",
+            "Flashlights do not work very well at the beach",
+            "Dolphins invented the sonar that navies use today"
+          ],
+          "answers": ["A dolphin's body is built to send, aim, and receive sound instead of relying on sight"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["melon → ____", "sonar → ____", "beam → ____"],
+          "rows": 1,
+          "answers": [
+            "the lump of fat in a dolphin's forehead that aims its clicks",
+            "finding things by sending out sound and listening for the echo",
+            "sound or light aimed in one narrow direction instead of spreading everywhere"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: people copied the dolphin when they built sonar. Name one other thing people could learn from an animal, and explain how it would help. Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Dolphin That Sees With Sound",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-dolphin", "templateLabel": "The Dolphin That Sees With Sound", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dolphin",
+          "notes": ["Tursiops truncatus, the bottlenose dolphin", "Each dolphin invents its own signature whistle", "Dolphins copy each other's whistles to call them", "It sleeps with one half of its brain at a time", "Every breath a dolphin takes is a decision", "Bottlenose dolphins can live past fifty years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Name It Made Up Itself",
+          "text": "Every bottlenose dolphin has a name, and it makes the name up itself.\n\nWithin the first few months of life, a calf invents a whistle: a rising, falling, looping pattern of pure tone that belongs to no other dolphin in the sea. Biologists call it a signature whistle. The calf keeps it for the rest of its life, which can run past fifty years. When two groups of dolphins meet in open water, they trade signature whistles before anything else happens, the way strangers trade names before they trade anything worth saying.\n\nWhat makes it a name rather than a badge is what the other dolphins do with it. A dolphin can copy another dolphin's signature whistle and broadcast it, and the owner of that whistle answers. Off the coast of Scotland, researchers played wild dolphins recordings of their own signature whistles, and then recordings of whistles belonging to strangers. Each dolphin replied to its own and ignored the rest. That is not a call. That is being addressed.\n\nSleep is the second thing dolphins do differently, and the reason is grim. A dolphin's breathing is not automatic the way yours is. Every breath is a decision it has to make. If a dolphin ever fell fully asleep the way you do, it would drown. So it sleeps with half of its brain at a time. One half powers down. The other half stays awake, keeps the body swimming slowly, and keeps watch with the eye on its side. Some hours later the two halves swap. The open eye closes and the closed eye opens.\n\nSit with what that means. A dolphin has never once been completely unconscious. Not in fifty years. It has never fully let go. Mothers and newborn calves go further still: for weeks after a birth, neither one seems to sleep properly at all, swimming and surfacing around the clock until the calf is strong enough to keep up with the group."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is a signature whistle, and when does a dolphin get one?",
+            "The passage argues a signature whistle is a name, not just a badge. What evidence does it give? Quote the text.",
+            "Explain why a dolphin cannot sleep the way you sleep.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering signature whistles as names + half-brain sleep)",
+            "a whistle each dolphin invents for itself in the first few months of life and keeps for life",
+            "other dolphins copy it and the owner answers; quote: Each dolphin replied to its own and ignored the rest",
+            "its breathing is a decision, not automatic, so if it fell fully asleep it would drown",
+            "(mainly to inform, with persuasive moments: it gives research evidence, but lines like That is being addressed argue a point)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["signature (whistle) → ____", "broadcast → ____", "addressed → ____", "automatic → ____"],
+          "rows": 1,
+          "answers": [
+            "belonging to one individual and no other",
+            "sent out for others to hear",
+            "spoken to directly by name",
+            "happening by itself without a decision"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the dolphin has never fully let go. Explain what that sentence is doing, beyond stating a fact.",
+            "Why did the researchers in Scotland also play whistles belonging to strangers, instead of only playing each dolphin its own?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it turns a biological fact into something the reader can feel, inviting sympathy)",
+            "(inference: it is a control; without it you could not tell whether the dolphin answers its own whistle or just any whistle)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: if an animal calls other animals by name, does that mean it has language? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Dolphin That Sees With Sound",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-dolphin", "templateLabel": "The Dolphin That Sees With Sound", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dolphin",
+          "notes": ["Shark Bay dolphins hunt with sponges on their beaks", "Sponging passes from mother to daughter", "Its flipper holds the bones of a hand", "Two floating bones are all that is left of its hips", "Its ancestors walked on land about 50 million years ago", "A dolphin must decide to take every breath"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sponge, the Hand, and the Borrowed Lungs",
+          "text": "In Shark Bay, on the western edge of Australia, a small number of bottlenose dolphins hunt with a tool. A dolphin swims to the seafloor, tears loose a cone-shaped sponge, fits it over her beak like a glove, and goes poking through the rubble with her nose protected. The fish she wants are buried down there, and they have no swim bladder, which means they throw back a poor echo and cannot easily be found by sound. So she sets aside her best sense and feels for them instead, while the sponge takes the scrapes her skin would otherwise take.\n\nNot every dolphin in Shark Bay does this. Roughly one in twenty does, and nearly all of them descend from a single female, nicknamed Sponging Eve, who seems to have worked it out within the last two hundred years. Daughters learn it from their mothers. Sons mostly do not. The technique travels down the female line the way a family recipe does, which is to say by watching, not by instinct and not by instruction. Scientists have a plain word for a behavior invented by an individual, spread by example, and inherited socially rather than genetically. The word is culture.\n\nThat claim used to be a fight. For most of the twentieth century, culture was treated as the wall between people and every other animal. The sponging dolphins did not knock that wall down, but they put a serious crack in it, because the pattern resists every other explanation. Spongers are not a separate species. They are not genetically special. They live in the same bay as everyone else, eating different food, using a trick some of them know and others simply do not.\n\nThe rest of the animal makes more sense once you know where it came from. Dolphins are not fish and never were. Their ancestors were four-legged land mammals that waded into the shallows around fifty million years ago and never came back out. The evidence is still in the body. Under the skin of a dolphin's flipper are the bones of a hand: an upper arm, a forearm, a wrist, and five splayed fingers. Buried in its abdomen are two small floating bones, all that survives of a pelvis that once carried hind legs. A dolphin breathes air because its ancestors breathed air, and it has never managed to stop.\n\nThat inheritance is expensive. A dolphin must decide to breathe, every single time, which is why it can only ever sleep with half its brain at once. It must reach the surface even under ice, even while being hunted, even while giving birth. Evolution did not redesign the animal from scratch when it went back to the water. It reshaped a land mammal into the outline of a fish and left the plumbing exactly where it was.\n\nSo look again at the sponger. She is a converted land animal, breathing air she has to remember to take, carrying a name she invented for herself, wearing a sponge her mother taught her to wear, hunting fish she cannot hear. Almost none of it is instinct. Almost all of it is learned. People like to ask whether dolphins are intelligent, and Shark Bay shows why that is the wrong question. The interesting thing is not how clever any single dolphin is. It is that one good idea, thought up once by one animal, is still being used two centuries later by her great-great-granddaughters, in the same bay, on the same seafloor, for the same buried fish."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why must a sponging dolphin give up echolocation to catch these fish? Cite the evidence.",
+            "The passage claims sponging is culture. Lay out the reasoning, and cite the definition the author uses.",
+            "Identify where the passage turns from the sponge to evolution. How does the author signal the shift, and why put the two ideas side by side?",
+            "The author says asking whether dolphins are intelligent is the wrong question. Analyze what the author offers instead, and decide whether the passage earns that move."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering learned tool use, culture, and the animal's land-mammal inheritance)",
+            "(the buried fish have no swim bladder, so sound cannot find them; cite: they throw back a poor echo and cannot easily be found by sound)",
+            "(one female invented it, daughters copy their mothers, it is not genetic; cite: a behavior invented by an individual, spread by example, and inherited socially rather than genetically)",
+            "(at The rest of the animal makes more sense once you know where it came from; it grounds the learned behavior in an inherited body)",
+            "(it replaces a question about one animal's cleverness with one about ideas surviving across generations; supported by Sponging Eve and the female line)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["swim bladder → ____", "culture → ____", "vestigial (the floating hip bones) → ____", "inheritance → ____"],
+          "rows": 2,
+          "answers": [
+            "a gas-filled organ that keeps a fish afloat and throws back a strong echo",
+            "behavior invented, taught by example, and passed on socially rather than in the genes",
+            "a leftover body part that no longer does the job it evolved for",
+            "what an animal is given by its ancestors, in body or in behavior"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls the dolphin's air-breathing inheritance expensive. Explain the cost in your own words, and judge whether expensive is the right word.",
+            "Only about one in twenty Shark Bay dolphins sponge. Explain why that number is stronger evidence for culture than if every dolphin did it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it must surface to breathe in danger, under ice, and while giving birth, and can never sleep fully; judgement + reasoning)",
+            "(if all of them did it, instinct or genetics would explain it; a trick only some know, along one family line, points to learning)",
+            "(student question + a credible source type, such as a long-term field study or a peer-reviewed marine biology journal)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Using a tool is not impressive unless the animal invented it. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

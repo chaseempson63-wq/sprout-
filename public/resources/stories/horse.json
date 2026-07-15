@@ -1,0 +1,315 @@
+{
+  "key": "horse",
+  "title": "The Horse That Sleeps Standing Up",
+  "blurb": "The animal that dozes on its feet, walks on a single toe, and vanished from America before sailing back.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Horse That Sleeps Standing Up",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-horse", "templateLabel": "The Horse That Sleeps Standing Up", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the horse's long tail." },
+        {
+          "kind": "image",
+          "imageKey": "horse",
+          "notes": ["It can sleep standing up", "A baby horse is called a foal", "It eats grass all day", "Its ears can turn around"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a horse. A horse has four long legs. A horse can sleep standing up. It does not fall down. A baby horse is called a foal. The foal can stand up when it is one hour old. Soon it can run. Horses like to be together. They eat grass all day."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the horses in each row. Write how many in the box.",
+          "emoji": "🐎",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "horse    foal" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its baby.",
+          "pairs": [
+            { "left": "horse", "right": "foal" },
+            { "left": "dog", "right": "puppy" },
+            { "left": "cat", "right": "kitten" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own horse. Give it a long tail and some grass to eat.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Horse That Sleeps Standing Up",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-horse", "templateLabel": "The Horse That Sleeps Standing Up", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "horse",
+          "notes": ["It sleeps standing up", "Its legs can lock like a latch", "It sleeps only about three hours a day", "A foal can stand at one hour old", "Each ear can turn on its own"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Horse That Sleeps Standing Up",
+          "text": "A horse sleeps standing up. Its legs can lock, so it can rest without falling over. Horses only sleep for about three hours a day. They sleep in short naps, not all at once. To dream, a horse must lie down. So a herd takes turns. Some horses lie down to dream while the others stand and watch for danger. A baby horse is called a foal. A foal can stand up about one hour after it is born. By the next day it can run with the herd."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How can a horse rest without falling over?", "How long does a horse sleep each day?", "What must a horse do to dream?"],
+          "rows": 2,
+          "answers": ["its legs can lock", "about three hours", "it must lie down"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A horse can sleep standing ____.", "A baby horse is called a ____.", "To dream, a horse must lie ____.", "Some horses stand and ____ for danger."],
+          "wordBank": ["up", "foal", "down", "watch"],
+          "answers": ["up", "foal", "down", "watch"]
+        },
+        { "kind": "draw", "prompt": "Draw a herd of horses in a field. Draw one lying down and the others standing watch.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Horse That Sleeps Standing Up",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-horse", "templateLabel": "The Horse That Sleeps Standing Up", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "horse",
+          "notes": ["The leg locks with a stay apparatus", "Deep sleep only happens lying down", "Herds take turns keeping watch", "Horses sleep about three hours a day", "A horse is prey, not a hunter"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Horse That Sleeps on Its Feet",
+          "text": "A horse can fall asleep on its feet. Inside each leg is a set of tendons and ligaments that hook together like a latch. Scientists call it the stay apparatus. When the horse locks it, the leg holds itself up. No muscles have to work. The horse can doze for hours and never wobble. But there is a catch. Light sleep can happen standing up. Deep sleep, the kind with dreams, cannot. For that, a horse has to fold its legs and lie flat on its side. A horse lying flat is slow to get up, and a slow animal is an easy meal. So horses solve the problem together. In a herd, one or two lie down and sleep deeply while the rest stand around them, ears turning, watching. Later they swap. A horse that lives alone often will not lie down at all, and after a week or two it starts to stumble from missing its dreams. All of this comes from a simple fact. A horse is not a hunter. A horse is hunted, and it is built to leave in a hurry."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the stay apparatus, and what does it do?",
+            "Which kind of sleep can a horse not get while standing?",
+            "What do the other horses do while one horse lies down?",
+            "Why do you think a horse that lives alone will not lie down?"
+          ],
+          "rows": 2,
+          "answers": [
+            "tendons and ligaments that lock the leg so it holds itself up",
+            "deep sleep, the kind with dreams",
+            "they stand around it and watch for danger",
+            "(inference: nobody is there to keep watch, so it does not feel safe)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Horse That Sleeps on Its Feet", "How to Braid a Horse's Tail", "The Biggest Barn in the World"],
+          "answers": ["The Horse That Sleeps on Its Feet"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Tendons and ligaments hook together like a ____.", "Scientists call it the stay ____.", "A horse is not a hunter. A horse is ____."],
+          "wordBank": ["latch", "apparatus", "hunted"],
+          "answers": ["latch", "apparatus", "hunted"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: why is it useful for horses to sleep in a herd instead of alone?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Horse That Sleeps Standing Up",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-horse", "templateLabel": "The Horse That Sleeps Standing Up", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "horse",
+          "notes": ["Largest eyes of any land mammal", "Almost 350 degrees of vision", "Blind spot right under its nose", "About ten muscles move each ear", "Whiskers feel what the eyes miss", "Horses read other horses' ears"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built to Notice Everything",
+          "text": "A horse has the largest eyes of any land mammal. They are not on the front of its face like yours. They sit high on the sides of the skull, and that placement changes everything. Standing still, a horse can see almost the whole circle around itself, close to 350 degrees, without moving its head. It can graze and keep watch at the same time. The price is two blind spots. A horse cannot see directly behind its tail, and, stranger still, it cannot see the ground right under its own nose. The last few inches before its mouth are hidden. To fix this, a horse uses the stiff whiskers around its muzzle to feel what its eyes cannot reach. Trim those whiskers off and you take away a sense the horse cannot replace. The ears do similar work. Each ear is moved by about ten muscles, and it can swivel almost halfway around on its own. A horse can aim one ear forward and one ear back and listen to two places at once. Other horses read those ears. In one experiment, horses chose which bucket to walk to based on where a photographed horse's ears were pointing. When the ears in the photo were covered up, the choices fell apart. None of this is decoration. Wide eyes, feeling whiskers, and swiveling ears are the equipment of an animal whose whole plan is to notice a problem early and be gone before it arrives."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "How does the position of a horse's eyes let it graze and keep watch at once?",
+            "Explain why a horse needs whiskers on its muzzle.",
+            "What did the bucket experiment show about how horses use ears?",
+            "The passage says none of this is decoration. What is the author arguing with that sentence?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the eyes sit high on the sides of the skull, so it sees almost all the way around while its head is down",
+            "it cannot see the ground under its nose, so the whiskers feel what the eyes cannot reach",
+            "horses read the ear direction of another horse to decide where to go, and covering the ears broke the choice",
+            "(inference: every one of these features is a survival tool, not just an interesting detail)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A horse's eyes, whiskers, and ears are the survival kit of an animal built to spot danger and run",
+            "Horses are the smartest animals on a farm",
+            "Most animals can see behind themselves without turning around"
+          ],
+          "answers": ["A horse's eyes, whiskers, and ears are the survival kit of an animal built to spot danger and run"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["graze → ____", "swivel → ____", "muzzle → ____"],
+          "rows": 1,
+          "answers": ["to eat grass off the ground", "to turn or rotate in place", "the nose and mouth part of the face"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: a hunting animal like a wolf has both eyes facing forward, while a horse has eyes on the sides. Explain why each animal has the eyes it needs. Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Horse That Sleeps Standing Up",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-horse", "templateLabel": "The Horse That Sleeps Standing Up", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "horse",
+          "notes": ["The hoof is one toe, the middle one", "The horse family began about 55 million years ago", "The earliest ones were the size of a small dog", "Splint bones are leftover side toes", "Grass wore teeth down, so teeth grew taller", "The family tree was a thicket, not a ladder"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Standing on One Finger",
+          "text": "Look at a horse's foot and you are looking at one finger. Not a paw, not a hoof-shaped bundle of bones, but a single toe, the middle one, standing on its tip. The hoof itself is the toenail, thickened until it can carry half a ton at a gallop. The horse has been walking on tiptoe for millions of years. It did not start that way. The earliest animals in the horse family lived about 55 million years ago, and the best known of them was roughly the size of a small dog. It had four toes on each front foot and three on each back foot, and it moved through warm forest, browsing soft leaves. Spread toes work well in soft ground. They spread weight the way a snowshoe does. Then the climate dried and the forests thinned into open grassland. Out on the plains, the animals that survived were the ones that could run far and eat grass, and grass is punishing food, full of grit and silica that files teeth flat. Over millions of years, horse teeth grew taller and harder. Legs grew longer. The side toes carried less and less weight, shrank, and finally lifted off the ground entirely. Today they are still there, hidden: two thin splint bones fused along the cannon bone, the ghosts of toes two and four. Museums love to line this up in a row. Small forest creature, medium horse, large horse, each one a little taller with a little less toe, marching left to right toward the animal in the paddock. It makes a tidy poster and it is misleading. The real family tree was a thicket, not a ladder. Dozens of branches ran at the same time, some with three toes, some large, some small, most of them ending in extinction with no descendants at all. Three-toed horses and one-toed horses grazed the same plains for millions of years. The modern horse is not the goal that evolution was aiming at. It is the one branch that happened to still be standing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is a hoof, according to the passage? Quote the phrase the author uses.",
+            "Explain why spread toes stopped being useful. Use evidence from the passage.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author says the museum row is misleading. Explain what is wrong with it."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the single toe + the shift from forest to grassland + the bush, not ladder, point)",
+            "a toenail; quote: The hoof itself is the toenail",
+            "spread toes suit soft forest ground, but the forests thinned into open plains where running far mattered more, so the side toes shrank and lifted off",
+            "(inform, with a persuasive turn at the end: it explains facts, then argues the museum row is misleading)",
+            "(it shows a straight ladder toward the modern horse when the real tree was a thicket of branches, most of which died out)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["browsing → ____", "silica → ____", "splint bones → ____", "thicket → ____"],
+          "rows": 1,
+          "answers": [
+            "feeding on leaves and soft plants",
+            "hard gritty material in grass that wears teeth down",
+            "the shrunken leftover bones of the side toes",
+            "a dense tangle of branches growing in many directions"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Three-toed and one-toed horses grazed the same plains for millions of years. Why does that fact damage the ladder picture?",
+            "Why might a museum choose the tidy row anyway?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(if both existed at once, one cannot simply be a step on the way to the other)",
+            "(opinion: a simple row is easier to read and fits on a wall, even though it loses the truth)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a museum show the tidy row because it is easier to understand, or the messy real family tree because it is accurate? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Horse That Sleeps Standing Up",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-horse", "templateLabel": "The Horse That Sleeps Standing Up", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "horse",
+          "notes": ["The horse family evolved in North America", "Gone from the Americas about 10,000 years ago", "Domestic horses trace to the Volga and Don steppe", "That lineage spread from about 2200 BCE", "Columbus brought horses back in 1493", "Przewalski's horse may be feral, not truly wild"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Horse That Came Home",
+          "text": "The horse is a North American animal. That sentence surprises almost everyone, including people who live in horse country, and it is the beginning of one of the strangest round trips in the history of life. For roughly 55 million years, the horse family evolved on this continent. Nearly the whole story happened here: the small forest browsers, the drying of the climate, the shift to grass, the long legs, the loss of the side toes. North America was the workshop. Every so often, when sea levels fell and the Bering land bridge rose out of the water, some of the workshop's products walked west into Asia and kept going. That is how horses reached Europe, and later Africa, where their relatives became zebras and wild donkeys. Then, around ten thousand years ago, at the end of the last ice age, horses vanished from the Americas completely. Nobody can say for certain why. The climate was lurching, the grasslands were changing, and human hunters had recently arrived with sharp tools. Scientists still argue about how the blame should be divided, and the honest answer is that we do not know. What is certain is the outcome: for ten thousand years, the continent where the horse was invented had no horses on it at all. The animal survived in Eurasia, and there it met people. Recent genetics has sharpened the story considerably. Every ordinary riding horse alive today, from a Shetland pony to a racehorse, traces back to a single population from the steppe north of the Black and Caspian Seas. Around 2200 BCE that lineage exploded outward and replaced nearly every other horse population across Eurasia within a few centuries. That is fast. It suggests people were not just keeping horses. They were spreading a technology, and the horses that came with it were bred for something new: a calmer temperament and a stronger back. There is a wrinkle worth holding onto. For a long time, Przewalski's horse of the Mongolian steppe was called the last truly wild horse, the one line that people never touched. Then researchers sequenced ancient horse bones from a settlement in Kazakhstan and found that those managed, milked horses were not the ancestors of modern domestic horses. They were the ancestors of Przewalski's horse. On that reading, the last wild horse may be a feral one: a domesticated animal that got loose and went back to the grass. Not everyone accepts the interpretation, and the argument is live. The round trip closed in 1493, when Columbus carried horses on his second voyage across the Atlantic. Within a couple of centuries their descendants were running loose across plains their ancestors had left ten thousand years earlier. The mustangs of the American West are not a wild species returning to a wild home. They are escaped domestic animals standing in the exact landscape where the whole horse experiment began. Whether that makes them native or invasive has been argued in courtrooms, and it depends less on biology than on where you decide the story starts."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author calls North America the workshop. Explain the metaphor and what it does for the reader. Cite the sentence.",
+            "How does the author handle the cause of the American extinction? Cite the exact wording and explain why that choice matters.",
+            "What evidence suggests people were spreading a technology rather than simply keeping horses? Cite the text.",
+            "The final sentence says the question depends less on biology than on where you decide the story starts. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it casts the continent as the place the horse was built and exported from; cite: North America was the workshop)",
+            "(the author refuses to pick a cause; cite: the honest answer is that we do not know; it separates what is known from what is argued)",
+            "(the replacement was too fast to be chance; cite: They were spreading a technology, plus the bred traits of calmer temperament and a stronger back)",
+            "(it reframes native versus invasive as a question about the chosen timeframe, not the animal; earned by the extinction and 1493 return evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["feral → ____", "lineage → ____", "steppe → ____", "invasive → ____"],
+          "rows": 2,
+          "answers": [
+            "a domesticated animal living wild again",
+            "a line of descent from one ancestor population",
+            "a wide, dry grassland with few trees",
+            "a species living where it does not belong and causing harm"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author admits that not everyone accepts the Przewalski's horse finding. Why include a disputed claim at all, instead of leaving it out?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it shows science as an open argument and keeps the author honest about certainty)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: mustangs are an invasive species and do not belong on the American plains. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

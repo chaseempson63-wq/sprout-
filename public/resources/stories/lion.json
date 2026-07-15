@@ -1,0 +1,331 @@
+{
+  "key": "lion",
+  "title": "The Only Cat That Lives in a Family",
+  "blurb": "Almost every cat on Earth hunts alone. The lion is the one exception, and biologists have argued for fifty years about why.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Only Cat That Lives in a Family",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-lion", "templateLabel": "The Only Cat That Lives in a Family", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the lion's big fluffy mane." },
+        {
+          "kind": "image",
+          "imageKey": "lion",
+          "notes": ["Male lions have a big mane", "Lions live together in a family", "A baby lion is called a cub", "Lions sleep most of the day", "You can hear a roar from far away"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a lion. The lion has thick fur around its head. That fur is called a mane. Lions live together in a family. The family is called a pride. Baby lions are called cubs. The cubs play all day. They jump on each other's tails. Then everyone lies down for a nap. When a lion roars, the sound goes a long way. Every animal stops and listens."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the lions in each row. Write how many in the box.",
+          "emoji": "🦁",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "mane    roar" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line from each animal to its baby name.",
+          "pairs": [
+            { "left": "lion", "right": "cub" },
+            { "left": "cat", "right": "kitten" },
+            { "left": "dog", "right": "puppy" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own lion. Give it a big mane.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Only Cat That Lives in a Family",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-lion", "templateLabel": "The Only Cat That Lives in a Family", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "lion",
+          "notes": ["A lion family is called a pride", "A baby lion is a cub", "Only male lions grow a mane", "The moms do most of the hunting", "Lions rest about 20 hours a day", "A roar carries five miles"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Only Cat That Lives in a Family",
+          "text": "A lion is a big cat. Most big cats live alone. Lions do not. Lions live in a family called a pride. In the pride there are mothers, aunts, sisters, and lots of cubs. The mothers do most of the hunting. They hunt together, and they hunt at night. Lions rest for most of the day. They lie in the shade with their eyes half shut. When the sun goes down, the pride wakes up. A lion's roar can be heard from five miles away. It tells other lions, this land belongs to my family."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a lion family called?", "Who does most of the hunting?", "When does the pride wake up?"],
+          "rows": 2,
+          "answers": ["a pride", "the mothers", "when the sun goes down"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A lion family is called a ____.", "A baby lion is a ____.", "The thick fur on a male lion's head is a ____.", "Lions hunt at ____."],
+          "wordBank": ["pride", "cub", "mane", "night"],
+          "answers": ["pride", "cub", "mane", "night"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each lion word to what it means.",
+          "pairs": [
+            { "left": "pride", "right": "a lion family" },
+            { "left": "cub", "right": "a baby lion" },
+            { "left": "mane", "right": "thick fur around the head" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the pride resting in the shade. Add some cubs playing.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Only Cat That Lives in a Family",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-lion", "templateLabel": "The Only Cat That Lives in a Family", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "lion",
+          "notes": ["Panthera leo", "A lion family is called a pride", "Lionesses do most of the hunting", "A roar carries about five miles", "Lions rest up to 20 hours a day", "Cubs are born with faint spots that fade"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cat That Lives in a Family",
+          "text": "There are about forty kinds of wild cat in the world. Almost every one of them hunts alone. A tiger walks its forest by itself. A leopard drags its meal up a tree so it can eat in peace. The lion is the exception. Lions live in a group called a pride, and a pride is really a family of related females. Grandmothers, mothers, sisters, aunts, and cousins stay together their whole lives. The cubs grow up in a pile, drinking milk from any mother who will let them. The lionesses do most of the hunting, and they hunt as a team. One lioness circles wide to push the herd. The others wait in the grass where the herd will run. Even so, most hunts fail. Only about one in four ends in a meal. The males look impressive with their manes, but their job is different. They walk the edges of the family's land and roar into the dark. That roar carries five miles. It is not a warning for the pride. It is a message to every lion outside it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What do almost all other big cats do that lions do not?",
+            "Who is in a pride?",
+            "How many hunts end in a meal?",
+            "Why do you think the males roar at the edges of the pride's land?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they hunt and live alone",
+            "a family of related females, their cubs, and the males",
+            "about one in four",
+            "(inference: to warn other lions away without having to fight them)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Cat That Lives in a Family", "How to Train a House Cat", "The Tallest Tree in Africa"],
+          "answers": ["The Cat That Lives in a Family"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Most big cats hunt ____.", "A lion family is called a ____.", "The ____ do most of the hunting.", "A roar carries about five ____."],
+          "wordBank": ["alone", "pride", "lionesses", "miles"],
+          "answers": ["alone", "pride", "lionesses", "miles"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather hunt alone like a tiger or in a team like a lion, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Only Cat That Lives in a Family",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-lion", "templateLabel": "The Only Cat That Lives in a Family", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lion",
+          "notes": ["Panthera leo", "The only big cat that lives in a family group", "A pride is related females and their cubs", "Young males leave and travel in coalitions", "About one hunt in four succeeds", "A dark mane signals a healthy male"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Exception in the Cat Family",
+          "text": "The cat family is a family of loners. Roughly forty species of wild cat prowl the planet, and almost all of them hunt by themselves, meet only to mate, and go their separate ways. The lion is the exception, and biologists have argued for decades about why. A pride is not a random crowd. It is a family of related lionesses: sisters, mothers, daughters, cousins, who are born into the pride and usually stay for life. Their cubs are raised communally. Lionesses often give birth within weeks of each other and will nurse each other's cubs, so a cub can feed from an aunt without much fuss. The males are visitors. Young males are pushed out of their birth pride at around two or three and spend years as nomads, often traveling with their brothers in a group called a coalition. If a coalition is strong enough, it takes over a pride and holds it. Tenure is short. Two or three years later, a stronger coalition arrives and the cycle repeats. Hunting is cooperative, and it is harder than it looks. Lionesses spread out, some driving prey forward while others wait in the grass. Even with teamwork, roughly three out of four hunts end with nothing. A pride survives on the rare success and on whatever it can steal from hyenas. Then there is the mane. It looks like armor, but researchers who studied lions in the Serengeti found it works mainly as a signal. Lionesses paid more attention to darker manes, and rival males were more reluctant to approach them. A dark mane advertises a well fed, healthy animal, and it does so from a distance, before anyone has to fight."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is a coalition, and how does one get a pride?",
+            "The passage says the cubs are raised communally. Explain what that looks like in a pride.",
+            "The mane looks like armor but works as a signal. Explain the difference in your own words.",
+            "Male lions hold a pride for only two or three years. Why do you think their time is so short?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a group of males, often brothers, who travel together; they take a pride by force",
+            "lionesses give birth around the same time and nurse each other's cubs",
+            "(armor would protect him in a fight; a signal tells rivals he is strong so the fight never happens)",
+            "(inference: a stronger coalition eventually arrives and drives them out)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The lion is the one cat that lives in a family, and almost everything about it follows from that",
+            "Lions are the largest cats in the world",
+            "Hyenas and lions are close relatives"
+          ],
+          "answers": ["The lion is the one cat that lives in a family, and almost everything about it follows from that"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["coalition → ____", "communally → ____", "nomad → ____", "tenure → ____"],
+          "rows": 1,
+          "answers": [
+            "a group of males who team up and travel together",
+            "together, as a group, rather than each on its own",
+            "an animal with no fixed home that keeps moving",
+            "the length of time a male holds a pride"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: living in a pride means sharing every meal. Is a pride worth it for a lioness? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Only Cat That Lives in a Family",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-lion", "templateLabel": "The Only Cat That Lives in a Family", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lion",
+          "notes": ["Panthera leo", "Prides are built on females who stay for life", "Males hold a pride two to three years", "Mane color signals condition, and traps heat", "About 20,000 wild lions left, nearly all in Africa", "Several hundred Asiatic lions live in Gir Forest, India"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why One Cat Learned to Live Together",
+          "text": "Every cat is a solitary hunter, or nearly every cat. Of roughly forty wild cat species, the lion alone builds a permanent society. That single exception has occupied biologists for half a century, because sociality is expensive. A pride shares every kill, so each lioness eats less than she would alone. Cooperative hunting does not clearly pay for itself either: a lioness hunting alone often does about as well per meal as one hunting in a group. So why gather at all? The strongest answer is real estate. In the Serengeti, prides do not defend hunting grounds so much as they defend the good ones: river confluences, thick cover near water, the places where prey must eventually come. Those sites are scarce and worth fighting for, and a lone lioness cannot hold one. A group can. The pride, in this reading, is less a hunting party than a standing army built around a piece of land. Defense also explains the cubs. When a new coalition of males takes over a pride, it usually kills the cubs fathered by the previous males. It is brutal and it is arithmetic: a nursing lioness will not conceive, and the incoming males may hold the pride for only two or three years before they are driven out. Killing the cubs returns the females to breeding within days. Lionesses resist. They hide their litters, they fight, and they raise their cubs together in a creche, which is far harder for a strange male to break up than a single mother alone. Even the mane is a compromise rather than a triumph. Researchers in Tanzania used life sized dummy lions to test it, and found that lionesses approached the dark maned dummy while rival males avoided it. A dark mane broadcasts condition. But dark fur absorbs heat, and dark maned males run measurably hotter in the sun. The lion carries an advertisement it cannot take off. The species is thinner on the ground than most people assume. A century ago perhaps two hundred thousand lions ranged across Africa and into Asia. Today, somewhere around twenty thousand remain, almost all in Africa, plus several hundred Asiatic lions confined to one forest in India. The most recognizable animal on Earth occupies a fraction of the ground it once held."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says sociality is expensive. What does it cost a lioness, and why is that a puzzle?",
+            "Explain the real estate answer. Quote the phrase the passage uses to describe what a pride really is.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author put it there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the sociality puzzle, the territory answer, and the decline)",
+            "she shares every kill and eats less than she would alone, and group hunting does not clearly pay her back",
+            "prides defend scarce high quality sites a lone lioness cannot hold; quote: a standing army built around a piece of land",
+            "(inform, with detail: it defines terms and reports research; some persuasive tone in the closing)",
+            "(the most famous animal alive holds almost none of its old range; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["sociality → ____", "coalition → ____", "creche → ____", "confluence → ____"],
+          "rows": 1,
+          "answers": [
+            "living together in a permanent group",
+            "a team of males who take and hold a pride together",
+            "a shared nursery where mothers pool and guard their cubs",
+            "the place where two rivers meet"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls the killing of cubs arithmetic. Explain what that word is doing in that sentence.",
+            "The mane is described as an advertisement the lion cannot take off. Why is that a problem in a hot country?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it frames the behavior as cold math about breeding time rather than cruelty)",
+            "(inference: dark fur absorbs heat, so the better the signal the more he overheats, and he cannot switch it off)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should people manage wild lion populations by fencing and moving them, or leave them alone? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Only Cat That Lives in a Family",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-lion", "templateLabel": "The Only Cat That Lives in a Family", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lion",
+          "notes": ["Panthera leo", "The only truly social cat", "Territory quality, not hunting, best explains the pride", "Square, fat loaded vocal folds make the roar cheap to produce", "The roar carries about five miles", "Wild numbers down from roughly 200,000 to roughly 20,000"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cat That Broke the Rule",
+          "text": "The cat family is, almost to a species, solitary. A tiger holds a territory alone. A leopard hauls its kill into a tree to eat away from everything that would take it from him. Of the roughly forty wild cats, exactly one has built a permanent society, and the puzzle of why has run for fifty years without a clean ending. Start with what does not explain it. The obvious answer is hunting: many mouths bring down big prey. It sounds right, and the data refuse to cooperate. Long term work in the Serengeti found that a lioness hunting alone often takes home as much meat per meal as one hunting in a group, because whatever the team gains in success it gives back at the carcass, where everyone eats. The classic paper on the question is titled, bluntly, Why lions form groups: food is not enough. Group living costs a lioness food. Something else must be paying her back. The best current answer is land. Prides do not defend hunting range at large; they defend particular pieces of it. River confluences, the thick cover at a bend, the last reliable water in a dry season: these are the sites prey must come to, and they are rare. A lioness cannot hold one by herself. Three sisters can, and their daughters will inherit it. Seen this way a pride is not a hunting party. It is a lineage occupying real estate, and the hunting is incidental. Sociality also creates its own dangers, which sociality then has to solve. Male lions are not pride members in the way females are. They arrive as a coalition, often brothers, take a pride by force, and hold it for two or three years before a stronger coalition removes them. A new coalition typically kills the cubs it finds. This is not gratuitous. A nursing lioness does not conceive, and the males' tenure is shorter than the time those cubs need. Killing them returns the females to breeding almost immediately. The lionesses answer in kind: they synchronize their births, they pool their cubs into a creche and defend it collectively, and a pride of massed mothers is a far worse proposition for an incoming male than a single female with a litter. Much of what looks like lion family warmth is a countermeasure. Even the mane turns out to be a bargain rather than a gift. Researchers in Tanzania built life sized dummy lions with interchangeable manes and watched what real lions did. Lionesses approached the dark maned dummies. Rival males kept away from them. The mane is not armor; it is a billboard, and what it advertises is condition, readable across open grass before anyone commits to a fight. The cost is thermal. Dark fur absorbs more heat, and dark maned males measurably run hotter. In a hot country, the better a lion advertises, the more he suffers for it. Then the roar, which carries about five miles. That range is not simply a matter of lung power. In most mammals the vocal folds are triangular and need considerable pressure to vibrate. In lions and tigers, the folds are squared off and loaded with fat, and they flap under low pressure like a flag rather than snapping like a rubber band. These cats also trade a fully hardened hyoid bone for an elastic ligament, which gives the larynx room to work. A lion is loud less because it pushes harder than because its instrument is shaped for it. None of this has helped much. Perhaps two hundred thousand lions lived across Africa, the Middle East, and India a century ago. Roughly twenty thousand remain, plus several hundred Asiatic lions in a single Indian forest. A growing share of the survivors live in fenced reserves, managed, counted, and trucked between fences to keep the bloodlines from narrowing. The animal that organized itself around holding ground now holds it because we have drawn a line around it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the hunting explanation fails. Cite the exact phrase the passage borrows from the classic paper.",
+            "State the land explanation in your own words, then cite the sentence that sums a pride up.",
+            "The passage calls cub killing not gratuitous. Explain the reasoning it offers, and cite the phrase that describes what the lionesses build in response.",
+            "Analyze the final sentence. What is the author claiming, and does the rest of the passage earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the lion's social life is best explained by defending scarce ground, and it is now nearly gone)",
+            "(group hunting returns no extra meat per lioness because the kill is shared; cite: food is not enough)",
+            "(prides hold rare high value sites a single lioness cannot defend; cite: It is a lineage occupying real estate, and the hunting is incidental)",
+            "(a nursing female will not breed and the males' tenure is short, so killing cubs restarts breeding; cite: a creche)",
+            "(the lion's decline is human made, not a failure of the animal; supported by the range collapse and the fenced reserve evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["gratuitous → ____", "countermeasure → ____", "tenure → ____", "incidental → ____"],
+          "rows": 2,
+          "answers": [
+            "done without good reason or purpose",
+            "an action taken specifically to block a threat",
+            "the period during which someone holds a position",
+            "happening alongside the main thing but not the point of it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says survivors are trucked between fences to keep the bloodlines from narrowing. Explain why narrow bloodlines threaten a species over the long run.",
+            "The author writes that much of what looks like lion family warmth is a countermeasure. What is that sentence doing to the reader, and is it fair to the evidence?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(low genetic diversity means less resistance to disease and less ability to adapt)",
+            "(it reframes a warm image as strategy; fair, since the creche is presented as a defense against incoming males)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: the pride exists to hunt, and everything else about lion society follows from that. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

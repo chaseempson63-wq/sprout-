@@ -1,0 +1,319 @@
+{
+  "key": "hedgehog",
+  "title": "The Hedgehog With Five Thousand Spines",
+  "blurb": "The small night animal that folds itself into a ball of spines, and paints its own back with foam for reasons nobody can explain.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Hedgehog With Five Thousand Spines",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-hedgehog", "templateLabel": "The Hedgehog With Five Thousand Spines", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the hedgehog's little nose." },
+        {
+          "kind": "image",
+          "imageKey": "hedgehog",
+          "notes": ["Its back is covered in spines", "It rolls into a ball", "It comes out at night", "It snuffles like a tiny pig", "It hunts for bugs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a hedgehog. It is small and brown. Its back is covered in spines. The spines are sharp. When the hedgehog is scared, it rolls into a ball. Now the spines point out. The fox cannot bite a ball of spines. The hedgehog waits. Then it opens up. It snuffles off to look for a bug to eat."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bugs the hedgehog found. Write how many in the box.",
+          "emoji": "🐛",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ball    night" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to where it sleeps.",
+          "pairs": [
+            { "left": "hedgehog", "right": "leaf pile" },
+            { "left": "bird", "right": "nest" },
+            { "left": "dog", "right": "basket" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a hedgehog rolled up in a ball. Give it lots of spines.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Hedgehog With Five Thousand Spines",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-hedgehog", "templateLabel": "The Hedgehog With Five Thousand Spines", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "hedgehog",
+          "notes": ["About five thousand spines", "Spines are made of keratin, like your fingernails", "It is not a porcupine", "A baby is called a hoglet", "It sleeps all day and hunts at night"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hedgehog With Five Thousand Spines",
+          "text": "A hedgehog is not a porcupine, and it is not a rodent. It is a small night animal with about five thousand spines on its back. Each spine is hollow and stiff. It is made of keratin, the same stuff as your fingernails. A hedgehog cannot shoot its spines. Instead it has a ring of muscle around the edge of its back. When the hedgehog is frightened, that muscle pulls tight like the string on a purse. The hedgehog folds its head and legs inside, and it becomes a ball no fox wants to chew."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many spines does a hedgehog have?", "What are the spines made of?", "What does a hedgehog do when it is frightened?"],
+          "rows": 2,
+          "answers": ["about five thousand", "keratin, the same as your fingernails", "it rolls into a ball"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A hedgehog has about five thousand ____.", "The spines are made of ____.", "A ring of ____ pulls tight like a string.", "The hedgehog folds up into a ____."],
+          "wordBank": ["spines", "keratin", "muscle", "ball"],
+          "answers": ["spines", "keratin", "muscle", "ball"]
+        },
+        { "kind": "draw", "prompt": "Draw a hedgehog hunting at night. Add the moon and some bugs in the grass.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Hedgehog With Five Thousand Spines",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-hedgehog", "templateLabel": "The Hedgehog With Five Thousand Spines", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "hedgehog",
+          "notes": ["Its name means hedge plus hog", "It grunts like a little pig", "Babies are born with soft skin over their spines", "Each spine lasts about a year", "It hunts with its nose, not its eyes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How the Hedgehog Got Its Name",
+          "text": "A hedgehog spends the day asleep under a pile of leaves. At dusk it wakes, stretches, and goes hunting. It cannot see well, so it hunts with its nose and its ears. It pushes through grass, snuffling and grunting, listening for beetles, worms, and slugs. That grunting is where half its name comes from. It sounds like a tiny pig, and it forages along hedges, so people called it a hedgehog. A baby hedgehog is called a hoglet. Here is the clever part. A hoglet is born with its spines already grown, but they are hidden under a layer of puffy skin filled with fluid. That soft cover protects the mother while the babies are being born. Within a few hours the skin shrinks back and the first white spines push through. Over the next weeks, darker spines grow in around them. A grown hedgehog carries about five thousand spines. Each one lasts about a year, then falls out and a new one grows in its place."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where does a hedgehog sleep during the day?",
+            "Which two senses does a hedgehog hunt with?",
+            "What is a baby hedgehog called?",
+            "Why do you think a hoglet is born with soft skin over its spines?"
+          ],
+          "rows": 2,
+          "answers": [
+            "under a pile of leaves",
+            "its nose and its ears",
+            "a hoglet",
+            "(inference: so the sharp spines do not hurt the mother during birth)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How the Hedgehog Got Its Name", "The Best Way to Trim a Hedge", "Why Pigs Live on Farms"],
+          "answers": ["How the Hedgehog Got Its Name"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A hedgehog wakes up at ____.", "A baby hedgehog is called a ____.", "A hedgehog forages along ____."],
+          "wordBank": ["dusk", "hoglet", "hedges"],
+          "answers": ["dusk", "hoglet", "hedges"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of the hedgehog's night sounds most interesting to you, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Hedgehog With Five Thousand Spines",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-hedgehog", "templateLabel": "The Hedgehog With Five Thousand Spines", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hedgehog",
+          "notes": ["A ring of muscle closes the ball like a drawstring", "Self-anointing: it paints froth on its own spines", "Its muscles resist some snake venom", "Hibernating, its heart slows to about 20 beats a minute", "Related to shrews and moles, not to porcupines"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Strangest Thing a Hedgehog Does",
+          "text": "Everyone knows the ball. Threaten a hedgehog and it tucks its head down, pulls its legs in, and draws a ring of muscle tight around the edge of its back until it is a spiny sphere with no soft part left showing. The muscle works like the drawstring on a bag. A fox can roll the ball around all night and get nothing for it. But the strangest thing a hedgehog does has no clear explanation at all. Give a hedgehog a new smell, a strong one, and it may begin to chew. It chews and chews until its mouth fills with froth. Then it twists its head around and paints that froth across its own spines with its tongue, reaching parts of its back you would think it could not reach. Scientists call this self-anointing. Nobody is certain why hedgehogs do it. Some think the foam makes them taste bad. Some think it hides their scent. Some think it is closer to a habit than a plan. Hedgehogs have another quiet advantage. Their muscles contain a protein that blocks some snake venom, so a hedgehog can take a bite from an adder that would kill an animal its size. It does not make them safe. It makes them harder to finish. In cold places, hedgehogs hibernate. A hibernating hedgehog lets its body go almost as cold as the air around it. Its heart slows from about one hundred and ninety beats a minute to around twenty. It looks dead. It is not. It is waiting for spring."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain how a hedgehog turns itself into a ball. What does the passage compare the muscle to?",
+            "What is self-anointing, in your own words?",
+            "The passage says the venom protein does not make hedgehogs safe, it makes them harder to finish. What is the difference?",
+            "Why do you think scientists still cannot agree on why hedgehogs self-anoint?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it tucks its head and legs in and a ring of muscle pulls the spiny skin tight; compared to the drawstring on a bag",
+            "(chewing something strong-smelling into froth and spreading it over its own spines)",
+            "(safe would mean nothing can hurt it; harder to finish means it can survive a bite that would kill another animal)",
+            "(inference: the behavior is hard to test and the hedgehog cannot tell us why it does it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A hedgehog's famous defense is only one of several, and its oddest behavior is still unexplained",
+            "Hedgehogs are the most dangerous animal in the forest",
+            "Snakes and hedgehogs are close relatives"
+          ],
+          "answers": ["A hedgehog's famous defense is only one of several, and its oddest behavior is still unexplained"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["drawstring → ____", "self-anointing → ____", "hibernate → ____"],
+          "rows": 1,
+          "answers": [
+            "a cord that pulls an opening closed",
+            "spreading chewed-up froth over your own body",
+            "to shut the body down and sleep through the cold season"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which hedgehog trick would be most useful to have, the rolling, the foam, or the venom resistance? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Hedgehog With Five Thousand Spines",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-hedgehog", "templateLabel": "The Hedgehog With Five Thousand Spines", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hedgehog",
+          "notes": ["Pliny the Elder claimed they carried apples on their spines", "It can walk more than a mile in one night", "Hibernation drops its heart to about 20 beats a minute", "Listed as Near Threatened in 2024", "A fist-sized gap in a fence is called a hedgehog highway"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Apple Myth and the Fence Problem",
+          "text": "Pliny the Elder, writing in Rome almost two thousand years ago, reported that hedgehogs gathered fallen apples by rolling on them and carrying the fruit away stuck on their spines. It is a wonderful image. It is also wrong. Hedgehogs eat beetles, worms, caterpillars, and slugs, and an apple on the back would be no use to an animal that cannot reach it. Yet the story survived for centuries, copied from book to book, because nobody checked and everybody liked it. What hedgehogs actually do is less charming and more impressive. A European hedgehog may cover a mile or more in a single night, nose down, snuffling along hedges and ditches, hunting until dawn. Its eyes are poor. Its nose and ears do the work. When winter closes in, it builds a nest of leaves and shuts itself down: body temperature dropping to near the air temperature, heartbeat falling from roughly one hundred ninety beats a minute to twenty, breathing so shallow you would swear it had died. It wakes now and then, briefly, then sleeps again until spring. The trouble is that hedgehogs are built for a landscape that is disappearing. They need hedges, rough grass, leaf piles, and above all room to roam. Modern yards are tidy, and they are fenced. A solid fence with no gap at the bottom turns a garden into an island, and an island is no use to an animal that needs to walk a mile a night to eat. British hedgehog numbers have fallen sharply since the 1950s. In 2024 the European hedgehog was listed as Near Threatened on the international Red List. The fix, oddly, is small. People cut a gap the size of a fist in the base of the fence and call it a hedgehog highway. Dozens of connected gardens become one territory again. It is one of the few conservation problems in the world that an ordinary person can partly solve with a saw on a Saturday morning."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the author say the apple story is wrong? Give the reason the passage supplies.",
+            "The passage explains why a false story lasted for centuries. Quote the exact phrase it uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the fence problem in your own words. Why is a tidy, fenced yard bad for a hedgehog?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the myth, the real animal, and the fence problem)",
+            "hedgehogs eat insects, not apples, and could not reach fruit stuck on their own back",
+            "quote: because nobody checked and everybody liked it",
+            "(mostly inform, with a persuasive turn at the end; details: it corrects a myth with facts, then urges a fix)",
+            "(inference: a hedgehog needs to roam a mile a night, and a solid fence seals it into a yard too small to feed it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["forage → ____", "territory → ____", "conservation → ____", "Near Threatened → ____"],
+          "rows": 1,
+          "answers": [
+            "to search around for food",
+            "the area an animal roams and feeds in",
+            "work to protect wildlife and habitats",
+            "a warning level meaning a species is close to becoming at risk"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author ends with a saw on a Saturday morning. Why finish there instead of with the Red List?",
+            "Nothing is hunting hedgehogs to extinction. Explain how a species can be in danger anyway."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it leaves the reader with an action they can take, which is more hopeful and more useful than a statistic)",
+            "(inference: habitat loss and fragmentation can starve or strand a species without any predator involved)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: whose job is it to fix the fence problem, ordinary homeowners or the government? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Hedgehog With Five Thousand Spines",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-hedgehog", "templateLabel": "The Hedgehog With Five Thousand Spines", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hedgehog",
+          "notes": ["Order Eulipotyphla: closer to shrews and moles than to rodents", "Convergent evolution with porcupines and echidnas", "Each spine is a hollow keratin tube with internal braces", "The orbicularis muscle closes the ball like a drawstring", "Spines double as shock absorbers in a fall", "Near Threatened as of 2024"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Three Animals, One Answer",
+          "text": "Look at a hedgehog, a porcupine, and an echidna side by side and you would swear they were cousins. All three are small, round, and covered in spines. None of them are closely related. The hedgehog is an insect eater, closer to shrews and moles than to anything else. The porcupine is a rodent, a relative of rats and beavers. The echidna is a monotreme, an egg-laying mammal whose nearest living relative is the platypus. The lines that led to them separated long before any of them existed, in some cases more than a hundred million years ago. Then, independently, each one arrived at the same answer: grow hairs, make them stiff, point them outward. Biologists call this convergent evolution. When a problem has one good solution, evolution keeps finding it, from different directions, with no coordination at all. The three did not build the same spine, though. A porcupine's quill is barbed at the tip and detaches on contact, which is why it ends up in a dog's face. A hedgehog's spine does neither. It stays attached, it carries no barbs, and it is closer to a piece of engineering than to a weapon. Each spine is a hollow tube of keratin, the same protein in your fingernails, braced on the inside by thin plates that keep it from crumpling. At its base is a narrow, flexible neck seated in a small ball of muscle. That neck lets the spine bend and spring back rather than snap, and it soaks up shock. This is why a hedgehog can fall from a height that would injure a similar animal and simply walk away. It lands on five thousand tiny shock absorbers. The rolling is the other half of the system. Around the rim of the hedgehog's spiny back runs a circular muscle, the orbicularis, working like the drawstring on a purse. When it contracts, the spiny skin is hauled down and inward over the head, the flanks, and the rump, and the soft face, belly, and legs disappear inside. What remains is a sphere with no handle and no seam. A fox can bat it, roll it, and mouth it, and unless it has extraordinary patience, the hedgehog does not much care. Here is the part worth arguing about. This animal, superbly defended against everything that hunts it, is in trouble anyway. British hedgehog numbers have collapsed since the 1950s, and in 2024 the European hedgehog was listed as Near Threatened. Nothing ate them. The landscape simply changed. Hedgerows were pulled out to make larger fields. Rough ground was mowed flat. Gardens were sealed with solid fence panels driven into the soil, and an animal that needs to walk a mile a night found itself closed inside a rectangle of lawn. Roads finished the job. The spines answer a fox. They have no answer for a fence. That is the uncomfortable lesson buried inside an animal we usually file under cute. An adaptation is only ever an answer to the world that shaped it, and we are changing the world far faster than the answers can be rewritten."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain convergent evolution using the passage's three animals. Cite the exact phrase that states the shared solution.",
+            "Contrast a porcupine quill with a hedgehog spine, and explain why the passage calls the spine engineering rather than a weapon.",
+            "Identify the shift in the passage: where does it turn, and how does the author signal it?",
+            "Analyze the closing claim that the spines answer a fox but have no answer for a fence. What is that sentence doing, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(three unrelated animals evolved spines separately; cite: grow hairs, make them stiff, point them outward)",
+            "(the quill is barbed and detaches; the spine stays attached, has no barbs, and works as a braced tube and shock absorber)",
+            "(at Here is the part worth arguing about; a short blunt sentence pivots from admiration to loss)",
+            "(it reframes the whole passage: a perfect defense is useless against a threat evolution never met; earned by the habitat and road evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["convergent evolution → ____", "monotreme → ____", "adaptation → ____", "independently → ____"],
+          "rows": 2,
+          "answers": [
+            "unrelated species separately evolving the same solution",
+            "an egg-laying mammal, such as the platypus or echidna",
+            "a trait shaped by evolution to solve a problem in an animal's environment",
+            "separately, without influencing one another"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says nothing ate them. Explain why habitat loss can be more dangerous to a species than a predator.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a predator removes individuals while habitat loss removes the conditions the whole population needs, and defenses cannot evolve against it fast enough)",
+            "(student question plus a credible source type, such as a peer-reviewed population survey)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal that is perfectly adapted to its habitat is the most fragile animal of all, not the strongest. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

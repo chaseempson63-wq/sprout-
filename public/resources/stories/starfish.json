@@ -1,0 +1,320 @@
+{
+  "key": "starfish",
+  "title": "The Star That Is Not a Fish",
+  "blurb": "No brain, no blood, no bones. It runs on seawater and walks on hundreds of tiny feet.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Star That Is Not a Fish",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-starfish", "templateLabel": "The Star That Is Not a Fish", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Count the arms with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "starfish",
+          "notes": ["It has five arms", "It lives in the sea", "It is not really a fish", "It walks very slowly"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a starfish. It lives in the sea. Look at its five arms. Count them with your finger. A starfish is not really a fish. It has no fins. It has tiny feet under each arm. The feet are very small. They pull the starfish along the rock, slow and slow and slow. It can push its arms into a rock pool and hold on tight."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "star    sea" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "sea star", "right": "the sea" },
+            { "left": "bird", "right": "the sky" },
+            { "left": "cat", "right": "the house" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own starfish. Give it five long arms.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Star That Is Not a Fish",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-starfish", "templateLabel": "The Star That Is Not a Fish", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "starfish",
+          "notes": ["It is called a sea star", "It has no bones and no blood", "Tiny feet under every arm", "An eye on each arm tip", "It can grow a new arm"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Star That Walks on Water",
+          "text": "A sea star has no bones. It has no blood either. Instead it pumps seawater through its own body. The water goes into hundreds of tiny tube feet under its arms. The water pushes the feet out. That is how a sea star walks. It walks on water, in a way. A sea star has a small eye at the tip of every arm. The eyes cannot see your face. They can only see light and dark. If a sea star loses an arm, it can grow a new one. It takes a long time, but the new arm comes back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a sea star pump through its body instead of blood?", "How does a sea star walk?", "What can the eyes on its arms see?"],
+          "rows": 2,
+          "answers": ["seawater", "on hundreds of tiny tube feet", "only light and dark"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A sea star pumps ____ through its body.", "It walks on hundreds of tiny tube ____.", "There is a small ____ at the tip of each arm.", "A sea star can grow a new ____."],
+          "wordBank": ["water", "feet", "eye", "arm"],
+          "answers": ["water", "feet", "eye", "arm"]
+        },
+        { "kind": "draw", "prompt": "Draw a sea star in a rock pool. Add some shells and seaweed.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Star That Is Not a Fish",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-starfish", "templateLabel": "The Star That Is Not a Fish", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "starfish",
+          "notes": ["Not a fish: it is an echinoderm", "Cousins: urchins and sand dollars", "It runs on seawater, not blood", "No brain, just a ring of nerves", "An eyespot at every arm tip", "About 2,000 kinds worldwide"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Not a Fish at All",
+          "text": "A starfish is not a fish. It has no gills, no fins, no scales, and no backbone. Scientists call it a sea star, and they group it with sea urchins and sand dollars. A fish is not even a close cousin.\n\nLook under a sea star and you will see why it is strange. There is no blood inside it. In place of blood it uses seawater. Water enters through a little sieve plate on top, then travels down channels inside each arm. From those channels, hundreds of tube feet reach out. Each foot is a tiny water balloon with a sticky end. The sea star fills a foot with water to push it out, then empties it to pull it back. Do that with hundreds of feet in order and the sea star walks.\n\nIt has no brain. A ring of nerves circles its middle, and each arm can decide things for itself. At the tip of every arm sits an eyespot that reads light and shadow. That is enough to find the shade of a rock, and for a sea star, that is enough."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name three things a fish has that a sea star does not have.",
+            "What does a sea star use in place of blood?",
+            "Explain in your own words how one tube foot takes a step.",
+            "Why do you think a sea star does not need eyes that can see faces?"
+          ],
+          "rows": 2,
+          "answers": [
+            "gills, fins, scales, or a backbone (any three)",
+            "seawater",
+            "it fills with water to push out and stick, then empties to pull back",
+            "(inference: it moves slowly and only needs to find light and shade, not to spot faces)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Not a Fish at All", "How to Catch a Fish", "The Biggest Whale in the Sea"],
+          "answers": ["Not a Fish at All"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Water enters the sea star through a sieve ____ on top.", "Hundreds of tube ____ reach out from the channels.", "A sea star has no ____, only a ring of nerves."],
+          "wordBank": ["plate", "feet", "brain"],
+          "answers": ["plate", "feet", "brain"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which is stranger, an animal with no blood or an animal with no brain? Say why you think so.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Star That Is Not a Fish",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-starfish", "templateLabel": "The Star That Is Not a Fish", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "starfish",
+          "notes": ["It eats by pushing its stomach out", "Needs a gap under a millimeter", "Hundreds of tube feet pull together", "Can regrow arms from a piece of the disc", "A regrowing one is called a comet"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Stomach That Goes Out to Dinner",
+          "text": "A sea star cannot chew. It has no teeth and no jaws. Its mouth is a small hole in the center of its underside, and it is far too narrow to swallow a mussel whole. So the sea star does something that sounds made up. It turns its stomach inside out and pushes it through its mouth, out into the water, and onto its food.\n\nWatch one hunt a mussel and the whole plan makes sense. The sea star climbs on top of the shell and grips both halves with its tube feet. Each foot is weak. Hundreds of them pulling together are not. The sea star leans back and holds. A mussel can clamp shut for hours, but it gets tired first. When the shell gaps open by less than a millimeter, that is all the sea star needs. Out slides the stomach, thin as wet tissue, into the gap. It wraps the mussel and begins to digest it right there inside its own shell. Later the sea star pulls its stomach back in, and the empty shell drops open.\n\nThis is why oyster farmers once hated sea stars. They caught them, chopped them into pieces, and threw the pieces back into the water. It did not work. Some pieces grew into whole new sea stars, and the farmers had made their problem bigger.\n\nNot every piece can do it. An arm on its own usually dies. An arm with a chunk of the central disc still attached is a different story. It can rebuild the missing arms one at a time and become a complete animal again, lopsided for a while, carrying its old long arm behind it. Biologists call that shape a comet."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why can a sea star not simply swallow a mussel?",
+            "The passage says each tube foot is weak. Explain how the sea star still wins.",
+            "Why did chopping up sea stars make the oyster farmers' problem bigger?",
+            "The sea star only needs a gap of less than a millimeter. What does that tell you about its stomach?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it has no teeth or jaws and its mouth is a small narrow hole",
+            "hundreds of weak feet pull together for hours and the mussel tires first",
+            "(inference: pieces holding part of the central disc regrew into whole new sea stars)",
+            "(inference: the stomach is thin and soft enough to slide through a tiny crack)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A sea star gets around having no teeth by digesting its food outside its body",
+            "Mussels are the fastest animals on the shore",
+            "Oyster farmers invented a clever way to remove sea stars"
+          ],
+          "answers": ["A sea star gets around having no teeth by digesting its food outside its body"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["clamp → ____", "digest → ____", "lopsided → ____", "comet (in this passage) → ____"],
+          "rows": 1,
+          "answers": [
+            "to hold shut tightly",
+            "to break food down so the body can use it",
+            "uneven, heavier or longer on one side",
+            "a sea star with one old long arm and small new ones growing back"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to someone who has never seen a sea star how it eats a mussel. Use at least three details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Star That Is Not a Fish",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-starfish", "templateLabel": "The Star That Is Not a Fish", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "starfish",
+          "notes": ["Pisaster ochraceus, the ochre sea star", "A keystone species on rocky shores", "It eats the mussels that crowd out the rest", "Named a keystone by Robert Paine, 1969", "Not common, but load-bearing"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Star That Holds Up the Shore",
+          "text": "In the early 1960s a young ecologist named Robert Paine walked out onto a rocky shore in Washington State with a crowbar and a plan. The rock was crowded: mussels, barnacles, limpets, chitons, anemones, sponges, seaweeds, and among them a thick purple and orange sea star called Pisaster. Fifteen kinds of animal shared that stretch of shoreline.\n\nPaine's plan was simple and slightly rude. He pried every sea star off one section and threw it into the sea. Then he came back and did it again. And again, month after month, for years, keeping that patch of rock starless while a neighboring patch was left completely alone.\n\nThe starless rock did not become a peaceful place. It became a wall of mussels. Freed from the one predator that could eat them, the mussels grew and spread and crowded out nearly everything else. Barnacles were smothered. Seaweeds had nowhere to anchor. The limpets and chitons that grazed those seaweeds left. Within a few years the count of species on that stretch had fallen from fifteen to eight. The untouched patch next door stayed as varied as ever.\n\nPaine had found something that is easy to say and was hard to prove: one species can hold an entire community together, and not because there are many of it. Pisaster was never the most common animal on that shore. It was simply the one eating the animal that would otherwise take everything. Paine called it a keystone species, after the wedge-shaped stone at the top of an arch. Pull the keystone and the arch does not sag. It falls.\n\nThe word stuck. Ecologists now look for keystones everywhere: wolves, otters, prairie dogs, fig trees. The idea began with one man, one crowbar, and a starfish he kept throwing into the sea."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did Paine actually do, and what did he compare his starless patch to?",
+            "Why does the passage point out that Pisaster was never the most common animal on that shore? Quote the phrase that makes the point.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the arch picture in the last three sentences of paragraph four. Why does the author choose it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: Paine kept one patch of shore free of sea stars for years; mussels took over and species fell from fifteen to eight, showing one species can hold a whole community together)",
+            "he pried the sea stars off one section again and again for years, and compared it to a neighboring patch left completely alone",
+            "to show that importance is not the same as numbers; quote: not because there are many of it",
+            "(inform, with details: it gives dates, names, and numbers from a real experiment; the closing lines are written for effect)",
+            "(a keystone holds an arch up, so removing it causes a sudden collapse rather than a slow sag; it lands the whole idea in one picture)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["ecologist → ____", "predator → ____", "keystone species → ____", "grazed → ____"],
+          "rows": 1,
+          "answers": [
+            "a scientist who studies how living things affect each other",
+            "an animal that hunts and eats other animals",
+            "a species that holds a whole community together",
+            "fed on plants or seaweed"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "One patch was left completely alone. Why was that patch as important to the experiment as the crowbar?",
+            "The author writes that the starless rock did not become a peaceful place. What is meant by that?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it is the control: without it you could not tell whether removing the sea stars caused the change)",
+            "(removing a predator did not bring calm; one species took over and most of the others were pushed out)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was Paine's experiment fair to the animals on that shore? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Star That Is Not a Fish",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-starfish", "templateLabel": "The Star That Is Not a Fish", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "starfish",
+          "notes": ["Echinoderm, not a fish", "Water vascular system instead of blood", "Madreporite: the seawater intake", "Sunflower star: up to 24 arms", "Wasting disease killed billions from 2013", "Kelp forests fell when the stars did"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal Made of Seawater",
+          "text": "Start with what a sea star is not. It is not a fish. It has no gills, no scales, no fins, no backbone, and no close relationship to anything you would order in a restaurant. It belongs to the echinoderms, a group that also holds sea urchins, sand dollars, and sea cucumbers, and that group is built on a body plan so unlike ours that it is worth slowing down for.\n\nA sea star has no heart and no blood. What it has instead is a plumbing system filled with ordinary seawater. Water enters through a small sieve plate on the upper surface, called the madreporite, and runs into a ring canal around the animal's middle, then out along a canal in each arm. Branching off those canals are hundreds of tube feet, each one a muscular sac ending in a soft disc. To take a step, the sea star squeezes water into a foot until it stretches out, plants the disc, releases a chemical glue to hold, then pulls. To let go, it releases a second chemical that unsticks it. There is no brain running any of this. A nerve ring and a nerve cord in each arm coordinate the whole affair, and an arm cut from the animal will keep walking for a while, on its own business, with no body to report to.\n\nThe ambition of that design is easy to miss. An ochre sea star gripping a mussel is applying the strength of hundreds of tiny water pistons at once, patiently, for hours. It only needs the shell to gap by a fraction of a millimeter. Through that crack it pushes its own stomach, everted through its mouth, and digests the mussel where it sits.\n\nNow the part that should worry you. In 2013, along the Pacific coast of North America, sea stars began to dissolve. Arms twisted off and crawled away from their own bodies. Sores opened. Within days an animal could collapse into a smear of white tissue. Sea star wasting disease killed billions of animals from Alaska to Mexico across more than twenty species, one of the largest marine wildlife die-offs ever recorded. The sunflower sea star, a giant with up to twenty-four arms and a span close to a meter, was nearly erased and is now listed as critically endangered.\n\nThe cause took more than a decade to pin down, and the false starts are instructive. An early study blamed a virus. Later work could not reproduce that finding, and the field went quiet and uncomfortable. In 2025, researchers reported strong evidence for a bacterium, Vibrio pectenicida, after years of careful work with live animals in tanks. Warmer water appears to make outbreaks worse.\n\nWhat happened next follows directly from Robert Paine's crowbar. Where sunflower stars vanished, the sea urchins they ate multiplied. Urchins graze kelp, and along stretches of the northern California coast, kelp forests that had stood for generations were shaved down to bare rock within a few years. Most of the bull kelp is gone from some regions. An animal with no brain, no heart, and no blood turns out to have been holding up a forest."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how a sea star takes a single step. Cite the exact phrase the passage uses for what holds the foot down.",
+            "The author calls the false starts instructive. What were they, and what do they show about how science works?",
+            "Find the sentence where the passage turns from wonder to alarm. Quote it, and explain how the author signals the shift.",
+            "Analyze the final sentence. What claim is it making, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the seawater body, the die-off, and the kelp collapse)",
+            "(it pumps water into a tube foot, plants the disc, sticks, then pulls; quote: a chemical glue to hold)",
+            "(an early study blamed a virus and later work could not reproduce it; science corrects itself, and being wrong in public is part of the method)",
+            "(quote: Now the part that should worry you; a short sentence speaking straight to the reader marks the pivot)",
+            "(that a brainless animal was load-bearing for a whole kelp forest; earned by the wasting-disease evidence and the urchin and kelp collapse, and it calls back to Paine)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["echinoderm → ____", "madreporite → ____", "everted → ____", "die-off → ____"],
+          "rows": 2,
+          "answers": [
+            "a spiny-skinned sea animal group including sea stars, urchins, sand dollars, and sea cucumbers",
+            "the sieve plate on top where seawater enters the body",
+            "turned inside out and pushed outward",
+            "the sudden death of a large part of a population"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says warmer water appears to make outbreaks worse. Why that word, and what would it take to say it more strongly?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it signals evidence that is suggestive but not settled; controlled experiments and repeated results would be needed)",
+            "(student question plus a credible source type, such as a peer-reviewed marine biology journal)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A species is worth protecting only if people find it useful or beautiful. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

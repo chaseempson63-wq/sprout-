@@ -1,0 +1,319 @@
+{
+  "key": "dog",
+  "title": "The Dog That Learned to Read Us",
+  "blurb": "The nose that smells time, the eyes that read your face, and the wolf that decided to stay.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Dog That Learned to Read Us",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-dog", "templateLabel": "The Dog That Learned to Read Us", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the dog." },
+        {
+          "kind": "image",
+          "imageKey": "dog",
+          "notes": ["Its nose is cold and wet", "It smells better than you do", "Every nose print is different", "It pants to cool down", "It has four soft paws"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a dog. The dog has a wet nose. The nose is cold. A dog uses its nose to learn things. It sniffs the grass. It sniffs your shoes. It sniffs the wind. A dog can smell things you cannot smell. Your dog knows you are home before it sees you. It smells you coming."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the paw prints in each row. Write how many in the box.",
+          "emoji": "🐾",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "dog    sniff" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its sound.",
+          "pairs": [
+            { "left": "dog", "right": "bark" },
+            { "left": "bird", "right": "chirp" },
+            { "left": "cow", "right": "moo" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own dog. Give it a big wet nose.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Dog That Learned to Read Us",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-dog", "templateLabel": "The Dog That Learned to Read Us", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "dog",
+          "notes": ["Hundreds of millions of smell catchers", "You have about six million", "A wet nose catches more smells", "It sniffs in quick little bursts", "Puppies are born blind and deaf"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Nose That Knows",
+          "text": "You see the world. Your dog smells it. A dog has hundreds of millions of tiny smell catchers inside its nose. You have about six million. That is why a dog can find a lost sock under the couch, or one crumb of cheese in the grass. A dog's nose is wet because wet skin grabs smells out of the air. When your dog sniffs fast, it is pulling new air over those smell catchers again and again. A dog can smell who walked down your street this morning. It can smell them even after they have gone home."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a dog use to learn about the world?", "How many smell catchers do you have?", "Why is a dog's nose wet?"],
+          "rows": 2,
+          "answers": ["its nose", "about six million", "wet skin grabs smells out of the air"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A dog smells with its ____.", "A dog's nose is ____.", "A dog sniffs in fast little ____.", "A dog can smell a lost ____ under the couch."],
+          "wordBank": ["nose", "wet", "bursts", "sock"],
+          "answers": ["nose", "wet", "bursts", "sock"]
+        },
+        { "kind": "draw", "prompt": "Draw a dog sniffing something. Add what it can smell that you cannot.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Dog That Learned to Read Us",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-dog", "templateLabel": "The Dog That Learned to Read Us", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "dog",
+          "notes": ["Air splits into two paths inside", "Side slits blow the used air out", "Each nostril smells a bit separately", "It can smell how old a scent is", "Nose prints work like fingerprints"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Dog's Nose Really Works",
+          "text": "When you breathe in, one stream of air goes to your lungs, and whatever smells ride along get noticed on the way. A dog's nose does something smarter. Inside each nostril, the air splits into two paths. Most of it goes down to the lungs. A small stream peels off into a maze of curled bone covered in smell catchers, and that air stays there to be studied. Then look at the slits on the sides of a dog's nose. When a dog breathes out, the used air shoots out sideways instead of straight ahead. That way it does not blow the scent away. It actually swirls fresh air toward the nostrils for the next sniff. A dog also sniffs with each nostril a little separately, so it can tell which side a smell came from. Best of all, a dog can smell how old a scent is. A footprint from ten minutes ago smells stronger than one from an hour ago. Follow the trail toward the stronger prints and you are walking the way the person walked. Your dog is not just smelling the yard. It is smelling this morning."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens to the air inside a dog's nostril when it breathes in?",
+            "Why does it help that a dog breathes out through the side slits?",
+            "How can a dog tell which way a person walked?",
+            "Why do you think a dog needs to smell with each nostril separately?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it splits into two paths, one to the lungs and one to the smell catchers",
+            "the used air does not blow the scent away, and it swirls fresh air in",
+            "a fresher footprint smells stronger, so it follows the stronger prints",
+            "(inference: two nostrils let it tell which side a smell came from)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Dog's Nose Really Works", "The Best Foods to Feed a Puppy", "Why Cats Sleep So Much"],
+          "answers": ["How a Dog's Nose Really Works"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Inside the nostril, the air splits into two ____.", "Used air shoots out through the ____ on the sides of the nose.", "A dog can smell how ____ a scent is."],
+          "wordBank": ["paths", "slits", "old"],
+          "answers": ["paths", "slits", "old"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you had a dog's nose for one day, what would you go and smell first, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Dog That Learned to Read Us",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-dog", "templateLabel": "The Dog That Learned to Read Us", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dog",
+          "notes": ["Puppies follow pointing at eight weeks", "Wolves mostly cannot do it", "A stuck dog looks to you for help", "Shared gaze raises oxytocin in both", "Chaser the collie learned 1,022 toy names"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Watches Your Hands",
+          "text": "Point at something across the room and your dog will look where you are pointing. That sounds like nothing. It is not nothing. Chimpanzees are our closest relatives, and they are terrible at it. Wolves raised by people from birth mostly fail too. Puppies do it at eight weeks old, before anyone has trained them to. Researchers set up a simple test. Food is hidden under one of two cups. A person points at the correct cup. Does the animal understand that the point is a message meant for it? Dogs do. They understand that a human hand is trying to tell them something, and they trust it. There is a second test that is stranger. Give an animal a puzzle box with food inside, then rig the box so it cannot be opened. A wolf keeps working at the box until it gives up. A dog works at the box for a while, then stops and turns around and looks at the nearest human face. It asks for help. Nobody taught it that either. Scientists also found that when a dog and its owner look into each other's eyes, both of their brains release oxytocin, the same chemical that rises between a parent and a baby. The dog stares. The human feels warm. The human feeds the dog. The loop is quiet, and it works. Dogs did not just move into our houses. They learned to read us."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe the two cups test in your own words. What is it actually measuring?",
+            "What does a dog do at the unopenable box that a wolf does not do?",
+            "The passage says the pointing test result sounds like nothing but is not nothing. Explain why it matters.",
+            "Why do you think puppies can follow a point at eight weeks without being taught?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(food under one of two cups, a person points; it measures whether the animal reads a human gesture as a message for it)",
+            "it stops and looks at a human face to ask for help",
+            "(inference: chimps and wolves fail it, so this skill is special to dogs, not just animal intelligence)",
+            "(inference: it is born in them, bred over thousands of years of living with people)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Dogs evolved to understand human signals in ways even wolves and chimpanzees do not",
+            "Chimpanzees make better pets than dogs because they are our closest relatives",
+            "Oxytocin is the only chemical found in a dog's brain"
+          ],
+          "answers": ["Dogs evolved to understand human signals in ways even wolves and chimpanzees do not"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["gesture → ____", "oxytocin → ____", "rig (the box) → ____"],
+          "rows": 1,
+          "answers": [
+            "a movement, like a point, used to send a message",
+            "a brain chemical that rises when two living things bond",
+            "to secretly set something up so it works a certain way"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage calls the dog and human loop quiet. What does the dog get out of the loop, and what does the human get? Give a reason for each.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Dog That Learned to Read Us",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-dog", "templateLabel": "The Dog That Learned to Read Us", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dog",
+          "notes": ["Canis familiaris", "Dogs and wolves can still interbreed", "Self-domestication: the wolves chose us", "Belyaev bred tame foxes from 1959", "Most breeds are only about 200 years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wolf That Sat Down",
+          "text": "Somewhere between fifteen thousand and forty thousand years ago, a wolf did something no wolf had done before. It sat down near a human camp and did not run. Nobody knows exactly how it happened, and the leading explanation gives humans very little credit. It is called self-domestication. Human camps produced garbage: bones, scraps, the parts of animals nobody wanted. Garbage is food. But approaching a camp full of people takes nerve. A wolf that panicked at every voice starved at the edge of the firelight. A wolf that could tolerate humans ate well, survived winter, and had pups that could also tolerate humans. Generation after generation, the calmest wolves at the dump out-ate the nervous ones. People did not tame wolves. Tameness paid, and the wolves selected themselves. Something odd came with the tameness. In 1959, a Russian scientist named Dmitry Belyaev began breeding silver foxes on one rule only: he kept the foxes that were least afraid of a human hand and bred those. He selected for nothing else. No ear shape, no coat pattern, no tail. Within a few dozen generations his foxes had floppy ears, curly tails, patches of white fur, shorter snouts, and a habit of whining for attention. He had bred for a feeling and accidentally grown a dog. Biologists have a name for that bundle of changes: domestication syndrome. One popular explanation points to a group of cells in the developing embryo called neural crest cells. They help build the adrenal glands, which drive fear, and they also help build ear cartilage, snouts, and pigment. Turn down the fear system a little and you may quietly turn down all the rest as well. That idea is still argued over. The pattern itself is not. One last thing worth knowing. The dog is ancient, but breeds are not. The pug, the dachshund, the golden retriever and most of the rest were shaped in the last two hundred years or so, largely by Victorian hobbyists competing at dog shows. Your dog's mind is tens of thousands of years old. Its face is Victorian."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain self-domestication in your own words. Why does the passage say it gives humans very little credit?",
+            "What did Belyaev select his foxes for, and what did he get that he was not selecting for? Quote the phrase the passage uses about what he grew.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last line mean, and why does the author put it there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering self-domestication + domestication syndrome + breeds being recent)",
+            "(tame wolves ate better and had more pups, so wolves selected themselves; people did not do the taming)",
+            "(only tameness, the least fear of a human hand; he got floppy ears, curly tails, white patches, short snouts; quote: accidentally grown a dog)",
+            "(inform, with detail: it defines terms and gives dates and evidence; some entertaining turns of phrase)",
+            "(the dog's behavior is ancient but its looks are recent and human-made; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["self-domestication → ____", "tolerate → ____", "domestication syndrome → ____", "pigment → ____"],
+          "rows": 1,
+          "answers": [
+            "animals becoming tame by their own advantage, not by human taming",
+            "to put up with something without panicking",
+            "the bundle of body changes that arrives alongside tameness",
+            "the coloring in fur and skin"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the fox result is still argued over, but the pattern itself is not. Explain the difference between those two things.",
+            "Why would being calm around humans be worth more to a wolf than being a better hunter?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the neural crest explanation is a hypothesis under debate; the observed floppy ears and curly tails are facts either way)",
+            "(inference: camps offered steady food with no chase, so nerve beat hunting skill near people)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: who got the better deal out of domestication, dogs or people? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Dog That Learned to Read Us",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-dog", "templateLabel": "The Dog That Learned to Read Us", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dog",
+          "notes": ["Levator anguli oculi medialis", "The eyebrow muscle wolves lack", "Coded AU101 in the dog facial system", "Shelter dogs using it are rehomed faster", "Domestication: 15,000 to 40,000 years ago"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Muscle That Wolves Do Not Have",
+          "text": "In 2019, a team of anatomists did something that sounds grim and turned out to be revealing. They dissected the faces of dogs and the faces of gray wolves, muscle by muscle, and compared them. The two animals are close enough that they can still interbreed, and their faces were nearly identical. Nearly. Above the inner corner of each dog's eye sat a small muscle called the levator anguli oculi medialis. In the wolves, it was almost absent: a thin strand of tissue, or nothing at all. That muscle has one job. It lifts the inner eyebrow. It is the muscle behind the expression every dog owner knows, the one where the head stays down and the eyebrows go up and the eyes suddenly look enormous and sad. Researchers call it AU101. Everyone else calls it puppy dog eyes. Here is why a single muscle is worth a scientific paper. That expression makes a dog's eye look bigger and its face look more like a baby's, and it closely resembles the face a human makes when we are sad. Humans respond to it without deciding to. In shelter studies, dogs that produced the expression more often were rehomed faster. Not the friendliest dogs. Not the healthiest. The ones with the better eyebrows. Follow that logic to the end. Wolves became dogs over tens of thousands of years of living beside people. Across those millennia, the dogs that got fed were the dogs that humans found hard to ignore. A dog that could reach into a human's emotional wiring got scraps, shelter, a place by the fire, and pups. Over enough generations, that pressure did not just change dog behavior. It grew new anatomy. Human feelings became a selection pressure strong enough to build a muscle. Notice who is being manipulated in this story. We tend to tell domestication as something people did to animals: we captured wolves, we tamed them, we bred them into shape. The muscle complicates that. It is evidence of animals evolving to work on us, targeting a weakness we cannot switch off, because you cannot decide not to find a puppy's face moving. We did not consent to any of it. We just kept feeding whichever ones looked at us right. None of this means your dog is lying to you. A muscle is not a plan. The dog making the face is not calculating; it inherited a face that works on humans, exactly as a bird inherits a wing it never designed. Other research complicates the picture in a useful way: dogs make more expressions when a human is looking at them than when a human's back is turned, whether or not food is present, which suggests the face is aimed at attention rather than at snacks. What the muscle really shows is that the relationship went both ways. Dogs did not simply move in with us. They changed shape around us, down to the fibers above their eyes, and in return they rearranged us too. We built a species that reads our faces, and then we made room for it in our beds. Two animals, thirty thousand years, one long conversation held mostly without words."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the 2019 dissection found and why the finding was significant. Cite the evidence.",
+            "The passage argues that human emotion acted as an evolutionary force. Quote the sentence that states this most directly, then explain it.",
+            "Identify the shift in the passage: where does it turn from description to argument, and how does the author signal it?",
+            "The author writes that a muscle is not a plan. Analyze why that sentence is placed where it is and what objection it is answering."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(dogs have the levator anguli oculi medialis above the eye, wolves almost do not; cite: a thin strand of tissue, or nothing at all)",
+            "(quote: Human feelings became a selection pressure strong enough to build a muscle; explanation: what people found appealing decided which dogs ate and bred)",
+            "(at Notice who is being manipulated in this story; a direct address to the reader pivots from findings to claim)",
+            "(it answers the objection that dogs are consciously tricking us; placed right after the manipulation claim to keep the argument honest)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["anatomy → ____", "selection pressure → ____", "interbreed → ____", "resembles → ____"],
+          "rows": 2,
+          "answers": [
+            "the physical structure of a body and its parts",
+            "a force that decides which individuals survive and reproduce",
+            "to breed together and produce young",
+            "looks like, is similar to"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The shelter study found the best eyebrows won, not the friendliest or healthiest dogs. Explain what that reveals about how humans actually make choices.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(people choose on an emotional signal they are not aware of, over traits they would say they value)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Dogs did not evolve to love us, they evolved to look like they love us, and the difference matters. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

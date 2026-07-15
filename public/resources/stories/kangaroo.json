@@ -1,0 +1,304 @@
+{
+  "key": "kangaroo",
+  "title": "The Kangaroo That Bounces for Free",
+  "blurb": "The animal with springs in its ankles, a fifth leg for a tail, and a newborn the size of a jellybean.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Kangaroo That Bounces for Free",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-kangaroo", "templateLabel": "The Kangaroo That Bounces for Free", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the two big feet." },
+        {
+          "kind": "image",
+          "imageKey": "kangaroo",
+          "notes": ["A baby kangaroo is called a joey", "It hops on two big feet", "Its tail is thick and strong", "It eats grass all day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a kangaroo. It hops. Hop, hop, hop. A kangaroo has two big feet. It has a long, strong tail. The tail helps it sit up. A baby kangaroo is called a joey. The joey rides in a warm pocket on its mom. The pocket is soft. The joey peeks out to see the grass."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the kangaroos in each row. Write how many in the box.",
+          "emoji": "🦘",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "hop    joey" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to what it does.",
+          "pairs": [
+            { "left": "kangaroo", "right": "hops" },
+            { "left": "bird", "right": "flies" },
+            { "left": "fish", "right": "swims" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a kangaroo with a joey in her pouch. Add some grass.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Kangaroo That Bounces for Free",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-kangaroo", "templateLabel": "The Kangaroo That Bounces for Free", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "kangaroo",
+          "notes": ["A newborn joey is as small as a jellybean", "The pouch is warm like a pocket", "Kangaroos live in Australia", "A group of them is called a mob", "Joeys dive back in head first"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Joey the Size of a Jellybean",
+          "text": "A baby kangaroo is born very small. It is about as big as a jellybean. It has no fur. Its eyes are still shut. The tiny joey crawls all the way up its mom's belly by itself. It finds her warm pouch and climbs in. It stays in there for months and grows. Fur grows in. Its eyes open. One day the joey pokes its head out and looks at the world. Later it hops out to nibble grass. When it gets scared, it dives back into the pouch, head first."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How big is a newborn joey?", "Where does the joey climb to?", "What does the joey do when it gets scared?"],
+          "rows": 2,
+          "answers": ["about as big as a jellybean", "up its mom's belly and into her pouch", "it dives back into the pouch, head first"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A baby kangaroo is called a ____.", "It climbs into its mom's ____.", "At first its eyes are ____.", "Later it hops out to eat ____."],
+          "wordBank": ["joey", "pouch", "shut", "grass"],
+          "answers": ["joey", "pouch", "shut", "grass"]
+        },
+        { "kind": "draw", "prompt": "Draw the joey peeking out of the pouch for the first time. What does it see?", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Kangaroo That Bounces for Free",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-kangaroo", "templateLabel": "The Kangaroo That Bounces for Free", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "kangaroo",
+          "notes": ["Scientists call it a macropod, which means big foot", "It can clear 25 feet in one hop", "Its tail works like a fifth leg", "It cannot walk backward", "A group is called a mob"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built to Bounce",
+          "text": "A kangaroo does not run. It hops, and it hops on two feet at once. That sounds like hard work. It is not. Inside a kangaroo's leg there are long, thick tendons that join muscle to bone. When the kangaroo lands, those tendons stretch like rubber bands. When it pushes off, they snap back and throw the kangaroo into the air. The tendons do a lot of the work, so the muscles do less. A big red kangaroo can cover twenty five feet in one hop. In a sprint it can reach forty miles an hour. At an easy pace it can bounce along for miles without getting tired. Its tail matters too. When a kangaroo slows down to graze, it leans back on its thick tail and swings both feet forward. Scientists watched kangaroos walk this way and measured the push. The tail pushes as hard as all four legs put together. It is not just a prop. It is a fifth leg."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What do a kangaroo's tendons do when it lands?",
+            "How far can a big red kangaroo travel in one hop?",
+            "What does a kangaroo lean on when it slows down to graze?",
+            "Why do you think hopping does not tire a kangaroo out?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they stretch like rubber bands",
+            "about twenty five feet",
+            "its thick tail",
+            "(inference: the springy tendons do a lot of the work instead of the muscles)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Built to Bounce", "How to Take Care of a Pet Rabbit", "The Tallest Mountain in Australia"],
+          "answers": ["Built to Bounce"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Tendons join muscle to ____.", "When a kangaroo lands, its tendons ____.", "The tail works like a fifth ____."],
+          "wordBank": ["bone", "stretch", "leg"],
+          "answers": ["bone", "stretch", "leg"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which kangaroo body part surprised you most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Kangaroo That Bounces for Free",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-kangaroo", "templateLabel": "The Kangaroo That Bounces for Free", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "kangaroo",
+          "notes": ["A newborn red kangaroo weighs less than a paperclip", "Pregnancy lasts only about 33 days", "A mother can pause an embryo for months", "Two teats can make two different milks at once", "Joeys ride in the pouch about 8 months", "Red kangaroos live in dry inland Australia"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Three Babies, Three Different Plans",
+          "text": "A red kangaroo is born after about thirty three days. That is a shorter wait than most house cats manage. The newborn is roughly the size of a jellybean, pink, blind, and deaf, with no back legs worth mentioning. What it does have is two strong front arms. Using those arms alone, it hauls itself up through its mother's fur, unassisted, and finds the pouch. Inside, it latches onto a teat and does not let go for months. That is only the start of the strangeness. A mother kangaroo can carry three young at once, each at a different stage. One hops beside her and still comes back to nurse. One is fastened inside the pouch. And one is a tiny ball of cells, paused. Biologists call this pause embryonic diapause. The embryo simply stops developing and waits. If the season turns dry, or if the pouch is still occupied, it keeps waiting. When rain comes and the pouch empties, it starts growing again. Then comes the part that seems impossible. The joey outside needs rich, fatty milk to fuel all that hopping. The newborn inside needs thin, sugary milk. The mother makes both at the same time, from two different teats, in the same pouch. Each teat produces exactly what the young attached to it needs, and the recipe changes as that joey grows. None of this is sentimental. The red kangaroo lives in country where rain is a rumor for years at a time. A mother who can pause a pregnancy, restart it the week the grass greens, and feed two ages at once is a mother whose family survives the drought."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe the journey a newborn joey makes, and explain why its front arms matter so much.",
+            "What is embryonic diapause, in your own words?",
+            "How can one mother feed two joeys of different ages at the same time?",
+            "The passage says none of this is sentimental. What does the author mean by that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it climbs up through her fur to the pouch alone; its back legs are useless, so the arms do all the work",
+            "(pausing an embryo so it stops developing until conditions improve)",
+            "she makes two different milks from two different teats at the same time",
+            "(inference: these are survival tools shaped by drought, not acts of kindness)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A kangaroo mother's strange breeding tricks are built to survive an unreliable, dry country",
+            "Kangaroos are the friendliest animals in Australia",
+            "House cats and kangaroos raise their babies in the same way"
+          ],
+          "answers": ["A kangaroo mother's strange breeding tricks are built to survive an unreliable, dry country"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["unassisted → ____", "diapause → ____", "sentimental → ____"],
+          "rows": 1,
+          "answers": ["without any help", "a pause in development until conditions improve", "soft or emotional, based on feelings rather than facts"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which of the mother kangaroo's three tricks is the most useful in a drought? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Kangaroo That Bounces for Free",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-kangaroo", "templateLabel": "The Kangaroo That Bounces for Free", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "kangaroo",
+          "notes": ["Osphranter rufus, the red kangaroo", "Achilles tendons store energy like springs", "Past about 10 miles an hour, speed costs no extra fuel", "Breathing locks into the hopping rhythm", "Can clear 25 feet in a single bound", "Licks its forearms to cool off"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cheapest Way to Cross a Continent",
+          "text": "Run faster and you burn more fuel. This is true for a horse, a dog, a mouse, and you. Every stride costs energy, and more strides per minute costs more energy per minute. Biologists took this rule as settled, because every animal they had ever put on a treadmill obeyed it. Then in 1973 two researchers, Terence Dawson and Richard Taylor, put a red kangaroo on a treadmill and turned up the speed. The kangaroo's oxygen use climbed at first, exactly as expected. Then, past about ten miles an hour, it stopped climbing. The kangaroo went faster and faster, and its energy cost flattened out and even dipped. It was getting more distance for the same fuel. The trick is in the ankle. A kangaroo's Achilles tendons are extraordinarily long and thick, and tendon is springy in the way a stretched rubber band is springy. When the animal lands, its whole body weight stretches those tendons, and the energy of the fall is not lost as heat, it is stored. On the next push off the tendons recoil and hand most of that energy back. Muscles still work, but they are topping up a spring rather than driving the animal from scratch. Faster hopping stretches the spring harder, and a harder stretched spring gives back more. A kangaroo at speed is closer to a bouncing ball than a running animal. There is a bonus. The impact of landing drives air out of the lungs and the recoil pulls it back in, so breathing comes along for the ride at almost no extra cost. Hopping and breathing lock into the same rhythm. Why would evolution bother? Look at where red kangaroos live. Inland Australia is enormous, flat, dry, and unreliable. Rain falls somewhere, but rarely where you are standing. An animal that must travel a hundred miles to the next green patch, and travel it on a nearly empty stomach, needs a way of moving that gets cheaper the more it is used. Hopping is that way. The kangaroo did not evolve a spring in order to be spectacular. It evolved a spring because the continent is wide and the grass is somewhere else."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did Dawson and Taylor expect to see, and what did they actually see?",
+            "Explain how a tendon saves a kangaroo energy. Quote the phrase the passage uses to compare the kangaroo at speed to something else.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why do you think the author saved it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the flat energy cost, the tendon spring, and the dry-continent reason)",
+            "they expected oxygen use to keep rising with speed; instead it flattened out and even dipped",
+            "the landing stretches it and the push off returns the stored energy; quote: closer to a bouncing ball than a running animal",
+            "(inform, with detail: it defines terms and reports a real experiment; the closing lines lean persuasive)",
+            "(the spring is an answer to distance and scarce grass, not a show; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["tendon → ____", "recoil → ____", "unreliable → ____", "spectacular → ____"],
+          "rows": 1,
+          "answers": ["the springy tissue that joins muscle to bone", "to spring back to its original shape", "cannot be counted on, here meaning the rain does not come when expected", "dramatic and impressive to watch"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the kangaroo was getting more distance for the same fuel. Explain why that would matter to an animal in a drought.",
+            "Why do you think no running mammal has evolved the same flat energy cost that a kangaroo has?"
+          ],
+          "rows": 3,
+          "answers": ["(it can search further for grass without eating more, which is the whole problem in a dry year)", "(inference: running mammals do not store nearly as much energy in tendons, and most live where food is closer together)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does knowing how the hopping works make a kangaroo more interesting or less? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Kangaroo That Bounces for Free",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-kangaroo", "templateLabel": "The Kangaroo That Bounces for Free", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "kangaroo",
+          "notes": ["Family Macropodidae, meaning big foot", "Elastic tendon storage cuts the cost of speed", "Dawson and Taylor, Nature, 1973", "Procoptodon goliah stood over 6 feet tall", "Hind legs are yoked: no walking backward", "There are more kangaroos than people in Australia"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Continent's Answer to a Simple Problem",
+          "text": "Every animal that moves has to answer the same question: how do I cross the distance between me and my next meal without spending more energy than the meal contains? Australia asked that question more harshly than most places. The interior is vast, flat, and dry, and its rainfall is not merely low but erratic. Grass appears somewhere, unpredictably, and an animal that cannot reach it dies. The kangaroo is one answer to that question, and it is an unusually elegant one. The answer is a spring. A kangaroo's Achilles tendons are long, thick, and stiff, and they behave like the tendons in nothing else its size. When the animal lands, its mass stretches them, and the energy of that landing is stored rather than wasted. The push off releases it. Muscle contributes, but much of the work is done by tissue that costs nothing to hold in tension. In 1973 Terence Dawson and Richard Taylor demonstrated the consequence on a treadmill: above a moderate speed, a red kangaroo's oxygen consumption stopped rising with speed. Going faster cost it nothing extra. No running mammal does this. The kangaroo's breathing is coupled to the same rhythm, the landing squeezing the lungs and the rebound refilling them, so even respiration is nearly free. Everything else about the animal follows from that spring. The tail, thick and muscular, is not decoration. When a kangaroo grazes it plants the tail and swings both feet through, and measurements show the tail supplies as much propulsive force as the four limbs combined. The hind legs are yoked together, which is why a kangaroo cannot walk backward on land, and why the emu and the kangaroo, both poor reversers, ended up on the national coat of arms in a story Australians enjoy telling. The pouch, the thirty three day pregnancy, the paused embryo, the two grades of milk from two teats at once: all of it is machinery for producing young cheaply and abandoning the effort instantly when the rain fails. But a spring has limits, and the fossils show where. Until about forty thousand years ago Australia carried Procoptodon goliah, a short faced kangaroo standing over six feet tall and weighing more than four hundred pounds. For decades it was drawn hopping. Then researchers examined its skeleton properly and found the ankle joints, the pelvis, and the tail all wrong for a hopper and right for something else: it probably walked, one enormous foot at a time. Tendons that store energy beautifully at ninety pounds tear at four hundred. The spring does not scale. Here is where the story stops being tidy. The red kangaroo is thriving. There are tens of millions of them, more kangaroos than Australians, because pastoralists dug watering holes across country that never had reliable water and removed the dingoes that hunted them. The animal on the coat of arms, the animal on the tail of the national airline, is also shot in the millions under government quota, and its meat and hide are sold. Australians argue about this constantly, and not stupidly. An ecologist points out that soft footed native grazers damage the soil far less than hard hooved cattle, and that a kangaroo harvest is arguably the most sustainable red meat on the continent. An animal welfare campaigner points out that a joey found in the pouch of a shot female is killed by hand, because there is nothing else to be done with it. Both are describing the same animal. The spring solved the continent. It did not solve us."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage frames the whole animal as an answer to a question. State the question in your own words, and cite the sentence where the author first asks it.",
+            "Explain why the giant Procoptodon probably walked instead of hopping. Cite the sentence that gives the reason.",
+            "Identify the shift in the passage: where does it turn from science to argument, and how does the author signal it?",
+            "The passage ends with two very short sentences after a long paragraph. Analyze what that choice does, and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(how to travel far enough to find food without burning more energy than the food gives back; cite: how do I cross the distance between me and my next meal without spending more energy than the meal contains)",
+            "(it was too heavy for tendon springs to hold; cite: Tendons that store energy beautifully at ninety pounds tear at four hundred)",
+            "(at Here is where the story stops being tidy; a short flat sentence pivots from how the animal works to what people do with it)",
+            "(the short sentences land the point that the animal's problem is now human, not biological; judgment call, supported by the culling and habitat evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["erratic → ____", "propulsive → ____", "yoked → ____", "quota → ____"],
+          "rows": 2,
+          "answers": [
+            "irregular and unpredictable",
+            "producing forward force",
+            "joined together so they must move as one",
+            "an official limit on how many may be taken"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says kangaroos are thriving partly because people dug watering holes and removed dingoes. Explain why a species doing well for that reason might still worry an ecologist.",
+            "The author gives the ecologist and the campaigner one sentence each and does not pick a side. Is that fair to the reader, or is it dodging? Defend your answer."
+          ],
+          "rows": 3,
+          "answers": ["(the population is propped up by human changes to the land, which is a distorted ecosystem, not a healthy one)", "(opinion, supported by reasoning about the author's purpose)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal cannot be a national symbol and a harvested crop at the same time. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

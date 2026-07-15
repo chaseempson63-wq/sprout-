@@ -1,0 +1,319 @@
+{
+  "key": "deer",
+  "title": "The Deer That Grows a New Crown Every Year",
+  "blurb": "Antlers are real bone. A deer builds a whole set every spring, uses them, drops them in the snow, and starts over.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Deer That Grows a New Crown Every Year",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-deer", "templateLabel": "The Deer That Grows a New Crown Every Year", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the deer's ears." },
+        {
+          "kind": "image",
+          "imageKey": "deer",
+          "notes": ["Antlers are made of bone", "It eats leaves and twigs", "Its ears turn to catch sounds", "Baby deer have white spots", "It can run very fast"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a deer. The deer lives in the woods. It eats green leaves. It has long legs. It can run very fast. The deer has soft ears. The ears turn to hear. On its head are antlers. Antlers are bones. They grow every year. The deer is quiet. It walks on soft feet."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves in each row. Write how many in the box.",
+          "emoji": "🍃",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "deer    run" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "deer", "right": "woods" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own deer. Give it big antlers.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Deer That Grows a New Crown Every Year",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-deer", "templateLabel": "The Deer That Grows a New Crown Every Year", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "deer",
+          "notes": ["Antlers are bone, not horn", "New antlers grow every year", "Soft velvet covers growing antlers", "A baby deer is called a fawn", "Deer have no top front teeth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Crown That Falls Off",
+          "text": "A deer's antlers are not horns. Horns stay on an animal for its whole life. Antlers do not. Every spring, a deer grows a new set. The antlers push up from its head. They are covered in soft skin called velvet. The velvet feeds the growing bone. By fall the antlers are hard, and the deer rubs the velvet off on a tree. In winter the antlers fall off. Then the deer grows a whole new set. It does this again every year."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are antlers made of?", "What is the soft skin on new antlers called?", "When do the antlers fall off?"],
+          "rows": 2,
+          "answers": ["bone", "velvet", "in winter"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Antlers are made of ____.", "Soft skin called ____ feeds the growing antlers.", "The deer rubs the velvet off on a ____.", "In ____ the antlers fall off."],
+          "wordBank": ["bone", "velvet", "tree", "winter"],
+          "answers": ["bone", "velvet", "tree", "winter"]
+        },
+        { "kind": "draw", "prompt": "Draw the deer in the woods. Add some trees and leaves.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Deer That Grows a New Crown Every Year",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-deer", "templateLabel": "The Deer That Grows a New Crown Every Year", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "deer",
+          "notes": ["Antlers are bone. Horns are not", "A deer grows a new set each year", "Velvet feeds the growing antler", "Antlers grow faster than any other bone", "Deer have no top front teeth", "Mice gnaw fallen antlers for calcium"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Crown That Grows Back",
+          "text": "Horns and antlers are not the same thing. A goat's horns are made of the same stuff as your fingernails, and they stay on its head for life. Antlers are different. Antlers are bone, and a deer grows a fresh pair every single year. The growing starts in spring. Two soft bumps push out of the deer's skull and stretch upward. While they grow, they are wrapped in a furry skin called velvet. The velvet is full of blood vessels, and it carries food to the bone underneath. Antlers grow faster than any other bone in any animal. A big elk can add close to an inch a day. By fall, the bone has hardened and the velvet dries up. The deer scrapes it off against a tree trunk. Then, in late winter, something surprising happens. The antlers loosen and drop right off in the snow. The deer feels nothing. In spring, it starts all over again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are antlers made of?",
+            "What does the velvet do for a growing antler?",
+            "What happens to the antlers in late winter?",
+            "Why do you think a deer needs a lot of food while its antlers are growing?"
+          ],
+          "rows": 2,
+          "answers": [
+            "bone",
+            "it carries food to the growing bone underneath",
+            "they loosen and drop off in the snow",
+            "(inference: growing bone that fast takes a lot of food and energy)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Crown That Grows Back", "How to Build a Bird Feeder", "The Tallest Mountain in Asia"],
+          "answers": ["The Crown That Grows Back"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Growing antlers are wrapped in a furry skin called ____.", "Antlers are made of ____, but horns are not.", "The deer scrapes the dry velvet off against a ____."],
+          "wordBank": ["velvet", "bone", "tree"],
+          "answers": ["velvet", "bone", "tree"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about antlers, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Deer That Grows a New Crown Every Year",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-deer", "templateLabel": "The Deer That Grows a New Crown Every Year", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "deer",
+          "notes": ["Antlers grow from bumps called pedicles", "The fastest growing bone of any animal", "A bull elk can add an inch a day", "Deer borrow calcium from their own ribs", "Reindeer are the only deer whose females grow antlers", "Deer are ruminants and chew cud"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Only Bone That Comes Back",
+          "text": "Every mammal on Earth has the same problem: lose a body part, and it is gone. Cut yourself and you get a scar. Break a bone badly enough and it may never be the same. There is one exception, and it happens every year on the head of a deer. A deer's antlers are true bone, grown from two permanent bumps on the skull called pedicles. They are not horns. Horns are a sheath of keratin, the material in your fingernails, wrapped over a bony core, and they stay put for life. Antlers are grown and thrown away on a schedule. The trigger is daylight. As spring days stretch longer, a deer's body starts building. The antlers rise under a coat of fuzzy skin called velvet, which is threaded with blood vessels and nerves and delivers minerals to the bone forming underneath. The pace is extraordinary. Antler is the fastest growing bone known in any animal, and a bull elk in midsummer can add nearly an inch a day. That speed costs something. Building a heavy rack takes more calcium and phosphorus than a deer can eat, so its body borrows the difference from its own skeleton, thinning its ribs to thicken its crown, then repaying the loan later. By fall, growth stops, the bone hardens, and the velvet dries and is rubbed away on saplings. The antlers do their work through the mating season. Then, in late winter, they simply fall off. Mice and squirrels gnaw the fallen antlers for calcium, which is why the woods are not littered with them. And the deer begins again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the difference between a horn and an antler in your own words.",
+            "What starts the antler growing each year, and what does the velvet do?",
+            "The passage says a deer thins its ribs to thicken its crown. Explain what that means.",
+            "Why do you think the woods are not covered in fallen antlers?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a horn is keratin over bone and stays for life; an antler is bone and is grown and shed each year",
+            "longer spring daylight; the velvet carries blood and minerals to the growing bone",
+            "it takes calcium out of its own skeleton to build the antlers, then rebuilds the skeleton later",
+            "(inference: mice and squirrels gnaw them away for the calcium)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A deer regrows a full set of bone antlers every year, at a real cost to its own body",
+            "Deer are the most common animal in the woods",
+            "Scientists have learned how to regrow human arms"
+          ],
+          "answers": ["A deer regrows a full set of bone antlers every year, at a real cost to its own body"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["pedicle → ____", "velvet → ____", "keratin → ____"],
+          "rows": 1,
+          "answers": [
+            "the permanent bump on the skull that an antler grows from",
+            "the furry living skin that feeds a growing antler",
+            "the material fingernails and horns are made of"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if growing antlers costs a deer so much, why do you think deer keep doing it every year? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Deer That Grows a New Crown Every Year",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-deer", "templateLabel": "The Deer That Grows a New Crown Every Year", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "deer",
+          "notes": ["Family Cervidae, about 50 species", "Antler: bone, shed yearly. Horn: keratin, permanent", "Longer spring days start antler growth", "Elk racks can reach 40 pounds", "Chinese water deer grow tusks, not antlers", "Rodents eat shed antlers for the calcium"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bone That Comes Back Every Year",
+          "text": "Human medicine has a hard limit. We can set a broken bone and stitch a wound, but we cannot regrow what is lost. A severed finger does not come back. Among mammals there is exactly one organ that regenerates completely, on schedule, year after year, and it belongs to a deer. Antlers are often confused with horns, and the difference matters. A horn is permanent: a core of bone wrapped in a sheath of keratin, the same protein as your fingernails, and it grows slowly outward for the animal's whole life. An antler is temporary. It is pure bone, grown from a pedicle, a permanent knob on the skull, and it is discarded and rebuilt annually. Light runs the schedule. Lengthening spring days shift a deer's hormones, and construction begins. The antler rises beneath velvet, a living skin dense with blood vessels and nerves that ferries minerals to the bone forming below. Nothing else in the animal kingdom builds bone this quickly. A bull elk in full growth can lay down close to an inch of antler a day, assembling forty pounds of bone in a single summer. The bill comes due in calcium and phosphorus. A deer cannot eat enough to cover it, so it takes out a loan against itself, withdrawing minerals from its own ribs and skeleton to finish the rack, then rebuilding its skeleton afterward. For a few weeks, one of the healthiest animals in the forest is walking around with thinning bones. As daylight shortens, growth halts, the antler hardens into dead bone, and the velvet dries and is scraped off on saplings. The rack serves through the fall mating season, when males shove and spar and size each other up. Then hormones fall away, a thin layer of cells at the pedicle dissolves, and the antlers drop into the snow. The deer does not notice. Mice, squirrels, and porcupines find the sheds and gnaw them down for calcium, which is why a forest floor is not carpeted in antlers. Not every deer follows the rule. Reindeer are the one species whose females grow antlers too, and they keep theirs through winter after the males have dropped theirs. The Chinese water deer skips antlers altogether and fights with long curved tusks instead. But the pattern holds: build a crown, use it, throw it away, build it again. Laboratories study the pedicle closely, because whatever instructions it follows, the rest of us appear to have lost them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What runs the antler schedule, and what happens when daylight shortens?",
+            "Explain the mineral loan a deer takes out. Quote the phrase the passage uses for it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the author doing in the very first paragraph, and why start there instead of with the deer?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering antler regrowth + the mineral cost + the yearly shed)",
+            "daylight; growth halts, the antler hardens, and the velvet is scraped off",
+            "it withdraws calcium from its own ribs and skeleton, then rebuilds; quote: a loan against itself",
+            "(inform, with detail: it defines terms and gives facts; some persuasive wonder at the end)",
+            "(sets up the human limit so the deer's yearly regrowth lands as remarkable)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["pedicle → ____", "regenerates → ____", "discarded → ____", "ferries → ____"],
+          "rows": 1,
+          "answers": [
+            "the permanent knob on the skull an antler grows from",
+            "grows back completely after being lost",
+            "thrown away",
+            "carries something from one place to another"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says one of the healthiest animals in the forest is walking around with thinning bones. Explain why that is surprising.",
+            "Reindeer females keep their antlers through winter after the males drop theirs. What might that be useful for?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(a healthy animal is deliberately weakening its own skeleton to build something it will throw away)",
+            "(inference: antlers help them defend food and dig through snow when males no longer have any)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is growing antlers worth the cost to a deer's body? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Deer That Grows a New Crown Every Year",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-deer", "templateLabel": "The Deer That Grows a New Crown Every Year", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "deer",
+          "notes": ["Antler: the only fully regrowing mammal organ", "Pedicle stem cells rebuild it each year", "Photoperiod drives the cycle through melatonin", "Seasonal bone loss: ribs thin to feed the rack", "Deer carry extra copies of tumor suppressor genes", "Moose is the largest deer, the pudu the smallest"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Crown That Costs a Skeleton",
+          "text": "Consider a problem in engineering. You must build a branched structure of solid bone, up to four feet across and forty pounds in weight, on top of a skull. You must finish it in about four months, using an animal that eats leaves. Then you must throw the whole thing away and do it again next year, and the year after that, for a decade. No mammal on Earth solves this problem except the deer, and it solves it every spring. Start with what an antler is not. It is not a horn. A horn is a permanent core of bone sheathed in keratin, the protein in your fingernails, and it grows outward in slow layers for life. Cattle, goats, and antelope wear horns. An antler is naked bone, and it is disposable. It erupts from a pedicle, a permanent bony pillar on the skull, and everything above that pillar is temporary. Daylight starts the clock. As spring days lengthen, melatonin falls, testosterone shifts, and stem cells resting in the pedicle begin to divide. What follows is the fastest bone growth known in any animal. A bull elk in midsummer lays down close to an inch of antler a day, sheathed in velvet, a living skin so dense with blood vessels and nerves that you can feel a pulse in it. The velvet is not decoration. It is the supply line. The cost is brutal and specific. A rack demands more calcium and phosphorus than a browsing animal can possibly eat in a season, so the deer withdraws the shortfall from its own skeleton. Its ribs thin. Its bones weaken. For several weeks each summer, a healthy deer is walking through the woods in a state that in a human would be diagnosed as osteoporosis, and then it quietly rebuilds itself once the antler is done. The crown is paid for out of the frame that carries it. When growth stops, the bone dies and hardens, the velvet withers, and the deer scrapes it away against saplings. Through the fall rut, the antlers do the job they were built for. They are weapons, but more often they are arguments. A rack is an honest advertisement: it cannot be faked, because only a well fed, healthy, mature animal can afford to grow a large one. Most contests are settled by looking. Then the hormones drop, specialized cells eat away a thin seam at the top of the pedicle, and the antlers fall off, often without the deer breaking stride. Mice, squirrels, and porcupines gnaw the sheds to powder for their calcium. The forest floor is not carpeted in antlers because the forest eats them. There is one more twist, and it is the reason cancer researchers read deer papers. Antler growth is uncontrolled cell division on an enormous scale, which is more or less the definition of a tumor. Genetic work on deer has found that the genes driving antler growth include ones that cause cancer in other mammals, and that deer carry extra copies of tumor suppressor genes running alongside them. Deer grow a fast, wild, enormous mass of tissue every year and then stop it on command, cleanly, without it turning into a tumor. Nothing else does that. So the deer stands at the intersection of three questions humans cannot answer: how to regrow a lost organ, how to build bone at speed, and how to let cells divide furiously and then tell them to quit. It has been answering all three, on the same schedule, since long before anyone was watching."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage calls a rack an honest advertisement. Explain what that means and cite the evidence given for it.",
+            "Explain the trade the deer makes with its own skeleton. Quote the sentence that states it most compactly.",
+            "The author opens by framing the deer as an engineering problem. Analyze why that choice works better than opening with a description of a deer.",
+            "Explain the cancer twist in the final section, and analyze why the author saves it for last."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(antler size cannot be faked, so it truthfully signals health; cite: only a well fed, healthy, mature animal can afford to grow a large one)",
+            "(it dissolves its own bones to build the antlers, then rebuilds; quote: The crown is paid for out of the frame that carries it)",
+            "(it reframes a familiar animal as an impossible problem, so the reader judges the deer by what it achieves)",
+            "(antler growth is tumor-like but perfectly controlled; saved for last as the strongest claim and to point at human questions)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["pedicle → ____", "disposable → ____", "osteoporosis → ____", "tumor suppressor → ____"],
+          "rows": 2,
+          "answers": [
+            "the permanent bony pillar on the skull that an antler grows from",
+            "made to be used and then thrown away",
+            "a condition in which bones lose mineral and become weak",
+            "a gene that holds cell division in check"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says most contests are settled by looking. Explain why that outcome is better for both deer than fighting.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(fighting risks injury and death for both; an honest signal settles the matter at no cost)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The antler is the most impressive thing any mammal body does. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

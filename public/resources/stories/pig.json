@@ -1,0 +1,315 @@
+{
+  "key": "pig",
+  "title": "The Pig That Everybody Underestimates",
+  "blurb": "The animal we call dirty and dumb is a clean, clever problem-solver with a nose that reads the ground like a book.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Pig That Everybody Underestimates",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pig", "templateLabel": "The Pig That Everybody Underestimates", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the pig's nose." },
+        {
+          "kind": "image",
+          "imageKey": "pig",
+          "notes": ["Its nose is called a snout", "A pig says oink", "A baby pig is a piglet", "Pigs love to roll in mud", "The tail is curly"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pig. The pig is pink. It has a round nose called a snout. The pig pushes its snout into the dirt to find food. A pig says oink. A pig loves mud. It rolls and rolls until it is brown all over. The mud keeps the pig cool. A baby pig is called a piglet. Piglets stay close to their mom. Look at the pig's tail. It is curly."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the piglets in each row. Write how many in the box.",
+          "emoji": "🐷",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "pig    mud" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its baby.",
+          "pairs": [
+            { "left": "pig", "right": "piglet" },
+            { "left": "cat", "right": "kitten" },
+            { "left": "dog", "right": "puppy" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a pig in a mud puddle. Do not forget the curly tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Pig That Everybody Underestimates",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pig", "templateLabel": "The Pig That Everybody Underestimates", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pig",
+          "notes": ["The nose is called a snout", "Digging with the snout is called rooting", "A pig can smell food underground", "A pig's eyes are weak", "Pigs come when you call their name"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Nose That Does Everything",
+          "text": "A pig sees the world with its nose. The round snout on the front of its face is tough and strong. A pig uses it like a shovel. It pushes the snout into the ground and digs and digs. This is called rooting. Under the dirt, the pig finds roots and nuts and bugs to eat. A pig's nose is very good at smelling. It can smell food buried deep down, food it cannot see at all. A pig's eyes are not very good. But a pig hardly ever gets lost. It just follows its nose."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a pig's nose called?", "What is it called when a pig digs with its snout?", "Name one thing a pig finds under the dirt."],
+          "rows": 2,
+          "answers": ["a snout", "rooting", "roots or nuts or bugs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A pig digs with its ____.", "Digging in the dirt is called ____.", "A pig has a very good sense of ____.", "A pig's ____ are not very good."],
+          "wordBank": ["snout", "rooting", "smell", "eyes"],
+          "answers": ["snout", "rooting", "smell", "eyes"]
+        },
+        { "kind": "draw", "prompt": "Draw a pig rooting in the ground. Show what it finds down there.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Pig That Everybody Underestimates",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pig", "templateLabel": "The Pig That Everybody Underestimates", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pig",
+          "notes": ["Pigs have almost no working sweat glands", "Mud cools better than sweat does", "Pale pig skin can sunburn", "Mud pulls ticks and flies off the skin", "Pigs keep their toilet far from their bed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Pig Rolls in Mud",
+          "text": "People say pigs are dirty. Pigs are not dirty. Pigs are smart about staying cool.\n\nHere is the problem. You have sweat glands all over your skin. When you get hot, you sweat, the sweat dries off your skin, and that cools you down. A pig cannot do this. A pig has almost no working sweat glands. On a hot day, a pig has no way to cool itself from the inside.\n\nSo the pig goes to the mud. It lies down and rolls until it is coated all over. Then it stands up. The water in the mud dries off the pig slowly, and as it dries, it pulls the heat away. A coat of mud works better than sweat, and it lasts much longer.\n\nThe mud does two other jobs. Pigs have pale skin, and pale skin burns in the sun, so the mud works like sunscreen. Mud also traps ticks and biting flies. When the pig scratches the dried mud off against a tree, the bugs come off with it.\n\nOne more thing. Given enough room, a pig picks one corner to use as a toilet and keeps it far away from where it eats and sleeps. A pig in the mud is not being dirty. It is putting on its coat."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How does sweating cool your body down?",
+            "Why can a pig not cool itself the way you do?",
+            "Name the three jobs that mud does for a pig.",
+            "Why do you think people decided pigs were dirty animals?"
+          ],
+          "rows": 2,
+          "answers": [
+            "sweat dries off your skin and takes the heat with it",
+            "a pig has almost no working sweat glands",
+            "it cools the pig, it works like sunscreen, and it takes bugs off",
+            "(inference: they saw pigs covered in mud and judged the mud, not the reason)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why a Pig Rolls in Mud", "How to Build a Pig Pen", "The Biggest Farm in America"],
+          "answers": ["Why a Pig Rolls in Mud"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A pig has almost no working ____ glands.", "Mud works like ____ on a pig's pale skin.", "Mud traps ticks and biting ____."],
+          "wordBank": ["sweat", "sunscreen", "flies"],
+          "answers": ["sweat", "sunscreen", "flies"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: was there anything in this passage that surprised you, and why did it surprise you?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Pig That Everybody Underestimates",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pig", "templateLabel": "The Pig That Everybody Underestimates", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pig",
+          "notes": ["Piglets learn their names in about two weeks", "Pigs use mirrors to find hidden food", "Four pigs learned a joystick video game in 2021", "Pigs have around 15,000 taste buds", "Pigs make more than 20 different sounds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Pig That Played a Video Game",
+          "text": "Ask someone to name a clever animal and they will say a dolphin, or a chimpanzee, or a dog. Almost nobody says a pig. That is a mistake.\n\nStart with something easy. A piglet learns its own name in about two weeks and will come when you call it. Now try something harder. Put a pig in a pen with a mirror, angled so the mirror shows a bowl of food tucked behind a barrier where the pig cannot see it directly. Most animals charge at the mirror and hunt around behind it. Pigs try that once, then stop, turn around, and walk straight to the real bowl. They have worked out something difficult: a reflection is not a thing. It is information about a place.\n\nThen there is the joystick. In 2021, researchers at Purdue University gave four pigs a computer screen, a joystick, and a target to hit. Move the cursor into the target, get a treat. The pigs had never held anything in their lives, so they shoved the joystick around with their snouts. They were slow. They were clumsy. And they hit the target far more often than random guessing can explain, which means they understood that the thing under their nose was moving the thing on the screen.\n\nA pig has no hands, poor eyesight, and a body built for digging up roots. It solved a puzzle designed by people, using a tool made for human hands, anyway. We keep inventing tests to measure how much other animals are like us. The pig keeps passing tests it has no business passing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the mirror test in your own words. What do the pigs figure out?",
+            "Why does the passage point out that the pigs had never held anything before?",
+            "The passage says the pigs hit the target more often than random guessing can explain. Why does that matter?",
+            "Why do you think people are so quick to assume a pig is not clever?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(a mirror shows food they cannot see directly; they learn the reflection tells them where the real food is)",
+            "(inference: it shows the joystick was much harder for a pig than for us, so their success counts for more)",
+            "(random luck would give a low score, so a high score means they understood the joystick moved the cursor)",
+            "(opinion: the mud, the smell, the fact that we farm them)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Pigs are far more intelligent than people give them credit for",
+            "Video games are a good way to train farm animals",
+            "Dolphins and chimpanzees are the smartest animals alive"
+          ],
+          "answers": ["Pigs are far more intelligent than people give them credit for"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["reflection → ____", "barrier → ____", "cursor → ____"],
+          "rows": 1,
+          "answers": ["the image you see in a mirror", "something that blocks the way or blocks the view", "the marker on a screen that you move around"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: does knowing how clever pigs are change how we should treat them? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Pig That Everybody Underestimates",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pig", "templateLabel": "The Pig That Everybody Underestimates", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pig",
+          "notes": ["Domestic pigs descend from wild boar, Sus scrofa", "Domesticated at least twice, about 9,000 years ago", "Once in the Near East, once in China", "Ancient bone DNA shows two separate starts", "Feral pigs live wild in dozens of US states"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Boar in the Barnyard",
+          "text": "Nine thousand years ago there were no pigs. There were wild boar: dark, bristled, quick-tempered animals with tusks, ranging through the forests of Europe and Asia. Then people began keeping them, and the keeping changed them.\n\nIt happened at least twice, independently, in places with no contact with each other. Farmers in what is now Turkey were penning boar at roughly the same time that farmers in China were penning their own. We know this because DNA pulled from ancient bones shows two separate beginnings, not one clever idea spreading along a trade route.\n\nWhat people did next was slow and mostly accidental. Nobody sat down and designed a pig. The boar that stayed calm around humans got fed and got to breed. The ones that panicked or charged did not last long enough to raise piglets. Generation after generation, the calm bred with the calm, and the bodies followed the temperament. Tusks shrank. Legs shortened. The heavy fighting shoulders of a forest animal softened into the round body of an animal that eats and grows. Many pigs turned pink, because a dark bristled coat hides a boar in a forest and hides nothing at all in a pen. Once a trait stops earning its keep, it tends to drift away.\n\nHere is the part worth sitting with. Domestication is not permanent, and it is not deep. Let farm pigs loose in the woods and their descendants come back. Within a few generations they grow thick coarse bristles, heavy shoulders, and long tusks. The United States now has millions of feral pigs doing precisely this across dozens of states, tearing up crops, wrecking stream banks, and outrunning almost everyone sent to catch them. They are not a new species. They are not even a different animal. They are the same pig, with the barn taken away.\n\nNine thousand years of breeding sounds like a long time. It turns out the boar was never far under the surface. It was just waiting to be needed again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What evidence tells us pigs were domesticated twice rather than once? Quote the phrase the passage uses.",
+            "Explain why the passage says nobody sat down and designed a pig.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering wild boar origins, slow accidental domestication, and feral pigs reverting)",
+            "ancient bone DNA showing two starts; quote: two separate beginnings, not one clever idea spreading along a trade route",
+            "(people only fed and bred the calm animals; the changes piled up on their own over generations)",
+            "(inform, mainly: it gives dates, places, and DNA evidence; the closing lines lean persuasive and are written for effect)",
+            "(the wild boar traits never disappeared, only stopped being useful; ending there lands the idea that domestication is thin)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["domestication → ____", "independently → ____", "temperament → ____", "feral → ____"],
+          "rows": 1,
+          "answers": [
+            "the long process of breeding a wild animal into a tame one",
+            "happening separately, with no contact or influence between them",
+            "an animal's usual mood and behavior, such as calm or fierce",
+            "living wild after being descended from tame animals"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says once a trait stops earning its keep, it tends to drift away. Explain that idea using the pink skin example.",
+            "Why would the same traits that make a good farm pig make a bad wild pig?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(camouflage costs something and gains nothing in a pen, so nothing preserves it and it fades over generations)",
+            "(inference: calmness, slow legs, and pale skin are useless or dangerous where predators, weather, and competition exist)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: feral pigs damage crops and wild habitats, but people put them there. Who is responsible for fixing the problem? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Pig That Everybody Underestimates",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pig", "templateLabel": "The Pig That Everybody Underestimates", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pig",
+          "notes": ["Pig heart valves have been used in people for over 50 years", "Insulin came from pig pancreases before 1982", "January 2022: first gene-edited pig heart transplant", "That donor pig had 10 genetic edits", "Pigs reach human organ size in about 6 months", "Pigs learn names, use mirrors, and solved a joystick game"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Pig's Heart",
+          "text": "In January 2022, surgeons in Baltimore opened the chest of a dying man named David Bennett and gave him the heart of a pig. The heart beat. Bennett lived another two months. Most of the coverage treated the operation as a story about the future of medicine. It is also a story about how strange our relationship with this animal has become.\n\nThe pig was never the obvious donor. Chimpanzees and baboons sit far closer to us on the family tree, and for a while surgeons tried them. But primates breed slowly, are difficult and expensive to raise, and are the wrong size: a baboon heart cannot move enough blood to keep an adult human alive. A pig can. Pigs grow fast, breed well, reach roughly human organ size in about six months, and their bodies are plumbed on something close to our scale.\n\nMedicine noticed this a long time ago. Before 1982, people with diabetes injected insulin harvested from the pancreases of pigs and cattle. Heart valves cut from pigs have been sewn into human patients for over fifty years. Surgeons still dress severe burns with pig skin. The pig has been quietly holding parts of us together for decades, and almost nobody thinks about it.\n\nWhat stopped whole organs was the immune system. Pig cells carry a sugar that human blood identifies instantly as foreign, and the rejection that follows is fast and total. Bennett's donor was not an ordinary pig. Its genome had been edited in ten places: some genes switched off so the offending sugar was never built, some human genes added to keep the immune response calm, others adjusted so the heart would not outgrow the chest it was going into. The animal was designed, from conception, to be spare parts for a person.\n\nHere is where it gets uncomfortable. The same decades of research that proved how useful pigs are also proved how much is happening inside them. Pigs learn their own names within weeks and come when called. They use mirrors to locate food they cannot see directly, which means they grasp that a reflection carries information about a place rather than being a place. In 2021, researchers at Purdue University taught four pigs to play a simple video game, steering a cursor into a target with a joystick they pushed around with their snouts. The pigs scored well above chance. Nothing about a pig was built for a joystick, and they did it anyway.\n\nSo we have an animal clever enough to solve a puzzle we invented, using a tool we designed for hands it does not have, and we are editing its genes so that we can take its heart out. Both things are true at once. The same patient curiosity produced both results, and neither cancels the other.\n\nNobody is required to feel good about this. But the choice is not really between using pigs and leaving them alone. Bennett was dying. The kidney waiting lists are long and people die on them. Meanwhile, most of us eat pigs without a second thought, which is a far larger use of them and asks far less of us. The question is not whether a pig's life should count for something. It is why we only seem to ask when a heart is on the table."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why were pigs chosen over primates as organ donors? Give two reasons from the text.",
+            "Explain what the ten genetic edits were for. Cite the phrase the author uses to describe the finished animal.",
+            "Identify the turn in the passage: where does it pivot, and how does the author signal it?",
+            "The final paragraph raises eating pigs. Analyze what that move is doing to the reader, and decide whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering pig organs in human medicine and the ethical tension with pig intelligence)",
+            "(primates breed slowly and are hard to raise; a baboon heart is too small to keep an adult human alive, while pigs reach human organ size in about six months)",
+            "(to stop the sugar the immune system attacks, to calm rejection, and to stop the heart outgrowing the chest; cite: spare parts for a person)",
+            "(at Here is where it gets uncomfortable; a short blunt sentence pivots from medical success to the animal's mind)",
+            "(it turns the ethical question back on the reader and widens it from rare transplants to everyday habit; supported because the passage established pig intelligence first)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["donor → ____", "genome → ____", "rejection → ____", "conception → ____"],
+          "rows": 2,
+          "answers": [
+            "the individual an organ or tissue is taken from",
+            "the complete set of genetic instructions in an organism",
+            "the immune system attacking transplanted tissue as foreign",
+            "the moment an organism begins to develop"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that the pig has been quietly holding parts of us together for decades. Explain both meanings of that sentence.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(literally: valves, insulin, and skin keep patients alive; figuratively: we depend on pigs without acknowledging it)",
+            "(student question plus a credible source type, such as a medical journal, an ethicist, or a transplant surgeon)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If an animal is intelligent enough to solve puzzles we design, we should not engineer it for its organs. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}
