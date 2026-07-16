@@ -16,7 +16,6 @@ import { useState } from "react";
 import { ArrowRight, Check, Globe, Play, Plus, Search, Send, Star, Trash2, X } from "lucide-react";
 import { SproutMascotIcon } from "../_components/SproutMascotIcon";
 import { WorksheetDoc } from "./_components/WorksheetDoc";
-import { BackupControl } from "./_components/BackupControl";
 import { DocumentNudge } from "./_components/DocumentNudge";
 import { Typewriter } from "./_components/Typewriter";
 import { AgeTag, SheetStack, Sticker, forestCta, sheet, tiltFor } from "./_components/paper";
@@ -66,6 +65,8 @@ export default function LibraryHome() {
   const [viewing, setViewing] = useState<{ ws: Worksheet; savedId?: string } | null>(null);
   // Demo stage: which coming-soon feature preview is open (null = none).
   const [tease, setTease] = useState<TeaseFeature | null>(null);
+  // Mobile: whether the full topic-tag row is expanded.
+  const [moreTopics, setMoreTopics] = useState(false);
 
   const inTopic = (templateId: string) => topic === "all" || topicForTemplate(templateId) === topic;
   const templates = TEMPLATES.filter((t) => inTopic(t.id) && match(query, `${t.title} ${t.blurb}`));
@@ -82,11 +83,12 @@ export default function LibraryHome() {
           <SproutMascotIcon className="h-11 w-11 sm:h-16 sm:w-16" />
         </span>
         <div>
-          {/* The line wraps freely on mobile so the type can run big; the
-              cycled word + cursor stay glued together via nowrap on the
-              Typewriter span itself. */}
-          <h1 className="text-sprout-cream text-[clamp(2.1rem,10vw,3rem)] leading-[1.05] font-bold tracking-[-0.02em] sm:text-6xl">
-            We were born to <Typewriter words={BORN_TO} className="text-sprout-lime whitespace-nowrap" />
+          {/* No layout shift, ever: on mobile the cycled word gets its own
+              fixed line (block), so short and long words never change the
+              line count. From sm up the whole heading is one nowrap line,
+              sized so the longest word ("discover") always fits. */}
+          <h1 className="text-sprout-cream text-[clamp(2.1rem,10vw,3rem)] leading-[1.1] font-bold tracking-[-0.02em] sm:text-[clamp(2.25rem,5.2vw,3.75rem)] sm:whitespace-nowrap">
+            We were born to <Typewriter words={BORN_TO} className="text-sprout-lime block whitespace-nowrap sm:inline" />
           </h1>
           <p className="text-sprout-cream/70 mt-5 text-base sm:mt-6 sm:text-lg">
             {RESOURCES_DEMO
@@ -131,9 +133,11 @@ export default function LibraryHome() {
           </div>
           {/* Templates / Mine segmented switch */}
           <div className="flex items-center gap-1 rounded-full border border-[#2E5A35]/15 bg-white p-1">
+            {/* No count on Templates — the library reads as 100+, a literal
+                grid count undercuts it. My worksheets keeps its count. */}
             {(
               [
-                { key: "templates" as Tab, label: "Templates", count: templates.length },
+                { key: "templates" as Tab, label: "Templates", count: null as number | null },
                 { key: "mine" as Tab, label: "My worksheets", count: mine.length },
               ]
             ).map((t) => {
@@ -148,23 +152,46 @@ export default function LibraryHome() {
                   )}
                 >
                   {t.label}
-                  <span className={cn("rounded-full px-1.5 text-xs", on ? "bg-white/20" : "bg-[#2E5A35]/10 text-[#2E5A35]")}>{t.count}</span>
+                  {t.count !== null && (
+                    <span className={cn("rounded-full px-1.5 text-xs", on ? "bg-white/20" : "bg-[#2E5A35]/10 text-[#2E5A35]")}>{t.count}</span>
+                  )}
                 </button>
               );
             })}
           </div>
         </div>
 
-        {/* topic tags: little paper labels */}
+        {/* topic tags: little paper labels. Mobile shows the first few with a
+            View more toggle so the sheet stays compact; desktop shows all. */}
         <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-[#2E5A35]/10 pt-4">
           <TopicTag active={topic === "all"} onClick={() => setTopic("all")} label="All" emoji="✨" />
-          {TOPICS.map((t) => (
-            <TopicTag key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
+          {TOPICS.map((t, i) => (
+            <TopicTag
+              key={t.key}
+              active={topic === t.key}
+              onClick={() => setTopic(t.key)}
+              label={t.label}
+              emoji={t.emoji}
+              className={cn(i >= 3 && !moreTopics && topic !== t.key && "hidden sm:inline-flex")}
+            />
           ))}
           {STORY_INDEX.length > 0 &&
             STORY_TOPICS.filter((t) => STORY_INDEX.some((s) => s.topic === t.key)).map((t) => (
-              <TopicTag key={t.key} active={topic === t.key} onClick={() => setTopic(t.key)} label={t.label} emoji={t.emoji} />
+              <TopicTag
+                key={t.key}
+                active={topic === t.key}
+                onClick={() => setTopic(t.key)}
+                label={t.label}
+                emoji={t.emoji}
+                className={cn(!moreTopics && topic !== t.key && "hidden sm:inline-flex")}
+              />
             ))}
+          <button
+            onClick={() => setMoreTopics((m) => !m)}
+            className="inline-flex h-10 items-center gap-1 rounded-full px-4 text-sm font-bold text-[#2E5A35] transition hover:bg-[#2E5A35]/8 sm:hidden"
+          >
+            {moreTopics ? "View less" : "View more"}
+          </button>
         </div>
       </div>
 
@@ -459,13 +486,14 @@ function SavedCard({ ws, i, onOpen, onFavorite, onDelete }: { ws: SavedWorksheet
   );
 }
 
-function TopicTag({ active, onClick, label, emoji }: { active: boolean; onClick: () => void; label: string; emoji: string }) {
+function TopicTag({ active, onClick, label, emoji, className }: { active: boolean; onClick: () => void; label: string; emoji: string; className?: string }) {
   return (
     <button
       onClick={onClick}
       className={cn(
         "inline-flex h-10 items-center gap-1.5 rounded-full px-4 text-sm font-bold transition active:scale-95",
         active ? "bg-[#2E5A35] text-white shadow-[0_8px_18px_-6px_rgba(46,90,53,0.6)]" : "border border-[#2E5A35]/15 bg-white/70 text-[#1B3722]/70 hover:bg-white",
+        className,
       )}
     >
       <span>{emoji}</span>
@@ -539,10 +567,17 @@ function KidsManager({
 
   return (
     <SheetStack flat className="flex h-full flex-col p-5 sm:p-6">
-      <span className="text-[11px] font-bold tracking-[0.18em] text-[#2E5A35] uppercase">Profiles</span>
+      {/* The card header is the door to the profiles area — manage your own
+          profile and the kids' in one place. Tiles below stay as shortcuts. */}
+      <Link href="/resources/profile" className="group/prof -m-2 flex items-center justify-between rounded-xl p-2 transition hover:bg-[#2E5A35]/5">
+        <span className="text-[11px] font-bold tracking-[0.18em] text-[#2E5A35] uppercase">Profiles</span>
+        <span className="inline-flex items-center gap-1 text-xs font-bold text-[#2E5A35]">
+          Manage <ArrowRight className="size-3.5 transition group-hover/prof:translate-x-0.5" />
+        </span>
+      </Link>
       <div className="mt-3.5 flex flex-wrap items-start gap-3.5">
         {account && (
-          <Link href={`/resources/creator/${account.handle}`} className="group flex w-14 flex-col items-center gap-1.5 text-center">
+          <Link href="/resources/profile" className="group flex w-14 flex-col items-center gap-1.5 text-center">
             {account.photo ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={account.photo} alt="" className={cn("size-12 rounded-full object-cover", tileRing)} />
@@ -586,9 +621,6 @@ function KidsManager({
         )}
       </div>
       {kids.length === 0 && !adding && <p className="mt-3 text-xs leading-relaxed text-[#1B3722]/55">Add a child to make worksheets with their name and right age.</p>}
-      <div className="mt-auto pt-4">
-        <BackupControl />
-      </div>
     </SheetStack>
   );
 }

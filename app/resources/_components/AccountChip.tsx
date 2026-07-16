@@ -9,6 +9,7 @@ import Link from "next/link";
 import { capName, newId } from "@/lib/resources/util";
 import { GlassButton } from "@/components/ui/glass";
 import { pill } from "@/lib/resources/pill";
+import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
 function slug(s: string): string {
   return (
@@ -65,8 +66,10 @@ export function AccountChip() {
   }
 
   if (account) {
+    // Demo stage: the public creator pages live behind the community (coming
+    // soon), so your own chip goes to the profiles area instead of a tease.
     return (
-      <Link href={`/resources/creator/${account.handle}`} className={pill(false, "h-9 shrink-0 py-1 pr-1.5 pl-1 text-sm sm:pr-3")}>
+      <Link href={RESOURCES_DEMO ? "/resources/profile" : `/resources/creator/${account.handle}`} className={pill(false, "h-9 shrink-0 py-1 pr-1.5 pl-1 text-sm sm:pr-3")}>
         {account.photo ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={account.photo} alt="" className="size-7 rounded-full object-cover" />

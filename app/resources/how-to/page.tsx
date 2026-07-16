@@ -78,11 +78,16 @@ const STEPS: { title: string; body: string; visual?: ReactNode }[] = [
     title: "Sprout builds it",
     body: "It writes the whole worksheet in a second or two. Watch it come together, then it's ready to change.",
   },
-  {
-    title: "Tweak it with one tap",
-    body: "Above the chat box is a row of presets: harder, easier, longer, shorter, more questions. Tap one and it rebuilds that way in a second. Tap a few and they stack. Want a theme like space or dinosaurs, or anything specific? Just type it in the chat.",
-    visual: <MiniPresets />,
-  },
+  RESOURCES_DEMO
+    ? {
+        title: "Flick through versions",
+        body: "Use the arrows above the sheet, or hit New version, and it rebuilds fresh with different problems and wording. The age dial stays in charge of how hard it is.",
+      }
+    : {
+        title: "Tweak it with one tap",
+        body: "Above the chat box is a row of presets: harder, easier, longer, shorter, more questions. Tap one and it rebuilds that way in a second. Tap a few and they stack. Want a theme like space or dinosaurs, or anything specific? Just type it in the chat.",
+        visual: <MiniPresets />,
+      },
   {
     title: "Print it or save it",
     body: "Download PDF opens your print screen to print or save as a PDF. Save keeps it in My worksheets for later. No watermark, no catch.",
@@ -157,7 +162,7 @@ const FAQS = [
   },
   {
     q: "Could I lose my saved stuff if I clear my browser?",
-    a: "Yes, that's the honest trade-off of keeping it off our servers. So there's a Back up button in the Profiles card on the library page. It downloads one file with everything; Restore brings it back on any device.",
+    a: "Yes, that's the honest trade-off of keeping it off our servers. So there's a Back up button on the Profiles page (tap Profiles on the library page). It downloads one file with everything; Restore brings it back on any device.",
   },
   {
     q: "It's slow, or it threw an error.",

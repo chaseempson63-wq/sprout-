@@ -359,12 +359,22 @@ export default function Builder() {
         )}
       </div>
 
-      {/* Mobile shows the worksheet first (the thing you came for) with the chat
-          right under it; desktop keeps the sticky chat rail on the left. */}
-      <div className="grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8">
+      {/* Templates have no chat, so say plainly how difficulty works. */}
+      {!isCustom && (
+        <p className="no-print -mt-2 mb-6 max-w-2xl text-sm leading-relaxed text-sprout-cream/60">
+          The age is the difficulty dial. Down for easier, up for harder, and the sheet rebuilds itself.
+          Want a different take on the same sheet? Use the arrows or hit New version.
+        </p>
+      )}
+
+      {/* Templates are a one-dial tool: the age stepper + variation arrows do
+          everything, so they get no chat rail. The freeform builder keeps it
+          (mobile: worksheet first, chat under; desktop: sticky left rail). */}
+      <div className={isCustom ? "grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)] lg:gap-8" : "grid gap-6"}>
         {/* chat — a warm paper sheet, like passing notes with Sprout. The
             assistant writes on paper (soft sage bubbles + mini mascot); you
             write in forest. */}
+        {isCustom && (
         <div className="no-print order-2 flex flex-col rounded-[22px] bg-[#FFFDF6] ring-1 ring-[#2E5A35]/10 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_14px_30px_-14px_rgba(8,22,12,0.55)] lg:order-1 lg:sticky lg:top-20 lg:h-[70vh]">
           <div className="flex items-center gap-2 border-b border-[#2E5A35]/10 px-4 py-2.5">
             <span className="grid size-7 place-items-center rounded-lg bg-[#2E5A35]/8">
@@ -443,6 +453,7 @@ export default function Builder() {
             </button>
           </div>
         </div>
+        )}
 
         {/* preview */}
         <div className="order-1 min-w-0 lg:order-2">
