@@ -115,30 +115,61 @@ function mathBlock(ctx: Ctx, op: "add" | "sub" | "mul" | "div"): WorksheetBlock 
   const count = cnt(12, ctx, 24);
   const items: string[] = [];
   const answers: string[] = [];
-  const f = scaleFactor(ctx.age, ctx.diff);
+  const b6 = band(ctx.age, ctx.diff);
   if (op === "mul") {
+    // Floor rises with the ceiling: age 13 gets 30..99 × 30..99, never 2 × 3.
     const hi = factorCeiling(ctx.age, ctx.diff);
+    const lo = hi >= 15 ? Math.max(3, Math.round(hi * 0.3)) : 2;
     for (let i = 0; i < count; i++) {
-      const a = rint(2, hi);
-      const b = rint(2, hi);
+      const a = rint(lo, hi);
+      const b = rint(lo, hi);
       items.push(`${a} × ${b} =`);
       answers.push(`${a * b}`);
     }
   } else if (op === "div") {
     const hi = factorCeiling(ctx.age, ctx.diff);
+    const lo = hi >= 15 ? Math.max(3, Math.round(hi * 0.3)) : 2;
     for (let i = 0; i < count; i++) {
       const b = rint(2, Math.min(12, hi)); // divisor stays a clean 1-2 digit, like Venice
-      const ans = rint(2, hi); // quotient scales with age -> multi-digit dividend
+      const ans = rint(lo, hi); // quotient scales with age -> multi-digit dividend
       items.push(`${b * ans} ÷ ${b} =`);
       answers.push(`${ans}`);
     }
   } else {
-    const max = Math.max(5, Math.round(20 * f));
+    // Band-driven ranges with REAL FLOORS so age 13 never rolls "3 − 2" and
+    // age 4 never rolls 3-digit borrowing. [aMin, aMax, bMin] per band; the
+    // tables keep aMin > 2×bMin so subtraction answers stay meaty too.
+    const [aMin, aMax, bMin] = byBand<[number, number, number]>(ctx, [
+      [2, 10, 1], // 1 · pre-K: within 10
+      [6, 20, 2], // 2 · K-1: within 20
+      [15, 99, 6], // 3 · Gr 2-3: 2-digit with carrying/borrowing
+      [120, 999, 45], // 4 · Gr 4-5: 3-digit
+      [1200, 9999, 350], // 5 · Gr 6-7: 4-digit, some decimals
+      [12000, 99999, 4500], // 6 · Gr 8: 5-digit, decimals, integers
+    ]);
+    const dp = b6 === 5 ? 1 : b6 === 6 ? 2 : 0; // top bands mix in decimals
+    const scale = Math.pow(10, dp);
+    const neg = (n: number) => (n < 0 ? `−${Math.abs(n)}` : `${n}`);
     for (let i = 0; i < count; i++) {
-      const a = rint(1, max);
-      const b = rint(1, op === "sub" ? a : max);
-      items.push(op === "sub" ? `${a} − ${b} =` : `${a} + ${b} =`);
-      answers.push(`${op === "sub" ? a - b : a + b}`);
+      // Band 6 subtraction: every 4th problem is Grade-8 integers, where the
+      // answer can genuinely go below zero.
+      if (op === "sub" && b6 === 6 && i % 4 === 3) {
+        const a = rint(-90, 90);
+        const c = rint(-90, 90);
+        items.push(`${neg(a)} − (${neg(c)}) =`);
+        answers.push(neg(a - c));
+        continue;
+      }
+      const A = rint(aMin, aMax);
+      const B = op === "sub" ? rint(bMin, A - bMin) : rint(bMin, aMax);
+      if (dp > 0 && i % 3 === 2) {
+        // decimals built from the same integer draw, so answers stay exact
+        items.push(`${(A / scale).toFixed(dp)} ${op === "sub" ? "−" : "+"} ${(B / scale).toFixed(dp)} =`);
+        answers.push(((op === "sub" ? A - B : A + B) / scale).toFixed(dp));
+      } else {
+        items.push(op === "sub" ? `${A} − ${B} =` : `${A} + ${B} =`);
+        answers.push(`${op === "sub" ? A - B : A + B}`);
+      }
     }
   }
   // The math renderer gives open working space under each problem, no answer
@@ -147,14 +178,29 @@ function mathBlock(ctx: Ctx, op: "add" | "sub" | "mul" | "div"): WorksheetBlock 
 }
 
 function columnMathBlock(ctx: Ctx, op: "add" | "sub"): WorksheetBlock {
-  const f = scaleFactor(ctx.age, ctx.diff);
-  const max = Math.max(12, Math.round(60 * f));
+  // Same band tables idea as mathBlock, tuned for column work: both numbers
+  // are always multi-digit enough that lining up the digits means something.
+  const [aMin, aMax, bMin] = byBand<[number, number, number]>(ctx, [
+    [6, 10, 2], // 1 · pre-K (rarely hit: column math starts with the 5+ templates)
+    [10, 30, 4], // 2 · K-1
+    [25, 99, 12], // 3 · Gr 2-3: 2-digit
+    [250, 999, 120], // 4 · Gr 4-5: 3-digit
+    [2500, 9999, 1200], // 5 · Gr 6-7: 4-digit
+    [25000, 99999, 12000], // 6 · Gr 8: 5-digit
+  ]);
+  const forceRegroup = band(ctx.age, ctx.diff) >= 3;
   const count = cnt(6, ctx, 12);
   const items: string[] = [];
   const answers: string[] = [];
   for (let i = 0; i < count; i++) {
-    const a = rint(10, max);
-    const b = rint(1, op === "sub" ? a : max);
+    let a = rint(aMin, aMax);
+    let b = op === "sub" ? rint(bMin, a - bMin) : rint(bMin, aMax);
+    // Column work exists to practise carrying/borrowing — from band 3 up,
+    // redraw a few times until the ones column actually regroups.
+    for (let t = 0; forceRegroup && t < 8 && !(op === "sub" ? a % 10 < b % 10 : (a % 10) + (b % 10) >= 10); t++) {
+      a = rint(aMin, aMax);
+      b = op === "sub" ? rint(bMin, a - bMin) : rint(bMin, aMax);
+    }
     items.push(op === "sub" ? `${a} - ${b}` : `${a} + ${b}`);
     answers.push(`${op === "sub" ? a - b : a + b}`);
   }
@@ -301,15 +347,17 @@ function shortAnswerMath(ctx: Ctx): WorksheetBlock {
   const has = ctx.name ? "has" : "have";
   const id = ctx.template.id;
   const hi = Math.max(4, Math.round(8 * f));
+  // Floor scales with the ceiling so older kids never get 2-and-3 word problems.
+  const lo = hi >= 12 ? Math.max(3, Math.round(hi * 0.35)) : 2;
   for (let i = 0; i < count; i++) {
-    const a = rint(2, hi);
-    const b = rint(2, hi);
+    const a = rint(lo, hi);
+    const b = rint(lo, hi);
     if (id === "multiplication") {
       items.push(`${subj} ${has} ${a} boxes of ${noun} with ${b} in each box. How many ${noun} in all?`);
       answers.push(`${a * b}`);
     } else if (id === "division") {
       const groups = rint(2, Math.min(12, hi));
-      const each = rint(2, hi);
+      const each = rint(lo, hi);
       items.push(`${subj} ${has} ${groups * each} ${noun} to share equally among ${groups} friends. How many does each friend get?`);
       answers.push(`${each}`);
     } else {

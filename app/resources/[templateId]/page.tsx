@@ -74,7 +74,7 @@ export default function Builder() {
   const didInit = useRef(false);
   const variantsRef = useRef<Worksheet[]>([]);
   const genSeq = useRef(0); // only the latest request's result is applied (kills the race)
-  const ageTimer = useRef<number | null>(null); // debounce: stepper taps settle before regenerating
+  const lastBuiltAge = useRef<number | null>(null); // the age the current sheet was built at
   const chatEnd = useRef<HTMLDivElement>(null);
 
   const child = getChild(childId);
@@ -113,6 +113,7 @@ export default function Builder() {
       if (myseq !== genSeq.current) return; // a newer request superseded this one; drop it
       pushVariant(data.worksheet);
       setSource(data.source);
+      lastBuiltAge.current = ageVal;
       track("resources_generate", { template: template.id, age: ageVal, source: data.source });
       if (kind === "init") {
         setMessages([
@@ -207,25 +208,32 @@ export default function Builder() {
   }
 
   // The stepper is the difficulty dial (the locked rule: it is the ONLY thing
-  // that drives difficulty). Taps settle for a beat, then the sheet rebuilds at
-  // the new age. Before the first sheet exists it just sets the number.
+  // that drives difficulty). It just sets the number — the effect below owns
+  // rebuilding, so a rebuild can never be lost to a stale timer.
   function stepAge(next: number) {
-    const a = Math.min(13, Math.max(3, next));
-    setAge(a);
-    if (ageTimer.current) window.clearTimeout(ageTimer.current);
-    if (idx >= 0) {
-      ageTimer.current = window.setTimeout(() => {
-        void runGenerate(messages, a, "silent", childName);
-      }, 650);
-    }
+    setAge(Math.min(13, Math.max(3, next)));
   }
+
+  // Rebuild whenever the dial settles on an age the current sheet wasn't built
+  // at. Effect-based (not a timeout inside the click handler) so rapid taps and
+  // re-renders can't strand the debounce — the cleanup clears it, and the next
+  // run always sees the latest age.
+  useEffect(() => {
+    if (idx < 0 || lastBuiltAge.current === age) return;
+    const t = window.setTimeout(() => {
+      void runGenerate(messages, age, "silent", childName);
+    }, 650);
+    return () => window.clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [age, idx]);
 
   // Picking a kid MAY set the stepper to their age, but never overrides it after.
   function selectKid(id: string, kidAge: number, kidName: string) {
     setChildId(id);
     setAge(kidAge);
-    // Don't auto-generate before the user has made a sheet.
-    if (idx >= 0) void runGenerate(messages, kidAge, "silent", kidName);
+    // The age effect rebuilds when the age changes; when it doesn't change,
+    // rebuild here so the sheet still picks up the kid's name.
+    if (idx >= 0 && kidAge === age) void runGenerate(messages, kidAge, "silent", kidName);
   }
 
   function addKid() {
