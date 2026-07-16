@@ -1,0 +1,315 @@
+{
+  "key": "island",
+  "title": "The Island That Rose Out of the Sea",
+  "blurb": "How islands are built from the deep sea floor, how life finds them, and why they hold creatures that live nowhere else.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Island That Rose Out of the Sea",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-island", "templateLabel": "The Island That Rose Out of the Sea", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the water. Find the tree." },
+        {
+          "kind": "image",
+          "imageKey": "island",
+          "notes": ["Water goes all the way around", "The sand is warm and soft", "A palm tree grows right in the sand", "Coconuts float on the sea"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an island. An island is land with water all around it. You can walk all the way around it. The sand is warm. One palm tree grows in the middle. Up high in the tree are coconuts. A coconut can drop into the water and float away. It floats and floats and floats. One day it lands on new sand. Then a new tree grows there."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the coconuts in each row. Write how many in the box.",
+          "emoji": "🥥",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sand    sea" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "palm tree", "right": "island" },
+            { "left": "fish", "right": "sea" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own island. Add sand, water, and one tall tree.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Island That Rose Out of the Sea",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-island", "templateLabel": "The Island That Rose Out of the Sea", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "island",
+          "notes": ["A coconut is a giant seed", "Its husk is full of air, so it floats", "Salt water stays outside the shell", "The water inside feeds the baby tree", "A coconut can float for months"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Seed That Sailed",
+          "text": "A coconut is a seed. It is one of the biggest seeds in the world. Inside the hard shell is sweet water and food for a baby tree. Around the shell is a thick, dry husk. The husk is packed with air, so the coconut floats like a little boat. A coconut can drop off a palm tree into the sea. Waves carry it for weeks. The salt water cannot get in through the hard shell. At last a wave pushes the coconut up onto warm sand far away. The shell splits. A green shoot pushes up. Roots push down. Slowly, a new palm tree grows on a new island."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a coconut?", "Why does a coconut float?", "What grows out of the coconut on the sand?"],
+          "rows": 2,
+          "answers": ["a seed, one of the biggest in the world", "its husk is packed with air", "a new palm tree"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A coconut is a very big ____.", "The husk is full of ____.", "Waves carry the coconut across the ____.", "A green ____ pushes up out of the shell."],
+          "wordBank": ["seed", "air", "sea", "shoot"],
+          "answers": ["seed", "air", "sea", "shoot"]
+        },
+        { "kind": "draw", "prompt": "Draw the coconut floating on the sea. Then draw the tree it will become.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Island That Rose Out of the Sea",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-island", "templateLabel": "The Island That Rose Out of the Sea", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "island",
+          "notes": ["Most ocean islands are mountain tops", "Hawaii sits over a hot spot", "Melted rock builds the mountain up", "The sea floor slides a hand's width a year", "A new Hawaiian island is growing underwater"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Top of a Mountain",
+          "text": "Look at a small island in a big ocean. It looks like a scoop of sand someone dropped on the water. It is not. Almost every island in the deep ocean is the top of a mountain. The rest of the mountain keeps going down, all the way to the sea floor thousands of feet below. You are seeing only the last few feet of something enormous. Many of those mountains are built by hot rock. In one spot under the Pacific Ocean, melted rock rises from deep inside Earth and pours out onto the sea floor. It cools and turns hard. More pours out on top of it. Over thousands of years the pile grows taller, until one day its top breaks through the waves, and a new island is born. Here is the strange part. The hot spot stays in one place, but the sea floor above it is moving. It slides along about as far as your hand is wide each year. So each island is slowly carried away from the hot spot that made it, and a new island starts growing behind it. That is why the Hawaiian Islands lie in a long line, like beads on a string."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a deep ocean island really the top of?",
+            "Where does the melted rock come from?",
+            "How far does the sea floor slide each year?",
+            "Why do you think the Hawaiian Islands lie in a line instead of a clump?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the top of a mountain that rises from the sea floor",
+            "from deep inside Earth, rising through a hot spot",
+            "about as far as your hand is wide",
+            "(inference: the hot spot stays still while the sea floor slides over it, so each island is carried away in turn)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Top of a Mountain", "How to Sail a Boat to Hawaii", "The Best Beaches in the World"],
+          "answers": ["The Top of a Mountain"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Melted rock pours onto the sea ____.", "The rock cools and turns ____.", "The Hawaiian Islands lie in a long ____."],
+          "wordBank": ["floor", "hard", "line"],
+          "answers": ["floor", "hard", "line"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you could stand on the sea floor beside an island, what would you see above you, and how would it feel?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Island That Rose Out of the Sea",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-island", "templateLabel": "The Island That Rose Out of the Sea", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "island",
+          "notes": ["Surtsey rose out of the sea in 1963", "Scientists fenced it off to watch", "The first plant arrived in 1965", "Gulls turned bare ash into soil", "About seventy kinds of plants grow there now", "Life arrives by wind, wings, and waves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Loneliest Place on Earth",
+          "text": "A brand new island is the loneliest place on Earth. It is bare rock and ash. Nothing grows. Nothing crawls. No seed, no ant, no bird. And yet, given enough time, it fills with life. Scientists have watched it happen from the very first day. In November 1963, fishermen off the south coast of Iceland saw smoke rising out of open ocean. Hot rock was pouring from the sea floor and piling up fast. Within days there was an island where there had been only water. They named it Surtsey. Then the scientists did something clever. They closed the island off. Almost nobody was allowed to land, so that life would arrive entirely on its own and nobody could argue that people had carried it there. Life came three ways: on the wind, on wings, and on the waves. In 1965, a single sea rocket plant was found growing on the shore, sprouted from a seed the ocean had delivered. Flies and spiders blew in on the wind. Seabirds landed to rest, and everything a seabird brings came with them, including seeds stuck to their feathers. In 1986, gulls began nesting, and the island changed quickly. Their droppings turned bare ash into real soil, and plants spread thickly around the colony. Willow bushes took hold in the 1990s. Today about seventy kinds of plants have been found on Surtsey, along with nesting birds, insects, and earthworms in the ground beneath them. Nobody planted any of it. The island simply waited, and life found it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did the scientists stop people from landing on Surtsey?",
+            "Name the three ways living things reached the island.",
+            "The passage says the island changed quickly after 1986. Explain what the gulls actually did to cause that.",
+            "Why do you think a plant was able to arrive before a willow bush could take hold?"
+          ],
+          "rows": 2,
+          "answers": [
+            "so life would arrive on its own and nobody could claim people carried it there",
+            "on the wind, on wings, and on the waves",
+            "their droppings turned bare ash into real soil, so plants could spread",
+            "(inference: bare ash was not soil yet, so only tough shore plants could start; bushes needed soil built up first)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Scientists watched life arrive on a brand new island entirely on its own",
+            "Iceland is the best place in the world to go fishing",
+            "People must plant seeds on new islands or nothing will ever grow"
+          ],
+          "answers": ["Scientists watched life arrive on a brand new island entirely on its own"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["bare (rock) → ____", "colony → ____", "delivered → ____"],
+          "rows": 1,
+          "answers": ["with nothing growing on it or covering it", "a group of birds nesting together in one place", "carried and dropped off"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: Surtsey is still closed to almost everyone today. Should it stay closed? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Island That Rose Out of the Sea",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-island", "templateLabel": "The Island That Rose Out of the Sea", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "island",
+          "notes": ["Reef coral needs shallow, sunlit water", "An atoll is a ring with no island inside", "Darwin solved atolls in the 1830s", "Cooling sea floor sags and sinks", "Coral grows up as the mountain goes down", "A 1952 drill hit buried rock 4,000 feet down"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ring in the Ocean",
+          "text": "Fly over the tropical Pacific and you will pass over rings. Each one is a thin circle of coral and sand wrapped around a calm blue lagoon, with deep ocean falling away on every side. There is no mountain in the middle. There is no peak, no hill, nothing at all in the center. Just a ring. These are atolls, and for a long time nobody could explain them. Here is the puzzle. The coral that builds reefs is an animal, and it can only live in shallow, sunlit water, roughly the top hundred feet. Deeper than that it is too dark and the coral dies. So a ring of coral cannot have grown up from a sea floor thousands of feet down. It must have started in the shallows. But if it started in the shallows, where did the shallow ground go? A young naturalist named Charles Darwin worked it out in the 1830s while sailing around the world, and he worked most of it out before he had ever seen an atoll up close. His idea went like this. Start with a new island, a steep mountain of cooled rock standing in warm water. Coral settles in the shallows around its shore and builds a reef that hugs the coastline. Now the island begins to sink. Old sea floor cools, grows heavier, and sags under the weight of the mountain riding on it, so slowly that no person would ever notice. The coral notices. Coral grows upward toward the light, keeping pace with the sinking, a fraction of an inch a year. The shoreline creeps inward, the reef stays where it is, and a lagoon opens between them. The island keeps going down. At last its final peak slips beneath the surface for good, and the only thing left in the sunlight is the coral that grew around it. A ring. An atoll is the outline of a mountain that is no longer there. It was a beautiful idea, and Darwin could not prove it. He said so himself, and he named the test: drill straight down through an atoll. If he was right, the drill would pass through thousands of feet of old coral and finally strike the buried mountain. Nobody could drill that deep in his lifetime. In 1952, seventy years after he died, engineers drilled into Enewetak Atoll in the Marshall Islands. They cut through more than four thousand feet of coral limestone. Then the drill hit dark stone. The mountain was down there, exactly where Darwin had put it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "State the puzzle in your own words: why can a thick ring of coral not have grown up from the deep sea floor?",
+            "Explain how a lagoon forms in Darwin's idea. Quote the phrase the passage uses to describe what the coral does.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author save the 1952 drilling for the last few sentences?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the atoll puzzle, Darwin's sinking-island idea, and the 1952 confirmation)",
+            "reef coral only lives in shallow sunlit water, so it must have started near the surface",
+            "the island sinks while the coral grows upward and the shore creeps inward; quote: keeping pace with the sinking",
+            "(inform, with detail: it defines atolls and reports dates and evidence; it also builds suspense like a story)",
+            "(it is the proof, so ending there pays off the puzzle and the long wait)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["atoll → ____", "lagoon → ____", "sags → ____", "naturalist → ____"],
+          "rows": 1,
+          "answers": [
+            "a ring of coral and sand around a lagoon, with no island in the middle",
+            "the calm shallow water enclosed by the ring",
+            "sinks or droops downward under weight",
+            "a person who studies nature"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Darwin's idea needs the coral to grow upward at almost the same speed the island sinks. What would the reef look like if the island sank much faster than the coral could grow?",
+            "The passage calls the atoll the outline of a mountain that is no longer there. Explain what that sentence means."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: the coral would be carried below the sunlight and die, leaving a drowned reef under the sea instead of a ring)",
+            "(the ring traces the shape of the old shoreline, but the mountain itself has sunk out of sight)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: Darwin published an idea he could not test for another hundred years. Was that good science or just a good guess? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Island That Rose Out of the Sea",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-island", "templateLabel": "The Island That Rose Out of the Sea", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "island",
+          "notes": ["Islands: about 5% of Earth's land", "About 1 in 5 bird species live on them", "Island giants: Komodo dragons reach 10 feet", "Island dwarfs: three-foot elephants on Malta", "About 75% of recent extinctions were on islands", "MacArthur and Wilson, 1967", "South Georgia was cleared of rats in 2018"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Cradles and Graveyards: Why Islands Break the Rules",
+          "text": "Islands make up only about five percent of the land on Earth. That small share carries a wildly outsized amount of life: roughly one in five of all bird species, along with enormous numbers of plants and animals found nowhere else on the planet. Islands also account for around three quarters of the extinctions of birds, mammals, reptiles, and amphibians recorded since the year 1500. Islands are, at the same time, the best place on Earth to become a new species and the worst place to be one. Understanding why explains a great deal about how life works everywhere else. Start with arrival. To reach a remote island, a living thing has to cross open ocean: blown on the wind, carried on wings, floating on a raft of driftwood, or riding inside a bird. That filter is brutal, and more importantly it is uneven. Seeds, spiders, and birds pass it fairly often. Large mammals and freshwater fish almost never do. So an island never receives a fair sample of the mainland. It receives a lopsided one, and whoever gets there first finds a world with empty roles to fill, no competition, and often no predators at all. Then comes change. A finch that lands on an island with no woodpeckers may discover beetles under bark and, over many generations, evolve a bill suited to prying them out. Bodies rearrange too, and they do it in two opposite directions. Large animals on islands tend to shrink, because a small island cannot feed a large body: Sicily and Malta once had elephants only a little over three feet tall. Small animals tend to grow, because the predators that kept them small never made the crossing: the Komodo dragon reaches ten feet. Birds with no ground predators repeatedly stop flying, since flight is expensive and escape is unnecessary. Islands run this experiment over and over in isolation, which is exactly why Darwin's finches and Wallace's years among the Malay islands pushed both men toward the same conclusion. In 1967, Robert MacArthur and Edward O. Wilson pushed the thinking further. They argued that the number of species on an island settles at a balance between two rates: new species arriving, and resident species dying out. Larger islands hold more, because they offer more room and more kinds of habitat. Closer islands hold more, because arrival is easier. That balance turned out to describe far more than islands in the sea. It fits any patch of habitat ringed by something a species cannot cross: a forest surrounded by farmland, a cold mountaintop, a park in a city. Their island theory became a tool for the whole planet. Now the graveyard. Everything that makes an island a cradle also makes it fragile. The species are few, the populations are small, the ranges are tiny, and they evolved in a world with no rats, no cats, and no goats. When ships arrived, that world ended in a hurry. The dodo, a large flightless pigeon on Mauritius, was gone within about a century of the first Dutch sailors landing. It was not simply eaten to death. The greater killers were the pigs and rats and monkeys that came ashore with the ships and ate its eggs off the open ground, because a dodo had never needed to hide a nest. An animal with no defenses is not stupid. It is an animal answering the question its island asked, and the question changed. The hopeful part is that island stories can run backward. Because islands are small and bounded, they are one of the few places where the damage can actually be undone. Clearing rats off a single island has brought entire seabird colonies back, sometimes within a few years. South Georgia, long overrun by rats that arrived on sealing and whaling ships, was declared rodent free in 2018 after an enormous clearing effort, and its birds are returning. Islands taught us how species are made. They may also be where we learn how to stop losing them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by calling the ocean crossing a filter that is uneven. Cite the evidence.",
+            "Island dwarfism and island gigantism pull in opposite directions. Explain the cause of each according to the passage.",
+            "Identify the shift in the passage: where does it turn, and how does the author signal the turn?",
+            "The author writes that a dodo was an animal answering the question its island asked, and the question changed. Analyze what that sentence is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering islands as both makers and losers of species)",
+            "(the crossing blocks some groups and not others; cite: Seeds, spiders, and birds pass it fairly often. Large mammals and freshwater fish almost never do.)",
+            "(large animals shrink because a small island cannot feed a large body; small animals grow because their predators never made the crossing)",
+            "(at Now the graveyard; a short blunt sentence marks the pivot from wonder to loss)",
+            "(it reframes flightlessness as a fit answer to old conditions rather than a flaw, shifting blame to the arriving ships; supported by the dodo egg evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["outsized → ____", "lopsided → ____", "isolation → ____", "bounded → ____"],
+          "rows": 2,
+          "answers": [
+            "much bigger than you would expect for the size",
+            "uneven, weighted heavily to one side",
+            "being cut off and separated from others",
+            "having clear edges or limits"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says MacArthur and Wilson's theory fits a forest surrounded by farmland. Explain why that comparison works, and what it suggests about protecting wildlife on the mainland.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a cut-off habitat patch behaves like an island: hard to reach, small, so it holds fewer species and loses them faster; suggests connecting habitats and keeping patches large)",
+            "(student question plus a credible source type, such as a scientific survey or a conservation report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Because island species were doomed the moment ships found them, conservation money is better spent on the mainland. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

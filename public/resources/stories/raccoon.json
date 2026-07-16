@@ -1,0 +1,321 @@
+{
+  "key": "raccoon",
+  "title": "The Bandit That Sees With Its Hands",
+  "blurb": "Everyone thinks the raccoon is washing its dinner. It is doing something far stranger, and it is doing it with the most sensitive hands in the forest.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Bandit That Sees With Its Hands",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-raccoon", "templateLabel": "The Bandit That Sees With Its Hands", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the mask on the raccoon's face." },
+        {
+          "kind": "image",
+          "imageKey": "raccoon",
+          "notes": ["It wears a black mask", "Its tail has rings", "It comes out at night", "It has five fingers on each paw", "It dips its food in water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a raccoon. It has a black mask on its face. It has a fluffy tail with rings on it. The raccoon comes out at night. It has five little fingers on each paw. It can pick things up. It likes to dip its food in the water. It feels the food with its fingers. Then it eats it up."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the rings on each tail. Write how many in the box.",
+          "emoji": "⭕",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "mask    paw" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "raccoon", "right": "night" },
+            { "left": "bee", "right": "flower" },
+            { "left": "fish", "right": "river" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own raccoon. Give it a mask and a stripy tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bandit That Sees With Its Hands",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-raccoon", "templateLabel": "The Bandit That Sees With Its Hands", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "raccoon",
+          "notes": ["It works at night", "It walks on flat feet, like a bear", "Five long fingers on each front paw", "It can open a lid or a latch", "Water helps its fingers feel more"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bandit That Sees With Its Hands",
+          "text": "A raccoon works at night. While you are asleep, it is awake and busy. It walks softly on flat feet, the way a bear walks. Its tail has dark rings all the way down. Its face has a black mask around the eyes. The best part of a raccoon is its front paws. Each one has five long fingers. A raccoon can turn a knob. It can lift a lid. It can pull a latch open. It often dips its food into water first. The water helps its fingers feel even more. So the raccoon is not washing its dinner. It is feeling it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["When does a raccoon come out?", "What is on the raccoon's face?", "How many fingers are on one front paw?", "Why does a raccoon dip its food in water?"],
+          "rows": 2,
+          "answers": ["at night", "a black mask", "five", "so its fingers can feel more"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A raccoon is awake at ____.", "It has a black ____ on its face.", "Its tail has dark ____.", "Each front paw has five ____."],
+          "wordBank": ["night", "mask", "rings", "fingers"],
+          "answers": ["night", "mask", "rings", "fingers"]
+        },
+        { "kind": "draw", "prompt": "Draw a raccoon at night. Add a moon and a tree.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bandit That Sees With Its Hands",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-raccoon", "templateLabel": "The Bandit That Sees With Its Hands", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "raccoon",
+          "notes": ["Its Latin name means the washer", "Germans call it Waschbär, the wash bear", "In Japan it is araiguma, washing bear", "It hunts by touch, not by sight", "Wet skin on its paws feels more"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Reads Its Dinner",
+          "text": "Long ago, people watched raccoons dunk their food in a stream and decided the raccoons were washing it. They were so sure that they wrote it into the animal's name. Its scientific name is Procyon lotor, and lotor is the Latin word for washer. In Germany a raccoon is a Waschbär, which means wash bear. In Japan it is an araiguma, which means washing bear. Half the world agrees, and half the world is wrong. Raccoons are not cleaning anything. The answer is in their paws. A raccoon's front paws are packed with tiny nerves that sense touch, and a huge part of its brain does nothing but listen to those paws. When the paws get wet, the tough skin on them softens, and the nerves feel even more than before. So a raccoon in a stream is not scrubbing its dinner. It is reading it. It runs its fingers over every bump and edge to learn what it has caught. Here is the clue that proves it. Raccoons in cages dunk their food far more often than wild raccoons do. A wild raccoon does not need to. It already spends the night with its paws under cold water, feeling for a crayfish beneath a rock it cannot see."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did people think raccoons were doing in the stream?",
+            "What does the word lotor mean?",
+            "What happens to a raccoon's paws when they get wet?",
+            "Why do you think a raccoon needs such good touch instead of good eyesight?"
+          ],
+          "rows": 2,
+          "answers": [
+            "washing their food",
+            "washer",
+            "the tough skin softens so the nerves feel more",
+            "(inference: it hunts at night and under water, where it cannot see)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Animal That Reads Its Dinner", "How to Keep a Stream Clean", "The Biggest Bear in Germany"],
+          "answers": ["The Animal That Reads Its Dinner"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The raccoon's paws are packed with tiny ____.", "The Latin word lotor means ____.", "A raccoon feels under a rock for a ____."],
+          "wordBank": ["nerves", "washer", "crayfish"],
+          "answers": ["nerves", "washer", "crayfish"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about a raccoon, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bandit That Sees With Its Hands",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-raccoon", "templateLabel": "The Bandit That Sees With Its Hands", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "raccoon",
+          "notes": ["Procyon lotor: lotor means washer", "Front paws are among the best touch organs alive", "Much of its brain is wired to its paws", "Wet skin softens and feels more detail", "Caged raccoons dunk far more than wild ones", "Native to North America"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Everyone Is Wrong About the Raccoon",
+          "text": "Watch a raccoon at the edge of a stream and it looks like it is doing the dishes. It holds a piece of food in both front paws, turns it over, rolls it, dips it under, and turns it again. People have watched this for hundreds of years and drawn the same conclusion. The raccoon is washing its dinner. They were so certain that they wrote it into the animal's name. Its scientific name is Procyon lotor, and lotor is Latin for washer. Germans call the raccoon a Waschbär, a wash bear. In Japan it is an araiguma, a washing bear. Three languages, one shared mistake. The secret is in the paws. A raccoon's front paw has five thin fingers with no webbing and no thumb, and those fingers are crowded with nerve endings that sense touch. A very large share of the raccoon's brain is set aside for nothing but the signals arriving from its paws. Your brain spends most of its attention on what your eyes send it. A raccoon's brain spends most of its attention on what its hands send it. Water makes those hands better. The tough outer layer of skin on a raccoon's paw softens when it gets wet, and softer skin feels far more detail. Dipping food is not cleaning it. It is switching on the raccoon's best sense. There is a clue that gives the whole thing away. Raccoons in cages dunk their food constantly, far more than wild raccoons do. A wild raccoon does not need to. It spends its nights with its paws already underwater, reaching under rocks and into mud for crayfish and frogs it will never see. It hunts by feel in the dark. The dunking we find so charming is the same animal doing the same thing, with nothing left to catch."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what is the mistake people have made about raccoons?",
+            "Explain why water makes a raccoon's paws work better.",
+            "The passage compares your brain to a raccoon's brain. What is the difference it points out?",
+            "Caged raccoons dunk their food more than wild ones do. Why does the author call this a clue?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(they think it is washing its food when it is really feeling it)",
+            "the tough outer skin softens when wet, and softer skin senses more detail",
+            "(your brain mostly processes sight; a raccoon's mostly processes touch from its paws)",
+            "(inference: a wild raccoon already hunts with wet paws, so dunking is the same feeling behavior with no prey to find)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A famous raccoon behavior was misread for centuries; the animal is feeling its food, not washing it",
+            "Raccoons are the cleanest animals in North America",
+            "Latin is the best language for naming animals"
+          ],
+          "answers": ["A famous raccoon behavior was misread for centuries; the animal is feeling its food, not washing it"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["lotor → ____", "nerve endings → ____", "conclusion → ____"],
+          "rows": 1,
+          "answers": [
+            "washer, in Latin",
+            "the tips of nerves that pick up feeling and send it to the brain",
+            "the decision you reach after looking at something"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: people named this animal after something it does not actually do. Why do you think a wrong idea can last for hundreds of years? Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bandit That Sees With Its Hands",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-raccoon", "templateLabel": "The Bandit That Sees With Its Hands", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "raccoon",
+          "notes": ["Procyon lotor, native to North America", "Plantigrade: walks flat on its soles, like a bear", "In 1907 raccoons opened 11 of 13 complex locks", "City raccoons outnumber forest raccoons per square mile", "Not a true hibernator: winter torpor instead", "Toronto spent millions on a raccoon-proof bin"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Raccoon in a Forest Has a Hard Life",
+          "text": "A raccoon in a forest has a hard life. A raccoon in a city has a career. Raccoons are native to North America, where they evolved along wooded riverbanks, hunting by touch in shallow water. Almost everything that made them good at that has turned out to make them extraordinary at living beside us. They climb, so fences and roofs are only stairs. They are nocturnal, so they work while the streets are empty. They eat nearly anything. And they have hands: five slender fingers on each front paw, wired to a brain that gives an enormous share of its sensory attention to touch alone. The result is that urban raccoons now live at population densities the woods could never support, and they get sharper about us as they go. Suzanne MacDonald, a psychologist at York University in Toronto, has spent years comparing city raccoons with country ones. The city animals are bolder, more persistent, and better at defeating the containers we invent. In 2016 Toronto rolled out a green waste bin engineered specifically to stop raccoons, at a cost of about thirty-one million dollars. It worked, mostly. Then some raccoons worked it out. None of this is new. In 1907 a researcher named H. B. Davis tested raccoons on thirteen complicated locks fitted with bolts, hooks and latches. They opened eleven of them, and when he came back a year later, they still remembered how. More recently, researchers handed raccoons a classic puzzle borrowed from an old fable: drop stones into a tube of water to float a treat up within reach. Some raccoons solved it as intended. Others tipped the whole tube over. That is not the answer the test wanted, and it is a better answer than the test expected. Winter is the one thing that reliably beats them. Raccoons do not truly hibernate. They fatten through fall, den up in a hollow tree or somebody's attic, and sleep through the worst weeks in a shallow torpor, their body temperature barely dropping. By spring, some have lost half their weight. We tend to describe all of this in a particular way. We call raccoons bandits, burglars, masked thieves. It is a flattering story, because it lets us pretend a trash can is a bank vault and that losing to a raccoon is losing to a criminal mastermind. The truth is plainer and stranger. The raccoon is not stealing from you. It has simply worked out that the richest, most reliable riverbank in North America is the one we built."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "List three raccoon traits the passage says make city life easy for them.",
+            "What did H. B. Davis find in 1907, and why does the author include it? Quote the detail you find most convincing.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain what the author means by the last sentence, and why it is placed last."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering touch-based hunting, urban success and intelligence, and the way we mislabel them)",
+            "they climb, they are nocturnal, they eat nearly anything, they have sensitive hands (any three)",
+            "raccoons opened 11 of 13 locks and remembered a year later; it shows the intelligence is old news, not a new city trick; quote: they still remembered how",
+            "(inform, with a persuasive turn at the end; details: it defines torpor and cites research, then argues against the bandit label)",
+            "(the city is just another riverbank to a raccoon; placed last to overturn the bandit story the paragraph before it sets up)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["nocturnal → ____", "torpor → ____", "densities → ____", "persistent → ____"],
+          "rows": 1,
+          "answers": [
+            "active at night",
+            "a deep sleep that saves energy but is lighter than true hibernation",
+            "how many animals live in a given amount of space",
+            "keeping at something and not giving up"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Toronto spent about thirty-one million dollars and some raccoons still got in. Was that money wasted? Explain your reasoning.",
+            "Why might calling raccoons bandits and thieves actually make it harder for us to deal with them?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: reasonable answers either way, supported with reasons)",
+            "(inference: it treats their behavior as a crime instead of normal foraging, so we design against a villain rather than against an animal following food)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when a wild animal thrives in our cities, is that a success or a problem? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bandit That Sees With Its Hands",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-raccoon", "templateLabel": "The Bandit That Sees With Its Hands", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "raccoon",
+          "notes": ["Procyon lotor: the name means the washer", "Paw skin softens in water, sharpening touch", "Davis, 1907: opened 11 of 13 complex locks", "Released at a German lake in 1934, now across Europe", "A 1977 cartoon set off a pet boom in Japan", "Native only to North America"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Everyone Named the Raccoon After Something It Does Not Do",
+          "text": "For centuries, people watched raccoons hold food in a stream, turn it over and over in their front paws, and reached the obvious conclusion. The animal was washing its dinner. The idea stuck so hard that it is now written into three languages. The raccoon's scientific name, Procyon lotor, ends in the Latin word for washer. Germans call it the Waschbär, the wash bear. In Japan it is the araiguma, the washing bear. Three cultures, three languages, one shared mistake. The raccoon is not washing anything. To understand what it is doing, you have to look at its hands, and then at its brain. A raccoon's front paw carries five slim, mobile digits with no webbing and no opposable thumb. What it does have is nerves, in an extraordinary density. That paw is one of the finest touch organs in the animal kingdom, and the raccoon's brain is built around the fact: an enormous share of its sensory cortex, the region that processes what the body feels, is handed over to signals arriving from the front paws alone. Compare that to your own brain, which spends most of its sensory budget on vision. A raccoon does not investigate the world primarily by looking at it. It investigates by touching it. Water is the key. The tough outer layer of skin on a raccoon's paw softens when it gets wet, and softened skin transmits touch far more precisely. Dunking an object is not hygiene. It is turning up the resolution. The raccoon in the stream is not scrubbing its food, it is reading it, running its fingertips over every ridge and seam the way you might read a word in the dark. The behavior gives itself away in captivity. Caged raccoons dunk constantly, far more than wild ones do, because a wild raccoon already spends much of the night with its paws in cold water, feeling under rocks for crayfish it will never see. Those same hands make raccoons a problem. In 1907 a psychologist named H. B. Davis set raccoons in front of thirteen complicated locks involving bolts, hooks, latches and levers. They opened eleven, and when he tested them again a year later, they still remembered how. Modern researchers keep confirming the picture. Given a puzzle designed for crows, in which stones must be dropped into a tube to raise a floating treat within reach, some raccoons solved it and others simply knocked the tube over, which is not the intended answer but is arguably a better one. Cities suit them. Urban raccoons live at densities their forest cousins never reach, and studies comparing the two find the city animals harder to outwit. In 2016 Toronto spent roughly thirty-one million dollars on a green bin engineered specifically to defeat raccoons. Some raccoons defeated it anyway. And they travel. Raccoons are native to North America and nowhere else, but a handful were released at a German lake in 1934, and millions now range across Europe. In Japan the culprit was a cartoon. A 1977 television series about a boy and his pet raccoon set off an import craze, families discovered that an adorable cub becomes a powerful and destructive adult, and the ones they released established themselves across most of the country. Which returns us to those observers at the stream. They watched the animal closely and still saw the wrong thing, because they assumed it was doing a version of what a person does. It was not. It was doing something we have no equivalent for at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what dunking actually accomplishes. Cite the exact phrase the author uses in place of the word washing.",
+            "The author says the behavior gives itself away in captivity. Explain that argument and quote the evidence it rests on.",
+            "Identify the shift in the passage: where does it turn from biology to human consequences, and how does the author signal it?",
+            "The final line claims raccoons do something we have no equivalent for at all. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the misnaming, touch-based sensing, and the raccoon's spread)",
+            "(it sharpens touch by softening the paw skin; quote: It is turning up the resolution)",
+            "(caged raccoons dunk with no prey to find, so the behavior must be feeling rather than cleaning; quote: because a wild raccoon already spends much of the night with its paws in cold water)",
+            "(at Those same hands make raccoons a problem; a short pivot sentence reuses the hands to swing from wonder to nuisance)",
+            "(it reframes the misnaming as human self-projection; earned by the cortex evidence and the captivity clue, though the absolute claim is arguable)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["sensory cortex → ____", "density → ____", "hygiene → ____", "captivity → ____"],
+          "rows": 2,
+          "answers": [
+            "the part of the brain that processes what the body senses",
+            "how much of something is packed into a given space",
+            "keeping things clean to stay healthy",
+            "being kept by people rather than living wild"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Germany and Japan both ended up with wild raccoons for different reasons. Explain what the two stories have in common.",
+            "The author says the observers assumed the raccoon was doing a version of what a person does. Name one other case where assuming an animal thinks like us could lead science astray.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(in both cases people moved the animal for their own reasons and it escaped or was released into a place with no natural controls)",
+            "(student answer: any reasonable example of reading human motives into animal behavior)",
+            "(student question plus a credible source type, such as a peer-reviewed study or a wildlife biologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: naming the raccoon the washer was a harmless mistake, because the name is charming and nobody was hurt by it. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

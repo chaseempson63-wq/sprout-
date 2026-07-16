@@ -1,0 +1,320 @@
+{
+  "key": "thermometer",
+  "title": "The Little Tube That Measures Heat",
+  "blurb": "How a thin glass tube turned a feeling into a number, and why it only ever tells you about itself.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Little Tube That Measures Heat",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-thermometer", "templateLabel": "The Little Tube That Measures Heat", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the red line inside the tube." },
+        {
+          "kind": "image",
+          "imageKey": "thermometer",
+          "notes": ["It tells you how hot or cold it is", "The red line goes up when it is hot", "It has numbers on the side", "It is made of glass", "The round part at the bottom is the bulb"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a thermometer. It tells us how hot or how cold something is. Look at the red line inside. When the day is hot, the red line goes up. When the day is cold, the red line goes down. You can put a thermometer outside your window. Look at it in the morning. Look at it again at night. The red line will move."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the marks on each thermometer. Write how many in the box.",
+          "emoji": "🔴",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "hot    cold" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "hot", "right": "the sun" },
+            { "left": "cold", "right": "an ice cube" },
+            { "left": "warm", "right": "a bath" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a thermometer on a hot day. Make the red line go way up high.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Little Tube That Measures Heat",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-thermometer", "templateLabel": "The Little Tube That Measures Heat", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "thermometer",
+          "notes": ["The red stuff inside is liquid", "Heat makes the liquid grow bigger", "Cold makes the liquid shrink", "Water turns to ice at 0 degrees Celsius", "Water boils at 100 degrees Celsius"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Little Tube That Measures Heat",
+          "text": "A thermometer is a tool. It measures how hot or how cold something is. Most thermometers have a thin glass tube with colored liquid inside. Heat makes the liquid spread out and take up more room. So the liquid climbs up the tube. Cold makes the liquid squeeze together. So the liquid slides back down. The numbers on the side tell you the temperature. Water turns to ice at zero degrees Celsius. Water boils at one hundred degrees Celsius. Your body sits at about thirty-seven degrees. A thermometer does not make you warm. It only tells you the truth about heat."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a thermometer measure?", "What happens to the liquid when it gets hot?", "At what temperature does water turn to ice?"],
+          "rows": 2,
+          "answers": ["how hot or how cold something is", "it spreads out and climbs up the tube", "zero degrees Celsius"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A thermometer measures how hot or ____ something is.", "The liquid sits inside a thin glass ____.", "Heat makes the liquid ____ up the tube.", "The ____ on the side tell you the temperature."],
+          "wordBank": ["cold", "tube", "climb", "numbers"],
+          "answers": ["cold", "tube", "climb", "numbers"]
+        },
+        { "kind": "draw", "prompt": "Draw two thermometers. Make one for a snowy day and one for a beach day.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Little Tube That Measures Heat",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-thermometer", "templateLabel": "The Little Tube That Measures Heat", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "thermometer",
+          "notes": ["Almost everything gets bigger when it warms up", "That is called thermal expansion", "The hole in the tube is thinner than a hair", "The round bottom is the bulb", "The thin tube makes a tiny change easy to see"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Red Line Climbs",
+          "text": "A thermometer works because of one simple habit of matter: almost everything gets a little bigger when it warms up, and a little smaller when it cools down. Scientists call this thermal expansion. Look closely at a glass thermometer. At the bottom is a small round bulb full of liquid. Rising out of the bulb is a tube with a hole through the middle so thin you can barely see it. When the bulb warms, the liquid inside swells. It has nowhere to go but up that skinny tube. Because the tube is so narrow, a tiny bit of swelling in the bulb becomes a long climb up the glass. That is the trick. The thin tube turns a change too small to notice into a change you can read from across the room. Cool the bulb and the liquid shrinks back down. The numbers printed beside the tube let you name exactly where it stopped. Without those numbers, you would only know that today is warmer than yesterday. With them, you can say how much."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is thermal expansion?",
+            "Where does the liquid sit when the thermometer is cool?",
+            "Why does the tube need to be so thin?",
+            "Why do you think the numbers matter as much as the tube does?"
+          ],
+          "rows": 2,
+          "answers": [
+            "matter gets bigger when it warms and smaller when it cools",
+            "in the small round bulb at the bottom",
+            "so a tiny bit of swelling becomes a long climb you can see",
+            "(inference: without numbers you could only say warmer or colder, not how much)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Red Line Climbs", "How to Blow Glass", "The Coldest Country on Earth"],
+          "answers": ["Why the Red Line Climbs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Matter gets bigger when it warms up. This is thermal ____.", "The liquid is stored in a round ____ at the bottom.", "When the liquid cools, it ____ back down the tube."],
+          "wordBank": ["expansion", "bulb", "shrinks"],
+          "answers": ["expansion", "bulb", "shrinks"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: name one place in your house where a thermometer would be useful, and say why.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Little Tube That Measures Heat",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-thermometer", "templateLabel": "The Little Tube That Measures Heat", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "thermometer",
+          "notes": ["Galileo built a thermoscope around 1592", "It had no numbers on it", "Fahrenheit built the first good mercury thermometer in 1714", "Celsius picked freezing and boiling water as his anchors, 1742", "Celsius first put 0 at boiling and 100 at freezing", "Someone flipped his scale after he died"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Building a Ruler for Heat",
+          "text": "For most of human history, nobody could say how hot anything was. You could say a day felt warm or a soup felt too hot to eat, but feelings are not measurements. Two people standing in the same room will disagree about it, and both of them are right about what they feel. Around 1592, Galileo built a device called a thermoscope. It was a glass bulb on an upside-down tube standing in water. As the air in the bulb warmed and expanded, it pushed the water down. The thing worked, but it had no numbers on it. It could tell you that something had changed. It could not tell you how much. The missing piece was a scale, and a scale needs fixed points: two temperatures that are always the same, anywhere, that you can mark and then divide up. Daniel Fahrenheit found his in the 1720s. He built the first reliable mercury thermometer, then set his zero at the coldest temperature he could reliably make, a slush of ice, water, and salt. Anders Celsius chose better anchors in 1742: the freezing point of water and its boiling point, with one hundred steps between them. Oddly, Celsius put zero at boiling and one hundred at freezing. Other scientists flipped his scale around after he died, and the flipped version is the one on your wall today. That is the whole invention. Not the glass, not the liquid, but the agreement. Once two people in different countries marked the same two fixed points, they could finally compare notes. A number replaced an opinion, and science could start measuring weather, fevers, engines, and stars."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What could Galileo's thermoscope do, and what could it not do?",
+            "What is a fixed point, and why does a scale need two of them?",
+            "The author says feelings are not measurements. Explain what that means using the example in the passage.",
+            "The author calls the agreement the whole invention. Why is agreement more important than the glass or the liquid?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it showed that something had changed, but not how much, because it had no numbers",
+            "a temperature that is always the same anywhere; you need two so you can mark them and divide the space between into steps",
+            "(two people in the same room can disagree about warm, and both are right, so a feeling cannot be compared)",
+            "(inference: without a shared scale, two people's readings cannot be compared, so the numbers mean nothing)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The thermometer mattered because a shared scale turned a feeling into a number people could compare",
+            "Galileo invented every scientific instrument we use today",
+            "Mercury is the only liquid that works inside a thermometer"
+          ],
+          "answers": ["The thermometer mattered because a shared scale turned a feeling into a number people could compare"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["thermoscope → ____", "fixed point → ____", "scale → ____", "slush → ____"],
+          "rows": 1,
+          "answers": [
+            "an early device that showed heat changing but had no numbers",
+            "a temperature that is always the same, used as an anchor for marking",
+            "a set of marked, evenly divided steps for naming a measurement",
+            "a soft, wet mix of ice and water"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: invent your own temperature scale. Name your two fixed points, say why you picked them, and explain how many steps you would put between them.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Little Tube That Measures Heat",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-thermometer", "templateLabel": "The Little Tube That Measures Heat", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "thermometer",
+          "notes": ["Heat always flows from hotter to colder", "Thermal equilibrium: the flow stops when they match", "Temperature measures how fast particles jiggle", "Heat and temperature are not the same thing", "A digital thermometer measures electrical resistance", "An infrared thermometer reads invisible light and never touches you"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Thermometer Actually Measures",
+          "text": "Here is a strange fact about the tool on your wall. A thermometer never measures the temperature of the room. It only ever measures the temperature of itself. Think about what happens when you put a thermometer in a glass of water. Heat always flows from the warmer thing into the cooler thing, never the other way. If the water is warmer than the glass bulb, energy moves into the bulb. The liquid inside swells and rises. It keeps rising until the bulb and the water are equally hot, which is the point where the flow stops. Scientists call that thermal equilibrium. Once it arrives, the thermometer has become the same temperature as the water, and reading the thermometer is the same as reading the water. This is why you have to wait. Pull it out early and you are reading a number that has not finished happening yet. It also explains a rule that catches people out. The thermometer must be small compared to whatever you are measuring, because it does not just read the water, it changes it. A cold bulb steals a little heat from the glass on its way to matching it. With a bathtub, that theft is far too small to matter. With a single drop, the thermometer could easily win. So what is temperature, underneath? Everything is built from particles that are constantly jiggling, and temperature is a measure of how vigorously they jiggle on average. Hot means fast. Cold means slow. Heat is the energy that moves between things because of that difference. Temperature is not the same as heat. A sparkler burns at a far higher temperature than a bathtub full of warm water, yet the bathtub holds vastly more heat, because heat depends on how much stuff there is. Modern thermometers exploit different habits of matter to catch the same jiggling. A digital thermometer contains a thermistor, a component whose electrical resistance changes in a predictable way as it warms, so the reading is really a measurement of electricity. An infrared thermometer does not touch anything at all. Every object gives off invisible infrared light, and warmer objects give off more of it, so the device reads the glow and works backward to a number. Different tricks, one job: turning something you can only feel into something everyone can agree on."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain thermal equilibrium and why it means you have to wait for a reading.",
+            "The passage says a thermometer must be small compared to what it measures. Quote the sentence that explains why, then put the reason in your own words.",
+            "Explain the sparkler and bathtub example. What is it there to prove?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering equilibrium, particle motion, and the different kinds of thermometer)",
+            "heat flows until the bulb and the water match, and only then does the reading mean anything; quote: Pull it out early and you are reading a number that has not finished happening yet",
+            "quote: A cold bulb steals a little heat from the glass on its way to matching it; the thermometer changes the thing it measures, so it must be small enough that the change does not matter",
+            "(that heat and temperature are different: the sparkler is hotter but the bathtub holds more heat because heat depends on how much stuff there is)",
+            "(inform, with detail: it defines terms like thermal equilibrium and thermistor and gives worked examples rather than asking you to do anything)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["thermal equilibrium → ____", "thermistor → ____", "infrared → ____", "vigorously → ____"],
+          "rows": 1,
+          "answers": [
+            "the state where two things are the same temperature and heat stops flowing",
+            "a part whose electrical resistance changes in a predictable way as it warms",
+            "invisible light given off by every object, more of it when the object is warmer",
+            "with a lot of force or energy"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why can an infrared thermometer read something without waiting for thermal equilibrium?",
+            "A doctor's thermometer must be accurate to a tenth of a degree. A weather thermometer does not. Why might that be?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it reads the light the object already gives off instead of having to match its temperature first)",
+            "(inference: a small change in body temperature is medically meaningful, while a tenth of a degree outdoors changes nothing you would do)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it fair to say a thermometer tells the truth? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Little Tube That Measures Heat",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-thermometer", "templateLabel": "The Little Tube That Measures Heat", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "thermometer",
+          "notes": ["Absolute zero is minus 273.15 degrees Celsius", "Kelvin proposed his scale in 1848", "Fahrenheit's zero was a bucket of salty slush", "98.6 F is a rounded 37 C, converted", "Carl Wunderlich took roughly a million readings", "Mercury thermometers are being phased out because mercury is toxic"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Instrument That Only Ever Talks About Itself",
+          "text": "Ask someone what a thermometer does and they will tell you it measures how hot something is. That answer is wrong in an interesting way, and the error is worth chasing, because it leads directly to one of the strangest ideas in physics. Begin with the machinery. A classic glass thermometer is a bulb of liquid joined to a tube whose channel is finer than a hair. Nearly all matter expands when heated, and the liquid in the bulb expands considerably more than the glass around it, so warmth forces it into the only escape available, the thin bore above. Because that channel is so narrow, a swelling far too small to see becomes a column you can read at a glance. The instrument is not sensitive. It is an amplifier. Now the correction. When you slide a thermometer into a cup of tea, it does not somehow inspect the tea. Energy simply flows from the hotter body to the colder one, as energy always does, until the two bodies stop differing and the flow ends. That state is called thermal equilibrium. The reading you finally take is the thermometer's own temperature, and it is useful only because the thermometer has, by then, become the tea. This is why an impatient reading is a false one, and why a thermometer must be small next to the thing it measures. It always takes a little of what it reports. The physics beneath is stranger still. Temperature is not a substance. It is a statement about motion: the average kinetic energy of the particles in a thing, which is to say how hard they are jiggling. Push that idea to its end and you get a floor. There is a point at which the jiggling reaches its minimum and cannot be reduced further, and no colder temperature exists below it. That floor is absolute zero, minus 273.15 degrees Celsius. Lord Kelvin proposed building a scale from it in 1848. His scale begins at the only zero in the whole business that means anything: zero on the Celsius scale is a memory of freezing water, and zero on the Fahrenheit scale is a memory of a bucket of salty slush in a Dutch workshop in the 1720s, but zero on the Kelvin scale is the actual end of the road. Every scale carries this kind of human fingerprint. Consider the most famous temperature most people know: 98.6 degrees Fahrenheit, normal body heat. It comes from Carl Wunderlich, a German physician who in the 1860s published an average body temperature near 37 degrees Celsius, drawn from roughly a million readings taken from some twenty-five thousand patients with a thermometer a foot long that took twenty minutes to settle. Converted into Fahrenheit, a rounded number in one language became a suspiciously precise number in another, and 98.6 has been quoted ever since as though it were a law. Modern studies of large populations put the average slightly lower and note that it drifts with your age, your activity, and the time of day. The decimal was never a fact about bodies. It was an accident of translation. So the humble tube deserves more respect than it gets. It made feelings into numbers, and numbers can be compared, argued with, and checked by a stranger on the other side of the world. Before it, everyone lived in a private climate of their own sensations, warm or cold according to who was asking. What the thermometer measures is only itself. What it gives us is everything else."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author writes that the instrument is not sensitive, it is an amplifier. Explain what that distinction means and why the author bothers to make it.",
+            "Explain why the author says the common answer about what a thermometer does is wrong. Cite the sentence that carries the correction.",
+            "Why does the passage call the Kelvin zero different in kind from the Celsius and Fahrenheit zeroes? Cite the exact phrase used for it.",
+            "The passage ends with two short sentences after a long paragraph. Analyze what that move does and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a sensitive thing detects a small signal; an amplifier makes a small signal large, which is what the narrow bore does to the swelling in the bulb)",
+            "(a thermometer reads its own temperature, not the tea's; cite: The reading you finally take is the thermometer's own temperature)",
+            "(the other zeroes are arbitrary human anchors while absolute zero is a real physical floor; cite: the actual end of the road)",
+            "(the short sentences land the argument after the buildup; accept either verdict with reasons drawn from the text)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["thermal equilibrium → ____", "kinetic energy → ____", "bore → ____", "arbitrary → ____"],
+          "rows": 2,
+          "answers": [
+            "the state in which two bodies reach the same temperature and heat stops flowing between them",
+            "the energy a thing has because it is moving",
+            "the narrow channel running through the middle of the tube",
+            "chosen by preference rather than fixed by any rule of nature"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls 98.6 an accident of translation. Explain the reasoning, then say whether you find the claim convincing.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(37 C was a rounded average; converting a rounded number into Fahrenheit produced a decimal that looks far more exact than the original measurement was)",
+            "(student question plus a credible source type, for example a medical study or a physics reference)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A measurement is only useful once strangers agree on the scale. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

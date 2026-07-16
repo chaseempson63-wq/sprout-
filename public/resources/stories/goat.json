@@ -1,0 +1,324 @@
+{
+  "key": "goat",
+  "title": "The Goat With Rectangle Eyes",
+  "blurb": "Sideways pupils that swivel, hooves that grip like climbing shoes, and a stomach that runs on borrowed microbes.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Goat With Rectangle Eyes",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-goat", "templateLabel": "The Goat With Rectangle Eyes", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the goat's eyes." },
+        {
+          "kind": "image",
+          "imageKey": "goat",
+          "notes": ["Its eyes have sideways pupils", "It has two toes on each foot", "A baby goat is called a kid", "It chews its food twice"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a goat. The goat has four legs and two ears. Look at its eyes. The black part is not round. It is a little rectangle, lying on its side. The goat can climb. It climbs up rocks. It climbs up hills. The goat eats leaves off a tree. Then it chews and chews and chews."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves in each row. Write how many in the box.",
+          "emoji": "🌿",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "goat    climb" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "goat", "right": "hill" },
+            { "left": "fish", "right": "pond" },
+            { "left": "owl", "right": "tree" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own goat on a big rock. Give it two little horns.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Goat With Rectangle Eyes",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-goat", "templateLabel": "The Goat With Rectangle Eyes", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "goat",
+          "notes": ["A baby goat is a kid", "Kids can walk the day they are born", "Goats have no top front teeth", "Their toes spread apart to grip", "Goats eat leaves, not tin cans"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Goat That Climbs",
+          "text": "A baby goat is called a kid. A kid can stand up about an hour after it is born. Soon it can run and jump. Goats love to climb. Their feet are split into two toes. The outside is hard. The inside is soft and rubbery, like the bottom of a climbing shoe. That is how a goat holds on to a bumpy rock. Goats do not eat tin cans. They eat leaves and twigs. A goat has no front teeth on top. It has a hard pad there instead. It grabs a leaf with its lips and pulls."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How soon after being born can a kid stand up?", "Why is the soft inside of a goat's toe useful?", "What does a goat use to grab a leaf?"],
+          "rows": 2,
+          "answers": ["about an hour after it is born", "it grips a bumpy rock, like a climbing shoe", "its lips"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A baby goat is called a ____.", "A goat's foot is split into two ____.", "The inside of the toe is soft and ____.", "A goat has no front ____ on top."],
+          "wordBank": ["kid", "toes", "rubbery", "teeth"],
+          "answers": ["kid", "toes", "rubbery", "teeth"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "a baby goat", "right": "a kid" },
+            { "left": "two split toes", "right": "for climbing" },
+            { "left": "lips", "right": "pull leaves off" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a goat up on a rocky hill. Add the leaves it wants to eat.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Goat With Rectangle Eyes",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-goat", "templateLabel": "The Goat With Rectangle Eyes", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "goat",
+          "notes": ["Two toes with a soft grippy pad", "Wild ibex climb dam walls for salt", "Goats climb argan trees in Morocco", "They balance on a ledge the width of your hand", "Goats are browsers, not grazers"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built for Climbing",
+          "text": "Goats are made for going up. A goat's foot is not one solid hoof. It is split into two toes, and the goat can spread them apart to hug a narrow ledge. Around the edge of each toe is a hard rim, like the toe of a climbing shoe. Inside that rim is a soft pad that grips rough rock. A goat can stand on a ledge no wider than your hand. In the mountains of Italy there is a tall dam wall, almost straight up and down. Wild goats called ibex climb it. They pick their way across the stones, and they do it for salt. The rock face leaks minerals the goats cannot find in the grass below, so up they go. Goats also climb trees. In Morocco, goats walk out along the branches of argan trees to reach the fruit. From far away, the tree looks like it grew goats."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are the two parts of a goat's toe, and what does each one do?",
+            "Why do the ibex in Italy climb the dam wall?",
+            "What do the goats in Morocco climb trees to reach?",
+            "Why do you think a goat can stand on a ledge that a horse could not?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a hard rim around the edge and a soft pad inside that grips the rock",
+            "to reach salt and minerals leaking out of the rock face",
+            "the fruit of the argan tree",
+            "(inference: its toes spread and grip, and it is small and light)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Built for Climbing", "How to Train a Sheepdog", "The Deepest Cave in Italy"],
+          "answers": ["Built for Climbing"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A goat's foot is split into two ____.", "Wild goats called ____ climb a dam wall in Italy.", "The ibex climb the wall to reach ____.", "In Morocco, goats climb ____ trees."],
+          "wordBank": ["toes", "ibex", "salt", "argan"],
+          "answers": ["toes", "ibex", "salt", "argan"]
+        },
+        { "kind": "handwriting", "prompt": "Write two or three sentences about an animal you have seen get somewhere surprising. Say how it got there.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Goat With Rectangle Eyes",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-goat", "templateLabel": "The Goat With Rectangle Eyes", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "goat",
+          "notes": ["Pupils are wide rectangles", "Field of view: about 320 to 340 degrees", "Eyes rotate to stay level with the ground", "Horses, sheep, and deer share the trick", "Cats hunt, so their pupils are vertical slits"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Eyes Like Letterboxes",
+          "text": "Look closely at a goat's eye. The dark pupil is not a circle or a vertical slit. It is a wide rectangle lying on its side, like a letterbox cut into the iris. This shape is not an accident. A goat is a prey animal. It spends its life eating with its head down, which is exactly when something hungry is most likely to sneak up. A letterbox pupil lets in a broad, flat band of light, so the goat sees a sharp panorama of the ground and the horizon while the sky above stays blurry. It does not need the sky. It needs to know what is moving in the grass. Together, a goat's two eyes cover somewhere between 320 and 340 degrees. It can see nearly all the way around itself without turning its head. Then comes the clever part. When a goat lowers its head to feed, the pupils do not tip with it. Each eye rotates in its socket, by as much as 50 degrees, so the rectangle stays level with the ground. Scientists at a university in California measured this in goats and other plant eaters, and found the same trick in horses, sheep, and deer. Now compare a cat. A cat is a hunter, and its pupil is a vertical slit, which helps it judge exactly how far away a mouse is before it pounces. Prey animals want width. Hunters want distance. The eye tells you the job."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe the shape of a goat's pupil and explain why that shape suits a prey animal.",
+            "What happens to a goat's eyes when it lowers its head to feed, and why does that matter?",
+            "The passage says a goat does not need the sky. Explain what that means.",
+            "Why does a cat have a vertical pupil instead of a horizontal one?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a wide rectangle lying on its side; it gives a broad, sharp view of the ground and horizon where danger comes from",
+            "each eye rotates up to about 50 degrees so the rectangle stays level with the ground; it keeps the wide view working while the goat eats",
+            "(inference: nothing dangerous arrives from above, so sharp sky vision is not worth having)",
+            "it hunts, and a vertical slit helps it judge distance before it pounces"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A goat's rectangular pupil is built to give a prey animal a wide, level view of the ground",
+            "Goats have better eyesight than any other animal",
+            "Cats and goats are closely related"
+          ],
+          "answers": ["A goat's rectangular pupil is built to give a prey animal a wide, level view of the ground"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["prey animal → ____", "panorama → ____", "rotates → ____"],
+          "rows": 1,
+          "answers": ["an animal that other animals hunt and eat", "a wide view stretching from side to side", "turns around a fixed point"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining what an animal's eyes can tell you about how it lives. Use the goat and the cat as your two examples.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Goat With Rectangle Eyes",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-goat", "templateLabel": "The Goat With Rectangle Eyes", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "goat",
+          "notes": ["Capra hircus, from the wild bezoar ibex", "Domesticated about 10,000 years ago", "Four stomach chambers; the rumen does the work", "Browsers: leaves, twigs, scrub, bark", "Close to a billion goats on Earth today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Turned Weeds Into Milk",
+          "text": "About ten thousand years ago, in the rocky hills of what is now western Iran, people began keeping goats. The dog had come to us earlier, as a hunting partner. The goat was different. The goat was the first walking food supply. The wild ancestor was the bezoar ibex, a tough, horned climber of dry mountains. It was a strange choice for a farm animal, and a brilliant one. Goats are browsers, not grazers. A sheep wants a field of grass. A goat wants the things nobody else can use: thorny scrub, bitter leaves, twigs, bark, the weeds at the edge of the stony ground. Land that would starve a cow will keep a goat. What lets a goat live on that diet is a stomach with four rooms. The largest, the rumen, is a warm tank holding billions of microbes. The goat cannot digest the tough fiber in a leaf. Its microbes can. They break it down, and the goat lives on what they release. The goat brings mouthfuls back up, chews them again, and swallows them down. That is what chewing the cud means. A goat is not really eating leaves. It is farming a colony of microbes and eating the harvest. For a family on hard ground, this was everything. A goat converted worthless scrub into milk every day, and into cheese that kept. It gave hair, hide, and meat. It was small enough for one person to carry and stubborn enough to survive a journey. Goats went with people out of the Middle East, across Africa, into Europe and Asia, up mountains and onto ships. Sailors dropped them on islands so that future crews would find food waiting. That last habit shows the other side of the story. A goat that can eat anything will eat everything. Set loose on an island with no predators, goats have stripped whole landscapes bare and pushed native plants to extinction. The same appetite that fed the first farmers has ruined ecosystems that took millions of years to grow. There are close to a billion goats on Earth today. That number is a monument to a good decision, and a bill that other species keep paying."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What does it mean that goats are browsers and not grazers, and why did that make them valuable on hard ground?",
+            "Explain what is actually happening inside the rumen. Quote the phrase the passage uses to describe a goat's real diet.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The last sentence calls a billion goats both a monument and a bill. Explain both halves."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering domestication + browsing and the rumen + the cost to island ecosystems)",
+            "browsers eat leaves, twigs, and scrub rather than grass, so goats could live on land that would starve a cow",
+            "microbes break down fiber the goat cannot digest, and the goat lives on what they release; quote: farming a colony of microbes and eating the harvest",
+            "(inform, with detail: it explains and defines; the closing line turns persuasive)",
+            "(monument: goats fed people and spread worldwide; bill: native plants and ecosystems paid for it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["browser → ____", "rumen → ____", "cud → ____", "extinction → ____"],
+          "rows": 1,
+          "answers": [
+            "an animal that eats leaves, twigs, and shrubs rather than grass",
+            "the largest stomach chamber, a tank of microbes that break down fiber",
+            "food brought back up from the stomach to be chewed a second time",
+            "when a kind of living thing dies out completely"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Sailors left goats on islands on purpose. Explain why that seemed like a good idea at the time and what went wrong.",
+            "The passage says land that would starve a cow will keep a goat. What does that suggest about where in the world goats are most common today?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(free food for later crews; with no predators the goats ate the island bare)",
+            "(inference: dry, rocky, poor country where richer livestock cannot be kept)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: goats have damaged island ecosystems they were never native to. Should people remove them? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Goat With Rectangle Eyes",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-goat", "templateLabel": "The Goat With Rectangle Eyes", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "goat",
+          "notes": ["Capra hircus, domesticated about 10,000 years ago", "Kids raised together develop similar calls", "Solved a puzzle box, remembered it 10 months later", "Look to humans when a task is impossible", "Prefer photographs of smiling faces", "Bred for milk and meat, never for cooperation"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What the Goat Knows",
+          "text": "For most of history, the goat has been treated as a stomach with legs. It was among the first animals people farmed, roughly ten thousand years ago, and we kept it for a simple reason: it turns worthless scrub into milk. Nobody bred a goat for cleverness. Nobody needed it to understand us. That assumption went unexamined for a hundred centuries, and then, in the last twenty years, a small group of researchers decided to actually test it. Start with the voice. In 2012, biologists at Queen Mary University of London recorded goat kids raised in different social groups and compared their calls. The kids in a group sounded like each other, and less like kids from other groups. When the researchers moved animals into new groups, the calls drifted toward the new company. The word the press reached for was accents, and while that word does a lot of work, the underlying finding was real: a goat's voice is shaped by who it grows up around, not fixed at birth. That is not what a stomach with legs is supposed to do. Then the box. The same team built a puzzle: pull a lever, then lift it, and food appears. Most goats in the test worked it out inside a dozen attempts, without copying a demonstrator. Ten months later, the researchers brought them back. The goats solved it again in under a minute. Ten months is a long time to hold a piece of information you have no reason to expect will ever be useful again. The most interesting result came last. Researchers gave goats a container of food and sealed it so it could not be opened. A dog, in this situation, does something specific: it stops working and looks at the nearest human, then back at the container, as if to say, you deal with this. That behavior was long thought to be a signature of dogs, the product of thousands of years of breeding animals to cooperate with us. Goats did it too. They turned to the human. They turned more when the human was facing them than when the human's back was turned, which means the goat was not simply looking around the room. It was addressing someone. A later study found that goats, shown photographs of the same person smiling and scowling, preferred to approach the smile. None of this makes a goat a genius. It makes the goat a problem for a story we tell ourselves. The comfortable version is that dogs are special, that their attention to human faces is a gift we engineered through selective breeding for partnership. But nobody bred goats to read us. We bred them for milk, hair, and meat, and they learned to read us anyway. The likeliest explanation is that simply living alongside humans for ten thousand years is enough. Domestication itself, not the specific job, may be what tunes an animal to our faces. That conclusion costs something. It is easy to think of a farm animal as a machine that eats. It is harder once you know it is watching your expression and deciding what to make of you."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the accent study. Why does the author say that the word accents does a lot of work?",
+            "What made the sealed-container result more surprising than the puzzle-box result? Cite the text.",
+            "Identify the claim the passage argues against, and quote the sentence where the author states that claim most plainly.",
+            "The passage ends by saying the conclusion costs something. Analyze what the author means and whether the passage has earned that ending."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(calls became similar within a group and drifted when groups changed; accents is borrowed from human speech and claims more than the data shows, so the author flags it)",
+            "(the box tested learning; the container tested whether a goat would appeal to a person, which was thought to be unique to dogs; cite: That behavior was long thought to be a signature of dogs)",
+            "(that dogs are uniquely tuned to humans by breeding; cite: The comfortable version is that dogs are special, that their attention to human faces is a gift we engineered through selective breeding for partnership)",
+            "(it makes the reader responsible for how they treat an animal that watches them; earned via the facing-versus-turned-back detail and the smiling-face study)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["unexamined → ____", "demonstrator → ____", "signature (of dogs) → ____", "domestication → ____"],
+          "rows": 2,
+          "answers": [
+            "accepted as true without ever being tested",
+            "someone who shows how a task is done so another can copy it",
+            "a trait so distinctive it identifies the thing it belongs to",
+            "the long process of an animal coming to live alongside people"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The goats turned to the human more when the human was facing them. Explain why that detail is essential to the argument, and what the result would mean without it.",
+            "Write a question this passage cannot answer, and name the kind of study that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it rules out random looking and shows the goat tracked whether it had an audience; without it, the goat might just be scanning the room)",
+            "(student question + a credible study type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: How intelligent an animal turns out to be should not change how we treat it. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

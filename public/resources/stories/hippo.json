@@ -1,0 +1,319 @@
+{
+  "key": "hippo",
+  "title": "The River Horse That Cannot Swim",
+  "blurb": "The two-ton animal that sinks instead of floating, makes its own sunscreen, and feeds the whole river.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The River Horse That Cannot Swim",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-hippo", "templateLabel": "The River Horse That Cannot Swim", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the hippo's eyes." },
+        {
+          "kind": "image",
+          "imageKey": "hippo",
+          "notes": ["It is very big and very heavy", "It sits in the river all day", "Its eyes are on top of its head", "It eats grass at night", "Its name means river horse"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a hippo. A hippo is very big. The hippo lives in the river. It stays in the water all day. Its eyes sit on top of its head. It can see you while the rest of it hides. At night the hippo walks out. It eats grass in the dark. Then it goes back to the water."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the hippos in each row. Write how many in the box.",
+          "emoji": "🦛",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "big    river" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "hippo", "right": "river" },
+            { "left": "bird", "right": "nest" },
+            { "left": "bee", "right": "hive" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a hippo in the river. Leave its eyes poking out of the water.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The River Horse That Cannot Swim",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-hippo", "templateLabel": "The River Horse That Cannot Swim", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "hippo",
+          "notes": ["A hippo cannot swim", "It walks on the river bottom", "Its eyes, ears, and nose are on top", "It eats grass and nothing else", "It can shut its nose like a door"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The River Horse That Cannot Swim",
+          "text": "A hippo spends its whole day in the river. Its eyes, ears, and nose sit on top of its head. That way it can see, hear, and breathe while the rest of it stays under the water. A hippo cannot swim. It is too heavy to float. So it walks along the bottom of the river, and it pushes off with its feet to bounce back up. When the sun goes down, the hippo walks out onto the grass. It eats grass all night long. A hippo eats grass and nothing else, even though its mouth is bigger than a bathtub."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does a hippo spend its day?", "Why can a hippo not swim?", "What does a hippo eat?"],
+          "rows": 2,
+          "answers": ["in the river", "it is too heavy to float", "grass and nothing else"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A hippo lives in the ____.", "A hippo cannot ____.", "It walks along the ____ of the river.", "At night it eats ____."],
+          "wordBank": ["river", "swim", "bottom", "grass"],
+          "answers": ["river", "swim", "bottom", "grass"]
+        },
+        { "kind": "draw", "prompt": "Draw the hippo walking on the river bottom. Add some fish and some mud.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The River Horse That Cannot Swim",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-hippo", "templateLabel": "The River Horse That Cannot Swim", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "hippo",
+          "notes": ["Hippopotamus means river horse in Greek", "It sinks instead of floating", "It sleeps underwater and surfaces without waking", "Its nostrils squeeze shut when it dives", "It spends up to 16 hours a day in water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The River Horse That Cannot Swim",
+          "text": "The word hippopotamus comes from two old Greek words that mean river horse. It is a good name. A hippo spends up to sixteen hours a day in the water. But here is the strange part. A hippo cannot swim. Its body is too heavy and too dense to float, so it sinks. Instead of swimming, a hippo walks along the river bottom. When it wants to come up, it pushes off the mud with its feet and drifts back to the surface like a slow balloon. A hippo's eyes, ears, and nostrils all sit in a line on top of its head. It can rest with its whole body hidden and still watch the riverbank. When it dives, its nostrils squeeze shut and its ears fold flat. Hippos even sleep in the water. A sleeping hippo floats up to breathe without waking, then sinks again. It has been doing this its whole life and never has to think about it. At night the hippo climbs out and eats grass. Nothing but grass."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does the word hippopotamus mean?",
+            "Why does a hippo sink instead of floating?",
+            "How does a hippo get back up to the surface?",
+            "Why do you think a hippo's eyes and nose sit on top of its head?"
+          ],
+          "rows": 2,
+          "answers": [
+            "river horse",
+            "its body is too heavy and too dense to float",
+            "it pushes off the mud with its feet and drifts up",
+            "(inference: so it can see and breathe while the rest of it stays hidden underwater)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The River Horse That Cannot Swim", "How to Swim Like a Fish", "The Deepest River in the World"],
+          "answers": ["The River Horse That Cannot Swim"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A hippo walks along the river ____.", "When it dives, its ____ squeeze shut.", "At night a hippo climbs out and eats ____."],
+          "wordBank": ["bottom", "nostrils", "grass"],
+          "answers": ["bottom", "nostrils", "grass"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the hippo, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The River Horse That Cannot Swim",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-hippo", "templateLabel": "The River Horse That Cannot Swim", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hippo",
+          "notes": ["Its closest living relatives are whales and dolphins", "It is born underwater and nurses underwater", "It makes its own reddish sunscreen", "It eats about 40 kilograms of grass a night", "A big male can weigh 3,000 kilograms", "Hippopotamus is Greek for river horse"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sunscreen the Hippo Makes Itself",
+          "text": "Hippopotamus means river horse in ancient Greek, but the hippo's closest living relatives are not horses at all. They are whales and dolphins. Around fifty-five million years ago, a group of hoofed animals waded into the water and never really came back out. One branch kept going and became whales. Another branch stopped halfway and became hippos. You can see the family resemblance if you know where to look. A hippo has almost no hair. It gives birth underwater, and its calf nurses underwater. Its eyes, ears, and nostrils are stacked along the top of its skull so it can float almost invisibly. And yet a hippo cannot swim. It is denser than water, so it sinks straight to the bottom. What looks like swimming is really a slow bounce. The hippo pushes off the riverbed, glides up, sinks, and pushes off again. Hippo skin has another problem. It is thin, and it dries out fast in the African sun. So the hippo makes its own sunscreen. Glands under the skin ooze a thick fluid that starts clear, turns pink, then dries to a rusty brown. People used to call it blood sweat. It is neither blood nor sweat. It blocks sunlight and it kills bacteria, which helps the cuts hippos give each other heal in dirty water. Every evening the hippo hauls itself onto land and walks for kilometers, cropping grass with lips as wide as a doormat. It eats around forty kilograms of grass in a night, then returns to the same stretch of river before the sun can find it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Which animals are the hippo's closest living relatives, and why is that surprising?",
+            "Name two clues in the hippo's body that hint at its watery family history.",
+            "Explain why 'blood sweat' is a bad name for the fluid a hippo makes.",
+            "The passage says the hippo returns to the river 'before the sun can find it.' Why does it need to?"
+          ],
+          "rows": 2,
+          "answers": [
+            "whales and dolphins; its name means river horse, so people expect a horse",
+            "(any two: almost no hair, gives birth underwater, calves nurse underwater, eyes and nostrils on top of the skull)",
+            "it is neither blood nor sweat; it is a fluid from skin glands that works as sunscreen and kills bacteria",
+            "(inference: its thin skin dries out fast in the sun, so it must be back in the water by daylight)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A huge grass-eater is built for water in ways that go right down to its skin and its family tree",
+            "Hippos and horses are almost the same animal",
+            "The African sun is hotter than any other sun"
+          ],
+          "answers": ["A huge grass-eater is built for water in ways that go right down to its skin and its family tree"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["denser → ____", "glands → ____", "cropping → ____"],
+          "rows": 1,
+          "answers": [
+            "heavier for its size, so it sinks instead of floating",
+            "parts inside the body that make and release a fluid",
+            "biting grass off short, the way a mower does"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the hippo is a land animal that lives like a water animal. Using two details from the passage, explain which one it seems more like to you.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The River Horse That Cannot Swim",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-hippo", "templateLabel": "The River Horse That Cannot Swim", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hippo",
+          "notes": ["Hippopotamus amphibius, the common hippo", "Denser than water: it sinks and walks the riverbed", "Skin secretes hipposudoric acid: sunscreen and antiseptic", "The wide yawn is a threat display, not tiredness", "It carries grassland nutrients into the river every day", "Closest living relatives: whales and dolphins"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Heaviest Gardener in Africa",
+          "text": "Nothing about a hippopotamus makes sense until you stop thinking of it as a land animal. A big male common hippo weighs around three thousand kilograms, roughly the weight of a small truck. He carries that weight on short legs, and he carries it into the water at dawn and holds it there for up to sixteen hours. He is not swimming. A hippo is denser than water and sinks. What it does instead is walk, and where the water deepens it bounces: a push off the riverbed, a long slow glide upward, a sink, another push. Underwater, a hippo moves with a grace it can never manage on land. Everything on its head is arranged for that life. Eyes, ears, and nostrils sit along one plane on top of the skull, so a hippo can breathe and watch a riverbank while the other three thousand kilograms stay invisible. On a dive the nostrils clamp shut and the ears fold in. A sleeping hippo will rise, take a breath, and sink again without waking. The reflex runs whether the animal is paying attention or not. The water is not a hunting ground. Hippos eat grass, and only grass. The famous yawn, that vast pink hinge of a mouth swinging open past a right angle, is not tiredness and not hunger. It is a threat, and the teeth on display are the argument. Hippos are territorial, and when the display fails, males fight with those tusks in earnest. So why stay in the river at all? Because hippo skin is thin, nearly hairless, and loses water so fast that a hippo left in full sun would dehydrate. The river is not a habitat so much as a shelter. To survive the hours it must spend in the open, the hippo secretes a reddish oily fluid from glands in its skin, a substance that absorbs ultraviolet light and discourages bacteria. It is sunscreen and antiseptic, made by the animal wearing it. The grass comes at night. A hippo hauls out after dark, walks several kilometers, and mows down roughly forty kilograms of grass with lips built like a shovel. Then it carries all of that back into the river and, over the following day, releases it there. Biologists have measured what this does. Hippos move silicon and other nutrients from the grassland into the water, feeding the microscopic algae at the base of the whole river food web. The river's smallest life is fed by the river's largest animal, which eats nothing in the river at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why the hippo sinks, and describe what it does instead of swimming.",
+            "What is the real purpose of the hippo's yawn? Quote the phrase the passage uses to explain it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why do you think the author saved it for last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering: built for water, cannot swim, makes its own sunscreen, and carries grassland nutrients into the river)",
+            "it is denser than water; it walks the riverbed and bounces off the bottom to rise",
+            "it is a threat display; quote: the teeth on display are the argument",
+            "(inform, with detail: it explains mechanisms and cites measurement; the vivid wording adds some entertainment)",
+            "(the biggest animal in the river feeds the smallest life in it without eating there; the author saves the surprise for the end)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["denser → ____", "territorial → ____", "dehydrate → ____", "secretes → ____"],
+          "rows": 1,
+          "answers": [
+            "heavier for its size than water, so it sinks",
+            "willing to defend a patch of ground or water from others",
+            "to dry out from losing too much water",
+            "releases a fluid from inside the body"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls the river 'not a habitat so much as a shelter.' Explain the difference the author is drawing.",
+            "If every hippo disappeared from a river, what might happen to the tiny algae living in it? Explain your reasoning."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a habitat is where an animal lives and feeds; the hippo feeds on land and uses the river only to hide from the sun)",
+            "(inference: less silicon and fewer nutrients would arrive from the grassland, so the algae at the base of the food web would decline)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does an animal have to be rare to be worth protecting? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The River Horse That Cannot Swim",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-hippo", "templateLabel": "The River Horse That Cannot Swim", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hippo",
+          "notes": ["Hippopotamus amphibius: third largest land mammal", "Split from the whale lineage roughly 55 million years ago", "Negatively buoyant: it walks and bounces, it does not swim", "Hipposudoric acid absorbs UV and inhibits bacteria", "Gape opens past 150 degrees as a threat display", "Mara River studies: hippos move silicon to feed diatoms"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The River Horse: Built by Water, Fed by Grass",
+          "text": "The hippopotamus is a puzzle assembled from parts that seem to disagree. It is the third largest land mammal alive, and it can barely tolerate land. It has the mouth of a monster and the diet of a lawnmower. Its name, from the Greek hippopotamos, means river horse, and its closest living relatives are neither rivers nor horses but whales. That last fact is the key to the rest. Somewhere around fifty-five million years ago, a lineage of hoofed mammals moved into the water. One branch kept going and became the cetaceans, the whales and dolphins that never returned. Another branch stopped halfway and became the hippos. The evidence is still written on the animal. Hippos are almost hairless. They give birth underwater, their calves nurse underwater, and they call to each other with clicks and rumbles that carry through water and air at once. A hippo is a mammal caught mid-sentence between two worlds. Consider what it does with buoyancy. A hippo does not float. Its bones are dense and its body is heavy, so a hippo placed in deep water sinks, which sounds like a design failure until you watch one. It walks the riverbed. Where the water deepens it bounces, pushing off the bottom, gliding upward in a slow arc, settling, pushing again. On land a three thousand kilogram hippo is a heavy, unhappy thing that runs in short furious bursts. Underwater it is nearly weightless and almost graceful. It has not failed to swim. It has stopped needing to. Its skull is arranged around the same logic. Eyes, ears, and nostrils sit in a single plane along the top of the head, so a hippo can watch a riverbank, hear a rival, and breathe with nothing else showing. Diving closes the nostrils and folds the ears. A sleeping hippo surfaces, breathes, and sinks again without waking, an automatic reflex that runs for a lifetime without a single conscious decision. None of this is hunting equipment. Hippos are herbivores, and their fights are with each other. The enormous gape, opening past a right angle to display tusks that can exceed half a meter, is a threat, a way of settling a territorial dispute by showing what the alternative would cost. When the display fails, males fight, and the wounds are real. The river itself is not where the hippo feeds. It is where the hippo hides from the sun. Hippo skin is thin and nearly hairless, and it loses water so quickly that a hippo stranded in daylight would dehydrate. To survive the exposure it cannot avoid, the animal secretes a viscous fluid from glands in its skin. The fluid starts colorless, reddens within minutes, and dries brown. Early observers called it blood sweat, and it is neither. It absorbs ultraviolet light and it inhibits bacteria: a sunscreen and an antiseptic, manufactured and worn by the same animal. Food arrives at night. A hippo hauls out after dark, walks several kilometers on well-worn trails, and crops roughly forty kilograms of grass using lips shaped like a shovel. Before dawn it returns to the same water. This is where the animal stops being merely strange and starts being important. Everything it eats on the grassland, it deposits in the river. Researchers working on the Mara River in Kenya measured the transfer and found hippos moving hundreds of kilograms of silicon into the water every day, silicon that diatoms, the microscopic algae at the base of the food web, cannot build their glassy shells without. So the river's smallest organisms are fed by the river's largest animal, which eats nothing in the river at all. Remove the hippos and the grass stays on the grassland, and the water slowly becomes something else. The animal that cannot swim turns out to be holding the river up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the hippo's relationship to whales tells us about its body. Cite two pieces of evidence from the passage.",
+            "The passage says a hippo 'has not failed to swim. It has stopped needing to.' Explain what the author means and why the distinction matters.",
+            "Identify where the passage turns from describing the animal to arguing for its importance. How does the author signal that turn?",
+            "Analyze the final sentence. What claim is it making, and does the passage give you enough evidence to accept it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a huge grass-eater shaped by an aquatic ancestry props up the river ecosystem it never feeds in)",
+            "(its ancestors moved into the water 55 million years ago; cite any two: almost hairless, gives birth underwater, calves nurse underwater, calls carry through water and air)",
+            "(sinking is not a flaw but a solution; the hippo evolved for a shallow riverbed, so judging it by our idea of swimming is the wrong test)",
+            "(at 'This is where the animal stops being merely strange and starts being important'; a direct statement pivots the passage from description to argument)",
+            "(it claims hippos are load-bearing for the river ecosystem; the Mara silicon measurement supports it, though the passage cites one river only)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["buoyancy → ____", "lineage → ____", "viscous → ____", "diatoms → ____"],
+          "rows": 2,
+          "answers": [
+            "the tendency of an object to float or sink in a fluid",
+            "a line of descent from a common ancestor",
+            "thick and slow-flowing",
+            "microscopic algae that build shells out of silicon"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that the hippo has 'the mouth of a monster and the diet of a lawnmower.' Explain what that sentence is doing beyond stating facts.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it sets up the contradiction the whole passage explores, and the comic mismatch pulls the reader in before the science arrives)",
+            "(student question + a credible source type, for example a peer-reviewed ecology study or a wildlife survey)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal's value to an ecosystem is a better reason to protect it than how rare or interesting it is. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

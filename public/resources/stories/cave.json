@@ -1,0 +1,322 @@
+{
+  "key": "cave",
+  "title": "The Cave That a Raindrop Built",
+  "blurb": "Nobody dug the cave. Rain dissolved it, one drop at a time, and then left stone icicles behind.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Cave That a Raindrop Built",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-cave", "templateLabel": "The Cave That a Raindrop Built", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the pointy stones." },
+        {
+          "kind": "image",
+          "imageKey": "cave",
+          "notes": ["A cave is a hole in the rock", "The pointy stones are made of water", "Inside it is dark and cool", "Bats sleep in some caves", "Water made it, drip by drip"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a cave. A cave is a big hole in the rock. Look up. Those stones hang down like icicles. Look down. Those stones point up from the floor. Water made them all. Drip. Drip. Drip. It took a very long time. Inside, a cave is dark and cool and quiet. Bats sleep in some caves. Would you go in?"
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the water drops in each row. Write how many in the box.",
+          "emoji": "💧",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "cave    drip    rock" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "bat", "right": "cave" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "tree" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own cave. Add pointy stones on the top and the bottom.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Cave That a Raindrop Built",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-cave", "templateLabel": "The Cave That a Raindrop Built", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "cave",
+          "notes": ["Rain melts the rock, very slowly", "Stones that hang down are stalactites", "Stones that grow up are stalagmites", "When they meet they make a pillar", "A cave can take a million years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cave That a Raindrop Built",
+          "text": "Rain falls on the hills. It soaks into the ground and finds a crack in the rock. The water is a little bit sour, like lemon juice but much weaker. Slowly, it eats the rock away. The crack turns into a hole. The hole turns into a room. After many thousands of years, there is a cave. Water still drips from the ceiling. Each drop leaves a speck of stone behind. Speck by speck, a stone icicle grows down. That is a stalactite. Under it, a bump grows up from the floor. That is a stalagmite. If they keep growing, they meet in the middle and make a stone pillar."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What made the cave?", "What does each drop leave behind?", "What happens when a stalactite and a stalagmite meet?"],
+          "rows": 2,
+          "answers": ["rain water, very slowly", "a speck of stone", "they make a stone pillar"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The rain finds a ____ in the rock.", "A stone icicle that hangs down is a ____.", "A bump that grows up from the floor is a ____.", "The water eats the rock away very ____."],
+          "wordBank": ["crack", "stalactite", "stalagmite", "slowly"],
+          "answers": ["crack", "stalactite", "stalagmite", "slowly"]
+        },
+        { "kind": "draw", "prompt": "Draw the inside of a cave. Add stalactites, stalagmites, and one sleeping bat.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Cave That a Raindrop Built",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-cave", "templateLabel": "The Cave That a Raindrop Built", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "cave",
+          "notes": ["Caves are dissolved, not dug", "Limestone is made of old sea shells", "Stalactite has a c for ceiling", "Stalagmite has a g for ground", "Many grow less than an inch a century"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Nobody Dug This Hole",
+          "text": "Caves do not get dug. They get dissolved. It starts with rain. As a raindrop falls, it picks up a gas called carbon dioxide from the air. It picks up even more from the soil. That gas turns the water into a weak acid. It is far too weak to hurt you, but it is strong enough to bother limestone. Limestone is a soft rock made from the shells of sea creatures that died long ago. The sour water trickles into cracks. Every trip, it carries away a tiny bit of rock. One drop does nothing. A million years of drops carve out rooms, tunnels, and halls. Inside, the water keeps working. A drop hangs from the ceiling and leaves a ring of stone behind before it falls. Ring on ring, a stalactite grows down. The drop lands and leaves stone there too, so a stalagmite grows up. Here is how to remember them. Stalactite has a c for ceiling. Stalagmite has a g for ground. Neither one is in a hurry. Many grow less than the width of your fingernail in a hundred years."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What gas does a raindrop pick up on its way down?",
+            "What is limestone made from?",
+            "What does a drop leave behind on the ceiling?",
+            "Why do you think one drop of water does nothing, but a million years of drops can carve a hall?"
+          ],
+          "rows": 2,
+          "answers": [
+            "carbon dioxide",
+            "the shells of sea creatures that died long ago",
+            "a ring of stone",
+            "(inference: each drop takes a tiny bit of rock, and tiny amounts add up over a very long time)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Nobody Dug This Hole", "How to Build a Stone Wall", "The Best Bats in the World"],
+          "answers": ["Nobody Dug This Hole"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Caves are not dug, they are ____.", "Carbon dioxide turns rain into a weak ____.", "The rock that caves form in is called ____."],
+          "wordBank": ["dissolved", "acid", "limestone"],
+          "answers": ["dissolved", "acid", "limestone"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which is stranger to you, that water can dissolve a mountain or that water can build a stone icicle, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Cave That a Raindrop Built",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-cave", "templateLabel": "The Cave That a Raindrop Built", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cave",
+          "notes": ["Rain plus carbon dioxide makes carbonic acid", "Limestone is calcium carbonate", "The drop leaves stone when its gas escapes", "Caves have three zones: entrance, twilight, dark", "The dark zone stays the same temperature all year", "A stalactite and stalagmite that meet make a column"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Drop of Water Leaves Stone Behind",
+          "text": "A cave is a hole that water thought about for a very long time. Rain begins the work. Falling through the air and soaking through soil, a raindrop absorbs carbon dioxide and becomes carbonic acid, a weak sour solution. Limestone cannot ignore it. Limestone is calcium carbonate, the pressed shells of ancient sea animals, and carbonic acid slowly dissolves it. The water finds a hairline crack, widens it to a finger, then to a fist, then to a passage you could walk down. The rock does not break. It leaves, one dissolved speck at a time, carried out in the stream. Then the water changes its mind. When a loaded drop finally hangs from a cave ceiling, it meets cave air, which holds far less carbon dioxide than the soil did. The gas escapes from the drop, the same way the fizz leaves an open soda. Without that gas, the water can no longer keep the limestone dissolved, so it sets down a ring of calcite before it falls. The next drop adds another ring. Over centuries the rings stack into a stalactite. Whatever the drop still carries, it delivers to the floor below, building a stalagmite upward. Give them long enough and they meet, and the cave grows a column. Caves are sorted into three zones. The entrance zone has light, wind, and ordinary plants. The twilight zone is dim, and the plants give up. The dark zone has never seen the sun, and its temperature barely moves all year, sitting close to the average yearly temperature outside. That steadiness is why bears once denned in caves, and why people sheltered in them. So the weather carved the cave, and then the weather decorated it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is carbonic acid, and where does a raindrop get it?",
+            "The passage says the rock does not break, it leaves. Explain what that means.",
+            "Why does a drop leave stone behind on the ceiling instead of carrying it away?",
+            "The dark zone stays almost the same temperature all year. Why would that matter to a bear?"
+          ],
+          "rows": 2,
+          "answers": [
+            "weak sour water made when rain absorbs carbon dioxide from the air and the soil",
+            "(the limestone dissolves and is carried away in the water, speck by speck, rather than cracking off)",
+            "cave air holds less carbon dioxide, the gas escapes, and the water can no longer keep the limestone dissolved",
+            "(inference: a den that never freezes or bakes is a safe, steady place to sleep through winter)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The same slow chemistry that dissolves a cave out of limestone is what decorates it afterward",
+            "Bears are the most important animals that live in caves",
+            "Caves were dug out by underground rivers moving rocks around"
+          ],
+          "answers": ["The same slow chemistry that dissolves a cave out of limestone is what decorates it afterward"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["dissolve → ____", "calcite → ____", "twilight zone → ____"],
+          "rows": 1,
+          "answers": [
+            "to break down into water and be carried away, rather than breaking into pieces",
+            "the stone the water sets down, the mineral limestone is made of",
+            "the dim middle part of a cave, past the light but not fully dark"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child how a stalactite is made. Use the words drop, gas, and ring, and do not use the word magic.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Cave That a Raindrop Built",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-cave", "templateLabel": "The Cave That a Raindrop Built", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cave",
+          "notes": ["Karst: a landscape dissolved by water", "Speleothem: any cave formation", "Mammoth Cave, Kentucky: 400+ miles mapped", "Son Doong, Vietnam: has a jungle inside it", "Troglobites live only in the dark zone", "The olm is a blind salamander that may live 100 years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Longest Dark",
+          "text": "Nobody built the caves. Water dissolved them, and it took its time. The recipe is simple and slow. Rainwater absorbs carbon dioxide from the air and, more importantly, from the rich soil it soaks through. That gives it a mild acidity. Limestone, which is calcium carbonate laid down from the shells of sea creatures over millions of years, dissolves in mild acid. Groundwater follows the cracks and joints already in the rock and quietly widens them. A crack becomes a seam, a seam becomes a tube, a tube becomes a passage. Landscapes built this way are called karst, and they leak. Rivers vanish into the ground and reappear miles away. When the water table drops, the passage drains and fills with air. Only then does the decorating begin. A drop seeping into the empty chamber loses its carbon dioxide to the cave air, the same way a soda goes flat, and can no longer hold its dissolved limestone. It abandons a film of calcite on the ceiling and falls. Repeat for ten thousand years and you have a stalactite. Repeat below and you have a stalagmite. Cavers have names for the rest: soda straws, flowstone, cave popcorn, and draperies that ripple like curtains and glow when a light is held behind them. The whole family is called speleothems. The numbers are hard to hold in your head. Mammoth Cave in Kentucky has more than four hundred miles of mapped passage, and surveyors keep finding more. Son Doong in Vietnam is tall enough and wide enough to hold a skyscraper, and where its ceiling has collapsed, sunlight pours in and a jungle grows underground. Things live down there. Animals that spend their whole lives in the dark zone are called troglobites, and evolution has stripped them of what they cannot use. They tend to be pale, sometimes almost colorless, with skin grown over the place where eyes would be. The olm, a blind salamander in the caves of southeastern Europe, can go years between meals and may live a century. Losing your eyes sounds like a loss. In a place with no light, an eye is an expensive organ that earns nothing. A cave is not empty. It is the shape water left behind."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why the decorating cannot begin until the water table drops.",
+            "What is a troglobite? Quote the phrase the passage uses to explain why they lose their eyes.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why does the author save it for last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering: acid water dissolves limestone into caves, then the same water builds speleothems and strange life fills the dark)",
+            "the chamber must be full of air, not water, so the drop can lose its carbon dioxide and set down calcite",
+            "an animal that spends its whole life in the dark zone; quote: an eye is an expensive organ that earns nothing",
+            "(inform, with detail: it defines karst, speleothem, and troglobite and gives real examples; the playful last line leans toward entertain)",
+            "(the cave is a negative space, the record of what the water removed; the author ends there to reframe the whole passage)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["karst → ____", "speleothem → ____", "water table → ____", "troglobite → ____"],
+          "rows": 1,
+          "answers": [
+            "a landscape dissolved by water, with sinking rivers and caves",
+            "any formation built by dripping water in a cave",
+            "the level below which the ground is full of water",
+            "an animal that lives its whole life in the dark zone of a cave"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says karst landscapes leak. Explain what that means and why it might worry a town that drinks well water.",
+            "The passage claims losing eyes is not really a loss for a cave animal. Do you find that argument convincing? Say why."
+          ],
+          "rows": 3,
+          "answers": [
+            "(water sinks straight into the rock and travels far underground with little filtering, so pollution can reach wells fast and from far away)",
+            "(opinion, supported: eyes cost energy to build and maintain and return nothing in permanent darkness)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should famous decorated caves be opened to visitors, or closed to protect them? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Cave That a Raindrop Built",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-cave", "templateLabel": "The Cave That a Raindrop Built", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cave",
+          "notes": ["Karst supplies drinking water to about a quarter of people", "Degassing is why the drop leaves calcite", "Stalagmites grow in yearly layers, like tree rings", "Oxygen isotopes in calcite record past rainfall", "Uranium in calcite lets scientists date the layers", "Chauvet cave art is about 36,000 years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cave as an Archive",
+          "text": "Caves are among the few places on Earth where nothing happens quickly, and that turns out to be extraordinarily useful. Start with how they form. Limestone is calcium carbonate, the compacted remains of shells and coral pressed into rock over millions of years. It is nearly insoluble in pure water. But rain is not pure. A raindrop takes on carbon dioxide falling through the atmosphere, and takes on far more percolating through soil, where roots and microbes flood the pore spaces with the gas. The result is carbonic acid: weak enough to drink, and patient enough to hollow out a mountain. Groundwater follows fractures that are already there, dissolving the walls as it travels, converting hairline joints into passages wide enough to lose a person in. The surface above develops sinkholes, disappearing streams, and springs that surface miles from where the water went under. Geologists call the whole arrangement karst, and roughly a quarter of the world's people drink from it. Now notice the reversal. The same chemistry that excavates a cave is the chemistry that decorates it. Underground, saturated water seeps into an air filled chamber and immediately begins losing carbon dioxide to the cave atmosphere, which contains far less of it. This is degassing, the identical process that flattens an open soda. As the carbon dioxide leaves, the water's acidity falls, and it can no longer hold its dissolved load. Calcite precipitates. The drop leaves a microscopic ring on the ceiling and departs, the next drop leaves another, and after several thousand years there is a stalactite. The residue that survives the fall accumulates directly beneath it, and that is a stalagmite. Water is not building anything. It is simply failing to keep a promise it made in the soil. Here is where the patience pays off. A stalagmite grows in layers, adding a fraction of a millimeter each year for tens of thousands of years without interruption. Slice one open and the layers are visible, stacked like tree rings. Each layer is built from atoms delivered by rain that fell in a particular year, in a particular climate. Scientists read them. The ratio of oxygen isotopes locked in the calcite tracks the temperature and rainfall of the world above. Thick bands mean wet centuries. Thin or missing bands mean drought, and a stalagmite that stopped growing altogether is a drought long enough to be frightening. Because calcite traps trace uranium, which decays at a known rate, those layers can be dated precisely, which is more than can be said for most records of ancient climate. From a single column of rock in a dark room, a researcher can reconstruct hundreds of thousands of years of weather and check it against ice cores drilled on the far side of the planet. The archive is not only geological. The dark zone holds its temperature within a degree or two all year and keeps its humidity high, conditions that preserve almost anything left in them. That is why the oldest art our species has left behind is on cave walls. The paintings at Chauvet, in France, are roughly thirty six thousand years old. Lascaux, not far away, is about seventeen thousand. The horses and lions on those walls were drawn by people who had watched them closely, and they survive not because the artists chose their canvas well but because the cave refused to change. So a cave is a record kept by accident. Nobody meant to write it down. Weather dissolved the rock, weather decorated it, and weather signed its name in every layer. We are only now learning to read the handwriting."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the reversal the author points to. Cite the sentence that names it.",
+            "Why can a stalagmite be dated more precisely than most other climate records? Cite the evidence.",
+            "The author writes that water is not building anything, it is simply failing to keep a promise it made in the soil. Analyze what that sentence is doing and whether it is scientifically accurate.",
+            "Identify how the author structures the passage. Where does it stop explaining chemistry and start making an argument, and how is the turn signaled?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: caves are dissolved and then decorated by acidic rain, and their slow layers preserve a datable record of past climate and of human art)",
+            "(the acid that carves the cave is the same acid that builds its formations; cite: The same chemistry that excavates a cave is the chemistry that decorates it)",
+            "(calcite traps uranium that decays at a known rate; cite: Because calcite traps trace uranium, which decays at a known rate, those layers can be dated precisely)",
+            "(personification that reframes deposition as a failure rather than construction; accurate, because the calcite is only released when the water loses the carbon dioxide that held it dissolved)",
+            "(it turns at Here is where the patience pays off, and again at The archive is not only geological; short pivot sentences move it from process to claim)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["insoluble → ____", "percolating → ____", "degassing → ____", "precipitates → ____", "karst → ____"],
+          "rows": 2,
+          "answers": [
+            "unable to be dissolved",
+            "trickling down slowly through a material full of small spaces",
+            "losing dissolved gas to the surrounding air",
+            "comes out of a solution and becomes solid",
+            "a landscape dissolved by water, with sinkholes, sinking streams, and caves"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says a stalagmite that stopped growing is a drought long enough to be frightening. Explain the reasoning that connects a gap in the stone to a drought.",
+            "Why would a scientist want to check a stalagmite record against ice cores from the other side of the planet?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(no rain soaking through the soil means no drip, so no calcite is laid down and the record has a gap)",
+            "(matching independent records from different places and methods confirms the climate signal is real and global, not local error)",
+            "(student question plus a credible source type, such as a peer reviewed paleoclimate study or a cave survey report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A cave is a scientific instrument that nobody designed. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

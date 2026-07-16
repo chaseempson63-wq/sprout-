@@ -1,0 +1,320 @@
+{
+  "key": "swan",
+  "title": "The Gray Baby That Turned Into a Swan",
+  "blurb": "The bird that hatches gray and fuzzy, carries more neck bones than a giraffe, and once proved a whole continent wrong.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Gray Baby That Turned Into a Swan",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-swan", "templateLabel": "The Gray Baby That Turned Into a Swan", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Trace the long curve of the swan's neck with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "swan",
+          "notes": ["It is a very big white bird", "It lives on ponds and lakes", "Its neck bends like a letter S", "Baby swans are gray and fuzzy", "It puts its head under the water to eat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a swan. A swan is a big white bird. It swims on the pond. Look at its long neck. The swan dips its head under the water. It eats green plants down there. Baby swans are called cygnets. Say it like this: SIG-nets. The cygnets are gray and fuzzy. They swim behind their mom. Some of them ride on her back."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the feathers in each row. Write how many in the box.",
+          "emoji": "🪶",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "swan    swim" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each baby to its grown-up.",
+          "pairs": [
+            { "left": "cygnet", "right": "swan" },
+            { "left": "puppy", "right": "dog" },
+            { "left": "chick", "right": "hen" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a swan on the pond. Give it a long curvy neck and some gray babies behind it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Gray Baby That Turned Into a Swan",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-swan", "templateLabel": "The Gray Baby That Turned Into a Swan", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "swan",
+          "notes": ["A baby swan is a cygnet", "Say it SIG-net", "Cygnets hatch gray, not white", "They ride on their mom's back", "They turn white at about one year old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Gray Baby That Turned Into a Swan",
+          "text": "A baby swan is called a cygnet. Cygnets do not look like their parents. They are gray and fuzzy, like little dust balls with feet. Their mom and dad are big and white and smooth. The cygnets swim in a line behind their mom. When they get tired, they climb onto her back. She carries them across the water while they rest. All summer the cygnets grow. Their gray fluff falls out. New white feathers push in. By the time they are one year old, they are white too. Now they look just like their parents."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a baby swan called?", "What color is a cygnet when it hatches?", "Where do tired cygnets go to rest?", "How old is a cygnet when it turns white?"],
+          "rows": 2,
+          "answers": ["a cygnet", "gray", "on their mom's back", "about one year old"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A baby swan is called a ____.", "Cygnets are ____ and fuzzy.", "Tired cygnets climb onto her ____.", "New ____ feathers push in."],
+          "wordBank": ["cygnet", "gray", "back", "white"],
+          "answers": ["cygnet", "gray", "back", "white"]
+        },
+        { "kind": "draw", "prompt": "Draw the mom swan with her cygnets. Put one of them on her back.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Gray Baby That Turned Into a Swan",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-swan", "templateLabel": "The Gray Baby That Turned Into a Swan", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "swan",
+          "notes": ["A giraffe has 7 neck bones", "A swan has around 25", "More neck bones than any other bird", "Swans tip over to feed, they do not dive", "Tipping over like that is called upending"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "More Bones Than a Giraffe",
+          "text": "Look at a giraffe. Now look at a swan. The giraffe is one of the tallest animals on Earth, and its neck has seven bones in it. Your neck has seven bones too. So does a mouse. Almost every mammal gets seven, no matter the size. A swan does not follow that rule. A swan's neck holds around twenty-five bones, more than any other bird. That is why the neck bends into such a smooth curve, and why it can fold, stretch, and swing in almost any direction. The long neck is not for show. Ducks feed in shallow water, because a duck can only reach so far down. A swan tips its body forward, points its tail at the sky, and reaches its whole neck under the surface. It pulls up plants growing in mud that no duck can touch. This is called upending. The swan does not dive. It just brings its mouth to the food, and leaves the rest of itself on top."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How many bones are in a giraffe's neck?",
+            "About how many bones are in a swan's neck?",
+            "What is upending?",
+            "Why do you think a long neck helps a swan find food that a duck cannot reach?"
+          ],
+          "rows": 2,
+          "answers": [
+            "seven",
+            "around twenty-five",
+            "tipping the body forward and reaching the neck under the water to feed",
+            "(inference: the swan can reach plants in deeper mud without diving or swimming down)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["More Bones Than a Giraffe", "How to Feed Ducks at the Park", "The Tallest Animal on Earth"],
+          "answers": ["More Bones Than a Giraffe"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Almost every mammal has ____ neck bones.", "A swan's neck holds around ____ bones.", "Tipping forward to feed is called ____.", "A swan pulls plants out of the ____."],
+          "wordBank": ["seven", "twenty-five", "upending", "mud"],
+          "answers": ["seven", "twenty-five", "upending", "mud"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would be easier for you if your neck had twenty-five bones instead of seven, and what would be harder?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Gray Baby That Turned Into a Swan",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-swan", "templateLabel": "The Gray Baby That Turned Into a Swan", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "swan",
+          "notes": ["A male swan is a cob", "A female swan is a pen", "Pairs often stay together for years", "The nest is a haystack of reeds", "A heavy swan has to run on water to take off", "Tundra swans fly from the Arctic every fall"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Cob, Pen, and Cygnet",
+          "text": "A pair of swans will often stay together for years, sometimes for their whole lives. The male is called a cob. The female is called a pen. Together they build a nest that looks like a small haystack at the edge of the water, piled up from reeds and grass until it stands well above the waterline. The pen lays her eggs there, usually four to seven of them, and sits on them for around five weeks. When the cygnets hatch, both parents guard them. This is when swans earn their reputation. A cob will lower his head, arch his wings up over his back, and come at anything that gets close, hissing the whole way. He is not being mean. He is standing between his family and whatever is coming. Flying is harder for a swan than it looks. A trumpeter swan can weigh as much as a large dog, and a heavy bird cannot simply leap into the air. It has to run. The swan beats its wings and sprints across the surface of the water, slapping it with both feet, for a hundred feet or more before it finally lifts. Once it is up, the same weight becomes an advantage. A swan can hold a steady line for hundreds of miles. Tundra swans fly from the Arctic to the coasts of the United States every fall, and back again every spring."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe how a pair of swans builds its nest and where they put it.",
+            "The passage says a hissing cob is not being mean. What is he doing instead?",
+            "Why does a swan have to run across the water before it can fly?",
+            "The passage says the swan's weight is a problem at takeoff but an advantage in the air. Explain how the same thing can be both."
+          ],
+          "rows": 2,
+          "answers": [
+            "they pile reeds and grass into a haystack at the water's edge, above the waterline",
+            "guarding his family and standing between them and danger",
+            "it is too heavy to leap into the air, so it needs a running start to get airborne",
+            "(inference: weight makes lifting off hard, but it carries the bird steadily over long distances)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Swans pair up, raise cygnets together, and defend and fly with the strength their size gives them",
+            "Swans are the most dangerous birds in North America",
+            "Every swan builds its nest in a tree"
+          ],
+          "answers": ["Swans pair up, raise cygnets together, and defend and fly with the strength their size gives them"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["cob → ____", "pen → ____", "waterline → ____", "reputation → ____"],
+          "rows": 1,
+          "answers": [
+            "a male swan",
+            "a female swan",
+            "the level the water reaches on the shore",
+            "what people generally believe about someone or something"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: a cob hisses at anyone who comes near his nest, and people call swans aggressive because of it. Is that a fair name for what he is doing? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Gray Baby That Turned Into a Swan",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-swan", "templateLabel": "The Gray Baby That Turned Into a Swan", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "swan",
+          "notes": ["Black swans are native to Australia", "They have red bills and dark feathers", "Europeans thought all swans were white", "Willem de Vlamingh saw them in 1697", "The Swan River in Perth is named for them", "A black swan now means an event nobody saw coming"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Was Impossible",
+          "text": "For most of European history, everyone knew what a swan was: a white bird. Not usually white. Not mostly white. White, the way water is wet. Roman writers used the phrase 'a rare bird, like a black swan' to mean a thing that does not exist. If you wanted to say something was impossible, you said it was a black swan, and everyone understood you. In 1697 a Dutch captain named Willem de Vlamingh sailed up a river on the west coast of Australia and saw black swans. Whole flocks of them, gliding around with red bills and dark feathers, entirely real and completely uninterested in European opinion. He named the river the Swan River. The city of Perth stands on it now. He was not the first person to see them. Aboriginal Australians had lived alongside black swans for tens of thousands of years and had names and stories for them. De Vlamingh was only the first person to carry the news back to Europe, where it landed like a small explosion. Nothing about the birds had changed. What changed was the confidence. Europeans had been certain about black swans for roughly two thousand years, and their certainty had been built on a large pile of evidence: every swan anyone had ever seen was white. The evidence was real. The conclusion was still wrong, because nobody had looked at Australia yet. That is why the phrase survived, but flipped. Today a black swan means the opposite of what it used to. It means a rare event nobody saw coming, the kind that only looks obvious afterward. The birds themselves are common in Australia, unbothered and loud, and they became a lesson in how not to think. The lesson holds beyond birds. No amount of white swans proves that black ones cannot exist. One black swan settles it forever."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did the phrase 'a black swan' mean to Roman writers, and what does it mean today?",
+            "The passage says the Europeans' evidence was real but their conclusion was wrong. Quote the sentence that explains why.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author mention Aboriginal Australians, when the passage is about a Dutch captain?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the white-swan certainty, de Vlamingh's sighting, and the flipped meaning of the phrase)",
+            "something that does not exist; today it means a rare event nobody saw coming",
+            "quote: The evidence was real. The conclusion was still wrong, because nobody had looked at Australia yet.",
+            "(inform, with a persuasive turn: it gives dates and facts, then argues a lesson about how not to think)",
+            "(to show the birds were never unknown, only unknown to Europeans; it corrects whose knowledge counts)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["certainty → ____", "flocks → ____", "flipped → ____", "unbothered → ____"],
+          "rows": 1,
+          "answers": [
+            "being completely sure about something",
+            "groups of birds together",
+            "turned around into the opposite",
+            "not worried or disturbed by anything"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the birds were 'completely uninterested in European opinion'. Why is that a funny way to put it, and what point is the author making?",
+            "Name something people are sure about today that might turn out to be a black swan. Explain your thinking."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the birds cannot have an opinion; the joke is that reality does not care what people believe)",
+            "(opinion, with reasoning)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the Europeans had two thousand years of evidence and were still wrong. Does that mean evidence is worth less than we think, or does it mean something else? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Gray Baby That Turned Into a Swan",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-swan", "templateLabel": "The Gray Baby That Turned Into a Swan", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "swan",
+          "notes": ["Trumpeter swan: Cygnus buccinator", "Heaviest bird in North America", "Only 69 known in the lower 48 in 1935", "Over 63,000 counted in 2015", "Mute swans were brought to America in the 1800s", "Mute swans are now controlled as an invasive species"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Swans, Two Opposite Rescues",
+          "text": "In 1935, someone counted the trumpeter swans left in the lower forty-eight states of America and came back with a number: sixty-nine. Not sixty-nine flocks. Sixty-nine birds, nearly all of them huddled in one warm-spring valley in Montana called Red Rock Lakes. The trumpeter is the heaviest bird in North America. A big male can pass thirty pounds and stretch his wings across eight feet. That size had been the problem. Swan skins sold well in Europe, the down went into powder puffs and quilts, the long wing feathers were cut into writing quills, and the meat was worth taking. For two centuries the Hudson's Bay Company shipped swan skins out of North America by the tens of thousands. A bird that needs a hundred feet of open water just to get airborne is not hard to shoot. What saved the trumpeter was partly law and partly luck. The Migratory Bird Treaty Act of 1918 made the killing illegal. Red Rock Lakes became a refuge in 1935 specifically for the survivors. Then, in the 1950s, biologists flying over Alaska found something nobody had expected: thousands of trumpeter swans, quietly getting on with it in country too remote to have been hunted out. The species had never been as close to the edge as the count suggested. It had simply been counted in the wrong place. From those two populations, the trumpeter came back. Birds were moved, released, and protected across the Midwest. A 2015 survey counted more than sixty-three thousand. It is one of the clearest conservation wins on the continent. Now hold that story next to a second one. The mute swan, the orange-billed bird with the black knob and the perfect curved neck, is not native to North America. It was brought over in the 1800s to decorate the ponds of estates and city parks, and some of the birds escaped. Mute swans eat several pounds of aquatic plants a day, tear up beds that native fish and ducks depend on, and drive other waterbirds off nesting grounds by force. In parts of the Atlantic coast, wildlife agencies now control mute swan numbers on purpose, and every time they do, people who love the bird object, loudly and sincerely. Both birds are swans. Both are beautiful in exactly the same way. One is protected at great public expense, and one is removed at great public expense, and the difference between them has nothing to do with the birds. It is about where they belong, and who decided to move them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage says the trumpeter's size 'had been the problem'. Explain what it means, citing two details.",
+            "Explain what the Alaska discovery revealed about the 1935 count. Cite the sentence that states it most directly.",
+            "Identify the shift in the passage: where does it turn, and how does the author signal it?",
+            "The last sentence says the difference is about 'where they belong, and who decided to move them'. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the trumpeter's recovery and the mute swan's removal)",
+            "(its size made it valuable and easy to hit; cite: swan skins sold well in Europe, and: is not hard to shoot)",
+            "(the species was more numerous than believed, just unsurveyed; cite: It had simply been counted in the wrong place.)",
+            "(at Now hold that story next to a second one; a short direct sentence pivots from a success story to a problem)",
+            "(it moves responsibility from the birds to human choices; earned by the introduction history and the culling evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["refuge → ____", "remote → ____", "native → ____", "aquatic → ____"],
+          "rows": 2,
+          "answers": [
+            "a protected place where wildlife is safe from harm",
+            "far away and hard to reach",
+            "originally from a place rather than brought there",
+            "living or growing in water"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says people object to mute swan control 'loudly and sincerely'. Why include 'sincerely', and how does it change the tone of that sentence?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it grants the objectors real feeling rather than mocking them, which makes the conflict genuine on both sides)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If a bird is beautiful and harming nobody on purpose, it should never be removed from a place. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

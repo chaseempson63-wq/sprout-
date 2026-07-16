@@ -1,0 +1,319 @@
+{
+  "key": "dragon",
+  "title": "The Dragon Everybody Made Up",
+  "blurb": "The animal that never existed, and yet almost every country on Earth built a story around it.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Dragon Everybody Made Up",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-dragon", "templateLabel": "The Dragon Everybody Made Up", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the dragon's wings with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "dragon",
+          "notes": ["A dragon is pretend", "People made dragons up", "Some have big wings", "Some live in rivers", "Nobody has ever seen a real one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a dragon. A dragon is pretend. Nobody has ever seen a real one. But people love dragons. They tell dragon stories all over the world. Some dragons have wings. Some dragons breathe fire. Some dragons live in rivers and bring the rain. You can make up your own dragon. It can be any color you like. That is the fun of a dragon."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the flames in each row. Write how many in the box.",
+          "emoji": "🔥",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "fly    wings" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to what covers its body.",
+          "pairs": [
+            { "left": "dragon", "right": "scales" },
+            { "left": "bird", "right": "feathers" },
+            { "left": "sheep", "right": "wool" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own dragon. Give it any color you like.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Dragon Everybody Made Up",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-dragon", "templateLabel": "The Dragon Everybody Made Up", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "dragon",
+          "notes": ["Dragons are not real animals", "China tells of a dragon with no wings", "It brings the rain", "England tells of a dragon that guards gold", "Wales puts a red dragon on its flag"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dragon Everybody Made Up",
+          "text": "Dragons are not real. But dragon stories are very real, and they are everywhere. In China, people tell of a long dragon with no wings. It swims in rivers and clouds. It brings rain to the fields. In England, people tell of a dragon with big wings. It sits on a pile of gold and guards it. In Mexico, people told of a serpent covered in green feathers. Every country made its own dragon. These lands were far apart. They still all made a dragon. People everywhere liked the idea of a big animal that could do things people could not."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Are dragons real animals?", "What does the dragon in China bring?", "What does the dragon in England sit on?"],
+          "rows": 2,
+          "answers": ["no, they are made up", "rain for the fields", "a pile of gold"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Dragons are not ____.", "The dragon in China brings the ____.", "The dragon in England guards the ____.", "In Mexico the serpent had green ____."],
+          "wordBank": ["real", "rain", "gold", "feathers"],
+          "answers": ["real", "rain", "gold", "feathers"]
+        },
+        { "kind": "draw", "prompt": "Draw a dragon flying over your house. Add clouds and rain.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Dragon Everybody Made Up",
+      "subtitle": "A reading and thinking sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-dragon", "templateLabel": "The Dragon Everybody Made Up", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "dragon",
+          "notes": ["No dragon bones have ever been found", "People once called dinosaur fossils dragon bones", "The word dinosaur was invented in 1842", "A dragon is a snake, a cat and a bird mixed", "Dragon stories turn up almost everywhere"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where Did Dragons Come From?",
+          "text": "Nobody has ever found a dragon. No bones, no eggs, no tracks. And yet dragon stories turn up almost everywhere people live. That is a puzzle worth thinking about. One idea is that people found bones. Long ago, nobody knew about dinosaurs. So when a farmer dug up a huge skull with teeth like knives, he had to explain it somehow. A dragon was a good guess. In China, people have been digging up fossils for thousands of years. They called them dragon bones. A Chinese writer named Chang Qu once wrote about dragon bones dug up in Sichuan. We now think those bones came from dinosaurs. Another idea is simpler. People are scared of the same things. Snakes bite. Big cats hunt. Birds swoop down from the sky. Put those three together and you get a dragon: a fanged, clawed thing with wings. Maybe every country invented a dragon because every country was afraid of the same animals."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What has nobody ever found?",
+            "What did people in China call the fossils they dug up?",
+            "Which three animals make up a dragon, according to the second idea?",
+            "Why do you think a farmer long ago guessed dragon instead of dinosaur?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a dragon, or dragon bones, eggs or tracks",
+            "dragon bones",
+            "a snake, a big cat and a bird",
+            "(inference: nobody knew dinosaurs existed yet, so dragon was the only word he had)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Where Did Dragons Come From?", "How to Train a Pet Lizard", "The Tallest Mountain in China"],
+          "answers": ["Where Did Dragons Come From?"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Long ago nobody knew about ____.", "In China the fossils were called dragon ____.", "Chang Qu wrote about bones dug up in ____."],
+          "wordBank": ["dinosaurs", "bones", "Sichuan"],
+          "answers": ["dinosaurs", "bones", "Sichuan"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which idea about where dragons came from do you believe more, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Dragon Everybody Made Up",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-dragon", "templateLabel": "The Dragon Everybody Made Up", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dragon",
+          "notes": ["European dragon: wings, fire, stolen gold", "Chinese dragon: no wings, brings the rain", "Beowulf ends with a dragon fight", "The Komodo dragon is a real lizard", "Draco lizards really glide between trees", "We invented the name before we found the animal"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Dragons, Two Different Fears",
+          "text": "Start with a fact that should be strange but is not: there is no such animal as a dragon, and there never was. No fossil, no skeleton, no shed skin. Yet if you travel from Wales to Poland to India to China to Mexico, you will find a dragon in the old stories of every one of them. The dragons are not the same, though, and the differences matter. The European dragon is a monster. It has wings, it breathes fire, it sleeps on stolen gold, and a knight is supposed to kill it. In Beowulf, an Old English poem written over a thousand years ago, the hero dies fighting one. The Chinese dragon, the long, is almost the opposite. It has no wings and does not need them. It coils through rivers and clouds, it carries the rain that the crops depend on, and for centuries it stood for the emperor himself. You do not kill it. You hope it is in a good mood. Why the split? Look at what each place feared. Western Europe had knights, castles, and a story habit of heroes killing monsters. China had farms that lived or died by the summer rains. A culture tends to build the creature it needs, either a beast to defeat or a power to ask for help. There is one last twist. Real animals wear the name. The Komodo dragon is a lizard three meters long that hunts deer in Indonesia. Flying dragons, lizards of the genus Draco, glide between trees on skin stretched over their ribs. We invented the dragon first. Then we went looking for it, and named the closest things we found."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Name three ways the European dragon and the Chinese dragon are different.",
+            "The passage says You do not kill it. You hope it is in a good mood. What does that tell you about how Chinese farmers thought about their dragon?",
+            "Explain in your own words why the two dragons turned out so differently.",
+            "Why do you think people gave a real lizard the name dragon instead of inventing a new name for it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "wings vs no wings; fire vs rain; a monster to kill vs a power to ask for help",
+            "(inference: they needed it on their side, so they treated it with respect rather than as an enemy)",
+            "(each culture built the creature it needed: Europe needed a monster for heroes, China needed a rain bringer)",
+            "(inference: the idea of a dragon already existed, so the name was waiting for the closest real match)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Different cultures invented very different dragons because each one built the creature it needed",
+            "Dragons were real animals that went extinct a thousand years ago",
+            "The Komodo dragon is the most dangerous lizard in the world"
+          ],
+          "answers": ["Different cultures invented very different dragons because each one built the creature it needed"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["hoard (stolen gold) → ____", "genus → ____", "the split → ____"],
+          "rows": 1,
+          "answers": [
+            "a pile of treasure that is kept and guarded",
+            "a group of closely related kinds of animal",
+            "the difference between the two kinds of dragon story"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: invent a dragon for the place where you live. What would it do, and what does that say about what people here care about? Give two reasons for your choices.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Dragon Everybody Made Up",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-dragon", "templateLabel": "The Dragon Everybody Made Up", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dragon",
+          "notes": ["The dragon is the only imaginary animal in the Chinese zodiac", "Richard Owen coined the word dinosaur in 1842", "Chinese medicine ground fossils as long gu, dragon bones", "Sichuan holds some of the richest dinosaur beds on Earth", "Adrienne Mayor: the ancients were the first fossil hunters", "Snake plus big cat plus bird of prey equals a dragon"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Best Idea About an Animal That Never Existed",
+          "text": "Consider the oddness of it. The dragon is one of the most widespread ideas humans have ever had, and it is attached to an animal that has never existed. Wales put one on its flag. China put one in its zodiac, the only imaginary creature among eleven ordinary animals. Poland tells of a dragon under the hill at Krakow. India has the naga, a serpent of the deep water. Mexico had Quetzalcoatl, a serpent dressed in green feathers. These cultures did not share a library. Something else explains the pattern. One explanation is buried in the ground. For most of human history, nobody knew what a dinosaur was. The word was not coined until 1842. Before then, people still dug up bones, and the bones were enormous. A skull the length of a man, jaws lined with teeth like blades, a thigh bone too heavy to lift. Those finds demanded a story. In China, fossils were collected and ground into medicine under a name that translates as dragon bones. In the fourth century, a writer named Chang Qu recorded dragon bones unearthed in Sichuan, a province that has since produced some of the richest dinosaur beds on Earth. The historian Adrienne Mayor has argued that ancient people were, in effect, the first fossil hunters, and that some monsters in their legends are reasonable readings of the fossil evidence they had. It is a hypothesis, not a settled fact. It is still the best account anyone has offered for why the bones and the legends keep showing up in the same places. A second explanation lives in the mind rather than the dirt. Break a dragon into parts and you get a snake, a big cat, and a bird of prey: the three animals that hunted our ancestors most efficiently. A dragon is those three fears fused into one body. That would explain the pattern without anyone needing to find a single bone. Notice that neither explanation requires a dragon. Both require people. The dragon is not evidence of a lost animal. It is evidence of how good we are at reading a story into the parts of the world we cannot yet explain, and how long that story can outlive the confusion that produced it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What does the author mean by These cultures did not share a library?",
+            "The author is careful about how much the fossil explanation proves. Quote the exact sentence that shows this care.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last sentence in your own words, and say why the author saved it for the end."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the worldwide pattern plus the fossil and fear explanations)",
+            "(they were separated and could not have copied each other, so the shared idea needs another explanation)",
+            "quote: It is a hypothesis, not a settled fact.",
+            "(inform, mainly: it defines terms and presents evidence; the closing turn is mildly persuasive)",
+            "(the dragon tells us about human minds, not about a lost animal; the author ends there because it is the real point)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["coined → ____", "hypothesis → ____", "unearthed → ____", "fused → ____"],
+          "rows": 1,
+          "answers": [
+            "invented as a new word",
+            "a proposed explanation that has not been proven",
+            "dug up out of the ground",
+            "joined together into one thing"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that neither explanation requires a dragon, only people. Explain what that sentence is really claiming.",
+            "The two explanations could both be true at once. Describe how they might work together."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the dragon is a fact about human imagination, not about zoology)",
+            "(inference: fear supplied the shape of the creature and fossils supplied apparent proof of it)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does knowing that dragons were invented make the old stories less valuable, or more? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Dragon Everybody Made Up",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-dragon", "templateLabel": "The Dragon Everybody Made Up", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dragon",
+          "notes": ["Ladon guarded the golden apples of the Hesperides", "Beowulf dies fighting a hoard-guarding dragon", "The Chinese long is petitioned, not slain", "Richard Owen coined dinosaur in 1842", "Long gu: fossils ground as dragon bones", "Chang Qu recorded dragon bones at Wucheng, Sichuan", "The Komodo dragon got the name second"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Fossil of Human Thinking",
+          "text": "Here is a fact that deserves more attention than it gets: the dragon does not exist, has never existed, and is nonetheless one of the most successful ideas in human history. It appears on the flag of Wales and in the zodiac of China. It sleeps under a hill at Krakow and coils through the rivers of Vietnam. The Greeks set one to guard the golden apples of the Hesperides and another to guard the Golden Fleece. The Aztecs honored a serpent clothed in quetzal feathers. Beowulf, written in Old English more than a thousand years ago, ends with its hero dying at the claws of one. No animal that never lived has ever been so widely believed in. Two questions follow. Why did so many separate cultures invent the same impossible creature, and why did they not invent the same one? Start with the second question, because the answer is more revealing. Western and Eastern dragons are not variations on a theme. They are opposites. The European dragon is a problem: winged, fire breathing, hoarding gold in a cave, waiting for a hero with a sword. The Chinese long has no wings, no hoard, and no interest in being killed. It moves through water and cloud, it delivers the rain the harvest depends on, and for most of two thousand years it was the emblem of the emperor. One dragon is slain. The other is petitioned. If both came from the same source, that source was not the dragon. It was the culture doing the imagining. Medieval Europe had knights and a story tradition in which virtue proves itself by killing monsters, so it built a monster worth killing. Agricultural China had a civilization staked on the timing of the summer rains, so it built a power worth asking. Each society drew the creature it needed. The first question is harder, and the most interesting answer is buried in the ground. The word dinosaur did not exist until Richard Owen coined it in 1842. For every century before that, people who dug up giant bones had to explain them with the vocabulary they had. The bones were undeniable. A skull longer than a man is tall, teeth the size of a hand, a limb bone no ox could carry. In China, such fossils were gathered and ground into medicine under the name long gu, dragon bones. In the fourth century, the writer Chang Qu recorded dragon bones unearthed at Wucheng in Sichuan, a province that has since yielded some of the richest dinosaur beds on the planet. The classical historian Adrienne Mayor has argued that ancient peoples were the first fossil hunters, and that several of their monsters are careful interpretations of the physical evidence in front of them. Note the shape of that claim. It does not say the ancients were fools. It says the opposite: that they were doing science with the only theory available. There is a second answer that needs no bones at all. Disassemble a dragon and you find a snake, a large cat, and a bird of prey: fangs, claws, and a shadow falling from above. Those are the three predators that shaped primate fear long before anyone had language to describe them. On that account, a dragon is not a misread fossil. It is a fear, assembled. Both answers share a structure worth noticing. Neither one requires a dragon. Both require people. And that is finally what the dragon is: not a lost animal, but a fossil of human thinking, preserved in stories instead of stone. We built it out of the bones we could not name and the fears we could not shake. Then, when we finally met something close, we handed the name over anyway. The largest lizard alive hunts deer on an Indonesian island. We call it a Komodo dragon. The invention came first. The animal is only the nearest thing we could find to it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how the European dragon and the Chinese long differ, and what the author says that difference proves. Cite the evidence.",
+            "The author argues that ancient people were not foolish to say dragon. Quote the sentence that makes this claim and explain the reasoning behind it.",
+            "Identify the structure of the passage: what two questions does the author set up, and why answer the second one first?",
+            "Analyze the final image, a fossil of human thinking, preserved in stories instead of stone. What is the author doing with that comparison, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(Europe built a monster to kill, China built a power to ask; it proves the source was the culture, not the creature; cite: If both came from the same source, that source was not the dragon.)",
+            "(quote: It says the opposite: that they were doing science with the only theory available. They reasoned from real evidence using the only framework they had.)",
+            "(why so many cultures invented a dragon, and why the dragons differ; the second is answered first because it reveals that culture, not the animal, is the source)",
+            "(it converts the dragon from a zoological claim into evidence about human minds; earned if the student points to the fossil and fear explanations that build to it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["petitioned → ____", "emblem → ____", "disassemble → ____", "undeniable → ____"],
+          "rows": 2,
+          "answers": [
+            "formally asked for something, usually by someone with less power",
+            "a symbol that stands for a person, group or idea",
+            "to take something apart into its separate pieces",
+            "impossible to argue against or dismiss"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls the fossil explanation the most interesting answer but never calls it proven. Why does that restraint make the argument stronger rather than weaker?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a claim held to the strength of its evidence is harder to attack; overclaiming would invite the reader to doubt everything else)",
+            "(student question plus a credible source type, such as an archaeological survey or a peer reviewed folklore study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The dragon tells us more about human beings than any real animal could. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

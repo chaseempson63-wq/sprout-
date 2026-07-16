@@ -1,0 +1,317 @@
+{
+  "key": "lobster",
+  "title": "The Lobster With Teeth in Its Stomach",
+  "blurb": "The armored sea bug that tastes with its feet, grinds its food after swallowing, and has to climb out of its own body to grow.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Lobster With Teeth in Its Stomach",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-lobster", "templateLabel": "The Lobster With Teeth in Its Stomach", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the two big claws." },
+        {
+          "kind": "image",
+          "imageKey": "lobster",
+          "notes": ["It has two big claws", "It walks on the sea floor", "It swims backward", "Its shell is hard like a helmet"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a lobster. It lives at the bottom of the sea. It has two big claws. It has eight legs for walking. The lobster walks on the sand. It looks for food in the rocks. When it is scared, it flips its tail. Flip, flip, flip. It shoots backward and hides."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the lobsters in each row. Write how many in the box.",
+          "emoji": "🦞",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "claw    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part to its job.",
+          "pairs": [
+            { "left": "claws", "right": "grabbing" },
+            { "left": "tail", "right": "swimming backward" },
+            { "left": "legs", "right": "walking" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own lobster. Give it two big claws.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Lobster With Teeth in Its Stomach",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-lobster", "templateLabel": "The Lobster With Teeth in Its Stomach", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "lobster",
+          "notes": ["Its bones are on the outside", "It grows by shedding its shell", "It tastes with its feet", "Its blood is blue, not red", "Its teeth are inside its stomach"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lobster That Climbs Out of Itself",
+          "text": "A lobster wears its bones on the outside. Its hard shell is like a suit of armor. But armor cannot grow. So the lobster does something strange. It cracks its shell open at the back. Then it backs out of it, slowly, like pulling off a wet sock. Underneath is a new soft shell. The lobster hides in the rocks until the new shell gets hard. Then it eats the old shell. That is not rude. The old shell is full of what the new one needs."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does a lobster keep its bones?", "Why does a lobster have to get out of its old shell?", "What does the lobster do while its new shell is soft?"],
+          "rows": 2,
+          "answers": ["on the outside", "because the hard shell cannot grow", "it hides in the rocks"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A lobster's shell is like a suit of ____.", "The lobster cracks its shell open at the ____.", "The new shell starts out ____.", "The lobster ____ its old shell."],
+          "wordBank": ["armor", "back", "soft", "eats"],
+          "answers": ["armor", "back", "soft", "eats"]
+        },
+        { "kind": "draw", "prompt": "Draw a lobster hiding in the rocks in its new soft shell. Put the old shell next to it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Lobster With Teeth in Its Stomach",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-lobster", "templateLabel": "The Lobster With Teeth in Its Stomach", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "lobster",
+          "notes": ["Its two claws do different jobs", "It tastes with hairs on its legs", "Its teeth grind inside its stomach", "Blue blood, because of copper", "It walks forward and swims backward"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lobster That Tastes With Its Feet",
+          "text": "A lobster does not have a nose, and it does not have a tongue. It still finds its dinner in the dark. Tiny hairs cover a lobster's legs and feet. Those hairs taste. When a lobster walks across the sea floor, it is tasting every step. Short feelers on its head work like a nose. The lobster flicks them through the water, quick and light, the way you sniff. Look at its two claws. They do not match. One is thick and blunt, with bumps for crushing shells. The other is thin and sharp, for tearing soft food into strips. Some lobsters have the crusher on the right. Some have it on the left. It depends on which claw they used most when they were small. The strangest part comes next. A lobster has no teeth in its mouth. Its teeth are inside its stomach. Three hard plates sit there and grind the food after the lobster swallows it. Scientists call this the gastric mill. One more thing. Lobster blood is not red. It is a pale blue."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How does a lobster taste its food?",
+            "Why do a lobster's two claws look different?",
+            "Where are a lobster's teeth?",
+            "Why do you think it helps a lobster to taste with its feet?"
+          ],
+          "rows": 2,
+          "answers": [
+            "with tiny hairs on its legs and feet",
+            "one is blunt for crushing shells, the other is sharp for tearing soft food",
+            "inside its stomach, in the gastric mill",
+            "(inference: the sea floor is dark, so it can find food without seeing it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Lobster That Tastes With Its Feet", "How to Build a Fish Tank", "The Deepest Well Ever Dug"],
+          "answers": ["The Lobster That Tastes With Its Feet"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The crusher claw has bumps for ____ shells.", "The lobster flicks its feelers to ____ the water.", "The grinder in a lobster's stomach is called the gastric ____."],
+          "wordBank": ["crushing", "sniff", "mill"],
+          "answers": ["crushing", "sniff", "mill"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which lobster fact surprised you the most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Lobster With Teeth in Its Stomach",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-lobster", "templateLabel": "The Lobster With Teeth in Its Stomach", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lobster",
+          "notes": ["Exoskeleton: the skeleton is on the outside", "Molting: shed the shell to grow", "The new shell stays soft for about a week", "It can regrow a lost claw over several molts", "Record catch: about 44 pounds, Nova Scotia, 1977"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Has to Leave Its Body Behind",
+          "text": "Growth is easy for you. Your bones lengthen a little at a time, and your skin stretches to keep up. A lobster cannot do that. Its skeleton is on the outside, a jointed case of shell that protects everything soft, and shell does not stretch. To get bigger, a lobster has to leave its whole body behind. The process is called molting, and it is dangerous. First the lobster takes on water and swells until the shell splits across the back, where the tail meets the body. Then it reverses out through the crack. The hardest part is the claws. A claw is wide and the joint it must pass through is narrow, so in the days beforehand the lobster shrinks the muscle inside the claw, thinning it down until the whole thing can be drawn out like a hand from a glove. What crawls free is a lobster with no armor at all. For a week or more its new shell is soft as wet paper, and every hungry thing on the sea floor knows it. So the lobster wedges itself under a rock and waits. When it is safe, it eats its old shell to reclaim the minerals inside. Molting has a bonus. A lobster that lost a claw to a fight or a fisherman can regrow it, small at first, larger with each molt, until it matches the other one again. Young lobsters molt many times a year. Old ones may go years between molts, growing slowly, getting heavy. The largest one ever recorded weighed about forty-four pounds and came up off the coast of Nova Scotia in 1977."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, explain why a lobster cannot grow the way you do.",
+            "Describe how a lobster gets a wide claw out through a narrow joint.",
+            "The passage says every hungry thing on the sea floor knows it. What is it, and what does that tell you about the days after a molt?",
+            "Why might an old lobster molt only once every few years while a young one molts several times a year?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(its skeleton is on the outside and shell does not stretch)",
+            "it shrinks the muscle inside the claw first, so the claw can be drawn out like a hand from a glove",
+            "(the new soft shell; the lobster has no armor and has to hide)",
+            "(inference: it is already large, and molting costs energy and puts it in danger)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Molting lets a lobster grow, but it costs the lobster its armor and puts it in danger",
+            "Lobsters are the largest animals in the ocean",
+            "Fishermen off Nova Scotia catch more lobsters than anyone else"
+          ],
+          "answers": ["Molting lets a lobster grow, but it costs the lobster its armor and puts it in danger"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["molting → ____", "reclaim → ____", "reverses out → ____"],
+          "rows": 1,
+          "answers": ["shedding the old shell so a bigger one can take its place", "to get something back", "backs out the way it came in"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is molting worth the risk for a lobster? Use two details from the passage to support your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Lobster With Teeth in Its Stomach",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-lobster", "templateLabel": "The Lobster With Teeth in Its Stomach", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lobster",
+          "notes": ["Homarus americanus, the American lobster", "Colonists once spread it on fields as fertilizer", "Canning and railroads made it a luxury", "Maine throws back the smallest and the largest", "A notched tail means a breeding female, release her", "Live lobsters are mottled brown, not red"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Food Nobody Wanted",
+          "text": "Walk into a restaurant today and the lobster is the most expensive line on the menu. Three hundred years ago, on the same coastline, it was the food you served to people who could not refuse it. When European colonists arrived in New England, lobsters were everywhere. Early accounts describe storms piling them onto the beaches in drifts two feet deep. People gathered them by hand at low tide, no boat required. Something that common could not be valuable. Colonists fed lobster to prisoners, to servants, and to the poor. They ground it up and spread it on fields as fertilizer. There are stories of indentured servants in Massachusetts pushing back, and of contracts limiting how often a household could serve lobster to the people working in it. Lobster was not a treat. It was what you ate when there was nothing else. Two inventions changed its reputation. The first was the can. In the 1840s, canneries along the Maine coast began packing lobster meat in tin, and inland Americans who had never seen the ocean tasted it for the first time. The second was the train. Railroad dining cars served lobster to passengers crossing the country, and those passengers had no idea it was considered garbage back east. They only knew it was delicious and that they had eaten it somewhere fancy. Demand climbed. Prices climbed with it. By the 1880s, lobster was a luxury, and the people who had once been forced to eat it could no longer afford it. The lesson is not really about lobster. It is about how we decide what something is worth. Nothing about the animal changed. Its shell, its claws, its sweet white tail meat were exactly the same in 1700 as in 1900. What changed was who was eating it and what story they told about it. Scarcity and distance did the rest. Today Maine's lobster fishery is careful with what it once wasted. Fishermen measure every catch. Too small goes back. Too large goes back too, because the biggest lobsters lay the most eggs. A female carrying eggs gets a notch cut into her tail, a mark that means release me, and it follows her for years."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage credits two inventions with changing lobster's reputation. Name both and explain how each one worked.",
+            "Quote the sentence in which the author states the real subject of the passage, then explain what it means.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Give two details that support your answer.",
+            "Why does the author end with the size limits and the notched tail? What point does that ending make?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: lobster was cheap food fed to the poor; canning and rail travel turned it into a luxury even though the animal never changed)",
+            "the can and the train; canneries carried lobster meat inland to people who had never tasted it, and dining cars served it to travelers who assumed it was fancy",
+            "quote: It is about how we decide what something is worth. (value came from the story people told, not from the animal)",
+            "(inform, with a persuasive turn: it gives dates and facts, then argues a point about worth)",
+            "(inference: the fishery now protects what it once wasted, which shows how completely the value flipped)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["indentured → ____", "fertilizer → ____", "scarcity → ____", "reputation → ____"],
+          "rows": 1,
+          "answers": [
+            "bound by contract to work for someone for a set number of years",
+            "something spread on fields to help crops grow",
+            "being hard to get, in short supply",
+            "what people generally believe about something"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the people once forced to eat lobster could no longer afford it. Explain the irony in your own words.",
+            "Maine throws back lobsters that are too large as well as too small. Explain why a fishery would protect its biggest catch."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the same food that once marked you as poor now marks you as rich)",
+            "(inference: the largest females carry the most eggs, so protecting them protects future catches)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does something become valuable because of what it is, or because of what people believe about it? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Lobster With Teeth in Its Stomach",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-lobster", "templateLabel": "The Lobster With Teeth in Its Stomach", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lobster",
+          "notes": ["Homarus americanus", "Telomerase stays active in most of its tissues", "Negligible senescence: aging too slow to measure well", "Dies of molting failure and shell disease, not old age", "Age estimated from lipofuscin pigment in nerve tissue", "Turns red only when heat unfolds crustacyanin"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lobster That Does Not Know How Old It Is",
+          "text": "There is a claim about lobsters that circulates online every few years: lobsters are biologically immortal. They do not age. They only die when something kills them. The claim is wrong, but it is wrong in an interesting way, and how it fails tells you more than how it spreads. Start with what is true. In most animals, including you, the machinery of the body wears down on a schedule. Cells divide a limited number of times. Protective caps on the ends of chromosomes, called telomeres, shorten with every division until the cell can no longer copy itself. Tissue thins. Repair slows. Fertility drops. Biologists call this senescence, and in humans it shows up as decades of gradually rising risk: the chance of dying at eighty is far higher than at thirty. Lobsters seem to skip much of that. They produce telomerase, an enzyme that rebuilds telomeres, and they produce it throughout their bodies rather than in a few tissues only. A lobster does not stop growing. A forty-year-old female is not less fertile than a fifteen-year-old female. She is more fertile, because she is larger, and she carries more eggs. Researchers describe this pattern as negligible senescence: not the absence of aging, but aging so slow it is hard to measure against the noise. Now the part the internet leaves out. Lobsters die, and they die of being lobsters. Growth requires molting, and molting is expensive. The larger the animal, the more shell it has to build and the more energy the escape demands. Old lobsters sometimes fail partway out and die inside the shell they were trying to leave. Others survive the molt and are eaten while soft. Many contract shell disease, a bacterial infection that eats into the exoskeleton faster than the animal can shed it. The lobster's biology does not schedule its death. Its body plan does. We are not even certain how long they live. You cannot count rings in a lobster the way you count rings in a tree, because it throws its skeleton away several times a decade. Age estimates lean on growth rates and on lipofuscin, a pigment that builds up in nerve tissue over time. Both are rough. The usual estimate is that some lobsters reach fifty or a hundred years, but the honest answer is that nobody has watched one from hatching to death. There is a smaller mystery worth noticing. A living lobster is mottled brown, olive, and blue, camouflage for a rocky sea floor. The red you picture is not the animal. It is chemistry. A protein called crustacyanin wraps around a red-orange pigment called astaxanthin and holds it in a bent shape that reflects dark blue-green. Heat unfolds the protein. The pigment springs back to its natural shape and shows its true color. The lobster on a plate is not changing color. It is being unwrapped. That is the pattern in all of this. The exciting story, the immortal lobster, is almost always a real fact stripped of its conditions. Telomerase is real. Negligible senescence is real. Neither one means the animal cannot die of old age, only that its clock runs differently, and that its ending is written by its shell rather than by its cells. The truth is stranger than the meme, and it is harder to fit on a screenshot."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what negligible senescence means and quote the passage's exact definition.",
+            "The passage says lobsters die of being lobsters. Cite two specific causes it gives and explain what they have in common.",
+            "Find the sentence where the author separates what schedules a lobster's death from what does not. Quote it and explain the distinction.",
+            "The author opens with a claim from the internet rather than with a fact. Analyze why, and say whether the move works.",
+            "Explain why a cooked lobster turns red. Why does the author say it is being unwrapped rather than changing color?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "quote: not the absence of aging, but aging so slow it is hard to measure against the noise",
+            "(molting failure, being eaten while soft, shell disease; all of them come from living inside an exoskeleton)",
+            "quote: The lobster's biology does not schedule its death. Its body plan does. (its cells do not wear out on a clock, but its shell eventually kills it)",
+            "(it names the myth first so the passage can dismantle it; the reader is more interested once a belief is at stake)",
+            "(heat unfolds crustacyanin and releases astaxanthin, which was red all along; the pigment is revealed, not changed)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["senescence → ____", "telomerase → ____", "negligible → ____", "mottled → ____"],
+          "rows": 2,
+          "answers": [
+            "the gradual breaking down of the body with age",
+            "an enzyme that rebuilds the protective caps on the ends of chromosomes",
+            "so small it is hardly worth counting",
+            "marked with irregular patches of color"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage admits that nobody has watched one from hatching to death. Explain why that admission makes the passage more trustworthy, not less.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(naming the limits of the evidence shows the author is reporting what is known instead of overselling it)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The immortal lobster myth is harmless, because at least it gets people interested in science. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "key": "cheetah",
+  "title": "The Cat That Runs Faster Than a Car",
+  "blurb": "The fastest animal on land, built like a race car, that cannot roar and chirps like a bird instead.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Cat That Runs Faster Than a Car",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-cheetah", "templateLabel": "The Cat That Runs Faster Than a Car", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the spots. Find the long tail." },
+        {
+          "kind": "image",
+          "imageKey": "cheetah",
+          "notes": ["It has round black spots", "It runs faster than a car", "It cannot roar", "It chirps like a bird", "It purrs like a house cat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a cheetah. It has black spots. It has long legs. The cheetah runs. It runs faster than a car on your street. Look at its face. It has black lines under its eyes. The lines look like tears. The cheetah cannot roar. It chirps like a bird. Then it lies down in the sun and purrs."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the spots in each row. Write how many in the box.",
+          "emoji": "⚫",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace each word, then say it out loud.", "text": "run    fast" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to what it does.",
+          "pairs": [
+            { "left": "cheetah", "right": "runs" },
+            { "left": "bird", "right": "flies" },
+            { "left": "fish", "right": "swims" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own cheetah. Give it lots of spots and a very long tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Cat That Runs Faster Than a Car",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-cheetah", "templateLabel": "The Cat That Runs Faster Than a Car", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "cheetah",
+          "notes": ["Fastest runner on land", "Black tear lines under its eyes", "It purrs like a house cat", "It can only run fast for a few seconds", "Its tail helps it turn"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cat That Runs Faster Than a Car",
+          "text": "The cheetah is the fastest runner on land. No animal on Earth can beat it in a short race. Its legs are long and thin. Its back bends like a spring. Its tail swings out to help it turn. A cheetah cannot run fast for long. It runs hard for about twenty seconds. Then it gets too hot and has to stop and rest. A cheetah cannot roar like a lion. It chirps. It purrs. It sounds a lot like a very big house cat."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How long can a cheetah run hard for?", "What does the cheetah use its tail for?", "What sound does a cheetah make instead of a roar?"],
+          "rows": 2,
+          "answers": ["about twenty seconds", "to help it turn", "it chirps and it purrs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The cheetah is the fastest ____ on land.", "Its back bends like a ____.", "A cheetah gets too ____ and has to rest.", "A cheetah cannot roar, but it can ____."],
+          "wordBank": ["runner", "spring", "hot", "purr"],
+          "answers": ["runner", "spring", "hot", "purr"]
+        },
+        { "kind": "draw", "prompt": "Draw the cheetah running across the grass. Add the sun and a tree.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Cat That Runs Faster Than a Car",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-cheetah", "templateLabel": "The Cat That Runs Faster Than a Car", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "cheetah",
+          "notes": ["Top speed near 60 miles an hour", "Claws stay out like running spikes", "All four feet leave the ground twice a stride", "Its tail works like a rudder", "It has to rest after about 30 seconds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cat Built Like a Race Car",
+          "text": "A cheetah is built for one job. Every part of it helps it run. Start at the feet. Most cats pull their claws all the way in. A cheetah cannot. Its claws stay out a little, all the time, and they grip the ground like the spikes on a runner's shoe. Now look at the back. A cheetah's spine bends and snaps straight again with every stride, like a bow. That flick throws the cheetah forward. At full speed, all four feet leave the ground twice in one stride. For most of a chase, the cheetah is flying. The tail does the steering. It is long and heavy and flat. The cheetah swings it out to one side to lean into a turn, the way you swing your arms on a bike. There is a price. All that work makes heat, and heat builds fast. A cheetah can only run flat out for about half a minute. Then it has to lie down and breathe. Its chase is over, win or lose."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What do a cheetah's claws do for it?",
+            "What happens to a cheetah's spine with every stride?",
+            "How does the cheetah steer around a turn?",
+            "Why do you think a cheetah has to stop after about half a minute?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they grip the ground like spikes on a running shoe",
+            "it bends and snaps straight again, like a bow",
+            "it swings its tail out to one side to lean into the turn",
+            "(inference: all that running makes heat and its body gets too hot)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Cat Built Like a Race Car", "How to Train a Pet Cat", "The Tallest Mountain in Africa"],
+          "answers": ["The Cat Built Like a Race Car"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A cheetah's claws grip the ground like the ____ on a runner's shoe.", "Its ____ bends and snaps straight with every stride.", "The cheetah steers with its ____."],
+          "wordBank": ["spikes", "spine", "tail"],
+          "answers": ["spikes", "spine", "tail"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of the cheetah's body do you think helps it most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Cat That Runs Faster Than a Car",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-cheetah", "templateLabel": "The Cat That Runs Faster Than a Car", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cheetah",
+          "notes": ["Zero to highway speed in about 3 seconds", "Small teeth make room for big nostrils", "Cannot roar, only chirps and purrs", "Loses many kills to lions and hyenas", "Hunts in daylight to avoid them", "Fewer than 7,000 left in the wild"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Fast, and Paying For It",
+          "text": "Everyone knows the cheetah is fast. Fewer people know what it gave up to get there. A lion is heavy, with thick bones, a wide jaw, and long teeth rooted deep in its skull. A cheetah is the opposite. It is light and slender, and its teeth are small. Those small teeth are not an accident. Big teeth need big roots, and big roots take up space in the skull. The cheetah traded that space for wide nasal passages, so it can pull in enough air to feed a sprint. Speed cost it the weapons other big cats carry. The sprint itself is brutal. A cheetah accelerates from standing to highway speed in about three seconds. Its breathing jumps from around sixty breaths a minute to more than a hundred and fifty. Its body temperature climbs. After twenty or thirty seconds it has to stop, whether or not it caught anything, and then it lies in the grass for half an hour just to cool down and recover. That half hour is dangerous. A resting cheetah cannot defend a meal. Lions and hyenas follow the dust of a chase, walk up, and take the kill. The cheetah, still panting, backs away. It cannot fight them and it cannot afford to be hurt. A limping cheetah is a starving cheetah. So the fastest animal on land spends much of its life losing its dinner to slower animals. Speed wins the chase. It does not win the argument afterward."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why are a cheetah's teeth small? Explain the trade the passage describes.",
+            "What happens inside a cheetah's body during a sprint?",
+            "Why is the half hour after a chase the most dangerous part of a cheetah's day?",
+            "The passage says a limping cheetah is a starving cheetah. Explain what that means."
+          ],
+          "rows": 2,
+          "answers": [
+            "big teeth need big roots, and the cheetah used that skull space for wide nasal passages instead, so it could breathe enough to sprint",
+            "it reaches highway speed in about three seconds, its breathing goes from about sixty to over a hundred and fifty breaths a minute, and its temperature climbs",
+            "(inference: it is worn out and cannot defend its kill from lions and hyenas)",
+            "(inference: an injured cheetah cannot run, and a cheetah that cannot run cannot catch food)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The cheetah traded strength for speed, and it pays for that trade every time it hunts",
+            "Lions and cheetahs are really the same animal",
+            "Cheetahs are the heaviest cats in Africa"
+          ],
+          "answers": ["The cheetah traded strength for speed, and it pays for that trade every time it hunts"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["accelerates → ____", "nasal passages → ____", "brutal → ____", "slender → ____"],
+          "rows": 1,
+          "answers": ["speeds up", "the airways in the nose that carry air to the lungs", "harsh and punishing", "thin and lightly built"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if you could give the cheetah one thing back, would you choose bigger teeth or more stamina? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Cat That Runs Faster Than a Car",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-cheetah", "templateLabel": "The Cat That Runs Faster Than a Car", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cheetah",
+          "notes": ["Acinonyx jubatus", "Purrs like a house cat, cannot roar", "Semi-retractable claws for grip", "Malar stripes cut sun glare", "Nearly wiped out about 10,000 years ago", "All cheetahs are close to genetic twins"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Big Cat That Purrs",
+          "text": "Sort the world's cats into two piles and the cheetah lands in a surprising one. Lions, tigers, leopards, and jaguars can roar. They cannot purr steadily. House cats can purr steadily. They cannot roar. The difference sits in the throat, in a small structure called the hyoid and in the vocal folds attached to it. Roaring cats have a long, stretchy ligament there that can be pulled into a low, carrying boom. Purring cats have a stiffer setup that vibrates evenly on the breath in and the breath out. The cheetah purrs. It also chirps, a high, birdlike call a mother uses to gather her cubs, and it yips and growls and hisses. What it cannot do is roar. The fastest hunter in Africa announces itself with a noise closer to a sparrow than a lion. That is not the only way the cheetah stands apart. Look at its feet. Almost every cat sheathes its claws to keep them sharp for gripping prey. The cheetah's claws stay half out and stay blunt, worn down by the ground, because it needs traction more than it needs knives. Look at its face. Two black lines run from the inner eye down to the mouth. Researchers think these malar stripes cut glare from the African sun, the way an athlete smears black paint under their eyes before a game, and help the cheetah hold a fix on prey during a chase. And then there is the problem hiding in its blood. About ten thousand years ago, cheetahs came within a hair of vanishing. The survivors were so few that every cheetah alive today is descended from that tiny group. They are close to identical. You can graft a patch of skin from one wild cheetah onto another, unrelated one, and the body accepts it, because it cannot tell the difference between self and stranger. That sounds like a curiosity. It is a warning. A population with almost no genetic variation has almost no room to adapt. One new disease could move through all of them at once. Fewer than seven thousand cheetahs remain in the wild."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What physical difference decides whether a cat roars or purrs?",
+            "Why are a cheetah's claws blunt? Quote the phrase the passage uses to explain it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author calls the skin graft a curiosity, then calls it a warning. Explain why."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the purr and chirp instead of a roar, the running body, and the genetic bottleneck)",
+            "the hyoid and the vocal folds attached to it; roaring cats have a long stretchy ligament, purring cats have a stiffer setup",
+            "they are worn down by the ground because it needs grip; quote: it needs traction more than it needs knives",
+            "(inform, with detail: it defines terms and presents facts, though the ending leans persuasive)",
+            "(a fun fact on its own, but it proves the whole species is nearly identical and could be wiped out by one disease)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["hyoid → ____", "malar stripes → ____", "graft → ____", "variation → ____", "traction → ____"],
+          "rows": 1,
+          "answers": [
+            "a small structure in the throat that shapes a cat's voice",
+            "the black lines running from a cheetah's eye to its mouth",
+            "to move a piece of tissue from one body onto another",
+            "the differences between individuals in a population",
+            "grip on the ground"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The cheetah gave up sharp claws for grip. Name one other trade the passage suggests, and say what it cost the animal.",
+            "Why would a species with no genetic variation be in more danger than one with plenty, even if both had the same number of animals?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the roar for the purr and chirp; it cannot make a call that carries and warns rivals off)",
+            "(inference: with no variation, none of them can resist a new disease or a changed habitat, so all of them fail together)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is a cheetah better described as a big cat or as a very large house cat? Take a position and support it with two pieces of evidence from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Cat That Runs Faster Than a Car",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-cheetah", "templateLabel": "The Cat That Runs Faster Than a Car", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cheetah",
+          "notes": ["Acinonyx jubatus", "Fastest wild run recorded: about 58 mph", "Brakes harder than it accelerates", "Its name means the spotted one", "Asiatic cheetahs survive only in Iran", "Fewer than 7,000 left in the wild"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Speed Is the Least Interesting Thing About a Cheetah",
+          "text": "Ask anyone to name the fastest animal on land and you will get the right answer immediately. Ask where the number comes from and the room goes quiet. For most of the twentieth century, the cheetah's famous top speed rested on remarkably thin evidence. The figure of roughly seventy miles an hour traces back to a handful of runs by captive, trained cheetahs chasing a lure down a straight track, timed with the tools of the day. In 2012, a cheetah named Sarah at the Cincinnati Zoo ran one hundred meters in 5.95 seconds, faster than any human has ever covered that distance, and touched around sixty-one miles an hour on the way. Impressive, and still not an answer. A tame cat sprinting in a straight line after a rag is not a cheetah hunting. Nobody had measured the real thing. Then a team led by Alan Wilson put custom collars on five wild cheetahs in Botswana. Each collar carried GPS, accelerometers, and gyroscopes, and it recorded every stride the animal took, out in the bush, at night and in daylight, for over a year. The collars captured 367 hunting runs. What came back rearranged the story. The top speed was real but rare. The fastest single run clocked about fifty-eight miles an hour, and almost no hunt reached it. The typical chase ran at little more than half the cheetah's maximum, over a distance shorter than two football fields. If speed alone decided these hunts, the cheetah was leaving most of its talent unused. The reason sat in the other columns of data. The cheetahs were accelerating harder than any other land animal ever recorded, gaining around six miles an hour in a single stride. More striking still, they braked harder than they accelerated. A cheetah at full tilt could shed four meters per second of speed in one footfall. That is what the claws are for. A cheetah's claws never fully retract, and they are blunt, and for a hundred years that was written up as a quirk. The collars showed what it actually buys: grip, in the exact moment the animal needs to plant a foot and change everything about where it is going. And that is the hunt. An impala cannot outrun a cheetah, but it does not have to. It only has to turn faster than the cheetah can follow. So the chase is not a race. It is an argument about geometry, and the cheetah wins it by being able to slow down, hook a turn, and rebuild its speed before the impala can straighten out. Only about a quarter of the runs ended in a kill. None of this was visible from the racetrack, and that is the part worth sitting with. Scientists had studied cheetahs for generations and had measured the one thing that was easy to measure. The story that came out of that, the story every kid learns, was not wrong. It was just the least interesting true thing about the animal. It took instruments small enough to ride on a wild cat's neck to find out that the cheetah's real gift is not going fast. It is stopping."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why does the author dismiss both the seventy mile an hour figure and Sarah's run at the zoo? Cite the sentence that states the objection most directly.",
+            "Explain what the collar data revealed that top speed alone could not. Use two specific numbers from the passage.",
+            "Identify the pivot in the passage: where does the argument turn from measurement to meaning, and how does the author signal it?",
+            "The passage ends on a two-word sentence. Analyze what that ending is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(both are captive animals running straight lines after a lure, not hunting; cite: A tame cat sprinting in a straight line after a rag is not a cheetah hunting.)",
+            "(acceleration and braking mattered more than top speed; e.g. gaining around six miles an hour in a single stride, and shedding four meters per second in one footfall, while the typical chase ran at little more than half its maximum)",
+            "(at None of this was visible from the racetrack; the author stops reporting data and starts arguing about how science looked at the animal)",
+            "(It is stopping. reverses the whole premise of the piece in two words; earned if the braking data has been established, which it has)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["accelerometer → ____", "retract → ____", "geometry (as the author uses it) → ____", "quirk → ____"],
+          "rows": 2,
+          "answers": [
+            "an instrument that measures how quickly something speeds up or slows down",
+            "to pull back in, as a cat pulls in its claws",
+            "the angles and paths of the chase rather than its raw speed",
+            "an odd little feature treated as unimportant"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says scientists measured the one thing that was easy to measure. Explain how that can distort what a field believes for decades.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the easy measurement becomes the accepted story, so nobody looks for the harder truth until better tools arrive)",
+            "(student question, plus a credible source type such as a peer-reviewed study or a field biologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If a fact is easy to measure, science will overrate its importance. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

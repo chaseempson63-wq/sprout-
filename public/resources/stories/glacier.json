@@ -1,0 +1,322 @@
+{
+  "key": "glacier",
+  "title": "The River of Ice That Moves While You Sleep",
+  "blurb": "How falling snow turns into blue ice heavy enough to carve a valley, and why it never stops flowing downhill.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The River of Ice That Moves While You Sleep",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-glacier", "templateLabel": "The River of Ice That Moves While You Sleep", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the ice. Find the snow." },
+        {
+          "kind": "image",
+          "imageKey": "glacier",
+          "notes": ["It is made of ice", "It is bigger than a house", "Deep inside it is blue", "It moves very slowly", "It is very, very cold"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a glacier. Say it like this: GLAY-shur. A glacier is a big piece of ice. It is bigger than a house. It is bigger than a hill. On top it is white. Deep inside it is blue. The glacier is moving right now. It moves very, very slowly. It is too slow to see. Snow falls on the glacier. The snow turns into ice. The glacier keeps on going."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the snowflakes in each row. Write how many in the box.",
+          "emoji": "❄️",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ice    snow    cold" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "glacier", "right": "ice" },
+            { "left": "fire", "right": "hot" },
+            { "left": "snow", "right": "white" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big glacier. Put some snow on top and a rock at the bottom.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The River of Ice That Moves While You Sleep",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-glacier", "templateLabel": "The River of Ice That Moves While You Sleep", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "glacier",
+          "notes": ["Say it GLAY-shur", "It is made of squashed snow", "Old glacier ice looks blue", "It slides down the mountain", "It carries rocks with it", "It moves slower than a snail"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The River of Ice",
+          "text": "A glacier begins with snow. Snow falls on a cold mountain. Some of it melts in the summer, but not all of it. The next winter, more snow falls on top. The old snow gets squashed underneath. It gets squashed for years and years. The air is pushed out of it. The snow turns hard, and it turns blue. Now it is glacier ice. The pile of ice gets very heavy. Heavy things do not sit still. The ice starts to slide down the mountain. It slides slower than a snail. It pushes rocks along as it goes. A glacier is a river made of ice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a glacier begin as?", "What color is glacier ice deep inside?", "What does the glacier push along as it slides?"],
+          "rows": 2,
+          "answers": ["snow", "blue", "rocks"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A glacier begins with ____.", "The snow gets ____ for years and years.", "Old glacier ice turns ____.", "A glacier is a river made of ____."],
+          "wordBank": ["snow", "squashed", "blue", "ice"],
+          "answers": ["snow", "squashed", "blue", "ice"]
+        },
+        { "kind": "draw", "prompt": "Draw a glacier sliding down a mountain. Add the rocks it is pushing.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The River of Ice That Moves While You Sleep",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-glacier", "templateLabel": "The River of Ice That Moves While You Sleep", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "glacier",
+          "notes": ["A glacier is a river of ice", "Snow gets squashed into ice over many years", "Blue ice means the air has been pressed out", "It drags rocks that scratch the bedrock", "Some glaciers in Greenland move 100 feet a day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A River You Cannot Watch Move",
+          "text": "A river of water can reach the sea in a day. A river of ice needs a hundred years. That is what a glacier is: a river made of ice, moving too slowly for your eyes to catch. Every glacier starts as snow. Snow falls on a cold mountain. Summer melts some of it away. But if more snow falls in winter than melts in summer, the pile never disappears. It grows. Each new layer presses down on the layers below it and squeezes out the air. After many years, the soft snow becomes ice so packed and so dense that it looks blue. Then the pile gets heavy, and heavy things do not stay put. The ice near the bottom starts to squash sideways and creep downhill. The whole glacier flows. Most glaciers move only a few inches a day. A few in Greenland can travel more than a hundred feet in a single day. The ice does not go alone. It grabs rocks and drags them along the ground beneath it, and those rocks scrape the bedrock like sandpaper. Long after the ice is gone, you can still find the scratches."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What has to happen for a snow pile to keep growing instead of melting away?",
+            "Why does old glacier ice look blue instead of white?",
+            "What makes a glacier start to flow downhill?",
+            "Why do you think scientists can tell where a glacier used to be, even after all the ice has melted?"
+          ],
+          "rows": 2,
+          "answers": [
+            "more snow has to fall in winter than melts in summer",
+            "the air has been squeezed out of it, so it is packed and dense",
+            "the pile gets so heavy that the ice at the bottom squashes sideways and creeps downhill",
+            "(inference: the rocks it dragged left scratches on the bedrock)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A River You Cannot Watch Move", "How to Build a Snowman", "The Warmest Place on Earth"],
+          "answers": ["A River You Cannot Watch Move"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Each new layer of snow squeezes out the ____.", "Packed glacier ice looks ____.", "The rocks under a glacier scrape the bedrock like ____."],
+          "wordBank": ["air", "blue", "sandpaper"],
+          "answers": ["air", "blue", "sandpaper"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather stand on a glacier or watch one from far away, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The River of Ice That Moves While You Sleep",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-glacier", "templateLabel": "The River of Ice That Moves While You Sleep", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "glacier",
+          "notes": ["Snow becomes firn, then glacier ice", "Deep ice flows like very stiff syrup", "The brittle top layer cracks into crevasses", "Glaciers grind valleys from a V into a U", "Moraines are the rubble a glacier drops", "About a tenth of Earth's land is under ice"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Snowflake Becomes a Mountain",
+          "text": "Nothing about a snowflake suggests power. It weighs almost nothing. It melts on your glove. But stack enough snowflakes in a cold enough place, and they will carve a valley. A glacier gets built the same way every time. Snow falls on high ground. Summer arrives and melts some of it, but not all. The leftover snow waits, and the next winter buries it. Under the weight of the new snow, the old flakes lose their delicate points and pack into grainy pellets called firn. More winters pile on. The air gets squeezed out. After decades, the firn fuses into glacier ice, so dense that it glows blue. Then physics takes over. Ice is stubborn in small amounts and surprisingly soft in large ones. Once the pile is deep enough, the ice at the bottom begins to deform under the weight above it and creeps downhill. Meltwater underneath can help the whole slab slide. The top of the glacier does not bend. It is too cold and too brittle, so it cracks instead, splitting into deep gaps called crevasses as it rides along on the flowing ice below. A moving glacier does not just travel. It rips boulders out of the ground, carries them frozen into its underside, and uses them to sand the rock beneath. That is how a narrow mountain valley, cut by a river into a V, gets widened into a broad U. When the ice finally melts, it drops everything it was carrying in long ridges of rock and grit called moraines. The glacier disappears. The evidence does not."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, describe the three stages snow passes through on its way to becoming glacier ice.",
+            "The passage says ice is stubborn in small amounts and surprisingly soft in large ones. Explain what that means.",
+            "Why does the top of a glacier crack into crevasses while the bottom of it flows?",
+            "The last two lines say the glacier disappears but the evidence does not. What evidence does the author mean?"
+          ],
+          "rows": 2,
+          "answers": [
+            "snow, then firn, then dense glacier ice",
+            "a small piece of ice snaps, but under great weight a deep mass of ice deforms and creeps",
+            "(inference: the top is cold and brittle so it snaps, while the deep ice is under enough pressure to deform)",
+            "U shaped valleys, sanded rock, and moraines of rock and grit"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Weightless snow, piled deep enough, becomes flowing ice that reshapes the land",
+            "Snowflakes are the heaviest form of water on Earth",
+            "Mountain valleys were all cut by rivers and nothing else"
+          ],
+          "answers": ["Weightless snow, piled deep enough, becomes flowing ice that reshapes the land"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["firn → ____", "crevasse → ____", "moraine → ____", "deform → ____"],
+          "rows": 1,
+          "answers": [
+            "grainy packed snow, part way between fresh snow and glacier ice",
+            "a deep crack that opens in the brittle top layer of a glacier",
+            "a long ridge of rock and grit dropped where a glacier melted",
+            "to change shape under pressure instead of breaking"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how you could tell that a glacier once sat in a valley near your home, even though there is no ice there now. Give two clues you would look for.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The River of Ice That Moves While You Sleep",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-glacier", "templateLabel": "The River of Ice That Moves While You Sleep", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "glacier",
+          "notes": ["Glaciers hold about two thirds of Earth's fresh water", "Ice cores hold real air from 800,000 years ago", "Otzi the Iceman melted out of an Alpine glacier in 1991", "Accumulation zone on top, ablation zone below", "About 2 billion people drink from glacier fed rivers", "Trapped bubbles pop as glacier ice melts"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ice That Remembers",
+          "text": "Ice keeps records better than almost anything else on Earth. Here is why. A glacier is built out of snowfall, one winter at a time. Snow is not solid. It is mostly air, and when the next winter's snow presses down on it, that air does not all escape. Some of it gets trapped in bubbles and sealed inside the ice, and there it stays. Every layer of a glacier holds a sample of the sky from the year it fell. Scientists drill down through the ice sheets of Antarctica and Greenland and pull up long cylinders called cores. Reading a core is a little like reading tree rings. The layers stack in order, oldest at the bottom, and each one can be dated. Then the bubbles are cracked open in a laboratory and measured. Cores drilled in Antarctica have handed researchers actual air from eight hundred thousand years ago. Not a model of that air. The air. Ice preserves other things too. In 1991, hikers in the Alps found a man melting out of a glacier. He carried a copper axe and wore a bearskin hat, and there was an arrowhead buried in his shoulder. He had been frozen for roughly five thousand three hundred years, and he came out so well preserved that scientists could work out what he had eaten for his last meal. Whether a glacier grows or shrinks comes down to plain accounting. Snow arrives at the top, in what scientists call the accumulation zone. Ice melts away at the bottom, in the ablation zone. If the arriving beats the melting, the glacier thickens and pushes forward. If the melting wins, the glacier thins and its front retreats uphill. Right now the melting is winning almost everywhere. Glacier National Park in Montana held about one hundred and fifty glaciers in the middle of the 1800s. Roughly two dozen are still big enough to count. That matters beyond the scenery. Mountain glaciers work as frozen reservoirs. They lock water up as ice in the cold season and release it slowly through the warm one, feeding rivers that people farm with and drink from long after the last rain fell. About two billion people depend on water that starts as mountain ice. When the ice is gone, the river does not simply carry on. The tap runs hard for a while, and then it runs dry."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how a bubble of air gets locked inside a glacier, and why that bubble is useful to a scientist.",
+            "The author writes three short lines in a row: Not a model of that air. The air. Why break the rhythm there, and what is the author emphasizing?",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "Explain what the last two sentences mean in plain language, and why the author saves them for the end."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering ice as a record keeper plus melting and water supply)",
+            "snow is mostly air; the next winter's snow presses down and seals some of it into bubbles, giving a dated sample of the old atmosphere",
+            "(the short lines stress that the air is a direct sample, not a guess or a reconstruction)",
+            "(inform, with a persuasive turn at the end: it defines terms and gives facts, then argues the melting matters)",
+            "(a melting glacier gives lots of water briefly, then none; the author ends there so the loss lands last)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["core → ____", "accumulation zone → ____", "ablation zone → ____", "reservoir → ____"],
+          "rows": 1,
+          "answers": [
+            "a long cylinder of ice drilled out of a glacier",
+            "the upper part of a glacier where snow is added",
+            "the lower part of a glacier where ice melts away",
+            "a store of water held back to be used later"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage compares reading an ice core to reading tree rings. What does that comparison explain well, and where does it stop being helpful?",
+            "Why would a farmer far downstream from any glacier still care whether that glacier survives?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(both are dated layers stacked oldest to newest; but tree rings record the tree's growth, while ice traps a sample of the actual atmosphere)",
+            "(inference: glacier melt feeds the river through the dry season, so losing the ice changes the water she depends on)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: if a glacier is going to melt anyway, is it worth spending money to study it? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The River of Ice That Moves While You Sleep",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-glacier", "templateLabel": "The River of Ice That Moves While You Sleep", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "glacier",
+          "notes": ["About 10 percent of Earth's land sits under glacial ice", "Antarctic ice is nearly 3 miles thick in places", "Ice below about 150 feet flows instead of cracking", "Long Island is rubble left by the last ice age", "Canada is still rising now that the ice is gone", "Jakobshavn Isbrae is among the fastest glaciers on Earth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Slowest River on Earth",
+          "text": "Stand on a glacier and nothing appears to happen. That is the trick. A glacier is a river, and like every river it is running downhill right now, under your boots, at a speed your eyes were never built to detect. It begins as snowfall on high, cold ground. A snowflake that lands and survives the summer is the start of everything. The next winter buries it, and the winter after that buries the burial. Under the growing weight the flakes lose their delicate arms, pack together into grainy pellets called firn, and finally fuse into solid ice with nearly all the air squeezed out of them. Ordinary ice looks clear. Glacial ice, compressed for centuries, absorbs the red end of sunlight and hands back the blue, which is why the inside of a crevasse glows like a swimming pool. Weight is what turns a snowfield into a glacier. Ice under enough pressure stops behaving like a solid and starts behaving like extremely stiff syrup. The crystals slip past one another, the mass deforms, and the whole thing creeps downslope. Meltwater at the base can lubricate the rock and let the glacier slide outright. The top hundred and fifty feet or so stay cold and brittle, riding along on the flowing ice beneath, and because brittle things cannot bend, that upper layer tears open into the deep cracks called crevasses. Most glaciers advance a few inches a day. Jakobshavn Isbrae in Greenland has been clocked at over a hundred feet a day, which for ice is a sprint. A glacier is also a machine for rearranging the world. It plucks boulders from the bedrock, freezes them into its underside, and drags them along as teeth. Those teeth grind a valley from a river's narrow V into a wide U. They polish stone and leave parallel scratches pointing the way the ice went. Everything the glacier carries gets dumped where it finally melts, in long ridges of rubble called moraines. Twenty thousand years ago, ice up to two miles deep lay over most of Canada and reached down into the United States. Long Island is a rubble pile it left behind. The scratches it cut are still visible on bare rock in Central Park. The land itself is still recovering. Ice that heavy pressed the crust down into the softer rock below, and now that the weight is gone, parts of Canada and Scandinavia are rising again, roughly half an inch a year, like a mattress after you get up. And glaciers keep records. Every layer of snow seals tiny bubbles of the air that was there the day it fell. Drill down through an Antarctic ice sheet and you are drilling backward through time. Cores pulled from that ice have given scientists a direct sample of the atmosphere from eight hundred thousand years ago. No one had to guess. The air was simply there, waiting. That archive is not the only thing melting. Glaciers around the world are losing more ice each summer than they gain each winter, and about two billion people drink from rivers that mountain ice feeds. The slowest rivers on Earth turn out to be the ones we can least afford to lose."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why crevasses open near the surface but not deep inside a glacier. Cite the exact phrase the author uses to explain it.",
+            "The author compares deep ice to extremely stiff syrup and compares rebounding land to a mattress after you get up. What does each comparison make easy to grasp, and what does each one leave out?",
+            "Identify where the passage turns from how glaciers work to why they matter. Quote the sentence that signals the turn.",
+            "Analyze the final sentence. What claim is it making, and has the passage given you enough to accept it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the top layer is cold and brittle so it snaps while the deep ice deforms; cite: because brittle things cannot bend)",
+            "(syrup makes plastic flow intuitive but wrongly suggests ice is wet or fast; the mattress makes rebound intuitive but hides that the rock takes thousands of years)",
+            "(cite: That archive is not the only thing melting.)",
+            "(it claims glaciers are the water supply we can least afford to lose; supported by the two billion figure and the losing more ice than they gain line)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["firn → ____", "brittle → ____", "lubricate → ____", "moraine → ____"],
+          "rows": 2,
+          "answers": [
+            "grainy packed pellets of old snow, the stage between snowfall and glacier ice",
+            "hard but liable to snap rather than bend",
+            "to make a surface slippery so things slide over it",
+            "a long ridge of rubble dumped where a glacier melted"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes No one had to guess about the air in ice cores. Explain why that distinction matters to the argument the passage is building.",
+            "The passage calls a glacier a machine for rearranging the world. Judge that description: is machine a fair word for a glacier, or does it claim too much?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it separates direct evidence from modeling, so the claim about a changing atmosphere rests on a measured sample rather than an estimate)",
+            "(fair: it does repeatable work with moving parts and an output; too much: a machine implies design and purpose, and a glacier has neither)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Glaciers matter as scientific records, not as scenery, so the money should go to drilling ice cores rather than to saving the ice. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

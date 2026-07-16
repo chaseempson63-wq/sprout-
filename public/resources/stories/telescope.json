@@ -1,0 +1,317 @@
+{
+  "key": "telescope",
+  "title": "The Tube That Looks Back in Time",
+  "blurb": "A tube of glass that showed the moon has mountains, and that we are not at the center of anything.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Tube That Looks Back in Time",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-telescope", "templateLabel": "The Tube That Looks Back in Time", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the small end and the big end." },
+        {
+          "kind": "image",
+          "imageKey": "telescope",
+          "notes": ["You look in the small end", "The big end catches the light", "It makes far things look close", "The moon has bumps and holes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a telescope. You look in the small end. You point the big end at the sky. The telescope catches light from far away. It makes far things look close. You can see the moon. You can see its bumps and its round holes. You can see stars. Point it up at night and look."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "star    look" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "telescope", "right": "stars" },
+            { "left": "boat", "right": "water" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the moon you would see in the telescope. Add its bumps and holes.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tube That Looks Back in Time",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-telescope", "templateLabel": "The Tube That Looks Back in Time", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "telescope",
+          "notes": ["A telescope is a tube with glass in it", "The glass bends the light", "Galileo built one in 1609", "He found four moons going around Jupiter", "The moon has mountains and holes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tube That Looks Back in Time",
+          "text": "Long ago, people could only see the sky with their eyes. The moon was a smooth white circle. Then someone made a telescope. It was a tube with glass at each end. The glass bent the light and made far things look close. A man named Galileo pointed one at the moon. He saw that the moon was not smooth. It had mountains and round holes. He pointed it at Jupiter. He saw four tiny dots going around it. They were moons. Nobody had ever seen them before."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a telescope made of?", "What did Galileo see on the moon?", "What did he see going around Jupiter?"],
+          "rows": 2,
+          "answers": ["a tube with glass at each end", "mountains and round holes", "four moons"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A telescope is a ____ with glass in it.", "The glass ____ the light.", "Galileo saw ____ on the moon.", "Four moons go around ____."],
+          "wordBank": ["tube", "bends", "mountains", "Jupiter"],
+          "answers": ["tube", "bends", "mountains", "Jupiter"]
+        },
+        { "kind": "draw", "prompt": "Draw Galileo looking through his telescope at night. Add the moon and Jupiter's four little moons.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tube That Looks Back in Time",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-telescope", "templateLabel": "The Tube That Looks Back in Time", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "telescope",
+          "notes": ["Hans Lipperhey filed the first telescope patent in 1608", "Galileo built his own in 1609", "His best one magnified about 30 times", "He found four moons around Jupiter", "He saw the Milky Way is made of stars"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Night Galileo Looked Up",
+          "text": "In 1608, a Dutch glasses maker named Hans Lipperhey put two pieces of glass in a tube. Far away things looked close. People used it to spot ships coming into the harbor. A year later, in Italy, Galileo Galilei heard about the invention. He built his own, and he made it better. Then he did something nobody had bothered to do. He pointed it at the sky. What he saw changed everything people believed. The moon was not a smooth ball of light. It had mountains, valleys, and craters, like a world. The Milky Way was not a smudge of cloud. It was a crowd of stars, too many to count. And next to Jupiter sat four little dots that moved night after night. They were moons, circling Jupiter, not circling Earth. That mattered. People had been taught that everything in the sky went around Earth. Galileo's four dots said otherwise. A tube with two bits of glass had shown that the old picture was wrong."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Who put two pieces of glass in a tube in 1608?",
+            "What did people first use the telescope for?",
+            "Name two things Galileo saw that surprised people.",
+            "Why do you think Galileo's four dots upset people who believed everything went around Earth?"
+          ],
+          "rows": 2,
+          "answers": [
+            "Hans Lipperhey, a Dutch glasses maker",
+            "to spot ships coming into the harbor",
+            "(any two: craters and mountains on the moon, stars in the Milky Way, four moons around Jupiter)",
+            "(inference: the moons went around Jupiter, so not everything circled Earth)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Night Galileo Looked Up", "How to Build a Sailing Ship", "The Best Cheese in Italy"],
+          "answers": ["The Night Galileo Looked Up"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A telescope is a tube holding pieces of ____.", "Galileo saw mountains and ____ on the moon.", "The Milky Way is really a crowd of ____."],
+          "wordBank": ["glass", "craters", "stars"],
+          "answers": ["glass", "craters", "stars"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you had the first telescope in the world, what would you point it at, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tube That Looks Back in Time",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-telescope", "templateLabel": "The Tube That Looks Back in Time", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "telescope",
+          "notes": ["A telescope's main job is collecting light, not magnifying", "Refractor uses lenses. Reflector uses mirrors", "Newton built the first reflector in 1668", "A 1 meter mirror gathers about 20,000 times more light than your eye", "Looking far away means looking back in time"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Light Buckets",
+          "text": "A telescope does two jobs, and the one most people think of is the less important one. Yes, it magnifies. But its real job is to collect light. Your eye has a pupil about seven millimeters wide when it is fully open in the dark. That tiny opening is all the light you get. A telescope mirror one meter across gathers roughly twenty thousand times more light than your pupil does. Astronomers call their instruments light buckets, and they mean it literally. The wider the bucket, the fainter the object you can catch. There are two ways to build one. A refractor uses a lens at the front to bend light to a point, which is what Galileo used. Lenses have a problem: different colors of light bend by slightly different amounts, so stars come out fringed. Isaac Newton solved this in 1668 by throwing out the lens. He used a curved mirror at the back instead. Mirrors reflect every color the same way, and a mirror can be supported from behind, so it can be made enormous. Almost every serious telescope today is a reflector. Then there is the strangest part. Light travels fast, but not instantly. Sunlight takes about eight minutes to reach you, so you never see the sun as it is now. You see it as it was eight minutes ago. Point a big telescope at a distant galaxy and the light entering it has been traveling for millions of years. The galaxy may have changed completely since. A telescope is not really a magnifying glass. It is a time machine that only looks backward."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is a telescope's most important job, according to the passage?",
+            "Explain why astronomers call their instruments light buckets.",
+            "What problem do lenses have that mirrors do not?",
+            "The passage says a telescope is a time machine that only looks backward. Explain what that means in your own words."
+          ],
+          "rows": 2,
+          "answers": [
+            "collecting light, not magnifying",
+            "the wider the opening, the more light it catches, like a bucket catching rain",
+            "different colors of light bend by different amounts, so stars look fringed",
+            "(inference: light takes years to arrive, so you see the object as it was, not as it is now)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A telescope gathers old light from far away, and the bigger it is the more it catches",
+            "Galileo invented eyeglasses in Italy",
+            "Mirrors are cheaper to make than lenses"
+          ],
+          "answers": ["A telescope gathers old light from far away, and the bigger it is the more it catches"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["refractor → ____", "reflector → ____", "fringed → ____"],
+          "rows": 1,
+          "answers": ["a telescope that uses a lens to bend light to a point", "a telescope that uses a curved mirror instead of a lens", "edged with unwanted colors"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: you have been given a telescope big enough to see a distant galaxy. What would you most want to look at, and what do you hope it would tell you? Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tube That Looks Back in Time",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-telescope", "templateLabel": "The Tube That Looks Back in Time", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "telescope",
+          "notes": ["Stars do not really twinkle. The air does it", "Astronomers call atmospheric blur seeing", "Hubble launched in 1990 with a wrongly ground mirror", "Astronauts fitted corrective optics in 1993", "Adaptive optics reshape a mirror to cancel the blur", "Webb's mirror is 6.5 meters of gold-coated hexagons"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Trouble With Air",
+          "text": "Every star you have ever seen twinkle was lying to you. Stars do not flicker. They shine steadily. The twinkling happens in the last few thousandths of a second of the light's journey, as it crosses the moving air above your head. Pockets of warm and cold air bend light slightly differently, and they shift constantly, so the star's image dances. Poets like this. Astronomers do not. To them, twinkling means a blurred image, and they have a name for the problem: seeing. On a bad night of seeing, the largest telescope on Earth produces a picture no sharper than a small one. There are two ways out. The first is to leave. In 1990, NASA launched the Hubble Space Telescope into orbit, above the atmosphere entirely, where nothing bends the light before it arrives. The launch nearly ended in disaster. Hubble's 2.4 meter mirror had been ground to the wrong shape, off by about one fiftieth of the width of a human hair, and the first images came back blurred. Astronauts flew up in 1993 and fitted the telescope with corrective optics, essentially a pair of glasses. It worked. Hubble went on to become one of the most productive scientific instruments ever built. The second way out is cleverer and much cheaper: fix the air. A modern ground telescope measures the blur hundreds of times per second, usually by watching a bright star or a laser beam fired into the upper atmosphere. A computer works out exactly how the air is distorting the light, and a thin, flexible mirror behind the main one bends itself into the opposite shape, canceling the distortion out. This is adaptive optics, and it can make a telescope on a mountaintop rival one in orbit. So astronomers now do both. The James Webb Space Telescope, launched in 2021, sits a million and a half kilometers from Earth with a 6.5 meter mirror made of eighteen gold-coated hexagons, chilled colder than 220 degrees below zero Celsius so its own heat does not drown the faint infrared light it hunts. Meanwhile, on ridges in Chile and Hawaii, mirrors bend themselves thousands of times a minute to undo the sky. Both are answers to the same complaint: the air is in the way."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why stars appear to twinkle, and why astronomers dislike it.",
+            "What went wrong with Hubble's mirror, and how was it fixed? Quote the phrase the passage uses to describe the repair.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the final sentence. Why does the author end on it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering atmospheric blur, space telescopes, and adaptive optics)",
+            "moving pockets of warm and cold air bend the light so the image dances; astronomers get a blurred picture",
+            "it was ground to the wrong shape, then astronauts fitted corrective optics; quote: essentially a pair of glasses",
+            "(inform, with detail: it defines seeing and adaptive optics, and gives dates and measurements; some playful tone)",
+            "(both solutions answer the same problem, the atmosphere; the author ends there to tie the two halves together)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["seeing (as astronomers use it) → ____", "adaptive optics → ____", "corrective optics → ____", "infrared → ____"],
+          "rows": 1,
+          "answers": [
+            "how much the atmosphere blurs an image",
+            "a system that reshapes a mirror to cancel out atmospheric blur",
+            "extra mirrors or lenses added to fix a flawed image",
+            "light too red for the eye to see, given off as heat"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that poets like this and astronomers do not. What is that pair of sentences doing?",
+            "Adaptive optics is described as cleverer and much cheaper. Why might astronomers still keep building space telescopes?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it contrasts two ways of seeing the same fact, and turns the passage toward the problem)",
+            "(inference: the air blocks some infrared and ultraviolet light completely, so no ground fix can recover it)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: space telescopes cost billions of dollars and are very hard to repair. Is that money better spent on telescopes on the ground? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tube That Looks Back in Time",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-telescope", "templateLabel": "The Tube That Looks Back in Time", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "telescope",
+          "notes": ["Lipperhey filed the first telescope patent in 1608", "Galileo's best telescope magnified about 30 times", "Newton built the first reflector in 1668", "A 10 meter mirror gathers about 2 million times more light than your eye", "Hubble Deep Field, 1995: 3,000 galaxies in an empty patch", "Event Horizon Telescope, 2019: dishes across Earth imaged a black hole's shadow"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Instrument That Made Us Small",
+          "text": "For most of human history the sky was a ceiling. It was decorated, orderly, and close, and most cultures that looked at it built a story in which the Earth stood at the middle of things and everything else went around. The story was not stupid. It matched the evidence available, which was the naked eye. Then a Dutch spectacle maker named Hans Lipperhey filed a patent in 1608 for a tube that made distant things look near, and within two years the ceiling had fallen in. Galileo Galilei did not invent the telescope. He did something harder: he took an instrument built for spotting merchant ships and aimed it at the sky, which almost nobody had thought worth doing. His best instrument magnified about thirty times, less than many hobby telescopes sold today. It was enough. The moon turned out to have mountains that cast shadows, so it was a place, not a lamp. The Milky Way dissolved into individual stars, so the universe was deeper than anyone had drawn it. And four points of light shuffled themselves around Jupiter, night after night, obeying Jupiter and not us. That last observation was the dangerous one. It did not prove the Earth moved. It proved something smaller and more corrosive: that not everything went around us. Once one exception existed, the ceiling was just a hypothesis. Everything since has been an argument about size. A telescope's celebrated trick, magnification, is the minor one. Its real function is collection. The pupil of a dark-adapted eye is about seven millimeters across, and the light that misses it is simply lost. A mirror ten meters wide catches roughly two million times more. Astronomers speak, unromantically and accurately, of light buckets. This is why the history of astronomy is largely a history of grinding bigger glass: Newton replaced the lens with a mirror in 1668 because mirrors treat every color identically and can be braced from behind, and every serious telescope built since has been a variation on that decision. Bigger buckets bought something stranger than brightness. Light is fast but finite, so distance is duration. The sun you see is eight minutes stale. The light from a remote galaxy has been in transit longer than there have been humans to receive it, which means a large telescope does not observe the universe. It observes the universe's past, layered by distance, the far parts older than the near ones. In 1995 astronomers pointed Hubble at a patch of sky the size of a grain of sand held at arm's length, a patch deliberately chosen because it appeared to contain nothing at all, and left the shutter open for ten days. Roughly three thousand galaxies came out of the dark. The emptiest thing they could find was full. The instrument keeps changing what counts as a telescope. In 2019 a collaboration called the Event Horizon Telescope published an image of the shadow of a black hole at the heart of the galaxy M87. There was no tube and no single mirror. There were radio dishes scattered from Hawaii to Spain to the South Pole, recording the same faint signal at the same instant against atomic clocks, their data flown on hard drives to be combined into one virtual instrument the width of the planet. The picture was assembled, not seen. Four centuries on, the pattern has not changed. Each better telescope has demanded the same concession: we are further from the middle than we thought, and there is more of everything than we counted. The instrument was built to bring far things near. Its actual achievement was to move us out of the center and leave us there, looking."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says Galileo did something harder than inventing the telescope. What was it, and why was it harder? Cite the text.",
+            "Explain why the four moons of Jupiter were, in the author's word, corrosive. Quote the exact sentence that makes the claim.",
+            "The passage claims a large telescope does not observe the universe. Explain what it observes instead, and why. Cite the evidence.",
+            "Identify one place where the author deliberately undercuts a famous idea, and analyze what that move does to the reader.",
+            "The final sentence ends on the word looking. Analyze that choice."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(he aimed a ship-spotting instrument at the sky; cite: which almost nobody had thought worth doing)",
+            "(they circled Jupiter rather than Earth, so Earth was not the middle of everything; quote: It proved something smaller and more corrosive: that not everything went around us.)",
+            "(it observes the past, because light takes time to arrive; cite: It observes the universe's past, layered by distance)",
+            "(e.g. calling magnification the minor one, or opening with Galileo did not invent the telescope; it resets the reader's assumption before delivering the real point)",
+            "(it leaves the reader inside an unfinished action, which matches the claim that the decentering never stopped)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["corrosive (as used here) → ____", "dark-adapted → ____", "in transit → ____", "concession → ____"],
+          "rows": 2,
+          "answers": [
+            "slowly eating away at something, here an old belief",
+            "adjusted to darkness, with the pupil opened wide",
+            "still traveling, not yet arrived",
+            "something you are forced to admit or give up"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that the black hole picture was assembled, not seen. Explain why that distinction matters, and whether it makes the image less real.",
+            "The passage argues that every better telescope moved humans further from the middle. Name one discovery it does not mention that fits the pattern, and explain how."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a computer combined data from many separate dishes; it is still a real measurement, just not a direct picture through an eyepiece)",
+            "(student answer, e.g. the sun is one ordinary star, the Milky Way is one of billions of galaxies, planets around other stars are common)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The telescope's most important effect was not scientific but psychological, because it changed how humans see themselves. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

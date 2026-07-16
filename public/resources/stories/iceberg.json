@@ -1,0 +1,319 @@
+{
+  "key": "iceberg",
+  "title": "The Iceberg That Hides Most of Itself",
+  "blurb": "A floating mountain of ancient snow that keeps nine tenths of itself under the sea.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Iceberg That Hides Most of Itself",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-iceberg", "templateLabel": "The Iceberg That Hides Most of Itself", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the ice under the water." },
+        {
+          "kind": "image",
+          "imageKey": "iceberg",
+          "notes": ["It is a big piece of ice", "It floats in the cold sea", "Most of it hides under the water", "The ice is very, very old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an iceberg. It is a big piece of ice. It floats in the cold sea. The top is white and bumpy and shiny. But look under the water. Most of the iceberg is down there. It is hiding. Only a little bit pokes up. Birds sit on the top and rest. The iceberg floats away, slow and quiet."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the penguins on each iceberg. Write how many in the box.",
+          "emoji": "🐧",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ice    cold" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "iceberg", "right": "sea" },
+            { "left": "cloud", "right": "sky" },
+            { "left": "tree", "right": "ground" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own iceberg. Draw the big part under the water too.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Iceberg That Hides Most of Itself",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-iceberg", "templateLabel": "The Iceberg That Hides Most of Itself", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "iceberg",
+          "notes": ["It starts out as snow", "Nine parts out of ten hide under the sea", "The water in it is not salty", "It broke off a river of ice", "Some icebergs are blue"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Iceberg That Hides Most of Itself",
+          "text": "An iceberg looks like a small white hill on the sea. It is not small. Under the water there is much more ice. Nine parts out of ten are hiding down there. You only see one part. Icebergs are made of snow. Snow fell on a cold land long ago. More snow fell on top. It packed down hard and turned into ice. The ice slid slowly to the sea. Then a big piece broke off and floated away. That piece is an iceberg. It is not salty. It is made of fresh water, like rain."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is an iceberg made of?", "How much of an iceberg hides under the water?", "Is the water in an iceberg salty or fresh?"],
+          "rows": 2,
+          "answers": ["snow that packed down into ice", "nine parts out of ten", "fresh"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["An iceberg floats in the ____.", "Most of the ice hides under the ____.", "An iceberg starts out as ____.", "Iceberg water is not salty. It is ____."],
+          "wordBank": ["sea", "water", "snow", "fresh"],
+          "answers": ["sea", "water", "snow", "fresh"]
+        },
+        { "kind": "draw", "prompt": "Draw an iceberg in the sea. Draw a line for the water, then draw the hidden ice below it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Iceberg That Hides Most of Itself",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-iceberg", "templateLabel": "The Iceberg That Hides Most of Itself", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "iceberg",
+          "notes": ["Icebergs are frozen fresh water, not sea water", "They break off glaciers. That is called calving", "About nine tenths hides under the water", "Some are white, some glow blue", "Greenland and Antarctica make most of them"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where an Iceberg Comes From",
+          "text": "An iceberg does not start in the sea. It starts as snow, high on a cold mountain or on a wide sheet of ice like the one that covers Greenland. Snow falls and does not melt. More snow falls on top of it. Year after year, the weight presses the old snow down until it packs into solid ice. That ice becomes a glacier, and a glacier is a river that moves too slowly to watch. It creeps downhill toward the ocean. When the front of the glacier reaches the water, the sea lifts it and cracks it. Great slabs snap off with a boom and splash into the ocean. Scientists call that calving. The floating piece is an iceberg. Now the strangest part. Ice is a little lighter than sea water, but only a little. So an iceberg floats with about nine tenths of itself under the surface. The white hill you can see is the small part. The rest is a huge blue shape in the dark water below, wider than the top and much deeper than it looks."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where does the ice in an iceberg come from?",
+            "What does the word calving mean?",
+            "About how much of an iceberg is under the water?",
+            "Why do you think a ship would stay far away from an iceberg, even a small looking one?"
+          ],
+          "rows": 2,
+          "answers": [
+            "snow that fell long ago and packed down into ice",
+            "when a slab of ice breaks off the front of a glacier into the sea",
+            "about nine tenths of it",
+            "(inference: the hidden ice is much bigger and spreads wider than the part you can see)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Where an Iceberg Comes From", "How to Build a Snowman", "The Warmest Sea on Earth"],
+          "answers": ["Where an Iceberg Comes From"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Snow packs down over many years and turns into ____.", "A ____ is ice that creeps slowly downhill toward the sea.", "When a slab of ice breaks off into the ocean, scientists call it ____."],
+          "wordBank": ["ice", "glacier", "calving"],
+          "answers": ["ice", "glacier", "calving"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how an iceberg is made, and why did it surprise you?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Iceberg That Hides Most of Itself",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-iceberg", "templateLabel": "The Iceberg That Hides Most of Itself", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "iceberg",
+          "notes": ["Ice is lighter than sea water, but only just", "About one tenth pokes above the surface", "Old, squeezed ice glows deep blue", "Melting bergs fizz as ancient air escapes", "An iceberg can roll over without warning", "The trapped air is older than the pyramids"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tip of the Iceberg",
+          "text": "You have probably heard someone say that a problem is only the tip of the iceberg. The phrase comes from real physics. Ice is slightly less dense than sea water. Glacier ice weighs about 917 kilograms per cubic meter, while cold sea water weighs about 1,025. Because the ice is lighter, it floats. Because the difference is small, it only just floats. Roughly one tenth of an iceberg rides above the surface. The other nine tenths hang below, out of sight. That hidden ice is old. The snow that made it may have fallen before the pyramids were built. As the snow was buried and squeezed, it trapped tiny bubbles of the air that was around at the time. When an iceberg melts, those bubbles pop free and fizz. Sailors call the sound bergy seltzer, and you can hear it across open water. Squeezing changes the color too. Ice packed hard enough loses most of its bubbles, and light travels deep inside it. The ice soaks up red light and lets blue escape, so old, dense ice glows a startling blue. Young, bubbly ice scatters every color at once and looks plain white. An iceberg is not a peaceful thing. It melts unevenly, mostly from underneath, where the water is warmer than the air. As it thins, its balance shifts, and without warning the whole mountain can roll over. A rolling iceberg throws waves big enough to swamp a boat, which is one more reason ships keep their distance."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why an iceberg floats at all.",
+            "The passage says the ice only just floats. What does that have to do with the nine tenths that stays hidden?",
+            "Why is old, squeezed ice blue while young ice is white?",
+            "The passage says an iceberg is not a peaceful thing. Using the text, explain what makes it dangerous even when nobody is near it."
+          ],
+          "rows": 2,
+          "answers": [
+            "glacier ice is less dense than sea water, so it is pushed up and floats",
+            "(inference: the density difference is tiny, so only a small part can ride above the surface)",
+            "dense ice has lost its bubbles, so it absorbs red light and lets blue out; bubbly ice scatters all colors and looks white",
+            "(it melts from below, its balance shifts, and it can roll over and throw big waves)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "An iceberg hides most of itself for reasons of physics, and that hidden ice is old, strange, and dangerous",
+            "Sailors invented the phrase the tip of the iceberg to sound clever",
+            "Blue ice is the coldest ice on Earth"
+          ],
+          "answers": ["An iceberg hides most of itself for reasons of physics, and that hidden ice is old, strange, and dangerous"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["dense → ____", "bergy seltzer → ____", "unevenly → ____"],
+          "rows": 1,
+          "answers": [
+            "how heavy something is for its size",
+            "the fizzing sound of ancient air bubbles popping out of melting ice",
+            "not the same amount everywhere"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the phrase the tip of the iceberg to someone who has never heard it. Use two facts from the passage to show why the phrase makes sense.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Iceberg That Hides Most of Itself",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-iceberg", "templateLabel": "The Iceberg That Hides Most of Itself", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "iceberg",
+          "notes": ["Glacier ice: about 917 kg per cubic meter", "Cold sea water: about 1,025", "So about 90 percent floats below the surface", "Iceberg B-15 was roughly the area of Jamaica", "The International Ice Patrol has watched since 1914", "Melting bergs drop stones on the deep seafloor"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Ninety Percent Below",
+          "text": "On the night of April 14, 1912, a lookout on the Titanic saw a dark shape ahead and had less than a minute to react. What the ship struck was not rock. It was compressed snow. Every iceberg begins as snowfall on a glacier or an ice sheet, and the ice that opened the hull of the largest ship in the world had been sitting on Greenland for thousands of years before it slid into the sea. An iceberg floats because glacier ice is slightly less dense than sea water, but the margin is thin. About nine tenths of its mass stays submerged. That is the arithmetic behind the phrase the tip of the iceberg, and it is also why icebergs are so dangerous. The visible peak tells you almost nothing about the shape underneath, which can reach outward for hundreds of meters in a direction you cannot see. The two polar regions build different bergs. Greenland's glaciers squeeze through narrow fjords and shatter as they go, producing jagged, top heavy pinnacle bergs that drift south into the shipping lanes of the North Atlantic. Antarctica does something else. Its floating ice shelves crack along the front and release flat topped tabular icebergs the size of counties. Iceberg B-15 broke away from the Ross Ice Shelf in 2000 and measured about 11,000 square kilometers, close to the area of Jamaica. The Titanic disaster changed the ocean. Nations met, wrote the first international agreement on safety at sea, and in 1914 created the International Ice Patrol. The United States Coast Guard has flown it every season since, and the patrol reports that no ship following its published iceberg limits has ever struck one. Icebergs are not only hazards. As one drifts and melts, it releases the rock flour and iron dust its parent glacier scraped off the mountains. That dust feeds phytoplankton, and satellites have photographed green blooms trailing behind big bergs like wakes. The larger stones sink when the ice lets go of them. Geologists find these dropstones sitting in fine ocean mud thousands of kilometers from any coast, and use them to map where ice once traveled. An iceberg is a piece of a continent's memory, drifting away from the place that made it. It carries ancient air, ancient dust, and the record of a snowfall nobody witnessed. Most of that record is under the water, where nobody looks."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why the visible peak of an iceberg makes it dangerous. Quote the phrase the passage uses.",
+            "Contrast the icebergs Greenland produces with the ones Antarctica produces.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why do you think the author saved it for last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the hidden nine tenths, how bergs form and differ, the danger, and what they carry)",
+            "(the top gives no clue to the hidden shape; quote: tells you almost nothing about the shape underneath)",
+            "Greenland makes jagged pinnacle bergs through fjords; Antarctica releases flat topped tabular bergs from ice shelves",
+            "(inform, with detail: it defines terms, gives numbers and dates; the closing lines lean poetic)",
+            "(the important part of an iceberg is hidden, like the history inside it; the author ends there to land the idea)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["submerged → ____", "tabular → ____", "rock flour → ____", "dropstones → ____"],
+          "rows": 1,
+          "answers": [
+            "under the surface of the water",
+            "flat topped, like a table",
+            "rock ground into fine powder by a moving glacier",
+            "stones carried out to sea by ice and dropped when it melts"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the patrol reports that no ship following its published iceberg limits has ever struck one. Why is that careful wording, and not the same as saying no ship has hit an iceberg since 1914?",
+            "Why might a drifting iceberg matter to a scientist who studies ocean life rather than ice?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it only covers ships that followed the warnings; ships that ignored the limits are not included)",
+            "(inference: melting bergs release iron dust that feeds phytoplankton blooms)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should ships still be allowed to sail the North Atlantic iceberg routes at all? Take a position and support it with two reasons drawn from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Iceberg That Hides Most of Itself",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-iceberg", "templateLabel": "The Iceberg That Hides Most of Itself", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "iceberg",
+          "notes": ["917 divided by 1,025 is about 0.895", "Calving: the slab breaking off a glacier front", "Trapped bubbles hold the air of ancient years", "Bubble free ice absorbs red, so it looks blue", "Dropstones mark where icebergs once melted", "Greenland now sheds hundreds of billions of tons a year"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tip of the Iceberg: What Floating Ice Is Evidence Of",
+          "text": "Everyone knows the phrase. When someone says a problem is only the tip of the iceberg, they mean the visible part is the small part. The phrase has survived for a century because the physics behind it is exact, and the physics is worth knowing. Glacier ice has a density of roughly 917 kilograms per cubic meter. Cold sea water is denser, at about 1,025. Divide one by the other and you get 0.895. An iceberg therefore floats with about ninety percent of its mass below the surface and ten percent above, and no iceberg gets a vote in the matter. The ratio is not a rule of thumb. It is a consequence of what the two substances weigh. An iceberg is not frozen sea. It is compressed weather. Snow falls on Greenland or Antarctica and does not melt. More snow buries it. Under the growing weight the flakes lose their points, pack together, and after decades or centuries become solid ice. That ice flows. A glacier is a river that moves too slowly to watch, though the fastest ones travel tens of meters a day, and when its front reaches the ocean the water lifts and flexes it until slabs break away. The word for that is calving, and it is how a continent sheds its ice. What floats away is an archive. Sealed inside the ice are bubbles of the atmosphere from the year the snow fell, unchanged since. Scientists drill ice cores for exactly this reason: the bubbles are samples of old air, and there is no other way to get one. When an iceberg melts, those bubbles burst and hiss, a sound sailors named bergy seltzer. Ice that has had its bubbles squeezed out turns a startling blue, because dense ice absorbs red light and lets blue pass through. White ice is simply young ice, still full of air. Icebergs carry rock as well. A glacier grinds the mountains it crosses into flour and hauls the fragments downhill, and when the ice melts the stones fall to the seafloor. Geologists thousands of kilometers from any coast find dropstones sitting in fine ocean mud where no stone has any business being. The iron in that dust fertilizes the water, and satellites have photographed plankton blooms streaming behind drifting bergs. Now the part that makes people uneasy. It is tempting to watch an iceberg melt and picture the ocean rising as it goes. That is not how it works. A floating iceberg has already displaced its own weight in water, so its melting changes sea level almost not at all. The moment that mattered happened earlier, and quietly, when the ice left the land. Calving is the transfer. Everything after is drift. This is why glaciologists count icebergs instead of mourning them. The berg itself is a receipt. It records how much ice a glacier has handed to the ocean, and the rate of that handover is the number that governs coastlines. Greenland now loses hundreds of billions of tons of ice a year, and much of it departs as icebergs crowding down fjords on the west coast, including Ilulissat, whose glacier is the one most often named as the source of the berg the Titanic met. So the idiom is right, but not in the way people use it. The hidden nine tenths is not the frightening part. The frightening part is what the visible tenth is evidence of: a continent quietly emptying itself into the sea, one white mountain at a time."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage insists the ninety percent ratio is not a rule of thumb. Explain what it is instead, and cite the evidence.",
+            "Explain the claim that an iceberg is not frozen sea, it is compressed weather. What has to happen for that to be true?",
+            "Identify the shift in the passage: where does it turn, and how does the author signal the turn?",
+            "The author writes that the berg itself is a receipt. Analyze what that metaphor is doing, and say whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: floating ice is physics, an archive, and a measure of ice leaving land)",
+            "(it follows from the two densities; cite: It is a consequence of what the two substances weigh)",
+            "(iceberg ice is fallen snow compressed over decades or centuries on land, not frozen sea water)",
+            "(at Now the part that makes people uneasy; a short sentence pivots from wonder to consequence)",
+            "(a receipt is proof of a transaction already completed; it reframes the berg as evidence of ice already lost, supported by the calving-is-the-transfer point)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["density → ____", "calving → ____", "displaced → ____", "archive → ____"],
+          "rows": 2,
+          "answers": [
+            "how much mass a substance packs into a given volume",
+            "the breaking away of ice from the front of a glacier into the sea",
+            "pushed aside, so that the water makes room for the floating object",
+            "a store of records kept from the past"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a melting iceberg barely changes sea level, then calls Greenland's ice loss frightening. Explain why both statements can be true at once.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the sea level rise happens at calving, when land ice enters the water; the melt afterward adds almost nothing, so the rate of calving is what matters)",
+            "(student question plus a credible source type, such as a glaciology survey or satellite ice-mass data)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An iceberg is better understood as a measurement than as a landscape. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "key": "chicken",
+  "title": "The Bird That Walked Out of the Jungle",
+  "blurb": "A shy forest bird became the most numerous bird on Earth. It grinds its food with stones, talks through its own eggshell, and is a living dinosaur.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird That Walked Out of the Jungle",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-chicken", "templateLabel": "The Bird That Walked Out of the Jungle", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say cluck, cluck, cluck." },
+        {
+          "kind": "image",
+          "imageKey": "chicken",
+          "notes": ["A mother chicken is a hen", "The red hat is called a comb", "Chicks come out of eggs", "A chicken says cluck"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a chicken. A mother chicken is called a hen. The hen sits on her eggs all day. She keeps them warm and soft. Inside one egg, a little chick is growing. Tap. Tap. Tap. The chick pecks the shell. Crack. Out comes the chick. It is wet and sleepy. The hen clucks to her chick. The chick peeps back. Soon it will run in the grass."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the eggs in each nest. Write how many in the box.",
+          "emoji": "🥚",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace each word, then say it out loud.", "text": "hen    egg" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to what it gives us.",
+          "pairs": [
+            { "left": "chicken", "right": "eggs" },
+            { "left": "cow", "right": "milk" },
+            { "left": "sheep", "right": "wool" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a hen with her chicks. Add some grass for them to peck.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird That Walked Out of the Jungle",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-chicken", "templateLabel": "The Bird That Walked Out of the Jungle", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "chicken",
+          "notes": ["A chicken has no teeth", "It swallows tiny stones", "The stones grind up its food", "It scratches the dirt for seeds", "Its red hat is called a comb"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Chicken With Stones Inside",
+          "text": "A chicken has no teeth. Not one. So it cannot chew. It just swallows its food whole. It also swallows tiny stones off the ground. The stones do not hurt it. They sit in a pouch inside the chicken called the gizzard. The gizzard is a strong muscle. It squeezes the stones together and grinds the food up small. The stones do the job that teeth do. That is why a chicken pecks and pecks at the dirt. It is hunting for seeds and bugs. It is also picking up its next set of teeth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Why can a chicken not chew its food?", "What does a chicken swallow to help grind its food?", "What is the gizzard?"],
+          "rows": 2,
+          "answers": ["it has no teeth", "tiny stones", "a strong muscle inside the chicken that grinds its food"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A chicken has no ____.", "It swallows small ____.", "The stones sit in the ____.", "A chicken picks up food with its ____."],
+          "wordBank": ["teeth", "stones", "gizzard", "beak"],
+          "answers": ["teeth", "stones", "gizzard", "beak"]
+        },
+        { "kind": "draw", "prompt": "Draw a chicken pecking in the dirt. Draw the seeds and bugs it is looking for.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird That Walked Out of the Jungle",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-chicken", "templateLabel": "The Bird That Walked Out of the Jungle", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "chicken",
+          "notes": ["An egg takes 21 days to hatch", "The shell is made of the same stuff as chalk", "A shell has thousands of tiny air holes", "A chick has an egg tooth to break out", "The chick peeps before it hatches"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Twenty One Days Inside an Egg",
+          "text": "An egg looks like a smooth stone, but it is really a room. Inside is a tiny chick and all the food and water it will need. The yellow yolk is the food. The clear part around it is mostly water. The shell is the wall, and it is made of the same stuff as chalk.\n\nA shell has to be strong, but it cannot be sealed shut. A chick needs to breathe. So the shell is covered in thousands of holes far too small to see. Fresh air seeps in through them. The chick's waste air seeps back out.\n\nThe hen sits on her eggs for twenty one days. She turns them over with her beak many times a day so the growing chick does not stick to the inside of the shell.\n\nNear the end, something strange happens. The chick starts to peep while it is still inside. The hen clucks back. They talk to each other through the wall. Then the chick pushes a hard bump on its beak, called an egg tooth, against the wall of its room until the wall breaks."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the yolk for?",
+            "Why does a shell need thousands of tiny holes?",
+            "Why does the hen turn her eggs over every day?",
+            "Why do you think the chick and the hen call to each other before the chick has even hatched?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is the chick's food",
+            "so the chick can breathe; fresh air gets in and waste air gets out",
+            "so the chick does not stick to the inside of the shell",
+            "(inference: they learn each other's voices, so the hen knows the chick is coming and the chick knows her)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Twenty One Days Inside an Egg", "How to Cook an Egg for Breakfast", "The Tallest Bird in the World"],
+          "answers": ["Twenty One Days Inside an Egg"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The shell is made of the same stuff as ____.", "A hen sits on her eggs for twenty one ____.", "The chick breaks the shell with its egg ____."],
+          "wordBank": ["chalk", "days", "tooth"],
+          "answers": ["chalk", "days", "tooth"]
+        },
+        { "kind": "handwriting", "prompt": "Write three sentences: if the shell of an egg were clear like glass, what would you see on day one, day ten, and day twenty one?", "rows": 5 }
+      ]
+    },
+    "4": {
+      "title": "The Bird That Walked Out of the Jungle",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-chicken", "templateLabel": "The Bird That Walked Out of the Jungle", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "chicken",
+          "notes": ["The phrase pecking order came from real hens", "Chickens tell each other apart by face", "Different alarm calls for hawks and foxes", "Roosters call louder when hens are watching", "Chickens see more colors than we do", "The comb sheds heat, since birds cannot sweat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Knows Its Place",
+          "text": "Watch a flock of chickens for an hour and you will notice it is not a crowd. It is a ladder. One hen eats first and nobody argues. Another hen waits until everyone else has finished. Every bird knows exactly who it can push aside and who will push it aside.\n\nA Norwegian student named Thorleif Schjelderup-Ebbe spent his boyhood summers watching hens and wrote the first careful description of this in the 1920s. He called it the pecking order. The phrase escaped the henhouse. People now use it for offices, schools, and sports teams, usually without knowing they are talking about chickens.\n\nHolding a place on that ladder takes memory. A hen has to recognize the other birds in her flock and remember how the last argument went. Chickens do this by face, the same way you do.\n\nThey also talk far more than people assumed. Chickens make dozens of different sounds, and some of them mean specific things. A chicken that spots a hawk overhead gives one call. A chicken that spots a fox on the ground gives a different one. The flock responds differently to each. They crouch and scan the sky for the first. They stand tall and scan the ground for the second. That is not just noise. It is closer to a word.\n\nThere is one more twist. A rooster who finds food will call the hens over, and he calls harder when hens are watching than when he is alone. Nobody taught him that. He is playing to an audience."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is a pecking order, and where did the phrase come from?",
+            "Why does holding a place in the flock require a good memory?",
+            "The passage says a chicken's alarm call is closer to a word than to noise. What evidence supports that?",
+            "Why do you think a rooster calls harder when hens are watching?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the fixed order of who can push who aside in a flock; it came from a Norwegian student watching hens in the 1920s",
+            "a hen must recognize each bird by face and remember how the last argument ended",
+            "the flock reacts differently to each call: crouching and scanning the sky for a hawk, standing tall and scanning the ground for a fox",
+            "(inference: he wants the hens to notice him, so the call is aimed at listeners, not just a reflex)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Chickens live by a remembered social order and communicate in ways closer to language than to noise",
+            "Roosters are louder than hens in every situation",
+            "Chickens were the first animal that people ever kept"
+          ],
+          "answers": ["Chickens live by a remembered social order and communicate in ways closer to language than to noise"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["flock → ____", "pecking order → ____", "audience → ____"],
+          "rows": 1,
+          "answers": ["a group of birds that live together", "the settled order of who outranks who in a group", "the ones who are watching and listening"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the author says a pecking order is a ladder, not a crowd. Is a pecking order good or bad for the flock? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird That Walked Out of the Jungle",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-chicken", "templateLabel": "The Bird That Walked Out of the Jungle", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "chicken",
+          "notes": ["Gallus gallus domesticus", "Ancestor: the red junglefowl of Southeast Asia", "Domesticated roughly 3,000 years ago", "Rice farming drew junglefowl out of the forest", "Roosters crow on an internal clock, not on sunlight", "More chickens alive than any other bird on Earth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "From the Jungle to Everywhere",
+          "text": "Somewhere in the forests of Southeast Asia there is a bird you would recognize instantly and probably misname. The red junglefowl has a red comb, a copper cape, a dark green tail, and a crow that carries a long way through the trees. It is shy. It roosts high at night and stays close to cover. It is also the ancestor of every chicken alive.\n\nHow a jungle bird became the most numerous bird on the planet is, at bottom, a story about grain. Junglefowl eat seeds. When farmers in Southeast Asia began growing rice in dry fields, the harvest pulled junglefowl out of the forest and into the open, where people fed them, kept them, and eventually bred them. Recent archaeology places that meeting at roughly three thousand years ago, which makes the chicken a fairly recent arrival next to cattle or sheep.\n\nAt first the bird was not mainly food. Chickens traveled with traders and armies across Asia, into the Middle East, around the Mediterranean, and north into Europe, and along the way they were treated as marvels. They were kept for fighting, for ceremony, and for the strange reliability of the rooster's crow.\n\nThe chicken kept one habit from the forest and lost another. It kept its clock. A rooster does not crow because sunlight wakes him. Researchers in Japan held roosters in constant dim light, with no sunrise at all, and the birds still crowed on a cycle of about twenty four hours, timed to a dawn they could not see. What the chicken lost was distance. It can still flutter up to a branch, because sleeping off the ground is old junglefowl sense, but it cannot outfly anything that means it harm.\n\nToday there are more chickens than any other bird on Earth, and it is not close. Estimates run past twenty billion alive at any single moment. That number is not a fact about nature. It is a record of what people decided to keep."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how growing rice led to the chicken.",
+            "Find and quote the exact phrase the author uses for what early people valued about the rooster.",
+            "What did the researchers in Japan find, and what does it prove about crowing?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the junglefowl ancestor, rice farming, spread by trade, and the twenty billion)",
+            "junglefowl eat seeds, so dry rice fields drew them out of the forest, where people fed, kept, and bred them",
+            "quote: the strange reliability of the rooster's crow",
+            "roosters kept in constant dim light still crowed on a roughly twenty four hour cycle, so crowing runs on an internal clock rather than on sunlight",
+            "(inform, with a persuasive turn at the end; it defines terms and reports research, then makes a judgment in the last two sentences)",
+            "(the chicken's huge numbers are a result of human choices, not of the bird's own success; the author ends there so the reader carries the responsibility away)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["ancestor → ____", "archaeology → ____", "roost → ____", "marvels → ____"],
+          "rows": 1,
+          "answers": [
+            "the earlier animal that a later kind descended from",
+            "the study of the past through the things people left behind",
+            "to settle on a high perch to sleep",
+            "wonders, things treated as amazing"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says the number of chickens is not a fact about nature. Explain what that means in your own words.",
+            "Why might a shy, seed-eating forest bird be a better candidate for living alongside people than a bold hunting bird?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the population exists because people breed and raise them, so it measures human demand rather than the bird's own fitness)",
+            "(inference: it already eats what farms produce, it tolerates crowding, and it does not need to hunt or roam)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: with twenty billion alive, is the chicken the most successful bird in history, or the least free? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird That Walked Out of the Jungle",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-chicken", "templateLabel": "The Bird That Walked Out of the Jungle", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "chicken",
+          "notes": [
+            "Birds are theropod dinosaurs, the branch that survived",
+            "2007: protein from a T. rex bone matched chicken most closely",
+            "Rome consulted sacred chickens before battle",
+            "249 BCE: a consul drowned the sacred chickens and lost his fleet",
+            "Over twenty billion chickens alive at any moment",
+            "Broiler bones are proposed as a marker of our geological era"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Chicken's Deep Time",
+          "text": "Start with something that sounds like a joke and is not. The chicken is a dinosaur. This is not a loose comparison about beaks and scaly feet. Birds are theropods, the same branch of the dinosaur family tree that produced Velociraptor and Tyrannosaurus, and that branch never went extinct. It got smaller, kept the feathers it already partly had, and flew. In 2007 a research team recovered fragments of protein from inside a Tyrannosaurus rex leg bone, compared the sequence against living animals, and reported that the closest match was the chicken. The finding was argued over for years, as good findings often are, but the family tree it pointed at was already well established from bones alone. When people say birds are living dinosaurs, the bird in the yard is the ordinary proof.\n\nNow jump forward about sixty six million years. In 249 BCE a Roman fleet under Publius Claudius Pulcher prepared to attack the Carthaginian navy at Drepana. Roman commanders did not open a battle without consulting the sacred chickens. The ritual was simple. Offer grain. If the birds ate greedily, the gods approved. That morning the chickens would not eat. Claudius, out of patience, had them thrown overboard, saying that if they would not eat, they could drink. He then lost most of his fleet. Rome did not blame his tactics. Rome blamed his impiety, put him on trial, and fined him. For centuries, a bird's appetite counted as official military intelligence.\n\nNow jump to the present, where the chicken has become the most numerous bird that has ever lived. Over twenty billion are alive at any given moment, and because they are raised in short cycles, tens of billions more pass through every year. Their bones accumulate in landfills on every continent.\n\nThat last detail is the one researchers find both unsettling and interesting. In 2018 a group of scientists argued in a paper that the broiler chicken is a signal, a marker future geologists will use to identify our era in the rock. Their reasoning is that the modern broiler is barely a natural animal at all. Set beside a chicken from the 1950s, it grows several times faster, reaches a far greater body mass, and carries bones reshaped by that speed. It cannot live long without human management. And it is everywhere, in numbers no wild bird has ever approached, laid down in the ground continuously.\n\nRead the three scenes together. A lineage that walked away from the asteroid. A bird whose refusal to eat could stop a Roman fleet. And a bird remade so completely by human decisions that it may become the fossil that names our time. Through all of it the chicken has done nothing remarkable. It has simply been standing next to us, in the yard, while we decided what it was for."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the Tyrannosaurus protein study reported, and why the author says the result was not what established the family tree. Cite the exact phrase.",
+            "What was the sacred chicken ritual meant to decide, and what does the trial of Claudius reveal about Roman thinking? Cite evidence.",
+            "Why do researchers argue the broiler chicken will mark our era in the rock? Give two pieces of evidence from the passage.",
+            "The passage is built as three scenes. Analyze why the author orders them this way, and what the final paragraph does with them."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the chicken links dinosaur ancestry, ancient ritual, and modern industry, and each layer is really about people)",
+            "(it reported the closest living match to T. rex protein was the chicken; cite: already well established from bones alone)",
+            "(it was meant to read the approval of the gods before battle; Rome tried and fined him for impiety rather than for tactics, so the ritual was treated as real duty, not theater)",
+            "(the broiler grows several times faster and larger than a 1950s bird, its bones are reshaped by that speed, it cannot survive without people, and its bones are deposited everywhere continuously)",
+            "(the scenes run deep past, historical past, present, so each one shrinks the bird's own agency and grows ours; the final paragraph collapses all three and names people, not the chicken, as the subject of the story)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["theropod → ____", "impiety → ____", "broiler → ____", "lineage → ____"],
+          "rows": 2,
+          "answers": [
+            "the branch of dinosaurs that includes Tyrannosaurus and, through it, all birds",
+            "failing to show proper respect to the gods or to sacred duty",
+            "a chicken bred and raised for meat rather than for eggs",
+            "a line of descent running from an ancestor down to its living descendants"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that the chicken has done nothing remarkable. Given everything else in the passage, is that a fair claim, or is the author being deliberately provocative? Explain what the author is really arguing.",
+            "Name one claim in this passage you would want to check before repeating it, and say what kind of source you would check it against."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it is deliberate: the bird did not choose any of it, so the author is arguing the remarkable part belongs to human choices, not to the animal)",
+            "(student claim, most likely the protein study or the twenty billion figure, plus a credible source type such as a peer reviewed paper or an agricultural census)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal that cannot survive without us is no longer really a wild species, and we owe it nothing. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

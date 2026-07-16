@@ -1,0 +1,315 @@
+{
+  "key": "rhino",
+  "title": "The Horn That Is Really a Fingernail",
+  "blurb": "The two ton animal that wears a fingernail on its nose, and the ancient family it has left.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Horn That Is Really a Fingernail",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-rhino", "templateLabel": "The Horn That Is Really a Fingernail", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the rhino's horn." },
+        {
+          "kind": "image",
+          "imageKey": "rhino",
+          "notes": ["It has a horn on its nose", "It is very big", "It loves mud", "It eats grass all day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a rhino. The rhino is big. It has a horn on its nose. The rhino eats grass all day. It has thick gray skin. The rhino likes mud. It rolls in the mud to stay cool. A little bird sits on its back. The bird eats bugs off the rhino. The rhino walks slowly. It is strong."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the birds on each rhino's back. Write how many in the box.",
+          "emoji": "🐦",
+          "items": ["2", "4", "1", "3"],
+          "answers": ["2", "4", "1", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "big    horn" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its part.",
+          "pairs": [
+            { "left": "rhino", "right": "horn" },
+            { "left": "bird", "right": "wings" },
+            { "left": "fish", "right": "fins" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own rhino. Give it a big horn and lots of mud.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Horn That Is Really a Fingernail",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-rhino", "templateLabel": "The Horn That Is Really a Fingernail", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "rhino",
+          "notes": ["The horn is made of the same stuff as your fingernails", "Only the elephant is bigger", "It can run about thirty miles an hour", "A group of rhinos is called a crash", "Its ears turn to catch sounds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rhino and Its Little Helper",
+          "text": "A rhino is one of the biggest animals on land. Only the elephant is bigger. The rhino has a horn on its nose. The horn is not bone. It is made of the same stuff as your fingernails. A rhino cannot see very well. It can smell and hear very well. When the sun is hot, the rhino lies down in the mud. The mud keeps it cool. The mud also stops bugs from biting its skin. Small birds ride on the rhino's back. They eat the bugs. When they see danger, they call out loud."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a rhino's horn made of?", "Why does a rhino lie down in the mud?", "What do the little birds eat?"],
+          "rows": 2,
+          "answers": ["the same stuff as your fingernails", "to stay cool and to stop bugs biting", "the bugs on the rhino"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Only the ____ is bigger than a rhino.", "The rhino has a horn on its ____.", "A rhino cannot ____ very well.", "The rhino lies down in the ____ to stay cool."],
+          "wordBank": ["elephant", "nose", "see", "mud"],
+          "answers": ["elephant", "nose", "see", "mud"]
+        },
+        { "kind": "draw", "prompt": "Draw the rhino in its mud pool. Add a little bird on its back.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Horn That Is Really a Fingernail",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-rhino", "templateLabel": "The Horn That Is Really a Fingernail", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "rhino",
+          "notes": ["Rhinoceros means nose horn in Greek", "The horn is keratin, just like your nails", "Five kinds are left: two in Africa, three in Asia", "The horn never stops growing", "A group of rhinos is called a crash"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Horn That Is Not a Horn",
+          "text": "Reach up and touch your fingernail. Now think about a rhino's horn. They are made of the same thing. It is called keratin, and it is the stuff in your nails and your hair. A rhino's horn has no bone inside it at all. It is packed keratin, pressed together hard, growing up out of the skin on the nose. Because it grows like a fingernail, it never stops growing. A rhino wears its horn down by rubbing it on rocks and by pushing at the ground. It uses the horn to dig for water in a dry riverbed, to snap branches, and to steer its calf along the path. There are five kinds of rhino left in the world. Two live in Africa and three live in Asia. Some have two horns and some have one. All of them are in trouble, because people hunt them for those horns, which are worth nothing more than a handful of fingernails."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a rhino's horn made of?",
+            "Name two things a rhino uses its horn for.",
+            "How many kinds of rhino are left, and where do they live?",
+            "Why do you think people once believed a rhino horn was special?"
+          ],
+          "rows": 2,
+          "answers": [
+            "keratin, the same thing as fingernails and hair",
+            "digging for water, snapping branches, steering its calf",
+            "five: two in Africa and three in Asia",
+            "(opinion: it looks rare and powerful, so people guessed it had power)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Horn That Is Not a Horn", "How to Train a Rhino to Sit", "The Longest River in Africa"],
+          "answers": ["The Horn That Is Not a Horn"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A rhino's horn is made of ____.", "The horn has no ____ inside it at all.", "Two kinds of rhino live in ____ and three live in Asia."],
+          "wordBank": ["keratin", "bone", "Africa"],
+          "answers": ["keratin", "bone", "Africa"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences. A rhino's horn is made of the same thing as your fingernails. Does knowing that change how you think about the horn, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Horn That Is Really a Fingernail",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-rhino", "templateLabel": "The Horn That Is Really a Fingernail", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rhino",
+          "notes": ["White rhino: a wide flat lip for cropping grass", "Black rhino: a pointed lip that grips like a finger", "Neither one is white or black. Both are gray", "A big white rhino male can pass two tons", "It sees poorly but hears and smells very well", "White rhino calves run ahead, black rhino calves follow behind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Lips, Two Lives",
+          "text": "Africa has two kinds of rhino, and the fastest way to tell them apart is to look at the mouth. The white rhino has a wide, flat upper lip, shaped almost like the front of a lawn mower. It walks with its head low, sweeping that broad lip across the ground, cropping short grass. It is a grazer. It is also enormous: a big male can weigh more than two tons, which makes it the largest land animal on Earth after the elephant. The black rhino has a completely different mouth. Its upper lip comes to a point and can grip like a finger. It uses that lip to pull leaves and twigs off thorny bushes, folding them into its mouth. It is a browser, and it carries its head high to reach the branches. The two names are confusing, because neither animal is white and neither is black. Both are gray. The names tell you nothing. The lips tell you everything. Neither rhino sees well. A rhino can barely make out a person standing thirty feet away. What it has instead is a nose that reads the wind and ears that swivel like dishes, tracking a sound without the head ever turning. The differences run deeper than food. White rhinos are the sociable ones and will gather in small groups. Black rhinos usually keep to themselves and have a reputation for charging first and looking later. Even their calves behave differently. A white rhino calf trots along in front of its mother, where she can watch it. A black rhino calf follows behind her, in the tunnel her body makes through the brush."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "How can you tell a white rhino from a black rhino by looking at its mouth?",
+            "The passage says the names tell you nothing. Explain what that means.",
+            "Why does a black rhino carry its head high while a white rhino keeps its head low?",
+            "A white rhino calf runs in front of its mother while a black rhino calf follows behind. What might explain the difference?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the white rhino has a wide flat lip, the black rhino has a pointed lip that grips",
+            "neither rhino is white or black, both are gray, so the color names describe nothing real",
+            "(inference: the black rhino eats leaves up in bushes, the white rhino eats grass on the ground)",
+            "(inference: white rhinos live in open grass where she can see it, black rhinos push through thick brush)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Two African rhinos look alike but are built for completely different food and lives",
+            "Rhinos are the largest animals on Earth",
+            "Rhinos are named after the color of their skin"
+          ],
+          "answers": ["Two African rhinos look alike but are built for completely different food and lives"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["grazer → ____", "browser → ____", "sociable → ____"],
+          "rows": 1,
+          "answers": ["an animal that eats grass off the ground", "an animal that eats leaves and twigs off bushes", "happy to be around others"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph. If you could rename these two rhinos, what would you call them and why? Use two details from the passage to defend your names.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Horn That Is Really a Fingernail",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-rhino", "templateLabel": "The Horn That Is Really a Fingernail", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rhino",
+          "notes": ["Southern white rhinos came back from about fifty animals", "Rhino horn is keratin and has no medicine in it", "Dehorning is painless and the horn grows back", "Two northern white rhinos remain, both female", "Poaching has taken hundreds of rhinos a year", "Every southern white rhino descends from one small group"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Fifty Rhinos, and What Came After",
+          "text": "In the late 1800s, the southern white rhino was declared gone. Hunters had worked their way across southern Africa with such thoroughness that naturalists closed the file and moved on. Then, in 1895, a small population was found surviving in a valley in what is now KwaZulu-Natal, South Africa. Estimates of how many were left vary, but every estimate is small: somewhere between fifty and a hundred animals. Every southern white rhino alive today descends from that one group. What happened next is the largest conservation success story of its kind. The valley was protected. The animals were counted, guarded, and eventually moved, a few at a time, to other reserves where rhinos had once lived and no longer did. The population climbed past a thousand, then past ten thousand. Today there are more than fifteen thousand southern white rhinos. A species that had been written off filled an entire continent's worth of parks again, and it did it in a century. That is the good half. The other half arrived with money. A rhino horn is keratin, chemically the same material as a fingernail, and it has no medicinal power whatsoever. This has been tested and retested. It does not matter. Because some buyers believe otherwise, horn has been priced by weight alongside gold, and poaching has surged. South Africa alone has lost hundreds of rhinos a year for over a decade. Meanwhile the northern white rhino, a separate population from farther up the continent, ran out of time. Two females remain. Both live under armed guard in Kenya, and neither can carry a calf. Scientists are attempting to rescue the population with stored cells and surrogate mothers. Whether that counts as saving a species is a question worth arguing about. Rangers have responded to the poaching with a strange, sad tactic: they find rhinos, sedate them, and cut off their horns. The horn is keratin, so cutting it hurts no more than a haircut, and it grows back within a few years. A dehorned rhino is a less valuable target. It is also a rhino that cannot dig properly for water, cannot defend its calf as well, and does not look like a rhino. Conservationists argue about it constantly. The argument is not really about horns. It is about how much of an animal you are willing to take away in order to keep it alive."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "About how many southern white rhinos were left in 1895, and how many are there today?",
+            "Explain why rhino horn is expensive even though it has no medicinal power. Quote the phrase the passage uses about its price.",
+            "Is this passage written to inform, to persuade, or both? Point to two details that support your answer.",
+            "The passage ends by saying the argument is about how much of an animal you are willing to take away in order to keep it alive. Explain what the author means."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the recovery from about fifty animals and the poaching crisis)",
+            "between fifty and a hundred; more than fifteen thousand today",
+            "buyers believe it works, and belief alone sets the price; quote: priced by weight alongside gold",
+            "(both: dates and numbers inform, while the closing lines argue a position)",
+            "(dehorning keeps a rhino alive by removing part of what makes it a rhino)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["poaching → ____", "sedate → ____", "descends from → ____", "surrogate → ____"],
+          "rows": 1,
+          "answers": [
+            "hunting animals illegally",
+            "to put an animal safely to sleep for a short time",
+            "comes down from as an ancestor",
+            "a mother who carries another animal's young"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Every southern white rhino alive descends from one small group. Why might that be a problem, even with fifteen thousand of them?",
+            "Naturalists closed the file on this animal in the 1800s and were wrong. What does that suggest about declaring a species gone?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: they are all closely related, so little genetic variety means less resistance to disease)",
+            "(opinion: even careful experts can be wrong, so it is worth looking longer before giving up)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should rangers cut the horns off wild rhinos to keep poachers away? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Horn That Is Really a Fingernail",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-rhino", "templateLabel": "The Horn That Is Really a Fingernail", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rhino",
+          "notes": ["Order Perissodactyla: odd-toed, like horses and tapirs", "Paraceratherium: a hornless rhino relative, nearly sixteen feet at the shoulder", "Coelodonta, the woolly rhino, walked the Ice Age steppe", "Keratin does not fossilize, so ancient horns are inferred from the skull", "Rhinos vanished from North America about four million years ago", "Five species are left, three of them critically endangered"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Family Down to Five",
+          "text": "Start with the thing everyone knows and get it out of the way. A rhinoceros horn is not a horn. Cattle horns and antelope horns are built around a core of living bone. A rhino's is not. It is a solid mass of keratin, the identical protein in a fingernail, a hoof, and a strand of hair, compressed into a spike and anchored to a roughened patch of the skull rather than growing out of it. Cut it and it grows back. This is a fact with consequences, and we will come back to it. Now widen the frame. The rhinoceros belongs to an order called Perissodactyla, the odd-toed ungulates, animals that carry their weight down the middle toe. Its living relatives are not the elephant or the hippopotamus, which are unrelated heavyweights, but the horse and the tapir. There are fewer than twenty species of odd-toed ungulate left on Earth. That number should stop you. Thirty million years ago this was one of the dominant orders of large land mammals, and rhinos were its most successful branch. They were everywhere, and they were not what you are picturing. Paraceratherium, a hornless rhino relative that browsed the tops of trees in Asia, stood nearly sixteen feet at the shoulder and is one of the largest land mammals that has ever lived. Teleoceras was squat and barrel-bodied and lived in North American rivers like a hippo; hundreds of them lie preserved in a Nebraska waterhole, suffocated by ash that drifted a thousand miles from an eruption in Idaho twelve million years ago. Coelodonta, the woolly rhino, walked the Ice Age steppe alongside mammoths, and Stone Age painters put it on cave walls in France. Elasmotherium, the so-called Siberian unicorn, carried what was probably an enormous single horn and survived to within about thirty-nine thousand years ago, which means people almost certainly saw one. Notice the word probably. We have never found that horn. Keratin rots; it does not fossilize the way bone does. Everything we claim about a fossil rhino's horn is inferred from the rough, pitted patch of skull where the horn was cemented. The horn is the one part of a rhinoceros that time refuses to keep. Five species remain. Two in Africa, three in Asia. The Sumatran rhino, reddish and hairy and the closest living cousin of the woolly rhino, is down to a few dozen. The Javan rhino is confined to a single park in Indonesia. The greater one-horned rhino of India and Nepal is the counterexample: reduced to perhaps two hundred animals a century ago, protected hard, and now numbering around four thousand. Which returns us to the fingernail. Rhinos are not vanishing because they are badly designed, or because the climate turned on them. They survived the Ice Age. They are vanishing because a spike of compacted protein, which does nothing that a chewed fingernail could not do, is sold by weight at the price of gold. An order that ruled the planet's grasslands for thirty million years is being dismantled over a misunderstanding about hair."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why a rhino's horn is not a horn the way a cow's is. Cite the exact words the passage uses for what it is made of.",
+            "After several confident claims about fossil rhinos, the author writes Notice the word probably. What is the author doing there, and what does it do for the reader's trust?",
+            "Identify where the passage turns from natural history into argument. Quote the sentence that begins the turn.",
+            "The final sentence blames a misunderstanding about hair. Analyze what that phrase is doing and whether the passage has earned the right to say it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a cow's horn is built around a core of living bone; quote: a solid mass of keratin)",
+            "(the author flags the limit of the evidence and admits the horn is inferred, not found, which makes the other claims more credible)",
+            "(quote: Which returns us to the fingernail.)",
+            "(it reframes poaching as an error about a worthless material; earned by the keratin evidence set up in the opening paragraph)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["ungulate → ____", "inferred → ____", "counterexample → ____", "dismantled → ____"],
+          "rows": 2,
+          "answers": [
+            "a hoofed mammal",
+            "worked out from indirect evidence rather than observed directly",
+            "a case that runs against the general pattern",
+            "taken apart piece by piece"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author pauses to say fewer than twenty species of odd-toed ungulate are left. Why include that number in a passage about rhinos?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it shows the whole order has collapsed, so the rhino's decline is one part of a much larger pattern)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal is worth protecting only if it is useful to people. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

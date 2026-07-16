@@ -1,0 +1,310 @@
+{
+  "key": "magnet",
+  "title": "The Rock That Knows Which Way Is North",
+  "blurb": "The invisible pull that steers ships, lights the sky, and quietly runs almost every machine you own.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Rock That Knows Which Way Is North",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-magnet", "templateLabel": "The Rock That Knows Which Way Is North", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the two ends of the magnet." },
+        {
+          "kind": "image",
+          "imageKey": "magnet",
+          "notes": ["It pulls on iron", "You cannot see the pull", "It has two ends called poles", "Two magnets can push each other away"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a magnet. A magnet pulls. It pulls on things made of iron. Try it on a spoon. Try it on a paper clip. The magnet says click. Now try it on a leaf. Try it on your sock. Nothing happens. The magnet is picky. It only pulls on some things. You cannot see the pull. You can only feel it."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the paper clips the magnet picked up. Write how many in the box.",
+          "emoji": "📎",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "pull    iron" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each thing to what it is made of. Then say if a magnet would pull it.",
+          "pairs": [
+            { "left": "paper clip", "right": "metal" },
+            { "left": "leaf", "right": "plant" },
+            { "left": "cup", "right": "plastic" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a magnet picking things up. Draw three things it can pull.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Rock That Knows Which Way Is North",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-magnet", "templateLabel": "The Rock That Knows Which Way Is North", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "magnet",
+          "notes": ["Magnets pull iron, nickel, and cobalt", "Every magnet has a north and a south pole", "Two north poles push apart", "A lodestone is a rock that is a magnet", "A compass needle is a tiny magnet"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rock That Knows Which Way Is North",
+          "text": "A magnet has two ends. We call them poles. One is the north pole. One is the south pole. Hold two magnets together the right way and they snap shut. Turn one around and they push apart. They will not touch, no matter how hard you press. A magnet pulls on iron. It does not pull on wood or plastic or glass. Long ago, people found rocks that could pull iron all by themselves. They called them lodestones. A lodestone hung on a string will slowly turn until it points north. That is how sailors found their way home."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are the two ends of a magnet called?", "What happens when you turn one magnet around?", "What does a lodestone on a string point to?"],
+          "rows": 2,
+          "answers": ["the north pole and the south pole", "the two magnets push apart", "it points north"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A magnet has two ends called ____.", "A magnet pulls on ____.", "A rock that is a magnet is called a ____.", "A lodestone on a string points ____."],
+          "wordBank": ["poles", "iron", "lodestone", "north"],
+          "answers": ["poles", "iron", "lodestone", "north"]
+        },
+        { "kind": "draw", "prompt": "Draw two magnets pushing each other apart. Draw the push with arrows.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Rock That Knows Which Way Is North",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-magnet", "templateLabel": "The Rock That Knows Which Way Is North", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "magnet",
+          "notes": ["The word magnet comes from a place called Magnesia", "Lodestone is a rock called magnetite", "Cut a magnet in half and you get two magnets", "Magnets ignore copper, gold, and aluminum", "Sailors in China used compasses 1,000 years ago"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Half That Is Never Half",
+          "text": "Every magnet has two poles, a north and a south. Put a north pole next to a south pole and the two magnets rush together. Put two north poles together and they shove each other away. You can feel the push in your hands even though there is nothing between them. Here is a strange part. Cut a magnet in half and you do not get one north piece and one south piece. You get two smaller magnets, each with its own north and south. Cut those in half and it happens again. Nobody has ever found a magnet with only one pole. More than a thousand years ago, people in China noticed that a certain dark rock always turned to face the same direction. They called it a lodestone. If you float a magnetized needle on a scrap of wood, it swings around and settles pointing north. That simple trick became the compass, and the compass let sailors cross open water for weeks without ever seeing land."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens when you put two north poles together?",
+            "What do you get when you cut a magnet in half?",
+            "What did people in China notice about the dark rock?",
+            "Why do you think the compass mattered so much to sailors?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they push each other away",
+            "two smaller magnets, each with a north and a south pole",
+            "it always turned to face the same direction",
+            "(inference: they could find their way with no land in sight)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Half That Is Never Half", "How to Sail a Wooden Ship", "The Biggest Rocks in China"],
+          "answers": ["The Half That Is Never Half"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Every magnet has two ____.", "A rock that pulls iron by itself is a ____.", "A floating magnetized needle became the ____."],
+          "wordBank": ["poles", "lodestone", "compass"],
+          "answers": ["poles", "lodestone", "compass"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about cutting a magnet in half, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Rock That Knows Which Way Is North",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-magnet", "templateLabel": "The Rock That Knows Which Way Is North", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "magnet",
+          "notes": ["Every iron atom acts like a tiny magnet", "Heat scrambles a magnet and wipes it out", "Iron loses its magnetism above 1,418 degrees Fahrenheit", "Earth's core is liquid iron in motion", "A compass needle lines up with Earth's field", "The northern lights are that field at work"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Nail That Forgets",
+          "text": "Iron is full of tiny magnets you cannot see. Every atom in it behaves like a minute bar magnet, with its own north and south. In a plain iron nail, these tiny magnets point in every direction at once. They cancel each other out, so the nail is not magnetic. Now stroke that nail with a strong magnet, always in the same direction. The tiny magnets inside start to line up. Once enough of them face the same way, their pulls add together instead of canceling, and the nail becomes a magnet. It will pick up paper clips. Drop it hard on the floor a few times, or hold it in a fire, and the tiny magnets get jostled out of line again. The nail forgets. Earth pulls the same trick on a giant scale. Deep beneath the crust, the outer core is an ocean of liquid iron, hot enough to glow but under such crushing pressure that it churns instead of boiling away. That moving metal generates a magnetic field that reaches far out into space. A compass needle simply lines up with it. The field does more than steer ships. The Sun throws out a constant stream of charged particles, and Earth's magnetic field deflects most of them around the planet. The few that slip through near the poles crash into the air high above and make it glow, which is what the northern lights are."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why is a plain iron nail not magnetic, even though it is full of tiny magnets?",
+            "Describe two different ways to make a magnet forget.",
+            "The passage says Earth pulls the same trick on a giant scale. What is the trick, and what is different about Earth's version?",
+            "Why would life on Earth be harder if the outer core stopped churning?"
+          ],
+          "rows": 2,
+          "answers": [
+            "its tiny magnets point every direction and cancel each other out",
+            "drop it hard on the floor, or hold it in a fire",
+            "(making iron magnetic; Earth's version is generated by moving liquid iron, not by stroking)",
+            "(inference: no field, so nothing would deflect the Sun's charged particles)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Magnetism comes from tiny magnets lining up, in a nail and in Earth's core alike",
+            "Iron nails are the best material for building houses",
+            "The Sun is slowly running out of charged particles"
+          ],
+          "answers": ["Magnetism comes from tiny magnets lining up, in a nail and in Earth's core alike"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["cancel (each other out) → ____", "generates → ____", "deflects → ____"],
+          "rows": 1,
+          "answers": ["pull in opposite directions so nothing is left over", "makes or produces", "turns aside, pushes off course"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how to turn an ordinary nail into a magnet, and how to turn it back. Explain what is happening inside the nail at each step.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Rock That Knows Which Way Is North",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-magnet", "templateLabel": "The Rock That Knows Which Way Is North", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "magnet",
+          "notes": ["Oersted, 1820: an electric current makes magnetism", "Faraday, 1831: a moving magnet makes electricity", "Nearly all electricity is made by spinning magnets", "A motor is a generator run backward", "Neodymium magnets, invented in 1982, are the strongest", "Magnetism is what moving electric charge looks like"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Twitch That Built the Modern World",
+          "text": "For most of history, magnetism was a curiosity. A lodestone could drag a nail across a table and point a ship toward home, and that was about the end of it. Nobody suspected it had anything to do with electricity. That changed in 1820, during a lecture. A Danish professor named Hans Christian Oersted was demonstrating an electric current when he noticed that a compass needle sitting nearby twitched every time he switched the current on. It swung sideways, not toward the wire. Oersted had stumbled onto something enormous: an electric current makes a magnetic field, and the field wraps around the wire in circles. Electricity and magnetism were not two separate mysteries. They were one. Eleven years later, Michael Faraday ran the discovery backward. If a current could make magnetism, could magnetism make a current? He wound wire into a coil and pushed a bar magnet through it. The needle on his meter jumped, but only while the magnet was moving. Hold it still and the current died. Motion was the missing ingredient. That is a small result with a very long shadow. Almost all the electricity in your house was made by Faraday's trick. A power plant does not create energy out of nothing. It boils water, or catches wind, or drops river water through a turbine, and every bit of that effort goes into one job: spinning magnets past coils of wire. Coal, gas, nuclear fuel, and wind turbines differ only in how they turn the shaft. Run the same machine in reverse and you have an electric motor. Feed current into coils near magnets and the push between them turns the shaft instead. The fan, the drill, the blender, the electric car, the hard drive that stored your photos, the speaker vibrating in your headphones right now: all magnets, all doing the same fundamental thing. Look closer and the two ideas collapse into one. A magnetic field is simply what moving electric charge looks like, and inside iron the charge that moves is the electrons themselves, spinning in place. Every magnet on your refrigerator is, in a sense, a very small and very patient electric current that has been running since the atom formed."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did Oersted notice, and why was a sideways twitch such a big deal?",
+            "Explain what Faraday added to Oersted's discovery. Quote the phrase the passage uses to name the necessary condition.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage calls Faraday's result a small result with a very long shadow. Explain what that means."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering Oersted, Faraday, and magnets running modern machines)",
+            "a compass needle twitched when he switched on a current; it showed electricity and magnetism are one thing",
+            "moving magnetism makes current; quote: Motion was the missing ingredient",
+            "(inform, with detail: it explains and dates discoveries; it also has a persuasive closing flourish)",
+            "(a tiny lab observation turned into every generator and motor in the world)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["curiosity → ____", "demonstrating → ____", "fundamental → ____", "shaft → ____"],
+          "rows": 1,
+          "answers": ["an odd thing that is interesting but not useful", "showing how something works to an audience", "basic, underlying, at the root of it", "the turning rod inside a machine"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says power plants differ only in how they turn the shaft. What does that reveal about the argument over energy sources?",
+            "Why does it matter that Faraday's needle only jumped while the magnet was moving?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the electricity is generated identically; the argument is really about how you spin the shaft)",
+            "(inference: change, not the magnet itself, makes current; a still magnet does nothing)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was Oersted's twitching needle luck or skill? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Rock That Knows Which Way Is North",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-magnet", "templateLabel": "The Rock That Knows Which Way Is North", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "magnet",
+          "notes": ["Earth's outer core: liquid iron, about 1,800 miles down", "Gilbert's terrella, 1600: the Earth itself is a magnet", "The field has flipped hundreds of times", "Last full reversal: about 780,000 years ago", "Seafloor magnetic stripes proved continents move", "Mars lost its dynamo, then lost its air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Field We Live Inside",
+          "text": "Hold a compass and you are running an experiment on the entire planet. The needle is a small magnet, free to swing, and it settles along a field generated roughly 1,800 miles beneath your shoes. Nothing about that is obvious, and for most of human history nobody understood it. Sailors used the compass for four hundred years before anyone could say what it was pointing at. The first serious answer came from William Gilbert, physician to Queen Elizabeth I. In 1600 he carved a sphere out of lodestone, called it a terrella, or little Earth, and walked a small compass across its surface. The needle behaved exactly as ships' compasses behaved on the ocean, dipping steeply near the poles and lying flat near the equator. Gilbert drew the obvious conclusion and published it: the Earth itself is a magnet. He was right, and his reasoning was sound, but his mechanism was wrong. He assumed the core was a colossal lodestone. It cannot be. Iron loses its magnetism above about 1,418 degrees Fahrenheit, and Earth's core is several times hotter than that. A permanent magnet could not survive down there for a single day. The field must therefore be generated continuously, and it is. The outer core is an ocean of liquid iron and nickel roughly 1,400 miles thick, stirred by heat rising from below and twisted by the planet's rotation. Moving metal carries electric current, current makes magnetism, and that magnetism helps steer the very flow that produces it. The whole arrangement feeds on itself. Geologists call it the geodynamo, and it has been running, with interruptions, for billions of years. Those interruptions are the strangest part of the story. Every few hundred thousand years, on no fixed schedule, the field weakens, wanders, and flips. North becomes south. We know this because lava remembers. When molten rock cools and hardens, the magnetic minerals inside it freeze into alignment with whatever field is present at that moment, locking in a record that outlasts everyone who might have doubted it. In the 1960s, ships towing magnetometers across the Atlantic found that the seafloor was striped: bands of rock magnetized north, then south, then north again, running parallel to the mid-ocean ridge and mirrored on both sides of it. New crust was welling up at the ridge, taking a snapshot of the field as it cooled, and spreading outward in two directions like a pair of tape recorders. Those stripes did not merely confirm that the field reverses. They proved that continents move, an idea still unfashionable at the time. The field is not steady even now. Magnetic north has drifted out of Arctic Canada and is heading for Siberia at speeds that have reached 30 miles per year, fast enough that navigation systems must be corrected on a schedule. The last full reversal was about 780,000 years ago, which makes the current calm interval long by historical standards. None of this would matter much if the field were only a navigation aid. It is also a shield. The Sun blows a thin, fast wind of charged particles across the solar system, and Earth's field turns most of it aside, forming a teardrop-shaped bubble called the magnetosphere that streams out for hundreds of thousands of miles on the night side. Particles that leak in near the poles collide with the upper atmosphere and make it glow, which is the aurora. Mars, whose dynamo shut down billions of years ago, has no such bubble, and the solar wind has been stripping its air away ever since. The difference between a living planet and a dry one may come down to whether the iron in its heart is still moving."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage says Gilbert was right but his mechanism was wrong. Explain both halves, and quote the sentence stating his conclusion.",
+            "How does the passage prove the field reverses? Cite the exact phrase it uses to explain why rock keeps a record.",
+            "Identify where the passage turns from describing the field to arguing that it matters. Quote the sentence and explain the move.",
+            "Analyze the final sentence. What claim is it making, and does the Mars evidence earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(right: the planet is magnetic; wrong: he thought the core was a permanent lodestone, impossible at that heat; quote: the Earth itself is a magnet)",
+            "(cooling lava locks in the field direction, and Atlantic seafloor stripes alternate; quote: lava remembers)",
+            "(quote: It is also a shield. A short sentence pivots the passage from description to stakes)",
+            "(claim: a planet's habitability depends on a churning core; Mars is one case, suggestive but not proof, and the passage hedges with may come down to)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["terrella → ____", "geodynamo → ____", "magnetosphere → ____", "unfashionable → ____"],
+          "rows": 2,
+          "answers": [
+            "a small model Earth carved from lodestone",
+            "the self-sustaining field generated by churning liquid metal in a planet's core",
+            "the bubble of magnetic field that shields a planet from the solar wind",
+            "not accepted or taken seriously at the time"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the geodynamo feeds on itself. Explain why a field that helps steer the flow producing it might be unstable enough to flip.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a loop that drives its own cause can amplify small changes, so the pattern need not stay steady)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Gilbert should be remembered as wrong, because he named the right answer for the wrong reason. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

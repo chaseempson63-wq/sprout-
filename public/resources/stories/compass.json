@@ -1,0 +1,319 @@
+{
+  "key": "compass",
+  "title": "The Needle That Knows Which Way Is North",
+  "blurb": "A magnetized needle, a planet full of churning iron, and the small tool that let people cross oceans without seeing the sky.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Needle That Knows Which Way Is North",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-compass", "templateLabel": "The Needle That Knows Which Way Is North", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the little needle." },
+        {
+          "kind": "image",
+          "imageKey": "compass",
+          "notes": ["The needle is a tiny magnet", "It always points north", "Sailors use one on the sea", "The letters are N, E, S, W"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a compass. It helps you find your way. Inside is a little needle. The needle can spin. It always turns the same way. It points north. North is that way, no matter where you stand. Sailors used a compass on big boats. Walkers use one in the woods. If you get lost, the needle still knows."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the compasses in each row. Write how many in the box.",
+          "emoji": "🧭",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "north    spin" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each tool to its job.",
+          "pairs": [
+            { "left": "compass", "right": "which way" },
+            { "left": "clock", "right": "the time" },
+            { "left": "ruler", "right": "how long" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own compass. Put a big N at the top for north.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Needle That Knows Which Way Is North",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-compass", "templateLabel": "The Needle That Knows Which Way Is North", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "compass",
+          "notes": ["The needle is a magnet", "Earth is a giant magnet too", "N stands for north", "It works in the dark", "It needs no batteries"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Needle That Knows Which Way Is North",
+          "text": "A compass has one job. It shows you which way is north. The trick is hidden inside. The needle is a magnet. It is painted red on one end. Earth is a giant magnet too. The needle feels Earth pulling on it, so it swings until it lines up. Then it stops and points north. It does this in the dark. It does this in the fog. It does this in the middle of the ocean, where every wave looks the same. Turn the compass around and the needle does not care. It swings right back to north."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the one job of a compass?", "What is the needle made of?", "What happens if you turn the compass around?"],
+          "rows": 2,
+          "answers": ["it shows you which way is north", "it is a magnet", "the needle swings right back to north"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A compass shows you which way is ____.", "The needle inside is a small ____.", "One end of the needle is painted ____.", "A compass still works in the ____."],
+          "wordBank": ["north", "magnet", "red", "dark"],
+          "answers": ["north", "magnet", "red", "dark"]
+        },
+        { "kind": "draw", "prompt": "Draw yourself holding a compass in the woods. Show which way is north.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Needle That Knows Which Way Is North",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-compass", "templateLabel": "The Needle That Knows Which Way Is North", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "compass",
+          "notes": ["The needle is a small magnet", "Earth's iron core makes a magnetic field", "The first compasses were made in China", "Lodestone is a rock that is magnetic on its own", "A compass works with no power at all"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Compass Finds North",
+          "text": "Deep inside Earth, far below the ground you walk on, there is a ball of iron. Some of it is solid and some of it is melted, and the melted part is always moving. All that moving metal turns our planet into a giant magnet. You cannot see it or feel it, but it is there, wrapped around the whole world. A compass needle is a small magnet too. It sits on a sharp point so it can spin freely. Because magnets pull on other magnets, the needle swings until it lines up with Earth's field. One end settles pointing north. The other end points south. Then it stops, and it stays that way until you move it. The first compasses were made in China more than two thousand years ago. They were not for travel. People carved a spoon out of lodestone, a rock that is magnetic all by itself, and spun it on a smooth board to help make decisions. Hundreds of years later, sailors figured out the better use. With a needle, a ship could keep going the right way even when clouds hid the sun and the stars."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is deep inside Earth, and what does it turn our planet into?",
+            "Why can the compass needle swing around so easily?",
+            "What were the first compasses in China used for?",
+            "Why do you think a compass was so useful to sailors on a cloudy night?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a ball of iron, partly melted and moving; it turns the planet into a giant magnet",
+            "it sits on a sharp point so it can spin freely",
+            "they were spun on a board to help make decisions, not for travel",
+            "(inference: with no sun or stars to steer by, the needle still showed north)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Compass Finds North", "The Best Boats in China", "How to Draw a Map of the Woods"],
+          "answers": ["How a Compass Finds North"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The ball deep inside Earth is made of ____.", "Lodestone is a rock that is ____ all by itself.", "The first compasses were made in ____."],
+          "wordBank": ["iron", "magnetic", "China"],
+          "answers": ["iron", "magnetic", "China"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: where would you take a compass, and what would you use it for?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Needle That Knows Which Way Is North",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-compass", "templateLabel": "The Needle That Knows Which Way Is North", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "compass",
+          "notes": ["Earth's magnetic field comes from molten iron", "The needle points to magnetic north, not the North Pole", "Magnetic north moves a little every year", "Declination is the gap between true north and magnetic north", "The oldest compasses were lodestone spoons", "A compass works in fog, dark, and storm"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Needle Lies a Little",
+          "text": "A compass looks simple. A needle, a dial, a ring of letters. What it is actually doing is reading a machine the size of a planet. About eighteen hundred miles beneath your feet, Earth's outer core is molten iron, hot enough to glow and heavy enough to sink. That liquid metal churns and swirls as the planet spins, and moving metal makes a magnetic field. Scientists call the whole arrangement the geodynamo. Its field reaches out through the rock, past the ocean, and into space, and your compass needle is small enough and free enough to feel it. Here is the part that surprises people. Your compass does not point to the North Pole. It points to the magnetic north pole, which is a different place, and that place will not sit still. It has been wandering across the Arctic for as long as anyone has measured it, drifting out of northern Canada and heading toward Siberia, some years by more than twenty five miles. Mapmakers have to keep up. The gap between true north and magnetic north is called declination, and it changes depending on where you stand. In Maine the needle leans west of true north. In Oregon it leans east. Somewhere in between there is a line where the needle happens to be right, and even that line slides across the country over time. So a compass is honest but not exact. Every serious navigator learns the same lesson: trust the needle, then correct it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, how does Earth end up with a magnetic field?",
+            "Explain the difference between the North Pole and the magnetic north pole.",
+            "The passage says mapmakers have to keep up. Keep up with what, and why?",
+            "Why do you think the author says a compass is honest but not exact?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(molten iron in the outer core churns as the planet spins, and moving metal makes a magnetic field)",
+            "the North Pole is a fixed place on the map; the magnetic north pole is where the needle points, and it moves",
+            "(the magnetic pole keeps drifting, so printed declination goes out of date)",
+            "(inference: it truly reports the field, but the field is not lined up with true north)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A compass reads Earth's moving magnetic field, so it points near north rather than exactly at it",
+            "Compasses are broken and should not be trusted by hikers",
+            "The state of Oregon has the best magnets in the country"
+          ],
+          "answers": ["A compass reads Earth's moving magnetic field, so it points near north rather than exactly at it"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["molten → ____", "geodynamo → ____", "declination → ____"],
+          "rows": 1,
+          "answers": [
+            "melted into a liquid by heat",
+            "the churning liquid metal in Earth's core that makes the magnetic field",
+            "the angle between true north and the north the needle points to"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: a compass needs no batteries and no satellites, but it is never exactly right. Would you rather carry a compass or a phone into the woods? Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Needle That Knows Which Way Is North",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-compass", "templateLabel": "The Needle That Knows Which Way Is North", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "compass",
+          "notes": ["The geodynamo: churning liquid iron in Earth's outer core", "Magnetic north is not true north", "Declination changes with place and with year", "The field dips, so needles are balanced by zone", "Earth's field has reversed hundreds of times", "Sea turtles and robins sense the field with no needle"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine at the Center of the World",
+          "text": "Pick up a compass and you are holding one end of a conversation. The other end is roughly two thousand miles below you, and it is made of liquid iron. Earth's outer core is a shell of molten metal wrapped around a solid inner core. It is under crushing pressure and it never stops moving. Heat rising from below, the planet's spin, and the slow freezing of the inner core all stir it, and because iron carries electric current, that churning generates a magnetic field. Physicists call the process the geodynamo. The field it produces leaks out through eighteen hundred miles of rock, spreads around the planet, and keeps going far into space, where it deflects the stream of charged particles the sun throws at us. Your compass needle, floating in its little pool of fluid, is reading the edge of that machine. The reading comes with conditions. First, magnetic north is not true north, and the difference, called declination, is different in every place and changes every year. Second, the field does not lie flat. It dives into the ground, steeply near the poles and gently near the equator, so compass needles are weighted by region to keep them level. Take a compass made for Alaska down to Ecuador and the needle will tilt and drag. Third, the needle answers any magnet, not just the planet. A phone, a speaker, a steel belt buckle, an engine block: hold any of them close and the needle will happily point at the wrong thing. Steel ships were such a problem that navigators bolted iron balls beside the compass to cancel the ship's own pull. And the field itself is not permanent. Iron grains locked in ancient lava record the direction the field faced when the rock cooled, and those records show something startling. The field has reversed hundreds of times. North and south trade places. The last full flip was about seven hundred and eighty thousand years ago. It will happen again, though nobody can say when. Humans built a needle to read this field. Other animals did not have to. Sea turtles, robins, and salmon all appear to sense it directly, using it to find beaches and rivers they have not visited in years. We invented the compass. They were born with one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the three forces the passage says stir Earth's outer core.",
+            "Explain what declination is and why a compass user has to look it up rather than memorize it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the author doing with the last two sentences, and why put them last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the geodynamo + the compass's three limits + magnetic reversal)",
+            "heat rising from below, the planet's spin, and the slow freezing of the inner core",
+            "(it is the gap between magnetic north and true north; it differs in every place and changes every year)",
+            "(inform, with detail: it defines terms and gives measured facts; some playful voice, especially at the end)",
+            "(it contrasts our invented tool with built-in animal senses; it ends there to leave the reader with the comparison)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["geodynamo → ____", "declination → ____", "deflects → ____", "permanent → ____"],
+          "rows": 1,
+          "answers": [
+            "the process where churning liquid metal in Earth's core generates a magnetic field",
+            "the difference between magnetic north and true north at a given place",
+            "turns aside, pushes off course",
+            "lasting forever without changing"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says compass needles are weighted by region. Explain why a compass built for Alaska struggles at the equator.",
+            "Ancient lava recorded which way the field faced. Explain how that gives scientists a record of reversals they never watched happen."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the field dips steeply near the poles and gently at the equator, so a needle balanced for one dip tilts and drags in the other)",
+            "(inference: iron grains lock in the field direction as rock cools, so each layer is a dated snapshot)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: now that phones can show you north, is the compass worth learning? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Needle That Knows Which Way Is North",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-compass", "templateLabel": "The Needle That Knows Which Way Is North", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "compass",
+          "notes": ["Outer core: liquid iron and nickel, about 1,800 miles down", "Geodynamo: moving metal makes a self-sustaining field", "Magnetic north has raced toward Siberia since the 1990s", "Declination differs at every point and every year", "Last full magnetic reversal: about 780,000 years ago", "Song dynasty sailors floated a needle in a bowl of water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Honest Lie: What a Compass Is Actually Telling You",
+          "text": "Every compass tells a small lie, and every good navigator knows it. That is not a flaw in the tool. It is a fact about the planet. Start underneath. About eighteen hundred miles below your shoes, the rock gives way to Earth's outer core: a shell of liquid iron and nickel at temperatures approaching those at the surface of the sun, wrapped around a solid inner core roughly the size of Pluto. That liquid never rests. Heat escapes upward, the inner core slowly freezes and releases lighter material, and the planet's rotation twists the whole flow into columns. Moving metal carries electric current, electric current makes magnetism, and magnetism in a spinning conductor sustains itself. The arrangement is called the geodynamo, and it is the only reason a compass has anything to talk to. The field it throws off surrounds the planet and extends tens of thousands of miles into space, where it turns aside the charged particles streaming off the sun. Without it, that stream would have stripped away much of our atmosphere long ago. The needle in your hand is reading the far edge of a self-sustaining engine you will never see. Now the lie. The needle does not point at the North Pole. It points at the magnetic north pole, and the two are hundreds of miles apart. Worse, the magnetic pole moves. Through most of the twentieth century it crept across Arctic Canada at roughly nine miles a year. Then, around the 1990s, it accelerated past thirty, sprinting toward Siberia so quickly that the agencies who publish the world magnetic model issued an early update in 2019, ahead of the scheduled release, because aircraft and phones were leaning on numbers already going stale. The angle between true north and magnetic north is called declination. It is different at every point on Earth, and different every year at the same point. This is why a topographic map prints a declination diagram in its margin, and why the number printed there has an expiration date. The complications compound. Earth's field does not run flat along the ground. It dips into it, nearly vertical near the poles, nearly horizontal at the equator, so manufacturers counterweight needles for particular latitude zones. A compass bought in Norway sulks in Peru. The needle also cannot tell your planet from your pocket: speakers, phones, car doors, and the steel bars inside concrete all pull on it. Iron ships pulled so hard that navigators mounted spheres of soft iron on either side of the compass housing to cancel the vessel's own magnetism, and sailors still call those spheres Kelvin's balls. And the field is not even loyal. Lava cools with its iron grains frozen in the direction the field faced that day, which hands geologists a written record going back millions of years. It says the poles have swapped hundreds of times. The last complete reversal was about 780,000 years ago. During a flip the field weakens, wanders, and may briefly show several poles at once. Any compass alive for that would be worthless. So why do we still trust it? Because a compass is honest about what it is doing. It reports the local field, always, in fog, in darkness, in a snowstorm, with no batteries and no satellites. Everything that makes it inexact is knowable and correctable. You look up your declination. You buy the right zone. You keep the steel away. A satellite receiver is more precise and less trustworthy, because when it fails it can fail silently. The compass never pretends. It just requires you to know something. That was true for a Song dynasty sailor watching a magnetized needle float on a bowl of water nine hundred years ago, and it is true for a hiker on a ridge tonight."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage opens by calling the compass a liar and closes by calling it honest. Explain how both are true. Cite one exact phrase from each end of the passage.",
+            "Explain the geodynamo in your own words, then cite the exact sentence that says why it matters to a compass.",
+            "The author writes that a compass bought in Norway sulks in Peru. Explain the science behind that sentence and why the author chose that wording.",
+            "Analyze the comparison to a satellite receiver. What is the author's argument, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it never points at true north, but it reports the real local field; cite: Every compass tells a small lie / cite: The compass never pretends)",
+            "(churning liquid metal in the core generates a self-sustaining magnetic field; cite: it is the only reason a compass has anything to talk to)",
+            "(the field dips at different angles by latitude, so zone-weighted needles drag outside their zone; sulks makes the instrument sound stubborn rather than broken)",
+            "(argument: precision matters less than predictable failure; supported by the batteries, satellites, and correctable-error evidence, though the passage gives no example of a receiver failing)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["geodynamo → ____", "declination → ____", "counterweight → ____", "compound (verb) → ____"],
+          "rows": 2,
+          "answers": [
+            "the self-sustaining magnetic field produced by moving liquid metal in Earth's core",
+            "the angle between true north and the direction a compass needle points",
+            "to add weight to one side to keep something balanced",
+            "to build up and make each other worse"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the number on a map has an expiration date. Explain what that reveals about the difference between a fact and a measurement.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a measurement is true of a moment; the pole keeps moving, so the printed angle decays while the method stays valid)",
+            "(student question + a credible source type, such as a geophysics agency or a peer-reviewed journal)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A tool that is never exactly right is not worth carrying. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

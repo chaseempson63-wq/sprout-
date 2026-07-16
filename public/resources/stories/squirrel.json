@@ -1,0 +1,320 @@
+{
+  "key": "squirrel",
+  "title": "The Squirrel That Plants a Forest by Forgetting",
+  "blurb": "The nut-burying neighbor that remembers thousands of hiding places, fakes a few, and grows oak trees by accident.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Squirrel That Plants a Forest by Forgetting",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-squirrel", "templateLabel": "The Squirrel That Plants a Forest by Forgetting", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the squirrel's tail." },
+        {
+          "kind": "image",
+          "imageKey": "squirrel",
+          "notes": ["It has a big fluffy tail", "It lives up in the trees", "It hides nuts in the ground", "It can run down a tree head first"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a squirrel. It has a big fluffy tail. The squirrel runs up the tree. It runs down the tree. It finds a nut. It digs a little hole. It puts the nut in the hole. It pats the dirt down. Now the nut is hidden. The squirrel flicks its tail and runs away."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the nuts in each row. Write how many in the box.",
+          "emoji": "🌰",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "nut    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its home.",
+          "pairs": [
+            { "left": "squirrel", "right": "tree" },
+            { "left": "fish", "right": "pond" },
+            { "left": "dog", "right": "house" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a squirrel with a nut. Give it a big fluffy tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Squirrel That Plants a Forest by Forgetting",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-squirrel", "templateLabel": "The Squirrel That Plants a Forest by Forgetting", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "squirrel",
+          "notes": ["Its tail works like an umbrella", "Its back feet spin around backward", "It buries nuts for winter", "It does not sleep all winter", "A squirrel nest is called a drey"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tail and the Nut",
+          "text": "A squirrel's tail is not just fluffy. It helps the squirrel balance on a thin branch. It works like an umbrella in the rain. It wraps around the squirrel like a blanket when it sleeps. A squirrel can climb down a tree head first. Most animals cannot do that. The squirrel's back feet turn all the way around, so its claws point up and hook onto the bark. In the fall, the squirrel buries nuts to eat in winter. It hides them one at a time, all over the yard."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does the tail do in the rain?", "Which way does a squirrel climb down a tree?", "When does the squirrel bury its nuts?"],
+          "rows": 2,
+          "answers": ["it works like an umbrella", "head first", "in the fall"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The tail helps the squirrel ____ on a branch.", "The squirrel climbs down the tree ____ first.", "Its back ____ turn all the way around.", "It buries nuts to eat in the ____."],
+          "wordBank": ["balance", "head", "feet", "winter"],
+          "answers": ["balance", "head", "feet", "winter"]
+        },
+        { "kind": "draw", "prompt": "Draw a squirrel climbing down a tree head first. Add the nut it is carrying.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Squirrel That Plants a Forest by Forgetting",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-squirrel", "templateLabel": "The Squirrel That Plants a Forest by Forgetting", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "squirrel",
+          "notes": ["A gray squirrel buries thousands of nuts", "It remembers by using landmarks", "The nuts it misses grow into trees", "It can smell a nut under snow", "Squirrel means shadow tail in Greek"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Gardener Who Never Meant To",
+          "text": "Watch a squirrel in the fall and you will see it working. It picks up a nut, turns it over in its paws, and runs off with it. It digs a small hole, drops the nut in, pushes the dirt back, and pats it down. Then it does it again. And again. Before winter arrives, a gray squirrel may bury a few thousand nuts, one at a time, all over the yard. How does it ever find them? For a long time, people thought squirrels just sniffed around and got lucky. Then scientists tested it. A squirrel remembers where its own nuts are. It steers by landmarks, like a stump or a rock or a fence post, the same way you know which house on the street is yours. Its nose helps too, especially under snow. Even so, the squirrel never digs up all of them. The nuts it misses sit in the ground all winter. In the spring, some of them sprout. That is how a squirrel plants trees without meaning to. Many of the oaks in a park were put there by an animal that forgot."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does the squirrel do after it drops the nut in the hole?",
+            "How does a squirrel find the nuts it buried?",
+            "What happens to the nuts the squirrel never digs up?",
+            "Why do you think a squirrel buries its nuts in many small holes instead of one big pile?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it pushes the dirt back and pats it down",
+            "it remembers by using landmarks, and its nose helps too",
+            "some of them sprout in the spring and grow into trees",
+            "(inference: one pile could all be stolen at once, so spreading them out is safer)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Gardener Who Never Meant To", "How to Build a Bird Feeder", "The Tallest Tree in the Park"],
+          "answers": ["The Gardener Who Never Meant To"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A gray squirrel may bury a few ____ nuts before winter.", "It steers back to its nuts by using ____.", "In the spring, some buried nuts ____."],
+          "wordBank": ["thousand", "landmarks", "sprout"],
+          "answers": ["thousand", "landmarks", "sprout"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: is the squirrel really forgetful, or is it just busy? Say what you think and why.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Squirrel That Plants a Forest by Forgetting",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-squirrel", "templateLabel": "The Squirrel That Plants a Forest by Forgetting", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "squirrel",
+          "notes": ["Tree squirrels do not hibernate", "Scatter hoarding: one nut per hole", "They sort their stores by nut type", "They fake burials when watched", "Their front teeth never stop growing", "Ankles rotate so they descend head first"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Squirrel's Secret System",
+          "text": "A squirrel in the fall looks like it is in a hurry, and it is. Tree squirrels do not hibernate. They stay awake through the whole winter, when there is almost nothing left to eat, so everything they will need has to be hidden before the cold arrives. Here is the odd part. A squirrel does not build one big pantry. It buries its nuts one at a time, in hundreds and hundreds of separate holes, spread all over its territory. Scientists call this scatter hoarding. It sounds careless. It is actually clever. If a squirrel kept everything in one pile, a single thief could clear it out in an afternoon. Scattered nuts have to be stolen one by one. But scattering only works if the squirrel can find its way back, and it can. Squirrels remember their hiding places by using landmarks, a stump, a rock, a fence post, and they seem to sort their nuts by type, keeping the hickory nuts in one area and the acorns in another. That way, hunting for a hickory nut means searching part of the yard instead of all of it. Their noses fill in the gaps, and a squirrel can smell a nut buried under snow. Squirrels also lie. If one notices another squirrel watching, it may dig a hole, drop nothing into it, push the dirt back, and pat it flat, then hurry off with the nut still in its mouth. The watcher digs up an empty hole. The nut is somewhere else entirely. And a squirrel that hides food still has to open it. Its front teeth never stop growing, so gnawing has to wear them down as fast as they grow. That is why a squirrel always seems to be chewing on something."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why does a squirrel have to hide food before the cold arrives?",
+            "What is scatter hoarding, and why does the passage call it clever instead of careless?",
+            "Explain how sorting nuts by type makes a squirrel's search easier.",
+            "The passage says squirrels lie. What is a fake burial actually for, and what does it tell you about squirrels living near each other?"
+          ],
+          "rows": 2,
+          "answers": [
+            "tree squirrels do not hibernate, and there is almost nothing to eat in winter",
+            "burying nuts one at a time in many separate holes; a single thief cannot clear out a scattered store the way it could clear out one pile",
+            "it only has to search the part of its territory holding that kind of nut, not the whole territory",
+            "(inference: it misleads a watching thief; squirrels must rob each other often enough to be worth deceiving)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A squirrel's scattered nut-hiding looks messy but is a careful system built on memory and trickery",
+            "Squirrels are the only animals that eat nuts",
+            "Squirrels sleep through the entire winter"
+          ],
+          "answers": ["A squirrel's scattered nut-hiding looks messy but is a careful system built on memory and trickery"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["hibernate → ____", "scatter hoarding → ____", "territory → ____", "landmark → ____"],
+          "rows": 1,
+          "answers": [
+            "to sleep through the winter instead of staying active",
+            "storing food one piece at a time across many separate hiding places",
+            "the area an animal lives in and treats as its own",
+            "a fixed thing you use to find your way, like a stump or a fence post"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: a squirrel spends fall hiding food it may never find again. Is that a good plan or a wasteful one? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Squirrel That Plants a Forest by Forgetting",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-squirrel", "templateLabel": "The Squirrel That Plants a Forest by Forgetting", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "squirrel",
+          "notes": ["Sciurus carolinensis, the eastern gray squirrel", "Scatter hoarding across a territory of several acres", "Red squirrels do the opposite: one guarded pile", "Relocation by landmarks, not scent alone", "Spatial chunking: stores sorted by nut type", "Skiouros, Greek for shadow tail"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Memory Made of Maps",
+          "text": "In September, a gray squirrel starts working like it has a deadline, because it does. It will not hibernate. Tree squirrels stay awake all winter, and a winter forest offers almost nothing to eat. Everything the animal needs between November and March has to go into the ground before the ground freezes. So it buries. One nut at a time, in a shallow hole, spread across a territory that can cover several acres. Biologists call this scatter hoarding, and it is a strange choice. Plenty of animals do the opposite. A red squirrel builds a single pantry, piling cones into one great heap and defending the heap all winter. A gray squirrel spreads its entire future across thousands of holes and guards none of them. The logic is insurance. A guarded pantry is one bad afternoon away from ruin, because a thief that finds it finds everything. Thousands of scattered nuts cannot be taken all at once. Each one has to be found separately, and finding is expensive. The cost of that strategy is memory. A squirrel that cannot relocate its own caches has simply thrown its winter away. For years, people assumed squirrels wandered until they smelled something and got lucky. Then researchers tested it directly. The squirrels recovered their own caches far more often than chance would allow, and more often than they found caches other squirrels had buried. They were not sniffing at random. They were remembering. They navigate by landmarks, a stump, a fence post, the angle between two trees, the same way you find your own front door without reading the number on it. There is evidence they organize as well as remember. Watch closely and a squirrel appears to sort by kind, filing hickory nuts in one region of its territory and acorns in another. Researchers call this spatial chunking. It is what you are doing when you keep socks in one drawer and shirts in another, and it means a squirrel hunting for a hickory nut searches one part of its map instead of the whole thing. Smell fills in the rest. A squirrel can locate a nut under a foot of snow by scent alone, which is why a damp, cold day is a good digging day and a frozen one is not. None of it works perfectly. The squirrel misses some. Those become trees."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Contrast the red squirrel's strategy with the gray squirrel's. What does each one risk?",
+            "The passage says scatter hoarding has a cost. Explain the cost and quote the phrase the passage uses for it.",
+            "What evidence does the passage give that squirrels remember rather than sniff at random?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering scatter hoarding + memory + accidental tree planting)",
+            "the red squirrel guards one pile and risks losing everything at once; the gray squirrel spreads its stores and risks losing track of them",
+            "the cost is memory; quote: The cost of that strategy is memory",
+            "they recovered their own caches more often than chance and more often than other squirrels' caches",
+            "(inform, with details: it defines scatter hoarding and spatial chunking and reports research findings, though the closing lines lean toward entertaining)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["cache → ____", "relocate → ____", "spatial chunking → ____", "insurance → ____"],
+          "rows": 1,
+          "answers": [
+            "a hidden store of food",
+            "to find something again and return to it",
+            "sorting stored items by kind so each search covers a smaller area",
+            "accepting a small steady cost to protect against one large loss"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage ends with four short words about the nuts a squirrel misses. Explain why the author saves that for last.",
+            "A red squirrel guards one pile; a gray squirrel guards nothing. What would have to be true about a forest for the red squirrel's plan to be the better one?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the squirrel's failure is the forest's gain, so the ending reframes forgetting as useful rather than careless)",
+            "(inference: food concentrated in one place, or few rivals, or a territory small enough for one animal to defend)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does it make sense to call a squirrel forgetful when its misses are what grow the forest? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Squirrel That Plants a Forest by Forgetting",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-squirrel", "templateLabel": "The Squirrel That Plants a Forest by Forgetting", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "squirrel",
+          "notes": ["Oaks pay squirrels in fat and starch to move their seeds", "Red oak acorns are high in bitter tannins", "White oak acorns sprout in fall; red oak acorns wait for spring", "Squirrels bite the embryo out of white oak acorns before caching", "Deceptive caching: a faked burial for a watching thief", "Squirrels navigate back by landmarks and sort stores by type"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Squirrel and the Oak: An Argument in Slow Motion",
+          "text": "Every fall, a gray squirrel does a job it never agreed to. It gathers acorns, carries them away from the tree that made them, and buries them one by one across a territory that may run to several acres. It repeats this thousands of times. It believes it is feeding itself for winter. It is also, with no intention whatsoever, planting the forest. Consider the oak's problem. An oak cannot walk. If its acorns dropped and sprouted directly beneath it, its own offspring would spend their lives in its shade, crowded and starved of light, competing with their parent for the same water. The oak needs its seeds carried away, and it has no way to carry them. So it makes an offer. It packs each acorn with fat and starch, more than enough to be worth an animal's trouble, and releases thousands at once. Some get eaten immediately. Some get hauled off and buried, and the ones the squirrel never returns for are, from the tree's perspective, delivered. This is not a friendship. It is closer to a long argument, and both sides have spent millions of years sharpening their positions. Look at what an oak puts into an acorn besides food. Red oak acorns are loaded with tannins, bitter compounds that make them slow to eat and hard to digest. White oak acorns carry far less. You would expect a squirrel to prefer the sweeter white oak acorn, and it does. It eats those on the spot. The bitter red oak acorns it buries. That looks backward until you check the acorns' schedules. White oak acorns germinate almost immediately in fall. Bury one and by spring it is a seedling, which is no longer a meal. Red oak acorns wait until spring to sprout, so they keep in the ground all winter. The squirrel is not sorting by taste. It is sorting by shelf life. It eats what will spoil and banks what will keep. Then the squirrels pushed back. Researchers have watched gray squirrels take a white oak acorn, bite the embryo out of its tip, and bury what remains. An acorn without its embryo cannot sprout, so the squirrel has converted a perishable seed into a storable one. The tree loses that acorn completely. Its bribe has been accepted and its offspring discarded. There is also the matter of theft. A buried nut only pays off if the squirrel who buried it is the one who digs it up, and squirrels rob one another constantly. So a squirrel that senses it is being watched will sometimes perform the entire routine, dig, push, pat the soil flat, and stroll away with the nut still in its mouth. Biologists call this deceptive caching. The animal has staged a hiding place for an audience. To make any of this pay, the squirrel has to remember, and it largely does. It navigates back by landmarks rather than by scent alone, and it appears to file its stores by kind, hickories in one region, acorns in another, which shrinks each search. Its nose covers the gaps, even under snow. But no memory is perfect, and here is the point: it does not need to be. The nuts left in the ground are not the squirrel's failure. They are the oak's payment, and the only part of the bargain the tree ever actually wanted. So when you see a squirrel patting down a patch of dirt, understand what you are watching. Not a hoarder. A negotiation, conducted by an animal convinced it is winning."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the oak's problem and the offer it makes. Cite the phrase the passage uses for what an unretrieved acorn is, from the tree's point of view.",
+            "Why does a squirrel eat the sweeter acorn and bury the bitter one? Explain the reasoning the passage gives.",
+            "Explain what embryo excision accomplishes for the squirrel and what it costs the oak. Cite the sentence that states the cost.",
+            "The passage calls the relationship an argument rather than a friendship. Analyze whether the evidence in the passage earns that word, and identify the point where the author signals the argument going one way and then the other."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the oak cannot move its seeds and would shade its own offspring, so it bribes animals with fat and starch; cite: delivered)",
+            "white oak acorns sprout in fall and stop being food, while red oak acorns keep until spring; it eats what will spoil and banks what will keep",
+            "(removing the embryo stops the acorn sprouting, so a perishable seed becomes storable; cite: Its bribe has been accepted and its offspring discarded)",
+            "(yes: each side has a counter-move, the tannin and germination timing against the squirrel, embryo excision against the tree; signaled at Then the squirrels pushed back)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["tannins → ____", "germinate → ____", "perishable → ____", "deceptive caching → ____"],
+          "rows": 2,
+          "answers": [
+            "bitter compounds in some acorns that make them slow to eat and hard to digest",
+            "to sprout and begin growing into a seedling",
+            "likely to spoil or stop being usable after a short time",
+            "faking a burial so a watching thief digs up an empty hole"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the squirrel's memory does not need to be perfect. Explain why imperfect memory is better for the oak than perfect memory would be, and whether it hurts the squirrel.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(every unretrieved acorn is a planted tree, so oak reproduction depends on the misses; the squirrel loses little because it stores far more than it needs)",
+            "(student question + a credible source type, such as a field study or a wildlife biologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The squirrel is not the oak's partner, it is the oak's victim. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

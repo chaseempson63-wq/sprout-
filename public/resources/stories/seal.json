@@ -1,0 +1,328 @@
+{
+  "key": "seal",
+  "title": "The Seal That Sees With Its Whiskers",
+  "blurb": "A seal can chase a fish it never saw, by feeling the trail the fish left behind in the water.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Seal That Sees With Its Whiskers",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-seal", "templateLabel": "The Seal That Sees With Its Whiskers", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the seal's whiskers." },
+        {
+          "kind": "image",
+          "imageKey": "seal",
+          "notes": ["It lives in the cold sea", "It has whiskers on its face", "Its feet are flippers", "It wiggles on its belly on land", "It holds its breath a long time"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a seal. The seal lives in the cold sea. It has thick fur and big round eyes. Look at its whiskers. The whiskers can feel the water move. A fish swims by. The water wiggles. The seal feels the wiggle. Now the seal knows where the fish went. Down it goes. The seal swims fast. On land it has no feet for walking. It wiggles on its belly."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fish in each row. Write how many in the box.",
+          "emoji": "🐟",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "seal    swim" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "seal", "right": "the sea" },
+            { "left": "bird", "right": "the sky" },
+            { "left": "bear", "right": "the woods" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own seal. Do not forget the whiskers.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Seal That Sees With Its Whiskers",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-seal", "templateLabel": "The Seal That Sees With Its Whiskers", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "seal",
+          "notes": ["A seal is a mammal, like you", "It breathes air, so it must come up", "Blubber is the fat that keeps it warm", "It breathes out before it dives", "Its back flippers point the wrong way for walking"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Seal Takes a Deep Breath",
+          "text": "A seal is a mammal, like you. It breathes air. But a seal can stay under the water for a long, long time. Watch it before it dives. The seal breathes out. That looks wrong. You would fill your lungs up. The seal empties them instead. It keeps the air it needs in its blood, not in its chest. Then its heart slows down. Thump. Thump. Very slow. A harbor seal can stay under for almost half an hour. Under its skin is a thick layer of fat called blubber. The blubber keeps the seal warm in the cold sea. On land a seal cannot walk. Its back feet are flippers, and they point backward. So it humps along on its belly. It looks silly. It does not care."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a seal do just before it dives?", "Where does a seal keep the air it needs?", "What keeps a seal warm in the cold sea?"],
+          "rows": 2,
+          "answers": ["it breathes out", "in its blood", "blubber, the thick fat under its skin"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A seal is a ____, like you.", "The thick fat under its skin is called ____.", "When a seal dives, its ____ slows down.", "Its back feet are ____."],
+          "wordBank": ["mammal", "blubber", "heart", "flippers"],
+          "answers": ["mammal", "blubber", "heart", "flippers"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each body part to its job.",
+          "pairs": [
+            { "left": "blubber", "right": "keeps the seal warm" },
+            { "left": "flippers", "right": "push the seal through the water" },
+            { "left": "whiskers", "right": "feel the water move" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the seal under the water. Add some fish and some seaweed.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Seal That Sees With Its Whiskers",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-seal", "templateLabel": "The Seal That Sees With Its Whiskers", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "seal",
+          "notes": ["Its whiskers are wavy, not straight", "A swimming fish leaves a trail of swirls", "The trail lasts about half a minute", "A blindfolded seal can still follow it", "True seals have no ear flaps, just small holes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Whiskers That Follow a Ghost",
+          "text": "The sea is dark. Down deep, a seal can barely see its own flippers. So how does it ever find dinner? The answer is on its face. A seal's whiskers are not like a cat's. They are thick, and they are wavy, like a tiny row of ripples. When a fish swims past, it leaves a trail behind it in the water. The trail is a line of small swirls, and it hangs there for about half a minute after the fish has gone. You could never see that trail. A seal can feel it. Scientists tested this. They covered a harbor seal's eyes so it could not see, and put headphones over its ears so it could not hear. Then they sent a small machine swimming across the pool. The seal came along after it, whiskers out, and followed the trail the machine had left, turn for turn, all the way to the end. Think about what that means. A seal can track a fish it has never seen and never heard. It hunts a ghost, and it catches it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why are a seal's eyes not much help when it hunts deep down?",
+            "What does a swimming fish leave behind it in the water?",
+            "How did the scientists stop the seal from seeing and hearing?",
+            "Why do you think wavy whiskers work better than straight ones?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the deep sea is dark, so it can barely see",
+            "a trail of small swirls that lasts about half a minute",
+            "they covered its eyes and put headphones over its ears",
+            "(inference: the waves keep the whisker quiet so it can feel tiny movements)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Whiskers That Follow a Ghost", "How to Train a Seal to Balance a Ball", "The Deepest Ocean on Earth"],
+          "answers": ["The Whiskers That Follow a Ghost"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A seal's whiskers are thick and ____.", "A fish leaves a ____ of swirls behind it.", "The scientists tested a ____ seal."],
+          "wordBank": ["wavy", "trail", "harbor"],
+          "answers": ["wavy", "trail", "harbor"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you had whiskers that could feel the air move, what would you use them for?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Seal That Sees With Its Whiskers",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-seal", "templateLabel": "The Seal That Sees With Its Whiskers", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "seal",
+          "notes": ["A seal breathes out before it dives", "Myoglobin makes seal muscle almost black", "The diving reflex slows the heart right down", "Its spleen stores blood like a spare tank", "Harbor seal: about 30 minutes on one breath", "Elephant seal: 2 hours, and nearly a mile and a half down"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Breath, Two Hours",
+          "text": "Every seal that dives is running a countdown. It is a mammal. It breathes air, exactly as you do, and down where it is going there is none. Watch what a seal does just before it drops. It breathes out. That seems backward. A person about to dive fills their lungs as full as they will go. The seal empties them on purpose. Air squeezed under the pressure of deep water pushes nitrogen into the blood, and nitrogen in the blood is dangerous. Human divers get sick that way. So the seal takes its oxygen down somewhere safer: in its blood and in its muscles. A seal carries about twice as much blood for its size as a human does. Its muscles are loaded with a protein called myoglobin, which grabs oxygen and holds on to it. There is so much myoglobin in there that seal muscle is not pink. It is almost black. Then the diving reflex takes over. The seal's heart slows down until it is beating only a handful of times a minute. Blood vessels near the skin clamp shut, and the blood that is left goes to the two organs that cannot wait: the heart and the brain. The flippers and the gut are told to make do. There is one more reserve. A seal's spleen is enormous, and it holds a private store of blood already loaded with oxygen. As the dive begins, the spleen squeezes, and that hidden supply joins the rest. The seal has packed a spare tank inside itself. A harbor seal can stay under for about half an hour on that one breath out. An elephant seal can manage two hours, and take it nearly a mile and a half straight down."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain why a seal breathes out before diving, when a human diver would breathe in.",
+            "Why is seal muscle almost black instead of pink?",
+            "During a dive, some parts of the seal get blood and some do not. Explain how the body chooses.",
+            "The passage calls the spleen a spare tank. Why is that a good way to describe it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "pressure would push nitrogen from lung air into its blood, which is dangerous; it stores oxygen in blood and muscle instead",
+            "it is packed with myoglobin, the protein that holds oxygen",
+            "(inference: the heart and brain cannot wait, so vessels near the skin shut and blood is saved for them)",
+            "(it holds a hidden supply of oxygen-rich blood and releases it when the dive starts)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A seal's whole body is rebuilt to make one breath of air last an astonishing time",
+            "Seals are better swimmers than fish",
+            "Human divers should never go into deep water"
+          ],
+          "answers": ["A seal's whole body is rebuilt to make one breath of air last an astonishing time"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["myoglobin → ____", "reflex → ____", "reserve → ____"],
+          "rows": 1,
+          "answers": [
+            "a protein in muscle that grabs and holds oxygen",
+            "something the body does automatically, without deciding to",
+            "a supply kept back and saved for when it is needed"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a seal makes one breath last thirty minutes. Use at least three facts from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Seal That Sees With Its Whiskers",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-seal", "templateLabel": "The Seal That Sees With Its Whiskers", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "seal",
+          "notes": ["Weddell seal: the farthest south of any mammal", "It lives under solid ice all winter", "It saws its breathing hole open with its teeth", "Worn-out teeth end its life", "It dives about 2,000 feet, for over an hour", "It sings in long falling whistles under the ice"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Seal at the Bottom of the World",
+          "text": "No mammal lives farther south than the Weddell seal. It spends its winters underneath the solid ice of Antarctica, in water sitting at about 28 degrees Fahrenheit, colder than the freezing point of fresh water and held liquid only by its salt. Above the seal is a ceiling of ice several feet thick. Above that is the dark, and the wind, and nothing. This is a strange address to choose. But look at what is not there. Under the ice there are no orcas, and no leopard seals hunting, because they cannot get in either. The Weddell seal has traded away the open sea for a room that nothing else can enter. The rent is a hole. A seal must breathe. So it makes its own hole in the ceiling, and then it has to keep it, and it keeps it with its teeth. The seal swims up, opens its mouth, and rasps its canines and its front teeth across the underside of the ice, back and forth, sawing, widening the opening before the cold can seal it shut. It does this all winter. It does it for years. Teeth do not grow back. Every hour of rasping wears them down a little more, and an old Weddell seal's teeth are stumps, cracked and worn to the gum. When the teeth fail, the seal can no longer keep its hole open. When the hole closes, the seal drowns beneath a roof it can no longer cut. Biologists who study these animals say the same thing again and again: a Weddell seal does not really die of old age. It dies of its own teeth. In between, though, it is magnificent. It dives two thousand feet down into black water and stays for more than an hour on a single breath, hunting fish it finds by feel. It sings underwater in long falling whistles that sound like something recorded on another planet, and the sound carries for miles beneath the ice. That is the deal the Weddell seal made. A safe room, a good life, and a bill that comes due in enamel."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the Weddell seal live under the ice when the open sea is easier? Use evidence from the text.",
+            "Explain what the author means by the rent is a hole.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "The last sentence says the bill comes due in enamel. What does that mean, and why does the author end there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the under-ice life, the tooth-cut breathing hole, and the cost)",
+            "(no orcas and no leopard seals can get under the ice; evidence: a room that nothing else can enter)",
+            "(the price of the safe room is having to cut and keep a breathing hole)",
+            "(inform, with detail: it gives facts, temperatures, and depths; the vivid ending leans toward entertaining)",
+            "(enamel is tooth; the seal pays for its safety with its teeth, and the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["rasps → ____", "magnificent → ____", "canines → ____", "due → ____"],
+          "rows": 1,
+          "answers": [
+            "scrapes roughly, back and forth",
+            "impressive and splendid",
+            "the long pointed teeth near the front of the mouth",
+            "owed, and having to be paid"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Every safe place has a cost. Explain the trade the Weddell seal has made, and say whether you think it is a good one.",
+            "A young Weddell seal and an old one live in the same water. Which one is in more danger, and why?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion, supported: safety from predators in exchange for the work and tooth wear of keeping a hole)",
+            "(inference: the old one, because its worn teeth may fail before the winter ends)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is safety worth it if it slowly wears you out? Take a position and support it with two reasons, at least one drawn from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Seal That Sees With Its Whiskers",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-seal", "templateLabel": "The Seal That Sees With Its Whiskers", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "seal",
+          "notes": ["Seals are carnivorans: kin to bears, dogs, and weasels", "Puijila, found 2007 on Devon Island, had four webbed feet", "A front flipper still holds five fingers inside it", "Undulated whiskers stay quiet enough to feel a wake", "Elephant seals sleep about 2 hours a day, while sinking", "Every pinniped must still be born in the air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bargain the Seal Made",
+          "text": "A seal is a land animal that changed its mind. Look at the skeleton and it gives itself away. Inside each front flipper is a hand: an upper arm bone, two forearm bones, a wrist, and five fingers, shortened and bound together under the skin, but all of them there, in the same order as yours. Seals did not rise out of the ocean. They walked into it. Their ancestors were carnivorans, sitting on the same branch of the mammal family tree that produced bears, dogs, and weasels, and more than twenty million years ago some of them began spending more time in the water than out of it. In 2007, on Devon Island in the Canadian Arctic, researchers dug up one of those in-between animals. They named it Puijila. It was roughly the size of a river otter, and it had four legs, four webbed feet, a long tail, and no flippers at all. It swam by paddling. It is a photograph of the decision being made. Here is the thing worth noticing. Every advantage a seal has today was bought by giving something up. That is the honest shape of the story. It gave up walking. A true seal's hind flippers point permanently backward and cannot swing forward beneath the body, which is why a seal on a beach hauls itself along in a heaving belly crawl, and why a sea lion, which kept that joint, can trot. Put the same animal in water and those flippers sweep side to side and it becomes something else entirely: fast, silent, exact. It gave up seeing. Not completely, but the deep sea is dark and murky, and eyes are only so useful there. So the seal moved its hunting into its face. Its whiskers are thick and wavy, and the wave is the whole point: the ripples cancel the noise a straight whisker would make as water rushed past it, leaving the whisker quiet enough to feel something almost impossibly faint. A swimming fish drags a wake behind it, a hanging line of swirls that lingers for perhaps half a minute. In one famous experiment, a blindfolded harbor seal wearing headphones tracked the wake of a small submarine across a pool, following every turn it had made, long after it had gone. The seal was hunting a fish that was not there anymore, and the whiskers did not care. It gave up breathing, in a way. A diving seal exhales first, because lungs full of air become a liability under pressure, and it carries its oxygen in its blood and in its muscle instead. Its muscle holds so much myoglobin that it is nearly black. Its spleen waits like a spare tank, loaded with oxygen-rich blood, and squeezes it into circulation as the dive begins. Its heart drops to a handful of beats a minute. Its blood abandons the skin and the gut and serves only the brain and the heart. An elephant seal can hold that arrangement together for two hours and carry it nearly a mile and a half down. It even gave up sleep, or rebuilt it. In 2023, scientists fitted northern elephant seals with brain-wave sensors and found that out at sea they sleep about two hours a day, in naps of ten minutes or so, taken while falling. The seal stops swimming partway down a dive, goes limp, and spirals slowly toward the bottom, asleep, far out of reach of the sharks and orcas waiting at the surface. Then it wakes, and swims back up to breathe. There is one thing it could not give up. A seal must still be born on solid ground, on a beach or on the ice, dry, into the open air. Every year the whole species has to return and be a land animal again for a while, and it is always here, hauled out and clumsy and slow, that people have found it easiest to kill. That is the bargain. Nothing the seal gained was free."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "What does the front flipper skeleton prove about where seals came from? Cite the exact words the passage uses.",
+            "Explain why Puijila matters to the argument. Quote the sentence the author uses to sum up its importance.",
+            "The passage is built on one repeated sentence pattern. Identify it, and explain what that repetition does to the reader.",
+            "Analyze the final paragraph about being born on land. Why does the author save it for last, and what does it do to the meaning of the word bargain?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: seals became superb ocean hunters by trading away land abilities, and every gain cost them something)",
+            "(it holds a hand with five fingers, so seals descend from land animals; cite: They walked into it)",
+            "(it is a fossil caught mid-transition, still four-legged and webbed; quote: It is a photograph of the decision being made)",
+            "(the It gave up ... pattern; the repetition builds the trade-off argument and makes each new fact feel like another item on a bill)",
+            "(the one trade the seal could not make is the one that exposes it to us; it turns bargain from a clever deal into something with a real cost, and ends on human responsibility)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["carnivoran → ____", "liability → ____", "wake → ____", "hauled out → ____"],
+          "rows": 2,
+          "answers": [
+            "a member of the mammal group that includes bears, dogs, weasels, and seals",
+            "something that becomes a burden or a danger rather than a help",
+            "the trail of swirling water left behind a moving body",
+            "come out of the water and resting on land or ice"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that a seal is a land animal that changed its mind. Explain why that sentence is not literally true, and why the author chose it anyway.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(evolution has no intention; the line is a metaphor that makes a slow change feel like a single decision, which sets up the bargain idea)",
+            "(student question + a credible source type, such as a marine biology paper or a museum fossil record)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The seal gave up too much. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

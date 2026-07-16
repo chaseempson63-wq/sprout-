@@ -1,0 +1,310 @@
+{
+  "key": "donkey",
+  "title": "The Donkey That Stops to Think",
+  "blurb": "Everyone calls it stubborn. It is actually running a risk assessment, and it has been carrying the world's loads for 7,000 years.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Donkey That Stops to Think",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-donkey", "templateLabel": "The Donkey That Stops to Think", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the donkey's long ears." },
+        {
+          "kind": "image",
+          "imageKey": "donkey",
+          "notes": ["Its ears are very long", "It says hee-haw", "It can carry heavy bags", "It likes to have a friend"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a donkey. A donkey has long ears. The ears are very big. Big ears help the donkey hear far away. A donkey says hee-haw. It says it loud. A donkey can carry bags on its back. It walks and walks. A donkey likes a friend. It does not like to be alone."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the carrots in each row. Write how many in the box.",
+          "emoji": "🥕",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ears    friend" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its sound.",
+          "pairs": [
+            { "left": "donkey", "right": "hee-haw" },
+            { "left": "dog", "right": "woof" },
+            { "left": "cow", "right": "moo" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own donkey. Give it very long ears.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Donkey That Stops to Think",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-donkey", "templateLabel": "The Donkey That Stops to Think", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "donkey",
+          "notes": ["Longest ears in the horse family", "The ears let out heat", "Hee is breathing in, haw is breathing out", "It picks one best friend for life", "Its fur is not waterproof"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Donkey and Its Big Ears",
+          "text": "A donkey has the biggest ears of any animal in the horse family. Those ears do two jobs. They catch small sounds from far away. They also let heat out of the donkey's body, which helps on hot days. When a donkey calls, it sounds like hee-haw. The hee is the donkey breathing in. The haw is the donkey breathing out. A friend can hear that call from a mile away. Donkeys pick one best friend and stay close to it. If you move one donkey away, the other one gets sad and stops eating. Donkeys came from a dry, hot place, so rain soaks right through their fur. A donkey needs a dry shed to stand in."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Name the two jobs a donkey's ears do.", "What is the hee in hee-haw?", "Why does a donkey need a dry shed?"],
+          "rows": 2,
+          "answers": ["they catch far away sounds and let heat out of the body", "the donkey breathing in", "its fur is not waterproof, so rain soaks right through"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A donkey has the biggest ____ in the horse family.", "Big ears let ____ out of the donkey's body.", "A donkey's call sounds like ____.", "A donkey picks one best ____ and stays close."],
+          "wordBank": ["ears", "heat", "hee-haw", "friend"],
+          "answers": ["ears", "heat", "hee-haw", "friend"]
+        },
+        { "kind": "draw", "prompt": "Draw two donkeys standing together. Add a shed to keep them dry.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Donkey That Stops to Think",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-donkey", "templateLabel": "The Donkey That Stops to Think", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "donkey",
+          "notes": ["A donkey freezes instead of bolting", "Its wild cousins live in rocky desert", "A bray carries about two miles", "A male is a jack, a female is a jenny", "Baby donkeys are called foals"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Donkey Stops",
+          "text": "People have called donkeys stubborn for thousands of years. It is not true, and here is what is really going on. Horses and donkeys are cousins, but they come from very different country. Horses come from wide grasslands, where a herd can run for miles. So a horse runs first and thinks later. If something rustles in the grass, the horse bolts, and the herd bolts with it. A donkey does the opposite. Its wild ancestors lived in dry, rocky hills where there was no big herd to run with and nowhere safe to run to. So the donkey freezes. It plants its feet, lifts its head, and studies the thing that worried it. Only when it decides the path is safe does it move. To a person in a hurry, that pause looks like refusal. It is really a donkey thinking. Push a donkey and it plants harder. Show a donkey that the ground is solid and it will walk on. People who work with donkeys every day say the trick is never force. The trick is patience."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does a horse do when it hears a scary sound?",
+            "What does a donkey do instead?",
+            "Why did the donkey's wild ancestors freeze instead of running?",
+            "Why do you think people started calling donkeys stubborn?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it bolts and runs, and the herd bolts with it",
+            "it freezes, plants its feet, and studies the thing that worried it",
+            "they lived in rocky hills with no big herd to run with and nowhere safe to run to",
+            "(inference: the pause looks like refusal to a person in a hurry)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Not Stubborn, Just Careful", "How to Ride a Horse Fast", "The Tallest Mountain in Africa"],
+          "answers": ["Not Stubborn, Just Careful"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Horses come from wide ____, where a herd can run for miles.", "The donkey's wild ancestors lived in dry, rocky ____.", "To a person in a hurry, the pause looks like ____.", "People who work with donkeys say the trick is ____."],
+          "wordBank": ["grasslands", "hills", "refusal", "patience"],
+          "answers": ["grasslands", "hills", "refusal", "patience"]
+        },
+        { "kind": "handwriting", "prompt": "Write two or three sentences: is stubborn a fair word for a donkey? Say why or why not.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Donkey That Stops to Think",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-donkey", "templateLabel": "The Donkey That Stops to Think", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "donkey",
+          "notes": ["Came from the African wild ass", "Kept by herders about 7,000 years ago", "Carried Egypt's trade long before camels", "About 50 million alive today", "Ten donkeys were buried beside a pharaoh at Abydos"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Carried the Ancient World",
+          "text": "Before there were wheels on good roads, before there were trucks or trains, there was the donkey. Around seven thousand years ago, herders in the dry hills of northeast Africa began keeping the African wild ass, a tough, thin-legged animal built for heat and thirst. Those herders were following the rain, moving their goats from one patch of grass to the next, and they needed something that could carry the tent, the water, and the children. The wild ass could do it on almost nothing. That partnership changed the ancient world. A donkey can carry a load of about a hundred pounds, walk twenty miles in a day, eat rough scrub that a horse would refuse, and go longer between drinks than a horse can. Egypt ran on donkeys. Copper, grain, timber, and cloth crossed the desert on their backs for centuries before camels arrived. Archaeologists digging at Abydos in Egypt found ten donkeys buried in their own tombs beside a pharaoh, around five thousand years old. Their bones showed the worn joints of animals that had carried heavy loads for years. Someone thought those particular donkeys deserved a royal burial. Today about fifty million donkeys are alive, and most of them still work. They fetch water in villages with no pipes, carry bricks, and haul crops to market. The donkey is not a relic of history. For millions of families, it is still the engine."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did herders in northeast Africa need an animal like the wild ass?",
+            "The passage says Egypt ran on donkeys. Explain what that means.",
+            "The Abydos donkey bones showed worn joints. What does that tell us about those donkeys?",
+            "Why would a pharaoh's people bury donkeys in tombs beside him?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they moved with the rain and needed something to carry the tent, the water, and the children",
+            "donkeys carried the copper, grain, timber, and cloth that Egypt's trade depended on",
+            "(inference: they had carried heavy loads for many years)",
+            "(inference: donkeys were valuable enough to be honored, not just used)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The donkey has carried the world's loads for thousands of years and still does",
+            "Camels replaced donkeys everywhere in Egypt",
+            "Archaeologists have already dug up every tomb in Egypt"
+          ],
+          "answers": ["The donkey has carried the world's loads for thousands of years and still does"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["herders → ____", "scrub → ____", "relic → ____"],
+          "rows": 1,
+          "answers": ["people who keep and move animals like goats", "rough, low plants that grow on dry ground", "something left over from the past that is no longer used"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says the donkey is still the engine for millions of families. Explain what that means and why it matters. Use two details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Donkey That Stops to Think",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-donkey", "templateLabel": "The Donkey That Stops to Think", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "donkey",
+          "notes": ["Equus asinus", "Donkey 62 chromosomes, horse 64, mule 63", "Mule: donkey father, horse mother", "Hinny: horse father, donkey mother", "Nearly every mule is sterile", "Royal Gift reached Mount Vernon in 1785"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Sixty-Three: The Animal That Should Not Work",
+          "text": "Cross a donkey with a horse and you get an animal that, on paper, should not exist. Its name is a mule, and for three thousand years it has been one of the most useful animals people have ever bred. Here is the strange part. A horse carries sixty-four chromosomes, the coiled packages of instructions inside almost every cell. A donkey carries sixty-two. A mule inherits half from each parent, so it ends up with sixty-three. That odd number is the whole story. When a body makes egg or sperm cells, the chromosomes have to line up in matched pairs and split evenly. Sixty-three will not divide into two equal halves, and the pairs do not match, so the process stalls. Nearly every mule is sterile. A mule can live thirty or forty years and never have a foal. So each mule has to be bred fresh, one horse mother and one donkey father at a time. People keep doing it anyway, and they have done it since at least ancient Anatolia, because the mule turns out to be better at the job than either parent. From the horse it gets size, speed, and strength. From the donkey it gets hard hooves, tough skin, a careful mind, patience with heat and thirst, and the sense to refuse a load that is too heavy. Farmers say a horse will work itself to death and a mule will not. That is not laziness. It is inherited judgment. The order of the parents matters, too. A donkey father and a horse mother make a mule. A horse father and a donkey mother make a hinny, which is smaller and rarer and, for reasons breeders still argue about, harder to produce. George Washington was a mule enthusiast. He wanted stronger animals for American farms, and he wrote to the King of Spain asking for Spanish jacks, the big donkeys Spain guarded closely. In 1785 a jack named Royal Gift arrived at Mount Vernon, and much of American mule breeding traces back to that one animal."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why is nearly every mule sterile? Use the chromosome numbers in your answer.",
+            "What does a mule get from each parent? Quote the two-word phrase the passage uses for the donkey's caution.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the difference between a mule and a hinny?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: a mule has an odd chromosome count and cannot breed, yet people breed it anyway because it inherits the best of both parents)",
+            "a mule has sixty-three chromosomes; sixty-three will not divide into two equal halves and the pairs do not match, so egg and sperm cells cannot form",
+            "size, speed, and strength from the horse; hard hooves, tough skin, a careful mind, and patience from the donkey; quote: inherited judgment",
+            "(inform, with detail: it defines chromosomes and gives dated history; the tone is admiring in places)",
+            "a mule has a donkey father and a horse mother; a hinny has a horse father and a donkey mother, and is smaller and rarer"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["sterile → ____", "chromosomes → ____", "jack → ____", "inherited → ____"],
+          "rows": 1,
+          "answers": ["unable to produce young", "the coiled packages of instructions inside almost every cell", "a male donkey", "passed down from a parent"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Farmers say a horse will work itself to death and a mule will not. The passage calls that inherited judgment. Explain what the author means.",
+            "Why would people keep breeding an animal that can never have young of its own?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the mule inherits the donkey's sense of self-preservation; refusing an unsafe load is judgment, not laziness)",
+            "(inference: the mule does the work better than either parent, so it is worth starting over every time)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the mule exists only because people bring two species together on purpose, knowing it can never have young of its own. Is that fair to the animal? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Donkey That Stops to Think",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-donkey", "templateLabel": "The Donkey That Stops to Think", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "donkey",
+          "notes": ["Equus africanus asinus", "Descended from the African wild ass", "Freeze and assess, not bolt and run", "Coat is not waterproof: desert ancestry", "Stoic: hides pain far longer than a horse", "African Union called for a skin-trade ban in 2024"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Slander of the Donkey",
+          "text": "Consider how the donkey lives in our language. Stubborn as a mule means immovable past all reason. Donkey work means the dull, heavy labor nobody wants. In one of Shakespeare's plays a weaver named Bottom is transformed, as a joke, into a man with a donkey's head, and everyone in the audience understands the insult without being told. Across thousands of years of stories, in Aesop, in fairy tales, in cartoons, the donkey is the animal that is slow, silly, and difficult. Almost none of this is fair, and the injustice runs deeper than a bruised reputation.\n\nStart with the stubbornness, because that is the charge that sticks. Horses and donkeys share an ancestor, but they were shaped by different landscapes, and the landscape writes the instinct. Horses evolved on open grassland in large herds. On grassland, the correct response to a sudden noise is to run immediately and ask questions never, because the herd runs with you and the plain is wide. Donkeys descend from the African wild ass, which lived in rocky desert, in small scattered groups, on ground where a panicked gallop would break a leg. There, the correct response is to freeze, look, and decide. So a donkey stops. It stops in front of a stream it has not crossed, in front of a trailer it has not entered, in front of a bridge that sounds hollow. It is not refusing you. It is running a risk assessment, and it will not move until the assessment finishes. Pushing, shouting, and pulling all read to the donkey as further evidence that the situation is dangerous, so the donkey plants harder, and the person concludes that donkeys are stubborn. The behavior that people mock is the behavior that kept the species alive.\n\nThe other charges collapse just as quickly. Slow? A donkey walks about as fast as a person and can keep it up all day, across country a truck cannot reach. Stupid? Donkeys learn routes, gates, and latches, remember other donkeys for decades, and form bonds so strong that a donkey separated from its companion may stop eating entirely and fall dangerously ill. Useless? Around fifty million donkeys are alive today, and most of them work. They carry the water, the firewood, the bricks, and the harvest for families who own no vehicle. Whole household economies rest on one animal's back.\n\nAnd that is where the reputation stops being a joke. An animal thought of as a fool is an animal easily neglected. Donkeys evolved in deserts, so their coats are not waterproof the way a horse's is, and a donkey left standing in cold rain gets sick in ways an owner may never connect to the missing shed. Donkeys are stoic, hiding pain far longer than a horse does, so a suffering donkey often looks fine until it is very unwell. Add the global trade in donkey skins, boiled down for a traditional remedy called ejiao, which has pulled millions of donkeys out of working communities in Africa and Asia in a single decade, and the picture sharpens. Africa's donkey population has been falling fast enough that several countries banned the skin trade outright, and in 2024 the African Union called for a continent-wide ban.\n\nNone of that is caused by a nickname. But the story we tell about an animal shapes how carefully we look at it. We have spent three thousand years calling the donkey stupid for the one thing it does better than we do, which is stop and think before moving."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by the landscape writes the instinct. Use both the horse and the donkey in your answer.",
+            "The author writes that the behavior people mock is the behavior that kept the species alive. Explain the claim and cite one earlier detail that supports it.",
+            "Identify the turn in the passage. Where does it stop defending the donkey and start warning about something, and how does the author signal the shift?",
+            "The passage says none of that is caused by a nickname, then argues the story we tell still matters. Analyze what that admission is doing for the argument."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(horses evolved on open grassland where fleeing is safe, so they bolt; donkeys evolved in rocky desert where a panic gallop breaks a leg, so they freeze and assess)",
+            "(freezing is a survival calculation, not defiance; cite: on ground where a panicked gallop would break a leg)",
+            "(at And that is where the reputation stops being a joke; a short blunt sentence pivots the essay from defense to consequence)",
+            "(it concedes the weak version of the claim to protect the strong one: admitting the nickname is not the direct cause makes the real argument about attention harder to dismiss)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["immovable → ____", "instinct → ____", "stoic → ____", "neglected → ____"],
+          "rows": 2,
+          "answers": [
+            "impossible to move or to persuade",
+            "an inborn response an animal does not have to learn",
+            "enduring pain or hardship without showing it",
+            "left uncared for"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says donkeys hide pain far longer than a horse does. Explain why a trait that helped a wild donkey survive is dangerous for a working donkey today.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(in the wild, hiding weakness avoids predators; with an owner, it means illness and injury go unnoticed until they are severe)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: How we talk about an animal has no real effect on how we treat it. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "key": "snake",
+  "title": "The Snake That Smells With Its Tongue",
+  "blurb": "The legless hunter that smells in stereo, swallows meals wider than its own head, and reads body heat in the dark.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Snake That Smells With Its Tongue",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-snake", "templateLabel": "The Snake That Smells With Its Tongue", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the snake's tongue." },
+        {
+          "kind": "image",
+          "imageKey": "snake",
+          "notes": ["It has no legs at all", "It smells with its tongue", "Its scales are dry, not slimy", "It never blinks"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a snake. A snake has no legs. It has no arms. It moves by bending its body. Look at its tongue. The snake flicks its tongue in and out. That is how a snake smells. It smells the air with its tongue. A snake has smooth, dry scales. Snakes are not slimy. This snake is looking for lunch."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the snakes in each row. Write how many in the box.",
+          "emoji": "🐍",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "snake    slide" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to how it moves.",
+          "pairs": [
+            { "left": "snake", "right": "slides" },
+            { "left": "bird", "right": "flies" },
+            { "left": "frog", "right": "hops" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own snake. Make it long and curvy. Do not forget the tongue.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Snake That Smells With Its Tongue",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-snake", "templateLabel": "The Snake That Smells With Its Tongue", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "snake",
+          "notes": ["It smells with its forked tongue", "It has no eyelids at all", "It sheds its skin in one piece", "Wide belly scales grip the ground", "Snakes are reptiles, like turtles"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Snake That Smells With Its Tongue",
+          "text": "A snake has no legs, but it is never stuck. It slides over sand. It climbs trees. Some snakes even swim. A snake moves by pushing its body into curves. The wide scales on its belly grip the ground and pull it along. A snake does not have eyelids. It cannot blink or shut its eyes. A clear scale sits over each eye like a tiny window. When a snake grows too big for its skin, it crawls out of the old one and leaves it behind. The new skin is already there, shiny and ready."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How does a snake move without legs?", "Why can a snake not blink?", "What does a snake leave behind when it grows?"],
+          "rows": 2,
+          "answers": ["it pushes its body into curves and its belly scales grip the ground", "it has no eyelids, only a clear scale over each eye", "its old skin"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A snake has no ____.", "The scales on its ____ grip the ground.", "A snake cannot ____ its eyes.", "It crawls out of its old ____."],
+          "wordBank": ["legs", "belly", "shut", "skin"],
+          "answers": ["legs", "belly", "shut", "skin"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each body part to its job.",
+          "pairs": [
+            { "left": "tongue", "right": "smells the air" },
+            { "left": "belly scales", "right": "grip the ground" },
+            { "left": "clear eye scale", "right": "keeps the eye safe" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a snake climbing a tree. Add leaves and a branch.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Snake That Smells With Its Tongue",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-snake", "templateLabel": "The Snake That Smells With Its Tongue", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "snake",
+          "notes": ["The forked tongue smells in stereo", "Scent goes to the Jacobson's organ", "A clear scale covers each eye", "Snakes have no outside ears", "Some snakes have over 400 backbones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Snake Smells the Air",
+          "text": "A snake's tongue is not for tasting food. It is for smelling. Watch a snake move through the grass. Its tongue flicks out, touches the air, and darts back in. Tiny bits of scent stick to the wet tongue. Back inside the mouth, the snake presses those bits against a special patch in the roof of its mouth called the Jacobson's organ. That patch reads the scent and tells the snake what is nearby. Here is the clever part. A snake's tongue is forked, with two thin points. Each point picks up its own sample of air. If the left point brings back more mouse smell than the right point, the mouse is off to the left. The snake does not just smell the air. It smells which direction the smell is coming from. You do something like this with your ears. Two ears let you hear which way a sound came from. A snake has two tongue tips instead, and it follows a scent trail the way you might follow a sound."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a snake's tongue really for?",
+            "What is the patch in the roof of the mouth called?",
+            "Why does a forked tongue tell the snake which way to go?",
+            "Why do you think a snake flicks its tongue so often instead of once?"
+          ],
+          "rows": 2,
+          "answers": [
+            "smelling, not tasting food",
+            "the Jacobson's organ",
+            "each point picks up its own sample, so the stronger side shows the direction",
+            "(inference: the scent keeps changing as it moves, so it has to keep checking)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Snake Smells the Air", "Why Snakes Make Good Pets", "The Fastest Animal in the Desert"],
+          "answers": ["How a Snake Smells the Air"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A snake's tongue is ____, with two thin points.", "Bits of ____ stick to the wet tongue.", "Your two ____ tell you where a sound came from."],
+          "wordBank": ["forked", "scent", "ears"],
+          "answers": ["forked", "scent", "ears"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: the passage compares a snake's two tongue tips to your two ears. Explain why that comparison works.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Snake That Smells With Its Tongue",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-snake", "templateLabel": "The Snake That Smells With Its Tongue", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "snake",
+          "notes": ["The lower jaw is two bones, not one", "The quadrate bone acts as an extra hinge", "Curved teeth walk the meal inward", "The glottis works like a snorkel", "Snakes cannot chew at all", "A large python may eat only a few times a year"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mouth That Opens Wider Than the Head",
+          "text": "A snake cannot chew. It has no flat teeth for grinding and no hands for tearing. Whatever a snake eats, it eats whole, and it often eats animals much wider than its own head. People say a snake unhinges its jaw. That is not quite right, and the truth is stranger. Your lower jaw is one solid bone, fused at your chin. A snake's lower jaw is two separate bones, joined at the front only by a stretchy ligament. Those two halves can spread apart sideways and slide forward and back on their own. Behind them sits a small bone called the quadrate, which works like an extra elbow between the skull and the jaw, swinging the whole mouth open far wider than a fused skull ever could. Swallowing is not a gulp. It is a walk. The snake hooks the curved teeth on one side of its mouth into the meal, pulls, then releases that side and hooks the other side further along. Left, right, left, right, the snake slowly walks its own head over the food. While all that is happening, the snake still has to breathe. A tube at the bottom of its mouth, the glottis, pushes forward past the meal like a snorkel and keeps the air moving. A meal that takes an hour to swallow does not suffocate the animal swallowing it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says a common belief about snake jaws is wrong. What is the belief, and what is actually true?",
+            "Explain how a snake swallows, in your own words. Why does the passage call it a walk instead of a gulp?",
+            "What job does the glottis do, and why does the snake need it?",
+            "A snake takes an hour to swallow one meal and cannot move well while it does. What risk does that create for the snake?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the belief is that the jaw unhinges; really the lower jaw is two bones joined by a stretchy ligament, with a quadrate bone acting as an extra hinge",
+            "(it hooks teeth on one side, pulls, then hooks the other side, so it moves its head over the food step by step)",
+            "it pushes forward like a snorkel so the snake can keep breathing while a meal fills its mouth",
+            "(inference: it is slow and cannot defend itself or escape a predator while swallowing)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A snake's split jaw and extra hinge let it swallow prey wider than its own head, whole and while still breathing",
+            "Snakes have sharp flat teeth for chewing their food carefully",
+            "Most snakes prefer to eat very small meals many times a day"
+          ],
+          "answers": ["A snake's split jaw and extra hinge let it swallow prey wider than its own head, whole and while still breathing"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["fused → ____", "ligament → ____", "quadrate → ____", "suffocate → ____"],
+          "rows": 1,
+          "answers": [
+            "joined together into one solid piece",
+            "a stretchy band that connects two bones",
+            "a small bone that works like an extra hinge between skull and jaw",
+            "to be unable to breathe"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says the truth about snake jaws is stranger than the myth. Do you agree? Give two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Snake That Smells With Its Tongue",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-snake", "templateLabel": "The Snake That Smells With Its Tongue", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "snake",
+          "notes": ["Pit organs read infrared heat", "The membrane is thin as tissue paper", "It can register thousandths of a degree", "Heat and sight merge in the brain", "Rattlesnakes, pythons and boas all have pits", "Around 4,000 snake species are alive today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Seeing Heat in Total Darkness",
+          "text": "Put a pit viper in a room with no light at all, and it will still find the mouse. Along the upper lip of a rattlesnake, and in a row of small openings on the face of a python or a boa, sit organs no other animal quite matches. Each pit is a shallow cup with a membrane stretched across the middle of it, thin as tissue paper and packed with nerve endings. Warm objects give off infrared radiation, and infrared is nothing more than light too red for your eyes to see. The membrane absorbs it, warms very slightly, and the nerves report the temperature change. A pit viper's membrane can register a difference of a few thousandths of a degree. Here is what makes it more than a thermometer. The pit has an opening at the front, and the membrane sits behind it, which is the same arrangement as a pinhole camera. Heat arriving from the left of the snake lands on the right of the membrane. That means the organ does not just announce that something warm exists. It reports where. With two pits, one on each side of the head, the snake gets overlapping fields and can judge distance, the same way your two eyes do. The signals travel to a part of the brain that also handles vision, and there they merge with what the eyes are already reporting. Biologists suspect the snake does not experience heat and sight as two separate senses at all, but as one picture with the warm parts glowing inside it. The pits evolved twice. Pit vipers built theirs into a deep hollow between the eye and the nostril, while pythons and boas built rows of shallower ones into the scales of the lip. The structures are not the same, and the two groups are not close relatives. Yet both landed on the same molecule to do the sensing, a protein in the nerve endings that changes shape when it warms. Two separate lineages, working on the same problem, reached for the same tool. The result is a hunter that works at night, aims at the warmest part of an animal, and strikes accurately at prey it has never seen."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is infrared, according to the passage, and how does the membrane detect it?",
+            "Explain why the pinhole arrangement matters. Quote the three words the passage uses to state what the organ reports.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the pit is more than a thermometer. Explain the difference between a thermometer and a pit organ."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering infrared detection + pinhole direction + merging with vision)",
+            "infrared is light too red for human eyes to see; the membrane absorbs it, warms slightly, and nerves report the temperature change",
+            "(a pinhole makes heat from the left land on the right, so position is encoded; quote: It reports where)",
+            "(inform, with detail: it defines infrared and explains the mechanism; the opening line and glowing image add some entertainment)",
+            "(a thermometer gives one temperature; the pit builds a picture that includes direction and distance)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["infrared → ____", "membrane → ____", "register → ____", "overlapping → ____"],
+          "rows": 1,
+          "answers": [
+            "light with too long a wavelength for human eyes to see, given off by warm objects",
+            "a very thin sheet of tissue stretched across an opening",
+            "to detect and record a change",
+            "covering some of the same area as each other"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author compares the pit to a pinhole camera and to your two eyes. Why use comparisons instead of just describing the organ?",
+            "Why might heat vision be more useful to a snake than to an animal that hunts by day?",
+            "Two groups that are not close relatives built different pits but used the same molecule. What does that suggest about how evolution solves a problem?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(comparisons connect an unfamiliar organ to things the reader already understands)",
+            "(inference: warm prey stands out against cool surroundings at night, when eyes are useless)",
+            "(inference: separate lineages facing the same problem can arrive at the same answer independently, especially when few tools are available for the job)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which sense would be more useful to have, a snake's heat pits or a snake's forked tongue? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Snake That Smells With Its Tongue",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-snake", "templateLabel": "The Snake That Smells With Its Tongue", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "snake",
+          "notes": ["Snakes sit inside the lizard family tree", "Najash: a 95 million year old snake with hind legs", "Pythons still carry vestigial leg spurs", "The ZRS limb switch is broken in snakes", "The left lung is reduced or absent", "About 4,000 species, on every continent but Antarctica"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Body That Gave Up Its Legs",
+          "text": "A snake is a lizard. Not like a lizard, not descended from something that also happened to produce lizards. A snake sits inside the lizard family tree the way a bat sits inside the mammal family tree, and almost everything strange about a snake is what happened to a lizard that stopped using its legs. The fossils are clear about the order of events. Najash rionegrina, dug out of 95 million year old rock in Argentina, was a snake with a snake's skull and a long snake's body, and it still had small hind legs and a hip to hang them from. Other early snakes from the same period carried the same shrunken back limbs. Legs did not vanish in one step. They were kept, then reduced, then abandoned, and pythons and boas have not entirely finished the process. Under the skin near the tail, a python still carries two tiny leg bones and a claw-shaped spur on each side, useless for walking. Biologists can now point at the switch. A stretch of DNA called the ZRS does not build limbs itself. It is a control panel that tells the limb-building gene when and where to fire. In snakes, that control panel has crumbled. In 2016, researchers took the broken python version and put it into mice in place of the working mouse copy. The mice grew stumps. Losing legs was only the beginning. What followed was a redesign of nearly everything. A lizard's spine is divided into regions: neck, chest, hips, tail. Snakes flattened that plan and repeated one section over and over, so a python may carry more than four hundred vertebrae, each with its own pair of ribs. A body that long has no room for a body's usual layout. Paired organs could not sit side by side, so they were staggered front to back, one kidney ahead of the other. The left lung shrank to a scrap or vanished entirely, and the right lung stretched down the animal like a long balloon. The senses were rebuilt too. Snake eyes are not lizard eyes made smaller. They are put together differently, focusing by sliding the lens forward and back like a camera rather than squeezing it into a new shape, which is the sort of thing that happens when a lineage loses good vision underground and then has to invent it again on the way back out. The ears went the other way. A snake has no eardrum and no ear opening. Sound reaches the inner ear through the jawbone, which rests against the ground, so a snake hears the world mostly by leaning on it. Against the losses, count what was gained. A forked tongue that samples the air in stereo. A lower jaw split into two halves that walk a meal down the throat. In some lineages, pits on the face that read body heat as an image. None of that was possible on the old lizard body plan. The score is worth noticing. There are around four thousand species of snake, on every continent but Antarctica, in deserts, rivers, treetops, and open ocean. An animal that threw away its limbs did not become a lesser lizard. It became a different solution, and by most measures a spectacularly successful one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage opens by claiming a snake is a lizard, not merely like one. Explain the distinction and why the author leads with it.",
+            "Explain what the ZRS is and what the 2016 mouse experiment demonstrated. Cite the sentence that states the result.",
+            "The passage says losing legs was only the beginning. Describe two changes to the internal body that followed, and explain what forced them.",
+            "Analyze the final paragraph. What claim is the author making about evolutionary success, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(snakes are nested inside the lizard group rather than a separate branch; leading with it frames every later oddity as a modified lizard, not a different kind of animal)",
+            "(the ZRS is a control panel that tells the limb-building gene when and where to fire; the broken python version put into mice produced stumps; cite: The mice grew stumps.)",
+            "(more than four hundred vertebrae with paired ribs, staggered organs, reduced left lung; the long narrow body left no room for the usual side-by-side layout)",
+            "(that loss of limbs was not a downgrade but a different viable solution; supported by the species count, the continental range, and the list of gained senses)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["vestigial → ____", "lineage → ____", "staggered → ____", "vertebrae → ____"],
+          "rows": 2,
+          "answers": [
+            "left over from an ancestor and no longer used for its original job",
+            "a line of descent, one group of living things and its ancestors",
+            "arranged one after another instead of side by side",
+            "the bones that make up a backbone"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls the ZRS a control panel rather than a gene that builds limbs. Explain why that distinction matters for understanding how bodies evolve.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(evolution can change a body dramatically by altering the instructions that switch a gene on and off, without deleting the gene itself)",
+            "(student question + a credible source type, such as a peer-reviewed paleontology journal or a herpetologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Losing a body part is always a loss. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

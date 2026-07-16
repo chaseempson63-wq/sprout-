@@ -1,0 +1,321 @@
+{
+  "key": "bat",
+  "title": "The Mammal That Flies With Its Hands",
+  "blurb": "The only mammal with true flight, hunting in the dark by shouting and listening to the echoes.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Mammal That Flies With Its Hands",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-bat", "templateLabel": "The Mammal That Flies With Its Hands", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the bat's long finger bones." },
+        {
+          "kind": "image",
+          "imageKey": "bat",
+          "notes": ["It flies at night", "Its wing is really a hand", "It sleeps upside down", "It shouts to find bugs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a bat. A bat can fly. It flies at night. A bat's wing is really its hand. Look for the long finger bones. In the day, the bat sleeps. It hangs upside down. It holds on with its feet. At night it wakes up. It flies out to find bugs to eat. It shouts and listens for the echo. That is how it finds its way in the dark."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bats in each row. Write how many in the box.",
+          "emoji": "🦇",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bat    fly    night" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to when it wakes up.",
+          "pairs": [
+            { "left": "bat", "right": "night" },
+            { "left": "bird", "right": "morning" },
+            { "left": "you", "right": "morning" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a bat hanging upside down. Give it big wings.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Mammal That Flies With Its Hands",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-bat", "templateLabel": "The Mammal That Flies With Its Hands", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "bat",
+          "notes": ["The only mammal that really flies", "Its wing is skin over long fingers", "It hunts by listening for echoes", "A baby bat is called a pup", "Bats are not blind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mammal That Flies With Its Hands",
+          "text": "A bat is a mammal, just like you. It has fur. It drinks milk from its mom when it is small. But a bat can do one thing no other mammal can do. It can really fly. A bird's wing is covered in feathers. A bat's wing is skin, stretched over long finger bones. When a bat flies, it is flying with its hands. Most bats fly at night. It is dark, so they shout instead of looking. The sound bounces off a moth and comes back. The bat hears the echo and knows just where the moth is."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a bat's wing made of?", "When do most bats fly?", "How does a bat find a moth in the dark?"],
+          "rows": 2,
+          "answers": ["skin stretched over long finger bones", "at night", "it shouts and listens for the echo"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A bat is a ____, just like you.", "A bat's wing is stretched over its long ____.", "Most bats fly at ____.", "The sound bounces back as an ____."],
+          "wordBank": ["mammal", "fingers", "night", "echo"],
+          "answers": ["mammal", "fingers", "night", "echo"]
+        },
+        { "kind": "draw", "prompt": "Draw a bat flying at night. Add a moon and a moth.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Mammal That Flies With Its Hands",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-bat", "templateLabel": "The Mammal That Flies With Its Hands", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "bat",
+          "notes": ["Bats are not blind", "Echolocation: shout, listen, hunt", "The calls are too high for us to hear", "A little brown bat eats hundreds of bugs an hour", "One in five kinds of mammal is a bat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Shouting in the Dark",
+          "text": "Stand in a dark room and shout. The sound leaves your mouth, hits the wall, and comes back to your ears as an echo. Now imagine doing that hundreds of times a second, while flying, and using the echoes to build a picture of everything around you. That is what a hunting bat does. Most bats hunt insects at night. A bat sends out short, high squeaks. The squeaks are too high for people to hear. When a squeak hits a moth, a tiny bit of the sound bounces back. From that echo the bat learns where the moth is, how big it is, which way it is going, and how fast. Then the bat turns and takes it out of the air. Scientists call this echolocation. Bats are not blind. Every bat can see. But eyes are not much use in a cave at midnight, and ears are. A little brown bat can catch hundreds of insects in a single hour, all by sound."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is an echo?",
+            "Why can people not hear a hunting bat's squeaks?",
+            "Name two things a bat learns from one echo.",
+            "Why do you think a bat hunts with its ears instead of its eyes?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a sound that hits something and bounces back to you",
+            "the squeaks are too high for people to hear",
+            "where the moth is and how big it is (also which way it is going, how fast)",
+            "(inference: eyes are not much use in the dark, but ears still work)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Shouting in the Dark", "How to Build a Bird Feeder", "The Deepest Cave in the World"],
+          "answers": ["Shouting in the Dark"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Sound that bounces back to you is an ____.", "Hunting by sound is called ____.", "Bats are not ____."],
+          "wordBank": ["echo", "echolocation", "blind"],
+          "answers": ["echo", "echolocation", "blind"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about bats, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Mammal That Flies With Its Hands",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-bat", "templateLabel": "The Mammal That Flies With Its Hands", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bat",
+          "notes": ["Chiroptera means hand wing", "Four long fingers hold the wing skin open", "The thumb is a small climbing claw", "Foot tendons lock the grip shut", "The only mammal with true flight", "Torn wing skin heals"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Flying With Your Hands",
+          "text": "Hold your hand up and spread your fingers. Now imagine those fingers stretched until they are longer than your whole arm, with a thin sheet of skin webbed between them. You are looking at a bat's wing. Bats are the only mammals that truly fly. Flying squirrels glide, which is really just falling with style. A bat flaps, climbs, hovers, and turns on a coin. Its scientific group is called Chiroptera, which means hand wing in Greek, and the name is exact. A bat's wing bones are the same bones in your arm and hand: upper arm, forearm, wrist, and four long fingers holding the skin open like the ribs of an umbrella. The thumb stays short and sticks out at the front as a small claw for climbing. Because the wing is skin and not feathers, a bat can change its shape in mid-flight, folding and cupping the surface to steer in ways no bird can copy. The cost is that skin tears. The benefit is that skin heals. This same hand-wing design explains why bats hang upside down. Their legs are thin and light, built for flying rather than standing, so a bat cannot run and launch the way a bird does. Hanging solves it. The bat lets go, drops, and is already flying. Even the grip is free: a tendon in each foot locks the toes shut under the bat's own weight, so a sleeping bat holds on without using any muscle at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says flying squirrels are 'really just falling with style.' What is the difference between gliding and true flight?",
+            "Why is the name Chiroptera a good name for a bat?",
+            "Give one cost and one benefit of having wings made of skin instead of feathers.",
+            "The passage says a bat cannot run and launch the way a bird does. Explain how hanging upside down solves that problem."
+          ],
+          "rows": 2,
+          "answers": [
+            "gliding is a controlled fall downward; true flight means flapping to climb, hover, and steer",
+            "it means hand wing, and the wing really is a hand with long fingers holding the skin open",
+            "cost: the skin tears; benefit: the skin heals (and the wing can change shape mid-flight)",
+            "(inference: the bat lets go and drops, so gravity starts the flight instead of a running takeoff)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A bat's wing is a hand, and that one fact explains how it flies and why it hangs upside down",
+            "Bats and birds are closely related animals",
+            "Flying squirrels are better fliers than bats"
+          ],
+          "answers": ["A bat's wing is a hand, and that one fact explains how it flies and why it hangs upside down"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["membrane (a sheet of skin) → ____", "hovers → ____", "tendon → ____"],
+          "rows": 1,
+          "answers": [
+            "a thin sheet of skin stretched between the finger bones",
+            "stays in one place in the air instead of moving forward",
+            "a cord inside the body that pulls a bone or a toe, here locking the grip shut"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: your arm and a bat's wing have the same bones in them. What does that tell you about bats and other mammals? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Mammal That Flies With Its Hands",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-bat", "templateLabel": "The Mammal That Flies With Its Hands", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bat",
+          "notes": ["More than 1,400 species worldwide", "Closer kin to horses than to mice", "Nectar bats pollinate agave", "Insect-eaters save US farms billions a year", "White-nose syndrome has killed millions", "Most bats raise one pup a year"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Night Shift",
+          "text": "Every evening, as the light drains out of the sky, a workforce clocks on that almost nobody sees. There are more than 1,400 species of bat. Roughly one in every five kinds of mammal on Earth is a bat, which makes them the second largest group of mammals after the rodents. They are not rodents themselves, and they are not close to them. A bat is more closely related to a horse than to a mouse. Most of them eat insects, and they eat a staggering number. A single colony can clear tons of insects out of the air over a summer. Many of those insects are the moths and beetles that eat corn, cotton, and pecans, which is why researchers have estimated that bats save farmers in the United States billions of dollars every year in crops not lost and pesticide not sprayed. The bats present no invoice. Other bats work a different shift. Nectar-feeding bats pollinate agave, which is the plant tequila is made from. Fruit bats carry seeds far out over cleared land and drop them, which is how a burned patch of rainforest starts growing back. Some plants have shaped themselves entirely around bats: flowers that open only at night, pale enough to find in the dark, on stalks strong enough to hold a hanging visitor. The insect side of this has been an arms race for about 50 million years. Bats hunt by shouting and listening to the echoes, so certain moths evolved ears tuned precisely to bat calls. Hear a hunting bat, and the moth folds its wings and drops out of the sky. Bats answered by shifting their calls to frequencies those ears miss. Tiger moths went further still. When a bat closes in, they click back, and those clicks jam the bat's sonar so badly that the strike misses. None of it is guaranteed to continue. Since 2006, a fungus that causes white-nose syndrome has swept across North America, waking hibernating bats over and over through the winter until they burn their fat reserves and starve before spring. Millions have died. Some species have lost more than ninety percent of their numbers. Bats are slow to recover, because most raise a single pup a year. The night shift is quieter than it used to be."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says bats are not rodents. What comparison does it use to make that point?",
+            "Explain what the author means by 'The bats present no invoice.' Why put that sentence there?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Describe the arms race between bats and moths. Give one move from each side, quoting the text for one of them."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering what bats do for insects and plants, plus the white-nose decline)",
+            "a bat is more closely related to a horse than to a mouse",
+            "(bats do this work for free and nobody pays or notices; it sets up the idea of unseen labor)",
+            "(mostly inform, with a persuasive close: it gives numbers and definitions, then argues the loss matters)",
+            "(moths evolved ears tuned precisely to bat calls; bats shifted their calls to frequencies those ears miss; tiger moths click back to jam the sonar)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["colony → ____", "pollinate → ____", "hibernating → ____", "arms race → ____"],
+          "rows": 1,
+          "answers": [
+            "a large group of bats living together",
+            "to carry pollen between flowers so plants can make seeds",
+            "sleeping deeply through winter to save energy",
+            "two sides taking turns inventing better attacks and better defenses"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls bats a workforce that 'almost nobody sees.' Why might people notice a bat decline only after it has already happened?",
+            "Why does raising one pup a year make white-nose syndrome so much worse for bats than it would be for an animal with large litters?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: they work at night, for free, and the benefit shows up as an absence of pests rather than as anything visible)",
+            "(inference: numbers rebuild very slowly, so a die-off takes generations to replace instead of a season)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should money be spent protecting an animal most people never see? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Mammal That Flies With Its Hands",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-bat", "templateLabel": "The Mammal That Flies With Its Hands", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bat",
+          "notes": ["Chiroptera: cheir hand, pteron wing", "The wing has more than two dozen joints", "Terminal buzz: up to 200 pulses a second", "Calls can top 120 decibels at close range", "A middle-ear muscle mutes each shout", "Moth ears tuned to almost nothing but bat calls"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Hand Wing: How a Mammal Learned to Hunt With Sound",
+          "text": "Start with the name. The scientific order that contains every bat on Earth is Chiroptera, from the Greek cheir, hand, and pteron, wing. It is not a poetic flourish. Open a bat's wing and you find your own skeleton, redrawn: upper arm, forearm, wrist, and four fingers pulled out to absurd lengths, with a living membrane of skin stretched between them. The thumb stays short and clawed, hooked over the front edge for climbing. When a bat flies, it is not flapping a feathered blade the way a bird does. It is swimming through the air with two enormous webbed hands. That difference matters more than it sounds. A bird's wing is a fairly rigid airfoil. A bat's wing is a controllable surface with more than two dozen independent joints in it, laced with muscle and threaded with sensory hairs that report airflow back to the brain. A bat can cup, twist, and reshape each wing separately, in the middle of a single stroke. That is why bats can hover, reverse, and turn inside their own body length, and why a moth being chased by one is in serious trouble. The tradeoff is fragility, because the membrane tears. The compensation is that it heals, quickly and completely, in a way most mammal tissue does not. The second invention is stranger. Most bats hunt in total darkness by making sound and reading its echoes, a process called echolocation. The bat emits a short ultrasonic pulse, far above the ceiling of human hearing, and listens for what comes back. The delay tells it distance. The difference between the two ears tells it direction. The shifting pitch of the returning echo, stretched or squeezed by the target's movement, tells it speed. As the bat closes in it fires faster and faster, up to two hundred pulses a second in the final moment, a burst so rapid that researchers call it the terminal buzz. The bat is refreshing its picture of the moth two hundred times a second while flying at full speed. There is a problem with shouting to see, and it is that shouting is loud. A hunting bat's call can exceed 120 decibels at close range, comparable to a jet engine, and the bat's own ears sit a few centimeters from its mouth. It solves this by contracting a muscle in its middle ear a fraction of a second before each pulse, deafening itself briefly, then relaxing in time to hear the echo return. It does this hundreds of times a second without losing the beat. Evolution rarely leaves such a weapon unanswered. Several families of moth independently evolved ears tuned to almost nothing except the frequencies of bat calls. A moth that hears a distant bat turns and flees. A moth that hears a close one folds its wings and drops. Some bats countered by moving their calls above or below the band those ears cover, hunting in what researchers call an acoustic blind spot. Tiger moths escalated again, answering an incoming bat with rapid clicks of their own that smear the returning echo and make the strike miss. This exchange has been running for roughly fifty million years, and neither side has won. Which makes the present moment grim. In 2006, a cold-loving fungus reached caves in New York and began killing hibernating bats by rousing them repeatedly through the winter until they starved. White-nose syndrome has since killed millions across North America, and several once-common species have declined by more than ninety percent. Bats reproduce slowly, usually one pup a year, so these are not losses that fill back in. One recent study tracked what happened in farm counties after their bats collapsed, and found that insecticide use rose sharply. The animal doing the work was invisible until it stopped."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says the name Chiroptera 'is not a poetic flourish.' Explain what that claim means and cite the evidence given for it.",
+            "Contrast a bird's wing with a bat's wing as the passage describes them, and explain what the bat gains and loses.",
+            "Explain the terminal buzz and why a hunting bat needs it. Quote the phrase that describes how fast it gets.",
+            "Identify the shift in the passage: where does it turn, and how does the author signal it?",
+            "Analyze the final sentence. What is it doing, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering hand-wings, echolocation, and the current decline)",
+            "(the name literally describes the anatomy; cite: Open a bat's wing and you find your own skeleton, redrawn)",
+            "(a bird's wing is a fairly rigid airfoil; a bat's has more than two dozen joints and can reshape mid-stroke; it gains control, it loses toughness because the membrane tears)",
+            "(the call rate climbs as the bat closes in so it updates its picture fast enough to hit a moving target; quote: up to two hundred pulses a second in the final moment)",
+            "(at Which makes the present moment grim; a short sentence pivots the piece from wonder to loss)",
+            "(it reframes the whole passage as a case about unnoticed work, and points the blame at us; supported by the insecticide study and the ninety percent declines)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["membrane → ____", "ultrasonic → ____", "airfoil → ____", "rousing → ____"],
+          "rows": 2,
+          "answers": [
+            "a thin living sheet of skin stretched between structures",
+            "at a pitch too high for human hearing",
+            "a surface shaped to generate lift as air moves over it",
+            "waking something up out of deep sleep"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the bat and moth exchange has run for fifty million years and 'neither side has won.' Explain why an arms race like this might never produce a winner.",
+            "The insecticide finding is one study. Write a question this passage cannot answer about it, and name the kind of source that could."
+          ],
+          "rows": 3,
+          "answers": [
+            "(each improvement on one side selects for a counter on the other, so both keep changing without either escaping)",
+            "(student question, for example whether the pesticide rise caused measurable harm; source type: the peer-reviewed study itself or follow-up research)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal is only worth protecting if we can show it does something useful for people. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

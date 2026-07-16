@@ -1,0 +1,307 @@
+{
+  "key": "microscope",
+  "title": "The Tube That Found a Hidden World",
+  "blurb": "Two pieces of curved glass in a tube, and suddenly a drop of pond water was crowded with living things nobody knew were there.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Tube That Found a Hidden World",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-microscope", "templateLabel": "The Tube That Found a Hidden World", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the part you look through." },
+        {
+          "kind": "image",
+          "imageKey": "microscope",
+          "notes": ["You look in the top", "The glass makes tiny things look big", "A light shines up from under", "Tiny things go on a glass slide"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a microscope. Say it like this: MY-kro-scope. You look in the top. You put a tiny thing under it. The glass makes the tiny thing look big. A bit of leaf looks huge. A grain of sand looks like a rock. Tiny things are everywhere. The microscope helps you find them. Look closely. What do you see?"
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the microscopes in each row. Write how many in the box.",
+          "emoji": "🔬",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "look    big" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "microscope", "right": "see tiny things" },
+            { "left": "telescope", "right": "see far stars" },
+            { "left": "mirror", "right": "see yourself" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a tiny thing you would like to look at. Make it big on the page.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tube That Found a Hidden World",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-microscope", "templateLabel": "The Tube That Found a Hidden World", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "microscope",
+          "notes": ["A lens is a piece of curved glass", "Light bends when it passes through a lens", "Tiny things go on a glass slide", "The first ones were made over 400 years ago", "A drop of pond water is full of living things"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tube That Found a Hidden World",
+          "text": "A microscope has glass lenses inside it. A lens is a piece of glass that is curved. When light goes through a lens, it bends. The bending makes small things look much bigger. You put a tiny thing on a glass slide. You slide it under the lens. Then you look in the top and turn the knob until the thing is clear. A drop of pond water looks empty. Under a microscope, it is not empty at all. It is full of tiny living things swimming around. They were always there. Your eyes just could not see them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a lens?", "What happens to light when it goes through a lens?", "What do you find in a drop of pond water?"],
+          "rows": 2,
+          "answers": ["a piece of curved glass", "it bends", "tiny living things swimming around"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A lens is a piece of curved ____.", "Light ____ when it goes through a lens.", "A tiny thing goes on a glass ____.", "Pond water is full of tiny living ____."],
+          "wordBank": ["glass", "bends", "slide", "things"],
+          "answers": ["glass", "bends", "slide", "things"]
+        },
+        { "kind": "draw", "prompt": "Draw what you think a drop of pond water looks like under a microscope.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tube That Found a Hidden World",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-microscope", "templateLabel": "The Tube That Found a Hidden World", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "microscope",
+          "notes": ["The word means small plus to look at, from Greek", "Robert Hooke drew a flea the size of a page in 1665", "He named cells after the rooms where monks slept", "Every living thing is made of cells", "You look through the eyepiece at the top"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Man Who Named Cells",
+          "text": "In 1665, an English scientist named Robert Hooke cut a very thin slice of cork and put it under his microscope. Cork comes from the bark of a tree. Hooke expected to see something solid. Instead he saw rows and rows of tiny empty boxes, all lined up like a honeycomb. The boxes reminded him of the small plain rooms that monks slept in. Those rooms were called cells. So Hooke called the little boxes cells too, and the name stuck. Every living thing you have ever met is made of cells. You are made of them. So is grass, so is a dog, so is mold on old bread. Nobody knew that until somebody looked through curved glass at a piece of bark. Hooke drew everything he saw and put the drawings in a book called Micrographia. There was a flea in it the size of a page, with hairs and claws and armor. People had been living with fleas their whole lives. They had never once seen one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did Robert Hooke put under his microscope?",
+            "What did he see instead of something solid?",
+            "Where did the word cell come from?",
+            "Why do you think people were so surprised by Hooke's drawing of a flea?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a very thin slice of cork",
+            "rows and rows of tiny empty boxes, lined up like a honeycomb",
+            "the small plain rooms that monks slept in were called cells",
+            "(inference: fleas were everywhere but too small to really see, so nobody had looked at one)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Man Who Named Cells", "How to Grow a Cork Tree", "A Guide to Keeping Fleas as Pets"],
+          "answers": ["The Man Who Named Cells"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Hooke cut a thin slice of ____ and looked at it.", "The tiny boxes reminded him of the rooms where ____ slept.", "He put his drawings in a book called ____."],
+          "wordBank": ["cork", "monks", "Micrographia"],
+          "answers": ["cork", "monks", "Micrographia"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would you put under a microscope first, and what do you think you would see?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tube That Found a Hidden World",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-microscope", "templateLabel": "The Tube That Found a Hidden World", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "microscope",
+          "notes": ["Antonie van Leeuwenhoek, a cloth merchant in Delft", "His lenses were smaller than a pinhead", "Some magnified nearly 270 times", "He looked at the film on his own teeth in 1683", "He called what he saw animalcules", "He never told anyone how he made his lenses"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cloth Merchant Who Saw Animals in Water",
+          "text": "Antonie van Leeuwenhoek was not a scientist. He sold cloth in the Dutch town of Delft. Cloth merchants used small magnifying glasses to count the threads in a fabric and check its quality, and somewhere along the way van Leeuwenhoek became obsessed with the glass rather than the cloth. He taught himself to melt glass into tiny beads and grind them into lenses no bigger than a pinhead. His microscopes look nothing like the ones you have seen. Each was a small brass plate with a single lens set in a hole, held right up against the eye. They were awkward and fiddly, and they were also the best in the world. Some magnified nearly 270 times, and nobody else came close for over a century. In the 1670s he began pointing them at ordinary things. Rainwater from a barrel. A drop from a lake. In 1683 he scraped the film from between his own teeth, mixed it with clean water, and looked. He saw things moving. Small living creatures, darting and spinning, more of them in his mouth, he wrote, than there were people in the whole kingdom. He called them animalcules. We call them bacteria and protozoa. He sent letter after letter to the Royal Society in London, written in Dutch, full of careful drawings. At first they did not believe him. No one else could see what he described, because no one else had lenses that good. He never told anyone how he made them. He took the method with him when he died."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Van Leeuwenhoek sold cloth for a living. Explain how that job led him to microscopes.",
+            "What were animalcules, and what do we call them now?",
+            "Why did the Royal Society struggle to believe his letters?",
+            "He never told anyone how he made his lenses. What do you think that cost science?"
+          ],
+          "rows": 2,
+          "answers": [
+            "cloth merchants used magnifying glasses to count threads, and he grew more interested in the glass than the cloth",
+            "the tiny living creatures he saw moving in water; we call them bacteria and protozoa",
+            "(inference: nobody else had lenses good enough to see what he described, so no one could check him)",
+            "(opinion: nobody could repeat or improve his work, and the method was lost for over a century)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "An untrained cloth merchant made the best lenses in the world and found life too small to see",
+            "Delft was the largest town in the Netherlands",
+            "The Royal Society invented the microscope"
+          ],
+          "answers": ["An untrained cloth merchant made the best lenses in the world and found life too small to see"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["obsessed → ____", "magnified → ____", "animalcules → ____"],
+          "rows": 1,
+          "answers": ["taken over by one interest", "made to look bigger than it really is", "the name he gave the tiny living things he saw"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: was van Leeuwenhoek a scientist? Use two details from the passage to support your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tube That Found a Hidden World",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-microscope", "templateLabel": "The Tube That Found a Hidden World", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "microscope",
+          "notes": ["A 10x eyepiece over a 40x objective gives 400x", "Visible light is 400 to 700 nanometers long", "A nanometer is one billionth of a meter", "Light microscopes cannot resolve below about 200 nanometers", "Electron microscopes steer electrons with magnets", "The first virus was photographed in 1939"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wall That Light Built",
+          "text": "For two hundred years after van Leeuwenhoek, the way to see smaller was obvious: grind better glass. Add a second lens. Polish harder. Then, in 1873, a German physicist named Ernst Abbe worked out the mathematics of what a microscope actually does, and found something nobody wanted to hear. There is a wall, and no amount of better glass will get you past it. The problem is light itself. Light travels as a wave, and a wave cannot describe anything much smaller than its own length. Visible light has a wavelength of roughly 400 to 700 nanometers, a nanometer being one billionth of a meter. Abbe showed that a light microscope therefore cannot separate two points closer together than about 200 nanometers. Below that, everything blurs into everything else. You can magnify a blur as much as you like. It stays a blur. Magnification and resolution are not the same thing, and it was Abbe who made that painfully clear. Two hundred nanometers is small. It is not small enough. A bacterium is about a thousand nanometers across, so bacteria were fine. A virus is often around a hundred nanometers, which meant that for decades scientists knew viruses existed, could filter them, could catch diseases from them, and could not look at one. The way through the wall was not glass. In 1931, Ernst Ruska and Max Knoll built a microscope in Berlin that used no light at all. It fired a beam of electrons and steered it with magnets instead of lenses. Electrons, it turns out, also behave like waves, but their wavelength is thousands of times shorter than visible light. A shorter wave draws a finer line. Within a few years, electron microscopes were resolving detail far finer than any glass lens ever could, and in 1939 a virus finally sat in a photograph where anyone could look at it. Ruska received the Nobel Prize in Physics in 1986, fifty five years after building the thing. Max Knoll had died in 1969 and did not share it. The wall Abbe found was real, and it is still there. The lesson was that when a limit is built into the tool, you do not sharpen the tool. You change what the tool is made of."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is the difference between magnification and resolution? Quote the line the passage uses to make the point.",
+            "Why could scientists know viruses existed without ever seeing one? Use numbers from the text.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the way through the wall was not glass. Explain what it was, and why it worked."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: light sets a hard limit near 200 nanometers that better glass cannot beat; electrons, with far shorter waves, got past it)",
+            "magnification makes an image bigger, resolution is how much detail can still be told apart; quote: You can magnify a blur as much as you like. It stays a blur.",
+            "a virus is often around a hundred nanometers, which is below the 200 nanometer limit of a light microscope",
+            "(inform, with detail: it defines terms, gives dates and measurements, and explains rather than argues)",
+            "a beam of electrons steered by magnets; electron waves are thousands of times shorter than light waves, and a shorter wave draws a finer line"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["wavelength → ____", "resolve → ____", "nanometer → ____", "obvious → ____"],
+          "rows": 1,
+          "answers": ["the length of a single wave", "to separate two points clearly enough to tell them apart", "one billionth of a meter", "easy to see without any effort"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Abbe proved that better glass would never help. Why might that have been useful news rather than bad news?",
+            "Ruska won his Nobel Prize fifty five years after building his microscope. What does that delay suggest about how new ideas get judged?"
+          ],
+          "rows": 3,
+          "answers": ["(inference: it stopped people wasting effort on lenses and pushed them to look for a different kind of tool)", "(opinion: it can take decades before people agree how important a new tool really was)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when a tool hits a limit, is it better to improve the tool or start again with a different one? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tube That Found a Hidden World",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-microscope", "templateLabel": "The Tube That Found a Hidden World", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "microscope",
+          "notes": ["Micrographia, Robert Hooke, 1665", "Cells were named after the rooms of monks", "Abbe's limit, 1873: about 200 nanometers", "Ruska and Knoll built the first electron microscope in 1931", "Koch found the tuberculosis bacterium in 1882", "Super-resolution microscopy won the 2014 Nobel Prize in Chemistry"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Instrument That Kept Rewriting the World",
+          "text": "Every so often a tool arrives that does not just answer questions. It invents them. Before 1600, nobody asked what a drop of pond water was made of, because the question had no possible answer and therefore no point. The microscope did not simply supply the answer. It supplied the question. The instrument itself is almost embarrassingly simple. A lens is a piece of glass with a curved face, and curved glass bends light. Arrange two lenses in a tube so that the second one magnifies the image produced by the first, and their powers multiply: a ten times eyepiece over a forty times objective yields four hundred times. Dutch spectacle makers had assembled something like this by the 1590s. Galileo built one around 1625, and a friend of his named the thing from the Greek words mikros, meaning small, and skopein, meaning to look at. For the first sixty years it was mostly a toy for the wealthy. Then two men used it properly. In 1665 Robert Hooke published Micrographia, a book of drawings so fine that people who had lived alongside fleas their entire lives saw one for the first time, sprawled across a fold-out page in armor. Looking at a shaving of cork, Hooke found rows of tiny empty chambers and, reaching for a comparison, called them cells after the bare rooms of monks. He had named the unit of life without knowing it. A decade later, a cloth merchant in Delft with no university training and no intention of publishing anything ground lenses better than anyone alive and turned them on rainwater, lake water, and the scrapings from his own teeth. Antonie van Leeuwenhoek found them swarming. He reported more creatures in his mouth than there were people in the kingdom, and the Royal Society, unable to replicate him, spent years deciding whether to believe him. It took two more centuries for the consequence to land. If invisible living things are everywhere, then invisible living things might be doing something. Louis Pasteur and Robert Koch turned that suspicion into germ theory: Koch identified the bacterium behind anthrax in 1876 and behind tuberculosis in 1882, and put each one under a lens where a skeptic could see it. Handwashing, sterilization, antibiotics, and vaccines all descend from that view down a tube. It is not an exaggeration to say the microscope has saved more lives than any other object made of glass. And then the instrument hit its own ceiling. In 1873 Ernst Abbe proved that light, being a wave roughly 400 to 700 nanometers long, cannot resolve two points closer than about 200 nanometers apart. Not a manufacturing problem. A physics problem. Better glass would change nothing. So in 1931 Ruska and Knoll abandoned light entirely and steered a beam of electrons with magnets, because an electron's wave is thousands of times shorter, and viruses finally became visible. Then in the 1990s and 2000s a handful of physicists did something stranger. Rather than defeat Abbe's limit, they sidestepped it, using fluorescent molecules switched on a few at a time so that each blur could be pinpointed and the pinpoints assembled into a picture. The 2014 Nobel Prize in Chemistry went to Eric Betzig, Stefan Hell, and William Moerner for it. Four hundred years, and the pattern has never changed. Someone looks closer than anyone has looked. What they find is not a detail of the world already known. It is a world nobody had thought to ask about."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The opening claims the microscope 'supplied the question' rather than the answer. Explain what that means and cite one later example from the passage that supports it.",
+            "Find the two short fragments the author uses to dismiss the idea that better lenses could beat Abbe's limit. Quote them exactly and explain why the author breaks the point into fragments.",
+            "The author writes that Hooke 'had named the unit of life without knowing it.' Analyze what that sentence is doing in the paragraph.",
+            "Evaluate this claim: 'It is not an exaggeration to say the microscope has saved more lives than any other object made of glass.' Does the passage earn it? Cite the evidence it offers."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a tool that reveals a hidden world creates questions nobody could have asked before; example: nobody asked what pond water was made of before 1600, or Hooke naming cells before anyone knew what cells were)",
+            "(quote: Not a manufacturing problem. A physics problem. The clipped fragments make the point sound settled and final rather than arguable)",
+            "(it reframes an offhand comparison as a turning point and builds the passage's theme of discovery arriving before understanding)",
+            "(evidence offered: germ theory, Koch's anthrax and tuberculosis, handwashing, sterilization, antibiotics, vaccines; student judges whether that chain supports so large a claim)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["resolve → ____", "replicate → ____", "sterilization → ____", "fluorescent → ____"],
+          "rows": 2,
+          "answers": [
+            "to separate two points clearly enough to tell them apart",
+            "to repeat someone's work and get the same result",
+            "killing the microbes on something so it is clean enough to use in medicine",
+            "giving off light after taking light in"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the Royal Society 'spent years deciding whether to believe him.' Was that reasonable of them? Argue both sides.",
+            "Super-resolution microscopy sidestepped Abbe's limit rather than breaking it. Explain the difference, and why the distinction matters."
+          ],
+          "rows": 3,
+          "answers": [
+            "(reasonable: nobody could replicate him and science requires checking; unreasonable: they lacked his lenses and nearly dismissed real evidence for lack of equal tools)",
+            "(the physics limit still holds for any single image; the technique builds a picture from many separately pinpointed blurs, so the law is worked around, not broken)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The microscope changed what people believe more than any argument ever has. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

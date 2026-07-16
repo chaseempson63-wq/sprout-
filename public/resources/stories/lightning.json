@@ -1,0 +1,322 @@
+{
+  "key": "lightning",
+  "title": "The Spark That Splits the Sky",
+  "blurb": "A spark five times hotter than the surface of the sun, and the bang it leaves behind.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Spark That Splits the Sky",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-lightning", "templateLabel": "The Spark That Splits the Sky", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the bright bolt." },
+        {
+          "kind": "image",
+          "imageKey": "lightning",
+          "notes": ["It is a giant spark", "It comes from a tall cloud", "The flash comes first", "The boom comes after", "It is very hot"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up. That big gray cloud is a storm. Watch. A flash. The whole sky goes white for one blink. That flash is lightning. It is a giant spark. Then you hear it. Boom. That noise is thunder. Light is fast, so you see the flash first. Sound is slow, so the boom comes after. Count with me. One. Two. Three. The storm is far away. You are safe inside."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bolts in each row. Write how many in the box.",
+          "emoji": "⚡",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "flash    boom" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "lightning", "right": "flash" },
+            { "left": "thunder", "right": "boom" },
+            { "left": "cloud", "right": "rain" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big storm cloud. Add a bright bolt coming out of the bottom.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Spark That Splits the Sky",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-lightning", "templateLabel": "The Spark That Splits the Sky", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "lightning",
+          "notes": ["Lightning is a huge spark", "It is born inside a storm cloud", "Thunder is the sound it makes", "You always see it before you hear it", "It is hotter than the sun's face"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where the Bang Comes From",
+          "text": "Lightning is a giant spark. It is made inside a tall storm cloud. High up in that cloud it is freezing cold. Tiny bits of ice bump into each other all day long. All that bumping makes the cloud electric. It is a little like rubbing your socks on a rug and then touching a doorknob. When the cloud holds too much, a spark jumps out. The spark is so hot that it makes the air blow up. The air shoves out hard in every direction. That shove is the sound you hear. That is thunder. Light is fast. Sound is slow. So the flash always comes first, and the boom comes after."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where is lightning made?", "What bumps together inside the cloud?", "What do we call the sound lightning makes?"],
+          "rows": 2,
+          "answers": ["inside a tall storm cloud", "tiny bits of ice", "thunder"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Lightning is a giant ____.", "It is made inside a storm ____.", "The sound it makes is called ____.", "The flash comes ____, then the boom."],
+          "wordBank": ["spark", "cloud", "thunder", "first"],
+          "answers": ["spark", "cloud", "thunder", "first"]
+        },
+        { "kind": "draw", "prompt": "Draw the storm from the story. Show the cloud, the bolt, and a safe house underneath.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Spark That Splits the Sky",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-lightning", "templateLabel": "The Spark That Splits the Sky", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "lightning",
+          "notes": ["The bolt is about as wide as your thumb", "Nearly 50,000 degrees Fahrenheit", "Five times hotter than the sun's surface", "Thunder is air exploding", "Sound takes 5 seconds to go one mile"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Sky Bangs",
+          "text": "Inside a thunderstorm, air rushes upward fast enough to carry a hailstone. Up there it is freezing. Ice crystals and lumps of soft hail crash into each other over and over. Every crash rubs a little electric charge off one and onto the other, and slowly the cloud splits in two. The light crystals ride the wind to the top and carry a positive charge. The heavy hail sinks to the bottom and carries a negative charge. Air normally blocks electricity. It will not let it through. But if the charge builds up high enough, the air gives up. A path tears open between the cloud and the ground, and a huge spark rips down it. That spark is lightning. The spark is only about as wide as your thumb, but it heats the air around it to nearly 50,000 degrees Fahrenheit. That is roughly five times hotter than the surface of the sun. Air that hot cannot sit still. It explodes outward, slams into the cool air around it, and that shove travels to your ears as a long rumble. The rumble is thunder. Light reaches you almost instantly. Sound crawls, taking about five seconds to cross one mile. So count the seconds after a flash, divide by five, and you have just measured the storm."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What two things crash together inside the storm cloud?",
+            "Where does the negative charge end up, at the top or the bottom of the cloud?",
+            "What actually makes the sound of thunder?",
+            "Why do you think you see the flash before you hear the bang?"
+          ],
+          "rows": 2,
+          "answers": [
+            "ice crystals and lumps of soft hail",
+            "at the bottom, carried down by the heavy hail",
+            "air exploding outward because the spark heated it",
+            "(inference: light travels much faster than sound, so it arrives first)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Sky Bangs", "How to Build a Kite", "The Deepest Cave in the World"],
+          "answers": ["Why the Sky Bangs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Every crash rubs a little electric ____ from one bit of ice to the other.", "The spark heats the air to nearly 50,000 degrees ____.", "Sound takes about five ____ to cross one mile."],
+          "wordBank": ["charge", "Fahrenheit", "seconds"],
+          "answers": ["charge", "Fahrenheit", "seconds"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: a flash lights the sky and you count to fifteen before the thunder. How far away is the storm, and how do you know?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Spark That Splits the Sky",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-lightning", "templateLabel": "The Spark That Splits the Sky", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lightning",
+          "notes": ["Graupel: soft, slushy hail pellets", "The stepped leader creeps down in jerks", "The return stroke is the flash you see", "About 30,000 amps in one stroke", "Only about 1 flash in 4 hits the ground", "A lightning rod gives the strike a safe path"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ladder of Light",
+          "text": "A lightning flash does not simply appear. It gets built, in stages, and the whole construction takes less time than a blink. It starts inside a thundercloud that has torn itself into layers of charge. Rising air carries light ice crystals to the top, where they collect a positive charge. Heavier pellets of soft, slushy hail, called graupel, sink toward the base and collect a negative charge. The cloud is now an enormous battery, and the ground below it turns positive in answer. When that imbalance grows strong enough, a faint, forked channel called a stepped leader begins to feel its way down out of the cloud. It moves in jerks of about fifty yards at a time, branching, pausing, choosing. It is almost too dim to notice. As the leader nears the ground, the ground reaches back. Streamers of positive charge lift from fence posts, trees, steeples, anything tall and handy. When one streamer touches the leader, the circuit closes. Electricity floods back up the finished channel at about one third the speed of light, and that surge, called the return stroke, is the blinding flash you actually see. It carries roughly thirty thousand amps. Often the cloud is not done. It fires again down the same channel, three or four times in a few tenths of a second, which is why lightning seems to flicker. Most flashes never reach the ground at all. They jump inside a cloud or between clouds, lighting the storm from within like a lamp in fog. Only about one flash in four comes down to touch the Earth. Those are the ones we photograph, and they are the reason a tall building wears a metal rod on its roof."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage calls the cloud an enormous battery. Explain why that comparison fits.",
+            "What has to happen before the return stroke can fire?",
+            "Why does lightning appear to flicker?",
+            "The passage says only about one flash in four reaches the ground. Why might people still think lightning always hits the ground?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a battery has separated positive and negative charge; the cloud stacks positive at the top and negative at the base",
+            "the stepped leader must meet an upward streamer so the circuit closes",
+            "(the cloud fires several strokes down the same channel in a fraction of a second)",
+            "(inference: ground strikes are the loud, visible, dangerous ones we notice and remember)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A lightning flash is built in stages, and the flash we see is the return stroke racing back up a finished channel",
+            "Thunderclouds are made entirely of rain",
+            "Lightning always strikes the tallest tree in a forest"
+          ],
+          "answers": ["A lightning flash is built in stages, and the flash we see is the return stroke racing back up a finished channel"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["graupel → ____", "stepped leader → ____", "return stroke → ____", "streamer → ____"],
+          "rows": 1,
+          "answers": [
+            "soft, slushy pellets of hail",
+            "the dim, forked channel that feels its way down from the cloud in jerks",
+            "the surge of electricity back up the channel, which is the flash we see",
+            "positive charge reaching up from something tall on the ground"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining a lightning strike from start to finish, in order, as if you were telling a younger kid. Use the words leader, streamer, and return stroke.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Spark That Splits the Sky",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-lightning", "templateLabel": "The Spark That Splits the Sky", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lightning",
+          "notes": ["About 40 flashes per second worldwide", "Air is an insulator until it is pushed past its limit", "Return stroke: one third the speed of light", "Dalibard drew sparks from a cloud in May 1752", "Franklin's lightning rod offers an easy path down", "Roughly 50,000 degrees Fahrenheit"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Storm That Wires Itself",
+          "text": "Every second, somewhere on Earth, the sky flashes about forty times. Satellites watch it happen. From orbit, the planet looks like it is quietly blinking. Lightning begins with a problem of balance. Inside a tall storm cloud, air rushes upward at highway speed through a zone colder than a freezer. Ice crystals and graupel, which are soft pellets of half frozen slush, collide there millions of times. Each collision strips a small charge off one and hands it to the other. The light crystals ride the updraft to the top of the cloud carrying positive charge. The heavy graupel sinks, taking negative charge down with it. Physicists still argue about the fine detail of that exchange, but the result is not in doubt. The cloud separates into stacked layers of opposite charge, and it does so with staggering force. Air is a good insulator. It refuses to carry electricity until it is pushed far past its limit. A thundercloud pushes it there. The air tears open, and a dim, branching stepped leader gropes downward in jerks. Streamers rise to meet it from anything tall. The moment they touch, an enormous return stroke rips back up the channel at a third of the speed of light, carrying around thirty thousand amps and heating a column of air narrower than your wrist to roughly fifty thousand degrees Fahrenheit. That is about five times the temperature of the sun's surface. Air cannot be heated that violently and stay still. It detonates outward, and the shock wave rolls away as thunder. For most of human history the flash was simply divine. Then, in May 1752, a French scientist named Thomas-Francois Dalibard planted a tall iron rod in a garden outside Paris, following a plan published by Benjamin Franklin, and drew sparks out of a passing storm. The sky, it turned out, ran on the same electricity as a jar on a laboratory bench. Franklin took the discovery one step further and gave the world the lightning rod, a piece of metal whose only job is to offer the strike an easy, boring path into the ground. That is the quiet genius of it. You cannot argue with thirty thousand amps. You can only give them somewhere to go."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What does the updraft do to the charge inside the cloud?",
+            "The passage admits scientists disagree about something. What is it, and what does the author say is still certain?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Quote the exact phrase the passage uses to describe the job of a lightning rod, then explain it in your own words."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering charge separation, the leader and return stroke, thunder, and Franklin's rod)",
+            "it sorts the charge, lifting positive crystals to the top and leaving negative graupel to sink to the base",
+            "the fine detail of how collisions move the charge; still certain: the cloud separates into stacked layers of opposite charge",
+            "(inform, mostly: it defines terms and gives numbers and history; the closing lines lean entertaining or persuasive)",
+            "quote: an easy, boring path into the ground; (the rod does not attract the strike, it gives it a safe route down)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["insulator → ____", "updraft → ____", "graupel → ____", "detonates → ____"],
+          "rows": 1,
+          "answers": [
+            "something that refuses to carry electricity",
+            "air rushing upward inside the storm",
+            "soft pellets of half frozen slush",
+            "explodes outward suddenly"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the sky ran on the same electricity as a jar on a laboratory bench. Why was that idea such a big deal in 1752?",
+            "A lightning rod does not stop lightning. Explain why it still keeps a building safe."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it moved lightning out of the realm of the gods and into physics, meaning it could be studied and defended against)",
+            "(inference: it offers the current a low resistance path straight to the ground instead of through the structure)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which was the greater achievement, proving lightning is electricity or inventing the lightning rod? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Spark That Splits the Sky",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-lightning", "templateLabel": "The Spark That Splits the Sky", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lightning",
+          "notes": ["Roughly 100 million volts between cloud base and ground", "Stepped leader: jerks of about fifty yards", "Return stroke: about one third the speed of light", "Fulgurite: sand fused into a glass tube", "Sprites and blue jets flicker above the storm", "The Empire State Building takes about 20 hits a year", "Dalibard ran Franklin's experiment in May 1752"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sky's Short Circuit",
+          "text": "Lightning is the most familiar thing on Earth that nobody can fully explain. Start with what is solid. A thunderstorm is a machine for lifting water. Warm, damp air rises, cools, and condenses, and the heat released by that condensing drives it higher still, until a single storm cloud can stand ten miles tall and hold the weight of a small mountain in water. In the freezing middle of that column, two kinds of ice meet. Small crystals drift upward on the updraft. Larger pellets of soft, slushy ice, called graupel, are heavy enough to fall against it. They collide, endlessly, and each collision leaves the crystal a little more positive and the graupel a little more negative. The updraft then does the sorting: positives to the top, negatives to the base. Exactly why the collisions divide the charge this way is still being worked out in laboratories. The storm does not wait for the paperwork. What it builds is a capacitor the size of a town, holding a difference of perhaps a hundred million volts between its base and the ground. Air resists this. Air is an insulator, and a good one, which is the only reason the atmosphere is not permanently on fire. But every insulator has a breaking point, and the storm walks the air straight past it. The failure begins as a stepped leader: a dim, forked channel of torn air that gropes downward from the cloud in jerks of about fifty yards, pausing, branching, searching. It is not aiming. It is simply following whichever patch of air happens to give way next. As it descends, the ground beneath it grows positive, and streamers of upward charge lift from trees, masts, fence wire, and the tops of tall buildings, straining toward it. The strike happens when one streamer and the leader touch. In that instant the circuit closes, and the return stroke, the flash you actually see, surges back up the completed channel at roughly one third the speed of light. Thirty thousand amps pour through a channel of air about as wide as your thumb, and it reaches near fifty thousand degrees Fahrenheit, roughly five times the heat of the sun's own surface. Air that hot does not glow politely. It explodes, and the shock wave of that explosion, rolling and bouncing off clouds and hills, is thunder. The consequences run further than the noise. Lightning is hot enough to rip nitrogen molecules apart in mid air, and the fragments fall to the ground in rain as nitrate, a fertilizer the sky makes for free. Strike a beach and the sand can fuse into a fulgurite, a rough glass tube shaped like the bolt's own path. Above the storm, faint red sprites and blue jets flicker upward toward space, unnoticed until pilots kept reporting them and a camera finally caught one in 1989. The old fears deserve a correction too. Lightning strikes the same place constantly: the Empire State Building takes around twenty hits a year, which is precisely what a lightning rod is for. A car is safe not because of its rubber tires, which are irrelevant, but because its metal shell carries the current around the people inside. Roughly nine out of ten people struck in the United States survive, though many do not walk away unchanged. Benjamin Franklin sketched the experiment. Thomas-Francois Dalibard ran it first, in a French garden in May 1752, drawing from a passing cloud the same sparks a laboratory could make on demand. That was the end of the thunderbolt as a weapon of the gods and the beginning of it as a circuit. Two and a half centuries later we can time a strike to the microsecond and film the leader as it feels its way down. We still cannot tell you, exactly, how the ice does it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how a thundercloud separates its charge, and cite the phrase the author uses to describe what the cloud becomes.",
+            "The passage says of the stepped leader: It is not aiming. Explain what common belief that sentence is correcting.",
+            "Identify the moment the passage turns from physics to human history. How does the author signal the shift?",
+            "The passage opens and closes on the same admission. Find both, quote the closing line exactly, and analyze why the author frames an essay full of hard numbers this way."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: colliding ice builds a huge charge that breaks through the air as a spark, and people worked out the physics without fully solving it)",
+            "(collisions between crystals and graupel split the charge, and the updraft sorts it; cite: a capacitor the size of a town)",
+            "(that lightning chooses or hunts a target; it simply follows whichever air breaks down next)",
+            "(at Benjamin Franklin sketched the experiment; short declarative sentences and a date move it from process to history)",
+            "(opens: the most familiar thing on Earth that nobody can fully explain; closes: We still cannot tell you, exactly, how the ice does it.; the frame concedes a limit so the precise numbers read as honest rather than complete)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["capacitor → ____", "insulator → ____", "fulgurite → ____", "graupel → ____"],
+          "rows": 2,
+          "answers": [
+            "something that stores separated positive and negative charge",
+            "a material that refuses to carry electricity",
+            "a rough glass tube formed when lightning fuses sand",
+            "soft, slushy pellets of ice heavy enough to fall through an updraft"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls rubber tires irrelevant to car safety. Explain the real reason, and why you think the wrong explanation spread so widely.",
+            "The passage says lightning makes nitrate, a fertilizer the sky makes for free. Explain why a violent, destructive event can still be useful to living things.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the metal shell conducts current around the occupants; the tire myth spread because it sounds sensible and gives a simple cause)",
+            "(inference: the heat splits nitrogen the air otherwise locks away, and rain delivers it to plants that cannot use nitrogen gas directly)",
+            "(student question + a credible source type, such as a peer reviewed atmospheric physics journal or a NOAA report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Science has not really explained lightning if it still cannot say how the ice moves the charge. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

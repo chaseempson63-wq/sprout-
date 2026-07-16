@@ -1,0 +1,319 @@
+{
+  "key": "flamingo",
+  "title": "The Bird That Eats Its Own Pink",
+  "blurb": "The bird that hatches gray and eats its way to pink, then feeds upside down in lakes almost nothing else can use.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird That Eats Its Own Pink",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-flamingo", "templateLabel": "The Bird That Eats Its Own Pink", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the flamingo's long legs." },
+        {
+          "kind": "image",
+          "imageKey": "flamingo",
+          "notes": ["It is tall and pink", "It stands in the water", "It can sleep on one leg", "It eats with its head upside down"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a flamingo. Say it like this: fluh-MING-go. The flamingo is pink. It has long, long legs. It stands in the water all day. It can sleep on one leg. Look at its beak. The flamingo puts its head upside down to eat. Its dinner is tiny pink shrimp. The shrimp make the flamingo pink. A baby flamingo is gray. It eats and eats. Then it turns pink too."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the flamingos in each row. Write how many in the box.",
+          "emoji": "🦩",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "pink    tall" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its color.",
+          "pairs": [
+            { "left": "flamingo", "right": "pink" },
+            { "left": "grass", "right": "green" },
+            { "left": "sky", "right": "blue" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own flamingo. Give it one leg up and a long curvy neck.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird That Eats Its Own Pink",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-flamingo", "templateLabel": "The Bird That Eats Its Own Pink", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "flamingo",
+          "notes": ["A flamingo chick is gray, not pink", "Its beak starts out straight", "It turns pink from the food it eats", "A baby grows up on a nest made of mud", "A group of them is called a flamboyance"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Eats Its Own Pink",
+          "text": "A flamingo is not born pink. It hatches out of its egg soft and gray. Its beak is straight, not curved. The chick grows up on a nest made of mud, and its mom and dad feed it. Then the chick starts to find food for itself. It eats tiny shrimp and tiny plants from the water. Those foods are full of pink. Little by little, the gray feathers drop out and new pink feathers grow in. It takes about two years. A flamingo has to eat its way to pink."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What color is a flamingo when it hatches?", "What is the nest made of?", "What does a flamingo eat to turn pink?"],
+          "rows": 2,
+          "answers": ["gray", "mud", "tiny shrimp and tiny plants from the water"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A flamingo chick hatches ____.", "The nest is made of ____.", "Flamingos eat tiny ____ from the water.", "After about two years the flamingo turns ____."],
+          "wordBank": ["gray", "mud", "shrimp", "pink"],
+          "answers": ["gray", "mud", "shrimp", "pink"]
+        },
+        { "kind": "draw", "prompt": "Draw a gray flamingo chick on its mud nest. Then draw the pink grown-up standing next to it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird That Eats Its Own Pink",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-flamingo", "templateLabel": "The Bird That Eats Its Own Pink", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "flamingo",
+          "notes": ["The pink comes from its food", "Carotenoids: the same colors that make carrots orange", "Chicks hatch gray and turn pink over about two years", "Parents feed their chick a pink milk they make inside", "There are six kinds of flamingo in the world"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Bird Eats Its Way to Pink",
+          "text": "A flamingo chick hatches gray. Its beak is straight and its legs are wobbly. Nothing about it looks pink. Two years later, the same bird glows like a sunset. It did not change by magic. It ate its way there. Flamingos feed on tiny algae and small shrimp that live in salty water. Those tiny things are packed with colors called carotenoids, the same family of colors that makes carrots orange. When a flamingo eats them, its body breaks the colors apart and tucks them into its growing feathers, its skin, and even its beak. The more it eats, the pinker it gets. Flamingo parents feed their chick a rich pink milk that they make inside their own bodies. Feeding a chick costs so much color that the parents can turn pale while their baby grows. You can see the proof in a zoo. If keepers feed flamingos plain food with no carotenoids in it, the birds slowly fade to a dull white. Give the color back, and the pink comes back too. So a flamingo is not painted. It is built out of its dinner."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does a flamingo chick look like when it hatches?",
+            "What are carotenoids, and where does a flamingo get them?",
+            "What happens to zoo flamingos fed food with no carotenoids in it?",
+            "Why do you think the parents turn pale while they are feeding a chick?"
+          ],
+          "rows": 2,
+          "answers": [
+            "gray, with a straight beak and wobbly legs",
+            "colors in food; from the algae and shrimp it eats",
+            "they slowly fade to a dull white",
+            "(inference: they give their own color away in the milk they make)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Bird Eats Its Way to Pink", "How to Build a Bird Nest", "The Tallest Tree in Africa"],
+          "answers": ["How a Bird Eats Its Way to Pink"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The colors hiding in a flamingo's food are called ____.", "A flamingo chick hatches ____ with a straight beak.", "Without those colors, a zoo flamingo fades to a dull ____."],
+          "wordBank": ["carotenoids", "gray", "white"],
+          "answers": ["carotenoids", "gray", "white"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences explaining how a flamingo gets its pink. Use the word carotenoids in one of them.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird That Eats Its Own Pink",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-flamingo", "templateLabel": "The Bird That Eats Its Own Pink", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flamingo",
+          "notes": ["In a flamingo, the upper jaw moves, not the lower one", "Lamellae: comb-like plates that strain the water", "The tongue pumps about four times a second", "It filters its food the way a blue whale does", "Greater flamingos stand up to five feet tall"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Upside-Down Eater",
+          "text": "Watch a flamingo eat and something looks wrong. The bird lowers its head into the water and turns it over, so the top of its beak is on the bottom. That is not clumsiness. That is the design. Most birds have a fixed upper jaw and a hinged lower one. Flamingos flipped the arrangement. Their lower jaw is the heavy, fixed part, and the upper jaw swings. Held upside down in the water, the beak works exactly the way a beak should. It is the bird that is turned over, not the tool. Inside the beak sit rows of tiny comb-like plates called lamellae. The flamingo's thick tongue pumps back and forth about four times a second, sucking muddy water in through the front of the beak and pushing it out the sides. The water leaves. The food stays behind: single-celled algae, small shrimp, and specks of shellfish too small to see. A flamingo is a filter with legs. There is a cost. A filter only works if there is something to filter, so flamingos gather where the water is thick with life: shallow salt lakes and lagoons that most birds avoid because the water is too salty, too alkaline, or too hot. The flamingo does not put up with those lakes by accident. It has them almost to itself. If the filtering reminds you of something else, it should. A blue whale feeds by pushing seawater through baleen plates and swallowing what is trapped. A flamingo weighs less than a large dog, and a blue whale is the largest animal that has ever lived, yet they solved the same problem the same way. Neither one inherited the idea from the other. Nature simply found a good answer twice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, why does a flamingo turn its head upside down to eat?",
+            "Explain how the tongue and the lamellae work together.",
+            "The passage calls a flamingo a filter with legs. What does that mean?",
+            "Why does the passage say the flamingo has the salty lakes almost to itself?"
+          ],
+          "rows": 2,
+          "answers": [
+            "its jaws are flipped, so the beak only works properly when the head is upside down",
+            "the tongue pumps water in and out of the beak while the lamellae trap the food",
+            "(its whole way of feeding is straining tiny food out of water)",
+            "(inference: few other birds can handle water that salty, alkaline, or hot, so there is no competition for the food)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A flamingo's upside-down beak is a filter, and the blue whale arrived at the same solution",
+            "Blue whales and flamingos are closely related animals",
+            "Flamingos are the fastest birds in the world"
+          ],
+          "answers": ["A flamingo's upside-down beak is a filter, and the blue whale arrived at the same solution"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["lamellae → ____", "baleen → ____", "alkaline → ____"],
+          "rows": 1,
+          "answers": [
+            "the comb-like plates inside the beak that strain food from water",
+            "the plates a whale uses to strain food from seawater",
+            "the opposite of acid; here it means harsh, soapy water most animals avoid"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says nature found a good answer twice. Explain what that means, and give one reason two very different animals might end up with the same solution.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird That Eats Its Own Pink",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-flamingo", "templateLabel": "The Bird That Eats Its Own Pink", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flamingo",
+          "notes": ["Lake Natron, Tanzania: about 3 in 4 lesser flamingos hatch there", "The water pH can reach about 10.5", "Salt glands drip salt out through the nostrils", "Arthrospira: the blue-green algae they filter out", "Chicks gather in creches of thousands", "Lesser flamingos have the finest filters of any flamingo"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lake That Only Flamingos Can Use",
+          "text": "Lake Natron lies in northern Tanzania, at the foot of a mountain that erupts a strange pale lava loaded with sodium. Rain washes those salts down into the shallow basin, and because no river flows out again, they stay and concentrate. The water is alkaline enough to sting the skin and eyes of most animals that wade into it, and in the dry season parts of it climb past forty degrees Celsius. It is one of the least welcoming bodies of water on the continent. It is also the single most important nursery for lesser flamingos on Earth. Roughly three quarters of the world's lesser flamingos hatch there. The logic is cold and simple. Harshness is protection. Predators that would happily eat an egg do not cross caustic water, so the mud islands out in the middle of Natron are the safest cradles in Africa. Flamingos pay the entry fee with their bodies. Their long legs are wrapped in tough scales the water cannot easily damage, and glands near their eyes strain salt out of their blood and drip it away through their nostrils. What poisons other birds is merely their commute. The lake pays them back in food. Alkaline water suits a blue-green algae called Arthrospira, which blooms across Natron in enormous quantities and stains the surface deep red when you see it from the air. Lesser flamingos carry the finest filters of any flamingo, fine enough to strain out single cells. Nobody else at the lake can reach that food. Nobody else wants to try. Once the chicks hatch, thousands of them are herded into one gray crowd called a creche, watched over by a handful of adults while both parents fly off to feed. Then a parent returns to a crowd of thousands of nearly identical chicks and finds its own by calling. The chick answers. Out of that wall of noise, two birds pick out one voice each. The strategy has a weakness, and it is the same weakness that comes with putting everything in one place. Plans to build a soda ash plant on Natron have surfaced more than once. Nothing has been built. But a species that breeds almost nowhere else has no second lake to move to."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why is Lake Natron safer for a flamingo egg than a gentler lake would be? Use evidence from the passage.",
+            "Quote the phrase the author uses for the flamingos' daily trip across the caustic water, and explain the joke in it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the final sentence, and why the author saves it for the end."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the harsh lake + why it protects and feeds lesser flamingos + the single-site risk)",
+            "predators will not cross caustic water, so the mud islands are the safest cradles in Africa",
+            "quote: merely their commute; it treats a deadly crossing as an ordinary trip to work",
+            "(inform, with a persuasive turn at the end: it defines terms and gives figures, then argues about the soda ash plant)",
+            "(one breeding site means no backup; the author ends there so the risk is the last thing you hold)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["alkaline → ____", "caustic → ____", "creche → ____", "concentrate (verb) → ____"],
+          "rows": 1,
+          "answers": [
+            "soapy rather than acidic; harsh enough to sting skin",
+            "able to burn or irritate living tissue",
+            "a guarded crowd of chicks watched by a few adults",
+            "to build up and grow stronger as water leaves"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that harshness is protection. Explain that trade in your own words.",
+            "Why would voice recognition matter more at Natron than at a small pond with a few nests?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the birds accept dangerous water in exchange for a home no predator will enter)",
+            "(inference: with thousands of nearly identical chicks, sight is useless, so a parent needs a signal that works in a crowd)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a country be allowed to build a factory on a lake that most of one species depends on to breed? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird That Eats Its Own Pink",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-flamingo", "templateLabel": "The Bird That Eats Its Own Pink", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flamingo",
+          "notes": ["Phoenicopteridae: six living species", "The backward joint is an ankle, not a knee", "Chang and Ting, 2017: the one-legged stance costs almost no muscle", "Closest living relatives are grebes", "Mirandornithes means the miraculous birds", "The oldest known flamingo reached at least 83 years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Everything You Know About the Flamingo Is a Little Bit Wrong",
+          "text": "Everyone knows what a flamingo looks like, and almost everyone gets it wrong. Start with the leg. The joint halfway up a flamingo's leg bends backward, which looks like a knee installed the wrong way around. It is not a knee. It is an ankle. The flamingo's real knee sits high against its body, hidden under feathers, and it bends forward exactly like yours. What we are calling a shin is a foot. A flamingo, like every bird, walks permanently on tiptoe. Then there is the pose. A flamingo can stand on one leg for hours, sleeping, in wind, without visibly working at it. For a long time the standard explanation was heat: a bird standing in cold water bleeds warmth through its legs, so tucking one up halves the loss. That explanation is probably part of the truth. Flamingos do stand on one leg more often in cool water than in warm. But in 2017 two researchers, Young-Hui Chang and Lena Ting, tested something stranger. They took the body of a flamingo that had died at a zoo and stood it on one leg. It held the pose. A dead bird, with no muscles working at all, balanced. The joints, once stacked in the right position, lock under the animal's own weight. In living birds, sway actually drops as the flamingo dozes off, which is the opposite of what a difficult balancing act would do. Standing on one leg costs a flamingo almost nothing. It is resting in the cheapest position available to it. Now the family tree, which is where the flamingo becomes genuinely disorienting. For a century, biologists filed flamingos next to storks, or next to ducks, or next to herons, depending on which feature they weighted most. Long legs suggested storks. A filtering bill suggested ducks. Nobody could settle it, because a flamingo is a mosaic of borrowed-looking parts. Genetics settled it, and the answer was nobody's guess. The flamingo's closest living relatives are grebes: small, dumpy, short-legged diving birds that spend their lives low in freshwater ponds and can barely walk on land. Nothing about a grebe looks like a flamingo. Yet the DNA is unambiguous, and the two groups now share a branch with a name that admits the surprise: Mirandornithes, the miraculous birds. Whatever their common ancestor was, one line of its descendants went tall and pink and salt-tolerant, and the other went small and gray and underwater. That is the real lesson of the flamingo, and it is not about the pink. Looks lie. The leg that looks broken is built correctly. The pose that looks difficult is the easy one. The bird that looks like a stork is a cousin of something you would never pick out of a pond. Every one of those errors came from trusting appearance and stopping there. The flamingo has been standing in plain view the whole time, and we still had to test a body, sequence a genome, and measure the sway to work out what we were looking at."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the passage means by the claim that a flamingo \"walks permanently on tiptoe\". Cite the sentence just before it that sets the claim up.",
+            "What did the 2017 test show, and why is a dead bird stronger evidence here than a living one?",
+            "Identify where the passage turns from anatomy to ancestry, and name the move the author uses to signal the turn.",
+            "The passage states, \"Looks lie.\" Analyze how the final paragraph earns that claim, and whether two sentences are enough to carry it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: three common beliefs about flamingos are wrong, and only testing revealed it)",
+            "the backward joint is the ankle, so the bird stands on its foot bones; cite: What we are calling a shin is a foot",
+            "(the cadaver had no muscle activity, so the balance must be passive; a living bird could always be secretly working)",
+            "(at Now the family tree; a short signposting sentence plus a shift from what the bird does to what it is related to)",
+            "(the paragraph lists the three errors already proved in the passage, so the claim is earned rather than asserted; opinion on sufficiency)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["mosaic → ____", "unambiguous → ____", "weighted (as a verb) → ____", "descendants → ____"],
+          "rows": 2,
+          "answers": [
+            "something made of many mismatched pieces borrowed from elsewhere",
+            "having only one possible reading; leaving no room for doubt",
+            "gave more importance to one piece of evidence than another",
+            "the later generations that came down from an ancestor"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says biologists sorted flamingos \"depending on which feature they weighted most\". Explain the problem with classifying animals by how they look.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(appearance can be shaped by habit or habitat rather than ancestry, so unrelated animals converge and relatives diverge)",
+            "(student question + a credible source type, for example a peer-reviewed genetics paper or a field survey)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If two animals look nothing alike, they cannot be close relatives. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

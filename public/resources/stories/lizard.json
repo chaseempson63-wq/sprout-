@@ -1,0 +1,319 @@
+{
+  "key": "lizard",
+  "title": "The Lizard That Leaves Its Tail Behind",
+  "blurb": "A tail that snaps off on purpose, feet that stick to glass, and a body that runs on sunshine.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Lizard That Leaves Its Tail Behind",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-lizard", "templateLabel": "The Lizard That Leaves Its Tail Behind", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the lizard's long tail." },
+        {
+          "kind": "image",
+          "imageKey": "lizard",
+          "notes": ["It sits in the sun to get warm", "Its tail can come off", "A new tail grows back", "Its skin is dry and scaly", "It can run very fast"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a lizard. The lizard sits on a warm rock. The sun makes the lizard warm. A warm lizard can run fast. Look at its long tail. If a big bird grabs the tail, the tail comes off. The tail wiggles on the ground. The bird looks at the wiggly tail. The lizard runs away and hides. Later, the lizard grows a new tail."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the lizards in each row. Write how many in the box.",
+          "emoji": "🦎",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sun    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "lizard", "right": "warm rock" },
+            { "left": "fish", "right": "pond" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a lizard on a sunny rock. Give it a very long tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Lizard That Leaves Its Tail Behind",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-lizard", "templateLabel": "The Lizard That Leaves Its Tail Behind", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "lizard",
+          "notes": ["It cannot make its own heat", "It borrows heat from the sun", "Cold lizards are slow", "It moves to the shade when too hot", "It eats far less than a cat does"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lizard Who Borrows the Sun",
+          "text": "A lizard cannot make its own heat. It has to borrow heat from the sun. In the morning a lizard is slow and cold. It climbs onto a rock and lies flat in the sunshine. Its dark back soaks up the warmth. Soon the lizard is warm, and now it can run and hunt. When it gets too hot, the lizard moves into the shade. All day long it slides from sun to shade and back again. A lizard does not need much food. The sun does most of the work."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does the lizard get its heat?", "Why does the lizard lie on a rock?", "What does the lizard do when it gets too hot?"],
+          "rows": 2,
+          "answers": ["from the sun", "to soak up the warmth and get warm", "it moves into the shade"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A cold lizard is very ____.", "The lizard lies flat in the ____.", "When it is too hot it finds some ____.", "A warm lizard can run and ____."],
+          "wordBank": ["slow", "sunshine", "shade", "hunt"],
+          "answers": ["slow", "sunshine", "shade", "hunt"]
+        },
+        { "kind": "draw", "prompt": "Draw the lizard's day. Put the sun on one side and a shady rock on the other.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Lizard That Leaves Its Tail Behind",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-lizard", "templateLabel": "The Lizard That Leaves Its Tail Behind", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "lizard",
+          "notes": ["Autotomy means self cutting", "The tail has weak spots built in", "The dropped tail keeps twitching", "The new tail has no real bones", "The tail stores fat for later"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tail That Comes Off on Purpose",
+          "text": "Grab a lizard by the tail and you may end up holding only the tail. This is not an accident. Many lizards have weak spots built into the bones of their tails. When something clamps down, the lizard tightens a ring of muscle and the tail snaps off at one of those spots. Special valves squeeze the blood vessels shut, so the lizard barely bleeds. The loose tail keeps twitching on the ground for minutes. A hawk or a cat watches the twitching, and while it watches, the lizard is already gone. Scientists call this autotomy, which means self cutting. A new tail does grow back, but it is never quite the same. The first tail had bones inside. The new one has a rod of rubbery cartilage instead. It is shorter, often a different color, and it cannot break off again the way the first one did. Losing a tail costs the lizard, too. The tail stores fat, and a lizard without one may move slower and win fewer fights until the new tail arrives."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does the word autotomy mean?",
+            "Why does the lizard barely bleed when its tail comes off?",
+            "Name two ways the new tail is different from the first one.",
+            "Why do you think the dropped tail keeps twitching?"
+          ],
+          "rows": 2,
+          "answers": [
+            "self cutting",
+            "special valves squeeze the blood vessels shut",
+            "it has cartilage instead of bones, and it is shorter and often a different color",
+            "(inference: the twitching holds the predator's attention so the lizard can escape)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Tail That Comes Off on Purpose", "How to Catch a Hawk", "Why Cats Make Good Pets"],
+          "answers": ["The Tail That Comes Off on Purpose"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Scientists call the tail trick ____.", "The new tail has a rod of ____ inside it.", "A lizard's tail stores ____ for later."],
+          "wordBank": ["autotomy", "cartilage", "fat"],
+          "answers": ["autotomy", "cartilage", "fat"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: dropping a tail saves the lizard's life, but it also costs the lizard something. Explain the cost in your own words.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Lizard That Leaves Its Tail Behind",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-lizard", "templateLabel": "The Lizard That Leaves Its Tail Behind", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lizard",
+          "notes": ["A gecko can hang from glass by one toe", "Its toes are covered in tiny hairs called setae", "Each hair splits into hundreds of finer tips", "No glue and no suction involved", "Engineers copied it to build climbing robots"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lizard That Walks on Glass",
+          "text": "A gecko can walk up a pane of glass and hang there by one toe. For a long time nobody could explain it. The obvious answers all failed. Geckos have no glue on their feet, and their toes leave no sticky residue behind. They do not use suction, because a gecko sticks perfectly well in a vacuum chamber where there is no air to push. They are not using tiny hooks either, since glass is far too smooth to hook onto. The answer turned out to be hair. Look at the underside of a gecko's toe and you see rows of soft ridges. Look at a ridge under a microscope and each one is carpeted with millions of hairs called setae, thinner than a human hair. Look at the tip of one seta and it splits again into hundreds of even finer tips. All of that splitting is the point. It lets the gecko press an enormous amount of surface against the glass, close enough that the faint attraction between molecules takes over. Any two things pull on each other a little when they are almost touching. The pull is far too weak to notice at the size we live at, but a gecko has billions of contact points, and billions of tiny pulls add up to a lizard that does not fall. Best of all, it switches off. By changing the angle of its toes, a gecko peels each hair away and lifts its foot in milliseconds. Engineers have copied the trick to build climbing robots and tape that grips without any glue at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "How did scientists prove that geckos do not use suction?",
+            "Explain in your own words why splitting each hair into hundreds of tips helps the gecko.",
+            "The passage says the gecko's grip switches off. Why would an animal need a grip it can turn off?",
+            "Why do you think engineers are so interested in copying a gecko's foot?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a gecko still sticks inside a vacuum chamber, where there is no air to push",
+            "(more tips means far more contact points, and each one adds a tiny pull)",
+            "(inference: it has to lift its foot to take the next step, so it must release quickly)",
+            "(inference: a grip that needs no glue, leaves no mess, and works over and over is useful)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A gecko climbs glass using billions of tiny hair tips, not glue or suction",
+            "Geckos are the fastest lizards in the world",
+            "Glass is the only surface a gecko can walk on"
+          ],
+          "answers": ["A gecko climbs glass using billions of tiny hair tips, not glue or suction"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["residue → ____", "setae → ____", "contact points → ____"],
+          "rows": 1,
+          "answers": [
+            "a trace of something left behind",
+            "the millions of tiny hairs on a gecko's toe",
+            "the places where two surfaces actually touch"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: invent something useful that could be built out of gecko tape. Explain how it works and who would use it.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Lizard That Leaves Its Tail Behind",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-lizard", "templateLabel": "The Lizard That Leaves Its Tail Behind", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lizard",
+          "notes": ["Chameleons are lizards", "Iridophore cells hold crystals, not pigment", "Stretching the crystal lattice shifts the color", "Color change is mostly for signaling", "A deeper crystal layer reflects heat", "Swiss researchers worked it out in 2015"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lizard That Tunes Its Own Color",
+          "text": "For a long time the story went like this: a chameleon changes color to match its background, spreading pigment through its skin like ink through water. Half of that story is wrong, and the half that is right is far stranger than ink. Start with what chameleons actually do. A calm male panther chameleon sits green in the leaves. Show him a rival and within two minutes he blazes yellow and orange and white. That is not camouflage. That is an argument. Chameleons change color mostly to talk, to threaten a rival, to court a female, to signal surrender, and to control their temperature by going dark in the cool morning and pale in the midday heat. Blending in matters, but it is not the main job. Now the mechanism. Chameleon skin does contain pigment cells, yellow and red and brown ones, and those play a part. But underneath them sits a layer of cells called iridophores, and iridophores hold no pigment at all. Each one is packed with a neat three dimensional lattice of tiny crystals, arranged in rows like oranges stacked in a crate. Light bouncing off that lattice interferes with itself. Some wavelengths cancel out, one wavelength reflects back strongly, and that is the color you see. The color is not a dye. It is a structure, the same way a soap bubble or a beetle's shell makes color out of shape rather than paint. Here is the clever part, worked out by Swiss researchers in 2015. When the chameleon gets excited, it stretches the lattice. The crystals move slightly farther apart. Wider spacing reflects longer wavelengths, so blue slides toward yellow, and yellow slides toward orange and red. The chameleon is not painting itself. It is tuning itself, the way you tune a string by changing its tension. There is a second, deeper layer of larger crystals that reflects heat instead of visible light, which helps the animal survive strong sun. So a chameleon's skin is doing two jobs at once with no pigment involved: shouting at rivals, and managing the temperature of a small cold blooded animal in a hot place."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is the main reason chameleons change color, and what is the popular story the passage corrects?",
+            "Explain how stretching the lattice changes the color the chameleon shows.",
+            "The passage says the color is not a dye. Quote the four word phrase it uses instead, and explain the difference.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering signaling + crystal lattice tuning + heat control)",
+            "signaling to other chameleons and controlling temperature; the popular story is that they change color to match the background",
+            "the crystals move farther apart, wider spacing reflects longer wavelengths, so blue shifts toward yellow, orange, and red",
+            "quote: It is a structure. A dye is a chemical that absorbs light; a structure makes color from its shape",
+            "(inform, with detail: it defines terms, cites a date and researchers, and explains a mechanism)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["pigment → ____", "lattice → ____", "wavelength → ____", "camouflage → ____"],
+          "rows": 1,
+          "answers": [
+            "a substance that gives color by absorbing light",
+            "a regular repeating arrangement of parts",
+            "the spacing of a light wave, which decides the color we see",
+            "coloring that helps an animal blend into its surroundings"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage compares the chameleon to a soap bubble and to a tuned string. Explain what each comparison is meant to teach.",
+            "Why might a color made from structure be more useful to an animal than a color made from pigment?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the bubble shows color from shape rather than paint; the string shows that tension changes the result)",
+            "(inference: structure can be changed in seconds, while making and moving pigment is slower and costlier)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the old explanation for chameleon color was wrong for over a hundred years. Is it a failure or a normal part of science? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Lizard That Leaves Its Tail Behind",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-lizard", "templateLabel": "The Lizard That Leaves Its Tail Behind", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lizard",
+          "notes": ["More than 7,000 known species of lizard", "Ectothermic: it takes its heat from the world", "Runs on roughly a tenth of a mammal's food", "Many carry a parietal eye on top of the skull", "Komodo dragon: 10 feet, over 150 pounds", "Zootoca vivipara lives above the Arctic Circle"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Solar Powered Animal",
+          "text": "Ask most people what a lizard is and you get a list of features: scales, four legs, a long tail, a flicking tongue. That is a description, not an explanation. The thing that actually explains a lizard, the decision underneath every other part of its design, is that it does not pay to heat itself. You do. Roughly speaking, a mammal spends the large majority of everything it eats on one job: holding its body at a steady temperature, day and night, awake and asleep, in summer and in winter. That is why you are warm to the touch, and it is why you have to eat every single day. A lizard has opted out. It takes its heat from the world instead, from sunlight, from a rock that has been baking since noon, from warm sand. A reptile can run its whole body on something like a tenth of the food an equally sized mammal needs. That discount is enormous, and it buys a lizard two things. The first is the desert. A place with almost no food is a disaster for an animal with a furnace to feed, and a reasonable home for one that does not. Deserts are full of lizards for the same reason they are short on mammals. The second is patience. A Komodo dragon, the largest lizard alive, reaches ten feet long and can top one hundred and fifty pounds. It can swallow up to eighty percent of its body weight at one sitting and then go weeks without eating anything at all. No lion can live like that. Nothing is free, and the price of cheap heat is that the lizard does not control it. A cold lizard is a slow lizard. It cannot digest its breakfast, outrun a bird, or chase a mate until the sun has done its work, so the animal's day becomes a scheduling problem. Bask, warm up, hunt, overheat, retreat to shade, cool down, return. Watch a lizard for an hour and most of what you are watching is temperature management. Many lizards even carry a dedicated instrument for the job: a small pale scale on the top of the skull, called the parietal eye, with its own lens and its own retina. It cannot form a picture. It reads brightness, and it helps the animal track the sun, keep time, and know how long it has been out in the open. The bill comes due at the edges of the map. Sunlight is a reliable power source near the equator and a poor one near the poles, which is why lizard variety thins out as you travel north and collapses in the far north. The exceptions are instructive. One small lizard, Zootoca vivipara, lives above the Arctic Circle, and it manages this by refusing to lay eggs. Cold northern soil cannot incubate them, so the female carries her young inside her body and warms them with the only heat available: her own basking. Where the strategy stops working, evolution bends it rather than abandons it. It is tempting to read all of this as primitive, as though the lizard were a rough draft and the mammal a finished copy. That reading has the story backward. Warm blood is not an upgrade. It is an expensive option, one that buys speed and night work and cold climates, and it is paid for with a lifetime of relentless eating. Cold blood buys cheapness, patience, and the ability to live where almost nothing does, and it is paid for with a dependence on the weather. There are around six thousand species of mammal on Earth and more than seven thousand species of lizard. Neither strategy is winning. They are simply solving different problems with different budgets."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says a list of features is a description, not an explanation. What does the author offer as the real explanation of a lizard? Cite the exact words.",
+            "Explain the trade at the heart of the passage: what does cheap heat buy, and what does it cost?",
+            "Why does the author include Zootoca vivipara? Cite the sentence that states the point of the example.",
+            "The passage ends by saying neither strategy is winning. Analyze what that closing move is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the lizard does not heat itself; cite: it does not pay to heat itself)",
+            "(buys: deserts, patience, a tenth of the food, long fasts; costs: no control of body temperature, dependence on sun, no cold climates)",
+            "(it shows the strategy adapting at its limit; cite: Where the strategy stops working, evolution bends it rather than abandons it)",
+            "(it refuses the ladder of progress framing and reframes both as budgets; earned by the food-cost and species-count evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["opted out → ____", "incubate → ____", "instructive → ____", "relentless → ____"],
+          "rows": 2,
+          "answers": [
+            "chose not to take part in something",
+            "to keep eggs warm so they develop",
+            "useful for teaching or making a point clear",
+            "never stopping or easing off"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls the parietal eye an instrument rather than an eye. Explain why that word choice is precise.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it does not form images; it measures light, so it is a sensor for a job rather than an organ of sight)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: warm blooded animals are simply more advanced than cold blooded ones. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

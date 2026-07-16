@@ -1,0 +1,315 @@
+{
+  "key": "lighthouse",
+  "title": "The Tower That Talks to Ships",
+  "blurb": "A tall stone tower, a lens made of rings, and a light that tells sailors exactly where the rocks are.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Tower That Talks to Ships",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-lighthouse", "templateLabel": "The Tower That Talks to Ships", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the light at the very top." },
+        {
+          "kind": "image",
+          "imageKey": "lighthouse",
+          "notes": ["It stands beside the sea", "The light goes round and round", "It keeps boats away from rocks", "It shines all night long"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a lighthouse. It stands beside the sea. The lighthouse is tall. At the top is a big light. The light goes round and round. It shines out over the water. Boats see the light in the dark. The light says: rocks are here, stay away. The boats go around the rocks. They get home safe."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the boats in each row. Write how many in the box.",
+          "emoji": "⛵",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "light    boat" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "lighthouse", "right": "sea" },
+            { "left": "bird", "right": "sky" },
+            { "left": "car", "right": "road" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own lighthouse. Put a little boat on the water beside it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tower That Talks to Ships",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-lighthouse", "templateLabel": "The Tower That Talks to Ships", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "lighthouse",
+          "notes": ["The light turns in a slow circle", "It warns boats about rocks", "A keeper used to live inside", "There are stairs all the way up", "Now most lighthouses turn themselves on"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tower That Talks to Ships",
+          "text": "A lighthouse is a tall tower by the sea. Near the shore there are rocks hiding under the water. A boat can hit them in the dark. So we build a lighthouse and put a bright light at the top. The light turns in a slow circle. From a boat far away, it looks like the light is blinking. Sailors watch for it. They know that flash means keep away from here. Long ago, a keeper lived inside the tower. Every night the keeper climbed the stairs and lit the lamp. Now most lighthouses turn themselves on."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is hiding under the water near the shore?", "What does the light at the top do?", "Who used to live inside the tower?"],
+          "rows": 2,
+          "answers": ["rocks", "it turns in a slow circle and shines out to sea", "a keeper"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A lighthouse is a tall ____ by the sea.", "The light turns in a slow ____.", "The flash tells ____ to stay away.", "The keeper climbed the ____ every night."],
+          "wordBank": ["tower", "circle", "sailors", "stairs"],
+          "answers": ["tower", "circle", "sailors", "stairs"]
+        },
+        { "kind": "draw", "prompt": "Draw the lighthouse at night. Show the beam shining out over the water.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tower That Talks to Ships",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-lighthouse", "templateLabel": "The Tower That Talks to Ships", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "lighthouse",
+          "notes": ["Every lighthouse has its own flash pattern", "The painted stripes are called a daymark", "Cape Hatteras wears a black and white spiral", "Sailors timed the flashes with a watch", "Fog horns take over when you cannot see"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Lighthouse Says Its Own Name",
+          "text": "At night, one light on a dark coast looks much like another. That was a real problem for sailors. A captain could see a light and still not know which light it was, or which rocks it was warning about. So lighthouse builders gave every tower its own pattern of flashes. One might flash once every ten seconds. Another might send two quick flashes, then wait. A sailor pulled out a watch, counted the seconds, and looked the pattern up in a book called a light list. The pattern told him exactly where he was. Daytime needed a different trick. In daylight the beam is useless, so the tower itself has to be the signal. That is why lighthouses wear such strange paint. One is candy striped in red and white. One is checkered. Cape Hatteras in North Carolina is wrapped in a black and white spiral. Those patterns are called daymarks, and along one stretch of coast, no two are the same. A lighthouse is really one message sent two ways: you are here, and the rocks are close."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why was seeing a light at night not enough for a captain?",
+            "How did a sailor work out which lighthouse he was looking at?",
+            "What is a daymark, and when is it needed?",
+            "Why do you think a lighthouse is built so tall?"
+          ],
+          "rows": 2,
+          "answers": [
+            "every light looked the same, so he could not tell which rocks it warned about",
+            "he timed the flashes with a watch and looked the pattern up in a light list",
+            "the painted pattern on the tower; it is needed in daylight when the beam is useless",
+            "(inference: so the light can be seen from far away, over the curve of the sea)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Lighthouse Says Its Own Name", "The Best Beaches in North Carolina", "How to Paint a Wooden Boat"],
+          "answers": ["How a Lighthouse Says Its Own Name"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A sailor looked the flash pattern up in a ____ list.", "The painted pattern on a tower is called a ____.", "Cape Hatteras is wrapped in a black and white ____."],
+          "wordBank": ["light", "daymark", "spiral"],
+          "answers": ["light", "daymark", "spiral"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you built a lighthouse, what flash pattern and what paint pattern would you give it, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tower That Talks to Ships",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-lighthouse", "templateLabel": "The Tower That Talks to Ships", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lighthouse",
+          "notes": ["A Fresnel lens is rings of prisms", "Designed in 1822 by Augustin Fresnel", "A falling weight turned the lens, like a clock", "Keepers were nicknamed wickies", "The light never blinks, the beam sweeps", "Later lenses floated on liquid mercury"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lens That Bends the Light",
+          "text": "A flame does not aim. Put a lamp at the top of a tower and its light spills out in every direction, up into the clouds, down onto the rocks, out to sea. Only a sliver of it ever reaches a ship. For hundreds of years that was the best anyone could do. Keepers burned wood, then coal, then whale oil, and captains squinted for a smudge of orange on the horizon. In 1822 a French engineer named Augustin Fresnel solved it. He built a lens out of rings. Each ring is a prism, a wedge of glass that bends light as it passes through, and every ring is angled a little differently. Light that would have escaped upward gets bent down. Light heading for the floor gets bent up. All of it leaves the lens together in one flat, hard beam. A Fresnel lens can be twelve feet tall and still weigh far less than a solid lens of the same power would. It turned a candle into a searchlight. Then came the second problem: the beam had to sweep. So engineers borrowed from clocks. A heavy weight hung on a chain down the middle of the tower. As the weight sank, it turned gears, and the gears turned the whole lens around the lamp. The keeper wound that weight back up every few hours, all night, every night. He also trimmed the lamp wick, which is why keepers were nicknamed wickies. The light never blinked. It swung, like a slow arm, past you and away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Before the Fresnel lens, why did so little of a lamp's light ever reach a ship?",
+            "Explain in your own words how a Fresnel lens gets more light out to sea.",
+            "The passage says the light never blinked. If that is true, why does a sailor see a flash?",
+            "The keeper wound the weight back up every few hours, all night, every night. What does that tell you about the job?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the light spilled out in every direction, so only a sliver of it went toward the ship",
+            "its rings of prisms bend stray light back into one flat beam aimed at the horizon",
+            "the lens rotates, so the beam sweeps past the sailor's eye and looks like a flash",
+            "(inference: it was exhausting, lonely, and left no room for sleeping through the night)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Two inventions, a lens made of rings and a clockwork motor, turned a weak flame into a sweeping beam",
+            "Whale oil is the best lamp fuel ever discovered",
+            "French engineers built most of the world's towers"
+          ],
+          "answers": ["Two inventions, a lens made of rings and a clockwork motor, turned a weak flame into a sweeping beam"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["prism → ____", "sliver → ____", "wickies → ____"],
+          "rows": 1,
+          "answers": ["a wedge of glass that bends light passing through it", "a tiny piece or share of something", "the nickname for lighthouse keepers, from trimming the lamp wick"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: was lighthouse keeper a good job or a hard one? Give two reasons drawn from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tower That Talks to Ships",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-lighthouse", "templateLabel": "The Tower That Talks to Ships", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lighthouse",
+          "notes": ["Bell Rock vanishes under the sea at high tide", "Built by Robert Stevenson, 1807 to 1811", "Granite blocks lock together with dovetail joints", "The oldest sea washed lighthouse still standing", "Its mortar hardens in water instead of dissolving", "Robert Louis Stevenson came from that family"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Building on a Rock That Disappears",
+          "text": "Eleven miles off the east coast of Scotland there is a reef called the Bell Rock. For most of the day it does not exist. At high tide the sea closes over it completely, and a ship can sail across the spot without seeing a thing. Then the tide falls, the rock surfaces, and any ship that misjudged the water is opened up like a tin can. For centuries it was the most feared hazard on that coast. The obvious answer was a lighthouse. The obvious objection was that you cannot build on a foundation that is underwater most of the time. Robert Stevenson took the job anyway. Work began in 1807. His crews could only cut stone on the rock during the few hours around low tide, and when the water came back they rowed to a ship anchored nearby and waited. Later they built a wooden hut on stilts above the reef so they could sleep over the waves instead of losing hours to the crossing. Every block of granite was shaped on shore first, then floated out and locked into its neighbors with dovetail joints, the same interlocking pattern a carpenter uses, cut into stone. Nothing held the tower together but its own weight and the shape of the blocks. The mortar was hydraulic lime, a cement that hardens underwater rather than dissolving. The light first shone in 1811. It is still shining. The Bell Rock Lighthouse is the oldest sea washed lighthouse left standing anywhere, and in more than two hundred years of storms the tower has never needed its stonework rebuilt. What Stevenson understood was that the sea does not push a tower over. It pulls it apart, block by block, finding the weak seam. So he built a tower with no weak seams. Everything since, every rock lighthouse on every dangerous reef, is a variation on that idea. The keepers are gone now, replaced by machines and solar panels, but the stone they were sent to live in is exactly where they left it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why was the Bell Rock more dangerous than a reef a sailor can always see?",
+            "Explain the two things Stevenson did so the tower could hold itself together. Quote the phrase the passage uses for the joint he cut into the granite.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the sea does not push a tower over, it pulls it apart. Explain what that means for how you would design the tower."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the hidden reef, the dovetailed granite tower, and that it still stands)",
+            "it is invisible at high tide, so a ship can be right on top of it and see nothing",
+            "he dovetailed the blocks into each other and used hydraulic lime; quote: dovetail joints",
+            "(inform, with detail: it gives dates, names, and methods; the storytelling tone also entertains)",
+            "(you build so every joint locks, because the sea attacks the seams rather than the mass)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["reef → ____", "hazard → ____", "dovetail → ____", "hydraulic lime → ____"],
+          "rows": 1,
+          "answers": [
+            "a ridge of rock or sand lying just under the surface of the sea",
+            "a danger, something that could cause harm",
+            "an interlocking joint where each piece grips its neighbor",
+            "a cement that sets hard underwater instead of washing away"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The last line says the stone is exactly where they left it. Why does the author end the passage there?",
+            "Machines and solar panels replaced the keepers. What was gained by that, and what was lost?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the people are gone but the work outlasted them; it closes on the tower's endurance)",
+            "(opinion: gained safety, cost, and reliability; lost human judgment, rescue, and a way of life)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: now that ships navigate by satellite, should countries keep paying to maintain old lighthouses? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tower That Talks to Ships",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-lighthouse", "templateLabel": "The Tower That Talks to Ships", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lighthouse",
+          "notes": ["Cape Hatteras Light: 198 feet of brick", "About 1.25 million bricks", "Moved 2,900 feet inland in 1999", "The move took 23 days", "Diamond Shoals reach 14 miles out to sea", "Boston Light is the last staffed US lighthouse"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lighthouse That Walked Inland",
+          "text": "Every lighthouse is an argument with the ocean, and the ocean is patient. Cape Hatteras sits on a thin curve of sand off North Carolina, and just offshore, hidden under the swell, lie the Diamond Shoals: shifting sandbars that reach almost fourteen miles out to sea. Two ocean currents collide there, the warm Gulf Stream running north and the cold Labrador Current running south, and the sand they carry piles into ridges that move. Hundreds of ships have been lost on them. Sailors named that stretch of coast the Graveyard of the Atlantic, and they were not being dramatic. The lighthouse built to answer the Shoals was lit in 1870. At 198 feet it is the tallest brick lighthouse in the United States, roughly 1.25 million bricks wrapped in a black and white spiral so that captains could identify it in daylight, when its beam is worthless. At the top sat a first order Fresnel lens: a barrel of glass rings, each one a prism angled to catch light that would otherwise have wandered off into the sky and bend it flat, out toward the horizon. The lens did not blink. It rotated, and what a sailor twenty miles offshore saw as a flash was simply the beam sweeping past his eye. It worked. What nobody had solved was the ground. Barrier islands are not land in the way a continent is land. They are sand in transit, pushed and rebuilt by every storm, and the Atlantic side of Hatteras had been eating itself westward for as long as anyone had measured it. When the tower was built it stood about 1,500 feet from the water. By the 1930s the sea was at its base. Engineers fought back for sixty years with groins, sandbags, and artificial dunes, and the ocean took all of it. By the 1980s the argument was over. The shoreline had closed to about 120 feet. One serious hurricane would have finished the job. So in 1999 they moved it. The tower weighs roughly 4,800 tons and is made of brick, a material with no interest in being flexible. Movers cut it free of its foundation, slid steel beams beneath it, lifted the whole thing on hydraulic jacks, and pushed it along a track of steel rails in five foot increments, leapfrogging the rails forward as it went. It traveled 2,900 feet inland over twenty three days. The crack that everyone dreaded never appeared. The light was relit on its new foundation, a little over half a mile from where it had stood for 129 years, and the beach it left behind is now underwater. There is an obvious question hiding in all that effort. Ships do not need Cape Hatteras any more. A modern vessel knows where it is to within a few feet from satellites, in fog, at night, in weather that would have hidden any beam ever built. The Fresnel lens is a museum piece. Most lighthouses were automated decades ago and their keepers sent home, and the last staffed light in the United States is Boston Light, which is staffed because Congress passed a law saying so, not because anyone needs a person there. Which means the move was not really about navigation. We spent millions of dollars and twenty three days walking a brick tower across a sand dune to preserve a machine we had already replaced. That is worth sitting with. A lighthouse is one of the few structures humans build purely for the benefit of strangers they will never meet, and switching it off, or letting the sea have it, would say something we were not ready to say. The Shoals are still there. The current still runs. And the argument with the ocean, which the ocean is winning, has simply been carried a little further up the beach."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage opens and closes on the same image. Quote both sentences exactly, and explain what the author gains by framing the piece that way.",
+            "Explain how the Fresnel lens works, and explain why the passage insists the lens did not blink.",
+            "Find the shortest paragraph in the passage. Quote it, and explain why the author gave those words a paragraph of their own.",
+            "The author claims the move was not really about navigation. What does the passage argue it was about instead, and does the evidence earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a famous brick tower was relocated to escape an eroding shore long after satellites made it unnecessary)",
+            "(quote: Every lighthouse is an argument with the ocean, and the ocean is patient. / And the argument with the ocean, which the ocean is winning, has simply been carried a little further up the beach. The frame turns a list of facts into one sustained idea and lets the ending land)",
+            "(rings of prisms bend stray light into a flat horizontal beam; the lens rotates, so a flash is the beam sweeping past, not the light switching off)",
+            "(quote: So in 1999 they moved it. A one-line paragraph after a long build-up gives the decision weight and marks the turn)",
+            "(it argues the move was about what a lighthouse means: a thing built for strangers, which we were not ready to abandon. Evidence: the satellite comparison, the museum-piece lens, the Boston Light law)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["shoals → ____", "in transit → ____", "groins → ____", "automated → ____"],
+          "rows": 2,
+          "answers": [
+            "shallow banks of sand or rock near the surface of the sea",
+            "in the middle of moving from one place to another",
+            "barriers built out into the water to trap moving sand",
+            "changed so a machine runs it without a person"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says barrier islands are sand in transit. Explain why that fact makes any permanent building on one a temporary decision.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the island itself migrates, so a fixed structure is measured against ground that keeps moving; every building there is on borrowed time)",
+            "(student question plus a credible source type, such as a coastal geology survey or the engineering report on the 1999 move)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A lighthouse no ship needs is a monument, not a machine, and should be paid for out of the museum budget or not at all. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

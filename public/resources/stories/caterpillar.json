@@ -1,0 +1,319 @@
+{
+  "key": "caterpillar",
+  "title": "The Caterpillar That Rebuilds Itself",
+  "blurb": "A soft green eating machine with twelve tiny eyes that dissolves almost everything it is, then builds a butterfly out of the leftovers.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Caterpillar That Rebuilds Itself",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-caterpillar", "templateLabel": "The Caterpillar That Rebuilds Itself", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the caterpillar's little legs." },
+        {
+          "kind": "image",
+          "imageKey": "caterpillar",
+          "notes": ["It eats leaves all day", "It has lots of little legs", "It wiggles out of its old skin", "One day it will be a butterfly"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a caterpillar. It is soft and green. It has a small round head. It eats leaves all day. Munch, munch, munch. It gets bigger and bigger. Soon its skin is too tight. So the caterpillar wiggles out of the old skin. Under it is new skin that fits. Then it eats some more. One day it will be a butterfly. But first, it eats."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves in each row. Write how many in the box.",
+          "emoji": "🍃",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "eat    grow" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "caterpillar", "right": "leaf" },
+            { "left": "bee", "right": "flower" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a caterpillar on a big leaf. Give it lots of little legs.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Caterpillar That Rebuilds Itself",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-caterpillar", "templateLabel": "The Caterpillar That Rebuilds Itself", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "caterpillar",
+          "notes": ["It hatches from a tiny egg", "Its only job is to eat", "It has six real legs at the front", "The soft back legs have tiny hooks", "It can hang upside down and not fall"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Caterpillar That Rebuilds Itself",
+          "text": "A caterpillar hatches from an egg. The egg is smaller than a grain of rice. The caterpillar's first job is to eat. It eats and eats and eats. In two weeks it can grow thousands of times heavier than when it hatched. A caterpillar has six real legs at the front. It has soft stubby legs at the back. Those soft legs have tiny hooks on them. The hooks grab the leaf and hold on tight. That is why a caterpillar can walk upside down under a branch and never fall."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a caterpillar hatch from?", "What is its first job?", "What is on the soft back legs?"],
+          "rows": 2,
+          "answers": ["an egg", "to eat", "tiny hooks"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A caterpillar hatches from an ____.", "Its first job is to ____.", "It has ____ real legs at the front.", "Tiny ____ help it hold the leaf."],
+          "wordBank": ["egg", "eat", "six", "hooks"],
+          "answers": ["egg", "eat", "six", "hooks"]
+        },
+        { "kind": "draw", "prompt": "Draw a caterpillar hanging upside down under a branch. Add the leaves it has been eating.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Caterpillar That Rebuilds Itself",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-caterpillar", "templateLabel": "The Caterpillar That Rebuilds Itself", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "caterpillar",
+          "notes": ["Six real legs, plus soft stumps called prolegs", "Prolegs are covered in tiny hooks", "It breathes through holes in its sides", "It sheds its skin four or five times", "The name means hairy cat in old French"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Body Built for Eating",
+          "text": "Look closely at a caterpillar and you will find a body built for one job. Up front are six real legs. Those are the same six legs it will keep when it is a butterfly. Behind them are fat little stumps called prolegs. Prolegs are not real legs at all. They are soft, and the bottom of each one is covered in tiny hooks. Those hooks grip a leaf so well that a caterpillar can hang under a branch in the wind and stay put. A caterpillar has no nose and no lungs. It breathes through a row of small holes along its sides. The holes are called spiracles. Air goes in through them and travels around the body in tiny tubes. It also has a problem. A caterpillar's skin is stiff and does not stretch much, but the caterpillar keeps growing. So every few days it splits the old skin down the back and crawls out of it. Underneath is a new, roomier skin that has been waiting all along. Most caterpillars do this four or five times before they finish growing. The old skin is left behind on the leaf, empty, still shaped like the animal that walked out of it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the one job a caterpillar's body is built for?",
+            "What are prolegs, and how are they different from real legs?",
+            "How does a caterpillar breathe?",
+            "Why do you think a caterpillar has to shed its skin instead of just stretching?"
+          ],
+          "rows": 2,
+          "answers": [
+            "eating",
+            "soft stumps covered in tiny hooks; they are not real legs and the butterfly does not keep them",
+            "through small holes in its sides called spiracles",
+            "(inference: its skin is stiff and cannot grow with it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A Body Built for Eating", "How to Plant a Vegetable Garden", "The Fastest Bird in the World"],
+          "answers": ["A Body Built for Eating"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A caterpillar breathes through holes called ____.", "The soft back stumps are called ____.", "Most caterpillars shed their skin four or ____ times."],
+          "wordBank": ["spiracles", "prolegs", "five"],
+          "answers": ["spiracles", "prolegs", "five"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing a caterpillar's body does, and why do you think it is strange?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Caterpillar That Rebuilds Itself",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-caterpillar", "templateLabel": "The Caterpillar That Rebuilds Itself", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "caterpillar",
+          "notes": ["A caterpillar is a larva: the feeding stage", "Twelve simple eyes, and still nearly blind", "Silk comes out of a nozzle below the jaws", "Each stage between molts is an instar", "Monarchs store milkweed poison in their bodies", "Bold bands are a warning, not decoration"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Eating Stage",
+          "text": "Every caterpillar is a larva, which is the young feeding stage of a butterfly or a moth. Its whole design points at one task. The head is a hard capsule carrying a pair of jaws that work sideways, like scissors, chewing through leaf after leaf. Just below the jaws is a spinneret, a nozzle that squeezes out liquid silk. The silk hardens the moment it meets the air. A caterpillar lays a silk trail wherever it goes and grips that trail with its hooked prolegs, which is a large part of why it does not fall. You might expect an animal that hunts for leaves all day to have good eyes. It does not. On each side of its head sit six tiny simple eyes called stemmata. All twelve together can tell light from dark and not much more. A caterpillar finds its meal mostly by touch and by smell, tapping the world with a pair of short antennae. Growth is the whole point, and growth is also the whole problem. A caterpillar's outer skin is stiff and cannot stretch far. So the caterpillar eats until that skin is painfully tight, splits it, and climbs out wearing a larger one that formed underneath. Each stage between molts is called an instar. Most caterpillars pass through five instars in a few weeks and finish thousands of times heavier than the speck that hatched from the egg. Monarch caterpillars go one step further. They feed only on milkweed, a plant that carries bitter chemicals strong enough to make a bird sick. Instead of breaking those chemicals down, the caterpillar stores them in its own body. Its bold yellow, black, and white bands are not decoration. They are a warning, and birds learn to read it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is a larva, and why is a caterpillar called one?",
+            "The passage says growth is the whole point and also the whole problem. Explain the problem.",
+            "Why does a monarch caterpillar keep the milkweed chemicals instead of getting rid of them?",
+            "The passage says birds learn to read the monarch's warning. What does a bird have to do before it can learn it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the young feeding stage of a butterfly or moth; a caterpillar does nothing but feed and grow",
+            "its skin is stiff and will not stretch, so it must shed the skin to keep growing",
+            "the chemicals make the caterpillar itself taste bitter and sicken anything that eats it",
+            "(inference: a bird has to try one, get sick, and connect the bands to feeling ill)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A caterpillar's whole body is built to eat, grow, and molt, and some turn their food into a defense",
+            "Milkweed is the most common plant in North America",
+            "Butterflies have sharper eyesight than any bird"
+          ],
+          "answers": ["A caterpillar's whole body is built to eat, grow, and molt, and some turn their food into a defense"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["larva → ____", "instar → ____", "spinneret → ____"],
+          "rows": 1,
+          "answers": [
+            "the young feeding stage of an insect",
+            "a stage of a caterpillar's life between two molts",
+            "the nozzle below the jaws that pushes out liquid silk"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: a caterpillar spends nearly every waking moment eating. Is that a dull life or a well designed one? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Caterpillar That Rebuilds Itself",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-caterpillar", "templateLabel": "The Caterpillar That Rebuilds Itself", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "caterpillar",
+          "notes": ["Butterflies make a chrysalis, moths usually spin a cocoon", "Enzymes dissolve most of the caterpillar's tissue", "Imaginal discs are carried from the day it hatches", "One disc per wing, leg, eye, and antenna", "Parts of the nervous system survive the rebuild", "Metamorphosis is Greek for a change of shape"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Eating Yourself Into Something Else",
+          "text": "The caterpillar's last act is the strangest thing it does. After weeks of nothing but eating and molting, something changes. The caterpillar stops feeding, empties its gut, and wanders away from the plant that fed it. A monarch spins a small button of silk on the underside of a leaf, grips the button with a hook at its tail, and hangs upside down in the shape of the letter J. Then it molts one final time. The skin peels back, and what emerges is not a bigger caterpillar. It is a chrysalis: a smooth, sealed case with no legs, no jaws, and no way to eat. People often say the caterpillar turns to soup inside. That is close to true, and it badly undersells what is happening. Most of the caterpillar's tissue really does break down. Enzymes dissolve muscle and gut into a thick broth of raw material. But the broth is not the story. Since the day it hatched, the caterpillar has carried small folded clusters of cells called imaginal discs, tucked away and doing nothing at all. There is a disc for each wing, for each leg, for the eyes, for the antennae. Inside the chrysalis those discs finally switch on. They feed on the dissolved caterpillar and build the butterfly out of it. The animal is quite literally consuming itself in order to construct its own replacement. Not everything melts. Much of the nervous system carries through, which raises an obvious question: does the butterfly remember being a caterpillar? In 2008, a research team at Georgetown University trained tobacco hornworm caterpillars to avoid one particular smell. Weeks later, the moths those caterpillars had become still avoided it. Something had crossed the gap. This is why the word for what happens here is not growth. It is metamorphosis, from Greek words meaning a change of shape. Growing is what the caterpillar did for weeks on the leaf. Rebuilding a new animal out of its own dissolved body is something else entirely."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "List, in order, three things a monarch caterpillar does to get ready before it becomes a chrysalis.",
+            "The passage says the soup idea undersells what is happening. What does it say the soup leaves out? Quote the phrase the passage uses for the cells that do the building.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end by insisting the word is not growth but metamorphosis?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the chrysalis, the dissolving, and the imaginal discs building the butterfly)",
+            "it stops feeding, empties its gut, leaves the plant, spins a silk button, and hangs in a J (any three, in order)",
+            "it leaves out the building; quote: small folded clusters of cells called imaginal discs",
+            "(inform, with detail: it defines terms and cites a real study; the tone is admiring but the purpose is explaining)",
+            "(growth is getting bigger; this is a full rebuild into a different animal, so a different word is needed)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["chrysalis → ____", "imaginal discs → ____", "enzymes → ____", "metamorphosis → ____"],
+          "rows": 1,
+          "answers": [
+            "the sealed case a butterfly forms after its last molt",
+            "packets of cells carried from hatching that build the adult body",
+            "substances that break tissue down into raw material",
+            "a change of shape from one body plan into a different one"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The imaginal discs sit and do nothing for weeks. Why is it worth carrying cells that do nothing?",
+            "The 2008 moths avoided a smell they learned as caterpillars. Why is that surprising, given what happens inside the chrysalis?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(they cost almost nothing to carry and they are the only way to build the adult later)",
+            "(inference: if most of the body dissolves, you would not expect a learned memory to survive)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is the butterfly the same animal as the caterpillar, or a new one? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Caterpillar That Rebuilds Itself",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-caterpillar", "templateLabel": "The Caterpillar That Rebuilds Itself", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "caterpillar",
+          "notes": ["Order Lepidoptera: butterflies and moths", "Pupa is the stage between larva and adult", "Imaginal discs are present before hatching", "The nervous system is remodeled, not destroyed", "Blackiston, Casey and Weiss, 2008: memory survives", "Some monarchs fly thousands of kilometers"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Caterpillar's Last Trick",
+          "text": "Consider a problem in engineering. You have built a machine that is very good at exactly one job: eating. It is a soft tube with jaws at one end, six real legs, ten gripping stumps, and a brain the size of a pinhead. Now convert it into a machine that does a completely different job. The new machine must fly, drink nectar through a coiled straw, see in color, find a mate, and, if it is a monarch, travel thousands of kilometers to a mountain forest it has never seen. You may not throw the first machine away, because the material inside it is all you have. And you must do the whole conversion sealed inside a case, out in the open, with no help and no spare parts. That is metamorphosis, and it is the most extreme rebuild any animal attempts. The caterpillar prepares carefully. It stops feeding, empties its gut, and leaves the plant that has kept it alive. It spins a pad of silk, hooks itself in, hangs, and molts one final time. What comes out of that last skin is a pupa, called a chrysalis in butterflies and usually wrapped in a spun cocoon in moths. It has no legs and no mouth. From the outside, for a week or two, nothing happens. Inside, almost everything happens. Enzymes flood the body and digest the caterpillar's own tissue. Muscle, gut, and skin break down into a nutrient broth. This is the part everyone repeats, and it is where most retellings stop, which is a shame, because dissolving is the easy half. The hard half is whatever does the building. Since before it hatched, the caterpillar has carried tiny folded packets of cells called imaginal discs. There is one for each wing, one for each leg, one for each eye, one for the antennae. Through all those weeks of chewing they sat inactive, costing the animal almost nothing. In the pupa they switch on, draw on the broth of the dissolved caterpillar, and construct the adult out of it. The butterfly is not born from the caterpillar. It is built out of the caterpillar, the way a house can be built from the timber of the house that stood there before. Not everything is torn down. Much of the nervous system is remodeled rather than destroyed, and that leaves an uncomfortable question sitting in the open. If parts of the brain survive, does anything the caterpillar knew survive with them? In 2008, researchers at Georgetown University tested precisely that. They exposed tobacco hornworm caterpillars to a specific odor paired with a mild electric shock, and the caterpillars learned to avoid the smell. Those caterpillars then pupated, dissolved, and rebuilt themselves into moths. When the moths were offered the same odor, they avoided it too. Something had crossed the gap. An animal with a substantially reconstructed body had carried a memory through its own liquefaction. This is worth sitting with. We usually treat a life as one continuous thing: one body, slowly changing, from start to finish. The caterpillar does not fit that picture. It is a single animal that spends part of its life as one organism and part as an almost entirely different one, and the bridge between them is a stretch of time in which it is neither, dissolved into its own raw material, waiting on a set of cells it has carried since before it hatched to decide what it becomes next."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author opens by framing metamorphosis as an engineering problem. Explain the constraints the author sets out, and cite one of them exactly.",
+            "Explain the role of the imaginal discs. The author writes that the butterfly is not born from the caterpillar. Quote the sentence that follows and explain the distinction it draws.",
+            "Identify where the passage turns from description to an uncomfortable question. How does the author signal the turn?",
+            "The passage closes by claiming the caterpillar does not fit our usual picture of a life. Analyze that claim. Does the evidence in the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(no spare material, sealed case, no help, total change of function; cite: You may not throw the first machine away, because the material inside it is all you have)",
+            "(the discs are carried from before hatching and build the adult from the dissolved larva; quote: It is built out of the caterpillar, the way a house can be built from the timber of the house that stood there before; the distinction is that the butterfly is constructed from the caterpillar's material rather than descended from it)",
+            "(at Not everything is torn down, leading to the question about surviving memory; a short flat sentence signals the pivot)",
+            "(it argues a single life contains two organisms and a gap; earned by the imaginal discs, the dissolving, and the 2008 memory result)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["pupa → ____", "imaginal disc → ____", "remodeled → ____", "liquefaction → ____"],
+          "rows": 2,
+          "answers": [
+            "the sealed stage between the larva and the adult",
+            "a packet of cells carried from before hatching that builds one adult body part",
+            "rebuilt and rearranged rather than destroyed and started over",
+            "the process of turning into liquid"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The 2008 study trained caterpillars using a mild shock. Give one reason a scientist would object to concluding from it that a butterfly remembers its whole caterpillar life.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it tested one learned avoidance of one odor, which is not the same as general memory; the result may not extend to other kinds of learning or other species)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: the caterpillar and the butterfly are two different animals sharing one life. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

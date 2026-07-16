@@ -1,0 +1,320 @@
+{
+  "key": "coral-reef",
+  "title": "The City Built by Tiny Animals",
+  "blurb": "A coral reef is not a rock and not a plant. It is a city built by soft little animals, one stone cup at a time.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The City Built by Tiny Animals",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-coral-reef", "templateLabel": "The City Built by Tiny Animals", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the fish hiding in the coral." },
+        {
+          "kind": "image",
+          "imageKey": "coral-reef",
+          "notes": ["Coral is alive", "It is not a rock", "Fish hide in it", "It grows under the sea", "It comes in many colors"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look at the coral. It looks like a rock. It is not a rock. Coral is alive. Tiny animals live inside it. They are soft and small. Each one has little arms. The fish swim in and out. They hide in the coral when they are scared. The coral is red and yellow and blue. It is a home under the sea."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fish in each row. Write how many in the box.",
+          "emoji": "🐠",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "coral    fish" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its home.",
+          "pairs": [
+            { "left": "coral", "right": "the sea" },
+            { "left": "bird", "right": "a nest" },
+            { "left": "bee", "right": "a flower" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own coral reef. Add three fish swimming past it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The City Built by Tiny Animals",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-coral-reef", "templateLabel": "The City Built by Tiny Animals", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "coral-reef",
+          "notes": ["The tiny animals are called polyps", "Each one builds a stone cup", "A polyp is soft inside", "Reefs take thousands of years to grow", "Fish and crabs live in the holes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The City Built by Tiny Animals",
+          "text": "A coral reef looks like a garden of stone. But every branch is built by animals. They are called polyps. A polyp is soft, like a tiny finger with arms on top. Each polyp builds a hard cup around itself. The cup is its house. When a polyp dies, its cup stays behind. A new polyp grows on top. Cup on top of cup, for thousands of years. That is how a reef gets big. Fish come to live in it. Crabs hide in the holes. The reef is a busy town under the water."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are the tiny animals called?", "What does each polyp build around itself?", "Who comes to live in the reef?"],
+          "rows": 2,
+          "answers": ["polyps", "a hard cup", "fish and crabs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A coral reef is built by ____.", "Each polyp builds a hard ____.", "A reef takes thousands of ____ to grow.", "Crabs ____ in the holes."],
+          "wordBank": ["polyps", "cup", "years", "hide"],
+          "answers": ["polyps", "cup", "years", "hide"]
+        },
+        { "kind": "draw", "prompt": "Draw the reef as a busy town. Show where a crab could hide.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The City Built by Tiny Animals",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-coral-reef", "templateLabel": "The City Built by Tiny Animals", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "coral-reef",
+          "notes": ["A polyp is about the size of a pencil eraser", "Polyps are cousins of jellyfish", "Their tiny arms can sting", "They pull stone out of sea water", "Some reefs are eight thousand years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animals That Build Cities",
+          "text": "If you touch a coral reef, it feels like stone. It is stone, in a way. But something soft and alive made every bit of it.\n\nA coral polyp is a small animal. It is not much bigger than a pencil eraser. It has a soft body, a mouth on top, and a ring of little arms called tentacles. Polyps are cousins of jellyfish, and like jellyfish, their arms can sting.\n\nHere is the clever part. A polyp pulls minerals out of the sea water and turns them into a hard stone cup. It sits in the cup like a hermit crab in a shell. Thousands of polyps sit side by side, each in its own cup, all joined together. When a polyp dies, its cup stays. A young polyp settles on top and builds a new one.\n\nCup on cup on cup, for thousands of years. That is a reef. Some reefs took eight thousand years to grow as tall as they are now. They grow slower than your fingernails."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How big is a coral polyp?",
+            "What does a polyp make out of the minerals in sea water?",
+            "What happens to a polyp's cup after the polyp dies?",
+            "Why do you think a reef takes thousands of years to get big?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about the size of a pencil eraser",
+            "a hard stone cup that it sits inside",
+            "it stays, and a young polyp settles on top of it",
+            "(inference: each polyp is tiny and builds slowly, so the reef grows cup by cup)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Animals That Build Cities", "How to Swim in Deep Water", "The Biggest Whale in the Sea"],
+          "answers": ["The Animals That Build Cities"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The little arms around a polyp's mouth are called ____.", "Polyps are cousins of ____.", "A polyp sits in its cup like a hermit ____ in a shell."],
+          "wordBank": ["tentacles", "jellyfish", "crab"],
+          "answers": ["tentacles", "jellyfish", "crab"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about coral, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The City Built by Tiny Animals",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-coral-reef", "templateLabel": "The City Built by Tiny Animals", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "coral-reef",
+          "notes": ["Polyps build cups of limestone", "Tiny algae live inside the polyp's body", "The algae make sugar from sunlight", "They give the coral most of its food", "They also give coral much of its color", "White coral is bleached, not dead"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Partner Living in the Wall",
+          "text": "Reach out and touch a reef and you will feel stone, but a reef is not a rock formation. It is a city, and the builders are still living in it.\n\nEach builder is a coral polyp: a soft animal roughly the size of a pencil eraser, with a mouth ringed by stinging tentacles. Polyps belong to the same family as jellyfish and sea anemones. A polyp draws calcium and carbonate out of sea water and cements them into a hard limestone cup, then lives inside it. Millions of polyps, each in its own cup, all fused together, make the branches and boulders you see.\n\nBut polyps have a secret partner. Inside the flesh of every reef-building polyp live crowds of microscopic algae called zooxanthellae. The algae catch sunlight and make sugar, the way a leaf does. They hand most of that sugar to the polyp, and in return the polyp gives them a safe place to live and the waste chemicals they need. Up to nine tenths of a coral's food arrives this way. The algae also give coral much of its color.\n\nThis partnership explains something strange. Coral reefs only grow in clear, shallow, sunlit water, even though the polyp itself hunts at night and does not need the sun. The reef needs sunlight because its lodgers do.\n\nIt also explains a warning sign. When the sea gets too warm, the algae start producing chemicals that harm the polyp, and the polyp throws them out. The coral turns bone white. That is called bleaching. A bleached coral is not dead yet. It is starving, and waiting for its partners to come back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe the trade between the polyp and the algae. What does each side give?",
+            "The passage says a reef is a city and the builders are still living in it. Explain what that means.",
+            "Why must coral reefs grow in shallow, sunlit water, even though polyps hunt in the dark?",
+            "Why does the passage say a bleached coral is starving rather than dead?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the algae give sugar made from sunlight; the polyp gives shelter and the waste chemicals they need",
+            "(the stone is made by animals that are still alive on its surface, unlike a rock)",
+            "the algae inside the polyps need sunlight to make sugar, and the coral needs that sugar",
+            "(inference: the polyps are alive but have lost the partners that feed them, so they can recover if the algae return)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Coral reefs are built by tiny animals that depend on algae living inside them",
+            "Jellyfish are the most dangerous animals in the sea",
+            "Rocks in the ocean slowly change color over time"
+          ],
+          "answers": ["Coral reefs are built by tiny animals that depend on algae living inside them"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["limestone → ____", "microscopic → ____", "bleaching → ____", "lodgers → ____"],
+          "rows": 1,
+          "answers": [
+            "the hard stone a polyp builds from calcium and carbonate",
+            "far too small to see without a microscope",
+            "when a coral pushes out its algae and turns white",
+            "guests who live inside someone else's home"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the coral and algae partnership to someone who has never heard of it. Use two facts from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The City Built by Tiny Animals",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-coral-reef", "templateLabel": "The City Built by Tiny Animals", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "coral-reef",
+          "notes": ["A reef is a stack of old skeletons with a living skin", "The Great Barrier Reef runs about 1,400 miles", "It is the largest structure built by living things", "Reefs cover under 1% of the ocean floor", "About 25% of sea species shelter there", "Reefs break waves before they hit the shore"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A City Under the Water",
+          "text": "A coral reef looks like scenery. It is closer to a city, and like any city it was built, it is inhabited, and it can fall.\n\nThe builders are coral polyps, soft animals no larger than a pencil eraser, each one a relative of the jellyfish. A polyp extracts calcium and carbonate from sea water and cements them into a cup of limestone, then settles inside. Its neighbors do the same, millions of them, all connected. When a polyp dies its cup remains, and a new polyp settles on the roof of the old one. A reef is therefore a stack of skeletons with a thin skin of living animals stretched over the top. The Great Barrier Reef, off the coast of Queensland in Australia, is more than fourteen hundred miles of this. It is the largest structure on Earth made by living things, and you can see it from orbit.\n\nNo polyp could afford this on its own. Inside the tissue of every reef-building coral live millions of single-celled algae called zooxanthellae. They photosynthesize, and they pass as much as ninety percent of the sugar they make to their host. In exchange they get shelter and chemicals. This trade is the engine of the whole reef, and it is why reefs need clear, shallow, sunlit water.\n\nThe return on that engine is absurd. Coral reefs cover less than one percent of the ocean floor and shelter about a quarter of all marine species. They also absorb wave energy before it reaches the shore, which protects coastlines and the people on them.\n\nThe trade has one weakness. Warm the water by a couple of degrees for a few weeks and the algae turn harmful, the polyps expel them, and the coral goes white. Bleaching is not death. It is eviction, and a bleached coral starves unless conditions cool and its partners return. The animal that built a structure visible from space cannot survive a warm summer alone."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain what the passage means by calling a reef a stack of skeletons with a thin skin of living animals. Quote the phrase.",
+            "What is the trade between coral and algae, and why does the author call it the engine of the whole reef?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last sentence. Why does the author choose to end there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering polyps building limestone + the algae partnership + bleaching)",
+            "(old cups become foundation and only the top layer is alive; quote: a stack of skeletons with a thin skin of living animals)",
+            "algae give up to ninety percent of their sugar and get shelter and chemicals; it powers everything the reef builds",
+            "(inform, with detail: it defines terms and gives figures; the closing lines carry a persuasive edge)",
+            "(the reef's size contrasts with how little heat it takes to break it; the author ends on the contrast for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["inhabited → ____", "photosynthesize → ____", "expel → ____", "eviction → ____"],
+          "rows": 1,
+          "answers": [
+            "lived in",
+            "to use sunlight to make sugar",
+            "to push out or force out",
+            "being thrown out of the place you were living"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Reefs cover less than one percent of the ocean floor but shelter about a quarter of marine species. Why does that make them worth protecting?",
+            "Why might a reef take far longer to rebuild after bleaching than it took to bleach?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion, supported: losing a tiny area would cost a huge share of ocean life)",
+            "(inference: bleaching takes weeks of heat, while polyps rebuild limestone slowly over years)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should countries spend money protecting coral reefs when the heat that damages them comes from everywhere? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The City Built by Tiny Animals",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-coral-reef", "templateLabel": "The City Built by Tiny Animals", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "coral-reef",
+          "notes": ["Polyps are cnidarians, like jellyfish and anemones", "Zooxanthellae are single-celled algae inside the tissue", "They supply up to 90% of the coral's food", "Tropical seas are nutrient-poor, close to a desert", "The Great Barrier Reef has bleached repeatedly since 1998", "Stony corals are older than the first flowers"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The City That Builds Itself, and the Bargain That Holds It Up",
+          "text": "A coral reef is the only city on Earth whose buildings are also its citizens.\n\nStart with the builder. A coral polyp is a soft-bodied animal about the size of a pencil eraser, a mouth encircled by stinging tentacles, and a close relative of the jellyfish and the sea anemone. What separates it from those cousins is a chemical habit. The polyp pulls dissolved calcium and carbonate out of sea water and lays them down beneath itself as crystalline limestone, building a cup, and then lives in the cup it has made. Its neighbors do the same. Millions of polyps, tissue-linked and cup-joined, form a single sheet of living animal spread across a mass of stone that earlier polyps left behind. When a polyp dies, its cup remains and becomes foundation. Larvae settle on the roof of the dead and start again. A reef, then, is a stack of skeletons with a living skin. The Great Barrier Reef is fourteen hundred miles of exactly this, the largest structure any living thing has ever built, and its present form has been accumulating for roughly eight thousand years.\n\nNow the bargain. No polyp could pay for that construction by hunting alone. Inside the tissue of every reef-building coral live millions of single-celled algae called zooxanthellae. The algae photosynthesize in the shallow sunlight and deliver as much as ninety percent of the sugar they produce to their host, while the polyp supplies shelter, carbon dioxide, and the nitrogen waste the algae need. It is one of the most productive partnerships in nature, and it explains a puzzle. Tropical sea water is famously poor in nutrients, close to a desert. Reefs flourish there anyway, because a reef does not eat the ocean. It farms the sun.\n\nThe numbers this bargain generates are hard to believe. Coral reefs occupy less than one percent of the ocean floor and shelter roughly a quarter of all marine species. They break wave energy before it lands, protecting coastlines and the millions of people who live along them. They feed fisheries that feed nations. All of it rests on a trade between an animal you can barely see and a plant-like cell living inside its skin.\n\nAnd that is the vulnerability. The partnership is calibrated finely. Push sea temperature about two degrees above the usual summer maximum for a few weeks and the algae's photosynthesis misfires, producing compounds that damage the polyp's tissue. The polyp expels its tenants. The coral, now transparent over white limestone, appears to have been bleached. It has not died. It has evicted its own food supply, and it will starve within weeks unless the water cools and the algae return. Mass bleaching events, once rare, have struck the Great Barrier Reef repeatedly since 1998, and the gaps between them have been shrinking faster than a reef can rebuild.\n\nThere is a temptation to call this fragile. It is not quite the right word. These animals have been laying limestone since long before the first flowers existed. What is fragile is the specific bargain, and the narrow band of temperature in which the bargain pays. The reef is not delicate. The terms are."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the opening line: a city whose buildings are also its citizens. What does it claim, and does the passage support it? Cite the evidence.",
+            "Explain the puzzle of why reefs thrive in nutrient-poor water, and how the passage resolves it. Cite the resolving phrase exactly.",
+            "The author uses the language of property and business throughout: bargain, tenants, evicted, the terms. Analyze what that word choice does for the reader.",
+            "The passage closes with 'The reef is not delicate. The terms are.' Analyze what that distinction is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the stone is made and inhabited by living polyps; cite: a stack of skeletons with a living skin)",
+            "(tropical water is nutrient-poor, but the coral feeds on algae sugar instead; cite: It farms the sun)",
+            "(it frames a biological partnership as a contract, which makes the collapse feel like a broken deal rather than bad luck)",
+            "(it moves the fragility from the animal to the conditions humans are changing; supported by the age of stony corals and the bleaching record since 1998)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["zooxanthellae → ____", "calibrated → ____", "flourish → ____", "expel → ____"],
+          "rows": 2,
+          "answers": [
+            "single-celled algae living inside coral tissue that feed the polyp",
+            "tuned or set to work within a narrow range",
+            "to grow well and thrive",
+            "to force out or drive away"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the gaps between bleaching events have been shrinking faster than a reef can rebuild. Explain why the gap matters as much as the event itself.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(recovery needs years of calm water; without the gap, damage accumulates and the reef never returns to full health)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Calling a coral reef a city is a nice image, but it hides how different a reef is from anything humans build. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

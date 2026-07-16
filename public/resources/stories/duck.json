@@ -1,0 +1,320 @@
+{
+  "key": "duck",
+  "title": "Water Off a Duck's Back",
+  "blurb": "The bird that sits on freezing water all day, stays bone dry, and sleeps with half its brain awake.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "Water Off a Duck's Back",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-duck", "templateLabel": "Water Off a Duck's Back", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the duck." },
+        {
+          "kind": "image",
+          "imageKey": "duck",
+          "notes": ["Rain rolls right off its back", "Its feet work like paddles", "Baby ducks swim the day they hatch", "It can sleep floating on the water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a duck. The duck sits on the water. Rain falls on her back. The rain rolls off. Her feathers stay dry. Look at her feet. They are wide and flat. She pushes the water and away she goes. A baby duck can swim on the day it hatches. It swims right behind its mom."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the ducks in each row. Write how many in the box.",
+          "emoji": "🦆",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "duck    dry" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each baby to its mom.",
+          "pairs": [
+            { "left": "duckling", "right": "duck" },
+            { "left": "puppy", "right": "dog" },
+            { "left": "kitten", "right": "cat" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own duck on a pond. Add some rain falling on her back.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "Water Off a Duck's Back",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-duck", "templateLabel": "Water Off a Duck's Back", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "duck",
+          "notes": ["A tiny gland near the tail makes oil", "The oil keeps the feathers dry", "Soft down under the feathers holds in heat", "A baby duck is called a duckling", "It can see almost all the way around its head"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Duck's Little Bottle of Oil",
+          "text": "A duck has a secret. Near her tail there is a tiny bump. The bump makes oil. The duck rubs her bill on the bump. Then she pushes the oil through her feathers, one at a time. This is called preening. The oil makes her feathers slick, so water rolls off and never soaks in. Under those feathers is soft down. The down holds warm air close to her skin. That is why a duck can sit on cold water all day and stay warm and dry. A duckling learns to preen by watching its mom do it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where is the bump that makes the oil?", "What is it called when a duck spreads oil on her feathers?", "What holds warm air close to the duck's skin?"],
+          "rows": 2,
+          "answers": ["near her tail", "preening", "the soft down under her feathers"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The bump near her tail makes ____.", "Spreading the oil is called ____.", "The oil makes water roll ____.", "Under her feathers is soft ____."],
+          "wordBank": ["oil", "preening", "off", "down"],
+          "answers": ["oil", "preening", "off", "down"]
+        },
+        { "kind": "draw", "prompt": "Draw a duck preening her feathers. Add a pond and some reeds.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "Water Off a Duck's Back",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-duck", "templateLabel": "Water Off a Duck's Back", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "duck",
+          "notes": ["Ducks can stand on ice without cold hurting them", "Warm blood heats the cool blood coming back", "Their feet have almost no muscle in them", "The oil gland sits near the tail", "Down is the warmest layer a duck has"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Duck Can Stand on Ice",
+          "text": "Put your bare foot on an ice cube and it hurts in seconds. A duck can stand on a frozen pond all morning and not seem to notice. Here is how that works. A duck's feet are mostly bone, skin, and tough cords called tendons. There is very little muscle down there and hardly any nerve to feel the ache. But the real trick is in the blood. The warm blood heading down into the foot runs right alongside the cool blood coming back up. The two flow in opposite directions, close enough to trade heat. The warm blood hands its heat to the cool blood before it ever reaches the toes. So the heat turns around and goes back into the duck. The duck's feet stay cold. That sounds bad, but it is exactly right. Cold feet lose almost no heat to the ice. A warm foot would pour heat straight into the frozen pond all day. Instead the duck keeps its warmth where it is needed, and walks across the ice like it is nothing at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are a duck's feet mostly made of?",
+            "Which two things flow in opposite directions inside a duck's leg?",
+            "Why is it a good thing that a duck's feet stay cold?",
+            "Why do you think a duck does not mind cold feet the way you would?"
+          ],
+          "rows": 2,
+          "answers": [
+            "bone, skin, and tough cords called tendons",
+            "warm blood going down and cool blood coming back up",
+            "cold feet lose almost no heat to the ice",
+            "(inference: it has hardly any nerve in its feet, so there is little to feel)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why a Duck Can Stand on Ice", "How to Build a Skating Rink", "The Loudest Bird on the Pond"],
+          "answers": ["Why a Duck Can Stand on Ice"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A duck's feet have very little ____.", "The warm and cool blood flow in ____ directions.", "Cold feet lose almost no ____ to the ice."],
+          "wordBank": ["muscle", "opposite", "heat"],
+          "answers": ["muscle", "opposite", "heat"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about duck feet, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "Water Off a Duck's Back",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-duck", "templateLabel": "Water Off a Duck's Back", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "duck",
+          "notes": ["The bill edges carry comb-like ridges called lamellae", "The bill tip feels almost like a fingertip", "Dabbling ducks tip up, diving ducks go under", "Most farm ducks descend from the mallard", "A duck strains its food out of the water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Duck's Bill Can Really Do",
+          "text": "A duck's bill looks like a simple orange shovel. It is closer to a tool kit. Run a finger along the inside edge of a duck's bill and you would feel a row of fine ridges called lamellae. They work like the teeth of a comb. A mallard tips forward, takes in a mouthful of pond, and pumps the water back out through those ridges. Seeds, snails, and insects are too big to fit through the gaps, so they stay behind. The duck swallows the food and lets the water go. It is a strainer built into a face. The bill can also feel. Packed into the tip are thousands of tiny touch sensors, so densely that the end of the bill works something like your fingertips. This matters more than it sounds. A duck often feeds in water so muddy it cannot see its own feet. It does not need to see. It sweeps the bill through the muck and feels the difference between a pebble and a snail, then keeps one and drops the other. Not every duck feeds the same way. Dabbling ducks, like mallards, stay at the surface and tip up with their tails in the air, reaching down with their necks. Diving ducks push under completely and swim to the bottom to work. Same tool, two very different jobs. The next time you see a row of duck tails pointing at the sky, you are watching a whole line of strainers at work underneath."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What are lamellae, and what job do they do?",
+            "How does a duck find food in water it cannot see through?",
+            "Explain the difference between a dabbling duck and a diving duck.",
+            "The author says the bill is closer to a tool kit than a shovel. Why is that a better description?"
+          ],
+          "rows": 2,
+          "answers": [
+            "fine ridges along the inside edge of the bill that strain food out of the water like a comb",
+            "it feels for food with the touch sensors packed into the tip of its bill",
+            "dabblers tip up and feed at the surface; divers go under and swim to the bottom",
+            "(inference: it does several jobs, straining and feeling, not just scooping)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A duck's bill is a strainer and a touch organ, not just a scoop",
+            "Ducks like snails more than any other food",
+            "Mallards are the only ducks that can swim"
+          ],
+          "answers": ["A duck's bill is a strainer and a touch organ, not just a scoop"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["lamellae → ____", "strainer → ____", "dabbling → ____", "densely → ____"],
+          "rows": 1,
+          "answers": [
+            "the comb-like ridges along the edge of a duck's bill",
+            "something that keeps the solid bits and lets the water through",
+            "feeding at the surface by tipping up instead of diving",
+            "packed tightly together in a small space"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: design a tool for a human that copies one thing a duck's bill does. Explain what it does and who would use it.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "Water Off a Duck's Back",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-duck", "templateLabel": "Water Off a Duck's Back", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "duck",
+          "notes": ["Ducklings hatch with their eyes already open", "Precocial: born far along and ready to go", "Imprinting locks a duckling onto the first mover", "Wood ducks nest in tree holes up to fifty feet high", "The ducklings jump the next morning and bounce", "Konrad Lorenz had to quack to be followed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Born Ready",
+          "text": "Most baby birds are hopeless at first. A robin hatches naked, blind, and helpless. It lies in the nest with its mouth open for two weeks while its parents work themselves ragged hauling in food. A duckling hatches ready to go. Its eyes are already open. It arrives wearing a coat of warm down. Within a day it can walk, swim, and find its own food. Biologists call this precocial, which simply means born far along. The mother duck never feeds her ducklings. She leads them, warms them, and watches for danger. They handle the rest themselves. Being born ready comes with a problem attached. A duckling that can walk away on its first day can also walk away from the wrong bird, or follow one. So ducklings are built to lock on fast. In their first hours, the first large moving thing that makes roughly the right noise becomes mom, permanently. The word for this is imprinting. It usually works, because the first large moving thing in a duckling's life is almost always its actual mother. When Konrad Lorenz raised mallard ducklings in the 1930s, they followed him instead, but he found they would only do it if he crouched down low and quacked as he walked. Standing up and staying quiet was enough to break the spell. Wood ducks push the whole idea to its limit. They nest inside tree holes, sometimes fifty feet above the ground. The morning after they hatch, the mother drops to the ground below and calls up. The ducklings scramble to the entrance, look out at nothing, and jump. They weigh almost nothing and they are essentially a ball of down, so they hit the leaf litter, bounce, shake it off, and toddle after her to the water. Not one of them has ever done it before. It is a terrifying way to begin a life, and it works."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What does precocial mean, and how is a duckling different from a robin chick?",
+            "Explain imprinting, and quote the exact phrase the passage uses to show how permanent it is.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage ends by calling the wood duck's start terrifying, and works. What is the author doing with that last line?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering precocial ducklings + imprinting + the wood duck leap)",
+            "born far along; a duckling walks, swims, and feeds itself within a day, while a robin chick is naked, blind, and fed for two weeks",
+            "a duckling locks onto the first large moving thing that makes the right noise; quote: becomes mom, permanently",
+            "(inform, with an entertaining tone: it defines terms and gives real research, but uses humor like hopeless and toddle)",
+            "(admitting the risk while insisting on the result; it lands the point that a strange method can still be a good one)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["precocial → ____", "imprinting → ____", "ragged (work themselves ragged) → ____", "essentially → ____"],
+          "rows": 1,
+          "answers": [
+            "born far along and able to move and feed almost at once",
+            "locking on to the first moving thing as your parent, early and for good",
+            "worn out completely by effort",
+            "for all practical purposes, near enough to true"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might it help a duck species that its young need no feeding at all?",
+            "Lorenz had to crouch and quack before the ducklings would follow him. What does that detail tell you about how imprinting actually works?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: the mother can move the brood, stay mobile, and raise many young at once without hunting food for them)",
+            "(inference: it is not simply follow anything that moves; the duckling checks size, motion, and sound against a rough expectation)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it better to be born ready like a duckling, or born helpless and cared for like a robin? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "Water Off a Duck's Back",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-duck", "templateLabel": "Water Off a Duck's Back", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "duck",
+          "notes": ["Anatidae: roughly 120 species of duck", "A quack does echo; the echo hides under the fading quack", "Ducks can sleep with one half of the brain awake", "The word duck comes from an old word meaning to dive", "Only the female mallard makes the loud quack", "Most farm ducks descend from the mallard"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Question That Sounded Silly",
+          "text": "For years a rumor circulated with all the confidence of a fact: a duck's quack does not echo, and no one knows why. It turned up on lists of amazing facts and got repeated at dinner tables for decades. The claim has two qualities that kept it alive. It sounds specific enough to be true, and the little tag on the end, and no one knows why, quietly discourages you from asking. If nobody knows, why would you check. In 2003 an acoustics engineer named Trevor Cox, at the University of Salford, decided to just check. He borrowed a duck named Daisy and recorded her in two rooms built for exactly this kind of question. The first was an anechoic chamber, a room lined with deep foam wedges that swallow sound so completely it is among the quietest places on Earth. The second was a reverberation chamber, all hard reflective surfaces, where a sound bounces around for a long time before it dies. Daisy quacked in both rooms. The recordings were not the same. In the reverberation chamber the quack echoed, plainly and obviously. The rumor was simply false. The interesting part is the explanation, because the rumor did grow out of something real. A quack is not a sharp bark. It begins loud and then trails off, fading gradually into silence. An echo comes back a fraction of a second later, and it arrives while the original quack is still fading away. The soft returning echo lands underneath the sound that produced it, and your ear folds the two together and reads the whole thing as one long quack. Sound engineers call this masking. On top of that, ducks spend their lives on ponds, marshes, and open fields, where there is usually no hard surface anywhere nearby to bounce a sound back. People who believed quacks do not echo had mostly just never heard one in the right room. Ducks reward this kind of checking. Consider another claim that sounds invented: a duck can sleep with half of its brain. In 1999 a team led by Niels Rattenborg tested it by lining four mallards up in a row and filming them while recording their brain activity. The two birds on the ends slept with the outward-facing eye open far more often than the birds tucked safely in the middle, and the recordings showed the matching half of the brain staying awake while the other half slept. Turn the row around, and the end birds switched which eye they kept open. The duck on the edge is the one that gets eaten, so the duck on the edge keeps watch with half of itself. Two odd claims, both testable. One survived and one collapsed. The difference was never how strange the claim sounded. It was whether anyone was willing to put a duck in a room and find out."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says the claim has two qualities that kept it alive. Name them, and quote the exact tag the author says discourages you from asking.",
+            "Explain masking in your own words, and why it made the rumor believable.",
+            "Why did Cox need two rooms rather than one? What would a single room have failed to show?",
+            "The final paragraph says the difference was never how strange the claim sounded. Analyze what the author is arguing there, and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the tested myth, the real acoustics behind it, and the value of checking)",
+            "(it sounds specific enough to be true, and it discourages questions; quote: and no one knows why)",
+            "(a quiet echo arriving under a louder fading sound is absorbed into it by the ear, so the echo is real but unheard)",
+            "(inference: the anechoic room gives the quack with no echo as a baseline, so the reverberation room proves the echo is real and not part of the quack)",
+            "(it argues that strangeness is not evidence either way and only testing settles a claim; supported because one odd claim failed and one held)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["anechoic → ____", "reverberation → ____", "masking → ____", "circulated → ____"],
+          "rows": 2,
+          "answers": [
+            "having no echo, built to absorb sound completely",
+            "the bouncing of sound off hard surfaces so it lingers after the source stops",
+            "a quiet sound being hidden by a louder one so the ear misses it",
+            "passed from person to person and spread widely"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "When the row was turned around, the end ducks switched eyes. Explain why that detail makes the result far more convincing than if they had not.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it rules out habit or a fixed preference; the birds respond to where the risk is, which is what the theory predicts)",
+            "(student question + a credible source type, such as a peer-reviewed study or an ornithologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: a fact that sounds interesting should be trusted less, not more. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

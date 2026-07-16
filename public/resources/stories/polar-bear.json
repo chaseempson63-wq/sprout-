@@ -1,0 +1,319 @@
+{
+  "key": "polar-bear",
+  "title": "The Bear That Isn't White",
+  "blurb": "Clear fur, black skin, and a whole life spent hunting on floating sea ice.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Bear That Isn't White",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-polar-bear", "templateLabel": "The Bear That Isn't White", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the bear's black nose." },
+        {
+          "kind": "image",
+          "imageKey": "polar-bear",
+          "notes": ["Its nose is black", "Its feet are as wide as a plate", "It lives where it is very cold", "It is a very good swimmer"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a polar bear. It lives where the snow never melts. Its fur looks white. Its nose is black. Look at its big feet. The feet are wide like snowshoes. They help the bear walk on ice. The bear is warm. It has thick fat under its skin. It swims in the cold sea. It looks for seals to eat."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the snowflakes in each row. Write how many in the box.",
+          "emoji": "❄️",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ice    cold" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "polar bear", "right": "ice" },
+            { "left": "fish", "right": "sea" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a polar bear on the ice. Give it a big black nose.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bear That Isn't White",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-polar-bear", "templateLabel": "The Bear That Isn't White", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "polar-bear",
+          "notes": ["It lives on ice at the top of the world", "It eats seals", "Baby bears are born in a snow den", "It can smell food far away", "Penguins live at the other end of the world, so a polar bear never meets one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bear That Waits",
+          "text": "A polar bear does not live in a forest. It lives on the sea. The sea at the top of the world freezes into ice, and the bear walks out onto it. That ice is where its food is. Under the ice swim seals. A seal must come up to breathe, so it keeps a small hole open in the ice. The polar bear finds the hole. Then it waits. It can wait for hours without moving. When the seal comes up, the bear is ready. No ice means no seals to catch."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does the polar bear live?", "What does the polar bear eat?", "Why does a seal keep a hole open in the ice?", "What does the bear do at the hole?"],
+          "rows": 2,
+          "answers": ["on the ice on the sea", "seals", "so it can come up and breathe", "it waits for the seal"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The polar bear walks out onto the ____.", "It hunts for ____.", "A seal keeps a small ____ open in the ice.", "The bear ____ by the hole for hours."],
+          "wordBank": ["ice", "seals", "hole", "waits"],
+          "answers": ["ice", "seals", "hole", "waits"]
+        },
+        { "kind": "draw", "prompt": "Draw the polar bear waiting on the ice. Add the seal's hole.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bear That Isn't White",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-polar-bear", "templateLabel": "The Bear That Isn't White", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "polar-bear",
+          "notes": ["Polar bear hair has no color in it", "The skin under the fur is black", "The fat can be four inches thick", "Guard hairs shed water like a raincoat", "It can overheat if it runs too far"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bear That Isn't Really White",
+          "text": "A polar bear looks white. It is not. Pull one hair out and hold it up to the light, and you will see that the hair has no color at all. Each hair is clear, and the thickest hairs are hollow inside, like tiny tubes. Light bounces around inside that thick coat and scatters back out at you, and scattered light looks white. Snow does the same trick. Snow is only frozen water, and water is clear too. Under all that fur, the bear's skin is black. You can see it on its nose, its lips, and the pads of its paws. The coat has two layers. Underneath is soft, dense underfur that traps warm air near the skin. Over the top are long guard hairs that shed water, so a bear can climb out of the sea and shake itself almost dry. Below the skin lies fat, sometimes as thick as your hand is long. A polar bear is so well wrapped that it can overheat if it runs too far."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What color is a single polar bear hair?",
+            "Why does the coat look white if the hairs are not white?",
+            "Where on the bear can you see its black skin?",
+            "Why do you think a bear that is so warm can overheat when it runs?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it has no color, it is clear",
+            "light bounces around in the coat and scatters back out, and scattered light looks white",
+            "on its nose, its lips, and the pads of its paws",
+            "(inference: the coat and fat hold heat in, so the heat from running cannot escape)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why a White Bear Has No White in It", "How to Build a Snowman", "The Coldest Day Ever Recorded"],
+          "answers": ["Why a White Bear Has No White in It"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A polar bear hair is ____, not white.", "The thickest hairs are ____ inside.", "The skin under the fur is ____.", "Long ____ hairs shed water off the coat."],
+          "wordBank": ["clear", "hollow", "black", "guard"],
+          "answers": ["clear", "hollow", "black", "guard"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about polar bear fur, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bear That Isn't White",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-polar-bear", "templateLabel": "The Bear That Isn't White", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "polar-bear",
+          "notes": ["Ursus maritimus means sea bear", "Counted as a marine mammal, like a whale", "Can smell a seal under three feet of snow", "Paws spread wide to cross thin ice", "Still-hunting: waiting at a seal's breathing hole", "Rough bumps on the paw pads grip like boot tread"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Marine Mammal With Fur",
+          "text": "Scientists do not file the polar bear with the bears of the forest. They file it with the whales, the seals, and the walruses, as a marine mammal. Its scientific name, Ursus maritimus, means sea bear. The label sounds strange until you look at where the animal actually spends its life. A polar bear's hunting ground is not land. It is the frozen surface of the Arctic Ocean. That surface is not solid. It cracks, drifts, opens, and freezes again, and the bear travels across it for most of the year. Ringed seals live in the water below. A seal is a mammal and must breathe air, so it scratches breathing holes up through the ice and returns to them again and again. The bear's job is to find one and wait beside it. This is called still-hunting, and it is mostly waiting. A bear may crouch by a single hole, motionless, for hours. The bear is built for the waiting and for the ice. Its paws spread almost as wide as a dinner plate, which spreads its weight across thin ice. The soles are covered in small rough bumps and short claws that grip like the tread of a boot. Its nose is extraordinary: a polar bear can smell a seal through three feet of packed snow. It swims well, paddling with its front paws while its back legs trail behind like a rudder. But it swims far slower than a seal. In open water, a seal wins every time. Take away the ice and the bear loses its platform, and the platform is the whole hunt."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why do scientists group the polar bear with whales and seals instead of with forest bears?",
+            "Explain still-hunting in your own words.",
+            "Name two ways the bear's paws are built for ice, and say what each one does.",
+            "The passage says a seal wins every time in open water. Why does that make sea ice so important to the bear?"
+          ],
+          "rows": 2,
+          "answers": [
+            "because it spends its life hunting on the frozen surface of the Arctic Ocean, not on land",
+            "(the bear finds a seal's breathing hole and waits beside it, still, until the seal surfaces)",
+            "they spread wide to spread its weight on thin ice; rough bumps and claws grip like boot tread",
+            "(inference: the bear can only catch a seal by ambushing it from solid ice, so without ice it cannot hunt)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The polar bear is built to hunt from sea ice, and without the ice it cannot catch its food",
+            "Polar bears are the fastest swimmers in the Arctic Ocean",
+            "Ringed seals are the largest animals in the far north"
+          ],
+          "answers": ["The polar bear is built to hunt from sea ice, and without the ice it cannot catch its food"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["marine mammal → ____", "still-hunting → ____", "platform → ____"],
+          "rows": 1,
+          "answers": [
+            "an animal that feeds its young milk but lives its life at sea",
+            "hunting by staying still and waiting at a breathing hole",
+            "the solid surface the bear hunts from, meaning the sea ice"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is sea bear a better name for this animal than polar bear? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bear That Isn't White",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-polar-bear", "templateLabel": "The Bear That Isn't White", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "polar-bear",
+          "notes": ["Blubber can reach four inches thick", "Newborn cubs weigh about one pound", "A denning mother can fast for eight months", "Cubs stay with their mother about two and a half years", "A bear stuck on land loses about two pounds a day", "Seal fat is the densest food in the Arctic"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Ice, Fat, and Time",
+          "text": "A polar bear's life is an arithmetic problem. Seals are made largely of fat, and fat is the densest fuel an animal can eat. A bear that catches enough seals in spring converts them into a layer of blubber that can reach four inches thick, and that blubber is not decoration. It is a stored season. It has to be, because the hunting does not last all year. As summer arrives, the sea ice breaks apart and melts back. The platform disappears, the seals become unreachable, and the bear is pushed onto land, where there is almost nothing worth eating. So it waits. A bear on shore in summer is not lazy. It is spending its savings, and it loses roughly two pounds a day doing it. When the sea freezes again in autumn, the bear walks back out and starts earning. Pregnant females take the hardest path of all. In autumn a female digs a den into a snowdrift and seals herself inside. She gives birth in the dark of midwinter to cubs the size of a guinea pig, blind, nearly hairless, and helpless. She feeds them on milk that is nearly one third fat while eating nothing herself. By the time she breaks out of the den in spring with the cubs behind her, she may have gone without food for eight months. Everything those cubs are made of came out of the fat she banked before she dug in. Now change one number. If the ice breaks up two weeks earlier and freezes two weeks later, the earning season shortens and the fasting season stretches. The bear does not get a vote in this. A thinner mother produces less milk, smaller cubs, and fewer of them that survive their first year. This is why researchers watching polar bears spend so much of their time watching ice. The bear is not really an animal that lives in the Arctic. It is an animal that lives on a schedule, and the schedule is being rewritten."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The author opens by calling the bear's life an arithmetic problem. Explain what the two sides of that sum are.",
+            "What happens to a polar bear during the summer, and what does it cost? Quote the phrase the passage uses for the fat it lives on.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last sentence in your own words, and say why the author saves it for the end."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering blubber as stored energy, the fasting season, and the shrinking ice schedule)",
+            "(what it earns in seal fat on the ice against what it burns while stranded on land)",
+            "the ice melts, it is stranded on land, and it loses about two pounds a day; quote: a stored season",
+            "(inform, with detail: it defines terms and gives numbers; some persuasive tone in the closing lines)",
+            "(the bear depends on the timing of the ice, and that timing is changing; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["blubber → ____", "unreachable → ____", "banked → ____", "fasting → ____"],
+          "rows": 1,
+          "answers": [
+            "the thick layer of stored fat under the skin",
+            "impossible to get to",
+            "stored up ahead of time, like money saved",
+            "going without food for a long stretch"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the bear does not get a vote in this. Explain what that line is doing.",
+            "Why would a denning mother's fat matter more than any other bear's? Use the passage to support your answer."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the bear cannot adapt its schedule or choose otherwise, so the change is being done to it by something else)",
+            "(inference: everything the cubs are made of comes out of her stored fat, and she eats nothing for eight months)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should an animal be protected by changing the world around it, or by moving it somewhere safer? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bear That Isn't White",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-polar-bear", "templateLabel": "The Bear That Isn't White", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "polar-bear",
+          "notes": ["Ursus maritimus, named in 1774", "Descended from brown bears; the hybrids are fertile", "Guard hairs are hollow and carry no pigment", "The fiber optic fur story was tested and disproved", "Nearly invisible to a thermal camera", "Listed as threatened under the US Endangered Species Act in 2008"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Ursus Maritimus: A Brown Bear That Went to Sea",
+          "text": "Genetically, the polar bear is a recent invention. It descends from brown bears, and the split was fast enough that the two species can still meet, mate, and produce fertile cubs where their ranges overlap. Estimates of the timing vary, but the polar bear is likely only a few hundred thousand years old. In that window, evolution took a brown, forest-dwelling omnivore and rebuilt it into something that hunts on floating ice: the head narrowed, the neck lengthened, the teeth sharpened toward meat, the paws widened into paddles, and the coat and fat thickened until the animal could sit in an Arctic wind and lose almost no heat. That last part is worth pausing on. Look at a polar bear through a thermal camera and it nearly vanishes. The bear is producing plenty of heat, but so little of it escapes through the fur that the animal reads as barely warmer than the snow around it. The visible parts are the eyes, the muzzle, and the breath. The fur itself is one of the most misreported things in nature. Polar bear hair contains no white pigment. It is clear, and the thick guard hairs are hollow. For decades a tidy explanation circulated in books and classrooms: the hollow hairs work like fiber optic cables, piping sunlight down to the black skin, which soaks up the warmth. It is a lovely story. It is also wrong. Physicists tested it and found that the hairs conduct almost no light along their length. What actually happens is far less exotic. Light entering the coat bounces off countless surfaces, scatters in every direction, and comes back out as white. It is the same reason snow, sea foam, and crushed glass look white while a lake, a wave, and a windowpane do not. The skin underneath really is black. Whether it helps the bear warm up is genuinely unsettled, since almost no sunlight reaches it through that coat in the first place. None of this engineering solves the animal's actual problem, because the polar bear's problem is not cold. It is scheduling. A polar bear cannot catch a ringed seal in open water; the seal is simply faster. It can only catch a seal that has to surface, and it can only ambush that seal from a solid floor. Sea ice is not the polar bear's home in a sentimental sense. It is the bear's tool, and it is a tool that arrives and departs on a calendar. Every extra week of open water is a week of hunting deleted and a week of fasting added, and the bill for that arithmetic is paid in cubs. This is why the polar bear became the animal on the poster. It is photogenic, it is enormous, and its decline traces a straight line back to a cause. But the poster has a cost. A species reduced to a symbol gets argued about instead of studied, and the argument tends to be about the symbol rather than about ringed seals, breakup dates, and the price of a lost week."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author calls the polar bear a recent invention. Explain what evidence the passage gives for that claim, and cite it.",
+            "Explain why the fiber optic story was believed and how the passage says it was settled. Cite the exact phrase the author uses to dismiss it.",
+            "Identify the turn in the passage: where does it stop describing the animal and start making an argument? How does the author signal it?",
+            "The passage says the bill for that arithmetic is paid in cubs. Analyze what that sentence is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it split from brown bears recently enough that the two still produce fertile hybrids; cite: can still meet, mate, and produce fertile cubs)",
+            "(it neatly explained clear hollow hairs and black skin, but physicists found the hairs conduct almost no light; cite: It is also wrong)",
+            "(at None of this engineering solves the animal's actual problem; the author pivots from anatomy to the cause of decline)",
+            "(it converts a physical fact about ice into a cost paid by the next generation; earned by the earlier point that the bear cannot hunt without ice)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["omnivore → ____", "pigment → ____", "exotic → ____", "photogenic → ____"],
+          "rows": 2,
+          "answers": [
+            "an animal that eats both plants and meat",
+            "the substance that gives something its color",
+            "strange, unusual, or from far away",
+            "looking good in photographs"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the fur is one of the most misreported things in nature. Why might a wrong but tidy explanation survive in books for decades?",
+            "The final paragraph argues that being a symbol costs the polar bear something. State that argument in your own words, then give one reason a reader might disagree with it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it is memorable and satisfying, it gets repeated without being checked, and correcting it is less interesting than telling it)",
+            "(symbolism turns the animal into a debate rather than a research subject; a reader might argue the symbol is what funds the research and the protection)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Protecting a species is pointless if you are not protecting the habitat it depends on. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "key": "castle",
+  "title": "The Castle That Was Really a Machine",
+  "blurb": "Pointed towers and little flags, and the cold stone machine underneath: ditches, arrow slits, and the day cannons ended all of it.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Castle That Was Really a Machine",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-castle", "templateLabel": "The Castle That Was Really a Machine", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the biggest tower." },
+        {
+          "kind": "image",
+          "imageKey": "castle",
+          "notes": ["It is made of stone", "The towers are very tall", "The door is thick wood", "A flag flies on top", "Real people lived inside"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a castle. A castle is a big house made of stone. It has tall towers. It has a big wooden door. Long ago, people really lived inside castles. The walls were thick and cold. A flag flew on top of the tower. The flag told you whose castle it was. If you saw the flag, you knew who was home."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the flags on each row. Write how many in the box.",
+          "emoji": "🚩",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "castle    stone" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "flag", "right": "tower" },
+            { "left": "door", "right": "wall" },
+            { "left": "fish", "right": "water" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own castle. Put a flag on every tower.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Castle That Was Really a Machine",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-castle", "templateLabel": "The Castle That Was Really a Machine", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "castle",
+          "notes": ["Some castle walls were 20 feet thick", "The ditch around it is a moat", "The bridge could be pulled up", "The iron gate is a portcullis", "A castle was a home and a fort"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The House You Could Not Break Into",
+          "text": "A castle was not just a home. It was a home nobody could break into. The walls were stone, and some were thicker than a car is long. A deep ditch went all the way around. Some ditches held water. Some were just dry and steep. To get in, you crossed a bridge, and the guards could pull that bridge up. Then you came to the gate. Above the gate hung a heavy iron grid called a portcullis. The guards could drop it in one second. There was only one way in, and the castle could slam it shut."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What were castle walls made of?", "What went all the way around the castle?", "What could the guards drop over the gate?"],
+          "rows": 2,
+          "answers": ["stone", "a deep ditch", "a heavy iron grid called a portcullis"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The walls of a castle were made of ____.", "A deep ____ went all the way around.", "The guards could pull up the ____.", "The iron grid over the gate was a ____."],
+          "wordBank": ["stone", "ditch", "bridge", "portcullis"],
+          "answers": ["stone", "ditch", "bridge", "portcullis"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part to its job.",
+          "pairs": [
+            { "left": "thick wall", "right": "keeps people out" },
+            { "left": "tall tower", "right": "see far away" },
+            { "left": "flag", "right": "shows who lives here" },
+            { "left": "ditch", "right": "hard to cross" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a castle with a ditch around it. Add a bridge going over the ditch.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Castle That Was Really a Machine",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-castle", "templateLabel": "The Castle That Was Really a Machine", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "castle",
+          "notes": ["Arrow slits are thin outside, wide inside", "A moat stopped diggers, not monsters", "Murder holes sat in the gate ceiling", "Battlements: the tall bits are merlons", "Every part had a job"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Castle Is a Machine",
+          "text": "A castle looks like a building. It works like a machine, and every single part of it has a job. Start with the ditch. A wide ditch kept battering rams and rolling towers from ever reaching the wall. Sometimes it held water. Water was better, because water stopped enemies from digging underneath. Then look at the gate. The gate was the weakest spot, so builders piled defenses onto it. A bridge that lifted. A heavy iron grid, the portcullis, that dropped from above. A long dark passage with holes in the ceiling, so defenders could drop rocks on anyone who got that far. Now look at the windows. From the outside they are thin slots, barely wider than your hand. An arrow can fly out. An arrow can almost never fly in. Inside, that slot opens into a wide stone room, so the archer can step left and right and aim all along the wall. None of it was decoration. Every slot, every ditch, every corner was there because someone had tried it the other way and lost."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did a wide ditch stop from reaching the wall?",
+            "Name two things that defended the gate.",
+            "Why is an arrow slit thin on the outside but wide on the inside?",
+            "Why do you think builders spent the most effort on the gate?"
+          ],
+          "rows": 2,
+          "answers": [
+            "battering rams and rolling towers",
+            "(any two: a bridge that lifted, the portcullis, holes in the ceiling of the passage)",
+            "an arrow can fly out but almost never in, and the wide room lets the archer aim along the wall",
+            "(inference: it was the weakest spot, and the only way in)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Every Part of a Castle Had a Job", "How to Build a Wooden Boat", "The Tallest Mountains in Europe"],
+          "answers": ["Every Part of a Castle Had a Job"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The heavy iron grid over the gate is called a ____.", "Water in the ditch stopped enemies from ____ underneath.", "The thin window slots were made for an ____ to fly out."],
+          "wordBank": ["portcullis", "digging", "arrow"],
+          "answers": ["portcullis", "digging", "arrow"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which castle defense do you think was the cleverest, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Castle That Was Really a Machine",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-castle", "templateLabel": "The Castle That Was Really a Machine", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "castle",
+          "notes": ["Motte: the earth mound. Bailey: the yard", "Normans raised hundreds after 1066", "Square corners could be mined and dropped", "Rochester, 1215: a corner came down", "Round towers have no corner to dig under", "Concentric castles: walls inside walls"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Castle Kept Changing Its Mind",
+          "text": "The first castles the Normans built in England were not stone at all. They were dirt and wood, and they went up fast. Workers piled a mound of earth called a motte, planted a wooden tower on top of it, and fenced a yard below called a bailey. A crew could raise one in a few weeks. That speed was the entire point. After 1066, the Normans needed to hold down a country they had only just conquered, and a hundred rough forts did that job better than one perfect one ever could. But wood burns. Within a lifetime, those mounds were carrying square stone keeps instead, with walls that arrows could not touch and fire could not eat. Then attackers found the flaw. A square tower has corners, and a corner is where stone is weakest. Miners dug a tunnel underneath it, propped the tunnel roof with timber, and then set the timber alight. When the props burned through, the tunnel collapsed, and the corner of the tower came down with it. In 1215, King John's miners brought down a corner of the great keep at Rochester in exactly that way. Builders answered by taking the corners away. A round tower has no weak edge to dig under, and stones glance off a curve instead of striking it square. Then came the best idea of all: rings. A concentric castle wrapped one wall inside another, and the inner wall was built taller, so archers standing on it could shoot clean over the heads of the archers below them. To reach the middle, you had to break through everything, twice over, while both walls shot at you the whole way."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the difference between a motte and a bailey.",
+            "The passage says a hundred rough forts did that job better than one perfect one. Why would that be true for the Normans in 1066?",
+            "Walk through how miners brought down the corner of a square tower.",
+            "Why did the inner wall of a concentric castle need to be taller than the outer wall?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the motte is the earth mound with the tower on top; the bailey is the fenced yard below it",
+            "(inference: they had just conquered the country and needed to hold many places at once, fast)",
+            "they tunneled under the corner, propped the roof with timber, burned the props, and the collapse brought the corner down",
+            "(inference: so archers on the inner wall could shoot over the heads of the archers on the outer wall)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Castle design kept changing because attackers kept finding new ways in",
+            "The Normans preferred wooden buildings to stone ones",
+            "Rochester was the only castle ever attacked in England"
+          ],
+          "answers": ["Castle design kept changing because attackers kept finding new ways in"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["motte → ____", "bailey → ____", "keep → ____", "concentric → ____"],
+          "rows": 1,
+          "answers": [
+            "a mound of earth built to carry a tower",
+            "the fenced yard below the mound",
+            "the strong main tower of a castle",
+            "built as rings, one inside another"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining this idea: castle builders and castle attackers made each other smarter. Use two examples from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Castle That Was Really a Machine",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-castle", "templateLabel": "The Castle That Was Really a Machine", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "castle",
+          "notes": ["Most castles fell to hunger, not heroics", "Wells were sunk inside the walls", "Defenders countermined: tunnel against tunnel", "Cannon flattened high walls from the 1400s", "Star forts replaced castles: low, thick, angled", "A siege cost the attacker a fortune per day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Castles Were Built to Be Boring",
+          "text": "Movies show a siege as a wave of ladders and screaming. Real sieges were mostly waiting, and the castle was engineered to win at waiting. An attacker had four ways in, and three of them were bad. Storming the wall with ladders cost lives by the hundred and usually failed anyway. Battering the gate meant working directly under the murder holes, where defenders dropped rocks through the ceiling or poured water on the fires you had just lit. Mining under a corner genuinely worked, but it took weeks of digging, and defenders who heard the picks could sink a tunnel of their own and meet the miners underground in the dark. The fourth way was to sit down and wait. No food goes in, no messages come out, and eventually somebody inside opens the gate. That is how most castles actually fell: hunger, disease, or a bargain. Not heroics. So builders designed for the waiting game. They sank wells inside the walls, because a castle with its own water cannot be made thirsty. They dug cellars for grain and salted meat. A well-stocked castle could hold out for a year, and an army camped in the mud outside for a year had troubles of its own. It ran out of food too. It caught disease. It cost a fortune every single day it stood there. Time was the castle's real weapon, and the castle usually had more of it. Then, in the 1400s, gunpowder rearranged the whole argument. Cannon did not care about height. A tall thin stone wall, the pride of every castle in Europe, turned out to be the easiest target imaginable. It could not dodge, and it shattered when struck. Walls that had stood for three hundred years came down in days. The answer was to build the opposite of a castle. Engineers dropped the walls low, packed them thick with earth so that cannonballs sank in instead of smashing through, and angled them into sharp points so no attacker could stand anywhere without being shot at from the side. Seen from above, these forts look like stars. They are squat, ugly, brilliant, and they are what replaced the thing you picture when somebody says the word castle. The castle did not lose a battle. It lost an argument about physics."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the four ways into a castle, and explain why the author says three of them were bad.",
+            "Quote the phrase the passage uses to explain why a well inside the walls mattered so much.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "Explain the last sentence in your own words. Why does the author end there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering: sieges were won by waiting, castles were designed to outlast them, cannon ended the design)",
+            "ladders, the gate, mining, and waiting; the first three cost lives, time, or both, and often failed",
+            "quote: a castle with its own water cannot be made thirsty",
+            "(inform, with detail: it explains how sieges worked and gives dates; the closing lines lean persuasive and entertaining)",
+            "(the castle was beaten by new technology, not by better soldiers; the author ends on it for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["siege → ____", "murder holes → ____", "mining (in a siege) → ____", "engineered → ____"],
+          "rows": 1,
+          "answers": [
+            "surrounding a castle and cutting it off until it gives in",
+            "openings in the ceiling of the gate passage for dropping rocks or water",
+            "digging a tunnel under a wall to collapse it",
+            "designed carefully for a purpose"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says time was the castle's real weapon. Explain how a building can use time as a weapon.",
+            "Star forts are low and thick, while castles were tall and thin. Explain why the change from arrows to cannon flipped the design."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it outlasts the attacker, who runs out of food, money, and health first)",
+            "(inference: height beats a ladder or an arrow, but thickness and angles beat a cannonball)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was the castle a failure because gunpowder made it useless, or a success because it worked for four hundred years? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Castle That Was Really a Machine",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-castle", "templateLabel": "The Castle That Was Really a Machine", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "castle",
+          "notes": ["Neuschwanstein, Bavaria: begun 1869", "Designed first by a theater scenery painter", "It has flushing toilets and central heating", "The Throne Hall is built on a steel frame", "It never defended anything, ever", "It is the model for the castle in your head"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Castle in Your Head Is a Stage Set",
+          "text": "Picture a castle. You almost certainly pictured pale stone towers, cone-shaped roofs, and small flags snapping in the wind. Hold on to that picture, because it is make-believe, and it is far younger than you think. Real castles were machines for holding land. They were squat, cold, dark, and relentlessly practical. Windows shrank to arrow slits because a window is a hole an arrow can come through. Towers went round because a square corner can be tunneled under and dropped. Ditches were dug wide because a wide ditch keeps a battering ram out of reach. Nothing on a working castle was there to look charming. Charm does not stop an army. By the 1500s, cannon had made all of it pointless. High stone walls could not dodge and could not absorb, and gunners knocked them flat. Europe stopped building castles and started building low, thick, star-shaped forts that nobody has ever put in a fairy tale. The castle should have ended right there, as a piece of obsolete military engineering. Instead it came back three centuries later as a costume. In 1869, a young king named Ludwig II of Bavaria laid the foundation stone of a castle above a gorge in the Alps. Ludwig had inherited a crown with the power drained out of it. Bavaria had backed the losing side in a war with Prussia, and within two years his kingdom would be folded into a German Empire run from Berlin. He would keep the title of king and almost none of the job. So he built himself a different century to live in. He did not begin with an architect. He began with Christian Jank, a man who painted scenery for the theater in Munich. The first drawings of Neuschwanstein were stage sets. An architect was brought in afterward, to work out how to make a painting stand up. What Jank drew was a Middle Ages that had never existed: soaring, clean, romantic, arranged for the view. The rooms inside were decorated with scenes from Richard Wagner's operas and the old legends behind them, swan knights and singing contests and doomed lovers. It was a fantasy about a fantasy. And it was thoroughly, aggressively modern. Behind the medieval face, Neuschwanstein had hot-air central heating, running water on every floor, toilets that flushed themselves, hot and cold taps in the kitchen, an electric bell system so Ludwig could summon a servant from any room, and telephone lines on the upper floors. The Throne Hall, which looks like it was hauled out of the year 1200, is built around a steel frame. The whole place is a nineteenth-century industrial building wearing armor. It never defended anything. It was never meant to. It holds no position worth the name, keeps no soldiers, and serves no purpose except to be the inside of one man's head, at enormous scale, in stone. The money ran out, because it always does. Ludwig paid with his own fortune, then with borrowed money, and the debts climbed until his ministers had had enough. In June 1886 a commission of doctors declared him insane, most of them without having examined him. He was removed from the throne. Four days later he was found dead in a lake, and nobody has ever settled how. Seven weeks after that, his government opened his private dream to paying visitors, and it has been open ever since. More than a million people walk through it every year, and a great many of them come away with their idea of what a castle is. Disney's designers came away with theirs. The pointed towers on the sheet in front of you trace back to that gorge in Bavaria, not to any fortress that ever held a wall. So the castle you imagine is not a memory of the Middle Ages. It is a stage set, built by a king with nothing left to rule, and we have all quietly agreed to believe in it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by saying a real castle had nothing on it to look charming. Cite the evidence.",
+            "The author writes that the castle came back three centuries later as a costume. Explain what the costume was hiding, using two details from the passage.",
+            "Identify the shift in the passage: where does it turn from real castles to Neuschwanstein, and how does the author signal it?",
+            "The last sentence says we have all quietly agreed to believe in it. Analyze what that claim is doing, and decide whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the storybook castle is a nineteenth-century invention, not a medieval building)",
+            "(every feature existed for defense, not looks; cite: Charm does not stop an army)",
+            "(the medieval face hid modern engineering; details: the steel frame in the Throne Hall, the central heating, the flushing toilets, the telephone lines)",
+            "(at Instead it came back three centuries later as a costume; a short blunt sentence marks the pivot)",
+            "(it shifts the fantasy from Ludwig alone onto the reader; earned via the million visitors and the Disney line, though it is an assertion, not proof)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["obsolete → ____", "gorge → ____", "romantic (as used here) → ____", "commission (of doctors) → ____"],
+          "rows": 2,
+          "answers": [
+            "no longer useful because something better has replaced it",
+            "a deep narrow valley with steep sides",
+            "idealized and dramatic rather than accurate",
+            "a group formally appointed to investigate and report"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls Neuschwanstein a fantasy about a fantasy. Explain both layers.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(Wagner's operas were already a romantic invention of the Middle Ages, and the castle was built to stage that invention)",
+            "(student question + a credible source type, such as a historian's biography of Ludwig II or the castle's building records)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Neuschwanstein is not a real castle, so it does not deserve the name. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

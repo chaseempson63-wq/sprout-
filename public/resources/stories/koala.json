@@ -1,0 +1,319 @@
+{
+  "key": "koala",
+  "title": "The Koala That Sleeps All Day",
+  "blurb": "The bear that is not a bear, the leaves that would poison almost any other animal, and why twenty hours of sleep is the price.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Koala That Sleeps All Day",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-koala", "templateLabel": "The Koala That Sleeps All Day", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the koala's ears." },
+        {
+          "kind": "image",
+          "imageKey": "koala",
+          "notes": ["It lives up in a tree", "It eats green leaves", "It sleeps almost all day", "Its nose is big and black", "It is not a bear"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a koala. It lives in a tree. The koala holds on tight. It eats green leaves. It eats a lot of leaves. Then the koala gets sleepy. It sleeps and sleeps. It sleeps all day long. It has a big black nose. It has soft round ears. The koala is not a bear. It is a koala."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves on each row. Write how many in the box.",
+          "emoji": "🌿",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "leaf    tree" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to its home.",
+          "pairs": [
+            { "left": "koala", "right": "tree" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own koala. Give it a tree to hold on to.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Koala That Sleeps All Day",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-koala", "templateLabel": "The Koala That Sleeps All Day", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "koala",
+          "notes": ["It lives in Australia", "It only eats gum leaves", "It can sleep for twenty hours", "A baby koala is called a joey", "It is not a bear"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Koala That Sleeps All Day",
+          "text": "A koala lives in Australia. It lives up in the gum trees. All day it holds on to a branch and sleeps. When night comes, the koala wakes up and eats. It eats gum leaves. It only eats gum leaves. Those leaves are tough and dry. They give the koala hardly any energy. That is why the koala sleeps so much. Sleeping saves energy. A koala can sleep for twenty hours. A baby koala is called a joey. The joey rides on its mom's back and holds on tight."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does the koala live?", "What does the koala eat?", "Why does the koala sleep so much?"],
+          "rows": 2,
+          "answers": ["in the gum trees in Australia", "gum leaves", "sleeping saves energy, because the leaves give it hardly any"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A koala lives in ____.", "It eats ____ leaves.", "Sleeping saves ____.", "A baby koala is called a ____."],
+          "wordBank": ["Australia", "gum", "energy", "joey"],
+          "answers": ["Australia", "gum", "energy", "joey"]
+        },
+        { "kind": "draw", "prompt": "Draw a koala asleep in its gum tree. Add some leaves for later.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Koala That Sleeps All Day",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-koala", "templateLabel": "The Koala That Sleeps All Day", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "koala",
+          "notes": ["Not a bear: it is a marsupial", "Its closest cousin is the wombat", "Gum leaves would poison most animals", "It sleeps up to twenty hours a day", "Its fingerprints look a lot like yours"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Koala Sleeps So Much",
+          "text": "A koala is not a bear. It is a marsupial, which means it carries its baby in a pouch. Its closest relative is the wombat. Koalas live in the forests of eastern Australia, and they eat one thing: the leaves of gum trees, also called eucalyptus. Almost no other animal will touch those leaves. They are full of natural poisons, and most animals that ate them would get sick. The koala can handle the poison. Inside its body is a long tube called a caecum. It is over six feet long, and it is packed with tiny helpers called bacteria. The bacteria break the poison down and pull food out of the tough leaves. This takes a long time, and it does not give the koala much energy. So the koala saves every bit it has. It sits still in a fork of a branch and sleeps for up to twenty hours a day. It is not lazy. It is careful. Sleeping is how a koala pays for its dinner."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a marsupial?",
+            "Why do almost no other animals eat gum leaves?",
+            "What do the bacteria in the caecum do for the koala?",
+            "Why do you think the koala sits so still all day?"
+          ],
+          "rows": 2,
+          "answers": [
+            "an animal that carries its baby in a pouch",
+            "the leaves are full of natural poisons and would make them sick",
+            "they break the poison down and pull food out of the tough leaves",
+            "(inference: sitting still saves energy, and its food gives it very little)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Koala Sleeps So Much", "How to Climb a Gum Tree", "The Biggest Bear in Australia"],
+          "answers": ["Why the Koala Sleeps So Much"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A koala is not a bear, it is a ____.", "Koalas eat the leaves of ____ trees.", "The long tube inside a koala is called a ____."],
+          "wordBank": ["marsupial", "gum", "caecum"],
+          "answers": ["marsupial", "gum", "caecum"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: the passage says the koala is careful, not lazy. Do you agree, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Koala That Sleeps All Day",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-koala", "templateLabel": "The Koala That Sleeps All Day", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "koala",
+          "notes": ["Phascolarctos cinereus", "Eucalyptus is toxic to most mammals", "Its caecum runs over six feet long", "Rests or sleeps up to twenty hours a day", "Two thumbs on each front paw", "Fingerprints almost identical to human ones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Price of a Poison Diet",
+          "text": "Every animal makes a trade. The koala's trade is one of the strangest on Earth. Koalas eat eucalyptus, the gum tree leaves that grow across eastern Australia. Those leaves are a terrible meal. They are tough as leather, low in protein, and loaded with oils and toxins that would sicken almost any other animal. That is exactly why the koala eats them. Nothing else wants them, so the koala never has to compete for food. It has an entire forest to itself. The trade is that the koala must pay for the meal. Its body carries a caecum, a fermenting tube branching off its gut, that runs more than six feet long. It is the largest caecum of any animal for its size. Billions of bacteria live inside it, slowly dismantling the toxins and squeezing what little nourishment the leaves hold. The koala's liver breaks down the rest. All of this work costs energy, and the leaves return very little. So the koala budgets. It sleeps or rests up to twenty hours a day, wedged into a fork of a branch, with a pad of extra cartilage at the base of its spine acting as a built-in cushion. Its brain is small and unusually smooth for its body, another way of spending less. Even its choosiness saves effort: of more than six hundred kinds of eucalyptus, a koala will eat from only a few dozen, and it sniffs each leaf with that big leathery nose before committing. A koala is not lazy. It is running the tightest energy budget of any animal in the forest, and sleep is the only way the numbers work."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what trade does the koala make?",
+            "Why does the passage say the koala has an entire forest to itself?",
+            "Explain how a small, smooth brain helps a koala survive.",
+            "The passage says a koala is not lazy. What evidence in the text supports that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(it eats a food nothing else wants, and pays for it with energy and long hours of stillness)",
+            "no other animal wants eucalyptus, so the koala has no competition for its food",
+            "brain tissue costs a lot of energy to run, so a smaller, simpler brain spends less",
+            "(inference: it tests each leaf, chooses carefully, and rests to balance a tight energy budget)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The koala eats a food no other animal wants, and pays for it with a life of stillness",
+            "Koalas are a kind of bear that lives in Australia",
+            "Eucalyptus trees are the tallest trees on Earth"
+          ],
+          "answers": ["The koala eats a food no other animal wants, and pays for it with a life of stillness"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["toxins → ____", "caecum → ____", "budgets → ____"],
+          "rows": 1,
+          "answers": [
+            "natural poisons that would make an animal sick",
+            "a long fermenting tube off the gut where bacteria break food down",
+            "spends carefully so there is enough to go around"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage calls the koala's diet a trade. Was it a good trade for the koala? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Koala That Sleeps All Day",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-koala", "templateLabel": "The Koala That Sleeps All Day", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "koala",
+          "notes": ["Phascolarctos cinereus, a marsupial, not a bear", "Nearest living relative: the wombat", "Caecum over six feet long, the largest for its size", "Feeds from a few dozen of 600+ eucalyptus species", "Rests or sleeps up to twenty hours a day", "Listed as endangered in eastern Australia in 2022"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Twenty Hours of Sleep, and the Bill That Comes With It",
+          "text": "There is a myth about koalas that will not die: that they are drunk on eucalyptus oil, dozing off in a haze, and that this is why they sleep all day. It is a good story. It is also wrong, and the truth is better. Koalas are marsupials, not bears. Their nearest living relative is the wombat, a burrowing animal built like a barrel. Somewhere back along that line, the koala's ancestors made a decision that shaped everything about them: they moved into the gum trees and committed to eating eucalyptus leaves, and almost nothing else. Consider what that meal is. Eucalyptus leaves are fibrous, waxy, low in protein, and defended with terpenes and phenolic compounds that are toxic to most mammals. A tree pours poison into its leaves precisely so that animals will leave them alone. The strategy usually works. The koala walked straight through it. Its liver produces enzymes that dismantle the toxins, and its caecum, a fermentation chamber branching from the gut that stretches beyond six feet, houses bacteria that break the fiber down over days. None of this is free. Detoxifying a meal costs energy, and eucalyptus returns very little energy to begin with. The koala solves the shortfall by spending almost nothing. It rests or sleeps up to twenty hours a day. It moves slowly and rarely. Its brain is small and remarkably smooth compared with other mammals of its size, and brain tissue is metabolically expensive. A cartilage pad at the base of its spine lets it wedge into a branch fork and stay there, comfortable, for hours, doing nothing at all. Even a koala's fussiness is arithmetic. Australia has more than six hundred species of eucalyptus; a koala will feed from only a few dozen, and often prefers particular trees within those. That leathery nose is a laboratory, testing each leaf for the balance of nutrition and poison before the koala commits. The koala is not drunk and it is not lazy. It is the most disciplined accountant in the forest, and it has chosen a food no one else will fight it for. The bill for that choice, paid daily, is twenty hours of stillness."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What myth does the passage open with, and how does it correct it?",
+            "Explain why the eucalyptus tree makes its leaves toxic. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author save the sentence about the bill for last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the toxic diet, the detoxifying gut, and the energy cost paid in sleep)",
+            "the myth that koalas are drunk on eucalyptus oil; the real reason is that their food returns almost no energy",
+            "so animals leave the leaves alone; quote: precisely so that animals will leave them alone",
+            "(inform, with detail: it defines terms and gives facts, though the opening and closing lines entertain)",
+            "(it lands the trade-off as the point: the sleep is the cost of the diet, not laziness)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["fibrous → ____", "detoxifying → ____", "metabolically expensive → ____", "shortfall → ____"],
+          "rows": 1,
+          "answers": [
+            "made of tough, stringy material",
+            "breaking poisons down so they cannot do harm",
+            "costing the body a lot of energy to run",
+            "the gap when there is less than what is needed"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls the koala's nose a laboratory. Explain what that comparison means.",
+            "The koala has no competition for its food. Explain one way that is an advantage and one way it is a risk."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it tests each leaf for nutrition and poison before the koala eats, the way a lab tests a sample)",
+            "(advantage: nothing else eats its food; risk: if the gum trees go, it has no other food to switch to)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is the koala's diet a clever strategy or a dangerous one? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Koala That Sleeps All Day",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-koala", "templateLabel": "The Koala That Sleeps All Day", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "koala",
+          "notes": ["Phascolarctos cinereus", "Caecum: the largest of any animal for its body size", "Joeys eat pap to inherit their gut bacteria", "Brain is small and unusually smooth", "Males bellow using extra vocal folds in the throat", "Endangered in Queensland, New South Wales, and the ACT since 2022"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Koala's Bargain",
+          "text": "Nothing about the koala makes sense until you understand the leaf. Start with the animal itself. A koala is not a bear, despite two centuries of people calling it one. It is a marsupial, which means its young are born barely formed and finish developing in a pouch. A newborn koala is about the size of a jellybean, blind, earless, and hairless, and it must crawl unaided from the birth canal into the pouch, which, unlike a kangaroo's, opens downward toward the mother's back legs. A ring of muscle keeps it shut so the joey does not fall out. The koala's closest living relative is the wombat, which tells you where this family came from: the ground. At some point the koala's ancestors climbed up into the gum trees and never came back down. Now the leaf. Eucalyptus is not food so much as a dare. The leaves are fibrous and waxy, poor in protein, and saturated with terpenes and phenolic compounds that are toxic to almost every mammal that tries them. This is not an accident of botany. The tree manufactures those compounds on purpose, as chemical armor, to make itself not worth eating. Nearly every animal in the forest takes the hint. The koala did not. Instead, the koala built a body around the dare. Its liver produces enzymes that break the toxins apart. Its caecum, a fermentation chamber branching off the gut, extends beyond six feet, the largest of any animal relative to its body, and inside it a population of bacteria works for days to pry nutrition out of material that barely contains any. The koala cannot digest eucalyptus by itself. Nothing can. It rents the ability from microbes, and it must hand that rental down: a joey leaving the pouch eats pap, a soft substance produced from its mother's gut, which seeds the joey's own caecum with the bacteria it will need for the rest of its life. Without that inheritance, a koala would starve in a tree full of leaves. The payoff for all this machinery is a monopoly. The koala eats a food nobody else will fight it for, and it lives in a forest that is, from its point of view, entirely empty of competitors. The cost is that the food barely pays. Detoxification burns energy; fermentation is slow; eucalyptus yields little. So the koala spends nothing it does not have to. It rests or sleeps up to twenty hours a day. Its brain is small and strikingly smooth, and nervous tissue is among the most expensive tissue a body can run. A wedge of cartilage at the base of its spine turns a branch fork into a chair. Even the fussiness is arithmetic: of more than six hundred eucalyptus species, a koala feeds from a few dozen, and it tests each leaf with that oversized nose before it commits. One popular story should be retired. Koalas are not drunk on eucalyptus oil, and they are not lazy. They are solvent. Every hour of stillness is a line item in a budget that does not balance any other way. Which is why the ending is so hard to take. The koala survived a diet designed to kill it and cannot survive us. Its habitat has been cleared for farms and suburbs; cars and dogs kill it where the forest meets the street; the 2019 and 2020 bushfires burned through a great deal of what was left; and a chlamydia epidemic spreads blindness and infertility through the surviving populations. In 2022 Australia listed the koala as endangered in Queensland, New South Wales, and the Australian Capital Territory. An animal that solved the hardest chemistry problem in the forest has no answer at all for a bulldozer."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the passage means by calling eucalyptus a dare. Cite the exact phrase.",
+            "The passage says the koala rents its digestion. Explain what pap is and why a joey cannot survive without it.",
+            "Identify the shift in the passage: where does it turn, and how does the author signal it?",
+            "Analyze the final sentence. What is the author doing by ending on a bulldozer, and does the passage earn that ending?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the toxic diet, the borrowed gut bacteria, the energy cost, and the threat from people)",
+            "(the tree defends itself chemically and the koala accepted the challenge; cite: Eucalyptus is not food so much as a dare)",
+            "pap is a soft substance from the mother's gut that seeds the joey's caecum with the bacteria it needs; without it the joey could not digest eucalyptus and would starve",
+            "(at Which is why the ending is so hard to take; a short sentence pivots the piece from admiration to loss)",
+            "(it shifts the threat from chemistry to people, arguing the koala's cleverness cannot solve habitat loss; supported by the clearing, cars, fires, and disease evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["marsupial → ____", "detoxification → ____", "monopoly → ____", "solvent → ____"],
+          "rows": 2,
+          "answers": [
+            "a mammal whose young are born undeveloped and finish growing in a pouch",
+            "the process of breaking poisons down so they cannot do harm",
+            "having something entirely to yourself with no competition",
+            "able to pay what you owe, with the books balanced"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage calls the koala's food supply a monopoly. Explain why a monopoly on one food is dangerous when the habitat changes.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a specialist cannot switch foods, so losing the gum trees means losing everything, while a generalist could adapt)",
+            "(student question + a credible source type, such as a wildlife survey or a koala researcher)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The koala is a poorly designed animal that only survives by sleeping. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

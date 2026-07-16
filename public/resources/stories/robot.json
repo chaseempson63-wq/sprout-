@@ -1,0 +1,319 @@
+{
+  "key": "robot",
+  "title": "The Robot That Never Gets Tired",
+  "blurb": "Where the word robot came from, how a machine senses and moves, and why picking up a sock is harder than chess.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Robot That Never Gets Tired",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-robot", "templateLabel": "The Robot That Never Gets Tired", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the robot's arms." },
+        {
+          "kind": "image",
+          "imageKey": "robot",
+          "notes": ["Its eyes are called sensors", "It has a computer inside", "Motors move its arms", "A robot never gets tired", "Some robots work on Mars"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A robot is a machine that can move by itself. This robot has two eyes and two arms. Its eyes are sensors. Sensors help the robot see. Inside the robot is a little computer. The computer tells the arms what to do. The robot does not get tired. It can lift and carry all day. Some robots clean the floor. Some robots work on Mars."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the parts in each row. Write how many in the box.",
+          "emoji": "⚙️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "robot    move" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each machine to where it works.",
+          "pairs": [
+            { "left": "robot", "right": "factory" },
+            { "left": "boat", "right": "water" },
+            { "left": "plane", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own robot. Give it arms, wheels, and a face.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Robot That Never Gets Tired",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-robot", "templateLabel": "The Robot That Never Gets Tired", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "robot",
+          "notes": ["A robot senses, thinks, and moves", "Sensors are its eyes and ears", "The computer inside is the controller", "Motors are the muscles", "It can do the same job all day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Robot That Never Gets Tired",
+          "text": "A robot is a machine that can sense, think, and move. First it senses. A camera or a touch pad tells the robot what is around it. Then it thinks. A small computer inside works out what to do next. Then it moves. Motors turn the wheels or bend the arms. Sense, think, move. A robot does that loop over and over, very fast. People build robots to do jobs that are dull or dirty or dangerous. A robot arm can weld the same spot on a car ten thousand times. It never gets bored. It never needs a nap."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are the three things a robot does?", "What part of the robot does the thinking?", "Why do people give robots dull or dangerous jobs?"],
+          "rows": 2,
+          "answers": ["it senses, thinks, and moves", "a small computer inside", "because a robot never gets bored or tired"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A robot can sense, think, and ____.", "The ____ inside works out what to do.", "Motors bend the ____.", "A robot arm never gets ____."],
+          "wordBank": ["move", "computer", "arms", "bored"],
+          "answers": ["move", "computer", "arms", "bored"]
+        },
+        { "kind": "draw", "prompt": "Draw a robot doing a job you would not want to do. Show the job around it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Robot That Never Gets Tired",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-robot", "templateLabel": "The Robot That Never Gets Tired", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "robot",
+          "notes": ["The word robot is from a 1920 play", "Robota is Czech for forced labor", "The first working robot was Unimate, 1961", "It stacked red hot metal", "Robots take the dull, dirty, dangerous jobs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where the Word Robot Came From",
+          "text": "In 1920, a writer in Czechoslovakia named Karel Capek wrote a play about machines built to do all the hard work. He needed a name for them. His brother Josef suggested robota, an old Czech word for heavy, forced labor. Capek shortened it to robot. The word was born in a play, before any real robot existed. Forty one years later, the first one went to work. It was called Unimate. It was a heavy arm bolted to the floor of a car factory in New Jersey. Its job was to pick up hot pieces of metal and stack them. The metal was hot enough to burn a person. The arm did not care. It lifted the same piece the same way, all day and all night. That is what robots are for. People hand them the jobs that are dull, dirty, or dangerous. A robot will never get bored of a job. It will never look away at the wrong moment. But a robot is not just any arm. To count as a robot, a machine has to do three things: sense the world, decide what to do, and then move. Your toaster cannot do that. Unimate could, in a simple way. It knew where its own arm was, and it corrected itself when it drifted off target."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where did the word robot come from?",
+            "What was Unimate's job?",
+            "What three things does a machine have to do to count as a robot?",
+            "Why do you think the factory wanted a robot for that job instead of a person?"
+          ],
+          "rows": 2,
+          "answers": [
+            "from a 1920 Czech play by Karel Capek, from robota, a word for forced labor",
+            "picking up hot pieces of metal and stacking them in a car factory",
+            "sense the world, decide what to do, and move",
+            "(inference: the metal was hot enough to burn a person, and the arm never got tired or looked away)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Where the Word Robot Came From", "How to Build a Toaster", "The Best Cars in New Jersey"],
+          "answers": ["Where the Word Robot Came From"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Robota is an old Czech word for forced ____.", "The first working robot was called ____.", "People hand robots the jobs that are dull, dirty, or ____."],
+          "wordBank": ["labor", "Unimate", "dangerous"],
+          "answers": ["labor", "Unimate", "dangerous"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: name a job you would give a robot, and explain why that job suits a machine better than a person.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Robot That Never Gets Tired",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-robot", "templateLabel": "The Robot That Never Gets Tired", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "robot",
+          "notes": ["Three parts: sensors, controller, actuators", "An encoder reports a joint's exact angle", "Actuators are the muscles", "The parts are wired in a circle, not a line", "That circle is called a feedback loop", "Some arms run the loop 1000 times a second"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Sense, Think, Move",
+          "text": "Open up a robot and you will find the same three parts every time, no matter what the robot is built for. The first part is sensors. A sensor is anything that turns the outside world into a number. A camera turns light into numbers. A microphone turns sound into numbers. A robot arm carries a sensor called an encoder on every joint, and the encoder reports the exact angle that joint is sitting at right now. The second part is the controller. This is the computer. It takes the numbers arriving from the sensors, compares them to the numbers it wants, and works out the difference. The third part is actuators. Actuators are the muscles: motors, pumps, anything that pushes. The controller sends power to the actuators, and the robot moves. Here is the important bit. Those three parts are wired in a circle, not a line. The robot moves, the sensors report what actually happened, and the controller adjusts. Then it does the whole thing again. A robot arm might run that circle a thousand times every second. The circle is called a feedback loop, and it is the whole secret. A machine without a feedback loop is just following orders and hoping. A machine with one can notice that it is wrong and fix itself while it works. That is the difference between a wind up toy and a robot. It is also why robots are patient in a way people are not. The loop does not get tired and it does not stop checking. A welding arm will place the same weld, to the same fraction of a millimeter, for eight hours, and the ten thousandth weld is as good as the first."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what does a sensor do?",
+            "Why does the passage say the three parts are wired in a circle and not a line?",
+            "Explain the difference between a wind up toy and a robot.",
+            "The passage says a machine without a feedback loop is following orders and hoping. What could go wrong for a machine like that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(it turns something in the outside world into a number the computer can use)",
+            "because what the robot does feeds back in through the sensors and changes what it does next",
+            "a wind up toy follows one fixed motion; a robot senses what happened and corrects itself",
+            "(inference: it cannot tell when it has drifted off target or hit something, so it keeps repeating the mistake)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A robot is a sensor, a controller, and an actuator wired into a loop that lets it correct itself",
+            "Cameras are the most important invention in history",
+            "Factory workers should be replaced with wind up toys"
+          ],
+          "answers": ["A robot is a sensor, a controller, and an actuator wired into a loop that lets it correct itself"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["sensor → ____", "actuator → ____", "feedback loop → ____"],
+          "rows": 1,
+          "answers": [
+            "a part that turns something in the world into a number",
+            "the part that moves, like a motor or a pump",
+            "a circle where moving, sensing, and adjusting keep feeding each other"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: pick one machine in your house and explain whether it is a robot. Use sensors, controller, and actuators in your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Robot That Never Gets Tired",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-robot", "templateLabel": "The Robot That Never Gets Tired", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "robot",
+          "notes": ["Perseverance landed in Jezero Crater, 2021", "A radio signal takes about 5 to 20 minutes each way", "No live steering is possible", "The rover maps the ground and picks its own route", "Acting without being told is called autonomy", "Spirit sank into soft soil in 2009"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Robot Alone on Mars",
+          "text": "Right now there is a robot the size of a small car driving around on Mars. Its name is Perseverance. It landed in a crater called Jezero in February 2021, and no human being has touched it since. That last part is the problem. Mars is a long way off, and radio waves, fast as they are, still take time to cross the gap. Depending on where the two planets sit in their orbits, a signal from Earth needs somewhere between about five and twenty minutes to reach Mars. The reply takes just as long. So if the rover is rolling toward a hole, and a person on Earth sees it and shouts stop, the message arrives roughly ten minutes after the rover has already fallen in. You cannot drive a Mars rover the way you drive a remote control car. There is no live steering. Instead, the team on Earth sends the rover a plan for the day: head roughly that way, look at that rock. Then they go home. The rover fills in everything else by itself. So it does. Perseverance photographs the ground ahead, builds a rough map of what is safe and what is not, chooses a route through, drives a short distance, then stops and looks again. It repeats that all day. Nobody is watching. Nobody can help. That ability to act on a goal without being told each step is called autonomy, and on Mars it is not a luxury. It is the only thing that works. This is why space is such a demanding place to build robots for. On Earth, when a robot gets stuck, a person walks over and unsticks it. On Mars there is nobody to walk over. A rover that gets a wheel wedged in soft sand is finished, and that has happened. The rover Spirit sank into a patch of loose soil in 2009 and never drove again. A robot on Mars is not a tool that somebody is using. It is a machine that has been handed a task and left alone with it, further from help than anything people have ever built."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why is live steering impossible on Mars? Quote the detail the passage uses to make this vivid.",
+            "Explain what Perseverance does on its own each day, in order.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author mention the rover Spirit at the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the signal delay + rover autonomy + no help available)",
+            "the signal delay; quote: the message arrives roughly ten minutes after the rover has already fallen in",
+            "photographs the ground ahead, builds a rough map, chooses a route, drives a short distance, stops and looks again",
+            "(inform, with detail: it explains the delay and defines autonomy; the closing lines lean toward persuading you it is remarkable)",
+            "(to prove the danger is real, not theoretical: a rover really did get stuck and die)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["autonomy → ____", "orbits → ____", "crater → ____", "wedged → ____"],
+          "rows": 1,
+          "answers": [
+            "acting on a goal without being told each step",
+            "the paths planets travel around the sun",
+            "a bowl shaped dip in the ground",
+            "jammed tightly into a space"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says autonomy on Mars is not a luxury, it is the only thing that works. Explain what that means in your own words.",
+            "Would you rather send a robot or a person to explore Mars? Give one reason the passage supports and one it does not mention."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the delay makes remote control useless, so the rover has to decide for itself or do nothing)",
+            "(opinion: supported reason might be the delay or the danger; unmentioned reason might be cost, air, food, or the return trip)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should we spend money sending robots to other planets when there is plenty left to explore on Earth? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Robot That Never Gets Tired",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-robot", "templateLabel": "The Robot That Never Gets Tired", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "robot",
+          "notes": ["Deep Blue beat Garry Kasparov in 1997", "Hans Moravec described the paradox in the 1980s", "Hard for us is easy for machines, and the reverse", "Modern chess is only about 500 years old", "Grasping is hundreds of millions of years old", "Nobody can write the rules for a sock"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hardest Thing a Robot Can Do Is Pick Up a Sock",
+          "text": "In 1997 a computer beat the best chess player alive. Garry Kasparov was the world champion, arguably the strongest the game had ever produced, and a machine called Deep Blue took a match off him. People treated it as a landmark, and it was. Chess is difficult. Chess is what clever looks like. Meanwhile, in a laboratory somewhere, a robot was struggling to pick a sock up off the floor. That gap has a name. The roboticist Hans Moravec described it in the 1980s, and it is now called Moravec's paradox: the things people find hard, machines find easy, and the things people find so easy that they do not count them as thinking at all, machines find nearly impossible. A computer can hold a chess position, a tax code, or the entire timetable of an airline in its head without effort. It cannot reliably pick up a sock. The reason is history. Modern chess is roughly five hundred years old. Human beings have been playing it, badly, for a few dozen generations, and we are not naturally built for it. When you play chess you are running a slow, conscious, effortful search. It feels like work because it is work, and your brain has no dedicated equipment for the task. Now think about what actually happens when you pick up a sock. Your eyes separate the sock from the carpet, a problem in shading and texture with no clean answer. You judge the distance. You choose, without noticing that you are choosing, where on the sock to grab. You know before you touch it roughly how heavy it will be and how it will flop. Your hand shapes itself on the way there. Your fingers squeeze exactly hard enough to hold it and not so hard that you tear it. If it slips, you have caught it before you consciously registered that it slipped. None of that feels like thinking, because you are not doing it consciously. But that machinery is the product of hundreds of millions of years of evolution, refined across an unimaginable span of time in every creature that had to see, grab, and move in order to stay alive. It is old, it is deep, and it runs so smoothly that it is invisible to the person using it. That is Moravec's point, and it is a point about us rather than about machines. We badly misjudge which of our own abilities are impressive. The recent skills, the ones we had to invent and can feel ourselves straining at, look like intelligence. The ancient ones, handed to us finished, look like nothing at all. So we built machines that beat us at the recent things first, and we are still working on the sock. There has been real progress. Robots now fold laundry, sort recycling, and pick fruit, and they manage it by learning from enormous piles of examples rather than by being handed the rules, because nobody can write the rules for a sock. But watch one work and you will see the paradox holding its ground. It is slow. It is careful. It fails in ways a four year old would not. The next time a machine does something clever and it unsettles you, it is worth remembering which way around the difficulty actually runs."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "State Moravec's paradox in your own words, then cite the passage's own definition of it.",
+            "The passage argues the reason is history. Explain that argument using both chess and grasping.",
+            "Identify where the passage turns from machines to people, and explain how the author signals the shift.",
+            "The final sentence says it is worth remembering which way around the difficulty actually runs. Analyze what the author wants the reader to do with that, and whether the passage earns the claim."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: machines master our hardest skills first and our oldest ones last)",
+            "(cite: the things people find hard, machines find easy, and the things people find so easy that they do not count them as thinking at all, machines find nearly impossible)",
+            "(chess is roughly five hundred years old and consciously effortful; grasping is hundreds of millions of years old and runs below awareness, so evolution built dedicated machinery for one and not the other)",
+            "(at That is Moravec's point, and it is a point about us rather than about machines; the author names the pivot outright)",
+            "(it asks the reader to stop reading machine cleverness as a measure of human ability; supported by the chess and sock evidence, though the reader may judge it under-argued)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["paradox → ____", "roboticist → ____", "refined → ____", "registered → ____"],
+          "rows": 2,
+          "answers": [
+            "something that seems backwards but turns out to be true",
+            "a person who designs and builds robots",
+            "improved gradually over a long stretch of time",
+            "became consciously aware of something"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says robots learn to fold laundry from enormous piles of examples rather than from rules. Explain why rules fail for a task like this.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a sock has no fixed shape, so there is no finite list of rules that covers every way it can land, fold, or bunch)",
+            "(student question + a credible source type, such as a robotics researcher or a peer reviewed paper)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A machine that can beat a grandmaster at chess but cannot pick up a sock is not intelligent in any meaningful sense. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

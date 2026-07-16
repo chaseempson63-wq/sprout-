@@ -1,0 +1,310 @@
+{
+  "key": "worm",
+  "title": "The Worm That Built the Ground",
+  "blurb": "The eyeless, boneless animal that eats dirt, breathes through its skin, and quietly builds the soil every plant on land grows in.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Worm That Built the Ground",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-worm", "templateLabel": "The Worm That Built the Ground", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the worm's head." },
+        {
+          "kind": "image",
+          "imageKey": "worm",
+          "notes": ["It has no eyes", "It has no legs", "It eats old leaves", "It feels the ground shake", "It makes good dirt"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a worm. The worm lives under the ground. It is soft and pink. The worm has no legs. It pushes through the dirt with its long body. The worm eats old leaves. Then it makes good dirt for plants. The worm likes the rain. Rain makes the ground soft and wet. When the sun comes out, the worm goes back down."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves in each row. Write how many in the box.",
+          "emoji": "🍂",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "worm    dirt" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "worm", "right": "dirt" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a worm in its tunnel. Add some leaves on top of the ground.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Worm That Built the Ground",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-worm", "templateLabel": "The Worm That Built the Ground", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "worm",
+          "notes": ["No eyes, no ears, no nose", "It breathes through its skin", "It has no teeth", "The rings are called segments", "Worm poop is called a casting"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Worm That Built the Ground",
+          "text": "A worm has no eyes. It has no ears and no nose. So how does a worm know where to go? It feels. A worm can feel light on its skin. It can feel the ground shake when a bird lands. Then it slides down fast. A worm has no teeth either. It swallows dirt and old leaves. Inside, a hard pocket called a gizzard grinds the food up small. What comes out the other end is fresh new soil. Plants love it. Every worm in your yard is quietly making the ground better while you sleep."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How does a worm know where to go?", "What does a worm eat?", "What comes out of the other end of a worm?"],
+          "rows": 2,
+          "answers": ["it feels", "dirt and old leaves", "fresh new soil"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A worm has no ____ to see with.", "It can feel the ground ____ when a bird lands.", "A hard pocket called a ____ grinds up the food.", "A worm makes fresh new ____."],
+          "wordBank": ["eyes", "shake", "gizzard", "soil"],
+          "answers": ["eyes", "shake", "gizzard", "soil"]
+        },
+        { "kind": "draw", "prompt": "Draw what is under the grass in your yard. Put a worm down there and give it a tunnel.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Worm That Built the Ground",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-worm", "templateLabel": "The Worm That Built the Ground", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "worm",
+          "notes": ["About 150 rings, called segments", "Tiny bristles grip like sandpaper", "It breathes through wet skin", "A gizzard grinds its food", "No eyes, but it feels light"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Machine Made of Rings",
+          "text": "Pick up a worm and it feels like nothing but a wet noodle. It is not. A worm is a machine built out of rings. Look closely and you can see the rings, called segments. A big earthworm has about 150 of them. Each segment carries four tiny pairs of stiff bristles. You cannot see them, but you can feel them. Rub a worm gently backward along your finger and it catches like sandpaper. Those bristles are how a worm walks without legs. It grips the soil with the bristles at its back end, squeezes itself long and thin to push its head forward, then grips with the front and hauls the rest along. Long, short, long, short. That is a worm walking. The worm has no lungs. Air soaks straight through its wet skin and into its blood. That is why a worm must stay damp. A dry worm cannot breathe, and a worm left on hot pavement will not last the afternoon."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are the rings on a worm's body called?",
+            "How does a worm walk without legs?",
+            "Why must a worm stay damp?",
+            "Why do you think a worm carries its bristles on every segment instead of only at the ends?"
+          ],
+          "rows": 2,
+          "answers": [
+            "segments",
+            "it grips the soil with the bristles at one end, stretches, then grips with the other end and pulls itself along",
+            "it breathes through its wet skin, and a dry worm cannot breathe",
+            "(inference: it can grip anywhere along its body, so any part of it can hold on while the rest moves)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A Machine Made of Rings", "How to Build a Bird House", "The Tallest Tree in the World"],
+          "answers": ["A Machine Made of Rings"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The rings on a worm's body are called ____.", "Tiny stiff ____ grip the soil so the worm can pull itself along.", "A worm has no lungs, so air soaks through its ____."],
+          "wordBank": ["segments", "bristles", "skin"],
+          "answers": ["segments", "bristles", "skin"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would be the hardest part of getting around with no legs and no eyes, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Worm That Built the Ground",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-worm", "templateLabel": "The Worm That Built the Ground", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "worm",
+          "notes": ["Skin breathing: it must stay damp", "Five pairs of pumps push its blood", "Light-sensing cells, but no eyes", "Cutting one does not make two", "Worm grunting brings them up", "Deep burrows can run six feet down"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sidewalk After the Storm",
+          "text": "Here is a question with no settled answer: why do worms crawl onto the sidewalk when it rains? The usual explanation is that they are drowning, and that the burrows fill with water and force them up. It is a tidy story, and it is probably wrong. Earthworms take in oxygen through their skin, and that works fine in water. Some can survive submerged for days. Better ideas exist. A worm on dry ground dries out in minutes, so rain is the only safe time to travel any distance across the surface, and a worm looking for a new burrow or a mate has to travel somehow. Another idea is stranger. The drumming of heavy rain may feel exactly like a mole digging, and a worm that stays put when a mole is coming does not stay a worm for long. People who hunt worms for fishing bait use this. They drive a wooden stake into the ground and rub it with iron, and the ground hums, and worms come boiling out of the soil. It is called worm grunting. The moles, it turns out, taught them the trick. While we are killing myths, here is another. Cut a worm in half and you do not get two worms. The half with the head can sometimes seal the wound and grow a short new tail, if enough of it is left. The other half has no brain and no mouth. It wriggles for a while, which looks like life, and then it stops. So the sidewalk after a storm is not a graveyard of drowned worms. It is a road, and some of the travelers ran out of time when the sun came back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says the drowning explanation is probably wrong. What evidence does it give?",
+            "Why is rain the only safe time for a worm to cross the surface?",
+            "Explain how worm grunting works, and why it fools the worms.",
+            "The author calls the sidewalk a road, not a graveyard. What is that comparison meant to change in your mind?"
+          ],
+          "rows": 2,
+          "answers": [
+            "worms take in oxygen through their skin, so water is fine, and some can survive submerged for days",
+            "a worm on dry ground dries out in minutes, so it can only travel far while the surface is wet",
+            "rubbing iron on a wooden stake makes the ground hum like a digging mole, so the worms flee upward",
+            "(inference: the worms were traveling on purpose, not dying by accident, so it is a journey rather than a disaster)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Two common beliefs about worms turn out to be wrong, and the real explanations are stranger",
+            "Moles are the most dangerous animal in North America",
+            "Worms cannot survive in water at all"
+          ],
+          "answers": ["Two common beliefs about worms turn out to be wrong, and the real explanations are stranger"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["submerged → ____", "burrow → ____", "bait → ____"],
+          "rows": 1,
+          "answers": ["held under water", "the tunnel a worm digs and lives in", "food used to catch fish"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to someone younger why the sidewalk after a storm is not full of drowned worms. Use two facts from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Worm That Built the Ground",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-worm", "templateLabel": "The Worm That Built the Ground", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "worm",
+          "notes": ["Lumbricus terrestris, the nightcrawler", "Darwin's last book was about worms", "Castings: soil that has been eaten", "Up to ten tons of soil per acre each year", "The thick band is called the clitellum", "Deaf, but it feels vibration"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Darwin's Last Book",
+          "text": "In 1881, six months before he died, Charles Darwin published his last book. It was not about finches or fossils or the origin of species. It was about worms. Darwin had been watching them for more than forty years. He kept them in pots in his study. He tested whether they could hear by shouting at them, by having his son play the bassoon at them, and by setting their pots on the piano. Shouting and bassoons did nothing. The piano, whose vibrations traveled up through the pots, sent them diving. Worms are deaf and they are not fooled. He tested whether they could think. A worm plugs the mouth of its burrow with leaves, and to pull a pointed leaf underground the sensible move is to grab the tip. Darwin found they usually did. So he cut paper triangles, which no worm had ever met, and offered those instead. The worms still mostly grabbed the pointed end. Something in that tiny animal was solving the problem, not just following a habit. Mostly, though, Darwin measured. He worked out that the worms under an English field could pass more than ten tons of soil through their bodies per acre per year, hauling it up from below and leaving it on the surface as castings. Everything lying on that field therefore sinks. Stones sink. Roman walls sink. Darwin laid a flat stone on his lawn and had his family measure it for decades as the worms buried it, and the thing is still there. That is the discovery, and it is bigger than it sounds. The layer of dark crumbly soil that every plant on land depends on is not just sitting there. It is being eaten, ground in a gizzard, and laid down again, over and over, by animals with no eyes and no bones. Darwin ended his book by pointing out that few animals have played so large a part in the history of the world, and he was not being sentimental. He had the numbers."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Darwin tested whether worms could hear. What did he find, and what did the piano show?",
+            "What did the paper triangles prove that the leaves alone could not? Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage ends with He had the numbers. What is the author saying about Darwin's claim?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering Darwin's worm experiments + the measurement of soil moved + why it matters)",
+            "they ignored shouting and the bassoon but dived when the pots sat on the piano, so they sense vibration rather than sound",
+            "that no habit could explain it, since no worm had met a paper triangle; quote: solving the problem, not just following a habit",
+            "(inform, with an entertaining tone: it gives dates and measurements, but tells the bassoon story for enjoyment)",
+            "(that the claim rested on measured evidence, not on affection for worms)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["castings → ____", "gizzard → ____", "vibrations → ____", "sentimental → ____"],
+          "rows": 1,
+          "answers": ["soil that has passed through a worm's body", "a muscular pocket that grinds food", "small shakes traveling through a solid thing", "guided by feeling rather than by evidence"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might a scientist famous for the origin of species spend his last book on something as ordinary as worms?",
+            "If everything lying on a field slowly sinks, what does that mean for people who dig up the past?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: he thought the overlooked and everyday was worth measuring, and small forces add up over long time)",
+            "(inference: buried walls and old objects were covered and protected by soil the worms brought up)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is a slow, unglamorous discovery like Darwin's worm work as valuable as a famous one? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Worm That Built the Ground",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-worm", "templateLabel": "The Worm That Built the Ground", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "worm",
+          "notes": ["Ecosystem engineer: it rebuilds its habitat", "Glaciers left northern forests worm-free", "European worms came in ship ballast", "Spreads about thirty feet a year", "Strips forest duff within a few years", "Darwin: forty years of worm study"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Worm Is Not Always the Hero",
+          "text": "Everything you have been taught about earthworms is true, and in half of North America it is also a problem. Start with what a worm does. An earthworm is a tube that eats the ground. It swallows soil and dead leaves, grinds the mix in a muscular gizzard full of swallowed grit, absorbs what it can use, and voids the rest as castings that are richer in usable nitrogen and phosphorus than the soil that went in. Meanwhile the burrow itself does work. A nightcrawler's tunnel can run six feet straight down and stay open for years, letting rain and air reach roots that would otherwise sit in dense, airless dirt. The animal is a plow, a compost heap, and a drainage system, and it costs nothing, and there can be a million of them under a single acre. Ecologists have a term for a creature that rebuilds its own habitat on this scale. They call it an ecosystem engineer. So worms are good. That is the story every gardener knows, and in a garden it is exactly correct. Now go north. Push the map up into Minnesota, Ontario, Wisconsin, the forests that sat under a mile of ice twenty thousand years ago. The glaciers scraped those soils bare, and when the ice pulled back, the earthworms did not come with it. Worms are slow. Left alone they spread perhaps thirty feet a year. Those forests spent ten thousand years growing up without a single native earthworm in them, and they grew up strange because of it. A worm-free northern forest builds duff: a thick, spongy, slowly rotting mat of old leaves on the forest floor, sometimes a hand deep. That mat is the nursery. Sugar maple seedlings root in it. Trilliums and ferns and wild ginger live in it. Ground-nesting birds and salamanders hide in it. Nothing about that forest is built for an animal that eats leaf litter for a living. Then Europeans arrived, carrying soil as ship ballast and worms in the root balls of their apple trees, and later anglers began dumping leftover bait at the ends of lakes. European earthworms have been spreading through those forests ever since, and where they arrive, the duff goes. Not slowly. A worm invasion can strip the forest floor to bare mineral soil within a few years. The seedlings fail. The trilliums vanish. The salamanders decline. The soil that gardeners praise worms for building is, in that forest, the wreckage of something that took ten millennia to make. This is the part worth sitting with. The worm did not change. Its behavior in a Wisconsin woodlot is identical to its behavior in an English pasture: eat litter, mix soil, cast. What changed is the place, and whether the place had ten thousand years to grow around the animal or ten. Good and bad are not properties of the worm. They are properties of the fit between a creature and where it has been put, and we are the ones who keep moving creatures. Darwin, who spent forty years proving that worms had quietly built the ground under England, never saw this coming. He was not wrong. He was writing from inside a place where the fit was already old."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "What is an ecosystem engineer, and why does the passage apply the term to the earthworm? Cite the evidence.",
+            "Explain how the same behavior can be useful in a garden and destructive in a Minnesota forest. Quote the sentence where the author states the principle.",
+            "Identify where the passage turns, and how the author signals it.",
+            "The passage ends: He was not wrong. He was writing from inside a place where the fit was already old. Analyze what that move does for the argument, and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a creature that remakes the habitat it lives in; cite: rebuilds its own habitat on this scale)",
+            "(the garden was shaped with worms in it, the northern forest was not; quote: Good and bad are not properties of the worm.)",
+            "(at Now go north; a short blunt command breaks the tone and moves the reader from praise to loss)",
+            "(it protects Darwin's evidence while limiting his conclusion to his setting, and the passage earns it because the whole argument is about fit between animal and place)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["duff → ____", "ballast → ____", "mineral soil → ____", "millennia → ____"],
+          "rows": 2,
+          "answers": [
+            "the thick spongy mat of rotting leaves on a forest floor",
+            "heavy material carried in a ship to steady it",
+            "the bare soil that lies below the layer of rotting leaves",
+            "thousands of years"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says worms spread perhaps thirty feet a year. Explain why that slow speed made the invasion easy to overlook.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: the change advances too slowly to notice year to year, so each generation accepts the altered forest as normal)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal cannot be invasive, only the people who moved it can. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "key": "gorilla",
+  "title": "The Gorilla That Makes a New Bed Every Night",
+  "blurb": "The biggest ape on Earth is a slow, leaf-eating giant that hums while it eats and bends a fresh bed of branches every single evening.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Gorilla That Makes a New Bed Every Night",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-gorilla", "templateLabel": "The Gorilla That Makes a New Bed Every Night", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the gorilla." },
+        {
+          "kind": "image",
+          "imageKey": "gorilla",
+          "notes": ["It is the biggest ape", "It eats leaves all day", "It walks on its knuckles", "It sleeps in a bed of leaves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a gorilla. A gorilla is big. It is the biggest ape in the world. A gorilla eats leaves. It eats stems too. It walks on its feet and its hands. Every night the gorilla bends branches into a bed. It sleeps in the bed. In the morning it makes a new one. Baby gorillas ride on their mom's back."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves in each row. Write how many in the box.",
+          "emoji": "🌿",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "big    bed" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "gorilla", "right": "forest" },
+            { "left": "fish", "right": "river" },
+            { "left": "bee", "right": "flower" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own gorilla. Give it a big pile of leaves to eat.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Gorilla That Makes a New Bed Every Night",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-gorilla", "templateLabel": "The Gorilla That Makes a New Bed Every Night", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "gorilla",
+          "notes": ["Biggest ape on Earth", "Eats leaves, stems, and fruit", "The leader is called a silverback", "Builds a fresh nest every night", "Babies ride on mom's back"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Gorilla That Makes a New Bed Every Night",
+          "text": "A gorilla is the biggest ape on Earth. A grown male can weigh more than two grown men. But a gorilla does not hunt. It eats leaves, stems, and fruit all day long. Gorillas live in families. One big male leads the family. His back turns silver as he gets older, so people call him a silverback. He keeps everyone safe. Every night each gorilla bends branches and leaves into a nest. It is a fresh bed, made in a few minutes. In the morning the family walks away and leaves it behind. That night, they build brand new ones."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What do gorillas eat?", "Who leads a gorilla family?", "What does a gorilla make every night?"],
+          "rows": 2,
+          "answers": ["leaves, stems, and fruit", "one big male called a silverback", "a fresh nest out of branches and leaves"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A gorilla is the biggest ____ on Earth.", "Gorillas eat leaves, stems, and ____.", "The male who leads the family is called a ____.", "Every night a gorilla builds a new ____."],
+          "wordBank": ["ape", "fruit", "silverback", "nest"],
+          "answers": ["ape", "fruit", "silverback", "nest"]
+        },
+        { "kind": "draw", "prompt": "Draw a gorilla family in the forest. Add the silverback and a baby on its mom's back.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Gorilla That Makes a New Bed Every Night",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-gorilla", "templateLabel": "The Gorilla That Makes a New Bed Every Night", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "gorilla",
+          "notes": ["Largest primate alive", "Almost entirely a plant eater", "Eats about 40 pounds of leaves a day", "Walks on its knuckles", "The chest beat is a warning, not a fight", "Lives in the forests of Africa"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Biggest Ape in the Forest",
+          "text": "A gorilla is the largest primate alive. A grown male can weigh over 400 pounds, and his arms are longer than his legs. He walks on his knuckles, resting his weight on the backs of his fingers. All that muscle is built on leaves. Gorillas are almost entirely plant eaters. A mountain gorilla can chew through 40 pounds of leaves, stems, and shoots in a single day. Leaves are not very filling, so gorillas eat for hours, then rest, then eat again. Gorillas live in families led by one older male. Around age twelve, the hair across his back turns silvery gray, which is why he is called a silverback. He decides where the family walks, where it eats, and where it sleeps. When he wants to warn a rival, he stands up, cups his hands, and beats his chest. Cupped hands make a hollow pok pok pok that carries more than half a mile through the trees. It looks like a fight. Most of the time, it is a way to avoid one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How much can a mountain gorilla eat in one day?",
+            "Why is the leader of the family called a silverback?",
+            "What does a gorilla do with cupped hands?",
+            "Why do you think a gorilla would rather beat his chest than fight?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about 40 pounds of leaves, stems, and shoots",
+            "around age twelve the hair on his back turns silvery gray",
+            "he beats his chest to make a hollow pok pok pok sound",
+            "(inference: a real fight could hurt him, so the sound settles it safely)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Biggest Ape in the Forest", "How to Train a Pet Monkey", "The Tallest Mountain in Africa"],
+          "answers": ["The Biggest Ape in the Forest"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A gorilla walks on its ____.", "The older male who leads the family is called a ____.", "Gorillas are almost entirely ____ eaters."],
+          "wordBank": ["knuckles", "silverback", "plant"],
+          "answers": ["knuckles", "silverback", "plant"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about gorillas, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Gorilla That Makes a New Bed Every Night",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-gorilla", "templateLabel": "The Gorilla That Makes a New Bed Every Night", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "gorilla",
+          "notes": ["Largest primate on Earth", "A wild silverback can pass 400 pounds", "Eats about 40 pounds of plants a day", "The silver saddle appears around age twelve", "Younger males are called blackbacks", "Rests about half of the day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built of Leaves",
+          "text": "Imagine an animal strong enough to snap a bamboo stalk in one hand, and then imagine it spending its whole life eating salad. That is a gorilla. Gorillas are the largest primates on Earth. A wild silverback can reach 400 pounds, yet nearly everything he eats is a leaf, a stem, a shoot, or a piece of fruit. He builds all that muscle out of plants, the same way an elephant does. Plants come with a catch. Leaves hold very little energy for their weight, so a gorilla has to process an enormous volume of them. A mountain gorilla may eat 40 pounds of vegetation a day, which takes hours of steady chewing. Then the family rests while all that green matter breaks down. A gorilla day is mostly eat, rest, eat, rest, move a little, repeat. Each family is led by a silverback, a male old enough that the hair over his back and hips has turned pale gray. He is not a bully. His job is to decide where the group goes, to break up squabbles between mothers, and to stand between his family and danger. Younger males, called blackbacks, wait their turn or leave to start families of their own. The famous chest beat belongs to him. He rises onto his legs, cups his hands, and drums, and the sound is not a slap but a hollow pok pok pok that travels more than half a mile through the forest. Researchers found that bigger males produce deeper beats. A rival hearing that sound learns the drummer's size without ever meeting him. The display is loud because it lets both animals skip the fight."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says a gorilla builds all that muscle out of plants, the same way an elephant does. What point is the author making by bringing up the elephant?",
+            "Why does a gorilla have to spend so many hours a day eating? Use the passage.",
+            "The author writes that the silverback is not a bully. What evidence in the passage supports that?",
+            "Explain why a loud chest beat lets both animals skip the fight."
+          ],
+          "rows": 2,
+          "answers": [
+            "(that huge size does not require meat; plant eaters can be enormous)",
+            "leaves hold very little energy, so he must process an enormous volume of them",
+            "his job is to choose the route, break up squabbles, and protect the family",
+            "(inference: the beat tells a rival how big he is, so a smaller rival leaves without fighting)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A hugely strong ape lives a slow, plant-eating life, and even its scariest display is meant to prevent a fight",
+            "Gorillas are the most dangerous animals in Africa",
+            "Bamboo is the only food a gorilla will eat"
+          ],
+          "answers": ["A hugely strong ape lives a slow, plant-eating life, and even its scariest display is meant to prevent a fight"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["process (a volume of leaves) → ____", "squabbles → ____", "blackbacks → ____"],
+          "rows": 1,
+          "answers": ["to chew and digest, to put through the body", "small arguments", "young males not old enough to have silver on their backs"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the author says the chest beat lets both animals skip the fight. Is a loud warning a smarter way to settle an argument than fighting? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Gorilla That Makes a New Bed Every Night",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-gorilla", "templateLabel": "The Gorilla That Makes a New Bed Every Night", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "gorilla",
+          "notes": ["Two species: Gorilla gorilla and Gorilla beringei", "Shares about 98% of its DNA with us", "Told apart by nose wrinkles, like fingerprints", "Dian Fossey studied them from 1967 to 1985", "Mountain gorillas: about 250 in the 1980s, over 1,000 today", "Western lowland gorillas hum while they eat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Gentle Giant We Invented a Monster From",
+          "text": "For most of the last two centuries, the gorilla was a monster. Western science did not formally describe the animal until 1847, and the mountain gorilla not until 1902. What arrived in Europe and America first were not observations but stories: an enormous black ape of the African forest, roaring, unpredictable, impossibly strong. Hollywood finished the job in 1933 with King Kong, and the picture set. A gorilla, everybody knew, was rage with arms. Almost none of it was true. Gorillas are the largest primates alive, and they are essentially vegetarian. A silverback of 400 pounds spends his day chewing leaves, stems, and shoots, then resting while the fiber breaks down, then chewing again. He has enormous canine teeth he almost never uses on anything but display. He lives in a family of females and young, and his role is closer to babysitter than warlord: he settles arguments, waits for slow infants, and puts his body between the group and any threat. Infants ride on his back. When western lowland gorillas find a patch of favorite food, they hum and sing to themselves while they eat. The chest beat, the gesture that built the monster, turns out to be an argument against violence. A silverback rises, cups his hands, and drums. The hollow pok pok pok carries more than half a mile through dense forest, and researchers have shown that larger males beat at lower frequencies. A rival can therefore measure his opponent from a distance, decide he cannot win, and leave. The display exists so the fight does not have to. Correcting the record took one stubborn person. Dian Fossey moved into the Virunga Mountains in 1967 and spent eighteen years living beside mountain gorillas, learning their voices, naming individuals, and publishing what they actually did all day. She also fought poachers, which is almost certainly why she was murdered in her cabin in 1985. Her work made mountain gorillas famous, and famous animals attract money. That money has done something rare. Mountain gorillas fell to roughly 250 animals in the 1980s. Today, guarded by rangers and funded largely by tourists who pay heavily to sit near them for an hour, there are more than a thousand. In 2018 the mountain gorilla was moved off the critically endangered list. It is one of conservation's few genuine wins, and it was paid for by the same species that invented the monster in the first place."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did people believe about gorillas before scientists studied them, and where does the passage say that picture came from?",
+            "Is the author writing to inform, to persuade, or both? Point to two details that support your answer.",
+            "The passage calls the chest beat an argument against violence. Quote the evidence the author gives for that claim.",
+            "Explain the final sentence. What is the author pointing out?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the invented monster, the real plant-eating animal, and the conservation recovery)",
+            "that it was a roaring, unpredictable monster; the picture came from stories rather than observation, and from King Kong in 1933",
+            "(both: it presents dated facts and defines terms, but the closing lines argue a point about us)",
+            "quote: larger males beat at lower frequencies; a rival can measure his opponent from a distance, decide he cannot win, and leave",
+            "(humans invented the monster, hunted the animal, and then paid to save it; the irony is the point)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["vegetarian → ____", "display → ____", "poachers → ____", "frequencies → ____"],
+          "rows": 1,
+          "answers": [
+            "an animal that eats plants rather than meat",
+            "a show put on to be seen, not a real attack",
+            "people who hunt animals illegally",
+            "how high or low a sound is"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says tourists pay heavily to sit near mountain gorillas for an hour. Name one risk of funding a species' survival that way.",
+            "Why might a false story about an animal be harder to correct than a false story about a person?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: if tourists stop coming the funding vanishes; visitors can also bring disease and stress)",
+            "(inference: the animal cannot speak for itself, so someone has to go and gather the evidence)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: tourists pay hundreds of dollars for one guarded hour beside a mountain gorilla, and that money pays the rangers who protect them. Is that a good way to save a species? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Gorilla That Makes a New Bed Every Night",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-gorilla", "templateLabel": "The Gorilla That Makes a New Bed Every Night", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "gorilla",
+          "notes": ["Gorilla beringei beringei: the mountain gorilla", "Described by Western science only in 1847 and 1902", "About 98% of its DNA is shared with humans", "Chest-beat pitch signals body size (2021 study)", "Downlisted from critically endangered in 2018", "The Cross River gorilla: roughly 250 left"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Monster We Made, and the Animal That Was Always There",
+          "text": "Two animals share the name gorilla. One of them is real. The invented one came first, at least for Europe and America. Western science did not formally describe a gorilla until 1847, when a missionary in West Africa sent home a skull; the mountain gorilla waited until 1902, when a German officer shot one in the Virunga range and the species was named after him. In the gap between rumor and evidence, imagination did the work. The gorilla arrived in the popular mind as a roar with fur on it, a forest demon of impossible strength and no restraint, and in 1933 King Kong nailed the portrait to the wall. The picture was so satisfying that it survived nearly a century of contradicting facts. The real animal is a large, slow, cautious vegetarian. Gorillas are the biggest primates alive; a wild silverback can pass 400 pounds. Nearly all of that is assembled from leaves, stems, shoots, pith, and fruit. Plant matter is poor fuel for its bulk, so a mountain gorilla may work through 40 pounds of vegetation a day, and the schedule that follows is not the schedule of a monster: eat, rest while the fiber ferments, eat, rest, move a short distance, eat again. Roughly half the daylight is spent doing nothing at all. Every evening, each gorilla old enough to be independent bends branches and leaves into a fresh nest, sleeps in it once, and abandons it at dawn. A creature that rebuilds its bed nightly and never reuses it is not organizing much of a rampage. Family life is quieter still. A group is one silverback, several females, and their young. He is called a silverback because at about twelve the hair across his back and hips fades to pale gray, and his authority is real but domestic: he chooses the day's route, breaks up squabbles, tolerates infants climbing on his head, and waits for the slow ones. Females carry a single infant for about eight and a half months, close to a human pregnancy, and nurse it for years. Western lowland gorillas hum and sing to themselves when the food is good, a habit researchers have recorded and catalogued. Individual gorillas can be told apart by the wrinkles above their nostrils, as unmistakable as fingerprints. Even the chest beat, the single gesture the monster was built from, argues the other way. A silverback stands, cups his hands, and strikes his chest, and the cupping matters: it makes a hollow pok pok pok rather than a slap, and the report travels over half a mile of thick forest. In 2021 researchers measured those beats and found that larger males drum at lower frequencies. The beat is therefore a broadcast of body size. A rival can hear it, run the numbers, and withdraw without either animal risking a wound. The display is not the prelude to violence. It is the substitute for it. Correcting the record cost a life. Dian Fossey settled in the Virungas in 1967 and spent eighteen years recording what mountain gorillas actually did, hour by hour, until she was murdered in her cabin in 1985, almost certainly by people whose poaching she had made unprofitable. Her data replaced the demon with an animal. The fame that followed turned out to be worth money, and the money turned out to be worth gorillas: rangers, patrols, and tourists paying heavily for one guarded hour on a mountainside. The population bottomed near 250 in the 1980s. It now exceeds a thousand, and in 2018 the mountain gorilla was downgraded from critically endangered to merely endangered, which in conservation counts as a triumph. So the ledger closes strangely. We imagined a monster, hunted the animal that inspired it, and then spent a fortune keeping that animal alive. The gorilla never changed. We did."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage opens: Two animals share the name gorilla. One of them is real. Explain what those two sentences set up for everything that follows.",
+            "Find the exact phrase the author uses for how the gorilla first entered the popular imagination. Quote it, then explain who the phrase is mocking: the animal, or the people who invented it.",
+            "The author writes that a creature that rebuilds its bed nightly and never reuses it is not organizing much of a rampage. Analyze this move. What kind of argument is it, and is it fair?",
+            "The passage ends: The gorilla never changed. We did. Analyze what that ending claims and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the invented monster, the real animal, and the human reversal)",
+            "(it announces the passage's structure: the myth first, then the evidence, and warns the reader that one is false)",
+            "quote: a roar with fur on it; (it mocks the inventors, not the gorilla, because the phrase describes an imagined thing rather than an observed one)",
+            "(gentle ridicule, or reductio: it sets a behavior against the myth to make the myth look absurd; fair as far as it goes, though a single habit is not a full argument about temperament)",
+            "(it shifts the subject from the animal to us and claims the myth was always ours; earned by the 1847 and 1902 dates, King Kong, the poaching, and the paid recovery)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["restraint → ____", "ferments → ____", "domestic → ____", "unprofitable → ____"],
+          "rows": 2,
+          "answers": [
+            "holding yourself back from acting on an impulse",
+            "breaks down slowly, the way plant matter is digested by microbes",
+            "having to do with home and family rather than power or war",
+            "no longer making money for the person doing it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage credits tourist money with saving the mountain gorilla. Name one way that argument could be challenged, using something the passage does not tell you.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: it never says what tourism costs the gorillas in stress or disease, nor what else changed at the same time, such as the end of local conflict)",
+            "(student question + a credible source type, such as a census report or a primatology journal)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: We only saved the mountain gorilla once we found a way to make it profitable, which means we never really changed our minds about it at all. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

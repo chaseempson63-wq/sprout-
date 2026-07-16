@@ -1,0 +1,319 @@
+{
+  "key": "germ",
+  "title": "The Tiny Living Things You Cannot See",
+  "blurb": "Germs are everywhere, most of them are harmless, and it took people two hundred years to work out that a few of them make us sick.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Tiny Living Things You Cannot See",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-germ", "templateLabel": "The Tiny Living Things You Cannot See", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. These are germs, made big so you can see them." },
+        {
+          "kind": "image",
+          "imageKey": "germ",
+          "notes": ["Germs are too small to see", "They are on your hands right now", "Soap makes them slide off", "Sing a slow song while you scrub"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Germs are very small. They are too small to see. They are on your hands right now. Some germs can make you sick. Water alone does not get them off. Soap does. Rub your hands with soap. Rub the backs. Rub between your fingers. Sing a slow song while you rub. Then rinse. The germs slide away down the drain. Now your hands are clean."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bubbles in each row. Write how many in the box.",
+          "emoji": "🫧",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "soap    wash" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match what cleans what.",
+          "pairs": [
+            { "left": "soap", "right": "hands" },
+            { "left": "toothbrush", "right": "teeth" },
+            { "left": "tissue", "right": "nose" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw yourself washing your hands. Add lots of bubbles.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tiny Living Things You Cannot See",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-germ", "templateLabel": "The Tiny Living Things You Cannot See", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "germ",
+          "notes": ["Thousands could sit on your fingertip", "Most germs are harmless", "Soap lifts germs off your skin", "Scrub for twenty seconds", "Sneeze into your elbow"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tiny Living Things You Cannot See",
+          "text": "A germ is a tiny thing that can make you sick, and it is far too small to see. Thousands could sit on the tip of your finger. Most germs are harmless. Only a few of them make trouble. Germs travel by touch. You touch a door. Then you touch your face. That is how a cold gets in. Soap is the trick. Soap grabs germs and lifts them off your skin so the water can wash them away. Scrub for twenty seconds, front and back and between the fingers. Sneeze into your elbow, not your hand. Your elbow does not open doors."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Are most germs harmful or harmless?", "How does a germ get from a door to your face?", "How long should you scrub with soap?"],
+          "rows": 2,
+          "answers": ["most germs are harmless", "you touch the door, then you touch your face", "twenty seconds"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A germ is too ____ to see.", "____ lifts germs off your skin.", "Scrub for twenty ____.", "Sneeze into your ____."],
+          "wordBank": ["small", "Soap", "seconds", "elbow"],
+          "answers": ["small", "Soap", "seconds", "elbow"]
+        },
+        { "kind": "draw", "prompt": "Draw a germ the way you imagine it. Then draw a big bar of soap next to it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tiny Living Things You Cannot See",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-germ", "templateLabel": "The Tiny Living Things You Cannot See", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "germ",
+          "notes": ["First seen in the 1670s", "Antonie van Leeuwenhoek ground his own lenses", "He called them animalcules, meaning little animals", "He found them in the gunk on his teeth", "For 200 years nobody linked them to sickness"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Little Animals in the Water Drop",
+          "text": "In the 1670s a Dutch cloth merchant named Antonie van Leeuwenhoek had an odd hobby. He ground tiny glass lenses and built his own microscopes, better than anyone else's at the time. He looked at pond water. He looked at rain. One day he scraped the white gunk off his own teeth, mixed it with water, and looked at that. Things were moving. Tiny things, swimming and spinning, thousands of them in a single drop. He called them animalcules, which means little animals. Leeuwenhoek never went to university. He wrote up what he saw in letters, in Dutch, and sent them to scientists in London who had to have them translated. Nobody believed him at first. He was the only person on Earth who could see these creatures. For almost two hundred years after that, people knew the tiny animals were there, but nobody guessed the truth: some of them were the reason people got sick. Those are the ones we call germs."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What was Leeuwenhoek's job?",
+            "What did he scrape off his own teeth, and what did he find in it?",
+            "What does the word animalcule mean?",
+            "Why do you think nobody believed him at first?"
+          ],
+          "rows": 2,
+          "answers": [
+            "he was a Dutch cloth merchant",
+            "the white gunk from his teeth; tiny things swimming and spinning",
+            "little animals",
+            "(inference: he was the only person with a microscope good enough to see them)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Little Animals in the Water Drop", "How to Make Glass at Home", "The Best Way to Brush Your Teeth"],
+          "answers": ["The Little Animals in the Water Drop"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Leeuwenhoek ground his own glass ____.", "He wrote his letters in ____.", "The germs are the ones that make people ____."],
+          "wordBank": ["lenses", "Dutch", "sick"],
+          "answers": ["lenses", "Dutch", "sick"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you had the only microscope on Earth, what would you look at first, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tiny Living Things You Cannot See",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-germ", "templateLabel": "The Tiny Living Things You Cannot See", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "germ",
+          "notes": ["Germ is an everyday word, not a scientific one", "Bacteria are single living cells", "A virus is not alive until it enters a cell", "Trillions of helpful bacteria live in your gut", "Soap pulls a germ's fatty wrapper apart", "Twenty seconds gives the soap time to work"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Soap Beats Water",
+          "text": "Germ is not a scientific word. Scientists say bacteria, or virus, or fungus. Germ is the everyday word we use for any of those when it makes us sick. Bacteria are single living cells. They eat, they grow, and they split in two to make more. Most bacteria are harmless. Plenty are useful. Right now there are trillions living in your gut, helping break down your food and making vitamins you need. Viruses are stranger. A virus is not really alive on its own. It cannot eat or grow or split. It is a packet of instructions in a shell, and it does nothing at all until it drifts into a living cell. Then it takes the cell over and makes the cell build copies of it. Now think about soap. Water alone is bad at cleaning hands, because many germs are wrapped in a thin layer of fat, and fat and water do not mix. A soap molecule solves this. One end of it loves water. The other end hates water and clings to fat instead. When you scrub, the fat-loving ends jam themselves into that greasy wrapper and pull it apart. The germ falls to pieces, or gets trapped inside a tiny soap bubble, and the water carries the whole mess down the drain. That is why twenty seconds matters. Soap needs time to work its way in. A quick rinse just moves the water around."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what is the difference between bacteria and a virus?",
+            "Explain why water on its own does a poor job of cleaning your hands.",
+            "The passage says a soap molecule has two ends that want opposite things. Why is that useful?",
+            "Most bacteria are harmless or helpful. Why do you think people still talk about germs as if they were all bad?"
+          ],
+          "rows": 2,
+          "answers": [
+            "bacteria are living cells that eat, grow, and split; a virus is only instructions in a shell and does nothing until it gets inside a cell",
+            "many germs are wrapped in fat, and fat and water do not mix",
+            "one end holds the water while the other end tears into the fatty wrapper, so the germ gets pulled apart and rinsed away",
+            "(inference: the harmful few are the ones we notice, because the helpful ones never make us feel anything)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Germs come in different kinds, and soap beats water because it can take a germ's fatty coat apart",
+            "Every bacterium in the world is dangerous to people",
+            "Scientists have never worked out why soap cleans anything"
+          ],
+          "answers": ["Germs come in different kinds, and soap beats water because it can take a germ's fatty coat apart"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["bacteria → ____", "virus → ____", "molecule → ____"],
+          "rows": 1,
+          "answers": [
+            "single living cells that eat, grow, and split in two",
+            "a packet of instructions in a shell that only works inside a living cell",
+            "one tiny piece of a substance, like a single bit of soap"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a five year old why they have to scrub for twenty seconds instead of just splashing their hands. Use two ideas from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tiny Living Things You Cannot See",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-germ", "templateLabel": "The Tiny Living Things You Cannot See", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "germ",
+          "notes": ["Ignaz Semmelweis, Vienna, 1847", "Two clinics, one killing ten times more mothers", "He ordered scrubbing with chlorinated lime", "Deaths collapsed, and his colleagues rejected him", "Germ theory arrived about twenty years too late for him", "He died in 1865 of an infected wound"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Doctor Who Told Everyone to Wash Their Hands",
+          "text": "In 1847 the Vienna General Hospital had two maternity clinics, side by side. They took women in on alternate days. The First Clinic was run by doctors and medical students. The Second was run by midwives. Everything about them looked the same, except for one thing that everybody knew and nobody could explain. In the First Clinic, women died. Roughly one mother in ten caught a fever after giving birth and was dead within days. In the Second Clinic, the rate was a fraction of that. The women knew the numbers. They begged to be sent to the midwives. Some gave birth in the street rather than be admitted on a doctors' day. A young Hungarian doctor named Ignaz Semmelweis could not let it go. He tested ideas and threw them out one by one. Then his friend Jakob Kolletschka was cut by a student's scalpel during an autopsy and died, and Semmelweis read the report of his death. The damage inside his friend's body looked exactly like the damage inside the mothers. That was the clue. The doctors began each morning in the dissection room, cutting open the dead. Then they walked upstairs and delivered babies, wiping their hands on their aprons. The midwives never went near a corpse. Semmelweis decided the doctors were carrying something invisible from the bodies to the mothers on their own hands. Nobody had a name for that something. Germ theory would not arrive for another twenty years. Semmelweis had no idea what he was chasing, only that plain soap and water did not remove the smell of the dissection room. So he tried chlorinated lime, which did. In May 1847 he ordered every doctor to scrub in it before touching a patient. The death rate in the First Clinic collapsed within months. He should have been famous. Instead he was resented. He was telling respected men that their hands were killing their patients, and he could not explain how, because nobody yet could. His contract was not renewed. He grew furious and wrote open letters calling his colleagues murderers, which did not help him. In 1865 he was committed to an asylum, beaten by the guards, and died two weeks later of an infected wound. He was forty-seven. Within a generation Louis Pasteur and Joseph Lister had proved him right, and the invisible something finally had a name."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What was the one real difference between the two clinics, and how did Semmelweis find it?",
+            "Semmelweis chose chlorinated lime over soap and water. Quote the phrase that explains his reason.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "Why does the author save the invisible something finally had a name for the last line?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the two clinics, the handwashing discovery, and his rejection)",
+            "the doctors came straight from cutting open the dead and the midwives never went near a corpse; he saw it after his friend died from a scalpel cut with the same damage as the mothers",
+            "quote: plain soap and water did not remove the smell of the dissection room",
+            "(inform, with a persuasive edge; details: dates and death rates inform, while resented and murderers push the reader to feel he was wronged)",
+            "(it closes the gap the passage opened: he was right but had no name for it, and the name arrived after he died)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["maternity → ____", "autopsy → ____", "dissection → ____", "resented → ____"],
+          "rows": 1,
+          "answers": [
+            "to do with giving birth and newborn babies",
+            "an examination of a dead body to find out why it died",
+            "the cutting open of a body to study it",
+            "disliked and treated with bitterness"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Semmelweis had proof that his idea worked but no explanation for why. Why would that make other doctors harder to convince, not easier?",
+            "The women begged to be sent to the midwives. What does that tell you about who noticed the problem first?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(without a cause, the result looks like coincidence, and accepting it meant admitting they had been killing patients)",
+            "(inference: the patients spotted the pattern before the experts did, because they were the ones paying for it)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when someone has strong evidence but cannot explain why it works, should we act on it anyway? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tiny Living Things You Cannot See",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-germ", "templateLabel": "The Tiny Living Things You Cannot See", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "germ",
+          "notes": ["Bacteria first seen in 1676, germ theory accepted in the 1860s", "Miasma theory blamed bad air instead", "Koch's postulates turned suspicion into proof", "Fleming found penicillin on a moldy plate in 1928", "Antibiotics act as a filter that breeds resistance", "You carry about as many bacterial cells as human ones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Two Hundred Year Gap",
+          "text": "Antonie van Leeuwenhoek saw bacteria in 1676. Germ theory was not accepted until the 1860s. That gap, nearly two hundred years, is one of the strangest delays in the history of science, and the reason for it is more interesting than the discovery. Leeuwenhoek was a cloth merchant in Delft with no university training and an unusual talent for grinding glass. His single-lens microscopes magnified far beyond anything else in Europe, and he pointed them at everything: pond water, pepper soaked in water, blood, the scrapings from his own teeth. In a letter to the Royal Society in London he described creatures living in that dental plaque, swimming and spinning, and claimed there were more of them in one man's mouth than there were people in a whole kingdom. He called them animalcules. The Royal Society doubted him until Robert Hooke managed to repeat the observation. So the little creatures were real, and anyone with a good enough lens could eventually see them for themselves. The gap was not a failure of eyesight. It was a failure of imagination. Nobody connected the animalcules to disease, because everyone already had an explanation for disease. It was called miasma: bad air, rising off swamps and sewage and rot. Miasma theory fit the evidence reasonably well. Sick people really did cluster near filth. Foul-smelling places really were dangerous places. The theory was wrong about the cause but right about where to look, which is the most stubborn kind of wrong, because every day it appears to be confirmed. Breaking it took three pushes. Ignaz Semmelweis showed in 1847 that doctors who scrubbed with chlorinated lime stopped killing mothers, though he could not say what he was washing off, and his colleagues punished him for the insult rather than thank him for the lives. John Snow traced a cholera outbreak in 1854 to a single water pump on Broad Street in London, which pointed at the water rather than the air. Then Louis Pasteur, working on the dull commercial question of why wine spoils, showed that microbes do not simply appear inside a sealed flask. Robert Koch finished the job. He isolated the bacterium behind anthrax, grew it in his laboratory, gave the disease to a healthy animal with the culture, and then recovered the very same organism from that animal. Those steps became known as Koch's postulates, and they turned a suspicion into a proof. Once the invisible cause had a name, medicine changed within a single lifetime. Joseph Lister soaked his instruments and his surgical wounds in carbolic acid. Cities tore up their streets and rebuilt the sewers. In 1928 Alexander Fleming came back from vacation to find that a mold had drifted onto one of his plates and cleared the bacteria away from around itself, and by the 1940s penicillin was pulling wounded soldiers back from deaths that had been considered certain. We are now living in the backlash. Bacteria reproduce fast enough to evolve in front of us, and every course of antibiotics acts as a filter: the vulnerable die off, the resistant survive and inherit the space. Meanwhile biologists have quietly complicated the word germ itself. Your body carries roughly as many bacterial cells as human ones, and almost none of them are enemies. They train your immune system, crowd out invaders, and digest food you could not digest alone. The war language we inherited from Pasteur's century is useful in an operating room and misleading almost everywhere else."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author claims the delay was not caused by poor microscopes. Cite the exact sentence that states this, and explain what the author says caused it instead.",
+            "Explain why the author calls miasma the most stubborn kind of wrong. Cite the reason given in the text.",
+            "Identify the shift in the passage: where does it turn from history to a warning, and how does the author signal it?",
+            "The final sentence says the war language is useful in an operating room and misleading almost everywhere else. Analyze what that claim is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "cite: The gap was not a failure of eyesight. It was a failure of imagination. The cause was miasma theory, an existing explanation that already seemed to fit",
+            "(a theory that is wrong about the cause but right about where to look gets confirmed every day; cite: because every day it appears to be confirmed)",
+            "(at We are now living in the backlash; a short present-tense sentence pivots from past discoveries to a current problem)",
+            "(it argues the germs-as-enemies frame is now a liability; earned by the resistance filter and the roughly one-to-one bacterial cell count, though the passage never denies that some germs do kill)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["miasma → ____", "isolated (a bacterium) → ____", "postulates → ____", "resistant → ____"],
+          "rows": 2,
+          "answers": [
+            "the old idea that bad air rising from filth caused disease",
+            "separated it out from everything else so it could be studied on its own",
+            "the set of steps required to prove a particular microbe causes a particular disease",
+            "able to survive something that would normally kill it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Koch's postulates require recovering the same organism from the infected animal. Why would the proof be weak without that final step?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(without it you have only shown the animal got sick after an injection, not that the microbe multiplied and caused it)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Miasma theory was a reasonable belief for its time, so the doctors who rejected Semmelweis should not be judged harshly. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

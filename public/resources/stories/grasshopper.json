@@ -1,0 +1,310 @@
+{
+  "key": "grasshopper",
+  "title": "The Bug With a Spring in Its Knee",
+  "blurb": "The insect that cannot jump with muscle alone, so it loads a catapult in its own leg instead.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bug With a Spring in Its Knee",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-grasshopper", "templateLabel": "The Bug With a Spring in Its Knee", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the long back legs." },
+        {
+          "kind": "image",
+          "imageKey": "grasshopper",
+          "notes": ["It has six legs", "Its back legs fold like a V", "It is green like the grass", "It eats grass all day", "It jumps very far"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a grasshopper. It is green. It sits in the grass and eats it. Look at its back legs. They are long and bent. They fold up like a letter V. When the grasshopper is ready, the legs snap open. Pop. The grasshopper flies through the air. It lands in the grass and eats some more."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the legs on each bug. Write how many in the box.",
+          "emoji": "🦗",
+          "items": ["6", "2", "4", "3"],
+          "answers": ["6", "2", "4", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "jump    green" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to where it lives.",
+          "pairs": [
+            { "left": "grasshopper", "right": "grass" },
+            { "left": "fish", "right": "pond" },
+            { "left": "bee", "right": "flower" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own grasshopper. Give it long back legs for jumping.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bug With a Spring in Its Knee",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-grasshopper", "templateLabel": "The Bug With a Spring in Its Knee", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "grasshopper",
+          "notes": ["It hatches from an egg in the ground", "It climbs out of its own skin as it grows", "Its ears are on its belly", "It has five eyes, not two", "The back legs are the jumpers"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bug With a Spring in Its Knee",
+          "text": "A grasshopper hatches from an egg in the ground. It looks like a tiny grasshopper with no wings. It eats grass and it grows. Soon its skin gets too tight, so it climbs out of that old skin and leaves it behind. It does this about five times. Then it has wings. A grasshopper does not hear with ears on its head. It hears with two flat spots on its belly. It has six legs, and the two back ones are the jumpers. Those legs stay folded and full of stored push, like a bent bow, waiting to go."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does a grasshopper hatch?", "What does it leave behind when it grows?", "Where are its ears?"],
+          "rows": 2,
+          "answers": ["from an egg in the ground", "its old skin", "on its belly"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A grasshopper hatches from an ____.", "It has ____ legs.", "It hears with spots on its ____.", "The back legs are folded like a bent ____."],
+          "wordBank": ["egg", "six", "belly", "bow"],
+          "answers": ["egg", "six", "belly", "bow"]
+        },
+        { "kind": "draw", "prompt": "Draw a grasshopper in the grass. Show it jumping high.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bug With a Spring in Its Knee",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-grasshopper", "templateLabel": "The Bug With a Spring in Its Knee", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "grasshopper",
+          "notes": ["It can jump about 20 times its own body length", "There is a rubbery spring inside each back knee", "It hears with a patch of skin on its belly", "Two big eyes plus three tiny ones makes five", "It sings by rubbing its leg on its wing"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Spring in the Knee",
+          "text": "A grasshopper can jump about twenty times the length of its own body. If you could do that, you would clear a school bus from a standing start.\n\nIts muscles are not strong enough to do it. Muscles push slowly, and a jump like that needs a huge shove all at once. So the grasshopper cheats. Inside each back knee there is a small piece of springy stuff, a bit like rubber. The grasshopper locks its knee shut and pulls hard with its leg muscle. The muscle cannot open the locked knee, so all that pulling squeezes into the spring instead. The energy piles up and waits.\n\nThen the lock lets go. The spring snaps back all at once, the leg kicks straight, and the grasshopper is in the air in less time than it takes you to blink. It is a catapult, not a push.\n\nGrasshoppers do not hear with their heads. They have a thin round patch on each side of the belly that shivers when sound hits it. And they do not have two eyes. They have five."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "About how far can a grasshopper jump?",
+            "Where is the spring that helps it jump?",
+            "What happens to the energy while the knee is locked?",
+            "Why do you think a catapult works better than a push for jumping?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about twenty times its own body length",
+            "inside each back knee",
+            "it piles up in the spring and waits",
+            "(inference: a catapult lets all the energy out at once, and muscles are too slow)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Spring in the Knee", "How to Mow a Lawn", "The Loudest Bird in the Field"],
+          "answers": ["The Spring in the Knee"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The grasshopper ____ its knee shut before it jumps.", "The energy is stored in a ____ inside the knee.", "A grasshopper has ____ eyes."],
+          "wordBank": ["locks", "spring", "five"],
+          "answers": ["locks", "spring", "five"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the grasshopper, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bug With a Spring in Its Knee",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-grasshopper", "templateLabel": "The Bug With a Spring in Its Knee", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "grasshopper",
+          "notes": ["Reaches full speed in about 30 milliseconds", "Resilin: a natural rubber in the knee joint", "Stridulation: pegs on the leg scrape a ridge on the wing", "Tympanum: the eardrum on its belly", "Short antennae mean grasshopper, long means cricket"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Grasshopper Carries a Catapult",
+          "text": "Watch a grasshopper launch and you are watching a machine that a person could not build out of muscle alone.\n\nHere is the problem. A locust can throw itself a full meter, roughly twenty times its own body length, and it reaches full speed in about three hundredths of a second. Muscle cannot deliver power that fast. Muscle is strong but slow, like a person leaning on a heavy door. The jump needs the door to fly open in an instant.\n\nSo the grasshopper stores the push before it needs it. Each back leg holds a large muscle inside the thigh. Before the jump, the insect clamps the knee shut with a second, smaller muscle, and then the big muscle hauls with everything it has. The knee will not open. Instead the strain bends a curved band of hard shell at the joint and squeezes a pad of resilin, a natural rubber bouncier than most of the rubber we make. The leg is now a loaded bow.\n\nThen the small muscle lets go. Everything stored comes out at once, the legs snap straight, and the grasshopper is gone.\n\nThose same legs do a second job. A row of tiny pegs runs along the inside of each thigh. The grasshopper scrapes the pegs across a hard ridge on its wing, over and over, and the rasping song carries across a field. Another grasshopper hears it, not with ears on its head, but with a tight oval of skin on the side of its belly that trembles like the head of a drum."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, why can muscle alone not power the jump?",
+            "Explain how the grasshopper loads its leg, step by step.",
+            "The passage compares the leg to a loaded bow. Explain why that comparison fits.",
+            "Why might it help a grasshopper to have its ears on its belly instead of its head?"
+          ],
+          "rows": 2,
+          "answers": [
+            "muscle is strong but too slow to release power in a few thousandths of a second",
+            "it locks the knee, pulls with the big thigh muscle, and the strain loads the shell band and resilin pad",
+            "(a bow also stores energy while held and releases it all at once)",
+            "(inference: its head is small and busy eating; the belly gives room for a large membrane, and sound reaches it from any direction)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A grasshopper jumps and sings using a spring-loaded leg rather than muscle power alone",
+            "Grasshoppers are the fastest animals on Earth",
+            "Insects cannot hear any sound at all"
+          ],
+          "answers": ["A grasshopper jumps and sings using a spring-loaded leg rather than muscle power alone"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["resilin → ____", "strain → ____", "rasping → ____"],
+          "rows": 1,
+          "answers": ["a natural rubber in the joint that stores energy", "the pulling force loaded into the joint", "a rough scraping sound"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: name one machine people build that stores energy first and releases it all at once, and explain how it is like a grasshopper's leg.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bug With a Spring in Its Knee",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-grasshopper", "templateLabel": "The Bug With a Spring in Its Knee", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "grasshopper",
+          "notes": ["Desert locust: Schistocerca gregaria", "Solitary phase: green, shy, avoids others", "Gregarious phase: yellow and black, seeks crowds", "Serotonin triggers the switch in a few hours", "A swarm eats its own weight in plants daily", "The two phases were once filed as separate species"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Quiet Insect That Becomes a Plague",
+          "text": "A desert locust is a grasshopper with a switch in it.\n\nMost of the time it lives alone and wants to stay that way. It is pale green or sandy brown, matched to whatever it happens to be sitting on. It avoids other locusts. It eats, it hides, it keeps quiet. Scientists call this the solitary phase, and a solitary locust is one of the least alarming animals in the desert.\n\nThen rain falls. Plants come up in scattered patches, and the young locusts that hatch are crowded onto those green patches together, bumping into one another all day long. The bumping is the trigger. When the hind legs of a locust are touched over and over, its nervous system floods with serotonin, a chemical it uses as a signal. Within a couple of hours the animal begins to change. It stops avoiding others and starts seeking them out. Within a generation or two, its young hatch yellow and black instead of green, with longer wings, broader shoulders, and larger brains. The loner has become a swarmer. Biologists call this the gregarious phase, and for a long time the two forms were filed as two separate species, because nobody could believe they were the same animal.\n\nWhat follows is the oldest disaster in the written record. A swarm can cover hundreds of square kilometers and carry tens of millions of insects in every square kilometer of it. Each locust eats about its own weight in plants every day, which is roughly two grams, a number so small it sounds harmless. It is not. A swarm one square kilometer across eats as much food in a day as about thirty five thousand people.\n\nAnd the switch runs backward. Keep a gregarious locust alone for long enough and it settles, fades back toward green, and forgets the crowd. The plague and the quiet insect in the grass are the same creature, waiting on the weather."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What physical event triggers the switch, and what chemical carries the signal?",
+            "Explain why naturalists once filed the two phases as separate species. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain what the final sentence means and why the author saves it for last."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the solitary phase, the crowding trigger, and the swarm)",
+            "repeated touching of the hind legs; serotonin",
+            "the two forms look and behave nothing alike; quote: nobody could believe they were the same animal",
+            "(inform, with detail: it defines the two phases and gives figures; the closing lines lean persuasive)",
+            "(the harmless insect and the plague are one animal, and rain decides which one appears; ending there leaves the reader with the tension)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["solitary → ____", "gregarious → ____", "trigger → ____", "phase → ____"],
+          "rows": 1,
+          "answers": ["living alone and avoiding others", "seeking out and living in crowds", "the event that sets a change going", "one of the forms an animal can take"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls two grams a number so small it sounds harmless, then says it is not. Explain how the author turns that small number into a large one.",
+            "Why would it help a locust to change its body only when it is crowded, rather than being a swarmer all the time?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(by multiplying it across tens of millions of insects per square kilometer, then comparing it to thirty five thousand people)",
+            "(inference: swarming only pays off when food is patchy and crowds form; the rest of the time hiding as a green loner is safer)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should farmers spray a locust swarm even though the same species is harmless most of the year? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bug With a Spring in Its Knee",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-grasshopper", "templateLabel": "The Bug With a Spring in Its Knee", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "grasshopper",
+          "notes": ["Rocky Mountain locust: Melanoplus spretus", "Albert's Swarm, 1875: about 1,800 miles long", "Estimated 3.5 trillion insects, the largest animal gathering ever recorded", "Last living specimen collected in 1902", "Catapult jump: cuticle band plus a resilin pad", "It bred in a few hundred square miles of river valley"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Albert's Swarm: The Locust That Ate the Plains and Then Vanished",
+          "text": "In the summer of 1875, a doctor in Plattsmouth, Nebraska, named Albert Child did something nobody else had thought to do. A swarm of Rocky Mountain locusts was passing overhead, and instead of despairing at it, he measured it. He timed how long it took to pass. He telegraphed towns up and down the line to ask how wide the darkness was where they stood. Then he multiplied. His numbers described a living cloud roughly eighteen hundred miles long and one hundred and ten miles wide, holding, by later estimates, something like three and a half trillion insects. It remains the largest gathering of animals ever recorded on this planet, and it happened in living memory, over farmland, in front of witnesses.\n\nTo understand how an insect manages that, start with its knee. A locust cannot jump using muscle in the ordinary way, because muscle is strong but slow, and a jump demands enormous power inside a few thousandths of a second. So the animal cheats time. It locks the knee joint shut, contracts the great extensor muscle in its thigh against that lock, and pours the effort into a curved plate of hard cuticle and a pad of resilin, a rubbery protein springier than almost anything we manufacture. When the lock releases, everything stored leaves at once. The insect is a catapult that has learned to load itself.\n\nThen there is the switch. A locust in ordinary times is a shy green loner. Crowd it and something remarkable happens: repeated touching of the hind legs floods its nervous system with serotonin, and within hours its behavior inverts. It seeks company instead of fleeing it. Its offspring hatch in warning colors, yellow and black, with longer wings and larger brains. For decades naturalists sorted the two forms into different species, because no one could accept that a hermit and a plague were the same animal wearing different clothes.\n\nThe Rocky Mountain locust had both tricks, the catapult and the crowd switch, and then it stopped. Swarms darkened the American West through the 1870s, stripping wheat, corn, wool off living sheep, and the wooden handles of tools where sweat had soaked in. By 1902 the last living specimen had been collected. Nobody killed them on purpose. Nobody could have. The insects were undone by geography. Their permanent home was the moist river valleys of the Rocky Mountains, a few hundred square miles of ground where they bred quietly between the great outbreaks. Settlers plowed those valleys, irrigated them, and grazed cattle across them, with no idea what they were doing, and the species that could blot out the sun across eighteen hundred miles could not survive the loss of a handful of sandy riverbanks.\n\nThat is the part worth sitting with. The Rocky Mountain locust was not rare, not fragile, not specialized in any way that looked dangerous. It was arguably the most abundant animal on the continent. It went extinct inside thirty years, by accident, because the small place it actually depended on was never the enormous place we saw it in."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how Albert Child produced his estimate, and why the author bothers to tell us his method.",
+            "Explain the catapult mechanism in your own words, and cite the phrase the author uses to name it.",
+            "Identify the turn in the passage: where does it pivot, and how does the author signal the pivot?",
+            "The last sentence says the small place it actually depended on was never the enormous place we saw it in. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(he timed the swarm passing and telegraphed towns for its width, then multiplied; the method makes an unbelievable number credible)",
+            "(the knee locks, the thigh muscle loads a cuticle band and resilin pad, and the release fires it all at once; cite: a catapult that has learned to load itself)",
+            "(at The Rocky Mountain locust had both tricks, and then it stopped; a short blunt clause pivots from wonder to loss)",
+            "(it argues abundance is not safety, and that the visible range hid the real dependency; supported by the plowed river valleys evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["cuticle → ____", "inverts → ____", "abundant → ____", "specialized → ____"],
+          "rows": 2,
+          "answers": [
+            "the hard outer shell of an insect",
+            "flips to the opposite",
+            "present in very large numbers",
+            "adapted to one narrow way of living"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that nobody killed them on purpose, then that nobody could have. Explain why the second sentence matters to the argument.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it rules out deliberate hunting as the cause, forcing the reader toward habitat loss as the explanation)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A species with trillions of members is in no real danger of extinction. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}
