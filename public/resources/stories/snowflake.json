@@ -1,0 +1,336 @@
+{
+  "key": "snowflake",
+  "title": "The Snowflake That Started as Dust",
+  "blurb": "Every snow crystal grows six arms around a speck of dust, and the big ones have never once repeated.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Snowflake That Started as Dust",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-snowflake", "templateLabel": "The Snowflake That Started as Dust", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the six arms." },
+        {
+          "kind": "image",
+          "imageKey": "snowflake",
+          "notes": ["It starts on a speck of dust", "It always has six arms", "It is made of ice", "It melts on your warm hand"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up. It is snowing. Each snowflake starts high in a cold cloud. It starts on a tiny speck of dust. Water sticks to the speck and turns to ice. The ice grows arms. It grows six arms, every time. Count them: one, two, three, four, five, six. The snowflake floats down slow. It lands on your mitten. Then it melts into a drop of water."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the snowflakes in each row. Write how many in the box.",
+          "emoji": "❄️",
+          "items": ["6", "3", "5", "2"],
+          "answers": ["6", "3", "5", "2"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "snow    six    cold" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "snowflake", "right": "cloud" },
+            { "left": "apple", "right": "tree" },
+            { "left": "boat", "right": "water" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own snowflake. Give it six arms. Count them when you are done.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Snowflake That Started as Dust",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-snowflake", "templateLabel": "The Snowflake That Started as Dust", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "snowflake",
+          "notes": ["Every snow crystal has six arms", "It grows around a speck of dust", "Snow is really clear, not white", "It falls slower than you walk", "No two big ones ever match"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Snowflake That Started as Dust",
+          "text": "A snowflake does not fall out of the sky ready made. It builds itself on the way down. High in a cold cloud, a tiny speck of dust floats along. Water in the air freezes onto the speck. More water freezes on. The ice grows and grows. It always grows six arms, because that is how water lines up when it turns to ice. The arms grow lacy and wide. When the snowflake gets heavy, it drifts down. It falls slower than you walk. Snow looks white, but a snowflake is really clear. It only looks white because light bounces around inside all that ice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does a snowflake start?", "How many arms does it grow?", "Why does snow look white?"],
+          "rows": 2,
+          "answers": ["on a speck of dust in a cold cloud", "six", "light bounces around inside the ice"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A snowflake starts on a speck of ____.", "It grows ____ arms.", "It builds itself in a cold ____.", "A snowflake is really ____, not white."],
+          "wordBank": ["dust", "six", "cloud", "clear"],
+          "answers": ["dust", "six", "cloud", "clear"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each word to what it means.",
+          "pairs": [
+            { "left": "speck", "right": "something very tiny" },
+            { "left": "drifts", "right": "floats down slowly" },
+            { "left": "lacy", "right": "full of little holes" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a snowy day. Add a cloud, some falling snow, and yourself in a warm coat.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Snowflake That Started as Dust",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-snowflake", "templateLabel": "The Snowflake That Started as Dust", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "snowflake",
+          "notes": ["Snow is not frozen rain", "Ice always builds in six-sided rings", "It starts on dust, pollen, or sea salt", "Water vapor turns straight into ice", "Fresh snow is mostly air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Snowflake Builds Itself",
+          "text": "Snow does not begin as rain. Rain that freezes on the way down is called sleet, and sleet is just a hard little ball of ice. A real snow crystal never was a raindrop at all. It begins inside a cloud that is colder than freezing. Floating in that cloud is a speck of dust, or pollen, or salt blown up off the sea. Water vapor in the air touches the speck and turns straight into ice, skipping the liquid step altogether. Now there is a seed of ice, and it starts to grow. Water molecules stack onto that seed the only way they fit, which is in six-sided rings. Six sides means six corners, and corners stick out into the damp air, so they collect water fastest. Each corner grows an arm. Each arm sprouts smaller branches. All six arms travel together through the same cold air, so they grow in almost the same pattern at the same time. That is why a snow crystal looks like it was folded and cut from paper. Then it gets heavy, tips over, and falls."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is sleet, and how is it different from snow?",
+            "Name three things a snow crystal can start growing on.",
+            "Why do the corners of the ice seed grow fastest?",
+            "Why do you think all six arms end up looking so much alike?"
+          ],
+          "rows": 2,
+          "answers": [
+            "rain that freezes as it falls; it is a hard ball of ice, not a crystal",
+            "dust, pollen, or salt from the sea",
+            "they stick out furthest into the damp air, so they collect water fastest",
+            "(inference: the six arms travel together through the same air, so they grow the same way at the same time)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Snowflake Builds Itself", "The Coldest City in the World", "How to Build a Snowman in One Hour"],
+          "answers": ["How a Snowflake Builds Itself"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Frozen rain is called ____.", "Water molecules stack in ____ rings.", "Water ____ turns straight into ice.", "Each arm sprouts smaller ____."],
+          "wordBank": ["sleet", "six-sided", "vapor", "branches"],
+          "answers": ["sleet", "six-sided", "vapor", "branches"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how snow is made, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Snowflake That Started as Dust",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-snowflake", "templateLabel": "The Snowflake That Started as Dust", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "snowflake",
+          "notes": ["Shape depends on temperature", "Plates near 28F, needles near 23F", "The big branching stars grow near 5F", "Ukichiro Nakaya grew the first lab snow crystal in 1936", "He called snow crystals letters sent from the sky", "He grew them on the tip of a rabbit hair"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Letters Sent From the Sky",
+          "text": "Ask most people to draw a snowflake and they will draw a six-pointed star. That shape is real, but it is only one of the shapes snow can take. Snow also falls as flat plates, as hollow columns, as thin needles, and as columns with a plate capping each end like a spool of thread. What decides which shape you get is mostly one thing: the temperature of the air the crystal is growing in. We know this because of a Japanese physicist named Ukichiro Nakaya. In the 1930s, working in the cold of Hokkaido, he grew snow crystals indoors on the tip of a rabbit hair, one at a time, at temperatures he controlled himself. Then he did it again, and again, thousands of times, and mapped what grew at each temperature. Near 28 degrees Fahrenheit he got plates. A few degrees colder he got needles. Near 5 degrees Fahrenheit he got the great branching stars. Colder still, and the crystals went back to plain columns and plates. That map means a snow crystal carries a record of its own journey. It grew arms in the layer where stars grow, plates in the layer where plates grow, and it wandered up and down through the cloud collecting the shape of each layer it passed through. Nakaya said snow crystals are letters sent from the sky. He meant it literally. If you can read the shape, it tells you what the cloud was like."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "According to the passage, what mostly decides the shape of a snow crystal?",
+            "Describe Nakaya's method. Why did he grow crystals indoors instead of catching them outside?",
+            "The passage says a crystal carries a record of its own journey. Explain what that means.",
+            "Nakaya said snow crystals are letters sent from the sky, and the passage says he meant it literally. What did he mean?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the temperature of the air it is growing in",
+            "he grew them one at a time on a rabbit hair at temperatures he set himself; (inference: outdoors he could not control or know the temperature)",
+            "its shape shows which temperature layers it passed through in the cloud",
+            "(the shape is readable information about the cloud, like a message written in ice)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A snow crystal's shape is set by temperature, so its shape records where it has been",
+            "Japan gets more snow than any other country",
+            "The six-pointed star is the only real snowflake shape"
+          ],
+          "answers": ["A snow crystal's shape is set by temperature, so its shape records where it has been"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["physicist → ____", "mapped → ____", "literally → ____"],
+          "rows": 1,
+          "answers": [
+            "a scientist who studies matter, energy, and how things work",
+            "recorded which result went with which condition",
+            "meaning exactly what the words say, not as a comparison"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a paragraph: you catch a snow crystal shaped like a wide branching star. Using the passage, explain what its shape tells you about the cloud it fell from.",
+          "rows": 7
+        }
+      ]
+    },
+    "5": {
+      "title": "The Snowflake That Started as Dust",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-snowflake", "templateLabel": "The Snowflake That Started as Dust", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "snowflake",
+          "notes": ["Wilson Bentley took the first snow crystal photo in 1885", "He was 19, working in an unheated shed in Vermont", "He photographed more than 5,000 crystals", "A big crystal holds about a billion billion water molecules", "Small plain plates really can look identical", "Fresh snow is about 90 percent air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "No Two Alike, and How We Know",
+          "text": "On a January morning in 1885, a nineteen-year-old farmer in Jericho, Vermont, stood in an unheated shed with a camera bolted to a microscope and did something nobody had done before. Wilson Bentley photographed a single snow crystal. He caught the flakes on a board painted black, moved them with a feather, and worked fast, because his own breath could ruin them. Over the next forty-six years he photographed more than five thousand crystals. He never found two that matched. In 1931 he walked home six miles through a blizzard, caught pneumonia, and died a few weeks later. Bentley's line went around the world: no two snowflakes are alike. It is one of the few pieces of folk science that turns out to be almost exactly right, though not for the reason most people assume. A snow crystal is not drawn by a plan. It is built one water molecule at a time, and a large one may contain something like a billion billion of them. Each molecule arrives where it arrives because of the temperature, the humidity, and the wind in that exact spot at that exact instant. Nudge any of those, and the pattern that follows is different. Two crystals would have to take identical paths through a cloud that is never the same twice. The physicist Kenneth Libbrecht, who grows snow crystals in a laboratory at Caltech, adds the honest correction. Very small, very simple crystals, the plain six-sided plates, can and do look identical under a microscope. The claim only holds for the big branching stars. Those have so many possible arrangements that the number of them dwarfs the number of crystals that have ever fallen. So the folk science is safe. Bentley was right, and the reason he was right is that no cloud ever repeats itself."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why did Bentley have to work fast? Quote the reason the passage gives.",
+            "Explain in your own words why two large snow crystals are never the same.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "Libbrecht's correction seems to argue against Bentley, yet the passage ends by saying Bentley was right. Explain how both can be true."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering Bentley's photographs plus why no two large crystals repeat)",
+            "his own breath could ruin them; quote: because his own breath could ruin them",
+            "(each molecule lands according to conditions at that instant, and no two crystals travel the same path through a cloud)",
+            "(inform, with detail: it explains the physics and names real researchers; it also tells a story, which entertains)",
+            "(Libbrecht limits the claim to small simple plates; for the big branching stars Bentley studied, the claim holds)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["folk science → ____", "humidity → ____", "dwarfs → ____", "correction → ____"],
+          "rows": 1,
+          "answers": [
+            "a belief passed around by ordinary people rather than proved by research",
+            "how much water vapor is in the air",
+            "is so much bigger that it makes the other seem tiny",
+            "a fix that makes a statement more accurate"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Bentley checked five thousand crystals and found no match. Explain why that is good evidence but not proof.",
+            "Why would a scientist bother pointing out that small plain crystals can be identical, when the famous claim is more fun?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion, expected: five thousand is a tiny sample of all the snow that has ever fallen, so it cannot rule out a match)",
+            "(opinion, expected: accuracy matters more than a good story; a claim that is stated carefully is the one that survives testing)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a short opinion paragraph: is it worth spending a lifetime photographing snow, the way Bentley did? Take a position and support it with two reasons.",
+          "rows": 8
+        }
+      ]
+    },
+    "6": {
+      "title": "The Snowflake That Started as Dust",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-snowflake", "templateLabel": "The Snowflake That Started as Dust", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "snowflake",
+          "notes": ["Ice Ih: frozen water builds in hexagonal rings", "A water molecule is a V, about 105 degrees wide", "Six arms come from six corners growing fastest", "Nakaya mapped shape against temperature in the 1930s", "Kenneth Libbrecht grows snow crystals at Caltech", "Most crystals that actually fall are lopsided or broken"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Six Arms, One Rule, and No Repeats",
+          "text": "Every snow crystal on Earth obeys one rule, and the rule is set by the shape of a single water molecule. A water molecule is a wide V: one oxygen atom with two hydrogen atoms attached, spread at an angle of about 105 degrees. When water is liquid, the molecules tumble past each other and that angle hardly matters. When water freezes, the molecules lock into a lattice, and the only way that V-shaped piece tiles neatly is in rings of six. Every ordinary ice crystal on this planet is built on hexagons. That is the whole answer to why snowflakes have six arms and not five or eight. The symmetry you see with your eyes at a scale of millimeters is a report from a scale of nanometers, and there is nothing in between deciding it. The rest is growth. A crystal begins on a floating speck of dust or pollen, and water vapor deposits onto it directly, going from gas to solid without ever being liquid. The infant crystal is a tiny hexagonal prism. Its six corners poke furthest out into the vapor, so they gather molecules fastest, and once a corner is ahead it stays ahead. Each corner runs away as an arm. Each arm throws out side branches for the same reason. This runaway is called branching instability, and it is why the finished crystal looks like lace instead of a plain plate. Then why do the six arms match? Because they are not communicating. They are simply six identical structures riding the same crystal through the same air. Temperature and humidity change constantly as the crystal tumbles, and every arm feels each change at the same moment and responds the same way. Symmetry is not coordination. It is six sisters given the same instructions in the same order. And the match is often imperfect. Photographs in books favor the beautiful ones. Most crystals that actually fall are lopsided, broken, clumped together, or crusted with frozen droplets. The strangest part is one we still cannot fully explain. Ukichiro Nakaya, growing crystals in a Hokkaido laboratory in the 1930s, discovered that shape flips with temperature in a way nobody predicted. Near 28 degrees Fahrenheit you get plates. Colder, around 23, you get needles. Colder again, near 5 degrees, you get the enormous branching stars. Colder still, and you are back to columns. The pattern reverses twice across a range you could cross by walking up a hill. Kenneth Libbrecht, who has grown thousands of crystals in a laboratory at Caltech, has spent decades chasing the surface physics behind those flips, and the case is not closed. Which leaves the famous claim. Are no two alike? Strictly, no. Small simple plates can be identical, and researchers have photographed near twins. But a large branching crystal is assembled from roughly a billion billion water molecules, each placed by the exact conditions at the exact instant it arrived. The number of arrangements available to it is larger than the number of crystals that have fallen in the history of the planet. Two matching stars are not forbidden by physics. They are merely so unlikely that the claim is safe forever, which is a more interesting kind of true."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why snow crystals have six arms rather than five. Cite the sentence that gives the reason.",
+            "Explain branching instability in your own words, and quote the phrase the passage uses to describe why a corner keeps its lead.",
+            "The passage says symmetry is not coordination. Analyze what that sentence is correcting, and why the author bothers to correct it.",
+            "The author admits the case is not closed on Nakaya's temperature flips. What does including that admission do for the passage?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the water molecule's shape only tiles as rings of six when it freezes; cite: the only way that V-shaped piece tiles neatly is in rings of six)",
+            "(a corner that gets ahead gathers more vapor and pulls further ahead, so arms and branches run away; quote: once a corner is ahead it stays ahead)",
+            "(it corrects the assumption that the arms somehow signal each other; the real cause is six identical structures meeting the same conditions at the same moment)",
+            "(analysis: admitting an open question builds credibility and separates what is known from what is still being studied)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["lattice → ____", "deposits (as a verb) → ____", "symmetry → ____", "prism → ____"],
+          "rows": 2,
+          "answers": [
+            "a fixed repeating arrangement that molecules lock into",
+            "settles directly out of a gas onto a solid surface",
+            "matching form across parts of a shape",
+            "a solid with flat ends of the same shape joined by flat sides"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says photographs in books favor the beautiful ones. Explain how that selection could give people a false idea of what snow is actually like.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(selection bias: readers see the rare perfect crystals and assume they are typical, when most real crystals are broken or lopsided)",
+            "(student question plus a credible source type, for example a published snow crystal physics paper or a research laboratory)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: saying no two snowflakes are alike is a nice story, not a scientific statement. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

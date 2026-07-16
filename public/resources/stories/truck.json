@@ -1,0 +1,319 @@
+{
+  "key": "truck",
+  "title": "The Truck That Brings You Everything",
+  "blurb": "Why a big rig is really two machines, how it stops with air, and the trucker whose idea rearranged the world.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Truck That Brings You Everything",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-truck", "templateLabel": "The Truck That Brings You Everything", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the wheels. Count them out loud." },
+        {
+          "kind": "image",
+          "imageKey": "truck",
+          "notes": ["It has 18 wheels", "The driver sits up high", "The tires are taller than you", "There is a bed behind the seats"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a big truck. It has many wheels. The wheels are taller than you. A person sits up high in the front. That is the driver. The truck carries food to the store. It carries beds and boots and bread. The truck drives all night long. When the sun comes up, the truck is still going. Beep. The truck says hello."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the wheels in each row. Write how many in the box.",
+          "emoji": "🛞",
+          "items": ["4", "6", "2", "8"],
+          "answers": ["4", "6", "2", "8"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "big    truck" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "truck", "right": "road" },
+            { "left": "boat", "right": "water" },
+            { "left": "plane", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own big truck. Give it lots of wheels.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Truck That Brings You Everything",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-truck", "templateLabel": "The Truck That Brings You Everything", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "truck",
+          "notes": ["18 wheels in three groups", "The front part is the tractor", "The back box is the trailer", "Some drivers sleep in the truck", "It brings things to your store"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Last Mile",
+          "text": "Look around your room. The bed. The lamp. The shoes by the door. Almost every one of those things rode on a truck to get here. Ships and trains carry things a long way. But a ship cannot pull up to your street. A train cannot stop at your store. So a truck does the last part of the trip. Drivers call that part the last mile. A full truck can weigh as much as twenty cars. It has a bed behind the seats, so the driver can sleep, wake up, and keep going."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What do drivers call the last part of the trip?", "Why can a ship not bring things to your street?", "What is behind the seats in the truck?"],
+          "rows": 2,
+          "answers": ["the last mile", "a ship cannot drive on a road", "a bed for the driver"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Almost everything in your room came on a ____.", "A ship cannot stop at your ____.", "The truck does the last ____.", "A full truck weighs as much as twenty ____."],
+          "wordBank": ["truck", "store", "mile", "cars"],
+          "answers": ["truck", "store", "mile", "cars"]
+        },
+        { "kind": "draw", "prompt": "Draw a truck bringing something to your house. Draw what is inside it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Truck That Brings You Everything",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-truck", "templateLabel": "The Truck That Brings You Everything", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "truck",
+          "notes": ["Tractor in front, trailer behind", "The trailer has no engine", "They join at the fifth wheel", "18 wheels: 2 plus 8 plus 8", "A loaded rig can weigh 40 tons"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why an 18 Wheeler Has Two Halves",
+          "text": "Count the wheels on a big rig and you get eighteen. Two at the front, eight under the middle, eight at the back. But look closer and you will see something stranger. The truck is not one machine. It is two. The front half is called the tractor. That is where the engine is, and the driver, and a small bed for sleeping. The back half is the trailer, and it is really just a box on wheels. It has no engine. It has no front wheels at all. The front of the trailer rests on the back of the tractor, on a heavy steel plate shaped like a horseshoe. Drivers call that plate the fifth wheel. A thick pin under the trailer drops into it and locks. That one joint is why a truck can bend around a corner instead of tipping. It is also why a driver can unhook one trailer, leave it at a store, and hook up a new one in a few minutes. The tractor keeps working. The trailer waits its turn."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are the two halves of an 18 wheeler called?",
+            "Which half has the engine in it?",
+            "What is the fifth wheel, and what shape is it?",
+            "Why do you think it helps a driver to be able to swap trailers?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the tractor and the trailer",
+            "the tractor",
+            "a heavy steel plate shaped like a horseshoe that the trailer locks into",
+            "(inference: the tractor never has to sit and wait while a trailer is loaded)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why an 18 Wheeler Has Two Halves", "How to Change a Bicycle Tire", "The Story of the First Airplane"],
+          "answers": ["Why an 18 Wheeler Has Two Halves"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The front half of the truck is the ____.", "The back half is called the ____.", "The two halves join at the fifth ____."],
+          "wordBank": ["tractor", "trailer", "wheel"],
+          "answers": ["tractor", "trailer", "wheel"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a big rig is built, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Truck That Brings You Everything",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-truck", "templateLabel": "The Truck That Brings You Everything", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "truck",
+          "notes": ["Trucks stop with air, not fluid", "Springs clamp the brakes shut", "Air pressure holds them open", "Lose the air and the brakes slam on", "That hiss is the air letting go", "80,000 pounds is the highway limit"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Brakes That Work by Letting Go",
+          "text": "Stand near a truck stop and you will hear it. A loud hiss, every time a rig pulls away. That sound is a truck doing something a car never does. It is releasing its brakes with air. A car stops with liquid. Push the pedal, and brake fluid pushes on the wheels. It works well, but every drop of that fluid has to stay inside the line. Spring a serious leak and the pedal goes soft under your foot. A truck weighing forty tons cannot take that chance, so trucks stop with air instead, and they use it backward. Here is how. Inside each brake sits a heavy coiled spring. The spring has one job: clamp the brake shut. To let the truck roll at all, the engine pumps compressed air into the brake chamber, and that air shoves the spring back and pins it there. The whole time a truck is rolling down the highway, air pressure is fighting a spring to hold the brakes open. Now think about what happens if an air line snaps. The air escapes. Nothing is holding the spring anymore. The spring does what springs do, and the brakes slam on. A broken truck stops itself. Engineers call this a fail safe: when the system breaks, it breaks toward safety instead of away from it. So that hiss at the truck stop is the sound of a driver giving forty tons of steel permission to move."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain, in your own words, what the coiled spring inside a truck brake does.",
+            "What is a fail safe? Use the truck brake to explain it.",
+            "The passage says trucks use air backward. What does it mean by backward?",
+            "A car brake needs pressure to stop. A truck brake needs pressure to go. Why is the truck's way safer for something this heavy?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it clamps the brake shut, and it only lets go when air pushes it back",
+            "(a design that breaks toward safety; if the air is lost, the brakes apply instead of failing)",
+            "(a car needs pressure to stop, but a truck needs pressure to release the brakes)",
+            "(inference: if anything fails, a forty ton truck stops rather than rolling free)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Truck brakes are held open by air pressure so that any failure makes them stop instead of roll",
+            "Air is lighter than brake fluid, so trucks are faster",
+            "Truck drivers use the horn instead of the brakes"
+          ],
+          "answers": ["Truck brakes are held open by air pressure so that any failure makes them stop instead of roll"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["compressed (air) → ____", "fail safe → ____", "brake chamber → ____"],
+          "rows": 1,
+          "answers": [
+            "squeezed into a smaller space, so it pushes hard",
+            "a design that breaks toward safety, not away from it",
+            "the part of the brake the air is pumped into"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: name one other machine that should be built to fail safe, and explain what should happen when it breaks. Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Truck That Brings You Everything",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-truck", "templateLabel": "The Truck That Brings You Everything", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "truck",
+          "notes": ["Diesel engines have no spark plugs", "Pressure alone lights the fuel", "Rudolf Diesel built his engine in the 1890s", "Peak pulling power below 2,000 rpm", "10, 13, or 18 gears", "About 525 feet to stop at 65 mph"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Engine With No Spark",
+          "text": "Pop the hood of a car and you will find spark plugs, one for each cylinder, firing a small electric spark to light the fuel. Pop the hood of a truck and there are none. A diesel engine has no spark plugs, because it does not need a spark. It lights its fuel with pressure alone. Here is the trick. Squeeze any gas hard enough and it gets hot. A bicycle pump warms in your hand for the same reason. A diesel engine takes a cylinder of ordinary air and crushes it into roughly one twentieth of the space it started in. By the top of that stroke the air has climbed past 1,000 degrees Fahrenheit, hot enough that when the injector sprays in a fine mist of fuel, the fuel catches on contact. No spark. No plug. Just pressure and heat. Rudolf Diesel built the first working engine of this kind in Germany in the 1890s. He was chasing efficiency, and he found it. Squeezing the air harder wrings more work out of every drop of fuel, which is why almost every truck, ship, train, and tractor on Earth still runs on his idea more than a century later. That efficiency comes with a personality. A diesel makes enormous pulling power, but only across a narrow band of speeds. A car engine will happily spin to 6,000 revolutions a minute. A big truck engine does its best work below 2,000, and it has to stay inside that band while hauling forty tons up a hill. The answer is gears, and lots of them. Where a family car has six, a highway truck may have ten, thirteen, or eighteen, and the driver climbs through them like rungs on a ladder. All that mass has one more consequence, and it is the one that matters most. A car at highway speed needs roughly 300 feet to stop. A fully loaded truck at the same speed needs closer to 525 feet, nearly two football fields of road. Getting forty tons moving is clever engineering. Getting it stopped is the hard part."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how a diesel engine lights its fuel without a spark plug.",
+            "Why does a truck need so many more gears than a car? Quote the phrase the passage uses for the diesel's limited speed range.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Look at the last two sentences. What point is the author making by ending there instead of with the engine?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering compression ignition, efficiency, gearing, and stopping distance)",
+            "it crushes air to about one twentieth of its space, which heats it past 1,000 degrees Fahrenheit, and the sprayed fuel catches on contact",
+            "the diesel only makes power in a narrow band of speeds, so gears keep it inside that band; quote: a narrow band of speeds",
+            "(inform, with detail: it explains how the engine works and gives real numbers; the closing line has a persuasive edge)",
+            "(the mass, not the engine, is the real story; ending on stopping distance leaves the reader with the danger)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["cylinder → ____", "injector → ____", "efficiency → ____", "band (of speeds) → ____"],
+          "rows": 1,
+          "answers": [
+            "the tube inside an engine where air is squeezed and fuel burns",
+            "the part that sprays a fine mist of fuel into the cylinder",
+            "getting more work out of the same amount of fuel",
+            "the narrow range of engine speeds where it works best"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage compares a diesel cylinder to a bicycle pump. Explain why that comparison works.",
+            "Truck drivers are taught to leave far more space in front of them than car drivers do. Use the passage to explain why."
+          ],
+          "rows": 3,
+          "answers": [
+            "(both squeeze air into a smaller space, and squeezing a gas makes it hot)",
+            "(inference: 525 feet of stopping distance means the gap has to be there before the driver ever touches the brake)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should heavy trucks be allowed to drive the same speed limit as cars? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Truck That Brings You Everything",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-truck", "templateLabel": "The Truck That Brings You Everything", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "truck",
+          "notes": ["Malcom McLean: trucker turned shipping owner", "The Ideal X sailed April 26, 1956", "58 boxes, Newark to Houston", "Loading cost fell from $5.86 to about $0.16 a ton", "Container width matches a highway trailer", "The twistlock patent was released royalty free"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Truck Driver Who Shrank the World",
+          "text": "The story Malcom McLean told for the rest of his life begins in 1937, with a young North Carolina trucker sitting at a pier in Hoboken, New Jersey, going nowhere. He had hauled a load of cotton bales up from the south, and now he watched dockworkers pull those bales off his trailer one at a time, carry them across the pier, sling them in a net, and lower them into a ship's hold, where another crew stacked them by hand. It took most of a day. McLean was not paid to sit. And sitting there, he had the thought that would eventually rearrange the global economy: why unload the cargo at all? Why not lift the whole box? Nobody wanted that idea for the next eighteen years. Ports were built around the old way. Shipping lines owned the warehouses the old way filled. Dockworkers' unions were built on the labor the old way demanded, and they could see precisely what a box would do to it. In 1956, loading a ship cost roughly $5.86 for every ton moved, and almost none of that was fuel or steel. It was people, lifting things. McLean did not wait for permission. By 1955 he had grown McLean Trucking into one of the largest fleets in America, and he sold the entire thing. With the money he bought a struggling steamship company, cut the decks out of an old oil tanker, and bolted steel frames on top of it. On April 26, 1956, that ship, the Ideal X, sailed from Newark to Houston carrying fifty eight truck trailer boxes. When the accountants ran the numbers on the voyage, loading had cost about sixteen cents a ton. The old way cost roughly thirty six times as much. The genius was not really the box. Boxes are easy. The genius was insisting the box be identical everywhere. McLean's engineer, Keith Tantlinger, designed a corner fitting and a twistlock that let a crane grab any container, and let containers stack and lock to each other on a ship, on a railcar, or on a chassis behind a truck. Then McLean did the thing that decided the whole story: he gave the patent away, royalty free, so that every one of his rivals could copy it. A standard that only one company is allowed to use is not a standard. It is a cage. What followed was not an improvement in shipping. It was a reordering. Freight costs fell so far that they stopped being a serious factor in where a thing gets made, which is a large part of why the shirt you are wearing was probably sewn on the other side of an ocean. Ports that could not handle containers, including some of the busiest on Earth, simply died, and new ones rose out of mudflats where there was room for cranes and truck lanes. Waterfronts full of jobs vanished. Whole industries appeared. And through all of it, the truck never left. A shipping container is 8 feet wide for a reason that has nothing to do with ships: that is how wide a highway trailer is. The box that crosses the Pacific was shaped to fit behind a diesel tractor on an American road, because the man who invented it was thinking, always, like a trucker stuck on a dock. Ships carry containers across oceans. Trains carry them across continents. But nothing on Earth can put one on your street except a truck. Every supply chain, however long, ends the way it began in 1937: with a driver, a trailer, and somebody waiting on the box."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why did ports, shipping lines, and unions resist the container for eighteen years? Cite the evidence.",
+            "The author writes that the genius was not really the box. Explain what the genius actually was, and why giving away the patent served McLean's own interest.",
+            "Identify the shift in the passage: where does it stop being a story about one man and become a story about the world? How does the author signal it?",
+            "The passage ends by returning to 1937. Analyze what that ending is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(their money and jobs depended on hand loading; cite: It was people, lifting things)",
+            "(the genius was a single identical standard; a box only he could use would not be adopted anywhere; cite: A standard that only one company is allowed to use is not a standard. It is a cage)",
+            "(at What followed was not an improvement in shipping. It was a reordering; a short flat sentence marks the pivot)",
+            "(it closes the loop and argues the truck is still the necessary last step; earned by the 8 foot width evidence and the last mile claim)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["standard → ____", "royalty free → ____", "freight → ____", "reordering → ____"],
+          "rows": 2,
+          "answers": [
+            "an agreed shared design that everyone builds to",
+            "free to copy and use without paying the inventor",
+            "goods being moved from one place to another",
+            "a complete rearranging of how something is organized"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says whole waterfronts of jobs vanished and whole industries appeared. Explain why that trade is easy to describe and hard to judge.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the gains and losses landed on different people in different places and at different times, so a net number hides who paid)",
+            "(student question plus a credible source type, such as a labor historian or port records)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Malcom McLean gave away his most valuable patent, so he was a generous man. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

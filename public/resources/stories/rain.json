@@ -1,0 +1,319 @@
+{
+  "key": "rain",
+  "title": "The Long Life of a Raindrop",
+  "blurb": "How a speck of dust turns into a raindrop, why rain has a smell, and why people have measured it for two thousand years.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Long Life of a Raindrop",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-rain", "templateLabel": "The Long Life of a Raindrop", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the raindrops falling down." },
+        {
+          "kind": "image",
+          "imageKey": "rain",
+          "notes": ["Clouds are made of tiny water drops", "The sun dries a puddle up", "Rain helps plants grow", "Rain falls down, then goes back up"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Rain comes from the clouds. But first the water goes up. The sun warms a puddle. The water turns into mist and floats up high. Up there the air is cold. The mist turns back into tiny drops. The drops bump and join. They get big. They get heavy. Down comes the rain. The plants drink it. The puddle fills up again."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the raindrops in each row. Write how many in the box.",
+          "emoji": "💧",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "rain    wet    drop" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "rain", "right": "cloud" },
+            { "left": "puddle", "right": "boots" },
+            { "left": "sun", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a rainy day. Add a cloud, some raindrops, and a big puddle.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Long Life of a Raindrop",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-rain", "templateLabel": "The Long Life of a Raindrop", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "rain",
+          "notes": ["A cloud is made of drops too small to see", "Water goes up before it comes down", "Drops stick together to grow big", "A drop falls when it gets too heavy", "The same water gets used again and again"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Raindrop Has Been Up and Down Before",
+          "text": "The sun shines on the sea and on lakes. It warms the water at the top. Tiny bits of that water float up into the sky, so small that you cannot see them go. High up, the air is cold. The floating water cools down and turns back into little drops. Millions of drops together make a cloud. Inside the cloud, the drops bump into each other and stick. They grow. When a drop gets too heavy for the air to hold, it falls. That is rain. It lands in the sea and in lakes, and then the sun starts it all over again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What warms the water at the top of the sea?", "What is a cloud made of?", "When does a drop fall out of a cloud?"],
+          "rows": 2,
+          "answers": ["the sun", "millions of tiny water drops", "when it gets too heavy for the air to hold"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The ____ warms the water.", "The water floats up into the ____.", "Millions of drops make a ____.", "A heavy drop ____ down as rain."],
+          "wordBank": ["sun", "sky", "cloud", "falls"],
+          "answers": ["sun", "sky", "cloud", "falls"]
+        },
+        { "kind": "draw", "prompt": "Draw the water going up and coming down. Use arrows to show which way it moves.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Long Life of a Raindrop",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-rain", "templateLabel": "The Long Life of a Raindrop", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "rain",
+          "notes": ["Real raindrops are not teardrop shaped", "Small drops are round like a ball", "Big drops flatten on the bottom", "A drop bigger than a pea splits apart", "A big drop falls about twenty miles an hour"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Drop That Is Not a Teardrop",
+          "text": "Draw a raindrop and you will probably draw a teardrop: round at the bottom, pointed at the top. Almost every picture of rain looks like that. It is wrong. Photographs taken with very fast cameras show something else. A small raindrop is a ball, round like a tiny marble. As a drop grows bigger, the air pushing up against it flattens the bottom. Now it looks like the top half of a hamburger bun, or a kidney bean. If a drop grows wider than a pea, the air pushing on it tears it into smaller drops. So why do we draw the pointed shape? Because water hanging from a faucet makes that shape as it lets go. We drew the drop leaving, then we drew rain the same way, and nobody checked for a very long time. Rain falls fast. A big drop can hit the ground at twenty miles an hour, about as quick as you can ride a bike down a hill."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What shape is a small raindrop?",
+            "What makes a big drop flatten on the bottom?",
+            "What happens to a drop that grows wider than a pea?",
+            "Why do you think people kept drawing the wrong shape for so long?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a ball, round like a tiny marble",
+            "the air pushing up against it as it falls",
+            "the air tears it into smaller drops",
+            "(inference: they copied each other and nobody checked, and drops fall too fast to see)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Drop That Is Not a Teardrop", "How to Draw a Hamburger", "The Fastest Bike in the World"],
+          "answers": ["The Drop That Is Not a Teardrop"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Fast ____ showed us the real shape of a drop.", "A big drop looks like a kidney ____.", "Water hanging from a ____ makes the pointed shape."],
+          "wordBank": ["cameras", "bean", "faucet"],
+          "answers": ["cameras", "bean", "faucet"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most in this passage, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Long Life of a Raindrop",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-rain", "templateLabel": "The Long Life of a Raindrop", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rain",
+          "notes": ["About a million cloud droplets make one raindrop", "Every drop forms around a speck of dust or salt", "Those specks are called condensation nuclei", "Droplets merge as they fall: coalescence", "Virga is rain that dries up before it lands"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How to Build a Raindrop",
+          "text": "A cloud is not made of rain. A cloud is made of droplets so small that about a million of them would fit inside a single raindrop. Those droplets are light enough that the slow, rising air inside a cloud simply holds them up. A cloud can float above you for hours without dropping anything at all. For rain to happen, a droplet has to grow, and to grow it first needs something to grow on. Water vapor will not turn into liquid in clean air easily. It needs a speck: a grain of desert dust, a crystal of sea salt flung up by a breaking wave, a bit of pollen, a particle of smoke. Scientists call these specks condensation nuclei. Almost every raindrop that has ever landed on your head was built around one. Once a droplet forms, it drifts. It collides with other droplets and merges with them, a process called coalescence. Bigger droplets fall faster than smaller ones, so they catch up to the little ones and sweep them up on the way down. The drop grows heavier. Eventually the rising air cannot hold it any longer, and it falls out of the bottom of the cloud. Even then, the trip is not guaranteed. In dry desert air, a drop can evaporate on the way down and vanish before it ever reaches the ground. Forecasters call that virga, and you can spot it from far away: gray streaks hanging under a cloud, ending in midair."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why does a cloud float instead of falling on you?",
+            "What is a condensation nucleus, and why does a raindrop need one?",
+            "Explain coalescence in your own words.",
+            "The passage says bigger droplets fall faster than smaller ones. Why does that help rain form?"
+          ],
+          "rows": 2,
+          "answers": [
+            "its droplets are tiny and light, and rising air inside the cloud holds them up",
+            "a speck of dust, salt, pollen, or smoke; water vapor needs something to gather on",
+            "(droplets crash into each other and merge into a bigger drop)",
+            "(inference: fast big drops catch up to slow small ones and sweep them up, so they grow faster)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A raindrop is built slowly, around a speck, and may not even reach the ground",
+            "Clouds are the heaviest things in the sky",
+            "Deserts get more rain than anywhere else on Earth"
+          ],
+          "answers": ["A raindrop is built slowly, around a speck, and may not even reach the ground"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["coalescence → ____", "condensation nuclei → ____", "virga → ____"],
+          "rows": 1,
+          "answers": [
+            "droplets colliding and merging into a bigger drop",
+            "tiny specks that water gathers on to start a droplet",
+            "rain that evaporates before it reaches the ground"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a speck of dust becomes a raindrop that lands on your hand. Put the steps in order.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Long Life of a Raindrop",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-rain", "templateLabel": "The Long Life of a Raindrop", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rain",
+          "notes": ["Petrichor: the name for the smell of rain", "Coined in 1964 by Bear and Thomas in Nature", "From Greek petra, stone, and ichor, the gods' blood", "Geosmin is made by bacteria in the soil", "Our noses detect geosmin at 5 parts per trillion", "The smell before a storm is ozone, not rain"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Smell of Rain Has a Name",
+          "text": "You can smell rain before you see it. Almost everyone can. The strange part is that water has no smell at all, so whatever you are smelling is not the rain. In 1964, two Australian scientists, Isabel Joy Bear and Richard Thomas, published a paper in the journal Nature about that smell. They gave it a name: petrichor. They built the word out of Greek. Petra means stone. Ichor was the fluid said to run in the veins of the gods. The smell of rain on dry stone, more or less. Most of the smell comes from two sources. The first is oil. During long dry spells, plants shed oily compounds that soak into clay and rock. When rain finally arrives, the water pushes those trapped oils back out into the air. The second source is a chemical called geosmin, and geosmin is not made by plants at all. It is made by bacteria living in the soil. When the ground dries out, those bacteria make spores, and geosmin comes with them. Human noses are extraordinarily tuned to geosmin. We can detect it at about five parts per trillion, which is roughly a teaspoon dropped into four hundred Olympic swimming pools. Nobody is certain why we are that sensitive. Some scientists suspect our distant ancestors used the scent to find water, and that the sensitivity stuck around long after we stopped needing it. There is a mechanical part to the story too. In 2015, researchers at MIT filmed raindrops landing on soil using high-speed cameras. Each drop traps a cushion of air underneath it as it hits. That air escapes as tiny bubbles which burst upward, throwing a fine mist of scent-carrying droplets into the breeze. Rain does not just release the smell. It launches it. The sharp, clean smell that arrives just before a storm is something different again. That one is ozone, carried down from high in the sky by the storm's own falling air."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says whatever you are smelling is not the rain. Explain what you are actually smelling.",
+            "Where does geosmin come from, and why does a dry spell make it stronger?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain what the author means by: Rain does not just release the smell. It launches it."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering petrichor + plant oils and geosmin + how rain flings the scent into the air)",
+            "plant oils soaked into clay and rock, plus geosmin made by soil bacteria",
+            "bacteria in the soil make it; they make spores when the ground dries out, and geosmin comes with them",
+            "(inform, with detail: it defines petrichor and geosmin and reports dated studies and measurements)",
+            "(the MIT cameras showed drops trap air that bursts as bubbles and throws the scent up into the breeze)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["petrichor → ____", "geosmin → ____", "compounds → ____", "spores → ____"],
+          "rows": 1,
+          "answers": [
+            "the smell of rain landing on dry ground",
+            "a chemical made by soil bacteria that our noses detect easily",
+            "substances made of different parts joined together",
+            "tough tiny cells bacteria make to survive dry conditions"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why would being able to smell water have helped early humans stay alive?",
+            "The passage says nobody is certain why we are that sensitive. Why is it useful for a science writer to admit that?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: finding water in a dry landscape before you could see it would keep you alive)",
+            "(inference: honesty about what is unknown builds trust and separates evidence from guessing)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does knowing the science behind the smell of rain make it more wonderful, or less? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Long Life of a Raindrop",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-rain", "templateLabel": "The Long Life of a Raindrop", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rain",
+          "notes": ["The Arthashastra taxed farmers by measured rainfall", "Korea's cheugugi standardized rain gauges in 1441", "A standard gauge stretches 1 inch of rain into 10", "Mawsynram, India averages about 467 inches a year", "Meghalaya means abode of clouds", "Monsoon comes from the Arabic word mawsim, season"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bowl Outside the Storehouse",
+          "text": "Rain is the only weather that people have measured carefully, deliberately, and on purpose for thousands of years. Not because it is beautiful. Because everything depends on it. The oldest known instructions come from an ancient Indian book on how to run a state, the Arthashastra, written more than two thousand years ago. It tells officials to keep a bowl of a fixed size outside the storehouse and to record what collects in it, because the tax a farmer owed ought to depend on the rain that farmer actually received. A dry year and a wet year are not the same year, and a government that cannot tell them apart will take grain from people who have none. The idea was rebuilt, far more precisely, in Korea. In 1441, the court of King Sejong ordered a standard rain gauge called the cheugugi: a cylinder of fixed width and depth, set on a stone pedestal at a fixed height, and distributed to offices across the kingdom. That last detail is the important one. One person with a bucket learns about their own yard. Hundreds of people with identical buckets, at identical heights, all reporting to one place, learn about a country. Korea holds some of the longest rainfall records in the world because of that decision. Modern gauges still use a trick worth understanding. The standard gauge is a funnel eight inches across draining into a tube with one tenth the area. An inch of rain in the funnel stands ten inches deep in the tube. The rain has not changed. The instrument has stretched it, so that a person reading the side of the tube can see hundredths of an inch that would otherwise be invisible. Good measurement is often just a clever shape. What the measurements reveal is that rain is handed out with almost unreasonable unfairness. Mawsynram, in the Indian state of Meghalaya, averages around 467 inches of rain a year. The name Meghalaya means abode of clouds. Meanwhile parts of Chile's Atacama Desert average less than a tenth of an inch a year, and some weather stations there have gone years without recording any rain at all. The ground is so dry that engineers test Mars equipment in it. Both places sit on the same planet, under the same sun, doing exactly what the wind and the mountains tell them to do. For much of humanity the stakes are not academic. The word monsoon comes from the Arabic mawsim, meaning season. India's summer monsoon delivers roughly three quarters of the country's yearly rain in about four months. A monsoon that arrives two weeks late, or drops a fifth less water than usual, is not a weather story. It is a food story, an electricity story, and an economy story, for well over a billion people. Which is why the bowl outside the storehouse still matters. Every satellite and radar dish we have ever built is checked against a number that someone, somewhere, read off the side of a tube."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why did the Arthashastra tie taxes to measured rainfall? Cite the sentence that explains the danger of not doing so.",
+            "The passage says the cheugugi's most important feature was not the cylinder itself. Explain what it was, and cite the two sentences the author uses to make the point.",
+            "Explain how a standard gauge makes a tenth of an inch readable. Why does the author call this a clever shape rather than a better measurement?",
+            "The final paragraph returns to the bowl outside the storehouse. Analyze why the author ends there instead of ending with the satellites."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(so taxes matched the rain a farmer actually got; cite: a government that cannot tell them apart will take grain from people who have none)",
+            "(that identical gauges were distributed across the kingdom, turning local readings into national data; cite: One person with a bucket learns about their own yard. Hundreds of people with identical buckets, at identical heights, all reporting to one place, learn about a country.)",
+            "(the funnel drains into a tube one tenth the area, so an inch stands ten inches deep; the rain is unchanged, only the instrument's geometry stretches it; cite: Good measurement is often just a clever shape)",
+            "(it frames modern technology as still resting on the oldest, simplest instrument; ending on the bowl argues the humble measurement is the foundation, not the leftover)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["standardize → ____", "cheugugi → ____", "monsoon → ____", "academic (as used here) → ____"],
+          "rows": 2,
+          "answers": [
+            "to make every instrument the same so results can be compared",
+            "the Korean standard rain gauge ordered in 1441",
+            "a seasonal wind pattern that brings months of heavy rain",
+            "theoretical, of no practical consequence"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that rain is handed out with almost unreasonable unfairness. Is unfairness a fair word for weather? Explain what the author gains and risks by choosing it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(weather has no intent, so unfairness is figurative; it gains feeling and stakes, but risks implying blame where there is only physics)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Now that satellites can watch rain from orbit, measuring it by hand in a tube is a waste of time. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

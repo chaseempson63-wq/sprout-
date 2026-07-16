@@ -1,0 +1,319 @@
+{
+  "key": "heart",
+  "title": "The Pump That Never Quits",
+  "blurb": "The fist-sized muscle in your chest, the little doors that go lub-dub, and the man who proved blood travels in a circle.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Pump That Never Quits",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-heart", "templateLabel": "The Pump That Never Quits", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. This is a real heart. It is inside you right now." },
+        {
+          "kind": "image",
+          "imageKey": "heart",
+          "notes": ["It is a muscle", "It is as big as your fist", "It lives in your chest", "It goes thump, thump", "It never stops"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Make a fist. That is how big your heart is. Your heart is a muscle. It sits in your chest, right behind your ribs. Put your hand there. Can you feel it? Thump, thump. Thump, thump. Your heart is pushing blood all around you. It does this while you play. It does this while you sleep. It never takes a day off."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the hearts in each row. Write how many in the box.",
+          "emoji": "❤️",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "beat    pump" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each body part to where it lives.",
+          "pairs": [
+            { "left": "heart", "right": "chest" },
+            { "left": "brain", "right": "head" },
+            { "left": "teeth", "right": "mouth" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Put your hand on your chest and feel your heart. Now draw yourself with your heart inside.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Pump That Never Quits",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-heart", "templateLabel": "The Pump That Never Quits", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "heart",
+          "notes": ["Make a fist. That is its size", "It pumps blood day and night", "It sounds like lub-dub", "It beats faster when you run", "The pink and red tubes carry blood"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Pump in Your Chest",
+          "text": "Your heart is a pump. A pump pushes things along. Your heart pushes blood. Blood carries food and air to every part of you, all the way down to your toes. Put your ear on a grown-up's chest and listen. You will hear lub-dub, lub-dub. That is the sound of little doors closing inside the heart. The doors keep the blood going one way, like a one-way street. Now run around the yard ten times. Stop and feel your chest. Your heart is going faster. Your muscles want more air, so your heart works harder to bring it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is your heart's job?", "What makes the lub-dub sound?", "Why does your heart go faster when you run?"],
+          "rows": 2,
+          "answers": ["it pumps blood around your body", "little doors closing inside the heart", "your muscles want more air, so it works harder"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Your heart is a ____.", "It pushes ____ all around you.", "A heart sounds like ____.", "Blood goes one way, like a one-way ____."],
+          "wordBank": ["pump", "blood", "lub-dub", "street"],
+          "answers": ["pump", "blood", "lub-dub", "street"]
+        },
+        { "kind": "draw", "prompt": "Draw yourself running. Draw your heart working hard inside your chest.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Pump That Never Quits",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-heart", "templateLabel": "The Pump That Never Quits", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "heart",
+          "notes": ["About the size of your fist", "Beats around 100,000 times a day", "Four one-way doors called valves", "It sits in the middle of your chest, tipped left", "Lub-dub is the valves snapping shut"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Pump in Your Chest",
+          "text": "Your heart is not shaped like the heart on a greeting card. It is a lumpy bag of muscle about the size of your fist, and it sits in the middle of your chest with its tip pointed a little to the left. That is why people think it lives on the left side. The heart has one job. It pushes blood. Blood is a delivery truck: it carries oxygen from your lungs and food from your stomach out to every muscle and bone you own, then hauls the trash back. Your heart pushes it around this loop again and again, about 100,000 times a day, without you asking it to. Inside the heart are four little doors called valves. When you hear lub-dub through a stethoscope, you are not hearing blood. You are hearing those doors slam shut. They snap closed so blood cannot slosh backward. Every drop has to keep moving one way around the loop. Your heart also listens to you. Sit still and it slows down. Run up a hill and it speeds up, because your legs are shouting for more oxygen and the heart is the only thing that can deliver it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "About how many times does your heart beat in one day?",
+            "What are the four little doors inside the heart called?",
+            "What are you really hearing when you hear lub-dub?",
+            "Why do you think your heart speeds up when you run up a hill?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about 100,000 times",
+            "valves",
+            "the valves slamming shut, not the blood",
+            "(inference: the muscles need more oxygen and only the heart can deliver it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Pump in Your Chest", "How to Draw a Greeting Card", "The Tallest Hill in Town"],
+          "answers": ["The Pump in Your Chest"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Your heart is about the size of your ____.", "The four little doors are called ____.", "Blood carries ____ from your lungs to your muscles."],
+          "wordBank": ["fist", "valves", "oxygen"],
+          "answers": ["fist", "valves", "oxygen"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the heart, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Pump That Never Quits",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-heart", "templateLabel": "The Pump That Never Quits", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "heart",
+          "notes": ["Two pumps in one: right to the lungs, left to the body", "Four chambers, four valves", "The left wall is about three times thicker", "It feeds itself through coronary arteries", "Blood is never blue, only dark red", "It started beating before you were born"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Pumps in One",
+          "text": "Hold up your fist. Your heart is about that size, and it is made almost entirely of muscle. Unlike the muscles in your arm, this one never gets to quit. Most people picture the heart as a single pump. It is really two pumps bolted together, working side by side. The right pump takes tired blood coming back from your body and sends it on a short trip to your lungs, where it picks up oxygen and drops off carbon dioxide. The refreshed blood returns to the left pump, which fires it out to the rest of you: brain, fingers, stomach, toes. The left pump has the harder job, so its wall is nearly three times thicker than the right. Each pump has two rooms, an upper one and a lower one, which is why doctors say the heart has four chambers. Between the rooms sit valves, flaps of tissue that open one way only. Their snapping shut is the lub-dub you hear through a stethoscope. Here is the strange part. The heart is stuffed with blood every second of its life, yet it cannot use a drop of it. The walls are too thick to soak anything up. So the heart feeds itself the same way it feeds everything else: through its own private vessels, the coronary arteries, which branch across its surface like a tree pressed onto the muscle. One more thing. Blood is never blue. Blood without much oxygen is a deep, dark red. Your veins only look blue because of the way light passes through your skin."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why does the passage call the heart two pumps instead of one?",
+            "Why is the wall of the left pump thicker than the wall of the right?",
+            "The heart is full of blood but cannot use any of it. Explain how it feeds itself instead.",
+            "The passage says blood is never blue. Why do you think so many people believe that it is?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the right side sends blood to the lungs and the left side sends it to the body",
+            "it has the harder job, pushing blood to the whole body instead of just the lungs",
+            "through its own vessels, the coronary arteries, that branch across its surface",
+            "(inference: veins look blue through skin, and diagrams often color them blue)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The heart is a two-sided pump with four chambers that even has to feed itself",
+            "Lungs do more work than the heart does",
+            "Doctors invented the stethoscope so they could hear blood moving"
+          ],
+          "answers": ["The heart is a two-sided pump with four chambers that even has to feed itself"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["chambers → ____", "valves → ____", "coronary arteries → ____"],
+          "rows": 1,
+          "answers": [
+            "the four rooms inside the heart",
+            "flaps of tissue that let blood through one way only",
+            "the heart's own private blood vessels that feed its muscle"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the path one drop of blood takes from your big toe, through your heart, and back out to your brain. Name the parts it passes.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Pump That Never Quits",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-heart", "templateLabel": "The Pump That Never Quits", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "heart",
+          "notes": ["Cardiac muscle makes its own electricity", "The sinoatrial node is the natural pacemaker", "A transplanted heart beats with no nerves attached", "Resting rate for an adult: about 70 a minute", "A hummingbird's heart can hit 1,200 a minute", "It rests between beats, never for a day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Heart Beats Itself",
+          "text": "Here is a fact that should bother you more than it does. Your heart does not wait for your brain to tell it to beat. Almost every muscle you own is a puppet. Your bicep does nothing until a nerve signal arrives from your brain. Cut that nerve and the muscle goes quiet forever. Cardiac muscle refuses to work that way. The heart generates its own beat, from inside itself, using electricity it makes on the spot. The spark starts in a patch of specialized cells in the upper right chamber called the sinoatrial node. Doctors call it the natural pacemaker. Roughly once a second, all on its own schedule, the sinoatrial node leaks a small electrical charge across the two upper chambers, and they squeeze. The charge pauses briefly at a second checkpoint, the atrioventricular node, long enough for the upper chambers to finish emptying. Then it races down into the two lower chambers, and they squeeze harder, throwing blood to the lungs and to the body. That whole sequence, repeated, is a heartbeat. If you want proof that the heart runs itself, look at a transplant. When surgeons place a donor heart into a patient's chest, they do not reconnect the nerves that once ran to it. They cannot. The heart beats anyway, from the first minute, because the sinoatrial node inside it has never needed instructions from anyone's brain. Your brain does still get a vote. It cannot start the beat, but it can lean on the pace, speeding the heart up when you sprint and slowing it down when you settle. Think of the sinoatrial node as a drummer who never stops drumming, and the brain as a conductor who can only ask for faster or slower. None of this is free. Cardiac muscle burns oxygen constantly and stores almost nothing in reserve. Block the coronary arteries feeding it and the muscle downstream begins to die within minutes. The organ that keeps every other organ alive is the least forgiving one you have."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is the sinoatrial node, and why do doctors call it the natural pacemaker?",
+            "The passage offers heart transplants as proof. Explain what they prove. Quote the phrase the passage uses about the nerves.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the drummer and conductor comparison in your own words."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the heart's own electricity + the SA node + the cost of needing constant oxygen)",
+            "a patch of specialized cells in the upper right chamber that makes the spark; it sets the pace on its own schedule",
+            "that the heart beats without the brain; quote: they do not reconnect the nerves that once ran to it",
+            "(inform, with detail: it defines terms and explains a mechanism; the opening line and the closing line push a little toward persuade)",
+            "(the SA node makes the beat happen; the brain can only change the speed, not start or stop it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["cardiac → ____", "pacemaker → ____", "reserve → ____", "downstream → ____"],
+          "rows": 1,
+          "answers": [
+            "to do with the heart",
+            "the thing that sets the speed of the beat",
+            "a supply held back for later",
+            "further along the flow, past the blockage"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls the heart the least forgiving organ you have. Explain what that means.",
+            "Why might it be an advantage for the heart to run on its own timing instead of waiting on the brain?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it cannot pause or coast; cut its oxygen off and the damage starts almost at once)",
+            "(inference: the beat cannot be interrupted by injury, sleep, or a distracted brain)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: your body keeps its most important job away from your conscious control. Is that good design or a risk? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Pump That Never Quits",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-heart", "templateLabel": "The Pump That Never Quits", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "heart",
+          "notes": ["Galen taught that the liver made blood and the body used it up", "Harvey's proof was arithmetic, not a microscope", "De Motu Cordis, 1628, about 70 pages", "Malpighi saw the capillaries in 1661", "Roughly 2,000 gallons of blood moved a day", "Something like 60,000 miles of vessels"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Man Who Counted the Blood",
+          "text": "For fourteen hundred years, European doctors believed that blood was food. The theory came from Galen, a Greek physician who treated Roman gladiators and whose word went essentially unquestioned until the 1600s. In Galen's system, the liver manufactured fresh blood out of digested meals and sent it outward through the veins, where the body's tissues soaked it up and consumed it, the way a lamp consumes oil. Blood was made, delivered, and used up. More was made tomorrow. The heart, in this picture, was not really a pump. It was a furnace that warmed the blood and stirred it. William Harvey, an English doctor trained in Italy, killed that idea with arithmetic. Harvey did not begin with a microscope or a grand theory. He began by measuring. He opened hearts and estimated how much blood the left chamber held, then multiplied by how often the heart beat. Even using deliberately cautious numbers, the answer was absurd. The heart pushed out more than the weight of a whole person in blood every hour. The liver could not possibly manufacture that. No meal could supply it. If blood were consumed the way Galen said, a body would need to eat itself several times over before lunch. There was only one way out of the arithmetic. The blood was not being used up at all. It was going around, the same blood, over and over, in a closed circle. Harvey then went looking for the plumbing that a circle would require. He tied off arteries and watched them swell on the side nearest the heart, which meant blood flowed outward through them. He pressed on the veins in a volunteer's arm and found the little valves inside would only let blood travel one direction, toward the heart. He could not see the microscopic vessels linking the two systems, because the lens to see them did not yet exist, and he said so plainly rather than inventing an answer. Four years after Harvey died, Marcello Malpighi put a frog's lung under a microscope and found the capillaries exactly where the arithmetic had insisted they must be. When Harvey published his findings in 1628, in a thin book called De Motu Cordis, the reaction was not applause. Colleagues called him crackbrained. His medical practice shrank. It took roughly twenty years for the profession to concede that a man with a scale and a multiplication problem had overturned fourteen centuries of authority. This is worth sitting with. Harvey's evidence was not exotic. Anyone in Galen's era could have done the same multiplication, using the same hearts and the same clock. Nobody did, because nobody thought the question was open. What Harvey actually contributed was not a discovery so much as a refusal: he checked a number that everyone else had agreed not to check. Your heart moves roughly two thousand gallons of blood a day through something like sixty thousand miles of vessels, and it does this by pushing the same few quarts around a loop, endlessly. You know that only because one stubborn man did the math and trusted it more than he trusted Galen."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain Galen's theory of blood in your own words. Cite the exact image the passage uses to describe how the tissues used blood up.",
+            "Harvey's argument was arithmetic before it was anatomy. Explain the calculation and why it broke Galen's system.",
+            "Identify where the passage stops telling the history and starts making a point about how knowledge works. Quote the sentence that signals the shift.",
+            "The author writes that Harvey's contribution was 'not a discovery so much as a refusal'. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: Harvey overturned centuries of accepted medicine by measuring what nobody had bothered to measure)",
+            "(the liver made blood from food and the body consumed it; cite: the way a lamp consumes oil)",
+            "(chamber volume times heart rate exceeds body weight per hour, so no liver could manufacture it; the blood must recirculate)",
+            "(at: This is worth sitting with.)",
+            "(it reframes discovery as the willingness to question a settled assumption; earned by the point that anyone in Galen's era could have done the same multiplication)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["unquestioned → ____", "concede → ____", "exotic → ____", "capillaries → ____"],
+          "rows": 2,
+          "answers": [
+            "accepted without anyone testing or challenging it",
+            "to admit something is true after resisting it",
+            "unusual, rare, hard to come by",
+            "the microscopic vessels that link arteries to veins"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Harvey admitted he could not see the vessels linking arteries to veins. Explain why admitting that makes his argument stronger rather than weaker.",
+            "The passage says nobody thought the question was open. Name a question people might treat as closed today, and describe how you would actually check it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(he separated what he measured from what he inferred, so the gap was a prediction rather than a fudge; Malpighi later confirmed it)",
+            "(student question + a concrete method or source that could test it)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Harvey was not a better scientist than his colleagues, only a more stubborn one. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

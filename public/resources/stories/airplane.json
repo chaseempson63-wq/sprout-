@@ -1,0 +1,320 @@
+{
+  "key": "airplane",
+  "title": "How Something That Heavy Stays Up",
+  "blurb": "A machine heavier than a house holds itself in the sky by throwing air at the ground, and the hardest part was never the engine.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "How Something That Heavy Stays Up",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-airplane", "templateLabel": "How Something That Heavy Stays Up", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the wings." },
+        {
+          "kind": "image",
+          "imageKey": "airplane",
+          "notes": ["It has two big wings", "It takes off from a runway", "It flies above the clouds", "It is heavier than a house"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an airplane. It is very big and very heavy. But it can fly. The airplane runs fast down a long road. The road is called a runway. Faster. Faster. Then the wings lift it up. Up over the trees. Up over the houses. Up into the clouds. The airplane pushes the air down. The air pushes the airplane up. That is how it flies."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the airplanes in each row. Write how many in the box.",
+          "emoji": "✈️",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "fly    wing" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "airplane", "right": "sky" },
+            { "left": "boat", "right": "water" },
+            { "left": "car", "right": "road" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own airplane. Put some clouds around it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "How Something That Heavy Stays Up",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-airplane", "templateLabel": "How Something That Heavy Stays Up", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "airplane",
+          "notes": ["The first airplane flew in 1903", "The wings push air down so the plane goes up", "A runway is long so the plane can get fast", "Jets fly higher than most mountains", "The fuel is stored inside the wings"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How Something That Heavy Stays Up",
+          "text": "An airplane is heavier than a house. It has no feathers. It does not flap. So how does it get into the sky? The answer is the wings. Each wing is tilted just a little. When the airplane races down the runway, the wings slice through the air and push a huge amount of it downward. The air pushes back. That push is called lift, and lift carries the airplane up. This only works when the airplane is going fast. That is why the runway is so long. The pilot needs room to get up to speed. Once the wheels leave the ground, the wings do the rest."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Why is a runway so long?", "What do the wings do to the air?", "What is the push that carries the airplane up called?"],
+          "rows": 2,
+          "answers": ["so the airplane can get up to enough speed", "they push a huge amount of it downward", "lift"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["An airplane is ____ than a house.", "The wings push the air ____.", "The push that carries the airplane up is called ____.", "The airplane speeds up on a long ____."],
+          "wordBank": ["heavier", "down", "lift", "runway"],
+          "answers": ["heavier", "down", "lift", "runway"]
+        },
+        { "kind": "draw", "prompt": "Draw an airplane taking off. Show the runway underneath it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "How Something That Heavy Stays Up",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-airplane", "templateLabel": "How Something That Heavy Stays Up", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "airplane",
+          "notes": ["First flight: December 17, 1903", "It lasted 12 seconds and went 120 feet", "The Wrights owned a bicycle shop", "They flew gliders first, with no engine", "Kitty Hawk was picked for steady wind and soft sand"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bicycle Shop That Built the First Airplane",
+          "text": "In 1903, two brothers from Ohio built a flying machine in the back of their bicycle shop. Their names were Wilbur and Orville Wright. Plenty of people had tried to fly before them. Most of them thought the secret was a bigger engine. The Wright brothers thought the secret was steering. A machine that goes up but cannot be turned or leveled out is not a flying machine. It is a falling machine with a fan on it. So they practiced. They built gliders with no engine at all and flew them off the sand dunes at Kitty Hawk, North Carolina, again and again, until they could hold the machine steady in the wind. On December 17, 1903, Orville lay flat on the lower wing and took off. That flight lasted twelve seconds and covered about 120 feet, which is shorter than the length of a big passenger jet today. Their fourth flight that day lasted fifty-nine seconds. The world changed on a cold beach in under a minute of flying."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did most other inventors think the secret to flying was?",
+            "What did the Wright brothers think the secret was instead?",
+            "Why did they fly gliders with no engine first?",
+            "Why do you think nobody had solved steering before them?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a bigger engine",
+            "steering, or being able to control the machine",
+            "to learn to hold the machine steady before adding power",
+            "(inference: everyone was busy chasing engines and power instead)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Bicycle Shop That Built the First Airplane", "How to Fix a Bicycle Chain", "The Best Beaches in North Carolina"],
+          "answers": ["The Bicycle Shop That Built the First Airplane"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The Wright brothers ran a ____ shop.", "They flew ____ with no engine to practice steering.", "The first flight lasted ____ seconds."],
+          "wordBank": ["bicycle", "gliders", "twelve"],
+          "answers": ["bicycle", "gliders", "twelve"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: the passage calls it a falling machine with a fan on it. What does that mean, and why is it funny?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "How Something That Heavy Stays Up",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-airplane", "templateLabel": "How Something That Heavy Stays Up", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "airplane",
+          "notes": ["Four forces: lift, weight, thrust, drag", "Roll, pitch, yaw: the three ways a plane turns", "Ailerons roll it, the elevator pitches it, the rudder yaws it", "Flaps let a wing lift more at slow speed", "A loaded jumbo jet can weigh over 400 tons"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Four Forces and Three Turns",
+          "text": "Every airplane in the sky is arguing with four forces at once. Weight pulls it down. Lift holds it up. Thrust pushes it forward. Drag holds it back. When lift matches weight and thrust matches drag, the airplane cruises along steady and level. Change any one of them and the airplane climbs, dives, speeds up, or slows down. Lift is the strange one. A wing does not suck the airplane upward. It works by tilting slightly into the oncoming air and flinging a great mass of that air downward behind it. Air has weight, and pushing it down takes force, so the air pushes back on the wing with exactly the same force. That reaction is lift. Push enough air down, hard enough, and a machine weighing 400 tons rises off a runway. Steering is a separate problem, and it took the Wright brothers years to solve. An airplane can turn three ways at once. It can roll, tipping one wing down, using hinged panels near the wingtips called ailerons. It can pitch, lifting or dropping its nose, using the elevator on the tail. It can yaw, swinging its nose left or right, using the rudder. A pilot uses all three together. Turning an airplane is nothing like turning a car; you bank into the turn and pull the nose around with it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what has to be true about the four forces for an airplane to fly steady and level?",
+            "The passage says a wing does not suck the airplane upward. So what does it actually do?",
+            "Why can an airplane only take off once it is moving fast?",
+            "The passage says turning an airplane is nothing like turning a car. What is the difference?"
+          ],
+          "rows": 2,
+          "answers": [
+            "lift equals weight and thrust equals drag",
+            "it tilts into the air and flings a great mass of air downward, and the air pushes back",
+            "(inference: it has to shove enough air down each second, which needs speed)",
+            "a pilot banks the airplane and pulls the nose around, using all three turns together"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "An airplane flies by balancing four forces and steering in three separate directions",
+            "Airplanes are the fastest way to travel between cities",
+            "The Wright brothers built better bicycles than anyone else"
+          ],
+          "answers": ["An airplane flies by balancing four forces and steering in three separate directions"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["thrust → ____", "drag → ____", "yaw → ____", "bank → ____"],
+          "rows": 1,
+          "answers": [
+            "the force pushing the airplane forward",
+            "the force of the air holding the airplane back",
+            "swinging the nose left or right",
+            "to tip a wing down and lean into a turn"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining lift to someone who has never heard of it. Use the idea of pushing air down, and give one everyday example of a push causing a push back.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "How Something That Heavy Stays Up",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-airplane", "templateLabel": "How Something That Heavy Stays Up", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "airplane",
+          "notes": ["Jets cruise near 35,000 feet, about six miles up", "Cruise speed is around 560 miles per hour", "The jet stream can blow over 100 mph, west to east", "Most jet thrust comes from the big front fan", "The black box is actually bright orange"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Six Miles Up, Where the Air Runs Out",
+          "text": "A passenger jet spends almost its whole trip about six miles above the ground, roughly 35,000 feet. That sounds like showing off. It is actually the whole business plan. Up there the air is thin, and thin air pushes back less. Drag drops away, so the airplane can hold 560 miles an hour while burning far less fuel than the same speed would cost near the ground. Weather is mostly below you. And the strongest tailwinds on Earth live at that altitude: the jet stream, a river of wind that runs west to east at over 100 miles an hour. Riding it is why a flight from Los Angeles to New York is shorter than the same flight coming back. The price of thin air is that engines and people both need it. A jet engine solves this by grabbing enormous quantities of air and squeezing it. A fan the width of a small car pulls air in. Compressor blades pack it down to a fraction of its volume, which makes it fiercely hot. Fuel sprays in and burns. The exhaust blasts backward, and the engine is shoved forward. On a modern engine, most of the thrust does not even come from the burning part; it comes from the big fan bypassing air around the core, like an enormous propeller hidden in a tube. People are harder. At 35,000 feet the outside air is around 65 degrees below zero Fahrenheit and far too thin to breathe. So the cabin is a sealed tube, pumped up with air bled from the engines until it feels like sitting on a mountain about 7,000 feet high. Your ears pop on the way up because the pressure inside the tube is changing, not because the airplane is."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Give two separate reasons the passage offers for why jets cruise so high.",
+            "Where does most of a modern jet engine's thrust come from? Quote the phrase the passage uses to describe it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last sentence. Why do your ears pop if the airplane itself is not changing?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering thin air and speed plus how engines and cabins cope)",
+            "(any two: less drag, less fuel burn, weather is below, the jet stream tailwind)",
+            "the big fan bypassing air around the core; quote: like an enormous propeller hidden in a tube",
+            "(inform, with detail: it explains mechanisms and gives figures; the tone is light but the purpose is explaining)",
+            "(the cabin pressure is being adjusted as the jet climbs, and ears respond to pressure change)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["altitude → ____", "tailwind → ____", "compressor → ____", "bypassing → ____"],
+          "rows": 1,
+          "answers": [
+            "height above the ground",
+            "wind blowing the same way you are traveling, so it speeds you up",
+            "the part that squeezes air into a much smaller space",
+            "going around something instead of through it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls flying high the whole business plan. Explain what that phrase is claiming.",
+            "Thin air helps the wings go fast but gives them less to push on. Why might there be a best height rather than higher always being better?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(altitude is not a stunt, it is what makes long flights affordable)",
+            "(inference: too high and there is not enough air for lift or for the engines, so airlines pick a balance)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: flying is the fastest way to cross a country and one of the heaviest ways to burn fuel. Should we fly less? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "How Something That Heavy Stays Up",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-airplane", "templateLabel": "How Something That Heavy Stays Up", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "airplane",
+          "notes": ["Sir George Cayley named the four forces around 1799", "Lilienthal made about 2,000 glides before dying in 1896", "The Wrights' homemade wind tunnel tested about 200 wings", "Three-axis control was the real invention, not the engine", "The equal transit time explanation of lift is wrong", "Wings are bend-tested far past anything a real flight does"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wrights Did Not Invent the Engine",
+          "text": "By 1900, flight was not a mystery of physics. It was a mystery of nerve. The four forces had been named a century earlier by George Cayley, an English baronet who worked out that a flying machine needed a fixed wing for lift, a separate source of thrust, and a tail to keep it pointed the right way. Engines had become light enough to matter. Otto Lilienthal had made roughly two thousand glides in Germany, hanging beneath a wing and swinging his legs to steer, before a gust stalled him in 1896 and killed him. The pieces were all on the table. Nobody could put them together. Wilbur and Orville Wright ran a bicycle shop in Dayton, Ohio, and bicycles gave them the idea that everyone else had missed. A bicycle is unstable. It stays up only because the rider is constantly correcting it, leaning into turns, making a thousand tiny adjustments a minute without thinking. Every other experimenter was chasing stability: a machine so well balanced it would fly itself. The Wrights decided that was backward. Build a machine that the pilot flies, they reasoned, and then teach the pilot. That decision reorganized everything. It meant control came first and the engine came last. It meant hundreds of flights in gliders with no motor at all, off the dunes at Kitty Hawk, learning the feel of air the way you learn to ride. And it meant inventing three-axis control: warping the wingtips to roll, a forward elevator to pitch, and a movable rudder linked to the warping to hold the turn together. That system, not the engine, is the thing every airplane still uses today. The ailerons on a jet outside your window are doing Wilbur's job. They had one more advantage: they distrusted their sources. When their 1901 glider produced barely a third of the lift the published tables promised, they did not assume they had built it wrong. They built a wind tunnel out of a wooden box and a fan and tested around two hundred miniature wings themselves. The tables were wrong. Their own numbers were right, and the 1902 glider flew on those numbers. On December 17, 1903, at Kill Devil Hills, Orville flew about 120 feet in twelve seconds, less than the length of a modern jumbo jet's fuselage. Newspapers largely ignored it. The brothers kept flying anyway. It is worth noticing what a wing actually does, because the popular explanation is wrong. You have probably been told that air splitting over a curved top has farther to travel, must speed up to meet its partner underneath, and therefore drops in pressure. The parcels have no obligation to meet, and the math does not work. What a wing really does is simpler and more violent. It meets the oncoming air at a slight angle and throws an enormous quantity of it downward. Force in one direction, equal force in the other. Every second a jet is airborne, it is hurling tons of air at the planet, and the planet is holding it up in return. Tilt the wing too far and the flow tears loose from the surface, lift collapses, and the machine stalls. That is what killed Lilienthal, and it is exactly the failure the Wrights had trained themselves to fly out of."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the bicycle insight and why it was the opposite of what everyone else was doing. Cite the sentence that states the Wrights' reasoning.",
+            "The passage claims the Wrights' real invention was not the engine. What evidence does it give for that claim, and is the evidence enough?",
+            "Identify the author's move in the two sentences beginning The pieces were all on the table. What are those short sentences doing at that point?",
+            "The passage spends a paragraph attacking an explanation of lift that most readers were taught. Why put that at the end rather than the beginning?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(everyone chased self-flying stability; the Wrights built something the pilot controls; cite: Build a machine that the pilot flies, they reasoned, and then teach the pilot)",
+            "(three-axis control is still used on every airplane, and the ailerons on a modern jet do the same job; strong evidence, though it downplays the propeller and engine work they also did)",
+            "(they compress the setup and create a pause; the flat rhythm sets up the Wrights as the answer)",
+            "(the reader has to trust the history first; correcting a schoolbook belief lands harder once the passage has earned credibility)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["unstable → ____", "warping → ____", "three-axis control → ____", "stall → ____"],
+          "rows": 2,
+          "answers": [
+            "not naturally staying balanced, needing constant correction",
+            "twisting the shape of a wingtip to make the airplane roll",
+            "steering an aircraft in roll, pitch, and yaw at the same time",
+            "the sudden loss of lift when a wing is tilted too steeply and the airflow tears away"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the Wrights distrusted their sources and rebuilt the lift tables themselves. Explain why that habit mattered more than any single part they built.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(testing beats trusting; every later design depended on having correct data rather than inherited errors)",
+            "(student question plus a credible source type, such as an aerodynamics text or a museum archive)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: the Wright brothers were not the greatest inventors of their age, just the most patient testers. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

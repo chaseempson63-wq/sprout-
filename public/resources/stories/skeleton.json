@@ -1,0 +1,315 @@
+{
+  "key": "skeleton",
+  "title": "The Skeleton That Rebuilds Itself",
+  "blurb": "The 206 bones inside you are alive, and they tear themselves down and build themselves back up your whole life.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Skeleton That Rebuilds Itself",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-skeleton", "templateLabel": "The Skeleton That Rebuilds Itself", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the head. Find the legs." },
+        {
+          "kind": "image",
+          "imageKey": "skeleton",
+          "notes": ["Bones are hard", "Your bones are inside you", "Bones hold you up", "All your bones together are your skeleton"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Put your hand on your arm. Press it. Feel something hard inside? That is a bone. You have bones all through you. Bones hold you up. Bones let you jump and wave and dance. All your bones together are called your skeleton. You have had yours since the day you were born."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bones in each row. Write how many in the box.",
+          "emoji": "🦴",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bone    jump" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each bone to where it lives.",
+          "pairs": [
+            { "left": "skull", "right": "head" },
+            { "left": "ribs", "right": "chest" },
+            { "left": "spine", "right": "back" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw yourself jumping. Draw the long bones in your legs.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Skeleton That Rebuilds Itself",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-skeleton", "templateLabel": "The Skeleton That Rebuilds Itself", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "skeleton",
+          "notes": ["Your skull is a helmet of bone", "Your ribs are a cage", "Bones are alive and they grow", "A baby has about 300 bones", "A grown-up has 206"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Skeleton That Rebuilds Itself",
+          "text": "Feel the top of your head. Knock on it gently. That hard round part is your skull. It is a helmet made of bone, and it keeps your brain safe. Now feel your chest. Those bumpy lines are your ribs. They make a cage around your heart and lungs. Bones are not soft, but they are alive. They grow while you grow. When you were a baby, you had about 300 bones. Some of them joined together as you got bigger. Grown-ups have 206."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does your skull keep safe?", "What do your ribs go around?", "How many bones does a grown-up have?"],
+          "rows": 2,
+          "answers": ["your brain", "your heart and lungs", "206"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Your ____ is a helmet of bone.", "Your ribs make a ____ around your heart.", "Bones are hard, but they are ____.", "A baby has about ____ bones."],
+          "wordBank": ["skull", "cage", "alive", "300"],
+          "answers": ["skull", "cage", "alive", "300"]
+        },
+        { "kind": "draw", "prompt": "Draw a big skull. Give it a jaw that can open and close.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Skeleton That Rebuilds Itself",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-skeleton", "templateLabel": "The Skeleton That Rebuilds Itself", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "skeleton",
+          "notes": ["206 bones in a grown-up body", "The femur is the longest bone", "The smallest bone is inside your ear", "Marrow inside your bones makes blood", "Your hands and feet hold over half your bones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Frame You Are Wearing",
+          "text": "Your skeleton has three jobs, and it does all of them at once. The first job is holding you up. Without bones you would fold onto the floor like a coat with no hanger. The second job is armor. Your skull is a hard case around your brain. Your ribs curve around your heart and lungs like the bars of a cage. The third job is moving. Bones cannot move by themselves. Muscles pull on them, and the bones swing at the joints, the places where two bones meet. Here is the part people forget. Bones are alive. Blood runs through them. Inside the big ones is a soft middle called marrow, and marrow makes new blood for you every second of the day. Your longest bone is in your thigh. It is called the femur. Your smallest bone is deep inside your ear, and it is about the size of a grain of rice. Your hands and feet are packed with small bones. Together they hold more than half of all the bones in your body."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are the three jobs of your skeleton?",
+            "What is a joint?",
+            "What does marrow do?",
+            "Why do you think your skull is one hard case instead of many soft pieces?"
+          ],
+          "rows": 2,
+          "answers": [
+            "holding you up, armor, and moving",
+            "a place where two bones meet",
+            "it makes new blood every second",
+            "(inference: a hard case protects the brain from bumps)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Frame You Are Wearing", "How to Build a Bird Cage", "The Story of the First Doctor"],
+          "answers": ["The Frame You Are Wearing"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The longest bone in your body is the ____.", "Two bones meet at a ____.", "The soft middle of a big bone is called ____."],
+          "wordBank": ["femur", "joint", "marrow"],
+          "answers": ["femur", "joint", "marrow"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which job of the skeleton surprised you most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Skeleton That Rebuilds Itself",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-skeleton", "templateLabel": "The Skeleton That Rebuilds Itself", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "skeleton",
+          "notes": ["Living bone is warm and slightly bendy", "Collagen bends, minerals resist crushing", "Osteoclasts remove bone, osteoblasts build it", "Your skeleton is replaced about every 10 years", "Astronauts lose bone because nothing loads it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Skeleton That Rebuilds Itself",
+          "text": "Picture a bone and you probably picture something dry and dead, the kind of thing hanging in a science classroom. A living bone is nothing like that. It is warm. It is slightly flexible. It is threaded with blood vessels and nerves, which is exactly why a broken one hurts so much. A bone is built from two materials working together. Collagen, a stretchy protein, gives it the ability to bend a little instead of shattering. Hard minerals, mostly calcium, give it the strength to carry your weight. Rope alone would be too floppy. Chalk alone would snap. Bone is both at once, which is why, ounce for ounce, it can take more squeezing force than steel can. Stranger still, your skeleton never sits still. Two kinds of cells work on it every day of your life. Osteoclasts crawl along the bone and dissolve small patches of it away. Osteoblasts follow behind and lay down fresh bone in the gaps. The demolition crew and the construction crew work the same site, forever. Little by little, the old material is swapped out for new. Most of your skeleton is replaced roughly every ten years. The bones you have now are not the bones you had in kindergarten, even though they have kept the same shape the whole time. This constant rebuilding lets bone respond to what you ask of it. Load a bone by running, jumping, or lifting, and the building crew thickens it where the force lands. Stop loading it, and the crew stops bothering. Astronauts learn this the hard way. In orbit, where nothing weighs anything, their bones lose mass month after month, so they strap themselves to machines and exercise for hours a day just to keep the skeleton they arrived with."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why does a broken bone hurt, according to the passage?",
+            "Explain why bone needs both collagen and minerals instead of just one.",
+            "What is the difference between what osteoclasts do and what osteoblasts do?",
+            "Astronauts exercise for hours a day in orbit. Using the passage, explain why that is necessary."
+          ],
+          "rows": 2,
+          "answers": [
+            "bone is threaded with blood vessels and nerves",
+            "collagen bends so it does not shatter and minerals resist crushing; rope alone is floppy and chalk alone snaps",
+            "osteoclasts dissolve old bone away, osteoblasts lay down fresh bone",
+            "(inference: nothing loads their bones in orbit, so the building crew stops thickening them and bone is lost)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Bone is a living material that is torn down and rebuilt all your life, and it responds to how hard you use it",
+            "Bones are dry mineral rods that never change after you are born",
+            "Astronauts are the only people whose bones ever change"
+          ],
+          "answers": ["Bone is a living material that is torn down and rebuilt all your life, and it responds to how hard you use it"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["collagen → ____", "osteoblast → ____", "flexible → ____"],
+          "rows": 1,
+          "answers": ["a stretchy protein that lets bone bend a little", "a cell that lays down fresh bone", "able to bend without breaking"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says bone gets stronger where it is worked. What would you tell a friend who wants strong bones, and why? Give two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Skeleton That Rebuilds Itself",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-skeleton", "templateLabel": "The Skeleton That Rebuilds Itself", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "skeleton",
+          "notes": ["Long bones are hollow tubes, not solid rods", "Inside the ends is a lattice of fine struts", "The struts line up with the paths force takes", "Wolff's law: bone adapts to the load it carries", "A tennis player's serving arm is denser", "Broken bone rebuilds, it does not scar"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built by the Load",
+          "text": "Saw a thigh bone in half and you find it is not solid. The outer wall is dense and compact, but the interior is a lattice of thin struts and open spaces, like the inside of a sponge frozen in place. This looks like a weakness. It is the opposite. Solid bone that thick would be far too heavy to carry around, and the open design gives nearly the same strength for a fraction of the mass. Engineers copied the idea for bridges and aircraft long after bone had settled on it. Look closer at those struts and the design gets sharper. They are not scattered at random. They run along the exact lines that force travels through the bone. In the head of the femur, where your body weight turns a corner to enter your leg, the struts fan out in curving arcs that trace the path of the load. A nineteenth century anatomist named Julius Wolff noticed that these arcs matched the stress diagrams engineers drew for loaded structures. The rule that carries his name says that bone adapts to the forces placed on it: bone that is worked gets stronger, and bone that is left idle gets thinner. That rule only works because bone is alive and under constant renovation. Osteoclasts dissolve old material and osteoblasts rebuild it. Where a bone is loaded, the rebuilding crew outpaces the demolition crew and the structure thickens. Where a bone is idle, the balance tips the other way. A tennis player's serving arm carries visibly denser bone than the other arm. An astronaut in orbit, weightless and therefore unloaded, sheds bone mass at roughly one percent a month, faster than most people lose it in a year on the ground. The same living quality explains something you may take for granted. When you cut your skin, it heals with scar tissue, a patch that seals the gap but never restores what was there. Bone does not settle for that. A break is bridged first by a soft collar of cartilage, then hardened into bone, then slowly reshaped over months until the repair matches the original architecture, struts and all. A well healed bone is not patched. It is rebuilt. So the skeleton is not the frame you were issued at birth and have been carrying ever since. It is a structure that reads the forces you put through it and quietly redesigns itself to match."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why is a hollow bone with a lattice inside better than a solid one? Give the reason the passage gives.",
+            "State Wolff's law in your own words, then quote the phrase the passage uses to describe what happens to idle bone.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain how the tennis player and the astronaut are being used as evidence for the same idea."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the lattice architecture, Wolff's law, and constant rebuilding)",
+            "solid bone that thick would be far too heavy, and the open design gives nearly the same strength for a fraction of the mass",
+            "(bone adapts to the forces placed on it; quote: bone that is left idle gets thinner)",
+            "(inform, with detail: it defines terms and gives evidence, though the closing lines lean persuasive)",
+            "(both show load controls bone density: more load builds it up, no load strips it away)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["lattice → ____", "renovation → ____", "idle → ____", "architecture → ____"],
+          "rows": 1,
+          "answers": [
+            "a criss-cross network of thin struts with spaces between",
+            "the constant tearing down and rebuilding of a structure",
+            "not being used or loaded",
+            "the arrangement and structure of something built"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a well healed bone is not patched, it is rebuilt. Explain the difference in your own words.",
+            "Why might a doctor ask someone with a healing broken leg to start putting weight on it again as soon as it is safe?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(a patch just seals the gap; rebuilding restores the original structure, struts and all)",
+            "(inference: load tells the rebuilding crew to thicken the bone, so weight helps it recover strength)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should schools be required to give students time for hard physical activity every day? Take a position and support it with two reasons drawn from this passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Skeleton That Rebuilds Itself",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-skeleton", "templateLabel": "The Skeleton That Rebuilds Itself", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "skeleton",
+          "notes": ["Bone is a composite: collagen plus calcium mineral", "About a tenth of the skeleton is rebuilt each year", "99 percent of body calcium is stored in bone and teeth", "Marrow makes roughly 2 million red blood cells a second", "Wolff's law: bone adapts to the loads it carries", "The hyoid is the only bone joined to no other bone"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Skeleton Is Not a Frame",
+          "text": "The skeleton in the corner of a science classroom is a lie, or at least a very poor translation. It is dry, still, and mineral, and it teaches you to think of your bones as scaffolding: inert poles that hold the interesting parts in place. Almost every part of that impression is wrong. Bone is a living tissue, richly supplied with blood and nerves, rebuilt continuously from the day you are born, and it is doing at least three jobs at once, two of which have nothing to do with holding you up. Start with the material. Bone is a composite, which means it is two substances that fail in different ways, combined so that neither failure happens. The first is collagen, a protein laid down in fibers, tough and slightly elastic. The second is a calcium mineral packed into and around those fibers, rigid and enormously resistant to being crushed. Collagen alone would be rope. Mineral alone would be chalk. Together they produce a material that resists both bending and crushing at a weight your muscles can actually move, and engineers have spent decades trying to imitate the arrangement. Then look at the architecture, because the shape is as clever as the substance. The shaft of a long bone is a hollow tube, and a hollow tube resists bending almost as well as a solid rod of the same width at a fraction of the weight. Inside the ends, where forces arrive from odd angles, bone abandons the tube and builds a lattice of fine struts aligned along the paths that stress actually takes. The nineteenth century anatomist Julius Wolff noted that this pattern matched the stress trajectories engineers calculated for loaded structures, and the principle now named after him holds that bone adapts to the loads it carries. A tennis player's serving arm is measurably denser than the other. An astronaut, unloaded in orbit, loses bone at around one percent a month. That responsiveness is possible only because the skeleton is under permanent renovation. Osteoclasts dissolve old bone and osteoblasts deposit new. Roughly a tenth of your skeleton is torn down and rebuilt each year, so that over about a decade the structure is quietly replaced without ever once ceasing to work. This is where the second job hides. Your nerves fire and your heart beats only if the calcium concentration in your blood stays inside a narrow band, and about ninety nine percent of your body's calcium is locked in your bones and teeth. When blood calcium falls, hormones instruct the osteoclasts to open the vault. Your skeleton is not only a structure. It is a bank, and the bank will be robbed to keep the chemistry alive, because a body with slightly weaker bones survives, and a body with the wrong blood calcium does not. The third job runs in the hollow you have already been introduced to. Inside your larger bones sits marrow, and marrow is a factory producing red blood cells at a rate of roughly two million per second, every second, for your whole life. The organ that holds you upright is also the organ that stocks your blood. Hold all three jobs together and the skeleton stops looking like a frame. It is a load bearing structure, a chemical reserve, and a blood factory, built from the same material, competing for the same material, and constantly renegotiating the settlement between them. You are not carrying your skeleton around. It is carrying you, and it is arguing with itself the entire time."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what a composite is and why bone needs to be one. Cite the two sentences the author uses to make the point.",
+            "The author says the classroom skeleton is a lie, or at least a very poor translation. Explain what is meant by translation here, and why that softening matters.",
+            "Explain the conflict between the skeleton's first job and its second job. Cite the evidence.",
+            "Analyze the final sentence. What is the author doing by ending on it, and has the passage earned that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering structure, calcium storage, and blood production)",
+            "(two materials that fail differently, combined so neither failure happens; cite: Collagen alone would be rope. Mineral alone would be chalk.)",
+            "(the model is not false but loses the living qualities; the softening concedes the model is useful while still wrong)",
+            "(structure wants mineral kept in place, but blood chemistry withdraws it; cite: the bank will be robbed to keep the chemistry alive)",
+            "(it reverses the reader's assumption of ownership and personifies the skeleton as an active negotiator; earned by the three competing jobs already shown)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["composite → ____", "inert → ____", "trajectories → ____", "renegotiating → ____"],
+          "rows": 2,
+          "answers": [
+            "a material made of two substances combined so each covers the other's weakness",
+            "not active, not living, doing nothing on its own",
+            "the paths that forces or moving things follow",
+            "settling an arrangement again, on new terms"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a body with slightly weaker bones survives. Explain what trade-off the body is making and why it makes sense.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it spends long-term bone strength to protect short-term blood chemistry, because the chemistry failure kills you first)",
+            "(student question plus a credible source type, such as a physiology text or a bone researcher)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Calling the skeleton a frame is not just simple, it is actively misleading. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

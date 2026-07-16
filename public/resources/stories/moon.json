@@ -1,0 +1,337 @@
+{
+  "key": "moon",
+  "title": "The Moon Only Shows Us One Face",
+  "blurb": "Why the same side of the Moon always faces Earth, and what was hiding on the side nobody had ever seen.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Moon Only Shows Us One Face",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-moon", "templateLabel": "The Moon Only Shows Us One Face", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the moon." },
+        {
+          "kind": "image",
+          "imageKey": "moon",
+          "notes": ["It shines in the night sky", "It is made of rock, not cheese", "It does not make its own light", "The sun shines on it", "It goes around and around the Earth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up at night. There is the moon. The moon is round and bright. But the moon does not make its own light. The sun shines on it. That is why it glows. The moon goes around and around the Earth. It turns slowly as it goes. So we always see the same side. The moon has a back we never see. No one standing on Earth has ever seen it. Spaceships have. They flew all the way around and took pictures of it."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "moon    night" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "moon", "right": "night" },
+            { "left": "sun", "right": "day" },
+            { "left": "rocket", "right": "space" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the moon in the night sky. Add some stars.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Moon Only Shows Us One Face",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-moon", "templateLabel": "The Moon Only Shows Us One Face", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "moon",
+          "notes": ["The moon is a big ball of rock", "It goes around Earth once a month", "The sun lights it up", "The moon is really gray, not white", "The same side always faces us"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Moon Only Shows Us One Face",
+          "text": "The moon is our neighbor in space. It is a big ball of rock. It goes around the Earth once a month. The moon looks bright, but it does not glow on its own. It is really gray, like an old road. The sun lights it up, the way a lamp lights up your face in a dark room. Here is the strange part. The moon spins slowly as it circles us. It spins just fast enough that the same side always points at Earth. The other side stays hidden. People on Earth watched the moon for thousands of years and never once saw its back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the moon made of?",
+            "How often does the moon go around the Earth?",
+            "Why does the moon look bright at night?",
+            "Which side of the moon do we see?"
+          ],
+          "rows": 2,
+          "answers": ["rock", "once a month", "the sun lights it up", "always the same side"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The moon is a big ball of ____.", "The sun ____ it up.", "The moon ____ slowly as it circles us.", "The other side stays ____."],
+          "wordBank": ["rock", "lights", "spins", "hidden"],
+          "answers": ["rock", "lights", "spins", "hidden"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "the moon", "right": "goes around the Earth" },
+            { "left": "the sun", "right": "makes its own light" },
+            { "left": "the Earth", "right": "the place we live" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the side of the moon nobody on Earth can see. What do you think is there?", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Moon Only Shows Us One Face",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-moon", "templateLabel": "The Moon Only Shows Us One Face", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "moon",
+          "notes": ["The Moon is about 239,000 miles away", "It circles Earth in about 27 days", "It spins once each time it circles", "The dark patches are old hardened lava", "Luna 3 photographed the far side in 1959"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Side Nobody Had Seen",
+          "text": "For as long as people have looked up, the Moon has shown us the same face. The dark patches make the same shapes every night. Your great-great-grandparents saw the exact same Moon face that you see. Nobody planned this. It happens because the Moon spins. It turns around once every time it circles the Earth, and those two motions match perfectly. Imagine walking a full circle around a chair while always keeping your eyes on it. You turn all the way around, but the chair only ever sees your front. The Moon does that to us. In 1959, a small Soviet spacecraft called Luna 3 flew behind the Moon and took the first photographs of the hidden side. The pictures were blurry. They were also a shock. The near side is covered in wide dark plains of old hardened lava. The far side has almost none. It is crowded with craters instead, rough and pale and beaten up. The two halves of the Moon do not match, and scientists are still working out why."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What makes us always see the same side of the Moon?",
+            "What did Luna 3 do in 1959?",
+            "How is the far side different from the near side?",
+            "Why do you think the first pictures of the far side shocked scientists?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it turns around once every time it circles the Earth",
+            "it flew behind the Moon and took the first photographs of the hidden side",
+            "it has almost no dark lava plains and is crowded with craters",
+            "(inference: they expected it to look like the near side, and it did not)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Side Nobody Had Seen", "How to Build a Telescope", "The Biggest Ocean on Earth"],
+          "answers": ["The Side Nobody Had Seen"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The dark patches are plains of old hardened ____.", "A spacecraft called ____ 3 took the first pictures.", "The far side is crowded with ____."],
+          "wordBank": ["lava", "Luna", "craters"],
+          "answers": ["lava", "Luna", "craters"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you could fly behind the Moon and look at the far side yourself, what would you want to find, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Moon Only Shows Us One Face",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-moon", "templateLabel": "The Moon Only Shows Us One Face", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moon",
+          "notes": ["Tidal locking: it spins once per orbit", "Gravity stretches the Moon into an egg shape", "The Moon drifts 3.8 cm farther away each year", "Apollo crews left mirrors for measuring with lasers", "Its gravity is about one sixth of Earth's", "Ocean tides are the same force working in reverse"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Locked in Step",
+          "text": "The Moon has not always shown us one face. Billions of years ago it spun much faster, turning several times during each trip around the Earth. Anyone standing on the early Earth would have watched the whole Moon rotate past, front and back. Then gravity went to work. Earth pulls on the Moon, and it does not pull evenly. The near side of the Moon feels a slightly stronger tug than the far side, so the whole body of the Moon stretches a little into an egg shape. When the Moon spun, that bulge had to keep shifting through the rock to stay pointed at Earth, and shifting rock creates friction. Friction bleeds away energy. Over millions of years the spin slowed, and slowed, until the Moon turned exactly once per orbit. Then the bulge no longer had to move, the friction stopped, and the Moon settled there. Scientists call this tidal locking, and it is common. Almost every large moon in the solar system is locked to its planet. The same force works on us in reverse. The Moon tugs Earth's oceans into bulges, which we call tides, and the friction of those tides is slowly slowing Earth's spin. That energy has to go somewhere, and it goes into the Moon's orbit, pushing the Moon steadily outward. Astronauts left mirrors on the surface, and lasers fired at them from Earth measure the distance exactly. The answer: the Moon drifts about 3.8 centimeters farther away every year, roughly the rate your fingernails grow."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is tidal locking, in your own words?",
+            "Why did the Moon's early spin slow down? Use the words bulge and friction.",
+            "The passage says the energy Earth's spin loses goes into the Moon's orbit. What does that do to the Moon?",
+            "Why do you think scientists needed mirrors on the Moon to measure a change as small as 3.8 centimeters?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(spinning once per orbit, so the same face always points at the planet)",
+            "the bulge had to keep shifting through the rock, and that friction bled away energy",
+            "it pushes the Moon steadily outward, about 3.8 centimeters a year",
+            "(inference: the distance is huge and the change is tiny, so they needed an exact way to measure it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Friction from gravity slowed the Moon's spin until one face locked toward Earth, and the same force is now pushing the Moon away",
+            "The Moon is made entirely of iron and is getting hotter",
+            "Astronauts travel to the Moon every year to replace the mirrors"
+          ],
+          "answers": ["Friction from gravity slowed the Moon's spin until one face locked toward Earth, and the same force is now pushing the Moon away"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["tidal locking → ____", "friction → ____", "orbit → ____"],
+          "rows": 1,
+          "answers": [
+            "turning once per trip around, so one face always points at the planet",
+            "the drag made when rock or surfaces rub and flex against each other",
+            "the path one object travels around another"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the Moon is leaving us at about the speed your fingernails grow. Does a change that slow still matter? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Moon Only Shows Us One Face",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-moon", "templateLabel": "The Moon Only Shows Us One Face", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moon",
+          "notes": ["Maria: dark basalt plains, Latin for seas", "Maria cover a third of the near side, about 1% of the far side", "The Moon formed about 4.5 billion years ago", "Giant impact: a body the size of Mars struck the young Earth", "Moon rock and Earth rock share nearly identical oxygen isotopes", "The far side crust is roughly twice as thick"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Two Halves Do Not Match",
+          "text": "Ask someone to draw the Moon and they will draw the face we know: bright highlands broken by wide dark patches. Those patches are called maria, from the Latin word for seas, because the first astronomers with telescopes assumed they were oceans. They are not water. They are basalt, hardened floods of lava that welled up through the crust billions of years ago and pooled in enormous impact basins. Maria cover roughly a third of the near side. On the far side they cover about one percent. That difference is one of the strangest facts in the solar system, and it needs explaining. The leading answer starts with the Moon's birth. About 4.5 billion years ago, when the solar system was still a shooting gallery, a body roughly the size of Mars struck the young Earth. The collision threw a vast plume of vaporized rock into orbit, and out of that glowing ring the Moon assembled itself. The evidence is chemical. Moon rock and Earth rock share nearly identical oxygen isotopes, as if they were cut from the same cloth, and the Moon carries only a small iron core because most of the iron stayed behind inside Earth. Then the Moon locked into step with us, and the locking may explain the lopsidedness. Because the near side has always faced an Earth that was, at the beginning, still glowing with the heat of the impact, that hemisphere stayed warmer for longer. The far side radiated its heat into empty space, cooled faster, and built a thicker crust, in places more than twice the depth. Later, when magma tried to rise, it broke through the thin near-side crust easily and flooded the basins there. On the far side it mostly could not get out. The result is a Moon with two personalities: one smooth and dark and turned toward us, one pale and battered and permanently turned away. Nobody knew this until 1959, when Luna 3 sent back its grainy photographs, and half the Moon stopped being a mystery and started being a puzzle."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What are maria, and why were they given a name that means seas?",
+            "What two pieces of chemical evidence support the giant impact idea? Quote the phrase the passage uses to describe how alike the rock is.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain, step by step, how tidal locking could have made the far side crust thicker."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering maria + the giant impact + the crust asymmetry)",
+            "hardened basalt lava plains; early astronomers with telescopes thought the dark patches were oceans",
+            "matching oxygen isotopes and the Moon's small iron core; quote: cut from the same cloth",
+            "(inform, with detail: it defines terms, presents evidence, and admits what is still uncertain)",
+            "(the near side kept facing a hot young Earth and stayed warm; the far side cooled faster and hardened into a thicker crust)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["maria → ____", "basalt → ____", "isotopes → ____", "hemisphere → ____"],
+          "rows": 1,
+          "answers": [
+            "the dark lava plains on the Moon, named with the Latin word for seas",
+            "a dark rock formed from cooled lava",
+            "forms of the same element that can be compared between rocks",
+            "one half of a round body like a moon or a planet"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says half the Moon stopped being a mystery and started being a puzzle. Explain the difference between those two words here.",
+            "Why would a thicker crust stop lava from reaching the surface?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(a mystery is unseen and unknown; a puzzle is seen but not yet explained)",
+            "(inference: rising magma has more rock to break through, so it cools and stalls before it gets out)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should countries spend money sending people back to the Moon? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Moon Only Shows Us One Face",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-moon", "templateLabel": "The Moon Only Shows Us One Face", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moon",
+          "notes": ["Diameter 3,475 km, about a quarter of Earth's", "Libration lets us see about 59% of the surface", "There is no permanently dark side", "Retreating 3.8 cm per year, measured by laser", "The Sun is about 400x wider and about 400x farther away", "Luna 3 saw the far side first, in 1959"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Face We Were Given",
+          "text": "There is no dark side of the Moon. The phrase is one of the most successful errors in the English language. Every part of the Moon's surface receives sunlight, and the far side gets exactly as much as the side you can see, just on a different schedule. What the far side lacks is not light. It is us. It has never had a view of Earth, and until 1959 Earth had never had a view of it. The reason is a slow, patient piece of physics called tidal locking. Earth's gravity does not pull on the Moon evenly. The near side is closer, so it feels a stronger tug, and the Moon's whole body is stretched slightly along the line between us. Early in its history the Moon spun quickly, which meant that stretched bulge had to travel continuously through the rock to stay aimed at Earth. Flexing rock generates friction, friction drains rotational energy, and after some millions of years the spin had bled down to a single turn per orbit. At that point the bulge no longer had to move. The system reached its lowest-energy arrangement and stopped there. This is not a coincidence and it is not rare. Nearly every large moon in the solar system is locked to its planet, for exactly the same reason. The lock is not perfect. The Moon's orbit is slightly elliptical, so it speeds up and slows down as it travels, while its rotation stays steady. The two fall in and out of step, and the Moon appears to rock gently back and forth, a motion called libration. Over the course of a month that rocking lets us peek a little way around each edge. Add up the peeking and we can see about 59 percent of the surface from Earth. The remaining 41 percent stayed genuinely unseen until Luna 3 flew behind it, and what came back was not the Moon anyone expected. The near side is dominated by maria, dark basalt plains that flooded ancient impact basins and cover roughly a third of the hemisphere. The far side has barely one percent. It is instead a crowded field of craters, pale and unrelieved. The best explanation ties back to the locking. Because the Moon has always faced an Earth that was, at the beginning, still glowing from the impact that created the Moon in the first place, the near side stayed hot for longer. The far side radiated its heat into empty space and built a thicker crust, in places double the depth. When magma later rose, it broke through the thin side easily and never made it through the thick one. The Moon we look at and the Moon we do not are two different worlds, and the difference exists because of which way it happened to be pointed. None of this is decoration. The Moon is about a quarter of Earth's diameter, which is absurd for a planet our size, and that mass acts as a gyroscopic anchor. Many scientists argue that without it, Earth's tilt would wander far more than the couple of degrees it currently wobbles, and our seasons would wander with it. The same tides that locked the Moon are also, in reverse, slowing us down. Earth's day is lengthening by a fraction of a second per century, and the rotation we lose is handed to the Moon's orbit. Mirrors left on the surface by Apollo crews let us measure the result with lasers. The Moon is retreating from us at 3.8 centimeters a year. Which means the sky you were born under is temporary. Right now the Moon and the Sun happen to appear almost exactly the same size from Earth, because the Sun is about four hundred times wider and about four hundred times farther away. That coincidence is the only reason a total solar eclipse is possible. It is also expiring. Given enough time the Moon will be too far away to cover the Sun completely, and the last total eclipse on Earth will happen without an audience that knows it is the last. We arrived in the narrow window when the arithmetic works."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage calls the dark side of the Moon an error. Explain what is actually true, and cite the exact phrase the author uses to describe how widespread the error is.",
+            "Explain tidal locking as a process that ends. Why does it stop once the Moon turns once per orbit?",
+            "What is libration, and why does it produce the number 59 rather than 50?",
+            "Find where the passage turns from explaining to arguing. Quote the sentence and explain the shift.",
+            "Analyze the final sentence. What is the author claiming about our place in time, and does the passage earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the far side gets just as much sunlight; cite: one of the most successful errors in the English language)",
+            "(once it turns once per orbit the bulge stops moving, so there is no more flexing, no more friction, and no more energy to lose)",
+            "(the Moon rocks back and forth because its orbit speed changes while its spin does not, letting us peek around each edge)",
+            "(at None of this is decoration; the author stops describing and starts insisting the Moon matters to us)",
+            "(that we live in a brief window when the Moon is the right distance for total eclipses; supported by the 400x arithmetic and the 3.8 cm retreat)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["libration → ____", "maria → ____", "elliptical → ____", "unrelieved → ____"],
+          "rows": 2,
+          "answers": [
+            "the Moon's gentle rocking that reveals a little past each edge",
+            "the dark basalt plains that flooded ancient impact basins",
+            "shaped like a stretched circle rather than a perfect one",
+            "unbroken, with nothing to interrupt the sameness"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the Moon acts as a gyroscopic anchor for Earth's tilt. Explain why a steady tilt would matter to life here.",
+            "The author writes that the Moon's size is absurd for a planet our size. What is that word doing, and is it fair?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a steady tilt means steady seasons and a stable climate; a wandering tilt would swing conditions wildly)",
+            "(it flags how unusual the Moon is compared to other moons; fair as emphasis, though it is opinion not measurement)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The eclipse coincidence is just arithmetic, so it means nothing. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

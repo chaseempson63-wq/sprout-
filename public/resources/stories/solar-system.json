@@ -1,0 +1,320 @@
+{
+  "key": "solar-system",
+  "title": "Eight Worlds Around One Star",
+  "blurb": "How a cold cloud of dust became a sun, eight planets, and a whole lot of leftovers.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "Eight Worlds Around One Star",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to each planet in the picture as you go.",
+      "meta": { "templateId": "story-solar-system", "templateLabel": "Eight Worlds Around One Star", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the Sun. Now find Earth." },
+        {
+          "kind": "image",
+          "imageKey": "solar-system",
+          "notes": ["The Sun is a star", "Eight planets go around it", "We live on Earth", "Earth is the blue one", "Jupiter is the biggest planet"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "The Sun is a star. It is big and hot and bright. Eight planets go around the Sun. Earth is one of them. Earth is the one we live on. The planets go around and around. They never stop. Some planets are close to the Sun. Some are very far away. Our Sun keeps them all near."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the planets in each row. Write how many in the box.",
+          "emoji": "🪐",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sun    star" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "the Sun", "right": "a star" },
+            { "left": "Earth", "right": "where we live" },
+            { "left": "the Moon", "right": "goes around Earth" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the Sun. Then draw Earth going around it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "Eight Worlds Around One Star",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-solar-system", "templateLabel": "Eight Worlds Around One Star", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "solar-system",
+          "notes": ["The four near planets are rock", "The four far planets are giants", "Jupiter is the biggest one", "Saturn has rings of ice", "One trip around the Sun is a year"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Eight Worlds Around One Star",
+          "text": "Our Sun is a huge ball of hot, glowing gas. It is so big that more than a million Earths could fit inside it. Eight planets travel around the Sun. The four closest ones are made of rock. Earth is one of those. The four far ones are giants made mostly of gas and ice. Jupiter is the biggest of all. Nothing pushes the planets along. They just keep going. The Sun pulls on them, and that pull bends their path into a loop. We call one trip around the Sun a year."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many planets go around the Sun?", "What are the four closest planets made of?", "Which planet is the biggest?", "What do we call one trip around the Sun?"],
+          "rows": 2,
+          "answers": ["eight", "rock", "Jupiter", "a year"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The Sun is a huge ball of hot ____.", "Eight ____ travel around the Sun.", "The far planets are ____.", "The Sun ____ on the planets."],
+          "wordBank": ["gas", "planets", "giants", "pulls"],
+          "answers": ["gas", "planets", "giants", "pulls"]
+        },
+        { "kind": "draw", "prompt": "Draw the Sun in the middle. Draw four planets going around it. Make one of them Earth.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "Eight Worlds Around One Star",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-solar-system", "templateLabel": "Eight Worlds Around One Star", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "solar-system",
+          "notes": ["The Sun holds almost all the mass here", "Mercury takes 88 days to lap the Sun", "Neptune takes 165 years", "The asteroid belt sits between Mars and Jupiter", "Jupiter is heavier than the other seven put together"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Planets Never Stop",
+          "text": "Look up at night and the sky seems still. It is not. Everything up there is moving, and the Sun is the reason.\n\nOur solar system is one star plus everything caught in its pull. Eight planets circle the Sun. The four nearest are small and rocky: Mercury, Venus, Earth, and Mars. Then comes a wide gap holding millions of chunks of rock, called the asteroid belt. Past the gap sit the four giants: Jupiter, Saturn, Uranus, and Neptune. Jupiter alone is heavier than all the other planets put together.\n\nNothing pushes the planets. In space there is almost nothing to slow them down, so they keep the speed they started with. Gravity from the Sun tugs them sideways, and that steady tug bends a straight path into a loop. The planets are falling toward the Sun and missing it, over and over, forever.\n\nThe closer a planet sits, the faster it has to move. Mercury finishes a lap in 88 days. Neptune needs 165 Earth years. Nobody born on Neptune would live long enough to have a first birthday."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name the four rocky planets in order from the Sun.",
+            "What sits in the gap between Mars and Jupiter?",
+            "What keeps the planets from flying off in a straight line?",
+            "Why do you think a planet far from the Sun takes so much longer to finish a lap?"
+          ],
+          "rows": 2,
+          "answers": [
+            "Mercury, Venus, Earth, Mars",
+            "the asteroid belt, millions of chunks of rock",
+            "gravity from the Sun tugs them sideways",
+            "(inference: the path is much longer and it also travels more slowly)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Planets Never Stop", "How to Build a Telescope", "The Weather on Mars"],
+          "answers": ["Why the Planets Never Stop"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The Sun's ____ tugs the planets sideways.", "The four nearest planets are small and ____.", "Millions of rocks sit in the ____ belt.", "Mercury finishes a lap in 88 ____."],
+          "wordBank": ["gravity", "rocky", "asteroid", "days"],
+          "answers": ["gravity", "rocky", "asteroid", "days"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which planet would you most want to look at through a telescope, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "Eight Worlds Around One Star",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-solar-system", "templateLabel": "Eight Worlds Around One Star", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "solar-system",
+          "notes": ["The solar system is about 4.6 billion years old", "The Sun is 99.8 percent of all the mass in it", "Rock and metal near the Sun, ice and gas far out", "The frost line sits past Mars", "Everything orbits the same way around, on nearly the same flat plane"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How to Build a Solar System",
+          "text": "Four and a half billion years ago there were no planets here. There was a cloud of gas and dust, drifting between the stars, cold and shapeless. Something disturbed it. The cloud began to collapse under its own gravity, and as it fell inward it spun, the way a skater spins faster when she pulls in her arms. The spin flattened the cloud into a disk with a hot lump at the middle. That lump became the Sun, and it took almost everything: 99.8 percent of all the material in the cloud.\n\nThe planets are built from the 0.2 percent left over. Grains of dust in the disk bumped into each other and stuck, making pebbles, then boulders, then rocks the size of cities. The big ones swept up the small ones.\n\nWhere you ended up depended on where you formed. Close to the young Sun it was far too hot for ice to survive, so only metal and rock stayed solid. There was not much of it, so the planets built there stayed small: Mercury, Venus, Earth, Mars. Farther out, past a boundary astronomers call the frost line, water froze into countless grains of ice. Suddenly there was much more solid material to work with. Cores grew huge, and once a core was heavy enough, its gravity grabbed hydrogen and helium straight out of the disk. Jupiter and Saturn ballooned. Uranus and Neptune, forming later and farther out, grabbed less.\n\nThen the young Sun blew the leftover gas away, and building stopped. What remains is what you see: rock near the fire, giants in the cold, and rubble in the gaps that never finished becoming anything."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What made the collapsing cloud flatten into a disk?",
+            "Explain why the inner planets are small but the outer ones are giants.",
+            "The passage says the planets are built from the 0.2 percent left over. What does that tell you about the Sun?",
+            "Every planet orbits the same direction, on nearly the same flat plane. Why is that good evidence that this story is true?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it was spinning, and the spin flattened it as it fell inward",
+            "only rock and metal stayed solid near the hot Sun, so there was little to build with; past the frost line ice added far more material, so cores grew big enough to grab gas",
+            "(inference: the Sun holds almost all the mass; the planets are scraps)",
+            "(inference: they all formed from one spinning flat disk, so they kept its motion)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The Sun and planets formed together from one collapsing, spinning cloud, and where a planet formed decided what it became",
+            "Astronomers have visited every planet in the solar system",
+            "The asteroid belt was once a planet that broke apart"
+          ],
+          "answers": ["The Sun and planets formed together from one collapsing, spinning cloud, and where a planet formed decided what it became"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["collapse → ____", "frost line → ____", "core → ____", "rubble → ____"],
+          "rows": 1,
+          "answers": [
+            "to fall inward on itself",
+            "the boundary past which it was cold enough for water to freeze into ice",
+            "the heavy center a planet is built around",
+            "broken leftover pieces that never came together"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if the frost line had been much closer to the Sun, how might our solar system look different? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "Eight Worlds Around One Star",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-solar-system", "templateLabel": "Eight Worlds Around One Star", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "solar-system",
+          "notes": ["Neptune orbits 30 times farther out than Earth", "Sunlight reaches Earth in 8 minutes, Neptune in 4 hours", "The Kuiper Belt lies beyond Neptune", "Voyager 1 crossed the heliopause in 2012", "The Oort Cloud may reach 100,000 times the Earth to Sun distance", "No telescope has ever seen an Oort Cloud object in place"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where Does the Solar System End?",
+          "text": "Ask where the solar system stops and you will get at least three answers, all of them defensible.\n\nThe first answer is Neptune. It is the last of the eight planets, thirty times farther from the Sun than Earth is. Sunlight takes eight minutes to reach us and about four hours to reach Neptune. That is a tidy edge, and it is also wrong, because a great deal of solar system lies past it.\n\nThe second answer is the Kuiper Belt, a broad ring of frozen bodies beyond Neptune's orbit. Pluto lives there, and so do more than a hundred thousand objects wider than a hundred kilometers, leftovers from the disk that never assembled into a planet. The comets that return every few decades come from this region.\n\nThe third answer belongs to the Sun rather than to any object. The Sun does not only shine, it leaks. A thin wind of charged particles streams outward in every direction at hundreds of kilometers per second, carving a bubble in the gas that drifts between the stars. That bubble is the heliosphere, and its wall is the heliopause: the place where the solar wind finally loses its push and interstellar space takes over. Voyager 1, launched in 1977, crossed that wall in August 2012 and became the first human object in interstellar space. By that measure the solar system has a real edge, and we have already left it.\n\nAnd yet the Sun's gravity does not stop at the heliopause. It reaches on, thinning but never quite failing, for something like a hundred thousand times the distance from here to the Sun. Out there, astronomers think, sits the Oort Cloud: a vast shell of icy bodies so distant and so faint that nobody has ever seen one in place. We infer it from the long comets that fall inward from every direction of the sky, which is exactly what you would expect from a shell rather than a ring. If the Oort Cloud is the border, then Voyager 1, moving at seventeen kilometers per second, needs roughly three hundred years to reach the near side of it and thirty thousand more to pass through.\n\nSo which answer is right? It depends on what you decide a solar system is made of. If it is planets, it ends at Neptune. If it is material, it ends somewhere out in the frozen ring. If it is the Sun's influence, it ends where the Sun stops pushing, or where the Sun stops pulling, and those are two very different fences. The honest reply is that the solar system does not have an edge so much as a fade."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the three answers the passage gives, and explain what each one measures.",
+            "How do astronomers know the Oort Cloud is there if nobody has ever seen an object in it? Quote the evidence the passage gives.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the three candidate edges and the conclusion that there is no sharp boundary)",
+            "Neptune measures planets; the Kuiper Belt measures material; the heliopause and the Oort Cloud measure the Sun's influence, one by wind and one by gravity",
+            "(long comets arrive from every direction of the sky; quote: which is exactly what you would expect from a shell rather than a ring)",
+            "(inform, with detail: it defines terms and gives figures; it also argues a position at the end)",
+            "(the boundary is gradual, not a line; the author ends there so the reader keeps the idea)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["heliosphere → ____", "heliopause → ____", "interstellar → ____", "infer → ____"],
+          "rows": 1,
+          "answers": [
+            "the bubble the solar wind carves in the gas between the stars",
+            "the wall of that bubble, where the solar wind loses its push",
+            "between the stars",
+            "to work something out from evidence rather than see it directly"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the Sun does not only shine, it leaks. Explain what that sentence is doing for the reader.",
+            "Voyager 1 has left the heliosphere but will be inside the Sun's gravity for thousands of years. Can both facts be true at once? Explain."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it turns an abstract idea, the solar wind, into something physical and surprising)",
+            "(yes: the two edges measure different things, the Sun's wind and the Sun's gravity)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which of the three edges should count as the real boundary of the solar system? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "Eight Worlds Around One Star",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-solar-system", "templateLabel": "Eight Worlds Around One Star", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "solar-system",
+          "notes": ["Ceres was called a planet from 1801 to about 1850", "Pluto was the ninth planet from 1930 to 2006", "Eris, found in 2005, is more massive than Pluto", "The IAU planet test has three parts", "Pluto passes two of them and fails the third", "Dwarf planets: Ceres, Pluto, Eris, Haumea, Makemake"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What Counts as a Planet",
+          "text": "On the first day of the nineteenth century, a Sicilian astronomer named Giuseppe Piazzi found a faint point of light creeping against the stars in the gap between Mars and Jupiter. He had discovered Ceres, and for about fifty years the textbooks listed it as a planet. Then astronomers aimed better telescopes at the same gap and found Pallas, then Juno, then Vesta, then dozens more, and eventually thousands. Ceres had not changed. What changed was the company it kept. A single body between Mars and Jupiter is a planet. One of thousands is an asteroid. Ceres was quietly reclassified, and almost nobody minded.\n\nThe same story ran again a century later, and this time people minded very much.\n\nClyde Tombaugh found Pluto in 1930, and Pluto took its place as the ninth planet. It was an awkward fit from the start. Its orbit is tilted seventeen degrees out of the flat plane the other eight share, and it is stretched enough that for twenty years of every 248 year lap, Pluto rides closer to the Sun than Neptune does. Estimates of its size kept shrinking as measurements improved. By the 1990s astronomers were finding other frozen bodies out past Neptune, in a wide band now called the Kuiper Belt, and Pluto started to look less like a lonely ninth world and more like the brightest member of a crowd. In 2005 a team led by Mike Brown found Eris, which turned out to be more massive than Pluto. The choice became unavoidable: admit Eris, and whatever came next, or draw a line.\n\nIn 2006 the International Astronomical Union drew the line. A planet, it declared, must do three things: orbit the Sun, be massive enough that its own gravity pulls it round, and clear the neighborhood around its orbit. Pluto passes the first two and fails the third. It shares its lane with countless frozen siblings and does not govern them. Pluto became a dwarf planet, alongside Ceres, Eris, Haumea, and Makemake, and the count of planets fell to eight.\n\nThe decision still annoys people, and some of the objections are good ones. The third rule describes a body's surroundings rather than the body itself, so the same object could qualify in one orbit and fail in another. Drop Earth into Pluto's orbit and Earth would not clear it either. Planetary scientists who study these worlds up close point out that Pluto has mountains of water ice, a nitrogen glacier roughly the size of Texas, a thin blue haze of atmosphere, and five moons, which makes it a strange thing to call not a planet.\n\nBut that objection misses what the rule was built for. The eight are not a random sample of round things. Each one dominates its region, having spent four billion years absorbing or flinging away everything that came near it. Pluto belongs to a different population entirely, one with hundreds of known members and probably far more. Filing it next to Jupiter hides that fact instead of revealing it.\n\nHere is the part worth keeping. Nothing happened to Pluto in 2006. It did not shrink, wobble, or move. Only the paperwork changed. Nature does not sort itself into categories; we do that, because sorting is how we notice patterns. Ceres taught astronomers that the asteroid belt existed. Pluto taught them that the Kuiper Belt existed. In both cases the demotion was not a punishment. It was the moment we worked out that a thing we thought stood alone had a whole family standing behind it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why Ceres stopped being called a planet, and cite the sentence that states the reason most directly.",
+            "State the three-part IAU test, and explain precisely which part Pluto fails and why.",
+            "The author gives the strongest objection to the 2006 decision before answering it. Identify that objection and explain why building the passage this way is more persuasive than leaving it out.",
+            "Analyze the final paragraph. What is the author claiming about categories, and does the rest of the passage earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering reclassification and what it revealed)",
+            "(more bodies were found in the same gap; cite: What changed was the company it kept)",
+            "(orbit the Sun; be round from its own gravity; clear the neighborhood. Pluto fails the third because it shares its lane with countless Kuiper Belt bodies)",
+            "(the objection that the third rule describes surroundings, not the body, and that Earth in Pluto's orbit would fail too; answering it directly shows the author has tested the argument rather than avoided it)",
+            "(that categories are human tools for noticing patterns, not facts about nature; earned by the Ceres and Pluto parallel, where each demotion revealed a new population)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["reclassified → ____", "dominates → ____", "population → ____", "demotion → ____"],
+          "rows": 2,
+          "answers": [
+            "moved into a different category",
+            "controls or governs, having swept up or flung away everything nearby",
+            "a whole group of similar bodies, not a single object",
+            "a move to a lower rank or category"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says almost nobody minded about Ceres but people minded very much about Pluto. Suggest a reason the two reactions differed, and say what kind of evidence would test your idea.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: Pluto was familiar to living people and taught in schools, so it carried attachment Ceres never had; testable with surveys, textbooks, or news records from both periods)",
+            "(student question plus a credible source type, such as IAU proceedings or a planetary science journal)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Pluto should be restored to full planet status. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

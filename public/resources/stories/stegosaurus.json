@@ -1,0 +1,322 @@
+{
+  "key": "stegosaurus",
+  "title": "The Dinosaur With a Roof on Its Back",
+  "blurb": "Seventeen plates, four tail spikes named after a comic strip, and a brain the size of a lime.",
+  "topic": "dinosaurs",
+  "bands": {
+    "1": {
+      "title": "The Dinosaur With a Roof on Its Back",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-stegosaurus", "templateLabel": "The Dinosaur With a Roof on Its Back", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the plates on its back." },
+        {
+          "kind": "image",
+          "imageKey": "stegosaurus",
+          "notes": ["It has plates on its back", "Its tail has four spikes", "It only ate plants", "Its head is very small"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a stegosaurus. Say it like this: STEG-oh-SORE-us. It is big. It is as big as an elephant. Look at its back. It has tall plates on its back. The plates stand up in a row. Look at its tail. Its tail has four spikes. It eats plants. It does not eat meat. Its head is close to the ground. It lived a long, long time ago."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the plates in each row. Write how many in the box.",
+          "emoji": "🔺",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "plates    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "back", "right": "plates" },
+            { "left": "tail", "right": "spikes" },
+            { "left": "stegosaurus", "right": "plants" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own stegosaurus. Give it big plates on its back.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Dinosaur With a Roof on Its Back",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-stegosaurus", "templateLabel": "The Dinosaur With a Roof on Its Back", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "stegosaurus",
+          "notes": ["Say it STEG-oh-SORE-us", "Its name means roofed lizard", "It had 17 plates on its back", "It had four spikes on its tail", "Its brain was the size of a lime"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dinosaur With a Roof on Its Back",
+          "text": "Stegosaurus was a dinosaur. It lived long before any people did. It was as heavy as an elephant, and it walked on four legs. Its back legs were long. Its front legs were short. That made its head hang low, close to the plants it liked to eat. Two rows of tall plates stood along its back. The plates were not paired. They sat in a zigzag. At the end of its tail were four long spikes. If a hungry dinosaur came too close, Stegosaurus could swing that tail. Its head was small. Its brain was about the size of a lime."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many legs did Stegosaurus walk on?", "What stood along its back?", "What was at the end of its tail?"],
+          "rows": 2,
+          "answers": ["four legs", "two rows of tall plates", "four long spikes"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Stegosaurus liked to eat ____.", "Tall ____ stood along its back.", "Its tail had four ____.", "Its brain was as small as a ____."],
+          "wordBank": ["plants", "plates", "spikes", "lime"],
+          "answers": ["plants", "plates", "spikes", "lime"]
+        },
+        { "kind": "draw", "prompt": "Draw Stegosaurus eating. Add ferns and low plants around it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Dinosaur With a Roof on Its Back",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-stegosaurus", "templateLabel": "The Dinosaur With a Roof on Its Back", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "stegosaurus",
+          "notes": ["Stegosaurus means roofed lizard", "It lived about 150 million years ago", "17 plates in two staggered rows", "The biggest plate stood about two feet tall", "It ate ferns and low plants, never meat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why It Is Called the Roofed Lizard",
+          "text": "In 1877, a scientist named Othniel Marsh unpacked a crate of huge bones from Colorado. Inside were flat plates of bone, wide as dinner plates and thick as bricks. Marsh thought they had lain flat across the animal's back, overlapping like tiles on a roof. So he named it Stegosaurus, which means roofed lizard. He was wrong about the roof. Better skeletons later showed that the plates stood straight up along the back in two rows, and the rows did not match. A plate on the left sat in the gap between two plates on the right. Nothing else in the fossil record is built quite like it. The plates were not part of the skeleton. They grew inside the skin, the way a crocodile's bumpy scales do. The biggest ones were about two feet tall. Stegosaurus kept its head low and ate ferns and other soft plants. Its brain was small, about the size of a lime, in an animal that weighed as much as an elephant. The name stuck, even though the roof did not."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did Marsh think the plates were arranged like?",
+            "What did better skeletons show about the plates?",
+            "Where did the plates grow, if not on the skeleton?",
+            "Why do you think the name Stegosaurus was never changed, even after Marsh was proved wrong?"
+          ],
+          "rows": 2,
+          "answers": [
+            "tiles overlapping on a roof",
+            "they stood straight up in two rows that did not match",
+            "inside the skin, like a crocodile's scales",
+            "(inference: the name was already in use everywhere, so people kept it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why It Is Called the Roofed Lizard", "How to Build a Roof Out of Tiles", "The Biggest Meat Eater in Colorado"],
+          "answers": ["Why It Is Called the Roofed Lizard"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Stegosaurus means ____ lizard.", "The plates grew inside its ____.", "It ate ____ and other soft plants."],
+          "wordBank": ["roofed", "skin", "ferns"],
+          "answers": ["roofed", "skin", "ferns"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about the plates, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Dinosaur With a Roof on Its Back",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-stegosaurus", "templateLabel": "The Dinosaur With a Roof on Its Back", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "stegosaurus",
+          "notes": ["Late Jurassic, about 150 million years ago", "Found in Colorado, Wyoming, and Utah", "17 plates in two staggered rows", "Four tail spikes, up to three feet long", "Brain about the size of a lime", "Weighed about as much as an elephant"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What Were the Plates For?",
+          "text": "Stegosaurus is easy to draw and hard to explain. Seventeen bony plates ran along its back in two staggered rows, and after nearly 150 years of study, scientists still argue about what they were for. The first idea was armor. It fails quickly. The plates were thin, hollow in places, and full of channels for blood vessels. They stood upright, leaving the animal's sides exposed. A predator would simply walk around them. The second idea was temperature control. Blood moving through all those channels might have released heat on a hot day, or soaked up warmth in the morning sun, the way an elephant's ears do. This idea was popular for decades. Then researchers compared Stegosaurus to its relatives and found plates in many shapes, some far too small or too narrow to shed much heat. The channels, it turned out, are what you would expect in any bone that grew fast. The idea that fits best now is display. Different kinds of stegosaur had differently shaped plates. That is what you see in animals that need to recognize their own kind, or to look large and impressive to a rival. A plate cannot stop a bite, but it can make a five ton animal look even bigger. Defense was not neglected. It was moved to the other end. Stegosaurus carried four spikes on its tail, each up to three feet long, and the tail was flexible enough to swing hard. We know it swung. One Allosaurus fossil has a hole punched through a tail bone that matches a Stegosaurus spike exactly, and roughly one spike in ten shows damage from use."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Give two reasons the passage says the armor idea fails.",
+            "Why did researchers lose confidence in the temperature control idea?",
+            "Explain why differently shaped plates point toward display rather than a tool.",
+            "The passage says We know it swung. What evidence supports that, and why is it convincing?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the plates were thin and hollow in places, and they left the sides exposed",
+            "related stegosaurs had plates too small or narrow to shed heat, and the channels are normal in fast growing bone",
+            "(inference: a feature that changes between species is a signal for other animals to read)",
+            "an Allosaurus tail bone punctured by a matching spike, plus damage on one spike in ten; it is direct physical evidence"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The purpose of Stegosaurus plates is still debated, while the tail spikes are proven weapons",
+            "Stegosaurus was the fiercest hunter of the Jurassic",
+            "Scientists have finally proved the plates were armor"
+          ],
+          "answers": ["The purpose of Stegosaurus plates is still debated, while the tail spikes are proven weapons"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["staggered → ____", "display → ____", "flexible → ____", "predator → ____"],
+          "rows": 1,
+          "answers": [
+            "set in an alternating pattern, not lined up in pairs",
+            "showing off, so other animals notice you",
+            "able to bend or move easily",
+            "an animal that hunts other animals"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which idea about the plates do you find most convincing, and why? Use two details from the passage to support your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Dinosaur With a Roof on Its Back",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-stegosaurus", "templateLabel": "The Dinosaur With a Roof on Its Back", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "stegosaurus",
+          "notes": ["Stegosaurus stenops, Late Jurassic", "Plates are osteoderms: bone grown in the skin", "The tail spikes are called a thagomizer", "The second brain in the hip is a myth", "Colorado's state fossil since 1982", "Lived alongside Allosaurus and Apatosaurus"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Thagomizer, and Other Things We Got Wrong",
+          "text": "Stegosaurus has been misunderstood since the day it was named. In 1877, Othniel Marsh gave it a name meaning roofed lizard because he pictured its plates lying flat across its back like shingles. Articulated skeletons later proved the plates stood upright in two staggered rows, seventeen of them, and no living animal wears anything quite like them. The name was already permanent. The second mistake was more embarrassing. Marsh noticed that the spinal canal in the hip region swelled to many times the volume of the animal's actual brain, which was roughly the size of a lime in a body as heavy as an elephant. He proposed a second brain back there, a hip brain to run the rear half of the animal. The idea was too good to die quietly, and it appeared in children's books for a century. Birds have a similar swelling, and it holds a glycogen body, a store of energy that has nothing to do with thinking. Stegosaurus almost certainly had one brain, and a small one. The tail spikes got the strangest fix of all. Paleontologists had no name for the four spike arrangement at the end of the tail. In 1982, a newspaper cartoonist named Gary Larson drew a caveman lecturing with a pointer at a diagram of a spiked tail, labeling it the thagomizer, after the late Thag Simmons. Paleontologists liked it. They started using it in talks, then in papers. The joke is now the working term. The spikes themselves are the least uncertain thing about the animal. Ken Carpenter and colleagues described an Allosaurus tail vertebra with a puncture that matches a Stegosaurus spike in shape and size, and roughly one spike in ten shows breakage or infection from impact. A Stegosaurus plate has been found bitten in a way that matches Allosaurus jaws. These two animals met, and it did not always go well for the predator. What remains genuinely unsettled is the plates. Armor does not fit the evidence. Temperature control has weakened. Display leads. After a century and a half, the most famous feature of one of the most famous dinosaurs is still an open question."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the second brain idea and why scientists rejected it.",
+            "How did the word thagomizer enter science? Quote the sentence the passage uses to close that story.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author calls the spikes the least uncertain thing about the animal. What makes the spike evidence stronger than the plate evidence?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentence summary covering the naming error, the second brain myth, the thagomizer, and the open plate question)",
+            "an enlarged spinal canal in the hip; birds have the same swelling and it holds a glycogen body for energy, not thinking",
+            "from a 1982 Gary Larson cartoon that paleontologists adopted; quote: The joke is now the working term.",
+            "(inform, with detail: it defines terms and cites fossil evidence, though the tone is playful in places)",
+            "(inference: the spikes have direct physical evidence, a punctured bone and damaged spikes, while the plates only have competing explanations)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["articulated → ____", "glycogen body → ____", "puncture → ____", "unsettled → ____"],
+          "rows": 1,
+          "answers": [
+            "with the bones still joined in their living positions",
+            "a store of energy found in birds, not a thinking organ",
+            "a hole made by something sharp pushing through",
+            "not decided, still open to argument"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why do you think the second brain idea lasted a century even though it was wrong?",
+            "The author says the name was already permanent. Why might science keep a name it knows is inaccurate?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: it was memorable and explained a real puzzle, so it spread faster than the correction)",
+            "(inference: changing names would break every earlier book and paper that used it)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should scientists be allowed to fix a name that turned out to be wrong, like roofed lizard? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Dinosaur With a Roof on Its Back",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-stegosaurus", "templateLabel": "The Dinosaur With a Roof on Its Back", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "stegosaurus",
+          "notes": ["Stegosaurus stenops, about 150 million years ago", "Morrison Formation: Colorado, Wyoming, Utah", "17 osteoderm plates, staggered in two rows", "Thagomizer: four spikes, named from a 1982 cartoon", "Sophie: 85 percent complete, on display in London since 2014", "Lived about 83 million years before T. rex"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Roof That Was Never a Roof",
+          "text": "Begin with the time. Stegosaurus lived about 150 million years ago, in the Late Jurassic, on a warm floodplain that is now Colorado, Wyoming, and Utah. Tyrannosaurus rex lived about 67 million years ago. The gap between them is roughly 83 million years, which means Stegosaurus was more ancient to T. rex than T. rex is to us. The two never met and never could have. The toy box that puts them in the same fight is off by a span of time longer than the entire age of mammals. Deep time is the first thing this animal teaches, and most people never learn it. Now the name. In 1877, Othniel Charles Marsh received bones from Colorado in the middle of the Bone Wars, his bitter race against Edward Drinker Cope to name more species than his rival. Speed was the point, and speed costs accuracy. Marsh saw broad, flat plates of bone and assumed they had lain across the back in an overlapping sheet, like tiles. He called the animal Stegosaurus, roofed lizard, and moved on. He was wrong. When an articulated skeleton came out of the Colorado rock in the 1880s, the plates were standing upright in two rows, and the rows were staggered, each plate filling the gap opposite it. The roof was never a roof. The name is permanent anyway, because scientific names do not get corrected for embarrassment. Then the plates themselves, which are still not solved. There were seventeen of them, the largest around two feet tall, and they were osteoderms: bone grown within the skin rather than attached to the skeleton, which is why they scatter after death and why early reconstructions guessed wrong. Armor is the obvious reading and the weakest. The plates were thin, they left the flanks unprotected, and one plate has been found bearing bite damage that matches Allosaurus jaws, which tells you they could be bitten. Thermoregulation held the field for decades. The plates are threaded with grooves for blood vessels, so perhaps they dumped heat the way an elephant's ears do. That idea has thinned. Comparisons across stegosaur species turned up plates of many shapes, including some far too small to work as radiators, and the vascular grooves are ordinary features of fast growing bone. Display leads now, precisely because plate shape varies so much between species. A structure that differs species by species is usually a signal, not a tool. Defense lived at the other end. Four spikes projected from the tail, each up to three feet long, on a tail flexible enough to swing with force. The evidence that they were used is unusually direct: an Allosaurus vertebra punctured by a wound matching a Stegosaurus spike, and roughly one spike in ten showing fractures or signs of infection from impact. The apparatus has a formal sounding name, the thagomizer, which paleontologists borrowed in earnest from a 1982 Gary Larson cartoon in which a caveman points to a diagram and credits the arrangement to the late Thag Simmons. The field had no term. A joke supplied one. It is now in the literature. The animal carrying all of this had a brain roughly the size of a lime and a beaked mouth of small leaf shaped teeth that could not chew. It cropped ferns and low plants and swallowed them nearly whole, five tons of animal running on a head held about three feet off the ground. The best specimen we have, an eighty five percent complete skeleton nicknamed Sophie, went on display in London in 2014 and is still being studied. Almost 150 years after Marsh guessed at a roof, the most recognizable dinosaur on Earth is still turning in its answers late."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why Marsh got the plates wrong, and what the passage suggests about the cost of racing a rival. Cite the evidence.",
+            "Rank the three explanations for the plates from strongest to weakest as the passage presents them, and justify your ranking with evidence.",
+            "The author opens with time rather than with the animal. Analyze why, and what that choice does to the reader.",
+            "Find the sentence where the author states a general principle about biology rather than a fact about Stegosaurus. Quote it and explain what work it does in the argument."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one sentence summary)",
+            "(he assumed the plates lay flat like tiles while rushing to out name Cope; cite: Speed was the point, and speed costs accuracy.)",
+            "(display strongest, thermoregulation weakened, armor weakest; evidence: shape varies by species; plates too small to radiate; thin plates, exposed flanks, bitten plate)",
+            "(the 83 million year gap resets the reader's sense of scale and sets up the theme that our picture of this animal is wrong; it makes the reader distrust what they think they know)",
+            "(quote: A structure that differs species by species is usually a signal, not a tool. It supplies the reasoning that lets varied plate shape count as evidence for display.)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["osteoderm → ____", "thermoregulation → ____", "vascular → ____", "articulated → ____"],
+          "rows": 2,
+          "answers": [
+            "a piece of bone that grows inside the skin rather than joining the skeleton",
+            "controlling body temperature",
+            "having to do with blood vessels",
+            "with the bones still joined in their living positions"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage ends by saying the answers are still late. Explain the double meaning in that last line.",
+            "The thagomizer entered science as a joke. Does that weaken it as a scientific term? Argue your view.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the animal is 150 million years old and the science about it is still unfinished)",
+            "(opinion: a term's usefulness comes from being clear and agreed on, not from its origin)",
+            "(student question plus a credible source type, such as a peer reviewed paleontology journal)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If scientists still cannot say what the plates were for after 150 years, they should stop guessing. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

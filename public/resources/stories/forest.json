@@ -1,0 +1,315 @@
+{
+  "key": "forest",
+  "title": "The Forest Under the Forest",
+  "blurb": "Half of every forest is underground, where roots and fungal threads trade food in the dark.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Forest Under the Forest",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-forest", "templateLabel": "The Forest Under the Forest", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Count the trees with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "forest",
+          "notes": ["Trees drink water through their roots", "Roots hide under the ground", "Leaves catch the sunlight", "Green leaves turn yellow in the fall", "Birds and bugs live here"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look at the trees. This is a forest. Trees drink water with their roots. The roots are under the ground. The leaves catch the sunlight. The leaves make food for the tree. Some leaves are green. Some leaves turn yellow. Some leaves turn orange. Birds sleep in the trees. Bugs live under the leaves. The forest is a home."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the trees in each row. Write how many in the box.",
+          "emoji": "🌳",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "root    leaf" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "roots", "right": "under the ground" },
+            { "left": "leaves", "right": "up in the sunlight" },
+            { "left": "bird", "right": "a nest in a tree" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own tree. Put the roots under the ground and the leaves at the top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Forest Under the Forest",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-forest", "templateLabel": "The Forest Under the Forest", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "forest",
+          "notes": ["A leaf makes food out of sunlight, air, and water", "Trees give off the oxygen we breathe", "Roots pull water all the way up the trunk", "The yellow hid under the green all summer", "A tree grows one new ring inside each year"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tree Is a Kitchen",
+          "text": "A tree is a straw and a kitchen at the same time. The roots pull water up from the soil. The water goes all the way up the trunk. It goes out to every leaf. Each leaf takes in sunlight and air. The leaf mixes them with the water to make sugar. That sugar is the tree's food. The leaf gives away something too. It puffs out oxygen, which is the air we breathe. In the fall, the green fades away. Then you can see the yellow and orange that was hiding in the leaf all along."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What do the roots pull up from the soil?", "What does a leaf make for the tree?", "What does a leaf puff out that we breathe?"],
+          "rows": 2,
+          "answers": ["water", "sugar, which is the tree's food", "oxygen"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The roots pull up ____.", "The leaf makes ____ for the tree.", "The leaf puffs out ____.", "In the fall the leaves turn ____."],
+          "wordBank": ["water", "sugar", "oxygen", "yellow"],
+          "answers": ["water", "sugar", "oxygen", "yellow"]
+        },
+        { "kind": "draw", "prompt": "Draw a tree in the fall. Show the roots under the ground, and color some leaves yellow.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Forest Under the Forest",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-forest", "templateLabel": "The Forest Under the Forest", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "forest",
+          "notes": ["A mushroom is only the tip of the fungus", "The rest is threads spread through the soil", "The threads are thinner than a hair", "Trees pay the fungus in sugar", "The fungus pays the tree in water and minerals"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Half a Forest Is Underground",
+          "text": "Half of a forest is underground, and you never see it. Under the leaves and the dirt, every tree spreads out a wide net of roots. But the roots are not alone down there. Wrapped around them, and sometimes growing right inside them, are the fine white threads of fungi. A mushroom you find on the forest floor is only the tip. The rest of that fungus is a web of threads spread through the soil, thinner than a hair and longer than you would believe. The tree and the fungus make a deal. The tree makes sugar up in its leaves, where the sunlight is, and sends some of it down to the fungus. The fungus cannot make sugar. What it can do is reach into tiny cracks in the soil that roots are far too fat to enter, and pull out water and minerals. It hands those up to the tree. Both sides get something they could not get alone. Almost every tree in the forest is doing this, right now, under your feet."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a mushroom on the forest floor only the tip of?",
+            "What does the tree give the fungus?",
+            "What does the fungus give the tree?",
+            "Why do you think a tree cannot just get the water and minerals by itself?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a web of fungal threads spread through the soil",
+            "sugar that it makes in its leaves",
+            "water and minerals from tiny cracks in the soil",
+            "(inference: its roots are too thick to fit into the tiny cracks)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Deal Between a Tree and a Fungus", "How to Cook With Mushrooms", "The Tallest Tree in the World"],
+          "answers": ["The Deal Between a Tree and a Fungus"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The white threads under the ground belong to ____.", "The tree makes sugar in its ____.", "The fungal threads are thinner than a ____."],
+          "wordBank": ["fungi", "leaves", "hair"],
+          "answers": ["fungi", "leaves", "hair"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: is the deal between the tree and the fungus fair to both sides, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Forest Under the Forest",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-forest", "templateLabel": "The Forest Under the Forest", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "forest",
+          "notes": ["Mycorrhiza means fungus root", "About 9 in 10 kinds of plant partner with a fungus", "Trees trade sugar for phosphorus and nitrogen", "Fungal threads are finer than a root hair", "In many forests most carbon sits in the soil, not the trunks", "The partnership is hundreds of millions of years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Fungus Root, and the Trade That Runs a Forest",
+          "text": "Pull up a handful of forest soil and you are holding a marketplace. Nearly nine out of every ten kinds of plant on Earth live joined to a fungus. Scientists gave the partnership a name built from two Greek words: mykes, meaning fungus, and rhiza, meaning root. Mycorrhiza. Fungus root. Here is why it works. A tree can do one thing no fungus can do. Standing in the sun with thousands of leaves, it turns light, air, and water into sugar. But a tree is clumsy underground. Its roots are thick, and the minerals it needs, especially phosphorus and nitrogen, sit locked in specks of soil too small for a root to reach. The fungus is the opposite. It cannot catch a single ray of sunlight or make one grain of sugar. What it can do is thread itself through the soil in filaments finer than a root hair, wrapping around particles, dissolving minerals loose, and mopping up water from cracks a root would never find. So they trade. The tree pays in sugar. The fungus pays in phosphorus, nitrogen, and water. A tree may send a fifth of the food it makes straight down into the ground to settle the bill. That is not charity. It is the price of a supply line it cannot build itself. The trade explains something odd about forests. When people count where a forest keeps its carbon, they expect the answer to be the trunks, because trunks are the biggest things in sight. In many forests the real answer is under the ground: in roots, in fungal threads, and in the slow, dark, half rotted layers of everything the forest has already dropped."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain what a mycorrhiza is, and where its name comes from.",
+            "What can a tree do that a fungus cannot, and what can a fungus do that a tree cannot?",
+            "The passage says a tree paying a fifth of its food to a fungus is not charity. What does it mean by that?",
+            "Why does it surprise people that a forest keeps so much of its carbon underground?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a partnership between a root and a fungus; from Greek mykes (fungus) and rhiza (root)",
+            "a tree makes sugar from sunlight; a fungus reaches minerals and water in specks of soil too small for roots",
+            "(inference: it is a payment for something the tree needs, not a gift; both sides gain)",
+            "(inference: the trunks are the biggest visible part, so people assume the carbon is where they can see it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Trees and fungi survive by trading what each one cannot make for itself",
+            "Mushrooms are the most important food in the forest",
+            "Greek is the best language for naming plants"
+          ],
+          "answers": ["Trees and fungi survive by trading what each one cannot make for itself"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["mycorrhiza → ____", "filaments → ____", "supply line → ____"],
+          "rows": 1,
+          "answers": ["the partnership of a fungus and a plant root", "very fine threads", "the route something needed is delivered along"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the tree and the fungus as a business deal. Say what each one sells, what each one buys, and why neither could quit.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Forest Under the Forest",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-forest", "templateLabel": "The Forest Under the Forest", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "forest",
+          "notes": ["Stomata: tiny mouths on the underside of a leaf", "Transpiration: water escaping as vapor", "A large oak can move 100 gallons of water a day", "The Amazon lifts an estimated 20 billion tons of water daily", "Flying rivers: airborne currents of forest water", "Rain over a rainforest can fall, rise, and fall again"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Forest That Makes Its Own Rain",
+          "text": "Everyone knows a forest needs rain. Fewer people know that the rain needs the forest. Start with a single tree on a summer day. Its roots draw water out of the soil and its trunk lifts that water upward, not with a pump but with the pull of evaporation at the top. On the underside of every leaf are thousands of tiny mouths called stomata. They open to let in the air the leaf needs, and while they are open, water escapes. This is transpiration. A large oak can move more than a hundred gallons of water out of the ground and into the sky on a single hot day, and it does it silently, all day, without moving. Now multiply that tree by billions. The Amazon rainforest lifts an estimated twenty billion tons of water into the air every day, which is more than the Amazon River pours into the ocean in the same time. That vapor gathers into enormous airborne currents that scientists call flying rivers. Winds carry them west across the continent until they hit the Andes and turn south, watering farmland thousands of miles from any rainforest. Here is the part that matters. Rain that falls on the Amazon does not simply run away to the sea. Much of it is caught, drunk, and breathed back out by trees, then falls again farther inland, and again, and again. The forest passes its own water along, handing it westward, keeping the interior wet. A forest is not just a place where it rains. A forest is one of the reasons it rains. Which raises an uncomfortable question. If enough of the forest is cut down, the remaining trees may not lift enough water to keep the cycle turning. Less forest means less vapor, less vapor means less rain, and less rain kills more forest. Scientists who study this call it a tipping point, and they argue about exactly where it sits. Nobody argues about which direction we are walking."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain transpiration and name the part of the leaf it happens through.",
+            "The passage compares the Amazon rainforest to the Amazon River. What is the point of that comparison?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the loop described in the second to last sentence of the final paragraph, and say why a loop like that is hard to stop."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering transpiration + flying rivers + the recycling loop and its risk)",
+            "water escaping as vapor from the leaf; through the stomata",
+            "(the forest lifts more water into the air than the river carries to the sea, which makes the scale believable)",
+            "(mostly inform, with a persuasive turn at the end; details: it defines stomata and transpiration, gives figures, then closes with a warning)",
+            "(less forest, less vapor, less rain, which kills more forest; it feeds itself, so each step makes the next one worse)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["stomata → ____", "transpiration → ____", "flying rivers → ____", "tipping point → ____"],
+          "rows": 1,
+          "answers": [
+            "tiny openings on the underside of a leaf",
+            "the escape of water as vapor from a leaf",
+            "huge airborne currents of water vapor carried by wind",
+            "the point where a change starts feeding itself and cannot easily be reversed"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author ends with the line about which direction we are walking. Explain what that line is doing and why it is placed last.",
+            "A farmer thousands of miles from the Amazon has never seen a rainforest. Why might the rainforest still matter to that farmer?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it turns a scientific argument into a choice about us; last position gives it weight and leaves the reader holding it)",
+            "(inference: flying rivers carry the forest's water to distant farmland, so the farmer's rain depends on it)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a country be allowed to cut down a forest that makes rain for its neighbors? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Forest Under the Forest",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-forest", "templateLabel": "The Forest Under the Forest", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "forest",
+          "notes": ["Simard, 1997: carbon moved between birch and fir", "The wood wide web was named by a journalist", "Karst, Jones, and Hoeksema reviewed the claims in 2023", "They found citation bias in the retelling", "Mycorrhizal fungi are real and essential", "Mother trees feeding kin is still contested"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wood Wide Web, and the Argument About It",
+          "text": "In 1997, a Canadian forest ecologist named Suzanne Simard published a paper in Nature that changed how people picture a forest. She fed radioactive and stable carbon isotopes to paper birch and Douglas fir seedlings growing in a real forest, then tracked where those atoms ended up. Carbon from the birch turned up inside the fir. Carbon from the fir turned up inside the birch. The two trees, different species and no relation, were somehow passing food to each other underground. The suspected courier was fungus. Most trees are joined at the root to mycorrhizal fungi, and a single fungus can attach to more than one tree at once. In principle, that makes a network: threads linking neighbor to neighbor, and neighbor to neighbor, until much of a stand of trees is wired together. A journalist writing about the idea in 1997 called it the wood wide web, and the name stuck to it like burrs. From there the story grew. Popular books and documentaries described mature mother trees recognizing their own seedlings and feeding them preferentially, dying trees dumping their carbon into the network as a parting gift, and trees sending chemical warnings to each other about incoming insects. It is a beautiful picture. A forest stops being a crowd of competitors and becomes something closer to a community, or a brain. Then, in 2023, three scientists published a review that asked an unwelcome question: how much of this has actually been shown in a forest? Justine Karst, Melanie Jones, and Jason Hoeksema went back through the published literature claim by claim. Their findings were blunt. Fungal networks linking trees in real forests are far less mapped than most people assume. They found only a handful of field studies testing whether such networks help seedlings, and those studies did not agree. Claims about mother trees preferentially feeding kin in a wild forest were, in their reading, not supported by the field evidence at all. Worse, they documented citation bias: papers were being cited for conclusions stronger than the papers themselves had reached, and each retelling hardened the claim a little more, until an interesting hypothesis was being reported as settled fact. Notice what the 2023 review did not say. It did not say the fungi are imaginary. Mycorrhizal partnerships are real, ancient, and essential. It did not say carbon never moves between plants. Simard measured that, and others have measured it since. What it said was narrower and harder: that the leap from carbon moves between plants to forests are cooperative societies run through fungal networks had been made with far less evidence than the confidence of the telling suggested. Simard and others have pushed back, and the argument continues in the journals. That is not a scandal. That is what the argument is for. The useful thing here is not deciding who wins. It is noticing how the story traveled. A careful measurement became a hypothesis. The hypothesis got a memorable name. The name got a metaphor, the metaphor got a documentary, and somewhere along that road the hedges fell off. Every one of those steps felt reasonable to the people taking it. The forest under your feet is genuinely strange, and it is stranger for being only partly understood. Both of these are true at once: something remarkable is happening in that soil, and we do not yet know what it is. Learning to hold those two together, without collapsing them into a tidy story, is most of what science asks of you."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "What did Simard actually measure in 1997, and what did she not measure? Cite the sentence that draws that line.",
+            "Explain citation bias as the passage describes it. Quote the exact phrase the author uses for what the hypothesis turned into.",
+            "Identify the turn in the passage: where does it pivot, and what sentence signals it?",
+            "The author writes that the hedges fell off. Analyze what that metaphor claims about how the idea spread, and decide whether the passage gives enough evidence to earn it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a real finding about trees sharing carbon grew into a bigger story than the evidence supported)",
+            "(she measured carbon moving between birch and fir; she did not show forests are cooperative societies; cite: What it said was narrower and harder)",
+            "(papers cited for conclusions stronger than they reached, hardening with each retelling; quote: reported as settled fact)",
+            "(at the 2023 review; signal sentence: Then, in 2023, three scientists published a review that asked an unwelcome question)",
+            "(the metaphor claims the careful uncertainty was stripped away step by step; supported by the citation-bias evidence and the measurement to hypothesis to name to documentary chain)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["isotopes → ____", "citation bias → ____", "hypothesis → ____", "courier → ____"],
+          "rows": 2,
+          "answers": [
+            "versions of an element that can be tracked as they move through living things",
+            "the habit of citing papers for stronger conclusions than they actually reached",
+            "a proposed explanation that still has to be tested",
+            "something that carries a thing from one place to another"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the ongoing argument is not a scandal. Explain why a public disagreement between scientists can be a sign the process is working.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(challenge and revision are how claims get tested; agreement without scrutiny would be the real problem)",
+            "(student question + a credible source type, such as a field study or a peer reviewed journal)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A scientist should not use a memorable name or metaphor for a new idea, because the public will always take it too far. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

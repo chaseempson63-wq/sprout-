@@ -1,0 +1,322 @@
+{
+  "key": "apple",
+  "title": "The Apple That Won't Copy Itself",
+  "blurb": "Plant a seed from your favorite apple and you get a stranger. Every Granny Smith on Earth is a cutting from one tree.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Apple That Won't Copy Itself",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-apple", "templateLabel": "The Apple That Won't Copy Itself", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say the word apple out loud." },
+        {
+          "kind": "image",
+          "imageKey": "apple",
+          "notes": ["It grows on a tree", "It has a star hiding inside", "It floats in water", "It is mostly water", "Its seeds live in the middle"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an apple. It is red and round. It grew on a tree. The sun helped it turn sweet. Take a bite. It is crunchy. It is juicy. Now cut the apple across the middle. Look inside. There is a little star in there. The star has five points. A seed sits in each point. Every apple has one. Look for the star next time you have an apple."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the apples in each row. Write how many in the box.",
+          "emoji": "🍎",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "red    apple" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each food to where it grows.",
+          "pairs": [
+            { "left": "apple", "right": "tree" },
+            { "left": "carrot", "right": "under the ground" },
+            { "left": "grape", "right": "vine" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw an apple tree. Put lots of apples on it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Apple That Won't Copy Itself",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-apple", "templateLabel": "The Apple That Won't Copy Itself", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "apple",
+          "notes": ["Cut it sideways to find the star", "Apples are in the rose family", "A bee carries the pollen", "One seed never copies its parent", "Growers join twigs onto trees"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Seed That Will Not Listen",
+          "text": "Cut an apple across the middle, not up and down. Inside you will find a star with five points. A seed sits in each point. Here is the strange part. If you plant one of those seeds, it will not grow your apple. It grows a different apple. It might be sour. It might be tiny and hard. Nobody knows until the tree makes fruit, and that takes years of waiting. So how do farmers get the same apple again and again? They do not use seeds. They cut a small twig from a tree they like. They join the twig onto another young tree and wrap it up tight. The twig grows, and it makes the very same apple as the tree it came from."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Which way do you cut an apple to find the star?", "How many points does the star have?", "What do farmers cut off a tree they like?"],
+          "rows": 2,
+          "answers": ["across the middle", "five", "a small twig"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The star inside an apple has five ____.", "A ____ sits in each point of the star.", "A seed grows a ____ apple.", "Farmers join a ____ onto a young tree."],
+          "wordBank": ["points", "seed", "different", "twig"],
+          "answers": ["points", "seed", "different", "twig"]
+        },
+        { "kind": "draw", "prompt": "Draw an apple cut across the middle. Show the star and the seeds inside.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Apple That Won't Copy Itself",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-apple", "templateLabel": "The Apple That Won't Copy Itself", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "apple",
+          "notes": ["Every apple seed is brand new", "Joining a twig to a tree is called grafting", "A grafted twig makes the same apple", "Granny Smith apples all came from one tree", "That tree grew in Australia in the 1860s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Tree, Everywhere",
+          "text": "An apple tree does not make copies of itself. Every seed inside an apple carries a brand new mix: a little from the tree it grew on, and a little from the tree whose pollen a bee carried over. Plant that seed and you get a tree nobody has ever tasted. Most of them make small, sour fruit. That is why growers do not plant seeds. Instead they graft. A grower cuts a twig from a tree that makes good apples, joins it to the trunk of a young rooted tree, and wraps the joint tight. The two grow together into one tree, and the twig keeps making the apples it always made. This leads somewhere surprising. Every Granny Smith apple in the world came from one tree. In Australia, around 1868, a woman named Maria Ann Smith found a seedling growing near her creek, where she had tossed out the scraps of some sour cooking apples. The fruit on it was green, hard, and tart, and people liked it. Growers cut twigs from her tree and grafted them. Then they cut twigs from those trees, and on and on, for over a hundred and fifty years. Every Granny Smith you have ever eaten is a piece of Maria Smith's tree."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why do growers not plant apple seeds?",
+            "What is grafting?",
+            "Who found the first Granny Smith tree, and where?",
+            "Why do you think growers wanted to copy Maria Smith's tree instead of planting its seeds?"
+          ],
+          "rows": 2,
+          "answers": [
+            "seeds grow into different trees, and most make small sour fruit",
+            "cutting a twig from a good tree and joining it onto a young rooted tree",
+            "Maria Ann Smith, in Australia, near her creek",
+            "(inference: the seeds would not grow the same apple, so copying was the only way to keep it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Apple That Won't Copy Itself", "How to Bake an Apple Pie", "The Tallest Tree in Australia"],
+          "answers": ["The Apple That Won't Copy Itself"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A bee carries ____ from one tree to another.", "Joining a twig to a young tree is called ____.", "The first Granny Smith apples were green, hard, and ____."],
+          "wordBank": ["pollen", "grafting", "tart"],
+          "answers": ["pollen", "grafting", "tart"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you found a wild apple tree with amazing fruit, what would you do next, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Apple That Won't Copy Itself",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-apple", "templateLabel": "The Apple That Won't Copy Itself", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "apple",
+          "notes": ["Wild apples still grow in Kazakhstan", "The wild species is Malus sieversii", "Almaty means the place of apples", "Bears and horses spread the seeds", "Johnny Appleseed planted cider trees", "Apples reached America with settlers in the 1600s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Forest Where Apples Are Wild",
+          "text": "Ask where apples come from and the honest answer is a mountain range you have probably never heard of. In the Tian Shan mountains of Kazakhstan there are forests where the trees are apple trees. Not orchards. Wild forest, growing apples on its own, long before anyone planted anything. The species is called Malus sieversii, and it is the ancestor of nearly every apple in your grocery store. Kazakhstan's largest city, Almaty, sits right at the edge of those forests, and its name comes from the word for apple. Bears eat the wild fruit. So do horses and deer. The seeds ride through the animals and get dropped somewhere new, and because every apple seed is a fresh mix, every dropped seed becomes a slightly different tree. The forest is a machine for making variety. Most of those trees make bitter little marbles. A few make fruit as good as anything in a supermarket. Traders on the Silk Road tasted their way through, picked the good ones, and carried them west into Persia, Greece, Rome, and eventually all of Europe. Americans usually meet apples through Johnny Appleseed. He was a real person. John Chapman walked the Ohio frontier in the early 1800s planting apple nurseries, and he really did wear rough clothes and sleep outdoors. But he planted seeds, not grafts, and seedling apples are mostly hard and sour. Almost none of his trees made good eating fruit. That was not a mistake. Those apples were meant to be pressed into cider, which kept far longer than fresh fruit and sat on nearly every frontier table. The Johnny Appleseed of the storybooks hands out sweet snacks. The real one was planting a drink."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why does the passage call the wild forest a machine for making variety?",
+            "How did apples travel from Kazakhstan to Europe?",
+            "The passage says Johnny Appleseed's trees making sour fruit was not a mistake. Explain why not.",
+            "Why do you think the storybook version of Johnny Appleseed is so different from the real one?"
+          ],
+          "rows": 2,
+          "answers": [
+            "every seed is a fresh mix, so every tree that grows is different from the others",
+            "animals spread the seeds, and Silk Road traders picked the good trees and carried them west",
+            "the apples were grown for cider, not for eating, so sour fruit was fine",
+            "(inference: sweet apples and kindness make a nicer children's story than cider)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Apples began as wild forest fruit in Kazakhstan and spread because people carried the good ones with them",
+            "Johnny Appleseed invented the apple in America",
+            "Bears are the only animals that eat apples"
+          ],
+          "answers": ["Apples began as wild forest fruit in Kazakhstan and spread because people carried the good ones with them"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["ancestor → ____", "orchard → ____", "variety → ____", "frontier → ____"],
+          "rows": 1,
+          "answers": [
+            "the older thing that something living came from",
+            "a place where fruit trees are planted on purpose",
+            "lots of different kinds of the same thing",
+            "the edge of settled land, where few people had built yet"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the wild apple forests of Kazakhstan are being cut down for houses and farms. Should people work to protect them? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Apple That Won't Copy Itself",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-apple", "templateLabel": "The Apple That Won't Copy Itself", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "apple",
+          "notes": ["A picked apple is still alive and breathing", "Ethylene is the gas that says ripen now", "Controlled atmosphere storage holds apples for a year", "Browning is an enzyme meeting oxygen", "Lemon juice slows the browning down", "About a quarter of an apple's volume is air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Apple in Your Lunch Might Be a Year Old",
+          "text": "Pick an apple in October and eat it the following June. By rights it should be a soft brown lump. Instead it snaps when you bite it. That is not luck. It is chemistry, and people spent a century working it out. Start with why apples go bad at all. A picked apple is still alive. It keeps breathing, taking in oxygen and burning through its own stored sugars, and the faster it breathes the faster it collapses into mush. It also releases a gas called ethylene, the signal fruit uses to tell itself, and everything sitting near it, to get on with ripening. Ethylene is why one rotting apple really can ruin a whole barrel. The bad apple is not spreading rot from fruit to fruit. It is shouting a command, and the other apples obey. In the 1920s two British scientists, Franklin Kidd and Cyril West, asked a blunt question. If the apple is breathing, what happens if we take most of its air away? They sealed apples into cold rooms, pulled the oxygen down to around one or two percent, roughly a twentieth of what is in the room you are sitting in, and let carbon dioxide build up. The apples did not suffocate. They idled. Breathing slowed to a crawl, ethylene barely moved, and fruit that should have failed in weeks came out firm many months later. The method is called controlled atmosphere storage, and almost every apple you buy outside of autumn has been asleep in one. The rooms hold so little oxygen that a worker who walked in without an air supply would pass out. Browning is a separate problem with a separate answer. Cut an apple and the knife tears open cells, which lets an enzyme called polyphenol oxidase meet the oxygen in the air. The two react within minutes and the pale flesh goes rust brown. The apple is not dirty and it is not spoiled. It is bruising, in the same way you do. Squeeze lemon juice over the slices and the browning stalls, because the acid and the vitamin C in the juice jam the enzyme before it can get started. None of this makes the apple better than it was. It makes it patient. The fruit is doing exactly what it has always done. We have simply learned how to talk it into waiting."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain what ethylene does and why one bad apple can ruin a barrel. Quote the phrase the passage uses for what the bad apple is really doing.",
+            "What question did Kidd and West ask, and what did they do about it?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last three sentences in your own words. Why does the author end on the word waiting?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering respiration and ethylene, controlled atmosphere storage, and browning)",
+            "it is the ripening signal, and it tells nearby fruit to ripen too; quote: shouting a command",
+            "if the apple is breathing, what happens if we take most of its air away; they sealed apples in cold low oxygen rooms",
+            "(inform, with detail: it defines terms and explains causes; the voice is playful, so it entertains as well)",
+            "(storage does not improve the apple, it only slows it down; ending on waiting stresses that people manage the fruit rather than change it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["ethylene → ____", "enzyme → ____", "idled → ____", "controlled atmosphere → ____"],
+          "rows": 1,
+          "answers": [
+            "the gas fruit gives off that triggers ripening",
+            "a substance in living things that makes a chemical reaction happen",
+            "ran very slowly instead of stopping",
+            "air that people have changed on purpose, with the oxygen lowered"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why would a grower want apples that ripen slowly rather than apples that ripen fast?",
+            "The passage says a worker who walked into the storage room without an air supply would pass out. What does that tell you about how far the oxygen has been lowered?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: slow ripening means the fruit can be sold over a longer season and travel further)",
+            "(inference: it is dropped well below what a person needs to breathe, near one or two percent)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it better to eat fruit stored for months so you can have apples all year, or to eat fruit only when it is in season near you? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Apple That Won't Copy Itself",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-apple", "templateLabel": "The Apple That Won't Copy Itself", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "apple",
+          "notes": ["Malus domestica, from wild Malus sieversii", "A pome: most of the flesh is not the ovary", "Self-incompatible: it needs another tree's pollen", "Extremely heterozygous, so seedlings never match", "Every named variety is a graft, meaning a clone", "Honeycrisp was released in 1991 by Minnesota breeders"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Apple Is a Clone, and That Is the Problem",
+          "text": "Start with an inconvenient fact about the apple in your hand. Botanically, most of it is not fruit. A fruit, in the strict sense, develops from the ovary of a flower. In an apple, the ovary becomes the papery core, those five little chambers holding the seeds. The part you actually eat swelled out of the base of the flower itself, the tissue that once carried the petals. Botanists call the result a pome, an accessory fruit. The apple built a snack around its seeds out of spare parts, because a fruit is not a gift. It is a bribe. An animal eats the sweet tissue, walks off, and deposits the seeds somewhere else along with a supply of fertilizer. That bribe only pays if the seeds are worth moving, and here the apple makes a choice that looks reckless. Apple trees are self-incompatible, which means a tree's own pollen will not fertilize its own flowers. Every apple requires pollen carried, usually by a bee, from a genetically different tree. On top of that, apples are extremely heterozygous: the two copies of each gene in a tree are unusually different from one another. Shuffle two such genomes together and the offspring come out wildly unlike either parent. Plant a seed from a Honeycrisp and you do not get a Honeycrisp. You get a stranger. Most strangers are disappointing, and plenty are bitter enough to make your jaw ache. So the apple hands growers a paradox. The trait that makes the species brilliant, relentless variation, makes it useless as a crop. Humans solved that with a knife. Cut a twig from a tree whose fruit you like, join it to a rooted stump, seal the wound, and the twig goes on growing as itself. The tree that results is not a descendant. It is the same individual, continued. Every Granny Smith traces back to one seedling found in Australia around 1868. Every Red Delicious traces to a single chance tree on Jesse Hiatt's farm in Iowa, which he cut down and which grew back, twice, until he gave up and tasted it. When you eat those varieties you are eating a tree that has been alive, in pieces, for well over a century. The convenience carries a cost. A clone cannot adapt. Every tree of a variety meets a new fungus or a new beetle with identical defenses, which is to say with identical weaknesses, and an orchard of identical trees is an open invitation to anything that can crack one of them. Growers answer with sprays, and the pest answers back, and the cycle has no end in it. Meanwhile the trees that might supply new defenses, or new flavors, grow mostly in the wild apple forests of the Tian Shan in Kazakhstan, where Malus sieversii still stands on its own and no two trees are alike. Those forests are being cleared for housing and grazing. Researchers now collect cuttings from them the way librarians rescue books from a burning building. Occasionally the shuffle is worth the wait. Honeycrisp came out of a breeding program at the University of Minnesota and was released in 1991, after decades of crossing and culling seedlings nobody wanted. Its cells are unusually large, and when you bite down they rupture instead of tearing apart from each other, which floods your mouth with juice and makes the snap the variety is famous for. Every Honeycrisp on Earth is a graft of that one seedling. Which leaves the apple in a strange position. It is among the most thoroughly domesticated plants we have. We control where it grows, how tall it gets, and how long it keeps. And yet we have never once persuaded it to reproduce the way we want. We cannot breed a Honeycrisp. We can only copy the one we happened to find."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the passage says a fruit is not a gift. Cite the exact words it uses instead.",
+            "Explain self-incompatibility and heterozygosity, and show how the two together produce the paradox the author describes.",
+            "The author writes that a grafted tree is not a descendant. Explain what it is instead, citing the text, and why that distinction matters.",
+            "Identify where the passage turns from admiration to warning, and name the move the author uses to signal it.",
+            "Analyze the final two sentences. What claim are they making about human control, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the sweet flesh buys seed dispersal from animals; cite: It is a bribe)",
+            "(self-incompatible means it needs another tree's pollen; heterozygous means its gene copies differ, so offspring never match; together the species varies endlessly, which is useless for growing a known apple)",
+            "(cite: It is the same individual, continued; it matters because the variety cannot change or adapt over time)",
+            "(at The convenience carries a cost; a short blunt sentence pivots from wonder at grafting to the danger of clones)",
+            "(we control the apple completely except for reproduction, which we have never solved; supported by the grafting and Honeycrisp evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["pome → ____", "self-incompatible → ____", "heterozygous → ____", "culling → ____"],
+          "rows": 2,
+          "answers": [
+            "a fruit whose flesh grew from the flower base rather than the ovary",
+            "unable to be fertilized by its own pollen",
+            "carrying two noticeably different copies of the same gene",
+            "removing the ones that do not meet the standard"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage compares researchers collecting cuttings to librarians rescuing books from a burning building. Explain what that comparison claims, and judge whether it is fair.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the wild forests are a genetic library being destroyed, and cuttings are the only rescue; fair if the genes are truly irreplaceable)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: growing every apple as a clone is too risky, and orchards should accept less perfect fruit in exchange for variety. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "key": "bicycle",
+  "title": "The Bicycle That Taught Us to Fly",
+  "blurb": "No engine, no fuel, just you. The most efficient machine ever built, and the bike shop that put the first airplane in the air.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Bicycle That Taught Us to Fly",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-bicycle", "templateLabel": "The Bicycle That Taught Us to Fly", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the two wheels." },
+        {
+          "kind": "image",
+          "imageKey": "bicycle",
+          "notes": ["It has two wheels", "You push the pedals", "The chain turns the back wheel", "You steer with the handlebars", "The bell goes ding ding"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a bicycle. It has two wheels. You sit on the seat. You hold the handlebars. Your feet push the pedals around and around. The wheels turn. At first you wobble. You wobble a lot. Then one day you do not wobble. You are riding. Nobody can tell you how. Your legs just learn it."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bicycles in each row. Write how many in the box.",
+          "emoji": "🚲",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bike    ride" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "bicycle", "right": "two wheels" },
+            { "left": "tricycle", "right": "three wheels" },
+            { "left": "car", "right": "four wheels" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own bicycle. Put yourself on the seat.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bicycle That Taught Us to Fly",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-bicycle", "templateLabel": "The Bicycle That Taught Us to Fly", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "bicycle",
+          "notes": ["No engine, no gas, just you", "Pedals turn a chain", "The chain turns the back wheel", "The wheels hang on wire spokes", "The very first bike had no pedals"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Runs on You",
+          "text": "A bicycle has no engine. It has no gas. It only has you. Your feet push the pedals. The pedals turn a chain. The chain turns the back wheel. The back wheel pushes against the ground, and you roll. When the bike leans one way, you turn the handlebars that same way. The bike comes back under you. That is how you stay up, and you do it without thinking. A bicycle wastes almost nothing. Nearly all of your pushing turns into rolling. That makes it the most useful machine anyone has ever built out of tubes and wire."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What turns the back wheel?", "What does a bicycle use instead of gas?", "What do you do when the bike leans one way?"],
+          "rows": 2,
+          "answers": ["the chain", "you, pushing the pedals", "turn the handlebars that same way"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A bicycle has no ____.", "Your feet push the ____.", "The chain turns the back ____.", "You steer with the ____."],
+          "wordBank": ["engine", "pedals", "wheel", "handlebars"],
+          "answers": ["engine", "pedals", "wheel", "handlebars"]
+        },
+        { "kind": "draw", "prompt": "Draw your bicycle going somewhere you like. Show the chain and the pedals.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bicycle That Taught Us to Fly",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-bicycle", "templateLabel": "The Bicycle That Taught Us to Fly", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "bicycle",
+          "notes": ["The first bike, in 1817, had no pedals", "You pushed it along with your feet", "Early pedals bolted onto the front wheel", "A bigger wheel went further per push", "The chain fixed all of that in 1885"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine With No Pedals",
+          "text": "The first bicycle had no pedals. In 1817, a German named Karl von Drais built a wooden machine with two wheels, one behind the other, and a bar to steer with. You sat on it and pushed the ground with your feet, like a scooter. People laughed at it. They also could not stop riding it. About fifty years later, someone bolted pedals straight onto the front wheel. Now your feet never touched the ground. But there was a problem. The pedals were fixed to the wheel, so one turn of your legs meant exactly one turn of the wheel. If you wanted to go faster, you needed a bigger wheel. So the wheels grew. And grew. By the 1870s the front wheel was nearly as tall as the rider, who sat up on top of it, a long way from the ground. Falling off hurt. Something had to change."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did Karl von Drais leave off his machine?",
+            "How did a rider make that first machine move?",
+            "Why did bicycle wheels keep getting bigger?",
+            "Why do you think people kept riding a machine that hurt them when they fell?"
+          ],
+          "rows": 2,
+          "answers": [
+            "pedals",
+            "by pushing along the ground with their feet",
+            "the pedals were fixed to the wheel, so a bigger wheel carried you further in one turn",
+            "(opinion: it was faster than walking, and it was fun)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Machine With No Pedals", "How to Fix a Flat Tire", "The Tallest Mountain in Germany"],
+          "answers": ["The Machine With No Pedals"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Karl von Drais built his machine out of ____.", "The first pedals were bolted onto the ____ wheel.", "To go faster, a rider needed a bigger ____."],
+          "wordBank": ["wood", "front", "wheel"],
+          "answers": ["wood", "front", "wheel"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you have ridden the tall bicycle of the 1870s? Say why or why not.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bicycle That Taught Us to Fly",
+      "subtitle": "A reading and engineering sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-bicycle", "templateLabel": "The Bicycle That Taught Us to Fly", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bicycle",
+          "notes": ["High wheelers: pedals bolted to the front wheel", "1885: the Rover safety bicycle, chain driven", "Sprockets trade leg turns for wheel turns", "1888: John Boyd Dunlop adds tires full of air", "Spokes are wires under tension, not props", "The hub hangs from the top spokes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Chain That Shrank the Wheel",
+          "text": "For twenty years the fastest bicycle in the world was also the most dangerous. It was called the high wheeler, and it ran on one stubborn rule: the pedals were bolted straight onto the front wheel, so one turn of your legs carried you exactly the distance around that wheel. Speed meant size. By the 1880s the front wheel had grown to nearly five feet across, the rider sat above it, and a stone in the road could pitch him headfirst onto the ground. The fix was a chain. In 1885 an English maker named John Kemp Starley built a machine he called the Rover. It had two small wheels of equal size, a low seat, and a chain running back from the pedals to the rear wheel. The clever part was the sprockets, the toothed wheels the chain wraps around. A large sprocket at the pedals driving a small one at the hub means the back wheel spins several times for every single turn of your legs. You get the speed of a giant wheel without the giant wheel. People called it the safety bicycle, and within about ten years the high wheelers were gone. Three years after the Rover, John Boyd Dunlop wrapped bicycle wheels in tubes of air. Until then riders had rattled along on solid rubber. Pneumatic tires made the bicycle quieter, faster, and far more comfortable, and every car built since has copied the idea. Now look closely at the wheel itself. Those thin spokes are far too skinny to hold anything up by pushing. They are wires pulled tight, hauling the rim inward from every direction at once. The hub does not rest on the spokes underneath it. It hangs from the ones above. Your whole weight hangs from a few strands of steel wire, and you have never once thought about it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why high wheelers had such enormous front wheels.",
+            "How does a chain and a pair of sprockets give a small wheel the speed of a big one?",
+            "The passage says the high wheelers were gone within about ten years. What does that tell you about how much people wanted the safety bicycle?",
+            "Why is it surprising that the hub hangs from the spokes above it rather than resting on the ones below?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the pedals were fixed to the wheel, so the only way to travel further per turn was a larger wheel",
+            "a big sprocket at the pedals turns a small one at the hub, so the back wheel spins several times per leg turn",
+            "(inference: the new design was so much better that riders abandoned the old one almost immediately)",
+            "(inference: thin wires look like they should snap, and we expect a wheel to stand on something)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A few small inventions turned a dangerous machine into the bicycle we still ride today",
+            "England produced more bicycles than any other country",
+            "Riding a high wheeler was the safest way to travel in the 1880s"
+          ],
+          "answers": ["A few small inventions turned a dangerous machine into the bicycle we still ride today"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["sprocket → ____", "pneumatic → ____", "tension → ____"],
+          "rows": 1,
+          "answers": [
+            "a toothed wheel that a chain wraps around",
+            "filled with air",
+            "a pulling force, the opposite of pushing"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which invention in this passage mattered most, the chain or the air-filled tire? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bicycle That Taught Us to Fly",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-bicycle", "templateLabel": "The Bicycle That Taught Us to Fly", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bicycle",
+          "notes": ["The gyroscope explanation is mostly wrong", "A bike stays up by steering into its own fall", "Trail: the tire touches down behind the steering axis", "A riderless bicycle can balance itself", "Tested in 2011 with counter-spinning wheels", "Your body learns it faster than words can"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Bicycle Really Stays Up",
+          "text": "Ask most people how a bicycle stays up and they will say gyroscopes. A spinning wheel resists being tipped, the story goes, and that resistance holds the rider upright. It is a tidy explanation. It is also mostly wrong. In 2011 a team of engineers built a bicycle designed to kill the idea. Above each ordinary wheel they mounted a second wheel and spun it backward at the same speed, canceling the gyroscopic effect down to nothing. They also removed the trail, which is the small distance by which the front tire touches the ground behind the steering axis. Both of the classic explanations were now switched off. Then they gave the machine a push down a smooth floor with nobody on it. It rolled, wobbled, corrected itself, and carried on upright, exactly as an ordinary riderless bicycle does. Whatever holds a bicycle up, it does not need gyroscopes. Here is what actually happens. A bicycle stays up by falling and then steering out of the fall. Lean left, and the front wheel turns left, not because you decide it should but because the geometry and the weight of the front end make it happen on their own. The wheel tracks a curve underneath the falling body and catches it, the way your hand shoots sideways to stop a broom from tipping off your palm. Then the bike leans slightly the other way and the correction repeats. A moving bicycle is not balanced. It is falling continuously and steering out of it, hundreds of times a minute, and you never notice a single one. This is also why nobody can teach you to ride. The corrections are far too small and far too fast for words. Your body has to work them out by falling, which is the only reason training wheels are so useless: they hold you upright and stop you learning the exact thing you came to learn. And it is why the strangest fact about a bicycle is not that it is hard to learn. It is that it is impossible to forget."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What two effects did the 2011 team switch off, and what happened when they pushed the bicycle anyway?",
+            "Explain how a bicycle catches itself. Quote the comparison the passage uses to describe it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author save the line about training wheels for late in the passage?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the gyroscope myth, the 2011 test, and steering into the fall)",
+            "the gyroscopic effect and the trail; the bicycle still balanced itself and rolled on upright",
+            "the front wheel steers under the falling body and catches it; quote: the way your hand shoots sideways to stop a broom from tipping off your palm",
+            "(inform, with detail: it corrects a common belief and reports an experiment; the confident tone is mildly persuasive)",
+            "(it only makes sense once you know balance is learned by falling, so it lands harder at the end)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["gyroscopic → ____", "trail → ____", "riderless → ____", "geometry → ____"],
+          "rows": 1,
+          "answers": [
+            "to do with a spinning wheel resisting being tipped",
+            "the distance by which the front tire touches down behind the steering axis",
+            "with no rider on board",
+            "the shape and angles of how the parts are arranged"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a moving bicycle is not balanced. Explain what it means by that.",
+            "Why would a machine that catches itself with no rider still be difficult for a person to ride?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it is falling and correcting constantly rather than sitting still in balance)",
+            "(inference: a rider adds weight and steering inputs of their own, which fight the bike's built-in corrections until the body learns them)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a child learn to ride with training wheels or without them? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bicycle That Taught Us to Fly",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-bicycle", "templateLabel": "The Bicycle That Taught Us to Fly", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bicycle",
+          "notes": ["Most efficient machine ever built for moving a body", "A human on a bike beats the condor", "1890s: the safety bicycle boom", "Cyclists campaigned for paved roads before cars existed", "The Wright brothers ran a bike shop in Dayton, Ohio", "Bike shop skills built the 1903 Flyer"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bicycle That Taught Us to Fly",
+          "text": "There is a chart that engineers like to show. It plots how much energy it costs a creature to move its own body a given distance. The condor came out best of every animal measured. A human on foot did not do well at all, landing about a third of the way down the list, comfortably beaten by animals with far smaller brains. Then someone thought to measure a human on a bicycle, and the human on a bicycle beat the condor. It was not close. A well-built bicycle turns something like ninety percent of the work your legs do into forward motion, an efficiency no engine has ever approached. Steve Jobs read about that chart as a boy and never let it go. A computer, he liked to say, is a bicycle for our minds. The machine did not stay a toy for long. In the 1890s, once the safety bicycle was cheap enough for ordinary people, something happened that nobody had planned. For the first time a young woman could leave her own street without a horse, a carriage, a chaperone, or anybody's permission. She could simply go. Doctors invented an illness called bicycle face and warned her off. Newspapers mocked the loose trousers she wore in order to pedal. Susan B. Anthony, asked in 1896 what she made of the craze, answered: \"I think it has done more to emancipate women than anything else in the world.\" She was not being poetic. She was describing a machine that made unsupervised distance cheap. The bicycle also built the roads. Through the 1880s and 1890s American cyclists organized themselves into the League of American Wheelmen and lobbied hard for something almost nobody else wanted yet: smooth, paved, publicly funded roads. They got them. When the first automobiles rolled out a few years later, they found a road network already waiting, campaigned for and paid for by people on bicycles. And then there is Dayton, Ohio. Two brothers ran a bicycle shop there. They repaired frames, laced wheels, built their own line of bikes, and in the process absorbed a lesson the aviation experts of the day had missed entirely. Every serious flying machine of the 1890s was designed to be inherently stable, to hold itself level the way a boat does. Orville and Wilbur Wright, who spent their working days fixing machines that stay up only because a person keeps correcting them, assumed the opposite. An aircraft, they decided, should be unstable and controllable, and the pilot should fly it the way a rider rides. That assumption, worked out over bicycle handlebars, is a large part of why their Flyer left the ground at Kitty Hawk in 1903 and their rivals' machines did not. The rest came out of the shop too: the wing-warping wires, the bicycle chains that drove the propellers, the wheel they mounted sideways on a bike to test airfoils by riding it down the street, the wind tunnel they built between repairs. The bicycle is a strange kind of ancestor. No single person invented it. Its basic shape has barely changed since 1890. It has no engine, no fuel, and no computer, and it is still, by a wide margin, the most efficient machine anyone has ever made. It carried the ball bearing, the chain drive, the pneumatic tire, and the tension-spoked wheel into the world, handed all four to the automobile, and then quietly got out of the way. It taught half the population that they could go wherever they liked. And it taught two brothers in Ohio that balance is not something you have. It is something you do."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what Susan B. Anthony meant, and quote her sentence exactly as the passage gives it.",
+            "The author follows the Anthony quote with two short sentences of his own. Analyze what those two sentences are doing to the quote.",
+            "The passage claims four separate debts the modern world owes the bicycle. Name them.",
+            "The final two sentences say balance is not something you have, it is something you do. Analyze what that claim is doing at the end of this passage, and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering efficiency, freedom, roads, and flight)",
+            "(the bicycle gave women independent movement; quote: I think it has done more to emancipate women than anything else in the world)",
+            "(they refuse the reading of the quote as sentiment and reframe it as a plain engineering fact about cost and distance)",
+            "(efficiency, women's independence, paved roads, and the control principle behind powered flight)",
+            "(it ties the physics of riding to the Wright insight and turns the whole passage into one idea; earned by the paragraph on inherent stability)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["emancipate → ____", "inherently → ____", "lobbied → ____", "chaperone → ____"],
+          "rows": 2,
+          "answers": [
+            "to set free from control or restriction",
+            "by its own nature, built in rather than added on",
+            "campaigned to persuade people in power to act",
+            "an adult who went along to supervise a young person"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the Wright assumption is a large part of why their Flyer flew. Explain why the author writes a large part of rather than the reason.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(history rarely has one cause; the hedge keeps the claim honest and defensible)",
+            "(student question, plus a credible source type such as an aviation historian or the Wright brothers' notebooks)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The bicycle, not the car, is the most important machine of the last two hundred years. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

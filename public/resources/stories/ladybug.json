@@ -1,0 +1,304 @@
+{
+  "key": "ladybug",
+  "title": "The Ladybug Is Not a Bug",
+  "blurb": "The red beetle that folds its wings like origami, bleeds on purpose, and once saved California's orange trees.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Ladybug Is Not a Bug",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-ladybug", "templateLabel": "The Ladybug Is Not a Bug", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the spots." },
+        {
+          "kind": "image",
+          "imageKey": "ladybug",
+          "notes": ["It is red with black spots", "It is smaller than your fingernail", "Its red back opens like a door", "Wings are hiding underneath", "It walks on leaves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a ladybug. It is small and round and red. It has black spots on its back. Count them. The ladybug walks up a green leaf. It walks all the way to the top. Then its red back opens up. Two wings come out. The ladybug flies away. Now the leaf is empty. Goodbye, little ladybug."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the ladybugs in each row. Write how many in the box.",
+          "emoji": "🐞",
+          "items": ["4", "6", "2", "5"],
+          "answers": ["4", "6", "2", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "red    spots" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "ladybug", "right": "leaf" },
+            { "left": "fish", "right": "pond" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own ladybug. Give it six spots.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Ladybug Is Not a Bug",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-ladybug", "templateLabel": "The Ladybug Is Not a Bug", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "ladybug",
+          "notes": ["It hunts tiny green bugs called aphids", "It can eat fifty in one day", "Red and black warns birds away", "It tastes bitter, so birds spit it out", "Farmers like having them around"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Little Red Hunter",
+          "text": "A ladybug is small, but it is a hunter. On the back of a leaf live tiny green bugs called aphids. Aphids drink the juice out of plants. Too many aphids can make a plant sick. The ladybug walks along the leaf and eats them. One ladybug can eat fifty aphids in a day. Farmers are glad to see ladybugs in the garden. Birds are not glad. To a bird, red and black means stop. It means this one will taste bad. So the bird flies past, and the ladybug keeps eating."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a ladybug eat?", "Where do aphids live?", "Why do farmers like ladybugs?"],
+          "rows": 2,
+          "answers": ["aphids", "on the back of a leaf", "because ladybugs eat the aphids that make plants sick"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A ladybug eats tiny green ____.", "Aphids drink the juice from ____.", "One ladybug can eat ____ aphids in a day.", "To a bird, red and black means the ladybug will taste ____."],
+          "wordBank": ["aphids", "plants", "fifty", "bad"],
+          "answers": ["aphids", "plants", "fifty", "bad"]
+        },
+        { "kind": "draw", "prompt": "Draw a ladybug on a leaf. Add some aphids for it to hunt.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Ladybug Is Not a Bug",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-ladybug", "templateLabel": "The Ladybug Is Not a Bug", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "ladybug",
+          "notes": ["It is a beetle, not a bug", "In England it is called a ladybird", "The baby looks like a tiny alligator", "Egg, larva, pupa, then adult", "A new ladybug starts out pale with no spots"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Wrong Name, Strange Baby",
+          "text": "Here is a surprise. A ladybug is not a bug at all. It is a beetle. Scientists who study insects often call it a lady beetle instead, and in England people call it a ladybird. None of those names are wrong. They are just different. Here is a bigger surprise. A baby ladybug looks nothing like its parents. It hatches from a tiny yellow egg as a larva: long, black, spiky, and orange in places, crawling over the leaf like a very small alligator. Most people who find one have no idea what it is. Some even squash it, thinking it is a pest. It is not. The larva eats aphids all day long, hundreds of them before it is done growing. When it has eaten enough, the larva glues itself to a leaf and turns into a pupa. Inside that hard shell, its whole body is rebuilt. About a week later the shell splits and a ladybug climbs out. It is pale yellow and soft. Its spots are not there yet. Over the next few hours the shell hardens, the red comes in, and the spots appear one by one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What kind of animal is a ladybug really?",
+            "What does a ladybug larva look like?",
+            "What does the larva do before it turns into a pupa?",
+            "Why do you think people squash ladybug larvae by mistake?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a beetle",
+            "long, black, spiky, and orange in places, like a very small alligator",
+            "it eats hundreds of aphids until it has grown enough",
+            "(inference: it looks nothing like a ladybug, so they think it is a pest)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Wrong Name, Strange Baby", "How to Keep Bees in a Garden", "The Longest Beetle in the World"],
+          "answers": ["Wrong Name, Strange Baby"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A ladybug is really a ____.", "A baby ladybug is called a ____.", "The larva glues itself to a leaf and becomes a ____."],
+          "wordBank": ["beetle", "larva", "pupa"],
+          "answers": ["beetle", "larva", "pupa"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which stage of a ladybug's life is the strangest, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Ladybug Is Not a Bug",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-ladybug", "templateLabel": "The Ladybug Is Not a Bug", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ladybug",
+          "notes": ["The red shells are called elytra", "Elytra are armor, not flying wings", "The real wings fold up underneath", "They spring open in a fraction of a second", "Engineers copy the folding for space gear", "It bleeds bitter yellow fluid from its knees"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wings Under the Red Lid",
+          "text": "A ladybug's red back is not a back. It is a pair of wings. They are called elytra, and they are the ladybug's front wings, hardened into curved shells. They are no good for flying. Their job is armor. They lock down over the ladybug's body like the lid of a box and keep the soft parts safe. The real flying wings are hidden underneath, and they are the strange part. They are much longer than the elytra that cover them. To fit, they fold. Each wing is creased along its veins and packs itself down like a paper fan, and when the ladybug wants to go, the elytra lift, the wings spring open in a fraction of a second, and it is airborne. Engineers have filmed this happening through a see-through fake elytron, glued on in place of the real one, just to watch how the folding works. They want to borrow the trick for things like satellite antennas that must ride to space folded and open perfectly once. The ladybug has one more trick, and it is rude. If something grabs it, it squeezes a drop of yellow liquid out of its knee joints. The liquid stinks and tastes bitter. A bird that bites one ladybug remembers, and the red and black tells it which insects to leave alone. The color is not decoration. It is a warning label."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What are elytra, and what are they for?",
+            "Why do the flying wings have to fold?",
+            "Why would an engineer care how a ladybug packs its wings?",
+            "The passage says the color is a warning label. Explain what that means, and who the warning is for."
+          ],
+          "rows": 2,
+          "answers": [
+            "the hardened front wings; they work as armor over the body, not for flying",
+            "(they are much longer than the elytra that cover them, so they must pack down to fit)",
+            "(inference: they want folding designs for things like satellite antennas that launch folded and must open once, perfectly)",
+            "(the red and black tells birds it tastes bitter, so the warning is for predators)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A ladybug's red shells are armor hiding folded wings, and its color is a real warning",
+            "Ladybugs are the fastest fliers of any insect",
+            "Engineers invented the folding wing and taught it to insects"
+          ],
+          "answers": ["A ladybug's red shells are armor hiding folded wings, and its color is a real warning"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["elytra → ____", "creased → ____", "airborne → ____"],
+          "rows": 1,
+          "answers": ["the hardened front wings that cover a beetle's body", "folded along a line so it can pack down", "up in the air and flying"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is the ladybug better protected by its armor or by its color? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Ladybug Is Not a Bug",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-ladybug", "templateLabel": "The Ladybug Is Not a Bug", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ladybug",
+          "notes": ["Family Coccinellidae", "Named for Our Lady, the Virgin Mary", "Spots show species, never age", "About five thousand named species", "Aposematism: color as a warning signal", "They spend winter piled in huddles"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Everything You Know About the Spots",
+          "text": "Almost everything people think they know about ladybug spots is wrong. Start with the oldest story. In medieval Europe, aphids were destroying crops, and farmers had no way to fight them. They prayed to the Virgin Mary. Small red beetles arrived and ate the aphids, and the farmers gave them her name: Our Lady's beetle. In England it became ladybird. In America it became ladybug, which is unfortunate, because the animal is not a bug. True bugs are a separate group with piercing mouthparts. A ladybug is a beetle. Entomologists tend to say lady beetle and quietly correct the rest of us. Now the myth you have probably heard: that you can count a ladybug's spots to learn its age. You cannot. The spots do not change. What they tell you is the species. The seven-spotted ladybug wears seven and always has, from the hour its shell hardened. There are roughly five thousand species of lady beetle, and they come in red, orange, yellow, black, and combinations of all of them, with spots, stripes, or nothing at all. The color itself is doing real work. Biologists call it aposematism, a warning signal aimed at anything with eyes and an appetite. Red on black is loud, easy to remember, and it is not a bluff. Pinch a ladybug and it bleeds on purpose, pushing a bitter yellow fluid out through its leg joints. A young bird tries one, gags, and never repeats the mistake. Every ladybug afterward is protected by that bird's bad memory. Winter reveals another habit. As the cold comes, ladybugs stop hunting and gather. They pack into rock cracks, under bark, beneath leaf litter, sometimes in the corners of houses, thousands of bodies pressed together in one huddle. They are not hibernating exactly. They are waiting, burning stored fat, holding on for the first warm day and the first aphids of spring."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "How did the ladybug get its name, according to the passage?",
+            "If spots do not tell you a ladybug's age, what do they tell you?",
+            "The passage says the warning color is not a bluff. Quote the sentence that proves it, and explain why it proves it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the name, the spot myth, and the warning color)",
+            "medieval farmers prayed to the Virgin Mary, the beetles ate the aphids, so they were called Our Lady's beetle",
+            "the species it belongs to",
+            "quote: Pinch a ladybug and it bleeds on purpose, pushing a bitter yellow fluid out through its leg joints; the ladybug really is bitter, so the color tells the truth",
+            "(inform, with a light entertaining tone: it defines terms and corrects myths, but jokes about entomologists correcting us)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["aposematism → ____", "entomologist → ____", "bluff → ____", "species → ____"],
+          "rows": 1,
+          "answers": ["bright coloring used as a warning to predators", "a scientist who studies insects", "a threat with nothing behind it", "one particular kind of animal"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says every ladybug is protected by one bird's bad memory. Explain how that works.",
+            "Why might it be risky for a ladybug to be the first one a young bird ever tries?"
+          ],
+          "rows": 3,
+          "answers": ["(the bird learns from one bad taste and then avoids all of them, so the whole group benefits)", "(inference: the lesson costs that individual its life; the warning only protects the ones that come after)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the passage calls the American name ladybug unfortunate. Should we change a common name to make it scientifically correct? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Ladybug Is Not a Bug",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-ladybug", "templateLabel": "The Ladybug Is Not a Bug", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ladybug",
+          "notes": ["Family Coccinellidae", "Rodolia cardinalis: the vedalia beetle", "1889: it saved California citrus", "Harmonia axyridis: introduced, then invasive", "Specialist eats one thing, generalist eats anything", "The founding case of biological control"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Beetle That Saved the Orange Groves, and the One That Should Have Stayed Home",
+          "text": "In 1868 a nurseryman in Menlo Park, California, imported some acacia plants from Australia. Something came with them. Icerya purchasi, the cottony cushion scale, is a small sap-sucking insect that wraps itself in a white fluted egg sac and clamps onto a branch, and it has almost no enemies outside Australia. In California it found endless citrus and nothing to stop it. Within twenty years it was killing orange and lemon trees faster than growers could replant. Southern California's citrus industry, then young and enormous in ambition, was close to finished. Orchards were being cut down and burned. Charles Riley, the chief entomologist of the United States Department of Agriculture, had an idea that sounded absurd to most people: if the pest had no enemies here, go find its enemies where it came from. Congress had blocked the department from paying for foreign travel, so Riley sent Albert Koebele to Australia in 1888 on the excuse of attending an exhibition in Melbourne. Koebele hunted through Australian orchards for whatever was eating cottony cushion scale and shipped what he found back to Daniel Coquillett in Los Angeles. Among the shipments were a few dozen small red beetles, Rodolia cardinalis, now called the vedalia beetle. Coquillett released them under a tented orange tree in a Los Angeles grove and waited. The beetles ate. They bred. The tent came off, and they spread through the county on their own. Within about two years the scale had collapsed and the orange shipments were rising again. The whole rescue cost a couple of thousand dollars. It is still the most quoted success in the history of biological control, and it created an idea that felt like a law of nature: import a predator, solve a pest. That idea has a receipt attached, and North America is still paying it. Harmonia axyridis, the harlequin lady beetle, was brought over from Asia through the twentieth century to do the same job on aphids. It did the job well. It also did everything else. It is larger and greedier than native ladybugs, and it eats them, including their eggs and larvae. The nine-spotted ladybug, once so common that New York made it the state insect, became so scarce that for years nobody could find one, and a search project eventually turned up a small population on Long Island. Harlequins swarm into houses by the thousands each fall, bite, stain walls with reflex blood, and get harvested with wine grapes, where a few of them are enough to taint an entire batch. Same family, same logic, opposite result. The vedalia beetle was a specialist that ate one thing and starved without it. The harlequin was a generalist that would eat almost anything, and a generalist you release is a generalist you cannot recall. The lesson took a century to learn, and it was expensive."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why did the cottony cushion scale spread so freely in California? Cite the evidence.",
+            "Explain the difference between a specialist and a generalist, and why that difference decided both outcomes. Cite the sentence that states the rule.",
+            "Identify the shift in the passage: where does it turn from success to warning, and how does the author signal it?",
+            "The author writes that the idea has a receipt attached. Analyze what that metaphor is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the vedalia success and the harlequin backfire)",
+            "(nothing here ate it; cite: it has almost no enemies outside Australia)",
+            "(a specialist eats one prey and dies out without it; a generalist eats anything and cannot be contained; cite: a generalist you release is a generalist you cannot recall)",
+            "(at That idea has a receipt attached; a short blunt sentence pivots from triumph to cost)",
+            "(it frames the 1889 success as a debt paid later by native ladybugs; earned by the nine-spotted evidence and the harlequin damage)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["entomologist → ____", "biological control → ____", "specialist → ____", "generalist → ____"],
+          "rows": 2,
+          "answers": [
+            "a scientist who studies insects",
+            "using one living thing to control a pest instead of a chemical",
+            "an animal that depends on one kind of food",
+            "an animal that will eat many different foods"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The vedalia release is called the most quoted success in the field. Explain why one famous success can be dangerous for the people who come after it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(it made the method look safe and simple, so later releases skipped the caution that the first case happened to earn)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: releasing one species to control another is too risky to ever be worth it. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "key": "car",
+  "title": "The Machine That Carries Its Own Push",
+  "blurb": "Four wheels, a controlled explosion, and a stack of decisions made by people who never met you.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Machine That Carries Its Own Push",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-car", "templateLabel": "The Machine That Carries Its Own Push", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the wheels with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "car",
+          "notes": ["It has four wheels", "The engine hides under the hood", "Lights help it see at night", "The round wheel steers it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a car. A car has four wheels. The wheels go round and round. The car has a big engine in the front. The engine makes the car go. Mom holds the round wheel inside. It is called a steering wheel. It tells the car which way to turn. Beep beep. Off we go."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the cars in each row. Write how many in the box.",
+          "emoji": "🚗",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "car    go" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "car", "right": "road" },
+            { "left": "boat", "right": "water" },
+            { "left": "plane", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own car. Give it four wheels and a door.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Machine That Carries Its Own Push",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-car", "templateLabel": "The Machine That Carries Its Own Push", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "car",
+          "notes": ["Tires are filled with air", "The engine burns fuel to make it go", "Brakes squeeze the wheels to stop", "Headlights help the driver see", "A car has about 30,000 parts"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Part Has a Job",
+          "text": "A car is made of many parts, and each part has a job. The wheels turn so the car can roll. Each wheel has a rubber tire full of air. The air makes the ride soft and helps bumpy roads feel smoother. Under the hood sits the engine. It burns fuel and turns the wheels. The steering wheel turns the front wheels left or right. The brakes squeeze the wheels and slow them down. The lights let the driver see at night, and let other people see the car. Every part is doing one small job. Together they get you home."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is inside each tire?", "Where does the engine sit?", "What do the brakes do?"],
+          "rows": 2,
+          "answers": ["air", "under the hood", "they squeeze the wheels and slow them down"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Each wheel has a rubber ____ full of air.", "The ____ burns fuel and turns the wheels.", "The ____ slow the car down.", "The steering wheel turns the ____ wheels."],
+          "wordBank": ["tire", "engine", "brakes", "front"],
+          "answers": ["tire", "engine", "brakes", "front"]
+        },
+        { "kind": "draw", "prompt": "Draw a car on a road. Add its headlights and four tires.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Machine That Carries Its Own Push",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-car", "templateLabel": "The Machine That Carries Its Own Push", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "car",
+          "notes": ["The engine burns fuel inside metal tubes called cylinders", "Brakes turn motion into heat", "A car has about 30,000 parts", "The first car had only three wheels", "Race car brakes can glow red"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Machines in One Car",
+          "text": "Push a toy car and it rolls, then stops. A real car carries its own push around with it. That push comes from the engine. Gasoline holds a lot of energy locked inside it. Inside the engine are metal tubes called cylinders. A tiny spray of gasoline mixes with air inside a cylinder. A spark sets it off, and the mixture burns in a fast puff. The puff shoves a piston down the tube. In each cylinder that happens dozens of times every second, and all those little shoves add up into spinning. The spinning travels down a shaft, out to the wheels, and the car moves. Stopping works the opposite way. When the driver presses the brake pedal, pads squeeze against a metal disc on each wheel. The rubbing turns the car's motion into heat. Brake discs on a race car can glow red. So a car is really two machines in one. One makes motion out of fuel. The other turns motion back into heat when you want to stop."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where does a car's push come from?",
+            "What does the spark do inside a cylinder?",
+            "What do the brakes turn the car's motion into?",
+            "Why do you think a real car has to carry an engine, but a toy car does not?"
+          ],
+          "rows": 2,
+          "answers": [
+            "from the engine",
+            "it sets the fuel and air mixture burning",
+            "heat",
+            "(inference: a toy car borrows its push from your hand, so it stops when the push runs out)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Two Machines in One Car", "How to Wash the Family Car", "The Longest Road in the World"],
+          "answers": ["Two Machines in One Car"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Inside the engine are metal tubes called ____.", "A spark makes the fuel and air burn in a fast ____.", "Brake pads squeeze a metal ____ on each wheel."],
+          "wordBank": ["cylinders", "puff", "disc"],
+          "answers": ["cylinders", "puff", "disc"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of a car would be hardest to do without, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Machine That Carries Its Own Push",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-car", "templateLabel": "The Machine That Carries Its Own Push", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "car",
+          "notes": ["Karl Benz patented the first car in 1886", "It had three wheels and a steering tiller", "Bertha Benz drove it 66 miles in 1888", "She bought fuel at a pharmacy", "She invented brake linings on the trip", "She took her two teenage sons along"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Woman Who Took the First Car",
+          "text": "In 1886, Karl Benz patented a machine that nobody wanted. It had three wheels, a bench seat, and a small engine that popped and rattled. Benz called it the Patent-Motorwagen. People called it a nuisance. Benz was a careful man, and he kept tinkering instead of selling. His wife, Bertha Benz, had paid for much of the work with her own money. She decided the machine needed proof, not more tinkering. One morning in August 1888, before her husband woke up, she pushed the car out of the workshop with her two teenage sons and drove it about 66 miles to visit her mother in Pforzheim. She left a note. Nothing about the trip was easy. There were no gas stations, because there were no cars. When the tank ran low she stopped at a pharmacy in Wiesloch and bought a cleaning fluid called ligroin, which is why that pharmacy is remembered today as the world's first filling station. When the fuel line clogged, she cleared it with her hat pin. When a wire wore bare, she wrapped it with a garter. When the wooden brake blocks gave out on the hills, she found a shoemaker and had him nail leather over them, inventing brake linings on the spot. She arrived at dusk and sent her husband a telegram. Newspapers picked up the story. Suddenly the machine was not a nuisance. It was a thing that could carry you 66 miles. Bertha Benz never held a patent. She held the steering tiller."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why do you think Bertha Benz left before her husband woke up?",
+            "What problem did each of these solve on the trip: the hat pin, the garter, the shoemaker's leather?",
+            "People called the car a nuisance. What changed their minds, and why did that work?",
+            "The passage ends by saying she never held a patent, she held the steering tiller. What is the author getting at?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(inference: he was cautious and would have stopped her, and she wanted proof rather than permission)",
+            "the hat pin cleared the clogged fuel line, the garter covered a bare wire, the leather replaced worn brake blocks",
+            "(a long real trip proved the machine worked, and newspapers spread it; a demonstration beat an argument)",
+            "(inference: the credit went to the inventor, but the person who proved it mattered just as much)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A long unauthorized drive turned an unwanted invention into a real car",
+            "Pharmacies in Germany used to sell cleaning fluid",
+            "Karl Benz was a careless engineer who built a bad machine"
+          ],
+          "answers": ["A long unauthorized drive turned an unwanted invention into a real car"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["patented → ____", "nuisance → ____", "tinkering → ____", "filling station → ____"],
+          "rows": 1,
+          "answers": [
+            "registered an invention so other people cannot copy it",
+            "something annoying that bothers people",
+            "making small fiddly changes to a machine",
+            "a place where you stop to buy fuel"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a paragraph: Bertha Benz fixed four problems on the road using whatever she had with her. Pick the fix that impresses you most and explain why. Then describe a time you solved a problem with what was on hand.",
+          "rows": 7
+        }
+      ]
+    },
+    "5": {
+      "title": "The Machine That Carries Its Own Push",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-car", "templateLabel": "The Machine That Carries Its Own Push", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "car",
+          "notes": ["Nikolaus Otto worked out the four-stroke cycle in 1876", "Suck, squeeze, bang, blow", "A gasoline engine wastes about three quarters of its fuel as heat", "Electric motors deliver about ninety percent as motion", "Regenerative braking puts energy back into the battery"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Most of Your Gas Never Moves the Car",
+          "text": "Fill a car's tank with gasoline and you are buying energy. Roughly three quarters of it will never move the car an inch. Here is where it goes. A gasoline engine runs on a cycle worked out by Nikolaus Otto in 1876, and it repeats four steps over and over in every cylinder. Intake: a piston slides down and pulls in a mist of fuel and air. Compression: the piston rises and squeezes that mist into a space the size of a thimble. Power: a spark ignites it, the mixture burns, and the sudden expansion drives the piston back down. Exhaust: the piston rises again and pushes the burnt gas out. Suck, squeeze, bang, blow, as mechanics say. Only the third step does any work. Burning fuel makes heat, and heat is a clumsy way to make motion. Most of the heat pours straight out of the tailpipe or soaks into the metal of the engine, which is why a car needs a radiator, a fan, and a couple of gallons of coolant just to keep from cooking itself. A typical gasoline engine converts about a quarter of the energy in its fuel into turning the wheels. The rest is warm air. An electric motor does not burn anything. It uses a magnetic field to pull a shaft around, and it delivers around ninety percent of the electricity it draws as motion. It can also run backwards. Take your foot off the pedal and the motor becomes a generator, slowing the car and pushing charge back into the battery, so some braking energy is recovered instead of thrown away as brake heat. None of this makes electric cars free of cost. The electricity has to be generated somewhere, and building a battery takes mining, energy, and water. But the comparison is worth understanding clearly. The gasoline engine is a remarkable machine that spent a century getting better at a job that is thermodynamically hard. The electric motor is a simpler machine doing an easier job."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the four steps of the Otto cycle in order, and say which one does the work.",
+            "The passage calls heat a clumsy way to make motion. Explain what that means and quote one detail that supports it.",
+            "Is this passage written to inform, to persuade, or to sell electric cars? Point to two details that support your answer.",
+            "Why does the author include the part beginning None of this makes electric cars free of cost? What would the passage lose without it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the four-stroke cycle, waste heat, and the electric motor comparison)",
+            "intake, compression, power, exhaust; only the power step does work",
+            "(most fuel energy becomes heat rather than motion; quote: The rest is warm air, or the radiator and coolant detail)",
+            "(inform: it defines terms, gives figures, and admits costs on both sides; the closing lines lean slightly persuasive)",
+            "(it concedes the other side, which keeps the passage honest; without it the piece would read as an advertisement)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["ignites → ____", "generator → ____", "recovered → ____", "thermodynamically → ____"],
+          "rows": 1,
+          "answers": [
+            "sets on fire, starts something burning",
+            "a machine that turns motion into electricity",
+            "got back and reused instead of wasted",
+            "having to do with heat and how it moves and changes into other energy"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "A gasoline engine needs a radiator, a fan, and coolant. What does that equipment tell you about where the fuel's energy actually ends up?",
+            "Why can an electric car recover braking energy when a gasoline car mostly cannot?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: so much fuel energy becomes unwanted heat that the car needs a whole system to dump it)",
+            "(inference: an electric motor can run in reverse as a generator; a gasoline engine cannot turn motion back into fuel)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a short opinion paragraph: knowing that three quarters of gasoline becomes heat, should new gasoline cars still be sold? Take a position and support it with two reasons.",
+          "rows": 8
+        }
+      ]
+    },
+    "6": {
+      "title": "The Machine That Carries Its Own Push",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-car", "templateLabel": "The Machine That Carries Its Own Push", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "car",
+          "notes": [
+            "Ford's moving line cut Model T chassis time from about 12 hours to about 90 minutes",
+            "The Model T fell from about 850 dollars to under 300",
+            "Leaded gasoline sold in the US from 1923 until 1996",
+            "The last country stopped selling it in 2021",
+            "Volvo gave away the three-point seat belt patent in 1959",
+            "Nils Bohlin designed fighter ejection seats before seat belts"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Four Decisions Inside Every Car",
+          "text": "A car looks like one invention. It is not. It is a stack of decisions, made by different people, in different centuries, for different reasons, and you are sitting inside all of them at once. Four of those decisions are worth knowing. The first was about speed of building. In 1913, at Ford's Highland Park plant, engineers stopped moving workers to the car and started moving the car to the workers. A chassis crawled along a rope-drawn line while each person did one small task, over and over. The time to assemble a Model T chassis fell from around twelve hours to about ninety minutes. The price fell with it, from around 850 dollars at launch to under 300, and a machine that had been a rich man's toy became something a factory worker could own. The same decision made the work numbingly repetitive. Ford had to double wages to five dollars a day just to keep anyone on the line. Cheapness and boredom arrived together, and they were the same decision. The second was about knock. Early engines pinged and hammered when the fuel ignited too early, which limited how hard they could be pushed. In 1921 a General Motors engineer named Thomas Midgley Jr. found that adding a lead compound to gasoline stopped the knock cleanly. It worked. It was also poison, and people knew it was poison. Workers at the plants that made the additive hallucinated and died, and newspapers reported it at the time. Leaded gasoline sold anyway, for more than seventy years, and every car burning it sprayed lead into the air children breathed. The geochemist Clair Patterson, who was trying to measure the age of the Earth and kept finding lead contamination in everything he touched, spent decades forcing the truth into the open. The United States finished banning it for road cars in 1996. The last country stopped selling it in 2021. Midgley, who also invented the refrigerant gases that later tore a hole in the ozone layer, may have harmed more of the atmosphere than any other single person, and he was trying to be helpful the whole time. The third was about crashing. Cars already had lap belts, which held your hips and let your head keep going. In 1959 a Volvo engineer named Nils Bohlin, who had spent his earlier career designing ejection seats for fighter pilots, worked out a belt that anchored at three points, held the chest and hips together, and could be fastened with one hand in one motion. Volvo then did something companies almost never do. It made the patent free for anyone to use, on the grounds that the invention was worth more to the world open than owned. Every three-point belt you have ever clicked shut descends from that choice. The fourth decision is yours, and it has not been made yet. It covers what a car should burn, where its battery metals come from, whether it should drive itself, and how much of a city should be paved over to park it. Every earlier decision in this list looked obvious to the people making it. Two of them were right. One of them poisoned a century. The people who put lead in gasoline were not villains in a story. They were engineers solving the problem directly in front of them, and they did not look far enough past it. That is the thing to carry out of this passage. A car is not a machine. It is an argument, still running."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by Cheapness and boredom arrived together, and they were the same decision. Cite the evidence that supports it.",
+            "The author writes that Midgley was trying to be helpful the whole time. Why include that line instead of simply condemning him?",
+            "Identify the structure of this passage. How does the author organize it, and what does numbering the decisions accomplish?",
+            "The passage ends with A car is not a machine. It is an argument, still running. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the automobile is the product of separate human choices with mixed consequences)",
+            "(the moving line made cars affordable and the work miserable at once; cite: Ford had to double wages to five dollars a day just to keep anyone on the line)",
+            "(it makes the harm harder to dismiss as villainy and warns the reader they could make the same mistake)",
+            "(four numbered decisions in order, three historical and one aimed at the reader; the numbering makes the car look assembled from choices rather than invented whole)",
+            "(it reframes the car as an unfinished set of decisions the reader participates in; earned if the four examples show real choices with real consequences)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["chassis → ____", "additive → ____", "contamination → ____", "descends from → ____"],
+          "rows": 2,
+          "answers": [
+            "the frame of a car that the rest is built onto",
+            "a substance mixed into something else to change how it behaves",
+            "unwanted material spread through something and making it impure",
+            "comes down from an earlier thing as its source"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Volvo gave its seat belt patent away. Explain the trade Volvo made, and why a company might judge it worth making.",
+            "The passage says the fourth decision is yours. Name one part of that decision and explain who actually holds the power to make it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it gave up exclusive profit for lives saved and lasting reputation; the goodwill and the standard it set outlast the patent)",
+            "(opinion with reasoning: buyers, voters, city planners, and manufacturers all hold parts of it)",
+            "(student question + a credible source type, such as a peer-reviewed study or a transportation agency report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The engineers who put lead in gasoline should be judged by what they knew at the time, not by what we know now. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

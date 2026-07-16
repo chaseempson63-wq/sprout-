@@ -1,0 +1,313 @@
+{
+  "key": "earth",
+  "title": "The Blue Planet We Named After Dirt",
+  "blurb": "The only world we know with liquid water and life, spinning at a thousand miles an hour without you feeling a thing.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Blue Planet We Named After Dirt",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-earth", "templateLabel": "The Blue Planet We Named After Dirt", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. This is the planet you live on." },
+        {
+          "kind": "image",
+          "imageKey": "earth",
+          "notes": ["You live on it", "The blue parts are water", "The green parts are land", "It spins every day", "It has one moon"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is Earth. Earth is the planet we live on. Earth is round like a big ball. The blue parts are water. The green parts are land. The white parts are clouds. You live on the land. Earth spins all day and all night. When your side turns away from the sun, it gets dark. Then you go to sleep."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the clouds in each row. Write how many in the box.",
+          "emoji": "☁️",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "Earth    spin" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each color to what it is.",
+          "pairs": [
+            { "left": "blue", "right": "water" },
+            { "left": "green", "right": "land" },
+            { "left": "white", "right": "clouds" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the Earth. Color the water blue and the land green.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Blue Planet We Named After Dirt",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-earth", "templateLabel": "The Blue Planet We Named After Dirt", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "earth",
+          "notes": ["Earth spins once every day", "Most of it is covered in water", "It has one moon", "The spin makes day and night", "You cannot feel it moving"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ball You Are Standing On",
+          "text": "Earth is a huge ball of rock, and you are standing on it right now. Earth spins. It turns all the way around one time every day. When your side faces the sun, you get daytime. When your side turns away, you get night. You cannot feel the spin. Everything spins with you. Your house spins. Your dog spins. The air spins. Even the clouds spin. Earth also has a moon. The moon goes around Earth again and again. Most of Earth is covered in water. That is why it looks blue from space."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is Earth made of?", "What do you get when your side faces the sun?", "How many moons does Earth have?", "Why does Earth look blue from space?"],
+          "rows": 2,
+          "answers": ["a huge ball of rock", "daytime", "one", "because most of it is covered in water"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Earth turns around one time every ____.", "When your side turns away from the sun, you get ____.", "Earth has one ____.", "Most of Earth is covered in ____."],
+          "wordBank": ["day", "night", "moon", "water"],
+          "answers": ["day", "night", "moon", "water"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "Earth", "right": "spins" },
+            { "left": "the moon", "right": "goes around Earth" },
+            { "left": "the sun", "right": "gives us daytime" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw Earth from space. Add the clouds and the moon beside it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Blue Planet We Named After Dirt",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-earth", "templateLabel": "The Blue Planet We Named After Dirt", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "earth",
+          "notes": ["Water covers about 71 percent of it", "The third planet from the sun", "The only planet not named after a god", "The deepest ocean is nearly 7 miles down", "The only world we know that has life"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Water Planet With the Wrong Name",
+          "text": "From space, Earth looks blue. There is a good reason for that. Water covers almost three quarters of the planet. Only about one quarter is land, and that small part is where every city, every forest, and every person sits. The oceans are deep, too. In some places the water goes down almost seven miles. Here is something strange. We named our planet Earth, and the old word earth means soil, or ground, or dirt. Every other planet in our solar system is named after an ancient god. Mars was a god of war. Jupiter was the king of the gods. Our planet ended up named after the stuff under our feet, even though most of it is ocean. Earth is also the only planet we know of where water stays liquid on the surface. It is not frozen solid. It is not boiled away into steam. It sits there, wet, for billions of years. That one fact may be the reason Earth is the only place we have ever found life."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How much of Earth is covered by water?",
+            "What does the old word earth mean?",
+            "How is Earth's name different from the names of the other planets?",
+            "Why do you think liquid water might be important for life?"
+          ],
+          "rows": 2,
+          "answers": [
+            "almost three quarters of it",
+            "soil, or ground, or dirt",
+            "every other planet is named after an ancient god",
+            "(inference: living things need water they can drink and live in, not ice or steam)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Water Planet With the Wrong Name", "How to Swim in the Ocean", "The Roman Gods and Their Stories"],
+          "answers": ["The Water Planet With the Wrong Name"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["From space, Earth looks ____.", "The planet ____ was named after a god of war.", "Earth is the only planet we know where water stays ____ on the surface.", "Earth is the only place we have ever found ____."],
+          "wordBank": ["blue", "Mars", "liquid", "life"],
+          "answers": ["blue", "Mars", "liquid", "life"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you could rename our planet, what would you call it, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Blue Planet We Named After Dirt",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-earth", "templateLabel": "The Blue Planet We Named After Dirt", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "earth",
+          "notes": ["Spins about 1,000 mph at the equator", "Orbits the sun at about 67,000 mph", "Tilted over by 23.4 degrees", "One trip around the sun takes 365 days", "Sunlight reaches us in about 8 minutes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Sitting Still at a Thousand Miles an Hour",
+          "text": "Right now you are sitting still. You are also moving faster than a jet plane. Both of those things are true at the same time. Earth spins once about every 24 hours. If you stand near the equator, that spin is carrying you east at roughly 1,000 miles per hour. At the same time, the whole planet is racing around the sun at about 67,000 miles per hour. You feel none of it. The reason is that everything around you is moving too. The ground, the air, your chair, your glass of water, all of it travels at the same speed in the same direction. You only feel motion when your speed or your direction changes. A car ride is boring in a straight line and exciting on a sharp corner. Earth's spin is smooth and steady, so it feels like nothing at all. The spin does one important job. It gives us day and night. But it is Earth's tilt, not its spin, that gives us the seasons. Earth leans over by about 23 degrees, and it keeps leaning the same way all year. For half the year your part of the planet leans toward the sun, so the light arrives strong and straight down and the days run long. For the other half it leans away, and the same sunlight arrives slanted, spread thin across more ground. That lean is the whole reason for summer and winter. It has nothing to do with being closer to the sun."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says you are sitting still and also moving faster than a jet plane. Explain how both can be true.",
+            "Why can you feel a car take a sharp corner but not feel Earth spinning?",
+            "A friend says summer happens because Earth moves closer to the sun. Use the passage to explain why that is wrong.",
+            "A person standing near the North Pole is carried east much more slowly than a person at the equator. Why do you think that is?"
+          ],
+          "rows": 2,
+          "answers": [
+            "you are still compared to the ground, but the ground itself is moving fast",
+            "the corner changes your direction; Earth's spin is smooth and steady so nothing changes",
+            "seasons come from Earth's tilt, not from distance to the sun",
+            "(inference: the pole travels a much smaller circle in the same 24 hours)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Earth's steady spin and its tilt explain day, night, and the seasons, even though we never feel the motion",
+            "Jet planes are the fastest machines that people have ever built",
+            "The sun travels around Earth once every 24 hours"
+          ],
+          "answers": ["Earth's steady spin and its tilt explain day, night, and the seasons, even though we never feel the motion"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["equator → ____", "steady → ____", "slanted → ____"],
+          "rows": 1,
+          "answers": ["the imaginary line around the widest part of Earth", "smooth and unchanging", "arriving at an angle instead of straight down"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the seasons to a younger child. Use the tilt in your explanation, and give one example from your own year.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Blue Planet We Named After Dirt",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-earth", "templateLabel": "The Blue Planet We Named After Dirt", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "earth",
+          "notes": ["About 4.5 billion years old", "Air: 78 percent nitrogen, 21 percent oxygen", "The Great Oxidation Event: 2.4 billion years ago", "Outer core: liquid iron, 1,800 miles down", "The magnetic field makes the aurora", "Mars lost its field, then lost its air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Planet That Built Its Own Sky",
+          "text": "Take a breath. About one fifth of what just entered your lungs is oxygen, and none of it was here when the planet formed. Earth is roughly 4.5 billion years old. For the first two billion of those years, the air was mostly nitrogen and carbon dioxide, with almost no free oxygen at all. Any animal alive today would have suffocated in minutes. Then something very small changed everything. Tiny ocean bacteria, called cyanobacteria, worked out how to use sunlight to split water apart and build sugar out of the pieces. Oxygen was the leftover, the waste product they had no use for, and they poured it into the sea by the ton. For a long time the ocean simply swallowed it. Iron dissolved in the water soaked up the oxygen and sank as rust, laying down striped red rock that miners still dig out of the ground today. Eventually the iron ran out. The oxygen had nowhere left to go, so it began escaping into the sky. Scientists call this the Great Oxidation Event, and it happened about 2.4 billion years ago. It was a catastrophe. Most of the life that existed at the time was poisoned by the strange new gas. It was also the reason you exist, because oxygen carries enough energy to run a body as hungry and demanding as yours. So the air is not just something Earth has. It is something life made. The sky shields us in a second way that has nothing to do with breathing. About 1,800 miles under your feet, Earth's outer core is liquid iron, and it churns. That churning generates a magnetic field that reaches far out into space and deflects the stream of charged particles the sun throws at us without pause. Where the field funnels those particles down near the poles, they crash into the air and make it glow, and we call it the aurora. Mars has no such field. Its air was stripped away long ago, and what is left is thin enough to be almost nothing. Earth is not simply a good place that life happened to land on. Earth and life have been rebuilding each other for billions of years."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did cyanobacteria do with sunlight, and what did they leave behind? Quote the phrase the passage uses for the oxygen.",
+            "The passage calls the Great Oxidation Event a catastrophe and also the reason you exist. Explain both.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author bring up Mars at the end? What does that comparison prove?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering life making the oxygen + the magnetic field shielding the air)",
+            "they split water with sunlight to build sugar; quote: the waste product they had no use for",
+            "it poisoned most life then living, and it made animal life like ours possible",
+            "(inform, with detail: it defines terms and gives dates and figures; the ending turns slightly persuasive)",
+            "(a planet without a magnetic field lost its air, which shows what Earth's field is doing for us)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["dissolved → ____", "catastrophe → ____", "deflects → ____", "aurora → ____"],
+          "rows": 1,
+          "answers": ["mixed into water so completely it cannot be seen", "a disaster on a huge scale", "turns something aside so it does not hit", "glowing light near the poles made by particles hitting the air"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the ocean swallowed the oxygen until the iron ran out. Explain why the oxygen only reached the sky after that.",
+            "The last line says Earth and life have been rebuilding each other. Give one example from the passage that supports it."
+          ],
+          "rows": 3,
+          "answers": ["(the iron was using up the oxygen; once it was gone, nothing was left to absorb it)", "(bacteria made the oxygen in the air that animals now breathe)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: if life built the air we breathe, does that make people more responsible for the planet, or less? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Blue Planet We Named After Dirt",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-earth", "templateLabel": "The Blue Planet We Named After Dirt", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "earth",
+          "notes": ["Diameter about 7,918 miles", "The densest planet in the solar system", "Inner core: solid iron, around 5,400 C", "Crust is only 3 to 43 miles thick", "Plates drift at fingernail speed", "Pale Blue Dot: Voyager 1, 1990"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Thin Skin on a Ball of Iron",
+          "text": "Earth is about 7,900 miles from one side to the other, and almost none of it has anything to do with you. Start at the middle and work outward. The inner core is a ball of solid iron roughly seventy percent as wide as the moon, sitting at around 5,400 degrees Celsius, about as hot as the surface of the sun. It should be molten at that temperature. It is not, because the weight of the entire planet is pressing down on it and squeezing it solid. Around the inner core swirls the outer core, liquid iron and nickel, moving in slow currents that generate Earth's magnetic field. Above that sits the mantle, roughly 1,800 miles of hot rock that creeps like extremely stiff tar. And on top of all of it floats the crust: three to forty miles of cold stone. On a globe the size of an apple, the crust would be thinner than the skin. Everything you have ever known lives in that skin, and in the thin haze of gas above it. If Earth were shrunk to the size of a basketball, the atmosphere would be about as thick as a coat of paint. Every mountain, every ocean trench, every city, every creature ever born fits inside a film you could smudge with a thumb. That film is not still. The crust is cracked into enormous plates, and the slow churn of the mantle drags them around at roughly the speed your fingernails grow. Over millions of years that pace is enough to raise the Himalayas, tear oceans open, and haul old seafloor back down into the mantle to be melted and reused. This constant recycling matters more than it sounds. Plate tectonics buries carbon and returns it to the air over long cycles, which is a large part of why Earth's temperature has stayed inside a livable range for billions of years. No other planet we have found is known to do it. Venus is nearly Earth's twin in size and mass, and Venus has no plates. Its surface sits at around 465 degrees Celsius, hot enough to melt lead. We are steadied from outside as well. The moon is unusually large for a planet our size, and its pull holds Earth's 23.4 degree tilt nearly constant. Without it, that tilt could wander widely over millions of years and drag the climate around with it. The moon is also drifting away from us, about an inch and a half every year, and its tidal grip is slowly slowing our spin. The days of the dinosaurs were roughly half an hour shorter than yours. In 1990, as Voyager 1 headed out of the solar system, it turned its camera back and photographed Earth from about 3.7 billion miles away. The planet came out as a dot less than a single pixel across, caught by chance in a stray beam of scattered sunlight. Every person who has ever lived, every war fought, every kindness done, all of it happened on that speck. None of this makes Earth fragile in the way that word usually lands. The planet is a 4.5 billion year old ball of iron and rock, and it will still be here long after we are not. The skin is what is fragile. The coat of paint we breathe, the film of water, the shallow warm band where life happens. That is the part we are changing, and it is the only part we cannot do without."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author uses two everyday objects to explain scale. Name both, and quote the exact phrase used with each.",
+            "Explain why the inner core stays solid even though it is hot enough to melt. Cite the text.",
+            "Why does the author bring in Venus? Explain what the comparison is meant to prove about plate tectonics.",
+            "The passage ends by separating the planet from its skin. Analyze what that move accomplishes, and decide whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: nearly all of Earth is inaccessible interior, and life is confined to a fragile outer layer)",
+            "(an apple: thinner than the skin; a basketball: about as thick as a coat of paint)",
+            "(pressure keeps it solid; cite: the weight of the entire planet is pressing down on it and squeezing it solid)",
+            "(Venus is the same size and mass but has no plates and is 465 C, suggesting tectonics helps keep Earth livable)",
+            "(it redirects concern from the planet to the biosphere; supported by the apple skin and paint layer scale work earlier)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["molten → ____", "mantle → ____", "tectonics → ____", "stray → ____"],
+          "rows": 2,
+          "answers": [
+            "melted into liquid by heat",
+            "the thick layer of hot rock between the core and the crust",
+            "the movement of the large plates that make up Earth's crust",
+            "wandering or arriving by chance rather than on purpose"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says no other planet we have found is known to have plate tectonics. Explain why the word known is doing important work in that sentence.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(it limits the claim to current evidence rather than asserting a fact about every planet)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: calling Earth fragile is a mistake, because the planet is in no danger and only we are. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

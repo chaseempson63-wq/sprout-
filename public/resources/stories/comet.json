@@ -1,0 +1,320 @@
+{
+  "key": "comet",
+  "title": "The Dirty Snowball That Grows a Tail",
+  "blurb": "A ball of ice older than Earth, and what happens to it when it finally gets close to the sun.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Dirty Snowball That Grows a Tail",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-comet", "templateLabel": "The Dirty Snowball That Grows a Tail", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the comet." },
+        {
+          "kind": "image",
+          "imageKey": "comet",
+          "notes": ["A comet is a big ball of ice", "It flies around the sun", "The sun makes its tail glow", "The tail points away from the sun"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A comet is a big ball of ice and dust. It flies around the sun. Way out in the dark, the comet is cold and quiet. Then it comes near the sun. The sun is warm. The ice turns into gas. The gas streams out behind the comet. It makes a long, bright tail. The tail glows in the sky. Then the comet flies away again. It will come back one day."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the pieces of ice in each row. Write how many in the box.",
+          "emoji": "❄️",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ice    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "comet", "right": "sky" },
+            { "left": "sun", "right": "hot" },
+            { "left": "ice", "right": "cold" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own comet. Give it a long, bright tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Dirty Snowball That Grows a Tail",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-comet", "templateLabel": "The Dirty Snowball That Grows a Tail", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "comet",
+          "notes": ["People call a comet a dirty snowball", "The ball of ice is only a few miles wide", "The tail can be millions of miles long", "The tail always points away from the sun", "One comet comes back every 76 years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dirty Snowball That Grows a Tail",
+          "text": "A comet is a ball of ice, dust, and rock. People call it a dirty snowball. Most of the time, a comet is very far from the sun. Out there it is dark and cold, and the comet is just a quiet lump of ice. Then its long path brings it close to the sun. The sun warms the ice. The ice turns into gas, and dust comes off with it. The gas and dust stream away into space. That is the tail, and it can be millions of miles long. Here is the funny part. The tail always points away from the sun. So when a comet heads back out into the dark, it goes tail first."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a comet made of?", "What do people call a comet?", "What makes the ice turn into gas?", "Which way does the tail point?"],
+          "rows": 2,
+          "answers": ["ice, dust, and rock", "a dirty snowball", "the sun warms it", "away from the sun"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A comet is a ball of ____.", "The ____ warms the comet.", "The gas and dust make a long ____.", "The tail points ____ from the sun."],
+          "wordBank": ["ice", "sun", "tail", "away"],
+          "answers": ["ice", "sun", "tail", "away"]
+        },
+        { "kind": "draw", "prompt": "Draw a comet flying past the sun. Remember which way the tail points.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Dirty Snowball That Grows a Tail",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-comet", "templateLabel": "The Dirty Snowball That Grows a Tail", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "comet",
+          "notes": ["Ice turns straight into gas: sublimation", "The solid part is called the nucleus", "The glowing cloud around it is the coma", "Comets are darker than charcoal", "Halley's Comet returns about every 76 years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Snowball That Wakes Up",
+          "text": "A comet spends almost its whole life asleep. Far from the sun, out past the planets, it is nothing but a dark lump of ice, dust, and rock. Most comets are only a few miles wide. You could walk across one in an afternoon. Then its long path swings it toward the sun, and it wakes up. Sunlight heats the ice. The ice does not melt into water first. It turns straight into gas, skipping the liquid step, and scientists call that sublimation. Gas and dust burst off the surface and wrap the comet in a glowing cloud bigger than a planet. Sunlight and the wind of tiny particles blowing off the sun push that cloud out into a long tail. Here is the strange part. A comet's tail does not trail behind it the way smoke trails behind a train. The tail always points away from the sun. So when the comet swings around and heads back out into the dark, it flies tail first. The closer a comet gets to the sun, the brighter it burns, and the more of itself it loses. Every trip costs it a little ice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where does a comet spend most of its life?",
+            "What is sublimation?",
+            "Which direction does a comet's tail point?",
+            "Why do you think a comet cannot keep flying past the sun forever?"
+          ],
+          "rows": 2,
+          "answers": [
+            "far from the sun, out past the planets",
+            "when ice turns straight into gas without melting into water first",
+            "away from the sun",
+            "(inference: it loses a little ice every trip, so one day it runs out)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Snowball That Wakes Up", "How to Build a Telescope", "The Hottest Planet in the Sky"],
+          "answers": ["The Snowball That Wakes Up"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Ice turning straight into gas is called ____.", "A comet is a lump of ice, ____, and rock.", "The tail always points away from the ____.", "Heading back out, a comet flies ____ first."],
+          "wordBank": ["sublimation", "dust", "sun", "tail"],
+          "answers": ["sublimation", "dust", "sun", "tail"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about a comet, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Dirty Snowball That Grows a Tail",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-comet", "templateLabel": "The Dirty Snowball That Grows a Tail", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "comet",
+          "notes": ["Four parts: nucleus, coma, dust tail, ion tail", "A nucleus reflects only about 4% of light", "A coma can grow wider than Jupiter", "Ion tails are blue and straight", "Dust tails are pale and curved", "Meteor showers are old comet dust"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Four Parts of a Comet",
+          "text": "Every comet has the same parts, and only one of them is solid. The nucleus is the comet itself: a lump of ice, dust, and rock left over from the building of the solar system about four and a half billion years ago. Most are just a few miles across. Their surfaces are astonishingly dark. A comet nucleus reflects only about four percent of the light that lands on it, which makes it blacker than charcoal. The coma comes next. As the nucleus nears the sun, its ice sublimates, turning straight from solid to gas without ever becoming liquid. The escaping gas and dust swell into a glowing shell around the nucleus. A coma can grow wider than the planet Jupiter, all of it fed by a lump of ice you could walk across in an afternoon. Then come the tails, and there are usually two. The dust tail is pale and gently curved. It is made of grit pushed out by the pressure of sunlight, and it drifts along behind the comet's path. The ion tail is blue and arrow straight. It is made of gas that the sun has given an electric charge, and the solar wind, a stream of particles racing off the sun, blows it directly away at enormous speed. That is the rule worth remembering. Tails point away from the sun, not backward along the path. A comet leaving the sun travels tail first. The lost dust does not disappear. It stays in orbit as a long trail of grit. When Earth plows through one of those trails, the grains burn up in our air, and we look up and call it a meteor shower. The Perseids you can watch every August are the dust of a comet named Swift-Tuttle."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Which part of a comet is solid, and what is it made of?",
+            "Explain the difference between the dust tail and the ion tail.",
+            "The passage says a coma is fed by a lump of ice you could walk across. Why is that surprising?",
+            "A meteor shower happens at the same time every year. Using the passage, explain why."
+          ],
+          "rows": 2,
+          "answers": [
+            "the nucleus; ice, dust, and rock",
+            "the dust tail is pale and curved and pushed by sunlight; the ion tail is blue and straight and blown by the solar wind",
+            "(inference: something only a few miles wide produces a cloud wider than Jupiter)",
+            "(inference: Earth's orbit crosses the same dust trail at the same point each year)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A comet is a small dark lump of ice whose parts, and its leftover dust, are made by the sun",
+            "Jupiter is the largest planet in the solar system",
+            "Meteor showers are dangerous and should be avoided"
+          ],
+          "answers": ["A comet is a small dark lump of ice whose parts, and its leftover dust, are made by the sun"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["nucleus → ____", "coma → ____", "sublimates → ____", "solar wind → ____"],
+          "rows": 1,
+          "answers": [
+            "the solid lump of ice, dust, and rock at the heart of a comet",
+            "the glowing cloud of gas and dust around the nucleus",
+            "turns straight from solid to gas without becoming liquid",
+            "a stream of particles racing off the sun"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining what happens to a comet as it flies toward the sun and back out again. Use the words nucleus, coma, and tail.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Dirty Snowball That Grows a Tail",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-comet", "templateLabel": "The Dirty Snowball That Grows a Tail", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "comet",
+          "notes": ["Halley's Comet is due back in 2061", "Seen in 1066 and stitched into the Bayeux Tapestry", "Edmond Halley predicted its 1758 return", "He died in 1742 and never saw it", "Chinese records of it go back to 240 BC", "Short-period comets come from the Kuiper Belt"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Comet That Kept Its Appointment",
+          "text": "For most of human history, a comet was bad news. A bright one appearing out of nowhere was read as a warning that a king would fall or a war was coming. When a comet blazed over England in 1066, the year of the Norman invasion, weavers stitched it into the Bayeux Tapestry with a crowd of men pointing up at it in alarm. Nobody thought to ask where it had come from, because nobody imagined it was following a rule. Edmond Halley did. Halley was an English astronomer and a friend of Isaac Newton, who had just published his law of gravitation, describing how the sun's pull shapes the path of everything around it. Halley wondered whether comets obeyed that law too. So he went digging through old records. He found something odd. A comet had been observed in 1531. Another in 1607. Another in 1682. When he worked out the three paths, they looked identical, and the gaps between the sightings were both about seventy six years. Halley made the obvious leap, and it was also the brave one. There had never been three comets. There had been one comet, coming back. Then he did the thing that mattered. He predicted its return for around the end of 1758. That was a genuine risk. He was staking his reputation on an exact claim about the future, and unlike an omen, a prediction can be proved wrong. Halley died in 1742, sixteen years before the test. On Christmas night in 1758, a German farmer and amateur astronomer named Johann Palitzsch aimed his telescope at the sky and found the comet almost exactly where Halley had said it would be. It has carried his name ever since. Halley's Comet returned in 1835, in 1910, and in 1986, and it is falling back toward us now, due in 2061. But the comet was never the real discovery. The real discovery was that the sky keeps its appointments."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What clue in the old records made Halley think the three comets were one comet?",
+            "Explain why the passage calls Halley's prediction a genuine risk. Quote the phrase it uses about omens.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering omens, Halley's prediction, and the 1758 return)",
+            "the three paths looked identical and the gaps were both about seventy six years",
+            "(a wrong prediction would be public and provable; quote: unlike an omen, a prediction can be proved wrong)",
+            "(inform, with a persuasive close: it gives dates and records, but argues the discovery was the method)",
+            "(the sky follows rules we can predict; the author ends there so the idea lands after the story)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["omen → ____", "gravitation → ____", "amateur → ____", "identical → ____"],
+          "rows": 1,
+          "answers": [
+            "a sign believed to warn of something to come",
+            "the pull that shapes the path of objects around the sun",
+            "someone who does it for love, not as a paid job",
+            "exactly the same"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the comet was never the real discovery. Explain what it means in your own words.",
+            "Why is a prediction that can be proved wrong more useful to science than an omen?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the method mattered more than the object: the sky could now be predicted)",
+            "(inference: it can be tested, so it can be trusted or corrected)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: Halley never saw the comet that proved him right. Was his work still worth doing? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Dirty Snowball That Grows a Tail",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-comet", "templateLabel": "The Dirty Snowball That Grows a Tail", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "comet",
+          "notes": ["67P/Churyumov-Gerasimenko orbits the sun every 6.5 years", "Rosetta flew 4 billion miles over 10 years", "Philae bounced twice on landing", "67P is blacker than charcoal", "Its gas holds glycine, an amino acid", "Its water carries 3x Earth's deuterium"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Ten Years to Land on a Snowball",
+          "text": "On November 12, 2014, a robot the size of a washing machine dropped toward a comet traveling through space at tens of thousands of miles per hour, and the engineers watching had no way to steer it. The comet's gravity was so feeble that a person standing on the surface could jump and never come back down. Philae fell for seven hours, touched the surface, and then, because its harpoons failed to fire, it bounced. It drifted for nearly two hours, bounced again, and came to rest in the shadow of a cliff where its solar panels could barely see the sun. It worked for about sixty hours and went silent. That sounds like a failure. It was one of the great successes in the history of space exploration, and the reason has almost nothing to do with the landing. The comet was 67P/Churyumov-Gerasimenko, a lopsided two lobed lump of ice and dust roughly two and a half miles long, shaped rather like a rubber duck. The spacecraft that carried Philae, an orbiter named Rosetta, had spent ten years and four billion miles getting there, slingshotting past Earth three times and Mars once to build up speed, then sleeping through the coldest stretch of the trip with nearly everything switched off. Why go to that trouble for a dirty snowball? Because comets are the leftovers. When the solar system assembled itself about four and a half billion years ago, most of the raw material was crushed into planets, then heated, melted, and rearranged beyond recognition. The scraps flung out to the cold edge were not. They have sat in deep freeze ever since, barely touched. A comet is a sample of the original ingredients, and Rosetta was sent to read the recipe. It read plenty. The surface of 67P turned out to be blacker than charcoal, coated in dust and complex carbon compounds. The gas streaming off it stank, in the sense that its chemistry included hydrogen sulfide, ammonia, and formaldehyde, a blend somewhere between rotten eggs and a horse stable. Rosetta detected glycine, an amino acid that living things use to build proteins, and phosphorus, another ingredient of life. Nobody found life out there. They found that the parts were already lying around at the beginning. Then came the result that stung. There was a popular idea that Earth's oceans had been delivered by comets, that our water arrived from the outer solar system after the planet had formed. Water carries a signature: the ratio of ordinary hydrogen to its heavier relative, deuterium. Rosetta measured that ratio at 67P and found about three times the deuterium in Earth's seawater. Whatever filled our oceans, it probably was not water like this. The measurement did not support the hypothesis it was sent to test. That is worth sitting with. A ten year mission, a four billion mile flight, an almost impossible landing, and one of the headline answers came back as no. In science, that counts. A hypothesis that cannot be told it is wrong was never doing any work in the first place. Rosetta finished on September 30, 2016. Out of power, its team steered it into a slow descent onto the comet, shooting pictures until the moment of impact. It is still there, riding a snowball around the sun once every six and a half years, alongside Philae, which was finally spotted in its crack a few weeks before the end."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why comets are scientifically valuable, and cite the phrase the passage uses to describe what a comet is.",
+            "What was the deuterium measurement, and what did it suggest about where Earth's oceans came from?",
+            "Identify the shift in the passage: where does it turn from triumph to disappointment, and how does the author signal it?",
+            "The author writes that a hypothesis that cannot be told it is wrong was never doing any work in the first place. Analyze what that claim is doing, and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(they are unchanged leftovers from the solar system's formation; cite: a sample of the original ingredients)",
+            "about three times the deuterium in Earth's seawater, suggesting our oceans probably did not come from comets like 67P",
+            "(at Then came the result that stung; a short blunt sentence pivots from discovery to the failed hypothesis)",
+            "(it reframes a negative result as a real finding and defends testability; earned by the deuterium evidence just given)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["hypothesis → ____", "deuterium → ____", "compounds → ____", "feeble → ____"],
+          "rows": 2,
+          "answers": [
+            "a proposed explanation that can be tested",
+            "a heavier form of hydrogen used as a signature in water",
+            "substances made of more than one element joined together",
+            "very weak"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls Philae's landing one of the great successes despite the bounce and the sixty hours. Explain the standard of success being used, and say whether you accept it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(success measured by knowledge gained, not by a clean landing; opinion)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A mission that disproves its own headline idea has wasted its money. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

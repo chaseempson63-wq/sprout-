@@ -1,0 +1,304 @@
+{
+  "key": "cloud",
+  "title": "The Cloud That Weighs a Million Pounds",
+  "blurb": "It looks like cotton and floats like nothing. A puffy cloud holds about a million pounds of water, and every drop of it is falling right now.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Cloud That Weighs a Million Pounds",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-cloud", "templateLabel": "The Cloud That Weighs a Million Pounds", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the puffy white cloud." },
+        {
+          "kind": "image",
+          "imageKey": "cloud",
+          "notes": ["A cloud is made of water", "The drops are very tiny", "Clouds float in the sky", "Rain comes out of clouds", "Fog is a cloud on the ground"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up. That white cloud is not made of cotton. It is made of water. Tiny, tiny drops of water. The drops are so small that they float. Millions of them float together. That is what makes the cloud look white and puffy. When the drops get big, they fall down. Then we call it rain."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the clouds in each row. Write how many in the box.",
+          "emoji": "☁️",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "cloud    rain" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "cloud", "right": "water" },
+            { "left": "sun", "right": "warm" },
+            { "left": "rain", "right": "wet" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own cloud. Make it as puffy as you like.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Cloud That Weighs a Million Pounds",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-cloud", "templateLabel": "The Cloud That Weighs a Million Pounds", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "cloud",
+          "notes": ["A cloud is tiny drops of water", "It takes a million drops to make one raindrop", "Warm air rises and makes clouds", "Puffy clouds have flat bottoms", "You cannot sit on a cloud"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Cloud Is Really Made Of",
+          "text": "A cloud looks soft, like something you could sit on. You cannot. A cloud is water. The drops are so small that it takes about a million of them to make one raindrop. When the sun warms the ground, the warm air rises. As that air goes up, it gets colder. Cold air cannot hold on to water the way warm air can. So the water turns into tiny drops, and the drops together make a cloud. Look at the puffy clouds on a sunny day. See how their bottoms are flat, and all at the same height? That flat line is where the rising air finally gets cold enough."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a cloud made of?", "What happens to air as it rises?", "Why are the bottoms of puffy clouds flat?"],
+          "rows": 2,
+          "answers": ["tiny drops of water", "it gets colder", "that is the height where the rising air gets cold enough"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A cloud is made of tiny drops of ____.", "It takes about a ____ drops to make one raindrop.", "When the sun warms the ground, the warm air ____.", "As air goes up, it gets ____."],
+          "wordBank": ["water", "million", "rises", "colder"],
+          "answers": ["water", "million", "rises", "colder"]
+        },
+        { "kind": "draw", "prompt": "Draw a sky with three clouds. Give them all flat bottoms at the same height.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Cloud That Weighs a Million Pounds",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-cloud", "templateLabel": "The Cloud That Weighs a Million Pounds", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "cloud",
+          "notes": ["Water vapor is an invisible gas", "Warm air holds more water than cold air", "Drops form on specks of dust and salt", "Flat cloud bottoms all sit at the same height", "Fog is just a cloud touching the ground"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Clouds Have Flat Bottoms",
+          "text": "Air is not empty. It always carries water, spread out as an invisible gas called water vapor. You cannot see it. You are breathing some right now. Warm air holds a lot of vapor. Cold air holds much less. That one rule explains almost every cloud in the sky. When the sun heats the ground, the ground heats the air above it. Warm air is light, so it rises. The higher it goes, the colder it gets. At some height, the air turns too cold to hold its vapor any longer. The vapor sticks to specks of dust and salt floating in the sky, and turns into tiny drops of liquid water. Millions of those drops together are a cloud. This is why a puffy cloud has a flat bottom. Every bit of rising air in that patch of sky turns to drops at the same height, so every cloud bottom lines up. Look up on a sunny day and you will see a whole field of clouds sitting on one invisible shelf."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is water vapor, and can you see it?",
+            "What is the one rule about warm air and cold air that explains almost every cloud?",
+            "What do the drops in a cloud form on?",
+            "Why do you think all the cloud bottoms in one patch of sky line up at the same height?"
+          ],
+          "rows": 2,
+          "answers": [
+            "water spread out as an invisible gas; no, you cannot see it",
+            "warm air holds a lot of vapor and cold air holds much less",
+            "specks of dust and salt floating in the sky",
+            "(inference: the rising air is the same everywhere in that patch, so it gets cold enough at the same height)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Clouds Have Flat Bottoms", "How to Build a Paper Kite", "The Deepest Lake in the World"],
+          "answers": ["Why Clouds Have Flat Bottoms"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Water in the air is an invisible gas called water ____.", "When the sun heats the ground, the warm air ____.", "Cloud drops form on tiny specks of ____ and salt."],
+          "wordBank": ["vapor", "rises", "dust"],
+          "answers": ["vapor", "rises", "dust"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a cloud is made, and why did it surprise you?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Cloud That Weighs a Million Pounds",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-cloud", "templateLabel": "The Cloud That Weighs a Million Pounds", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cloud",
+          "notes": ["A cumulus cloud holds about 500,000 kilograms of water", "A cloud droplet is about a fiftieth of a millimeter wide", "Droplets fall about as fast as a snail crawls", "Every droplet forms around a speck of dust or salt", "Cumulus means heap in Latin", "A cloud is remade constantly, like a flame"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cloud That Weighs a Million Pounds",
+          "text": "Hold a cloud in your mind. It looks weightless. It is not. A single fair weather cumulus cloud, the puffy kind that drifts across a summer afternoon, holds roughly five hundred thousand kilograms of water. That is about a million pounds, or the weight of a hundred elephants, floating over your yard. So why does it not fall? It does. Every drop in that cloud is falling right now. But a cloud droplet is only about a fiftieth of a millimeter across, and something that small falls through air about as fast as a snail crawls. Meanwhile the warm air underneath is rising faster than the droplets sink. The cloud stays up the way a beach ball stays up over a fan. The droplets themselves need help to exist. Water vapor will not condense in genuinely clean air. It needs a surface: a speck of dust, a grain of sea salt, a flake of ash, a fragment of pollen. Scientists call these condensation nuclei. Every droplet in every cloud is wrapped around a tiny piece of dirt. The sky is beautiful because it is not clean. And the cloud you are looking at is not really an object. It is an event. Droplets form at its edges and evaporate away again constantly, so the cloud you see at noon shares almost no water with the cloud that was there ten minutes earlier. It keeps its shape the way a flame keeps its shape, by being remade over and over."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says every drop in the cloud is falling right now. Explain why the cloud still stays in the sky.",
+            "Why can water vapor not condense in genuinely clean air?",
+            "The author writes that the sky is beautiful because it is not clean. Explain what that means.",
+            "The passage calls a cloud an event rather than an object. What is the difference, and why does it matter?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the droplets are so small they sink very slowly, and the rising warm air underneath pushes up faster than they fall",
+            "the vapor needs a surface to stick to, so it forms around specks of dust, salt, ash, or pollen",
+            "(inference: clouds only exist because of the dust and salt floating in the air)",
+            "(an object stays the same; a cloud is constantly being rebuilt, so its water is always changing)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A cloud is an enormous, constantly rebuilt mass of tiny water drops held up by rising air",
+            "Clouds are made of cotton and are lighter than air",
+            "Elephants are the heaviest animals living on land"
+          ],
+          "answers": ["A cloud is an enormous, constantly rebuilt mass of tiny water drops held up by rising air"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["condense → ____", "condensation nuclei → ____", "evaporate → ____"],
+          "rows": 1,
+          "answers": ["to change from a gas into a liquid", "the tiny specks that water droplets form around", "to change from a liquid back into a gas"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child how something that weighs a million pounds can float in the sky. Use two ideas from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Cloud That Weighs a Million Pounds",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-cloud", "templateLabel": "The Cloud That Weighs a Million Pounds", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cloud",
+          "notes": ["Luke Howard named the clouds in 1802", "Cirrus means a curl of hair", "Cumulus means a heap", "Stratus means a layer", "Nimbus means rain", "Cloud water scatters every color of light equally, so it looks white"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Man Who Named the Clouds",
+          "text": "For most of human history, clouds had no names. They were considered too changeable to classify. A thing that becomes something else while you are looking at it does not seem to hold still long enough to be given a label. In December 1802, an English pharmacist named Luke Howard stood in front of a small London science club and disagreed. Clouds do have forms, he argued. There are only a few of them, and they turn into one another in ways you can learn. He named them in Latin so that scientists in any country could use the words. Cirrus, a curl of hair, for the icy streaks scratched across the top of the sky. Cumulus, a heap, for the puffy piles of a warm afternoon. Stratus, a layer, for the flat gray sheet that seals off a dull day. Nimbus, rain, to be attached to any cloud that is emptying itself onto you. The names took hold almost immediately. Goethe, the German poet, wrote verses in Howard's honor. Painters began studying skies properly. Two centuries later, a meteorologist reading a satellite image still uses Howard's vocabulary, because he had noticed the right thing: a cloud is not a shape, it is a stage in a process, and the stages repeat. Howard's system also explains a puzzle every child asks about. Why are some clouds white and others gray? A cloud droplet scatters every color of sunlight equally, which is why cloud water looks white rather than blue or red. A thin cumulus scatters that light back at you and glows. But stack the same droplets deep enough and most of the sunlight is scattered away or absorbed before it can reach the bottom of the cloud. The underside goes gray, then charcoal. A storm cloud is not made of darker water. It is made of more water, in your way. And the rain itself is harder to arrange than it looks. Cloud droplets are so small they rarely collide, and when they do they often bounce apart. It takes roughly a million of them merging to build one ordinary raindrop. A cloud can hang over a field for an hour holding a million pounds of water and deliver not a single drop of it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why did people believe clouds could not be classified before Howard?",
+            "Why did Howard name the clouds in Latin? Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain in your own words why a storm cloud looks dark underneath."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering Howard naming the cloud forms in Latin and why his system still works)",
+            "they change while you watch them, so they seemed too changeable to hold still and be labeled",
+            "so scientists in any country could use them; quote: so that scientists in any country could use the words",
+            "(inform, with detail: it gives a date, a name, and explanations; it also tells a story to hold interest)",
+            "(it holds more water, so sunlight is scattered away before it reaches the bottom of the cloud)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["classify → ____", "cirrus → ____", "stratus → ____", "scatters → ____"],
+          "rows": 1,
+          "answers": ["to sort things into named groups", "a curl of hair; the icy streaks high across the sky", "a layer; the flat gray sheet that covers a dull day", "sends light off in all directions"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a cloud is not a shape, it is a stage in a process. Explain why noticing that made Howard's names work.",
+            "A cloud can hold a million pounds of water and drop none of it. Why?"
+          ],
+          "rows": 3,
+          "answers": ["(naming the stages works even though the shapes keep changing, because the stages repeat)", "(the droplets are too small to collide and merge, and it takes about a million to make one raindrop)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was naming the clouds a real scientific discovery, or just putting labels on things? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Cloud That Weighs a Million Pounds",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-cloud", "templateLabel": "The Cloud That Weighs a Million Pounds", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cloud",
+          "notes": ["Rising air cools by expanding, not by touching anything cold", "Clouds reflect sunlight, which cools the planet", "Clouds also trap heat rising from the ground, which warms it", "Low thick clouds cool; high thin cirrus warm", "On balance, clouds cool Earth by several degrees", "Cloud feedback is the largest uncertainty in climate projections"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Biggest Unknown in the Sky",
+          "text": "Every cloud does two opposite things at once, and the temperature of the planet depends on which one wins. Start with what a cloud is. Air always carries water as an invisible gas. Warm air can hold a great deal of it; cold air can hold very little. When a parcel of air rises, the pressure around it drops, so the parcel expands. Expanding costs energy, and the parcel pays for it out of its own heat. This is why rising air cools without anything cooling it: it is spending itself. Keep a parcel rising and it will eventually get cold enough that it cannot hold its vapor. The vapor condenses onto floating specks of dust, salt, and ash, and a cloud appears at exactly that height. That is the whole recipe, and it is why the cumulus clouds over a field all sit on the same invisible shelf. Now the two jobs. A cloud is bright. Seen from space it is one of the whitest things on Earth, and everything it reflects is sunlight that never arrives, never warms the ground, never counts. That is a cooling effect, and it is enormous. But a cloud is also a blanket. The ground is constantly radiating heat upward as infrared light, and cloud water absorbs that heat and sends much of it back down. Anyone who has felt the difference between a clear desert night and an overcast one has measured this effect personally. That is a warming effect, and it is also enormous. Which effect wins depends, absurdly, on the cloud's height and thickness. Low, thick stratus decks are excellent mirrors and mediocre blankets, because their tops sit near the ground and stay nearly as warm as it, so they radiate away roughly as much heat as they trap. Net effect: cooling. High, thin cirrus are poor mirrors, since you can see the sun straight through them, but superb blankets, because their tops are brutally cold and leak very little energy out to space while still catching heat from below. Net effect: warming. Add every cloud on Earth together and the mirrors currently win. Taken as a whole, clouds cool this planet by several degrees. Here is the problem. Nobody knows what clouds will do next. A warmer world evaporates more water, which sounds like more clouds and more cooling, a comfortable thought. But warming also changes where clouds form, how high their tops climb, and how long the low decks over the oceans survive. If the low mirrors thin out while the high blankets thicken, the cooling shrinks and the warming feeds itself. If the reverse happens, the planet partly steadies itself. Climate scientists are candid about this. Cloud feedback is the largest single source of uncertainty in their projections, and it is a real reason the estimates arrive as ranges rather than as numbers. An individual cloud is far smaller than the grid squares a global model chops the atmosphere into, so clouds cannot be simulated directly, only approximated with rules of thumb, and different rules give different planets. It is a strange position to be in. We can predict an eclipse centuries ahead to the second. We cannot yet say with confidence what the puffy white thing over the yard will be doing in fifty years."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why rising air cools even though nothing cools it. Cite the exact phrase the passage uses.",
+            "Contrast the mirror job with the blanket job. Why does a cloud's height decide which one wins?",
+            "Identify where the passage turns from explanation to uncertainty. How does the author signal the turn?",
+            "The passage ends by comparing eclipse prediction with cloud prediction. Analyze what that comparison is doing, and say whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: clouds both cool and warm Earth, and which effect wins is the hardest thing in climate science to predict)",
+            "(it expands as pressure drops and pays for the expansion out of its own heat; quote: it is spending itself)",
+            "(mirrors reflect sunlight away; blankets trap heat leaving the ground; low warm tops radiate heat away so they cool, high cold tops do not so they warm)",
+            "(at Here is the problem; a short blunt sentence marks the pivot from confident explanation to open questions)",
+            "(it contrasts a solved prediction with an unsolved one to show the scale of the gap; earned by the grid-square and rules-of-thumb evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["parcel (of air) → ____", "infrared → ____", "feedback → ____", "candid → ____"],
+          "rows": 2,
+          "answers": [
+            "a blob of air treated as one unit that moves and changes together",
+            "heat radiated as light you cannot see",
+            "a change that loops back to strengthen or weaken the thing that caused it",
+            "honest and open, especially about something awkward"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says an individual cloud is smaller than a model's grid squares. Explain why that forces scientists into rules of thumb, and what the risk of that is.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(a model cannot resolve anything smaller than its grid, so clouds must be estimated; the risk is that different reasonable estimates produce different predictions)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A prediction that arrives as a range is not really a prediction at all. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

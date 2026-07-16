@@ -1,0 +1,319 @@
+{
+  "key": "star",
+  "title": "The Star That Made You",
+  "blurb": "Every star is a giant ball of hot gas building new atoms in its core, and almost every atom in your body came out of one.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Star That Made You",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-star", "templateLabel": "The Star That Made You", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Count the points on the star." },
+        {
+          "kind": "image",
+          "imageKey": "star",
+          "notes": ["The sun is a star", "Stars are balls of hot gas", "They look tiny because they are far", "Stars glow with their own light", "We see them best at night"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up at night. Those tiny lights are stars. A star is not small. A star is a huge ball of hot, glowing gas. It looks tiny because it is very, very far away. Our sun is a star too. It is the closest one to us. That is why the sun looks big and warm. When you draw a star, you give it points. A real star is round like a ball."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "star    sun" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "star", "right": "sky" },
+            { "left": "fish", "right": "sea" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the night sky. Fill it with as many stars as you can.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Star That Made You",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-star", "templateLabel": "The Star That Made You", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "star",
+          "notes": ["The sun is our closest star", "Real stars are round, not pointy", "Stars are much bigger than Earth", "Starlight travels for years to reach us", "Some stars are red and some are blue"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Real Stars Have No Points",
+          "text": "When you draw a star, you draw points. A real star has no points at all. A real star is a giant ball of hot, glowing gas. It is so hot that it shines with its own light. The sun is a star. It is the one closest to us, so it looks big and bright. Every other star is much, much farther away. Their light travels for years before it reaches your eyes. When you look up at night, you are looking a long way out, and a long way back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What shape is a real star?", "Which star is closest to us?", "Why do the other stars look so small?"],
+          "rows": 2,
+          "answers": ["it is a round ball", "the sun", "because they are very far away"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A real star is shaped like a ____.", "A star is made of hot, glowing ____.", "The ____ is the star closest to us.", "Starlight travels for ____ to reach your eyes."],
+          "wordBank": ["ball", "gas", "sun", "years"],
+          "answers": ["ball", "gas", "sun", "years"]
+        },
+        { "kind": "draw", "prompt": "Draw the sun on one side of your paper and a faraway star on the other. Show which one looks bigger to us.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Star That Made You",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-star", "templateLabel": "The Star That Made You", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "star",
+          "notes": ["Stars twinkle, planets mostly do not", "Our air bends starlight as it passes", "Red stars are the coolest", "Blue-white stars are the hottest", "Our sun is a middle temperature yellow star"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Stars Twinkle",
+          "text": "Go outside on a clear night and watch one star closely. It shivers. It seems to jump and change brightness, over and over. That shivering is called twinkling, and the star is not the one doing it. Starlight travels for years through empty space in a perfectly straight line. Then, in the last moment of its journey, it hits the air above your head. Our air is never still. Warm pockets and cool pockets slide over each other, and each pocket bends the light a little differently. The star's light gets nudged around, and you see it flicker. Planets are much closer to us, so they look like tiny circles instead of single points. Bending one part of a circle does not move the whole thing much, so planets shine with a steadier light. That is one way to tell a planet from a star. Color is a clue too. A star's color tells you how hot it is. Red stars are the coolest ones. Our yellow sun sits in the middle. Blue-white stars are the hottest of all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is actually causing the twinkling?",
+            "How far does starlight travel in a straight line before anything bends it?",
+            "Which color of star is the hottest?",
+            "Why do you think astronomers put telescopes on high mountains?"
+          ],
+          "rows": 2,
+          "answers": [
+            "moving pockets of warm and cool air bending the light",
+            "it travels for years through empty space",
+            "blue-white stars",
+            "(inference: there is less air above a mountain, so less twinkling and a clearer view)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Stars Twinkle", "How to Build a Telescope", "The Biggest Planet in Our Sky"],
+          "answers": ["Why Stars Twinkle"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Twinkling happens when our ____ bends starlight.", "Planets look like tiny ____ instead of single points.", "A star's color tells you how ____ it is."],
+          "wordBank": ["air", "circles", "hot"],
+          "answers": ["air", "circles", "hot"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you saw a steady light and a twinkling light in the sky, which one is the planet, and how do you know?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Star That Made You",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-star", "templateLabel": "The Star That Made You", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "star",
+          "notes": ["Light moves about 300,000 kilometers per second", "Sunlight takes just over 8 minutes to reach us", "A light-year is a distance, not a time", "The next closest star is 4.2 light-years away", "The sun fuses hydrogen into helium in its core", "Its core is about 15 million degrees"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Light You See Is Old News",
+          "text": "Nothing in the universe travels faster than light. Light crosses about 300,000 kilometers every second, fast enough to lap the Earth seven times in the time it takes you to say the word star. Space is so big that even this ridiculous speed is not enough. Sunlight takes a little over eight minutes to reach us. So the sun you see out the window is the sun as it was eight minutes ago. If it stopped shining right now, nobody on Earth would know for eight minutes. The next closest star, Proxima Centauri, is about four and a quarter light-years away. A light-year is not an amount of time. It is a distance: how far light gets in one year, roughly nine and a half trillion kilometers. Proxima's light left it more than four years ago. Some of the stars you can see with your own eyes are hundreds or thousands of light-years out. You are not really looking at those stars. You are looking at light they sent out long before you were born. Where does all that light come from? Not from burning. A campfire burns. A star does something far stranger. Deep in the sun's core, the pressure is crushing and the temperature is around fifteen million degrees. Down there, hydrogen atoms get squeezed together so hard that they fuse, four of them merging into a single helium atom. Here is the strange part. That helium atom weighs slightly less than the four pieces that made it. The missing scrap of mass leaves as energy. The sun turns about four million tons of itself into pure energy every second, and it has been doing that for four and a half billion years."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why the passage says the light you see is old news.",
+            "The passage says a light-year is not an amount of time. What is it, then?",
+            "What is the difference between a campfire burning and a star shining?",
+            "If a star 500 light-years away exploded today, when would people on Earth find out? Explain your thinking."
+          ],
+          "rows": 2,
+          "answers": [
+            "(light takes years to cross space, so we see stars as they were in the past)",
+            "a distance: how far light travels in one year, about nine and a half trillion kilometers",
+            "burning is a chemical reaction; a star fuses hydrogen into helium and turns lost mass into energy",
+            "(inference: in about 500 years, because the light needs 500 years to get here)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Space is so vast that starlight shows us the past, and the light itself comes from fusion, not burning",
+            "Campfires and stars make light in exactly the same way",
+            "Proxima Centauri is the largest star in the universe"
+          ],
+          "answers": ["Space is so vast that starlight shows us the past, and the light itself comes from fusion, not burning"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["fuse → ____", "light-year → ____", "core → ____"],
+          "rows": 1,
+          "answers": [
+            "to squeeze small atoms together so they merge into a bigger one",
+            "the distance light travels in one year",
+            "the center of a star, where the fusion happens"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says you are looking at light stars sent out before you were born. Does that make the night sky more interesting to you, or less? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Star That Made You",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-star", "templateLabel": "The Star That Made You", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "star",
+          "notes": ["Stars are born in cold clouds of gas and dust", "Mass decides how long a star lives", "The biggest stars die in a few million years", "Red dwarfs can last trillions of years", "The sun has about 5 billion years left", "A supernova can outshine a whole galaxy"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Long Fight Every Star Loses",
+          "text": "A star is a fight that lasts billions of years. Gravity pulls every part of the star inward, trying to crush it into a point. Fusion in the core pushes outward, trying to blow it apart. While those two forces stay matched, the star is stable, and it shines. Astronomers call this long, steady middle age the main sequence. Our sun has been on it for four and a half billion years and has roughly five billion to go. Stars are born in cold clouds of gas and dust. A clump of the cloud collapses under its own gravity, spinning and heating as it shrinks, until the center gets hot enough for hydrogen to fuse. The star switches on. How long it lives depends entirely on its mass, and the answer runs backward from what you would guess. A heavy star has far more fuel, but it squeezes that fuel so hard that it spends the lot in a hurry. The biggest stars are gone in a few million years. Small red dwarf stars sip their hydrogen so slowly that they can last for trillions of years. Not one red dwarf has ever died of old age, because the universe is only about fourteen billion years old. The ending depends on mass too. When the sun finally runs out of hydrogen in its core, gravity wins a round and squeezes that core tighter. The squeeze lights new reactions, the outer layers swell enormously, and the sun becomes a red giant wide enough to swallow Mercury and Venus and to scorch whatever is left of Earth. Then it sheds those outer layers into space as a glowing shell and leaves behind its bare core: a white dwarf, no bigger than Earth, so dense that a spoonful of it would weigh several tons. It will sit there cooling for a very long time. A star eight times heavier than the sun ends louder. Its core builds heavier and heavier elements until it makes iron, and iron will not fuse and give any energy back. The core's support vanishes in under a second. It collapses, the star rebounds off it, and it explodes as a supernova bright enough to outshine its entire galaxy for weeks. What remains is a neutron star or a black hole. What gets thrown outward is everything the star ever built."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What are the two forces fighting inside a star, and what does each one do?",
+            "Explain why heavy stars die young while small stars last far longer.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why do you think the author ends there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the gravity vs fusion balance, mass deciding lifespan, and the two endings)",
+            "gravity pulls inward and tries to crush the star; fusion pushes outward and tries to blow it apart",
+            "heavy stars squeeze their fuel harder and spend it fast; red dwarfs sip hydrogen slowly",
+            "(inform, with detail: it defines the main sequence and gives figures; the fight framing adds some entertainment)",
+            "(a dying star scatters the elements it made; the author ends there to set up where those atoms go next)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["main sequence → ____", "collapses → ____", "dense → ____", "sheds → ____"],
+          "rows": 1,
+          "answers": [
+            "the long stable stage when gravity and fusion stay balanced",
+            "falls inward suddenly under its own gravity",
+            "having a lot of mass packed into a small space",
+            "throws off or drops away"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says not one red dwarf has ever died of old age. Explain exactly why that is true.",
+            "Why is iron the point where a massive star's core runs into trouble?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(they live for trillions of years and the universe is only about fourteen billion years old, so none has had time)",
+            "(inference: fusing iron gives no energy back, so the outward push stops and gravity wins)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the sun will not change for another five billion years. Is studying how stars die still worth doing? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Star That Made You",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-star", "templateLabel": "The Star That Made You", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "star",
+          "notes": ["The Big Bang made only hydrogen, helium, and a trace of lithium", "Carbon, oxygen, and iron are built inside stars", "Fusion past iron costs energy instead of releasing it", "Gold and uranium need supernovae or colliding neutron stars", "In 2017 astronomers watched two neutron stars collide", "The hydrogen in your body predates every star"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "You Are Made of Stars, and That Is Not a Compliment",
+          "text": "Hold up your hand and look at it. Almost every atom in it was manufactured inside a star. This is not poetry. It is inventory. When the universe began, it produced only the three lightest elements: hydrogen, helium, and a trace of lithium. That was the entire menu. There was no carbon to build a cell, no oxygen to breathe, no calcium for a bone, no iron for blood. The early universe was a cloud of the two simplest gases and essentially nothing else. Everything else had to be built, and there is only one kind of place hot enough to build it. A star is a factory that runs on crushing. In the core of the sun, hydrogen fuses into helium. In heavier stars, once the hydrogen is spent, the core contracts, heats further, and begins fusing helium into carbon. Carbon into oxygen. Oxygen into silicon. Silicon into iron. Each step demands a hotter core than the last, and each step is shorter than the last. A massive star spends millions of years on hydrogen and about a day on silicon. Then it reaches iron, and the factory stops. Fusing light elements releases energy, which is the entire reason stars shine. Fusing iron consumes energy instead of giving it back. An iron core produces no outward push, so gravity, which has been waiting patiently for ten million years, wins in about one second. The core collapses, the star rebounds off it, and the outer layers are flung into space at a serious fraction of the speed of light. In that fury, atoms are slammed together hard enough to forge the elements heavier than iron: silver, gold, uranium. Some of the heaviest ones appear to need conditions more extreme still. In 2017, astronomers watched two neutron stars collide and detected freshly minted gold and platinum in the wreckage. So the atoms scatter. They drift for millions of years, mix into a new cold cloud of gas and dust, and eventually that cloud collapses into a new star with planets circling it. Ours did, about four and a half billion years ago. The carbon in your muscles, the oxygen in the breath you just took, the calcium in your teeth, the iron ferrying oxygen through your blood right now: every one of those atoms was assembled in the core of a star that died before the sun existed. You are running on secondhand parts. There is one exception, and it is a good one. The hydrogen in you, most of it riding around inside water, was not made in any star. It has been here since the beginning, unchanged, older than every star that has ever shone. So you are a mixture of the oldest material in existence and the recycled ash of dead giants. This is why the old line about being made of star stuff refuses to go away. People hear it as a compliment. It is closer to a shipping label."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Which three elements did the early universe produce, and why does that fact matter to the rest of the passage?",
+            "Explain why iron stops the factory. Cite the exact sentence that states what fusing iron does.",
+            "Find the sentence where the author describes gravity as if it were a person. Quote it, then explain what that choice does for the reader.",
+            "The passage ends by calling the phrase closer to a shipping label than a compliment. Analyze what that final move is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the elements in a human body were built inside stars and scattered when those stars died)",
+            "hydrogen, helium, and a trace of lithium; everything else, including the atoms in a body, had to be built later inside stars",
+            "(the core stops producing outward push; cite: Fusing iron consumes energy instead of giving it back.)",
+            "(cite: gravity, which has been waiting patiently for ten million years, wins in about one second; personifying gravity makes a slow physical process feel like a patient opponent)",
+            "(it reframes a warm sentimental phrase as a literal factual claim about where the atoms were manufactured; earned if the student points to the element-by-element inventory)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["inventory → ____", "contracts → ____", "forge → ____", "minted → ____"],
+          "rows": 2,
+          "answers": [
+            "a precise list of what is actually there",
+            "shrinks or pulls in on itself",
+            "to make something under extreme heat and force",
+            "newly made, the way fresh coins are made"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes This is not poetry. It is inventory. Explain the distinction being drawn and why the author draws it so early.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(poetry would be a nice metaphor; inventory means it is literally true and countable, so the author sets the claim up as science rather than sentiment)",
+            "(student question + a credible source type, such as a peer reviewed astrophysics paper or a university observatory)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: knowing where your atoms came from changes nothing about how you should live. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

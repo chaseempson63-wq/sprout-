@@ -1,0 +1,320 @@
+{
+  "key": "train",
+  "title": "The Train That Steers Itself",
+  "blurb": "No steering wheel, no driver turning the wheels, and a clever cone shape that walks a train around every curve.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Train That Steers Itself",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-train", "templateLabel": "The Train That Steers Itself", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the wheels." },
+        {
+          "kind": "image",
+          "imageKey": "train",
+          "notes": ["It runs on steel rails", "The wheels are steel too", "It has no steering wheel", "The rails do the steering", "Steam comes out of the top"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a train. The train runs on rails. The rails are made of steel. The wheels are made of steel too. Steel rolls on steel very smoothly. The train does not have a steering wheel. The rails do the steering. The train goes clack, clack, clack. It carries people. It carries heavy things. Then it slows down and stops."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the wheels on each train. Write how many in the box.",
+          "emoji": "⚙️",
+          "items": ["4", "6", "2", "8"],
+          "answers": ["4", "6", "2", "8"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "train    rail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "train", "right": "rails" },
+            { "left": "boat", "right": "water" },
+            { "left": "plane", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own train. Give it lots of wheels and a puff of steam.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Train That Steers Itself",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-train", "templateLabel": "The Train That Steers Itself", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "train",
+          "notes": ["Steel wheels on steel rails", "One engine can pull a hundred cars", "Steel barely squishes, so it rolls easily", "A long train needs a mile to stop", "Never play near the tracks"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Train Can Pull So Much",
+          "text": "A train can pull a very heavy load. One engine can pull a hundred cars full of rock. How? The answer is steel. The wheels are steel and the rails are steel. Both are hard and smooth. Hard, smooth things roll easily. A car tire squishes on the road, and squishing wastes energy. A steel wheel barely squishes at all. So the train rolls and rolls. But smooth has a cost. A train cannot stop fast. A long freight train needs more than a mile to stop. That is why we never play near the tracks."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are the wheels and the rails made of?", "Why does a car tire waste energy?", "How much track does a long freight train need to stop?"],
+          "rows": 2,
+          "answers": ["they are made of steel", "because it squishes on the road", "more than a mile"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The wheels and rails are made of ____.", "Hard, smooth things ____ easily.", "A car tire ____ on the road.", "A long train cannot ____ fast."],
+          "wordBank": ["steel", "roll", "squishes", "stop"],
+          "answers": ["steel", "roll", "squishes", "stop"]
+        },
+        { "kind": "draw", "prompt": "Draw a long train pulling heavy cars. Add the rails under the wheels.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Train That Steers Itself",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-train", "templateLabel": "The Train That Steers Itself", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "train",
+          "notes": ["The first steam locomotive ran in 1804", "It was so heavy it cracked the rails", "Rocket won a contest in 1829", "Rocket reached about 30 miles an hour", "The first passenger railway opened in 1830"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Engine That Broke Its Own Track",
+          "text": "In 1804, a man named Richard Trevithick did something nobody had done before. He built a steam engine that could move itself. He put it on rails at an ironworks in Wales and it hauled ten tons of iron and seventy cheering men for almost ten miles. It worked. There was one problem. The engine was so heavy it cracked the iron rails underneath it. That is the story of early trains. The engine and the track had to grow up together. Twenty five years later, in 1829, a railway company held a contest to find the best locomotive. Engines lined up at a place called Rainhill. Some broke down. One was powered by a horse walking on a moving belt. It did not win. The winner was Rocket, built by George Stephenson and his son Robert. It reached about thirty miles an hour, faster than any horse could gallop for long. The next year the world's first real passenger railway opened between Liverpool and Manchester. People who had never traveled faster than a trotting horse suddenly could. Distance never felt the same again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did Richard Trevithick build in 1804?",
+            "What went wrong when his engine ran on the rails?",
+            "Which engine won the contest at Rainhill?",
+            "Why do you think people said distance never felt the same again?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a steam engine that could move itself",
+            "it was so heavy it cracked the iron rails",
+            "Rocket, built by George Stephenson and his son Robert",
+            "(inference: a train could carry them farther and faster than a horse, so faraway places felt closer)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Engine That Broke Its Own Track", "How to Take Care of a Horse", "The Tallest Mountain in Wales"],
+          "answers": ["The Engine That Broke Its Own Track"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Trevithick tested his engine at an ____ in Wales.", "His engine ____ ten tons of iron and seventy men.", "The winner of the contest was a ____ named Rocket."],
+          "wordBank": ["ironworks", "hauled", "locomotive"],
+          "answers": ["ironworks", "hauled", "locomotive"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you had been at Rainhill in 1829, what would you have wanted to see, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Train That Steers Itself",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-train", "templateLabel": "The Train That Steers Itself", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "train",
+          "notes": ["Train wheels are coned, not flat", "Both wheels are locked to one axle", "The cone steers the train around curves", "The flange is only a backup", "The side to side wobble is called hunting"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wheel That Does the Thinking",
+          "text": "Look closely at a train wheel and you will notice something odd. It has no steering wheel, no driver turning it, and yet a train takes a curve at speed without leaving the rails. Most people assume the flange does it. The flange is that lip on the inside edge of the wheel, and it does help, but it is a backup. It is the emergency fence, not the steering. The real trick is a shape. A train wheel is not flat where it touches the rail. It is slightly coned, wider near the inside and tapering outward, like a very shallow cup turned over. The two wheels on an axle are locked together, so they must spin at exactly the same speed. Now think about a curve. The wheelset drifts a little toward the outside of the bend. That shifts the outer wheel onto its fat part and the inner wheel onto its skinny part. In one turn, the fat part covers more ground than the skinny part. The outside travels farther, the inside travels less, and the whole wheelset swings gently into the curve. It steers itself. Even better, it self corrects. If the wheelset wanders off center on straight track, the cone pushes it back toward the middle without anyone touching a thing. The gentle side to side wobble it makes while correcting has a name. Engineers call it hunting. The wheel is a machine that solves a geometry problem thousands of times a minute, and it has no moving parts at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What do most people wrongly believe steers a train, and what does the passage say that part really does?",
+            "Explain in your own words how a coned wheel takes the train around a curve.",
+            "Why does it matter that both wheels are locked to the same axle?",
+            "The passage says the wheel has no moving parts at all. Why do you think engineers would be pleased about that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the flange; it is only a backup, an emergency fence that stops the wheel leaving the rail",
+            "(the outer wheel rides on the wider part and the inner wheel on the narrower part, so the outside travels farther and the wheelset turns into the curve)",
+            "they must spin at the same speed, which is what forces the cone trick to work",
+            "(inference: parts that do not move cannot wear out, jam, or break, so it stays reliable)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A train steers itself because its wheels are coned, not because of the flange",
+            "Train drivers turn a large steering wheel to take each curve",
+            "Trains are the fastest way to travel anywhere on Earth"
+          ],
+          "answers": ["A train steers itself because its wheels are coned, not because of the flange"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["flange → ____", "coned → ____", "wheelset → ____", "hunting → ____"],
+          "rows": 1,
+          "answers": [
+            "the lip on the inside edge of the wheel that stops it leaving the rail",
+            "tapered, wider at one side than the other instead of flat",
+            "the two wheels and the axle that locks them together",
+            "the gentle side to side wobble as the wheels correct themselves"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the coned wheel to someone who has never heard of it. Use the words axle, coned, and curve.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Train That Steers Itself",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-train", "templateLabel": "The Train That Steers Itself", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "train",
+          "notes": ["Steel on steel grips about ten times less than tire on road", "A loaded freight train can need a mile to stop", "A 2 percent slope is a mountain to a train", "Westinghouse patented the air brake in 1869", "Air pressure holds the brakes off, not on", "Lose the air and every brake slams on"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Brake That Works by Failing",
+          "text": "Everything wonderful about a train comes from one fact: steel on steel barely grips. A rubber tire on asphalt pushes back hard against a rolling car, which is why your bike coasts to a stop so quickly. A steel wheel on a steel rail pushes back roughly ten times less. That is why a single locomotive can drag a hundred loaded wagons across a continent while a truck of the same power struggles with one trailer. Now turn the fact over. The grip that will not slow you down also will not stop you. A loaded freight train traveling at fifty five miles an hour can need more than a mile of track to halt, even with every brake clamped down. The train is not being stubborn. There is simply not enough friction between wheel and rail to shed that much energy quickly. This is also why railway grades are so gentle. A hill a cyclist would call flat, say a two percent slope, is a serious mountain to a train. For decades the stopping problem was solved badly. Early trains used brakemen: men who rode on the cars and cranked handbrakes on, wagon by wagon, when the whistle sounded. It was slow, it was inconsistent, and it killed people. In 1869 George Westinghouse patented something better, and his second version, the automatic air brake, contained an idea worth understanding. A pipe of compressed air runs the length of the train. You might guess that air pressure applies the brakes. It does the opposite. Pressure holds the brakes off. Each car carries its own small reservoir of air and its own valve, and when the pressure in the pipe drops, every valve on every car dumps its reservoir into its brake cylinder and the brakes slam on. Think about what that means. If the train breaks in two, the pipe tears open, the pressure vanishes, and both halves stop themselves. If a hose leaks, the train stops. If the system fails, the train stops. Westinghouse designed a machine whose failure mode is safety. Engineers call this fail safe, and the principle now protects elevators, aircraft, and nuclear plants. It started on a railroad."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says one fact explains everything wonderful about a train. What is that fact, and what is its downside?",
+            "Explain how the automatic air brake works. Quote the phrase the passage uses to describe what pressure actually does.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author save the sentence about elevators, aircraft, and nuclear plants until the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering low friction + long stopping distance + the fail safe air brake)",
+            "steel on steel barely grips, so a train pulls huge loads easily; the downside is that it cannot stop quickly",
+            "(air pressure keeps the brakes released and losing pressure applies them; quote: Pressure holds the brakes off)",
+            "(inform, with detail: it defines terms and explains a mechanism; the closing lines lean persuasive)",
+            "(inference: it widens a train fact into a big idea, so the ending lands harder)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["friction → ____", "grades → ____", "reservoir → ____", "fail safe → ____"],
+          "rows": 1,
+          "answers": [
+            "the grip or resistance between two surfaces rubbing together",
+            "the slopes a railway line climbs or descends",
+            "a store of something kept ready for use, here compressed air",
+            "designed so that a failure makes the machine safe instead of dangerous"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls brakemen slow, inconsistent, and deadly. Explain why a system that depends on people running along a moving train is worse than one pipe of air.",
+            "A truck driver can brake hard in a few car lengths. Explain why a train engineer cannot, using the passage."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: humans are slower, can miss a car, and must work in danger, while the pipe reaches every wagon at once)",
+            "(inference: low friction between steel wheel and steel rail cannot shed that much energy quickly)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it better to design a machine that never fails, or one that fails safely? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Train That Steers Itself",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-train", "templateLabel": "The Train That Steers Itself", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "train",
+          "notes": ["Standard gauge is 4 feet 8.5 inches", "Railway time began on the Great Western in 1840", "Bristol clocks once carried two minute hands", "November 18, 1883: the Day of Two Noons", "Congress made standard time law in 1918", "A French TGV hit 357 miles an hour in 2007"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Train That Rebuilt Time",
+          "text": "Before the railway, noon was a local fact. It arrived when the sun stood highest over your particular patch of ground, and since the sun does not clear the horizon everywhere at once, every town kept its own slightly different clock. A town a dozen miles west of yours ran about a minute behind. Nobody minded. Nobody could travel fast enough to notice. The railway noticed immediately. A stagecoach took days to cross the gap between two clocks, so the discrepancy dissolved into the journey. A train crossed it before lunch. Suddenly a timetable had to answer an impossible question: when it says the train departs at 11:05, whose 11:05 does it mean? Worse, two trains sharing one track are only safe if both crews agree on what time it is. On a single track railway, a disagreement about the minute is a disagreement about which train is still coming. Britain solved it first, and solved it by force. The Great Western Railway ordered its stations onto London time in 1840, and other companies followed. For years this produced a peculiar sight: station clocks in Bristol carrying two minute hands, one for the town and one for the railway, ten minutes apart. People called the imported version railway time. It won. By 1855 nearly every public clock in Britain had surrendered to Greenwich, though the courts held out until 1880. America had the same problem across a far larger board. In the early 1880s, roughly fifty different railroad times were in use, and a traveler crossing the country reset a watch again and again. The railroads did not wait for Congress. They met, agreed among themselves, and on November 18, 1883, the railroads of the United States and Canada simply changed. Clocks were stopped or advanced to fit the new standard zones, four of them across the United States. In cities where the old local noon and the new railway noon fell apart, midday arrived twice. Newspapers called it the Day of Two Noons. Notice who did this. Not a government, not an astronomer, not a treaty. A private industry rewrote what time it was for a continent because its business could not function otherwise, and the public went along because the railroads printed the timetables everyone actually lived by. Congress did not make standard time federal law until 1918, thirty five years after the country was already using it. There is a pattern here worth keeping. A new technology rarely stays inside the problem it was built for. The steam locomotive was designed to move coal. It ended up moving noon."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the railway made local time impossible when the stagecoach had not. Cite the evidence.",
+            "The passage says Britain solved it by force. What does the Bristol clock detail show about how people felt, and why does the author include it?",
+            "Identify the shift in the passage: where does it stop reporting events and start making an argument? How does the author signal it?",
+            "Analyze the final two sentences. What claim is the author making about technology, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a coach was too slow for the difference to matter, a train crossed it in hours; cite: A stagecoach took days to cross the gap between two clocks, so the discrepancy dissolved into the journey)",
+            "(the two minute hands show towns kept their own time alongside the imposed one, so the change was resisted, not welcomed; it makes the conflict concrete)",
+            "(at Notice who did this; a short imperative sentence pivots from narrative to argument)",
+            "(that inventions reshape far more than their intended purpose; earned by the time zone evidence, though it rests on one example)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["discrepancy → ____", "peculiar → ____", "surrendered → ____", "imposed or imported (time) → ____"],
+          "rows": 2,
+          "answers": [
+            "a difference between two things that should match",
+            "strange or unusual",
+            "gave in and accepted something after resisting it",
+            "brought in from outside rather than grown locally"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that the public went along because the railroads printed the timetables everyone actually lived by. Explain what this suggests about where real power sits.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(power sat with whoever controlled the daily schedule, not with lawmakers; law followed practice by thirty five years)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: private companies should never be allowed to set rules that everyone has to live by, even when they solve a real problem. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

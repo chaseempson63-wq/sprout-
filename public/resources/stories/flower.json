@@ -1,0 +1,319 @@
+{
+  "key": "flower",
+  "title": "How a Flower Knows It Is Spring",
+  "blurb": "A flower has no eyes and no calendar, but it measures the dark, remembers the winter, and opens right on time.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "How a Flower Knows It Is Spring",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-flower", "templateLabel": "How a Flower Knows It Is Spring", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the petals." },
+        {
+          "kind": "image",
+          "imageKey": "flower",
+          "notes": ["Petals open in the sun", "Flowers wait all winter", "Bees come for the sweet juice", "Rain helps it grow", "The middle holds the seeds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a flower. In winter it waits under the ground. The sun stays low. The days are short and cold. Then spring comes. The days get long. The sun feels warm. The rain soaks the dirt. A green stem pushes up. A bud sits on top. One warm morning the bud opens. Pink petals spread out wide. A bee comes to say hello."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the petals on each flower. Write how many in the box.",
+          "emoji": "🌸",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sun    rain" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one with what it gives the flower.",
+          "pairs": [
+            { "left": "sun", "right": "warm light" },
+            { "left": "cloud", "right": "rain" },
+            { "left": "bee", "right": "pollen" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a flower in the spring sun. Add a cloud and some rain.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "How a Flower Knows It Is Spring",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-flower", "templateLabel": "How a Flower Knows It Is Spring", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "flower",
+          "notes": ["The sweet drink is called nectar", "Yellow dust is called pollen", "Petals tell the bee where to land", "Bees smell flowers from far away", "A flower is how a plant makes seeds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Flower and the Bee",
+          "text": "A flower is not just pretty. It is how a plant makes seeds. Look in the middle of a flower. There is a sweet drink there called nectar. A bee wants that nectar. When the bee climbs in, yellow dust sticks to her fuzzy legs. That dust is pollen. The bee flies to the next flower. Some pollen rubs off. Now that flower can make seeds. The bright petals are a sign. They tell the bee where to land. The smell helps too. Bees can smell a flower from far away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What sweet drink is in the middle of a flower?", "What is the yellow dust called?", "What can a flower make after the pollen rubs off?"],
+          "rows": 2,
+          "answers": ["nectar", "pollen", "seeds"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The sweet drink in a flower is called ____.", "Yellow ____ sticks to the bee's legs.", "The bright ____ tell the bee where to land.", "A flower is how a plant makes ____."],
+          "wordBank": ["nectar", "pollen", "petals", "seeds"],
+          "answers": ["nectar", "pollen", "petals", "seeds"]
+        },
+        { "kind": "draw", "prompt": "Draw a bee landing on a flower. Add the sun and some grass.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "How a Flower Knows It Is Spring",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-flower", "templateLabel": "How a Flower Knows It Is Spring", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "flower",
+          "notes": ["A frost can kill an open bud", "A bulb counts the cold all winter", "Tulips need a cold winter to bloom", "Plants read light and warmth", "Bees wake up at the same time flowers open"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Flowers Wait for Spring",
+          "text": "A flower has one job. It has to make seeds, and it has to do it at the right time. Open too early and a frost will kill the buds. Open too late and winter will arrive before the seeds are ready. So a plant has to read the weather. It cannot see a calendar, but it can feel two things: light and cold. Under the ground, a bulb waits out the winter. It is not sleeping. It is counting. It keeps track of how long the cold lasts. A tulip that never gets a cold winter will often refuse to bloom at all. When spring comes, the sun climbs higher and the days stretch out. The soil warms. The plant adds up the light and the warmth, and when the total is high enough, it starts to build a bud. The flower opens. Petals spread. Nectar fills the middle. And the bees, who have been waiting through the same winter, arrive right on time. The plant and the bee are reading the same weather."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a flower's one job?",
+            "What two things can a plant feel that tell it the season?",
+            "What is a bulb doing under the ground all winter?",
+            "Why do you think the bees arrive right when the flowers open?"
+          ],
+          "rows": 2,
+          "answers": [
+            "to make seeds at the right time",
+            "light and cold",
+            "counting how long the cold lasts",
+            "(inference: they are reading the same weather, so they wake at the same time)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Flowers Wait for Spring", "How to Build a Greenhouse", "The Tallest Tree in the World"],
+          "answers": ["Why Flowers Wait for Spring"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Open too early and a ____ will kill the buds.", "A tulip that never gets a cold ____ may refuse to bloom.", "In spring the ____ climbs higher and the days stretch out."],
+          "wordBank": ["frost", "winter", "sun"],
+          "answers": ["frost", "winter", "sun"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would happen to a flower that opened its buds in the middle of winter, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "How a Flower Knows It Is Spring",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-flower", "templateLabel": "How a Flower Knows It Is Spring", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flower",
+          "notes": ["Photoperiodism: timing by the length of the dark", "Found in 1920 by Garner and Allard", "A tobacco plant that would not flower in summer", "Chrysanthemums bloom when nights grow long", "One flash of light can restart the count", "Growers use lamps to force blooms early"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Plant That Counts the Dark",
+          "text": "You would think a plant waits for spring by feeling the warmth. Warmth is part of it. But warmth is a liar. A mild week in February can feel exactly like April, and a plant that trusted it would open its buds straight into the next frost. So plants measure something that cannot be faked: the length of the night. In 1920, two scientists named Wightman Garner and Harry Allard were studying a tobacco plant that grew huge and green but would not flower out in the summer field. They tried moving it into a dark shed for part of each day. It bloomed. The plant did not want more light. It wanted more darkness. Their discovery is called photoperiodism. Plants track the hours of unbroken dark, and different plants need different amounts. Chrysanthemums flower once nights grow long, which is why you see them in fall. Spinach flowers when nights grow short. Here is the strange part. If you interrupt a long night with a single flash of light, some plants act as though the night never happened, and they will not flower. Their count starts over from zero. Growers use this on purpose. They switch lamps on in the middle of the night, or leave them off, to bring a crop of flowers into bloom for a holiday, weeks before the weather outside says so."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The author says warmth is a liar. What does that mean?",
+            "What surprised Garner and Allard about their tobacco plant?",
+            "Explain photoperiodism in your own words.",
+            "A single flash of light can stop some plants from flowering. What does that tell you about how carefully they are measuring?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a warm spell can happen at the wrong time of year, so warmth alone is not a safe signal",
+            "it bloomed when they gave it more darkness, not more light",
+            "(timing flowering by measuring the length of the dark)",
+            "(inference: the measurement is precise, and it needs the dark to be unbroken)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Plants time their flowering by measuring the length of the night, because warmth alone can fool them",
+            "Tobacco is the most useful plant grown in America",
+            "Flowers open whenever the weather gets warm enough"
+          ],
+          "answers": ["Plants time their flowering by measuring the length of the night, because warmth alone can fool them"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["photoperiodism → ____", "unbroken → ____", "interrupt → ____"],
+          "rows": 1,
+          "answers": [
+            "timing flowering by the length of the dark",
+            "with no break or gap in it",
+            "to break into something and stop it partway"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: growers use lamps to make flowers bloom weeks before the weather says so. Is that clever or is it cheating? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "How a Flower Knows It Is Spring",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-flower", "templateLabel": "How a Flower Knows It Is Spring", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flower",
+          "notes": ["The leaves do the measuring, not the flower", "Phytochrome: a pigment that senses red light", "Florigen was named in 1937, found about 70 years later", "Florigen is a protein made in the leaf", "Vernalization: cold releases a brake on flowering", "Fruit trees in warm climates may never bloom"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Reading the Weather Without Eyes",
+          "text": "A plant has no eyes, no brain, and no calendar. It still manages to open its flowers within a few days of the same date every year. How it does that is one of the neatest pieces of engineering in the natural world. Start with the sensor. The measuring is not done by the flower. It is done by the leaves. Leaves carry a pigment called phytochrome, which comes in two forms that flip back and forth. Red daylight flips it into its active form. Through a long dark night, it slowly relaxes back again. The plant is not counting hours the way a clock does. It is reading how far that pigment has drifted by dawn, and the amount of drift is a measure of how long the night was. Then the message has to travel. The leaf senses the season, but the flower gets built at the tip of a shoot, sometimes far away. For decades nobody could find the messenger. A Russian scientist named Mikhail Chailakhyan argued in 1937 that some signal must move from leaf to shoot, and he gave it a name before anyone had ever seen it: florigen. It took about seventy years to catch. Florigen turned out to be a protein, made in the leaf and pushed up through the plant's plumbing to the growing tip, where it switches on the genes that build a flower. There is a second lock on the door. Many plants will not flower at all until they have lived through a real winter. Cold does not encourage them. Cold removes a brake. All through the freezing weeks, a gene that had been blocking flowering is quietly switched off, one cold day at a time, and it stays off through the spring. Botanists call this vernalization. It is why tulip bulbs sit in a refrigerator at the garden shop, and why some fruit trees planted in warm climates simply never bloom. They are still waiting for a winter that never comes. Put the pieces together and a flower is a weather instrument. It measures the dark, remembers the cold, adds up the warmth, and then commits. And once the bud opens, there is no taking it back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Which part of the plant does the measuring, and what does it use to do it?",
+            "Explain how Chailakhyan could name florigen in 1937 without ever having seen it. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering phytochrome measuring the dark, florigen carrying the signal, and vernalization requiring cold)",
+            "the leaves, using a pigment called phytochrome",
+            "(he reasoned a messenger must exist from how the plant behaves; quote: he gave it a name before anyone had ever seen it)",
+            "(inform, with detail: it defines terms and explains a mechanism; the closing lines lean toward entertaining)",
+            "(the choice to bloom cannot be undone, so the measuring has to be right; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["phytochrome → ____", "florigen → ____", "vernalization → ____", "plumbing → ____"],
+          "rows": 1,
+          "answers": [
+            "a leaf pigment that flips form in light and back in the dark",
+            "the protein signal made in leaves that tells a shoot to build a flower",
+            "the cold period a plant needs before it can flower",
+            "the tubes inside a plant that carry water and food"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says cold does not encourage them, cold removes a brake. Explain the difference in your own words.",
+            "Why might a plant that measures the dark be safer than one that measures only warmth?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(cold does not push the plant to flower; it lifts a block that was stopping it)",
+            "(inference: night length is the same every year on a given date, but warm spells can come at any time)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: growers use lamps and refrigerated bulbs to force flowers into bloom out of season. Should they? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "How a Flower Knows It Is Spring",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-flower", "templateLabel": "How a Flower Knows It Is Spring", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flower",
+          "notes": ["Kyoto bloom dates run from the year 812", "The longest record of a natural event we have", "Pulled from court diaries, poems, and temple chronicles", "Compiled by researcher Yasuyuki Aono", "2021: earliest full bloom in over 1,200 years", "Cherry trees count cold first, then add up warmth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Longest Weather Record on Earth Is Written in Flowers",
+          "text": "There is a spreadsheet kept at a university in Japan with a column of dates in it that begins in the year 812. It is the longest record of a repeating natural event that humans have ever assembled, and it is not a record of floods, harvests, or storms. It is a list of the days on which the cherry trees of Kyoto reached full bloom. Nobody set out to build it. For more than a thousand years, Japanese courtiers, monks, and officials wrote down when they held their blossom parties, because the blossom mattered to them. They noted it in diaries and poems and temple chronicles, the way you might note a birthday. A researcher named Yasuyuki Aono spent years reading those documents and pulling the dates out of them. The result is an accidental climate archive, assembled by people who were only trying to remember a good afternoon. To understand why those dates are useful, you have to know what a cherry tree is actually doing. A flowering tree does not wake up because the weather is nice. It runs a two-stage program. Through the winter, it counts cold. A gene that blocks flowering is switched off, one cold week at a time, and only when enough chill has been banked does the tree unlock. That stage is called vernalization. Then, in spring, the tree begins adding up warmth. When the running total crosses a threshold, the buds open, and the tree has no say in the matter. It cannot be optimistic or cautious. It is a thermometer that reports its reading by blooming. This is what makes the Kyoto record valuable. A diary entry from 1409 is not an opinion about the weather. It is a measurement of that spring, taken by a tree, written down by a person who had no idea he was taking one. Read the column from top to bottom and a shape appears. For most of a millennium the dates wobble around the middle of April, drifting a few days either way as cold centuries and mild ones came and went. Then, across roughly the last hundred and fifty years, the wobble stops being a wobble and starts being a slope. The dates walk steadily earlier. In 2021 the Kyoto cherries reached full bloom on March 26, the earliest date in more than 1,200 years of records. The honest reading of that slope has two parts, and they are worth separating. Kyoto is now a large city, and cities run warmer than the countryside around them, because concrete and asphalt hold the day's heat and release it at night. Some of the shift belongs to the city itself. But rural Japanese trees are moving earlier too, and so are the shorter flowering records kept in Europe and North America. The city explains part of the slope. It does not explain all of it. There is one more turn to this. Cherry trees need their winter. If warm winters shorten the cold-counting stage, a tree can arrive at spring without ever having finished the first half of its program, and the bloom comes late, thin, or ragged instead of early. Warmer does not simply mean sooner. Past a certain point it means worse. The people who kept these records were not scientists. They were writing about a party under the trees. But they were careful, they were consistent, and they kept it up for twelve hundred years, which is the whole trick of a good measurement. Somebody wrote down the day the flowers opened, and then somebody else did it the next year, and nobody stopped. The cherry trees have been reporting the temperature of Japan since before England had a Norman king, and it took us until now to read the report."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by an accidental climate archive. Cite the evidence.",
+            "Why is a diary entry from 1409 a measurement rather than an opinion? Cite the phrase the author uses to describe the tree.",
+            "Identify the shift in the passage: where does it turn from history into argument, and how does the author signal it?",
+            "The author admits that some of the shift belongs to the city itself. Analyze why the author raises that point instead of leaving it out."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the record was never meant as science; cite: assembled by people who were only trying to remember a good afternoon)",
+            "(the tree responds to temperature and cannot hold an opinion; cite: It is a thermometer that reports its reading by blooming)",
+            "(at Read the column from top to bottom and a shape appears; signaled by the wobble stops being a wobble and starts being a slope)",
+            "(conceding the weaker explanation first and then answering it makes the argument harder to dismiss and shows the author is being honest)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["vernalization → ____", "archive → ____", "threshold → ____", "consistent → ____"],
+          "rows": 2,
+          "answers": [
+            "the winter cold a plant must count through before it can flower",
+            "a collection of records kept over time",
+            "the point at which something crosses over and a change happens",
+            "done the same way every time"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says warmer does not simply mean sooner. Explain what a warm winter can do to a cherry tree's two-stage program.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a warm winter can cut the cold-counting stage short, so the tree never unlocks properly and the bloom is late, thin, or ragged)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A thousand-year-old diary is not real scientific data. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

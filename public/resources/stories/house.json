@@ -1,0 +1,319 @@
+{
+  "key": "house",
+  "title": "Why Your House Doesn't Fall Down",
+  "blurb": "Every wall, beam and roof in your house is doing a job. Here is how a house holds itself up, keeps the weather out, and why houses look different everywhere.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "Why Your House Doesn't Fall Down",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-house", "templateLabel": "Why Your House Doesn't Fall Down", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the roof. Find the door." },
+        {
+          "kind": "image",
+          "imageKey": "house",
+          "notes": ["The roof slopes so rain runs off", "The door is a hole with a lid", "Windows let the light in", "The walls stand on the ground"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a house. A house has walls. The walls stand up tall and straight. A house has a roof on top. The roof keeps the rain off you. A house has a door. You open the door and go in. A house has windows. The windows let the light in. At night the house keeps you warm. Your house is a good place to be."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the houses in each row. Write how many in the box.",
+          "emoji": "🏠",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "roof    door" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "roof", "right": "on top" },
+            { "left": "door", "right": "you walk through" },
+            { "left": "window", "right": "you look out" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own house. Give it a roof, a door, and two windows.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "Why Your House Doesn't Fall Down",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-house", "templateLabel": "Why Your House Doesn't Fall Down", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "house",
+          "notes": ["A house starts as a hole in the ground", "The bottom part is called the foundation", "Wood posts inside the walls are called studs", "Roofs are built out of triangles", "Triangles do not bend"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a House Gets Built",
+          "text": "A house starts as a hole in the ground. Workers fill the hole with concrete. That is the foundation. It holds the whole house up. Next come the walls. Inside the walls are long pieces of wood called studs. They stand in a row like a fence. Then the roof goes on. The roof is built out of triangles. Triangles are strong. You can push on a triangle and it will not bend. Last of all come the windows and the door. Now the house can keep the rain out and keep you warm."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a house start as?", "What is the foundation made of?", "What shape is the roof built from?"],
+          "rows": 2,
+          "answers": ["a hole in the ground", "concrete", "triangles"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The ____ holds the whole house up.", "Inside the walls are wood posts called ____.", "The roof is built out of ____.", "A triangle is strong and will not ____."],
+          "wordBank": ["foundation", "studs", "triangles", "bend"],
+          "answers": ["foundation", "studs", "triangles", "bend"]
+        },
+        { "kind": "draw", "prompt": "Draw a house being built. Add the workers and their ladders.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "Why Your House Doesn't Fall Down",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-house", "templateLabel": "Why Your House Doesn't Fall Down", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "house",
+          "notes": ["The roof rests on slanted beams called rafters", "Studs stand about sixteen inches apart", "The foundation spreads the weight onto the soil", "Builders call this the load path", "Some walls hold the house up, some just divide rooms"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Passing the Weight Along",
+          "text": "Stand in any room and look up. The roof over your head is heavy. So is the snow or the rain that lands on it. So why does none of it come down on you? The answer is that a house passes weight along, hand to hand, all the way to the ground. It starts at the roof. The roof rests on rafters, which are long slanted beams. The rafters push their load onto the walls. Inside every wall is a row of upright wooden posts called studs, standing about sixteen inches apart. Studs are good at one job: holding weight straight down. The studs pass the load to the foundation, a thick slab or wall of concrete under the whole house. The foundation is wide, so it spreads the weight over a big patch of soil. The soil holds. Builders call this the load path. If any part of the path is missing, the house sags. That is why you cannot just cut a hole anywhere you like in a wall. Some walls are only dividers. Others are holding the house up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are rafters?",
+            "What is the one job a stud is good at?",
+            "Why is the foundation made wide?",
+            "Why do you think a builder checks a wall carefully before cutting a door into it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "long slanted beams that the roof rests on",
+            "holding weight straight down",
+            "so it spreads the weight over a big patch of soil",
+            "(inference: the wall might be holding the house up, not just dividing rooms)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Passing the Weight Along", "How to Paint a Bedroom", "The Tallest Tower in the World"],
+          "answers": ["Passing the Weight Along"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The roof rests on long slanted beams called ____.", "Upright wooden posts inside a wall are called ____.", "Builders call the way weight travels down the load ____."],
+          "wordBank": ["rafters", "studs", "path"],
+          "answers": ["rafters", "studs", "path"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: follow the weight of one snowflake from your roof all the way to the soil. Name each part it passes through.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "Why Your House Doesn't Fall Down",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-house", "templateLabel": "Why Your House Doesn't Fall Down", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "house",
+          "notes": ["Heat only moves from warm toward cold", "Insulation is really just trapped air", "Snow is mostly air, so an igloo holds heat", "Adobe walls run about half a day behind the sun", "Your heater replaces heat, it does not store it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A House Is a Trap for Air",
+          "text": "A house has one job that has nothing to do with holding itself up. It has to keep the weather on the outside and keep you comfortable on the inside. Heat is stubborn about this. Heat always moves from warm places toward cold ones, and it never moves the other way on its own. In winter, the heat inside your house is constantly leaking out through the walls, the roof, and the glass. Your heater is not really making a warm house. It is replacing what the house loses. So builders slow the leak down. The trick is air. Still air is a terrible conductor of heat, so if you can trap air and stop it from moving, you have a barrier. That is all insulation is: a material full of tiny pockets of trapped air. Fluffy pink fiberglass, foam board, sheep wool, even shredded newspaper all work the same way. The material barely matters. The trapped air does the work. People figured this out long before anyone used the word insulation. An igloo is built from blocks of packed snow, which is mostly air, and a person inside can sit forty degrees Fahrenheit warmer than the night outdoors. In hot, dry places, people built with adobe: mud bricks a foot thick. Thick earth walls take most of a day for heat to cross, so the house stays cool while the sun is up, then gives that stored heat back after dark, exactly when it is wanted. Neither builder had a physics textbook. Both had noticed something true about heat and built a house around it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says your heater is not really making a warm house. Explain what it is doing instead.",
+            "Why does it barely matter whether insulation is fiberglass, wool, or shredded newspaper?",
+            "Explain how an igloo and an adobe house are solving opposite problems with the same idea.",
+            "The passage says neither builder had a physics textbook. What point is the author making by saying that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "replacing the heat that keeps leaking out through the walls, roof, and glass",
+            "because the trapped air does the work, not the material itself",
+            "(igloo keeps heat in, adobe keeps heat out, both by slowing how fast heat can cross)",
+            "(inference: people can discover real science by careful noticing, long before it is written down)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A house keeps you comfortable by slowing heat down, and trapped air is how it does it",
+            "Igloos are the warmest homes ever built",
+            "Modern heaters have made insulation unnecessary"
+          ],
+          "answers": ["A house keeps you comfortable by slowing heat down, and trapped air is how it does it"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["conductor → ____", "insulation → ____", "adobe → ____"],
+          "rows": 1,
+          "answers": [
+            "something heat moves through easily",
+            "a material full of tiny pockets of trapped air that slows heat down",
+            "brick made from mud, used to build thick walls"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: pick one room in your home and explain where you think its heat leaks out. Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "Why Your House Doesn't Fall Down",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-house", "templateLabel": "Why Your House Doesn't Fall Down", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "house",
+          "notes": ["Catalhoyuk, Turkey: houses entered through the roof", "That town had no streets at all", "Chimneys reached Europe only about 800 years ago", "Before chimneys, the fire sat in the middle of the room", "England taxed houses by their number of windows", "Owners bricked windows up to lower the bill"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rooms We Had to Invent",
+          "text": "A house looks like an obvious idea, but almost every part of it had to be invented, and some of the inventions took thousands of years. Start with the wall. Around nine thousand years ago, in what is now Turkey, several thousand people lived in a town called Catalhoyuk. Their houses were built of mud brick and packed so tightly together that there were no streets at all. There were no front doors either. You reached your house by walking across the rooftops of your neighbors and climbing down a ladder through a hole in your own roof. The same hole let the smoke out. Nobody had thought of a chimney yet. The chimney is a surprisingly late idea. For most of human history, a fire burned in the middle of the room and the smoke found its own way out through the thatch, a vent, or your lungs. Medieval halls were black with soot. The chimney only became common in Europe about eight hundred years ago, and it changed the shape of the house immediately. Once smoke could be aimed at a flue, the fire could be pushed against a wall. Once the fire was against a wall, you could build a floor above it without filling the upstairs with smoke. The chimney is the reason houses have upstairs bedrooms. Windows were slower still. For centuries a window was simply a hole. You could cover it with a shutter, a stretched animal skin, or a piece of oiled cloth, and each of those choices was the same trade: light or warmth, pick one. Clear glass in a window was a Roman luxury, then largely forgotten in northern Europe, then a mark of wealth so plain that English houses were once taxed on how many windows they had. Owners bricked their windows up to lower the bill. You can still see the blank shapes in old English walls. Every ordinary thing in your house is like this. Someone lived without it, wanted it, and worked out how."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Describe how a person got into their own house at Catalhoyuk, and what else that opening was used for.",
+            "Explain the chain of events that let houses have upstairs bedrooms. Quote the sentence the author uses to land that point.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end with the line about someone living without it, wanting it, and working out how?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering: house parts were invented over thousands of years; examples of walls, chimneys, windows)",
+            "climbed across the neighbors' rooftops and down a ladder through a roof hole; the same hole let the smoke out",
+            "(flue lets smoke be aimed, so the fire moves to a wall, so a floor can go above it; quote: The chimney is the reason houses have upstairs bedrooms.)",
+            "(inform, with detail: it gives dates, places, and explanations; the tone is curious rather than argumentative)",
+            "(it turns the history into something personal: every ordinary thing was once a problem someone solved)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["thatch → ____", "flue → ____", "soot → ____", "luxury → ____"],
+          "rows": 1,
+          "answers": [
+            "a roof made of bundled reed or straw",
+            "a pipe or shaft that carries smoke up and out",
+            "black powder left behind by smoke",
+            "something expensive that only the wealthy could have"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a window was a trade: light or warmth, pick one. Explain why that was a real trade before glass was common.",
+            "What does the window tax tell you about what governments thought windows meant?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(an open hole let light in but also let heat out and weather in; covering it kept heat but made the room dark)",
+            "(inference: windows signalled wealth, so counting them was a rough way to measure who was rich)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which invention changed the house most, the chimney or the glass window? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "Why Your House Doesn't Fall Down",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-house", "templateLabel": "Why Your House Doesn't Fall Down", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "house",
+          "notes": ["Thatch sheds water only above about 45 degrees of pitch", "Flat roofs belong to dry places", "Thick earth walls lag the sun by about 12 hours", "Mesa Verde alcoves face south on purpose", "A Mongolian ger packs up and travels", "Air conditioning let builders stop listening to the site"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The House Is an Argument With the Weather",
+          "text": "For most of history, you could tell where you were by looking at the houses. Not because of decoration, but because a house was an argument with the local weather, made out of whatever was lying nearby, and the weather and the materials were different everywhere. Consider the roof. A roof made of thatch, which is bundled reed or straw, only sheds water if it is steep. Below roughly forty five degrees, water soaks in instead of running off, and the roof rots. So in the wet parts of northern Europe, where reed grew in the marshes, roofs climbed at sharp angles. Travel to the dry parts of the American Southwest or the Middle East and the roofs go flat, because there is almost nothing to shed, and a flat roof is cheaper, easier, and doubles as a place to sleep on a hot night. The roof is not a style choice. It is a reading of the rainfall. Consider the walls. Where the swing between day and night temperature is brutal, people built thick: adobe, rammed earth, stone. A wall two feet of packed earth thick takes most of a day for heat to cross, so it hands you the afternoon's warmth in the evening and the night's coolness at noon. It is a battery for heat, running about twelve hours behind the sun. Where wood was plentiful and winters were long, people built thin walls instead and stuffed them with anything that trapped air. Consider the whole house. The Ancestral Puebloans built into south-facing cliff alcoves at Mesa Verde, and the geometry is not an accident. Winter sun sits low and reaches deep under the overhang, warming the stone all day. Summer sun sits high, and the same overhang throws the whole village into shade. That is a solar heating system built around seven hundred fifty years ago out of nothing but a well-chosen hole in a cliff. A Mongolian ger goes the other way and solves a different problem: it is felt stretched over a wooden lattice, warm enough for a steppe winter, and it comes apart and travels with the herds. Then, in the middle of the twentieth century, the argument mostly stopped. Cheap fuel, cheap electricity, air conditioning, and materials that could be trucked a thousand miles meant a builder no longer had to listen to the site. The same house could be dropped in Maine or Arizona, and a machine would fix the difference. It worked, in the sense that people were comfortable. It also meant the house had stopped thinking, and the fuel bill did the thinking instead. The interesting part is that the argument is coming back, and it is coming back with instruments. Builders who follow the passive design standards obsess over exactly what the Puebloans obsessed over: which way the glass faces, how far the roof overhangs, how tight the shell is, where the sun will be in February. They can now measure what earlier builders could only notice across generations. The old houses were right for reasons nobody could write down. The new ones aim at the same target with a spreadsheet. Both are doing the same thing. They are asking the weather a question and building the answer."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why a thatched roof has to be steep and a desert roof does not. Cite the evidence for each.",
+            "The author calls a thick earth wall a battery for heat. Explain what that metaphor is claiming, and whether the passage supports it.",
+            "Identify the turn in the passage: where does it change direction, and how does the author signal it?",
+            "The author writes that the house had stopped thinking, and the fuel bill did the thinking instead. Analyze what that line is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: traditional houses were shaped by local climate and materials, modern ones stopped being, and careful design is bringing that back)",
+            "(cite: only sheds water if it is steep / Below roughly forty five degrees, water soaks in; and: there is almost nothing to shed)",
+            "(it claims the wall stores heat and releases it later; supported by: running about twelve hours behind the sun)",
+            "(at Then, in the middle of the twentieth century, the argument mostly stopped; the word Then plus a short flat sentence signals the pivot)",
+            "(it blames cheap energy for replacing design with machinery; earned by the air conditioning and trucked materials evidence, though the author never quantifies the cost)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["thatch → ____", "alcove → ____", "lattice → ____", "shell (of a house) → ____"],
+          "rows": 2,
+          "answers": [
+            "roofing made from bundled reed or straw",
+            "a recess or hollow set back into a wall or cliff",
+            "a crisscrossed frame of strips, used here as the wall structure of a ger",
+            "the outer layer of a building that separates inside from outside"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the old builders were right for reasons nobody could write down. Explain how a tradition can carry correct knowledge without anyone understanding it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(houses that failed were not copied, so the surviving designs encode what worked even without a theory behind it)",
+            "(student question plus a credible source type, such as a building science study or a regional architectural history)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: a house built for its climate is always better than a house built for its owner's taste. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

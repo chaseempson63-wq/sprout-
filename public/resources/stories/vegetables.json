@@ -1,0 +1,319 @@
+{
+  "key": "vegetables",
+  "title": "Nobody Grows a Vegetable",
+  "blurb": "Every vegetable is a different body part of a plant, and the word itself is something people made up in the kitchen.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "Nobody Grows a Vegetable",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-vegetables", "templateLabel": "Nobody Grows a Vegetable", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Name each vegetable you know." },
+        {
+          "kind": "image",
+          "imageKey": "vegetables",
+          "notes": ["A carrot is a root", "Lettuce is leaves", "Peas are seeds", "Broccoli is tiny flowers", "Every one is part of a plant"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A carrot is a root. It grows down in the dirt. You pull it up. Lettuce is leaves. Peas are seeds. They sit in a pod like a bed. Every vegetable is a piece of a plant. When you eat a carrot, you are eating a root. When you eat lettuce, you are eating leaves. Look at your plate. Which part is it?"
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the carrots in each row. Write how many in the box.",
+          "emoji": "🥕",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "root    leaf" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each vegetable to its plant part.",
+          "pairs": [
+            { "left": "carrot", "right": "root" },
+            { "left": "lettuce", "right": "leaf" },
+            { "left": "pea", "right": "seed" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a carrot growing in the dirt. Put its leafy green top above the ground.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "Nobody Grows a Vegetable",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-vegetables", "templateLabel": "Nobody Grows a Vegetable", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "vegetables",
+          "notes": ["A carrot is a root", "Celery is a stem", "Broccoli is tiny flower buds", "A pea is a seed", "Lettuce is leaves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Plant On Your Plate",
+          "text": "Plants have parts. Roots. Stems. Leaves. Flowers. Seeds. Every vegetable you eat is one of those parts. A carrot is a root. It stores food for the plant, deep in the soil. Celery is a stem. It is the stalk that holds the plant up. Lettuce is leaves. Cabbage is leaves too, packed in a tight ball. Broccoli is a bunch of tiny flower buds. If you left it in the garden, it would open up and bloom yellow. Peas are seeds. Each pea could grow into a new plant. So a plate of vegetables is really a pile of plant parts. Roots, stems, leaves, flowers, and seeds, all mixed together."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Which part of the plant is a carrot?", "What would happen to broccoli if you left it in the garden?", "What could each pea grow into?"],
+          "rows": 2,
+          "answers": ["a root", "it would open up and bloom yellow", "a new plant"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A carrot is a ____.", "Celery is a ____.", "Broccoli is a bunch of tiny flower ____.", "Each pea is a ____ that could grow a new plant."],
+          "wordBank": ["root", "stem", "buds", "seed"],
+          "answers": ["root", "stem", "buds", "seed"]
+        },
+        { "kind": "draw", "prompt": "Draw a plant with a root, a stem, and leaves. Label the part you would eat.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "Nobody Grows a Vegetable",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-vegetables", "templateLabel": "Nobody Grows a Vegetable", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "vegetables",
+          "notes": ["Vegetable is a kitchen word, not a plant word", "A potato is a stem, not a root", "Broccoli blooms yellow if you wait", "A tomato is really a fruit", "Carrots store sugar underground"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Kitchen Word, Not a Plant Word",
+          "text": "Ask a gardener what a vegetable is and you will get a strange answer. There is no such thing. Plants do not grow vegetables. Plants grow roots, stems, leaves, flowers, and seeds. Vegetable is a word people made up in the kitchen. It just means a plant part we like to eat with dinner. Once you know that, the vegetable drawer gets interesting. A carrot is a root, fat with stored food. Celery is a stem. Lettuce and cabbage are leaves. Broccoli is a crowd of flower buds, picked before they can open. Leave broccoli in the garden for two more weeks and it turns into a spray of small yellow flowers. Peas and beans are seeds. A potato is not a root at all. It is a swollen underground stem, which is why it grows little eyes that can sprout. So dinner is a plant taken apart. Roots on one side of the plate, leaves on the other, flower buds in the middle, and nobody at the table thinking about it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why does the passage say there is no such thing as a vegetable?",
+            "Which plant part is broccoli, and when is it picked?",
+            "A potato is not a root. What is it?",
+            "Why do you think people put roots, leaves, and flower buds all in one word?"
+          ],
+          "rows": 2,
+          "answers": [
+            "vegetable is a kitchen word, not a plant word; plants grow roots, stems, leaves, flowers, and seeds",
+            "flower buds, picked before they can open",
+            "a swollen underground stem",
+            "(opinion: we sort food by how we eat it, not by how it grows)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A Kitchen Word, Not a Plant Word", "How to Plant a Garden in Spring", "The Tallest Tree in the World"],
+          "answers": ["A Kitchen Word, Not a Plant Word"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A carrot is a ____, fat with stored food.", "Lettuce and cabbage are ____.", "Broccoli is a crowd of flower ____.", "A potato is a swollen underground ____."],
+          "wordBank": ["root", "leaves", "buds", "stem"],
+          "answers": ["root", "leaves", "buds", "stem"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: pick one vegetable you eat and name which part of the plant it is. Then say how you know.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "Nobody Grows a Vegetable",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-vegetables", "templateLabel": "Nobody Grows a Vegetable", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "vegetables",
+          "notes": ["Brassica oleracea: one species, six vegetables", "Kale, cabbage, broccoli, cauliflower, kohlrabi, sprouts", "Wild cabbage still grows on European sea cliffs", "Selective breeding is thousands of years old", "Kale and cabbage can still be crossed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Six Vegetables, One Plant",
+          "text": "On the sea cliffs of Europe grows a scruffy, bitter plant called wild cabbage. It is nobody's idea of dinner. Tough leaves, a woody stalk, a spray of pale flowers. And yet almost everything on the vegetable shelf that your family argues about came out of it. Thousands of years ago, farmers began choosing. A farmer who liked the leaves saved seeds from the leafiest plants, and planted those, and did it again the next year, and the next. After enough generations of choosing, the leaves grew huge. That plant is kale. Another farmer kept choosing plants with a tight bud at the top. That became cabbage. Choose the flower buds instead and you get broccoli. Keep choosing broccoli for fatter, paler, tighter heads and you get cauliflower. Choose the swollen stem and you get kohlrabi. Choose the little buds along the stalk and you get brussels sprouts. Kale, cabbage, broccoli, cauliflower, kohlrabi, brussels sprouts. Six vegetables that taste nothing alike and look nothing alike. They are all the same species: Brassica oleracea. They can still be crossed with each other, the way two dogs of different breeds can. A great dane and a chihuahua are one species too, shaped by the same slow patience. This is called selective breeding, and it is one of the oldest technologies humans have. No lab, no machines. Just a farmer, a handful of seeds, and the decision about which plant gets to have children."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is wild cabbage, and where does it grow?",
+            "Explain selective breeding in your own words.",
+            "Kale and brussels sprouts look nothing alike. How can they be the same species?",
+            "The passage says a farmer decides which plant gets to have children. What does that mean, and why does it change the plant over time?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a scruffy, bitter plant that grows on the sea cliffs of Europe",
+            "(choosing which plants get to make seeds so their traits pass on)",
+            "farmers chose different parts of the same plant, Brassica oleracea, over thousands of years",
+            "(inference: only the chosen plants pass on seeds, so the traits the farmer wanted get stronger each generation)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Six familiar vegetables are all one wild plant, reshaped by thousands of years of farmers choosing seeds",
+            "Wild cabbage is the tastiest plant in Europe",
+            "Dogs and vegetables are closely related"
+          ],
+          "answers": ["Six familiar vegetables are all one wild plant, reshaped by thousands of years of farmers choosing seeds"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["generations → ____", "species → ____", "selective breeding → ____"],
+          "rows": 1,
+          "answers": [
+            "rounds of parents and children, one after another",
+            "a group of living things that can breed with each other",
+            "choosing which plants get to reproduce so their traits pass on"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: farmers spent centuries reshaping wild cabbage into six different foods. Was that a good thing to do to a plant? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "Nobody Grows a Vegetable",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-vegetables", "templateLabel": "Nobody Grows a Vegetable", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "vegetables",
+          "notes": ["Glucosinolates: the cabbage family's chemical defense", "Bitterness is released when leaves are chewed", "TAS2R38: a bitter-taste gene", "Kids have more taste buds than adults", "Sprouts were bred milder in the 1990s", "Bitter sensitivity fades with age"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Taste of a Plant Fighting Back",
+          "text": "Here is a fact that might rearrange your dinner table: broccoli is trying to stop you. A plant cannot run. It cannot hide, bite back, or call for help. When something starts eating it, a plant has one option left, which is chemistry. Over millions of years, plants in the cabbage family evolved a group of compounds called glucosinolates. When a leaf is crushed or chewed, those compounds break apart and release a sharp, bitter, sulfur taste. To a caterpillar, that taste is a warning label. To you, it is the reason brussels sprouts are an argument. So the bitterness is not a flaw in the vegetable. It is the vegetable's defense, working exactly as designed, on the wrong animal. Kids get a stronger dose of the warning. Human children have more taste buds than adults do, and many people carry a version of a gene called TAS2R38 that makes bitter compounds taste intensely, almost violently bitter. Two people can chew the same sprout and honestly disagree about what happened. Neither is lying. Sensitivity to bitterness also tends to fade with age, which is why adults claim to like foods that children find inedible, and why they are not entirely making it up. Then people did something about it. In the 1990s, a Dutch plant scientist named Hans van Doorn identified the specific compounds behind the bitterness of brussels sprouts. Breeders went back to old seed varieties that were naturally low in those compounds, crossed them with modern high-yield plants, and slowly produced a sprout that tastes mild. The brussels sprouts sold today are genuinely not the ones your grandparents refused. The vegetable changed. The complaint stayed. It is worth noticing what that story is really about. For ten thousand years, plants have been evolving chemicals to keep from being eaten, and humans have been quietly editing those chemicals back out. The sprout on your plate is one move in an argument that has been going on longer than writing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does a plant use chemistry instead of running away? Use the passage in your answer.",
+            "Explain why two people can eat the same brussels sprout and honestly disagree about the taste.",
+            "The author says the bitterness is the vegetable's defense working on the wrong animal. Explain what that means, and quote the phrase.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering chemical defense, bitter taste, and human breeding)",
+            "a plant cannot run, hide, bite back, or call for help, so chemistry is its one option left",
+            "children have more taste buds, and many people carry a version of TAS2R38 that makes bitter compounds taste intensely bitter",
+            "(the chemical evolved to repel insects, not people; quote: working exactly as designed, on the wrong animal)",
+            "(inform, with a humorous tone: it defines glucosinolates and TAS2R38 and gives a date, but also jokes about the argument at the table)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["glucosinolates → ____", "compounds → ____", "sensitivity → ____", "varieties → ____"],
+          "rows": 1,
+          "answers": [
+            "bitter sulfur chemicals the cabbage family makes to defend itself",
+            "substances made of different parts joined together",
+            "how strongly you notice something",
+            "different types of the same crop"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes: The vegetable changed. The complaint stayed. Explain the point being made.",
+            "Why might a plant benefit from tasting bad to a caterpillar but not to a human?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(sprouts are milder now, but people repeat the old opinion out of habit)",
+            "(inference: caterpillars eat the plant, while humans grow and spread it, so the defense evolved against insects)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should breeders keep removing bitterness from vegetables, or is something lost when they do? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "Nobody Grows a Vegetable",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-vegetables", "templateLabel": "Nobody Grows a Vegetable", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "vegetables",
+          "notes": ["Vegetable is a culinary category, not a botanical one", "Nix v. Hedden, 1893: the tomato ruled a vegetable", "Potato is a tuber, a swollen underground stem", "Brassica oleracea: kale, cabbage, broccoli, cauliflower, kohlrabi, sprouts", "Early cultivated carrots were purple and yellow", "Tomato, cucumber, pepper, eggplant are botanically fruits"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Category Nobody Planted",
+          "text": "Nature does not grow vegetables. It grows roots, stems, leaves, flowers, and seeds, and it grows them for its own reasons, none of which involve dinner. The word vegetable does not describe a plant part, a plant family, or anything a botanist could point to under a microscope. It describes a decision people made about where a plant belongs on a plate. It is a kitchen category wearing a lab coat. Follow that idea and the produce aisle comes apart in your hands. A carrot is a taproot, a swollen storage organ the plant filled with sugar to survive the winter. Celery is a stem. Lettuce is leaves. Broccoli is a dense crowd of unopened flower buds, harvested days before it would have bloomed. Peas are seeds, each one a packed lunch for a plant that never got the chance to start. A potato is not a root but a tuber, an underground stem, which is why it sprouts eyes and why gardeners can grow a new plant from a chunk of the old one. Meanwhile the tomato, the cucumber, the pepper, the pumpkin, and the eggplant are all botanically fruits: seed-bearing structures grown from a flower. We simply do not eat them with sugar, so we filed them somewhere else. This confusion has been to court. In 1893, in a case called Nix v. Hedden, the United States Supreme Court had to decide whether tomatoes were fruits or vegetables, because imported vegetables were taxed and fruits were not. The Court agreed that a tomato is botanically a fruit. It ruled that it is legally a vegetable anyway, on the grounds that people eat it with dinner and not for dessert. Science lost to habit, unanimously. But the strangest part is not that we invented the category. It is that we then built the things to fill it. On the sea cliffs of Europe grows wild cabbage, a tough and bitter weed. Kale, cabbage, broccoli, cauliflower, kohlrabi, and brussels sprouts are all the same species as that weed, Brassica oleracea, pulled into six different shapes by farmers who spent centuries saving seed from whichever plant leaned in the direction they wanted. Choose leaves and you get kale. Choose the terminal bud and you get cabbage. Choose the flower buds and you get broccoli. Carrots tell a similar story: the earliest cultivated carrots were purple and yellow, and the orange carrot that now defines the word did not become standard until European growers favored it a few hundred years ago. The vegetable you picture when you hear the word is a recent human product. So when someone says a vegetable is healthy, or bitter, or boring, they are not describing nature. They are describing ten thousand years of human choices about which plants deserved to have children. The category is invented. The contents are engineered. And the only part of the whole arrangement the plant ever agreed to is the part where it tried to defend itself, which we bred out, because we did not like the taste."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the metaphor in the phrase a kitchen category wearing a lab coat, and cite the evidence the passage gives for it.",
+            "Explain the ruling in Nix v. Hedden and why the Court decided the way it did.",
+            "Identify the turn in the passage: where does the author move from naming things to a larger claim, and how is it signaled?",
+            "The final sentence blames people for breeding out the plant's defense. Analyze what that move does to the reader, and decide whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(vegetable sounds scientific but is really a cooking decision; cite: It is a kitchen category wearing a lab coat, supported by tomatoes and cucumbers being botanically fruits)",
+            "(the Court agreed a tomato is botanically a fruit but ruled it legally a vegetable because people eat it with dinner and not for dessert, and imported vegetables were taxed)",
+            "(at But the strangest part is not that we invented the category; the sentence pivots from naming plant parts to the claim that humans built the vegetables themselves)",
+            "(analysis: it reframes a food complaint as a human choice and puts the reader on the hook; earned if the reader accepts the Brassica oleracea and carrot evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["botanically → ____", "cultivated → ____", "taproot → ____", "tuber → ____"],
+          "rows": 2,
+          "answers": [
+            "according to the science of plants",
+            "grown and shaped by people rather than growing wild",
+            "a single thick main root that stores food",
+            "a swollen underground stem that can sprout a new plant"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage claims the category is invented and the contents are engineered. Explain the difference between those two claims.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(one is about a word people chose; the other is about the physical plants people reshaped by breeding)",
+            "(student question + a credible source type, such as a plant-breeding researcher or an agricultural history)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Because humans invented the category and reshaped the plants themselves, calling a vegetable natural is dishonest. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

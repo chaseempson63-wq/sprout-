@@ -1,0 +1,320 @@
+{
+  "key": "parrot",
+  "title": "The Bird That Talks Back",
+  "blurb": "The bird that holds food like a hand, builds its own colors out of nothing, and learns words on purpose.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird That Talks Back",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-parrot", "templateLabel": "The Bird That Talks Back", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the parrot." },
+        {
+          "kind": "image",
+          "imageKey": "parrot",
+          "notes": ["It has a big curved beak", "It holds food in its foot", "It can copy sounds it hears", "It lives up in the trees"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a parrot. The parrot has a big curved beak. It has bright green and red feathers. A parrot can hold food in its foot, like you hold a spoon. A parrot can copy sounds. It can copy a laugh. It can copy a phone. Some parrots can say hello."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the feathers in each row. Write how many in the box.",
+          "emoji": "🪶",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "beak    talk" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its sound.",
+          "pairs": [
+            { "left": "parrot", "right": "squawk" },
+            { "left": "cow", "right": "moo" },
+            { "left": "dog", "right": "woof" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own parrot. Give it the brightest feathers you can.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird That Talks Back",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-parrot", "templateLabel": "The Bird That Talks Back", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "parrot",
+          "notes": ["Two toes point forward, two point back", "Its beak can crack a hard nut", "It lifts food up to its beak", "Most parrots live where it is warm", "It copies sounds it hears"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Talks Back",
+          "text": "A parrot's foot is not like other bird feet. Two toes point forward. Two toes point back. That gives the parrot a strong grip. It can climb a branch and hold on tight. It can even pick up a seed and lift it to its beak, the way you lift a sandwich. A parrot's beak is curved and very strong. It can crack a hard nut open. Parrots also copy sounds they hear. In the wild they copy each other. In a house they might copy a doorbell or a dog."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many toes point forward on a parrot's foot?", "What does a parrot use to crack a nut?", "Where does a parrot lift its food to?"],
+          "rows": 2,
+          "answers": ["two toes point forward", "its strong curved beak", "up to its beak"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Two toes point ____ and two point back.", "A parrot has a strong ____.", "A parrot can ____ a hard nut.", "Parrots ____ the sounds they hear."],
+          "wordBank": ["forward", "beak", "crack", "copy"],
+          "answers": ["forward", "beak", "crack", "copy"]
+        },
+        { "kind": "draw", "prompt": "Draw a parrot holding a nut in its foot. Add the branch it is standing on.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird That Talks Back",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-parrot", "templateLabel": "The Bird That Talks Back", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "parrot",
+          "notes": ["Birds sing with a syrinx, not vocal cords", "A parrot's tongue is thick and muscular", "Parrots learn their calls, they are not born with them", "Wild parrots have a call like a name", "Parents call their chicks before the chicks can fly"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Bird Says Your Name",
+          "text": "A parrot can say your name, but it has no lips, no teeth, and nothing like human vocal cords. So how does it talk? Deep in a parrot's chest, where the windpipe splits toward the lungs, sits a small organ called the syrinx. Air rushing past the syrinx makes the sound, and muscles around it stretch and squeeze to change the note. Parrots then do something extra. A parrot has a thick, muscular tongue. It moves that tongue around inside its beak the way you move yours, and that is what turns a squawk into something that sounds like a word. Parrots are not born knowing these sounds. They learn them by listening and copying, the same way you learned to speak. In the wild, that skill matters. A flock of parrots is loud and spread out across the treetops, and each bird has a call of its own, almost like a name. Parents even give their chicks a special call before the chicks can fly. So when a parrot in a house copies a doorbell, it is using a wild skill on a strange new flock: yours."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the syrinx, and where is it?",
+            "What does a parrot use its tongue for?",
+            "How do parrots learn the sounds they make?",
+            "Why do you think each wild parrot needs a call of its own?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the organ that makes a bird's sound, in the chest where the windpipe splits",
+            "it moves its tongue in its beak to shape a squawk into a word",
+            "by listening to others and copying them",
+            "(inference: the flock is loud and spread out, so a call works like a name to find each other)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Bird Says Your Name", "The Best Food for a Pet Bird", "Why Trees Grow Tall"],
+          "answers": ["How a Bird Says Your Name"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A parrot makes sound with an organ called the ____.", "A parrot shapes words with its thick ____.", "A group of parrots is called a ____."],
+          "wordBank": ["syrinx", "tongue", "flock"],
+          "answers": ["syrinx", "tongue", "flock"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if a parrot copied one sound from your house, which sound would it be, and why that one?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird That Talks Back",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-parrot", "templateLabel": "The Bird That Talks Back", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "parrot",
+          "notes": ["Red and yellow come from psittacofulvins", "Those pigments are found in parrots and nowhere else", "Parrot blue is a structure, not a pigment", "Green is blue structure over yellow pigment", "Colored feathers rot slower than white ones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Builds Its Own Colors",
+          "text": "Look at a parrot's green wing, then look at a sparrow's brown one. The brown is made by melanin, the same pigment that colors your hair. The green is made by nothing of the sort. Most bright birds get their reds and yellows secondhand, from food. A flamingo is pink because of what it eats. Take the shrimp away and the pink fades. Parrots do not borrow their colors. They manufacture them. Parrot feathers contain a family of pigments called psittacofulvins, and so far scientists have found them in parrots and nowhere else in the animal kingdom. A parrot fed a dull diet stays brilliant anyway, because the red and the yellow are built inside its own body. The blue is a different trick, and there is no blue pigment in it at all. Slice a blue parrot feather open and you find a sponge of microscopic air pockets, spaced so precisely that they scatter blue light back toward your eye and let the other colors pass through to be swallowed by dark melanin underneath. The blue is a structure, not a substance. Crush the feather and the blue vanishes, because you have wrecked the architecture that made it. Green is the two tricks stacked: blue structure on top, yellow psittacofulvin below. Your eye blends them into one color that is not really there. There is one more thing those pigments do. Psittacofulvins make a feather tougher. Feather-eating bacteria chew through white and pale feathers far faster than colored ones, so a parrot's flashy wing is also armor. It is easy to assume bright colors are only for showing off. In a parrot, they are showing off and holding the wing together at the same time."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the difference between how a flamingo gets its pink and how a parrot gets its red.",
+            "Why does crushing a blue feather destroy the blue, when crushing a red one would not destroy the red?",
+            "How does a parrot make green without any green pigment?",
+            "The passage says a bright wing is also armor. What does that suggest about why parrot colors evolved?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a flamingo takes its pink from food and fades without it; a parrot builds its red inside its own body",
+            "(inference: the blue comes from the feather's structure, so wrecking the structure ends it; red is a pigment and survives)",
+            "blue structure sits on top of yellow psittacofulvin and the eye blends them",
+            "(inference: color may have been useful for protection as well as display, so two pressures could push the same way)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Parrots build their own colors with unique pigments and feather structure, and those colors do more than look good",
+            "Flamingos and parrots are closely related birds",
+            "Bright feathers are the only thing that keeps a bird warm"
+          ],
+          "answers": ["Parrots build their own colors with unique pigments and feather structure, and those colors do more than look good"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["pigment → ____", "psittacofulvin → ____", "secondhand (colors) → ____", "structure (as used here) → ____"],
+          "rows": 1,
+          "answers": [
+            "a substance that gives something its color",
+            "a red or yellow pigment found only in parrots",
+            "taken from somewhere else, in this case from food",
+            "the physical shape and spacing inside the feather that bends light"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger kid how a parrot can be green when there is no green in the feather. Use your own words and give one comparison they would understand.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird That Talks Back",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-parrot", "templateLabel": "The Bird That Talks Back", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "parrot",
+          "notes": ["Alex was an African grey parrot", "Bought at random in 1977, studied for 30 years", "Knew 7 colors, 5 shapes, quantities to six", "Used the word none for no difference", "Birds and mammals split over 300 million years ago"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird Who Learned the Word None",
+          "text": "For most of the last century, a parrot that talked was treated as a joke of nature. It made word-shaped noises and understood none of them. The word parroting entered the language to mean exactly that: repetition without comprehension. In 1977, a comparative psychologist named Irene Pepperberg walked into a pet store in Chicago and bought an African grey parrot more or less at random, so that nobody could accuse her of hand-picking a genius. She named him Alex. She then spent thirty years asking him questions. Alex learned to identify around fifty objects, seven colors, five shapes, and quantities up to six. That alone is impressive memory work. What made scientists uncomfortable was what came next. Shown a tray of jumbled objects and asked what color is the four-corner wood, Alex had to find the wooden square among the distractions and then report a property of it. He answered correctly far more often than chance allows. Asked what was the same about two objects, he could answer shape or color, which means he was handling categories and not just labels. Shown two identical objects and asked what was different, he said none. Nobody had taught him that word for that job. He borrowed it. He was not a perfect student. He got bored, told researchers to go away, and demanded nuts in the middle of trials. Skeptics pointed out, fairly, that Alex was one bird with one devoted teacher, and that a single case proves less than a study of many birds. That objection has never been fully answered, because thirty years of work is hard to repeat. Still, the reason Alex mattered was never the vocabulary. A tape recorder has vocabulary. It was that a brain the size of a walnut, in an animal separated from us by more than 300 million years of evolution, was doing something we had assumed required a brain shaped like ours. Birds and mammals built their intelligence separately, out of different starting parts, and arrived at overlapping abilities. That is the finding. Alex died in 2007, at thirty-one, which is young for a grey. The last thing he said to Pepperberg was what he said every night when she left the lab: you be good, I love you, see you tomorrow."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why did Pepperberg buy her parrot at random? Quote the phrase the passage uses.",
+            "The passage says Alex handled categories and not just labels. Which task showed that, and how?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author writes that a tape recorder has vocabulary. What is that sentence doing in the argument?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(two-sentence summary covering the parroting assumption, Alex's tested abilities, and what it showed about bird intelligence)",
+            "so no one could say she picked a special bird; quote: so that nobody could accuse her of hand-picking a genius",
+            "(the same and different task: he answered shape or color, which is a property, not the object's name)",
+            "(mainly inform, with detail: it gives dates, methods, and results; it also raises the skeptics' objection rather than hiding it)",
+            "(it separates knowing words from understanding them, and sets up the real claim about the brain)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["comprehension → ____", "distractions → ____", "skeptics → ____", "overlapping (abilities) → ____"],
+          "rows": 1,
+          "answers": [
+            "understanding what something means",
+            "the other objects on the tray that were not the answer",
+            "people who doubt a claim until it is proven",
+            "abilities that are similar even though they came from different places"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage admits the skeptics' objection has never been fully answered. Why would an author include a criticism of their own subject?",
+            "Alex said none when nothing was different. Why did that answer surprise researchers more than naming a color did?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it builds trust and shows the evidence honestly; hiding it would weaken the case)",
+            "(inference: naming is copying a label, but none describes an absence, which he had to work out and transfer himself)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does saying a word count as understanding it? Take a position, use one example from the passage, and give two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird That Talks Back",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-parrot", "templateLabel": "The Bird That Talks Back", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "parrot",
+          "notes": ["Order Psittaciformes, roughly 400 species", "A macaw's pallium rivals a macaque's neuron count", "Kea: the only parrot living in alpine country", "Cookie the cockatoo reached age 83", "Kakapo fell to 51 known birds in 1995", "Close to a third of parrot species are threatened"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Parrot Has a Brain Like That",
+          "text": "A macaw's brain would fit inside a walnut shell. A macaque's brain is the size of a small plum and weighs many times more. On any chart that ranks animals by brain size, the parrot loses badly, and the story should end there. It does not, and the reason is a counting problem. In 2016, a research team led by Seweryn Olkowicz did something nobody had bothered to do properly. They took bird brains apart and counted the neurons inside them. The result rearranged the field. Parrots and songbirds pack neurons into their forebrains at densities that primates never reach. A macaw carries roughly as many neurons in its pallium, the bird equivalent of a cortex, as a macaque does, inside a brain a fraction of the mass. Bird neurons are smaller, more tightly packed, and wired across shorter distances, which is faster. The parrot was never a small-brained animal pretending to be clever. It was a densely built one, and we were measuring it with the wrong ruler. That hardware is expensive, and evolution does not hand out expensive equipment for free. Nervous tissue burns energy at a punishing rate whether the animal is solving a problem or asleep. So the real question is not how the parrot got smart. It is what the parrot bought with the cost. The answer seems to be time and trouble. Most parrots live in the tropics, where fruit and seeds ripen unpredictably across enormous areas, so a bird has to remember which tree fed it, when, and which one is likely to fruit next. Many parrot foods are armored or mildly poisonous, and getting into them takes a technique rather than a bite. Amazonian macaws gather at exposed riverbank clay and eat the soil itself, which appears to supply sodium their fruit diet lacks. Parrots are also long-lived and intensely social. A macaw can pass fifty, a cockatoo named Cookie reached eighty-three in a zoo, and a bird that spends decades inside a shifting flock has to track relationships as carefully as it tracks food. Parrots take years to grow up, and that long childhood is where the learning goes. New Zealand's kea makes the argument visible. It is the only parrot that lives in alpine country, where food is scarce and seasonal, and it is relentlessly, famously destructive. Kea dismantle windshield wipers, backpacks, and road cones. They solve multi-step puzzles in captivity, and they have a play call that is contagious: broadcast a recording and nearby kea start messing around. That behavior looks like vandalism. It is closer to an animal built to test everything, in a place where almost nothing is reliably food. Here is where the story stops being charming. The traits that make parrots interesting to us are the same traits that ruin them in our care. Close to a third of all parrot species are threatened, a higher share than almost any other group of birds, driven by habitat loss and the trade in wild-caught birds. A parrot bought as a talking pet is a wild animal with the emotional needs of a toddler and a lifespan measured in decades. Deprived of a flock and of any problem worth chewing on, captive parrots pull out their own feathers, a behavior essentially unknown in healthy wild birds. Meanwhile the kakapo, a flightless nocturnal parrot that evolved on islands with no ground predators, fell to fifty-one known individuals in 1995 and survives today only because every living bird is tracked, named, and managed by hand. We admired the parrot for its mind, and then we bought it as an ornament. Both of those facts are ours."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the counting problem the author describes, and cite the phrase that states the mistake we were making.",
+            "The author says evolution does not hand out expensive equipment for free. Explain what the parrot bought with the cost, using two pieces of evidence from the text.",
+            "Identify the shift in the passage. Where does it turn, how does the author signal it, and why place it there?",
+            "The final line says both of those facts are ours. Analyze what that claim is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering neuron density, the ecological reasons for parrot intelligence, and the conservation cost)",
+            "(brain size is the wrong measure; neuron count and density matter; cite: we were measuring it with the wrong ruler)",
+            "(memory for scattered unpredictable food, techniques for armored food, long life and social tracking, long childhood; any two with textual support)",
+            "(at Here is where the story stops being charming; a short flat sentence pivots from wonder to harm, placed after the reader already admires the bird so the loss lands harder)",
+            "(it moves responsibility from the parrot to us, joining admiration and exploitation as one human act; earned by the threatened-species share, the wild-caught trade, feather plucking, and the kakapo count)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["pallium → ____", "density (of neurons) → ____", "unpredictably → ____", "deprived → ____"],
+          "rows": 2,
+          "answers": [
+            "the bird brain region that does the work a mammal's cortex does",
+            "how many neurons are packed into a given amount of brain tissue",
+            "in a pattern that cannot be reliably known ahead of time",
+            "having something necessary taken away or withheld"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage argues intelligence is a purchase with an energy cost. Use that logic to explain why most animals are not as smart as parrots.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: brains are costly to run, so the ability only pays off where the environment demands it; most animals face problems a cheaper brain already solves)",
+            "(student question + a credible source type, such as a peer-reviewed study or an IUCN survey)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: No parrot should be kept as a pet. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

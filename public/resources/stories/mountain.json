@@ -1,0 +1,310 @@
+{
+  "key": "mountain",
+  "title": "The Mountain That Is Still Growing",
+  "blurb": "How crashing plates fold the ground upward, why the top is always cold, and why the highest rock on Earth is full of seashells.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Mountain That Is Still Growing",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-mountain", "templateLabel": "The Mountain That Is Still Growing", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the white snow on top." },
+        {
+          "kind": "image",
+          "imageKey": "mountain",
+          "notes": ["The top is white with snow", "It is very cold up high", "Goats can climb the steep rocks", "It is taller than any building"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a mountain. It is taller than a house. It is taller than a tree. The top of the mountain is white. That white is snow. It is cold up there, even in summer. Down at the bottom, it is warm. Trees grow there. Goats climb the rocks. Very slowly, the mountain is pushing up. It grows a tiny bit every year. You cannot see it move. But it is moving."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the mountains in each row. Write how many in the box.",
+          "emoji": "⛰️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "snow    rock" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "mountain", "right": "snow" },
+            { "left": "goat", "right": "rocks" },
+            { "left": "fish", "right": "water" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big mountain. Put snow on the top and trees at the bottom.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Mountain That Is Still Growing",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-mountain", "templateLabel": "The Mountain That Is Still Growing", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "mountain",
+          "notes": ["Mountains are made when the ground folds up", "The Earth's skin is cracked into big plates", "The plates move as slow as your nails grow", "Wind and rain wear mountains down", "Some mountains are still rising today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How the Ground Folds Up",
+          "text": "A mountain is not just a big pile of rocks. It is the ground pushed up from below. The Earth's skin is broken into huge plates. The plates move very slowly. When two plates push into each other, the ground between them has nowhere to go. So it crumples up. It folds like a rug when you push it across the floor. That fold is a mountain. It takes millions of years. The mountain is still being pushed up today. Wind and rain wear the top down at the same time. The mountain grows and wears away, over and over, for a very long time."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the Earth's skin broken into?", "What happens when two plates push into each other?", "What does the story compare a folding mountain to?"],
+          "rows": 2,
+          "answers": ["huge plates", "the ground between them crumples and folds up", "a rug pushed across the floor"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The Earth's skin is broken into huge ____.", "The plates move very ____.", "The ground crumples up and ____.", "Wind and ____ wear the mountain down."],
+          "wordBank": ["plates", "slowly", "folds", "rain"],
+          "answers": ["plates", "slowly", "folds", "rain"]
+        },
+        { "kind": "draw", "prompt": "Draw two plates pushing together and the mountain that folds up between them.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Mountain That Is Still Growing",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-mountain", "templateLabel": "The Mountain That Is Still Growing", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "mountain",
+          "notes": ["Mount Everest is 29,032 feet tall", "Its top rock was once an ocean floor", "The rock at the top holds seashells", "India crashed into Asia to build it", "It still grows a few millimeters a year"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Seashells on the Roof of the World",
+          "text": "Mount Everest is the highest place on Earth. Its top stands 29,032 feet above the sea. If you climbed all the way up and looked at the rock under your boots, you would find something strange. Seashells. The stone at the very top of Everest is full of the shells of sea creatures that died on an ocean floor. They are not a trick. That rock really was an ocean floor once. Around 50 million years ago, the land we now call India was an island drifting north across the sea. It crashed slowly into Asia. The ocean between them was squeezed shut. Its floor had nowhere to go but up. The crash is still happening. India is still pushing north, about as fast as your fingernails grow. Everest rises a few millimeters higher every year. So the highest rock in the world used to be the lowest, and the shells of small sea animals now sit in the coldest wind on the planet."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How high does the top of Mount Everest stand above the sea?",
+            "What surprising thing is in the rock at the very top of Everest?",
+            "Which two pieces of land crashed together to build Everest?",
+            "Why do you think the seashells are still in the rock after 50 million years?"
+          ],
+          "rows": 2,
+          "answers": [
+            "29,032 feet",
+            "seashells, the shells of sea creatures",
+            "India and Asia",
+            "(inference: the old sea floor was lifted up whole, so the shells rode up inside the rock)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Seashells on the Roof of the World", "How to Pack for a Camping Trip", "The Deepest Cave in Europe"],
+          "answers": ["Seashells on the Roof of the World"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The rock at the top of Everest was once an ocean ____.", "India crashed slowly into ____.", "Everest rises a few millimeters higher every ____."],
+          "wordBank": ["floor", "Asia", "year"],
+          "answers": ["floor", "Asia", "year"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about Everest, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Mountain That Is Still Growing",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-mountain", "templateLabel": "The Mountain That Is Still Growing", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mountain",
+          "notes": ["Air cools about 3.5 degrees per 1,000 feet", "The tree line is where trees stop growing", "High air is thin, not close to the sun", "Deserts often sit behind mountain ranges", "Snow above the snow line never melts"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sky Gets Colder as You Climb",
+          "text": "Climbing a mountain is a strange kind of travel. You walk a few miles and the world changes as much as it would if you drove a thousand miles north. Start at the bottom, in warm forest. Keep going. The trees get shorter and tougher. Then they stop altogether, at a line you can see from far away, called the tree line. Above it there is only rock, moss, and snow that never melts. The reason is the air. Most people think high places are closer to the sun and should be warmer, but the sun is 93 million miles away, so a few miles up makes no difference at all. What matters is that air holds heat poorly and the ground holds it well. Sunlight warms the dirt and rock, and the ground warms the air above it. High on a mountain there is less ground and less air to hold that heat. There is a second reason. Air is squeezed by the weight of the air above it. Climb higher and there is less weight, so the air spreads out, and air that spreads out cools down. Every thousand feet you climb, the air drops about three and a half degrees. This is why the same mountain can be green on one side and bare on the other. Wind pushes wet air up the slope. The air cools, the water falls out as rain or snow, and dry air slides down the far side. Behind many mountain ranges lies a desert."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says walking a few miles up a mountain changes the world as much as driving a thousand miles north. Explain what that means.",
+            "A friend says mountain tops are cold because they are closer to the sun. Use the passage to explain why that is wrong.",
+            "Why is one side of a mountain range often green while the other side is bare?",
+            "The passage does not say this directly. What do you think would happen to the tree line if the whole planet got warmer?"
+          ],
+          "rows": 2,
+          "answers": [
+            "both trips take you into colder air, so the plants and animals change in the same way",
+            "the sun is 93 million miles away, so a few miles makes no difference; the air is cold because there is less ground and less air to hold heat, and the air spreads out and cools",
+            "wet wind rises up one side and drops its rain there, then dry air slides down the far side",
+            "(inference: the tree line would move higher up the mountain)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Mountain tops are cold and one side is often dry because of the way air holds heat and moves, not because of the sun",
+            "Mountains are the best place in the world to grow trees",
+            "The sun is 93 million miles away from the Earth"
+          ],
+          "answers": ["Mountain tops are cold and one side is often dry because of the way air holds heat and moves, not because of the sun"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["tree line → ____", "slope → ____", "bare → ____"],
+          "rows": 1,
+          "answers": ["the height where trees stop growing", "the slanted side of a mountain", "with no trees or plants growing on it"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger kid why the top of a mountain is cold. Use at least two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Mountain That Is Still Growing",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-mountain", "templateLabel": "The Mountain That Is Still Growing", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mountain",
+          "notes": ["Most of a mountain sits underground", "Crust under the Himalayas runs over 40 miles deep", "The Appalachians are roughly 300 million years old", "Uplift stops one day; erosion never does", "Mountains supply much of the world's fresh water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Mountains Cannot Grow Forever",
+          "text": "A mountain range looks like the most permanent thing on Earth. It is actually a temporary bulge, and it is losing. Mountains rise where the crust is squeezed. When two of the plates that make up Earth's outer shell collide, neither one can move aside, so the rock between them thickens and buckles upward. The Himalayas are the wreckage of India driving into Asia. The Andes rise where the floor of the Pacific slides beneath South America. The Alps mark Africa pressing north into Europe. In each case, the mountains are simply crust with nowhere else to go. But there is a limit, and it is not strength. It is buoyancy. Earth's crust floats on the hot, slow-flowing rock of the mantle beneath it, the way an iceberg floats in the sea. Most of an iceberg is underwater. In the same way, most of a mountain is underground. Beneath the Himalayas the crust reaches down more than forty miles, a root far larger than the peaks above it. Pile on more rock and the root sinks deeper. The mountain cannot simply keep climbing. Meanwhile the sky is taking it apart. Water seeps into cracks, freezes, and splits the rock. Rivers carry the pieces away. Glaciers grind whole valleys into new shapes. The higher a range rises, the harder the weather hits it, and the faster it comes down. Uplift and erosion argue with each other, and for a while they roughly balance. Then the pushing stops. When the plates finally settle, only erosion is left, and erosion never stops. The range wears lower and lower. As the load is removed, the deep root floats slowly upward, lifting fresh rock into the weather to be worn away in turn. You can see the ending in the eastern United States. The Appalachian Mountains are old, soft, green, and rounded, and nobody would mistake them for the Himalayas. Roughly 300 million years ago, though, they were built by the same kind of collision, and they may well have stood as high. Everything above the modern summits has been carried, grain by grain, into the sea."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why a mountain cannot simply keep growing taller. Use the iceberg comparison in your answer.",
+            "The author calls a mountain range a temporary bulge that is losing. Quote one later sentence that supports this claim.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What happens to the deep root of a range once erosion strips rock off the top, and why does that matter?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: colliding plates push ranges up, but buoyancy limits their height and erosion eventually wins)",
+            "most of the crust hangs below the surface like the underwater part of an iceberg, so added rock pushes the root deeper instead of raising the peak",
+            "(quote: only erosion is left, and erosion never stops)",
+            "(inform, with a persuasive edge: it explains collision and buoyancy with facts, but words like losing, wreckage, and argue add drama)",
+            "(the root floats slowly upward and lifts fresh rock into the weather, so erosion keeps finding new rock to remove)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["buoyancy → ____", "erosion → ____", "buckles → ____", "summits → ____"],
+          "rows": 1,
+          "answers": ["the way a lighter material floats on a heavier one", "the wearing away of rock by water, ice, and wind", "bends and folds upward under pressure", "the highest points of the mountains"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls the Appalachian Mountains the ending. Explain what that means.",
+            "Why do you think the highest ranges also wear down the fastest?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(they show what the Himalayas will look like once uplift stops and erosion has worked for hundreds of millions of years)",
+            "(inference: high peaks get harsher weather, more ice, and steeper rivers, so rock is stripped away faster)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph. The passage calls a mountain range a temporary bulge. Is it fair to call anything on Earth permanent? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Mountain That Is Still Growing",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-mountain", "templateLabel": "The Mountain That Is Still Growing", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mountain",
+          "notes": ["Air is 21 percent oxygen at any altitude", "Everest's summit pressure is about a third of sea level", "The death zone begins near 26,000 feet", "Chimborazo's peak is farthest from Earth's center", "Bar-headed geese fly over the Himalayas", "Tibetans carry a high-altitude gene from Denisovans"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Thin Air Problem",
+          "text": "Ask which mountain is highest and the answer sounds simple. Mount Everest, 29,032 feet. But height has to be measured from somewhere, and sea level is only one choice. The Earth is not a sphere. It spins, and the spin makes it bulge at the equator, so the ground there starts out farther from the planet's core. Chimborazo, a peak in Ecuador, rises only about 20,500 feet above the sea, yet its summit sits more than a mile farther from the center of the Earth than Everest's does. Both facts are true. They are just answers to different questions. Everest still wins the question that matters to a human body, because the body does not care about the center of the Earth. It cares about pressure. Here is the part almost everyone gets wrong. The air on top of Everest is not short of oxygen. It is 21 percent oxygen, exactly like the air in your room, exactly like the air over the sea. What changes is how tightly it is packed. Air has weight, and the air at sea level is being squashed by the entire column of atmosphere stacked above it. Climb, and you leave most of that column below you. At the summit of Everest the pressure is about a third of what it is at the beach. Take a full breath there and you get a third of the molecules. The percentage never moved. The pressure did. A body fights back. Within days at altitude, breathing quickens and the kidneys release a hormone that tells the bone marrow to build more red blood cells. Given weeks, most people can adapt enough to function surprisingly high. But above roughly 26,000 feet, adaptation fails. Climbers call it the death zone, and the name is not drama. Up there the body cannot repair itself faster than the thin air breaks it down. You are not resting. You are running down a clock. Which makes the exceptions worth staring at. Bar-headed geese migrate straight across the Himalayas, beating their wings in air that would knock a person unconscious. Their hemoglobin grabs oxygen more tightly than ours, their lungs move air more efficiently, and their flight muscles are packed with the machinery to burn it. People have their own versions, and they are not the same as each other. Highlanders in the Andes carry thick blood loaded with extra red cells, the brute-force solution, and it costs them: blood that thick is slow and dangerous. Tibetans went another way entirely. They do not overload their blood. They breathe faster and keep their vessels wide, moving ordinary blood more quickly. The gene behind much of this is called EPAS1, and when researchers traced the Tibetan version of it, they found it did not come from ordinary human ancestors at all. It came from Denisovans, a vanished human cousin, and it entered our species tens of thousands of years ago. So the mountain does something no gym can. It sets a problem the body cannot bluff its way past, and it keeps the answers on file. Everest is not just the highest rock. It is the clearest place on Earth to watch what living things will do when the air runs out."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the air on Everest is thin even though it holds the same percentage of oxygen as air at the beach. Quote the two short sentences the author uses to land this point.",
+            "The author writes that the name is not drama. What is being defended there, and what evidence follows it?",
+            "Both Everest and Chimborazo can be called the highest. Explain how, and explain why the author says the human body settles the argument.",
+            "Analyze the final paragraph. What is the author claiming a mountain is good for, and does the rest of the passage earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "pressure drops with altitude, so each breath contains fewer molecules even though the percentage is unchanged; quote: The percentage never moved. The pressure did.",
+            "(the phrase death zone; the evidence is that above 26,000 feet the body breaks down faster than it can repair itself)",
+            "(Everest is highest above sea level, Chimborazo is farthest from Earth's center because of the equatorial bulge; the body responds to air pressure, not to distance from the core)",
+            "(that a mountain is a natural experiment revealing how bodies solve an unbluffable problem; supported by the geese, Andean, and Tibetan evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["bulge → ____", "hemoglobin → ____", "adaptation → ____", "vanished → ____"],
+          "rows": 2,
+          "answers": [
+            "a rounded swelling; Earth's spin pushes the equator outward",
+            "the protein in blood that carries oxygen",
+            "a change that helps a living thing survive its conditions",
+            "no longer existing, the way the Denisovans died out"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Andean and Tibetan highlanders solve thin air in different ways. Explain why that difference is evidence that each solution evolved separately rather than being something all humans inherited.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a shared inheritance would look the same in both groups; two different mechanisms suggest each population adapted on its own after settling high ground)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Climbing Everest teaches us nothing a laboratory could not teach us more safely. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "key": "brain",
+  "title": "The Squishy Machine Inside Your Head",
+  "blurb": "Three pounds of soft gray tissue that burns a fifth of your energy, rewires itself while you sleep, and cannot feel a thing.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Squishy Machine Inside Your Head",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to your own head as you go.",
+      "meta": { "templateId": "story-brain", "templateLabel": "The Squishy Machine Inside Your Head", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Then put your hands on your own head." },
+        {
+          "kind": "image",
+          "imageKey": "brain",
+          "notes": ["It lives inside your head", "It is soft and squishy", "It never stops working", "It helps you remember things", "It is busy right now"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "You have a brain. It is inside your head. It is soft and squishy. Your brain is busy all day. It helps you run. It helps you talk. It helps you remember your name. When you sleep, your brain keeps working. It tidies up your day. Your brain is working right now. It is listening to this story."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the thinking bubbles in each row. Write how many in the box.",
+          "emoji": "💭",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "brain    think" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each body part to where it lives.",
+          "pairs": [
+            { "left": "brain", "right": "head" },
+            { "left": "heart", "right": "chest" },
+            { "left": "teeth", "right": "mouth" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own head. Draw your brain inside it. Give it something to think about.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Squishy Machine Inside Your Head",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-brain", "templateLabel": "The Squishy Machine Inside Your Head", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "brain",
+          "notes": ["Your skull is a bone helmet", "Your brain is about the size of two fists", "It is soft, like thick jelly", "Brain messages travel very fast", "It works while you are asleep"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Squishy Machine Inside Your Head",
+          "text": "Your brain sits inside your skull. The skull is a hard bone helmet. It keeps your brain safe. Your brain is about the size of two fists put together. It is soft, like thick jelly. Your brain sends tiny messages all through your body. The messages travel fast, faster than a race car. When you want to wiggle your toes, your brain sends the message down and your toes wiggle right away. Your brain does not take a break. It works while you sleep. It sorts out what you did today so you can remember it tomorrow."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does your brain sit?", "What keeps your brain safe?", "How big is your brain?", "What does your brain do while you sleep?"],
+          "rows": 2,
+          "answers": ["inside my skull", "the skull, a hard bone helmet", "about the size of two fists put together", "it sorts out what you did today"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Your brain sits inside your ____.", "Your brain is soft, like thick ____.", "Brain messages travel very ____.", "Your brain works even while you ____."],
+          "wordBank": ["skull", "jelly", "fast", "sleep"],
+          "answers": ["skull", "jelly", "fast", "sleep"]
+        },
+        { "kind": "draw", "prompt": "Draw yourself doing something your brain helped you learn. Riding a bike, tying a shoe, anything.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Squishy Machine Inside Your Head",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-brain", "templateLabel": "The Squishy Machine Inside Your Head", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "brain",
+          "notes": ["It weighs about three pounds", "You have about 86 billion neurons", "The wrinkles fit more brain in your head", "Your brain cannot feel pain", "It is about three quarters water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Never Turns Off",
+          "text": "Your brain weighs about three pounds. That is about as heavy as a small loaf of bread. It does not look like much. It is grayish, wrinkled, and soft enough to dent with a finger. But that squishy lump is doing every single thing you call being you. Your brain is packed with tiny cells called neurons. You have about eighty six billion of them. Neurons talk to each other using tiny sparks of electricity. A thought is a pattern of those sparks, racing from neuron to neuron. The wrinkles matter. If you could pull your brain flat like a sheet, it would be much bigger than your head. Folding it up is how all that surface fits inside your skull. Here is the strangest part. Your brain has no pain sensors of its own. It tells you when your knee hurts, but it cannot feel itself. Surgeons can operate on a brain while the person is awake and talking."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How much does a human brain weigh?",
+            "What are neurons, and what do they use to talk to each other?",
+            "Why is your brain wrinkled instead of smooth?",
+            "Why do you think a surgeon can operate on a brain while the person is awake?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about three pounds, as heavy as a small loaf of bread",
+            "tiny brain cells; they use tiny sparks of electricity",
+            "folding it up fits all that surface inside your skull",
+            "(inference: the brain has no pain sensors of its own)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Machine That Never Turns Off", "How to Bake a Loaf of Bread", "The Best Way to Fix a Sore Knee"],
+          "answers": ["The Machine That Never Turns Off"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Your brain is packed with tiny cells called ____.", "A thought is a pattern of tiny ____ of electricity.", "Your brain has no pain ____ of its own."],
+          "wordBank": ["neurons", "sparks", "sensors"],
+          "answers": ["neurons", "sparks", "sensors"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which fact about the brain surprised you most, and why did it surprise you?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Squishy Machine Inside Your Head",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-brain", "templateLabel": "The Squishy Machine Inside Your Head", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "brain",
+          "notes": ["Two percent of your weight, twenty percent of your energy", "It runs on about 20 watts, like a dim bulb", "Neurons pass messages across gaps called synapses", "Myelin insulates a nerve fiber like a wire", "Signals can move at over 200 miles per hour", "Learning physically changes the wiring"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Twenty Watts of You",
+          "text": "Your brain makes up about two percent of your body weight. It burns about twenty percent of your energy. Every breakfast you eat, one fifth of it goes straight to the three pound organ sitting quietly in your skull, doing nothing you can see. What is it spending all that on? Signals. Your brain holds roughly eighty six billion neurons, and each one may connect to thousands of others. When a neuron fires, a pulse of electricity runs down a long fiber called an axon. At the end, the pulse turns into a chemical message that jumps a microscopic gap to the next cell. That gap is a synapse. Everything you have ever remembered, feared, or figured out happened as traffic across those gaps. Some axons are wrapped in a fatty sleeve called myelin. Myelin works like the insulation on a wire, and it makes signals travel far faster. An unwrapped fiber creeps along. A wrapped one can carry a signal at over two hundred miles per hour. Your brain also rebuilds itself. Learning is not the brain filling up like a bucket. It is the brain physically changing: strengthening the connections you use, and quietly letting go of the ones you do not. Scientists call this plasticity. It is why a skill you practice every day gets easier, and why one you abandon slips away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is a synapse, in your own words?",
+            "Explain what myelin does and why it matters.",
+            "The passage says learning is not the brain filling up like a bucket. What does it say learning actually is?",
+            "Why do you think a brain that is only two percent of your weight is allowed to burn twenty percent of your energy?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(the microscopic gap a chemical message jumps between two neurons)",
+            "it insulates an axon like a wire, so the signal travels far faster",
+            "the brain physically changing: strengthening connections you use and losing the ones you do not",
+            "(inference: the signalling work is essential, so the body pays for it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The brain is an expensive signal machine that rewires itself around what you do",
+            "The brain is a storage box that slowly fills up with facts",
+            "Eating a big breakfast is the best way to get smarter"
+          ],
+          "answers": ["The brain is an expensive signal machine that rewires itself around what you do"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["axon → ____", "synapse → ____", "plasticity → ____"],
+          "rows": 1,
+          "answers": [
+            "the long fiber an electrical pulse runs down",
+            "the microscopic gap where a chemical message jumps to the next cell",
+            "the brain's ability to physically change its own connections"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph about one skill you have gotten better at. Using the passage, explain what was happening inside your brain while you practiced. Use two details from the text.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Squishy Machine Inside Your Head",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-brain", "templateLabel": "The Squishy Machine Inside Your Head", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "brain",
+          "notes": ["The hippocampus is named for its seahorse shape", "There is one hippocampus on each side", "Memory is not one system, it is several", "Skill memory and event memory run separately", "Henry Molaison, 1926 to 2008, changed neuroscience", "His brain was cut into 2,401 thin slices"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What Henry Forgot",
+          "text": "In 1953, a young man named Henry Molaison lay on an operating table in Hartford, Connecticut. He had suffered violent seizures for years and nothing had stopped them. A surgeon removed a small structure from deep inside each side of his brain, a seahorse shaped piece called the hippocampus. The seizures eased. Something else broke. Henry woke up unable to form new memories. Not damaged memories. No new ones at all. He could hold a conversation, work a puzzle, and crack a joke, because his short term memory was intact. But the moment his attention moved on, the last few minutes were gone completely. He met the same researcher thousands of times across fifty years and greeted her as a stranger every time. He read the same magazine with fresh interest. He was, in his own words, like someone always waking from a dream. Henry became the most studied patient in the history of neuroscience, and he taught us something nobody had suspected: memory is not one thing. It is several separate systems living in different parts of the brain. Here is the proof. Researchers asked Henry to trace a star while looking only at its reflection in a mirror, which is far harder than it sounds. Every session, he insisted he had never attempted the task before. Every session, he did it better than the last. His hands were learning while his conscious mind recorded nothing. Skill memory and event memory run on different machinery, and his surgery had removed only one of them. Henry could also remember his childhood clearly. That mattered too. It meant the hippocampus is not the warehouse where old memories are stored. It is the loading dock, the place where new experiences are processed and passed along to the rest of the brain for keeping. Take away the dock and the warehouse survives, but nothing new gets in. Henry Molaison died in 2008 at eighty two. He had agreed, decades earlier, to donate his brain. It was frozen, sliced into two thousand four hundred and one wafer thin sections, and photographed. Anyone can look at them online. He never knew he was famous. He could not have held on to the fact for more than a minute."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did the surgeon remove from Henry's brain, and why?",
+            "The mirror tracing task is the passage's key piece of evidence. Explain what it proved, and quote the sentence the passage uses to make the point.",
+            "The passage calls the hippocampus a loading dock rather than a warehouse. Explain the difference that comparison is making.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: surgery removed Henry's hippocampus and ended his ability to form new memories; that loss proved memory is several separate systems)",
+            "the hippocampus from each side of his brain, to stop his violent seizures",
+            "skill memory and event memory are separate systems; quote: His hands were learning while his conscious mind recorded nothing",
+            "(new experiences are processed there and passed on for storage elsewhere; the old memories are not kept in it)",
+            "(inform, with detail: it gives dates, evidence, and a conclusion; the storytelling keeps it engaging)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["seizures → ____", "neuroscience → ____", "intact → ____", "conscious → ____"],
+          "rows": 1,
+          "answers": [
+            "sudden bursts of abnormal electrical activity in the brain",
+            "the scientific study of the brain and the nervous system",
+            "whole and still working",
+            "the aware part of your mind, the part you can notice and report"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Henry agreed to donate his brain decades before he died. Explain why he could not have made that agreement in the year he died.",
+            "Why was one patient enough to change what scientists believed about memory?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(he could not form new memories, so he could not hold on to a new decision)",
+            "(inference: the damage was specific, so what he lost and what he kept mapped functions onto structures)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph. Henry could not remember agreeing to be studied, so every session was a fresh surprise to him. Was it right to keep studying him for fifty years? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Squishy Machine Inside Your Head",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-brain", "templateLabel": "The Squishy Machine Inside Your Head", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "brain",
+          "notes": ["A newborn has most of the neurons it will ever have", "Synaptic pruning removes the connections you do not use", "Myelination runs back to front, finishing in the mid twenties", "The prefrontal cortex matures last", "London cab drivers memorize about 25,000 streets", "The ten percent myth is false", "The brain runs on roughly 20 watts"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Brain That Deletes Itself",
+          "text": "Your brain is not built the way a house is built, by adding rooms until it is finished. It is built the way a sculptor works, by starting with too much and taking away. A newborn arrives with most of the neurons it will ever have. What it does not have is wiring. Over the first two years, those neurons throw out connections at a furious rate, forming synapses far faster than experience could ever justify. By age two or three, parts of a child's cortex carry many more synaptic connections than an adult brain does. The child is over-built on purpose. It is a guess about every possible world it might have been born into. Then the brain starts cutting. Connections that carry traffic get reinforced. Connections that sit idle are dismantled and their materials recycled. Neuroscientists call this synaptic pruning, and it is not damage. It is the main event. A brain that kept every connection would be slow, noisy, and unable to decide anything. Sculpting is how a general purpose organ becomes your specific mind, shaped by the language you actually heard and the hands you actually used. This is also why early experience carries weight that later experience does not. A newborn can hear every sound distinction used by every human language on Earth. By about a year old, that ability has narrowed to the sounds that showed up around it. The unused discriminations were not forgotten. They were pruned. Pruning does not stop in childhood. It runs a second campaign through adolescence, and this time it concentrates on the prefrontal cortex, the region behind your forehead responsible for planning, weighing consequences, and interrupting an impulse before it becomes an action. At the same time, axons across the brain are being wrapped in myelin, the fatty insulation that speeds a signal up. Myelination sweeps roughly from the back of the brain toward the front, and the prefrontal cortex is last in line. It is not finished until the mid twenties. That timeline explains a great deal. The brain's reward and emotion systems come online early, in the first years of the teens. The prefrontal system that regulates them arrives late. For roughly a decade, an adolescent is driving a car whose engine matured before its brakes did. This is not a character flaw, and it is not a story about bad teenagers. It is a construction schedule. The upside of an unfinished brain is that an unfinished brain learns. Consider London taxi drivers, who must memorize roughly twenty five thousand streets to earn a license. Researchers scanned them and found the rear portion of their hippocampus, a memory structure, was measurably enlarged compared to other drivers, and that it was larger the longer they had been on the job. Their brains had physically restructured around a demand placed on them. That capacity is called plasticity, and it is worth being precise about, because it gets abused. You may have heard that people only use ten percent of their brains. That claim is false and always has been. Scans show activity distributed across the entire organ, and there is no silent ninety percent waiting to be switched on. Evolution does not maintain an organ that burns a fifth of your daily energy so that most of it can idle. The real finding is more interesting than the myth. You do use all of your brain. What changes is the wiring, continuously, in response to what you do. Every skill you practice thickens a path. Every one you drop gets quietly reclaimed. The brain you have at thirty is, in a literal physical sense, a record of what you spent your time on."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain synaptic pruning and why the author insists it is not damage. Cite the evidence.",
+            "The author compares brain development to sculpting rather than to building a house. Analyze why that comparison is chosen and what it lets him claim.",
+            "The passage says an adolescent is driving a car whose engine matured before its brakes did. What evidence does it offer for that claim, and is the evidence sufficient?",
+            "Identify where the passage turns from describing to arguing, and explain how the author signals the shift."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(unused connections are dismantled so the used ones dominate; cite: A brain that kept every connection would be slow, noisy, and unable to decide anything)",
+            "(sculpting removes from an excess rather than adding; it frames pruning as the creative act rather than as loss)",
+            "(reward and emotion systems mature early while prefrontal pruning and myelination finish in the mid twenties; student judges sufficiency)",
+            "(at the ten percent myth; he names a popular claim and refutes it, moving from explaining to correcting)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["synaptic pruning → ____", "myelination → ____", "prefrontal cortex → ____", "plasticity → ____"],
+          "rows": 2,
+          "answers": [
+            "the dismantling of unused synaptic connections so the used ones remain",
+            "the wrapping of axons in fatty insulation that speeds signals up",
+            "the region behind the forehead that plans, weighs consequences, and blocks impulses",
+            "the brain's ongoing physical rewiring in response to what it is used for"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage uses language sounds to show that early experience carries weight later experience does not. Explain the mechanism, then name one thing this example does NOT prove.",
+            "The taxi driver study found enlarged hippocampi in drivers. Explain why that finding on its own cannot prove the job caused the change, and what evidence would strengthen it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(unused sound discriminations are pruned by about a year old; it does not prove later learning is impossible or that every skill has the same window)",
+            "(correlation: people with larger hippocampi might choose the job; the fact that it was larger the longer they had driven points toward cause, and tracking the same drivers over time would settle it)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If the teenage brain is still under construction, teenagers should not be held responsible for their decisions. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "key": "human-body",
+  "title": "The Body That Never Stops Working",
+  "blurb": "The heart, bones, brain, and skin that keep you running every second, even while you sleep.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Body That Never Stops Working",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-human-body", "templateLabel": "The Body That Never Stops Working", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Point to your own head, then your own hand." },
+        {
+          "kind": "image",
+          "imageKey": "human-body",
+          "notes": ["Your heart is about the size of your fist", "You blink about 15 times a minute", "You have 10 fingers and 10 toes", "Your bones are hard and strong"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is your body. Put your hand on your chest. Can you feel a little thump? That is your heart. It pumps all day. Take a big breath in. That is your lungs filling up with air. Now wiggle your fingers. Your bones and muscles did that. Your body works while you play. Your body works while you sleep. It never stops."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the hearts in each row. Write how many in the box.",
+          "emoji": "❤️",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "heart    bones" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each body part to its job.",
+          "pairs": [
+            { "left": "heart", "right": "pumps blood" },
+            { "left": "lungs", "right": "take in air" },
+            { "left": "eyes", "right": "see" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw yourself. Put a big heart in your chest.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Body That Never Stops Working",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-human-body", "templateLabel": "The Body That Never Stops Working", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "human-body",
+          "notes": ["An adult has 206 bones", "A baby is born with about 300", "The smallest bone is inside your ear", "Your skull keeps your brain safe", "Your ribs make a cage for your heart"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Your Bones Hold You Up",
+          "text": "Put your hand on your arm and press. Feel something hard inside? That is a bone. Your bones make a frame called a skeleton. The skeleton holds you up. Without it you would flop like a sock. Your skull is a bone helmet. It keeps your brain safe. Your ribs curve around your heart and lungs like a cage. A grown-up has 206 bones. A baby has more. Some baby bones join together as the baby grows. The smallest bone is inside your ear. It is smaller than a grain of rice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the frame of bones called?", "Which bone keeps your brain safe?", "How many bones does a grown-up have?", "Where is the smallest bone?"],
+          "rows": 2,
+          "answers": ["the skeleton", "the skull", "206 bones", "inside your ear"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Your bones make a frame called a ____.", "Your ____ is a bone helmet.", "Your ribs curve around your heart like a ____.", "The smallest bone is smaller than a grain of ____."],
+          "wordBank": ["skeleton", "skull", "cage", "rice"],
+          "answers": ["skeleton", "skull", "cage", "rice"]
+        },
+        { "kind": "draw", "prompt": "Draw a skeleton. Give it a skull, some ribs, and two long leg bones.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Body That Never Stops Working",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-human-body", "templateLabel": "The Body That Never Stops Working", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "human-body",
+          "notes": ["Your heart beats about 100,000 times a day", "Blood carries oxygen everywhere", "You hold about 60,000 miles of blood vessels", "The heart is a muscle that never rests", "Red blood cells live about four months"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Muscle That Never Rests",
+          "text": "Make a fist. That is about the size of your heart. Your heart sits in the middle of your chest, tucked a little to the left. It is a muscle, but it is not like the muscles in your arm. Arm muscles get tired and need a rest. Your heart never gets one. It squeezes about 100,000 times every day, and it has been doing that since before you were born. The heart's job is to push blood. Blood is a delivery truck. It picks up oxygen in your lungs and carries it to every part of you: your toes, your thumbs, your brain. On the way back it collects the waste your body does not want. Then it returns to the lungs and starts again. If you took all the blood vessels out of one person and laid them end to end, they would stretch about 60,000 miles. That is far enough to wrap around Earth more than twice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "About how many times does your heart squeeze in one day?",
+            "What does blood pick up inside your lungs?",
+            "Why does the passage compare blood to a delivery truck?",
+            "Why do you think your heart is not allowed to get tired the way your arm muscles do?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about 100,000 times",
+            "oxygen",
+            "because it carries oxygen out and collects waste on the way back",
+            "(inference: if it stopped to rest, the body would stop getting oxygen)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Muscle That Never Rests", "How to Build a Delivery Truck", "The Tallest Mountain on Earth"],
+          "answers": ["The Muscle That Never Rests"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Your heart is a ____ that never rests.", "Blood carries ____ to every part of your body.", "Blood picks up oxygen inside your ____."],
+          "wordBank": ["muscle", "oxygen", "lungs"],
+          "answers": ["muscle", "oxygen", "lungs"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the heart, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Body That Never Stops Working",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-human-body", "templateLabel": "The Body That Never Stops Working", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "human-body",
+          "notes": ["The brain weighs about three pounds", "About 86 billion neurons inside", "Nerve signals reach 270 miles per hour", "The brain has no pain receptors of its own", "It burns about 20 percent of your energy", "Reflexes skip the brain entirely"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Three Pound Machine In Your Head",
+          "text": "Your brain weighs about three pounds. It is soft, roughly the texture of firm jelly, and it is the reason you can read this sentence. Inside are about 86 billion nerve cells called neurons. Each one is a tiny messenger. A neuron does not shout across your body. It passes a signal to the next neuron, which passes it to the next, like a bucket line. Those signals move fast. The quickest ones travel at around 270 miles per hour, which is why you can yank your hand off a hot pan before you have even decided to. That yank is worth noticing. It is not a decision. When you touch something painful, the signal races up your arm to your spinal cord, and your spinal cord answers immediately without waiting for your brain. It sends the pull-away order first and tells your brain afterward. That shortcut is called a reflex, and it exists because a quarter of a second matters when your hand is burning. Your brain is also expensive. It is about two percent of your body weight but it burns roughly twenty percent of your energy. Sitting still and thinking hard costs real fuel. Here is the strangest part. The brain has no pain receptors of its own. A surgeon can operate on a brain while the person is awake and talking, and the person feels nothing. The organ that produces every ache you have ever had cannot feel a thing itself."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the bucket line comparison in your own words. What is it describing?",
+            "Why does a reflex not wait for the brain? Use the passage to explain.",
+            "The passage says the brain is expensive. What does it mean by that?",
+            "A person can be awake during brain surgery and feel nothing. What does that tell you about where pain actually happens?"
+          ],
+          "rows": 2,
+          "answers": [
+            "neurons pass a signal from one to the next instead of one cell reaching the whole body",
+            "the spinal cord answers first because waiting a quarter of a second would mean more damage",
+            "(it uses about twenty percent of the body's energy while being only two percent of its weight)",
+            "(inference: pain is produced by the brain from signals sent elsewhere, not felt in the brain itself)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The brain is a fast, costly organ that runs your body and cannot feel pain itself",
+            "The brain is the heaviest organ in the human body",
+            "Reflexes are slow decisions your brain makes carefully"
+          ],
+          "answers": ["The brain is a fast, costly organ that runs your body and cannot feel pain itself"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["neuron → ____", "reflex → ____", "receptor → ____"],
+          "rows": 1,
+          "answers": [
+            "a nerve cell that passes signals along to the next one",
+            "an automatic move made by the spinal cord without waiting for the brain",
+            "a part that detects something, like heat or pain, and reports it"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: your body could have been built so that every action waited for the brain to decide. Give two reasons reflexes are a better design.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Body That Never Stops Working",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-human-body", "templateLabel": "The Body That Never Stops Working", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "human-body",
+          "notes": ["Skin is your largest organ", "About 22 square feet of it", "Two to four million sweat glands", "Melanin absorbs ultraviolet light", "The outer layer renews about every four weeks", "Fingerprints form before birth and never change"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Organ You Wear",
+          "text": "Ask someone to name your largest organ and they will probably say the heart, or the liver, or the brain. All wrong. You are wearing it. Skin is an organ, and in an adult it covers about 22 square feet and weighs around eight pounds. It is built in layers. The outer layer, the epidermis, is mostly dead. Its cells are born deep down, get pushed upward, flatten, harden, die, and are finally rubbed off. You replace the whole outer layer roughly every four weeks. A large share of the dust settling on your bookshelf is you. Underneath sits the dermis, and this is where the work happens. It holds the nerve endings that tell you a shirt is scratchy or a cup is too hot. It holds two to four million sweat glands. It holds tiny blood vessels that widen when you overheat, which is why you go red on a hot day, and narrow when you are cold, which is why you go pale. That temperature trick matters more than it sounds. Humans are not fast, and we are not strong, but we can shed heat better than almost any animal on Earth, because we sweat across our whole body while most mammals rely on panting. On a hot day, a person who paces themselves can run an antelope to exhaustion. The antelope is quicker, but it has to stop and cool down. We do not. Skin also decides its own color. Cells called melanocytes produce melanin, a pigment that absorbs ultraviolet light before it can damage the DNA underneath. More melanin, more shielding. A tan is not a healthy glow. It is your skin building emergency shade after damage has already begun. The pattern on your fingertips formed before you were born, while your hands pressed against the fluid around you, and it will not change for the rest of your life. Scrape your fingertip raw and, as long as the damage is not deep, the ridges grow back in exactly the same pattern. Identical twins share their DNA exactly, and their fingerprints still do not match."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name two jobs the dermis does, according to the passage.",
+            "Why does the author say a tan is not a healthy glow? Quote the phrase that explains it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage opens with a question and then says All wrong. Why does the author start that way?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering skin as the largest organ, its layers, and its jobs)",
+            "it holds nerve endings and sweat glands, and it controls blood vessels to manage heat",
+            "a tan is a response to damage; quote: building emergency shade after damage has already begun",
+            "(inform, with detail: it defines the layers and gives figures; the tan line leans persuasive)",
+            "(it sets up a wrong guess so the real answer lands harder and the reader keeps going)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["epidermis → ____", "dermis → ____", "melanin → ____", "pigment → ____"],
+          "rows": 1,
+          "answers": [
+            "the outer layer of skin, mostly made of dead cells",
+            "the layer beneath, holding nerves, sweat glands, and blood vessels",
+            "the substance that absorbs ultraviolet light and shields the DNA below",
+            "a substance that gives something its color"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a person can run an antelope to exhaustion. Explain how sweating makes that possible.",
+            "If the outer layer of skin is replaced every four weeks, why can a scar last a lifetime?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(we shed heat while still moving; the antelope has to stop and cool down)",
+            "(inference: only the outer layer renews; a scar means the deeper dermis was damaged)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should sunscreen be required for outdoor play at school? Take a position and support it with two reasons, using at least one fact from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Body That Never Stops Working",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-human-body", "templateLabel": "The Body That Never Stops Working", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "human-body",
+          "notes": ["Gut lining replaced every few days", "Red blood cells last about 120 days", "The whole skeleton rebuilds in about 10 years", "Cortical neurons last a lifetime", "Lens cells are never replaced at all", "About 30 trillion human cells aboard", "About 38 trillion bacteria aboard"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Body You Are Replacing Right Now",
+          "text": "You are not the body you had ten years ago, and you are not quite the body you had at breakfast. That is not poetry. It is maintenance. Your body is a building that repairs itself while you live in it, and different rooms are repaired on wildly different schedules. The lining of your gut is the fastest. The cells that face your food are scoured and chemically burned all day, so your body treats them as disposable and replaces them every few days. Your skin runs on a slower loop of about a month. A red blood cell lasts around four months, hauling oxygen back and forth until it is worn out, and then your spleen breaks it apart and salvages the iron. Your skeleton looks permanent. It is not. Cells called osteoclasts constantly chew tunnels through your bone and cells called osteoblasts fill them back in, so that over roughly ten years you rebuild essentially your whole skeleton. The femur you have now is not the femur you had in fifth grade. But the replacing is not universal, and the exceptions are the interesting part. Most of the neurons in your cerebral cortex are as old as you are. You were issued them early and you keep them. The cells in the lens of your eye are older still: the ones in the middle formed before you were born and have never been replaced, which is one reason lenses cloud with age. Damage there accumulates because nothing sweeps it away. So the pattern is not simple renewal. It is a body that replaces what it can afford to lose and protects what it cannot. There is an old puzzle about a ship. If you replace one plank of a ship, it is clearly the same ship. Replace every plank over many years, one at a time, and philosophers have argued ever since about whether it is still the same ship, or a different ship wearing the same name. Your body is that puzzle made of meat. Almost none of the material in you was in you a decade ago, and yet you remember your seventh birthday. Whatever makes you continuous is not the stuff. It is the pattern the stuff keeps rebuilding. The accounting gets stranger when you count who is aboard. Your body carries roughly thirty trillion human cells. It also carries roughly thirty-eight trillion bacteria, most of them in your large intestine, and they are not passengers. They finish digesting fiber you cannot break down, manufacture vitamins you cannot make, and train your immune system to tell a threat from a houseguest. By cell count, you are not quite a majority in your own body. None of this is a metaphor about change. It is a description of the machine. The reason you can be cut and knit back together, the reason a broken arm becomes an arm again instead of staying broken, is that your body was never a finished object. It is a process that has been running without pause since before you were born, and the only day it stops replacing you is the day it stops."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says the body is not simply renewing itself. State the rule the passage gives, and quote it exactly.",
+            "Why does the author bring in the ship puzzle? Quote the sentence that ties it to the body.",
+            "Identify where the passage turns from describing the body to arguing about identity. How does the author signal it?",
+            "The passage ends: the only day it stops replacing you is the day it stops. Analyze what that sentence is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it renews what is cheap to lose and guards what is not; cite: replaces what it can afford to lose and protects what it cannot)",
+            "(to raise what makes you the same person if the material changes; cite: Your body is that puzzle made of meat.)",
+            "(at the ship paragraph; the author drops the schedules and asks what continuity is made of)",
+            "(it reframes replacement as the definition of being alive; earned by the turnover evidence given earlier)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["osteoclasts → ____", "accumulates → ____", "continuous → ____", "salvages → ____"],
+          "rows": 2,
+          "answers": [
+            "cells that chew tunnels through bone so it can be rebuilt",
+            "builds up over time because nothing clears it away",
+            "unbroken, carrying on as the same thing",
+            "rescues something still useful out of what is worn out"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage insists the gut bacteria are not passengers. Explain what that word choice is arguing.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(passengers are carried; these do work the body depends on, so they are crew)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If almost every part of your body is replaced, you are a new person every ten years. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

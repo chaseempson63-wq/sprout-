@@ -1,0 +1,299 @@
+{
+  "key": "rocket",
+  "title": "The Rocket That Throws Itself Away",
+  "blurb": "Fire pushes down, the rocket goes up, and most of the machine gets dropped along the way.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Rocket That Throws Itself Away",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-rocket", "templateLabel": "The Rocket That Throws Itself Away", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the fire at the bottom." },
+        {
+          "kind": "image",
+          "imageKey": "rocket",
+          "notes": ["The fire pushes down", "So the rocket goes up", "It is taller than a house", "Most of it is full of fuel"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a rocket. A rocket goes up. It has fire at the bottom. The fire pushes down. The rocket goes up. Whoosh. The rocket is very tall. Most of the rocket is full of fuel. The fire eats the fuel. Up and up and up. The rocket goes past the clouds. It goes all the way to space."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the rockets on each row. Write how many in the box.",
+          "emoji": "🚀",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "up    fire" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "rocket", "right": "space" },
+            { "left": "fish", "right": "water" },
+            { "left": "car", "right": "road" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own rocket. Put fire at the bottom and stars all around it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Rocket That Throws Itself Away",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-rocket", "templateLabel": "The Rocket That Throws Itself Away", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "rocket",
+          "notes": ["Fuel burns into hot gas", "The gas rushes out the bottom", "There is no air in space", "So a rocket carries its own", "Almost all of a rocket is tank"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Rocket Pushes",
+          "text": "A rocket does not push on the ground. It does not push on the air. A rocket pushes on its own fire. Deep inside, fuel burns and turns into hot gas. The gas rushes out of the bottom of the rocket, very fast. Push the gas down hard, and the gas pushes the rocket up just as hard. That is the whole trick. There is no air in space, so a rocket carries its own air along with its fuel. It brings everything the fire needs. That is why a rocket is so big, and why almost all of it is tank."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a rocket push on?", "What does the burning fuel turn into?", "Why does a rocket carry its own air?"],
+          "rows": 2,
+          "answers": ["its own fire", "hot gas", "because there is no air in space"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The fuel burns and makes hot ____.", "The gas rushes out of the ____ of the rocket.", "The gas goes down, so the rocket goes ____.", "There is no air in ____."],
+          "wordBank": ["gas", "bottom", "up", "space"],
+          "answers": ["gas", "bottom", "up", "space"]
+        },
+        { "kind": "draw", "prompt": "Draw a rocket on the launch pad. Show the gas rushing out the bottom.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Rocket That Throws Itself Away",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-rocket", "templateLabel": "The Rocket That Throws Itself Away", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "rocket",
+          "notes": ["About nine tenths of a rocket is fuel", "Each dropped piece is called a stage", "Empty tanks are just dead weight", "Big rockets drop two or three stages", "The Saturn V moon rocket was 363 feet tall"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rocket That Throws Itself Away",
+          "text": "A rocket has a problem, and the problem is its own weight. Almost everything a rocket needs is fuel. On a big rocket, about nine tenths of the weight sitting on the launch pad is fuel and the tanks that hold it. The people, the satellite, the science gear, all of that is a tiny bit at the very top. As the rocket climbs, it burns through the fuel in the bottom tank. Soon that tank is empty. An empty tank is not useful. It is just heavy metal, and the engines have to drag it along. So the rocket does something clever. It throws the empty part away. Bolts fire, the empty stage falls off, and a fresh engine lights on the smaller rocket that is left. Now the rocket is lighter, so it speeds up faster. Big rockets do this two or three times on the way up. By the time the last piece reaches space, most of the rocket is gone. Engineers call each dropped piece a stage."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a rocket's big problem?",
+            "About how much of a rocket on the launch pad is fuel and tanks?",
+            "What happens to a tank once it is empty?",
+            "Why do you think the rocket speeds up faster after it drops a stage?"
+          ],
+          "rows": 2,
+          "answers": ["its own weight", "about nine tenths of it", "the rocket throws it away", "(inference: there is less weight for the engines to push)"]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Rocket That Throws Itself Away", "How to Build a Paper Airplane", "The Biggest Star in the Sky"],
+          "answers": ["The Rocket That Throws Itself Away"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Almost everything a rocket needs is ____.", "An empty tank is just heavy ____.", "Engineers call each dropped piece a ____."],
+          "wordBank": ["fuel", "metal", "stage"],
+          "answers": ["fuel", "metal", "stage"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: why is throwing away part of the rocket a smart idea, not a wasteful one?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Rocket That Throws Itself Away",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-rocket", "templateLabel": "The Rocket That Throws Itself Away", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rocket",
+          "notes": ["The edge of space is about 62 miles up", "Orbit speed is about 17,500 miles per hour", "Astronauts float because they are falling", "Gravity in orbit is nearly as strong as at home", "Rockets lean sideways right after liftoff"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Space Is Not Up",
+          "text": "Ask someone where space is and they will point up. That answer is close enough for a conversation, and it is almost useless for a rocket. The official edge of space sits about sixty two miles above your head. That is not far. A car could drive it in an hour, if roads went that way. Rockets have flown straight up, touched that line, and come straight back down again fifteen minutes later. The passengers saw the black sky and the curve of the Earth, and then gravity took them home. Going up is the easy half. Staying is the hard half. To stay in space, you have to go sideways, and you have to go sideways absurdly fast. About seventeen thousand five hundred miles per hour. Newton explained why with a thought experiment about a cannon on a very tall mountain. Fire the cannonball gently and it arcs down and lands. Fire it harder and it lands farther away. Fire it hard enough and the ground curves away beneath it exactly as fast as the ball falls. Now it never lands. It falls forever, all the way around the planet. That is an orbit. Astronauts are not floating because gravity stopped. Gravity up there is nearly as strong as it is in your kitchen. They are falling, constantly, and missing the Earth, constantly, because they are moving sideways so fast. That is why a rocket does not fly straight up. Watch a launch and you will see it lean over almost immediately, tipping toward the horizon. It is not aiming for the sky. It is aiming around the world."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the difference between going up and staying in space.",
+            "In your own words, what is an orbit?",
+            "Why are astronauts floating if gravity is still nearly as strong up there?",
+            "The passage says a rocket is aiming around the world, not for the sky. What does that mean?"
+          ],
+          "rows": 2,
+          "answers": [
+            "going up only needs height; staying needs enormous sideways speed",
+            "(falling around the planet fast enough that you never land)",
+            "they are falling and missing the Earth because they move sideways so fast",
+            "(inference: it must build sideways speed for orbit, so it leans toward the horizon)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Reaching space is about going sideways fast enough, not about going high",
+            "Space begins hundreds of thousands of miles from Earth",
+            "Gravity switches off once you leave the atmosphere"
+          ],
+          "answers": ["Reaching space is about going sideways fast enough, not about going high"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["orbit → ____", "horizon → ____", "thought experiment → ____"],
+          "rows": 1,
+          "answers": ["falling around a planet without ever landing", "the line where the sky seems to meet the ground", "a problem worked out in your head instead of in a laboratory"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining Newton's cannon to someone who has never heard of it. Use your own words and give one example.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Rocket That Throws Itself Away",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-rocket", "templateLabel": "The Rocket That Throws Itself Away", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rocket",
+          "notes": ["Gunpowder rockets flew in China by the 1200s", "Tsiolkovsky published the rocket equation in 1903", "Goddard launched the first liquid fuel rocket in 1926", "It flew 41 feet in about 2.5 seconds", "A rocket works better in a vacuum than in air", "The New York Times retracted its mockery in 1969"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Nobody Believed Robert Goddard",
+          "text": "For most of history, a rocket was a weapon and nothing more. Chinese armies were strapping tubes of gunpowder to arrows by the 1200s, and for the next six hundred years that is roughly what a rocket stayed: a firework with a grudge. It burned, it flew, it landed somewhere, and nobody expected it to be steered or to be useful anywhere but a battlefield. The idea that a rocket could carry a person off the planet belonged to a deaf schoolteacher in a small Russian town. Konstantin Tsiolkovsky taught math in Kaluga and worked out the physics in his spare time. In 1903 he published the equation that still governs every launch: how fast a rocket can go depends on how fast it throws its exhaust, and on how much of the rocket is fuel. From that one line of math he predicted liquid fuel, multiple stages, and space stations. He never built a rocket. He did not need to. The math was the discovery. Building it fell to an American physicist named Robert Goddard. Goddard was quiet, private, and thoroughly mocked. In 1920, after he suggested a rocket could reach the moon, a New York Times editorial announced that he seemed to lack the basic knowledge taught in high schools, because a rocket obviously needs air to push against. The paper was wrong. A rocket pushes against its own exhaust and works better in a vacuum, which is exactly what Goddard had been saying. On March 16, 1926, on his aunt's farm in Auburn, Massachusetts, Goddard lit the first liquid fuel rocket. It burned gasoline and liquid oxygen. It rose forty one feet, flew for two and a half seconds, and crashed in a cabbage field. It looks like nothing. It was everything. Every launch since, from Apollo to the satellite handling your phone calls, runs on the machine Goddard proved that morning. In July 1969, three days into the flight of Apollo 11, the New York Times printed a short correction. It noted that further investigation had confirmed the work of Isaac Newton, and that a rocket can indeed function in a vacuum. The paper regretted the error. Goddard had been dead for twenty four years."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did Tsiolkovsky contribute if he never built a rocket? Quote the phrase the passage uses.",
+            "Explain why the New York Times editorial of 1920 was scientifically wrong.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end with the fact that Goddard had been dead for twenty four years?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering rockets as weapons, Tsiolkovsky's math, Goddard's first liquid fuel flight)",
+            "he worked out the physics and predicted liquid fuel, stages, and space stations; quote: The math was the discovery",
+            "a rocket pushes against its own exhaust, not the air, so it works better in a vacuum",
+            "(inform, with a persuasive edge: it gives dates and facts, but its tone defends Goddard)",
+            "(the apology came far too late for him to hear it; it lands the cost of being mocked)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["exhaust → ____", "vacuum → ____", "editorial → ____", "governs → ____"],
+          "rows": 1,
+          "answers": ["the hot gas thrown out of the back of a rocket", "a space with no air in it", "an opinion piece printed by a newspaper", "controls or sets the rules for"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls an early rocket a firework with a grudge. Explain what that phrase is doing.",
+            "Tsiolkovsky did the math and Goddard did the building. Which one moved us closer to space, and why do you think so?"
+          ],
+          "rows": 3,
+          "answers": ["(it captures a weapon that flies but is not steered or useful; a joke that also defines the era)", "(opinion, supported: the math made it possible to know, the hardware made it possible to do)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should experts be careful about mocking ideas that sound impossible? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Rocket That Throws Itself Away",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-rocket", "templateLabel": "The Rocket That Throws Itself Away", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rocket",
+          "notes": ["The rocket equation: speed depends on exhaust speed and mass ratio", "Reaching orbit costs about 9.5 km per second of speed", "Hydrogen and oxygen exhaust leaves at about 4.5 km per second", "Payload is only a few percent of liftoff weight", "Saturn V: about 3,000 tons on the pad, 140 tons to orbit", "No single stage rocket has ever reached orbit with a payload", "A Falcon 9 booster first landed in December 2015"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tyranny of the Rocket Equation",
+          "text": "Every rocket that has ever flown, and every rocket that ever will, obeys a single line of math written in 1903 by a deaf Russian schoolteacher named Konstantin Tsiolkovsky. Engineers still call it the rocket equation, and they often add a second word to the phrase. They call it the tyranny of the rocket equation, because the math is not merely strict. It is cruel. The equation says something that sounds harmless. The speed a rocket can gain depends on two things: how fast it hurls its exhaust out the back, and the ratio between its full weight and its empty weight. The trap is buried in that word ratio. The relationship is not a straight line. It is a curve that bends upward, brutally. Wanting a little more speed does not cost a little more fuel. It costs a multiple. Work the numbers and the problem shows its teeth. To reach orbit, a rocket needs to gain roughly nine and a half kilometers per second, once you pay the tolls that gravity and air resistance charge on the way up. The best chemical exhaust anyone has ever managed, burning hydrogen with oxygen, leaves the nozzle at about four and a half kilometers per second. The equation takes those two numbers and returns a verdict: the rocket on the pad must be roughly eight times heavier than the rocket that arrives. Almost everything you are looking at when you watch a launch is propellant. The metal is a skin stretched around it. The payload, the actual reason for the whole enterprise, is a few percent at the tip. A Saturn V weighed about three thousand tons standing still and delivered around one hundred forty tons to orbit. Staging is the engineer's answer, and it is an admission of defeat as much as a solution. You cannot beat the exponent, so you cheat it. Burn a tank dry, then throw the tank away before the next engine lights, and the ratio resets in your favor. Every rocket that has reached orbit has done this. Not one single stage vehicle has ever carried a useful payload up and stayed in one piece. Which produced an absurdity that lasted sixty years. The most expensive machine on the pad was destroyed on every flight. Imagine scrapping an airliner after one trip to Denver and you have the economics of spaceflight for most of its history. Everyone could see the waste. The problem was that landing a booster requires saving fuel to slow it down, and saving fuel means carrying fuel, and carrying fuel is precisely what the equation punishes. Reuse looked like it might cost more than it saved. In December 2015, a Falcon 9 first stage came back to Cape Canaveral, lit its engines against its own fall, and set itself down on a concrete circle. Fifteen months later, that kind of booster flew a second mission. The equation had not changed and never will. What changed was the willingness to spend part of the payload buying the booster back. That trade is now routine, and it is the reason the price of a kilogram in orbit has fallen further in a decade than in the fifty years before it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the rocket equation is called a tyranny rather than simply a rule. Cite the evidence.",
+            "The passage calls staging an admission of defeat as much as a solution. Explain what is being admitted.",
+            "Identify the shift in the passage: where does it turn from physics to money, and how does the author signal it?",
+            "Analyze the sentence: The equation had not changed and never will. What work is that sentence doing at that point in the passage?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the math of propellant mass dictates rocket design, and reuse changed the cost without changing the math)",
+            "(the cost curve is exponential, not linear; cite: It is cruel and Wanting a little more speed does not cost a little more fuel. It costs a multiple.)",
+            "(that the exponent cannot be beaten, only dodged by discarding empty mass)",
+            "(at Which produced an absurdity that lasted sixty years; a short fragment pivots from physics to economics)",
+            "(it separates the fixed physics from the human choice, setting up the point that the breakthrough was a trade, not a discovery)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["mass ratio → ____", "propellant → ____", "payload → ____", "exponent → ____"],
+          "rows": 2,
+          "answers": [
+            "the full weight of a rocket divided by its empty weight",
+            "the fuel and oxidizer a rocket burns and throws out as exhaust",
+            "the cargo a rocket exists to deliver, such as people or a satellite",
+            "the power a number is raised to, which makes a quantity grow by multiplying rather than adding"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says reuse costs part of the payload. Explain the trade an engineer is making and when it would not be worth it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(landing fuel replaces cargo; not worth it when the mission needs every kilogram, so some flights still fly expendable)", "(student question plus a credible source type, such as a launch provider's published performance data)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The hardest problem in spaceflight was never engineering, it was arithmetic. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

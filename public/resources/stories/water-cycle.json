@@ -1,0 +1,328 @@
+{
+  "key": "water-cycle",
+  "title": "The Water That Keeps Coming Back",
+  "blurb": "No water on Earth is new. The rain in your yard has been an ocean, a cloud, and a dinosaur's drink, and it is still going around.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Water That Keeps Coming Back",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-water-cycle", "templateLabel": "The Water That Keeps Coming Back", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the sun. Find the rain." },
+        {
+          "kind": "image",
+          "imageKey": "water-cycle",
+          "notes": ["The sun lifts water up into the sky", "Clouds are made of tiny drops", "Rain falls when the drops get heavy", "The same water comes back again"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Water goes up. Water comes down. The sun warms the puddle. The water floats up into the sky. You cannot see it go. Up high it gets cold. It turns into a cloud. The cloud fills up and up. Then the rain falls down. It fills the puddle again. The same water goes around and around."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the raindrops in each row. Write how many in the box.",
+          "emoji": "💧",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "rain    cloud" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it belongs.",
+          "pairs": [
+            { "left": "rain", "right": "cloud" },
+            { "left": "puddle", "right": "ground" },
+            { "left": "sun", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big cloud with rain falling down. Add a puddle at the bottom.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Water That Keeps Coming Back",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-water-cycle", "templateLabel": "The Water That Keeps Coming Back", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "water-cycle",
+          "notes": ["Water vapor is a gas you cannot see", "It takes millions of drops to make one cloud", "Plants breathe water into the air", "Snow is the same cycle in cold weather", "No water on Earth is new"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where the Puddle Went",
+          "text": "Look at a puddle on a warm day. Come back later and it is gone. The puddle did not go away. The sun warmed it until it turned into water vapor, and vapor is so small you cannot see it. It floated up into the sky. High up, the air is cold. The vapor cooled and turned back into tiny drops. Millions of drops together make a cloud. The drops bump into each other and grow. When a drop is too heavy for the air to hold, it falls. That is rain. The rain lands, and it makes a new puddle."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where did the puddle go?", "What warms the water and sends it up?", "Why does a drop fall out of the cloud?"],
+          "rows": 2,
+          "answers": ["it turned into vapor and floated into the sky", "the sun", "it grows too heavy for the air to hold"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The sun warms the water and it turns into ____.", "High in the sky the air is ____.", "Millions of tiny drops make a ____.", "When a drop gets too heavy it falls as ____."],
+          "wordBank": ["vapor", "cold", "cloud", "rain"],
+          "answers": ["vapor", "cold", "cloud", "rain"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part to its job.",
+          "pairs": [
+            { "left": "the sun", "right": "warms the water" },
+            { "left": "the cloud", "right": "holds the drops" },
+            { "left": "the rain", "right": "falls to the ground" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the whole trip: a puddle, water going up, a cloud, and rain coming down. Add arrows to show the way around.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Water That Keeps Coming Back",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-water-cycle", "templateLabel": "The Water That Keeps Coming Back", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "water-cycle",
+          "notes": ["Evaporation: liquid turns into vapor", "Condensation: vapor turns back into liquid", "Cloud drops form on specks of dust and salt", "One big oak can send tens of thousands of gallons up in a year", "Rain is fresh because salt cannot evaporate"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where the Puddle Goes",
+          "text": "Every puddle has somewhere to be. On a warm day the sun pours energy into the water. The fastest bits of water break free from the surface and drift away as water vapor, a gas so thin and clear that it is invisible. Scientists call this evaporation. Plants do it too. Roots pull water up from the soil, and leaves let it slip out into the air. One big oak tree can send tens of thousands of gallons of water into the sky in a single year. High above the ground the air is much colder, and cold air cannot hold as much vapor. So the vapor turns back into liquid. It sticks to specks of dust and salt floating in the air, and each speck grows a tiny drop around it. Billions of those drops hanging together are what you see as a cloud. The drops bump, join, and get heavier. When they are too heavy to float, gravity takes over and they fall as rain or snow. The water soaks into the ground, or runs into a creek, and the creek runs to the sea. Then the sun starts the whole thing over again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is evaporation?",
+            "Name two places water vapor comes from.",
+            "What do cloud drops need to stick to before they can form?",
+            "Why do you think the water cycle never stops?"
+          ],
+          "rows": 2,
+          "answers": [
+            "water turning into an invisible gas and drifting into the air",
+            "puddles, lakes, the sea, soil, and the leaves of plants",
+            "tiny specks of dust and salt floating in the air",
+            "(inference: the sun keeps shining, so it keeps lifting water up)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Where the Puddle Goes", "How to Build a Backyard Swimming Pool", "The Tallest Mountain in the World"],
+          "answers": ["Where the Puddle Goes"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Water turning into a gas is called ____.", "Plants let water slip into the air through their ____.", "Cloud drops form around specks of ____ and salt."],
+          "wordBank": ["evaporation", "leaves", "dust"],
+          "answers": ["evaporation", "leaves", "dust"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: follow one drop of water from the sea up to a cloud and back down again. Where does it land?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Water That Keeps Coming Back",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-water-cycle", "templateLabel": "The Water That Keeps Coming Back", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "water-cycle",
+          "notes": ["The sun is the engine, gravity is the brake", "About a million cloud droplets make one raindrop", "A drop spends about 9 days in the air", "Ocean water waits about 3,000 years for its turn", "Almost 97 percent of Earth's water is salty", "Salt cannot evaporate, so rain is always fresh"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Oldest Water You Will Ever Drink",
+          "text": "Fill a glass of water and you are holding something ancient. Almost every drop of water on Earth has been here for billions of years, and none of it is new. It has been ocean, cloud, river, ice, and rain, over and over, in a loop that has never once stopped. The engine of that loop is the sun. Sunlight heats the ocean and gives some water molecules enough energy to escape into the air as vapor, an invisible gas. This is evaporation, and the ocean supplies most of it. Something clever happens on the way up. Salt cannot evaporate. It stays behind in the sea, so the vapor that rises is pure fresh water. The sky is the largest distillery on the planet. Higher up, the air is colder and holds less vapor, so the water condenses onto floating specks of dust, smoke, and sea salt flung up by breaking waves. The droplets that form are so small that a million of them would barely fill one raindrop. Clouds are those droplets, not vapor. If you can see it, it is already liquid again. Droplets collide, merge, and grow until the air can no longer hold them, and then they fall as rain, snow, sleet, or hail. What comes down does not stay put. Some runs across the land into rivers and back to the sea. Some soaks into rock and becomes groundwater, where it may sit for thousands of years. Some freezes into a glacier and waits. On average a water molecule spends about nine days in the atmosphere, but roughly three thousand years in the ocean. The water in your glass is on one lap of a very long race, and you are a short stop along the way."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage calls the sky the largest distillery on the planet. Explain what that means.",
+            "Why is rain fresh when most of the water it came from was salty?",
+            "Clouds are droplets, not vapor. How could you tell the difference just by looking?",
+            "Water spends about nine days in the air but three thousand years in the ocean. What does that tell you about where most of Earth's water sits?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(the sky separates pure water from everything else, the way a distillery does)",
+            "salt cannot evaporate, so only the water rises and the salt stays in the sea",
+            "(inference: vapor is invisible, so anything you can see is already liquid droplets)",
+            "(inference: almost all of it is sitting in the ocean, waiting its turn)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Earth's water is ancient and endlessly recycled through a loop the sun powers",
+            "Clouds manufacture brand new water every year",
+            "The ocean is slowly running out of salt"
+          ],
+          "answers": ["Earth's water is ancient and endlessly recycled through a loop the sun powers"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["evaporation → ____", "condenses → ____", "groundwater → ____"],
+          "rows": 1,
+          "answers": [
+            "liquid water escaping into the air as an invisible gas",
+            "turns from a gas back into a liquid",
+            "water that has soaked down into rock and is stored underground"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if no water is ever lost, explain how a town can still run short of water. Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Water That Keeps Coming Back",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-water-cycle", "templateLabel": "The Water That Keeps Coming Back", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "water-cycle",
+          "notes": ["Earth holds about 1.4 billion cubic kilometers of water", "About 86 percent of vapor lifts off the ocean", "Condensation releases heat, and that heat fuels hurricanes", "Residence time: 9 days in air, 3,000 years in the ocean", "Less than 1 percent is fresh water we can reach", "Transpiration: plants breathe water out of their leaves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sky Is a Distillery",
+          "text": "Ask where the rain comes from and the honest answer is: from everywhere it has already been. Earth's water is a closed loop of about 1.4 billion cubic kilometers, and the total barely changes. What changes is where the water sits, and how long it stays. The sun runs the loop. Roughly 86 percent of the vapor entering the atmosphere lifts off the ocean. The rest comes from lakes, soil, and plants, which draw water up through their roots and release it from their leaves in a process called transpiration. Evaporation is fussy about what it takes. Salt, minerals, and most pollutants cannot leave with the vapor, so they stay behind. Every cloud is therefore a batch of distilled water, and the atmosphere is the largest purification plant that has ever existed. Evaporation also moves energy. Turning liquid water into vapor takes a great deal of heat, and that heat travels along with the vapor like hidden luggage. When the vapor cools and condenses into cloud droplets, the heat is released into the surrounding air. This is why storms have power. A hurricane is, at heart, an enormous engine running on warm ocean water condensing at altitude. Condensation needs a surface to build on. Vapor gathers on microscopic specks of dust, smoke, pollen, and sea salt, each speck seeding a droplet about a hundredth of a millimeter across. It takes roughly a million such droplets to assemble one raindrop, which is why a cloud can hang overhead for hours without dropping a thing. Then comes the part people forget. Water that falls does not simply wait around to evaporate again. It has choices. It may run off into a river and reach the sea within days. It may soak into porous rock and become groundwater, resting there for centuries. It may lock into an ice sheet and hold still for a hundred thousand years. Scientists call this residence time, and it is the difference between a puddle and a glacier. Here is the catch. About 97 percent of Earth's water is salt water. Most of the fresh remainder is frozen solid or buried deep. Less than one percent is liquid fresh water we can actually reach, and in places like the Great Plains, people pump it out of ancient aquifers faster than rain can refill them. The water never runs out. It simply refuses to be where we want it, when we want it, and no amount of asking will hurry the cycle along."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "How much of the vapor entering the atmosphere comes off the ocean, and where does the rest come from?",
+            "Explain how evaporation moves energy. Quote the phrase the passage uses to describe that energy in transit.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the final sentence in your own words. Why does the author choose to end there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the closed loop + distillation + residence time + the fresh water catch)",
+            "roughly 86 percent; the rest from lakes, soil, and plants through transpiration",
+            "heat is absorbed to make vapor and released when it condenses; quote: like hidden luggage",
+            "(inform, with detail: it defines terms and gives figures; the closing lines lean persuasive)",
+            "(the shortage is about place and timing, not amount; the author ends there to leave the problem with the reader)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["transpiration → ____", "distilled → ____", "residence time → ____", "aquifer → ____"],
+          "rows": 1,
+          "answers": [
+            "water drawn up by plant roots and released from the leaves as vapor",
+            "purified by evaporating and condensing, leaving everything else behind",
+            "how long water stays in one place before moving on",
+            "a body of rock underground that holds water"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says the water never runs out. Explain how a town can still run dry.",
+            "Why would a warmer ocean make storms stronger? Use the passage to build your answer."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: the total is fixed but the accessible fresh share is tiny and can be drained locally)",
+            "(warmer water evaporates faster, so more vapor condenses and releases more heat into the storm)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should people be allowed to pump groundwater faster than rain refills it? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Water That Keeps Coming Back",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-water-cycle", "templateLabel": "The Water That Keeps Coming Back", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "water-cycle",
+          "notes": ["Water has been cycling for roughly 4 billion years", "Latent heat: evaporation stores it, condensation releases it", "The Amazon's flying rivers carry rain thousands of kilometers", "Cloud droplet: about a hundredth of a millimeter wide", "The Ogallala Aquifer is drained faster than it refills", "Less than 1 percent of Earth's water is fresh and reachable"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Loop That Cannot Be Broken, Only Moved",
+          "text": "Nothing about the water cycle is new. That is the first thing to understand about it, and the strangest. The oceans, the rain, the ice, and the water inside your own cells have been circling this planet for roughly four billion years, and the total amount has hardly budged. There is no factory making more of it. Every glass you have ever drunk was borrowed. The loop runs on sunlight and gravity, which is a suspiciously short list of ingredients for something so large. Sunlight strikes the ocean and hands energy to the molecules at the surface. A few of them collect enough to break away entirely and rise as vapor, an invisible gas. About 86 percent of the water entering the atmosphere leaves the ocean this way. The remainder evaporates from lakes and soil, or exits through plants, which pull water up from their roots and breathe it out through pores in their leaves. That last route is called transpiration, and it is no rounding error. A single large oak can release tens of thousands of gallons in a year, and the Amazon rainforest exhales so much vapor that scientists describe the result as flying rivers, airborne flows that deliver rain to farmland thousands of kilometers downwind. Evaporation is selective, and this is the quiet miracle of the whole system. Salt does not rise. Neither do most minerals or pollutants. Only the water leaves, so what condenses in the sky is distilled, and the sea stays salty precisely because the fresh water keeps departing without it. The atmosphere purifies an entire planet's water supply for free, continuously, and has done so since long before there was anyone around to be grateful. Rising vapor also smuggles energy. Evaporating water absorbs a large amount of heat, which travels invisibly with the gas until the vapor cools, condenses, and releases it again. This is why a hurricane is not merely a wind event but a heat engine: warm ocean water evaporates, condenses at altitude, dumps its stored heat into the storm, and the storm uses that energy to haul up still more water. Condensation needs something to cling to. Droplets form on microscopic specks of dust, smoke, pollen, and sea salt thrown up by breaking waves. Each droplet is roughly a hundredth of a millimeter wide, and about a million of them must collide and merge before a single raindrop is heavy enough to fall. Clouds float not because water is light but because the droplets are small enough for rising air to carry. What falls then scatters into wildly different futures. Some water reaches the sea within a week. Some soaks into porous rock and becomes groundwater that will not see daylight for ten thousand years. Some freezes into an ice sheet and outwaits entire civilizations. Hydrologists call this residence time: about nine days in the atmosphere, roughly three thousand years in the ocean, far longer underground. Which brings us to the uncomfortable arithmetic. About 97 percent of Earth's water is salt. Most of the rest is frozen solid or locked deep in rock. Less than one percent is liquid fresh water within human reach, and much of that is being withdrawn faster than the cycle returns it. The Ogallala Aquifer beneath the Great Plains holds water that fell before farming was invented, and irrigation is drawing it down in decades. So the cycle is not fragile. It will outlast us without effort. What is fragile is our assumption that it will keep delivering to the same address. The water is never destroyed. It is only ever somewhere else."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the sea stays salty even though water leaves it constantly. Cite the evidence.",
+            "Contrast the fate of water that runs into a river with water that soaks into rock. Why does the author group these as different futures?",
+            "Identify the shift in the passage: where does it turn, and how does the author signal it?",
+            "The passage ends: The water is never destroyed. It is only ever somewhere else. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a sun-powered loop recycles a fixed supply of ancient water, and the shortage is one of place, not amount)",
+            "(only water evaporates, so the salt is left behind; cite: the sea stays salty precisely because the fresh water keeps departing without it)",
+            "(river water returns within days, groundwater is held for millennia; residence time decides whether water is available to us)",
+            "(at Which brings us to the uncomfortable arithmetic; a short pivot sentence turns the passage from wonder to warning)",
+            "(it moves the problem from the cycle to human expectations; earned by the aquifer and less-than-one-percent evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["transpiration → ____", "distilled → ____", "residence time → ____", "selective → ____"],
+          "rows": 2,
+          "answers": [
+            "water pulled up by roots and breathed out through pores in leaves",
+            "purified by evaporating away from everything dissolved in it",
+            "how long water stays in one part of the cycle before moving on",
+            "taking some things and leaving others behind"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the cycle is not fragile but our assumption is. Explain the distinction, and what it means for a city planning its water supply.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the loop continues regardless; what fails is the expectation of delivery to a fixed place, so cities must plan for supply moving)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Because Earth's water is never destroyed, running out of water is impossible. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

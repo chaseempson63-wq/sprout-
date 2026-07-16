@@ -1,0 +1,328 @@
+{
+  "key": "boat",
+  "title": "The Boat That Sails Into the Wind",
+  "blurb": "Why a heavy steel ship floats, how a tight sail becomes a wing, and how sailors learned to climb toward a wind they cannot point at.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Boat That Sails Into the Wind",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-boat", "templateLabel": "The Boat That Sails Into the Wind", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the two sails." },
+        {
+          "kind": "image",
+          "imageKey": "boat",
+          "notes": ["It floats on top of the water", "The wind pushes the sails", "It has one red sail and one yellow sail", "A boat does not sink"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a boat. The boat floats on top of the water. It does not sink. Look at the two sails. One sail is red. One sail is yellow. The wind blows on the sails. The wind pushes the boat along. Push, push, push. The little boat sails away across the water. Wave goodbye."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the boats in each row. Write how many in the box.",
+          "emoji": "⛵",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sail    boat" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "boat", "right": "water" },
+            { "left": "car", "right": "road" },
+            { "left": "plane", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own boat. Give it a big sail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Boat That Sails Into the Wind",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-boat", "templateLabel": "The Boat That Sails Into the Wind", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "boat",
+          "notes": ["A boat pushes water out of the way", "The water pushes back up", "The wind fills the sails", "Boats are older than wheels", "The fin underneath is called a keel"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Boat Floats",
+          "text": "Put your hand into a full bath. The water climbs up the sides. Your hand pushed the water out of the way. A boat does the same thing, only bigger. The boat pushes water out of the way. The water pushes back up on the boat. That push is strong enough to hold the whole boat up. So the boat floats. Then the wind does the rest. It fills the sails and pushes the boat along."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What happens to the water when you put your hand in the bath?", "What does a boat push out of the way?", "What fills the sails?"],
+          "rows": 2,
+          "answers": ["it climbs up the sides", "it pushes the water out of the way", "the wind"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A boat pushes the ____ out of the way.", "The water pushes ____ up on the boat.", "That is why a boat ____.", "The wind fills the ____."],
+          "wordBank": ["water", "back", "floats", "sails"],
+          "answers": ["water", "back", "floats", "sails"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part of the boat to its job.",
+          "pairs": [
+            { "left": "sail", "right": "catches the wind" },
+            { "left": "hull", "right": "floats on the water" },
+            { "left": "keel", "right": "hangs down underneath" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your boat on the water. Add the wind blowing on the sails.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Boat That Sails Into the Wind",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-boat", "templateLabel": "The Boat That Sails Into the Wind", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "boat",
+          "notes": ["Steel sinks, but a steel ship floats", "A ship is a huge bowl full of air", "Floating is about shape, not weight", "A loaded ship sits lower in the water", "Boats are older than the wheel"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Steel Ship Floats and a Nail Does Not",
+          "text": "Here is a puzzle. Drop a small steel nail into a bucket of water and it sinks straight to the bottom. Steel is much heavier than water. But a steel ship, as long as a street and loaded with cars, floats. How? The answer is not about weight. It is about shape. When anything sits in water, it shoves some water out of the way. The water shoves back. If the water it shoved aside weighs as much as the object does, the object floats. A solid nail is small, so it only shoves aside a tiny bit of water, and that tiny bit is far too light to hold the nail up. Down it goes. A ship is hollow. It is a huge steel bowl full of air. To sink low enough to swallow that ship, the sea has to be shoved aside by the ton. All that shoved water pushes back, and the ship stops sinking and rides there. Squash the same ship into a solid steel cube and it would drop like the nail. Shape is everything."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens when you drop a steel nail into water, and why?",
+            "Explain in your own words why a hollow ship floats when solid steel sinks.",
+            "The passage ends with Shape is everything. What does it mean by that?",
+            "Why do you think a ship loaded with heavy cars sits lower in the water than an empty one?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it sinks, because steel is much heavier than water",
+            "the ship is hollow and full of air, so it shoves aside enough water to hold it up",
+            "whether something floats depends on its shape, not just what it is made of",
+            "(inference: it is heavier, so it must shove aside more water before the water can hold it up)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why a Steel Ship Floats and a Nail Does Not", "How to Build a Wooden Bucket", "The Deepest Part of the Ocean"],
+          "answers": ["Why a Steel Ship Floats and a Nail Does Not"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A boat floats because it ____ water out of the way.", "The water shoves ____ on the boat.", "A ship is ____, like a huge steel bowl full of air."],
+          "wordBank": ["shoves", "back", "hollow"],
+          "answers": ["shoves", "back", "hollow"]
+        },
+        { "kind": "handwriting", "prompt": "Write two or three sentences. You have a lump of clay that sinks. How would you change it so it floats, and why does your change work?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Boat That Sails Into the Wind",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-boat", "templateLabel": "The Boat That Sails Into the Wind", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "boat",
+          "notes": ["A tight sail is a wing standing on its edge", "The pull on the sail is mostly sideways", "The keel refuses to slide sideways", "No sailboat can point straight into the wind", "The no-go zone is about 45 degrees", "Zigzagging upwind is called tacking"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Impossible Direction",
+          "text": "Sailing downwind is easy to picture. The wind comes from behind, fills the sails like a bag, and shoves the boat forward. Any raft with a bedsheet can do that. The clever part is that a sailboat can also sail toward the wind, and that seems impossible. Watch a boat leave a harbor into a headwind and it will get out anyway, leaning over, moving fast. Here is the trick. A sail is not really a bag. Pulled tight, it takes on a gentle curve, and that curve makes it a wing standing on its edge. Air arriving at an angle has to bend around the curve, and bending air has a price. The pressure on the outer face of the sail drops below the pressure on the inner face, and the sail is pulled hard toward the low pressure. That pull is not backward and it is not forward. It is roughly sideways, off to one side of the boat. Sideways is useless, so the boat cheats. Underneath the hull hangs a keel, a heavy fin slicing down into the water. Water is thick and stubborn. The keel refuses to move sideways through it. The sideways pull has nowhere to go, so it escapes in the only direction left, which is forward. The boat leans, and it goes. There is a limit. No ordinary sailboat can sail straight into the wind. Come within about 45 degrees of it and the sails flap uselessly. So sailors zigzag, cutting across the wind first one way and then the other, climbing toward it in steps. They call it tacking. It is slower than a straight line, and for thousands of years it was the difference between a coast you could leave and a coast you were stuck on."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why is sailing downwind easy to explain, but sailing toward the wind is not?",
+            "In your own words, explain how a tight sail is like a wing.",
+            "The pull on the sail is mostly sideways. Why does the boat still move forward?",
+            "The passage says tacking was the difference between a coast you could leave and a coast you were stuck on. What does that mean?"
+          ],
+          "rows": 2,
+          "answers": [
+            "downwind the sail is just a bag catching a shove; toward the wind it has to work like a wing",
+            "pulled tight it makes a curve, and air bending around the curve pulls the sail toward the low pressure",
+            "the keel will not slide sideways through the water, so the only escape left for the pull is forward",
+            "(inference: without upwind sailing you could sail away from a place but never choose to sail home)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A curved sail works like a wing, and the keel turns its sideways pull into forward motion",
+            "Sailboats are the fastest vehicles ever built",
+            "The wind almost always blows from behind a boat"
+          ],
+          "answers": ["A curved sail works like a wing, and the keel turns its sideways pull into forward motion"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["keel → ____", "headwind → ____", "tacking → ____"],
+          "rows": 1,
+          "answers": [
+            "the heavy fin under the hull that will not slide sideways through water",
+            "wind blowing at you from the direction you are trying to go",
+            "zigzagging across the wind to climb toward it in steps"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to someone younger how a sailboat can move toward the wind. Use the words sail, keel, and tacking.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Boat That Sails Into the Wind",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-boat", "templateLabel": "The Boat That Sails Into the Wind", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "boat",
+          "notes": ["Downwind, a boat can never beat the wind", "Apparent wind: real wind plus your own motion", "Across the wind, more speed makes more wind", "Ice boats reach three or four times wind speed", "Racing yachts foil at 50 knots in a 20 knot breeze", "A knot is one nautical mile per hour"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Faster Than the Wind That Moves You",
+          "text": "Common sense says a sailboat cannot outrun the wind pushing it. Once the boat matches the wind's speed, the wind should feel still, the sails should go slack, and that should be the end of it. Common sense is right, but only about one kind of sailing. Sail directly downwind and you are running a race you cannot win. The sail is doing nothing clever. It is a bag catching a shove, and the shove weakens as you speed up. A boat running dead downwind is always slower than the wind carrying it. Turn across the wind and the whole situation changes, because now the boat starts making weather of its own. Ride a bicycle on a still day and you feel a breeze in your face that did not exist before you started pedaling. You made it. A sailboat does the same. The wind a moving boat actually feels is the real wind combined with the wind of its own motion, and sailors call that combination the apparent wind. Here is the strange part. When a boat sails across the wind rather than away from it, going faster does not weaken the apparent wind. It strengthens it, and it swings it forward. More speed makes more wind. More wind makes more speed. Nothing is being created from nothing. The boat is not beating physics, it is trading. Its sail is a wing working in thin fast air. Its keel or its foils grip thick slow water. Caught between the two, the hull is squeezed forward like a wet melon seed pinched between two fingers. The energy still comes from the wind. The boat is simply an unusually good machine for taking it. The results are not small. An ice boat, with nothing but slick blades under it and almost no drag to fight, can travel three or four times the speed of the wind that drives it. Modern racing yachts lift their hulls clear of the water on carbon foils and do the same thing at sea, sailing near fifty knots in a twenty knot breeze. Those crews are not chasing the wind. They are outrunning it, using it, and making more of it as they go."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why can a boat sailing directly downwind never go faster than the wind?",
+            "Explain what apparent wind is. Quote the phrase the passage uses to define it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author says the boat is not beating physics, it is trading. What is being traded?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: downwind speed is capped by the wind; sailing across the wind builds apparent wind, letting a boat exceed it)",
+            "the sail is only a bag catching a shove, and the shove weakens as the boat speeds up",
+            "the real wind plus the wind of the boat's own motion; quote: the real wind combined with the wind of its own motion",
+            "(inform, with detail: it defines apparent wind and gives measured speeds; the bicycle image entertains)",
+            "(the boat takes energy from the wind by working between fast air and slow water; nothing is created from nothing)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["apparent wind → ____", "slack → ____", "foils → ____", "drag → ____"],
+          "rows": 1,
+          "answers": [
+            "the wind a moving boat feels: the real wind plus the wind of its own motion",
+            "loose and empty, with no wind filling it",
+            "wings under the hull that lift the boat clear of the water",
+            "the resistance that slows something moving through air or water"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage compares the hull to a wet melon seed pinched between two fingers. Explain why that image fits.",
+            "An ice boat can beat a sailboat on water using the same wind. Using the passage, explain why."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the boat is squeezed forward from between the air above and the water below, the way a seed squirts out from between fingers)",
+            "(inference: it has almost no drag to fight, so more of the wind's energy turns into speed)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is a sailboat that outruns the wind a more impressive machine than a motorboat that goes the same speed? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Boat That Sails Into the Wind",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-boat", "templateLabel": "The Boat That Sails Into the Wind", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "boat",
+          "notes": ["Oldest known boat: a hollowed pine log, about 10,000 years old", "Boats are older than the wheel", "On the Nile the current runs north, the wind blows south", "A tight sail is a wing turned on its side", "Hokulea sailed Hawaii to Tahiti in 1976 with no instruments", "About 80 percent of world trade travels by sea"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Turned the Sea Into a Road",
+          "text": "For most of human history, water was a wall. It marked the place where a people ended. The boat is the machine that turned that wall into a road, and it did the job in stages, each one stranger than the last. The first stage was simply floating. The oldest boat anyone has found is a hollowed-out pine log dug from a peat bog at Pesse, in the Netherlands, and it is roughly ten thousand years old. That makes the boat older than the wheel. It is three meters of tree with the middle scraped out, and it works for the same reason a steel tanker works: a hollow object shoves aside more water than a solid one, and the shoved water pushes back. Weight was never the question. Shape was. The second stage was borrowing the wind, and the people who did it best early on lived along the Nile. That river is a gift with a rare piece of luck built into it. The current runs north toward the sea. The prevailing wind blows south, against the current. So an Egyptian boat could drift downstream to the delta on the current, raise a sail, and be pushed home again by the wind. The convenience ran so deep that it soaked into the writing itself. In hieroglyphs, the sign for traveling south is a boat with its sail up, and the sign for traveling north is a boat with the sail down. The language could not separate the direction from the machine. But a sail that only runs before the wind is a one-way ticket. You can leave; you cannot choose to come back. That is why the third stage matters more than the other two combined. Across many centuries and many coastlines, sailors worked out how to sail toward the wind. Pulled tight, a sail stops being a bag and becomes a wing turned on its side, and a wing does not get shoved. It gets pulled sideways, hard. A keel or a leeboard refuses to slide sideways through the water, so that sideways pull has only one place left to escape, and the boat squirts forward. It still cannot point straight into the wind, so sailors zigzag, climbing upwind in steps they call tacks. Slow, wet, and world-changing. The sea stopped being a current you obeyed and became a surface you could cross in any direction you chose. The Polynesians took this furthest, and earliest, with the least equipment. Sailing double-hulled canoes, they found and settled hundreds of islands scattered across millions of square miles of open Pacific, without a compass, a chart, or a clock. They navigated by memorized star paths, by the direction of swells felt through the hull at night, by the flight lines of birds at dusk, by the color of clouds standing over land they could not yet see. For a long time European scholars insisted this was luck, that such voyages must have been accidental drifts. In 1976 a double-hulled canoe named Hokulea sailed from Hawaii to Tahiti carrying no instruments at all, navigated the old way by a man named Mau Piailug, and settled the argument at sea rather than on paper. We treat all of this as finished and ordinary now. It is not. Roughly eighty percent of the world's traded goods still cross the ocean in a hull, and the whole arrangement rests on one stubborn idea somebody had a very long time ago: that the water in your way and the wind against you are not obstacles. They are the engine, if you are shaped correctly."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the piece of luck built into the Nile, and quote the sentence the author uses to show how deeply it ran.",
+            "Why does the author say the third stage matters more than the other two combined? Cite the evidence.",
+            "How does the author use the Hokulea voyage? Identify the claim it is answering.",
+            "Analyze the final two sentences. What claim do they make, and has the passage earned it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering floating, the sail, upwind sailing, and why it mattered)",
+            "(the current runs north while the wind blows south, so boats drifted down and sailed back; quote: The language could not separate the direction from the machine.)",
+            "(downwind sailing only lets you leave, upwind sailing lets you choose any direction; cite: You can leave; you cannot choose to come back.)",
+            "(as evidence against the scholars' claim that Polynesian voyages were accidental drifts; it answered by demonstration rather than argument)",
+            "(that wind and water are an engine rather than obstacles; earned by the buoyancy, wing-sail, and Polynesian evidence built up before it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["prevailing (wind) → ____", "leeboard → ____", "hieroglyphs → ____", "delta → ____"],
+          "rows": 2,
+          "answers": [
+            "the wind that blows most of the time in a particular place",
+            "a board lowered beside a hull to stop it sliding sideways",
+            "the picture writing of ancient Egypt",
+            "the spread of channels where a river meets the sea"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "European scholars insisted the Polynesian voyages must have been accidental drifts. What does that assumption reveal about the people making it?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion, supported: it reveals an assumption that people without European instruments could not have navigated deliberately)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: the most important machine in human history is the boat, not the wheel. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

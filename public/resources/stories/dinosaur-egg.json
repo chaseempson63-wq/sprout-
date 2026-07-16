@@ -1,0 +1,357 @@
+{
+  "key": "dinosaur-egg",
+  "title": "The Egg That Turned to Stone",
+  "blurb": "The biggest dinosaurs laid eggs a child could hold, and the animal we called an egg thief was really a parent sitting on its own nest.",
+  "topic": "dinosaurs",
+  "bands": {
+    "1": {
+      "title": "The Egg That Turned to Stone",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-dinosaur-egg", "templateLabel": "The Egg That Turned to Stone", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the baby dinosaur." },
+        {
+          "kind": "image",
+          "imageKey": "dinosaur-egg",
+          "notes": ["The shell is cracking open", "A baby dinosaur is inside", "It pushes with its head", "The shell is hard"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a dinosaur egg. It sits in a nest on the ground. Inside the egg is a baby dinosaur. It is curled up small. It is growing. A big dinosaur waits close by. It keeps the nest safe. One day the baby pushes. It pushes with its head. Crack. The shell breaks open. The baby dinosaur peeks out. It sees the sky. It is hungry."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the eggs in each nest. Write how many in the box.",
+          "emoji": "🥚",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "egg    nest" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its eggs.",
+          "pairs": [
+            { "left": "dinosaur", "right": "a nest on the ground" },
+            { "left": "turtle", "right": "a hole in the sand" },
+            { "left": "bird", "right": "a nest in a tree" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own baby dinosaur coming out of its egg.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Egg That Turned to Stone",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-dinosaur-egg", "templateLabel": "The Egg That Turned to Stone", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "dinosaur-egg",
+          "notes": ["Even the biggest dinosaurs laid small eggs", "Eggs sat in nests on the ground", "Some parents sat on the nest", "Old eggs turned to stone", "We can hold one today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Egg That Turned to Stone",
+          "text": "Dinosaur eggs were not as big as you think. The biggest dinosaurs were longer than a bus. But their eggs were only about as big as a grapefruit. A baby came out small and grew and grew. Dinosaurs laid their eggs in nests on the ground. Some parents sat by the nest to keep the eggs warm and safe. When a dinosaur egg was buried in mud and sand, it could turn to stone. It took a very long time. That is how we find them today. We can hold a real dinosaur egg in our hands."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How big were the eggs of the biggest dinosaurs?",
+            "Where did dinosaurs lay their eggs?",
+            "What did some parents do at the nest?",
+            "What turned an old egg into stone?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about as big as a grapefruit",
+            "in nests on the ground",
+            "they sat by the nest to keep the eggs warm and safe",
+            "being buried in mud and sand for a very long time"
+          ]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": [
+            "A dinosaur laid its eggs in a ____.",
+            "The biggest dinosaurs laid eggs about as big as a ____.",
+            "A buried egg slowly turned to ____.",
+            "A baby dinosaur came out ____ and then grew."
+          ],
+          "wordBank": ["nest", "grapefruit", "stone", "small"],
+          "answers": ["nest", "grapefruit", "stone", "small"]
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the eggs in each row. Write how many in the box.",
+          "emoji": "🥚",
+          "items": ["6", "4", "7", "5"],
+          "answers": ["6", "4", "7", "5"]
+        },
+        { "kind": "draw", "prompt": "Draw a dinosaur nest. Put the eggs in it, and put a parent close by.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Egg That Turned to Stone",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-dinosaur-egg", "templateLabel": "The Egg That Turned to Stone", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "dinosaur-egg",
+          "notes": ["The shell is made of the same stuff as chalk", "Tiny holes called pores let air in", "Most eggs never became fossils", "Minerals turned the shell to stone", "You can still see the pores today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How an Egg Turns to Stone",
+          "text": "A dinosaur egg has a hard shell, just like a chicken egg. The shell is made of the same stuff as chalk. It is not solid, though. Look at it under a microscope and you find tiny holes called pores. Air moves in through the pores, so the baby inside can breathe. Most eggs never became fossils. A shell is thin, and thin things break. But sometimes a nest was covered fast by mud or sand from a flood. The eggs were sealed away from the air. Water trickled down through the sand for thousands of years, and it carried minerals with it. The minerals filled every tiny space in the shell. Slowly the shell turned to stone, and it kept its shape. That is why we can pick up a dinosaur egg today and see the very same pores the baby breathed through."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the shell of a dinosaur egg made of?",
+            "What are pores, and what do they do?",
+            "Name two things that had to happen for an egg to become a fossil.",
+            "Why do you think most dinosaur eggs never became fossils?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the same stuff as chalk",
+            "tiny holes in the shell that let air in so the baby can breathe",
+            "it had to be buried fast, and minerals in water had to fill the shell",
+            "(inference: shells are thin and break easily, and most were never buried fast enough)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How an Egg Turns to Stone", "The Best Way to Cook an Egg", "Birds of the Rocky Mountains"],
+          "answers": ["How an Egg Turns to Stone"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": [
+            "The tiny holes in an eggshell are called ____.",
+            "A nest had to be covered fast by mud or ____.",
+            "Water carried ____ down into the shell."
+          ],
+          "wordBank": ["pores", "sand", "minerals"],
+          "answers": ["pores", "sand", "minerals"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write two sentences. You have just dug up a dinosaur egg. What is the first thing you would want to find out about it, and why?",
+          "rows": 4
+        }
+      ]
+    },
+    "4": {
+      "title": "The Egg That Turned to Stone",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-dinosaur-egg", "templateLabel": "The Egg That Turned to Stone", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dinosaur-egg",
+          "notes": ["Maiasaura means good mother lizard", "Found at Egg Mountain, Montana, in 1978", "Nests were bowl shaped scoops in the dirt", "Babies had worn teeth but soft leg joints", "So a parent brought food to the nest"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Good Mother Lizard",
+          "text": "In 1978 two fossil hunters, Jack Horner and Bob Makela, walked into a small rock shop in Montana. The owner showed them a handful of bones no bigger than her fingernail. They were baby dinosaur bones. The hunters went looking for where they came from, and what they found was a whole neighborhood. Under a hill they now call Egg Mountain lay bowl shaped nests scooped into the dirt. The nests sat about one adult body length apart, close together but not touching, the way seabirds nest today. Inside were eggshells and babies. The babies were the clue. Their leg joints were still soft and unfinished, so they could not have walked far. But their teeth were worn down. Something had been feeding them. A baby that cannot walk but has worn teeth is a baby that stayed in the nest while a parent brought food back to it. That changed the picture. Before Egg Mountain, most people pictured a dinosaur laying her eggs and wandering off, the way many reptiles do. Horner named his new dinosaur Maiasaura, which means good mother lizard. The name was an argument. It said that this animal, nine meters long and long dead, had looked after its young."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What were the two clues in the baby bones, and what did each one tell Horner?",
+            "What did most people picture dinosaurs doing with their eggs before Egg Mountain?",
+            "The passage says the name was an argument. What does it mean by that?",
+            "Why does it matter that the nests sat about one adult body length apart?"
+          ],
+          "rows": 2,
+          "answers": [
+            "soft leg joints meant they could not walk far; worn teeth meant they had been eating, so food was brought to them",
+            "laying them and wandering off, the way many reptiles do",
+            "(inference: the name itself makes the claim that this dinosaur cared for its young)",
+            "(inference: they nested together in a group, close but with room for a full grown adult between nests)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Fossil nests in Montana showed that some dinosaurs fed and cared for their young",
+            "Montana has more rock shops than any other state",
+            "Jack Horner invented the first dinosaur museum"
+          ],
+          "answers": ["Fossil nests in Montana showed that some dinosaurs fed and cared for their young"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["neighborhood (in this passage) → ____", "unfinished (leg joints) → ____", "worn (teeth) → ____"],
+          "rows": 1,
+          "answers": [
+            "a group of nests built close together in one place",
+            "not yet fully formed or hardened",
+            "rubbed down from being used to eat"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a paragraph. Horner used two small clues to make a big claim about how dinosaurs behaved. Do you think two clues are enough? Give two reasons for your answer.",
+          "rows": 7
+        }
+      ]
+    },
+    "5": {
+      "title": "The Egg That Turned to Stone",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-dinosaur-egg", "templateLabel": "The Egg That Turned to Stone", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dinosaur-egg",
+          "notes": ["First famous dinosaur eggs: Gobi Desert, 1923", "Oviraptor philoceratops means egg seizer", "The name turned out to be wrong", "An embryo inside proved the eggs were its own", "An adult was found sitting on its nest", "The wrong name has to stay"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Egg Thief That Wasn't",
+          "text": "In the summer of 1923, an expedition crossed the Gobi Desert of Mongolia in a line of dusty cars. At a place of orange rock called the Flaming Cliffs, a young fossil hunter named George Olsen came back to camp and said he had found eggs. Nobody quite believed him. Then they looked. Lying in the sandstone were long, ridged eggs arranged in a ring, the first dinosaur eggs the world agreed to call dinosaur eggs. The obvious question was whose. The most common dinosaur at the site was Protoceratops, a sheep sized plant eater, so the eggs were filed under its name. And lying right on top of one nest was the crushed skull of a different animal, a small toothless creature nobody had seen before. The team drew a conclusion that made a good story. This stranger had been caught raiding the nest and killed in the act, perhaps by an angry parent. Henry Fairfield Osborn named it Oviraptor philoceratops, which means egg seizer, lover of ceratopsians. He did add a warning in his paper that the name might mislead people about what the animal actually ate. Nobody listened. The thief label stuck for seventy years. It was undone by one fossil. In the 1990s, researchers working in the Gobi found a curled embryo inside an egg of the same ridged type. It was not a Protoceratops. It was an oviraptorid. The eggs had never belonged to Protoceratops at all. Then came a second find: an adult oviraptorid preserved on top of a nest, feet tucked under, arms spread wide over the eggs in exactly the posture a brooding hen uses. The animal on the nest was not stealing the eggs. It was sitting on them. They were its own. The name is stuck now, because scientific names cannot be swapped out when we learn better, so a devoted parent will be called the egg seizer forever."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why did the team assume the eggs belonged to Protoceratops? Point to the detail in the passage.",
+            "What two fossils undid the thief story, and what did each one prove?",
+            "Quote the exact phrase the author uses to describe how the nesting adult held its arms.",
+            "Is this passage written to inform, persuade, or entertain? Give two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: eggs found in 1923 were blamed on a thief; an embryo and a brooding adult later proved the thief was the parent)",
+            "it was the most common dinosaur at the site",
+            "an embryo inside an egg of the same type proved the eggs were oviraptorid; an adult on a nest proved it was brooding, not raiding",
+            "quote: arms spread wide over the eggs",
+            "(inform, told as a story: it gives dates, names, and findings, but shapes them into a reversal)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["expedition → ____", "embryo → ____", "brooding → ____", "seizer → ____"],
+          "rows": 1,
+          "answers": [
+            "a long organized trip made to explore or search for something",
+            "an unborn animal still developing inside an egg",
+            "sitting on eggs to keep them warm and safe",
+            "one who grabs or takes something"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the team drew a conclusion that made a good story. What is the author suggesting about how the mistake happened?",
+            "Osborn warned that the name might mislead people, and the passage says nobody listened. Why do you think a good story is harder to correct than a plain one?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(that they reached for the most dramatic explanation rather than the most careful one)",
+            "(opinion: a vivid story spreads and sticks, and the name repeated the claim every time anyone used it)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a short opinion paragraph. Scientific names cannot be changed once they are given, even when they turn out to be wrong. Should that rule stay? Take a position and support it with two reasons.",
+          "rows": 8
+        }
+      ]
+    },
+    "6": {
+      "title": "The Egg That Turned to Stone",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-dinosaur-egg", "templateLabel": "The Egg That Turned to Stone", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dinosaur-egg",
+          "notes": ["A titanosaur 30 meters long laid a grapefruit sized egg", "Shell strength fights gas exchange", "Some early dinosaur eggs were soft and leathery", "Oviraptorid eggs were blue green and speckled", "Protoceratops sat in the egg about 83 days", "Birds are dinosaurs, so bird eggs are dinosaur eggs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Small Eggs of Enormous Animals",
+          "text": "A titanosaur could reach thirty meters from nose to tail and weigh as much as ten elephants. Its egg was about the size of a grapefruit. That mismatch is not a gap in the fossil record. It is a rule, and the rule is written in the shell. An eggshell has two jobs that fight each other. It has to be strong enough to hold the weight above it without collapsing, and porous enough to let oxygen seep in to the embryo and let carbon dioxide seep out. Make the egg bigger and the shell has to get thicker to carry the load. But a thicker shell is a longer tunnel for every gas molecule to cross, and a harder wall for a hatchling to break through from the inside with nothing but its own head. Past a certain size the two jobs stop being compatible. The baby suffocates, or it cannot get out. That ceiling is why no known dinosaur egg is longer than your arm from elbow to fingertips, and why the biggest of those belonged not to a giant sauropod but to a feathered oviraptorosaur. The largest animals that ever walked laid eggs a child could hold. So a titanosaur hatched no bigger than a house cat and grew to the size of a house. It did that with no evidence that any parent stayed to watch, in a nesting field like the one at Auca Mahuevo in Argentina, where thousands of eggs lie in layer after layer, some still holding the pebbled impression of embryo skin. For a long time paleontologists assumed every dinosaur egg was hard, like a chicken's. In 2020 a team looked closely at eggs from Protoceratops and from Mussaurus and found no hard mineral shell at all, only the chemical signature of something soft and leathery, closer to a turtle's egg. If the earliest dinosaur eggs were soft, they would almost never fossilize, which neatly explains a gap in the record that had bothered people for a century. Hard shells, it seems, were invented more than once. Some of those hard shells were not white. Researchers hunting for pigment molecules in oviraptorid eggshell found protoporphyrin and biliverdin, the same two compounds that color a robin's egg. The eggs were blue green and speckled. You do not camouflage an egg you plan to bury. Color is evidence of an open nest. Then there is the question of time. Growth lines run through fossil embryo teeth the way rings run through a tree, one line per day, and counting them gives an incubation length. Protoceratops needed about three months inside the egg. A duck billed Hypacrosaurus needed about six. Birds hatch far faster than that. These animals were sitting on a slow, reptile paced clock, and a nest that has to survive half a year is a nest with a great deal that can go wrong. The strangest find is the smallest. In 2021 an oviraptorosaur embryo from southern China, nicknamed Baby Yingliang, was described still curled inside its egg with its head tucked down against its body. Modern bird chicks do exactly this in the days before they hatch, and a chick that fails to tuck is far more likely to die trying. The behavior is older than birds. Which is the last thing worth saying. Birds are dinosaurs, not relatives of dinosaurs. The blue green shell, the brooding parent, the tucked head: none of it vanished. There is a dinosaur egg in a tree outside, right now."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Quote the sentence in which the author states the shell's central problem, then explain that problem in your own words.",
+            "Explain why the largest dinosaur eggs did not belong to the largest dinosaurs. Cite the evidence.",
+            "The author writes, You do not camouflage an egg you plan to bury. What is that sentence doing, and is the conclusion it reaches fair?",
+            "Identify where the passage stops explaining and starts arguing. How does the author signal the shift?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "quote: An eggshell has two jobs that fight each other. (strength and breathing pull in opposite directions)",
+            "(past a certain size the shell is too thick to breathe through or break out of; cite: The largest animals that ever walked laid eggs a child could hold)",
+            "(it turns a chemical finding into a claim about behavior; reasonable as an inference, but it rests on pigment alone)",
+            "(around the pigment paragraph and the ending; short flat sentences and direct address to the reader)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["porous → ____", "incubation → ____", "pigment → ____", "chemical signature → ____"],
+          "rows": 2,
+          "answers": [
+            "full of tiny holes that let gas or liquid pass through",
+            "the time an embryo spends developing inside the egg before it hatches",
+            "a molecule that gives something its color",
+            "a distinctive chemical trace that shows what something was made of"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The incubation figures come from counting daily growth lines in fossil teeth. Explain why a scientist would trust that method, and name one thing that could make the count wrong.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(one line forms per day, like a tree ring, so the count is a direct record; a worn, broken, or incomplete tooth would lose lines and shorten the count)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A dinosaur egg tells us more about how dinosaurs lived than a dinosaur skeleton does. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

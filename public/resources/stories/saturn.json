@@ -1,0 +1,313 @@
+{
+  "key": "saturn",
+  "title": "The Planet That Would Float",
+  "blurb": "Saturn is lighter than water, wears rings made of billions of ice chunks, and hides a six-sided storm at its pole.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Planet That Would Float",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-saturn", "templateLabel": "The Planet That Would Float", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the rings with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "saturn",
+          "notes": ["It has rings made of ice", "It is a big ball of gas", "It spins around very fast", "You cannot stand on it", "It has lots and lots of moons"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is Saturn. Saturn is a planet. It is far, far away in the sky. Saturn has rings around it. The rings are made of ice. Some bits of ice are tiny. Some bits are big as a house. They all spin around Saturn. Saturn is huge. But Saturn is not made of rock. It is made of gas, like the air in a balloon. Saturn spins very fast."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the moons in each row. Write how many in the box.",
+          "emoji": "🌕",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ring    spin" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it belongs.",
+          "pairs": [
+            { "left": "Saturn", "right": "space" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw Saturn. Do not forget the rings going all the way around.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Planet That Would Float",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-saturn", "templateLabel": "The Planet That Would Float", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "saturn",
+          "notes": ["Its rings are made of ice", "It is the sixth planet from the Sun", "It has more moons than any other planet", "One day there is only about 11 hours", "It is so light it would float in water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Saturn and Its Rings",
+          "text": "Saturn is the sixth planet from the Sun. It is a long way from us. Sunlight takes more than an hour to get there. Saturn is a ball of gas. There is no ground on Saturn. If you went there, you would have nothing to stand on. The best part is the rings. Saturn has thousands of rings around its middle. They are made of ice and dust. Some pieces are as small as a crumb. Some are as big as a car. They all race around Saturn together. The rings are very wide. They are also very thin, like a sheet of paper."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Which planet from the Sun is Saturn?", "What are Saturn's rings made of?", "Why could you not stand on Saturn?"],
+          "rows": 2,
+          "answers": ["the sixth planet", "ice and dust", "because there is no ground, it is a ball of gas"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Saturn is a ball of ____.", "The rings are made of ____.", "There is no ____ on Saturn.", "The rings are wide but very ____."],
+          "wordBank": ["gas", "ice", "ground", "thin"],
+          "answers": ["gas", "ice", "ground", "thin"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each word to what it means.",
+          "pairs": [
+            { "left": "planet", "right": "a big world that goes around a star" },
+            { "left": "ring", "right": "a circle that goes all the way around" },
+            { "left": "gas", "right": "not solid, like air" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw Saturn with its rings. Add a small moon going past.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Planet That Would Float",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-saturn", "templateLabel": "The Planet That Would Float", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "saturn",
+          "notes": ["Sixth planet from the Sun", "Less dense than water, so it would float", "The rings are billions of chunks of ice", "One year there lasts about 29 Earth years", "One day there is only about 10 and a half hours"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Planet You Could Float in a Bathtub",
+          "text": "Saturn is the sixth planet from the Sun, and the second biggest in our solar system. You could line up more than nine Earths across its face. But size is not the strangest thing about it. Saturn is light. It is made almost entirely of hydrogen and helium, two of the lightest gases there are. Scientists have worked out that Saturn is less dense than water. If you could find a bathtub big enough, Saturn would float in it. Then there are the rings. From far away they look like smooth hoops of light. They are not solid at all. The rings are made of billions of chunks of ice, from grains of dust to boulders bigger than a bus. Each chunk is its own tiny moon, going around Saturn on its own path. The rings stretch about 170,000 miles across, but in most places they are only about ten yards thick. Imagine a sheet of paper the size of a city. That is the shape of Saturn's rings."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What two gases is Saturn mostly made of?",
+            "Why would Saturn float in a bathtub big enough to hold it?",
+            "The rings look like smooth hoops. What are they really made of?",
+            "Why do you think the rings look solid from far away, even though they are not?"
+          ],
+          "rows": 2,
+          "answers": [
+            "hydrogen and helium",
+            "because it is less dense than water",
+            "billions of chunks of ice, from dust grains to boulders",
+            "(inference: the chunks are packed close together and too far away for us to see the gaps)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Planet You Could Float in a Bathtub", "How to Build a Telescope at Home", "The Hottest Planet in the Solar System"],
+          "answers": ["The Planet You Could Float in a Bathtub"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Saturn is the ____ planet from the Sun.", "Saturn is less ____ than water.", "The rings are made of billions of chunks of ____."],
+          "wordBank": ["sixth", "dense", "ice"],
+          "answers": ["sixth", "dense", "ice"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about Saturn, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Planet That Would Float",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-saturn", "templateLabel": "The Planet That Would Float", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "saturn",
+          "notes": ["Made almost entirely of hydrogen and helium", "No solid surface anywhere on it", "Rings about 170,000 miles wide, about 10 yards thick", "A six-sided storm sits over the north pole", "The Cassini spacecraft studied it from 2004 to 2017", "The rings may be younger than the dinosaurs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A World Without a Floor",
+          "text": "Saturn is a world without a floor. It is the second largest planet in the solar system, wide enough to swallow more than seven hundred Earths, and yet it is made of almost nothing solid. Hydrogen and helium, the two lightest elements in the universe, make up nearly all of it. Squeeze down through its yellow cloud tops and the gas around you thickens, and thickens, until it behaves like a liquid. There is no line where sky ends and ground begins. There is no ground. Because Saturn is so light for its size, it is less dense than water. Drop it into an ocean large enough and it would bob on the surface like a cork. The rings look solid from Earth, but they are not one object. They are billions of separate pieces of water ice, ranging from specks of dust to lumps the size of a house. Each piece orbits Saturn by itself. Together they form a disk about 170,000 miles wide and, in most places, only about ten yards thick. Scaled down to the width of a football field, the rings would be far thinner than a sheet of paper. Nobody is certain how old they are. For a long time people assumed the rings formed with the planet, four and a half billion years ago. Measurements from the Cassini spacecraft suggest something stranger. The rings may be only a hundred million years old or less, which means dinosaurs walked on Earth beneath a ringless Saturn. Cassini also found that the rings are slowly raining down into the planet. They are not permanent. We may simply have arrived at the right moment to see them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says Saturn is a world without a floor. Explain what that means in your own words.",
+            "Why is Saturn less dense than water when it is so enormous?",
+            "What did Cassini find that changed what scientists thought about the age of the rings?",
+            "If the rings are raining into the planet, what does that suggest about people who look at Saturn in a hundred million years?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(there is no solid surface; the gas just gets thicker with no line where ground starts)",
+            "it is made of hydrogen and helium, the two lightest elements, so there is very little mass packed into a huge space",
+            "measurements suggesting the rings may be only about a hundred million years old, not four and a half billion",
+            "(inference: they may see Saturn with no rings at all)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Saturn is a huge planet with no surface, and its famous rings are thin, young, and temporary",
+            "Saturn is the closest planet to Earth and is easy to visit",
+            "Dinosaurs were the first creatures to study the rings of Saturn"
+          ],
+          "answers": ["Saturn is a huge planet with no surface, and its famous rings are thin, young, and temporary"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["dense → ____", "orbits → ____", "permanent → ____"],
+          "rows": 1,
+          "answers": ["how much stuff is packed into a space", "travels around something in a curved path", "lasting forever, never ending"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: Saturn's rings will not last forever. Does knowing that make them more interesting or less interesting to you? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Planet That Would Float",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-saturn", "templateLabel": "The Planet That Would Float", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "saturn",
+          "notes": ["Galileo saw the rings in 1610 and thought they were handles", "Huygens worked out they were a flat disk in 1655", "Density about 0.69, lower than water", "Winds of more than 1,000 miles per hour", "A hexagon jet stream circles the north pole", "Rings may be only 10 to 100 million years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ornament We Arrived in Time to See",
+          "text": "Galileo Galilei turned his telescope toward Saturn in 1610 and could not make sense of what he saw. The planet appeared to have handles, or ears, or perhaps two smaller companions pressed against its sides. He drew them carefully. Two years later he looked again and they were gone. Saturn had, in his words, swallowed its own children. Galileo never learned that he had been staring at a ring system tilted edge-on to his line of sight, thin enough to vanish. It took another forty-five years and a better telescope before Christiaan Huygens worked out the truth: Saturn is circled by a flat, solid-looking disk that touches the planet nowhere. Huygens was almost right. The disk is not solid. Saturn's rings are made of billions of chunks of water ice, from dust grains to boulders, each one orbiting the planet as an independent moon. The whole system spans roughly 170,000 miles yet averages only about ten yards from top to bottom. Proportionally, it is one of the flattest structures known. The planet inside the rings is stranger than the rings themselves. Saturn is nearly all hydrogen and helium. It has no surface. Its density is lower than water, the only planet in the solar system of which that is true. Its winds reach more than a thousand miles per hour. At its north pole sits a hexagon, a six-sided jet stream almost twenty thousand miles across, holding its corners steady for decades. Nobody built it. It is what happens when a fluid rotating at the right speed meets a faster stream inside it. Then the Cassini spacecraft, which orbited Saturn from 2004 to 2017, weighed the rings. The result unsettled people. Light, young rings. The best estimates now put them somewhere between ten and a hundred million years old, a blink beside the planet's four and a half billion. Worse, Cassini watched the ice draining steadily into Saturn's atmosphere, a slow fall astronomers call ring rain. On that budget the rings have perhaps a hundred million years left. Saturn has almost certainly spent most of its life bare, and will spend most of the rest bare too. The rings are not a feature of the planet. They are an event. We happen to be alive during it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why did Saturn's handles vanish between 1610 and 1612? Quote the phrase the passage uses to explain it.",
+            "Explain why low ring mass led scientists to think the rings are young.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage ends by calling the rings an event rather than a feature. Explain the difference the author is drawing."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering Saturn's low density and no surface, plus the thin, young, temporary rings)",
+            "the rings were turned edge-on and are extremely thin; quote: tilted edge-on to his line of sight, thin enough to vanish",
+            "(light rings mean less material; the passage links the light measurement to the estimate of ten to a hundred million years)",
+            "(inform, with detail: it defines terms and gives measurements and dates; the closing lines lean persuasive)",
+            "(a feature belongs to the planet permanently; an event is a passing stage that starts and ends)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["density → ____", "proportionally → ____", "ring rain → ____", "hexagon → ____"],
+          "rows": 1,
+          "answers": ["how much mass is packed into a given amount of space", "compared to its overall size rather than in plain numbers", "ring ice falling steadily into Saturn's atmosphere", "a shape with six sides"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says nobody built the hexagon. Why include that sentence at all?",
+            "Galileo drew what he saw and got the explanation wrong. Was he a bad scientist? Explain your reasoning."
+          ],
+          "rows": 3,
+          "answers": ["(to rule out the idea that a neat shape needs a designer; it forms naturally from moving fluid)", "(opinion: he recorded honestly with the tools he had; better telescopes, not better character, produced the answer)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does it matter that Saturn's rings are temporary? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Planet That Would Float",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-saturn", "templateLabel": "The Planet That Would Float", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "saturn",
+          "notes": ["Second largest planet, over 700 Earths by volume", "Density about 0.69 g/cm3, the only planet less dense than water", "Rings roughly 170,000 miles wide, about 10 yards thick", "Hexagonal polar jet stream nearly 20,000 miles across", "Titan has methane lakes and a thick nitrogen atmosphere", "Enceladus vents water and organics from a hidden ocean", "Cassini burned up in Saturn on September 15, 2017"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Spacecraft That Chose to Burn",
+          "text": "On September 15, 2017, a spacecraft the size of a school bus aimed itself at Saturn and gave up its own ability to survive. Cassini had orbited the planet for thirteen years. It was still working. Its cameras were fine, its instruments were fine, and mission control destroyed it on purpose. Understanding why means understanding what Cassini found. Saturn itself is a fair candidate for the strangest object in the solar system. It is the second largest planet, with room inside for more than seven hundred Earths, and it is made almost entirely of hydrogen and helium. It has no surface to land on. Its density is lower than that of water, which makes it the only planet that would bob rather than sink in a sufficiently enormous ocean. Its equatorial winds run past a thousand miles per hour. Over its north pole a jet stream has arranged itself into a hexagon nearly twenty thousand miles wide, six clean sides that have held their shape for at least the forty years humans have been watching. The rings are the famous part, and Cassini rewrote them. Seen from Earth they look like a smooth disk. They are not. They are billions of independent chunks of nearly pure water ice, ranging from grains of dust to boulders, each on its own orbit, packed so tightly that the whole crowd behaves like a fluid. The system spans about 170,000 miles and averages roughly ten yards in thickness. Cassini's final maneuver, twenty-two dives through the narrow gap between the planet and the innermost ring, let it feel the pull of the rings directly and weigh them. They came out light. Low mass implies youth, because ring ice darkens as it gathers dust over time, and this ice is still bright. Current estimates place the rings between ten and a hundred million years old. Saturn is four and a half billion. The rings are also draining away, pulled down into the atmosphere as ring rain fast enough to empty them within another hundred million years. The ornament we treat as permanent is a temporary condition, and we arrived during it. Then there are the moons, and they explain the ending. Titan, the largest, wears a thick nitrogen atmosphere and holds rivers and lakes of liquid methane, the only body besides Earth with stable liquid on its surface. Enceladus, far smaller, sprays plumes of water and simple organic molecules from cracks near its south pole, evidence of a salty ocean under its ice shell. Cassini flew through those plumes and tasted them. That discovery sealed Cassini's fate. The spacecraft was running out of fuel, and an uncontrolled derelict eventually crashes somewhere. If a single Earth microbe had survived the launch and the journey and later landed in the ocean of Enceladus, an unrepeatable experiment would be ruined, and worse, any future discovery of life there could never be trusted. So the engineers chose to burn the spacecraft in Saturn's atmosphere, where nothing could be contaminated. Cassini transmitted data until friction tore it apart. The final signal took eighty-three minutes to cross the distance, arriving from a machine that had already been gone for over an hour."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the reasoning chain that links the weight of the rings to their age. Cite the evidence.",
+            "Why was Cassini deliberately destroyed while still fully functional? Cite the phrase that names the risk.",
+            "Identify the structural turn in the passage: where does it pivot from describing Saturn to explaining the ending, and how does the author signal it?",
+            "The passage says the rings are a temporary condition, and we arrived during it. Analyze what that sentence is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering Saturn's oddities, the young rings, the living moons, and the chosen destruction of the probe)",
+            "(light rings mean little material, and fresh ice has not had time to darken; cite: Low mass implies youth, because ring ice darkens as it gathers dust over time, and this ice is still bright)",
+            "(to protect Enceladus from contamination; cite: an unrepeatable experiment would be ruined, and worse, any future discovery of life there could never be trusted)",
+            "(at Then there are the moons, and they explain the ending; a short sentence promises a payoff and redirects the reader)",
+            "(it reframes the rings from a fixed fact to a moment in time and makes the reader a lucky witness; earned by the ring-age estimates and the ring rain evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["derelict → ____", "contaminated → ____", "unrepeatable → ____", "equatorial → ____"],
+          "rows": 2,
+          "answers": [
+            "an abandoned craft left without control",
+            "made impure by something introduced from outside",
+            "impossible to do a second time",
+            "belonging to the middle band of a planet, halfway between the poles"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that mission control destroyed it on purpose before giving the reason. Explain why the order of those two things matters to the reader.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(withholding the reason creates a question the reader wants resolved, so the science that follows gets read)", "(student question plus a credible source type such as a NASA mission report or a peer-reviewed planetary science journal)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Destroying a working spacecraft to protect a moon we may never visit was a waste. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "key": "corn",
+  "title": "The Grass That Cannot Plant Itself",
+  "blurb": "Corn is a plant people built out of a scruffy wild grass, and it can no longer survive a single season without us.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Grass That Cannot Plant Itself",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-corn", "templateLabel": "The Grass That Cannot Plant Itself", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the little yellow seeds." },
+        {
+          "kind": "image",
+          "imageKey": "corn",
+          "notes": ["The seeds are called kernels", "The green coat is called a husk", "It grows on a tall stalk", "The soft threads on top are called silk"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is corn. It grows on a tall green plant. The plant is taller than a grown up. Corn grows in a long bunch called a cob. Little yellow seeds sit on the cob. We call them kernels. They sit in neat rows, like teeth. A green coat wraps around the cob. The coat is called a husk. Corn is sweet. Corn is good to eat."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the kernels in each row. Write how many in the box.",
+          "emoji": "🌽",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "corn    husk" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each food to where it grows.",
+          "pairs": [
+            { "left": "corn", "right": "a tall stalk" },
+            { "left": "apple", "right": "a tree" },
+            { "left": "carrot", "right": "under the ground" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own cob of corn. Give it lots of rows of kernels.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Grass That Cannot Plant Itself",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-corn", "templateLabel": "The Grass That Cannot Plant Itself", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "corn",
+          "notes": ["The soft threads are called silk", "One thread grows from every kernel", "The yellow dust is called pollen", "Pollen falls from the top of the plant", "One cob can hold 800 kernels"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Thread for Every Seed",
+          "text": "Look at the top of an ear of corn. You will see soft threads. People call them silk. Here is the secret. Every single thread grows from one kernel. Dust called pollen falls from the top of the plant. A speck of pollen must land on a thread. Then that thread feeds the kernel, and the kernel grows fat. If a thread misses its speck of pollen, that kernel stays flat and empty. One cob can hold eight hundred kernels. So eight hundred threads each caught their own speck of dust. The next time you pull the husk off a cob, look for the gaps. Every gap is one thread that missed."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are the soft threads called?", "How many kernels does one thread belong to?", "What must land on a thread?", "What happens to a kernel if its thread misses?"],
+          "rows": 2,
+          "answers": ["they are called silk", "one kernel", "a speck of pollen", "it stays flat and empty"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The soft threads are called ____.", "Yellow dust called ____ falls from the top.", "A cob can hold eight hundred ____.", "A kernel with no pollen stays ____."],
+          "wordBank": ["silk", "pollen", "kernels", "empty"],
+          "answers": ["silk", "pollen", "kernels", "empty"]
+        },
+        { "kind": "draw", "prompt": "Draw a cob of corn with its husk pulled back. Add the silky threads on top.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Grass That Cannot Plant Itself",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-corn", "templateLabel": "The Grass That Cannot Plant Itself", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "corn",
+          "notes": ["Corn's wild ancestor is a grass called teosinte", "A teosinte ear is the size of your little finger", "Farmers in Mexico changed it over thousands of years", "Corn kernels are stuck on the cob", "Corn cannot plant its own seeds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Plant People Made",
+          "text": "Corn did not always exist. Nine thousand years ago, in the hills of southern Mexico, there was only a scruffy wild grass called teosinte. Teosinte does not look like corn at all. Its ear is about the size of your little finger. It holds five or ten seeds, and each seed is locked inside a shell so hard you could break a tooth on it. Farmers there did something patient. Every harvest, they saved seed from the plants they liked best. The ones with more seeds. The ones with softer shells. The ones that held on to their seeds instead of scattering them. Then they planted those. They did it again the next year, and the next, for thousands of years. Slowly the grass changed. The ear grew longer. The hard shells softened into the thin skin on a kernel. The seeds stopped falling off. What came out the other end was corn. Here is the strange part. Corn can no longer plant itself. Its seeds are trapped on the cob, wrapped tight in a husk. If nobody pulls them off and puts them in the ground, corn is finished. People made corn, and corn now needs people."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the name of the wild grass that corn came from?",
+            "How big is a teosinte ear?",
+            "What did the farmers do every harvest to change the plant?",
+            "Why do you think a plant that cannot plant itself is still grown everywhere?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is called teosinte",
+            "about the size of your little finger",
+            "they saved seed from the plants they liked best and planted it again",
+            "(inference: people want to eat it, so people keep planting it for the plant)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Plant People Made", "How to Cook Corn on the Cob", "The Tallest Grass in the World"],
+          "answers": ["The Plant People Made"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Corn came from a wild grass called ____.", "Teosinte seeds were locked inside a hard ____.", "Corn seeds are wrapped tight in a ____."],
+          "wordBank": ["teosinte", "shell", "husk"],
+          "answers": ["teosinte", "shell", "husk"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about where corn came from, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Grass That Cannot Plant Itself",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-corn", "templateLabel": "The Grass That Cannot Plant Itself", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "corn",
+          "notes": ["Corn holds a vitamin called niacin, locked up tight", "Soaking corn in ash water sets the niacin free", "The process is called nixtamalization", "It is why tortillas exist", "Corn eaten plain caused a disease called pellagra"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Trick That Had to Travel With the Corn",
+          "text": "Corn will fill a stomach, but corn alone will not keep a person healthy. It carries a vitamin called niacin, and it carries it locked up. The niacin is bound so tightly to the grain that a human body cannot pull it loose. Eat corn day after day with little else, and the body starves for niacin even while the plate is full. The people of Mesoamerica solved this problem more than three thousand years ago, long before anyone knew what a vitamin was. They boiled and soaked their corn in water mixed with wood ash or crushed limestone. That makes the water alkaline, the opposite of sour. The alkaline water does three things. It loosens the tough skin off each kernel. It softens the grain so it can be ground into smooth dough. And, without anyone planning it, it snaps the bond holding the niacin, setting the vitamin free for the body to use. The process has a name: nixtamalization. It is the reason tortillas exist. When Spanish ships carried corn back across the Atlantic in the 1500s, the grain traveled and the trick did not. Farmers in Europe, Africa, and later the American South grew corn and ate it plain. They got a disease called pellagra: rough skin, upset stomach, confusion, and often death. Over the first half of the twentieth century, pellagra killed roughly a hundred thousand people in the United States. Doctors chased germs for years. The answer had been sitting in Mexican kitchens the whole time. Corn did not change on that voyage. What got lost was the knowledge that came with it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what problem does plain corn cause for a person who eats it every day?",
+            "Name the three things the alkaline water does to the corn.",
+            "The passage says the grain traveled and the trick did not. Explain what that means.",
+            "Why do you think doctors spent years looking for a germ instead of looking at food?"
+          ],
+          "rows": 2,
+          "answers": [
+            "its niacin is locked up, so the body starves for the vitamin even on a full plate",
+            "it loosens the skin off each kernel, softens the grain for grinding, and frees the niacin",
+            "the corn seeds crossed the ocean but nobody carried the ash-water method with them",
+            "(inference: diseases were expected to be caused by germs, and nobody knew vitamins existed yet)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Corn needs an old cooking method to be safe as a daily food, and moving the crop without the method caused disease",
+            "Tortillas taste better than any other bread",
+            "Spanish ships were the fastest ships of the 1500s"
+          ],
+          "answers": ["Corn needs an old cooking method to be safe as a daily food, and moving the crop without the method caused disease"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["alkaline → ____", "nixtamalization → ____", "pellagra → ____"],
+          "rows": 1,
+          "answers": [
+            "the opposite of sour; the kind of water made by wood ash or limestone",
+            "soaking and boiling corn in alkaline water to free its niacin and soften it",
+            "the disease people get from eating corn without enough niacin"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: when people share a food with another country, should they share the way it is cooked too? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Grass That Cannot Plant Itself",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-corn", "templateLabel": "The Grass That Cannot Plant Itself", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "corn",
+          "notes": ["Corn's scientific name is Zea mays", "Barbara McClintock read genetics in kernel color", "She found that some genes can move", "Moving genes are called transposons", "About half of human DNA is made of them", "She won the Nobel Prize in 1983, alone"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Woman Who Read the Kernels",
+          "text": "Some ears of corn come out a mess of color. One kernel is deep purple, its neighbor is pale yellow, a third is yellow with a purple speck, a fourth is streaked like paint pulled through water. For most of history that was simply pretty. To Barbara McClintock it was a message. McClintock spent her career in a cornfield at Cold Spring Harbor, New York, growing maize, pollinating it by hand, and then sitting with the ears and reading them. In the 1940s the accepted picture of a gene was fixed and orderly: genes sat on chromosomes in a set order, like beads on a string, and stayed put. That picture explained a lot. It did not explain her kernels. McClintock kept careful family records for her plants, and the color patterns refused to behave. A single kernel would carry a spot of color that no rule allowed. Streaks appeared in patterns that were random in one way and precise in another. She worked backward from the patterns to the only explanation that fit: certain stretches of DNA were not fixed at all. They could cut themselves out of one spot on a chromosome and paste themselves into another. When such a piece landed in the middle of the gene for purple pigment, it broke the gene and the kernel went pale. When it jumped back out, the gene worked again and a spot of purple appeared. The speckles on the cob were a record of genes moving. She published this in 1950. The response was mostly silence, and some of it was worse than silence. Her conclusion sounded impossible, and it rested on maize genetics that few of her colleagues could follow. She stopped presenting the work publicly and kept growing corn. Then the tools caught up. In the 1970s, biologists working on bacteria found the same thing: pieces of DNA that move. Transposons, they called them. They turned out to be everywhere, including in us. Roughly half of the human genome is made of these restless elements and their broken remains. In 1983, at eighty-one, Barbara McClintock received the Nobel Prize, alone, for a discovery she had made more than thirty years earlier by looking hard at corn."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What was the accepted picture of a gene in the 1940s? Quote the exact comparison the passage uses.",
+            "Explain how a speckled kernel is evidence that a gene moved.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "The passage says the response was mostly silence, and some of it was worse than silence. What is that sentence telling you without saying it directly?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the kernel patterns, jumping genes, the silence, and the 1983 Nobel Prize)",
+            "genes were thought to sit in a fixed order and stay put; quote: like beads on a string",
+            "a piece of DNA broke the purple pigment gene and the kernel went pale, then jumped out and a purple spot appeared",
+            "(inform, with detail: it defines transposons and gives dates and evidence; the ending is shaped for feeling)",
+            "(inference: her colleagues did not just ignore her, some of them dismissed or mocked the work)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["chromosome → ____", "pigment → ____", "transposon → ____", "restless → ____"],
+          "rows": 1,
+          "answers": [
+            "the structure that carries genes in a set order",
+            "the substance that gives a kernel its color",
+            "a piece of DNA that can cut itself out and paste itself somewhere else",
+            "unable to stay still; always moving"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why do you think it took bacteria research, and not her corn, to make other scientists believe her?",
+            "The passage ends with the words looking hard at corn. Why is that a good place to end?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: more scientists worked on bacteria and could check the result themselves; few could follow maize genetics)",
+            "(it returns to the ordinary plant she started with and makes the point that patient looking was the whole method)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when a scientist's evidence is solid but nobody believes it, whose fault is that? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Grass That Cannot Plant Itself",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-corn", "templateLabel": "The Grass That Cannot Plant Itself", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "corn",
+          "notes": ["Zea mays, domesticated from teosinte about 9,000 years ago", "About 1.2 billion tons grown a year, more than wheat or rice", "Runs C4 photosynthesis, built for heat and glare", "Hybrid seed does not breed true, so farmers rebuy each year", "Most US corn becomes animal feed, ethanol, and sweetener", "Southern corn leaf blight took 15 percent of the US crop in 1970"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bargain: How a Mexican Grass Took Over the World",
+          "text": "Judge a plant the way a plant would judge itself, by how much of the planet it occupies, and corn is winning. Roughly 1.2 billion tons of it come out of the world's fields every year, more than wheat, more than rice. It grows on every continent except Antarctica. Nine thousand years ago the entire species was a patch of scruffy grass in one river valley in southern Mexico. That is an extraordinary run for an organism that cannot sow a single seed of its own. Start with the machinery, because corn is a superb machine. Most plants run photosynthesis on a pathway called C3, which has an old flaw: the enzyme that grabs carbon dioxide will also grab oxygen by mistake, and on a hot bright day it makes that mistake constantly, wasting energy. Corn uses a rebuilt system called C4. It concentrates carbon dioxide inside a ring of special cells before the enzyme ever sees it, so the enzyme almost never grabs the wrong molecule. The payoff arrives exactly when other plants struggle: heat, glare, long summer days. A corn plant can put on inches in a day. This is why a July cornfield feels less like a garden and more like a factory floor. Then there is the deal itself. Corn traded away its independence. Wild teosinte scatters its seeds. Corn cannot. Its kernels are welded to a cob and sealed inside a husk, and if an ear drops to the ground the seedlings come up in a suffocating clump and mostly die. Every corn plant alive descends from a seed a human being chose, pulled off a cob, and pushed into soil. In exchange, humans clear away its competitors, feed it, water it, and plant it across an area larger than most countries. It is one of the most lopsided and most successful bargains any two species have ever struck. The bargain kept deepening. In the 1920s and 1930s, American breeders commercialized hybrid corn: cross two carefully inbred lines and the offspring come out dramatically more vigorous than either parent. Yields climbed and kept climbing. But that hybrid vigor does not survive to the next generation, so saving seed from your own crop stopped making sense. Farmers began buying new seed every single year. A plant that already needed people now needed a seed industry. Look at where the crop actually goes and the word food starts to wobble. Very little of the American corn harvest is eaten as corn. The great majority is field corn, and it is split roughly between livestock feed and ethanol for fuel tanks, with the remainder pulled apart into starch, oil, sweetener, and industrial ingredients. Corn arrives in a supermarket disguised: as the syrup in a soda, the fat a chip was fried in, the animal a burger used to be, the coating on a paper cup. Chemists can turn its starch into plastic. A crop bred by hand in Mexican foothills now sits inside the fuel supply of a continent. Every part of this is fragile in the same way. A field of hybrid corn is a field of near-identical plants, which means a disease that defeats one plant has defeated all of them. In 1970 a fungus called southern corn leaf blight found a weakness shared by most American hybrids and destroyed about fifteen percent of the national harvest in a single season. Breeders swapped the vulnerable genetics out and the crop recovered. The lesson did not leave. Uniformity is what makes the yields, and uniformity is what makes the risk. Corn cannot survive without us. It is fair to ask, standing in a field that runs to the horizon, how far the reverse has come."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the advantage C4 photosynthesis gives corn, and cite the exact phrase the passage uses to describe a July cornfield.",
+            "The author calls the relationship between corn and people a bargain. Lay out what each side gives and what each side gets. Cite the exact phrase the author uses to judge the deal.",
+            "Why did hybrid corn end the practice of farmers saving their own seed? Explain the chain of cause and effect.",
+            "Identify the author's move in the final sentence. What claim is being suggested rather than stated, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it concentrates carbon dioxide so the enzyme does not waste energy grabbing oxygen, which pays off in heat and bright light; quote: less like a garden and more like a factory floor)",
+            "(corn gives up seed dispersal and independence and gains land, water and protection; people give labor and gain an enormous food and fuel supply; quote: the most lopsided and most successful bargains any two species have ever struck)",
+            "(hybrid vigor does not carry to the next generation, so saved seed performs worse, so farmers must rebuy every year, which hands control to a seed industry)",
+            "(it suggests people now depend on corn as much as corn depends on people; earned by the ethanol, feed, sweetener and industrial-ingredient evidence, though the passage never proves the dependence is equal)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["domesticated → ____", "vigor → ____", "uniformity → ____", "monoculture → ____"],
+          "rows": 2,
+          "answers": [
+            "changed by generations of human selection until a wild species suits people",
+            "strength and fast healthy growth",
+            "the state of being all the same",
+            "a field planted with a single, nearly identical crop"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says uniformity is what makes the yields, and uniformity is what makes the risk. Explain why a farmer might accept that trade anyway.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the yield gain is certain and arrives every year, while the disease risk is rare and unpredictable, so the expected payoff favors uniformity)",
+            "(student question plus a credible source type, for example agricultural statistics, a plant pathology journal, or a farmer interview)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: corn is not a plant we grow, it is a plant that grows us. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

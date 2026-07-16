@@ -1,0 +1,320 @@
+{
+  "key": "ant",
+  "title": "The Ant That Never Gets Lost",
+  "blurb": "Smell trails, underground farms, bridges built from living bodies, and a desert ant that counts its own steps home.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Ant That Never Gets Lost",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-ant", "templateLabel": "The Ant That Never Gets Lost", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the ant's six legs." },
+        {
+          "kind": "image",
+          "imageKey": "ant",
+          "notes": ["It has six legs", "It lives under the ground", "It can carry things bigger than itself", "Its two feelers are called antennae"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an ant. The ant is small. It has six legs. Look at its two feelers. They are called antennae. The ant found a crumb. The crumb is bigger than the ant. The ant lifts it up. It carries the crumb home. Home is a nest under the ground. The ant is strong for such a little bug."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the ants in each row. Write how many in the box.",
+          "emoji": "🐜",
+          "items": ["3", "5", "2", "6"],
+          "answers": ["3", "5", "2", "6"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ant    six" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "ant", "right": "nest" },
+            { "left": "bird", "right": "tree" },
+            { "left": "fish", "right": "pond" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw an ant carrying something big. Give it six legs.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Ant That Never Gets Lost",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-ant", "templateLabel": "The Ant That Never Gets Lost", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "ant",
+          "notes": ["Ants have six legs and two antennae", "They live in nests with thousands of ants", "They talk by leaving smells", "One big ant is the queen", "Ants have no ears"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ant That Left a Message",
+          "text": "One ant found a crumb of bread. It was too big to carry alone. So the ant walked home. As it walked, it dabbed a smell onto the ground. Drop by drop, it made a smell trail. Back at the nest, the other ants tapped it with their antennae. They smelled the trail. Then they followed it, one behind the other, all the way to the bread. Ants cannot shout. They do not need to. They leave messages made of smell, and the whole nest can read them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What did the ant find?", "What did the ant leave on the ground?", "How did the other ants find the bread?"],
+          "rows": 2,
+          "answers": ["a crumb of bread", "a smell trail", "they followed the smell trail"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The crumb was too big to carry ____.", "The ant made a smell ____.", "The ants tapped with their ____.", "Ants leave messages made of ____."],
+          "wordBank": ["alone", "trail", "antennae", "smell"],
+          "answers": ["alone", "trail", "antennae", "smell"]
+        },
+        { "kind": "draw", "prompt": "Draw a line of ants following a trail to some food. Add the nest.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Ant That Never Gets Lost",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-ant", "templateLabel": "The Ant That Never Gets Lost", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "ant",
+          "notes": ["More than 12,000 kinds of ants are known", "Nearly every ant you see is female", "Ants smell with their antennae", "Some queens live more than 20 years", "Ants have no lungs, they breathe through tiny holes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Town Under Your Feet",
+          "text": "Under the ground, a nest of ants is busy. Dig it up and you would find rooms and tunnels, hundreds of them, joined together like a tiny underground town. One ant in the nest is much bigger than the rest. She is the queen. Her job is to lay eggs, and she does almost nothing else. Nearly every other ant in the nest is one of her daughters. The workers do everything. Some clean the tunnels. Some feed the babies. Some carry out the trash. Some go outside to hunt for food. When a worker finds food, she leaves a smell trail so the others can follow her back to it. Ants have no ears and most have weak eyes. They talk with smell instead. Those two feelers on an ant's head are called antennae, and they are packed with smell sensors. When two ants meet, they touch antennae. In one quick tap, they learn who the other ant is, which nest she is from, and whether she has found food."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the queen ant's job?",
+            "Name two jobs that worker ants do.",
+            "What are antennae packed with?",
+            "Why do you think ants use smell instead of shouting?"
+          ],
+          "rows": 2,
+          "answers": [
+            "to lay eggs",
+            "(any two: clean tunnels, feed the babies, carry out trash, hunt for food)",
+            "smell sensors",
+            "(inference: they have no ears, and a smell stays on the ground for others to find later)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Town Under Your Feet", "How to Build a Bird House", "The Tallest Tree in the Forest"],
+          "answers": ["The Town Under Your Feet"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The biggest ant in the nest is the ____.", "The nest is full of rooms and ____.", "Ants have no ears and most have weak ____."],
+          "wordBank": ["queen", "tunnels", "eyes"],
+          "answers": ["queen", "tunnels", "eyes"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which ant job would you want, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Ant That Never Gets Lost",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-ant", "templateLabel": "The Ant That Never Gets Lost", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ant",
+          "notes": ["Leafcutter ants grow fungus for food", "A colony can hold several million ants", "They carry antibiotic bacteria on their bodies", "Workers come in many sizes", "Ants have farmed for longer than humans have existed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ants That Grow Their Own Food",
+          "text": "In the forests of Central and South America, a line of leaves marches across the ground. Look closer. Under each leaf is an ant. These are leafcutter ants, and they are farmers. A worker climbs a tree, cuts a piece of leaf with her jaws, and carries it home. The piece can weigh several times more than she does. A big colony can strip a whole tree in a night. Here is the strange part. The ants do not eat the leaves. They cannot digest them. Instead they chew the leaves into a soft pulp and spread the pulp in dark underground gardens. On that pulp they grow a fungus, something like a mushroom. The fungus is the food. The ants feed it, weed it, and eat it, and it grows nowhere else on Earth without them. Farming brings farming problems. A mold called Escovopsis attacks the gardens and can kill them. So the ants carry a defense on their own bodies: a pale bacteria that grows in patches on their skin and makes a natural antibiotic. When a garden gets infected, the ants dose it. A leafcutter colony can hold several million ants, and the workers come in sizes. The largest have jaws that can slice through leather. The smallest ride along on the leaf pieces, guarding the carrier from flies that would lay eggs on her. Humans started farming about twelve thousand years ago. Ants have been growing fungus gardens for roughly fifty million."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain, in your own words, why leafcutter ants cut leaves if they do not eat them.",
+            "How do the ants protect their gardens from Escovopsis?",
+            "The passage says the smallest workers ride on the leaf pieces. What are they doing there?",
+            "The passage says the fungus grows nowhere else on Earth without them. Why does that make the ants and the fungus depend on each other?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they chew the leaves into pulp and grow a fungus on it, and the fungus is what they eat",
+            "with a pale bacteria on their skin that makes a natural antibiotic",
+            "guarding the carrier from flies that would lay eggs on her",
+            "(inference: the fungus cannot survive without ants tending it, and the ants have no other food, so neither one lives alone)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Leafcutter ants are farmers who grow and defend a fungus crop they cannot live without",
+            "Leaves are the favorite food of most insects in South America",
+            "Mushrooms are the oldest living thing on Earth"
+          ],
+          "answers": ["Leafcutter ants are farmers who grow and defend a fungus crop they cannot live without"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["digest → ____", "fungus → ____", "antibiotic → ____", "colony → ____"],
+          "rows": 1,
+          "answers": [
+            "to break food down inside the body so it can be used",
+            "a living thing like a mushroom or a mold, not a plant",
+            "something that kills or stops germs",
+            "a group of ants living and working together in one nest"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is it fair to call leafcutter ants farmers? Give two reasons from the passage for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Ant That Never Gets Lost",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-ant", "templateLabel": "The Ant That Never Gets Lost", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ant",
+          "notes": ["About 20 quadrillion ants are alive right now", "All ants together outweigh all wild birds and mammals", "Army ants build bridges from their own bodies", "No ant is in charge, not even the queen", "Ant behavior inspired real computer algorithms"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Nobody Is In Charge",
+          "text": "There is no ant in charge. That is the first thing to understand, and it is harder to accept than it sounds. A colony has a queen, but a queen is not a boss. She does not give orders, plan the day, or know what is happening twenty feet away in a tunnel. She lays eggs. Nothing more. Every clever thing a colony does, the trails, the gardens, the wars, the bridges, is done by workers who each follow a handful of simple rules and understand nothing of the whole. Watch army ants and the trick becomes visible. Army ants of the species Eciton burchellii do not dig a permanent nest. They march, hundreds of thousands of them, and at night they build a shelter called a bivouac out of nothing but their own bodies, hooking leg to leg into living walls around the queen and the young. Come morning it dissolves and the column moves on. On the march they meet gaps. A gap in a trail slows everyone down, so an ant that finds one stops and holds still. Another crawls over her and stops too. Ant by ant, a bridge of bodies grows across the gap, and the column pours over it. The bridge even adjusts itself. If the crossing gets busy, more ants join and it widens. If traffic thins, the ants at the edges feel fewer footsteps, let go, and rejoin the march. No ant measured the gap. No ant decided to build. Each one followed a rule roughly like this: if ants are walking on me, freeze; if they stop walking on me, leave. Simple rules, repeated by millions, add up to something that looks like intelligence. Scientists call it swarm intelligence, and they now copy it in software that routes delivery trucks and internet traffic. It is worth knowing how much of this is happening under your feet. A study published in 2022 estimated that about twenty thousand trillion ants are alive on Earth right now. Weigh all of them together and they outweigh every wild bird and every wild mammal on the planet combined."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says a queen is not a boss. Quote the sentence that explains what she actually does.",
+            "Explain how a bridge of ants can widen and shrink when no ant is measuring the traffic.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author save the size of the ant population for the last two sentences?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering no leader + simple rules + swarm intelligence)",
+            "quote: She lays eggs. Nothing more.",
+            "each ant follows a local rule, so more footsteps hold more ants in place and fewer footsteps release them",
+            "(inform, with detail: it defines swarm intelligence and cites a 2022 study; the opening line is written to grab attention)",
+            "(it scales the idea up at the end so the reader feels how common this is; it lands as the closing point)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["bivouac → ____", "column → ____", "swarm intelligence → ____", "dissolves → ____"],
+          "rows": 1,
+          "answers": [
+            "a temporary shelter, here made from the ants' own bodies",
+            "the long marching line of ants",
+            "clever group behavior that comes from many individuals following simple rules",
+            "breaks apart and disappears"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the workers understand nothing of the whole. Why might that be an advantage for a colony rather than a weakness?",
+            "Why would engineers copy ant rules for delivery trucks and internet traffic instead of writing one program that plans every route?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: no single ant can fail the whole colony, and the rules keep working when conditions change)",
+            "(inference: simple local rules adapt on their own and do not need one central planner that could be overwhelmed or break)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: can a group be intelligent if none of its members are? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Ant That Never Gets Lost",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-ant", "templateLabel": "The Ant That Never Gets Lost", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ant",
+          "notes": ["Cataglyphis fortis, the Saharan desert ant", "Forages at midday when the ground is lethal", "Navigates by polarized skylight and step counting", "An ant brain holds about 250,000 neurons", "Tested in 2006 with stilts made of pig bristle", "Robot designers borrow its dead reckoning"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ant That Counts Its Own Steps",
+          "text": "In the salt pans of Tunisia there is very little to look at. The ground is flat, pale, and cracked, and in summer it reaches temperatures that would cook most animals in minutes. Which is exactly why Cataglyphis fortis, the Saharan desert ant, goes out at midday. Her food is other insects that have already died of the heat, and the lizards and spiders that would eat her are hiding. She has a problem. Her nest is a hole in the ground about the width of a pencil, with no mound, no marker, and nothing nearby to recognize. She cannot lay a smell trail, because on ground that hot the scent boils away almost as fast as she can leave it. And she does not walk in a straight line. A foraging ant loops and zigzags across the pan for a hundred meters or more, hunting. Then she finds a dead fly, picks it up, turns, and runs almost dead straight back to a pencil-width hole she cannot see, and she hits it. The name for this is path integration. As she wanders, the ant is quietly keeping a running total: which way am I facing, and how far have I come. Direction is the easier half. She reads the pattern of polarized light in the sky, which a special patch of her eye can see and we cannot, and uses it as a compass even when the sun itself is behind a cloud. The hard half is distance. Nothing in the desert tells her how far she has walked. So she counts her own steps. That claim sounds absurd, and for a long time it was only a hypothesis. In 2006, three researchers named Matthias Wittlinger, Rudiger Wehner and Harald Wolf tested it in the least subtle way imaginable. They let ants walk from the nest to a feeder. Then, at the feeder, they changed the ants' legs. Some got stilts, tiny lengths of pig bristle glued to their feet. Others had the ends of their legs trimmed, leaving stumps. The results were exactly what a step counter predicts. The ants on stilts, taking longer strides than their brains expected, ran straight past the nest and began searching in empty ground beyond it. The ants on stumps, taking shorter strides, stopped short and searched in front of it. Neither group was confused about direction. Both were wrong about distance, and wrong by roughly the amount their stride length had changed. Then came the part that settled it. The researchers let the altered ants make a full round trip on their new legs. This time they went home accurately. Given one outbound journey to measure the world with the legs they now had, they recalibrated. The counter was not broken. It had simply been fed the wrong stride. An ant brain holds around a quarter of a million neurons. A human brain holds roughly eighty-six billion. With that quarter of a million, on a burning salt pan, a desert ant runs a compass, an odometer, and the arithmetic that turns a hundred meters of zigzag into one straight line home. Engineers who build robots for places where satellite navigation fails, caves, mines, the ocean floor, keep coming back to this ant. She is doing, on a budget of almost nothing, the exact thing they cannot yet do well."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the desert ant cannot solve her problem the way most ants do. Cite the evidence.",
+            "Explain what path integration is, and why the author calls direction the easier half.",
+            "The stilts and stumps experiment produced two different errors. Explain how each error supports the step-counting explanation rather than disproving it.",
+            "The author writes that the counter was not broken. It had simply been fed the wrong stride. Analyze what that sentence is doing at that point in the passage, and whether the evidence earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(she cannot use a scent trail; cite: on ground that hot the scent boils away almost as fast as she can leave it)",
+            "(she keeps a running total of heading and distance; direction is easier because polarized skylight gives her a constant compass, while nothing external measures distance)",
+            "(stilts made strides longer so ants overshot, stumps made strides shorter so ants stopped short; both errors track stride length in the predicted direction, which is what a stride-based counter would do)",
+            "(it reframes the failed trips as proof of the mechanism, not a flaw; the recalibration after a full round trip earns it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["path integration → ____", "hypothesis → ____", "recalibrated → ____", "odometer → ____"],
+          "rows": 2,
+          "answers": [
+            "tracking heading and distance as you travel so you can compute a direct route back",
+            "a proposed explanation that has not yet been tested",
+            "adjusted a measurement system to match new conditions",
+            "a device that measures distance traveled"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage contrasts a quarter of a million neurons with eighty-six billion. Explain what the author wants that comparison to prove, and name one thing it does not prove.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(that sophisticated navigation does not require a large brain; it does not prove ants are generally intelligent or that the two brains do comparable work)",
+            "(student question + a credible source type, for example a peer-reviewed neuroscience paper)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal that follows simple rules is not really navigating, it is only reacting. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

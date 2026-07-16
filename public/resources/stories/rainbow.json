@@ -1,0 +1,319 @@
+{
+  "key": "rainbow",
+  "title": "The Rainbow You Can Never Reach",
+  "blurb": "Sunlight, a raindrop, and one exact angle. Why the rainbow moves when you move, and why nobody else can see yours.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Rainbow You Can Never Reach",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-rainbow", "templateLabel": "The Rainbow You Can Never Reach", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the red stripe. Now find the purple one." },
+        {
+          "kind": "image",
+          "imageKey": "rainbow",
+          "notes": ["It comes from sun and rain", "Red is always on top", "The sun stays behind you", "You can never touch it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Rain fell this morning. Now the sun is out. Look at the sky. There is a rainbow. Red is on top. Purple is on the bottom. The rainbow is made of sunlight and rain. Keep the sun behind you. Then you can see it. Walk toward the rainbow. It walks away too. Nobody can touch a rainbow."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the raindrops in each row. Write how many in the box.",
+          "emoji": "💧",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sun    rain" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "red", "right": "the top of the rainbow" },
+            { "left": "purple", "right": "the bottom of the rainbow" },
+            { "left": "the sun", "right": "behind you" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a rainbow in the sky. Put the sun behind you.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Rainbow You Can Never Reach",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-rainbow", "templateLabel": "The Rainbow You Can Never Reach", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "rainbow",
+          "notes": ["White sunlight holds every color", "Rain in front, sun behind you", "Red bends least, violet bends most", "A rainbow is really a circle", "Best early morning or late afternoon"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Sunlight Is Hiding Colors",
+          "text": "A rainbow needs two things at once. It needs rain in front of you. It needs the sun behind you. Sunlight looks white, but it is not. White light is every color mixed together. When sunlight goes into a raindrop, it bends. Each color bends by a different amount. Red bends the least. Purple bends the most. The colors spread apart, bounce off the back of the drop, and come back out. Millions of drops do this at once. Your eyes see an arc of color in the sky."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What two things do you need at the same time to see a rainbow?", "What is white sunlight really made of?", "Which color bends the least?"],
+          "rows": 2,
+          "answers": ["rain in front of you and the sun behind you", "every color mixed together", "red"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Sunlight looks white, but it is every ____ mixed together.", "The sun must be ____ you.", "Light ____ when it goes into a raindrop.", "Red bends the ____."],
+          "wordBank": ["color", "behind", "bends", "least"],
+          "answers": ["color", "behind", "bends", "least"]
+        },
+        { "kind": "draw", "prompt": "Draw yourself outside with a rainbow. Show where the sun has to be.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Rainbow You Can Never Reach",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-rainbow", "templateLabel": "The Rainbow You Can Never Reach", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "rainbow",
+          "notes": ["Light bends when it slows down: refraction", "Red sits at about 42 degrees", "Millions of drops, one color each", "It moves when you move", "From a plane it can be a full circle"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bend in the Drop",
+          "text": "Sunlight looks plain and white, but it is a bundle of colors traveling together. You can only see them when something pulls them apart. A raindrop can do it. Light slows down when it moves from air into water, and slowing down makes it bend. This is called refraction. Here is the useful part. Each color bends by a slightly different amount. Red bends the least. Violet bends the most. Inside a round raindrop the colors fan out, strike the far wall, bounce back, and leave the drop spread into a band. One drop is not enough. A rainbow is millions of drops, each sending you a single color. The drops that send you red sit in one ring. The drops that send you violet sit in a slightly smaller ring. Your eye stacks the rings into an arc. That is why the sun has to be behind you and low in the sky. It is also why you can never reach the end. The rainbow is not sitting over the hill. It is built out of whatever drops happen to be at the right angle from your eyes, and it moves when you move."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does refraction mean?",
+            "Which color bends the most, and which bends the least?",
+            "Why is one raindrop not enough to make a rainbow?",
+            "Why do you think nobody has ever reached the end of a rainbow?"
+          ],
+          "rows": 2,
+          "answers": [
+            "light bending when it slows down going from air into water",
+            "violet bends the most and red bends the least",
+            "each drop sends you only one color, so you need millions of them",
+            "(inference: it is built from an angle to your own eyes, so it moves when you move)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Bend in the Drop", "How to Build a Bird Feeder", "The Deepest Lake in the World"],
+          "answers": ["The Bend in the Drop"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Light bends when it slows down. This is called ____.", "Red bends the ____ of all the colors.", "The sun must be ____ you and low in the sky."],
+          "wordBank": ["refraction", "least", "behind"],
+          "answers": ["refraction", "least", "behind"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a rainbow works, and why did it surprise you?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Rainbow You Can Never Reach",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-rainbow", "templateLabel": "The Rainbow You Can Never Reach", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rainbow",
+          "notes": ["Red exits at about 42 degrees, violet at about 40", "Centered on the point opposite the sun", "The ground hides the bottom half", "Everyone sees their own rainbow", "A double bow has its colors reversed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why You Cannot Share a Rainbow",
+          "text": "Stand with the sun behind you while rain falls in front. Somewhere ahead, an arc of color appears. It looks like it is hanging over a particular field or a particular street. It is not. It is not anywhere at all. Sunlight is a mixture of every color. When a ray enters a raindrop it slows, bends, and the mixture fans apart, because each color bends by its own amount. The fanned light travels to the back of the drop, reflects, and exits the front. What comes out is a narrow spray of color, thrown back roughly toward the sun. The geometry is strict. Red leaves the drop at about 42 degrees from the line running from the sun, past your head, to the ground. Violet leaves at about 40 degrees. So every drop currently sitting 42 degrees from that line sends you red, and only red. Every drop at 40 degrees sends you violet. Those drops form circles around the point directly opposite the sun, and the circles are what you see. The ground hides the bottom half. From an airplane, a rainbow can be a full ring. Now the strange part. The circle is centered on a line that starts at your own eyes. Move one step to the left, and the whole rainbow moves one step with you. The person standing beside you is collecting light from a completely different set of drops. She sees her rainbow, you see yours, and the two never touch. Nobody has ever reached the end of one, because the end is not a location. It is an angle."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why the colors separate inside a raindrop.",
+            "Why does the ground hide part of a rainbow?",
+            "The passage says a rainbow is not anywhere at all. What does the author mean by that?",
+            "Two friends stand side by side and photograph the same rainbow. Are they photographing the same raindrops? Explain."
+          ],
+          "rows": 2,
+          "answers": [
+            "(each color bends by its own amount when the light slows entering the water)",
+            "a rainbow is a full circle around the point opposite the sun, and the lower half is below the horizon",
+            "(inference: it is an angle measured from your eyes, not an object sitting in a place)",
+            "(inference: no, each bow is built from a different set of drops at 42 degrees from that person's own eyes)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A rainbow is not an object in the sky but an angle of light measured from your own eyes",
+            "Rain is the most common kind of weather on Earth",
+            "An airplane is the only place a person can see color"
+          ],
+          "answers": ["A rainbow is not an object in the sky but an angle of light measured from your own eyes"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["reflects → ____", "geometry → ____", "strict → ____"],
+          "rows": 1,
+          "answers": ["bounces back off a surface", "the rules about angles, lines, and shapes", "exact, with no room to vary"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child why they can never reach the end of a rainbow. Use two facts from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Rainbow You Can Never Reach",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-rainbow", "templateLabel": "The Rainbow You Can Never Reach", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rainbow",
+          "notes": ["Dispersion: each wavelength bends by its own amount", "Primary bow about 42 degrees, secondary about 51", "Alexander's band is the dark gap between them", "No rainbow when the sun is above 42 degrees", "Newton picked seven colors to match seven musical notes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bow That Belongs to One Pair of Eyes",
+          "text": "A rainbow is one of the few beautiful things in nature that is also a geometry problem, and the geometry is exact. Sunlight arrives as a mixture of wavelengths that our eyes read as white. When a ray strikes a spherical raindrop it crosses from air into water and slows down, which bends it. The bend is not the same for every wavelength: short waves, which we see as violet, bend slightly more than long waves, which we see as red. That small difference is called dispersion, and it is the whole trick. The fanned light crosses the drop, reflects off the inside of the far surface, and refracts again on the way out, leaving as a thin spray of separated color. Every drop does the same thing, so the direction of that spray is fixed. Red exits at roughly 42 degrees from the antisolar point, the spot directly opposite the sun from your eye. Violet exits at roughly 40. The drops that happen to sit at those angles are the only drops you see color from, and because an angle traced around a point makes a circle, the bow is a circle. The horizon usually eats the lower half of it. That geometry explains a rule most people notice without understanding. You cannot see a rainbow when the sun is high. If the sun stands more than 42 degrees above the horizon, the antisolar point sinks so far below the ground that the whole circle falls out of sight. Rainbows belong to early morning and late afternoon. Look above a bright bow and you may find a second, fainter one. That light took a longer road, bouncing twice inside each drop before escaping. Two bounces cost brightness and reverse the order, so the secondary bow shows red on the inside. Between the two bows sits a band of noticeably darker sky. No drop can send light into that gap, and it has carried a name since about the year 200: Alexander's band. One last thing worth knowing. The rainbow is not seven colors. It is a smooth, unbroken spectrum with no lines in it anywhere. Isaac Newton, who proved with prisms that white light contains the colors rather than creating them, chose to name seven because he liked the match with the seven notes of a musical scale. The bands are in our language. The gradient is what is actually in the sky."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is dispersion, and why does the passage call it the whole trick? Quote the phrase the passage uses.",
+            "Explain why you cannot see a rainbow at noon in midsummer.",
+            "Why is the secondary bow both fainter than the primary and reversed?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why do you think the author ends with Newton and the seven colors instead of ending with the physics?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering dispersion, the 42 degree geometry, and the second bow)",
+            "each wavelength bends by its own amount so white light separates; quote: it is the whole trick",
+            "the sun sits more than 42 degrees up, so the antisolar point and the whole circle fall below the horizon",
+            "the light bounces twice inside each drop, which loses brightness and flips the color order",
+            "(inform, with detail: it defines dispersion and Alexander's band and gives exact angles)",
+            "(opinion: to show the seven bands are human naming, not something nature put there)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["dispersion → ____", "antisolar point → ____", "spectrum → ____", "refracts → ____"],
+          "rows": 1,
+          "answers": [
+            "the splitting of white light because each wavelength bends by its own amount",
+            "the spot directly opposite the sun from your eye",
+            "the full unbroken range of colors in light",
+            "bends as it passes from one material into another"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the bands are in our language and the gradient is what is actually in the sky. Explain that in your own words.",
+            "Alexander's band was named about the year 200, but nobody could explain it for another eleven hundred years. What does that tell you about how science works?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(we invented the color names and the lines between them; the real bow is a smooth blend)",
+            "(opinion: people can notice and name something long before they can explain it)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does knowing exactly how a rainbow works make it more interesting or less? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Rainbow You Can Never Reach",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-rainbow", "templateLabel": "The Rainbow You Can Never Reach", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rainbow",
+          "notes": ["Theodoric of Freiberg traced the light path in about 1304", "Descartes calculated the 42 degrees in 1637", "Newton showed white light is a mixture, not a stain", "Supernumerary bows are evidence that light is a wave", "Moonbows look white because rod cells cannot see color", "The bow is centered on the shadow of your own head"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forty-Two Degrees: The Bow Nobody Else Can See",
+          "text": "A rainbow is the rare natural spectacle that is entirely explained and still worth standing in the rain for. Everything about it is known: the angle, the mechanism, the reason for the second bow, the reason for the dark stripe between them. None of that knowledge has cost it anything. Aristotle got the first piece right around 350 BC. He noticed that a rainbow always appears at a fixed angle from the person watching it, which meant it obeyed a rule rather than a mood. He then got the mechanism wrong, deciding the light bounced off the cloud as a whole. The correction took roughly sixteen centuries. Around 1304 a German friar named Theodoric of Freiberg filled glass spheres with water, held them up to the sun, and treated each one as a giant raindrop. He traced the path: the light refracts entering the sphere, reflects once off the inner back wall, and refracts again leaving. In Persia at almost the same time, Kamal al-Din al-Farisi reached the same conclusion by the same kind of experiment, neither man knowing of the other. In 1637 Descartes did the arithmetic with the law of refraction and produced the number: about 42 degrees. Newton supplied the last piece in the 1660s, showing with prisms that white light is not pure but a mixture, and that a prism separates what is already there instead of staining what passes through. Put the pieces together and the modern account is short. Sunlight enters a spherical drop and slows, which bends it. Violet, with its shorter wavelength, bends a little more than red. The colors, now fanned, cross the drop, reflect off the far inner surface, and refract once more on exit, so each drop throws a narrow spray of separated light back toward the sun. Red leaves at roughly 42 degrees from the antisolar point, violet at roughly 40. Since a fixed angle swept around a point traces a circle, the bow is a circle, and the ground simply hides its lower half. A second, dimmer bow at about 51 degrees comes from light that bounced twice inside the drop, which reverses its color order and spends much of its brightness. The band of gloom between the two, described as early as about 200 AD and named Alexander's band, is the region no drop can aim light into. This is where the rainbow stops being an object. The circle is centered on the shadow of your own head. It is drawn from your eyes outward, and the drops delivering red to you are delivering something else, or nothing, to the person a step away. Two people photographing the same bow are photographing two different bows made of different water. Nobody has failed to reach the end of a rainbow through lack of trying. The end is not a place, and there is nothing waiting there, because there is nothing there to arrive at. The theory keeps paying out. Look closely inside a sharp primary bow and you can sometimes see faint pink and green fringes tucked under the violet. They are called supernumerary bows, and ray geometry has no explanation for them at all. Thomas Young accounted for them in 1804 by treating light as a wave: paths of slightly different length through the same drop arrive out of step and interfere, reinforcing here and canceling there. Those pale fringes are the rainbow quietly confirming what light is made of. And on a night with a full moon and rain you can find a moonbow, which usually looks white, not because it lacks color but because dim light is read by the rod cells in your eyes, and rods cannot tell colors apart. The color is there. Your eyes are simply not equipped to collect it at that brightness."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage says Aristotle got the first piece right and then got the mechanism wrong. Explain both halves, and cite the exact words the passage uses for what his observation proved.",
+            "Explain why the secondary bow is both dimmer and reversed. Cite the phrase the passage uses for what two bounces cost.",
+            "Identify where the passage stops explaining physics and starts making a point about the reader. How does the author signal that shift?",
+            "Analyze the final two sentences. What is the author doing by ending on the reader's eyes rather than on the physics, and does the passage earn that ending?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(right: the fixed angle meant a rule governed it; cite: it obeyed a rule rather than a mood. wrong: he thought light bounced off the whole cloud)",
+            "(two internal reflections lose light and flip the color order; cite: spends much of its brightness)",
+            "(at This is where the rainbow stops being an object; a short declarative sentence marks the pivot)",
+            "(it moves the subject from the sky to the observer, arguing the limit is in our eyes, not the world; supported by the moonbow and rod-cell evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["refracts → ____", "antisolar point → ____", "supernumerary → ____", "interfere → ____"],
+          "rows": 2,
+          "answers": [
+            "bends when passing from one material into another",
+            "the point directly opposite the sun from the observer's eye",
+            "extra, beyond the expected number: the faint fringes inside the main bow",
+            "to overlap out of step so waves reinforce or cancel each other"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage opens by claiming the rainbow is entirely explained and still worth standing in the rain for. Do the supernumerary bows and the moonbow support that claim or undercut it? Explain.",
+            "Theodoric of Freiberg and al-Farisi solved the same problem at the same time without contact. What does that suggest about scientific discovery?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(support: each explained detail adds a new thing to notice rather than removing wonder)",
+            "(opinion: when the tools and questions are available, discovery becomes likely rather than lucky)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: once a thing is fully explained, it stops being wonderful. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

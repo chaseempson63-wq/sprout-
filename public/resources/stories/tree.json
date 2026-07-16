@@ -1,0 +1,319 @@
+{
+  "key": "tree",
+  "title": "The Tree That Eats Air",
+  "blurb": "A tree builds its whole body out of air, water, and sunlight, and keeps a diary of every year it lived inside its own wood.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Tree That Eats Air",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-tree", "templateLabel": "The Tree That Eats Air", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the trunk. Find the leaves." },
+        {
+          "kind": "image",
+          "imageKey": "tree",
+          "notes": ["It drinks with its roots", "Its leaves catch the sun", "The trunk holds it up", "It grows a little every year"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look outside. Do you see a tree? A tree drinks with its roots. The roots are under the ground. A tree eats with its leaves. Leaves catch the sunlight. The sun helps the tree make food. The trunk holds the tree up tall. Birds sit in the branches. The tree stands still all day. It grows a little bit every year."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves on each branch. Write how many in the box.",
+          "emoji": "🍃",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "tree    leaf" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part of the tree to where it is.",
+          "pairs": [
+            { "left": "roots", "right": "under the ground" },
+            { "left": "trunk", "right": "in the middle" },
+            { "left": "leaves", "right": "up at the top" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own tree. Give it lots of leaves and a bird.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tree That Eats Air",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-tree", "templateLabel": "The Tree That Eats Air", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "tree",
+          "notes": ["Roots drink water from the soil", "The trunk carries water up", "Leaves catch sunlight and make food", "A tree makes its own food", "The green stuff in a leaf is called chlorophyll"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Three Parts of a Tree",
+          "text": "A tree has three big parts. The roots are under the ground. They hold the tree down and drink water from the soil. The trunk is the tall part in the middle. It carries the water up to the leaves. It also holds the tree up in the wind. The leaves are at the top. Leaves are green. They catch sunlight and turn it into food for the tree. A tree makes its own food. It does not eat like you do. Every year the tree grows a little taller and a little wider."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Which part of the tree drinks water?", "What does the trunk carry up to the leaves?", "What do the leaves catch?"],
+          "rows": 2,
+          "answers": ["the roots", "water", "sunlight"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The ____ are under the ground.", "The ____ holds the tree up in the wind.", "Leaves catch the ____.", "A tree makes its own ____."],
+          "wordBank": ["roots", "trunk", "sunlight", "food"],
+          "answers": ["roots", "trunk", "sunlight", "food"]
+        },
+        { "kind": "draw", "prompt": "Draw a tree. Show the roots under the ground and the leaves at the top.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tree That Eats Air",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-tree", "templateLabel": "The Tree That Eats Air", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "tree",
+          "notes": ["One ring equals one year", "A fat ring means a good year", "A thin ring means a dry year", "Methuselah the pine is about 4,800 years old", "Reading rings is called dendrochronology"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Diary Inside the Wood",
+          "text": "Cut across a tree trunk and you find circles inside, one inside the next, like a target. Those circles are called rings, and they are a record. Each ring is one year of the tree's life. Here is why they form. In spring, when there is plenty of water, the tree grows fast and makes wide, pale wood. Later in the year it slows down and makes narrow, dark wood. One pale band plus one dark band equals one year. Count the dark bands and you know how old the tree is. The rings say more than that. A fat ring means a good year, with rain and sun and easy growing. A thin ring means a hard one, maybe a year with no rain. A black curved scar means a fire came through and the tree lived. Scientists read tree rings the way you would read a diary. A tree that lived four thousand years holds four thousand years of weather in its wood, written down while it happened, and it never once got the date wrong. The oldest known single tree is a bristlecone pine in California named Methuselah. It is about four thousand eight hundred years old. It was already growing when the pyramids were built."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does one ring in a tree trunk stand for?",
+            "Why does the tree make wide pale wood in spring?",
+            "What does a thin ring tell you about that year?",
+            "Why do you think a tree ring is a better record of old weather than a person's memory?"
+          ],
+          "rows": 2,
+          "answers": [
+            "one year of the tree's life",
+            "there is plenty of water, so the tree grows fast",
+            "it was a hard year, maybe a year with no rain",
+            "(inference: the tree wrote it down while it happened and cannot forget or get the date wrong)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Diary Inside the Wood", "How to Plant an Apple Seed", "The Tallest Mountain in California"],
+          "answers": ["The Diary Inside the Wood"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The circles inside a trunk are called ____.", "A ____ ring means a good year with lots of rain.", "The oldest known single tree is named ____."],
+          "wordBank": ["rings", "fat", "Methuselah"],
+          "answers": ["rings", "fat", "Methuselah"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if someone cut down a tree in your yard, what would you want its rings to tell you, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tree That Eats Air",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-tree", "templateLabel": "The Tree That Eats Air", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tree",
+          "notes": ["Dry wood is about half carbon", "That carbon came out of the air", "Leaves build sugar from air, water, and light", "Van Helmont weighed a willow for five years", "Trees give off the oxygen we breathe"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Knocking on Old Air",
+          "text": "Here is a question that sounds silly until you try to answer it. A tree seed weighs less than a paperclip. A grown oak weighs many tons. Where did all that extra stuff come from? Almost everyone guesses the soil. It is the obvious answer. The tree is standing in dirt, its roots are buried in dirt, so the tree must be eating dirt. About four hundred years ago a scientist named Jan Baptist van Helmont decided to check. He put exactly two hundred pounds of dried soil in a pot, planted a small willow in it, and gave it nothing but water for five years. Then he weighed everything again. The willow had gained more than one hundred and sixty pounds. The soil had lost about two ounces. The dirt was still there. So the tree was not made of dirt. Here is what actually happens. Leaves have tiny holes in them that let air in. Air contains carbon dioxide, a gas made of carbon and oxygen. Inside the leaf, sunlight provides the energy to break that gas apart and join the carbon to water pulled up from the roots. The result is sugar. The tree builds that sugar into wood, and it throws the leftover oxygen away into the air, which is lucky for us, because we breathe it. Dry wood is about half carbon by weight, and every one of those carbon atoms floated in as a gas. So when you knock on a tree trunk, you are knocking on old air. The tree caught it, one molecule at a time, and made it solid."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What did van Helmont expect to find, and what did he actually find?",
+            "The soil lost only two ounces in five years. Explain why that number matters so much.",
+            "Where does the carbon in a tree trunk come from, and how does it get there?",
+            "The passage says the leftover oxygen is lucky for us. Why?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(he was testing whether the tree ate soil; the soil barely changed while the willow gained over 160 pounds)",
+            "(inference: the tree gained far more weight than the soil lost, so the mass could not have come from the dirt)",
+            "from carbon dioxide gas in the air, taken in through tiny holes in the leaves",
+            "(we breathe the oxygen trees release as waste)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A tree builds most of its body out of a gas it pulls from the air, not out of soil",
+            "Willow trees grow faster than every other kind of tree",
+            "Soil is not important to plants in any way"
+          ],
+          "answers": ["A tree builds most of its body out of a gas it pulls from the air, not out of soil"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["carbon dioxide → ____", "molecule → ____", "energy (from sunlight) → ____"],
+          "rows": 1,
+          "answers": [
+            "a gas made of carbon and oxygen that plants take from the air",
+            "one tiny piece of a substance, too small to see",
+            "the power sunlight gives the leaf to break the gas apart"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining van Helmont's experiment to someone who has never heard of it. Say what he did, what he measured, and what it proved.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tree That Eats Air",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-tree", "templateLabel": "The Tree That Eats Air", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tree",
+          "notes": ["Hyperion, a coast redwood, is about 380 feet tall", "There is no pump anywhere in a tree", "Water is pulled up, not pushed", "A suction straw quits at about 33 feet", "Xylem: the pipes running root to leaf", "A big oak can move 100 gallons in a day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rope of Water",
+          "text": "Hyperion is a coast redwood in northern California. It stands about 380 feet tall, taller than the Statue of Liberty. Every day, water leaves the soil at Hyperion's roots and arrives in leaves nearly forty stories up. There is no pump anywhere in the tree. There is no heart, no muscle, nothing that squeezes. So how does the water get up there? Start with what should be impossible. If you drop a straw down a well and suck on the top, you cannot lift water higher than about thirty-three feet. It does not matter how hard you suck or how good your pump is. Above thirty-three feet the weight of the water column beats the air pressure pushing it up, and the water simply stops. By that rule, no tree should be taller than a three-story building. Trees do not suck. They pull, and the difference matters. Inside the trunk are xylem vessels, narrow pipes running from root to leaf, each one filled with an unbroken thread of water. Water molecules cling to one another. They are sticky in a way most liquids are not, because each molecule tugs weakly on its neighbors. So the water in a xylem vessel behaves less like a liquid and more like a rope. Now go up to a leaf on a warm afternoon. The leaf has tiny pores in it, and water evaporates out through them into the air. Every molecule that escapes tugs on the one behind it, and that one tugs on the next, and the pull travels all the way down the rope to the roots. Nobody pushes. The whole column is dragged upward by evaporation happening in the leaves, a few molecules at a time, all day long. A big oak can move a hundred gallons of water this way between sunrise and sunset. The water inside a tall tree is therefore under tension. It is stretched. Pull hard enough and the thread snaps, an air bubble forms, and that pipe stops working for good. This is the tree's real ceiling. In 2004, researchers who climbed the tallest redwoods to measure them calculated that gravity and friction together should stop any tree at somewhere around 400 to 430 feet. Hyperion is at 380. It is already near the edge of what physics allows."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why can a suction pump not lift water higher than about thirty-three feet?",
+            "Explain how evaporation in a leaf moves water at the roots. Quote the phrase the passage uses to compare the water to something else.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the author mean by the tree's real ceiling, and what sets it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering: water climbs with no pump, pulled as a rope by evaporation, and physics sets the height limit)",
+            "above that height the weight of the water column beats the air pressure pushing it up",
+            "(escaping molecules tug on the ones behind them and the pull travels down to the roots; quote: more like a rope)",
+            "(inform, with detail: it explains a mechanism and gives measured numbers; the question openings add some entertainment)",
+            "(the maximum height a tree can reach; set by gravity and friction snapping the water thread, around 400 to 430 feet)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["xylem → ____", "evaporates → ____", "tension → ____", "column → ____"],
+          "rows": 1,
+          "answers": [
+            "the narrow pipes carrying water from root to leaf",
+            "turns from liquid into a gas and leaves the surface",
+            "a stretching pull on something",
+            "a tall unbroken stack, here of water"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that trees do not suck, they pull. Explain the difference in your own words.",
+            "Why would a tree taller than 430 feet be in trouble on a hot, dry, windy day?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(sucking depends on air pressure pushing from below and has a hard limit; pulling drags a connected thread from above, so there is no pressure limit)",
+            "(inference: fast evaporation increases the pull, the stretched water thread snaps, air bubbles form, and the pipes fail)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which is the more impressive fact about a tree, that it builds itself out of air or that it lifts water 380 feet with no pump? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tree That Eats Air",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-tree", "templateLabel": "The Tree That Eats Air", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tree",
+          "notes": ["Mycorrhiza: a root and fungus partnership", "About nine in ten land plants use it", "The deal is over 400 million years old", "Simard tracked carbon moving tree to tree in 1997", "Nature nicknamed it the wood wide web", "In 2023 three scientists found the story overstated"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wood Wide Web, and What We Actually Know",
+          "text": "Walk into a forest and you see trees standing apart from one another, each one quiet, each one alone. Almost everything interesting about that scene is happening where you cannot see it. Under your feet, the soil is threaded with fungi. Not mushrooms, exactly. A mushroom is only the fruit. The body of the fungus is a web of filaments called hyphae, thinner than a human hair, running through the dirt in every direction. Roughly nine out of ten plant species on land partner with these fungi. The fungus wraps around or grows into a tree's roots and makes a trade. The tree hands over sugar it built from sunlight. The fungus hands back water and minerals like phosphorus, which its thin threads can reach in pockets of soil too small for a root to enter. Both sides do better than they would alone. This partnership is called mycorrhiza, and it is one of the oldest deals in biology, older than trees themselves. Then, in 1997, a forest ecologist named Suzanne Simard published a result that changed how people talk about forests. She fed Douglas fir and paper birch trees carbon dioxide made from unusual carbon atoms she could track. Later, she found the tracked carbon inside trees she had never fed. It had moved underground, tree to tree, through fungi. A commentary in the journal Nature gave the idea a name that stuck: the wood wide web. The nickname did a lot of work, and not all of it good. Within twenty years the story had grown into something else. Forests were described as networks where mother trees recognized their own seedlings and deliberately fed them, where trees warned each other about insect attacks, where the whole forest behaved like a single cooperative mind. It is a lovely story. It appeared in bestsellers, documentaries, and school assemblies. In 2023, three scientists sat down and checked it. Justine Karst, Melanie Jones, and Jason Hoeksema went back through the published research and asked a simple question: does the evidence support what people are saying? Their answer, in short, was no. They found that the strongest claims rested on very few field studies, that papers citing those studies routinely overstated what the studies had found, and that the overstatements got repeated until they sounded like settled fact. Some claims had never been tested in a mature forest at all. Notice what they did not say. They did not say the fungi are imaginary. Mycorrhizal partnerships are real, measured, and essential. Carbon really does move between trees underground. What they said is narrower and more useful: we do not yet know how much of it happens in real forests, whether trees choose where it goes, or whether the seedling on the receiving end is helped, ignored, or quietly farmed by a fungus running its own business. That last possibility is worth sitting with. Nothing about the trade requires kindness. A fungus connected to two trees is not a telephone line between friends. It is an organism with its own interests, moving resources in whatever direction serves the fungus. The generous forest and the self-interested fungus produce the same data. Telling them apart takes work that has mostly not been done yet. So the honest version is less comforting and more interesting than the one you have probably heard. Underneath the forest floor there is a vast, ancient, living network that we can measure but cannot yet read. We know the trades happen. We do not know who is deciding. Science is allowed to end there, and it is allowed to stay there until somebody does the experiment."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what mycorrhiza is and what each partner gets out of it. Cite the evidence.",
+            "What exactly did the 2023 scientists find wrong, and what did they NOT claim? Cite the sentence that draws that line.",
+            "Identify the shift in the passage: where does it turn from the popular story to the correction, and how does the author signal it?",
+            "The author writes that the generous forest and the self-interested fungus produce the same data. Analyze what that sentence is doing to the argument and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the real fungal trade, the exaggerated wood wide web story, and the 2023 correction)",
+            "(the tree gives sugar, the fungus gives water and minerals; cite: Both sides do better than they would alone)",
+            "(the strongest claims rested on few studies and were overstated by repetition; cite: They did not say the fungi are imaginary)",
+            "(at In 2023, three scientists sat down and checked it; the plain flat verb checked deflates the lovely story right after It is a lovely story)",
+            "(it shows the evidence cannot distinguish cooperation from fungal self-interest, so the warm reading is an assumption; earned, because the passage first establishes the fungus has its own interests)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["hyphae → ____", "mycorrhiza → ____", "overstated → ____", "mature (forest) → ____"],
+          "rows": 2,
+          "answers": [
+            "the thread-like filaments that make up the body of a fungus",
+            "the trading partnership between a plant's roots and a fungus",
+            "claimed more than the evidence actually supports",
+            "a forest of full-grown old trees rather than young planted ones"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says overstatements got repeated until they sounded like settled fact. Explain how that happens, and why it is a problem for science.",
+            "Write a question this passage cannot answer, and describe an experiment that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(each retelling cites the last one instead of the original data, so confidence grows without new evidence; it means people believe things nobody has tested)",
+            "(student question plus a testable design, for example severing fungal connections in a mature forest and measuring seedling survival)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A story that gets people to love forests is worth telling even if the science behind it is shaky. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

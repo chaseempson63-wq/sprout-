@@ -1,0 +1,331 @@
+{
+  "key": "spider",
+  "title": "The Spider That Makes Its Own Rope",
+  "blurb": "Eight legs, a belly full of liquid protein, and a thread that beats steel for its weight.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Spider That Makes Its Own Rope",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-spider", "templateLabel": "The Spider That Makes Its Own Rope", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find all eight legs." },
+        {
+          "kind": "image",
+          "imageKey": "spider",
+          "notes": ["It has eight legs", "It makes silk in its body", "It spins a web", "The web catches bugs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a spider. A spider has eight legs. Count them. One, two, three, four, five, six, seven, eight. The spider makes silk. The silk comes out the back end. The spider pulls the silk into a web. The web is sticky. A bug flies in. The spider feels the web wobble. Now the spider knows dinner is here."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the spiders in each row. Write how many in the box.",
+          "emoji": "🕷️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "web    silk" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "spider", "right": "web" },
+            { "left": "bird", "right": "nest" },
+            { "left": "bee", "right": "hive" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a spider in its web. Give it eight legs.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Spider That Makes Its Own Rope",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-spider", "templateLabel": "The Spider That Makes Its Own Rope", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "spider",
+          "notes": ["A spider is not an insect", "Eight legs, not six", "Silk comes out of spinnerets", "The silk starts out wet", "Spiders eat insects"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Not an Insect",
+          "text": "A spider is not an insect. An insect has six legs. A spider has eight. A spider makes silk inside its body. The silk starts out wet, like glue. It comes out of little taps at the back called spinnerets. When the spider pulls it, the wet silk turns into a dry thread. The spider builds a web out of the thread. Some parts of the web are sticky and some parts are not. The spider walks on the parts that are not sticky. That is how it does not get stuck in its own web."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How many legs does a spider have?",
+            "What are the taps at the back of a spider called?",
+            "Why does the spider not get stuck in its own web?"
+          ],
+          "rows": 2,
+          "answers": ["eight", "spinnerets", "it walks on the parts that are not sticky"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A spider has ____ legs.", "A spider makes ____ inside its body.", "Silk comes out of taps called ____.", "Some parts of the web are ____."],
+          "wordBank": ["eight", "silk", "spinnerets", "sticky"],
+          "answers": ["eight", "silk", "spinnerets", "sticky"]
+        },
+        { "kind": "draw", "prompt": "Draw a web between two branches. Put a spider in the middle.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Spider That Makes Its Own Rope",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-spider", "templateLabel": "The Spider That Makes Its Own Rope", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "spider",
+          "notes": ["Eight legs, two body parts, no antennae", "Insects have six legs and three body parts", "The spokes of a web are not sticky", "The spiral is the sticky part", "Many orb weavers eat their web each night"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Web Gets Built",
+          "text": "An orb web looks simple. It is not. The spider starts by letting out a long thread and waiting for the wind to carry it across a gap. When the thread catches on the far side, the spider has a bridge. It walks the bridge, drops a line down the middle, and builds a frame. Then it lays the spokes, running out from the center like the spokes of a wheel. None of those spokes are sticky. Last comes the spiral. The spider walks around and around, laying a fresh line covered in tiny beads of glue. That is the part that holds the bug. When a moth hits the web, the spider does not run straight over to bite it. It waits. The web shivers, and the shivering tells the spider where the moth is and how big it is. Spiders cannot chew. A spider bites its meal, pumps in juices that turn the inside to soup, and drinks it. Many orb weavers take the whole web down at the end of the day and eat the silk, so they can spin it again tomorrow."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How does the spider get its first thread across the gap?",
+            "Which part of the web is sticky, and which part is not?",
+            "How does the spider know a moth has landed in the web?",
+            "Why do you think an orb weaver eats its old web instead of leaving it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it lets out a long thread and the wind carries it across",
+            "the spiral is sticky, the spokes are not",
+            "the web shivers and the shivering tells it where and how big",
+            "(inference: silk costs the spider a lot to make, so it recycles it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Web Gets Built", "Why Bugs Like Gardens", "The Story of the First Spider"],
+          "answers": ["How a Web Gets Built"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": [
+            "The lines running out from the center are called ____.",
+            "The sticky ring the spider lays last is the ____.",
+            "The catching line is covered in tiny beads of ____.",
+            "A spider turns the inside of its meal into ____ and drinks it."
+          ],
+          "wordBank": ["spokes", "spiral", "glue", "soup"],
+          "answers": ["spokes", "spiral", "glue", "soup"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which step of building a web sounds hardest to you, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Spider That Makes Its Own Rope",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-spider", "templateLabel": "The Spider That Makes Its Own Rope", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "spider",
+          "notes": ["Silk starts as liquid and hardens as it is pulled", "Dragline silk: about as strong as steel, far lighter", "One spider can make several kinds of silk", "Spiders straighten their legs with fluid pressure", "A dead spider curls up because that pressure is gone", "Spiders cannot chew, so they drink their food"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rope Inside the Spider",
+          "text": "Every spider carries a rope factory in its abdomen. The rope is not stored as rope. It is stored as a thick liquid protein, packed into glands, and it stays liquid until the moment the spider needs it. When the spider pulls a thread out through its spinnerets, that liquid is squeezed down a narrow duct. Water is stripped out. The acid level changes. The long protein molecules, tangled and loose in the gland, are dragged into line and lock onto each other. Liquid goes in one end and solid thread comes out the other. No heat, no factory, no chemicals we would recognize. Just a spider, at room temperature, pulling. The thread it makes is remarkable. A spider's dragline, the safety line it trails behind it everywhere, is about as strong as steel of the same thickness, and steel is far heavier. Compare the two by weight and the silk wins easily. Better still, silk stretches before it breaks, so it soaks up energy instead of snapping. That combination, strong and stretchy at once, is what engineers chase and rarely catch. One spider does not make one silk. A garden orb weaver has several kinds of gland, and each makes a different thread: a tough dragline for the frame, a stretchy line coated in glue for the catching spiral, a soft wrapping silk for bundling prey, a papery silk for the egg sac. The spider chooses. It knows which tap to open. Here is a strange bonus. A spider has muscles to fold its legs but almost none to straighten them. It pushes its legs back out with fluid pressure, like a tiny hydraulic machine. That is why a dead spider curls up: the pressure is gone."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, how does a liquid inside a spider become a solid thread?",
+            "The passage says silk beats steel when you compare the two by weight. Explain what that means.",
+            "Why is stretching useful in a thread that has to catch a flying insect?",
+            "A spider makes several kinds of silk from several glands. Why is that more useful than making one perfect silk?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is pulled through a narrow duct, water is removed, the acid level changes, and the molecules line up and lock together",
+            "(a thread of silk and a bar of steel are close in strength, but the silk weighs far less, so per unit of weight silk is stronger)",
+            "(inference: stretching absorbs the insect's energy so the line does not snap)",
+            "(inference: different jobs need different threads, such as a strong frame, a sticky trap, and a safe egg sac)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A spider makes several kinds of an extraordinary thread from liquid protein, using no heat and no factory",
+            "Spiders are the strongest animals on Earth",
+            "Steel is the most useful material people have ever invented"
+          ],
+          "answers": ["A spider makes several kinds of an extraordinary thread from liquid protein, using no heat and no factory"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["abdomen → ____", "duct → ____", "dragline → ____", "hydraulic → ____"],
+          "rows": 1,
+          "answers": [
+            "the back part of the spider's body, where the silk glands sit",
+            "a narrow tube the liquid silk is pulled through",
+            "the safety line a spider trails behind itself",
+            "worked by the pressure of a fluid"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if you could make one thing out of spider silk, what would it be? Give two reasons why silk suits that job.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Spider That Makes Its Own Rope",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-spider", "templateLabel": "The Spider That Makes Its Own Rope", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "spider",
+          "notes": ["Ballooning: spiderlings sail away on silk", "Collected from the air more than two miles up", "Darwin watched them land on his ship, 60 miles out", "Fine leg hairs sense air currents and electric charge", "Spiders eat 400 to 800 million tons of insects a year", "More than 50,000 species named so far"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Flying Without Wings",
+          "text": "In 1832, aboard the Beagle, a young Charles Darwin watched thousands of small red spiders land on the ship's rigging. The nearest land was sixty miles away. None of them had wings. What they had was silk. A spiderling that wants to leave home climbs to the highest point it can find, a fence post, a grass stem, a leaf tip. It stands on the very end, lifts its abdomen to the sky, and lets out several fine threads. Then it lets go. The threads catch the moving air and the spider is gone, sometimes a few yards, sometimes hundreds of miles. Pilots have collected spiders from the air more than two miles up. The behavior has a name that fits it perfectly: ballooning. For a long time everyone assumed the wind did all the work. The problem was that spiders balloon on days with almost no wind, and their threads fan apart in the air instead of tangling together, which is not what loose fibers normally do. In 2018 two researchers in Bristol tested a different idea. Earth carries a weak electric field, and the air above the ground is charged. Silk leaving a spider picks up a negative charge, and so does every thread beside it, which is why they spread: like charges push each other apart. The researchers put spiders in a sealed box with no wind at all and switched on an electric field. The spiders raised their front legs, tiptoed, and ballooned. Switch the field off and they came back down. So a spider can taste the electric state of the sky through the fine hairs on its legs, and decide that today is a good day to fly. This matters more than it sounds. Ballooning is how spiders reach islands, new fields, and burned ground within days. And there are a great many spiders to move. Two scientists added up the world's spiders in 2017 and estimated that they eat somewhere between four hundred and eight hundred million tons of insects every year, which is roughly what every human on Earth eats in meat and fish combined. The insects that would strip our crops are held down, in large part, by an animal that cannot fly, sailing across the sky on a thread it made out of itself."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What two observations made scientists doubt that wind alone explains ballooning?",
+            "Describe the Bristol experiment. What made it a fair test of the electric field idea?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain what the final sentence is doing and why the author saves it for last."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering ballooning on silk + the electric field discovery + why spiders matter)",
+            "spiders balloon when there is almost no wind, and the threads fan apart instead of tangling",
+            "(spiders in a sealed box with no wind at all, field switched on and off; removing wind left the field as the only cause)",
+            "(inform, with detail: it explains an experiment and gives figures; the closing line leans toward persuading)",
+            "(it reframes a feared animal as something that protects our food; last position gives it weight)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["ballooning → ____", "rigging → ____", "abdomen → ____", "fibers → ____"],
+          "rows": 1,
+          "answers": [
+            "traveling through the air on silk threads",
+            "the ropes and lines that hold up a sailing ship's masts",
+            "the rear section of a spider's body",
+            "fine threads or strands"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Ballooning gives a spiderling no control over where it lands. Why might a spider evolve to take that risk anyway?",
+            "The author reports a range, four hundred to eight hundred million tons, rather than one number. Why would a careful scientist do that?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: it escapes crowding and competition with siblings, and huge numbers mean some will land somewhere good)",
+            "(inference: the figure is an estimate built from samples, so the range shows honest uncertainty)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: many people want spiders out of the house on sight. Having read this, take a position on that and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Spider That Makes Its Own Rope",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-spider", "templateLabel": "The Spider That Makes Its Own Rope", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "spider",
+          "notes": ["Order Araneae, more than 50,000 known species", "Dragline silk: steel's strength at a sixth of the weight", "Spun from liquid protein, in water, at room temperature", "Toughness beats Kevlar: strength times stretch", "Spider blood is blue-green, copper based", "Silkworms can be farmed in trays; spiders eat each other"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Thread We Still Cannot Copy",
+          "text": "Humans have farmed silk for roughly five thousand years, but never spider silk. The silk in a scarf comes from a caterpillar, Bombyx mori, which obligingly winds a single unbroken thread into a cocoon, and which will do it in trays, stacked, thousands to a room. Spiders will not cooperate. Put a thousand spiders in a room and you will return to a few fat spiders. They are predators, territorial, and perfectly willing to eat one another. That single fact has shaped a century of engineering. It has not stopped people from trying. Beginning in 2004, two men in Madagascar, Simon Peers and Nicholas Godley, set out to weave cloth from the silk of golden orb weavers. Teams of collectors gathered wild spiders each morning, held them in rows, drew the silk out by hand, and released them in the evening to be gathered again. Over about four years they used more than a million spiders. The result was a shimmering panel of naturally golden cloth, roughly eleven feet long, and the most expensive fabric ever made. It is beautiful, and it is a demonstration of the problem rather than a solution to it. The reason anyone bothers is that the material is genuinely extraordinary. A dragline thread, the line a spider trails behind itself as a safety rope, approaches the tensile strength of high grade steel while weighing about a sixth as much. Strength alone is not the interesting part, because Kevlar is strong too. Silk is also extensible: it can stretch by a third or more before it fails, and stretching is how a material swallows energy without breaking. Multiply strength by stretch and you get toughness, and by that measure dragline silk outperforms the fibers we manufacture, Kevlar included. A web is not a net. It is a shock absorber, built to catch an insect traveling at speed without flinging it straight back out. And the spider makes it out of nothing exotic, at room temperature, in water. The raw material is a protein solution stored in a gland as a thick liquid. As it is drawn down the duct, water is pulled out, the acidity rises, and shearing forces comb the tangled molecules into alignment, where they lock into tiny crystals bedded in a flexible matrix. The crystals supply strength. The matrix supplies stretch. The whole transformation happens inside a passage a few millimeters long, driven by nothing more than the pull of the spider's own leg. Our strongest fibers are made the opposite way: high heat, high pressure, harsh solvents, and enormous energy bills. So laboratories skipped the spider. They put spider silk genes into bacteria, into yeast, into silkworms, and famously into goats, whose milk then carried silk protein that could be filtered out and spun. Every attempt produces the protein. Every attempt struggles at the same step, which is the spinning. It turns out the recipe was never only the protein. It was also the duct, the water, the acid, the speed, and the pull. A spider is not a bag of silk. It is a machine for making silk, and the machine is the part we have not copied."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why can silkworms be farmed when spiders cannot? Cite the sentence that explains it.",
+            "Explain how strength, stretch, and toughness differ, and why toughness is the measure that matters for a web.",
+            "Identify the shift in the passage: where does it turn from what silk is to why we cannot make it, and how does the author signal the turn?",
+            "The passage ends by claiming a spider is a machine for making silk, and the machine is the part we have not copied. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(silkworms tolerate crowding; cite: They are predators, territorial, and perfectly willing to eat one another)",
+            "(strength is the force to break it, stretch is how far it gives, toughness is the energy absorbed before failure; a web must absorb a flying insect, so toughness decides)",
+            "(at So laboratories skipped the spider; a short blunt sentence pivots from the material to the failed attempts to copy it)",
+            "(it relocates the mystery from the chemistry to the process; earned by the duct, water, acid, speed and pull evidence and the goat and bacteria results)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["extensible → ____", "tensile strength → ____", "matrix → ____", "shearing → ____"],
+          "rows": 2,
+          "answers": [
+            "able to stretch without breaking",
+            "how much pulling force a material takes before it snaps",
+            "the softer material that surrounds and holds the crystals",
+            "the sliding force that drags molecules past one another and lines them up"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls the Madagascar cloth a demonstration of the problem rather than a solution to it. Explain that judgment in your own words.",
+            "The passage compares spider spinning to factories that use high heat, high pressure, and harsh solvents. What argument is that comparison quietly making?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it proved the cloth is possible only by using a million wild spiders and years of hand labor, which is exactly why it cannot scale)",
+            "(that the spider's method is cheaper, cooler and cleaner than ours, so copying it would be worth a great deal)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If we cannot copy spider silk after a century of trying, we should stop spending money on it. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}
