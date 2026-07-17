@@ -1,0 +1,322 @@
+{
+  "key": "puffin",
+  "title": "The Bird That Flies Underwater",
+  "blurb": "The little sea parrot with a beak that falls off every winter, and wings built for the wrong element.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-puffin", "templateLabel": "The Bird That Flies Underwater", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the puffin's orange beak." },
+        {
+          "kind": "image",
+          "imageKey": "puffin",
+          "notes": ["Its beak is orange and blue", "It lives by the cold sea", "It swims under the water", "It digs a hole to sleep in", "Its feet are bright orange"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a puffin. It lives by the cold sea. Look at its beak. The beak is orange and blue. The puffin can swim. It flaps its wings under the water. It swims down to catch little fish. Then it pops up like a cork. The puffin makes a home in a hole in the ground. It is a good digger."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fish in each row. Write how many in the box.",
+          "emoji": "🐟",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "fish    dig" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "puffin", "right": "hole in the ground" },
+            { "left": "fish", "right": "sea" },
+            { "left": "dog", "right": "house" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own puffin. Give it a big orange beak.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-puffin", "templateLabel": "The Bird That Flies Underwater", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "puffin",
+          "notes": ["A baby puffin is called a puffling", "It sleeps out on the waves", "Its nest is a tunnel in the dirt", "The parents lay one egg", "It can hold lots of fish in its beak"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Flies Underwater",
+          "text": "A puffin spends most of its life far out on the open sea. It sleeps on the waves. It only comes to land in spring, to make a nest. A puffin digs a burrow in the dirt on top of a cliff. It uses its beak and its feet. Inside the burrow, the mother puffin lays one egg. Just one. Both parents sit on the egg and keep it warm. When the chick hatches, it is called a puffling. The parents fly out to sea and bring back small fish. A puffin can carry lots of fish in its beak at once."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does a puffin sleep when it is out at sea?", "What does a puffin use to dig its burrow?", "How many eggs does the mother puffin lay?", "What is a baby puffin called?"],
+          "rows": 2,
+          "answers": ["on the waves", "its beak and its feet", "one", "a puffling"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A puffin digs a ____ in the dirt.", "The mother lays one ____.", "A baby puffin is called a ____.", "The parents bring back small ____."],
+          "wordBank": ["burrow", "egg", "puffling", "fish"],
+          "answers": ["burrow", "egg", "puffling", "fish"]
+        },
+        { "kind": "draw", "prompt": "Draw a puffin on top of a grassy cliff. Show the hole where it sleeps.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-puffin", "templateLabel": "The Bird That Flies Underwater", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "puffin",
+          "notes": ["It beats its wings about 400 times a minute", "It flies underwater using its wings", "Spines inside its mouth hold the fish", "Its bright beak falls off every winter", "It hunts small fish called sand eels"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Ways to Fly",
+          "text": "Most birds fly through the air. The puffin flies through both. In the air, a puffin has to beat its wings about four hundred times a minute just to stay up. It looks like a windup toy. Under the water, everything changes. The puffin folds its wings in and flaps them like short paddles, and suddenly it is graceful. It can dive deeper than a house is tall and stay under for half a minute, chasing small silver fish called sand eels. Catching one fish is easy. Carrying ten is the trick. The roof of a puffin's mouth is lined with tiny spines that point backward. The puffin holds the fish it has already caught against those spines with its tongue, then opens its beak and catches another. The fish hang crosswise, all in a neat row, and none of them slip out. A puffin's bright beak is not permanent. After the summer, the colorful outer plates fall off, and the puffin spends the winter at sea with a smaller, duller beak."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How does the puffin move its wings under the water?",
+            "What are sand eels?",
+            "What keeps the caught fish from slipping out of the puffin's beak?",
+            "Why do you think a puffin needs to carry many fish at once instead of just one?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it folds them in and flaps them like short paddles",
+            "small silver fish that puffins hunt",
+            "tiny backward-pointing spines in the roof of its mouth, held by its tongue",
+            "(inference: the sea is far from the nest, so one trip should feed the chick well)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Two Ways to Fly", "How to Build a Bird Feeder", "The Deepest Ocean in the World"],
+          "answers": ["Two Ways to Fly"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A puffin beats its wings four ____ times a minute.", "The spines in its mouth point ____.", "The fish hang ____ in its beak.", "In winter the puffin's beak is smaller and ____."],
+          "wordBank": ["hundred", "backward", "crosswise", "duller"],
+          "answers": ["hundred", "backward", "crosswise", "duller"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather fly like a puffin in the air or in the water, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-puffin", "templateLabel": "The Bird That Flies Underwater", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "puffin",
+          "notes": ["Iceland has more Atlantic puffins than anywhere else", "A chick is called a puffling", "Pufflings leave the burrow alone, at night", "They steer by the brightest light on the horizon", "Young puffins stay at sea for years before returning"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Puffling Patrol",
+          "text": "On a summer night in the Westman Islands, off the south coast of Iceland, children go out with flashlights and cardboard boxes. They are not playing. They are on patrol. Iceland is puffin country. More Atlantic puffins nest there than anywhere else on Earth, packed into burrows in the grassy slopes above the sea. Each pair raises a single chick, called a puffling, in a tunnel under the turf. The parents feed it fish for about six weeks. Then they stop. Hungry and alone, the puffling waits until dark and walks out of the burrow for the first and last time. It has never seen the ocean. It has never flown. It heads for the brightest thing on the horizon, which for millions of years was moonlight on the water, and it launches itself off the cliff toward the sea. But the Westman Islands have a town now, and the town has streetlights. Every year some pufflings steer toward the lamps instead of the moon and end up flapping around a parking lot, lost, in danger from cars and cats and gulls. So the children come out. They scoop the birds up, keep them safe overnight in boxes, and in the morning they carry them to the shore, lift them into the wind, and let them go. The birds do the rest themselves. A young puffin will not touch land again for two or three years. It will sleep on the open ocean, riding the waves, until it is old enough to come back and dig a burrow of its own."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why does the puffling leave the burrow hungry?",
+            "Explain why streetlights are dangerous for a puffling, using what the passage says about the moon.",
+            "The passage says the children are not playing. What does that tell you about how Iceland treats this problem?",
+            "The children release the birds and then leave them alone. Why do you think they do not keep helping?"
+          ],
+          "rows": 2,
+          "answers": [
+            "its parents stop feeding it after about six weeks",
+            "(it steers toward the brightest light; for millions of years that was moonlight on the water, so lamps trick it inland)",
+            "(inference: it is treated as real work and a shared responsibility, not a game)",
+            "(inference: a puffin has to live at sea on its own; helping longer would not teach it anything it needs)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Young puffins navigate by light, and town lamps confuse them, so Icelandic children carry them to the sea",
+            "Puffins are the most common bird in the world",
+            "Children in Iceland keep pufflings as pets in cardboard boxes"
+          ],
+          "answers": ["Young puffins navigate by light, and town lamps confuse them, so Icelandic children carry them to the sea"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["burrow → ____", "turf → ____", "horizon → ____", "patrol → ____"],
+          "rows": 1,
+          "answers": [
+            "a tunnel dug into the ground for a nest",
+            "the top layer of grass and soil",
+            "the line where the sky seems to meet the sea",
+            "going out to watch over an area and look for trouble"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: should the town turn its lights off for a few weeks each summer instead of sending children out with boxes? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-puffin", "templateLabel": "The Bird That Flies Underwater", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "puffin",
+          "notes": ["Fratercula arctica, the Atlantic puffin", "Salt glands above the eyes let it drink seawater", "Its beak glows under ultraviolet light", "The colored beak plates drop off each winter", "It can live more than 20 years", "One egg per pair, per year"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built for the Open Ocean",
+          "text": "The Atlantic puffin is a small bird, about the height of a soda can, and almost everything about it is a solution to the same problem: how do you live on the open ocean? Start with the drinking water. There isn't any. A puffin spends eight months of the year hundreds of miles from land, surrounded by water it cannot safely drink. So it drinks it anyway. Above each eye sits a salt gland, a filter that pulls the salt out of the bloodstream and drips it back out through the nostrils. The bird carries its own desalination plant in its skull. Then the flying. A puffin's wings are a compromise, and a bad one on paper. They are too small for its body, so it must beat them roughly four hundred times a minute to stay airborne, and it lands like a thrown shoe. But those same short, stiff wings are superb underwater. A puffin does not paddle. It flies down through the sea, wings beating, steering with its feet, and it can reach depths of sixty meters and hold its breath for a minute. Then the famous beak. It is a billboard and a tool at once. In spring it swells into orange, blue, and yellow plates, and under ultraviolet light, which puffins can see and we cannot, parts of it glow. After the breeding season those outer plates simply fall away, and the bird spends winter with a plain gray beak that no tourist would photograph. The tool part is inside: backward-pointing spines on the roof of the mouth let the puffin pin caught fish with its tongue while it dives for more, which is how one small bird flies home with a dozen sand eels lined up crosswise. Puffins live a long time, often more than twenty years, and they are careful with it. A pair usually returns to the same burrow year after year and raises one chick a season. That is a slow way to build a population and a fast way to lose one. Warming seas have pushed sand eels away from some colonies, and parents that cannot find the right fish come back with substitutes their chick can barely swallow."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how a puffin can drink seawater and survive.",
+            "The passage calls the puffin's wings a compromise. Explain the trade being made, and quote the phrase the passage uses to describe how it lands.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author say that raising one chick a season is a fast way to lose a population?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering ocean adaptations plus the food risk)",
+            "salt glands above its eyes pull salt out of its blood and drip it out through the nostrils",
+            "(small wings are poor in air but excellent underwater; quote: it lands like a thrown shoe)",
+            "(inform, with detail: it explains mechanisms and gives figures; the closing lines carry a persuasive edge)",
+            "(inference: losses cannot be replaced quickly when each pair produces only one chick a year)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["compromise → ____", "airborne → ____", "desalination → ____", "substitutes → ____"],
+          "rows": 1,
+          "answers": [
+            "a design that gives up some of one thing to gain another",
+            "up in the air, flying",
+            "taking the salt out of salt water",
+            "things used in place of what you actually wanted"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The beak is described as a billboard and a tool at once. Explain both jobs in your own words.",
+            "Why would a bird that lives twenty years bother growing a bright beak and then dropping it every winter?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(billboard: bright colors for the breeding season, visible in ultraviolet; tool: spines and tongue hold many fish at once)",
+            "(inference: the color only matters while attracting a mate; carrying it all year would cost energy for nothing)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when a species is struggling because the ocean is warming, is it worth protecting its nesting cliffs? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird That Flies Underwater",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-puffin", "templateLabel": "The Bird That Flies Underwater", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "puffin",
+          "notes": ["Fratercula arctica, family Alcidae, the auks", "Water is about 800 times denser than air", "Its flightless cousin, the great auk, died out in 1844", "Dives to around 60 meters, wings beating", "Salt glands above the eyes filter seawater", "One egg a year, fed for about six weeks"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Compromise: Why the Puffin Flies Badly on Purpose",
+          "text": "A puffin in flight looks like a mistake. It is a stocky, football-shaped bird with wings too short for its weight, and it stays in the air only by beating them around four hundred times a minute. It cannot glide. It cannot hover. It approaches its own cliff at fifty miles an hour and arrives more or less by crashing. Watch one land and the obvious conclusion is that evolution simply got this bird wrong. It did not. The puffin is not a bad flier. It is a compromise, and the compromise is deliberate. Puffins belong to a family of seabirds called auks, and auks make their living underwater. A wing that works well in air needs to be long and broad, because air is thin and you need a great deal of it to push against. A wing that works well underwater needs to be short and stiff, because water is roughly eight hundred times denser than air, and a long wing would stall or snap. No wing can be excellent at both. The auks chose the water. A puffin does not swim the way a duck does, kicking along the surface. It flies down into the sea, wings beating, feet trailing behind as rudders, and it can reach sixty meters below the surface, deeper than most divers ever go. Everything awkward about the puffin in the air is the price of that. The family took the trade further than the puffin did. The great auk, the puffin's much larger cousin, gave up flight altogether: a flightless, penguin-like bird about eighty-five centimeters tall that bred on remote North Atlantic islands. It was easy to catch, and it was caught. Sailors killed the last confirmed pair in Iceland in 1844. The puffin's clumsy half-measure, in other words, is also what saved it. A bird that can still fly can still nest on a clifftop no fox can climb. The rest of the puffin follows the same logic. It drinks seawater and filters the salt back out through glands above its eyes. It spends roughly eight months of the year out of sight of land, sleeping on the swell. Its bright beak, the part everyone photographs, is seasonal equipment: the colored plates grow in for the breeding season and drop off afterward, leaving a small, dull winter bill. Inside that beak, backward-facing spines on the palate let the bird hold a row of caught fish against its tongue while it dives for the next one, which is why a puffin comes home with a dozen sand eels crosswise in its bill instead of one. What the puffin cannot compromise on is food. A pair produces one egg a year, and both parents spend about six weeks ferrying fish to a chick sealed in a burrow. That strategy assumes something specific: that the right fish, at the right size, will be in the right water in the right week. Sand eels are that fish for most Atlantic colonies. As sea temperatures have risen, sand eels have shifted north and thinned out, and puffin parents have arrived at their burrows carrying whatever they could find instead. Some colonies have failed to raise chicks for years running. The bird that solved the ocean by refusing to specialize in flight is now in trouble over the one thing it did specialize in. The puffin looks like a joke and works like an engineer. The joke was never on the bird."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why no wing can be good at both flying and diving. Cite the evidence the passage gives about water.",
+            "The passage argues the puffin's poor flying is deliberate rather than a failure. Cite the sentence that states this claim directly.",
+            "Explain what the great auk is doing in this passage. Why does the author bring it in instead of sticking to puffins?",
+            "Identify the turn in the passage: where does the argument shift, and how does the author signal it?",
+            "Analyze the final two sentences. What is the claim about the puffin, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(air is thin so wings must be long; cite: water is roughly eight hundred times denser than air, and a long wing would stall or snap)",
+            "(cite: It is a compromise, and the compromise is deliberate)",
+            "(it is the control case: a cousin that took the same trade all the way to flightlessness and was wiped out, which shows the puffin's half-measure had value)",
+            "(at What the puffin cannot compromise on is food; the argument turns from admiration of the design to the risk in it)",
+            "(claim: the awkwardness is engineering, not error; earned by the wing physics, the great auk contrast, and the salt glands and beak evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["compromise → ____", "rudders → ____", "specialize → ____", "half-measure → ____"],
+          "rows": 2,
+          "answers": [
+            "a design that gives up part of one ability to gain another",
+            "parts used to steer a moving body through water or air",
+            "to become very good at one narrow thing",
+            "a partial step that does not go all the way"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a puffin pair produces one egg a year. Explain why that reproductive rate makes a food shortage more serious than it would be for a bird that lays six eggs.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a slow-breeding species cannot replace lost chicks quickly, so several bad years compound instead of being made up)",
+            "(student question plus a credible source type, such as a seabird colony monitoring study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal that is bad at something is badly designed. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

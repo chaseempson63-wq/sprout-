@@ -1,0 +1,319 @@
+{
+  "key": "prism",
+  "title": "The Glass That Lets the Colors Out",
+  "blurb": "A wedge of clear glass, a beam of sunlight, and the experiment that proved white light was never white at all.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Glass That Lets the Colors Out",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-prism", "templateLabel": "The Glass That Lets the Colors Out", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the colors coming out of the glass." },
+        {
+          "kind": "image",
+          "imageKey": "prism",
+          "notes": ["It is made of clear glass", "It has flat sides", "Sunlight goes in one side", "A rainbow comes out the other side", "It has no paint on it at all"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a prism. Say it like this: PRIZ-um. A prism is a piece of clear glass. It has flat sides and sharp edges. Hold it up in the sun. White light goes in one side. Colors come out the other side. Red. Orange. Yellow. Green. Blue. Purple. The prism has no paint on it. The colors were hiding inside the light. The prism just lets them out."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the colored stripes in each row. Write how many in the box.",
+          "emoji": "🌈",
+          "items": ["3", "5", "2", "6"],
+          "answers": ["3", "5", "2", "6"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "light    red" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "prism", "right": "glass" },
+            { "left": "sun", "right": "light" },
+            { "left": "rainbow", "right": "colors" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a prism in the sun. Draw the colors coming out of it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Glass That Lets the Colors Out",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-prism", "templateLabel": "The Glass That Lets the Colors Out", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "prism",
+          "notes": ["Say it PRIZ-um", "Clear glass with flat sides", "Light bends when it goes in", "Red bends the least", "Purple bends the most", "Raindrops can do this too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Glass That Lets the Colors Out",
+          "text": "A prism is a wedge of clear glass. There is no paint in it. There is no color in it at all. But hold a prism in a beam of sunlight and a rainbow lands on the wall. Where did the colors come from? They came from the light. Sunlight looks white to us, but white light is really every color mixed together. When the light goes into the glass, it bends. Each color bends by a different amount. Red bends the least. Purple bends the most. So the colors slide apart, like runners spreading out on a track. That is all a rainbow is. It is light with the colors pulled apart."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a prism made of?", "Where do the colors come from?", "Which color bends the least?", "Which color bends the most?"],
+          "rows": 2,
+          "answers": ["clear glass", "the light itself", "red", "purple"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A prism is made of clear ____.", "White light is every ____ mixed together.", "Light ____ when it goes into the glass.", "A ____ lands on the wall."],
+          "wordBank": ["glass", "color", "bends", "rainbow"],
+          "answers": ["glass", "color", "bends", "rainbow"]
+        },
+        { "kind": "draw", "prompt": "Draw a sunny window, a prism, and the rainbow it makes on the wall.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Glass That Lets the Colors Out",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-prism", "templateLabel": "The Glass That Lets the Colors Out", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "prism",
+          "notes": ["Say it PRIZ-um", "Light slows down inside glass", "Slowing down makes it bend", "Bending light apart is called dispersion", "Isaac Newton figured this out in the 1660s", "A raindrop works like a tiny prism"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where the Rainbow Was Hiding",
+          "text": "For a long time, people believed a prism painted the light. They thought the glass was dirty, or flawed, and that the flaw stained the sunlight on its way through. It was a fair guess. The glass has no color, and then suddenly there are six colors on the wall. Where else could they come from? A young man named Isaac Newton tested the idea in the 1660s. He darkened his room, let one thin beam of sun in through a hole in the shutter, and put a prism in its path. A band of color stretched across the far wall. Then he did the clever part. He cut a small hole in a board, let only the blue stripe through, and sent that blue light into a second prism. If the glass painted the light, the blue should have changed. It did not. Blue went in and blue came out. The prism was not adding anything. The colors were in the sunlight the whole time, folded up together, and the glass simply spread them apart."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did people believe a prism did to light?",
+            "What did Newton let into his dark room?",
+            "What happened when he sent blue light into a second prism?",
+            "Why do you think Newton used a second prism instead of just looking at the rainbow again?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they believed it painted or stained the light",
+            "one thin beam of sun through a hole in the shutter",
+            "blue went in and blue came out, so nothing changed",
+            "(inference: he needed a test that could prove the glass was not adding color)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Where the Rainbow Was Hiding", "How to Cut and Polish Glass", "The Weather in England"],
+          "answers": ["Where the Rainbow Was Hiding"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Newton worked in a ____ room.", "He let the light in through a hole in the ____.", "The second prism did not change the ____ light."],
+          "wordBank": ["darkened", "shutter", "blue"],
+          "answers": ["darkened", "shutter", "blue"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what did Newton prove, and how do you know he was right?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Glass That Lets the Colors Out",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-prism", "templateLabel": "The Glass That Lets the Colors Out", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "prism",
+          "notes": ["Light travels about 186,000 miles per second in space", "Inside glass it drops to about two thirds of that", "Slowing at an angle makes the beam bend: refraction", "Each color slows by a slightly different amount: dispersion", "Newton published Opticks in 1704", "Binoculars use prisms to fold the light path"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Glass Bends a Rainbow Out of Nothing",
+          "text": "Nothing in the universe moves faster than light in empty space, about 186,000 miles every second. But light does not always travel through emptiness. Push it into water, or into a block of glass, and it slows down. In ordinary glass it drops to roughly two thirds of its top speed. That slowdown is the whole secret of the prism. Picture a line of marchers stepping off pavement into deep sand at an angle. The marchers on one end hit the sand first and slow down while the others are still on hard ground, so the whole line pivots. Light does the same thing. When a beam meets the slanted face of a prism, one edge enters the glass before the other, and the beam bends. Scientists call that bending refraction. Here is the part that makes the rainbow. The colors inside white light do not all slow down by the same amount. Violet is slowed the most, so it bends the hardest. Red is slowed the least, so it barely turns. Between them sit orange, yellow, green and blue, each bending a little more than the last. By the time the beam leaves the far face of the prism, the colors have separated into a fan. This spreading is called dispersion, and it is why a wedge of colorless glass can throw a rainbow across a wall. No color is created. Nothing is added. The prism only reveals what sunlight was carrying all along."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is refraction, in your own words?",
+            "Explain why violet bends more than red.",
+            "Why does the passage compare light to marchers stepping into sand?",
+            "The passage says no color is created. If that is true, why does the wall look colorful when the sunlight did not?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(light bending when it changes speed entering a new material)",
+            "violet is slowed the most inside the glass, so it turns the hardest; red is slowed the least",
+            "(to show why slowing down at an angle makes a beam pivot)",
+            "(inference: the colors were mixed together in the white light and the prism only separates them)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Light slows inside glass and each color slows differently, so a prism spreads white light into a rainbow",
+            "Glass is the only material that can bend light",
+            "Sunlight has no color in it until a prism adds some"
+          ],
+          "answers": ["Light slows inside glass and each color slows differently, so a prism spreads white light into a rainbow"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["refraction → ____", "dispersion → ____", "colorless → ____"],
+          "rows": 1,
+          "answers": [
+            "the bending of light when it slows down entering a new material",
+            "the spreading of white light into separate colors",
+            "having no color of its own"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child how a prism makes a rainbow. Use the words refraction and dispersion, and explain what each one means.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Glass That Lets the Colors Out",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-prism", "templateLabel": "The Glass That Lets the Colors Out", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "prism",
+          "notes": ["Refractive index of common glass: about 1.5", "Light drops to about 124,000 miles per second inside it", "Violet has the shortest wavelength, red the longest", "Newton's two-prism test was called the experimentum crucis", "He chose seven colors to echo the seven musical notes", "Opticks, his book on light, appeared in 1704"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Experiment That Took the Color Out of Glass",
+          "text": "Before Newton, the prism was a toy and a puzzle. Everyone agreed it produced colors. The argument was about where those colors came from. The accepted answer, inherited from Aristotle and defended for centuries, was that pure light was white and simple, and that color was a kind of damage. Light passing through glass got weakened or shadowed, and the weakening showed up as red at one edge and violet at the other. Under that theory the prism was the author of the color. In 1666, in a room in Cambridge, Isaac Newton set out to settle it. He closed the shutters, cut a small round hole in one, and let a single beam of sunlight cross the darkness. A prism in its path threw a long band of color onto the far wall. That much was old news. Then Newton asked a better question: if the glass makes the color, what happens if you make it do the job twice? He set a board with a narrow slit in front of the colored band and turned the prism until only the blue stripe slipped through the slit. That isolated blue beam went into a second prism. If glass manufactured color, this beam should have been altered again, split further, stained a new shade. It was not. It bent a little more, as blue always does, and stayed stubbornly blue. Newton called this his experimentum crucis, the crucial experiment, because it killed one theory outright. Glass adds nothing. Sunlight is not simple at all. It is a bundle of colors traveling together, each one refracted by its own fixed amount, and the prism is merely a comb that separates them. Newton then reversed the whole effect. He gathered the spread colors with a lens and passed them into a second prism placed upside down, and the fan folded back into a single white beam. The rainbow went in and plain sunlight came out. It is worth noticing what he did there. He did not simply observe more carefully than everyone else. He built a situation in which the old theory and the new theory had to predict different outcomes, and then he looked. That method, far more than the pretty colors, is what made the prism famous."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What was the old theory of color, and who was it inherited from?",
+            "Explain the experimentum crucis and why it settled the argument. Quote the phrase the passage uses to describe what the prism really is.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last paragraph claim is the real achievement, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the old theory, Newton's two-prism test, and the conclusion that color is in the light)",
+            "pure light was white and simple and color was a kind of damage; inherited from Aristotle",
+            "he passed one isolated blue beam into a second prism and it stayed blue, so glass adds nothing; quote: a comb that separates them",
+            "(inform, with detail: it defines the old and new theories and reports the experiment; some persuasive tone about method at the end)",
+            "(the method of forcing two theories to predict different outcomes; saved for last so the reader sees the point beyond the colors)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["refracted → ____", "isolated (beam) → ____", "manufactured → ____", "stubbornly → ____"],
+          "rows": 1,
+          "answers": [
+            "bent by a set amount when entering the glass",
+            "separated out on its own, away from the other colors",
+            "made or produced",
+            "in a way that refuses to change"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Newton recombined the colors into white light with a second prism. Why was that step worth doing after the blue test already worked?",
+            "The old theory had lasted for centuries and matched what people saw. Explain why a theory can fit the evidence and still be wrong."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it proved the colors were the original ingredients of white light, not leftovers of damage)",
+            "(inference: the same observation can fit more than one explanation until a test separates them)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which mattered more, Newton's discovery about light or his way of testing ideas? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Glass That Lets the Colors Out",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-prism", "templateLabel": "The Glass That Lets the Colors Out", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "prism",
+          "notes": ["Refractive index of crown glass: about 1.52", "Violet wavelength about 400 nanometers, red about 700", "Dispersion: index varies slightly with wavelength", "Experimentum crucis, Cambridge, 1666", "Indigo was added to make the count seven", "Binocular prisms work by total internal reflection", "Spectroscopy reads starlight the same way"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Wedge of Glass and the End of a Two Thousand Year Old Idea",
+          "text": "A prism is an unimpressive object. It is a wedge of glass with polished flat faces, no moving parts, no color of its own. It is also the instrument that dismantled one of the longest running ideas in European thought, and the reason we can tell what a star is made of without going there. Start with the physics. Light in a vacuum travels at about 186,000 miles per second, and nothing beats it. Inside glass it slows to roughly two thirds of that speed, because the light interacts with the electrons in the material as it passes. If a beam meets the surface at an angle, one side of the wave front enters the slower material before the other side does, and the beam pivots. That pivot is refraction. The crucial detail is that the slowdown is not identical for every color. Violet light, with its short wavelength, is held back slightly more than long wavelength red. The difference is small, a matter of a percent or two, but a prism has two slanted faces and the beam is bent at both, so the small difference is applied twice and widened. The colors leave the glass fanned into a spectrum. Physicists call this dispersion, and it is not decoration. It is a measurement. Now the history. From Aristotle onward, the standard view held that white light was pure and simple and that color was a modification of it, something added by darkness, thickness, or flaw. The prism, in that reading, dirtied the light. In 1666 Isaac Newton went at the question sideways. He darkened a room, admitted one beam through a hole in the shutter, and used a prism to cast a spectrum. Then he screened off everything but a single stripe and fed that lone beam into a second prism. The old theory predicted further change. The beam refused. Blue entered and blue emerged, bent a little further, altered in no other way. Newton named this the experimentum crucis, and then closed the trap from the other side: with a lens and an inverted prism he gathered the whole spectrum and pushed it back into a single beam of white light. Color was not damage. White was the mixture, and the colors were the ingredients. Two thousand years of authority fell to a piece of glass and a dark room. One human touch survives in the standard list of colors. Newton could see no clear boundary between blue and violet, but he wanted seven names, because seven matched the notes of the musical scale and the known planets, and he liked the correspondence. So indigo was inserted. Every child who recites red, orange, yellow, green, blue, indigo, violet is reciting a seventeenth century aesthetic preference alongside the physics. The instrument outgrew the man. Because each element absorbs and emits light at its own precise wavelengths, spreading starlight through a prism or its modern descendant, a diffraction grating, produces a barcode of bright and dark lines. Read the barcode and you know the star's composition, temperature, and motion. Helium was found in the spectrum of the sun before anyone found it on Earth. The expansion of the universe was first read as a shift in those lines toward the red end. All of it rests on a plain fact Newton proved in a shuttered room: the light already contains the answer, and the glass only spreads it out where we can look at it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the colors separate rather than bending together. Cite the evidence from the passage.",
+            "Contrast the old theory of color with what Newton established. Why did the two-prism test decide between them?",
+            "The passage says dispersion is not decoration, it is a measurement. Explain what that sentence means and how the final paragraph supports it.",
+            "Analyze the indigo paragraph. Why does the author include it, and what does it suggest about how science and human taste mix?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering refraction, dispersion, Newton's proof, and spectroscopy)",
+            "(each color is slowed by a different amount; cite: Violet light, with its short wavelength, is held back slightly more than long wavelength red)",
+            "(old view: color was a modification of pure white light added by flaw or darkness; Newton: white is a mixture and colors are the ingredients; the isolated blue beam did not change, so glass adds nothing)",
+            "(the spread of colors carries information about the light source; the final paragraph shows spectra revealing composition, temperature, and motion)",
+            "(it shows a famous piece of science carries a personal choice inside it; the physics is real but the count of seven was a preference)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["refraction → ____", "dispersion → ____", "wavelength → ____", "spectrum → ____"],
+          "rows": 2,
+          "answers": [
+            "the bending of a beam when it changes speed entering a new material at an angle",
+            "the separation of light into its colors because each is slowed by a different amount",
+            "the length of one wave of light, which sets its color",
+            "the fanned out band of colors produced when light is dispersed"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says helium was found in the spectrum of the sun before anyone found it on Earth. Explain what that fact shows about the power of indirect evidence.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a careful measurement can reveal something real long before anyone can touch or sample it directly)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Newton's real contribution was not discovering that white light is a mixture, but showing how to design an experiment that forces nature to answer. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

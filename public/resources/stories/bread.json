@@ -1,0 +1,321 @@
+{
+  "key": "bread",
+  "title": "The Bread That Was Alive",
+  "blurb": "Every hole in a slice of bread is a room a living thing built, then died inside.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Bread That Was Alive",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-bread", "templateLabel": "The Bread That Was Alive", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the holes in the bread." },
+        {
+          "kind": "image",
+          "imageKey": "bread",
+          "notes": ["Bread starts as sticky dough", "Yeast makes the bubbles", "The bubbles make the holes", "The oven makes it brown", "Warm bread smells sweet"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Bread starts as flour and water. You mix it. You push it. The dough is soft and squishy. Tiny helpers called yeast live in the dough. The yeast eats sugar. The yeast makes bubbles. The bubbles push the dough up. The dough gets big and puffy. Then it goes in the hot oven. It turns warm and brown. Now it is bread."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bubbles in each row. Write how many in the box.",
+          "emoji": "🫧",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bread    warm" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "dough", "right": "oven" },
+            { "left": "yeast", "right": "bubbles" },
+            { "left": "flour", "right": "bag" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big loaf of bread. Fill it with holes.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bread That Was Alive",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-bread", "templateLabel": "The Bread That Was Alive", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "bread",
+          "notes": ["Yeast is alive", "It is too small to see", "It eats sugar in the flour", "The gas it makes is carbon dioxide", "You breathe out that same gas"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bread That Was Alive",
+          "text": "Yeast is alive. It is so small that you need a microscope to see it. A spoonful of yeast holds billions of them. When you mix yeast into dough, the yeast starts to eat. It eats sugar from the flour. Then it burps out a gas. The gas is called carbon dioxide. It is the same gas you breathe out. The gas makes bubbles. The bubbles get stuck in the stretchy dough. Slowly, the dough puffs up like a balloon. In the hot oven, the bubbles grow bigger. Then the dough sets hard around them. Cut the loaf open and you can see every bubble the yeast made."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does the yeast eat?", "What gas does the yeast make?", "What holds the bubbles in place?"],
+          "rows": 2,
+          "answers": ["sugar from the flour", "carbon dioxide", "the stretchy dough"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Yeast is so small you need a ____ to see it.", "The yeast eats ____ from the flour.", "The gas makes ____ in the dough.", "The hot ____ sets the bread hard."],
+          "wordBank": ["microscope", "sugar", "bubbles", "oven"],
+          "answers": ["microscope", "sugar", "bubbles", "oven"]
+        },
+        { "kind": "draw", "prompt": "Draw a slice of bread with butter on it. Show all the little holes.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bread That Was Alive",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-bread", "templateLabel": "The Bread That Was Alive", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "bread",
+          "notes": ["Yeast is a fungus, like a tiny cousin of mushrooms", "Each yeast is one single cell", "Bread has only four basic parts: flour, water, salt, yeast", "The holes are trapped gas bubbles", "The oven heat kills the yeast"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tiny Bakers",
+          "text": "Bread is made from four things: flour, water, salt, and yeast. Three of them are not alive. The fourth one is. Yeast is a fungus, a tiny cousin of mushrooms, but each yeast is a single cell, far too small to see without a microscope. When you stir yeast into warm dough, you are feeding a huge crowd of living things. The yeast finds sugar in the flour and eats it. Like anything that eats, it makes waste. Yeast waste is a gas called carbon dioxide, the same gas that leaves your mouth when you breathe out. The gas has nowhere to go. Flour and water make a stretchy web inside the dough, and the bubbles get caught in it. Millions of bubbles push outward at once, and the dough swells. The oven finishes the job. Heat makes every bubble grow, the dough stretches one last time, and then it turns firm and holds that shape. The yeast dies in the heat. So every hole in a slice of bread is a room the yeast built."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Which of the four parts of bread is alive?",
+            "What does the yeast eat, and what does it make?",
+            "Why do the bubbles stay in the dough instead of floating away?",
+            "Why do you think the holes get bigger in the oven?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the yeast",
+            "it eats sugar in the flour and makes carbon dioxide gas",
+            "a stretchy web of flour and water traps them",
+            "(inference: heat makes the gas inside each bubble grow)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Tiny Bakers", "How to Grow Wheat on a Farm", "The Biggest Oven in the World"],
+          "answers": ["The Tiny Bakers"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Yeast is a ____, a tiny cousin of mushrooms.", "The gas yeast makes is called carbon ____.", "Each yeast is a single ____."],
+          "wordBank": ["fungus", "dioxide", "cell"],
+          "answers": ["fungus", "dioxide", "cell"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about bread, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bread That Was Alive",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-bread", "templateLabel": "The Bread That Was Alive", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bread",
+          "notes": ["Flour holds two proteins: glutenin and gliadin", "Wet them and knead, and they link into gluten", "Gluten is the stretchy web that traps the gas", "Oven spring: the last fast rise in the heat", "The Maillard reaction browns the crust", "Yeast dies near 140 degrees Fahrenheit"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Bread Has Holes",
+          "text": "Pick up a slice of bread and hold it to the light. It is full of holes. The holes are not a mistake. They are the whole point, and something alive put them there. Bread begins as flour, water, salt, and yeast. Yeast is a fungus, and each grain of it is a single living cell. Give it warmth, water, and sugar and it does what living things do. It eats, and it makes waste. Yeast waste comes out as carbon dioxide, the same gas you exhale. The gas cannot escape, because flour is more than powder. It carries two proteins, glutenin and gliadin. Dry, they do nothing at all. Add water and knead the dough, and they link into gluten, a stretchy web running through the whole lump. Every bubble of yeast gas gets trapped in that web, and as millions of bubbles inflate, the dough rises. Then comes the oven and one last surge that bakers call oven spring. The trapped gas expands in the heat, the loaf swells fast, and for a moment the dough is stretched as far as it will go. Near 140 degrees Fahrenheit the yeast dies. The starch drinks up water and stiffens, the gluten sets, and the shape locks in place for good. The crust is a separate piece of chemistry. Where the surface gets dry and hot, sugars and proteins react with one another and build hundreds of new flavor compounds. That reaction has a name, the Maillard reaction, and it is the reason toast smells like toast while raw dough smells like almost nothing. So a loaf is a kind of record. Every hole is a room a yeast cell built and then died inside."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words how gluten forms.",
+            "What is oven spring, and why does it happen?",
+            "The passage says a loaf is a kind of record. A record of what?",
+            "Why would bread made without yeast come out flat and dense?"
+          ],
+          "rows": 2,
+          "answers": [
+            "water plus kneading links glutenin and gliadin into a stretchy web",
+            "the last fast rise in the oven, because trapped gas expands in the heat",
+            "(a record of the yeast: every hole is a bubble it made)",
+            "(inference: nothing makes gas, so no bubbles get trapped in the gluten)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The holes and the crust of a loaf are made by a living fungus and by heat",
+            "Bread is the healthiest food a person can eat",
+            "Bakers invented gluten in a laboratory"
+          ],
+          "answers": ["The holes and the crust of a loaf are made by a living fungus and by heat"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["gluten → ____", "inflate → ____", "compounds → ____"],
+          "rows": 1,
+          "answers": [
+            "the stretchy web that forms when flour proteins meet water and kneading",
+            "to swell up with gas",
+            "substances made when different chemicals join together"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining, step by step, how a lump of dough turns into a loaf. Use at least three words from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bread That Was Alive",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-bread", "templateLabel": "The Bread That Was Alive", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bread",
+          "notes": ["Bread is older than farming", "Charred flatbread crumbs from Jordan: about 14,400 years old", "Baker's yeast: Saccharomyces cerevisiae", "Sourdough is wild yeast plus lactic acid bacteria", "Companion comes from Latin for with bread", "Lord comes from Old English for loaf keeper"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Fourteen Thousand Years of Bubbles",
+          "text": "For a long time the story went like this: people learned to farm, farming gave them grain, and grain gave them bread. Then archaeologists working at a site called Shubayqa 1, in the desert of northeastern Jordan, sifted through an ancient fireplace and found burnt crumbs. Under a microscope the crumbs turned out to be flatbread, ground from wild grain and wild tubers, baked on hot stones about 14,400 years ago. The people who made it were hunters and gatherers. Nobody farmed anything for another four thousand years. The story had been running backward. Bread did not come from farming. Bread may be part of why people bothered to farm at all. Those first flatbreads were flat because nothing in them made gas. Leavened bread, the puffed kind, was almost certainly an accident. Yeast drifts through the air and settles on grain, on skin, on everything. Leave a bowl of wet flour alone in a warm room and wild yeast finds it, feeds on the sugars, and fills the mush with carbon dioxide. Someone, somewhere, baked a bowl of forgotten batter instead of throwing it out, and it came out light. A sourdough starter is that same accident, kept alive on purpose. It is a small ecosystem in a jar: wild yeast making gas, and lactic acid bacteria making acid. The acid is what gives sourdough its tang and what keeps most spoiling microbes out. Bakers have kept some starters going for decades, feeding them flour like a pet. Bread pushed its way into language, too. A companion is literally someone you share bread with, from the Latin words for with and bread. The English word lord began as hlafweard, the loaf keeper, and lady began as the loaf kneader. That is how central this stuff was. The person with the bread was the person in charge. We treat a loaf as ordinary. It is one of the oldest technologies we still use every single day, and it is run by a fungus we cannot see."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did the crumbs at Shubayqa 1 change about the accepted story? Quote the phrase the passage uses.",
+            "Explain why the first flatbreads were flat.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the author doing with the last sentence, and why put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering bread predating farming, accidental leavening, and bread in language)",
+            "bread came before farming rather than after it; quote: The story had been running backward",
+            "nothing in them made gas, so no bubbles were trapped",
+            "(inform, with detail: it explains findings and defines terms; the closing turn is mildly persuasive)",
+            "(it reframes an everyday object as ancient technology; last position gives it weight)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["leavened → ____", "tubers → ____", "ecosystem → ____", "spoiling → ____"],
+          "rows": 1,
+          "answers": [
+            "raised by gas so the bread is light rather than flat",
+            "swollen underground plant parts that can be eaten, like roots",
+            "a community of living things sharing one place",
+            "going bad, rotting"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says bread may be part of why people bothered to farm at all. Explain the reasoning behind that idea.",
+            "Why would a sourdough starter that has been fed for fifty years still be useful, when the flour in it is replaced every week?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(if people already valued bread, grain was worth planting and tending)",
+            "(the yeast and bacteria keep reproducing, so the culture continues even as the flour changes)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which is the more impressive invention, the wheel or leavened bread? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bread That Was Alive",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-bread", "templateLabel": "The Bread That Was Alive", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "bread",
+          "notes": ["Saccharomyces cerevisiae: baker's yeast, brewer's yeast, one species", "Fermentation makes carbon dioxide and alcohol; the alcohol bakes off", "Yeast inflates air pockets made by mixing, it cannot start a bubble", "Gluten: glutenin for strength, gliadin for stretch", "Maillard reaction: sugars plus amino acids equals crust flavor", "Carbonized loaves survive from Pompeii, AD 79, scored and stamped"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Loaf Is a Fossil of Its Own Making",
+          "text": "Bread looks like the simplest food on the table, and it is one of the most complicated things most people make. Four ingredients, one of them alive, and a set of reactions that a chemist would be pleased to have designed on purpose. Start with the flour, which is mostly starch plus about ten percent protein. Two of those proteins matter: glutenin, which is strong and springy, and gliadin, which is loose and flowing. Dry, they sit in the sack and do nothing. Add water and work the dough, and they bond into long tangled chains called gluten. Glutenin gives that network its strength, gliadin lets it flow and stretch, and between them they make a fabric that can hold a gas without tearing. This is why kneading matters. You are not mixing. You are building a structure. Now the living part. Baker's yeast is Saccharomyces cerevisiae, a single-celled fungus, and it is the same species brewers use to make beer. In the dough it finds sugars, some already present and some released as enzymes cut the starch apart, and it ferments them. Fermentation yields two products: carbon dioxide and alcohol. The alcohol boils away in the oven. The gas stays, and the gas is the whole show. Here is the detail almost everyone gets wrong. Yeast cannot create a bubble. Carbon dioxide dissolves into the water of the dough first, and it can only come out of solution into a gas pocket that already exists. Those pockets come from you, whisked in during mixing and kneading. The yeast does not build the holes. It inflates the ones you gave it. A loaf that was mixed carelessly has fewer places for gas to gather, and it bakes up coarse and uneven. Then the oven, where four things happen at once and in order. The trapped gas expands with heat and the loaf leaps upward in a final rise bakers call oven spring. Near 140 degrees Fahrenheit the yeast dies, its work finished. The starch granules absorb water and swell into a solid gel while the gluten proteins tighten and set, converting a stretchy bag of gas into a firm sponge that will keep its shape. Last, at the surface, where the crust has dried out and climbed past 300 degrees, sugars and amino acids collide in the Maillard reaction and generate hundreds of new aromatic compounds. Toast smells like toast for this reason. Raw dough smells like almost nothing at all. What is left when it cools is a fossil. Not a fossil of some other creature, but a cast of the loaf's own history: every hole a bubble, every bubble a place where a fungus exhaled, every wall a protein that stretched and then froze. We have been doing this a long time. Carbonized loaves pulled from the ovens of Pompeii, buried in AD 79, are scored into neat wedges and pressed with a stamp bearing the baker's name, so a Roman could tell whose bread was whose. That baker understood almost none of the chemistry above. He did not need to. The yeast did the work, and the loaf kept the record."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the roles of glutenin and gliadin, and why the passage says kneading is building rather than mixing. Cite the evidence.",
+            "The passage calls one detail the thing almost everyone gets wrong. State it, and explain why a carelessly mixed loaf bakes up coarse.",
+            "Identify the structure of this passage. What order does the author move in, and where does the turn from science to history happen?",
+            "Analyze the closing image of a loaf as a fossil. Is it accurate, or only a nice line? Argue your answer using the text."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(glutenin gives strength, gliadin gives stretch; cite: You are not mixing. You are building a structure.)",
+            "(yeast cannot create a bubble, it only inflates pockets whisked in during mixing; fewer pockets means gas gathers in fewer, larger places)",
+            "(ingredients, then the living agent, then the oven, then history; the turn comes at the Pompeii loaves)",
+            "(accurate: the holes are a physical cast of past events, per every hole a bubble, every bubble a place where a fungus exhaled)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["ferments → ____", "enzymes → ____", "gel → ____", "carbonized → ____"],
+          "rows": 2,
+          "answers": [
+            "breaks sugars down without oxygen, producing carbon dioxide and alcohol",
+            "substances that cut larger molecules apart, here starch into sugars",
+            "a soft solid formed when something absorbs liquid and swells",
+            "turned to carbon by heat, which is how the Pompeii loaves survived"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage notes that baker's yeast and brewer's yeast are the same species. What does that suggest about how bread and beer were discovered?",
+            "The Roman baker understood almost none of the chemistry. Explain what that says about the relationship between knowing how something works and being able to do it well.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(both rely on the same fermentation, so they were likely stumbled on together from wet grain)",
+            "(skill can be handed down through practice long before anyone can explain it)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Bread should count as a technology, not just a food. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

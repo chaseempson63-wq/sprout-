@@ -1,0 +1,319 @@
+{
+  "key": "hamster",
+  "title": "The Hamster With Pockets in Its Cheeks",
+  "blurb": "The night worker that stuffs its face with seeds, digs a pantry underground, and is named after a word that means to hoard.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Hamster With Pockets in Its Cheeks",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-hamster", "templateLabel": "The Hamster With Pockets in Its Cheeks", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the hamster's fat cheeks." },
+        {
+          "kind": "image",
+          "imageKey": "hamster",
+          "notes": ["It has a pocket in each cheek", "It fills them with seeds", "It sleeps all day", "It digs tunnels under the ground"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a hamster. It is small and soft. It has round black eyes. Look at its cheeks. They puff out big and round. The hamster puts seeds in its cheeks. It carries them home. Then it pushes the seeds out with its little paws. It hides them in a pile. The hamster sleeps all day. It wakes up at night and runs."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the seeds in each row. Write how many in the box.",
+          "emoji": "🌰",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "seed    dig" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "hamster", "right": "tunnel" },
+            { "left": "bird", "right": "nest" },
+            { "left": "fish", "right": "pond" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a hamster with its cheeks full of seeds. Make them nice and round.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Hamster With Pockets in Its Cheeks",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-hamster", "templateLabel": "The Hamster With Pockets in Its Cheeks", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "hamster",
+          "notes": ["Its cheek pockets reach back to its shoulders", "It carries food home instead of eating it", "It digs rooms under the ground", "One room is a pantry for seeds", "It works all night"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hamster With Pockets in Its Cheeks",
+          "text": "A hamster has a pocket in each cheek. The pockets are made of stretchy skin. They reach all the way back to its shoulders. When a hamster finds seeds, it does not eat them right away. It stuffs them into its cheeks. Its head grows fat and wide. Then it runs down into its burrow under the ground. It pushes the seeds out with its paws and stacks them in a little room. That room is its pantry. A hamster sleeps all day and works all night."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a hamster keep in its cheeks?", "Where does the hamster take the seeds?", "When does a hamster work?"],
+          "rows": 2,
+          "answers": ["seeds", "down into its burrow under the ground", "all night"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A hamster has a pocket in each ____.", "The pockets are made of stretchy ____.", "It stacks the seeds in its ____.", "A hamster sleeps all ____."],
+          "wordBank": ["cheek", "skin", "pantry", "day"],
+          "answers": ["cheek", "skin", "pantry", "day"]
+        },
+        { "kind": "draw", "prompt": "Draw the hamster's burrow. Show the nest room and the pantry full of seeds.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Hamster With Pockets in Its Cheeks",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-hamster", "templateLabel": "The Hamster With Pockets in Its Cheeks", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "hamster",
+          "notes": ["The name comes from a German word for hoarding", "Cheek pouches stretch back to the shoulders", "A burrow has a nest, a bathroom, and a pantry", "It wakes at dusk and works in the dark", "A full hoard is how it lives through winter"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal Named After Hoarding",
+          "text": "The word hamster comes from a German word, hamstern, which means to hoard. It is a good name. A hamster spends its nights gathering food and carrying it home, and it almost never eats where it finds a meal. Its cheek pouches are two bags of loose skin that stretch from its mouth back to its shoulders. A hungry hamster can pack them until its head looks twice as wide. Then it hurries down into its burrow and pushes the load out with its front paws. A wild hamster's burrow is not one hole. It is a set of rooms joined by tunnels, dug a few feet down. There is a nest room lined with soft grass, a bathroom room, and a pantry stacked with seeds. The pantry matters. Winter is long, food is scarce, and a hamster that hoards well is a hamster that lives until spring. Hamsters sleep through the day and wake at dusk. In the wild they travel a long way each night to fill those cheeks."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does the German word hamstern mean?",
+            "How far back do a hamster's cheek pouches stretch?",
+            "Name the three kinds of rooms in a hamster's burrow.",
+            "Why do you think a hamster carries its food home instead of eating it where it finds it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "to hoard",
+            "from its mouth back to its shoulders",
+            "a nest room, a bathroom room, and a pantry",
+            "(inference: it is safer underground, and the food is saved for winter)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Animal Named After Hoarding", "How to Build a Bird Feeder", "The Tallest Mountains in Germany"],
+          "answers": ["The Animal Named After Hoarding"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A hamster carries seeds in its cheek ____.", "The room where it stacks its food is the ____.", "Hamsters wake up at ____."],
+          "wordBank": ["pouches", "pantry", "dusk"],
+          "answers": ["pouches", "pantry", "dusk"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you were a hamster, what would you keep in your pantry, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Hamster With Pockets in Its Cheeks",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-hamster", "templateLabel": "The Hamster With Pockets in Its Cheeks", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hamster",
+          "notes": ["Golden hamsters were dug up near Aleppo in 1930", "Almost all pet golden hamsters share those ancestors", "Pregnancy lasts about sixteen days", "Wild golden hamsters are listed as vulnerable", "Its front teeth never stop growing", "It is near-sighted and finds its way by smell"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Burrow, Nearly Every Hamster",
+          "text": "In 1930, a zoologist named Israel Aharoni went looking for an animal that most scientists thought was already gone. The golden hamster had been described once, back in 1839, from a single specimen. After that, for ninety years, nobody found another one. Near the city of Aleppo, in Syria, Aharoni's team dug into a wheat field and opened a burrow several feet down. Inside was a mother golden hamster and her litter of pups. He carried them back to Jerusalem in a box. Most of that litter did not survive the trip and the weeks that followed. Some chewed straight through their wooden cage and vanished into the walls. Only a handful were left to breed. That handful is the reason you can meet a hamster in a pet store today. Nearly every golden hamster on Earth, in homes and in laboratories, descends from those few survivors. Their young were shipped from Jerusalem to England, then on to the United States, and the numbers grew quickly, because a golden hamster is pregnant for only about sixteen days. That is one of the shortest pregnancies of any mammal. Meanwhile, back in Syria, the wild golden hamster has not done well. Its home is farmland, and farmland keeps changing. Scientists now list the species as vulnerable, which means it is at real risk of disappearing. Think about how odd that is. As a pet, this animal is everywhere. As a wild animal, it is barely holding on in the fields where it belongs."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why was Aharoni's dig such a surprise to scientists?",
+            "What does the passage mean when it says nearly every golden hamster descends from those few survivors?",
+            "How did a sixteen-day pregnancy help hamsters spread around the world so fast?",
+            "The passage calls it odd that hamsters are everywhere as pets and rare in the wild. Explain why that is a problem, not just a strange fact."
+          ],
+          "rows": 2,
+          "answers": [
+            "the species had been seen once in 1839 and not found again for ninety years, so many thought it was gone",
+            "(they are all related; the pets alive today came from that one small group)",
+            "(new litters arrive quickly, so the population grows fast)",
+            "(inference: an animal that survives only in cages has lost its wild home and its place in nature)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A single dig in 1930 gave the world its pet hamsters, while the wild ones quietly slipped away",
+            "Hamsters are the easiest pet for a young child to look after",
+            "Syria has the best wheat fields in the world"
+          ],
+          "answers": ["A single dig in 1930 gave the world its pet hamsters, while the wild ones quietly slipped away"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["zoologist → ____", "specimen → ____", "descends from → ____", "vulnerable → ____"],
+          "rows": 1,
+          "answers": [
+            "a scientist who studies animals",
+            "one single animal collected and studied as an example",
+            "comes from those ancestors",
+            "at real risk of disappearing"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is it enough to save an animal by keeping it as a pet? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Hamster With Pockets in Its Cheeks",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-hamster", "templateLabel": "The Hamster With Pockets in Its Cheeks", "age": 12 },
+      "blocks": [
+        { "kind": "image",
+          "imageKey": "hamster",
+          "notes": ["Cheek pouches have no spit glands, so the load stays dry", "A hoarder alone: no herd, no lookouts, no help", "Wild burrows drop several feet with sorted rooms", "A caged hamster still runs miles a night on a wheel", "Wild European hamster hoards hold pounds of grain", "Scent glands on its hips mark the trail home"]
+        },
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Is Mostly Pantry",
+          "text": "A hamster is built around one idea: take it home, and take it home now. Start with the pouches. A hamster's cheeks are not cheeks the way yours are. They are two loose bags of skin running from the corners of the mouth back along the head to the shoulders, and they contain no spit glands, so the cargo stays dry. A feeding hamster works fast, sorting seeds with its paws and packing them in until its skull seems to double in width. Then it leaves. The eating happens later, underground, where nothing is watching. The burrow it returns to is a small piece of engineering. Tunnels drop a few feet into the soil and open into rooms with jobs: a nest of shredded grass, a bathroom kept well away from the food, and one or more chambers used as a pantry. Wild hamsters are not casual about the pantry. People digging out the burrows of the wild European hamster have found pounds of grain stacked underground, sorted, clean, and dry. This explains the shape of the whole animal. A hamster is small, edible, and alone. It has no herd, no lookouts posted on a rock, and famously poor eyesight. What it has is speed, a hole in the ground, and a pantry it filled in the dark while the owls were busy somewhere else. The hoarding is not greed. It is the entire plan. Now the strange part. Put a hamster in a cage with a wheel and food it never has to search for, and it will still run. Not a little. A hamster can cover several miles in one night on a wheel, going nowhere at all. Researchers once set running wheels outdoors in a quiet field and filmed what happened. Wild mice found them, climbed on, and ran, with no food offered and no reward of any kind. Whatever a hamster is doing on that wheel, it did not learn from the cage. It arrived with it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does it matter that the cheek pouches contain no spit glands?",
+            "The author writes that the hoarding is not greed. Explain what it is instead, and quote the phrase the passage uses.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "Why does the author save the running-wheel research for the very end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering pouches and burrow pantry plus hoarding as a survival plan and the unexplained wheel running)",
+            "the food it carries stays dry instead of getting soaked",
+            "(it is a survival plan for a small, hunted animal; quote: It is the entire plan)",
+            "(inform, with a persuasive edge: it explains anatomy and cites research, and it argues that hoarding is a plan, not greed)",
+            "(it is the one thing the survival explanation does not cover, so it lands as a mystery)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["cargo → ____", "chambers → ____", "edible → ____", "casual → ____"],
+          "rows": 1,
+          "answers": [
+            "the load an animal is carrying",
+            "rooms inside the burrow",
+            "able to be eaten, in this case by a predator",
+            "relaxed or careless about something"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a hamster has no herd and no lookouts. Explain how that fact shaped its body and its behavior.",
+            "The wild mice ran on the wheels with no reward. What does that suggest about why animals run, and how could a scientist test it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(alone and hunted, so it needs speed, a burrow, and stored food rather than group defense)",
+            "(the running may be its own reward; test by offering wheels with and without food and measuring use)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is a wheel a kindness or a poor substitute for the miles a wild hamster would run? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Hamster With Pockets in Its Cheeks",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-hamster", "templateLabel": "The Hamster With Pockets in Its Cheeks", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hamster",
+          "notes": ["Cricetus cricetus: the wild European hamster, black-bellied", "Hunted as a crop pest for centuries, bounties paid per skin", "Listed critically endangered in 2020", "Corn is poor in usable niacin, vitamin B3", "Nixtamalization: lime water unlocks the niacin in corn", "Conservation now means changing what farmers plant"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hamster That Ate Only Corn",
+          "text": "For most of recorded history, the European hamster was a problem. It is a far bigger animal than the pet you know, roughly the size of a loaf of bread, with a black belly and white patches, and it lived across the grain fields of Europe from France to Russia. It dug, it hoarded, and what it hoarded was the harvest. Farmers dug out its burrows and took the grain back. Governments paid bounties for its skin, and in some years hundreds of thousands were killed. In 2020, the International Union for Conservation of Nature moved the European hamster onto its list of critically endangered species, warning that it could vanish within about thirty years. In under a century, an animal hunted as a pest had become an animal running out of time. Nobody set out to do that. The interesting question is how it happened anyway. Part of the answer is ordinary. The fields changed. Hedgerows came out, plowing went deeper, harvests arrived earlier and left less behind, and a hamster that wakes from hibernation into a bare, chemically clean field is a hamster with nothing to hoard. Part of the answer is stranger, and it came out of a French laboratory. Researchers had noticed that hamster mothers in corn-growing regions were doing something appalling: giving birth normally, then eating their own pups within days. So they tested the diet directly. One group of hamsters was fed wheat, another corn, each with clover or worms alongside. The wheat-fed mothers raised about four out of five of their pups. The corn-fed mothers raised almost none. Those animals ran in circles, their tongues turned dark, and their blood ran thick and wrong. The cause turned out to be a vitamin. Corn is poor in niacin, and the niacin it does contain is chemically bound up in a form animals cannot absorb. Humans learned this the hard way. Whole regions that lived mainly on corn suffered pellagra, a niacin-deficiency disease of rashes, confusion, and death, and the cause was not pinned down until the 1930s. The peoples of Mexico and Central America had solved it thousands of years earlier by soaking corn in lime water, a process called nixtamalization, which unlocks the vitamin. The hamsters of the French farmland had no such option. When a field is corn from one horizon to the other, a hoarder's greatest strength inverts into a trap. It fills its pantry perfectly, and its pantry starves it. That is the part worth sitting with. The hamster did nothing wrong. It performed the behavior that had carried its species for thousands of years, exactly as well as it always had. We changed what grew in the field, and the behavior kept running anyway. There are people working on it now. Programs in France and Germany breed hamsters and release them, and pay farmers to plant strips of wheat, alfalfa, and clover between the rows of corn. In a few places the numbers have ticked upward. It is a small repair, and a slow one, and it tells you the true shape of the problem. Saving this animal turns out not to be about the animal at all. It is about what we plant."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the corn experiment: what was compared, what was measured, and what the results showed. Cite one exact phrase describing the corn-fed animals.",
+            "The passage says a hoarder's greatest strength inverts into a trap. Explain that reversal in your own words.",
+            "Identify the turn in the passage: where does it stop reporting and start arguing, and how does the author signal it?",
+            "The final two sentences claim the problem is not about the animal at all. Analyze what that move is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(wheat diet vs corn diet, pup survival measured; wheat mothers raised about four in five, corn mothers almost none; cite: their tongues turned dark)",
+            "(hoarding one crop perfectly means storing only the food that lacks the vitamin, so its skill kills it)",
+            "(at That is the part worth sitting with; a short direct sentence shifts from evidence to judgment)",
+            "(it reassigns responsibility from hamster behavior to human farming choices; earned by the diet study and the field-change evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["bounty → ____", "hibernation → ____", "nixtamalization → ____", "inverts → ____"],
+          "rows": 2,
+          "answers": [
+            "a payment offered for killing or catching an animal",
+            "a deep winter sleep that carries an animal through the cold",
+            "soaking corn in lime water to unlock the niacin in it",
+            "turns into its opposite"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says people suffered pellagra for centuries while Mexican cooks had already solved it. What does that comparison add to the hamster story?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it shows the corn problem is old and human too, and that the fix is knowledge rather than biology)",
+            "(student question plus a credible source type, such as a peer-reviewed ecology study or a conservation program report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A farmer should not be asked to give up part of a field for an animal that once ate his crops. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

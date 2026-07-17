@@ -1,0 +1,315 @@
+{
+  "key": "firefly",
+  "title": "The Beetle That Carries a Lantern",
+  "blurb": "It is not a fly, it does not get hot, and every blink in the dark is a password.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Beetle That Carries a Lantern",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-firefly", "templateLabel": "The Beetle That Carries a Lantern", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the light on the firefly." },
+        {
+          "kind": "image",
+          "imageKey": "firefly",
+          "notes": ["It glows at the end of its body", "It comes out at night", "It is a beetle, not a fly", "Its light stays cool"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A firefly is not really a fly. It is a little beetle. In the summer it flies at night. The end of its body glows. The light is soft and yellow. It blinks on. It blinks off. The firefly is talking to other fireflies. The light is not hot. You can hold a firefly in your hands and it will not burn you."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the lights in each row. Write how many in the box.",
+          "emoji": "✨",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "glow    night" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to where it lives.",
+          "pairs": [
+            { "left": "firefly", "right": "grass" },
+            { "left": "owl", "right": "tree" },
+            { "left": "fish", "right": "pond" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a firefly in the dark. Give it a big yellow light.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Beetle That Carries a Lantern",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-firefly", "templateLabel": "The Beetle That Carries a Lantern", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "firefly",
+          "notes": ["A firefly is a beetle", "It makes its own light", "The light never gets hot", "Baby fireflies glow too", "It blinks to talk"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Beetle That Carries a Lantern",
+          "text": "On a warm night, look at the grass. You may see a tiny light blink on and then off. That is a firefly. A firefly is a beetle with a lantern at the end of its body. The firefly makes the light itself. It mixes air with something special inside its body, and the light turns on. The light stays cool. It never gets hot. Every kind of firefly blinks in its own way. Some blink fast. Some blink slow. A male firefly flies over the field and blinks. A female firefly sits in the grass and blinks back. That is how they find each other in the dark."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What kind of bug is a firefly?", "Where is the firefly's lantern?", "Does the light get hot?"],
+          "rows": 2,
+          "answers": ["it is a beetle", "at the end of its body", "no, it stays cool"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A firefly is really a ____.", "It carries a ____ at the end of its body.", "The light always stays ____.", "The male flies and the female ____ back."],
+          "wordBank": ["beetle", "lantern", "cool", "blinks"],
+          "answers": ["beetle", "lantern", "cool", "blinks"]
+        },
+        { "kind": "draw", "prompt": "Draw a field at night with fireflies blinking. Add the moon.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Beetle That Carries a Lantern",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-firefly", "templateLabel": "The Beetle That Carries a Lantern", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "firefly",
+          "notes": ["About 2,000 kinds live around the world", "The glow chemical is called luciferin", "Almost no heat, so it is called cold light", "Each kind blinks its own pattern", "Baby fireflies eat snails and slugs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Blinking Code",
+          "text": "A firefly is not a fly at all. It is a beetle, and there are about two thousand kinds of them around the world. What makes a firefly special is the lantern it carries at the end of its body. Inside that lantern, the firefly mixes a chemical called luciferin with oxygen from the air. The mixture glows. Almost all of the energy turns into light instead of heat, so the lantern stays cool. A light bulb wastes most of its energy as heat. A firefly wastes almost none. The blinking is not random. It is a code. Each kind of firefly has its own pattern, a little like a password. A male flies low over a field and flashes his pattern. A female of the same kind waits in the grass and flashes the right answer back. If the pattern matches, the two find each other in the dark. Baby fireflies glow too. They live in the soil for a year or more, hunting snails and slugs. Their glow is a warning that says do not eat me, I taste terrible. It works."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What kind of insect is a firefly?",
+            "What two things mix inside the lantern to make light?",
+            "How does a female firefly answer a male?",
+            "Why do you think each kind of firefly needs its own blinking pattern?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is a beetle",
+            "luciferin and oxygen from the air",
+            "she waits in the grass and flashes the right answer back",
+            "(inference: so it can find its own kind in a dark field full of other fireflies)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Blinking Code", "How to Change a Light Bulb", "The Fastest Bird in the World"],
+          "answers": ["The Blinking Code"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The glowing chemical is called ____.", "The firefly mixes it with ____ from the air.", "Baby fireflies hunt snails and ____."],
+          "wordBank": ["luciferin", "oxygen", "slugs"],
+          "answers": ["luciferin", "oxygen", "slugs"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather have a light that makes heat or a light that stays cool, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Beetle That Carries a Lantern",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-firefly", "templateLabel": "The Beetle That Carries a Lantern", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "firefly",
+          "notes": ["Family Lampyridae, a beetle", "Luciferin plus luciferase plus oxygen plus ATP", "Bioluminescence: light made by a living thing", "A bulb wastes energy as heat, a firefly barely does", "Some females copy other species' flashes and eat the males", "Many adult fireflies barely eat at all"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Cold Light",
+          "text": "Nearly everything people assume about the firefly is wrong. It is not a fly. It is a beetle, one of about two thousand species in a family called Lampyridae. It does not burn anything to make its glow, and it does not soak up sunlight during the day and give it back at night. What it does is chemistry. Near the tip of its abdomen sits a small organ packed with a molecule called luciferin. When luciferin meets an enzyme called luciferase, plus oxygen and a bit of the same fuel your muscles run on, the reaction gives off a photon, a single particle of light. Multiply that reaction across millions of cells and you get a lantern. The impressive part is not that it glows. It is how little the firefly wastes. An old light bulb turns roughly five percent of its energy into light and throws away the rest as heat, which is why a lamp is hot to touch. The firefly runs far cleaner. Almost none of its energy escapes as heat, and that is why you can cup one in your hands and feel nothing at all. Scientists call this cold light. The flashing itself is a language. Each species keeps its own schedule: a certain number of pulses, a certain pause between them, a certain time after sunset. A male patrols the field broadcasting his species pattern. A female of that species waits in the grass and answers at exactly the right moment. Get the timing wrong and nothing happens. There is a twist. Females of one group, the Photuris fireflies, have learned to copy the patterns of other species. When a male of a different kind flashes, she answers in his code, perfectly timed. He flies down expecting a mate and she eats him instead."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is bioluminescence, in your own words?",
+            "Explain why a light bulb gets hot but a firefly does not.",
+            "Why does the timing of a female's answering flash matter so much?",
+            "The passage calls the Photuris firefly a twist. Why is she a problem for the whole flashing system?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(light made by a living thing through a chemical reaction)",
+            "a bulb wastes about ninety five percent of its energy as heat; the firefly turns nearly all of it into light",
+            "the pattern and timing tell a male she is the same species, so the wrong timing means no answer",
+            "(inference: if the code can be faked, a male cannot fully trust any answering flash)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A firefly makes almost heatless light by chemistry, and uses it as a language that can be faked",
+            "Fireflies store sunlight during the day and release it at night",
+            "Light bulbs are more efficient than any animal"
+          ],
+          "answers": ["A firefly makes almost heatless light by chemistry, and uses it as a language that can be faked"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["luciferase → ____", "photon → ____", "abdomen → ____"],
+          "rows": 1,
+          "answers": ["an enzyme that helps the glow reaction happen", "a single particle of light", "the back section of an insect's body"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: engineers have tried for years to copy the firefly's cold light. Explain why a light that makes no heat would be useful, and give two examples of where you would want one.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Beetle That Carries a Lantern",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-firefly", "templateLabel": "The Beetle That Carries a Lantern", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "firefly",
+          "notes": ["Family Lampyridae, roughly 2,000 species", "Luciferin + luciferase + oxygen + ATP = a photon", "Cold light: almost no energy lost as heat", "Photuris females mimic other species and eat the males", "Photinus carolinus flashes in unison in the Smokies", "Light pollution drowns out the signal"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Language of Light",
+          "text": "The firefly is misnamed twice over. It is not a fly, and it does not carry fire. It is a beetle, one of roughly two thousand species in the family Lampyridae, and its glow is chemistry rather than combustion. In an organ near the tip of the abdomen, a molecule called luciferin meets an enzyme called luciferase. Add oxygen and ATP, the energy currency that runs your own muscles, and the reaction releases a photon. Repeat it across millions of cells and the beetle lights up. What impresses engineers is the efficiency. An incandescent bulb converts about five percent of its energy into light and sheds the rest as heat. The firefly loses almost nothing to heat. You can hold one in a closed hand and feel no warmth at all. We call this cold light, and despite decades of trying, human engineering has never quite matched it. But the chemistry is only the machinery. The interesting question is what the light is for. It is a language, and a precise one. Each species flashes on its own schedule: a set number of pulses, a set gap between them, a set height above the ground, a set number of minutes after sunset. A male patrols a field broadcasting the pattern of his species. A female of that species, perched in the grass, waits a specific fraction of a second and answers. The pattern is not decoration. It is identification, in a dark field crowded with strangers. And any code that can be read can be copied. Females of the genus Photuris have learned the dialects of other fireflies. When a male of the genus Photinus flashes his pattern, she answers him in his own language, correctly timed, and he descends to a mate that is not a mate. She eats him. She is not only feeding. Photinus fireflies carry defensive chemicals that Photuris cannot manufacture herself, and by consuming him she takes those chemicals into her own body and becomes distasteful to spiders. Biologists call these hunters femmes fatales. Strangest of all are the synchronous fireflies. In the Great Smoky Mountains, thousands of Photinus carolinus flash in unison on June nights. The hillside goes dark, then bright, then dark again, as though someone were flipping a switch. No one is flipping a switch. For years, the scientists who reported it were quietly disbelieved. Fireflies are now getting harder to find. Their larvae need damp soil and rotting wood, which tidy lawns do not offer. Pesticides reach them underground. And porch lights, streetlights, and headlights wash out the very signal the whole system depends on. A firefly flashing into a lit yard is shouting in a room where everyone is already shouting."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says the firefly is misnamed twice over. Explain both mistakes.",
+            "Explain how a Photuris female benefits twice from eating a Photinus male. Quote the phrase the passage uses for these hunters.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the comparison in the last sentence and why the author chose to end there."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering cold-light chemistry + flash language and mimicry + decline)",
+            "it is a beetle rather than a fly, and its light is chemistry rather than fire or combustion",
+            "she gets a meal and she takes in defensive chemicals that make her distasteful to spiders; quote: femmes fatales",
+            "(inform, with detail: it defines terms and gives facts, though the ending turns persuasive)",
+            "(light pollution drowns the flash signal the way noise drowns a voice; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["luciferase → ____", "incandescent → ____", "synchronous → ____", "distasteful → ____"],
+          "rows": 1,
+          "answers": [
+            "the enzyme that drives the light-producing reaction",
+            "producing light by being heated, like an old bulb",
+            "happening at the same time as one another",
+            "unpleasant to eat"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Scientists who reported synchronous fireflies were disbelieved. Why might a scientist doubt a report like that?",
+            "The flash code helps fireflies find their own species, and it is also what makes them easy to trick. Explain why the same feature can be both a strength and a weakness."
+          ],
+          "rows": 3,
+          "answers": [
+            "(they had not observed it themselves and coordinated insects sounded impossible without evidence)",
+            "(inference: a signal has to be predictable to be understood, and predictable signals can be imitated)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should neighborhoods turn off outdoor lights during firefly season? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Beetle That Carries a Lantern",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-firefly", "templateLabel": "The Beetle That Carries a Lantern", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "firefly",
+          "notes": ["Family Lampyridae, about 2,000 species", "Luciferin + luciferase + oxygen + ATP releases a photon", "Roughly 40% efficient versus about 5% for an old bulb", "Photuris females mimic Photinus code to hunt and steal defenses", "Photinus carolinus synchronizes in the Great Smoky Mountains", "Luciferase is used in labs to detect living cells"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Code in the Grass",
+          "text": "On a June night in the Great Smoky Mountains, thousands of fireflies blink at the same instant. The hillside goes dark, then bright, then dark again, over and over, as though someone were flipping a switch. No one is flipping a switch. The beetles are doing it themselves, and for decades the people who reported it were politely disbelieved. Start with the basics, because most of what people assume about fireflies is wrong. A firefly is not a fly. It is a beetle, one of roughly two thousand species in the family Lampyridae. It does not burn anything, and it does not store sunlight during the day. What it does is chemistry. In an organ near the tip of the abdomen, a molecule called luciferin meets an enzyme called luciferase, together with oxygen and ATP, the same energy currency that runs your muscles. The reaction releases a photon. Repeat it across millions of cells and you have a lantern. The remarkable part is the efficiency. An incandescent bulb turns roughly five percent of its energy into light and dumps the remainder as heat, which is why a lamp burns your fingers. The firefly runs at something closer to forty percent, and it sheds almost no heat at all. You can close your hand around one and feel nothing. Engineers have a name for what the beetle does routinely and we still cannot do well: cold light. Now the harder question. What is the light for? It is a language, and a strict one. Each species flashes to its own schedule: a set number of pulses, a set interval between them, a set height above the ground, a set number of minutes after sunset. A male patrols the field broadcasting the pattern of his species. A female of that species, waiting in the grass, pauses a precise fraction of a second and answers. Get the interval wrong and nothing happens. The pattern is not decoration. It is identification, in a dark field full of strangers. Which is precisely why it can be exploited. Females of the genus Photuris have learned the dialects of other fireflies. When a Photinus male broadcasts, she replies in his own code, correctly timed, and he descends to a mate that is not a mate. She eats him. She is not merely feeding. Photinus fireflies carry defensive chemicals that Photuris cannot manufacture herself, and by consuming him she absorbs those chemicals and becomes poisonous to spiders. Biologists call these predators femmes fatales, and they demonstrate something worth sitting with: any signal reliable enough to be useful is reliable enough to be faked. The synchronous fireflies of the Smokies run the same system in chorus. Why they agree on a beat is still argued over. One proposal is that a crowd flashing in unison makes each individual pattern easier to read against the noise of everyone else. The firefly has also ended up in laboratories. Because the glow reaction requires ATP, and because only living cells carry ATP, researchers use luciferase as a detector: add it to a sample, and if the sample lights up, something in it is alive. A beetle's courtship signal has become a standard tool for testing whether cells are living. Fireflies are getting harder to find. Their larvae need damp soil and rotting wood, which a tidy lawn does not provide. Pesticides reach them underground. And porch lights, streetlights, and headlights wash out the very signal the entire system is built on. A firefly flashing into a floodlit yard is shouting in a room where everyone is already shouting. The insect that solved cold light cannot solve our lighting. That problem is not the beetle's. It is ours."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by cold light and how the comparison to a bulb supports the point. Cite the evidence.",
+            "Explain the claim the Photuris section is making about signals. Quote the sentence that states it.",
+            "Identify the shift in the passage: where does it turn, and how does the author signal it?",
+            "The passage ends by saying the problem is not the beetle's, it is ours. Analyze what that move is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(light produced with almost no wasted heat; cite: turns roughly five percent of its energy into light and dumps the remainder as heat)",
+            "(a dependable code invites imitation; cite: any signal reliable enough to be useful is reliable enough to be faked)",
+            "(at Fireflies are getting harder to find; the author pivots from wonder to loss with a short plain sentence)",
+            "(it shifts responsibility from the insect to human lighting and habitat loss; supported by the pesticide, lawn, and floodlight evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["luciferase → ____", "incandescent → ____", "dialect → ____", "synchronous → ____"],
+          "rows": 2,
+          "answers": [
+            "the enzyme that drives the light-producing reaction",
+            "giving off light because of being heated",
+            "a local version of a language, here a species' own flash pattern",
+            "occurring at the same time as one another"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Researchers use luciferase to test whether cells are alive. Explain why the ATP requirement is what makes that test work.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the reaction only lights up when ATP is present, and only living cells carry ATP, so light means life)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: outdoor lighting at night is a convenience we should be willing to give up. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "key": "solar-panel",
+  "title": "The Panel That Eats Sunlight",
+  "blurb": "A sheet of doped sand with no moving parts that turns light straight into electricity, and now makes the cheapest power in history.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Panel That Eats Sunlight",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-solar-panel", "templateLabel": "The Panel That Eats Sunlight", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the sun. Find the panel." },
+        {
+          "kind": "image",
+          "imageKey": "solar-panel",
+          "notes": ["It is flat and blue", "It sits out in the sun", "It has no moving parts", "It makes no noise at all"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a solar panel. It sits up in the sun. The sun shines on it all day. The panel is blue and flat. It does not move. It does not make noise. But it is working. The panel turns sunlight into power. The power goes into wires. The wires go into a house. Then the lights come on."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the suns in each row. Write how many in the box.",
+          "emoji": "☀️",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sun    flat" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "panel", "right": "sun" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a house with a solar panel on the roof. Add a big sun above it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Panel That Eats Sunlight",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-solar-panel", "templateLabel": "The Panel That Eats Sunlight", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "solar-panel",
+          "notes": ["It is made from sand", "Each little square is a cell", "Sunlight knocks electrons loose", "Moving electrons are electricity", "It works for about 25 years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Panel That Eats Sunlight",
+          "text": "A solar panel is made of many little squares. Each square is a solar cell. The cells are made from sand. Sand has silicon in it, and silicon is very good at catching sunlight. When sunlight hits a cell, it knocks tiny bits called electrons loose. The electrons run along a wire. Moving electrons are what we call electricity. One cell makes only a little power. That is why a panel puts many cells side by side. Together they can run a lamp, a fridge, or a whole house. The panel has no moving parts. It just sits still and works."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is each little square on a panel called?", "What are solar cells made from?", "What do we call moving electrons?"],
+          "rows": 2,
+          "answers": ["a solar cell", "sand, because sand has silicon in it", "electricity"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Solar cells are made from ____.", "Sunlight knocks ____ loose.", "A panel has no ____ parts.", "Many cells sit ____ by side."],
+          "wordBank": ["sand", "electrons", "moving", "side"],
+          "answers": ["sand", "electrons", "moving", "side"]
+        },
+        { "kind": "draw", "prompt": "Draw the sun sending light down to a solar panel. Draw the wire going to a lamp.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Panel That Eats Sunlight",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-solar-panel", "templateLabel": "The Panel That Eats Sunlight", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "solar-panel",
+          "notes": ["Sunlight takes 8 minutes to reach us", "Photons are tiny bundles of light", "Silicon comes from ordinary sand", "Panels run on light, not heat", "They work better when they are cool"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Panel Catches the Sun",
+          "text": "Sunlight is not just light. It is also energy, packed into tiny bundles called photons. Photons leave the sun and cross space in about eight minutes. Some of them land on a solar panel. A panel is a grid of solar cells, and each cell is a thin slice of silicon. Silicon comes from ordinary sand. On its own, silicon is not much use, so makers mix in a trace of other elements. One side of the cell gets a pinch of phosphorus. The other side gets a pinch of boron. That tiny difference builds an invisible electric push inside the cell. When a photon strikes the silicon, it knocks an electron loose. The electric push sends that electron in one direction, out through a wire, through your lights, and back to the panel again. That loop is electricity. Here is the part people get wrong. A solar panel runs on light, not heat. A cold, bright winter day can be better for a panel than a hot, hazy one, because silicon works less well when it gets too warm."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a photon?",
+            "How long does sunlight take to reach the Earth?",
+            "What two elements do makers add to the silicon?",
+            "Why do you think a panel on a hot, hazy day might make less power than one on a cold, bright day?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a tiny bundle of light energy",
+            "about eight minutes",
+            "phosphorus on one side and boron on the other",
+            "(inference: panels use light, not heat, and silicon works less well when it is warm)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Panel Catches the Sun", "The Best Way to Wash a Window", "Why Sand Is Good for Building"],
+          "answers": ["How a Panel Catches the Sun"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Light energy comes in bundles called ____.", "Each cell is a thin slice of ____.", "A solar panel runs on light, not ____."],
+          "wordBank": ["photons", "silicon", "heat"],
+          "answers": ["photons", "silicon", "heat"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about solar panels, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Panel That Eats Sunlight",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-solar-panel", "templateLabel": "The Panel That Eats Sunlight", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "solar-panel",
+          "notes": ["Edmond Becquerel spotted the effect in 1839", "He was only 19 years old", "The first good cell came in 1954", "Vanguard 1 launched with solar cells in 1958", "It is still the oldest object in orbit"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Accident That Started It",
+          "text": "In 1839, a nineteen-year-old French physicist named Edmond Becquerel was experimenting with metal plates in a liquid bath. He noticed something odd. When he shone light on the plates, the needle on his meter moved. Light was making electricity. Nobody, including Becquerel, knew what to do with that. It took more than a century. In 1954, three researchers at Bell Labs in New Jersey, Daryl Chapin, Calvin Fuller, and Gerald Pearson, built the first silicon solar cell that was actually worth using. It turned about six percent of the sunlight falling on it into electricity. That sounds poor, and it was, but it was roughly six times better than anything before it. The newspapers were thrilled. The cells were also wildly expensive, and for years almost nobody bought them. Then came a customer who did not care about price. In 1958, the United States launched a small satellite called Vanguard 1 with solar cells fixed to its shell. Its battery-powered radio fell silent after about three weeks. Its solar-powered radio kept transmitting for six years. Space had found its power source, and solar cells had found their first real job. Vanguard 1 is still up there. It is the oldest human-made object in orbit, circling quietly, its silicon long since dead."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What did Becquerel notice, and why did nothing come of it for so long?",
+            "The passage says six percent sounds poor, and it was. Why was it still important?",
+            "Why was a satellite the perfect first customer for an expensive solar cell?",
+            "What does the last sentence tell you about how long solar cells last compared to the things they power?"
+          ],
+          "rows": 2,
+          "answers": [
+            "light shining on metal plates made his meter move; nobody knew what to use it for",
+            "it was about six times better than anything before it, so it was the first cell worth using",
+            "(inference: in space there is no other power source, so price mattered less than working)",
+            "(inference: the satellite outlasted its own cells, and the cells outlasted its battery by years)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Solar power was discovered by accident and waited over a century for a customer who needed it badly enough",
+            "French scientists invented every important machine of the 1800s",
+            "Satellites are the only good use for solar cells"
+          ],
+          "answers": ["Solar power was discovered by accident and waited over a century for a customer who needed it badly enough"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["physicist → ____", "transmitting → ____", "wildly expensive → ____"],
+          "rows": 1,
+          "answers": [
+            "a scientist who studies matter, energy, and how they behave",
+            "sending out a signal",
+            "costing far more than most buyers could pay"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: Becquerel found something useful but could not use it. Describe one thing you have learned or noticed that might be useful later, and explain why it is not useful yet.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Panel That Eats Sunlight",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-solar-panel", "templateLabel": "The Panel That Eats Sunlight", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "solar-panel",
+          "notes": ["One hour of sunlight on Earth is about a year of world energy", "Silicon is the 2nd most common element in the crust", "Physics caps a silicon cell near 33 percent", "Good panels today reach about 20 to 22 percent", "A watt cost about $300 in 1956, under $1 today", "Panels are black to waste as little light as possible"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Cheapest Power in History Took So Long",
+          "text": "Every hour, the sun drops more energy onto the Earth than every person on the planet uses in a year. The energy has never been the problem. Catching it has. A solar panel catches sunlight with silicon, the second most common element in the Earth's crust, refined out of ordinary sand. Inside each cell, incoming photons knock electrons loose, and a built-in electric field herds those electrons in one direction, through a wire, and back. That is all a panel does. It has no pistons, no turbines, no moving parts at all. Panels are dark blue or black because they are coated to reflect as little light as possible. Every photon bounced away is a photon wasted. There is a hard ceiling on how well this can work. A silicon cell can only use photons carrying enough energy to knock an electron free. Photons with too little energy pass through and do nothing useful. Photons with too much energy give up the excess as heat. Add up those losses and physics caps an ordinary silicon cell at about thirty-three percent. Today's commercial panels reach roughly twenty to twenty-two percent, which is closer to the ceiling than most people assume. So efficiency was never going to save solar. Price did. In 1956, a watt of solar cell cost around three hundred dollars. Today it costs well under a dollar. The engineer Richard Swanson noticed the pattern: every time the world doubled the total number of panels it had ever built, the price per watt fell by about twenty percent. Factories got better, wafers got thinner, and the industry got enormous. Nobody invented a miracle. They just kept making the same thing, over and over, until it was cheap. One problem remains, and it is not a small one. The sun sets. A panel produces nothing at night and less under cloud, which means the real work of the next twenty years is not catching sunlight. It is storing it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the two ways photons get wasted in a silicon cell.",
+            "The author writes that efficiency was never going to save solar. Quote the sentence that says what did, and explain it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end on storage rather than on the falling price?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the energy is plentiful, physics caps efficiency near a third, and price fell through mass manufacturing, leaving storage as the problem)",
+            "photons with too little energy pass straight through; photons with too much give up the excess as heat",
+            "quote: Price did. Panels got cheap through mass manufacturing rather than through better efficiency",
+            "(inform, with detail: it defines terms and gives figures; the closing lines carry a persuasive edge)",
+            "(inference: price is a solved problem, so the unsolved one is the honest place to finish)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["refined → ____", "herds → ____", "wafers → ____", "commercial → ____"],
+          "rows": 1,
+          "answers": [
+            "purified out of a raw material",
+            "pushes many of them along in one direction",
+            "very thin slices of silicon",
+            "sold to ordinary buyers rather than built for a laboratory"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says nobody invented a miracle. Explain how the price fell anyway.",
+            "Why might a hard physical ceiling of thirty-three percent matter less than most people expect?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(each doubling of panels ever built cut the price about twenty percent through better factories and thinner wafers)",
+            "(inference: sunlight is free and effectively unlimited, so cost per watt matters more than percentage caught)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a country spend more on building panels or on storing the power they make? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Panel That Eats Sunlight",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-solar-panel", "templateLabel": "The Panel That Eats Sunlight", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "solar-panel",
+          "notes": ["Doped with phosphorus on top, boron below", "The p-n junction builds a permanent electric field", "Silicon's bandgap is about 1.1 electron volts", "Shockley and Queisser proved the limit in 1961", "One cell makes about half a volt", "Opportunity ran on solar for 14 years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "No Moving Parts: How a Sheet of Sand Beat the Turbine",
+          "text": "A solar panel is the strangest power plant ever built, because it is not really a plant at all. A coal station burns fuel to boil water to spin a turbine to turn a magnet inside a coil. Four steps, each one shedding heat, each one wearing out bearings. A solar panel skips all of it. Light goes in one side and current comes out the other, and nothing anywhere inside the panel moves. The trick lives in a slice of silicon about as thick as a few sheets of paper. Pure silicon is a poor conductor. Its electrons are locked into bonds and will not budge. So manufacturers deliberately contaminate it. Into the top layer they diffuse a trace of phosphorus, an atom carrying one more outer electron than silicon needs, which leaves spare electrons rattling around loose. Into the layer below they add boron, which has one fewer, leaving vacancies that behave like positive charges. Where the two layers meet, at what engineers call the p-n junction, electrons drift across, vacancies drift back, and the resulting imbalance builds a permanent electric field along the boundary. That field is the whole invention. It is a one-way street for electrons, and it is already there before the sun comes up. Now add a photon. Silicon has a bandgap of about 1.1 electron volts, which is the entry fee an arriving photon must pay to knock an electron out of its bond. Red light barely covers it. Blue light overpays, and the change is returned as waste heat. Infrared light cannot pay at all and slips through the cell as though it were glass. The electrons that do come free are swept across the junction by that built-in field, pushed out into a wire, through whatever you have plugged in, and back to the other side. A single cell generates only about half a volt, so a panel wires sixty or more of them in a row, like batteries stacked in a flashlight. Understand the bandgap and you understand solar's ceiling. In 1961, William Shockley and Hans Queisser did the arithmetic and proved that a single-junction cell can never convert more than roughly a third of the sunlight striking it, no matter how well it is made. That result was not a challenge to be beaten. It was a law to be planned around. So the industry stopped chasing physics and started chasing manufacturing. Solar cells cost about three hundred dollars per watt in 1956 and now cost under a dollar. Richard Swanson observed that the price fell about twenty percent for every doubling of the panels ever produced, a pattern that has held for decades. The result is that the cheapest electricity now available to human beings, across much of the sunny world, comes from a sheet of doped sand with no moving parts and a twenty-five year warranty. The catch has never been the panel. It is the night. Panels also fail in ways that reveal how simple they are. The Mars rovers Spirit and Opportunity ran on solar arrays, and what finally finished Opportunity, after fourteen years of a mission planned for ninety days, was not a broken part. It was a planet-wide dust storm that blotted out the sun."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why manufacturers deliberately contaminate pure silicon. Cite the evidence.",
+            "The passage calls the electric field a one-way street for electrons. Explain what that metaphor is doing and why the timing detail that follows it matters.",
+            "Explain the bandgap using the author's own comparison, then say what that comparison hides or simplifies.",
+            "Identify the shift in the passage: where does it turn from physics to economics, and how does the author signal it?",
+            "The passage ends with Opportunity and a dust storm rather than with a fact about price. Analyze what that ending is doing."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(pure silicon conducts poorly because its electrons are locked in bonds; cite: Its electrons are locked into bonds and will not budge)",
+            "(the field sorts electrons in one direction only; the timing line, it is already there before the sun comes up, shows the field is built in rather than created by light)",
+            "(a bandgap is an entry fee a photon must pay; the money comparison hides that the excess is lost as heat rather than saved, and that the fee is fixed by the material)",
+            "(at So the industry stopped chasing physics and started chasing manufacturing; a short blunt sentence marks the pivot)",
+            "(it closes on a limit that is not the panel's fault, echoing the night problem and showing that simple technology fails for outside reasons)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["diffuse → ____", "p-n junction → ____", "bandgap → ____", "single-junction → ____"],
+          "rows": 2,
+          "answers": [
+            "to spread a substance evenly through another material",
+            "the boundary where the two doped layers meet and a permanent electric field forms",
+            "the minimum energy a photon needs to knock an electron out of its bond",
+            "having only one p-n junction, and so only one bandgap to catch light with"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the Shockley and Queisser result was a law to be planned around. Explain how the industry planned around it, and judge whether that was the right choice.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(they stopped pursuing efficiency gains and drove cost down through mass manufacturing; judgment with reasons)",
+            "(student question plus a credible source type, such as a peer-reviewed journal or an energy agency report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A technology with no moving parts and a fixed physical limit is finished improving, so further research into solar cells is a waste. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

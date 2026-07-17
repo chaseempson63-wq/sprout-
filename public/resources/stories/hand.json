@@ -1,0 +1,304 @@
+{
+  "key": "hand",
+  "title": "The Toolbox at the End of Your Arm",
+  "blurb": "Twenty seven bones, no muscles in the fingers, and a thumb that made every tool humans ever built.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Toolbox at the End of Your Arm",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Hold up your own hand as you go.",
+      "meta": { "templateId": "story-hand", "templateLabel": "The Toolbox at the End of Your Arm", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Then hold up your own hand next to it." },
+        {
+          "kind": "image",
+          "imageKey": "hand",
+          "notes": ["Five fingers on each hand", "One of them is your thumb", "The flat part is your palm", "Your thumb can touch every finger"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Hold up your hand. Look at it. You have four fingers and one thumb. That is five. Wiggle them all. Now touch your thumb to each finger. Your thumb can reach every one. Your hand can hold a cup. It can hold a crayon. It can pat a dog. Your hand does a lot of jobs all day."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fingers held up in each row. Write how many in the box.",
+          "emoji": "👆",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "hand    thumb" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each hand to its job.",
+          "pairs": [
+            { "left": "hold", "right": "a cup" },
+            { "left": "wave", "right": "hello" },
+            { "left": "clap", "right": "a song" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Put your hand flat on the box. Trace around it. Then draw a face on your thumb.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Toolbox at the End of Your Arm",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-hand", "templateLabel": "The Toolbox at the End of Your Arm", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Try each one with your own hand first." },
+        {
+          "kind": "image",
+          "imageKey": "hand",
+          "notes": ["Each hand has 27 bones", "The thumb is the boss of the hand", "Your fingerprints belong only to you", "No two people have the same ones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Boss of Your Hand",
+          "text": "Your thumb is not just a short finger. It is the boss of your hand. Look where it sits. It sits low, off to the side, and it can swing across to touch every fingertip. Try it. Now hold your thumb down against your palm and try to pick up a coin. It is hard. Keep it down and try to open a jar, or hold a pencil, or do up a button. Almost every job your hand does starts with the thumb. Most animals cannot do this. Your thumb is one big reason people can build things."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does your thumb sit on your hand?", "What can your thumb touch?", "What happens when you try to pick up a coin without your thumb?"],
+          "rows": 2,
+          "answers": ["low down and off to the side", "every fingertip", "it is hard to do"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Your thumb is the ____ of your hand.", "Your thumb can touch every ____.", "Without a thumb, picking up a coin is ____.", "Your thumb helps people ____ things."],
+          "wordBank": ["boss", "fingertip", "hard", "build"],
+          "answers": ["boss", "fingertip", "hard", "build"]
+        },
+        { "kind": "draw", "prompt": "Draw a hand holding your favorite thing. Show the thumb doing its job.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Toolbox at the End of Your Arm",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-hand", "templateLabel": "The Toolbox at the End of Your Arm", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "hand",
+          "notes": ["27 bones in each hand", "Your hands and feet hold half your bones", "No muscles inside your fingers at all", "Tendons pull them like puppet strings", "Fingernails grow about 3mm a month"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Puppet on Your Wrist",
+          "text": "Make a fist, then open it. That took twenty seven bones. Each hand has twenty seven of them: eight small blocky ones in your wrist, five long ones inside your palm, and fourteen in your fingers and thumb. Your two hands and two feet together hold more than half the bones in your whole body. Now look at the back of your hand while you wiggle your fingers. You can see thin cords sliding under the skin. Those are tendons. Here is the strange part. There are no muscles inside your fingers at all. The muscles that bend and straighten them sit up in your forearm. Wrap your other hand around your forearm and wiggle your fingers again. You will feel the muscles working there, a long way from the fingers they move. Your fingers are pulled by cords, the way a puppet is pulled by strings. The strings just happen to be inside you."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How many bones are in one hand?",
+            "What are the thin cords you can see on the back of your hand?",
+            "Where are the muscles that bend your fingers?",
+            "Why do you think the muscles sit in the forearm instead of in the fingers?"
+          ],
+          "rows": 2,
+          "answers": [
+            "twenty seven",
+            "tendons",
+            "in the forearm",
+            "(inference: fat muscles in the fingers would make them thick and clumsy)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Puppet on Your Wrist", "How to Build a Real Puppet", "Why Bones Are White"],
+          "answers": ["The Puppet on Your Wrist"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Each hand holds twenty ____ bones.", "The cords under your skin are called ____.", "The muscles that move your fingers sit in your ____."],
+          "wordBank": ["seven", "tendons", "forearm"],
+          "answers": ["seven", "tendons", "forearm"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about your own hand, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Toolbox at the End of Your Arm",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-hand", "templateLabel": "The Toolbox at the End of Your Arm", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hand",
+          "notes": ["Fingerprints form before you are born", "Identical twins have different prints", "The ridges help you grip and feel", "Wet fingers wrinkle on purpose", "Koalas have fingerprints almost like ours"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lines Nobody Gave You",
+          "text": "Press a fingertip against a window and look at the mark you leave behind. Those loops and lines are friction ridges, and they cover your fingertips, your palms, and the soles of your feet. You grew them before you were born, around your fourth month in the womb, and the pattern has not changed since. It will not change for the rest of your life. Identical twins share nearly all of their DNA and still have different fingerprints, because the ridges are shaped partly by how the skin happened to fold and press as it grew. Nobody chose your pattern. It simply happened, once, and stuck. So why have ridges at all? Scientists are still arguing. One answer is grip. The ridges give your skin something to catch with, the way tread catches on a tire. Another answer is touch. Under each ridge sit nerve endings that read vibration. When you slide a fingertip across a surface, the ridges buzz, and that buzzing is how you can tell silk from paper without looking. Then there is the puzzle in your bathtub. Stay in the water long enough and your fingertips wrinkle. For years people assumed the skin was soaking up water and swelling. It is not. Your nervous system does it on purpose. Blood vessels under the fingertip narrow, and the skin above them puckers into channels. We know it is deliberate because people whose finger nerves are damaged do not wrinkle at all. The best guess is that the channels work like the grooves in a wet weather tire, letting water escape so you can still hold on to something slippery."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why do identical twins have different fingerprints even though their DNA is nearly the same?",
+            "Give the two possible reasons the passage offers for why we have friction ridges.",
+            "How do scientists know that wrinkled fingers are not just soaked skin?",
+            "The passage says nobody chose your pattern. Why might that make fingerprints useful to police?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the ridges are shaped by chance folds in the growing skin, not only by DNA",
+            "grip, and reading vibration so you can feel texture",
+            "people with damaged finger nerves do not wrinkle at all",
+            "(inference: the pattern is random and unique, so it can only belong to one person)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The ridges on your fingertips form by chance, never change, and probably help you grip and feel",
+            "Fingerprints are only useful for catching criminals",
+            "Skin swells whenever it touches water"
+          ],
+          "answers": ["The ridges on your fingertips form by chance, never change, and probably help you grip and feel"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["friction ridges → ____", "vibration → ____", "deliberate → ____"],
+          "rows": 1,
+          "answers": ["the loops and lines of skin on your fingertips, palms, and soles", "a fast shaking or buzzing movement", "done on purpose, not by accident"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says scientists are still arguing about why we have ridges. Which reason do you find more convincing, grip or touch? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Toolbox at the End of Your Arm",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-hand", "templateLabel": "The Toolbox at the End of Your Arm", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hand",
+          "notes": ["Precision grip: thumb pad to finger pad", "Chimp thumbs are too short to oppose", "Opposition is the anatomist's word for it", "The brain gives hands enormous space", "About 9 people in 10 are right handed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Grip That Built Everything",
+          "text": "Close your hand around a hammer. That is a power grip: fingers wrapped, thumb clamped over the top, the whole hand working as a single clamp. Now pick up one grain of rice between your thumb and the tip of your index finger. That is a precision grip, and it is far rarer in nature than you would guess. A chimpanzee is several times stronger than you and cannot do it well. Its fingers are long and curved, built for hanging under branches, and its thumb is short and cannot reach past them. Human hands went the other way. Our fingers grew shorter and straighter, our thumbs longer and more muscular, until the thumb could swing across and meet each fingertip squarely, pad to pad. Anatomists call that opposition. It is the difference between grabbing something and handling it. Threading a needle, striking a match, tying a knot, and shaping a stone tool all live in that narrow gap between thumb tip and finger tip. Our ancestors gave up the ability to hang easily from a branch and got that gap in return. The brain paid for it too. If you map which patch of the brain's surface listens to which patch of skin, the map comes out badly distorted. The territory given to your hands is enormous, larger than the territory for your entire back and both legs together. Your back is huge and reports almost nothing. Your fingertips are small and report constantly, because they carry some of the densest touch nerves in the body. The hand is not just well built. It is heavily staffed. One more oddity. About nine people in ten write with the right hand, and no other animal leans that hard across a whole species. Individual chimps have preferences, but their groups split much closer to even. Whatever made us right handed seems tied to the way language settled into the left side of the human brain, which is the side that controls the right hand."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the difference between a power grip and a precision grip, with an example of each.",
+            "Why can a chimpanzee not pinch well? Quote the phrase the passage uses about its thumb.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the author mean by saying the hand is heavily staffed?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering precision grip + opposition + the brain's oversized hand map)",
+            "power grip wraps the whole hand around something like a hammer; precision grip pinches a small thing like a grain of rice between thumb and fingertip",
+            "its fingers are long and curved and the thumb cannot reach past them; quote: its thumb is short and cannot reach past them",
+            "(inform, with detail: it defines terms like opposition and gives facts; it also uses a light, direct voice to hold attention)",
+            "(the hand has an unusually large share of the brain and unusually dense nerves, like a small place with a big crew)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["opposition → ____", "distorted → ____", "anatomists → ____", "density → ____"],
+          "rows": 1,
+          "answers": ["the thumb swinging across to meet a fingertip pad to pad", "pulled out of its true shape or proportion", "scientists who study the structure of the body", "how tightly packed something is in a space"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says our ancestors gave up easy hanging and got the precision gap in return. Why might that trade have been worth it?",
+            "Why would a brain map that gives huge space to the hands and almost none to the back be a sensible design rather than a mistake?"
+          ],
+          "rows": 3,
+          "answers": ["(inference: tools and fine work opened far more ways to survive than climbing did)", "(inference: brain space follows how much information a body part sends and how finely it must be controlled)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was trading strength and climbing ability for a precise grip a good deal for humans? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Toolbox at the End of Your Arm",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-hand", "templateLabel": "The Toolbox at the End of Your Arm", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "hand",
+          "notes": ["27 bones, no muscle inside the fingers", "A saddle joint sits at the thumb's base", "Friction ridges form by chance in the womb", "Hand stencils are among the oldest art", "Ten fingers, and math in tens", "Sign languages have full grammar"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hand That Made Everything Else",
+          "text": "Whatever you build, you build it with a machine you did not design and cannot replace. It has twenty seven bones, more than thirty muscles, and not one of those muscles inside the fingers themselves. The engines sit back in the forearm and pull on the fingers through long tendons, which means the parts that do the finest work in the known universe are, mechanically speaking, puppets. Start with the thumb, because everything starts with the thumb. At its base sits a saddle joint: two curved surfaces nested crossways, like a rider on a horse. A hinge can only swing. A saddle can swing and rotate, and that rotation is the whole trick. It turns the pad of the thumb to face the pad of each finger squarely, so the two can pinch. Anatomists call this opposition. A chimpanzee, far stronger than any human, has a thumb too short to reach past its long curved fingers, so it grabs superbly and pinches poorly. Our ancestors traded away the ability to hang effortlessly from a branch and received, in exchange, the ability to hold a flake of stone at exactly the angle needed to strike another one. Every tool since has come out of that trade. The brain rebuilt itself to match. Map the strip of cortex that receives touch, and the body it draws is a monster: giant hands, giant lips, a back the size of a postage stamp. The hand claims more of that territory than the trunk and both legs combined, because it sends more information than they do. Fingertips carry some of the most densely wired skin on the body. Run one across a table and the ridges on it vibrate, and nerves underneath read that vibration as texture. You are not really feeling wood. You are feeling wood buzz. Those ridges are also, by accident, a signature. Friction ridges form before birth, shaped partly by chance folds in growing skin, which is why identical twins carrying the same DNA leave different fingerprints. Nobody designed them to identify us. They do it anyway. Perhaps that is why the oldest art on Earth is so often a hand. In caves in Spain, France, Indonesia, and Argentina, people who had no writing, no clocks, and no name we will ever learn pressed a palm to cold rock and blew powdered pigment around it, leaving a pale hand ringed in color. Some of those stencils are tens of thousands of years old. They are not pictures of anything. They are the exact shape of one specific person, held still, in one place, on one day. The message survives because it needs no translation: someone was here, and this is the shape of the part of them that touched the wall. The hand kept talking after that. We counted on ten fingers, which is the plainest reason so much of the world does math in tens. Deaf communities built entire languages out of hand shapes, with grammar as complete as any spoken tongue. We shake hands, we point, we wave. Long before a word leaves your mouth, your hands have started the sentence. There is a temptation to say the hand made us human. That is too neat. The hand and the brain built each other, slowly, over millions of years, and neither one gets the credit alone. But this much is fair: nothing you value was made by a mind by itself. Something had to reach out and touch it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the saddle joint matters more than a hinge would. Cite the evidence.",
+            "The author calls the fingers puppets. Explain what is literally true about that, and why the word is well chosen.",
+            "Identify the shift in the passage: where does it turn from anatomy to meaning, and how does the author signal it?",
+            "Analyze the final two sentences. What claim are they making, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering structure, the thumb, the brain, and the hand as human signature)",
+            "(a saddle allows rotation, which turns the thumb pad to face each finger; cite: A hinge can only swing. A saddle can swing and rotate)",
+            "(the fingers hold no muscles and are pulled by tendons from the forearm; puppet captures being moved by strings from a distance)",
+            "(at Perhaps that is why the oldest art on Earth is so often a hand; the author pivots from how the hand works to what it has meant)",
+            "(claim: making, not just thinking, is what produces anything of value; supported by the tool trade, cave stencils, and sign language)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["opposition → ____", "cortex → ____", "pigment → ____", "stencil → ____"],
+          "rows": 2,
+          "answers": [
+            "the thumb rotating so its pad faces a fingertip pad and can pinch",
+            "the outer surface of the brain, where touch is received",
+            "colored powder or paste used to make a mark",
+            "a shape left behind when color is applied around a blocked area"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the ridges identify us though nobody designed them to. Name one other body feature that turned out useful for something it was not built for.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(student answer, for example the voice, the iris, or the way a person walks)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The hand deserves more credit than the brain for everything humans have built. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "key": "mouse",
+  "title": "The Mouse That Sees With Its Face",
+  "blurb": "The little gray animal that reads a dark room with its whiskers, and quietly moved into human houses fifteen thousand years ago.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Mouse That Sees With Its Face",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-mouse", "templateLabel": "The Mouse That Sees With Its Face", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the mouse's long tail." },
+        {
+          "kind": "image",
+          "imageKey": "mouse",
+          "notes": ["It is smaller than your hand", "Its whiskers help it feel", "It comes out at night", "It sleeps in a soft nest"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a mouse. The mouse is small and gray. It has soft fur. It has long whiskers on its face. The whiskers help the mouse feel. The mouse comes out at night. It looks for seeds to eat. It carries the seeds home. Its nest is warm and soft. The mouse curls up its long tail and sleeps."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the seeds in each row. Write how many in the box.",
+          "emoji": "🌰",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "mouse    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to where it sleeps.",
+          "pairs": [
+            { "left": "mouse", "right": "nest" },
+            { "left": "bird", "right": "tree" },
+            { "left": "dog", "right": "bed" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own mouse. Give it long whiskers and a long tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Mouse That Sees With Its Face",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-mouse", "templateLabel": "The Mouse That Sees With Its Face", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "mouse",
+          "notes": ["A mouse cannot see very well", "Its whiskers feel the walls", "It can fit through a tiny hole", "It sleeps in the day", "Its front teeth never stop growing"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mouse in the Dark",
+          "text": "A mouse has a secret. It cannot see very well. The dark does not stop it. The mouse has long whiskers on both sides of its nose. It sweeps them back and forth, very fast. The whiskers touch the wall. They touch the floor. They tell the mouse where to go. A mouse can squeeze through a hole as small as a pencil. If its head fits, the rest of it fits too. Then it finds a quiet corner, builds a soft nest out of bits of paper and grass, and sleeps all day."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a mouse have on both sides of its nose?", "What do the whiskers touch?", "What does the mouse build?"],
+          "rows": 2,
+          "answers": ["long whiskers", "the wall and the floor", "a soft nest out of paper and grass"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A mouse cannot ____ very well.", "It sweeps its ____ back and forth.", "It can squeeze through a hole as small as a ____.", "It sleeps all ____."],
+          "wordBank": ["see", "whiskers", "pencil", "day"],
+          "answers": ["see", "whiskers", "pencil", "day"]
+        },
+        { "kind": "draw", "prompt": "Draw the mouse in its nest. Add the little hole it squeezed through.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Mouse That Sees With Its Face",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-mouse", "templateLabel": "The Mouse That Sees With Its Face", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "mouse",
+          "notes": ["Front teeth grow all life long", "Rodent means gnawer", "Its teeth sharpen themselves", "No pointy hunting teeth at all", "Rats and beavers are rodents too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Teeth That Never Stop",
+          "text": "A mouse's front teeth never stop growing. They push up out of the jaw a little more every day, all through the mouse's life. That sounds like a problem, and it would be, except a mouse gnaws. It chews on seeds, on nutshells, on wood, on cardboard. Every bite grinds the tips of those teeth back down. The word rodent comes from an old word that means to gnaw, and mice are rodents. So are rats, squirrels, and beavers.\n\nThe front teeth are shaped for the job. The front of each tooth is covered in hard enamel. The back of it is softer. The soft part wears away faster, so the tooth keeps a sharp edge, like a chisel that sharpens itself.\n\nBehind those front teeth there is a gap, right where a dog or a cat would have long pointy teeth. A mouse has none. It does not need them. A mouse is not hunting anything. It is looking for a seed."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens to a mouse's front teeth every day?",
+            "How does gnawing help the mouse?",
+            "Which part of the tooth wears away faster, the front or the back?",
+            "Why do you think a mouse has no long pointy teeth?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they keep growing out of the jaw",
+            "chewing grinds the tips of the teeth back down",
+            "the back, because it is softer",
+            "(inference: it eats seeds and plants, so it never has to catch or hold prey)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Teeth That Never Stop", "How to Train a Pet Dog", "The Tallest Tree in the Forest"],
+          "answers": ["The Teeth That Never Stop"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["An animal that gnaws is called a ____.", "The front of each tooth is covered in hard ____.", "A mouse's tooth keeps a sharp edge like a ____."],
+          "wordBank": ["rodent", "enamel", "chisel"],
+          "answers": ["rodent", "enamel", "chisel"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would happen to a mouse that never gnawed anything, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Mouse That Sees With Its Face",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-mouse", "templateLabel": "The Mouse That Sees With Its Face", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mouse",
+          "notes": ["About thirty long whiskers on each side", "It sweeps them ten times a second", "Whiskers measure a gap before it squeezes in", "Its skull is the only stiff part", "It hugs walls and avoids open floor", "Poor eyes, excellent nose and ears"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Reading the Room in the Dark",
+          "text": "Sit in a dark room and you will feel useless. A mouse in a dark room is at work.\n\nA mouse's eyes are not much help. They sit high on the sides of its head, good for catching a shadow swooping down, poor for detail. The real instrument is on its face. A house mouse has about thirty long whiskers arranged in neat rows on either side of its nose, and they are not decoration. Each whisker is rooted in a pocket packed with nerve endings. When a mouse explores, it sweeps those whiskers forward and back roughly ten times a second, brushing the wall, the floor, the edge of a gap. Out of that brushing it builds a picture of a room it has never seen.\n\nThis is why a mouse hugs the wall instead of crossing the open middle of a floor. The wall is information. The middle is nothing but risk.\n\nThe whiskers also do the measuring. A house mouse can pass through an opening barely wider than a pencil, because its skeleton is loose and its skull is the only truly rigid part of it. If the head fits, the mouse fits. Rather than guess, it touches the edge of the gap first and lets its whiskers report the width. Then it goes.\n\nThe nose finishes the job. A mouse leaves faint scent marks as it travels, so the paths it has already tested stay marked for next time. Whiskers for the shape of the world, scent for the memory of it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why are a mouse's eyes described as not much help?",
+            "Describe how a mouse uses its whiskers to explore a room.",
+            "The passage says the wall is information and the middle is nothing but risk. Explain what that means.",
+            "Why does it help a mouse to measure a gap with its whiskers before trying to squeeze through?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they sit on the sides of its head and are good for spotting movement but poor for detail",
+            "it sweeps them forward and back about ten times a second and feels the wall, floor, and gaps",
+            "(the wall gives its whiskers something to read; open floor gives no information and exposes it)",
+            "(inference: if its head fits the body fits, so measuring first saves it from getting stuck)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A mouse navigates the dark by touch and smell rather than sight",
+            "Mice are the fastest animals in a house",
+            "Mice can see better in the dark than any other animal"
+          ],
+          "answers": ["A mouse navigates the dark by touch and smell rather than sight"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["instrument → ____", "rigid → ____", "scent marks → ____"],
+          "rows": 1,
+          "answers": ["a tool used to do a job", "stiff, unable to bend", "smells left behind on purpose to mark a path"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which sense would you least want to lose, and why? Compare your answer to how a mouse manages with weak eyes.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Mouse That Sees With Its Face",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-mouse", "templateLabel": "The Mouse That Sees With Its Face", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mouse",
+          "notes": ["Mus musculus, the house mouse", "Moved in with the first grain stores", "Now on every continent but Antarctica", "Male mice sing above human hearing", "Songs found only by slowing recordings down", "A partnership about fifteen thousand years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Moved In",
+          "text": "The house mouse did not always live in houses. For most of its history it was a small brown seed eater on dry ground somewhere around northern India and the hills of the Middle East, and there was nothing remarkable about it at all.\n\nThen people stopped moving. Around fifteen thousand years ago, villages in the Fertile Crescent began gathering wild grain, storing it in one place, and staying near it through the year. A permanent pile of seed, under a roof, warm, guarded from owls and foxes: for a mouse, this was the best offer in the history of mice. The bold ones moved in. The nervous ones stayed outside and stayed ordinary. Archaeologists can track the switch in the bones they dig out of those old villages, because the mice that took the deal changed over generations, and their teeth changed along with their diet.\n\nEverywhere people went afterward, the house mouse went too. It rode grain ships and wagons and freight containers into Europe, Africa, the Americas, and almost every island with a harbor. It now lives on every continent except Antarctica. It did not conquer anything. It followed the food and let us do the traveling.\n\nThere is one more thing worth knowing, and most people never hear it, in the most literal sense. Male house mice sing. Not squeaks: real songs, with repeated phrases and a clear structure, delivered at frequencies far above the range of human hearing. A mouse can sing under your kitchen floor at full volume and you will not catch a note of it. Scientists only found the songs by recording them and slowing the recordings down until they dropped into the range our ears can reach.\n\nSo we call it a pest, set traps for it, and share our buildings with it anyway. Fifteen thousand years is a long partnership. The odd part is that it was our idea first. We built the storehouse. The mouse only answered."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What change in human behavior gave the house mouse its opening? Quote the sentence that states it.",
+            "How do archaeologists know the switch happened? Cite the detail the passage gives.",
+            "Why does the author say most people never hear about mouse songs in the most literal sense?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the move indoors, the spread worldwide, and the singing)",
+            "people settled and stored grain in one place; quote: Then people stopped moving",
+            "(the bones in old villages show the mice changed over generations and their teeth changed with their diet)",
+            "(the songs are above human hearing, so we literally cannot hear them, and we also rarely get told about them)",
+            "(inform, with an entertaining voice: it gives dates and evidence, but uses jokes like the best offer in the history of mice)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["remarkable → ____", "permanent → ____", "conquer → ____", "frequencies → ____"],
+          "rows": 1,
+          "answers": ["worth noticing or unusual", "lasting, staying in one place over time", "to take over by force", "how high or low a sound is, measured in waves per second"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the bold mice moved in and the nervous ones stayed ordinary. Explain what that suggests about how animals change over long stretches of time.",
+            "The last lines say it was our idea first. Explain what the author means and why the passage ends there."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the mice that were willing to live near people had more food and more young, so that trait spread)",
+            "(humans created the food store that made the house mouse possible; the ending shifts responsibility onto us)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is the house mouse a pest, a partner, or both? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Mouse That Sees With Its Face",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-mouse", "templateLabel": "The Mouse That Sees With Its Face", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mouse",
+          "notes": ["Whiskers sit in a grid, named by row and column", "Whisking: about ten sweeps a second", "Barrel cortex: one cell bundle per whisker", "Mouse genome published in 2002", "Almost every human gene has a mouse counterpart", "The most studied mammal on Earth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mouse That Sees With Its Face",
+          "text": "Somewhere in the wall of your house, in total darkness, a mouse is building an accurate map of a room it cannot see. It is doing this with its face.\n\nStart with the equipment. Along either side of a house mouse's snout sit rows of long, stiff whiskers, roughly thirty of the big ones per side, arranged in a grid so regular that researchers identify each one by its row and column. A whisker itself is dead material, like your hair, and feels nothing at all. The sensing happens at the root, where each whisker sits in a follicle wrapped in hundreds of nerve fibers that register the smallest bend.\n\nNow watch the mouse use them. It does not simply let its whiskers drag against things. It drives them, sweeping the whole array forward and back about ten times a second, a behavior called whisking. Contact bends the whisker, the follicle reports the bend, and out of thousands of these tiny reports the animal assembles width, texture, distance, and shape. In a laboratory, a mouse can tell a rough surface from a slightly less rough one using a single whisker, in the dark, faster than you could decide with your eyes.\n\nThe strange part is what this does to the brain. Cut a thin slice of a mouse's sensory cortex, stain it, and put it under a microscope, and a map of the animal's face stares back at you. The cells are gathered into small oval bundles, one bundle per whisker, laid out in the same rows and columns as the whiskers themselves. Neuroscientists call them barrels. Take away a single whisker follicle in a newborn mouse and its barrel never forms properly, while the neighboring barrels spread into the territory it should have claimed. The face is written into the brain, and the writing responds to what actually happens to the animal.\n\nThat last fact is a large part of why the mouse became the most studied mammal on Earth. The barrel field handed researchers something rare: a sense organ with a visible, countable, one-to-one map in the cortex, sitting in an animal that is small, breeds quickly, and shares the overwhelming majority of its genes with us. When the mouse genome was published in 2002, it turned out that almost every human gene had a recognizable mouse counterpart. Mice and rats now make up roughly nine out of every ten animals used in biomedical research, and much of what we know about how brains learn, how bodies fight infection, and how cancers begin was learned first from them.\n\nIt is worth sitting with the whole shape of that. The same animal people trap in their kitchens and dismiss as vermin is the one that agriculture accidentally invited indoors fifteen thousand years ago, and the one on which a great deal of modern medicine now rests. Being small and unremarkable turned out to be an extraordinary strategy. It got the mouse in everywhere, including the laboratory that studies it.\n\nWhatever you make of that bargain, the mouse in the wall is not lost. It knows exactly where it is. It is reading the wall with its face, ten times a second, and it does not need the light on."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage insists a whisker feels nothing. Explain the apparent contradiction and cite the evidence that resolves it.",
+            "Explain what a barrel is and what the newborn-mouse result shows about the brain.",
+            "Identify the shift in the passage: where does it turn from the animal to us, and how does the author signal it?",
+            "Analyze the final paragraph. What is the author doing by ending on the mouse rather than on the research, and does the passage earn that ending?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the shaft is dead, so the sensing is at the base; cite: The sensing happens at the root, where each whisker sits in a follicle wrapped in hundreds of nerve fibers)",
+            "(a bundle of cortex cells for one whisker; losing a whisker follicle reshapes the map, so the brain is shaped by experience)",
+            "(at It is worth sitting with the whole shape of that; a short reflective sentence pivots from mouse biology to human use)",
+            "(it returns dignity to the animal and reframes the pest as competent; supported by the whisking and barrel evidence earlier)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["follicle → ____", "whisking → ____", "cortex → ____", "vermin → ____"],
+          "rows": 2,
+          "answers": [
+            "the pocket of skin a hair or whisker grows from",
+            "sweeping the whiskers back and forth to sense the surroundings",
+            "the outer layer of the brain where sensing is mapped",
+            "animals people treat as unwanted pests"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says almost every human gene has a recognizable mouse counterpart. Explain why that makes the mouse useful in medicine, and name one limit of reasoning from mice to people.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(shared genes mean similar biology to test on; limit: mice are not humans, so results do not always transfer)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal we call a pest cannot also be the foundation of modern medicine. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

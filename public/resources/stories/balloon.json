@@ -1,0 +1,319 @@
+{
+  "key": "balloon",
+  "title": "The Balloon That Went to the Edge of the Sky",
+  "blurb": "Tree sap, a gas we found in the sun, and the reason a party balloon is really a machine.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Balloon That Went to the Edge of the Sky",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-balloon", "templateLabel": "The Balloon That Went to the Edge of the Sky", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the string." },
+        {
+          "kind": "image",
+          "imageKey": "balloon",
+          "notes": ["It is full of air", "It is made of soft rubber", "Rub it on your hair", "It goes pop", "The string holds it down"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a balloon. It is round and red. Someone blew air into it. The air made it big and fat. The balloon is made of rubber. Rubber is soft and stretchy. Squeeze the balloon and it squeezes back. Rub the balloon on your hair. Your hair will stand up and follow it. Hold the string tight. If you let go, the balloon will bob away."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the balloons in each row. Write how many in the box.",
+          "emoji": "🎈",
+          "items": ["2", "4", "1", "5"],
+          "answers": ["2", "4", "1", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "red    pop" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "balloon", "right": "air" },
+            { "left": "string", "right": "hand" },
+            { "left": "rubber", "right": "stretchy" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own balloon. Give it a long curly string.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Balloon That Went to the Edge of the Sky",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-balloon", "templateLabel": "The Balloon That Went to the Edge of the Sky", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "balloon",
+          "notes": ["Balloon rubber comes from a tree", "Floating balloons hold helium", "Helium is lighter than air", "Your breath is heavier than helium", "A rubbed balloon sticks to a wall"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Kinds of Balloons",
+          "text": "A balloon is just a bag of stretchy rubber. When you blow into it, your breath pushes the rubber out. The rubber pulls back in. That is why a balloon feels tight in your hands. Look around at a party. Some balloons roll on the floor. Some balloons pull up at the end of a string. They are made of the same rubber. What is inside them is not the same. The floor balloons are full of your breath. The string balloons are full of a gas called helium. Helium is lighter than the air in the room, so the balloon goes up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a balloon made of?", "What is inside the balloons that roll on the floor?", "What is inside the balloons that go up?"],
+          "rows": 2,
+          "answers": ["stretchy rubber", "your breath", "a gas called helium"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A balloon is a bag of ____.", "When you blow in, the rubber pulls ____.", "Floating balloons are full of ____.", "Helium is lighter than ____."],
+          "wordBank": ["rubber", "back", "helium", "air"],
+          "answers": ["rubber", "back", "helium", "air"]
+        },
+        { "kind": "draw", "prompt": "Draw a party with two kinds of balloons. Put some on the floor and some on strings.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Balloon That Went to the Edge of the Sky",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-balloon", "templateLabel": "The Balloon That Went to the Edge of the Sky", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "balloon",
+          "notes": ["Rubber trees drip a white sap called latex", "Balloons are made by dipping a mold in latex", "Helium is lighter than air", "The air pushes the balloon up from below", "Helium was found in the sun before it was found on Earth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Balloon Starts as Sap",
+          "text": "A balloon begins its life as a drip. In a warm forest, a worker cuts a curved line into the bark of a rubber tree. A white liquid called latex slides down the cut and drops into a little cup. That sticky sap is the balloon before it is a balloon. At a factory, a machine dips a balloon shaped mold into a tank of latex, lifts it out, and dips it again, until a thin rubber skin has built up. The skin is peeled off, and there it is. Flat, floppy, and waiting for air. Now think about the two kinds of balloons at a party. The ones you blow up yourself sink to the floor. The ones on strings tug toward the ceiling. Same rubber, different gas. The floating ones are filled with helium, and helium is lighter than the air in the room. The heavier air crowds in underneath and shoves the balloon upward. Nothing is pulling that balloon up. The air is pushing it up from below."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where does latex come from?",
+            "How does a factory turn latex into a balloon?",
+            "Why does a helium balloon go up instead of down?",
+            "Why do you think a balloon you blow up yourself does not float?"
+          ],
+          "rows": 2,
+          "answers": [
+            "from the bark of a rubber tree",
+            "a mold is dipped in latex over and over until a thin skin builds up",
+            "helium is lighter than air, so the heavier air pushes it up from below",
+            "(inference: your breath is heavier than helium, so the air cannot push it up)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A Balloon Starts as Sap", "How to Plan a Birthday Party", "The Tallest Tree in the World"],
+          "answers": ["A Balloon Starts as Sap"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The white sap from a rubber tree is called ____.", "A factory dips a ____ into the latex.", "Floating balloons are filled with ____."],
+          "wordBank": ["latex", "mold", "helium"],
+          "answers": ["latex", "mold", "helium"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of a balloon's life surprised you most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Balloon That Went to the Edge of the Sky",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-balloon", "templateLabel": "The Balloon That Went to the Edge of the Sky", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "balloon",
+          "notes": ["Michael Faraday made the first rubber balloon in 1824", "It was lab equipment, not a toy", "Rubber is made of long molecules called chains", "Helium travels as a single atom, not a pair", "That is why helium balloons sag first"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Faraday's Bag of Hydrogen",
+          "text": "Nobody set out to invent the party balloon. In 1824, a scientist named Michael Faraday was experimenting with hydrogen in a London laboratory and needed a container light enough to hold it. He cut two circles of rubber, pressed the rims together, and dusted flour on the inside so the sheets would not glue themselves shut. The balloon was a piece of lab equipment. Within a year someone was selling the idea as a toy, and it has stayed a toy ever since. The reason a balloon works at all is hidden inside the rubber. Rubber is built from molecules so long that scientists call them chains. When the balloon is limp, those chains lie tangled and coiled like noodles in a bowl. Blow into it and you drag the chains straight. Straight chains are unhappy chains. They pull to coil up again, and that pull is what presses back on your fingers and keeps the air squeezed tight. Let go of the neck and the chains snap home all at once, firing your breath out in a rude squeal. Here is something you may have noticed. A helium balloon is sagging by the next morning, while a balloon full of your own breath can stay round for a week. The rubber has not failed. A balloon skin is not solid the way a wall is solid, and it has gaps far too small to see. The gases in your breath travel as pairs of atoms locked together. Helium travels alone, one small atom at a time, and a lone helium atom can slip between the rubber chains and wander off into the room. The balloon is not leaking. It is being escaped from."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did Faraday build the first rubber balloon?",
+            "Explain in your own words why a stretched balloon presses back against your hand.",
+            "Why does a helium balloon sag before an air balloon does?",
+            "The passage says the balloon is not leaking, it is being escaped from. What is the author trying to get you to picture?"
+          ],
+          "rows": 2,
+          "answers": [
+            "he needed a light container to hold hydrogen for an experiment",
+            "the long rubber chains have been pulled straight and are trying to coil back up",
+            "helium travels as single small atoms that fit between the rubber chains",
+            "(inference: the helium is doing the moving, atom by atom, rather than the rubber breaking)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A balloon began as lab equipment, and how it stretches and empties comes down to what its rubber and its gas are made of",
+            "Michael Faraday is the most famous scientist who ever lived",
+            "Helium balloons are better than air balloons for a party"
+          ],
+          "answers": ["A balloon began as lab equipment, and how it stretches and empties comes down to what its rubber and its gas are made of"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["molecule → ____", "chains (in rubber) → ____", "limp → ____"],
+          "rows": 1,
+          "answers": [
+            "a tiny piece that a material is built from",
+            "very long molecules that coil up and straighten out",
+            "soft and floppy, with no air in it"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: Faraday invented the balloon for work and we use it for fun. Think of another invention that changed jobs like that, and explain how.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Balloon That Went to the Edge of the Sky",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-balloon", "templateLabel": "The Balloon That Went to the Edge of the Sky", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "balloon",
+          "notes": ["Helium was found in the sun in 1868, before anyone found it on Earth", "Named for Helios, the Greek sun", "Earth's helium is made by radioactive rock, atom by atom", "It is trapped underground with natural gas", "Released helium leaves the planet for good", "Liquid helium cools the magnets inside MRI scanners"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Gas We Found in the Sun",
+          "text": "The gas inside a floating balloon has a stranger history than the balloon does. In 1868, astronomers pointed their instruments at an eclipse and split the sun's light into a band of colors. Sitting in that band was a bright yellow line that matched no element anyone had on a shelf. They had discovered something in the sun before finding a single atom of it on Earth, so they named it after Helios, the Greek word for the sun. Helium was a rumor from ninety three million miles away for another twenty seven years before a chemist finally coaxed it out of a rock in a London laboratory. That rock is the clue. Earth did not arrive with much helium, and what little it had drifted away long ago. The helium we use is manufactured underground, slowly, by radioactive elements like uranium and thorium as they break down inside the crust. Each decay spits out a particle that is, in effect, a single helium atom. Over hundreds of millions of years these atoms seep upward and collect in the same porous rock traps that hold natural gas, and that is where we drill for them. Helium is not grown, farmed, or manufactured in a factory. It is mined, and the supply took longer to make than mammals have existed. Now consider what happens when a balloon lets go. Helium is so light that once it is loose in the atmosphere, nothing holds it down. It rises past the weather, past the airplanes, and eventually the atoms at the very top of the atmosphere are moving fast enough to leave. They do not fall back. They are gone from the planet permanently. Almost every other resource we waste stays on Earth somewhere, buried or floating or piled up, waiting to be recovered by somebody smarter than us. Helium is the exception. Meanwhile, liquid helium is the coldest practical substance we have, and it is what keeps the magnets inside an MRI scanner cold enough to work. There is no substitute. So a balloon is a small, cheerful, faintly ridiculous thing: a party decoration inflated with a finite gas that took the crust of the Earth a hundred million years to brew, and that leaves the planet forever the moment a child lets go of the string."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "How was helium discovered, and why is that discovery unusual?",
+            "Explain where Earth's helium comes from. Quote the phrase the passage uses about how long the supply took to make.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author mention MRI scanners so close to the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the sun discovery + radioactive origin + permanent loss)",
+            "astronomers saw a yellow line in the sun's light in 1868 that matched no known element, so it was found in the sun before it was found on Earth",
+            "radioactive uranium and thorium decaying underground; quote: the supply took longer to make than mammals have existed",
+            "(inform, with a persuasive turn: it defines terms and gives dates and facts, then argues at the end)",
+            "(to show helium has a serious use, which makes wasting it on parties feel harder to defend)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["element → ____", "porous → ____", "finite → ____", "substitute → ____"],
+          "rows": 1,
+          "answers": [
+            "a basic substance that cannot be broken into simpler ones",
+            "full of tiny spaces that gas can move through",
+            "limited, with a supply that can run out",
+            "something else that could be used in its place"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls helium the exception among wasted resources. Explain the exception in your own words.",
+            "The last sentence calls a balloon faintly ridiculous. Is that fair to a kid at a party? Explain your view."
+          ],
+          "rows": 3,
+          "answers": [
+            "(most wasted things stay on Earth and could be recovered; helium leaves for space and cannot)",
+            "(opinion, with reasoning about the child versus the choices adults make)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should helium be allowed in party balloons at all? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Balloon That Went to the Edge of the Sky",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-balloon", "templateLabel": "The Balloon That Went to the Edge of the Sky", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "balloon",
+          "notes": ["Weather balloons launch worldwide at 00 and 12 UTC", "Roughly 900 stations, twice every day", "They carry a radiosonde: sensors plus a radio", "They climb near 100,000 feet, into the stratosphere", "The balloon swells from about 6 feet to over 20 feet across", "Then it bursts, on purpose, every single time"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Balloon Whose Job Is to Burst",
+          "text": "Twice a day, at the same two moments on the clock, roughly nine hundred people scattered across the planet walk outdoors and let go of a balloon. They do it at midnight and at noon Coordinated Universal Time, so that every launch happens together, from the Antarctic ice to the middle of the Pacific to a field behind a weather office in Nebraska. It is the largest coordinated act of measurement humans perform, and it runs on a bag of latex. The balloon leaves the ground about six feet across, filled with helium or hydrogen, trailing a string with a small white box on the end. That box is a radiosonde, and it is the entire point. Inside are a thermometer, a humidity sensor, a pressure sensor, a GPS receiver, a battery, and a radio. As the balloon climbs at around a thousand feet a minute, the sonde reads the atmosphere continuously and radios its numbers back down. The wind is measured without any wind instrument at all. The ground station simply watches how far the balloon drifts sideways, and the drift is the wind. What happens on the way up is the elegant part. Air pressure falls as the balloon rises, so the gas inside pushes outward against less and less resistance. The balloon swells. By the time it has passed the cruising altitude of airliners it is no longer the size of a beach ball but the size of a small house, its rubber stretched to a skin thinner than plastic wrap. It keeps going. Somewhere above 100,000 feet, in the thin cold air of the stratosphere, the latex reaches a stretch it cannot survive and tears itself apart. The burst is not a failure. It is the design. A parachute opens, the radiosonde drifts back to Earth, and in the United States only about one in five is ever found and returned. The rest lie in fields and forests and the sea, having already sent everything they knew. Consider what that flight actually buys. Satellites are extraordinary, but a satellite reads the atmosphere from the outside, inferring temperature and moisture from radiation it detects at a distance. The balloon does not infer anything. It is inside the weather, touching it, sampling the real air at every altitude on its way through. Nearly every forecast you have ever been given, every hurricane track, every school snow day, was computed by a model that was fed the numbers those two daily flights brought back. There is no cheaper way to be there, and being there is not optional. So the balloon is a machine with a peculiar contract. It must be strong enough to lift a payload through the entire breathable world and weak enough to shatter at the end of it. It works exactly once. It is thrown away at the edge of space by design, and we build it out of the sap of a tree, and it is the reason anyone can tell you what tomorrow will be like."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the launches all happen at the same two times. Cite the evidence.",
+            "Explain why the balloon expands as it climbs, and why that expansion eventually destroys it.",
+            "Contrast the balloon with a satellite as the passage does. Cite the phrase the author uses about what a satellite does.",
+            "The author writes that the burst is not a failure, it is the design. Analyze what that sentence is doing at that point in the passage."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering coordinated launches, radiosonde data, and forecasting)",
+            "(so every reading is a snapshot of the whole atmosphere at one moment; cite: so that every launch happens together)",
+            "(air pressure drops with altitude so the gas pushes out against less resistance; the latex finally reaches a stretch it cannot survive)",
+            "(a satellite reads from outside while the balloon samples the real air; cite: inferring temperature and moisture from radiation it detects at a distance)",
+            "(it reframes destruction as intent and sets up the closing argument about a machine built to work exactly once)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["radiosonde → ____", "infer → ____", "payload → ____", "coordinated → ____"],
+          "rows": 2,
+          "answers": [
+            "the instrument box a weather balloon carries, holding sensors and a radio",
+            "to work something out indirectly rather than measure it directly",
+            "the equipment a vehicle is built to carry",
+            "arranged to happen together, on purpose"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Only about one in five radiosondes is recovered. Argue whether that makes the program wasteful, using the passage.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the data is already transmitted before the sonde lands, so the instrument's value is not in its return; the litter cost is real and worth weighing)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Satellites can see the whole planet at once, so daily weather balloons are an outdated habit we should retire. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "key": "woodpecker",
+  "title": "The Bird That Hammers All Day",
+  "blurb": "The bird that drills into trees twenty times a second, catches grubs with a tongue that wraps around its own skull, and builds homes for half the forest.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird That Hammers All Day",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-woodpecker", "templateLabel": "The Bird That Hammers All Day", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the woodpecker's beak." },
+        {
+          "kind": "image",
+          "imageKey": "woodpecker",
+          "notes": ["It holds onto the side of a tree", "Its beak is hard and pointy", "It leans back on its tail", "It says tap tap tap"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a woodpecker. It sits on the side of a tree. It holds on with its feet. It leans back on its stiff tail. Then it hammers. Tap tap tap tap. The tree is hard, but its beak is harder. The woodpecker is looking for bugs under the bark. It has a long, sticky tongue. The tongue reaches in and pulls the bug out. Tap tap tap."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the taps in each row. Write how many in the box.",
+          "emoji": "🐦",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "tap    tree" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "woodpecker", "right": "tree" },
+            { "left": "fish", "right": "pond" },
+            { "left": "mouse", "right": "hole" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a woodpecker on a tall tree. Add a bug under the bark.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird That Hammers All Day",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-woodpecker", "templateLabel": "The Bird That Hammers All Day", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "woodpecker",
+          "notes": ["Its nest is inside the tree", "It digs the hole with its beak", "Wood chips fall like snow", "Owls use the old holes", "It can peck all day long"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Builds Doors",
+          "text": "A woodpecker does not build its nest in a branch. It builds it inside the tree. First it picks a dead trunk with soft wood. Then it hammers a round hole and digs out a room. This takes many days. The wood chips fall to the ground like snow. When the chicks grow up, the family flies away and leaves the hole behind. The hole does not go to waste. Owls move in. Squirrels move in. Bluebirds and ducks and bats move in. None of them can cut a hole of their own. They wait for a woodpecker to do the work first."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does a woodpecker build its nest?", "What falls to the ground while it digs?", "Who moves into the hole later?"],
+          "rows": 2,
+          "answers": ["inside the tree", "wood chips", "owls, squirrels, bluebirds, ducks and bats"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The woodpecker digs its nest inside a ____.", "It picks a trunk with soft ____.", "The wood ____ fall to the ground.", "Later, an ____ can move in."],
+          "wordBank": ["tree", "wood", "chips", "owl"],
+          "answers": ["tree", "wood", "chips", "owl"]
+        },
+        { "kind": "draw", "prompt": "Draw the tree with the hole in it. Draw who lives inside now.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird That Hammers All Day",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-woodpecker", "templateLabel": "The Bird That Hammers All Day", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "woodpecker",
+          "notes": ["Its tongue wraps around its skull", "The tongue tip has tiny barbs", "The spit is sticky", "It eats beetle grubs from under bark", "Its beak works like a chisel"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tongue That Goes Around the Skull",
+          "text": "A woodpecker's beak is a chisel. That part is easy to see. The stranger tool is hidden inside its head. A woodpecker's tongue is far too long to fit in its mouth, so the tongue keeps going. It slides back past the throat, splits in two, wraps up and around the back of the skull, over the top of the head, and ends near the base of the beak. Some woodpeckers can stick that tongue out three times the length of their beak. The tip is not smooth. It carries tiny barbs that face backward, like the hooks on a fish spear, and it is coated in sticky spit. When a woodpecker hammers a hole into rotten wood, it is not eating the wood. It is opening a door. Beetle grubs live in tunnels under the bark. The bird pushes its tongue down a tunnel, feels around a corner, hooks the grub, and pulls it out whole. The hole took a minute. The tongue takes a second."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where does the woodpecker's tongue go when it is not being used?",
+            "Name two things that help the tongue hold onto a grub.",
+            "Why does the woodpecker hammer a hole in the wood?",
+            "Why do you think the tongue tip has barbs that face backward?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it wraps around the back and top of its skull",
+            "tiny backward barbs and sticky spit",
+            "to open a door to the grub tunnels under the bark",
+            "(inference: backward hooks stop the grub sliding off as the tongue pulls back)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Tongue That Goes Around the Skull", "How to Plant a Tree", "Why Birds Fly South"],
+          "answers": ["The Tongue That Goes Around the Skull"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The woodpecker's beak works like a ____.", "The tongue wraps around the back of its ____.", "Beetle ____ live in tunnels under the bark."],
+          "wordBank": ["chisel", "skull", "grubs"],
+          "answers": ["chisel", "skull", "grubs"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which woodpecker tool is more useful, the beak or the tongue, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird That Hammers All Day",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-woodpecker", "templateLabel": "The Bird That Hammers All Day", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "woodpecker",
+          "notes": ["Two toes point forward, two point back", "Stiff tail feathers work as a third leg", "The beak grows back as it wears down", "A see-through eyelid closes before each strike", "Acorn woodpeckers store acorns in one tree", "There are about 240 species worldwide"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built to Hit Things",
+          "text": "Imagine trying to hammer a nail while hanging onto a wall. That is the woodpecker's whole job, and its body is built for it from the toes up. Start with the feet. Most birds have three toes forward and one back, which is good for gripping a branch from above. A woodpecker has two toes forward and two back, which turns its foot into a pair of pincers that grip bark from the side. Next comes the tail. A woodpecker's tail feathers are unusually stiff, with thickened shafts, so the bird can press them against the trunk and use the tail as a third leg. Feet and tail together make a tripod. The bird is not hanging on. It is braced. Then the beak. It is a chisel, and it wears down as it works, but it also grows continuously from the base, so it sharpens itself. Around the nostrils grow small bristly feathers that filter out the sawdust. A fraction of a second before every strike, a thin extra eyelid called the nictitating membrane sweeps across the eye. It keeps chips out, and it holds the eyeball firmly in place. Not every woodpecker uses the kit the same way. The acorn woodpecker of the western United States drills thousands of shallow holes in a single dead tree and jams one acorn into each. A well used storage tree can hold fifty thousand acorns, and a family of birds will defend it for generations. The sapsucker drills neat rows of small wells and returns later to drink the sap that leaks out, along with the insects the sap has trapped. Every one of those features solves a problem created by the one job the bird refuses to give up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain why a woodpecker's foot is a better tool than a robin's foot for this job.",
+            "The passage calls the feet and tail a tripod. What does that word tell you about how the bird stands?",
+            "The beak wears down but never gets short. How does the passage explain that?",
+            "Why do you think the nictitating membrane closes before the strike rather than after it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "two toes forward and two back grip bark from the side; three forward and one back is built for gripping a branch from above",
+            "(three points of contact hold it steady and braced against the trunk, not dangling)",
+            "the beak grows continuously from the base, so it sharpens itself as it wears",
+            "(inference: it protects the eye from flying chips and holds the eyeball still during the impact)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Almost every part of a woodpecker's body is shaped by the job of hammering wood",
+            "Woodpeckers are the loudest birds in North America",
+            "Acorns are the favorite food of every bird in the forest"
+          ],
+          "answers": ["Almost every part of a woodpecker's body is shaped by the job of hammering wood"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["pincers → ____", "braced → ____", "continuously → ____", "filter → ____"],
+          "rows": 1,
+          "answers": [
+            "a gripping tool that pinches from two sides",
+            "held firmly in place against something",
+            "going on without stopping",
+            "to catch and hold back the bits you do not want"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph describing an animal tool you would want if you had to work on the side of a tree all day. Say what it does and give two reasons it would help.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird That Hammers All Day",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-woodpecker", "templateLabel": "The Bird That Hammers All Day", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "woodpecker",
+          "notes": ["Foraging taps and drumming are different sounds", "Drumming claims territory and calls a mate", "Birds drum on gutters and signs because metal is loud", "Most woodpeckers cannot sing", "Old nest holes house owls, bats and squirrels", "Biologists call them a keystone species"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sound Is the Point",
+          "text": "There are two kinds of woodpecker noise, and they are not the same thing at all. The first is foraging. It is uneven and businesslike: a few taps, a pause, a chip of bark flicked away, a few more taps. The bird is working. It is listening and feeling for the hollow tunnels that beetle grubs leave under the bark, and when it finds one it opens the wood and reaches in with its long barbed tongue. The second kind is drumming, and it has nothing to do with food. A drum is a fast, even burst of blows delivered on whatever surface will carry the sound farthest. That last part is the key. The woodpecker is not choosing good wood. It is choosing a loud object. Birds have been recorded drumming on hollow limbs, on metal gutters, on chimney flashing, on street signs and on satellite dishes, because a resonant metal surface broadcasts a claim across a far wider area than soft wood ever could. Most songbirds sing. Woodpeckers mostly cannot. So drumming does the work that song does for a robin: it announces who owns this patch of forest, and it advertises for a mate. The pattern carries real information. Species differ in the speed of the roll, its length, and whether it slows at the end, and a listening bird can tell a rival of its own kind from a harmless neighbor of another. There is a third thing woodpeckers do, and they do it without meaning to. Every pair excavates a fresh nest hole, and most holes are used once and then abandoned. Across a forest, that adds up to a standing supply of ready made cavities. Chickadees, bluebirds, wrens, kestrels, screech owls, flying squirrels and several kinds of bat all need holes, and none of them can cut one. Biologists call an animal like this a keystone species: pull it out and a whole community of others loses its housing. The hammering that sounds like damage is, for a great many neighbors, construction."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the difference between foraging and drumming. Quote the phrase the passage uses to describe the rhythm of a drum.",
+            "Why does a woodpecker drum on a metal gutter instead of a tree? Use evidence from the text.",
+            "Is this passage written to inform, persuade or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why do you think the author saved it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering foraging vs drumming, drumming as language, and the nest holes other animals depend on)",
+            "foraging hunts for grubs and is uneven; drumming is communication; quote: a fast, even burst of blows",
+            "(metal is resonant and carries the claim farther; cite: broadcasts a claim across a far wider area than soft wood ever could)",
+            "(inform, with detail: it defines terms and gives evidence, though the closing line has a persuasive turn)",
+            "(the noise that looks destructive actually builds homes; the author ends there to flip the reader's assumption)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["foraging → ____", "resonant → ____", "excavates → ____", "keystone species → ____"],
+          "rows": 1,
+          "answers": [
+            "searching for food",
+            "able to ring and carry sound well",
+            "digs out",
+            "a species many others depend on, whose loss damages the whole community"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Drumming carries information about species, speed and length. Why is it useful for a bird to know whether a drummer is its own kind?",
+            "A forest manager wants to remove every dead tree to make the woods look tidy. Using the passage, explain what that would cost."
+          ],
+          "rows": 3,
+          "answers": [
+            "(only its own species is a rival for territory and mates, so it can ignore the others and save energy)",
+            "(inference: dead trees are where woodpeckers excavate, so removing them removes the cavity supply that owls, bats and squirrels depend on)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: a neighbor wants to scare off a woodpecker that drums on her metal roof at dawn. Take a position on what she should do and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird That Hammers All Day",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-woodpecker", "templateLabel": "The Bird That Hammers All Day", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "woodpecker",
+          "notes": ["Up to 20 strikes per second, thousands per day", "Each impact stops the head in about a millisecond", "The spongy bone and looping tongue bone were the old explanation", "High speed film in 2022 found no cushioning at all", "A woodpecker brain weighs about two grams", "A human brain weighs about 1.4 kilograms"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Shock Absorber That Was Never There",
+          "text": "For most of a century, the woodpecker came with a tidy explanation attached to it, and the explanation was wrong. The problem it tried to solve is real. A woodpecker strikes wood up to twenty times a second and may land thousands of blows in a day. Each impact stops its head in about a thousandth of a second, at decelerations many times greater than the ones that concuss a football player. A bird doing this should be knocked senseless by breakfast. So biologists went looking for the cushion, and they found candidates everywhere. Part of the skull is built of spongy bone. The upper and lower halves of the beak are slightly different lengths. The long hyoid bone that carries the tongue loops all the way around the braincase like a seatbelt. Each of these was a reasonable guess. Together they hardened into a fact: the woodpecker's head is a shock absorber. The claim traveled into textbooks, onto museum labels, and through the patent applications of helmet designers. In 2022 a team led by the biomechanist Sam Van Wassenbergh decided to actually watch. They filmed three species with high speed cameras and tracked the eye and the tip of the beak separately, frame by frame. If the skull were absorbing shock, the beak would stop first while the braincase kept traveling a little, compressing something in between. That is not what the footage showed. Beak and braincase decelerated together, as one stiff object. There was no measurable cushion. The head is not a shock absorber. It is a hammer. Then the researchers pointed out why that should have been obvious. A shock absorber's job is to convert motion into wasted heat. A woodpecker that cushioned its own blows would be throwing away the energy it swings for, and every bit of softness in the skull would mean more pecks to open the same hole. Natural selection had a choice between protecting the brain and drilling the tree, and it chose the tree. Which leaves the original question standing. If nothing is cushioned, why is the bird fine? The answer is size, and it disappoints only because we expected something cleverer. A human brain weighs about 1.4 kilograms. A woodpecker's weighs about two grams. Concussion is not caused by deceleration alone. It is caused by the force a brain's own mass drives into the inside of its own skull. Shrink the brain and that force shrinks with it, while the bone holding it barely gets weaker. A brain that small, pressed snugly against bone with almost no fluid to slosh in, and stopped inside a millisecond, never reaches the pressure that injures a large one. The researchers ran the numbers and put the woodpecker comfortably below the threshold where a larger brain would be damaged. It is not armored. It is simply too small to hurt itself. There is a lesson buried in this, and it is not about birds. The shock absorber story survived for decades because it was elegant, because it explained a genuine puzzle, and because nobody filmed the animal to check. It also cost something real: helmet engineers spent years copying an anatomy that was never doing the job they believed it was doing. The woodpecker was never solving the problem we had assigned it. It was solving a different one, and it was solving it by being small."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the experiment Van Wassenbergh's team ran. What would the footage have shown if the old explanation were true, and what did it show instead?",
+            "The passage argues that shock absorption would be a bad design for a woodpecker. Reconstruct that argument and cite the sentence that states its conclusion.",
+            "Why is deceleration alone a misleading measure of concussion risk? Use the passage to explain the role of brain mass.",
+            "Identify where the passage turns away from the bird entirely. What is the author's real target in the final paragraph, and does the evidence earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the long held belief that woodpecker skulls cushion impacts was disproved by high speed film, and the birds survive simply because their brains are tiny)",
+            "they filmed three species with high speed cameras and tracked the eye and beak tip separately; a cushion would show the beak stopping first while the braincase kept traveling; instead beak and braincase decelerated together as one stiff object",
+            "(a cushion wastes impact energy as heat, so a softer skull would need more pecks per hole; cite: Natural selection had a choice between protecting the brain and drilling the tree, and it chose the tree)",
+            "(concussion comes from the force a brain's own mass drives into its skull, so a two gram brain generates far less force than a 1.4 kilogram one at the same deceleration)",
+            "(it turns at There is a lesson buried in this, and it is not about birds; the target is how an elegant unchecked explanation persists and misleads; earned by the textbook, museum and helmet-patent evidence given earlier)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["deceleration → ____", "hyoid → ____", "biomechanist → ____", "threshold → ____"],
+          "rows": 2,
+          "answers": [
+            "the rate at which something slows down",
+            "the long bone that carries and anchors the tongue, looping around the braincase",
+            "a scientist who studies how living bodies move and handle force",
+            "the point at which an effect starts to happen"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that each candidate cushion was a reasonable guess. Explain why several reasonable guesses can still add up to a wrong conclusion.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(each feature is real, but assuming a purpose for it is not the same as testing that purpose; agreement between guesses is not evidence)",
+            "(student question, for example what the spongy bone actually does; a peer reviewed biomechanics study or a researcher in the field)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A clear, elegant explanation is worth keeping until someone proves it wrong. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

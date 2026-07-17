@@ -1,0 +1,319 @@
+{
+  "key": "clock",
+  "title": "The Clock That Started as a Shadow",
+  "blurb": "From a stick in the dirt to an atom that keeps time better than the Earth does.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Clock That Started as a Shadow",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-clock", "templateLabel": "The Clock That Started as a Shadow", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the numbers on the clock." },
+        {
+          "kind": "image",
+          "imageKey": "clock",
+          "notes": ["It has two hands", "It has twelve numbers", "It says tick, tick, tick", "One tick is one second", "It never goes to sleep"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a clock. A clock tells us the time. It has numbers all the way around. It has two hands. The short hand is slow. The long hand is faster. Put your ear close. The clock says tick, tick, tick. Every tick is one second. When you eat, it ticks. When you sleep, it ticks. The clock keeps going all night long."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the ticks in each row. Write how many in the box.",
+          "emoji": "⏰",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "time    tick" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "clock", "right": "time" },
+            { "left": "sun", "right": "day" },
+            { "left": "moon", "right": "night" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own clock. Put both hands on it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Clock That Started as a Shadow",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-clock", "templateLabel": "The Clock That Started as a Shadow", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "clock",
+          "notes": ["Twelve numbers on the face", "Short hand shows the hour", "Long hand counts the minutes", "The first clock was a shadow", "A shadow clock only works on sunny days"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Clock That Started as a Shadow",
+          "text": "Look at a clock face. There are twelve numbers on it. The short hand points to the hour. The long hand counts the minutes. The long hand goes all the way around one time every hour. The short hand is so slow that you cannot see it move at all. Long ago, people had no clocks. They watched the sun instead. A stick in the ground made a shadow, and the shadow moved as the sun moved. In the morning the shadow was long. At noon it was short. That was the very first clock. It worked well, but only when the sun was out."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many numbers are on a clock face?", "Which hand counts the minutes?", "What made the very first clock?"],
+          "rows": 2,
+          "answers": ["twelve", "the long hand", "a stick and its shadow"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A clock face has twelve ____.", "The short hand shows the ____.", "The first clock used a ____.", "A shadow clock needs the ____."],
+          "wordBank": ["numbers", "hour", "shadow", "sun"],
+          "answers": ["numbers", "hour", "shadow", "sun"]
+        },
+        { "kind": "draw", "prompt": "Draw a stick in the ground on a sunny day. Draw the shadow it makes.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Clock That Started as a Shadow",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-clock", "templateLabel": "The Clock That Started as a Shadow", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "clock",
+          "notes": ["Egyptians read time off shadows", "Water clocks work in the dark", "Clocks turn clockwise because shadows do", "The first tower clocks had no hands", "Our word clock comes from an old word for bell"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The First Clocks Did Not Tick",
+          "text": "The first clocks did not tick. They were shadows. In Egypt, more than three thousand years ago, people pushed a stick into the ground and watched its shadow crawl across the dirt. In the morning the shadow was long and pointed one way. By evening it was long again and pointed the other way. At noon it was short. If you carved lines in the ground, you could read the time straight off the shadow. This is also why clock hands turn the way they do. They copy the way a shadow swings. Shadow clocks had one big problem. A cloud stopped them, and night stopped them completely. So people built water clocks. A bowl with a tiny hole let water drip out at a steady rate, and lines inside the bowl showed how much time had gone by. Water clocks worked in the dark. Around seven hundred years ago, towns in Europe put the first big machine clocks in their church towers. Most had no hands and no face at all. They simply rang a bell, so the whole town heard the hour instead of seeing it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What made the shadow on the very first clocks?",
+            "Why could a shadow clock not tell you the time at night?",
+            "How did a water clock measure time?",
+            "Why do you think a town would want a clock that rings a bell instead of one you have to look at?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a stick pushed into the ground",
+            "there is no sun at night, so there is no shadow",
+            "water dripped out of a bowl at a steady rate and lines showed how much time had passed",
+            "(inference: everyone could hear it from anywhere, even indoors or in the fields)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The First Clocks Did Not Tick", "How to Fix a Broken Watch", "The Deepest Lake in Egypt"],
+          "answers": ["The First Clocks Did Not Tick"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The earliest clocks used the sun and a ____.", "A ____ clock kept working after dark.", "The first tower clocks rang a ____."],
+          "wordBank": ["shadow", "water", "bell"],
+          "answers": ["shadow", "water", "bell"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which old clock would you rather use, the shadow clock or the water clock, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Clock That Started as a Shadow",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-clock", "templateLabel": "The Clock That Started as a Shadow", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "clock",
+          "notes": ["A clock is powered by a weight or a spring", "The escapement lets the power out tooth by tooth", "The tick is the sound of that gate", "Galileo studied swinging weights", "Huygens built the first pendulum clock in 1656", "Minute hands only became useful after pendulums"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Trick Inside the Tick",
+          "text": "Every mechanical clock has a hidden problem to solve. A clock is powered by something that badly wants to run: a heavy weight pulling down on a rope, or a coiled spring pushing to unwind. Left alone, that power would spin the gears wildly and dump all of its energy in a few seconds. A clock has to spend that energy slowly and in equal amounts instead. The answer is a part called the escapement. Think of it as a little gate. It blocks the gear train, lets exactly one tooth slip past, then blocks it again. Tooth by tooth, the energy escapes in even portions. That gate opening and closing is the tick you hear. The tick is not decoration. It is the sound of a clock rationing its own power. The escapement still needs something steady to tell it when to open. Early clocks used a swinging bar, which was not steady at all, and they gained or lost a quarter of an hour every day. Then came the pendulum. Galileo noticed something odd about a swinging weight: a wide swing and a small swing take almost exactly the same amount of time. What sets the timing is the length of the string, not the size of the swing. In 1656 a Dutch scientist named Christiaan Huygens used that idea to build the first pendulum clock. Clock error dropped from about fifteen minutes a day to about fifteen seconds a day. Only then was a minute worth measuring, and clocks started growing minute hands."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What problem does every mechanical clock have to solve?",
+            "In your own words, explain what the escapement does.",
+            "What did Galileo notice about a swinging weight, and why did that matter to clockmakers?",
+            "The passage says minute hands appeared only after pendulum clocks. Why would a minute hand be useless on an older clock?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it has to release stored power slowly and evenly instead of all at once",
+            "(it blocks the gears, releases one tooth at a time, then blocks again)",
+            "wide and small swings take the same time, and length sets the timing; it gave the escapement something steady to count",
+            "(inference: an older clock could be off by fifteen minutes a day, so a minute hand would be pointing at a lie)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A clock keeps time by releasing stored energy in tiny equal steps, and a steady pendulum made those steps accurate",
+            "Galileo invented the first clock in Italy",
+            "Springs are stronger than weights in every machine"
+          ],
+          "answers": ["A clock keeps time by releasing stored energy in tiny equal steps, and a steady pendulum made those steps accurate"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["escapement → ____", "pendulum → ____", "rationing → ____"],
+          "rows": 1,
+          "answers": [
+            "the gate that lets a clock's gears advance one tooth at a time",
+            "a hanging weight that swings at a steady rate set by its length",
+            "handing something out in small, controlled amounts"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining, to someone who has never seen inside a clock, why a clock ticks. Use the words escapement and energy.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Clock That Started as a Shadow",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-clock", "templateLabel": "The Clock That Started as a Shadow", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "clock",
+          "notes": ["Earth turns 15 degrees of longitude every hour", "Latitude is easy, longitude needs a clock", "Britain offered up to 20,000 pounds for a solution", "John Harrison was a self taught carpenter", "His H4 lost about 5 seconds in 81 days at sea", "He was 79 before he was paid most of the prize"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Clock That Found the Sea",
+          "text": "For most of history, a ship's captain could tell you how far north or south he was to within a mile, and had almost no idea how far east or west. Latitude is easy. Measure how high the sun climbs at noon, or how high the North Star sits above the horizon, and the sky hands you the answer. Longitude hides. Nothing in the sky points east. There was one way to catch it. The Earth turns once in twenty four hours, which works out to fifteen degrees of longitude every hour. If a sailor knew the exact time back at his home port and compared it to local noon on his ship, the gap between the two times would tell him his longitude. Three hours behind home meant forty five degrees west. The method is simple. The clock was the problem. Pendulum clocks were useless at sea. A pendulum needs to hang still, and a ship never is. Salt air rusted steel. Heat stretched the metal parts and cold shrank them, so a clock ran fast in one ocean and slow in the next. Ships wrecked for want of a clock. In 1707 four British warships ran onto the rocks near the Scilly Isles and around fourteen hundred sailors drowned. Seven years later, Parliament offered a fortune, up to twenty thousand pounds, to anyone who could solve longitude. John Harrison was a village carpenter who taught himself clockmaking. Most experts assumed the answer would come from astronomers reading the position of the moon. Harrison spent forty years proving the answer was a machine. He threw out the pendulum and used balance springs that did not care about rolling. He built parts from two different metals joined together, so that when heat stretched one, the pair bent back into shape and canceled its own error. He invented bearings that needed no oil, because oil thickened in the cold. His fourth attempt, H4, looked like an oversized pocket watch. In 1761 it sailed to Jamaica and back. Over eighty one days at sea, it lost about five seconds. The board holding the prize did not want to believe a carpenter, so it made him prove it again, then argued for years over the money. Harrison was seventy nine before the King stepped in and Parliament paid him most of what he was owed. By then his idea was already at sea in other men's ships."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why a clock can find longitude but not latitude.",
+            "Give two reasons a pendulum clock fails on a ship. Quote one of them exactly.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What does the last sentence suggest about how new ideas spread? Explain."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the longitude problem, the clock solution, and Harrison)",
+            "the sky shows latitude directly, but longitude has to be worked out from the time difference between home and the ship",
+            "the ship rolls so a pendulum cannot hang still; heat and cold change the metal; quote: A pendulum needs to hang still, and a ship never is",
+            "(inform, with detail: it explains latitude, longitude, and the mechanism; the Harrison story adds a persuasive edge)",
+            "(inference: the invention outran the men judging it; ideas get used before credit is given)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["longitude → ____", "astronomers → ____", "balance spring → ____", "for want of → ____"],
+          "rows": 1,
+          "answers": [
+            "how far east or west a place is",
+            "scientists who study the sky and the movement of objects in it",
+            "a coiled spring that keeps time by winding and unwinding instead of swinging",
+            "because of the lack of"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Harrison joined two different metals so the pair would bend back into shape when it got hot. Explain in your own words why that solved a problem.",
+            "Why might trained experts have refused to accept a solution from a self taught carpenter?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the two metals stretch by different amounts, so their errors work against each other and cancel out)",
+            "(opinion / inference: pride, class, and the expectation that the answer would come from astronomy)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was the board right to test Harrison's clock again and again before paying him? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Clock That Started as a Shadow",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-clock", "templateLabel": "The Clock That Started as a Shadow", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "clock",
+          "notes": ["Quartz is piezoelectric: squeeze it, it makes voltage", "Watch crystals vibrate 32,768 times a second", "First quartz clock: Bell Labs, 1927", "Since 1967 the second is defined by cesium-133", "9,192,631,770 oscillations make one second", "GPS satellites carry atomic clocks", "Raise a clock a foot and it ticks faster"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Second Nobody Owns",
+          "text": "For thousands of years, the Earth was the clock. A day was one turn of the planet, and every timepiece humans built was really just a machine trying to copy that turn. Divide a day by twenty four, then by sixty, then by sixty again, and you have a second. The definition was circular, but it worked, because nothing people made was accurate enough to catch the Earth out. Then, in 1927, two engineers at Bell Laboratories, Warren Marrison and J. W. Horton, built a clock around a sliver of quartz. Quartz has a strange property, discovered by the brothers Jacques and Pierre Curie in 1880. Squeeze the crystal and it produces a small voltage. Feed it a voltage and it flexes. Cut a piece of quartz to the right shape and it will vibrate at a rate it insists on, thousands of times a second, and hold that rate stubbornly. A modern watch crystal is tuned to vibrate 32,768 times per second, which is two multiplied by itself fifteen times. That number is not decoration. A simple circuit can halve a count, so halving fifteen times turns a blur of vibration into exactly one pulse per second. Quartz clocks were so steady that within a few years they caught the Earth out. The planet, it turned out, does not turn at a constant rate. It wobbles with the seasons, drags against the tides, and slows by a couple of thousandths of a second per century. The clock humanity had trusted for all of history was the sloppy one. So the second was taken away from the Earth and given to an atom. Since 1967, one second has been defined as the time it takes a cesium-133 atom to oscillate 9,192,631,770 times between two energy states. Nobody chose that number for its beauty. It was chosen to match the old astronomical second as closely as possible, so that nothing already built would have to be re-timed. An atom makes a better standard than a planet for one reason: every cesium atom in the universe is identical to every other one, and none of them wobble, wear out, or slow down. There is no master atom locked in a vault in Paris. Any laboratory anywhere can grow the second from scratch. The accuracy is hard to feel. The best atomic clocks running today would not gain or lose a second over the age of the universe. That sounds like showing off until you use it. Every satellite in the GPS system carries atomic clocks, and your phone finds itself by comparing how long each satellite's signal took to arrive. Radio waves travel about thirty centimeters in a billionth of a second, so a clock error of a few billionths puts you on the wrong street. Those satellite clocks also have to be corrected for relativity. They move fast, which slows their clocks down, and they orbit high above the Earth where gravity is weaker, which speeds them up. The two effects do not cancel. Left uncorrected, GPS would drift about ten kilometers off in a single day. Clocks have now become so sensitive that they work as instruments for measuring other things entirely. Raise an atomic clock by a foot and it ticks measurably faster, because gravity is a shade weaker up there. That is not a fault in the clock. It is the shape of time itself, showing up on a laboratory bench, in a device descended from a stick casting a shadow in Egyptian dirt."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the author calls the old definition of a second circular.",
+            "Why is 32,768 the chosen vibration rate for a watch crystal? Cite the sentence that explains it.",
+            "The passage says quartz clocks caught the Earth out. Explain what was discovered and why it forced a new definition of the second. Quote the sentence that states the conclusion.",
+            "Identify the author's argument for why an atom is a better standard than a planet, and judge whether the passage supports it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a second was defined by dividing a day, and a day was defined by the Earth's turn, so the standard was measuring itself)",
+            "(it is two multiplied by itself fifteen times, so a circuit can halve it down to one pulse per second; cite: A simple circuit can halve a count, so halving fifteen times turns a blur of vibration into exactly one pulse per second)",
+            "(the Earth's rotation is not constant; quote: The clock humanity had trusted for all of history was the sloppy one)",
+            "(every cesium atom is identical and none change, so any lab can reproduce it; supported by the no master atom in a vault line)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["piezoelectric → ____", "oscillate → ____", "constant (rate) → ____", "descended from → ____"],
+          "rows": 2,
+          "answers": [
+            "producing a voltage when squeezed, and flexing when given a voltage",
+            "to swing or vibrate back and forth in a repeating way",
+            "staying exactly the same, never speeding up or slowing down",
+            "developed over time out of an earlier thing"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author ends on a stick casting a shadow in Egyptian dirt. Analyze what that move does to the argument of the whole passage.",
+            "The passage claims relativity effects on GPS satellites do not cancel. Write a question this passage cannot answer about that, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it closes a loop from the crudest clock to the most precise, framing the whole history as one continuous project)",
+            "(student question + a credible source type, such as a physics text or a published GPS engineering paper)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: measuring time more precisely has changed how we live more than any other invention on this list. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

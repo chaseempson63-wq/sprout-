@@ -1,0 +1,319 @@
+{
+  "key": "goose",
+  "title": "The Goose That Knows the Way",
+  "blurb": "Why geese fly in a V, why a gosling will follow the first thing it sees, and how one goose crosses the Himalayas.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Goose That Knows the Way",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-goose", "templateLabel": "The Goose That Knows the Way", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say honk like a goose." },
+        {
+          "kind": "image",
+          "imageKey": "goose",
+          "notes": ["A goose says honk", "A baby goose is a gosling", "Geese eat grass", "They fly in the shape of a V"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a goose. The goose says honk. A baby goose is called a gosling. The gosling follows its mom all day. It walks where she walks. It swims where she swims. Geese eat grass. They pull it up with their strong beaks. When the days get cold, geese fly away. They fly together in the shape of a big letter V."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the feathers in each row. Write how many in the box.",
+          "emoji": "🪶",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "honk    fly" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its sound.",
+          "pairs": [
+            { "left": "goose", "right": "honk" },
+            { "left": "cow", "right": "moo" },
+            { "left": "dog", "right": "woof" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a goose flying in the sky. Add a long neck.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Goose That Knows the Way",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-goose", "templateLabel": "The Goose That Knows the Way", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "goose",
+          "notes": ["A baby goose is a gosling", "A gosling can swim on its first day", "Geese hiss when they are cross", "Mom and dad both guard the nest", "A flock flies in a V"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Goose That Knows the Way",
+          "text": "A baby goose is called a gosling. It hatches out of an egg covered in soft yellow down. Almost right away it can walk. On its very first day it can swim. The gosling stays close to its mom and dad. Both of them watch it. If something comes too near, a goose stretches out its long neck and hisses. Geese eat grass all day long. In fall, when the days get short, the geese fly away to find warmer water. They fly together in the shape of a V, and they honk the whole way."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a baby goose called?", "What can a gosling do on its first day?", "What shape do geese fly in?"],
+          "rows": 2,
+          "answers": ["a gosling", "it can walk and swim", "the shape of a V"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A baby goose is called a ____.", "Geese eat ____ all day.", "An angry goose will ____.", "Geese fly in the shape of a ____."],
+          "wordBank": ["gosling", "grass", "hiss", "V"],
+          "answers": ["gosling", "grass", "hiss", "V"]
+        },
+        { "kind": "draw", "prompt": "Draw a goose and her goslings by the water. Add some grass.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Goose That Knows the Way",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-goose", "templateLabel": "The Goose That Knows the Way", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "goose",
+          "notes": ["A group of flying geese is called a skein", "The V shape saves the flock energy", "The leader works the hardest", "Geese take turns at the front", "They honk to keep track of each other"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Geese Fly in a V",
+          "text": "Look up in fall and you might see a line of geese crossing the sky. They are not flying in a V by accident. Flying is hard work. A goose flaps all day, and its muscles burn a lot of fuel. When a goose flaps, it pushes air down under its wings to hold itself up. That air has to go somewhere. It rolls off the wingtips and curls upward again. A goose flying just behind and a little to the side can ride that rising air. It gets a small amount of lift for free, so it does not have to flap quite as hard. The goose at the very front gets no free lift at all. It has the hardest job in the flock. So the geese take turns. When the leader gets tired, it drops back into the line and another goose moves up to the point. The honking helps too. Geese call to each other the whole flight, so every bird can hear where the others are. A flock of geese is a team that keeps trading places."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens to the air after a goose pushes it down?",
+            "Why does a goose behind the leader have an easier flight?",
+            "Which goose in the V has the hardest job?",
+            "Why do you think the geese take turns at the front?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it rolls off the wingtips and curls upward",
+            "it can ride the rising air and gets some lift for free",
+            "the goose at the very front",
+            "(inference: so no single bird gets worn out doing all the hard work)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Geese Fly in a V", "How to Build a Bird House", "The Best Grass for a Garden"],
+          "answers": ["Why Geese Fly in a V"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Rising air gives the goose behind a little ____.", "The air rolls off the goose's ____.", "When the leader gets ____, another goose moves up."],
+          "wordBank": ["lift", "wingtips", "tired"],
+          "answers": ["lift", "wingtips", "tired"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the V, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Goose That Knows the Way",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-goose", "templateLabel": "The Goose That Knows the Way", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "goose",
+          "notes": ["Konrad Lorenz raised greylag geese in the 1930s", "Goslings followed him instead of a mother goose", "Imprinting: learning who family is, fast", "The window lasts only a day or two", "Lorenz won a Nobel Prize in 1973"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Man the Geese Thought Was Mom",
+          "text": "In the 1930s, a scientist in Austria named Konrad Lorenz tried something odd. He took a clutch of greylag goose eggs and sat beside them until they hatched. The goslings opened their eyes, and the first large moving thing they saw was Lorenz. From that moment, they followed him. They followed him across the grass. They followed him into the water. They called out when he walked out of sight. To those goslings, Konrad Lorenz was mom. Lorenz called this imprinting. A gosling is not born knowing what its mother looks like. It is born with a rule instead. The rule is roughly this: whatever big thing moves nearby and makes noise in my first hours, stay with that thing and learn it well. In a nest, the rule works perfectly, because the only big noisy thing there is the mother goose. The gosling learns her shape and her voice, and it never has to learn them again. The window slams shut fast. After a day or two, a gosling will not imprint on anything new. That is a good bargain for a bird that has to walk and swim on its first day. A gosling cannot afford a week of working out who its family is. It has to know now, and being wrong is better than being slow, because in a real nest the rule is almost never wrong. Lorenz shared a Nobel Prize in 1973 for this work. The photographs of a serious man in a heavy coat leading a parade of goslings across a field are still famous."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is imprinting, in your own words?",
+            "Why did the goslings follow Lorenz instead of a goose?",
+            "The passage says being wrong is better than being slow. Explain what that means for a gosling.",
+            "Why do you think the imprinting window closes after only a day or two?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(learning who your parent is from the first moving thing you see, very early and for good)",
+            "he was the first big moving thing they saw after hatching, so the rule pointed at him",
+            "a gosling has to walk and swim right away, so a fast answer keeps it safe even if the rule can be tricked",
+            "(inference: once the gosling knows its family, staying open would let it follow the wrong animal)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Goslings are born with a quick rule for learning who their mother is, and Lorenz showed the rule can point at a person",
+            "Geese in Austria are friendlier than geese anywhere else",
+            "Scientists in the 1930s did not know what a goose was"
+          ],
+          "answers": ["Goslings are born with a quick rule for learning who their mother is, and Lorenz showed the rule can point at a person"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["imprinting → ____", "clutch (of eggs) → ____", "window (as the passage uses it) → ____"],
+          "rows": 1,
+          "answers": [
+            "learning who your parent is in the first hours after hatching",
+            "a group of eggs laid together in one nest",
+            "a short stretch of time when something can happen"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: was it fair of Lorenz to let the goslings imprint on him? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Goose That Knows the Way",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-goose", "templateLabel": "The Goose That Knows the Way", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "goose",
+          "notes": ["The bar-headed goose crosses the Himalayas twice a year", "Tracked above 7,000 meters, higher than any peak outside Asia", "Its hemoglobin grabs oxygen more tightly than ours", "Flight muscles packed with capillaries and mitochondria", "It hugs the terrain instead of cruising high", "Most of the climbing happens at night"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Flies Over the Himalayas",
+          "text": "Every spring, a goose does something that should kill it. The bar-headed goose spends winter on the warm plains of India. Its breeding lakes lie in Mongolia and on the Tibetan Plateau. Between the two stands the Himalaya, the highest wall of rock on Earth. The goose does not go around it. It goes over. Air at that height is thin. Near the summit of Everest, each breath holds about a third as much oxygen as a breath at sea level. Human climbers spend weeks letting their bodies adjust, and most still carry bottled oxygen. The bar-headed goose arrives from near sea level in a day or two, and it is not resting on the way up. It is flapping, which is one of the most fuel-hungry things any animal can do. Its body is built for the job. Hemoglobin is the molecule in blood that picks up oxygen in the lungs and drops it off in the muscles. The bar-headed goose has a version that grabs oxygen more tightly than ours, so it can still load up where there is almost nothing to load. Its lungs are large for its size, and it breathes deep and fast without the dizziness that would drop a person. Its flight muscles are threaded with extra capillaries, so blood reaches the working fibers quickly, and those fibers are crowded with mitochondria, the parts of a cell that burn fuel using oxygen. Scientists once assumed these geese simply cruised at extreme altitude for hours. Then researchers fitted them with tracking loggers and found something smarter. The geese hug the ground. They climb hard through the passes and sink again the moment the terrain allows, staying as low as the mountains will let them, because thicker air is easier air and altitude is only paid for when it is unavoidable. Most of the climbing happens at night, when the air is cooler and denser and calmer. Tracked birds have been recorded above 7,000 meters, higher than any mountain outside Asia, on nothing but muscle and blood."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why is flapping over the Himalayas harder than climbing it on foot?",
+            "Explain what hemoglobin does and why the goose's version helps. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why do the geese hug the terrain instead of cruising high? Use evidence from the passage."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the crossing, the body built for thin air, and the terrain-hugging route)",
+            "flapping burns fuel and demands oxygen fast, and the goose arrives from sea level in a day or two without weeks of adjusting",
+            "it picks up oxygen in the lungs and drops it off in the muscles; quote: grabs oxygen more tightly than ours",
+            "(inform, with detail: it defines hemoglobin and mitochondria and reports tracking results; the opening line leans on drama)",
+            "(thicker air is easier air; the passage says altitude is only paid for when it is unavoidable)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["hemoglobin → ____", "capillaries → ____", "mitochondria → ____", "terrain → ____"],
+          "rows": 1,
+          "answers": [
+            "the molecule in blood that carries oxygen",
+            "the tiniest blood vessels, which reach into the muscle",
+            "the parts of a cell that burn fuel using oxygen",
+            "the shape and height of the ground below"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the old assumption was wrong. What changed the scientists' minds, and why is that a better kind of evidence?",
+            "The bar-headed goose could avoid the mountains by taking a longer route around. Why might going over still be the cheaper choice?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(tracking loggers recorded what the birds actually did instead of what people expected; measurement beats assumption)",
+            "(inference: a long detour costs days of flapping and fuel, so a short brutal climb may cost less overall)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which is more impressive, the goose's body or the goose's route planning? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Goose That Knows the Way",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-goose", "templateLabel": "The Goose That Knows the Way", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "goose",
+          "notes": ["A flying flock of geese is a skein", "Two rival theories: saving energy, or staying in view", "1970: engineers calculated a V could stretch a flock's range by about 70 percent", "2001: pelicans in formation showed lower heart rates", "2014: ibis loggers caught birds timing wingbeats to catch upwash", "The bird at the point pays the most, so the point keeps changing"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The V: A Problem the Flock Cannot Talk About",
+          "text": "A skein of geese crossing an October sky is one of the most familiar sights in nature, and for most of the twentieth century nobody could prove why they do it. There were two good guesses. The first was aerodynamic. A flapping wing throws air downward to hold the bird up, and that air has to go somewhere. It spills off the wingtip and curls into a spinning trail called a vortex. Directly behind the bird, the air is still being pushed down, which is bad air to fly in. But just behind and off to one side, that same trail is rolling upward. A bird sitting in the upwash is, in effect, standing on a moving escalator. It needs less power to stay in the sky. In 1970, two engineers named Lissaman and Shollenberger ran the numbers and estimated that twenty-five birds in a well-formed V could fly roughly seventy percent farther than a single bird flying alone. On paper, the V was a machine for saving fuel. The second guess was social. Perhaps the V has little to do with air. Perhaps it is simply the easiest shape in which every bird can see every other bird, hold its spacing, follow the leader, and never collide. A staggered line is a good shape for looking, not only for lifting. The problem was evidence. You cannot ask a goose. Wild flocks fly high, fast, and nowhere near instruments, and for decades the argument stayed theoretical. The first crack came in 2001. Researchers in France trained great white pelicans to fly behind a microlight aircraft and fitted them with heart rate monitors. Birds flying in formation had measurably lower heart rates than birds flying alone, and they glided more between flaps. Something about the formation was cheaper. The decisive test came in 2014, and it used a different bird for a practical reason. A conservation team in Austria was hand-raising northern bald ibises and teaching them a lost migration route by leading them with a microlight. The birds were tame, the route was known, and each one could carry a logger recording its exact position many times a second alongside the beat of its own wings. The data was startling. The ibises did not merely trail behind one another. They placed themselves almost exactly where the theory predicted the upwash would be, and they timed their wingbeats to the bird in front, so their own wings rose as the helpful air arrived. When a bird did end up directly behind another, in the downwash, it flipped to the opposite timing, as though dodging the bad air. Nobody taught them any of this. Each bird was solving a problem in fluid dynamics in real time, with no instruments and no way to describe what it was doing. None of that proves the social explanation wrong. Both are probably true at once, and the V may simply be the shape where the two demands agree. But it does mean the flock is doing arithmetic. The bird at the point of the V is paying for the birds behind it, which is why the point keeps changing, and why a skein of geese in November is not really a line of birds. It is one long calculation, worked out in muscle, about how to spend less."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the aerodynamic guess. Cite the phrase the passage uses to describe what a bird in the upwash is doing.",
+            "Why did the 2014 study use ibises instead of geese? Cite the reasons the passage gives.",
+            "The passage says the 2001 pelican study was only the first crack. Why is it weaker evidence than the 2014 study?",
+            "Analyze the final sentence. What is the author doing by ending there, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the two theories and the evidence that settled part of the argument)",
+            "(the wingtip vortex rolls upward beside the bird, giving free lift; cite: standing on a moving escalator)",
+            "(they were tame, the route was known, and each could carry a logger; cite: The birds were tame, the route was known)",
+            "(heart rate shows formation is cheaper but not why or how the birds position themselves; the 2014 loggers measured exact position and wingbeat timing)",
+            "(it reframes a flock as a single computation and closes the wonder-to-explanation arc; supported by the upwash positioning and flap-phasing evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["vortex → ____", "upwash → ____", "aerodynamic → ____", "theoretical → ____"],
+          "rows": 2,
+          "answers": [
+            "a spinning trail of air left behind a moving wing",
+            "the part of that trail that rolls upward, giving free lift",
+            "to do with how air moves around a moving body",
+            "based on reasoning and math rather than measurement"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says both explanations are probably true at once. Explain why science often ends up with two right answers instead of one.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a behavior can be shaped by more than one pressure, and a shape that serves two purposes is more likely to be kept)",
+            "(student question + a credible source type, such as a peer-reviewed tracking study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A goose that positions itself perfectly in another bird's upwash understands aerodynamics. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

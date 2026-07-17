@@ -1,0 +1,329 @@
+{
+  "key": "meteor",
+  "title": "The Rock That Turns Into Light",
+  "blurb": "A space rock the size of a pea can write a line of fire across the sky. Here is how, and the three names it gets on the way down.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Rock That Turns Into Light",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-meteor", "templateLabel": "The Rock That Turns Into Light", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Follow the bright line with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "meteor",
+          "notes": ["It is a tiny rock", "It comes from space", "It goes very fast", "It glows hot and bright", "It is not really a star"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up at the night sky. A tiny light zips by. It is fast. It is gone. Some people call it a shooting star. But it is not a star. It is a little rock from space. The rock falls into our air. The air makes it hot. The hot rock glows. Then it is gone. We call that light a meteor."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the sparkles in each row. Write how many in the box.",
+          "emoji": "✨",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sky    rock" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one with where it belongs.",
+          "pairs": [
+            { "left": "meteor", "right": "sky" },
+            { "left": "fish", "right": "water" },
+            { "left": "tree", "right": "ground" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the night sky. Add a meteor with a long bright tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Rock That Turns Into Light",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-meteor", "templateLabel": "The Rock That Turns Into Light", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "meteor",
+          "notes": ["Most are as small as a grain of sand", "The air squeezes and gets hot", "Almost all of them burn up", "None of them are really stars", "Best seen far from city lights"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rock That Turns Into Light",
+          "text": "Space is full of little rocks. Most of them are as small as a grain of sand. Earth moves fast, and it runs into these rocks all the time. When a rock hits the air above us, it is going so fast that the air squeezes in front of it. The squeezed air gets very hot. The rock gets hot too. It starts to glow, and we see a bright streak. That streak is called a meteor. People call it a shooting star, but no star is falling. Almost every one of these rocks burns up high in the sky. It never reaches the ground."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How big is most of the space rock that makes a meteor?", "What happens to the air in front of the rock?", "Why do we see a bright streak?", "Do most of these rocks reach the ground?"],
+          "rows": 2,
+          "answers": ["as small as a grain of sand", "it gets squeezed and very hot", "because the rock gets so hot that it glows", "no, almost all of them burn up high in the sky"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Most space rocks are as small as a grain of ____.", "The air in front of the rock gets very ____.", "The bright streak is called a ____.", "Almost every rock ____ up before it lands."],
+          "wordBank": ["sand", "hot", "meteor", "burns"],
+          "answers": ["sand", "hot", "meteor", "burns"]
+        },
+        { "kind": "draw", "prompt": "Draw yourself outside at night watching a meteor. Show what is around you.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Rock That Turns Into Light",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-meteor", "templateLabel": "The Rock That Turns Into Light", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "meteor",
+          "notes": ["In space it is a meteoroid", "The light it makes is a meteor", "If it lands it is a meteorite", "Most burn up about 50 miles up", "Showers come from comet dust"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rock With Three Names",
+          "text": "A meteor has three names, and which one you use depends on where the rock is.\n\nOut in space, the rock is called a meteoroid. Most meteoroids are tiny. A lot of them are no bigger than a pebble, and many are the size of a grain of sand.\n\nWhen Earth runs into one, the meteoroid slams into our air at a huge speed. The air in front of it gets squeezed hard, and squeezed air gets hot. The rock heats up until it glows white. That streak of light is the meteor. The rock itself is small, but the glowing trail can be seen from far away.\n\nAlmost every meteoroid burns away completely, about 50 miles above the ground. But once in a while a piece is big enough to survive the fall and land. Once it is on the ground, it gets its third name. It is a meteorite, and you can hold it in your hand.\n\nSome nights you can see many meteors in one hour. That is a meteor shower. It happens when Earth passes through a trail of dust left behind by a comet."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the rock called while it is still out in space?",
+            "What makes the rock heat up and glow?",
+            "What is the difference between a meteor and a meteorite?",
+            "Why do you think a meteor shower happens on the same nights each year?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a meteoroid",
+            "the air in front of it gets squeezed hard, and squeezed air gets hot",
+            "a meteor is the streak of light in the sky; a meteorite is a piece that lands on the ground",
+            "(inference: Earth goes around the sun on the same path, so it crosses the same comet dust trail at the same time each year)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Rock With Three Names", "How to Build a Telescope", "The Biggest Star in the Sky"],
+          "answers": ["The Rock With Three Names"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Out in space the rock is called a ____.", "The streak of light in the sky is a ____.", "A piece that lands on the ground is a ____.", "A meteor shower happens when Earth passes through dust left by a ____."],
+          "wordBank": ["meteoroid", "meteor", "meteorite", "comet"],
+          "answers": ["meteoroid", "meteor", "meteorite", "comet"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you found a meteorite in your yard, how would you know it came from space and not from the ground?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Rock That Turns Into Light",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-meteor", "templateLabel": "The Rock That Turns Into Light", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "meteor",
+          "notes": ["Not friction: compression", "Entry speed 25,000 to 160,000 mph", "Ablation: the surface boils away", "Glows about 50 to 60 miles up", "The radiant is a trick of perspective", "Earth sweeps up about 50 tons a day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Pea Can Light Up the Sky",
+          "text": "Almost everyone gets this one wrong, including a lot of adults. A meteor does not glow because of friction, the way your hands warm up when you rub them together. It glows because of squeezing.\n\nA meteoroid enters Earth's atmosphere at somewhere between 25,000 and 160,000 miles per hour. Nothing that fast can politely push the air aside. The air piles up in front of the rock and gets compressed into a thin, violently hot cushion. Compressed air heats up. This cushion can reach thousands of degrees, and it cooks the rock from the outside in. The surface of the meteoroid boils away into glowing gas. Scientists call that process ablation. What you see streaking overhead is mostly that vaporized rock and the glowing air around it, not the rock itself.\n\nNow think about the size. A meteor bright enough to make you gasp is often no bigger than a pea. It is visible because it is burning at around 50 to 60 miles up, and hot gas that high can be seen for hundreds of miles.\n\nDuring a meteor shower, all the meteors seem to fan out from one point in the sky, called the radiant. They are not really fanning out. They are falling in parallel lines, and perspective makes them look like they spread. It is the same reason railroad tracks seem to meet in the distance.\n\nEarth sweeps up something like 50 tons of space dust and rock every single day. Almost all of it never reaches you. It becomes light."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says friction is the wrong explanation. In your own words, what actually heats the rock?",
+            "Explain why a pea-sized rock can be seen from hundreds of miles away.",
+            "What is the radiant, and why is it described as not really fanning out?",
+            "Earth collects about 50 tons of space material daily, yet you have probably never been hit by any of it. Why not?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(the air in front gets compressed into a hot cushion, and the hot air cooks the rock)",
+            "(it is burning 50 to 60 miles up, and the glowing gas around it is much bigger than the rock)",
+            "(the point a shower's meteors seem to spread from; they actually fall in parallel lines and perspective fools the eye)",
+            "(inference: almost all of it burns up high in the atmosphere long before it reaches the ground)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Meteors glow because of compressed air, and the tiny rocks that cause them almost never reach the ground",
+            "Meteors are old stars that fall out of the sky when they run out of light",
+            "Meteor showers happen because rocks fan out from one spot in space"
+          ],
+          "answers": ["Meteors glow because of compressed air, and the tiny rocks that cause them almost never reach the ground"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["compressed → ____", "ablation → ____", "radiant → ____", "perspective → ____"],
+          "rows": 1,
+          "answers": [
+            "squeezed into a smaller space",
+            "the surface of the rock boiling away into glowing gas",
+            "the point in the sky a shower's meteors seem to come from",
+            "the way distance changes how things look to your eye"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child why a shooting star is not a star. Use at least two facts from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Rock That Turns Into Light",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-meteor", "templateLabel": "The Rock That Turns Into Light", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "meteor",
+          "notes": ["Chladni argued for space rocks in 1794 and was mocked", "L'Aigle, France, April 26, 1803: about 3,000 stones fell", "Jean-Baptiste Biot mapped the fall and settled it", "Meteorites are about 4.6 billion years old", "Older than any rock on Earth's surface", "Most come from the asteroid belt"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Day the Sky Won the Argument",
+          "text": "For most of human history, educated people knew that rocks do not fall from the sky.\n\nThey were wrong, and they held the position firmly. Farmers reported stones dropping out of clear air, still warm to the touch. Scholars filed the reports under superstition. Stones came from the ground. The sky was empty. A stone in the sky made no sense, so the witnesses must be confused, or lying, or simply peasants.\n\nIn 1794 a German physicist named Ernst Chladni published a small book arguing that these stones were real and that they came from beyond the Earth. He was widely mocked. One reviewer suggested he had lost his judgment.\n\nThen, on April 26, 1803, the sky settled the argument. A fireball crossed the daytime sky over Normandy, France, and roughly three thousand stones rained down on the town of L'Aigle. The French Academy of Sciences sent a young physicist, Jean-Baptiste Biot, to investigate and, presumably, to explain the whole thing away.\n\nBiot did something better. He worked like a detective. He mapped where every stone had landed and found they formed a neat ellipse, exactly the shape a scattering shower from a single point would make. He noted that the stones were unlike any rock in the local ground. He interviewed dozens of witnesses of different ages, jobs, and politics, people with no reason to agree with each other, and their accounts matched. His report was not a theory. It was evidence, and it ended the debate.\n\nThat mattered more than it might sound. Meteorites turned out to be the oldest solid objects anyone can hold. Most of them formed about 4.6 billion years ago, when the solar system was still assembling, before Earth had a surface worth the name. Earth's own oldest rocks have been melted, crushed, and recycled by the planet's restless crust. Meteorites were never processed. They have been drifting, unchanged, since the beginning.\n\nEvery one of them is a piece of the original material, delivered free, by the sky that scholars insisted was empty."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why did scholars reject the farmers' reports? Give the reason the passage supplies.",
+            "Biot's report is called evidence rather than a theory. Name two things he did that make it evidence.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain why meteorites can tell us about the early solar system when Earth's own rocks cannot."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the rejection of the reports, L'Aigle and Biot's evidence, and why meteorites matter)",
+            "(they believed stones came from the ground and the sky was empty, so a stone in the sky made no sense and the witnesses must be wrong)",
+            "(he mapped the stones into an ellipse matching a single scattering point; he showed the stones were unlike local rock; he gathered matching accounts from unrelated witnesses)",
+            "(inform, with detail: it presents dates, names and facts; the closing line about the empty sky leans persuasive)",
+            "(Earth's crust melts, crushes and recycles its rocks, erasing the record; meteorites were never processed and have drifted unchanged since the beginning)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["superstition → ____", "ellipse → ____", "assembling → ____", "processed → ____"],
+          "rows": 1,
+          "answers": [
+            "a belief with no evidence behind it",
+            "a stretched oval shape",
+            "coming together, being built",
+            "changed by melting, crushing and recycling"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage lists the witnesses as being of different ages, jobs, and politics. Why does that detail strengthen Biot's case?",
+            "The last line says the material was delivered free, by the sky that scholars insisted was empty. What is the author doing there?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(people with nothing in common and no reason to coordinate telling the same story is hard to explain by lying or confusion)",
+            "(inference: turning the scholars' own words back on them, closing with the irony that the empty sky was handing over the oldest rocks in existence)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when many ordinary people report something experts say is impossible, who should have to prove their case first? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Rock That Turns Into Light",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-meteor", "templateLabel": "The Rock That Turns Into Light", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "meteor",
+          "notes": [
+            "Meteoroid in space, meteor in the air, meteorite on the ground",
+            "Entry speeds of 7 to 45 miles per second",
+            "Heated by compression, not friction",
+            "Chelyabinsk, Feb 15 2013: about 500 kilotons, roughly 1,500 injured",
+            "Oldest inclusions date to 4.567 billion years",
+            "More than 45,000 meteorites recovered from Antarctic ice"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Three Names for One Rock",
+          "text": "Consider the word you are about to use incorrectly.\n\nThe bright line that crosses the night sky is not a thing. It is an event. Out in space, the object is a meteoroid, usually a fragment of an asteroid or a crumb shed by a passing comet, often smaller than a raisin. The instant it strikes Earth's atmosphere, the light it produces is the meteor. If any solid piece survives the fall and reaches the ground, that piece is a meteorite. Three names, one rock, distinguished only by where it happens to be. Very few words in English are that strict about location.\n\nThe physics is stranger than the folklore. A meteor is not lit by friction. It is lit by compression. A meteoroid arrives somewhere between 7 and 45 miles per second, and at that speed air cannot get out of the way. It stacks up into a shock layer in front of the rock, and gas that is compressed that violently becomes furiously hot, thousands of degrees within a fraction of a second. The rock does not so much burn as boil. Its outer skin vaporizes and peels off in a process called ablation, and the glowing trail you see is largely that stripped material and the shocked, ionized air behind it. The object itself is often the size of a pea. You are watching a pea write a line across the sky from 60 miles away.\n\nMost of them lose. Roughly 50 tons of material arrives daily and almost none of it lands. Occasionally something bigger comes through. On the morning of February 15, 2013, an object about 60 feet across entered the atmosphere over Chelyabinsk, Russia, moving at roughly 12 miles per second. It brightened past the sun and detonated about 18 miles up with the energy of about 500,000 tons of TNT. Nothing hit the city. The shock wave alone blew in windows across six cities and injured about 1,500 people, most of them cut by glass while standing at those windows watching the light. Nobody had seen it coming. It approached out of the direction of the sun, which is the one part of the sky no telescope can search.\n\nWhat survives is worth more than the trouble it causes. Meteorites are the oldest solid matter available to us. The oldest inclusions inside them date to about 4.567 billion years ago, which is how we know the age of the solar system at all. Earth cannot tell us this. Our planet melts and recycles its own crust, erasing its early record. Meteorites were never melted, never buried, never reworked. They fell out of the beginning and landed in a field.\n\nFinding them is the elegant part. A dark stone in a meadow looks like every other dark stone in a meadow. In Antarctica, a dark stone on a sheet of blue ice looks like exactly one thing. Better still, the ice does the collecting. It flows slowly toward the coast, and where it runs into mountains it is forced up and stripped away by wind, concentrating tens of thousands of years of falls into small stranding zones. Teams walk those zones and pick up meteorites like beachcombers. More than 45,000 have been recovered from Antarctic ice, including pieces of the Moon and pieces of Mars, blasted off those worlds by impacts and eventually swept up by ours.\n\nSo the sky is not empty, and it never was. The scholars who once laughed at farmers for reporting falling stones were not short on intelligence. They were short on the willingness to believe an inconvenient witness."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage claims a meteor is an event, not a thing. Explain what it means and cite the evidence.",
+            "Contrast friction with compression as explanations for the glow. Why does the author insist on the difference?",
+            "The Chelyabinsk paragraph reports that nothing hit the city, yet about 1,500 people were injured. Explain how both are true, and quote the phrase that resolves it.",
+            "Identify the shift in the passage: where does it turn from danger to value, and how does the author signal it?",
+            "The final two sentences say the scholars were short on the willingness to believe an inconvenient witness. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the naming, the physics, and why the surviving rocks matter)",
+            "(the name meteor belongs to the light rather than the object; cite: The bright line that crosses the night sky is not a thing. It is an event.)",
+            "(friction implies rubbing; the air is actually compressed into a shock layer that becomes furiously hot and boils the surface away, so the popular explanation names the wrong mechanism)",
+            "(the object exploded about 18 miles up and the shock wave, not the rock, did the damage; quote: The shock wave alone blew in windows across six cities)",
+            "(at What survives is worth more than the trouble it causes; a short pivot sentence flips the frame from destruction to scientific value)",
+            "(it reframes the error as a failure of judgment about testimony rather than a failure of intelligence; the passage supports it with the naming, the physics and the Antarctic record, though the historical claim is only asserted here)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["ablation → ____", "ionized → ____", "reworked → ____", "stranding zones → ____"],
+          "rows": 2,
+          "answers": [
+            "the vaporizing and peeling away of a surface layer under heat",
+            "air whose particles have been given an electric charge, making it glow",
+            "melted, crushed or recycled so the original record is lost",
+            "places where flowing ice is forced up and worn away, concentrating meteorites at the surface"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the Chelyabinsk object came out of the direction of the sun, the one part of the sky no telescope can search. Explain why that is a problem worth solving, and what it would take.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(ground telescopes see by reflected light and cannot look toward the sun, so a whole approach corridor is blind; a spacecraft observing from inside Earth's orbit, or infrared detection, could cover it)",
+            "(student question plus a credible source type, such as a peer-reviewed planetary science journal or a space agency survey)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Spending money to track objects that almost never hit us is a waste. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

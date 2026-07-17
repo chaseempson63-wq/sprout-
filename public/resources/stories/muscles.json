@@ -1,0 +1,319 @@
+{
+  "key": "muscles",
+  "title": "The Muscles That Can Only Pull",
+  "blurb": "Every step, every heartbeat, every smile is built out of one move: something inside you getting shorter.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Muscles That Can Only Pull",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Stop and try each move with your body.",
+      "meta": { "templateId": "story-muscles", "templateLabel": "The Muscles That Can Only Pull", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Then make a muscle with your own arm." },
+        {
+          "kind": "image",
+          "imageKey": "muscles",
+          "notes": ["Your heart is a muscle", "Muscles pull, they never push", "You have more than 600 of them", "They keep your body warm"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "You have muscles. They are inside you. Make a fist. Bend your arm up. Feel the bump on top. That bump is a muscle. It got short and fat. Now let your arm down. The bump goes soft. Muscles pull your bones. They pull when you run. They pull when you smile. Even your heart is a muscle. It squeezes all day long."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the strong arms in each row. Write how many in the box.",
+          "emoji": "💪",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "pull    bend" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each muscle to its job.",
+          "pairs": [
+            { "left": "heart", "right": "squeeze" },
+            { "left": "legs", "right": "run" },
+            { "left": "jaw", "right": "chew" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw yourself doing something strong. Show the muscles working.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Muscles That Can Only Pull",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Try the arm test as you go. Then do each part.",
+      "meta": { "templateId": "story-muscles", "templateLabel": "The Muscles That Can Only Pull", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "muscles",
+          "notes": ["Muscles can only pull", "They work in pairs, taking turns", "Biceps pulls up, triceps pulls down", "Your heart beats about 100,000 times a day", "Muscles are tied to your bones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Taking Turns",
+          "text": "Muscles cannot push. They can only pull. That sounds like a problem. How do you push a door open if muscles only pull? Here is the trick. Muscles come in pairs. One muscle pulls your arm up. The other muscle pulls it back down. Each one takes a turn. The muscle on top of your arm is called the biceps. It pulls your hand toward your shoulder. The muscle under your arm is called the triceps. It pulls your hand back down. Try it. Bend and straighten. Two muscles, taking turns, all day long."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the only thing a muscle can do?",
+            "How many muscles does it take to bend and straighten your arm?",
+            "Which muscle pulls your hand up toward your shoulder?"
+          ],
+          "rows": 2,
+          "answers": ["it can only pull", "two, a pair", "the biceps"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Muscles can only ____.", "Muscles work in ____.", "The ____ pulls your hand toward your shoulder.", "The ____ pulls your hand back down."],
+          "wordBank": ["pull", "pairs", "biceps", "triceps"],
+          "answers": ["pull", "pairs", "biceps", "triceps"]
+        },
+        { "kind": "draw", "prompt": "Draw an arm bending. Draw an arrow to show which way the muscle pulls.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Muscles That Can Only Pull",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-muscles", "templateLabel": "The Muscles That Can Only Pull", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "muscles",
+          "notes": ["Three kinds: skeletal, smooth, cardiac", "Tendons tie muscle to bone", "Smooth muscle moves food along", "A muscle's only move is to get shorter", "Muscles make most of your body heat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Three Kinds of Muscle",
+          "text": "Your body runs on more than six hundred muscles, and they do not all work the same way. The ones you think about are called skeletal muscles. They are attached to your bones by tough cords called tendons. When you decide to kick a ball, your brain sends a signal down a nerve, and the muscle pulls. You are the boss of these muscles. The second kind is smooth muscle, and you are not the boss of it at all. Smooth muscle lines your stomach and your gut. It squeezes food along in slow waves while you are busy thinking about something else. It works while you sleep. The third kind is cardiac muscle, and there is only one of it. Your heart. Cardiac muscle never gets a day off. It squeezes about one hundred thousand times a day, and it has been doing that since before you were born. Here is the strange part. Not one of those muscles can push. A muscle has exactly one move: it gets shorter and pulls. Everything your body does, every step and every heartbeat, is built out of pulling."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What ties a skeletal muscle to a bone?",
+            "Name one job that smooth muscle does for you.",
+            "What is the one move every muscle can make?",
+            "Why do you think your heart is made of a different kind of muscle than your legs?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a tough cord called a tendon",
+            "it squeezes food along your stomach and gut",
+            "it gets shorter and pulls",
+            "(inference: your heart can never stop or rest, so it cannot wait for you to decide)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Three Kinds of Muscle", "How to Cook a Healthy Dinner", "The Longest Bone in Your Leg"],
+          "answers": ["Three Kinds of Muscle"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Skeletal muscles are tied to your bones by ____.", "____ muscle squeezes food through your gut.", "____ muscle never gets a day off."],
+          "wordBank": ["tendons", "Smooth", "Cardiac"],
+          "answers": ["tendons", "Smooth", "Cardiac"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which kind of muscle do you think has the hardest job, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Muscles That Can Only Pull",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-muscles", "templateLabel": "The Muscles That Can Only Pull", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "muscles",
+          "notes": ["Muscles pull by sliding threads past each other", "Every joint is run by an opposing pair", "The Achilles tendon is your thickest", "Skeletal muscle is about 40% of your body", "Shivering is muscles making heat on purpose"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Move, Repeated Forever",
+          "text": "Make a fist and bend your arm. The bump that rises on top is your biceps, and it just did the only thing a muscle knows how to do. It got shorter. That is the whole trick. Muscles pull. They never push. A muscle is a bundle of long fibers, and inside each fiber are two kinds of thread lying side by side. The thick threads have tiny arms along them. When a signal arrives from your brain, those arms reach out, grab the thin threads, and haul them inward, like a crowd of people pulling a rope hand over hand. The threads slide past each other, the fiber shortens, and your arm bends. Multiply that by billions of threads and you get a body that can climb a tree. But if muscles only pull, how does your arm ever straighten again? It cannot push itself. So muscles work in pairs that face opposite directions. Your biceps pulls your forearm up. Underneath it, your triceps pulls your forearm back down. One pulls while the other relaxes, then they swap. Almost every joint in your body is run by a pair like this, taking turns. The muscle does not grab the bone directly. It hands the job to a tendon, a cord tougher than rope, anchored into the bone itself. Your Achilles tendon, just above your heel, is the thickest one you have. Every time you push off to run, you are really pulling on it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words what happens inside a fiber when a muscle contracts.",
+            "Why does your body need muscles arranged in opposing pairs?",
+            "The passage says that when you push off to run, you are really pulling. Explain what it means.",
+            "What do you think would happen to your arm if your triceps stopped working but your biceps kept going?"
+          ],
+          "rows": 2,
+          "answers": [
+            "thick threads grab thin threads and haul them inward, so the threads slide past each other and the fiber gets shorter",
+            "because a muscle cannot push itself back, so a second muscle must pull the joint the other way",
+            "(inference: the muscle only pulls on the tendon; the push against the ground is the result)",
+            "(inference: it would bend and stay bent, because nothing could pull it straight again)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Muscles have only one move, pulling, so the body is built to turn pulls into every kind of motion",
+            "The Achilles tendon is the most important part of the human body",
+            "Climbing a tree is the hardest thing a person can do"
+          ],
+          "answers": ["Muscles have only one move, pulling, so the body is built to turn pulls into every kind of motion"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["fiber → ____", "tendon → ____", "contract → ____"],
+          "rows": 1,
+          "answers": ["one of the long cells bundled together to make a muscle", "a tough cord that anchors a muscle into a bone", "to get shorter and pull"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how your arm bends and straightens, as if you were teaching a six year old. Use the words pull, pair, and tendon.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Muscles That Can Only Pull",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-muscles", "templateLabel": "The Muscles That Can Only Pull", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "muscles",
+          "notes": ["A motor unit is one nerve plus its squad of fibers", "Each fiber is all or nothing: on or off", "Slow-twitch fibers are red with myoglobin", "Fast-twitch fibers hit hard and quit early", "Shivering is contraction purely for heat", "Astronauts train 2+ hours a day to keep muscle"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Delicacy Is Arithmetic",
+          "text": "Somewhere between six hundred and eight hundred muscles are wrapped around your skeleton right now, depending on how you count them, and together they make up roughly forty percent of your body. That is not an accident of design. Movement is expensive, and your body has committed more of itself to movement than to anything else. A muscle contracts because a nerve tells it to. But a nerve does not speak to one fiber at a time. A single motor nerve branches out and controls a whole squad of fibers, called a motor unit, and when that nerve fires, every fiber in the squad contracts together, completely. There is no half effort at that level. A fiber is either on or off. The way your body lifts a feather without crushing it is by switching on only a few small motor units, and the way it lifts a heavy box is by recruiting hundreds of large ones at once. Delicacy is not gentleness. It is arithmetic. The fibers themselves are not all alike. Slow-twitch fibers are packed with mitochondria and stained dark by a red oxygen-holding protein called myoglobin. They contract without much force but keep going for hours, which is why the muscles that hold you upright are full of them. Fast-twitch fibers contract hard and fast and quit early. Every person carries a mix of both, and training gradually shifts what those fibers are good at. Muscles also do something you rarely notice. They make heat. Contraction is wasteful, and most of the energy escapes as warmth rather than motion. That waste is a large part of what holds you near ninety-eight degrees. When you get cold, your brain orders your muscles to contract uselessly, fast and small, purely to generate heat. You call that shivering. Use them and they thicken. Ignore them and they vanish. Astronauts on the space station lose muscle so quickly in weightlessness that they exercise more than two hours a day just to arrive home able to stand. Your muscles are not equipment you own. They are a running negotiation with what you actually do."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is a motor unit, and why does the passage say there is no half effort at that level?",
+            "Explain how you can pick up a feather gently if every fiber is either on or off. Quote the phrase the passage uses to sum this up.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why do you think the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering motor units + fiber types + heat + use it or lose it)",
+            "one nerve plus the squad of fibers it controls; each fiber contracts completely or not at all",
+            "you switch on only a few small motor units; quote: Delicacy is not gentleness. It is arithmetic.",
+            "(inform, with detail: it defines terms and gives numbers; the closing lines lean slightly persuasive)",
+            "(muscle depends on what you do, not what you have; the author ends there to leave the reader responsible)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["motor unit → ____", "recruiting → ____", "myoglobin → ____", "weightlessness → ____"],
+          "rows": 1,
+          "answers": [
+            "one nerve and all the fibers it controls",
+            "switching on more motor units to make more force",
+            "a red protein that holds oxygen inside slow-twitch fibers",
+            "the condition in orbit where nothing weighs on the muscles"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why would a body that never rests, like the heart, need different fibers than a body part used for sprinting?",
+            "The passage calls contraction wasteful. Explain why that waste turns out to be useful."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: endurance fibers use oxygen and resist fatigue; sprinting fibers give power but tire fast)",
+            "(the escaped energy becomes body heat, which keeps you warm and lets you shiver on purpose)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should exercise be treated as medicine rather than a hobby? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Muscles That Can Only Pull",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-muscles", "templateLabel": "The Muscles That Can Only Pull", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "muscles",
+          "notes": ["Actin and myosin slide, they do not shrink", "Calcium uncovers the landing sites", "Myosin needs ATP to let go, not to grab", "Rigor mortis: muscle that cannot release", "Satellite cells donate nuclei to growing fibers", "Every joint trades force for speed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Move: The Engineering of a Human Muscle",
+          "text": "A muscle has exactly one move. It shortens. It cannot lengthen itself, it cannot push, and it cannot hold a position without spending energy. Every human motion, from a sprint to the flicker of an eyelid, is assembled out of that single crude verb: pull. Understanding the body means understanding what has to be engineered around one motion to build a life out of it. Zoom into a muscle far enough and the mystery gets smaller rather than larger. A muscle is a bundle of cells called fibers, and each fiber is packed with parallel filaments of two proteins. Actin filaments are thin. Myosin filaments are thick, and studded along their length are thousands of hinged heads. When a nerve signal reaches the fiber, calcium floods in and uncovers landing sites along the actin. The myosin heads swing forward, latch on, and lever backward, dragging the actin past them. Then they release, cock, and grab again, further along. The filaments do not shrink. They slide. The fiber gets shorter because two sets of ropes are being hauled past each other by millions of tiny hands, and each hand spends one molecule of ATP per stroke. That last detail explains something grim and clarifying. Myosin needs ATP not to grab but to let go. When an animal dies and ATP production stops, the heads stay latched and the body locks rigid. Rigor mortis is not muscle tensing. It is muscle unable to release. Because pulling is the only move available, the skeleton has to supply everything else. Bones act as levers, joints as fulcrums, and muscles are arranged in opposing pairs so that the pull of one undoes the pull of the other. Your biceps flexes the elbow. Your triceps extends it. Neither can reverse itself, so the pair covers both directions. This arrangement also costs you leverage. Your biceps attaches to the forearm only a few centimeters from the elbow, which means holding a five kilogram weight in your hand demands far more than five kilograms of force from the muscle. The body trades force for speed on purpose. A small, slow contraction close to the joint becomes a large, fast movement out at the hand. That is a design decision, not a flaw. Training exploits a second feature. Heavy work damages fibers slightly, and the repair does not merely restore them. Nearby satellite cells fuse into the damaged fiber and donate their nuclei, expanding the fiber's capacity to manufacture protein. The fiber thickens. Notably, you do not grow many new fibers. You grow the ones you already have. Those donated nuclei appear to persist long after a muscle shrinks from disuse, which is part of why someone returning to training after years away regains size faster than a beginner earns it the first time. The muscle keeps a record. None of this makes muscle a possession. Skeletal muscle is metabolically expensive and the body audits it constantly. Stop loading it and it is quietly disassembled within weeks, its protein withdrawn for use elsewhere. Astronauts in orbit lose it fast enough that exercise on the International Space Station is not recreation but medical necessity. The rule underneath all of it is unsentimental. Your body maintains the amount of pulling power your life demands, and not one gram more."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the sliding filament process in your own words, then cite the phrase the passage uses to describe what the filaments do NOT do.",
+            "Why does the passage call rigor mortis grim and clarifying? What does it clarify about how myosin works?",
+            "Identify the author's central engineering claim about opposing pairs and leverage. How does the passage argue that the loss of leverage is deliberate?",
+            "Analyze the final sentence. What is the author doing by ending on not one gram more, and does the passage earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering one move, the sliding mechanism, and use-dependence)",
+            "(myosin heads grab actin and lever it past them, repeatedly; cite: The filaments do not shrink.)",
+            "(it proves ATP is spent on release, not on grabbing, because death locks the heads on)",
+            "(a muscle cannot reverse itself so pairs cover both directions; the short lever is traded for speed and range at the hand, cite: The body trades force for speed on purpose.)",
+            "(it reframes muscle as conditional rather than owned; supported by the satellite cell, disassembly, and astronaut evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["filament → ____", "fulcrum → ____", "satellite cell → ____", "unsentimental → ____"],
+          "rows": 2,
+          "answers": [
+            "a long thin thread of protein inside a muscle fiber",
+            "the fixed point a lever turns around, which at a joint is the joint itself",
+            "a spare cell beside a fiber that fuses in and donates its nucleus during repair",
+            "deciding by cost and use rather than by feeling"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says skeletal muscle is metabolically expensive. Explain why a body would evolve to throw away something it worked hard to build.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(muscle burns energy even at rest, so keeping unused muscle wastes fuel that was scarce for most of human history)",
+            "(student question + a credible source type, such as a physiology textbook or a peer reviewed study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Because the body only keeps the strength you use, choosing not to train is choosing to get weaker. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

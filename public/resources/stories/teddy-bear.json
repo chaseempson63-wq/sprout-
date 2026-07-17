@@ -1,0 +1,310 @@
+{
+  "key": "teddy-bear",
+  "title": "The Bear the President Would Not Shoot",
+  "blurb": "A bad hunting trip, a newspaper cartoon, and a German workshop turned into the toy on every kid's bed.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Bear the President Would Not Shoot",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-teddy-bear", "templateLabel": "The Bear the President Would Not Shoot", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Give the teddy bear a name." },
+        {
+          "kind": "image",
+          "imageKey": "teddy-bear",
+          "notes": ["It is soft to hug", "It has two round ears", "It is named after a real man", "Its eyes are little buttons"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a teddy bear. A teddy bear is soft. You can hug it. You can hold it at night. Teddy bears are named after a man called Teddy. He was the president a long time ago. One day he saw a real bear. He did not shoot it. He let it be. So people made a little toy bear and called it a teddy bear. Now teddy bears live in houses all over the world."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the teddy bears in each row. Write how many in the box.",
+          "emoji": "🧸",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "soft    bear" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "bear", "right": "fur" },
+            { "left": "bird", "right": "feathers" },
+            { "left": "fish", "right": "scales" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own teddy bear. Give it round ears and a soft tummy.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bear the President Would Not Shoot",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-teddy-bear", "templateLabel": "The Bear the President Would Not Shoot", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "teddy-bear",
+          "notes": ["Named after President Theodore Roosevelt", "His nickname was Teddy", "The story happened in 1902", "A shop in Brooklyn made the first one", "A workshop in Germany made one too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How the Teddy Bear Got Its Name",
+          "text": "Over a hundred years ago, the president of the United States was named Theodore Roosevelt. Everyone called him Teddy. One day he went on a bear hunt in Mississippi. He looked for days and found nothing. So the other men found a bear for him and tied it to a tree. They told him to shoot it. Roosevelt said no. He said it was not fair to shoot a bear that could not get away. A man drew the story as a cartoon in the newspaper, and people all over the country saw it. A shop owner in New York saw it too. He made a small stuffed bear and put it in his shop window. He called it Teddy's bear. That is how the teddy bear got its name."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where did the bear hunt happen?", "Why did Roosevelt say no?", "What did the shop owner put in his window?"],
+          "rows": 2,
+          "answers": ["in Mississippi", "it was not fair to shoot a bear that could not get away", "a small stuffed bear called Teddy's bear"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The president's name was Theodore ____.", "The men tied the bear to a ____.", "A man drew the story as a ____ in the newspaper.", "The shop owner called his toy ____'s bear."],
+          "wordBank": ["Roosevelt", "tree", "cartoon", "Teddy"],
+          "answers": ["Roosevelt", "tree", "cartoon", "Teddy"]
+        },
+        { "kind": "draw", "prompt": "Draw the little bear in the shop window. Add a sign that says Teddy's bear.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bear the President Would Not Shoot",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-teddy-bear", "templateLabel": "The Bear the President Would Not Shoot", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "teddy-bear",
+          "notes": ["Named for President Theodore Roosevelt", "He hated the nickname Teddy", "The hunt was in Mississippi in 1902", "The cartoon ran in the Washington Post", "The first shop bears sold out fast"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bear the President Would Not Shoot",
+          "text": "In November 1902, President Theodore Roosevelt traveled to Mississippi to hunt bears. Everyone called him Teddy, though he did not like the nickname one bit. The hunt went badly. For days the president tramped through the woods and found nothing at all. His guide was a famous tracker named Holt Collier. Collier finally cornered a black bear and tied it to a willow tree, then sent word for the president to come and take the shot. Roosevelt refused. Shooting an animal that could not run away was not hunting, he said. It would not be fair, and it would not count. A newspaper cartoonist named Clifford Berryman heard the story and drew it for the Washington Post. In the cartoon, the president stands with his back turned and his hand raised, and behind him sits a small, frightened bear. People loved that drawing. In Brooklyn, a shop owner named Morris Michtom saw it in the paper. His wife Rose sewed a little stuffed bear out of soft cloth, and they set it in their shop window next to a copy of the cartoon. Beside it they put a sign: Teddy's bear. It sold. So did the next one, and the next."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why did Roosevelt refuse to shoot the bear?",
+            "Who drew the cartoon, and which newspaper printed it?",
+            "What did Morris and Rose Michtom put in their shop window?",
+            "Why do you think people liked the story of a president who would not take the shot?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the bear was tied up and could not run away, so it would not be fair",
+            "Clifford Berryman drew it, and the Washington Post printed it",
+            "a little stuffed bear with a sign that said Teddy's bear",
+            "(opinion: it showed the most powerful man in the country being fair to a small animal)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Bear the President Would Not Shoot", "How to Sew a Cloth Toy", "The Longest River in Mississippi"],
+          "answers": ["The Bear the President Would Not Shoot"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Roosevelt hunted bears in the state of ____.", "Clifford Berryman drew the story for the Washington ____.", "The bear was tied to a willow ____."],
+          "wordBank": ["Mississippi", "Post", "tree"],
+          "answers": ["Mississippi", "Post", "tree"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: was Roosevelt right to refuse the shot, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bear the President Would Not Shoot",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-teddy-bear", "templateLabel": "The Bear the President Would Not Shoot", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "teddy-bear",
+          "notes": ["Two inventors, 1902 and 1903, no contact", "Morris and Rose Michtom, Brooklyn", "They founded the Ideal Toy Company", "Margarete Steiff sewed felt toys in Giengen, Germany", "Richard Steiff sketched real bears at a zoo", "An American buyer ordered three thousand"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Bears, One Year",
+          "text": "The teddy bear has two origin stories, and the strange part is that both are true. They happened on opposite sides of an ocean within months of each other, and neither inventor had ever heard of the other.\n\nThe American story starts with a bad hunting trip. In November 1902, President Theodore Roosevelt spent days in the Mississippi woods without finding a bear. His guide finally cornered one and tied it to a tree so the president could take an easy shot. Roosevelt refused. A cartoonist named Clifford Berryman drew the moment for the Washington Post, and the picture spread across the country. A Brooklyn shopkeeper named Morris Michtom saw it. His wife Rose sewed a small plush bear, and they set it in the window beside a copy of the cartoon with a label reading Teddy's bear. Customers wanted one. Then they wanted thousands. The Michtoms went on to build the Ideal Toy Company.\n\nThe German story starts with a woman named Margarete Steiff. Polio had left her unable to walk, and she ran a small felt workshop in the town of Giengen, sewing toy elephants and other animals. Her nephew Richard studied art, and he spent his free hours at a zoo in Stuttgart with a sketchbook, drawing real bears. He wanted a toy bear whose arms and legs actually moved, so he designed one with jointed limbs. The company carried it to the Leipzig toy fair in 1903. Nobody was interested. On the last day, an American buyer walked past, stopped, and ordered three thousand of them.\n\nTwo bears, one year, no connection at all. The name came from the American story. The design came from the German one. Almost every teddy bear made since is some mixture of the two."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What did each of the two stories give to the teddy bear we know today?",
+            "The passage says nobody was interested at the Leipzig fair. What happened on the last day, and why does that detail matter?",
+            "What kind of person was Margarete Steiff? Use two details from the passage.",
+            "Neither inventor knew about the other. Why do you think two people invented a toy bear in the same year?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the American story gave the name; the German story gave the jointed design",
+            "an American buyer ordered three thousand; without that order the design might never have sold",
+            "(she used a wheelchair after polio and ran her own workshop, so she was determined and skilled)",
+            "(inference: bears were in the news and on people's minds, and toy makers were all looking for a new idea)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The teddy bear was invented twice at once, and the toy we know is a mixture of both inventions",
+            "Theodore Roosevelt was the greatest hunter in American history",
+            "Germany makes better toys than the United States"
+          ],
+          "answers": ["The teddy bear was invented twice at once, and the toy we know is a mixture of both inventions"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["origin → ____", "plush → ____", "jointed → ____"],
+          "rows": 1,
+          "answers": ["the place or event where something started", "a soft fabric with a thick, furry surface", "made with parts that bend and turn where they join"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which invention mattered more, the name or the design? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bear the President Would Not Shoot",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-teddy-bear", "templateLabel": "The Bear the President Would Not Shoot", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "teddy-bear",
+          "notes": ["Donald Winnicott named the transitional object in 1953", "It is a child's first not-me possession", "Rule one: nobody else may change it", "The smell is part of the bear", "Teddy bear hospitals have run in Europe since the 1990s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bear With a Job",
+          "text": "Ask an adult what a teddy bear is for and they will probably say it is for playing with. That is not quite right. Watch a two-year-old with a well-loved bear and you will notice it is rarely a toy in the ordinary sense. It is not raced, stacked, or built with. It is carried. It gets held during the parts of the day that are hard: leaving the house, sitting in a waiting room, falling asleep in a dark bedroom.\n\nIn 1953, a British pediatrician named Donald Winnicott gave that behavior a name. He called objects like the bear transitional objects, and he argued they do serious work. A baby begins life unable to tell where it stops and its mother starts. Learning that other people are separate is a real achievement, and it is frightening. The bear, Winnicott suggested, sits in that gap. It is the first thing a child owns that is clearly not part of the child and clearly not a parent either. It is a rehearsal for being alone.\n\nWinnicott also noticed that these objects follow rules, and the rules are strict. The bear has to be soft, and it has to keep a texture the child knows by heart. It has to survive being adored and being thrown across the room. Above all, nobody else is allowed to change it. This is why washing a child's bear can go so badly wrong. To an adult, a wash is care. To the child, the smell was part of the bear, and a parent has quietly swapped in a stranger.\n\nHospitals took the idea seriously. Since the 1990s, medical students across Europe have run teddy bear hospitals. Children bring in their bears, explain what is wrong, and watch a bandage go on. The child is not the patient. The bear is. Nothing frightening happens to anybody, and that is exactly the point. A child who has watched a stethoscope press against a bear's chest is a child less afraid of the one coming toward their own.\n\nThe teddy bear began as a joke about a president who would not take an unfair shot. It became something odder and more useful: a soft, patient, slightly grubby machine for practicing courage."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is a transitional object, and what job does Winnicott say it does?",
+            "Explain why washing a child's bear can go badly. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "In a teddy bear hospital, why does it help that the bear is the patient and not the child?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the bear as a transitional object plus its use in hospitals)",
+            "a child's first possession that is neither the child nor a parent; it is a rehearsal for being alone",
+            "the smell is part of the bear, so the child feels it has been replaced; quote: quietly swapped in a stranger",
+            "(inform, with detail: it defines a term and dates the research, though the ending turns warm and persuasive)",
+            "(the child learns what will happen without anything scary happening to them)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["transitional → ____", "rehearsal → ____", "texture → ____", "grubby → ____"],
+          "rows": 1,
+          "answers": ["belonging to the stage between one state and another", "a practice run before the real thing", "the way a surface feels when you touch it", "dirty in a worn, well-used way"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls the bear a machine for practicing courage. Explain what that means in your own words.",
+            "Winnicott says nobody else may change the object. Why would a rule like that matter so much to a small child?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the bear lets a child face hard moments in small doses until they can face them alone)",
+            "(inference: the bear is the one thing in a changing world the child controls, so it has to stay the same)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a parent ever take away a child's comfort object to help them grow up? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bear the President Would Not Shoot",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-teddy-bear", "templateLabel": "The Bear the President Would Not Shoot", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "teddy-bear",
+          "notes": ["Roosevelt hunt: Mississippi, November 1902", "Berryman's cartoon ran in the Washington Post", "Steiff's jointed bear reached Leipzig in 1903", "Lorenz named the baby schema in 1943", "Hinde and Barden measured bears across eight decades, 1985", "Snouts shrank, foreheads grew, decade after decade"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How the Teddy Bear Lost Its Snout",
+          "text": "Set a teddy bear from 1903 beside one bought last week and the difference is impossible to miss. The old bear has a long pointed snout, a hump behind its shoulders, small eyes set high on the skull, and long dangling limbs. It looks like a bear. The new one has a flat face, a round head, and large eyes set low and wide apart. It looks like a baby.\n\nNothing about this was planned. No committee met to redesign the bear. It happened the way a species changes: slowly, through millions of small decisions, each one made by somebody who was not thinking about the century.\n\nIn 1985, the Cambridge biologist Robert Hinde and his colleague L. A. Barden decided to measure it. Hinde studied animal behavior for a living, and he treated the teddy bear as though it were a population under study. He and Barden collected bears made across eight decades and took the same measurements from each: the length of the snout, the height of the forehead. The trend was clear and it ran one way. Decade after decade, the snout got shorter and the forehead got taller. The bear was drifting steadily toward the proportions of an infant.\n\nThere is a name for those proportions. In 1943, the Austrian zoologist Konrad Lorenz described what he called the baby schema: a large head on a small body, a bulging forehead, big low-set eyes, round cheeks. Human beings, Lorenz argued, respond to that shape automatically, with a rush of tenderness they do not choose and cannot easily switch off. It works on puppies. It works on cartoon characters. In 1979 Stephen Jay Gould pointed out that Mickey Mouse had done exactly the same thing across fifty years, growing a bigger head and larger eyes and shedding his rat-like snout, without Disney ever announcing a redesign.\n\nSo the teddy bear had been selected. The selective pressure was a shopper's hand reaching for one bear instead of another, repeated across generations. Babyish bears sold. Bears that looked like actual bears sat on the shelf. The manufacturer read the sales figures, nudged the pattern, and the process ran again.\n\nHere is the part of the study almost everyone forgets. Hinde and Barden also showed bears to children and asked which they preferred. Children under four did not prefer the baby-faced bears at all. The preference only appeared in older children, around age eight and above. The animal reshaped by love was not being reshaped by the people who loved it most. Toddlers, the actual users, had no vote. The face of the modern teddy bear was chosen by adults and older children buying gifts, projecting onto a toy what they assumed a small child would want.\n\nThat is worth sitting with. A century of design driven by a preference belonging to somebody other than the customer. The bear got softer-faced every decade because the person paying was moved by soft faces, and nobody ever asked the two-year-old.\n\nThe origin story has the same shape. Roosevelt refused to shoot a bear that had been tied to a tree, and Berryman's cartoon turned that refusal into an image of mercy. The full account is harsher. The animal was old and badly injured by the time the president arrived, and Roosevelt ordered it killed with a knife to end its suffering. That part never made the cartoon. What survived was the gentler version, because the gentler version was the one people wanted to keep. The bear on the shelf has been shaped by the same instinct, all the way down."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what Hinde and Barden measured and what they found. Cite the evidence.",
+            "The passage says the bear was selected. Explain what the selective pressure was, and why the author borrows a word from biology to describe a toy.",
+            "Identify the twist in the study's findings and explain why the author calls it the part almost everyone forgets.",
+            "The final paragraph returns to Roosevelt. Analyze what that ending is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the bear's drift toward babyish features and who drove it)",
+            "(snout length and forehead height across eight decades; cite: the snout got shorter and the forehead got taller)",
+            "(shoppers choosing one bear over another, repeated over generations; cite: a shopper's hand reaching for one bear instead of another)",
+            "(children under four had no preference, so the users had no say; cite: Toddlers, the actual users, had no vote)",
+            "(it links the softened bear to the softened story, arguing both were shaped by what people wanted to keep; supported by the cartoon and the omitted knife)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["baby schema → ____", "selective pressure → ____", "proportions → ____", "projecting → ____"],
+          "rows": 2,
+          "answers": [
+            "the set of infant-like features that triggers a caretaking response in people",
+            "the force that decides which versions get passed on and which do not",
+            "the relative sizes of the parts of something compared to each other",
+            "assuming your own feelings or wishes belong to someone else"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Lorenz says the response is one people do not choose and cannot easily switch off. Explain why an automatic response like that could be useful to a species.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: helpless human infants survive only if adults are compelled to care for them)",
+            "(student question plus a credible source type, such as the original 1985 paper or toy company records)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The teddy bear proves that people design for the buyer, not the user. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

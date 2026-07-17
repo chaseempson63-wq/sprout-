@@ -1,0 +1,304 @@
+{
+  "key": "kookaburra",
+  "title": "The Bird That Laughs at Dawn",
+  "blurb": "A kingfisher that almost never fishes, and whose famous laugh is really a fence made of sound.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird That Laughs at Dawn",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-kookaburra", "templateLabel": "The Bird That Laughs at Dawn", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the big beak." },
+        {
+          "kind": "image",
+          "imageKey": "kookaburra",
+          "notes": ["It lives in Australia", "It has a big heavy beak", "It sits very still on a branch", "Its call sounds like laughing", "It laughs with its whole family"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This bird is a kookaburra. Say it like this: KOOK-uh-bur-uh. It sits very still on a branch. It looks down at the grass. Then it opens its big beak and laughs. The laugh is loud. It goes koo koo koo ka ka ka. The whole family laughs together. They laugh when the sun comes up. They laugh when the sun goes down."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the birds on each branch. Write how many in the box.",
+          "emoji": "🐦",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bird    laugh" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its sound.",
+          "pairs": [
+            { "left": "kookaburra", "right": "laugh" },
+            { "left": "dog", "right": "bark" },
+            { "left": "cow", "right": "moo" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a kookaburra on a branch. Give it a big beak.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird That Laughs at Dawn",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-kookaburra", "templateLabel": "The Bird That Laughs at Dawn", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "kookaburra",
+          "notes": ["Say it KOOK-uh-bur-uh", "It is a kingfisher that hardly ever fishes", "It waits on a branch and watches the ground", "It eats bugs, lizards, and mice", "The laugh means this tree is ours"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Laughs at Dawn",
+          "text": "The kookaburra is a kingfisher. Most kingfishers dive into rivers and catch fish. The kookaburra does not. It sits on a branch and waits. It watches the ground with dark eyes. When it sees a beetle or a lizard, it drops down fast and grabs it. Then it flies back up to the branch. The kookaburra bangs its food on the wood before it eats. In the morning the whole family laughs together. The laugh is loud, and it goes a long way through the trees. It tells the other kookaburras that this tree is taken."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What kind of bird is the kookaburra?", "Where does the kookaburra wait?", "What does the laugh tell other birds?"],
+          "rows": 2,
+          "answers": ["it is a kingfisher", "on a branch", "that this tree is taken"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The kookaburra sits on a ____.", "It watches the ____ for food.", "It bangs its food on the ____.", "The whole family ____ together."],
+          "wordBank": ["branch", "ground", "wood", "laughs"],
+          "answers": ["branch", "ground", "wood", "laughs"]
+        },
+        { "kind": "draw", "prompt": "Draw the kookaburra watching from its branch. Draw what it might be looking at.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird That Laughs at Dawn",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-kookaburra", "templateLabel": "The Bird That Laughs at Dawn", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "kookaburra",
+          "notes": ["Say it KOOK-uh-bur-uh", "It is the heaviest kingfisher in the world", "It hunts on land, not in rivers", "It can eat snakes", "Settlers called it the bushman's clock", "The laugh is a warning, not a joke"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Kingfisher That Will Not Fish",
+          "text": "A kookaburra is a kingfisher, but it almost never fishes. Its cousins hover above rivers and plunge in headfirst after minnows. The kookaburra picks a branch instead, folds its wings, and waits. It can hold still for a long time, watching the grass below with dark eyes. When something moves, the bird drops like a stone, grabs it, and carries it back up to the branch. Then it does something surprising. It whacks its meal against the wood until the meal stops moving, and swallows it headfirst. A kookaburra will eat beetles, worms, mice, small birds, and even snakes. Its beak is long and heavy, more like a tool than a mouth. The laugh is not a joke either. A kookaburra family laughs together at first light and again at dusk, and the sound carries far through the trees. It means the same thing every time: this land is ours, go and find your own. Settlers in Australia called the bird the bushman's clock, because the laughing started right when it was time to get up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How do most kingfishers catch their food?",
+            "What does the kookaburra do instead?",
+            "What does the family laugh mean?",
+            "Why do you think a loud call works better than a fight?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they hover over rivers and plunge in headfirst",
+            "it waits on a branch and drops down onto animals on the ground",
+            "this land is ours, go and find your own",
+            "(inference: no one gets hurt and the sound travels further than the bird can chase)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Kingfisher That Will Not Fish", "How to Build a Bird Feeder", "The Deepest River in Australia"],
+          "answers": ["The Kingfisher That Will Not Fish"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A kookaburra is really a ____.", "It swallows its food ____.", "Settlers called it the bushman's ____."],
+          "wordBank": ["kingfisher", "headfirst", "clock"],
+          "answers": ["kingfisher", "headfirst", "clock"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about the kookaburra, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird That Laughs at Dawn",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-kookaburra", "templateLabel": "The Bird That Laughs at Dawn", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "kookaburra",
+          "notes": ["Laughing kookaburra: the heaviest kingfisher on Earth", "About a foot and a half long", "Hunts by sitting still and watching", "Nests in tree hollows and termite mounds", "Older chicks stay on as helpers", "The chorus marks the family territory"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Not a Fish in Sight",
+          "text": "The laughing kookaburra belongs to the kingfisher family, which makes it an odd member of an odd club. Kingfishers are the small, bright birds that hang above a river, then fold and drop into the water after a minnow. The kookaburra is the heaviest kingfisher alive, close to a foot and a half long, with a beak like a pair of pliers. It hardly ever touches water. It hunts dry land instead. The method is patience. A kookaburra chooses a branch with a clear view of the grass, tucks its wings in, and becomes furniture. It can sit like that for many minutes, head still, eyes moving. When something below moves, a beetle or a worm or a mouse or a lizard, the bird drops without a sound, seizes it, and carries it back to the perch. Then it beats the animal against the wood until it stops struggling, and swallows it headfirst. A kookaburra will take a small snake this way. Its home is the strange part. A pair may nest in a hollow limb, or it may fly straight at a termite mound built in a tree, chip a tunnel into it, and let the termites seal the walls around the nest. The young that hatch there do not leave when they can fly. They stay for a year or more as helpers, carrying food to the next batch of chicks and joining the family chorus. That chorus is the laugh everyone knows. It is not amusement. A kookaburra family holds the same patch of forest all year, and rather than fight over the boundary every morning, they announce it. They gather, throw their heads back, and laugh, and the neighbors laugh back from their own trees. The sound carries much further than a kookaburra can chase an intruder, which is exactly the point."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain why the passage calls the kookaburra an odd member of an odd club.",
+            "Describe the kookaburra's hunting method in your own words.",
+            "Why does the passage say the sound carrying further than the bird can chase is exactly the point?",
+            "What does it tell you about kookaburras that the young stay on as helpers?"
+          ],
+          "rows": 2,
+          "answers": [
+            "kingfishers are already unusual, and this one is a kingfisher that avoids water",
+            "(it sits still on a branch, watches the ground, drops on prey, beats it on the wood, swallows it headfirst)",
+            "(inference: the call defends the territory without a fight, reaching birds the kookaburra could never catch)",
+            "(inference: they live in cooperative family groups instead of leaving to live alone)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A kingfisher that hunts on land, nests in termite mounds, and uses its laugh to hold a territory",
+            "Termites are the most dangerous insect in Australia",
+            "Kingfishers are the best fishers of any bird"
+          ],
+          "answers": ["A kingfisher that hunts on land, nests in termite mounds, and uses its laugh to hold a territory"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["perch → ____", "chorus → ____", "intruder → ____"],
+          "rows": 1,
+          "answers": ["the branch a bird sits on", "a group all making the same sound together", "an animal that comes in where it does not belong"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is the kookaburra's laugh a better tool than a beak or claws? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird That Laughs at Dawn",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-kookaburra", "templateLabel": "The Bird That Laughs at Dawn", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "kookaburra",
+          "notes": ["Dacelo novaeguineae, the laughing kookaburra", "The name comes from the Wiradjuri word guuguubarra", "Cooperative breeder: older siblings help raise the chicks", "Excavates nests inside tree termite mounds", "Territory held year-round and defended by chorus", "Its call was used as jungle sound in old movies"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Laugh Is a Fence",
+          "text": "The sound arrives before the light does. It starts low, a chuckle in the back of a throat, then gathers speed, climbs, and breaks into a cackle, and other birds fold in until the whole grove seems to be laughing at a joke nobody explained. The bird responsible is the laughing kookaburra, and the sound is not amusement. It is a boundary. Kookaburras are kingfishers, which is the first surprise. Their relatives are the small, hard, brilliant birds that hover over rivers and plunge in headfirst. The laughing kookaburra is the heaviest kingfisher on Earth, roughly a foot and a half long, carrying a beak that looks borrowed from a toolbox, and it hardly ever fishes. It hunts dry ground. A kookaburra selects a branch with a clean view and then does nothing at all, sometimes for many minutes, until something moves below. It drops silently, takes the animal, and returns to the perch, where it beats the meal against the wood until it goes limp and swallows it headfirst. Beetles, worms, mice, lizards, small birds, and snakes all end this way. The laughing is the more interesting weapon. A kookaburra family claims one patch of forest and stays in it all year. Instead of fighting over the boundary each morning, the group announces it. They gather, tilt their heads back, and chorus, and the neighbors chorus back from their own trees, and the map is redrawn without a feather lost. The call travels far beyond the distance the bird could ever chase an intruder, which is precisely why it works. Settlers called the kookaburra the bushman's clock, because the chorus arrived at first light whether anyone wanted it or not. The word family is meant literally. Kookaburras are cooperative breeders. A pair nests in a hollow limb, or flies at a termite mound built high in a tree, chips a tunnel into it, and lets the insects wall the chamber off around them. The young from earlier years do not go off to live alone. They stay on as helpers, carrying food to the new chicks, guarding the hollow, adding their voices to the dawn chorus. Very few birds keep a household this way. The name itself came from people who lived alongside the bird long before settlers did. It comes from guuguubarra, a Wiradjuri word that copies the call. The bird was named after its own sound, which may be the most honest naming any animal has received."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain what the title means. Quote the phrase from the passage that best supports it.",
+            "Why is it useful that the call travels further than the bird can chase? Cite the text.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author says the word family is meant literally. Explain what the passage means by that."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering land-hunting kingfisher + laugh as territory + family helpers)",
+            "(the laugh marks a territory boundary; quote: the map is redrawn without a feather lost)",
+            "(it warns birds it could never reach, so no fight is needed; cite: precisely why it works)",
+            "(inform, with an entertaining voice: it gives facts about diet, nesting, and naming, but opens like a story)",
+            "(the young stay on as helpers, so the group really is one family raising chicks together)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["boundary → ____", "cooperative → ____", "chorus → ____", "intruder → ____"],
+          "rows": 1,
+          "answers": ["the edge of a territory", "working together toward the same job", "a group calling all at once", "one that enters where it is not allowed"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a beak like a toolbox is used on the branch, not in the water. What does that tell you about how animals get their names?",
+            "Why might staying in one territory all year suit a bird that hunts by sitting still?"
+          ],
+          "rows": 3,
+          "answers": ["(opinion: names describe the group, not always the individual animal's habits)", "(inference: it learns exactly where prey appears and which branches give the best view)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is sound a stronger defense than strength? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird That Laughs at Dawn",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-kookaburra", "templateLabel": "The Bird That Laughs at Dawn", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "kookaburra",
+          "notes": ["Dacelo novaeguineae, the heaviest kingfisher alive", "Named from the Wiradjuri word guuguubarra, a copy of its call", "Cooperative breeder with helpers from earlier broods", "Chicks hatch with a hook on the upper beak", "Introduced to Tasmania and part of New Zealand", "Its call was used as jungle sound in old films"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Laugh That Is Not a Laugh",
+          "text": "At dawn in an Australian forest a sound goes up that nobody forgets. It begins as a low chuckle, gathers speed, climbs into a cackle, and then several birds join at once until the whole grove seems to be laughing at a joke you were not told. The bird making it is the laughing kookaburra, and the sound is not amusement. It is a property line. Kookaburras are kingfishers, which is the first surprise. Their relatives are the small, brilliant birds that hover above rivers and plunge in headfirst after fish. The laughing kookaburra is the heaviest kingfisher on Earth, close to a foot and a half long, with a beak that looks borrowed from a toolbox, and it hardly ever fishes. It hunts dry land instead. The method is patience. A kookaburra selects a branch with a clear view, folds its wings, and becomes furniture. It can hold that pose for many minutes, eyes fixed on the grass. When something moves, a beetle, a worm, a mouse, a lizard, sometimes a snake, the bird drops without a sound, seizes it, and carries it back to the perch. Then comes the part children remember: it beats the animal against the wood until it stops struggling, and swallows it headfirst. The laughing is the more interesting weapon. A kookaburra family holds one patch of forest for the whole year and does not migrate away from it. Rather than fight over the boundary every morning, the group announces it. They gather, throw their heads back, and chorus, and the neighbors chorus back from their own trees, and the map is redrawn without a feather lost. The call travels much further than a kookaburra can chase an intruder, which is precisely the point. Early settlers called the bird the bushman's clock, because the chorus arrived at first light whether anyone wanted it or not. The word family is meant literally. Kookaburras are cooperative breeders. A pair nests in a hollow limb, or tunnels into a termite mound built high in a tree and lets the insects seal the walls around them, and the young from previous years do not leave. They stay on as helpers, feeding the new chicks, guarding the hollow, joining the chorus. Very few birds run a household this way. It is also not a gentle one. Kookaburra chicks hatch blind and naked with a sharp hook on the upper beak, and in the first days the older chicks sometimes turn that hook on the youngest. The hook falls away at about four weeks, long after it has done its work. The family that laughs together does not share equally. Humans have spread the sound around the world without meaning to. Settlers carried kookaburras west and south, and the birds now live in places they never evolved in, including Tasmania and a corner of New Zealand. Film carried the call further still. For decades, whenever a movie needed a jungle, a sound editor reached for the kookaburra, so audiences around the world learned to hear an Australian forest bird as the voice of rainforests it has never visited. That is the honest strangeness of the kookaburra. It is a kingfisher that avoids water, a bird whose laughter is a warning, a household that raises its young together and thins them at the same time, and a native of one continent standing in for the wild everywhere else. It is not laughing at us. We simply had no better word."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the author calls the laugh a weapon rather than a song. Cite the evidence.",
+            "The passage says the family that laughs together does not share equally. Explain what that refers to and why the author places it where he does.",
+            "Identify one place where the author deliberately uses a human word for animal behavior, and explain the effect.",
+            "Analyze the final two sentences. What claim are they making, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the chorus defends a territory without fighting; cite: the map is redrawn without a feather lost)",
+            "(the chicks with the hook attacking the youngest; it undercuts the warm picture of a helper family)",
+            "(laughing, family, household, or property line; it makes the bird feel familiar, then the passage corrects the reader)",
+            "(the claim is that the laugh is our misreading, not the bird's meaning; supported by the territorial evidence throughout)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["territory → ____", "cooperative breeder → ____", "migrate → ____", "evolved → ____"],
+          "rows": 2,
+          "answers": [
+            "an area an animal claims and defends",
+            "a species in which birds other than the parents help raise the chicks",
+            "to move to another region for part of the year",
+            "changed gradually over many generations to fit a place"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Kookaburras introduced to New Zealand live where they never evolved. Explain one risk that creates for the animals already there.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(a strong land predator with no local history can eat native lizards, insects, and small birds that have no defense against it)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Describing animal behavior with human words like laughing and family teaches us more than it misleads us. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

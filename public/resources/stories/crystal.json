@@ -1,0 +1,319 @@
+{
+  "key": "crystal",
+  "title": "The Rocks That Build Themselves",
+  "blurb": "Salt cubes, six-armed snowflakes, and a cave in Mexico where crystals grew longer than a school bus.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Rocks That Build Themselves",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-crystal", "templateLabel": "The Rocks That Build Themselves", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the sharp points." },
+        {
+          "kind": "image",
+          "imageKey": "crystal",
+          "notes": ["It has flat sides", "Some are clear like glass", "Salt is a tiny cube", "Every snowflake has six arms", "Ice is a crystal too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a crystal. A crystal is a rock with flat sides and sharp points. Some crystals are clear like glass. Some are purple. Some are pink. Salt is a crystal too. Every bit of salt is a tiny cube. Snow is a crystal. Every snowflake has six arms. Crystals do not grow like plants. They grow very, very slowly in water and rock."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the points on each crystal. Write how many in the box.",
+          "emoji": "💎",
+          "items": ["3", "5", "2", "6"],
+          "answers": ["3", "5", "2", "6"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "rock    salt" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "salt", "right": "a tiny cube" },
+            { "left": "snowflake", "right": "six arms" },
+            { "left": "diamond", "right": "very hard" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own crystal. Give it flat sides and a sharp point on top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Rocks That Build Themselves",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-crystal", "templateLabel": "The Rocks That Build Themselves", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "crystal",
+          "notes": ["Salt grains are cubes", "Snowflakes always have six arms", "Crystals grow, but they are not alive", "Rock candy is sugar crystals", "Diamond is the hardest crystal of all"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Crystal Grows",
+          "text": "Crystals grow, but they are not alive. A plant grows by making new cells. A crystal grows a different way. It is built from tiny pieces that are much too small to see. The pieces float in water. They land on the crystal and stick. Then more land on top. Layer by layer, the crystal gets bigger. You can watch it happen at home. Stir sugar into hot water until no more will dissolve. Hang a string in the jar. Wait a week. Tiny pieces of sugar leave the water and stack onto the string in neat rows. Soon the string is covered in hard, sweet crystals. People call that rock candy."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Are crystals alive?", "How does a crystal get bigger?", "What do you call sugar crystals on a string?"],
+          "rows": 2,
+          "answers": ["no, they are not alive", "tiny pieces land on it and stick, layer by layer", "rock candy"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A crystal grows layer by ____.", "Stir sugar into ____ water.", "Hang a ____ in the jar.", "Crystals are not ____."],
+          "wordBank": ["layer", "hot", "string", "alive"],
+          "answers": ["layer", "hot", "string", "alive"]
+        },
+        { "kind": "draw", "prompt": "Draw a jar of rock candy. Show the string and the crystals growing on it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Rocks That Build Themselves",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-crystal", "templateLabel": "The Rocks That Build Themselves", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "crystal",
+          "notes": ["Salt: six flat faces, a perfect cube", "Quartz: six-sided columns with a point", "Snow: six arms, every single time", "The shape outside comes from the pattern inside", "Diamond is made of pure carbon"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Crystal Has Flat Sides",
+          "text": "Pick up a grain of salt and look at it through a magnifying glass. It is a cube. Not close to a cube. A real cube, with six flat faces and sharp corners. Every grain in the shaker is the same shape. That shape is not an accident. Salt is built from tiny pieces called atoms, and in salt the atoms stack in a grid, like blocks packed in a box. Each atom sits in its own spot, the same distance from its neighbors, over and over, millions of times. When a pattern that neat grows big enough to see, it shows up on the outside as flat faces. The shape of the crystal is the shape of the pattern hiding inside it. Different atoms stack in different patterns, so they build different shapes. Quartz grows six-sided columns with a point on the end. Snow grows six arms. Diamond grows a shape with eight faces. Rock hunters can often name a mineral just by looking at the shape it grew."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What shape is a grain of salt?",
+            "How do the atoms in salt sit next to each other?",
+            "Where does the shape of a crystal come from?",
+            "Why do you think a rock hunter can name a mineral just by its shape?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a cube with six flat faces",
+            "in a grid, each one the same distance from its neighbors",
+            "from the pattern of atoms inside it",
+            "(inference: each mineral stacks its atoms in one pattern, so it always grows the same shape)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why a Crystal Has Flat Sides", "How to Cook With Salt", "The Biggest Mine in the World"],
+          "answers": ["Why a Crystal Has Flat Sides"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Salt is built from tiny pieces called ____.", "The atoms stack in a ____, like blocks in a box.", "Quartz grows six-sided ____."],
+          "wordBank": ["atoms", "grid", "columns"],
+          "answers": ["atoms", "grid", "columns"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which crystal shape would you most like to find, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Rocks That Build Themselves",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-crystal", "templateLabel": "The Rocks That Build Themselves", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "crystal",
+          "notes": ["Crystals grow out of dissolved mineral", "Slow growth makes big crystals", "Granite cooled slowly, so you can see its grains", "Naica, Mexico: gypsum beams longer than a school bus", "Gypsum is soft enough to scratch with a fingernail"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Grown, Not Made",
+          "text": "A crystal is not carved. It is grown, one layer at a time, and the way it grows decides how big it gets. Most crystals begin dissolved. Hot water deep in the ground can hold enormous amounts of dissolved mineral, the way hot tea holds more sugar than cold tea does. When that water cools, or when some of it escapes, it can no longer hold everything it was carrying. The extra mineral has to go somewhere, so it starts locking onto any solid surface it can find. Atoms settle into the pattern, more atoms settle on top of those, and the crystal thickens outward. Time is the whole story. Rush the process and you get a mess of tiny grains, because crystals start forming everywhere at once and crowd each other out. Slow it down and a few crystals grow enormous, because atoms have time to find their proper place in the pattern. That is why granite, which cooled slowly deep underground, is speckled with grains you can pick out with your eye, while lava that hardened in a day looks smooth and dull. The record for patience sits in a mine at Naica, in Mexico. Hot mineral water filled a chamber there and stayed at almost exactly the same temperature for hundreds of thousands of years. Nothing hurried it. Nothing interrupted it. The gypsum crystals that grew in that water are longer than a school bus, thicker than a person, and clear enough to see your hand through."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why cooling water makes crystals form.",
+            "Why does slow growth produce bigger crystals than fast growth?",
+            "The passage compares granite with lava that hardened in a day. What does that comparison prove?",
+            "The passage says nothing hurried the crystals at Naica. Why would being interrupted matter to a growing crystal?"
+          ],
+          "rows": 2,
+          "answers": [
+            "cool water cannot hold as much dissolved mineral, so the extra locks onto a surface",
+            "atoms have time to find their proper place instead of crowding each other out",
+            "(inference: cooling speed, not the mineral, decides crystal size)",
+            "(inference: growth only continues while conditions hold steady, so a change would stop or spoil the pattern)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Crystals grow out of dissolved mineral, and the slower they grow the larger they get",
+            "Mexico produces more minerals than any other country",
+            "Granite is the most useful rock for building houses"
+          ],
+          "answers": ["Crystals grow out of dissolved mineral, and the slower they grow the larger they get"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["dissolved → ____", "mineral → ____", "speckled → ____"],
+          "rows": 1,
+          "answers": [
+            "broken up and carried invisibly inside a liquid",
+            "a natural solid that rock is made of",
+            "covered in small separate spots or grains"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: you want to grow the biggest possible sugar crystal in a jar. Explain what you would do and why, using two ideas from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Rocks That Build Themselves",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-crystal", "templateLabel": "The Rocks That Build Themselves", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "crystal",
+          "notes": ["Naica mine, Chihuahua, Mexico", "Found in April 2000, about 1,000 feet down", "Selenite is a clear form of gypsum", "Largest beams: near 40 feet, over 50 tons", "Cave air sits near 136 degrees Fahrenheit", "Reflooded in 2015 when the pumps stopped"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cave of the Crystals",
+          "text": "In April 2000, two brothers named Eloy and Javier Delgado were drilling a fresh tunnel about a thousand feet beneath the desert at Naica, in northern Mexico. The mine had been giving up silver, zinc, and lead for a century, and the brothers expected more of the same. What the drill broke into that day was not ore. It was a room, and the room was full of beams. They were crystals. Gypsum crystals, the same soft mineral that goes into plaster and drywall, but grown to a size nobody had ever recorded. The largest run close to forty feet long and weigh more than fifty tons. They cross the chamber at every angle, pale and translucent, like the inside of a shattered chandelier. The cave built them out of two ingredients: mineral water and time. Far below the chamber sits a body of magma that has kept the surrounding rock warm for around a million years. That heat filled the cave with water near 136 degrees Fahrenheit and then, remarkably, held it there. Just below that temperature a mineral called anhydrite comes apart in water and reassembles itself as gypsum, and it does so with almost unbelievable slowness. Slowness was the gift. Atom by atom, with no cold snap and no dry spell to interrupt the work, the crystals grew for perhaps half a million years. Visiting them nearly kills you. The chamber sits near 136 degrees Fahrenheit at close to total humidity, so water condenses inside your lungs faster than your body can shed its heat. Unprotected, a person lasts about ten minutes. Explorers went in wearing suits packed with ice, breathing chilled air through a mask, and even then they were pulled out inside an hour. The mine had kept the cave dry only by pumping groundwater away. In 2015 the pumping stopped and the water came back. The crystals are submerged again now, in the dark, resting in the warm mineral bath that made them. Almost nobody will ever see them again. They are almost certainly still growing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What two ingredients does the passage say built the crystals?",
+            "Explain the role of the magma. Quote the phrase the passage uses to describe what the heat did to the water.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence do, and why do you think the author saved it for last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the 2000 discovery, the giant gypsum crystals, and the slow steady heat that grew them)",
+            "mineral water and time",
+            "it kept the rock warm for around a million years and held the water at a steady temperature; quote: held it there",
+            "(inform, told as a story: it gives dates, sizes, and temperatures, but uses suspense and imagery like a shattered chandelier)",
+            "(it turns loss into wonder: the crystals are gone from us but the process never stopped; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["ore → ____", "translucent → ____", "submerged → ____", "condenses → ____"],
+          "rows": 1,
+          "answers": [
+            "rock that holds useful metal worth mining",
+            "letting light through without being fully clear",
+            "covered over by water",
+            "turns from a gas into a liquid"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that slowness was the gift. Explain what that means here.",
+            "The mine's pumps were the only reason anyone could enter the cave. Was stopping them a loss or a rescue? Defend your answer."
+          ],
+          "rows": 3,
+          "answers": [
+            "(steady, uninterrupted, extremely slow growth is exactly what let the crystals reach that size)",
+            "(opinion: loss to science and visitors, rescue for the crystals, which need the water to keep growing)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should the pumps be turned back on so people can study and see the crystals again? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Rocks That Build Themselves",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-crystal", "templateLabel": "The Rocks That Build Themselves", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "crystal",
+          "notes": ["A crystal is one pattern repeated without error", "X-ray crystallography began in 1912", "Photo 51 revealed the shape of DNA in 1952", "Dorothy Hodgkin mapped penicillin, B12, and insulin", "Watch quartz hums 32,768 times per second", "Piezoelectricity: found by the Curie brothers, 1880"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Order in Everything",
+          "text": "A crystal is one of the simplest ideas in science, and one of the most useful. It is matter that has agreed on a pattern. Take a single arrangement of atoms, small enough that millions of them would fit across your fingernail. Copy it. Set the copy beside the original, exactly aligned, exactly the same distance away. Do that in every direction, a trillion times over, without one mistake. What you have built is a crystal, and the flat faces and sharp angles you can see with your eye are simply the pattern reporting itself at a scale you happen to be able to notice. The outside is an honest advertisement for the inside. That honesty turned out to be the key to the twentieth century. In 1912 a physicist named Max von Laue wondered what would happen if he fired X-rays at a crystal. Nobody could see an atom. No lens exists that can focus X-rays the way glass focuses light, and the things he wanted to look at were smaller than any light could show him. But a crystal is a repeating grid, and a repeating grid scatters waves into a pattern of bright spots. Those spots are not a picture of the atoms. They are a code, and the arrangement of the atoms can be worked backward out of it. Within a year a father and son, William and Lawrence Bragg, had turned that code into a method, and in 1915 it won them both a Nobel Prize. Lawrence was twenty-five. For the next forty years, chemistry stopped guessing. Dorothy Hodgkin used crystals to work out the structure of penicillin while the Second World War was still running, then vitamin B12, then insulin, each one a molecule nobody had ever laid eyes on. In 1952 Rosalind Franklin and her student Raymond Gosling aimed an X-ray beam at a fine thread of DNA and produced an image known as Photo 51: a blurred X of dark smudges. To an untrained eye it is nothing at all. To someone who reads diffraction it says helix, and it hands over the width, the twist, and the spacing. The shape of life was read off a photograph of scattered light. Crystals also keep your time. Squeeze a piece of quartz and it produces a small voltage, a property the Curie brothers found in 1880. Run the trick backward, feed voltage into the quartz, and it bends. Feed it a rhythm and it vibrates, and here is the part that matters: it insists on vibrating at its own frequency, fixed by the shape it was cut into and the pattern locked inside it. A watch holds a sliver of quartz cut like a tiny tuning fork, humming 32,768 times every second. A circuit halves that number fifteen times and arrives at exactly one pulse per second. The crystal is not measuring the second. The crystal is defining it. We tend to file crystals under decoration, something purple in a gift shop window. That is a strange fate for the object that let us see molecules and cut the day into pieces. A crystal is only matter that stopped improvising, and nearly everything we know about the small world we learned by asking a well behaved pattern a question and reading the answer off the light that came back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why a crystal, rather than any other kind of matter, made X-ray crystallography possible. Cite the evidence.",
+            "The passage says the diffraction spots are not a picture of the atoms. Explain what they are instead, and why that distinction matters.",
+            "The author writes that the crystal is not measuring the second, the crystal is defining it. Analyze what that claim means and whether the passage earns it.",
+            "Identify the structure of this passage. Name its three main sections and explain how the author moves between them."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(only a repeating grid scatters waves into a readable pattern; cite: a repeating grid scatters waves into a pattern of bright spots)",
+            "(they are a code that must be worked backward; it matters because the answer is calculated, not seen)",
+            "(the second is defined by a fixed physical frequency rather than read off a moving hand; earned by the 32,768 and fifteen halvings detail)",
+            "(what a crystal is, what crystals revealed, how crystals keep time; the author moves by widening from structure to use)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["diffraction → ____", "frequency → ____", "improvising → ____", "helix → ____"],
+          "rows": 2,
+          "answers": [
+            "the scattering of waves into a pattern when they meet a regular grid",
+            "how many times something repeats in one second",
+            "making it up as you go, without a fixed pattern",
+            "a shape that twists around like a spiral staircase"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls the outside of a crystal an honest advertisement for the inside. Explain the metaphor and judge how well it holds up.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the visible faces truthfully report the hidden atomic pattern; strong because the shape is caused by the pattern, though a broken or crowded crystal advertises less clearly)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The most important tools in science are not the machines we build, they are the patterns we find already sitting in nature. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

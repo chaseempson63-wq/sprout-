@@ -1,0 +1,322 @@
+{
+  "key": "beaver",
+  "title": "The Beaver That Builds Its Own Pond",
+  "blurb": "Orange chisel teeth, a tail like a paddle, and a wall of sticks that turns a stream into a whole world.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Beaver That Builds Its Own Pond",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-beaver", "templateLabel": "The Beaver That Builds Its Own Pond", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the beaver's flat tail." },
+        {
+          "kind": "image",
+          "imageKey": "beaver",
+          "notes": ["Its front teeth are orange", "Its tail is flat like a paddle", "It swims better than it walks", "It sleeps in a house made of sticks"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a beaver. The beaver has soft brown fur. It has a flat tail like a paddle. It has big orange front teeth. The beaver cuts down trees with its teeth. It puts the sticks in the water. The sticks stop the water. Now there is a pond. The beaver builds a house in the pond. The beaver sleeps inside where it is warm and dry."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the sticks in each row. Write how many in the box.",
+          "emoji": "🪵",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "pond    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "beaver", "right": "pond" },
+            { "left": "bird", "right": "nest" },
+            { "left": "bee", "right": "hive" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the beaver's pond. Add sticks, water, and a big tree.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Beaver That Builds Its Own Pond",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-beaver", "templateLabel": "The Beaver That Builds Its Own Pond", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "beaver",
+          "notes": ["Its orange teeth never stop growing", "It cuts down trees by gnawing", "Its stick house is called a lodge", "The lodge doors are under the water", "It slaps its tail to say danger"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Beaver That Builds Its Own Pond",
+          "text": "A beaver's front teeth never stop growing. They are orange, and they are as sharp as a chisel. The beaver leans against a tree and gnaws around and around until the tree falls. Then it drags the branches into the stream. It pushes sticks and mud together until the water backs up and spreads out into a pond. In the middle of the pond the beaver builds a lodge. The only doors are under the water, so a wolf cannot get in. Inside, above the water line, there is a dry room with a floor of soft wood chips. That is where the beaver family sleeps."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What color are a beaver's front teeth?", "How does a beaver make a tree fall down?", "Where are the doors of the lodge?"],
+          "rows": 2,
+          "answers": ["orange", "it gnaws around the tree with its teeth", "under the water"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A beaver's teeth are ____.", "The beaver drags ____ into the stream.", "The water backs up into a ____.", "The beaver's stick house is a ____."],
+          "wordBank": ["orange", "branches", "pond", "lodge"],
+          "answers": ["orange", "branches", "pond", "lodge"]
+        },
+        { "kind": "draw", "prompt": "Draw a beaver lodge in the middle of a pond. Show the door under the water.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Beaver That Builds Its Own Pond",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-beaver", "templateLabel": "The Beaver That Builds Its Own Pond", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "beaver",
+          "notes": ["A beaver does not eat wood, it eats bark", "Iron in the enamel turns its teeth orange", "It stores branches underwater for winter", "Its back feet are webbed like a duck's", "The sound of running water makes it build"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Beaver Builds",
+          "text": "A beaver does not eat wood. It eats the soft living layer just under the bark, plus leaves and water plants. So why does it cut down whole trees? The answer is water. A beaver on land is slow and clumsy. A beaver in water is quick and safe. So the beaver makes more water. It drags branches into a stream and packs them with mud until the flow stops and a pond spreads out behind the wall. Now the beaver can swim almost everywhere it needs to go. In the pond it piles up a lodge of sticks and mud. Every door is underwater. Above the water line it hollows out a dry room, and that is where the family sleeps through the winter. Before the ice comes, the beaver shoves fresh branches into the mud at the bottom of the pond. When the pond freezes over, it swims down under the ice and brings a stick back up to chew. Its food is in the cellar. Scientists have even learned what tells a beaver to start building. It is the sound of running water. A beaver hears trickling and begins stacking sticks."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What part of a tree does a beaver actually eat?",
+            "Why does the beaver want the pond to be deep?",
+            "How does a beaver eat when the pond is frozen over?",
+            "Why do you think every door of the lodge is underwater?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the soft living layer under the bark",
+            "so it can swim everywhere and stay safe",
+            "it swims under the ice to branches it stored in the mud",
+            "(inference: land animals like wolves cannot swim in and reach it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Beaver Builds", "How to Grow a Vegetable Garden", "The Tallest Tree in the Forest"],
+          "answers": ["Why the Beaver Builds"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The beaver packs branches with ____ to stop the stream.", "The beaver's stick house is called a ____.", "The sound of running ____ makes a beaver start building."],
+          "wordBank": ["mud", "lodge", "water"],
+          "answers": ["mud", "lodge", "water"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the cleverest thing a beaver does, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Beaver That Builds Its Own Pond",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-beaver", "templateLabel": "The Beaver That Builds Its Own Pond", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "beaver",
+          "notes": ["The second largest rodent, after the capybara", "Iron in the enamel makes the teeth orange and hard", "A clear third eyelid works like a swim mask", "Its lips seal shut behind its front teeth", "Keystone species: the pond feeds a whole valley"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Builds Rivers",
+          "text": "Most animals fit themselves to the world they find. The beaver rebuilds the world to fit itself. A beaver is a rodent, the second largest in the world after the capybara, and almost every part of its body is built for water. Its back feet are webbed like a duck's. Its tail is flat and scaly and works as a rudder. A clear third eyelid slides across each eye like a swim mask. Its lips seal shut behind its front teeth, so it can carry a branch through the water without swallowing a mouthful. It can hold its breath for several minutes at a time. Those front teeth are the tools. They never stop growing, and the front face of each tooth is coated in enamel hardened with iron, which is what turns it orange. The back of the tooth is softer. As the beaver gnaws, the soft side wears away faster and leaves a chisel edge, so every bite sharpens the blade again. With that chisel the beaver cuts trees, and with the trees it builds a dam. The dam stops a stream and floods the land behind it. That flood is the whole point. Deep water means safe travel and a lodge no wolf can enter. But the pond does far more than shelter one family. It slows the current so silt settles out. It soaks the ground so the valley stays damp through a dry summer. It makes still, sunny shallows where frogs, fish, ducks, and insects can live. Trees that drown at the edge become nest holes for woodpeckers. Ecologists have a name for an animal that changes a place so much that other species come to depend on the change. They call it a keystone species."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage opens by saying the beaver rebuilds the world to fit itself. Explain what that means using two examples.",
+            "Explain in your own words why a beaver's teeth stay sharp without ever being sharpened.",
+            "The passage says the flood is the whole point. Why does a beaver want deep water?",
+            "Name two living things that are not beavers but still benefit from a beaver pond."
+          ],
+          "rows": 2,
+          "answers": [
+            "(it dams a stream and floods a valley to make the pond it needs, instead of moving to find one)",
+            "the hard iron front wears slower than the soft back, so gnawing leaves a chisel edge",
+            "it can swim fast and stay safe, and a wolf cannot reach a lodge with underwater doors",
+            "(any two: frogs, fish, ducks, insects, woodpeckers)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A beaver is built for water and its dam-building changes a whole valley for other species too",
+            "Beavers are the largest rodents on Earth and eat mostly fish",
+            "Woodpeckers cannot survive anywhere except beaver ponds"
+          ],
+          "answers": ["A beaver is built for water and its dam-building changes a whole valley for other species too"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["rudder → ____", "enamel → ____", "silt → ____", "keystone species → ____"],
+          "rows": 1,
+          "answers": [
+            "the part that steers a boat or animal through water",
+            "the hard coating on the outside of a tooth",
+            "fine dirt carried along by moving water",
+            "an animal that other species depend on because of how much it changes a place"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if a beaver dam floods a farmer's field, should people remove it? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Beaver That Builds Its Own Pond",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-beaver", "templateLabel": "The Beaver That Builds Its Own Pond", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "beaver",
+          "notes": ["Castor canadensis and Castor fiber", "Beaver underfur has tiny barbs that lock into felt", "By 1900 the Eurasian beaver was down to about 1,200 animals", "Idaho parachuted beavers into the backcountry in 1948", "Roughly 10 to 15 million live in North America today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fur That Emptied a Continent",
+          "text": "Before Europeans arrived, tens of millions of beavers lived in North America. Nobody can give an exact figure, because nobody counted them, but the shape of the continent recorded them. Beaver dams stood on nearly every stream from the northern tree line down into Mexico. The valleys behind those dams were not the tidy single rivers we picture today. They were staircases of ponds, meadows, and marsh: wet, slow, and crowded with life. Then hats happened. Beaver underfur is covered in microscopic barbs, and when it is pressed and heated it locks together into felt that is dense, waterproof, and almost indestructible. For roughly two hundred years, a felt beaver hat was the thing a European gentleman was expected to own. Europe had already trapped out its own beavers. North America had not. What followed was one of the largest wildlife harvests in history. Trading companies pushed west along the rivers, and the beaver became money. In some regions, trappers deliberately cleared every animal from a valley to make the land worthless to rivals. By 1900 the North American beaver, once counted in the tens of millions, was down to perhaps one hundred thousand. The Eurasian beaver was down to around twelve hundred animals, scattered in a few small pockets. The water changed with them. Without dams, the ponds drained. Without ponds, wet meadows dried and hardened, and streams cut down into narrow channels that flushed rain straight toward the sea. People who arrived later looked at those fast, tidy channels and assumed they had always been there. An entire landscape had been quietly deleted, and almost nobody noticed the connection. The ending is better than it should be. Fashion moved on to silk, trapping laws arrived, and beavers were carried back into empty valleys. Idaho went as far as dropping them into the backcountry by parachute in 1948. Ten to fifteen million now live in North America. In some places they flood roads and fell prized trees, and people argue about them bitterly. In others, land managers pay to put beavers back, because a beaver builds flood control and drought insurance for free."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why did the beaver hat trade hit North America so hard? Use two details from the text.",
+            "Explain what the author means by an entire landscape had been quietly deleted.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author says the ending is better than it should be. What does that phrase suggest about the author's expectations?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the fur trade, the collapse, the lost water, and the return)",
+            "(Europe had already trapped out its own beavers, and demand for felt hats lasted two hundred years)",
+            "(the ponds, meadows, and marshes vanished with the beavers and later people assumed the dry channels were natural)",
+            "(inform, with a persuasive edge: it gives dates and numbers, but words like quietly deleted and for free push a view)",
+            "(the author expected the species to be lost for good, so recovery is a surprise)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["harvest (of wildlife) → ____", "microscopic → ____", "pockets (of animals) → ____", "flush → ____"],
+          "rows": 1,
+          "answers": [
+            "the killing and taking of wild animals in large numbers",
+            "too small to see without a microscope",
+            "small separated groups surviving in scattered places",
+            "to wash quickly through and away"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Trappers sometimes cleared a valley completely on purpose. Explain the thinking behind that, and what it cost.",
+            "Why might a town choose to pay for beavers instead of building a concrete flood wall?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(they wanted the land worthless to rival companies; it destroyed the beaver and the wetlands with it)",
+            "(inference: beavers build and repair for free, and the pond also holds water for droughts)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when a beaver floods a road, should the beaver be moved or should the road be changed? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Beaver That Builds Its Own Pond",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-beaver", "templateLabel": "The Beaver That Builds Its Own Pond", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "beaver",
+          "notes": ["Castor canadensis, the second largest rodent alive", "Iron-reinforced enamel: hard, orange, self-sharpening", "Lars Wilsson, 1960s: beavers dam the sound of running water", "Beaver dam analogs are human-built starter dams", "Pond levelers drain a dam quietly so it is not repaired", "Emily Fairfax: beaver ponds stay green through wildfire"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Engineer We Erased, and Then Hired Back",
+          "text": "There is an animal that solves problems humans spend millions of dollars on, and for two centuries we killed it for hats. Start with the body. A beaver is a rodent, second in size only to the capybara, and it is assembled almost entirely for water. Webbed hind feet drive it forward. A flat scaly tail steers it, stores fat for winter, and slaps the surface as an alarm. A transparent membrane slides across each eye so it can see while submerged. Its lips close behind the incisors, which lets it gnaw and haul timber underwater without drowning itself. The incisors are the famous part. They grow continuously, and their front face is armored with enamel reinforced by iron, which both hardens the tooth and stains it orange. Because the softer backing wears faster than the armored face, every bite resharpens the chisel. The beaver never has to stop for a whetstone. The behavior is stranger than the anatomy. In the 1960s the Swedish researcher Lars Wilsson played recordings of running water to captive beavers. They piled sticks and mud onto the loudspeaker. The animals were not reasoning about hydrology. They were answering a sound. Out of that simple rule comes a dam, and out of the dam comes a pond, and out of the pond comes a world. Consider what the pond does. It raises the water table, so the surrounding soil stays damp deep into a drought. It slows floodwater, releasing it over weeks instead of hours. It drops silt and traps fertilizer washing off farmland, so water leaves cleaner than it arrived. It creates still, sunlit shallows where amphibians breed and young fish fatten. Trees that drown at the margin become nest holes. Ecologists call a species like this a keystone: pull it out and the arch collapses. We pulled it out. Beaver felt made the hat Europe insisted on wearing, and Europe had already exhausted its own supply. Trading companies mapped a continent in pursuit of the animal. Populations once estimated in the tens of millions fell to perhaps one hundred thousand by 1900, and the Eurasian beaver was reduced to roughly twelve hundred individuals. Along with the animals went their water. Braided, swampy, pond-stepped valleys drained and hardened into single fast channels. Later generations looked at those channels and called them natural. The correction is underway, and it is unsentimental. Beavers have been reintroduced across Britain and Europe. In the American West, agencies now install beaver dam analogs, which are hand-built imitations of a beaver dam, hoping that real beavers move in and take over the maintenance. The reasoning is arithmetic. A concrete flood-control structure is expensive and needs engineers. A beaver colony works for bark. Research by the geoscientist Emily Fairfax has shown that beaver-dammed stretches of stream stay green through wildfires that burn the valley around them, because the pond keeps the ground too wet to carry flame. None of this makes the beaver easy to live with. It floods roads, it drops the ornamental tree you liked, and it does not negotiate. Where a dam threatens property, managers often fit a pond leveler, a pipe run through the dam that lowers the water quietly enough that the beaver never hears a leak to repair. That fix tells you everything. We are not persuading the animal. We are working around a rule written into it long before we arrived, and we are finally doing the math on what that rule was worth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how the beaver's incisors sharpen themselves. Cite the evidence.",
+            "The passage says the beavers piling sticks on a loudspeaker were not reasoning about hydrology. What is the author using that experiment to prove?",
+            "Identify the shift in the passage: where does it turn from admiration to loss, and how does the author signal it?",
+            "Analyze the final three sentences. What claim is the author making about people, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the iron-hardened front wears slower than the soft back; cite: every bite resharpens the chisel)",
+            "(that dam-building is an instinct triggered by a sound, not a plan, yet it produces a whole ecosystem)",
+            "(at We pulled it out; a blunt three-word sentence after a long list of benefits marks the pivot)",
+            "(that we destroyed an engineer we did not understand and are now paying to copy it; supported by the fur-trade numbers, the dam analogs, and the pond leveler)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["incisor → ____", "hydrology → ____", "water table → ____", "unsentimental → ____"],
+          "rows": 2,
+          "answers": [
+            "a front cutting tooth",
+            "the study of how water moves through land",
+            "the level below which the ground is saturated with water",
+            "based on practical value rather than feeling"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that a beaver colony works for bark. Explain what that sentence is doing and why it is placed where it is.",
+            "The pond leveler works by hiding the sound of a leak. What does that reveal about the limits of the beaver's instinct?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it compresses the cost comparison into a joke about wages; it lands right after the expensive concrete option for contrast)",
+            "(the beaver responds to a trigger rather than assessing the dam, so a silent drain goes unrepaired)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If beavers do the work of flood-control engineering for free, landowners should be required to leave them alone. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

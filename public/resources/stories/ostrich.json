@@ -1,0 +1,304 @@
+{
+  "key": "ostrich",
+  "title": "The Bird That Runs Instead of Flying",
+  "blurb": "The biggest bird on Earth gave up the sky, and got two toes, huge eyes, and a 43 mile per hour sprint instead.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird That Runs Instead of Flying",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-ostrich", "templateLabel": "The Bird That Runs Instead of Flying", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the ostrich's long legs." },
+        {
+          "kind": "image",
+          "imageKey": "ostrich",
+          "notes": ["It is the biggest bird there is", "It cannot fly at all", "It runs very fast", "It has two toes on each foot", "Its eye is bigger than its brain"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an ostrich. It is a bird. It is the biggest bird in the world. The ostrich cannot fly. It runs. It runs fast on two long legs. It has a long neck. It has big round eyes. When it runs, it holds out its wings to help it turn. The ostrich lives where the grass is dry and the sun is hot."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the eggs in each nest. Write how many in the box.",
+          "emoji": "🥚",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace each word, then say it out loud.", "text": "run    tall" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to what it does.",
+          "pairs": [
+            { "left": "ostrich", "right": "runs" },
+            { "left": "eagle", "right": "flies" },
+            { "left": "fish", "right": "swims" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own ostrich. Give it very long legs.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird That Runs Instead of Flying",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-ostrich", "templateLabel": "The Bird That Runs Instead of Flying", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "ostrich",
+          "notes": ["The biggest bird alive", "Too heavy to fly", "Runs faster than a horse", "Only bird with two toes", "Lays the biggest egg of any bird", "Lives in Africa"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Runs Instead of Flying",
+          "text": "An ostrich is a bird, but it never flies. It is too big and too heavy to lift off the ground. Instead, the ostrich runs. It can run faster than any other bird on land. Its legs are long and strong. Each foot has only two toes. No other bird has two toes. An ostrich has the biggest eyes of any animal that lives on land. Each eye is bigger than its own brain. An ostrich lays the biggest egg of any bird alive. One egg weighs about as much as two dozen chicken eggs. The shell is so thick that you have to work hard to crack it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Why can the ostrich not fly?", "How many toes are on each ostrich foot?", "What is bigger than an ostrich's brain?"],
+          "rows": 2,
+          "answers": ["it is too big and too heavy", "two toes", "its eye"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The ostrich is the biggest ____ in the world.", "It cannot fly, so it ____.", "Each foot has two ____.", "It lays the biggest ____ of any bird."],
+          "wordBank": ["bird", "runs", "toes", "egg"],
+          "answers": ["bird", "runs", "toes", "egg"]
+        },
+        { "kind": "draw", "prompt": "Draw an ostrich running across the dry grass. Add the hot sun.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird That Runs Instead of Flying",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-ostrich", "templateLabel": "The Bird That Runs Instead of Flying", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "ostrich",
+          "notes": ["Up to nine feet tall", "Runs 43 miles per hour", "One stride can cover sixteen feet", "Wings are used for steering, not flying", "Its kick can stop a lion", "Lives on the grasslands of Africa"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Gave Up Flying",
+          "text": "Long ago, the ancestors of the ostrich could fly. Somewhere along the way, their family stopped. Flying costs a huge amount of energy, and it keeps a bird small. On the wide open grasslands of Africa, there was another way to stay safe: get big, and get fast. So the ostrich got big. A grown male can stand nine feet tall and weigh more than 250 pounds, which is taller than a door and heavier than most grown men. Its wings are still there, but they are far too small to lift all that weight. Instead, the ostrich runs. It can hit 43 miles per hour, which is faster than any other bird can run and faster than most horses. A single stride can cover sixteen feet of ground. When it needs to turn, it throws out its wings like a pair of sails and swings around without slowing down. If running does not work, the ostrich has one more answer. It kicks. Its legs are strong enough, and its toe claws sharp enough, that a lion will think twice."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What two things did the ostrich get instead of flight?",
+            "What does the ostrich use its wings for?",
+            "How does the ostrich defend itself if running does not work?",
+            "Why do you think being big would make flying harder?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it got big and it got fast",
+            "steering and turning while it runs",
+            "it kicks with its strong legs and sharp toe claws",
+            "(inference: heavy bodies need much more lift and energy to get off the ground)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Bird That Gave Up Flying", "How to Look After Chickens", "The Tallest Trees in Africa"],
+          "answers": ["The Bird That Gave Up Flying"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Flying costs a huge amount of ____.", "The ostrich lives on the grasslands of ____.", "One ____ can cover sixteen feet of ground."],
+          "wordBank": ["energy", "Africa", "stride"],
+          "answers": ["energy", "Africa", "stride"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather be able to fly or be able to run 43 miles per hour, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird That Runs Instead of Flying",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-ostrich", "templateLabel": "The Bird That Runs Instead of Flying", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ostrich",
+          "notes": ["It does not bury its head in the sand", "The nest is a shallow pit in the dirt", "Parents turn the eggs with their beaks", "A scared ostrich lies flat and stretches its neck out", "Its eye is about two inches across", "Pliny the Elder started the myth 2,000 years ago"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Everything You Heard About the Ostrich Is Probably Wrong",
+          "text": "You have probably heard that an ostrich buries its head in the sand when it is scared. It does not. It never has. No one has ever filmed it, because it does not happen. The idea is old. Almost two thousand years ago, a Roman writer named Pliny the Elder claimed that ostriches think their whole body is hidden when they push their head into a bush. He was wrong, but he was widely read, and the picture stuck. It has outlasted the empire that produced it. The story does have a real animal behind it, though. An ostrich nest is not a basket in a tree. It is a shallow pit scraped into the dirt. Several times a day a parent leans down, pushes its beak into the pit, and turns the eggs so they warm evenly. From a distance, across shimmering heat, a bird with its head down in a hole looks exactly like a bird with its head in the sand. There is a second habit that feeds the myth. An ostrich that has been spotted by something dangerous will sometimes drop flat to the ground and stretch its neck straight out along the dirt. Its head and neck are a dusty pink and its body is a low gray lump. Lying still, it stops looking like a nine foot bird and starts looking like a mound of earth. So the ostrich is not hiding from danger by refusing to see it. It is doing the opposite. Those enormous eyes, the largest of any animal on land, are watching the whole time, waiting for the moment to stand up and run."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Name the two real ostrich behaviors that people mistake for head burying.",
+            "Why does the author mention Pliny the Elder?",
+            "Explain why lying flat on the dirt actually works as a way to stay safe.",
+            "The author writes that the ostrich is doing the opposite. The opposite of what? Explain what that sentence means."
+          ],
+          "rows": 2,
+          "answers": [
+            "turning the eggs in a pit with its beak, and lying flat with its neck stretched out",
+            "(to show the myth is ancient and spread because he was widely read)",
+            "(its dusty colors blend with the ground, so a flat still bird reads as a mound of earth)",
+            "(the opposite of hiding from danger by not looking; it keeps watching and gets ready to run)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A famous myth about ostriches is false, and the real behaviors behind it are smarter than the myth",
+            "Ostriches are the only birds that live in Africa",
+            "Roman writers were usually correct about animals"
+          ],
+          "answers": ["A famous myth about ostriches is false, and the real behaviors behind it are smarter than the myth"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["myth → ____", "shimmering → ____", "outlasted → ____"],
+          "rows": 1,
+          "answers": ["a widely believed story that is not true", "wavering or rippling, the way hot air looks", "lasted longer than something else"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a false story about an animal can survive for two thousand years. Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird That Runs Instead of Flying",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-ostrich", "templateLabel": "The Bird That Runs Instead of Flying", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ostrich",
+          "notes": ["Struthio camelus, the camel bird", "Eye about two inches across, larger than its brain", "Two toes: no other bird has fewer than three", "Swallows stones to grind food in its gizzard", "Shared nest: several females lay in one pit", "Female sits by day, male sits by night"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built for the Open Ground",
+          "text": "Every part of an ostrich is an answer to the same question: how do you survive on flat, open ground where there is nowhere to hide? Start with the eyes. An ostrich eye is about two inches across, the largest of any animal that lives on land, and it sits on a neck that can hold it seven feet above the grass. That combination turns the bird into a watchtower. It spots a predator crossing the plain long before the predator is close enough to matter. The eye is so large that it is bigger than the ostrich's own brain, a fact people love to repeat as an insult. It is not an insult. It is a trade. Out on the savanna, seeing early is worth more than thinking hard. Next, the legs. An ostrich foot has two toes, and no other bird on Earth has fewer than three. One toe is broad and carries a thick claw. The other is smaller and steadies the bird as it turns. Fewer toes means less foot slapping the ground, and less foot means a longer, cheaper stride. The result is a bird that can reach 43 miles per hour and hold about 30 for half an hour without stopping. Almost nothing that hunts it can do that twice. Then the stomach. Ostriches have no teeth, so they swallow stones. The stones collect in a muscular pouch called the gizzard, where they grind up tough grass, seeds, and leaves. An adult may carry two pounds of gravel inside it at all times, which sounds absurd until you remember that it is doing the job your molars do. Even the nest is built for open country. Ostriches share one. A dominant female scrapes a pit in the dirt and lays her eggs, and other females add theirs around the edge. She keeps her own in the warm center and lets the outer eggs take the risk. Then the parents split the shift. The female, dusty brown and gray, sits through the day and vanishes against the dry ground. The male, black with white wings, sits through the night and vanishes against the dark. Nothing here is an accident. A bird this size cannot hide, so it watches, runs, eats anything, and hands the odds to somebody else's eggs."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The author says the eye being bigger than the brain is not an insult. What does the author call it instead, and what does that mean?",
+            "Explain how the two toed foot helps the ostrich run. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "How does the shared nest protect the dominant female's eggs? Use evidence from the text."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering eyes, legs, gizzard, and the shared nest as survival answers)",
+            "a trade; (seeing danger early matters more on open ground than a large brain would)",
+            "(fewer toes means a longer, faster stride; quote: less foot means a longer, cheaper stride)",
+            "(inform, with detail: it explains anatomy and gives measurements, though the tone is playful)",
+            "(she keeps her own eggs in the warm center and the other females' eggs sit on the risky edge)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["gizzard → ____", "dominant → ____", "absurd → ____", "predator → ____"],
+          "rows": 1,
+          "answers": ["a muscular pouch that grinds food with swallowed stones", "highest ranking, the one others give way to", "so unreasonable it seems ridiculous", "an animal that hunts and eats other animals"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage opens with a question and then answers it four times. Why might an author build a piece that way?",
+            "Why would a bird that lives in tall forest never evolve an ostrich's body?"
+          ],
+          "rows": 3,
+          "answers": ["(it keeps every fact tied to one idea and lets the reader see the pattern)", "(inference: trees block long sightlines and long sprints, so size and speed would not pay off)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was giving up flight a good deal for the ostrich? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird That Runs Instead of Flying",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-ostrich", "templateLabel": "The Bird That Runs Instead of Flying", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ostrich",
+          "notes": ["Struthio camelus, the largest living bird", "Its feathers lack the hooks that make flight feathers stiff", "Ostrich farming began in South Africa in the 1860s", "By 1913 feathers were among South Africa's largest exports", "The feather palaces of Oudtshoorn still stand", "The market collapsed in 1914 and never returned"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever Grounded: The Feather That Built a Town",
+          "text": "A flight feather is a machine. A stiff central shaft runs down the middle, and off it branch hundreds of barbs. Each barb carries rows of tiny barbules, and the barbules carry microscopic hooks that latch onto the barbules of the neighboring barb. Zipped together, the whole surface locks into a smooth, taut vane that can shove against air without letting it through. That vane is the reason birds own the sky. The ostrich threw the machine away. Once its ancestors stopped flying, there was no longer any pressure to maintain the hooks, and evolution does not pay for tools nobody uses. The barbules of an ostrich feather have no working hooks. The barbs never zip. They hang loose and separate from the shaft, and the feather droops into a soft, weightless plume that could not push air if the bird's life depended on it. For flying, it is junk. For being looked at, it is perfect. The males use their black and white plumes in a courtship display, dropping to the ground and rocking their wings from side to side like someone shaking out a rug. A feather that has stopped flying is free to become beautiful. Then people noticed. In the second half of the nineteenth century, European and American fashion decided that a woman's hat was not finished without ostrich plumes, and the bigger the better. The demand was enormous, and the supply was a wild bird in Africa. So farmers built an industry around it. In the Little Karoo, in a dry valley town called Oudtshoorn, ostrich farming turned into a boom. Farmers who had been scratching a living out of hard ground suddenly held a crop that grew back every eight months and sold by weight. They built enormous sandstone houses with turrets and imported tiles and stained glass. People called them feather palaces, and the name was not entirely kind. By 1913, ostrich feathers were among South Africa's largest exports, sitting on the same list as gold, diamonds, and wool. Then it ended, and it ended fast. In 1914 the war closed the shipping lanes that carried feathers to London and New York. At the same time, fashion moved on. Motor cars were open at the top, and a hat crowned with two feet of plume did not survive a drive at speed. Hair went short. Hats went small. Within months the price of a feather fell by more than ninety percent and it never recovered. Farmers who had been wealthy in the spring were ruined by the autumn. The birds were turned loose or sold for almost nothing. The feather palaces of Oudtshoorn are still standing today, most of them restored, some of them museums, all of them monuments to a fortune that evaporated in a single season. Here is what is worth noticing. The feather was valuable for exactly the reason it was useless. The hooks failed, the vane fell apart, and that ruined plume happened to match what a few thousand people in distant cities wanted to wear on their heads. The bird did not change. The feather did not change. The fashion changed, and an entire economy went with it. The ostrich had already learned that lesson long before Oudtshoorn did: nothing keeps a thing it has no use for."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain in your own words why an ostrich feather is soft and droopy. Cite the evidence.",
+            "The author writes that the feather was valuable for exactly the reason it was useless. Explain that claim.",
+            "Identify where the passage turns from biology to human history, and explain how the author signals the shift.",
+            "Analyze the final sentence. What is the author doing by putting the bird and the town side by side, and does the passage earn that comparison?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(its barbules lost their hooks so the barbs cannot zip together; cite: evolution does not pay for tools nobody uses)",
+            "(the plume was worthless for flight but that same loose softness is what made it fashionable)",
+            "(at Then people noticed; a short blunt sentence pivots from anatomy to the feather trade)",
+            "(it links losing an unused trait to an economy losing an unneeded luxury; supported by the hooks going first and the market going second)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["barbule → ____", "vane → ____", "courtship → ____", "evaporated → ____"],
+          "rows": 2,
+          "answers": [
+            "a tiny branch off a feather barb that carries the hooks",
+            "the flat locked surface of a feather that pushes against air",
+            "behavior an animal uses to attract a mate",
+            "disappeared quickly and completely, as if into thin air"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the name feather palaces was not entirely kind. Explain what the author is implying.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(it hints the houses were showy and built on money that was never secure)", "(student question + a credible source type, such as an economic history of the Karoo)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The Oudtshoorn farmers should have seen the collapse coming. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

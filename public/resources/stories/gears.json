@@ -1,0 +1,319 @@
+{
+  "key": "gears",
+  "title": "The Wheel That Grew Teeth",
+  "blurb": "Wheels with teeth that grab each other, trade speed for muscle, and quietly run almost every machine you own.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Wheel That Grew Teeth",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-gears", "templateLabel": "The Wheel That Grew Teeth", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the teeth on the wheels." },
+        {
+          "kind": "image",
+          "imageKey": "gears",
+          "notes": ["A gear is a wheel with teeth", "The teeth hold on to each other", "One gear turns the next one", "Gears live inside clocks and bikes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a gear. A gear is a wheel with teeth. The teeth are little bumps around the edge. Two gears push their teeth together. Now turn one gear. The other one has to turn too. One goes this way. The other goes that way. Gears turn inside clocks. Gears turn inside bikes. Turn one gear and the whole machine wakes up."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the teeth on each gear. Write how many in the box.",
+          "emoji": "⚙️",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "gear    turn" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "gear", "right": "a wheel with teeth" },
+            { "left": "clock", "right": "tells the time" },
+            { "left": "bike", "right": "you push the pedals" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw two gears. Give them big teeth that hold on to each other.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Wheel That Grew Teeth",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-gears", "templateLabel": "The Wheel That Grew Teeth", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "gears",
+          "notes": ["The teeth fit into the gaps", "Two gears turn opposite ways", "A little gear spins faster", "A big gear pushes harder", "Old gear teeth were made of wood"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Gears, One Job",
+          "text": "Put two gears together so their teeth fit into the gaps. Now turn one of them. The other one has to turn too. It cannot help it. Watch which way they go. One turns to the right. The other turns to the left. Gears always turn opposite ways. Now try a big gear and a little gear. Turn the big one around one time. The little one spins around and around. It has fewer teeth, so it has to run faster to keep up. That is the whole trick. Gears pass the turning along, and they can change how fast it goes."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a gear?", "Which way does the second gear turn?", "Which gear spins faster, the big one or the little one?"],
+          "rows": 2,
+          "answers": ["a wheel with teeth", "the opposite way", "the little one"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A gear is a wheel with ____.", "The teeth fit into the ____.", "Two gears turn ____ ways.", "The little gear has fewer teeth, so it spins ____."],
+          "wordBank": ["teeth", "gaps", "opposite", "faster"],
+          "answers": ["teeth", "gaps", "opposite", "faster"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each machine to the job its gears do.",
+          "pairs": [
+            { "left": "clock", "right": "moves the hands slowly" },
+            { "left": "bike", "right": "helps you climb a hill" },
+            { "left": "egg beater", "right": "spins the blades fast" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a machine with gears inside it. Show where the gears go.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Wheel That Grew Teeth",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-gears", "templateLabel": "The Wheel That Grew Teeth", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "gears",
+          "notes": ["Teeth that lock together are called meshed", "Count the teeth and you can predict the speed", "Gears trade speed for pushing force", "A gear never makes extra energy", "Low gear on a bike makes hills easier"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Trading Speed for Muscle",
+          "text": "A gear is a wheel with teeth cut around its edge. Two gears only work as a pair when their teeth mesh, which means the teeth of one slot neatly into the gaps of the other. Once they mesh, neither wheel can turn without the other. Count the teeth and you can predict what will happen. Say a small gear has ten teeth and a large gear has thirty. Turn the large gear around once and the small gear must spin three times, because thirty teeth have to go somewhere. The small gear is faster. It is also weaker. Gears never make extra energy. They only trade. Speed for force, or force for speed, and you always give up one to get the other. This is why a bike has gears. At the bottom of a steep hill you shift into a low gear. Your legs turn easily now, but the bike creeps forward slowly. You traded distance for pushing force, and the hill is exactly where you want that deal."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does it mean when two gears mesh?",
+            "If a thirty tooth gear turns once, how many times does a ten tooth gear spin?",
+            "What do gears trade?",
+            "Why do you think a bike rider shifts back into a high gear once the hill is finished?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the teeth of one fit into the gaps of the other",
+            "three times",
+            "speed for force, or force for speed",
+            "(inference: on flat ground they want distance and speed, not extra pushing force)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Trading Speed for Muscle", "How to Fix a Flat Tire", "The Tallest Hill in the World"],
+          "answers": ["Trading Speed for Muscle"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Teeth that slot into each other are said to ____.", "Count the ____ and you can predict what will happen.", "At the bottom of a hill you shift into a ____ gear."],
+          "wordBank": ["mesh", "teeth", "low"],
+          "answers": ["mesh", "teeth", "low"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: name a machine in your house that has gears inside, and explain what job you think those gears do.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Wheel That Grew Teeth",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-gears", "templateLabel": "The Wheel That Grew Teeth", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "gears",
+          "notes": ["Torque is the twisting force gears move around", "Tooth counts set the gear ratio", "Bevel gears send power around a corner", "A worm gear will not be pushed backward", "The hour hand is geared twelve to one behind the minute hand", "Cog is an old word for a wooden tooth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Does Math With Metal",
+          "text": "Open an old wind up clock and you will find gears doing arithmetic. A spring supplies the power, but the gears decide what that power means. Here is how the math works. Because gears mesh tooth to tooth, no tooth can be skipped and no wheel can slip. A wheel with sixty teeth driving a wheel with six forces the small wheel around ten times for every single turn of the large one. Flip the pair around and you get the opposite deal: ten slow turns in, one turn out, but carrying ten times the twisting force. That twisting force has a name. Engineers call it torque, and gears are the oldest machine we have for moving torque from where it is made to where it is needed. A clock uses this to slice a day into pieces. The escapement, the part that ticks, lets the gear train forward in tiny even steps. From there a chain of gears slows the motion again and again until the minute hand crawls around once an hour, and the hour hand, geared twelve to one behind it, crawls around once every twelve. Nothing inside the clock knows what an hour is. The tooth counts know. Somebody chose sixty and twelve, cut those numbers into brass, and the meaning came out the other side. Gears can also turn corners. Bevel gears are cut on a slant so a shaft spinning flat can drive a shaft standing upright, which is how power from a car engine reaches wheels facing the wrong way. A worm gear, which is a screw biting into a toothed wheel, gives an enormous slowdown in a small package and refuses to be shoved backward. Each one is the same idea wearing a different shape: teeth counting teeth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is torque, in your own words?",
+            "The passage says nothing inside the clock knows what an hour is. Explain what it means by that.",
+            "Why would an engineer choose a bevel gear instead of a plain flat one?",
+            "A worm gear refuses to be shoved backward. Where might that be a useful safety feature?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(the twisting or turning force that gears move around)",
+            "(the tooth counts do the dividing; the meaning comes from the numbers a person chose, not from the clock)",
+            "(to send the turning around a corner, from a flat shaft to an upright one)",
+            "(inference: a lift, a winch, or a gate, where a load must not slide back down)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Gears turn tooth counts into arithmetic, trading speed for torque and shaping how a machine behaves",
+            "Wind up clocks are more accurate than every modern watch",
+            "Car engines were invented before the first clock"
+          ],
+          "answers": ["Gears turn tooth counts into arithmetic, trading speed for torque and shaping how a machine behaves"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["mesh → ____", "torque → ____", "escapement → ____"],
+          "rows": 1,
+          "answers": ["teeth fitting into each other so neither wheel can slip", "twisting force", "the ticking part that lets the gear train forward in even steps"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: a friend says gears give you free power because a small gear makes a big wheel turn. Explain why that is wrong, and what is really happening.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Wheel That Grew Teeth",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-gears", "templateLabel": "The Wheel That Grew Teeth", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "gears",
+          "notes": ["Issus coleoptratus: a planthopper with real gears", "Found by Burrows and Sutton, Cambridge, 2013", "About ten to twelve teeth per leg strip", "The gears sync the legs in about 30 millionths of a second", "Only the young have them; adults lose them", "A broken tooth cannot be repaired after the last molt"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Nature Got There First",
+          "text": "People have been cutting teeth into wheels for over two thousand years, and for almost all of that time we assumed the idea was ours. Wood, brass, steel, plastic. Every version traced back to some human deciding that a wheel would grip better if you carved notches around it. Then, in 2013, two researchers at the University of Cambridge, Malcolm Burrows and Gregory Sutton, put a young planthopper under a microscope and found that an insect had beaten us to it. The insect is Issus coleoptratus, a few millimeters long, common on ivy, entirely unremarkable to look at. Its problem is its jump. A planthopper nymph launches itself by driving both hind legs down at once, and the whole event is over in roughly two thousandths of a second. That speed creates a brutal engineering demand. If one leg fired even slightly before the other, the insect would spin off sideways and land nowhere useful. Nerve signals are far too slow and far too sloppy to coordinate anything on that timescale. So the legs do not ask the brain. At the top of each hind leg, where it joins the body, sits a curved strip of ten to twelve teeth. The two strips face each other across the midline and mesh, exactly the way two brass gears mesh. Once they are engaged, neither leg can move without the other. When the nymph fires, the gears force the two legs to release within about thirty millionths of a second of each other. The coordination is not a decision. It is a mechanical fact, built into the body. The strangest detail comes last. Adult Issus have no gears at all. The insect sheds them at its final molt and switches to a rougher system, gripping the legs together by friction instead. Burrows and Sutton suspect a simple reason. Gear teeth break, and a growing nymph molts often enough to replace a damaged set. An adult never molts again. A broken tooth would be permanent, and a permanently crooked jump is worse than a slightly sloppy one. So the insect uses the better mechanism only while it can still afford to repair it. We did not invent the gear. We reinvented it, in metal, tens of millions of years late, and we still have not built one that grows back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why can the planthopper's nervous system not coordinate the jump? Quote the phrase the passage uses.",
+            "Explain why adult Issus lose their gears, according to the researchers.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the author doing in the final sentence, and why place it there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentence summary covering the jump problem + the meshing leg gears + adults losing them)",
+            "the jump is over in about two thousandths of a second; quote: far too slow and far too sloppy",
+            "gear teeth break, and an adult never molts again, so damage would be permanent",
+            "(inform, with detail: it defines terms and reports named research; the closing line leans persuasive)",
+            "(it deflates human pride and lands the point that nature solved it first and better)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["nymph → ____", "mesh → ____", "molt → ____", "coordinate → ____"],
+          "rows": 1,
+          "answers": ["a young insect that has not reached adult form", "to lock teeth together so neither part can move alone", "to shed the outer skin and grow a new one", "to make two things act together at the right moment"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the coordination is not a decision, it is a mechanical fact. Explain the difference and why it matters here.",
+            "Why might building the answer into the body be better than solving it with a brain?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(a decision takes signalling time and can vary; the gears make the outcome automatic and identical every jump)",
+            "(inference: mechanics are faster, use no thinking time, and cannot make a timing mistake)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: engineers often copy solutions from nature. Is that the smartest way to design a machine, or does it limit what we invent? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Wheel That Grew Teeth",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-gears", "templateLabel": "The Wheel That Grew Teeth", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "gears",
+          "notes": ["A gear ratio is a fraction cut into metal", "Antikythera mechanism: a Greek geared calculator", "Wreck found by sponge divers, 1900", "At least 30 bronze gears survive; likely about 37", "Metonic cycle: 19 years is almost exactly 235 lunar months", "Saros cycle: eclipses repeat every 223 months", "A pin and slot models the moon's uneven speed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Thinking in Fractions, Out of Bronze",
+          "text": "A gear is not really a wheel. It is a fraction, made solid. When two gears mesh, their teeth cannot slip past one another, so the relationship between them is settled by counting alone. A wheel of forty teeth driving a wheel of ten cannot do anything except turn it four times. Not approximately four. Exactly four, every time, until the metal wears away. That is what separates gears from belts, ropes, and gravity. A gear train does not measure a ratio. It is the ratio. Whatever fraction you can write out of tooth counts, you can cut into metal, and once cut it will repeat that fraction forever without being told, without thinking, without drifting. Ancient astronomers had noticed that the sky is also built out of fractions. The moon returns to the same phase every 29.53 days. Nineteen years hold almost exactly 235 of those months, a coincidence the Greeks called the Metonic cycle. Eclipses repeat on a rhythm of 223 months, known as the Saros. These are not tidy numbers. They are the sort of ratios that take generations of patient watching to find and a scribe's entire career to tabulate. And then somebody understood that a fraction you can write down is a fraction you can cut into bronze. In 1900, sponge divers sheltering from a storm near the Greek island of Antikythera found a Roman era shipwreck loaded with statues. The mechanism came up the following year as a corroded green lump, and in 1902 an archaeologist named Valerios Stais noticed that a gear wheel was embedded in it. Nobody could explain the thing. The ship had gone down around 60 BC, and nothing else remotely like it was known from the ancient world, or from the thousand years that followed. It took a century, and eventually X ray tomography, to read what was inside. The Antikythera mechanism holds at least thirty surviving bronze gears, and reconstructions call for around thirty seven. Turn its handle and pointers cross the front dial showing the sun and the moon against the zodiac, while a small ball rotates from black to white to give the phase. On the back, two spiral dials unwind: one of 235 cells for the Metonic cycle, one of 223 for the Saros, so the machine names the months in which eclipses should fall. A smaller dial tracked the four year cycle of the games, the Olympics among them. The finest part is smaller than a coin. The moon does not travel at an even speed. It hurries and it dawdles along its orbit. The builder solved that with a pin on one gear riding inside a slot on another, the two mounted slightly off center from each other, so the second gear is dragged around faster and then slower as the pin swings wide and close. It is a mechanical account of a wobble in the sky, made by someone who had no theory of gravity and did not need one. He had the numbers, and the numbers were enough. Nothing of this complexity shows up again in anything that survived until the astronomical clocks of medieval Europe, more than a thousand years later. That gap is probably an accident of what rusted and what did not, rather than proof the knowledge died, though we cannot know. What we do know is that a device on that ship could name the month of an eclipse decades before it happened, and it did it with nothing but teeth counting teeth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage claims a gear train does not measure a ratio. Explain what it says instead, and cite the exact wording.",
+            "Why does the author spend a paragraph on the Metonic and Saros cycles before mentioning the shipwreck at all?",
+            "Identify the shift in the passage: where does it move from explanation to history, and how does the author signal it?",
+            "Analyze the sentence He had the numbers, and the numbers were enough. What claim is the author making about ancient science, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one sentence summary)",
+            "(it is the ratio rather than measuring one; cite: It is the ratio)",
+            "(to establish that the sky repeats in fractions, so the reader already sees why gears could model it)",
+            "(at the 1900 sponge divers sentence; the author switches to a dated narrative after building the principle)",
+            "(that prediction did not require theory, only accurate ratios; supported by the pin and slot modeling the moon without gravity)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["gear train → ____", "tabulate → ____", "tomography → ____", "reconstruction → ____"],
+          "rows": 2,
+          "answers": [
+            "a connected series of meshed gears that carries a ratio",
+            "to arrange observations into an ordered table of numbers",
+            "imaging that reveals the inside of an object in slices, without opening it",
+            "a scholar's rebuilt model of what a damaged original once was"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the thousand year gap is probably an accident of what rusted and what did not. Explain why a historian should be careful about that kind of claim.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(absence of evidence is not evidence of absence, but neither is it proof of a lost tradition; the claim is untestable from surviving objects alone)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The Antikythera mechanism proves the ancient Greeks understood the solar system better than we give them credit for. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

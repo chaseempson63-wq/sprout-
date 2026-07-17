@@ -1,0 +1,320 @@
+{
+  "key": "earth-layers",
+  "title": "The Hot Heart Under Your Feet",
+  "blurb": "Straight down from your shoes is a ball of iron as hot as the surface of the sun, and nobody has ever seen it.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Hot Heart Under Your Feet",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-earth-layers", "templateLabel": "The Hot Heart Under Your Feet", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the middle of the Earth. Put your finger on it." },
+        {
+          "kind": "image",
+          "imageKey": "earth-layers",
+          "notes": ["The top layer is called the crust", "We walk on the crust", "The middle is a ball of iron", "The middle is very, very hot", "Nobody has ever been down there"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Stamp your feet. Under your feet is the ground. Under the ground is rock. Under that rock is more rock, and it is warm. Go down and down and down. In the middle of the Earth is a big ball of iron. It glows. It is hotter than any fire you have ever seen. But you are safe. You are way up here, standing on the cool ground in your shoes."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the rocks in each row. Write how many in the box.",
+          "emoji": "🪨",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "rock    hot" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "the middle of the Earth", "right": "hot" },
+            { "left": "the ground under your shoes", "right": "cool" },
+            { "left": "the sky above you", "right": "clouds" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the Earth. Put a big glowing ball right in the middle.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Hot Heart Under Your Feet",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-earth-layers", "templateLabel": "The Hot Heart Under Your Feet", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "earth-layers",
+          "notes": ["The Earth has layers, like a peach", "The crust is the thin skin on top", "The mantle is hot rock that creeps", "The core is a ball of iron", "The outside of the core is melted"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Earth Is Like a Peach",
+          "text": "Cut a peach in half. It has thin skin on the outside. It has soft fruit in the middle. It has a hard pit right in the center. The Earth has layers like that. The top layer is the crust. The crust is the rock we walk on, and it is thin. Under the crust is the mantle. The mantle is hot rock. It moves, but it moves so slowly that you could never see it. Under the mantle is the core. The core is made of iron. The outside of the core is melted, like hot soup. The inside is a hard ball. It is the hottest place on Earth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the top layer of the Earth called?", "What is the mantle made of?", "What is the core made of?"],
+          "rows": 2,
+          "answers": ["the crust", "hot rock", "iron"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["We walk on the ____.", "The mantle is made of hot ____.", "The core is made of ____.", "The outside of the core is ____."],
+          "wordBank": ["crust", "rock", "iron", "melted"],
+          "answers": ["crust", "rock", "iron", "melted"]
+        },
+        { "kind": "draw", "prompt": "Draw the Earth cut in half. Show the crust, the mantle, and the core. Label each one.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Hot Heart Under Your Feet",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-earth-layers", "templateLabel": "The Hot Heart Under Your Feet", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "earth-layers",
+          "notes": ["Four layers: crust, mantle, outer core, inner core", "The crust is thinner than an eggshell, in proportion", "The mantle creeps about as fast as your fingernails grow", "The inner core is about as hot as the surface of the sun", "The deepest hole ever drilled went only 7.6 miles down"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Four Layers Down",
+          "text": "The ground feels solid. It feels like it goes down forever. It does not. The rock you are standing on is a thin shell called the crust, and the Earth has three more layers under it. Under the crust is the mantle, and the mantle is enormous. It is hot rock, and it is not quite liquid and not quite still. It creeps. In a whole year, mantle rock might move as far as your fingernails grow. Under the mantle is the outer core. Here the iron is so hot that it has melted into a churning ocean of liquid metal. Right in the center is the inner core, another ball of iron. It is the hottest part of the Earth, about as hot as the surface of the sun. But it is not melted. It is squeezed so hard by everything above it that it stays solid. Nobody has ever been down there. The deepest hole people have ever drilled did not even get through the crust. It went about 7.6 miles down, and then the rock got too hot for the drill."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name the four layers of the Earth in order, starting at the top.",
+            "How fast does mantle rock move?",
+            "Why does the inner core stay solid even though it is so hot?",
+            "Why do you think nobody has ever drilled all the way to the core?"
+          ],
+          "rows": 2,
+          "answers": [
+            "crust, mantle, outer core, inner core",
+            "about as fast as your fingernails grow",
+            "it is squeezed so hard by the layers above it",
+            "(inference: it is far too deep and the rock gets too hot for a drill)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Four Layers Down", "How to Dig a Garden", "The Tallest Mountain in the World"],
+          "answers": ["Four Layers Down"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The thin shell of rock on top is the ____.", "The huge layer of creeping hot rock is the ____.", "The iron in the outer core has ____.", "The inner core stays ____ because it is squeezed so hard."],
+          "wordBank": ["crust", "mantle", "melted", "solid"],
+          "answers": ["crust", "mantle", "melted", "solid"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which layer of the Earth surprised you most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Hot Heart Under Your Feet",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-earth-layers", "templateLabel": "The Hot Heart Under Your Feet", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "earth-layers",
+          "notes": ["It is about 3,959 miles from the ground to the center", "The mantle is about 84 percent of the Earth's volume", "The deepest hole ever drilled: 7.6 miles, in Russia", "That hole reached less than one fifth of one percent of the way down", "The inner core is roughly 9,400 degrees Fahrenheit", "We map the layers with earthquake waves, not drills"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Deepest Hole We Ever Dug",
+          "text": "From your shoes to the center of the Earth is about 3,959 miles. That is a long drive, and you would be driving through solid rock. So here is a fair question: if nobody has ever gone down there, how does anyone know what is down there at all? People did try digging. In 1970, scientists in the far north of Russia started drilling a hole for one reason only: to see how deep they could get. They kept at it for about twenty years. The Kola Superdeep Borehole finally reached 7.6 miles, which made it the deepest hole humans have ever made. Then they stopped, because the rock down there had turned out to be far hotter than anyone predicted, around 356 degrees Fahrenheit, and at that temperature the rock behaved less like stone and more like soft plastic. It kept squeezing the hole shut. Here is the humbling part. After twenty years of the hardest drilling ever attempted, that hole had traveled less than one fifth of one percent of the way to the center. It never even got through the crust. So drilling was never going to be the answer. What worked instead was listening. Every earthquake sends waves racing through the whole planet, and those waves bend, slow down, speed up, and bounce depending on what they pass through. Scientists set up instruments all over the world and read the waves as they arrive. The Earth rings, and we listen to the echo, and from that echo we draw the layers we will never see."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did the drillers stop at 7.6 miles?",
+            "The passage calls the result humbling. Explain why that word fits.",
+            "In your own words, explain how earthquake waves tell us what is inside the Earth.",
+            "Why is listening a better method than drilling for studying the deep Earth?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the rock was much hotter than expected and acted like soft plastic, squeezing the hole shut",
+            "twenty years of record drilling covered less than one fifth of one percent of the distance and never left the crust",
+            "(waves from earthquakes bend, slow, speed up, and bounce as they pass through different layers, and instruments read those changes)",
+            "(inference: waves reach the whole planet for free, while drills cannot survive the heat or the distance)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "We cannot dig to the Earth's interior, so we map it by reading earthquake waves instead",
+            "Russia has the best drilling equipment in the world",
+            "Earthquakes are caused by people drilling deep holes"
+          ],
+          "answers": ["We cannot dig to the Earth's interior, so we map it by reading earthquake waves instead"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["borehole → ____", "predicted → ____", "humbling → ____", "instruments → ____"],
+          "rows": 1,
+          "answers": [
+            "a narrow hole drilled down into the ground",
+            "said in advance what would happen",
+            "making you feel small or less proud",
+            "tools that measure something, here the arriving waves"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: was the Kola Superdeep Borehole worth twenty years of work, even though it failed to reach the mantle? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Hot Heart Under Your Feet",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-earth-layers", "templateLabel": "The Hot Heart Under Your Feet", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "earth-layers",
+          "notes": ["P waves travel through solids and liquids; S waves only through solids", "Richard Oldham, 1906: the core is liquid", "Inge Lehmann, 1936: there is a solid core inside the liquid one", "The S wave shadow zone covers about a third of the planet", "Outer core: about 1,400 miles of churning liquid iron", "Inner core: a solid iron ball about 760 miles across"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Woman Who Found the Inner Core",
+          "text": "Nobody has ever seen inside the Earth. Everything we claim to know about the crust, the mantle, and the core was worked out from waves, and the waves came from earthquakes. Earthquakes release two useful kinds of wave. P waves push and pull the rock in the direction they travel, and they can move through anything, solid or liquid. S waves shake the rock sideways, and sideways shaking only works if the material can hold its shape. S waves travel through solids. They stop dead at liquid. In 1906, a British geologist named Richard Oldham noticed something strange in the records. After a large earthquake, there was a huge region on the far side of the planet where no S waves arrived at all. Instruments there sat quiet while stations elsewhere recorded the shaking. That silent region is now called the shadow zone, and it covers roughly a third of the globe. Oldham drew the only conclusion the evidence allowed. Something in the middle of the Earth was liquid, and it was swallowing the S waves. The Earth had a molten core. Thirty years later, a Danish seismologist named Inge Lehmann went back to the same shadow zone and found a flaw in the story. Faint P waves were arriving inside the zone, where the simple liquid core model said nothing should arrive. Lehmann worked through the arrival times by hand, with no computers, and proposed that the waves were bouncing off something. Inside the liquid outer core, she argued, sat a second core, and that one was solid. In 1936 she published the idea in a paper with one of the shortest titles in science: P'. She was right. The inner core is a ball of iron roughly 760 miles across, hotter than melted iron has any business being, kept solid by the crushing weight of three thousand miles of planet pressing down on it. Lehmann worked as a seismologist until she was past ninety. She never saw the thing she discovered. No one has. We know it is there because a wave came back when it should not have."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the difference between P waves and S waves, and why that difference matters here.",
+            "What is the shadow zone, and what did Oldham conclude from it? Quote the phrase the passage uses for his reasoning.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end with the line about a wave coming back when it should not have?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering seismic waves, the shadow zone, Oldham's liquid core, and Lehmann's solid inner core)",
+            "P waves push and pull and pass through solids and liquids; S waves shake sideways and stop at liquid, so missing S waves reveal liquid inside the Earth",
+            "a region on the far side of the planet where no S waves arrive; quote: the only conclusion the evidence allowed",
+            "(inform, told as a story: it defines the wave types and dates the discoveries, but uses narrative and character to hold attention)",
+            "(it restates the whole method in one line: the interior is known only through indirect evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["seismologist → ____", "molten → ____", "shadow zone → ____", "flaw → ____"],
+          "rows": 1,
+          "answers": [
+            "a scientist who studies earthquakes and the waves they make",
+            "melted by heat into a liquid",
+            "the region where expected waves fail to arrive",
+            "a weak point or mistake in something"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Lehmann's evidence was a wave arriving where nothing was supposed to arrive. Explain why a scientist should take that kind of small oddity seriously.",
+            "The passage says the inner core is kept solid by pressure. Explain in your own words how something can be hotter than melting point and still be solid."
+          ],
+          "rows": 3,
+          "answers": [
+            "(an observation that a model cannot explain is exactly where the model is wrong, so it points at what is missing)",
+            "(inference: pressure squeezes the atoms so tightly that they cannot break away and flow, so the iron stays locked in place)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: can we say we truly know something we have never seen and never will see? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Hot Heart Under Your Feet",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-earth-layers", "templateLabel": "The Hot Heart Under Your Feet", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "earth-layers",
+          "notes": ["Radius to the center: about 3,959 miles", "Continental crust: roughly 25 miles thick; ocean crust: about 4", "Mantle: about 1,800 miles of creeping solid rock", "Outer core: liquid iron and nickel, the source of the magnetic field", "Inner core: solid iron, near 9,400 degrees Fahrenheit", "The inner core grows about a millimeter a year as the outer core freezes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Engine We Have Never Seen",
+          "text": "Consider how little of your own planet you have access to. From the soles of your shoes to the center of the Earth is about 3,959 miles. The deepest hole ever drilled reached 7.6 miles, and it took two decades of the most determined engineering anyone has attempted. That hole did not reach the mantle. It did not come close. Everything below the first few miles of rock is, in the most literal sense, unvisited. And yet we can describe it in detail, and the description is not a guess. The Earth is built in four layers, and they are less like the stripes on a diagram and more like a system doing work. The crust is the thin cold skin we live on, roughly 25 miles thick under the continents and only about 4 miles thick under the oceans. Beneath it lies the mantle, about 1,800 miles of rock that is technically solid and yet flows. Over millions of years, hot mantle rock rises, cools, and sinks in slow loops, and those loops drag the plates of the crust around with them. Continents move because the mantle is stirring. Beneath the mantle the material changes entirely. The outer core is liquid iron and nickel, a churning metal ocean about 1,400 miles deep. At the very center sits the inner core, a solid iron ball roughly 760 miles across at close to 9,400 degrees Fahrenheit, which is about the temperature of the surface of the sun. That should be far too hot to be solid, and it would be, at the surface. Down there the weight of the entire planet presses in from every direction, and the pressure locks the atoms in place. Heat wants to melt it; pressure will not let it. Now put those last two layers together, because they are the reason the surface is habitable. As the Earth slowly loses heat, the inner core grows, freezing outward by about a millimeter a year. That freezing stirs the liquid iron above it, and the planet's rotation twists the stirring into spirals. Moving liquid metal generates electric current, and electric current generates a magnetic field. The Earth is a dynamo. That field reaches far out into space, where it deflects the stream of charged particles the sun is constantly throwing at us, particles that would otherwise strip away the upper atmosphere over geological time. Every compass needle that swings north is reporting on a machine three thousand miles beneath it that no eye will ever inspect. So how do we know any of this? We listen. Every large earthquake sends waves through the entire body of the planet, and those waves refract, reflect, slow, and stop according to what they encounter. S waves cannot cross liquid, so the region where they fail to arrive maps the liquid core. P waves that arrive where no one expected them revealed the solid inner core to Inge Lehmann in 1936. The interior of the Earth was not discovered by going there. It was reconstructed, patiently and correctly, by people at the surface reading the echoes of the ground shaking under their feet."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the inner core is solid despite its temperature. Cite the exact sentence that states the mechanism.",
+            "Trace the chain of cause and effect from the freezing of the inner core to the survival of the atmosphere.",
+            "The author writes that the layers are less like the stripes on a diagram and more like a system doing work. Analyze what that sentence is doing to the reader's picture of the Earth.",
+            "The passage opens with how little of the planet we can reach and closes with how much we know anyway. Explain how that structure serves the author's argument."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the four layers, the core dynamo, and how seismic waves revealed them)",
+            "(pressure from the whole planet holds the atoms in place; cite: Heat wants to melt it; pressure will not let it)",
+            "(freezing stirs the liquid outer core, rotation spirals the flow, moving metal makes current, current makes the magnetic field, the field deflects solar particles that would strip the atmosphere)",
+            "(it replaces a static textbook cross section with a working machine, so the reader expects the layers to do something rather than just sit there)",
+            "(setting up the gap between reach and knowledge makes the final method, listening to earthquake waves, land as an achievement rather than a fact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["dynamo → ____", "refract → ____", "deflects → ____", "habitable → ____"],
+          "rows": 2,
+          "answers": [
+            "a machine that turns motion into an electric current or a magnetic field",
+            "to bend as it passes from one material into another",
+            "turns something aside so it does not hit",
+            "able to be lived in"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the description of the interior is not a guess. Explain what separates a scientific inference from a guess, using the S wave evidence as your example.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a guess has no test behind it; the S wave shadow zone is a prediction that can fail, and the measured silence matches only a liquid core)",
+            "(student question + a credible source type, such as a seismology textbook or a university geophysics department)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Knowledge built from indirect evidence is weaker than knowledge built from direct observation. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

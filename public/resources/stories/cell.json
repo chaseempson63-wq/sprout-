@@ -1,0 +1,319 @@
+{
+  "key": "cell",
+  "title": "The Tiny Rooms You Are Made Of",
+  "blurb": "Every living thing is built from cells, and the man who named them was squinting at a piece of cork.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Tiny Rooms You Are Made Of",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-cell", "templateLabel": "The Tiny Rooms You Are Made Of", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. This is a cell." },
+        {
+          "kind": "image",
+          "imageKey": "cell",
+          "notes": ["Every living thing is made of cells", "Cells are too small to see", "The round part is the nucleus", "You are made of cells too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "You are made of tiny pieces. They are called cells. Say it like this: SELLS. Cells are very, very small. You cannot see one with just your eyes. You need a microscope. Your skin is made of cells. Your hair is made of cells. A cat is made of cells. A tree is made of cells. Every living thing is made of cells."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the cells in each row. Write how many in the box.",
+          "emoji": "🟢",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "cell    tiny" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one. All of these are made of cells.",
+          "pairs": [
+            { "left": "you", "right": "skin" },
+            { "left": "cat", "right": "fur" },
+            { "left": "tree", "right": "leaves" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big cell. Put a round nucleus in the middle.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tiny Rooms You Are Made Of",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-cell", "templateLabel": "The Tiny Rooms You Are Made Of", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "cell",
+          "notes": ["Say it SELL", "The round middle part is the nucleus", "The thin outside is the membrane", "The jelly inside is cytoplasm", "You have trillions of cells"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tiny Rooms You Are Made Of",
+          "text": "Cells are the tiny building blocks of every living thing. They are so small that a drop of water on your finger could hold millions of them. To see a cell, you need a microscope. Inside most cells is a round part called the nucleus. The nucleus is like the boss. It holds the instructions that tell the cell what to do. Around the outside is a thin skin called the membrane. It decides what goes in and what comes out. You have trillions of cells. Right now, they are all working, and you cannot feel a thing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What do you need to see a cell?", "What is the round part in the middle called?", "What does the membrane decide?"],
+          "rows": 2,
+          "answers": ["a microscope", "the nucleus", "what goes in and what comes out"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Cells are the building ____ of living things.", "The round part in the middle is the ____.", "The thin skin around the outside is the ____.", "To see a cell you need a ____."],
+          "wordBank": ["blocks", "nucleus", "membrane", "microscope"],
+          "answers": ["blocks", "nucleus", "membrane", "microscope"]
+        },
+        { "kind": "draw", "prompt": "Draw a cell. Label the nucleus in the middle and the membrane around the outside.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tiny Rooms You Are Made Of",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-cell", "templateLabel": "The Tiny Rooms You Are Made Of", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "cell",
+          "notes": ["Robert Hooke named cells in 1665", "He named them after monks' small rooms", "Cell comes from the Latin word cella", "The first cells he saw were dead cork", "Most cells are far too small to see"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Man Who Named the Cell",
+          "text": "In 1665, an Englishman named Robert Hooke built himself a microscope and started looking at everything he could find. One day he cut a very thin slice of cork, the same soft bark used to stopper a bottle, and slid it under his lens. What he saw surprised him. The cork was not solid at all. It was full of tiny empty boxes, packed together in neat rows like a honeycomb. Hooke needed a name for them. They reminded him of the small plain rooms where monks slept in a monastery. Those rooms were called cells. So he called the little boxes cells, and the name stuck. Here is the strange part. Hooke was not looking at living things. Cork comes from dead bark, so the boxes he drew were only the empty walls left behind. It took other scientists, with better lenses, to look into pond water and find cells that were alive and moving. But the name Hooke picked that day is still the one we use for the building block of every living thing on Earth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did Hooke put under his lens that day?",
+            "What did the tiny boxes remind him of?",
+            "Why were the boxes Hooke saw empty?",
+            "Why do you think Hooke was surprised that the cork was not solid?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a very thin slice of cork",
+            "the small plain rooms where monks slept",
+            "cork comes from dead bark, so only the walls were left",
+            "(inference: cork looks solid to the eye, so he expected one solid piece)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Man Who Named the Cell", "How to Make a Cork Bottle", "The Best Pond in England"],
+          "answers": ["The Man Who Named the Cell"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Hooke looked at a thin slice of ____.", "The boxes were packed in rows like a ____.", "Cells were named after the rooms where ____ slept."],
+          "wordBank": ["cork", "honeycomb", "monks"],
+          "answers": ["cork", "honeycomb", "monks"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you had the first microscope, what would you look at, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tiny Rooms You Are Made Of",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-cell", "templateLabel": "The Tiny Rooms You Are Made Of", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cell",
+          "notes": ["Membrane: the guarded door", "Nucleus: the vault holding DNA", "Cytoplasm: the jelly everything floats in", "Mitochondria: the power plants", "Red blood cells throw out their nucleus", "An ostrich egg yolk is one single cell"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A City the Size of a Speck",
+          "text": "Open up a single animal cell and you find a place that runs like a small city, except the whole thing is far too small to see. Start at the edge. The cell membrane is a thin, flexible wall that holds everything in. It is not a sealed bag. It is more like a door with a guard: it lets food and oxygen in, pushes waste out, and keeps the rest of the world where it belongs. Inside, everything floats in a clear jelly called cytoplasm. Drifting in that jelly are the organelles, the working parts of the cell. Each one has a job. The nucleus sits near the middle, a round vault holding the cell's DNA. DNA is the instruction manual, and almost every cell in your body carries a complete copy of it. The mitochondria are the power plants. They take sugar and oxygen and turn them into energy the cell can spend. A busy muscle cell may hold thousands of mitochondria. A lazier cell holds far fewer. Here is what makes it interesting. Nearly all your cells carry the same instructions, and yet they do wildly different jobs. A red blood cell throws out its nucleus entirely to make room for oxygen. A nerve cell in your leg can stretch from your spine to your toes in one unbroken strand. A skin cell lives about three weeks and then flakes away. Same manual, different pages read."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says the membrane is like a door with a guard, not a sealed bag. Explain the difference.",
+            "Why would a muscle cell need thousands of mitochondria when a lazier cell does not?",
+            "What does the last line, Same manual, different pages read, actually mean?",
+            "A red blood cell throws out its nucleus. Using the passage, explain what that cell gives up by doing so."
+          ],
+          "rows": 2,
+          "answers": [
+            "a sealed bag lets nothing through; the membrane chooses what enters and leaves",
+            "(inference: muscles work hard and need lots of energy, so they need more power plants)",
+            "(cells share the same DNA but each one only uses the instructions for its own job)",
+            "(inference: it loses its copy of the instructions, so it cannot be a different kind of cell)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A cell is a busy, organized place whose parts each do a job, and cells with the same instructions can do very different work",
+            "Muscle cells are the only important cells in the body",
+            "Scientists have now seen every cell that exists"
+          ],
+          "answers": ["A cell is a busy, organized place whose parts each do a job, and cells with the same instructions can do very different work"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["membrane → ____", "cytoplasm → ____", "organelle → ____"],
+          "rows": 1,
+          "answers": [
+            "the thin outer wall that chooses what goes in and out",
+            "the clear jelly that fills the cell",
+            "a working part inside the cell that has its own job"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage compares a cell to a city. Pick two parts of the cell and explain what job they would do in a real city. Say whether you think the comparison is a good one.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tiny Rooms You Are Made Of",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-cell", "templateLabel": "The Tiny Rooms You Are Made Of", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cell",
+          "notes": ["Cell theory has three parts", "Hooke named the cell in 1665", "Leeuwenhoek saw living cells in pond water", "Schleiden and Schwann: all life is cells", "Virchow: omnis cellula e cellula", "You are about 30 trillion cells"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Cell Comes From Another Cell",
+          "text": "For most of human history, nobody knew what living things were made of. You could cut open a leaf or a frog and see the parts, but the parts were made of something, and that something had no name. The answer arrived slowly, through glass. In 1665 Robert Hooke put a shaving of cork under a microscope and found it packed with empty boxes, which he named cells after the bare rooms monks slept in. A few years later, a Dutch cloth merchant named Antonie van Leeuwenhoek ground lenses so fine that he could see further than anyone alive. He looked at pond water and found it swarming. He looked at scrapings from his own teeth and found creatures wriggling there too. He called them animalcules, little animals, and nobody quite believed him until the Royal Society checked for itself. It took nearly two centuries to assemble what those two men had glimpsed into a single idea. In 1838, Matthias Schleiden argued that every plant is built from cells. The following year, Theodor Schwann said the same of animals. That gave science two thirds of what is now called cell theory: all living things are made of cells, and the cell is the smallest unit that counts as alive. The third part is the strangest, and it took until the 1850s. Rudolf Virchow put it in Latin: omnis cellula e cellula. Every cell comes from a cell. Cells are not brewed out of ordinary matter. They are only ever made by splitting an existing one in half. Follow that rule backward and it does something dizzying. Every cell in you came from another cell, which came from another, in an unbroken chain running back through your mother, through her mother, through animals that were not human, through things that were not animals, all the way back to whatever cell first managed to copy itself billions of years ago. No link in that chain was ever skipped. Not once, in your entire ancestry, did the line go cold."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the three parts of cell theory and the person the passage credits with each.",
+            "What does omnis cellula e cellula mean, and why does the passage call it the strangest part?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last paragraph in your own words. Why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the discovery of cells + the three parts of cell theory + the unbroken chain)",
+            "all living things are made of cells (Schleiden for plants, Schwann for animals); the cell is the smallest living unit; every cell comes from a cell (Virchow)",
+            "every cell comes from a cell; strangest because it means no cell is ever made from scratch, only by splitting an existing one",
+            "(inform, with detail: it gives dates, names, and definitions; the closing paragraph adds a persuasive, wondering tone)",
+            "(every cell traces back in an unbroken line to the first self-copying cell; saved for last for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["animalcules → ____", "assemble → ____", "dizzying → ____", "unbroken → ____"],
+          "rows": 1,
+          "answers": [
+            "Leeuwenhoek's word for the tiny living things he saw",
+            "to put separate pieces together into one whole",
+            "so overwhelming it makes your head spin",
+            "with no gap or break anywhere along it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Leeuwenhoek was a cloth merchant, not a trained scientist. Why might that have made people slower to believe him?",
+            "The passage says it took nearly two centuries to turn what Hooke and Leeuwenhoek saw into cell theory. Why might a big idea take that long?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: he had no reputation or training, and nobody else had lenses good enough to check)",
+            "(inference: it needed better microscopes, many observations, and scientists willing to connect plants and animals)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: who deserves more credit for the discovery of cells, Hooke for naming them or Leeuwenhoek for first seeing them alive? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tiny Rooms You Are Made Of",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-cell", "templateLabel": "The Tiny Rooms You Are Made Of", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cell",
+          "notes": ["Mitochondria carry their own circular DNA", "Endosymbiosis: the cell that moved in", "Lynn Margulis argued it in 1967", "Chloroplasts arrived the same way", "Your mitochondrial DNA came from your mother", "About 30 trillion human cells in you"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bacteria That Moved In",
+          "text": "Inside almost every cell in your body there are hundreds of small bean-shaped structures called mitochondria. They are the reason you can move, think, and stay warm. They take the sugar from your breakfast and the oxygen from your last breath and convert them into ATP, the molecule your cells spend the way you spend money. Stop your mitochondria and you stop, within seconds. For a long time they were treated as just another organelle, one more component in the machinery. Then people started noticing that mitochondria were behaving oddly for a component. They have their own DNA. Not a copy of yours: a separate, circular loop of genes, the same shape bacteria use. They have their own ribosomes for building proteins, and those ribosomes look more like a bacterium's than like the ones elsewhere in your cells. They cannot be built from scratch by the cell that houses them. They reproduce by pinching themselves in two, on their own schedule, exactly as bacteria divide. And they are wrapped in two membranes instead of one, as though something with a skin had once been swallowed by something else with a skin. In 1967 a young biologist named Lynn Margulis drew the obvious conclusion and was ridiculed for it. Her argument was that mitochondria are not parts. They are descendants. Roughly two billion years ago, she said, one ancient single-celled organism engulfed another and, for reasons nobody witnessed, failed to digest it. The swallowed cell kept living inside its host. It made energy. The host provided shelter and raw material. Neither could manage alone anymore, and over an enormous stretch of time the prisoner became an organ. Margulis called this endosymbiosis, living together on the inside. Her paper was rejected by about fifteen journals before one printed it. She was right. The genetic evidence that arrived in the following decades matched her claim so precisely that endosymbiosis is now taught as fact in the same textbooks that once refused to mention it. The chloroplasts that let plants eat sunlight came aboard the same way, in a separate takeover. Consider what that means about you. You are not one organism. You are a settlement. Every cell you own is a truce signed two billion years ago between two creatures that had no intention of cooperating, and the terms have held ever since. There is a final detail worth sitting with. Sperm contribute almost no mitochondria to an embryo, so the mitochondrial DNA you carry came from your mother, and from her mother before that, in a line of women running back further than any family name."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "List three pieces of evidence the passage gives that mitochondria were once free-living bacteria. Cite one of them word for word.",
+            "The passage says Margulis drew the obvious conclusion and was ridiculed for it. Explain why both halves of that sentence can be true at once.",
+            "Identify the shift in the passage: where does it turn from biology to something more personal, and how does the author signal it?",
+            "Analyze the sentence You are a settlement. What is the author claiming, and does the passage give you enough to accept it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(own circular DNA, bacteria-like ribosomes, divide by splitting, double membrane; quote e.g. a separate, circular loop of genes, the same shape bacteria use)",
+            "(the evidence was already visible, but the claim broke with accepted thinking, so it was dismissed rather than tested)",
+            "(at Consider what that means about you; a short direct address pivots from mitochondria to the reader)",
+            "(that a human is a partnership of two ancient organisms rather than one; supported by the DNA, ribosome, division and membrane evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["endosymbiosis → ____", "engulfed → ____", "organelle → ____", "descendants → ____"],
+          "rows": 2,
+          "answers": [
+            "one organism living inside another, both depending on the arrangement",
+            "swallowed something whole, surrounding it completely",
+            "a working structure inside a cell that does a particular job",
+            "living things that came from an earlier line of ancestors"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that the prisoner became an organ. Explain what that phrase compresses into six words, and why it lands harder than a plain description would.",
+            "Fifteen journals rejected Margulis before one printed her. Write a question this passage cannot answer about how science handles ideas like hers, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a captive turned into a permanent, necessary body part; the word prisoner keeps the original struggle alive in the image)",
+            "(student question + a credible source type, e.g. a history of science, or interviews with journal editors)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Margulis was ignored for so long because scientists trust established ideas more than new evidence. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

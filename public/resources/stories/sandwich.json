@@ -1,0 +1,319 @@
+{
+  "key": "sandwich",
+  "title": "The Man Who Gave the Sandwich Its Name",
+  "blurb": "Two slices of bread, one very busy Earl, and the machine that put sliced bread in every American kitchen.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Man Who Gave the Sandwich Its Name",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-sandwich", "templateLabel": "The Man Who Gave the Sandwich Its Name", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the bread. Find the middle." },
+        {
+          "kind": "image",
+          "imageKey": "sandwich",
+          "notes": ["Bread on the top and the bottom", "The good stuff goes in the middle", "You hold it in your hands", "No fork needed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a sandwich. It has bread on the bottom. It has bread on the top. In the middle you put the good stuff. Cheese. Ham. Peanut butter. Jam. The bread holds it all together. It keeps your hands clean. You can carry a sandwich anywhere. You can eat it with one hand. That is why people love it."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the sandwiches in each row. Write how many in the box.",
+          "emoji": "🥪",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bread    eat" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each food to where it goes.",
+          "pairs": [
+            { "left": "cheese", "right": "in the middle" },
+            { "left": "bread", "right": "on the outside" },
+            { "left": "sandwich", "right": "in your hand" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own sandwich. Put your favorite thing in the middle.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Man Who Gave the Sandwich Its Name",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-sandwich", "templateLabel": "The Man Who Gave the Sandwich Its Name", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "sandwich",
+          "notes": ["Named after a real man", "He was the Earl of Sandwich", "Sandwich is a town in England", "The town sits right by the sea", "The name is over 250 years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Man Who Gave the Sandwich Its Name",
+          "text": "A long time ago in England, there was a man named John. He was the Earl of Sandwich. That was his title, and it came from a little town by the sea called Sandwich. The story goes that John did not want to stop working to eat. He asked for cold meat tucked between two slices of bread. Then he could hold his food in one hand and keep going. People saw it and said, I will have the same as Sandwich. The name stuck. So the sandwich is not named after bread or meat. It is named after a man, and that man was named after a town."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What was John's title?", "What did John ask for between two slices of bread?", "Why did he want to eat with one hand?"],
+          "rows": 2,
+          "answers": ["the Earl of Sandwich", "cold meat", "so he could keep working"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["John was the Earl of ____.", "Sandwich is a ____ by the sea.", "He ate cold ____ between two slices.", "He held his food in one ____."],
+          "wordBank": ["Sandwich", "town", "meat", "hand"],
+          "answers": ["Sandwich", "town", "meat", "hand"]
+        },
+        { "kind": "draw", "prompt": "Draw John eating at his table. Put a sandwich in his hand.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Man Who Gave the Sandwich Its Name",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-sandwich", "templateLabel": "The Man Who Gave the Sandwich Its Name", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "sandwich",
+          "notes": ["Hillel wrapped lamb in flat bread 2,000 years ago", "Medieval plates were sometimes made of stale bread", "Those bread plates were called trenchers", "John Montagu was the fourth Earl of Sandwich", "Hawaii was once called the Sandwich Islands"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Slices and a Big Idea",
+          "text": "Before the sandwich had a name, people were already eating one. More than two thousand years ago, a teacher named Hillel wrapped lamb and bitter herbs inside flat bread so he could eat them together. In the Middle Ages, people in Europe used thick slices of stale bread as plates. They called them trenchers. The bread soaked up the juices from the meat, and at the end of the meal the soggy trencher was given to the poor or to the dogs. The word sandwich came much later. In the 1700s, an English nobleman named John Montagu held the title Earl of Sandwich. He liked to eat cold meat between two slices of bread while he stayed busy at his table. His friends began asking for the same thing, and they called it by his title. The town of Sandwich in England had given the man his name. The man gave the food its name. The food kept it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did Hillel wrap inside flat bread?",
+            "What was a trencher used for?",
+            "Who was John Montagu?",
+            "Why do you think people kept calling the food a sandwich long after John Montagu died?"
+          ],
+          "rows": 2,
+          "answers": [
+            "lamb and bitter herbs",
+            "it was a thick slice of stale bread used as a plate",
+            "an English nobleman who held the title Earl of Sandwich",
+            "(opinion: the name was easy and everyone already knew it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Two Slices and a Big Idea", "How to Bake Bread at Home", "The Kings and Queens of England"],
+          "answers": ["Two Slices and a Big Idea"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Hillel used flat ____ to hold his food.", "A bread plate was called a ____.", "John Montagu held the ____ Earl of Sandwich."],
+          "wordBank": ["bread", "trencher", "title"],
+          "answers": ["bread", "trencher", "title"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if a food were named after you, what would be in it, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Man Who Gave the Sandwich Its Name",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-sandwich", "templateLabel": "The Man Who Gave the Sandwich Its Name", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sandwich",
+          "notes": ["Gluten is what makes bread stretchy and strong", "Butter waterproofs bread against wet fillings", "Toasting browns bread through the Maillard reaction", "Louis-Camille Maillard studied that reaction in 1912", "Fat and water do not mix, and that is the whole trick"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Bread Goes on the Outside",
+          "text": "A sandwich looks simple. It is not. Every good sandwich is solving a problem, and the problem is your hands. Bread works as a wrapper because of gluten. When flour meets water, two proteins in the flour link up into a stretchy web. Yeast fills that web with bubbles of gas, and baking sets it hard. What comes out is a solid that is also soft: strong enough to hold a load of wet filling, gentle enough to bite through. No plate, no fork, no napkin needed. Bread has one weakness. It drinks. Tomato juice, oil, and dressing soak straight into it, and a soaked slice tears. Cooks have fought this for centuries. The old trick is fat. A thin layer of butter or mayonnaise on the inside face of the bread does almost nothing for flavor and everything for waterproofing, because fat and water refuse to mix. That is also why the wet things belong in the middle of the stack and the dry things belong against the bread. Toasting helps too. Heat drives water out of the surface of the slice and starts a chemical reaction between the sugars and the proteins in the crust. That reaction is named for Louis-Camille Maillard, the French chemist who studied it in 1912. It is what turns bread brown and gives toast its smell. A toasted slice is drier, stiffer, and much harder to drown."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says the problem a sandwich solves is your hands. Explain what it means by that.",
+            "Why does a thin layer of butter keep bread from going soggy?",
+            "The passage says wet things belong in the middle of the stack. Work out why that would help.",
+            "A cook makes a tomato sandwich at breakfast for a lunch six hours later. Based on the passage, name two things the cook should do."
+          ],
+          "rows": 2,
+          "answers": [
+            "food that is wet or greasy normally needs a plate and a fork; bread lets you hold it instead",
+            "fat and water do not mix, so the butter blocks the liquid from soaking in",
+            "(inference: the dry filling sits against the bread and shields it from the juice)",
+            "(inference: butter both slices and toast the bread)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A sandwich is a piece of design, and bread is the material that makes it work",
+            "Butter is the healthiest food to put on bread",
+            "French chemists invented the sandwich in 1912"
+          ],
+          "answers": ["A sandwich is a piece of design, and bread is the material that makes it work"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["gluten → ____", "waterproofing → ____", "Maillard reaction → ____"],
+          "rows": 1,
+          "answers": [
+            "the stretchy web of proteins that forms when flour meets water",
+            "stopping liquid from soaking through",
+            "the browning reaction between sugars and proteins when bread is heated"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how to build a sandwich that survives until lunch. Use at least two ideas from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Man Who Gave the Sandwich Its Name",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-sandwich", "templateLabel": "The Man Who Gave the Sandwich Its Name", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sandwich",
+          "notes": ["Otto Rohwedder spent about sixteen years on the bread slicer", "The first machine ran in Chillicothe, Missouri, in July 1928", "By 1933 roughly 80 percent of US bread was sold pre-sliced", "The United States banned sliced bread in January 1943", "The ban was lifted about two months later"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Greatest Thing",
+          "text": "For most of its life, the sandwich was a rich person's snack and a poor person's lunch, and both were made by hand. Bread came from the baker as a whole loaf. Cutting even slices off it took a sharp knife, a steady hand, and time. A crooked slice made a crooked sandwich. Bread was the one part of lunch that still needed a blade. Otto Rohwedder thought a machine could do it better. He was a jeweler by trade, born in Iowa, and he spent about sixteen years on the problem. The hard part was not the cutting. It was what happened afterward. A sliced loaf dries out fast and falls apart on the shelf, so grocers refused to stock it. Rohwedder's answer was to slice the loaf and wrap it in the same motion. His machine first ran in a bakery in Chillicothe, Missouri, in July 1928. Within five years, most bread sold in America came pre-sliced. The effect was bigger than convenience. Uniform slices made the sandwich something a child could build without a knife, which is one reason peanut butter and jelly became the standard American lunch. Toasters suddenly had a job. Sales of bread went up, because a slice is easy to eat and easy to eat again. The phrase the greatest thing since sliced bread comes from this moment, and people meant it. In January 1943, in the middle of the war, the United States banned sliced bread. The official reasons were saving wax paper and steel. The public reaction was loud and immediate, and the ban was lifted after about two months. A country at war, rationing meat and gasoline without much complaint, would not give up its slices. It got them back in March."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Rohwedder's hardest problem was not the cutting. Quote the sentence that says what it was, then explain it in your own words.",
+            "The passage says the effect was bigger than convenience. Give two pieces of evidence from the text that support that claim.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end with the 1943 ban instead of starting with it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering hand cutting, Rohwedder's slicer, and how it changed American lunch)",
+            "quote: It was what happened afterward; a sliced loaf goes stale and falls apart, so stores would not sell it",
+            "(any two: children could build sandwiches without a knife, peanut butter and jelly became standard, toasters had a job, bread sales rose)",
+            "(inform, with detail: it gives dates, names, and figures, though the closing lines add a persuasive edge)",
+            "(the ban proves how much the change mattered, so it lands harder as the final beat)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["uniform (slices) → ____", "grocers → ____", "rationing → ____", "pre-sliced → ____"],
+          "rows": 1,
+          "answers": [
+            "all the same size and shape",
+            "people who sell food in shops",
+            "limiting how much of something each person may buy",
+            "cut into slices before it is sold"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a country rationing meat and gasoline would not give up its slices. What does that tell you about the difference between what people need and what people expect?",
+            "Rohwedder had to invent the wrapping, not just the cutting. What does that suggest about inventing things in general?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: people accept losing big things but resist losing small daily habits)",
+            "(inference: an invention only works once every part of the problem around it is solved)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was sliced bread a real invention, or just a small convenience dressed up as one? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Man Who Gave the Sandwich Its Name",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-sandwich", "templateLabel": "The Man Who Gave the Sandwich Its Name", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sandwich",
+          "notes": ["Sandwich, Kent: Old English for a trading place on the sand", "James Cook named Hawaii the Sandwich Islands in 1778", "The card-table story was printed in 1772, secondhand", "Montagu ran the British navy three separate times", "Banh mi uses the baguette left behind by French colonizers", "The Cuban sandwich is pressed flat while it is hot"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sandwich: A Technology for Eating Without Stopping",
+          "text": "The sandwich is not a recipe. It is a piece of engineering, and like most good engineering it disappears into the thing it solves. Start with the problem. Food that is hot, wet, or greasy demands a plate, a utensil, a table, and a pause. That pause is expensive. It has always been expensive, for a soldier, a field hand, a gambler, a clerk, and a kid with fifteen minutes of recess left. The sandwich abolishes the pause. It wraps the wet part in the dry part and hands you your lunch as a solid object. What it really buys you is not convenience. It is time. People solved this long before anyone named it. Over two thousand years ago, Hillel the Elder is said to have folded lamb and bitter herbs into flat bread at Passover, and Jewish families still eat a version of it today. Medieval European kitchens served meat on trenchers, thick slabs of day-old bread that worked as edible plates and were handed to the poor once the meal was over. Every one of these is the same idea. Bread is the only common food that is strong, dry, absorbent, and edible all at once. The name arrived in England in the 1700s, and it arrived attached to a person. John Montagu, the fourth Earl of Sandwich, held the title of a small port town in Kent whose Old English name means roughly a trading place on the sand. Montagu ate cold meat between bread while he worked, and the men around him started ordering the same thing by his title. Here the popular story and the historical record disagree. The version everyone repeats says he would not leave the card table. That account was printed in 1772 by a French visitor to London who had heard it secondhand. Montagu's biographer argues the truth is duller and more likely: he ran the British navy, sat at his desk through very long days, and wanted to eat without putting down his papers. Both versions agree on the point that matters. Somebody important refused to stop, and the food adapted to him. Then the sandwich went industrial. Otto Rohwedder's bread slicer reached a Missouri bakery in 1928, and within five years most American bread was sold pre-sliced. That single machine turned sandwich making into something a seven-year-old could do unsupervised, which is roughly when peanut butter and jelly took over the American lunchbox. When the government banned sliced bread in January 1943 to conserve wax paper, the country complained so loudly that the ban was gone by March. The strongest evidence that the sandwich is a solution and not a fashion is that it kept getting reinvented by people who had never heard of the Earl. Vietnam took the baguette left behind by French colonizers, filled it with pork, pickled carrot, and cilantro, and made the banh mi. Mexico built the torta on a bolillo roll. Cuban workers in Florida pressed ham, roast pork, and pickles flat between hot plates. Nobody was copying England. They were all answering the same question, and bread kept giving the same answer."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author claims the sandwich buys you time rather than convenience. Explain the difference, and cite the sentence that makes the claim.",
+            "Explain why the author includes both the card-table story and the biographer's version instead of picking one. Cite the sentence that resolves the disagreement.",
+            "Identify the shift in the passage: where does it turn from history to argument, and how does the author signal it?",
+            "Analyze the final paragraph. What job does the list of banh mi, torta, and Cuban sandwich do for the author's argument, and does the passage earn its last line?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(convenience is comfort; time is the thing actually saved, because you keep working while you eat; cite: What it really buys you is not convenience. It is time.)",
+            "(showing both marks the popular story as unverified while keeping what both accounts share; cite: Somebody important refused to stop, and the food adapted to him.)",
+            "(at The strongest evidence that the sandwich is a solution and not a fashion; the author stops narrating and starts proving)",
+            "(the examples are independent inventions, so they show the sandwich answers a universal problem rather than copying a fashion; supported by Nobody was copying England)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["abolishes → ____", "trencher → ____", "absorbent → ____", "secondhand (account) → ____"],
+          "rows": 2,
+          "answers": [
+            "does away with something completely",
+            "a thick slab of stale bread used as an edible plate",
+            "able to soak up liquid",
+            "retold by someone who did not witness it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls the sandwich a piece of engineering. Is that a fair description or a stretch? Defend your view with one detail from the passage.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: fair, because bread is chosen for its material properties, strong, dry, absorbent, and edible all at once)",
+            "(student question plus a credible source type, such as a food historian or a primary document)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The Earl of Sandwich deserves no credit, because the sandwich already existed for two thousand years before him. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

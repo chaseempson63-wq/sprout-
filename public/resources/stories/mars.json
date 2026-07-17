@@ -1,0 +1,319 @@
+{
+  "key": "mars",
+  "title": "The Planet That Rusted Red",
+  "blurb": "Why Mars is the color of an old nail, what its dried-up rivers prove, and why half the robots we send there never make it down.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Planet That Rusted Red",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-mars", "templateLabel": "The Planet That Rusted Red", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the red planet." },
+        {
+          "kind": "image",
+          "imageKey": "mars",
+          "notes": ["Mars is red all over", "The dust is red like rust", "It is very cold there", "Robots drive on Mars", "Nobody lives on Mars"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is Mars. Mars is a planet. It is far away in space. Mars looks red. The dust on Mars is red like rust. Mars is cold and dry. There is no water to swim in. There are no trees. Wind blows the red dust all around. Little robots drive on Mars. They take pictures for us. We wave at Mars from Earth."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the red rocks in each row. Write how many in the box.",
+          "emoji": "🔴",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "red    Mars" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one with its color.",
+          "pairs": [
+            { "left": "Mars", "right": "red" },
+            { "left": "Earth", "right": "blue" },
+            { "left": "the Sun", "right": "yellow" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw Mars. Color it red. Add a little robot on the ground.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Planet That Rusted Red",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-mars", "templateLabel": "The Planet That Rusted Red", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "mars",
+          "notes": ["Mars is the planet next door", "Its dust is full of rust", "It has two tiny moons", "You could not breathe there", "Robots drive around on it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Planet That Rusted Red",
+          "text": "Mars is the planet next door. On a clear night you can see it. It looks like a small orange star. Mars is red because its dust is full of rust. It is the same rust you see on an old nail. Mars is much colder than Earth. The air is thin, so you could not breathe there. Mars has two tiny moons. Their names are Phobos and Deimos. People have sent robots to Mars. The robots drive slowly over the rocks. They dig, they take photos, and they send everything home to us."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Why is Mars red?", "How many moons does Mars have?", "What do the robots send home to us?"],
+          "rows": 2,
+          "answers": ["its dust is full of rust", "two", "photos, and what they find"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The dust on Mars is full of ____.", "Mars is much ____ than Earth.", "Mars has two tiny ____.", "People send ____ to drive on Mars."],
+          "wordBank": ["rust", "colder", "moons", "robots"],
+          "answers": ["rust", "colder", "moons", "robots"]
+        },
+        { "kind": "draw", "prompt": "Draw a robot driving on Mars. Add red rocks and the two little moons in the sky.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Planet That Rusted Red",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-mars", "templateLabel": "The Planet That Rusted Red", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "mars",
+          "notes": ["The fourth planet from the Sun", "Red because the iron in its dust has rusted", "A day there is 40 minutes longer than ours", "A year there takes 687 Earth days", "You would weigh a third of what you weigh here", "No person has ever stood on it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rustiest Place We Know",
+          "text": "Mars is the fourth planet from the Sun, and it is our closest neighbor that you could stand on. From Earth it looks like a small orange dot. Up close, it is a cold desert covered in red dust. The red comes from iron. The dust on Mars is full of iron that has rusted, the same way an old nail turns orange when it gets wet. The whole planet is coated in it. Mars is smaller than Earth. You would weigh about a third of what you weigh here, so a small hop would carry you high. A day on Mars is almost the same as ours, just forty minutes longer. But a year takes 687 Earth days, because Mars has a much longer trip around the Sun. Nobody has walked on Mars yet. Robots have. Rovers the size of cars drive across the rocks, drilling holes and taking pictures. They are looking for one thing above all: signs that water once flowed there, and maybe life with it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What makes the dust on Mars look red?",
+            "How long is a year on Mars?",
+            "Who has been to Mars so far, people or robots?",
+            "Why do you think the rovers are looking for signs of water?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the iron in it has rusted",
+            "687 Earth days",
+            "only robots, no person has walked there yet",
+            "(inference: living things need water, so water means life might have been there)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Rustiest Place We Know", "How to Build a Race Car", "The Biggest Ocean on Earth"],
+          "answers": ["The Rustiest Place We Know"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Mars is the ____ planet from the Sun.", "The red dust is full of ____ that has rusted.", "Up close, Mars is a cold ____ covered in dust."],
+          "wordBank": ["fourth", "iron", "desert"],
+          "answers": ["fourth", "iron", "desert"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you could send a rover to Mars, what would you tell it to look for, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Planet That Rusted Red",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-mars", "templateLabel": "The Planet That Rusted Red", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mars",
+          "notes": ["About half the width of Earth", "Rust in the soil gives it its color", "Olympus Mons is nearly 3 times the height of Everest", "Valles Marineris is a canyon 2,500 miles long", "The daytime sky is butterscotch, not blue", "Dried riverbeds prove it once had water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Planet That Dried Out",
+          "text": "Mars is the fourth planet from the Sun and the only other world in our solar system where a robot has ever driven around. It is about half the width of Earth, and every inch of it is dry. The color has a simple explanation. Martian soil is loaded with iron, and that iron has rusted. Rust is iron plus oxygen, so the red of Mars is really the color of an old nail left out in the rain, spread across an entire planet. Wind lifts the fine rust dust into the sky, which is why the Martian sky glows a dull butterscotch instead of blue. Mars is a planet of extremes. Olympus Mons rises about 16 miles above the plains, close to three times the height of Mount Everest. A canyon called Valles Marineris runs 2,500 miles across the surface, deep enough to swallow the Grand Canyon several times over. Yet the air is so thin that standing there would feel closer to standing in empty space than on a mountaintop. It was not always like this. Cameras in orbit have photographed dried riverbeds branching across the dust. Rovers have rolled over rounded pebbles, the kind that only get smooth by tumbling in running water. Billions of years ago Mars had rivers, lakes, and a thicker sky. Then the planet's core cooled and its magnetic field faded. Without that shield, the solar wind stripped the air away a little at a time, and the water froze or escaped. Mars did not explode or die suddenly. It simply dried out, slowly, over a very long time. Finding out exactly how is why we keep sending robots."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why Mars is red.",
+            "The passage says the sky on Mars glows butterscotch. What causes that?",
+            "What evidence tells scientists that water once flowed on Mars?",
+            "Why do you think losing its magnetic field cost Mars its atmosphere?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the iron in its soil has rusted, and the rust dust covers everything",
+            "wind lifts fine rust dust into the air, so the sky takes on the dust color",
+            "dried riverbeds seen from orbit, and rounded pebbles that only get smooth in running water",
+            "(inference: the field acted as a shield, and without it the solar wind could strip the air away)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Mars is a rusted, extreme world that once had water and slowly dried out",
+            "Mount Everest is the tallest mountain anywhere",
+            "Robots are better than people at every job"
+          ],
+          "answers": ["Mars is a rusted, extreme world that once had water and slowly dried out"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["solar wind → ____", "magnetic field → ____", "extremes → ____"],
+          "rows": 1,
+          "answers": [
+            "a stream of particles blowing out from the Sun",
+            "an invisible shield a planet makes around itself",
+            "things that are at the very largest or smallest end"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: would you rather explore Olympus Mons or Valles Marineris? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Planet That Rusted Red",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-mars", "templateLabel": "The Planet That Rusted Red", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mars",
+          "notes": ["Entry speed on arrival: about 12,000 mph", "Air pressure is under 1 percent of Earth's", "Radio takes 3 to 22 minutes to reach us", "About half of all Mars missions have failed", "Opportunity was built for 90 days and lasted 14 years", "Ingenuity was planned for 5 flights and made 72"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Seven Minutes, No Help From Home",
+          "text": "Getting a spacecraft to Mars is not the hard part. The hard part is stopping. A capsule arriving from Earth hits the top of the Martian atmosphere at roughly 12,000 miles per hour. It has about seven minutes to slow to zero and set a one-ton rover down gently on the rocks. Everything in those seven minutes has to work in the right order, at the right second, with no help from home. Radio signals take between about three and twenty-two minutes to cross the gap, depending on where the two planets are. By the time engineers on Earth hear that the capsule has touched the atmosphere, the landing is already over. It has either worked or it has not. They just do not know which yet. Mars makes this worse than it sounds. Its atmosphere is thick enough to set a heat shield glowing, but far too thin to do the braking a parachute could do on Earth. Less than one percent of Earth's air pressure means a parachute alone leaves the craft falling much too fast. So NASA stacks the tricks. A heat shield sheds most of the speed as fire. A supersonic parachute grabs what it can. Then the parachute is cut away and rockets take over, hovering the craft above the ground while it lowers the rover on cables like a package on a winch. The rocket stage then flies off to crash a safe distance away. It works, but not always. Roughly half of all missions ever sent to Mars have failed. Landers have burned up, bounced wrong, or gone silent on the way down. The ones that survive have been extraordinary. Opportunity was designed to last 90 days and lasted 14 years. Curiosity has been driving since 2012. In 2021, a helicopter named Ingenuity lifted off in air a hundred times thinner than ours and became the first machine to fly on another world. It was planned for five flights. It made 72. Every one of those machines is out there right now, still sitting where it stopped, waiting for people who have not arrived yet."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why can engineers on Earth not fly the landing themselves? Quote the phrase the passage uses.",
+            "Explain why the Martian atmosphere makes landing harder than landing on Earth would be.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence do to the mood of the passage, and why do you think the author ends there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the seven-minute landing, the thin air problem, and the survivors)",
+            "radio is too slow, so the landing is over before they hear it began; quote: with no help from home",
+            "the air is thick enough to burn a heat shield but too thin for a parachute to slow the craft enough",
+            "(inform, with detail: it explains the steps and gives figures; the storytelling tone also entertains)",
+            "(it turns a technical piece personal and hopeful; the author ends there so the reader thinks about people going)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["supersonic → ____", "heat shield → ____", "extraordinary → ____", "hovering → ____"],
+          "rows": 1,
+          "answers": [
+            "faster than the speed of sound",
+            "a cover that takes the burning heat of entry so the craft does not",
+            "far beyond what was expected",
+            "holding still in the air above something"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the hard part is stopping. Explain what that means in your own words.",
+            "Why might engineers build a rover to last 90 days when they hope it will last years?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(reaching Mars is routine, but slowing from 12,000 mph to a soft landing is the risk)",
+            "(inference: they promise only what they can guarantee, and anything beyond is a bonus)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it worth spending billions on Mars rovers when about half of these missions fail? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Planet That Rusted Red",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-mars", "templateLabel": "The Planet That Rusted Red", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mars",
+          "notes": ["Core dynamo shut down roughly 4 billion years ago", "MAVEN measures air still escaping today", "Jezero Crater holds an ancient river delta", "Surface soil contains toxic perchlorate salts", "Average temperature around 80 below zero Fahrenheit", "Launch windows open only every 26 months"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Planet That Lost Its Air",
+          "text": "Mars is the only planet we have ever found that used to be habitable and is not anymore. That single sentence is why it gets so much of our attention. Roughly four billion years ago, Mars looked far more like Earth than like the frozen desert it is now. It had a thicker atmosphere, clouds, rain or at least meltwater, rivers that cut branching valleys, and standing lakes that lasted long enough to lay down mud in flat layers. We are not guessing at this. Orbiters have mapped delta fans where rivers once emptied into basins. Curiosity has driven over conglomerate, a rock made of pebbles cemented together, with the pebbles rounded exactly the way stones are rounded by rolling along a streambed. Perseverance sits inside Jezero Crater specifically because the crater holds an ancient river delta, and river deltas are where fine sediment settles, and fine sediment is where evidence of life would be preserved if there ever was any. Then Mars lost. The most likely explanation begins deep inside it. Earth's molten iron core churns and generates a global magnetic field that reaches out past the atmosphere and deflects the solar wind, the constant stream of charged particles the Sun throws in every direction. Mars is smaller, so it cooled faster, and its core dynamo shut down. The magnetic shield went with it. After that, the solar wind spent billions of years peeling the Martian atmosphere away molecule by molecule. NASA's MAVEN orbiter has actually watched this happening, measuring gas escaping into space right now. As the air thinned, the pressure dropped, and liquid water stopped being possible on the surface. Water does not need heat alone to stay liquid. It needs something pressing down on it. Today the pressure on Mars is under one percent of Earth's, low enough that exposed water would boil and freeze almost at once. The water that remains is locked in the polar caps and buried as ice under the dust. This is the part worth sitting with. Mars did not lose its atmosphere in a catastrophe. There was no impact, no explosion, no single bad day. A planet with rivers became a planet without them through a process too slow for anyone to have noticed, driven by a change in its core that no surface observer could have seen. Habitability turned out to depend on plumbing nobody was looking at. People talk casually about moving to Mars if Earth goes wrong. It is worth being precise about what that would mean. The surface receives radiation with no magnetic field and almost no air to absorb it. The soil contains perchlorates, salts that are toxic to people. The average temperature is around eighty degrees below zero Fahrenheit. There is nothing to breathe. Every calorie, every drop of water, and every spare part would have to be grown, mined, or shipped across a gap that takes months to cross and opens only every twenty-six months. A ruined Earth would still be, by an enormous margin, the friendlier of the two. That is not an argument against going. Mars is the best laboratory we have for the question of whether life ever started anywhere but here, and answering that would change how we think about ourselves. But the honest reason to study Mars may be closer to home. It is the one nearby example of a world that was once warm and wet and is not anymore, and it did not need anyone's help to get that way."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how a rounded pebble becomes evidence. Cite the phrase the passage uses to describe how it got that way.",
+            "Trace the chain of cause and effect from the cooling of the Martian core to the loss of surface water.",
+            "Identify the shift in the passage: where does it turn from wonder to warning, and how does the author signal it?",
+            "The passage says habitability depended on plumbing nobody was looking at. Analyze what that metaphor is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the wet past, the lost atmosphere, and why it matters)",
+            "(only running water rounds a stone; cite: rounded exactly the way stones are rounded by rolling along a streambed)",
+            "(core cooled, dynamo shut down, magnetic shield lost, solar wind stripped the air, pressure dropped, liquid water became impossible)",
+            "(at This is the part worth sitting with, or at People talk casually about moving to Mars; short flat sentences signal the pivot)",
+            "(it recasts a planet as a house with hidden systems, making the point that the fatal change was invisible and internal; earned by the core-dynamo evidence given earlier)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["habitable → ____", "conglomerate → ____", "dynamo → ____", "sediment → ____"],
+          "rows": 2,
+          "answers": [
+            "able to support living things",
+            "a rock made of pebbles cemented together",
+            "the churning core motion that generates a planet's magnetic field",
+            "fine material that settles out of water and builds up in layers"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author claims a ruined Earth would still be friendlier than Mars. Weigh the evidence given for that claim and say whether it holds.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(radiation, toxic soil, cold, no air, and supply distance are all cited; a damaged Earth still has air, pressure, and water)",
+            "(student question, such as whether life ever began there, plus a credible source type such as a peer-reviewed sample-return study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: studying Mars teaches us more about Earth than about Mars. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "key": "praying-mantis",
+  "title": "The Bug That Can Look Over Its Shoulder",
+  "blurb": "The insect that holds perfectly still, sees in 3D, and hears bats with a single ear on its belly.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bug That Can Look Over Its Shoulder",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-praying-mantis", "templateLabel": "The Bug That Can Look Over Its Shoulder", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the two front legs." },
+        {
+          "kind": "image",
+          "imageKey": "praying-mantis",
+          "notes": ["It sits very still", "Its front legs fold up", "It can turn its head", "It is often green like a leaf", "It eats flies"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a praying mantis. It sits very still on a leaf. Its front legs are folded up. It looks like it is praying. But it is not praying. It is waiting. A fly comes close. The mantis grabs it fast. Then it goes still again. The mantis can turn its head to look at you."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bugs in each row. Write how many in the box.",
+          "emoji": "🐛",
+          "items": ["2", "4", "6", "3"],
+          "answers": ["2", "4", "6", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "still    green" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "mantis", "right": "leaf" },
+            { "left": "fish", "right": "water" },
+            { "left": "owl", "right": "tree" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a praying mantis on a green leaf. Fold up its front legs.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bug That Can Look Over Its Shoulder",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-praying-mantis", "templateLabel": "The Bug That Can Look Over Its Shoulder", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "praying-mantis",
+          "notes": ["Its front legs have tiny spines", "It waits instead of chasing", "It can look behind itself", "Its head is shaped like a triangle", "It grabs faster than you can blink"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hunter That Waits",
+          "text": "A praying mantis is a hunter that waits. It does not chase. It stands on a stem, green as the leaves around it, and holds its front legs up in a fold. Those legs are not folded for praying. They are folded for grabbing. Each one has a row of tiny spines along the inside. When a fly lands nearby, the mantis snaps its legs out and pulls the fly in. The whole grab takes less time than a blink. A mantis can also turn its head around to look behind itself. No other insect can do that."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Does the mantis chase its food or wait for it?", "What is on the inside of its front legs?", "What can the mantis do that no other insect can do?"],
+          "rows": 2,
+          "answers": ["it waits for it", "a row of tiny spines", "turn its head around to look behind itself"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The mantis stands very ____.", "It is often ____ like a leaf.", "Its front legs are folded for ____.", "It can turn its ____ to look behind."],
+          "wordBank": ["still", "green", "grabbing", "head"],
+          "answers": ["still", "green", "grabbing", "head"]
+        },
+        { "kind": "draw", "prompt": "Draw the mantis waiting on a plant. Add a fly that has not noticed it yet.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bug That Can Look Over Its Shoulder",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-praying-mantis", "templateLabel": "The Bug That Can Look Over Its Shoulder", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "praying-mantis",
+          "notes": ["The strike takes about fifty thousandths of a second", "Its front legs are lined with sharp spines", "It can swivel its head about halfway around", "It holds one pose for an hour", "The name comes from the folded legs, not from praying"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hunter That Never Chases",
+          "text": "Most hunters run. A praying mantis does the opposite. It picks a stem or a leaf, matches the green or brown around it, and then it stops moving. It can hold that pose for an hour. Its front legs are folded in front of its face, which is how it got its name. Those legs are the trap. The inside edge of each one carries a row of sharp spines. When an insect wanders close enough, the mantis throws both legs forward and pulls the insect back onto the spines. The strike takes about fifty thousandths of a second. If you blink, you miss it. The mantis can also do something no other insect can do. It can swivel its head and look over its own shoulder. Most insects have a stiff neck and have to turn their whole body to see behind them. A mantis just turns its triangle of a head, keeps the rest of itself perfectly still, and watches you watching it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How is a mantis different from a hunter that runs?",
+            "What is on the inside edge of each front leg?",
+            "How long does the strike take?",
+            "Why do you think holding still helps the mantis catch food?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it waits and holds still instead of chasing",
+            "a row of sharp spines",
+            "about fifty thousandths of a second",
+            "(inference: bugs do not notice something that is not moving)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Hunter That Never Chases", "How to Catch a Fly With a Net", "The Fastest Runner in the Garden"],
+          "answers": ["The Hunter That Never Chases"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The mantis can hold one ____ for an hour.", "Its front legs are the ____.", "It can swivel its ____ and look behind itself."],
+          "wordBank": ["pose", "trap", "head"],
+          "answers": ["pose", "trap", "head"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the mantis, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bug That Can Look Over Its Shoulder",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-praying-mantis", "templateLabel": "The Bug That Can Look Over Its Shoulder", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "praying-mantis",
+          "notes": ["The black dot in each eye is a pseudopupil, not a pupil", "The only insect known to see in 3D", "Researchers tested it with tiny 3D glasses", "The orchid mantis looks like a pink flower", "Some species look like sticks, some like dead leaves", "It gets one strike, so distance has to be right"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Ambush, Disguise, and a Dot That Follows You",
+          "text": "A praying mantis hunts with its eyes, and its eyes are strange even by insect standards. Look at one closely and you will see a small black dot in each big eye, and the dot seems to follow you around the room. That dot is not a pupil. It is called a pseudopupil, and it is simply the tunnel of eye tubes pointing straight back at you, swallowing the light instead of reflecting it. Wherever you stand, the tubes aimed at you look dark. Behind those eyes is something rarer. The mantis is the only insect known to see in true three dimensions. It compares the slightly different view from each eye and works out exactly how far away its target is, the same way you do. Scientists at a lab in England tested this by fitting mantises with tiny colored glasses and showing them 3D movies of bugs. The mantises struck at empty air where the fake bug appeared to be. That is proof the depth was in their heads, not in the room. Distance matters because a mantis only gets one try. It does not chase. It waits, disguised. Some species look like green leaves, some like dead brown leaves, some like sticks. The orchid mantis of Southeast Asia looks like a pink flower, and it works so well that insects fly to it instead of to real flowers. The disguise is not for hiding. It is bait."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why the pseudopupil seems to follow you.",
+            "How did the 3D glasses test show that mantises really see depth?",
+            "Why does the passage say distance matters so much to a mantis?",
+            "The passage says the orchid mantis disguise is bait, not hiding. Explain the difference."
+          ],
+          "rows": 2,
+          "answers": [
+            "the eye tubes aimed at you look dark, so the dark spot moves as you move",
+            "the mantises struck at empty air where the fake 3D bug appeared to be",
+            "it only gets one try, so the strike has to land at exactly the right reach",
+            "(hiding keeps prey away; bait brings prey closer on purpose)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A mantis catches food by seeing depth precisely and by disguising itself as something worth visiting",
+            "Insects in England wear glasses to protect their eyes",
+            "Flowers in Southeast Asia have learned to hunt insects"
+          ],
+          "answers": ["A mantis catches food by seeing depth precisely and by disguising itself as something worth visiting"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["pseudopupil → ____", "ambush → ____", "bait → ____"],
+          "rows": 1,
+          "answers": [
+            "the dark spot in a mantis eye made by eye tubes facing you, not a real pupil",
+            "an attack made from hiding, after waiting",
+            "something used to bring prey closer on purpose"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is waiting a better hunting plan than chasing? Give two reasons, and use one detail from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bug That Can Look Over Its Shoulder",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-praying-mantis", "templateLabel": "The Bug That Can Look Over Its Shoulder", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "praying-mantis",
+          "notes": ["One ear, on the belly, between the hind legs", "Tuned to ultrasound, the range bats shout in", "A flying mantis that hears a bat dives", "Many female mantises are too heavy to fly and still have the ear", "The ear shows up in mantis history around the time bats do", "Two ears tell direction, one ear only tells danger"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Ear, Aimed at the Dark",
+          "text": "Nearly every animal you can name keeps its ears on its head, and keeps two of them, because two is how you tell which direction a sound came from. The praying mantis broke both rules. It has exactly one ear, and the ear is not on its head. It sits in a groove on the underside of the body, between the back legs, a slot deep enough to hide a pin. One ear cannot locate anything. It cannot tell left from right, or in front from behind. For most purposes that would make it useless. But this ear was not built for most purposes. It is tuned almost entirely to ultrasound, to frequencies far above anything you can hear, and in the night sky there is really only one thing making that sound: a hunting bat. A bat finds its food by shouting and listening for the echo. A flying mantis hears the shout coming. It does not need to know where the bat is. It only needs to know that a bat is somewhere, and that it has very little time to stop being where it is. So the mantis folds up its legs, tips its head, and drops. Sometimes it spirals. Sometimes it dives straight into the grass. Scientists have watched this in the dark with high-speed cameras, and mantises that dive survive bat attacks far more often than mantises that fly on. Here is the part that makes the ear a puzzle worth thinking about. The ear is useless to the females of many species, because those females are too heavy to fly at all. They still have it. And the ear appears in mantis history roughly when bats do, tens of millions of years after mantises themselves. The mantis did not grow an ear to hear the world. It grew an ear to hear one enemy."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does having only one ear normally make an animal worse at hearing? Quote the phrase the passage uses.",
+            "Explain what the mantis does when it hears a bat, and why knowing the bat's exact position does not matter.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the single ultrasonic ear + the bat dive + the ear evolving after bats)",
+            "it cannot tell direction; quote: two is how you tell which direction a sound came from",
+            "it folds its legs, tips its head and drops or spirals; it only needs to leave the spot it is in",
+            "(inform, with detail: it defines how the ear works and cites camera studies; the ending has a persuasive turn)",
+            "(the ear evolved for one specific threat, not for general hearing; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["ultrasound → ____", "echo → ____", "locate → ____", "spirals → ____"],
+          "rows": 1,
+          "answers": [
+            "sound at frequencies too high for people to hear",
+            "a sound that bounces back off something and returns",
+            "to work out where something is",
+            "turns in a tightening circle while falling"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Flightless females keep an ear they cannot use. What does that tell you about how bodies change over time?",
+            "The passage says the ear appears around the time bats do. Why is that timing good evidence for the author's claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: features are inherited and stay unless there is pressure to lose them)",
+            "(inference: a defense showing up alongside the threat suggests the threat drove it)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does it make sense to call the mantis ear a bat detector rather than an ear? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bug That Can Look Over Its Shoulder",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-praying-mantis", "templateLabel": "The Bug That Can Look Over Its Shoulder", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "praying-mantis",
+          "notes": ["Order Mantodea, roughly 2,400 species", "Greek mantis means prophet or seer", "Raptorial front legs, hinged and spined", "Strike lands in about fifty milliseconds", "Closest living relatives: cockroaches and termites", "Sexual cannibalism happens in a minority of matings", "Not a protected species in the United States"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Patience Machine",
+          "text": "Every animal that hunts has to solve the same problem: how do you get close to something that does not want you close? Wolves solve it by running. Spiders solve it by building. The praying mantis solves it by disappearing while standing in plain sight, and then by being faster, for one twentieth of a second, than anything nearby can react to. Start with the name, because the name is a mistake. Early European naturalists watched the insect hold its folded front legs up beneath its face and decided it was at prayer. The Greek word mantis means prophet or seer, and for centuries people believed a mantis could point a lost child home. What the insect is actually doing is loading a weapon. Each front leg is a raptorial leg, hinged like a pocket knife, with two rows of hooked spines that close against each other. Held up under the head, the legs are not resting. They are cocked. The strike takes somewhere near fifty milliseconds, faster than your eye can follow and faster than a fly can launch. The mantis does not simply snap shut, either. High-speed film shows it adjusting its reach mid strike, correcting for the fly's own movement in the fraction of a moment while the legs are still traveling. This is why the eyes matter so much. A mantis judges distance in true three dimensions, comparing the view from each eye, and it is the only insect ever shown to do so. When researchers fitted mantises with tiny colored 3D glasses and played them movies, the insects struck at empty air. The rest of the animal is built around the waiting rather than the strike. Its shape is a lie: green leaf, dead leaf, twig, lichen, bark, and in the case of the orchid mantis of Southeast Asia, a pink and white flower so convincing that pollinators fly to it in preference to actual blossoms. The disguise is not defensive. It is a lure. The head swivels almost halfway around on a flexible neck, so the body never has to move and give the game away. And underneath, between the hind legs, sits a single ear tuned to the ultrasonic shouts of hunting bats, the one thing a patient insect cannot out-wait. Folklore has never quite forgiven the mantis. It is widely believed that the female always eats the male, and that killing a mantis is against the law. Neither is true. Field studies find cannibalism in a minority of matings, and it is more common in laboratory tanks where the female is hungry and the male cannot leave. The mantis has never been protected by law in the United States, despite how often people repeat that it is. What is true is stranger than the stories. The mantis is not a close cousin of the grasshopper. Its nearest living relatives are cockroaches and termites. Somewhere back in that shared family tree, a roach-like ancestor stopped scavenging, raised its front legs, learned to hold still, and became the most patient predator in the garden."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says the name is a mistake. Explain why, and cite the sentence that corrects the misreading.",
+            "Explain how the eyes and the strike depend on each other. Use one detail about each.",
+            "The author writes that the disguise is not defensive. It is a lure. Analyze what that two-sentence move does to the reader.",
+            "The passage spends its last section correcting folklore. Why put that at the end instead of the beginning?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the folded legs are a cocked weapon, not prayer; cite: What the insect is actually doing is loading a weapon)",
+            "(stereo vision measures exact distance; the mantis gets one fifty-millisecond strike and even corrects it mid reach)",
+            "(it flips an expectation: camouflage usually means hiding, so the short second sentence lands the reversal hard)",
+            "(the reader has to know how the animal really works before the myths can be dismantled; it also ends on the roach ancestor twist)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["raptorial → ____", "lure → ____", "ultrasonic → ____", "scavenging → ____"],
+          "rows": 2,
+          "answers": [
+            "built for seizing and holding prey",
+            "something that draws prey in on purpose",
+            "at a pitch too high for human hearing",
+            "feeding on food that is already dead or discarded"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author calls the mantis a patience machine. Judge whether the passage earns that phrase, using two pieces of evidence.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(evidence: it holds still and lets prey come to it; its whole body is disguise; the strike is the only fast part)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Calling the mantis a hunter is wrong, because it never hunts anything. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

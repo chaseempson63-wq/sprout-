@@ -1,0 +1,319 @@
+{
+  "key": "space-station",
+  "title": "The House That Never Stops Falling",
+  "blurb": "People have lived above your head every single day since 2000, in a machine that falls forever and always misses.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The House That Never Stops Falling",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-space-station", "templateLabel": "The House That Never Stops Falling", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the big shiny wings." },
+        {
+          "kind": "image",
+          "imageKey": "space-station",
+          "notes": ["It flies way above the clouds", "The big wings drink sunlight", "People live inside it", "Everything floats in there", "It goes around Earth all day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "High up in the sky there is a house. It is not on a hill. It is not on a street. It floats. The house is called the space station. People live inside it. They eat and sleep and work up there. Nothing sits still in the space station. Cups float. Spoons float. The people float too. The space station goes all the way around the Earth while you eat your lunch."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "space    float" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "astronaut", "right": "space station" },
+            { "left": "fish", "right": "water" },
+            { "left": "you", "right": "your house" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw yourself floating inside the space station. Draw your snack floating too.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The House That Never Stops Falling",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-space-station", "templateLabel": "The House That Never Stops Falling", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "space-station",
+          "notes": ["It flies about 250 miles up", "It circles Earth every 90 minutes", "Astronauts see 16 sunrises a day", "They sleep in bags tied to the wall", "The shiny wings turn sunlight into power"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Home in the Sky",
+          "text": "The space station is a home in the sky. It flies about 250 miles above your head. That is far above the clouds, and much higher than any airplane can go. Inside, there is no up and no down. Astronauts push off a wall with one finger and glide across the room. They sleep in bags tied to the wall, so they do not drift away in the night. The space station moves very fast. It goes all the way around the Earth in about ninety minutes. That means the astronauts watch the sun come up sixteen times every day."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How high does the space station fly?", "Why do astronauts tie their sleeping bags to the wall?", "How many sunrises do they see in a day?"],
+          "rows": 2,
+          "answers": ["about 250 miles above the Earth", "so they do not drift away while they sleep", "sixteen"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The space station is a home in the ____.", "Inside there is no up and no ____.", "Astronauts ____ across the room.", "It goes around the Earth in ninety ____."],
+          "wordBank": ["sky", "down", "glide", "minutes"],
+          "answers": ["sky", "down", "glide", "minutes"]
+        },
+        { "kind": "draw", "prompt": "Draw the space station flying over your town. Add the clouds far below it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The House That Never Stops Falling",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-space-station", "templateLabel": "The House That Never Stops Falling", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "space-station",
+          "notes": ["As long as a football field", "It weighs almost a million pounds", "Built in orbit, one piece at a time", "People have lived on it since the year 2000", "Salt and pepper come as liquids up there"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built in the Sky, One Piece at a Time",
+          "text": "The International Space Station is the biggest thing people have ever built off the Earth. It is about as long as a football field, and it weighs almost a million pounds. It flies roughly 250 miles up, circling the planet once every ninety minutes. Nobody carried it up in one piece. No rocket is big enough. So engineers built it like a model kit. They launched one piece at a time, over more than forty flights, and astronauts bolted the pieces together while floating outside in their suits. People have lived on board without a single break since November 2000. Somebody has been up there every day since then, including your last birthday, including today. Living there takes practice. Water does not pour, it clumps into wobbling balls. Salt and pepper come as liquids, because loose grains would drift off and land in somebody's eye. Astronauts strap into a treadmill for two hours a day, because muscles and bones get lazy when nothing has any weight."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How long is the space station, and how much does it weigh?",
+            "Why was the station launched in pieces instead of all at once?",
+            "What happens to water when you pour it up there?",
+            "Why do you think astronauts have to exercise every single day?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about as long as a football field, and it weighs almost a million pounds",
+            "no rocket is big enough to lift the whole thing",
+            "it clumps into wobbling balls instead of pouring",
+            "(inference: nothing has weight up there, so muscles and bones get weak without work)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Built in the Sky, One Piece at a Time", "How to Pack a Suitcase", "The Tallest Building in America"],
+          "answers": ["Built in the Sky, One Piece at a Time"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The station circles the planet every ____ minutes.", "Astronauts ____ the pieces together while floating outside.", "Salt and pepper come as ____ up there."],
+          "wordBank": ["ninety", "bolted", "liquids"],
+          "answers": ["ninety", "bolted", "liquids"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would be the hardest part of living on the space station, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The House That Never Stops Falling",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-space-station", "templateLabel": "The House That Never Stops Falling", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "space-station",
+          "notes": ["Gravity up there is still about 90 percent as strong", "It travels 17,500 miles per hour", "An orbit is just falling and missing", "Microgravity, not zero gravity", "The crew recycles about 98 percent of its water", "A flame burns as a dim blue ball, not a teardrop"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Space Station Does Not Fall Down",
+          "text": "Ask most people why astronauts float on the space station and they will tell you there is no gravity up there. That answer is wrong, and the truth is much better. At 250 miles up, Earth's gravity is still about ninety percent as strong as it is in your kitchen. The station is absolutely being pulled down. It is falling right now, as you read this. The reason it never lands is that it is also moving sideways at about 17,500 miles per hour. It falls, the ground curves away beneath it, and it misses. It has been missing the Earth for more than twenty five years. That is all an orbit is: falling forever, and missing. Everything inside falls at exactly the same rate, which is why an astronaut, her pencil, and her water bottle all hang in the air together as though weight had been switched off. Scientists call this microgravity, not zero gravity. Falling forever creates problems nobody expected. Hot air does not rise, so a candle burns as a dim blue ball instead of a teardrop. Sweat does not drip, it spreads across skin in a clinging film. Bones lose about one percent of their mass every month, so crews exercise two hours a day, strapped down so they do not launch themselves into the ceiling. Water is the hardest problem of all. Hauling it up by rocket costs a fortune, so the station recycles nearly everything it can, including sweat, the moisture in the crew's breath, and urine. The recovery system captures about ninety eight percent of it. Astronauts have a saying about the coffee up there: yesterday's coffee becomes today's coffee."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, explain why the space station does not fall to the ground.",
+            "The passage says an astronaut, her pencil, and her water bottle all hang in the air together. Why does that happen?",
+            "Why does the station go to so much trouble to recycle water?",
+            "What does the coffee saying at the end tell you about life on the station?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is falling, but moving sideways so fast that the Earth curves away and it misses",
+            "(inference: everything inside falls at the same rate, so nothing presses against anything else)",
+            "hauling water up by rocket costs a fortune, so almost nothing can be wasted",
+            "(inference: nothing is thrown away up there; the crew drinks recycled water and treats it as normal)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Astronauts float because the station is falling forever and missing the Earth, and that fact changes everything about living there",
+            "There is no gravity in space, so objects have no weight",
+            "Coffee tastes better in orbit than it does at home"
+          ],
+          "answers": ["Astronauts float because the station is falling forever and missing the Earth, and that fact changes everything about living there"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["orbit → ____", "microgravity → ____", "recovery system → ____"],
+          "rows": 1,
+          "answers": [
+            "falling around a planet fast enough sideways that you keep missing it",
+            "the floating feeling caused by falling, when gravity is still present but very little weight is felt",
+            "the machinery that cleans used water so it can be drunk again"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says the true answer is better than the wrong one. Do you agree? Explain which explanation you find more interesting and give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The House That Never Stops Falling",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-space-station", "templateLabel": "The House That Never Stops Falling", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "space-station",
+          "notes": ["Assembled in orbit between 1998 and 2011", "Five space agencies: USA, Russia, Europe, Japan, Canada", "About 356 feet across, roughly 925,000 pounds", "Oxygen made by splitting water with electricity", "Continuously crewed since November 2, 2000", "Planned to be steered down into the Pacific around 2030"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Machine Built by Rivals",
+          "text": "In 1975, an American Apollo capsule docked with a Soviet Soyuz in orbit, and the two commanders shook hands through the open hatch. On the ground, their countries were aiming nuclear weapons at each other. Twenty three years later, those same two nations began bolting a house together in the sky. The International Space Station was assembled in orbit between 1998 and 2011, from modules built in the United States, Russia, Japan, Europe, and Canada. No single rocket could lift it. Each piece flew up separately, and astronauts joined them together on spacewalks, working in pressurized suits with the planet turning below their boots. Finished, the station spans about 356 feet, roughly the length of a football field, and weighs around 925,000 pounds. It is the most expensive object ever built. Its parts were designed on different continents, in different languages, and they had to fit together on the first try, in vacuum, at 17,500 miles per hour. The station makes its own air. Electricity from its solar arrays splits water into hydrogen and oxygen, and the crew breathes the oxygen. Carbon dioxide is scrubbed back out of the cabin before it can build up to a dangerous level. Water is reclaimed from sweat, from the humidity the crew exhales, and from urine, at a recovery rate near ninety eight percent. Almost nothing is thrown away, because anything thrown away must be replaced by a rocket. Crews have lived on board continuously since November 2, 2000. Not one day since then has passed with every human being on Earth. More than 280 people from over twenty countries have visited, and thousands of experiments have run on board, from growing lettuce in a box to burning flames that make no smoke. The station will not last forever. Metal fatigues, seals leak, and even at 250 miles up there are thin traces of atmosphere dragging it slowly downward, so engines must shove it back up again and again. Around 2030, the agencies plan to steer the whole structure down into a remote stretch of the South Pacific, where it will break apart and burn. The most complicated thing our species has ever assembled will end as a streak of light over empty ocean, watched by almost nobody."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the author open with the 1975 handshake instead of starting with the station itself?",
+            "Explain why almost nothing on the station is thrown away. Quote the phrase the passage uses.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What is the effect of the final sentence, and why might the author have ended there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering rival nations, orbital assembly, closed life support, and the planned end)",
+            "(it sets up the surprise that enemies built something together; the handshake foreshadows the partnership)",
+            "anything thrown away must be replaced by a rocket; quote: because anything thrown away must be replaced by a rocket",
+            "(inform, with detail: it gives dates, sizes, and processes; the closing lines carry a persuasive or emotional tone)",
+            "(inference: it makes the ending feel lonely and undeserved after so much effort; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["assembled → ____", "reclaimed → ____", "fatigues (metal) → ____", "remote → ____"],
+          "rows": 1,
+          "answers": [
+            "put together from separate parts",
+            "recovered and made usable again",
+            "grows weak and cracks after long use and stress",
+            "far away from people and places"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the parts had to fit together on the first try, in vacuum, at 17,500 miles per hour. Why was there no second chance?",
+            "Why might two countries that distrust each other still choose to build one machine they must share?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: there is no workshop in orbit, no way to send a part back, and a spacewalking crew cannot rebuild a module)",
+            "(opinion: shared dependence makes walking away costly, and the cost or difficulty is too great for one country alone)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: around 2030 the station will be steered into the ocean and destroyed. Should it be, or should we spend the money to keep it flying? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The House That Never Stops Falling",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-space-station", "templateLabel": "The House That Never Stops Falling", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "space-station",
+          "notes": ["1993: the USA and Russia agree to build it together", "US segment supplied power, Russian segment supplied propulsion", "42 assembly flights from two continents, 1998 to 2011", "925,000 pounds, 356 feet, 17,500 miles per hour", "Water recovery near 98 percent, oxygen split from water", "Deorbit planned around 2030 into the South Pacific"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Falling Forever: The Machine Built by Enemies",
+          "text": "Nothing about the International Space Station should have worked. Consider the political problem first. The station's two largest partners, the United States and Russia, spent forty years of the twentieth century preparing to destroy one another. In 1993, with the Soviet Union barely two years dead, their space agencies agreed to build a laboratory together in orbit. Neither could easily walk away afterward, because the design made them dependent on each other. For years the American segment supplied most of the electrical power, while the Russian segment supplied the engines that kept the whole structure from sinking out of the sky. Each half was useless alone. That was not an accident of engineering. It was a decision. Now consider the physical problem. The station weighs around 925,000 pounds and stretches about 356 feet, the length of a football field. No rocket that has ever flown could lift it. So it was not lifted. It was mailed, piece by piece, across more than forty launches from two continents between 1998 and 2011, and assembled by astronauts in pressurized suits traveling at 17,500 miles per hour, with the Earth rolling past beneath their boots every ninety minutes. Modules machined in Russia, Japan, Italy, and the United States met for the first time in vacuum, at speed, and had to mate on the first attempt. There was no workshop, no second try, no way to send a part back. The station survives on closed loops. Solar arrays feed electricity to a system that splits water into hydrogen and oxygen, and the crew breathes the oxygen. Scrubbers pull carbon dioxide back out of the cabin air before it reaches a dangerous level. The water recovery system reclaims sweat, exhaled humidity, and urine, returning roughly ninety eight percent of it to the drinking supply. This is not thrift for its own sake. Every pound that cannot be recycled must be flown up on a rocket, and rockets are the most expensive delivery service ever devised. Scarcity, not virtue, made the station the most efficient recycler humans have ever operated. And the whole arrangement is falling. This is the part most people get wrong. Gravity at that altitude is still roughly ninety percent as strong as it is at your kitchen table. The station is pulled toward the ground constantly, and constantly fails to arrive, because it is also traveling sideways fast enough that the planet curves away beneath it. An orbit is not an escape from gravity. It is a permanent, accurate miss. Everything inside falls at the same rate as the walls, which is why a wrench, a crumb, and a scientist all hang in the air together. Since November 2, 2000, there has not been a single day when every living human was on Earth. That may be the station's real achievement, and it is not a scientific one. Thousands of experiments have run on board, and some of them matter, but no discovery from those laboratories has changed the world the way the plain existence of the thing has. It is proof that the countries with the deepest reasons to distrust each other can keep a shared machine alive for a quarter of a century, in a place where a mistake by any of them kills all of them. Around 2030, it comes down. Thin traces of atmosphere drag at it, metal fatigues, seals age, and the plan is to fire engines and steer the entire structure into an empty stretch of the South Pacific, where it will break apart and burn. The most complex object our species has ever built will end as a bright streak over open water. The day after it falls, the sky above us will be empty of people for the first time in thirty years."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by writing that each half was useless alone. Cite the two sentences that follow it and explain what they add.",
+            "The author claims the station's recycling is not admirable in the way people assume. Quote the sentence that makes this claim and explain the reasoning behind it.",
+            "Identify where the passage turns from engineering to meaning. How does the author signal that shift?",
+            "The passage argues the station's real achievement is not scientific. Analyze that claim: what is the author doing, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: rival nations built a permanently crewed, self-recycling laboratory in perpetual freefall, and will destroy it around 2030)",
+            "(neither country could run the station without the other; cite: That was not an accident of engineering. It was a decision. They add that the dependence was designed on purpose to keep the partnership together)",
+            "(quote: Scarcity, not virtue, made the station the most efficient recycler humans have ever operated. Reasoning: recycling is forced by launch cost, not chosen for ethics)",
+            "(at Since November 2, 2000, there has not been a single day when every living human was on Earth; the author drops the technical detail and states a claim about value)",
+            "(the author reframes an engineering story as a political one; supported by the 1993 agreement, the designed dependence, and the 25 unbroken years, though a reader could argue the science is undersold)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["segment → ____", "vacuum → ____", "scarcity → ____", "deorbit → ____"],
+          "rows": 2,
+          "answers": [
+            "a distinct section of the station built and run by one partner",
+            "space with essentially no air in it",
+            "a shortage that forces careful use of what you have",
+            "to deliberately slow a spacecraft so it falls back into the atmosphere"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that the design made the partners dependent on each other, and calls that a decision. Argue for or against building shared dependence into a project on purpose.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: dependence raises the cost of quitting and forces cooperation, but it also means one partner's failure or politics can strand the other)",
+            "(student question plus a credible source type, such as an agency budget report, an engineering paper, or an astronaut interview)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The space station was worth its cost even if not one experiment on board had succeeded. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "key": "satellite",
+  "title": "The Machine That Is Always Falling",
+  "blurb": "A satellite does not hover. It falls forever, missing the Earth by exactly the right amount, and that is how it stays up.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Machine That Is Always Falling",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-satellite", "templateLabel": "The Machine That Is Always Falling", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the flat shiny wings." },
+        {
+          "kind": "image",
+          "imageKey": "satellite",
+          "notes": ["It flies high above the clouds", "Its wings drink sunlight", "It goes around and around the Earth", "It has no people inside", "The moon is a satellite too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up at night. Way up high, past the clouds, little machines are flying around the Earth. We call them satellites. A satellite has wide flat wings. The wings drink sunlight. The sunlight gives the satellite power. Around and around and around it goes. It never stops. It takes pictures of the clouds. It helps a map tell your mom which way to go."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "up    sky    star" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "satellite", "right": "space" },
+            { "left": "fish", "right": "water" },
+            { "left": "dog", "right": "yard" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a satellite with big wings. Put the Earth under it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Machine That Is Always Falling",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-satellite", "templateLabel": "The Machine That Is Always Falling", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "satellite",
+          "notes": ["The flat wings are covered in solar cells", "The first one was named Sputnik", "It was the size of a beach ball", "All it did was beep", "Some satellites watch storms"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Is Always Falling",
+          "text": "A satellite is a machine that circles the Earth. It has no motor running all the time. Here is the strange part. A satellite is falling. It moves sideways so fast that it keeps missing the ground, and the missing turns into a circle. Some satellites watch the weather. They see a storm coming before we do. Some send phone calls and shows around the world. Some help a car find the way. The first satellite was called Sputnik. It was the size of a beach ball. All it did was beep."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a satellite go around?", "What is a satellite always doing?", "What was the first satellite called?"],
+          "rows": 2,
+          "answers": ["it circles the Earth", "it is falling", "it was called Sputnik"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A satellite circles the ____.", "It keeps missing the ____.", "Some satellites watch the ____.", "The first one was the size of a beach ____."],
+          "wordBank": ["Earth", "ground", "weather", "ball"],
+          "answers": ["Earth", "ground", "weather", "ball"]
+        },
+        { "kind": "draw", "prompt": "Draw a satellite flying over your house. Add clouds far below it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Machine That Is Always Falling",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-satellite", "templateLabel": "The Machine That Is Always Falling", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "satellite",
+          "notes": ["A satellite is falling, not hovering", "The space station laps the Earth in 90 minutes", "Astronauts see 16 sunrises a day", "Solar wings make the power", "The moon is Earth's natural satellite"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Satellites Do Not Fall Down",
+          "text": "Throw a ball and it curves down to the grass. Throw it harder and it lands further away. Now imagine throwing it so hard that the Earth curves away underneath it faster than the ball can drop. The ball would never land. It would fall around the whole planet and come back and hit you in the back of the head. That is a satellite. A satellite is not hovering. It is falling, all day, every day. It just moves sideways fast enough to keep missing the ground. The space station is doing it right now, at about seventeen thousand miles an hour. It goes all the way around the Earth in ninety minutes. The astronauts inside watch the sun come up sixteen times a day. Because a satellite never has to push itself along, it barely needs fuel. It spreads out flat wings covered in solar cells, drinks sunlight, and keeps falling for years."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens to a ball when you throw it harder?",
+            "A satellite is not hovering. What is it really doing?",
+            "How long does the space station take to circle the Earth once?",
+            "Why do you think a satellite barely needs any fuel?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it lands further away",
+            "it is falling and keeps missing the ground",
+            "about ninety minutes",
+            "(inference: nothing slows it down up there, so it does not need to push itself along)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Satellites Do Not Fall Down", "How to Build a Paper Airplane", "The Tallest Mountain on Earth"],
+          "answers": ["Why Satellites Do Not Fall Down"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A satellite keeps ____ the ground.", "The space station laps the Earth in ____ minutes.", "Flat wings covered in solar cells drink ____."],
+          "wordBank": ["missing", "ninety", "sunlight"],
+          "answers": ["missing", "ninety", "sunlight"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a satellite stays up, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Machine That Is Always Falling",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-satellite", "templateLabel": "The Machine That Is Always Falling", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "satellite",
+          "notes": ["Sputnik 1 launched October 4, 1957", "About 23 inches across, 184 pounds", "It orbited once every 96 minutes", "It only beeped, and it beeped for 21 days", "Anyone with a radio could hear it", "It burned up three months later"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Beeping Ball That Changed Everything",
+          "text": "On October 4, 1957, the Soviet Union launched a polished metal ball about the size of a beach ball into orbit. It was called Sputnik 1. It weighed roughly as much as a large dog, carried four long antennas, and could do exactly one thing. It beeped. Every 96 minutes it circled the entire planet, sending out a plain radio tone that any person on Earth with a shortwave radio could tune in and hear for themselves. That was the whole mission. No camera, no science instrument, no crew. Just a beep, passing overhead every hour and a half. It terrified people anyway. Americans went outside at dusk to look for the moving spark of light, and understood something quietly enormous: if a machine could be flung over their heads, so could anything else. Within a year the United States founded NASA. Within four years there were humans in orbit. Within twelve there were bootprints on the moon. Sputnik ran out of battery after 21 days and went silent. Three months later it slipped low enough for the air to catch it, and it burned up on the way back down. It had traveled about 43 million miles doing nothing but beeping, and it had started the space age."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What was Sputnik 1 able to do, and what could it not do?",
+            "The passage says people were terrified anyway. Why would a beeping ball frighten anyone?",
+            "What does the writer mean by something quietly enormous?",
+            "Why do you think the passage lists what happened within a year, four years, and twelve years?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it sent out a radio beep; it had no camera, no instruments, and no crew",
+            "(inference: if a rocket can put a machine over your country, it can put other things there too)",
+            "(the realization was small to see but huge in meaning)",
+            "(to show how fast the space age moved once Sputnik proved it was possible)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A simple satellite that only beeped changed how the world thought about space",
+            "Radios were the most popular invention of the 1950s",
+            "Sputnik 1 carried the first astronaut into orbit"
+          ],
+          "answers": ["A simple satellite that only beeped changed how the world thought about space"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["orbit → ____", "antenna → ____", "shortwave (radio) → ____"],
+          "rows": 1,
+          "answers": [
+            "the path a satellite takes around a planet",
+            "a rod that sends out or picks up radio signals",
+            "a radio that can pick up signals from very far away"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: Sputnik did almost nothing, yet people call it one of the most important machines ever built. Do you agree? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Machine That Is Always Falling",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-satellite", "templateLabel": "The Machine That Is Always Falling", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "satellite",
+          "notes": ["Low orbit: about 250 miles up, one lap per 90 minutes", "Geostationary: 22,236 miles up, one lap per day", "A geostationary satellite looks parked in the sky", "GPS satellites orbit about 12,550 miles up", "Arthur C. Clarke described the idea in 1945", "The higher the orbit, the slower the lap"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Satellite That Stands Still",
+          "text": "Every satellite is falling. That is not a figure of speech. Gravity pulls on a satellite exactly as it pulls on a dropped apple, and the satellite obeys. The trick is that the satellite is also moving sideways, very fast, and the surface of the Earth curves away beneath it at almost exactly the rate it drops. It falls and falls and never arrives. Isaac Newton worked this out on paper centuries before anyone could build one. He imagined a cannon on a mountaintop so powerful that the ball never came down. Here is where it gets useful. How fast a satellite must travel depends on how high it is. Down low, a couple of hundred miles up, it has to sprint: about 17,000 miles an hour, a full lap in ninety minutes. Climb higher and gravity is weaker, so the required speed drops and the lap takes longer. At 22,236 miles above the equator, the math lands on something remarkable. At that exact altitude a satellite takes 24 hours to complete one orbit. The Earth also takes 24 hours to spin once. The two match. To anyone standing on the ground, that satellite does not move at all. It hangs in the sky like a nail in a wall, day and night, forever. That is why a satellite dish on a house can be bolted in place and never adjusted again. It is aimed at a spot that never moves. A science fiction writer named Arthur C. Clarke described this orbit in a magazine article in 1945, twelve years before Sputnik existed. He worked out that three satellites in that ring could relay signals to nearly the whole planet. He never patented it. He assumed nobody would build such a thing in his lifetime, and he was wrong by decades."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why a satellite in a low orbit must travel faster than one in a high orbit.",
+            "What makes 22,236 miles a special altitude? Quote the phrase the passage uses to describe how it looks from the ground.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end with Clarke being wrong by decades?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering orbit as falling + how altitude sets speed + geostationary orbit)",
+            "gravity is stronger down low, so the satellite must move faster sideways to keep missing the ground",
+            "a 24 hour orbit matches the Earth's 24 hour spin; quote: like a nail in a wall",
+            "(inform, with detail: it explains mechanics and defines terms, though it uses vivid images to hold attention)",
+            "(inference: it shows how fast the idea went from imagination to everyday technology)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["orbit → ____", "altitude → ____", "relay → ____", "geostationary → ____"],
+          "rows": 1,
+          "answers": [
+            "the falling path an object takes around a planet",
+            "height above the ground",
+            "to receive a signal and pass it on",
+            "an orbit that keeps a satellite above the same spot on Earth"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a satellite falls and falls and never arrives. Explain that in your own words.",
+            "A geostationary satellite must sit above the equator. Why would that be a problem for someone living in far northern Canada?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it is always dropping, but its sideways speed carries it past the planet each time)",
+            "(inference: from far north the satellite sits very low on the horizon, so hills and buildings block the signal)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: Clarke gave his idea away for free instead of patenting it. Should inventors of ideas that everyone depends on be paid for them? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Machine That Is Always Falling",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-satellite", "templateLabel": "The Machine That Is Always Falling", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "satellite",
+          "notes": ["GPS satellites orbit about 12,550 miles up", "Each carries an atomic clock", "A receiver needs four satellites, not three", "Orbiting clocks run fast by about 38 millionths of a second a day", "Uncorrected, GPS would drift about 6 miles a day", "Over 30,000 pieces of space junk are tracked"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Clocks That Have to Lie About Time",
+          "text": "The phone in your pocket knows where it is on the planet to within a few feet, and it does this by listening to clocks that are falling around the Earth. Roughly thirty GPS satellites circle about 12,550 miles overhead, each completing a lap in just under twelve hours. None of them knows you exist. They do not track you, and they never receive anything from you. Each one simply broadcasts, over and over, a plain message that says who it is and precisely what time it is right now. Your phone does all the work. It catches a message, notes that the time stamp inside it is slightly older than the current moment, and multiplies that tiny delay by the speed of light to learn how far away that satellite was. One satellite narrows your position to the surface of an enormous sphere. Two narrow it to a circle. Three narrow it to a point. So why does a receiver need a fourth? Because your phone does not contain an atomic clock. The satellites do, but a phone's cheap clock drifts constantly, and at the speed of light an error of a single millionth of a second becomes a position error of about 1,000 feet. The fourth satellite solves that. With four signals, the receiver has enough information to work out its own clock error and correct it. Your phone is not just finding itself in space. It is fixing its own sense of time, continuously, all day. Then the physics gets stranger. Einstein showed that time is not a fixed background. It runs slower for objects moving quickly, and it runs faster where gravity is weaker. A GPS satellite is doing both at once. It is racing along at roughly 8,700 miles per hour, which drags its clock behind ground clocks by about 7 millionths of a second per day. It is also 12,550 miles above the Earth, where gravity's grip has loosened, which pushes its clock ahead by about 45 millionths of a second per day. The two effects do not cancel. The net result is that every GPS clock in orbit ticks about 38 millionths of a second fast each day. That sounds like nothing. Multiply it by the speed of light and it is not nothing. Left uncorrected, the errors would compound and GPS positions would drift by roughly 6 miles per day, and the whole system would be useless by the end of the first week. So the engineers cheated on purpose. Before launch, the atomic clocks on GPS satellites were deliberately set to tick at the wrong rate, slightly slow, so that once they reached orbit and relativity sped them up, they would be running right. A theory that Einstein published in 1915, with no application in mind whatsoever, is quietly holding up navigation for the entire planet. There is a cost to filling the sky. More than 30,000 pieces of debris are tracked in orbit right now: dead satellites, spent rocket stages, fragments of old collisions. At orbital speed, a fleck of paint hits with the force of a bullet. In 1978 a NASA scientist named Donald Kessler warned that if the junk grew dense enough, one collision could scatter fragments that caused more collisions, and the cascade could seal low orbit off for generations. We are still adding satellites, faster now than ever."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage insists that GPS satellites do not track you. Explain who does the actual work, and cite the evidence.",
+            "Explain precisely why a receiver needs a fourth satellite when three are enough to fix a point in space.",
+            "The two relativity effects pull in opposite directions. Explain both, and explain why the author says they do not cancel.",
+            "Identify the shift in the passage: where does the tone turn, and how does the author signal it?",
+            "Analyze the last sentence. What is the author doing by ending there, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the receiver does the work; cite: Your phone does all the work)",
+            "(the phone has no atomic clock, so the fourth signal lets it solve for its own clock error)",
+            "(speed slows the clock by 7 microseconds a day, weaker gravity speeds it up by 45; the net is 38 fast because the gravity effect is larger)",
+            "(at There is a cost to filling the sky; a short flat sentence pivots from wonder to warning)",
+            "(it leaves the reader with an unresolved risk; accept either side if supported by the debris and Kessler evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["broadcast → ____", "atomic clock → ____", "compound → ____", "cascade → ____"],
+          "rows": 2,
+          "answers": [
+            "to send a signal outward to anyone listening, without expecting a reply",
+            "an extremely precise clock timed by the vibrations of atoms",
+            "to build on itself so an error grows larger over time",
+            "a chain reaction where each event triggers more of the same"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the engineers cheated on purpose. Explain what they actually did and why that word choice is doing work.",
+            "Einstein's 1915 theory had no application in mind. What does that suggest about funding research with no obvious use?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(they set the clocks slow before launch so orbit would speed them to the correct rate; cheated is playful, since it is really a correction)",
+            "(opinion: useless-looking research can become essential infrastructure decades later)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Countries should be required to remove an old satellite from orbit before they are allowed to launch a new one. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

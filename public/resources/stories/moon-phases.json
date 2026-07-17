@@ -1,0 +1,319 @@
+{
+  "key": "moon-phases",
+  "title": "The Moon Is Always Round",
+  "blurb": "The moon never changes shape. It is a lit ball of rock, and every night you see it from a new angle.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Moon Is Always Round",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-moon-phases", "templateLabel": "The Moon Is Always Round", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the biggest moon and the thinnest moon." },
+        {
+          "kind": "image",
+          "imageKey": "moon-phases",
+          "notes": ["The moon comes out at night", "It is made of gray rock", "The sun lights it up", "It is always round", "A thin moon is called a crescent"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up at night. There is the moon. Some nights the moon is big and round. Some nights it is a thin curve. Some nights you cannot find it at all. The moon is not really changing. The sun shines on one half of it. Each night we see that bright half from a new spot. The moon is always round. We just cannot always see the whole round part."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the moons in each row. Write how many in the box.",
+          "emoji": "🌙",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "moon    night" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each moon to its shape.",
+          "pairs": [
+            { "left": "full moon", "right": "round like a ball" },
+            { "left": "crescent moon", "right": "thin like a curve" },
+            { "left": "new moon", "right": "dark, you see none" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the moon over your house at night. Add some stars.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Moon Is Always Round",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-moon-phases", "templateLabel": "The Moon Is Always Round", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "moon-phases",
+          "notes": ["The moon has no light of its own", "It shines with borrowed sunlight", "It goes around the Earth", "About 29 days from full moon to full moon", "The moon is gray, not white"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Moon Is Always Round",
+          "text": "The moon does not make its own light. There is no lamp inside it. The light you see is sunlight bouncing off gray rock. The sun shines on one half of the moon all the time. The other half stays dark. But the moon moves around the Earth. So each night we see a little more of the bright half, or a little less. That is why the moon looks like a big circle one week and a thin curve the next. It takes about 29 days to go from one full moon to the next full moon. The moon never changes shape. It is always round. We just cannot always see the whole round part."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does moonlight come from?", "How much of the moon does the sun light up?", "How many days pass between one full moon and the next?"],
+          "rows": 2,
+          "answers": ["sunlight bouncing off the moon", "one half of it", "about 29 days"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The moon does not make its own ____.", "The sun lights up one ____ of the moon.", "The moon moves around the ____.", "The moon is always ____."],
+          "wordBank": ["light", "half", "Earth", "round"],
+          "answers": ["light", "half", "Earth", "round"]
+        },
+        { "kind": "draw", "prompt": "Draw the moon three times: round and full, half lit, and a thin curve.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Moon Is Always Round",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-moon-phases", "templateLabel": "The Moon Is Always Round", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "moon-phases",
+          "notes": ["Moonlight is really sunlight", "The moon takes about a month to circle Earth", "Crescent, quarter, gibbous, full", "The word month comes from the word moon", "The same side always faces us"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Moon Changes Shape",
+          "text": "The moon looks different every night, but it never actually changes shape. It is a ball of rock, and it stays a ball of rock. Here is what is really going on. The moon makes no light of its own. Every bit of moonlight you have ever seen is sunlight bouncing off gray rock and dust. The sun always lights up exactly half of the moon, the half that faces it. The other half stays dark. That never stops being true. The moon takes about a month to travel all the way around the Earth. As it travels, we look at it from a different angle each night. Sometimes we see the whole lit half at once, and we call that a full moon. Sometimes the lit half is turned away from us and we see almost nothing, which we call a new moon. In between, we catch the lit half at a slant: a thin crescent, then a half circle, then a fat lopsided shape called a gibbous moon. So the moon is not growing and shrinking. You are just walking around a lit ball and seeing it from new places. Long before there were calendars on the wall, people counted time by those shapes. That is why the word month sounds so much like the word moon."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where does moonlight actually come from?",
+            "How much of the moon is lit by the sun at any moment?",
+            "What do we call the moon when its lit half is turned away from us?",
+            "Why do you think people used the moon to count time before they had calendars?"
+          ],
+          "rows": 2,
+          "answers": [
+            "sunlight bouncing off gray rock and dust",
+            "exactly half of it",
+            "a new moon",
+            "(inference: the shapes repeat, and everyone can see them for free)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Moon Changes Shape", "How to Build a Rocket", "The Biggest Star in the Sky"],
+          "answers": ["Why the Moon Changes Shape"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Moonlight is really ____ bouncing off rock.", "When we see the whole lit half, we call it a ____ moon.", "The fat shape between half and full is called a ____ moon."],
+          "wordBank": ["sunlight", "full", "gibbous"],
+          "answers": ["sunlight", "full", "gibbous"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what shape is the moon tonight, and what do you think you will see in a week?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Moon Is Always Round",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-moon-phases", "templateLabel": "The Moon Is Always Round", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moon-phases",
+          "notes": ["Phases come from angle, not shadow", "Earth's shadow only causes eclipses", "Gibbous comes from a Latin word for humped", "New moon: lit side faces away from us", "Full moon rises about when the sun sets", "The moon is as dark as an old parking lot"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Half That Faces the Sun",
+          "text": "Ask most people what makes the moon change shape and they will tell you the Earth's shadow creeps across it. That answer is wrong, and it is wrong in an interesting way. Start with two facts. First, the moon has no light of its own. It is dark gray rock, about as reflective as an old parking lot, and it glows only because sunlight lands on it. Second, sunlight arrives from one direction, so it can light only one half of the moon at a time. The half facing the sun is bright. The half facing away is black. That is true every second of every day, and it never changes. What changes is you. The moon circles the Earth once a month or so, which swings your view of it around. When the moon sits roughly between the Earth and the sun, its lit half points away from you and you see almost nothing. Astronomers call that a new moon. When the Earth sits between the sun and the moon, the lit half faces you completely and you get a full moon, which is why a full moon rises at about the time the sun sets. Every night in between, you catch the lit half at an angle: a sliver, then a half circle, then a fat lopsided shape called gibbous, from a Latin word meaning humped. So where does the Earth's shadow come in? It is real, and it does fall on the moon, but only rarely and only for a few hours. That is a lunar eclipse, and it happens two or three times a year at most. Phases happen every single night. They have nothing to do with shadow. They are about which part of a lit ball you happen to be standing where you can see."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why only half the moon is ever lit.",
+            "The passage says \"What changes is you.\" What does the author mean by that?",
+            "Why is a lunar eclipse a bad explanation for the phases?",
+            "Why do you think so many people believe the shadow explanation even though it is wrong?"
+          ],
+          "rows": 2,
+          "answers": [
+            "sunlight comes from one direction, so it can only reach the side facing it",
+            "(the moon stays the same; our viewing angle moves as the moon orbits)",
+            "eclipses happen only two or three times a year, but phases happen every night",
+            "(opinion: a shadow is easy to picture and nobody corrects it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Moon phases come from our changing view of a permanently half lit ball, not from Earth's shadow",
+            "The moon is slowly breaking apart into smaller pieces",
+            "Lunar eclipses are the reason we see a crescent moon"
+          ],
+          "answers": ["Moon phases come from our changing view of a permanently half lit ball, not from Earth's shadow"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["gibbous → ____", "lunar eclipse → ____", "reflective → ____"],
+          "rows": 1,
+          "answers": [
+            "the fat humped shape between half and full",
+            "the rare event when Earth's shadow falls on the moon",
+            "how much light a surface bounces back"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining moon phases to a five year old. Use no science words, and give one example they could see for themselves.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Moon Is Always Round",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-moon-phases", "templateLabel": "The Moon Is Always Round", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moon-phases",
+          "notes": ["Orbit: 27.3 days. Phase cycle: 29.5 days", "Waxing means growing, waning means shrinking", "First quarter looks like a half disc", "Albedo about 12 percent, like worn asphalt", "Eight named phases in one cycle", "The moon rises about 50 minutes later each day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Eight Names for One Rock",
+          "text": "The moon is the easiest object in the sky to find and one of the easiest to misunderstand. Almost everyone has been told at some point that its phases come from the Earth's shadow. They do not. The phases are a trick of geometry, and once you see the trick you cannot unsee it. Three facts do all the work. The moon produces no light. It reflects sunlight off rock so dark that a piece of it in your hand would look like charcoal. Sunlight arrives from one direction, so exactly half the moon is lit at any instant, no more and no less. And the moon orbits the Earth, finishing a lap in about 27.3 days but returning to the same phase only every 29.5 days. That gap exists because the Earth refuses to hold still. It carries us around the sun while the moon circles us, so the moon must travel a little farther each cycle to line up the same way again. Put the three facts together. Your view of the lit half swings around as the moon travels. When the moon lies roughly between the Earth and the sun, its bright side faces away and it vanishes into daytime glare. That is the new moon. A few nights later a thin crescent hangs low in the west after sunset, and it grows, or waxes, night after night. At first quarter you see half a disc, even though the moon has finished only a quarter of its orbit. The name tracks the orbit, not the picture. It keeps swelling into a gibbous shape, from the Latin gibbus, meaning hump, until the Earth sits between the sun and the moon and the whole lit face turns our way. That is the full moon, and it rises almost exactly as the sun sets. Then the shape shrinks, or wanes, back through gibbous, last quarter, and crescent, and disappears again. The Earth's shadow does touch the moon, but only during a lunar eclipse, and only a few times a year. Phases run every night without fail. The difference matters, because it is the difference between an accident and a clock. Human beings ran their calendars on that clock for thousands of years, and some still do. The word month is the word moon, worn down by use."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why is the phase cycle longer than the orbit? Quote the phrase the passage uses about the Earth.",
+            "Explain why a first quarter moon looks like a half circle.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author calls the moon a clock. Explain what that comparison is doing."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering reflected light, the half lit ball, and the changing viewing angle)",
+            "the Earth moves around the sun while the moon orbits us; quote: the Earth refuses to hold still",
+            "the name counts a quarter of the orbit, not a quarter of the disc; half the lit face is turned toward us",
+            "(inform, with detail: it defines terms and gives numbers; some persuasive tone in correcting the shadow myth)",
+            "(the phases repeat reliably, so people could measure time by them)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["waxes → ____", "wanes → ____", "gibbous → ____", "glare → ____"],
+          "rows": 1,
+          "answers": [
+            "grows larger night after night",
+            "shrinks back night after night",
+            "the humped shape between half and full",
+            "harsh light that hides something from view"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "If you stood on the moon and looked back at Earth, would the Earth show phases too? Explain your reasoning.",
+            "Why would a calendar built only on moon cycles slowly drift out of step with the seasons?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(yes: the same geometry applies, and Earth would show the opposite phase to the moon we see)",
+            "(inference: 12 lunar cycles is about 354 days, which is short of a solar year)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should schools spend time correcting common science myths like the shadow explanation, or just teach the right answer once? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Moon Is Always Round",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-moon-phases", "templateLabel": "The Moon Is Always Round", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moon-phases",
+          "notes": ["Sidereal orbit 27.3 days, synodic cycle 29.5 days", "Terminator: the line between lit and dark", "Anaxagoras explained phases around 450 BC", "Earthshine: sunlight bounced off Earth onto the moon", "Albedo about 0.12, roughly worn asphalt", "Tidally locked: one face always toward Earth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Moon Is Always Full",
+          "text": "Here is a sentence worth sitting with: the moon is always full. It is always a sphere, and the sun always lights exactly half of that sphere. Nothing about the moon changes between Tuesday and Thursday. What changes is the angle you are standing at. That is the whole of it, and yet the phases of the moon may be the most widely misunderstood thing in the sky. Ask a room of adults and a good number will tell you the Earth's shadow creeps across the moon and carves out the crescent. It is a reasonable guess, and it is wrong. The Earth's shadow does fall on the moon, but only during a lunar eclipse, only when the three bodies line up precisely, and only a couple of times a year. Phases run every night without fail. A cause that appears twice a year cannot explain an effect that appears 365 nights a year. The real explanation was worked out roughly 2,500 years ago. Anaxagoras, a Greek thinker living in Athens, argued that the moon is not a god or a lamp but a rock, that it borrows its light from the sun, and that both the changing shape and the occasional eclipse follow from where that rock happens to sit. He was reportedly prosecuted for saying so. He was also right. Follow the geometry. Sunlight arrives in essentially parallel rays from one direction, so half the moon is lit and half is dark, permanently. The line dividing them is called the terminator. The moon takes about 27.3 days to orbit the Earth but 29.5 days to return to the same phase, because the Earth does not hold still. It carries us around the sun the whole time, so the moon must swing a little farther each cycle to line up again. As the moon moves, your line of sight cuts across the lit half at a new angle every night. Near new moon you are looking almost straight at the dark side. Near full moon you are looking almost straight at the lit side. Everything else is in between: crescent, quarter, gibbous, a smooth sweep from nothing to everything and back. Two details reward attention. The first is that a quarter moon looks like a half. It is called first quarter because the moon has finished one quarter of its orbit, not because a quarter of the disc is lit. The name tracks the clock, not the picture. The second is earthshine. On a thin crescent, look at the dark portion and you can often make out a faint gray circle, the rest of the moon, dimly there. That light is sunlight that struck the Earth, bounced off our oceans and clouds, crossed a quarter of a million miles, and landed on lunar rock. Leonardo da Vinci reasoned that out in a notebook around 1510. Skywatchers had a phrase for the sight long before anyone knew the cause: the old moon in the new moon's arms. The moon is also far darker than it looks. Its surface returns only about twelve percent of the light that hits it, roughly the reflectiveness of worn asphalt. It looks brilliant to you only because it hangs against a black sky. None of this is trivia. Almost every ancient calendar was a moon calendar, because the moon is a clock anyone can read for free, without instruments and without permission. The Islamic year still runs on it. The date of Easter still depends on it. The English word month is the word moon, worn smooth by several thousand years of mouths. The shape overhead tonight is not information about the moon. It is information about where you are standing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the author's argument against the shadow myth. Cite the sentence that carries the logic.",
+            "Why is the synodic cycle longer than the orbit? Cite the phrase the passage uses about the Earth.",
+            "Identify the structure of the passage: name the three moves the author makes, in order.",
+            "The final two sentences claim the moon's shape is \"information about where you are standing.\" Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(eclipses are rare, phases are nightly; cite: A cause that appears twice a year cannot explain an effect that appears 365 nights a year)",
+            "(the Earth moves around the sun during the orbit; cite: because the Earth does not hold still)",
+            "(correct the myth, explain the geometry, then widen out to history and meaning)",
+            "(it reframes the phase as a fact about the observer rather than the object; earned by the geometry section, since the lit half never changes)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["terminator → ____", "earthshine → ____", "gibbous → ____", "albedo → ____"],
+          "rows": 2,
+          "answers": [
+            "the line on the moon dividing the lit half from the dark half",
+            "sunlight reflected off Earth that faintly lights the moon's dark portion",
+            "the humped shape between a half moon and a full moon",
+            "the fraction of light a surface reflects, about 0.12 for the moon"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the moon is a clock \"anyone can read for free, without instruments and without permission.\" Explain why that mattered to ancient societies.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a shared, verifiable timekeeper that needed no technology, no priesthood, and no cost)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Believing the shadow explanation does no real harm, since almost nobody needs to know what causes moon phases. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

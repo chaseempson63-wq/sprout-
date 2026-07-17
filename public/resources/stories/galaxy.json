@@ -1,0 +1,333 @@
+{
+  "key": "galaxy",
+  "title": "The Galaxy We Live Inside",
+  "blurb": "The pale road across the night sky is our own galaxy, seen from the inside, and we can never step out to look at it.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "The Galaxy We Live Inside",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-galaxy", "templateLabel": "The Galaxy We Live Inside", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the middle, where the light is brightest." },
+        {
+          "kind": "image",
+          "imageKey": "galaxy",
+          "notes": ["A galaxy is a family of stars", "Ours is called the Milky Way", "You live inside it", "The sun is one of its stars", "It spins very slowly"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up at night. You will see stars. Lots and lots of stars. All of them live in one big family. The family is called a galaxy. Our galaxy is called the Milky Way. It looks like a soft white road across the sky. You live in it. The Earth is in it. The sun is in it. Every star you can see is in it too."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["4", "2", "6", "3"],
+          "answers": ["4", "2", "6", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "star    sky" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "star", "right": "sky" },
+            { "left": "fish", "right": "water" },
+            { "left": "tree", "right": "forest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the night sky. Put in as many stars as you like, and one round moon.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Galaxy We Live Inside",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-galaxy", "templateLabel": "The Galaxy We Live Inside", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "galaxy",
+          "notes": ["Galaxy means milky in Greek", "Gravity holds all the stars together", "Galileo looked at it in 1610", "The white band is made of stars", "Our sun is one star out of billions"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Road Made of Milk",
+          "text": "A galaxy is a huge group of stars. The stars are held together by gravity, the same pull that keeps you on the ground. Our galaxy is the Milky Way. It has more stars than you could count in your whole life. Long ago, people saw a white band in the night sky. They thought it looked like spilled milk. That is why we call it the Milky Way. Then Galileo pointed a telescope at it. The white band broke apart into stars. Thousands of stars. The band is our own galaxy, seen from the inside. We are looking through it, like standing in a forest and looking at the trees."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What holds the stars of a galaxy together?", "What is our galaxy called?", "What did Galileo use to look at the white band?"],
+          "rows": 2,
+          "answers": ["gravity", "the Milky Way", "a telescope"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A galaxy is a huge group of ____.", "Gravity is a ____ that holds the stars together.", "People thought the band looked like spilled ____.", "The white band is really our own ____."],
+          "wordBank": ["stars", "pull", "milk", "galaxy"],
+          "answers": ["stars", "pull", "milk", "galaxy"]
+        },
+        { "kind": "draw", "prompt": "Draw yourself standing outside at night, looking up at the Milky Way.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Galaxy We Live Inside",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-galaxy", "templateLabel": "The Galaxy We Live Inside", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "galaxy",
+          "notes": ["Galaxy comes from gala, the Greek word for milk", "Our galaxy is about 100,000 light-years across", "It is shaped like a flat plate with a bulge", "Earth sits partway out from the middle", "Hundreds of billions of stars live in it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Road Made of Stars",
+          "text": "On a dark night, far from town lights, a pale band stretches across the sky. People have watched it for thousands of years. The Greeks thought it looked like a spill of milk, and their word for milk, gala, is where we get the word galaxy. We now know what the band really is. It is our own galaxy, the Milky Way, seen edge on from the inside. Imagine a plate made of stars, wide and flat, with a bulge in the middle. Earth sits out in the flat part, about halfway from the middle to the edge. When you look along the plate, you see so many stars that they blur into a glowing road. When you look up out of the plate, you see only a few. The Milky Way is about 100,000 light-years across. Light is the fastest thing there is, and it still takes 100,000 years to cross our galaxy. Inside it are hundreds of billions of stars, and our sun is only one of them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where does the word galaxy come from?",
+            "What shape is the Milky Way?",
+            "How long does light take to cross our galaxy?",
+            "Why do you think you see more stars when you look along the plate than when you look up out of it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "from gala, the Greek word for milk",
+            "a wide flat plate with a bulge in the middle",
+            "about 100,000 years",
+            "(inference: looking along the plate means looking through far more stars)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Road Made of Stars", "How to Build a Telescope", "The Story of the Greek Alphabet"],
+          "answers": ["The Road Made of Stars"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The Milky Way is about 100,000 ____ across.", "The galaxy has a ____ in the middle and is flat around it.", "The Greek word for milk is ____."],
+          "wordBank": ["light-years", "bulge", "gala"],
+          "answers": ["light-years", "bulge", "gala"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the Milky Way, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Galaxy We Live Inside",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-galaxy", "templateLabel": "The Galaxy We Live Inside", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "galaxy",
+          "notes": ["The Milky Way is a barred spiral", "Our sun sits in the Orion Arm", "We are about 26,000 light-years from the middle", "A black hole called Sagittarius A star sits at the center", "One lap around the galaxy takes about 230 million years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How We Mapped a Galaxy From the Inside",
+          "text": "Here is a strange problem. Nobody has ever seen our galaxy from outside. Every picture of the Milky Way you have ever seen is a drawing or a model, not a photograph. We are stuck inside it, and we cannot leave. So how do we know its shape? Astronomers worked it out the way you might map a forest you were standing in. They counted stars in every direction. They measured how far away those stars were, and how fast they were moving. Slowly, a shape emerged. The Milky Way is a barred spiral. It has a fat bulge at the middle, a straight bar of stars running through that bulge, and long curved arms wrapping around it like cream stirred into coffee. Our sun sits in a smaller arm called the Orion Arm, roughly 26,000 light-years from the center. That is a quiet suburb, far from the crowded downtown. At the very middle sits a black hole called Sagittarius A star. It weighs about four million times as much as our sun. Everything in the galaxy circles it, including us. The sun drags Earth around that center at about 800,000 kilometers per hour, and one full lap takes roughly 230 million years. The last time our solar system passed through this exact spot, the first dinosaurs were only just appearing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why is every picture of the whole Milky Way a drawing rather than a photograph?",
+            "Describe the method astronomers used to work out the shape of our galaxy.",
+            "The passage calls our part of the galaxy a quiet suburb. What is it comparing, and why does that comparison work?",
+            "We are moving at about 800,000 kilometers per hour right now. Why do you think we cannot feel it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "we are inside the galaxy and cannot travel outside it to take one",
+            "they counted stars in every direction and measured their distances and motions",
+            "(it compares the galaxy to a city; our region has fewer stars than the crowded middle)",
+            "(inference: everything around us moves with us, so there is nothing to feel the motion against)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Astronomers worked out the shape and motion of our galaxy without ever leaving it",
+            "Black holes are the most dangerous objects in space",
+            "Dinosaurs lived in a different galaxy from ours"
+          ],
+          "answers": ["Astronomers worked out the shape and motion of our galaxy without ever leaving it"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["barred spiral → ____", "emerged → ____", "light-year → ____"],
+          "rows": 1,
+          "answers": [
+            "a galaxy with a bar of stars through its bulge and curved arms around it",
+            "slowly appeared or became clear",
+            "the distance light travels in one year"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child how we know the Milky Way is a spiral, even though nobody has ever seen it from outside. Use two details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Galaxy We Live Inside",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-galaxy", "templateLabel": "The Galaxy We Live Inside", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "galaxy",
+          "notes": [
+            "The Great Debate was held in 1920",
+            "Henrietta Leavitt found the beat that measures distance",
+            "Hubble proved Andromeda is a separate galaxy",
+            "Andromeda is about 2.5 million light-years away",
+            "It is the most distant thing the naked eye can see",
+            "The observable universe may hold two trillion galaxies"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Great Debate",
+          "text": "For most of human history, the Milky Way was the universe. Everything anyone had ever seen appeared to sit inside it. There was one puzzle. Scattered among the stars were faint smudges of light that astronomers called spiral nebulae. Nobody could agree what they were. Some argued they were clouds of glowing gas inside our own galaxy. Others argued something far bolder: that each smudge was an entire galaxy of its own, so distant that its billions of stars blurred into a single dim patch. In 1920 the two sides met in Washington for a public argument now known as the Great Debate. Neither side could win, because nobody knew how far away the smudges were. Distance was the whole question, and a woman named Henrietta Leavitt had already supplied the answer, though she did not live to see it used. Leavitt studied a type of star that brightens and dims on a regular beat. She found that the slower the beat, the brighter the star truly is. Find one of those stars, time its beat, compare its true brightness to how faint it looks from here, and you can calculate its distance. In 1923 Edwin Hubble found exactly such a star inside the Andromeda smudge. He timed it. The math gave an answer so large that the argument ended almost overnight. Andromeda was not a cloud in our galaxy. It was another galaxy, far outside our own, and the universe had just become unimaginably bigger than anyone had allowed. We now think the observable universe holds hundreds of billions of galaxies, and perhaps as many as two trillion. Andromeda is our nearest large neighbor, about 2.5 million light-years away, and it is also the most distant thing your naked eye can see. On a dark night it is a faint oval, and the light entering your eye left it 2.5 million years ago, long before your species existed. Andromeda is also coming toward us at about 110 kilometers every second. In roughly four billion years the two galaxies will meet and merge. That sounds like a catastrophe, but stars are so tiny compared to the gulfs between them that almost none will collide. The two galaxies will drift through each other like two swarms of gnats, and then settle into one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What were the two sides of the Great Debate arguing, and why could neither side win?",
+            "Explain Leavitt's discovery and how Hubble used it. Quote the phrase the passage uses to state her rule.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author save the Andromeda collision for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the debate, Hubble's measurement, and the scale of the universe)",
+            "one side said the smudges were gas clouds inside our galaxy, the other said they were separate galaxies; nobody knew the distances",
+            "the slower a star's beat, the brighter it truly is; Hubble timed such a star in Andromeda to get its distance; quote: the slower the beat, the brighter the star truly is",
+            "(inform, with detail: it defines terms and gives dates and measurements, though the ending is written for wonder)",
+            "(it leaves the reader with the biggest idea, and it turns a settled history into an unfinished future)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["nebulae → ____", "catastrophe → ____", "observable → ____", "gulfs → ____"],
+          "rows": 1,
+          "answers": [
+            "faint cloudy patches of light in the sky",
+            "a disaster",
+            "the part we are able to see or measure",
+            "very wide empty gaps"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why did the Great Debate need a measurement rather than a better argument?",
+            "Two galaxies will collide and almost no stars will hit each other. What does that tell you about how empty space is?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(both explanations fit the same view; only distance could separate them)",
+            "(inference: stars are minute compared to the distances between them, so space is overwhelmingly empty)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: Henrietta Leavitt did the measuring work, and Edwin Hubble got the famous discovery. Who should history remember, and why? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Galaxy We Live Inside",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-galaxy", "templateLabel": "The Galaxy We Live Inside", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "galaxy",
+          "notes": [
+            "Galaxias: Greek for milky, from gala",
+            "Galileo resolved the band into stars in 1610",
+            "Shapley versus Curtis, the Great Debate of 1920",
+            "Vera Rubin's rotation curves pointed to dark matter",
+            "Dark matter outweighs visible matter roughly five to one",
+            "Andromeda is closing at about 110 kilometers per second"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Galaxy You Cannot Step Outside Of",
+          "text": "You live inside the thing you are trying to study. That is the central difficulty of galactic astronomy, and no telescope will ever fix it. We cannot walk outside the Milky Way and photograph it. Every image of our galaxy is a reconstruction, assembled from measurements taken at a single fixed point beside one unremarkable star. Astronomers are cartographers who cannot leave the forest. Start with what a galaxy is. It is not simply a lot of stars. It is a gravitationally bound system of stars, gas, dust, and something else we will come back to, all orbiting a common center. The Milky Way holds somewhere between one hundred and four hundred billion stars and spans roughly 100,000 light-years. Our sun lies about 26,000 light-years out in a minor spiral arm, circling the center once every 230 million years. At the middle crouches Sagittarius A star, a black hole with the mass of four million suns. The Greeks named the pale band overhead galaxias, from gala, milk. Galileo turned his telescope on it in 1610 and the milk shattered into individual stars. That single observation reframed the sky. The band was not a substance. It was a direction. We were looking edge on through the flat disk of our own galaxy, and the glow was the pile of stars stacked along the longest possible line of sight. Knowing our galaxy's shape did not tell us whether it was the whole universe. Faint spiral smudges dotted the sky, and in 1920 two astronomers argued the question in public. Harlow Shapley said the smudges were nearby gas clouds and the Milky Way was everything. Heber Curtis said each smudge was a separate island of stars. The debate settled nothing, because distance was unmeasured and every other argument was decoration. The measurement came from work by Henrietta Leavitt, who found that a certain kind of pulsing star beats more slowly the brighter it truly is. That relationship converts a flicker into a ruler. In 1923 Edwin Hubble found one of those stars in the Andromeda smudge, timed it, and calculated a distance no cloud inside our galaxy could possibly have. Curtis was right. Andromeda was a galaxy, and ours was one among many. Today the count of galaxies in the observable universe runs to hundreds of billions. Now the something else. In the 1970s Vera Rubin measured how fast stars orbit at different distances from a galaxy's center. Physics made a clear prediction: outer stars, feeling less gravity, should move more slowly, the way Neptune crawls while Mercury races. Rubin found the opposite. Stars at the outer edge moved about as fast as those near the middle. Either gravity behaves differently at galactic scale, or those galaxies contain far more mass than we can see, spread through a vast invisible halo. That unseen mass is called dark matter, and by the best current accounting it outweighs everything luminous in a galaxy by roughly five to one. The stars, which are all we can actually observe, may be a minority feature of the object we named after them. One more thing is worth sitting with. Andromeda is falling toward us at about 110 kilometers per second, and in roughly four billion years the two galaxies will collide. Almost no stars will strike each other. Stars are so small relative to the gulfs between them that the two systems will slide through one another, gravity will scramble the spiral arms, and eventually a single larger galaxy will settle out of the wreckage. Nothing will crash. Everything will change."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the central difficulty of galactic astronomy the passage opens with. Cite the sentence the author uses to sum it up.",
+            "The passage says of the Milky Way's band: it was not a substance, it was a direction. Explain what that means.",
+            "Why does the author say every argument in the Great Debate except distance was decoration?",
+            "Analyze the last two sentences. What is the author doing by ending on them, and does the passage earn that ending?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(we cannot leave the galaxy to observe it, so every map is built from inside; cite: Astronomers are cartographers who cannot leave the forest.)",
+            "(the band is not a cloud of stuff; it is what we see when we look lengthwise through our own flat galaxy)",
+            "(both sides explained the same appearance equally well, so only a distance measurement could decide it)",
+            "(it ends on a controlled contrast that reframes collision as transformation rather than destruction; supported by the point that stars almost never hit)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["reconstruction → ____", "luminous → ____", "halo → ____", "unremarkable → ____"],
+          "rows": 2,
+          "answers": [
+            "something built up from evidence rather than observed directly",
+            "giving off light",
+            "a large roughly round region surrounding a galaxy",
+            "ordinary, with nothing special about it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Rubin's result had two possible explanations: unseen mass, or gravity working differently at large scale. Explain why most scientists chose the first, and what would have to happen for them to choose the second.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(adding unseen mass keeps well tested physics intact; rewriting gravity would need evidence that no amount of hidden mass can explain)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Naming galaxies after their stars was a mistake, because the stars are the smallest part of what a galaxy is. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

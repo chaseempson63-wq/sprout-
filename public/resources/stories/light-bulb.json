@@ -1,0 +1,304 @@
+{
+  "key": "light-bulb",
+  "title": "The Tiny Wire That Turned On the Night",
+  "blurb": "Inside an old light bulb is a thread of metal hotter than a campfire, and one bulb in California has been glowing since 1901.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Tiny Wire That Turned On the Night",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-light-bulb", "templateLabel": "The Tiny Wire That Turned On the Night", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the little wire inside the glass." },
+        {
+          "kind": "image",
+          "imageKey": "light-bulb",
+          "notes": ["A tiny wire inside makes the light", "The wire gets very hot", "The glass keeps the air out", "Flip the switch and it goes dark"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look at the light bulb. Inside it is a tiny wire. The wire is thin, like a hair. When you flip the switch, the wire gets very hot. So hot that it glows. The glow is the light you see. The glass keeps the wire safe. Flip the switch off and the wire goes cool and dark again."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bulbs in each row. Write how many in the box.",
+          "emoji": "💡",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "light    hot" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "bulb", "right": "light" },
+            { "left": "sun", "right": "day" },
+            { "left": "moon", "right": "night" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a lamp in your house. Show the light shining out of it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tiny Wire That Turned On the Night",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-light-bulb", "templateLabel": "The Tiny Wire That Turned On the Night", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "light-bulb",
+          "notes": ["The wire is called a filament", "It is thinner than your hair", "The first good bulb glowed in 1879", "It makes no smoke and no flame", "Hot things glow, like an ember"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Turning On the Night",
+          "text": "Long ago, when the sun went down, the whole house went dark. People lit candles. Candles are small and smoky. Then people learned to send electricity through a thin wire. The wire glowed. It made light with no smoke and no flame. The first good bulb was made in 1879. It glowed for about half a day and then went out. Today a bulb can glow for years. Now you can turn on the night with one finger."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What did people use for light before bulbs?", "What goes through the thin wire?", "What year was the first good bulb made?"],
+          "rows": 2,
+          "answers": ["candles", "electricity", "1879"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Candles are small and ____.", "The thin ____ glowed.", "A bulb makes no ____.", "Now a bulb can glow for ____."],
+          "wordBank": ["smoky", "wire", "flame", "years"],
+          "answers": ["smoky", "wire", "flame", "years"]
+        },
+        { "kind": "draw", "prompt": "Draw one room with a candle, and one room with a light bulb. Which room is brighter?", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tiny Wire That Turned On the Night",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-light-bulb", "templateLabel": "The Tiny Wire That Turned On the Night", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "light-bulb",
+          "notes": ["The filament is made of tungsten", "Tungsten takes more heat than any other metal", "The bulb is filled with argon gas", "Uncoiled, the filament is about six feet long", "Air would burn the filament in a blink"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Thread That Glows",
+          "text": "Every old-style light bulb hides a thread of metal called a filament. It is thinner than a hair, and it is made of tungsten. Tungsten is the metal that takes the most heat before it melts. When you flip the switch, electricity pushes through the filament. The filament fights back, and that fight turns into heat. It climbs to around 4,500 degrees Fahrenheit. Anything that hot glows, the same way an ember in a campfire glows. That glow is your light. There is a problem. If air touched the filament, it would burn away in a blink. So the glass bulb is filled with argon, a gas that will not burn. The filament sits in the argon and glows for months. The filament is longer than it looks. Uncoil the one in an old bulb and it would stretch about six feet. It is coiled, and then the coil is coiled again, so all that wire fits in a space the size of your thumbnail."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the thread inside a bulb called?",
+            "Which metal is the filament made of?",
+            "Why is the bulb filled with argon instead of air?",
+            "Why do you think the filament is coiled up instead of left straight?"
+          ],
+          "rows": 2,
+          "answers": ["a filament", "tungsten", "argon will not burn, but air would burn the filament away", "(inference: six feet of wire has to fit in a tiny space)"]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Thread That Glows", "How to Change a Car Tire", "The Story of the First Candle"],
+          "answers": ["The Thread That Glows"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The filament is made of ____.", "The bulb is filled with ____ gas.", "An ember in a ____ glows because it is hot."],
+          "wordBank": ["tungsten", "argon", "campfire"],
+          "answers": ["tungsten", "argon", "campfire"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the inside of a light bulb, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tiny Wire That Turned On the Night",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-light-bulb", "templateLabel": "The Tiny Wire That Turned On the Night", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "light-bulb",
+          "notes": ["Incandescent means glowing because it is hot", "About 5 percent of the power becomes light", "Lewis Latimer made filaments last far longer", "Swan and Edison both got there around 1879", "An LED skips the heat and makes light directly"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Five Percent Light, Ninety-Five Percent Heat",
+          "text": "Hold your hand near an old light bulb that has been on for a while and you will feel the truth about it. It is a heater that happens to glow. Only about five percent of the electricity going into an incandescent bulb leaves as light. The other ninety-five percent leaves as heat you never asked for. Incandescent means glowing because of heat. The bulb works by making a tungsten filament so hot that it cannot help shining. Push it hotter and the light shifts from orange toward white. The same rule paints a campfire: the red coals are cooler, the white-hot ones are hotter. The story of who invented the bulb is messier than most books admit. Humphry Davy made electric light in 1802, but it was blinding and brief. Joseph Swan in England and Thomas Edison in America both built working bulbs in 1878 and 1879, and they eventually joined forces rather than fight in court. Lewis Latimer, the son of people who had escaped slavery, then figured out how to make carbon filaments that lasted far longer and cost far less. Without Latimer's work, the bulb would have stayed a rich person's toy. Today most bulbs are not bulbs at all. An LED makes light directly from electricity, skipping the heat, and uses about a sixth of the power for the same brightness. The glowing thread is quietly leaving us."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What does incandescent mean, in your own words?",
+            "The passage calls a light bulb a heater that happens to glow. Explain why that is fair.",
+            "What did Lewis Latimer contribute, and why did it matter?",
+            "Why do you think the passage says the story of who invented the bulb is messier than most books admit?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(giving off light because something is very hot)",
+            "only about five percent of the power becomes light and the rest becomes heat",
+            "he found a way to make carbon filaments that lasted longer and cost less, so bulbs were no longer only for the rich",
+            "(inference: several people got there at once, so no single person invented it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The glowing-filament bulb wastes most of its energy as heat, was invented by many people at once, and is now being replaced",
+            "Thomas Edison invented the light bulb alone and nobody else helped",
+            "Campfires are a better source of light than electricity"
+          ],
+          "answers": ["The glowing-filament bulb wastes most of its energy as heat, was invented by many people at once, and is now being replaced"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["incandescent → ____", "filament → ____", "LED → ____"],
+          "rows": 1,
+          "answers": ["glowing because it is very hot", "the thin thread of metal that glows inside a bulb", "a device that makes light straight from electricity without getting hot"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: should people be allowed to keep buying incandescent bulbs, even though they waste most of their energy as heat? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tiny Wire That Turned On the Night",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-light-bulb", "templateLabel": "The Tiny Wire That Turned On the Night", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "light-bulb",
+          "notes": ["A bulb in Livermore, California has glowed since 1901", "It runs at about 4 watts, dim as a nightlight", "A hotter filament means brighter light and a shorter life", "In 1924 the Phoebus cartel capped bulb life at 1,000 hours", "A live camera watches the Livermore bulb", "Tungsten atoms boil off the wire until it snaps"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bulb That Would Not Die",
+          "text": "In a fire station in Livermore, California, a light bulb is glowing. It was screwed in around 1901 and, apart from a few power outages and one careful move down the street, it has not been switched off since. It is hand-blown glass with a thick carbon filament, and it puts out about as much light as a nightlight. There is a camera pointed at it so anyone can check that it is still on. Every bulb sold today would be dead a hundred times over. Why? Part of the answer is honest physics. The Livermore bulb runs cool and dim, and a cool filament barely wears out. Run a filament hotter and you get bright white light, but tungsten atoms boil off the wire until it thins and snaps. Bright and long-lasting pull against each other. Manufacturers picked bright. Part of the answer is less honest. In 1924, the biggest bulb makers in the world met in Geneva and formed a group called Phoebus. Bulbs of that era commonly lasted 1,500 to 2,500 hours. Phoebus agreed that 1,000 hours would be the standard, and member companies were fined if their bulbs lasted too long. It worked. Lifespans fell, sales rose, and the cartel held until the Second World War broke it apart. Historians argue about how much was greed and how much was a genuine attempt at brightness standards, but the fines are on record. So the Livermore bulb is not a miracle. It is a reminder. It shows what a bulb could do if nobody needed you to buy another one, and it has been quietly making that argument in a fire station for more than a century."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the physics reason the Livermore bulb has lasted so long. Quote the phrase the passage uses about a cool filament.",
+            "What did the Phoebus cartel agree to do, and how did it make members obey?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the bulb has been quietly making that argument for more than a century. What argument does the author mean?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the Livermore bulb + the bright-versus-long trade-off + the Phoebus cap)",
+            "it runs cool and dim; quote: a cool filament barely wears out",
+            "it capped bulb life at 1,000 hours and fined member companies whose bulbs lasted too long",
+            "(inform, with a persuasive edge: it defines the physics and dates, but the last paragraph takes a side)",
+            "(that bulbs could last far longer if companies did not need repeat sales)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["filament → ____", "cartel → ____", "lifespan → ____", "standard → ____"],
+          "rows": 1,
+          "answers": ["the thread inside a bulb that glows", "a group of companies that agree together to control a market", "how long something lasts before it fails", "an agreed level that everyone follows"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that manufacturers picked bright. Explain what they gave up by picking bright, and why a customer might agree with that choice.",
+            "The author admits historians argue about the cartel's motives. Why include that instead of leaving it out?"
+          ],
+          "rows": 3,
+          "answers": ["(they gave up long life; a customer wants light bright enough to read and work by)", "(inference: it makes the passage fair and more trustworthy rather than one-sided)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a company be allowed to make a product fail sooner so you buy another one? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tiny Wire That Turned On the Night",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-light-bulb", "templateLabel": "The Tiny Wire That Turned On the Night", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "light-bulb",
+          "notes": ["Tungsten melts at 3,422 degrees Celsius, the highest of any metal", "A filament runs near 2,700 degrees Celsius", "Roughly 5 percent of the energy leaves as visible light", "Argon fill stops the filament from burning up", "Blue LEDs won the 2014 Nobel Prize in Physics", "Phoebus cartel, 1924: a 1,000 hour cap with fines"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Five Percent Light: The Bulb, the Blue LED, and What We Chose to Waste",
+          "text": "For most of human history, the sun set and work stopped. Fire pushed the dark back a few feet at the cost of smoke, danger, and constant attention. The candle, the oil lamp, and the gas jet were all improvements on fire, and all of them were still fire. The electric light bulb was the first light in history that did not burn anything in the room. Here is what it does instead. Electricity is forced through a filament of tungsten, a metal chosen because it melts at 3,422 degrees Celsius, higher than any other. The filament resists the current, and resistance produces heat. Driven to roughly 2,700 degrees Celsius, the wire begins to radiate visible light, for the same reason that any sufficiently hot object does: heat makes atoms jostle, and jostling atoms throw off light. This is incandescence, and it is an old trick. A campfire ember does it. The sun does it. The trouble with incandescence is that it is nearly all heat. Of the electricity entering a standard incandescent bulb, roughly five percent leaves as visible light. The rest departs as infrared, which is to say as warmth. For a century we lit our homes with small electric heaters and collected the light as a by-product. The engineering around that filament is quietly clever. Oxygen would consume a glowing tungsten wire almost instantly, so the bulb is sealed and filled with argon, an inert gas that refuses to react. The filament itself is coiled, and the coil is coiled again, packing roughly two meters of wire into a space smaller than a fingernail. Even so, tungsten atoms slowly evaporate off the hot wire and settle on the glass, thinning the filament until it breaks. Every incandescent bulb is dying from the moment it is switched on, and it dies faster the brighter you run it. That trade-off is physics. What was done with it was not. In 1924 the world's dominant manufacturers formed the Phoebus cartel and agreed to cap bulb life at 1,000 hours, fining members whose products lasted longer. Bulb lifespans had commonly reached 1,500 to 2,500 hours. They fell. The cartel is the textbook case of planned obsolescence, though historians note the members also had a defensible interest in standardizing brightness. The escape came from a different physics entirely. A light-emitting diode does not heat anything to make light. Electrons cross a junction between two semiconductor layers, drop to a lower energy level, and release the difference as a single particle of light. The energy goes almost straight into photons. Red and green LEDs existed by the 1960s, but white light needs blue, and a workable bright blue LED took until the 1990s, when Isamu Akasaki, Hiroshi Amano, and Shuji Nakamura wrestled gallium nitride into working. The Nobel committee gave them the 2014 physics prize with an unusually blunt justification: the twentieth century was lit by incandescent bulbs, and the twenty-first would be lit by LEDs. So the glowing thread is going out, after roughly 140 years, and almost nobody will mourn it. It was never a very good light. It was simply the first one that let us decide when the day ended."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why incandescence is a wasteful way to make light. Cite the exact phrase the author uses about what we lit our homes with.",
+            "Contrast incandescence with how an LED produces light. Why is the LED not limited to five percent?",
+            "Identify the shift in the passage: where does it turn from physics to human choice, and how does the author signal it?",
+            "The passage ends by calling the bulb a light that was never very good, yet the whole essay treats it as remarkable. Analyze whether that ending contradicts the essay or completes it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(almost all the energy leaves as infrared heat; cite: small electric heaters and collected the light as a by-product)",
+            "(incandescence must heat matter until it glows, so heat is the main product; an LED converts electron energy straight into photons with no heating step)",
+            "(at That trade-off is physics. What was done with it was not.; two short sentences signal the pivot to the Phoebus cartel)",
+            "(it completes it: the bulb mattered for what it let people do, not for its efficiency; the author separates historical importance from technical quality)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["incandescence → ____", "inert → ____", "planned obsolescence → ____", "photon → ____"],
+          "rows": 2,
+          "answers": [
+            "giving off visible light purely because an object is hot",
+            "unwilling to react chemically with anything around it",
+            "designing a product to fail sooner so buyers replace it",
+            "a single particle of light"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that every incandescent bulb is dying from the moment it is switched on. Explain the physical process behind that claim.",
+            "The author says historians note the members also had a defensible interest in standardizing brightness. What does conceding this do to the strength of the argument?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(tungsten atoms evaporate off the hot filament and settle on the glass, thinning the wire until it snaps)",
+            "(it strengthens it: the author answers the obvious objection first, so the planned-obsolescence claim looks weighed rather than assumed)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The Phoebus cartel proves that companies cannot be trusted to decide how long their own products last. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

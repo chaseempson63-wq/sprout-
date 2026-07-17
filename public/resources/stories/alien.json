@@ -1,0 +1,319 @@
+{
+  "key": "alien",
+  "title": "Is Anybody Out There?",
+  "blurb": "Nobody has ever found an alien. This is the true story of how hard people are looking, and what they would accept as proof.",
+  "topic": "space",
+  "bands": {
+    "1": {
+      "title": "Is Anybody Out There?",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-alien", "templateLabel": "Is Anybody Out There?", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Wave back at the alien." },
+        {
+          "kind": "image",
+          "imageKey": "alien",
+          "notes": ["Nobody has found a real one yet", "People look with big telescopes", "There are more stars than we can count", "Earth is the only home we know"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up at the night sky. Do you see the little lights? Each light is a star. Some stars have planets going around them, just like our Earth goes around the sun. Nobody knows if anyone lives out there. People point big telescopes at the sky and listen. They are looking for a friend. Maybe one day we will find one."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "star    sky" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it belongs.",
+          "pairs": [
+            { "left": "star", "right": "sky" },
+            { "left": "fish", "right": "water" },
+            { "left": "you", "right": "Earth" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own alien. Give it a friendly wave.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "Is Anybody Out There?",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-alien", "templateLabel": "Is Anybody Out There?", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "alien",
+          "notes": ["A planet at another star is called an exoplanet", "We have found thousands of them", "Life on Earth needs liquid water", "Nobody has found life anywhere else", "We have only looked at a tiny bit of sky"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Planets We Have Never Visited",
+          "text": "Earth is not the only planet. Scientists have found thousands of other planets going around other stars. They call them exoplanets. Some are hot balls of gas. Some are frozen rocks. A few are just the right warmth for water to stay liquid, and water is what life on Earth needs most. So far, nobody has found life on any of them. Not a plant. Not a bug. Not a person. But we have only looked at a tiny piece of the sky. There are more stars out there than there are grains of sand on every beach on Earth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a planet at another star called?", "What does life on Earth need most?", "Has anyone found life on another planet?"],
+          "rows": 2,
+          "answers": ["an exoplanet", "water", "no, not yet"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A planet at another star is called an ____.", "Some exoplanets are hot balls of ____.", "Life on Earth needs liquid ____.", "There are more stars than grains of ____."],
+          "wordBank": ["exoplanet", "gas", "water", "sand"],
+          "answers": ["exoplanet", "gas", "water", "sand"]
+        },
+        { "kind": "draw", "prompt": "Draw a planet you would like to visit. Add its star in the sky.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "Is Anybody Out There?",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-alien", "templateLabel": "Is Anybody Out There?", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "alien",
+          "notes": ["SETI means the Search for Extraterrestrial Intelligence", "Frank Drake started listening in 1960", "The Wow signal lasted 72 seconds", "It has never been heard again", "The sky has stayed quiet for over 60 years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Word in the Margin",
+          "text": "For most of history, people could only guess whether anyone else was out there. Then we built radios. In 1960, an astronomer named Frank Drake pointed a radio telescope at two nearby stars and listened for a signal. He heard nothing unusual, but he had started something. Ever since, scientists have kept listening. This search has a name. It is called SETI, which stands for the Search for Extraterrestrial Intelligence. The idea is simple. If another civilization builds radios, their signals might leak out into space, and one of our dishes might catch one. In 1977, a telescope in Ohio picked up a strong, strange burst of radio noise that lasted 72 seconds. The astronomer who found it in the printout circled it and wrote one word in the margin: Wow. Nobody has ever heard that signal again, and nobody has explained it. That is where the search stands. We have listened for more than sixty years, and the sky has stayed quiet."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did Frank Drake point at two nearby stars in 1960?",
+            "What does SETI stand for?",
+            "How long did the strange burst of radio noise last?",
+            "Why do you think the astronomer wrote Wow instead of writing down a fact?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a radio telescope",
+            "the Search for Extraterrestrial Intelligence",
+            "72 seconds",
+            "(inference: he was surprised and did not yet know what it was)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Word in the Margin", "How to Build a Radio at Home", "The Biggest Telescope in Ohio"],
+          "answers": ["The Word in the Margin"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Scientists listen for a ____ from another civilization.", "Frank Drake used a radio ____.", "The strange burst was picked up in the state of ____."],
+          "wordBank": ["signal", "telescope", "Ohio"],
+          "answers": ["signal", "telescope", "Ohio"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if we did catch a signal one day, what should we do about it, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "Is Anybody Out There?",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-alien", "templateLabel": "Is Anybody Out There?", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "alien",
+          "notes": ["Extremophiles are living things that survive extremes", "Europa hides an ocean under its ice", "Enceladus sprays water into space", "Cassini flew through the spray and found organics", "Tidal heating warms a moon from the inside", "Most scientists expect microbes, not people"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Not Little Green Men. Microbes.",
+          "text": "When people imagine aliens, they picture something like us: two eyes, two legs, a spaceship. Scientists searching for life expect something far humbler. They are hunting for microbes. Here is why that search has gotten serious. For a long time, biologists assumed life needed mild conditions. Then they started finding organisms in places that should have been lethal. There are bacteria living in near boiling water at deep sea vents, in acid, inside rock miles underground, and in the cooling ponds of nuclear reactors. Scientists call them extremophiles, which means lovers of extremes. Every one of them widened the map of where life could survive. That map now includes moons. Europa circles Jupiter under a shell of ice, and beneath that ice is a salty ocean that may hold more water than every ocean on Earth combined. Enceladus, a small moon of Saturn, sprays plumes of water from cracks near its south pole. A spacecraft named Cassini flew straight through one of those plumes and found salt, and organic molecules, and hydrogen gas. Hydrogen is food for certain bacteria on Earth. Neither moon sits in what astronomers call the habitable zone, the ring around a star where sunlight keeps water liquid. Both are far too distant for that. They stay warm a different way. Jupiter and Saturn squeeze and stretch them with gravity, and the flexing generates heat from the inside. Nobody has found a single cell out there yet. But the question has changed. It used to be whether liquid water existed anywhere else. It does. Now the question is whether water plus warmth plus time is enough."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What are scientists actually hunting for, and how is that different from what most people imagine?",
+            "How did the discovery of extremophiles change where scientists look for life?",
+            "Europa and Enceladus are far outside the habitable zone. Explain how they stay warm anyway.",
+            "The passage says the question has changed. What was the old question, and what is the new one?"
+          ],
+          "rows": 2,
+          "answers": [
+            "microbes; most people imagine something like us with eyes, legs, and a spaceship",
+            "life survives extremes, so cold and dark places like moons became worth searching",
+            "gravity from Jupiter and Saturn squeezes and stretches them, and the flexing makes heat inside",
+            "old: does liquid water exist anywhere else; new: is water plus warmth plus time enough for life"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Life survives harsher conditions than we assumed, so icy moons are now serious places to search",
+            "Aliens have been found living on one of Saturn's moons",
+            "Jupiter is the largest planet in our solar system"
+          ],
+          "answers": ["Life survives harsher conditions than we assumed, so icy moons are now serious places to search"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["extremophile → ____", "habitable zone → ____", "plume → ____"],
+          "rows": 1,
+          "answers": [
+            "a living thing that survives conditions that would kill most life",
+            "the ring around a star where sunlight keeps water liquid",
+            "a spray of material shooting out from a crack"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: should we spend money sending spacecraft to icy moons, or spend it here on Earth? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "Is Anybody Out There?",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-alien", "templateLabel": "Is Anybody Out There?", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "alien",
+          "notes": ["The Drake equation was written in 1961", "It organizes a question, it does not answer one", "In 1961 we knew of zero exoplanets", "Enrico Fermi asked: where is everybody", "Life starting is a sample of one", "The searched sky is a glass out of an ocean"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where Is Everybody?",
+          "text": "In 1961, a year after his first search came up empty, Frank Drake sat down to write an agenda for a small meeting. What he wrote instead became the most famous equation in the search for life. The Drake equation does not calculate an answer. It organizes a question. To estimate how many communicating civilizations exist in our galaxy right now, Drake argued, you multiply seven things together: how often stars form, what fraction have planets, how many of those planets could support life, how often life actually starts, how often life becomes intelligent, how often intelligence builds something that broadcasts, and, last and worst, how long such a civilization lasts before it goes silent. The first three terms have improved enormously. In 1961 we knew of no planets outside our solar system. We now know of more than five thousand, and the evidence suggests that planets are the rule, not the exception. Every one of those numbers has moved in a hopeful direction. The last four remain guesses. Nobody knows how hard it is for chemistry to become biology, because it has happened, as far as we can prove, exactly once. A sample of one supports no statistics at all. Which brings us to the problem the physicist Enrico Fermi is said to have raised over lunch in 1950. The galaxy is about thirteen billion years old. Even at speeds we could build today, a patient civilization could cross it in a few million years, which is a blink at that scale. So, Fermi asked, where is everybody? Explanations are cheap and evidence is scarce. Maybe life is vanishingly rare. Maybe intelligence is rare. Maybe civilizations reliably destroy themselves. Maybe they are out there and quiet, or out there and unrecognizable, or out there and simply not interested in us. Maybe we have not looked long enough or hard enough, which is worth remembering. The total amount of sky that SETI has searched carefully is often compared to scooping a single glass of water out of the ocean and concluding there are no fish."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says the Drake equation does not calculate an answer. Explain what it does instead.",
+            "Which terms of the equation have improved since 1961, and which have not? Quote the phrase the passage uses about how often life starts.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the glass of water comparison in the last sentence. What is the author arguing with it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the Drake equation + the Fermi paradox + how little we have searched)",
+            "it organizes a question by breaking it into seven things you would need to know",
+            "the first three have improved; the last four remain guesses; quote: exactly once",
+            "(inform, with detail: it defines the equation and gives dates and facts; it argues gently at the end)",
+            "(we have barely searched, so silence is not evidence of absence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["civilization → ____", "vanishingly → ____", "unrecognizable → ____", "scarce → ____"],
+          "rows": 1,
+          "answers": [
+            "a society advanced enough to build things like radios",
+            "so nearly to nothing that it almost disappears",
+            "impossible to identify as what it actually is",
+            "in very short supply"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls the last term of the equation last and worst. Why would how long a civilization lasts be the hardest term to estimate?",
+            "Why does a sample of one support no statistics at all? Use an example of your own."
+          ],
+          "rows": 3,
+          "answers": [
+            "(we have only our own civilization, and it is young, so we cannot know how long they typically last)",
+            "(one case cannot show whether something is common or a fluke)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which explanation for the silence do you find most convincing, and why? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "Is Anybody Out There?",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-alien", "templateLabel": "Is Anybody Out There?", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "alien",
+          "notes": ["Transmission spectroscopy reads a planet's air from starlight", "A biosignature is a gas biology makes and geology does not", "Earth's air is about 21 percent oxygen, nearly all of it exhaled by life", "Oxygen alone can be faked by a lifeless planet", "The 1967 pulsar was first labeled LGM-1, for Little Green Men", "Technosignatures hunt for technology, not biology"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How We Would Actually Know",
+          "text": "Suppose there is life on a planet orbiting another star. How would we ever find out? We cannot go. The nearest star beyond our sun is more than four light years away, which means our fastest spacecraft would need tens of thousands of years to arrive. Whatever we learn, we will learn from light. That constraint is less crippling than it sounds. When a planet passes in front of its star, a sliver of starlight filters through the planet's atmosphere before it reaches us. Different gases absorb different wavelengths, so the light arrives with a barcode of missing lines. Read the barcode and you have read the air of a world you will never visit. The James Webb Space Telescope does this now, and has detected water vapor, carbon dioxide, and methane in the atmospheres of distant planets. The hope is to find a biosignature: a gas that biology makes and geology does not. Oxygen is the classic candidate. Earth's atmosphere is about twenty one percent oxygen, and essentially all of it was exhaled by living things over billions of years. Left alone, oxygen reacts with rock and disappears. Finding it in quantity would mean something is topping it up. The trouble is that nature is a forger. Astronomers have worked out several ways a lifeless planet can accumulate oxygen, mainly by having its water broken apart by starlight while the light hydrogen escapes to space. So a single gas proves nothing. What convinces is a combination that should not coexist: oxygen and methane together, for instance, since they destroy each other and must both be constantly replenished. The cautionary tale is recent. In 2020, a team announced phosphine in the clouds of Venus, a gas that on Earth is associated with life. The finding was reported everywhere and is still disputed. Reanalysis weakened the signal, other groups failed to confirm it, and possible non biological sources were proposed. Nobody committed fraud. The claim was simply harder than it first appeared, which is the normal condition of frontier science. There is an older cautionary tale too. In 1967, Jocelyn Bell Burnell found a radio source pulsing with impossible regularity, roughly once every 1.3 seconds. The team labeled it LGM-1, for Little Green Men, half joking and half not. It turned out to be a pulsar: a collapsed star spinning and sweeping a beam past us like a lighthouse. The universe, it turns out, makes rhythm without help. So the search continues on two tracks. Biosignatures hunt for life of any kind, including pond scum. Technosignatures hunt for the products of technology: radio broadcasts, laser pulses, waste heat, industrial pollution in an atmosphere. Both are searches for something we have never seen, which makes them scientifically awkward. You cannot fully specify what you are looking for. And yet the asymmetry is enormous. Sixty years of silence has taught us relatively little, because the sky is large and our attention has been narrow. But a single confirmed detection would be among the most consequential facts ever established. That imbalance is the whole argument for looking. Not because we expect to succeed, but because the payoff for succeeding is so extreme that even a small chance is worth the price of a few telescopes."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how starlight can reveal the air of a planet nobody will ever visit. Cite the metaphor the passage uses.",
+            "Why does the passage say a single gas proves nothing? Explain what would convince instead, and why that combination is stronger evidence.",
+            "The passage calls Venus and the 1967 pulsar cautionary tales. What is each one cautioning against, and why does the author include both rather than one?",
+            "The final paragraph argues from asymmetry rather than from probability. Analyze that move and decide whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering how the search is done and how easily it fools us)",
+            "(gases absorb wavelengths and leave gaps; cite: a barcode of missing lines)",
+            "(lifeless planets can make oxygen too; oxygen and methane together convince because they destroy each other and must both be replenished)",
+            "(Venus: announcing before the data holds up; the pulsar: assuming an unknown signal is alien; two tales show the error runs in both directions and across decades)",
+            "(it concedes low odds and argues from the size of the payoff instead; supported or not by the reader's own reasoning)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["biosignature → ____", "replenished → ____", "technosignature → ____", "asymmetry → ____"],
+          "rows": 2,
+          "answers": [
+            "a gas or trace that biology produces and geology does not",
+            "refilled or topped back up after being used up",
+            "evidence of technology rather than of biology",
+            "an imbalance between two sides that should match"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says you cannot fully specify what you are looking for. Explain why that is a serious problem for a scientific search, and suggest one way around it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a search needs a testable prediction; you can look instead for anything unexplained by known chemistry or physics)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Sixty years of silence is strong evidence that we are alone. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

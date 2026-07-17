@@ -1,0 +1,320 @@
+{
+  "key": "milk",
+  "title": "The Only Food Made to Be Food",
+  "blurb": "Why milk is white, why most grown-ups cannot digest it, and how one drink rewrote human DNA.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Only Food Made to Be Food",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-milk", "templateLabel": "The Only Food Made to Be Food", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Then read the story together." },
+        {
+          "kind": "image",
+          "imageKey": "milk",
+          "notes": ["Milk is white", "It comes from a cow", "It is cold in the fridge", "Cows eat grass all day", "Every baby animal drinks milk"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Milk comes from a cow. The cow eats green grass all day. A farmer milks the cow in the morning. The milk goes into a cold truck. The truck takes it to the store. Then the milk comes to your house. You pour a cup. Milk is white and cold and good. Every baby animal drinks milk first. Puppies drink it. Kittens drink it. You drank it too, when you were small."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the cups in each row. Write how many in the box.",
+          "emoji": "🥛",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "milk    cow" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line from each baby to the mom who makes its milk.",
+          "pairs": [
+            { "left": "calf", "right": "cow" },
+            { "left": "kitten", "right": "cat" },
+            { "left": "puppy", "right": "dog" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a cow in a green field. Add a cup of milk next to her.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Only Food Made to Be Food",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-milk", "templateLabel": "The Only Food Made to Be Food", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "milk",
+          "notes": ["Only mammals make milk", "Whales make milk in the ocean", "Milk is mostly water", "A mom cow makes milk for her calf", "Birds and fish never make milk"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Who Makes Milk",
+          "text": "Milk starts inside a mother animal. A cow makes milk for her calf. A cat makes milk for her kittens. A whale makes milk for her baby, deep down in the ocean. Your mom made milk for you when you were tiny. Animals that make milk are called mammals. A bird cannot make milk. A fish cannot make milk. Only mammals can. Milk looks white, but there is no white paint in it. Milk is full of tiny bits of fat and protein. The bits are so small that you could never see just one. They bounce light back at your eyes, and all that bounced light looks white to you."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Who does a cow make milk for?", "What are animals that make milk called?", "Name one animal that cannot make milk."],
+          "rows": 2,
+          "answers": ["for her calf", "mammals", "a bird or a fish"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Milk starts inside a mother ____.", "A cow makes milk for her ____.", "Animals that make milk are called ____.", "Milk bounces light, so it looks ____."],
+          "wordBank": ["animal", "calf", "mammals", "white"],
+          "answers": ["animal", "calf", "mammals", "white"]
+        },
+        { "kind": "handwriting", "prompt": "Write one sentence about milk.", "rows": 3 },
+        { "kind": "draw", "prompt": "Draw a mother animal and her baby. Pick any mammal you like.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Only Food Made to Be Food",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-milk", "templateLabel": "The Only Food Made to Be Food", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "milk",
+          "notes": ["A cow's stomach has four rooms", "The biggest room is the rumen", "Chewing the cud means chewing food twice", "A dairy cow can give six gallons a day", "Milk is heated for seconds to kill germs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "From Grass to Glass",
+          "text": "A cow spends most of the day doing one thing. She eats grass. Grass is tough, and you could not live on it. A cow can, because her stomach has four rooms. The first and biggest room is called the rumen, and it is packed with billions of microbes too small to see. Those microbes break the tough grass down into food the cow can actually use. She also burps mouthfuls back up and chews them a second time. That is called chewing the cud. A cow only makes milk after she has a calf. The milk is meant for the calf, and it is loaded with fat, protein, and sugar so the calf grows fast. On a dairy farm, a machine milks the cow twice a day. A big dairy cow can give about six gallons in a single day. The milk goes straight into a cold tank, then into a cold truck. At the dairy plant it is heated for only a few seconds, hot enough to kill any germs hiding in it, then chilled again right away. That is why the milk in your fridge is safe to drink."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the biggest room of a cow's stomach called?",
+            "What do the microbes in the rumen do?",
+            "What does chewing the cud mean?",
+            "Why do you think the milk is chilled again right after it is heated?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the rumen",
+            "they break the tough grass down into food the cow can use",
+            "burping food back up and chewing it a second time",
+            "(inference: cold keeps new germs from growing, so it stays fresh and safe)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["From Grass to Glass", "How to Ride a Horse", "The Tallest Mountain in the World"],
+          "answers": ["From Grass to Glass"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The first room of a cow's stomach is the ____.", "A cow only makes milk after she has a ____.", "At the plant the milk is heated to kill any ____."],
+          "wordBank": ["rumen", "calf", "germs"],
+          "answers": ["rumen", "calf", "germs"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of the trip from grass to your glass surprised you most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Only Food Made to Be Food",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-milk", "templateLabel": "The Only Food Made to Be Food", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "milk",
+          "notes": ["Milk is about 87 percent water", "Its sugar is called lactose", "The enzyme that cuts lactose is lactase", "Most adults on Earth stop making lactase", "Lactose intolerance is the human default", "Cheese and yogurt have far less lactose"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sugar Problem",
+          "text": "Milk looks simple. It is not. Milk is mostly water, around 87 percent of it. Floating in the rest are three things that matter: fat, protein, and a sugar called lactose. Lactose is where the story gets strange. Your body cannot absorb lactose the way it arrives. The molecule has to be snipped in half first, and the tool that snips it is an enzyme called lactase. Every healthy human baby makes plenty of lactase. That makes perfect sense. For almost all of human history, milk was baby food and nothing else. Then the body shuts the tool away. In most mammals, and in most people around the world, the lactase gene quietly switches off a few years after a child stops nursing. If a person drinks milk after that, the lactose travels through the gut undigested. Bacteria living down there are delighted. They feast on the sugar and produce gas, and the person gets a sore, bloated stomach. That is lactose intolerance. It is not a disease and it is not rare. It is the ordinary human default, shared by roughly two out of every three adults alive. The unusual group is the other one. Some people keep making lactase their whole lives and can drink a tall glass of milk at forty without a second thought. This trait is called lactase persistence, and in the long story of our species it is brand new. It shows up in the last several thousand years, in places where people had already begun keeping cattle, sheep, and goats. If you can digest milk, a herd becomes food and drink you can carry with you. That advantage spread the trait fast. Milk did not change to suit us. We changed, because of milk."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is lactase, and what job does it do?",
+            "Why does it make sense that every human baby makes lactase?",
+            "Explain why undigested lactose gives a person a sore stomach.",
+            "The passage says lactose intolerance is not a disease. Why does the author bother to say that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "an enzyme that snips the lactose molecule in half so the body can absorb it",
+            "(babies live on milk, so they need the tool that digests its sugar)",
+            "bacteria in the gut feast on the sugar and produce gas, which bloats the stomach",
+            "(inference: most people have it, so it is normal, not a defect or an illness)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Digesting milk as an adult is a rare, recent human trait, not the normal one",
+            "Milk is the healthiest drink for every person on Earth",
+            "Cows produce more milk than any other farm animal"
+          ],
+          "answers": ["Digesting milk as an adult is a rare, recent human trait, not the normal one"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["lactose → ____", "enzyme → ____", "lactase persistence → ____"],
+          "rows": 1,
+          "answers": [
+            "the sugar found in milk",
+            "a tool the body uses to break a molecule apart",
+            "keeping the ability to digest milk sugar into adulthood"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the last two lines of the passage: Milk did not change to suit us. We changed, because of milk. Give two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Only Food Made to Be Food",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-milk", "templateLabel": "The Only Food Made to Be Food", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "milk",
+          "notes": ["Louis Pasteur was studying spoiled wine, not milk", "Pasteurizing: heat briefly, then chill fast", "Modern plants use 161 degrees F for 15 seconds", "Nathan Straus opened milk stations in New York in 1893", "New York required pasteurized milk by 1914", "Homogenizing breaks fat into specks so cream cannot rise"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Most Dangerous Drink in the City",
+          "text": "For most of human history, milk was drunk within sight of the animal that made it. You walked to the cow, or the cow walked to you. Cities broke that arrangement. By the middle of the 1800s, American and European cities had swollen far past the fields that fed them. Milk now traveled. It sat warm in open cans on carts and railway platforms, sometimes for a full day, and warm milk is an excellent home for bacteria. Some dairies made it worse by watering the milk down and stirring in chalk or plaster to restore the white. What arrived at a family's door could carry tuberculosis, typhoid, or scarlet fever, and in the worst neighborhoods it killed infants by the thousand. Nobody could see the cause. Germs were still an argument, not a fact. The answer came sideways, from a French chemist who was not thinking about milk at all. Louis Pasteur had been asked why wine and beer spoiled, and his experiments in the 1860s showed that living microbes, not some mysterious chemical process, were doing the spoiling. Heat the liquid briefly, he found, and the microbes die while the drink survives. The method took his name. Applied to milk, pasteurizing meant heating it just hot enough, just long enough, then chilling it fast. A modern plant holds the milk at 161 degrees Fahrenheit for 15 seconds. That is all it takes. Getting cities to accept it took decades. Dairies complained about the cost, and plenty of people insisted that heating milk ruined it. In New York, a merchant named Nathan Straus stopped arguing and simply built the proof. Starting in 1893, he paid out of his own pocket for milk stations that sold clean pasteurized milk to poor families for pennies. Infant deaths in the districts he served fell sharply and kept falling. The evidence piled up until the law caught up, and in 1914 New York required that milk be pasteurized. Other cities followed. One more change arrived later, and it is the reason your milk looks the way it does. Left alone, cream floats to the top of a bottle, because fat is lighter than water. Homogenizing forces milk through a tiny opening at enormous pressure, shattering the fat into specks too small to climb. The cream never rises again. The glass in your fridge is the end of a long argument about invisible things, and the argument was settled by heat."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why city milk in the 1800s became dangerous when farm milk had not been.",
+            "What was Louis Pasteur actually investigating, and why does the author call the answer sideways?",
+            "The passage says Nathan Straus stopped arguing and simply built the proof. Explain what he did and why it worked. Quote one detail from the text.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the danger of city milk, Pasteur's discovery, and pasteurizing becoming law)",
+            "(farm milk was drunk fresh and nearby; city milk sat warm for hours or days, letting bacteria multiply)",
+            "(he was studying why wine and beer spoiled; the fix for milk came from research aimed at something else)",
+            "(he funded milk stations from 1893 selling clean pasteurized milk cheaply; quote: Infant deaths in the districts he served fell sharply)",
+            "(inform, with detail: it defines terms and gives dates and figures; the closing line leans persuasive)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["pasteurizing → ____", "homogenizing → ____", "microbes → ____", "typhoid → ____"],
+          "rows": 1,
+          "answers": [
+            "heating a liquid briefly to kill microbes, then chilling it fast",
+            "forcing milk through a tiny opening so the fat breaks into specks that cannot rise",
+            "living things too small to see, such as bacteria",
+            "a serious disease that could be carried in dirty milk"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Dairies complained about the cost of pasteurizing. Whose cost was really at stake, and who paid it before the law changed?",
+            "Why do you think evidence alone took over twenty years to become law?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(dairies paid money; families paid with sick and dead infants)",
+            "(opinion: money, habit, distrust of new science, and slow politics)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when evidence shows a food is unsafe, should the government be allowed to force a change, or should people choose for themselves? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Only Food Made to Be Food",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-milk", "templateLabel": "The Only Food Made to Be Food", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "milk",
+          "notes": ["Mammal comes from mamma, Latin for breast", "Casein micelles scatter light: that is the white", "Skim milk looks faintly blue", "Hooded seal milk is about 60 percent fat", "A platypus has no nipples: milk seeps through skin", "Lactase persistence is a top signal of recent human selection"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Milk Is the Only Food Invented to Be Food",
+          "text": "Almost everything you eat was built by evolution for some other purpose. An apple is a bribe, offered to an animal in exchange for carrying seeds somewhere useful. A grain of wheat is a packed lunch a plant made for its own seedling. A carrot is a root storing sugar for next year. In each case you are an intruder, eating something intended for somebody else. Milk is the exception. Milk is the only food in nature that exists purely to feed somebody. That is its entire job, and nothing else about it makes sense until you accept that. Every mammal makes it, and mammals are named for it. The word comes from mamma, the Latin for breast. What varies is the recipe, and it varies enormously. Cow milk runs around four percent fat, and human milk is not far off. The milk of a hooded seal is roughly sixty percent fat, closer to soft butter than to a drink, because a hooded seal pup nurses on drifting ice for about four days total before its mother leaves for good. Four days is the entire childhood. The milk has to be that rich. A platypus, meanwhile, has no nipples at all. Its milk seeps out through patches of skin, and the young lap it from her fur. Same instruction, wildly different engineering. Now look at why milk is white, because the answer is not the obvious one. There is no white pigment anywhere in it. Milk is mostly water, around eighty-seven percent, and dissolved through that water is a protein called casein, bundled into microscopic clusters called micelles, alongside tiny globules of fat. Those particles happen to be the right size to scatter every wavelength of visible light at roughly the same strength, and light scattered evenly across the spectrum reads to your eye as white. Skim milk, with the fat taken out, often looks faintly blue, because the smaller particles left behind scatter blue light a little more efficiently than red. The white is not a color. It is an optical effect. Then there is the sugar, and the sugar is where milk stops being biology and becomes human history. Milk's sugar is lactose, and digesting it requires an enzyme called lactase. Every human baby makes lactase. Almost every human once stopped making it a few years after weaning, for the obvious reason that there was no milk to drink after weaning. That is still true for most people alive today. Around eight thousand years ago, in the Near East and in Europe, the arrangement began to break. People had started keeping cattle, sheep, and goats, and broken pottery from those settlements still carries the chemical traces of milk fat soaked into the clay. Here is the detail that surprises people: they were using milk long before their bodies could handle it. They almost certainly turned it into cheese and yogurt, where bacteria and time eat most of the lactose before any human does. Only later did a mutation appear that jams the lactase switch permanently on, and it spread through some populations at astonishing speed. Geneticists reading modern DNA find it sitting there as one of the strongest signatures of recent natural selection anywhere in the human genome. That is the strange symmetry of this drink. Milk exists to feed the young of one species. One species then rearranged its own genome to keep drinking it forever."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage opens with an apple, a grain of wheat, and a carrot. Explain what that opening is doing and why milk needs it.",
+            "Explain why milk appears white and why skim milk can look blue. Cite the exact sentence that states the author's conclusion about the white.",
+            "The passage says people were using milk long before their bodies could handle it. Explain how that was possible and why it matters to the argument.",
+            "Analyze the final two sentences. What move is the author making by ending there, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering purpose, variety, whiteness, and the lactase story)",
+            "(the examples establish that all other food was made for something else, so milk's uniqueness lands)",
+            "(casein micelles and fat globules scatter all wavelengths evenly; skim milk has smaller particles that scatter blue more; cite: The white is not a color. It is an optical effect.)",
+            "(cheese and yogurt let bacteria consume the lactose first; it shows dairying came before the gene, so culture drove the biology)",
+            "(it reverses the direction of the story from milk shaping a baby to milk shaping a species; supported by the pottery evidence and the selection signal)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["micelle → ____", "weaning → ____", "mutation → ____", "signature (of selection) → ____"],
+          "rows": 2,
+          "answers": [
+            "a microscopic cluster of casein protein suspended in milk",
+            "the point at which a young mammal stops feeding on its mother's milk",
+            "a change in a gene that can be passed to offspring",
+            "a pattern left in DNA showing a trait spread because it gave an advantage"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The hooded seal nurses for about four days and its milk is roughly sixty percent fat. Explain the connection, and state the general rule it suggests about milk recipes.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a very short nursing window forces extremely rich milk; rule: the recipe fits the length and demands of the childhood)",
+            "(student question plus a credible source type, such as a peer-reviewed genetics paper)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Lactase persistence proves that human culture can drive human evolution, not just the other way around. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "key": "circuit",
+  "title": "The Loop That Makes the Light Come On",
+  "blurb": "A battery, a wire and a bulb. How a closed loop turns a push into light, and how that loop became the chip in your phone.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Loop That Makes the Light Come On",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Trace the loop in the picture with your finger.",
+      "meta": { "templateId": "story-circuit", "templateLabel": "The Loop That Makes the Light Come On", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the battery. Find the bulb. Follow the wire with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "circuit",
+          "notes": ["The wire makes a loop", "The battery gives the push", "The bulb makes the light", "A loop like this is called a circuit"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A battery has two ends. A wire goes out from one end. A wire comes back to the other end. In the middle the wire meets a little bulb. Now the loop is closed. The bulb glows. This loop is called a circuit. If you take one wire off, the loop is open. The light goes out. Put the wire back on. The light comes on again."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bulbs in each row. Write how many in the box.",
+          "emoji": "💡",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "wire    loop" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part with its job.",
+          "pairs": [
+            { "left": "battery", "right": "gives the push" },
+            { "left": "wire", "right": "carries the way" },
+            { "left": "bulb", "right": "makes the light" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a battery, two wires, and a bulb. Make the loop go all the way around.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Loop That Makes the Light Come On",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-circuit", "templateLabel": "The Loop That Makes the Light Come On", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. You can look back at the story any time." },
+        {
+          "kind": "image",
+          "imageKey": "circuit",
+          "notes": ["A circuit is a loop", "The battery pushes", "The thin wire in the bulb is a filament", "A switch is a gap you can close", "Break the loop and the light stops"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Loop That Makes the Light Come On",
+          "text": "A bulb will not light on its own. It needs a loop. The loop starts at the battery, runs along a wire, goes through the bulb, and comes back to the battery. That loop is called a circuit. Inside the bulb is a tiny curl of wire called a filament. It is thinner than a hair. When electricity pushes through the filament, it gets very hot. It gets so hot that it glows white. That glow is your light. A switch is a small gap in the loop. Open the gap and the light goes out. Close the gap and the loop is whole again. The bulb comes back on right away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the loop called?", "What is the tiny curl of wire inside the bulb called?", "What happens when you open the switch?"],
+          "rows": 2,
+          "answers": ["a circuit", "a filament", "the loop breaks and the light goes out"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The loop starts at the ____.", "The tiny wire in the bulb is a ____.", "The filament gets so hot that it ____.", "A switch is a ____ in the loop."],
+          "wordBank": ["battery", "filament", "glows", "gap"],
+          "answers": ["battery", "filament", "glows", "gap"]
+        },
+        { "kind": "draw", "prompt": "Draw a circuit with a switch in it. Draw an arrow to show where the gap opens.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Loop That Makes the Light Come On",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-circuit", "templateLabel": "The Loop That Makes the Light Come On", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "circuit",
+          "notes": ["Current is moving electrons", "Copper carries it, rubber blocks it", "Conductors let current through", "Insulators stop it", "A tungsten filament glows near 2,500 degrees Celsius"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Light Comes On",
+          "text": "Everything around you is made of atoms, and atoms carry tiny pieces called electrons. In a metal wire, some of those electrons are loose. They can move from atom to atom. That moving is what we call electric current. Current will not go anywhere unless it has a way out and a way back. That is why a circuit has to be a loop. A battery pushes the loose electrons out of one end, along the wire, through whatever you have put in the way, and back into the other end. Not every material lets electrons move. Copper does, which is why wires are made of copper. Rubber does not, which is why the wire has a rubber coat that is safe to hold. Materials that let current through are called conductors. Materials that block it are called insulators. A good circuit needs both, one to carry the current and one to keep it where it belongs. Inside an old style bulb, the wire suddenly gets very thin. The electrons have to squeeze through, and squeezing makes heat. The thin wire is made of a metal called tungsten. It glows white at around 2,500 degrees Celsius and still does not melt. That is the whole trick. The light is a wire being made to struggle."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What do we call the movement of loose electrons?",
+            "Why does a circuit have to be a loop?",
+            "What is the difference between a conductor and an insulator?",
+            "Why do you think the filament is made thin on purpose?"
+          ],
+          "rows": 2,
+          "answers": [
+            "electric current",
+            "current needs a way out and a way back, so the path has to return to the battery",
+            "a conductor lets current through and an insulator blocks it",
+            "(inference: a thin wire makes the electrons squeeze, which makes heat and light)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Light Comes On", "How to Build a Wooden Chair", "The Deepest Lake in the World"],
+          "answers": ["Why the Light Comes On"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Moving electrons make an electric ____.", "Copper is a good ____.", "Rubber is an ____.", "The thin wire in a bulb is made of ____."],
+          "wordBank": ["current", "conductor", "insulator", "tungsten"],
+          "answers": ["current", "conductor", "insulator", "tungsten"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: name one thing in your house that has a circuit inside it, and explain how you know.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Loop That Makes the Light Come On",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-circuit", "templateLabel": "The Loop That Makes the Light Come On", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "circuit",
+          "notes": ["Luigi Galvani made a frog leg kick in the 1780s", "Alessandro Volta built the first battery in 1800", "The voltaic pile: zinc, copper, salty cardboard", "Before Volta, electricity was only sparks", "The volt is named after him", "Galvani was right that nerves use electricity"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Frog Leg That Led to the Battery",
+          "text": "In the 1780s an Italian doctor named Luigi Galvani was working on a dead frog. When he touched its leg with a metal instrument, the leg kicked. Galvani was astonished. He decided that animals must store a special force inside them, and he called it animal electricity. Another Italian, Alessandro Volta, read Galvani's work and did not believe a word of it. Volta noticed something Galvani had walked straight past. The kick only happened when two different metals touched the frog at the same time. Volta thought the electricity was coming from the metals, not from the animal. The frog was simply a wet path between them. To prove it, Volta got rid of the frog. In 1800 he stacked a disc of zinc, then a disc of copper, then a piece of cardboard soaked in salt water, and he repeated that pattern over and over into a tall column. When he touched a wire to the top and to the bottom, current flowed, and it kept on flowing. He had built the first battery. We call it the voltaic pile. This mattered far more than it sounds. Before Volta, the only electricity anyone could produce came in sudden sparks that were over in an instant. You could be startled by it, but you could not use it. Volta gave the world a steady push that could be sent along a wire and put to work, and every circuit you have ever switched on begins with a source like his. We even measure that push in volts. Galvani was not completely wrong, by the way. Nerves really do carry electrical signals, and your own muscles move because of them. He simply had the wrong explanation for his frog."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What did Galvani think was making the frog leg kick?",
+            "What did Volta notice that Galvani had missed?",
+            "Why did Volta remove the frog from the experiment?",
+            "The passage says sparks meant you could be startled but not use it. Explain what Volta's pile gave people that sparks could not."
+          ],
+          "rows": 2,
+          "answers": [
+            "a special force stored inside animals, which he called animal electricity",
+            "the kick only happened when two different metals touched the frog at once",
+            "(inference: to prove the electricity came from the metals, not the animal)",
+            "a steady, lasting current that could be sent along a wire and put to work"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A wrong idea about frogs led a rival to invent the first steady source of electricity",
+            "Frogs are the most electric animal on Earth",
+            "Italy has always been the best country for science"
+          ],
+          "answers": ["A wrong idea about frogs led a rival to invent the first steady source of electricity"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["astonished → ____", "voltaic pile → ____", "steady (push) → ____"],
+          "rows": 1,
+          "answers": [
+            "very surprised",
+            "Volta's stack of zinc, copper and salty cardboard: the first battery",
+            "lasting and even, not stopping after an instant"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: Galvani got the wrong answer, but his experiment still led somewhere important. Is a wrong idea ever useful in science? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Loop That Makes the Light Come On",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-circuit", "templateLabel": "The Loop That Makes the Light Come On", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "circuit",
+          "notes": ["Electrons drift slower than a walking ant", "The push travels near light speed", "Resistance turns current into heat", "Series: one loop, shared by all", "Parallel: every branch gets its own loop", "A fuse is built to fail on purpose"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Slowest Fast Thing in Your House",
+          "text": "Flick a switch and the light appears instantly. It is tempting to picture electrons racing along the wire like water down a hose. They do not. In a copper wire carrying an ordinary household current, the electrons drift forward at less than a millimeter per second. An ant could outrun them. A single electron leaving your light switch might take hours to arrive at the bulb. So why is the light instant? Because the wire is already packed with loose electrons from end to end, like a tube already full of marbles. Push one marble in at your end and a marble drops out the far end immediately, even though no single marble crossed the tube. The push travels close to the speed of light. The electrons themselves barely shuffle. That push meets resistance. Every material fights the current a little, and a thin wire fights harder than a thick one. Fighting produces heat. In a toaster or an old bulb that heat is the entire point. Everywhere else it is waste. Now think about how you wire two bulbs. Put them both in a single loop, one after the other, and you have a series circuit. Take one bulb out and the loop is broken, so both go dark. Old strings of holiday lights were wired this way, which is why one dead bulb could kill the whole string. Give each bulb its own loop back to the source instead and you have a parallel circuit. Remove one and the other keeps glowing. Your house is wired in parallel. That is why a blown lamp in the hallway does not darken the kitchen. Parallel wiring carries a danger. Every loop you add pulls more current through the main wire, and more current means more heat. Worse is a short circuit, where a stray path lets current skip past the bulb and run straight home with almost nothing to slow it down. The current climbs, the wire heats, and a house fire is one melted insulator away. So we build a deliberate weak point into the loop. A fuse is a thin strip of metal chosen to melt and break the circuit before the rest of the wiring gets dangerous. A circuit breaker does the same job with a switch that trips. Both exist to fail, so that nothing else has to."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why the light is instant even though the electrons move slowly. Quote the comparison the passage uses.",
+            "Contrast a series circuit with a parallel circuit, and explain why houses are wired in parallel.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering slow drift plus instant push, series vs parallel, and fuses)",
+            "the wire is already full of electrons and the push travels near light speed; quote: like a tube already full of marbles",
+            "series shares one loop so one break stops everything; parallel gives each branch its own loop, so one failure does not stop the rest",
+            "(inform, with detail: it defines terms and explains causes, though the marble image is there to entertain)",
+            "(a fuse is designed to break so the wiring and house stay safe; the author ends there because it turns a dry rule into a purpose)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["drift → ____", "resistance → ____", "short circuit → ____", "deliberate → ____"],
+          "rows": 1,
+          "answers": [
+            "to move along slowly",
+            "the way a material fights the current and turns some of it into heat",
+            "a low resistance path that skips the load and lets current run straight back",
+            "done on purpose"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a fuse exists to fail. Explain why building something to fail can be good engineering.",
+            "If heat is waste in most circuits, why do you think engineers work so hard to reduce resistance in wires?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(a cheap part breaking on purpose protects the expensive and dangerous parts)",
+            "(inference: heat wastes energy and can start fires, so less resistance means less waste and more safety)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: every home has a breaker box the family is told never to touch. Should kids be taught how their house circuits work? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Loop That Makes the Light Come On",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-circuit", "templateLabel": "The Loop That Makes the Light Come On", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "circuit",
+          "notes": ["Circuit: from Latin for a going around", "Volta's pile, 1800: the first steady current", "Ohm's law, 1827: push, current, resistance", "Transistor, 1947, Bell Labs", "Integrated circuit: Kilby 1958, Noyce 1959", "A phone chip holds tens of billions of switches"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "From a Stack of Coins to Ten Billion Switches",
+          "text": "The word circuit comes from a Latin word meaning a going around, and after two centuries of invention that definition has never once needed changing. A circuit is a loop. Current leaves a source, passes through something that puts it to use, and returns. Break the loop anywhere and everything stops. That single rule governs a flashlight and it governs the processor in your phone, and nothing in between has escaped it. The loop needed a source, and in 1800 it got one. Alessandro Volta stacked discs of zinc and copper separated by cardboard soaked in brine, and found that his column pushed a steady current through a wire for as long as he cared to leave it connected. Before the voltaic pile, electricity meant static sparks: dramatic, useless, and finished in an instant. Volta's stack gave a push that lasted, which meant electricity could finally be studied rather than merely admired. Studying it produced a law. In 1827 Georg Ohm published the relationship that still describes every loop ever built: the current depends on the push driving it and the resistance opposing it. Double the push and you double the current. Double the resistance and you halve it. German scientists dismissed his work as a fantasy at the time. The unit of resistance is now named after him. Then the loop got a job. A bulb is nothing more than resistance placed in the path on purpose, a filament so thin that current struggling through it climbs to thousands of degrees and glows. That is the crude version of the idea: make the circuit fight itself, and take the heat or the light that comes off. The interesting version arrived when circuits stopped merely carrying power and started carrying decisions. In 1947, at Bell Labs, John Bardeen, Walter Brattain and William Shockley built the transistor: a lump of semiconductor, no moving parts, in which one small current controls a much larger one. That makes a transistor a switch that another circuit can flip. Wire enough of them together and a loop can add, compare, remember, and choose. Success created its own problem, and the engineers of the day named it the tyranny of numbers. Every transistor had to be soldered to its neighbors by hand. A genuinely useful machine wanted thousands of them, and thousands of hand made joints meant thousands of chances to fail. Reliability collapsed exactly as ambition rose. The answer came in 1958. Jack Kilby, newly hired at Texas Instruments, had no vacation days saved and was left almost alone in the lab through the company shutdown, with time to think. Instead of wiring separate components together, he proposed carving the entire circuit, transistors and resistors and connections alike, out of one block of semiconductor. In September he switched his rough prototype on and it worked. Months later, at Fairchild Semiconductor, Robert Noyce reached the same conclusion in silicon and paired it with a flat manufacturing process that could print such circuits by the batch. Between them they had invented the integrated circuit. Kilby received the Nobel Prize for it in 2000. Noyce had died a decade earlier and could not share it. Everything since has been the same trick, performed smaller. The chip in an ordinary phone now carries tens of billions of transistors, each one a switch on a loop, packed into a chip the size of a fingernail. None of it has escaped Volta's rule. It is still a source, still a path, still a return. Break it anywhere and the light goes out."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage claims the definition of a circuit has never needed changing. Cite the definition it gives, and explain how the ending supports the claim.",
+            "Explain the tyranny of numbers in your own words, and why the integrated circuit solved it.",
+            "The author writes that circuits stopped merely carrying power and started carrying decisions. Explain what that means, using the transistor as evidence.",
+            "Analyze the structure of the passage. It moves through Volta, Ohm, the bulb, the transistor, and the chip. Why does the author order it this way instead of starting with the phone?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(cite: Current leaves a source, passes through something that puts it to use, and returns; the ending repeats it as still a source, still a path, still a return)",
+            "(hand soldering thousands of separate transistors meant thousands of failure points; building the whole circuit in one block removed the joints)",
+            "(a transistor lets one small current control a larger one, so a circuit can switch itself and therefore add, compare, remember and choose)",
+            "(chronological build: each step is only possible because of the last, so the chip lands as the same rule scaled down rather than as magic)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["resistance → ____", "semiconductor → ____", "prototype → ____", "integrated → ____"],
+          "rows": 2,
+          "answers": [
+            "the opposition a material offers to current, which turns some of it into heat",
+            "a material used to build transistors, which can either carry current or block it",
+            "a rough first working version of something being invented",
+            "built together as one piece rather than joined from separate parts"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says German scientists dismissed Ohm's work as a fantasy. What does that detail add to the passage, and would the passage be weaker without it?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it shows correct ideas can be rejected at first; it makes the history human rather than a list of triumphs)",
+            "(student question plus a credible source type, such as a physics textbook or a chip manufacturer's technical documentation)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Kilby and Noyce did not invent anything new, they only found a smaller way to build what already existed. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

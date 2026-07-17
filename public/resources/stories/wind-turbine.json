@@ -1,0 +1,320 @@
+{
+  "key": "wind-turbine",
+  "title": "The Machine That Catches the Wind",
+  "blurb": "Three blades that work like airplane wings, tips moving faster than a race car, turning moving air into the electricity in your lamp.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Machine That Catches the Wind",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-wind-turbine", "templateLabel": "The Machine That Catches the Wind", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the three long blades." },
+        {
+          "kind": "image",
+          "imageKey": "wind-turbine",
+          "notes": ["It has three blades", "It is taller than a tree", "The wind makes it turn", "The turning makes electricity", "It stands on a windy hill"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look up. That is a wind turbine. It is very tall. It has three long white blades. When the wind blows, the blades go around. Around and around. The blades never fly away. They hold on tight to the tall tower. All that turning makes electricity. The electricity runs down the tower and into a wire. The wire goes to your house. So the wind helps your lamp light up at night."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the blades on each turbine. Write how many in the box.",
+          "emoji": "💨",
+          "items": ["3", "1", "4", "2"],
+          "answers": ["3", "1", "4", "2"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "wind    turn" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "turbine", "right": "wind" },
+            { "left": "kite", "right": "string" },
+            { "left": "lamp", "right": "electricity" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own wind turbine on a hill. Add clouds blowing past it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Machine That Catches the Wind",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-wind-turbine", "templateLabel": "The Machine That Catches the Wind", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "wind-turbine",
+          "notes": ["One blade is longer than a school bus", "The box at the top is called the nacelle", "The blades turn a generator", "It burns nothing and makes no smoke", "On a still day it makes nothing"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Catches the Wind",
+          "text": "A wind turbine looks like a giant white pinwheel on a pole. It has three blades. One blade is longer than a school bus. When the wind rushes past the blades, they begin to turn. The blades turn a shaft inside the box at the top of the tower. The shaft turns a machine called a generator. The generator makes electricity. The electricity runs down the tower and along wires to houses and schools and shops. A turbine burns nothing. It makes no smoke. It only waits for the wind. On a still day the blades hang quiet, and the turbine makes nothing at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many blades does a wind turbine have?", "What makes the blades turn?", "What does the generator make?", "What happens on a day with no wind?"],
+          "rows": 2,
+          "answers": ["three", "the wind", "electricity", "the blades stay still and it makes nothing"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A turbine has three long ____.", "The ____ makes the blades turn.", "The ____ makes electricity.", "The electricity runs along ____ to your house."],
+          "wordBank": ["blades", "wind", "generator", "wires"],
+          "answers": ["blades", "wind", "generator", "wires"]
+        },
+        { "kind": "draw", "prompt": "Draw a wind turbine on a windy hill. Add something at your house that the electricity turns on.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Machine That Catches the Wind",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-wind-turbine", "templateLabel": "The Machine That Catches the Wind", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "wind-turbine",
+          "notes": ["The blade tip can pass 180 miles per hour", "The hub turns only about 15 times a minute", "Blades are wings, not sails", "A wind vane on top tells it where the wind is", "Motors swing it around to face the wind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Blades Are Not Sails",
+          "text": "From far away, a wind turbine looks lazy. The blades swing around slowly, maybe fifteen times a minute. But watch the very tip of one blade. The blade is so long that its tip has a huge circle to travel, and it must travel that circle in the same few seconds. On a large turbine the tip can move faster than a race car, over 180 miles per hour. The blades are not sails. A sail gets pushed. A turbine blade gets pulled. Each blade is shaped like an airplane wing, curved on one side and flatter on the other. As the blade slices through the air, it bends that air around itself. The air hurrying over the curved side speeds up and presses less hard. The air on the flatter side presses harder. That difference in pressure lifts the blade sideways, and the sideways lift is what pulls the blade around its circle. Behind the blades sits a long box called the nacelle. Inside it, a spinning shaft turns a generator, and the generator makes electricity. On the roof of the nacelle stands a little wind vane. When the wind swings to a new direction, the vane notices, and motors turn the whole nacelle until the blades face straight into the wind again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How many times a minute do the blades go around?",
+            "Why does the tip of a blade move so much faster than the middle?",
+            "What is the box behind the blades called?",
+            "Why do you think a turbine needs to face straight into the wind?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about fifteen times a minute",
+            "the tip has a much bigger circle to travel in the same time",
+            "the nacelle",
+            "(inference: the blades only get lift when the wind meets them head on)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Blades Are Not Sails", "How to Build a Kite at Home", "The Windiest City in the World"],
+          "answers": ["Why the Blades Are Not Sails"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A blade is shaped like an airplane ____.", "The sideways pull on a blade is called ____.", "The box behind the blades is the ____.", "A wind ____ tells the turbine which way the wind is blowing."],
+          "wordBank": ["wing", "lift", "nacelle", "vane"],
+          "answers": ["wing", "lift", "nacelle", "vane"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a turbine works, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Machine That Catches the Wind",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-wind-turbine", "templateLabel": "The Machine That Catches the Wind", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "wind-turbine",
+          "notes": ["Double the wind speed, get about 8 times the power", "Double the blade length, catch 4 times the air", "The longest blades pass 100 meters", "Albert Betz found the limit in 1919", "No turbine can take more than about 59 percent"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Height Is Everything",
+          "text": "Wind turbines are built tall for a reason that has nothing to do with looking impressive. Down near the ground, wind drags against hills, trees, fences, and rooftops. That friction slows the air and chops it into gusts. Climb higher and the same wind runs faster and smoother. A turbine on a 300 foot tower reaches better wind than the same machine on a short one, which is why the towers keep growing. The reward for height is bigger than it sounds, because wind power does not add up in a straight line. Double the wind speed and you do not get double the power. You get about eight times as much. The energy in moving air rises with the cube of its speed, so a small gain in wind is worth an enormous gain in electricity. A site with wind averaging 16 miles per hour is not a little better than a site averaging 8. It is worth roughly eight of them. Blade length is lopsided in the same way. The blades sweep out a circle, and doubling the blade length makes that circle four times larger. Four times the circle means four times the air caught. This is why engineers keep stretching blades until the factory, the road, and the crane give up. The longest blades built so far pass 100 meters, longer than a soccer field, and they have to travel in pieces or go by ship. There is a ceiling, though. A turbine can never take all the energy out of the wind, because if it did, the air would stop dead behind the blades and no new air could get through the circle. In 1919 a German physicist named Albert Betz worked out exactly where the limit sits: the most any wind machine can capture is about 59 percent. Good turbines today reach between 35 and 45 percent, which is remarkably close to the theoretical best."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why is wind near the ground worse than wind higher up?",
+            "Explain in your own words why a small gain in wind speed is worth so much.",
+            "Why would a turbine that captured 100 percent of the wind's energy stop working?",
+            "The passage says engineers stretch blades until the factory, the road, and the crane give up. What does that tell you about what limits turbine size?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it drags against hills, trees, fences, and rooftops, which slows it and makes it gusty",
+            "(power rises with the cube of speed, so doubling the speed gives about eight times the power)",
+            "the air would stop dead behind the blades and no new air could get through",
+            "(inference: the limit is not physics but building, moving, and lifting the blades)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Turbines are built tall with long blades because wind power grows steeply with height and blade length, up to a hard physical limit",
+            "Wind turbines are the cheapest machines ever built",
+            "German physicists invented the airplane wing"
+          ],
+          "answers": ["Turbines are built tall with long blades because wind power grows steeply with height and blade length, up to a hard physical limit"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["friction → ____", "cube (of its speed) → ____", "lopsided → ____", "ceiling (as used here) → ____"],
+          "rows": 1,
+          "answers": [
+            "the dragging of one thing against another that slows it down",
+            "a number multiplied by itself three times",
+            "uneven, growing far faster on one side than the other",
+            "an upper limit that cannot be passed"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if you had to choose where to build a wind turbine near your town, where would you put it? Give two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Machine That Catches the Wind",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-wind-turbine", "templateLabel": "The Machine That Catches the Wind", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "wind-turbine",
+          "notes": ["Charles Brush, Cleveland, 1888: the first electric one", "144 cedar blades, 56 feet across, 80,000 pounds", "It made 12 kilowatts and ran for 20 years", "Poul la Cour proved fewer blades work better", "Turbines start near 7 mph and stop themselves near 55"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ohio Basement That Started It",
+          "text": "In the winter of 1888, a Cleveland inventor named Charles Brush switched on a machine in his backyard that had never existed before. It was a windmill that made electricity. Windmills themselves were ancient. Persians were grinding grain with the wind more than a thousand years earlier, and Dutch mills had been pumping water out of the lowlands for centuries. But every one of those machines turned wind into motion. Brush's machine turned wind into current. It was a monster by the standards of its day and a curiosity by ours. The wheel measured 56 feet across and carried 144 blades cut from cedar. The whole thing weighed 80,000 pounds. All that machinery produced 12 kilowatts, roughly enough to run a hair dryer and a toaster. Brush stored it in 408 batteries in his basement and lit his house with it for twenty years. The odd part is the blade count. Brush assumed that more blades would catch more wind, and it is an easy thing to assume. A Danish schoolteacher named Poul la Cour proved otherwise. Working in the 1890s with a wind tunnel he built himself, la Cour found that a wheel with few blades, turning fast, beat a wheel crowded with blades, turning slow. Crowded blades spend their time fighting through the churned up air of the blade in front of them. That finding is why the turbine outside your window has three. Three sits at a careful balance point. Two blades are cheaper, but they wobble: when one blade points up into fast wind while the other points down into slow wind, the whole machine strains and shakes. Three blades keep the load even and the tower steady. More than three adds weight and cost without adding much catch. Modern turbines are also fussy about when they work at all. Below about 7 miles per hour there is not enough push to be worth starting. Above about 55, the machine pitches its blades edge on to the wind and deliberately stops itself before something breaks. So a turbine standing still on a wild day is usually not broken. It is being careful."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What made Brush's machine different from every windmill before it?",
+            "Explain what Poul la Cour discovered and how he discovered it. Quote the phrase the passage uses for what crowded blades fight through.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end with the line about a turbine being careful rather than broken?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering Brush's first electric windmill, la Cour's fewer-blades finding, and the three-blade design)",
+            "earlier windmills turned wind into motion; Brush's turned wind into current",
+            "few blades turning fast beat many blades turning slow, found with a wind tunnel he built himself; quote: the churned up air",
+            "(inform, with detail: it gives dates, measurements, and explanations; the wry closing line adds some entertainment)",
+            "(it corrects a common misreading and leaves the reader with the idea that stopping is a designed behavior)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["current → ____", "wind tunnel → ____", "balance point → ____", "edge on → ____"],
+          "rows": 1,
+          "answers": [
+            "electricity flowing through a wire",
+            "a machine that blows steady air over a test object to measure how it behaves",
+            "the setting where two opposite drawbacks are smallest at once",
+            "turned so the thin edge, not the flat face, meets the wind"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Brush's assumption that more blades catch more wind sounds sensible. Why do you think it turned out to be wrong?",
+            "Brush's machine made 12 kilowatts from 80,000 pounds of hardware. What does that comparison tell you about early designs?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(each blade disturbs the air for the next one, so crowding them wastes the wind rather than catching more of it)",
+            "(inference: the design was hugely inefficient; size was doing the work that shape and speed do now)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: Brush lit one house for twenty years with a machine nobody copied for decades. Was his invention a success or a failure? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Machine That Catches the Wind",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-wind-turbine", "templateLabel": "The Machine That Catches the Wind", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "wind-turbine",
+          "notes": ["Betz limit, 1919: about 59 percent is the hard ceiling", "Real turbines reach 35 to 45 percent", "The slowed air behind a turbine is called the wake", "Blades are fiberglass and balsa bonded with resin", "Painting one blade black cut bird deaths about 70 percent on Smola", "Power scales with the cube of wind speed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What the Wind Costs",
+          "text": "Every energy source asks for something in return, and the interesting question about wind is not whether it is free. It is what it actually asks for. Start with what the machine is doing. Wind is air with momentum, and a turbine is a device for stealing some of it. The blades are wings, not sails. Air flowing past a blade's curved face speeds up and presses less hard than the air on its flatter face, and that imbalance lifts the blade sideways, hauling it around its circle. A shaft carries the rotation into a generator, and the generator hands the grid a current. Behind the machine, the air leaves slower and messier than it arrived. That slowed, tumbling column is called the wake, and it is why turbines on a wind farm are planted far apart. A turbine standing in another turbine's wake is a turbine being fed leftovers. The physics sets hard walls. Albert Betz showed in 1919 that no wind machine, however clever, can extract more than about 59 percent of the energy in the air passing through it. Taking all of it would mean stopping the air completely, and stopped air plugs the very hole it was flowing through. Real turbines reach 35 to 45 percent. That is not a failure of engineering. It is engineering pressed close to a law. The economics push in exactly one direction: bigger. Power grows with the cube of wind speed, so a taller tower reaching faster, smoother air pays back extravagantly. Power grows with the square of blade length, because a blade twice as long sweeps a circle four times as wide. Both pressures point the same way, which is why the largest turbines now carry blades longer than a soccer field and stand taller than anything else for miles. Now the bill. Those blades are built from fiberglass and balsa wood bonded with resin into a single piece, because a blade that flexes millions of times cannot afford seams that might peel. That same choice makes a blade stubborn to take apart at the end of its life. Steel towers and copper wiring get recycled as a matter of routine. Blades do not. A share of retired ones have been buried in landfills or sawn into bike shelters and footbridges, which is a clever answer at small scale and no answer at all at large scale. Manufacturers are now designing resins that can be chemically undone, which tells you the industry treats this as a real problem rather than a talking point. Birds are the other bill, and the numbers deserve honesty in both directions. Turbines kill birds. So do house cats, windows, cars, and the warming climate that burning fuel accelerates, all by far larger margins. The useful response is not to argue about the ranking. It is to test fixes. On the Norwegian island of Smola, researchers painted one blade of each turbine black, reasoning that three identical blades blur into an invisible smear at speed while a single dark blade breaks the pattern a bird's eye is trying to read. Collisions fell by roughly seventy percent. It cost a bucket of paint. That is the honest shape of wind power. It is not free and it is not magic. It is a very old idea rebuilt with better math, fenced in by a limit from 1919, and still handing us problems worth the trouble of solving."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the Betz limit and why the author says missing it is not a failure. Cite the evidence.",
+            "What is a wake, and what practical decision does it force on wind farm builders? Quote the phrase the author uses for a turbine sitting in one.",
+            "The author writes that the blade recycling fix is a clever answer at small scale and no answer at all at large scale. Explain what that sentence concedes and what it refuses to concede.",
+            "Analyze the author's handling of birds. What move is being made by listing cats, windows, and cars, and is it fair?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(no machine can take more than about 59 percent because stopped air would block the flow; cite: It is engineering pressed close to a law)",
+            "(the slowed, tumbling air behind a turbine; it forces wide spacing between turbines; quote: a turbine being fed leftovers)",
+            "(it concedes that reuse projects are genuinely smart, but refuses to accept them as a solution to the full volume of retired blades)",
+            "(it reframes the objection as a question of scale rather than denying the harm; fair as context, unfair if used to dismiss the issue, and the author avoids that by pivoting to fixes)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["momentum → ____", "wake → ____", "extract → ____", "resin → ____"],
+          "rows": 2,
+          "answers": [
+            "the motion and force carried by a moving mass",
+            "the slowed, disturbed air left behind a turbine",
+            "to take something out of something else",
+            "a liquid that hardens to bond materials into one solid piece"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The Smola fix cost a bucket of paint and cut collisions about seventy percent. Why do you think it took so long for anyone to try it?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: nobody tested the assumption that bird vision was the problem; cheap ideas get overlooked when the debate is about whether harm exists)",
+            "(student question + a credible source type, such as a peer reviewed study or a grid operator's data)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Because wind turbines create waste and kill birds, calling wind power clean is dishonest. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

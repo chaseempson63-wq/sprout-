@@ -1,0 +1,363 @@
+{
+  "key": "food-plate",
+  "title": "The Plate That Tells You What to Eat",
+  "blurb": "The picture that replaced the food pyramid, and the real reason half of it is fruits and vegetables.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Plate That Tells You What to Eat",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-food-plate", "templateLabel": "The Plate That Tells You What to Eat", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the part with the fruit." },
+        {
+          "kind": "image",
+          "imageKey": "food-plate",
+          "notes": ["The plate has four parts", "Every part is a different color", "Half of it is fruit and vegetables", "There is a cup of milk beside it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look at the plate. It has four parts. One part is fruit. One part is vegetables. One part is grains, like bread and rice. One part is protein, like eggs and beans. Beside the plate is a cup of milk. Half the plate is fruit and vegetables. That is the rule. Your food helps you run and grow."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the apples in each row. Write how many in the box.",
+          "emoji": "🍎",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "plate    food" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each food to its part of the plate.",
+          "pairs": [
+            { "left": "apple", "right": "fruit" },
+            { "left": "carrot", "right": "vegetables" },
+            { "left": "bread", "right": "grains" },
+            { "left": "egg", "right": "protein" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own plate. Put your favorite fruit on it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Plate That Tells You What to Eat",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-food-plate", "templateLabel": "The Plate That Tells You What to Eat", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "food-plate",
+          "notes": ["The old food guide was a pyramid", "The new one is a plate", "It is called MyPlate", "It came out in 2011", "Half the plate is fruits and vegetables"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Plate That Tells You What to Eat",
+          "text": "Long ago the food guide was a pyramid. It was a triangle with bread at the bottom. Lots of people looked at it and did not know what to do with it. So in 2011 the guide changed into a plate. A plate makes more sense, because you eat off a plate. The new guide is called MyPlate. It has four parts: fruits, vegetables, grains, and protein. A little circle beside it stands for milk or yogurt. The most important part is easy to remember. Half your plate should be fruits and vegetables."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What shape was the old food guide?",
+            "What is the new food guide called?",
+            "How much of your plate should be fruits and vegetables?"
+          ],
+          "rows": 2,
+          "answers": ["a pyramid, or a triangle", "MyPlate", "half of it"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": [
+            "The old food guide was a ____.",
+            "The new guide is shaped like a ____.",
+            "The plate has ____ parts.",
+            "The little circle beside the plate is for ____."
+          ],
+          "wordBank": ["pyramid", "plate", "four", "milk"],
+          "answers": ["pyramid", "plate", "four", "milk"]
+        },
+        { "kind": "draw", "prompt": "Draw a plate for your dinner. Make half of it fruits and vegetables.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Plate That Tells You What to Eat",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-food-plate", "templateLabel": "The Plate That Tells You What to Eat", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "food-plate",
+          "notes": ["The pyramid guide lasted from 1992 to 2011", "MyPlate replaced it in 2011", "Fruits and vegetables get half", "Grains and protein share the other half", "Dairy sits in a circle on the side"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Plate and Not a Pyramid",
+          "text": "For almost twenty years, American kids learned about food from a pyramid. It was printed on cereal boxes and taped to classroom walls. Bread and rice sat in a wide band at the bottom. Sweets sat in a tiny point at the top. The idea was simple, but the picture was not. People stared at the pyramid and could not tell how much of anything to actually eat. In 2011 the government tried something new. They drew a plate. Nobody eats from a pyramid, but everybody eats from a plate, so the new guide showed food the way you really see it. MyPlate has four sections. Fruits and vegetables together fill one half. Grains and protein foods fill the other half. A small circle sits off to the side for milk or yogurt. The plate does not tell you exactly what to cook. It tells you what your meal should look like when you glance down at it. That is the whole trick. A good food guide has to work in the two seconds before you pick up your fork."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What sat at the wide bottom of the old pyramid?",
+            "In what year did the plate replace the pyramid?",
+            "Which two sections share one half of the plate?",
+            "Why do you think a plate is easier to understand than a pyramid?"
+          ],
+          "rows": 2,
+          "answers": [
+            "bread and rice",
+            "2011",
+            "grains and protein foods",
+            "(inference: you eat off a plate every day, so you can compare your real meal to the picture)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why a Plate and Not a Pyramid", "How to Bake Bread at Home", "The Tallest Pyramid in the World"],
+          "answers": ["Why a Plate and Not a Pyramid"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": [
+            "The old guide was shaped like a ____.",
+            "The new guide has four ____.",
+            "The circle on the side stands for milk or ____.",
+            "A good guide has to work in two ____."
+          ],
+          "wordBank": ["pyramid", "sections", "yogurt", "seconds"],
+          "answers": ["pyramid", "sections", "yogurt", "seconds"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what did you eat today, and how would it look on the plate?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Plate That Tells You What to Eat",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-food-plate", "templateLabel": "The Plate That Tells You What to Eat", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "food-plate",
+          "notes": [
+            "Starch is a long chain of sugar",
+            "Whole grains keep the bran and the germ",
+            "Protein breaks down into amino acids",
+            "Fiber feeds the bacteria in your gut",
+            "You build more bone than you lose until your mid twenties"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Section Does a Different Job",
+          "text": "A food guide only looks like a picture of lunch. Underneath, it is a picture of jobs. Grains are mostly starch, and starch is a long chain of sugar. Your body snaps the chain apart and burns the pieces for fuel. Whole grains keep the bran and the germ, the outer coat and the seed's living core, so they carry fiber and minerals that white flour has lost. That is why the guide says to make half your grains whole. Protein foods, like beans, fish, eggs, and chicken, break down into amino acids. Your body reuses those pieces to build muscle, skin, and the enzymes that run your digestion. You cannot store amino acids the way you store fat, so you need some most days. Fruits and vegetables get half the plate for a reason that is not about calories at all. They carry vitamin C, potassium, folate, and fiber, and they carry them with very few calories. Fiber is the strangest part. You cannot digest it. It travels all the way to your large intestine and feeds the trillions of bacteria living there. Dairy sits in the side circle for calcium. Your skeleton is not a finished object. It is torn down and rebuilt constantly, and until about your mid twenties you are building more bone than you lose. Calcium is the raw material for that work, and the window closes. Nothing on the plate is a treat or a punishment. Each section is a delivery van, and each one carries something your body cannot make on its own."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What does your body do with the starch in grains?",
+            "Why does the guide ask you to make half your grains whole?",
+            "The passage says you cannot store amino acids the way you store fat. What does that mean for how often you should eat protein?",
+            "Why might it matter that you build more bone than you lose only until your mid twenties?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it snaps the chain of sugar apart and burns the pieces for fuel",
+            "whole grains keep the bran and germ, so they carry fiber and minerals that white flour has lost",
+            "(inference: you need protein most days because your body has no store to draw on)",
+            "(inference: the calcium you eat while young does work you cannot go back and do later)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Each section of the food plate delivers something specific that your body needs and cannot make itself",
+            "Fruit tastes better than bread",
+            "Scientists have proved that eating is unnecessary"
+          ],
+          "answers": ["Each section of the food plate delivers something specific that your body needs and cannot make itself"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["starch → ____", "amino acids → ____", "fiber → ____", "bran → ____"],
+          "rows": 1,
+          "answers": [
+            "a long chain of sugar that the body burns for fuel",
+            "the pieces protein breaks into, used to build muscle, skin, and enzymes",
+            "a part of plants you cannot digest, which feeds gut bacteria",
+            "the outer coat of a grain seed"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a paragraph: the passage calls each section a delivery van. Explain what that comparison means, and say whether you think it is a good way to describe food. Give two reasons.",
+          "rows": 7
+        }
+      ]
+    },
+    "5": {
+      "title": "The Plate That Tells You What to Eat",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-food-plate", "templateLabel": "The Plate That Tells You What to Eat", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "food-plate",
+          "notes": [
+            "First US food guide: 1916",
+            "The Basic Seven wheel: 1943, during the war",
+            "The pyramid was invented in Sweden in 1974",
+            "The US pyramid: 1992. MyPyramid: 2005",
+            "MyPlate: 2011",
+            "Harvard published a rival plate the same year"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Hundred Years of Telling People What to Eat",
+          "text": "Governments have been drawing pictures of dinner for over a century, and every picture tells you as much about its moment as it does about nutrition. The United States published its first food guide in 1916, written for children. In 1943, with the country at war and food rationed, the Department of Agriculture released the Basic Seven, a wheel with seven wedges. It was thorough and almost useless. Nobody could hold seven categories in mind while standing in a grocery store. In 1956 it was cut down to the Basic Four, which lasted more than twenty years. The pyramid came from Sweden. In 1974, food prices were climbing, and a Swedish cooperative wanted a chart showing which foods were both cheap and necessary. The answer they drew was a triangle: staples at the wide base, luxuries at the narrow tip. The shape was so intuitive that it spread across Europe, and the United States adopted its own version in 1992. The American pyramid ran into trouble immediately. The food industry fought over which foods sat near the shameful point at the top. Meat and dairy groups objected to being ranked above bread. The chart that finally shipped was a compromise, and a compromise is a hard thing to read. When the government revised it in 2005 into MyPyramid, the categories became colored stripes with no words on them at all, and a tiny figure climbing stairs up the side. It was clean, modern, and unreadable. MyPlate arrived in 2011 and admitted something the earlier charts had ignored. People do not think in servings or wedges or stripes. They think in meals. So the guide became a plate with four sections, half of it fruits and vegetables, and a cup on the side. You can check yourself against it in one glance, without counting anything. Not everyone was satisfied. That same year, nutrition researchers at Harvard published a rival plate. Theirs replaced the milk cup with water, added a bottle of healthy oil, insisted that the grains be whole rather than half, and told readers to stay active. Their argument was that the government's plate was shaped partly by the industries the government also promotes, and that a food guide should say what the evidence says. Both plates agree on the loud part: fill half of it with plants. The argument is over the quiet parts, and the argument is not finished."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the passage say the Basic Seven was almost useless? Quote the reason.",
+            "Where did the pyramid shape come from, and what problem was it built to solve?",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why do you think the author ends there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the history of US food guides and the shift from pyramid to plate)",
+            "quote: Nobody could hold seven categories in mind while standing in a grocery store",
+            "Sweden, 1974; a cooperative wanted to show which foods were both cheap and necessary as prices climbed",
+            "(inform, with a persuasive edge; details: dates and facts throughout, but judgments like almost useless and unreadable)",
+            "(the shape is settled but the details are still contested; ending there leaves the reader with an open question)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["rationed → ____", "staples → ____", "intuitive → ____", "compromise → ____"],
+          "rows": 1,
+          "answers": [
+            "limited to a fixed amount per person",
+            "the basic foods people live on",
+            "easy to understand without being explained",
+            "a result everyone agreed to after each side gave something up"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a compromise is a hard thing to read. Explain what that means about the 1992 pyramid.",
+            "Why would the same evidence produce two different plates in the same year?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the chart had to satisfy industries as well as science, so its message got muddled)",
+            "(inference: the government answers to farmers and industry as well as to evidence, while university researchers do not)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a short opinion paragraph: should the same government that supports farmers also decide what the national food guide looks like? Take a position and support it with two reasons.",
+          "rows": 8
+        }
+      ]
+    },
+    "6": {
+      "title": "The Plate That Tells You What to Eat",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-food-plate", "templateLabel": "The Plate That Tells You What to Eat", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "food-plate",
+          "notes": [
+            "A triangle ranks. A plate only divides",
+            "Swedish cooperative, 1974: cheap plus essential",
+            "US pyramid 1992: negotiated with industry",
+            "MyPlate 2011: proportions, not hierarchy",
+            "Harvard's rival plate: water, oils, whole grains",
+            "Both plates fill half with plants"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Shape of an Argument",
+          "text": "Look at a food guide long enough and you notice it is not really a chart. It is an argument compressed into a shape. Consider what a plate has to do. It must summarize a field where the evidence is genuinely messy, survive being reprinted on a classroom poster, be understood in under two seconds by a tired person holding a fork, and pass review by an agency whose other job is supporting American farmers. Any picture that satisfies all four is going to be a compromise, and the interesting question is which parts got compromised. Start with the shape itself. The pyramid was invented in Sweden in 1974, when food prices were rising and a consumer cooperative wanted to show which foods were both cheap and essential. A triangle answers that question elegantly. The wide base is what you live on, the narrow tip is what you can skip. But a triangle is an abstraction, and it ranks. It implies a hierarchy of virtue, with bread as good and fat as sin, and it never tells you what to put on your actual plate at six o'clock. When the United States adapted the pyramid in 1992, that ranking became a battlefield. Meat and dairy producers objected to sitting near the disgraced tip. The chart that finally shipped had been negotiated. MyPlate, in 2011, gave up on ranking altogether. A plate does not stack anything. It divides, and division is a much weaker claim than hierarchy. It says only that a meal should have roughly these proportions. That weakness is precisely why it works, because the message survives being glanced at. But look at what the plate still cannot say. It shows a section labeled protein, and a fillet of salmon and a hot dog both qualify. It shows grains, and a bowl of oats and a slice of white bread both qualify, with a footnote asking you to make half of them whole. It gives dairy its own permanent seat beside the plate, alone among foods. Critics noticed that the Department of Agriculture writes the guide and also runs marketing programs for dairy and beef, and that no chart is neutral when its author has two jobs. That is why, months after MyPlate launched, nutrition researchers at Harvard published a competing plate. It looks similar and disagrees in nearly every detail that matters. Water replaces milk. Oils get their own bottle. Grains must be whole, not half. Red meat is pushed to the edge with a warning. A small running figure appears in the corner, because exercise is not food but the researchers wanted it on the picture anyway. Notice that the two plates do not disagree about the loudest instruction. Both fill half with vegetables and fruit. That part is not controversial, because it rests on some of the sturdiest evidence in nutrition. Across decades and across countries, people who eat more plants have less heart disease. The fights are over the quieter half of the picture, where the evidence thins out and the interests thicken. So a food guide is a shape that has to hold all of this at once: a science still arguing with itself, an industry that would like a favorable slice, and a person who has two seconds and is already hungry. It will always be too simple. It has to be. The honest way to read one is not as a fact but as a claim, and to ask, of every line drawn, who wanted it there."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage claims a triangle and a plate make different kinds of claims. Explain the difference and cite the sentence that states it most directly.",
+            "List the four demands the passage says a food guide must satisfy. Which one is not about nutrition at all?",
+            "Identify the turn in the passage: where does the author stop praising the plate and start testing it, and how is that shift signaled?",
+            "Analyze the final sentence. What is the author asking the reader to do, and does the rest of the passage earn that request?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: food guides are simplified claims shaped by science, industry, and human attention)",
+            "(a triangle ranks foods by virtue; a plate only sets proportions; cite: It divides, and division is a much weaker claim than hierarchy)",
+            "(summarize evidence, survive a classroom poster, be read in two seconds, pass an agency that supports farmers; the fourth is not about nutrition)",
+            "(at But look at what the plate still cannot say; a short contrasting sentence pivots from why it works to what it hides)",
+            "(read guides as claims and ask who benefits; earned by the 1992 negotiation and the two-jobs point about the Department of Agriculture)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["hierarchy → ____", "abstraction → ____", "neutral → ____", "compromised → ____"],
+          "rows": 2,
+          "answers": [
+            "an order that ranks things from highest to lowest",
+            "an idea stripped away from the real thing it stands for",
+            "not favoring one side over another",
+            "weakened or given up in order to satisfy someone else"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the weakness of the plate is precisely why it works. Explain that paradox in your own words.",
+            "The author says the evidence thins out and the interests thicken. Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(because it claims less, it is harder to argue with and easier to follow at a glance)",
+            "(student question plus a credible source type, such as a peer-reviewed nutrition review or a lobbying disclosure record)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: a national food guide should be written by independent scientists, not by the agency that also promotes farming. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

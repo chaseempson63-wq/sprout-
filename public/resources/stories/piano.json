@@ -1,0 +1,315 @@
+{
+  "key": "piano",
+  "title": "The Instrument Named After the Word for Quiet",
+  "blurb": "The piano is named for the one thing a harpsichord could never do: play soft. Inside sit 230 steel strings and a hammer that lets go.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Instrument Named After the Word for Quiet",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-piano", "templateLabel": "The Instrument Named After the Word for Quiet", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the black keys and the white keys." },
+        {
+          "kind": "image",
+          "imageKey": "piano",
+          "notes": ["It has 88 keys", "White keys and black keys", "A little hammer taps a string inside", "Piano means soft in Italian"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a piano. It has black keys and white keys. Press a key and you hear a sound. Press it softly and the sound is soft. Press it hard and the sound is loud. Inside the piano, a little hammer taps a string. That is where the sound comes from. A piano has 88 keys in a long row."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the notes in each row. Write how many in the box.",
+          "emoji": "🎵",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "loud    soft" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "piano", "right": "keys" },
+            { "left": "drum", "right": "sticks" },
+            { "left": "guitar", "right": "strings" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own piano. Give it lots of black and white keys.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Instrument Named After the Word for Quiet",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-piano", "templateLabel": "The Instrument Named After the Word for Quiet", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "piano",
+          "notes": ["88 keys in all", "52 white keys and 36 black ones", "The hammers are covered in felt", "Piano means soft in Italian", "Long fat strings make the low notes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What Is Hiding Inside a Piano",
+          "text": "A piano looks simple on the outside. It is just a long row of black and white keys. Inside, it is busy. When you press a key, a small wooden hammer swings up and taps a string. The string shakes very fast, and that shaking is the sound you hear. Let the key go and a soft pad drops onto the string to stop the sound. Press gently and you get a quiet note. Press hard and the hammer swings faster, so the note is loud. A piano has 88 keys. The fat strings on the left make low notes. The short thin strings on the right make high notes."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What taps the string inside a piano?", "How many keys does a piano have?", "What happens if you press a key hard?"],
+          "rows": 2,
+          "answers": ["a small wooden hammer", "88 keys", "the hammer swings faster and the note is loud"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A small wooden ____ taps the string.", "The string ____ very fast.", "Press gently and the note is ____.", "A piano has ____ keys."],
+          "wordBank": ["hammer", "shakes", "quiet", "88"],
+          "answers": ["hammer", "shakes", "quiet", "88"]
+        },
+        { "kind": "draw", "prompt": "Draw the inside of a piano. Add the hammer and the string.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Instrument Named After the Word for Quiet",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-piano", "templateLabel": "The Instrument Named After the Word for Quiet", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "piano",
+          "notes": ["Invented around 1700 in Florence, Italy", "The maker was Bartolomeo Cristofori", "Its first name was very long", "Piano means soft, forte means loud", "Three of Cristofori's pianos still exist"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Keyboard That Could Not Whisper",
+          "text": "Three hundred years ago, the fanciest keyboard instrument was the harpsichord. It was beautiful, and it had one big problem. Inside a harpsichord, pressing a key made a tiny quill pluck a string. A pluck is a pluck. It sounds the same whether you press the key gently or bang it. A harpsichord player could not play loud and soft. An Italian instrument maker named Bartolomeo Cristofori decided to fix that. Around the year 1700, in Florence, he built a keyboard with hammers instead of quills. Press the key gently and the hammer taps the string gently. Press hard and the hammer flies up fast and the note rings out loud. For the first time, a keyboard could get louder and softer under the player's fingers. Cristofori called his invention a harpsichord with soft and loud. In Italian, soft is piano and loud is forte. People shortened the long name to pianoforte, then shortened it again. Today we just say piano. So the instrument that finally learned to play loud ended up named after the word for soft."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did a harpsichord use to make its sound?",
+            "What did Cristofori use instead of quills?",
+            "What do the words piano and forte mean in Italian?",
+            "Why do you think musicians wanted to play loud and soft on a keyboard?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a tiny quill that plucked a string",
+            "hammers that tap the strings",
+            "piano means soft and forte means loud",
+            "(inference: loud and soft let a player show feeling in the music)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Keyboard That Could Not Whisper", "How to Build a Harpsichord at Home", "The Best Songs of Italy"],
+          "answers": ["The Keyboard That Could Not Whisper"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A harpsichord makes sound when a quill ____ a string.", "Cristofori built his keyboard in the city of ____.", "The full name was shortened to ____, and then to piano."],
+          "wordBank": ["plucks", "Florence", "pianoforte"],
+          "answers": ["plucks", "Florence", "pianoforte"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what was the harpsichord's big problem, and how did Cristofori solve it?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Instrument Named After the Word for Quiet",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-piano", "templateLabel": "The Instrument Named After the Word for Quiet", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "piano",
+          "notes": ["About 230 steel strings inside", "They pull with roughly 20 tons of force", "A cast iron plate holds that pull", "The escapement lets the hammer fly free", "The spruce soundboard makes the sound big", "Over 12,000 parts in a grand piano"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine Under the Lid",
+          "text": "From the outside, a piano is a piece of furniture. Open the lid and you find a machine. A grand piano holds roughly 230 steel strings, stretched so tightly that together they pull with a force of about twenty tons. Nothing made of wood could survive that, so the strings are anchored to a heavy plate of cast iron. Pressing a key sets off a chain of small wooden parts called the action. The important trick happens at the very end. Just before the hammer reaches the string, it lets go of the machinery and flies the last short distance on its own. Piano makers call this the escapement. It matters because a hammer still connected to your finger would rest against the string and smother the note the instant it was born. Instead the hammer strikes, bounces away, and the string is left ringing. The string on its own is far too thin to move much air, so its vibration passes down through a wooden bridge into the soundboard, a wide sheet of spruce that fills the body of the piano. The soundboard shakes the air in the room. That is what you actually hear. When you lift your finger, a felt damper drops back onto the string and the note stops. Hold down the right pedal and every damper lifts at once, so the whole instrument is left open and ringing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why do the strings have to be anchored to cast iron instead of wood?",
+            "Explain the escapement in your own words, and say why the piano would not work without it.",
+            "The passage says the soundboard is what you actually hear. Explain what it means.",
+            "Why do you think holding the right pedal down changes the sound so much?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the strings pull with about twenty tons of force and wood could not survive it",
+            "the hammer lets go and flies free just before the string; without it the hammer would rest on the string and stop the note",
+            "the thin string cannot move much air, so the wide spruce board does it instead",
+            "(inference: every damper lifts, so all the strings are free to ring together)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A piano looks like furniture but is a machine built to strike, release, and then silence its strings",
+            "Grand pianos are the most expensive furniture you can buy",
+            "Spruce is the strongest wood in the world"
+          ],
+          "answers": ["A piano looks like furniture but is a machine built to strike, release, and then silence its strings"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["action → ____", "escapement → ____", "damper → ____", "soundboard → ____"],
+          "rows": 1,
+          "answers": [
+            "the chain of small wooden parts that connects a key to a hammer",
+            "the moment the hammer lets go and flies free at the string",
+            "the felt pad that drops on a string to stop the note",
+            "the wide spruce sheet that turns the string's shaking into sound you can hear"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining what happens between the moment your finger touches a key and the moment you hear the note. Use at least three words from the vocabulary list.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Instrument Named After the Word for Quiet",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-piano", "templateLabel": "The Instrument Named After the Word for Quiet", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "piano",
+          "notes": ["Bartolomeo Cristofori, Florence, around 1700", "Maffei's 1711 article spread the design", "Bach complained about an early Silbermann piano", "Cast iron frame: Alpheus Babcock, Boston, 1825", "Felt hammers: Henri Pape, Paris, 1826", "88 keys became standard in the 1880s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Invention Nobody Wanted",
+          "text": "Bartolomeo Cristofori spent his life as the keeper of instruments for the Medici family in Florence, and around 1700 he built something that had never existed: a keyboard whose hammers could strike a string hard or soft depending on the player's touch. It should have made him famous immediately. It did not. Almost nobody bought one. The instrument was expensive, its sound was thin next to a harpsichord, and musicians had spent two centuries learning to make music without needing loud and quiet in the first place. Three of Cristofori's pianos survive today, in New York, Rome, and Leipzig. What saved the idea was a magazine article. In 1711 an Italian writer named Scipione Maffei published a description of Cristofori's invention, complete with a diagram of the action. The article was translated into German, and German builders started copying the drawing. Gottfried Silbermann built pianos from it. When Johann Sebastian Bach tried an early Silbermann, he complained that the high notes were weak and the keys too heavy to play. Silbermann took the criticism badly, went away, and improved the design. Years later Bach played the newer version and approved it. The piano then spent a century getting stronger. Builders wanted more volume for bigger concert halls, which meant thicker strings under greater tension, which meant frames that kept breaking. The answer arrived in Boston in 1825, when Alpheus Babcock cast a piano frame in a single piece of iron. Around the same time a Paris maker, Henri Pape, replaced leather hammer coverings with felt, which gave the instrument a warmer, rounder tone. By the 1880s the keyboard had settled at 88 keys, the range it still has today. The result is the instrument Cristofori was reaching for and never heard: loud enough to fill a hall, quiet enough to whisper, and able to do both inside the same phrase."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Give two reasons the passage offers for why Cristofori's invention did not sell.",
+            "Explain how a magazine article saved the piano. Quote the phrase the passage uses for what the article contained.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the invention, its slow start, and the century of improvement)",
+            "it was expensive and its sound was thin next to a harpsichord, and musicians did not feel they needed loud and quiet",
+            "Maffei's 1711 description was translated into German and builders copied it; quote: a diagram of the action",
+            "(inform, with detail: it gives dates, names, and places; the Bach story adds entertainment)",
+            "(the piano finally does what Cristofori aimed at, but he died before it worked; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["tension → ____", "diagram → ____", "survive (of the pianos) → ____", "volume → ____"],
+          "rows": 1,
+          "answers": ["the pulling force in a stretched string", "a labeled drawing that shows how something works", "still exist today", "how loud a sound is"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says builders wanted more volume, which meant frames that kept breaking. Explain that chain of cause and effect.",
+            "Why might a written article spread an invention faster than the invention itself?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(louder needs thicker strings, thicker strings need more tension, more tension broke wooden frames until iron replaced them)",
+            "(inference: paper is cheap to copy and carry, so many builders can read it at once)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: who deserves more credit for the piano, the person who invented it or the people who spent a century fixing it? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Instrument Named After the Word for Quiet",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-piano", "templateLabel": "The Instrument Named After the Word for Quiet", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "piano",
+          "notes": ["Equal temperament: 12 equal steps per octave", "Almost no interval on a piano is pure", "Inharmonicity: stiff strings ring slightly sharp", "Tuners stretch the treble sharp, the bass flat", "The Railsback curve, measured in 1938", "Lowest note 27.5 Hz, highest 4186 Hz"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Piano Is Out of Tune, and That Is on Purpose",
+          "text": "Here is a strange fact about the instrument in the corner of the living room: a well tuned piano is not in tune. It cannot be. The piano is a machine built on compromises, and every one of them was chosen deliberately. Start with the first compromise. When two notes sound good together, it is because the numbers behind them are simple. Play a note, then play a note whose string vibrates exactly twice as fast, and your ear hears the same note higher up: an octave. A ratio of three to two gives a fifth, the most solid interval in music after the octave. For centuries, keyboards were tuned to make these simple ratios exact, and the results were gorgeous in a few keys and unbearable in the rest. Stack pure fifths on top of each other and they never land back where they started. The mathematics simply does not close. Somewhere in the circle, one interval has to absorb all the leftover error, and that interval howls so badly that tuners named it the wolf. The fix was to spread the error out. Equal temperament divides the octave into twelve steps of exactly the same size, which means almost no interval on the piano is pure. The fifths are all a hair narrow. The major thirds are noticeably wide. Nothing is perfect, but nothing is a wolf either, and a piece can wander through every key without falling off a cliff. Every chord you have ever heard on a piano is slightly wrong on purpose. Then comes the second compromise, and this one is physics, not choice. The neat rule that a string's overtones are exact multiples of its main pitch is only true of an ideal string: perfectly flexible, infinitely thin, existing only in a textbook. Real piano strings are made of stiff steel wire. Stiffness fights bending, and the higher overtones bend the string more sharply, so they ring slightly sharper than the math predicts. Physicists call this inharmonicity, and every piano has it. Short, thick strings have more of it, which is why small uprights suffer more than long concert grands. Inharmonicity means a tuner cannot tune a piano to a chart. If the top octave were set to mathematically correct frequencies, it would sound flat against the overtones already ringing out of the strings below it. So tuners stretch the tuning: the treble is pulled slightly sharp, the bass slightly flat, each note tuned not to a number but to the sound of the instrument itself. In 1938 an American physicist, O. L. Railsback, measured how real tuners actually worked and found this stretch curve hiding in nearly every piano he tested. Nobody had told them to do it. They were tuning by ear, and their ears had been quietly obeying the physics all along. So the piano is a stack of accepted errors: a scale that is evenly wrong so that no key is unusable, and an octave that is deliberately widened so that a stiff steel wire sounds right to a human being. It is a compromise built out of compromises. It is also the instrument almost everyone learns music on, which suggests the compromises were the correct ones."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why pure tuning fails across every key. Cite the evidence.",
+            "Contrast the two compromises the passage describes. Which one is a human decision and which one is forced by physics?",
+            "Identify the shift in the passage: where does it turn from choice to physics, and how does the author signal it?",
+            "The passage ends by saying the compromises were the correct ones. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(stacked pure fifths never return to the starting note, so one interval swallows the error; cite: The mathematics simply does not close)",
+            "(equal temperament is a chosen compromise; inharmonicity is forced by the stiffness of real steel wire)",
+            "(at Then comes the second compromise, and this one is physics, not choice; the author names the turn outright)",
+            "(it argues usefulness beats purity, supported by the wolf interval and the Railsback evidence; opinion on whether it is earned)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["temperament → ____", "interval → ____", "overtone → ____", "inharmonicity → ____"],
+          "rows": 2,
+          "answers": [
+            "a system for dividing the octave into playable steps",
+            "the distance in pitch between two notes",
+            "a higher tone that rings along with a string's main pitch",
+            "the way a stiff real string rings sharper than perfect math predicts"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says tuners' ears had been quietly obeying the physics all along. Explain why that is a surprising thing to discover.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(they had no measurements or theory, yet their judgment matched what physics required)",
+            "(student question + a credible source type, such as an acoustics textbook or a working piano tuner)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An instrument that is deliberately tuned wrong cannot be called a serious instrument. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

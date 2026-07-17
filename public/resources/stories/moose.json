@@ -1,0 +1,320 @@
+{
+  "key": "moose",
+  "title": "The Moose That Grows a New Crown Every Year",
+  "blurb": "The biggest deer on Earth, with antlers it throws away every winter and rebuilds every spring.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Moose That Grows a New Crown Every Year",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-moose", "templateLabel": "The Moose That Grows a New Crown Every Year", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the moose's big flat antlers." },
+        {
+          "kind": "image",
+          "imageKey": "moose",
+          "notes": ["It is the biggest deer of all", "Its legs are very long", "It can swim", "It eats leaves and twigs", "The flap under its chin is called a bell"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a moose. The moose is big. It is taller than your dad. It has long legs. The long legs walk through deep snow. The long legs walk through cold water. On its head are antlers. The antlers are flat and wide. The moose eats leaves. The moose eats twigs. Then it walks into the pond for a drink."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves in each row. Write how many in the box.",
+          "emoji": "🍃",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "big    tall" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "moose", "right": "forest" },
+            { "left": "fish", "right": "pond" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own moose. Give it big wide antlers and long legs.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Moose That Grows a New Crown Every Year",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-moose", "templateLabel": "The Moose That Grows a New Crown Every Year", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "moose",
+          "notes": ["More than one moose is still called moose", "It is the biggest kind of deer", "Only the boys grow antlers", "It drops its antlers every winter", "It can hold its breath under water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Moose That Grows a New Crown Every Year",
+          "text": "A moose is the biggest deer in the world. A big one weighs as much as a small car. Only the boy moose grows antlers. They spread out wide and flat, like two big hands on his head. Here is the strange part. Every winter, the antlers fall off. They just drop into the snow. In the spring, the moose grows a whole new pair. He does this again and again, every single year of his life. A moose can swim. He can put his head under the water and pull up plants to eat."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Which moose grows antlers, the boy or the girl?", "When do the antlers fall off?", "What does the moose pull up from under the water?"],
+          "rows": 2,
+          "answers": ["the boy moose", "every winter", "plants to eat"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A moose is the biggest ____ in the world.", "Its ____ are wide and flat.", "The antlers fall off in the ____.", "A moose can ____ across a lake."],
+          "wordBank": ["deer", "antlers", "winter", "swim"],
+          "answers": ["deer", "antlers", "winter", "swim"]
+        },
+        { "kind": "draw", "prompt": "Draw the moose standing in a pond. Add trees and snow on the ground.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Moose That Grows a New Crown Every Year",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-moose", "templateLabel": "The Moose That Grows a New Crown Every Year", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "moose",
+          "notes": ["A bull moose can weigh 1,500 pounds", "Antlers can spread six feet wide", "Antlers are bone, not horn", "It grows a new set every spring", "It can run about 35 miles an hour", "It eats up to 60 pounds of food a day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Antlers That Grow Back Every Spring",
+          "text": "A male moose is called a bull. A big bull stands taller at the shoulder than a grown man and can weigh 1,500 pounds. On his head he carries antlers that spread as wide as your arms twice over. Those antlers are made of real bone, and they are brand new every year. In the spring, the bone starts pushing out of his skull. It grows fast, sometimes an inch in a day, covered in a soft fuzzy skin called velvet that feeds it blood. By late summer the antlers are finished. The velvet dries and peels off, and the bull rubs the antlers on trees to clean them. He uses them in the fall to show off and to shove other bulls out of the way. Then winter comes and he drops them. They fall right off in the snow. Mice and squirrels chew them up for the minerals inside. In the spring, he starts all over again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a male moose called?",
+            "What are moose antlers made of?",
+            "What is velvet, and what does it do?",
+            "Why do you think a bull drops his antlers before winter instead of keeping them?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a bull",
+            "real bone",
+            "a soft fuzzy skin that covers the growing antlers and feeds them blood",
+            "(inference: they are heavy and he does not need them once the fall contests are over)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Antlers That Grow Back Every Spring", "How to Build a Snow Fort", "The Deepest Lake in Canada"],
+          "answers": ["The Antlers That Grow Back Every Spring"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A male moose is called a ____.", "Growing antlers are covered in soft ____.", "The bull ____ his antlers on trees to clean them.", "In winter the antlers ____ off."],
+          "wordBank": ["bull", "velvet", "rubs", "fall"],
+          "answers": ["bull", "velvet", "rubs", "fall"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about moose antlers, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Moose That Grows a New Crown Every Year",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-moose", "templateLabel": "The Moose That Grows a New Crown Every Year", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moose",
+          "notes": ["Alces alces, the largest deer alive", "Antler bone is the fastest growing tissue of any mammal", "It is a browser, not a grazer", "It dives for pond plants to get sodium", "In Europe the same animal is called an elk", "Poor eyesight, excellent hearing and smell"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built for the Cold North",
+          "text": "Look at a moose and the first thing you notice is that the proportions seem wrong. The legs are too long. The shoulders hump up too high. The nose droops like it was borrowed from a larger animal. But every one of those odd parts is doing a job. The legs come first. A moose steps over deep snow instead of plowing through it, and it wades chest deep into ponds without swimming. Long legs cost it something, though: a moose cannot easily reach the grass at its feet. So it does not graze the way a cow does. It browses, stripping leaves, buds, and twigs from shrubs and young trees at head height. That habit gave the animal its name. The word moose comes from an Algonquian word meaning something close to he strips it off, a name given by people who watched moose peel bark from trees. The nose is doing science of its own. A moose can close its nostrils, dunk its whole head, and feel around underwater for pond plants. It eats those plants for a reason beyond hunger. Water plants are loaded with sodium, which is scarce in the leaves and twigs the moose eats the rest of the year. A moose diving in a pond is not being playful. It is refilling its salt supply. Even the huge ears are working. A moose sees poorly, but it hears and smells extremely well, and researchers have tested whether the wide flat antlers help funnel sound toward the ears. Nothing about a moose is decoration. It is a machine for surviving a long, cold, snowy winter."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the difference between browsing and grazing.",
+            "Give two jobs a moose's long legs do.",
+            "Why does a moose eat water plants even when it is not especially hungry?",
+            "The passage says nothing about a moose is decoration. What is the author trying to make you understand?"
+          ],
+          "rows": 2,
+          "answers": [
+            "browsing means eating leaves, buds, and twigs at head height; grazing means eating grass at ground level",
+            "stepping over deep snow, and wading chest deep into ponds",
+            "water plants hold sodium, which is scarce in the twigs and leaves it eats the rest of the year",
+            "(inference: every strange looking part of a moose is a tool that helps it survive the cold north)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A moose's odd looking body parts are each built to solve a problem of northern life",
+            "Moose are the friendliest animals in the forest",
+            "Ponds are the only place any deer can find food"
+          ],
+          "answers": ["A moose's odd looking body parts are each built to solve a problem of northern life"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["browse → ____", "graze → ____", "sodium → ____", "proportions → ____"],
+          "rows": 1,
+          "answers": [
+            "to feed on leaves, buds, and twigs from shrubs and trees",
+            "to feed on grass at ground level",
+            "a mineral animals need, the salt part of salt",
+            "the sizes of the parts compared to each other"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: pick the one moose body part you think is most useful, and explain why. Give two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Moose That Grows a New Crown Every Year",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-moose", "templateLabel": "The Moose That Grows a New Crown Every Year", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moose",
+          "notes": ["Alces alces, up to 1,500 pounds", "Antlers can add an inch of bone in a single day", "Shed every winter, regrown every spring", "Solitary, unlike most herd deer", "A single moose can carry tens of thousands of winter ticks", "Warmer winters are pushing moose ranges north"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Most Expensive Hat in the Forest",
+          "text": "Every spring, a bull moose starts building something absurd. Out of two bony bases on his skull, new antlers begin to push upward. They are living bone, sheathed in velvet, a furred skin threaded with blood vessels that feeds the growth. And they grow fast. Antler is the fastest growing tissue of any mammal on Earth, capable of adding close to an inch of bone in a single day. By late summer the bull is carrying a rack that can span six feet and weigh forty pounds. Then he lets the blood supply die, scrapes the dried velvet off against a tree, and walks into fall wearing forty pounds of polished bone. Consider the cost. All that calcium and phosphorus has to come from somewhere, and it comes out of his own skeleton and his food. He burns energy carrying it. He snags it on branches. And then, a few months later, he throws it away. Special cells eat away the base until the antlers simply drop off in the snow. Mice, squirrels, and porcupines gnaw the fallen bone for minerals, which is why you almost never find a shed antler lying whole in the woods. Come spring, he starts over. Why build something so expensive and then discard it? Because antlers are not weapons first. They are advertisements. A bull cannot lie about his antlers. Only a healthy, well fed, genetically strong animal can afford to grow a huge rack in a single summer, so the rack is honest proof of his condition. Rival bulls read it from across a clearing and often back down without fighting at all. Cows read it too. In the language of biology, this is called an honest signal, and it works precisely because it is costly. A cheap advertisement any weak bull could fake would tell nobody anything. So the moose pays, every year, in bone and calories, for a message that cannot be forged. Then he drops the message in the snow and grows a new one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "List three costs of growing antlers that the passage names.",
+            "Explain what an honest signal is and why it only works if it is costly. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author title the passage The Most Expensive Hat in the Forest?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering fast antler growth, the cost, and antlers as honest signals)",
+            "calcium and phosphorus drawn from his skeleton and food, energy burned carrying forty pounds, snagging on branches",
+            "a display a weak animal cannot afford to fake; quote: a message that cannot be forged",
+            "(inform, with an entertaining voice: it defines terms and gives measurements, but uses jokes like absurd and expensive hat)",
+            "(inference: the antlers are worn on the head, cost enormous resources, and are thrown away each year)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["velvet → ____", "rack → ____", "shed (antler) → ____", "signal → ____"],
+          "rows": 1,
+          "answers": [
+            "the furred skin with blood vessels that feeds a growing antler",
+            "a bull's full set of antlers",
+            "an antler that has dropped off on its own",
+            "information one animal sends that another animal reads"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says rival bulls often back down without fighting at all. Explain how that outcome benefits both bulls.",
+            "Why do you almost never find a whole shed antler in the woods?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(neither risks injury; the weaker one saves energy and the stronger one keeps his condition)",
+            "mice, squirrels, and porcupines gnaw the fallen bone for its minerals"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it smarter for an animal to settle a contest by display or by fighting? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Moose That Grows a New Crown Every Year",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-moose", "templateLabel": "The Moose That Grows a New Crown Every Year", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moose",
+          "notes": ["Alces alces, the largest living deer", "Antler bone grows up to an inch per day", "Cold adapted: it overheats above about 57°F in summer", "Winter ticks can number in the tens of thousands on one animal", "Brainworm spreads to moose from white-tailed deer", "Range is shifting north as winters warm"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Giant That Cannot Take Its Coat Off",
+          "text": "The moose is the largest deer that has ever lived through to the present day, and almost everything about it is an answer to the same question: how do you survive winter? The answers are elegant. Legs long enough to step over snowpack rather than wade through it. A dense two layer coat with hollow guard hairs that trap air and float the animal when it swims. A digestive system that can extract a living from frozen twigs. A body big enough that it loses heat slowly, because volume grows faster than surface area. Every one of those adaptations is a bet on cold. And that is the problem, because the bet is now going the wrong way. A moose is superbly insulated and cannot take the coat off. Above roughly 57 degrees Fahrenheit in summer, it begins to suffer heat stress. It stops feeding, seeks shade or water, and eats less at exactly the time of year it should be laying down fat. A moose entering winter underweight is a moose in trouble. Then there is the tick. Winter ticks latch onto moose calves by the thousands, sometimes tens of thousands on a single animal. The moose grooms frantically, rubbing off patches of its own insulating hair, and the ticks drink enough blood to leave calves anemic. Here is the cruel machinery: tick larvae wait on vegetation in the fall, and a long warm autumn with late snow gives them more time to find a host. Warmer springs let the engorged females drop onto bare ground instead of snow, which is where they survive to lay eggs. Milder weather does not just make the moose uncomfortable. It manufactures more ticks. A third pressure arrives on four legs. White-tailed deer carry a parasite called brainworm that does them almost no harm. As winters soften, deer expand north into moose country and bring it with them. In a moose, brainworm is frequently fatal. None of this is a story about a weak animal. The moose is a masterpiece of cold weather engineering, and it is being undone by a few degrees, which is a particular kind of failure worth understanding. Specialists win decisively in the conditions they were built for, and they have nowhere to go when those conditions move. Moose populations in the southern edge of their range, in New Hampshire, Vermont, and Minnesota, have fallen sharply. Farther north, in Alaska and across Canada, moose are pushing into shrubland that used to be tundra. The species is not vanishing. It is retreating, and it is leaving the map it once held."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage calls the moose's adaptations a bet on cold. Explain that metaphor and cite the evidence that the bet is losing.",
+            "Explain the tick mechanism in your own words. Why does the author call it cruel machinery?",
+            "Identify where the passage turns from admiration to alarm, and name the sentence that signals the turn.",
+            "Analyze the claim that specialists win decisively in the conditions they were built for, and they have nowhere to go when those conditions move. Does the passage earn that generalization?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering cold adaptation plus warming pressure)",
+            "(its traits only pay off if winters stay cold; cite: the bet is now going the wrong way, or Milder weather does not just make the moose uncomfortable. It manufactures more ticks)",
+            "(warm late autumns give larvae longer to find hosts and bare spring ground lets females survive to lay eggs, so warmth multiplies ticks; cruel because the same warmth that weakens the moose also breeds its parasite)",
+            "(at And that is the problem, because the bet is now going the wrong way)",
+            "(it is supported by the heat stress, tick, and brainworm evidence, but it is a general rule drawn from one species, so a reader should want more examples)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["insulated → ____", "anemic → ____", "specialist → ____", "engorged → ____"],
+          "rows": 2,
+          "answers": [
+            "wrapped in something that holds heat in",
+            "short of healthy blood, and weakened because of it",
+            "a species built to succeed in one narrow set of conditions",
+            "swollen with what it has fed on"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the species is not vanishing, it is retreating. Explain why that distinction matters to a scientist studying moose.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the global count and the local count tell different stories; a species can be stable overall while disappearing from places it shaped)",
+            "(student question plus a credible source type such as a wildlife agency population survey)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal perfectly built for one climate is more fragile than an animal that is mediocre at everything. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "key": "battery",
+  "title": "The Battery That Started as a Stack of Coins",
+  "blurb": "Inside every battery is a slow chemical argument that pushes electrons through your wires. It began in 1800 with zinc, copper, and salty cardboard.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Battery That Started as a Stack of Coins",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-battery", "templateLabel": "The Battery That Started as a Stack of Coins", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the little bump on the end." },
+        {
+          "kind": "image",
+          "imageKey": "battery",
+          "notes": ["One end has a little bump", "The bump is the plus end", "The flat end is the minus end", "It is heavy for its size", "It is full of powder and paste"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a battery. It is small. It is heavy for its size. A battery makes a toy go. Put it in. Push the button. The toy hums. A battery has two ends. One end has a little bump. That is the plus end. The flat end is the minus end. Each end has its own spot. Put them the right way, or the toy stays quiet."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the batteries in each row. Write how many in the box.",
+          "emoji": "🔋",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "plus    minus" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each thing to what makes it go.",
+          "pairs": [
+            { "left": "flashlight", "right": "battery" },
+            { "left": "plant", "right": "water" },
+            { "left": "sailboat", "right": "wind" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a toy that needs a battery. Draw the battery inside it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Battery That Started as a Stack of Coins",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-battery", "templateLabel": "The Battery That Started as a Stack of Coins", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "battery",
+          "notes": ["It is a can full of chemicals", "The plus end has the bump", "Nothing moves until you close the loop", "The loop is called a circuit", "It goes flat when the chemicals run out"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Loop You Have to Close",
+          "text": "Nothing comes out of a battery until you close the loop. A battery is a can full of chemicals. The chemicals want to swap tiny bits called electrons. They cannot swap inside the can. The only road is out one end, through your flashlight, and back in the other end. That road is called a circuit. When you flick the switch, you finish the road. Electrons rush along it. The bulb glows. When you flick it back, the road breaks. The rushing stops. The bulb goes dark. The battery is still full. It is just waiting for you to close the loop again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is inside a battery?", "What are the tiny bits called?", "What is the road called?", "What happens to the bulb when the road breaks?"],
+          "rows": 2,
+          "answers": ["chemicals", "electrons", "a circuit", "it goes dark"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A battery is a can full of ____.", "The tiny bits that rush along are called ____.", "The road that goes out and back is a ____.", "When the road breaks, the bulb goes ____."],
+          "wordBank": ["chemicals", "electrons", "circuit", "dark"],
+          "answers": ["chemicals", "electrons", "circuit", "dark"]
+        },
+        { "kind": "draw", "prompt": "Draw a flashlight with a battery inside. Draw the loop the electrons take.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Battery That Started as a Stack of Coins",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-battery", "templateLabel": "The Battery That Started as a Stack of Coins", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "battery",
+          "notes": ["The first one was a stack of metal discs", "Zinc, copper, salty cardboard, repeat", "Built by Alessandro Volta in 1800", "The volt is named after him", "Benjamin Franklin borrowed the word from cannons"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Stack of Coins That Started It All",
+          "text": "In the 1780s an Italian doctor named Luigi Galvani was studying the legs of dead frogs. He kept noticing something odd. When a leg touched two different metals at once, a brass hook and an iron railing, the leg kicked. Galvani decided he had found a special electricity that lived inside animals.\n\nHis friend Alessandro Volta did not agree. Volta thought Galvani had the story backward. The two different metals were doing the work. The frog was only the wet part in between.\n\nTo prove it, Volta built a stack with no frog in it at all. He piled a disc of zinc, then a disc of copper, then a circle of cardboard soaked in salt water, and he repeated that pattern over and over. When he touched a wire to the top and the bottom, current flowed. Better than that, it kept flowing. Before this, people could only make a spark that jumped once and was gone. Volta had made electricity that ran like water from a tap.\n\nHe finished his stack in 1800 and called it a pile. We call it the first battery. The unit we use to measure electric push, the volt, is named after him."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did Galvani think was making the frog's leg kick?",
+            "What did Volta think was really doing the work?",
+            "Name the three things Volta stacked, over and over.",
+            "Why do you think it mattered that Volta's current kept flowing instead of sparking once and stopping?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a special electricity that lived inside animals",
+            "the two different metals touching something wet",
+            "a disc of zinc, a disc of copper, and cardboard soaked in salt water",
+            "(inference: a steady current can run a machine, a single spark cannot)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Stack of Coins That Started It All", "How to Take Care of a Pet Frog", "The Best Way to Wire a House"],
+          "answers": ["The Stack of Coins That Started It All"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Volta stacked discs of zinc and ____.", "The cardboard was soaked in ____ water.", "Volta finished his pile in the year ____.", "The unit of electric push is called the ____."],
+          "wordBank": ["copper", "salt", "1800", "volt"],
+          "answers": ["copper", "salt", "1800", "volt"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences. Galvani was wrong about the frog, but his mistake still helped science. Explain how.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Battery That Started as a Stack of Coins",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-battery", "templateLabel": "The Battery That Started as a Stack of Coins", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "battery",
+          "notes": ["Three parts: anode, cathode, electrolyte", "A AA battery pushes at 1.5 volts", "The zinc inside is a gray powder", "The electrolyte blocks electrons on purpose", "A battery stores chemicals, not electricity", "Cold weather slows the reaction down"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Slow Fight Inside the Can",
+          "text": "Pop open a flashlight and the battery looks like a plain metal can. Inside, three parts are doing all the work.\n\nThe first part is the anode, the minus end. In a normal AA battery the anode is powdered zinc. Zinc atoms are willing to give up electrons, which are the tiny negative pieces of an atom. The second part is the cathode, the plus end, usually a black paste of manganese dioxide. It is hungry for electrons. The third part is the electrolyte, a wet chemical packed between them. The electrolyte is the strange one. It lets charged particles called ions drift through it, but it will not let electrons pass. That refusal is the whole trick.\n\nThe zinc has electrons to give. The cathode wants them. The shortest path is blocked by the electrolyte, so the electrons have to take the long way around: out of the minus end, through the wire, through the bulb, and back in at the plus end. On the way, they light the bulb. A battery does not store electricity. It stores chemicals that are eager to react, and it forces the reaction to pay a toll through your device on the way.\n\nThat explains the rest. A battery goes flat because the zinc gets used up, not because the electricity leaks out. Nothing happens until you close the switch, because until then the long way around is not a road at all. And a battery fades in the cold because chemical reactions run slower when they are chilled, so the pushing weakens."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Name the three working parts of a battery and say what each one does.",
+            "The passage calls the electrolyte the strange one. What makes it strange?",
+            "Why does a battery go flat?",
+            "A friend says electricity is stored inside a battery the way water is stored in a bottle. Using the passage, explain what is wrong with that."
+          ],
+          "rows": 2,
+          "answers": [
+            "the anode gives up electrons, the cathode wants them, the electrolyte lets ions through but blocks electrons",
+            "it lets ions through but refuses to let electrons pass, which forces them out through the wire",
+            "the zinc gets used up, so there is nothing left to react",
+            "(inference: it stores chemicals that are eager to react, and the electricity is made on the way out, not held inside)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A battery blocks the short path on purpose, so a chemical reaction has to run through your device instead",
+            "Flashlights are the most useful tool in any house",
+            "Zinc is the most common metal on Earth"
+          ],
+          "answers": ["A battery blocks the short path on purpose, so a chemical reaction has to run through your device instead"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["anode → ____", "cathode → ____", "electrolyte → ____", "ions → ____"],
+          "rows": 1,
+          "answers": [
+            "the minus end, made of zinc, that gives up electrons",
+            "the plus end that takes electrons in",
+            "the wet chemical that lets ions through but stops electrons",
+            "charged particles that can drift through the electrolyte"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a six-year-old why a flashlight only lights up when the switch is closed. Use the words circuit and electrons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Battery That Started as a Stack of Coins",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-battery", "templateLabel": "The Battery That Started as a Stack of Coins", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "battery",
+          "notes": ["Lithium-ion: the rocking chair design", "Lithium ions park between carbon layers", "Sony sold the first one in 1991", "Nobel Prize in Chemistry, 2019", "Most cobalt is mined in the Congo", "Lithium comes from brine under salt flats"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rocking Chair in Your Pocket",
+          "text": "A regular battery is a one-way street. The chemicals react, the reaction finishes, and the battery is trash. For most of the twentieth century, that was simply the deal. Then chemists asked a stubborn question: what if the reaction could be run backward?\n\nThe answer sits in your phone. A lithium-ion battery does not burn its ingredients away. Instead it moves them. On one side is graphite, built of stacked carbon layers like a deck of cards. On the other is a metal oxide, usually containing cobalt or nickel. Lithium ions are small enough to slide into the gaps between those layers and park there. When the battery discharges, lithium ions leave the graphite, drift across the electrolyte, and slot into the metal oxide, while their electrons take the long way around through your screen. When you plug the phone in, the wall pushes them all back. Researchers nicknamed the design the rocking chair: the same lithium rocking from one side to the other and back, thousands of times.\n\nThree chemists shared the 2019 Nobel Prize for this. Stanley Whittingham found in the 1970s that lithium could be tucked into a layered material. John Goodenough discovered that cobalt oxide made a far better home for it and pushed the voltage higher. Akira Yoshino swapped the dangerous lithium metal for graphite, which made the battery safe enough to sell. Sony shipped the first one in 1991. Every phone, laptop, and electric car since then stands on that work.\n\nIt is worth being honest about the cost. Cobalt is dug largely in the Democratic Republic of the Congo, sometimes by hand, sometimes by children. Lithium is drawn from brine under salt flats in Chile and Argentina, in landscapes where water is already scarce. A battery that runs a clean electric car is not clean where it comes from. Chemists now race to design cells with less cobalt, or none at all, and to recycle the metals in the batteries we have already built, which sit by the millions in drawers and landfills.\n\nThe rocking chair was a brilliant answer. What we dig up to build it, and what we do with it when it stops rocking, is a question we have not finished answering."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain what makes a lithium-ion battery different from a regular one.",
+            "Why did researchers nickname the design the rocking chair? Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain what the author means by: A battery that runs a clean electric car is not clean where it comes from."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the reversible design, the Nobel work, and the mining cost)",
+            "a regular one uses its chemicals up once, a lithium-ion one moves the same lithium back and forth and can be recharged",
+            "the lithium moves back and forth the same way, quote: the same lithium rocking from one side to the other and back",
+            "(mostly inform, with detail: it explains the chemistry and the history, but the last two paragraphs lean persuasive)",
+            "(the car makes no fumes, but the mining behind the battery causes real harm to people and land)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["discharges → ____", "brine → ____", "scarce → ____", "recycle → ____"],
+          "rows": 1,
+          "answers": [
+            "gives up its stored energy as the ions move across",
+            "very salty water",
+            "in short supply",
+            "recover the materials from an old thing to build a new one"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says chemists race to design cells with less cobalt, or none at all. Give two different reasons they might want that.",
+            "Why might recycling old batteries matter more every year, rather than less?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(cost and supply, plus the human harm of the mining described in the passage)",
+            "(inference: the number of used batteries keeps growing, and the metals inside are hard to mine)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is an electric car fairly described as clean? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Battery That Started as a Stack of Coins",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-battery", "templateLabel": "The Battery That Started as a Stack of Coins", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "battery",
+          "notes": ["Energy density: watt-hours per kilogram", "Gasoline beats lithium by about fifty to one", "A battery must carry its own oxidizer", "Density creeps up 5 to 8 percent a year", "Pack prices fell nearly 90 percent since 2010", "Grid batteries can be heavy, so cheap metals win"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Battery Is the Slowest Part of the Future",
+          "text": "Everything else in your phone got faster. The battery mostly did not, and understanding why explains a surprising amount about the century you are going to live in.\n\nStart with the number that governs it all: energy density, the amount of energy packed into each kilogram. Gasoline stores roughly 12,000 watt-hours per kilogram. A very good lithium-ion cell stores about 250. Gasoline wins by nearly fifty to one. The gap narrows once you account for engines, which waste most of that energy as heat, while electric motors convert almost all of theirs into motion. But the gap does not close. That single ratio is why battery-powered airliners remain stuck on the drawing board while battery-powered cars are already on the freeway. A car can afford to be heavy. A plane cannot.\n\nThe reason the gap is so stubborn is that a battery must carry both halves of its reaction. Gasoline is only the fuel. Its other ingredient, oxygen, is free, and the engine scoops it out of the air on the way past. A battery brings its own oxidizer along, sealed inside the case, and pays for it in weight on every single trip. Worse, batteries obey chemistry, not manufacturing. Transistors got smaller because we learned to print finer lines, and a smaller transistor is a better transistor. But lithium will always weigh what lithium weighs, and the voltage between two materials is set by physics rather than by cleverness. Lithium-ion energy density has crept up around five to eight percent a year for three decades. It has roughly tripled since 1991. Computing power over the same period rose by a factor of millions.\n\nSlow, however, is not nothing. Compounding at five percent for thirty years is what turned a battery that could run a camcorder into one that can move a two-ton car five hundred kilometers. The price fell even faster. A lithium-ion pack cost about 1,200 dollars per kilowatt-hour in 2010 and about 140 dollars by 2023, a fall of nearly ninety percent in a little over a decade. Falling price, not rising density, is what actually put electric cars in driveways.\n\nThe next problem is bigger than cars. Wind and solar are now among the cheapest electricity humans have ever generated, and both share the same flaw: they arrive when the weather says so, not when you flip a switch. A grid that runs on them needs somewhere to put an afternoon of extra sunshine until evening. That storage does not have to be light, which changes the whole calculation. A grid battery can be heavy, ugly, and built from cheap, common ingredients. Sodium, iron, and salt suddenly look attractive where cobalt does not. Engineers are also pouring effort into pumped water, spinning flywheels, and stacked concrete blocks, on the theory that the best grid battery may turn out not to be a battery at all.\n\nNotice what has happened to the word. Volta's pile was a stack of coins that made a wire tingle. The thing we now call a battery is the hinge a clean electric century swings on, and the hinge is the slow part. Not because nobody is trying. Because it is made of atoms, and atoms negotiate harder than software does."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why gasoline beats a battery on energy density even though engines waste most of their energy. Cite the evidence.",
+            "The author writes that batteries obey chemistry, not manufacturing. Explain that contrast using the transistor example.",
+            "Identify the turn in the passage where the author stops criticizing batteries and starts defending them. How is it signaled?",
+            "The passage ends: atoms negotiate harder than software does. Analyze what that sentence is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a battery carries its own oxidizer while an engine takes oxygen free from the air, cite: A battery brings its own oxidizer along, sealed inside the case)",
+            "(transistors improved because manufacturing improved, but a battery's voltage and weight are fixed by physics, cite: the voltage between two materials is set by physics rather than by cleverness)",
+            "(at Slow, however, is not nothing, a short blunt sentence pivots from the limits to the payoff)",
+            "(it reframes slowness as physics rather than failure, and personifies atoms as a negotiator, earned by the energy-density and 5-to-8-percent evidence above it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["energy density → ____", "oxidizer → ____", "compounding → ____", "stubborn (as the author uses it) → ____"],
+          "rows": 2,
+          "answers": [
+            "the amount of energy stored in each kilogram of something",
+            "the ingredient that takes in electrons so a fuel can react, which a battery must carry itself",
+            "a small gain repeating on top of itself until the total is large",
+            "refusing to shift, in the sense that the gap resists every attempt to close it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a grid battery does not have to be light. Explain why that single fact opens up materials a phone battery cannot use.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a grid battery never moves, so weight costs nothing and cheap heavy elements like sodium and iron become usable)",
+            "(student question plus a credible source type, such as a peer-reviewed battery journal or an energy agency report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The battery is holding back the clean-energy century, so the money would be better spent elsewhere. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

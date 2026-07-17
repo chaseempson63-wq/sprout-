@@ -1,0 +1,320 @@
+{
+  "key": "pulley",
+  "title": "The Wheel That Makes You Strong",
+  "blurb": "A grooved wheel and a piece of rope. It lifts ships, flags and elevators, and it never asks for a battery.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Wheel That Makes You Strong",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pulley", "templateLabel": "The Wheel That Makes You Strong", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the wheel. Find the rope." },
+        {
+          "kind": "image",
+          "imageKey": "pulley",
+          "notes": ["A wheel with a rope in a groove", "Pull down and the load goes up", "Every flagpole has one on top", "It helps you lift heavy things"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pulley. It is a wheel with a groove. A rope sits in the groove. Pull the rope down. The box goes up. Down, then up. That is the trick. A flagpole has a pulley at the top. So does the crane at the building site. A pulley helps you lift heavy things. It makes you strong."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the wheels in each row. Write how many in the box.",
+          "emoji": "⚙️",
+          "items": ["2", "4", "1", "3"],
+          "answers": ["2", "4", "1", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "wheel    rope    pull" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "pulley", "right": "rope" },
+            { "left": "flagpole", "right": "flag" },
+            { "left": "crane", "right": "heavy box" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a pulley lifting something heavy. Draw the rope going over the wheel.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Wheel That Makes You Strong",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pulley", "templateLabel": "The Wheel That Makes You Strong", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pulley",
+          "notes": ["The wheel has a groove for the rope", "Pull down, the load goes up", "Sailors used them to raise sails", "Elevators hang from big pulleys", "One hides inside your window blind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wheel That Makes You Strong",
+          "text": "A pulley is a wheel with a groove cut around the edge. A rope rides in that groove. When you pull the rope one way, the load moves the other way. That is the whole idea. Pull down, and the load goes up.\n\nSailors put pulleys all over their ships to raise the sails. Builders hang pulleys from cranes. There is a pulley at the top of every flagpole, and one hidden inside your window blind. Even an elevator hangs from thick ropes that run over a big pulley.\n\nA pulley does not make the load lighter. It just lets you pull in an easier direction."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What sits inside the groove of the wheel?", "Which way do you pull to send the load up?", "Name one place you can find a pulley."],
+          "rows": 2,
+          "answers": ["a rope", "you pull down", "(a flagpole, a crane, a window blind, an elevator, a ship)"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A pulley is a ____ with a groove.", "A ____ rides in the groove.", "You pull down and the load goes ____.", "Sailors used pulleys to raise the ____."],
+          "wordBank": ["wheel", "rope", "up", "sails"],
+          "answers": ["wheel", "rope", "up", "sails"]
+        },
+        { "kind": "draw", "prompt": "Draw a flagpole with a pulley at the top. Show the rope and the flag going up.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Wheel That Makes You Strong",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pulley", "templateLabel": "The Wheel That Makes You Strong", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pulley",
+          "notes": ["One of the six simple machines", "Fixed pulley: changes direction only", "Movable pulley: halves the force you need", "Many together are called a block and tackle", "Count the ropes holding the load"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Pull Down, Lift Up",
+          "text": "A pulley is one of the simple machines, and it is the easiest one to spot. Look for a wheel with a groove around its rim and a rope sitting in the groove.\n\nThe simplest kind is a fixed pulley. It is bolted in place, like the one at the top of a flagpole. You pull the rope down and the flag goes up. The pulley does not make the flag lighter. It only changes the direction of your pull, and pulling down is much easier than pushing up, because you can lean your whole weight into it.\n\nThe clever kind is a movable pulley. This one is not bolted anywhere. It hangs on the rope and rides up with the load. Now two lengths of rope share the weight instead of one, so you only pull half as hard. There is a catch. To lift the load one step, you have to pull two steps of rope. You save force and you spend distance.\n\nHook several pulleys together and you get a block and tackle. Count the ropes holding the load. That is how many times you divide the force you need."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are the two parts of a pulley?",
+            "What does a fixed pulley change about your pull?",
+            "What is the catch with a movable pulley?",
+            "Why do you think pulling down is easier than pushing up?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a wheel with a groove, and a rope",
+            "it changes the direction of the pull, not the weight",
+            "you pull half as hard but you pull twice as much rope",
+            "(inference: you can lean your body weight into a downward pull)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Pull Down, Lift Up", "How to Sail a Boat", "The Story of the First Elevator"],
+          "answers": ["Pull Down, Lift Up"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A rope sits in the ____ around the rim.", "A ____ pulley is bolted in place.", "A movable pulley rides up with the ____.", "Several pulleys together make a block and ____."],
+          "wordBank": ["groove", "fixed", "load", "tackle"],
+          "answers": ["groove", "fixed", "load", "tackle"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what job would you use a pulley for around your house, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Wheel That Makes You Strong",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pulley", "templateLabel": "The Wheel That Makes You Strong", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pulley",
+          "notes": ["The grooved wheel is called a sheave", "Its housing is called a block", "Fixed pulley: direction only, no force saved", "Movable pulley: half the force, twice the rope", "Count the strands supporting the load", "Friction always steals a little back"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Trade You Make",
+          "text": "Give a kid a rope and a heavy box and they will figure out fast that lifting straight up is miserable. Your arms are weak at that angle, and there is nowhere to put your body weight. Now hang a wheel from a beam, drape the rope over it, and the same job feels different. You pull down instead of up. You can hang off the rope. The box rises. Nothing about the box changed. The direction of your effort did. That is a fixed pulley, and it is the plainest trick in engineering.\n\nThe movable pulley is a better trick. Attach the pulley to the box itself and tie one end of the rope to the beam above. Run the rope down through the pulley and back up. Now the box hangs from two strands of rope, and each strand carries half the weight. You pull with half the force. But physics keeps its books carefully. To raise the box one foot, both strands must shorten by one foot, so you haul two feet of rope through your hands. You bought force with distance.\n\nCombine fixed and movable pulleys into a frame and you have a block and tackle. Sailors used them everywhere, because a wooden warship's sails weighed more than a crew could lift bare handed. The rule is simple enough to use on the spot: count the rope strands actually supporting the load. Four strands means you pull with roughly a quarter of the force and roughly four times the rope. Roughly, because rope stiffness and friction in the wheels always steal a little back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what does a fixed pulley actually change?",
+            "Explain the trade a movable pulley makes. What do you gain and what do you give up?",
+            "The author writes that physics keeps its books carefully. What does that mean here?",
+            "Why does the author keep saying roughly instead of exactly?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it changes the direction of your pull, not the weight of the load",
+            "you pull with half the force but you must pull twice as much rope",
+            "(inference: whatever force you save, you pay back in distance; the totals always balance)",
+            "(inference: friction and rope stiffness waste some effort, so the real numbers fall short of the ideal)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A pulley does not create strength, it trades distance for force",
+            "Sailing ships were the most important invention in history",
+            "Lifting a box straight up is impossible without a machine"
+          ],
+          "answers": ["A pulley does not create strength, it trades distance for force"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["fixed (pulley) → ____", "movable (pulley) → ____", "strand → ____", "friction → ____"],
+          "rows": 1,
+          "answers": [
+            "bolted in place so it cannot move",
+            "attached to the load so it rides up with it",
+            "one length of the rope that helps hold the load",
+            "the rubbing that slows moving parts and wastes effort"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger kid why a pulley cannot make you stronger for free. Use the box and the rope as your example.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Wheel That Makes You Strong",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pulley", "templateLabel": "The Wheel That Makes You Strong", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pulley",
+          "notes": ["One of the six classical simple machines", "Force times distance equals work", "Six strands: one sixth the force, six times the rope", "Elevators balance the car with a counterweight", "Archimedes and the ship: an ancient story", "No machine creates work out of nothing"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "No Free Lunch, But a Very Good Deal",
+          "text": "A pulley is a wheel with a groove around its rim and a rope running in the groove. That is the entire machine. There are no gears, no motor, and nothing to break except the rope. It is also one of the six simple machines that ancient engineers had to work with, and it is arguably the most useful of them.\n\nStart with a fixed pulley, the kind at the top of a flagpole. The wheel is bolted to the pole and goes nowhere. Pull down, and the flag climbs. This buys you no strength at all. A twenty pound flag still takes twenty pounds of pull. What it buys you is direction, and direction is worth more than it sounds. Pulling down lets you add your own body weight to the job. Pushing up lets you add nothing.\n\nThe movable pulley is where the real bargain begins. Fasten the wheel to the load, anchor one end of the rope overhead, and run the free end down around the wheel and back up. The load now hangs from two strands, each holding half. You pull half as hard. In exchange, you pull twice as far, because both strands have to shorten for the load to rise at all.\n\nThat exchange is not a coincidence and it is not negotiable. Force multiplied by distance is work, and a machine cannot create work out of nothing. It can only reshape it, spreading a large force over a short distance into a small force over a long one. Every simple machine makes the same bargain in its own accent.\n\nYou can find the same bargain in an elevator shaft, though it hides. The car hangs from cables that run over a grooved wheel at the top of the building, and on the other side of that wheel hangs a counterweight, heavy enough to balance the car and part of a full load. The motor is not lifting the car. It is nudging the small difference between two nearly equal weights, which is why an elevator motor is far smaller than the load it appears to be lifting.\n\nStack several wheels into a block and tackle and the bargain scales. Count the strands supporting the load: six strands, one sixth the force, six times the rope. Ancient writers tell a story about Archimedes using such a rig to haul a loaded ship out of the water by himself, to prove a point to a king. The story may be polished. The physics is not."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What does a fixed pulley buy you, and why does the author say it is worth more than it sounds?",
+            "Explain why the movable pulley's saving is not free. Quote the sentence that states the rule.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain how the counterweight lets an elevator use a small motor."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering direction, force-for-distance trade, and block and tackle)",
+            "direction; you can add your body weight to a downward pull but not to an upward push",
+            "you pull half as hard but twice as far; quote: Force multiplied by distance is work, and a machine cannot create work out of nothing",
+            "(inform, with detail: it defines terms and explains the physics; the playful tone entertains as well)",
+            "(the counterweight balances most of the car's weight, so the motor only moves the small difference)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["simple machine → ____", "counterweight → ____", "block and tackle → ____", "negotiable → ____"],
+          "rows": 1,
+          "answers": [
+            "a basic device that changes how a force is applied",
+            "a weight hung on the other side to balance the load",
+            "a set of fixed and movable pulleys strung together",
+            "able to be argued or changed"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that every simple machine makes the same bargain in its own accent. Explain what that sentence means.",
+            "The passage ends: The story may be polished. The physics is not. Why does the author separate the two?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(all simple machines trade force against distance; only the shape of the trade differs)",
+            "(the Archimedes tale may be exaggerated, but the rule behind it holds; the author keeps the science honest)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which is the more impressive machine, the one that saves you force or the one that only changes your direction? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Wheel That Makes You Strong",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pulley", "templateLabel": "The Wheel That Makes You Strong", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pulley",
+          "notes": ["Sheave: the grooved wheel. Block: its housing", "Mechanical advantage equals supporting strands", "Work is conserved: force times distance", "Roman treadwheel cranes used compound tackle", "Portsmouth Block Mills, around 1803", "Often called the first mass production line"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Give Me a Place to Stand",
+          "text": "Give me a place to stand and I will move the Earth. Archimedes probably never said it in those words, but the boast has stuck to him for twenty two centuries because it captures something true about simple machines: with the right arrangement of wheels and rope, there is no upper limit to what a single person can lift. There is only a limit to how long they are willing to pull.\n\nStart with the machine itself, which is almost insultingly plain. A pulley is a grooved wheel, called a sheave, mounted in a housing, called a block, with a rope riding in the groove. No gears. No power source. Nothing to calibrate.\n\nA fixed pulley, bolted to a beam, gives you nothing but direction. Twenty pounds of load still demands twenty pounds of pull. That sounds like a swindle until you notice that a human body is built to pull down, not to push up: you can hang your entire weight from a downward rope and contribute nothing but arm strength to an upward one. Redirecting a force is not the same as reducing it, but it is not nothing.\n\nThe movable pulley reduces it. Anchor the rope overhead, pass it down under a wheel fixed to the load, and haul the free end back up. The load now hangs from two strands, each carrying half its weight, and your pull is halved. The universe then presents the invoice. To lift the load one foot, each of the two strands must shorten one foot, so two feet of rope must pass through your hands. Force down, distance up, product unchanged. That product, force multiplied by distance, is work, and no machine has ever manufactured any. A pulley system is not a source of effort. It is a currency exchange, and it charges a small commission in friction and rope stiffness on every transaction.\n\nCombine the two kinds into a block and tackle and the exchange rate is yours to set. Count the strands that actually support the load: five strands, one fifth the force, five times the rope. This is why Roman crews with a compound tackle and a treadwheel could set stone blocks weighing several tons, and why every wooden warship was strung with hundreds of blocks. A ship of the line carried well over a thousand of them, each one shaped by hand.\n\nThat last fact turned out to matter more than the ships did. Around 1803, at Portsmouth, Marc Brunel and Henry Maudslay built a set of machines to make navy blocks by steps: sawing, boring, shaping, each machine doing one task perfectly and passing the piece along. Ten unskilled men, the accounts say, replaced the output of one hundred and ten skilled blockmakers. Historians generally count it as the first mass production line in the world. The humble pulley, the machine that makes strength out of patience, quietly taught the factory how to think.\n\nYou still live inside the bargain. The elevator you ride hangs from cables over a sheave, balanced by a counterweight on the far side, so the motor only argues with the difference. Your window blind, the crane on the skyline, the gym machine with the stack of plates, the sail of a boat: all of them are wheels with rope in the groove, trading your distance for their force, exactly as they did for Archimedes."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the author says a fixed pulley is not a swindle. Cite the evidence.",
+            "The author calls a pulley system a currency exchange. Explain the metaphor and say what the commission is.",
+            "Identify the shift in the passage: where does it turn from physics to history, and how does the author signal it?",
+            "The opening claims there is no upper limit to what one person can lift, only a limit to patience. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it saves no force but lets you use your body weight; cite: you can hang your entire weight from a downward rope)",
+            "(force is traded for distance the way money is traded for money; the commission is friction and rope stiffness)",
+            "(at That last fact turned out to matter more than the ships did; a short pivot sentence hands the passage to the Block Mills story)",
+            "(it reframes strength as a trade rather than a gift; earned by the strand rule and the block and tackle math)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["sheave → ____", "compound (tackle) → ____", "mass production → ____", "swindle → ____"],
+          "rows": 2,
+          "answers": [
+            "the grooved wheel a rope runs over",
+            "several pulleys working together as one system",
+            "making many identical parts by machine, step by step",
+            "a cheat or a con that takes something for nothing"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "A block and tackle with ten strands cuts your force to a tenth. Explain why nobody uses a hundred strand rig to lift a car by hand.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(you would haul a hundred feet of rope per foot lifted, and friction across a hundred wheels would eat the saving)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A machine that saves no energy has not really made anything easier. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

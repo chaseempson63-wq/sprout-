@@ -1,0 +1,310 @@
+{
+  "key": "meerkat",
+  "title": "The Meerkat on Guard Duty",
+  "blurb": "The two-pound desert digger that posts a lookout, barks a different warning for every danger, and teaches its pups to hunt scorpions.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Meerkat on Guard Duty",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-meerkat", "templateLabel": "The Meerkat on Guard Duty", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Stand up tall like the meerkat." },
+        {
+          "kind": "image",
+          "imageKey": "meerkat",
+          "notes": ["It stands up on two back legs", "It lives in the hot sand", "It digs with long claws", "It barks when it sees a bird", "It is smaller than a cat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a meerkat. It lives in the sand where the sun is hot. A meerkat can stand up tall on two back legs. Its tail helps it stand, like a third leg. It looks and looks at the sky. It is watching for big birds. If a big bird comes, the meerkat barks. Then all the meerkats run down into their hole. Under the ground they are safe."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the meerkats standing in each row. Write how many in the box.",
+          "emoji": "🐾",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "tall    dig" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to where it hides.",
+          "pairs": [
+            { "left": "meerkat", "right": "a hole in the sand" },
+            { "left": "bird", "right": "a nest in a tree" },
+            { "left": "fish", "right": "under a rock in the river" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a meerkat standing up tall. Add the hot sun and a hole for it to hide in.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Meerkat on Guard Duty",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-meerkat", "templateLabel": "The Meerkat on Guard Duty", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "meerkat",
+          "notes": ["A meerkat weighs about as much as a loaf of bread", "It lives in Africa in the dry sand", "The dark rings around its eyes cut the glare", "One meerkat guards while the rest dig", "It can shut its ears to keep sand out"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Meerkat on Guard Duty",
+          "text": "A meerkat is small enough to sit in your two hands. It lives in a big family in the dry sand of Africa. All day the family digs for bugs to eat. But a meerkat with its head down a hole cannot see the sky. So someone has to watch. One meerkat climbs onto a rock and stands up tall. This meerkat is the guard. It does not dig. It just looks. If a hawk comes, the guard barks a warning. Every meerkat drops its bug and runs for the nearest hole. When the sky is safe again, the guard barks a different sound, and the whole family comes back out to dig."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does the meerkat family live?", "What is the family looking for when it digs?", "What does the guard do when a hawk comes?"],
+          "rows": 2,
+          "answers": ["in the dry sand of Africa", "bugs to eat", "it barks a warning"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The meerkat family digs for ____.", "One meerkat stands up tall to be the ____.", "The guard ____ when a hawk comes.", "The family runs into a ____."],
+          "wordBank": ["bugs", "guard", "barks", "hole"],
+          "answers": ["bugs", "guard", "barks", "hole"]
+        },
+        { "kind": "draw", "prompt": "Draw the meerkat family. Put one meerkat up on a rock as the guard and the rest digging.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Meerkat on Guard Duty",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-meerkat", "templateLabel": "The Meerkat on Guard Duty", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "meerkat",
+          "notes": ["Home is the Kalahari, in southern Africa", "A family is called a mob", "Its dark belly skin soaks up morning sun", "It has a soft call that means all clear", "It hardly ever drinks water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Watcher on the Rock",
+          "text": "The Kalahari is a huge stretch of red sand and dry grass in southern Africa. Nights there are cold. So when a meerkat family climbs out of its burrow in the morning, the first thing it does is sit up and face the sun. The fur on a meerkat's belly is thin, and the skin under it is dark. That dark skin soaks up heat, the way a black shirt does on a hot day. Once the family is warm, the digging starts. Almost everything a meerkat eats is buried. Beetles, grubs, spiders, and small lizards all hide under the sand, so a meerkat has to shove its face into the ground and dig with its long front claws. That works, but it creates a problem. A meerkat with its head in a hole cannot see an eagle. So the family shares the job of watching. One meerkat stops eating, climbs onto a rock or a low branch, stands up on its back legs, and props itself on its tail. While it is on duty it makes a soft, steady call. That call means one thing: I am watching, keep digging. If the soft call stops, every meerkat looks up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why does a meerkat family sit facing the sun in the morning?",
+            "Name two foods a meerkat digs up.",
+            "What does the guard's soft call tell the rest of the family?",
+            "Why do you think the family stops and looks up when the soft call stops?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the nights are cold, and their dark belly skin soaks up the sun to warm them",
+            "any two of: beetles, grubs, spiders, small lizards",
+            "that the guard is watching, so they can keep digging",
+            "(inference: silence might mean the guard has seen danger or left, so nobody is watching)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Watcher on the Rock", "How to Build a Sandcastle", "The Tallest Tree in Africa"],
+          "answers": ["The Watcher on the Rock"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The meerkat lives in the ____, in southern Africa.", "It digs with its long front ____.", "The guard props itself up on its ____."],
+          "wordBank": ["Kalahari", "claws", "tail"],
+          "answers": ["Kalahari", "claws", "tail"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather be the meerkat digging or the meerkat on guard, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Meerkat on Guard Duty",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-meerkat", "templateLabel": "The Meerkat on Guard Duty", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "meerkat",
+          "notes": ["Suricata suricatta, a kind of mongoose", "About two pounds, roughly a foot tall standing", "Burrows can hold dozens of rooms and many doors", "Adults teach pups to hunt scorpions in stages", "Resistant to scorpion venom", "Different bark for a bird than for a snake"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Scorpion Lesson",
+          "text": "A scorpion is a difficult meal. It has claws at the front, a stinger at the back, and it fights. A grown meerkat handles one with practiced calm: it darts in, snaps the stinger off the tail, and eats the rest. A meerkat is also partly resistant to scorpion venom, so a sting that would put a person in a hospital is survivable for a two-pound animal in the Kalahari. But a meerkat pup does not know any of that. It is born underground and comes out at about three weeks old with no idea what a scorpion even is. So the adults teach it, and they teach it in stages. When a pup is very young, an adult kills a scorpion first, then hands over the dead body. There is nothing to fear and nothing to learn except the taste. As the pup gets a little older, the adults change the lesson. Now they bring a live scorpion with the stinger bitten off. It scuttles, the pup chases, and if the pup fumbles it, an adult nudges the scorpion back within reach. Only when the pup is nearly grown do the adults hand over a whole live scorpion and step back. How do the adults know which stage a pup is ready for? They listen. Pups beg with a call, and the call changes as they grow. Researchers played recordings of older pups' begging calls next to young pups, and the adults brought live prey to babies who were far too small for it. The adults were not counting weeks. They were going by the sound."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe the three stages of the scorpion lesson in order.",
+            "What does resistant to venom mean, and why does it matter for a meerkat?",
+            "The researchers played recordings of older pups next to young pups. What did the adults do, and what does that tell us about how they decide?",
+            "The passage says a pup comes out of the burrow with no idea what a scorpion even is. Why is teaching a better solution for meerkats than letting each pup work it out alone?"
+          ],
+          "rows": 2,
+          "answers": [
+            "dead scorpion first, then a live one with the stinger removed, then a whole live scorpion",
+            "its body can survive the venom; it lets a small animal hunt a dangerous meal",
+            "they brought live prey to pups that were too young; they judge by the begging call, not by the pup's real age",
+            "(inference: working it out alone means getting stung or starving, and a wrong guess with a scorpion can be fatal)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Adult meerkats teach their pups to hunt dangerous prey in careful stages, and judge each stage by the pup's call",
+            "Scorpions are the most common animal in southern Africa",
+            "Meerkats cannot be hurt by anything"
+          ],
+          "answers": ["Adult meerkats teach their pups to hunt dangerous prey in careful stages, and judge each stage by the pup's call"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["resistant → ____", "fumbles → ____", "prey → ____"],
+          "rows": 1,
+          "answers": ["able to survive something that would harm others", "handles it clumsily and loses hold of it", "an animal that is hunted for food"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: think of a skill an adult taught you in stages, the way meerkats teach scorpion hunting. Describe the stages and why the order mattered.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Meerkat on Guard Duty",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-meerkat", "templateLabel": "The Meerkat on Guard Duty", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "meerkat",
+          "notes": ["Suricata suricatta, a mongoose of the Kalahari", "A mob runs from about 3 to 50 members", "Alarm calls carry both the type of danger and how urgent it is", "Dark eye patches work like built-in sunglasses", "Non-retractable claws built for digging, not gripping", "Studied in the wild since 1993 at the Kalahari Meerkat Project"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Language of Warnings",
+          "text": "Most animal alarm calls say very little. They say danger, and they say it loudly, and every animal in earshot does the same thing: it runs. A meerkat's alarm calls are stranger and more useful than that, because a meerkat does not have one escape plan. It has several, and picking the wrong one can kill it. Consider the problem. If a martial eagle is dropping out of the sky, the only safe place is underground, and you have seconds. If a jackal is crossing the plain half a mile off, diving into a hole is a waste of a good morning, because the jackal is slow, visible, and probably not hunting yet. If a snake is coiled in the grass three feet from the pups, running underground is the worst possible move, because underground is exactly where the snake is heading. Three dangers, three different correct answers. So the meerkat's warning has to carry more than the word danger. Researchers who recorded thousands of these calls in the Kalahari found that each one encodes two separate pieces of information at once. The first is what kind of predator it is: a bird in the air, a mammal on the ground, or a snake. The second is how urgent the situation is, coded in the roughness and pitch of the sound. A low-urgency bird call and a high-urgency bird call are recognizably related, the way a murmur and a shout are the same word said two ways. Play a high-urgency aerial alarm from a hidden speaker and the whole mob flattens itself and bolts for a bolt-hole. Play the low-urgency version and the meerkats simply stand, scan the sky, and go back to digging. Play the snake alarm and they do something else entirely: they gather, they approach, and they mob the danger together rather than run from it. The meerkats are not just hearing an alert. They are hearing a description, and they are choosing their response from it. That is a small thing to say about a two-pound animal, and it is also not a small thing at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why can a meerkat not use one single escape plan for every danger? Give two examples from the text.",
+            "What two pieces of information does a meerkat alarm call carry at once? Quote the phrase the passage uses for the second one.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the comparison the author makes to a murmur and a shout. What is it explaining?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the multiple escape plans plus calls encoding predator type and urgency)",
+            "(the correct response differs: underground for an eagle, but underground is wrong for a snake because that is where the snake is heading)",
+            "the type of predator and how urgent it is; quote: how urgent the situation is",
+            "(inform, with detail: it explains research findings and defines the call system; the last line leans slightly persuasive)",
+            "(that the low-urgency and high-urgency versions are the same call type delivered with different intensity)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["encodes → ____", "urgency → ____", "mob (as a verb) → ____", "recognizably → ____"],
+          "rows": 1,
+          "answers": ["packs information into a signal", "how immediate and serious the danger is", "to gather and confront a threat as a group", "clearly enough to be identified"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why was playing recordings from a hidden speaker a smart way to test what the calls mean?",
+            "The author ends by calling this both a small thing and not a small thing at all. Explain both halves."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it isolates the sound from any other cue, so the response must come from the call alone)",
+            "(small: it is one modest animal and a handful of calls; not small: it means the call carries described meaning, not just alarm)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does a system of calls that names the danger and its urgency count as a language? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Meerkat on Guard Duty",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-meerkat", "templateLabel": "The Meerkat on Guard Duty", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "meerkat",
+          "notes": ["Suricata suricatta, a cooperative mongoose", "Sentinel duty is taken in turns, usually after feeding", "Alarm calls encode predator type and urgency together", "Pups are taught with dead, then disabled, then live prey", "Adults judge the lesson by the pup's begging call", "The Kalahari Meerkat Project has tracked wild mobs since 1993"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Selfish Sentinel: What the Meerkat Actually Owes Its Family",
+          "text": "For decades the meerkat on the rock was biology's favorite little hero. Here was an animal that gave up its own breakfast, climbed to the most exposed spot on the plain, made itself the most visible thing for a hundred yards in any direction, and screamed a warning that saved everyone but itself. It was cooperation you could photograph. It appeared in documentaries and textbooks as a clean example of an animal paying a personal cost for the good of the group. Then researchers in the Kalahari did something unglamorous. They watched, and they wrote down what actually happened, and the story fell apart in an interesting way. The first finding was about timing. A meerkat did not take a turn on guard at random, and it did not take one while hungry. It took one after it had eaten well. Guarding, it turned out, was what a full meerkat did with its afternoon. The second finding was worse for the hero story. The sentinel was not in more danger than the foragers. It was in less. The sentinel is the animal with its head up and its eyes on the sky. It sees the eagle first. It is also, almost always, the animal standing closest to a bolt-hole, because that is where it chose to stand. When the alarm goes up, the sentinel is not sacrificing itself to buy the others time. It is already halfway home. Researchers gave this the deliberately unromantic name of the selfish sentinel: guarding may simply be the safest available job for a meerkat that no longer needs to eat, and the warning bark may be a side effect of doing it. This is not a story about meerkats being frauds. It is a story about how easy it is to see nobility in a behavior when nobility is the thing you went looking for. And the deflation is not the end of it. The same population produced a finding that is harder to explain away. Adult meerkats teach. They hand young pups dead scorpions, then live scorpions with the stinger removed, then whole live ones, escalating the difficulty as the pup grows. Teaching is rare in animals and expensive to fake, because the adult loses a meal, spends time, and gains nothing immediate. When researchers played recordings of older pups' begging calls beside pups too young for the lesson, the adults upgraded the prey anyway. They were reading a signal and adjusting their instruction to it. So the meerkat is not the hero of the documentary and not the cynic of the correction. It is an animal that will take the safest job available and call it guard duty, and will also lose its own dinner, repeatedly, to walk a pup through a lesson it cannot yet survive on its own. Both are true. The uncomfortable part is not that the sentinel turned out to be selfish. It is that we never needed the sentinel to be a hero. We needed to look."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "State the two findings that undermined the hero story, and cite the exact phrase the passage uses to name the idea.",
+            "Explain why the teaching evidence is harder to explain away than the sentinel behavior. Cite the reason the passage gives.",
+            "Identify where the passage turns against its own opening, and explain how the author signals that turn.",
+            "Analyze the final three sentences. What claim is the author making about scientists, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(guards go on duty only after eating well, and the sentinel is safer than the foragers, not more at risk; cite: the selfish sentinel)",
+            "(teaching costs the adult a meal and time for no immediate gain; cite: expensive to fake)",
+            "(at Then researchers in the Kalahari did something unglamorous; the plain, deflating word unglamorous flips the tone from documentary praise to observation)",
+            "(that researchers found nobility because they were looking for it, and that observation matters more than the story; supported by the timing and bolt-hole evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["sentinel → ____", "foragers → ____", "deflation → ____", "escalating → ____"],
+          "rows": 2,
+          "answers": [
+            "an animal standing watch for danger",
+            "animals searching for and gathering food",
+            "the letting down of an inflated or exaggerated idea",
+            "increasing step by step in difficulty or intensity"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says nobility is the thing you went looking for. Explain how expecting an answer can shape what a researcher records.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(expectation biases what gets noticed, counted, and reported, so evidence for the expected story is collected while the ordinary explanation goes untested)",
+            "(student question plus a credible source type, such as a peer-reviewed field study or a long-term population dataset)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: If the sentinel is only doing the safest job available, then calling meerkats cooperative is wishful thinking. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

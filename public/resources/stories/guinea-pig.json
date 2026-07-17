@@ -1,0 +1,321 @@
+{
+  "key": "guinea-pig",
+  "title": "The Guinea Pig That Is Not a Pig",
+  "blurb": "It is not a pig and it is not from Guinea. It is a mountain animal from Peru that whistles at people.",
+  "topic": "animals",
+  "bands": {
+    "1": {
+      "title": "The Guinea Pig That Is Not a Pig",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-guinea-pig", "templateLabel": "The Guinea Pig That Is Not a Pig", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the guinea pig." },
+        {
+          "kind": "image",
+          "imageKey": "guinea-pig",
+          "notes": ["It is not a pig", "It has soft fur", "It hops when it is happy", "It whistles for food", "Four toes in front, three at the back"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a guinea pig. It is not a pig at all. It is round and soft. It eats grass and hay all day. When a guinea pig is happy, it hops straight up in the air. That hop has a funny name. It is called popcorning. When a guinea pig wants food, it whistles. The whistle is very loud for such a small animal. It sounds like this: wheek, wheek, wheek."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the pieces of hay in each row. Write how many in the box.",
+          "emoji": "🌾",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "soft    hop" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to the sound it makes.",
+          "pairs": [
+            { "left": "guinea pig", "right": "wheek" },
+            { "left": "cow", "right": "moo" },
+            { "left": "duck", "right": "quack" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own guinea pig. Give it a big pile of hay to eat.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Guinea Pig That Is Not a Pig",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-guinea-pig", "templateLabel": "The Guinea Pig That Is Not a Pig", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "guinea-pig",
+          "notes": ["It is not a pig", "It is not from Guinea", "It comes from the mountains of Peru", "Its teeth never stop growing", "A happy hop is called popcorning", "Baby guinea pigs can run on day one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Guinea Pig That Is Not a Pig",
+          "text": "A guinea pig is not a pig. It is also not from a place called Guinea. So the name is wrong twice. A guinea pig comes from the high mountains of South America, in a country called Peru. Guinea pigs eat grass and hay all day long. They have to. Their teeth never stop growing, and chewing tough grass keeps the teeth short. A guinea pig hops in the air when it feels good. People call that popcorning. A guinea pig also whistles when it is hungry. It looks for you, and it whistles until you come."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where do guinea pigs come from?", "What do guinea pigs eat all day?", "Why do they have to keep chewing?", "What is popcorning?"],
+          "rows": 2,
+          "answers": ["the mountains of Peru, in South America", "grass and hay", "their teeth never stop growing", "a happy hop in the air"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A guinea pig is not a ____.", "Guinea pigs come from the country of ____.", "Their ____ never stop growing.", "A guinea pig ____ when it is hungry."],
+          "wordBank": ["pig", "Peru", "teeth", "whistles"],
+          "answers": ["pig", "Peru", "teeth", "whistles"]
+        },
+        { "kind": "draw", "prompt": "Draw a guinea pig popcorning. Show it hopping up off the ground.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Guinea Pig That Is Not a Pig",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-guinea-pig", "templateLabel": "The Guinea Pig That Is Not a Pig", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "guinea-pig",
+          "notes": ["Its real name is a cavy", "Farmed in the Andes for thousands of years", "It cannot make its own vitamin C", "Teeth grow all life long", "It has almost no sense of up and down", "Poor eyes, sharp ears and nose"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal With Two Wrong Names",
+          "text": "The guinea pig is not a pig, and it has never lived in Guinea. Scientists call it a cavy, and it belongs to a family of rodents from South America. Its home is the Andes, a long chain of cold, high mountains running down the western edge of the continent. People there have kept cavies for thousands of years, long before anyone in Europe had heard of them. So where did the silly name come from? Nobody is certain. Sailors may have carried the animals on ships that stopped in Guinea, in Africa, on the way to Europe. The pig part is easier. The animal is round, it squeals, and it spends almost all day eating. A guinea pig has to eat almost all day. Its teeth keep growing for its whole life, the way your fingernails do, and only hours of chewing tough grass grinds them back down. If a guinea pig stops chewing, its teeth become too long to eat with."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What do scientists call the guinea pig?",
+            "Which mountains is the guinea pig from?",
+            "What does the passage compare growing teeth to?",
+            "Why do you think the name guinea pig stuck, even though both halves are wrong?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a cavy",
+            "the Andes, in South America",
+            "your fingernails",
+            "(opinion: people kept using the name they first heard, and it was too late to change)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Animal With Two Wrong Names", "How to Sail a Ship to Africa", "The Tallest Mountain in the World"],
+          "answers": ["The Animal With Two Wrong Names"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The guinea pig's real name is a ____.", "It comes from a mountain chain called the ____.", "Chewing tough ____ grinds its teeth down."],
+          "wordBank": ["cavy", "Andes", "grass"],
+          "answers": ["cavy", "Andes", "grass"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: pick a better name for the guinea pig, and explain why your name fits it.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Guinea Pig That Is Not a Pig",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-guinea-pig", "templateLabel": "The Guinea Pig That Is Not a Pig", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "guinea-pig",
+          "notes": ["Cavia porcellus, a cavy", "Domesticated in the Andes about 7,000 years ago", "Lost the gene for making vitamin C", "Babies born furred, eyes open, running the same day", "Wheeking may be aimed only at humans", "In Switzerland it is illegal to keep just one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Whistle That Was Made For Us",
+          "text": "Guinea pigs are not wild animals that people tamed last week. They are one of the oldest domesticated animals on Earth. In the high valleys of the Andes, farmers began keeping cavies around seven thousand years ago, penning them beside the cooking fire and feeding them kitchen scraps. Over all those centuries the animal changed. It grew rounder, calmer, and more colorful than its wild cousins, which are lean, gray, and hard to catch. Domestication left one strange gift behind. Guinea pigs make a piercing whistle, a sound keepers call wheeking, and they mostly aim it at people. Wild cavies do not greet each other this way. A pet guinea pig learns the rattle of a bag, the creak of a door, the footsteps of the person who brings the food, and it whistles at that sound and nothing else. It is not talking to other guinea pigs. It is talking to you. Domestication also left a weakness. Guinea pigs cannot make their own vitamin C. Almost every other mammal builds vitamin C inside its body, but somewhere in the guinea pig's past that ability broke, and it never came back. Humans have exactly the same fault. That is why sailors once got scurvy at sea, and it is why a pet guinea pig fed only dry pellets will sicken. It needs fresh food, every single day, for the same reason you do. Their babies are strange too. Most rodents are born pink, blind, and helpless. A newborn guinea pig arrives with a full coat of fur, open eyes, a working set of teeth, and it can run within a few hours of being born."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What does domesticated mean, in your own words?",
+            "The passage says the whistle is not talking to other guinea pigs. Explain what it means by that.",
+            "Why does the author bring up sailors and scurvy in a passage about guinea pigs?",
+            "Newborn guinea pigs can run within hours. What does that suggest about how dangerous their mountain home was?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(kept and changed by people over many generations, no longer wild)",
+            "wheeking is aimed at humans who bring food, not used between guinea pigs",
+            "(inference: humans share the same fault, so the comparison shows how serious it is)",
+            "(inference: babies that must run at once are born into a place with predators and no safe burrow time)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Thousands of years of living with people shaped the guinea pig's body and even its voice",
+            "Guinea pigs are the fastest rodents in South America",
+            "Sailors invented the guinea pig on long sea voyages"
+          ],
+          "answers": ["Thousands of years of living with people shaped the guinea pig's body and even its voice"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["domesticated → ____", "wheeking → ____", "scurvy → ____"],
+          "rows": 1,
+          "answers": [
+            "kept and bred by people until the animal changed",
+            "the loud whistle a guinea pig aims at people",
+            "the sickness you get without enough vitamin C"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage calls the whistle a gift and the vitamin C problem a weakness. Which one tells you more about guinea pigs and people living together? Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Guinea Pig That Is Not a Pig",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-guinea-pig", "templateLabel": "The Guinea Pig That Is Not a Pig", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "guinea-pig",
+          "notes": ["Cavia porcellus, descended from a wild Andean cavy", "Domesticated roughly 7,000 years ago, before the llama", "Cannot synthesize vitamin C, exactly like us", "Lavoisier used one to measure body heat in 1780", "Its name became the English word for a test subject", "Still an everyday food in Peru, called cuy"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Small Rodent Became a Figure of Speech",
+          "text": "When you say someone is a guinea pig, you mean they are the one the experiment is being tried on. That phrase is about four hundred years old, and the animal earned it honestly. In 1780 the French chemist Antoine Lavoisier wanted to answer a question nobody had answered: is the warmth of a living body a kind of burning? He built a device with an inner chamber packed in ice, placed a guinea pig inside, and measured how much ice the animal's body heat melted. Then he measured the carbon dioxide it breathed out. The numbers lined up. Life, he concluded, is a slow fire. That experiment helped begin the science of how bodies turn food into energy, and a guinea pig was sitting at the center of it. Cavies kept appearing in laboratories for a reason that has nothing to do with luck. They are small, calm, and easy to keep. More importantly, they are broken in the same particular way we are. Almost every mammal manufactures its own vitamin C. Guinea pigs cannot, because the gene that builds the necessary enzyme is present in their DNA but permanently switched off. Primates, including humans, carry the identical fault. That shared weakness made the guinea pig the animal that finally proved scurvy is a deficiency and not an infection, and it is why vitamin C was isolated using guinea pigs in the 1930s. The oldest chapter of the story is not scientific at all. Long before Europeans met them, cavies were livestock. Andean families kept them loose in the kitchen, where they ate scraps and warmed themselves near the fire, and where they were also eaten. That has not changed. Peruvians still eat tens of millions of guinea pigs a year, a dish called cuy, and it is served at weddings and festivals rather than at ordinary dinners. In the cathedral at Cusco there is a painting of the Last Supper by an Andean artist named Marcos Zapata. The apostles are gathered around the table. Laid out on the platter in front of them, roasted and whole, is a guinea pig. Depending on where you stand on the planet, the same animal is a pet you buy hay for, a laboratory subject in a photograph, or the meal at a celebration. The animal has not changed. Only the people looking at it have."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain Lavoisier's experiment and what conclusion he drew. Quote the phrase the passage uses for that conclusion.",
+            "Why were guinea pigs, and not other rodents, the right animal for scurvy research? Use evidence from the text.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the author doing in the final three sentences, and why place them last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the laboratory history, the shared vitamin C fault, and the animal's role as food and pet)",
+            "he packed a chamber in ice, measured the ice a guinea pig's body heat melted and the carbon dioxide it breathed out; quote: Life, he concluded, is a slow fire",
+            "they cannot make vitamin C and primates carry the identical fault, so they get scurvy the way we do",
+            "(inform, with detail: it explains experiments and defines terms, though the ending has a persuasive turn)",
+            "(the author widens from facts to the reader's own viewpoint; last position gives it weight)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["deficiency → ____", "enzyme → ____", "livestock → ____", "isolated (a vitamin) → ____"],
+          "rows": 1,
+          "answers": [
+            "a sickness caused by something missing from the diet",
+            "a substance the body builds to carry out a chemical job",
+            "animals kept by people for food",
+            "separated out and identified as a pure substance"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the gene is present in their DNA but permanently switched off. Why is that more interesting than the gene simply being absent?",
+            "The author says the animal has not changed, only the people looking at it. Do you agree? Explain."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it shows the ability was once there and was lost, which is evidence of shared ancestry and of evolution removing what is not needed)",
+            "(opinion, supported: pet, subject, and food are human categories, not facts about the animal)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does knowing an animal is somebody's pet change whether it is acceptable to eat it, or to run experiments on it? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Guinea Pig That Is Not a Pig",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-guinea-pig", "templateLabel": "The Guinea Pig That Is Not a Pig", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "guinea-pig",
+          "notes": ["Cavia porcellus, domesticated from a wild Andean cavy", "Kept by Andean households roughly 7,000 years", "GULO gene present but permanently inactivated", "Lavoisier's 1780 ice calorimeter used a guinea pig", "Gestation 59 to 72 days, very long for a rodent", "Swiss law forbids keeping a single guinea pig alone"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Broken Gene, a Slow Fire, and a Painting in Cusco",
+          "text": "The guinea pig is misnamed twice over. It is not a pig, and no part of its history touches Guinea. It is a cavy, a South American rodent, and its story is worth more than the joke about its name, because this small animal sits at the intersection of three things that rarely meet: a genetic accident, the birth of modern chemistry, and a question about who gets to decide what an animal is for. Start with the accident. Nearly every mammal manufactures its own vitamin C in the liver, using an enzyme built by a gene called GULO. Guinea pigs do not. The gene is still there in their DNA, sitting in the correct place on the correct chromosome, but it is a ruin. Mutations have accumulated in it until it no longer produces anything, and no repair ever came. Primates, our own species included, carry a version of the same ruin, broken independently and long ago. This is not a coincidence so much as a permission. An animal whose diet is drowning in fresh vitamin C has no reason to spend energy manufacturing it, so when the gene failed, nothing punished the failure and it was passed on. The consequence is that guinea pigs, almost uniquely among laboratory animals, can get scurvy. That single shared flaw made them the animal on which scurvy was proven to be a deficiency rather than an infection, and the animal in which vitamin C was finally hunted down and isolated in the 1930s. Now the chemistry. In 1780 Antoine Lavoisier was pursuing a question that sounds childish and was not: is being alive a form of burning? He built an ice calorimeter, an inner chamber surrounded by packed ice, and placed a guinea pig in it. He measured the meltwater the animal's body heat produced, then measured the carbon dioxide it exhaled, and compared both against what happened when he burned charcoal in the same apparatus. The ratios corresponded. Respiration, he concluded, is combustion, running slowly and coolly inside the body. That result is the foundation of everything we understand about metabolism, and the subject of the experiment was a rodent that had been sitting in Andean kitchens for millennia. Which brings the last thread. Cavies were domesticated in the Andes around seven thousand years ago, before the llama, and they were not pets. They were livestock, kept loose indoors, fed on scraps, and eaten. They still are. Peru consumes tens of millions of guinea pigs a year as cuy, reserved for weddings and festivals rather than weeknights. In the cathedral at Cusco hangs a Last Supper painted by Marcos Zapata, an Andean artist working in the 1750s. The apostles lean toward the table, and on the central platter, roasted and unmistakable, lies a guinea pig. Zapata was painting the most sacred meal he could imagine, so he painted the food a feast is actually made of. Here is what makes the animal genuinely interesting. Nothing about the guinea pig changes across these three stories. The same creature is a broken gene, a measuring instrument, a sacred meal, and a child's first pet, and it is all of them simultaneously. What changes is the person deciding. We tend to imagine those categories are properties of the animal, the way fur and teeth are. They are not. They are properties of us."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the passage calls the broken GULO gene a permission rather than a coincidence. Cite the evidence.",
+            "Describe Lavoisier's experiment and the conclusion he reached. Quote his conclusion as the passage states it.",
+            "The passage says the gene is still there but is a ruin. Explain why a broken gene left in place is stronger evidence than a missing gene would be.",
+            "Identify the structure of this passage. Name the three threads and explain how the author signals each turn.",
+            "The final two sentences claim those categories are properties of us. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a diet full of vitamin C meant the loss cost nothing, so nothing selected against it; cite: nothing punished the failure and it was passed on)",
+            "(he measured meltwater from body heat and exhaled carbon dioxide against burning charcoal; quote: Respiration, he concluded, is combustion)",
+            "(a ruined gene in the right place shows the ability existed and was lost, which is direct evidence of ancestry and of loss over time)",
+            "(the genetic accident, the birth of modern chemistry, and who decides what an animal is for; signaled by Start with the accident, Now the chemistry, Which brings the last thread)",
+            "(it moves the point from biology to the reader's own judgment; earned only if the three sections really do show the same animal in different human roles)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["deficiency → ____", "calorimeter → ____", "respiration → ____", "domesticated → ____"],
+          "rows": 2,
+          "answers": [
+            "a condition caused by something missing from the diet",
+            "a device that measures heat given off by something",
+            "the process of taking in oxygen and releasing carbon dioxide and energy",
+            "bred and kept by people over generations until the animal changed"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says Zapata painted the food a feast is actually made of. What point about culture is being made, and how does it support the passage's argument?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(what counts as sacred or ordinary food depends on where you live; it shows the same animal filling opposite roles)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An animal kept as a pet in one country should not be raised as food in another. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

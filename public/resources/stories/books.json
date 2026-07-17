@@ -1,0 +1,319 @@
+{
+  "key": "books",
+  "title": "The Book That Took 5,000 Years to Make",
+  "blurb": "Clay tablets, reed scrolls, a year of one person's handwriting, and the machine that finally made books cheap.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Book That Took 5,000 Years to Make",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-books", "templateLabel": "The Book That Took 5,000 Years to Make", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the book with the biggest spine." },
+        {
+          "kind": "image",
+          "imageKey": "books",
+          "notes": ["Paper is made from trees", "The flat edge is the spine", "Pages are folded, then sewn", "A machine prints the words", "Someone had to write every word first"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a book. A book is made of paper. The paper is cut and folded. The folded paper is called pages. The pages are sewn at one side. That side is the spine. The spine is what you see on a shelf. Open the book and the pages turn. Someone wrote every word. Someone drew every picture. Then a machine printed it, over and over, so you could hold one."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the books on each shelf. Write how many in the box.",
+          "emoji": "📕",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "book    page" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "book", "right": "shelf" },
+            { "left": "bird", "right": "sky" },
+            { "left": "fish", "right": "water" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the cover of a book you would like to read. Put your name on it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Book That Took 5,000 Years to Make",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-books", "templateLabel": "The Book That Took 5,000 Years to Make", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "books",
+          "notes": ["Old books were written by hand", "The pages were animal skin, not paper", "One book could take a year", "Johannes Gutenberg built a printing machine", "Now a machine can print a page in seconds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Before There Were Machines",
+          "text": "A long time ago there were no printing machines. If you wanted a book, someone had to copy it by hand. A person sat at a desk with a pen and copied every single letter. One book could take a whole year. The pages were made from animal skin, not paper. One big book used the skin of many animals. So books cost a lot. Most people never held one. Then a man named Johannes Gutenberg built a machine that could print a page in minutes. Soon there were books everywhere. Now you can hold one whenever you like."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How were books made before machines?", "How long could one book take?", "Who built a machine that could print a page?"],
+          "rows": 2,
+          "answers": ["someone copied every letter by hand", "a whole year", "Johannes Gutenberg"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A person copied every ____ by hand.", "The pages were made from animal ____.", "One book could take a whole ____.", "Gutenberg built a printing ____."],
+          "wordBank": ["letter", "skin", "year", "machine"],
+          "answers": ["letter", "skin", "year", "machine"]
+        },
+        { "kind": "draw", "prompt": "Draw the person at the desk copying a book by hand. Give them a pen and a candle.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Book That Took 5,000 Years to Make",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-books", "templateLabel": "The Book That Took 5,000 Years to Make", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "books",
+          "notes": ["Paper was invented in China", "Cai Lun wrote down the method about 1,900 years ago", "Papyrus was made from a river reed", "Printers carved whole pages into wood", "The oldest printed book we can read is from the year 868"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Soup That Became Paper",
+          "text": "Two thousand years ago, nobody in the world had a page like this one. Writing went on clay, on stone, on strips of a reed plant called papyrus, or on flattened animal skin. All of it was heavy, or costly, or both. Then, in China, someone worked out how to make paper. A court official named Cai Lun wrote down the method about 1,900 years ago. You soak plant fibers, mash them into a soup, dip in a screen, and lift out a thin wet mat. Dry it, and you have a sheet. Cheap plants go in. Paper comes out. Paper alone does not make a book. You still have to put words on it. So Chinese printers carved a whole page of characters backward into a block of wood, brushed the block with ink, and pressed paper onto it. One block could print the same page hundreds of times. The oldest printed book we can still read was made this way. It is called the Diamond Sutra, and the last line on it tells us it was printed in the year 868."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name two things people wrote on before paper.",
+            "What are the steps for making paper, in your own words?",
+            "How did Chinese printers put words on the paper?",
+            "Why do you think paper caught on so quickly?"
+          ],
+          "rows": 2,
+          "answers": [
+            "clay, stone, papyrus, or animal skin (any two)",
+            "soak plant fibers, mash them into a soup, dip a screen in, lift out a wet mat, dry it",
+            "they carved a page backward into a wood block, inked it, and pressed paper onto it",
+            "(inference: it was cheap and light, and it was made from plants anyone could get)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How Paper Was Invented and What It Changed", "The Best Trees to Plant in a Garden", "A Guide to Keeping Pet Fish"],
+          "answers": ["How Paper Was Invented and What It Changed"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Papyrus was made from a river ____.", "Paper starts as plant ____ mashed into a soup.", "Printers carved a page into a block of ____.", "The Diamond Sutra was printed in the year ____."],
+          "wordBank": ["reed", "fibers", "wood", "868"],
+          "answers": ["reed", "fibers", "wood", "868"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would be hard about carving a whole page backward into wood, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Book That Took 5,000 Years to Make",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-books", "templateLabel": "The Book That Took 5,000 Years to Make", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "books",
+          "notes": ["Gutenberg worked in Mainz, Germany, around 1450", "His hand mold cast a fresh metal letter in seconds", "He mixed an oil-based ink so it would stick to metal", "His press was rebuilt from a grape press", "He printed about 180 Bibles", "The letters came apart and got used again"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Man Who Made Books Cheap",
+          "text": "Around the year 1450, in the German town of Mainz, a goldsmith named Johannes Gutenberg spent years on a secret project and nearly went broke doing it. His idea was not simply printing. Printers in China and Korea had been pressing ink onto paper for centuries. Gutenberg's idea was a system, and every piece of it had to work. First he needed type: a separate metal letter for each character, thousands of them, every one exactly the same height so the ink would land evenly. He built a hand mold that could cast a fresh letter in seconds, and he mixed a metal alloy that melted easily but hardened tough. Then he needed ink. Water-based ink beaded up and slid off metal, so he made a sticky, oil-based ink that clung to it. Then he needed pressure, so he rebuilt a press of the kind farmers used to squeeze grapes and olives. Now a worker could set a page, letter by letter, in a tray. Ink it. Press it. Lift out a clean page, then do it again, and again. When the job was done, the letters came apart and went back in the case, ready for a different book tomorrow. That last part is the whole trick. The letters are reusable. Before Gutenberg, a book was a one-time act of labor: one person, one pen, one copy, one year of their life. After Gutenberg, a book was a setup cost, and the copies after that were nearly free. Gutenberg printed about 180 Bibles and then lost his workshop to his investor in a lawsuit. Within fifty years, printing shops had opened in more than 200 European towns and had turned out millions of books. The most expensive thing a family could own had become ordinary."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says Gutenberg's idea was a system, not simply printing. What does that mean?",
+            "Why did Gutenberg have to invent a new kind of ink?",
+            "Explain why reusable letters mattered more than the press itself.",
+            "Gutenberg made the thing that changed the world and still lost his workshop. What does that tell you about inventing?"
+          ],
+          "rows": 2,
+          "answers": [
+            "printing already existed; he had to solve type, ink, and pressure together so the whole process worked",
+            "(water-based ink beaded up and slid off metal, so he made an oil-based ink that clung to it)",
+            "(the press only saves time if the type can be taken apart and reset for the next book, so one setup serves forever)",
+            "(opinion: inventing something and profiting from it are different problems)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Gutenberg combined several inventions into one system that made copying a book cheap",
+            "Gutenberg was the first person in the world to press ink onto paper",
+            "Farmers in Germany used presses to squeeze grapes and olives"
+          ],
+          "answers": ["Gutenberg combined several inventions into one system that made copying a book cheap"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["type → ____", "alloy → ____", "setup cost → ____"],
+          "rows": 1,
+          "answers": [
+            "the separate metal letters a printer sets into a page",
+            "a mix of metals made to behave better than any one of them alone",
+            "a cost you pay once at the start, no matter how many copies follow"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: pick the one part of Gutenberg's system you think was hardest to get right, and give two reasons why.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Book That Took 5,000 Years to Make",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-books", "templateLabel": "The Book That Took 5,000 Years to Make", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "books",
+          "notes": ["The Latin word for a roll was volumen", "That is why a book is called a volume", "Codex comes from a Latin word for a block of wood", "A scroll could only be written on one side", "The codex had won by about 1,600 years ago", "Every book you have held is a codex"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Shape That Won",
+          "text": "For most of writing's history, a book was not shaped like a book. It was a roll. Egyptian scribes wrote on papyrus, a paper-like sheet pounded together from strips of a river reed, and they glued the sheets end to end into a long strip wound around a wooden rod. To read it you unrolled with one hand and rolled up with the other, and when you finished you had to rewind the whole thing for the next reader. The Latin word for such a roll was volumen, which is why a book on your shelf is still called a volume. The roll had real problems. You could only write on one side, because the back was rolled up against the front. You could not skip ahead: finding a passage in the middle meant winding through everything before it. And a roll could only get so long before it became unmanageable, so a long work had to be split across many of them. Somewhere in the Roman world, people began folding sheets, stacking the folded pairs, and stitching them along one edge between two protective boards. They called it a codex, from a Latin word for a block of wood. Almost everything about it was better. You could write on both sides, which halved the material. You could open it flat at any point, so a reader could jump straight to a passage, compare two places, or check a reference. It survived being carried around. Early Christians took up the codex early and enthusiastically, and by about 1,600 years ago the roll had lost. Every book you have ever held is a codex. What is worth noticing is that no new science was required. Nobody invented a material or discovered a chemical. Someone simply folded the page instead of rolling it, and that one change altered what reading could be. A scroll makes you move through a text in order, at the author's pace. A codex hands you the whole thing at once and lets you choose. Page numbers, tables of contents, indexes, chapters, footnotes and bookmarks all become possible only once the pages sit still and can be counted. The scroll is a river. The codex is a map."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "List three problems the passage says the roll had.",
+            "Why does the passage make a point of saying no new science was required? Quote the sentence that follows that claim.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last two sentences. Why does the author end on them instead of on a fact?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the scroll's limits, the codex's advantages, and why the shape mattered)",
+            "one side only, no skipping ahead, and a limit on length so long works were split up",
+            "(to show the breakthrough was an idea, not a technology; quote: Nobody invented a material or discovered a chemical)",
+            "(inform, with detail: it defines volumen and codex and gives dates; the closing lines lean toward persuading)",
+            "(a scroll forces one path, a codex lets you choose your own; the image lands the argument better than a date would)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["papyrus → ____", "codex → ____", "unmanageable → ____", "index → ____"],
+          "rows": 1,
+          "answers": [
+            "a writing sheet pounded together from strips of a river reed",
+            "folded sheets stitched along one edge between two boards, the shape of a modern book",
+            "too big or awkward to handle",
+            "a list that tells you which page a subject is on"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the codex made page numbers and indexes possible. Explain why a scroll cannot really have either.",
+            "Name one thing a scroll does better than a codex, and say who might still want it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: pages must sit still and be countable; a roll is one continuous surface with no fixed stopping points)",
+            "(opinion: a scroll shows a long continuous line of text, useful for timelines or ceremonial reading)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: reading on a screen is closer to a scroll than to a codex. Take a position on whether that is a loss, and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Book That Took 5,000 Years to Make",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-books", "templateLabel": "The Book That Took 5,000 Years to Make", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "books",
+          "notes": ["Woodblock printing in China by the 600s", "Bi Sheng cut movable clay type around 1040", "Shen Kuo wrote Bi Sheng down, or he would be lost", "Korea's Jikji was printed with metal type in 1377", "Gutenberg's alloy: lead, tin and antimony", "An alphabet needs two dozen letters, not thousands"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Press Took Off in Mainz",
+          "text": "Every textbook credits Johannes Gutenberg with inventing printing around 1450. Every textbook is wrong, and the way it is wrong is more interesting than the myth. Printing is old. Chinese craftsmen were carving full pages into woodblocks by the 600s, and the oldest printed book anyone can still read, the Diamond Sutra, carries a line stating it was made in 868, nearly six hundred years before Gutenberg was born. Movable type is old too. Around 1040, a Chinese artisan named Bi Sheng cut individual characters into clay and baked them hard, so a page could be assembled from loose pieces and then taken apart. We know about him only because a scholar, Shen Kuo, bothered to write it down. Korean printers went further and cast their type in metal; a Buddhist text called the Jikji was printed with metal type in 1377, a lifetime before Mainz. So why did the explosion happen in Germany? Part of the answer is writing itself. A printer setting Chinese or Korean text had to cut, sort, store and then find thousands of distinct characters, and a compositor could spend longer hunting for a character than a scribe would spend writing it. A printer setting German needed about two dozen letters in a handful of forms. The alphabet, an accident of history that nobody chose for this purpose, happened to suit a machine that shuffles small identical parts. The rest of the answer is that Gutenberg did not invent one thing. He assembled a system, and every part of it had to be solved. He designed a hand mold that cast type by the thousand, each piece identical in height so a page would ink evenly. He worked out an alloy of lead, tin and antimony that melted at a workable temperature, filled the mold cleanly, and stood up to being squeezed. He formulated an oil-based ink that gripped metal, because the water-based inks scribes had always used simply beaded and ran off it. He adapted the screw press already familiar from squeezing grapes and olives. Any one of these alone prints nothing. Together they print a page in the time a scribe takes to sharpen a quill. The consequences arrived faster than anyone was ready for. Before the press, a European book was a year of a human life, written on parchment that cost a herd of animals. Owning a hundred books made you a library. Within fifty years of Gutenberg's Bible, presses were running in more than two hundred towns and had turned out millions of volumes. Prices collapsed. Latin gave way to the languages people actually spoke at home. Ideas that would once have died quietly in one monastery could now cross a continent in a season, which is why historians link the press to the Reformation, to the scientific revolution, and to the first serious attempts by governments to control what people were allowed to read. Be careful with that link, though. The press did not cause those upheavals by itself, and plenty of societies printed for centuries without them. What the press changed was the cost of copying, and when copying gets cheap, whatever is already stirring in a society spreads. Print is an amplifier, not an author. That is worth remembering, because the internet did the same trick again six hundred years later, and we are still arguing about the volume."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage says every textbook is wrong. Explain precisely what the textbooks get wrong, and cite the evidence the author gives.",
+            "Explain the writing-system argument for why the press took off in Germany. Is it a claim about Gutenberg's talent? Explain.",
+            "Identify the shift in the passage: where does it turn from history to argument, and how does the author signal it?",
+            "The passage ends by saying print is an amplifier, not an author. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(printing and movable type both long predate him; cite: the Diamond Sutra, carries a line stating it was made in 868, and the Jikji was printed with metal type in 1377)",
+            "(an alphabet of two dozen letters suits movable type far better than thousands of characters; no, it is about the writing system, an accident of history that nobody chose for this purpose)",
+            "(at Be careful with that link, though; a direct address to the reader pivots from what happened to how to interpret it)",
+            "(it reframes the press as a multiplier of forces already present rather than a cause; partly earned by the plenty of societies printed for centuries without them line, though the passage gives no detail on those societies)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["movable type → ____", "compositor → ____", "alloy → ____", "amplifier → ____"],
+          "rows": 2,
+          "answers": [
+            "separate reusable pieces of type that are assembled into a page and then taken apart",
+            "the worker who sets the individual letters into a page",
+            "a blend of metals mixed to get properties none of them has alone",
+            "something that makes an existing signal stronger without creating it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says we know about Bi Sheng only because Shen Kuo wrote it down. Explain what that suggests about the history we have.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the record is not the past itself; inventions survive in history only if someone recorded them, so the story is biased toward whoever wrote)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: the printing press did not spread new ideas, it only made old arguments louder. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

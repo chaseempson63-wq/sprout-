@@ -1,0 +1,320 @@
+{
+  "key": "moth",
+  "title": "The Moth That Flies by the Moon",
+  "blurb": "The fuzzy night flier that smells with feathers, jams bat sonar, and cannot stop circling your porch light.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Moth That Flies by the Moon",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-moth", "templateLabel": "The Moth That Flies by the Moon", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the moth's soft wings." },
+        {
+          "kind": "image",
+          "imageKey": "moth",
+          "notes": ["It flies at night", "Its body is soft and fuzzy", "It sleeps all day", "It sips sweet nectar from flowers"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a moth. The moth flies at night. It has soft wings. It has fuzzy legs. All day long the moth rests. It sleeps on a tree. When the sun goes down, the moth wakes up. It flies to a white flower. It drinks the sweet nectar. Then it flies to the porch light. It goes around and around and around. In the morning the moth goes back to the tree. It closes its wings and sleeps."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the moths in each row. Write how many in the box.",
+          "emoji": "🦋",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "moth    night" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "moth", "right": "night" },
+            { "left": "bee", "right": "day" },
+            { "left": "fish", "right": "water" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a moth flying around a light. Add a moon in the sky.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Moth That Flies by the Moon",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-moth", "templateLabel": "The Moth That Flies by the Moon", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "moth",
+          "notes": ["A moth flies at night", "A butterfly flies in the day", "Moth feelers look like tiny feathers", "The fuzz keeps the moth warm", "A moth can smell a flower far away"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How to Tell a Moth From a Butterfly",
+          "text": "A butterfly flies when the sun is up. A moth flies when the sun goes down. That is one way to tell them apart. Here is another way. Look at the feelers on top of the head. A butterfly has two thin feelers with a little knob on the end. A moth has feelers shaped like tiny feathers or combs. A moth uses those feathery feelers to smell the night air. It can smell a flower long before it can see one. A moth is soft and fuzzy, as if it is wearing a coat. The fuzz keeps the moth warm, because at night there is no sun to warm it up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["When does a moth fly?", "What shape are a moth's feelers?", "What does the fuzz on a moth do?"],
+          "rows": 2,
+          "answers": ["at night, when the sun goes down", "like tiny feathers or combs", "it keeps the moth warm"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A moth flies at ____.", "A moth's feelers look like ____.", "A moth uses its feelers to ____.", "The soft ____ keeps the moth warm."],
+          "wordBank": ["night", "feathers", "smell", "fuzz"],
+          "answers": ["night", "feathers", "smell", "fuzz"]
+        },
+        { "kind": "draw", "prompt": "Draw a moth and a butterfly side by side. Give each one the right kind of feelers.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Moth That Flies by the Moon",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-moth", "templateLabel": "The Moth That Flies by the Moon", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "moth",
+          "notes": ["A moth caterpillar spins a silk cocoon", "A luna moth is pale green with long tails", "An adult luna moth has no working mouth", "It lives about one week", "There are far more moth kinds than butterfly kinds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Moth With No Mouth",
+          "text": "Every moth starts as an egg smaller than a grain of sand. Out of the egg crawls a caterpillar, and a caterpillar has one job: eat. It chews leaves for weeks. It grows so fast that it splits its own skin and climbs out of it, sometimes four or five times. When it has eaten enough, it spins a cocoon out of silk that comes from its mouth. Inside that cocoon, the caterpillar takes its own body apart and builds a new one. Later, a moth pushes its way out. Its wings come out wet and crumpled. The moth pumps them full of fluid until they stretch flat and dry, and then it can fly. Some moths never eat again. The luna moth is a big pale green moth that lives in North America. When it comes out of its cocoon, it has no working mouth at all. It cannot feed. It lives about one week on the fat it stored back when it was a caterpillar. In that one week it has to find a mate and lay its eggs. That is the whole plan. All the eating happened first. All the flying happens now."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a caterpillar's one job?",
+            "Where does the silk for the cocoon come from?",
+            "Why can the luna moth not eat?",
+            "Why do you think the luna moth is in such a hurry to find a mate?"
+          ],
+          "rows": 2,
+          "answers": [
+            "to eat leaves and grow",
+            "from the caterpillar's mouth",
+            "it comes out of its cocoon with no working mouth",
+            "(inference: it only lives about a week, so there is no time to waste)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Moth With No Mouth", "How to Catch a Butterfly", "The Tallest Tree in North America"],
+          "answers": ["The Moth With No Mouth"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A caterpillar spins a ____ out of silk.", "New wings come out wet and ____.", "The luna moth lives on stored ____."],
+          "wordBank": ["cocoon", "crumpled", "fat"],
+          "answers": ["cocoon", "crumpled", "fat"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of the moth's life would you rather have, the eating part or the flying part, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Moth That Flies by the Moon",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-moth", "templateLabel": "The Moth That Flies by the Moon", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moth",
+          "notes": ["Feathery antennae are chemical detectors", "A pheromone is a scent signal", "Many moths have ears that hear bat calls", "Tiger moths click back at hunting bats", "A luna moth's long tails confuse bat sonar", "Moths are night pollinators"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Nose Like a Feather, and Ears for Bats",
+          "text": "Look closely at a male silk moth and you will see two enormous feathery antennae fanning out from its head. They are not decoration and they are not for hearing. They are a nose, and it is one of the finest noses on Earth. A female silk moth releases a scent signal called a pheromone into the night air. The male's antennae are branched into thousands of tiny hairs, and each hair is dotted with pores. Air flows through the antenna like wind through a net, and the pores catch the drifting scent molecules. A male can pick up a female's signal from hundreds of yards away, in the dark, with no map. He simply turns toward wherever the scent is strongest and keeps flying. Scientists worked out the exact chemical for the silk moth in 1959, after grinding up half a million females to collect enough of it to study. The night is not a safe place, though. Bats hunt by shouting and listening for echoes, and moths are on the menu. So moths grew defenses. Many species have simple ears, sometimes on the chest, sometimes on the belly, tuned to the exact pitch of a hunting bat. When a moth hears the call, it folds its wings and drops out of the sky. Tiger moths go further. They answer the bat with rapid ultrasonic clicks of their own, which scramble the bat's echoes and make the moth hard to place. The luna moth uses a different trick entirely. Its two long trailing tails spin as it flies and throw back a false echo, so the bat strikes the tail and the moth flutters away with a torn ribbon and a whole body."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is a pheromone, in your own words?",
+            "Explain how the shape of a male moth's antenna helps it do its job.",
+            "The passage says a male moth flies with no map. What does he use instead?",
+            "The luna moth loses part of its tail to a bat and the author still calls this a trick that works. Why?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(a scent signal an animal releases to send a message to another of its kind)",
+            "it is branched into thousands of hairs with pores, so air flows through and the pores catch scent molecules",
+            "he turns toward wherever the scent is strongest and keeps flying",
+            "(inference: a torn tail is survivable, being eaten is not)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Moths survive the night with extraordinary senses and defenses against bats",
+            "Bats are the only animals that hunt in the dark",
+            "Silk moths were the first insects ever discovered"
+          ],
+          "answers": ["Moths survive the night with extraordinary senses and defenses against bats"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["antennae → ____", "pheromone → ____", "ultrasonic → ____", "echoes → ____"],
+          "rows": 1,
+          "answers": [
+            "the feelers on an insect's head, used here for smelling",
+            "a scent signal released to communicate",
+            "a sound too high for people to hear",
+            "sounds that bounce off something and come back"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: moths and bats have been in an arms race for millions of years, each one getting better at beating the other. Explain how that race works, using two examples from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Moth That Flies by the Moon",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-moth", "templateLabel": "The Moth That Flies by the Moon", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moth",
+          "notes": ["Roughly 160,000 known moth species", "Old idea: moths steer by a fixed angle to the moon", "2024 cameras showed something different", "Insects tilt their backs toward the brightest light", "The sky is normally the brightest thing above", "Artificial light traps moths in orbits"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Moth Cannot Leave the Light",
+          "text": "Everyone has watched it happen. A moth arrives at a porch light and then cannot leave. It circles, climbs, stalls, drops, and circles again, for hours, until it is exhausted. For a hundred years the standard explanation was elegant and confident. Moths, the story went, navigate by the moon. Because the moon is impossibly far away, its light arrives in parallel lines, so a moth can hold a steady course simply by keeping the moon at a fixed angle to its body. This is called transverse orientation. A light bulb ruins the arithmetic. Its light radiates outward in all directions, so a moth holding a constant angle to a nearby bulb is not flying straight at all. It is tracing a spiral that tightens until it arrives at the glass. The explanation appeared in textbooks for decades. It had one weakness. Moths do not actually spiral inward. Watch carefully and you see something messier: orbiting, sudden climbs, stalls, and upside down tumbles. In 2024, a team of researchers finally settled it by filming flying insects around lights with high speed cameras and motion capture, the same technology used to animate films. What they found was almost the opposite of the old story. The insects were not steering toward the light. They were turning their backs to it. Flying animals need to know which way is up, and for hundreds of millions of years the answer has been reliable: up is where the sky glows. So insects evolved a simple rule called the dorsal light response, meaning they tilt their upper side toward the brightest region and let that keep them level. Under an open sky the rule works perfectly. Under a porch light it becomes a trap. The moth banks so its back faces the bulb, which tips it into an endless orbit around it. Fly above the light and the moth flips over. Fly beneath it and the moth stalls and falls. The moth is not drawn to the light. It is being lied to about which way is up, and it cannot argue with the sky. That correction matters beyond curiosity. Moths are major pollinators of night blooming plants, and their numbers are falling across much of the world. Every bright bulb left on all night is a small machine for removing them from the dark places where they do their work."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain transverse orientation and why a light bulb breaks it.",
+            "What is the dorsal light response, and why did it evolve? Quote the phrase the passage uses for what up normally means.",
+            "The passage says the old explanation had one weakness. What was it, and why does that weakness matter in science?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: the old moon-angle idea was wrong; moths tilt their backs to the brightest light, which traps them under artificial lights)",
+            "holding a fixed angle to the far away moon keeps a straight course; a nearby bulb radiates outward, so the same angle traces a tightening spiral",
+            "tilting the upper side toward the brightest region to stay level; quote: up is where the sky glows",
+            "(moths do not actually spiral inward, so the observed behavior did not match the prediction; a theory that does not match observation has to go)",
+            "(mostly inform, with a persuasive turn at the end: it defines terms and reports the 2024 study, then argues about leaving bulbs on)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["transverse orientation → ____", "radiates → ____", "dorsal → ____", "pollinators → ____"],
+          "rows": 1,
+          "answers": [
+            "steering by holding a fixed angle to a distant light",
+            "spreads outward in every direction from a source",
+            "relating to the back or upper side of an animal",
+            "animals that move pollen between flowers so plants can make seeds"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the moth is being lied to about which way is up. Explain what that sentence means in plain scientific terms.",
+            "A rule that worked for millions of years now harms the animals that follow it. What changed, and what does that tell you about how evolution works?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(artificial light gives a false cue about which direction is the sky, so its balance rule produces the wrong response)",
+            "(inference: humans added a bright light source that never existed in nature; evolution tunes animals to past conditions, not new ones)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should your town be required to turn off or shield outdoor lights at night? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Moth That Flies by the Moon",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-moth", "templateLabel": "The Moth That Flies by the Moon", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "moth",
+          "notes": ["Biston betularia, the peppered moth", "Pale speckled form: typica", "Soot black form: carbonaria", "First black one recorded in Manchester, 1848", "Around 98 percent black by 1895", "The mutation was traced to a jumping gene in 2016"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Moth That Changed Color in Fifty Years",
+          "text": "The peppered moth is a plain animal with an extraordinary record. For as long as English naturalists had been collecting insects, it came in one pattern: white speckled with fine black flecks, a scatter of pepper on a pale wing. Resting on a lichen crusted tree trunk it more or less disappeared. Collectors called this form typica, and nobody wrote much about it, because there was nothing to write. Then, in 1848, a collector in Manchester recorded a peppered moth that was entirely black. It was a curiosity, a one off, worth a note in a journal. By 1895, roughly 98 percent of the peppered moths in Manchester were black. Something had happened, and it had happened faster than anyone thought living things could change. What happened was coal. Manchester was the furnace of the industrial revolution, and the smoke pouring out of it did two things to the surrounding woods. Soot blackened the bark, and sulfur dioxide killed the pale lichens growing on it. In fifty years the moth's living room had been repainted. On a clean lichened trunk, the speckled typica was invisible and a black moth was an obvious target. On a bare sooty trunk, the arrangement reversed. Birds, hunting by sight, did the rest. They ate whichever moths they could see, and every moth they missed passed its pattern to the next generation. The black form, carbonaria, had gone from a single specimen to a near monopoly in about forty moth generations, not because any moth changed color, but because the birds kept editing the population. Bernard Kettlewell tested this in the 1950s by releasing marked moths in polluted and unpolluted woods and recapturing what survived. His results matched the story, and the peppered moth marched into every biology textbook in the world. Then critics found real problems with his methods: he released moths in daylight, in unnatural numbers, and sometimes pinned them where they would never naturally rest. For a while the most famous example of evolution in action was also one of the most disputed. Science answered the way it should. Michael Majerus spent seven years running the experiment again, more carefully, with moths in natural resting positions and predation watched directly. He died before publishing. His colleagues published the results in 2012, and the results were unambiguous: birds ate the conspicuous moths, and that alone accounted for the change. Then the story got better. In 2016, geneticists located the exact mutation behind carbonaria. It was a transposable element, a stretch of DNA that copies itself and jumps into new positions, which had landed inside a gene called cortex. They estimated it arrived around 1819, which fits a first sighting in 1848 almost perfectly. And there is a final chapter that most textbooks skip. Britain passed clean air laws in the 1950s and 1960s. The soot thinned, the lichens crept back, the trunks turned pale again, and the black moths began to vanish. Today carbonaria is rare once more. The experiment ran forward and then ran backward, and the moth followed the trunks both times, without ever knowing it was the evidence."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the author insists that no moth changed color. Cite the evidence.",
+            "How did coal smoke change the woods, and why did that reverse which moths survived?",
+            "The passage says the most famous example of evolution was also one of the most disputed. Explain what went wrong with Kettlewell's work and how the dispute was resolved.",
+            "Analyze the last sentence. What is the author claiming, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(individuals never changed; birds removed the visible ones and survivors passed on their pattern; cite: not because any moth changed color, but because the birds kept editing the population)",
+            "(soot blackened bark and sulfur dioxide killed the pale lichens, so the pale form became conspicuous and the black form hid)",
+            "(he released moths in daylight, in unnatural numbers, and pinned them in unnatural positions; Majerus repeated it properly and the 2012 results confirmed bird predation)",
+            "(the moth was evidence of natural selection without any awareness of it; supported by the forward and backward runs of the change)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["conspicuous → ____", "transposable element → ____", "monopoly → ____", "predation → ____"],
+          "rows": 2,
+          "answers": [
+            "easy to see, standing out from the background",
+            "a stretch of DNA that copies itself and jumps into new positions in the genome",
+            "near total control or share of something, here nearly all the population",
+            "the hunting and eating of one animal by another"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The 2016 team dated the mutation to around 1819 and the first black moth was seen in 1848. Explain why that gap supports rather than weakens their conclusion.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a new mutation starts in one moth and stays rare for years; it needs time to spread far enough for a collector to stumble on one)",
+            "(student question + a credible source type, such as a peer reviewed genetics paper or a long term field survey)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The peppered moth proves that natural selection is a fact, not a theory. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

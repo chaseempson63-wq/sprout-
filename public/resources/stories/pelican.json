@@ -1,0 +1,315 @@
+{
+  "key": "pelican",
+  "title": "The Bird With a Net Under Its Chin",
+  "blurb": "The pelican folds a fishing net into its own face, then falls out of the sky to use it.",
+  "topic": "birds-bugs",
+  "bands": {
+    "1": {
+      "title": "The Bird With a Net Under Its Chin",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pelican", "templateLabel": "The Bird With a Net Under Its Chin", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the pelican's big bill." },
+        {
+          "kind": "image",
+          "imageKey": "pelican",
+          "notes": ["It has a bag under its bill", "The bag is called a pouch", "It scoops up fish", "It has very big wings", "It floats like a boat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pelican. It is a big bird. The pelican has a long bill. Under the bill is a soft pouch. The pouch is like a scoop. The pelican dips its bill in the water. It scoops up a fish. Then it tips the water out. Gulp. The fish is gone. The pelican flaps its big wings and flies away over the sea."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fish in each row. Write how many in the box.",
+          "emoji": "🐟",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bill    fish" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to where it finds food.",
+          "pairs": [
+            { "left": "pelican", "right": "the sea" },
+            { "left": "cow", "right": "the grass" },
+            { "left": "bee", "right": "the flowers" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a pelican. Put one fish in its pouch.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bird With a Net Under Its Chin",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pelican", "templateLabel": "The Bird With a Net Under Its Chin", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pelican",
+          "notes": ["The pouch is stretchy skin", "It holds more water than a bucket", "The pouch is a net, not a lunch bag", "Some pelicans dive from high up", "Others fish together in a line"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird With a Net Under Its Chin",
+          "text": "A pelican carries its fishing net with it. The net is a pouch of stretchy skin that hangs under its long bill. When the pelican wants a fish, it opens its bill under the water. The pouch swells out like a balloon full of water and fish. That is far too heavy to fly with, so the pelican squeezes the water out of the sides of its bill. Sometimes a gull lands on its head and tries to steal the fish while it waits. Then the pelican tips its bill up and swallows. The pouch flattens back under its chin, folded away until the next fish swims by."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does the pelican keep its pouch?", "What does the pelican do with the water in its pouch?", "Which bird tries to steal the pelican's fish?"],
+          "rows": 2,
+          "answers": ["under its long bill", "it squeezes the water out of the sides of its bill", "a gull"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The pelican's pouch is made of stretchy ____.", "The pouch works like a fishing ____.", "The pelican squeezes out the ____.", "Then it tips its bill up and ____."],
+          "wordBank": ["skin", "net", "water", "swallows"],
+          "answers": ["skin", "net", "water", "swallows"]
+        },
+        { "kind": "draw", "prompt": "Draw a pelican on the water. Show its pouch full and puffed out.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bird With a Net Under Its Chin",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pelican", "templateLabel": "The Bird With a Net Under Its Chin", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pelican",
+          "notes": ["There are 8 kinds of pelican", "A great white pelican's pouch holds about 3 gallons", "Brown pelicans dive from up to 60 feet", "White pelicans herd fish instead of diving", "The Australian pelican has the longest bill of any bird"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Ways to Catch a Fish",
+          "text": "There are eight kinds of pelican in the world, and they do not all fish the same way. The brown pelican hunts from the air. It flies above the sea, spots a fish below, then folds its wings and falls. It hits the water hard enough to stun the fish underneath it, and the shock would knock the breath out of most birds. The pelican is fine, because it has pockets of air under the skin of its chest that soften the landing and pop it straight back up to the surface like a cork. The American white pelican never dives at all. It works in a team. A line of white pelicans swims side by side, beating the water with their wings and driving the fish ahead of them into the shallows. When the fish have nowhere left to go, every pelican dips its bill at once. Two birds, two plans, one thing in common. Both of them scoop, and both of them tip the water out before they swallow."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How does a brown pelican catch its food?",
+            "What keeps the brown pelican safe when it hits the water?",
+            "How do American white pelicans work as a team?",
+            "Why do you think white pelicans need other pelicans to help them fish?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it dives from the air and stuns the fish",
+            "pockets of air under the skin of its chest",
+            "they swim in a line and drive the fish into the shallows",
+            "(inference: one bird alone cannot block the fish in, so the fish would just swim away)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Two Ways to Catch a Fish", "How to Build a Bird House", "The Deepest Part of the Ocean"],
+          "answers": ["Two Ways to Catch a Fish"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The brown pelican folds its wings and ____.", "Air pockets pop it back up like a ____.", "White pelicans drive fish into the ____."],
+          "wordBank": ["falls", "cork", "shallows"],
+          "answers": ["falls", "cork", "shallows"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which way of fishing would you rather try, diving or herding, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bird With a Net Under Its Chin",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pelican", "templateLabel": "The Bird With a Net Under Its Chin", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pelican",
+          "notes": ["The pouch is called the gular pouch", "It is a net, not a lunch box", "A brown pelican twists left as it dives", "Its windpipe runs down the right side of its neck", "Dalmatian pelicans have wings nearly 11 feet across", "Chicks feed by reaching inside the parent's bill"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dive That Should Break a Bird",
+          "text": "People think a pelican stores fish in its pouch, the way you would carry lunch in a bag. It does not. The pouch, which scientists call the gular pouch, is a net. It has one job, and the job lasts about two seconds. A brown pelican fishes by falling. It cruises thirty or sixty feet above the water, watching for a shape below the surface, then tucks its wings back and drops. It can be moving forty miles an hour when it arrives. The pouch snaps open on impact and swells with as much as three gallons of seawater, along with whatever fish were unlucky enough to be inside it. Water is heavy. That mouthful weighs more than the rest of the bird. The pelican cannot fly with it and does not try. It sits on the surface with its bill tilted down and lets the water stream out of the edges, keeping the fish pinned inside. Only then does it lift its bill and swallow. The whole business should injure the bird, and for most birds it would. Pelicans have two defenses. The first is a layer of air sacs beneath the skin of the chest and neck, which cushions the blow and floats the bird back to the surface. The second is stranger. A brown pelican rotates its body to the left in the last moment of the dive. Scientists think this is protection: its windpipe and food pipe run down the right side of its neck, and the twist turns them away from the smash."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says the pouch is a net, not a bag. Explain what that means.",
+            "Why can a pelican not simply fly away with a pouch full of water and fish?",
+            "Describe the two things that protect a pelican's body when it hits the water.",
+            "Why do you think a bird would evolve such a violent way of fishing instead of a gentler one?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it catches fish for a couple of seconds and drains straight away; it does not store food",
+            "the water is heavier than the rest of the bird",
+            "air sacs under the skin cushion the impact; it twists left to protect its windpipe and food pipe",
+            "(inference: falling from height lets it reach fish that would flee from a bird on the surface)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A pelican's pouch is a short-lived fishing net, and its body is built to survive the dive that fills it",
+            "Pelicans keep several days of fish inside their bills",
+            "Brown pelicans are the largest birds on Earth"
+          ],
+          "answers": ["A pelican's pouch is a short-lived fishing net, and its body is built to survive the dive that fills it"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["gular pouch → ____", "impact → ____", "rotates → ____"],
+          "rows": 1,
+          "answers": ["the stretchy skin net under a pelican's bill", "the moment of hitting something", "turns or twists around"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the pelican's dive to someone who has never seen one. Use at least three details from the passage and put them in the order they happen.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bird With a Net Under Its Chin",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pelican", "templateLabel": "The Bird With a Net Under Its Chin", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pelican",
+          "notes": ["Family Pelecanidae, 8 living species", "The gular pouch drains before the bird swallows", "Gular fluttering cools the bird in hot weather", "DDT thinned brown pelican eggshells in the 1950s and 60s", "The US banned DDT in 1972", "Brown pelicans left the endangered list in 2009"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bird That Came Back",
+          "text": "The pelican is an old design that still works. Eight species survive today, on every continent except Antarctica, and all of them share the same equipment: a hooked bill, a body built to float, and the gular pouch, a sling of bare skin stretched between the two halves of the lower bill. The pouch is not a pantry. It is a net that fills, drains, and empties within seconds. It has a second use in hot weather, when the bird ripples the bare skin to move air across it and shed heat, a trick called gular fluttering. A pelican cannot sweat, so it fans its own throat instead. What almost ended the brown pelican was not a predator or a storm. It was a chemical. From the 1940s onward, farmers across the United States sprayed DDT to kill insects. Rain carried it into rivers, rivers carried it to the coast, and it worked its way up the food chain until it reached the animals eating the fish. In pelicans it interfered with the way the body lays down calcium, and the eggshells came out thin. A parent pelican incubates its eggs by standing on them, warming them with its broad webbed feet. Shells that had been strong enough for millions of years now cracked under the weight of the bird trying to hatch them. Whole colonies raised nothing. On Anacapa Island off California, a survey in 1970 found hundreds of nests and almost no surviving chicks. The United States banned DDT in 1972. Nothing was rebuilt, no chick was rescued, no habitat was replanted. The poison simply stopped arriving, and the shells slowly thickened again. It took decades. In 2009 the brown pelican was removed from the endangered species list, and today they queue along fishing piers as though they had never left. The lesson is unglamorous and worth remembering. The most powerful thing people did for the pelican was to stop doing something."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how DDT reached pelicans, even though nobody sprayed it on them.",
+            "Why did thin eggshells matter so much for this particular bird? Quote the sentence that explains it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why do you think the author saved it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the pouch as a net plus the DDT crash and recovery)",
+            "it washed into rivers and out to the coast, built up in the fish, and reached the birds that ate them",
+            "the parent stands on the eggs to warm them, so thin shells broke under it; quote: Shells that had been strong enough for millions of years now cracked under the weight of the bird trying to hatch them",
+            "(mostly inform, with a persuasive close: it defines gular fluttering and gives dates and numbers, then argues a lesson at the end)",
+            "(stopping the harm was enough for the bird to recover on its own; the author ends there so the argument lands last)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["gular fluttering → ____", "incubates → ____", "colonies → ____", "unglamorous → ____"],
+          "rows": 1,
+          "answers": [
+            "rippling the bare throat skin to move air and lose heat",
+            "keeps eggs warm until they hatch",
+            "large groups of birds nesting together",
+            "not exciting or impressive to look at"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the pelican is an old design that still works. What does that phrase suggest about evolution?",
+            "Why might a poison be most dangerous to the animals at the top of a food chain rather than the ones at the bottom?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(a body plan that keeps working is kept; evolution does not replace what already succeeds)",
+            "(inference: it builds up as it passes from prey to predator, so the top animal receives the most)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is stopping harm enough to protect wildlife, or do people also have to actively repair what they broke? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bird With a Net Under Its Chin",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pelican", "templateLabel": "The Bird With a Net Under Its Chin", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pelican",
+          "notes": ["Family Pelecanidae, 8 living species", "A 30 million year old fossil bill matches the modern one", "Dalmatian pelican: wingspan close to 11 feet", "Brown pelicans twist left to shield the windpipe", "Subcutaneous air sacs cushion the plunge", "DDT ban 1972; delisted 2009"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Thirty Million Years of Not Changing",
+          "text": "In 2010, researchers described a fossil pelican pulled from thirty million year old deposits in southern France. The interesting thing about it was how boring it was. The bill was long, hooked at the tip, and clearly built to carry a pouch. Set beside the skull of a pelican fishing off a California pier this morning, it is close to indistinguishable. Thirty million years is an enormous span of time. Whole families of mammals have appeared, spread, and vanished inside it. The pelican simply kept its face. That tells you something about the design, so it is worth asking what the design actually does. The gular pouch is a sling of bare skin slung between the flexible arms of the lower bill. It is not a container for carrying food, whatever the old rhyme suggests. It is a net, and it works on a timer of roughly two seconds. A brown pelican locates a fish from as high as sixty feet, folds back its wings, and falls. It can strike the surface at speeds near forty miles an hour. On impact the bill gapes, the bill arms bow outward, and the pouch balloons to hold something like three gallons of seawater. Three gallons weighs more than the bird does. Flight is impossible in that state and the pelican does not attempt it. It surfaces, angles the bill downward, and lets the sea drain out through the gap along the edges while the fish stay trapped behind them. Gulls have learned this. They land on the pelican's head and try to rob the pouch during the few seconds it takes to drain. Then the bill tips skyward, the throat works once, and the net folds flat again. Surviving that dive is its own engineering problem. A bird is a fragile object and forty miles an hour into water is a serious collision. Pelicans carry a network of air sacs beneath the skin of the chest and throat, which spreads the force of impact and buoys the bird back to the surface almost immediately. Stranger still, a brown pelican rotates its body to the left in the final instant before it hits. The trachea and esophagus run down the right side of a pelican's neck, and the leading explanation is that the twist swings those soft tubes away from the blow. Nobody designed that. Birds that flinched the wrong way left fewer chicks. And yet this ancient, well solved animal was nearly finished off inside a single human lifetime. DDT, sprayed on American farmland from the 1940s, accumulated up the food chain and disrupted calcium deposition in pelicans. Their eggshells thinned. Since a pelican incubates by standing on its clutch and warming it with webbed feet, the parent broke its own eggs. Colonies produced almost nothing. The United States banned DDT in 1972, the poison stopped arriving, the shells recovered, and in 2009 the brown pelican was taken off the endangered species list. Thirty million years of engineering nearly undone by one chemical, and repaired not by cleverness but by restraint."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says the fossil is interesting because it is boring. Explain that claim and cite the evidence for it.",
+            "Explain why the pouch is described as a net rather than a container. Use two details from the text.",
+            "Identify where the passage turns, and explain how the author signals the shift.",
+            "Analyze the final phrase, repaired not by cleverness but by restraint. What argument is the author making, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the bill has barely changed in thirty million years, which shows how well it works; cite: it is close to indistinguishable)",
+            "(it fills and drains in about two seconds and the water is tipped out before swallowing; the bird cannot fly while it is full)",
+            "(at And yet this ancient, well solved animal was nearly finished off inside a single human lifetime; the phrase And yet flips the passage from admiration to threat)",
+            "(the recovery came from people stopping a harm rather than fixing anything; supported by the DDT ban followed by shells recovering on their own)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["indistinguishable → ____", "buoys → ____", "accumulated → ____", "restraint → ____"],
+          "rows": 2,
+          "answers": [
+            "so alike that you cannot tell them apart",
+            "lifts and holds something up in water",
+            "built up in amount over time",
+            "holding back from doing something"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that nobody designed that, and that birds which flinched the wrong way left fewer chicks. Explain how those two sentences work together.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the twist looks planned but is the result of natural selection acting over generations)",
+            "(student question plus a credible source type such as a peer reviewed study or a wildlife biologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The pelican's recovery proves that the best conservation policy is simply to leave nature alone. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "key": "goldfish",
+  "title": "The Goldfish That Never Forgets",
+  "blurb": "Everyone says it forgets in three seconds. It remembers for months, it started out gray, and it can survive a frozen pond by turning its own waste into alcohol.",
+  "topic": "ocean",
+  "bands": {
+    "1": {
+      "title": "The Goldfish That Never Forgets",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-goldfish", "templateLabel": "The Goldfish That Never Forgets", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the goldfish tail." },
+        {
+          "kind": "image",
+          "imageKey": "goldfish",
+          "notes": ["It has no eyelids", "It never closes its eyes", "It lives in fresh water, not the sea", "Its tail waves like a flag"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a goldfish. It swims in the water all day. Its tail is soft and wide. It waves like a flag. The goldfish has big round eyes. They never close. Not even when it sleeps. The goldfish is looking for food. It sees you come near the glass. It swims over. It knows who feeds it."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fish in each row. Write how many in the box.",
+          "emoji": "🐟",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "fish    gold" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "goldfish", "right": "pond" },
+            { "left": "bird", "right": "nest" },
+            { "left": "bear", "right": "cave" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own goldfish. Give it a long wavy tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Goldfish That Never Forgets",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-goldfish", "templateLabel": "The Goldfish That Never Forgets", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "goldfish",
+          "notes": ["The first goldfish were gray", "People in China kept the orange ones", "It can remember for months", "It hears you before it sees you", "It has no eyelids"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Goldfish That Is Not Really Gold",
+          "text": "People say a goldfish forgets everything in three seconds. That is not true. A goldfish can remember for months. It learns the sound of your feet. It learns where the food comes from. It swims to that spot before you even open the lid. A goldfish is not born gold. Long ago, all of them were gray. People in China found a few orange ones and kept them safe in ponds. Those orange fish had orange babies. After many years, the ponds were full of gold. Every goldfish you see today came from those gray fish."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How long can a goldfish remember?", "What color were the first goldfish?", "Where did people keep the orange fish?"],
+          "rows": 2,
+          "answers": ["for months", "they were gray", "in ponds"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A goldfish can ____ for months.", "The first goldfish were ____.", "People in China kept them safe in ____.", "A goldfish learns the ____ of your feet."],
+          "wordBank": ["remember", "gray", "ponds", "sound"],
+          "answers": ["remember", "gray", "ponds", "sound"]
+        },
+        { "kind": "draw", "prompt": "Draw a pond full of goldfish. Add some plants and a rock.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Goldfish That Never Forgets",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-goldfish", "templateLabel": "The Goldfish That Never Forgets", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "goldfish",
+          "notes": ["The three second memory is a myth", "Goldfish learn levers, mazes, and colors", "Some have been trained to steer a tank on wheels", "They can tell one sound from another", "They can live more than twenty years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Three Second Myth",
+          "text": "You have probably heard that a goldfish has a memory of three seconds. It is one of the most repeated facts in the world, and it is wrong. Scientists have tested it. They taught goldfish to push a small lever to get food. The fish learned it. Then the scientists made the lever work for only one hour each day. Within a week, the goldfish were crowding around the lever at the right hour and ignoring it the rest of the time. That is not a three second memory. That is a fish reading a clock. Other tests have gone further. Goldfish have learned to swim through mazes, to tell one color from another, and to pick out one sound and ignore another. Some have even been trained to drive. Researchers put a goldfish tank on wheels with a camera above it, and the fish learned to steer the tank across a room toward a target. Nobody knows exactly where the three second story started. It has been passed along for so long that most people never think to check it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did the scientists teach the goldfish to push?",
+            "What happened when the lever only worked for one hour a day?",
+            "Name two other things goldfish have learned to do.",
+            "Why do you think so many people still believe the three second story?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a small lever that gave them food",
+            "the fish showed up at the lever at the right hour and ignored it the rest of the time",
+            "swim through mazes, tell colors apart, tell sounds apart, or steer a tank on wheels",
+            "(inference: it gets repeated so often that nobody stops to check it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A Famous Fact That Turned Out to Be Wrong", "How to Build a Fish Tank", "The Biggest Lakes in the World"],
+          "answers": ["A Famous Fact That Turned Out to Be Wrong"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The goldfish learned to push a ____ for food.", "Goldfish have swum through ____ in tests.", "The driving fish steered its tank toward a ____."],
+          "wordBank": ["lever", "mazes", "target"],
+          "answers": ["lever", "mazes", "target"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is one thing people believe that you think might be wrong, and how could you check it?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Goldfish That Never Forgets",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-goldfish", "templateLabel": "The Goldfish That Never Forgets", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "goldfish",
+          "notes": ["A goldfish is a carp, bred by people for about a thousand years", "Its wild ancestor is silver gray", "Selective breeding made the fantail, the oranda, the telescope eye", "In a pond it can pass a foot long", "A healthy goldfish can live twenty years or more", "Bowls hold too little water and too little oxygen"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "From Gray Carp to Gold",
+          "text": "A goldfish is a carp with a thousand years of human decisions behind it. Its ancestor is a plain silver gray carp that still swims in rivers across Asia. Nothing about it looks remarkable. Now and then, though, one of those carp hatched with a mistake in its color and came out orange or yellow instead of gray. In a river, that mistake is close to a death sentence. A bright fish in dull water is easy for a heron to spot. About a thousand years ago, in China, people began lifting those bright fish out of the rivers and moving them into ponds where nothing could eat them. In the pond, the mistake became an advantage. Orange fish were kept and bred. Gray fish were not. Generation after generation, the ponds grew brighter. This is the same process that turned wolves into poodles, and it produced the same kind of variety. Breeders chose for wide flowing tails, for round egg shaped bodies, for eyes that bulge out sideways, and for eyes that point straight up at the sky. A slim comet goldfish and a lumpy oranda are the same species, shaped by different human choices. There is one decision people got badly wrong. The glass bowl. A bowl holds very little water, and its narrow opening lets almost no oxygen in. A healthy goldfish is not a small fish. In a pond it can pass a foot in length and live for twenty years or more. A goldfish in a bowl usually stays small and dies young, and people mistake that for how goldfish simply are. The fish was never built for the bowl. The bowl was built for us, because it is easy to look through."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why was being orange dangerous for a carp in a river?",
+            "Explain how a pond flipped that danger into an advantage.",
+            "The passage compares goldfish breeding to wolves becoming poodles. What is the point of that comparison?",
+            "The author says the bowl was built for us. What does that suggest about how people chose to keep goldfish?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a bright fish is easy for a predator like a heron to see in dull water",
+            "in a pond nothing could eat the bright fish, so people could keep and breed the orange ones",
+            "(both are selective breeding: people choosing which animals reproduce until the whole population changes)",
+            "(inference: the bowl suits the owner's view, not the fish's needs)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The goldfish is a wild carp reshaped by a thousand years of human choices, including one bad choice",
+            "Carp are the fastest fish in Asia",
+            "Herons are the biggest threat to pet fish today"
+          ],
+          "answers": ["The goldfish is a wild carp reshaped by a thousand years of human choices, including one bad choice"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["ancestor → ____", "generation → ____", "variety → ____"],
+          "rows": 1,
+          "answers": ["the animal a later animal came from", "one round of parents and their young", "lots of different forms of the same kind of thing"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if a friend was about to buy a goldfish and a small bowl, what would you tell them, and why? Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Goldfish That Never Forgets",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-goldfish", "templateLabel": "The Goldfish That Never Forgets", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "goldfish",
+          "notes": ["Carassius auratus, a domesticated carp", "Released goldfish can pass fourteen inches and weigh pounds", "They feed by rooting through the bottom mud", "Tracked goldfish in Australia traveled over a hundred miles", "One female can carry tens of thousands of eggs", "They tolerate warm, dirty, low oxygen water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fish You Should Not Set Free",
+          "text": "Every few years the same photograph goes around. Someone stands at the edge of a lake holding a goldfish the size of a dinner plate. It is orange, unmistakable, and far too large. The photograph is not a hoax. It is what happens when a pet goldfish is let go. Inside a bowl or a small tank, a goldfish stays small, and people assume that is its natural size. It is not. Growth in fish is held back by cramped space, by poor water quality, and by chemicals the fish itself releases into water that is not changed often enough. Remove those limits and the animal keeps going. In an open lake, with room and food and years, a goldfish can pass fourteen inches and weigh several pounds. Crews netting lakes in Minnesota have pulled out goldfish by the tens of thousands. In Australia, researchers tagged released goldfish and tracked them traveling more than a hundred miles through a river system. The size is not really the problem. Goldfish feed by rooting through the bottom, sucking up mud and spitting out whatever they do not want. In a garden pond that is harmless. In a lake, thousands of them stir the sediment up into the water until sunlight can no longer reach the plants below. The plants die. The water clouds and turns green with algae. Goldfish also eat the eggs of native fish and the insects those fish depend on, and they tolerate warm, dirty, low oxygen water that would kill their competitors. They inherit the lake by outlasting everyone else in it. They are miserably hard to remove. A single female can carry tens of thousands of eggs, and goldfish will breed with wild carp. Once a population takes hold, the tools left are nets, traps, and in the worst cases poisoning the entire lake and starting over. None of this is the fish's fault. A goldfish in a lake is only doing what a carp does. The mistake belongs to the person standing on the bank, who wanted to do something kind and did not know that the kind thing was a door out of a life the fish could never have left on its own."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Give two reasons a goldfish stays small in a tank. Quote the phrase the passage uses.",
+            "Explain how goldfish damage a lake even when they are not eating anything native. Cite the text.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "The passage says the mistake belongs to the person standing on the bank. Why does the author put the blame there instead of on the fish?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering: released goldfish grow huge, wreck lakes by stirring sediment and eating eggs, and the fault is human)",
+            "cramped space and poor water quality plus the chemicals it releases; quote: chemicals the fish itself releases into water that is not changed often enough",
+            "they root through the bottom and stir the sediment up until sunlight cannot reach the plants, which die; quote: sunlight can no longer reach the plants below",
+            "(both inform and persuade: it gives facts and numbers, then argues in the final paragraph about whose fault it is)",
+            "(the fish is only behaving like a carp; the release was a human choice, so the responsibility is human)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["sediment → ____", "native → ____", "tolerate → ____", "population → ____"],
+          "rows": 1,
+          "answers": ["the mud and grit that settles on the bottom", "belonging to a place naturally, not brought in", "to survive something without being harmed by it", "all the animals of one kind living in a place"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls releasing the fish an act of kindness that went wrong. Explain that contradiction in your own words.",
+            "Why would poisoning a whole lake be a last resort rather than a first choice?"
+          ],
+          "rows": 3,
+          "answers": ["(the person meant to free the fish, but freeing it wrecked a lake and could not be undone)", "(inference: it kills everything else in the lake too, so the cure costs almost as much as the problem)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should pet stores be allowed to sell goldfish with bowls at all? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Goldfish That Never Forgets",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-goldfish", "templateLabel": "The Goldfish That Never Forgets", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "goldfish",
+          "notes": ["Carassius auratus, cousin of the crucian carp", "Survives months in water with no oxygen at all", "Converts lactic acid into ethanol and breathes it out through the gills", "Blood alcohol measured above 50 mg per 100 mL", "The trick came from a whole genome duplication about 8 million years ago", "Stores fuel in an unusually large liver"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fish That Drinks Its Way Through Winter",
+          "text": "Somewhere under the ice of a frozen pond in northern Europe, a fish is quietly drunk, and that is the only reason it is still alive. When a pond freezes over, the lid closes. Ice cuts the water off from the air, and whatever oxygen is still dissolved down there gets used up by everything living in it. Within weeks the pond is anoxic, meaning it holds essentially no oxygen at all. For nearly every vertebrate on Earth, that is fatal in minutes. Brains are expensive to run. Deprived of oxygen, a human brain starts dying in about four minutes. The goldfish, and its wild cousin the crucian carp, can sit in that black airless water for months and swim out in spring. Here is how. Cells normally burn sugar using oxygen, which is efficient and clean. When the oxygen runs out, cells fall back on anaerobic glycolysis, a backup that yields far less energy and leaves lactic acid behind. That is the burn in your legs at the end of a sprint. The backup buys minutes, not months, because the acid piles up and eventually poisons the very tissue producing it. Every animal that runs out of oxygen runs into this same wall. The goldfish walks around the wall. Its muscle carries a second set of enzymes that most fish simply do not have. When oxygen disappears, those enzymes take the same waste product and, rather than stopping at lactic acid, carry the reaction two steps further and convert it into ethanol. Ethanol is alcohol, and an alcohol molecule is small enough to slip out of the blood, cross the gill membrane, and drift away into the pond. The poison leaves the building. The fish keeps going. The chemistry is not free. Producing ethanol wastes fuel, so the fish slows everything it can: it barely moves, its heart rate falls, and its brain drops into a low energy mode. It lives off sugar packed into an unusually large liver. And it really does get drunk on the way. Measurements have put the blood alcohol of an anoxic crucian carp above 50 milligrams per 100 milliliters, which is over the legal driving limit in a good number of countries. Where did that second set of enzymes come from? Roughly eight million years ago, an ancestor of these fish duplicated its entire genome. A duplication like that leaves a spare copy of every gene, and spare copies are free to drift, because the original is still doing the job. One spare wandered into a new function, and a lineage of carp bought itself an entire season that no competitor could survive. That is the whole trick. Not strength, not speed, not intelligence. Just the ability to still be there in March when everything else is gone. This is the animal we use as shorthand for stupidity. The three second memory is a myth, comfortably disproved decades ago. So is the assumption underneath it, that a goldfish is a simple thing. A goldfish in a bowl is not a simple animal in its natural state. It is a survivor of ice age ponds, parked in a glass jar in a warm room, with nothing left to survive."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why lactic acid buys most animals minutes rather than months. Cite the evidence.",
+            "Describe what the goldfish does differently, and explain why getting rid of the ethanol depends on it being a small molecule.",
+            "The author writes that the trick is not strength, not speed, not intelligence. Analyze what that sentence is doing at that point in the passage.",
+            "The passage ends with nothing left to survive. Explain what that phrase is arguing and whether the rest of the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a common pet fish survives oxygen free winters by turning its own waste into alcohol and releasing it, thanks to a duplicated genome)",
+            "the acid accumulates and kills the tissue making it; quote: the acid piles up and eventually poisons the very tissue producing it",
+            "(it converts lactic acid into ethanol; a small molecule can cross the gill membrane and leave into the pond, so the waste is removed instead of stored)",
+            "(it strips away the qualities we admire and reframes survival as persistence, setting up the closing argument that we misjudge the fish)",
+            "(it argues the bowl removes the challenge the animal was built for; earned by the winter evidence, though the reader has to accept the value judgment)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["anoxic → ____", "anaerobic → ____", "enzyme → ____", "lineage → ____"],
+          "rows": 2,
+          "answers": [
+            "holding essentially no oxygen",
+            "working without oxygen",
+            "a protein that speeds up a chemical reaction in a living thing",
+            "a line of descent from one ancestor"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says spare gene copies are free to drift because the original is still doing the job. Explain why that makes genome duplication so useful over long stretches of time.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(the organism keeps working while the duplicate accumulates changes, so evolution can experiment at no immediate cost)", "(student question plus a credible source type, such as a peer reviewed physiology paper)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The three second memory myth is harmless, because it is only a story about a fish. State your position, give two pieces of evidence from this passage or the reading you have done, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}
