@@ -1,0 +1,319 @@
+{
+  "key": "ambulance",
+  "title": "The Hospital That Comes to You",
+  "blurb": "A room with an engine bolted to the front, built so the help arrives before you do.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Hospital That Comes to You",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-ambulance", "templateLabel": "The Hospital That Comes to You", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the flashing lights on the top." },
+        {
+          "kind": "image",
+          "imageKey": "ambulance",
+          "notes": ["It has a bed inside", "The lights flash blue and red", "The siren is very loud", "Cars move over to let it go"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an ambulance. It is a truck with a bed inside. When someone is hurt, the ambulance comes fast. It has bright lights that flash. It has a loud siren that says here I come. Cars move over to let it by. Inside, a helper takes care of the sick person. The ambulance drives them to the hospital."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the flashing lights in each row. Write how many in the box.",
+          "emoji": "🔵",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "help    fast" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "ambulance", "right": "hospital" },
+            { "left": "school bus", "right": "school" },
+            { "left": "boat", "right": "water" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw an ambulance. Give it big flashing lights on top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Hospital That Comes to You",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-ambulance", "templateLabel": "The Hospital That Comes to You", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "ambulance",
+          "notes": ["Inside is a bed on wheels", "The helpers are called paramedics", "It carries air in a tank", "The word on the front is backward", "It comes to you, you do not go to it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hospital That Comes to You",
+          "text": "An ambulance is a little hospital room with wheels. Inside there is a bed, a tank of air, and a box of tools. Two helpers ride along. They are called paramedics. When you call for help, the ambulance comes to you. The lights flash blue and red. The siren wails so cars know to pull over. Look at the front of an ambulance. The word is written backward. That is not a mistake. When a driver sees it in the mirror, it flips around and reads the right way."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is inside an ambulance?", "What are the two helpers called?", "Why is the word on the front written backward?"],
+          "rows": 2,
+          "answers": ["a bed, a tank of air, and a box of tools", "paramedics", "so it reads the right way in a mirror"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["An ambulance is a hospital room with ____.", "The helpers are called ____.", "The siren ____ so cars pull over.", "The word on the front is written ____."],
+          "wordBank": ["wheels", "paramedics", "wails", "backward"],
+          "answers": ["wheels", "paramedics", "wails", "backward"]
+        },
+        { "kind": "draw", "prompt": "Draw an ambulance on the road. Draw the other cars moving over to let it pass.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Hospital That Comes to You",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-ambulance", "templateLabel": "The Hospital That Comes to You", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "ambulance",
+          "notes": ["The name comes from a word meaning to walk", "Armies built hospitals that could pack up and move", "It carries oxygen and a heart machine", "The word on the front is mirror writing", "Paramedics start work before you reach the hospital"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Hospital That Drives",
+          "text": "Most of the time, when you are sick, you go to the doctor. An ambulance flips that around. The hospital comes to you. The name gives away the idea. Ambulance comes from an old Latin word that means to walk. Long ago, armies built hospitals that could pack up and walk along behind the soldiers. The name stuck, even after the walking hospitals grew wheels and engines. An ambulance is really a small room built to move. Inside there is a stretcher that rolls, tanks of oxygen, bandages, and a machine that can shock a stopped heart back into rhythm. Two paramedics ride in the back. They do not just drive you to the help. They are the help. Treatment starts the moment they reach you. Look at the front of an ambulance and you will see the word printed backward. That is on purpose. A driver ahead of it sees the word in the mirror, which flips it, and reads it the right way around."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does the word ambulance originally mean?",
+            "Name three things you would find inside an ambulance.",
+            "The passage says the paramedics are the help. What does that mean?",
+            "Why do you think it matters that treatment starts before you reach the hospital?"
+          ],
+          "rows": 2,
+          "answers": [
+            "to walk",
+            "a rolling stretcher, tanks of oxygen, bandages, a heart machine (any three)",
+            "they treat you themselves instead of only driving you somewhere",
+            "(inference: a hurt person cannot always wait; the first minutes matter most)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A Hospital That Drives", "How to Fix a Car Engine", "The Story of the First Doctor"],
+          "answers": ["A Hospital That Drives"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Ambulance comes from a word meaning to ____.", "An ambulance carries tanks of ____.", "The word on the front is printed ____."],
+          "wordBank": ["walk", "oxygen", "backward"],
+          "answers": ["walk", "oxygen", "backward"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the cleverest thing about an ambulance, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Hospital That Comes to You",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-ambulance", "templateLabel": "The Hospital That Comes to You", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ambulance",
+          "notes": ["The first true ambulances were horse carts", "Invented by a French surgeon, Dominique Jean Larrey", "He called them flying ambulances", "Triage means to pick out or sort", "Worst wounds first, no matter whose side"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Flying Ambulance",
+          "text": "For most of history, being wounded in a battle meant waiting. The fighting had to stop first. Only then would carts roll out to gather up the injured, sometimes a full day later. By then, many of the people who could have been saved were long past saving. A French army surgeon named Dominique Jean Larrey watched this happen and decided it was absurd. In the 1790s he built something new: light, fast carriages set on springs, pulled by horses, staffed by trained crews who carried supplies with them. They did not wait for the battle to end. They drove into it. Larrey called them ambulances volantes, which means flying ambulances. Larrey added a second idea that was, at the time, close to shocking. When the wounded arrived, he treated the most badly hurt first. Not the officers first. Not his own countrymen first. The worst wounds first, no matter which army the man had been fighting for. He called this sorting triage, from a French word meaning to pick out. Nearly every emergency room on Earth still does it his way. Both ideas came from one insight. In an emergency, time is the enemy, and how you spend the first few minutes decides almost everything that follows. The vehicle parked outside a hospital today looks nothing like a horse cart on springs. It is doing exactly what Larrey's cart did."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Before Larrey, what had to happen before the wounded were collected?",
+            "What was new about Larrey's flying ambulance? Give two things.",
+            "Explain triage in your own words.",
+            "Why do you think treating enemy soldiers by the seriousness of their wounds was shocking at the time?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the fighting had to stop first, sometimes for a full day",
+            "it was light and fast on springs, it carried trained crews and supplies, and it went in during the battle",
+            "(sorting the injured so the most badly hurt are treated first)",
+            "(inference: rank and nationality were expected to decide who mattered; Larrey made need the only rule)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "One surgeon changed emergency care forever by going to the injured fast and treating the worst wounds first",
+            "Horses were the best way to move soldiers around a battlefield",
+            "France had the largest army in Europe in the 1790s"
+          ],
+          "answers": ["One surgeon changed emergency care forever by going to the injured fast and treating the worst wounds first"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["absurd → ____", "triage → ____", "volantes (flying) → ____"],
+          "rows": 1,
+          "answers": [
+            "so unreasonable that it makes no sense",
+            "sorting the injured by how badly they are hurt",
+            "moving fast, going out to the wounded instead of waiting"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: Larrey decided the worst wounds should be treated first, even for enemy soldiers. Do you agree with his rule? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Hospital That Comes to You",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-ambulance", "templateLabel": "The Hospital That Comes to You", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ambulance",
+          "notes": ["Boxy so a paramedic can stand up and work", "Sirens slide and yelp because one flat note is hard to locate", "The pitch drop as it passes is the Doppler effect", "Yellow green registers fastest in daylight", "The blue Star of Life has six points for six steps"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why an Ambulance Is Built Like a Room",
+          "text": "An ambulance is not really a vehicle with medical gear stuffed inside it. It is a medical room that happens to have an engine bolted to the front, and almost every strange thing about it follows from that. Start with the shape. It is a box because a paramedic has to stand upright, reach all sides of a patient, and open a cabinet while the whole thing is cornering at speed. A car cannot offer that. Neither can a station wagon, which is what American ambulances mostly were until the 1970s, and which is why crews spent years working on their knees. Then the sound. A siren does not hold one note, and that is deliberate. A single steady tone is surprisingly hard to locate. Your brain figures out where a sound came from by comparing what each ear receives, and in a street full of walls that bounce sound in every direction, one clean note gives it very little to work with. A tone that slides, warbles and yelps keeps handing your ears fresh information. Something else happens to that siren as it goes past you. Coming toward you it sounds high. The instant it passes, it drops. The siren itself did not change at all. Each wave of sound left the ambulance from slightly closer than the one before it, so the waves bunched up and arrived more often, which your ear reports as a higher pitch. Once the ambulance is heading away, the waves stretch out and the pitch falls. This is the Doppler effect, and it is not a small piece of trivia. Astronomers aim the same idea at starlight and use the stretching of those waves to measure how fast distant galaxies are rushing away from us. Even the paint is an argument. That searing yellow green is not a style choice. In daylight, human eyes are more sensitive to yellow green than to any other color, so it registers before red does. The blue six pointed star on the side is called the Star of Life, and its points stand for the six steps of an emergency: someone notices, someone calls, help is sent, help arrives, care continues on the road, and the patient is handed over at the hospital. None of it is decoration. Every part of an ambulance is an answer to a question somebody asked after something went wrong."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why is an ambulance shaped like a box instead of like a car? Quote the phrase the passage uses to describe what a paramedic must do.",
+            "Explain in your own words why the siren's pitch drops the moment the ambulance passes you.",
+            "Is this passage written to inform, persuade or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the room-on-wheels idea plus siren, Doppler and color design)",
+            "so a paramedic can stand and work in a moving vehicle; quote: stand upright, reach all sides of a patient, and open a cabinet while the whole thing is cornering at speed",
+            "(the waves stretch out once it is moving away, so they arrive less often and the ear hears a lower pitch)",
+            "(inform, with detail: it explains mechanisms and defines terms; the closing line leans persuasive)",
+            "(every design feature was learned from a real failure; the author ends there to make the design feel earned)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["deliberate → ____", "locate → ____", "registers → ____", "decoration → ____"],
+          "rows": 1,
+          "answers": [
+            "done on purpose",
+            "to work out where something is",
+            "gets noticed by the eye or brain",
+            "something added only to look good"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says every part of an ambulance is an answer to a question. Choose one part and name the question it answers.",
+            "A siren gives no warning about which direction the ambulance is coming from. What could designers add to solve that, and what new problem might it cause?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(for example: the box shape answers how do we treat someone while moving)",
+            "(opinion: ideas might include in-car alerts or radio signals; costs, false alarms or drivers ignoring them)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should every driver be required to learn how to react to a siren before getting a license? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Hospital That Comes to You",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-ambulance", "templateLabel": "The Hospital That Comes to You", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ambulance",
+          "notes": ["In 1965 the ambulance was often a funeral home hearse", "A hearse was the only vehicle built to carry a person lying flat", "Freedom House Ambulance Service, Pittsburgh, 1967", "Trained by Dr. Peter Safar, the father of CPR", "Crews recruited from the Hill District", "Their training became the national paramedic standard"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ambulance That Was a Hearse",
+          "text": "If you were badly hurt in an American city in 1965 and somebody called for an ambulance, there was a fair chance the vehicle that pulled up was a hearse. This sounds like a joke. It was policy. A hearse was the only vehicle most towns owned that could carry a person lying flat, so funeral homes provided roughly half the ambulance service in the country. Much of the rest was handled by police, who loaded the injured into the back of a wagon and drove fast. Neither crew was trained to do anything else. Fast was the entire treatment plan. In 1966 a report from the National Academy of Sciences laid it out without mercy: a soldier shot in Vietnam had better odds of surviving than a person injured on an American highway, because the soldier was reached by medics who knew what they were doing. Pittsburgh's Hill District had it worse than most. The neighborhood was Black, and the police who answered its calls were slow when they came at all. People bled in their own doorways, waiting. In 1967 an unlikely partnership formed. Freedom House Enterprises, a community organization in the Hill District, joined forces with Dr. Peter Safar, an Austrian doctor at the University of Pittsburgh who had worked out how mouth to mouth breathing could be combined with chest compressions to restart a stopped heart. He is called the father of CPR. Safar wanted to prove a specific thing: that treatment should begin where the patient was lying, not thirty minutes later in a hospital corridor. To prove it he needed a crew willing to be trained properly, and nobody else was offering him one. The recruits came from the Hill District itself. Many were unemployed. Some had been written off by every employer who had ever looked at them. Safar put them through hundreds of hours of instruction, far past anything an ambulance crew in America had ever been asked to learn: airway management, CPR, defibrillation, intravenous lines, reading heart rhythms, delivering babies. They took the name Freedom House Ambulance Service, and they were the first paramedics in the United States in the sense we now use that word. They were extraordinarily good. They arrived, they assessed, they treated on the spot, and their patients survived at rates nobody else in the city could match. Doctors who had assumed the experiment would embarrass everyone rode along and came back convinced. The curriculum Safar built for them became the template for paramedic standards nationwide. The ambulance that shows up at your address today, staffed by people who start work in your driveway, exists because Freedom House proved it could work. In 1975 the city took over emergency services and closed Freedom House down. A few of the medics were hired into the new citywide service. Many were not. The men who had invented the job were told, in effect, that the job would carry on without them. That ending belongs in the story, and leaving it out would be dishonest. So does this. Every idea that mattered survived. Look inside a modern ambulance. The stretcher, the drug box, the heart monitor, the crew who kneel down and get to work before the wheels have finished turning. That is the Hill District's design, and it is still on the road."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why hearses were used as ambulances, and why that detail matters to the argument. Cite the evidence.",
+            "What was Safar trying to prove, and why did the Hill District give him the chance nobody else would?",
+            "Identify the shift in the passage: where does it turn from success to loss, and how does the author signal it?",
+            "The author writes that leaving the 1975 ending out would be dishonest. Analyze what that sentence is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it was the only vehicle built to carry someone lying flat; cite: A hearse was the only vehicle most towns owned that could carry a person lying flat)",
+            "(that treatment should begin where the patient was lying; the Hill District was underserved and the crew was willing to train properly)",
+            "(at In 1975 the city took over; the plain, flat sentence drops the tone after a run of praise)",
+            "(the author refuses a tidy ending and admits the injustice, which makes the closing claim of survival more credible)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["policy → ____", "curriculum → ____", "template → ____", "assessed → ____"],
+          "rows": 2,
+          "answers": [
+            "an accepted way of doing things, not an accident",
+            "the full course of what is taught",
+            "a pattern others copy",
+            "sized up a situation to decide what to do"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The 1966 report compared a soldier in Vietnam with a driver on a highway. Explain why that comparison was more persuasive than a plain list of numbers.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it makes an abstract failure concrete by measuring home against a war zone and finding home worse)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Freedom House was a success, because the ideas outlived the service. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

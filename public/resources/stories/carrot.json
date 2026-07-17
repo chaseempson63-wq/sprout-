@@ -1,0 +1,317 @@
+{
+  "key": "carrot",
+  "title": "The Carrot That Used to Be Purple",
+  "blurb": "Carrots were purple and yellow for centuries, and the orange part we eat is really the plant's hidden lunchbox for a spring it never gets to see.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Carrot That Used to Be Purple",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-carrot", "templateLabel": "The Carrot That Used to Be Purple", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the green top and the orange root." },
+        {
+          "kind": "image",
+          "imageKey": "carrot",
+          "notes": ["It grows under the ground", "The green top grows up in the sun", "It is orange and sweet", "It goes crunch when you bite it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a carrot. It grows down in the dark dirt. Its green leafy top stays up in the sun. The carrot is orange. It is sweet. It goes crunch when you bite it. Rabbits like the green top best. You can eat the top too. Hold the green top and pull. Up comes the carrot. Give it a wash. Then take a big bite."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the carrots in each row. Write how many in the box.",
+          "emoji": "🥕",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "orange    root" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each food to where it grows.",
+          "pairs": [
+            { "left": "carrot", "right": "under the ground" },
+            { "left": "apple", "right": "on a tree" },
+            { "left": "pea", "right": "in a pod" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a carrot in the dirt. Put the green top up in the sun.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Carrot That Used to Be Purple",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-carrot", "templateLabel": "The Carrot That Used to Be Purple", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "carrot",
+          "notes": ["The seed is smaller than a grain of rice", "We eat the root of the plant", "The green top is safe to eat too", "A carrot is mostly water", "Rocks make carrots grow crooked"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Whole Summer of Sunshine",
+          "text": "A carrot starts as a seed. The seed is smaller than a grain of rice. You put it in soft dirt and wait. First a tiny green leaf pokes up. The leaves drink in the sunlight and make sugar. The plant sends that sugar down and packs it into its root. Day after day the root gets fatter and sweeter. That fat sweet root is the carrot. When you pull it up, you are pulling up a whole summer of sunshine. Carrots grow best in loose sandy dirt. If the root bumps into a rock, it splits and grows two funny legs."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a carrot start as?", "Which part of the plant makes the sugar?", "Which part of the plant do we eat?"],
+          "rows": 2,
+          "answers": ["a tiny seed", "the leaves, using sunlight", "the root"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A carrot starts as a tiny ____.", "The leaves use ____ to make sugar.", "The plant packs the sugar into its ____.", "If the root hits a ____, it splits in two."],
+          "wordBank": ["seed", "sunlight", "root", "rock"],
+          "answers": ["seed", "sunlight", "root", "rock"]
+        },
+        { "kind": "draw", "prompt": "Draw a carrot plant. Show the leafy top above the ground and the fat root below it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Carrot That Used to Be Purple",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-carrot", "templateLabel": "The Carrot That Used to Be Purple", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "carrot",
+          "notes": ["The first carrots people grew were purple", "Carrots came from Central Asia", "Orange carrots came from the Netherlands", "Purple and yellow carrots are still grown today", "Carrot seeds are almost as small as dust"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Carrot Was Not Always Orange",
+          "text": "If you had pulled up a carrot a thousand years ago, it would not have been orange. It would have been purple, or yellow, or creamy white. The first carrots people grew came from Central Asia, in the land we now call Afghanistan. Farmers there liked the purple ones. Traders carried carrot seeds west into Europe and east into China. For hundreds of years, a carrot could be almost any color. Then, about four hundred years ago, Dutch farmers began growing orange carrots. Orange carrots were sweeter and less bitter than the old purple ones, and they did not turn the whole stew a murky purple. People liked them, so farmers grew more of them, and the orange carrot slowly pushed the others off the table. You will hear a story that Dutch farmers made carrots orange to honor their leader, William of Orange. It is a good story. Historians have never found proof of it. The real reason is simpler. Orange tasted better, so orange won. Purple and yellow carrots never disappeared. Some farmers kept growing them, and you can still buy them today."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What colors were the first carrots that people grew?",
+            "Where did the first grown carrots come from?",
+            "Give two reasons people started choosing orange carrots.",
+            "Why do you think the William of Orange story gets told so often, even though there is no proof?"
+          ],
+          "rows": 2,
+          "answers": [
+            "purple, yellow, and creamy white",
+            "Central Asia, in the land now called Afghanistan",
+            "they were sweeter and less bitter, and they did not turn the stew purple",
+            "(opinion: a fun story is easier to remember and repeat than the plain reason)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Carrot Was Not Always Orange", "How to Cook a Purple Stew", "The Tallest Mountain in Afghanistan"],
+          "answers": ["The Carrot Was Not Always Orange"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The first carrots were grown in Central ____.", "About four hundred years ago, ____ farmers began growing orange carrots.", "Historians have never found ____ for the William of Orange story."],
+          "wordBank": ["Asia", "Dutch", "proof"],
+          "answers": ["Asia", "Dutch", "proof"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you could grow a carrot in any color you wanted, which color would you pick, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Carrot That Used to Be Purple",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-carrot", "templateLabel": "The Carrot That Used to Be Purple", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "carrot",
+          "notes": ["The orange comes from beta carotene", "Your body turns beta carotene into vitamin A", "The carrot is a taproot", "A carrot plant lives for two years", "Cooking makes beta carotene easier to absorb", "Eating a huge number can tint your skin orange"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Carrot Bothers",
+          "text": "A carrot is not trying to feed you. It is trying to feed itself. A carrot plant lives for two years. In the first year it does nothing but grow leaves and collect sunlight. The leaves turn that light into sugar, and the plant carries the sugar down into a swollen root called a taproot. It packs the root tight and then waits out the winter underground. In the second year the plant spends everything it saved. It shoots up tall, opens a wide lacy white flower, makes seeds, and dies. The carrot in your hand is a lunchbox the plant packed for a spring it never got to see, because we dug it up first. The orange comes from beta carotene, a pigment the plant makes while it is collecting light. When you eat it, your body breaks the beta carotene apart and builds vitamin A out of the pieces. Your eyes need vitamin A. The back of your eye uses it to make a light catching molecule inside the cells that let you see in dim rooms. People who get almost no vitamin A can go night blind. So carrots really do help your eyes, but only up to a point. Once your body has the vitamin A it needs, extra carrots do not give you better vision. They just give you extra beta carotene, and if you eat a truly enormous number, your skin can turn faintly orange. That is harmless, and it fades."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, why does a carrot plant grow a fat root at all?",
+            "The passage calls the carrot a lunchbox. Explain what that comparison means.",
+            "What does your body do with beta carotene once you eat it?",
+            "Why is it wrong to say that eating lots of carrots will give you amazing night vision?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(to store sugar so it can flower and make seeds in its second year)",
+            "the plant packed food into the root for the next spring, and we take it before the plant can spend it",
+            "breaks it apart and builds vitamin A out of the pieces",
+            "(inference: vitamin A only fixes a shortage; once you have enough, extra does not improve normal vision)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A carrot is a plant's food store, and the pigment that makes it orange is what our bodies turn into vitamin A",
+            "Carrots are the healthiest vegetable in the world",
+            "Rabbits taught people how to grow carrots"
+          ],
+          "answers": ["A carrot is a plant's food store, and the pigment that makes it orange is what our bodies turn into vitamin A"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["taproot → ____", "pigment → ____", "night blind → ____"],
+          "rows": 1,
+          "answers": ["a swollen main root that a plant stores food in", "a substance that gives something its color", "unable to see properly in dim light"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the carrot's two year plan to someone who has never heard it. Use the words taproot, sugar, and seeds.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Carrot That Used to Be Purple",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-carrot", "templateLabel": "The Carrot That Used to Be Purple", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "carrot",
+          "notes": ["Doctor Carrot was a real wartime poster character", "John Cunningham was nicknamed Cat's Eyes", "Baby carrots were invented in 1986", "Baby carrots are cut from full grown carrots", "China grows more carrots than any other country", "Carrots are cousins of parsley, celery, and dill"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Carrot Went to War",
+          "text": "In 1940, British night fighters started shooting down German bombers in the dark with a success that surprised everyone. The reason was radar. Britain had built a secret network of ground stations and had begun fitting compact radar sets into the aircraft themselves, and it very much wanted to keep that quiet. What the public heard instead was carrots. Newspapers ran stories about a pilot named John Cunningham, nicknamed Cat's Eyes, who was said to see in the dark because he ate so many carrots. The Ministry of Food leaned in hard. It printed posters, invented a cheerful cartoon character called Doctor Carrot, and pushed carrot recipes on a hungry country: carrot jam, carrot pudding, even a carrot on a stick sold as a treat for children. Historians still argue about how much of this was aimed at fooling Germany and how much was ordinary wartime thrift. Britain had a carrot surplus and a shortage of almost everything else, so telling people to eat carrots was useful whether or not any German believed it. Either way, the story stuck. Eighty years later, children who have never heard of radar still get told that carrots help you see in the dark. There is a grain of truth underneath the propaganda. Carrots are rich in beta carotene, which your body converts into vitamin A, and vitamin A is essential to the light sensing cells at the back of your eye. Someone starved of vitamin A really does lose their night vision, and carrots really will fix that. But a well fed pilot who eats a second helping of carrots does not gain a superpower. He gains a second helping of carrots. The carrot has been quietly reinvented before. In 1986, a California farmer named Mike Yurosek was throwing away huge quantities of carrots that were bent, split, or simply the wrong shape for a supermarket shelf. He fed some of them through an industrial green bean cutter, which chopped them into short pieces, then ran the pieces through a potato peeler until they came out smooth and round ended. He had invented the baby carrot. It was not a baby anything. It was a full grown carrot that had been rescued from the bin and given a new shape, and it changed how much of the crop got eaten rather than dumped."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What was the real reason British night fighters were finding bombers in the dark?",
+            "The passage gives two explanations for the carrot campaign. Name both, and quote the phrase the author uses for the second one.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "Explain the joke in the line He gains a second helping of carrots. What point is the author making?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentence summary covering the radar cover story plus the grain of truth about vitamin A)",
+            "radar, including compact sets fitted inside the aircraft",
+            "fooling Germany, and wartime thrift; quote: ordinary wartime thrift",
+            "(inform, with detail: it defines terms and weighs evidence; the closing lines lean toward entertaining)",
+            "(there is no extra benefit once you already have enough vitamin A, so all he gets is more carrots)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["surplus → ____", "thrift → ____", "propaganda → ____", "converts → ____"],
+          "rows": 1,
+          "answers": [
+            "more of something than you need",
+            "careful use of what little you have, without waste",
+            "information spread on purpose to shape what people believe",
+            "changes something into something else"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might a government prefer to spread a false story rather than say nothing at all about its radar?",
+            "The baby carrot was invented out of carrots headed for the bin. What does that tell you about why food gets wasted?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: silence invites guessing, while a false explanation steers people away from the real secret)",
+            "(inference: a lot of waste is about looks and shape, not about the food being bad)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was it fair for a government to tell its own people something untrue during a war? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Carrot That Used to Be Purple",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-carrot", "templateLabel": "The Carrot That Used to Be Purple", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "carrot",
+          "notes": ["Daucus carota, the wild carrot", "Queen Anne's lace is the same species", "Domesticated in Central Asia about a thousand years ago", "Orange appears in Dutch records in the 1600s", "One beta carotene molecule splits into two of vitamin A", "The carrot genome was sequenced in 2016"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Carrot Is an Invention",
+          "text": "Walk along a roadside in summer and you may pass the carrot's wild ancestor without noticing it. Queen Anne's lace, Daucus carota, stands waist high with a flat white flower like a doily. Pull one up. The root is a pale, forked, woody string, bitter enough to make you spit, and about the thickness of a pencil. Nothing about it says food. That plant and the carrot in your refrigerator are the same species. The difference is a thousand years of people choosing. Somewhere in Central Asia, around the tenth century, farmers began saving seed from the wild carrots whose roots were fattest and least bitter, planting those, and repeating. Each generation the average root got a little thicker and a little sweeter, because the thin bitter ones were not invited to reproduce. Carrot seeds traveled the trade routes west into the Middle East and Europe and east into China, and the early cultivated carrots were purple and yellow, not orange. Orange carrots emerge in Dutch records in the sixteenth and seventeenth centuries, apparently selected out of yellow stock, and they spread because they were sweeter, milder, and did not bleed purple into the pot. The popular tale that Dutch growers bred them orange to honor William of Orange is repeated everywhere and supported by nothing. It is a story about a story. What people were unknowingly selecting for is worth understanding. The carrot is biennial. In its first season the plant does one job: grow leaves, capture light, and pump the resulting sugar down into a taproot for storage. That store exists to fund a second season of flowering and seed. Every gardener who chose the fattest root was choosing the plant that hoarded the hardest, and hoarding is exactly what makes a carrot worth eating. We are eating a savings account. We are also eating the plant's future, which is why carrot farmers who want seed must leave some plants in the ground for a second year and let them bolt. The orange itself was a bonus nobody was aiming at. It comes from beta carotene, a pigment involved in the plant's light gathering, and it happens that the human body can cleave a beta carotene molecule and build vitamin A from the halves. Vitamin A becomes retinal, the light sensitive part of rhodopsin, the molecule in your eye that can respond to a single particle of light in a dark room. Farmers selecting for sweetness accidentally selected for a compound that maintains human night vision. That is luck, not design. None of this is unusual. Corn began as a grass with a few hard kernels. Cabbage, broccoli, kale, cauliflower, and Brussels sprouts are all one species, wild cabbage, pushed in five directions by five sets of preferences. Wild almonds were bitter and poisonous. The peach was small, sour, and mostly stone. Every one of them was reshaped by people who had no idea what a gene was and who simply kept the seeds of whatever they liked best. Their work is invisible now because we call the results vegetables and assume they were always here. The carrot is not a natural object that we happened to find. It is a technology, built slowly, by hand, in the dark, by people whose names are gone."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage claims the roadside weed and the supermarket carrot are the same plant. Cite the sentence that states this, then explain how that can be true.",
+            "Explain what the author means by We are eating a savings account. What does the root store, and what was the plant saving it for?",
+            "The author calls the orange color a bonus nobody was aiming at. Cite the sentence that sums up this idea, and explain why it supports the word luck.",
+            "Analyze the final sentence. Why does the author end on people whose names are gone rather than on a fact about carrots?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one sentence summary: centuries of human seed choosing turned a bitter weed into the carrot)",
+            "(cite: That plant and the carrot in your refrigerator are the same species; selective breeding changed the root without changing the species)",
+            "(the taproot stores sugar made in year one to fund flowering and seed in year two; we harvest it before the plant spends it)",
+            "(cite: That is luck, not design; farmers were selecting for sweetness, and the vitamin A came along uninvited)",
+            "(it shifts the point from the vegetable to the unnamed people who built it, which is the argument of the whole passage)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["biennial → ____", "cultivated → ____", "cleave → ____", "bolt (of a plant) → ____"],
+          "rows": 2,
+          "answers": [
+            "living for two growing seasons, storing food in the first and flowering in the second",
+            "grown deliberately by people rather than growing wild",
+            "to split something into parts",
+            "to shoot up tall and flower, spending the stored food"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The paragraph about corn, cabbage, almonds, and peaches contains no carrots at all. Why is it in this passage, and what does it do for the author's argument?",
+            "The author says the William of Orange tale is supported by nothing, then calls it a story about a story. Explain that phrase and what the author gains by using it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it generalizes the claim: the carrot is not a special case, so the argument covers nearly all our food)",
+            "(the tale is not history but a legend about a legend; the phrase dismisses it briskly without a long argument)",
+            "(student question plus a credible source type, for example a plant geneticist or an agricultural history text)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Calling a carrot a technology is a stretch, because nobody engineered it on purpose. State your position, cite two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

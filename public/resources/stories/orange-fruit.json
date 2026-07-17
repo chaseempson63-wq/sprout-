@@ -1,0 +1,319 @@
+{
+  "key": "orange-fruit",
+  "title": "The Fruit That Named a Color",
+  "blurb": "The orange came first and the color was named after it. Also: every navel orange on Earth is a cutting from one branch in Brazil.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Fruit That Named a Color",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-orange-fruit", "templateLabel": "The Fruit That Named a Color", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the bumpy skin." },
+        {
+          "kind": "image",
+          "imageKey": "orange-fruit",
+          "notes": ["It is round like a ball", "The skin is called the peel", "It grows on a tree", "The inside comes in pieces", "The color is named after it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an orange. It is round like a ball. The outside is bumpy. The inside is wet and sweet. Peel it and you smell it right away. An orange is made of little parts. We call them segments. You can pull them apart with your fingers. Oranges grow on trees. They sit in the sun all day and get sweet."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the oranges in each row. Write how many in the box.",
+          "emoji": "🍊",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "orange    peel" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each food to where it grows.",
+          "pairs": [
+            { "left": "orange", "right": "tree" },
+            { "left": "potato", "right": "under the ground" },
+            { "left": "grape", "right": "vine" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw an orange tree. Put some oranges on it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Fruit That Named a Color",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-orange-fruit", "templateLabel": "The Fruit That Named a Color", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "orange-fruit",
+          "notes": ["The tree has white flowers first", "The flowers smell sweet", "Each piece inside is a segment", "The juice sits in tiny sacs", "The peel holds sweet smelling oil"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How an Orange Is Built",
+          "text": "An orange grows on a tree with dark green leaves. The tree flowers first. The flowers are white and they smell sweet. Then each flower turns into a small green ball, and the ball grows all summer. When you peel an orange, you find it is already built in pieces. Each piece is a segment. Inside each segment are hundreds of tiny juice sacs, packed tight like little water balloons. When you bite down, the sacs pop. That is why your chin gets wet."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What comes first on the tree, the flower or the fruit?", "What is one piece of an orange called?", "What is inside each segment?"],
+          "rows": 2,
+          "answers": ["the flower", "a segment", "hundreds of tiny juice sacs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["An orange grows on a ____.", "The flowers on the tree are ____.", "One piece of an orange is a ____.", "The tiny sacs are full of ____."],
+          "wordBank": ["tree", "white", "segment", "juice"],
+          "answers": ["tree", "white", "segment", "juice"]
+        },
+        { "kind": "draw", "prompt": "Draw an orange cut in half. Show the segments inside.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Fruit That Named a Color",
+      "subtitle": "A reading and word history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-orange-fruit", "templateLabel": "The Fruit That Named a Color", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "orange-fruit",
+          "notes": ["English had no word for the color once", "People said yellow-red instead", "The fruit came from Asia", "The name traveled through many languages", "The fruit named the color"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fruit That Named the Color",
+          "text": "Here is a strange thing about the orange. The fruit came first. The color was named after it. Long ago, English speakers did not have a word for the color orange. If they wanted to describe a carrot or a bright sunset, they had to call it yellow-red. That was the only word they had. Then traders began carrying a round, sweet fruit north from Asia. Sellers shouted its name in the markets. The name traveled from language to language for hundreds of years, changing a little each time, until English speakers were calling it an orange. The fruit was everywhere. People pointed at it. And slowly, when they wanted to describe a carrot or a sunset, they stopped saying yellow-red and started saying orange, like the fruit. So the color did not name the fruit. The fruit named the color. Every orange traffic cone and orange pumpkin and orange sunset carries the name of a piece of fruit from a tree in Asia."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did English speakers call the color orange before the fruit arrived?",
+            "Where did the fruit come from?",
+            "Which came first, the fruit or the color word?",
+            "Why do you think people started using the fruit's name for the color?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they called it yellow-red",
+            "it came from Asia",
+            "the fruit came first",
+            "(inference: the fruit was everywhere, so it was the easiest thing to point at)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Fruit Gave a Color Its Name", "The Best Way to Peel an Orange", "Trees That Grow in the Snow"],
+          "answers": ["How a Fruit Gave a Color Its Name"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Before the fruit arrived, English speakers said ____.", "Traders carried the fruit north from ____.", "The fruit named the ____."],
+          "wordBank": ["yellow-red", "Asia", "color"],
+          "answers": ["yellow-red", "Asia", "color"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences. Name something you own that is orange, and describe the color without using the word orange.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Fruit That Named a Color",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-orange-fruit", "templateLabel": "The Fruit That Named a Color", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "orange-fruit",
+          "notes": ["The navel is a second tiny orange", "It started as one lucky branch", "Navel oranges have no seeds", "Growers copy them by grafting", "Every navel orange is a clone"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Tree, Everywhere",
+          "text": "Pick up a navel orange and look at the bottom. There is a small pucker there that looks like a belly button. That is where the name comes from. But the pucker is not a belly button. It is a second orange, tiny and unfinished, growing inside the first one. That happened by accident. Around two hundred years ago, at a monastery in Bahia, Brazil, one branch on one orange tree started producing strange fruit. The oranges had the little twin inside. They were also sweeter than the rest, easy to peel, and completely seedless. Seedless is wonderful for eating and terrible for farming. A seedless orange cannot make a new tree. So growers took the only other route. They cut small pieces off that branch and grafted them onto other citrus roots. Each graft grew into a tree that made the same fruit. Then they cut pieces off those trees and grafted again. In 1873 a few of those grafted trees arrived in Riverside, California. They thrived, and California cut more pieces off them. Today every navel orange in every store on Earth traces back, cutting by cutting, to that one lucky branch in Brazil. They are not relatives. They are copies. Biologists call an orchard like that a clone, and the whole navel orange business is one enormous tree, spread thin across the world."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is the navel on a navel orange, really?",
+            "Why can growers not simply plant a navel orange seed?",
+            "Explain grafting in your own words.",
+            "The passage says the whole navel orange business is one enormous tree. What does the author mean by that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a second tiny unfinished orange growing inside the first",
+            "there are no seeds; navel oranges are seedless",
+            "(cutting a piece off one tree and joining it onto the roots of another so it grows)",
+            "(inference: every navel orange is a cutting of the same original branch, so they are all genetically one plant)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "One accidental branch in Brazil became every navel orange on Earth through grafting",
+            "Brazil grows more fruit than any other country",
+            "Oranges taste better when they are grown in California"
+          ],
+          "answers": ["One accidental branch in Brazil became every navel orange on Earth through grafting"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["grafted → ____", "seedless → ____", "clone → ____"],
+          "rows": 1,
+          "answers": [
+            "joined a cutting from one plant onto the roots of another",
+            "having no seeds inside",
+            "a living copy with exactly the same genes as the original"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph. Would you rather eat a seedless orange or a seedy one? Give two reasons, and mention one thing farmers lose when a fruit has no seeds.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Fruit That Named a Color",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-orange-fruit", "templateLabel": "The Fruit That Named a Color", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "orange-fruit",
+          "notes": ["Humans cannot make vitamin C", "Scurvy killed more sailors than storms", "James Lind ran the test in 1747", "Two oranges and a lemon a day cured it", "Vitamin C was not identified until the 1930s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fruit That Won at Sea",
+          "text": "For hundreds of years, long ocean voyages killed sailors, and nobody knew why. The disease was called scurvy, and it was grotesque. Gums swelled and bled. Old wounds that had healed years earlier split open again. Teeth loosened. Skin bruised at a touch. On some voyages scurvy killed more men than storms, shipwreck, and battle combined. The cause is almost embarrassing in its simplicity. Human bodies cannot make vitamin C. Almost every other mammal can, but somewhere in our ancestry the gene that builds it broke, and it stayed broken. Without vitamin C, the body cannot properly build collagen, the protein that holds skin, blood vessels, and old scars together. Deny a person vitamin C for a few months and the body slowly comes apart at the seams. That is all scurvy is. In 1747 a Scottish naval doctor named James Lind ran what many people call the first controlled clinical trial. He took twelve sick sailors, divided them into six pairs, and gave each pair a different supposed cure: cider, seawater, vinegar, a sulfuric acid mixture, a paste of herbs, and, to the last pair, two oranges and a lemon a day. The citrus pair recovered so fast that one of them was fit for duty within a week. Lind published his results. The navy took nearly fifty more years to act on them. When it finally did, and issued citrus to its crews, scurvy nearly vanished from the fleet. There is a lesson in the delay. Lind had the evidence, but he did not know why citrus worked, and he buried the finding in a long book among his other theories. Vitamin C itself was not identified until the 1930s. Good evidence, badly explained and quietly published, can sit unused for decades while people keep dying of a solved problem."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What does vitamin C actually do in the body, according to the passage?",
+            "Describe Lind's experiment. Quote the phrase the passage uses to describe what it was.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering scurvy as vitamin C deficiency + Lind's citrus trial + the fifty-year delay)",
+            "it lets the body build collagen, the protein holding skin, blood vessels, and old scars together",
+            "twelve sick sailors in six pairs, each pair given a different cure; quote: the first controlled clinical trial",
+            "(inform, with a persuasive close: it defines terms and gives dates and numbers, then draws a lesson at the end)",
+            "(evidence alone is not enough if it is not explained or shared well; the author ends there so the lesson lands last)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["grotesque → ____", "collagen → ____", "controlled (trial) → ____", "vanished → ____"],
+          "rows": 1,
+          "answers": [
+            "horrible and ugly to look at",
+            "the protein that holds skin, blood vessels, and scars together",
+            "a test where groups are compared side by side under the same conditions",
+            "disappeared completely"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Lind's citrus pair got better within a week. Why was twelve sailors still a weak experiment by modern standards?",
+            "The author calls the cause almost embarrassing in its simplicity. Explain why that word fits."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: the sample is tiny, only two men per treatment, so luck could explain the result)",
+            "(a disease that killed thousands was cured by fruit anyone could carry)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph. Who is more responsible for the fifty-year delay, Lind for explaining it badly or the navy for ignoring it? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Fruit That Named a Color",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-orange-fruit", "templateLabel": "The Fruit That Named a Color", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "orange-fruit",
+          "notes": ["Citrus sinensis: a pomelo and mandarin hybrid", "No sweet orange grows wild anywhere", "The name lost its first letter in Europe", "Navel oranges are grafts of one 1820s branch", "Citrus greening cut Florida output over ninety percent", "Greek, Romanian, and Arabic name it after Portugal"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Navel Orange Is the Same Tree",
+          "text": "The orange is not a wild fruit. There is no forest anywhere on Earth where sweet oranges grow on their own. The sweet orange, Citrus sinensis, is a hybrid, a cross between the pomelo and the mandarin, and it was made by people in southern Asia thousands of years ago. Every orange you have ever eaten is a human invention that happens to be alive. You can hear that history in the word itself. The name began in India as naranga, moved into Persian as narang, into Arabic as naranj, and along the trade routes into Italian and French, losing its first letter somewhere on the way, probably because 'a naranj' kept getting misheard as 'an aranj.' English received it around the fourteenth century. The color came later. Before the fruit arrived, English had no word for that shade at all. A carrot or a sunset was simply yellow-red. The fruit named the color, and not the other way around, which is why every traffic cone and pumpkin on Earth is quietly named after a piece of fruit from Asia. In Greek and Romanian and Arabic, meanwhile, the word for the fruit comes from Portugal, because Portuguese ships were the ones that carried the sweet ones west. Then there is the navel orange, which is a stranger story. Look at the base of one and you will find a small pucker. That is a second orange, tiny and unfinished, growing inside the first. It is a mutation, and it began on a single branch of a single tree at a monastery in Bahia, Brazil, around two hundred years ago. The fruit from that branch was sweeter, easier to peel, and seedless. Seedless is the whole problem. A seedless orange cannot start a new tree, so the only way to keep the mutation is to cut a piece off the branch and graft it onto other citrus rootstock. In 1873 three grafted cuttings reached Eliza Tibbets in Riverside, California. Two survived, and California cut pieces off those, and pieces off those. Today every navel orange in every store in the world is a graft of a graft of a graft, tracing back to that one branch. They are not a variety. They are a single organism, cut into millions of pieces and stuck in the ground. That is efficient, and it is dangerous. A clone has no genetic variation, which means it has no argument to make against a disease that happens to defeat it. Citrus greening, caused by a bacterium carried by a small insect called the Asian citrus psyllid, reached Florida in 2005. The bacterium starves the tree, the fruit stays green and bitter and drops early, and the tree dies. There is no cure. Florida's orange production has fallen by more than ninety percent since the disease took hold. A grove of a million genetically identical trees is not a million defenses against that. It is one defense, tried a million times, failing a million times. So the orange is worth more than a lunchbox slot. It is a record of trade routes, a mutation kept alive by knife and patience for two centuries, and a live demonstration of what happens when you decide, at scale, that you never want a surprise again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage claims the orange is a human invention. Explain what it means and cite the evidence.",
+            "Explain why seedlessness forces growers into grafting, and why the author writes 'Seedless is the whole problem.'",
+            "Identify the shift in the passage. Where does it turn from wonder to warning, and how does the author signal it?",
+            "Analyze the final line of the citrus greening paragraph: 'It is one defense, tried a million times, failing a million times.' What is the author doing with that sentence, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it is a hybrid bred by people and does not exist in the wild; cite: There is no forest anywhere on Earth where sweet oranges grow on their own)",
+            "(a seedless fruit cannot reproduce, so the mutation only survives by cutting and grafting; the trait that makes it sellable is the trait that makes it fragile)",
+            "(at 'That is efficient, and it is dangerous'; a short blunt sentence pivots from the history to the risk)",
+            "(it restates the clone argument as an image so the scale of the failure is felt, not just stated; earned by the ninety percent figure and the no-cure fact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["hybrid → ____", "rootstock → ____", "mutation → ____", "genetic variation → ____"],
+          "rows": 2,
+          "answers": [
+            "an organism bred from two different parent types",
+            "the established root system a cutting is grafted onto",
+            "a change in an organism's genes that produces a new trait",
+            "the range of gene differences within a population"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a clone 'has no argument to make against a disease.' Explain the biology behind that image.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(identical genes mean no individual happens to carry resistance, so nothing survives to breed from)",
+            "(student question + a credible source type, such as a plant pathology journal or a USDA crop report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Growing one perfect clone is always a mistake, no matter how good the fruit tastes. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

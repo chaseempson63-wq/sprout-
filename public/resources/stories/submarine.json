@@ -1,0 +1,315 @@
+{
+  "key": "submarine",
+  "title": "The Boat That Sinks on Purpose",
+  "blurb": "The boat that floods itself to dive, listens instead of looking, and makes its own air out of the sea.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Boat That Sinks on Purpose",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-submarine", "templateLabel": "The Boat That Sinks on Purpose", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the little round windows." },
+        {
+          "kind": "image",
+          "imageKey": "submarine",
+          "notes": ["It goes under the water", "It has no sails", "People live inside it", "It uses a long tube to peek up top"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a submarine. Say it like this: SUB-muh-reen. A submarine is a boat that can go under the water. Most boats float on top. A submarine can sink down on purpose. Then it can come back up. It takes in water to go down. It pushes the water out to come up. Inside, people stay warm and dry. They look out with a long tube called a periscope."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bubbles in each row. Write how many in the box.",
+          "emoji": "🫧",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "dive    deep" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "submarine", "right": "under the water" },
+            { "left": "sailboat", "right": "on top of the water" },
+            { "left": "airplane", "right": "up in the sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own submarine under the sea. Color it any way you like. Add some bubbles.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Boat That Sinks on Purpose",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-submarine", "templateLabel": "The Boat That Sinks on Purpose", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "submarine",
+          "notes": ["The tanks inside fill with water", "Water is heavy, so it sinks", "Air pushes the water back out", "Then the submarine floats up", "The people inside are called the crew"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Boat That Sinks on Purpose",
+          "text": "A submarine has big empty rooms inside its walls. They are called ballast tanks. When the crew wants to dive, they open valves and let seawater rush into the tanks. The water is heavy. The submarine gets heavier than the sea around it, so it sinks. When the crew wants to go up, they blow air into the tanks. The air pushes the water back out. The submarine gets light again and rises to the top. Sinking and rising is not magic. It is just water going in and air pushing it out."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are the empty rooms inside the walls called?", "What rushes in to make the submarine sink?", "What pushes the water back out?"],
+          "rows": 2,
+          "answers": ["ballast tanks", "seawater", "air"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The tanks fill with ____.", "Water is heavy, so the submarine ____.", "The crew blows ____ into the tanks.", "Then the submarine ____ to the top."],
+          "wordBank": ["seawater", "sinks", "air", "rises"],
+          "answers": ["seawater", "sinks", "air", "rises"]
+        },
+        { "kind": "draw", "prompt": "Draw a submarine diving down. Draw a fish watching it go by.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Boat That Sinks on Purpose",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-submarine", "templateLabel": "The Boat That Sinks on Purpose", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "submarine",
+          "notes": ["Deep water is pitch black", "Windows would be useless down there", "Sonar means listening to the sea", "Sound travels far underwater", "Bats and dolphins use echoes too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Submarine That Listens in the Dark",
+          "text": "A submarine cannot use its eyes. Sunlight fades fast in the ocean. Go down a few hundred feet and the water turns black. Even if you built a huge window, there would be nothing to see through it. So a submarine listens instead. Sound is strange underwater. It travels about four times faster in seawater than it does in air, and it carries much further. A submarine has a machine called sonar that catches those sounds. Passive sonar just listens. The crew hears propellers turning, whales calling, and rain hitting the surface far above. Active sonar works the other way. The submarine sends out a pulse of sound, a ping, and waits for the echo to bounce back. If the echo returns quickly, the object is close. If it takes longer, the object is far away. Bats and dolphins found this trick long before people did. There is a catch. A ping tells you where things are, but it also tells everyone else exactly where you are."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why would a window be useless on a deep submarine?",
+            "What is the difference between passive sonar and active sonar?",
+            "How does the crew know if an object is close or far away?",
+            "Why do you think a crew might choose not to use active sonar?"
+          ],
+          "rows": 2,
+          "answers": [
+            "deep water is black, so there is nothing to see",
+            "passive sonar only listens; active sonar sends out a ping and waits for the echo",
+            "a quick echo means close, a slow echo means far away",
+            "(inference: the ping tells everyone else where the submarine is)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Submarine That Listens in the Dark", "How to Build a Sailboat", "The Best Fish to Catch in Winter"],
+          "answers": ["The Submarine That Listens in the Dark"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Go down a few hundred feet and the water turns ____.", "Passive sonar just ____.", "A pulse of sound is called a ____.", "Sound travels four times faster in ____ than in air."],
+          "wordBank": ["black", "listens", "ping", "seawater"],
+          "answers": ["black", "listens", "ping", "seawater"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather see the ocean or hear it, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Boat That Sinks on Purpose",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-submarine", "templateLabel": "The Boat That Sinks on Purpose", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "submarine",
+          "notes": ["Buoyancy: the rule Archimedes found", "A submarine changes weight, not size", "Neutral buoyancy: it just hangs there", "Dive planes work like small wings", "The pressure hull is a cylinder for strength", "Every 33 feet down adds one atmosphere"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Steel Tube Floats",
+          "text": "Drop a steel bolt in a bathtub and it sinks. Build a ship out of the same steel and it floats. The difference is not the metal. It is the shape. Over two thousand years ago, a Greek thinker named Archimedes worked out the rule. When an object sits in water, it shoves some water out of the way. If the water it shoves aside weighs more than the object does, the object floats. A steel bolt is small and heavy, so it shoves aside almost nothing. A ship is mostly hollow air, so it shoves aside tons. A submarine plays both sides of that rule. Its size never changes, but its weight does. Flood the ballast tanks and the submarine grows heavier than the water it displaces, so it sinks. Blow the tanks out with compressed air and it grows lighter, so it rises. Skilled crews aim for neutral buoyancy, the balance point where the submarine neither sinks nor climbs, and hangs in the water like a held breath. Fine steering comes from dive planes, small wings on the hull. Moving forward, they bite the water and tilt the boat up or down, the way your flat hand tilts out a car window. Then there is the squeeze. Water is heavy, and every thirty three feet down adds the weight of another whole atmosphere pressing in. That is why the inner pressure hull is a cylinder with rounded ends. A curve spreads a load evenly around itself. A flat wall would buckle."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, explain the rule Archimedes worked out.",
+            "The passage says a submarine's size never changes but its weight does. Why does that matter?",
+            "What is neutral buoyancy, and why would a crew want it?",
+            "Why is a flat wall a bad idea deep underwater, when it works fine for a house?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(an object floats if the water it pushes aside weighs more than the object does)",
+            "changing weight is what lets it sink and rise without changing shape",
+            "the balance point where it neither sinks nor rises; it can hang at one depth quietly",
+            "(inference: pressure pushes in from every side, and a curve spreads that load while a flat wall buckles)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A submarine dives by changing its weight rather than its size, and its shape is built to survive the ocean's squeeze",
+            "Steel is the heaviest metal humans have ever found",
+            "Archimedes invented the first working submarine"
+          ],
+          "answers": ["A submarine dives by changing its weight rather than its size, and its shape is built to survive the ocean's squeeze"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["displaces → ____", "buoyancy → ____", "buckle → ____"],
+          "rows": 1,
+          "answers": ["pushes out of the way", "whether a thing floats, sinks, or hangs still in water", "to bend and give way under a load"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger kid how a submarine dives. Use the words ballast, heavier, and air.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Boat That Sinks on Purpose",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-submarine", "templateLabel": "The Boat That Sinks on Purpose", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "submarine",
+          "notes": ["Early subs ran on batteries and had to surface", "USS Nautilus, 1954, first nuclear submarine", "1958: it sailed under the North Pole ice", "Electricity splits seawater into oxygen and hydrogen", "Scrubbers pull carbon dioxide out of the air", "The real limit on a patrol is food"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Longest Breath",
+          "text": "Before 1954, a submarine was not really an underwater boat. It was a surface boat that could hide for a while. Diesel engines burn air, and there is no air to burn under the sea, so those submarines ran on batteries once they dove. Batteries run down. Every day or so the boat had to come up, run its diesels, and recharge. Historians often call those early boats submersibles rather than true submarines, because the ocean always sent them back to the surface. The USS Nautilus changed the argument in 1954. It carried a nuclear reactor, and a reactor does not need air. It splits atoms, boils water into steam, and drives a turbine, and it will keep doing that for years without refueling. In 1958 the Nautilus crossed from the Pacific to the Atlantic underneath the polar ice cap, passing beneath the North Pole with the frozen ocean sealed above its head. Nothing had ever done that before. Endless power buys everything else. Run electricity through seawater and it splits into hydrogen and oxygen. The submarine keeps the oxygen for the crew and pumps the hydrogen over the side. Chemical scrubbers pull the carbon dioxide back out of the breathed air. Other machines boil seawater and condense the steam into fresh drinking water. A modern nuclear submarine makes its own air and its own water out of the ocean it is hiding in. So what stops it? Food. A submarine can only carry so many boxes of it. Crews stack cans in the passageways at the start of a patrol and walk on the floor again weeks later, as the pile shrinks under their boots. There is also the crew itself. Three months in a steel tube with no sunlight, no weather, and no sky is hard on people in ways a reactor never notices. That is the honest answer to how long a submarine can stay down. The machine could go for years. The humans inside it cannot."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the passage say early submarines were not really underwater boats? Quote the phrase it uses for them.",
+            "Explain how a nuclear submarine gets breathable oxygen without surfacing.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last line mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering batteries and surfacing, nuclear power, air and water from the sea, food as the real limit)",
+            "diesels need air, so they ran on batteries and had to surface to recharge; quote: submersibles rather than true submarines",
+            "electricity splits seawater into hydrogen and oxygen; the oxygen is kept and the hydrogen is pumped over the side",
+            "(inform, with detail: it defines terms and gives dates and processes; the ending is a little persuasive)",
+            "(the limit is human, not mechanical; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["submersible → ____", "reactor → ____", "condense → ____", "patrol → ____"],
+          "rows": 1,
+          "answers": [
+            "a boat that can dive but must keep returning to the surface",
+            "a machine that splits atoms to make heat and power",
+            "to turn steam back into liquid water",
+            "a long trip a submarine makes away from port"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the reactor never notices what is hard on people. Explain what point the author is making there.",
+            "Nuclear power gave submarines almost unlimited range. Name one problem that solving created, and explain your reasoning."
+          ],
+          "rows": 3,
+          "answers": [
+            "(machines have no limits of morale or comfort; the crew becomes the weak point)",
+            "(opinion with reasoning: crew endurance, isolation, nuclear waste, or the arms race are all defensible)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should there be a limit on how long a crew is asked to stay underwater? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Boat That Sinks on Purpose",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-submarine", "templateLabel": "The Boat That Sinks on Purpose", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "submarine",
+          "notes": ["Seawater absorbs light and radio almost at once", "Sound moves about 1,500 meters per second down there", "The deep sound channel carries noise for thousands of miles", "Anechoic rubber tiles swallow incoming pings", "Cavitation: collapsing bubbles make a propeller roar", "Trieste, 1960: nearly 11,000 meters down"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ocean Only Speaks One Language",
+          "text": "The ocean is a terrible place to be a machine that wants to know things. Almost every tool humans use to sense the world at a distance stops working within a few dozen feet of the surface. Start with light. Seawater eats it. Red vanishes in the first fifteen feet or so, then orange, then yellow. By six hundred feet the world is a dim blue, and below about three thousand feet there is no sunlight at all, ever, anywhere. Windows are pointless. A searchlight buys you a few dozen feet of murk and announces your position to anyone watching. Radio is worse. Radio waves are how the rest of the modern world talks, and saltwater conducts electricity, which means it absorbs them almost on contact. An ordinary radio signal dies within a few feet of the surface. Very low frequency waves push down perhaps twenty meters, which is why a submarine must climb back toward the light to hear from home. Extremely low frequency waves reach deeper, but they crawl, and sending a single short sentence can take several minutes. Navies built ground antennas dozens of miles long to transmit a message roughly the length of a text. That leaves sound, and sound is magnificent down there. In seawater it moves at about fifteen hundred meters per second, more than four times its speed in air, and it does not fade the way light does. Roughly a kilometer down there is a layer where temperature and pressure balance in a way that bends stray sound rays back inward instead of letting them escape. Noise that enters that channel can travel for thousands of miles. Whales appear to have been using it far longer than we have. So a submarine gives up seeing and commits entirely to hearing. Passive sonar is simply listening: hydrophones set along the hull, and a long tail of them towed out behind, feeding the sea to people and computers who can tell a fishing trawler from a warship by the rhythm of its propeller. Every ship has a voice, and navies keep libraries of them. Active sonar, the famous ping, is the option of last resort. It works, and it is honest about it. The pulse goes out, the echo comes back, and you learn where the other object is. So does the other object. Pinging in a hostile ocean is like shouting your name in a dark room full of people you were trying to avoid. This is why a modern submarine is designed, above everything else, to be quiet. Its hull is wrapped in rubber anechoic tiles full of tiny voids that swallow incoming pings and muffle the noise leaking out. Its engines and pumps sit on flexible rafts so their vibration never reaches the steel skin. Its propeller is shaped carefully and turned slowly to prevent cavitation, the collapse of tiny bubbles that makes a fast blade roar. A submarine that can be heard has already lost, so it spends its entire existence trying not to make a sound. And then there is pressure, which listens to nothing. Every ten meters of depth adds roughly one more atmosphere pressing inward. In 1960 Jacques Piccard and Don Walsh rode the bathyscaphe Trieste to the floor of the Challenger Deep, close to eleven thousand meters down, where the water pushes with over a thousand atmospheres, about eight tons on every square inch. On the way down a window cracked and the whole vessel shuddered. They kept going, sat on the bottom for about twenty minutes, and watched the silt they had stirred hang in the dark. The ocean does not care what we would prefer to use. It permits sound. Everything else it swallows."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why light and radio both fail underwater, and why the reasons are different. Cite evidence for the radio claim.",
+            "Contrast passive and active sonar. Quote the sentence the author uses to explain why active sonar is a last resort.",
+            "The author writes that pressure listens to nothing. Explain what that phrase is doing, given everything the passage has just argued about sound.",
+            "The final three sentences are very short. Analyze what the author gains by ending that way, and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the ocean blocks light and radio, so submarines navigate and hunt by sound, and stay silent to survive)",
+            "(light is absorbed by the water itself; radio dies because saltwater conducts electricity; cite: saltwater conducts electricity, which means it absorbs them almost on contact)",
+            "(passive listens only; active pings and reveals itself; quote: Pinging in a hostile ocean is like shouting your name in a dark room full of people you were trying to avoid.)",
+            "(it pivots from a problem you can outsmart with silence to one no cleverness solves; sound can be managed, pressure cannot be negotiated with)",
+            "(analysis: the clipped ending mirrors the finality of the ocean's rule; earned by the light, radio, and pressure evidence already laid out)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["anechoic → ____", "cavitation → ____", "hydrophone → ____", "bathyscaphe → ____"],
+          "rows": 2,
+          "answers": [
+            "producing no echo; absorbing sound instead of reflecting it",
+            "the forming and collapsing of bubbles around a fast propeller, which makes noise",
+            "a microphone built to listen underwater",
+            "a deep diving vessel that carries people to the ocean floor"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says every ship has a voice, and navies keep libraries of them. Explain what that means in plain terms and why such a library would be valuable.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(each vessel's machinery makes a recognizable sound signature; a catalog of them lets a crew identify a contact by ear alone)",
+            "(student question + a credible source type, such as an oceanography text, a naval history, or an engineer's account)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A submarine is not really a vehicle for traveling, it is a machine for hiding. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "key": "igloo",
+  "title": "The House Made of Snow That Keeps You Warm",
+  "blurb": "How Inuit builders turn wind packed snow into a dome that holds your body heat while it hits forty below outside.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The House Made of Snow That Keeps You Warm",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-igloo", "templateLabel": "The House Made of Snow That Keeps You Warm", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the little door at the bottom." },
+        {
+          "kind": "image",
+          "imageKey": "igloo",
+          "notes": ["It is made of blocks of snow", "The blocks are cut with a knife", "It is round like half a ball", "Inside it is warmer than outside", "The door is cut last"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an igloo. It is a house made of snow. Snow can keep you warm. That sounds funny, but it is true. Snow is full of tiny bits of air. The air holds on to heat. A builder cuts blocks of hard snow. He stacks them round and round. The blocks lean in until they make a dome. Inside, it is quiet and warm."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the snow blocks in each row. Write how many in the box.",
+          "emoji": "🧊",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "snow    warm" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each home to what it is made of.",
+          "pairs": [
+            { "left": "igloo", "right": "snow" },
+            { "left": "bird nest", "right": "twigs" },
+            { "left": "beehive", "right": "wax" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw an igloo with a warm light glowing inside. Add a snowy hill behind it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The House Made of Snow That Keeps You Warm",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-igloo", "templateLabel": "The House Made of Snow That Keeps You Warm", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "igloo",
+          "notes": ["Iglu means house in Inuktitut", "The snow must be packed hard by wind", "The blocks go up in a spiral", "The door is cut last of all", "A builder can finish one in about an hour"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The House You Cut Out of the Ground",
+          "text": "Iglu is a word from Inuktitut, the language of the Inuit. It just means house. Inuit hunters in the Arctic learned to build a house out of snow when they were far from home. First they find snow that the wind has packed hard. Then they cut it into blocks with a long knife. They set the blocks in a circle, then lay more blocks on top in a slow spiral. Each block leans on the one before it. The wall curves in and closes at the top. Last of all, the builder cuts a door and crawls out."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does the word iglu mean?",
+            "What kind of snow does a builder look for?",
+            "What do builders use to cut the blocks?",
+            "When does the builder cut the door?"
+          ],
+          "rows": 2,
+          "answers": ["house", "snow that the wind has packed hard", "a long knife", "last of all, after the top is closed"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Iglu is a word that means ____.", "The wind packs the snow until it is ____.", "The blocks go up in a slow ____.", "The wall curves in and makes a ____."],
+          "wordBank": ["house", "hard", "spiral", "dome"],
+          "answers": ["house", "hard", "spiral", "dome"]
+        },
+        { "kind": "draw", "prompt": "Draw a builder cutting snow blocks. Show the dome half finished.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The House Made of Snow That Keeps You Warm",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-igloo", "templateLabel": "The House Made of Snow That Keeps You Warm", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "igloo",
+          "notes": ["Iglu is Inuktitut for house", "The snow knife is called a pana", "Soft snow will not work, only wind packed snow", "The builder is sealed inside until the last block", "The top block is trimmed until it drops in and locks"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The House You Build From the Inside",
+          "text": "When an Inuit hunter needs shelter on the sea ice, he does not look for wood. There are no trees. He looks for the right snow. Fresh snow is too soft. The snow he wants has been packed hard by wind, so hard that a block of it will hold your weight. He cuts the blocks with a pana, a long snow knife. Then he does something clever. He lays the first ring of blocks in a circle around himself, so he is standing inside his own house before it has walls. Instead of stacking neat rings, he cuts a ramp and builds upward in one long spiral. Every block leans against the block before it, so nothing can fall inward. At the top there is one last gap. He shapes a block, lifts it through the hole, and trims it until it drops in and locks the dome shut. Only then does he cut a door and crawl out into the wind. A good builder can do all of this in about an hour."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why does the hunter not build his shelter out of wood?",
+            "What is wrong with fresh snow?",
+            "What is a pana?",
+            "Why do you think the builder cuts the door last instead of first?"
+          ],
+          "rows": 2,
+          "answers": [
+            "there are no trees on the sea ice",
+            "it is too soft, so the blocks would not hold",
+            "a long snow knife used to cut the blocks",
+            "(inference: he is inside building the whole time, so he cuts his way out at the end)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The House You Build From the Inside", "How Snow Is Made in Clouds", "The Coldest Day Ever Recorded"],
+          "answers": ["The House You Build From the Inside"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The blocks are cut with a long snow knife called a ____.", "The builder rises in one long ____ instead of neat rings.", "Every block leans on the block before it, so nothing falls ____."],
+          "wordBank": ["pana", "spiral", "inward"],
+          "answers": ["pana", "spiral", "inward"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which step of building an igloo sounds hardest to you, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The House Made of Snow That Keeps You Warm",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-igloo", "templateLabel": "The House Made of Snow That Keeps You Warm", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "igloo",
+          "notes": ["Wind packed snow is mostly trapped air", "Air is a poor conductor of heat", "The entrance tunnel sits lower than the floor", "The sleeping platform is built high", "A qulliq is a seal oil lamp with a moss wick", "The inside glazes with ice and gets stronger"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a House of Snow Is Warm",
+          "text": "It sounds like a riddle. How can a house built out of frozen water keep a person warm? The answer is that snow is barely water at all. A block of wind packed snow is mostly air, trapped in millions of tiny pockets between the ice crystals. Air is a poor conductor of heat, which means heat moves through it slowly. Wool works the same way. So does the foam in a cooler. Snow is not warm. Snow is simply very good at refusing to let warmth leave. Inside an igloo, that trapped heat has somewhere to come from: the bodies of the people, and often a qulliq, a shallow lamp that burns seal oil with a wick of moss. Body heat alone can lift the air inside close to freezing while the wind outside sits at forty below. Add the lamp and the space near the roof can climb to shirtsleeve warmth. The design does the rest. The entrance tunnel is dug lower than the floor, so the cold, heavy air slides down into it and stays there instead of pooling around the sleepers. The sleeping platform is built high, because warm air rises. A small hole near the top of the dome lets stale air escape. And as the inside surface warms slightly, it melts and refreezes into a thin glaze of ice, which locks the whole dome together and makes it stronger, not weaker."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says snow is barely water at all. Explain what it means.",
+            "Why does the author compare snow to wool and to the foam in a cooler?",
+            "Explain why the entrance tunnel is dug lower than the floor.",
+            "The igloo gets stronger the longer people live in it. Why does that happen?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a snow block is mostly air trapped in tiny pockets, not solid water",
+            "(inference: all three trap air, and trapped air slows heat down, so they insulate the same way)",
+            "cold air is heavy, so it sinks into the tunnel and stays away from the sleepers",
+            "body heat melts the inner surface a little and it refreezes into a glaze of ice that locks the blocks together"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Snow traps air, and a careful design turns that trapped air into a warm shelter",
+            "The Arctic is the coldest place on Earth",
+            "Seal oil lamps were the first lamps ever invented"
+          ],
+          "answers": ["Snow traps air, and a careful design turns that trapped air into a warm shelter"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["conductor (of heat) → ____", "qulliq → ____", "stale (air) → ____"],
+          "rows": 1,
+          "answers": [
+            "something heat travels through; a poor one lets heat move slowly",
+            "a shallow lamp that burns seal oil with a moss wick",
+            "used up and breathed out, needing to be replaced with fresh air"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a friend how a house made of snow can keep someone warm. Use two details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The House Made of Snow That Keeps You Warm",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-igloo", "templateLabel": "The House Made of Snow That Keeps You Warm", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "igloo",
+          "notes": ["Snow is strong squeezed, weak bent", "A dome puts every block in compression", "Spiral courses, not stacked rings", "The key block is shaved from below until it wedges", "Igloos were travel shelters, not year round homes", "Winter homes were sod and whalebone, summer homes were skin tents"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dome That Holds Itself Up",
+          "text": "Ask most people to draw an igloo and you get a dome. Ask them why it is a dome and the answers run out. The shape is not decoration. It is the engineering. Snow is strong in one direction only. Squeeze it and it holds. Pull it or bend it and it crumbles. So a snow building has to be shaped so that every part of it is being squeezed. A dome does exactly that. Weight from the top presses down and outward along the curve, and each block passes the load to its neighbors until the whole thing arrives at the ground as pure compression. Nothing is hanging. Nothing is bending. Builders do not calculate this on paper. They inherited the correct curve through generations of building, failing, and adjusting, and the profile they settle on is close to the shape an engineer would arrive at with a formula. The construction method is just as deliberate. A builder does not lay stacked rings, which would leave every block unsupported until the ring closed. He cuts a ramp into the first course and spirals upward, so each block rests against the finished one behind it and cannot fall inward. He works from inside the growing dome, sealed in, until only a gap at the crown remains. The final block, the key, is passed up through that gap and shaved from below until it wedges tight. Then he cuts his own way out. There is a story people tell wrong. Igloos were not the year round homes of the Inuit. They were mostly built on the trail, by hunters far from camp, put up in an hour and abandoned in the morning. Families lived in sod and whalebone houses through the darkest months and in skin tents through the summer. The igloo was a travel shelter, which is exactly what makes it remarkable: a warm, windproof, structurally sound building assembled in an hour from the only material available, using one knife, and left behind without a trace when it melted."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why snow forces the builder into a dome shape rather than a box.",
+            "The passage says the load reaches the ground in one particular state. Quote the exact phrase it uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author say the igloo being a travel shelter is exactly what makes it remarkable?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the dome as engineering, the spiral method, and the travel shelter correction)",
+            "snow holds when squeezed and crumbles when bent, so the shape must keep every block in compression, and a dome does that",
+            "quote: pure compression",
+            "(inform, with detail: it explains structure and method and corrects a common error; the closing sentence has some persuasive admiration)",
+            "(inference: something built in an hour, from free material, with one knife, and then abandoned is more impressive than a permanent house, not less)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["compression → ____", "course (of blocks) → ____", "profile → ____", "deliberate → ____"],
+          "rows": 1,
+          "answers": [
+            "being pressed or squeezed together",
+            "one level or row of blocks in a wall",
+            "the outline or curve of a shape seen from the side",
+            "done on purpose, thought through, not accidental"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says builders do not calculate this on paper, yet they land close to the shape an engineer would choose. How is that possible?",
+            "Why would stacked rings actually be harder to build than a spiral, even though rings sound simpler?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(generations of trial and correction test the same shapes a formula would test, and the failures get dropped)",
+            "(inference: in an unfinished ring every block leans on nothing until the ring closes, so the work has to be held up; a spiral block always has a finished neighbor)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is knowledge passed down by building and correcting as trustworthy as knowledge worked out with a formula? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The House Made of Snow That Keeps You Warm",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-igloo", "templateLabel": "The House Made of Snow That Keeps You Warm", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "igloo",
+          "notes": ["Wind packed Arctic snow is roughly two thirds air by volume", "Snow has compressive strength and almost no tensile strength", "The profile is closer to a catenary than a hemisphere", "Spiral courses let every block lean on a finished neighbor", "The cold trap entrance sits below the sleeping floor", "Igloos were trail shelters, raised in an hour and abandoned"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Knife, One Hour, Forty Below",
+          "text": "Consider the problem. You are on the sea ice north of the Arctic Circle. The temperature is forty below and the wind has been rising for an hour. There is no wood, no stone you can reach, no soil, and nothing you did not carry in. Night is coming and it will last a very long time. You have one knife. Build a house. The Inuit answer to that problem is an engineering achievement that usually gets patronized as a curiosity. It begins with material science. Snow here is not the enemy, it is the insulation. Wind packed Arctic snow is roughly two thirds air by volume, held in millions of pockets between bonded ice crystals, and air conducts heat poorly. The snow does not warm anyone. It simply refuses to let warmth leave, which is all any insulation has ever done. The builder is not merely making do with the material at hand. He is using the cold's own product against it. Next comes structure. Snow has real compressive strength and almost no tensile strength: press it and it holds, stretch or bend it and it fails. A building made of snow must therefore be shaped so that no part of it is ever in tension. The dome does this. Load from the crown travels down the curve, block passing it to block, and reaches the ground as compression the whole way. The profile Inuit builders use is not a hemisphere. It is closer to a catenary, the curve a hanging chain makes, turned upside down, which is the shape engineers choose when they want an arch to carry its own weight with nothing pulling apart. Nobody derived it here. It was arrived at through generations of building, watching, and correcting, and it is correct. Then the assembly. Stacked rings would be a disaster, because every block in an unfinished ring has nothing to lean on. So the builder cuts a ramp into the first course and rises in a continuous spiral, each block braced by the one laid before it. He works from inside, walling himself in, which lets him trim every joint from the side that matters. The last gap at the crown takes the key block, lifted through and shaved from below until it jams. Only then does he cut a doorway and leave. The interior is managed with equal care. The entrance passage sits below the floor, so dense cold air pours into it and stays, a trap the warm air never has to fight. The sleeping platform is raised, because heat rises to meet it. A vent hole at the crown carries off stale air and moisture. Body heat and a qulliq, a seal oil lamp with a moss wick, can bring the upper air to shirtsleeve temperature while the wind outside strips heat from anything it touches. The inner surface melts a little and refreezes into a glaze of ice, and the dome gets stronger overnight. One correction is owed. Igloos were not, for most Inuit, permanent homes. They were built on the trail and left in the morning. Families wintered in sod and whalebone houses and summered in skin tents. That fact makes the igloo more impressive rather than less. This is disposable architecture: a warm, silent, structurally sound building raised in about an hour from a material that falls out of the sky for free, and returned to water in the spring without leaving anything behind at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain how snow insulates. Cite the exact phrase the passage uses to describe what snow does with warmth.",
+            "Contrast compressive strength with tensile strength, and explain why that contrast decides the igloo's shape.",
+            "The author writes that the achievement usually gets patronized as a curiosity. Analyze what that word choice is doing to the reader before any evidence has been given.",
+            "Find the sentence Nobody derived it here. Explain what claim the author is making with it, and why the next sentence matters to that claim."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(air trapped in pockets between ice crystals conducts heat poorly; cite: It simply refuses to let warmth leave)",
+            "(snow holds when pressed and fails when bent or stretched, so the dome is shaped to keep every part in compression)",
+            "(it frames the usual view as condescending and positions the reader to take the engineering seriously before proof is offered)",
+            "(that the curve came from inherited practice, not calculation; the next sentence insists the practice still reached the right answer)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["tensile → ____", "catenary → ____", "course (of blocks) → ____", "patronized → ____"],
+          "rows": 2,
+          "answers": [
+            "having to do with pulling or stretching a material apart",
+            "the curve a hanging chain makes under its own weight",
+            "one continuous level or row of blocks in a wall",
+            "treated as lesser, talked about with polite condescension"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage calls the igloo disposable architecture and treats that as praise. Explain the argument behind it, then give one reason someone might disagree.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(building fast from free material and leaving no trace is a design achievement; a counter view is that permanence and durability are the harder tests of a building)",
+            "(student question + a credible source type, such as an Inuit builder, an Arctic historian, or a materials engineer)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Technology only counts as advanced if it is complicated. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

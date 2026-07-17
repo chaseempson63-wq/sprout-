@@ -1,0 +1,304 @@
+{
+  "key": "atom",
+  "title": "The Tiny Thing Everything Is Made Of",
+  "blurb": "Atoms are so small you will never see one, and so empty that you have never actually touched anything.",
+  "topic": "science",
+  "bands": {
+    "1": {
+      "title": "The Tiny Thing Everything Is Made Of",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-atom", "templateLabel": "The Tiny Thing Everything Is Made Of", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the little ball in the middle." },
+        {
+          "kind": "image",
+          "imageKey": "atom",
+          "notes": ["Everything is made of atoms", "They are too small to see", "The air has them", "You are made of them too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Everything is made of tiny bits. The bits are called atoms. Say it like this: AT-um. Atoms are too small to see. They are in your hand. They are in your chair. They are in the air. They are in a drop of water. Atoms are in you too. You are made of them."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the little balls in each row. Write how many in the box.",
+          "emoji": "⚪",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "atom    tiny" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one. All of these are made of atoms.",
+          "pairs": [
+            { "left": "water", "right": "drink it" },
+            { "left": "chair", "right": "sit on it" },
+            { "left": "air", "right": "breathe it" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own atom. Put one ball in the middle and little balls going around it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tiny Thing Everything Is Made Of",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-atom", "templateLabel": "The Tiny Thing Everything Is Made Of", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "atom",
+          "notes": ["Say it AT-um", "Too small to see with a school microscope", "Millions fit on a pencil tip", "Gold, iron and oxygen are all kinds of atoms", "Your body is built from them"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tiny Thing Everything Is Made Of",
+          "text": "Look at your hand. It looks solid. But it is built from tiny pieces called atoms. Atoms are so small that you cannot see one, not even with a school microscope. Millions and millions of them fit on the tip of your pencil. Atoms come in different kinds. One kind is called oxygen. You breathe it in. One kind is called iron. It makes nails hard and strong. One kind is called gold. It is shiny and yellow. Every kind of atom is a different building block. Put them together in new ways and you get new things. A rock. A leaf. A tooth. You."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are the tiny pieces that build your hand called?", "Which kind of atom do you breathe in?", "Which kind of atom makes nails hard and strong?"],
+          "rows": 2,
+          "answers": ["atoms", "oxygen", "iron"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Your hand is built from tiny ____.", "You breathe in ____.", "Nails are hard because of ____.", "Something shiny and yellow can be made of ____."],
+          "wordBank": ["atoms", "oxygen", "iron", "gold"],
+          "answers": ["atoms", "oxygen", "iron", "gold"]
+        },
+        { "kind": "draw", "prompt": "Draw something in your room. Then write one word for what it is made of.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tiny Thing Everything Is Made Of",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-atom", "templateLabel": "The Tiny Thing Everything Is Made Of", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "atom",
+          "notes": ["The middle part is called the nucleus", "Atoms are mostly empty space", "Electrons whizz around the outside", "Atom comes from a Greek word meaning uncuttable", "You never truly touch anything"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Marble That Is Mostly Nothing",
+          "text": "Hold a marble in your hand. It feels solid and full. It is not. If you could zoom in, past the point where your eyes give up, you would find that the marble is built from atoms, and that each atom is almost entirely empty. At the middle of an atom sits a tiny clump called the nucleus. It holds protons, and usually neutrons packed in beside them. Far outside the nucleus, electrons move in a fast blur. Here is the strange part. The nucleus is thousands of times smaller than the whole atom. Imagine an atom blown up to the size of a sports stadium. The nucleus would be a pea sitting on the center spot. Everything else is empty. So why does the marble feel solid? Because the electrons on the outside of one atom push away the electrons on the outside of the next atom. You never really touch anything. You feel the push. The word atom comes from an old Greek word meaning uncuttable. People once believed you could never split one. They were wrong, but the name stuck."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the clump at the middle of an atom called?",
+            "What sits inside the nucleus?",
+            "In the stadium picture, what would the nucleus be?",
+            "Why do you think people once believed an atom could not be split?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the nucleus",
+            "protons, and usually neutrons",
+            "a pea on the center spot",
+            "(inference: they had no tools small enough to look inside, so they were guessing)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Marble That Is Mostly Nothing", "How to Play Marbles", "The Biggest Stadium in the World"],
+          "answers": ["The Marble That Is Mostly Nothing"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The middle of an atom is called the ____.", "____ move in a fast blur outside the nucleus.", "The word atom comes from a Greek word meaning ____."],
+          "wordBank": ["nucleus", "Electrons", "uncuttable"],
+          "answers": ["nucleus", "Electrons", "uncuttable"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: the passage says you never really touch anything. Explain what it means, and say whether that surprises you.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tiny Thing Everything Is Made Of",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-atom", "templateLabel": "The Tiny Thing Everything Is Made Of", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "atom",
+          "notes": ["Protons and neutrons sit in the nucleus", "The proton count decides which element it is", "1 proton is hydrogen, 79 is gold", "Rutherford's team found the nucleus in 1909", "Almost all of an atom is empty space"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Everything, From One Number",
+          "text": "Every atom is built the same way, out of the same three parts, and yet atoms make everything from air to bone to gold. The trick is in the counting. At the center of an atom is the nucleus, a dense knot of protons and neutrons. Protons carry a positive electric charge. Neutrons carry none. Around the nucleus, electrons move in a blur, each carrying a negative charge. The positive nucleus pulls on the negative electrons, and that pull is what holds the atom together. What makes one atom different from another is simply the number of protons in its nucleus. One proton, and you have hydrogen, the lightest thing there is. Six protons, and you have carbon, the backbone of every living thing. Eight, oxygen. Seventy-nine, gold. Change the proton count and you change the substance entirely. Nothing else about the recipe matters as much. For a long time nobody knew the nucleus was there. In 1909, working in Ernest Rutherford's laboratory, two scientists fired tiny particles at a sheet of gold foil so thin it was nearly transparent. Almost every particle sailed straight through, exactly as expected. But a few came bouncing back. Rutherford was astonished. Something small, hard, and heavy had to be hiding inside each atom, and almost everything else had to be empty space. That was the nucleus. The scale still stops people. If an atom were enlarged to the size of a cathedral, the nucleus would be a pinhead hanging in the middle of it. The rest is the electrons and their emptiness. When you knock on a table, you are not touching wood. You are feeling the electrons in your knuckles push back against the electrons in the table, across a gap they never close."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What holds an atom together? Explain how it works.",
+            "The passage says the trick is in the counting. Counting what, and why does it matter?",
+            "Why were the bouncing particles in the gold foil test such a surprise?",
+            "The passage says almost everything about an atom is empty space. So why can you not push your hand through a table?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the pull between the positive nucleus and the negative electrons",
+            "counting protons; the proton count decides which substance the atom is",
+            "(inference: if atoms were evenly solid or evenly thin, nothing should bounce straight back, so something tiny and heavy had to be hidden inside)",
+            "(the electrons in your hand and the electrons in the table push each other away)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Atoms are nearly empty, and one number, the proton count, decides what any substance is",
+            "Gold is the most valuable metal that scientists have ever studied",
+            "Ernest Rutherford invented the first microscope"
+          ],
+          "answers": ["Atoms are nearly empty, and one number, the proton count, decides what any substance is"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["nucleus → ____", "transparent → ____", "astonished → ____"],
+          "rows": 1,
+          "answers": ["the dense center of an atom, holding protons and neutrons", "thin or clear enough to see through", "very surprised by something unexpected"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says you have never touched anything. Do you think that is a fair thing to say, or is it a trick of words? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tiny Thing Everything Is Made Of",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-atom", "templateLabel": "The Tiny Thing Everything Is Made Of", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "atom",
+          "notes": ["Democritus imagined atoms about 2,400 years ago", "Thomson found the electron in 1897", "Chadwick found the neutron in 1932", "The nucleus is about 100,000 times smaller than the atom", "Your hydrogen is 13.8 billion years old", "Heavier atoms are built inside stars"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Uncuttable Thing That Got Cut",
+          "text": "For most of human history, the atom was an argument rather than an object. Around 2,400 years ago a Greek thinker named Democritus reasoned that if you kept cutting a piece of cheese in half, you would eventually reach a piece that could not be cut again. He called it atomos, the uncuttable. He had no evidence. It was a guess, and it sat unproven for more than two thousand years. The evidence arrived in pieces, and each piece embarrassed the one before it. In 1803 John Dalton showed that chemicals always combine in fixed, tidy ratios, which makes sense only if matter comes in indivisible units. In 1897 J. J. Thomson found something smaller than an atom: a light, negatively charged particle we now call the electron. The uncuttable had been cut. In 1909, in Ernest Rutherford's laboratory, researchers fired particles at gold foil and watched a few of them ricochet straight back, which meant the atom's mass was crammed into a minuscule core. In 1932 James Chadwick identified the neutron sharing that core with the protons. The picture that emerged is stranger than a solid ball. An atom is a nucleus of protons and neutrons surrounded by electrons, and the nucleus is roughly one hundred thousand times smaller than the atom itself. Almost the entire volume is empty. Worse for our intuitions, the electrons do not circle the nucleus like planets. Since Erwin Schrodinger's work in 1926, physicists describe them as clouds of probability: an electron has no definite path, only a region where it is likely to be found. Yet the emptiness is not weakness. Those electron clouds repel each other so fiercely that they hold up buildings, bones, and bridges. When your hand rests on a desk, no part of you contacts any part of the wood. Electrons push against electrons across a gap that never closes. One last fact rearranges the rest. Nearly every atom in your body was manufactured somewhere else. Hydrogen was forged minutes after the Big Bang. The carbon in your muscles and the oxygen in your blood were fused inside stars that died before the Sun existed. The atoms are not new. You are a temporary arrangement of very old parts."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says each piece of evidence embarrassed the one before it. Explain what it means using Thomson's discovery as your example.",
+            "What replaced the idea of electrons circling like planets, and who is credited? Quote the phrase the passage uses for the new picture.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why do you think the author saves it for last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the guess, the evidence, the empty nucleus-and-electron picture, and the age of the atoms)",
+            "(Democritus said atoms could not be cut; Thomson found the electron, a piece of an atom, so the name was proven wrong)",
+            "clouds of probability, from Erwin Schrodinger's 1926 work; quote: clouds of probability",
+            "(inform, with detail: it defines terms and gives dates and evidence, though the ending turns slightly persuasive)",
+            "(your atoms are ancient and borrowed, not yours; the author ends there so the reader is left holding it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["atomos → ____", "indivisible → ____", "ricochet → ____", "minuscule → ____"],
+          "rows": 1,
+          "answers": ["the Greek word for uncuttable", "not able to be split into smaller parts", "to bounce sharply off a surface", "extremely small"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Democritus had no evidence, and he was mostly right. Dalton had evidence. Why does science treat those two differently?",
+            "The passage says the emptiness is not weakness. Explain that idea in your own words."
+          ],
+          "rows": 3,
+          "answers": ["(opinion: a lucky guess cannot be tested or built on; evidence lets others check and extend it)", "(the electron clouds repel so strongly that mostly empty atoms still hold up solid things)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does knowing your atoms are billions of years old and borrowed from dead stars change how you think about yourself? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tiny Thing Everything Is Made Of",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-atom", "templateLabel": "The Tiny Thing Everything Is Made Of", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "atom",
+          "notes": ["Atomos is Greek for uncuttable, and it was wrong", "Rutherford's gold foil test, 1909", "About 1 alpha particle in 8,000 bounced back", "Schrodinger replaced orbits with clouds in 1926", "Nucleus to atom is roughly 1 to 100,000", "In 1989 IBM spelled its name with 35 atoms"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Named After a Mistake: The Atom's Long Argument",
+          "text": "The atom is named after a mistake. Around 400 BC, the Greek philosopher Democritus argued that matter could not be divided forever. Keep halving a lump of gold, he said, and you must eventually arrive at a particle that resists any further cut. He named it atomos, meaning uncuttable. Democritus had no instrument, no experiment, and no evidence. He had an argument. It was correct in spirit and wrong in the one detail his name preserved, because the atom can be cut, and the twentieth century spent much of its energy cutting it. The proof took 2,200 years to arrive, and it arrived in installments. In 1803 John Dalton noticed that elements combine in small whole-number ratios, never in messy fractions, a pattern that makes sense only if matter is grainy rather than smooth. In 1897 J. J. Thomson, studying rays in a vacuum tube, found a particle almost two thousand times lighter than the lightest atom. He had discovered the electron, and with it the uncomfortable fact that the uncuttable had parts. In 1909, in Ernest Rutherford's laboratory in Manchester, Hans Geiger and Ernest Marsden aimed a beam of alpha particles at a sheet of gold foil. The expectation was that everything would pass through with a slight deflection. Almost everything did. But roughly one particle in eight thousand rebounded backward, as though it had struck something immovable. Rutherford concluded that an atom's mass and positive charge are concentrated in a nucleus so small that the rest of the atom is essentially vacant. In 1932 James Chadwick found the neutron alongside the proton in that nucleus, and the modern picture was complete. Complete, but not intuitive. The nucleus is about one hundred thousand times smaller than the atom that contains it. Enlarge an atom to the length of a football field and the nucleus is a grain of sand on the center line. The identity of the atom, meanwhile, is set by one number: the count of protons in that grain. One proton is hydrogen. Six is carbon. Eight is oxygen. Seventy-nine is gold. Add a proton and the substance becomes something else entirely, with different color, different weight, and different behavior. Everything you have ever touched is a rearrangement of that single variable. And the electrons are stranger than the textbook diagram admits. They are usually drawn as tiny balls looping around the nucleus, which is a useful lie. Erwin Schrodinger's mathematics, published in 1926, describes them instead as standing clouds of probability. An electron does not have a path. It has a region where it is likely to be found, and asking where it is between measurements is closer to a category error than to a question. This is where the familiar phrase mostly empty space begins to mislead. Nothing about an atom feels empty from the outside. Those probability clouds resist compression so violently that they support skyscrapers and stop your hand at the surface of a desk. You have never touched anything in your life. You have felt electrons refusing electrons across a gap they never bridge, and your brain reports it as solidity. There is one more inversion. The atoms in your body are not yours and are not new. Hydrogen condensed out of the cooling universe about 13.8 billion years ago. The carbon in your cells and the oxygen in your lungs were fused in the cores of stars that lived and exploded before the Sun ignited. Iron in your blood was welded together in exploding stars, and the gold in a wedding ring may trace back to a collision between two dead stars. Democritus was searching for the smallest possible thing. He found, without knowing it, the oldest thing you will ever hold."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The opening claims the atom is named after a mistake. Explain the mistake and cite the exact phrase that says Democritus was both right and wrong.",
+            "The author calls the textbook diagram of looping electrons a useful lie. Explain how something can be both useful and a lie, and why the author chose that phrase instead of simply saying the diagram is wrong.",
+            "Identify the shift in the passage: where does it turn from history to argument, and how does the author signal it?",
+            "The passage says mostly empty space begins to mislead. Analyze what the author is doing by attacking a phrase that his own evidence supports. Does the passage earn that move?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a 2,400-year-old guess about indivisible matter proved half right, since atoms exist but split, are almost entirely empty, and are far older than the people made of them)",
+            "(the name means uncuttable but atoms can be split; cite: correct in spirit and wrong in the one detail his name preserved)",
+            "(it predicts and teaches well enough to be worth keeping, but it misstates reality; useful lie concedes the diagram's value while still correcting it)",
+            "(at Complete, but not intuitive, and again at This is where the familiar phrase begins to mislead; short sentences and direct address signal each pivot)",
+            "(it distinguishes empty of matter from empty of effect: the volume is vacant but the electron clouds are rigid; earned, because it supplies the skyscraper and desk evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["atomos → ____", "deflection → ____", "vacant → ____", "inversion → ____"],
+          "rows": 2,
+          "answers": [
+            "the Greek term for uncuttable, the root of the word atom",
+            "a turn or bend away from a straight path",
+            "empty, with nothing occupying the space",
+            "a reversal that turns an expected idea upside down"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Democritus reasoned his way to atoms with no experiment. Rutherford's team found the nucleus by accident, chasing a result nobody expected. Which of those is a better model of how science works, and why?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(opinion: reasoning proposes, experiment decides; surprises like the rebounding particles are where real discovery happens)", "(student question + a credible source type, such as a university physics department or a peer-reviewed journal)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Democritus deserves no credit for the atom, because a guess without evidence is not science. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "key": "sunflower",
+  "title": "The Flower That Follows the Sun",
+  "blurb": "It looks like one big flower. It is really a thousand tiny ones, packed at the only angle that never repeats.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Flower That Follows the Sun",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-sunflower", "templateLabel": "The Flower That Follows the Sun", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the middle of the sunflower." },
+        {
+          "kind": "image",
+          "imageKey": "sunflower",
+          "notes": ["It is taller than you", "The middle is full of seeds", "Bees land on it", "A young one turns its head all day", "Birds come to eat the seeds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a sunflower. It is tall and yellow. Many sunflowers grow taller than your mom. The middle is packed with seeds. Birds come to eat them. A young sunflower turns its head all day. In the morning it looks east. It follows the sun across the sky. At night it turns back to face east again. It is waiting for the sun to come up."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the sunflowers in each row. Write how many in the box.",
+          "emoji": "🌻",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "tall    seed" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "sunflower", "right": "seeds" },
+            { "left": "bee", "right": "buzz" },
+            { "left": "sun", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a tall sunflower. Make it taller than you.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Flower That Follows the Sun",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-sunflower", "templateLabel": "The Flower That Follows the Sun", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "sunflower",
+          "notes": ["It starts as one small seed", "The tallest one ever grown was thirty feet", "A young one turns to follow the sun", "A grown one faces east all day", "Warm flowers bring more bees"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Flower That Follows the Sun",
+          "text": "A sunflower starts as one small seed. It pushes up a green stem. It grows fast. Some sunflowers grow taller than a door. The tallest one ever grown was thirty feet high. A young sunflower does something strange. Its head turns to follow the sun. It faces east in the morning. It faces west by evening. Then it turns back east while you sleep. When the sunflower grows up, it stops turning. It stays facing east. The morning sun warms its face. Warm flowers bring more bees. More bees mean more seeds."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a sunflower start as?", "Which way does a young sunflower face in the morning?", "What happens when the sunflower grows up?"],
+          "rows": 2,
+          "answers": ["one small seed", "east", "it stops turning and stays facing east"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A sunflower starts as one small ____.", "A young sunflower follows the ____.", "A grown sunflower faces ____.", "Warm flowers bring more ____."],
+          "wordBank": ["seed", "sun", "east", "bees"],
+          "answers": ["seed", "sun", "east", "bees"]
+        },
+        { "kind": "draw", "prompt": "Draw a sunflower in the morning. Add the sun where the flower is looking.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Flower That Follows the Sun",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-sunflower", "templateLabel": "The Flower That Follows the Sun", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "sunflower",
+          "notes": ["One head can hold a thousand tiny flowers", "The yellow petals are flowers too", "Every seed was a flower first", "Young heads swing east to west each day", "Grown heads lock facing east"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Flower That Is Really a Crowd",
+          "text": "Stand in front of a sunflower and you think you are looking at one big flower. You are not. You are looking at hundreds of them. The yellow petals around the edge are not petals at all. Each one is its own small flower. Their job is to be bright, so that bees flying past cannot miss the plant. The dark middle is stranger still. It is packed with tiny flowers, sometimes more than a thousand of them, wedged side by side. Every one of those tiny flowers, if a bee visits it, turns into a single seed. So the seeds you crack open in your hand were each a flower first. A young sunflower also follows the sun. Its head faces east at dawn and swings west by dusk, then turns back east overnight. Once the plant is fully grown, the swinging stops. The head locks facing east and stays there."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How many flowers are you really looking at when you look at a sunflower?",
+            "What is the job of the bright yellow flowers around the edge?",
+            "What does one tiny middle flower turn into after a bee visits it?",
+            "Why do you think the plant grows bright yellow flowers that make no seeds?"
+          ],
+          "rows": 2,
+          "answers": [
+            "hundreds of them",
+            "to be bright so bees flying past cannot miss the plant",
+            "a single seed",
+            "(inference: they act like a sign that brings bees in, and the bees make the seeds)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Flower That Is Really a Crowd", "How to Plant a Vegetable Garden", "The Story of the Honey Bee"],
+          "answers": ["The Flower That Is Really a Crowd"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The dark middle is packed with tiny ____.", "A young sunflower faces ____ at dawn.", "Once the plant is fully grown, the swinging ____."],
+          "wordBank": ["flowers", "east", "stops"],
+          "answers": ["flowers", "east", "stops"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the sunflower, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Flower That Follows the Sun",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-sunflower", "templateLabel": "The Flower That Follows the Sun", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sunflower",
+          "notes": ["Helianthus annuus, native to North America", "Inflorescence: a crowd of flowers acting as one", "Ray florets at the rim make no seeds", "Disk florets in the middle each become one seed", "The head turns by growing, not by muscle", "An internal clock keeps the rhythm"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Thousand Flowers Wearing One Face",
+          "text": "Botanists have a word for what a sunflower actually is: an inflorescence, which means a crowd of flowers pretending to be one. The sunflower does this better than almost any plant alive. Start at the rim. Those big yellow blades look like petals, but each blade is a complete flower called a ray floret. Ray florets usually make no seeds at all. They are advertising. Their only job is to be visible from far away, a yellow flag that says land here. Now look at the dark center. It is not a cushion or a pad. It is a packed crowd of tiny flowers called disk florets, sometimes two thousand of them on one head. Each disk floret opens, gets pollinated, and becomes exactly one seed. Every striped seed you have ever eaten began as its own small flower. The head also moves. A young sunflower tracks the sun from east to west across the day, then swings back east through the night to wait for dawn. It does this by growing, not by turning: the east side of the stem stretches during the day and the west side stretches at night, bending the head one way and then the other. An internal clock keeps the rhythm, so the plant turns back east even in the dark. When the plant matures, the tracking stops and the head settles facing east for good. That is not laziness. An east-facing head warms up fast in the morning sun, and warm heads pull in far more bees than cold ones. More bees means more of those two thousand florets become seeds."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is an inflorescence, in your own words?",
+            "Explain the difference between a ray floret and a disk floret.",
+            "How does a sunflower head move if it has no muscles?",
+            "The passage says a mature head facing east is not laziness. What is the plant getting out of it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(a crowd of small flowers that together look like one big flower)",
+            "ray florets are the yellow blades at the rim and make no seeds; disk florets fill the center and each becomes one seed",
+            "it grows unevenly; the east side of the stem stretches by day and the west side by night, bending the head",
+            "(inference: an east-facing head warms early, warm heads attract more bees, and more bees means more seeds)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A sunflower is a crowd of tiny flowers whose shape and movement are both built to bring in bees",
+            "Bees are the most important insect on the planet",
+            "Sunflowers are the tallest plant that has ever been grown"
+          ],
+          "answers": ["A sunflower is a crowd of tiny flowers whose shape and movement are both built to bring in bees"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["inflorescence → ____", "floret → ____", "pollinated → ____"],
+          "rows": 1,
+          "answers": ["a crowd of flowers grouped to look like one flower", "one of the tiny individual flowers in the head", "given pollen, usually by a visiting insect, so a seed can form"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage calls the yellow ray florets advertising. Explain why that word fits, and give two reasons the plant might spend energy on flowers that make no seeds.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Flower That Follows the Sun",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-sunflower", "templateLabel": "The Flower That Follows the Sun", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sunflower",
+          "notes": ["Spiral counts land on Fibonacci numbers", "Florets are placed 137.5 degrees apart", "That value is called the golden angle", "Heliotropism: the head tracks the sun", "A circadian clock drives the swing", "East-facing heads get about 5x more pollinators"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Golden Angle",
+          "text": "Look closely at the dark center of a sunflower and you will see spirals. They curve out from the middle, some sweeping clockwise, some counterclockwise. Count them and something odd happens. The numbers are almost never random. A sunflower head will commonly carry 34 spirals running one way and 55 the other, or 55 and 89, or 89 and 144. Those numbers come from the Fibonacci sequence, where each term is the sum of the two before it: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144. The plant is not doing math. It is solving a packing problem. As the head develops, each new floret is laid down at a fixed angle from the one before it, and that angle is roughly 137.5 degrees, a value mathematicians call the golden angle. Choose any simple fraction of a circle instead, say a half or a third or a quarter, and the florets line up in spokes, leaving wide empty wedges between them. The golden angle cannot be written as a simple fraction, so no floret ever lands directly behind an earlier one. Each seed slots into the largest gap left. Nothing lines up, nothing is wasted, and the pattern that falls out the other side is a lattice of Fibonacci spirals. The head is busy in another way. A young sunflower tracks the sun, facing east at sunrise and west at sunset, then rotating back east overnight. The motion is growth, not muscle: the stem's east flank elongates by day and its west flank elongates by night. In 2016 researchers showed that a circadian clock, not sunlight alone, drives the rhythm, because sunflowers kept under constant light kept swinging on schedule for several days. Once the plant is fully grown, the head stops tracking and holds east. The same researchers found the reason. East-facing heads warm quickly in the early sun, and warm heads received about five times as many pollinator visits as heads turned artificially to the west. The flower is not worshipping the sun. It is running a warm landing pad at the hour the bees are working."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why would a simple fraction of a circle, like a quarter turn, be a worse rule for placing florets?",
+            "What evidence does the passage give that a clock, and not just sunlight, drives the tracking? Quote the phrase.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last sentence in your own words. Why does the author end there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering golden-angle packing + Fibonacci spirals + clock-driven tracking + the pollinator payoff)",
+            "(a simple fraction repeats, so florets stack into spokes and leave wide empty wedges; the golden angle never repeats so gaps get filled)",
+            "sunflowers under constant light kept swinging for several days; quote: sunflowers kept under constant light kept swinging on schedule for several days",
+            "(inform, with detail: it defines the golden angle and cites a 2016 study; the closing line leans playful)",
+            "(the tracking is not devotion, it is a payoff in pollinator visits; the author ends by correcting the romantic reading)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["lattice → ____", "elongates → ____", "circadian → ____", "pollinator → ____"],
+          "rows": 1,
+          "answers": ["a regular criss-crossing pattern", "gets longer", "following a roughly 24 hour internal rhythm", "an animal that carries pollen between flowers"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that the plant is not doing math. If that is true, how do Fibonacci numbers keep showing up?",
+            "Why might it help a plant to keep its rhythm going in the dark instead of waiting for the sun to appear?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the numbers are a side effect of repeating one fixed angle; efficient packing produces the spiral counts on its own)",
+            "(inference: it can already face east before sunrise and start warming the instant light arrives, rather than losing the early hour)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does knowing the reason a sunflower faces east make it less beautiful, or more? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Flower That Follows the Sun",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-sunflower", "templateLabel": "The Flower That Follows the Sun", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "sunflower",
+          "notes": ["Helianthus annuus, family Asteraceae", "Domesticated in North America 4,000 to 5,000 years ago", "Golden angle placement: about 137.5 degrees", "Spiral counts are consecutive Fibonacci numbers", "Circadian clock drives the tracking, shown in 2016", "Russian breeders pushed seed oil past half its weight"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Sunflower Is Not What You Think It Is",
+          "text": "Almost everything obvious about a sunflower is wrong. It is not one flower. It does not spend its whole life turning to watch the sun. And it is not a European crop that happened to reach America. Take those in order. Start with the flower that is not a flower. Helianthus annuus belongs to the family Asteraceae, whose signature trick is the composite head: an inflorescence, a crowd of small flowers arranged to read from a distance as a single large one. The yellow blades around the rim are ray florets, complete flowers that produce no seed. They are signage. The dark center is a packed field of disk florets, sometimes two thousand on one head, and each fertilized floret matures into exactly one seed. A sunflower head is less a flower than a small city of them sharing one billboard. Now the spirals. Those florets are not scattered. Each new one is placed at a fixed angle of about 137.5 degrees from its predecessor, a value known as the golden angle. This matters because 137.5 degrees is not a neat fraction of a circle. Had the plant used a half turn, or a third, or a quarter, florets would stack into a few spokes and leave the rest of the head empty. Because the golden angle never repeats, every new floret drops into the widest gap available, and the head fills evenly from center to rim. The visible result is a lattice of interlocking spirals whose counts land on consecutive Fibonacci numbers: 34 and 55, or 55 and 89, or on a large head 89 and 144. The plant is not counting. The counts are what falls out of efficient packing. Then the clock. Young sunflowers do track the sun, east at dawn to west at dusk, then back east through the night. But they do it by growing, not by turning: the east side of the stem elongates through the day, the west side through the night, and the head bends accordingly. In 2016 a research team at the University of California, Davis, showed the rhythm is governed by the plant's circadian clock rather than by sunlight alone. Sunflowers held under constant light continued to swing on a roughly 24 hour schedule for several days, chasing a sun that was not moving. And the tracking ends at maturity. The adult head parks facing east and stays there, which turns out to be a commercial decision: east-facing heads warm quickly in the morning sun, and the same team recorded roughly five times as many pollinator visits to warm east-facing heads as to heads they had turned west. Finally the history, which is the part most people get backwards. The sunflower is North American. Indigenous peoples in what is now the central and eastern United States were cultivating it as a crop about 4,000 to 5,000 years ago, for seed, meal, oil, and dye, long before wheat reached the continent. Spanish sailors carried it to Europe in the 1500s, where for two centuries it was mostly admired and rarely eaten. Russia changed that. The Orthodox Church's fasting rules barred many cooking oils during Lent, and sunflower oil, being new, appeared on no list. Demand followed the loophole, and Russian growers spent the 1800s breeding oil content up from roughly a quarter of the seed's weight to more than half. Those improved varieties were then shipped back across the Atlantic, and American farmers bought their own plant back, renamed Mammoth Russian. Look at a sunflower long enough and it stops being scenery. It is a crowd wearing one face, a packing rule made visible, a clock that keeps time in the dark, and a crop that went around the world and came home under someone else's name."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the golden angle packs a head better than a half, a third, or a quarter turn. Cite the evidence.",
+            "The author writes that the plant is not counting. Explain what that sentence is correcting, and why it matters.",
+            "Identify the structure of this passage. What does the opening paragraph promise, and how does the author deliver it?",
+            "The author calls the adult head's east-facing habit a commercial decision. Analyze that word choice. Is it fair, or is it doing something the evidence does not support?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the composite head, the packing angle, the clock, and the North American origin)",
+            "(simple fractions repeat and stack florets into spokes; cite: Because the golden angle never repeats, every new floret drops into the widest gap available)",
+            "(it corrects the idea that the plant knows math; the Fibonacci counts are a by-product of one repeated angle, not a calculation)",
+            "(the opening lists three wrong beliefs and says take those in order; each section then knocks one down in that same order)",
+            "(analysis: it frames the plant as trading warmth for pollinator visits; supported by the roughly five times figure, though commercial implies intent the plant does not have)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["inflorescence → ____", "predecessor → ____", "cultivating → ____", "loophole → ____"],
+          "rows": 2,
+          "answers": [
+            "a crowd of small flowers grouped so they read as one large flower",
+            "the one that came immediately before",
+            "growing and tending a plant as a crop",
+            "a gap in a rule that lets you do what the rule seems to forbid"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says Europeans admired the sunflower for two centuries and rarely ate it, then a fasting rule turned it into a major crop. What does that suggest about why some crops spread and others do not?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: spread depends on demand and culture, not only on whether a plant is useful; a rule or a market can matter more than the biology)",
+            "(student question + a credible source type, such as a plant-science journal or an agricultural history)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The sunflower's spiral is proof that nature understands mathematics. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

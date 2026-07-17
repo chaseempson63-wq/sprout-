@@ -1,0 +1,320 @@
+{
+  "key": "knight",
+  "title": "The Knight Who Started Out as a Kid",
+  "blurb": "Real knights began training at seven, and their steel suits were far lighter than the movies pretend.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Knight Who Started Out as a Kid",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-knight", "templateLabel": "The Knight Who Started Out as a Kid", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the helmet. Find the shield." },
+        {
+          "kind": "image",
+          "imageKey": "knight",
+          "notes": ["The metal suit is called armor", "The helmet has a flap for the eyes", "Knights rode big strong horses", "Every knight was a kid first"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a knight. A knight wore a suit made of metal. The metal suit kept him safe. He had a big helmet for his head. He had a shield to hold. He rode a strong horse. The horse wore metal too. A knight was not born a knight. He was a kid first, just like you."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the shields in each row. Write how many in the box.",
+          "emoji": "🛡️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "steel    horse" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "knight", "right": "helmet" },
+            { "left": "horse", "right": "saddle" },
+            { "left": "king", "right": "crown" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own knight. Put a pattern on the shield.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Knight Who Started Out as a Kid",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-knight", "templateLabel": "The Knight Who Started Out as a Kid", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "knight",
+          "notes": ["Armor was made of many pieces", "There were metal gloves and metal shoes", "The helmet flap is called a visor", "Each suit was made to fit one person", "The shield pattern is a coat of arms"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Suit With a Hundred Pieces",
+          "text": "A knight's metal suit was called armor. It was not one piece. It was made of many pieces that all fit together. There were metal shoes for his feet. There were metal gloves for his hands. There was a helmet with a flap that lifted up so he could see. Every piece was made to fit one knight only, like a pair of shoes made just for you. The helmet hid his face. So the knight painted a pattern on his shield. His friends knew the pattern. That way they could find him in a crowd."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What was a knight's metal suit called?", "What lifted up on the helmet?", "Why did the knight paint a pattern on his shield?"],
+          "rows": 2,
+          "answers": ["armor", "a flap, so he could see", "his helmet hid his face, so the pattern helped his friends find him"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A knight's metal suit was called ____.", "He wore metal ____ on his hands.", "The ____ hid his face.", "He painted a ____ on his shield."],
+          "wordBank": ["helmet", "pattern", "armor", "gloves"],
+          "answers": ["armor", "gloves", "helmet", "pattern"]
+        },
+        { "kind": "draw", "prompt": "Design a shield for yourself. Draw a pattern your friends would know.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Knight Who Started Out as a Kid",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-knight", "templateLabel": "The Knight Who Started Out as a Kid", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "knight",
+          "notes": ["Training started at about age seven", "A page waited at the table and cared for horses", "A squire carried one knight's shield", "The tap with a sword is called the accolade", "Knight comes from cniht, Old English for boy"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Fourteen Years to Become a Knight",
+          "text": "In much of medieval Europe, no one became a knight in a day. It took about fourteen years, and it started when you were seven. At seven, a boy was sent away to live in another lord's castle. He was called a page. He carried messages, waited at the table, and learned to look after horses. He practiced sword moves with a wooden sword. At about fourteen, he became a squire. A squire belonged to one knight. He cleaned the knight's armor, saddled his war horse, and carried his shield. When the knight rode to battle, the squire rode behind him and watched. At about twenty-one, if he had done well, he was made a knight. The ceremony was short. A lord tapped him on the shoulder with the flat of a sword, and it was done. He had spent most of his childhood getting ready for that tap."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How old was a boy when his knight training started?",
+            "Name two jobs a page had to do.",
+            "What did a squire carry for his knight?",
+            "Why do you think a boy was sent away to a different lord's castle instead of staying home?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about seven years old",
+            "carried messages, waited at the table, looked after horses (any two)",
+            "the knight's shield",
+            "(inference: so he would learn from someone who was not his family, and build ties with another household)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Fourteen Years to Become a Knight", "How to Build a Stone Castle", "The Fastest Horse in Europe"],
+          "answers": ["Fourteen Years to Become a Knight"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A seven year old in training was called a ____.", "At about fourteen he became a ____.", "He practiced with a wooden ____.", "A lord tapped his ____ with a sword."],
+          "wordBank": ["page", "squire", "sword", "shoulder"],
+          "answers": ["page", "squire", "sword", "shoulder"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which job sounds harder to you, page or squire, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Knight Who Started Out as a Kid",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-knight", "templateLabel": "The Knight Who Started Out as a Kid", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "knight",
+          "notes": ["A full suit weighed about fifty pounds", "The weight sat on the whole body, not the shoulders", "Mail could hold thirty thousand riveted rings", "The crane-lift story is a movie myth", "Milan and Augsburg made the finest armor", "Every suit was fitted to one body"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Beetle on Its Back, and Why It Is Wrong",
+          "text": "You have probably seen the scene in a movie. A knight in shining armor is so weighed down by steel that he can barely waddle, and when he falls over he lies there like an upturned beetle until someone hauls him up with a crane. It is a good joke. It is also wrong. A full suit of field armor from the 1400s weighed about fifty pounds. That sounds like a lot until you notice where the weight sat. Armor was strapped to the whole body, so the arm pieces rode on the arms and the leg pieces rode on the legs. Nothing hung off the shoulders. A modern soldier often carries more than that in a single pack, and all of it pulls down on the back. Knights in armor could run. They could climb into the saddle without help. They could get up off the ground. They had to, because a knight who could not stand up was a dead knight. Before plate armor, knights wore mail: thousands of small iron rings, each one linked through four others, punched and riveted shut by hand. A mail shirt could hold thirty thousand rings. It took an armorer months. Plate armor was fitted to one body, like a suit of clothes made of steel. It had hinges at the elbow and knee and overlapping plates at the shoulder so the joints still bent. The best armorers in Milan and Augsburg were famous, and rich knights waited years for their work."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The armor weighed about fifty pounds. Explain why that did not make a knight helpless.",
+            "What is mail, and how was it made?",
+            "The passage says armor was fitted to one body. What problem would a knight have if he borrowed a friend's armor?",
+            "Why would an armorer in Milan be able to charge so much for his work?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the weight was spread over the whole body instead of hanging from the shoulders",
+            "thousands of small iron rings, each linked through four others and riveted shut by hand",
+            "(inference: it would not fit, so the joints would not bend right and gaps would open up)",
+            "(inference: the work took months, needed great skill, and the best armor kept a rich man alive)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Knight armor was lighter and better built than the movies suggest, and knights could move in it",
+            "Nobody in the Middle Ages knew how to work iron",
+            "The best way to carry weight is in a backpack"
+          ],
+          "answers": ["Knight armor was lighter and better built than the movies suggest, and knights could move in it"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["mail → ____", "armorer → ____", "riveted → ____", "field armor → ____"],
+          "rows": 1,
+          "answers": [
+            "armor made of thousands of linked iron rings",
+            "the craftsperson who made armor",
+            "fastened shut with a small metal pin",
+            "armor made for real fighting, not for show"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: why do you think movies keep showing knights as slow and clumsy, even though it is not true? Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Knight Who Started Out as a Kid",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-knight", "templateLabel": "The Knight Who Started Out as a Kid", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "knight",
+          "notes": ["Knights paid for their own armor and horses", "A destrier cost more than the armor did", "Melee tournaments were fought across open country", "Winners took the loser's horse and armor for ransom", "Henry II of France died from a jousting wound in 1559", "Chevauchee raids burned farms on purpose"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Who Paid for the Shining Armor",
+          "text": "Here is a question that storybooks never ask: who paid for all that steel? The knight did. A knight supplied his own armor, his own weapons, and his own horses, and the bill was staggering. The armor alone could cost more than a farm worker earned in several years. The horse cost more than the armor. A destrier, the heavy war horse bred to carry an armored man at a charge, was the single most expensive animal in medieval Europe, and a knight needed more than one, because horses go lame and horses die. Add a squire, a groom, spare weapons, and food for all of them, and you can see why knights came from families that already owned land. Being a knight was not a job you applied for. It was a job you could afford. That expense shaped everything, including the tournament. Tournaments began as mock battles called melees, in which two teams of knights fought across open countryside for hours. Men were injured. Men died. The prize was not a trophy. A winner could capture a beaten knight's horse and armor and demand a ransom to give them back, which meant a skilled young knight with no land could actually make a living on the tournament circuit. Later, the joust became the showpiece: two riders, one fence, one lance each. It was safer, but not safe. In 1559, King Henry II of France took a lance splinter through the slot in his visor and died ten days later. And chivalry? Chivalry was the code knights were supposed to live by: courage, loyalty, mercy to the beaten, protection for the weak. Some knights took it seriously. Many did not. During the Hundred Years' War, English knights ran raids called chevauchees, riding through French countryside and deliberately burning farms, mills, and villages to wreck the enemy king's income. The same men who swore to protect the helpless were paid to ruin them. So the storybook knight is not a lie, exactly. He is a highlight reel. The code was real, the courage was often real, and so were the burned villages and the ransom bills."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how a young knight with no land could still make money. Quote the phrase the passage uses.",
+            "The passage says being a knight was a job you could afford. Explain what that sentence is arguing.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the phrase highlight reel mean here, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the cost of knighthood + tournaments + the gap between chivalry and reality)",
+            "he won ransoms at tournaments; quote: make a living on the tournament circuit",
+            "(that knighthood was decided by family wealth, not by courage or merit)",
+            "(inform, with a persuasive edge: it gives facts and dates, but argues against the storybook version)",
+            "(only the best moments get shown; the author ends there to leave the reader with the whole picture)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["destrier → ____", "melee → ____", "ransom → ____", "chevauchee → ____"],
+          "rows": 1,
+          "answers": [
+            "a heavy war horse bred to carry an armored rider at a charge",
+            "a mock battle fought by two teams of knights across open country",
+            "money paid to get back a captured person or their gear",
+            "a raid that deliberately burned farms and villages"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Explain the contradiction between the code of chivalry and the chevauchee raids in your own words.",
+            "If knighthood depended on family wealth, what does that tell you about who could never become a knight, no matter how brave they were?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(they swore to protect the weak, then were paid to burn the homes of the weak)",
+            "(inference: poor families were shut out entirely; courage was not the gate, land was)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should we still call chivalry a code of honor if so many knights ignored it? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Knight Who Started Out as a Kid",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-knight", "templateLabel": "The Knight Who Started Out as a Kid", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "knight",
+          "notes": ["Crecy 1346 and Agincourt 1415", "Swiss pike blocks stopped cavalry charges", "Proof mark: a dent left by a test shot", "Leeds 2011: armor doubled the energy cost of running", "Cniht is Old English for boy or servant", "Britain still knights people today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Knight Was Killed by Arithmetic",
+          "text": "For roughly four hundred years, a man in steel on a heavy horse was the most powerful thing on a European battlefield. Then, over about a century and a half, he stopped being worth the money. That second sentence is the interesting one, because the knight did not lose a fight with a better weapon. He lost an argument with a ledger. Start with what actually worked against him. At Crecy in 1346 and again at Agincourt in 1415, English longbowmen broke French cavalry charges. The longbow did not punch cleanly through good plate at a distance, and the story that it did is mostly wishful. What it did was kill horses, wound the badly armored, and turn a charge into a jam of stalled men in churned mud, where they could be finished off on foot. Around the same time, Swiss infantry proved something even more upsetting: a tight block of ordinary men holding long pikes could stop a cavalry charge dead, and those men cost almost nothing to equip. Then gunpowder arrived, and armorers did the obvious thing. They made the steel thicker. Fifteenth and sixteenth century breastplates got heavier and were sometimes tested by firing a gun at them, leaving a dent called a proof mark that was a receipt: this plate stopped a ball. It worked. It also could not scale. Armor thick enough to defeat a musket everywhere would be too heavy to move in, so armor retreated. It shrank to a helmet and a breastplate, and then to almost nothing. Here is the arithmetic. One knight took fourteen years to train, starting at age seven. He supplied armor and multiple war horses at a price only a landholding family could carry. An arquebusier could be handed a gun and taught to use it in weeks, and a hundred of them cost less than a handful of knights. Kings noticed. As they got richer and better at collecting taxes, they stopped begging vassals to show up with their own gear and started paying professional soldiers who showed up because it was their job. The whole feudal machine that produced knights, land in exchange for service, quietly became a worse deal than cash. So the knight did not die. He was outbid. What survived is the word. In Britain, the monarch still knights people, and the ceremony is a light touch of a sword on each shoulder, a direct descendant of the medieval accolade. Nobody expects the new knight to own a horse. The title got separated from the job that made it, and then it outlived the job by four hundred years, which is a strange kind of afterlife for a word that started in Old English as cniht, meaning boy, or servant. There is one last fact worth holding on to. In 2011, researchers at the University of Leeds put volunteers in accurate replica fifteenth century armor and ran them on a treadmill while measuring their oxygen use. Wearing the armor roughly doubled the energy cost of walking and running. Part of that was the weight on the legs, and part was the breastplate itself, which made deep breathing hard. So the knight was not a slow beetle in a can, as the movies pretend. He was an athlete doing everything twice as hard as you would, for fourteen years of training, in a suit that his family had to sell land to buy."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says the longbow story is mostly wishful. Explain what the longbow actually did at Crecy and Agincourt, and cite the evidence.",
+            "Explain the sentence It also could not scale. What could not scale, and why not?",
+            "Identify the central claim of this passage. The author states it twice in almost the same words. Quote both statements.",
+            "Analyze the final paragraph. Why does the author end an essay about economics with a treadmill study? What is that choice doing?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: knights disappeared because they became too expensive compared to cheap trained infantry, not because they were beaten by a better weapon)",
+            "(it killed horses and stalled charges in mud rather than piercing plate; cite: kill horses, wound the badly armored, and turn a charge into a jam of stalled men in churned mud)",
+            "(thickened armor stopped bullets but could not be thick everywhere without being too heavy to move in)",
+            "(quote: He lost an argument with a ledger. and quote: So the knight did not die. He was outbid.)",
+            "(it swaps the ledger for the human being, so the reader ends with respect for the knight rather than a balance sheet; it also answers the movie myth one last time)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["ledger → ____", "vassal → ____", "proof mark → ____", "feudal → ____"],
+          "rows": 2,
+          "answers": [
+            "a book of accounts recording money in and money out",
+            "someone who held land from a lord in exchange for military service",
+            "a dent left by a test shot to show the plate stopped a ball",
+            "describing a system where land was traded for service instead of wages"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage argues that cheap trained infantry beat expensive elite soldiers. Name one modern situation where the same argument might apply, and explain the parallel.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(student parallel: any case where cheap mass-produced tools outcompete expensive specialist ones)",
+            "(student question + a credible source type, such as a household account book or an armorer's records)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The knight was not defeated in battle, he was priced out of existence. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

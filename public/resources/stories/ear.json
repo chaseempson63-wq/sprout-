@@ -1,0 +1,315 @@
+{
+  "key": "ear",
+  "title": "The Snail Inside Your Ear",
+  "blurb": "How the curl on the side of your head catches sound, and why there is a snail-shaped tunnel hidden behind it.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Snail Inside Your Ear",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-ear", "templateLabel": "The Snail Inside Your Ear", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Then touch your own ear." },
+        {
+          "kind": "image",
+          "imageKey": "ear",
+          "notes": ["You have two ears", "Ears help you hear", "Ears work while you sleep", "Inside is a tiny curly tunnel"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "You have two ears. One on each side. Ears help you hear. Ears catch sound. A dog barks. Your ear catches it. Mom calls your name. Your ear catches that too. Deep inside your ear is a tiny tunnel. It curls around like a snail shell. Your ears work all day. Your ears even work while you sleep."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the ears in each row. Write how many in the box.",
+          "emoji": "👂",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ear    hear" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part of you with its job.",
+          "pairs": [
+            { "left": "ear", "right": "hear" },
+            { "left": "eye", "right": "see" },
+            { "left": "nose", "right": "smell" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a face with two ears. Draw something loud next to it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Snail Inside Your Ear",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-ear", "templateLabel": "The Snail Inside Your Ear", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "ear",
+          "notes": ["The eardrum is a real drum skin", "Three tiny bones hide inside", "They are the smallest bones you have", "The curly part is called the cochlea", "Your ears never turn off"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Drum in Your Head",
+          "text": "The part of your ear you can touch is a curly cup. It catches sound and points it down a little tunnel in your head. At the end of the tunnel is your eardrum. It is a thin skin, stretched tight like the top of a real drum. When sound hits it, it shakes. Behind your eardrum are three bones. They are the smallest bones in your whole body. The three bones tap the shaking along to a curly tube shaped like a snail shell. Inside that snail is fluid and tiny hairs. The hairs wiggle. Your brain turns the wiggles into sound."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does the curly part of your ear catch?", "What is your eardrum like?", "How many bones hide behind your eardrum?", "What is inside the snail-shaped tube?"],
+          "rows": 2,
+          "answers": ["sound", "a thin skin stretched tight like a drum", "three", "fluid and tiny hairs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Sound goes down a tunnel to your ____.", "Your eardrum ____ when sound hits it.", "There are ____ tiny bones behind it.", "The curly tube is shaped like a ____."],
+          "wordBank": ["eardrum", "shakes", "three", "snail"],
+          "answers": ["eardrum", "shakes", "three", "snail"]
+        },
+        { "kind": "draw", "prompt": "Draw an ear. Add a drum inside it and three tiny bones.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Snail Inside Your Ear",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-ear", "templateLabel": "The Snail Inside Your Ear", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "ear",
+          "notes": ["The three bones: hammer, anvil, stirrup", "The stirrup is your smallest bone", "Cochlea means snail in Greek", "Thousands of tiny hairs sit inside", "Your ears also keep you balanced"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Ripple Becomes a Sound",
+          "text": "Sound is not a thing you can hold. Sound is a shiver in the air. When a door slams, the air around it squeezes and stretches, and those squeezes spread out in every direction like ripples in a pond. Your ear is built to catch ripples. The curved flap on the side of your head works like a cup. It gathers the ripples and funnels them down a short tunnel to your eardrum, a thin sheet of skin pulled tight. The ripples make it shake. On the other side of the eardrum sit three bones with old-fashioned names: the hammer, the anvil, and the stirrup. They are the tiniest bones in your body. The stirrup is smaller than a grain of rice. The three of them pass the shaking along, one to the next, and make it stronger as it goes. The shaking arrives at the cochlea, a tube curled up like a snail shell and filled with fluid. Thousands of hairs stand inside it. Different hairs bend for different sounds. High notes bend the hairs at one end. Low notes bend the hairs at the other. Each bend sends a message to your brain."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is sound, according to the passage?",
+            "Name the three bones behind the eardrum.",
+            "What is the cochlea shaped like, and what is inside it?",
+            "Why do you think you have an ear on each side of your head instead of just one?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a shiver in the air that spreads out like ripples",
+            "the hammer, the anvil, and the stirrup",
+            "a snail shell; it is filled with fluid and thousands of hairs",
+            "(inference: two ears help you tell where a sound came from)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Ripple Becomes a Sound", "The Best Way to Slam a Door", "Snails and Where They Live"],
+          "answers": ["How a Ripple Becomes a Sound"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Sound spreads out like ____ in a pond.", "The ____ is a thin sheet of skin pulled tight.", "The smallest bone in your body is the ____.", "The ____ is curled up like a snail shell."],
+          "wordBank": ["ripples", "eardrum", "stirrup", "cochlea"],
+          "answers": ["ripples", "eardrum", "stirrup", "cochlea"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of the ear surprised you most, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Snail Inside Your Ear",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-ear", "templateLabel": "The Snail Inside Your Ear", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ear",
+          "notes": ["Pinna: the part you can touch", "Cochlea: the coiled hearing tunnel", "About 16,000 hair cells per ear", "Three fluid loops handle balance", "Human hair cells never grow back"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Your Ear Has Two Jobs",
+          "text": "Your ear does two jobs at once, and only one of them is hearing. Start with hearing. Sound is a wave of pressure moving through air. The flap on the side of your head, called the pinna, is shaped with ridges and folds that funnel those waves into your ear canal. The waves rattle your eardrum. Three small bones behind it, the hammer, anvil, and stirrup, pick up the rattle and concentrate it, pressing it into the fluid of the cochlea. That matters more than it sounds. Air is thin and fluid is thick, and a wave crossing from one to the other normally bounces off. The three bones exist to force the sound through. Inside the cochlea, rows of hair cells wait. They are not really hairs. They are cells with bristly tips that lean when the fluid moves. A leaning hair cell fires a signal down the hearing nerve to your brain. Cells near the entrance of the coil handle high sounds. Cells deep in the coil handle low ones. Your brain reads which cells fired and hears a bird, or a truck, or your name. Now the second job. Sitting above the cochlea are three loops set at right angles to each other, like the corners of a box. They are also full of fluid and hair cells, but they are not listening. When you tip your head, the fluid sloshes and the hair cells lean. That is how you know which way is up with your eyes shut. Spin in a circle and stop, and the fluid keeps swirling for a moment. Your ears insist you are still turning while your eyes say you stopped. That argument is what dizziness feels like. Here is the part worth remembering. You are born with about 16,000 hair cells in each ear. Loud noise flattens them, and human hair cells never grow back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why the three middle ear bones are needed at all.",
+            "How does your brain tell a high sound from a low one?",
+            "Using the passage, explain what is happening in your body when you feel dizzy after spinning.",
+            "The passage ends by saying hair cells never grow back. Why do you think the author saved that fact for last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a wave moving from air into fluid normally bounces off, so the bones concentrate it and force it through",
+            "(different hair cells fire; high sounds at the entrance of the coil, low sounds deep inside)",
+            "(the fluid in the balance loops keeps swirling, so the ears report turning while the eyes report stopping)",
+            "(inference: it is the one fact that changes your behavior, so it lands hardest at the end)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The ear turns air movement into signals for hearing and balance, using parts that cannot be replaced",
+            "Spinning in circles is the best way to test your ears",
+            "Hearing is the least important of the five senses"
+          ],
+          "answers": ["The ear turns air movement into signals for hearing and balance, using parts that cannot be replaced"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["pinna → ____", "cochlea → ____", "concentrate (the rattle) → ____"],
+          "rows": 1,
+          "answers": ["the outer flap of the ear that funnels sound in", "the coiled, fluid-filled tube where hair cells sit", "to squeeze a wide, weak push into a small, strong one"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: you know hair cells never grow back. Explain what you would change about how you listen to music, and why. Give two reasons.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Snail Inside Your Ear",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-ear", "templateLabel": "The Snail Inside Your Ear", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ear",
+          "notes": ["Your brain times sound to ten millionths of a second", "The cochlea coils two and a half turns", "About 16,000 hair cells per ear", "Birds regrow hair cells, mammals cannot", "The eardrum is about the size of a pencil eraser"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Pointing With Your Ears",
+          "text": "Close your eyes in a room where someone is talking and you can point at them. You do it without thinking, and the trick behind it is stranger than the pointing. Sound reaches your two ears at slightly different times. If a voice is a little to your left, the wave arrives at your left ear first, then at your right ear a fraction of a second later. The gap is tiny. The widest possible gap, for a sound directly beside you, is around six hundred millionths of a second. Your brain measures gaps far smaller than that, down to roughly ten millionths of a second, and converts them into a direction. Your head also casts a sound shadow, so the far ear hears a slightly duller, quieter version, and the ridges of your outer ear color the sound differently depending on whether it came from above or below. Three clues, one answer: over there. The machinery feeding those clues is small and ancient. The eardrum is a stretched membrane not much wider than a pencil eraser. Behind it, three bones smaller than any others in your body work as a lever, taking the wide, weak push of air on the eardrum and concentrating it onto a window about a twentieth of that area. The concentration matters. Sound moving from air into fluid usually reflects away, the way you can shout at a swimming pool and barely disturb it. The middle ear exists to defeat that reflection. Past the window lies the cochlea, a fluid tunnel wound into two and a half turns. Along its length runs a flexible strip that is stiff and narrow at one end and floppy and wide at the other, like the strings of a harp. High notes shake the stiff end. Low notes travel deeper and shake the floppy end. Perched on that strip are about sixteen thousand hair cells, each tipped with bundles of bristles that lean when the strip moves, and each lean opens a gate and fires a nerve signal. Sixteen thousand is not many. You have millions of light-catching cells in each eye. And unlike almost every other cell you own, a dead hair cell is not replaced. Birds regrow theirs within weeks. Fish regrow theirs. Mammals, for reasons nobody has fully explained, lost the ability. Every loud concert, every siren, every hour of headphones turned up flattens a few more bristles that will never stand up again. The ear is a beautiful instrument, and it is issued to you exactly once."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the three clues the passage says your brain uses to locate a sound.",
+            "Explain why the middle ear needs to concentrate sound onto a small window. Quote the comparison the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering direction finding, the middle ear lever, the cochlea, and hair cell loss)",
+            "the time gap between the ears, the sound shadow of the head, and the coloring from the outer ear ridges",
+            "sound crossing from air into fluid reflects away; quote: the way you can shout at a swimming pool and barely disturb it",
+            "(inform, with a persuasive turn at the end; details: it defines terms and gives measurements, then warns about headphones)",
+            "(you get one set of hair cells for life; the author ends there so the warning is what you carry away)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["membrane → ____", "sound shadow → ____", "lever → ____", "issued → ____"],
+          "rows": 1,
+          "answers": [
+            "a thin sheet of tissue stretched tight",
+            "the quieter, duller sound reaching the far ear because the head is in the way",
+            "a bar that pivots to turn a weak push into a stronger one",
+            "given out or handed over, usually once and by an authority"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage compares sixteen thousand hair cells with the millions of light-catching cells in each eye. What is the author trying to make you feel with that comparison?",
+            "Birds regrow their hair cells and mammals do not. Why might that difference be worth a lot of money to study?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(that hearing runs on a shockingly small, fragile supply)",
+            "(inference: finding the switch birds still use could let doctors restore human hearing)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should headphones sold for kids be built so they physically cannot go above a safe volume? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Snail Inside Your Ear",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-ear", "templateLabel": "The Snail Inside Your Ear", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ear",
+          "notes": ["Hammer and anvil evolved from jaw bones", "At the threshold of hearing the eardrum moves less than an atom's width", "Outer hair cells amplify sound actively", "A healthy ear emits faint sounds of its own", "About 16,000 hair cells per ear, with no replacements"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Assembled From Spare Parts: The Ear You Cannot Replace",
+          "text": "Two of the three bones in your middle ear used to be part of a jaw. That is not a metaphor. Follow the fossils back far enough, through the mammal-like reptiles of the Triassic, and you find animals whose jaws hinged on two bones sitting right where your hammer and anvil sit now. Over millions of years, as a new jaw joint took over the work of biting, those old hinge bones shrank, drifted backward, and were repurposed into a chain for carrying sound. Evolution rarely invents. It mostly reuses. You are chewing with one leftover and listening with another. Consider what that borrowed chain has to accomplish. Your eardrum is a taut sheet of tissue facing open air. The cochlea behind it is full of fluid. Sound crossing from air into water almost entirely reflects, which is why a swimmer underwater hears the world above as a muffled rumor. To force the sound across, the middle ear works as a mechanical lever and a funnel at the same time: the wide eardrum collects, the three bones pivot, and the whole force lands on the oval window, a patch roughly a twentieth of the eardrum's area. Pressure is force divided by area, so shrinking the area multiplies the pressure. Without that arrangement you would lose most of what you hear. The precision is harder to believe than the design. At the faintest sound a person can detect, the eardrum shifts by less than the width of a single atom. The ear is also absurdly wide-ranging: from that faintest whisper to the roar of a jet engine is a difference of about a trillion times in sound power, and the same organ handles both ends. It manages this because it does not merely listen. It amplifies, actively. The cochlea holds two kinds of hair cells. The inner ones are the true microphones, reporting to the brain. The outer ones do something else. They change length, thousands of times a second, in rhythm with the sound arriving. They push. They add energy to a wave that is already there, sharpening quiet sounds so the inner cells can catch them. A side effect gives the game away. A healthy ear leaks a little of that energy back out, so a silent, undamaged human ear emits faint sound of its own. Doctors test newborn hearing by placing a soft microphone in the ear and listening for the ear to answer. All of this rests on about sixteen thousand hair cells per ear, and here the story stops being flattering. Hair cells are fragile. Loud noise snaps their bristle bundles and kills the cells outright, and in mammals nothing replaces them. A bird deafened by noise regrows its hair cells and recovers within weeks. A fish does the same. Somewhere in mammalian history that repair program was switched off, and nobody has fully explained why. What you lose is gone, permanently, and it goes quietly. High notes vanish first, so nothing dramatic happens the day after a concert. Consonants blur before vowels do. People do not notice deafness arriving. They notice that everyone has started mumbling. There is one useful asymmetry here. Nearly every other threat to your body arrives without an invitation. Noise damage does not. It arrives through a volume dial, a pair of headphones, a decision. The most sophisticated instrument you will ever own came pre-installed, tuned to atomic precision, assembled from the spare parts of a reptile's jaw, and it ships with no replacement bristles and no warranty. You get to decide how loudly to run it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the fossil record shows about the hammer and anvil, and what general rule the author draws from it. Cite the evidence.",
+            "The passage says the ear does not merely listen. Explain what the outer hair cells do and how doctors use that behavior.",
+            "Identify the shift in the passage: where does it turn from admiration to warning, and how does the author signal it?",
+            "Analyze the last paragraph. What is the word asymmetry doing there, and does the rest of the passage earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(old jaw hinge bones were repurposed into sound-carrying bones; cite: Evolution rarely invents. It mostly reuses.)",
+            "(outer hair cells change length to amplify quiet sounds; the leaked energy is measured to screen newborn hearing)",
+            "(at here the story stops being flattering; a blunt clause pivots from precision to fragility)",
+            "(asymmetry marks noise as the rare self-inflicted damage; earned by the evidence that hair cells never regrow in mammals)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["repurposed → ____", "taut → ____", "amplify → ____", "asymmetry → ____"],
+          "rows": 2,
+          "answers": [
+            "reused for a job it was not originally built for",
+            "pulled tight, with no slack",
+            "to add energy to a signal so it becomes stronger",
+            "an imbalance between two things that might be expected to match"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says hearing loss goes quietly and that people notice that everyone has started mumbling. Explain why damage that arrives slowly is harder to prevent than damage that hurts right away.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(no immediate feedback, so nothing links the loud choice to the cost until it is permanent)",
+            "(student question plus a credible source type, such as a hearing scientist or a peer-reviewed study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Since the damage is permanent and the choice is ours, loud personal headphones should be treated the way we treat cigarettes. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

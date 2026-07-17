@@ -1,0 +1,322 @@
+{
+  "key": "pyramid",
+  "title": "The Mountain People Built by Hand",
+  "blurb": "Four and a half thousand years ago, workers stacked 2.3 million stones in the desert. It is still standing, and we still cannot say how they raised the blocks.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Mountain People Built by Hand",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pyramid", "templateLabel": "The Mountain People Built by Hand", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the pointy top with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "pyramid",
+          "notes": ["It is made of stone", "It is wide at the bottom", "It is pointy at the top", "It stands in the sand", "It is very, very old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pyramid. It is made of stone. The stones are big and heavy. People stacked them up, one on top of the other. The pyramid is wide at the bottom. It goes up to a point at the top. It is very old. It is older than your house. It is older than your town. The pyramid still stands in the sand."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stones in each row. Write how many in the box.",
+          "emoji": "🟫",
+          "items": ["4", "2", "6", "3"],
+          "answers": ["4", "2", "6", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "big    stone" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it belongs.",
+          "pairs": [
+            { "left": "pyramid", "right": "sand" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own pyramid. Add the sun above it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Mountain People Built by Hand",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pyramid", "templateLabel": "The Mountain People Built by Hand", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pyramid",
+          "notes": ["The biggest one is in Egypt", "Built about 4,500 years ago", "More than two million stones", "Workers pulled the stones on sleds", "Wide at the bottom, pointy on top"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mountain People Built by Hand",
+          "text": "A pyramid is a building made of stone. The biggest one is in Egypt. It is called the Great Pyramid. People built it about four thousand five hundred years ago. They had no trucks. They had no cranes. They cut the stones by hand. Then they pulled them on wooden sleds across the sand. It took more than two million stones to build it. A pyramid is wide at the bottom and pointy at the top. That shape is very strong. It does not tip over. The Great Pyramid is still standing today. For a very long time it was the tallest building in the whole world."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where is the Great Pyramid?", "What is a pyramid made of?", "How did people move the stones?"],
+          "rows": 2,
+          "answers": ["in Egypt", "stone", "they pulled them on wooden sleds"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The Great Pyramid is in ____.", "A pyramid is made of ____.", "People pulled the stones on wooden ____.", "A pyramid is ____ at the top."],
+          "wordBank": ["Egypt", "stone", "sleds", "pointy"],
+          "answers": ["Egypt", "stone", "sleds", "pointy"]
+        },
+        { "kind": "draw", "prompt": "Draw the Great Pyramid. Add some workers pulling a big stone.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Mountain People Built by Hand",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pyramid", "templateLabel": "The Mountain People Built by Hand", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pyramid",
+          "notes": ["The Great Pyramid is in Egypt", "About 2.3 million blocks", "One block weighs more than a car", "Workers wet the sand to help sleds slide", "Paid workers built it, not slaves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mountain Made by Hand",
+          "text": "About four thousand five hundred years ago, in a place called Egypt, thousands of workers began stacking stone. When they finished, they had built the Great Pyramid of Giza. It stood as tall as a forty story building, and it was made of more than two million blocks. The average block weighed more than a car. The workers had no machines. No engines, no cranes, no trucks. They cut the blocks out of the ground with copper tools and wooden wedges. They loaded each block onto a wooden sled and dragged it across the sand. Here is the clever part. A man walked in front of the sled and poured water on the sand. Wet sand is firmer than dry sand, so the sled slid along instead of sinking in. Scientists tested this and found that wet sand cuts the pulling work almost in half. For a long time people said slaves built the pyramids. They did not. Archaeologists found the workers' town right next to the pyramid, with bakeries, breweries, and a cemetery. The workers were paid in bread and beer. Their skeletons show broken bones that were set and healed, so somebody looked after them. They gave their teams proud names, like Friends of Khufu."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How did the workers move the heavy blocks across the sand?",
+            "Why did a man pour water on the sand in front of the sled?",
+            "What were the workers paid with?",
+            "Why do you think the workers gave their teams proud names like Friends of Khufu?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they dragged them on wooden sleds",
+            "wet sand is firmer, so the sled slid instead of sinking in",
+            "bread and beer",
+            "(inference: they were proud of the work, which shows they were not slaves)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Mountain Made by Hand", "How to Build a Sandcastle", "The Longest River in Africa"],
+          "answers": ["The Mountain Made by Hand"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The Great Pyramid was built in ____.", "Workers dragged each block on a wooden ____.", "Wet sand is ____ than dry sand.", "The blocks were cut with ____ tools."],
+          "wordBank": ["Egypt", "sled", "firmer", "copper"],
+          "answers": ["Egypt", "sled", "firmer", "copper"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of building the pyramid sounds hardest to you, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Mountain People Built by Hand",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pyramid", "templateLabel": "The Mountain People Built by Hand", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pyramid",
+          "notes": ["Built for Pharaoh Khufu, about 2560 BC", "481 feet tall when it was finished", "Tallest structure on Earth for 3,800 years", "The base is level to within about an inch", "Once wrapped in polished white limestone", "The only ancient wonder still standing"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Four and a Half Thousand Years, and Still Standing",
+          "text": "The Great Pyramid of Giza was built as a tomb for a pharaoh named Khufu, around 2560 BC. That is roughly forty five centuries ago. It is the oldest of the seven wonders of the ancient world, and it is the only one still standing. The numbers are hard to hold in your head. The pyramid contains about 2.3 million blocks of stone. It rose to 481 feet, and it stayed the tallest structure humans had ever made for about 3,800 years. Nothing beat it until a cathedral spire went up in England in the 1300s. What impresses engineers is not the size. It is the accuracy. The base is a square with sides about 756 feet long, and those four sides differ from each other by less than two inches. The whole base is level to within about an inch. The four faces point almost exactly at north, south, east, and west, off true north by roughly a twentieth of a degree. The builders had no compass and no laser. They almost certainly used the stars. The pyramid you see in photographs is not unfinished. It is stripped. It was once wrapped in polished white limestone, cut so precisely that the joints are thinner than a fingernail. In sunlight it would have blazed. Over the centuries people quarried that smooth skin away to build the city of Cairo, leaving the rough steps we see today. The shape helps it survive. A pyramid is nearly all base. Its weight presses down and inward onto ground that is already carrying it, so there is almost nothing for gravity to topple."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why is it surprising that the base is level to within about an inch?",
+            "What happened to the pyramid's smooth white outside?",
+            "Explain in your own words why a pyramid shape does not topple over.",
+            "The author writes that the pyramid is 'not unfinished, it is stripped.' What is the difference, and why does it matter?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(inference: the builders had no modern measuring instruments)",
+            "people quarried it away over the centuries to build the city of Cairo",
+            "(it is nearly all base, so its weight presses down and inward instead of sideways)",
+            "(inference: it looks rough because its casing was taken, not because the builders left it incomplete)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A 4,500 year old tomb is remarkable less for its size than for how precisely it was built",
+            "The city of Cairo was built entirely from pyramid stone",
+            "Pharaoh Khufu cut most of the blocks himself"
+          ],
+          "answers": ["A 4,500 year old tomb is remarkable less for its size than for how precisely it was built"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["quarried → ____", "stripped → ____", "accuracy → ____", "topple → ____"],
+          "rows": 1,
+          "answers": [
+            "cut and hauled stone out of the ground",
+            "had its outer covering taken away",
+            "how exactly correct a measurement is",
+            "to fall over"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the Great Pyramid took about twenty years and thousands of workers to build. Was it worth it? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Mountain People Built by Hand",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pyramid", "templateLabel": "The Mountain People Built by Hand", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pyramid",
+          "notes": ["Merer's diary: oldest inscribed papyrus ever found", "Written in year 27 of Khufu's reign", "His crew barged limestone from Tura to Giza", "The workers' town had bakeries and breweries", "No ramp for the Great Pyramid has ever been found"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Diary of a Man Who Hauled Stone",
+          "text": "For centuries the Great Pyramid was an argument. Everyone could see it. Nobody could prove how it was built, or by whom. Into that gap poured guesses: slaves under the whip, lost civilizations, visitors from the sky. The evidence, when it finally arrived, was less dramatic and far more interesting. It was paperwork. In 2013, archaeologists digging at Wadi al-Jarf, an ancient harbor on the Red Sea, pulled hundreds of papyrus fragments out of the sand. They turned out to be the oldest inscribed papyri ever found, and one set was a work diary. It belonged to a middle ranking official named Merer, who supervised a crew of about forty men. Merer wrote down what his crew did, day by day, in the twenty seventh year of Khufu's reign. They rowed barges up the Nile to the limestone quarries at Tura, loaded blocks, and delivered them to the building site at Giza. Round trip: a few days. Over and over. Merer's diary is a shipping log. It is also the only eyewitness account of the Great Pyramid being built, written by a man who was there. What Merer describes is not a mob of slaves. It is a workforce, organized into teams, fed and housed and paid. Excavations at Giza have filled in the rest of that picture: a workers' town with bakeries, breweries, and cattle bones by the thousand, and a cemetery where laborers were buried with care. Their skeletons carry broken bones that were set and healed. Somebody treated them. Plenty is still unknown. The loudest arguments are about ramps, because no ramp for the Great Pyramid has ever been found. A straight ramp long enough to reach the top would have needed more material than the pyramid itself. A spiral ramp would have hidden the corners the surveyors needed to sight along. One researcher proposes a ramp built inside the pyramid, corkscrewing upward within the masonry. The honest answer is that the method is not settled. That is worth sitting with. We can read the diary of a man who delivered the stone. We know what his crew ate for dinner. We know the base is level to within an inch and aimed at true north to within a twentieth of a degree. And we still cannot say for certain how the blocks went up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Who was Merer, and why does his diary matter? Quote the phrase the passage uses to describe what the diary is.",
+            "Give two pieces of evidence from the passage that the builders were not slaves.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What does the author mean by 'The evidence, when it finally arrived, was less dramatic and far more interesting. It was paperwork.'?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentence summary covering Merer's diary + the paid organized workforce + the unsolved ramp question)",
+            "an official who supervised a crew hauling limestone to Giza; quote: the only eyewitness account of the Great Pyramid being built",
+            "(they were fed, housed and paid; their town had bakeries and breweries; their broken bones were set and healed; they were buried with care)",
+            "(inform, with detail: it presents dated evidence and admits what is unknown; some persuasive tone against the slave myth)",
+            "(the truth turned out to be an ordinary work log rather than a dramatic secret, and that ordinariness is what makes it valuable)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["papyri → ____", "quarries → ____", "excavations → ____", "masonry → ____"],
+          "rows": 1,
+          "answers": [
+            "sheets of ancient writing material made from a reed plant",
+            "places where stone is cut out of the ground",
+            "digs where archaeologists uncover buried remains",
+            "stonework, the built body of stone blocks"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why would a straight ramp long enough to reach the top need more material than the pyramid itself?",
+            "The author says the honest answer is that the method is not settled. Why might a writer choose to say that instead of picking the best theory?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: a usable slope must be very long and very wide at the base, so its volume outgrows the pyramid)",
+            "(opinion: admitting uncertainty is more honest than overstating evidence, and it shows how history actually works)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does it change how you see the Great Pyramid to learn that paid, organized workers built it rather than slaves? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Mountain People Built by Hand",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pyramid", "templateLabel": "The Mountain People Built by Hand", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pyramid",
+          "notes": ["Sudan has more pyramids than Egypt", "Djoser's step pyramid, about 2670 BC, by Imhotep", "The Bent Pyramid changes angle partway up", "2.3 million blocks at Giza", "Aimed at true north within a twentieth of a degree", "How the blocks were raised is still unknown"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Pyramid Problem",
+          "text": "Start with a correction. Egypt does not have the most pyramids. Sudan does. More than two hundred of them stand in the desert at Meroe, Nuri, and El-Kurru, built by the kings and queens of Kush centuries after the Egyptian pyramid age had ended. They are steeper, smaller, and largely unvisited. Cross the Atlantic and you find pyramids again, at Teotihuacan and Chichen Itza, built by people who had never heard of Egypt and never could have. The pyramid is not one civilization's idea. It is what you get when you want to build something tall out of stone and you have no steel. Pile the material wide at the bottom, narrow it as you rise, and gravity works for you instead of against you. Every culture that tried to build high in stone arrived at roughly the same answer, because the physics offered them no other. What makes the Egyptian pyramids extraordinary is not the concept. It is the learning curve, and the fact that we can still walk around and look at it. Around 2670 BC, an official named Imhotep built the first one for King Djoser at Saqqara. It is not a true pyramid. It is six flat tombs stacked on top of each other, shrinking as they go, and it was the largest stone building anyone had yet attempted. It still stands. Then came Sneferu, Khufu's father, who built three pyramids and got the answer wrong twice. His first, at Meidum, appears to have been pushed too steep, and much of its outer structure now lies in a heap of rubble around its core. His second, at Dahshur, began at fifty four degrees and then, partway up, flinched. The builders dropped the angle to forty three degrees and finished it at that gentler slope. It is called the Bent Pyramid, and its kink is a decision, frozen in stone, made by a worried engineer roughly forty six centuries ago. Sneferu's third attempt, the Red Pyramid, was built at the safer angle from the ground up. It worked. Khufu inherited that knowledge. His pyramid at Giza is what a civilization builds once it has stopped guessing: 2.3 million blocks, a base level to within about an inch, four faces aimed at true north to within a twentieth of a degree, and a height of 481 feet that went unbeaten by any structure on Earth for roughly 3,800 years. And we still do not know how they raised the blocks. That sentence should be uncomfortable. We have the diary of Merer, an official who barged limestone to the site and logged it. We have the workers' town, its bakeries and breweries and the cattle bones of their dinners, and their graves, and their healed fractures. We know they organized into named teams. We know almost everything except the central act. No ramp for the Great Pyramid has been found, and every proposed ramp has a problem: a straight one would need more material than the pyramid, a spiral one would hide the corners the surveyors had to sight along, an internal one is ingenious and unproven. The gap invites nonsense, and it always has. Because the method is missing, people have filled the hole with lost continents and spacecraft, which is a strange insult to offer a workforce whose dinner menu we can reconstruct. The honest position is harder to sit with and more respectful. People did this. They were very good at it. The record of exactly how is simply lost. Not every silence is a mystery. Some of it is just time doing what time does."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why does the passage open with Sudan rather than Egypt? Analyze what that move does for the argument.",
+            "Explain the claim that the pyramid is not one civilization's idea. Cite the exact sentence that explains the physics.",
+            "The author calls the Bent Pyramid's kink 'a decision, frozen in stone, made by a worried engineer'. Analyze what that description is doing.",
+            "Identify the passage's turn. Where does it stop admiring and start arguing, and how does the author signal it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one sentence summary)",
+            "(it removes the assumption that pyramids are uniquely Egyptian, which sets up the real claim: the shape is ordinary, the precision is not)",
+            "(the shape is forced by physics, not copied; cite: Pile the material wide at the bottom, narrow it as you rise, and gravity works for you instead of against you.)",
+            "(it turns a construction detail into a human moment, making an ancient builder a person who doubted and adjusted)",
+            "(at 'And we still do not know how they raised the blocks. That sentence should be uncomfortable.'; a short blunt sentence plus a direct address signals the pivot)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["flinched → ____", "ingenious → ____", "surveyors → ____", "reconstruct → ____"],
+          "rows": 2,
+          "answers": [
+            "pulled back from a plan out of fear or doubt",
+            "clever and original in its design",
+            "people who measure land and angles precisely",
+            "to build back a picture of something from surviving evidence"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says 'Not every silence is a mystery.' Explain that distinction and give one example of your own.",
+            "The author calls the spacecraft theories 'a strange insult'. Explain who is being insulted and why the author thinks so.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a gap in the record is missing information, not evidence of something hidden; student example)",
+            "(the Egyptian workers, because the theory assumes they could not have done what the evidence shows they did)",
+            "(student question + a credible source type, such as an archaeological survey or a peer reviewed engineering study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A gap in the historical record is an invitation to speculate freely. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

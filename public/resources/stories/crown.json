@@ -1,0 +1,320 @@
+{
+  "key": "crown",
+  "title": "The Heaviest Hat in the World",
+  "blurb": "Gold that never rusts, a ruby that turned out not to be a ruby, and the Roman crown made of grass.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Heaviest Hat in the World",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-crown", "templateLabel": "The Heaviest Hat in the World", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the points on the crown." },
+        {
+          "kind": "image",
+          "imageKey": "crown",
+          "notes": ["Crowns are made of gold", "Gold stays shiny forever", "A real crown is heavy", "The bright stones are called jewels", "A crown goes on your head"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a crown. A crown sits on top of a head. This crown is made of gold. Gold is yellow and shiny. It stays shiny for a very long time. The crown has points that go up. It has bright stones on it. A real crown is heavy. It is too heavy to run and jump in. So a king wears his crown, and then he takes it off."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the points on each crown. Write how many in the box.",
+          "emoji": "👑",
+          "items": ["3", "5", "4", "2"],
+          "answers": ["3", "5", "4", "2"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "gold    crown" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "crown", "right": "head" },
+            { "left": "glove", "right": "hand" },
+            { "left": "sock", "right": "foot" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own crown. Put big shiny stones on it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Heaviest Hat in the World",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-crown", "templateLabel": "The Heaviest Hat in the World", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "crown",
+          "notes": ["It is called St Edward's Crown", "It is solid gold", "It has 444 stones on it", "It is as heavy as a house brick", "It lives in the Tower of London"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Heaviest Hat in the World",
+          "text": "A real crown is heavier than it looks. The crown used to crown a king of England is called St Edward's Crown. It is made of solid gold. It has 444 stones on it. It weighs about as much as a house brick. The king wears it for only a few minutes. Then he takes it off and puts on a lighter one for the rest of the day. When nobody is wearing it, the crown lives in a stone castle called the Tower of London. It sits behind thick glass. Guards watch it all night. Anyone can go and look at it, but nobody can touch it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the crown made of?", "What is the crown as heavy as?", "Where does the crown live?"],
+          "rows": 2,
+          "answers": ["solid gold", "a house brick", "in the Tower of London"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The crown is made of ____.", "The crown is very ____.", "The king wears it for a few ____.", "Guards ____ the crown all night."],
+          "wordBank": ["gold", "heavy", "minutes", "watch"],
+          "answers": ["gold", "heavy", "minutes", "watch"]
+        },
+        { "kind": "draw", "prompt": "Draw the crown behind its glass case. Add a guard standing next to it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Heaviest Hat in the World",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-crown", "templateLabel": "The Heaviest Hat in the World", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "crown",
+          "notes": ["Gold does not rust", "Gold is soft enough to hammer by hand", "Iron rusts, silver goes black", "Gold pulled from old shipwrecks is still bright", "St Edward's Crown is 22 carat gold"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Crowns Are Made of Gold",
+          "text": "Crowns could be made of iron. Iron is strong and it is cheap. But leave iron out in the rain and it turns orange and flaky. Silver is beautiful, but silver goes black and dull and has to be polished over and over. Gold does neither. Gold does not rust. Divers pull gold coins out of shipwrecks that sank hundreds of years ago, and the gold comes up as bright as the day it went down. That is the first reason crowns are gold. The second reason is that gold is soft. A goldsmith can hammer it thin, bend it, and curl it into points and arches without much of a fight. Try that with iron and you need a roaring fire and a heavy hammer. The third reason is that gold is rare. Anyone can find a rock. Almost nobody finds gold. A thing that is hard to get says something about the person wearing it. Gold does have one problem. It is heavy. St Edward's Crown, used to crown a British king, weighs about as much as a house brick. Kings wear it for a few minutes, then swap it for something lighter."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens to iron if you leave it out in the rain?",
+            "What are the three reasons the passage gives for making crowns out of gold?",
+            "What is the one problem with gold?",
+            "Why do you think kings wanted a metal that stays shiny for hundreds of years?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it turns orange and flaky",
+            "gold does not rust, gold is soft, gold is rare",
+            "it is heavy",
+            "(inference: a crown is passed down and has to look the same for the next king, so it must last)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Crowns Are Made of Gold", "How to Dive for Shipwrecks", "The Kings of England in Order"],
+          "answers": ["Why Crowns Are Made of Gold"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Unlike iron, gold does not ____.", "Gold is ____ enough for a goldsmith to bend and hammer.", "Gold is ____, so hardly anyone ever finds any."],
+          "wordBank": ["rust", "soft", "rare"],
+          "answers": ["rust", "soft", "rare"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you had to make a crown out of something other than gold, what would you use, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Heaviest Hat in the World",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-crown", "templateLabel": "The Heaviest Hat in the World", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "crown",
+          "notes": ["The Black Prince's Ruby is not a ruby", "It is a red spinel, about 170 carats", "Ruby and spinel are both red from chromium", "Light splits in two inside a ruby, not in a spinel", "It sits in the Imperial State Crown", "The Timur Ruby is also a spinel"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Red Stone That Is Not a Ruby",
+          "text": "Near the front of the Imperial State Crown, just above the band, sits a red stone about the size of a small hen's egg. It is called the Black Prince's Ruby, and it has belonged to the crown jewels of England for more than six hundred years. According to the traditional story, it was handed to Edward of Woodstock, the prince they called the Black Prince, in 1367, and Henry V is said to have worn it on his helmet at the battle of Agincourt in 1415. There is one problem with the name. It is not a ruby. It is a spinel. For most of history nobody could have known that, because a ruby and a red spinel look almost identical. Both are hard. Both are glassy. Both get their red from tiny traces of a metal called chromium. If you found either one lying in a stream, you would call it a ruby and feel certain. Underneath, they are different minerals. A ruby is corundum, made of aluminum and oxygen. A spinel adds magnesium, and its atoms stack in a different pattern. That hidden pattern changes what light does inside the stone. Light passing through a ruby splits into two beams. Light passing through a spinel does not. Once gemologists learned to test for that split, the great red stones of Europe began failing one after another. The Black Prince's Ruby failed. So did the Timur Ruby, another famous red stone in the same royal collection. Nothing about the stone itself changed. It is exactly as old, as red, and as rare as it was before. The only thing that changed was how much we knew, which is usually what happens when a fact gets corrected."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is the Black Prince's Ruby actually made of, and how is that different from a ruby?",
+            "Explain the test that tells a ruby and a spinel apart.",
+            "Why did people call it a ruby for six hundred years without lying?",
+            "The passage says nothing about the stone itself changed. What did change, and why does that matter?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is a spinel, which adds magnesium and stacks its atoms differently than corundum",
+            "light splits into two beams inside a ruby but not inside a spinel",
+            "(inference: they had no way to test it, and the two stones look identical)",
+            "(our knowledge changed; correcting a fact does not change the object, only our understanding of it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A famous crown stone was misnamed for centuries until science could tell the difference",
+            "Rubies are the most valuable stones on Earth",
+            "Henry V won the battle of Agincourt because of a red stone"
+          ],
+          "answers": ["A famous crown stone was misnamed for centuries until science could tell the difference"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["spinel → ____", "chromium → ____", "gemologist → ____", "identical → ____"],
+          "rows": 1,
+          "answers": [
+            "a red mineral that looks like a ruby but contains magnesium",
+            "the metal that gives both rubies and spinels their red color",
+            "a scientist who studies and tests gemstones",
+            "looking exactly the same"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: now that we know it is a spinel, should the crown jewels change the name to the Black Prince's Spinel, or keep the old name? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Heaviest Hat in the World",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-crown", "templateLabel": "The Heaviest Hat in the World", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "crown",
+          "notes": ["A plain band is called a circlet", "Arches over the top mean nobody ranks above you", "The globe and cross on top is called the monde", "Parliament melted the English regalia in 1649", "The Coronation Spoon survived and dates from the 1100s", "Most of the Crown Jewels were remade in 1661"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What the Shape of a Crown Is Saying",
+          "text": "A crown is not jewelry. It is a sentence, written in gold, and every part of it means something. Start with the simplest crown: a plain band that goes around the head. A circlet. It says the wearer is important, and it stops there. For centuries that was enough for most European kings, because most European kings were not entirely their own masters. Above them sat emperors, and above everyone sat the Pope. A ring of gold made a modest claim, and the modest claim was accurate. Then crowns grew arches. Bands of gold rise from the circlet, cross over the top of the head, and meet in the middle, where they carry a small globe and a cross. This is called a closed crown, and the arches are not decoration. Closing the top was a way of announcing that nothing sat above the wearer. English kings took up the arched crown around the reigns of Henry VII and Henry VIII, at exactly the point when England was insisting that it answered to no foreign power. The argument was in the law, and it was also in the metal. If a crown can make a claim, the claim can be refused. In 1649, after the English Civil War, Parliament executed King Charles I and then went after his crowns. The regalia was carried out of Westminster Abbey, broken apart, and melted down. The gold became coins. The stones were weighed and sold off like scrap metal. The money raised was not the point, because it was not very much money. The point was that the objects were claims, and the claims were being denied. Almost nothing survived. One piece that did was the Coronation Spoon, a plain silver-gilt spoon made in the 1100s, which is now the oldest object in the British Crown Jewels. Eleven years later the monarchy came back, and the whole set had to be built again from nothing. That is why crowns that look ancient were mostly made in 1661. The claim returned. The metal was new."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is the difference between what a circlet claims and what an arched crown claims?",
+            "The passage says the money was not the point. Quote the sentence that explains what the point was.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last two sentences: the claim returned, the metal was new."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering shape as a claim, arches as sovereignty, and the 1649 melting and 1661 remaking)",
+            "a circlet claims the wearer is important; arches claim that nobody ranks above the wearer",
+            "quote: The point was that the objects were claims, and the claims were being denied.",
+            "(inform, with detail: it defines circlet and closed crown and gives dates; some persuasive shaping in the opening line)",
+            "(the monarchy and its claim came back even though the original objects were gone, so the meaning lived in the idea, not the metal)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["circlet → ____", "regalia → ____", "modest (claim) → ____", "denied → ____"],
+          "rows": 1,
+          "answers": [
+            "a plain band worn around the head",
+            "the crowns and objects used in a coronation",
+            "small or limited, not boastful",
+            "refused or rejected"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why would Parliament bother destroying the crowns instead of just locking them away?",
+            "The passage opens by saying a crown is not jewelry. Why does the author start there?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: destroying them denied the claim itself, while storing them would leave the claim intact and ready to return)",
+            "(it sets up the whole argument that the crown is a message, not an ornament)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is a crown that was remade in 1661 still the same crown as the one that was melted down? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Heaviest Hat in the World",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-crown", "templateLabel": "The Heaviest Hat in the World", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "crown",
+          "notes": ["Rome's highest honor was a crown of grass", "The civic crown was oak leaves, for saving a life", "No pharaoh's crown has ever been found", "Arches on a crown claim sovereignty", "The English regalia was melted in 1649", "The Koh-i-Noor is 105.6 carats and still contested"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Arguments Made of Gold",
+          "text": "We think we know what a crown is: gold, jewels, heavy, expensive. The most valuable crown in Roman history was made of grass. It was called the corona graminea, the grass crown, and it was the highest military honor Rome had. It could not be bought, and the Senate could not award it. It was given by an entire army to the one commander who had saved that army from destruction, and it was woven on the spot out of whatever grew on the field where the rescue happened: grass, weeds, wildflowers, whatever was underfoot. It dried out and fell apart within days. In roughly a thousand years of Roman history, fewer than ten men ever received one. A soldier who saved a single citizen's life in battle was given the corona civica, a wreath of oak leaves. Rome had more gold than it could count, and it reserved its greatest honors for objects made of plants. The value was never in the material. The value was in what the object said, and about whom. Egypt makes the opposite point. Look at any Egyptian temple wall and crowns are everywhere: the tall white crown of Upper Egypt, the red crown of Lower Egypt with its curling wire, and the double crown that fits them together to say one country, one ruler. They are carved thousands of times across three thousand years. Archaeologists have never found a single one. Not one pharaoh's crown has ever been dug up, not even from Tutankhamun's tomb, which was otherwise packed with treasure. The likeliest explanation is that they were made from leather, cloth, or reed, which rot away, and that each crown was handed to the next king rather than buried with the last one. The most famous crowns of the ancient world exist only as pictures of themselves. Medieval Europe put its argument into the shape. An open circlet, a simple ring of gold, claims that the wearer is a great person. Arches claim considerably more. When bands rise from the circlet and close over the top of the head, carrying a globe and a cross, the crown is saying that nothing and nobody sits above this ruler on earth. English kings took up the closed, arched crown around the reigns of Henry VII and Henry VIII, at precisely the moment England was insisting it owed obedience to no foreign power. The politics and the goldsmithing arrived together, which was not a coincidence. An argument that can be made can also be refused. In 1649 Parliament executed Charles I and then dealt with his crowns. The regalia was taken from Westminster Abbey, broken up, and melted into coin, and the gems were weighed and sold. The money was modest and the money was not the reason. The objects were claims, and the claims were being denied in the most physical way available. Almost nothing survived. The Coronation Spoon, silver-gilt and made in the 1100s, slipped through only because a man bought it and quietly handed it back eleven years later when the monarchy returned. Everything in the Tower of London that looks medieval was made in 1661, in a hurry, to replace what had been destroyed. Some arguments are still running. The Koh-i-Noor diamond, 105.6 carats, sits in a crown made for the Queen Mother in 1937. It was taken from a ten year old Sikh maharaja in the Punjab in 1849, under a treaty signed after a war he had lost. India, Pakistan, Iran, and Afghanistan have all asked for it back. Britain has kept it. When people argue about that diamond, they are not arguing about carbon. They are arguing about what the object claims, and whether the claim is honest. That is what a crown has always been. Not a hat. A statement, worn where everyone can see it, made in a material chosen to keep the statement hard to ignore."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why does the author open with the grass crown instead of a gold one? Cite the sentence that states the lesson.",
+            "Explain what the arches on a closed crown claim, and why Henry VII and Henry VIII wanted that claim.",
+            "The author writes that the Egyptian crowns exist only as pictures of themselves. Explain what that means and what evidence supports it.",
+            "The passage ends by saying a crown is not a hat. Analyze what that final move is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the grass crown breaks the assumption that a crown is about wealth; cite: The value was never in the material.)",
+            "(arches claim that nobody on earth outranks the wearer; England was insisting it owed obedience to no foreign power)",
+            "(they are known only from carvings; no physical crown has ever been found, not even in Tutankhamun's tomb)",
+            "(it restates the thesis that a crown is an argument, supported by Rome, Egypt, the arches, 1649, and the Koh-i-Noor)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["regalia → ____", "circlet → ____", "sovereignty → ____", "contested → ____"],
+          "rows": 2,
+          "answers": [
+            "the crowns and ceremonial objects of a monarch",
+            "a plain ring of gold worn around the head",
+            "the condition of having no ruler above you",
+            "argued over, with more than one side claiming it"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the money was modest and the money was not the reason. Explain why that distinction is central to the whole passage.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it proves the crowns were destroyed as symbols rather than for profit, which supports the claim that crowns are arguments)",
+            "(student question + a credible source type, such as a museum record or an archaeological report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: an object taken under a treaty signed after a lost war was not really given, and should be returned. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "key": "lungs",
+  "title": "The Tree That Grows Inside Your Chest",
+  "blurb": "Two spongy bags, hundreds of millions of tiny air sacs, and a muscle that pulls the whole sky into your chest.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Tree That Grows Inside Your Chest",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Put a hand on your chest as you go.",
+      "meta": { "templateId": "story-lungs", "templateLabel": "The Tree That Grows Inside Your Chest", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Put your hand on your chest and take a big breath." },
+        {
+          "kind": "image",
+          "imageKey": "lungs",
+          "notes": ["You have two lungs", "They live inside your chest", "They fill up with air", "They never stop, even when you sleep"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Put your hand on your chest. Feel it go up. Feel it go down. That is your lungs. You have two. They are inside your chest. They fill up with air. Then they push the air out. In and out. All day. All night. Even when you sleep. Your lungs never stop. Take a big breath now. Feel them fill up."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the puffs of air in each row. Write how many in the box.",
+          "emoji": "💨",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "air    lungs" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "lungs", "right": "air" },
+            { "left": "tummy", "right": "food" },
+            { "left": "ears", "right": "sound" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw yourself taking the biggest breath you can. Draw your two lungs inside your chest.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tree That Grows Inside Your Chest",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-lungs", "templateLabel": "The Tree That Grows Inside Your Chest", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "lungs",
+          "notes": ["Your lungs are soft, like a sponge", "The tube down your throat is your windpipe", "Air has oxygen in it", "The muscle under your lungs is the diaphragm", "You breathe about 20,000 times a day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Two Sponges in Your Chest",
+          "text": "Your lungs are two soft, spongy bags inside your chest. When you breathe in, air rushes down a tube in your throat and fills them up. The air has something in it that your body needs. It is called oxygen. Your blood picks up the oxygen and carries it everywhere. Your toes need it. Your brain needs it. Then your lungs push out the air you are done with. Under your lungs is a flat muscle called the diaphragm. It pulls down to let air in. It pushes up to send air out. You breathe about 20,000 times a day. You almost never have to think about it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many lungs do you have?", "What does your blood pick up from the air?", "What is the flat muscle under your lungs called?"],
+          "rows": 2,
+          "answers": ["two", "oxygen", "the diaphragm"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Your lungs are soft and ____.", "The air you breathe has ____ in it.", "The muscle under your lungs is the ____.", "Your ____ carries oxygen everywhere."],
+          "wordBank": ["spongy", "oxygen", "diaphragm", "blood"],
+          "answers": ["spongy", "oxygen", "diaphragm", "blood"]
+        },
+        { "kind": "draw", "prompt": "Draw a person running. Show where their lungs are and draw the air going in.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tree That Grows Inside Your Chest",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-lungs", "templateLabel": "The Tree That Grows Inside Your Chest", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "lungs",
+          "notes": ["Your windpipe splits into two tubes", "Each lung holds a tree of tiny branches", "The bubbles on the ends are called alveoli", "About 300 million of them in there", "Unfolded flat, they would cover half a tennis court"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tree Inside Your Chest",
+          "text": "Take a deep breath. Air travels down your windpipe, a stiff tube in the front of your neck. At the bottom, the windpipe splits in two. One branch goes to your right lung. One goes to your left. Inside each lung, those branches split again, and again, and again, more than twenty times. The tubes get smaller every time, until they are thinner than a hair. Your lungs are shaped like an upside down tree. At the tip of every tiny branch hangs a bubble called an alveolus. You have about 300 million of them. Each bubble is wrapped in blood vessels so thin that oxygen can slip straight through the wall and into your blood. Carbon dioxide, the waste gas your body is finished with, slips the other way. Then you breathe out and it is gone. All those bubbles unfolded flat would cover half a tennis court. That whole surface is folded up inside your chest, and it fits."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happens to your windpipe at the bottom?",
+            "What is the name of the tiny bubble at the tip of each branch?",
+            "Which gas leaves your blood and goes back out into the air?",
+            "Why do you think your lungs are folded into so many tiny branches instead of being one big bag?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it splits in two, one branch for each lung",
+            "an alveolus",
+            "carbon dioxide",
+            "(inference: folding fits a huge surface into a small chest, so more air can reach the blood)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Tree Inside Your Chest", "How to Win at Tennis", "Why Trees Lose Their Leaves"],
+          "answers": ["The Tree Inside Your Chest"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Air travels down your ____ to reach your lungs.", "The tiny bubble at the end of each branch is an ____.", "Your body is finished with a waste gas called carbon ____."],
+          "wordBank": ["windpipe", "alveolus", "dioxide"],
+          "answers": ["windpipe", "alveolus", "dioxide"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about your lungs, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tree That Grows Inside Your Chest",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-lungs", "templateLabel": "The Tree That Grows Inside Your Chest", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lungs",
+          "notes": ["A lung has no muscle of its own", "The diaphragm does the work", "Air is pushed in, not sucked in", "Your brain stem runs the rhythm while you sleep", "The right lung has 3 lobes, the left has 2", "The left lung is smaller to make room for the heart"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Muscle That Does the Breathing",
+          "text": "Here is something strange about your lungs: they cannot move themselves. A lung has no muscle in it. It is a soft, springy sponge, and left alone it would simply sit there. The work of breathing is done by something else. Stretched across the bottom of your chest is a dome of muscle called the diaphragm. When it tightens, it flattens downward. At the same time, muscles between your ribs lift your rib cage up and out. Your chest gets bigger, and the air inside it spreads out to fill the extra room. That thins the air, and the thinner air presses less. Outside, the air of the whole sky is still pressing hard on you. So the outside air pushes in through your nose, down your windpipe, and into your lungs. You do not really suck air in. The atmosphere shoves it in, and you make the room for it. Breathing out is easier. Your diaphragm relaxes, your rib cage settles, and your stretched lungs spring back like a squeezed sponge letting go. Most of the time you never notice any of this. Your brain stem runs the rhythm without asking you, even while you sleep. But you can also grab the controls whenever you want: hold a breath, blow out a candle, sing a long note. Breathing is one of the very few jobs in your body that runs automatically and takes orders too."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why a lung cannot breathe on its own.",
+            "The passage says you do not really suck air in. So what actually moves the air into your chest?",
+            "Why is breathing out easier than breathing in?",
+            "Breathing runs automatically but you can also control it. Why would it be dangerous if you had to remember every breath yourself?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a lung has no muscle in it, so it cannot move itself",
+            "(the atmosphere pushes air in once the diaphragm and ribs make the chest bigger and the inside pressure drops)",
+            "(inference: the diaphragm and ribs just relax and the stretched lungs spring back on their own)",
+            "(inference: you would stop breathing whenever you slept, got distracted, or were knocked out)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Lungs are passive sponges, and the diaphragm and air pressure do the real work of breathing",
+            "Lungs are the strongest muscle in the human body",
+            "People should practice holding their breath every day"
+          ],
+          "answers": ["Lungs are passive sponges, and the diaphragm and air pressure do the real work of breathing"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["diaphragm → ____", "atmosphere → ____", "brain stem → ____"],
+          "rows": 1,
+          "answers": [
+            "the dome of muscle under the chest that does the breathing",
+            "the air of the sky pressing on everything",
+            "the part of the brain that runs breathing without you thinking"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a breath happens, from the moment your diaphragm tightens to the moment air reaches your lungs. Use at least two words from the vocabulary list.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tree That Grows Inside Your Chest",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-lungs", "templateLabel": "The Tree That Grows Inside Your Chest", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lungs",
+          "notes": ["The urge to breathe comes from carbon dioxide, not low oxygen", "Exhaled air is still about 16 percent oxygen", "Cilia sweep mucus up toward your throat", "Healthy lungs are the only organs that float", "You cannot hold your breath until you die", "The wall between air and blood is thinner than a thousandth of a millimeter"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Alarm That Makes You Breathe",
+          "text": "Try holding your breath. Within a minute, something in your chest begins to complain, then to shout. Most people assume that feeling is your body running out of oxygen. It is not. That alarm is triggered by carbon dioxide. Every cell you own burns oxygen to release energy, and every cell produces carbon dioxide as the leftover. The gas dissolves into your blood, where it turns the blood slightly acidic. Sensors in your brain stem and in your arteries are watching that acidity constantly. When it rises, they fire, and the urge to breathe arrives whether you like it or not. Your body monitors its waste far more closely than its fuel, because carbon dioxide builds up long before oxygen runs low. It is an early warning system, and it is why holding your breath is uncomfortable well before it is dangerous. It is also why you cannot hold your breath until you die. Push far enough and you lose consciousness. The moment you do, the brain stem takes back the controls it never really surrendered, and you breathe. Your body does not trust you with this job. The exchange itself happens in the alveoli, the hundreds of millions of tiny air sacs at the ends of your airways. The wall between the air and your blood there is astonishingly thin, less than a thousandth of a millimeter, far thinner than a sheet of paper. Oxygen crosses it and latches onto the red cells rushing past. Carbon dioxide crosses the other way. The air you breathe in is about 21 percent oxygen; the air you breathe out is still about 16 percent. You use surprisingly little of what you take, which is exactly why rescue breathing works. Your lungs also clean themselves. The airways are coated in sticky mucus, and beneath it stand millions of microscopic hairs called cilia, all beating upward in waves. Dust, pollen, and bacteria land in the mucus and get swept steadily up toward your throat, where you swallow them without noticing. Doctors call it the mucociliary escalator, and it runs day and night. One last oddity. Because of all that trapped air, healthy lungs are the only organs in your body that float in water. Coroners have used this fact for centuries to tell whether a newborn ever drew a breath."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What actually triggers the urge to breathe, and why does the passage say your body watches its waste more closely than its fuel?",
+            "Explain why you cannot hold your breath until you die. Quote the phrase the passage uses about the brain stem.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says rescue breathing works because you use surprisingly little of what you take. Explain the connection."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the carbon dioxide alarm + gas exchange + self-cleaning)",
+            "carbon dioxide turning the blood acidic; because carbon dioxide builds up long before oxygen runs low",
+            "you pass out and breathing restarts; quote: the controls it never really surrendered",
+            "(inform, with detail: it explains mechanisms and gives figures; some entertaining tone in the last oddity)",
+            "(exhaled air still holds about 16 percent oxygen, so a rescuer's breath still carries enough for someone else)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["acidic → ____", "alveoli → ____", "cilia → ____", "surrendered → ____"],
+          "rows": 1,
+          "answers": [
+            "slightly sour in chemistry terms, which the sensors can detect",
+            "the tiny air sacs at the ends of the airways where gases cross",
+            "microscopic hairs that beat upward to sweep mucus away",
+            "given up or handed over"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that your body does not trust you with this job. Explain what that sentence means in your own words.",
+            "Smoke is known to paralyze cilia. Using the passage, predict what would happen inside the airways of someone who smokes."
+          ],
+          "rows": 3,
+          "answers": [
+            "(breathing is too important to leave to a distractible mind, so the brain stem overrides you)",
+            "(inference: the escalator stops, mucus and trapped dirt build up, and infections become more likely)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should free diving, where people hold their breath and swim deep on one lungful of air, be treated as a sport or as something too dangerous to encourage? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tree That Grows Inside Your Chest",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-lungs", "templateLabel": "The Tree That Grows Inside Your Chest", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "lungs",
+          "notes": ["The bronchial tree branches about 23 times", "300 to 500 million alveoli", "Surface area: roughly half a tennis court", "Breathing is both automatic and voluntary", "Air and food share one hallway, inherited from fish", "Bird lungs move air in one direction only"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Only Organ You Can Command",
+          "text": "Every other organ you own works in secret. You cannot order your liver to filter faster, or ask your kidneys to pause for thirty seconds. Your heart will not take requests. Your lungs are the exception. Breathing runs perfectly well without you, and yet you can seize the controls at any moment, hold a breath underwater, blow out a match, shape a sentence. That double life is not an accident. It is the reason the lungs are one of the strangest pieces of engineering in the body. Start with the machine itself. A lung contains no muscle. It is a passive sponge, and it does nothing on its own. Breathing is performed by the diaphragm, a dome of muscle slung under the chest, working with the muscles laced between your ribs. When they contract, the chest cavity enlarges. The air already inside spreads out, its pressure drops below the pressure of the atmosphere outside, and the outside air rushes in to even the score. You never pull air into your body. You enlarge a space, and the sky fills it. Where that air ends up is the real marvel. Your windpipe divides into two bronchi, one per lung, and each of those divides, and divides again, roughly twenty-three times over, branching into a tree of tubes finer than hairs. At the very tips hang the alveoli, between 300 and 500 million air sacs, each wrapped in capillaries. The barrier separating air from blood there is thinner than a thousandth of a millimeter. Oxygen drifts across it and binds to hemoglobin in the red cells streaming past; carbon dioxide drifts back the other way. Spread flat, all that folded surface would cover roughly half a tennis court. Your body carries a tennis court around inside a chest the size of a school bag. Every advantage here is also a cost. A surface large enough and thin enough for gases to cross is, by definition, a surface thin enough for almost anything else to cross. Your lungs are the widest open door in your body, and you hold it open twenty thousand times a day, admitting dust, smoke, pollen, viruses, and spores with every breath. So the lungs are defended obsessively. Mucus lines the airways to trap intruders. Beneath it, carpets of microscopic hairs called cilia beat upward in coordinated waves, walking the mucus toward your throat to be swallowed. Immune cells patrol the sacs themselves. Nearly every serious lung disease is a story about that defense failing or overreacting: smoke that paralyzes the cilia, an infection that floods the sacs with fluid, an immune system that clamps the airways shut at the sight of a cat. Even the layout is a compromise. Air and food share a single hallway at the back of your throat, an arrangement inherited from fish and never redesigned, which is why a swallow at the wrong moment can kill you. Birds, meanwhile, ended up with a better lung than ours: air flows through it in one direction, fresh in every phase of the cycle, which is part of how a goose crosses the Himalayas in air that would leave you unconscious. Your lungs are not the finest breathing machine on the planet. They are a very old design, patched and compromised, running on borrowed anatomy. They are also good enough that you have never once had to remember to use them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author claims the lungs are the exception among your organs. Explain the claim and cite the evidence given for it.",
+            "Explain the tradeoff the author describes in the fourth paragraph. Quote the sentence that states the tradeoff most directly.",
+            "Identify where the passage turns from praising the lungs to criticizing their design, and explain how the author signals that turn.",
+            "The passage ends by calling the lungs a very old design, patched and compromised, then says they are good enough. Analyze what the author is doing with that ending and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(other organs cannot be consciously controlled; cite: You cannot order your liver to filter faster)",
+            "(a surface thin enough for gas exchange is also thin enough for invaders; cite: A surface large enough and thin enough for gases to cross is, by definition, a surface thin enough for almost anything else to cross)",
+            "(at Every advantage here is also a cost; a short blunt sentence pivots from marvel to vulnerability)",
+            "(it undercuts the earlier wonder with honesty, then rescues it; supported by the bird lung and shared hallway evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["bronchi → ____", "capillaries → ____", "hemoglobin → ____", "compromised → ____"],
+          "rows": 2,
+          "answers": [
+            "the two large tubes branching from the windpipe, one into each lung",
+            "the smallest blood vessels, wrapped around each air sac",
+            "the substance in red blood cells that oxygen binds to",
+            "weakened by having to settle for less than the best design"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says evolution never redesigned the shared hallway for air and food. Explain why a clearly imperfect design can survive for millions of years.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(evolution modifies what already exists and cannot start over; a flaw persists if it rarely stops an animal from reproducing)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Calling the human lung a bad design is unfair, because a design can only be judged against the job it actually has to do. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

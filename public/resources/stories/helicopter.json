@@ -1,0 +1,319 @@
+{
+  "key": "helicopter",
+  "title": "The Machine That Can Stand Still in the Sky",
+  "blurb": "A helicopter carries its own wind. Its wings spin, so it never has to move forward to stay up.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Machine That Can Stand Still in the Sky",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-helicopter", "templateLabel": "The Machine That Can Stand Still in the Sky", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the long blades on top." },
+        {
+          "kind": "image",
+          "imageKey": "helicopter",
+          "notes": ["The blades on top are wings", "It can stop and stay in one spot", "It does not need a runway", "The little tail propeller keeps it straight"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a helicopter. Its long blades spin around and around on top. The spinning blades push the air down. When the air goes down, the helicopter goes up. A helicopter can stop in the sky and stay in one spot. It can fly up. It can fly down. It can even fly backward. A plane cannot do that."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the helicopters in each row. Write how many in the box.",
+          "emoji": "🚁",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "up    spin" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "helicopter", "right": "sky" },
+            { "left": "boat", "right": "water" },
+            { "left": "truck", "right": "road" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own helicopter. Give it big spinning blades on top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Machine That Can Stand Still in the Sky",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-helicopter", "templateLabel": "The Machine That Can Stand Still in the Sky", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "helicopter",
+          "notes": ["Each blade on top is a long thin wing", "Hover means to stay in one spot in the air", "It can lift off from a roof or a ship", "The tail propeller stops the body spinning", "The blades spin hundreds of times a minute"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Wings That Spin",
+          "text": "A helicopter has wings, but they do not sit still. They spin. Each blade on top is a long thin wing. When the blades whirl around, they push air down, and that push lifts the helicopter straight up. That is why a helicopter does not need a runway. It can lift off from a field, a roof, or a ship at sea. It can hover, which means it stays in one spot in the air. Now look at the small propeller on the tail. Without it, the whole helicopter would spin in circles."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What do the blades on top push?", "What does hover mean?", "What is on the tail of a helicopter?"],
+          "rows": 2,
+          "answers": ["they push air down", "it stays in one spot in the air", "a small propeller"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The blades on top ____ around.", "The blades push the air ____.", "A helicopter does not need a ____.", "A small propeller sits on the ____."],
+          "wordBank": ["spin", "down", "runway", "tail"],
+          "answers": ["spin", "down", "runway", "tail"]
+        },
+        { "kind": "draw", "prompt": "Draw a helicopter hovering over something. Add a roof, a boat, or a field below it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Machine That Can Stand Still in the Sky",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-helicopter", "templateLabel": "The Machine That Can Stand Still in the Sky", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "helicopter",
+          "notes": ["The spinning blades are called the rotor", "Airplanes need runways, helicopters do not", "The engine twists the body, so the tail rotor pushes back", "Foot pedals swing the nose left or right", "A helicopter can fly forward, backward, or sideways"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Helicopters Have a Little Propeller on the Tail",
+          "text": "An airplane wing has to move fast through the air to make lift, and that is why planes need long runways. A helicopter solves the problem a different way. Instead of dragging its wings through the air, it spins them. The blades on top are wings, and they whirl around a few hundred times every minute. They push air down. The air pushes back. Up goes the helicopter, no runway needed. But spinning those heavy blades creates a problem. The engine turns the blades one way, and the machinery tries to twist the body of the helicopter the other way. Left alone, the cabin would spin like a top with the pilot inside it. That is the job of the little propeller on the tail. It faces sideways and blows air out to one side, and that steady push holds the body straight. The pilot presses foot pedals to make the tail rotor push harder or softer. Push harder and the nose swings one way. Ease off and it swings back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why do airplanes need long runways?",
+            "What do the spinning blades do to the air?",
+            "What would happen without the tail propeller?",
+            "Why do you think helicopters are useful for rescuing people?"
+          ],
+          "rows": 2,
+          "answers": [
+            "their wings must move fast through the air to make lift",
+            "they push the air down, and the air pushes back",
+            "the body of the helicopter would spin in circles",
+            "(inference: they can land anywhere and can hover over one spot)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Helicopters Have a Little Propeller on the Tail", "How to Build a Paper Airplane", "The Busiest Airport in the World"],
+          "answers": ["Why Helicopters Have a Little Propeller on the Tail"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Instead of dragging its wings, a helicopter ____ them.", "The blades push air ____.", "The pilot presses foot ____ to swing the nose."],
+          "wordBank": ["spins", "down", "pedals"],
+          "answers": ["spins", "down", "pedals"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: where would you land a helicopter that a plane could never reach, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Machine That Can Stand Still in the Sky",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-helicopter", "templateLabel": "The Machine That Can Stand Still in the Sky", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "helicopter",
+          "notes": ["Collective: the lever that makes every blade bite harder", "Cyclic: the stick that tilts the whole spinning disc", "Pedals: they control the tail rotor and swing the nose", "Autorotation: how a pilot lands with a dead engine", "A helicopter flies wherever its rotor disc points"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Flying a Helicopter Takes Both Hands and Both Feet",
+          "text": "A helicopter pilot has three controls working at once, and none of them can be ignored for long. In the pilot's left hand is the collective, a lever that looks a bit like a parking brake. Pulling it up changes the angle of every rotor blade at the same time, so all of them bite harder into the air. More bite means more lift, and the helicopter climbs. Push the collective down and it sinks. In the right hand is the cyclic, a stick between the knees. This one is clever. It changes the angle of each blade depending on where that blade is in its circle. The result is that the whole spinning disc of blades tilts, like a dinner plate tipping. Tilt it forward and the helicopter flies forward. Tilt it left and it slides left. A helicopter goes wherever its rotor disc points. Under the pilot's feet are the pedals, which control the tail rotor and swing the nose left or right. Now here is the part people get wrong. If the engine quits, a helicopter does not drop like a stone. The pilot immediately pushes the collective all the way down. The helicopter starts falling, and the air rushing up through the rotor keeps the blades spinning, the way wind keeps a pinwheel turning. Those free spinning blades store energy. Near the ground the pilot pulls the collective back up, trades that stored energy for one last cushion of lift, and sets the machine down. The move is called autorotation, and every helicopter pilot practices it before ever flying alone."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words what the collective does.",
+            "How does the cyclic make a helicopter fly forward?",
+            "Describe the two steps a pilot takes during an autorotation.",
+            "The passage says the pilot must push the collective down immediately when the engine quits. Why do you think waiting would be dangerous?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it changes the angle of every blade at once, so the helicopter climbs or sinks",
+            "it tilts the whole spinning disc forward, and the helicopter goes where the disc points",
+            "push the collective down so the rushing air keeps the blades spinning, then pull it back up near the ground for a cushion of lift",
+            "(inference: the blades would slow down and stop storing the energy needed to land)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Flying a helicopter means working three controls together, even when the engine fails",
+            "Helicopters are easier to fly than airplanes",
+            "Every pinwheel works the same way as a rotor"
+          ],
+          "answers": ["Flying a helicopter means working three controls together, even when the engine fails"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["collective → ____", "cyclic → ____", "autorotation → ____"],
+          "rows": 1,
+          "answers": [
+            "the lever that changes every blade's angle at once to climb or sink",
+            "the stick that tilts the rotor disc to steer the helicopter",
+            "landing with a dead engine by letting rushing air keep the blades spinning"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: would you rather fly a helicopter or an airplane? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Machine That Can Stand Still in the Sky",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-helicopter", "templateLabel": "The Machine That Can Stand Still in the Sky", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "helicopter",
+          "notes": ["Helix plus pteron: Greek for spiral wing", "Leonardo sketched an aerial screw around 1480", "Igor Sikorsky's VS-300 flew in 1939", "One big rotor on top, one small rotor on the tail", "Speed record: a Westland Lynx, 1986, about 249 mph", "The retreating blade is what sets the speed limit"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Slowest Fast Machine",
+          "text": "The word helicopter is stitched together from two Greek pieces: helix, meaning spiral, and pteron, meaning wing. A French inventor put them together in 1861, nearly fifty years before anyone built a machine worth the name. The idea is much older. Around 1480 Leonardo da Vinci sketched an aerial screw, a spiral canopy meant to bore upward through the air. It would never have flown. He had no engine light enough, and the whole machine would simply have spun beneath its own screw. Chinese children had been spinning bamboo flying tops for well over a thousand years, and those actually worked, which was the more useful clue. Real progress waited on engines. In 1909 a young Russian named Igor Sikorsky built a helicopter that could not lift its own weight. He built a second one. It failed too. He gave up, spent thirty years building airplanes instead, and came back. In 1939 his VS-300 rose off a field in Connecticut, tethered by ropes, with Sikorsky at the controls in a business suit and a fedora hat. One big rotor on top, one small rotor on the tail. Nearly every helicopter since has copied that layout. But the design carries a built in speed limit, and it is worth understanding. Think of the rotor as a spinning wheel of wings. When the helicopter flies forward, the blade sweeping around on one side is traveling in the same direction as the aircraft, so it meets the air very fast. Half a turn later that same blade is sweeping the other way, against the direction of travel, and its speed through the air is now the rotor speed minus the aircraft speed. Fly fast enough and the retreating blade slows so much that it stops making lift. The helicopter tries to roll over. That is why a machine that can hover motionless over a rooftop struggles to outrun a car on the highway. The world speed record for a conventional helicopter, set by a modified Westland Lynx in 1986, is about 249 miles per hour, and it has stood ever since."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the passage say Leonardo's aerial screw would never have flown? Give both reasons.",
+            "Explain what happens to the retreating blade at high speed. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author mention that Sikorsky failed twice in 1909 and then waited thirty years?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the name and early history plus the retreating blade speed limit)",
+            "no engine was light enough, and the machine would have spun beneath its own screw",
+            "it runs out of airflow and stops making lift; quote: it stops making lift",
+            "(inform, with detail: it defines terms and gives dates and figures; the title and the joke about speed are entertaining touches)",
+            "(inference: it shows the idea was ahead of the engines, and that the invention needed patience)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["hover → ____", "retreating (blade) → ____", "conventional → ____", "tethered → ____"],
+          "rows": 1,
+          "answers": [
+            "to stay in one spot in the air without moving",
+            "the blade sweeping backward against the direction of travel",
+            "the usual or standard kind, one main rotor and one tail rotor",
+            "tied down with ropes so it could not fly away"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The title calls the helicopter the slowest fast machine. Explain what that means in your own words.",
+            "The Lynx record has stood since 1986. Why might a speed record be so hard to break when engines keep improving?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it can do things no fast aircraft can do, yet a car can nearly match its top speed)",
+            "(inference: the limit comes from the shape of the rotor's airflow, not from engine power)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was Leonardo da Vinci an inventor if his machine could never have flown? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Machine That Can Stand Still in the Sky",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-helicopter", "templateLabel": "The Machine That Can Stand Still in the Sky", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "helicopter",
+          "notes": ["Torque: spin the rotor one way, the body wants to spin the other", "The tail rotor burns roughly a tenth of the engine's power", "Retreating blade stall caps conventional helicopter speed", "Autorotation turns a falling helicopter into a windmill", "2005: an AS350 landed on the summit of Everest", "2021: Ingenuity flew on Mars in one percent of Earth's air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Beating the Air Into Submission",
+          "text": "There is an old joke among pilots that airplanes fly, while helicopters merely beat the air into submission. It is a slander with a grain of truth in it. An airplane is a fundamentally lazy machine: throw it forward and the fixed wings do the work. A helicopter has no such luxury. It carries its own wind. The rotor overhead is a set of wings on a leash, whipped around a mast a few hundred times a minute so that they never stop meeting fresh air. The moment that spinning stops, the wings stop being wings. This buys the helicopter the one thing no fixed wing aircraft can have: the ability to stay. An airplane must keep moving or fall. A helicopter can hold a position over a sinking trawler, a burning roof, a canyon ledge, or a stretcher on a highway, and hold it while people are pulled aboard. Almost every job helicopters do well comes from that single ability, and almost every job they do badly comes from the price they pay for it. The price begins with torque. Spin a heavy rotor one way and Newton's third law insists the body try to spin the other. The fix that Igor Sikorsky settled on in 1939, and that the industry has largely used ever since, is a small propeller mounted sideways on the tail. It does not push the helicopter forward. It pushes against the twist, all day, burning perhaps a tenth of the engine's power to accomplish nothing except keeping the cabin pointed where the pilot wants it. The next price is speed. In forward flight the advancing blade meets the air at rotor speed plus airspeed, while the retreating blade meets it at rotor speed minus airspeed. Push the aircraft faster and the two halves of the disc grow more and more unequal: the advancing tip creeps toward the speed of sound while the retreating blade runs out of airflow and stalls. That imbalance is why the record for a conventional helicopter, set by a modified Westland Lynx in 1986, sits at roughly 249 miles per hour, and why nobody has beaten it in forty years. The engines have improved. The physics has not changed. The third price is that when the engine stops, the pilot has seconds, not minutes. But here the design quietly redeems itself. Drop the collective and the falling helicopter becomes a windmill: air rushing up through the disc keeps the blades turning, storing energy in their spinning mass. Near the ground the pilot cashes that energy in, flaring the disc and pulling the collective to buy a last few feet of lift. The maneuver is called autorotation, and student pilots practice it long before they are trusted to fly alone. For all its compromises, the layout is astonishingly capable. In 2005 a test pilot named Didier Delsalle set an AS350 down on the summit of Everest, at 29,029 feet, in air roughly a third as thick as the air at sea level. In 2021 a four pound machine called Ingenuity lifted off the floor of Jezero Crater on Mars, where the atmosphere is about one percent of Earth's. To find any grip at all its blades had to spin near 2,500 revolutions per minute, roughly five times faster than a helicopter's on Earth. It was built to make five flights. It made 72. Beating the air into submission, it turns out, is a strategy that travels."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says an airplane is a lazy machine and a helicopter has no such luxury. Explain the contrast, and cite the phrase that describes what the helicopter does instead.",
+            "Explain why the tail rotor is described as accomplishing nothing. Is the author saying it is useless? Cite the text.",
+            "Identify the shift in the passage: where does it turn from cost to capability, and how does the author signal it?",
+            "Analyze the two sentences 'The engines have improved. The physics has not changed.' What is the author doing with that pair, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a plane is thrown forward and its fixed wings work for free, while a helicopter must spin its own wings constantly; cite: It carries its own wind)",
+            "(no, it means the tail rotor produces no useful flight, it only cancels torque; cite: nothing except keeping the cabin pointed where the pilot wants it)",
+            "(at 'For all its compromises, the layout is astonishingly capable'; a concession phrase pivots from the three prices to Everest and Mars)",
+            "(a short contrast pair placing the speed limit in the rotor's airflow rather than engine power; earned by the advancing and retreating blade explanation just above)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["torque → ____", "advancing (blade) → ____", "autorotation → ____", "compromises → ____"],
+          "rows": 2,
+          "answers": [
+            "the twisting force that tries to spin the body opposite the rotor",
+            "the blade moving in the same direction as the aircraft, meeting the air fastest",
+            "landing without engine power by letting rising air keep the rotor spinning",
+            "the things given up in exchange for something else"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Ingenuity's blades had to spin near 2,500 revolutions per minute on Mars. Explain what that tells you about the relationship between air and lift.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(thinner air means less mass to push, so the rotor must move much faster to make the same lift)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A machine with this many built in compromises is a bad design that we have simply gotten used to. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

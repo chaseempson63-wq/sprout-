@@ -1,0 +1,319 @@
+{
+  "key": "guitar",
+  "title": "The Box That Sings",
+  "blurb": "Six strings, a hollow box, and some very old math. How a guitar turns the shiver of a wire into a sound you can feel.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Box That Sings",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-guitar", "templateLabel": "The Box That Sings", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the strings." },
+        {
+          "kind": "image",
+          "imageKey": "guitar",
+          "notes": ["It has six strings", "It is a wooden box", "The strings shake to make sound", "The hole lets the sound out"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a guitar. It is a wooden box with strings. Pull a string and let it go. The string shakes. It shakes so fast you cannot see it. The shaking makes a sound. The sound goes into the hole. The box is full of air. The air hums. Now the whole box is singing. Fat strings sing low. Thin strings sing high."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the guitars in each row. Write how many in the box.",
+          "emoji": "🎸",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "play    string" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "guitar", "right": "pluck it" },
+            { "left": "drum", "right": "hit it" },
+            { "left": "whistle", "right": "blow it" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own guitar. Give it lots of strings.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Box That Sings",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-guitar", "templateLabel": "The Box That Sings", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "guitar",
+          "notes": ["Six strings, six different sizes", "Fast shaking is called vibrating", "Thick strings make low sounds", "The front is thin like a drum skin", "Short strings sing higher"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Box That Sings",
+          "text": "A guitar has six strings. Each one is a different size. When you pluck a string, it shakes back and forth very fast. That shaking is called a vibration. The vibration travels down the string and into the wood. The flat front of the guitar is thin, like a drum skin. It shakes too. It pushes on the air, and the air carries the sound to your ears. A thick, loose string shakes slowly and makes a low sound. A thin, tight string shakes quickly and makes a high sound. Press a string against the neck and you make it shorter. Short strings sing higher."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many strings does a guitar have?", "What is the fast shaking of a string called?", "What kind of string makes a low sound?"],
+          "rows": 2,
+          "answers": ["six", "a vibration", "a thick, loose string"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A guitar has ____ strings.", "The fast shaking of a string is called a ____.", "A thin, tight string makes a ____ sound.", "The air carries the sound to your ____."],
+          "wordBank": ["six", "vibration", "high", "ears"],
+          "answers": ["six", "vibration", "high", "ears"]
+        },
+        { "kind": "draw", "prompt": "Draw someone playing a guitar. Show the strings shaking.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Box That Sings",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-guitar", "templateLabel": "The Box That Sings", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "guitar",
+          "notes": ["The flat front is called the soundboard", "The metal ridges are called frets", "The bridge carries the shaking into the wood", "The 12th fret sits exactly halfway", "A string alone is almost silent"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Guitar Gets Loud",
+          "text": "Pluck a guitar string on its own, stretched between two nails, and you will barely hear it. A string is thin. It slices through the air instead of pushing it. Almost no sound gets out. Now stretch that same string across a guitar. The string still shakes, but now the shaking runs down through a little wooden bar called the bridge and into the flat front of the guitar, which is called the soundboard. The soundboard is wide and thin, and it shakes along with the string. A wide surface can shove a lot of air at once. That is what your ears hear. The hole matters too. The body is a box of trapped air, and when the soundboard pumps, the air inside bounces in and out of the hole and adds a deep boom to the low notes. The neck is covered in metal ridges called frets. Press a string just behind a fret and you shorten the part that can shake. Shorter means faster. Faster means higher. The frets are not spaced evenly. Each one sits a little closer to the last, because the math of pitch works that way."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why can you barely hear a string on its own?",
+            "What is the flat front of the guitar called?",
+            "What happens to a string when you press it just behind a fret?",
+            "Why do you think the frets get closer together as they near the body?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is thin, so it slices through the air instead of pushing it",
+            "the soundboard",
+            "the part that can shake gets shorter, so the note is higher",
+            "(inference: each fret raises the note by the same step, and each step takes a smaller bite out of the string that is left)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Guitar Gets Loud", "The Best Songs to Play on a Guitar", "How to Build a Wooden Box"],
+          "answers": ["How a Guitar Gets Loud"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The shaking travels through the ____ and into the wood.", "The wide, thin front of a guitar is called the ____.", "The metal ridges on the neck are called ____."],
+          "wordBank": ["bridge", "soundboard", "frets"],
+          "answers": ["bridge", "soundboard", "frets"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a guitar makes sound, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Box That Sings",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-guitar", "templateLabel": "The Box That Sings", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "guitar",
+          "notes": ["The top is often under three millimeters of spruce", "Six strings pull with over 150 pounds of force", "The hidden struts underneath are called bracing", "Antonio de Torres, Spain, the 1850s", "He built one with a papier mache body to prove a point"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Skeleton You Never See",
+          "text": "A guitar is a machine built around one stubborn problem. To make sound, the front of the instrument has to be thin. A thick top is stiff, and a stiff top will not vibrate, and a top that will not vibrate is silent. So the soundboard on a good acoustic guitar is often less than three millimeters of spruce, thinner than two coins stacked together. Here is the problem. The six strings of a steel-string guitar pull on that thin top with a combined force of over one hundred and fifty pounds, about the weight of a grown adult, and they never stop pulling. Left alone, a sheet of wood that thin would fold up like paper. The answer is bracing. Underneath the soundboard, hidden where nobody looks, a builder glues a skeleton of narrow wooden struts. Struts standing on edge are astonishingly strong for their weight, which is why bridges and floors use the same trick. The bracing holds the top flat against years of pulling while adding almost no weight, so the top stays light enough to sing. In the 1850s, a Spanish builder named Antonio de Torres arranged those struts in a fan, spreading them out from under the bridge toward the bottom of the box. He also made the body bigger. His guitars were louder and richer than anything before them, and nearly every acoustic guitar since has copied his plan. Torres knew exactly what he had done. He once built a guitar with a body of papier mache, everything except the top and the bracing, to prove where the sound really came from. It worked. It played."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the stubborn problem a guitar builder faces, in your own words.",
+            "What is bracing, and how does it solve that problem?",
+            "Why did Torres build a guitar with a papier mache body?",
+            "The passage says a stiff top will not vibrate. Why does that make a guitar silent?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(the top must be thin enough to vibrate, but thin wood cannot survive the constant pull of the strings)",
+            "narrow wooden struts glued under the soundboard; they hold the top flat without adding much weight, so it stays light enough to vibrate",
+            "to prove that the sound comes from the top and the bracing, not from the back and sides",
+            "(inference: a top that does not move cannot push air, and moving air is the only thing your ears can hear)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A guitar needs a thin top to make sound, and hidden bracing is what makes a thin top possible",
+            "Spruce is the most common tree in Spain",
+            "Papier mache is stronger than wood"
+          ],
+          "answers": ["A guitar needs a thin top to make sound, and hidden bracing is what makes a thin top possible"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["soundboard → ____", "bracing → ____", "stiff → ____"],
+          "rows": 1,
+          "answers": [
+            "the thin front of the guitar that vibrates and pushes air",
+            "the skeleton of narrow struts glued under the top",
+            "hard to bend"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: Torres made his guitars better by changing a part nobody can see. Describe one other thing that works because of a hidden part, and give two reasons that part matters.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Box That Sings",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-guitar", "templateLabel": "The Box That Sings", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "guitar",
+          "notes": ["A pickup is a magnet wrapped in fine wire", "It reads the string, not the air", "The Frying Pan, about 1932", "Faraday explained the physics back in 1831", "Solid bodies do not howl with feedback", "A hollow box can only push so much air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Guitar That Gave Up on Air",
+          "text": "An acoustic guitar is a machine for moving air. Everything about it, the thin spruce top, the hidden bracing, the hollow box, exists to take the tiny shiver of a steel string and turn it into a pressure wave big enough to reach the back of a room. It is an elegant machine, and by the 1920s it had run out of room. The problem was the dance band. Guitarists sat in orchestras next to trumpets, saxophones, and drum kits, and they simply could not be heard. The guitar was a rhythm instrument by default, chopping out chords in the background, because no matter how hard you hit it, a wooden box can only shove so much air. The solution abandoned air entirely. In the early 1930s, George Beauchamp and Adolph Rickenbacker built and sold an instrument nicknamed the Frying Pan, and it worked on a principle Michael Faraday had described a century earlier. Wrap thousands of turns of fine wire around a magnet and hold it under a steel string. The magnet turns the string itself into a magnet. When the string vibrates, the magnetic field around the coil changes, and a changing magnetic field pushes a current through wire. That current is an electrical copy of the string's motion, and you can send it down a cable to an amplifier and make it as loud as you like. Notice what is gone. The pickup does not listen to the sound of the guitar. It has no microphone. It ignores the air, the room, the wood, and the audience, and reads the string directly. Once you understand that, the solid-body electric guitar stops looking strange. If the body is not making the sound, it does not need to be hollow, and a hollow body was actually causing trouble, howling with feedback in front of a loud amplifier. Leo Fender's solid-body, which went on sale in 1950 and soon took the name Telecaster, was essentially a plank of ash with a bolted-on neck. Critics called it a canoe paddle. It did not feed back, it stayed in tune, it sustained notes far longer than any acoustic, and a factory could turn one out in pieces. The guitar had spent four hundred years getting quietly better at pushing air. In twenty years it stopped trying, and became the loudest instrument on the stage."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What problem were guitarists facing in the dance bands, and why could a better acoustic guitar not fix it?",
+            "Explain in your own words how a pickup turns a moving string into an electrical signal.",
+            "The author gives one short sentence its own paragraph: The solution abandoned air entirely. Why put it there, alone?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentences covering: acoustic guitars amplify by moving air and hit a hard volume limit; the pickup reads the string electrically instead, which made the solid body possible and the guitar loud)",
+            "they could not be heard over the horns and drums; a wooden box can only shove so much air no matter how well it is built",
+            "the magnet makes the steel string magnetic, so when the string vibrates it changes the magnetic field through the coil, and a changing field pushes a current along the wire",
+            "(it is the hinge of the passage; standing alone it marks the break between the old approach and the new one)",
+            "(inform, with detail: it explains the physics and gives names and dates; the closing lines lean toward persuading you the change was dramatic)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["amplifier → ____", "feedback → ____", "sustained → ____", "solid-body → ____"],
+          "rows": 1,
+          "answers": [
+            "a machine that makes an electrical signal strong enough to drive a loudspeaker",
+            "the howl a hollow guitar makes in front of a loud amplifier",
+            "kept a note ringing",
+            "a guitar with no hollow box, because the body is not what makes the sound"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The pickup ignores the room and reads the string directly. Name one thing a player gains from that, and one thing a player loses.",
+            "Critics called the Telecaster a canoe paddle. Why might a plain, factory-made instrument have offended them?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(gains: volume and control with no feedback; loses: the natural voice of the wood and the room)",
+            "(opinion: instruments were seen as handmade craft, and a bolted-together plank looked like a shortcut)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when a new tool solves an old problem by refusing to play by its rules, is that cleverness or cheating? Take a position on the electric guitar and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Box That Sings",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-guitar", "templateLabel": "The Box That Sings", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "guitar",
+          "notes": ["The frets crowd together as they near the body", "Each fret leaves about 94.4 percent of the string", "The twelfth root of two is roughly 1.0595", "The 12th fret halves the string and doubles the pitch", "The old shortcut: the rule of eighteen", "Equal temperament: twelve equal steps per octave"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ruler Made of Math",
+          "text": "Look closely at the neck of a guitar and you will notice something that seems like a mistake. The metal frets are not evenly spaced. Down by the tuning pegs they sit far apart, wide enough to stretch a hand across. As they march toward the body they crowd together, until near the end they are packed so tightly that a fingertip barely fits between them. Every guitar ever built has this same crowding, and every one crowds by exactly the same amounts. That is not a style choice. It is arithmetic, made visible in metal and wood. Start with the string. A stretched string vibrates at a rate set mostly by three things: how long it is, how tight it is, and how heavy it is. Tuning pegs adjust the tightness. String makers control the weight. The frets control the length, and length is the one you change while you play. Press a string down just behind a fret and the vibrating part now runs only from that fret to the bridge. It is shorter, so it vibrates faster, so the note is higher. Now the crucial fact, known to the Greeks and probably long before them: halve the length of a string and you exactly double its frequency. That doubling is the interval we call an octave, and it is the most agreeable sound in music, so agreeable that we give both notes the same name. This is why the twelfth fret sits at the precise midpoint of the string. Everything else follows from deciding how to divide up the space between one note and its octave. For centuries, Western musicians divided it using tidy whole-number ratios, which sound gorgeous in one key and increasingly sour as you move away from it. A tuning that flatters music in C betrays music in F sharp. Keyboard players simply avoided the bad keys. Guitarists could not, because the frets are fixed bars that cross every string at once. The compromise that won is called equal temperament. Split the octave into twelve steps that are all the same size, and accept that almost none of them is perfectly in tune with the old ratios. In exchange, every key sounds equally slightly wrong, which is to say every key becomes usable. To build it, each fret has to raise the pitch by the same multiple. That multiple is the twelfth root of two, roughly 1.0595, because twelve of them multiplied together give exactly two, which is the octave. Run that backward and you get a rule for cutting fret slots. Each fret shortens the remaining string to about 94.4 percent of what was left before it. Since each fret takes its share of a smaller and smaller remainder, the gaps shrink as you go. Luthiers once did this with a formula known as the rule of eighteen, dividing the remaining length by roughly 17.817 and marking off that distance. Modern builders use the exact figure, but the shape of the answer never changes, which is why frets always crowd toward the body. So the fingerboard is not merely a place to put your fingers. It is a physical printout of a mathematical argument that took Western music several hundred years to finish having. Every guitarist, without needing to know any of it, plays a compromise with their hands."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why could guitarists not avoid the badly tuned keys the way keyboard players once did? Cite the passage exactly.",
+            "Explain why the twelfth root of two, and not some other number, sets the spacing of the frets.",
+            "The author writes that a tuning flatters music in one key and betrays music in another. Analyze what those two words are doing.",
+            "Identify where the passage stops describing and starts arguing, and explain how the final paragraph changes what the whole piece is about."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering: fret spacing is the visible result of dividing the octave into twelve equal steps)",
+            "(the frets are fixed and cross all six strings, so a guitarist cannot skip a key; cite: because the frets are fixed bars that cross every string at once)",
+            "(twelve equal steps must multiply together to make an octave, and an octave is a doubling, so each step must be the number that gives two when multiplied by itself twelve times)",
+            "(they treat a tuning system as a person choosing sides, which turns an abstract math problem into something with loyalty and betrayal in it, keeping the reader inside a story)",
+            "(it turns at the last paragraph; the fingerboard is reframed from a piece of hardware into the record of a long argument, so the piece becomes about ideas rather than about wood)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["equal temperament → ____", "luthiers → ____", "interval → ____", "remainder → ____"],
+          "rows": 2,
+          "answers": [
+            "dividing the octave into twelve equal steps, leaving every key slightly out of tune and all of them usable",
+            "people who build stringed instruments",
+            "the distance in pitch between two notes",
+            "the part of the string still left after each fret has taken its share"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says every key sounds equally slightly wrong. Explain why a musician would accept that trade.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a small error spread everywhere is worth more than perfection in one key and ruin in the rest, because it lets a player move freely between keys)",
+            "(student question plus a credible source type, such as an acoustics textbook or a luthier's manual)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Equal temperament made music worse, and we only accept it because we have never heard the alternative. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "key": "flower-parts",
+  "title": "The Flower That Drinks With Its Feet",
+  "blurb": "Roots that drink, a stem with no pump, leaves that build sugar out of thin air, and petals that are really just a sign for bees.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Flower That Drinks With Its Feet",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to each part of the flower as you go.",
+      "meta": { "templateId": "story-flower-parts", "templateLabel": "The Flower That Drinks With Its Feet", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the roots at the bottom." },
+        {
+          "kind": "image",
+          "imageKey": "flower-parts",
+          "notes": ["The roots drink water", "The stem holds it up", "Leaves catch sunlight", "Petals are bright for bees"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A flower has four parts. The roots are down in the dirt. The roots drink water. The stem holds the flower up tall. The leaves are green and flat. The leaves catch the sunlight. The petals are soft. The petals are bright so bees can find them. Every part has a job."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the petals on each flower. Write how many in the box.",
+          "emoji": "🌸",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "root    stem" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part to its job.",
+          "pairs": [
+            { "left": "roots", "right": "drink water" },
+            { "left": "stem", "right": "holds it up" },
+            { "left": "petals", "right": "bright for bees" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own flower. Give it roots, a stem, a leaf, and petals.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Flower That Drinks With Its Feet",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-flower-parts", "templateLabel": "The Flower That Drinks With Its Feet", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "flower-parts",
+          "notes": ["Roots drink water from the soil", "The stem works like a straw", "Leaves make food from sunlight", "Petals are bright so bees find them", "Nectar is the flower's sweet drink"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Flower That Drinks With Its Feet",
+          "text": "A flower cannot walk to get a drink. It does not need to. Its roots spread out under the ground like fingers. They pull water out of the soil. The water goes up the stem. The stem is like a straw, and it holds the flower up so it does not fall over. At the top are the leaves. Leaves are flat and green. They catch sunlight and turn it into food for the plant. The petals are the bright part. Bees see the color from far away. They fly over to get a sweet drink called nectar. Every part has a job to do."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What do the roots pull out of the soil?", "What do the leaves catch?", "Why do bees fly over to the petals?"],
+          "rows": 2,
+          "answers": ["water", "sunlight", "to get a sweet drink called nectar"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The roots pull ____ out of the soil.", "The ____ holds the flower up like a straw.", "The leaves catch ____ and make food.", "Bees drink sweet ____ from the flower."],
+          "wordBank": ["water", "stem", "sunlight", "nectar"],
+          "answers": ["water", "stem", "sunlight", "nectar"]
+        },
+        { "kind": "draw", "prompt": "Draw the whole flower. Put the roots under the ground and a bee coming to the petals.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Flower That Drinks With Its Feet",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-flower-parts", "templateLabel": "The Flower That Drinks With Its Feet", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "flower-parts",
+          "notes": ["Roots grip the soil and drink", "Tiny tubes in the stem lift water", "Chlorophyll makes leaves green", "Leaves build sugar from sunlight and air", "Petals are a sign for bees"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Four Parts, Four Jobs",
+          "text": "Pick a flower out of the ground and you can see the whole plan at once. At the bottom are the roots. They do two jobs. They grip the soil so wind cannot tip the plant over, and they soak up water and the minerals dissolved in it. Next comes the stem. Inside it are tiny tubes, thinner than a hair, that carry that water all the way up. The stem also holds the leaves out where the light is. The leaves are the kitchen. They are flat and wide so they can catch as much sunlight as possible. Inside every leaf is a green stuff called chlorophyll, and chlorophyll uses sunlight to build sugar out of water and air. That sugar is the plant's food. It made its own lunch without moving. At the top are the petals. Petals do not feed the plant at all. They are a sign. Their bright color tells bees and butterflies that there is sweet nectar here. While an insect drinks, it gets dusted with pollen and carries it to the next flower. That is how the plant makes seeds. A flower is not made to be pretty. It is pretty because that works."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What two jobs do the roots do?",
+            "What is inside the stem that carries water up?",
+            "What does chlorophyll use sunlight to build?",
+            "Why do you think a flower needs bright petals if petals do not feed the plant?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they grip the soil and they soak up water and minerals",
+            "tiny tubes, thinner than a hair",
+            "sugar, out of water and air",
+            "(inference: bright color brings bees, and bees carry pollen so the plant can make seeds)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Four Parts, Four Jobs", "How to Water a House Plant", "The Tallest Tree in the World"],
+          "answers": ["Four Parts, Four Jobs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The green stuff inside a leaf is called ____.", "The ____ grip the soil and soak up water.", "Bees come to the flower to drink sweet ____."],
+          "wordBank": ["chlorophyll", "roots", "nectar"],
+          "answers": ["chlorophyll", "roots", "nectar"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of the flower has the hardest job, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Flower That Drinks With Its Feet",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-flower-parts", "templateLabel": "The Flower That Drinks With Its Feet", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flower-parts",
+          "notes": ["Xylem carries water up, phloem carries sugar down", "Stomata are tiny mouths under a leaf", "Petals are leaves that gave up chlorophyll", "Bees see ultraviolet patterns we cannot", "The oxygen you breathe is leftover from leaves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Four Parts, and What They Are Really Doing",
+          "text": "Look at a flower from the side and you are looking at a machine with four working parts. Start underground. The roots are not just stakes holding the plant in place, though they do that too. Each root is covered in root hairs so fine you can barely see them, and they give the plant an enormous amount of surface to drink with. A single rye plant can grow hundreds of miles of root, and thousands more of root hair. The stem is plumbing. Inside it run two sets of pipes. One set, the xylem, carries water up from the roots. The xylem is made of cells that died on purpose: they hollow themselves out and stack end to end into an open pipe. The other set, the phloem, is alive, and it carries sugar from the leaves down to everything that cannot make its own. The leaves are the factory. The underside of a leaf is covered in thousands of tiny mouths called stomata, which open to let in air and close when the plant is drying out. Inside, chlorophyll catches sunlight and uses it to snap apart water and carbon dioxide and rebuild them as sugar. The leftover is oxygen, which the plant simply lets go. You are breathing it now. Then the petals, which do no work at all. Petals are leaves that gave up being green. Many of them carry patterns in ultraviolet light, invisible to you, that point straight at the nectar like runway lights. The bee sees the sign. It lands, drinks, picks up pollen, and carries it to the next flower without ever knowing it was hired."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what does the xylem do, and why is it strange that it is made of dead cells?",
+            "What are stomata, and why would a plant ever close them?",
+            "The passage says petals are leaves that gave up being green. Explain what that means.",
+            "The last sentence says the bee carries pollen without ever knowing it was hired. What does the author mean by hired?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it carries water up from the roots; the cells hollow themselves out on purpose to become open pipes",
+            "tiny mouths on the underside of a leaf that let air in; the plant closes them when it is drying out",
+            "(petals are the same kind of part as a leaf, but they traded chlorophyll for bright color)",
+            "(inference: the plant pays the bee in nectar to do a job for it, and the bee never knows it is working)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Each part of a flower does a different job, and the showy part does none of the work",
+            "Bees are the smartest insects in the garden",
+            "Flowers grow best in pots near a sunny window"
+          ],
+          "answers": ["Each part of a flower does a different job, and the showy part does none of the work"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["xylem → ____", "stomata → ____", "ultraviolet → ____"],
+          "rows": 1,
+          "answers": ["the pipes that carry water up the stem", "the tiny openings on a leaf that let air in", "a kind of light people cannot see but bees can"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: which part of the flower is doing the hardest job? Give two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Flower That Drinks With Its Feet",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-flower-parts", "templateLabel": "The Flower That Drinks With Its Feet", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flower-parts",
+          "notes": ["Transpiration: water escaping a leaf pulls more up behind it", "No pump, no heart, no muscle", "Roots trade sugar with fungi for minerals", "Petals are modified leaves", "Nectar guides show up in ultraviolet light"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Pump That Is Not There",
+          "text": "A flower has four visible parts, and each one is solving a problem you would struggle to solve yourself. Consider the water first. A sunflower can stand ten feet tall, and every drop of water in its highest leaf came from the soil at the bottom. There is no pump. The plant has no heart, no muscle, nothing that squeezes. So how does water climb? The answer starts at the top, not the bottom. On the underside of every leaf are thousands of adjustable pores called stomata. They open to let carbon dioxide in, and while they are open, water vapor escapes. That escape is called transpiration, and it is the engine. Water molecules cling to one another with surprising strength. As one molecule evaporates out of a leaf, it tugs the molecule behind it, which tugs the one behind that, and the pull travels down an unbroken thread of water through the xylem, all the way to the root hairs in the soil. The plant does not push water up. The sky pulls it up, and the plant just makes sure the thread never breaks. The roots hold the bottom of that thread. They also anchor the plant, and they trade with the soil: sugar leaks out of the roots to feed fungi, and the fungi hand back minerals the plant cannot reach on its own. It is an ancient deal, older than trees. The leaves spend the water they raised. Chlorophyll captures light and uses its energy to take apart water and carbon dioxide, then reassemble the pieces into sugar. Oxygen is the waste product, vented and forgotten. Almost every breath you take is a plant's exhaust. And the petals do nothing useful at all, which is exactly the point. Petals are modified leaves that traded chlorophyll for pigment. They cannot feed the plant. What they can do is advertise. Color, scent, and ultraviolet patterns invisible to human eyes all say the same thing to a passing bee: sweet nectar, this way. The bee comes for the nectar and leaves wearing pollen. The plant, which cannot walk, has just arranged its own delivery. Four parts. A rope of water, a set of pipes, a factory, and a billboard."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says there is no pump. Explain what actually lifts the water, and quote the phrase the passage uses for it.",
+            "What do the roots give the fungi, and what do the fungi give back?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author say the petals do nothing useful at all, which is exactly the point?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering transpiration lifting water, leaves building sugar, petals recruiting pollinators)",
+            "evaporation from the leaves pulls an unbroken thread of water up; quote: The sky pulls it up",
+            "the roots leak sugar to feed the fungi; the fungi hand back minerals the plant cannot reach on its own",
+            "(inform, with detail: it explains transpiration and defines terms; the billboard and delivery images entertain)",
+            "(petals make no food, but attracting a pollinator is the one job a plant that cannot walk is unable to do itself)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["transpiration → ____", "xylem → ____", "pigment → ____", "anchor → ____"],
+          "rows": 1,
+          "answers": ["water vapor escaping from the leaves", "the pipes in the stem that carry water up", "the colored substance in a petal", "to hold firmly in place"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls the petals a billboard. Explain why that comparison fits.",
+            "A plant loses water every time it opens its stomata to feed. Why is that a problem on a hot, dry day, and what can the plant do about it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(petals advertise nectar to attract a passing pollinator, the way a billboard advertises to passing traffic)",
+            "(inference: it dries out; it can close its stomata, but then no carbon dioxide gets in and it stops making food)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it fair to call a plant a machine? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Flower That Drinks With Its Feet",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-flower-parts", "templateLabel": "The Flower That Drinks With Its Feet", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flower-parts",
+          "notes": ["Van Helmont's willow: gained 164 pounds, the soil lost 2 ounces", "Plant dry mass comes mostly from carbon dioxide", "Cohesion and tension lift water with no pump", "Xylem cells die on purpose to become pipes", "Root and fungus partnerships are over 400 million years old", "A petal is a leaf that traded chlorophyll for pigment"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Flower Is Mostly Made of Air",
+          "text": "In the early 1600s, a Flemish physician named Jan Baptist van Helmont did something almost nobody had thought to do: he weighed a question. He dried out a quantity of soil, weighed it precisely at 200 pounds, packed it into a pot, planted a young willow shoot weighing five pounds, and covered the pot so nothing could blow in. For five years he added nothing but water. Then he pulled the tree out and weighed it again. The willow had gained roughly 164 pounds. The soil had lost about two ounces. Van Helmont drew the obvious conclusion and got it mostly wrong. He decided the tree was made of water. What he had actually done was prove a negative, and it was a good one: whatever a plant is built from, it is not dirt. The tree had not eaten the pot. So where did 164 pounds of willow come from? Look again at the four parts of a flower, and the answer is hiding in plain sight. The roots are the least impressive part of the story, which is surprising, because they are the part that looks like a mouth. Roots anchor the plant and pull in water and dissolved minerals. Those minerals matter enormously, but they are a trace ingredient, closer to vitamins than to food. Roots also run a trade: they leak sugar into the soil to feed fungal threads, and the fungi return phosphorus and nitrogen the plant could never reach alone. That partnership is older than trees themselves. The stem is infrastructure, and it solves a problem with no moving parts. Water has to climb, sometimes hundreds of feet, and the plant owns no pump. Instead, evaporation from the leaves does the lifting. Water leaving a leaf tugs on the water behind it, and because water molecules stick to each other stubbornly, the pull carries down an unbroken column through hollow xylem cells to the roots. The plant is not pushing. It is hanging a rope of water from the sky and holding on. The leaves are where van Helmont's missing pounds come from. Stomata on the underside of a leaf open, and carbon dioxide drifts in. Chlorophyll traps sunlight and spends that energy prying apart water and carbon dioxide, then bolting the carbon into chains of sugar. Oxygen is left over and released. Nearly all the dry weight of that willow, all 164 pounds of wood and bark and leaf, was assembled out of water and thin air, using light as the tool. The tree was, in the most literal sense, built out of sky. The petals contribute nothing to any of this, and that is the most interesting fact about them. A petal is a leaf that abandoned chlorophyll for pigment. It cannot feed the plant. Its entire function is persuasion. Color, scent, ultraviolet stripes that human eyes cannot see, and a bribe of sugar water at the base: every one of those is aimed at an animal that can do the one thing a plant cannot, which is move. The bee arrives for the nectar, blunders through the pollen, and delivers it to the next flower. The flower has outsourced its only impossible task. That is the whole machine. A rope of water, a set of pipes, a factory that eats light, and an advertisement. Van Helmont weighed the wrong thing and still moved science forward, because he proved that the answer was not in the pot. It took another 150 years to find the rest of it, and the rest of it was in the air the whole time."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Van Helmont's conclusion was wrong. Explain what his experiment did prove, and cite the passage exactly.",
+            "Explain where the willow's 164 pounds actually came from, and name the part of the plant that collected it.",
+            "Identify the shift in the passage: where does it stop being a history story and become a science explanation? How does the author signal it?",
+            "The author calls the petals the most interesting part precisely because they contribute nothing. Analyze that move. Is the claim earned, or is it a trick to keep you reading?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(that a plant is not built out of soil; cite: whatever a plant is built from, it is not dirt)",
+            "(from carbon dioxide in the air and from water; the leaves collected it through the stomata)",
+            "(at Look again at the four parts of a flower; a short instruction to the reader turns the story into a diagram)",
+            "(earned: the petals' job is recruitment rather than nutrition, and the passage supports it; also a deliberate hook)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["trace ingredient → ____", "infrastructure → ____", "stomata → ____", "outsourced → ____"],
+          "rows": 2,
+          "answers": [
+            "something needed only in very small amounts",
+            "the basic structure that supports and supplies everything else",
+            "the adjustable pores on a leaf that let air in and water out",
+            "handed a job to someone else to do for you"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the root and fungus partnership is older than trees themselves. Explain why that is surprising, and what it suggests about how plants first managed to live on land.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(fungi were feeding plants minerals before plants had proper roots or trunks, so the partnership may have made land plants possible in the first place)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: van Helmont's experiment was a failure because he reached the wrong conclusion. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

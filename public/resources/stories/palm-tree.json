@@ -1,0 +1,319 @@
+{
+  "key": "palm-tree",
+  "title": "The Tree That Bends in the Storm",
+  "blurb": "The palm is not really a tree at all. It has no bark, no branches, and no rings, and it bends flat in a hurricane instead of breaking.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Tree That Bends in the Storm",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-palm-tree", "templateLabel": "The Tree That Bends in the Storm", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the leaves. Find the coconuts." },
+        {
+          "kind": "image",
+          "imageKey": "palm-tree",
+          "notes": ["It grows where it is warm", "The long leaves are called fronds", "Coconuts grow at the top", "It bends in the wind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a palm tree. It grows where it is warm. Its leaves are long and green. They wave in the wind. Big coconuts grow at the top. When a big wind comes, the palm tree bends. It bends and bends. Then it stands up straight again. The palm tree likes the sun. It likes the sand. It likes the sea."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the coconuts in each row. Write how many in the box.",
+          "emoji": "🥥",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sun    palm" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it belongs.",
+          "pairs": [
+            { "left": "palm tree", "right": "sand" },
+            { "left": "fish", "right": "sea" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a palm tree on a windy day. Make its leaves lean over.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tree That Bends in the Storm",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-palm-tree", "templateLabel": "The Tree That Bends in the Storm", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "palm-tree",
+          "notes": ["Palm leaves are called fronds", "A coconut floats on the sea", "Palms bend instead of breaking", "Palms have no branches", "They grow where it never snows"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tree That Bends in the Storm",
+          "text": "The palm tree grows by the sea. Its leaves are called fronds. A frond can be longer than a car. Wind blows on the palm tree all day long. The palm tree does not fight the wind. It bends. Its trunk is soft inside, like a big bunch of straws, so it can lean far over and not snap. Then it springs back up. Coconuts grow at the top of the palm. A coconut has a thick brown coat. The coat is full of air. If a coconut falls in the sea, it floats away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are palm leaves called?", "What does the palm tree do when the wind blows?", "Why does a coconut float?"],
+          "rows": 2,
+          "answers": ["they are called fronds", "it bends instead of fighting the wind", "its thick coat is full of air"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The palm tree grows by the ____.", "Its long leaves are called ____.", "In the wind the palm tree ____.", "A coconut ____ on the water."],
+          "wordBank": ["sea", "fronds", "bends", "floats"],
+          "answers": ["sea", "fronds", "bends", "floats"]
+        },
+        { "kind": "draw", "prompt": "Draw a palm tree on a beach. Add the sea, the sun, and a coconut floating away.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tree That Bends in the Storm",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-palm-tree", "templateLabel": "The Tree That Bends in the Storm", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "palm-tree",
+          "notes": ["Palms are closer to grass than to oaks", "No bark, no branches, no rings", "All the growth comes from one bud on top", "A palm gets wide first, then tall", "There are about 2,600 kinds of palm"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tree That Is Not a Tree",
+          "text": "An oak tree and a palm tree stand in the same yard, and only one of them is really a tree. The palm is the odd one. Palms are not related to oaks or pines at all. Their closest cousins are grasses, corn, and lilies. A palm is really a giant grass that learned to stand up tall. Look for the clues. An oak has bark. A palm does not. An oak has branches everywhere. A palm has none. Cut an oak trunk and you can count the rings and know its age. Cut a palm trunk and there are no rings to count, just tough fibers running up and down like a bundle of straws. An oak grows wider every year. A palm does not. A palm gets its full width first, near the ground, and then pushes straight up at the same thickness for the rest of its life. All of that growing happens in one place: a single fat bud at the very top. Palms keep their whole future in one spot."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name two things an oak has that a palm does not have.",
+            "Which plants are a palm's closest cousins?",
+            "Why can you not count rings to find out how old a palm is?",
+            "Why do you think a palm is in trouble if something damages the bud at the top?"
+          ],
+          "rows": 2,
+          "answers": [
+            "bark and branches (rings also counts)",
+            "grasses, corn, and lilies",
+            "a palm has no rings, only fibers running up and down",
+            "(inference: all of its growing happens in that one bud)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Tree That Is Not a Tree", "How to Climb a Coconut Palm", "Why Oak Wood Makes Good Furniture"],
+          "answers": ["The Tree That Is Not a Tree"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A palm trunk has no ____ on the outside.", "A palm grows from one fat ____ at the very top.", "A palm's closest cousins are ____, corn, and lilies."],
+          "wordBank": ["bark", "bud", "grasses"],
+          "answers": ["bark", "bud", "grasses"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which clue best proves a palm is not a true tree, and why does that clue convince you?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tree That Bends in the Storm",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-palm-tree", "templateLabel": "The Tree That Bends in the Storm", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "palm-tree",
+          "notes": ["Cocos nucifera, the coconut palm", "The husk is full of air, so it floats", "Coconut water is packed in for the seedling", "A coconut can drift for months and still sprout", "A coconut is a drupe, not really a nut", "Pacific sailors carried them by canoe"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Seed That Sailed",
+          "text": "A coconut is built like a boat, and that is not an accident. Start from the outside. The coconut you find on a beach is wrapped in a thick husk of dry brown fiber. That husk is packed with air pockets, which is why a whole coconut floats high in the water instead of sinking. Inside the husk sits the hard shell, sealed tight, and inside the shell is the part that matters: white meat and a cup of sweet water. That water is not seawater and it is not rain. It is food and drink the parent palm packed for the seedling, sealed in before the journey started. Now push the coconut into the sea. Currents carry it. Weeks pass, then months. Salt water cannot get in through the shell, so the seedling inside stays fresh, living off its own supply. When a wave finally rolls the coconut up onto sand somewhere far away, a shoot pushes out through a soft spot in the shell, drinks the water stored inside, and grows. Scientists have tested this. A coconut can drift for months and still sprout. This is why coconut palms lean over so many warm beaches around the world. Some of them arrived on ocean currents. Many others were carried on purpose by Pacific sailors, who packed coconuts in their canoes as water, food, rope, and roofing all in one. Between the tide and the traveler, the coconut got almost everywhere the weather was warm."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain how the husk lets a coconut float.",
+            "The passage says the coconut water is not seawater and not rain. Where did it come from?",
+            "Why does the sealed shell matter so much on a long sea journey?",
+            "The author says the coconut is built like a boat, and that is not an accident. What does not an accident mean here?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the husk is thick fiber full of air pockets, so the coconut rides high in the water",
+            "the parent palm packed it in and sealed it before the coconut fell",
+            "(inference: it keeps salt water out so the seedling stays alive for months)",
+            "(inference: the floating design was shaped by evolution because drifting spreads the seed)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A coconut is a seed built to float, which is how coconut palms reached warm coasts all over the world",
+            "Coconut water tastes better than rainwater",
+            "Pacific sailors were the first people to plant a tree"
+          ],
+          "answers": ["A coconut is a seed built to float, which is how coconut palms reached warm coasts all over the world"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["husk → ____", "drift → ____", "seedling → ____"],
+          "rows": 1,
+          "answers": [
+            "the thick fiber coat wrapped around the shell",
+            "to be carried along slowly by a current",
+            "a young plant just starting to grow"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph telling the story of one coconut's sea journey, from the tree to a new beach. Use three real facts from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tree That Bends in the Storm",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-palm-tree", "templateLabel": "The Tree That Bends in the Storm", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "palm-tree",
+          "notes": ["No cambium, so a palm makes no wood and no rings", "Fibrous bundles set in soft tissue: cables in foam", "Fronds shred and streamline in high wind", "Thousands of thin roots, no taproot", "A palm cannot heal a wound in its trunk", "One bud on top: lose it and the palm dies"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Palm Bends and the Oak Breaks",
+          "text": "After a hurricane passes over a warm coast, the pictures look the same every time. Oaks are down. Roofs are gone. And the palms are still standing, leaning, stripped, but rooted. People treat this as a nice metaphor about staying flexible. It is actually a physics problem, and the palm solves it differently than every tree around it. Start with the trunk. An oak trunk is a solid cylinder of wood that gets a new ring of it every year, added by a living layer called the cambium just under the bark. That design makes an oak stiff, wide, and strong. Stiff things resist a load until the moment they do not, and then they break. A palm has no cambium and no rings. Its trunk is a column of soft tissue with thousands of tough fibrous bundles threaded up through it, closer to a bundle of cables set in foam than to a block of wood. Load it sideways and it does not resist. It bends, sometimes far enough to touch its own crown to the ground, and when the wind drops it stands back up. The crown helps too. Palm fronds are cut into strips, and in high wind those strips fold back and streamline like a wet flag, spilling the air instead of catching it. A broad leaf catches wind. A shredded one does not. Palms also carry no heavy side branches for the wind to lever against, and their roots are not one thick taproot but thousands of thin ones spreading wide, which grips loose sand better than a single anchor would. Every design has a bill to pay. Because a palm has no cambium, it cannot make new wood, which means it cannot heal. Carve your name into an oak and the tree grows over it. Carve a palm and the scar is there for the life of the tree. Worse, all of a palm's growth comes from one bud at the very top. Break that bud and the palm does not sprout a new one. The tree that shrugs off a hurricane can be killed by a single well aimed blow to the head."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the passage argue that being stiff is not the same as being safe? Use the text.",
+            "Describe the palm trunk in your own words, then quote the comparison the author uses for it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the bill the palm pays for its flexible design? Give both costs the passage names."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the flexible trunk and shredding fronds, plus the cost of no healing and one bud)",
+            "(a stiff oak resists until it snaps; quote: Stiff things resist a load until the moment they do not, and then they break)",
+            "soft tissue threaded with tough fibrous bundles; quote: a bundle of cables set in foam",
+            "(inform, with detail: it explains a mechanism and defines the cambium; it opens by pushing back on the metaphor)",
+            "it cannot heal a wound in its trunk, and it has only one growing bud to lose"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["cambium → ____", "streamline → ____", "taproot → ____", "lever (against) → ____"],
+          "rows": 1,
+          "answers": [
+            "the living layer under bark that adds a ring of wood each year",
+            "to change shape so air slips past instead of pushing",
+            "one thick main root that grows straight down",
+            "to push on something by using it as a bar to gain force"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The last sentence calls the top bud a head. Explain the comparison and why the author saves it for the end.",
+            "Palms hold loose sand with thousands of thin roots. Why might one thick root work worse in sand?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the bud is the one spot a palm cannot lose, like a head; ending there flips the palm from unbeatable to fragile)",
+            "(inference: many thin roots spread the pull over a wide area, while one root would tear free from loose grains)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: people often use the bending palm as advice about staying flexible in hard times. Is that a fair use of the science? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tree That Bends in the Storm",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-palm-tree", "templateLabel": "The Tree That Bends in the Storm", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "palm-tree",
+          "notes": ["Family Arecaceae, about 2,600 species", "Monocots: cousins of grass, corn, and lilies", "No cambium means no rings and no age record", "Palms need the coldest month near 41F or above", "Palm pollen has been cored from Arctic Ocean mud", "The Eocene Arctic had no ice cap at all"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Palm Pollen at the Top of the World",
+          "text": "A palm tree is a bad historian of its own life and an excellent witness to everything else. Consider what it cannot do. An oak keeps a diary. Every year a living layer under its bark, the cambium, lays down a fresh ring of wood, wide in a kind year, narrow in a dry one, so a stump is a readable record of a century of weather. A palm has no cambium and lays down no rings. It thickens once, near the ground, then rises at that same width for the rest of its life, all its growth pouring out of a single bud at the top. Ask a palm how old it is and it has no answer. Now consider the one thing it says loudly. Palms cannot take a hard frost. The reason is the same missing machinery. With no cambium, a palm cannot grow new tissue over freeze damage, and with only one growing bud, it cannot afford to lose it. Ice ruptures the water filled bundles inside the trunk and the wound stays open forever. So palms live, almost without exception, where the cold months stay above freezing. That is a strict rule, and a strict rule is exactly what a scientist wants, because it can be run backward. If you find a palm, you have found a place that did not freeze. That is why the pollen matters. Drill into the floor of the Arctic Ocean, pull up a core of mud, and count down through the layers to about fifty million years ago, and you will find palm pollen near the top of the world. Do the same off the coast of Antarctica and palm pollen turns up there too, alongside the pollen of tropical trees. The obvious objection is continental drift, and it is the right objection to raise. Continents move. But when geologists reconstruct where those rocks actually sat fifty million years ago, they were still polar. The palms were not somewhere warm that later drifted north. They grew at the poles. The Earth of that time, called the Eocene, held far more carbon dioxide in its air than ours does. There were no ice caps at either end. Crocodile relatives swam in Arctic swamps. And the palms stood through something no palm alive has ever faced: months of continuous winter darkness, in which the sun does not clear the horizon at all. Warm, but pitch black. How they managed it is still argued over. Notice the trade the palm has made. The oak, with its rings, can tell you about one dry summer in 1934. The palm can tell you nothing about itself, not even its age. But because it refuses to grow anywhere that freezes, a single grain of palm pollen in Arctic mud carries a claim an entire ice sheet cannot: that the top of the world was once a place where a palm could grow. The tree that keeps no record turns out to be the record."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why palms cannot survive a hard frost, and cite the passage.",
+            "The author raises continental drift and then answers it. Quote the sentence that names the objection, and explain why including an objection makes the argument stronger rather than weaker.",
+            "Explain the opening line's comparison of a palm to a historian and a witness. Cite it, then say whether the rest of the passage supports it.",
+            "Analyze the final sentence. What move is the author making, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: palms keep no record of their own age, but because they cannot survive frost their fossil pollen proves the poles were once warm)",
+            "(no cambium to grow tissue over freeze damage and only one bud to lose; cite: Ice ruptures the water filled bundles inside the trunk and the wound stays open forever)",
+            "(cite: The obvious objection is continental drift, and it is the right objection to raise; answering the strongest counterargument shows the conclusion survives it)",
+            "(cite: A palm tree is a bad historian of its own life and an excellent witness to everything else; supported, because the passage shows it cannot report its age but can report the climate)",
+            "(it turns the palm's weakness into its value and closes the paradox opened in line one; earned, because the frost rule and the pollen evidence were both established first)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["cambium → ____", "ruptures → ____", "reconstruct → ____", "Eocene → ____"],
+          "rows": 2,
+          "answers": [
+            "the living layer under bark that adds a ring of wood each year",
+            "bursts or tears something open",
+            "to work out and rebuild what something used to be like",
+            "a warm period about fifty million years ago with no polar ice"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the polar palms faced months of darkness and that how they managed it is still argued over. Explain why scientists can be confident the palms were there while still arguing about how they lived.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the pollen is direct physical evidence that they grew there; surviving polar night is a mechanism, which needs different evidence such as living plant experiments)",
+            "(student question plus a credible source type, such as a paleoclimate journal or a botany researcher)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: fossil pollen is weaker evidence about ancient climate than tree rings, because pollen cannot count the years. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

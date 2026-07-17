@@ -1,0 +1,325 @@
+{
+  "key": "tree-parts",
+  "title": "The Tree That Drinks With Its Feet",
+  "blurb": "Roots that drink, a trunk that lifts water higher than a building with no pump, and leaves that build wood out of thin air.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Tree That Drinks With Its Feet",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to each part of the tree as you go.",
+      "meta": { "templateId": "story-tree-parts", "templateLabel": "The Tree That Drinks With Its Feet", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the top of the tree. Now find the bottom." },
+        {
+          "kind": "image",
+          "imageKey": "tree-parts",
+          "notes": ["The roots are under the ground", "The trunk is the tall part", "Leaves grow on the branches", "Leaves are green", "A tree stands still and grows"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a tree. Look down at the bottom. Those are the roots. Roots drink water from the dirt. Look up at the middle. That is the trunk. The trunk is tall and strong. Look up high. Those are the branches. Leaves grow on the branches. The leaves are green. The wind moves them. The tree stands still and grows."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the leaves on each branch. Write how many in the box.",
+          "emoji": "🍃",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "roots    trunk" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part to where it is.",
+          "pairs": [
+            { "left": "roots", "right": "under the ground" },
+            { "left": "trunk", "right": "in the middle" },
+            { "left": "leaves", "right": "up high" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own tree. Put the roots under the ground.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tree That Drinks With Its Feet",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-tree-parts", "templateLabel": "The Tree That Drinks With Its Feet", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "tree-parts",
+          "notes": ["Roots drink water from the soil", "Bark is the tree's coat", "Leaves catch sunlight", "The trunk holds the whole tree up", "Roots spread out very wide"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tree That Drinks With Its Feet",
+          "text": "A tree has three big parts, and each one has a job. The roots grow under the ground. They hold the tree down so it does not fall over. They also drink water from the soil. The trunk holds the tree up. It is covered in bark, like a coat. Inside the trunk are tiny straws. Water goes up the straws to the leaves. The leaves are green. They catch sunlight and use it to make food for the tree. Roots drink. Trunk lifts. Leaves cook. Together they make a tree."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where do the roots grow?", "What is the trunk covered in?", "What do the leaves catch?"],
+          "rows": 2,
+          "answers": ["under the ground", "bark", "sunlight"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The roots drink ____ from the soil.", "The trunk is covered in ____.", "Water goes up tiny ____ inside the trunk.", "The leaves use sunlight to make ____."],
+          "wordBank": ["water", "bark", "straws", "food"],
+          "answers": ["water", "bark", "straws", "food"]
+        },
+        { "kind": "draw", "prompt": "Draw a tree with all three parts. Label the roots, the trunk, and the leaves.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tree That Drinks With Its Feet",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-tree-parts", "templateLabel": "The Tree That Drinks With Its Feet", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "tree-parts",
+          "notes": ["Root hairs are thinner than a thread", "Bark keeps insects and fire out", "Leaves make sugar out of sunlight", "One ring inside the trunk equals one year", "Roots often spread wider than the branches"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tree's Three Jobs",
+          "text": "A tree looks like one thing, but it works like three machines joined together. Start underground. A tree's roots spread out wide, often wider than the branches above them, and most of them stay near the surface where the water is. Root hairs, so thin you need a microscope to see them, pull in water and the minerals dissolved in it. The roots also grip. That is why a tree can lean into a storm and stay standing. Next comes the trunk. Bark is the tree's skin, and it keeps out insects, fungus, and fire. Under the bark is a bundle of tiny tubes that carry water all the way up to the highest leaf. There is no pump. A tree has no heart. Water climbs anyway, every single day. At the top are the leaves. A leaf is a green kitchen. It takes in sunlight, water, and air, and it builds sugar. That sugar is the tree's food. It is also, slowly, the wood itself."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name the three parts of a tree from the passage.",
+            "What do root hairs pull in from the soil?",
+            "What three things does a leaf use to build sugar?",
+            "Why do you think a tree needs roots that spread out wide?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the roots, the trunk, and the leaves",
+            "water and the minerals dissolved in it",
+            "sunlight, water, and air",
+            "(inference: wide roots grip the ground and reach more water, so the tree does not blow over)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Tree's Three Jobs", "How to Climb a Tall Tree", "The Best Wood for Building a House"],
+          "answers": ["The Tree's Three Jobs"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A tree's skin is called ____.", "Tiny ____ hairs pull water out of the soil.", "A leaf is a green ____."],
+          "wordBank": ["bark", "root", "kitchen"],
+          "answers": ["bark", "root", "kitchen"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of a tree has the hardest job, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tree That Drinks With Its Feet",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-tree-parts", "templateLabel": "The Tree That Drinks With Its Feet", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tree-parts",
+          "notes": ["Phloem carries sugar down from the leaves", "Xylem carries water up from the roots", "Cambium is the only growing layer", "The heartwood at the core is dead", "A nail in a trunk stays at the same height forever", "Most roots sit in the top foot of soil"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Inside the Trunk",
+          "text": "Cut across a tree trunk and you do not find one solid material. You find layers, and every layer is doing a different job. The outside layer is bark: dead, corky, and there to keep out insects, fungus, and fire. Just inside the bark is the phloem, a set of tubes carrying sugar downward from the leaves to feed the branches, the trunk, and the roots, which cannot make food of their own. Under the phloem is the cambium, a layer so thin you could scrape past it without noticing, and it is the only part of the trunk that is actually growing. Every year the cambium lays new wood on its inside and new phloem on its outside. That is how a trunk gets thicker. Inside the cambium is the wood. The paler wood near the outside is sapwood, and it carries water upward from the roots to the leaves. The dark wood at the core is heartwood, and heartwood is dead. It has stopped carrying anything. It is packed with resin, and it does one job now: it holds the tree up. This is why an old tree can be hollow in the middle and still put out leaves every spring. Everything that matters is happening in the outer inch. Here is a stranger consequence. A trunk grows outward, not upward. Hammer a nail into a tree at four feet, walk away for fifty years, and the nail will still be at four feet. The tree got taller only at its tips."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What does the phloem carry, and which direction does it travel?",
+            "Why does the passage call the cambium the only part of the trunk that is actually growing?",
+            "Explain why a hollow tree can still be alive.",
+            "The nail stays at four feet after fifty years. What does that tell you about how a tree grows taller?"
+          ],
+          "rows": 2,
+          "answers": [
+            "sugar, downward from the leaves to the branches, trunk, and roots",
+            "it is the layer that lays new wood inside and new phloem outside each year",
+            "(inference: the working layers are near the outside, so a dead core does not stop it)",
+            "(inference: trees add height only at the tips, and trunks only get thicker)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A trunk is a set of layers, each with a separate job, and only a thin part of it is alive",
+            "Bark is the most important part of any tree",
+            "Trees grow taller by stretching their trunks from the ground up"
+          ],
+          "answers": ["A trunk is a set of layers, each with a separate job, and only a thin part of it is alive"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["phloem → ____", "cambium → ____", "sapwood → ____", "heartwood → ____"],
+          "rows": 1,
+          "answers": [
+            "the tubes that carry sugar down from the leaves",
+            "the thin living layer that makes new wood and new phloem",
+            "the paler outer wood that carries water up",
+            "the dead wood at the core that holds the tree up"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining a trunk to someone who has never seen a tree. Start at the bark and work inward, and give each layer its job.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tree That Drinks With Its Feet",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-tree-parts", "templateLabel": "The Tree That Drinks With Its Feet", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tree-parts",
+          "notes": ["Stomata: tiny pores on every leaf", "Transpiration pulls the water up, no pump needed", "Xylem up, phloem down, cambium between them", "Hyperion, a coast redwood, stands about 380 feet", "Fungal threads trade minerals for sugar", "Water molecules cling together: cohesion"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How Water Climbs a Tree Without a Pump",
+          "text": "A coast redwood lifts water more than 300 feet into the air, every day, with no pump, no heart, and no muscle anywhere in its body. For a long time nobody could explain it. The physics looked impossible, and yet the trees were standing right there doing it. The answer starts at the top, not the bottom. Every leaf is dotted with pores called stomata, which open to let in the carbon dioxide the leaf needs. Air is drier than the inside of a leaf, so while those pores are open, water escapes into the air. That loss is not the waste it appears to be. It is the engine. Water molecules cling to one another. Chemists call it cohesion, and in water it is unusually strong. So when one molecule evaporates out of a leaf, it tugs the molecule behind it, which tugs the one behind that, and the pull runs down an unbroken thread of water through narrow tubes of dead wood called xylem, all the way to the root hairs in the soil. The tree never pushes water upward. The dry air pulls, and the tree simply holds the straw steady. The roots do their own quiet work below. Their job is water and minerals, not food, because roots sit in the dark and cannot build sugar. Many trees hand part of that job to a partner. Threads of fungus wrap around the roots, reach further into the soil than any root hair could manage, and trade phosphorus and nitrogen for sugar the leaves made in the sun. Both sides come out ahead. This system has a ceiling. Pull a column of water too hard and it snaps, leaving an air bubble that can block that tube for good. That limit is one reason the tallest known tree, a redwood named Hyperion, stands at about 380 feet, and no tree anywhere stands at 500. Near the very top of a tall redwood the needles grow small and tough, living permanently on the edge of thirst, while the needles near the ground grow broad and soft. Same tree, two climates, 300 feet apart."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how evaporation at the top of a tree ends up moving water at the bottom.",
+            "What is cohesion, and why does the passage call the water loss an engine rather than waste? Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the deal between a tree and the fungus on its roots. Who gives what?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering transpiration pull, cohesion, root and fungal partnership, and the height limit)",
+            "(evaporating molecules tug the ones behind them, pulling an unbroken thread of water up the xylem from the roots)",
+            "water molecules clinging to one another; quote: It is the engine",
+            "(inform, with details: it defines stomata, cohesion, and xylem, and gives measured facts like Hyperion at 380 feet)",
+            "the fungus gives phosphorus and nitrogen and extra reach; the tree gives sugar made in its leaves"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["stomata → ____", "cohesion → ____", "xylem → ____", "transpiration → ____"],
+          "rows": 1,
+          "answers": [
+            "tiny pores on a leaf that open to let carbon dioxide in",
+            "the way water molecules cling to one another",
+            "narrow tubes of dead wood that carry water upward",
+            "water evaporating out of the leaves, which pulls more water up"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the tree holds the straw steady rather than pushing. Explain why that wording is more accurate than saying the tree drinks.",
+            "Why would a tree keep its stomata open at all, if open pores let water escape?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the tree supplies no force; evaporation and cohesion do the lifting, so the tree is the pipe, not the pump)",
+            "(inference: it has to let carbon dioxide in to make sugar, so losing water is the price of eating)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which part of a tree is doing the most impressive work, the roots, the trunk, or the leaves? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tree That Drinks With Its Feet",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-tree-parts", "templateLabel": "The Tree That Drinks With Its Feet", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tree-parts",
+          "notes": ["Most of a tree's mass comes from air, not soil", "Van Helmont's willow, 1648: 164 pounds gained", "Cohesion holds water in an unbroken thread", "The cambium is only a few cells thick", "Heartwood is dead: a mast, not a machine", "Cut a ring of bark and the roots starve"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tree That Eats Air",
+          "text": "In 1648 a Flemish doctor named Jan Baptist van Helmont finished an experiment that had taken him five years. He had dried 200 pounds of soil, packed it into a pot, planted a willow shoot weighing five pounds, given it nothing but rainwater, and waited. At the end he pulled the willow out and weighed it: 169 pounds. Then he dried the soil again and weighed that. It had lost about two ounces. The willow had gained 164 pounds. The soil had given up almost nothing. Van Helmont concluded that the tree was made of water, which was wrong, but he had asked exactly the right question and proved something enormous: whatever a tree is built from, it is not mostly the ground it stands in. The real answer is stranger than his. A tree is built, in large part, out of air. Leaves open pores called stomata and take in carbon dioxide. Using the energy in sunlight, they split water, strip the carbon out of that carbon dioxide, and assemble sugar. Chains of those sugars become cellulose, and cellulose is the bulk of wood. The carbon in a fallen oak was drifting over your head not long ago. Soil supplies water and a short list of minerals. The mass, the trunk, the branches, the thing you can knock on, came mostly from the sky. That leaves the tree with a delivery problem, and this is where its parts stop being scenery and start being machinery. Water enters through root hairs, and through fungal threads that lace around the roots and reach where roots cannot, trading minerals for sugar. It then has to travel up, sometimes hundreds of feet, and the tree has no pump. So it cheats. As water evaporates from the open stomata, the molecules left behind are dragged after it, because water molecules cling to each other hard enough to be pulled in an unbroken thread. That thread runs through the xylem, narrow tubes of dead cells in the sapwood. The tree does not lift water. It lets the air pull, and holds on. Sugar has to travel the other way, down to roots that cannot feed themselves, and that traffic runs through the phloem, just inside the bark. Between xylem and phloem sits the cambium, a sleeve of living cells only a few cells thick. It is the entire growing trunk. Each year it lays new wood inward and new phloem outward, pale roomy cells in the fast of spring, dense dark cells as the season slows, which is why a stump reads like a barcode of its own weather. Two consequences follow, and both surprise people. First, most of a big trunk is dead. The heartwood at the core stopped conducting anything long ago. It is packed with resin and it works as a mast, not a machine, which is why a hollow tree can leaf out for another century: everything that matters is happening in the outer inch. Second, because the growing layer is a cylinder and not a base, trunks thicken but do not rise. Carve your initials at eye level and they will still be at eye level when you are old. The bark protects the whole arrangement, and its weakness is precise. Strip a ring of bark all the way around a trunk and you sever the phloem. The leaves go on making sugar. The roots never receive it. The roots starve, and then the leaves die of thirst, and it can take a year or more. The tree stands there the entire time looking exactly like a tree."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what van Helmont proved and what he got wrong. Cite the words the passage uses to state what he proved.",
+            "The passage claims a tree is built out of air. Trace that claim: where does the carbon come from, and what does it become?",
+            "The passage says the tree does not lift water. Quote the sentence that says what it does instead, then explain the physics in your own words.",
+            "Identify where the passage turns from history to mechanism, and explain how the author signals the shift.",
+            "Analyze the final image of a girdled tree still looking exactly like a tree. What is that sentence doing, and why is it last?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a tree's parts are working machinery, and its substance comes mostly from air)",
+            "(he proved a tree is not built from soil, but wrongly concluded it was made of water; cite: whatever a tree is built from, it is not mostly the ground it stands in)",
+            "(carbon dioxide enters through stomata; sunlight powers the split; carbon becomes sugar, sugar becomes cellulose, cellulose is the bulk of wood)",
+            "(quote: It lets the air pull, and holds on. Evaporation plus cohesion drags an unbroken thread of water up the xylem)",
+            "(at: That leaves the tree with a delivery problem. The author names a problem to pivot from the experiment to how the parts work)",
+            "(it shows that lethal damage can be invisible; ending there leaves the reader with the unsettling image rather than a fact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["stomata → ____", "cellulose → ____", "cambium → ____", "heartwood → ____", "sever → ____"],
+          "rows": 2,
+          "answers": [
+            "pores in a leaf that take in carbon dioxide",
+            "chains of sugar that make up the bulk of wood",
+            "the sleeve of living cells, a few cells thick, that builds the trunk outward",
+            "the dead, resin-packed wood at the core that holds the tree up",
+            "to cut through completely"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage calls the heartwood a mast, not a machine. Explain what that metaphor claims, and judge whether the passage supports it.",
+            "Van Helmont reached a wrong conclusion from a well-run experiment. What does that suggest about the difference between good data and a good explanation?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it claims the heartwood is structural and inert, not active; supported by the hollow-tree evidence and the outer-inch line)",
+            "(data limits the answers but does not pick one; he had no idea carbon dioxide existed, so his best explanation was still wrong)",
+            "(student question plus a credible source type, such as a plant physiology text or a forestry researcher)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Calling a tree a living thing is misleading, because most of a tree is dead. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

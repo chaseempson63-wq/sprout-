@@ -1,0 +1,319 @@
+{
+  "key": "rose",
+  "title": "The Rose That Never Had Thorns",
+  "blurb": "Those sharp points are prickles, not thorns. And the rose is a close cousin of the apple.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Rose That Never Had Thorns",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-rose", "templateLabel": "The Rose That Never Had Thorns", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the red part. Find the green part." },
+        {
+          "kind": "image",
+          "imageKey": "rose",
+          "notes": ["The petals are soft", "The stem is green", "The points are sharp", "Bees love the smell"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a rose. The rose is red. It has soft petals. The petals feel like paper. The stem is green and long. The stem has sharp points. Bees come to the rose. They like the sweet smell. Smell a rose with your nose. It smells like summer."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the petals in each row. Write how many in the box.",
+          "emoji": "🌹",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "red    rose" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "petal", "right": "soft" },
+            { "left": "point", "right": "sharp" },
+            { "left": "stem", "right": "long" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own rose. Give it a long green stem.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Rose That Never Had Thorns",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-rose", "templateLabel": "The Rose That Never Had Thorns", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "rose",
+          "notes": ["Its sharp points are prickles", "A prickle snaps off with your thumb", "The red fruit is a rose hip", "Birds eat rose hips in winter", "Roses can climb up other plants"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rose That Never Had Thorns",
+          "text": "People say a rose has thorns. That is not quite right. A rose has prickles. A thorn grows from deep inside a branch, so it is stuck there for good. A prickle grows on the skin of the stem, a bit like a fingernail. You can snap a prickle off with your thumb. The rose uses its prickles like tiny hooks. They grab onto other plants, and the rose pulls itself up toward the sun. After the petals fall off, a small red fruit grows where the flower used to be. It is called a rose hip. Birds eat the hips all winter long."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a rose really have instead of thorns?", "What does the rose use its prickles for?", "What is the little red fruit called?"],
+          "rows": 2,
+          "answers": ["prickles", "as hooks to climb up other plants", "a rose hip"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A rose does not have thorns. It has ____.", "A prickle grows on the ____ of the stem.", "The rose uses its prickles like little ____.", "The red fruit is called a rose ____."],
+          "wordBank": ["prickles", "skin", "hooks", "hip"],
+          "answers": ["prickles", "skin", "hooks", "hip"]
+        },
+        { "kind": "draw", "prompt": "Draw a rose climbing up a fence. Add some red rose hips for the birds.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Rose That Never Had Thorns",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-rose", "templateLabel": "The Rose That Never Had Thorns", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "rose",
+          "notes": ["Apples and strawberries are its cousins", "Wild roses have just five petals", "Its sharp points are prickles, not thorns", "The red fruit is called a rose hip", "Rose fossils are millions of years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rose Is an Apple's Cousin",
+          "text": "Look closely at an apple blossom in spring. Five pale petals, a ring of yellow stamens in the middle, and a sweet smell. Now look at a wild rose. Five pink petals, a ring of yellow stamens in the middle, and a sweet smell. They look almost the same because they are family. Roses belong to a group of plants called the rose family. So do apples, pears, plums, cherries, peaches, strawberries, raspberries, and almonds. If you have eaten a strawberry, you have eaten a cousin of the rose. The big roses in a flower shop look nothing like that. They have dozens of petals packed in tight. Almost every wild rose has only five. The extra petals came from us. Long ago, gardeners spotted roses whose stamens had turned into petals by mistake, and they kept planting those ones on purpose. Hundreds of years later, we have roses stuffed with petals. Roses make fruit too. Once the petals drop, the base of the flower swells into a red rose hip with the seeds tucked inside. It really is a fruit, and it really is a relative of the apple in your lunch."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name three fruits that belong to the same family as the rose.",
+            "How many petals does almost every wild rose have?",
+            "Where did the extra petals on a flower shop rose come from?",
+            "Why do you think gardeners kept planting the roses with extra petals?"
+          ],
+          "rows": 2,
+          "answers": [
+            "any three of: apples, pears, plums, cherries, peaches, strawberries, raspberries, almonds",
+            "five",
+            "from stamens that turned into petals, which gardeners kept planting on purpose",
+            "(inference: they liked how full and showy those flowers looked)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Rose Is an Apple's Cousin", "How to Grow Tomatoes in a Pot", "The Tallest Tree in the World"],
+          "answers": ["The Rose Is an Apple's Cousin"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["In the middle of the flower is a ring of yellow ____.", "A wild rose has ____ petals.", "The base of the flower swells into a red rose ____."],
+          "wordBank": ["stamens", "five", "hip"],
+          "answers": ["stamens", "five", "hip"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which rose family fruit would you most like to grow, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Rose That Never Had Thorns",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-rose", "templateLabel": "The Rose That Never Had Thorns", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rose",
+          "notes": ["A rose hip holds more vitamin C than an orange", "British kids picked hips in World War Two", "The itchy hairs inside were sold as itching powder", "Prickles grow from the skin, not the wood", "Rose hips feed birds all winter"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fruit Nobody Wanted Until They Needed It",
+          "text": "In 1941, Britain ran out of oranges. The war had closed the shipping lanes, and the ships that once carried fruit were carrying other things now. Oranges simply stopped arriving. That was more serious than a lost treat. Bodies need vitamin C to build collagen, the material that holds skin and blood vessels together. Without enough of it over months, people develop scurvy: bleeding gums, wounds that will not close, old injuries reopening. The answer had been growing in the hedgerows the whole time, free, and nobody had bothered with it. When a wild rose finishes flowering, the base of the flower swells and hardens into a red fruit called a rose hip. Weight for weight, a rose hip carries far more vitamin C than an orange does. It had been sitting on roadsides and field edges for centuries, feeding birds and no one else. So the government asked the children. Schools sent classes out along the lanes with baskets and gloves, and paid them a few pence for every pound of hips they carried back. Hundreds of tons came in. Factories boiled the hips, strained out the seeds and the fine itchy hairs packed around them, and bottled the result as rose hip syrup. Clinics handed it out by the spoonful to babies and small children, all through the winter. The odd part is that nothing changed about the rose. It was exactly as useful in 1938 as it was in 1941. What changed was that the oranges stopped coming, and people finally looked at the hedge."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did oranges stop arriving in Britain?",
+            "What is a rose hip, and where on the plant does it come from?",
+            "Why did the government ask schoolchildren to do the picking, rather than farmers?",
+            "The passage says nothing changed about the rose. Explain what did change."
+          ],
+          "rows": 2,
+          "answers": [
+            "the war closed the shipping lanes and the ships were needed for other cargo",
+            "the fruit of the rose; it forms when the base of the flower swells after the petals drop",
+            "(inference: hips grew wild in hedgerows near schools, and children could cover a lot of ground cheaply)",
+            "(the rose was always this useful; what changed was that people had a reason to notice it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A wild fruit nobody valued became an important food once war cut off the oranges",
+            "Oranges have always been the healthiest fruit a person can eat",
+            "British schools in the 1940s taught children how to farm"
+          ],
+          "answers": ["A wild fruit nobody valued became an important food once war cut off the oranges"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["hedgerow → ____", "scurvy → ____", "collagen → ____"],
+          "rows": 1,
+          "answers": [
+            "a line of wild shrubs growing along a road or the edge of a field",
+            "the illness you get from going without vitamin C for too long",
+            "the material the body builds to hold skin and blood vessels together"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: name something useful that grows wild near where you live, and explain why most people walk straight past it.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Rose That Never Had Thorns",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-rose", "templateLabel": "The Rose That Never Had Thorns", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rose",
+          "notes": ["Rosa damascena, the damask rose", "Picked from five in the morning until ten", "About 3,000 kg of petals make 1 kg of oil", "Bulgaria and Turkey grow most of it", "Florist roses were bred for shipping, not scent"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Picked Before the Sun Gets Warm",
+          "text": "In the Valley of Roses, in central Bulgaria, the working day starts in the dark. Pickers reach the fields by five in the morning and move down the rows by feel as much as by sight, snapping damask roses off just below the flower and dropping them into sacks tied at the waist. By ten they stop. Not because they are tired, but because the roses have stopped being worth picking. Rose scent is not a smell in the way we usually imagine it. It is a set of small, light molecules sitting in the petal, drifting off into the air, which is the only reason your nose ever finds them. Warmth makes them drift faster. A rose left in the sun for three hours has quietly released a good share of the thing that makes it valuable. Pick it at five and the oil is still in the flower. Pick it at noon and much of it is somewhere over the next field. What happens next is hard to picture honestly. The petals go straight to a still, where steam pulls the oil out of them, and the product is attar of roses, a pale liquid that smells overwhelmingly, almost unbelievably, of rose. It takes roughly three thousand kilograms of petals to make one kilogram of attar. That is a truckload of flowers for a bottle you could close your hand around. Attar sells by the gram, and it is one of the most expensive agricultural products in the world. Meanwhile, in a supermarket, you can buy a dozen long stemmed red roses that smell of almost nothing at all. That is not laziness and it is not an accident. Those roses were built to solve a different problem. A florist rose has to hold a straight stem, survive a refrigerated flight from Ecuador or Kenya, resist disease in the greenhouse, open slowly in a vase, and arrive with its color intact. Every one of those traits was chosen for, season after season, by people deciding which plants got to have offspring. Scent was not on the list. A plant has only so much energy to spend, and what the breeders stopped asking for, the rose quietly stopped making. A flower is an advertisement aimed at insects. We rebuilt this one into a machine for surviving a supply chain, and then we acted surprised when the advertisement went quiet."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why the pickers stop at ten in the morning. Use the science in the passage, not just the schedule.",
+            "How much petal weight does one kilogram of attar take? Quote the sentence that tells you.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "Explain the last two sentences in your own words. Why does the author save them for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentence summary covering dawn harvesting and scent chemistry plus the scentless bred florist rose)",
+            "the scent molecules are volatile and warmth makes them escape faster, so a sun warmed rose has already lost much of its oil",
+            "roughly three thousand kilograms; quote: It takes roughly three thousand kilograms of petals to make one kilogram of attar.",
+            "(mainly to inform, with a persuasive edge: it explains the chemistry and the numbers, then closes with an argument about what breeding cost us)",
+            "(scent evolved to attract insects, but we selected for shipping instead and lost it; the author ends there so the point lands last)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["attar → ____", "a still → ____", "chosen for → ____", "supply chain → ____"],
+          "rows": 1,
+          "answers": [
+            "the concentrated oil steamed out of rose petals",
+            "equipment that uses steam or heat to pull one substance out of another",
+            "kept and bred on purpose, generation after generation",
+            "the chain of steps that moves a product from where it grows to where it sells"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a plant has only so much energy to spend. Use that idea to explain why a rose bred for one trait might lose another.",
+            "Rose oil costs a fortune and florist roses are cheap. Explain the difference using what the passage says about how each one is produced."
+          ],
+          "rows": 3,
+          "answers": [
+            "(energy spent on stem, disease resistance, or vase life is energy not spent making scent molecules)",
+            "(attar needs a truckload of hand picked petals at dawn for one bottle; florist roses are grown at scale and only have to survive shipping)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: if a rose looks perfect but has no scent, has something real been lost, or is that just a matter of taste? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Rose That Never Had Thorns",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-rose", "templateLabel": "The Rose That Never Had Thorns", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "rose",
+          "notes": ["Genus Rosa, family Rosaceae", "Roses cannot make delphinidin, the blue pigment", "Applause, the engineered blue rose, came out mauve", "Yellow roses trace to Rosa foetida, around 1900", "One enzyme, RhNUDX1, makes the rose scent geraniol", "About 150 wild species, tens of thousands of garden kinds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Color the Rose Cannot Make",
+          "text": "There is no blue rose. There never has been. Florists sell them dyed or airbrushed, and catalogs list varieties with names like Blue Moon that turn out, when they open, to be a disappointed shade of lilac. The reason is not that nobody has tried hard enough. The reason is written into the plant. Flower color in roses comes mostly from a group of pigments called anthocyanins. Which anthocyanin a plant builds depends on which enzymes it has, and which enzymes it has depends on which genes it carries. Cyanidin gives magenta and red. Pelargonidin gives orange and scarlet. Delphinidin gives blue and violet, and it is the pigment behind delphiniums, pansies, and violets. The rose does not carry a working copy of the gene for the enzyme that makes delphinidin. This is not a matter of degree or effort. The rose cannot take that step, and no amount of crossing one rose with another rose will conjure a gene that no rose has. In 2004, a Japanese company announced the only thing that could work. Researchers had inserted a delphinidin gene borrowed from a pansy, along with a gene from an iris, into a rose. The plant made delphinidin. The flower, sold as Applause, is mauve. Rose petals are mildly acidic, and delphinidin shows a different color depending on the acidity around it, so the blue pigment turned up wearing the wrong shade. Fourteen years of work produced a rose that is chemically closer to blue than any rose in history and still looks lavender in the vase. Yellow was easier, and it cost more than anyone expected. Until about 1900, European garden roses came in white, pink, and red. A French breeder named Joseph Pernet-Ducher spent years crossing his roses with Rosa foetida, a tough yellow species from Asia, and finally produced a yellow garden rose he called Soleil d'Or. Essentially every yellow and orange rose sold today descends from that work. So does something else. Rosa foetida is badly susceptible to black spot, a fungus that strips a rose of its leaves, and the susceptibility rode into the modern rose holding hands with the color. Gardeners have been spraying for it ever since. One gene pool arrived carrying a gift and a bill. Scent has the strangest history of the three. In most flowering plants, the road to a scent molecule like geraniol runs through a family of enzymes called terpene synthases. When French researchers went looking for those enzymes in rose petals in 2015, the strongly scented roses were not using them at all. The roses were building geraniol by a completely different route, with an enzyme nobody had connected to scent before. The scentless varieties carried that same gene and were barely switching it on. The rose, it turns out, invented its own way to smell like a rose. Set those three stories side by side and a pattern surfaces. A rose is not a design. It is an accumulation: a pile of tools inherited from ancestors that were solving their own problems in their own centuries, some tools missing, some borrowed, some wired up in ways nobody predicted. We can move a gene from a pansy into a rose. We cannot ask a rose for a color it has never had, and we cannot take one trait without taking whatever else is holding hands with it. The rose in the vase looks simple. It is the least simple thing on the table."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why breeding roses together will never produce a blue one. Cite the sentence that makes this clearest.",
+            "The passage says the yellow rose cost more than anyone expected. Explain the cost, then quote the phrase the author uses to sum it up.",
+            "Identify the shift in the passage: where does it stop reporting the three stories and start making an argument? How does the author signal it?",
+            "Analyze the final two sentences. What is the author claiming, and has the passage earned that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one sentence summary covering the missing blue pigment, the yellow rose's disease cost, and the surprise scent pathway)",
+            "(roses lack the gene for the delphinidin enzyme, so no rose can pass it on; cite: no amount of crossing one rose with another rose will conjure a gene that no rose has)",
+            "(yellow came from Rosa foetida, which also carried black spot susceptibility; quote: One gene pool arrived carrying a gift and a bill.)",
+            "(at Set those three stories side by side and a pattern surfaces; the author gathers the examples and states a general claim about what a rose is)",
+            "(claim: a rose is an accumulation of inherited parts, not a design, so traits come bundled and some options do not exist; earned by all three examples)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["anthocyanin → ____", "susceptible → ____", "conjure → ____", "accumulation → ____"],
+          "rows": 2,
+          "answers": [
+            "a plant pigment responsible for red, pink, magenta, blue, and violet flower color",
+            "easily harmed or infected by something",
+            "to produce something out of nothing, as if by magic",
+            "a collection of things gathered gradually over time rather than designed at once"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that the susceptibility rode into the modern rose holding hands with the color. Explain what that image is doing and why the author repeats the same image in the closing paragraph.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it makes linked genes feel like an unwanted companion arriving with a guest; repeating it ties the specific example to the general argument)",
+            "(student question plus a credible source type, for example a plant genetics paper or a rose breeder)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Engineering a gene from a pansy into a rose is not real progress if the flower still does not look blue. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

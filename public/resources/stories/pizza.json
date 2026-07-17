@@ -1,0 +1,319 @@
+{
+  "key": "pizza",
+  "title": "The Flatbread That Took Over the World",
+  "blurb": "Pizza started as cheap street food in Naples. Here is how yeast, fire, and a few million travelers turned it into the most eaten meal on the planet.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Flatbread That Took Over the World",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pizza", "templateLabel": "The Flatbread That Took Over the World", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the cheese. Find the crust." },
+        {
+          "kind": "image",
+          "imageKey": "pizza",
+          "notes": ["It starts as a ball of dough", "The cheese is made from milk", "The red sauce is made from tomatoes", "The oven is very hot", "A slice has three corners"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pizza. It starts as a ball of dough. Someone pushes the dough flat and round. Then comes red sauce. Then comes cheese. The pizza goes into a very hot oven. The cheese melts and goes soft and stretchy. The bread puffs up at the edge. Someone cuts the pizza into slices. Each slice is shaped like a triangle."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the slices in each row. Write how many in the box.",
+          "emoji": "🍕",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "dough    hot" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "dough", "right": "flour" },
+            { "left": "cheese", "right": "milk" },
+            { "left": "sauce", "right": "tomato" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own pizza. Put your favorite things on top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Flatbread That Took Over the World",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pizza", "templateLabel": "The Flatbread That Took Over the World", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pizza",
+          "notes": ["Dough is flour, water, salt, and yeast", "Yeast is alive", "Yeast makes bubbles of gas", "The bubbles make the dough puff up", "The holes in the crust used to be bubbles"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bubbles in the Bread",
+          "text": "A pizza starts with dough. Dough is just flour, water, salt, and yeast. Yeast is alive. It is a tiny living thing, too small to see. The yeast eats the sugar in the flour and burps out little bubbles of gas. The bubbles get stuck in the dough. That is what makes the dough puff up and grow. Then the pizza goes in a hot oven. The bubbles get bigger. The dough turns into soft bread with holes inside. Next time you eat a slice, look at the edge. Those little holes were bubbles made by yeast."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What four things are in pizza dough?", "What does the yeast eat?", "What do the bubbles do to the dough?"],
+          "rows": 2,
+          "answers": ["flour, water, salt, and yeast", "the sugar in the flour", "they make it puff up and grow"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Yeast is a tiny living ____.", "The yeast makes bubbles of ____.", "The bubbles get stuck in the ____.", "The holes are in the soft ____."],
+          "wordBank": ["thing", "gas", "dough", "bread"],
+          "answers": ["thing", "gas", "dough", "bread"]
+        },
+        { "kind": "draw", "prompt": "Draw a slice of pizza. Add the little holes you would see in the crust.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Flatbread That Took Over the World",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pizza", "templateLabel": "The Flatbread That Took Over the World", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pizza",
+          "notes": ["The word pizza is over 1,000 years old", "Tomatoes are not from Italy", "They came from South America on ships", "People once thought tomatoes were poison", "Pizza began as street food in Naples"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How Flatbread and Tomatoes Became Pizza",
+          "text": "Pizza did not start as pizza. It started as flatbread. People have been baking flat rounds of bread on hot stones for thousands of years, long before anyone thought to put cheese on top. The word pizza is old too. It shows up in a written agreement from a town in Italy more than a thousand years ago. The red part came much later. Tomatoes do not come from Italy at all. They grow wild in South America, and ships brought them to Europe in the 1500s. Many Europeans would not eat them. Tomatoes belong to the same plant family as some poisonous plants, so rich people grew them for show and left them alone. Poor families in Naples were hungrier than they were worried. They cooked the tomatoes, spread them on flatbread, and sold the slices on the street for very little money. That was pizza. For a long time it was food for working people, not for kings. Now it is on almost every street in the world."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did pizza start out as?",
+            "Where do tomatoes really come from?",
+            "Why did rich Europeans refuse to eat tomatoes?",
+            "Why do you think the poor families of Naples were willing to try them?"
+          ],
+          "rows": 2,
+          "answers": [
+            "plain flatbread baked on hot stones",
+            "they grow wild in South America",
+            "tomatoes are in the same plant family as some poisonous plants",
+            "(inference: they were hungry and could not afford to waste food)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How Flatbread and Tomatoes Became Pizza", "The Best Way to Make Cheese at Home", "A Guide to the Cities of South America"],
+          "answers": ["How Flatbread and Tomatoes Became Pizza"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Before it was pizza, it was plain ____.", "Tomatoes first grew wild in ____ America.", "Pizza was sold on the streets of ____."],
+          "wordBank": ["flatbread", "South", "Naples"],
+          "answers": ["flatbread", "South", "Naples"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most in this passage, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Flatbread That Took Over the World",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pizza", "templateLabel": "The Flatbread That Took Over the World", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pizza",
+          "notes": ["A Naples oven runs near 900 degrees Fahrenheit", "The bake takes 60 to 90 seconds", "Water in the dough flashes into steam", "Dark spots on the crust are called leoparding", "Gluten is the stretchy net that traps the gas"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Ninety Seconds at Nine Hundred Degrees",
+          "text": "A good pizza oven is hotter than you think. A home oven tops out around 500 degrees Fahrenheit. A wood fired oven in Naples runs at about 900. At that temperature a pizza is finished in 60 to 90 seconds. You could not walk to the door and back in the time it takes to bake. Speed is the whole point. The dough hits the hot stone floor and the water inside it flashes into steam. The steam and the gas bubbles from the yeast expand all at once, so the rim swells into a puffy ring before the middle has time to dry out. That is why a Neapolitan pizza is soft and floppy in the center and airy at the edge. The heat does something else at the same time. Where the flame licks the rim, the sugars and proteins in the dough brown and blister into dark spots. Pizza makers call this leoparding, because the crust ends up spotted like a big cat. Those spots are not burned bits to scrape off. They carry most of the flavor. None of this works without gluten. When flour meets water and gets kneaded, two of its proteins link up into a stretchy net. The net is what traps the gas. Without it the dough would leak its bubbles and bake flat as a cracker."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why a pizza oven needs to be so hot.",
+            "What two things expand inside the dough the moment it hits the oven floor?",
+            "The passage says the dark spots are not burned bits to scrape off. What reason does it give?",
+            "What would happen to a pizza made from flour with no gluten in it? Use the passage to explain."
+          ],
+          "rows": 2,
+          "answers": [
+            "(so the pizza bakes in seconds, before the middle dries out)",
+            "steam from the water and gas bubbles from the yeast",
+            "they carry most of the flavor",
+            "(inference: the gas would leak out and the dough would bake flat as a cracker)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Extreme heat and a stretchy gluten net are what turn plain dough into pizza",
+            "Wood is the cheapest fuel you can cook food with",
+            "Burned spots on any food should always be scraped off"
+          ],
+          "answers": ["Extreme heat and a stretchy gluten net are what turn plain dough into pizza"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["leoparding → ____", "gluten → ____", "kneaded → ____"],
+          "rows": 1,
+          "answers": [
+            "the dark blistered spots the flame leaves on the rim",
+            "the stretchy protein net in dough that traps gas",
+            "pushed and folded and worked with the hands"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining, step by step, what happens to a ball of dough from the moment it enters a hot oven until it comes out as pizza. Use at least three words from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Flatbread That Took Over the World",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pizza", "templateLabel": "The Flatbread That Took Over the World", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pizza",
+          "notes": ["The writer who invented Pinocchio called pizza filthy looking", "Millions of Italians sailed for America after 1880", "Lombardi's, New York, 1905", "Soldiers brought the taste home after the war", "Pineapple pizza was invented in Canada"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Poor Man's Supper Took Over the World",
+          "text": "For most of its life, pizza did not travel. It belonged to Naples, and it belonged to people who did not have much. It was cheap, it was fast, and Italians from other cities looked down on it. Carlo Collodi, the writer who invented Pinocchio, watched pizza being made in Naples in the 1880s and wrote that the finished thing looked like a piece of filth. That was a normal opinion at the time. Then people started leaving. Between the 1880s and the 1920s, millions of Italians boarded ships for the United States, and a great many of them came from the south. They carried the recipe in their hands, not on paper. In 1905 a grocery in New York run by Gennaro Lombardi was licensed to sell pizza, which is usually counted as the first pizzeria in America. For the next forty years it stayed mostly where the immigrants stayed. If you did not live near an Italian neighborhood, you had probably never eaten a slice. The war changed that. American soldiers fighting in Italy in the 1940s ate pizza in the towns they passed through, liked it, and came home asking where to find it. Demand appeared in places that had no Italian neighborhood at all. In the 1950s frozen pizza arrived in grocery stores. In the 1960s delivery chains worked out how to move a hot pizza across a city in a cardboard box. Each step made pizza a little less Neapolitan and a lot more available. So the food of the Naples poor became one of the most eaten meals on the planet, and it did it by changing. Pineapple pizza was invented in Canada. Corn and mayonnaise turn up on pizzas in Japan. Purists complain. Meanwhile, in Naples, the old way never stopped: a soft, blistered, two minute pizza, made the way it was made when nobody outside the city wanted it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "How did pizza first reach the United States, according to the passage?",
+            "The passage says pizza spread by changing. Quote one detail that supports this.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain what the phrase they carried the recipe in their hands, not on paper tells you about how pizza traveled."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: pizza was cheap Naples street food, carried to America by immigrants, then spread worldwide by changing)",
+            "Italian immigrants brought it with them between the 1880s and the 1920s",
+            "(quote: Pineapple pizza was invented in Canada, or Corn and mayonnaise turn up on pizzas in Japan)",
+            "(inform, with detail: it gives dates, names, and events; the closing line leans a little persuasive)",
+            "(inference: it was passed on as a skill and a memory, learned by doing, not written down)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["purists → ____", "demand → ____", "licensed → ____", "Neapolitan → ____"],
+          "rows": 1,
+          "answers": [
+            "people who insist a thing be done the original way",
+            "how much people want to buy something",
+            "given official permission",
+            "from Naples, or made the Naples way"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Collodi thought pizza looked like filth. Why might a food that respectable people despised end up spreading further than one they admired?",
+            "The last sentence says the old way never stopped. Why do you think the author chose to end there instead of with the frozen pizza and the delivery boxes?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: it was cheap and portable, so it traveled with poor people who moved, and nobody guarded it)",
+            "(inference: it leaves the reader with the original still alive, so change reads as addition rather than loss)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when a food changes as it travels, is that a loss or a gain? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Flatbread That Took Over the World",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pizza", "templateLabel": "The Flatbread That Took Over the World", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pizza",
+          "notes": ["Queen Margherita visited Naples in June 1889", "Historians doubt the famous thank you note", "Italy had only been one country since 1861", "The AVPN wrote the rules for real Neapolitan pizza in 1984", "UNESCO protected the pizza maker's art in 2017"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Queen, the Legend, and Who Owns a Food",
+          "text": "Every famous food has a founding story, and pizza's is one of the best known in the world. In June 1889, the story goes, King Umberto and Queen Margherita of Italy came to Naples. The queen grew bored of French court cooking and sent for a local pizza maker named Raffaele Esposito. He baked her three pizzas, and she liked the third best: red tomato, white mozzarella, green basil, the colors of the young Italian flag. He named it after her. Pizza margherita was born, and a peasant food was blessed by a queen. It is a wonderful story. Historians are not sure it is true. There is a thank you note, supposedly from the royal household, praising Esposito's pizzas, but researchers who have examined it have raised serious doubts about the handwriting and the letterhead. Pizzas topped in those three colors appear in Naples before 1889 anyway. What is certain is that by the early 1900s the legend was being repeated as fact, and the name stuck. Ask why the story survived and you learn something about how food works. Italy had only been a single country since 1861. A dish that matched the flag, invented by a poor man from Naples and praised by the queen, was a useful story for a nation still trying to convince itself it was one nation. The legend did a job. Accuracy was not the job. The care Naples takes with pizza today is not a legend. In 1984 a group of pizza makers founded an association to define what a real Neapolitan pizza is, and their rules are exact: soft wheat flour, brewer's yeast or a natural starter, dough worked by hand, no rolling pin, a center barely thicker than a coin, a wood fired oven at roughly 900 degrees Fahrenheit, sixty to ninety seconds of baking. In 2017 UNESCO went further and added the art of the Neapolitan pizzaiuolo, the pizza maker, to its list of the world's intangible cultural heritage. The thing being protected is not the recipe. It is the skill, the gesture, the knowledge passed from one pair of hands to the next. That raises an uncomfortable question. Pizza conquered the planet by refusing to obey rules. It picked up pineapple in Canada, corn in Japan, deep pans in Chicago, and folded itself in half in New York. Every one of those is a violation of the Naples standard, and every one of them is somebody's childhood. So who owns a food? The city that invented it and can prove how it should be made, or the billions of people who took it, changed it, and made it theirs? Naples would say both, as long as you do not call your version Neapolitan. That answer is more generous than it first sounds. It does not ban anything. It only asks you to be honest about what you are holding."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the author says the margherita legend survived even though historians doubt it. Cite the evidence.",
+            "What distinction does the author draw between protecting a recipe and protecting an art? Quote the line that makes it.",
+            "Identify the shift in the passage: where does it turn from history to argument, and how does the author signal it?",
+            "The passage ends by calling the Naples position generous. Analyze what that word is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: a doubtful royal legend and a strict modern standard both shape what counts as real pizza)",
+            "(it served a newly unified Italy that needed shared symbols; cite: The legend did a job. Accuracy was not the job)",
+            "(the rules guard skill and knowledge, not a formula; quote: It is the skill, the gesture, the knowledge passed from one pair of hands to the next)",
+            "(at That raises an uncomfortable question; a short sentence and a direct question pivot the reader from facts to judgment)",
+            "(it reframes a strict rule as permission rather than prohibition; earned only if you accept that naming, not cooking, is what Naples restricts)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["intangible → ____", "supposedly → ____", "pizzaiuolo → ____", "violation → ____"],
+          "rows": 2,
+          "answers": [
+            "not physical; something you cannot touch, like a skill or a custom",
+            "said to be true but not proven",
+            "a Neapolitan pizza maker",
+            "a breaking of a rule or standard"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that the legend did a job. Explain what job a founding story does for a country, and name one risk of letting a useful story stand in for a true one.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it gives strangers a shared symbol and a common past; the risk is that convenient fiction gets defended as history)",
+            "(student question + a credible source type, such as an archive of the royal household records)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A city that invents a food has the right to say what that food is. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

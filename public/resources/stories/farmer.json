@@ -1,0 +1,321 @@
+{
+  "key": "farmer",
+  "title": "The Farmer Who Plants a Guess",
+  "blurb": "The oldest job on Earth. A person who bets on the weather, reads the soil, and quietly redesigned wheat, corn, and half the planet.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Farmer Who Plants a Guess",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-farmer", "templateLabel": "The Farmer Who Plants a Guess", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the farmer. Say good morning." },
+        {
+          "kind": "image",
+          "imageKey": "farmer",
+          "notes": ["Farmers get up before the sun", "Cows are milked two times a day", "A tractor pulls heavy tools", "Farms grow the food we eat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a farmer. The farmer wakes up when the sky is still dark. First the farmer feeds the cows. The cows say moo. Then the farmer feeds the chickens. The chickens run fast. The farmer drives a big tractor. The tractor goes putt putt putt. The farmer works all day in the sun. At night the farm is quiet. The farmer sleeps."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the eggs in each nest. Write how many in the box.",
+          "emoji": "🥚",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "farm    seed" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to what it gives the farmer.",
+          "pairs": [
+            { "left": "cow", "right": "milk" },
+            { "left": "chicken", "right": "egg" },
+            { "left": "sheep", "right": "wool" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own farm. Add a barn, an animal, and the sun.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Farmer Who Plants a Guess",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-farmer", "templateLabel": "The Farmer Who Plants a Guess", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "farmer",
+          "notes": ["A seed can wait years before it grows", "Corn grows taller than a grown-up", "Farmers watch the sky every day", "Roots grow down and shoots grow up", "One field can hold millions of seeds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Farmer Who Plants a Guess",
+          "text": "A farmer plants a seed in the spring. The seed is small and dry. It looks like nothing at all. Rain falls on the field. The sun warms the dirt. The seed cracks open under the ground. A tiny root goes down. A tiny green shoot goes up. All summer the farmer watches the field. The plant grows taller than the farmer. In the fall the farmer picks the corn. Then the field is bare, and the farmer waits for spring to plant again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["When does the farmer plant the seed?", "What two things help the seed grow?", "What does the farmer pick in the fall?"],
+          "rows": 2,
+          "answers": ["in the spring", "rain and sun", "the corn"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The farmer plants a ____.", "The ____ warms the dirt.", "A tiny ____ goes down into the ground.", "In the fall the farmer picks the ____."],
+          "wordBank": ["seed", "sun", "root", "corn"],
+          "answers": ["seed", "sun", "root", "corn"]
+        },
+        { "kind": "draw", "prompt": "Draw the field in summer. Make the corn taller than the farmer.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Farmer Who Plants a Guess",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-farmer", "templateLabel": "The Farmer Who Plants a Guess", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "farmer",
+          "notes": ["A combine does three old jobs at once", "Winter is for fixing machines", "Weeds steal water from crops", "One late frost can end a whole crop", "A farm year takes twelve months to finish"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Clock That Takes a Year to Tick",
+          "text": "A farm runs on a clock that takes a whole year to tick around. In spring the farmer works the soil and plants the seed. This is the biggest guess of the year. Plant too early and a late frost kills the shoots. Plant too late and the crop runs out of warm days before it is ripe. In summer the farmer mostly waits, and waiting is real work. She pulls weeds that steal water. She checks leaves for bugs and for spots of disease. She reads the sky every single day. In fall the farmer harvests. A machine called a combine rolls down the rows. It cuts the plants, shakes the seeds loose, and blows the leftover stalks out the back, all at once. That is why it is called a combine. It combines three old jobs into one. In winter the field rests under the cold. The farmer fixes machines, counts money, and picks the seed for next spring. Then the clock ticks around again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does the farmer do in the spring?",
+            "Name two jobs the farmer does while waiting in summer.",
+            "What three jobs does a combine do at the same time?",
+            "Why do you think the passage calls planting the biggest guess of the year?"
+          ],
+          "rows": 2,
+          "answers": [
+            "works the soil and plants the seed",
+            "pulls weeds and checks leaves for bugs and disease",
+            "cuts the plants, shakes the seeds loose, and blows out the stalks",
+            "(inference: the farmer cannot know the weather months ahead)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A Clock That Takes a Year to Tick", "How to Build a Barn", "The Fastest Tractor Ever Made"],
+          "answers": ["A Clock That Takes a Year to Tick"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A late ____ can kill the young shoots.", "Weeds steal ____ from the crop.", "In winter the field ____ under the cold."],
+          "wordBank": ["frost", "water", "rests"],
+          "answers": ["frost", "water", "rests"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which season on the farm would you find hardest, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Farmer Who Plants a Guess",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-farmer", "templateLabel": "The Farmer Who Plants a Guess", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "farmer",
+          "notes": ["A tree is built mostly out of air", "A teaspoon of soil holds billions of living things", "Plants pull carbon dioxide in through their leaves", "Roots drink water and dissolved minerals", "Van Helmont weighed a tree for five years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Field Is Really Made Of",
+          "text": "Ask most people where a tree comes from and they will say the soil. It is a good guess, and it is wrong. Almost four hundred years ago a scientist named Jan Baptist van Helmont decided to check. He dried out a pile of soil, weighed it, and put it in a pot. He planted a small willow tree in it and gave it nothing but water for five years. Then he weighed everything again. The tree had gained about one hundred and sixty pounds. The soil had lost only a couple of ounces. So where did the tree come from? Mostly from the air. Leaves pull in carbon dioxide gas, roots pull in water, and sunlight gives the plant the energy to snap those two apart and rebuild them into wood, leaf, and grain. A cornfield is thin air, reassembled. Farmers know this in their bones, even if they never say it that way. What a crop takes from the soil is small but essential: nitrogen, phosphorus, potassium, and a short list of minerals. Pull those out year after year and never put them back, and the field goes tired. That is why a good farmer treats soil as a living thing, because it is one. A single teaspoon of healthy field soil holds billions of bacteria and fungi, more living things than there are people on Earth. They are the crew that unlocks the minerals a root can drink. A farmer who kills that crew is farming dust."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe van Helmont's experiment in your own words.",
+            "His tree gained about one hundred and sixty pounds while the soil lost only a couple of ounces. What does that prove?",
+            "If plants are built mostly from air and water, why does the soil still matter to a farmer?",
+            "What do you think the author means by the last line, a farmer who kills that crew is farming dust?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(he weighed dry soil, grew a willow in it on water alone for five years, then weighed both again)",
+            "(the tree's mass came from something other than the soil, mostly the air)",
+            "(it supplies water plus nitrogen, phosphorus, potassium and minerals the plant cannot make)",
+            "(inference: without soil life the minerals stay locked up and the field stops producing)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Plants are built mostly from air and water, and soil matters because it is alive",
+            "Willow trees are the heaviest trees in the world",
+            "Farmers should stop using soil and grow crops in pots"
+          ],
+          "answers": ["Plants are built mostly from air and water, and soil matters because it is alive"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["essential → ____", "unlocks (the minerals) → ____", "reassembled → ____"],
+          "rows": 1,
+          "answers": [
+            "absolutely needed, cannot be done without",
+            "breaks them into a form a root can take up",
+            "taken apart and built back together in a new shape"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining this sentence to someone who has never heard it: a cornfield is thin air, reassembled. Use two details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Farmer Who Plants a Guess",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-farmer", "templateLabel": "The Farmer Who Plants a Guess", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "farmer",
+          "notes": ["Air is 78 percent nitrogen", "Bean roots host bacteria that catch nitrogen", "Dust Bowl soil blew as far as the Atlantic", "Cover crops hold topsoil through winter", "A farmer gets one attempt per year", "Grain prices are set on the far side of the world"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Biggest Bet in Town",
+          "text": "Every spring a farmer makes a bet, and the bet is enormous. Here is the shape of it. In April she spends real money, often borrowed money, on seed, fuel, and fertilizer for a field she cannot harvest until October. She buries that money in the ground. Then she waits six months to find out whether she was right. In between sit hail, drought, flood, frost, insects, fungus, and a grain price set by buyers on the other side of the world who have never seen her farm. She controls almost none of it. What she does control, she controls carefully. She picks a seed variety bred for her exact number of frost free days. She sets the planter to drop seeds at a chosen depth, because too shallow dries out and too deep never reaches the light. She rotates her crops, following corn with soybeans, because soybeans are legumes, and legumes host bacteria in small nodules on their roots that pull nitrogen straight out of the air and fix it into the soil. The air is seventy eight percent nitrogen, and those bacteria are the only ones at the table who can reach it. A farmer who understands that is being paid by microbes. She plants cover crops in the fall so winter rain cannot carry her topsoil down the creek. Soil takes centuries to build and one bad season to lose. In the 1930s, farmers across the American plains plowed up the deep prairie grass that had held the ground together. A drought arrived, and the topsoil simply left. It rose in black clouds and blew as far as ships out in the Atlantic. They called it the Dust Bowl, and it was not only bad weather. It was bad weather meeting a mistake. So a farmer is not really a person who grows plants. Plants grow themselves. A farmer is a person who manages risk, reads soil, times weather, and gets exactly one attempt per year to be right."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the farmer's bet: what does she spend, and when does she find out if it worked?",
+            "Why does planting soybeans after corn help the soil? Quote the phrase the passage uses about the air.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the Dust Bowl was bad weather meeting a mistake. What was the mistake, and why does the author put it that way?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the annual bet, the things she controls, and soil care)",
+            "(money on seed, fuel and fertilizer in April; she finds out at harvest six months later)",
+            "(legume root bacteria fix nitrogen into the soil; quote: The air is seventy eight percent nitrogen)",
+            "(inform, with a persuasive edge; details: it defines legumes and nodules, and argues in the last lines)",
+            "(plowing up prairie grass that held the soil; it names human choice, not just weather, as the cause)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["legumes → ____", "fix (nitrogen) → ____", "rotates (her crops) → ____", "cover crops → ____"],
+          "rows": 1,
+          "answers": [
+            "plants like soybeans, beans and peas whose roots host nitrogen-catching bacteria",
+            "to capture it from the air and lock it into the soil in a usable form",
+            "grows a different crop in the same field each year",
+            "plants grown to hold and protect soil rather than to be sold"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that a farmer who understands that is being paid by microbes. Explain the idea in your own words.",
+            "Why is getting one attempt per year harder than getting many attempts, even for someone very skilled?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the bacteria supply free fertilizer, so the knowledge saves her money)",
+            "(inference: you learn slowly, mistakes are expensive, and one bad year cannot be retried until the next)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a farmer who protects the soil for the next hundred years be paid for it, even though the payoff arrives long after she is gone? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Farmer Who Plants a Guess",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-farmer", "templateLabel": "The Farmer Who Plants a Guess", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "farmer",
+          "notes": ["Farming began about 12,000 years ago", "Wild wheat shatters and scatters its own seed", "Corn descends from a grass called teosinte", "Tractors steer by satellite to about an inch", "About half of habitable land is now farmland", "Domesticated wheat cannot reseed itself"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Farmer Is a Force of Nature",
+          "text": "Twelve thousand years ago there were no farmers, and there was no wheat. There were people who gathered, and there was a wild grass on the hills of the Middle East that happened to make edible seeds. Wild grass has a problem, from a human point of view. It is very good at planting itself. When its seeds ripen, the stalk holding them turns brittle and shatters, flinging seed to the ground where the next generation can grow. That is the whole point of a seed. A gatherer walking through that grass with a basket arrives to find the harvest already lying in the dirt. But in any wild field, a few plants carry a mutation. Their stalks do not shatter. The seeds stay attached, waiting, going nowhere. In the wild, that mutation is a death sentence, because a seed that never falls never becomes a plant. Then the gatherers came with baskets, and the rule reversed. Every seed that had fallen was lost in the dirt. Every seed still clinging to the stalk went into the basket, back to camp, and eventually into the ground on purpose. Without deciding to, without understanding a single thing about genetics, those people were selecting for the exact mutation that wild nature was busy killing. Do that for a thousand years and the broken plant becomes the crop. Wheat cannot spread itself anymore. It needs us. We made a plant that cannot live without a farmer, and in return we got a plant that can feed a city. The same story runs everywhere. Corn descends from a Mexican grass called teosinte, which carries maybe a dozen hard kernels on a spike you could hide in your hand. Generation after generation, farmers kept the biggest ears from the best plants and planted those. Modern corn is teosinte after ten thousand years of that patience, and it is so changed that scientists argued for decades about whether the two were even related. This is what makes farming strange among human jobs. A blacksmith shapes iron and the iron stays shaped. A farmer shapes life, and life shapes back. Every choice a farmer makes, which plants to keep, which animals to breed, which field to rest, is a nudge to a living system that keeps moving long after the farmer is gone. Modern farmers are still doing it, just faster and with better instruments. A tractor now steers itself by satellite to within about an inch. Sensors read moisture and yield square by square. Plant breeders test thousands of crosses in a season instead of waiting on luck. But the loop has not changed since those hills in the Middle East. Watch what the land does. Keep what works. Plant it again. We tend to picture the farmer as someone at the mercy of nature, standing in a field, squinting at clouds. That is half true, and it is the half we notice. The other half is that no other species has redesigned the living world so thoroughly on purpose. About half the habitable land on Earth is farmland now. The farmer did not simply adapt to nature. The farmer is one of the largest things that ever happened to it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the non-shattering mutation is fatal in a wild field but valuable once humans arrive. Cite the exact phrase the passage uses for its fate in the wild.",
+            "The passage says of wheat: It needs us. Explain what that dependence actually is, and what humans got in exchange.",
+            "Identify the shift in the passage: where does it stop telling history and start making an argument, and how does the author signal it?",
+            "Analyze the final two sentences. What claim is the author making about farmers, and does the evidence in the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering domestication and the farmer's scale of influence)",
+            "(seeds that stay on the stalk never reseed themselves; cite: a death sentence)",
+            "(domesticated wheat cannot scatter its own seed and needs people to plant it; in exchange we got a harvestable crop that can feed a city)",
+            "(at This is what makes farming strange among human jobs; the blacksmith comparison turns description into a claim)",
+            "(that farming reshaped the living world rather than merely submitting to it; supported by wheat, teosinte and the farmland share, though the land figure is asserted rather than sourced)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["mutation → ____", "selecting for → ____", "brittle → ____", "domesticated (implied) → ____"],
+          "rows": 2,
+          "answers": [
+            "a change in a plant or animal's inherited instructions",
+            "keeping and breeding the individuals that carry a chosen trait",
+            "hard but easily snapped or shattered",
+            "changed by generations of human breeding until it depends on people"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes: A farmer shapes life, and life shapes back. Give one example from the passage of life shaping back at the farmer.",
+            "The passage credits early gatherers with a change they never intended. Explain how a result can be systematic without anyone planning it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(wheat became dependent on people, so people became obliged to plant it every year)",
+            "(a repeated bias in what gets kept acts like a filter over many generations, so selection happens without intent)",
+            "(student question plus a credible source type, such as an archaeology or plant genetics study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: humans did not domesticate wheat, wheat domesticated humans. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

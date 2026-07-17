@@ -1,0 +1,320 @@
+{
+  "key": "fern",
+  "title": "The Fern That Waits for Rain",
+  "blurb": "A plant with no flowers and no seeds, older than the dinosaurs, that unrolls its leaves like a scroll and cannot make a single new fern without water.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Fern That Waits for Rain",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-fern", "templateLabel": "The Fern That Waits for Rain", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the leaf that is still rolled up." },
+        {
+          "kind": "image",
+          "imageKey": "fern",
+          "notes": ["A fern leaf is called a frond", "New leaves are rolled up tight", "Ferns like rain and shade", "Ferns have no flowers"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a fern. A fern is a green plant. It likes rain. It likes shade. A new fern leaf is rolled up tight. It looks like a curl. When the rain comes, the curl opens. It opens slow, slow, slow. Now it is a big green leaf. The leaf is called a frond. Ferns have no flowers. Ferns just have green."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fronds in each row. Write how many in the box.",
+          "emoji": "🌿",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "fern    rain" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each plant with its home.",
+          "pairs": [
+            { "left": "fern", "right": "wet shade" },
+            { "left": "cactus", "right": "dry sand" },
+            { "left": "seaweed", "right": "the ocean" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own fern. Make one leaf still rolled up in a curl.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Fern That Waits for Rain",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-fern", "templateLabel": "The Fern That Waits for Rain", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "fern",
+          "notes": ["A fern leaf is called a frond", "Ferns make spores, not seeds", "The spores hide under the leaf", "A curled new leaf is a fiddlehead", "Ferns grew here before the dinosaurs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dust Under the Leaf",
+          "text": "A fern does not grow flowers. It does not grow seeds. So how does it make more ferns? It makes dust. The dust is called spores. Spores hide in tiny brown dots under the leaf. Turn a frond over and you can see them. When the dots are ready, they pop open. The spores blow away in the wind. If a spore lands in a wet, shady spot, a new fern can start. That is why you find ferns by streams and under big trees. Ferns need the rain. Without it, no new ferns grow."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a fern make instead of seeds?", "Where do the spores hide?", "What carries the spores away?", "What kind of spot does a spore need?"],
+          "rows": 2,
+          "answers": ["spores", "in brown dots under the leaf", "the wind", "a wet, shady spot"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A fern makes ____ instead of seeds.", "The spores hide in brown ____ under the frond.", "The wind blows the spores ____.", "A spore needs a ____ spot to start."],
+          "wordBank": ["spores", "dots", "away", "wet"],
+          "answers": ["spores", "dots", "away", "wet"]
+        },
+        { "kind": "draw", "prompt": "Draw a fern growing beside a stream. Add rain coming down.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Fern That Waits for Rain",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-fern", "templateLabel": "The Fern That Waits for Rain", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "fern",
+          "notes": ["Ferns have no flowers and no seeds", "Spores grow in brown dots called sori", "A curled young frond is a fiddlehead", "A spore grows a tiny heart-shaped plant first", "Ferns need water to make new ferns"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Plant That Cannot Grow Without Rain",
+          "text": "Every plant you know has a plan for making more of itself. An apple tree makes apples with seeds inside. A dandelion makes fluff that floats. A fern does neither. A fern makes spores. Spores are so small that a cloud of them looks like a puff of smoke. They grow in clusters of brown dots on the underside of the frond. Each dot holds hundreds of them. On a dry, warm day the dots crack open and flick the spores into the air. Here is the strange part. A spore does not grow into a fern. It grows into a tiny green heart, flat as a scale and no bigger than your fingernail. That little heart makes the cells that join together to start a real fern. But those cells have to swim to meet, and they can only swim in water. A film of rain on the ground is enough. No rain, no swimming, no new fern. So a fern is not just a plant that likes wet places. It is a plant that cannot make a family without them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does a fern make instead of seeds?",
+            "Where on the frond do the brown dots grow?",
+            "What does a spore grow into first, before there is a fern?",
+            "Why do you think ferns are almost never found in a desert?"
+          ],
+          "rows": 2,
+          "answers": [
+            "spores",
+            "on the underside of the frond",
+            "a tiny green heart no bigger than your fingernail",
+            "(inference: the cells need water to swim, and a desert has no film of rain)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Plant That Cannot Grow Without Rain", "How to Plant an Apple Tree", "Why Dandelions Are Yellow"],
+          "answers": ["The Plant That Cannot Grow Without Rain"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A fern makes ____ instead of seeds.", "The brown dots grow on the ____ of the frond.", "A spore first grows into a tiny green ____.", "The cells can only swim in ____."],
+          "wordBank": ["spores", "underside", "heart", "water"],
+          "answers": ["spores", "underside", "heart", "water"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the strangest thing about how a fern makes a new fern, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Fern That Waits for Rain",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-fern", "templateLabel": "The Fern That Waits for Rain", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fern",
+          "notes": ["Resurrection fern grows on oak branches, not in soil", "It can lose most of its water and live", "It turns green again a few hours after rain", "An epiphyte sits on another plant", "Most plants die if they lose a tenth of their water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Plant That Plays Dead",
+          "text": "Walk through an oak forest in Georgia after a long dry spell and you may pass a branch covered in what looks like gray litter. The leaves are curled inward, brittle, and the color of old paper. Anyone would call them dead. They are not. That is resurrection fern, and it is waiting. Most plants die when they lose more than about a tenth of their water. Resurrection fern can lose most of the water in its body, shrivel to a husk, and stay that way for months. Then rain falls. Within a few hours the fronds uncurl, swell, and turn green again, as if someone had pressed rewind. The fern was never dead. It was shut down. It can do this because of where it lives. Resurrection fern is an epiphyte, which means it grows on other plants rather than in soil. It perches on oak limbs, high above the ground, taking nothing from the tree but a place to sit. Up there, there is no deep soil holding a reserve of moisture. The branch is wet when it rains and bone dry when it does not. A plant living in that spot has two choices: find a way to store water, or find a way to do without it. The fern does without. Every fern is tied to water, because a fern needs a film of rain to reproduce. The resurrection fern simply took the connection further. It does not fight the weather. It follows it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is an epiphyte, in your own words?",
+            "Explain why living on a branch is harder than living in soil.",
+            "The passage says the fern was never dead, it was shut down. What is the difference?",
+            "The passage ends by saying the fern does not fight the weather, it follows it. What do you think that means?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(a plant that grows on another plant instead of in the ground)",
+            "a branch has no deep soil, so it is wet only when it rains and dry the rest of the time",
+            "dead means it cannot come back; shut down means it paused and can start again when water returns",
+            "(inference: instead of storing water to survive dry spells, it matches its life to whether rain is falling)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A fern that survives drought by shutting down shows how closely ferns are tied to water",
+            "Oak trees in Georgia are dying because of a lack of rain",
+            "Every plant on Earth can lose most of its water and still live"
+          ],
+          "answers": ["A fern that survives drought by shutting down shows how closely ferns are tied to water"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["epiphyte → ____", "brittle → ____", "reserve (of moisture) → ____", "shrivel → ____"],
+          "rows": 1,
+          "answers": [
+            "a plant that grows on another plant instead of in soil",
+            "dry and stiff enough to snap",
+            "a stored supply saved for later",
+            "to dry out and shrink"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: would you rather be a plant that stores water for a dry spell, or one that shuts down and waits for rain? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Fern That Waits for Rain",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-fern", "templateLabel": "The Fern That Waits for Rain", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fern",
+          "notes": ["The K-Pg boundary marks the asteroid impact 66 million years ago", "Fern spike: a flood of spores in the layer just above it", "A spore can ride the wind for hundreds of miles", "Ferns need no pollinator and no built-up soil", "Ferns are often first back after fire or landslide", "About 10,000 fern species are alive today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fern Spike",
+          "text": "Everywhere on Earth there is a thin line of clay that marks the worst day in the history of animals. It sits about 66 million years ago, and geologists call it the K-Pg boundary. Below the line, rock records a world of dinosaurs. Above it, they are gone. The line itself is the dust of an asteroid roughly six miles wide that struck what is now the Yucatan coast of Mexico, throwing enough debris into the sky to dim the sun and stall photosynthesis across the planet. The interesting part, for a plant scientist, is what sits directly above the clay. If you drill a core through the boundary and count the microscopic grains preserved in each layer, you find something consistent. Below the line: pollen, in enormous variety, from a forested world. In the layer just above: almost no pollen at all, and instead a sudden flood of fern spores. In some cores, the spores make up nearly all of the material. The pattern is common enough that it has a name. Paleobotanists call it the fern spike. It is not that ferns survived the impact better than everything else. It is that ferns are first responders. A fern spore is light enough to travel for hundreds of miles on the wind, and a fern needs no partner, no pollinator, and no established soil to begin. Drop a spore on scorched, bare, damp ground and it can start. Trees cannot do that. A forest needs decades and a seed bank and animals to move the seeds around, and after the impact those things were gone. So for a stretch of years after the sky went dark, wide sections of the planet were green with almost nothing but ferns. The same thing happens on a smaller scale today. After a landslide, a wildfire, or a fresh lava flow cools, ferns are often the first green things back. The fern spike is not a story about a plant getting lucky. It is a record, written in spores, of what a broken world reaches for first."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What do scientists find below the clay line, and what do they find just above it?",
+            "Explain why ferns could recolonize the scorched ground when trees could not. Quote the phrase the passage uses to describe what ferns are.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why do you think the author saves it for last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the K-Pg clay layer + the flood of fern spores + ferns as first colonizers)",
+            "below: pollen in enormous variety from a forested world; above: almost no pollen and a flood of fern spores",
+            "spores are light, need no pollinator and no established soil; quote: first responders",
+            "(inform, with detail: it defines the K-Pg boundary and the fern spike and presents evidence from cores; the last line adds a persuasive turn)",
+            "(the fern spike is evidence of how life restarts after disaster; the author ends there so the idea lands last)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["boundary → ____", "core (in geology) → ____", "photosynthesis → ____", "established (soil) → ____"],
+          "rows": 1,
+          "answers": [
+            "the line where one layer of rock meets the next",
+            "a column of rock or sediment drilled out and read layer by layer",
+            "the way plants use sunlight to make food",
+            "already built up and settled over a long time"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says the ferns were not survivors so much as first responders. Explain the difference in your own words.",
+            "Fern spores are found in the boundary layer all over the world. What does that tell you about how far the damage reached?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(surviving means enduring the event; first responders means arriving first to bare ground afterward)",
+            "(inference: the impact was global, not local, because the same recovery pattern shows up everywhere)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: are the plants that recover fastest after a disaster more important than the ones that take centuries to return? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Fern That Waits for Rain",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-fern", "templateLabel": "The Fern That Waits for Rain", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fern",
+          "notes": ["Ferns have existed for roughly 360 million years", "Alternation of generations: a spore grows a separate plant", "The sperm must swim through water to reach the egg", "Fern spike: spores flood the layer above the asteroid clay", "Azolla event: an Arctic fern bloom that buried carbon", "About 10,000 fern species are alive today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Ferns and the Weather They Made",
+          "text": "A fern is easy to underestimate. It has no flower to advertise itself, no fruit, no seed, and no obvious ambition. It sits in the shade being green. But ferns have been on this planet for something like 360 million years, which means they were already old when the first dinosaur appeared, and they have twice been caught in the act of doing something enormous. Start with what a fern actually is, because the strangeness begins there. The leafy plant you recognize is only half of the organism. It produces spores, and a spore does not grow into another leafy fern. It grows into a separate, independent plant, a green flake about the size of a lentil, which most people would never notice underfoot. That flake makes egg and sperm. The sperm has to swim, physically swim, across a film of water to reach the egg. Only then does the fertilized cell grow into the leafy fern we know. Biologists call the arrangement alternation of generations, and its consequence is simple and absolute: no water, no next generation. Every fern on Earth is a hostage to rainfall. That dependence sounds like a weakness, and often it is. But it comes packaged with an advantage. A spore is a single cell wrapped in a tough coat. It weighs almost nothing, it needs no bee, no bird, and no soil built up over centuries, and the wind will carry it for hundreds of miles. A fern can therefore arrive somewhere no other plant can reach and start from nothing, provided the ground is damp. The rock record shows what that ability is worth. Drill through the layer of clay that marks the asteroid impact of 66 million years ago and the pollen of a forested world vanishes at the boundary. Directly above it, in cores from around the world, comes a flood of fern spores. Paleobotanists call it the fern spike. For years after the sky darkened, much of the ruined landscape was green with almost nothing but ferns. They were not survivors so much as first responders. The second act is stranger, and it runs the other way: instead of the climate rewriting the ferns, the ferns may have rewritten the climate. About 49 million years ago the Earth was hot. The Arctic Ocean was then a nearly enclosed basin, warm and topped with fresh water, and across that surface a tiny floating fern called Azolla bloomed. Azolla grows fast, doubling in a matter of days, partly because it houses bacteria that pull nitrogen straight from the air. Layers of Azolla remains sit in Arctic sediment cores, laid down over roughly 800,000 years. Every one of those plants had pulled carbon dioxide from the atmosphere, and when they sank into a stagnant seafloor, that carbon was buried rather than recycled. Many scientists think this drawdown helped pull the planet out of its hothouse and start the long slide toward the ice ages we live between now. The evidence is circumstantial and the debate is live, but the scale is not in doubt. So the fern's story runs in both directions. Weather dictates where a fern can live, because its sperm must swim. And ferns, given enough time and enough surface, have altered what the weather is. The plant sitting quietly in the shade is not simple. It is patient, and patience at geological scale is a kind of power."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain alternation of generations and why it ties every fern to rainfall. Cite the exact phrase the author uses to state that tie.",
+            "The author calls the fern's water dependence a weakness that comes packaged with an advantage. Explain the advantage and how the fern spike proves it.",
+            "Identify the turn in the passage: where does the argument reverse direction, and how does the author signal it?",
+            "The author writes that the evidence is circumstantial and the debate is live. Analyze what that sentence is doing, and whether admitting it makes the passage weaker or stronger."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the spore grows a separate gametophyte whose sperm must swim to the egg; cite: Every fern on Earth is a hostage to rainfall)",
+            "(a spore is tiny, wind-carried, needs no pollinator or soil, so ferns colonize bare ground first; the spore flood above the K-Pg clay is the record of it)",
+            "(at The second act is stranger, and it runs the other way; the author names the reversal outright: climate acting on ferns becomes ferns acting on climate)",
+            "(it concedes uncertainty about the Azolla hypothesis; stronger, because the author separates what is measured from what is inferred)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["alternation of generations → ____", "hostage → ____", "drawdown → ____", "circumstantial → ____"],
+          "rows": 2,
+          "answers": [
+            "a life cycle that alternates between a spore-making plant and a separate sex-cell-making plant",
+            "something held and controlled by a force it cannot escape",
+            "the removal of carbon dioxide from the atmosphere into long-term storage",
+            "built from indirect evidence rather than direct proof"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage claims the ferns may have rewritten the climate. What kind of evidence would move that claim from likely to proven?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(measurements tying the buried carbon volume to the recorded temperature drop, plus models ruling out other causes)",
+            "(student question + a credible source type such as a peer-reviewed paleoclimate study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: a plant that cannot reproduce without rain is too fragile to have shaped the planet. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

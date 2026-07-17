@@ -1,0 +1,319 @@
+{
+  "key": "pirate-ship",
+  "title": "The Pirate Ship That Voted",
+  "blurb": "Real pirate ships were small, fast, and run by vote. Here is how they actually worked.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Pirate Ship That Voted",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pirate-ship", "templateLabel": "The Pirate Ship That Voted", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the flag at the very top." },
+        {
+          "kind": "image",
+          "imageKey": "pirate-ship",
+          "notes": ["It has a black flag", "The wind pushes the sails", "Real pirate ships were small", "A sailor sits up high to watch"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pirate ship. It has big sails. The wind pushes the sails. The ship goes fast. Up high a sailor sits. He looks for other ships. A black flag flies at the top. The flag says: we are pirates. The ship sails away over the blue sea."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the sails in each row. Write how many in the box.",
+          "emoji": "⛵",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ship    sail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "ship", "right": "sea" },
+            { "left": "train", "right": "track" },
+            { "left": "plane", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own pirate ship. Give it a big flag.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Pirate Ship That Voted",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pirate-ship", "templateLabel": "The Pirate Ship That Voted", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pirate-ship",
+          "notes": ["A sloop was small and fast", "The crew voted for the captain", "Everyone got a share", "A black flag meant: give up and live", "Pirates almost never buried treasure"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Pirate Ship That Voted",
+          "text": "Pirate ships were not big. Most pirates picked a small ship called a sloop. A sloop was quick. It could turn fast. It could slip into shallow water where big navy ships could not go. The crew did not have a boss who yelled at them. The crew voted. They picked their own captain. If they did not like him, they voted for a new one. Every pirate got a share of what the ship took. The cook got a share. The boy who climbed the mast got a share too."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What kind of small ship did most pirates pick?", "How did a pirate crew choose their captain?", "Who got a share of what the ship took?"],
+          "rows": 2,
+          "answers": ["a sloop", "they voted for him", "every pirate on the crew"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Most pirates sailed a small ship called a ____.", "A sloop could slip into ____ water.", "The crew ____ for their captain.", "Every pirate got a ____ of what the ship took."],
+          "wordBank": ["sloop", "shallow", "voted", "share"],
+          "answers": ["sloop", "shallow", "voted", "share"]
+        },
+        { "kind": "draw", "prompt": "Draw a sloop with its sail full of wind. Add the sea underneath.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Pirate Ship That Voted",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pirate-ship", "templateLabel": "The Pirate Ship That Voted", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pirate-ship",
+          "notes": ["Most pirate ships were small sloops", "Careening: scraping the hull clean on a beach", "A black flag meant surrender and live", "A red flag meant no mercy", "Crews wrote and signed their own rules"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Pirates Wanted Small Ships",
+          "text": "In the movies, a pirate ship is a giant wooden castle with three tall masts and rows of cannons. Real pirates would have laughed at it. A big ship is slow. It needs a huge crew to sail it. It sits deep in the water, so it cannot follow anyone into a shallow bay. Most pirates chose a sloop instead. A sloop was small, with one mast and one big sail. Twenty or thirty men could handle it. It could outrun almost anything afloat, and it could sail into water only a few feet deep. When a navy warship came hunting, the pirates simply steered somewhere the warship could not follow. Pirates also cleaned their ships far more often than the navy did. They ran the ship up onto a quiet beach, tipped it on its side, and scraped the weeds and barnacles off the bottom. This was called careening. A clean hull slides through water. A dirty one drags. That scraping was the difference between catching a ship and losing it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name two problems with using a big ship for piracy.",
+            "How many men could handle a sloop?",
+            "What is careening?",
+            "Why do you think a clean hull made a pirate ship faster?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is slow and it sits too deep to enter shallow water",
+            "twenty or thirty",
+            "tipping the ship on a beach to scrape the bottom clean",
+            "(inference: weeds and barnacles drag in the water)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Pirates Wanted Small Ships", "How to Build a Wooden Castle", "The Best Beaches in the World"],
+          "answers": ["Why Pirates Wanted Small Ships"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A sloop had one mast and one big ____.", "Cleaning the bottom of the ship was called ____.", "A big ship sits ____ in the water."],
+          "wordBank": ["sail", "careening", "deep"],
+          "answers": ["sail", "careening", "deep"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you were a pirate, would you pick a big ship or a small one, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Pirate Ship That Voted",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pirate-ship", "templateLabel": "The Pirate Ship That Voted", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pirate-ship",
+          "notes": ["Crews signed written articles before sailing", "Captains were elected and could be voted out", "800 dollars from the common fund for a lost limb", "The quartermaster ran the ship day to day", "Pieces of eight were Spanish silver coins"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rules Pirates Wrote for Themselves",
+          "text": "Before a pirate crew sailed, they did something surprising. They sat down and wrote rules, then everyone signed them. These were called the articles, and they governed the ship. The articles of Bartholomew Roberts survive in print. They gave every man a vote in affairs of the moment. They gave every man an equal claim to fresh food and strong drink. They banned gambling with cards or dice for money, because crews that gamble start fights. Lights out at eight. Keep your weapons clean and ready. And if a man was crippled or lost a limb in the service, the articles paid him eight hundred dollars out of the common fund, with smaller injuries paid in proportion, before anyone else took a share. The captain was elected, and the crew could vote him out again. His absolute authority lasted only while chasing an enemy or fighting one. The rest of the time, the quartermaster ran the ship, settled arguments, and divided the loot. The captain took about two shares. An ordinary sailor took one. Compare that to the navy and the merchant ships those men had escaped from. A captain there was appointed, not chosen. He could order a sailor flogged. Wages went unpaid for years. A sailor crippled at work was put ashore with nothing. Pirates were thieves, and often violent ones. But on their own decks, in the 1720s, they were voting, sharing, and paying each other for injuries while most of the world did none of those things."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What were the articles, and what did the crew do with them?",
+            "Name two things Bartholomew Roberts' articles gave every man.",
+            "When did a pirate captain hold absolute authority, and who ran the ship the rest of the time?",
+            "Why do you think the articles banned gambling for money?"
+          ],
+          "rows": 2,
+          "answers": [
+            "written rules for the ship; every man signed them before sailing",
+            "a vote in affairs of the moment and an equal claim to fresh food and drink",
+            "only while chasing or fighting an enemy; the quartermaster ran it the rest of the time",
+            "(inference: crews that gamble start fights, and a small ship cannot afford a feud)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Pirate crews governed themselves with written rules that were fairer than the ships they fled",
+            "Pirates were the best sailors of the 1700s",
+            "Card games were popular at sea"
+          ],
+          "answers": ["Pirate crews governed themselves with written rules that were fairer than the ships they fled"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["articles → ____", "quartermaster → ____", "flogged → ____"],
+          "rows": 1,
+          "answers": [
+            "the written rules a pirate crew signed before sailing",
+            "the officer who ran the ship day to day and divided the loot",
+            "whipped as a punishment"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: were pirate ships fair places? Use two details from the passage, and be honest about what does not fit.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Pirate Ship That Voted",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pirate-ship", "templateLabel": "The Pirate Ship That Voted", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pirate-ship",
+          "notes": ["Edward Teach, known as Blackbeard", "Queen Anne's Revenge carried about 40 guns", "Black flag: surrender and live. Red flag: no quarter", "Ran aground at Beaufort Inlet in 1718", "The wreck was found in 1996", "His whole pirate career lasted about two years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Flag Was the Weapon",
+          "text": "A cannon fight is a terrible way to steal a ship. Cannonballs smash the hull you wanted, kill the crew you might have recruited, and ruin the cargo you came for. A sinking prize is worth nothing. So the most successful pirates worked hard to never fight at all. Their main weapon was a flag. When a pirate ship closed on a merchant vessel, it ran up a black flag. The message was specific and well understood: surrender now and you will not be harmed. If the merchant refused, the black flag came down and a red one went up. Red meant no quarter. Nobody spared. Faced with that choice, most captains surrendered, and most pirate captures ended without a shot. Edward Teach understood this better than anyone. History remembers him as Blackbeard, and the beard was deliberate. Before boarding, he tucked slow-burning lengths of hemp cord under his hat and into his beard and lit them, so he arrived wreathed in smoke, hung with pistols, looking like something that had climbed out of the dark. Accounts of his career record remarkably little killing. He did not need to kill. His reputation did the work, and he built that reputation carefully, then spent it. His ship helped. In 1717 he took a French vessel, fitted her with about forty guns, and named her Queen Anne's Revenge. Forty guns made her a serious warship, and it was not a coincidence. A ship that looks unbeatable rarely has to prove it. The end came quickly. In 1718 the Queen Anne's Revenge ran aground at Beaufort Inlet in North Carolina and was abandoned. Blackbeard was hunted down and killed months later. His whole pirate career lasted about two years. In 1996 divers found a wreck in that inlet, buried under sand and cannons, and it is now widely accepted as his ship. Two years of work. Three centuries of fame. The flag really was the weapon."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why is sinking a ship bad business for a pirate? Give two reasons from the text.",
+            "Explain the difference between the black flag and the red flag. Quote the phrase the passage uses for the red flag's meaning.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author writes that Blackbeard built that reputation carefully, then spent it. What does spent it mean here?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering fear as the real weapon, the flags, and Blackbeard)",
+            "it smashes the hull you wanted, kills the crew, and ruins the cargo you came for",
+            "black meant surrender and live, red meant no mercy; quote: no quarter",
+            "(inform, with detail: it gives dates, names, and the 1996 wreck; the closing lines lean toward entertaining)",
+            "(he used up the fear he had built, cashing it in to take ships without fighting)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["merchant vessel → ____", "no quarter → ____", "ran aground → ____", "prize → ____"],
+          "rows": 1,
+          "answers": [
+            "a trading ship carrying cargo",
+            "no mercy, nobody spared",
+            "stuck fast on sand or rock in shallow water",
+            "a captured ship or its cargo"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says most pirate captures ended without a shot. Explain how a flag alone could do that.",
+            "Blackbeard's career lasted about two years. Why do you think he is still the most famous pirate?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the threat was believable, so surrendering was the safer choice for the merchant crew)",
+            "(opinion: the image he built outlived him, and the wreck keeps the story alive)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was Blackbeard's terrifying image clever or cruel? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Pirate Ship That Voted",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pirate-ship", "templateLabel": "The Pirate Ship That Voted", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pirate-ship",
+          "notes": ["Golden Age of piracy: roughly 1650 to 1730", "Roberts's articles gave every man a vote", "800 dollars from the common fund for a lost limb", "The captain held total power only in chase or battle", "Walking the plank was invented by later writers", "William Kidd is the rare documented treasure burial"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Democracy That Flew a Black Flag",
+          "text": "Pirate ships were criminal enterprises. They robbed, they terrorized, and a good number of the men aboard them were violent. Hold that thought, because the rest of this is stranger than it sounds. In the 1710s and 1720s, a merchant sailor's life was close to unbearable. He was often pressed into service against his will. His captain was appointed by an owner he would never meet, and that captain's authority was total: he could order floggings, withhold food, and dock wages for damage. Pay arrived late or never. If a falling spar crushed the sailor's hand, he was set ashore with a useless arm and no money. There was no appeal, because the law was the captain. Now consider what those same men built when they stole a ship and sailed it for themselves. The first thing a pirate crew did was write rules and sign them. The articles of Bartholomew Roberts, which survive in print, open by granting every man aboard a vote in affairs of moment. Not the officers. Every man. The captain was elected by that vote and could be removed by it, and his absolute authority applied only in chase or in battle. Outside of combat, the crew's real executive was the quartermaster, whom they also elected, and whose job was to divide the plunder and settle disputes. The pay was startling. A merchant captain might earn many times his crew; a pirate captain took roughly two shares to an ordinary sailor's one. And the articles carried something no navy and no shipping company then offered: compensation for injury. Roberts's crew set aside 800 dollars for the loss of a limb, paid out of the common fund before any share was divided. That is a disability fund, drafted by thieves, roughly two centuries before most nations wrote one into law. Why did any of it hold? Not virtue. Structure. A pirate ship had no owner ashore to enforce a captain's will, no admiralty to appeal to, and no way to replace a crew that walked. Power sat with the men who could vote, and so the rules protected them. Fairness was not a value the pirates imported. It was the shape the situation forced. And the same clear-eyed logic ran through everything they did. They chose small sloops because small sloops were fast and could hide in shallow water. They careened their hulls obsessively because barnacles cost them speed and speed was survival. They flew a black flag offering safety in exchange for surrender, and a red one promising none, because a ship taken without a fight is a ship worth keeping. Almost nobody walked a plank; that image was invented later by writers. Almost nobody buried treasure either, William Kidd being the rare documented exception. Buried silver earns nothing. Spent silver buys another voyage. It is tempting to make heroes of them. Resist that. These were armed robbers, several of them slavers before and during their pirate careers, and their fairness stopped hard at the edge of their own deck. The point is not that pirates were good. The point is that when ordinary sailors were finally handed the power to design a workplace, they immediately designed votes, shared pay, and injury insurance. They knew exactly what was wrong with the world they had escaped. They had been telling us for years. Nobody was listening until they raised a flag."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage argues that pirate fairness came from structure, not virtue. Quote the two-word answer the author gives, then explain the reasoning behind it.",
+            "What does the author mean by calling Roberts's articles a disability fund, drafted by thieves? Cite the surrounding evidence.",
+            "Identify where the passage turns from merchant life to pirate life. What sentence does the author use to pivot, and why is it set on its own?",
+            "Analyze the final four sentences. What is the author claiming, and does the passage earn that claim?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "quote: Not virtue. Structure. (the crew held the power, so the rules had to protect them)",
+            "(it paid injured men from a shared pot, which no navy or shipping company then did; cite: before any share was divided)",
+            "(at Now consider what those same men built when they stole a ship and sailed it for themselves; standing alone marks the pivot)",
+            "(the claim is that sailors already knew the fix and were ignored; partly earned by the articles evidence, though no direct sailor testimony is offered)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["pressed into service → ____", "admiralty → ____", "plunder → ____", "obsessively → ____"],
+          "rows": 2,
+          "answers": [
+            "forced to serve against your will",
+            "the naval authority and its courts",
+            "goods taken by force",
+            "over and over, far past what is normal"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author admits several pirates were slavers. What does including that detail do to the argument, and why include it at all?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it concedes the strongest objection, which makes the narrower claim more credible)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Pirate ships were the fairest workplaces of their century, and that says more about the century than about the pirates. State your position, cite two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

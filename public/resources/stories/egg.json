@@ -1,0 +1,320 @@
+{
+  "key": "egg",
+  "title": "The Egg That Builds a Bird",
+  "blurb": "A shell thinner than a coin, shaped like an arch, holding everything a chick needs to build itself.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Egg That Builds a Bird",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-egg", "templateLabel": "The Egg That Builds a Bird", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the yellow part." },
+        {
+          "kind": "image",
+          "imageKey": "egg",
+          "notes": ["The shell is hard", "One end is round, one end is pointy", "The yellow part is the yolk", "A baby chick can grow inside"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an egg. It is smooth. It is round at one end and pointy at the other end. An egg has a hard shell. Inside is a yellow yolk. Inside there is a clear part too. Some eggs go in a pan for breakfast. Some eggs stay warm under a hen. A baby chick grows inside those ones. The chick taps and taps. The shell cracks open. Out comes a chick."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the eggs in each row. Write how many in the box.",
+          "emoji": "🥚",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "egg    shell" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "yolk", "right": "yellow" },
+            { "left": "shell", "right": "hard" },
+            { "left": "chick", "right": "fluffy" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw an egg with a little chick peeking out of the top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Egg That Builds a Bird",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-egg", "templateLabel": "The Egg That Builds a Bird", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "egg",
+          "notes": ["The shell is made of chalky stuff", "A chick hatches after 21 days", "The chick has a tiny egg tooth", "The clear part is called the white", "An ostrich lays the biggest egg of all"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Egg That Builds a Bird",
+          "text": "An egg looks simple, but it is a little house. The hard shell is the wall. The clear part is called the white. The yellow part is called the yolk. If a hen sits on the egg and keeps it warm, a chick grows inside. It eats the yolk while it grows. It takes twenty one days. When the chick is ready, it has a tiny hard bump on its beak. The bump is called an egg tooth. The chick taps the shell with it, again and again, until the shell breaks. Then the egg tooth falls off. The chick does not need it anymore."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the hard part of an egg called?", "What does the chick eat while it grows?", "How many days does a chick take to grow?"],
+          "rows": 2,
+          "answers": ["the shell", "the yolk", "twenty one days"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The hard wall of the egg is the ____.", "The yellow part is the ____.", "A ____ sits on the egg to keep it warm.", "The chick taps with its egg ____."],
+          "wordBank": ["shell", "yolk", "hen", "tooth"],
+          "answers": ["shell", "yolk", "hen", "tooth"]
+        },
+        { "kind": "draw", "prompt": "Draw the inside of an egg. Show the yolk, the white, and the shell.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Egg That Builds a Bird",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-egg", "templateLabel": "The Egg That Builds a Bird", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "egg",
+          "notes": ["The shell is mostly the same stuff as chalk", "Thousands of tiny pores let air through", "An egg is shaped like an arch", "One ostrich egg equals about 24 chicken eggs", "Yolk color comes from what the hen eats"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Strongest Thing in Your Kitchen",
+          "text": "An egg looks fragile. Tap it on the side of a bowl and it cracks right open. But hold an egg the long way, with one end in your palm and the other end under your fingers, and squeeze as hard as you can. Most people cannot break it. The egg is not weak. It is shaped like an arch. An arch spreads a push out along its curve instead of letting it pile up in one spot. Builders have used arches in bridges and doorways for thousands of years. The egg got there first. The shell has another surprise. It is not solid. It is covered in thousands of tiny holes called pores, far too small to see. Air moves in through them, and water moves out. That matters, because a chick growing inside the shell needs to breathe. The shell keeps the chick safe and lets it breathe at the same time."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What shape is an egg, and why does that shape matter?",
+            "What are the tiny holes in the shell called?",
+            "Why does a chick inside the shell need those holes?",
+            "Why do you think an egg cracks so easily on the side of a bowl but not in your palm?"
+          ],
+          "rows": 2,
+          "answers": [
+            "an arch; it spreads a push along its curve",
+            "pores",
+            "so it can breathe while it grows",
+            "(inference: a bowl edge pushes on one small spot instead of spreading the force)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Strongest Thing in Your Kitchen", "How to Bake a Chocolate Cake", "The Tallest Bridge in the World"],
+          "answers": ["The Strongest Thing in Your Kitchen"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["An egg is shaped like an ____.", "The tiny holes in a shell are called ____.", "Air moves in and ____ moves out."],
+          "wordBank": ["arch", "pores", "water"],
+          "answers": ["arch", "pores", "water"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about eggs, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Egg That Builds a Bird",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-egg", "templateLabel": "The Egg That Builds a Bird", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "egg",
+          "notes": ["Egg white is about 90% water", "Heat unfolds the proteins for good", "Fresh eggs sink, old eggs float", "The blunt end holds a pocket of air", "The green ring on a boiled yolk is iron meeting sulfur"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why a Fried Egg Cannot Go Back",
+          "text": "Crack a raw egg into a pan and you get a puddle. Leave it over heat for two minutes and the puddle turns white and firm. Nothing was added. Nothing was taken away. So what changed? The answer is protein. Egg white is about nine tenths water. Almost all the rest is protein, and each protein is a long chain folded up tight into a little ball, tucked into the water like a wound spring. Heat makes those chains jiggle. Jiggle them enough and the folds shake loose. The chains uncurl, bump into their neighbors, and grab hold. Soon they are linked into a mesh that traps the water between them. Liquid becomes solid. Scientists call that unfolding step denaturing. Here is the part that surprises people. You cannot undo it. Cool a fried egg down and it stays a fried egg forever. The chains cannot refold the way they were. That is why cooking an egg is a one way trip, and why a burned egg cannot be rescued. There is one more clue hiding in your kitchen. Drop an egg into a glass of water. A fresh egg sinks and lies flat. An old egg tips up, or floats. Every egg holds a small pocket of air inside its blunt end, and that pocket grows as water slowly escapes through the shell. The more air, the higher the egg rides. The glass of water is telling you how old the egg is."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what happens to the proteins in an egg white when it is heated?",
+            "Explain why a cooked egg cannot turn back into a raw egg.",
+            "Why does an old egg float higher than a fresh one?",
+            "The author says nothing was added and nothing was taken away. Why start the passage that way?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they unfold, link to each other, and trap the water in a mesh",
+            "(the chains cannot refold into their original shape)",
+            "its air pocket has grown as water escaped through the pores",
+            "(inference: it sets up a puzzle, since the change must come from inside the egg)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Heat permanently rearranges the proteins in an egg, and the egg keeps a record of its own age",
+            "Fried eggs taste better than boiled eggs",
+            "Water is the only ingredient that matters in cooking"
+          ],
+          "answers": ["Heat permanently rearranges the proteins in an egg, and the egg keeps a record of its own age"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["protein → ____", "denaturing → ____", "mesh → ____", "blunt → ____"],
+          "rows": 1,
+          "answers": [
+            "a long folded chain that makes up most of the egg white",
+            "the unfolding of a folded protein chain",
+            "a net of linked chains that holds the water",
+            "the rounded end, not the pointed end"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining the float test to someone who has never heard of it. Say what to do, what to look for, and why it works.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Egg That Builds a Bird",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-egg", "templateLabel": "The Egg That Builds a Bird", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "egg",
+          "notes": ["Shell: calcium carbonate, the mineral in limestone", "The shell alone takes about 20 hours to build", "A dome is strong outside, weak inside", "Common murres lay pointed, pear-shaped eggs", "Brown and blue shells come from pigments"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Shell Factory, and an Argument About Shape",
+          "text": "Every hen builds her eggs one at a time, and the whole job takes about a day. The yolk comes first, released from the ovary. As it travels down a long tube called the oviduct, layer after layer is added around it: the thick white, then thin membranes, and finally the shell itself, which is laid down over roughly twenty hours in a chamber near the end. The shell is almost pure calcium carbonate, the same mineral as chalk and limestone. A hen laying an egg a day is spending a startling amount of calcium, which is why laying hens are fed crushed shell and grit. Now the harder question: why is an egg egg-shaped? Not a ball, not a tube. Every egg is a dome at each end, and a dome is one of the strongest shapes known. Press on a dome and the force runs outward along the curve instead of piling up in one place. A hen settles on her clutch with her full weight, and the eggs hold. Yet a chick can break out from the inside, because pushing outward on a dome is far easier than pushing inward. Different birds lay different shapes, and one of those shapes started an argument that lasted a century. The common murre nests on bare cliff ledges with no nest at all, and its egg is dramatically pointed, like a pear. For decades, textbooks explained that a pointed egg rolls in a tight circle rather than rolling off the cliff. It is a tidy story. When researchers finally tested it carefully, the tidy story wobbled. Pointed eggs do roll in an arc, but on a real sloping ledge that arc is not much protection. Newer work suggests the shape helps in other ways: a pointed egg sits more steadily when it is tilted, and it keeps the blunt end, where the chick's air pocket forms, lifted away from the dirt. The argument is not settled, which is the honest state of a great deal of science."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Describe the order in which a hen builds an egg around the yolk.",
+            "Explain why a dome shape lets a hen sit on her eggs without crushing them but still lets a chick out. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence tell you about how the author views science?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the shell factory + dome strength + the murre shape argument)",
+            "yolk, then the thick white, then thin membranes, then the shell over about twenty hours",
+            "(force runs along the curve; quote: pushing outward on a dome is far easier than pushing inward)",
+            "(inform, with detail: it defines terms and reports research; some persuasive tone in the closing line)",
+            "(that science revises itself and unfinished arguments are normal)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["oviduct → ____", "clutch → ____", "dome → ____", "wobbled → ____"],
+          "rows": 1,
+          "answers": [
+            "the tube where an egg is built around the yolk",
+            "the group of eggs a bird sits on at one time",
+            "a curved shape that spreads a push along its surface",
+            "became unsteady, or stopped holding up"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The old explanation for the murre's pointed egg was tidy. Why might a tidy explanation survive for a century without being tested?",
+            "A hen puts a large amount of calcium into a shell every single day. Predict what happens to a hen fed no extra calcium, and explain your reasoning."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: it is easy to repeat, satisfying, and nobody thought to check it)",
+            "(inference: her body draws calcium from her own bones, so shells thin and bones weaken)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should a textbook print an explanation that scientists are still arguing about? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Egg That Builds a Bird",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-egg", "templateLabel": "The Egg That Builds a Bird", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "egg",
+          "notes": ["Shell about 0.3 mm thick, roughly 95% calcium carbonate", "Thousands of pores, capped by a coating called the cuticle", "The US washes eggs; much of Europe bans washing", "Two cords called chalazae hold the yolk centered", "The chick takes calcium out of the shell for its bones", "A bee hummingbird egg is about the size of a pea"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Sealed at the Factory: The Engineering of an Egg",
+          "text": "Consider the problem an egg has to solve. A bird must build a complete chick from scratch outside its own body. The chick needs food, water, air, warmth, protection from crushing, protection from bacteria, and somewhere to put its waste. All of it must be sealed inside a container before the bird ever lays it, because after that no delivery is possible. The chick that emerges three weeks later is built entirely from what was packed in on day one. There is no resupply. Start with the container. A chicken shell is about a third of a millimeter thick and roughly ninety five percent calcium carbonate, the mineral of chalk and limestone. On its own, calcium carbonate is unremarkable stuff. The shell's strength comes from geometry, not material. Each end is a dome, and a dome turns a push into compression spread along a curve. Squeeze an egg end to end in your palm and most adults cannot break it. Yet the same shell yields to a hatching chick, because a dome is far weaker from the inside than from the outside. The egg is deliberately strong in one direction and weak in the other. The shell also has to breathe. A developing chick burns oxygen and gives off carbon dioxide, so the shell is drilled with thousands of microscopic pores, each far too small to see. Air passes through them freely. So, unfortunately, does anything else small enough. The bird's answer is a thin protein coating called the cuticle, or bloom, applied last, just before laying. It caps the pore openings against bacteria while still letting gas trade back and forth. That coating explains an argument between two continents. In the United States, eggs are washed at the packing plant, which strips the cuticle away, so they must be refrigerated from that moment until they are cracked. In much of Europe, washing is banned for exactly the same reason: leave the cuticle in place and the egg protects itself on the counter. Two food safety systems, opposite rules, both defensible, each one sensible only inside its own logic. Inside the shell, the packing is just as careful. Two twisted white cords called the chalazae anchor the yolk in the middle, cushioned no matter how the egg is turned. The yolk is the food. The white is the water supply and a shock absorber. As water slips out through the pores, a pocket of air grows at the blunt end, and in the last day before hatching the chick pushes its beak into that pocket and takes its first real breath while still sealed inside. Then it begins tapping with a hard point on its beak called the egg tooth, which drops off once the job is done. The final detail is the strangest. A chick needs calcium for its skeleton, and no calcium is coming in. So it takes what it needs from the shell, dissolving the inside surface as it grows. The wall of the room becomes the bones of the animal in the room, and the shell the chick finally breaks is thinner than the one it started in, because it has been eating it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage claims the shell's strength is geometric rather than material. Explain the claim and cite the evidence given for it.",
+            "Explain the tradeoff the pores create, and how the cuticle resolves it.",
+            "Two continents reached opposite rules about washing eggs. Explain how both can be defensible, citing the passage.",
+            "Analyze the final sentence. What is the author doing with the image of the room and the bones, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(calcium carbonate is ordinary; the dome shape does the work; cite: The shell's strength comes from geometry, not material)",
+            "(pores admit oxygen but also bacteria; the cuticle caps them while still passing gas)",
+            "(washing removes the cuticle so cold replaces it; leaving it on keeps natural protection; cite: each one sensible only inside its own logic)",
+            "(it recasts the shell as both shelter and raw material, closing the sealed-container idea; earned by the calcium evidence just given)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["compression → ____", "cuticle → ____", "chalazae → ____", "defensible → ____"],
+          "rows": 2,
+          "answers": [
+            "a force that presses a material together",
+            "the thin protein coating that caps the shell's pores",
+            "the twisted cords that hold the yolk in the center of the egg",
+            "able to be reasonably argued for"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says there is no resupply. Explain what that constraint forces the egg to be, and name one design choice that follows directly from it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a complete sealed life support system; e.g. the air pocket, or storing calcium in the shell itself)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The United States rule on washing eggs is worse than the European one. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

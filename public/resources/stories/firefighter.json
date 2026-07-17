@@ -1,0 +1,304 @@
+{
+  "key": "firefighter",
+  "title": "The People Who Run Toward the Fire",
+  "blurb": "The gear, the three things every fire needs, and the three minutes a family gets to reach the door.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The People Who Run Toward the Fire",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-firefighter", "templateLabel": "The People Who Run Toward the Fire", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the red hat." },
+        {
+          "kind": "image",
+          "imageKey": "firefighter",
+          "notes": ["The red hat is called a helmet", "The stripes shine in the dark", "She rides on a big red truck", "Big boots keep her feet safe"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a firefighter. Look at the red hat. It is hard and strong. It keeps her head safe. Her coat has shiny stripes. When a light shines on them, the stripes shine back. Now people can see her in the smoke. She has big black boots. She rides on a big red truck."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the fire trucks in each row. Write how many in the box.",
+          "emoji": "🚒",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "red    hat    hose" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each helper with the thing they use.",
+          "pairs": [
+            { "left": "firefighter", "right": "hose" },
+            { "left": "baker", "right": "oven" },
+            { "left": "farmer", "right": "tractor" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a fire truck. Put a long ladder on the top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The People Who Run Toward the Fire",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-firefighter", "templateLabel": "The People Who Run Toward the Fire", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "firefighter",
+          "notes": ["The coat and pants are called gear", "The tank on her back holds air", "Boots are left open, ready to jump into", "The ladder can reach past a roof", "Smoke goes up, so she stays low"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Ready to Go",
+          "text": "Firefighters keep their gear right by the door. The boots stand open with the pants already around them. When the bell rings, they step in and pull everything on fast. The coat and pants are thick. Fire cannot burn through them. The helmet is hard, so falling things bounce off. On their back they carry a tank of air. The tank lets them breathe inside the smoke. Then they climb on the truck. The truck carries water, hoses, and a long ladder that can reach past a roof. The siren tells the cars to move out of the way. At the fire, they point the hose and the water pulls the heat away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What do firefighters carry on their back?", "Why is the helmet hard?", "What does the siren tell the cars to do?"],
+          "rows": 2,
+          "answers": ["a tank of air, so they can breathe in the smoke", "so falling things bounce off", "to move out of the way"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The helmet is ____ so things bounce off.", "The tank on their back holds ____.", "The ____ tells cars to move.", "Water pulls the ____ away from the fire."],
+          "wordBank": ["hard", "air", "siren", "heat"],
+          "answers": ["hard", "air", "siren", "heat"]
+        },
+        { "kind": "draw", "prompt": "Draw a firefighter in full gear. Add the helmet, the stripes on the coat, and the big boots.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The People Who Run Toward the Fire",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-firefighter", "templateLabel": "The People Who Run Toward the Fire", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "firefighter",
+          "notes": ["A fire needs fuel, heat, and air", "Take one away and the fire dies", "Hot smoke rises and fills a room from the top", "The cleanest air is down near the floor", "The back tank holds squeezed air, not oxygen"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Firefighters Crawl",
+          "text": "Fire is hungry. To keep burning it needs three things at once: something to burn, heat, and air. Take away any one of the three and the fire dies. That is the whole job. Water works because it soaks up heat. So much heat pours into the water that the fire has none left to keep itself going. Smoke is the other danger, and it does something strange. Hot smoke is lighter than cool air, so it rises. It spreads flat across the ceiling first, then fills the room downward, like a bathtub filling from the top. That means the cleanest, coolest air in a burning room is the air near the floor. This is why firefighters crawl. It is also why you should crawl if you ever smell smoke at home. Stay low, and go. One more thing. Firefighters wear a tank on their back, and most people think it holds oxygen. It does not. It holds ordinary air, squeezed in tight, the same air you are breathing right now."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What three things does a fire need to keep burning?",
+            "Why does water put a fire out?",
+            "Where in a burning room is the coolest, cleanest air?",
+            "Why do you think a firefighter's tank holds ordinary air instead of pure oxygen?"
+          ],
+          "rows": 2,
+          "answers": [
+            "something to burn, heat, and air",
+            "it soaks up the heat, so the fire has none left",
+            "near the floor",
+            "(inference: fire needs air to burn, so pure oxygen would feed it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Firefighters Crawl", "How to Build a Campfire", "The History of the Red Truck"],
+          "answers": ["Why Firefighters Crawl"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Hot smoke ____ because it is lighter than cool air.", "Water puts out a fire by soaking up ____.", "If you smell smoke, stay ____ and go.", "The tank on a firefighter's back holds ordinary ____."],
+          "wordBank": ["rises", "heat", "low", "air"],
+          "answers": ["rises", "heat", "low", "air"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would you do if you woke up and smelled smoke in your house, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The People Who Run Toward the Fire",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-firefighter", "templateLabel": "The People Who Run Toward the Fire", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "firefighter",
+          "notes": ["Full gear weighs about 70 pounds", "The tank holds compressed air, not oxygen", "A thermal camera turns heat into a picture", "Old couches were wood and cotton, new ones are foam", "Escape time from a house fire is now about 3 minutes", "The alarm on her coat screams if she stops moving"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Seventy Pounds and Three Minutes",
+          "text": "Before a firefighter walks into a burning building, she puts on about seventy pounds of equipment. Coat and pants of flame-resistant fabric. Boots. Gloves. A hood over the ears and neck. A helmet. On her back, a tank of compressed air feeding a mask sealed against her face. She will do her work wearing all of it, in the dark, in heat that can curl the paint off a wall. She is racing a clock, and the clock has gotten faster. In the 1970s, a family in a burning home had roughly seventeen minutes to get out. Today the number is closer to three. Nothing about fire changed. Our furniture did. Older couches and chairs were built from wood, cotton, and wool. Modern ones are mostly plastic foam, and plastic foam is made from oil. Oil burns hot and fast. A living room today is a room full of solid gasoline. Two tools help. A thermal imaging camera turns heat into a picture, so a firefighter can see a hot spot through smoke that hides everything else. And a small device clipped to her coat quietly listens for movement. If she stops moving for thirty seconds, it screams, so the crew outside knows exactly where to dig."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "About how much does a firefighter's gear weigh, and name three pieces of it.",
+            "Why has escape time dropped from about seventeen minutes to about three?",
+            "What does a thermal imaging camera let a firefighter do that her eyes cannot?",
+            "The author calls a modern living room a room full of solid gasoline. What does that mean, and is it fair?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about seventy pounds; coat, pants, boots, gloves, hood, helmet, air tank (any three)",
+            "furniture changed: modern foam is made from oil, so it burns hotter and faster",
+            "see heat, so she can find a hot spot through smoke",
+            "(inference: foam furniture is oil-based fuel packed into one room; fair as an image, though a room is not literally gasoline)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Firefighting got harder because modern homes burn faster, so gear and tools have to buy back time",
+            "Firefighters should wear lighter clothing to move quickly",
+            "Plastic foam was invented in the 1970s to make couches softer"
+          ],
+          "answers": ["Firefighting got harder because modern homes burn faster, so gear and tools have to buy back time"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["flame-resistant → ____", "compressed → ____", "thermal → ____"],
+          "rows": 1,
+          "answers": ["built so flame does not burn through it easily", "squeezed into a smaller space", "to do with heat"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: your family has three minutes to get out of the house. Explain the plan you would make, and give two reasons the plan would work.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The People Who Run Toward the Fire",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-firefighter", "templateLabel": "The People Who Run Toward the Fire", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "firefighter",
+          "notes": ["Benjamin Franklin helped start a volunteer company in 1736", "About two out of three US firefighters are volunteers", "Most calls today are medical, not fires", "Molly Williams, around 1815, first known female firefighter", "The helmet's long back brim was designed in 1836", "Dalmatians once ran with the horse-drawn engines"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Job That Stopped Being About Fire",
+          "text": "Ask a child what a firefighter does and the answer comes instantly: they put out fires. Ask a firefighter and the answer takes longer. In the United States, only a small share of the calls a fire department answers are fires. Most are medical. Someone's chest hurts. Someone fell in the shower. Someone's kid is not breathing right. The engine that arrives is often the closest trained help in the neighborhood, and it comes whether or not anything is burning. Most firefighters train as emergency medical technicians, and the tool they reach for most is not a hose. It is a medical bag. The job also runs on people who are not paid for it. Roughly two out of three firefighters in the country are volunteers, mostly in small towns. They have day jobs. A pager goes off in the middle of a shift or a dinner, and they leave. That is not a new idea. In 1736, Benjamin Franklin helped start one of the first organized volunteer fire companies in America, in Philadelphia. Neighbors bought their own leather buckets, marked them, and agreed to run to each other's houses. Around 1815, a woman named Molly Williams, who was enslaved, hauled an engine through a New York blizzard alongside Oceanus Engine Company 11, and is remembered as the first known female firefighter in the country. Even the shape of the helmet is old and practical. The long brim at the back was designed in 1836 by a man named Henry Gratacap, and it is not decoration. It keeps scalding water and falling embers off the back of a firefighter's neck. The fires that remain are worse than they used to be, which is why the training keeps growing. But the truth of the modern job is quieter than the picture painted on the truck. Most days, the worst thing in the room is not a flame. It is a person having the worst hour of their life, and somebody showed up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "According to the passage, what kind of call does a fire department answer most often, and why does the engine still come?",
+            "Explain why the classic helmet has a long back brim. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What is the author doing in the final sentence, and why put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering: most calls are medical, the volunteer tradition, and the old roots of the job)",
+            "medical calls; the engine crew is often the closest trained help in the neighborhood",
+            "to keep scalding water and embers off the neck; quote: it is not decoration",
+            "(inform, with a persuasive close: it gives dates, numbers, and definitions, then ends on an emotional note)",
+            "(it redefines the job as showing up for people, not fighting flames; ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["volunteer → ____", "enslaved → ____", "technician → ____", "decoration → ____"],
+          "rows": 1,
+          "answers": ["someone who does the work without being paid", "held as property by another person, with no freedom", "a person trained to use specific skills and equipment", "something added only to look good"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author opens by contrasting what a child says with what a firefighter says. Why start that way?",
+            "Why might a small town depend on volunteers instead of paid firefighters, and what could go wrong with that?"
+          ],
+          "rows": 3,
+          "answers": ["(it sets up the gap between the picture in our heads and the real job)", "(inference: fewer calls and less money to pay a full crew; risk: nobody free to answer, slower response)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should volunteer firefighters be paid a salary? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The People Who Run Toward the Fire",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-firefighter", "templateLabel": "The People Who Run Toward the Fire", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "firefighter",
+          "notes": ["Fire needs fuel, oxygen, and heat", "Flashover: a whole room ignites at once", "Flashover happens near 1,100 degrees Fahrenheit", "Backdraft: a starved fire erupts when given air", "Escape time fell from about 17 minutes to about 3", "Most fire department calls today are medical"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Flashover: The Three Minutes That Changed the Job",
+          "text": "Everything that burns is doing one thing: coming apart in the presence of oxygen and throwing off heat as it goes. A fire needs fuel, oxygen, and enough heat to keep that reaction rolling. Remove any leg of the tripod and it stops. That is the entire theory. The practice is harder, because a burning room is not a campfire. It is a machine building toward one moment. Here is the moment. A couch catches. It burns in one corner and the room still looks survivable. Hot gas rises and layers along the ceiling, thickening downward, and that layer radiates heat back onto every surface below it: the carpet, the curtains, the coffee table, the second couch. None of those things are burning yet. They are being cooked. When their surfaces reach somewhere near eleven hundred degrees Fahrenheit, they stop behaving like furniture and start releasing flammable gas all at once, and the entire room ignites in a single breath. Firefighters call this flashover. Nothing in the room survives it. From first flame to flashover can be under four minutes. The clock used to be kinder. Testing in the 1970s suggested a family had roughly seventeen minutes to get out of a burning house. Recent testing by Underwriters Laboratories puts the figure closer to three. Fire did not change. Furniture did. A room once built from wood, cotton, wool, and horsehair is now built from polyurethane foam and plastic, both made from petroleum, and both release more energy, faster, with far more smoke. The modern living room is a fuel package with cushions on it. This is why ventilation is the most misunderstood tool on the fireground. Cutting a hole in a roof or breaking a window sounds like relief, and sometimes it is. But a fire in a sealed house is usually limited by oxygen long before it runs out of fuel, and handing a starved fire air is like blowing on coals. Open the wrong thing at the wrong second and the fire does not calm down. It inhales. In the worst case it answers with a backdraft, a sudden ignition that throws fire back out of the opening you just made. Research has turned old instincts inside out. Crews now often push water through a window from outside first, cooling the gas layer and buying the room back, and only then go in. For a century that would have been called cowardly. The evidence says it saves people, including the ones still inside. None of this makes the job safe. It makes it legible. The gear helps: roughly seventy pounds of flame-resistant fabric, a compressed-air tank, a sealed mask, a thermal imaging camera that renders invisible heat as a gray picture, an alarm that shrieks if the person wearing it goes still. But no gear lowers the temperature of a room. It only buys minutes. And here is the part that surprises people. Most of what a fire department does now has nothing to do with any of this. In the United States, the large majority of calls are medical rather than fires. The engine comes because it is close and its crew is trained, and the emergency is usually a person on a kitchen floor, not a wall of flame. The fire half of the job got rarer and, at the same time, deadlier. Everything else got bigger. The truck is still red, and the picture in everyone's head is still a hundred years old."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain flashover in your own words. Cite the exact phrase the passage uses to describe how fast the room goes.",
+            "The passage says a fire in a sealed house is usually limited by oxygen long before it runs out of fuel. Use that idea to explain why breaking a window can make things worse.",
+            "Identify the shift in the passage: where does it turn away from fire science, and how does the author signal it?",
+            "The last sentence says the picture in everyone's head is still a hundred years old. Analyze what that claim is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering fire behavior, faster-burning homes, and the mostly medical modern job)",
+            "(a whole room reaches ignition at once near eleven hundred degrees; cite: ignites in a single breath)",
+            "(the fire is starved of oxygen, so new air feeds it; worst case is a backdraft)",
+            "(at And here is the part that surprises people; a short signposting sentence pivots from physics to the real workload)",
+            "(it argues our idea of the job is outdated; earned by the medical-call evidence and the changed tactics, though the passage gives no exact numbers)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["flashover → ____", "backdraft → ____", "ventilation → ____", "legible → ____"],
+          "rows": 2,
+          "answers": [
+            "the moment an entire room ignites at once as surfaces reach ignition temperature",
+            "a sudden ignition when air is let into an oxygen-starved fire",
+            "opening a building to let heat and smoke out, which also lets air in",
+            "able to be read or understood"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says research turned old instincts inside out, and that waiting outside to cool the room would once have been called cowardly. Explain why evidence can be hard to accept even when it saves lives.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(training, pride, and identity make crews trust instinct over data; changing tactics can feel like failing the people inside)", "(student question + a credible source type, such as NFPA data or a UL fire research report)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: since most of their calls are medical, fire departments should be rebuilt around emergency medicine and stop training so hard for fire. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "key": "fossil",
+  "title": "The Dinosaur That Turned to Stone",
+  "blurb": "How a buried dinosaur becomes solid rock, and why almost none of them ever do.",
+  "topic": "dinosaurs",
+  "bands": {
+    "1": {
+      "title": "The Dinosaur That Turned to Stone",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-fossil", "templateLabel": "The Dinosaur That Turned to Stone", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the head. Find the long tail." },
+        {
+          "kind": "image",
+          "imageKey": "fossil",
+          "notes": ["The bones turned into rock", "Mud covered it up", "It hid for a very long time", "Someone dug it out", "A fossil is heavy to lift"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This rock has a secret. Look inside it. There are bones. The bones are from a dinosaur. The dinosaur lived a long, long time ago. It died. Mud covered it up. The mud got hard. The mud turned into rock. The bones turned into rock too. Now the rock holds the dinosaur. We call it a fossil. Say it like this: FOSS-ul. Someone found this rock and looked inside."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bones in each row. Write how many in the box.",
+          "emoji": "🦴",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "rock    bone" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "fossil", "right": "rock" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own dinosaur inside a rock. Give it a long tail.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Dinosaur That Turned to Stone",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-fossil", "templateLabel": "The Dinosaur That Turned to Stone", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "fossil",
+          "notes": ["Say it FOSS-ul", "Fossil means dug up", "The bones are stone now", "Sand and mud covered it fast", "A fossil bone feels cold and heavy"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dinosaur That Turned to Stone",
+          "text": "A fossil is a very old thing that turned into stone. Here is how one dinosaur got inside this rock. The dinosaur died near a river. Sand and mud washed over it fast. That kept it safe. Its skin and its insides went away. Its hard bones stayed. Water dripped down into the bones. The water carried tiny bits of rock. The rock bits filled every little hole in the bones. That took a long, long time. Now the bones are stone. Someone cracked the rock open and saw the dinosaur looking back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What washed over the dinosaur after it died?", "Which parts of the dinosaur stayed?", "What are the bones made of now?"],
+          "rows": 2,
+          "answers": ["sand and mud", "its hard bones", "stone"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Mud and ____ washed over the dinosaur.", "The soft parts went away, but the ____ stayed.", "Now the bones are made of ____.", "A fossil is very ____."],
+          "wordBank": ["sand", "bones", "stone", "old"],
+          "answers": ["sand", "bones", "stone", "old"]
+        },
+        { "kind": "draw", "prompt": "Draw the dinosaur when it was alive. Put a river behind it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Dinosaur That Turned to Stone",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-fossil", "templateLabel": "The Dinosaur That Turned to Stone", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "fossil",
+          "notes": ["Fossil comes from a Latin word for dug up", "Bone is full of tiny holes, like a sponge", "Fossils form in layered rock", "Most animals never become fossils", "A fossil bone is cold and heavy because it is rock"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rock That Kept a Dinosaur",
+          "text": "Bones do not usually last. When an animal dies, most of it gets eaten or rots away, and after a few years there is nothing left to find. A fossil happens when something interrupts that. Picture a dinosaur that dies on a riverbank. Before anything can scatter the body, a flood buries it under sand and mud. Now the bones are sealed away from the air and from hungry animals. More mud piles on top, year after year, until the weight presses the mud into solid rock. Water still trickles through that rock. It carries minerals, which are tiny bits of stone too small to see. The water seeps into the bones, because bone is full of holes like a sponge. In each hole, the minerals settle and harden. Little by little, the bone fills with stone. It keeps its exact shape. That is why a fossil bone is cold and heavy to lift. It is rock now. Almost no animal gets this lucky. For every dinosaur that became a fossil, millions simply vanished."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What usually happens to an animal's body after it dies?",
+            "What buried the dinosaur in the passage?",
+            "How do the minerals get inside the bone?",
+            "Why do you think being buried fast matters so much?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it gets eaten or rots away",
+            "a flood buried it under sand and mud",
+            "water carrying minerals seeps into the tiny holes in the bone",
+            "(inference: it seals the bones away from air and hungry animals before they scatter or rot)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Rock That Kept a Dinosaur", "How to Build a Sandcastle", "The Biggest Dinosaur Ever Found"],
+          "answers": ["The Rock That Kept a Dinosaur"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Bone is full of holes like a ____.", "The water carries tiny bits of stone called ____.", "The weight presses the mud into solid ____."],
+          "wordBank": ["sponge", "minerals", "rock"],
+          "answers": ["sponge", "minerals", "rock"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: why is it so rare for an animal to become a fossil?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Dinosaur That Turned to Stone",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-fossil", "templateLabel": "The Dinosaur That Turned to Stone", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fossil",
+          "notes": ["Latin fossilis: dug up", "Permineralization: minerals fill the holes in bone", "Only sedimentary rock keeps fossils", "Erosion uncovers a fossil, then destroys it", "Museum skeletons are often casts, not real bone", "Birds are living dinosaurs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Buried Fast, Found Slowly",
+          "text": "Most living things leave nothing behind. A body on open ground is picked apart by scavengers, broken down by bacteria, and scattered by wind and rain. Fossils exist only because of accidents that stop that process. The accident is usually burial. A dinosaur that drowns in a flood, sinks into a swamp, or gets covered by a collapsing riverbank is sealed away from the air and from anything that wants to eat it. Soft parts still decay. The hard parts, bones and teeth, stay put. Sediment keeps piling up above them, and the weight squeezes the loose sand and mud into sedimentary rock. Then the slow part begins. Groundwater trickles through the rock, carrying dissolved minerals such as silica and calcite. Bone is porous, full of tiny channels that once carried blood. The mineral-rich water enters those channels and crystals grow inside them. This is called permineralization. The original bone is not replaced so much as filled, like pouring cement into a sponge and letting it set. The result is a copy in stone, accurate down to the shape of a tooth root. Finding one takes one more accident. A fossil buried under a mile of rock is useless to us. Erosion has to strip that rock away and bring the bone back to the surface, where somebody walking past has to notice it before wind and rain destroy it. That is why fossil hunters search cliffs, quarries, and badlands: places where the ground is being peeled open."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what is permineralization?",
+            "The passage says fossils exist because of accidents. Name two of those accidents.",
+            "Why does the passage compare bone to a sponge?",
+            "Erosion uncovers fossils, but the passage also treats erosion as a danger. Explain how it can be both."
+          ],
+          "rows": 2,
+          "answers": [
+            "(minerals carried by water fill the tiny channels in bone and harden into stone)",
+            "burial before the body is destroyed, and erosion that uncovers the bone again",
+            "(bone is porous, so mineral-rich water can soak into its tiny channels)",
+            "(inference: erosion is the only thing that brings a fossil back to the surface, but it keeps wearing the fossil away once it is exposed)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A fossil only forms and only gets found through a rare chain of accidents",
+            "Dinosaurs were the largest animals that ever lived",
+            "Most rocks on Earth have a dinosaur skeleton inside them"
+          ],
+          "answers": ["A fossil only forms and only gets found through a rare chain of accidents"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["sediment → ____", "porous → ____", "erosion → ____"],
+          "rows": 1,
+          "answers": [
+            "loose sand and mud that settles in layers and can harden into rock",
+            "full of tiny holes that liquid can soak into",
+            "the wearing away of rock by wind, water, and weather"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: you have one summer and one map to hunt for a dinosaur fossil. Where would you dig, and why? Use two ideas from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Dinosaur That Turned to Stone",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-fossil", "templateLabel": "The Dinosaur That Turned to Stone", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fossil",
+          "notes": ["Trace fossils: prints, burrows, eggs, dung", "Coprolite: fossilized dung", "A deeper layer is usually an older layer", "Carbon dating stops working past about 50,000 years", "Index fossils match layers across continents", "Steno wrote down the layer rule in 1669"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Reading the Rock",
+          "text": "A fossil is not just an old bone. It is a piece of evidence, and evidence has to be read. Start with where it was found. Sedimentary rock forms in layers, each one settling on top of the last, so in ground that has not been folded or flipped over, the deeper layers are older. Nicolas Steno worked that out in 1669, and it still holds. A fossil's layer is its address in time. To turn that address into a number, geologists look for ash beds from ancient eruptions squeezed between the layers. The minerals in ash contain unstable atoms that break down into other atoms at a known, unchanging rate, so measuring what is left gives an age. Carbon dating is useless here. It expires after about fifty thousand years, and the youngest dinosaur bone is more than a thousand times older than that. Some fossils are not body parts at all. A footprint is a fossil. So is a burrow, an egg, a nest, a row of tooth marks, and dung, which paleontologists call a coprolite. These are trace fossils, and they record behavior rather than anatomy. A skeleton tells you how an animal was built. A trackway tells you how fast it walked, whether it dragged its tail, and whether it traveled alone or in a group. One coprolite dug out of Saskatchewan was packed with crushed bone, which showed that Tyrannosaurus did not delicately strip its prey. It shattered the skeleton and swallowed the pieces. Certain species are useful for a different reason. Ammonites and trilobites were widespread and short-lived, so a layer holding one can be matched to a layer on the far side of the world holding the same one. Geologists call these index fossils and use them like date stamps. The rock, in other words, keeps records. The hard part is learning to read the handwriting."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why is carbon dating useless for dinosaur fossils? Use the numbers from the passage.",
+            "Explain the difference between a body fossil and a trace fossil. Give one example of each from the text.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the rock keeps records. Quote the phrase that finishes that idea, and explain what it means."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering rock layers and dating, trace fossils, and index fossils)",
+            "it expires after about fifty thousand years, and the youngest dinosaur bone is more than a thousand times older than that",
+            "(body fossil: a skeleton, bone, or tooth. trace fossil: a footprint, burrow, egg, nest, or coprolite)",
+            "(inform, with detail: it defines terms like coprolite and index fossil, and gives dates, names, and evidence)",
+            "quote: learning to read the handwriting; (the evidence is there, but it takes training and interpretation to understand)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["coprolite → ____", "index fossil → ____", "trackway → ____", "unstable (atoms) → ____"],
+          "rows": 1,
+          "answers": [
+            "fossilized dung",
+            "a widespread, short-lived species used to date and match rock layers",
+            "a preserved line of footprints",
+            "atoms that break down into other atoms at a steady, known rate"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Steno's rule only works in ground that has not been folded or flipped over. Why does the author add that condition?",
+            "A trackway tells you things a skeleton cannot. Name one, and explain why bones alone could not tell you it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: earth movements can turn layers upside down, and then deeper would no longer mean older)",
+            "(behavior such as walking speed or traveling in a group; bones show how the animal was built, not what it did)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which teaches us more about a dinosaur, its skeleton or its footprints? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Dinosaur That Turned to Stone",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-fossil", "templateLabel": "The Dinosaur That Turned to Stone", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fossil",
+          "notes": ["Latin fossilis: dug up", "Permineralization builds a stone replica of bone", "Thin slices of dinosaur bone show growth rings", "Lagerstätte: a site where soft tissue survived", "Melanosomes can reveal a dinosaur's color", "Mary Anning found Britain's first pterosaur, in 1828"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fossil Record Is a Ruin, Not a Library",
+          "text": "Every dinosaur you have ever seen in a museum arrived there through a filter, and the filter threw away almost everything. Consider what has to happen. An animal must die in the right place: a floodplain, a lakebed, a river delta, somewhere sediment is actively piling up. It must be buried quickly, before scavengers scatter it and before oxygen and bacteria finish their work. It must then sit undisturbed for millions of years while the mud around it hardens into rock and mineral-laden groundwater seeps into its bones, growing crystals in the hollow channels that once carried blood. That process is called permineralization, and it produces a replica so faithful that a thin slice of dinosaur bone under a microscope still shows growth rings, like a tree stump. Finally the rock must be lifted and stripped back by erosion at exactly the right moment. Too early, and the fossil weathers to dust before anyone is born to see it. Too late, and it stays buried forever. Then a human being has to walk past and look down. The filter is not neutral. It favors animals with hard parts, so shells and teeth are everywhere while jellyfish and worms are nearly invisible. It favors animals that lived in lowlands near water, and discards those that lived in mountains, where rock is worn away instead of piling up. It favors the common over the rare, and the large over the small. The fossil record is not a library of the past. It is a ruin, and we are reading the few pages the fire missed. Now and then the filter slips. At a handful of sites, conditions were so still and so poor in oxygen that soft tissue survived. Shales in northeastern China have yielded dinosaurs with feathers pressed flat into the rock, and inside those feathers, microscopic structures called melanosomes whose shapes match the ones that produce particular colors in living birds. Researchers have used them to reconstruct the plumage of animals nobody has ever seen alive. In Alberta, a mine worker's shovel struck an armored nodosaur that had drifted out to sea and been buried there, preserved in three dimensions, skin and scales and gut contents intact, still carrying traces of reddish-brown pigment shaded lighter underneath. That pattern is called countershading, and it is used today by small animals that get hunted from above. Sites this generous are rare enough to have their own name: geologists borrowed the German word Lagerstätten, meaning storage places. The person who taught the world to take this evidence seriously had no formal schooling. Mary Anning began collecting fossils as a child on the crumbling cliffs of Lyme Regis, on the English coast, and sold them to support her family after her father died in debt. She was about twelve when the first ichthyosaur skeleton that London scientists had ever properly examined came out of that rock. She went on to find the first two plesiosaurs known to science and the first pterosaur found in Britain, and she worked out that the strange stones scattered through the cliffs were fossilized dung, still full of the bones of whatever the animal had eaten. Geologists traveled down from London to buy her specimens and ask her opinion, then published papers on them and left her name out. She could not join the Geological Society, which did not admit women, and she died at forty-seven having never been made a member of the community she supplied. The cliffs she worked are still producing fossils. The Society admitted its first woman in 1904, fifty-seven years after Anning was gone."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage calls the fossil record a ruin rather than a library. Quote that line exactly, then explain the distinction it draws.",
+            "Name three ways the passage says the filter is not neutral, and explain what each one hides from us.",
+            "Where does the passage turn from process to people, and how does the author signal that turn?",
+            "The passage ends with a date and a number instead of a judgment. Analyze why the author closes that way rather than simply saying Anning was treated unfairly."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "quote: It is a ruin, and we are reading the few pages the fire missed; (a library is complete and organized, a ruin is a damaged fragment of something larger)",
+            "(hard parts over soft bodies, hides jellyfish and worms; lowlands over mountains, hides upland animals; common over rare and large over small, hides rare and small species)",
+            "(at the sentence about the person who taught the world to take this evidence seriously; a short flat sentence pivots from how fossils form to who read them)",
+            "(the facts convict on their own; letting the reader draw the conclusion is harder to argue with than an accusation)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["permineralization → ____", "melanosome → ____", "countershading → ____", "Lagerstätten → ____"],
+          "rows": 2,
+          "answers": [
+            "the growth of mineral crystals inside the pores of bone, turning it into a stone replica",
+            "a microscopic structure inside a feather whose shape corresponds to a color",
+            "camouflage that is darker on top and lighter underneath",
+            "rare sites where conditions preserved soft tissue as well as bone"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the filter favors the common over the rare. Explain why that makes our picture of dinosaur life not just incomplete but skewed.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(rare species are underrepresented or missing, so the record makes common animals look more dominant than they were)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: because the fossil record is so incomplete, what we say about dinosaurs is guesswork rather than knowledge. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

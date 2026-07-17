@@ -1,0 +1,319 @@
+{
+  "key": "windmill",
+  "title": "The Windmill That Turns Wind Into Bread",
+  "blurb": "A building with no engine and no fuel. It catches the wind, grinds grain into flour, and has been doing it for a thousand years.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Windmill That Turns Wind Into Bread",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-windmill", "templateLabel": "The Windmill That Turns Wind Into Bread", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the big arms." },
+        {
+          "kind": "image",
+          "imageKey": "windmill",
+          "notes": ["The wind turns the big arms", "Two heavy stones spin inside", "The stones make soft flour", "Flour is how we get bread"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Look at the windmill. The wind blows. The big arms go round and round. Inside, two flat stones turn. They are very heavy. The stones squash the seeds into soft powder. The powder is called flour. Flour makes bread. The wind does not stop. The arms keep turning. The windmill works all day for free."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the arms on each windmill. Write how many in the box.",
+          "emoji": "🌾",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "wind    flour" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "windmill", "right": "wind" },
+            { "left": "boat", "right": "water" },
+            { "left": "train", "right": "track" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own windmill. Give it four big arms and a windy sky.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Windmill That Turns Wind Into Bread",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-windmill", "templateLabel": "The Windmill That Turns Wind Into Bread", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "windmill",
+          "notes": ["The big arms are called sails", "Wind turns a heavy stone inside", "The stone grinds grain into flour", "The person who runs it is a miller", "No fuel and no engine, just wind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mill With No Engine",
+          "text": "A windmill has no engine. It has no fuel. It has one job: catch the wind and put it to work. Wind pushes on the four big sails. The sails turn. A long shaft inside the windmill turns too. The shaft turns a wheel, and the wheel turns a heavy stone. Under that stone is a second stone that never moves. Grain pours down between them. The stones grind the grain into flour. The miller lives with the wind. When the wind moves, he turns the whole top of the mill to face it. When the wind stops, the mill stops. So he waits."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What makes the sails turn?", "What do the two stones make?", "What does the miller do when the wind stops?"],
+          "rows": 2,
+          "answers": ["the wind pushes on them", "flour, from grain", "he waits"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The windmill has no ____.", "Wind pushes on the big ____.", "Two stones grind the grain into ____.", "The person who runs the mill is the ____."],
+          "wordBank": ["engine", "sails", "flour", "miller"],
+          "answers": ["engine", "sails", "flour", "miller"]
+        },
+        { "kind": "draw", "prompt": "Draw the miller at work in the windmill. Show the grain going in and the flour coming out.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Windmill That Turns Wind Into Bread",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-windmill", "templateLabel": "The Windmill That Turns Wind Into Bread", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "windmill",
+          "notes": ["The four arms are called sails", "The oldest known mills are in Iran", "Some are over 1,000 years old", "A millstone can weigh more than a car", "Wind is made by the sun heating the air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Runs on Weather",
+          "text": "A windmill is a machine that runs on weather. Wind pushes against the sails. The sails are not flat boards. They are set at an angle, so passing air gives them a shove sideways, and the whole wheel begins to turn. That turning goes down a shaft, through a set of wooden gears, and into a millstone weighing more than a car. The stone spins just above a second stone that never moves at all. Grain trickles into a hole in the middle. It comes out at the edge as flour. The oldest windmills we know of were built in Persia, in what is now Iran, more than a thousand years ago. Some of them still stand in a village called Nashtifan, and on windy days some still turn. Windmills only work when the wind is blowing, and wind changes direction. So early European millers built the entire mill on a giant post and pushed the building around by hand until the sails faced the wind again. Imagine turning your whole house to catch a breeze."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are the sails of a windmill for?",
+            "Which of the two millstones moves, and which one does not?",
+            "Where were the oldest known windmills built?",
+            "Why do you think early millers went to the trouble of turning a whole building?"
+          ],
+          "rows": 2,
+          "answers": [
+            "to catch the wind and turn the wheel",
+            "the top stone spins, the bottom stone never moves",
+            "in Persia, in what is now Iran",
+            "(inference: wind changes direction, and the mill only works facing the wind)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Machine That Runs on Weather", "How to Bake a Loaf of Bread", "The Tallest Buildings in Europe"],
+          "answers": ["The Machine That Runs on Weather"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The sails are set at an ____ so the wind turns them.", "The turning passes through wooden ____.", "Grain goes in, and ____ comes out at the edge."],
+          "wordBank": ["angle", "gears", "flour"],
+          "answers": ["angle", "gears", "flour"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the cleverest part of a windmill, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Windmill That Turns Wind Into Bread",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-windmill", "templateLabel": "The Windmill That Turns Wind Into Bread", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "windmill",
+          "notes": ["Wind is really sunlight, moved around", "Double the wind, get eight times the power", "The fantail let a mill aim itself", "Flour dust in the air can catch fire", "Sails are twisted like airplane wings"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Wind Is Sunlight in Disguise",
+          "text": "Here is a strange fact to start with: wind is sunlight in disguise. The sun heats the ground unevenly. Warm air rises, cooler air slides in underneath to replace it, and that moving air is wind. So a windmill is really running on solar power, delivered the long way around. Getting that energy out is harder than it looks. Wind does not push a windmill so much as flow past it. The sails are angled and slightly twisted, like the wing of an airplane, so the air slipping over them pulls the wheel around rather than shoving it. A well-built mill turns in a breeze that a person would barely notice. The energy hidden in wind grows fast. Double the wind speed and you do not get twice the power, you get eight times as much. That is wonderful and dangerous at once. In a storm, a mill can spin faster than its own gears can survive. Millstones running with no grain between them throw sparks, and a mill full of flour dust burns like a torch. Millers climbed out onto the turning sails to roll up the canvas by hand and slow the machine down. In 1745, an English carpenter named Edmund Lee solved a different problem. He bolted a small wheel to the back of the mill, set sideways to the sails. When the wind shifted, that little wheel caught it, turned, and geared the whole cap around until the sails pointed into the wind again. The mill aimed itself. Nobody had to push anything. That is the quiet genius of the windmill. It has no engine and burns nothing at all, and for hundreds of years it was the most powerful machine most people would ever stand next to."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain in your own words why the passage says wind is sunlight in disguise.",
+            "How are windmill sails like the wing of an airplane?",
+            "Why is a storm dangerous for a windmill? Give two reasons from the passage.",
+            "The passage says the mill aimed itself. Why was that such a big improvement for the miller?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(the sun heats the ground unevenly, warm air rises and cool air moves in, and that movement is wind)",
+            "both are angled and twisted so air flowing past pulls them along",
+            "the mill can spin faster than its gears can survive, and dry millstones spark in air full of flour dust",
+            "(inference: he no longer had to push the mill around by hand every time the wind shifted)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A windmill is a clever, powerful machine that turns free wind into work, and it took real invention to tame it",
+            "Storms are the most common weather in England",
+            "Bread tastes better when it is made with stone-ground flour"
+          ],
+          "answers": ["A windmill is a clever, powerful machine that turns free wind into work, and it took real invention to tame it"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["unevenly → ____", "cap (of a mill) → ____", "geared → ____"],
+          "rows": 1,
+          "answers": [
+            "not the same amount in every place",
+            "the top of the mill, which carries the sails and can turn",
+            "connected by toothed wheels so one turning part moves another"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: would you rather run a windmill or a machine with an engine? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Windmill That Turns Wind Into Bread",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-windmill", "templateLabel": "The Windmill That Turns Wind Into Bread", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "windmill",
+          "notes": ["Oldest known mills: Sistan, Persia, over 1,000 years ago", "Post mill: the whole building turns to face the wind", "Tower mill: only the cap turns", "Fantail, 1745: the mill aims itself", "Kinderdijk, Netherlands: 19 mills still stand", "Windmills pumped much of the Netherlands dry"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Thousand-Year Machine",
+          "text": "Every machine needs a source of power, and for most of human history there were only three: muscle, falling water, and moving air. Muscle tires. Water only flows where rivers run. Air is everywhere, free, and completely unreliable. The windmill is the long argument humans had with that last problem. The oldest windmills we can point to stood in Persia, in the Sistan region of what is now Iran, more than a thousand years ago. They looked nothing like the mills on a postcard. Their sails were mounted on a vertical shaft, like a revolving door, sheltered inside thick clay walls with a slot cut to let the wind strike one side only. In the village of Nashtifan, some of these mills still stand, and in the season of the fierce local winds, some still grind. Europe took a different path. By the twelfth century, English and French millers were building horizontal wheels, four great sails facing the weather, and immediately ran into the obvious flaw: wind will not hold still. Their answer was brute force. The post mill sat the entire building, machinery, grain, miller and all, on a single massive post, and when the wind swung around, someone leaned on a beam and pushed the whole thing until it faced the right way. Later builders got cleverer. The tower mill kept the body still and rotated only the cap. Then in 1745 Edmund Lee added the fantail, a small wheel mounted crosswise behind the sails. Any sideways wind spun it, and its gearing crept the cap back into the wind automatically. The mill had learned to aim itself, which is a form of thinking, done entirely with wood. The Dutch aimed windmills at a different enemy. Much of the Netherlands lies below sea level, and water does not drain uphill. So they pointed their mills at the water and lifted it out, mill after mill, each raising the water a little further, until a lake became a field. Nineteen of those mills still stand at Kinderdijk. The country was not just powered by wind. It was built by it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage calls air free and completely unreliable. Explain why both halves of that description matter to a miller.",
+            "Explain the difference between a post mill and a tower mill. Quote the phrase the passage uses for what the post mill sat on.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last line mean, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the Persian origin, the aiming problem, and the Dutch use)",
+            "(free means no fuel cost; unreliable means the mill stops or over-spins with the weather, so the miller cannot choose his hours)",
+            "the post mill turns the whole building, the tower mill turns only the cap; quote: a single massive post",
+            "(inform, with detail: it gives dates, places, and mechanisms; the storytelling tone also entertains)",
+            "(windmills did not just power the Netherlands, they drained the land it stands on; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["unreliable → ____", "vertical shaft → ____", "crosswise → ____", "brute force → ____"],
+          "rows": 1,
+          "answers": [
+            "cannot be counted on to behave the same way each time",
+            "an upright pole that spins, standing straight up and down",
+            "set at right angles to something else",
+            "solving a problem with raw effort rather than cleverness"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says the fantail is a form of thinking, done entirely with wood. Explain what he means.",
+            "Why might a country below sea level invest more in windmills than a country with fast rivers?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it senses a change in the wind and corrects the mill without a person deciding anything)",
+            "(inference: no falling water to power mills, and an urgent need to move water uphill and off the land)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was the windmill a more important invention than the engine? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Windmill That Turns Wind Into Bread",
+      "subtitle": "A reading, science and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-windmill", "templateLabel": "The Windmill That Turns Wind Into Bread", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "windmill",
+          "notes": ["Nashtifan, Iran: vertical-axis mills roughly 1,000 years old", "Post mill, 1100s: the whole building pivots on a post", "Fantail, Edmund Lee, 1745: automatic wind-aiming", "Betz limit, 1919: about 59 percent is the ceiling", "Power scales with the cube of wind speed", "A mill grinds, a turbine generates. Different machines"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever Turning: How a Building Learned to Pay Attention",
+          "text": "A windmill is a building that eats weather, and for roughly eight hundred years it was the most sophisticated machine an ordinary person would ever encounter. Start with the fuel, because the fuel is stranger than the machine. Wind is not really a thing in itself. The sun heats the Earth unevenly: bare ground faster than forest, land faster than ocean, the equator far faster than the poles. Warm air expands and rises, cooler air slides sideways to fill the gap, and that sideways slide is what we call wind. A windmill, then, is a solar machine. It just collects its sunlight secondhand, after the atmosphere has done the work of turning heat into motion. The oldest windmills we can document stood in the Sistan region of Persia, now eastern Iran, more than a thousand years ago. They bore no resemblance to the four-armed silhouette on a postcard. Their sails hung from a vertical shaft and spun like a revolving door, walled in on one side so the wind could only strike them from a single direction. A handful still stand at Nashtifan, and when the region's ferocious summer winds arrive, some of them still turn. Medieval Europe took a different design and inherited a different problem. A horizontal wheel with four sails out front catches far more wind, but only if it happens to be pointed at the wind. And wind does not hold still. The first European answer was gloriously crude: the post mill balanced the entire structure, gears, grindstones, grain and miller included, on one enormous vertical post, so a person with a lever could shove the whole building around to face the weather. The refinements that followed are where the story gets interesting. Tower mills fixed the body in place and turned only the cap. Then, in 1745, an English carpenter named Edmund Lee attached a small wheel to the rear of the cap, mounted at right angles to the main sails. When the wind blew straight into the sails, this fantail sat motionless in still air. The moment the wind shifted, it caught the crosswise breeze, spun, and through a train of gears rotated the cap until the sails faced the wind and the fantail stalled again. The machine sensed an error and corrected it. A wooden building had been taught to pay attention. The physics beneath all this is unforgiving. The power available in wind rises with the cube of its speed: double the wind and you get eight times the energy, which is why a mill that hums in a breeze can tear itself apart in a gale. Millers reefed the canvas by hand, climbing the turning sails to do it, and they feared fire above everything, because millstones grinding with no grain between them strike sparks into air thick with flour dust. Nor can any mill capture all the wind it meets. In 1919, Albert Betz proved why: to take every bit of energy out of moving air you would have to stop that air completely, and stopped air cannot get out of the way of the air behind it. The ceiling is about 59 percent. The Dutch pushed the machine hardest. Much of the Netherlands sits below sea level, and water will not drain uphill, so they set windmills to bail out an entire country, chains of them lifting water stage by stage until a lake became a field. Nineteen survive at Kinderdijk. Their millers even signaled with the sails, parking them in positions the next village could read: a brief pause, a long rest, a celebration, a death. Note the word we lost along the way. A windmill mills. The three-bladed towers on a modern ridgeline grind nothing, so they are turbines, not mills. They are the same idea, refined: the same twisted blade cheating the same reluctant air, chasing the same ceiling Betz drew in 1919."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the passage argues a windmill runs on sunlight. Cite the exact phrase it uses for the machine.",
+            "Explain what the fantail does and why the author says the building learned to pay attention. Cite the sentence that states what the machine does.",
+            "The author says the physics beneath all this is unforgiving. Use the cube rule and the Betz limit to explain what he means.",
+            "The passage ends on the difference between a mill and a turbine. Analyze why the author closes there instead of with the Dutch."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the sun heats the Earth unevenly and that makes wind, so wind power is secondhand sunlight; cite: a solar machine)",
+            "(a crosswise wheel catches any sideways wind and gears the cap back into the wind by itself; cite: The machine sensed an error and corrected it.)",
+            "(power rises with the cube of speed, so a safe breeze becomes a destructive gale fast, and Betz showed no design can ever take more than about 59 percent)",
+            "(it links the thousand-year-old machine to the modern one and shows the idea never died, only the name; ending on the Dutch would end on history rather than continuity)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["secondhand → ____", "silhouette → ____", "reefed → ____", "ferocious → ____"],
+          "rows": 2,
+          "answers": [
+            "received by way of something else rather than directly",
+            "the dark outline of a shape against a lighter background",
+            "rolled up or shortened a sail to catch less wind",
+            "fierce and violent"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The Betz limit says no machine can ever take more than about 59 percent of the wind's energy. Explain why engineers still bother improving blades.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(real blades fall well short of the ceiling, so there is room to improve; and cost, size and durability matter as much as efficiency)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The fantail deserves to be called the first thinking machine. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

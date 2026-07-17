@@ -1,0 +1,315 @@
+{
+  "key": "teacher",
+  "title": "The Teacher Who Waits Three Seconds",
+  "blurb": "Why the best teachers ask more than they tell, and how three seconds of silence changes what a kid can say.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Teacher Who Waits Three Seconds",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-teacher", "templateLabel": "The Teacher Who Waits Three Seconds", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the teacher. Find the board." },
+        {
+          "kind": "image",
+          "imageKey": "teacher",
+          "notes": ["The word school once meant free time", "Teachers wait so you can think", "A teacher can be your mom or your dad", "Long ago, kids wrote on little stone boards"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a teacher. A teacher helps you learn. A teacher shows you a letter. You say it back. A teacher shows you a number. You count it out loud. When you get stuck, a teacher waits. A teacher does not do it for you. A teacher lets you try. Then you know it. Some teachers work at a school. Some teachers work at home."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the pencils in each row. Write how many in the box.",
+          "emoji": "✏️",
+          "items": ["2", "5", "3", "4"],
+          "answers": ["2", "5", "3", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "learn    ask" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each person with their place.",
+          "pairs": [
+            { "left": "teacher", "right": "school" },
+            { "left": "doctor", "right": "hospital" },
+            { "left": "farmer", "right": "farm" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your teacher. Add one thing they help you learn.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Teacher Who Waits Three Seconds",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-teacher", "templateLabel": "The Teacher Who Waits Three Seconds", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "teacher",
+          "notes": ["The word school comes from a Greek word for free time", "The first known schools were in Sumer", "They were called tablet houses", "Kids wrote on wet clay with a reed", "Some of those clay tablets still exist"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The First Teachers",
+          "text": "Here is something strange. The word school comes from an old Greek word. That word meant free time. In Greece, long ago, only people with spare time could sit and learn. Now school is for everyone. The very first teachers we know about lived in a place called Sumer. That was more than four thousand years ago. Their school was called a tablet house. The kids did not have paper. They wrote on soft clay with a sharp reed. Some of those clay tablets are still here. You can see a kid's spelling mistakes from four thousand years ago."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What did the Greek word for school really mean?", "What was a Sumerian school called?", "What did the kids write on?"],
+          "rows": 2,
+          "answers": ["free time", "a tablet house", "soft clay, using a sharp reed"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The word school comes from an old ____ word.", "That word meant free ____.", "The first schools we know of were in ____.", "Kids wrote on soft ____."],
+          "wordBank": ["Greek", "time", "Sumer", "clay"],
+          "answers": ["Greek", "time", "Sumer", "clay"]
+        },
+        { "kind": "draw", "prompt": "Draw a tablet house. Show a kid writing on clay with a reed.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Teacher Who Waits Three Seconds",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-teacher", "templateLabel": "The Teacher Who Waits Three Seconds", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "teacher",
+          "notes": ["About 200,000 one-room schools in the US in 1913", "Fewer than 200 are left today", "A slate is a thin sheet of stone you can wipe clean", "James Pillans is often credited with the blackboard, around 1801", "Some teachers were only sixteen years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Teacher, Eight Grades, One Room",
+          "text": "In 1913 there were about two hundred thousand one-room schools in the United States. One room. One teacher. Every kid in the neighborhood, from the six-year-olds to the fourteen-year-olds, all on the same benches at the same time. Think about what that teacher had to do. She taught reading to the little ones while the older ones worked on math in silence. Then she switched. She hauled in wood for the stove. She swept the floor. She was often only sixteen or seventeen years old herself. Kids wrote on slates, which are thin sheets of dark stone in a wooden frame. Paper cost too much to waste on practice. You wrote, the teacher checked it, you wiped it clean, and you wrote again. Then came the blackboard. A teacher in Scotland named James Pillans is often given credit for it, around 1801. He wanted to draw big maps his whole class could see at once. That was the trick: one teacher, one surface, thirty kids all looking at the same thing. Almost every classroom in the world copied it. Today fewer than two hundred one-room schools are left."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How many one-room schools were in the United States in 1913?",
+            "Why did kids write on slates instead of paper?",
+            "What did James Pillans want a blackboard for?",
+            "Why do you think almost all the one-room schools disappeared?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about two hundred thousand",
+            "paper cost too much to waste on practice",
+            "to draw big maps his whole class could see at once",
+            "(inference: towns grew, and roads and buses let kids reach bigger schools with a teacher for each grade)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["One Teacher, Eight Grades, One Room", "How to Build a Wooden Stove", "The History of Paper Money"],
+          "answers": ["One Teacher, Eight Grades, One Room"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Kids wrote on thin stone sheets called ____.", "A one-room school had only one ____.", "James Pillans taught in ____.", "A blackboard let the whole ____ see at once."],
+          "wordBank": ["slates", "teacher", "Scotland", "class"],
+          "answers": ["slates", "teacher", "Scotland", "class"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather learn in a one-room school or a school like today, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Teacher Who Waits Three Seconds",
+      "subtitle": "A reading and thinking sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-teacher", "templateLabel": "The Teacher Who Waits Three Seconds", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "teacher",
+          "notes": ["Mary Budd Rowe timed classroom pauses in the 1970s", "The average wait after a question: about one second", "Three seconds of silence made answers longer", "Socrates wrote nothing down", "Sensei is Japanese for born before", "Doctor comes from docere, Latin for to teach"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Silence After the Question",
+          "text": "A teacher asks a question. The room goes quiet. How long does that quiet last? In the 1970s a researcher named Mary Budd Rowe decided to actually measure it. She recorded hundreds of classrooms and timed the gap between the end of a teacher's question and whatever happened next. The average was about one second. One second, and then the teacher would rephrase the question, or call on the fastest hand, or simply answer it themselves. Rowe then asked teachers to try something uncomfortable. Wait three seconds. Just three. Say nothing. The results were not small. Students gave longer answers. More students volunteered. They started backing up their answers with reasons instead of guesses. They asked more questions of their own. Kids who almost never spoke began to speak. Nothing about the students had changed. The only thing that changed was the silence. This is one of the oldest ideas in teaching, dressed up in data. Socrates, two and a half thousand years ago, taught almost entirely by asking. He wrote nothing down. He would ask a question, listen to the answer, and ask a better question about the answer. His students did the thinking. He did the asking. A good teacher is not a person who knows the most. A good teacher is a person who knows what to ask, and can stand the quiet afterward."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What exactly did Mary Budd Rowe measure, and what did she find?",
+            "The passage says the results were not small. List three things that changed when teachers waited three seconds.",
+            "Why do you think a one second pause stops some kids from ever answering?",
+            "The passage says his students did the thinking and he did the asking. What does that tell you about what Socrates believed?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the gap between a teacher's question and what happened next; the average was about one second",
+            "answers got longer, more students volunteered, answers had reasons instead of guesses, students asked more of their own questions",
+            "(inference: some kids need longer to turn a thought into words, so the fastest hands always win)",
+            "(inference: he believed understanding has to be built by the learner, not handed over)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Waiting a few seconds after a question changes what students are able to say",
+            "Socrates invented the classroom",
+            "Teachers in the 1970s talked too quickly"
+          ],
+          "answers": ["Waiting a few seconds after a question changes what students are able to say"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["rephrase → ____", "volunteered → ____", "uncomfortable → ____"],
+          "rows": 1,
+          "answers": ["to say the same thing again in different words", "spoke up without being called on", "feels awkward or unnatural to do"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: think of a time you needed longer to answer than you were given. What happened, and what would three more seconds have changed?", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Teacher Who Waits Three Seconds",
+      "subtitle": "A reading and thinking sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-teacher", "templateLabel": "The Teacher Who Waits Three Seconds", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "teacher",
+          "notes": ["Elizabeth Newton's tapping study, Stanford, 1990", "Tappers predicted 50 percent; listeners scored 2.5 percent", "The curse of knowledge: experts forget what confusion feels like", "Expecting to teach makes you learn more, even if you never teach", "Pedagogue: the Greek word for the person who walked a child to school"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Person Who Knows It Is the Worst Person to Explain It",
+          "text": "In 1990, a Stanford graduate student named Elizabeth Newton ran an experiment so simple it barely looks like one. She split people into pairs. One person, the tapper, got a list of famous songs and had to tap out the rhythm of one on a table. The other person, the listener, had to name the song. Before the listener guessed, Newton asked the tapper to predict the odds. Tappers thought listeners would get it about half the time. The listeners got it 2.5 percent of the time. Three out of one hundred and twenty. The tappers were not fools. They were stuck. Inside a tapper's head, the song is playing in full: melody, words, drums, everything. What the listener receives is a series of dull knocks on a table. The tapper cannot unhear the music, and so cannot imagine what the knocking sounds like from the other side. Psychologists call this the curse of knowledge. Once you know a thing, you lose the ability to remember not knowing it. And this is the central problem of teaching. The moment you become an expert, you become worse at explaining, because the gaps that confuse a beginner have closed up in your own mind and become invisible to you. This is why the smartest person in the room is so often the least useful explainer, and why a kid who learned fractions last week can sometimes teach them better than a mathematician. There is a strange flip side. Researchers have found that when students are told they will have to teach the material to someone else, they learn it better, even if the teaching never actually happens. Just expecting to teach changes how you read. You stop skimming. You start hunting for the main point, organizing it, looking for the sentence that would make it click for another person. Teaching is not what you do after learning. Teaching is one of the ways learning happens. So the next time an adult explains something and you do not follow, consider that the failure may not be yours. They may simply be tapping."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did the tappers predict, and what actually happened? Use the numbers from the passage.",
+            "Explain the curse of knowledge in your own words. Quote the sentence the passage uses to define it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why does the author end there?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the tapping study + the curse of knowledge + expecting to teach)",
+            "tappers predicted about half; listeners got 2.5 percent, three out of one hundred and twenty",
+            "knowing something makes you unable to imagine not knowing it; quote: Once you know a thing, you lose the ability to remember not knowing it",
+            "(inform, mostly: it reports a real study and defines a term; the last paragraph turns to persuasion by addressing the reader directly)",
+            "(they may simply be tapping means the explainer is hearing a song the listener cannot; the author ends there so the reader applies it themselves)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["curse of knowledge → ____", "expert → ____", "skimming → ____", "flip side → ____"],
+          "rows": 1,
+          "answers": [
+            "losing the ability to imagine not knowing what you know",
+            "someone who knows a subject deeply",
+            "reading quickly without stopping to understand",
+            "the opposite side of the same idea"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a kid who learned fractions last week can sometimes teach them better than a mathematician. Explain why that could be true.",
+            "Why would expecting to teach change how you read, even if you never actually teach?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the kid still remembers the confusing part, so they can aim at it; the mathematician has forgotten it existed)",
+            "(inference: you read for structure and main points instead of skimming, because you have to rebuild it for someone else)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should students be asked to teach each other in class? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Teacher Who Waits Three Seconds",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-teacher", "templateLabel": "The Teacher Who Waits Three Seconds", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "teacher",
+          "notes": ["Skhole: the Greek root of school meant leisure", "Ebbinghaus mapped the forgetting curve in 1885", "Newton's tapping study, 1990: tappers guessed 50 percent, listeners scored 2.5", "Rowe, 1972: average wait after a question was about one second", "Pedagogue: Greek for the person who walked a child to school", "Sensei means born before; guru means the weighty one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Curse of Knowing: What Actually Makes Someone a Teacher",
+          "text": "Ask most people what makes a great teacher and you will hear some version of the same answer: they really knew their subject. It is a reasonable guess. It is also, as far as the research goes, close to the least useful thing you can say about teaching. Consider what an expert's mind actually looks like. In 1990, a Stanford researcher named Elizabeth Newton had one person tap the rhythm of a well-known song on a table while a partner tried to name it. Tappers predicted their partners would succeed about half the time. The real figure was 2.5 percent: three correct guesses out of one hundred and twenty. The tappers were not overconfident so much as trapped. Inside their heads the song was playing in full, orchestrated and obvious. Outside, there was only knocking. Psychologists named the effect the curse of knowledge, and it describes the exact predicament of every expert who has ever stood in front of a confused room. Knowledge does not merely fail to make you a good explainer. It actively erodes your memory of what confusion feels like, and confusion is the thing you are being paid to navigate. So if not knowledge, what? Start with an inconvenient finding from 1885. Hermann Ebbinghaus, working alone and using himself as his only subject, memorized long lists of nonsense syllables and then tested how quickly he lost them. The curve he plotted falls off a cliff. Most of what he learned was gone within days. Forgetting is not a malfunction of learning. Forgetting is the default state, and everything a teacher does is a fight against that slope. The tools that actually win that fight are unglamorous and slightly unpleasant. Rereading a chapter feels productive and does almost nothing; closing the book and forcing yourself to recall what was in it feels awful and works. Cramming the night before produces a grade and no memory; the same hours spread across three weeks produce a memory and, usually, a better grade. Good teachers do not hand students information. They engineer the conditions in which students have to retrieve it, repeatedly, uncomfortably, until it stops slipping away. Then there is the smallest skill of all. In the early 1970s, Mary Budd Rowe listened to hundreds of recorded classrooms and timed the pause after a teacher asked a question. The average was roughly one second. Then the teacher rephrased, or called on the quickest hand, or answered it herself. Rowe asked teachers to hold the silence for three seconds instead. Answers got longer. More students volunteered. Students began offering evidence rather than guesses. Children who had been written off as slow turned out to have been merely slower than one second. The students had not changed. The teacher had learned to shut up. This is the pattern underneath all of it. Teaching looks like transmission, one full head pouring into thirty empty ones, and it is not. It is closer to construction work carried out by the student, in which the teacher's job is to keep asking, keep waiting, keep making the student do the hard retrieval, and to remember, against every instinct, what it was like not to know. Which raises an uncomfortable question about the phrase we all use. We say a teacher taught us something, as though the teaching were the thing that landed. Ebbinghaus, Newton and Rowe all point elsewhere. The teacher tapped. The learning was ours."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage claims knowing your subject is close to the least useful thing you can say about teaching. Explain the reasoning and cite the sentence that carries it.",
+            "What does the Ebbinghaus curve show, and how does the author use it? Quote the phrase that states his conclusion.",
+            "Identify the turn. Where does the passage stop reporting research and start making an argument, and how does the author signal it?",
+            "Analyze the last four sentences. What is The teacher tapped. The learning was ours. doing, and has the passage earned it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(expertise erases the memory of confusion, which is what a teacher must navigate; cite: It actively erodes your memory of what confusion feels like, and confusion is the thing you are being paid to navigate)",
+            "(most of what he learned vanished within days, so the author frames teaching as a fight against forgetting; quote: Forgetting is the default state)",
+            "(at This is the pattern underneath all of it; the author drops the studies and states a thesis directly)",
+            "(it reverses the credit from teacher to learner, and reuses the tapping image from the opening; earned if the reader accepts the retrieval and wait-time evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["curse of knowledge → ____", "unglamorous → ____", "retrieval → ____", "transmission (as used here) → ____"],
+          "rows": 2,
+          "answers": [
+            "the way knowing something destroys your memory of not knowing it",
+            "dull and unimpressive, with no shine to it",
+            "pulling information back out of memory without looking it up",
+            "the idea that knowledge simply passes from a full head into an empty one"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author pairs opposites with semicolons in the paragraph about study tools. Why does that punctuation suit what those sentences are doing?",
+            "Name one claim in this passage you would want to check, and the kind of source that could check it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a semicolon holds two contrasting halves in one sentence, so the reader feels the trade-off rather than reading it as two separate facts)",
+            "(student claim + a credible source type, such as the original published study or a research review)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A teacher who explains clearly has done their job. State your position, cite two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "key": "pine-tree",
+  "title": "The Tree That Keeps Its Leaves All Winter",
+  "blurb": "Why the pine holds its needles through the snow, and why some pine cones stay shut until a fire opens them.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Tree That Keeps Its Leaves All Winter",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pine-tree", "templateLabel": "The Tree That Keeps Its Leaves All Winter", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the pointy top of the tree." },
+        {
+          "kind": "image",
+          "imageKey": "pine-tree",
+          "notes": ["Its leaves are called needles", "It stays green all winter", "It grows cones", "Snow slides off its branches"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pine tree. It is green all year. Look at its leaves. They are thin like little needles. Snow falls on the pine tree. The branches bend down low. The snow slides off. The pine tree stays green. It is green in the summer. It is green in the winter too."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the pine trees in each row. Write how many in the box.",
+          "emoji": "🌲",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "pine    green" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "pine tree", "right": "needles" },
+            { "left": "bird", "right": "nest" },
+            { "left": "snow", "right": "winter" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own pine tree. Add some snow on the branches.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tree That Keeps Its Leaves All Winter",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pine-tree", "templateLabel": "The Tree That Keeps Its Leaves All Winter", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pine-tree",
+          "notes": ["The leaves are called needles", "Needles have a waxy coat", "Seeds hide inside the cones", "It stays green all year", "Snow slides off its branches"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tree That Keeps Its Leaves All Winter",
+          "text": "Most trees drop all their leaves when fall comes. By winter their branches are bare. The pine tree does not do that. Its leaves are needles. A needle is skinny and tough, with a waxy coat that holds water in. Cold wind cannot dry it out. So the pine tree keeps its needles all winter long. It stays green while the other trees stand bare. The pine tree is shaped like a triangle. Snow lands on the branches and slides right off. Up in the branches, the tree makes cones. Seeds hide inside the cones, waiting for spring."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are the leaves of a pine tree called?", "Why can cold wind not dry out a needle?", "What is hiding inside a pine cone?"],
+          "rows": 2,
+          "answers": ["they are called needles", "it has a waxy coat that holds the water in", "seeds are hiding inside"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A pine tree keeps its leaves all ____.", "Pine leaves are called ____.", "Seeds hide inside the ____.", "Snow ____ off the branches."],
+          "wordBank": ["winter", "needles", "cones", "slides"],
+          "answers": ["winter", "needles", "cones", "slides"]
+        },
+        { "kind": "draw", "prompt": "Draw a pine tree in the snow. Add a bird sitting on a branch.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tree That Keeps Its Leaves All Winter",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pine-tree", "templateLabel": "The Tree That Keeps Its Leaves All Winter", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pine-tree",
+          "notes": ["Needles grow in little bundles", "A needle can stay on the branch for years", "Cones open when the air is dry", "Pine seeds have papery wings", "Sticky resin seals cuts in the bark"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Pine Stays Green",
+          "text": "In the fall, an oak or a maple pulls the good stuff out of its leaves, drops them, and waits out the winter bare. That works, but it costs the tree a whole season. The pine tree made a different deal. A pine leaf is a needle: thin, stiff, and wrapped in a layer of wax. Water escapes from a wide flat leaf quickly. A needle has almost no surface for water to escape from, and the wax seals in the rest. Freezing wind cannot dry it out, so the pine keeps its needles through the snow. Each needle stays on the branch for two years or more, and the tree drops them a few at a time instead of all at once. That is why a pine can work on a warm winter afternoon while the maple next to it is still asleep. Up in the branches sit the cones. A pine cone is a case full of seeds. When the weather turns dry, the scales open and the seeds spin away on papery wings."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does an oak or a maple do to its leaves in the fall?",
+            "Name two things that stop a pine needle from drying out.",
+            "How long does one needle stay on the branch?",
+            "Why do you think the cone waits for dry weather before it opens?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it pulls the good stuff out of them and drops them",
+            "its thin shape and its layer of wax",
+            "two years or more",
+            "(inference: dry air lets the winged seeds fly farther from the tree)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Pine Stays Green", "How to Rake Up Maple Leaves", "The Tallest Mountain in the World"],
+          "answers": ["Why the Pine Stays Green"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A pine leaf is called a ____.", "Each needle is wrapped in a layer of ____.", "Pine seeds spin away on papery ____."],
+          "wordBank": ["needle", "wax", "wings"],
+          "answers": ["needle", "wax", "wings"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather be a pine tree or a maple tree in winter, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tree That Keeps Its Leaves All Winter",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pine-tree", "templateLabel": "The Tree That Keeps Its Leaves All Winter", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pine-tree",
+          "notes": ["Pines are conifers, not flowering trees", "Wind carries the pollen, not bees", "A needle is a leaf rolled narrow to save water", "Count the needles in a bundle to name the pine", "Amber is fossilized pine resin"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Needle and the Cone",
+          "text": "Every leaf has the same problem: it must open itself to the air to feed the tree, and every moment it stays open it loses water. A broadleaf tree like a maple solves this by giving up. In autumn it drains its leaves of anything valuable, cuts them loose, and spends the winter shut down. A pine refuses to shut down. Its answer is the needle. Roll a leaf up until it is almost a wire, coat it in wax, and sink its breathing pores into little grooves below the surface, and you have built a leaf that barely leaks. Frozen ground cannot hand up much water, so a pine's greatest winter danger is not cold but drought. The needle is a drought-proof leaf. It stays on the branch for two years, sometimes far longer, and the tree replaces its needles gradually rather than all at once. So on any mild day, in any month, a pine is quietly making food while the bare trees around it wait. The cone is the other half of the design. Pines do not make flowers or fruit. Small soft cones release clouds of yellow pollen into the spring wind, and the wind, not a bee, carries it to the woody cones on the same tree or the next one. Then the pine takes its time. In most pines nearly two years pass between pollination and a ripe seed. When the seeds are finally ready, the cone waits for dry weather, because damp air would drop the seeds straight down. On a dry day the scales curl open and each seed sails out on a thin papery wing, spinning as it goes."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What problem does every leaf have, in your own words?",
+            "The passage says a pine's greatest winter danger is not cold but drought. Explain why that makes sense.",
+            "Why can a pine make food on a mild winter day when a maple cannot?",
+            "Why would damp air be bad for a cone that is ready to drop its seeds?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(it has to open to the air to feed the tree, and open leaves lose water)",
+            "(inference: frozen ground means the roots cannot replace the water a leaf loses)",
+            "the pine still has its needles while the maple has dropped its leaves",
+            "(inference: wet seeds and closed scales would drop straight down instead of flying)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The pine's needle and its cone are both built to handle hard weather",
+            "Maple trees grow faster than every other kind of tree",
+            "Bees do most of the work of pollinating pine trees"
+          ],
+          "answers": ["The pine's needle and its cone are both built to handle hard weather"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["broadleaf → ____", "pollination → ____", "drought → ____"],
+          "rows": 1,
+          "answers": ["a tree with wide flat leaves", "pollen reaching the seed cone so a seed can form", "a long stretch with too little water"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining why a pine needle is a good design for a cold, windy place. Use two details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tree That Keeps Its Leaves All Winter",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pine-tree", "templateLabel": "The Tree That Keeps Its Leaves All Winter", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pine-tree",
+          "notes": ["Genus Pinus: about 120 species", "Needles: low surface area, waxy cuticle, sunken stomata", "Winter is a drought problem, not only a cold one", "Resin seals wounds and traps insects", "Amber is fossilized conifer resin", "Cone scales open in dry air and close in damp"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built for Bad Weather",
+          "text": "Consider the trade a tree makes with the weather. Leaves are food factories, and a factory only pays if it runs. A maple builds cheap, wide, thin leaves, runs them hard through a warm summer, then throws the whole set away in autumn and stands empty for six months. That works beautifully where summers are long. Move north, or up a mountain, or onto thin sandy soil, and the math stops working. There is not enough summer to pay for a new set of leaves every year. This is the country the pines took. A pine needle is a leaf engineered for hardship. It is rolled into a narrow cylinder, which gives it very little surface for its volume, and surface is where water is lost. It is sealed under a thick waxy cuticle. Its stomata, the pores it breathes through, sit sunk in rows below the surface, sheltered from moving air. The result is a leaf so miserly with water that it can stay open for business in weather that would shrivel a maple leaf in an afternoon. That matters more than it sounds, because winter is not really a cold problem for a tree. It is a drought problem. When the ground is frozen, the roots can pull up almost nothing, so any leaf that leaks is a leak the tree cannot repay. The pine's needles leak so little that they can hang on for two years or more, and the tree sheds them a few at a time rather than all at once. It never stands empty. On a mild day in February, when the maples are still bare sticks, a pine is already working. The rest of the tree keeps the same argument. The narrow triangle shape lets snow slide off branches that would otherwise snap under the load. Springy branches bend instead of breaking. Thick resin floods any wound, seals it against rot, and glues up insects that try to bore in. That resin, hardened and buried for millions of years, is what we call amber. None of this is free. A needle is expensive to build, and a pine grows more slowly than a maple in a good year. But pines are not competing for good years. They are holding the ground where the weather is hard, and there they win. Pines cover cold northern forests, dry mountain slopes, and poor sandy soils across the northern half of the world, in about 120 different species."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says winter is a drought problem rather than a cold problem. Explain why, in your own words.",
+            "Find the phrase the author uses to describe how little water a needle gives up. Quote it exactly.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author says pines are not competing for good years. Explain what that means."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the needle design + surviving hard weather + slow but durable)",
+            "(frozen ground gives the roots no water, so a leaky leaf loses what cannot be replaced)",
+            "quote: a leaf so miserly with water",
+            "(inform, with detail: it defines cuticle and stomata and gives figures; the factory and trade language adds some persuasion)",
+            "(they lose the race in rich easy places, so they hold the hard places instead)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["cuticle → ____", "stomata → ____", "miserly → ____", "resin → ____"],
+          "rows": 1,
+          "answers": [
+            "the waxy layer sealing the outside of a leaf",
+            "the pores a leaf breathes through",
+            "giving away as little as possible",
+            "the thick sticky sap a pine uses to seal a wound"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might a slow-growing tree still beat a fast-growing one on a cold mountain?",
+            "The passage says amber is hardened resin. What might scientists learn from an insect trapped inside it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: the fast tree cannot pay for new leaves each year where summers are short, so the slow tree outlasts it)",
+            "(opinion, with reasoning: what insects looked like and lived alongside millions of years ago)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it better for a living thing to grow fast or to last a long time? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tree That Keeps Its Leaves All Winter",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pine-tree", "templateLabel": "The Tree That Keeps Its Leaves All Winter", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pine-tree",
+          "notes": ["Pinus mundayi: oldest known pine fossil, about 140 million years", "Sealed cones need roughly 122F of heat to open", "Bristlecone needles can work for 30 to 40 years", "Methuselah, a bristlecone, is about 4,850 years old", "Fertilization comes about a year after pollination", "Cone scales move by swelling, no living cells needed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tree That Learned to Wait",
+          "text": "A pine tree looks like a simple thing standing in the cold. It is actually an argument about time, and the pine has been making that argument for a very long while. Start with the leaf. A maple leaf is a bet on a good summer: build it wide and cheap, run it hard for five months, discard it, repeat. Where summers are long and soil is rich, that bet pays. Where they are not, it bankrupts the tree. A pine needle is the opposite bet. It is rolled into a narrow cylinder, so it carries almost no surface for its volume, and surface is where water escapes. It is sealed under a heavy waxy cuticle. Its stomata, the pores through which it breathes, are sunk in grooves below the surface, out of the wind. A needle is slow and expensive to build, but it lasts. Most pine needles work for two to five years. On a Great Basin bristlecone pine, high in the White Mountains of California, a single needle may still be working thirty or forty years after it opened. That patience is the whole strategy, because winter does not kill trees with cold so much as with thirst. Frozen ground gives the roots nothing to pull up, and a leaky leaf in February is a debt the tree cannot pay. The pine's needles leak so little that it can keep every one of them, shedding a few at a time instead of stripping bare. So the pine is never shut down. Give it one mild afternoon in midwinter and it is making food while the hardwoods around it are still empty sticks. Now consider fire, which the pine did not merely survive but learned to use. The oldest pine we have found, Pinus mundayi, comes from Nova Scotia and is about 140 million years old. We know it exists because it burned: the fossil is charcoal. Pines and fire have been in the same room from the beginning. Some pines answer fire with armor. A mature ponderosa grows bark in thick plates and drops its lower branches, so a ground fire runs past its ankles and leaves the crown untouched. Other pines answer with timing. The cones of the lodgepole and the jack pine are sealed shut with hard resin, and they can hang closed on the branch for years. Only heat around 122 degrees Fahrenheit melts that seal. A fire sweeps through, the forest burns, and in the quiet afterward the cones creak open and drop their seeds onto warm ash with no shade and no competition anywhere. The tree does not fear the fire. It waits for it. Even the ordinary cone is a machine for reading weather. Pines make no flowers and no fruit. Soft pollen cones puff yellow clouds into the spring wind, and the wind carries the pollen to the woody seed cones, where fertilization may not happen for a year. Roughly two years pass between pollination and a ripe seed. When the seeds are ready, the cone still will not release them in damp air, because a seed dropped in the wet falls straight down. The scales are built from two layers that swell at different rates, so the cone opens in dry weather and closes when it rains, with no cells, no signal, and no life required. A cone on a shelf in your house will still do it. Then there is the resin. Any wound floods with it, and it hardens into a plug that seals out rot and traps the insects that try to bore in. Bury that resin for fifty million years and it becomes amber. Slow leaf, patient cone, armored bark, sealed wound. None of it is fast. All of it is durable. The bristlecone that assembled itself out of these parts on a dry mountain has now been standing for about 4,850 years, which means it was already a mature tree when the first pyramid was built."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The opening claims a pine is an argument about time. Explain what the author means and cite one later detail that supports the claim.",
+            "Contrast the maple's bet with the pine's bet. Why does the author say a wide cheap leaf bankrupts the tree in some places?",
+            "Explain how the lodgepole and jack pine use fire. Quote the two short sentences that close that paragraph.",
+            "The passage says the cone opens with no cells, no signal, and no life required. Quote the phrase and explain what it tells you about how the cone works.",
+            "Identify where the passage turns from leaves to fire, and analyze how the author signals the turn."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the pine survives hard weather by building slow, long-lasting parts)",
+            "(everything the pine builds is slow and durable; cite: a single needle may still be working thirty or forty years after it opened)",
+            "(a new set of leaves each year costs more than a short summer can repay)",
+            "(their cones stay resin-sealed until fire melts the seal, then seed onto bare warm ash; quote: The tree does not fear the fire. It waits for it.)",
+            "(quote: with no cells, no signal, and no life required; the scales are a physical mechanism, two layers swelling at different rates, so a dead cone still opens)",
+            "(at Now consider fire; the author uses a direct address to the reader to pivot from the leaf argument to the fire argument)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["bankrupts → ____", "cuticle → ____", "stomata → ____", "durable → ____"],
+          "rows": 2,
+          "answers": [
+            "spends more than can be paid back, leaving nothing",
+            "the waxy sealing layer on the outside of a leaf",
+            "the breathing pores of a leaf",
+            "built to last under strain"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that pines and fire have been in the same room from the beginning. Explain why a charred fossil is good evidence for that claim, and name one weakness in the evidence.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(charcoal shows the tree burned, so fire was present in its world; weakness: one fossil cannot prove pines were adapted to fire that early)",
+            "(student question + a credible source type, such as a forestry study or a botany text)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A tree that needs fire to reproduce is badly designed. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

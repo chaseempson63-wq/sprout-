@@ -1,0 +1,319 @@
+{
+  "key": "doctor",
+  "title": "The Doctor Who Rolled Up Paper to Hear a Heart",
+  "blurb": "The stethoscope was invented from a rolled sheet of paper by a shy doctor in Paris, and it turned listening into a way of seeing.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Doctor Who Rolled Up Paper to Hear a Heart",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-doctor", "templateLabel": "The Doctor Who Rolled Up Paper to Hear a Heart", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the doctor's white coat." },
+        {
+          "kind": "image",
+          "imageKey": "doctor",
+          "notes": ["The doctor helps you feel better", "The tool is called a stethoscope", "It lets her hear your heart", "Your heart goes thump thump", "Doctors wash their hands a lot"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a doctor. The doctor helps you feel better. She has a tool called a stethoscope. She puts it on your chest. She listens. Thump thump. That is your heart. Your heart pushes blood all day and all night. It never stops. The doctor smiles. Your heart sounds strong."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the hearts in each row. Write how many in the box.",
+          "emoji": "❤️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "heart    help" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "heart", "right": "thump thump" },
+            { "left": "stethoscope", "right": "listens" },
+            { "left": "doctor", "right": "white coat" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a doctor. Give her a stethoscope to listen with.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Doctor Who Rolled Up Paper to Hear a Heart",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-doctor", "templateLabel": "The Doctor Who Rolled Up Paper to Hear a Heart", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "doctor",
+          "notes": ["A stethoscope hears inside you", "Your heart sounds like lub-dub", "That sound is little doors closing", "Your heart beats about 100,000 times a day", "The word doctor means teacher"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Doctor Who Listens",
+          "text": "A doctor's job is to find out what is happening inside you. That is hard, because you are not see-through. So the doctor uses tools. The stethoscope lets her hear your heart. Lub-dub. Lub-dub. Those sounds are little doors inside your heart closing. The doors open to let blood through, then snap shut. A healthy heart beats about one hundred thousand times every day. You never have to think about it. The doctor listens, counts, and nods. Everything sounds right."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the doctor's job?", "Which tool lets the doctor hear your heart?", "What makes the lub-dub sound?"],
+          "rows": 2,
+          "answers": ["to find out what is happening inside you", "a stethoscope", "little doors inside your heart closing"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A doctor finds out what is happening ____ you.", "The ____ lets her hear your heart.", "Your heart sounds like ____.", "Little doors open, then snap ____."],
+          "wordBank": ["inside", "stethoscope", "lub-dub", "shut"],
+          "answers": ["inside", "stethoscope", "lub-dub", "shut"]
+        },
+        { "kind": "draw", "prompt": "Draw a doctor listening to your heart. Draw the sound coming up the tube.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Doctor Who Rolled Up Paper to Hear a Heart",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-doctor", "templateLabel": "The Doctor Who Rolled Up Paper to Hear a Heart", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "doctor",
+          "notes": ["The stethoscope was invented in 1816", "The first one was a rolled sheet of paper", "Stethos is Greek for chest", "Skopein is Greek for examine", "It still works the same way today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Tube Made of Paper",
+          "text": "In 1816, a doctor in Paris named Rene Laennec had a problem. To hear a patient's heart, a doctor had to press an ear straight onto the person's chest. It was awkward. It did not work well on everyone. One day Laennec remembered a game he had watched children play. They scratched one end of a long wooden beam, and a friend at the other end could hear the scratch travel through the wood. Laennec rolled a sheet of paper into a tight tube. He put one end on his patient's chest and the other end at his ear. The heartbeat came through louder and clearer than he had ever heard it. Later he built a better version out of wood. He named it the stethoscope, from two Greek words meaning chest and examine. Doctors still use it today, more than two hundred years later. It is the tool you picture when you picture a doctor."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How did doctors listen to a heart before 1816?",
+            "What did Laennec see children doing with a wooden beam?",
+            "What was the very first stethoscope made of?",
+            "Why do you think the heartbeat sounded louder through the tube than through the air?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they pressed an ear straight onto the person's chest",
+            "scratching one end so a friend could hear it at the other end",
+            "a rolled up sheet of paper",
+            "(inference: the tube carried the sound straight to his ear instead of letting it spread out)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["A Tube Made of Paper", "How to Draw a Wooden Beam", "The Best Games to Play in Paris"],
+          "answers": ["A Tube Made of Paper"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Laennec worked as a doctor in ____.", "He rolled a sheet of ____ into a tube.", "He named his invention the ____."],
+          "wordBank": ["Paris", "paper", "stethoscope"],
+          "answers": ["Paris", "paper", "stethoscope"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what problem did Laennec solve, and how did watching children help him solve it?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Doctor Who Rolled Up Paper to Hear a Heart",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-doctor", "templateLabel": "The Doctor Who Rolled Up Paper to Hear a Heart", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "doctor",
+          "notes": ["Rene Laennec, Paris, 1816", "Stethoscope: from stethos (chest) and skopein (examine)", "He wrote down what each lung sound meant", "Crackles, wheezes, murmurs, rattles", "He died of the disease he learned to hear"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Man Who Turned Listening Into Looking",
+          "text": "Doctors have always had the same problem: the body keeps its secrets on the inside. For most of history, a doctor could look at your skin, feel your pulse, and ask how you felt. Everything else was guesswork. Rene Laennec changed that in Paris in 1816. Listening to a heart meant pressing an ear directly against a patient's chest, which was uncomfortable for everyone and nearly useless on larger patients. Laennec remembered watching children send sound along a wooden beam, one scratching an end while another listened. He rolled a sheet of paper into a tube, set it on his patient's chest, and leaned in. The heart arrived with startling clarity. He spent the next three years turning the paper tube into wood and, more importantly, cataloging what came through it. Crackles. Wheezes. Murmurs. Rattles. He learned to match each sound to what he later found inside the body, and he wrote it all down so other doctors could learn the same language. He called the device the stethoscope, from the Greek stethos, meaning chest, and skopein, meaning to examine. The name is exact. He had turned listening into a way of seeing. There is a hard ending. Laennec spent his career listening to the ruined lungs of patients with tuberculosis, a disease that was everywhere in Paris and that nobody could cure. In 1826 he grew ill himself. His nephew examined him with a stethoscope, the instrument his uncle had invented, and heard tuberculosis in his chest. Laennec died that year at forty-five."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What does the passage mean when it says the body keeps its secrets on the inside?",
+            "Building the wooden tube was only half the work. What was the other half, and why does the author call it more important?",
+            "Explain the sentence: He had turned listening into a way of seeing.",
+            "Why is Laennec's ending described as hard? Use two details from the passage."
+          ],
+          "rows": 2,
+          "answers": [
+            "(you cannot see organs from outside, so a doctor has to find another way to know what is wrong)",
+            "cataloging the sounds and writing down what each one meant, so every doctor could use the tool, not just him",
+            "(the sounds told him what was damaged inside, so hearing gave him the information seeing would have)",
+            "(inference: he listened to tuberculosis for years, then died of it at forty-five, diagnosed by his own invention)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A doctor invented a simple tube and a language of sounds that let doctors examine the inside of a living body",
+            "Paper is stronger than wood for building medical tools",
+            "Tuberculosis was cured in Paris in 1826"
+          ],
+          "answers": ["A doctor invented a simple tube and a language of sounds that let doctors examine the inside of a living body"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["guesswork → ____", "cataloging → ____", "clarity → ____"],
+          "rows": 1,
+          "answers": [
+            "working something out without real evidence",
+            "listing and sorting things carefully so they can be looked up",
+            "how clear and easy to make out something is"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: Laennec invented his tool by borrowing an idea from a children's game. Describe another problem you could solve by borrowing an idea from somewhere unexpected. Give two reasons it would work.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Doctor Who Rolled Up Paper to Hear a Heart",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-doctor", "templateLabel": "The Doctor Who Rolled Up Paper to Hear a Heart", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "doctor",
+          "notes": ["Ignaz Semmelweis, Vienna, 1847", "He proved handwashing saved mothers' lives", "Germs had not been discovered yet", "Deaths fell from about 1 in 10 to about 1 in 50", "Doctors rejected him for eighteen years", "Pasteur and Lister proved him right too late"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Doctor Nobody Wanted to Believe",
+          "text": "In 1847, the Vienna General Hospital ran two maternity clinics side by side, taking women on alternating days. The clinics looked identical. They were not. In the first clinic, staffed by doctors and medical students, roughly one mother in ten died of a fever that swept the ward. In the second, staffed by midwives, the number was closer to one in twenty-five. Women in Vienna knew the difference. Some begged to be admitted to the second clinic. Some gave birth in the street rather than take their chances in the first. Ignaz Semmelweis, a young doctor working there, could not let the puzzle go. Same building. Same air. Same food. Same women. The only real difference was who delivered the babies, and what those people had been doing beforehand. The doctors and students spent their mornings dissecting bodies in the autopsy room, then walked upstairs to examine mothers. The midwives did not. That spring, a colleague of his, Jakob Kolletschka, cut his finger with a student's scalpel during an autopsy and died. Semmelweis read the report of Kolletschka's illness and recognized it: it was the same disease killing the mothers. Something invisible was traveling from the dead to the living on doctors' hands. Germs had not been discovered yet, so Semmelweis had no name for it. He called it cadaverous particles. He ordered every doctor to scrub with a chlorinated lime solution before entering the ward. Deaths in the first clinic collapsed within months, from roughly one in ten to about one in fifty. It should have made him famous. Instead it made him hated. His claim carried an insult inside it: that respectable doctors had been carrying death on their own hands. Colleagues mocked him. The hospital did not renew his position. He grew angrier and less careful with his arguments, and in 1865 he was committed to an asylum, where he died at forty-seven of an infected wound. Within two decades, Louis Pasteur and Joseph Lister proved that germs cause disease, and the handwashing Semmelweis had begged for became ordinary. He was right, and being right did not save him."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What single difference between the two clinics did Semmelweis identify as the cause? Quote the sentence that gives it away.",
+            "Why could Semmelweis not explain what he had found? Cite the passage.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain what the last sentence means and why the author saves it for the end."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: Semmelweis traced deadly fever to doctors' unwashed hands and cut deaths sharply; he was rejected and died before germ theory proved him right)",
+            "the doctors came from the autopsy room and the midwives did not; quote: The doctors and students spent their mornings dissecting bodies in the autopsy room, then walked upstairs to examine mothers",
+            "(germ theory did not exist yet; quote: Germs had not been discovered yet, so Semmelweis had no name for it)",
+            "(inform, with a persuasive edge: it gives dates and numbers, but the closing lines argue a point about how he was treated)",
+            "(evidence alone was not enough to protect him or to change minds; the author ends there so the injustice lands last)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["maternity → ____", "dissecting → ____", "cadaverous → ____", "committed → ____"],
+          "rows": 1,
+          "answers": [
+            "to do with giving birth and caring for new mothers",
+            "cutting open a body to study what is inside",
+            "to do with a dead body",
+            "placed in an institution, usually against your will"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says his claim carried an insult inside it. Explain why a true finding can be hard to accept.",
+            "Semmelweis had the numbers but not the explanation. Why might other doctors have wanted an explanation before changing what they did?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it blamed the doctors themselves, so accepting it meant admitting they had caused deaths)",
+            "(inference: without a reason, the pattern could look like coincidence, and people trust evidence more when they understand the mechanism)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: when the evidence is strong but nobody can explain why it works yet, should people act on it anyway? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Doctor Who Rolled Up Paper to Hear a Heart",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-doctor", "templateLabel": "The Doctor Who Rolled Up Paper to Hear a Heart", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "doctor",
+          "notes": ["Laennec, 1816: sound (the stethoscope)", "Semmelweis, 1847: the invisible on our hands", "Rontgen, 1895: X-rays, the first look at living bone", "Rontgen refused to patent his discovery", "He won the first Nobel Prize in Physics, 1901", "Each advance was resisted before it was adopted"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Learning to See Inside a Person",
+          "text": "A doctor's central problem has never changed: a patient can tell you where it hurts, but not why. The body keeps its business behind skin. For most of recorded history a physician worked from the outside only, reading the surface for clues and guessing at the rest. The history of medicine is largely the history of finding ways to perceive what the body hides, and of the arguments those ways started. The first breakthrough was sound. In 1816, Rene Laennec, a physician in Paris, needed to hear a patient's heart. The method of the day was to lay an ear directly on the chest, which was awkward and often useless. Laennec recalled watching children play with a wooden beam, one child scratching one end while another listened at the far end as the sound carried cleanly through the wood. He rolled a sheet of paper into a tight cylinder, placed one end on the chest, and put his ear to the other. The heart arrived louder than he had ever heard it. Over the next three years he refined the tube into turned wood and, more importantly, built a vocabulary for what came through it: crackles, wheezes, murmurs, rattles. He matched each sound to the damage he later found inside the body, and he published the pairings so that any doctor could learn them. He named the device the stethoscope, from the Greek stethos, chest, and skopein, to examine. The name is precise. He had converted listening into a form of looking. The second breakthrough was not a device but a fact nobody wanted. In 1847, at the Vienna General Hospital, Ignaz Semmelweis noticed that mothers in the clinic run by doctors died of fever at several times the rate of mothers in the clinic run by midwives. The buildings, the air, and the patients were the same. The hands were not: the doctors came to the ward straight from the autopsy room. When a colleague died after cutting himself during a dissection, of what Semmelweis recognized as the same disease, he concluded that something invisible rode from the dead to the living on physicians' hands. He ordered scrubbing with chlorinated lime, and deaths fell by roughly ninety percent. His reward was ridicule and dismissal. The finding was correct and unbearable, because it named doctors as the cause, and it arrived before germ theory existed to explain it. Semmelweis died in an asylum in 1865. Pasteur and Lister vindicated him within twenty years, which was twenty years too late for him and for a great many mothers. The third breakthrough made the hidden literally visible. On a November evening in 1895, Wilhelm Rontgen was working with a covered vacuum tube in Wurzburg when a screen across the room began to glow. Something was passing through the cardboard. He worked for weeks in near secrecy, then photographed his wife's hand: bones, dark and exact, with her wedding ring floating around a finger. She is said to have looked at the image and answered, I have seen my death. Rontgen called the unknown rays X. He refused to patent them, on the grounds that they belonged to everyone. Within a year, doctors on several continents were photographing fractures and bullets. Three problems, three answers, one shape. Each advance let doctors perceive something the body had kept private, and each met resistance in proportion to how much it asked the profession to change its habits. Laennec's tube was dismissed by physicians who preferred to trust their own bare ears. Semmelweis was destroyed. Rontgen, who threatened nobody's pride, was handed the first Nobel Prize in Physics. The pattern is worth remembering. The evidence usually arrives before the profession is ready to accept what it costs."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says Laennec's real contribution was more than the tube. Explain what it was and cite the evidence.",
+            "Explain the sentence: The finding was correct and unbearable. Why does the author join those two words?",
+            "The passage is built from three stories. Identify what the author does in the final paragraph and why that paragraph is necessary.",
+            "Analyze the last sentence. What claim is it making about people rather than about medicine, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the three advances and the resistance to each)",
+            "(the vocabulary of sounds and publishing it so others could use the tool; cite: he published the pairings so that any doctor could learn them)",
+            "(it was true and it blamed the doctors, so its truth is exactly what made it intolerable; the pairing shows accuracy did not make it welcome)",
+            "(the author steps back and names the pattern across all three cases, turning three anecdotes into an argument about resistance)",
+            "(it claims professions reject evidence based on cost to their pride, not on proof; supported by Semmelweis destroyed vs Rontgen rewarded)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["perceive → ____", "vindicated → ____", "resistance → ____", "in proportion to → ____"],
+          "rows": 2,
+          "answers": [
+            "to become aware of something through the senses",
+            "shown to have been right after being doubted or blamed",
+            "refusal to accept or go along with something",
+            "increasing or decreasing at the same rate as something else"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Rontgen refused to patent X-rays because he believed they belonged to everyone. Argue for or against that decision.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion, supported: reasons might include faster spread of a life-saving tool versus funding further research)",
+            "(student question + a credible source type, such as a medical history journal or a biography)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: An expert who is proven right eventually has still failed if nobody listened at the time. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

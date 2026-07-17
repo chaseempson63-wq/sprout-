@@ -1,0 +1,310 @@
+{
+  "key": "violin",
+  "title": "The Wooden Box That Sings",
+  "blurb": "Seventy pieces of wood, a stick strung with horsehair, and a sound that carries to the back of the hall.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Wooden Box That Sings",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-violin", "templateLabel": "The Wooden Box That Sings", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the strings. Find the bow." },
+        {
+          "kind": "image",
+          "imageKey": "violin",
+          "notes": ["It is made of wood", "It has four strings", "It is hollow inside", "The bow has horse hair on it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a violin. It is made of wood. It is hollow inside, like a little box. Four strings go across the top. The bow is a long stick with hair on it. You pull the bow across a string. The string shakes. The wood shakes too. Out comes a song. You hold a violin under your chin and play."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the music notes in each row. Write how many in the box.",
+          "emoji": "🎵",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bow    wood" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "violin", "right": "bow" },
+            { "left": "drum", "right": "sticks" },
+            { "left": "piano", "right": "keys" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own violin. Do not forget the four strings.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Wooden Box That Sings",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-violin", "templateLabel": "The Wooden Box That Sings", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "violin",
+          "notes": ["The bow hair comes from a horse tail", "Rosin is hard tree sap", "The two holes are shaped like the letter f", "The front is spruce wood", "It has no frets to help your fingers"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wooden Box That Sings",
+          "text": "A violin is a wooden box with a long neck. It has four strings. A player pulls a bow across the strings. The bow is not made of string. It is strung with hair from the tail of a real horse. On its own, that hair would just slide. So the player rubs it with rosin, a hard lump of tree sap, to help it grab. Now the hair grabs the string and lets go, again and again, very fast. That makes the string shake. The shaking travels down into the wooden box, and the box shakes the air inside it. The air pushes out through two holes shaped like the letter f. That is the sound you hear."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many strings does a violin have?", "What is the bow strung with?", "Why does the player rub the hair with rosin?"],
+          "rows": 2,
+          "answers": ["four", "hair from a horse tail", "so the hair can grab the string instead of sliding"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A violin is made of ____.", "The bow hair comes from a ____.", "The player rubs the hair with ____.", "The sound comes out of two ____."],
+          "wordBank": ["wood", "horse", "rosin", "holes"],
+          "answers": ["wood", "horse", "rosin", "holes"]
+        },
+        { "kind": "draw", "prompt": "Draw someone playing a violin. Add the bow in their hand.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Wooden Box That Sings",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-violin", "templateLabel": "The Wooden Box That Sings", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "violin",
+          "notes": ["The front is spruce, the back is maple", "The bridge is not glued on at all", "A little rod inside is called the soundpost", "In French the soundpost is called the soul", "Sound is really just air being pushed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Box Does the Singing",
+          "text": "Pluck a violin string on its own and you hear almost nothing. A string is thin. It cannot push much air, and pushing air is what making sound really means. So the violin cheats. Under the strings sits a thin piece of maple called the bridge. The strings press down on it. When a string shakes, the bridge shakes, and the bridge is glued to nothing. It just stands there, held up by the pull of the strings. The bridge passes the shaking into the front of the violin, which is a thin sheet of spruce wood. Now a wide piece of wood is moving the air instead of a thin string. Inside the box, a little wooden rod called the soundpost carries the shaking through to the back. The whole box breathes. Air rushes in and out of the two f shaped holes. That is why a violin is loud enough to fill a hall, and why a violin with a crack in it sounds wrong."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why is a violin string on its own so quiet?",
+            "What is the bridge made of, and what holds it up?",
+            "What does the soundpost do?",
+            "Why do you think a crack in the wood would change the sound?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it is thin, so it cannot push much air",
+            "maple; it is held up by the pull of the strings, not glue",
+            "it carries the shaking from the front of the box through to the back",
+            "(inference: the whole box has to shake together to make the sound)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Box Does the Singing", "How to Groom a Horse", "The Tallest Trees in the Forest"],
+          "answers": ["The Box Does the Singing"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The thin piece of maple under the strings is the ____.", "The front of the violin is made of ____.", "The rod inside the box is the ____."],
+          "wordBank": ["bridge", "spruce", "soundpost"],
+          "answers": ["bridge", "spruce", "soundpost"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a violin works, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Wooden Box That Sings",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-violin", "templateLabel": "The Wooden Box That Sings", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "violin",
+          "notes": ["Rosin is pine sap boiled down until it sets hard", "The bow holds roughly 150 horse tail hairs", "The A string vibrates 440 times a second", "Stick slip motion: grab, release, grab, release", "A squeaky door hinge works the same way", "No frets, so fingers must find each note"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Bow Has to Be Sticky",
+          "text": "A bow looks simple. A stick of wood, about one hundred and fifty hairs from a horse's tail pulled tight along it, and that is all. Look closer and the bow turns out to be doing something clever, hundreds of times a second. Draw a bow slowly across a string and you might expect the hair to slide, the way a hand slides down a banister. It does not. Before playing, the violinist rubs the hair with rosin, a hard amber lump of pine sap boiled down until it sets. Rosin makes the hair grip. So the hair catches the string and drags it sideways. The string stretches, resists, and finally snaps back past the hair. Then the hair catches it again. Grab, release, grab, release. On the A string of a violin, that cycle repeats four hundred and forty times every second, and each snap is a tiny pulse of energy fed into the instrument. Scientists call it stick slip motion. A creaking door hinge and a squeaking chalkboard do the same thing. The violin just does it on purpose, and in tune. That is also why a brand new bow, straight from the shop, makes no sound worth hearing. The hair is clean. It slides. Without rosin, a bow is only a stick with hair on it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain stick slip motion in your own words.",
+            "The passage says a new bow makes no sound worth hearing. Why not?",
+            "Why does the author bring up a creaking door hinge and a squeaking chalkboard?",
+            "The passage says each snap is a tiny pulse of energy. Where does that energy come from in the first place?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(the hair grips the string, drags it, lets it snap back, then grips again, over and over)",
+            "the hair has no rosin on it yet, so it slides instead of gripping",
+            "(inference: they are everyday examples of the same grab and release effect)",
+            "(inference: from the player's arm pulling the bow)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A bow only works because rosin makes the hair grip and release the string hundreds of times a second",
+            "Horses are the most useful animals in music",
+            "Old bows always sound better than new bows"
+          ],
+          "answers": ["A bow only works because rosin makes the hair grip and release the string hundreds of times a second"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["rosin → ____", "resists → ____", "pulse → ____"],
+          "rows": 1,
+          "answers": ["hardened pine sap rubbed on bow hair to make it grip", "pushes back against something", "a short burst of energy"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a violin makes sound, from the player's arm all the way to your ear. Use at least three words from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Wooden Box That Sings",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-violin", "templateLabel": "The Wooden Box That Sings", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "violin",
+          "notes": ["Andrea Amati of Cremona: oldest surviving violins, 1560s", "Antonio Stradivari died in 1737", "About 650 Stradivari instruments still exist", "The Lady Blunt sold for about $16 million in 2011", "Blind tests: players could not pick out the old Italians", "The design has barely changed in 450 years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Little Town That Made the Best Violins",
+          "text": "In the middle of the 1500s, in a small town in northern Italy called Cremona, a maker named Andrea Amati settled on a shape. Four strings, a waisted body, a curved top carved from spruce, a back and sides of maple, and two holes cut in the shape of the letter f. His oldest surviving violins were built in the 1560s. Nearly five hundred years later, the violin in a school orchestra today is still recognizably his design. Almost nothing else people used in the 1560s has survived unchanged. Cremona kept its advantage for two hundred years. The Amati workshop trained others. The most famous was Antonio Stradivari, who worked in the town until he died in 1737, in his nineties. He built well over a thousand instruments, and about six hundred and fifty of them still exist. Another Cremona maker, Giuseppe Guarneri, built fewer and died younger, and his violins are rarer still. Then the town's run ended. Nobody has ever explained why the great ones cluster in one place, in one span of years, in a handful of workshops. The instruments became legends, and legends get expensive. In 2011 a Stradivari violin known as the Lady Blunt sold for about sixteen million dollars. Soloists who cannot afford one borrow from banks and foundations, playing for decades on an instrument they will never own. For a long time the explanation for the price was the sound. Everyone knew a Stradivari sounded better. Wood grown slowly in a colder climate, a secret varnish, a lost recipe: the theories multiplied, and none was ever proven. Then researchers ran the obvious test. In 2012, and again in 2014, the scientist Claudia Fritz asked skilled violinists to play old Italian instruments and modern ones in a darkened room, wearing goggles, unable to see what was in their hands. The players could not reliably tell which was which. On average, they slightly preferred the new violins. That result did not lower any prices. It suggests that part of what people hear in a Stradivari is the label, the story, and the four hundred year old wood glowing under stage lights. It also suggests something more cheerful. If the best violins are not a lost secret, then the makers working today, in Cremona and everywhere else, are not chasing a ghost. They may already have caught it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did Claudia Fritz's experiment ask violinists to do, and what did it find?",
+            "Why did the players wear goggles in a darkened room? Quote the phrase the passage uses to explain it.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the result did not lower any prices. Why might that be, if the sound is not actually better?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering Cremona's design + the Stradivari legend + the blind tests)",
+            "play old Italian violins and modern ones without seeing them; they could not reliably tell which was which and slightly preferred the new ones",
+            "so they could judge only the sound; quote: unable to see what was in their hands",
+            "(inform, with detail: it gives dates, names, and test results; the last paragraph leans a little persuasive)",
+            "(inference: people are paying for the history, rarity, and story, not only the sound)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["recognizably → ____", "multiplied → ____", "soloists → ____", "reliably → ____"],
+          "rows": 1,
+          "answers": ["clearly enough to be identified", "grew in number", "players who perform alone in front of an audience", "in a way you can count on every time"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls the last point more cheerful. Explain why it might be good news for violin makers today.",
+            "Why would a blind test be a fairer way to judge an instrument than an ordinary one?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(if there is no lost secret, modern makers can match the old ones)",
+            "(inference: seeing the famous label would change what the player expects to hear)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is a violin worth sixteen million dollars? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Wooden Box That Sings",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-violin", "templateLabel": "The Wooden Box That Sings", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "violin",
+          "notes": ["Around 70 separate pieces of wood, joined with hide glue", "Spruce top, maple back and sides, ebony fingerboard", "Bridge and soundpost are held by pressure alone", "Air resonance in the body, like blowing across a bottle", "MIT, 2015: f holes grew longer and narrower over 200 years", "Radiated power tracks the hole's perimeter, not its area"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Seventy Pieces of Wood and One Argument",
+          "text": "A violin is about seventy separate pieces of wood, joined with hide glue that can be melted apart again by anyone who needs to open the instrument up. It weighs less than a can of soup. It has no electronics, no valves, no reeds, and no frets to tell your fingers where the notes are. It has barely changed since the 1560s. And a good one can be heard clearly at the back of a hall over an orchestra of a hundred players. Understanding how is a lesson in how sound actually works. Start with the string. A bowed string is a terrible loudspeaker. It is thin, so it slices through air rather than pushing it, and pushing air is the entire business of sound. Left to itself, a vibrating string is nearly silent. What the violin does, essentially, is convert a small fast motion into a large slow one, then hand it to something wide enough to shove air around. The chain runs like this. Rosin on the bow hair grips the string, drags it sideways, and lets it snap back, hundreds of times a second. The string's vibration passes into the bridge, a carved slip of maple two inches high that is not glued to anything and stands upright purely under the downward pressure of the strings. The bridge rocks. Its feet press into the top plate, a thin sheet of spruce chosen because spruce carries sound along its grain faster than almost any other wood while staying feather light. Inside the box, wedged between the top and the back and again held by nothing but friction, stands a rod of spruce called the soundpost. The French call it the soul. It couples the two plates so the whole body flexes, and it stiffens the top exactly under the treble foot of the bridge, so the top pivots rather than simply bouncing. The box now breathes. Air pumps in and out of the two f holes, and the enclosed air resonates like the note you get blowing across a bottle. Every one of those parts is a compromise. A thicker top is stronger and duller. A thinner top is louder and closer to breaking. Move the soundpost two millimeters and the instrument changes character. The maker is not carving a shape so much as tuning a system, mostly by tapping the wood and listening to it. The f holes are the strangest evidence that this tuning was found by trial rather than theory. In 2015, engineers at MIT measured hundreds of instruments built between the Amati workshop of the 1560s and Stradivari's shop around 1700, and found that the holes had grown steadily longer and narrower. That change matters, because air moves fastest at the edges of an opening, so the sound power a violin radiates depends on the perimeter of the hole rather than its area. Nobody in Cremona knew fluid dynamics. Makers copied instruments they liked, copied them imperfectly, kept the accidents that sounded better, and over roughly a century random error walked the design uphill toward a solution the mathematics only confirmed four hundred years later. That is the argument worth having about violins. The famous story says a genius in Cremona had a secret. The evidence says something less romantic and more interesting: a craft tradition, copying itself with small errors and keeping whatever worked, arrived at an answer no single person inside it could have reasoned out."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why a bowed string on its own is nearly silent, and what the violin body does about it. Cite the evidence.",
+            "The passage says every part is a compromise. Explain the compromise in the thickness of the top plate.",
+            "Identify the shift in the passage: where does it turn from explaining to arguing, and how does the author signal it?",
+            "Analyze the final sentence. What claim is the author making about how good design happens, and does the f hole evidence earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a thin string cannot move enough air; the body gives the vibration a wide surface; cite: it slices through air rather than pushing it)",
+            "(thicker is stronger but duller, thinner is louder but closer to breaking, so the maker must choose a point between them)",
+            "(at That is the argument worth having about violins; the author names it as an argument and states the two competing stories)",
+            "(that the design came from accumulated trial and error, not one genius; the f hole data supports gradual change but does not fully rule out individual skill)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["couples → ____", "resonates → ____", "perimeter → ____", "compromise → ____"],
+          "rows": 2,
+          "answers": [
+            "links two things so they move together",
+            "vibrates strongly at a particular pitch",
+            "the distance around the edge of a shape",
+            "a middle choice that gives up some of one thing to gain some of another"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says random error walked the design uphill. Explain what that phrase means and why it is a surprising way to describe craftsmanship.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(copying mistakes that happened to sound better were kept, so the design improved without anyone planning it)",
+            "(student question + a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The great violins of Cremona are proof of genius, not of luck. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

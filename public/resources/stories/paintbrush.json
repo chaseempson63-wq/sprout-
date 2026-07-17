@@ -1,0 +1,320 @@
+{
+  "key": "paintbrush",
+  "title": "The Brush That Drinks the Paint",
+  "blurb": "Three parts and one clever trick: how a bundle of hair picks up a liquid, carries it, and lets it go exactly where you want.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Brush That Drinks the Paint",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-paintbrush", "templateLabel": "The Brush That Drinks the Paint", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the hairs at the end of the brush." },
+        {
+          "kind": "image",
+          "imageKey": "paintbrush",
+          "notes": ["The long part is the handle", "The shiny ring is a ferrule", "The soft hairs are bristles", "One dip can draw a long line"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a paintbrush. It has a long handle. It has a shiny silver ring. It has soft hairs at the end. Dip the hairs in the paint. The hairs hold the paint. Now brush it on the paper. The paint comes off the hairs. You can make a line. You can make a dot. You can make a big red sun."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the brushes in each row. Write how many in the box.",
+          "emoji": "🖌️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "brush    paint" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each tool with what it touches.",
+          "pairs": [
+            { "left": "paintbrush", "right": "paint" },
+            { "left": "spoon", "right": "soup" },
+            { "left": "comb", "right": "hair" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a picture using only one color. Then draw the brush you used.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Brush That Drinks the Paint",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-paintbrush", "templateLabel": "The Brush That Drinks the Paint", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "paintbrush",
+          "notes": ["Three parts: handle, ferrule, bristles", "Say it FER-rul", "Paint hides between the hairs", "Never stand a brush on its tip", "Some bristles come from pigs"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Brush That Drinks the Paint",
+          "text": "A paintbrush has three parts. The handle is the long stick you hold. The ferrule is the shiny metal ring in the middle. Say it FER-rul. The hairs are called bristles. The ferrule holds the bristles tight so they do not fall out. When you dip the brush, paint sneaks into the tiny gaps between the bristles and stays there. That is why one dip can draw a long line. When you press down, the bristles bend and the paint slides onto the paper. Wash your brush when you are done. Then the paint will not dry hard inside."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What are the three parts of a paintbrush?", "What are the hairs called?", "Where does the paint hide?"],
+          "rows": 2,
+          "answers": ["the handle, the ferrule, and the bristles", "bristles", "in the tiny gaps between the bristles"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["You hold the ____.", "The shiny metal ring is the ____.", "The hairs are called ____.", "____ your brush when you are done."],
+          "wordBank": ["handle", "ferrule", "bristles", "Wash"],
+          "answers": ["handle", "ferrule", "bristles", "Wash"]
+        },
+        { "kind": "draw", "prompt": "Draw a paintbrush. Label the handle, the ferrule, and the bristles.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Brush That Drinks the Paint",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-paintbrush", "templateLabel": "The Brush That Drinks the Paint", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "paintbrush",
+          "notes": ["Handle, ferrule, bristles", "Capillary action pulls the paint in", "The wide middle is called the belly", "Pig bristles have split ends called flags", "Brushes come in round, flat, and fan shapes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Three Parts and a Tiny Trick",
+          "text": "Every paintbrush is made of three parts. The handle is the part you hold. The bristles are the hairs at the tip. Between them sits a metal tube called the ferrule, which grips the bristles and clamps onto the handle. The clever part is how a brush carries paint. The bristles are not glued into one solid lump. They are packed side by side with tiny gaps between them. When you dip the brush, paint creeps up into those gaps and stays. Scientists call this capillary action. It is the same reason a paper towel soaks up a spill. The brush is not just a tool. It is a small tank. Press the brush on paper and the bristles bend and spread. Paint leaves the gaps and sticks to the paper instead. Lift the brush and the bristles spring back into shape. A good brush can do this thousands of times. That is also why you never leave a brush standing on its tip in a jar. The bristles bend and never come back straight."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What job does the ferrule do?",
+            "What is capillary action, in your own words?",
+            "What happens to the bristles when you press the brush down?",
+            "Why do you think the writer calls the brush a small tank?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it grips the bristles and clamps onto the handle",
+            "the way paint creeps into the tiny gaps between the bristles and stays",
+            "they bend and spread, and the paint leaves the gaps",
+            "(inference: it holds a supply of paint inside it, like a tank holds liquid)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Three Parts and a Tiny Trick", "How to Build a Wooden Chair", "The Story of the First Painting"],
+          "answers": ["Three Parts and a Tiny Trick"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The metal tube is called the ____.", "Paint creeps into the tiny ____ between the bristles.", "This is called ____ action."],
+          "wordBank": ["ferrule", "gaps", "capillary"],
+          "answers": ["ferrule", "gaps", "capillary"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a paintbrush works, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Brush That Drinks the Paint",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-paintbrush", "templateLabel": "The Brush That Drinks the Paint", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "paintbrush",
+          "notes": ["The ferrule crimps onto the handle", "Capillary action: adhesion plus cohesion", "Hog bristle tips split into flags", "Sable comes from a weasel's tail", "Squirrel hair holds water but has no snap", "Never soak the ferrule"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tank on a Stick",
+          "text": "A paintbrush looks like the simplest tool in the art box. It is not. It is a small, carefully engineered tank. Start with the three parts. The handle balances the brush in your hand. The ferrule, the metal tube near the tip, crimps onto the handle and holds the hairs in a bed of glue. The hairs themselves do the work. Those hairs are chosen, not just cut. Natural brushes use hog bristle, goat, squirrel, or sable, the tail hair of a weasel called the kolinsky. Each kind behaves differently. Hog bristle is stiff and springy and pushes thick paint around. Its tips split naturally into little forks called flags, and the forks grab more paint. Sable is soft, holds a needle point, and snaps back to shape after every stroke. Squirrel hair holds a huge amount of water but has almost no spring. Synthetic brushes copy these hairs with tapered plastic filaments. The physics is the interesting part. Paint does not sit on the outside of a brush. It hides in the narrow channels between the hairs, pulled in and held there by capillary action, the same force that walks water up a paper towel. Press down and the hairs splay apart, the channels open, and paint releases onto the paper. Lift, and the hairs close and hold the rest back. That is also why water is the enemy of the ferrule. Soak a brush and water creeps past the hairs, swells the wooden handle, and softens the glue. The brush starts shedding, and no amount of careful painting brings it back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain how capillary action lets a brush carry paint.",
+            "Why would an artist painting thick, heavy paint choose hog bristle over squirrel hair?",
+            "The passage says the hairs are chosen, not just cut. What does that tell you about how brushes are made?",
+            "A friend leaves her brushes soaking in a jar overnight to save time. Explain what she is doing to them and why it cannot be undone."
+          ],
+          "rows": 2,
+          "answers": [
+            "paint is pulled into the narrow channels between the hairs and held there",
+            "(inference: hog bristle is stiff and springy, and its flags grab thick paint; squirrel has no spring)",
+            "(inference: brush making is careful, skilled work, and the hair type is picked for a job)",
+            "(water swells the handle and softens the glue in the ferrule, so the brush sheds hairs permanently)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A paintbrush is a carefully built tool that stores and releases paint using physics",
+            "Squirrels and pigs are the most useful animals on a farm",
+            "Painting is easier than most people think"
+          ],
+          "answers": ["A paintbrush is a carefully built tool that stores and releases paint using physics"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["ferrule → ____", "flags → ____", "capillary action → ____", "synthetic → ____"],
+          "rows": 1,
+          "answers": [
+            "the metal tube that holds the hairs onto the handle",
+            "the split forks on the tips of hog bristle that grab paint",
+            "the force that pulls liquid into narrow spaces and holds it",
+            "made by people rather than taken from an animal"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child why a paintbrush is more like a tank than a stick. Use two details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Brush That Drinks the Paint",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-paintbrush", "templateLabel": "The Brush That Drinks the Paint", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "paintbrush",
+          "notes": ["The point is never cut, the hairs are naturally tapered", "The belly of the brush is the reservoir", "Quill brushes were round because quills are round", "The flat ferrule arrived in the early 1800s", "John Goffe Rand patented the paint tube in 1841", "Chinese brushes are over 2,000 years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Most Underrated Tool in the Room",
+          "text": "Ask most people to name a piece of technology and they point at a screen. Almost nobody points at a paintbrush. They should. Look closely at a good round watercolor brush. It comes to a point so fine you could sign your name with it, and here is the surprising part: nobody cut that point. Every hair in the bundle is naturally tapered, thick through the middle and fine at the tip, and a brush maker sorts the hairs by hand, stands them upright in a small metal cup so the tips settle level, and ties the bundle before it ever meets a ferrule. Cutting the hairs would ruin the brush. A cut hair has a blunt end, and a bundle of blunt ends cannot make a point. The bundle then does something no solid tool can do. It stores liquid. Paint is pulled into the narrow spaces between the hairs by capillary action and held there against gravity. The wide middle of the bundle, which brush makers call the belly, works as a reservoir. Your fingers control the rest. Press, and the hairs splay, the channels widen, and paint flows out. Ease off, and the channels close and the brush keeps what is left for the next stroke. One dip can draw a line the length of your arm. The shape of the brush rewrote art history. For centuries brushes were round, because the only good way to bind hairs was to thread them into a bird quill, and quills are round. Then, in the early 1800s, brush makers began fitting hairs into a flattened metal ferrule. The flat brush was born, and with it the broad, loaded, visible stroke. Around the same time, an American painter named John Goffe Rand invented the collapsible metal paint tube. Suddenly an artist could carry paint outdoors and lay it on thick with a flat brush. The Impressionists did exactly that. Their loose, visible brushwork was not only a new idea about seeing. It was also a new idea about hardware. Every trade has its own brush. A house painter's brush is wide and stiff. A calligrapher in China writes with a soft brush of goat or weasel hair that has been made in much the same way for more than two thousand years. A model painter uses a brush with barely a dozen hairs in it. Same three parts. Same trick. Different job."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why can a brush maker not simply cut the hairs into a point? Quote the phrase the passage uses to explain it.",
+            "Explain what the belly of a brush is and what job it does.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the Impressionists had a new idea about hardware. Explain what that means."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the three parts, capillary storage, and the flat ferrule changing art)",
+            "a cut hair has a blunt end; quote: a bundle of blunt ends cannot make a point",
+            "the wide middle of the hair bundle; it works as a reservoir that stores the paint",
+            "(inform, with a persuasive opening: it defines terms and gives facts, but argues the brush is underrated)",
+            "(their new style depended on new tools, the flat ferrule brush and the paint tube, not only on new ideas)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["tapered → ____", "reservoir → ____", "ferrule → ____", "collapsible → ____"],
+          "rows": 1,
+          "answers": [
+            "getting gradually thinner toward one end",
+            "a store of liquid held for later use",
+            "the metal tube binding the hairs to the handle",
+            "able to be squashed down or folded up"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why would being able to carry paint outdoors change what artists chose to paint?",
+            "A brush with no spring holds lots of water. A brush with strong spring holds less. Explain the trade a painter is making when choosing between them."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: they could paint real light and weather on the spot instead of working from memory indoors)",
+            "(inference: more water means fewer dips but less control; more spring means sharper strokes but more reloading)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is the paintbrush a piece of technology? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Brush That Drinks the Paint",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-paintbrush", "templateLabel": "The Brush That Drinks the Paint", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "paintbrush",
+          "notes": ["Capillary action: adhesion plus cohesion", "The belly is the reservoir, the tip is the nozzle", "Kolinsky sable: tail hair of a Siberian weasel", "Hog bristle flags grab thick oil paint", "Flat ferrules arrived in the early 1800s", "Rand's collapsible paint tube: patented 1841", "Cave painters worked over 30,000 years ago"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Valve at the End of a Stick",
+          "text": "There is a good argument that the paintbrush is the most underrated machine ever built. It has no moving parts in the way an engine does, and yet it solves a problem that sounds impossible when you state it plainly: pick up a measured quantity of liquid, carry it through the air without dropping it, and then release it, in a controlled amount, exactly where you decide. The solution is geometry. A brush is not a lump of hair. It is a bundle of hairs held just far enough apart that the gaps between them become channels. Liquid entering those channels is caught by two forces at once: adhesion, which makes water molecules cling to the hair, and cohesion, which makes them cling to each other. Together they produce capillary action, the same effect that walks a spill up a paper towel and climbs water up the inside of a narrow glass tube. The thickest part of the bundle, which brush makers call the belly, is a reservoir. The tip is a nozzle. Your fingers are the throttle. Press, and the hairs splay, the channels widen, and paint leaves. Ease off, and the channels narrow and hold the rest back. A painter is not pushing paint. A painter is operating a valve. The craft is in the hair. A fine round brush comes to a point sharp enough to draw a line thinner than a pencil could, and the point is not cut. It cannot be cut. Each natural hair is already tapered along its length, fat through the middle and fine at the end, and a brush maker's job is to sort hairs by length and quality, stand them upright in a metal cup until the tips settle into a common curve, and bind the bundle without disturbing them. Cut the tips off and you get a bundle of blunt stumps that will never converge. Different hairs sell different behaviors. Hog bristle is coarse and stiff, and its ends split naturally into flags, small forks that grab thick oil paint and drag it across canvas. Kolinsky sable, taken from the tail of a Siberian weasel, is soft but has extraordinary snap: bend it and it returns to a needle point every single time. Squirrel is softer still and carries enormous volumes of water while offering almost no spring at all. Modern synthetic filaments are extruded from nylon or polyester and tapered by machine, and the good ones are now hard to tell apart from the animal they imitate. Hardware shapes art more often than art historians like to admit. For most of recorded history brushes were round, for an unglamorous reason: the best way to bind a bundle of hair was to thread it into a bird's quill, and a quill is a tube. In the early nineteenth century, brush makers began crimping hair into flattened metal ferrules. The flat brush arrived, and with it a stroke that was wide, heavily loaded, and unashamedly visible. In 1841 an American painter, John Goffe Rand, patented a collapsible metal tube for paint, which meant that for the first time paint could travel. Put those two objects in the same bag and you can walk into a field with a flat brush and a pocket of ready color and paint the light before it moves. The Impressionists did precisely that. Their revolution is usually explained as a new theory of perception. It was also a new toolkit. None of this is new. People were painting the walls of caves at least thirty thousand years ago, using chewed sticks, pads of moss and fur, bare fingers, and pigment blown through hollow bone. Every brush since has been another answer to the identical question those hands were asking. Hold a liquid. Carry it. Let it go on purpose."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the two forces behind capillary action and how they let a brush store paint. Cite the evidence.",
+            "The author says a painter is operating a valve. Explain the comparison and judge whether it is accurate.",
+            "Identify where the passage shifts from science to history, and explain how the author signals the turn.",
+            "Analyze the final three sentences. Why does the author end with such short ones, and what claim do they make about all brushes?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering storage by capillary action, hair craft, and the brush's effect on art)",
+            "(adhesion and cohesion; cite: adhesion, which makes water molecules cling to the hair, and cohesion, which makes them cling to each other)",
+            "(a valve controls the flow of a liquid; pressure on the hairs opens and closes the channels, so the comparison holds)",
+            "(at Hardware shapes art more often than art historians like to admit; a broad claim opens the new section)",
+            "(the short sentences land the argument that every brush in history solves one identical problem)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["adhesion → ____", "cohesion → ____", "converge → ____", "extruded → ____"],
+          "rows": 2,
+          "answers": [
+            "the sticking of a liquid to a different surface",
+            "the sticking of a liquid to itself",
+            "to come together at a single point",
+            "pushed out through a shaped hole to form a long strand"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author claims hardware shapes art more often than art historians like to admit. Is that claim proven by the passage, or only illustrated by one example? Explain.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(illustrated: the Impressionist case supports it, but one example does not prove a general rule)",
+            "(student question plus a credible source type, such as a brush maker or a materials science text)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The paintbrush deserves to be called a machine. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

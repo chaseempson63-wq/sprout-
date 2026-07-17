@@ -1,0 +1,320 @@
+{
+  "key": "mushroom",
+  "title": "The Mushroom Is the Smallest Part",
+  "blurb": "The red-and-white mushroom from every storybook is real, poisonous, and only the tip of something huge under the ground.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "The Mushroom Is the Smallest Part",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-mushroom", "templateLabel": "The Mushroom Is the Smallest Part", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the red cap. Find the white spots." },
+        {
+          "kind": "image",
+          "imageKey": "mushroom",
+          "notes": ["Its cap is red", "The spots are white", "It grows near trees", "Do not touch this one", "Most of it hides under the ground"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a mushroom. It is red. It has white spots on top. It grows in the woods. It grows near a tree. Look at it. Do not touch it. This one can make you sick. Under the ground are little white threads. The threads are alive. The mushroom grew up from the threads. The threads are the rest of it. Most of the mushroom is under your feet."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the white spots in each row. Write how many in the box.",
+          "emoji": "⚪",
+          "items": ["4", "2", "6", "3"],
+          "answers": ["4", "2", "6", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "red    cap" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "mushroom", "right": "woods" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a red mushroom with white spots. Add the tree it grows next to.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Mushroom Is the Smallest Part",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-mushroom", "templateLabel": "The Mushroom Is the Smallest Part", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "mushroom",
+          "notes": ["This one is called a fly agaric", "It is poisonous, so look but do not eat", "The spots are bits of torn skin", "Rain can wash the spots off", "White threads spread out under it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mushroom With Spots",
+          "text": "The mushroom in the picture is real. People call it the fly agaric. Say it FLY AG-a-rik. When it is young, it comes up wrapped in a white skin, like an egg. The red cap pushes through and tears the skin. The white bits stay stuck on top. Those are the spots. Rain can wash them off. The fly agaric is pretty, and it is poisonous. Never eat a mushroom you find outside. Under the mushroom, thin white threads spread through the dirt. Those threads eat old leaves and old wood. The mushroom is just the part that pops up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is this mushroom called?", "Where do the white spots come from?", "What do the white threads eat?"],
+          "rows": 2,
+          "answers": ["the fly agaric", "the white skin that tore when the cap pushed through", "old leaves and old wood"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["This mushroom is called the fly ____.", "The white spots are bits of torn ____.", "Under the ground are thin white ____.", "Never ____ a mushroom you find outside."],
+          "wordBank": ["agaric", "skin", "threads", "eat"],
+          "answers": ["agaric", "skin", "threads", "eat"]
+        },
+        { "kind": "draw", "prompt": "Draw the mushroom in the woods. Then draw the white threads hiding under the ground.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Mushroom Is the Smallest Part",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-mushroom", "templateLabel": "The Mushroom Is the Smallest Part", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "mushroom",
+          "notes": ["Its real name is the fly agaric", "The threads under it are called mycelium", "Say it my-SEE-lee-um", "A mushroom drops billions of spores", "It grows near birch and pine trees", "It is poisonous, so never taste one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Part You See Is the Small Part",
+          "text": "You know this mushroom. It is red with white spots, and it shows up in storybooks and games. It is real. Its name is the fly agaric, and it grows in forests all over the north, usually near birch and pine trees. Here is the strange part. The mushroom is not the whole living thing. It is more like an apple on a tree. The rest of it is under your shoes. Thin white threads spread through the soil, thinner than a hair, weaving through dead leaves and old wood. Together those threads are called mycelium. Say it my-SEE-lee-um. The mycelium is the fungus. It has been growing down there quietly, sometimes for years. When it has stored enough food and the weather turns wet, it pushes up a mushroom. The mushroom has one job: make spores and let them go. Spores do the work seeds do for a plant, but they are far smaller. One mushroom can drop billions of them. Then the mushroom rots away, and the mycelium keeps going."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are the thin white threads under the ground called?",
+            "The passage says a mushroom is like an apple on a tree. What does it mean by that?",
+            "What is the mushroom's one job?",
+            "Why do you think the fungus waits for wet weather before it pushes up a mushroom?"
+          ],
+          "rows": 2,
+          "answers": [
+            "mycelium",
+            "the mushroom is only a small part of a much bigger living thing",
+            "to make spores and let them go",
+            "(inference: a mushroom is mostly water, so it needs rain to grow; spores travel better in damp weather)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Part You See Is the Small Part", "How to Cook With Mushrooms", "The Tallest Pine Tree in the Forest"],
+          "answers": ["The Part You See Is the Small Part"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The threads under the ground are called ____.", "A mushroom makes and drops ____.", "The fly agaric grows near ____ and pine trees."],
+          "wordBank": ["mycelium", "spores", "birch"],
+          "answers": ["mycelium", "spores", "birch"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about mushrooms, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Mushroom Is the Smallest Part",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-mushroom", "templateLabel": "The Mushroom Is the Smallest Part", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mushroom",
+          "notes": ["Fungi are not plants at all", "They are closer relatives of animals", "A mushroom is a fruiting body", "The mycelium is the real organism", "Fungi digest food outside their bodies", "Most plants on Earth have fungi on their roots"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Not a Plant, Not an Animal",
+          "text": "For a long time, people filed fungi under plants. They grow out of the ground, they do not move, so plant seemed close enough. It was wrong. A plant makes its own food out of sunlight. A fungus cannot. A fungus has to find food that is already made, which is the same problem you have, and me. Fungi turn out to be closer relatives of animals than of plants. The way a fungus eats is the part worth knowing. You put food inside your body and then digest it. A fungus does the reverse. It grows into its food, floods it with chemicals called enzymes, and lets the food break apart out there in the soil. Then it soaks up the pieces. A fungus digests the world outside itself and drinks the result. What you call a mushroom is only the fruiting body, the part built to make spores. The living network underneath is the mycelium: threads finer than sewing thread, spreading through leaf litter and rotten logs, sometimes for many yards in every direction. Some of that mycelium does something surprising. It wraps around tree roots and makes a trade. The fungus hands over water and minerals it pulled from the soil. The tree hands back sugar it made from sunlight. The fly agaric in the picture lives that way, tied to birch and pine roots. Both sides come out ahead, which is why most plants on Earth have a fungus attached to their roots right now."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, explain how a fungus eats. How is that different from the way you eat?",
+            "The passage says a mushroom is only the fruiting body. What is the rest of the fungus, and where is it?",
+            "Why do you think people used to file fungi under plants? What made that a reasonable mistake?",
+            "Explain the trade between the fungus and the tree. What does each side give, and what does each side get?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it grows into its food, releases enzymes to break the food apart outside itself, then soaks up the pieces; we swallow food and digest it inside",
+            "the mycelium, a network of fine threads spreading underground through leaf litter and rotten logs",
+            "(inference: fungi come out of the ground and do not move, which is how plants behave)",
+            "the fungus gives water and minerals and gets sugar; the tree gives sugar and gets water and minerals"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Fungi are neither plants nor animals, and the mushroom is only a small piece of a hidden network that eats in reverse",
+            "Mushrooms are the fastest growing plants in any forest",
+            "Trees would grow much better if fungi were removed from the soil"
+          ],
+          "answers": ["Fungi are neither plants nor animals, and the mushroom is only a small piece of a hidden network that eats in reverse"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["enzymes → ____", "fruiting body → ____", "mycelium → ____", "leaf litter → ____"],
+          "rows": 1,
+          "answers": [
+            "chemicals a fungus releases to break food apart",
+            "the part a fungus builds to make and release spores",
+            "the network of fine threads that is the actual fungus",
+            "the layer of dead fallen leaves on the forest floor"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if fungi disappeared from a forest tomorrow, what would change? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Mushroom Is the Smallest Part",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-mushroom", "templateLabel": "The Mushroom Is the Smallest Part", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mushroom",
+          "notes": ["Fly agaric: the storybook mushroom, and a real one", "Lignin makes wood tough; white rot fungi break it", "Mushrooms inflate with water, they do not build overnight", "Mycorrhiza: minerals traded for a tree's sugar", "One Oregon honey fungus covers about 2,385 acres", "That single organism is around 2,400 years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Quiet Engine Under the Forest",
+          "text": "Walk into a forest and you are walking on the roof of something enormous. Every autumn a forest drops an immense weight of leaves, and every year old trees fall. None of it piles up. Something takes it apart and hands the pieces back. That something is mostly fungi. Wood is difficult to eat. It is stiffened with lignin, a tough tangled substance that most living things simply cannot break. A group of fungi called white rot can. They grow their threads into a fallen log and release enzymes that pull the lignin apart, and over years the log softens, darkens, and finally crumbles into soil. The carbon and the minerals locked inside it go back into circulation, ready for the next tree. Without that work, a forest would eventually bury itself in its own dead wood. The threads doing this are called mycelium, and they are the actual organism. A mushroom is only its fruiting body, thrown up for a few days to release spores. That is why mushrooms seem to appear overnight. The fungus is not building them from nothing. The structure is already there underground, folded and waiting, and a good rain lets it pump full of water and inflate, the way a tent goes up in minutes after weeks of packing. The mushroom in the picture is a fly agaric, the red cap with the white flecks that storybooks have used for centuries. The flecks are shreds of a white veil the whole mushroom wore as it emerged. It is beautiful, it is genuinely poisonous, and it is also generous: its mycelium sheathes the roots of birch and pine and trades them water and minerals for sugar. The scale of all this is easy to underestimate. In a forest in eastern Oregon, one honey fungus has been mapped across roughly 2,385 acres, growing outward from a single starting point for something like 2,400 years. It is one continuous organism, and almost nobody standing on top of it would notice a thing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is lignin, and why does it matter that white rot fungi can break it down?",
+            "Explain why mushrooms seem to appear overnight. Quote the comparison the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author calls the fly agaric poisonous and generous in the same sentence. Why put those two words together?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering fungi as decomposers + mushroom as fruiting body + the hidden scale)",
+            "the tough substance that stiffens wood; white rot fungi recycle fallen trees so a forest does not bury itself in dead wood",
+            "the structure is already built underground and inflates with water; quote: the way a tent goes up in minutes after weeks of packing",
+            "(inform, with detail: it defines lignin and mycelium and gives measured figures; some persuasive wonder in the opening and closing lines)",
+            "(to overturn the reader's assumption that a dangerous thing cannot also be useful; the fly agaric both harms and feeds)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["lignin → ____", "enzymes → ____", "fruiting body → ____", "sheathes → ____"],
+          "rows": 1,
+          "answers": [
+            "the tough substance that stiffens wood",
+            "chemicals released to break a material apart",
+            "the short-lived structure built to release spores",
+            "wraps closely around, like a cover"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage opens by saying you are walking on the roof of something enormous. Explain what the author means.",
+            "Why might one continuous organism spread over 2,385 acres be harder to notice than a single large animal?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the forest floor sits on top of a vast hidden mycelial network)",
+            "(inference: it is underground, has no single body or outline, and only shows itself as scattered mushrooms)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the passage calls fungi the reason dead things go away. Is that a bigger job than what green plants do? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Mushroom Is the Smallest Part",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-mushroom", "templateLabel": "The Mushroom Is the Smallest Part", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mushroom",
+          "notes": ["Amanita muscaria, the fly agaric", "The spots are shreds of a torn universal veil", "Hyphae are the threads; mycelium is the network", "White rot fungi are among the few things that digest lignin", "Mycorrhiza: about 9 in 10 plant species use it", "Armillaria ostoyae in Oregon: one organism, 2,385 acres"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fungus Under Your Feet",
+          "text": "Almost everyone can draw a mushroom. Red dome, white dots, a pale stalk. That drawing is not invented. It is a fly agaric, Amanita muscaria, a real mushroom of birch and pine forests across the northern world, and it has decorated illustrations for so long that most people assume it is a cartoon. It is not. It is poisonous, it is common, and it is almost entirely misunderstood, starting with the dots. The dots are not markings. A young fly agaric pushes up from the soil sealed inside a white membrane called the universal veil, wrapped like an egg. As the cap swells it splits that membrane, and the torn remains cling to the red surface as flecks. Heavy rain can wash them off, and a spotless fly agaric confuses people who thought the spots were part of the design. They were the packaging. The larger misunderstanding is the mushroom itself. It is not the organism. It is the fruiting body, a temporary structure the organism builds to release spores. The organism is underneath: a network of threads called hyphae, thinner than a human hair, branching endlessly through the soil and known collectively as mycelium. A handful of forest soil can hold miles of it. The mycelium may live for decades or centuries. The mushroom lasts a week. Judging a fungus by its mushroom is like judging an apple tree by one apple, except the tree is invisible and the apple is the only part that ever surfaces. Fungi make a living in a way that has no real parallel among plants or animals. A plant builds its own food from light. An animal swallows food and digests it internally. A fungus does neither and both: it grows directly into whatever it intends to eat, releases enzymes that dismantle the material outside its body, and absorbs the fragments. Digestion first, ingestion second. That reversal is why fungi can eat things nothing else will touch. Wood is stiffened by lignin, a chaotic, irregular polymer that resists almost every enzyme evolution has produced, and a specialized group known as white rot fungi break it down anyway. Because they do, a forest recycles itself instead of drowning in its own timber. Whatever else fungi are, they are the reason dead things go away. Not all of the relationship is destruction. Roughly nine out of ten plant species grow with fungi laced around or into their roots, an arrangement called mycorrhiza. The fungus, whose threads reach where roots cannot, delivers water, phosphorus and nitrogen. The plant, which can do the one thing the fungus cannot, delivers sugar. The fly agaric lives exactly this way, wrapped around birch and pine roots, and the most storybook organism in the forest turns out to be a working partner in the economy that keeps the forest standing. The scale is the part that unsettles people. In Oregon's Malheur National Forest, a single honey fungus, Armillaria ostoyae, has been traced across about 2,385 acres, one genetically continuous individual estimated at 2,400 years old or more. There is no landmark. You could walk across it for an hour and see nothing but trees. This is roughly the point where popular accounts reach for the phrase wood wide web and describe a forest as a wired network trading nutrients and warnings between trees. The underground connections are real and measurable. What the phrase does with them, cooperative forests, mother trees deliberately feeding their young, is a much larger claim, and in 2023 a group of researchers reviewed the field and reported that the evidence from real forests is thinner and more mixed than the popular telling suggests. That is not a scandal. It is what an argument looks like while it is still being had, and it is a useful reminder that the most repeated fact about fungi may be the least settled one. The reliable version is quieter and strange enough on its own. Under the leaves, without light, without a nervous system, without moving, something has been eating the forest and feeding it at the same time for thousands of years, and it announces itself once a season by pushing a red dome into the air."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the white dots actually are. Cite the three-word sentence the author uses to sum this up.",
+            "The author writes that a fungus does neither and both. Explain what that means, and cite the four-word phrase that compresses the idea.",
+            "Identify the shift in the passage: where does it turn from reporting facts to weighing a claim, and how does the author signal it?",
+            "The author says the 2023 finding is not a scandal. Analyze what that move is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "torn scraps of the universal veil that wrapped the young mushroom; cite: They were the packaging.",
+            "(a fungus neither photosynthesizes like a plant nor ingests then digests like an animal; it digests outside and absorbs; cite: Digestion first, ingestion second.)",
+            "(at the wood wide web paragraph; the author separates what is measurable from what is claimed, then dates the counter-evidence to 2023)",
+            "(it reframes a correction as normal science rather than fraud, protecting the reader's trust; cite: It is what an argument looks like while it is still being had)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["hyphae → ____", "lignin → ____", "mycorrhiza → ____", "genetically continuous → ____"],
+          "rows": 2,
+          "answers": [
+            "the individual threads that branch through soil and together form mycelium",
+            "the tough irregular polymer that stiffens wood and resists most enzymes",
+            "the partnership in which fungal threads trade water and minerals to a plant root for sugar",
+            "all one individual, sharing the same genes, rather than many separate organisms"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the most repeated fact about fungi may be the least settled one. Explain why a striking claim can spread faster than the evidence behind it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a vivid, story-shaped claim is easy to retell and gets cited more than the careful qualifications around it)",
+            "(student question + a credible source type, for example a peer-reviewed field study or a mycologist)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: calling a mushroom the organism is not a small mistake, it changes what you think a forest is. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

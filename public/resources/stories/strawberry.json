@@ -1,0 +1,317 @@
+{
+  "key": "strawberry",
+  "title": "The Berry That Is Not a Berry",
+  "blurb": "The red part is not the fruit, the dots are, and the whole thing was invented by accident three hundred years ago.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Berry That Is Not a Berry",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-strawberry", "templateLabel": "The Berry That Is Not a Berry", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the little dots with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "strawberry",
+          "notes": ["It is red and sweet", "It grows close to the ground", "It starts as a white flower", "The dots are on the outside", "A bee helps it grow"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a strawberry. It is red. It is sweet. Look at the tiny dots on the outside. Count some with your finger. A strawberry grows on a small green plant, close to the ground. It starts as a white flower. A bee comes to the flower. Then the middle of the flower gets fat. It turns red. Now you can pick it and eat it."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the strawberries in each row. Write how many in the box.",
+          "emoji": "🍓",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "red    sweet" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each fruit to its color.",
+          "pairs": [
+            { "left": "strawberry", "right": "red" },
+            { "left": "banana", "right": "yellow" },
+            { "left": "grape", "right": "purple" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big strawberry. Put lots of little dots on the outside.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Berry That Is Not a Berry",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-strawberry", "templateLabel": "The Berry That Is Not a Berry", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "strawberry",
+          "notes": ["One strawberry has about 200 dots", "It starts as a white flower", "Bees help it grow", "The plant sends out runners", "It grows low to the ground"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Berry That Is Not a Berry",
+          "text": "A strawberry starts out as a white flower. A bee lands on the flower and moves the pollen around. Then the petals fall off. The middle of the flower begins to swell. It gets bigger and bigger. It turns from green to white to red. Most people call the little dots on the outside seeds. One strawberry can have about two hundred of them. The plant does something else that is clever. It sends out a long green arm called a runner. The runner reaches across the dirt and puts down roots. Now there is a brand new plant."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What color is the flower before the strawberry grows?", "What does the bee move around the flower?", "What does the runner put down when it reaches across the dirt?"],
+          "rows": 2,
+          "answers": ["white", "the pollen", "roots"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A strawberry starts out as a white ____.", "A bee moves the ____ around.", "Most people call the little dots ____.", "The plant sends out a long green arm called a ____."],
+          "wordBank": ["flower", "pollen", "seeds", "runner"],
+          "answers": ["flower", "pollen", "seeds", "runner"]
+        },
+        { "kind": "draw", "prompt": "Draw a strawberry plant. Add a white flower, a red strawberry, and a runner reaching across the dirt.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Berry That Is Not a Berry",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-strawberry", "templateLabel": "The Berry That Is Not a Berry", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "strawberry",
+          "notes": ["Each dot is called an achene", "Say it ay-KEEN", "About 200 dots on one strawberry", "The red part is a swollen flower base", "Bees pollinate every dot"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Dots Are the Real Fruit",
+          "text": "Bite into a strawberry and you are eating something strange. The soft red part is not the fruit at all. It is the swollen middle of the flower, and it grew fat to hold something up: the little dots. Each dot is called an achene. Say it like this: ay-KEEN. Each achene is a tiny dry fruit, and each one holds one seed. So a strawberry is not one fruit. It is about two hundred tiny fruits riding on a red cushion. The cushion has a job. It is sweet and bright so that birds and animals will eat it and carry the seeds away. There is one more surprise. Every one of those dots has to be pollinated, and bees do most of that work as they carry pollen from flower to flower. If a dot gets missed, the red part underneath it never swells. That is why some strawberries come out lumpy and crooked. The shape of a strawberry is a map of where the bees went."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the soft red part of a strawberry really made from?",
+            "What is each little dot called, and what is inside it?",
+            "Why is the red cushion sweet and bright?",
+            "Why do you think a lumpy strawberry tastes just as good as a smooth one?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the swollen middle of the flower",
+            "an achene, and it holds one seed",
+            "so birds and animals will eat it and carry the seeds away",
+            "(inference: the lumps only show where bees missed, the red part is the same)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Dots Are the Real Fruit", "How to Bake a Strawberry Cake", "Why Bees Live in Hives"],
+          "answers": ["The Dots Are the Real Fruit"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Each little dot is called an ____.", "The red part is the swollen middle of the ____.", "A bee carries ____ from flower to flower."],
+          "wordBank": ["achene", "flower", "pollen"],
+          "answers": ["achene", "flower", "pollen"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the strawberry, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Berry That Is Not a Berry",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-strawberry", "templateLabel": "The Berry That Is Not a Berry", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "strawberry",
+          "notes": ["Not a berry, botanically", "The dots are the real fruits", "Grapes, tomatoes and bananas ARE berries", "In the rose family with apples and cherries", "Red comes from pigments called anthocyanins", "It stops getting sweeter the moment it is picked"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Fruit That Is Not a Berry",
+          "text": "Botanists have a rule for what counts as a berry, and the strawberry breaks it. A true berry grows from a single ovary in the flower and holds its seeds inside. By that rule, a grape is a berry. A tomato is a berry. A banana is a berry. A strawberry is not. What we eat is the receptacle: the small pad at the base of the flower that once held the petals. After pollination, that pad balloons outward, floods with sugar and with red pigments called anthocyanins, and becomes the thing in your hand. The actual fruits are the dots stuck to its surface. Each dot, called an achene, is a dry one-seeded fruit of its own. Because the strawberry is built from many fruits arranged on a fleshy base, botanists call it an aggregate accessory fruit. Accessory means the tasty part came from something other than the ovary. The strawberry belongs to the rose family, which makes it a cousin of apples, cherries, almonds, and roses themselves. That family resemblance shows in the flower: five white petals, a crowd of yellow stamens, and a scent you can pick up from a step away. One more thing separates a strawberry from a banana. A banana keeps ripening after you pick it. A strawberry does not. It softens, it dulls, it eventually spoils, but it will never get sweeter than the moment it left the plant. Whatever sweetness it has, it earned in the field."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what makes a fruit a true berry?",
+            "Explain why a strawberry is called an accessory fruit.",
+            "The passage says a strawberry never gets sweeter after picking. What does that tell you about picking strawberries too early?",
+            "Why might a grocery store choose a strawberry that travels well over one that tastes best?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(it grows from one ovary and holds its seeds inside its flesh)",
+            "the part we eat grew from the receptacle, not from the ovary",
+            "(inference: an early-picked strawberry stays sour forever, so timing is everything)",
+            "(inference: fruit has to survive shipping, and firmness matters more to a store than flavor)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The strawberry is built from parts that break the usual rules for fruit",
+            "Bananas are the healthiest fruit you can eat",
+            "Roses and strawberries look exactly the same"
+          ],
+          "answers": ["The strawberry is built from parts that break the usual rules for fruit"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["receptacle → ____", "achene → ____", "anthocyanins → ____", "accessory → ____"],
+          "rows": 1,
+          "answers": [
+            "the pad at the base of the flower that swells into the red part",
+            "a dry fruit with one seed, the dots on a strawberry",
+            "the red pigments that give the fruit its color",
+            "the eaten part came from something other than the ovary"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger kid why a strawberry is not really a berry. Use at least two facts from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Berry That Is Not a Berry",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-strawberry", "templateLabel": "The Berry That Is Not a Berry", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "strawberry",
+          "notes": ["Fragaria x ananassa", "A hybrid that appeared in France in the 1750s", "Chilean size crossed with North American flavor", "Named for its faint pineapple smell", "Wild European strawberries are fingernail-sized", "Duchesne solved the puzzle at nineteen"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fruit That Was Invented by Accident",
+          "text": "For most of human history, a strawberry was a small thing. The wild woodland strawberry of Europe, Fragaria vesca, produces fruit about the size of a fingernail. It is intensely fragrant and it is gone in two bites. People gathered it from forest edges for thousands of years and never expected more. The strawberry you know is barely three hundred years old, and nobody set out to make it. Early in the 1700s, a French military engineer named Amedee-Francois Frezier sailed to Chile. His official job was mapping harbors and fortifications for the king. Along the coast he found farmers growing a strawberry with fruit the size of a walnut. He dug up five plants and kept them alive for six months at sea by sharing his own drinking water with them. They reached France in 1714. They flowered. They did not fruit. Frezier had, without knowing it, collected only female plants. The Chilean strawberry keeps its males and females on separate plants, and he had left every male behind in South America. The plants were parceled out to gardens in Brittany. Someone set them near a different import: Fragaria virginiana, a smaller strawberry brought from eastern North America and prized for its deep flavor. Bees did the rest. The cross produced a plant with the size of one parent and the flavor of the other, and its fruit smelled faintly of pineapple. Gardeners named it the pineapple strawberry, Fragaria ananassa. The person who worked out what had happened was a teenager. Antoine Nicolas Duchesne, nineteen years old, studied the strawberry beds at Versailles, tracked which plants had crossed with which, and published his findings in 1766. He showed that a brand new kind of fruit had appeared in a garden, made by two species from two continents that had never met at home. Almost every strawberry sold today descends from that accident."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why did Frezier's Chilean plants flower but produce no fruit?",
+            "Explain what each parent species contributed to the modern strawberry. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author calls the modern strawberry an accident. Is that fair? Explain using the text."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the small wild strawberry, the Chilean import, and the accidental cross)",
+            "they were all female plants and the males had been left behind in South America",
+            "Chile gave size and North America gave flavor; quote: the size of one parent and the flavor of the other",
+            "(inform, with detail: it gives dates, names, and species; the storytelling makes it entertaining too)",
+            "(fair: nobody planned the cross, bees did it; though people did choose to plant them side by side)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["fragrant → ____", "parceled out → ____", "import → ____", "descends from → ____"],
+          "rows": 1,
+          "answers": [
+            "strong smelling in a pleasant way",
+            "divided up and handed around",
+            "something brought in from another country",
+            "comes down from as an ancestor"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Frezier gave up part of his water ration on a six month voyage for five plants. What does that choice tell you about him?",
+            "Why would a nineteen year old be able to solve a puzzle that older gardeners had missed?"
+          ],
+          "rows": 3,
+          "answers": ["(opinion: he valued the discovery over his own comfort)", "(opinion: he watched carefully and kept records rather than assuming he already knew)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was Frezier a scientist or a spy who got lucky? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Berry That Is Not a Berry",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-strawberry", "templateLabel": "The Berry That Is Not a Berry", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "strawberry",
+          "notes": ["Fragaria x ananassa, rose family", "Aggregate accessory fruit, not a berry", "About 200 achenes per fruit", "Hormones from each achene tell the flesh to swell", "Runners produce clones, not seeds", "Hybrid origin: chiloensis crossed with virginiana"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Strawberry Is Not What You Think It Is",
+          "text": "Almost everything you assume about a strawberry is wrong, starting with the word berry. Botany defines a berry as a fruit that develops from a single ovary and carries its seeds inside its own flesh. Grapes qualify. Tomatoes qualify. Bananas qualify. The strawberry fails on both counts. The red flesh did not grow from an ovary at all. It grew from the receptacle, the small pad at the center of the flower where the petals attach. After pollination that pad swells, loads itself with sugars and with red pigments called anthocyanins, and presents itself to the world as fruit. It is, in the strictest sense, a costume. The real fruits are the dots. Each one is an achene, a dry, hard, single-seeded fruit no bigger than a comma, and an average strawberry carries around two hundred of them. So the object in your hand is not a fruit. It is roughly two hundred fruits standing on a sweet red platform. Botanists file it under aggregate accessory fruit, where aggregate means many and accessory means the delicious part came from somewhere it had no business coming from. The arrangement has consequences. Each achene must be pollinated separately, and each pollinated achene releases hormones that tell the tissue directly beneath it to swell. Fertilize every dot and the receptacle expands evenly into the shape people expect. Miss a patch, and the flesh under that patch stays flat. A lumpy, pinched, lopsided strawberry is not a defective strawberry. It is an honest record of which flowers the bees did not finish. The plant hedges its bets in a second way. Alongside seeds, a strawberry sends out runners, long horizontal stems that crawl across the soil, stop, and put down roots. The new plant is a clone, genetically identical to its parent, and it can do the same thing again. One plant becomes a colony. This is why a strawberry field can be, in effect, a single individual copied across acres, and why a disease that defeats one plant defeats all of them. The last surprise is that the strawberry on your plate is an invention, and a recent one. Europe's native woodland strawberry is the size of a fingernail. The large fruit came from Chile, carried to France in 1714 by an engineer named Amedee-Francois Frezier, who kept five plants alive at sea by sharing his water ration. His plants were all female and produced nothing. Only when they were set in French gardens beside a strawberry imported from eastern North America, and bees crossed the two, did the modern strawberry exist at all. A teenage botanist named Antoine Nicolas Duchesne worked out what had happened and published it in 1766, at nineteen. Two species from two continents that had never shared a habitat produced, by accident, in a garden, the fruit now grown on every inhabited continent. Consider what the strawberry actually is, then. Not a berry. Not one fruit. Not ancient. Not, in any strict sense, wild. It is a swollen flower base wearing two hundred fruits, spread by cloning, invented three centuries ago by two plants that had never met, and a bee."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the two separate reasons a strawberry fails the definition of a berry. Cite the evidence.",
+            "The author writes that the red flesh is, in the strictest sense, a costume. Explain what that metaphor claims and whether the passage supports it.",
+            "Why does the author say a lumpy strawberry is an honest record of which flowers the bees did not finish? Trace the biology behind that sentence.",
+            "The passage ends with a list of four things the strawberry is not, then one thing it is. Analyze why the author chose to close that way."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the flesh is not from an ovary and the seeds are not inside it; cite: The strawberry fails on both counts)",
+            "(the flesh only looks like fruit while the real fruits ride on top; supported by the receptacle and achene evidence)",
+            "(each achene must be pollinated and signals the flesh under it to swell, so unpollinated spots stay flat)",
+            "(the negatives strip away assumptions before the definition lands; it makes the final line feel earned)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["receptacle → ____", "aggregate → ____", "clone → ____", "hedges its bets → ____"],
+          "rows": 2,
+          "answers": [
+            "the pad at the base of a flower that swells into the red flesh",
+            "made of many separate parts gathered together",
+            "an organism genetically identical to the one it came from",
+            "spreads risk by trying more than one strategy"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a disease that defeats one plant defeats all of them. Explain the risk that cloning creates for a whole farming industry.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(identical plants share identical weaknesses, so one pathogen can wipe out an entire crop)",
+            "(student question plus a credible source type, such as a plant pathology paper or a grower)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Growing strawberries as clones is too risky, and farmers should grow them from seed instead. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

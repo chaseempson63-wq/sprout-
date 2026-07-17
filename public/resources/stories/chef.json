@@ -1,0 +1,329 @@
+{
+  "key": "chef",
+  "title": "The Tallest Hat in the Kitchen",
+  "blurb": "Why chefs wear that hat, why kitchens run like an army, and what really happens when food turns brown.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Tallest Hat in the Kitchen",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-chef", "templateLabel": "The Tallest Hat in the Kitchen", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the chef's tall white hat." },
+        {
+          "kind": "image",
+          "imageKey": "chef",
+          "notes": ["The tall white hat is called a toque", "Chef means head cook", "Chefs taste the food as they cook", "A kitchen is hot and busy"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a chef. A chef cooks food for lots of people. Look at the tall white hat. That hat is called a toque. Say it like this: TOKE. The chef tastes the soup with a spoon. It needs a little salt. The chef adds some. Now the soup is good. The kitchen is hot and busy. Pots bubble. Pans hiss. The chef stirs and tastes and smiles. Dinner is ready."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the carrots in each row. Write how many in the box.",
+          "emoji": "🥕",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "chef    cook" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each worker to where they work.",
+          "pairs": [
+            { "left": "chef", "right": "kitchen" },
+            { "left": "farmer", "right": "farm" },
+            { "left": "pilot", "right": "airplane" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a chef in a tall white hat. Draw the food they are cooking.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Tallest Hat in the Kitchen",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-chef", "templateLabel": "The Tallest Hat in the Kitchen", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "chef",
+          "notes": ["Say the hat like this: TOKE", "Chef is a French word for chief", "The hat keeps hair out of the food", "The tallest hat meant the boss", "Chefs get everything ready before they cook"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tallest Hat in the Kitchen",
+          "text": "A chef is the boss of a kitchen. The word chef is French. It means chief, or head. So a chef is the head cook. Chefs wear a tall white hat called a toque. Long ago, the tallest hat in the room belonged to the person in charge. The hat also keeps hair out of the food. Before a chef cooks anything, the chef gets ready. Onions get chopped. Pans get set out. Cooks call this mise en place. It means everything in its place. When the orders come in, there is no time to look for the salt. It has to be right there already."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does the word chef mean?", "What is a chef's tall white hat called?", "What does a chef do before the cooking starts?"],
+          "rows": 2,
+          "answers": ["chief, or head", "a toque", "gets everything ready and in its place"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A chef is the head ____.", "A chef wears a tall white ____.", "The word chef comes from ____.", "Mise en place means everything in its ____."],
+          "wordBank": ["cook", "hat", "French", "place"],
+          "answers": ["cook", "hat", "French", "place"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each word to what it means.",
+          "pairs": [
+            { "left": "toque", "right": "the tall white hat" },
+            { "left": "chef", "right": "the head cook" },
+            { "left": "mise en place", "right": "everything ready" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a kitchen. Add the chef, a hot pan, and three things they will cook.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Tallest Hat in the Kitchen",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-chef", "templateLabel": "The Tallest Hat in the Kitchen", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "chef",
+          "notes": ["Toque: the tall white chef's hat", "Chef is French for chief or head", "Escoffier ran his kitchen like an army", "Cooks answer with yes, chef", "A story says the pleats stand for 100 egg recipes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Yes, Chef",
+          "text": "Walk into a busy restaurant kitchen and the first thing you notice is the noise. A cook calls out an order. Everyone answers, yes, chef. It sounds like a soldier answering a captain, and that is almost exactly what it is. A French chef named Georges Auguste Escoffier ran kitchens more than a hundred years ago. Before him, kitchens were chaos. Cooks argued, shouted, and got in each other's way. Escoffier had been a cook in the French army, so he built the kitchen like an army. He gave every cook one station and one job. One cook made sauces. One cooked fish. One made desserts. Nobody wandered. Nobody guessed. He called it the brigade. The hat came from the same idea. A chef's tall white hat is a toque. For a long time, the taller your hat, the higher your rank. The head chef wore the tallest one, so anyone glancing across a steaming kitchen knew instantly who was in charge. Some cooks still say the pleats in a toque stand for one hundred ways to cook an egg. Nobody has proved that. Chefs like the story anyway."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What were kitchens like before Escoffier changed them?",
+            "Where did Escoffier get his idea for organizing a kitchen?",
+            "What did the height of a chef's hat tell you?",
+            "Why do you think giving each cook only one job made the kitchen faster?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they were chaos, with cooks arguing and getting in each other's way",
+            "from the French army, where he had been a cook",
+            "how high that person's rank was",
+            "(inference: nobody has to stop and decide, so everyone can work at the same time)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Kitchen Learned to Work Like an Army", "The Best Soup Recipe in France", "Why Hats Keep Your Head Warm"],
+          "answers": ["How a Kitchen Learned to Work Like an Army"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A chef's tall white hat is a ____.", "Escoffier divided the kitchen into a ____.", "Each cook worked at one ____.", "Cooks answer an order by saying yes, ____."],
+          "wordBank": ["toque", "brigade", "station", "chef"],
+          "answers": ["toque", "brigade", "station", "chef"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you ran a kitchen, which one job would you want, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Tallest Hat in the Kitchen",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-chef", "templateLabel": "The Tallest Hat in the Kitchen", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "chef",
+          "notes": ["Mise en place: everything in its place", "Brigade: one cook, one station", "The saucier makes sauces", "The poissonnier cooks fish", "The pass is where finished plates leave", "Escoffier wrote the method down in 1903"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Everything in Its Place",
+          "text": "Ask a professional cook what the hardest part of the job is and you will rarely hear cooking. You will hear prep. A restaurant kitchen has a strange problem. Nobody orders anything for hours, and then, at seven in the evening, forty people order forty different things at once. Every plate has to be hot, correct, and finished within minutes. A cook who starts chopping an onion when the order arrives has already lost. So cooks solve the problem before it happens. They arrive hours early and build what the French call mise en place, which means putting in place. Onions diced. Herbs picked. Sauces simmered and strained. Stock reduced. Butter softened. Every container sits in the same spot on the same shelf, every single day, so a cook can reach for it without looking. By the time the first order prints, the cooking is almost the easy part. It is assembly. The system underneath all of this was designed by Georges Auguste Escoffier, a French chef who had served in the army. He split the kitchen into stations and gave each one a leader. The saucier made sauces. The poissonnier cooked fish. The patissier made desserts. The chef de cuisine, the head of the kitchen, stood at the pass and checked every plate before it left. It sounds rigid. It is. That is the point. Rigid systems are what let a kitchen absorb chaos on a Saturday night without falling apart."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the strange problem a restaurant kitchen has, in your own words.",
+            "Why does the passage say a cook who starts chopping when the order arrives has already lost?",
+            "The passage says the cooking is almost the easy part. What makes it easy by then?",
+            "The author calls the system rigid and then says that is the point. What does the author mean?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(nothing happens for hours, then everything is needed at once)",
+            "(inference: prep takes minutes the cook does not have once the order is in)",
+            "all the prep is done, so the cook is assembling parts that already exist",
+            "(inference: a fixed system removes decisions, so a rush cannot break it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Professional kitchens survive the rush because almost all the real work is done before it starts",
+            "French food is harder to cook than any other kind of food",
+            "Chefs should chop onions faster than everybody else"
+          ],
+          "answers": ["Professional kitchens survive the rush because almost all the real work is done before it starts"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["mise en place → ____", "prep → ____", "station → ____", "rigid → ____"],
+          "rows": 1,
+          "answers": [
+            "putting everything in place before service starts",
+            "the work of getting ingredients ready before cooking",
+            "one cook's fixed spot and job in the kitchen",
+            "fixed and unbending"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: describe one job you do at home that would go better with mise en place. Explain what you would get ready first, and why.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Tallest Hat in the Kitchen",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-chef", "templateLabel": "The Tallest Hat in the Kitchen", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "chef",
+          "notes": ["The Maillard reaction was described in 1912", "Browning needs heat above about 285 degrees F", "Water boils at 212 degrees F, so wet food will not brown", "Searing does not seal in juices", "Caramelizing sugar is a different reaction", "Toast, coffee and steak crust are all the same chemistry"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Brown Food Tastes Better",
+          "text": "Put a piece of raw meat next to a cooked one. Same meat, same animal. One smells like almost nothing. The other smells like dinner from across the house. Something happened in the pan, and it was not just heat. In 1912, a French chemist named Louis Camille Maillard was studying how amino acids react with sugars. He was not thinking about food at all. What he found is now named after him, and it is arguably the single most important process in cooking. When protein and sugar meet at high heat, roughly above 285 degrees Fahrenheit, they do not simply get hot. They rearrange. They fall apart and recombine into hundreds of brand new compounds that did not exist a minute earlier. Those compounds are the smell of toast, of seared steak, of roasted coffee, of the crust on bread. The browning you see is the visible edge of an enormous invisible chemical event. This is why chefs are so serious about a dry surface and a hot pan. Water boils at 212 degrees. As long as the surface of the meat is wet, the pan cannot climb high enough for the reaction to run. The meat steams instead, and gray steamed meat tastes like disappointment. Pat it dry, get the pan properly hot, leave it alone, and the reaction takes over. Chefs will also tell you, confidently, that searing seals in the juices. This is not true. It was proposed by a chemist named Justus von Liebig in the 1840s, repeated in cookbooks for a hundred and fifty years, and tested carefully in the twentieth century. Seared meat actually loses slightly more moisture, not less. The sear is worth doing anyway, just for a different reason than the one everybody gives. It is not a seal. It is flavor. That gap is worth noticing. A good cook can be completely right about what to do and completely wrong about why. The steak still works. But knowing the real reason is what lets you use the same idea somewhere new, on an onion, on a scallop, on the top of a pie."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why will a wet piece of meat not brown? Use the two temperatures given in the passage.",
+            "The author describes browning with a phrase about what you cannot see. Quote that phrase exactly.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author bother telling us that Maillard was not thinking about food at all?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the Maillard reaction + the searing myth)",
+            "water boils at 212 degrees, so a wet surface holds the pan below the roughly 285 degrees the reaction needs",
+            "quote: the visible edge of an enormous invisible chemical event",
+            "(inform, with detail: it defines the reaction and gives temperatures; the ending is mildly persuasive about knowing why)",
+            "(inference: discoveries often arrive sideways, and the finding matters regardless of what he was looking for)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["compounds → ____", "recombine → ____", "arguably → ____", "proposed → ____"],
+          "rows": 1,
+          "answers": [
+            "substances made when different chemicals join together",
+            "to break apart and join back up in a new arrangement",
+            "you could reasonably make the case for it",
+            "put forward as an idea, without it being proved"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The searing myth lasted about a hundred and fifty years. Explain how a wrong idea can survive that long when cooks test their food every day.",
+            "The author says a cook can be right about what to do and wrong about why. Give an example of that from somewhere outside a kitchen."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the advice works, so nobody checks the reason; the result seems to confirm the explanation)",
+            "(student's own example: a working habit kept for a mistaken reason)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does it matter whether a cook knows the science, as long as the food comes out well? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Tallest Hat in the Kitchen",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-chef", "templateLabel": "The Tallest Hat in the Kitchen", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "chef",
+          "notes": ["Careme, 1784 to 1833: cooking built like architecture", "Escoffier, 1846 to 1935: the brigade system", "Le Guide Culinaire, 1903, still opened by cooks", "Restaurant first meant a restoring broth", "Toque height once marked rank", "Chef de cuisine: head of the kitchen"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Men Who Made Cooking a Profession",
+          "text": "For most of human history, cooking was work you did because someone had to. It was not a career you announced with pride. Two Frenchmen changed that, and the kitchen you would walk into today still runs on their decisions. The first was Marie-Antoine Careme, born in Paris in 1784, one of a very large and very poor family. As a boy he was left at the city gates and told not to come back. He found work washing dishes in a cheap eating house, then apprenticed to a pastry maker, and taught himself to read in the print room of the national library, studying books of architecture. That last detail matters. Careme built his desserts like buildings: towering sugar temples, ruins, and bridges, drawn out on paper first and assembled to the inch. He cooked for Talleyrand, for the future king of England, and for the Russian tsar. He once wrote that there are five fine arts, painting, poetry, music, sculpture, and architecture, and that the principal branch of architecture is confectionery. He was joking. He was also not joking at all. The second was Georges Auguste Escoffier, born in 1846. Careme had made cooking glamorous. Escoffier made it work. He had cooked for the French army during the war of 1870, and he came out of it thinking about logistics rather than glory. Old kitchens were furnaces of shouting, drinking, and duplicated effort, where one dish might pass through the hands of four cooks who each did whatever they felt like. Escoffier tore that up. He divided the kitchen into stations, a brigade, each with a chief: sauces, fish, roasts, cold dishes, pastry. Each cook owned one narrow territory and answered to the chef de cuisine, the head of the kitchen. A single plate could now be built by five people in ninety seconds without a word wasted. He banned shouting in his kitchens. He banned drinking on shift. He asked his cooks to be clean, quiet, and on time, which sounds obvious now and was radical then. He also had a place to put the system. Working with the hotelier Cesar Ritz at the Savoy in London and later at the Ritz in Paris, Escoffier fed rooms full of people who could go anywhere and expected everything. His book, Le Guide Culinaire, published in 1903, wrote the whole method down. Cooks still open it. The stage had been set slightly earlier. The word restaurant comes from the French verb meaning to restore. In Paris in the 1760s, shops sold a rich, concentrated broth called a restaurant, sold as a cure for weak health. The shops eventually took the name of the soup. Then the Revolution broke up the great households, and their cooks, suddenly unemployed and highly skilled, had somewhere to go. Cooking left the palace and went public. Anyone with money, not just anyone with a title, could now taste it. What Careme and Escoffier really built was not a menu. It was an argument, made in brass pans and written schedules, that cooking deserved to be treated as serious work by serious people. The tall white hat is a leftover from that argument. It marked rank in a room where rank had suddenly started to mean something. It is worth asking what the argument cost. The brigade is efficient because it is hierarchical, and hierarchies are easy to abuse. For a century, the professional kitchen has been famous for brutal hours, low pay, and shouting that Escoffier himself tried to ban. The system that made cooks respected is the same system that has often ground them down. Both things came out of the same idea, and the industry is still arguing about whether it can keep one without the other."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says Careme taught himself to read by studying architecture, then calls that detail important. Explain why it is important to the rest of the paragraph.",
+            "Escoffier's rules about cleanliness and timekeeping seem ordinary today. Quote the phrase the author uses to explain why they were not ordinary then.",
+            "The author claims the two men built an argument rather than a menu. Quote the phrase that names what the argument was made of, and explain what that phrase is doing.",
+            "Analyze the last paragraph. What does the author concede, and why put it at the end instead of leaving it out?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the professionalizing of cooking and its cost)",
+            "(it explains his desserts, which were designed like buildings; it also sets up his claim that cooking belongs with the fine arts)",
+            "quote: which sounds obvious now and was radical then",
+            "quote: made in brass pans and written schedules; (it grounds an abstract claim in physical, unglamorous objects, so the argument reads as made by work rather than by talk)",
+            "(it concedes the brigade's hierarchy enabled abuse; ending there keeps the passage honest and leaves the reader with an open question rather than a tidy hero story)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["apprenticed → ____", "logistics → ____", "confectionery → ____", "hierarchical → ____"],
+          "rows": 2,
+          "answers": [
+            "learned a trade by working under a skilled worker for years",
+            "the practical business of organizing people, supplies, and timing",
+            "the making of sugar work, pastry, and sweets",
+            "arranged in ranks, where each level answers to the one above"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Careme claimed confectionery was a branch of architecture. Build the strongest case you can FOR that claim, then name its weakest point.",
+            "The passage credits two individuals with a change across a whole industry. Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(for: both design structure, load, and proportion on paper before building; weakness: architecture is meant to last and be lived in, while a dessert is eaten within the hour)",
+            "(student question, for example about the cooks whose names were not recorded; source: labor records, kitchen wage books, social history research)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: the brigade system should be abandoned, because no meal is worth the way that system has treated the people cooking it. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

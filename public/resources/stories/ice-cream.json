@@ -1,0 +1,310 @@
+{
+  "key": "ice-cream",
+  "title": "The Ice Cream That Never Freezes Solid",
+  "blurb": "Why a scoop stays soft in a freezer cold enough to turn water into rock, and why a third of it is air.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Ice Cream That Never Freezes Solid",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-ice-cream", "templateLabel": "The Ice Cream That Never Freezes Solid", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the scoop. Find the cone." },
+        {
+          "kind": "image",
+          "imageKey": "ice-cream",
+          "notes": ["The scoop is pink", "The cone is crunchy", "It comes from the freezer", "It drips when it gets warm", "Some of it is air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an ice cream cone. The scoop is pink. The cone is crunchy. Ice cream is very cold. It comes from a freezer. If you hold it too long, it drips. So take a lick. Then take another one. Ice cream is soft and cold and sweet. Here is a secret. Some of your ice cream is just air. The air is what makes it soft."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the scoops in each row. Write how many in the box.",
+          "emoji": "🍨",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "cold    cone" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "ice cream", "right": "cold" },
+            { "left": "soup", "right": "hot" },
+            { "left": "cone", "right": "crunchy" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own ice cream cone. Give it three scoops.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Ice Cream That Never Freezes Solid",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-ice-cream", "templateLabel": "The Ice Cream That Never Freezes Solid", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "ice-cream",
+          "notes": ["A freezer turns water into hard ice", "Ice cream stays soft anyway", "Sugar is the reason", "A paddle whips in the air", "A big scoop is almost one third air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ice Cream That Never Freezes Solid",
+          "text": "Ice cream feels soft, but a freezer is cold enough to turn water into hard ice. So why can you scoop it? The secret is sugar. Sugar mixed into milk stops it from freezing all the way. Even in the freezer, tiny bits of the ice cream stay wet. Those wet bits let your spoon push through. There is a second secret. While ice cream is being made, a paddle spins and spins. The paddle whips air into the cream. Air makes it fluffy and light. A big scoop is almost one third air. So a scoop of ice cream is ice, sugar, milk, and a lot of air."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a freezer do to water?", "Which ingredient stops ice cream from freezing all the way?", "What does the spinning paddle whip into the cream?"],
+          "rows": 2,
+          "answers": ["it turns water into hard ice", "sugar", "air"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A freezer turns water into hard ____.", "____ stops ice cream from freezing all the way.", "A spinning ____ whips in the air.", "Air makes ice cream soft and ____."],
+          "wordBank": ["ice", "Sugar", "paddle", "light"],
+          "answers": ["ice", "Sugar", "paddle", "light"]
+        },
+        { "kind": "draw", "prompt": "Draw a bowl of ice cream. Draw the spoon going in.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Ice Cream That Never Freezes Solid",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-ice-cream", "templateLabel": "The Ice Cream That Never Freezes Solid", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "ice-cream",
+          "notes": ["Every bite holds millions of ice crystals", "They feel smooth because they are tiny", "The blade inside the machine is called a dasher", "Old ice cream goes gritty as crystals grow", "Opening the freezer door is what does it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Old Ice Cream Gets Crunchy",
+          "text": "Take a spoonful of fresh ice cream and it feels smooth, almost like cream. But that smoothness is a trick. Ice cream is full of ice crystals. There are millions of them in every bite. They feel smooth because they are tiny. Your tongue cannot feel an ice crystal smaller than about the width of a hair. Making them that small takes work. In an ice cream machine, a metal blade called a dasher scrapes the freezing mixture off the cold wall, over and over. Nothing gets a chance to freeze into a big lump. Tiny crystals form instead, and the ice cream comes out smooth. Now think about the tub at the back of your freezer. Every time the door opens, the ice cream warms a little. Some of the smallest crystals melt. When it cools down again, that melted water freezes onto the crystals that are left, making them bigger. Do that enough times and the crystals grow big enough for your tongue to notice. The ice cream turns gritty and crunchy. It is not spoiled. It is just no longer tiny."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How many ice crystals are in every bite of ice cream?",
+            "What is the metal blade in an ice cream machine called, and what does it do?",
+            "What happens to the smallest ice crystals every time the freezer door opens?",
+            "Why do you think a tub at the front of the freezer might go gritty faster than one at the back?"
+          ],
+          "rows": 2,
+          "answers": [
+            "millions of them",
+            "a dasher; it scrapes the freezing mixture off the cold wall",
+            "some of them melt, and that water later freezes onto bigger crystals",
+            "(inference: the front warms up more when the door opens, so it melts and refreezes more often)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Old Ice Cream Gets Crunchy", "How to Milk a Cow", "The Tallest Mountain in the World"],
+          "answers": ["Why Old Ice Cream Gets Crunchy"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Ice cream feels smooth because the crystals are ____.", "The blade that scrapes the cold wall is called a ____.", "When crystals grow too big, the ice cream feels ____."],
+          "wordBank": ["tiny", "dasher", "gritty"],
+          "answers": ["tiny", "dasher", "gritty"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would you do to keep a tub of ice cream smooth for as long as possible, and why would it help?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Ice Cream That Never Freezes Solid",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-ice-cream", "templateLabel": "The Ice Cream That Never Freezes Solid", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ice-cream",
+          "notes": ["Overrun: how much air was whipped in", "Cheap brands can be half air by volume", "Premium can be as low as twenty percent", "US rule: at least 4.5 pounds per gallon", "US rule: at least ten percent milkfat", "Below that it must be called frozen dairy dessert"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Half of It Is Air",
+          "text": "Pick up two pints of ice cream at the store and one will feel noticeably heavier than the other. Same size box, same flavor, different weight. The difference is air. Air is not a filler that got sneaked in. It is an ingredient, and ice cream does not work without it. As the mixture freezes, a spinning dasher whips air into it, breaking it into millions of bubbles so small you cannot see them. Those bubbles do two jobs. They keep the ice crystals apart, which is what makes ice cream feel creamy instead of like a block of frozen milk. They also insulate it, so a scoop warms slowly on your tongue instead of hitting you all at once. Ice cream makers have a word for how much air went in: overrun. If a gallon of liquid mixture comes out as two gallons of ice cream, that is one hundred percent overrun, and half of what you bought is air. Cheap ice cream sits near that limit. Premium brands use much less, sometimes only twenty percent, which is why a small tub of the good stuff feels like a brick. The United States government put a floor under this. To be sold as ice cream, the product must weigh at least four and a half pounds per gallon and contain at least ten percent milkfat. Fall below that and it has to be called something else, like frozen dairy dessert. Read the tubs in the freezer aisle and you will find both names sitting side by side. So when you buy ice cream, you are buying air. The trick is that you want to."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is overrun, in your own words?",
+            "The passage says the air bubbles do two jobs. Name both and explain each one.",
+            "Why does a small tub of premium ice cream feel heavier than a big cheap one?",
+            "A tub in the freezer aisle is labeled frozen dairy dessert instead of ice cream. What does that label tell you about what is inside?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(how much air is whipped into ice cream, measured as how much the volume grows)",
+            "they keep the ice crystals apart so it feels creamy, and they insulate it so a scoop warms slowly",
+            "(inference: premium has less air, so more of the box is actual ice cream)",
+            "(inference: it is lighter than 4.5 pounds per gallon or has under ten percent milkfat, likely more air or less fat)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Air is a real ingredient in ice cream, and how much of it there is changes the price, the weight, and even the name on the tub",
+            "Ice cream should always be eaten within one day of buying it",
+            "The United States invented ice cream"
+          ],
+          "answers": ["Air is a real ingredient in ice cream, and how much of it there is changes the price, the weight, and even the name on the tub"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["overrun → ____", "insulate → ____", "milkfat → ____"],
+          "rows": 1,
+          "answers": ["the amount of air whipped into ice cream", "to slow down how fast heat moves through something", "the fatty part of milk and cream"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: should a company have to print the amount of air on the front of the tub? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Ice Cream That Never Freezes Solid",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-ice-cream", "templateLabel": "The Ice Cream That Never Freezes Solid", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ice-cream",
+          "notes": ["Plain ice can only reach 32 degrees Fahrenheit", "Ice plus salt can reach about minus 6", "Saltpeter cooling was described in India in the 1200s", "A doctor in Rome wrote it down in 1550", "Nancy Johnson patented the crank freezer in 1843", "The paddle mattered more than the crank"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How to Freeze Something Before Freezers Existed",
+          "text": "Ice cream has a problem that had to be solved before it could exist. To freeze cream you need something colder than freezing, and for most of human history nobody had anything that cold on purpose. Ice itself is not enough. A bucket of ice sits at thirty two degrees Fahrenheit, which is exactly the temperature at which water turns to ice. Pack a can of cream inside it and the cream will get cold and stay liquid. Something has to pull the temperature lower. The answer turned out to be salt, and it is one of the most useful pieces of kitchen chemistry ever found. Salt dissolves into the thin film of water on the surface of ice. Salty water freezes at a lower temperature than plain water, so the ice keeps melting even though it is already cold. Melting takes energy, and that energy has to come from somewhere. It comes out of everything nearby. A bucket of ice and salt can drop to about minus six degrees Fahrenheit, far below the freezing point of cream. Nobody planned this. Writers in India described cooling water with saltpeter around the twelve hundreds. By the fifteen hundreds the method had reached Europe, where a doctor in Rome wrote instructions for chilling wine with it. Cooks noticed that if a bucket could freeze water, it could freeze a sweetened cream too, and Italian and French kitchens began turning out frozen creams in the sixteen hundreds. It was rich food. It took ice hauled from mountains, stored in deep pits through the summer, and a servant willing to stir a can by hand for an hour. In eighteen forty three an American named Nancy Johnson patented the machine that made it ordinary: a bucket for ice and salt, a can for the cream, and a crank that turned a paddle inside. The paddle mattered more than the crank. It scraped freezing cream off the cold metal before it could set into a lump, which kept the ice crystals small and the texture smooth. Every modern ice cream machine still does exactly what Johnson's did. The refrigeration is electric now instead of salty, but there is still a cold wall and a paddle scraping it clean."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why can a bucket of plain ice never freeze cream? Use a number from the passage in your answer.",
+            "Explain how adding salt makes a bucket of ice colder than the ice was on its own.",
+            "The passage says the paddle mattered more than the crank. Quote the sentence that explains why, then say what it means.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the need for something colder than freezing, the ice-and-salt discovery, and Johnson's paddle machine)",
+            "plain ice sits at thirty two degrees Fahrenheit, the temperature water freezes at, so it cannot pull cream below freezing",
+            "salt dissolves in the water film, salty water freezes lower, so the ice keeps melting, and melting pulls energy out of everything nearby",
+            "quote: It scraped freezing cream off the cold metal before it could set into a lump, which kept the ice crystals small and the texture smooth. (the paddle is what creates the smooth texture)",
+            "(inform, with details: it explains a process, gives dates and temperatures; some entertaining phrasing like Nobody planned this)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["saltpeter → ____", "patented → ____", "refrigeration → ____", "ordinary → ____"],
+          "rows": 1,
+          "answers": ["a salt used long ago to chill water", "registered as an invention so others could not copy it", "machinery that makes things cold", "common, something anybody could have"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says frozen cream was rich food in the sixteen hundreds. Using details from the text, explain what made it so expensive.",
+            "Why do you think ice cream became common in America in the eighteen hundreds and not two hundred years earlier?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(ice had to be hauled from mountains and stored in pits, and someone had to stir by hand for an hour)",
+            "(inference: Johnson's machine plus cheaper ice made the work small enough for an ordinary household)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was ice and salt a bigger invention than the crank machine, or the other way around? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Ice Cream That Never Freezes Solid",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-ice-cream", "templateLabel": "The Ice Cream That Never Freezes Solid", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "ice-cream",
+          "notes": ["A foam, an emulsion, and a suspension at once", "About a fifth of the water never freezes", "Guar and locust bean gum slow the damage", "Grit begins around fifty micrometers", "Cold blunts the receptors that taste sweetness", "Brain freeze: sphenopalatine ganglioneuralgia"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Most Complicated Thing in Your Freezer",
+          "text": "Ice cream looks simple. It is not. Food scientists describe it as three different physical systems occupying the same spoonful at the same time, and each one is doing a job. It is a foam, because roughly a third to a half of its volume is air, whipped in during freezing and trapped as bubbles too small to see. It is an emulsion, because microscopic droplets of butterfat hang suspended in water that would otherwise refuse to mix with them. And it is a suspension, because millions of ice crystals float in the mixture, held apart from one another by the fat and the bubbles. Take any one of the three away and you do not get worse ice cream. You get something that is not ice cream at all. The strangest part is what the freezer never manages to do. A home freezer sits near zero degrees Fahrenheit, cold enough to turn a glass of water into solid rock. It does not do that to ice cream. Sugar is the reason. Dissolved sugar lowers the freezing point of the water it sits in, and as the water around it turns to ice, the sugar that is left behind gets crowded into less and less liquid. The syrup grows more concentrated, its freezing point sinks lower, and the process stalls. Even after hours in the freezer, something like a fifth to a quarter of the water in ice cream is still liquid, a thick sugar syrup clinging between the ice crystals. That syrup is why a spoon goes in. Ice cream is scoopable because it never finishes freezing. Manufacturers spend real effort defending that structure. Gums such as guar and locust bean are added in quantities under half a percent, not for flavor but to thicken the unfrozen syrup so water molecules cannot travel easily. Traveling water is the enemy. Every time a tub warms slightly, the smallest ice crystals melt, and when it cools again that water freezes onto larger crystals rather than rebuilding the small ones. The crystals creep upward in size, and once they pass roughly fifty micrometers the tongue registers them as grit. This is why ice cream that has ridden home in a warm car and gone back in the freezer is never quite right again. Even your sense of taste is being manipulated. The receptors that detect sweetness work poorly at low temperature, which means ice cream tastes far less sweet cold than it actually is. Melt a premium vanilla in a bowl and drink it and the sugar is almost unpleasant. Manufacturers sweeten to the temperature at which the food will be eaten, not to the temperature at which it is mixed. And then there is the headache. Swallow something very cold very fast and it chills the roof of your mouth. Blood vessels there constrict, then flood open again, and a nerve bundle behind your nose misreports that whole event as pain coming from your forehead. Doctors call it sphenopalatine ganglioneuralgia. You call it brain freeze, and you can end it by pressing your tongue flat against the roof of your mouth and warming the spot back up. Simple food. Roughly four ingredients. It took chemistry, refrigeration, and about four hundred years of tinkering to make a thing that melts correctly on a tongue."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the three physical systems and why the passage says removing one gives you something that is not ice cream at all.",
+            "Explain, step by step, why sugar prevents ice cream from freezing solid. Cite the sentence the author uses to land the point.",
+            "The author writes a three-word sentence in the middle of a technical paragraph. Find it, and analyze why a writer would break the rhythm there.",
+            "The passage ends by calling ice cream simple food with roughly four ingredients. Analyze what that ending is doing and whether the rest of the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering foam plus emulsion plus suspension, unfrozen sugar syrup, and crystal growth)",
+            "(the foam is the air, the emulsion is fat in water, the suspension is ice crystals held apart; each one creates part of the texture, so losing one loses the food)",
+            "(sugar lowers the freezing point; as water freezes out, the leftover syrup gets more concentrated and its freezing point sinks further, so freezing stalls; cite: Ice cream is scoopable because it never finishes freezing.)",
+            "(Traveling water is the enemy. A short blunt sentence names the villain and gives the reader a handle before the mechanism is explained)",
+            "(it reverses the opening claim for effect; earned, because the passage has shown chemistry, machinery, and centuries behind a four-ingredient food)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["emulsion → ____", "suspension → ____", "concentrated → ____", "micrometer → ____"],
+          "rows": 2,
+          "answers": [
+            "a mixture of tiny fat droplets held inside a liquid that would not normally mix with them",
+            "solid particles floating spread through a mixture rather than settling",
+            "having more of a substance packed into less liquid",
+            "a unit of length equal to one millionth of a meter"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says manufacturers sweeten to the temperature at which the food will be eaten. Explain what would go wrong if they sweetened to taste at room temperature instead.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(cold blunts sweetness, so a mix that tastes right warm would taste flat and thin once frozen)",
+            "(student question plus a credible source type, such as a food science text or a dairy research journal)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: whipping air into ice cream and then selling it by volume is a way of charging people for nothing. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

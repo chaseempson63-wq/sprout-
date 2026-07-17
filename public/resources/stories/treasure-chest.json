@@ -1,0 +1,320 @@
+{
+  "key": "treasure-chest",
+  "title": "The Chest With the Secret Keyhole",
+  "blurb": "Pirates almost never buried gold. The real treasure chests had a fake keyhole on the front and a hidden one in the lid.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Chest With the Secret Keyhole",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-treasure-chest", "templateLabel": "The Chest With the Secret Keyhole", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the gold coins." },
+        {
+          "kind": "image",
+          "imageKey": "treasure-chest",
+          "notes": ["A chest is a strong box", "It has a lock and a key", "Gold coins are heavy", "The lid shuts with a click", "Old chests were wood and iron"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a chest. A chest is a strong box. It keeps things safe inside. Gold coins go in. Then the lid shuts. Click. A chest has a lock. A key opens the lock. The key goes in a little hole. The hole is called a keyhole. Only one person has the key. Can you find the lock in the picture?"
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the coins in each row. Write how many in the box.",
+          "emoji": "🪙",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "lock    key" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match what goes inside each one.",
+          "pairs": [
+            { "left": "chest", "right": "gold" },
+            { "left": "nest", "right": "eggs" },
+            { "left": "barn", "right": "hay" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own chest. Put your favorite thing inside it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Chest With the Secret Keyhole",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-treasure-chest", "templateLabel": "The Chest With the Secret Keyhole", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "treasure-chest",
+          "notes": ["The front keyhole was often fake", "The real one hid in the lid", "One key shot bolts on every side", "The best ones were made in Germany", "Pirates almost never buried gold"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Chest With the Secret Keyhole",
+          "text": "People have kept treasure in chests for hundreds of years. A real treasure chest was not a toy. It was a heavy box of wood and iron. It sat in a shop or a strong room. Some were so heavy that four men could not lift one. The best chests had a trick. On the front was a keyhole. But that keyhole was fake. It did nothing at all. The real keyhole hid under a little flap in the lid. When you turned the true key, iron bolts shot out on every side at once. A thief could poke at the fake hole all night and never get in."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What was a real treasure chest made of?", "Where was the fake keyhole?", "Where did the real keyhole hide?"],
+          "rows": 2,
+          "answers": ["wood and iron", "on the front of the chest", "under a little flap in the lid"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A real chest was made of wood and ____.", "The keyhole on the front was ____.", "The real keyhole hid under a flap in the ____.", "The true key shot iron ____ out on every side."],
+          "wordBank": ["iron", "fake", "lid", "bolts"],
+          "answers": ["iron", "fake", "lid", "bolts"]
+        },
+        { "kind": "draw", "prompt": "Draw a chest with a secret keyhole. Show where you would hide it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Chest With the Secret Keyhole",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-treasure-chest", "templateLabel": "The Chest With the Secret Keyhole", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "treasure-chest",
+          "notes": ["Built in Nuremberg and Augsburg", "The front keyhole is a decoy", "The real keyhole hides in the lid", "One turn throws bolts on four sides", "Too heavy for one person to lift"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Keyhole That Does Nothing",
+          "text": "Think of a treasure chest and you probably picture a rounded wooden box full of gold, buried in the sand. Real treasure chests were nothing like that. The strongest ones were built in Germany, in towns called Nuremberg and Augsburg, about four hundred years ago. They were made of iron. They were plain and ugly and unbelievably heavy. A merchant kept one bolted to the floor of his counting room, and it held coins, contracts, and records. The clever part was the lock. Look at the front of one of these chests and you will find a keyhole. Try it. Nothing happens. It is a decoy, put there to waste a thief's time. The true keyhole sits in the middle of the lid, hidden under a flap that you have to know how to release. Turn the real key and the whole lid comes alive. Iron bolts shoot out of the lid into the frame on all four sides at the same moment. Nobody buried a chest like that. You would need six men and a cart just to move it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What were the strongest chests made of, and where were they built?",
+            "What happens if you put a key in the keyhole on the front?",
+            "Where is the real keyhole, and how is it hidden?",
+            "Why do you think the chest makers added a keyhole that does nothing?"
+          ],
+          "rows": 2,
+          "answers": [
+            "iron, built in Nuremberg and Augsburg in Germany",
+            "nothing happens, because it is a decoy",
+            "in the middle of the lid, under a flap you have to know how to release",
+            "(inference: to waste a thief's time so he never finds the real one)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Keyhole That Does Nothing", "How to Sail a Pirate Ship", "The Biggest Beach in Germany"],
+          "answers": ["The Keyhole That Does Nothing"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The best chests were built in ____.", "The keyhole on the front is a ____.", "Turning the real key shoots iron ____ into the frame."],
+          "wordBank": ["Germany", "decoy", "bolts"],
+          "answers": ["Germany", "decoy", "bolts"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would you keep in a chest like this, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Chest With the Secret Keyhole",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-treasure-chest", "templateLabel": "The Chest With the Secret Keyhole", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "treasure-chest",
+          "notes": ["Pirates split loot instead of burying it", "Captain Kidd buried some in 1699", "It was dug up and used against him", "Most loot was cargo, not coins", "A sailor's real chest was flat on top", "The front keyhole was a decoy"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fact That Ruins a Good Story",
+          "text": "Here is a fact that ruins a good story. Pirates almost never buried treasure. Think about it from a pirate's side. A pirate crew was a business, and a violent, short-lived one. Most men expected to be caught or killed within a couple of years. Money buried in a hole is money you cannot spend, and it only works if you live long enough to come back for it, and if you can find the spot again, and if none of your shipmates dig it up first. So pirates did what people do when they think tomorrow is unlikely. They divided the loot immediately, by written agreement, and spent it in port. There is one famous exception, and it did not end well. In 1699, Captain William Kidd buried a share of his treasure on Gardiners Island, near New York, hoping to use it as a bargaining chip. He was arrested anyway. The governor's men dug the treasure straight back up, shipped it to England, and laid it out in court as evidence against him. Kidd was hanged in London in 1701. The one pirate who really did bury treasure was destroyed by it. Most pirate loot was not gold anyway. It was cargo: cloth, sugar, rope, tools, medicine, food, and spare sails. Boring, useful, and easy to sell. A chest of glittering coins makes a better picture than eleven barrels of cloth, so that is the picture we kept."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Give two reasons burying loot was a bad idea for a pirate.",
+            "Why did Kidd bury his treasure, and what happened to it?",
+            "The passage says most pirate loot was cargo. Why would cloth or rope be worth stealing?",
+            "Explain the last sentence in your own words. What is the author saying about why we picture gold?"
+          ],
+          "rows": 2,
+          "answers": [
+            "you cannot spend it, you may not live to return, you may not find the spot, shipmates may take it",
+            "as a bargaining chip; it was dug up within months and used in court against him",
+            "(inference: cargo was useful and easy to sell, and ships carried it in bulk)",
+            "(inference: the gold image is a better story, so it stuck even though it is not true)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Buried pirate treasure is mostly a myth, because real pirates split and spent their loot",
+            "Captain Kidd was the most successful pirate who ever lived",
+            "Pirates preferred cloth and rope because gold was too heavy to carry"
+          ],
+          "answers": ["Buried pirate treasure is mostly a myth, because real pirates split and spent their loot"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["loot → ____", "bargaining chip → ____", "cargo → ____", "exception → ____"],
+          "rows": 1,
+          "answers": [
+            "goods taken by force",
+            "something you hold back to trade for a better deal",
+            "goods a ship carries to sell",
+            "the one case that does not follow the rule"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if you were a pirate with a share of gold, would you bury it or spend it? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Chest With the Secret Keyhole",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-treasure-chest", "templateLabel": "The Chest With the Secret Keyhole", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "treasure-chest",
+          "notes": ["Stevenson drew the map before the story", "Treasure Island, 1883", "Poe's The Gold-Bug came first, 1843", "Armada chests were made inland, not at sea", "The Whydah, 1717, found in 1984", "The front keyhole is a machined fake"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where the X Came From",
+          "text": "Every child can draw a treasure map. A curl of coastline, a palm tree, a dotted path, and an X where the gold waits. That image is not ancient. It is a piece of Victorian publishing, and we can name the man who drew it. In 1881, in a rented cottage in Scotland, Robert Louis Stevenson was entertaining his bored stepson on a wet afternoon. He drew an island. He named its bays and hills, added a few crosses to mark buried treasure, and, as he described it later, the characters began appearing on the page among the imaginary woods. The map came first. The novel came second. Treasure Island handed us nearly the whole pirate costume at once: the one-legged sea cook, the parrot on the shoulder, the black spot, pieces of eight, and above all the map. Writers had circled the idea before him, notably Edgar Allan Poe in The Gold-Bug in 1843, but Stevenson is the one who made it permanent. The real article is less romantic and more impressive. The finest strongboxes in Europe were hammered out in Nuremberg and Augsburg in the 1600s. Antique dealers now sell them as armada chests, which sounds like salt spray and cannon smoke, but most of them never went near a ship. They lived in counting houses and town treasuries, bolted to the floor, holding payroll and paperwork. Their genius is on the underside of the lid, where a mechanism as wide as the lid itself throws a dozen iron bolts into the frame at once. The keyhole on the front is a fake, a decoy left for thieves to work at all night. The one pirate ship we have actually found tells the same story. The Whydah went down in a storm off Cape Cod in 1717 and was located in 1984, the only pirate wreck ever authenticated, confirmed by its own inscribed bell. Divers brought up coins and gold dust, yes. They also brought up cannons, shoes, tools, buttons, and the leg bone of a child, because a boy somewhere between eight and eleven was serving in the crew. That is what a pirate ship really contained. So we have two chests. One is buried, marked with an X, and does not exist. The other is bolted to a floor in Germany, ugly, brilliant, and real. We built museums for the second and childhoods out of the first."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the order of events for Stevenson: what did he make first, and what grew out of it?",
+            "Why does the author point out that armada chests never went near a ship? Quote the phrase used to describe what the name suggests.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the final sentence mean, and why does the author put it last?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the invented map plus the real German strongbox)",
+            "he drew the map first to amuse his stepson, and the novel grew out of it",
+            "(to show the romantic name is a sales label, not history; quote: salt spray and cannon smoke)",
+            "(inform, with a persuasive edge: it gives dates and sources but argues we chose the wrong chest)",
+            "(we treasure the invented chest and ignore the real one; the author ends there for impact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["decoy → ____", "authenticated → ____", "strongbox → ____", "permanent → ____"],
+          "rows": 1,
+          "answers": [
+            "something fake placed to draw attention away from the real thing",
+            "proven to be genuine",
+            "a locked box built to protect valuable things",
+            "lasting, fixed in place for good"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says the map came first and the novel came second. Why is that detail important to the argument?",
+            "Why might a made-up chest be easier to remember than a real one?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it proves the pirate map was invented as a drawing, not recorded from history)",
+            "(inference: the invented one is simple, exciting, and asks nothing of you; the real one takes explaining)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does it matter that the buried treasure chest is made up? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Chest With the Secret Keyhole",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-treasure-chest", "templateLabel": "The Chest With the Secret Keyhole", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "treasure-chest",
+          "notes": ["Nuremberg and Augsburg ironwork, 1600s", "Lid mechanism throws a dozen bolts at once", "The front keyhole is a machined fake", "Kidd's 1699 burial was dug up within months", "Treasure Island fixed the pirate image in 1883", "Whydah: the only authenticated pirate wreck"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Chest We Made Up, and the One We Forgot",
+          "text": "There are two treasure chests. One is famous and imaginary. The other is real, and almost nobody can describe it. That gap is worth looking at, because it shows how a good story can bury a better one. Start with the imaginary chest. It has a domed lid, iron bands, and a spill of gold coins. It waits on an island under a palm tree, and a map marks the place with an X. Ask where that picture came from and the trail is surprisingly short. It does not run back to real pirates. It runs back to a wet afternoon in 1881, when Robert Louis Stevenson, stuck indoors in the Scottish Highlands, drew an island to amuse his stepson. He inked the bays, wrote in the names, marked a few crosses for buried gold, and found that the drawing was already suggesting people. As he put it afterward, the characters began to appear among the imaginary woods. He wrote the book to explain the map. Treasure Island issued the modern pirate almost fully assembled: the parrot, the black spot, the one-legged sea cook, pieces of eight, and above all the map. Edgar Allan Poe had already used a coded message and Captain Kidd's buried gold in The Gold-Bug in 1843, so the idea was in the air, but Stevenson is the one who fixed it in place. Every pirate cartoon since has been quoting a Victorian novelist's rainy-day doodle. Real pirates did not bury treasure, and the reason is plain economics. A pirate crew was a short, violent business venture. Loot in a hole cannot be spent, requires you to survive, requires you to find the spot again, and requires your shipmates to be honest, which was not their defining trait. So crews split the takings at once, under written articles that set shares by rank and even paid compensation for lost limbs, and then they spent it in port. The one well-documented burial is Captain William Kidd's, on Gardiners Island in 1699, and it was less a hiding place than a bargaining chip. It failed completely. The governor's men dug it up within months, sent it to London, and spread it across a courtroom as evidence. Kidd was hanged in 1701, and his body was left in an iron cage above the Thames for years as a warning to others. The one pirate who did bury treasure was hanged with the help of it. Now the real chest. In the 1600s, ironworkers in Nuremberg and Augsburg built the best strongboxes in Europe. Dealers today market them as armada chests, a name that suggests salt spray and cannon smoke, though most never saw a harbor. They sat in counting houses, guild halls, and town treasuries, bolted down, holding payroll and paperwork. They are plain, dark, brutally heavy, and their brilliance is hidden. Lift the lid and the entire underside is a machine: one turn of the key drives a dozen or more iron bolts outward into the frame on every side at the same instant. The keyhole on the front, the one your hand goes to first, is a fake. It is a decoy, machined carefully so that a thief will spend his night on it. The true hole sits in the lid, under a flap you must know how to release. Some chests hide a second compartment inside the first. The comparison is not flattering to us. We remember the chest that was buried in a story and forgot the chest that was engineered by people who actually had something to protect. The imaginary one asks nothing of you but a shovel. The real one asks you to understand it. We chose the shovel."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the author says the trail behind the treasure map is surprisingly short. Cite the evidence.",
+            "Lay out the economic argument against burying loot. Why does the author call the reasoning plain?",
+            "Identify the structure of the passage: name its three sections and explain how the author signals each turn.",
+            "The passage ends with four words: We chose the shovel. Analyze what that sentence is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it leads to an 1881 drawing, not to history; cite: quoting a Victorian novelist's rainy-day doodle)",
+            "(buried money cannot be spent and needs survival, memory, and honest shipmates; the reasons are ordinary self-interest, not mystery)",
+            "(the invented chest, the pirates who did not bury, the real German chest; signaled by Start with the imaginary chest and Now the real chest)",
+            "(it accuses the reader of preferring the easy story; earned by the contrast between the doodle and the engineered lock)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["decoy → ____", "articles → ____", "compensation → ____", "brutally → ____"],
+          "rows": 2,
+          "answers": [
+            "a convincing fake set out to draw attention away from the real target",
+            "a written agreement a crew signed setting out rules and shares",
+            "payment made to make up for a loss or injury",
+            "in a way that is harsh and without softening"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage claims a good story can bury a better one. Name one other thing you have been taught that might be a good story standing in front of a truer one, and explain your reasoning.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(student example plus reasoning about why the simpler version spread)",
+            "(student question plus a credible source type, such as a museum catalog or a maritime historian)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: It does not matter that buried treasure is a myth, because the story is more useful than the truth. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

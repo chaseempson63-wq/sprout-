@@ -1,0 +1,319 @@
+{
+  "key": "banana",
+  "title": "The Banana That Is Not From a Tree",
+  "blurb": "The world's favorite fruit is a berry, it grows on a giant herb, and nearly every one you eat is a clone.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Banana That Is Not From a Tree",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-banana", "templateLabel": "The Banana That Is Not From a Tree", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the yellow banana." },
+        {
+          "kind": "image",
+          "imageKey": "banana",
+          "notes": ["It grows high up in a bunch", "Green means hard, yellow means sweet", "The plant is not a tree", "Monkeys open it from the bottom", "The peel is very slippery"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a banana. It grows on a big green plant. The plant is not a tree. It is soft, like a giant blade of grass. Bananas grow in bunches high in the air. A green banana is hard. A yellow banana is soft and sweet. You peel the yellow skin. Then you eat the white part inside. Monkeys open their bananas from the bottom end."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bananas in each row. Write how many in the box.",
+          "emoji": "🍌",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "peel    ripe" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "banana", "right": "yellow" },
+            { "left": "leaf", "right": "green" },
+            { "left": "sun", "right": "hot" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big bunch of bananas hanging on the plant.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Banana That Is Not From a Tree",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-banana", "templateLabel": "The Banana That Is Not From a Tree", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "banana",
+          "notes": ["The trunk is rolled up leaves", "No wood inside at all", "One plant makes one bunch, then dies", "A baby plant grows beside it", "A bunch can hold a hundred bananas"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Plant With No Wood",
+          "text": "A banana plant is not a tree. A tree has hard wood inside it. A banana plant has no wood at all. Its tall trunk is made of leaves, rolled up tight like a roll of paper towels. That is why a big wind can knock a banana plant flat. The plant grows fast. In about nine months it is taller than your front door. Then it makes one huge bunch of bananas. The bunch can hold a hundred of them. After that, the whole plant dies. But a little baby plant is already growing beside it. The baby takes over. It makes the next bunch."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a banana trunk made of?", "How long does the plant take to grow?", "What happens to the plant after it makes its bunch?", "Who makes the next bunch?"],
+          "rows": 2,
+          "answers": ["it is made of leaves rolled up tight", "about nine months", "the whole plant dies", "a baby plant growing beside it"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A banana plant has no ____ inside.", "Its trunk is made of ____.", "The plant makes one big ____.", "A strong ____ can knock it flat."],
+          "wordBank": ["wood", "leaves", "bunch", "wind"],
+          "answers": ["wood", "leaves", "bunch", "wind"]
+        },
+        { "kind": "draw", "prompt": "Draw a banana plant with its bunch. Add the baby plant at the bottom.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Banana That Is Not From a Tree",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-banana", "templateLabel": "The Banana That Is Not From a Tree", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "banana",
+          "notes": ["A row of bananas is called a hand", "One banana is called a finger", "They curve because they grow toward light", "Green bananas are full of starch", "Ripe bananas turn that starch into sugar"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Bananas Grow Up, Not Down",
+          "text": "When a banana plant is ready, a huge purple bud pushes out of the top and bends over toward the ground. Small bananas form along the hanging stalk in neat rows. Each row is called a hand, and each banana in the row is called a finger. Here is the strange part. The bananas start out pointing down, because that is the way the stalk hangs. Then they turn around. Growing plants reach toward light, and the light is above them, so every little banana curves upward as it grows. That gentle curve in your lunch box is a banana bending toward the sun. Bananas are picked while they are still green and hard. Inside a green banana, the sweetness is locked away as starch, the same stuff that fills a potato. As the banana ripens, it slowly turns that starch into sugar. The green fades and the yellow underneath shows through. A banana ripens itself using a gas called ethylene, and it shares that gas with any fruit sitting nearby. Put one banana in a bowl of apples and the whole bowl ripens faster."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a hand of bananas?",
+            "Why does a banana curve upward?",
+            "What is inside a green banana that makes it sweet later?",
+            "Why do you think farmers pick bananas while they are still green?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a row of bananas on the stalk",
+            "because it grows toward the light above it",
+            "starch, which turns into sugar",
+            "(inference: green ones are hard and travel without getting squashed)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Bananas Grow Up, Not Down", "How to Bake a Banana Cake", "The Tallest Trees in the World"],
+          "answers": ["Bananas Grow Up, Not Down"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A row of bananas is called a ____.", "One banana is called a ____.", "A green banana is full of ____.", "Bananas ripen with a gas called ____."],
+          "wordBank": ["hand", "finger", "starch", "ethylene"],
+          "answers": ["hand", "finger", "starch", "ethylene"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how bananas grow, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Banana That Is Not From a Tree",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-banana", "templateLabel": "The Banana That Is Not From a Tree", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "banana",
+          "notes": ["Almost all export bananas are one variety: the Cavendish", "Grown from cuttings, not seeds", "The black specks are seeds that never formed", "Wild bananas are packed with hard seeds", "The world ate a different banana until the 1950s", "Farmers in New Guinea shaped it 7,000 years ago"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Banana Is the Same Banana",
+          "text": "Pick up a banana in a store in Ohio, then pick one up in a store in Norway. There is a good chance those two bananas are not just the same kind of fruit. They are the same plant. Almost every banana sold around the world is a variety called the Cavendish, and Cavendish plants are not grown from seeds. They are grown from suckers, the baby shoots that push up at the base of an older plant. Cut one off, plant it, and it becomes an exact copy of its parent. Do that for decades, across farms in a dozen countries, and you get billions of bananas that are all, genetically, one banana. Look closely inside the next one you eat. You will see a line of tiny black specks down the middle. Those are seeds that never finished forming. A wild banana is nothing like this. It is short and stubby and packed with hard black seeds the size of peppercorns, and you would spit out more than you swallowed. The soft, seedless banana in your hand is not something nature made on its own. Farmers in New Guinea began shaping it thousands of years ago by keeping and replanting the rare plants that made sweet fruit with almost no seed. Being a copy has a cost. Sameness means that whatever can kill one banana plant can kill all of them. That has already happened once. Until the 1950s the world ate a different variety called the Gros Michel. A fungus that lives in soil, known as Panama disease, found it, spread from farm to farm, and wiped it out of the export trade. Growers replaced it with the Cavendish, which that fungus could not touch. For about sixty years, that looked like the end of the story."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is a sucker, and why do banana growers use them?",
+            "What are the tiny black specks inside a banana, and what do they tell you?",
+            "Explain in your own words why growing one variety everywhere is risky.",
+            "The passage says the Cavendish replacing the Gros Michel looked like the end of the story. What does the word looked suggest about what happens next?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a baby shoot at the base of a plant; it grows into an exact copy of the parent",
+            "seeds that never finished forming; the banana used to reproduce by seed and no longer does",
+            "(inference: every plant is identical, so one disease can destroy all of them)",
+            "(inference: it hints the problem came back and the Cavendish is now at risk too)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The world's bananas are identical copies of one plant, which makes them easy to grow and easy to lose",
+            "Bananas grow better in Norway than in Ohio",
+            "Wild bananas taste better than the ones in stores"
+          ],
+          "answers": ["The world's bananas are identical copies of one plant, which makes them easy to grow and easy to lose"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["variety → ____", "genetically → ____", "export (trade) → ____"],
+          "rows": 1,
+          "answers": [
+            "a particular kind of a plant within one type of crop",
+            "having to do with the instructions inside a living thing",
+            "growing food in one country to sell it in others"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: would you rather have one banana that is always the same, or many kinds of banana that all taste different? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Banana That Is Not From a Tree",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-banana", "templateLabel": "The Banana That Is Not From a Tree", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "banana",
+          "notes": ["Genus Musa; botanically a berry", "Shipped green at about 13 degrees Celsius", "Ripened on arrival with ethylene gas", "Too cold and it suffers chilling injury", "India grows the most; Ecuador exports the most", "Tropical Race 4 has no cure and lives in soil"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Green Fruit That Crosses an Ocean",
+          "text": "The banana in your kitchen is one of the most carefully engineered objects in your house, and almost none of that engineering shows. Start on the farm. A banana bunch is cut down while every finger is still hard and dark green, weeks before anyone would want to eat it. This is deliberate. A ripe banana is a soft bag of sugar that bruises if you look at it too long, and it would not survive a ship. A green one will. The bunch is washed, cut into hands, boxed, and loaded into a refrigerated vessel held at about 13 degrees Celsius, which is roughly 56 degrees Fahrenheit. That temperature is chosen with real care. Any warmer and the fruit ripens at sea and arrives as mush. Any colder and the banana suffers what the trade calls chilling injury, turning a dull gray and refusing to ripen at all, ever. Weeks later the boxes reach a port and go into sealed ripening rooms. There the fruit is dosed with ethylene, the same gas a banana produces naturally when it decides its own time has come. The gas flips a switch. Enzymes inside the fruit begin snapping long starch chains into sugars, the green chlorophyll drains away and lets the yellow underneath show, and the flesh softens. Ripening crews can dial the whole process to a schedule, so a store receives fruit that turns yellow on the shelf rather than in the truck. All of that precision rests on a single plant. The Cavendish is a clone, propagated from cuttings rather than seed, which means the entire global trade is one genetic individual grown a few billion times over. The industry already knows what that costs. It lost its previous variety, the Gros Michel, to a soil fungus in the middle of the twentieth century, and it survived only because the Cavendish happened to resist that particular strain. The fungus came back. A newer strain called Tropical Race 4 appeared in Asia around 1990, and the Cavendish has no defense against it. It lives in soil, it can ride to a clean farm on a boot or a truck tire, and it can wait in the ground for decades. Since then it has reached Australia, Africa, the Middle East, and, in 2019, Colombia. No spray cures it. The real answers are the slow ones: new varieties bred or gene-edited to resist it, and farms that stop betting everything on one plant."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why are bananas picked green? Quote the phrase the passage uses to describe a ripe banana.",
+            "Explain what happens inside the fruit when ethylene is applied.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the industry already knows what that costs. What does it mean, and what evidence follows?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the green shipping chain plus the clone risk)",
+            "green fruit is hard enough to survive the voyage; quote: a soft bag of sugar",
+            "starch chains are broken into sugars, chlorophyll drains away, and the flesh softens",
+            "(inform, with detail: it defines terms and gives figures; the closing lines lean persuasive)",
+            "(it lost the Gros Michel to Panama disease in the twentieth century; that history is the evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["deliberate → ____", "propagated → ____", "strain → ____", "chilling injury → ____"],
+          "rows": 1,
+          "answers": [
+            "done on purpose, for a reason",
+            "reproduced and multiplied by growers",
+            "one particular version of a disease organism",
+            "damage from cold that stops fruit from ripening"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls the banana carefully engineered. Do you agree with that word choice? Explain.",
+            "Why is a fungus that lives in soil harder to fight than one that lives on leaves?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion, supported: the fruit is bred, timed, chilled, and gassed on a schedule)",
+            "(inference: you cannot spray or clean soil across whole farms, and it stays there for years)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should the world keep growing one cheap banana, or many kinds that cost more? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Banana That Is Not From a Tree",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-banana", "templateLabel": "The Banana That Is Not From a Tree", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "banana",
+          "notes": ["Musa acuminata: botanically a berry, not a tree fruit", "The pseudostem is packed leaf sheaths, no wood", "Cavendish is seedless and propagated only by cuttings", "Gros Michel fell to Panama disease in the 1950s", "Tropical Race 4 blocks the plant's water vessels", "TR4 can lie dormant in soil for thirty years", "Domesticated in New Guinea about 7,000 years ago"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever Yellow: The Fruit With No Plan B",
+          "text": "There is a strong chance that every banana you have ever eaten came from the same plant. Not the same kind of plant. The same plant. The banana of global trade is a variety called the Cavendish, and it does not reproduce the way a fruit is supposed to. It has no working seeds. Those tiny black flecks running down the center of the flesh are ovules that never developed, leftovers of a sexual system the plant no longer uses. Cavendish bananas are propagated instead from suckers, shoots that push up from the base of a mature plant and can be cut away and replanted. Every one of those shoots is a genetic copy of its parent. Repeat that operation for decades, across plantations in Ecuador, Costa Rica, the Philippines and a dozen other countries, and the result is not really a population. It is a single genetic individual, grown a few billion times over. None of this is an accident of nature. Wild bananas are squat, seed-packed things, closer to gravel than to fruit. The banana you know is the product of thousands of years of human selection that began in New Guinea, where farmers kept replanting the rare mutant plants that produced sweet flesh and almost no seed. That choice was a trade. Seedlessness bought us an edible fruit and cost the plant its ability to shuffle its own genes. Every improvement since has had to be made by people, because the plant can no longer make one on its own. Uniformity is also, commercially, the product. A supermarket wants fruit that ripens on a predictable schedule, survives a two-week ocean crossing at 13 degrees Celsius, and looks identical in every store in every country. A clone delivers exactly that. The banana became cheap, abundant and reliable precisely because it stopped varying. The bill for that arrangement has come due once already. Until the 1950s the export banana was a different variety, the Gros Michel. A soil-borne fungus called Fusarium wilt, known in the trade as Panama disease, moved through the plantations of Central America and destroyed them. There was no cure, because there is no practical way to sterilize soil across thousands of acres. The industry survived by switching wholesale to the Cavendish, which happened to be immune to that particular strain. It was not a solution. It was a substitution, and it bought roughly sixty years. Around 1990 a new strain surfaced in Taiwan. Researchers call it Tropical Race 4, and the Cavendish has no resistance to it. The fungus plugs the plant's water vessels from the inside, so the leaves yellow, the crown collapses, and the plant starves standing up. TR4 lives in soil, travels on a boot sole or a truck tire or a bag of dirt, and can lie dormant in a field for thirty years. Nothing sprays it away. It has since been confirmed in Australia, China, the Middle East, Mozambique and, in 2019, Colombia, which placed it inside the hemisphere that grows most of the fruit sold in the United States. This is the same mistake, made twice. The response, at least, is more interesting than last time. Researchers are breeding and gene-editing resistant lines. Seed banks are preserving hundreds of banana varieties most of us have never tasted. Some growers are quietly planting mixed fields instead of endless identical rows. Whether the Cavendish itself survives matters less than the lesson underneath it. A crop that cannot change is a crop that is waiting."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what the author means by calling the global banana crop a population that is not really a population. Cite the exact phrase used instead.",
+            "The passage says seedlessness was a trade. Explain both sides of that trade using evidence from the text.",
+            "Identify the pivot in the passage: where does it turn from wonder to warning, and how does the author signal the turn?",
+            "Analyze the final sentence. What is it doing rhetorically, and has the passage earned it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(every plant is a clone of one original; cite: a single genetic individual, grown a few billion times over)",
+            "(gained: sweet edible seedless fruit; lost: the ability to shuffle its own genes, so people must make every improvement)",
+            "(at The bill for that arrangement has come due once already; a short blunt sentence marks the shift)",
+            "(it generalizes from bananas to all crops and warns that uniformity invites collapse; supported by the Gros Michel and TR4 evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["propagated → ____", "uniformity → ____", "dormant → ____", "wholesale (switching) → ____"],
+          "rows": 2,
+          "answers": [
+            "multiplied by growers from cuttings rather than seed",
+            "the state of being identical throughout, with no variation",
+            "alive but inactive, waiting for conditions to change",
+            "completely and all at once, across the whole industry"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author writes that it was not a solution, it was a substitution. Explain the distinction and why it matters to the argument.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(swapping one clone for another left the underlying weakness untouched, so the same failure repeats)",
+            "(student question plus a credible source type, such as a plant pathology journal or a grower)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: cheap food is worth the risk of growing one variety everywhere. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

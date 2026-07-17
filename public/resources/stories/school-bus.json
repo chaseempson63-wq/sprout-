@@ -1,0 +1,304 @@
+{
+  "key": "school-bus",
+  "title": "The Bus That Had to Be Yellow",
+  "blurb": "Every school bus in America is the same exact shade of yellow, and the reason was decided in one room in 1939.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Bus That Had to Be Yellow",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-school-bus", "templateLabel": "The Bus That Had to Be Yellow", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the door. Find the wheels." },
+        {
+          "kind": "image",
+          "imageKey": "school-bus",
+          "notes": ["Every school bus is the same yellow", "Yellow is easy to see in the dark", "The red sign swings out", "Cars have to stop and wait", "It has lots of windows"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Here comes the bus. The bus is big. The bus is yellow. Yellow is easy to see. It is still dark in the morning, but you can see yellow. The bus has a red sign that swings out. When the sign is out, all the cars must stop. Then you can walk. The bus door opens. Time to get on."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the windows on each bus. Write how many in the box.",
+          "emoji": "🚌",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "bus    stop" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each thing to its color.",
+          "pairs": [
+            { "left": "school bus", "right": "yellow" },
+            { "left": "stop sign", "right": "red" },
+            { "left": "grass", "right": "green" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own school bus. Color it yellow and put yourself in a window.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Bus That Had to Be Yellow",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-school-bus", "templateLabel": "The Bus That Had to Be Yellow", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "school-bus",
+          "notes": ["Long ago buses were every color", "One teacher picked yellow for all of them", "That was in 1939", "Your eyes find yellow first", "Black words look sharp on yellow"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bus That Had to Be Yellow",
+          "text": "The school bus is yellow for a reason. Long ago, buses were red, or blue, or white, or green. Every town picked its own color. Then a teacher named Frank Cyr had an idea. He asked people to pick one color for every bus in the country. They hung strips of paint on a wall and looked at them for a long time. They chose bright yellow. Yellow is the color your eyes find first, even when the sky is still gray and sleepy. Black words look sharp on yellow too. So now the bus is yellow in every town, and everyone knows what it is."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What colors were buses long ago?", "Who had the idea to pick one color?", "Why is yellow a good color for a bus?"],
+          "rows": 2,
+          "answers": ["red, blue, white, and green", "a teacher named Frank Cyr", "your eyes find it first, even in gray morning light"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Every school bus is painted ____.", "A teacher named Frank ____ had the idea.", "They hung strips of ____ on a wall.", "____ words look sharp on yellow."],
+          "wordBank": ["yellow", "Cyr", "paint", "Black"],
+          "answers": ["yellow", "Cyr", "paint", "Black"]
+        },
+        { "kind": "draw", "prompt": "Draw the bus at your stop. Add the sky, the road, and one person waiting.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Bus That Had to Be Yellow",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-school-bus", "templateLabel": "The Bus That Had to Be Yellow", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "school-bus",
+          "notes": ["Yellow lights mean the bus is slowing", "Red lights mean every car must stop", "The stop arm swings out from the side", "The riskiest spot is right around the bus", "The seats are tall and padded on purpose"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bus That Can Stop Traffic",
+          "text": "A school bus does something no other vehicle on the road can do. It can stop traffic. Watch the lights. When the bus is getting ready to stop, yellow lights flash on the front and the back. That is a warning to the cars behind it. Then the bus stops, red lights flash, and a stop sign swings out from its side on a metal arm. Now the law says every car must wait, in both directions, until the arm folds back in. Why go to all that trouble? Because the most dangerous place near a school bus is not inside it. It is the ten feet of road all around it, where a driver in a car might not see a small person. So the bus makes itself impossible to miss. It flashes, it swings out an arm, and it wears the brightest color anyone could find. Inside, the bus is quieter about its job. The seats are tall and padded and packed close together, like a row of soft walls. If the bus ever stopped hard, those seats would catch you."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What do the yellow flashing lights mean?",
+            "What two things tell cars they must stop and wait?",
+            "Where is the most dangerous place near a school bus?",
+            "Why do you think the seats are packed so close together?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the bus is getting ready to stop",
+            "the red flashing lights and the stop arm with the sign on it",
+            "the ten feet of road all around it",
+            "(inference: so a seat is close enough to catch you in a sudden stop)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Bus That Can Stop Traffic", "How to Build a Wooden Wagon", "The Best Snacks to Pack for School"],
+          "answers": ["The Bus That Can Stop Traffic"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["When the bus is about to stop, the ____ lights flash first.", "When the ____ lights flash, every car must wait.", "The most dangerous place is the ____ feet of road around the bus."],
+          "wordBank": ["yellow", "red", "ten"],
+          "answers": ["yellow", "red", "ten"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the smartest thing about how a school bus is built, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Bus That Had to Be Yellow",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-school-bus", "templateLabel": "The Bus That Had to Be Yellow", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "school-bus",
+          "notes": ["The color has a name: National School Bus Glossy Yellow", "Chosen at a seven day meeting in April 1939", "Frank Cyr organized it and got a grant to pay for it", "Forty four standards were agreed that week", "Paint strips were hung on the wall to compare shades"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Seven Days and Forty Four Rules",
+          "text": "In 1939, a school bus could be almost any color. It might be a truck with a wooden body bolted on by the local carpenter. It might be painted red because red paint was cheap that year. Nothing matched, nothing was tested, and nobody had written down what a bus for children should actually be. Frank Cyr noticed. He was a professor who had traveled thousands of miles through rural America looking at how children got to school, and what he saw worried him. So he did something practical. He got a grant, invited the people who mattered, and put them all in one room. For seven days in April 1939, engineers, paint makers, and officials from every state argued about buses at Teachers College in New York. They hung strips of paint along the walls, dozens of shades of yellow and orange, and studied them. They settled on one: a bright yellow that would later be called National School Bus Glossy Yellow. It was not chosen because it was pretty. Human eyes pick up yellow out of the corner of your eye faster than almost any other color, which matters at seven in the morning when the light is thin and gray. Black lettering also reads cleanly against it, so the words SCHOOL BUS could be seen from far away. That week produced forty four standards in total, covering everything from ceiling height to the width of the aisle. Almost every yellow bus on the road today is still following rules written by people in a room with paint strips on the walls."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Describe what a school bus was like before 1939.",
+            "Give two reasons the group chose yellow.",
+            "The passage says the color was not chosen because it was pretty. What does that tell you about how the group made decisions?",
+            "Why would a rule about the width of the aisle matter on a bus full of children?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a truck with a homemade wooden body, any color, built to no standard",
+            "eyes catch yellow fastest at the edge of vision, and black letters read clearly on it",
+            "(inference: they decided by testing and evidence, not by taste)",
+            "(inference: children need to get on and off quickly and safely, especially in an emergency)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "One week of careful argument in 1939 turned the school bus from a homemade truck into a standard machine",
+            "Frank Cyr invented the first bus engine",
+            "Yellow paint has always been cheaper than every other color"
+          ],
+          "answers": ["One week of careful argument in 1939 turned the school bus from a homemade truck into a standard machine"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["standard → ____", "rural → ____", "glossy → ____"],
+          "rows": 1,
+          "answers": ["an agreed rule that everyone builds to", "out in the country, away from cities", "shiny, with a finish that bounces light back"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: should every school bus in the country have to look the same? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Bus That Had to Be Yellow",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-school-bus", "templateLabel": "The Bus That Had to Be Yellow", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "school-bus",
+          "notes": ["Compartmentalization: the seats do the job a belt would do", "Tall padded seats set deliberately close together", "Heavy and high, so most car impacts land below the riders", "Most injuries happen outside the bus, not inside it", "The crossing gate pushes kids forward into the driver's view"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Seats Are So Close Together",
+          "text": "Ride in a car and you buckle a belt across your body. Ride in a school bus and, in most of the country, you do not. Parents notice this and it bothers them, which is fair. The reason is not laziness or cost, though cost is part of the argument. The reason is a design idea called compartmentalization. Look at the seats on a school bus. They are unusually tall, thickly padded, and set close together, closer than seems comfortable. That spacing is deliberate. Each row of seats builds a padded box around the child behind it. In a sudden stop, a passenger moves forward a short distance and meets a seat back engineered to absorb the energy of the impact rather than resist it. No buckle required, and no chance of a child fastening the belt wrong or unbuckling it three miles from home. The bus helps itself in other ways. It is heavy, so it loses less speed in a collision with a smaller vehicle. It sits high, so the passengers are above the level where most car impacts land. It is stiff and boxy, and the frame is built to hold up if it rolls. The numbers back the design. Federal safety researchers report that a student is far more likely to reach school safely on a bus than in the family car. School buses are, by the ordinary measures, the safest vehicles on the American road. There is a catch, and it is the part that matters most. Most children hurt in school bus incidents are not hurt while riding. They are hurt in the ten feet of pavement surrounding the bus, struck by passing cars or by the bus itself, in the moments when they are walking to a door or crossing in front of a bumper. Everything loud about a school bus, the yellow paint, the red flashers, the arm with the stop sign on it, the gate that swings out from the front bumper to push children forward where the driver can see them, exists for those few seconds. The bus is safe. The road around the bus is not, and no seat belt can help with that."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is compartmentalization, and how do the seats create it?",
+            "Quote the exact words the passage uses to describe what a seat back is engineered to do.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "Why does the author finish with the road instead of finishing with the bus?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering compartmentalization + the bus being safest + the danger zone outside it)",
+            "the seats form padded boxes that catch a passenger; they are tall, padded, and set close together on purpose",
+            "quote: absorb the energy of the impact rather than resist it",
+            "(inform, with detail: it defines a term and reports research; a persuasive turn arrives at the end)",
+            "(the outside is where the real risk sits, so the author leaves the reader holding that)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["compartmentalization → ____", "deliberate → ____", "collision → ____", "incidents → ____"],
+          "rows": 1,
+          "answers": ["protecting riders by boxing them in with padded seats instead of belts", "done on purpose, not by accident", "a crash between two moving things", "events where something went wrong"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says the parents' worry about seat belts is fair. Why include that instead of only explaining the design?",
+            "If the danger zone outside the bus is the real problem, name one change that would help, and explain your reasoning."
+          ],
+          "rows": 3,
+          "answers": ["(it takes the reader's objection seriously first, which makes the explanation easier to accept)", "(student answer + reasoning, for example slower speed limits, better lighting, stronger penalties for passing a stopped bus)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should school buses be required to have seat belts? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Bus That Had to Be Yellow",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-school-bus", "templateLabel": "The Bus That Had to Be Yellow", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "school-bus",
+          "notes": ["Before engines there was the kid hack, a horse drawn school wagon", "Rear door so the driver never let go of the reins", "National School Bus Glossy Yellow, set April 1939", "Roughly half a million buses run in the US", "Buses stop at every railroad crossing, doors open", "Electric buses cost more to buy, far less to run"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "From the Kid Hack to the Electric Bus",
+          "text": "Before the yellow bus, there was the kid hack. In the 1880s, American farm children reached school in a horse drawn wagon with benches down each side and a door at the back, cut there so the driver never had to leave the reins to let anyone in. The name came from hackney, an old word for a carriage for hire. The kid hack was slow, cold, and open to the weather, and it was still an improvement on walking four miles through snow. When engines replaced horses, the wagon body simply moved onto a truck frame. The result was not a school bus so much as a truck with something built on it, usually by a local shop, out of wood, to no standard at all. Buses were red, green, white, or whatever paint the shop had. Some had doors that opened into traffic. Some had none. Nobody had ever written down what a vehicle carrying other people's children ought to be, because until then nobody thought it was their job. Frank Cyr thought it was. A professor at Teachers College in New York, Cyr had spent years surveying how rural children got to school, and he had seen enough. In 1939 he took a grant from the Rockefeller Foundation, gathered engineers, state transportation officials, and paint company chemists, and put them in a room together for a week. The famous decision was the color. The group hung painted strips along the wall, dozens of yellows and oranges, and picked the shade now known as National School Bus Glossy Yellow. The logic was cold and practical: the human eye detects yellow in peripheral vision, the blurry edge of what we see, more readily than red, and black lettering stays legible against it. A bus is most often loading in the half light of early morning, exactly when a driver's peripheral vision is doing most of the work. The color was not a mood. It was a calculation. The color gets remembered because it is visible. The other forty three standards agreed that week mattered more: aisle widths, ceiling heights, seat dimensions, the shape of the body. They turned a local craft product into a national machine with a specification. The specification kept growing. Modern buses are built around compartmentalization, in which tall padded seats spaced closely together form energy absorbing compartments, so the vehicle protects passengers through its own structure rather than through belts. Roof strength, joint strength, and fuel system integrity are all tested. Buses stop at every railroad crossing, doors open, engine quiet, driver listening. The crossing gate on the front bumper swings out to force a child far enough forward to be seen. Each rule exists because somewhere, once, its absence cost something. The next change is already arriving, and it is under the floor. Roughly half a million school buses run in the United States, most of them burning diesel, and children breathe that exhaust twice a day at the age when their lungs are still developing. Electric buses have no tailpipe at all. They cost far more to buy and far less to run, and a fleet that drives the same route every day and sits parked all night happens to be almost the ideal machine to electrify. Federal money is now pushing thousands of them onto the road. The bus will stay yellow. That part was settled in a room in 1939 by people looking at paint strips on a wall, and it turned out they were right."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the door on a kid hack was at the back. Cite the evidence.",
+            "The author writes that the color was not a mood, it was a calculation. Analyze what those two short sentences are doing at that point in the passage.",
+            "The passage claims the other forty three standards mattered more than the color. What evidence supports that claim, and do you find it convincing?",
+            "Explain the sentence about each rule existing because somewhere, once, its absence cost something. What is the author implying about how safety rules get written?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the history from horse wagon to standardized yellow bus to electric)",
+            "(so the driver kept hold of the horses; cite: so the driver never had to leave the reins to let anyone in)",
+            "(two blunt short sentences close the argument and reframe the color as engineering, not decoration)",
+            "(evidence: aisle widths, ceiling heights, seat dimensions turned a craft product into a specification; student judgment on sufficiency)",
+            "(rules are usually written after harm, not before; safety codes are a record of past failures)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["specification → ____", "peripheral → ____", "legible → ____", "compartmentalization → ____"],
+          "rows": 2,
+          "answers": [
+            "a written set of exact requirements a thing must be built to",
+            "at the outer edge of what you can see",
+            "clear enough to read easily",
+            "protecting riders by enclosing them in padded, energy absorbing seat compartments"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Electric buses cost far more to buy and far less to run. Explain why a school district might still take that trade, and what would make it a bad one.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(lower fuel and maintenance costs plus cleaner air add up over a long service life; bad trade if the district cannot afford the upfront cost or lacks charging)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The 1939 meeting mattered more to child safety than any single invention on the bus. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

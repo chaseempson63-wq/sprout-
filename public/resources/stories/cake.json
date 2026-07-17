@@ -1,0 +1,310 @@
+{
+  "key": "cake",
+  "title": "The Cake That Is Mostly Air",
+  "blurb": "A cake is a foam. Every bubble in it is made in the mixing bowl, before the oven ever gets involved.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Cake That Is Mostly Air",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-cake", "templateLabel": "The Cake That Is Mostly Air", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the candles." },
+        {
+          "kind": "image",
+          "imageKey": "cake",
+          "notes": ["The pink part is frosting", "A cake is soft and full of holes", "It starts out runny", "The hot oven puffs it up", "You blow the candles out"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a cake. Look at the pink top. Look at the little candles. Before it went in the oven, the cake was runny. It was thin like soup. Then it got hot. Tiny bubbles inside the cake grew big. The cake puffed up and up. Then it turned soft and firm. A cake is full of little holes. That is why it feels soft."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the candles in each row. Write how many in the box.",
+          "emoji": "🕯️",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "cake    bake" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "cake", "right": "oven" },
+            { "left": "ice", "right": "freezer" },
+            { "left": "soup", "right": "pot" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own cake. Put one candle on it for each year you are old.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Cake That Is Mostly Air",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-cake", "templateLabel": "The Cake That Is Mostly Air", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "cake",
+          "notes": ["Runny cake mix is called batter", "Mixing beats air into the batter", "Warm gas takes up more room", "The oven makes the cake firm", "A cake is mostly air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Cake Puffs Up",
+          "text": "A cake starts out as batter. Batter is wet and runny. You can pour it. When you mix batter, you beat air into it. The air makes tiny bubbles. The bubbles are so small you cannot see them. Then the batter goes into the hot oven. The bubbles get warm. Warm gas spreads out and takes up more room. So every tiny bubble grows bigger. The whole cake lifts up. The oven also cooks the eggs and the flour. They turn firm and hold the bubbles in place. Now the cake will stay puffy when it cools. A cake is mostly air, held in a soft net."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is runny cake mix called?", "What do you beat into the batter when you mix it?", "What happens to the bubbles in the hot oven?"],
+          "rows": 2,
+          "answers": ["it is called batter", "you beat in air", "they grow bigger"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A cake starts out as ____.", "Mixing beats ____ into the batter.", "The bubbles grow big in the hot ____.", "A cake is mostly ____."],
+          "wordBank": ["batter", "air", "oven", "air"],
+          "answers": ["batter", "air", "oven", "air"]
+        },
+        { "kind": "draw", "prompt": "Draw the cake going into the oven. Then draw it coming out puffy.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Cake That Is Mostly Air",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-cake", "templateLabel": "The Cake That Is Mostly Air", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "cake",
+          "notes": ["Baking soda makes carbon dioxide gas", "Sour things are called acids", "Lemon juice and yogurt are acids", "The gas cannot make new bubbles", "It only fills bubbles that are already there"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Gas That Lifts the Cake",
+          "text": "Air is not the only thing that lifts a cake. Most cakes get help from a white powder called baking soda. Baking soda has a job. When it gets wet and meets something sour, it makes a gas called carbon dioxide. Sour things in a kitchen are called acids. Lemon juice is an acid. So is yogurt, and so is buttermilk. Mix baking soda with an acid and you get fizz. That fizz is gas. Here is the surprising part. The gas cannot make new bubbles. It can only slip into bubbles that are already there, the ones you beat in when you stirred. So the gas does not build the cake. It blows up bubbles that the mixing bowl already made. Baking powder is baking soda with a dry acid already mixed in. Add water and heat, and it fizzes on its own. Then the oven sets the cake. Egg and flour turn firm around the bubbles and hold them still. The cake keeps its shape even after it cools."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What gas does baking soda make when it meets an acid?",
+            "Name two acids from the passage.",
+            "Where do the bubbles in a cake come from?",
+            "Why do you think a baker who forgets to mix the batter well would end up with a flat cake?"
+          ],
+          "rows": 2,
+          "answers": [
+            "carbon dioxide",
+            "any two of: lemon juice, yogurt, buttermilk",
+            "from the mixing, when air is beaten in",
+            "(inference: the gas can only fill bubbles that are already there, and poor mixing makes too few)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Gas That Lifts the Cake", "How to Frost a Cake Pink", "The Story of the First Oven"],
+          "answers": ["The Gas That Lifts the Cake"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Baking soda makes carbon ____ gas.", "Sour things in a kitchen are called ____.", "Baking ____ is baking soda with a dry acid already mixed in."],
+          "wordBank": ["dioxide", "acids", "powder"],
+          "answers": ["dioxide", "acids", "powder"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how a cake rises, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Cake That Is Mostly Air",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-cake", "templateLabel": "The Cake That Is Mostly Air", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cake",
+          "notes": ["A foam is gas trapped inside something soft", "Bread, sponges and cake are all foams", "Sugar crystals tear air into the butter", "Steam does a lot of the lifting", "Egg and starch set the walls firm", "A sunken middle means the walls tore"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Cake Is a Foam",
+          "text": "Think about what a cake actually is. It is not solid. Break a piece open and you will see thousands of holes, each one a pocket of gas trapped in something soft. Scientists have a word for a material like that. It is a foam. Bread is a foam. A sponge is a foam. So is a cake, which is why one kind is even called a sponge. Making a cake is really the job of building a foam and then locking it in place. It happens in three steps. First you make bubbles. Beating butter and sugar together does this, because the sharp edges of the sugar crystals tear tiny pockets of air into the fat. Whipping eggs does it too. This step matters more than it sounds, because every bubble the finished cake will ever have is born here. Second you inflate them. Baking soda meets an acid and releases carbon dioxide. Water in the batter turns to steam. Both gases push into the bubbles that already exist and swell them, the way breath swells a balloon that is already there. Third you set the foam. As the oven heats the batter past about 160 degrees Fahrenheit, egg proteins tangle together and starch grains in the flour soak up water and stiffen. The soft walls between the bubbles harden into a net. The cake stops rising and holds. Get any step wrong and the foam fails. Too little mixing, few bubbles, flat cake. Too much gas, the walls tear and the middle sinks. A cake is a small piece of engineering that happens to taste good."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is a foam, in your own words, and why does a cake count as one?",
+            "Explain how creaming butter and sugar makes bubbles.",
+            "The passage says every bubble is born in the first step. Why does that make the mixing so important?",
+            "A cake rises tall in the oven and then sinks in the middle as it bakes. Using the passage, explain what probably went wrong."
+          ],
+          "rows": 2,
+          "answers": [
+            "(gas trapped in pockets inside something soft; a cake is full of gas pockets)",
+            "the sharp sugar crystals tear tiny pockets of air into the fat",
+            "(inference: gas can only expand bubbles that already exist, so no bubbles means no rise)",
+            "(inference: too much gas, or walls that set too late, so the bubbles merged and tore)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A cake is a foam, and baking is the job of making bubbles, filling them, and setting them in place",
+            "Sponges and bread taste better than cake",
+            "Baking soda is the only thing that makes a cake rise"
+          ],
+          "answers": ["A cake is a foam, and baking is the job of making bubbles, filling them, and setting them in place"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["foam → ____", "inflate → ____", "batter → ____"],
+          "rows": 1,
+          "answers": ["gas trapped in pockets inside another material", "to fill with gas so it swells", "the wet, pourable mix before it bakes"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a cake rises, as if you were teaching a six year old. Use the words bubbles, gas, and set.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Cake That Is Mostly Air",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-cake", "templateLabel": "The Cake That Is Mostly Air", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cake",
+          "notes": ["The word cake comes from Old Norse kaka", "Sugar was once locked up like treasure", "Alfred Bird made baking powder in 1843", "Old ovens had no temperature dial", "Birthday candles are traced to Germany in the 1700s", "The tradition is newer than it looks"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Everyone Has a Cake on Their Birthday",
+          "text": "For most of history, a cake was not a birthday thing. It was barely even a cake. The word comes from the Old Norse kaka, and it arrived in English around 800 years ago meaning something small, round, and flat. Early cakes were closer to sweetened bread. The Romans baked a heavy layered thing of dough, cheese, and honey. Egyptian bakers sweetened their loaves with honey, because they had no other sweetener worth the trouble. None of it looked like the pink and frosted object you picture now. Three ordinary inventions changed that, and none of them were about cake. The first was cheap sugar. For centuries sugar was a luxury priced like a spice, kept in a locked box, shaved off a hard cone with special nippers. Through the 1800s it became cheap and ordinary, and a recipe that swallowed cups of it stopped being absurd. The second was baking powder. Before it, a baker who wanted lift had two options: whip eggs by hand until your arm gave out, or use yeast and wait. In 1843 an English chemist named Alfred Bird mixed baking soda with a dry acid and sealed them in a tin, because his wife could not eat yeast. Suddenly the gas came from a spoon. The third was the oven. A cake needs steady, moderate heat for a long time. Wood-fired brick ovens ran hot and then cooled, and bakers judged the heat by holding a hand inside. Ovens you could actually set to a number showed up in the early 1900s. After that, a cake stopped being a gamble. The candles came from somewhere else. The custom of one candle for each year of a child's life is usually traced to Germany in the 1700s, long before most families could bake the cake underneath them. The two habits met later, once the ingredients caught up with the ceremony. So the birthday cake is not an ancient tradition that survived. It is a new one, made possible by a cheap sweetener, a tin of powder, and a dial on an oven door."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the three inventions the author says changed cake, and say what each one solved.",
+            "Why did Alfred Bird make baking powder? Quote the reason the passage gives.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The author says the candles came from somewhere else. What point is the author making by separating the candles from the cake?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: cake was once plain and rare; cheap sugar, baking powder and controllable ovens made the modern birthday cake possible)",
+            "cheap sugar solved cost, baking powder solved lift, the oven solved steady heat",
+            "his wife could not eat yeast; quote: because his wife could not eat yeast",
+            "(inform, with detail: it dates inventions and defines terms, though the closing line has a persuasive turn)",
+            "(the ceremony is older than the cake, so the two traditions were joined later, not inherited together)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["luxury → ____", "absurd → ____", "gamble → ____", "ceremony → ____"],
+          "rows": 1,
+          "answers": ["something expensive that few people can afford", "so unreasonable it seems silly", "something whose outcome is uncertain and risky", "a set of actions repeated for a special occasion"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author writes that none of the three inventions were about cake. Explain why that is worth pointing out.",
+            "Bakers once judged oven heat by holding a hand inside. What does that tell you about who could bake a good cake before the 1900s?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: everyday traditions can depend on unrelated technology, not on anyone deciding to invent them)",
+            "(inference: it took skill and long practice, so cake was for trained bakers, not most families)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does knowing that the birthday cake is a recent invention make the tradition feel less special? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Cake That Is Mostly Air",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-cake", "templateLabel": "The Cake That Is Mostly Air", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cake",
+          "notes": ["A cake is a solid foam", "Bubbles are made in the bowl, not the oven", "Baking soda is sodium bicarbonate", "Rising and setting are a race", "Sugar delays egg proteins from setting", "Chiffon cake, invented 1927, was a change of fat", "Staling is starch recrystallizing, not just drying"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Engineering of Cake: How to Trap a Gas in a Solid",
+          "text": "A cake is a solid foam, which is a strange thing to eat. Foam means a gas trapped inside something else, held there in countless separate pockets. Break a slice open and the evidence is right in front of you: a honeycomb of holes, each wall a thin film of cooked egg, starch, and fat. A baker is not really making a food. A baker is making a structure and hoping it holds. The structure is built in a fixed order, and the first step is the one people misunderstand. Bubbles cannot be created by heat, and they cannot be created by baking powder. They have to be there first. When butter and sugar are creamed together, the hard edges of the sugar crystals cut through the fat and drag pockets of air in behind them. When eggs are whipped, protein unwinds and wraps around air. Every bubble the finished cake will ever contain is made in that bowl, at room temperature, before any heat is involved. Everything that follows can only enlarge what already exists. The enlarging is chemistry. Baking soda is sodium bicarbonate, and when it meets an acid in a wet batter it breaks apart and gives off carbon dioxide. Baking powder is the same soda with a powdered acid packed alongside it, dry and inert until liquid arrives. Meanwhile the water in the batter turns to steam, which expands enormously. Both gases migrate into the existing air pockets and swell them from within. The batter climbs. Then comes the race. Rising and setting are two clocks running at once, and a cake succeeds only if they finish together. As the batter passes roughly 160 degrees Fahrenheit, egg proteins coagulate and starch granules swallow water and swell, and the liquid walls between the bubbles turn firm. If the walls set too early, the gas has nowhere to go and the cake is dense and tight. If the gas arrives too fast or the walls stay soft too long, the bubbles merge, break the surface, vent, and the middle collapses into the crater every home baker has produced at least once. The lesson is that a cake recipe is not a list of flavors. It is a set of instructions for controlling a race between two processes, and the ingredients are chosen for their timing. Sugar is a good example. It sweetens, obviously, but it also gets in the way of gluten forming, which keeps the crumb tender, and it raises the temperature at which egg proteins set, which buys the gas extra seconds to expand. Take the sugar out of a cake and you do not get an unsweetened cake. You get a different object entirely. Once you see cake as engineering, the inventions make sense. In 1927 an insurance salesman in California named Harry Baker worked out that liquid vegetable oil, unlike butter, stays soft when cold, and produced a cake so light that Hollywood restaurants bought every one he could make. He kept the method secret for twenty years before selling it to General Mills, who named it chiffon. His whole secret was a change of fat. Even staling is structural. A cake left out does not simply dry. Its starch molecules, forced apart and softened by water in the oven, slowly creep back into orderly crystals, squeezing water out and turning the crumb firm. Warm the slice gently and some of those crystals loosen, and the cake goes soft again for a while. It was never about moisture leaving the room. It was about starch remembering its old shape."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author says the first step is the one people misunderstand. Explain the misunderstanding and cite the sentence that corrects it.",
+            "Explain the race the author describes, and what goes wrong at each end of it.",
+            "Identify the pivot in the passage: where does the author stop describing and start arguing, and how is it signaled?",
+            "The author claims a cake recipe is a set of instructions for controlling a race between two processes. Analyze whether the sugar example actually earns that claim."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering foam, bubble origin, the rise-versus-set race)",
+            "(people think heat or baking powder creates the bubbles; cite: They have to be there first)",
+            "(walls set too early gives a dense cake; gas too fast or walls too soft gives a sunken middle)",
+            "(at The lesson is that a cake recipe is not a list of flavors; the word lesson signals the shift from process to argument)",
+            "(yes: sugar is shown doing three timing jobs at once, tenderizing, holding moisture in the walls, and delaying protein setting, which is timing not flavor)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["solid foam → ____", "inert → ____", "coagulate → ____", "crumb → ____"],
+          "rows": 2,
+          "answers": [
+            "a gas held in separate pockets inside a firm material",
+            "not reacting until something changes, such as liquid arriving",
+            "to set or firm up from a liquid state, as egg protein does with heat",
+            "the soft inner texture of a baked cake or loaf"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Air pressure is lower on a high mountain, so gas inside a bubble pushes out harder. Using the passage, predict what happens to a cake baked up there and explain why.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the bubbles expand faster and further, so they can tear the walls before the walls set, and the cake collapses)",
+            "(student question plus a credible source type, such as a food science text or a baking chemistry study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Baking is a science, not an art, because the recipe controls everything that matters. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "key": "eye",
+  "title": "The Eye That Sees Upside Down",
+  "blurb": "Every picture that lands inside your eye is upside down and backwards, and there is a hole in your vision you have never noticed.",
+  "topic": "body-health",
+  "bands": {
+    "1": {
+      "title": "The Eye That Sees Upside Down",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-eye", "templateLabel": "The Eye That Sees Upside Down", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Then look in a mirror at your own eyes." },
+        {
+          "kind": "image",
+          "imageKey": "eye",
+          "notes": ["You blink about 15 times a minute", "The black dot is really a hole", "Eyelashes keep dust out", "Your two eyes work as a team"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "You have two eyes. Your eyes let you see. Look in a mirror. See the white part. See the ring of color. That ring can be brown or blue or green or gray. In the middle is a little black dot. Light goes in the black dot. That is how you see. Now blink. Blink, blink. Your eyelids wash your eyes and keep them clean."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the eyes in each row. Write how many in the box.",
+          "emoji": "👁",
+          "items": ["2", "4", "6", "3"],
+          "answers": ["2", "4", "6", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "eye    see" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each part to its job.",
+          "pairs": [
+            { "left": "eye", "right": "see" },
+            { "left": "ear", "right": "hear" },
+            { "left": "nose", "right": "smell" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a face. Give it two eyes. Put a little black dot in the middle of each one.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Eye That Sees Upside Down",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-eye", "templateLabel": "The Eye That Sees Upside Down", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "eye",
+          "notes": ["The pupil is a hole, not a dot", "The iris is a tiny muscle", "Blue eyes have no blue in them", "Your eye is about as wide as a grape"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hole in the Middle of Your Eye",
+          "text": "Look at the black dot in the middle of your eye. It is not a dot. It is a hole. The hole is called the pupil. Light goes through it, and that is how you see. The ring of color around it is called the iris. The iris is a tiny muscle. In a dark room, the iris opens the hole wide to let more light in. In bright sun, the iris closes it small. Ask someone to look at your eyes in the dark, then turn on the light. Watch the hole shrink. Your eyes fix themselves, and you never even feel it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the black dot in your eye really?", "What is the ring of color called?", "What does the iris do in a dark room?"],
+          "rows": 2,
+          "answers": ["it is a hole called the pupil", "the iris", "it opens the pupil wide to let more light in"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The hole in your eye is called the ____.", "The ring of color is called the ____.", "In a dark room the pupil gets ____.", "In bright sun the pupil gets ____."],
+          "wordBank": ["pupil", "iris", "wide", "small"],
+          "answers": ["pupil", "iris", "wide", "small"]
+        },
+        { "kind": "draw", "prompt": "Draw two big eyes. Give one a small pupil for bright sun. Give the other a wide pupil for a dark room.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Eye That Sees Upside Down",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-eye", "templateLabel": "The Eye That Sees Upside Down", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "eye",
+          "notes": ["The lens is about the size of a pea", "The picture inside your eye is upside down", "Your retina holds over 100 million light cells", "The clear front window is called the cornea", "The cornea takes its oxygen straight from the air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Your Eye Is a Camera",
+          "text": "Your eye is built almost exactly like a camera. Light bounces off everything around you. Some of that light comes toward your face and hits the clear window at the front of your eye. It passes through the pupil, which is just a hole. Behind the hole sits a lens, soft and clear and about the size of a pea. The lens bends the light and aims it at the back wall of your eye. That back wall is called the retina. It is thin, and it is covered in millions of tiny cells that notice light. When light lands on them, they send a message down a thick nerve to your brain. Here is the strange part. The lens flips the picture over on the way through. Every image that lands on your retina is upside down and backwards. Your brain turns it the right way up so fast that you have never once noticed. You are not really seeing with your eyes. You are seeing with your brain, and your eyes just deliver the mail."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is the pupil?",
+            "What does the lens do to the light?",
+            "What happens to the picture that lands on your retina?",
+            "Why do you think you never notice that the picture is upside down?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a hole that lets light into the eye",
+            "it bends the light and aims it at the back wall of the eye",
+            "it lands upside down and backwards",
+            "(inference: the brain flips it instantly, and it has been that way your whole life)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Your Eye Is a Camera", "How to Take Care of a Pet", "The History of Glass"],
+          "answers": ["Your Eye Is a Camera"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Light enters your eye through a hole called the ____.", "The ____ bends the light and aims it at the back of the eye.", "The back wall of the eye is called the ____.", "The picture that lands there is ____ down."],
+          "wordBank": ["pupil", "lens", "retina", "upside"],
+          "answers": ["pupil", "lens", "retina", "upside"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of the eye do you think does the most important job, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Eye That Sees Upside Down",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-eye", "templateLabel": "The Eye That Sees Upside Down", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "eye",
+          "notes": ["About 120 million rods, about 6 million cones", "One rod can catch a single particle of light", "Rods see no color at all", "Sharp vision comes from a patch the size of a pinhead", "Look slightly to one side to see a faint star better"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Two Kinds of Light Catchers",
+          "text": "The back of your eye is lined with a thin sheet called the retina, and packed into it are more than a hundred million cells whose only job is to catch light. They are not all the same. They come in two kinds, and the difference explains almost everything strange about how you see. The first kind is called a rod. You have roughly 120 million of them, and they are extraordinarily sensitive. A rod can react to a single particle of light. But rods are colorblind. They report brightness and nothing else. They are also spread mostly around the edges of the retina, away from the center. The second kind is called a cone. You only have about 6 million, they need far more light to fire, and they come in three types, each tuned to a different range of color. Cones are crowded into one tiny patch at the center of the retina, roughly the size of a pinhead. That patch is the only place you see sharp detail. Now the strange parts make sense. At night the world goes gray, because your cones have shut down and only your rods are left working, and rods do not do color. Out of the corner of your eye things look blurry, because there are almost no cones out there. And a faint star will vanish if you stare straight at it, then reappear when you look slightly to one side. You are moving its light off your cones and onto your sensitive rods."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what is the main difference between a rod and a cone?",
+            "Why does the world lose its color at night?",
+            "The passage says a faint star vanishes when you look straight at it. Explain why, using what you know about the retina.",
+            "You have twenty times more rods than cones. Why do you think your sharpest vision still comes from the cones?"
+          ],
+          "rows": 2,
+          "answers": [
+            "rods catch dim light but see no color; cones need bright light and see color and detail",
+            "cones need bright light, so at night only the colorblind rods are still working",
+            "(inference: staring puts its light on the cone patch, which is not sensitive enough for a faint star)",
+            "(inference: the cones are packed tightly into the one patch built for detail, and rods only report brightness)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Your retina holds two kinds of light cells, and the difference explains how you see",
+            "Stars are always brighter at the edge of the sky",
+            "Cameras were invented before anyone understood the eye"
+          ],
+          "answers": ["Your retina holds two kinds of light cells, and the difference explains how you see"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["sensitive → ____", "tuned → ____", "faint → ____", "vanish → ____"],
+          "rows": 1,
+          "answers": [
+            "quick to react to even a very small amount of something",
+            "set to respond best to one particular range",
+            "weak or dim",
+            "to disappear from sight"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger kid why colors disappear at night. Use the words rod and cone.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Eye That Sees Upside Down",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-eye", "templateLabel": "The Eye That Sees Upside Down", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "eye",
+          "notes": ["About one million nerve fibers leave each eye", "The blind spot is where the optic nerve exits", "Your eyes jump three to four times a second", "Your brain deletes the blur during each jump", "Two eyes together cover each other's blind spot"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hole You Cannot See",
+          "text": "There is a hole in your vision right now. It is roughly the size of a lemon held at arm's length, it sits a little to the outside of where you are looking, and you have never seen it. You cannot see it. That is the whole problem. The hole is called the blind spot, and it exists for a plain mechanical reason. Every one of the roughly one million nerve fibers leaving your retina has to get out of your eyeball somehow, so they bundle together and punch through the retina in one place, forming the optic nerve. At that exit wound there is no room for light cells. Light landing there is simply not recorded. Each eye has one. You would expect to notice a hole. You do not, and the reason is more interesting than the hole. Your brain does not receive a picture from your eye and look at it. Your brain builds a picture, and it builds it out of whatever it can get: the good data from the rest of the retina, the matching view from your other eye, the pattern it expects to be there, and its memory of a fraction of a second ago. Where data is missing, the brain fills the gap with its best guess and hands you the result without mentioning the edit. It does this constantly. Your eyes are not gliding smoothly across this page. They are jerking, three or four times a second, in fast jumps called saccades, and during each jump the image smears into uselessness. Your brain throws that smear away and stitches the still frames together. You are watching a film with most of the frames deleted and the gaps invented, and it looks seamless. So the honest description is this. You do not see the world. You see your brain's running model of the world, corrected against your eyes several times a second. It is usually right, which is why the illusion holds."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the mechanical reason the blind spot exists.",
+            "List the four things the passage says your brain uses to build its picture.",
+            "The passage says the brain hands you the result without mentioning the edit. Explain what the author means by the edit.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the blind spot plus the brain building the picture)",
+            "the nerve fibers bundle and punch through the retina to leave the eye, and no light cells fit at that exit",
+            "data from the rest of the retina, the view from the other eye, the pattern it expects, and its memory of a moment ago",
+            "(the brain's own guessed-in filling, added without telling you)",
+            "(inform, with detail: it defines terms and gives numbers; the direct address and the film comparison also entertain)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["mechanical → ____", "saccades → ____", "seamless → ____", "model (of the world) → ____"],
+          "rows": 1,
+          "answers": [
+            "to do with how a thing is physically built and put together",
+            "the fast jumps your eyes make several times a second",
+            "smooth, with no visible joins or gaps",
+            "the brain's own working version of what is out there"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why does having two eyes matter for the blind spot?",
+            "The author says the reason is more interesting than the hole. Do you agree? Explain your thinking."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: the eyes sit apart, so each one sees what the other's blind spot misses)",
+            "(opinion)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: if your brain guesses at parts of what you see, can you trust your own eyes as evidence? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Eye That Sees Upside Down",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-eye", "templateLabel": "The Eye That Sees Upside Down", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "eye",
+          "notes": ["Vertebrate photoreceptors point away from the light", "The optic nerve punches through the retina, making the blind spot", "Octopus retinas face the light and have no blind spot", "The vertebrate eye grows out of brain tissue", "Muller cells guide light through the retina like fiber optics", "About one million nerve fibers per optic nerve"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Eye Is Built Backwards, and It Works Anyway",
+          "text": "Here is a fact that sounds like a mistake. Your retina is installed backwards. Think about what a retina is for. It is a sheet of cells at the back of the eye whose entire job is to catch light. You would assume, then, that the light-catching ends of those cells point toward the incoming light. In your eye, they do not. They point the other way, toward the back of your head. The wiring, the blood vessels, and several layers of supporting nerve cells all sit in front of the photoreceptors, and every particle of light that reaches a rod or a cone has to travel through that tangle first. The consequences are real. Because the nerve fibers are on the wrong side, they must eventually gather up and drill a hole straight through the retina to escape the eyeball. That hole is the blind spot, and you have one in each eye. Because the retina is layered rather than anchored, it can peel away from the wall behind it, which is what a detached retina is. Now consider an octopus. An octopus eye looks remarkably like yours: a cornea, an iris, a lens, a retina. It evolved completely separately, hundreds of millions of years down a different branch, which makes it one of the best examples of convergent evolution we have. And the octopus retina faces the right way. Its photoreceptors point at the light. Its nerve fibers exit from behind. An octopus has no blind spot. So why are you the one with the design flaw? The answer is not that vertebrate eyes are worse. It is that evolution cannot start over. The vertebrate eye grew outward from developing brain tissue, and the cephalopod eye folded inward from skin. Both lineages were then stuck improving whatever they had already committed to. Evolution has no draft stage. It can only renovate. And here is the twist. The backwards layout turns out to carry advantages nobody designed. Photoreceptors are among the hungriest cells in the body, and sitting at the back places them directly against the choroid, a dense bed of blood vessels that feeds them and carries away heat. Behind them lies the retinal pigment epithelium, a dark layer that recycles worn-out light-sensitive molecules and absorbs stray light that would otherwise scatter and blur the image. And the tangle in front is less of an obstacle than it appears. Long, thin Muller cells run through the retina like fiber optic cables, funneling light past the clutter and delivering it to the photoreceptors below. The octopus, meanwhile, has a clean retina and only one type of photoreceptor. It is very probably colorblind. The lesson is not that your eye is badly made or beautifully made. It is that living things are not made at all. They are inherited, patched, and repurposed, and what looks like a flaw is usually just history you can still see."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what it means to say the retina is installed backwards. Cite the exact phrase the passage uses for what light must travel through.",
+            "The passage names two consequences of the backwards layout. Name both and explain the mechanism behind each.",
+            "Why does the author bring in the octopus? Quote the exact term the passage uses for eyes that evolved separately into similar shapes.",
+            "Identify where the passage turns from criticizing the eye to defending it. Quote the sentence that signals the turn.",
+            "The passage ends by claiming a flaw is usually just history you can still see. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: the vertebrate retina faces the wrong way for historical reasons, and the layout brings hidden benefits)",
+            "(photoreceptors face away from the light and the wiring sits in front of them; quote: that tangle)",
+            "(the blind spot, where the nerve fibers drill out through the retina; retinal detachment, because the retina is layered rather than anchored)",
+            "(it is a controlled comparison showing the backwards layout was not necessary; quote: convergent evolution)",
+            "(quote: And here is the twist.)",
+            "(it reframes flaw as inherited history rather than bad design; earned by the choroid, pigment epithelium, and Muller cell evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["convergent evolution → ____", "lineage → ____", "repurposed → ____", "renovate → ____"],
+          "rows": 2,
+          "answers": [
+            "separate lines of life arriving at a similar solution independently",
+            "a line of descent stretching back through ancestors",
+            "given a new use it was not originally built for",
+            "to rebuild or improve something that already exists"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says evolution has no draft stage. Explain what that means for any living thing, not just for eyes.",
+            "The octopus has the better retina and probably the worse color vision. What does that pairing suggest about calling any design better or worse?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(every change must work on top of what already exists, so old choices constrain new ones permanently)",
+            "(designs trade off; better depends on which job you measure, so the label needs a purpose attached)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The backwards retina proves the eye is badly designed. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}
