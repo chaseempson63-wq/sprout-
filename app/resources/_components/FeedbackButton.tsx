@@ -8,7 +8,7 @@ import { getTemplate } from "@/lib/resources/catalog";
 import { GlassButton } from "@/components/ui/glass";
 import { pill } from "@/lib/resources/pill";
 
-const FEEDBACK_EMAIL = "sprout.humanintelligence@gmail.com";
+const FEEDBACK_EMAIL = "hello@hisprout.app";
 
 function screenLabel(path: string | null): string {
   if (!path) return "Sprout Resources";

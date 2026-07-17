@@ -20,7 +20,7 @@ import { EarningsCalculator } from "../_components/EarningsCalculator";
 
 // Single source of truth for the contact address. Swap to a branded inbox
 // (e.g. partners@hisprout.app) here when one exists.
-const CONTACT_EMAIL = "sprout.humanintelligence@gmail.com";
+const CONTACT_EMAIL = "hello@hisprout.app";
 
 export const metadata: Metadata = {
   title: "Earn with Sprout: bring parents in, get paid for a year",
