@@ -17,7 +17,7 @@ import { RESOURCES_DEMO } from "@/lib/resources/demo";
 
 // Separate storage keys so the demo tour shows once now, and the full tour
 // shows once again when the platform opens up at launch.
-const KEY = RESOURCES_DEMO ? "sprout.res.tutorial.demo.v2" : "sprout.res.tutorial.v2";
+const KEY = RESOURCES_DEMO ? "sprout.res.tutorial.demo.v3" : "sprout.res.tutorial.v3";
 
 /* ── Step visuals — small mocks of the real UI ─────────────────────── */
 
@@ -56,17 +56,17 @@ function TemplatesVisual() {
   );
 }
 
-// The actual age dial, mocked: minus / Age 7 / plus, with the sheet lines
-// beneath hinting that the page rebuilds around it.
-function AgeVisual() {
+// The actual tune buttons, mocked: the four pills with the sheet lines
+// beneath hinting that the page rebuilds around them.
+function TuneVisual() {
   return (
     <div className={band}>
-      <div className="mx-auto flex w-fit items-center gap-3 rounded-full bg-[#FFFDF6] px-4 py-2 shadow-lg">
-        <span className="grid size-8 place-items-center rounded-full bg-[#2E5A35]/10 text-lg font-extrabold text-[#2E5A35]">−</span>
-        <span className="text-sm font-extrabold text-[#1B3722]">
-          Age <span className="text-[#2E5A35]">7</span>
-        </span>
-        <span className="grid size-8 place-items-center rounded-full bg-[#2E5A35]/10 text-lg font-extrabold text-[#2E5A35]">+</span>
+      <div className="flex flex-wrap justify-center gap-1.5">
+        {["Harder", "Easier", "Longer", "Shorter"].map((w) => (
+          <span key={w} className="rounded-full bg-[#FFFDF6] px-3 py-1.5 text-[12px] font-bold text-[#1B3722] shadow">
+            {w}
+          </span>
+        ))}
       </div>
       <div className="mx-auto mt-3 w-4/5 rounded-lg bg-[#FFFDF6] p-3">
         <div className="h-2 w-1/2 rounded-full bg-[#1B3722]/60" />
@@ -132,9 +132,9 @@ const FULL_STEPS: Step[] = [
     body: "Type it plain, like \"addition with dinosaurs\" or \"a reading passage about the moon.\" Or pick a template to start from.",
   },
   {
-    visual: <AgeVisual />,
-    title: "Set the age",
-    body: "The age dial is how hard the sheet is. Nudge it up or down and the sheet rebuilds to fit your kid. That's the only setting that changes difficulty.",
+    visual: <TuneVisual />,
+    title: "Tune it with one tap",
+    body: "Harder, easier, longer, shorter. Tap a button and the sheet rebuilds to fit your kid. Pick a kid and it starts at their level.",
   },
   {
     visual: <SoonVisual />,
@@ -161,9 +161,9 @@ const DEMO_STEPS: Step[] = [
     body: "Addition, reading, handwriting, telling time, and plenty more. Tap one and it builds itself for your kid.",
   },
   {
-    visual: <AgeVisual />,
-    title: "Set the age",
-    body: "The age dial is how hard the sheet is. Nudge it up or down and the sheet rebuilds to fit your kid. That's the only setting that changes difficulty.",
+    visual: <TuneVisual />,
+    title: "Tune it with one tap",
+    body: "Harder, easier, longer, shorter. Tap a button and the sheet rebuilds to fit your kid. Pick a kid and it starts at their level.",
   },
   {
     visual: <SoonVisual />,

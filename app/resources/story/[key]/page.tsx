@@ -1,15 +1,15 @@
 "use client";
 
 // A story template: one pre-authored, illustrated worksheet in six difficulty
-// versions (bands), served as static JSON — no generation, instant. The age
-// stepper is the only difficulty control: it picks the band, exactly like the
-// engine templates. See lib/resources/stories.ts.
+// versions (bands), served as static JSON — no generation, instant. Harder and
+// easier step through the bands; a kid's profile sets the starting band. See
+// lib/resources/stories.ts.
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { track } from "@vercel/analytics";
-import { ArrowLeft, Check, Download, Minus, Plus } from "lucide-react";
+import { ArrowLeft, Check, Download } from "lucide-react";
 import { WorksheetDoc } from "../../_components/WorksheetDoc";
 import { AddToKid } from "../../_components/AddToKid";
 import { DocumentNudge } from "../../_components/DocumentNudge";
@@ -23,6 +23,9 @@ import type { Worksheet } from "@/lib/resources/types";
 const finishBtn =
   "inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#FFFDF6] px-6 text-base font-bold text-[#1B3722] shadow-[0_14px_30px_-12px_rgba(8,22,12,0.65),inset_0_1px_0_rgba(255,255,255,0.9)] transition hover:-translate-y-0.5 active:scale-95 disabled:pointer-events-none disabled:opacity-50";
 
+const tuneBtn =
+  "inline-flex h-10 items-center gap-1.5 rounded-full bg-[#FFFDF6] px-5 text-sm font-bold text-[#1B3722] shadow-[0_10px_24px_-10px_rgba(8,22,12,0.6),inset_0_1px_0_rgba(255,255,255,0.9)] transition hover:-translate-y-0.5 active:scale-95 disabled:pointer-events-none disabled:opacity-45";
+
 export default function StoryTemplate() {
   const params = useParams();
   const raw = params?.key;
@@ -32,7 +35,10 @@ export default function StoryTemplate() {
 
   const [story, setStory] = useState<StoryFile | null>(null);
   const [failed, setFailed] = useState(false);
+  // The kid's age (or the 7-year-old default) picks the STARTING band; the
+  // harder/easier buttons step through the six bands from there.
   const [age, setAge] = useState(7);
+  const [bump, setBump] = useState(0);
   const [childId, setChildId] = useState("");
   const [saved, setSaved] = useState<Set<number>>(new Set());
   const [toast, setToast] = useState<string | null>(null);
@@ -49,7 +55,7 @@ export default function StoryTemplate() {
     };
   }, [key]);
 
-  const band = bandForAge(age);
+  const band = Math.min(6, Math.max(1, bandForAge(age) + bump));
   const worksheet: Worksheet | null = useMemo(() => {
     const ws = story?.bands?.[String(band)];
     if (!ws) return null;
@@ -103,48 +109,55 @@ export default function StoryTemplate() {
         </div>
       </div>
 
-      {/* the difficulty dial: stepper age picks the band, same as everywhere */}
-      <div className="no-print mb-6 flex flex-wrap items-center gap-2">
-        <div className="border-sprout-cream/20 bg-sprout-cream/10 flex items-center gap-0.5 rounded-full border p-1">
-          <button
-            type="button"
-            onClick={() => setAge((a) => Math.max(3, a - 1))}
-            disabled={age <= 3}
-            aria-label="Younger"
-            className="text-sprout-cream hover:bg-sprout-cream hover:text-sprout-ink grid size-8 place-items-center rounded-full transition-colors disabled:pointer-events-none disabled:opacity-35"
-          >
-            <Minus className="size-4" />
-          </button>
-          <span className="text-sprout-cream min-w-[3.6rem] text-center text-sm font-bold">Age {age}</span>
-          <button
-            type="button"
-            onClick={() => setAge((a) => Math.min(13, a + 1))}
-            disabled={age >= 13}
-            aria-label="Older"
-            className="text-sprout-cream hover:bg-sprout-cream hover:text-sprout-ink grid size-8 place-items-center rounded-full transition-colors disabled:pointer-events-none disabled:opacity-35"
-          >
-            <Plus className="size-4" />
-          </button>
+      {/* who is this for: the kid chip sets the starting band */}
+      {kids.length > 0 && (
+        <div className="no-print mb-4 flex flex-wrap items-center gap-2">
+          <span className="text-sprout-cream/60 text-sm">Making for:</span>
+          {kids.map((k) => (
+            <GlassButton
+              key={k.id}
+              onClick={() => {
+                setChildId(k.id);
+                setAge(Math.min(13, Math.max(3, k.age)));
+                setBump(0);
+              }}
+              className={`h-9 px-3 text-sm ${childId === k.id ? "ring-2 ring-[#2E5A35]/45" : ""}`}
+            >
+              {capName(k.name)} <span className="opacity-60">· {k.age}</span>
+            </GlassButton>
+          ))}
         </div>
-        <span className="text-sprout-cream/60 text-sm">Version {band} of 6 · changes the story and the questions, not just the length</span>
-        {kids.length > 0 && <span className="text-sprout-cream/60 ml-1 text-sm">Making for:</span>}
-        {kids.map((k) => (
-          <GlassButton
-            key={k.id}
-            onClick={() => {
-              setChildId(k.id);
-              setAge(Math.min(13, Math.max(3, k.age)));
-            }}
-            className={`h-9 px-3 text-sm ${childId === k.id ? "ring-2 ring-[#2E5A35]/45" : ""}`}
-          >
-            {capName(k.name)} <span className="opacity-60">· {k.age}</span>
-          </GlassButton>
-        ))}
-      </div>
+      )}
 
-      {/* the sheet */}
+      {/* the tune buttons: harder/easier step through the six pre-built bands,
+          changing the story and the questions, not just the length */}
+      <div className="no-print mb-4 flex flex-wrap items-center justify-center gap-2">
+        <button
+          type="button"
+          onClick={() => setBump((v) => v + 1)}
+          disabled={band >= 6}
+          className={tuneBtn}
+        >
+          Harder
+        </button>
+        <button
+          type="button"
+          onClick={() => setBump((v) => v - 1)}
+          disabled={band <= 1}
+          className={tuneBtn}
+        >
+          Easier
+        </button>
+      </div>
+      <p className="no-print mb-4 text-center text-sm text-sprout-cream/60">
+        Harder and easier change the story and the questions, not just the length.
+      </p>
+
+      {/* the sheet — zoomed out on desktop so it reads like paper on the desk */}
       {worksheet ? (
-        <WorksheetDoc worksheet={worksheet} />
+        <div className="lg:mx-auto lg:max-w-[880px] lg:[zoom:0.72]">
+          <WorksheetDoc worksheet={worksheet} />
+        </div>
       ) : (
         <div className="border-sprout-cream/20 grid h-72 place-items-center rounded-[28px] border-2 border-dashed">
           <p className="text-sprout-cream/60 text-sm">Opening the story...</p>

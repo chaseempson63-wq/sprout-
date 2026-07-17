@@ -30,8 +30,10 @@ function detectDifficulty(text: string): number {
 }
 
 function detectMore(text: string): number {
-  const c = (text.toLowerCase().match(/\b(more|longer|add|extra|additional|another|lots|in.?depth)\b/g) || []).length;
-  return Math.min(2.8, 1 + c * 0.6);
+  const t = text.toLowerCase();
+  const up = (t.match(/\b(more|longer|add|extra|additional|another|lots|in.?depth)\b/g) || []).length;
+  const down = (t.match(/\b(shorter|fewer|less|briefer|quicker)\b/g) || []).length;
+  return Math.max(0.35, Math.min(2.8, 1 + up * 0.6 - down * 0.3));
 }
 
 function rint(min: number, max: number): number {

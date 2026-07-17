@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState, type ComponentType } from "react";
 import { track } from "@vercel/analytics";
-import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, Minus, Plus, RefreshCw, Send, UserPlus } from "lucide-react";
+import { ArrowLeft, Check, ChevronLeft, ChevronRight, Download, Globe, LayoutGrid, Loader2, RefreshCw, Send, UserPlus } from "lucide-react";
 import { WorksheetDoc } from "../_components/WorksheetDoc";
 import { AddToKid } from "../_components/AddToKid";
 import { DocumentNudge } from "../_components/DocumentNudge";
@@ -57,7 +57,13 @@ export default function Builder() {
   const { kids, addChild, getChild, saveWorksheet, togglePublish, account } = useResources();
 
   const [childId, setChildId] = useState("");
+  // Age is the INTERNAL starting level: the kid's profile (or the template's
+  // midpoint) sets it. There's no visible dial anymore — the tune buttons
+  // below do the adjusting.
   const [age, setAge] = useState(() => (template ? Math.min(13, Math.max(3, Math.round((template.ageMin + template.ageMax) / 2))) : 7));
+  // The template tune dials: net harder/easier taps and net longer/shorter taps.
+  const [tone, setTone] = useState(0);
+  const [len, setLen] = useState(0);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [variants, setVariants] = useState<Worksheet[]>([]);
   const [idx, setIdx] = useState(-1);
@@ -74,7 +80,7 @@ export default function Builder() {
   const didInit = useRef(false);
   const variantsRef = useRef<Worksheet[]>([]);
   const genSeq = useRef(0); // only the latest request's result is applied (kills the race)
-  const lastBuiltAge = useRef<number | null>(null); // the age the current sheet was built at
+  const lastBuiltKey = useRef<string | null>(null); // the age|tone|len the current sheet was built at
   const chatEnd = useRef<HTMLDivElement>(null);
 
   const child = getChild(childId);
@@ -113,7 +119,7 @@ export default function Builder() {
       if (myseq !== genSeq.current) return; // a newer request superseded this one; drop it
       pushVariant(data.worksheet);
       setSource(data.source);
-      lastBuiltAge.current = ageVal;
+      lastBuiltKey.current = `${ageVal}|${tone}|${len}`;
       track("resources_generate", { template: template.id, age: ageVal, source: data.source });
       if (kind === "init") {
         setMessages([
@@ -199,7 +205,13 @@ export default function Builder() {
 
   function regenerate() {
     if (loading) return;
-    void runGenerate(messages, age, "silent", childName, "Make a fresh, different version of this worksheet with different numbers, examples and wording.");
+    void runGenerate(
+      isCustom ? messages : tuneMessages(tone, len),
+      age,
+      "silent",
+      childName,
+      "Make a fresh, different version of this worksheet with different numbers, examples and wording.",
+    );
   }
 
   function nextVariant() {
@@ -207,33 +219,36 @@ export default function Builder() {
     else regenerate();
   }
 
-  // The stepper is the difficulty dial (the locked rule: it is the ONLY thing
-  // that drives difficulty). It just sets the number — the effect below owns
-  // rebuilding, so a rebuild can never be lost to a stale timer.
-  function stepAge(next: number) {
-    setAge(Math.min(13, Math.max(3, next)));
+  // Tune buttons: harder/easier move the difficulty, longer/shorter move the
+  // length. Each tap goes one step further; caps keep the engine in range.
+  function bumpTone(d: number) {
+    setTone((v) => Math.min(3, Math.max(-3, v + d)));
+  }
+  function bumpLen(d: number) {
+    setLen((v) => Math.min(2, Math.max(-2, v + d)));
   }
 
-  // Rebuild whenever the dial settles on an age the current sheet wasn't built
-  // at. Effect-based (not a timeout inside the click handler) so rapid taps and
-  // re-renders can't strand the debounce — the cleanup clears it, and the next
-  // run always sees the latest age.
+  // Rebuild whenever the dials settle on a combination the current sheet
+  // wasn't built at. Effect-based (not a timeout inside the click handler) so
+  // rapid taps and re-renders can't strand the debounce — the cleanup clears
+  // it, and the next run always sees the latest values.
   useEffect(() => {
-    if (idx < 0 || lastBuiltAge.current === age) return;
+    if (idx < 0 || lastBuiltKey.current === `${age}|${tone}|${len}`) return;
     const t = window.setTimeout(() => {
-      void runGenerate(messages, age, "silent", childName);
-    }, 650);
+      void runGenerate(isCustom ? messages : tuneMessages(tone, len), age, "silent", childName);
+    }, 450);
     return () => window.clearTimeout(t);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [age, idx]);
+  }, [age, tone, len, idx]);
 
-  // Picking a kid MAY set the stepper to their age, but never overrides it after.
+  // Picking a kid sets the STARTING level to their age. The tune buttons take
+  // it from there.
   function selectKid(id: string, kidAge: number, kidName: string) {
     setChildId(id);
     setAge(kidAge);
-    // The age effect rebuilds when the age changes; when it doesn't change,
+    // The effect rebuilds when the age changes; when it doesn't change,
     // rebuild here so the sheet still picks up the kid's name.
-    if (idx >= 0 && kidAge === age) void runGenerate(messages, kidAge, "silent", kidName);
+    if (idx >= 0 && kidAge === age) void runGenerate(isCustom ? messages : tuneMessages(tone, len), kidAge, "silent", kidName);
   }
 
   function addKid() {
@@ -316,31 +331,10 @@ export default function Builder() {
         </div>
       </div>
 
-      {/* who is this for + the difficulty dial. The stepper age is the ONLY
-          thing that drives difficulty; a kid chip just sets it to their age. */}
+      {/* who is this for. The kid's profile sets the STARTING level; the tune
+          buttons above the sheet do all the adjusting from there. */}
       <div className="no-print mb-6 flex flex-wrap items-center gap-2">
-        <div className="border-sprout-cream/20 bg-sprout-cream/10 flex items-center gap-0.5 rounded-full border p-1">
-          <button
-            type="button"
-            onClick={() => stepAge(age - 1)}
-            disabled={age <= 3}
-            aria-label="Younger"
-            className="text-sprout-cream hover:bg-sprout-cream hover:text-sprout-ink grid size-8 place-items-center rounded-full transition-colors disabled:pointer-events-none disabled:opacity-35"
-          >
-            <Minus className="size-4" />
-          </button>
-          <span className="text-sprout-cream min-w-[3.6rem] text-center text-sm font-bold">Age {age}</span>
-          <button
-            type="button"
-            onClick={() => stepAge(age + 1)}
-            disabled={age >= 13}
-            aria-label="Older"
-            className="text-sprout-cream hover:bg-sprout-cream hover:text-sprout-ink grid size-8 place-items-center rounded-full transition-colors disabled:pointer-events-none disabled:opacity-35"
-          >
-            <Plus className="size-4" />
-          </button>
-        </div>
-        <span className="text-sprout-cream/60 ml-1 text-sm">Making for:</span>
+        <span className="text-sprout-cream/60 text-sm">Making for:</span>
         {kids.map((k) => (
           <GlassButton
             key={k.id}
@@ -367,11 +361,11 @@ export default function Builder() {
         )}
       </div>
 
-      {/* Templates have no chat, so say plainly how difficulty works. */}
+      {/* Templates have no chat, so say plainly how the buttons work. */}
       {!isCustom && (
         <p className="no-print -mt-2 mb-6 max-w-2xl text-sm leading-relaxed text-sprout-cream/60">
-          The age is the difficulty dial. Down for easier, up for harder, and the sheet rebuilds itself.
-          Want a different take on the same sheet? Use the arrows or hit New version.
+          Harder and easier change the actual work. Longer and shorter change how much of it.
+          Pick a kid and the sheet starts at their level. New version deals a fresh take.
         </p>
       )}
 
@@ -465,8 +459,23 @@ export default function Builder() {
 
         {/* preview */}
         <div className="order-1 min-w-0 lg:order-2">
-          {/* variation controls */}
-          {(!isCustom || variants.length > 0) && (
+          {/* Templates: four tune buttons + New version. That's the whole control
+              surface — no variation counter, no gallery, no dial. */}
+          {!isCustom && (
+            <div className="no-print mb-4 flex flex-wrap items-center justify-center gap-2">
+              <TuneButton label="Harder" count={tone > 0 ? tone : 0} onClick={() => bumpTone(1)} disabled={loading || tone >= 3} />
+              <TuneButton label="Easier" count={tone < 0 ? -tone : 0} onClick={() => bumpTone(-1)} disabled={loading || tone <= -3} />
+              <TuneButton label="Longer" count={len > 0 ? len : 0} onClick={() => bumpLen(1)} disabled={loading || len >= 2} />
+              <TuneButton label="Shorter" count={len < 0 ? -len : 0} onClick={() => bumpLen(-1)} disabled={loading || len <= -2} />
+              <GlassButton onClick={regenerate} disabled={loading} className="ml-1 h-10 px-4 text-sm">
+                {loading ? <Loader2 className="size-4 animate-spin" /> : <RefreshCw className="size-4" />} New version
+              </GlassButton>
+            </div>
+          )}
+
+          {/* Custom builder keeps the variation arrows + gallery (the chat rail
+              is its control surface). */}
+          {isCustom && variants.length > 0 && (
           <div className="no-print mb-3 flex flex-wrap items-center justify-center gap-2">
             <GlassButton
               onClick={() => {
@@ -530,7 +539,12 @@ export default function Builder() {
             )
           ) : worksheet ? (
             <div key={idx} className="animate-in fade-in zoom-in-95 slide-in-from-bottom-3 fill-mode-both duration-500">
-              <WorksheetDoc worksheet={worksheet} />
+              {/* Zoomed out on desktop so the whole page reads like a sheet of
+                  paper on the desk, not a wall of text. Print is untouched
+                  (print-fit clones the node into its own iframe). */}
+              <div className="lg:mx-auto lg:max-w-[880px] lg:[zoom:0.72]">
+                <WorksheetDoc worksheet={worksheet} />
+              </div>
               <div className="no-print mt-5 flex flex-wrap items-center justify-center gap-3">
                 <button onClick={save} disabled={isSaved} className={finishBtn}>
                   <Check className="size-5" /> {isSaved ? "Saved" : "Save"}
@@ -555,6 +569,37 @@ export default function Builder() {
         </div>
       </div>
     </div>
+  );
+}
+
+// The tune dials travel to the engine as plain words: the deterministic
+// builder counts harder/easier and longer/shorter occurrences, so two Harder
+// taps become "harder harder" and shift the difficulty band twice.
+function tuneMessages(tone: number, len: number): ChatMessage[] {
+  const words = [
+    ...Array<string>(Math.max(0, tone)).fill("harder"),
+    ...Array<string>(Math.max(0, -tone)).fill("easier"),
+    ...Array<string>(Math.max(0, len)).fill("longer"),
+    ...Array<string>(Math.max(0, -len)).fill("shorter"),
+  ];
+  return words.length ? [{ role: "user", content: words.join(" ") }] : [];
+}
+
+// One tune button: cream pill, forest text, a lime ×n badge once it's applied
+// more than once so you can see how far you've pushed it.
+function TuneButton({ label, count, onClick, disabled }: { label: string; count: number; onClick: () => void; disabled?: boolean }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      className={`inline-flex h-10 items-center gap-1.5 rounded-full bg-[#FFFDF6] px-5 text-sm font-bold text-[#1B3722] shadow-[0_10px_24px_-10px_rgba(8,22,12,0.6),inset_0_1px_0_rgba(255,255,255,0.9)] transition hover:-translate-y-0.5 active:scale-95 disabled:pointer-events-none disabled:opacity-45 ${
+        count > 0 ? "ring-2 ring-sprout-lime/70" : ""
+      }`}
+    >
+      {label}
+      {count > 1 && <span className="bg-sprout-lime rounded-full px-1.5 py-0.5 text-[10px] font-extrabold text-[#1B3722]">×{count}</span>}
+    </button>
   );
 }
 

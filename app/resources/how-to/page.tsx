@@ -35,15 +35,15 @@ function MiniTemplates() {
   );
 }
 
-// The age dial as it appears in the builder.
-function MiniAgeDial() {
+// The tune buttons as they appear above the sheet.
+function MiniTune() {
   return (
-    <div className="mt-3 flex w-fit items-center gap-3 rounded-full bg-white px-4 py-1.5 shadow ring-1 ring-[#1B3722]/10">
-      <span className="grid size-7 place-items-center rounded-full bg-[#2E5A35]/10 text-base font-extrabold text-[#2E5A35]">−</span>
-      <span className="text-sm font-extrabold text-[#1B3722]">
-        Age <span className="text-[#2E5A35]">7</span>
-      </span>
-      <span className="grid size-7 place-items-center rounded-full bg-[#2E5A35]/10 text-base font-extrabold text-[#2E5A35]">+</span>
+    <div className="mt-3 flex flex-wrap items-center gap-1.5">
+      {["Harder", "Easier", "Longer", "Shorter"].map((w) => (
+        <span key={w} className="rounded-full bg-white px-3 py-1 text-[12px] font-bold text-[#1B3722] shadow ring-1 ring-[#1B3722]/10">
+          {w}
+        </span>
+      ))}
     </div>
   );
 }
@@ -70,9 +70,8 @@ const STEPS: { title: string; body: string; visual?: ReactNode }[] = [
     visual: <MiniTemplates />,
   },
   {
-    title: "Set your kid's age",
-    body: "Use the minus and plus next to Age. That's the dial for how hard the sheet is. Save a kid's profile and Sprout sets the age for you next time.",
-    visual: <MiniAgeDial />,
+    title: "Start at your kid's level",
+    body: "Pick your kid, or add them once, and the sheet starts at their level. No settings to fiddle with.",
   },
   {
     title: "Sprout builds it",
@@ -80,8 +79,9 @@ const STEPS: { title: string; body: string; visual?: ReactNode }[] = [
   },
   RESOURCES_DEMO
     ? {
-        title: "Flick through versions",
-        body: "Use the arrows above the sheet, or hit New version, and it rebuilds fresh with different problems and wording. The age dial stays in charge of how hard it is.",
+        title: "Tune it with one tap",
+        body: "Harder, easier, longer, shorter, right above the sheet. Tap one and it rebuilds in a second. Tap it again and it goes further. New version deals a fresh take at the same level.",
+        visual: <MiniTune />,
       }
     : {
         title: "Tweak it with one tap",
@@ -138,11 +138,11 @@ const FAQS = [
   },
   {
     q: "What ages does it work for?",
-    a: "Three to thirteen. The age you set is the dial for how hard the sheet comes out.",
+    a: "Three to thirteen. Your kid's profile sets the starting level, then harder and easier take it wherever you want.",
   },
   {
     q: "The difficulty looks off. Why?",
-    a: "It follows the age in the stepper, not your kid's profile on its own. Nudge the age up or down and it rebuilds. Picking a kid just sets the age to theirs.",
+    a: "Tap harder or easier above the sheet and it rebuilds in a second. Each tap goes further. Picking a kid sets the starting level to their age.",
   },
   {
     q: "Can I print it or save a PDF?",
