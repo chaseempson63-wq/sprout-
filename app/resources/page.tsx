@@ -92,7 +92,7 @@ export default function LibraryHome() {
           </h1>
           <p className="text-sprout-cream/70 mt-5 text-base sm:mt-6 sm:text-lg">
             {RESOURCES_DEMO
-              ? "100+ worksheet templates, tailored to your kid's age, free to print. Build-your-own and slideshows are coming soon."
+              ? "336 worksheet templates, every one in 6 difficulty levels, free to print. Build-your-own and slideshows are coming soon."
               : "Worksheets and slideshows, made to order for your kid. Free to print, always."}
           </p>
           <Link
@@ -133,8 +133,10 @@ export default function LibraryHome() {
           </div>
           {/* Templates / Mine segmented switch */}
           <div className="flex items-center gap-1 rounded-full border border-[#2E5A35]/15 bg-white p-1">
-            {/* No count on Templates — the library reads as 100+, a literal
-                grid count undercuts it. My worksheets keeps its count. */}
+            {/* No count on Templates. The library is 336 templates (306 story
+                sheets in 6 difficulty levels each, plus 30 skill templates),
+                and a filtered grid count undercuts that. My worksheets keeps
+                its count. */}
             {(
               [
                 { key: "templates" as Tab, label: "Templates", count: null as number | null },

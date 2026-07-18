@@ -153,7 +153,7 @@ const DEMO_STEPS: Step[] = [
   {
     visual: <WelcomeVisual />,
     title: "Welcome to the free resource library",
-    body: "100+ worksheet templates, tailored to your kid's age, free to print. Here's the 30-second version.",
+    body: "336 worksheet templates, every one in 6 difficulty levels, free to print. Here's the 30-second version.",
   },
   {
     visual: <TemplatesVisual />,

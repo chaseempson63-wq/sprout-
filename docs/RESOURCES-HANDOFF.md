@@ -4,7 +4,10 @@ Read this first when resuming work on the Sprout Resources worksheet platform.
 
 > **UPDATE 2026-07-10 — the LIVE SITE is now in FREE DEMO STAGE (`213e474` on
 > main).** `lib/resources/demo.ts` (`RESOURCES_DEMO = true`) puts /resources in
-> tease mode: the 30 templates are fully open (no sign-in, free, the funnel);
+> tease mode: the free template library is fully open (no sign-in, free, the
+> funnel). As of 2026-07-18 that is **336 templates: 306 illustrated story
+> worksheets x 6 pre-authored difficulty versions (1,836 ready-to-print sheets)
+> plus the 30 skill-practice templates**;
 > build-your-own, slideshows, community/forum/creator pages all render a
 > COMING SOON tease — `app/resources/_components/ComingSoon.tsx` (modal on the
 > library page, full page on direct visits, live CSS-animated previews per
@@ -21,8 +24,12 @@ Read this first when resuming work on the Sprout Resources worksheet platform.
 
 > **UPDATE 2026-07-09 (access model v2 + the whole gate now on MAIN, dormant):**
 > Chase re-set the access model (supersedes the 2026-06-29 "hard gate, no free
-> tier" call): **free tier = the 30 templates only, forever** (it's the SEO/link
-> magnet); **premium = build-your-own, slideshows, community, forum, creator +
+> tier" call): **free tier = the whole template library, forever** (it's the
+> SEO/link magnet). Count corrected 2026-07-18: that is **336 templates, all
+> free, no account and no email wall. 306 illustrated story worksheets, each
+> pre-authored in 6 difficulty versions (1,836 sheets), plus the 30
+> skill-practice templates**. Ages 3-13. Earlier "the 30 templates" wording in
+> this doc predates the story library; **premium = build-your-own, slideshows, community, forum, creator +
 > child profiles**, unlockable two ways at the SAME price, each including the
 > other: the Sprout app subscription (Apple IAP) or a standalone ~$30/mo web plan
 > (Stripe). Built this session, all dormant behind `RESOURCES_AUTH_ENABLED`:

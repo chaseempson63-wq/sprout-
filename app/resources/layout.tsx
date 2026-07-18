@@ -13,7 +13,7 @@ import { RESOURCES_DEMO } from "@/lib/resources/demo";
 export const metadata: Metadata = {
   title: "Sprout Resources. Worksheets tailored to your child.",
   description:
-    "Create worksheets, activities, and lesson plans tailored to each child in minutes. Your data stays yours.",
+    "336 free printable worksheet templates for ages 3 to 13, every one in 6 difficulty levels. No account, no email, no watermark. Your data stays yours.",
 };
 
 // Same fractal-noise overlay the homepage uses over the green canvas.

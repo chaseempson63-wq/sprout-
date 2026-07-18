@@ -26,19 +26,19 @@ const COPY: Record<
     chip: "Coming soon",
     title: "Build your own",
     body: "Describe any worksheet in plain words, addition with dinosaurs, a reading passage about the moon, and Sprout builds it for your kid's age in seconds. We're getting it ready.",
-    footnote: "The 100+ templates are free while you wait.",
+    footnote: "All 336 templates are free while you wait.",
   },
   slides: {
     chip: "Coming soon",
     title: "Slideshows",
     body: "Type a topic and get a warm, illustrated mini lesson to present full screen or print. Nearly ready.",
-    footnote: "The 100+ templates are free while you wait.",
+    footnote: "336 templates are free to print while you wait.",
   },
   community: {
     chip: "Coming soon",
     title: "The community",
     body: "Worksheets other parents built and shared, a chat to swap ideas, and updates from the team. Opening soon.",
-    footnote: "The 100+ templates are free while you wait.",
+    footnote: "The 336 free templates are yours to print in the meantime.",
   },
 };
 

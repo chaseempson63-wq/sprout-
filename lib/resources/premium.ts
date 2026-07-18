@@ -5,7 +5,9 @@
 // Dormant-safe: while RESOURCES_AUTH_ENABLED is false (or creds are missing)
 // every check passes, so the live open builder keeps working unchanged.
 //
-// Access model (2026-07-09): free tier = the 30 templates only. Premium =
+// Access model (2026-07-09, counts updated 2026-07-18): free tier = the whole
+// template library only (336 templates: 306 illustrated story sheets in 6
+// difficulty levels each, plus 30 skill-practice templates). Premium =
 // build-your-own (custom), slideshows, community, forum, creator profiles,
 // child profiles. Premium comes from EITHER the Sprout app subscription (Apple
 // IAP via RevenueCat) OR the standalone web plan (Stripe, forwarded into the

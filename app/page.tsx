@@ -621,7 +621,7 @@ export default function HomeV2() {
               className="mt-6 text-sprout-cream/70 leading-relaxed max-w-xl mx-auto"
               style={{ fontSize: "clamp(16px, 1.5vw, 19px)" }}
             >
-              100+ worksheet templates, tailored to your kid&apos;s age, ready to print in seconds.
+              336 worksheet templates, every one in 6 difficulty levels, ready to print in seconds.
               No account, no card. Free.
             </p>
           </div>

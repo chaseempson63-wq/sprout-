@@ -94,8 +94,8 @@ export function ArticleCta() {
           className="mt-4 text-sprout-cream/75 leading-relaxed max-w-xl"
           style={{ fontSize: "17px" }}
         >
-          The Sprout worksheet library is free. 100+ templates, tailored to your
-          kid&apos;s age, ready to print in seconds. No account, no card,
+          The Sprout worksheet library is free. 336 templates, every one in 6
+          difficulty levels, ready to print in seconds. No account, no card,
           nothing sold, nothing trained on.
         </p>
         <div className="mt-7 flex flex-wrap items-center gap-5">

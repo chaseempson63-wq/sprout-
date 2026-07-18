@@ -186,7 +186,7 @@ export default function HowToPage() {
         </div>
       </div>
       <p className="text-sprout-cream/75 mt-5 text-lg leading-relaxed">
-        Pick a worksheet, tell Sprout about your kid, and print it. That&apos;s the whole thing. 100+ templates,
+        Pick a worksheet, tell Sprout about your kid, and print it. That&apos;s the whole thing. 336 templates,
         no account, nothing sold off behind your back, no catch. You&apos;re in with the parents who wanted their
         own corner of the internet to do this, one the tech giants don&apos;t get to touch. Here&apos;s how it all
         works, start to finish, plus the questions people usually ask.

@@ -67,7 +67,7 @@ The sheets aren't the expensive part. The finding is.
 
 ## A free builder instead
 
-So we built one and made it free. The [Sprout resource builder](/resources) has 100+ worksheet templates across math, reading, spelling, and handwriting. You pick the topic, set your kid's age, and print. The difficulty tunes itself to the age you set, so a multiplication page for your 7-year-old and one for your 12-year-old come out looking like they belong to different kids, because they do.
+So we built one and made it free. The [Sprout resource builder](/resources) has 336 worksheet templates: math, reading, spelling, and handwriting practice, plus 306 illustrated story sheets on things kids actually ask about, from sharks to the moon to how a circuit works. You pick the topic, set your kid's age, and print. Every template comes in 6 difficulty levels, so a multiplication page for your 7-year-old and one for your 12-year-old come out looking like they belong to different kids, because they do.
 
 No account. No email wall. No newsletter. You need a sharks reading page because that's the current obsession, you make a sharks reading page, you print it, you're done before the kettle boils.
 
