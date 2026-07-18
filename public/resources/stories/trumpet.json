@@ -1,0 +1,320 @@
+{
+  "key": "trumpet",
+  "title": "The Trumpet Is Just a Long Pipe",
+  "blurb": "A buzz from your lips, five feet of bent brass, and three little valves that change everything.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Trumpet Is Just a Long Pipe",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-trumpet", "templateLabel": "The Trumpet Is Just a Long Pipe", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the three little buttons on top." },
+        {
+          "kind": "image",
+          "imageKey": "trumpet",
+          "notes": ["It is made of shiny brass", "It has three buttons on top", "The wide end is called the bell", "You buzz your lips to play it", "The buzz comes out loud"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a trumpet. It is made of shiny brass. You do not blow it like a whistle. You press your lips together and buzz. The buzz goes into the little cup at the end. It runs down the long bent tube. It comes out of the big wide bell. Out comes a bright, happy sound. Press the three buttons on top to make new notes."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the notes floating in each row. Write how many in the box.",
+          "emoji": "🎵",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "buzz    horn" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "trumpet", "right": "buzz" },
+            { "left": "drum", "right": "hit" },
+            { "left": "bell", "right": "ring" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own trumpet. Add music notes coming out of the bell.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Trumpet Is Just a Long Pipe",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-trumpet", "templateLabel": "The Trumpet Is Just a Long Pipe", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "trumpet",
+          "notes": ["Brass is copper and zinc mixed", "The cup you buzz into is the mouthpiece", "The wide end is the bell", "Three valves change the note", "Unbent, the tube is almost five feet"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Trumpet Is Just a Long Pipe",
+          "text": "A trumpet looks like one small gold horn. It is really a long pipe, bent around so it fits in your hands. If you could unbend it, the pipe would be almost five feet long. That is taller than most kids. To play it, you press your lips together and buzz them into the mouthpiece. The buzz travels through all that tubing and pours out of the wide bell. The three valves on top work like little doors. When you press one down, the air has to take a longer path, and the note gets lower. Trumpet players keep a cloth nearby, because warm breath turns into water inside the pipe."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What do you do with your lips to play a trumpet?", "How long would the pipe be if you unbent it?", "What happens to the note when you press a valve down?"],
+          "rows": 2,
+          "answers": ["you buzz them into the mouthpiece", "almost five feet long", "the note gets lower"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["You buzz your lips into the ____.", "The sound comes out of the wide ____.", "A trumpet has three ____.", "Warm breath turns into ____ inside the pipe."],
+          "wordBank": ["mouthpiece", "bell", "valves", "water"],
+          "answers": ["mouthpiece", "bell", "valves", "water"]
+        },
+        { "kind": "draw", "prompt": "Draw someone playing a trumpet. Show the sound coming out of the bell.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Trumpet Is Just a Long Pipe",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-trumpet", "templateLabel": "The Trumpet Is Just a Long Pipe", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "trumpet",
+          "notes": ["The player's lips make the sound, not the metal", "Brass is copper and zinc melted together", "Three valves open hidden loops of tubing", "Longer pipe means a lower note", "A bugle is a trumpet with no valves at all"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Buzz That Fills a Room",
+          "text": "A trumpet does not make a sound on its own. You do. Press your lips together, blow, and let them flutter. That buzzing is the real sound. The trumpet's whole job is to take that small, silly buzz and turn it into something that can fill a room. Here is how it works. The buzz goes into a little cup called the mouthpiece and races down the tubing. If you straightened a trumpet out, that tubing would stretch almost five feet. At the far end the pipe flares open into the bell, which throws the sound out into the room instead of letting it rattle around inside. The three valves on top change how long the pipe is. Press one down and a hidden loop of extra tubing opens up. A longer pipe gives a lower note. A shorter pipe gives a higher note. With three valves and careful lips, a player can reach every note in a song. Trumpets are made of brass, which is copper and zinc melted together. Brass bends into curves without cracking, and it does not rust."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What actually makes the sound when someone plays a trumpet?",
+            "What does the bell at the end of the trumpet do?",
+            "What happens to the note when a valve opens extra tubing?",
+            "Why do you think a trumpet is bent into curves instead of left as one straight pipe?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the player's buzzing lips",
+            "it throws the sound out into the room",
+            "the pipe gets longer, so the note gets lower",
+            "(inference: a straight five foot pipe would be too long to hold and carry)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Buzz That Fills a Room", "How to Melt Copper at Home", "The Loudest Animal on Earth"],
+          "answers": ["The Buzz That Fills a Room"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["You buzz into a small cup called the ____.", "The pipe flares open into the ____.", "Brass is copper and ____ melted together."],
+          "wordBank": ["mouthpiece", "bell", "zinc"],
+          "answers": ["mouthpiece", "bell", "zinc"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which part of the trumpet do you think does the most important work, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Trumpet Is Just a Long Pipe",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-trumpet", "templateLabel": "The Trumpet Is Just a Long Pipe", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "trumpet",
+          "notes": ["Two trumpets were found in Tutankhamun's tomb", "Those are over 3,000 years old", "Valves were invented around 1818", "Before valves, trumpets could only play a few notes", "A bugle still has no valves", "The tuning slide fixes small pitch problems"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Three Buttons That Changed Music",
+          "text": "For most of history, the trumpet was a signal, not a melody. Ancient trumpets were straight metal tubes with no buttons and no moving parts. Two of them, one silver and one bronze, were buried with the Egyptian king Tutankhamun more than three thousand years ago. Later, trumpets called armies to move, announced kings, and warned towns of danger. They were loud, and loud was the point. The problem was that a plain tube can only play a small set of notes. A player changes notes by tightening or loosening the lips, but the pipe itself will only cooperate with certain pitches. The notes that were available sat far apart at the bottom of the range and crowded closer together near the top. That meant a trumpeter who wanted to play an actual tune had to climb into the highest, most difficult notes of the instrument, where the sound is hardest to control. Around 1818, two German musicians patented a solution: valves. A valve is a button that redirects air through an extra loop of tubing hidden in the instrument. Press it, and the pipe gets longer. A longer pipe plays lower notes. Three valves, used alone or in combination, give seven different pipe lengths, and seven lengths are enough to fill in every gap. Suddenly the trumpet could play any melody, in any key, anywhere in its range. It stopped being a signal and became a voice. Everything the trumpet is famous for now, jazz solos, movie themes, marching bands, sits on top of that small mechanical idea."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What were trumpets mostly used for before valves existed?",
+            "Explain the problem with a trumpet that has no valves.",
+            "How does pressing a valve change the note?",
+            "The passage says the trumpet stopped being a signal and became a voice. What does that mean?"
+          ],
+          "rows": 2,
+          "answers": [
+            "signals: calling armies, announcing kings, warning towns",
+            "a plain tube can only play a few notes, and the useful ones are crowded up high",
+            "it sends the air through an extra loop, making the pipe longer and the note lower",
+            "(inference: it went from making noise to playing real melodies and expressing feeling)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A small invention, the valve, turned a signaling horn into a full melody instrument",
+            "Egyptian kings invented jazz music",
+            "Trumpets are the loudest instrument in any band"
+          ],
+          "answers": ["A small invention, the valve, turned a signaling horn into a full melody instrument"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["signal → ____", "patented → ____", "combination → ____", "melody → ____"],
+          "rows": 1,
+          "answers": [
+            "a sound or sign used to send a message",
+            "officially registered a new invention",
+            "two or more things used together",
+            "a tune, a line of notes you can sing"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: think of another everyday object that a small invention completely changed. Explain what it was like before and what it could do after.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Trumpet Is Just a Long Pipe",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-trumpet", "templateLabel": "The Trumpet Is Just a Long Pipe", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "trumpet",
+          "notes": ["The standard trumpet is pitched in B flat", "Its tubing is about four feet ten inches", "Harmonic series: available notes spread wide at the bottom", "Valve 1 lowers two half steps, valve 2 lowers one, valve 3 lowers three", "Three valves give seven pipe lengths", "Cold metal plays flat, warm metal plays sharp"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Three Buttons Are Enough",
+          "text": "Blow air across the top of a bottle and you get one note. Fill the bottle halfway and you get a different one. The pitch depends on the size of the air column inside, and a trumpet is the same idea stretched out to almost five feet and folded three times so a human can hold it. The player's buzzing lips set the air column vibrating. The column decides which vibrations it will accept. A tube of a fixed length does not accept just any pitch. It accepts a specific ladder of notes called the harmonic series, and the rungs of that ladder are unevenly spaced. Down at the bottom the notes sit far apart, with enormous gaps between them. Higher up they crowd together until they are close enough to form a scale. This is why Baroque trumpeters, playing valveless instruments in the seventeenth and eighteenth centuries, had to perform their melodies in the punishing top register, where the notes were finally close enough to make a tune and where a single tired lip could ruin a concert. The valve solved this by changing the length of the pipe instead of asking the player to climb higher. Each valve diverts air through its own loop of extra tubing. The first valve lowers the pitch by two half steps, the second by one, the third by three. Used alone and in combination, the three valves produce seven different tube lengths, and seven harmonic ladders overlapping each other cover every note in between. That is the entire trick. A trumpet is not a complicated machine. It is one pipe that can be seven pipes. Even the shape of the bell has a job. A tube with a flat open end reflects most of the sound back inside instead of releasing it. The flare lets far more of that energy escape into the room and aims it forward, which is why a trumpet pointed at you sounds so much brighter than one pointed away. There is one more variable the player cannot fully control. Metal expands slightly as it warms, and warm air moves faster than cold air, so an instrument played hard for twenty minutes drifts sharp. Players correct this with the tuning slide, pulling it out a fraction to lengthen the pipe. Every performance involves quietly adjusting the length of the instrument while it is being played."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the harmonic series and why its uneven spacing was a problem for early trumpeters.",
+            "Why does the bell flare instead of ending flat? Quote the phrase the passage uses about a flat open end.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage calls the valve system the entire trick. Do you agree that it is simple? Explain."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentence summary: the pipe length sets the notes; valves change the length so the instrument can play everything)",
+            "a fixed tube only accepts a ladder of notes, spread wide at the bottom and close at the top, so melodies had to be played in the difficult high register",
+            "the flare lets more sound escape and aims it forward; quote: reflects most of the sound back inside",
+            "(inform, with detail: it explains mechanisms and defines terms, and uses the bottle comparison to teach rather than persuade)",
+            "(opinion, supported: simple idea, but precise engineering to make seven lengths stay in tune)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["air column → ____", "harmonic series → ____", "register → ____", "diverts → ____"],
+          "rows": 1,
+          "answers": [
+            "the body of air inside the tube that vibrates",
+            "the fixed ladder of notes a tube of one length will produce",
+            "a section of an instrument's range, high or low",
+            "sends along a different path"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage compares a trumpet to blowing across a bottle. Explain what that comparison gets right and what it leaves out.",
+            "Why would an instrument drifting sharp be a bigger problem in an orchestra than for someone playing alone?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(right: air column length sets the pitch; leaves out: the lips vibrate, the length can change, the bell projects)",
+            "(inference: alone nobody hears the drift, but in a group everyone must match the same pitch)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it more impressive to master an instrument with only three buttons, or one with dozens of keys? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Trumpet Is Just a Long Pipe",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-trumpet", "templateLabel": "The Trumpet Is Just a Long Pipe", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "trumpet",
+          "notes": ["Silver and bronze trumpets were buried with Tutankhamun", "Valves patented in 1818 by Stolzel and Bluhmel", "Bach wrote brutally high trumpet parts in the Baroque clarino style", "In Krakow a trumpet call sounds hourly and stops mid note", "Dizzy Gillespie's bell was bent upward at 45 degrees", "Mutes push the tone from bright to muffled and back"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Instrument That Was Almost Nothing But a Pipe",
+          "text": "Strip a trumpet of everything decorative and you are left with a tube of brass, folded to be portable, wider at one end than the other. There is no reed, no string, no keyboard, no hammer. There is not even a part that vibrates on its own. Every sound a trumpet has ever made was produced by a pair of human lips, buzzing. The instrument only amplifies and shapes what the body already did. That is worth sitting with, because it explains both why the trumpet is so old and why it took so long to become useful for music. Old is an understatement. Two trumpets, one silver and one bronze, were sealed into Tutankhamun's tomb over three thousand years ago, and both were still playable when they were unearthed in the 1920s. For most of the millennia in between, the trumpet's role was announcement rather than art. It signaled the start of battles, the arrival of rulers, the hours of the day. In Krakow, a trumpet call still sounds from a church tower every hour and stops abruptly in the middle of a note, a tradition said to commemorate a trumpeter who was struck down mid warning. The instrument's job was to be heard across a valley, not to move an audience through a melody. There was a physical reason for that limitation. A tube of fixed length will not vibrate at just any frequency. It vibrates at a specific set of frequencies determined by its length, called the harmonic series. The spacing between those available notes is wide at the bottom of the range and progressively narrower toward the top. A player on a valveless trumpet therefore had two options: stay low and play only a handful of widely separated notes, or climb into the extreme upper register where the harmonics finally sit close enough together to form something resembling a scale. Baroque composers, Bach among them, wrote for specialists who lived in that punishing high range, a style called clarino playing. The skill was so demanding that when the tradition lapsed, the parts became nearly unplayable for a century. The fix arrived around 1818, when two German musicians patented the valve. The idea is almost embarrassingly simple. A valve is a piston that, when depressed, routes the air stream through an additional loop of tubing built into the instrument. Longer tube, lower harmonic series. The first valve lowers the pitch by two half steps, the second by one, the third by three, and because they can be pressed in combination they produce seven distinct tube lengths. Seven overlapping harmonic series fill every gap. A single pipe becomes, functionally, seven pipes, and the trumpet gains access to every note in western music without the player ever leaving a comfortable range. The consequence was not merely technical. An instrument that can only announce will be given announcements to play. An instrument that can play anything gets handed the melody, and then the solo, and eventually the entire emotional weight of a piece. Within a century of the valve, the trumpet had become the lead voice of jazz, an idiom built on individual expression, where Louis Armstrong turned a signaling horn into a personal voice recognizable in three notes. Players kept modifying it. They stuffed mutes into the bell to strangle the tone into a whisper or a snarl. Dizzy Gillespie spent decades playing a horn whose bell tilted upward at forty five degrees, an accident he decided he preferred because he could hear himself better. All of it, the whole history, sits on one unglamorous fact: the length of a pipe determines what it can say."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain why the passage says the trumpet took so long to become useful for music. Cite the evidence.",
+            "Contrast the valveless trumpet with the valved trumpet. Why does the author call the valve idea almost embarrassingly simple?",
+            "Identify the shift in the passage: where does it move from mechanics to meaning, and how does the author signal it?",
+            "The final sentence claims the length of a pipe determines what it can say. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one sentence summary)",
+            "(a fixed tube only produces the harmonic series, so melodies were only possible in the extreme high register; cite: it vibrates at a specific set of frequencies determined by its length)",
+            "(valveless: one harmonic series, wide gaps low down; valved: seven overlapping series covering every note. Simple because it only adds loops of tubing, no new sound source)",
+            "(at The consequence was not merely technical; a short blunt sentence pivots from physics to musical and cultural change)",
+            "(it links a physical constraint to expressive possibility, arguing capability shapes purpose; supported by the signal to solo history)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["amplifies → ____", "harmonic series → ____", "clarino → ____", "idiom → ____"],
+          "rows": 2,
+          "answers": [
+            "makes a sound larger or stronger without creating it",
+            "the fixed set of frequencies a tube of a given length will vibrate at",
+            "the Baroque style of playing melodies in the extreme high trumpet register",
+            "a distinct style or musical language, such as jazz"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says an instrument that can only announce will be given announcements to play. Apply that logic to a tool or technology you use, and explain how its limits shape what people do with it.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(student example: capability determines the tasks a tool is assigned)",
+            "(student question plus a credible source type, such as an acoustics text or a player interview)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The valve was a more important invention for music than any single composer. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

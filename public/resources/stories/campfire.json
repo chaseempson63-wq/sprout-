@@ -1,0 +1,322 @@
+{
+  "key": "campfire",
+  "title": "The Campfire That Burns Old Sunlight",
+  "blurb": "Why flames float above the log, why coals glow, and how a fire hands back sunlight a tree stored years ago.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Campfire That Burns Old Sunlight",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-campfire", "templateLabel": "The Campfire That Burns Old Sunlight", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the logs. Find the flames." },
+        {
+          "kind": "image",
+          "imageKey": "campfire",
+          "notes": ["Flames always point up", "The pops are steam bursting out", "Fire needs air to stay lit", "Water makes a fire go cold"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A campfire starts small. We build it with sticks and logs. Soon the flames grow tall. They are orange and yellow. They wiggle up to the sky. The fire pops and snaps. That is water inside the wood turning to steam. The fire feels warm on your face. Sit back. Do not touch. When we go home, we pour water on it until every piece is cold."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the logs in each row. Write how many in the box.",
+          "emoji": "🪵",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "log    warm" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "fire", "right": "warm" },
+            { "left": "ice", "right": "cold" },
+            { "left": "smoke", "right": "gray" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own campfire. Add logs, flames, and a night sky.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Campfire That Burns Old Sunlight",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-campfire", "templateLabel": "The Campfire That Burns Old Sunlight", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "campfire",
+          "notes": ["A fire needs fuel, air, and heat", "The flames burn gas, not sticks", "Black glowing coals are hot", "Water takes the heat away", "Smoke is bits that did not burn"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What Is Really Burning",
+          "text": "A campfire looks like it is burning the wood. It is not, or at least not the way you think. When wood gets very hot, it puffs out gas. The gas is what catches fire. So those tall orange flames are burning gas, and they float just above the sticks. Down at the bottom, the wood turns black and glows red. That part burns with almost no flame. A fire needs three things: wood to burn, air, and heat to start it. Take away any one of them and the fire goes out. Water works because it steals the heat away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What do the tall flames burn?", "What color does the wood glow at the bottom?", "What three things does a fire need?"],
+          "rows": 2,
+          "answers": ["gas that comes out of the hot wood", "red", "wood to burn, air, and heat"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Hot wood puffs out ____.", "A fire needs ____ to keep burning.", "The wood at the bottom turns ____.", "____ takes the heat away."],
+          "wordBank": ["gas", "air", "black", "Water"],
+          "answers": ["gas", "air", "black", "Water"]
+        },
+        { "kind": "draw", "prompt": "Draw a campfire with a ring of stones around it. Show the smoke going up.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Campfire That Burns Old Sunlight",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-campfire", "templateLabel": "The Campfire That Burns Old Sunlight", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "campfire",
+          "notes": ["Heat travels in straight lines like light", "Hot gas is lighter than cool air", "In space, flames are round and blue", "Pops come from steam bursting out of wood", "Coals can stay hot for a whole day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Flames Point Up",
+          "text": "Sit close to a campfire and your face gets warm while your back stays cold. That is a clue about how fire sends out heat. Some of the warmth rises away with the smoke and never reaches you at all. The rest travels in straight lines, like light does, until it hits something. It hits your face, so your face gets warm. Your back is turned away, so your back stays cool. Now watch the flames. They point up, even on a still night with no wind. Hot gas is lighter than cool air, so it floats upward, and fresh air gets pulled in from the sides to take its place. That upward rush is what stretches a flame into its pointy teardrop shape. Astronauts have lit tiny flames on the space station, where nothing is heavy and nothing floats up. Those flames were not pointy at all. They were small blue balls. The pops and snaps are simpler. Wood holds water and sticky sap. Heat turns them into steam, the pressure builds, and a little pocket bursts open."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why does your face get warm while your back stays cold?",
+            "Why does hot gas float upward?",
+            "What makes a campfire pop and snap?",
+            "Why do you think the flames on the space station were round instead of pointy?"
+          ],
+          "rows": 2,
+          "answers": [
+            "heat travels in straight lines and hits the side facing the fire",
+            "hot gas is lighter than the cool air around it",
+            "water and sap turn to steam and burst out of the wood",
+            "(inference: nothing floats up there, so nothing stretches the flame into a point)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Flames Point Up", "How to Chop a Log", "The Best Marshmallow Recipe"],
+          "answers": ["Why the Flames Point Up"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Heat travels in straight ____.", "Hot gas is lighter than cool ____.", "Wood holds water and sticky ____."],
+          "wordBank": ["lines", "air", "sap"],
+          "answers": ["lines", "air", "sap"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most in this passage, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Campfire That Burns Old Sunlight",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-campfire", "templateLabel": "The Campfire That Burns Old Sunlight", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "campfire",
+          "notes": ["Hot wood gives off burnable gas", "Flames burn the gas, not the solid log", "Char is almost pure carbon", "Coals can be hotter than tall flames", "Yellow light comes from glowing soot", "A blue flame means plenty of air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Flames Are Not Touching the Log",
+          "text": "Watch a campfire long enough and a question shows up. If the log is what is burning, why do the flames float above it instead of sitting on it? The answer is that the log is not really what burns. Wood is a solid, and solids do not catch fire easily. What happens is that heat cooks the wood from the inside. Once the wood gets hot enough, it begins to break down and release gases and vapors, a little like steam escaping a kettle, except that these gases will burn. Those escaping gases are what ignite. The flames hover in the space just above the wood because that is exactly where the gas is. That also explains what gets left behind. After the gases have cooked out, what remains is char: dark, light, and almost pure carbon. Char does not make tall flames. It glows instead, because it burns right at its own surface where it meets the air. A fire that has burned down to orange coals is often hotter than it was when the flames were leaping, which is why cooks wait for the coals rather than the blaze. Even the color of a flame is a clue. Down at the base, where there is plenty of air, a flame burns blue. Higher up the air runs short and tiny specks of unburned carbon form. Those specks get so hot that they glow, and that glow is the warm yellow you recognize. The friendly color of a campfire is really soot, lit up like the wire in an old light bulb, on its way to becoming smoke."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, explain why the flames float above the log.",
+            "What is char, and how does it burn differently from the gas?",
+            "Why do cooks wait for the coals instead of cooking over tall flames?",
+            "The passage says the yellow color is soot. What does that tell you about a fire that is smoking heavily?"
+          ],
+          "rows": 2,
+          "answers": [
+            "hot wood releases burnable gas and the gas is what ignites, just above the wood",
+            "char is the almost pure carbon left behind; it glows and burns at its surface instead of making flames",
+            "coals give steady heat and are often hotter than the flames",
+            "(inference: a lot of carbon is escaping unburned, so the fire is not getting enough air)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A campfire burns gas released by hot wood, and the leftover char glows instead of flaming",
+            "Wood is the only material on Earth that can burn",
+            "Campfires are dangerous and should never be built"
+          ],
+          "answers": ["A campfire burns gas released by hot wood, and the leftover char glows instead of flaming"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["ignite → ____", "char → ____", "soot → ____"],
+          "rows": 1,
+          "answers": ["to catch fire and start burning", "the dark carbon left after the gases cook out of wood", "tiny specks of unburned carbon that glow and then rise as smoke"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining a campfire to someone who has never seen one. Use the words gas, char, and soot.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Campfire That Burns Old Sunlight",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-campfire", "templateLabel": "The Campfire That Burns Old Sunlight", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "campfire",
+          "notes": ["Fuel, oxygen, heat: the fire triangle", "Remove one side and the fire stops", "Thin dry twigs light fastest", "Green wood wastes heat boiling its own water", "Coals under ash can reignite a day later", "Drown, stir, drown again"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Three Sides of a Fire",
+          "text": "Every fire needs exactly three things, and it needs all three at once. It needs fuel, which is anything that will burn. It needs oxygen, which the air supplies. And it needs heat, enough to start the reaction and enough to keep it going. Firefighters draw these three as a triangle, because taking away any single side collapses the whole thing. Smothering a pan with a lid removes the oxygen. Cutting a firebreak removes the fuel. Pouring water on a campfire removes the heat, since turning water into steam soaks up an enormous amount of energy. Once you know the triangle, a lot of campfire advice stops sounding like superstition. Thin dry twigs light easily because they carry a huge surface area for very little weight, so heat reaches all of them at once. A thick green log resists lighting because most of the heat pouring into it goes toward boiling the water trapped inside instead of raising the wood to the temperature where it releases burnable gas. Stacking wood loosely beats packing it tight, because air has to reach every surface. A fire that smokes heavily and burns dull is usually starving for air, not for fuel. Fire also runs in stages, and the stages look different. First the wood dries. Then it heats until it starts breaking apart and giving off flammable gas, and that gas is what the bright flames are actually consuming. When the gas is spent, what is left is char, and char glows rather than flames. Cooks prefer that stage. Steady coals deliver even heat without the soot and flare of open flame. The end of the night matters more than the beginning. Ash is an excellent insulator, so a bed of coals hidden underneath it can stay hot enough to set dry leaves alight more than a day later. The standard method is to drown the fire, stir the ashes, and drown it again, then hold a hand close to check for warmth. A fire is not out simply because it has stopped looking like a fire."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the three sides of the fire triangle and give one way of removing each.",
+            "Explain why a thick green log is hard to light. Quote the phrase the passage uses.",
+            "Is this passage written to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What does the last sentence mean, and why does the author save it for the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the fire triangle, the burning stages, and putting a fire out safely)",
+            "fuel: cut a firebreak; oxygen: smother with a lid; heat: pour on water",
+            "the heat goes into boiling its water instead; quote: boiling the water trapped inside",
+            "(inform, with detail: it defines the triangle and explains stages; the ending turns slightly persuasive about safety)",
+            "(hidden coals can still restart a fire, so it warns the reader; ending there makes the warning stick)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["firebreak → ____", "flammable → ____", "insulator → ____", "char → ____"],
+          "rows": 1,
+          "answers": [
+            "a cleared strip with no fuel left for a fire to cross",
+            "able to catch fire and burn",
+            "a material that slows heat from escaping",
+            "the carbon left after the burnable gas has cooked out of wood"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why does blowing on a dying fire help, while blowing on a candle puts it out?",
+            "A camper covers a fire with soil and leaves. Using the passage, explain why that is risky."
+          ],
+          "rows": 3,
+          "answers": [
+            "(blowing adds oxygen to hot coals; on a candle it blows the hot gas away from the wick)",
+            "(inference: soil insulates the coals and keeps them hot instead of removing the heat)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should campfires be allowed in national parks during dry summers? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Campfire That Burns Old Sunlight",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-campfire", "templateLabel": "The Campfire That Burns Old Sunlight", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "campfire",
+          "notes": [
+            "Wood stores energy captured from sunlight",
+            "Pyrolysis: hot wood breaks down into burnable gas",
+            "Glowing char burns at its own surface",
+            "Yellow flame is incandescent soot",
+            "In orbit, flames burn as slow blue spheres",
+            "Controlled fire is at least 300,000 years old"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Old Sunlight: What a Campfire Is Actually Doing",
+          "text": "Every campfire is a delayed reaction to sunlight. A tree spends decades pulling carbon dioxide out of the air, splitting it apart using energy borrowed from the sun, and locking that carbon into wood. Burning the wood runs the entire process backward in an afternoon. The carbon returns to the air, the water leaves as steam, and the sunlight the tree banked years ago comes back out as heat and light. When you hold your hands over the flames, you are warming them with an old summer. The fire itself is stranger than it looks. Wood does not burn the way you might assume, with oxygen attacking the solid directly. Heat wood past roughly three hundred degrees Celsius and it begins to decompose, a process called pyrolysis, releasing a fog of flammable gases and vapors. Those gases are what ignite. The tall orange flames dancing above a log are not touching the log at all. They are burning a cloud of gas that the log is exhaling. Once the gases are spent, what remains is char, nearly pure carbon, and char behaves differently. It glows red with almost no flame, because it reacts with oxygen directly at its surface. That is why the last hour of a campfire is quiet and hot rather than tall and bright. The color tells you what is happening. At the base of a flame, where gas mixes with plenty of air, combustion is efficient and the flame runs blue. Higher up, oxygen runs short, and unburned carbon clumps into microscopic soot particles. Those particles are heated to thousands of degrees, and hot solids glow. The warm yellow of a campfire is not really the gas. It is soot, briefly incandescent, on its way to becoming smoke. Flames point upward for a reason that has nothing to do with fire and everything to do with weight. Hot gas is less dense than the cool air around it, so it rises, and cooler air is drawn in underneath to replace it. That constant upward current stretches a flame into its familiar teardrop. Astronauts have lit small flames aboard the space station, where floating and falling lose their usual meaning. With no buoyancy to shape them, those flames formed slow blue spheres, burning outward in every direction at once. Humans have been managing this reaction for a very long time. Archaeologists find solid evidence of controlled fire at sites used at least three hundred thousand years ago, and a few older sites hint that the habit may be far more ancient. Fire changed almost everything about us. It made cold nights survivable, pushed predators back, hardened wooden tools, and above all it cooked food. Cooking breaks down tough fibers and starches before they ever reach the stomach, so a cooked meal delivers more usable energy for less chewing and less digesting. Some researchers argue that this extra energy is part of what allowed our ancestors to afford a brain as expensive as ours. So a campfire is a small, well behaved version of the oldest tool we have, and it deserves the respect that comes with that. Coals buried under ash can hold enough heat to restart a fire more than a day later, which is why the rule is to drown the fire, stir it, and drown it again until you can hold a hand near the ashes without flinching. The same reaction that fed us can, left alone in dry country, take a forest."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what pyrolysis is and why it means the flames are not touching the log. Cite the evidence.",
+            "Contrast flaming combustion with the way char burns. Why is the last hour of a fire quiet and hot?",
+            "Identify the shift in the passage: where does it turn from chemistry to human history, and how does the author signal it?",
+            "The passage opens by calling a campfire a delayed reaction to sunlight and closes with a warning about forests. Analyze what that framing is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(heat decomposes wood into burnable gas, and that gas is what ignites above the log; cite: burning a cloud of gas that the log is exhaling)",
+            "(flames burn gas in the air above the wood; char reacts with oxygen at its surface and glows, giving steady heat without tall flames)",
+            "(at Humans have been managing this reaction for a very long time; a plain topic sentence marks the pivot)",
+            "(it frames fire as borrowed natural energy and then as a responsibility; supported by the photosynthesis explanation and the cooking and safety evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["pyrolysis → ____", "incandescent → ____", "buoyancy → ____", "combustion → ____"],
+          "rows": 2,
+          "answers": [
+            "the breakdown of a material by heat, releasing gases",
+            "glowing with light because of high temperature",
+            "the upward push a lighter fluid feels in a denser one",
+            "the reaction of a fuel with oxygen that releases heat and light"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a fire returns carbon to the air that a tree had taken out of it. Explain why burning wood is treated differently from burning coal or oil.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(wood carbon was pulled from the air recently and can be recaptured by new growth; fossil carbon was locked away for millions of years)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Learning to control fire mattered more to human history than any tool invented since. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

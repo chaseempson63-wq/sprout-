@@ -1,0 +1,315 @@
+{
+  "key": "snowman",
+  "title": "The Snowman Is Mostly Air",
+  "blurb": "Why snow packs, where snowmen came from, and how one in Maine grew to 122 feet tall.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Snowman Is Mostly Air",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-snowman", "templateLabel": "The Snowman Is Mostly Air", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the snowman's nose." },
+        {
+          "kind": "image",
+          "imageKey": "snowman",
+          "notes": ["Snow is cold and soft", "A snowman is three balls stacked up", "Sticks make good arms", "Snow is white", "He melts when the sun comes back"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "Snow is soft and cold and white. Roll a little ball of snow on the ground. It gets bigger and bigger. Roll a big ball. Then roll a middle ball. Then roll a small one for the head. Stack them up. Now you have a snowman. Give him two eyes and a long nose. Give him arms made of sticks. Say hello to him. He will not stay all winter, but he is yours today."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the snowballs in each row. Write how many in the box.",
+          "emoji": "⚪",
+          "items": ["3", "2", "5", "4"],
+          "answers": ["3", "2", "5", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "snow    cold" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "snowman", "right": "snow" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own snowman. Give him a hat and a big smile.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Snowman Is Mostly Air",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-snowman", "templateLabel": "The Snowman Is Mostly Air", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "snowman",
+          "notes": ["Fresh snow is mostly air", "Wet snow packs, dry snow does not", "A rolled snowball grows fast", "The biggest ball goes on the bottom", "Snow crystals have six sides"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Right Kind of Snow",
+          "text": "A snowman needs the right kind of snow. When the day is very cold, the snow is dry and powdery. It slips apart in your hands and will not hold together. When the snow is close to melting, it is a little bit wet. That wet skin lets the tiny crystals grab each other and hold on. That is packing snow. Roll a snowball across the yard and it picks up more snow with every turn. It grows fast. Stack three balls with the biggest one at the bottom, and your snowman can stand up. Here is the strange part. Fresh snow is mostly air. Your snowman is not a solid block of ice. He is a fluffy pile of crystals with air in all the gaps."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What happens to very cold, dry snow when you squeeze it?", "Which snowball goes on the bottom?", "What is fresh snow mostly made of?"],
+          "rows": 2,
+          "answers": ["it slips apart and will not hold together", "the biggest one", "air"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Dry snow is too ____ to pack.", "Wet snow lets the crystals ____ on.", "A rolled snowball ____ bigger.", "Fresh snow is mostly ____."],
+          "wordBank": ["powdery", "hold", "grows", "air"],
+          "answers": ["powdery", "hold", "grows", "air"]
+        },
+        { "kind": "draw", "prompt": "Draw your snowman in the yard. Add falling snow and a set of footprints.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Snowman Is Mostly Air",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-snowman", "templateLabel": "The Snowman Is Mostly Air", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "snowman",
+          "notes": ["The oldest known drawing of one is from 1380", "Michelangelo once sculpted snow", "Brussels filled its streets with snow figures in 1511", "Snow is free and easy to shape", "Every snowman melts in the end"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Statue That Always Melts",
+          "text": "People have been building snowmen for a very long time. The oldest picture of one that anyone has found sits in the corner of a book made in the year 1380. It is a prayer book from Europe, and in the margin somebody drew a snow figure sitting beside a fire. Nobody wrote down who built the first snowman, and nobody ever will. Snow arrives free, it is easy to shape, and children work out what to do with it without being taught.\n\nIn 1494 a young sculptor named Michelangelo was asked to make a statue out of snow for a powerful family in Florence, Italy. He would later carve some of the most famous marble statues in the world. That winter he carved snow instead, and his snow statue melted away like every other one.\n\nIn the winter of 1511 the city of Brussels was buried in snow, and the people filled the streets with more than a hundred snow figures. Some were funny, some were rude, and some told the city what its rulers were doing wrong. Crowds walked around for weeks to look at them. Then a warm week arrived and the whole show was gone.\n\nA snowman is the only kind of statue that everybody knows will disappear. Maybe that is why we keep making them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where is the oldest known picture of a snowman, and how old is it?",
+            "What was Michelangelo usually famous for carving?",
+            "What did the people of Brussels do in the winter of 1511?",
+            "Why do you think nobody knows who built the very first snowman?"
+          ],
+          "rows": 2,
+          "answers": [
+            "in the margin of a prayer book from 1380",
+            "marble statues",
+            "they filled the streets with more than a hundred snow figures",
+            "(inference: it happened long before anyone wrote things down, and lots of people would have done it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Statue That Always Melts", "How to Carve Marble", "The Coldest City in Europe"],
+          "answers": ["The Statue That Always Melts"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The 1380 drawing is in the ____ of a prayer book.", "Michelangelo was a ____ who worked in marble.", "In 1511 the city of ____ was full of snow figures."],
+          "wordBank": ["margin", "sculptor", "Brussels"],
+          "answers": ["margin", "sculptor", "Brussels"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you could build a snow statue of anything, what would you build, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Snowman Is Mostly Air",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-snowman", "templateLabel": "The Snowman Is Mostly Air", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "snowman",
+          "notes": ["Snow crystals always have six sides", "Water vapor freezes straight onto dust", "Shape depends on temperature and humidity", "Ukichiro Nakaya grew snow in a lab in the 1930s", "He called snow crystals letters sent from the sky"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Every Snowman Starts as a Cloud",
+          "text": "Every snowman begins high in a cloud, long before anyone gets a shovel. Up there, water is floating around as vapor, an invisible gas. When the air gets cold enough, some of that vapor freezes directly onto a floating speck of dust without ever becoming a drop of water first. That first grain of ice is the seed of a snow crystal.\n\nWater molecules can only stack one way when they freeze. Each molecule links to its neighbors at a fixed angle, and the pattern those angles build has six sides. That is why a snow crystal grows six arms, never five and never seven. The shape of the whole crystal is set by the shape of the molecule inside it.\n\nWhat the crystal grows into depends on the trip it takes down. Just below freezing it tends to spread into flat six sided plates. A few degrees colder and it builds hollow columns and thin needles instead. Around five degrees Fahrenheit, in air loaded with moisture, it grows the wide feathery star that people draw on windows. A falling crystal drifts through layers of different temperature and different dampness, and each layer adds another stage to its shape. That is why the finished crystals look so different from one another.\n\nA Japanese physicist named Ukichiro Nakaya worked all of this out in the 1930s. He grew snow crystals in a cold laboratory, one at a time, on the tip of a rabbit hair, changing the temperature and the moisture until he could produce any shape he wanted. He said a snow crystal is a letter sent from the sky. If you know how to read it, the crystal tells you what the air was doing while it fell."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, how does a snow crystal get started?",
+            "Why does a snow crystal have six arms instead of five?",
+            "What did Nakaya mean when he called a snow crystal a letter sent from the sky?",
+            "Two crystals fall from the same cloud on the same day and look completely different. Using the passage, explain how that can happen."
+          ],
+          "rows": 2,
+          "answers": [
+            "(water vapor freezes straight onto a speck of dust in a cloud)",
+            "because water molecules link at fixed angles that build a six sided pattern",
+            "(the shape records the temperature and moisture it passed through, so it carries information)",
+            "(inference: they fell through different layers of temperature and humidity on the way down)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A snow crystal's six sided shape comes from its molecules, and its detailed form records the air it fell through",
+            "Snow is the same everywhere in the world",
+            "Scientists invented snow in a laboratory in the 1930s"
+          ],
+          "answers": ["A snow crystal's six sided shape comes from its molecules, and its detailed form records the air it fell through"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["vapor → ____", "molecule → ____", "humidity or dampness → ____"],
+          "rows": 1,
+          "answers": ["water floating in the air as an invisible gas", "the tiny building block a substance is made of", "how much water is in the air"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child why no two snowflakes look the same. Use at least two ideas from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Snowman Is Mostly Air",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-snowman", "templateLabel": "The Snowman Is Mostly Air", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "snowman",
+          "notes": ["Fresh snow can be over 90 percent air", "Snow looks white because it scatters every color", "Ice bonds where crystals touch, which is called sintering", "Snow can vanish without melting, by sublimation", "Animals shelter in the warm gap under the snowpack"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Snow Is White, and Why It Sticks",
+          "text": "Ice is clear. Hold a cube up to the window and you can see straight through it. So why is a snowdrift blindingly white, when every crystal in it is made of the same clear ice?\n\nThe answer is surfaces. A single ice crystal lets light pass through, bending it a little on the way. A drift holds billions of crystals, each with faces pointing every direction, packed loosely with air between them. Light entering the pile bounces from face to face, scattering again and again until it is thrown back out. Ice scatters all the colors of light roughly equally, so what comes back out is the whole mix, and the whole mix looks white to us. Sea foam and crushed glass turn white for exactly the same reason. Break clear stuff into enough pieces and you get white.\n\nAll that space between the crystals matters in another way. Fresh snow can be more than ninety percent air by volume. That trapped air makes snow a good insulator, which is why a layer of snow keeps the ground beneath it warmer than the open sky above. Mice, voles, and shrews spend the whole winter in the gap between the soil and the snowpack, tunneling around in the dark while the air above is far colder.\n\nStickiness is a separate question. Snow packs best when it is near thirty two degrees Fahrenheit, because at that temperature the crystals carry a thin slippery film on their surfaces. Press two crystals together and that film refreezes across the join, welding them at every point where they touch. Scientists call this process sintering. A snowball is not squeezed, it is welded. That is also why a snowball made at ten degrees below zero falls apart in your glove. There is no film, so there is nothing to weld with.\n\nMelting is not the only way a snowman leaves. On a dry, sunny, freezing day, ice can pass straight from solid to vapor without ever becoming water. That is called sublimation, and it is why a snowman can shrink for a week without a single drip landing on the ground."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain why a pile of clear crystals looks white. Quote the phrase the passage uses about broken clear material.",
+            "Why can a mouse survive a winter under the snow? Use evidence from the text.",
+            "What is sintering, and why does it fail on a very cold day?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two sentence summary covering scattering, trapped air, sintering, sublimation)",
+            "billions of surfaces scatter all colors back out; quote: Break clear stuff into enough pieces and you get white",
+            "(snow is over ninety percent air, and trapped air insulates the ground beneath it)",
+            "the thin surface film refreezes and welds crystals together; in very cold snow there is no film to weld with",
+            "(inform, with detail: it defines terms and explains causes; the questions and comparisons keep it readable)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["scatter → ____", "insulator → ____", "sintering → ____", "sublimation → ____"],
+          "rows": 1,
+          "answers": [
+            "to bounce light off in many directions",
+            "a material that slows heat from passing through",
+            "the welding of crystals where they touch",
+            "the change from solid straight to vapor with no liquid stage"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a snowball is not squeezed, it is welded. Explain that sentence in your own words.",
+            "A snowman's head usually vanishes before its base. Using ideas from the passage, suggest why."
+          ],
+          "rows": 3,
+          "answers": [
+            "(pressing crystals together makes a film refreeze and lock them, rather than just packing them tighter)",
+            "(inference: the head is small, so it has more surface for its size and loses heat and mass faster)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it worth spending a whole afternoon making something you know will melt in a few days? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Snowman Is Mostly Air",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-snowman", "templateLabel": "The Snowman Is Mostly Air", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "snowman",
+          "notes": ["Snow crystals form by deposition, gas straight to solid", "Sintering welds crystals where they touch", "Snow is a loose foam of ice and trapped air", "Olympia, Bethel, Maine, 2008: 122 feet 1 inch tall", "Surface area to volume decides what melts first", "The oldest known snowman drawing dates to 1380"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cheapest Sculpture in the World",
+          "text": "A snowman is the most democratic sculpture ever invented. The material is free, it delivers itself to your door, no tool is required, and the finished work is guaranteed to be destroyed. Perhaps that is why the practice is so old. The earliest known drawing of one appears in the margin of a European prayer book from 1380, and by 1494 the sculptor Michelangelo was building one on commission for a wealthy family in Florence. Nobody invented the snowman. It is simply what people do when snow falls and they have an afternoon.\n\nThe physics underneath it is more interesting than the tradition. Snow does not begin as frozen rain. High in a cloud, water vapor freezes directly onto a floating speck of dust, skipping the liquid stage entirely, a change called deposition. Because water molecules bond at fixed angles, the growing crystal can only take a six sided form. Its finer detail is written by its journey: plates just below freezing, columns and needles a few degrees colder, elaborate feathered stars near five degrees Fahrenheit in moist air. The physicist Ukichiro Nakaya, who grew crystals one at a time in a cold laboratory in the 1930s, described a snow crystal as a letter sent from the sky. He meant it precisely. The shape is a record of the conditions the crystal passed through.\n\nWhat lands on your lawn is not really a solid at all. Fresh snow is a loose foam of ice and trapped air, frequently more than ninety percent air by volume. That is why it insulates so well that mice tunnel comfortably beneath it all winter, and why it appears white despite being built from transparent ice. Billions of crystal faces scatter light in every direction and return every color at once, and every color at once is what our eyes read as white.\n\nBuilding with the stuff depends on a narrow temperature window. Near thirty two degrees Fahrenheit, ice crystals carry an extremely thin film on their surfaces that behaves almost like liquid. Press two crystals together and that film refreezes across the contact point, bonding them permanently. The process is called sintering, and it means a snowball is welded rather than squeezed. Cold, dry powder has no such film, which is why the finest skiing snow makes the worst snowman.\n\nScale changes the problem. In 2008, the town of Bethel, Maine, built a snow figure named Olympia that stood 122 feet and 1 inch tall, with skis for eyelashes and whole spruce trees for arms. It required thousands of tons of snow and a great deal of heavy machinery, and although it was finished in February, it did not fully melt until July. That delay is not luck. Melting happens at the surface, and as any shape grows, its volume increases faster than its surface area. A giant snowman has a small skin for its enormous body, so it loses itself slowly. The same rule explains why your snowman always loses its head first.\n\nAnd melting is not the only exit. In dry, sunny, freezing weather, ice can pass straight from solid to vapor without ever becoming water. Snowmen routinely shrink for days without a drip. The sculpture leaves the way it arrived, one molecule at a time, back into the air."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author calls the snowman the most democratic sculpture ever invented. Explain that claim and cite the evidence given for it.",
+            "Explain deposition and sintering, and why the passage treats them as two separate ideas.",
+            "Why did Olympia take until July to melt? Cite the sentence that gives the underlying rule.",
+            "Identify one move the author makes to connect science to everyday experience, and judge how well it works."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one sentence summary covering the history and the physics)",
+            "(anyone can do it because the material is free and no tools are needed; cite: The material is free, it delivers itself to your door, no tool is required)",
+            "(deposition is how the crystal forms in the cloud, gas straight to solid; sintering is how fallen crystals weld together on the ground)",
+            "(its volume grew faster than its surface area; cite: as any shape grows, its volume increases faster than its surface area)",
+            "(examples: the head melting first, the skiing snow line; judgment plus reasoning)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["deposition → ____", "sintering → ____", "insulates → ____", "elaborate → ____"],
+          "rows": 2,
+          "answers": [
+            "the change from gas directly to solid with no liquid stage",
+            "the bonding of crystals where their surfaces touch and refreeze",
+            "slows the movement of heat through a material",
+            "detailed and complicated in structure"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage claims the finest skiing snow makes the worst snowman. Explain the reasoning behind that, step by step.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the best skiing snow is cold and dry, cold dry crystals carry no surface film, without that film sintering cannot weld them, so the snow will not pack)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Art that is designed to disappear is worth more than art built to last. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

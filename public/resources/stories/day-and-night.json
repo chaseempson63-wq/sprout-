@@ -1,0 +1,333 @@
+{
+  "key": "day-and-night",
+  "title": "Half the World Is Always Dark",
+  "blurb": "The sun never rises. Earth rolls you into the light, once every twenty four hours, forever.",
+  "topic": "earth-weather",
+  "bands": {
+    "1": {
+      "title": "Half the World Is Always Dark",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-day-and-night", "templateLabel": "Half the World Is Always Dark", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the sunny side and the dark side." },
+        {
+          "kind": "image",
+          "imageKey": "day-and-night",
+          "notes": ["The sun never turns off", "Earth is round like a ball", "Earth turns all day", "One turn takes one day", "Half is sunny, half is dark"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "The sun does not go out at night. The sun is still shining. Our Earth is round, and it turns. When your side turns toward the sun, you get day. When your side turns away, you get night. Then it turns back around. The sun comes up again. Every day, Earth turns all the way around one time."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "day    night" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "day", "right": "the sun" },
+            { "left": "night", "right": "the stars" },
+            { "left": "Earth", "right": "turns around" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the sky outside your window at night. Add the moon.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "Half the World Is Always Dark",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-day-and-night", "templateLabel": "Half the World Is Always Dark", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "day-and-night",
+          "notes": ["Earth spins once every day", "The sun stays in one place", "You are moving right now", "Night is just your side facing away", "Somewhere it is always morning"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "You Are the One Moving",
+          "text": "Earth is a big ball spinning in space. It never stops. It turns all the way around one time every day. The sun stays in one place. It shines all the time. But as Earth turns, your part of the ball swings toward the sun and then away from it. When you face the sun, it is day. When you turn away, it is night. The sun looks like it moves across the sky. It does not. You are the one moving. You are riding on a spinning ball, and you cannot feel it, because everything around you is spinning too."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What shape is Earth?", "How many times does Earth turn around in one day?", "What happens when your side turns away from the sun?"],
+          "rows": 2,
+          "answers": ["it is a big ball, it is round", "one time", "it is night"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Earth is a big ball ____ in space.", "The ____ stays in one place.", "When you face the sun, it is ____.", "You cannot ____ the spinning."],
+          "wordBank": ["spinning", "sun", "day", "feel"],
+          "answers": ["spinning", "sun", "day", "feel"]
+        },
+        { "kind": "draw", "prompt": "Draw Earth as a ball. Color one half sunny and one half dark.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "Half the World Is Always Dark",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-day-and-night", "templateLabel": "Half the World Is Always Dark", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "day-and-night",
+          "notes": ["One full turn takes about 24 hours", "The light and dark line is called the terminator", "Sunrise is that line passing over you", "Half of Earth is lit at every moment", "The sun is shining the whole time"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Line That Never Stops Moving",
+          "text": "Stand outside in the morning and watch the sun come up over the edge of the land. It looks like the sun is climbing. It is not. The ground under your feet is tipping you toward it. Earth spins like a ball on a string, one full turn every twenty four hours. Half of the ball is always lit by the sun, and half is always dark. The line between the light half and the dark half has a name. Scientists call it the terminator. That line is always moving, sliding across oceans and cities and mountains, and it never stops. When it slides past you in the morning, you call it sunrise. When it slides past you in the evening, you call it sunset. Somewhere on Earth, right now, someone is watching the sun come up while you are getting ready for bed. It is the same sun. It is the same moment. You are just standing on different parts of a turning ball."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How long does Earth take to make one full turn?",
+            "What do scientists call the line between the light half and the dark half?",
+            "What is really happening when you watch a sunrise?",
+            "Why do you think people used to believe the sun moved around Earth?"
+          ],
+          "rows": 2,
+          "answers": [
+            "about twenty four hours",
+            "the terminator",
+            "the ground is turning you toward the sun",
+            "(inference: you cannot feel the ground moving, so it looks like the sun moves)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Line That Never Stops Moving", "How to Build a Sundial", "The Hottest Place on Earth"],
+          "answers": ["The Line That Never Stops Moving"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Earth makes one full ____ every twenty four hours.", "Half of Earth is always ____ by the sun.", "The line between light and dark is called the ____."],
+          "wordBank": ["turn", "lit", "terminator"],
+          "answers": ["turn", "lit", "terminator"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences about something you do in the morning and something you do at night. Say which side of Earth you are on each time.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "Half the World Is Always Dark",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-day-and-night", "templateLabel": "Half the World Is Always Dark", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "day-and-night",
+          "notes": ["Earth spins on an axis, pole to pole", "At the equator you travel about 1,000 mph", "Earth turns toward the east", "The axis leans about 23.5 degrees", "The lean is why we get seasons", "Above the Arctic Circle the sun can skip setting"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Sun Rises in the East",
+          "text": "If the sun rises in the east every morning, it is worth asking why. The answer has nothing to do with the sun and everything to do with the ground you are standing on. Earth turns on an invisible line called its axis, running from the North Pole to the South Pole. One full turn takes about twenty four hours. At the equator, that spin carries you east at roughly one thousand miles per hour. You feel none of it, because the air, the oceans, your house, and your body are all traveling at the same speed together. Because Earth turns toward the east, the sun appears over the eastern horizon first and sinks below the western one at the end of the day. Sunrise is not the sun arriving. It is you being carried around into the light. There is a second detail that makes days interesting. Earth does not spin upright. It leans by about twenty three degrees. As Earth travels its year long orbit, that lean points the northern half of the planet toward the sun for part of the year and away for the rest. That is why summer days are long and winter days are short, and why the far north can have weeks with no sunset at all while the far south sits in darkness."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is Earth's axis, in your own words?",
+            "Why can you not feel that you are moving at a thousand miles per hour?",
+            "Explain why the sun appears in the east and not the west.",
+            "The passage says the far north can have weeks with no sunset. What do you think that would be like to live through?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(an invisible line through Earth from pole to pole that it turns on)",
+            "the air, the oceans, and your body are all traveling at the same speed together",
+            "Earth turns toward the east, so the eastern horizon reaches the sunlight first",
+            "(opinion, with reasoning about sleep, heat, or how strange constant daylight would feel)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Day, night, and the length of both come from Earth's spin and its tilt, not from the sun moving",
+            "The sun travels around Earth once every twenty four hours",
+            "The North Pole is the coldest place on the planet"
+          ],
+          "answers": ["Day, night, and the length of both come from Earth's spin and its tilt, not from the sun moving"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["axis → ____", "horizon → ____", "orbit → ____"],
+          "rows": 1,
+          "answers": [
+            "the invisible line a planet turns around",
+            "the line where the sky seems to meet the land or sea",
+            "the path a planet travels around the sun"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining day and night to a five year old. Use no hard words, and include one thing they could act out with a ball and a lamp.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "Half the World Is Always Dark",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-day-and-night", "templateLabel": "Half the World Is Always Dark", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "day-and-night",
+          "notes": [
+            "For most of history, people thought the sun moved",
+            "Leon Foucault hung a pendulum in Paris in 1851",
+            "You cannot feel steady motion, only changes in motion",
+            "The moon's pull acts as a brake on Earth's spin",
+            "Days lengthen about 2 milliseconds per century",
+            "Fossil corals show the year once held 400 days"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Proof That Had to Be Built",
+          "text": "For most of human history, the obvious explanation was the one that sounded correct. The ground is still. The sun moves. Anyone can watch it happen: sunrise, arc, sunset, repeat. The idea held for thousands of years because it matches exactly what your eyes report. It is wrong, and proving it is harder than it sounds. If Earth spins, why does nothing fly off, why is there no wind rushing past, and why does a dropped ball land at your feet instead of behind you? The answer is that everything near the surface, including the atmosphere and you, is turning along with it. There is no way to feel steady motion. You only feel changes in motion. In 1851, a French physicist named Leon Foucault found a way to show the spin directly. He hung a heavy iron ball on a long wire from a high ceiling in Paris and set it swinging. A swinging pendulum keeps its swing pointed the same way in space. Over the hours, the floor beneath it slowly rotated, and the path of the ball appeared to sweep around the room. Nothing pushed the pendulum. The building, the city, and the country were quietly turning underneath it. Crowds came to watch the planet move. Earth's turn is not perfectly steady either. The moon's gravity pulls on the oceans, and that constant tug acts like a gentle brake. Days are getting longer by roughly two thousandths of a second every century. That is far too small to notice in a lifetime, but the effect adds up over deep time. Fossil corals lay down fine daily growth bands, and corals that lived about four hundred million years ago preserve closer to four hundred bands in a single year. The year was the same length it is now. The days were shorter. Earth was spinning faster then, and it has been slowing ever since."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does a dropped ball land at your feet if Earth is spinning? Quote the sentence that explains it.",
+            "Explain how Foucault's pendulum showed that Earth turns.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What do the fossil corals prove, and why is that better evidence than someone's opinion?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering why the spin is hard to feel, how Foucault showed it, and how the day is slowly lengthening)",
+            "everything near the surface is turning with Earth; quote: There is no way to feel steady motion",
+            "the pendulum kept swinging the same way while the floor and the building turned beneath it",
+            "(inform, with detail: it defines terms, gives dates and measurements, and explains causes)",
+            "(they record about 400 daily bands in one year, so the day was shorter; it is physical evidence anyone can check)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["pendulum → ____", "atmosphere → ____", "steady motion → ____", "growth bands → ____"],
+          "rows": 1,
+          "answers": [
+            "a weight hung on a wire that swings freely",
+            "the layer of air surrounding Earth",
+            "movement at an unchanging speed and direction",
+            "fine layers a coral adds as it grows, one per day"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the old idea held for thousands of years because it matches what your eyes report. What does that suggest about trusting observation alone?",
+            "If the day is lengthening by two thousandths of a second per century, why do scientists bother measuring it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(observation can be accurate and still lead to a wrong explanation, so it needs testing)",
+            "(inference: tiny changes reveal how Earth and the moon interact, and they add up over millions of years)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which is stronger proof that Earth spins, the Foucault pendulum or the fossil corals? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "Half the World Is Always Dark",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-day-and-night", "templateLabel": "Half the World Is Always Dark", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "day-and-night",
+          "notes": [
+            "One rotation: about 23 hours 56 minutes against the stars",
+            "The terminator sweeps west at over 1,000 mph at the equator",
+            "Axial tilt of 23.4 degrees drives the seasons",
+            "Circadian clocks keep running in total darkness",
+            "Standard time zones were fixed at an 1884 conference",
+            "Tidal friction lengthens the day about 2 ms per century"
+          ]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Turning That Makes Everything Else",
+          "text": "Every question about day and night comes back to a single fact: Earth turns. It completes one rotation in about twenty four hours, and that rotation carries the surface, the oceans, the atmosphere, and everyone standing on it out of darkness into light and back again. Half the planet faces the sun at any moment and half faces away. The boundary between those halves is called the terminator, and it is never still. Near the equator it sweeps westward at more than a thousand miles per hour, and every sunrise you have ever seen was that line passing over you. Understanding this took a long time, because the evidence of the senses points the other way. The ground feels motionless. The sun visibly travels. Ancient astronomers built careful, mathematically elaborate models in which Earth sat fixed at the center while the heavens wheeled around it, and those models predicted eclipses and planetary positions well enough to survive for well over a thousand years. Being useful is not the same as being true. The rotating Earth won out because it explained more with less, and because instruments eventually caught what the eye could not. Rotation also shapes the day in ways that are easy to miss. Earth's axis is tilted about twenty three and a half degrees away from upright, so as the planet moves along its orbit, one hemisphere leans sunward while the other leans away. This is the entire reason seasons exist, and it is why day length changes through the year. Above the Arctic Circle the tilt is severe enough that the sun refuses to set for weeks in summer and refuses to rise for weeks in winter. Living things track the cycle whether or not they can see it. Nearly every organism studied, from bacteria to trees to humans, runs an internal clock of roughly twenty four hours, and those clocks keep running in constant darkness. The rhythm is not a response to light. It is a prediction of it. The clocks people carry are a much newer invention. For most of history, noon meant the moment the sun stood highest wherever you happened to be standing, which made every town's noon slightly different from its neighbor's. That was tolerable at walking speed and impossible at railway speed. Timetables demanded agreement, so railway companies imposed standard time across the regions they served, and in 1884 an international conference in Washington settled on a single reference line running through Greenwich, England. Time zones are not natural features. They are a treaty laid over a spinning planet. Even the length of the day is negotiable. Tidal friction from the moon acts as a slow brake on Earth's rotation, lengthening the day by roughly two milliseconds per century. Fossil corals record daily growth bands, and specimens from the Devonian period preserve closer to four hundred bands per year, which means the day back then ran near twenty two hours. Atomic clocks now measure the planet's turn precisely enough that timekeepers occasionally insert a leap second to keep official time matched to the actual rotation. The sun has never risen. Earth has only ever rolled you into the light."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage says ancient Earth-centered models survived for over a thousand years. Explain why, and cite the sentence the author uses to judge them.",
+            "Explain the claim that a circadian rhythm is a prediction rather than a response. What evidence in the passage supports it?",
+            "Identify the shift in the passage from natural cycles to human agreements. Where does it happen, and how does the author signal it?",
+            "Analyze the final two sentences. What is the author doing with that reversal, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering rotation, tilt, biology, and timekeeping)",
+            "(they predicted eclipses and planetary positions accurately; cite: Being useful is not the same as being true)",
+            "(the clocks keep running in constant darkness, so they anticipate light rather than react to it; cite: It is a prediction of it)",
+            "(at The clocks people carry are a much newer invention; the pivot moves from what Earth does to what people negotiated)",
+            "(it reframes a lifelong observation as an illusion of reference frame; earned by the terminator and rotation evidence given earlier)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["terminator → ____", "hemisphere → ____", "tidal friction → ____", "leap second → ____"],
+          "rows": 2,
+          "answers": [
+            "the moving boundary between the lit and unlit halves of a planet",
+            "one half of a globe, divided at the equator",
+            "drag on Earth's rotation caused by the moon pulling on the oceans",
+            "an extra second added to official time to match Earth's actual turn"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage calls time zones a treaty. Explain what is gained and what is lost by agreeing on clock time instead of local sun time.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(gained: coordination, travel, timetables; lost: clocks no longer match the sun overhead in your own location)",
+            "(student question plus a credible source type, such as an astronomy text or a timekeeping agency)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Because we cannot feel Earth turning, everyday experience is a poor guide to how the world actually works. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

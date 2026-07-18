@@ -1,0 +1,329 @@
+{
+  "key": "beach",
+  "title": "The Beach Is Always Moving",
+  "blurb": "Sand that used to be a mountain, waves that carry energy instead of water, and a shoreline that quietly walks down the coast.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Beach Is Always Moving",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-beach", "templateLabel": "The Beach Is Always Moving", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the water. Find the sand." },
+        {
+          "kind": "image",
+          "imageKey": "beach",
+          "notes": ["Sand is tiny bits of rock", "Waves are made by wind", "The sea goes out and comes back", "Shells were once homes for animals"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "The beach is where the land stops and the sea starts. The sand is warm on top and cool underneath. A wave rolls in. Then it slides back out. It leaves small shells and wet lines on the sand. A crab runs sideways and pops into a hole. A bird pokes its long beak in the wet sand to find lunch. Sand is made of tiny bits of rock, so small you can hold a whole beach in your hand."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the shells in each row. Write how many in the box.",
+          "emoji": "🐚",
+          "items": ["4", "2", "5", "3"],
+          "answers": ["4", "2", "5", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "sand    wave" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it belongs.",
+          "pairs": [
+            { "left": "crab", "right": "sand" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw the beach. Add sand, a wave, and one thing you would find there.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Beach Is Always Moving",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-beach", "templateLabel": "The Beach Is Always Moving", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "beach",
+          "notes": ["Sand starts out as rock", "Wind makes the waves", "The moon pulls the tides", "Most beaches get two high tides a day", "Some beaches have black sand"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Where Sand Comes From",
+          "text": "Pick up a handful of sand. Every grain used to be part of something bigger. Some grains were once a mountain. Rain and ice broke the rock into pieces. A river carried the pieces down to the sea. Waves rolled them around until they were smooth and small. Other grains were once shells or coral. Fish and waves crushed them into powder. That is why some beaches are white and some are gray and a few are even black. Now look at the water. Twice a day the sea creeps up the beach, and twice a day it slides back down. That is the tide, and the moon is pulling it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What was sand before it was sand?", "What carries broken rock down to the sea?", "What pulls the tide up and down the beach?"],
+          "rows": 2,
+          "answers": ["rock, shells, or coral", "a river", "the moon"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Some sand grains were once part of a ____.", "A ____ carries the broken rock to the sea.", "Waves roll the pieces until they are ____.", "The ____ pulls the tide up the beach."],
+          "wordBank": ["mountain", "river", "smooth", "moon"],
+          "answers": ["mountain", "river", "smooth", "moon"]
+        },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each beach to its sand.",
+          "pairs": [
+            { "left": "white sand", "right": "crushed coral and shell" },
+            { "left": "black sand", "right": "dark volcanic rock" },
+            { "left": "pale gold sand", "right": "quartz from old mountains" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw one sand grain's trip: a mountain, a river, and the sea.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Beach Is Always Moving",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-beach", "templateLabel": "The Beach Is Always Moving", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "beach",
+          "notes": ["A wave carries energy, not water", "Wind makes waves out at sea", "Tides come from the moon's pull", "Sand can travel miles along a coast", "Beaches get narrow in winter storms", "Beach grass roots hold dunes together"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wave Does Not Bring the Water",
+          "text": "Stand in the shallows and a wave seems to rush at you from far out at sea. It looks like the ocean is throwing water at the shore. It is not. Out in deep water, a wave is mostly energy moving through the sea. The water itself hardly travels. Each drop rolls forward and back in a small circle and ends up close to where it started, the way a rope shakes without the rope going anywhere. Wind out at sea gives the water a push. That push travels for hundreds of miles as a wave while the water stays home. Everything changes near the shore. The sea floor rises, the bottom of the wave drags on the sand, and the top keeps going. The wave leans forward, steepens, and tips over. That crash is the moment the energy finally arrives, and it hits the beach hard enough to lift sand and move it. A single storm can carry sand off a beach in one night and pile it in a sandbar just offshore. Calm summer waves push it patiently back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What actually travels across the ocean in a wave?",
+            "What makes waves start out at sea?",
+            "Why does a wave tip over when it gets close to the beach?",
+            "Why do you think a beach can look wider in summer than in winter?"
+          ],
+          "rows": 2,
+          "answers": [
+            "energy, not the water itself",
+            "wind pushing on the surface of the water",
+            "the sea floor rises and drags the bottom of the wave while the top keeps going",
+            "(inference: winter storms pull sand offshore and calm summer waves push it back)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Wave Does Not Bring the Water", "How to Build a Sandcastle", "The Deepest Trench in the Ocean"],
+          "answers": ["The Wave Does Not Bring the Water"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A wave carries ____ across the ocean.", "The ____ starts waves out at sea.", "Storm waves pile sand into a ____ just offshore."],
+          "wordBank": ["energy", "wind", "sandbar"],
+          "answers": ["energy", "wind", "sandbar"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: describe what a wave does from the moment the wind pushes it to the moment it crashes.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Beach Is Always Moving",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-beach", "templateLabel": "The Beach Is Always Moving", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "beach",
+          "notes": ["Longshore drift: sand zigzags along the coast", "Waves almost always arrive at an angle", "A beach is a river of sand, not a fixed place", "Rip currents run out, not down", "If caught, swim sideways along the shore", "Dune grass holds a beach together"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The River of Sand",
+          "text": "A beach looks like the most patient thing on Earth. It is actually a river, and it is flowing sideways past you while you stand on it. Watch how waves arrive. They almost never come straight in. Wind pushes them across the sea at an angle, so each wave runs up the sand on a slant. It carries grains diagonally up the beach with it. Then the water drains straight back down the slope, because gravity pulls straight downhill. The grain lands a little farther along the shore than where it started. Up on a slant, back straight down. Repeat that with every wave, all day, every day, and sand travels. Scientists call this longshore drift, and along some coasts it moves hundreds of thousands of tons of sand each year in one direction. The beach in front of your feet is not staying. It is passing through. This is why people who build on the shore end up arguing with the ocean. A wall or a jetty that blocks the drifting sand makes the beach fatten on one side and starve on the other. The neighbors downstream lose their beach and cannot work out where it went. It went where sand always goes, and something stopped it. Waves also have to send water back out to sea. Most of it seeps back under the breakers, but sometimes it gathers into a narrow, fast lane called a rip current and pushes straight offshore. A rip does not pull you under. It carries you out. Swimmers who fight it head on lose, because nobody outswims a river. Swimmers who go sideways along the shore step out of the lane in a minute or two and come in on the waves."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain longshore drift in your own words.",
+            "Why does a grain of sand end up farther down the shore after a wave, instead of back where it started?",
+            "The passage says a beach is a river. What does the author mean by that?",
+            "A town builds a wall out into the sea and the beach next door disappears. Explain why, using the passage."
+          ],
+          "rows": 2,
+          "answers": [
+            "(waves push sand along the coast a little at a time)",
+            "the wave carries it up at an angle but the water drains straight back down the slope",
+            "(the sand is constantly moving through, not sitting still)",
+            "(inference: the wall blocks the drifting sand so the beach downdrift is starved)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Sand travels constantly along a coast, so beaches move and human structures disturb them",
+            "Beaches are safe places where nothing ever changes",
+            "Rip currents are the only reason sand moves"
+          ],
+          "answers": ["Sand travels constantly along a coast, so beaches move and human structures disturb them"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["longshore drift → ____", "jetty → ____", "rip current → ____", "starve (a beach) → ____"],
+          "rows": 1,
+          "answers": [
+            "the sideways movement of sand along a coast by angled waves",
+            "a built structure sticking out from the shore into the water",
+            "a narrow fast lane of water heading back out to sea",
+            "to cut off the supply of sand a beach needs"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a friend what to do if they are ever caught in a rip current, and why fighting it head on does not work.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Beach Is Always Moving",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-beach", "templateLabel": "The Beach Is Always Moving", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "beach",
+          "notes": ["Quartz survives the trip; softer minerals do not", "Tropical white sand is often crushed coral and shell", "Parrotfish grind coral and pass out fine sand", "Black sand beaches come from dark basalt rock", "Some sand grains are millions of years old", "A beach profile changes with the season"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Reading a Handful of Sand",
+          "text": "Sand is not a substance. It is a size. Geologists call any grain between about a sixteenth of a millimeter and two millimeters sand, whatever it happens to be made of, and that definition is why a handful of it can tell you where you are standing on the planet. On most temperate coasts the sand is pale and glassy because it is mostly quartz. That is not an accident of taste. Mountains contain many minerals, but the journey to the sea is brutal. Feldspar weathers into clay. Softer minerals crumble and wash out to deep water as mud. Quartz is hard, chemically stubborn, and has no easy planes of weakness, so it survives being tumbled down rivers for millions of years and arrives at the coast still recognizable. A quartz beach is a record of everything that did not make it. Move toward the tropics and the story changes. There the sand is often not rock at all. It is biological: the ground remains of coral skeletons, shells, and the chalky plates of sea algae. Parrotfish contribute a startling share of it. They bite and scrape coral to eat the algae living inside, grind the rock in their throats, and pass out clean white sand, sometimes hundreds of pounds per fish each year. A tropical beach can be, in large part, fish leavings. Volcanic coasts give a third answer. Where lava meets the sea it shatters into dark basalt fragments, and the beach comes out black or steel gray, and it is usually young, because there was no long river journey to make it. Season matters too. Survey a beach in July and again in February and you may find a different landform. Summer swells are long and gentle and push sand up onto the shore, building a wide, flat berm. Winter storms are short and steep, and they drag that same sand offshore into submerged bars where it waits out the season. The beach did not vanish. It changed address. A person who reads sand carefully can therefore work out the geology of the hinterland, the temperature of the water, and roughly what month it is, all from something that fits in a cupped hand."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says sand is not a substance but a size. Explain what that means and why it matters.",
+            "Why is quartz so common on temperate beaches? Quote the phrase the passage uses to describe quartz.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the sentence: The beach did not vanish. It changed address."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering sand as a size, its three origins, and seasonal change)",
+            "(sand is defined by grain size, so it can be rock, shell, coral, or lava, and that lets it record its origin)",
+            "it survives the journey while softer minerals break down; quote: hard, chemically stubborn",
+            "(inform, with detail: it defines terms and gives measurements, though the tone is playful)",
+            "(winter storms move the sand to offshore bars rather than destroying it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["weathers → ____", "temperate → ____", "berm → ____", "hinterland → ____"],
+          "rows": 1,
+          "answers": [
+            "breaks down over time from exposure to water, air, and ice",
+            "having a mild climate, between the tropics and the poles",
+            "the flat raised shelf of sand built up on a beach",
+            "the inland region behind a coast"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "A friend brings you a jar of black sand and a jar of white sand. What can you tell them about where each beach probably is?",
+            "Why might a tropical island lose its beaches if its coral reef dies?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(black: a volcanic coast, young sand; white: a tropical reef coast, made of coral and shell)",
+            "(inference: the reef is the factory that makes the sand, so the supply stops)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should towns be allowed to build sea walls that protect their own shoreline but starve the beach next door? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Beach Is Always Moving",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-beach", "templateLabel": "The Beach Is Always Moving", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "beach",
+          "notes": ["A beach is a sediment budget, not a place", "Sources: rivers, cliffs, reefs, offshore bars", "Dams hold back sand rivers once delivered", "Sea walls reflect wave energy back down", "Beach nourishment buys time, not permanence", "Dunes are a coast's shock absorber"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Beach Is a Budget",
+          "text": "We talk about beaches as though they were places, which is the source of most of our confusion about them. A beach is better understood as an account. Sand arrives from somewhere, sand departs to somewhere, and what you walk on is simply the balance held at the moment you happened to show up. Coastal scientists call this the sediment budget, and once you think in those terms the behavior of shorelines stops looking mysterious and starts looking like arithmetic. The deposits come from a few reliable sources. Rivers carry ground-up mountains to the coast. Sea cliffs erode and donate their rubble. Offshore bars return sand that storms borrowed in a previous season. In warm water, reefs manufacture sand biologically, coral and shell and algae broken down into grains, a supply that only exists while the reef is alive. The withdrawals are equally steady. Longshore drift walks sand down the coast to the next beach and the next. Wind lifts the dry surface grains inland to build dunes. Storms haul material into deep water beyond the reach of any ordinary wave. In an undisturbed system these two columns roughly cancel over decades. The shoreline shifts back and forth, sometimes by a lot, but the account stays solvent. Humans mostly interfere with the income side, and usually without meaning to. A dam built far upstream for water and power also traps the sand the river had been delivering for millennia. The coast does not notice for a while, then it notices permanently. A jetty built to keep a harbor mouth clear intercepts the longshore current and grows a fine wide beach on its updrift side while the downdrift beach quietly starves. The people losing their beach often blame the sea, which is the one party in the transaction behaving exactly as it always has. Then there is the sea wall, which is the most instructive mistake of all. A wall protects the property behind it, and it does so by presenting a hard vertical face to the waves. Sand absorbs wave energy by moving; a wall cannot move, so it reflects that energy downward and out. The reflected water scours the sand at the wall's base, the beach in front of it thins, and eventually the wall stands in the surf with no beach at all. The building survives. The thing people came for does not. The honest alternative is expensive and unglamorous. Beach nourishment dredges sand from offshore and pumps it back onto the shore, which works, and which has to be repeated, because nothing about the underlying budget has changed. Dunes, planted with deep-rooted grasses and left alone, act as a savings reserve that a storm can draw down and calmer years can rebuild. Managed retreat moves the buildings instead of the water. Each option costs something, and the cheapest one, doing nothing while pretending the shoreline is fixed, only defers the bill and adds interest. Sea level is rising, which raises the height at which every wave does its work, and a rising baseline shifts the whole account. The beach will go on balancing its books with or without our participation. It has no preference about where the shoreline ends up. We do."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the sediment budget in your own words, naming two sources and two withdrawals. Cite the evidence.",
+            "Why does the author call the sea wall the most instructive mistake of all? Explain the mechanism using a direct quotation.",
+            "Identify the shift in the passage: where does it turn from describing nature to judging human choices, and how does the author signal it?",
+            "The passage ends: It has no preference about where the shoreline ends up. We do. Analyze what that closing move is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(sources: rivers, cliffs, offshore bars, reefs; withdrawals: longshore drift, wind, storms; cite: sand arrives from somewhere, sand departs to somewhere)",
+            "(a wall cannot move so it reflects energy and scours the sand away; cite: Sand absorbs wave energy by moving)",
+            "(at Humans mostly interfere with the income side; the author moves from neutral description to naming errors)",
+            "(it shifts the problem from nature to human values and choices; earned by the dam, jetty, and sea wall evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["sediment → ____", "updrift → ____", "nourishment (beach) → ____", "managed retreat → ____"],
+          "rows": 2,
+          "answers": [
+            "loose material such as sand and mud carried and deposited by water or wind",
+            "on the side that the drifting sand arrives from",
+            "adding dredged sand to a shoreline to rebuild it",
+            "deliberately moving buildings and roads back from an eroding coast"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author uses accounting language throughout: budget, account, withdrawals, interest. Explain what that extended metaphor gains, and one thing it might hide.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it makes an invisible slow process feel measurable and predictable; it may hide the human and ecological costs that do not convert to numbers)",
+            "(student question + a credible source type such as a coastal engineering survey)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Homeowners on an eroding coast should be allowed to build whatever defenses they can afford. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

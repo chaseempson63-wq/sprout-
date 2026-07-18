@@ -1,0 +1,320 @@
+{
+  "key": "flute",
+  "title": "The Flute That Started With a Bone",
+  "blurb": "No reed, no strings, just a person blowing across a hole. The flute is the oldest instrument we have ever found.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Flute That Started With a Bone",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-flute", "templateLabel": "The Flute That Started With a Bone", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the holes on the flute." },
+        {
+          "kind": "image",
+          "imageKey": "flute",
+          "notes": ["It is a tube with holes", "You blow across it, not into it", "Fingers cover the holes", "It is held out sideways", "The sound is made of shaking air"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A flute is a long tube with holes in it. You do not bite it. You blow across a hole at the top. The air wiggles inside the tube. That wiggle is the sound. Cover a hole with your finger and the sound goes low. Lift your finger and the sound goes high. Blow soft and it sings soft. Blow hard and it sings loud."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the holes in each row. Write how many in the box.",
+          "emoji": "⚪",
+          "items": ["4", "6", "3", "5"],
+          "answers": ["4", "6", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "flute    blow" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "flute", "right": "blow" },
+            { "left": "drum", "right": "hit" },
+            { "left": "guitar", "right": "pluck" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a flute. Put lots of little holes along it, then draw yourself playing it.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Flute That Started With a Bone",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-flute", "templateLabel": "The Flute That Started With a Bone", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "flute",
+          "notes": ["A flute is a tube full of air", "Short tube, high sound", "Long tube, low sound", "The first flutes were made of bone", "You blow across the hole, not into it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tube Full of Air",
+          "text": "A flute is a tube full of air. When you blow across the hole, the air inside the tube shakes very fast. Shaking air is what your ears hear. A short tube makes a high sound. A long tube makes a low sound. The holes let you change the length. When you cover the holes, the air has a long way to travel and the note is low. When you lift your fingers, the air gets out sooner and the note is high. People made flutes out of bone and wood a long time before anyone made one out of metal."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is inside a flute?", "Does a short tube make a high sound or a low sound?", "What were the first flutes made of?"],
+          "rows": 2,
+          "answers": ["air", "a high sound", "bone and wood"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["You blow across the ____.", "The air inside the tube ____.", "A long tube makes a ____ sound.", "Your fingers cover the ____."],
+          "wordBank": ["hole", "shakes", "low", "holes"],
+          "answers": ["hole", "shakes", "low", "holes"]
+        },
+        { "kind": "draw", "prompt": "Draw a band. Put one flute player in it, and two other instruments you like.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Flute That Started With a Bone",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-flute", "templateLabel": "The Flute That Started With a Bone", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "flute",
+          "notes": ["The oldest flutes found are about 40,000 years old", "One was carved from a bird wing bone", "A flute has no reed and no strings", "The player splits the air on the sharp edge of the hole", "A silver flute still counts as a woodwind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Oldest Instrument We Have Found",
+          "text": "In a cave in Germany called Hohle Fels, diggers found a thin tube of bone with finger holes cut into it. It was made from the wing bone of a big bird called a griffon vulture. It is about 40,000 years old. That makes it the oldest musical instrument anyone has ever found. People were making music before they were farming, before they were writing, before they had metal tools of any kind. A flute is simple, and that is why it is old. It has no strings and no reed. You blow a thin ribbon of air across the sharp edge of a hole. The air splits at the edge and starts flipping back and forth very fast. That flipping makes the air inside the tube shake, and shaking air is sound. Covering and uncovering the holes changes how long the shaking column of air is. Long column, low note. Short column, high note. Somebody worked all of that out with a bone and a stone tool, a very long time ago."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Where was the oldest known flute found?",
+            "What was that flute made from?",
+            "What does a flute player blow air across?",
+            "Why do you think a flute was easier for early people to make than a drum with a skin or a harp with strings?"
+          ],
+          "rows": 2,
+          "answers": [
+            "in a cave in Germany called Hohle Fels",
+            "the wing bone of a griffon vulture",
+            "the sharp edge of a hole",
+            "(inference: a hollow bone is already a tube, so it only needs holes cut in it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Oldest Instrument We Have Found", "How to Build a Cave", "Birds of Germany"],
+          "answers": ["The Oldest Instrument We Have Found"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The oldest flute is about 40,000 years ____.", "A flute has no strings and no ____.", "A short column of air makes a ____ note."],
+          "wordBank": ["old", "reed", "high"],
+          "answers": ["old", "reed", "high"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences. What surprised you most about the bone flute, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Flute That Started With a Bone",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-flute", "templateLabel": "The Flute That Started With a Bone", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flute",
+          "notes": ["Sound comes from an edge tone, not a reed", "A concert flute is about 26 inches long", "Blow harder and the note jumps a whole octave", "Theobald Boehm redesigned the flute in the 1800s", "Most of your breath never enters the tube", "Every continent invented flutes on its own"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Tube Makes a Note",
+          "text": "A flute makes sound in a way that seems like cheating, because nothing on the instrument is designed to vibrate. A violin has strings. A clarinet has a thin reed that flaps. A flute has neither. What vibrates is the air itself. The player aims a narrow ribbon of breath across the sharp far edge of the mouth hole. That edge splits the ribbon. Part of the air is pushed into the tube, part slips over the top, and the stream flips between the two sides hundreds of times every second. Musicians call this an edge tone. The flipping stream pumps the column of air inside the tube, and that column vibrates as a whole. Your ear reads the vibration as a note. The pitch depends almost entirely on the length of the vibrating column. Open a hole partway down the tube and the column effectively ends there, so it is shorter and the note is higher. Close all the holes and the column runs the full length of the instrument, giving the lowest note the flute can play. A concert flute is roughly 26 inches long and its bottom note is middle C. A piccolo is half that length and sings an octave higher. There is one more trick. If the player narrows the airstream and blows faster, the same fingering suddenly leaps up an octave. The column splits into two halves that vibrate separately. That is why a flute with only a handful of holes can still cover a wide range of notes. Beginners spend weeks learning to make any sound at all, because the ribbon of air has to be aimed with real precision. Most of the breath never goes into the flute. It spills over the edge and disappears into the room."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What actually vibrates when a flute is played?",
+            "Explain, in your own words, why closing more holes gives a lower note.",
+            "The passage says a flute makes sound in a way that seems like cheating. What does the author mean by that?",
+            "A piccolo is half the length of a flute and plays an octave higher. What does that tell you about the relationship between length and pitch?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the column of air inside the tube",
+            "(closing holes makes the vibrating column longer, and longer columns vibrate more slowly, so the note is lower)",
+            "(inference: no part of the instrument itself vibrates, unlike strings or reeds)",
+            "(inference: halving the length roughly doubles the pitch, an octave up)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A flute makes music by vibrating a column of air, and the length of that column sets the note",
+            "The flute is the hardest instrument in the orchestra to carry",
+            "Reeds are better than edge tones for making loud music"
+          ],
+          "answers": ["A flute makes music by vibrating a column of air, and the length of that column sets the note"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["edge tone → ____", "column (of air) → ____", "octave → ____", "pitch → ____"],
+          "rows": 1,
+          "answers": [
+            "the sound made by an airstream flipping across a sharp edge",
+            "the body of air inside the tube that vibrates together",
+            "the jump to a note that sounds like the same note, higher",
+            "how high or low a note sounds"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child how a flute makes sound. Use no science words they would not know, and give one comparison to something they have seen.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Flute That Started With a Bone",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-flute", "templateLabel": "The Flute That Started With a Bone", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flute",
+          "notes": ["Hohle Fels bone flute: about 40,000 years old", "Older flutes were carved from bird bone and mammoth ivory", "Theobald Boehm rebuilt the flute between 1832 and 1847", "Boehm placed holes by acoustics, then built keys to reach them", "Bansuri, dizi, shakuhachi, ney, quena: flutes worldwide", "The dizi buzzes because of a paper membrane over one hole"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Instrument Everyone Invented",
+          "text": "Almost every human culture invented the flute, separately, without borrowing the idea from anyone. India has the bansuri, a length of bamboo with six or seven holes. China has the dizi, which carries a thin paper membrane stretched over an extra hole so the tone buzzes and carries. Japan has the shakuhachi, blown across the rim at the end of the tube rather than the side. The Andes have the quena, the Middle East has the ney, and Europe eventually produced the silver concert flute. The reason for that independence is simple. A flute is the least demanding instrument to build. You need a hollow tube and a sharp edge. Bamboo, bone, cane, and clay all supply one. For most of that history the flute had a problem that no maker could solve. Holes have to sit where the physics of the vibrating air column wants them, but fingers can only stretch so far. Makers compromised. They drilled holes where hands could reach, which put several notes slightly out of tune, and players learned to correct those notes by rolling the instrument or half covering a hole. Every flutist simply accepted that some notes were harder to play in tune than others. In the 1830s a German flutist and goldsmith named Theobald Boehm decided the compromise was backwards. He placed the holes exactly where the acoustics demanded, made them as large as the tone wanted, and then engineered a system of padded keys, rods, and springs so that ordinary human fingers could still close them. He also replaced the cone shaped wooden body with a cylindrical metal tube, which evened out the tone across the range. Older players complained that the new flute sounded cold. They lost the argument. The Boehm flute of 1847 is very nearly the flute in orchestras today, which is why a modern flute is metal and yet is still counted as a woodwind. The family name describes how the sound is made, not what the tube is made of."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does the passage say almost every culture invented a flute? Quote the phrase that explains it.",
+            "Describe the problem flute makers faced before Boehm, and how they worked around it.",
+            "What did Boehm reverse about the way flutes were designed?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering worldwide invention plus the Boehm redesign)",
+            "(a flute needs only a hollow tube and a sharp edge; quote: a flute is the least demanding instrument to build)",
+            "(holes were drilled where fingers could reach, so some notes were out of tune and players corrected them by rolling or half covering holes)",
+            "(he put holes where the acoustics wanted them and built keys to reach them, instead of moving holes to suit hands)",
+            "(inform, with detail: it defines terms and gives dates and examples, though the closing lines carry a small argument)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["acoustics → ____", "membrane → ____", "cylindrical → ____", "compromise → ____"],
+          "rows": 1,
+          "answers": [
+            "the science of how sound behaves",
+            "a very thin sheet stretched over an opening",
+            "shaped like a tube of even width",
+            "a settlement that gives up part of what you wanted"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Older players said the new flute sounded cold, and the passage says they lost the argument. What does losing the argument mean here?",
+            "Why does the passage end by explaining that woodwind describes how the sound is made, not what the tube is made of?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the design was adopted anyway and became standard)",
+            "(it answers the obvious objection that a metal flute cannot be a woodwind)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph. When an instrument is redesigned to play more accurately but loses some of its old character, is that progress? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Flute That Started With a Bone",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-flute", "templateLabel": "The Flute That Started With a Bone", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "flute",
+          "notes": ["Hohle Fels vulture bone flute, roughly 40,000 years old", "Sound source is an edge tone, no reed and no string", "Pitch is set by the length of the vibrating air column", "Overblowing splits the column and jumps an octave", "Boehm system flute finalized in 1847", "A metal flute is still classed as a woodwind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forty Thousand Years of Blowing Across a Hole",
+          "text": "The oldest musical instrument yet found is a flute, and it is not close. In the Hohle Fels cave in southern Germany, archaeologists recovered a slim tube cut from the wing bone of a griffon vulture, drilled with finger holes and notched at one end where the player's breath would strike. It is roughly 40,000 years old. Nearby sites have produced flutes carved from mammoth ivory, which is a far harder project: the maker had to split the tusk lengthwise, hollow out both halves, and seal them back together airtight. Nobody does that by accident. Someone wanted a particular sound badly enough to spend days getting it. Music, on this evidence, is older than agriculture, older than writing, older than metal. The reason the flute got there first is that it asks the least of its maker. Consider what other instruments require. A drum needs a hide, prepared and stretched and kept tensioned. A string instrument needs gut or sinew twisted to an even thickness and held under tension by a frame that will not warp. A reed instrument needs a slip of cane shaved thin enough to flex thousands of times a second without splitting. A flute needs a tube and a sharp edge. Bamboo grows as a tube. A leg bone is already a tube. The engineering was mostly done by nature. What happens inside that tube is genuinely strange, and it is worth being precise about. No part of a flute vibrates. The player directs a narrow ribbon of air across the far edge of the mouth hole, and the edge splits the ribbon so that it flips in and out of the tube hundreds of times a second, producing what acousticians call an edge tone. That oscillation drives the column of air inside the tube, and the column resonates as a single body. The note you hear is the frequency of that resonance, and it is set by the length of the column. Uncover a hole and you shorten the column, raising the pitch. Cover everything and the column runs the full length of the bore, giving the lowest available note. Blow faster and narrower and the column divides into two vibrating halves, jumping the pitch a full octave without moving a finger. For most of human history, flute makers fought a losing battle between physics and anatomy. Acoustics dictates where a tone hole belongs and how wide it should be. Hands dictate where a finger can reach. Makers sided with the hands, drilled the holes where fingers fell, and accepted that certain notes would sit slightly out of tune. Players learned private corrections for those notes and taught them to their students as craft knowledge. In the 1830s Theobald Boehm, a German flutist who was also a trained goldsmith, refused the trade. He sited each hole where the acoustics demanded, sized each hole as the tone required, and then built an apparatus of rods, axles, springs, and padded keys so that human fingers could still seal holes they could not physically cover. He also replaced the tapering wooden body with a cylindrical metal one. Traditionalists said the result sounded thin and mechanical. They were overruled by every professional who wanted to play in tune. The flute in an orchestra tonight is essentially Boehm's 1847 design, which is why the instrument is metal and is still filed under woodwinds. The label describes the mechanism, not the material. The line from the vulture bone to the silver keywork is unbroken, and the physics never changed once."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author argues that the flute came first because it asks the least of its maker. Cite two pieces of evidence used to support that claim.",
+            "Explain how an edge tone produces a note, and why the author insists that no part of a flute vibrates.",
+            "The passage says makers sided with the hands. Explain what they gave up by doing so, and what Boehm gave up instead.",
+            "Analyze the sentence: Nobody does that by accident. What work is it doing in the paragraph, and why is it so short?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(cite: a flute needs a tube and a sharp edge, plus the contrast with hides, twisted gut, and shaved cane)",
+            "(the airstream flips across the edge and drives the air column into resonance; the tube and keys themselves stay still, unlike strings or reeds)",
+            "(they gave up accurate intonation on some notes; Boehm gave up simple mechanics and the old wooden tone)",
+            "(it forces the reader to accept deliberate intent behind the ivory flute; its shortness makes it land as a verdict after a long technical sentence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["resonance → ____", "oscillation → ____", "intonation → ____", "bore → ____"],
+          "rows": 2,
+          "answers": [
+            "the strong vibration a body of air takes on at its natural frequency",
+            "a rapid back and forth movement",
+            "how accurately a note is played in tune",
+            "the hollow inside channel of the tube"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage calls the flute makers' corrections craft knowledge taught to students. Explain what is lost when a redesign makes that kind of knowledge unnecessary.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a body of skill and tradition disappears once the instrument solves the problem itself)",
+            "(student question plus a credible source type, for example an acoustics text or a museum archaeology report)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Boehm improved the flute, so the traditionalists who resisted him were simply wrong. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

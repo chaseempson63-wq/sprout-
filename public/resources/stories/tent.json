@@ -1,0 +1,315 @@
+{
+  "key": "tent",
+  "title": "The House You Carry on Your Back",
+  "blurb": "A building with no foundation and almost no weight, held up by pushing and pulling against itself.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The House You Carry on Your Back",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-tent", "templateLabel": "The House You Carry on Your Back", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the poles. Find the door." },
+        {
+          "kind": "image",
+          "imageKey": "tent",
+          "notes": ["It is a house made of cloth", "Poles hold it up", "Pegs hold it down", "It folds up small", "You can carry it in a bag"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a tent. A tent is a house made of cloth. You can carry it in a bag. First you put up the poles. The poles hold the cloth up high. Then you push pegs into the ground. The pegs hold the tent down. Now you can go inside. You can sleep in a tent. Rain runs off the top. You stay dry and warm."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the pegs in each row. Write how many in the box.",
+          "emoji": "📍",
+          "items": ["4", "2", "6", "3"],
+          "answers": ["4", "2", "6", "3"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "tent    pole" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it sleeps.",
+          "pairs": [
+            { "left": "camper", "right": "tent" },
+            { "left": "bird", "right": "nest" },
+            { "left": "bee", "right": "hive" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own tent. Add a door and some trees.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The House You Carry on Your Back",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-tent", "templateLabel": "The House You Carry on Your Back", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "tent",
+          "notes": ["The word tent means to stretch", "Poles push up, pegs pull down", "Tight cloth sheds rain", "Some families live in tents all year", "It comes apart and goes back up"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The House You Carry on Your Back",
+          "text": "A tent is a home you can carry. The word tent comes from an old word that means to stretch. That is just what a tent does. Poles push up. Pegs pull down. The cloth is pulled tight in between. Tight cloth sheds rain. Loose cloth sags, and water sits in the sag until it drips through. People have slept in tents for thousands of years. Some families still live in them all year. When it is time to move, they fold the tent, load it up, and set it up again somewhere new."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does the word tent mean?", "Which way do the poles push?", "What happens when the cloth is loose?"],
+          "rows": 2,
+          "answers": ["to stretch", "up", "it sags and water drips through"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A tent is a home you can ____.", "The poles push ____.", "The pegs pull ____.", "Tight cloth sheds ____."],
+          "wordBank": ["carry", "up", "down", "rain"],
+          "answers": ["carry", "up", "down", "rain"]
+        },
+        { "kind": "draw", "prompt": "Draw a tent set up in a good camping spot. Add the ropes going down to the ground.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The House You Carry on Your Back",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-tent", "templateLabel": "The House You Carry on Your Back", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "tent",
+          "notes": ["Tent comes from the Latin word for stretch", "Roman soldiers slept eight to a tent", "Roman tents were made of goat leather", "Desert tents are woven from black goat hair", "Wet goat hair swells and seals the roof"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Oldest Building We Still Use",
+          "text": "A tent is the oldest kind of building people still use. The word comes from the Latin word tendere, which means to stretch, and stretching is the whole secret. The poles push up. The pegs and ropes pull down and out. The cloth in between is pulled so tight that rain slides off instead of soaking in. Roman soldiers marched with tents made of goat leather. Eight soldiers shared one tent, and they carried it in pieces on a mule. On the plains of North America, families built tall cone shaped tipis from poles and hides, with flaps at the top that could be opened to let smoke out. In the deserts of Arabia, people wove tents from black goat hair. The weave is loose, so air moves through on hot days. When rain comes, the hair swells and closes the gaps, and the tent turns into a roof. Every one of those tents does the same three jobs. It keeps the weather out. It comes apart. It goes back up somewhere else."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does the Latin word tendere mean?",
+            "What were Roman army tents made from?",
+            "What did the flaps at the top of a tipi do?",
+            "Why do you think people in hot deserts chose a loose weave for their tents?"
+          ],
+          "rows": 2,
+          "answers": [
+            "to stretch",
+            "goat leather",
+            "they opened to let smoke out",
+            "(inference: a loose weave lets air move through so the tent stays cooler)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Oldest Building We Still Use", "How to Build a Brick House", "The Longest Road in Rome"],
+          "answers": ["The Oldest Building We Still Use"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The poles push ____.", "Eight Roman soldiers shared one ____.", "Desert tents were woven from black goat ____."],
+          "wordBank": ["up", "tent", "hair"],
+          "answers": ["up", "tent", "hair"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which of these tents would you most like to sleep in, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The House You Carry on Your Back",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-tent", "templateLabel": "The House You Carry on Your Back", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tent",
+          "notes": ["Poles are in compression, ropes are in tension", "Ridge tents were the old army shape", "Dome tents arrived with campers in the 1970s", "A bent pole always tries to spring straight", "The outer layer is called the rainfly", "Your breath is what fogs up a tent at night"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Machine for Handling Forces",
+          "text": "Look closely at a tent and you are looking at a machine for handling forces. The poles are in compression, which means they are being squeezed. The fabric and the guy ropes are in tension, which means they are being pulled. Nothing is holding the tent up by being heavy. It stands because the pushing and the pulling are balanced against each other. Loosen one guy rope and the balance breaks. The wall goes slack, the wind gets a grip on the loose cloth, and the whole thing shakes. The old army tents were ridge tents: a straight pole at each end and a bar across the top, like a house roof with the walls removed. They were steady, but they were also heavy, and the sloping walls wasted space inside. In the 1970s campers started using dome tents instead. A dome tent has flexible poles that arch over the top and cross each other. Each pole is bent, and a bent pole is always trying to spring straight, which pushes outward against the fabric and keeps the whole shape tight. That is why a dome tent stands up on its own before you have hammered in a single peg. Modern tents usually have two layers. The inner layer is thin and breathable. The outer layer, called the rainfly, is coated to be waterproof. The gap between them matters more than it looks. A sleeping person breathes out water vapor all night. If there is only one layer, that vapor hits the cold waterproof wall, turns back into drops, and rains on you from the inside."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Explain the difference between compression and tension, using the tent as your example.",
+            "Why does a dome tent stand up before any pegs go in?",
+            "What job does the gap between the two layers do?",
+            "The passage says loosening one guy rope breaks the balance. Why would one loose rope matter so much?"
+          ],
+          "rows": 2,
+          "answers": [
+            "compression is being squeezed (the poles); tension is being pulled (the fabric and ropes)",
+            "its bent poles keep trying to spring straight and push outward against the fabric",
+            "it lets breath escape so water vapor does not turn to drops on the waterproof wall",
+            "(inference: the tent stands on balanced forces, so one slack side lets wind grip the loose cloth)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A tent stays up by balancing pushing and pulling, and its design has been improved to do that better",
+            "Camping is the best way to spend a weekend",
+            "Ridge tents are still the only tents anyone uses"
+          ],
+          "answers": ["A tent stays up by balancing pushing and pulling, and its design has been improved to do that better"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["compression → ____", "tension → ____", "rainfly → ____"],
+          "rows": 1,
+          "answers": ["being squeezed from both ends", "being pulled tight", "the coated waterproof outer layer of a tent"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how you would set up a tent so it survives a windy night. Give two reasons for what you would do.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The House You Carry on Your Back",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-tent", "templateLabel": "The House You Carry on Your Back", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tent",
+          "notes": ["Curves and triangles spread a load, flat panels catch it", "Bedouin tents: black goat hair, loosely woven", "Tipis have adjustable smoke flaps at the top", "A Mongolian ger uses wood lattice and sheep felt", "Antarctic pyramid tents have barely changed since the early 1900s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Building With Nothing Holding It Down",
+          "text": "A tent is a building with no walls to speak of, no foundation, and no weight to hold it down, and yet a good one can survive a storm that flattens a fence. It manages this by turning every force that hits it into something the structure can pass along. The poles carry compression, squeezed from both ends. The fabric and the guy lines carry tension, pulled tight in every direction. Wind pushing on one side of a tent is answered by a rope and a peg on the other. The shape matters more than the strength of any single part: curves and triangles spread a load, while flat panels catch it. Different climates produced different answers. In the deserts of Arabia and North Africa, the Bedouin wove tents from black goat hair, a fabric that looks like the worst possible choice for a hot place. It works. The dark cloth is loosely woven, so a breeze passes through it while the sun does not, and the heat rising under the roof pulls more air in behind it. When rain finally arrives, the goat hair fibers swell, the gaps close, and the same cloth becomes a roof. On the grasslands of North America, Plains nations built tipis, cones of poles and hide with adjustable smoke flaps at the top that let a family keep a fire burning indoors. In Central Asia, the Mongolian ger uses a lattice wall of wood and thick felt made from sheep wool, warm enough for winters that drop far below freezing, and light enough to be taken down and moved. The strangest survivor is the pyramid tent used in Antarctica. Its design dates back to the British expeditions of the early 1900s, four poles meeting at a point with the fabric stretched between them, and it is still pitched on the ice today. Newer designs come and go. This one stays because a pyramid has no flat face for the wind to push against, from any direction, and in a place where a storm can last a week, that is worth more than being clever."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how black goat hair works as both a sunshade and a roof. Quote the phrase the passage uses about the weave.",
+            "The passage says the shape matters more than the strength of any single part. Explain why, using an example from the text.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence mean by worth more than being clever?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering balanced forces plus climate-shaped designs)",
+            "the open weave lets air through, then the wet fibers swell shut; quote: the dark cloth is loosely woven",
+            "(curves and triangles spread a load while flat panels catch it, which is why the pyramid holds in Antarctic wind)",
+            "(inform, with detail: it defines compression and tension and gives real examples from several cultures)",
+            "(a proven design that survives a week-long storm beats a newer, lighter one)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["compression → ____", "tension → ____", "lattice → ____", "pitched → ____"],
+          "rows": 1,
+          "answers": [
+            "a squeezing force along something's length",
+            "a pulling force that holds something tight",
+            "a criss-cross frame of wooden strips",
+            "set up, as in putting up a tent"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why would a design that can be taken apart and carried matter more to some families than a stronger permanent house?",
+            "The Antarctic pyramid tent has barely changed in over a hundred years. What does that tell you about how it was designed in the first place?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: people following grass, herds, or water need a home that travels with them)",
+            "(inference: it was matched to the real conditions, so there was little left to improve)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is the best design the newest one, or the one that has been proven over time? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The House You Carry on Your Back",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-tent", "templateLabel": "The House You Carry on Your Back", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tent",
+          "notes": ["From Latin tendere, to stretch", "Poles in compression, fabric and guy lines in tension", "A Roman contubernium of eight men shared one leather tent", "Ridge tents ruled for centuries before dome poles", "The ger: wooden lattice plus pressed sheep felt", "Antarctic pyramid tents: unchanged in essentials since the early 1900s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "An Argument With Gravity: How a Tent Stands Up",
+          "text": "Almost every building humans make is an argument with gravity. Stone, brick, and timber all work the same way: pile heavy things on top of heavier things and let weight hold the structure in place. A tent argues differently. It has no weight worth mentioning and no foundation at all, and it stays standing by keeping opposite forces in a permanent standoff. The poles are in compression, squeezed along their length. The fabric and the guy lines are in tension, pulled tight in every direction at once. Remove either side of that bargain and the tent is a bag of cloth again. That principle is ancient, and the word itself records it. Tent comes from the Latin tendere, to stretch. Stretch is the operative verb. A taut surface sheds water and sheds wind. A slack surface collects rain in its sagging middle and offers the wind a loose edge to work at, and wind, given an edge, will always find a way in. Because the physics is simple, the interesting variation is cultural. In the deserts of Arabia and North Africa, Bedouin families wove their tents from black goat hair, which sounds like the worst material available in a place defined by sun. It is close to ideal. The weave is deliberately open, so a breeze passes through the cloth while the sun does not, and hot air escaping upward drags cooler air in behind it. When rain does come, the fibers absorb water and swell, the gaps between them shut, and a curtain becomes a roof. On the North American plains, tipis solved a different problem: keeping a fire indoors. Two adjustable flaps at the apex could be angled with outside poles as the wind shifted, drawing smoke up and out instead of into the family's lungs. In Central Asia, the Mongolian ger answered brutal cold with a collapsible wooden lattice and heavy felt pressed from sheep wool, a structure warm enough for a winter camp and light enough to be loaded onto animals when the grass ran out. Militaries drove the engineering. Roman legions carried tents of stitched goat leather, one shared between the eight soldiers of a contubernium, which meant a tent had to be light enough to be split up and packed onto a mule. Ridge tents, two upright poles and a horizontal bar, remained the standard for centuries because they were simple to make and simple to repair. They were also heavy, and their sloping walls wasted most of the space inside. The modern dome tent, which arrived with campers in the 1970s, throws the ridge out entirely. Its poles are flexible and are threaded through sleeves so that they arch and cross overhead. Each one is bent, and a bent pole never stops trying to straighten, so it presses outward against the fabric and holds the whole shell taut from within. The structure is stable before a single peg goes in, and there are no vertical walls to catch a gust. One old design refuses to be improved. The pyramid tent taken to Antarctica by British expeditions in the early 1900s is, in its essentials, the tent still pitched on the ice today. Four poles meeting at a point, fabric stretched between them, no flat face for wind to shove against from any angle. Newer shapes are lighter and pack smaller. In a place where a storm may last a week, nobody has been willing to bet a life on lighter."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the opening contrast between a tent and a stone building. Cite the phrase the author uses for how a tent holds itself up.",
+            "The author says the physics is simple, so the interesting variation is cultural. Show how the Bedouin tent and the Mongolian ger prove that point.",
+            "Identify the structure of this passage. Name its sections in order and explain how the author moves between them.",
+            "The final sentence says nobody has been willing to bet a life on lighter. Analyze what that sentence is doing and why the author ends there."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(stone piles weight, a tent balances forces; cite: keeping opposite forces in a permanent standoff)",
+            "(same physics, opposite climates: open goat-hair weave for heat, lattice and felt for cold)",
+            "(principle, then etymology, then cultural designs, then military engineering, then the design that never changed)",
+            "(it reframes engineering as a life-or-death judgment and closes on proven over new)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["taut → ____", "contubernium → ____", "lattice → ____", "in its essentials → ____"],
+          "rows": 2,
+          "answers": [
+            "pulled tight with no slack",
+            "the Roman squad of eight soldiers who shared one tent",
+            "a criss-cross frame of thin wooden strips",
+            "in the parts that actually matter, ignoring small details"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage claims a bent pole never stops trying to straighten. Explain how that turns a weakness of thin poles into a strength.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the stored spring force pushes outward and holds the fabric taut, making the shell self-supporting)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The best shelter is the lightest one you can carry. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

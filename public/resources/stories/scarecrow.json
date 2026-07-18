@@ -1,0 +1,319 @@
+{
+  "key": "scarecrow",
+  "title": "The Scarecrow That Has to Keep Moving",
+  "blurb": "A coat, a hat, and a bundle of straw that only works until the crows figure it out.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Scarecrow That Has to Keep Moving",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-scarecrow", "templateLabel": "The Scarecrow That Has to Keep Moving", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the hat." },
+        {
+          "kind": "image",
+          "imageKey": "scarecrow",
+          "notes": ["It is stuffed with straw", "It wears old clothes", "It stands in a field", "The wind makes it flap", "Birds think it is a person"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a scarecrow. It stands in a field. It has a hat. It has straw arms. The wind pushes it. Its coat flaps. The birds see it move. The birds fly away. The scarecrow does not eat. It does not sleep. It just stands there all day. It keeps the corn safe."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the birds in each row. Write how many in the box.",
+          "emoji": "🐦",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "hat    corn" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "scarecrow", "right": "field" },
+            { "left": "fish", "right": "pond" },
+            { "left": "cow", "right": "barn" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own scarecrow. Give it a big hat and a floppy coat.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Scarecrow That Has to Keep Moving",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-scarecrow", "templateLabel": "The Scarecrow That Has to Keep Moving", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "scarecrow",
+          "notes": ["Farmers use it to keep birds off seeds", "Old clothes flap in the wind", "Crows work it out in about a week", "Farmers move it so it stays scary", "Scarecrows are thousands of years old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Scarecrow That Has to Keep Moving",
+          "text": "A scarecrow is a person made of straw. Farmers put one in the field to keep birds away from the seeds. A scarecrow wears old clothes. The clothes flap in the wind. From far away, the flapping looks like a real person moving. Birds do not want to land near a person. But crows are clever. If the scarecrow stands still in the same spot for many days, the crows work it out. They land right on its hat. So farmers move the scarecrow. They give it a new coat. A scarecrow that changes keeps working."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a scarecrow made of?", "Why does a farmer put one in the field?", "What do farmers do so the crows stay scared?"],
+          "rows": 2,
+          "answers": ["straw and old clothes", "to keep birds away from the seeds", "they move it and give it new clothes"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A scarecrow stands in a ____.", "Its clothes flap in the ____.", "Birds think it is a ____.", "Crows are very ____."],
+          "wordBank": ["field", "wind", "person", "clever"],
+          "answers": ["field", "wind", "person", "clever"]
+        },
+        { "kind": "draw", "prompt": "Draw the scarecrow in the field. Add corn, a fence, and one brave crow.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Scarecrow That Has to Keep Moving",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-scarecrow", "templateLabel": "The Scarecrow That Has to Keep Moving", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "scarecrow",
+          "notes": ["Japanese scarecrows are called kakashi", "Kakashi means something that stinks", "English children once worked as bird scarers", "Crows perch on a scarecrow that never moves", "Farmers swap its coat to keep the trick working"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Oldest Trick on the Farm",
+          "text": "Scarecrows are older than almost anything else on a farm. Three thousand years ago, farmers in Japan hung rags, old fish bones, and hair on sticks and set them smoking. The smell was terrible. Birds and deer stayed away. The Japanese word for scarecrow is kakashi, which comes from an older word meaning something that stinks. The straw figure with a hat came much later. In England, the scarecrow was once a job instead of an object. Farmers hired children called bird scarers. A bird scarer walked the fields from dawn until dark, banging two pieces of wood together and throwing stones at anything that landed. When farm workers became hard to find, farmers stuffed a sack with straw, gave it an old coat, and stood it up in the field instead. Here is the problem every farmer runs into. A scarecrow works because a bird thinks it might be a person. Crows are patient. They watch from the far end of the row. After a few days of nothing happening, they stop believing it, and then they perch on its shoulders. The best scarecrow is the one that gets moved."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did farmers in Japan hang on sticks and burn?",
+            "What was a bird scarer?",
+            "What does the word kakashi come from?",
+            "Why do you think a scarecrow stops working if it never moves?"
+          ],
+          "rows": 2,
+          "answers": [
+            "rags, old fish bones, and hair",
+            "a child hired to walk the fields and scare birds away",
+            "an older word meaning something that stinks",
+            "(inference: the crows watch it, nothing ever happens, so they stop being afraid)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Oldest Trick on the Farm", "How Corn Grows in the Spring", "A Guide to Keeping Chickens"],
+          "answers": ["The Oldest Trick on the Farm"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The Japanese word for scarecrow is ____.", "Children hired to scare birds were called bird ____.", "Crows are very ____ and watch before landing."],
+          "wordBank": ["kakashi", "scarers", "patient"],
+          "answers": ["kakashi", "scarers", "patient"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would you put in a field to keep birds away, and why do you think it would work?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Scarecrow That Has to Keep Moving",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-scarecrow", "templateLabel": "The Scarecrow That Has to Keep Moving", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "scarecrow",
+          "notes": ["A scarecrow is a bluff, not a threat", "Habituation: learning to ignore a harmless signal", "Crows make tools and remember faces", "Modern farms use ribbon, cannons, kites, and lasers", "Every scare device fades unless it changes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Scarecrow Stops Working",
+          "text": "A scarecrow is a bluff. It has no muscles, no voice, and no way to chase anything. It works only if a bird looks at it and guesses wrong. For a day or two the bird plays it safe and feeds somewhere else, because being wrong about a predator is expensive and moving to the next field is not. Then the bird starts testing. It lands at the far end of the row. Nothing happens. The next morning it lands closer. Still nothing. Scientists call this habituation, which means learning to ignore a signal that never turns out to matter. Habituation is one of the simplest kinds of learning, and almost every animal with a nervous system can do it. Crows are especially quick. Crows are unusually intelligent birds. They bend sticks into hooks to fish grubs out of wood, they remember which people have treated them badly, and they pass that information along to other crows. A figure standing in the same posture, in the same corner, wearing the same coat every single morning is exactly the sort of thing a crow can file away as scenery. Farmers have always known this, even without a word for it. The old advice is to move the scarecrow every few days, change its clothes, and shift its arms into a new pose. Modern farms do the same thing with newer tools: reflective ribbon that spins in the wind, gas cannons that fire at random times, kites cut in the shape of a hawk, and lasers swept across the crop at dawn. Every one of them works better when it is unpredictable. The scarecrow's real job was never to look frightening. It was to look like something that might change its mind."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage calls a scarecrow a bluff. Explain what that means here.",
+            "Describe the steps a bird takes as it stops being afraid of a scarecrow.",
+            "Why does the passage say every device works better when it is unpredictable?",
+            "Crows pass information to other crows. Why does that make a farmer's job harder?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it looks dangerous but cannot actually do anything",
+            "it lands far away, sees nothing happen, lands closer each day, then ignores it",
+            "an animal cannot habituate to something it cannot predict",
+            "(inference: one crow learning means the whole flock learns without testing it themselves)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A scarecrow only works while birds are still unsure about it, so it has to keep changing",
+            "Crows are the only birds that eat crops",
+            "Farmers stopped using scarecrows once lasers were invented"
+          ],
+          "answers": ["A scarecrow only works while birds are still unsure about it, so it has to keep changing"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["bluff → ____", "habituation → ____", "unpredictable → ____"],
+          "rows": 1,
+          "answers": [
+            "pretending to be a threat when you are not one",
+            "learning to ignore something that never has consequences",
+            "impossible to guess in advance"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: design a bird scarer for a corn field. Say what it does, and explain how you would stop the crows getting used to it.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Scarecrow That Has to Keep Moving",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-scarecrow", "templateLabel": "The Scarecrow That Has to Keep Moving", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "scarecrow",
+          "notes": ["Invented separately in Egypt, Greece, and Japan", "Kakashi: named for smell, not shape", "Bird scarer was a paid job for children", "Crows recognize individual human faces", "Warnings spread through a crow flock socially", "Habituation defeats every static device"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Bluff in the Field",
+          "text": "Nobody knows who built the first scarecrow, but the idea is at least three thousand years old and it appeared in several places independently. Egyptian farmers along the Nile stretched nets over wooden frames to protect wheat from flocks of quail. Greek growers carved rough wooden figures and set them among the vines, and Roman farmers carried the habit north into Europe. In Japan, the earliest versions were not figures at all. Farmers hung rags, hair, and old fish on poles and left them smoldering, trusting smell and smoke rather than shape. The Japanese word for a scarecrow is still kakashi, which comes from an older term for something that stinks. The straw man in a battered hat, the figure most people picture, came much later. In medieval England the scarecrow was a job rather than an object. Children were hired as bird scarers, walking the fields from first light, banging wooden clappers and slinging stones at anything that settled on the seed. After the plague of the fourteenth century emptied the countryside of workers, farmers replaced the children with sacks of straw dressed in cast off clothing, and the word scarecrow slid from a job title onto a thing. What makes the scarecrow genuinely interesting is that it fails, and that it fails for a reason worth understanding. A scarecrow contains no threat whatsoever. It is a bluff aimed at an animal's judgment. Birds treat an unfamiliar upright shape as a possible predator and keep their distance, which is sensible when the cost of guessing wrong is being eaten. But birds also gather evidence. A crow will land at the edge of the field, wait, watch, and creep nearer over several days. When nothing ever happens, the fear drains out of the shape. Biologists call this habituation, and it is the reason no single bird scaring device has ever kept working on its own. Crows sharpen the problem. Researchers at the University of Washington wore a distinctive mask while briefly trapping and banding wild crows, then walked the campus in that mask for years afterward. The crows scolded and mobbed that face on sight, and so did crows that had never been trapped, having learned the warning from the flock. A bird that can recognize one human face and broadcast it to its neighbors is not going to be fooled for long by a coat on a stick. So the trick was never the costume. It was the change. Farmers who move their scarecrows, redress them, and pair them with noise get months of use. Farmers who plant one and forget it get about a week, and then a crow sitting on the hat."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name three different places where scarecrows appeared, and describe how each one worked.",
+            "Explain what habituation is and quote the phrase the passage uses to describe what happens to the bird's fear.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What does the last sentence do that a plain statement of the same fact would not?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering ancient origins plus habituation plus the need for change)",
+            "Egypt: nets on wooden frames; Japan: smoldering rags and fish for the smell; England: hired children with clappers and stones",
+            "learning to ignore a harmless repeated signal; quote: the fear drains out of the shape",
+            "(inform, with detail: it defines terms and gives dated historical examples, though the ending has a light persuasive turn)",
+            "(it gives a concrete image of failure, which lands harder than saying the scarecrow stops working)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["independently → ____", "smoldering → ____", "habituation → ____", "broadcast → ____"],
+          "rows": 1,
+          "answers": [
+            "invented separately, without copying",
+            "burning slowly with smoke and no flame",
+            "the fading of a response to a signal that never has consequences",
+            "spread widely to many others"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The mask study describes crows warning birds that were never trapped. Why is socially learned fear more powerful than fear each bird has to learn alone?",
+            "A farmer says a scarecrow is useless. Using the passage, explain why that is only half right."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: knowledge spreads without anyone paying the cost of the bad experience)",
+            "(a static one is useless; a moved and varied one works, so the flaw is in the use, not the object)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it fair to call the crow smarter than the farmer? Take a position and support it with two reasons drawn from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Scarecrow That Has to Keep Moving",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-scarecrow", "templateLabel": "The Scarecrow That Has to Keep Moving", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "scarecrow",
+          "notes": ["Egyptian nets, Greek carvings, Japanese smoke", "Kakashi names a smell, not a silhouette", "Scarecrow began as a job title in English", "Habituation: response fades without consequence", "Mask study: crows knew a face for years", "Modern answer is randomness, not realism"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Coat on a Stick: The Invention That Only Works While It Is Believed",
+          "text": "Consider what a scarecrow actually is. It is a coat, a hat, and a bundle of straw arranged in roughly the shape of a human being and left standing in a field. It cannot move on its own, make a sound, or harm anything at all. Every scarecrow that has ever worked has worked entirely inside the mind of a bird, and the moment the bird changes its mind, the object becomes laundry on a pole. Few human inventions depend so completely on being misunderstood. The idea is ancient, and it was invented more than once. Egyptian farmers along the Nile rigged nets on wooden frames to keep flocks of quail off the wheat. Greek growers carved crude wooden figures and set them among the vines, and Roman farmers carried the practice north into Europe. In Japan the earliest versions were not figures at all. Farmers hung rags, hair, and old fish on poles and left them smoldering, trusting smell and smoke rather than shape, and the Japanese word for scarecrow, kakashi, still carries that origin in an older term for something that stinks. In medieval England, a scarecrow was a person. Children were employed as bird scarers, patrolling the fields from dawn with wooden clappers and pockets full of stones. Only after the labor shortages that followed the fourteenth century plague did English farmers begin dressing sacks of straw and standing them in the fields instead, and the word slid quietly from a job title onto an object. That object has one structural weakness, and it is not a flaw that better craftsmanship could repair. A scarecrow is a bluff, and bluffs expire. A bird approaching a field runs a fast calculation. An unfamiliar upright shape might be a predator, and the penalty for being wrong about a predator is death, so avoidance is cheap insurance. But birds also gather evidence. A crow lands at the far edge, waits, and watches. Nothing happens. The next day it lands nearer. Nothing happens again. Within a week the shape has been reclassified as scenery. Biologists call this habituation, the gradual fading of a response to a stimulus that never delivers consequences. It is among the simplest forms of learning, and virtually every animal with a nervous system does it. Crows do it faster and better than most, because crows are extraordinarily good at learning the specifics of their surroundings. In a long running study at the University of Washington, researchers wore a distinctive mask while capturing and banding wild crows, released the birds, and then continued walking the campus in that mask for years. The crows scolded and mobbed that face on sight. So did crows that had never been captured, and later, crows that had not been hatched at the time. The knowledge moved through the population socially, from bird to bird and from parent to offspring. An animal capable of that is not going to be permanently deceived by a stationary coat. The consequence is that every serious bird control method is really a method of managing habituation. Farmers today use reflective ribbon, propane cannons that fire at irregular intervals, kites cut in the silhouette of a hawk, drones, lasers swept across the crop at dawn, and recordings of distress calls. Each one works, and each one stops working, usually within weeks, unless it is moved, varied, randomized, or backed occasionally by something real. The old farming advice was identical long before anyone had the vocabulary for it: shift the scarecrow, change its clothes, give it a new pose. The scarecrow's job was never to be frightening. It was to stay uncertain."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage claims the scarecrow depends on being misunderstood. Explain the claim and cite the sentence that states it most directly.",
+            "Explain habituation as the passage defines it, and cite the exact definition.",
+            "Identify where the passage turns from history to explanation. What sentence marks the turn, and how does the author signal it?",
+            "Analyze the closing pair of sentences. What is the author doing by ending on uncertainty rather than fear, and does the rest of the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the object has no power, only the bird's mistaken belief; cite: Few human inventions depend so completely on being misunderstood.)",
+            "(cite: the gradual fading of a response to a stimulus that never delivers consequences)",
+            "(at: That object has one structural weakness; the author signals it by naming a weakness and ruling out craftsmanship as the fix)",
+            "(it reframes the whole invention as managing prediction rather than causing fear; the crow evidence and the modern device list support it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["habituation → ____", "stimulus → ____", "silhouette → ____", "randomized → ____"],
+          "rows": 2,
+          "answers": [
+            "the fading of a response to something that never has consequences",
+            "anything an animal can sense and react to",
+            "the outline shape of something seen against the light",
+            "deliberately varied so the pattern cannot be predicted"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says each modern device is backed occasionally by something real. Explain why an occasional real consequence would slow habituation.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(if the signal sometimes does predict danger, the bird cannot safely learn to ignore it)",
+            "(student question plus a credible source type, for example an agricultural research trial)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The scarecrow is not a failed invention, it is an honest lesson about how animals learn. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}
