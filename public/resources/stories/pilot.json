@@ -1,0 +1,319 @@
+{
+  "key": "pilot",
+  "title": "The Person in the Captain's Hat",
+  "blurb": "How a pilot gets a heavy plane into the sky and safely back down, and why there are always two.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Person in the Captain's Hat",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pilot", "templateLabel": "The Person in the Captain's Hat", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Wave hello to the pilot." },
+        {
+          "kind": "image",
+          "imageKey": "pilot",
+          "notes": ["A pilot flies the plane", "The pilot sits up front", "The hat has a shiny badge", "The pilot looks out the window"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pilot. A pilot flies the plane. The pilot sits up front in the big seat. She wears a hat and looks out the window. When the plane goes fast, the wings lift it into the sky. Up, up, up it goes. The pilot keeps everyone safe. Then she brings the plane back down, soft on the ground."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the planes in each row. Write how many in the box.",
+          "emoji": "✈️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "plane    fly" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match who goes with what.",
+          "pairs": [
+            { "left": "pilot", "right": "plane" },
+            { "left": "driver", "right": "car" },
+            { "left": "sailor", "right": "boat" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own plane. Put a pilot in the window.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Person in the Captain's Hat",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pilot", "templateLabel": "The Person in the Captain's Hat", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pilot",
+          "notes": ["The front of the plane is the cockpit", "A pilot checks the plane before every flight", "Two pilots fly a big plane", "They talk to the ground by radio", "A pilot trains for years"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Person Who Flies the Plane",
+          "text": "A pilot is the person who flies a plane. Before the plane leaves, the pilot walks all the way around it. She checks the wings, the wheels, and the lights. Then she climbs into the front. This part of the plane is called the cockpit. It has more buttons than you can count. The pilot pushes the engines to full power, and the plane rolls faster and faster down the runway. The wings lift it up. High in the sky, the pilot talks to people on the ground by radio. They help keep every plane far apart and safe."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a pilot do?", "What is the front part of the plane called?", "How does a pilot talk to people on the ground?"],
+          "rows": 2,
+          "answers": ["flies a plane", "the cockpit", "by radio"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A pilot ____ a plane.", "The pilot sits in the ____.", "The plane rolls down the ____.", "The pilot talks by ____."],
+          "wordBank": ["flies", "cockpit", "runway", "radio"],
+          "answers": ["flies", "cockpit", "runway", "radio"]
+        },
+        { "kind": "draw", "prompt": "Draw a pilot in the cockpit. Add lots of buttons.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Person in the Captain's Hat",
+      "subtitle": "A reading sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pilot", "templateLabel": "The Person in the Captain's Hat", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pilot",
+          "notes": ["A pilot studies the weather before flying", "The walkaround is an outside check", "Big planes carry two pilots", "Autopilot holds the plane steady", "Pilots land the plane by hand"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Pilot Really Does",
+          "text": "A pilot is trained to fly an airplane, but flying is only part of the job. Long before takeoff, the pilot studies the weather along the whole route. Storms, wind, and ice can all change the plan. Next comes the walkaround, when the pilot inspects the plane from the outside, checking the wings, engines, and tires for anything wrong. Inside the cockpit, the pilot and the co-pilot run through a checklist together. They read each item out loud so nothing is forgotten. On most flights there are two pilots for a reason: if one needs a break, the other can fly. To take off, the pilot pushes the engines to full power and pulls back gently once the plane is fast enough. Air rushing over the curved wings creates lift, and the plane climbs. High up, a computer called the autopilot can hold the plane steady, but the pilot still watches everything and lands the plane by hand. Landing softly on a narrow runway is the hardest skill a pilot learns."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What does a pilot do before takeoff to get ready?",
+            "What is the walkaround?",
+            "Why are there usually two pilots on a flight?",
+            "Why do you think pilots read the checklist out loud?"
+          ],
+          "rows": 2,
+          "answers": [
+            "studies the weather and inspects the plane",
+            "when the pilot inspects the plane from the outside",
+            "so one can fly if the other needs a break",
+            "(inference: so no step gets forgotten)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["What a Pilot Really Does", "How to Build a Runway", "The History of Trains"],
+          "answers": ["What a Pilot Really Does"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Air over the curved wings creates ____.", "A computer called the ____ can hold the plane steady.", "The pilot checks the ____ before flying."],
+          "wordBank": ["lift", "autopilot", "weather"],
+          "answers": ["lift", "autopilot", "weather"]
+        },
+        { "kind": "handwriting", "prompt": "Write two or three sentences about which part of a pilot's job you think is the hardest, and why.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Person in the Captain's Hat",
+      "subtitle": "A reading sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pilot", "templateLabel": "The Person in the Captain's Hat", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pilot",
+          "notes": ["Pilots calculate weight and fuel before a flight", "Takeoff and landing are flown by hand", "Air traffic control guides planes on the ground and in the air", "Lift comes from air moving over curved wings", "A calm voice matters as much as skill"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Flying the Machine",
+          "text": "Most people think a pilot spends the whole flight steering the plane by hand. The truth is more interesting. Flying a modern airliner is mostly about managing systems, making decisions, and staying ready for the moment when a machine cannot decide for itself. The work begins on the ground. Pilots study the route, the weather, and how much fuel the plane will need. They calculate the plane's weight, because a heavier plane needs a longer runway and more speed to lift off. Then comes the walkaround, an outside inspection of the wings, engines, and tires. Takeoff and landing are flown by hand, and they demand the most skill. In between, the autopilot usually holds the course while the pilots monitor the instruments, talk with air traffic control, and plan ahead. Air traffic controllers on the ground act like traffic officers of the sky, keeping every plane a safe distance from the others. The reason planes fly at all comes down to their wings. As the plane speeds forward, air moving over the curved top of the wing lowers the pressure there, and the higher pressure below pushes the wing up. That upward force is called lift. When lift is greater than the plane's weight, the plane rises. A pilot's calm matters as much as skill. When something goes wrong, passengers look to a steady voice on the radio, and training takes over."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what is a pilot mostly doing during the middle of a flight?",
+            "Why does a heavier plane need a longer runway?",
+            "Explain how a wing makes lift.",
+            "The passage says a pilot's calm matters as much as skill. Why might that be true?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(managing systems and monitoring, not hand-flying the whole way)",
+            "it needs more speed to make enough lift to leave the ground",
+            "air over the curved top lowers the pressure, and higher pressure below pushes the wing up",
+            "(inference: passengers and crew rely on a steady leader when things go wrong)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Flying a modern plane is mostly about managing systems and making good decisions",
+            "Pilots never touch the controls",
+            "Airplanes are heavier than cars"
+          ],
+          "answers": ["Flying a modern plane is mostly about managing systems and making good decisions"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["managing → ____", "monitor → ____", "lift → ____"],
+          "rows": 1,
+          "answers": [
+            "handling or keeping control of",
+            "to watch closely and keep track of",
+            "the upward force that holds a plane in the air"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining why a plane needs both a pilot and an autopilot. Give two reasons a human is still needed.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Person in the Captain's Hat",
+      "subtitle": "A reading sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pilot", "templateLabel": "The Person in the Captain's Hat", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pilot",
+          "notes": ["Captain wears four stripes and holds final responsibility", "The first officer, or co-pilot, flies just as often", "Pilots rehearse emergencies in a simulator", "Aviation is built to be calm on purpose", "The real skill is catching a small problem early"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Person in the Captain's Hat",
+          "text": "Look into the cockpit of an airliner and you will usually see two people, not one. The one in the left seat, wearing four stripes on each sleeve, is the captain, who carries final responsibility for the flight. In the right seat sits the first officer, sometimes called the co-pilot, who flies the plane just as often. The two trade duties, and on a long journey they take turns resting, because a tired pilot is a dangerous one. Becoming a pilot takes years. A person must earn a license, pass medical exams, and log hundreds of hours in the air before an airline will hire them. Even then the learning never stops. Pilots return to training rooms every few months to practice emergencies in a simulator, a machine that copies the cockpit so exactly that a pilot can rehearse an engine failure that they hope never to face in real life. Most of a flight is calm. After a hand-flown takeoff, the crew engages the autopilot and settles into a rhythm of watching instruments, tracking fuel, and speaking with a chain of air traffic controllers who hand the plane from one region to the next. The controllers keep aircraft spaced safely apart, like a careful conversation where only one voice speaks at a time. The quiet is the point. Aviation is built to be boring on purpose. Every checklist, every backup system, and every rule was written to remove surprises, and many were written after accidents taught hard lessons. A pilot's real job is to notice the small thing early, the odd reading or the wrong sound, and to act before it becomes a large thing. Then comes the landing. Autopilots can land in some conditions, but pilots practice landing by hand for a reason. Bringing a heavy machine down through gusting wind and setting its wheels gently onto a strip of concrete, at the right speed and the right angle, is a skill that rewards thousands of hours of practice. When it is done well, the passengers barely notice, and that is exactly how a pilot wants it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in two sentences.",
+            "What is the difference between the captain and the first officer?",
+            "The passage says aviation is built to be boring on purpose. Find and quote the sentence that explains why so many rules exist.",
+            "Is this passage written mainly to inform, persuade, or entertain? Give two details that support your answer.",
+            "Why does the author compare air traffic control to a careful conversation?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: pilots train for years and most of flying is calm monitoring; the real skill shows in catching problems early and landing by hand)",
+            "the captain carries final responsibility; the first officer, or co-pilot, flies just as often",
+            "quote: many were written after accidents taught hard lessons",
+            "(inform: it explains the roles, the training, and how flying works using facts)",
+            "(only one plane or voice at a time keeps the sky orderly and safe)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["simulator → ____", "engages → ____", "gusting → ____", "responsibility → ____"],
+          "rows": 1,
+          "answers": [
+            "a machine that copies a cockpit for practice",
+            "switches on or activates",
+            "blowing in sudden strong bursts",
+            "the duty of being in charge and answerable"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might a tired pilot be described as a dangerous one?",
+            "The passage says a good landing is one passengers barely notice. Why would a pilot want their best work to go unnoticed?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(tiredness slows reactions and clouds judgment)",
+            "(opinion: smooth and unnoticed means nothing went wrong)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: as planes get smarter, should we still train pilots to fly and land by hand? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Person in the Captain's Hat",
+      "subtitle": "A reading sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pilot", "templateLabel": "The Person in the Captain's Hat", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pilot",
+          "notes": ["Two pilots so no single failure brings the plane down", "Simulators let crews rehearse disasters safely", "Lift depends on speed; too slow and the wing stalls", "Systems are doubled and tripled as backups", "The industry studies its failures in public"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever Calm: How Pilots Are Built for the Worst Moment",
+          "text": "The strangest thing about a modern airline pilot is how little of the job looks like flying. For most of a journey the aircraft flies itself, holding altitude and heading under the guidance of an autopilot, while two trained people sit and watch. To an outsider this can look like idleness. It is the opposite. The entire profession is designed around a single idea: that the rare, dangerous moment is the one that matters, and that everything before it exists to make that moment survivable. Start with who is in the cockpit. The captain, marked by four stripes, holds final authority, but the first officer beside them flies the plane on roughly half of all legs. This is deliberate. Two qualified pilots mean that no single failure, of a person or a machine, is likely to bring the aircraft down. On long routes they rest in turns, because fatigue quietly erodes judgment in ways a pilot cannot always feel. Becoming one of these people is slow work. A pilot earns a license, passes repeated medical checks, and logs hundreds of flight hours, and even that is only the beginning. Every few months, airline pilots return to a simulator, a full-motion copy of the cockpit precise enough to rehearse disasters. There they practice engine failures, fires, and sudden loss of pressure, over and over, so that if the real thing ever comes, their hands already know the answer. The goal is to turn panic into routine. Understanding how the plane stays up helps explain the caution. A wing works because air flowing over its curved upper surface moves faster and presses down less than the slower air beneath, so the plane is pushed upward by a force called lift. Lift depends on speed. Fly too slowly and the smooth flow breaks apart, the wing stalls, and the lift vanishes. Much of a pilot's training is really the management of that narrow margin between fast enough and too slow. The culture of aviation reflects all of this. Checklists are read aloud so that no step lives only in a forgetful memory. Systems are doubled and tripled so that a broken part has a backup. Many of these rules exist because earlier accidents revealed a gap, and the industry has a habit, rare among human institutions, of studying its failures in public and rewriting the rules so the same failure cannot happen twice. That habit is the quiet heart of the passage worth noticing. Read again and you will see that almost every fact points the same direction: two pilots, endless practice, redundant systems, aloud checklists. The author is not merely describing a job. The author is building a case that safety in the air is not luck or the nerve of one heroic person, but a system engineered to catch mistakes before they grow. The pilot in the captain's hat is the visible tip of that system, and the reason a passenger can fall asleep at thirty-five thousand feet and never once wonder whether the wings will hold."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a full phrase from it.",
+            "The passage argues that safety is engineered, not luck. Quote the exact phrase the author uses to state this claim.",
+            "Explain how a wing produces lift, and what happens if the plane flies too slowly. Cite the word the passage uses for that failure.",
+            "Identify one move the author makes in the final paragraph to tie the argument together, and explain how it works.",
+            "Why does the author open by saying the job looks like idleness, then call it the opposite?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary of pilots trained and systems designed for the rare emergency)",
+            "quote: a system engineered to catch mistakes before they grow",
+            "air moves faster over the curved top and presses down less, so the wing is pushed up; if too slow the wing stalls (cite: stalls)",
+            "(the author tells the reader to read again, lists the evidence, then names the thesis; structure builds the case)",
+            "(a hook: it sets up the real point that the calm is the result of design, not laziness)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["fatigue → ____", "redundant → ____", "erodes → ____", "engineered → ____"],
+          "rows": 2,
+          "answers": [
+            "extreme tiredness",
+            "extra or duplicated to serve as a backup",
+            "slowly wears away",
+            "deliberately designed and built"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says aviation studies its failures in public, which is rare among human institutions. Why might studying failures openly make an industry safer?",
+            "Write a question this passage does not answer, and name a kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(shared lessons let the whole industry avoid repeating the same mistake)",
+            "(student question plus a credible source type)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: One day computers will fly planes so well that human pilots will no longer be needed. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

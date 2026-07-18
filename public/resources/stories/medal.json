@@ -1,0 +1,300 @@
+{
+  "key": "medal",
+  "title": "The Gold Medal That Is Not Really Gold",
+  "blurb": "The shiny prize you wear around your neck, and the surprising truth about what it is made of.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Gold Medal That Is Not Really Gold",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-medal", "templateLabel": "The Gold Medal That Is Not Really Gold", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the shiny gold medal." },
+        {
+          "kind": "image",
+          "imageKey": "medal",
+          "notes": ["It is round and gold", "It hangs on a ribbon", "You wear it on your neck", "You win it for doing well"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a medal. It is round and shiny. A medal hangs on a ribbon. You wear it around your neck. People win a medal when they do something well. A gold medal means you came in first. It feels heavy and cool in your hand. When the sun hits it, the medal shines."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the medals in each row. Write how many in the box.",
+          "emoji": "🥇",
+          "items": ["2", "3", "1", "4"],
+          "answers": ["2", "3", "1", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "gold    win" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "medal", "right": "ribbon" },
+            { "left": "bird", "right": "sky" },
+            { "left": "fish", "right": "water" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own gold medal. Add a ribbon to hang it on.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Gold Medal That Is Not Really Gold",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-medal", "templateLabel": "The Gold Medal That Is Not Really Gold", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "medal",
+          "notes": ["First place wins gold", "Second place wins silver", "Third place wins bronze", "Medals hang on ribbons", "You wear one around your neck"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Gold, Silver, Bronze",
+          "text": "A medal is a prize you can wear. It hangs from a ribbon so you can put it around your neck. Most medals are made of shiny metal. At a big race, the top three runners each win a medal. The winner gets gold. Second place gets silver. Third place gets bronze. Gold, silver, and bronze are the three medal colors. People have handed out medals for a very long time. A medal helps you remember the day you did something hard and did it well."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What color medal does the winner get?", "How do you wear a medal?", "What does a medal help you remember?"],
+          "rows": 2,
+          "answers": ["gold", "around your neck on a ribbon", "the day you did something hard and did it well"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A medal hangs from a ____.", "The winner gets a ____ medal.", "Third place gets a ____ medal.", "A medal is made of shiny ____."],
+          "wordBank": ["ribbon", "gold", "bronze", "metal"],
+          "answers": ["ribbon", "gold", "bronze", "metal"]
+        },
+        { "kind": "draw", "prompt": "Draw the three medals: gold, silver, and bronze. Put them in a row.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Gold Medal That Is Not Really Gold",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-medal", "templateLabel": "The Gold Medal That Is Not Really Gold", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "medal",
+          "notes": ["Gold, silver, bronze started in 1904", "Olympic gold is mostly silver", "Bronze is copper mixed with tin", "The ribbon lets you wear it", "People win medals for being brave too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Gold, Silver, and Bronze",
+          "text": "A medal is a small metal award you can wear on a ribbon. People win medals for winning races, for being brave, or for doing something no one has done before. At the Olympic Games, the top three athletes in each event win medals. First place wins gold, second place wins silver, and third place wins bronze. This order did not always exist. At the 1904 Olympic Games in St. Louis, medals were handed out in gold, silver, and bronze for the first time. The idea stuck, and today almost every sport copies it. Here is something surprising. An Olympic gold medal is not solid gold. It is mostly silver with a thin layer of real gold on the outside. Solid gold would cost far too much and would be very heavy. Bronze is a mix of two metals, copper and tin, which people have used for thousands of years. A medal is really a way to freeze one moment in metal, so the person who earned it can hold that day again and again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What three medals do the top athletes win, and which place does each one mean?",
+            "Where and when were gold, silver, and bronze medals first given out together?",
+            "Why do you think an Olympic gold medal is made mostly of silver instead of solid gold?"
+          ],
+          "rows": 2,
+          "answers": [
+            "gold for first, silver for second, bronze for third",
+            "at the 1904 Olympic Games in St. Louis",
+            "(inference: solid gold would cost too much and be too heavy)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Gold, Silver, and Bronze", "How to Run a Fast Race", "The Biggest City in America"],
+          "answers": ["Gold, Silver, and Bronze"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Bronze is a mix of copper and ____.", "First place at the Olympics wins a ____ medal.", "A medal hangs from a ____ so you can wear it."],
+          "wordBank": ["tin", "gold", "ribbon"],
+          "answers": ["tin", "gold", "ribbon"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would you want to win a medal for, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Gold Medal That Is Not Really Gold",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-medal", "templateLabel": "The Gold Medal That Is Not Really Gold", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "medal",
+          "notes": ["Ancient Greek champions won olive wreaths", "1896 winners got silver, not gold", "Gold medals need at least 6 grams of real gold", "Bronze is one of our oldest inventions", "Tokyo medals came from recycled phones"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Medal Is Really Made Of",
+          "text": "For as long as people have competed, they have wanted proof that they won. The ancient Greeks held their own Olympic Games more than two thousand years ago, but the champions did not receive medals. They were crowned with a wreath of wild olive leaves. The leaves dried and crumbled, but the honor lasted a lifetime. Metal medals as sport prizes are a much newer idea. When the modern Olympic Games began in 1896, the winner received a silver medal, not a gold one. Gold, silver, and bronze for the top three became the rule at the 1904 Games in St. Louis, and the world has followed it ever since. Look closely at an Olympic gold medal and you will find a surprise. It is not solid gold. The rules only require a thin coating of real gold, at least six grams, over a medal that is mostly silver. Solid gold would be enormously expensive and heavy enough to be uncomfortable to wear. Bronze, the third place metal, is one of the oldest human inventions: copper mixed with tin, first made thousands of years ago. Medals hang from ribbons for a simple reason. A ribbon lets the winner wear the award around the neck, where everyone can see it, and where the athlete can feel its weight. Some medals now carry a modern twist. The medals for the Tokyo Games were made from metal taken out of millions of old phones and other electronics that people donated. A medal, in the end, is a memory you can hold, shaped out of metal so the moment does not fade."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what did the ancient Greek champions receive instead of a medal?",
+            "The modern Olympics first gave the winner a silver medal. What changed in 1904?",
+            "Why do you think medals are designed to hang from a ribbon rather than sit in a box?",
+            "The Tokyo medals were made from old phones. Why might a country choose to make medals that way?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a wreath of wild olive leaves worn on the head",
+            "gold, silver, and bronze for the top three became the rule",
+            "(inference: a ribbon lets the athlete wear it and be seen, unlike a box)",
+            "(inference: to reuse waste and give the medals extra meaning)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Medals have a long history and are often not made of what they seem to be",
+            "Ancient Greece was the largest country in the world",
+            "Every gold medal is made of pure solid gold"
+          ],
+          "answers": ["Medals have a long history and are often not made of what they seem to be"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["wreath → ____", "coating → ____", "donated → ____"],
+          "rows": 1,
+          "answers": ["a ring of leaves worn on the head", "a thin layer covering the outside", "gave away for free to be used"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is a gold medal any less special because it is mostly silver? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Gold Medal That Is Not Really Gold",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-medal", "templateLabel": "The Gold Medal That Is Not Really Gold", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "medal",
+          "notes": ["Ancient prize: a kotinos, a wild olive wreath", "1896 champion got silver plus an olive branch", "Gold, silver, bronze fixed in 1904", "Olympic gold is at least 92 percent silver", "Tokyo 2020 medals came from recycled electronics"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Story Hidden in a Medal",
+          "text": "A medal is one of the smallest objects a person can win and one of the heaviest to carry. It weighs only a few hundred grams, yet athletes train for a decade to feel that weight around their neck. To understand why a disc of metal matters so much, it helps to look at where medals come from and what they are actually made of. The ancient Greeks, who invented the Olympic Games, did not award medals at all. Their champions received a kotinos, a wreath cut from a sacred wild olive tree. The wreath was worth nothing as material, and that was the point: the honor lived in the winning, not in the prize. Metal awards for athletes arrived much later. At the first modern Olympics in 1896, the champion of each event was given a silver medal and an olive branch, while the runner-up received bronze. The now familiar ranking of gold, silver, and bronze for the top three was not fixed until the 1904 Games in St. Louis. Once it appeared, it spread to nearly every sport on Earth. The metals themselves tell a story about value. Gold has always been rare, soft, and bright, which is why cultures across history have tied it to first place and highest worth. Yet an Olympic gold medal is a small deception. It is not solid gold. Olympic rules demand only that it be plated with at least six grams of real gold over a body that is mostly silver. A solid gold medal would cost a fortune and hang heavily enough to be a burden. Silver takes second, and bronze, an ancient blend of copper and tin, takes third. The order mirrors how humans learned to work these metals and how rare each one is. What a medal really does is turn a moment into an object. A race lasts seconds and then it is gone, but the medal remains. The winner can hold it, show it, and pass it to their children long after the crowd has left. That is why organizers keep finding new meaning to pour into them. The medals for the Tokyo Games were forged from gold, silver, and bronze pulled out of millions of discarded phones and gadgets, turning electronic trash into the highest honor in sport. The medal proves that the smallest prize can carry the largest memory."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage calls an Olympic gold medal a small deception. Using evidence from the text, explain what it means.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "Why does the author say the ancient wreath being worth nothing as material was the point?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the history, the metals, and the meaning)",
+            "(the medal looks like gold but is mostly silver with only six grams of gold plating)",
+            "(inform: it defines terms and gives dated facts, with a warm closing line)",
+            "(the honor came from winning, not from a prize that could be bought)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["kotinos → ____", "plated → ____", "discarded → ____", "deception → ____"],
+          "rows": 1,
+          "answers": ["a wreath of wild olive given to champions", "covered with a thin layer of metal", "thrown away as no longer wanted", "something that is not what it seems"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Explain the sentence: what a medal really does is turn a moment into an object.",
+            "Why might making medals from recycled electronics add meaning to them?"
+          ],
+          "rows": 3,
+          "answers": ["(a race is over quickly, but the medal keeps that moment forever)", "(inference: it reuses waste and links the honor to a shared effort by many people)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is a medal worth more for what it is made of, or for what it represents? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Gold Medal That Is Not Really Gold",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-medal", "templateLabel": "The Gold Medal That Is Not Really Gold", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "medal",
+          "notes": ["Olive wreath (kotinos) at ancient Olympia", "1896: silver for first, bronze for second", "Gold, silver, bronze standardized in 1904", "Olympic gold is 92.5 percent silver, gold-plated", "Tokyo 2020: metal from about 6 million devices"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forged from Trash and Triumph: The Truth About the Medal",
+          "text": "Few objects carry as much weight for their size as a medal. A gold medal from the modern Olympic Games weighs only around half a kilogram, yet athletes will surrender years of ordinary life to earn one. That gap, between what a medal is and what it means, is the whole mystery of the thing, and it is older than any stadium. The people who invented the Olympic Games did not use medals. When athletes competed at Olympia more than two and a half thousand years ago, the single champion of each event was crowned with a kotinos, a wreath of wild olive cut from a sacred grove. There was no second place and no third. The wreath was worthless as material and priceless as honor, and the ancient Greeks preferred it that way, because a prize with no cash value could only be won, never bought. Metal awards for sport are a modern invention. At the first modern Olympics, held in Athens in 1896, the victor of each event received a silver medal, and the runner-up received bronze. Gold did not yet sit at the top. The ranking the world now takes for granted, gold for first, silver for second, bronze for third, was not standardized until the 1904 Games in St. Louis. From there it spread until almost every competition on the planet borrowed it. The metals were not chosen at random. They follow the order in which humans learned to work them and the rarity of each in the ground. Bronze, a blend of copper and tin, was the first alloy people ever made, and it named an entire age of history. Silver is rarer and brighter. Gold is rarest of all, and so soft and so resistant to tarnish that nearly every culture has linked it to permanence and to first place. Yet the Olympic gold medal hides a quiet contradiction. It is not made of gold. Olympic rules require only that a gold medal be plated with a minimum of six grams of the metal over a core that is at least ninety-two percent silver. A solid gold medal would be ruinously expensive and heavy enough to strain the neck that wore it. The grandest prize in sport is, in truth, a silver medal wearing a thin gold coat. None of this diminishes the medal, because a medal was never really about its metal. Its true function is to freeze a moment. A race is over in seconds and a career in a few short years, but the object endures. It can be held, displayed, and handed down long after the roar of the crowd has faded. Understanding this, the organizers of recent Games have begun to load medals with extra meaning. Every medal awarded at the Tokyo Games was forged from gold, silver, and bronze extracted from roughly six million discarded phones and electronic devices, donated by the public and melted down. The highest honor in sport was literally reclaimed from the trash. A medal, then, is a small paradox you can hold in your palm: a cheap thing made precious, a passing moment made to last, proof that value lives not in what an object is made of, but in what it is made to mean."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any full phrase from it.",
+            "Explain why the ancient Greeks preferred a prize with no cash value. Quote the phrase the passage uses to justify this.",
+            "The passage calls the gold medal a quiet contradiction. Using an exact quote, explain the contradiction.",
+            "Identify where the passage turns from history to meaning, and explain how the author signals the shift.",
+            "Analyze the final sentence. What claim does it make about value, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(a valueless prize could not be bought, only earned; cite: could only be won, never bought)",
+            "(it is called gold but is mostly silver; cite: It is not made of gold)",
+            "(at None of this diminishes the medal; the author pivots from what medals are made of to what they mean)",
+            "(it claims value lives in meaning, not material; earned by the deception and the recycled-medal evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["alloy → ____", "standardized → ____", "reclaimed → ____", "paradox → ____"],
+          "rows": 2,
+          "answers": [
+            "a material made by blending two or more metals",
+            "made the same everywhere by an agreed rule",
+            "taken back and put to use again",
+            "something that seems to contradict itself but is true"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says a solid gold medal would be heavy enough to strain the neck. What does this detail reveal about the gap between an award's symbolic value and its physical value?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(the honor matters more than the material; a truly gold medal would be impractical to wear)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A prize is only as valuable as the material it is made from. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

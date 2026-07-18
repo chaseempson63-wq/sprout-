@@ -1,0 +1,319 @@
+{
+  "key": "scientist",
+  "title": "The People Who Ask Why",
+  "blurb": "What a scientist really is, how the scientific method works, and the true stories of Marie Curie and the photograph that cracked the code of life.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The People Who Ask Why",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-scientist", "templateLabel": "The People Who Ask Why", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the scientist." },
+        {
+          "kind": "image",
+          "imageKey": "scientist",
+          "notes": ["Say it SY-en-tist", "A scientist asks lots of questions", "They test their ideas", "A lab coat keeps them clean", "A beaker holds liquid"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "A scientist is someone who wants to know how things work. Say it like this: SY-en-tist. A scientist asks a lot of questions. Why is the sky blue? What is inside a rock? A scientist looks closely. A scientist tries things to find out. When you ask why, you are being a scientist too."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the beakers in each row. Write how many in the box.",
+          "emoji": "🧪",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ask    test" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each tool to what it helps you see.",
+          "pairs": [
+            { "left": "telescope", "right": "stars" },
+            { "left": "microscope", "right": "germs" },
+            { "left": "beaker", "right": "liquid" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw yourself as a scientist. Give yourself a lab coat and one big question you want to answer.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The People Who Ask Why",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-scientist", "templateLabel": "The People Who Ask Why", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "scientist",
+          "notes": ["Scientists work in many places", "Some study space, some study bugs", "A careful guess is a hypothesis", "A test is an experiment", "Being wrong helps them learn"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Scientist Does",
+          "text": "A scientist is a person who tries to find out how the world works. Scientists do not just guess. They test. First a scientist asks a question. Then they make a careful guess. This guess is called a hypothesis. Next they do a test, called an experiment, to see if the guess was right. They watch what happens and write it down. Sometimes the guess is right. Sometimes it is wrong. Being wrong is fine. A wrong answer still teaches the scientist something new. Then they try again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a scientist try to find out?", "What is a careful guess called?", "What do scientists do when they are wrong?"],
+          "rows": 2,
+          "answers": ["how the world works", "a hypothesis", "they learn from it and try again"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["First a scientist asks a ____.", "A careful guess is called a ____.", "A test is called an ____.", "Being ____ still teaches you something."],
+          "wordBank": ["question", "hypothesis", "experiment", "wrong"],
+          "answers": ["question", "hypothesis", "experiment", "wrong"]
+        },
+        { "kind": "draw", "prompt": "Draw a scientist doing an experiment. Show what they are testing.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The People Who Ask Why",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-scientist", "templateLabel": "The People Who Ask Why", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "scientist",
+          "notes": ["Anyone can think like a scientist", "Change only one thing in a test", "One lucky result is not proof", "Write your numbers down", "Real science is slow and careful"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Scientist Thinks",
+          "text": "A scientist is not a kind of person. It is a way of thinking, and anyone can do it. Suppose you notice that one plant on the windowsill grows taller than the same plant in a dark corner. A scientist would not just say the sunny plant is lucky. A scientist would ask a question: does more sunlight make a plant grow taller? Next comes a careful guess, called a hypothesis: yes, more light means more growth. Then comes the important part, the experiment. You grow two plants of the same kind in the same soil, with the same water, and you change only one thing. One plant gets bright light. The other gets very little. You measure both every day and write the numbers down. After two weeks the sunny plant is much taller. Your test supports your guess. But a good scientist checks again with more plants, because one lucky result is not proof. Real science is careful, slow, and honest. It is less about being smart and more about testing your ideas instead of trusting them."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What question does the plant experiment test?",
+            "Why do the two plants get the same soil and the same water?",
+            "What does a good scientist do after the sunny plant grows taller?",
+            "Why do you think one lucky result is not enough to prove an idea?"
+          ],
+          "rows": 2,
+          "answers": [
+            "does more sunlight make a plant grow taller",
+            "so the only difference is the amount of light",
+            "checks again with more plants",
+            "(inference: one result could happen by chance)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Scientist Thinks", "The Tallest Plant in the World", "How to Paint a Window"],
+          "answers": ["How a Scientist Thinks"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A careful guess is called a ____.", "A fair test is called an ____.", "You ____ the plants every day and write it down."],
+          "wordBank": ["hypothesis", "experiment", "measure"],
+          "answers": ["hypothesis", "experiment", "measure"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: name a question you would like to test, and how you could test it fairly.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The People Who Ask Why",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-scientist", "templateLabel": "The People Who Ask Why", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "scientist",
+          "notes": ["Marie Curie was born in Poland in 1867", "She discovered polonium and radium", "She named the word radioactivity", "First person to win two Nobel Prizes", "Her notebooks are still radioactive today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Marie Curie and the Glowing Rocks",
+          "text": "More than a hundred years ago, a young woman named Maria Sklodowska left Poland for Paris, because the universities in her own country would not teach women. In France she studied physics and chemistry, and she changed her name to Marie. Marie Curie became curious about a strange kind of rock that gave off invisible rays all on its own. Nobody understood where the energy came from. Marie decided to find out. Working in a cold, leaky shed, she stirred huge pots of dark, muddy ore for years, boiling it down again and again. She was hunting for the tiny bit inside that made the rays. In the end she found not one but two new elements, materials never known before. She named one polonium, after Poland, and the other radium, because it glowed. She invented a word for the rays themselves: radioactivity. Marie Curie won the Nobel Prize, the top award in science, not once but twice, the first person ever to do so. But her discovery had a hidden danger. Nobody yet knew that the rays could harm the body. Marie carried glowing test tubes in her pockets and kept them by her bed because she loved their light. Years of that invisible radiation slowly made her sick, and it led to her death. Even now, her notebooks are so radioactive that they are kept in lead-lined boxes, and anyone who wants to read them must sign a form and wear protection."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did Marie leave Poland to study in Paris?",
+            "What were the two new elements she found called, and why those names?",
+            "Why are her notebooks still kept in lead-lined boxes?",
+            "The passage says nobody yet knew the rays could harm the body. How did that lead to Marie's illness?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the universities in Poland would not teach women",
+            "polonium after Poland, and radium because it glowed",
+            "(inference: they are still radioactive and could harm people)",
+            "(inference: she handled radioactive material for years with no protection)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A curious scientist discovered radioactivity and won two Nobel Prizes, but her discovery slowly harmed her",
+            "Poland has the best universities in the world",
+            "Test tubes should always be kept by your bed"
+          ],
+          "answers": ["A curious scientist discovered radioactivity and won two Nobel Prizes, but her discovery slowly harmed her"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["element → ____", "radioactivity → ____", "ore → ____"],
+          "rows": 1,
+          "answers": [
+            "a basic material that other things are made from",
+            "the invisible rays some materials give off on their own",
+            "rock with useful material hidden inside it"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: was it worth the danger for Marie Curie to keep studying radioactivity? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The People Who Ask Why",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-scientist", "templateLabel": "The People Who Ask Why", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "scientist",
+          "notes": ["Good scientists try to prove their own ideas wrong", "Evidence beats opinion", "A fair test changes one thing at a time", "Peer review means others check your work", "If nobody can repeat it, it does not count"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Scientists Try to Prove Themselves Wrong",
+          "text": "Most people, when they have an idea they like, look for reasons it is right. Scientists are trained to do the opposite. A good scientist takes a promising idea and attacks it, hunting for the one experiment that would prove it false. This sounds backward, but it is the secret engine of science. An idea that survives every honest attempt to break it is one you can start to trust. Here is why it matters. Our senses fool us easily. A stick looks bent in water. The sun seems to circle the Earth. For most of history, people trusted what seemed obvious and were often wrong. Science is a set of habits built to catch those mistakes before they spread. The first habit is evidence: do not accept a claim because a clever person said it, or because it feels true. Ask what the measurements show. The second habit is the fair test, the experiment that changes one thing at a time so you can tell what caused what. The third habit, and maybe the most important, is sharing. When a scientist thinks they have found something, they do not simply announce it. They write down exactly what they did, in enough detail that a stranger on the other side of the world can repeat it. Other scientists then try to get the same result. This checking by others is called peer review, and it is unglamorous, slow, and essential. If nobody else can reproduce your finding, it does not count, no matter how exciting it sounded. This is why science can admit it was wrong and improve, while a rumor just hardens. Ideas that once looked solid, that the Earth was the center of everything, that illness came from bad air, were overturned by better evidence, and science moved on. Being corrected is not a failure in science. It is the whole point. A scientist is not someone who knows all the answers. A scientist is someone who has agreed, in advance, to change their mind when the evidence says they must."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does a good scientist attack their own promising idea?",
+            "What is peer review, and why does the author call it essential? Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "According to the last sentence, what has a scientist agreed to do?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: science uses evidence, fair tests, and sharing to catch mistakes; being corrected is the point of it)",
+            "to find an experiment that would prove it false, so an idea that survives can be trusted",
+            "other scientists repeat your work to check it; quote: this checking by others is called peer review",
+            "(inform and persuade: it explains the habits of science and argues that being wrong is the whole point)",
+            "to change their mind when the evidence says they must"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["evidence → ____", "peer review → ____", "reproduce → ____", "overturned → ____"],
+          "rows": 1,
+          "answers": [
+            "facts and measurements that support or test a claim",
+            "the checking of a scientist's work by other scientists",
+            "to get the same result by repeating the test",
+            "shown to be wrong and replaced by a better idea"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says our senses fool us easily. Why does that make evidence more important than what feels true?",
+            "Why can science admit it was wrong and improve, while a rumor just hardens?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: feelings and senses can mislead, so tested facts are safer to trust)",
+            "(science tests and shares its claims so mistakes get caught; rumors are never checked)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is being proven wrong a failure or a success for a scientist? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The People Who Ask Why",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-scientist", "templateLabel": "The People Who Ask Why", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "scientist",
+          "notes": ["DNA carries the instructions for building you", "Rosalind Franklin took Photograph 51", "Watson and Crick built the double helix model in 1953", "The Nobel Prize is not given to people who have died", "Franklin's role was ignored for decades"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Photograph 51: The Picture That Cracked the Code of Life",
+          "text": "Inside almost every cell of your body sits a molecule that carries the full set of instructions for building you. We call it DNA. In the early 1950s, scientists knew DNA mattered, but nobody knew its shape, and shape, in chemistry, is everything. If you can see how a molecule is built, you can often work out what it does. So a quiet race began to find the structure of DNA, and the way it was won says as much about how science really works as it does about biology. At King's College London, a young chemist named Rosalind Franklin was one of the best in the world at a difficult technique called X-ray crystallography. You cannot photograph a molecule with an ordinary camera; it is far too small. Instead, you fire X-rays through it and record how they scatter. The scattered rays leave a pattern of spots and shadows, and from that pattern, with a great deal of mathematics, you can reconstruct the hidden shape that caused it. Franklin was meticulous. She spent months improving her samples and her equipment until she produced an image now known simply as Photograph 51. It showed a clean, X-shaped smear of spots, the unmistakable fingerprint of a helix, a spiral. Meanwhile, in Cambridge, James Watson and Francis Crick were chasing the same answer by a different route. Rather than photographing DNA, they were building models out of cardboard and wire, trying to guess a shape that fit all the known facts. What they lacked was hard evidence about the molecule's dimensions. Then Watson was shown Photograph 51, taken by Franklin, without her knowledge or permission. The image told him at once that DNA was a helix, and Franklin's careful measurements told him how wide it was and how its parts were spaced. Within weeks, Watson and Crick had their model: the now-famous double helix, two strands twisting around each other like a spiral ladder. In 1953 they published it, and it changed biology forever. Here the story grows uncomfortable. Franklin's own report was published in the same journal, but printed after theirs, which made her painstaking evidence look like a footnote that merely supported their brilliant idea. In truth, their idea leaned heavily on her work. Franklin never learned how her photograph had been used. She died of cancer in 1958, only thirty-seven years old. Four years later, Watson, Crick, and her colleague Maurice Wilkins shared the Nobel Prize. The rules do not allow the prize to be given to someone who has died, so Franklin could not have shared it. Yet for decades her name was left out of the story almost entirely, and only recently has her role been set straight. The double helix is a triumph of science: a beautiful answer, confirmed a thousand times over, that opened the door to modern medicine. But the path to it is a reminder that science is done by people, with all their ambition and unfairness. The evidence was real and the discovery was true. How that evidence was gathered, shared, and credited was a human choice, and not always a fair one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a full phrase from it.",
+            "Why does the passage say shape mattered so much in the search for DNA's structure? Cite the exact words the author uses.",
+            "How did Watson come to use Franklin's data? Quote the exact phrase describing how the photograph was shared.",
+            "Where does the passage shift from discovery to unfairness, and how does the author signal it?",
+            "The final sentence calls the crediting a human choice, and not always a fair one. Analyze what the author is arguing and whether the passage earns that claim."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the discovery of DNA's shape and the unfair credit)",
+            "(because a molecule's shape reveals what it does; cite: shape, in chemistry, is everything)",
+            "(he was shown Photograph 51; quote: without her knowledge or permission)",
+            "(at Here the story grows uncomfortable; a short blunt sentence marks the turn from triumph to unfairness)",
+            "(the author separates the true science from the unfair human behavior; earned by the Photo 51 and Nobel details)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["crystallography → ____", "helix → ____", "meticulous → ____", "dimensions → ____"],
+          "rows": 2,
+          "answers": [
+            "using scattered X-rays to work out a molecule's hidden shape",
+            "a spiral shape",
+            "very careful and exact",
+            "measurements such as width and spacing"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The Nobel rules do not allow a prize for someone who has died. Using the passage, explain why some people still see Franklin's exclusion from the story as unfair.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(her data was central to the discovery yet she got little credit while alive and for decades after)",
+            "(student question + a credible source type such as a biography or science historian)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: In science, only the final discovery matters, not who gathered the evidence or how. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

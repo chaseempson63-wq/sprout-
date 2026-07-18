@@ -1,0 +1,302 @@
+{
+  "key": "fairy",
+  "title": "The Fairy in the Bluebell",
+  "blurb": "The tiny winged folk of old stories, the real mushroom rings they were blamed for, and the photographs that fooled the world.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Fairy in the Bluebell",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-fairy", "templateLabel": "The Fairy in the Bluebell", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Wave hello to the little fairy." },
+        {
+          "kind": "image",
+          "imageKey": "fairy",
+          "notes": ["Fairies live in old stories", "People say they have wings", "Some are as small as a bug", "Fairy rings are rings of mushrooms"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a fairy. A fairy is tiny. It is smaller than your hand. In old stories, a fairy has thin wings like a bug. It can hide in a flower. It can sit on a leaf. When the wind blows, the fairy holds on tight. At night, the little fairy sleeps in the soft grass."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the flowers in each row. Write how many in the box.",
+          "emoji": "🌸",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "wing    tiny" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it belongs.",
+          "pairs": [
+            { "left": "fairy", "right": "flower" },
+            { "left": "fish", "right": "pond" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own fairy. Give it big sparkly wings.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Fairy in the Bluebell",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-fairy", "templateLabel": "The Fairy in the Bluebell", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "fairy",
+          "notes": ["Fairies are in stories all over the world", "Old tales say they are very small", "Some stories give them thin wings", "People once left them a bowl of milk"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Pip Wakes the Garden",
+          "text": "Every morning, a small fairy named Pip woke up inside a bluebell flower. Pip had wings as thin as glass. When the sun came up, the wings caught the light and turned pink and gold. Pip helped the garden wake up too. She tapped each closed flower so it would open. She woke the sleepy bees. In old stories, people left a little bowl of milk out at night to thank the fairies for their help. Pip liked those nights best of all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where did Pip wake up?", "What were Pip's wings as thin as?", "What did people leave out to thank the fairies?"],
+          "rows": 2,
+          "answers": ["inside a bluebell flower", "as thin as glass", "a little bowl of milk"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Pip slept inside a ____ flower.", "Her wings were as thin as ____.", "She tapped each ____ so it would open.", "People left out a bowl of ____."],
+          "wordBank": ["bluebell", "glass", "flower", "milk"],
+          "answers": ["bluebell", "glass", "flower", "milk"]
+        },
+        { "kind": "draw", "prompt": "Draw Pip waking up the garden. Add flowers and a few bees.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Fairy in the Bluebell",
+      "subtitle": "A reading and folklore sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-fairy", "templateLabel": "The Fairy in the Bluebell", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "fairy",
+          "notes": ["A fairy ring is a real circle of mushrooms", "Old stories blamed the rings on dancing fairies", "The real cause is a fungus underground", "Some rings are older and wider than a house"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Rings in the Grass",
+          "text": "Have you ever seen a circle of mushrooms in the grass? For hundreds of years, people had no idea what made them, so they made up a story. They said fairies had danced there all night in a ring, round and round, until the morning. When the fairies left, the ring of mushrooms was all that stayed behind. People called these circles fairy rings, and some were afraid to step inside one. We know the real answer now. A fairy ring is made by a fungus that grows under the ground. The fungus spreads out in a slow circle, feeding on the soil as it goes. Each year the circle grows a little wider. When the weather is damp, mushrooms pop up along the edge of the circle. Some fairy rings are tiny. Others are so old and so wide that they are bigger than a house. The dancing fairies were never real, but the rings are, and they are strange enough on their own."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did people long ago believe made fairy rings?",
+            "What really makes a fairy ring?",
+            "Why do you think some people were afraid to step inside a fairy ring?"
+          ],
+          "rows": 2,
+          "answers": [
+            "fairies dancing in a ring all night",
+            "a fungus growing in a slow circle under the ground",
+            "(inference: they believed the ring was magic or belonged to the fairies)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Rings in the Grass", "How to Grow Mushrooms to Eat", "The Biggest House in the Village"],
+          "answers": ["The Rings in the Grass"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A fairy ring is really made by a ____.", "Each year the circle grows a little ____.", "Long ago people said ____ made the rings by dancing."],
+          "wordBank": ["fungus", "wider", "fairies"],
+          "answers": ["fungus", "wider", "fairies"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is a fairy ring really made of, and why do you think people once told a story about fairies instead?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Fairy in the Bluebell",
+      "subtitle": "A reading and folklore sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-fairy", "templateLabel": "The Fairy in the Bluebell", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fairy",
+          "notes": ["Almost every country has its own fairy stories", "In Iceland they are called huldufolk, the hidden people", "Old tales say fairies cannot stand iron", "House fairies in England were called brownies"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Little People of Many Lands",
+          "text": "Almost every country in the world has stories about tiny magical people, and almost every country gives them a different name. In Ireland they were the good folk. In England small house fairies were called brownies, said to clean a home in secret while the family slept. In Scandinavia there were the huldufolk, the hidden people. The names change from place to place, but the idea repeats again and again: a small, secret people living just out of sight, in the woods, under hills, or beneath the floorboards. The old stories came with rules. People believed fairies could be helpful or dangerous, so they tried to stay on the good side of them. One common rule was about iron. Many stories said fairies hated iron and would not come near it, so a farmer might hang an iron horseshoe over a door to keep them out. Another rule was to be polite and never call them by their real name, which is why people used kind nicknames like the good folk. Some families left out a bowl of milk or a crust of bread at night as a small thank you. Why did so many faraway places invent such similar stories? No one is certain. Long ago, the world was dark at night and full of sounds no one could explain. A story about hidden people was one way to make sense of a noise in the woods, a missing tool, or a ring of mushrooms in the grass."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Name two places from the passage and what their fairies were called.",
+            "Why might a farmer hang an iron horseshoe over a door?",
+            "Why did people use nicknames like the good folk instead of a fairy's real name?",
+            "The passage says the world was dark at night and full of sounds no one could explain. How might that have helped fairy stories spread?"
+          ],
+          "rows": 2,
+          "answers": [
+            "Ireland (the good folk) and Scandinavia (the huldufolk); England (brownies) also works",
+            "old stories said fairies hated iron, so it would keep them away",
+            "to be polite and stay on the fairies' good side",
+            "(inference: strange sounds and events needed an explanation, and hidden people were an easy one)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Many cultures invented similar fairy stories, with rules, to explain a puzzling world",
+            "Iron horseshoes are the best way to decorate a farmhouse door",
+            "Fairies have been photographed many times in Ireland"
+          ],
+          "answers": ["Many cultures invented similar fairy stories, with rules, to explain a puzzling world"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["brownies → ____", "huldufolk → ____", "crust → ____"],
+          "rows": 1,
+          "answers": ["small house fairies said to clean a home in secret", "the hidden people of Scandinavian stories", "a hard outer piece of bread"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: pick one fairy rule from the passage and explain why you think people kept following it for so long.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Fairy in the Bluebell",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-fairy", "templateLabel": "The Fairy in the Bluebell", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fairy",
+          "notes": ["The Cottingley fairy photos were taken in 1917", "The photographers were two young cousins in England", "Arthur Conan Doyle, who wrote Sherlock Holmes, believed them", "In the 1980s the cousins admitted the fairies were paper cutouts"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Photographs That Fooled the World",
+          "text": "In the summer of 1917, in a village in England called Cottingley, two cousins borrowed a camera. Elsie Wright was sixteen. Frances Griffiths was nine. They walked down to the stream behind the house, and a little while later they came back with something astonishing: a photograph of Frances with four small winged fairies dancing in front of her. Over the next three years the girls produced five fairy photographs in all. The pictures might have stayed a family curiosity, but they reached the wrong, or perhaps the perfect, person. Sir Arthur Conan Doyle, the famous author who invented the sharp-eyed detective Sherlock Holmes, saw the photographs and believed them completely. In 1920 he published them in a popular magazine along with an article arguing that fairies were real. If the man who created the world's most logical detective said so, many readers thought, then surely it must be true. For more than sixty years the Cottingley fairies were argued over. Then, in the early 1980s, the two women, now elderly, finally told the truth. The fairies were paper cutouts. Elsie had drawn them, copied in part from a children's book, and the cousins had held them up with hatpins stuck into the ground. They had never expected the joke to travel so far, and once a famous man had staked his name on it, they felt too embarrassed to confess. Even at the end, though, Frances insisted that one of the five photographs was genuine, and that they truly had seen fairies by the stream. That small claim keeps a door open, which may be exactly why the story refuses to die. A hoax that outlived the joke, and nearly outlived the jokers, has a strange magic all its own."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why did so many people believe the photographs? Give the reason the passage offers.",
+            "Find and quote the exact words the passage uses to say what the fairies were really made of.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to one detail that supports your answer.",
+            "Why do you think the author ends with Frances still insisting one photo was real?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the 1917 photos, Doyle's belief, and the 1980s confession)",
+            "a famous, logical author (Conan Doyle) said they were real, so readers trusted him",
+            "quote: paper cutouts",
+            "(inform, with some entertaining tone: it lays out dates and events but tells them like a story)",
+            "(inference: it leaves a small doubt open, which is why the story still fascinates people)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["astonishing → ____", "genuine → ____", "hoax → ____"],
+          "rows": 1,
+          "answers": ["so surprising it is hard to believe", "real and not faked", "a trick meant to fool people into believing something false"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might a clever, educated man like Conan Doyle have been fooled by simple paper fairies?",
+            "The cousins felt too embarrassed to confess for decades. What does that tell you about how hard it is to admit a lie once other people believe it?"
+          ],
+          "rows": 3,
+          "answers": ["(inference: he wanted to believe in fairies, and wanting to believe can outweigh evidence)", "(opinion, supported by the passage)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was the Cottingley hoax a harmless joke or a real deception? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Fairy in the Bluebell",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-fairy", "templateLabel": "The Fairy in the Bluebell", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "fairy",
+          "notes": ["Fairy belief appears across cultures for over a thousand years", "In Iceland, road crews have rerouted work around huldufolk rocks", "The changeling story once explained sudden childhood illness", "Fairy rings are caused by a fungus, not by dancing", "The Cottingley photographs were faked with paper and hatpins"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why We Keep Believing in Fairies",
+          "text": "No one has ever caught a fairy, and yet fairies have never quite gone away. For at least a thousand years, across cultures that never met, people have told stories about a small, hidden race living alongside us, just beyond the edge of the firelight. The Irish called them the good folk. In Iceland they were the huldufolk, the hidden people, and belief in them was strong enough that road crews have, in living memory, rerouted construction to avoid disturbing rocks said to be their homes. The costumes change and the names change, but the character stays the same: something small, secret, and easily offended, sharing our world without quite belonging to it. Where did such a specific idea come from, in so many places at once? Part of the answer is that the old world was genuinely hard to explain. Milk soured overnight. Tools vanished and reappeared. A healthy child could sicken without warning, and grieving parents sometimes told themselves the fairies had swapped their baby for a changeling, a fairy child left in its place. It was a cruel comfort, but it was a comfort: a story that turned random misfortune into something with a cause and, sometimes, a cure. Even the strange rings of mushrooms that appear in fields had an explanation ready made. People said fairies had danced there in a circle through the night. The real cause, a fungus spreading outward underground and pushing up mushrooms at its edge, would not be understood for centuries. Until then, the dancing fairies were as good an answer as any. Belief also survived because it was useful, and because it was guarded by rules. Fairies were said to hate iron, so a horseshoe over the door became a small shield against bad luck. They were not to be named directly, so people called them the good folk to stay on their good side. A bowl of milk left out at night was cheap insurance. These customs asked little and promised protection, and habits like that are passed down long after anyone remembers exactly why. And then there is the simplest reason of all: we want to believe. The story of the Cottingley fairies proves how much. In 1917 two English cousins photographed themselves with paper fairies held up on hatpins, a childish prank. Yet Sir Arthur Conan Doyle, the brilliant man who invented Sherlock Holmes, championed the photographs as real, and thousands of readers agreed with him. The pictures were obvious fakes, and it did not matter. People believed because the world is a little more wonderful with fairies in it than without them. That wish is the true magic in every fairy story, and it is the one part no scientist has ever explained away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the author's main argument in ONE sentence without reusing a phrase from the passage.",
+            "Explain the changeling belief and why the author calls it a comfort. Quote the fuller phrase the passage uses.",
+            "How does the author explain fairy rings scientifically? Quote the exact explanation.",
+            "Identify the structure of the essay: how does the final paragraph differ from the ones before it, and how does the author signal the shift?",
+            "The last sentence claims the wish to believe is the one part no scientist has ever explained away. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: people keep believing in fairies because the stories once explained a confusing world and still satisfy a wish to believe)",
+            "(parents blamed a fairy swap for a child's illness; it gave a random loss a cause; cite: a cruel comfort, but it was a comfort)",
+            "(cite: a fungus spreading outward underground and pushing up mushrooms at its edge)",
+            "(the earlier paragraphs give practical reasons; the last turns to emotion; signaled by And then there is the simplest reason of all)",
+            "(it shifts from historical explanation to a claim about human desire; supported by the Cottingley example where wanting to believe beat obvious evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["huldufolk → ____", "changeling → ____", "championed → ____", "customs → ____"],
+          "rows": 2,
+          "answers": [
+            "the hidden people of Icelandic folklore",
+            "a fairy child said to be left in place of a stolen human baby",
+            "publicly supported and argued for something",
+            "traditional habits or practices passed down over time"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author argues fairy stories helped people explain what they could not understand. Name one modern thing people still explain with stories rather than evidence, and say why.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(opinion with reasoning)", "(student question plus a credible source type, such as a folklore historian or a mycologist)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: People only believed in fairies because they were not yet educated enough to know better. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

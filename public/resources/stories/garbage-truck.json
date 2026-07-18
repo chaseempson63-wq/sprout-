@@ -1,0 +1,298 @@
+{
+  "key": "garbage-truck",
+  "title": "The Truck That Eats Our Trash",
+  "blurb": "The big machine that grabs your bin, crushes the trash, and keeps the whole street clean.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Truck That Eats Our Trash",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-garbage-truck", "templateLabel": "The Truck That Eats Our Trash", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the garbage truck." },
+        {
+          "kind": "image",
+          "imageKey": "garbage-truck",
+          "notes": ["It has a big arm", "It grabs the bin", "It squishes the trash", "It has strong wheels"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a garbage truck. It comes down your street. It stops at every house. A big arm reaches out. The arm grabs the bin. Up, up, up it goes. The bin tips over. All the trash falls in. Then the truck squishes it down. Now there is room for more. The truck drives to the next house. Beep, beep, back it goes."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bins in each row. Write how many in the box.",
+          "emoji": "🗑️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "truck    bin" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "garbage truck", "right": "trash" },
+            { "left": "fire truck", "right": "fire" },
+            { "left": "school bus", "right": "kids" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own garbage truck. Add a big arm and some wheels.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Truck That Eats Our Trash",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-garbage-truck", "templateLabel": "The Truck That Eats Our Trash", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "garbage-truck",
+          "notes": ["A strong arm lifts the bin", "A flat plate squishes the trash", "One truck holds a lot", "It drives a set route", "It dumps at a landfill"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Truck That Eats Our Trash",
+          "text": "A garbage truck has a hard job. Every week it drives down your street. It stops at each house where a bin waits by the curb. On some trucks, a strong arm reaches out and grabs the bin. The arm lifts it high and tips the trash inside. Then a flat metal plate pushes the trash back and squishes it down. This makes room for more. One truck can hold the trash from hundreds of homes. When the truck is full, it drives to a big place where all the trash is dumped. Then it starts its route again."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where does the bin wait?", "What lifts the bin up?", "What does the truck do when it is full?"],
+          "rows": 2,
+          "answers": ["by the curb", "a strong arm", "it drives to dump the trash"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The bin waits by the ____.", "A strong ____ grabs the bin.", "A flat plate ____ the trash down.", "The truck follows its ____."],
+          "wordBank": ["curb", "arm", "squishes", "route"],
+          "answers": ["curb", "arm", "squishes", "route"]
+        },
+        { "kind": "draw", "prompt": "Draw the garbage truck on your street. Add houses and bins.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Truck That Eats Our Trash",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-garbage-truck", "templateLabel": "The Truck That Eats Our Trash", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "garbage-truck",
+          "notes": ["An arm can lift the bin by itself", "The packer blade squishes the trash", "Squishing is called compacting", "One truck can clear 800 homes", "The arm is moved by hydraulics"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Garbage Truck Works",
+          "text": "Have you ever watched a garbage truck lift a bin all by itself? Many trucks today are called automated side loaders. The driver never has to leave the seat. A metal arm swings out from the side of the truck. It wraps around the bin, lifts it up over the truck, and tips the trash into the top. Then the arm sets the empty bin back down on the curb. Inside the truck, the real trick happens. A strong metal blade called a packer pushes the trash toward the back and presses it hard. This is called compacting. Squishing the trash means one truck can carry far more than a truck with no packer. A single truck might collect the trash from eight hundred homes before it fills up. All this pushing and lifting takes power. The arm and the packer are moved by hydraulics, which use pressed fluid to create a very strong push."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is a truck called when its arm lifts the bin by itself?",
+            "What does the packer blade do inside the truck?",
+            "Why do you think compacting the trash is so useful?"
+          ],
+          "rows": 2,
+          "answers": ["an automated side loader", "it presses the trash back and squishes it down", "(inference: squishing makes room, so the truck holds more and makes fewer trips)"]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How a Garbage Truck Works", "The Fastest Race Car Ever", "A Trip to the Beach"],
+          "answers": ["How a Garbage Truck Works"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The metal blade that squishes the trash is called a ____.", "Pressing the trash down is called ____.", "The arm is moved by ____."],
+          "wordBank": ["packer", "compacting", "hydraulics"],
+          "answers": ["packer", "compacting", "hydraulics"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the most useful part of a garbage truck, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Truck That Eats Our Trash",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-garbage-truck", "templateLabel": "The Truck That Eats Our Trash", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "garbage-truck",
+          "notes": ["The steel box that holds trash is the hopper", "Compaction crushes trash into a dense block", "Fewer trips means less fuel burned", "Many trucks run on compressed natural gas", "Some fuel is captured from landfills"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Math Inside a Garbage Truck",
+          "text": "A garbage truck looks simple from the sidewalk. A truck rolls up, a bin goes up, trash goes in, and the truck rolls on. What you cannot see is that the machine is solving a hard math problem: how to move an enormous amount of waste using as few trips as possible. The answer is compaction. Behind the driver sits a large steel box called the hopper. A heavy blade sweeps through the hopper again and again, crushing loose trash into a dense block. Trash that filled a whole bin is squeezed until it takes up only a fraction of that space. Because of this squeezing, one truck can swallow the waste of hundreds of homes before it has to drive to the landfill and empty out. That trip to the landfill is the reason compaction matters so much. A garbage truck burns fuel on every mile. The fewer times it must drive across town to dump its load, the less fuel it uses and the less it costs. A truck that could not compact its load would fill up in a few streets and spend all day driving back and forth. Many modern trucks now run on compressed natural gas instead of diesel. Some of that gas is even captured from landfills, where rotting trash naturally releases it. In a neat loop, the same dumps that receive the trash can help fuel the trucks that bring it. The humble garbage truck, it turns out, is a carefully engineered answer to one of a city's oldest problems."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What is the hard math problem the passage says the truck solves?",
+            "Explain how compaction lets a truck make fewer trips.",
+            "The passage calls the fuel loop neat. What is the loop, and why is it clever?",
+            "Why would a truck that could not compact its load waste the whole day?"
+          ],
+          "rows": 2,
+          "answers": [
+            "how to move a huge amount of waste using as few trips as possible",
+            "it crushes trash into a dense block so far more fits before the truck is full",
+            "(gas captured from landfills fuels the trucks that carry trash to those same landfills)",
+            "(inference: it would fill up after a few streets and spend all day driving back and forth to dump)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A garbage truck is carefully engineered to move huge amounts of waste with as few trips as possible",
+            "Garbage trucks are the fastest vehicles on the road",
+            "Most trash is thrown into the ocean"
+          ],
+          "answers": ["A garbage truck is carefully engineered to move huge amounts of waste with as few trips as possible"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["compaction → ____", "hopper → ____", "landfill → ____"],
+          "rows": 1,
+          "answers": ["crushing loose trash into a smaller, denser block", "the large steel box on the truck that holds the trash", "the big site where a city's trash is dumped"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: should more cities pay for trucks that run on natural gas instead of diesel? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Truck That Eats Our Trash",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-garbage-truck", "templateLabel": "The Truck That Eats Our Trash", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "garbage-truck",
+          "notes": ["Automated side loader: arm lifts the bin, driver stays seated", "Hydraulics push fluid under great pressure", "The packer blade compacts the load", "First hydraulic compactor: late 1930s", "Many trucks now run on compressed natural gas"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Quiet Machine That Keeps the Street Clean",
+          "text": "To a child on the curb, a garbage truck is loud, slow, and a little bit thrilling. To a city, it is one of the most important machines ever built. Before trucks like it existed, waste piled up in streets and alleys, and the diseases that came with it killed people by the thousands. The modern garbage truck is the quiet reason our streets stay clean enough to live in. The machine has two great tricks. The first is lifting. On an automated side loader, a hydraulic arm reaches out from the truck, closes around a rolling bin, hoists it overhead, and tips its contents into a hopper, all while the driver stays seated. Hydraulics make this possible: fluid squeezed under enormous pressure can push with a force no human arm could match. The second trick is compaction, and it is the one that truly matters. A steel blade inside the truck sweeps back and forth, crushing loose trash into a solid, heavy mass. A truck that packs its load can carry several times more than one that does not. A single compactor truck might empty the bins of eight hundred homes before it needs to visit the landfill. Every trip it saves is fuel not burned and money not spent. The garbage truck has a long history. Early collection was done by hand, with workers heaving bins onto open horse carts. Motor trucks arrived in the early nineteen hundreds, and in the late nineteen thirties the first hydraulic compactor changed everything, letting a single crew clear far more of a route in a day. Modern trucks have added another improvement: many now burn compressed natural gas rather than diesel, which is cleaner, and some of that gas is even harvested from the landfills where the trash ends up. It is easy to overlook a garbage truck, or to hear only the noise it makes at dawn. But look again. It is a rolling machine designed to solve one stubborn problem, the endless waste a city produces, and it solves that problem so well that most people never have to think about it at all."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What are the two great tricks the passage says the machine has?",
+            "Explain what compaction does and why the passage calls it the trick that truly matters. Quote a phrase from the text.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the author mean by saying the truck works so well that people never have to think about it?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering lifting + compaction + why the truck matters to a city)",
+            "lifting the bin with a hydraulic arm, and compacting the trash with a steel blade",
+            "it crushes trash so the truck carries several times more; quote: crushing loose trash into a solid, heavy mass",
+            "(inform, with detail: it explains how the truck works and gives history; some persuasive tone praising it)",
+            "(it does its job so completely that the street stays clean and the work stays invisible)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["hydraulic → ____", "compaction → ____", "hopper → ____", "harvested → ____"],
+          "rows": 1,
+          "answers": ["powered by fluid pushed under pressure", "crushing trash into a smaller, denser mass", "the box on the truck where the trash is stored", "collected or gathered to be used"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says diseases from waste once killed people by the thousands. Why does that make the garbage truck more than just a convenience?",
+            "Why might a city choose trucks that cost more to buy but run on natural gas?"
+          ],
+          "rows": 3,
+          "answers": ["(it protects public health, not just tidiness)", "(inference: cleaner air and lower fuel cost over time, especially if fuel comes from landfills)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: are the workers and machines that handle a city's trash valued enough? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Truck That Eats Our Trash",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-garbage-truck", "templateLabel": "The Truck That Eats Our Trash", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "garbage-truck",
+          "notes": ["Compaction is the truck's central invention", "Hydraulics power both the arm and the packer", "Hydraulic compaction arrived in the late 1930s", "Modern trucks shift from diesel to natural gas", "Some fuel is captured from landfill gas"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Made Cities Possible",
+          "text": "Of all the machines that pass your house, none does a more thankless job than the garbage truck. It arrives before most people are awake, does something unglamorous with the week's waste, and vanishes. Yet the modern city could not exist without it. For most of human history, waste was simply thrown into the street, and the filth bred rats, flies, and the epidemics they carried. The garbage truck is a direct answer to that ancient danger, and understanding how it works is a small lesson in how engineering quietly shapes daily life. Begin with the problem the machine has to solve. A single household produces a surprising volume of waste each week, and a city contains hundreds of thousands of households. Collecting all of it would be impossible if each truck could carry only what fit loosely inside. The garbage truck's central invention is compaction. A heavy steel blade, driven by hydraulics, sweeps repeatedly through the storage area and crushes loose trash into a dense block. A packing truck can carry several times the load of one without a packer, which means far fewer trips to the landfill. Fewer trips mean less fuel, lower cost, and cleaner air. Compaction is not a flashy feature, but it is the reason the whole system is affordable. The lifting is what children notice. On an automated side loader, a hydraulic arm extends from the body of the truck, grips a wheeled cart, raises it above the hopper, and empties it, all without the driver leaving the cab. Hydraulics are the key to both the arm and the packer. By pushing fluid through narrow channels under great pressure, a small engine can generate a force strong enough to bend metal, yet precise enough to set an empty bin gently back on the curb. The design did not appear overnight. The earliest collection was done by hand, with laborers lifting bins onto open carts. Motorized trucks appeared in the early twentieth century, but they were still just moving boxes. The turning point came in the late nineteen thirties, when engineers fitted trucks with hydraulic compaction. Suddenly a single crew could clear a route that once took several, and the modern sanitation system became possible. More recent trucks have shifted from diesel to compressed natural gas, which burns cleaner, and in an elegant twist, some of that gas is captured from the very landfills where the trash is buried. There is a quiet lesson in all of this. We tend to celebrate the machines we choose to use, the phones and the cars, and to ignore the ones that serve us whether we notice them or not. The garbage truck belongs to the second group. It is loud, slow, and easy to resent at six in the morning. It is also one of the reasons a city of millions does not drown in its own waste. The measure of good engineering is not how much attention it demands, but how much it lets us forget."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Why does the passage call compaction the garbage truck's central invention rather than the lifting arm? Cite the evidence.",
+            "Explain how hydraulics can be both strong enough to bend metal and gentle enough to place a bin. Quote the phrase the passage uses.",
+            "Identify the shift in the passage: where does it move from how the truck works to what it means, and how does the author signal it?",
+            "The final sentence says good engineering lets us forget. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary of how the garbage truck protects cities by compacting and moving waste)",
+            "(compaction makes the whole system affordable; cite: it is the reason the whole system is affordable)",
+            "(pressurized fluid multiplies force with control; quote: strong enough to bend metal, yet precise enough to set an empty bin gently back on the curb)",
+            "(at There is a quiet lesson in all of this; the author pivots from mechanics to a reflection on unnoticed machines)",
+            "(it reframes the truck's invisibility as a mark of success; earned through the earlier facts about compaction, history, and public health)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["thankless → ____", "compaction → ____", "sanitation → ____", "unglamorous → ____"],
+          "rows": 2,
+          "answers": [
+            "a job that earns little thanks or notice",
+            "crushing loose material into a smaller, denser mass",
+            "the systems that keep a place clean and free of waste and disease",
+            "plain and unexciting, not showy"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage links early waste in the streets to epidemics. Explain why sanitation is a public-health issue, not just a matter of tidiness.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(uncollected waste breeds pests and disease that spread through a whole population)", "(student question + a credible source type, such as a city sanitation department or engineering text)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The most important machines are the ones we never think about. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

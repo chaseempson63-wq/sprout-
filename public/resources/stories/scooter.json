@@ -1,0 +1,304 @@
+{
+  "key": "scooter",
+  "title": "The Little Board on Wheels",
+  "blurb": "The push scooter turns one kick into a long glide, using nothing but your leg and some clever wheels.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Little Board on Wheels",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-scooter", "templateLabel": "The Little Board on Wheels", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Point to the wheels on the scooter." },
+        {
+          "kind": "image",
+          "imageKey": "scooter",
+          "notes": ["It has two wheels", "You stand on the deck", "You push with one foot", "It has handlebars to hold"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a scooter. It has two wheels. It has a flat part called the deck. You stand on the deck. You hold the handlebar with your hands. Push the ground with one foot. Push, push, push. Now you roll. To stop, you press the back with your foot. A scooter is fun. Away you go."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the wheels in each row. Write how many in the box.",
+          "emoji": "🛞",
+          "items": ["2", "4", "3", "2"],
+          "answers": ["2", "4", "3", "2"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ride    roll" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "scooter", "right": "wheels" },
+            { "left": "bird", "right": "wings" },
+            { "left": "boat", "right": "water" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own scooter. Give it two round wheels.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Little Board on Wheels",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-scooter", "templateLabel": "The Little Board on Wheels", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "scooter",
+          "notes": ["The flat part is the deck", "You steer with the handlebar", "A kick scooter needs no fuel", "The brake is over the back wheel"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Little Board on Wheels",
+          "text": "A scooter looks simple, but it is clever. It has two wheels, a deck to stand on, and a handlebar to steer. To go, you put one foot on the deck. You push the ground with your other foot. Each push sends you forward. When you want to turn, you lean and move the handlebar. Most scooters have a brake over the back wheel. You press it with your foot to slow down. A kick scooter needs no fuel and no battery. Your own legs do all the work."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many wheels does a scooter have?", "What do you push to make it go?", "What do you press to slow down?"],
+          "rows": 2,
+          "answers": ["two wheels", "the ground with your foot", "the brake over the back wheel"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["You stand on the ____.", "You hold the ____ to steer.", "You push the ground with one ____.", "A kick scooter needs no ____."],
+          "wordBank": ["deck", "handlebar", "foot", "fuel"],
+          "answers": ["deck", "handlebar", "foot", "fuel"]
+        },
+        { "kind": "draw", "prompt": "Draw yourself riding a scooter down a path. Add some trees.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Little Board on Wheels",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-scooter", "templateLabel": "The Little Board on Wheels", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "scooter",
+          "notes": ["To scoot means to go quickly", "Early scooters were homemade from wood", "Bearings let the wheels spin freely", "The folding scooter was a craze around 2000"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Push, a Long Ride",
+          "text": "People have ridden scooters for more than a hundred years. Long ago, children built their own. They nailed a wooden crate to a plank, added roller skate wheels, and pushed off down the street. Those early scooters were heavy and loud. In the 1990s, inventors made a new kind. It was built from light metal, and it folded up small enough to carry in a bag. Around the year 2000, this folding scooter became a craze. Kids all over the world wanted one. A scooter works because of its wheels. Inside each wheel sit tiny metal balls called bearings. The bearings let the wheel spin freely, with almost no rubbing. When you push the ground, you move forward. When you stop pushing, the scooter keeps rolling on its own for a while. That is why one good push can carry you a long way."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did children use to build early scooters?",
+            "What are the tiny metal balls inside a wheel called?",
+            "What happens after you stop pushing?",
+            "Why do you think the folding scooter became so popular?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a wooden crate, a plank, and roller skate wheels",
+            "bearings",
+            "the scooter keeps rolling on its own for a while",
+            "(inference: it was light, folded small, and was easy and fun to ride)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["One Push, a Long Ride", "How to Build a Wooden Boat", "The Fastest Car in the World"],
+          "answers": ["One Push, a Long Ride"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Inside each wheel sit tiny metal balls called ____.", "The new scooter was light and it ____ up small.", "Around the year 2000 the scooter became a ____."],
+          "wordBank": ["bearings", "folded", "craze"],
+          "answers": ["bearings", "folded", "craze"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would you like most about riding a scooter, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Little Board on Wheels",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-scooter", "templateLabel": "The Little Board on Wheels", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "scooter",
+          "notes": ["Each kick uses Newton's third law", "Momentum keeps you rolling", "Friction slows you down", "Bearings cut the rubbing inside the wheels"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Science Hidden in a Kick",
+          "text": "Riding a scooter feels easy, but a lot of science is hidden in every push. When you press your foot against the ground, the ground pushes back against you with an equal force. That backward push on the ground becomes a forward push on you. It is the same rule that moves a swimmer through water or a rocket through the sky: push on something, and it pushes you the other way. Once you are moving, a property called momentum takes over. Momentum is the tendency of a moving object to keep moving. Your scooter would roll forever if nothing slowed it down. Something always does. The wheels rub against the ground, the air pushes against your body, and the bearings inside the wheels are not perfectly smooth. Together these forces are called friction, and friction is what forces you to push again and again to keep your speed. Balance is the third piece. A scooter has a narrow deck, so your weight must stay lined up above the wheels. Lean too far to one side and gravity pulls you down. Good riders make tiny corrections without even thinking about it, shifting their weight the way a tightrope walker does. Steering works partly by turning the handlebar and partly by leaning, and skilled riders lean into a turn to carve a smooth curve rather than a sharp, wobbly one."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "When you push the ground, why do you move forward?",
+            "What is momentum, in your own words?",
+            "Name two things that create friction on a scooter.",
+            "Why do you think a scooter is easier to balance while it is moving than while it is stopped?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the ground pushes back on you with an equal, opposite force",
+            "(the tendency of a moving object to keep moving)",
+            "the wheels rubbing the ground and the air pushing on your body",
+            "(inference: moving wheels help keep the scooter steady and upright)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A simple scooter ride is really the work of forces like push, momentum, friction, and balance",
+            "Scooters are the fastest way to cross any city",
+            "Only grown-ups can learn to ride a scooter safely"
+          ],
+          "answers": ["A simple scooter ride is really the work of forces like push, momentum, friction, and balance"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["momentum → ____", "friction → ____", "balance → ____"],
+          "rows": 1,
+          "answers": ["the tendency of a moving thing to keep moving", "forces that rub and slow a moving object", "keeping your weight lined up so you do not fall"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how one kick turns into a long ride. Use the words push, momentum, and friction.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Little Board on Wheels",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-scooter", "templateLabel": "The Little Board on Wheels", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "scooter",
+          "notes": ["The word scooter comes from scoot", "Modern folding scooters are aluminum", "Electric scooters arrived in the 2010s", "Ball bearings shrink friction", "Rental scooters fill many cities now"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Keeps Being Reinvented",
+          "text": "Few machines are as simple as a kick scooter, and few have been reinvented as many times. Its ancestor was a homemade toy. In the early twentieth century, city children fastened roller skate wheels to a wooden board and a crate, stood on top, and shoved themselves along the sidewalk. These contraptions were rough and short lived, but they carried the whole idea: a deck to stand on, wheels to roll on, and a handle to steer. The scooter most people picture today arrived much later. In the 1990s, engineers in Europe designed a compact scooter made from aircraft aluminum. It was so light a child could lift it with one hand, and it folded flat enough to slide into a school bag. Around the year 2000 it exploded into a worldwide craze, selling in the millions within months. For a while it seemed like every kid on every street had one. Underneath the fun sits real physics. A scooter turns human effort into motion through a chain of forces. Each kick pushes backward on the ground, and by Newton's third law the ground pushes the rider forward. Ball bearings in the wheels cut friction to almost nothing, so a single strong push glides a surprising distance. Momentum keeps the rider moving between kicks, while friction and air resistance steadily bleed that speed away, which is why the legs never truly get to rest. The story did not stop there. In the 2010s the electric scooter appeared, trading the kicking foot for a small motor and a battery. Rental companies scattered them across city streets by the thousand, and suddenly the scooter was not just a toy but a way for adults to cross a city. The humble board on wheels had grown up, even as the kick scooter it came from stayed exactly as simple, and exactly as useful, as ever."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What made the 1990s scooter different from its homemade ancestor? Quote a phrase from the passage.",
+            "According to the passage, what job do ball bearings do?",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "What does the last sentence suggest about the kick scooter, even after the electric version arrived?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the scooter's simple design, its reinventions, and its physics)",
+            "it was light aluminum and folded small; quote: made from aircraft aluminum",
+            "they cut friction to almost nothing so one push glides a long way",
+            "(inform: it defines forces and gives dated facts; some lively wording entertains)",
+            "(that the kick scooter stayed just as simple and useful as ever)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["contraptions → ____", "compact → ____", "air resistance → ____", "craze → ____"],
+          "rows": 1,
+          "answers": ["odd homemade machines", "small and neatly built", "the pushing force of air against a moving rider", "a sudden burst of popularity"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might a machine as simple as a scooter keep getting reinvented instead of replaced?",
+            "The electric scooter added a motor and battery. Name one thing that improves and one thing that gets more complicated."
+          ],
+          "rows": 3,
+          "answers": ["(its core idea works so well that people improve it rather than start over)", "(improves: less effort to ride; harder: charging, weight, and repairs)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: for getting around your neighborhood, is a kick scooter or an electric scooter the better choice? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Little Board on Wheels",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-scooter", "templateLabel": "The Little Board on Wheels", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "scooter",
+          "notes": ["Kick scooters are fully human-powered", "Angular momentum steadies the spinning wheels", "Center of gravity must stay above the deck", "1990s aluminum design sparked a worldwide craze", "Electric versions added a motor and battery"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Honest Machine",
+          "text": "A kick scooter is one of the most honest machines a person can ride. There is no engine to hide behind, no fuel gauge, no software. What you put in with your leg is what you get out in speed, and every part of the ride obeys plain, visible physics. That honesty is exactly why the scooter is worth a closer look. Consider how it moves. Motion begins with a push, and that push is governed by Newton's third law: for every action there is an equal and opposite reaction. When the rider's foot presses backward against the pavement, the pavement presses forward against the rider with the same strength. The ground, in effect, throws you ahead. Between kicks, the scooter coasts on momentum, the stored motion of a mass already moving. If the world were frictionless, one push would carry a rider onward without end. It is not, so it does not. Friction lives in three places at once: where the wheels meet the road, where the air meets the rider, and inside the wheel hubs themselves. To fight that last source, engineers pack the wheels with ball bearings, rings of hardened steel spheres that turn sliding contact into rolling contact and shrink the friction to a whisper. The quality of those bearings, more than almost anything else, decides how far a single kick will carry you. Balance is the quieter miracle. A scooter's deck is narrow, so the rider's center of gravity must hover in a thin column above the wheels. Standing still, this is nearly impossible, which is why a stopped scooter tips over. In motion, it becomes easy, because a rolling wheel resists changes to the direction it spins, a property called angular momentum that steadies bicycles and scooters alike. The rider steers with a blend of turning the bar and leaning the body, and the faster the ride, the more the lean does the work. The scooter's history mirrors its mechanics: simple ideas, refined again and again. Early versions were homemade, roller skate wheels bolted to a plank. In the 1990s designers rebuilt the idea in lightweight aluminum, small enough to fold into a bag, and the world bought them by the million. In the 2010s a motor and battery were added, and the electric scooter turned a child's toy into adult transport that now fills city streets. Through every version, the core has not changed. Stand on the deck, hold the bar, push the earth away, and let momentum do the rest. Few machines ask so little and explain so much."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The author calls the scooter an honest machine. Explain what that means and cite the evidence.",
+            "Explain how Newton's third law applies to a scooter. Quote the phrase the author uses to describe the effect.",
+            "Identify how the passage is organized. What does the author cover after explaining motion, and how does that order help the reader?",
+            "The passage ends with the line that few machines ask so little and explain so much. Analyze what that closing sentence is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary of the scooter's physics and history)",
+            "(nothing is hidden; output matches effort; cite: no engine to hide behind, no fuel gauge, no software)",
+            "(the foot pushes back on the ground and the ground pushes the rider forward; quote: The ground, in effect, throws you ahead)",
+            "(it moves from motion to friction to balance to history; building from a single kick to the whole machine)",
+            "(it praises the scooter as simple yet rich in physics; earned by the layered explanation that came before)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["frictionless → ____", "hubs → ____", "angular momentum → ____", "center of gravity → ____"],
+          "rows": 2,
+          "answers": [
+            "having no friction at all",
+            "the central parts of the wheels where they turn",
+            "the tendency of a spinning wheel to keep its direction of spin",
+            "the point where an object's weight is balanced"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the quality of the bearings decides how far a single kick carries you. Explain why smoother bearings would let a rider travel farther per push.",
+            "Write a question this passage does not answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(less friction inside the wheel means less energy lost, so momentum carries the rider longer)", "(student question + a credible source type, such as an engineering text or a manufacturer)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The kick scooter is a better machine than the electric scooter precisely because it is simpler. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

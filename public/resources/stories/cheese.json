@@ -1,0 +1,317 @@
+{
+  "key": "cheese",
+  "title": "The Cheese With Holes You Can See Through",
+  "blurb": "How milk becomes cheese, and why the holes in Swiss cheese are called eyes.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Cheese With Holes You Can See Through",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-cheese", "templateLabel": "The Cheese With Holes You Can See Through", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Point to the holes in the cheese." },
+        {
+          "kind": "image",
+          "imageKey": "cheese",
+          "notes": ["Cheese is made from milk", "The holes are called eyes", "Cheese can be soft or hard", "Cheese is a very old food"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is cheese. Cheese is made from milk. Milk comes from cows. Look at the holes. The holes have a funny name. They are called eyes. Cheese can be soft or hard. It can be white or yellow. Many people love to eat it. Do you like cheese?"
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the holes in each row. Write how many in the box.",
+          "emoji": "⚪",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "milk    cheese" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to the food it gives us.",
+          "pairs": [
+            { "left": "cow", "right": "milk" },
+            { "left": "hen", "right": "egg" },
+            { "left": "bee", "right": "honey" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big piece of cheese. Give it some round holes.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Cheese With Holes You Can See Through",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-cheese", "templateLabel": "The Cheese With Holes You Can See Through", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "cheese",
+          "notes": ["Cheese starts as milk", "The soft lumps are called curds", "The holes are called eyes", "Gas bubbles make the holes", "Cheese can take years to be ready"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How Cheese Gets Its Holes",
+          "text": "Cheese begins as milk. To turn milk into cheese, the milk is left to get thick and lumpy. The soft lumps are called curds. The watery part left over is called whey. The curds are pressed together to make cheese. Some cheese has round holes in it. These holes are called eyes. The eyes are made by tiny living things called bacteria. As the cheese sits in a warm room, the bacteria make gas. The gas cannot get out, so it makes a bubble. When the cheese is cut open, you can see the bubble as a hole. Cheese can take many days, or even years, to be ready."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is cheese made from?", "What are the soft lumps called?", "What are the holes in cheese called?"],
+          "rows": 2,
+          "answers": ["milk", "curds", "eyes"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Cheese begins as ____.", "The soft lumps are called ____.", "The holes in cheese are called ____.", "The eyes are made by tiny things called ____."],
+          "wordBank": ["milk", "curds", "eyes", "bacteria"],
+          "answers": ["milk", "curds", "eyes", "bacteria"]
+        },
+        { "kind": "draw", "prompt": "Draw a wedge of cheese. Add some round eyes and a little mouse next to it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Cheese With Holes You Can See Through",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-cheese", "templateLabel": "The Cheese With Holes You Can See Through", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "cheese",
+          "notes": ["Cheese is over 7,000 years old", "Curds are solid, whey is watery", "The holes are called eyes", "Bacteria give off carbon dioxide gas", "Cheese with no eyes is called blind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Swiss Cheese Has Holes",
+          "text": "People have made cheese for a very long time. Scientists have found bits of cheese on old pots that are more than seven thousand years old. That makes cheese one of the oldest foods that people know how to make. Cheese starts as milk. A cheesemaker adds something that makes the milk split into two parts. The thick, solid part is the curds. The thin, watery part is the whey. The curds are pressed, salted, and left to age. The round holes in Swiss cheese have a special name. They are called eyes. Long ago, people did not know what made them. Now we know the answer is bacteria. These tiny living things feed on the cheese and give off a gas called carbon dioxide. The gas is trapped inside the firm cheese, so it gathers into bubbles. Each bubble slowly pushes the cheese apart and leaves a round hole behind. A warmer room makes bigger eyes. Cheese with no eyes at all has a funny name too. Cheesemakers call it blind."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How old is the oldest cheese scientists have found?",
+            "What is the difference between curds and whey?",
+            "What gas do the bacteria give off?",
+            "Why do you think a warmer room makes bigger eyes?"
+          ],
+          "rows": 2,
+          "answers": [
+            "more than seven thousand years old",
+            "curds are the thick solid part and whey is the thin watery part",
+            "carbon dioxide",
+            "(inference: warmth makes the bacteria more active so they make more gas)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why Swiss Cheese Has Holes", "How to Milk a Cow", "The Tallest Mountain in Switzerland"],
+          "answers": ["Why Swiss Cheese Has Holes"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The thick, solid part of the milk is the ____.", "The thin, watery part is the ____.", "Tiny living things called ____ make the holes.", "Cheese with no eyes is called ____."],
+          "wordBank": ["curds", "whey", "bacteria", "blind"],
+          "answers": ["curds", "whey", "bacteria", "blind"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how cheese is made, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Cheese With Holes You Can See Through",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-cheese", "templateLabel": "The Cheese With Holes You Can See Through", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cheese",
+          "notes": ["Traces of cheese found on 7,000-year-old pots", "Curds are solid, whey is the liquid", "Rennet helps milk separate", "Bacteria release carbon dioxide that forms the eyes", "Cheese with no holes is called blind"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Holes Are Alive",
+          "text": "Cheese is one of the oldest foods humans know how to make. Archaeologists have found the chemical traces of cheese on broken pottery more than seven thousand years old. People almost certainly discovered it by accident, when milk stored in warm conditions curdled into soft lumps and a thin liquid. Those two parts have names. The solid lumps are curds, and the liquid is whey. To make cheese on purpose, a cheesemaker encourages the milk to separate, usually by adding an acid or a substance called rennet. The curds are then cut, drained, salted, and pressed into shape. After that, most cheese is aged, sometimes for years, in cool and steady conditions. The famous holes in Swiss cheese are the work of bacteria. Cheesemakers add helpful bacteria on purpose. As the young cheese rests in a warm room, one kind of bacteria feeds on the acids in the curd and releases carbon dioxide gas. Because the cheese around it is firm, the gas cannot escape. Instead it collects into round pockets that slowly stretch the cheese open. Each pocket becomes a hole, which cheesemakers call an eye. The warmth of the aging room, the type of bacteria, and the length of aging all decide how big the eyes grow. A cheese that comes out with no eyes is described as blind. There is a surprising twist to this story. For years, Swiss eyes were getting smaller, and no one knew why. Researchers eventually discovered that tiny specks of hay dust in the milk had been helping the bubbles to form. As milking machines grew cleaner, the dust disappeared, and so did some of the holes."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, how did people probably first discover cheese?",
+            "Why does the gas from the bacteria form round pockets instead of escaping?",
+            "What is rennet used for?",
+            "The passage says the eyes got smaller as milking machines grew cleaner. What does that tell you about where the hay dust came from?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(milk stored in warm conditions curdled by accident and someone ate the lumps)",
+            "the cheese around it is firm, so the gas cannot escape and collects into pockets",
+            "it helps the milk separate into curds and whey",
+            "(inference: the dust came from the older, less clean way of milking by hand near hay and barns)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Cheese is an ancient food, and living bacteria give Swiss cheese its holes",
+            "Milking machines ruined cheese forever",
+            "Switzerland is the only country that makes cheese"
+          ],
+          "answers": ["Cheese is an ancient food, and living bacteria give Swiss cheese its holes"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["curdled → ____", "rennet → ____", "blind (cheese) → ____"],
+          "rows": 1,
+          "answers": [
+            "turned thick and lumpy",
+            "a substance that makes milk separate into curds and whey",
+            "cheese that has no holes"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a cheesemaker turns milk into a block of Swiss cheese. Put the steps in order.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Cheese With Holes You Can See Through",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-cheese", "templateLabel": "The Cheese With Holes You Can See Through", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cheese",
+          "notes": ["Cheesemaking is older than writing", "Rennet is an enzyme that clumps milk protein", "The eyes are trapped carbon dioxide bubbles", "Swiss institute solved the hole mystery in 2015", "Hay dust once seeded the bubbles"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mystery of the Shrinking Holes",
+          "text": "Cheese may be one of the first foods that humans learned to manufacture rather than simply gather. Chemists analyzing broken pottery from sites more than seven thousand years old have found the fatty residues of processed milk, evidence that people were separating milk into solids and liquid long before written history. The likeliest origin is an accident. Milk carried in a warm climate curdles on its own, dividing into soft white lumps and a watery liquid. Someone tasted the lumps, found them good, and a craft was born. Those two parts still have their old names. The solid is the curd, and the liquid is the whey. A modern cheesemaker separates them deliberately by adding an acid or an enzyme called rennet, which causes the proteins in milk to clump together. The curds are cut, heated, drained, salted, and pressed, and then most cheeses are aged in cool, controlled conditions where flavor slowly develops. The holes in Swiss cheese, however, are a separate marvel, and for a long time they were a mystery. Cheesemakers deliberately add bacteria to the milk. One species feeds on the lactic acid in the young cheese and burps out carbon dioxide. Because the surrounding cheese is dense and elastic, the gas cannot escape. It pools into round bubbles that gradually push the cheese apart, and each bubble becomes what cheesemakers call an eye. Warmer aging rooms and longer aging produce larger eyes; a wheel that emerges without any is called blind. The strangest chapter came recently. Through the twentieth century, the eyes in Swiss cheese were shrinking, and no one could explain it. In 2015, researchers in Switzerland cracked the case. The bubbles had been forming around microscopic specks of hay dust that fell into open buckets during hand milking. As milking moved to sealed, sanitary machines, the dust vanished, and the holes shrank with it. The famous eyes of Swiss cheese, it turned out, depended on a trace of barnyard dust that nobody had ever noticed."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What causes the holes in Swiss cheese? Quote the phrase the passage uses for what the bacteria do to the gas.",
+            "Is this passage written mainly to inform, persuade, or entertain? Give two details that support your answer.",
+            "What did researchers discover in 2015, and why was it surprising?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering ancient food, curds and whey, bacteria making the eyes, and the hay-dust discovery)",
+            "the bacteria release carbon dioxide; quote: burps out carbon dioxide",
+            "(inform, with detail: it defines curd, whey, and rennet and reports research findings, though word choices like burps add entertainment)",
+            "(hay dust from open buckets seeded the bubbles; surprising because a barnyard accident, not the recipe, shaped the famous holes)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["residues → ____", "enzyme → ____", "elastic → ____", "sanitary → ____"],
+          "rows": 1,
+          "answers": [
+            "small traces left behind",
+            "a substance that speeds up a change, here making milk clump",
+            "able to stretch and spring back",
+            "very clean and free of germs"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls the hay-dust discovery the strangest chapter. Explain in your own words why it is surprising.",
+            "Why would a cheese with no eyes be called blind? What is the comparison?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the holes people admired came from a dirty accident rather than skill or recipe)",
+            "(the holes are called eyes, so a cheese without them has no eyes, a play on words)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph. Now that cleaner machines have shrunk the holes, should cheesemakers add hay dust on purpose to bring the big eyes back? Take a position and give two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Cheese With Holes You Can See Through",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-cheese", "templateLabel": "The Cheese With Holes You Can See Through", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cheese",
+          "notes": ["Milk is mostly water holding fat and protein", "Rennet bonds the proteins and traps the fat", "Propionibacteria produce the carbon dioxide", "The eyes are fossilized gas bubbles", "The 2015 hay-dust study came from Agroscope in Switzerland"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Trick Played on Milk",
+          "text": "Cheese is a trick played on milk, and it is one of the oldest tricks in the human kitchen. Milk is mostly water, and the useful parts, its fats and proteins, are suspended invisibly throughout it. Left alone in a warm place, milk sours and separates on its own into soft curds and thin whey. Somewhere more than seven thousand years ago, someone ate those curds instead of throwing them out, and cheesemaking began. We know the date because chemists have identified the fatty residues of processed milk on pottery fragments from Neolithic sites, hard evidence of a craft older than writing. The craft has a clear logic. A cheesemaker wants to capture the solids and drain away the water, and to do it on purpose rather than by luck. The milk is encouraged to separate, usually by adding an acid or an enzyme called rennet, which makes the milk proteins bond together and trap the fat. The result is a mass of curd sitting in a pool of whey. From there the choices multiply: cut the curd fine or leave it coarse, heat it or not, wash it, salt it, press it hard or barely at all, and then age it for weeks or years. Every choice steers the final cheese. The difference between a fresh, squeaky curd and a sharp aged wheel is not a difference of ingredient but a difference of handling and time. The holes in Swiss cheese are a good example of how much is happening invisibly inside a wheel. They are not cut or poked. They are made by living things. Cheesemakers deliberately add bacteria, and one particular species feeds on the lactic acid in the young cheese and releases carbon dioxide as a waste gas. Because the body of the cheese is dense and slightly elastic, the gas has nowhere to go. It collects into round bubbles that slowly stretch the cheese from the inside, and each finished bubble is what a cheesemaker calls an eye. The warmth of the aging room, the strain of bacteria, and the length of aging all shape how large and how many the eyes become. A wheel that comes out solid, with no eyes, has its own name: it is called blind. For most of the twentieth century, though, something strange was happening, and no one could explain it. The eyes in Swiss cheese were slowly shrinking, decade by decade, even though the recipe had not changed. In 2015, researchers at a Swiss agricultural institute finally solved the puzzle, and the answer was almost comic. The bubbles had never formed on nothing. They had been forming around microscopic specks of hay dust that drifted into open buckets during old-fashioned hand milking. The dust gave the gas a place to gather, the same way a scratch in a glass gives a bubble somewhere to start. As dairies switched to sealed, sanitary milking machines, the barnyard dust disappeared from the milk, and the holes shrank right along with it. The most admired feature of the cheese, it turned out, had depended for centuries on a bit of dirt that nobody had ever meant to add. That is the quiet lesson buried in a wedge of Swiss cheese. What looks like a fixed recipe is really a living process, balanced between the cheesemaker's careful choices and a crowd of bacteria, acids, gases, and even stray dust doing their own work in the dark. The eye you see when you cut a slice is the fossil of a bubble, and the bubble is the record of a small, invisible life."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a full phrase from it.",
+            "The author opens by calling cheese a trick played on milk. Explain what the metaphor means, using details from the passage.",
+            "What do the bacteria release to form the eyes? Quote the exact phrase the passage uses.",
+            "Identify where the passage shifts from how cheese is made to a surprise, and explain how the author signals the turn.",
+            "In the last paragraph the author calls the eye the fossil of a bubble. Analyze what that image is doing and whether the passage has earned it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(cheese is milk transformed by handling, not a new ingredient; support with separating solids from water, curds and whey, and aging over time)",
+            "carbon dioxide; quote: releases carbon dioxide as a waste gas",
+            "(at For most of the twentieth century, though; the contrast word though signals the pivot to the shrinking-eyes mystery)",
+            "(the eye is the lasting trace left by a gas bubble; earned by the earlier explanation that each bubble becomes an eye)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["suspended → ____", "rennet → ____", "elastic → ____", "residues → ____"],
+          "rows": 2,
+          "answers": [
+            "spread evenly through a liquid without settling",
+            "an enzyme that makes milk proteins bond so the milk separates",
+            "able to stretch and spring back into shape",
+            "small traces of something left behind"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The 2015 discovery showed the famous holes depended on hay dust. What does this suggest about how much of a traditional food is planned versus accidental?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(much of a tradition can rest on unnoticed accidents rather than deliberate skill)",
+            "(student question plus a credible source type, such as a food-science study or a working cheesemaker)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The hay-dust discovery proves that tradition is just accident we have not explained yet. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

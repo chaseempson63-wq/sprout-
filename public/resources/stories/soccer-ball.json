@@ -1,0 +1,315 @@
+{
+  "key": "soccer-ball",
+  "title": "The Ball Made of Shapes",
+  "blurb": "The black-and-white ball is really a twenty-sided shape in disguise, and its panels quietly steer every kick.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Ball Made of Shapes",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-soccer-ball", "templateLabel": "The Ball Made of Shapes", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the black parts and the white parts." },
+        {
+          "kind": "image",
+          "imageKey": "soccer-ball",
+          "notes": ["It is black and white", "You kick it with your foot", "The white parts have six sides", "The black parts have five sides"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a soccer ball. It is black and white. You kick it with your foot. The white parts have six sides. The black parts have five sides. The ball rolls fast on the grass. Kick it soft. Kick it hard. Watch it spin and roll away."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the balls in each row. Write how many in the box.",
+          "emoji": "⚽",
+          "items": ["2", "3", "1", "4"],
+          "answers": ["2", "3", "1", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "kick    ball" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each thing to where it goes.",
+          "pairs": [
+            { "left": "soccer ball", "right": "grass" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own soccer ball. Add black shapes and white shapes.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Ball Made of Shapes",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-soccer-ball", "templateLabel": "The Ball Made of Shapes", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "soccer-ball",
+          "notes": ["It is round but made of flat shapes", "White shapes have six sides", "Black shapes have five sides", "There is a bag of air inside", "Old balls were made of leather"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ball Made of Shapes",
+          "text": "A soccer ball is round, but it is made of flat shapes. Look closely. The white shapes have six sides. The black shapes have five sides. When you sew all the shapes together, they curve into a ball. A long time ago, soccer balls were made of leather. When it rained, the leather soaked up water and the ball got heavy and hard to kick. Today balls are made of soft plastic that keeps the rain out. Inside every ball is a bag of air. The air is what makes the ball bounce."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a soccer ball made of?", "What were old soccer balls made of?", "What is inside every ball?"],
+          "rows": 2,
+          "answers": ["flat shapes sewn together", "leather", "a bag of air"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A soccer ball is made of flat ____.", "Old balls were made of ____.", "Inside the ball is a bag of ____.", "The air makes the ball ____."],
+          "wordBank": ["shapes", "leather", "air", "bounce"],
+          "answers": ["shapes", "leather", "air", "bounce"]
+        },
+        { "kind": "draw", "prompt": "Draw a soccer ball on a green field. Add a goal behind it.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Ball Made of Shapes",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-soccer-ball", "templateLabel": "The Ball Made of Shapes", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "soccer-ball",
+          "notes": ["A classic ball has 32 patches", "20 white six-sided pieces", "12 black five-sided pieces", "The black patches first came in 1970", "Old leather balls got heavy in the rain"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ball Made of Shapes",
+          "text": "Pick up a classic soccer ball and count the patches on its surface. You will find thirty-two of them. Twenty are white and have six sides each. Twelve are black and have five sides each. Shapes with six sides are called hexagons. Shapes with five sides are called pentagons. When these flat pieces are stitched together, they pull the ball into a smooth round shape. The black pentagons were not just for looks. This design first appeared at the World Cup in 1970. Back then, many families watched the games on black-and-white televisions. A plain white ball was hard to follow on the screen. The black patches made the ball easy to see, and they helped players and fans watch how the ball was spinning as it flew through the air. Before this ball, teams played with brown leather balls. Those balls grew heavy in the rain and could hurt your head."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How many patches does a classic soccer ball have?",
+            "What is the difference between a hexagon and a pentagon?",
+            "Why were the black patches added to the ball?",
+            "Why do you think a leather ball was worse in the rain than today's balls?"
+          ],
+          "rows": 2,
+          "answers": [
+            "thirty-two patches",
+            "a hexagon has six sides and a pentagon has five sides",
+            "to make the ball easy to see on black-and-white televisions",
+            "(inference: leather soaked up water and got heavy)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Ball Made of Shapes", "How to Bake Bread", "The Fastest Car in the World"],
+          "answers": ["The Ball Made of Shapes"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A shape with six sides is called a ____.", "A shape with five sides is called a ____.", "This ball design first appeared at the World ____ in 1970."],
+          "wordBank": ["hexagon", "pentagon", "Cup"],
+          "answers": ["hexagon", "pentagon", "Cup"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the most surprising thing you learned about the soccer ball, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Ball Made of Shapes",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-soccer-ball", "templateLabel": "The Ball Made of Shapes", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "soccer-ball",
+          "notes": ["32 panels: 20 hexagons, 12 pentagons", "The math name is a truncated icosahedron", "Air pressure rounds the flat panels", "The 1970 ball was called the Telstar", "Modern panels are waterproof and synthetic"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Shape Hiding Inside the Ball",
+          "text": "A soccer ball looks perfectly round, but it is built from flat pieces that only pretend to be curved. The classic ball has thirty-two panels: twenty white hexagons, each with six sides, and twelve black pentagons, each with five sides. Mathematicians have a name for this arrangement. They call it a truncated icosahedron, which is a fancy way of saying a twenty-sided shape with its corners sliced off. Each cut corner becomes a pentagon, and the flat faces become hexagons. When air fills the ball and pushes the panels outward, the sharp edges soften and the whole thing rounds into a sphere. This exact ball became famous at the 1970 World Cup, where it was called the Telstar. Its black patches were a clever idea. Most people at home were still watching on black-and-white televisions, and a solid white ball almost vanished against the pale field. The dark pentagons gave viewers something to track, so they could finally see the ball curve and spin. Soccer balls were not always so clever. The earliest ones were animal bladders blown up with air. Later, people wrapped leather around the bladder to make it tougher. Leather worked well in dry weather, but it drank up rain like a sponge. A soaked leather ball could become so heavy that heading it was dangerous. Modern balls solve this with waterproof synthetic panels and a sealed rubber bladder inside, so they stay light no matter the weather."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what is a truncated icosahedron?",
+            "The passage says the panels only pretend to be curved. What makes the flat panels look round?",
+            "Why did the black patches help people watching at home in 1970?",
+            "Why might players have worried about heading a wet leather ball?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(a twenty-sided shape with its corners cut off, leaving pentagons and hexagons)",
+            "air fills the ball and pushes the panels outward until it rounds into a sphere",
+            "(inference: a white ball was hard to see on black-and-white TV, and the black patches gave them something to track)",
+            "(inference: a wet leather ball got very heavy and could hurt them)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A soccer ball is a clever shape built from flat panels, with a long history of invention",
+            "Soccer is the only sport played with a ball",
+            "Leather is the best material for every kind of ball"
+          ],
+          "answers": ["A soccer ball is a clever shape built from flat panels, with a long history of invention"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["panel → ____", "truncated → ____", "synthetic → ____"],
+          "rows": 1,
+          "answers": ["a single flat piece of the ball's surface", "cut off or shortened", "made by people, not found in nature"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how the soccer ball changed from an animal bladder into the modern ball. Include at least two improvements people made.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Ball Made of Shapes",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-soccer-ball", "templateLabel": "The Ball Made of Shapes", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "soccer-ball",
+          "notes": ["32 panels: 20 hexagons, 12 pentagons", "Every pentagon is ringed by hexagons", "Shape name: truncated icosahedron", "The buckyball molecule shares this shape", "Goodyear's vulcanized rubber changed the ball"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Ball That Is Really a Solid",
+          "text": "Hold a classic soccer ball still and study it as an object, not a toy. What you are holding is a piece of geometry that people have admired for more than two thousand years. Its surface is made of thirty-two flat panels: twenty hexagons with six sides each and twelve pentagons with five sides each. Every pentagon is surrounded entirely by hexagons, and no two pentagons ever touch. This precise pattern has a name that ancient Greek thinkers already knew: the truncated icosahedron. You can build it by taking a twenty-sided solid and slicing off each of its twelve corners. The old corners leave behind pentagons, and the original faces open into hexagons. The same shape shows up in surprising places. In 1985, scientists discovered a molecule made of sixty carbon atoms arranged in exactly this pattern. They named it buckminsterfullerene, after an architect who built dome-shaped buildings from the same geometry, and nicknamed it the buckyball. A soccer ball, a carbon molecule, and a domed roof all share one design because it is a remarkably strong and balanced way to wrap a curved surface with flat pieces. Turning that geometry into a ball you can kick took centuries of invention. The earliest balls were animal bladders, later covered in leather for toughness. Leather soaked up rain and grew dangerously heavy. A real breakthrough came in the 1800s, when Charles Goodyear used a process called vulcanization to make rubber that stayed springy in heat and cold. Rubber bladders held their air far better than animal ones. The famous thirty-two-panel design arrived in the twentieth century and was chosen for the 1970 World Cup, where its black patches helped fans follow the ball on black-and-white televisions. Modern balls have quietly moved on from that classic pattern. Engineers found that the number and shape of the panels change how the ball moves through the air. Fewer panels, or oddly shaped ones, can make a ball swerve unpredictably, which is why some tournament balls have caused arguments among goalkeepers. The rounder and smoother the surface, the harder it becomes to guess where a fast, spinning shot will end up."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What do a soccer ball, a carbon molecule, and a domed roof have in common?",
+            "What did vulcanization do for soccer balls? Use the passage.",
+            "Is this passage written mainly to inform, persuade, or entertain? Give two details that support your answer.",
+            "Why can changing the number of panels change how a ball flies?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the geometry, its history, and why panels affect flight)",
+            "they all use the truncated icosahedron shape, a balanced way to wrap flat pieces around a curve",
+            "(it made rubber that stayed springy in heat and cold, so rubber bladders held their air far better)",
+            "(inform: it defines terms and gives dated facts; it also entertains a little with the buckyball surprise)",
+            "(the panels and seams change how air moves over the ball, so fewer or odd panels can make it swerve)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["geometry → ____", "vulcanization → ____", "buckyball → ____", "swerve → ____"],
+          "rows": 1,
+          "answers": [
+            "the math of shapes, sizes, and positions",
+            "a process that makes rubber stay springy in heat and cold",
+            "a nickname for a molecule of sixty carbon atoms in the soccer-ball shape",
+            "to curve suddenly to one side"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why do you think goalkeepers might dislike a ball that swerves unpredictably?",
+            "The passage says the same shape appears in a molecule, a roof, and a ball. What does that suggest about the shape?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion: it is harder to predict and catch)",
+            "(inference: it is an especially strong and balanced way to cover a curved surface)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should tournament balls be allowed to change every few years, or should one design be kept forever? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Ball Made of Shapes",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-soccer-ball", "templateLabel": "The Ball Made of Shapes", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "soccer-ball",
+          "notes": ["Truncated icosahedron: 60 corners, 90 edges", "12 pentagons, 20 hexagons, 32 faces", "The C60 buckyball shares the shape", "Telstar debuted at the 1970 World Cup", "Fewer panels can make a ball knuckle and wobble"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever Round: The Hidden Geometry of the Soccer Ball",
+          "text": "A soccer ball may be the most widely recognized object on Earth, and almost nobody notices that it is a lie. It looks like a sphere, but it is not one. It is a polyhedron, a solid built entirely from flat faces, that only becomes round when air pressure pushes its panels outward and stretches the flatness away. The classic version carries thirty-two panels: twenty hexagons of six sides and twelve pentagons of five sides, arranged so that every pentagon is ringed by hexagons and no two pentagons meet. Geometers call this figure a truncated icosahedron. Begin with an icosahedron, a twenty-faced solid the ancient Greeks catalogued, then shave off each of its twelve corners. The severed corners leave pentagons, the widened faces become hexagons, and you arrive at a shape with sixty corners and ninety edges that balances flat pieces around a curve better than almost any alternative. That efficiency is why the same pattern keeps reappearing far from any sports field. In 1985 chemists found a molecule of sixty carbon atoms locked into this exact arrangement. They named it buckminsterfullerene, after the architect Buckminster Fuller, whose geodesic domes used the same principle, and the discovery later earned a Nobel Prize. Scientists still call the molecule a buckyball, because a soccer ball is the clearest picture of what it looks like. The object itself is the result of a long argument with the weather. The earliest balls were inflated animal bladders, fragile and lopsided. Wrapping them in leather made them tougher but introduced a fatal weakness: leather absorbs water, and a rain-soaked ball could double in weight and injure a player heading it. The turning point was vulcanization, the process Charles Goodyear developed in the 1800s to make rubber that stayed elastic in both heat and cold. A sealed rubber bladder finally held its shape and its air. The thirty-two-panel ball most people picture was popularized as the Telstar at the 1970 World Cup, its black pentagons chosen so that viewers watching on black-and-white televisions could track the spin. Then engineers started tampering with tradition, and physics pushed back. A ball with fewer panels has fewer seams, and seams are what grip the air and steady a ball in flight. The 2010 World Cup ball, built from only eight bonded panels, flew so unpredictably that goalkeepers publicly complained it swerved and dipped without warning. The culprit was a phenomenon called knuckling: when a ball spins very little, its smooth surface lets the air cling and release in erratic bursts, and the ball wobbles off course. The 2014 replacement added carefully shaped seams to tame the effect. It turns out that the humble stitched pattern was never only decoration. Those thirty-two panels were doing quiet, invisible work, holding a fast ball honest as it cut through the air."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage calls the ball a lie. Explain what it means and quote the phrase that supports this.",
+            "Explain why leather was described as a fatal weakness. Cite the evidence.",
+            "What is knuckling, and how does the passage connect it to the number of panels?",
+            "The final sentence says the panels were doing quiet, invisible work. Analyze what the author means and whether the passage earns that claim."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(it looks like a sphere but is really a flat-faced polyhedron; quote: it looks like a sphere, but it is not one)",
+            "(leather absorbs water, so a wet ball doubled in weight and could injure a player; cite: leather absorbs water)",
+            "(a low-spin ball whose smooth surface makes air cling and release erratically; fewer panels mean fewer seams to steady it)",
+            "(the seams secretly control airflow and keep the ball steady; earned by the 2010 knuckling example)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["polyhedron → ____", "vulcanization → ____", "geodesic → ____", "knuckling → ____"],
+          "rows": 2,
+          "answers": [
+            "a solid shape whose surface is made of flat faces",
+            "a process that makes rubber elastic in both heat and cold",
+            "built from a network of shapes that spread stress across a curved surface",
+            "the erratic wobble of a ball moving with very little spin"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage suggests decoration and function are linked in the ball's design. Do you agree? Use one example from the text.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion, supported by text: the black patches both look distinctive and aid visibility, or the seams both pattern the ball and steady its flight)",
+            "(student question + a credible source type such as a physics study or a ball manufacturer)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The best soccer ball is the one that behaves most predictably, not the one that is most exciting to watch. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

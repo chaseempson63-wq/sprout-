@@ -1,0 +1,310 @@
+{
+  "key": "trophy",
+  "title": "The Cup That Started as a Pile of Armor",
+  "blurb": "The shiny gold winner's cup began as a stack of captured enemy armor, and slowly became a prize for trying your best.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Cup That Started as a Pile of Armor",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-trophy", "templateLabel": "The Cup That Started as a Pile of Armor", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Point to the shiny trophy." },
+        {
+          "kind": "image",
+          "imageKey": "trophy",
+          "notes": ["It is gold and shiny", "It has two handles", "It is shaped like a big cup", "You win it for trying your best"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a trophy. It is gold and shiny. It has two handles, one on each side. It is shaped like a big cup. People win a trophy when they try their best. You might get one for a race or a game. A trophy says, you did it. It feels good to hold."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the trophies in each row. Write how many in the box.",
+          "emoji": "🏆",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "gold    cup" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "trophy", "right": "shelf" },
+            { "left": "cup", "right": "drink" },
+            { "left": "race", "right": "run" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own trophy. Put your name on the front.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Cup That Started as a Pile of Armor",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-trophy", "templateLabel": "The Cup That Started as a Pile of Armor", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "trophy",
+          "notes": ["Most are not real gold", "Your name can be carved on it", "Some are tiny, some are huge", "The two handles were once for sharing a drink"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Trophy Is",
+          "text": "A trophy is a prize you can hold. Many trophies are shaped like a tall cup with two handles. They shine like gold, but most are not real gold. They are made of metal or shiny plastic painted gold. When you win, your name can be carved onto the trophy. Then everyone who sees it knows what you did. Some trophies are tiny. Some are as big as a small child. People put them on a shelf at home. Every time you walk past, the trophy helps you remember the day you tried hard and won."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a trophy?", "How many handles does a cup trophy have?", "What can be carved onto a trophy?"],
+          "rows": 2,
+          "answers": ["a prize you can hold", "two", "your name"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A trophy is a ____ you can hold.", "Many cup trophies have two ____.", "Most trophies are not real ____.", "Your ____ can be carved on it."],
+          "wordBank": ["prize", "handles", "gold", "name"],
+          "answers": ["prize", "handles", "gold", "name"]
+        },
+        { "kind": "draw", "prompt": "Draw a trophy on a shelf at home. Show what you won it for.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Cup That Started as a Pile of Armor",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-trophy", "templateLabel": "The Cup That Started as a Pile of Armor", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "trophy",
+          "notes": ["The word is Greek: tropaion", "It once meant a pile of enemy armor", "Two handles make it a loving cup", "Old Olympic winners got olive wreaths"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "From Battle Armor to Winner's Cup",
+          "text": "A trophy is a prize, but it is also a very old idea. The word trophy comes from the ancient Greek word tropaion. It did not mean a shiny cup at all. When Greek soldiers won a battle, they went to the spot where the losing army turned and ran. There they hung the enemy's shields, helmets, and swords on a tree or a wooden post. That pile of armor was the tropaion. It was a way of saying, we won right here. Over many years, the idea changed. People stopped hanging up armor and started giving cups instead. A winning cup often has two handles. Long ago, a cup like this was passed from hand to hand so everyone could share a drink. That is why some trophies are still called loving cups today. Now we give trophies for races, games, spelling, and music. The shape stayed, but the reason grew kinder. A trophy no longer marks a battle. It marks a person who tried hard and did something well."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did the Greek word tropaion first mean?",
+            "What did Greek soldiers hang up after they won?",
+            "Why is a two-handled trophy called a loving cup?",
+            "Why do you think we give trophies for games now instead of battles?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a pile of enemy armor hung up after a battle",
+            "the enemy's shields, helmets, and swords",
+            "because a cup like it was passed around so people could share a drink",
+            "(opinion: we celebrate effort and skill now, not war)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["From Battle Armor to Winner's Cup", "How to Polish Silver at Home", "The Longest River in Greece"],
+          "answers": ["From Battle Armor to Winner's Cup"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The word trophy comes from the ancient Greek word ____.", "Soldiers hung the enemy's armor on a tree or a wooden ____.", "Some trophies are still called ____ cups today."],
+          "wordBank": ["tropaion", "post", "loving"],
+          "answers": ["tropaion", "post", "loving"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would you give a trophy for, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Cup That Started as a Pile of Armor",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-trophy", "templateLabel": "The Cup That Started as a Pile of Armor", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "trophy",
+          "notes": ["Tropaion means 'a turning' in Greek", "It began as a battlefield monument", "The Stanley Cup lists every winner's name", "Most gold trophies are gilded metal or resin"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Prize With a Warlike Past",
+          "text": "Almost every trophy you have ever seen began as a war memorial. The word comes from the Greek tropaion, built from a word meaning a turn. After a battle, ancient Greek soldiers walked to the place where the enemy line broke and turned to flee. On that exact spot they raised a monument out of captured weapons and armor, hanging shields and helmets from a tree trunk or a post. The tropaion was not a prize for an athlete. It was a public marker that said, here is where we won. The Romans borrowed the custom and carved trophies into stone arches so the victory could not rot or rust away. Slowly, over centuries, the meaning drifted. By the time people were holding sports contests and county fairs, the trophy had become a cup rather than a stack of armor. The two-handled shape is not a decoration. It copies the old loving cup, a large vessel passed around a table so many hands could lift it and many mouths could share one drink. Today a trophy usually shines like gold, though it is rarely made of it. Most are gilded metal or painted resin. What makes a trophy valuable is not the material but the name engraved on its base. Some trophies are never kept. The Stanley Cup in ice hockey travels to a new champion every year, and the names of the winning players are carved right into the silver, layer after layer, until the cup itself becomes a written history of the sport."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what was a tropaion?",
+            "How did the Romans change the way trophies were made, and why?",
+            "The passage says the two handles are 'not a decoration.' What are they instead?",
+            "Why do you think the winning players' names are carved into the Stanley Cup?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(a battlefield monument built from captured enemy weapons and armor)",
+            "they carved trophies into stone arches so the victory could not rot or rust away",
+            "a copy of the old loving cup that was passed around a table and shared",
+            "(inference: so the cup becomes a lasting record of everyone who won)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The trophy began as a war memorial and slowly became a prize for skill and effort",
+            "Gold is the most valuable metal on Earth",
+            "Ice hockey was invented in ancient Greece"
+          ],
+          "answers": ["The trophy began as a war memorial and slowly became a prize for skill and effort"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["memorial → ____", "gilded → ____", "engraved → ____"],
+          "rows": 1,
+          "answers": ["something made to help people remember", "covered with a thin layer of gold", "carved into a hard surface"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is a trophy still worth winning if it is not made of real gold? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Cup That Started as a Pile of Armor",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-trophy", "templateLabel": "The Cup That Started as a Pile of Armor", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "trophy",
+          "notes": ["From Greek tropaion, a battle marker", "The two-handled loving cup was passed and shared", "Rarely solid gold, usually a thin gold coat", "The America's Cup dates to 1851", "The Stanley Cup engraves each champion"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Small Machine for Turning Effort Into Memory",
+          "text": "A trophy is one of the oldest ideas humans still carry around, and its meaning has flipped almost completely from where it started. The word descends from the Greek tropaion, which comes from trope, a turning. In ancient Greece, the turning that mattered was the moment a battle broke, when one army lost its nerve and fled. The victors marched to that spot and built a monument from the arms they had captured, fixing enemy shields, helmets, and breastplates to a tree or a wooden frame. That armored scarecrow was the first trophy. It did not reward skill or effort. It announced dominance, and it warned anyone passing that this ground had been won by force. The Romans made the idea permanent, sculpting trophies into marble arches and columns that still stand today. But over the following centuries the trophy left the battlefield behind. As tournaments, horse races, and school contests spread, the object changed shape and changed heart. It became a cup, and usually a cup with two handles. That detail is a fossil of an older custom: the loving cup, a shared drinking vessel lifted and passed from guest to guest so that a single cup could touch many hands. A prize built on that shape quietly says that victory is something to be shared, not hoarded. Most trophies gleam like solid gold, but very few are. The vast majority are base metal, plastic, or resin finished with a thin gold coating. Their true worth is not in the metal. It is in the engraving. A name cut into the base turns a mass-produced cup into a one-of-a-kind record of a particular person on a particular day. Some of the most famous trophies are never taken home at all. The Stanley Cup passes each year to the champion hockey team, and every winning player's name is stamped into its rings, so that the cup has slowly grown into a metal book of the sport's history. The America's Cup, first awarded for a sailing race in 1851, is older than most countries' current flags. A trophy, in the end, is a small machine for turning effort into memory."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What did the first trophy, the tropaion, announce, and how was that different from a modern prize?",
+            "The passage says the loving-cup shape 'quietly says' something. Quote the exact phrase and explain it.",
+            "Is this passage written mainly to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end by calling a trophy 'a small machine for turning effort into memory'?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: war-marker origin, shift into a sports prize, value living in the engraved name)",
+            "it announced dominance and warned others that the ground was won by force; a modern prize rewards skill or effort instead",
+            "quote: victory is something to be shared, not hoarded; the shared cup means a win belongs to more than one person",
+            "(inform: it defines tropaion and gives dated facts like the 1851 America's Cup)",
+            "(it sums up the trophy's real purpose: an object that preserves a moment of effort so it is not forgotten)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["tropaion → ____", "gilded → ____", "hoarded → ____", "engraving → ____"],
+          "rows": 1,
+          "answers": ["a Greek battle monument made of captured arms", "coated with a thin layer of gold", "kept all for oneself", "a name or words cut into a surface"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Explain why the engraving matters more than the metal a trophy is made from.",
+            "Why might a traveling trophy like the Stanley Cup mean more than a trophy a winner keeps forever?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the engraved name makes it unique and personal; the metal is cheap and common)",
+            "(inference: it links every past champion and carries the shared history of the sport)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should everyone in a competition get a trophy, or only the winner? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Cup That Started as a Pile of Armor",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-trophy", "templateLabel": "The Cup That Started as a Pile of Armor", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "trophy",
+          "notes": ["Tropaion: arms of the defeated hung on a post", "Romans carved trophies into stone arches", "Handles echo the shared loving cup", "The Stanley Cup is a metal record of champions", "Value lives in the engraving, not the gold"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "What a Trophy Is Really For",
+          "text": "Every trophy is a small argument about what deserves to be remembered, and the argument is older than almost anything else we still keep on a shelf. Trace the word back and it leads to the Greek tropaion, from trope, meaning a turn. To an ancient Greek, the turn was a specific and violent moment: the instant a battle line cracked and one army broke into retreat. The winners walked to that precise spot and assembled a monument from the weapons of the defeated, lashing captured shields, helmets, and armor to a tree or a timber frame. This grim figure, half scarecrow and half warning, was the original trophy. It rewarded nothing. It marked territory and it advertised power, telling everyone who passed that the ground had changed hands. The Romans could not resist making the gesture permanent. Rather than let a wooden trophy weather and fall, they carved images of captured arms into triumphal arches, freezing the moment of victory in stone. Yet the strangest part of the trophy's history is not where it began but how completely it reversed. Over many centuries, as organized violence gave way to organized play, the trophy migrated from the battlefield to the sports field, from the general to the child. The object that once boasted of an enemy's defeat now celebrates a runner, a speller, or a swimmer. Almost nothing else in our culture has traveled so far from its own origin. The shape carries its own buried history. The classic trophy is a two-handled cup, and those handles are not styling. They descend from the loving cup, a large vessel meant to be passed from hand to hand around a table so that many people could drink from one container. A prize modeled on a shared cup makes a quiet claim: that a victory belongs partly to everyone who is willing to lift it. The material tells a second honest story. Though a trophy usually gleams as if cast from gold, it is almost never gold. Most are cheap metal, plastic, or resin under a whisper-thin gilded coat. This is not a con. It reveals where the real value sits, which is never in the substance but in the name engraved beneath it. That engraving is the entire point. It converts a mass-produced cup into a unique record of one person on one day, and it is the reason some trophies are never taken home at all. The Stanley Cup, awarded to hockey's champion each year, carries the stamped name of every winning player, so that the cup has become less an ornament than a written archive of the sport. Strip away the gold paint and the ceremony, and a trophy is a machine for turning a fleeting afternoon into a permanent object. That is why the argument about participation trophies runs so hot. To hand a trophy to everyone is to decide that showing up, and not only winning, is a thing worth remembering. The Greeks would have found the idea baffling. Whether they were wrong is a question every trophy still quietly asks."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a full phrase from it.",
+            "The passage says the trophy 'reversed.' Explain the reversal and quote the sentence that names it.",
+            "What does the two-handled shape reveal, according to the author? Quote the 'quiet claim' the shape makes.",
+            "Analyze the final image. The author calls a trophy 'a machine for turning a fleeting afternoon into a permanent object.' What argument is that metaphor making?",
+            "The passage ends on the participation-trophy debate. Does the author take a side or leave it open? Support your answer with the last two sentences."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary in the student's own words)",
+            "(it went from marking military conquest to celebrating play; cite: Yet the strangest part of the trophy's history is not where it began but how completely it reversed)",
+            "(it echoes the shared loving cup; quote: that a victory belongs partly to everyone who is willing to lift it)",
+            "(the metaphor argues the trophy's real job is preserving memory, not the gold or the glory)",
+            "(leaves it open; cite: The Greeks would have found the idea baffling. Whether they were wrong is a question every trophy still quietly asks)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["tropaion → ____", "triumphal → ____", "gilded → ____", "archive → ____"],
+          "rows": 2,
+          "answers": [
+            "a monument built from the captured arms of a defeated enemy",
+            "celebrating or marking a great victory",
+            "coated with a thin layer of gold",
+            "a collection that stores and preserves records"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says almost nothing else 'has traveled so far from its own origin.' Do you agree the trophy's change is unusually extreme? Explain your reasoning.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion with reasoning about how far the meaning shifted)",
+            "(student question plus a credible source type, such as a historian or a museum record)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A trophy handed to everyone means nothing. State your position, give two reasons or pieces of evidence drawn from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

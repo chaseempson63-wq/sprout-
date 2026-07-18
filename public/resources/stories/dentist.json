@@ -1,0 +1,307 @@
+{
+  "key": "dentist",
+  "title": "Open Wide: The Story of the Dentist",
+  "blurb": "Why we visit the dentist, how teeth really decay, and how one French doctor turned tooth-pulling into tooth-saving.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "Open Wide: The Story of the Dentist",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-dentist", "templateLabel": "Open Wide: The Story of the Dentist", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the dentist." },
+        {
+          "kind": "image",
+          "imageKey": "dentist",
+          "notes": ["A dentist keeps teeth clean", "Teeth help you chew", "You have baby teeth first", "Brush morning and night"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a dentist. A dentist helps keep your teeth clean and strong. You open wide and say ahh. The dentist looks at each tooth with a little mirror. Teeth help you bite and chew your food. Brush your teeth in the morning. Brush them again at night. Then your teeth stay happy."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the teeth in each row. Write how many in the box.",
+          "emoji": "🦷",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "tooth    brush" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "dentist", "right": "teeth" },
+            { "left": "brush", "right": "clean" },
+            { "left": "chew", "right": "food" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big smile with lots of teeth.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "Open Wide: The Story of the Dentist",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-dentist", "templateLabel": "Open Wide: The Story of the Dentist", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "dentist",
+          "notes": ["Kids have 20 baby teeth", "Adults grow 32 teeth", "A mirror sees hidden teeth", "Brush for two minutes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Doctor for Your Teeth",
+          "text": "A dentist is a doctor for your teeth. When you visit, you sit in a big chair that leans back. The dentist uses a small round mirror to see behind each tooth. A bright light helps them look. They count your teeth and check that your gums are pink and healthy. Little kids have twenty baby teeth. These baby teeth fall out one by one, and bigger grown-up teeth grow in to take their place. The dentist shows you how to brush and how to floss. Sugar can hurt your teeth, so it is good to brush after sweet food."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does a dentist use to see behind a tooth?", "How many baby teeth do little kids have?", "What can hurt your teeth?"],
+          "rows": 2,
+          "answers": ["a small round mirror", "twenty baby teeth", "sugar"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A dentist is a doctor for your ____.", "The dentist uses a ____ to see behind each tooth.", "Little kids have twenty ____ teeth.", "Brush after eating ____ food."],
+          "wordBank": ["teeth", "mirror", "baby", "sweet"],
+          "answers": ["teeth", "mirror", "baby", "sweet"]
+        },
+        { "kind": "draw", "prompt": "Draw yourself in the dentist's chair with a big smile. Add the bright light above you.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "Open Wide: The Story of the Dentist",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-dentist", "templateLabel": "Open Wide: The Story of the Dentist", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "dentist",
+          "notes": ["Enamel is the hardest part of you", "Enamel is harder than bone", "A cavity is a hole in a tooth", "X-rays show inside a tooth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hardest Stuff in Your Body",
+          "text": "Going to the dentist is how you keep your teeth working for a lifetime. Your teeth are covered in enamel, which is the hardest stuff in your whole body. Enamel is even harder than bone. But there is a catch. When enamel gets a hole in it, your body cannot grow it back the way a scrape on your knee heals. That hole is called a cavity, and the dentist has to fix it. Cavities start when tiny germs in your mouth feed on the sugar left over from your food. As they eat, the germs make acid, and the acid slowly wears through the enamel. A dentist uses a small mirror and a bright light to hunt for the first signs before a cavity grows large. Sometimes they take an x-ray, which is a special photo that shows the inside of a tooth. Brushing twice a day and cutting down on sugary drinks keeps most cavities away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is enamel, and how hard is it?",
+            "What is a cavity?",
+            "How do germs make the acid that wears through enamel?",
+            "Why do you think the dentist checks for cavities before they grow large?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the hard covering on teeth; it is the hardest stuff in your body, harder than bone",
+            "a hole in the enamel of a tooth",
+            "they feed on leftover sugar and make acid as they eat",
+            "(inference: a small cavity is easier to fix and hurts less than a big one)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Hardest Stuff in Your Body", "How to Bake a Birthday Cake", "The Fastest Animals on Land"],
+          "answers": ["The Hardest Stuff in Your Body"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Teeth are covered in ____.", "A hole in a tooth is called a ____.", "Germs make ____ that wears through enamel.", "A dentist can take an ____ to see inside a tooth."],
+          "wordBank": ["enamel", "cavity", "acid", "x-ray"],
+          "answers": ["enamel", "cavity", "acid", "x-ray"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about enamel, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "Open Wide: The Story of the Dentist",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-dentist", "templateLabel": "Open Wide: The Story of the Dentist", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dentist",
+          "notes": ["Drilled teeth found from about 9,000 years ago", "Barbers once pulled teeth", "Pierre Fauchard, France, 1728", "The pointed pick is called an explorer"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "From the Barber's Chair to the Dentist's",
+          "text": "People have worried about their teeth for a very long time. Archaeologists have found human teeth almost nine thousand years old with tiny, careful holes drilled into them, which means someone was already trying to treat toothaches back in the Stone Age. For most of history, though, there were no dentists. If a tooth hurt badly enough, a barber, of all people, would simply pull it out. Barbers cut hair and pulled teeth in the same shop. Modern dentistry really began with a French doctor named Pierre Fauchard in the early seventeen hundreds. He was the first person to write everything down in one place: how teeth are shaped, what causes decay, and how to repair a damaged tooth instead of yanking it. People now call him the father of modern dentistry. Today a checkup is calm and quick. The dentist seats you in a reclining chair and uses a small angled mirror to inspect surfaces your eyes could never reach. A thin metal pick, called an explorer, tests each tooth for soft spots. Clear x-ray images reveal trouble hidden between teeth or under the gum. Most of the visit is not about fixing problems at all. It is about catching them early, while they are still small enough to stop."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What did barbers do besides cut hair, and what does that tell you about how teeth were treated long ago?",
+            "Why is Pierre Fauchard called the father of modern dentistry?",
+            "The passage says most of a checkup is not about fixing problems. What is it about instead?",
+            "Why do you think a dentist needs an angled mirror and an x-ray to do the job well?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they pulled teeth; long ago there were no dentists and painful teeth were simply removed",
+            "he was the first to write down in one place how teeth work, what causes decay, and how to repair a tooth",
+            "catching problems early while they are still small enough to stop",
+            "(inference: a lot of the tooth is hidden from plain sight, so tools reveal problems the eye cannot see)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Dentistry grew from rough tooth-pulling into careful, early care for teeth",
+            "Barbers were the best doctors in history",
+            "Teeth never gave people any trouble until modern times"
+          ],
+          "answers": ["Dentistry grew from rough tooth-pulling into careful, early care for teeth"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["decay → ____", "reclining (chair) → ____", "explorer (the tool) → ____"],
+          "rows": 1,
+          "answers": ["the rotting or breaking down of a tooth", "leaning back", "a thin metal pick that tests a tooth for soft spots"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: would you rather have a toothache in the Stone Age, in Fauchard's time, or today? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "Open Wide: The Story of the Dentist",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-dentist", "templateLabel": "Open Wide: The Story of the Dentist", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dentist",
+          "notes": ["Plaque is a living film of bacteria", "Acid attacks enamel after you eat", "Fluoride rebuilds weakened enamel", "How often you eat sugar matters most", "Enamel cannot grow back once it is gone"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The War Being Fought in Your Mouth",
+          "text": "Your mouth is one of the busiest places in your body, and it is never truly clean. Within minutes of brushing, a thin, invisible film called plaque begins forming on your teeth again. Plaque is not food. It is a living colony of bacteria, millions of them, held together in a sticky layer they build for themselves. These bacteria are not evil, and most do you no harm. The trouble starts with what they eat. Every time you swallow something sweet or starchy, the bacteria in the plaque get a meal too. As they digest those sugars, they release acid as a waste product. That acid sits against the tooth and begins dissolving the minerals out of the enamel, the glassy armor on the outside of every tooth. A single sugary snack can keep the acid working for around half an hour. Brush the plaque away, and the attack stops. Leave it, and day after day the acid drills deeper until it breaks through into the softer layer beneath. That is a cavity, and once enamel is gone, it does not grow back. This is why the dentist's advice sounds so simple and yet matters so much. Brushing and flossing physically scrape the bacteria off before they can do damage. Fluoride, the mineral added to most toothpaste and to a lot of tap water, actually rebuilds weakened enamel and makes it more resistant to acid. Cutting down on how often, not just how much, you eat sugar gives your teeth long stretches of peace to recover. A dentist does more than fix broken teeth. A good one is teaching you how to make sure fewer of them ever break in the first place."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain the step-by-step chain from eating a sugary snack to getting a cavity.",
+            "The passage says fluoride does two things to enamel. Name both. Quote the phrase the passage uses.",
+            "Why does the author stress how often you eat sugar rather than how much?",
+            "Is this passage written mainly to inform or to persuade? Point to two details that support your answer."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering plaque bacteria + acid + how brushing, fluoride, and less-frequent sugar prevent cavities)",
+            "bacteria in plaque eat the sugar, make acid, the acid dissolves minerals from the enamel, and repeated attacks break through into a cavity",
+            "it rebuilds weakened enamel and makes it more resistant to acid; quote: rebuilds weakened enamel and makes it more resistant to acid",
+            "(each time you eat, a new acid attack starts, so frequent snacking never lets the teeth recover)",
+            "(mainly to inform: it defines plaque and explains the process; some persuasive advice appears at the end)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the author's main purpose in writing this.",
+          "items": [
+            "To explain how cavities form and how they can be prevented",
+            "To sell one particular brand of toothpaste",
+            "To prove that all bacteria are dangerous"
+          ],
+          "answers": ["To explain how cavities form and how they can be prevented"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["plaque → ____", "resistant → ____", "dissolving → ____"],
+          "rows": 1,
+          "answers": ["a sticky film of living bacteria on the teeth", "able to stand up to something without being harmed", "breaking down and washing away"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should sugary drinks be sold in schools? Take a position and support it with two reasons, using at least one idea from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "Open Wide: The Story of the Dentist",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-dentist", "templateLabel": "Open Wide: The Story of the Dentist", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "dentist",
+          "notes": ["Fauchard's book Le Chirurgien Dentiste, 1728", "The barber pole stands for blood and bandages", "Enamel is non-living and cannot self-repair", "A cavity is made by bacteria, not candy alone", "Prevention now matters more than the drill"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Three Centuries from Pliers to Prevention",
+          "text": "For most of human history, a toothache was something you simply endured, and dentistry, when it existed at all, was mostly a matter of removal. If a tooth rotted and the pain grew unbearable, someone stronger than you pulled it out, often with pliers and no way to numb the shock. In medieval Europe that someone was frequently the local barber, whose shop offered haircuts, shaves, and extractions from the same chair. The striped red and white pole still seen outside some barbershops is a leftover from those days, when the trade mixed grooming with minor surgery. Care meant reacting to disaster after it had already struck. The shift from pulling teeth to saving them is surprisingly recent. In 1728 a French surgeon named Pierre Fauchard published a thick book that gathered, for the first time, everything then known about the mouth. He described the anatomy of teeth, argued that decay was a disease with causes rather than a punishment, and detailed ways to repair a damaged tooth instead of discarding it. Historians credit that book with founding modern dentistry, and it reframed the whole job. The dentist was no longer a puller of teeth but a keeper of them. Understanding why teeth decay only came later, and it is stranger than most people expect. A cavity is not really damage done to you by candy. It is damage done by living organisms that candy happens to feed. The surface of every tooth is coated within hours by plaque, a sticky biofilm built by colonies of bacteria. When you eat sugar, those bacteria eat it too, and their waste product is acid. The acid dissolves minerals out of the enamel, the hard outer shell of the tooth, and if the assault is repeated often enough the enamel finally fails. Because enamel is not living tissue, it cannot repair itself the way skin or bone does. Once the hole opens, only a dentist can close it. That single fact explains why the modern profession has quietly changed its goal again. The most important work now happens before anything breaks. Fluoride hardens enamel and helps rebuild the earliest weak spots. Regular cleanings strip away plaque the toothbrush misses. X-rays and a sharp eye catch decay while it is still microscopic. A good dentist measures success not by how many teeth are drilled and filled, but by how many never need to be. In three centuries the field has moved from the barber's pliers to the prevention of harm that has not happened yet, and that is a quiet kind of progress worth noticing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a whole phrase from it.",
+            "The author says dentistry's goal changed twice. Describe both shifts in order.",
+            "Find and copy the exact sentence that states what a cavity really is.",
+            "Why does the author bother to explain that enamel is not living tissue? What does that fact prove about the need for a dentist?",
+            "The final sentence calls prevention a quiet kind of progress worth noticing. Analyze what the author wants you to feel, and explain how the barber pole detail earlier helps set that feeling up."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary of the move from tooth-pulling to prevention)",
+            "first from pulling teeth to repairing and keeping them after Fauchard; then from repair toward preventing decay before it starts",
+            "It is damage done by living organisms that candy happens to feed.",
+            "(because enamel cannot heal itself, a cavity cannot fix itself, so only a dentist can close it; it proves the dentist is necessary)",
+            "(the author wants a sense of quiet respect for progress; the crude barber pole shows how far care has come from blood and pliers)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["extractions → ____", "biofilm → ____", "anatomy → ____", "reframed → ____"],
+          "rows": 2,
+          "answers": [
+            "the pulling out of teeth",
+            "a thin sticky layer of living microbes on a surface",
+            "the structure and parts of a living body",
+            "changed the way something is understood or presented"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage claims a cavity is caused by bacteria, not candy alone. Explain in your own words why that distinction matters.",
+            "Write one question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it means the real culprit is the bacteria feeding on sugar, so removing bacteria matters as much as avoiding sweets)",
+            "(student question + a credible source type such as a dentist, a science textbook, or a research study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A person who never ate any sugar would never need a dentist. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

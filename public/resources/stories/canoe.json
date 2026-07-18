@@ -1,0 +1,304 @@
+{
+  "key": "canoe",
+  "title": "The Canoe That Crossed an Ocean",
+  "blurb": "The oldest kind of boat we know of, a hollowed log that still floats after ten thousand years, and how a single paddle turns a push into a journey.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Canoe That Crossed an Ocean",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-canoe", "templateLabel": "The Canoe That Crossed an Ocean", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the canoe and the paddle." },
+        {
+          "kind": "image",
+          "imageKey": "canoe",
+          "notes": ["It floats on the water", "It is long and thin", "You use a paddle to move it", "Both ends come to a point"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a canoe. Say it like this: kuh-NOO. A canoe floats on the water. It is long and thin. Both ends come to a point. You sit inside and hold a paddle. You push the water back. The canoe glides forward. A canoe is quiet. It does not need a motor. You and the water do all the work."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the paddles in each row. Write how many in the box.",
+          "emoji": "🛶",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "boat    paddle" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it goes.",
+          "pairs": [
+            { "left": "canoe", "right": "water" },
+            { "left": "bird", "right": "sky" },
+            { "left": "car", "right": "road" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own canoe on the water. Add a paddle and a sun.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Canoe That Crossed an Ocean",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-canoe", "templateLabel": "The Canoe That Crossed an Ocean", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "canoe",
+          "notes": ["Say it kuh-NOO", "The first canoes were made from logs", "It is light, so you can carry it", "It points at both ends", "You move it with a paddle"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Boat Made from a Log",
+          "text": "A canoe is one of the oldest kinds of boat. Long ago, people made a canoe from one big log. They hollowed out the middle so there was room to sit. Then the log could float and carry them down the river. A canoe is light. You can even lift it and carry it over land to the next lake. This is called a portage. A canoe points at both ends. That way it can go forward or backward without turning around. People still paddle canoes today for fun and to fish."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What did people make the first canoes from?", "What does it mean to portage a canoe?", "Why can a canoe go forward or backward without turning around?"],
+          "rows": 2,
+          "answers": ["one big hollowed-out log", "to lift it and carry it over land to the next water", "because it is pointed at both ends"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A canoe is one of the oldest kinds of ____.", "People made the first canoes from one big ____.", "A canoe is ____, so you can carry it over land.", "A canoe points at both ____."],
+          "wordBank": ["boat", "log", "light", "ends"],
+          "answers": ["boat", "log", "light", "ends"]
+        },
+        { "kind": "draw", "prompt": "Draw a canoe on a river. Add trees on the bank and a fish in the water.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Canoe That Crossed an Ocean",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-canoe", "templateLabel": "The Canoe That Crossed an Ocean", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "canoe",
+          "notes": ["Say it kuh-NOO", "A dugout is carved from one log", "Bark canoes were sewn over a wooden frame", "The paddle has one flat blade", "Push the water back and the boat goes forward"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Canoe Works and How It Was Made",
+          "text": "A canoe is a small, open boat that is pointed at both ends. You sit or kneel inside and move it with a paddle. The paddle has one flat blade. When you pull the blade back through the water, the water pushes against it, and that push sends the canoe forward. It is a trade: you push the water one way, and the water pushes you the other way. Some of the oldest canoes were dugouts. To make one, people took a large log and slowly hollowed out the inside. They often used small fires to burn the wood, then scraped away the soft black char with tools. Little by little, the solid log became a boat. Other people built canoes from bark. In the northern forests, Indigenous makers peeled wide sheets of bark from birch trees. They stretched the bark over a light wooden frame and sealed the seams with sticky tree resin so no water could leak in. A bark canoe was so light that one person could lift it and carry it around a waterfall."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "How does pulling the paddle make the canoe move forward?",
+            "How did people hollow out a dugout canoe?",
+            "What did bark canoe makers use to keep water out?",
+            "Why do you think a bark canoe was useful on a trip with waterfalls?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the water pushes back against the blade and sends the boat forward",
+            "they burned the wood with small fires and scraped away the char",
+            "sticky tree resin sealed over the seams",
+            "(inference: it was light enough to lift and carry around the waterfall)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How Canoes Work and How They Were Made", "A List of Rivers in North America", "How to Catch Fish from a Boat"],
+          "answers": ["How Canoes Work and How They Were Made"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A ____ canoe is made by hollowing out a large log.", "Bark canoes were sealed with tree ____ so they would not leak.", "The paddle has one flat ____ that pushes the water."],
+          "wordBank": ["dugout", "resin", "blade"],
+          "answers": ["dugout", "resin", "blade"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: which way of making a canoe do you find more interesting, the dugout or the bark canoe, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Canoe That Crossed an Ocean",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-canoe", "templateLabel": "The Canoe That Crossed an Ocean", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "canoe",
+          "notes": ["Buoyancy: displaced water pushes the boat up", "Push the water back, the water pushes you ahead", "A canoe has a bow (front) and a stern (back)", "Polynesian voyaging canoes crossed the open Pacific", "Some had two hulls joined for balance", "Navigators steered by stars, waves, and birds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Floating, Paddling, and Crossing an Ocean",
+          "text": "A canoe is a narrow boat, open on top and tapered to a point at each end. It seems too thin and light to be safe, yet it floats without any trouble. The reason is a rule called buoyancy. When the hull settles into the water, it pushes some of that water out of the way. The water pushes back with equal force, holding the boat up. As long as the canoe and everything in it weigh less than the water they displace, the canoe rides on the surface. Moving a canoe follows a second rule. A paddler dips the blade and pulls it backward through the water. The water resists, and that resistance drives the boat in the opposite direction. Push the water back, and the water pushes you ahead. A skilled paddler learns to curve the stroke so the canoe holds a straight line instead of swinging side to side. The canoe is also one of the great tools of exploration. More than a thousand years ago, Polynesian navigators crossed thousands of miles of open Pacific Ocean in large voyaging canoes. Some had two hulls joined together for balance, with a sail to catch the wind. These sailors carried no maps and no compass. They read the stars, the shape of the waves, the flight paths of birds, and the color of distant clouds to find islands they could not yet see. Island by island, they settled the largest ocean on Earth, guided by nothing but the sky, the sea, and a wooden canoe."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why does a canoe float even though it looks thin and light? Use the passage.",
+            "Explain how a single paddle stroke moves the canoe forward.",
+            "The Polynesian navigators carried no maps or compass. What can you infer about their knowledge of the natural world?",
+            "Why might a canoe still be useful today, even with motorboats around?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it displaces water, and the water pushes back with equal force to hold it up",
+            "the paddle pushes water backward, and the water pushes the boat forward",
+            "(inference: they had deep, expert knowledge of stars, waves, birds, and clouds)",
+            "(opinion: it needs no fuel or motor, is quiet, and can go in shallow water)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A canoe floats by displacing water, moves by pushing water back, and helped people explore",
+            "Canoes are the fastest boats in the world",
+            "Only Polynesian people ever built canoes"
+          ],
+          "answers": ["A canoe floats by displacing water, moves by pushing water back, and helped people explore"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["buoyancy → ____", "displace → ____", "voyaging → ____"],
+          "rows": 1,
+          "answers": ["the upward push that holds a floating object up", "to push water out of the way", "traveling a long distance, often across the sea"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: imagine crossing open ocean in a canoe with no map. Describe what you would watch for to stay on course, and give two reasons it would be hard.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Canoe That Crossed an Ocean",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-canoe", "templateLabel": "The Canoe That Crossed an Ocean", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "canoe",
+          "notes": ["The Pesse canoe is about 10,000 years old", "It is the oldest boat ever found", "Canoe: open deck, single-bladed paddle", "Kayak: closed deck, double-bladed paddle", "Birchbark canoes sealed with spruce resin", "Pacific islanders built outrigger and double-hulled canoes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Oldest Boat on Earth",
+          "text": "The canoe may be the oldest boat humans ever built. Archaeologists in the Netherlands once uncovered a hollowed pine log, shaped and scraped by hand, that is roughly ten thousand years old. It is called the Pesse canoe, and it is the oldest boat ever found. Long before people built cities or wrote words down, they were carving logs into vessels that could carry them across water. A canoe is easy to recognize. It is narrow, open on top, and pointed at both ends, and it is paddled with a single-bladed paddle. This makes it different from a kayak, which has a closed deck and is driven with a double blade. The open shape of a canoe is practical. It leaves room for people, gear, fish, and cargo, and it lets a paddler climb in and out with ease. Different peoples built canoes from whatever their land offered. In the northern woodlands of North America, Indigenous makers built birchbark canoes: sheets of bark stitched over a frame of cedar and waterproofed with spruce resin. These boats were strong, astonishingly light, and easy to repair with materials found in the forest. Across the Pacific, islanders built outrigger and double-hulled canoes sturdy enough to sail for weeks across open ocean. The physics of a canoe rests on two ideas. The first is buoyancy: the hull displaces water, and the displaced water pushes back hard enough to hold the boat and its load on the surface. The second is action and reaction. When the paddler pulls water toward the stern, the water pushes the canoe toward the bow. Every stroke is an exchange of one push for another. For all its simple looks, the canoe changed history. It let people follow rivers deep into unmapped land, trade goods over enormous distances, and reach islands scattered far out at sea. It needs no fuel and no engine, only water, a paddle, and a person willing to pull. That is why, thousands of years after the Pesse log first floated, people still reach for a canoe."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What is the oldest boat ever found, and how old is it? Quote the phrase the passage uses for its age.",
+            "Is this passage written mainly to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says the canoe changed history. Give two examples from the text that support this.",
+            "According to the passage, what is the difference between a canoe and a kayak?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the canoe's age, design, physics, and importance)",
+            "the Pesse canoe; quote: roughly ten thousand years old",
+            "(inform: it defines terms and presents facts and examples)",
+            "(examples: following rivers into unmapped land, trading over long distances, reaching far islands)",
+            "a canoe is open and uses a single-bladed paddle; a kayak has a closed deck and a double blade"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["buoyancy → ____", "displaces → ____", "outrigger → ____", "waterproofed → ____"],
+          "rows": 1,
+          "answers": ["the upward push that keeps a boat floating", "pushes an amount of water out of the way", "a float attached beside a canoe to keep it steady", "made so that water cannot get through"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why do you think the canoe was invented independently by so many different peoples around the world?",
+            "The passage ends by saying people still reach for a canoe thousands of years later. Why do you think that is?"
+          ],
+          "rows": 3,
+          "answers": ["(inference: water was everywhere and the simple design worked well)", "(inference: it is simple, cheap, needs no fuel, and still works)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is a simple tool that lasts thousands of years more impressive than a fast modern machine? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Canoe That Crossed an Ocean",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-canoe", "templateLabel": "The Canoe That Crossed an Ocean", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "canoe",
+          "notes": ["The Pesse canoe, about 10,000 years old, is the oldest known boat", "Buoyancy: displaced water pushes back with equal weight", "Newton's third law: push water back, it pushes you forward", "Birchbark canoes: bark over cedar, sealed with spruce resin", "Polynesian voyaging canoes crossed thousands of miles of open sea", "The design appeared independently across the world"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Canoe: The Oldest Machine That Still Works",
+          "text": "Few machines are as old, as simple, or as widespread as the canoe, and few have shaped human history so quietly. Long before the wheel turned on any road, people were shaping boats out of single logs. The oldest boat ever discovered, the Pesse canoe, is a hollowed pine trunk pulled from a bog in the Netherlands, and it is around ten thousand years old. Every culture that lived beside water arrived, sooner or later, at the same idea: take something that floats, hollow it or frame it, and learn to steer. Consider first what a canoe actually is. It is a narrow, open hull, pointed at both ends and driven by a single-bladed paddle. That description hides two elegant pieces of physics. The first is buoyancy. A hull set on water pushes aside a volume of that water, and the displaced water pushes back with a force equal to its weight. As long as the boat and its cargo weigh less than the water they shove out of the way, they float. The second is Newton's third law. When a paddler drags the blade toward the back of the boat, the water is pushed backward, and the water pushes the canoe forward in reply. A canoe is a quiet argument between a person and a river, and the river always answers with an equal and opposite push. What makes the canoe remarkable, though, is not the physics but the reach. The design appeared independently almost everywhere there was water to cross. In the northern forests of North America, Indigenous nations built birchbark canoes, stitching bark over cedar frames and sealing the seams with spruce resin, producing boats light enough to carry around rapids yet strong enough for long journeys. Across the Pacific, Polynesian navigators lashed hulls together into voyaging canoes and sailed them across thousands of miles of empty ocean, steering by stars, swells, and the flight of seabirds, with no compass and no chart. On rivers everywhere, the dugout carried people, food, and goods between places that no road connected. This is the point worth holding onto. The canoe needs no fuel, no motor, and no factory. It asks only for water, a paddle, and a person willing to work with the current instead of against it. It is one of the few tools that a family can build, repair, and rely on for a lifetime using materials found within a day's walk of home. The engines that replaced it are faster, but they are also fragile, expensive, and hungry for fuel. The canoe, ten thousand years on, still floats on nothing but water and the strength of the person inside it. Simplicity, it turns out, is its own kind of power."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any full phrase from it.",
+            "Explain the two pieces of physics the author says the canoe hides. Cite the exact words the passage uses to name them.",
+            "The author writes that a canoe is a quiet argument between a person and a river. Explain what this metaphor means and how the paragraph supports it.",
+            "Identify where the passage turns from describing the canoe to arguing for its value. Quote the sentence that signals the turn.",
+            "Analyze the final sentence, Simplicity, it turns out, is its own kind of power. What claim is the author making, and does the rest of the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "buoyancy and Newton's third law; cite: The first is buoyancy and The second is Newton's third law",
+            "(the paddler pushes the water and the water pushes back equally, so paddling is an exchange, not a struggle)",
+            "(turn at: This is the point worth holding onto)",
+            "(claim: the canoe's simplicity is a strength; supported by its fuel-free, repairable, ten-thousand-year endurance)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["buoyancy → ____", "displaced → ____", "independently → ____", "dugout → ____"],
+          "rows": 2,
+          "answers": [
+            "the upward force water exerts on a floating object",
+            "pushed out of the way",
+            "on its own, without copying from anyone else",
+            "a canoe made by hollowing out a single log"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author claims the canoe appeared independently almost everywhere there was water. What kind of evidence would you need to test that claim?",
+            "Write one question this passage does not answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(archaeological finds and dating from many separate regions worldwide)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The best technology is not the most advanced, but the simplest thing that keeps working. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

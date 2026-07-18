@@ -1,0 +1,304 @@
+{
+  "key": "cement-mixer",
+  "title": "The Truck With a Deadline Inside It",
+  "blurb": "The spinning drum on a cement mixer is racing a chemical reaction, and if it ever stops, the whole load turns to stone.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Truck With a Deadline Inside It",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-cement-mixer", "templateLabel": "The Truck With a Deadline Inside It", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the big spinning drum." },
+        {
+          "kind": "image",
+          "imageKey": "cement-mixer",
+          "notes": ["It has a big drum that spins", "Inside is wet gray concrete", "The drum keeps turning all day", "It helps build roads and walls"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a cement mixer truck. It has a big drum on the back. The drum spins around and around. Inside is wet concrete, like thick gray soup. The drum keeps turning so the concrete stays soft. If it stopped, the concrete would go hard as a rock. The truck brings the concrete to build a road or a wall. Then it pours it out."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the trucks in each row. Write how many in the box.",
+          "emoji": "🚚",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "drum    spin" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each truck to its job.",
+          "pairs": [
+            { "left": "mixer truck", "right": "concrete" },
+            { "left": "fire truck", "right": "water" },
+            { "left": "dump truck", "right": "dirt" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own cement mixer. Give it a big spinning drum.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Truck With a Deadline Inside It",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-cement-mixer", "templateLabel": "The Truck With a Deadline Inside It", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "cement-mixer",
+          "notes": ["Concrete is cement, water, sand, and stones", "The drum spins the whole way there", "Spinning keeps the mix soft", "A spiral blade pushes it out the back"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Spinning Drum",
+          "text": "A cement mixer truck carries wet concrete to a building site. Concrete is a mix of cement powder, water, sand, and small stones. When you stir them together, they turn into thick gray goo. The big drum on the truck spins the whole way there. The spinning keeps the concrete moving so it does not set hard too soon. When the truck arrives, the driver spins the drum the other way. A spiral blade inside pushes the concrete out of the back. Workers use it to make roads, walls, and floors."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does the mixer truck carry?", "Why does the drum keep spinning?", "What happens when the driver spins the drum the other way?"],
+          "rows": 2,
+          "answers": ["wet concrete", "so the concrete does not set hard too soon", "a spiral blade pushes the concrete out the back"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The truck carries wet ____.", "The big ____ spins around.", "Concrete has cement, water, sand, and ____.", "Workers make roads, walls, and ____."],
+          "wordBank": ["concrete", "drum", "stones", "floors"],
+          "answers": ["concrete", "drum", "stones", "floors"]
+        },
+        { "kind": "draw", "prompt": "Draw the mixer truck pouring concrete for a new sidewalk.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Truck With a Deadline Inside It",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-cement-mixer", "templateLabel": "The Truck With a Deadline Inside It", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "cement-mixer",
+          "notes": ["Cement is a powder; concrete is the finished mix", "Wet concrete only stays soft about 90 minutes", "The drum reverses to pour the load out", "Concrete is one of the most used materials on Earth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Drum Never Stops",
+          "text": "Have you ever seen a truck with a giant drum turning slowly on its back? That is a cement mixer, and it is carrying one of the most useful materials on Earth: concrete. Concrete starts as four simple things: cement powder, water, sand, and small stones. On their own, none of them is very strong. But when they mix, the cement and water begin a chemical change called hydration. The soupy mix slowly turns rock hard. This is why the drum never stops turning on the drive. If the concrete sat still, it would set solid inside the truck, and that would ruin it. At the building site, the driver reverses the drum. A curved blade inside works like a screw and pushes the concrete out the chute. Workers must move fast, because fresh concrete only stays soft for about ninety minutes. After that, it becomes the sidewalks, bridges, and walls we use every day."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What four things make up concrete?",
+            "What is the name of the chemical change that hardens concrete?",
+            "How does the driver get the concrete out at the site?",
+            "Why do you think workers have to move fast once the truck arrives?"
+          ],
+          "rows": 2,
+          "answers": [
+            "cement powder, water, sand, and small stones",
+            "hydration",
+            "the driver reverses the drum and a blade pushes it out the chute",
+            "(inference: the concrete only stays soft for about ninety minutes before it hardens)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why the Drum Never Stops", "How to Paint a Truck", "The Fastest Car in the World"],
+          "answers": ["Why the Drum Never Stops"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["When cement and water mix, they begin a change called ____.", "The driver pushes the concrete out through the ____.", "Fresh concrete stays soft for about ninety ____."],
+          "wordBank": ["hydration", "chute", "minutes"],
+          "answers": ["hydration", "chute", "minutes"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would happen if the drum stopped turning, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Truck With a Deadline Inside It",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-cement-mixer", "templateLabel": "The Truck With a Deadline Inside It", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cement-mixer",
+          "notes": ["Concrete hardens by a reaction, not by drying", "Hydration works even underwater", "Angled blades mix one way, unload the other way", "A full load can weigh more than 60,000 pounds"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Truck That Cannot Stop Spinning",
+          "text": "Watch a cement mixer roll down the road and you will notice something odd. Even at a red light, the huge drum on its back keeps turning. It is not for show. That slow, constant spin is the whole reason the truck works. Inside the drum rides wet concrete, a mixture of cement, water, sand, and crushed stone. Most people think concrete hardens by drying out, but that is wrong. When cement meets water, it begins a chemical reaction called hydration. The tiny grains grow into a web of crystals that lock the sand and stone together into artificial rock. Hydration does not need air, so concrete can even set underwater. It also means the clock starts ticking the moment the water goes in. If the concrete were left to sit, hydration would harden it into a useless block, right there in the truck. So the drum turns constantly, folding the mix over and over to keep it loose and even. Angled blades inside do the work, like a spoon that never leaves the bowl. When the truck reaches the site, the driver spins the drum backward. The same blades now act like a screw, driving the concrete up and out through the chute. Because a full load can weigh more than sixty thousand pounds, these trucks are slow and careful. But they carry the second most used material on the planet, after water. Almost every road, bridge, and building you pass began as gray soup inside a spinning drum."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says most people are wrong about how concrete hardens. What do they get wrong, and what actually happens?",
+            "Why does the drum have to keep turning even at a red light?",
+            "How can the same blades both mix the concrete and pour it out?",
+            "Why do you think the driver plans the route carefully before leaving?"
+          ],
+          "rows": 2,
+          "answers": [
+            "they think it dries; really cement and water start a reaction called hydration that grows crystals",
+            "so hydration does not harden the load into a solid block before it is poured",
+            "spinning one way mixes the load, spinning backward turns the blades into a screw that pushes it out",
+            "(inference: the concrete only stays soft for a short time, so delays could ruin the load)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A mixer truck spins its drum constantly to keep concrete soft until it can be poured",
+            "Cement mixers are the fastest trucks on the road",
+            "Concrete is only used to build bridges"
+          ],
+          "answers": ["A mixer truck spins its drum constantly to keep concrete soft until it can be poured"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["hydration → ____", "artificial → ____", "chute → ____"],
+          "rows": 1,
+          "answers": ["the reaction when cement and water make crystals that harden", "made by people, not found in nature", "a sloped channel that concrete slides down"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining, in your own words, why a cement mixer is really a delivery truck with a deadline. Use at least two facts from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Truck With a Deadline Inside It",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-cement-mixer", "templateLabel": "The Truck With a Deadline Inside It", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cement-mixer",
+          "notes": ["Cement is one ingredient; concrete is the whole mix", "Hydration releases heat and works underwater", "One motor, one drum, two opposite jobs", "Second most used material on Earth, after water"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Gray Soup on a Deadline",
+          "text": "Concrete is the most widely used building material on Earth, and more of it is poured every year than any other substance except water. Yet the trucks that deliver it are strangely misunderstood. People call them cement mixers, but cement is only one ingredient. Cement is a fine gray powder. Mix it with water, sand, and crushed stone and you get concrete. The truck does not make the cement; it mixes and carries the concrete. The heart of the truck is the rotating drum, and its constant spin solves a race against time. When cement first touches water, a chemical reaction called hydration begins. Grains of cement sprout microscopic crystals that reach out, tangle together, and grip the sand and stone. Over hours those crystals harden the whole mass into artificial stone. Hydration is not drying; it is a reaction that releases heat and works just as well underwater. Once it starts, it cannot be paused, only slowed. That is why the drum never rests. By folding the mix continuously, angled steel blades keep the crystals from knitting into a solid lump before the concrete is poured. The clock is unforgiving. Most fresh concrete must be placed within about ninety minutes, so a mixer truck is really a delivery vehicle with a deadline built into its cargo. Drivers plan routes around traffic the way a pizza driver watches the clock, except a late load cannot be reheated. If concrete hardens in the drum, the only fix is hours of dangerous chipping, and sometimes the drum is ruined for good. Delivery is a clever trick of geometry. The same blades that mix the load can also unload it. Spinning the drum one way churns the concrete inward and keeps it blended. Spinning it the other way turns the spiral blades into a screw that lifts the concrete upward and spills it out the chute. One motor, one drum, two opposite jobs, chosen by the direction of the spin. None of this is glamorous. A loaded mixer crawls along at careful speeds, weighed down by tons of gray sludge. But that sludge becomes the foundations, bridges, and towers we trust with our lives, and it all depends on a drum that is not allowed to stop turning."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "The passage says people call these trucks cement mixers, but corrects them. What is the difference between cement and concrete?",
+            "Explain why the drum can never rest. Quote the phrase the passage uses about the reaction.",
+            "Is this passage written mainly to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the clever trick of geometry that lets one drum both mix and pour."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the hydration deadline plus the spinning drum that mixes and unloads)",
+            "cement is a fine gray powder, one ingredient; concrete is the finished mix of cement, water, sand, and stone",
+            "hydration cannot be stopped once it starts; quote: it cannot be paused, only slowed",
+            "(inform, with detail: it defines terms and explains how the truck works; the pizza comparison adds some entertainment)",
+            "(the same spiral blades push the mix inward one way, and act like a screw to lift it out when reversed)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["hydration → ____", "unforgiving → ____", "glamorous → ____", "foundations → ____"],
+          "rows": 1,
+          "answers": ["the reaction between cement and water that grows hardening crystals", "allowing no mistakes or delay", "exciting or impressive to look at", "the solid base a building is built on"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a late load cannot be reheated. What does that comparison help you understand?",
+            "Why might a job site order concrete from a plant nearby rather than one far away?"
+          ],
+          "rows": 3,
+          "answers": ["(unlike late pizza, hardened concrete is ruined for good, so the deadline is absolute)", "(inference: the ninety-minute window means distance and traffic can spoil the load)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: the passage says the humble mixer truck is one of the most carefully timed machines on the road. Do you agree? Take a position and support it with two reasons from the text.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Truck With a Deadline Inside It",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-cement-mixer", "templateLabel": "The Truck With a Deadline Inside It", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "cement-mixer",
+          "notes": ["Cement is the glue; concrete is the product", "Hydration is a reaction, not evaporation", "Reverse the spin and the spiral becomes a screw", "The Romans poured concrete two thousand years ago", "Concrete is second only to water among materials we use"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Deadline Inside the Drum",
+          "text": "Of all the vehicles on a construction site, the concrete mixer looks the least urgent. It is heavy, slow, and topped with a lazily rotating drum. Yet inside that drum a countdown is running, and understanding it reveals why this humble truck is one of the most carefully timed machines on the road. Begin with a common mistake. Almost everyone calls it a cement mixer, but cement and concrete are not the same thing. Cement is a fine gray powder, the glue. Concrete is what you get when that glue is combined with water, sand, and crushed stone. The powder is the ingredient; the mixed, pourable material is the product. The distinction matters because the entire drama of the truck depends on a reaction inside the cement itself. That reaction is called hydration, and it is widely misunderstood. Concrete does not harden by drying. When water reaches the cement grains, they begin growing microscopic crystals that interlock, reaching outward until they bind the sand and stone into a single artificial rock. Because this is a chemical reaction and not evaporation, it releases heat and proceeds perfectly well underwater. It also cannot be undone. From the instant the water is added, the concrete is slowly turning to stone, whether it has reached the job or not. This is the deadline the drum is built to fight. A constantly turning drum, fitted with angled steel blades, folds the mixture over itself so the growing crystals cannot knit into a solid mass before the concrete is poured. The spin does not stop the reaction; nothing can. It only keeps the material loose and workable long enough to be useful, usually about ninety minutes. Miss that window and the load is lost, sometimes taking the drum with it. The same drum that races the clock also solves the problem of unloading, and it does so with elegant simplicity. The blades inside form a spiral. Turned in one direction, they push the concrete deeper into the drum and keep it mixed. Reversed, that same spiral behaves like a screw, hauling the concrete up and out through the chute. A single engine turning a single drum performs two opposite tasks, and the only thing that changes is the direction of rotation. It is worth stepping back to see what the truck actually carries. Concrete is the most heavily used building material humans have ever produced, second only to water among the substances we consume. The roads under our feet, the bridges over our rivers, and the towers above our cities nearly all began as wet gray sludge sloshing inside a rotating drum. The Romans poured a version of it two thousand years ago, and their greatest dome still stands. So the next time a mixer truck holds up traffic, notice the drum. Its slow, patient turning is not laziness. It is a machine holding a chemical reaction at bay, buying minutes, so that a bucket of gray soup can arrive as stone exactly where we need it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage insists that concrete does not harden by drying. Explain what actually happens, and quote the sentence that says why drying is the wrong idea.",
+            "Explain how one drum performs two opposite tasks. Quote the phrase that names what changes between them.",
+            "Identify where the passage turns from how the truck works to why it matters, and explain how the author signals the shift.",
+            "The passage opens by calling the mixer the least urgent vehicle on the site and closes by telling readers to notice the drum. Analyze what the author is doing by framing the piece that way, and whether the passage earns the ending."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(cement and water react in hydration, growing crystals that bind the mix; cite: Because this is a chemical reaction and not evaporation, it releases heat and proceeds perfectly well underwater)",
+            "(spinning one way mixes, reversing turns the spiral into a screw that unloads; cite: the only thing that changes is the direction of rotation)",
+            "(at It is worth stepping back to see what the truck actually carries; the author steps back from mechanics to significance)",
+            "(the frame turns a boring-looking truck into a precisely timed machine, and the hydration deadline and dual-purpose drum earn the reversal)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["hydration → ____", "evaporation → ____", "workable → ____", "elegant → ____"],
+          "rows": 2,
+          "answers": [
+            "the chemical reaction between cement and water that hardens concrete",
+            "the drying of water into the air, which is not how concrete sets",
+            "soft and loose enough to be shaped or poured",
+            "simple and clever at the same time"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the Romans poured a version of concrete two thousand years ago. Why does the author include that fact so near the end?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(it shows concrete is ancient and lasting, raising the stakes of the material the truck carries)", "(student question plus a credible source type, such as an engineering text or a concrete plant)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The cement mixer is the most underrated machine on a construction site. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

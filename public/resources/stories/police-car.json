@@ -1,0 +1,284 @@
+{
+  "key": "police-car",
+  "title": "The Car That Comes to Help",
+  "blurb": "The flashing, wailing patrol car is really a small office on wheels, and the first one ran on batteries in 1899.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Car That Comes to Help",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-police-car", "templateLabel": "The Car That Comes to Help", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Point to the lights on top." },
+        {
+          "kind": "image",
+          "imageKey": "police-car",
+          "notes": ["Lights on top flash red and blue", "The siren goes woo woo", "It has a radio inside", "It drives fast to help"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a police car. It helps keep people safe. On top it has lights. The lights flash red and blue. It has a loud siren that goes woo woo. When you hear it, you move out of the way. The police car drives fast to help. Inside there is a radio. The police talk on the radio. Then they drive off to help someone."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the flashing lights in each row. Write how many in the box.",
+          "emoji": "🔵",
+          "items": ["4", "2", "3", "5"],
+          "answers": ["4", "2", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "red    blue" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "police car", "right": "road" },
+            { "left": "boat", "right": "water" },
+            { "left": "plane", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own police car. Give it big lights on top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Car That Comes to Help",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-police-car", "templateLabel": "The Car That Comes to Help", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "police-car",
+          "notes": ["The bar of lights sits on the roof", "Red and blue flash day and night", "A radio talks to other officers", "A small computer looks things up", "Other cars must pull over for it"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Car That Comes to Help",
+          "text": "A police car is not like the car your family drives. It is built to help in an emergency. On the roof sits a bar of lights. The lights flash red and blue so people can see them far away, both day and night. Under the hood the engine is strong, because the car may need to drive fast. Inside, the police officer has a radio to talk to other officers. There is also a small computer. The officer can type in a number and learn who a car belongs to. When the siren turns on, every other car must pull over and stop. That way the police car can get through and help right away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What colors are the flashing lights?", "What does the officer use to talk to other officers?", "What must other cars do when the siren turns on?"],
+          "rows": 2,
+          "answers": ["red and blue", "a radio", "pull over and stop"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The lights on the roof flash ____ and blue.", "The officer talks on a ____.", "A small ____ helps the officer look things up.", "When the siren turns on, other cars ____."],
+          "wordBank": ["red", "radio", "computer", "stop"],
+          "answers": ["red", "radio", "computer", "stop"]
+        },
+        { "kind": "draw", "prompt": "Draw a police car helping someone on a busy street. Add the flashing lights.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Car That Comes to Help",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-police-car", "templateLabel": "The Car That Comes to Help", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "police-car",
+          "notes": ["The lights on top are called a light bar", "Red shows up by day, blue by night", "The siren can wail or yelp", "A computer checks license plates", "A metal screen sits behind the seats"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Built for the Job",
+          "text": "An ordinary car is built to take a family to school or the store. A police car is built for a different job, so it is put together in a different way. Start with the engine. A police car may have to reach a call quickly, so its engine, brakes, and cooling system are all made tougher than the ones in a normal car. On the roof sits the light bar. Its flashing lights are red and blue, a pair of colors chosen because red stands out in daylight and blue carries better at night. A siren can switch between a long wail and a fast yelp, so drivers notice it even in heavy traffic. Inside, the officer works from a small computer mounted near the wheel. By typing in a license plate number, the officer can learn whether a car is stolen or its owner is being looked for. A tough metal screen usually separates the front seat from the back. The whole car is really a small office that can move at high speed."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Name two parts of a police car that are made tougher than a normal car's.",
+            "Why are the flashing lights red and blue?",
+            "What can the officer find out by typing in a license plate number?",
+            "Why do you think a police car needs a metal screen between the front and back seats?"
+          ],
+          "rows": 2,
+          "answers": [
+            "any two of: engine, brakes, cooling system",
+            "red stands out in daylight and blue carries better at night",
+            "whether a car is stolen or its owner is being looked for",
+            "(opinion: to keep the officer safe from a person riding in the back)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Built for the Job", "How to Wash Your Car", "The Story of the School Bus"],
+          "answers": ["Built for the Job"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The bar of lights on the roof is called the light ____.", "A ____ can switch between a wail and a yelp.", "The engine and brakes are made ____ than a normal car's."],
+          "wordBank": ["bar", "siren", "tougher"],
+          "answers": ["bar", "siren", "tougher"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: why does a police car need a strong engine, and why does it need bright lights?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Car That Comes to Help",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-police-car", "templateLabel": "The Car That Comes to Help", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "police-car",
+          "notes": ["Special police versions are called pursuit-rated", "The in-car computer is a mobile data terminal", "Radar bounces radio waves to read speed", "The first police car ran in 1899", "It was electric and reached about 16 mph"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "More Than a Fast Car",
+          "text": "People often think a police car is just a normal car painted with stripes and lights. The truth is more interesting. Carmakers build special versions of their vehicles, called pursuit-rated models, just for police work. A pursuit-rated car has a stronger engine, heavier brakes, a bigger cooling system, and extra electrical power to run all the equipment officers depend on. A regular family car would overheat or wear out if it were driven the way a patrol car is driven. Look inside and the differences grow. Bolted near the dashboard is a computer called a mobile data terminal. With it, an officer can read messages from the dispatcher, check a license plate, or pull up a map without touching a paper file. Many cars carry a radar or laser device that measures how fast other vehicles are moving. Radar works by bouncing radio waves off a moving car and timing how they return, a clever use of physics that gives a speed reading in a fraction of a second. The lights and siren are not just for show. Red and blue lights warn drivers from far away, and the siren can change its tone so people notice it over engine noise and music. History runs deep here too. The very first police car rolled through Akron, Ohio, in 1899. It ran on batteries, reached about sixteen miles an hour, and its first job was to carry a man home who had drunk too much. Police cars have come a long way since, but the goal has never changed: reach people who need help, quickly and safely."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why would a regular family car not last long if it were driven like a patrol car?",
+            "What is a mobile data terminal, and what can an officer do with it?",
+            "In your own words, explain how radar measures how fast a car is going.",
+            "What does the story of the 1899 Akron car show about how police cars have changed?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(inference: it is not built for hard, fast driving, so it would overheat or wear out)",
+            "a computer in the car; the officer can read dispatcher messages, check plates, and pull up maps",
+            "it bounces radio waves off the moving car and times how they come back to work out the speed",
+            "(inference: they went from slow and simple to fast and high-tech, but the goal of helping people stayed the same)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Police cars are specially built and equipped vehicles designed to reach and help people quickly",
+            "Every police car is painted black and white",
+            "Radar was invented in Akron, Ohio"
+          ],
+          "answers": ["Police cars are specially built and equipped vehicles designed to reach and help people quickly"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["pursuit-rated → ____", "dispatcher → ____", "overheat → ____"],
+          "rows": 1,
+          "answers": ["built tougher for the hard driving of police work", "the person who sends officers to calls by radio", "get too hot to keep working properly"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining why a police car has to be built differently from a family car. Give at least two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Car That Comes to Help",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-police-car", "templateLabel": "The Car That Comes to Help", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "police-car",
+          "notes": ["Pursuit-rated models are tuned for hard use", "Radar uses the Doppler effect", "The same effect shifts a passing siren's pitch", "Red cuts through daylight, blue through dark", "First police car: Akron, Ohio, 1899, electric"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Office That Chases",
+          "text": "From the outside, a police car looks like an ordinary sedan or SUV wearing bright paint. Underneath, it is a machine designed for a job most cars never face. Manufacturers sell pursuit-rated versions of certain models, tuned to survive hours of hard use. Compared with the family version, a pursuit-rated car gets a more powerful engine, upgraded brakes that resist fading during repeated hard stops, a larger cooling system, a heavier-duty suspension, and an electrical system big enough to power lights, radios, computers, and cameras all at once. Ordinary cars would falter under that load. The inside is closer to a small office than a passenger cabin. A mobile data terminal sits within the driver's reach, linking the officer to the dispatcher and to databases that can identify a license plate in seconds. Many cars carry radar or lidar to measure the speed of passing traffic. Radar sends out radio waves and reads the change in the waves that bounce back, an effect named for the physicist Christian Doppler. The same shift in pitch you hear when a siren passes you is the shift the radar measures in light or radio waves. Then there are the warnings. The light bar holds red and blue lamps because the two colors together are easy to spot in almost any condition, red cutting through daylight and blue through darkness. The siren offers several tones, from a slow wail for open roads to a rapid yelp for crowded intersections, because a sound that changes is far harder to ignore than a steady one. None of this is new in spirit. The first police car appeared in Akron, Ohio, in 1899. It was electric, topped out near sixteen miles per hour, and carried a single officer to collect people who had broken the peace. Over the next century the technology multiplied, but the purpose held firm. A modern patrol car is a rolling toolkit built around one idea: get a trained person to the place they are needed, quickly, safely, and ready to work when they arrive. Every upgrade, from the reinforced brakes to the glowing screen, serves that one stubborn goal."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Is this passage written mainly to inform, persuade, or entertain? Give one reason for your answer.",
+            "Find and quote the sentence that states the single purpose behind every upgrade on a police car.",
+            "According to the passage, what is the Doppler effect, and where else do you notice it in everyday life?",
+            "Name three features of a pursuit-rated car and explain what each one is for."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: police cars are specially built and equipped to reach people fast; the technology grew over time but the purpose stayed the same)",
+            "(inform: it explains how police cars are built and why, using facts and history)",
+            "(quote: get a trained person to the place they are needed, quickly, safely, and ready to work when they arrive)",
+            "the change in waves from a moving source; you notice it as the shift in pitch of a siren passing by",
+            "(any three, e.g. stronger engine for speed, upgraded brakes to resist fading, big electrical system to power the equipment)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["pursuit-rated → ____", "falter → ____", "multiplied → ____"],
+          "rows": 1,
+          "answers": ["tuned and reinforced to survive hard police driving", "start to fail or break down", "increased greatly in number or amount"]
+        },
+        { "kind": "handwriting", "prompt": "Some people think police cars should be quieter and less bright so they do not startle people. Others think loud and bright is exactly what keeps everyone safe. Write a short opinion paragraph taking a position, supported by two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Car That Comes to Help",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-police-car", "templateLabel": "The Car That Comes to Help", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "police-car",
+          "notes": ["Ford, Dodge, and Chevrolet build pursuit-rated models", "Mobile data terminal links to law-enforcement databases", "Radar and lidar read passing speeds", "Doppler effect: waves shift from a moving source", "First police car: electric, Akron, Ohio, 1899"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever Chasing: How a Police Car Is Really Built",
+          "text": "A police car is one of the most familiar machines in daily life, and one of the most misunderstood. To most people it is simply a fast car with stripes and flashing lights. In reality it is a purpose-built platform, engineered from the ground up to do things an ordinary vehicle cannot survive. Start with the machine itself. Automakers such as Ford, Dodge, and Chevrolet build pursuit-rated versions of certain models, and the word matters. A pursuit rating means the vehicle has been tested to endure the punishment of police driving: long idles, sudden accelerations, and repeated hard braking that would boil the fluid in ordinary brakes. These cars receive stronger engines, brakes designed to resist fading, oversized cooling systems, reinforced suspensions, and heavy-duty alternators that can power a small fleet of electronics without draining the battery. The everyday version of the same model, sold to families, would overheat, wear its brakes to nothing, or run its electrical system flat within a single shift. The interior tells the same story. Where a family car has a glovebox and cupholders, a patrol car has a mobile data terminal, a rugged computer that connects the officer to a dispatcher and to law-enforcement databases. In seconds it can return the history of a license plate. Many cars also mount radar or lidar to measure the speed of passing traffic. Radar relies on the Doppler effect, the same phenomenon that makes a siren seem to drop in pitch as it races past you. The device emits waves, measures the frequency of the waves reflected off a moving car, and converts that shift into a speed. It is pure physics, put to work at the roadside. Even the lights and siren are engineered choices rather than decoration. The light bar pairs red and blue because the combination remains visible across the widest range of conditions, red dominating in bright daylight and blue piercing the dark. The siren carries multiple tones because researchers found that a sound which changes, wailing here and yelping there, is far harder for a distracted driver to tune out than a single steady note. What is striking is how little the underlying purpose has changed. The first police car took to the streets of Akron, Ohio, in 1899. It was electric, managed a top speed near sixteen miles per hour, and made its debut hauling a lawbreaker to the station. More than a century of engineering separates that battery-powered wagon from a modern interceptor bristling with computers, cameras, and radar. Yet both were built to answer the same question: how do you get a trained, equipped person to the place they are needed as quickly and safely as possible? That is the quiet argument a police car makes every time it passes. It is not a sports car and not a family sedan. It is a rolling office, a communications hub, and an emergency vehicle folded into a single frame, and every reinforced part exists to shorten the distance between a call for help and the arrival of someone able to give it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "What does 'pursuit-rated' mean according to the passage? Quote the exact words that define what a pursuit rating tests for.",
+            "Explain the Doppler effect in your own words, then quote the everyday example the author uses to make it clear.",
+            "The author repeatedly measures the police car against a 'family car' or 'family sedan.' Explain what that repeated comparison does for the reader.",
+            "Identify where the passage turns from describing hardware to making an argument, and quote the sentence that signals the shift."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary covering the specially built machine, its equipment, and its single purpose)",
+            "(quote: tested to endure the punishment of police driving: long idles, sudden accelerations, and repeated hard braking)",
+            "(waves from a moving source shift in frequency; quote: the same phenomenon that makes a siren seem to drop in pitch as it races past you)",
+            "(analysis: measuring it against something familiar makes clear how specialized and different the police car really is)",
+            "(quote: That is the quiet argument a police car makes every time it passes)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["purpose-built → ____", "endure → ____", "bristling → ____", "underlying → ____"],
+          "rows": 2,
+          "answers": [
+            "made specifically for one job",
+            "to put up with or survive something hard",
+            "covered thickly with, full of",
+            "beneath the surface; basic or fundamental"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "The passage calls a police car 'a rolling office, a communications hub, and an emergency vehicle folded into a single frame.' Write a structured paragraph arguing whether that description is accurate. State your position, support it with two exact details from the passage, and answer one possible objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

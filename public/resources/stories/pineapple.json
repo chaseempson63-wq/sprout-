@@ -1,0 +1,287 @@
+{
+  "key": "pineapple",
+  "title": "The Fruit Made of Many Fruits",
+  "blurb": "The spiky pineapple looks like one fruit, but it is really dozens of little fruits fused into one.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Fruit Made of Many Fruits",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pineapple", "templateLabel": "The Fruit Made of Many Fruits", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the pineapple." },
+        {
+          "kind": "image",
+          "imageKey": "pineapple",
+          "notes": ["It is a sweet fruit", "It has a spiky green crown", "It grows on a low plant", "The skin is rough and bumpy"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pineapple. It is a fruit. A pineapple has a green crown on top. It looks like spiky hair. The skin is rough and bumpy. The inside is yellow and sweet. A pineapple grows on a low plant near the ground. It does not grow on a tall tree. Yum. A pineapple tastes sweet and a little sour."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the pineapples in each row. Write how many in the box.",
+          "emoji": "🍍",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "sweet    fruit" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to where each one grows.",
+          "pairs": [
+            { "left": "pineapple", "right": "low plant" },
+            { "left": "apple", "right": "tree" },
+            { "left": "carrot", "right": "ground" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own pineapple. Give it a spiky green crown on top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Fruit Made of Many Fruits",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pineapple", "templateLabel": "The Fruit Made of Many Fruits", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pineapple",
+          "notes": ["Say it PINE-apple", "It is really many fruits in one", "One plant grows one pineapple", "You can plant the crown to grow more"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fruit Made of Many Fruits",
+          "text": "A pineapple is not one fruit. It is many little fruits joined together. Look at the skin. Each bumpy part with an eye was once its own flower. All the flowers grow into one big fruit. A pineapple plant is short and spiky. It grows close to the ground. One plant makes just one pineapple, and it takes a long time. When you cut the leafy crown off the top, you can plant it. In time it can grow a whole new pineapple. That is a neat trick for a fruit."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a pineapple made of?", "Does a pineapple grow on a tall tree?", "What part can you plant to grow a new pineapple?"],
+          "rows": 2,
+          "answers": ["many little fruits joined together", "no, it grows on a low plant near the ground", "the leafy crown from the top"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A pineapple is made of many little ____.", "Each bumpy part with an eye was once a ____.", "A pineapple plant grows close to the ____.", "You can plant the leafy ____ to grow a new one."],
+          "wordBank": ["fruits", "flower", "ground", "crown"],
+          "answers": ["fruits", "flower", "ground", "crown"]
+        },
+        { "kind": "draw", "prompt": "Draw a pineapple plant growing in the sun. Add some spiky leaves.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Fruit Made of Many Fruits",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pineapple", "templateLabel": "The Fruit Made of Many Fruits", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pineapple",
+          "notes": ["Each bump is called an eye", "It is not a tree, it is a low plant", "It takes about two years to grow", "It first came from South America"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fruit That Fools You",
+          "text": "Cut a pineapple open and it looks like one fruit, but it is really made of dozens of small fruits fused together. Each rough bump on the skin, called an eye, started as its own flower. The plant grows a spike of flowers, and as they swell they merge into a single sweet fruit. That is why one pineapple can have a hundred eyes. The pineapple plant surprises people too. It is not a tree. It is a low, spiky plant, and it is related to the mosses that hang from trees in warm places. Each plant grows only one pineapple at a time, and that takes about two years. Pineapples come from South America. Long ago, sailors carried them across the ocean to Europe, where the fruit was so rare that only rich people could taste it. Some people even rented a pineapple just to show it off at a party, then gave it back."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did each bump on a pineapple's skin start as?",
+            "Is a pineapple plant a tree? What is it instead?",
+            "How long does one plant take to grow a single pineapple?",
+            "Why do you think only rich people in Europe could taste a pineapple long ago?"
+          ],
+          "rows": 2,
+          "answers": ["its own flower", "no, it is a low, spiky plant", "about two years", "(inference: they were rare and hard to get, so they cost a lot)"]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Fruit That Fools You", "How to Bake an Apple Pie", "The Tallest Tree in the World"],
+          "answers": ["The Fruit That Fools You"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Each bump on the skin is called an ____.", "The pineapple is related to the ____ that hang from trees.", "Pineapples first came from South ____."],
+          "wordBank": ["eye", "mosses", "America"],
+          "answers": ["eye", "mosses", "America"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the pineapple, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Fruit Made of Many Fruits",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pineapple", "templateLabel": "The Fruit Made of Many Fruits", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pineapple",
+          "notes": ["Bromelain in it breaks down protein", "The eyes spiral in a hidden pattern", "It once cost as much as a house", "Plant the leafy crown to grow a new one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Fruit Fit for a King",
+          "text": "A pineapple is one of the strangest fruits you can buy. What looks like a single fruit is actually many fruits grown together. Each diamond shape on the skin, called an eye, began as a separate flower. As the flowers ripen they fuse into one solid, sweet mass around a woody core. Count the spirals of eyes and you find a hidden pattern: they usually curve in two directions, often eight one way and thirteen the other, the same number sequence that shows up in pinecones and sunflowers. The plant itself is humble. It is not a tree but a low bush of stiff, sword-shaped leaves, and it grows only one pineapple every year or two. Farmers can snap the leafy crown off the top, push it into soil, and grow a brand new plant from it. Fresh pineapple carries a chemical called bromelain. Bromelain breaks down protein, which is why eating a lot of raw pineapple can make your tongue feel tingly or sore. Cooks use the same power to soften tough meat before cooking. When European sailors first brought pineapples home from South America, the fruit became a symbol of wealth. They were so hard to grow in cold countries that a single pineapple could cost as much as a small house, and hosts displayed one at a feast to show off."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "What does it mean to say a pineapple is many fruits grown together?",
+            "Why can eating a lot of raw pineapple make your tongue feel sore?",
+            "Why do you think a pineapple could cost as much as a small house in cold countries?"
+          ],
+          "rows": 2,
+          "answers": [
+            "each eye grew from a separate flower, and the flowers fused into one fruit",
+            "the bromelain in the fruit breaks down protein, which irritates the tongue",
+            "(inference: they were very hard to grow there, so they were rare and expensive)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The pineapple is an unusual fruit with a hidden pattern, a useful enzyme, and a history as a symbol of wealth",
+            "Pineapples are the easiest fruit to grow anywhere in the world",
+            "Meat should always be cooked with pineapple"
+          ],
+          "answers": ["The pineapple is an unusual fruit with a hidden pattern, a useful enzyme, and a history as a symbol of wealth"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["bromelain → ____", "fuse → ____", "humble → ____"],
+          "rows": 1,
+          "answers": ["a chemical in pineapple that breaks down protein", "to join together into one", "plain or not grand"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a pineapple grows, from flowers to fruit to a new plant. Use at least three details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Fruit Made of Many Fruits",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pineapple", "templateLabel": "The Fruit Made of Many Fruits", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pineapple",
+          "notes": ["Ananas comosus, in the bromeliad family", "Named nanas, meaning excellent fruit", "Columbus met it in 1493", "Bromelain stops gelatin from setting", "It does not ripen more after picking"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Pineapple's Long Journey",
+          "text": "To a botanist, a pineapple is not really a fruit at all. It is a whole cluster of fruits, dozens of them, fused into one body. Each scaly section on the surface, called an eye, is the ripened remains of a single flower. The plant sends up a spike crowded with flowers, and as they mature they swell and knit together around a central stalk. The tuft of stiff leaves on top is a small shoot that can be planted to grow an entirely new pineapple. The plant grows low to the ground and belongs to the bromeliad family, the same group as the gray Spanish moss that drapes southern trees. A single plant produces just one pineapple, and the wait can stretch to two years or more. The fruit came from the tropical lowlands of South America, where Indigenous people had grown it for centuries and called it by a Tupi word, nanas, meaning excellent fruit. In 1493 the crew of Christopher Columbus met the pineapple on a Caribbean island and carried it back to Europe. Because its rough skin looked like a pine cone, the Spanish named it piña, and English speakers added apple, the old word for any fruit, to make pineapple. In cold Europe the pineapple was nearly impossible to grow, so it became a badge of wealth and welcome. Wealthy families built heated glass houses just to raise a few, and a ripe pineapple at the center of a table announced that the host could afford anything. Carvings of pineapples still decorate gateposts and staircases as a sign of hospitality. Fresh pineapple contains an enzyme called bromelain that digests protein. It is the reason raw pineapple can sting the tongue, the reason it tenderizes meat, and the reason it refuses to let gelatin set into jelly. Heat destroys the enzyme, so canned pineapple behaves quite differently from fresh. One warning worth knowing: a pineapple does not grow sweeter after it is picked. Unlike a banana, it must be harvested ripe, which is why shipping the fresh fruit long distances has always been a challenge."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Why does a botanist say a pineapple is not really one fruit? Use evidence from the text.",
+            "How did the pineapple get its English name? Quote the words the passage uses.",
+            "Is this passage written mainly to inform, persuade, or entertain? Give two details that support your answer.",
+            "Why must a pineapple be picked ripe, unlike a banana?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: a pineapple is a cluster of fused fruits from South America; it became a European luxury and carries the enzyme bromelain)",
+            "it is a cluster of dozens of fruits fused into one body, and each eye is the remains of a single flower",
+            "the Spanish named it piña because it looked like a pine cone, and English added apple; quote: its rough skin looked like a pine cone",
+            "(inform: it defines terms and gives dated facts like the year 1493 and the enzyme bromelain)",
+            "it does not grow sweeter after picking, so it must be harvested ripe"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["enzyme → ____", "bromeliad → ____", "hospitality → ____", "harvested → ____"],
+          "rows": 1,
+          "answers": ["a substance that drives a chemical change, like breaking down protein", "the plant family the pineapple belongs to", "a warm, generous welcome to guests", "picked or gathered when ripe"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was the pineapple a fair symbol of wealth, or a silly thing to show off? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Fruit Made of Many Fruits",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pineapple", "templateLabel": "The Fruit Made of Many Fruits", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pineapple",
+          "notes": ["A multiple fruit of fused berries", "Eye spirals follow Fibonacci numbers", "Piña meant pine cone in Spanish", "Wealthy people rented one to show off", "Bromelain digests protein"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever a King's Fruit: How the Pineapple Fooled Everyone",
+          "text": "Few foods have fooled as many people as the pineapple, starting with what it even is. Slice one open and it seems like a single fruit, but a botanist sees a crowd. A pineapple is a multiple fruit, a fusion of dozens of separate berries that each grew from its own flower and then swelled together into one body. Every rough, diamond-shaped eye on the skin marks where one of those flowers once sat. If you count the spirals those eyes form, you find them curving in two directions at once, commonly eight rows spiraling one way and thirteen the other. Those are Fibonacci numbers, the same efficient packing pattern that governs pinecones, sunflower heads, and the scales of many seed cones. The plant is just as surprising. It is no tree. It is a squat rosette of tough, spiny leaves belonging to the bromeliad family, a relative of the Spanish moss that hangs from oaks in the American South. A single plant labors for roughly two years to produce exactly one pineapple, and the leafy crown twisted off the top can be rooted to start the cycle again. The fruit began in the lowlands of South America, where Indigenous peoples cultivated it long before Europeans arrived and named it nanas, an excellent fruit, in the Tupi language. In 1493, sailors with Christopher Columbus encountered it on the Caribbean island of Guadeloupe. To Spanish eyes the spiky fruit resembled a pinecone, so they called it piña; English later fastened on apple, the old catchall word for fruit, producing pineapple. In the cold cities of Europe the pineapple became something close to treasure. Growing one demanded a heated glass hothouse, called a pinery, and years of a gardener's patience, so a ripe pineapple could cost a small fortune. Guests who could not afford to eat one would rent a pineapple for a single evening to crown their table, then return it. The fruit became shorthand for wealth and welcome, which is why carved pineapples still perch on gateposts, bedposts, and staircases as a sign of hospitality. Two facts keep the pineapple interesting on the plate. First, its flesh is loaded with bromelain, an enzyme that dismantles protein. Bromelain is why raw pineapple can leave your tongue raw, why it tenderizes tough meat, and why fresh pineapple will not let gelatin set: the enzyme chews up the very protein that would form the jelly. Cooking or canning destroys bromelain, which is why canned pineapple sets in a dessert while fresh pineapple ruins it. Second, a pineapple does not sweeten after harvest the way a banana does, because it stores little starch to convert into sugar. It must be picked ripe, a stubborn fact that once made the fresh fruit almost impossible to ship until refrigerated transport and Hawaiian plantations, driven by companies like Dole, finally put pineapple within everyone's reach in the twentieth century."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain what a multiple fruit is, and quote the exact phrase the passage uses to define it.",
+            "How does the passage connect the pineapple to Fibonacci numbers? Cite the text.",
+            "Identify where the passage shifts from botany to history, and explain how the author signals the change.",
+            "The passage says fresh pineapple will not let gelatin set. Analyze how the author explains this and why the explanation is convincing."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "many separate fruits joined into one; quote: a fusion of dozens of separate berries",
+            "(the eyes spiral in two directions; cite: eight rows spiraling one way and thirteen the other)",
+            "(it turns at The fruit began in the lowlands of South America; a new paragraph and time markers like 1493 signal the shift)",
+            "(the author names bromelain and says it chews up the very protein that would form the jelly; the cause is specific and testable)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["rosette → ____", "cultivated → ____", "catchall → ____", "refrigerated → ____"],
+          "rows": 2,
+          "answers": [
+            "a circular cluster of leaves growing from one center",
+            "grown and cared for as a crop",
+            "a general word that covers many different things",
+            "kept cold to slow spoiling"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Why did the pineapple make a good symbol of wealth in cold European cities? Use evidence.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(it needed a heated hothouse and years to grow, so it cost a small fortune)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The pineapple's history as a luxury item is more interesting than its biology. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

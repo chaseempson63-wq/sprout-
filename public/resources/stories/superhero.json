@@ -1,0 +1,310 @@
+{
+  "key": "superhero",
+  "title": "The Superhero Who Could Only Listen",
+  "blurb": "A shy girl with no flashy powers, just the ability to hear anyone who needs help, and the choice to show up.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Superhero Who Could Only Listen",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-superhero", "templateLabel": "The Superhero Who Could Only Listen", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Wave hello to the superhero." },
+        {
+          "kind": "image",
+          "imageKey": "superhero",
+          "notes": ["Her cape is red", "She listens for help", "She is brave", "She saved a cat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is Nova. Nova is a superhero. She has a red cape. When Nova hears a cry for help, she runs fast. One day a cat was stuck in a tree. Nova climbed up. She brought the cat down. The cat was safe. Nova smiled. Being a hero means helping."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars on each cape. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["3", "4", "2", "5"],
+          "answers": ["3", "4", "2", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "cape    help" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "Nova", "right": "cape" },
+            { "left": "cat", "right": "tree" },
+            { "left": "star", "right": "sky" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own superhero. Give them a cape.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Superhero Who Could Only Listen",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-superhero", "templateLabel": "The Superhero Who Could Only Listen", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "superhero",
+          "notes": ["Her name is Nova", "Her power is super hearing", "She cannot fly", "She helps even when she is scared"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Nova's One Power",
+          "text": "Nova did not have super strength. She could not fly. Nova had one power. She could hear when someone needed help, even far away. Most people walked past trouble. Nova always heard it. One rainy day, she heard a small voice under a bridge. A boy had lost his way home. Nova was scared of the dark, but she went anyway. She walked the boy home. His mom hugged them both. Nova learned that being brave does not mean you are never scared. It means you help even when you are."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What was Nova's one power?", "Who did Nova help under the bridge?", "What did Nova learn about being brave?"],
+          "rows": 2,
+          "answers": ["she could hear when someone needed help", "a boy who had lost his way home", "being brave means helping even when you are scared"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Nova could ____ when someone needed help.", "The boy was lost under a ____.", "Nova was scared of the ____.", "Nova helped the boy get ____."],
+          "wordBank": ["hear", "bridge", "dark", "home"],
+          "answers": ["hear", "bridge", "dark", "home"]
+        },
+        { "kind": "draw", "prompt": "Draw Nova walking the boy home in the rain.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Superhero Who Could Only Listen",
+      "subtitle": "A reading sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-superhero", "templateLabel": "The Superhero Who Could Only Listen", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "superhero",
+          "notes": ["She lives in the town of Marrow", "She hears a call for help a mile away", "She is shy but brave", "No one knows she is the hero"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Quiet Hero of Marrow",
+          "text": "Everyone in the town of Marrow thought a superhero had to be loud. They pictured someone huge, someone who could lift a bus or throw a car. So nobody guessed that the hero of Marrow was a quiet girl named Nova. Nova's power was strange and gentle. She could hear a call for help from a mile away, even a whisper, even a worry that never turned into words. The trouble was that Nova was shy. When she heard someone crying, her heart raced and her feet felt heavy. She wanted to run home and hide. But every time, she made herself go. One winter night she heard an old man who had slipped on the ice and could not get up. The street was empty and cold. Nova was frightened, and she walked straight toward the sound anyway. She found him, kept him warm, and stayed until help arrived. The town never knew. Nova did not need them to."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What did the people of Marrow think a superhero should be like?",
+            "What was Nova's real power?",
+            "How did Nova feel when she heard someone in trouble?",
+            "Why do you think Nova helped even though she was shy?"
+          ],
+          "rows": 2,
+          "answers": [
+            "loud and huge, able to lift a bus or throw a car",
+            "she could hear a call for help from a mile away",
+            "her heart raced, her feet felt heavy, and she wanted to hide",
+            "(inference: she cared more about helping than about her own fear)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Quiet Hero of Marrow", "How to Lift a Bus", "The Loudest Town in the World"],
+          "answers": ["The Quiet Hero of Marrow"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Nova could hear a call for help from a ____ away.", "Nova was ____, so speaking up was hard for her.", "One winter night an old man ____ on the ice."],
+          "wordBank": ["mile", "shy", "slipped"],
+          "answers": ["mile", "shy", "slipped"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what makes Nova a hero, and would you want her power? Say why or why not.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Superhero Who Could Only Listen",
+      "subtitle": "A reading sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-superhero", "templateLabel": "The Superhero Who Could Only Listen", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "superhero",
+          "notes": ["She can only listen, not fly", "Her rule: if she hears it, she goes", "She helped a girl in a burning building", "No camera ever found her"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Nova's Rule",
+          "text": "For as long as she could remember, Nova had believed her power was broken. The heroes in the comic books could fly, or turn invisible, or bend steel with their bare hands. Nova could only listen. From across a city she could catch the exact sound of someone in trouble, a sob behind a locked door, a shout swallowed by traffic, sometimes a fear so quiet the person had not even spoken it out loud. For years this felt less like a gift and more like a weight she could not put down.\n\nThe problem was that hearing is not the same as helping. Anyone can hear a cry and keep walking. Nova had done it herself, more than once, on days when she was tired or afraid. Each time she walked away, the sound stayed with her, and it hurt worse than any fall.\n\nSo she made a rule. If she heard it, she went. It did not matter whether she was scared, whether it was raining, or whether anyone would ever thank her. The rule was simple, and simple was the only thing that got her feet moving.\n\nOne night the rule was tested. She heard a girl trapped on the roof of a burning building, too high for the ladders. Nova could not fly. She could not lift anything heavy. All she could do was climb, and talk, and keep the girl calm until the firefighters cut through. When it was over, no camera found her. She went home and slept. That was the whole job."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did Nova feel her power was broken at first?",
+            "Nova says hearing is not the same as helping. What does she mean?",
+            "Why do you think Nova made a rule instead of deciding each time?",
+            "What does the last line, that it was the whole job, tell you about how Nova sees being a hero?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it seemed useless next to flying or bending steel, since she could only listen",
+            "(you can hear a cry and still walk past; helping means acting on what you hear)",
+            "(inference: a rule stops her from talking herself out of it when she is scared)",
+            "(inference: to her, helping quietly and going home is the point, not fame or thanks)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A hero's real power can be choosing to help, not flashy strength",
+            "Firefighters never need help from anyone",
+            "Comic books are better than real life"
+          ],
+          "answers": ["A hero's real power can be choosing to help, not flashy strength"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["weight (she could not put down) → ____", "swallowed (by traffic) → ____", "tested → ____"],
+          "rows": 1,
+          "answers": ["a heavy burden you have to carry", "covered up or drowned out", "challenged to see whether it holds up"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: is Nova a real hero even though she has no flashy powers? Give two reasons from the story.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Superhero Who Could Only Listen",
+      "subtitle": "A reading sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-superhero", "templateLabel": "The Superhero Who Could Only Listen", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "superhero",
+          "notes": ["A hero without flashy powers", "Her power is hearing distress", "Courage shown as a repeated choice", "Helping even when no one is watching"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Power That Never Felt Like One",
+          "text": "There is a particular kind of story we tell about heroes, and it almost always begins with power. A boy is bitten by a spider. A rocket carries a child away from a dying world. Lightning strikes, a laboratory explodes, and an ordinary person wakes up able to do something impossible. We love these stories because they are a wish. If only some accident would hand us the strength to fix everything that frightens us.\n\nNova's story does not work that way, which is why most people never think of her as a hero at all. She was not struck by lightning. She was simply born able to hear trouble, a thread of distress from streets away, and for most of her life she considered this less a superpower than a curse. A person who can lift a bus gets to choose when to use their strength. A person who hears every cry for help cannot easily choose to stop hearing.\n\nThe hard truth Nova discovered is that the power was never the difficult part. The difficult part was the walking toward. It is one thing to hear a stranger in pain. It is another to turn your body in that direction when you are tired, when you are frightened, when no one is watching and no one will ever know you were there. Most people, most of the time, keep walking. Nova did too, until the weight of the cries she had ignored grew heavier than her fear.\n\nSo she built her whole heroism out of a single decision, repeated: if I hear it, I go. No costume made that easier. No applause rewarded it. Some nights it meant sitting in the cold with a frightened stranger, doing nothing more impressive than staying. And that, the story quietly argues, is the part the comic books leave out. The spider bite is the easy wish. The choice to show up, again and again, with no power but your own attention, is the thing that actually makes a hero."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Is the author's main purpose to inform, to persuade, or to entertain? Give one detail that supports your answer.",
+            "The passage says the power was never the difficult part. According to the text, what IS the difficult part? Quote the phrase.",
+            "Why does the author begin with spider bites and rockets before introducing Nova?",
+            "How is Nova's power different from being able to lift a bus, according to the passage?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: real heroism is the repeated choice to help, not a flashy power)",
+            "(persuade; it argues a claim, shown by the line that the story quietly argues its point)",
+            "the walking toward; quote: The difficult part was the walking toward",
+            "(to set up the common hero-wish so Nova's quiet heroism stands in contrast to it)",
+            "(you can choose when to use strength, but she cannot choose to stop hearing the cries)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["distress → ____", "applause → ____", "impressive → ____"],
+          "rows": 1,
+          "answers": ["a state of suffering or trouble", "clapping and praise from a crowd", "grand enough to make people admire it"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage calls the spider bite the easy wish. Explain what makes it easy compared to what Nova does.",
+            "Why might a hero who acts when no one is watching be braver than one who acts for a crowd?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the wish just hands you power; Nova has to choose to act every time, with no reward)",
+            "(inference: there is no applause pushing them, so the choice comes purely from wanting to help)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: do you agree that showing up to help matters more than having powers? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Superhero Who Could Only Listen",
+      "subtitle": "A reading sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-superhero", "templateLabel": "The Superhero Who Could Only Listen", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "superhero",
+          "notes": ["Heroes reflect what a culture fears", "Nova's only power is hearing trouble", "Bravery framed as a habit, not a feeling", "The cape was never the hard part"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Cape Was Never the Hard Part",
+          "text": "Every culture builds its heroes out of what it wishes it had. The old myths gave us Heracles, strong enough to strangle lions, because a world without medicine or police feared the wild and the violent. The modern comic book gave us the flying man and the armored genius because an age of machines and crowded cities dreams of individuals large enough to stand against them. Look closely at any superhero and you are really looking at a fear turned inside out. The power is the wish. That is worth remembering when we meet a hero who has almost no power at all.\n\nNova can hear trouble. That is the whole of it. From across a city she catches the sounds most people are built to miss: a sob behind a door, a shout drowned in traffic, sometimes a fear so private the frightened person has not yet said it aloud. She cannot fly to the trouble. She cannot lift the car or put out the fire. She can only hear it, and then decide what to do with what she has heard. For most of her life she thought this made her a failed hero, a person handed the alarm but none of the tools.\n\nThe story she lives in disagrees, and it makes its argument carefully. Notice how little time it spends on the hearing itself, and how much on the walking toward. Hearing, the story suggests, is common. Anyone can hear a cry and keep walking, it tells us, and then, unusually for a hero story, it admits that Nova has done exactly that, on days when she was tired or afraid. A lesser story would hide this. By confessing it, the writer makes Nova ordinary, and that is the point. If she is ordinary, then her kind of heroism is available to us too.\n\nWhat separates Nova from the rest of us is not her ears but a single rule she forces on herself: if she heard it, she went. The rule is deliberately simple, because simplicity is what defeats fear. A complicated hero weighs each situation and finds reasons to stay home. Nova removes the weighing. The rule turns courage from a feeling, which comes and goes, into a habit, which can be kept. This is the quiet, almost sneaky claim underneath the whole story: that bravery is less a trait you are born with than a decision you practice until it holds.\n\nThe ending refuses the reward we expect. Nova climbs to a trapped girl and does nothing spectacular. She could not fly and could not lift anything heavy, so all she can do is climb, talk, and keep the girl calm until real help arrives. Then no camera found her, and she goes home to sleep. The absence of applause is not an accident of the plot. It is the argument itself. A hero who acts only when watched is performing. A hero who acts when no one will ever know is simply good. By emptying the scene of witnesses, the writer strips heroism down to its bare engine and shows us what is still running.\n\nSo the story ends where it began, with a wish turned inside out. We wished for power because we were afraid of being helpless. Nova's story answers that we were never quite as helpless as we feared. We can all hear more than we admit, and we can all choose to walk toward it. The cape was never the hard part."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a phrase from it.",
+            "The author claims every superhero is a fear turned inside out. Explain this idea and give the passage's own example.",
+            "The passage admits Nova has walked past trouble herself. Quote the exact phrase and explain why the author includes this admission.",
+            "Analyze the role of Nova's rule that if she heard it, she went. What does the passage say the rule does to fear? Cite the text.",
+            "Why does the author end the rescue with the line that no camera found her? Explain how this detail supports the passage's argument."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: real heroism is the practiced choice to help rather than any superpower)",
+            "(each hero embodies a fear reversed into a wish; example: Heracles' strength answered a world that feared the wild and the violent)",
+            "quote: on days when she was tired or afraid; (it makes Nova ordinary so her heroism feels possible for the reader)",
+            "(the rule turns courage from a feeling into a habit; cite: bravery is less a trait you are born with than a decision you practice until it holds)",
+            "(with no witnesses the act cannot be a performance, so it shows heroism done for its own sake, which is the argument)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["armored → ____", "confessing → ____", "deliberately → ____", "spectacular → ____"],
+          "rows": 2,
+          "answers": [
+            "covered in protective metal or plating",
+            "admitting something openly, often something difficult",
+            "done on purpose, with clear intention",
+            "very dramatic or impressive to watch"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says bravery can become a habit that can be kept. Do you think courage really works like a habit? Give a reason.",
+            "Write a question this passage raises but does not answer, and name a kind of source that could help answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(opinion with reasoning)",
+            "(student question plus a credible source type, such as an expert or study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A person with no special powers cannot truly be a superhero. State your position, use two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

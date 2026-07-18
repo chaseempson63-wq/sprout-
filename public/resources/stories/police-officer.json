@@ -1,0 +1,310 @@
+{
+  "key": "police-officer",
+  "title": "The Officer Who Knows Your Street",
+  "blurb": "The neighbor with a badge who keeps the peace, and the science that can place anyone at the scene.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Officer Who Knows Your Street",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-police-officer", "templateLabel": "The Officer Who Knows Your Street", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Wave hello to the police officer." },
+        {
+          "kind": "image",
+          "imageKey": "police-officer",
+          "notes": ["Wears a blue uniform and a badge", "Drives a car with flashing lights", "Helps people who are lost", "Keeps the street safe"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a police officer. A police officer helps keep people safe. She wears a blue uniform and a shiny badge. She drives a car with bright lights on top. If you ever feel lost, you can find a police officer. She will help you get home. Police officers are helpers. It is good to know one on your street."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars on each badge. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "help    safe" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each helper with a thing they use.",
+          "pairs": [
+            { "left": "police officer", "right": "badge" },
+            { "left": "chef", "right": "pot" },
+            { "left": "farmer", "right": "tractor" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a police officer. Give the badge a big star.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Officer Who Knows Your Street",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-police-officer", "templateLabel": "The Officer Who Knows Your Street", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "police-officer",
+          "notes": ["The radio talks to other officers", "The badge has a number on it", "911 is the number to call for help", "Some officers work with dogs", "They help people stay safe"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Day on the Street",
+          "text": "A police officer has a busy day. In the morning she checks her radio. The radio lets her talk to other officers far away. She drives her car through the streets and watches for trouble. Sometimes she helps a family cross a busy road. Sometimes she finds a lost dog and brings it home. If there is a crash, she comes quickly to help. Her badge has a number on it. The number tells people who she is. At the end of the day, she has helped many people on her street."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What does the officer check in the morning?", "What does the radio let her do?", "What is on her badge?"],
+          "rows": 2,
+          "answers": ["her radio", "talk to other officers far away", "a number"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The officer talks to others on her ____.", "Her badge has a ____ on it.", "She drives her ____ through the streets.", "She helps people stay ____."],
+          "wordBank": ["radio", "number", "car", "safe"],
+          "answers": ["radio", "number", "car", "safe"]
+        },
+        { "kind": "draw", "prompt": "Draw the officer helping someone on your street.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Officer Who Knows Your Street",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-police-officer", "templateLabel": "The Officer Who Knows Your Street", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "police-officer",
+          "notes": ["A beat is the area an officer watches", "The badge number tells who they are", "K-9 dogs help sniff out clues", "911 reaches police, fire, and medics", "Detectives solve cases by finding evidence"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Officer on the Beat",
+          "text": "Long ago, towns were small and everyone knew each other. If something went wrong, a neighbor would sound the alarm and people would come running. As cities grew, that plan stopped working. Streets were full of strangers, and no one could watch it all. So towns began to pay a few people to keep watch day and night. We call those people police officers. An officer walks or drives the same part of town again and again. This area is called a beat. Walking the same beat, an officer learns the shops, the corners, and the families who live there. People learn to trust the officer, and the officer learns when something looks wrong. A good officer does not just chase trouble. She helps a lost child find home, calms an argument before it grows, and checks on people who live alone. The badge she wears is a promise. It says she has agreed to help keep the peace, and that the whole town is counting on her."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why did small towns not need paid police officers at first?",
+            "What is a beat?",
+            "Name two things a good officer does besides chasing trouble.",
+            "Why do you think it helps for an officer to walk the same beat every day?"
+          ],
+          "rows": 2,
+          "answers": [
+            "because everyone knew each other and neighbors would come help",
+            "the same part of town an officer watches again and again",
+            "helps a lost child, calms an argument, checks on people who live alone",
+            "(inference: she gets to know the people and notices when something is wrong)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Officer on the Beat", "How to Build a Fast Car", "The Tallest Building in Town"],
+          "answers": ["The Officer on the Beat"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["The area an officer watches is called a ____.", "People learn to ____ an officer they see often.", "The badge is a ____ to help keep the peace."],
+          "wordBank": ["beat", "trust", "promise"],
+          "answers": ["beat", "trust", "promise"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: tell about a time someone helped you, and how it felt to be helped.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Officer Who Knows Your Street",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-police-officer", "templateLabel": "The Officer Who Knows Your Street", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "police-officer",
+          "notes": ["Robert Peel founded London's police in 1829", "Officers were nicknamed bobbies after Robert", "Early bobbies carried a stick, not a gun", "911 is the US emergency number", "Detectives use fingerprints, unique to each person"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Peel's Idea: Policing by Trust",
+          "text": "Before the 1800s, most cities had no real police. Some paid night watchmen who carried lanterns and called out the hour. Others used soldiers, but soldiers were trained for war, not for helping neighbors. Crime grew as cities grew, and people wanted something better. In 1829, a British leader named Robert Peel started a new kind of force in London. His officers wore plain blue coats, not army red, so they would not look like soldiers. They carried no guns, only a wooden stick. Peel gave them a simple idea to live by: the police are the public, and the public are the police. He meant that officers are ordinary people paid to do full time what every good neighbor should do anyway. Because the officers were friendly and fair, Londoners nicknamed them bobbies, after Robert. Peel believed a police force only works if people trust it. An officer cannot watch every street at once. She depends on people to report trouble, to answer questions, and to help. If people fear the police instead of trusting them, they stop helping, and the whole town becomes less safe. That idea traveled across the world. Many police forces today still teach it: the job is not to rule over people but to serve them, and trust is the tool that makes everything else possible."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did Peel dress his officers in blue instead of army red?",
+            "In your own words, what did Peel mean by 'the police are the public, and the public are the police'?",
+            "Why does an officer depend on people trusting her?",
+            "Where does the nickname 'bobbies' come from?"
+          ],
+          "rows": 2,
+          "answers": [
+            "so they would not look like soldiers",
+            "officers are ordinary people paid to do full time what a good neighbor already does",
+            "she cannot watch everything alone, so she needs people to report trouble and help",
+            "from Robert Peel's first name, Robert"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Modern policing was built on the idea that police need the public's trust to work",
+            "London has the oldest buildings in the world",
+            "Soldiers make the best police officers"
+          ],
+          "answers": ["Modern policing was built on the idea that police need the public's trust to work"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["watchmen → ____", "force → ____", "depends → ____"],
+          "rows": 1,
+          "answers": ["men paid to keep watch, often at night", "an organized group with a job to do, here the police", "relies on or needs"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: do you think trust between people and the police still matters today? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Officer Who Knows Your Street",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-police-officer", "templateLabel": "The Officer Who Knows Your Street", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "police-officer",
+          "notes": ["No two people share the same fingerprints", "Ridges form before you are born and never change", "Powder sticks to skin oil to reveal a print", "Fingerprint records began in the early 1900s", "Detectives weigh many clues, not just one"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fingerprint That Gives You Away",
+          "text": "Every person carries a secret pattern on the tips of their fingers. Look closely and you will see tiny ridges that loop, arch, and swirl. These patterns form before you are born, and here is the strange part: no two people have ever been found with the same set. Not identical twins, not brothers, not anyone. Your fingerprints are yours alone, and they stay the same for your whole life. Detectives use this fact to solve crimes. When you touch something, the natural oils on your skin leave a faint copy of your ridges behind. Most of the time these prints are invisible. Investigators brush a fine powder over a surface, and the powder sticks to the oil, so the hidden print appears. They photograph it, lift it with tape, and compare it to prints already on file. If the loops and swirls line up, they have placed a person at the scene. The idea is older than you might think. In the late 1800s, officials in India and Britain realized that fingerprints could tell one person from another far better than a written description. By the early 1900s, police departments around the world were keeping fingerprint records. It was one of the first times science, rather than a witness's memory, could point to who was there. Fingerprints are only one clue among many. A careful detective also studies footprints, tire marks, torn cloth, and the order in which events happened. No single clue tells the whole story. The work is slow and patient, closer to solving a hard puzzle than to the fast chases you see on television. But it rests on a quiet, remarkable truth: each of us leaves a trail that belongs to no one else."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What makes fingerprints useful for telling one person from another? Quote a phrase from the passage.",
+            "How do investigators make an invisible print appear?",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "The author says the work is 'closer to solving a hard puzzle than to the fast chases you see on television.' Why do you think the author makes that comparison?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: fingerprints are unique and last for life; detectives use them, with other clues, to place a person at a scene)",
+            "no two people share the same set; quote: yours alone",
+            "they brush a fine powder over a surface and it sticks to the skin oil",
+            "(inform: it explains facts and history; details such as the powder method and the dates support this)",
+            "(to correct the TV idea and show that real detective work is slow and careful)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["ridges → ____", "faint → ____", "investigators → ____", "remarkable → ____"],
+          "rows": 1,
+          "answers": ["the raised lines on your fingertips", "weak or barely visible", "people who examine clues to find out what happened", "unusual and worth noticing"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why was fingerprinting a big change from relying on a witness's memory?",
+            "The passage says no single clue tells the whole story. Why is it risky to trust just one clue?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(a memory can be wrong or unclear; a fingerprint is exact and does not change)",
+            "(inference: one clue can be misread or misleading, while many clues together are more reliable)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should the police be allowed to keep everyone's fingerprints on file, or only those of people who have broken the law? Take a position and give two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Officer Who Knows Your Street",
+      "subtitle": "A reading and civics sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-police-officer", "templateLabel": "The Officer Who Knows Your Street", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "police-officer",
+          "notes": ["Robert Peel founded the London police in 1829", "His principle: the police are the public", "Policing by consent means power comes from trust", "Officers were nicknamed bobbies after Robert Peel", "Peel's early officers wore blue and carried no guns", "The debate over police power is still open today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Who Watches the Street? The Long Argument Over Police",
+          "text": "Every society has to answer an awkward question: who gets to stop a person from harming others, and by what right? For most of human history, the answer was whoever was strongest. A king's soldiers, a lord's guards, or an angry crowd might punish a wrongdoer, but there was no fair, steady system that treated everyone the same. The modern police officer is a fairly recent attempt to solve that problem, and the attempt is still being argued over today. The turning point came in London in 1829. A politician named Robert Peel convinced Parliament to create a full time, paid, uniformed police force for the city. The idea worried people. A permanent force of men with authority over ordinary citizens sounded, to many, like a standing army pointed inward at its own people. Peel understood the fear, and he answered it with a set of principles that still shape policing in much of the world. His most famous line captured the whole philosophy: the police are the public and the public are the police. Officers, he argued, were not a separate ruling class. They were citizens in uniform, given full time pay to do the duty that every citizen already shared. From that root grew an idea now called policing by consent. It holds that the police draw their power not from fear or force but from the approval of the community they serve. An officer who loses that approval cannot do the job, because no force is large enough to watch every person at every moment. The police need witnesses who will come forward, neighbors who will report what they saw, and ordinary people who obey the law because they believe it is fair, not because they are afraid. Take away that belief and policing collapses into a contest of power, which is exactly what Peel hoped to avoid. This is why the relationship between a community and its police is fragile and worth protecting. When people trust that officers will treat them fairly, they cooperate, crime is easier to solve, and everyone is safer. When that trust breaks, people stop calling for help, stop answering questions, and start solving disputes themselves, which is the very disorder police exist to prevent. History shows the balance is hard to hold. Police have sometimes protected the powerful instead of the public, or treated some neighborhoods far more harshly than others, and each failure chips away at the consent the whole system rests on. So the police officer stands in a strange and difficult spot. She holds real power, the power to stop, to search, sometimes to use force, yet the theory of her own job says that power is only borrowed, lent by the public and revocable the moment it is abused. That tension has no final solution. It has to be managed, argued about, and rebalanced by every generation. The question Peel faced is still open, and every society that wants both order and freedom has to keep answering it: who watches the street, and who watches the watchers?"
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a phrase from it.",
+            "Explain 'policing by consent' in your own words, then quote the exact sentence in which Peel sums up the philosophy.",
+            "According to the passage, what happens to a community when trust in the police breaks down? Cite the text.",
+            "Identify one move the author makes to handle the reader's likely objection that a police force is dangerous. How does the author do it?",
+            "The passage ends with a question rather than an answer. Analyze why the author chooses to end that way and whether it is effective."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: policing rests on public trust, and how much power police should hold is still debated)",
+            "(police power comes from public approval rather than force; quote: the police are the public and the public are the police)",
+            "(people stop calling for help, stop answering questions, and start solving disputes themselves; cite that sentence)",
+            "(the author states the fear openly, then shows Peel answered it with principles and unarmed citizen-officers in blue)",
+            "(ending on a question keeps the debate open and hands it to the reader; student judges whether that is effective)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["consent → ____", "revocable → ____", "fragile → ____", "disorder → ____"],
+          "rows": 2,
+          "answers": [
+            "approval or permission freely given",
+            "able to be taken back",
+            "easily broken and needing care",
+            "a breakdown of order, or chaos"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says police power is 'only borrowed.' Explain what that idea would mean for how an officer should behave.",
+            "Write a question this passage leaves unanswered, and name a kind of source that could help answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(an officer should use power carefully and fairly, because the public can take it back if it is abused)",
+            "(student question plus a credible source type, such as a historian, a police policy document, or community data)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A community always gets safer by giving its police more power. State your position, use two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

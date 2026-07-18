@@ -1,0 +1,304 @@
+{
+  "key": "unicorn",
+  "title": "The Unicorn Nobody Ever Caught",
+  "blurb": "The horse with one horn that people believed in for two thousand years, and the real animals hiding behind the legend.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Unicorn Nobody Ever Caught",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-unicorn", "templateLabel": "The Unicorn Nobody Ever Caught", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the unicorn's horn." },
+        {
+          "kind": "image",
+          "imageKey": "unicorn",
+          "notes": ["It looks like a white horse", "It has one horn", "It is not real, it lives in stories", "It is Scotland's animal"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a unicorn. It looks like a white horse. It has one long horn on its head. The unicorn is not real. It lives in old stories. In the stories the unicorn is kind and shy. It runs very fast. Its horn shines in the sun. People have told unicorn stories for a very long time."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars in each row. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "horn    white" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to its home.",
+          "pairs": [
+            { "left": "unicorn", "right": "forest" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own unicorn. Give it one big horn.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Unicorn Nobody Ever Caught",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-unicorn", "templateLabel": "The Unicorn Nobody Ever Caught", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "unicorn",
+          "notes": ["A make-believe animal from old stories", "It has one horn in the middle", "People once thought it was real", "It is the national animal of Scotland"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Unicorn Nobody Ever Caught",
+          "text": "The unicorn is a make-believe animal from old stories. It looks like a white horse with one long horn in the middle of its head. People have told stories about the unicorn for thousands of years. Long ago, some people believed the unicorn was real. They thought its horn could clean dirty water. In the stories, the unicorn is gentle and very hard to catch. It hides deep in the forest. The unicorn is the national animal of Scotland. You can find it on old flags and coins."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What animal does a unicorn look like?", "How many horns does it have?", "Which country uses the unicorn as its animal?"],
+          "rows": 2,
+          "answers": ["a white horse", "one horn", "Scotland"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A unicorn has one long ____.", "It looks like a white ____.", "It hides in the ____.", "The unicorn lives in old ____."],
+          "wordBank": ["horn", "horse", "forest", "stories"],
+          "answers": ["horn", "horse", "forest", "stories"]
+        },
+        { "kind": "draw", "prompt": "Draw the unicorn in a forest. Add some trees and flowers.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Unicorn Nobody Ever Caught",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-unicorn", "templateLabel": "The Unicorn Nobody Ever Caught", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "unicorn",
+          "notes": ["The legend may come from the rhinoceros", "Fake horns were narwhal tusks", "A horn was worth its weight in gold", "People believed it could find poison"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Horn That Fooled Everyone",
+          "text": "For most of history, people were not sure whether the unicorn was real. More than two thousand years ago, a Greek writer named Ctesias described a wild animal in far-off India. It had a single horn, a white body, and could run faster than any horse. He had never seen it himself. He was probably repeating stories about the Indian rhinoceros, a real animal with one horn. In the Middle Ages, people in Europe believed a unicorn's horn had magic power. They thought it could find poison and make dirty water safe to drink. A single horn could be sold for more than its weight in gold. Kings kept them locked away as treasure. Most of those horns were fakes. They were really the long spiral tusks of the narwhal, a small whale that lives in the cold Arctic sea. Sailors sold the tusks to people who had never seen the ocean, and no one knew the difference. So the unicorn stayed a mystery for hundreds of years."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What real animal was Ctesias probably describing?",
+            "What did people think a unicorn's horn could do?",
+            "What were the fake unicorn horns really made of?",
+            "Why do you think people believed the fake horns were real?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the Indian rhinoceros",
+            "find poison and make dirty water safe to drink",
+            "the spiral tusks of narwhals",
+            "(inference: they had never seen a narwhal or the ocean, so they could not tell)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Horn That Fooled Everyone", "How to Ride a Real Horse", "The Coldest Winter in Europe"],
+          "answers": ["The Horn That Fooled Everyone"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A Greek writer named ____ described the animal.", "The horns were really the tusks of a ____.", "A single horn could be sold for its weight in ____."],
+          "wordBank": ["Ctesias", "narwhal", "gold"],
+          "answers": ["Ctesias", "narwhal", "gold"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you have believed a unicorn horn was real back then, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Unicorn Nobody Ever Caught",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-unicorn", "templateLabel": "The Unicorn Nobody Ever Caught", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "unicorn",
+          "notes": ["An Indus Valley seal shows a one-horned beast", "Marco Polo's unicorns were really rhinoceroses", "The horn was called an alicorn", "The Hunt of the Unicorn tapestries still survive", "It stood for purity and gentleness"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal Everyone Argued About",
+          "text": "The unicorn is one of the oldest imaginary animals in the world, and for most of its long life people argued about whether it existed at all. A carved stone seal from the Indus Valley, made more than four thousand years ago, shows a powerful one-horned beast, though no one is certain what the artist meant by it. Centuries later, Greek and Roman writers filled their books with reports of a single-horned creature living somewhere beyond the edge of the known world, always in a land too distant to check. The confusion had a simple cause. Travelers really did meet one-horned animals, just not the graceful white horse of the paintings. When Marco Polo crossed Asia, he wrote that he had finally seen unicorns, then complained that they were ugly, wallowed in mud, and had the head of a wild boar. He had found rhinoceroses, and he was disappointed. In medieval Europe the unicorn became a symbol as much as an animal. It stood for purity and gentleness, and legend said only a calm, kind person could ever approach one. Weavers spent years making enormous tapestries that told the story of a unicorn hunt, thread by thread, and the most famous of these still hang in a museum today. Behind the beauty was a hard business. The horn, called an alicorn, was believed to heal sickness and reveal poison, so wealthy families paid fortunes for one. Almost every alicorn was a narwhal tusk. The legend and the trade fed each other for centuries, until science slowly explained the animals people had really been seeing."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did reports of the unicorn keep coming from lands that were far away?",
+            "What did Marco Polo actually see, and why was he disappointed?",
+            "What did the unicorn come to stand for in medieval Europe?",
+            "Why do you think a made-up animal stayed popular for so long?"
+          ],
+          "rows": 2,
+          "answers": [
+            "those places were too distant to check, so the stories could not be tested",
+            "rhinoceroses; they were ugly and muddy, not the graceful horse he expected",
+            "purity and gentleness, an animal only a kind person could approach",
+            "(inference: it was beautiful, it fit their beliefs, and no one could prove it wrong)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "People believed in the unicorn for ages because real one-horned animals and old stories kept the legend alive",
+            "Marco Polo was the first person to ride a unicorn",
+            "Tapestries are the best way to hunt animals"
+          ],
+          "answers": ["People believed in the unicorn for ages because real one-horned animals and old stories kept the legend alive"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["imaginary → ____", "alicorn → ____", "tapestries → ____"],
+          "rows": 1,
+          "answers": ["not real, made up in the mind", "the name for a unicorn's horn", "large woven cloth pictures that tell a story"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: the passage says the legend and the trade fed each other. Explain what that means in your own words, using two details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Unicorn Nobody Ever Caught",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-unicorn", "templateLabel": "The Unicorn Nobody Ever Caught", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "unicorn",
+          "notes": ["Ctesias described it around 400 BC", "Likely a garbled Indian rhinoceros", "The re'em was mistranslated as unicorn", "Alicorns were narwhal tusks worth fortunes", "Scotland's arms show a chained unicorn"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal That Refused to Disappear",
+          "text": "Few imaginary animals have been believed in as stubbornly, or for as long, as the unicorn. Its story is really the story of how people once made sense of a world they could not fully explore. When ancient writers heard secondhand reports of a single-horned animal in distant lands, they did not dismiss them. They wrote them down as fact. The Greek physician Ctesias described a swift one-horned creature in India around 400 BC, almost certainly a garbled account of the Indian rhinoceros passed through many retellings. For the next two thousand years, the unicorn lived in exactly that space: too far away to see, too well described to ignore. Language helped the legend along. When Hebrew scripture was translated into Greek and later English, the word re'em, which probably meant a wild ox that is now extinct, was rendered as unicorn. Suddenly the animal appeared in the most important book in Europe, and doubting it could feel like doubting scripture itself. The unicorn was also big business. Its horn, the alicorn, was thought to sweat in the presence of poison and to purify any water it touched. In an age when poisoning was a genuine fear among the powerful, a cup made of alicorn was worth many times its weight in gold. Kings and popes kept them among their greatest treasures. Almost none were real. They were the spiraled tusks of the narwhal, a whale of the Arctic that few Europeans would ever see. The unicorn survived the end of that trade by becoming a symbol. It stood for purity, for wild freedom, and for something that could be admired but never truly owned. Scotland placed it on the royal coat of arms, where a chained unicorn still stands today, because legend held that a free unicorn could never be captured. That single detail shows how the myth had changed. The animal no longer needed to be real to be meaningful. For most of human history, the line between the real and the imagined ran through places no one had visited and books no one dared question. The unicorn lived on that line, and it stayed there until exploration and science finally drew the border somewhere else."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "How did a translation help the unicorn become widely believed? Quote the word the passage says was mistranslated.",
+            "Why was the alicorn so valuable? Point to the detail the passage gives.",
+            "Is this passage written mainly to inform, persuade, or entertain? Give two details that support your answer.",
+            "Explain what the chained unicorn on Scotland's arms shows about how the myth changed."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the rhinoceros origin, the trade in narwhal tusks, and the shift to symbol)",
+            "the word re'em was translated as unicorn, putting it in scripture; quote: re'em",
+            "(it was believed to detect poison and purify water, so it was worth many times its weight in gold)",
+            "(inform, with detail: it defines terms and gives dates and facts, with a reflective tone at the end)",
+            "(a free unicorn could never be caught, so a chained one is a symbol, not a claim the animal is real)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["secondhand → ____", "garbled → ____", "extinct → ____", "symbol → ____"],
+          "rows": 1,
+          "answers": ["heard from others, not seen directly", "mixed up or confused in the retelling", "no longer existing, died out", "a thing that stands for an idea"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says the unicorn was too far away to see, too well described to ignore. Explain why that combination kept the belief alive.",
+            "Why might a belief be harder to question once it appears in an important book?"
+          ],
+          "rows": 3,
+          "answers": ["(no one could check it, but the detailed reports made it seem trustworthy)", "(inference: doubting the book feels like doubting an authority people trust)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it a bad thing that people believe in things they cannot prove, like the unicorn once was? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Unicorn Nobody Ever Caught",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-unicorn", "templateLabel": "The Unicorn Nobody Ever Caught", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "unicorn",
+          "notes": ["Ctesias, around 400 BC, first described it", "Origin: a distorted Indian rhinoceros", "re'em mistranslated as unicorn in scripture", "Alicorns were narwhal tusks sold as poison detectors", "Scotland's royal arms show a chained unicorn"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Unicorn That Changed Jobs",
+          "text": "The unicorn is proof that a creature can shape human history without ever having existed. For more than two thousand years, serious people, including physicians, priests, and kings, treated it as real, and the reasons they did so reveal how knowledge itself used to work. The legend began not in imagination but in bad reporting. Around 400 BC the Greek physician Ctesias, who never traveled east of the Mediterranean, described a wild one-horned animal in India that could outrun any horse. Historians now agree he was relaying a distorted account of the Indian rhinoceros, an animal genuinely armed with a single horn but otherwise nothing like the elegant beast that Europe would later imagine. That gap between the report and the reality is the whole story of the unicorn in miniature. A real animal, seen by someone, described to someone else, and copied from book to book until it turned into something new. Two forces then locked the myth in place. The first was scripture. When ancient Hebrew texts were translated, the word re'em, most likely a wild ox that no longer exists, was turned into the Greek monokeros and later the English unicorn. A rumor from the edge of the map now sat inside the sacred book at the center of European life, and to doubt the animal could feel like doubting God. The second force was money. The unicorn's horn, or alicorn, was believed to detect poison and cure disease, and in courts where poison was a real danger, buyers paid fortunes for it. Almost every alicorn was in fact the tusk of a narwhal, an Arctic whale, sold by traders who profited enormously from keeping its true origin secret. Belief and commerce reinforced each other. The more people paid, the more real the animal seemed, and the more real it seemed, the more they paid. What is striking is how the unicorn survived being disproved. As explorers mapped the distant lands where it was supposed to live and naturalists explained the rhinoceros and the narwhal, the animal quietly stepped out of natural history and into symbolism. It came to stand for purity, for gentleness, and above all for a wildness that cannot be tamed. Scotland made this explicit by placing a chained unicorn on its royal arms, drawing on the old belief that a free unicorn could never be taken alive. The chain admits the truth and keeps the meaning at the same time. That shift is the most interesting thing about the unicorn. Most false beliefs simply die when the evidence arrives. The unicorn did not die. It changed jobs. It stopped being an answer to the question of what animals live in the world and became an answer to a different question about what people value and imagine. Seen that way, the unicorn is less a mistake than a mirror. For most of history the boundary between the real and the imagined ran through unexplored country and unquestioned books, and the unicorn lived exactly on that boundary. When science finally moved the line, the unicorn did not vanish. It simply stayed on the far side, where it remains, useful and beloved, to this day."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage says the legend began in bad reporting. Explain what it means by this and cite the phrase it uses to sum up the whole process.",
+            "Explain the two forces that locked the myth in place, and how the passage says belief and money were connected.",
+            "Identify the turn in the passage: where does the focus shift, and how does the author signal it?",
+            "The author writes that the unicorn changed jobs and is less a mistake than a mirror. Analyze what these two phrases claim and whether the passage earns them."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary of the unicorn's origin, spread, and shift into symbol)",
+            "(a real rhino was misreported and copied until it became a new animal; cite: That gap between the report and the reality is the whole story of the unicorn in miniature)",
+            "(scripture and money; belief and commerce reinforced each other, so paying more made it seem more real)",
+            "(at What is striking is how the unicorn survived being disproved; the author signals the pivot from why it was believed to how it outlived disproof)",
+            "(it shifted from a false fact to a lasting symbol, and became a mirror of human values; the tapestry, alicorn, and Scotland evidence support the claim)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["distorted → ____", "symbolism → ____", "naturalists → ____", "commerce → ____"],
+          "rows": 2,
+          "answers": [
+            "twisted out of its true shape or meaning",
+            "the use of an image to stand for a larger idea",
+            "people who study animals and the natural world",
+            "the buying and selling of goods"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage claims most false beliefs die when the evidence arrives, but the unicorn did not. Explain why this one survived when others do not.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(it stopped being a factual claim and became a symbol, so evidence could not disprove it)", "(student question + a credible source type)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A belief that turns out to be false can still be worth keeping. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

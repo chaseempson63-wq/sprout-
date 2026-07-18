@@ -1,0 +1,315 @@
+{
+  "key": "abacus",
+  "title": "The Machine Made of Beads",
+  "blurb": "The ancient counting tool that keeps up with a calculator, and can teach your brain to add without one.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Machine Made of Beads",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-abacus", "templateLabel": "The Machine Made of Beads", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the beads." },
+        {
+          "kind": "image",
+          "imageKey": "abacus",
+          "notes": ["Say it AB-uh-kus", "It has beads on rods", "You slide the beads to count", "It is very very old"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is an abacus. Say it like this: AB-uh-kus. It has beads on rods. The beads slide. You push them with your finger. Each bead is one thing you count. Slide one bead for one apple. Slide two beads for two apples. People used the abacus to count long before there were phones. It helps you count."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the beads in each row. Write how many in the box.",
+          "emoji": "🔵",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the words, then say them out loud.", "text": "count    beads" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "abacus", "right": "beads" },
+            { "left": "book", "right": "words" },
+            { "left": "clock", "right": "time" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own abacus. Give it lots of beads.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Machine Made of Beads",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-abacus", "templateLabel": "The Machine Made of Beads", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "abacus",
+          "notes": ["Say it AB-uh-kus", "Each rod counts a different amount", "The Chinese one is a suanpan", "It works with no batteries", "Kids still learn it today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine Made of Beads",
+          "text": "An abacus is a counting tool. It is a frame with rods, and on each rod there are beads that slide up and down. Each rod stands for a different amount. The first rod counts ones. The next rod counts tens. The rod after that counts hundreds. So a few beads can stand for a big number. Kids in many countries still learn to use one. Moving the beads with your fingers helps your brain picture numbers. The abacus is very old. People were sliding beads to add and subtract thousands of years ago, long before anyone had a calculator."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is an abacus made of?", "What does the first rod count?", "How do you use an abacus?"],
+          "rows": 2,
+          "answers": ["a frame with rods and beads", "ones", "you slide the beads with your fingers"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["An abacus is a counting ____.", "The beads ____ up and down.", "Each ____ counts a different amount.", "People used it before the ____."],
+          "wordBank": ["tool", "slide", "rod", "calculator"],
+          "answers": ["tool", "slide", "rod", "calculator"]
+        },
+        { "kind": "draw", "prompt": "Draw an abacus with three rods. Put some beads on each rod.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Machine Made of Beads",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-abacus", "templateLabel": "The Machine Made of Beads", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "abacus",
+          "notes": ["Say it AB-uh-kus", "Each rod is a place value", "The Chinese abacus is the suanpan", "It is thousands of years old", "No power, no battery needed"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Counting Before Calculators",
+          "text": "Long before anyone had a calculator, people needed a fast way to add and subtract. One of the best tools they invented was the abacus. An abacus is a wooden frame filled with rods, and on each rod sit beads that slide back and forth. What makes it clever is that each rod stands for a different place value. One rod is the ones, the next is the tens, the next is the hundreds, and so on. To show the number 24, you slide two beads on the tens rod and four beads on the ones rod. The abacus is thousands of years old. Merchants in ancient China, Rome, and the Middle East all used counting boards or bead frames to keep track of money. The Chinese version is called a suanpan. A skilled user can move the beads so quickly that the abacus keeps up with a modern calculator for adding and subtracting. It never runs out of battery, and it never needs to be plugged in."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What is each rod on an abacus used for?",
+            "How would you show the number 24 on an abacus?",
+            "What is the Chinese abacus called?",
+            "Why do you think people still used the abacus even after other tools were invented?"
+          ],
+          "rows": 2,
+          "answers": [
+            "a place value, like ones, tens, or hundreds",
+            "two beads on the tens rod and four beads on the ones rod",
+            "a suanpan",
+            "(inference: it is fast, reliable, and needs no power)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Counting Before Calculators", "How to Build a Robot", "The Tallest Mountain in China"],
+          "answers": ["Counting Before Calculators"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Each rod stands for a place ____.", "The Chinese abacus is called a ____.", "Merchants used counting ____ to track money."],
+          "wordBank": ["value", "suanpan", "boards"],
+          "answers": ["value", "suanpan", "boards"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what does an abacus do, and would you like to try using one? Say why.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Machine Made of Beads",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-abacus", "templateLabel": "The Machine Made of Beads", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "abacus",
+          "notes": ["Soroban is the Japanese abacus", "One top bead is worth five", "Four lower beads are worth one each", "Mental abacus is called anzan", "It is over 2000 years old", "Still taught in schools today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "One Bead Worth Five",
+          "text": "The abacus is one of the oldest calculating tools ever made, and it is still taught in schools today. At first it looks simple: a frame, some rods, and rows of beads that slide. But the design hides a clever idea. Each rod stands for a place value, ones on the right, then tens, then hundreds, so a small number of beads can represent a huge number. The Japanese abacus, called a soroban, is even more efficient. A bar divides each rod into two parts. Below the bar sit four beads, and each one is worth one. Above the bar sits a single bead worth five. That means one rod can show any digit from zero to nine using only five beads. To read the number, you look at which beads have been pushed toward the middle bar. The real surprise is what happens after a child practices for a while. Because the fingers always move the beads in the same patterns, the brain starts to picture the beads without the frame. Expert students can put the physical abacus away and calculate by imagining the beads moving in their mind. This skill is called mental abacus, and children trained in it can add long lists of numbers faster than most adults can with a calculator. An ancient tool made of wood and beads turns out to be an excellent way to teach a modern brain how numbers work."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "How can just five beads on a soroban rod show any digit from zero to nine?",
+            "What is mental abacus, in your own words?",
+            "Why do you think moving the beads in the same patterns helps the brain picture them later?",
+            "The passage says an ancient tool teaches a modern brain. What does it mean by that?"
+          ],
+          "rows": 2,
+          "answers": [
+            "four lower beads worth one each and one upper bead worth five combine to make zero through nine",
+            "(calculating by picturing the beads in your mind without the frame)",
+            "(inference: repeating the same movement makes the pattern automatic, so it can be imagined)",
+            "(inference: an old device is still one of the best ways to teach how numbers work)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "An ancient counting tool teaches numbers so well that trained students can calculate in their heads",
+            "The soroban was invented in Europe last year",
+            "Calculators have completely replaced every older tool"
+          ],
+          "answers": ["An ancient counting tool teaches numbers so well that trained students can calculate in their heads"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["efficient → ____", "digit → ____", "expert → ____"],
+          "rows": 1,
+          "answers": ["getting a lot done with very little, like fewer beads", "a single number symbol from 0 to 9", "someone very skilled after a lot of practice"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: would you rather learn math with an abacus or a calculator? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Machine Made of Beads",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-abacus", "templateLabel": "The Machine Made of Beads", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "abacus",
+          "notes": ["Abax is Greek for board", "Roman pebbles were called calculi", "Calculate comes from calculus, a pebble", "Suanpan is Chinese, soroban is Japanese", "Anzan is math on an imagined abacus", "One of the oldest tools still used"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Counting Board and the Pebble",
+          "text": "The abacus may be the oldest calculating device still in use, and its story is tangled up with the history of numbers themselves. The word abacus probably comes from the Greek abax, meaning a board or a flat surface. That word may reach back even further to a Semitic word for dust, because the earliest counting boards were trays of fine sand or dust in which a merchant drew lines and marked figures with a finger. When the marks were wiped away, the board was ready for the next sum. Later, people set loose pebbles on the lines of the board instead of drawing. The Romans called those little stones calculi, and the beads on rods that we picture today grew out of that idea. We still carry the Roman pebble around in our language: the words calculate and calculator both come from calculus, the Latin word for a small stone. What makes the abacus powerful is place value. Each rod, line, or column stands for a different size of number: ones, tens, hundreds, thousands. A handful of beads arranged across a few rods can therefore stand for a number in the millions. The tool does not do the thinking for you. It holds the number steady while your hands and eyes do the work, which frees your mind to move on to the next step. That is also why the abacus does something a calculator cannot. After enough practice, a trained student no longer needs the frame at all. The pattern of the beads becomes so familiar that it can be pictured in the mind, and calculations are carried out on an imaginary abacus. This mental version is called anzan, and champions can add dozens of numbers in seconds, faster than a hand can press the keys of a calculator. An object first used to escape the limits of memory ends up training memory to work without it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Where does the word abacus come from, and why is the dust connection fitting?",
+            "Explain how the words calculate and calculator connect to Roman pebbles. Quote the phrase the passage uses.",
+            "Is this passage written to inform, persuade, or entertain? Give two details that support your answer.",
+            "What is anzan, and why is it surprising that it can beat a calculator?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the tool's history, place value, and the mental abacus)",
+            "from the Greek abax, maybe a Semitic word for dust; the first boards were trays of sand or dust",
+            "the Romans set pebbles called calculi on the board; quote: the Latin word for a small stone",
+            "(inform, with detail: it defines terms and gives dated historical facts)",
+            "(mental abacus done in the head; surprising because there is no device, yet it is faster)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["abax → ____", "calculi → ____", "place value → ____", "anzan → ____"],
+          "rows": 1,
+          "answers": [
+            "a board or flat surface",
+            "small stones the Romans used for counting",
+            "the size a digit stands for because of its position",
+            "calculating on an abacus imagined in the mind"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage ends by saying the abacus trains memory to work without it. Explain that idea in your own words.",
+            "Why might a physical tool teach numbers better than a screen that just shows the answer?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the tool first stood in for memory, then taught the mind to hold the number itself)",
+            "(inference: building the number by hand shows how it works, not only the result)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should schools still teach children to use an abacus? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Machine Made of Beads",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-abacus", "templateLabel": "The Machine Made of Beads", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "abacus",
+          "notes": ["Suanpan: 2 beads up, 5 down", "Soroban: 1 bead up, 4 down", "Calculus is Latin for a small stone", "Anzan: calculating in the mind", "In use for over 2000 years", "Place value makes it work"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Oldest Machine We Still Use",
+          "text": "An abacus is, at heart, a machine for holding a number still. It is nothing more than a frame, a set of rods or wires, and beads that slide along them, yet that simple arrangement is one of the most successful pieces of technology humans have ever built. Versions of it have been in continuous use for more than two thousand years, which is longer than almost any tool you could name. Its history runs alongside the history of counting itself. The word abacus probably comes from the Greek abax, a board or slab, and that word may trace back to a Semitic term for dust. The connection is not an accident. The earliest counting boards were flat trays covered in fine sand, and a trader would draw lines in the sand and push marks around to add and subtract, wiping the surface clean when the sum was done. In time the drawn marks became loose counters, and the Romans set small stones in the grooves of their boards. They called those stones calculi. We have never let go of the word: calculate, calculator, and even the medical calculus that forms in a body all descend from the Latin for a little pebble. The idea that makes the whole thing work is place value. Each rod stands for a different order of magnitude, ones, then tens, then hundreds, then thousands, so a mere handful of beads can pin down a number in the millions. Different cultures refined the layout. The Chinese suanpan gives each rod two beads above the dividing bar and five below it. The Japanese soroban streamlined this to one bead above and four below, which is all you need to show any digit from zero to nine. In every version, a number is not written down but built, physically, with the hands. The abacus does not calculate for you. It stores the number so your mind is free to work on the next move. That physical quality leads to the strangest part of the story. A child who drills on a soroban long enough stops needing it. The hand movements and the picture of the sliding beads become so deeply learned that the frame can be taken away entirely, and the calculation runs on an abacus that exists only in the mind. This is called anzan, and its results are hard to believe: trained students glance at a screen flashing a dozen three-digit numbers for a fraction of a second each and announce the total before an adult could even reach for a calculator. Brain scans of these students suggest they are not using the language part of the mind that most of us use for arithmetic. They are using the parts that handle vision and movement, as though they really are watching and touching beads that are not there. That is why an ancient frame of wood and beads has survived into the age of the smartphone. A calculator gives you an answer and tells you nothing. An abacus makes the structure of a number visible and physical, so a child does not just find the answer but sees why it is the answer. The tool was invented to reach past the limits of human memory, and it ended up teaching human memory to do the work alone."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain place value and why the passage treats it as central. Quote the exact phrase the author uses to introduce it.",
+            "Contrast the Chinese suanpan and the Japanese soroban using details from the passage.",
+            "Identify where the passage turns from history to the workings of the mind, and how the author signals the shift.",
+            "The final paragraph claims a calculator tells you nothing while an abacus shows why. Analyze what that claim is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary in the student's own words)",
+            "(each rod is a different order of magnitude; quote: The idea that makes the whole thing work is place value)",
+            "(suanpan: two beads above the bar and five below; soroban: one above and four below)",
+            "(at That physical quality leads to the strangest part of the story; a topic sentence marks the pivot)",
+            "(it contrasts a bare answer with real understanding; supported by the anzan and brain-scan evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["order of magnitude → ____", "streamlined → ____", "anzan → ____", "continuous → ____"],
+          "rows": 2,
+          "answers": [
+            "a size step of ten times, such as ones to tens to hundreds",
+            "made simpler and more efficient",
+            "calculation carried out on an abacus imagined in the mind",
+            "going on without stopping or breaking"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Brain scans suggest anzan users rely on vision and movement rather than language. Why might that matter to people who study how children learn?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it suggests arithmetic can be trained through the senses, which could change how math is taught)",
+            "(student question + a credible source type, such as a research study or expert)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: In a world of calculators, teaching children the abacus is a waste of time. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

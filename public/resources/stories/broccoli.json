@@ -1,0 +1,321 @@
+{
+  "key": "broccoli",
+  "title": "The Broccoli That Was Never Wild",
+  "blurb": "The green vegetable people built from a bitter wild plant, one flower bud at a time.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Broccoli That Was Never Wild",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-broccoli", "templateLabel": "The Broccoli That Was Never Wild", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Point to the green tops of the broccoli." },
+        {
+          "kind": "image",
+          "imageKey": "broccoli",
+          "notes": ["It is a green vegetable", "The top looks like a tiny tree", "It grows on a thick stem", "You can eat it soft or crunchy"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is broccoli. Broccoli is a green vegetable. It grows in a garden. It grows on a thick stem. The top looks like a little green tree. You can eat the top. You can eat the stem too. Broccoli is good for you. It helps you grow big and strong. Some people eat it soft. Some people eat it crunchy."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the little green trees in each row. Write how many in the box.",
+          "emoji": "🥦",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "green    tree" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each food to its color.",
+          "pairs": [
+            { "left": "broccoli", "right": "green" },
+            { "left": "carrot", "right": "orange" },
+            { "left": "tomato", "right": "red" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a plate of broccoli. Make the tops nice and green.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Broccoli That Was Never Wild",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-broccoli", "templateLabel": "The Broccoli That Was Never Wild", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "broccoli",
+          "notes": ["The bumpy top is called a crown", "The green bumps are flower buds", "Unpicked buds bloom yellow", "It likes cool weather", "You can eat the stalk too"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Green Top Full of Buds",
+          "text": "Broccoli grows on a farm or in a garden. It likes cool weather best. Broccoli grows on a thick green stalk. The bumpy green top is called a crown. Those tiny green bumps are really flower buds. If a farmer does not pick the broccoli, the buds open up. They turn into small yellow flowers. We pick broccoli before that happens, while the buds are still closed and green. Then we can cook it or eat it raw. Broccoli is full of good things that help your body stay well."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the green top of broccoli called?", "What are the tiny green bumps really?", "What color flowers would broccoli make if nobody picked it?"],
+          "rows": 2,
+          "answers": ["a crown", "flower buds", "small yellow flowers"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Broccoli grows on a thick green ____.", "The top of the broccoli is called a ____.", "The bumps are really flower ____.", "The flowers would be ____."],
+          "wordBank": ["stalk", "crown", "buds", "yellow"],
+          "answers": ["stalk", "crown", "buds", "yellow"]
+        },
+        { "kind": "draw", "prompt": "Draw broccoli growing in a garden. Add some soil and sun.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Broccoli That Was Never Wild",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-broccoli", "templateLabel": "The Broccoli That Was Never Wild", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "broccoli",
+          "notes": ["In the cabbage family", "Cousins: cauliflower, kale, cabbage", "The green part is flower buds", "Made by farmers in Italy long ago", "More vitamin C than an orange, gram for gram"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How Farmers Made Broccoli",
+          "text": "Broccoli belongs to the cabbage family. Its cousins are cauliflower, kale, and Brussels sprouts. Long ago there were no broccoli plants at all. Farmers in Italy made broccoli by choosing wild cabbage plants with the biggest flower buds and planting their seeds, year after year, for a very long time. Slowly the plants changed. The buds grew larger and closer together, until they formed the thick green heads we know today. The green part you eat is a bundle of tiny flower buds. If the plant is left alone, those buds bloom into little yellow flowers, and the broccoli goes soft and bitter. So farmers pick it while the buds are still tight and green. Broccoli likes cool weather. It grows well in spring and fall. It is packed with vitamin C. In fact, weight for weight, broccoli holds more vitamin C than an orange."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Which family does broccoli belong to?",
+            "How did farmers in Italy make broccoli?",
+            "Why do farmers pick broccoli before the buds bloom?",
+            "Why do you think broccoli grows better in spring and fall than in hot summer?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the cabbage family",
+            "by choosing wild cabbage plants with the biggest buds and planting their seeds for a long time",
+            "because the flowers make it go soft and bitter",
+            "(inference: it likes cool weather, so summer heat is too hot for it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["How Farmers Made Broccoli", "The Best Way to Cook Fish", "Why Oranges Are Orange"],
+          "answers": ["How Farmers Made Broccoli"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Broccoli is in the same family as cauliflower and ____.", "The green part you eat is a bundle of flower ____.", "Broccoli has more vitamin C than an ____."],
+          "wordBank": ["kale", "buds", "orange"],
+          "answers": ["kale", "buds", "orange"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about how broccoli was made, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Broccoli That Was Never Wild",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-broccoli", "templateLabel": "The Broccoli That Was Never Wild", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "broccoli",
+          "notes": ["Bred from wild cabbage", "No wild broccoli exists", "Selective breeding: people choose the seeds", "Same species as kale and cabbage", "Came to the US in the 1920s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Vegetable That Never Grew Wild",
+          "text": "Broccoli did not exist in the wild. There is no place on Earth where you can walk into a field and find it growing on its own. Broccoli is something people built, slowly, out of a scruffy seaside plant called wild cabbage. Wild cabbage still grows along the coasts of Europe. It is a loose, leafy plant with a bitter taste. Thousands of years ago, farmers noticed that some of these plants grew fatter clusters of flower buds than others. They saved seeds from those plants and grew them again. Each generation, they kept the plants with the biggest, tightest buds. This slow choosing is called selective breeding. Over many centuries in Italy, it turned a bitter weed into broccoli. The same wild cabbage was shaped in other directions too. Farmers who wanted big leaves bred kale. Farmers who wanted a fat bud at the top bred cabbage. Farmers who liked side buds bred Brussels sprouts. Broccoli, cauliflower, kale, cabbage, and Brussels sprouts are all the same species, just guided into different shapes by human choice. The part of broccoli we eat is a head of unopened flower buds sitting on a thick stalk. Picked young, the buds are sweet and green. Left on the plant, they burst into yellow flowers and the head turns bitter. Broccoli reached American plates in the 1920s, when Italian farmers began growing it in California and shipping it across the country."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what is selective breeding?",
+            "The passage says broccoli did not exist in the wild. What does that tell you about where some of our food comes from?",
+            "How can broccoli, kale, and cabbage all be the same species but look so different?",
+            "Why does broccoli taste better when it is picked young?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(choosing plants with the traits you want and breeding them over and over)",
+            "(inference: many foods were shaped by people, not simply found in nature)",
+            "farmers bred the same wild cabbage in different directions",
+            "the buds are still closed and sweet; older buds bloom and turn bitter"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "People slowly turned one wild plant into broccoli and several other vegetables",
+            "Broccoli is the oldest vegetable in the world",
+            "California has the best weather in America"
+          ],
+          "answers": ["People slowly turned one wild plant into broccoli and several other vegetables"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["selective breeding → ____", "generation → ____", "species → ____"],
+          "rows": 1,
+          "answers": [
+            "choosing which plants to breed to shape their traits over time",
+            "one round of parents and the young they produce",
+            "a group of living things closely related enough to breed together"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a bitter wild plant became the broccoli on your plate. Use the words selective breeding and buds.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Broccoli That Was Never Wild",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-broccoli", "templateLabel": "The Broccoli That Was Never Wild", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "broccoli",
+          "notes": ["Bred from wild cabbage, Brassica oleracea", "A head is hundreds of unopened flower buds", "Same species as kale, cabbage, kohlrabi, cauliflower", "Rich in fiber and vitamin C", "Grown commercially in the US from the 1920s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Garden of Flowers That Never Bloomed",
+          "text": "Every head of broccoli is a garden of flowers that never got to bloom. The bright green surface, if you look closely, is made of thousands of tiny buds packed tightly together. Each one is a flower waiting to open. Farmers cut the broccoli while those buds are still shut, because a closed bud is tender and sweet, and an open one is stringy and bitter. If a plant is left in the ground too long, the head loosens, yellow flowers push out, and the vegetable is ruined for the table but perfect for making seeds. Broccoli has a strange history, because it has no wild ancestor of its own. It was invented. Its parent is wild cabbage, a tough, bitter plant that grows on the sea cliffs of Europe. Starting more than two thousand years ago, farmers in the Italian countryside began saving seeds only from the wild cabbage plants that grew the fattest flower buds. Season after season, the buds got larger and tighter, until they clustered into the green domes we now call broccoli. This method of choosing which plants get to reproduce is called selective breeding, and it is the same tool that turned wolves into dogs. The wild cabbage was patient raw material. Guided one way, it became broccoli. Guided another, the very same species became cabbage, kale, cauliflower, kohlrabi, and Brussels sprouts. That is why these vegetables can look so different yet share a family resemblance in taste and smell. Broccoli is not only clever history. It is also unusually good food. It carries plenty of fiber, which helps digestion, and it is loaded with vitamin C. Weighed gram for gram, broccoli actually holds more vitamin C than an orange. It thrives in cool weather and struggles in summer heat, which is why gardeners plant it in early spring or fall. Broccoli arrived in the United States fairly late. Italian immigrant farmers, including the D'Arrigo family in California, began growing it commercially in the 1920s and shipping it east by rail. Within a generation it went from unknown to ordinary."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize this passage in exactly two sentences.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Give two details that support your answer.",
+            "The passage says broccoli was invented. Quote the sentence that explains what it was invented from.",
+            "How does the comparison to wolves and dogs help you understand selective breeding?",
+            "Why does the author mention that broccoli holds more vitamin C than an orange?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: broccoli is a head of unopened flower buds; people bred it from wild cabbage and it is very nutritious)",
+            "(inform, with detail: it defines terms and gives facts and dates rather than trying to sell you)",
+            "(quote: Its parent is wild cabbage, a tough, bitter plant that grows on the sea cliffs of Europe)",
+            "(both are cases of humans shaping a wild thing over many generations by choosing which ones breed)",
+            "(to show broccoli is unusually nutritious, using a familiar food as a comparison)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["selective breeding → ____", "resemblance → ____", "commercially → ____", "thrives → ____"],
+          "rows": 1,
+          "answers": [
+            "choosing which plants or animals reproduce to shape their traits",
+            "a likeness or similarity between things",
+            "grown to be sold rather than for one family",
+            "grows strongly and does well"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls wild cabbage patient raw material. Explain what that phrase means.",
+            "Why might the same species end up as vegetables as different as kale and cauliflower?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it waited to be shaped; people slowly turned it into many different foods)",
+            "(inference: farmers selected different parts, leaves, buds, or stems, and bred those parts to grow larger)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it fair to say broccoli was invented? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Broccoli That Was Never Wild",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-broccoli", "templateLabel": "The Broccoli That Was Never Wild", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "broccoli",
+          "notes": ["Wild cabbage: Brassica oleracea", "One species, many vegetables", "A head is hundreds of unopened flower buds", "Selective breeding, the same tool used on dogs", "D'Arrigo brothers grew it in California from the 1920s"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Vegetable People Invented",
+          "text": "Walk through any grocery store and you will pass a vegetable with no home in the wild. Broccoli grows in fields and gardens all over the world, but there is nowhere on Earth you could hike into and discover it growing by itself. Unlike an apple tree or a blueberry bush, broccoli has no wild version. It is, in the most literal sense, a human invention, and its story reveals how much of what we eat was shaped by people rather than found in nature. The raw material was wild cabbage, known to botanists as Brassica oleracea. It is an unremarkable plant, loose-leafed and bitter, that still clings to the chalk cliffs along the coasts of Europe. More than two thousand years ago, farmers in the lands around the Mediterranean began to notice small differences between individual plants. Some grew fatter clusters of flower buds than others. Those farmers saved seeds from the plants they liked best and sowed them the following season, and they repeated that choice, year after year, for centuries. The buds that they favored grew steadily larger and tighter, until they packed together into the dense green heads we now call broccoli. Biologists call this process selective breeding: humans, not the environment, decide which individuals get to reproduce. What makes wild cabbage remarkable is how many different vegetables came out of it. Guided toward large leaves, it became kale and collard greens. Guided toward a single swollen bud, it became the cabbage head. Guided toward a fat, starchy stem, it became kohlrabi. Guided toward clusters of side buds along the stalk, it became Brussels sprouts. Broccoli and cauliflower are the versions bred for their flower heads. All of these plants are the same species. A cabbage and a Brussels sprout could, in principle, be crossed, because underneath their strange shapes they are the same creature wearing different costumes that people designed. The part of broccoli we actually eat tells its own story. Each green head is a tight bundle of hundreds of unopened flower buds. Harvested young, those buds are sweet and tender. Left in the field, they finish what they were always trying to do: they open into small yellow flowers, the head falls apart, and the plant sets seed. A ruined head of broccoli, from the plant's point of view, is a successful one. Broccoli is also worth eating for reasons beyond its history. It is rich in fiber and vitamin C, holding, gram for gram, more vitamin C than an orange. It prefers cool weather, which is why it is planted in spring and fall rather than the heat of midsummer. And it came to American tables surprisingly recently. Italian immigrant farmers, most famously the D'Arrigo brothers in California, began growing broccoli commercially in the 1920s and shipping it east by rail. A vegetable that took twenty centuries to build became an everyday sight in a single lifetime."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a full phrase from it.",
+            "The passage claims broccoli has no wild version. Explain what that means and quote the sentence that restates the idea.",
+            "Explain selective breeding in your own words, then quote the passage's own definition of it.",
+            "How can a cabbage and a Brussels sprout be the same creature? Cite the phrase the author uses.",
+            "Why does the author call a ruined head of broccoli a successful one from the plant's point of view?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(there is no wild broccoli anywhere; quote: there is nowhere on Earth you could hike into and discover it growing by itself)",
+            "(people choose which plants reproduce; quote: humans, not the environment, decide which individuals get to reproduce)",
+            "(they are the same species bred into different forms; quote: the same creature wearing different costumes that people designed)",
+            "(the plant's goal is to flower and set seed, which is exactly what a ruined head has done)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Analyze the author's moves.",
+          "items": [
+            "The passage repeats the word Guided at the start of several sentences. What effect does that repetition create?",
+            "Find where the passage shifts from history to nutrition. How does the author signal the change?",
+            "The final sentence contrasts twenty centuries with a single lifetime. What is the author trying to make you notice?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(it lines up the different vegetables as parallel results of the same human choosing)",
+            "(at Broccoli is also worth eating for reasons beyond its history; a new topic sentence signals the turn)",
+            "(the contrast stresses how slowly broccoli was built and how fast it then spread; it creates surprise)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["selective breeding → ____", "botanist → ____", "commercially → ____", "unremarkable → ____"],
+          "rows": 2,
+          "answers": [
+            "choosing which individuals reproduce to shape a species over generations",
+            "a scientist who studies plants",
+            "grown or done in order to be sold",
+            "ordinary, not special or noticeable"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Because broccoli was created by people, it is not a natural food. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

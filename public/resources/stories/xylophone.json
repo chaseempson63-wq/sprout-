@@ -1,0 +1,318 @@
+{
+  "key": "xylophone",
+  "title": "The Xylophone: Wood That Sings",
+  "blurb": "A row of wooden bars you strike with mallets, where long bars sing low and short bars sing high, and the name simply means wood sound.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Xylophone: Wood That Sings",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-xylophone", "templateLabel": "The Xylophone: Wood That Sings", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Tap the bars in the air with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "xylophone",
+          "notes": ["It is made of wood", "You hit it with mallets", "Long bars sound low", "Short bars sound high"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a xylophone. Say it like this: ZY-luh-fone. It is a row of wooden bars. You hit the bars with a stick. The stick is called a mallet. Each bar makes a different sound. The long bars sound low. The short bars sound high. Tap, tap, tap. The xylophone sings."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bars in each row. Write how many in the box.",
+          "emoji": "🎵",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "tap    bars" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "long bar", "right": "low sound" },
+            { "left": "short bar", "right": "high sound" },
+            { "left": "mallet", "right": "hits the bars" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a xylophone. Color each bar a different color.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Xylophone: Wood That Sings",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-xylophone", "templateLabel": "The Xylophone: Wood That Sings", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "xylophone",
+          "notes": ["Say it ZY-luh-fone", "The name means wood sound", "Long bars make low notes", "Short bars make high notes", "You play it with mallets"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Row of Singing Wood",
+          "text": "A xylophone is a musical instrument made of wooden bars. The bars sit in a row from long to short. You play it by hitting the bars with two mallets. Each bar makes its own note. When you hit a long bar, it makes a low, deep note. When you hit a short bar, it makes a high, bright note. If you hit the bars in order, you can play a tune. The word xylophone comes from two old Greek words. One means wood and one means sound. So xylophone really means wood sound. That is a good name for a row of singing wood."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a xylophone made of?", "What do you use to hit the bars?", "What does the word xylophone mean?"],
+          "rows": 2,
+          "answers": ["wooden bars", "two mallets", "wood sound"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A xylophone is made of ____ bars.", "You hit the bars with ____.", "A long bar makes a ____ note.", "A short bar makes a ____ note."],
+          "wordBank": ["wooden", "mallets", "low", "high"],
+          "answers": ["wooden", "mallets", "low", "high"]
+        },
+        { "kind": "draw", "prompt": "Draw someone playing a xylophone. Show the long bars and the short bars.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Xylophone: Wood That Sings",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-xylophone", "templateLabel": "The Xylophone: Wood That Sings", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "xylophone",
+          "notes": ["Say it ZY-luh-fone", "Xylon plus phone means wood sound", "Long bars are low, short bars are high", "Resonator tubes make notes ring", "The balafon is a wooden cousin from West Africa"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Wood That Makes Music",
+          "text": "A xylophone is a row of wooden bars that you strike with mallets to make music. The bars are lined up from longest to shortest, a little like the keys on a piano. When you tap a bar, the whole bar shakes very fast, and that shaking pushes the air and makes a sound. Long bars shake slowly, so they make low notes. Short bars shake quickly, so they make high notes. That is why the bars are cut to different lengths. Under some xylophones you will find hollow tubes hanging below the bars. These tubes are called resonators. They catch the sound and make it louder and richer, so the note rings out instead of fading away. The name xylophone comes from ancient Greek. Xylon means wood and phone means sound, so the whole word means wood sound. People have built wooden instruments like this for a very long time. In parts of West Africa, players have used a wooden instrument called the balafon for hundreds of years, with dried gourds hung underneath to make the notes ring."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why are the bars cut to different lengths?",
+            "What do the resonator tubes do?",
+            "What do the two Greek words in xylophone mean?",
+            "Why do you think a long bar makes a lower note than a short bar?"
+          ],
+          "rows": 2,
+          "answers": [
+            "so each one makes a different note, long for low and short for high",
+            "they make the sound louder and richer so the note rings out",
+            "wood and sound, which together mean wood sound",
+            "(inference: a long bar shakes more slowly, and slow shaking makes a low note)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Wood That Makes Music", "How to Bake Bread", "The Fastest Car in the World"],
+          "answers": ["Wood That Makes Music"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A xylophone is a row of wooden ____.", "You play it by striking the bars with ____.", "Hollow tubes called ____ make the sound ring.", "The balafon comes from West ____."],
+          "wordBank": ["bars", "mallets", "resonators", "Africa"],
+          "answers": ["bars", "mallets", "resonators", "Africa"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: when might you want a low note, and when might you want a high note? Explain why.", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Xylophone: Wood That Sings",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-xylophone", "templateLabel": "The Xylophone: Wood That Sings", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "xylophone",
+          "notes": ["Say it ZY-luh-fone", "An idiophone: the solid body itself vibrates", "Undercutting the bar tunes its note", "Resonator tubes swell the sound", "The balafon and gamelan came first", "Xylon plus phone means wood sound"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Shape of a Note",
+          "text": "A xylophone looks simple, but every part of it has a job. It is a row of wooden bars laid out from long to short, and you play it by striking the bars with hard mallets. Musicians group instruments in families, and the xylophone belongs to the family called idiophones. An idiophone makes its sound from the vibrating of its own solid body, with no strings and no stretched skin. When a mallet strikes a bar, the whole bar bends and springs back many times each second, and that rapid movement pushes the air into waves your ears hear as a note. The length of each bar sets its note. A long bar is heavy and springy, so it vibrates slowly and produces a low, deep tone. A short bar vibrates far more quickly and produces a high, bright tone. Bar makers also shave a curved hollow into the underside of each bar. This careful cut, called undercutting, tunes the bar so its note lands exactly where it should. Beneath the bars hang tubes called resonators, each one holding a column of air that vibrates along with the bar above it and swells the sound. The idea is very old. In West Africa, the balafon has been played for centuries, its wooden bars ringing over rows of dried gourds. In Southeast Asia, whole orchestras built around wooden and metal bars have existed for hundreds of years. The modern concert xylophone grew out of these older instruments, and today it sits at the bright, sharp end of the percussion section."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what is an idiophone?",
+            "Explain why a long bar makes a lower note than a short bar.",
+            "What is undercutting, and what does it do?",
+            "The passage says the modern xylophone grew out of older instruments. What does that tell you about how instruments develop?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(an instrument that makes sound from its own vibrating solid body, with no strings or skin)",
+            "a long bar is heavier and vibrates slowly, and slow vibration makes a low note",
+            "shaving a curved hollow under a bar to tune its note exactly",
+            "(inference: new instruments are built on and improved from older ones over time)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Every part of a xylophone, from bar length to resonators, works together to shape its notes, and the instrument comes from very old designs",
+            "Xylophones are the loudest instrument in the world",
+            "Only people in Europe have ever made wooden instruments"
+          ],
+          "answers": ["Every part of a xylophone, from bar length to resonators, works together to shape its notes, and the instrument comes from very old designs"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["idiophone → ____", "undercutting → ____", "resonator → ____"],
+          "rows": 1,
+          "answers": [
+            "an instrument whose own solid body vibrates to make sound",
+            "shaving a hollow under a bar to tune its pitch",
+            "a tube of air that vibrates with a bar to boost its sound"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining how a xylophone turns a tap from a mallet into a musical note. Use at least three details from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Xylophone: Wood That Sings",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-xylophone", "templateLabel": "The Xylophone: Wood That Sings", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "xylophone",
+          "notes": ["Say it ZY-luh-fone", "Pitch is vibrations per second", "Bars are supported at their still points, the nodes", "Undercutting the arch tunes each bar", "Balafon: gourd resonators, over 700 years old", "Idiophone: the bar's own body makes the sound"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Physics of a Wooden Note",
+          "text": "At first glance a xylophone is nothing more than a row of wooden bars and a pair of mallets, but it is a small lesson in physics laid out in a straight line. Strike a bar and it flexes, bending down and springing back many times every second. Each of those springs shoves the surrounding air outward, and the ripples of pressure travel to your ear as a musical note. The speed of that flexing, measured in vibrations per second, is what we hear as pitch. Fast vibration sounds high, slow vibration sounds low. The genius of the instrument is that its shape controls its speed. A long bar carries more mass and bends more loosely, so it vibrates slowly and sounds a low note. A short bar is stiffer for its size and snaps back quickly, so it sounds a high note. This is why the bars are graded from long to short like a staircase of pitches. Makers fine tune each bar by carving a shallow arch into its underside. Removing wood from the middle lowers the note in a controlled way, letting a craftsman land each bar on an exact pitch rather than leaving it to chance. Two more features finish the design. Each bar is drilled and supported near the points where it naturally stays still while the rest of it vibrates, so the mounting does not deaden the sound. Below many bars hang tube resonators, columns of air tuned to match the bar above. When the bar sounds, the air column resonates in sympathy and makes the note fuller and longer. None of this is new. The xylophone belongs to a family of struck wooden instruments that stretches across the world and back through many centuries. The balafon of West Africa, with its gourd resonators, has been played for over seven hundred years and passed carefully from teacher to student. Tuned percussion built around wooden and metal bars anchors the gamelan orchestras of Indonesia. The bright concert xylophone that a modern player reads music from is a recent branch on a very old tree, and every one of its carefully cut bars still obeys the same plain physics: shorter and stiffer for high, longer and looser for low."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "According to the passage, what do we hear as pitch, and what makes a note sound high?",
+            "Explain why removing wood from the middle of a bar changes its note. Quote the phrase the passage uses.",
+            "Is this passage written mainly to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end by calling the concert xylophone a recent branch on a very old tree?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: bar length and shape set pitch through vibration speed, and the design is very old and worldwide)",
+            "the speed of the bar's flexing, measured in vibrations per second; fast vibration sounds high",
+            "(removing wood makes the bar bend more slowly and lowers the pitch; quote: lowers the note in a controlled way)",
+            "(inform: it defines terms and explains how the instrument works with facts, not a story or a sales pitch)",
+            "(to show the modern instrument is only the newest version of a very old, worldwide family)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["pitch → ____", "resonate → ____", "graded (bars) → ____"],
+          "rows": 1,
+          "answers": [
+            "how high or low a note sounds, set by vibration speed",
+            "to vibrate in sympathy with another vibration and boost it",
+            "arranged in order, here from long to short"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author says the xylophone is a small lesson in physics laid out in a straight line. Explain what that means.",
+            "Why might a maker prefer to tune a bar by carving it rather than by guessing its length?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the row of bars visibly shows how size controls pitch)",
+            "(inference: carving gives exact control so every bar lands on the right note)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is it fair to call the xylophone a simple instrument? Take a position and support it with two reasons from the passage.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Xylophone: Wood That Sings",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-xylophone", "templateLabel": "The Xylophone: Wood That Sings", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "xylophone",
+          "notes": ["Idiophone: the bar's own body vibrates", "Nodes: the still points where bars are mounted", "Undercutting tunes the overtones, not just the pitch", "Resonators are quarter-wavelength air columns", "Balafon: gourd resonators, roughly eight centuries old", "Metal bars make it a glockenspiel, not a xylophone"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Wood, Air, and the Shape of a Note",
+          "text": "A xylophone hides a surprising amount of physics inside a very plain shape. It is a set of tuned wooden bars struck with mallets, and it belongs to the class of instruments called idiophones, meaning the sound comes from the vibration of the instrument's own rigid body rather than from a string, a reed, or a stretched skin. Strike a bar and it does not simply buzz at one speed. It flexes in a whole pattern of bending waves, and along the bar there are quiet spots, called nodes, where the wood barely moves at all, and loud spots between them where it swings the most. Two facts about those bending waves shape everything a maker does. First, a longer, heavier bar bends more slowly than a short, stiff one, which is why pitch falls as the bars lengthen. Second, a struck bar does not produce a single clean tone. It vibrates in several patterns at once, each with its own frequency, and by default those extra frequencies are not musically related to the main one, so the raw note sounds clangy. This is where craft enters. By carving a shallow arch out of the underside of the bar, a maker thins the middle and lowers the main pitch, but more cleverly, the exact shape of that cut pulls the higher vibration patterns into tidy ratios above the fundamental, so the whole note rings as a musical pitch instead of a clatter. Mounting matters too. If you clamped a bar in the middle you would smother it, so bars are drilled and rested at their nodes, near a point about a fifth of the way in from each end, where the wood is naturally still. There the support holds the bar without draining its energy. Beneath the better instruments hang resonator tubes, each roughly a quarter of the sounding wavelength long and closed at the bottom, so the air inside is tuned to the bar above it. When the bar sings, that air column resonates in sympathy and pours the sound back out, richer and more sustained. The design is ancient and global, which is worth remembering when it is dismissed as a beginner's toy. In West Africa the balafon, a wooden bar instrument with gourd resonators, has been played for roughly eight centuries. One historic balafon, the Sosso Bala of Guinea, is treated as a cultural treasure and its tradition is recognized by the wider world as heritage worth protecting. Across the ocean in Indonesia, gamelan orchestras are built around families of tuned bars and have shaped an entire musical culture. It is worth noting one point of confusion: many so called toy xylophones have metal bars, which technically makes them glockenspiels, while a true xylophone uses wood, and its larger, mellower cousin the marimba uses wider wooden bars over long resonators. Different materials, different voices, the same simple, powerful idea. A row of carefully shaped bars, each one obeying the plain rule that longer and looser means low while shorter and stiffer means high, turns a tap into music."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a full phrase from it.",
+            "Explain why a raw, unshaped bar can sound clangy, and how carving fixes it. Cite the text.",
+            "Why must bars be mounted at their nodes rather than in the middle? Quote the phrase the passage uses.",
+            "Identify where the passage shifts from physics to history and culture, and explain how the author signals that turn.",
+            "The author writes that the xylophone is dismissed as a beginner's toy. Analyze how the rest of that paragraph argues against the dismissal."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary of physics plus tuning plus global history)",
+            "(a struck bar vibrates in several unrelated patterns at once, and carving pulls them into tidy ratios; cite: pulls the higher vibration patterns into tidy ratios above the fundamental)",
+            "(clamping the middle would smother the bar, so it is held at a still point; cite: where the wood is naturally still)",
+            "(it turns at The design is ancient and global; the author signals it by leaving the physics and naming real instruments and places)",
+            "(it answers the toy label with the balafon's eight centuries, the Sosso Bala as a treasure, and gamelan culture, showing the design is old and serious)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["idiophone → ____", "fundamental → ____", "resonate → ____", "sustained → ____"],
+          "rows": 2,
+          "answers": [
+            "an instrument whose own rigid body vibrates to make sound",
+            "the main, lowest pitch a vibrating bar produces",
+            "to vibrate in sympathy with another vibration and amplify it",
+            "held or lasting longer, said of a note"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage explains that toy xylophones with metal bars are really glockenspiels. Why might a fact like that matter to someone buying or naming an instrument?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(names carry information about material and sound, so the label sets expectations)",
+            "(student question plus a credible source type, such as an instrument maker or an acoustics text)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The xylophone is too simple to count as a serious instrument. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

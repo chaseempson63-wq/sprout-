@@ -1,0 +1,304 @@
+{
+  "key": "nurse",
+  "title": "The Nurse Who Watches Over You",
+  "blurb": "The kind, sharp-eyed helper who reads your heartbeat, keeps the germs away, and stays by your bed all night.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Nurse Who Watches Over You",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-nurse", "templateLabel": "The Nurse Who Watches Over You", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the nurse." },
+        {
+          "kind": "image",
+          "imageKey": "nurse",
+          "notes": ["Nurses help sick people", "They wear clothes called scrubs", "A nurse can check your heartbeat", "Some nurses care for babies"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a nurse. A nurse helps people feel better. When you are sick, a nurse can help. A nurse checks how you feel. A nurse wears soft clothes called scrubs. A nurse can put a bandage on a cut. A nurse is kind and gentle. Nurses help us every day."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the bandages in each row. Write how many in the box.",
+          "emoji": "🩹",
+          "items": ["3", "4", "2", "5"],
+          "answers": ["3", "4", "2", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "care    help" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each helper to where they work.",
+          "pairs": [
+            { "left": "nurse", "right": "hospital" },
+            { "left": "teacher", "right": "school" },
+            { "left": "chef", "right": "kitchen" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a nurse helping someone. Give the nurse a big kind smile.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Nurse Who Watches Over You",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-nurse", "templateLabel": "The Nurse Who Watches Over You", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "nurse",
+          "notes": ["Nurses work in hospitals and schools", "They use a stethoscope to hear your heart", "A nurse checks your temperature", "They wash their hands a lot", "Some nurses help new babies"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Nurse Who Watches Over You",
+          "text": "A nurse takes care of people who are sick or hurt. Nurses work in hospitals, in clinics, and even in schools. A nurse checks your temperature to see if you are too warm. A nurse feels your pulse, which is the beat of your heart. Nurses give out medicine and clean cuts so they can heal. They wash their hands a lot to keep germs away. A nurse listens when you are scared and helps you feel calm. Nurses are some of the kindest helpers we have."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Who does a nurse take care of?", "What does a nurse check to see if you are too warm?", "Why do nurses wash their hands a lot?"],
+          "rows": 2,
+          "answers": ["people who are sick or hurt", "your temperature", "to keep germs away"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A nurse takes care of people who are ____.", "A nurse feels your ____ to hear your heartbeat.", "Nurses wash their ____ to stop germs.", "A nurse helps you feel ____ when you are scared."],
+          "wordBank": ["sick", "pulse", "hands", "calm"],
+          "answers": ["sick", "pulse", "hands", "calm"]
+        },
+        { "kind": "draw", "prompt": "Draw a nurse at work. Add a stethoscope around the nurse's neck.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Nurse Who Watches Over You",
+      "subtitle": "A reading and history sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-nurse", "templateLabel": "The Nurse Who Watches Over You", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "nurse",
+          "notes": ["Nurses check your vital signs", "Florence Nightingale was the Lady with the Lamp", "International Nurses Day is May 12", "Nurses use a stethoscope", "A pulse is your heartbeat"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Lady with the Lamp",
+          "text": "A nurse is a person whose job is to care for people who are sick, hurt, or getting better. Nurses do far more than hand out medicine. They watch a patient closely and notice small changes, like a fever rising or a wound that is not healing well. To do this, a nurse checks what doctors call vital signs. These are your temperature, your pulse, how fast you breathe, and your blood pressure. Together they tell a nurse how your body is doing. Long ago, hospitals were dirty and crowded, and many patients did not get better. Then a woman named Florence Nightingale changed everything. During a war in the 1850s, she cleaned the wards, opened the windows, and made sure everyone washed. Far fewer soldiers died. At night she walked the rows of beds carrying a lamp, so people called her the Lady with the Lamp. Because of her, nursing became a respected job all around the world."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What are the four vital signs a nurse checks?",
+            "What did hospitals used to be like long ago?",
+            "What did Florence Nightingale do to help sick soldiers?",
+            "Why do you think fewer soldiers died after the wards were cleaned?"
+          ],
+          "rows": 2,
+          "answers": [
+            "temperature, pulse, breathing, and blood pressure",
+            "they were dirty and crowded, and many patients did not get better",
+            "she cleaned the wards, opened the windows, and made sure everyone washed",
+            "(inference: clean wards stopped germs and infection from spreading)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Lady with the Lamp", "How to Bake Bread", "The Fastest Car in the World"],
+          "answers": ["The Lady with the Lamp"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A nurse checks your ____ signs.", "Your ____ is the beat of your heart.", "Florence Nightingale carried a ____ at night."],
+          "wordBank": ["vital", "pulse", "lamp"],
+          "answers": ["vital", "pulse", "lamp"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is one thing a nurse does, and why does it help a patient?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Nurse Who Watches Over You",
+      "subtitle": "A reading and history sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-nurse", "templateLabel": "The Nurse Who Watches Over You", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "nurse",
+          "notes": ["More nurses than any other health worker", "Vital signs: temperature, pulse, breathing, blood pressure", "Florence Nightingale was born May 12, 1820", "Mary Seacole nursed soldiers in the same war", "Handwashing stops germs spreading"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The People Who Stay at Your Side",
+          "text": "Most people meet a nurse before they ever meet a doctor. Nurses are the health workers who spend the most time at a patient's side, and there are more of them than any other kind of health worker on Earth. Their job is to watch, to care, and to catch problems early. A nurse is trained to read the body's signals. By checking a patient's temperature, pulse, breathing, and blood pressure, a nurse can tell whether someone is improving or getting worse, often before the patient feels the change. A good nurse also listens. A frightened child or a worried grandparent calms down faster when someone explains, gently, what is about to happen. Modern nursing grew out of the work of two women in the 1850s. Florence Nightingale, an English nurse, transformed filthy war hospitals by demanding clean water, fresh air, and constant handwashing, and the number of deaths dropped sharply. At the same time, a Jamaican-British nurse named Mary Seacole used her own money to travel to the same war and care for soldiers near the battlefield. Both proved that skilled, organized care saves lives. Nursing is not one job but many. A pediatric nurse cares for children. An emergency nurse handles accidents and sudden illness. A school nurse looks after students during the day, and a midwife helps mothers bring new babies safely into the world. Whatever the setting, the heart of the work is the same: pay close attention, act quickly, and treat every patient with kindness."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why does the passage say a nurse can tell someone is getting worse before the patient feels it?",
+            "How did Florence Nightingale and Mary Seacole each help soldiers?",
+            "Why does it matter that a nurse listens and explains things gently?",
+            "The passage lists many kinds of nurse. What do they all have in common?"
+          ],
+          "rows": 2,
+          "answers": [
+            "because a nurse is trained to read the body's signals like temperature, pulse, breathing, and blood pressure",
+            "Nightingale demanded clean water, fresh air, and handwashing; Seacole spent her own money to care for soldiers near the battlefield",
+            "(inference: a calm, informed patient is less frightened and easier to help)",
+            "they all pay close attention, act quickly, and treat patients with kindness"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "Nurses are skilled, watchful carers whose profession was shaped by pioneers like Nightingale and Seacole",
+            "Hospitals should only ever hire doctors",
+            "Most illnesses cannot be treated at all"
+          ],
+          "answers": ["Nurses are skilled, watchful carers whose profession was shaped by pioneers like Nightingale and Seacole"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["vital signs → ____", "transformed → ____", "midwife → ____"],
+          "rows": 1,
+          "answers": ["body measurements that show how a patient is doing, like pulse and temperature", "changed completely", "a nurse who helps mothers give birth"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: would you want to be a nurse? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Nurse Who Watches Over You",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-nurse", "templateLabel": "The Nurse Who Watches Over You", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "nurse",
+          "notes": ["Largest health profession in the world", "Nightingale used statistics to prove hygiene saves lives", "The Crimean War was in the 1850s", "Mary Seacole funded her own journey", "May 12 is International Nurses Day"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Watchers at the Bedside",
+          "text": "Walk into any hospital and the person who greets you, weighs you, checks your pulse, and stays with you through the long night is almost always a nurse. Nurses make up the largest single group of health workers in the world, and in most countries they provide the majority of hands-on care. Doctors diagnose and prescribe, but nurses are the ones who watch a patient hour by hour and notice when something quietly goes wrong. That watching is a skill built on measurement. A nurse tracks four vital signs: body temperature, pulse, breathing rate, and blood pressure. Each one is a window into the body. A climbing temperature can mean infection. A racing pulse can mean pain, fear, or blood loss. Read together and over time, these numbers let a nurse spot trouble long before it becomes an emergency, which is why hospitals record them again and again. The profession as we know it was shaped in the 1850s, during the Crimean War. Florence Nightingale arrived at a British army hospital where more soldiers were dying of infection than of their wounds. She insisted on clean linen, fresh air, decent food, and relentless handwashing, and the death rate fell dramatically. Afterward she used careful records and statistics to prove that hygiene saves lives, and she founded the first modern nursing school. Working through the same war, Mary Seacole, a Jamaican-British healer, funded her own journey and set up a lodging house near the front to nurse wounded men. Between them they turned nursing from unskilled labor into a trained, respected profession. Today nursing has branched into dozens of specialties, from caring for newborns to guiding families through their final days. The tools have changed and the science has deepened, but the core has not. A nurse is the person who stays, who watches, and who treats the patient as a person and not just a problem to be solved."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "According to the passage, why do hospitals record vital signs again and again? Quote a phrase that supports your answer.",
+            "How did Florence Nightingale prove that hygiene saves lives?",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Point to two details that support your answer.",
+            "What does the last sentence suggest is the most important part of being a nurse?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering what nurses do, vital signs, and the Nightingale and Seacole history)",
+            "so a nurse can spot trouble before it becomes an emergency; quote: spot trouble long before it becomes an emergency",
+            "she used careful records and statistics to prove it",
+            "(inform: it defines vital signs and gives historical facts; supported by specific dates and measurements)",
+            "(treating the patient as a person, not just a problem to be solved)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["diagnose → ____", "relentless → ____", "specialties → ____", "hands-on → ____"],
+          "rows": 1,
+          "answers": ["to work out what illness someone has", "never stopping or letting up", "special areas of nursing focused on one kind of care", "involving direct, practical care of the patient"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might a single vital sign reading be less useful to a nurse than many readings over time?",
+            "The passage says nurses provide the majority of hands-on care. Why might that make nurses easy to overlook?"
+          ],
+          "rows": 3,
+          "answers": ["(one reading is a snapshot; a series shows whether the patient is improving or worsening)", "(inference: quiet, constant work is less visible than a dramatic operation)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should nurses be paid and respected as much as doctors? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Nurse Who Watches Over You",
+      "subtitle": "A reading and history sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-nurse", "templateLabel": "The Nurse Who Watches Over You", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "nurse",
+          "notes": ["Vital signs work as an early warning system", "Nightingale founded the first modern nursing school", "She used diagrams to convince governments", "Mary Seacole was long overlooked, now honored", "Specialties from neonatal to hospice care"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Quiet Profession That Holds the Room",
+          "text": "There is a good chance that the first medical professional you ever met was a nurse, and an even better chance that a nurse, not a doctor, spent the most time keeping you safe. Nurses are the largest group of health workers on the planet, and in hospital after hospital they carry out the quiet, continuous work on which everything else depends. A surgeon may spend two hours on an operation. A nurse spends the following two weeks making sure the patient actually recovers. The heart of nursing is careful observation turned into action. A nurse learns to read the body through its vital signs: temperature, pulse, breathing rate, and blood pressure. These four numbers seem simple, yet in combination they form a kind of early warning system. A slight fever paired with a fast heartbeat and shallow breathing may mean nothing on its own, but a nurse trained to see patterns recognizes the shape of an infection taking hold and acts before the patient is in danger. This is why the same measurements are taken over and over. A single reading is a snapshot. A series of readings tells a story. That combination of watchfulness and cleanliness is exactly what turned nursing into a modern profession. In the 1850s, during the Crimean War, a British nurse named Florence Nightingale found a military hospital where filth and crowding were killing more soldiers than enemy fire. She demanded clean water, open windows, proper food, and constant handwashing, and the death rate collapsed. Crucially, she did not simply trust that it worked. She kept meticulous records and used statistics and clear diagrams to prove that hygiene saved lives, an argument that convinced governments to change how hospitals were run. She became known as the Lady with the Lamp for her nightly rounds among the wounded. In the same war, a Jamaican-British woman named Mary Seacole, refused an official nursing post, paid her own way to the front and built a lodging house where she treated sick and injured soldiers. For a long time her contribution was nearly forgotten, and only recently has she been widely honored alongside Nightingale. Modern nursing has since divided into a remarkable range of specialties. A neonatal nurse may care for a baby smaller than a hand, while a hospice nurse helps a dying person spend their last days in comfort and dignity. There are nurses in emergency rooms, in schools, in remote villages, and on the phone giving advice at midnight. What unites them is not a single set of tasks but a single stance toward other people: pay attention, stay close, and never treat a patient as merely a case. It is worth noticing how much of this rests on trust rather than technology. The stethoscope and the thermometer matter, but the reason a frightened patient calms down is that a competent, steady person has chosen to stay in the room. That is the part of nursing no machine has replaced, and probably none ever will."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any full phrase from it.",
+            "Explain how vital signs act as an early warning system. Cite the phrase the passage uses.",
+            "Why does the passage say Nightingale did not simply trust that clean conditions worked? What did she do instead?",
+            "Identify where the passage shifts from describing the science of nursing to its history, and explain how the author signals that shift.",
+            "The final paragraph argues that trust matters more than technology. Analyze that claim and decide whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary of what nurses do and the history behind the profession)",
+            "(reading vital signs together reveals trouble early; cite: form a kind of early warning system)",
+            "(she did not just trust it; she kept meticulous records and used statistics and diagrams to prove hygiene saved lives)",
+            "(the shift comes at That combination of watchfulness and cleanliness; the author names both ideas to bridge into the Nightingale history)",
+            "(it argues a steady human presence, not tools, calms a patient; supported by the stethoscope-versus-person contrast at the end)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["meticulous → ____", "neonatal → ____", "hospice → ____", "stance → ____"],
+          "rows": 2,
+          "answers": [
+            "extremely careful and precise about detail",
+            "relating to the care of newborn babies",
+            "care that keeps a dying person comfortable in their final days",
+            "an attitude or way of standing toward something"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says Mary Seacole's contribution was nearly forgotten. Why do you think some important people are overlooked by history while others are remembered?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(opinion: reasons such as race, gender, lack of records, or who writes the histories)", "(student question + a credible source type, such as a nursing history book or a hospital)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: As machines get better at monitoring patients, human nurses will matter less. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

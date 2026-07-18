@@ -1,0 +1,310 @@
+{
+  "key": "tomato",
+  "title": "The Fruit That Everyone Calls a Vegetable",
+  "blurb": "The round red berry that was feared as poison for two hundred years, then fed the world.",
+  "topic": "food",
+  "bands": {
+    "1": {
+      "title": "The Fruit That Everyone Calls a Vegetable",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-tomato", "templateLabel": "The Fruit That Everyone Calls a Vegetable", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the tomato." },
+        {
+          "kind": "image",
+          "imageKey": "tomato",
+          "notes": ["It is red when ripe", "It grows on a plant", "It has tiny seeds inside", "It is soft and juicy"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a tomato. It is round and red. A tomato grows on a plant. First it is small and green. Then it grows big. Then it turns red. A tomato is soft and juicy. It has tiny seeds inside. We put tomatoes in soup. We put them in salad. Tomatoes are yummy to eat."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the tomatoes in each row. Write how many in the box.",
+          "emoji": "🍅",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "red    ripe" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "tomato", "right": "plant" },
+            { "left": "fish", "right": "water" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a big red tomato. Add a green leaf on top.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Fruit That Everyone Calls a Vegetable",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-tomato", "templateLabel": "The Fruit That Everyone Calls a Vegetable", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "tomato",
+          "notes": ["A tomato starts as a yellow flower", "Green tomatoes turn red as they ripen", "One tomato holds many seeds", "Some are tiny, some are big as your hand"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Tomato Grows",
+          "text": "A tomato starts as a tiny yellow flower on a green plant. When the flower falls away, a small green tomato grows in its place. The tomato drinks up sunshine and water. Slowly it gets bigger. Slowly it turns from green to red. When it is red and soft, it is ripe and ready to pick. Inside every tomato are lots of little seeds. If you plant one seed, a whole new tomato plant can grow. People eat tomatoes in salad, on pizza, and in warm soup. Some tomatoes are as tiny as a marble. Some are as big as your hand."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What color is a tomato before it is ripe?", "What is inside every tomato?", "Name one food people make with tomatoes."],
+          "rows": 2,
+          "answers": ["green", "little seeds", "salad, pizza, or soup"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A tomato starts as a yellow ____.", "A ripe tomato is ____ and soft.", "Inside a tomato are little ____.", "You can plant a seed to grow a new ____."],
+          "wordBank": ["flower", "red", "seeds", "plant"],
+          "answers": ["flower", "red", "seeds", "plant"]
+        },
+        { "kind": "draw", "prompt": "Draw a tomato plant with a red tomato and a yellow flower.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Fruit That Everyone Calls a Vegetable",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-tomato", "templateLabel": "The Fruit That Everyone Calls a Vegetable", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "tomato",
+          "notes": ["Scientists say a tomato is a fruit", "It is really a kind of berry", "First grown for food in Mexico", "The name comes from the word tomatl", "Lycopene makes it turn red"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Fruit That Everyone Calls a Vegetable",
+          "text": "Ask most people what a tomato is, and they will say it is a vegetable. Scientists say something different. A tomato grows from a flower and holds seeds inside, and that makes it a fruit. In fact, it is a kind of berry. Tomatoes did not always grow all over the world. Long ago they grew wild in South America, where the fruit was small and yellow. People in Mexico were the first to grow them for food. They called the fruit tomatl. When explorers carried tomato plants back to Europe, some people were afraid to eat them. They thought the bright red fruit might be poison. Today we know tomatoes are good to eat. A tomato turns red because of something inside it called lycopene. The riper the tomato, the redder it gets. Farmers grow thousands of kinds. Some are red, some are yellow, some are purple, and a few are striped like candy."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why do scientists say a tomato is a fruit and not a vegetable?",
+            "Where did tomatoes first grow in the wild?",
+            "Why were some people in Europe afraid to eat tomatoes?",
+            "Why do you think farmers grow so many different kinds of tomato?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it grows from a flower and holds seeds inside",
+            "in South America",
+            "they thought the bright red fruit might be poison",
+            "(opinion: for different tastes, colors, and uses)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Fruit That Everyone Calls a Vegetable", "How to Build a Boat", "The Coldest Place on Earth"],
+          "answers": ["The Fruit That Everyone Calls a Vegetable"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A tomato grows from a ____ and holds seeds.", "People in Mexico called the fruit ____.", "The color red comes from ____."],
+          "wordBank": ["flower", "tomatl", "lycopene"],
+          "answers": ["flower", "tomatl", "lycopene"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: would you rather eat a red tomato or a yellow one, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Fruit That Everyone Calls a Vegetable",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-tomato", "templateLabel": "The Fruit That Everyone Calls a Vegetable", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tomato",
+          "notes": ["Solanum lycopersicum is its scientific name", "Botanically a fruit, legally a vegetable", "In the nightshade family, like the potato", "Ruled a vegetable by a US court in 1893", "First tamed by farmers in Mexico", "Lead plates, not tomatoes, made diners sick"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "How a Fruit Won a Court Case as a Vegetable",
+          "text": "The tomato lives a double life. To a botanist, the person who studies plants, the answer is simple. A tomato develops from the flower of the plant and carries the seeds, so it is a fruit, and more exactly a berry. To a cook, that answer is useless. Tomatoes are not sweet like apples or peaches. They belong in soups, sauces, and salads, next to onions and beans, so cooks have always treated them as vegetables. This argument once reached a court of law. In 1893, the United States taxed imported vegetables but not fruit. A trader named Nix wanted his tomatoes counted as fruit so he would not have to pay the tax. The Supreme Court disagreed. The judges decided that because people eat tomatoes with dinner and not for dessert, the law would treat them as vegetables. Science lost to the kitchen. The tomato has been surprising people for a long time. It began as a small wild plant in the Andes mountains of South America and was first farmed in Mexico. When Spanish ships carried it to Europe, many Europeans refused to eat it. The tomato belongs to the nightshade family, and some of its relatives really are poisonous. Wealthy families ate off pewter plates that contained lead, and the acid in tomatoes pulled the lead out, which made diners sick. For years people blamed the fruit instead of the plate. Only later did the tomato become one of the most eaten foods on Earth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, why did a court have to decide whether a tomato is a fruit or a vegetable?",
+            "The passage says, Science lost to the kitchen. What does that mean?",
+            "Why did people wrongly believe tomatoes were poisonous when eaten off pewter plates?",
+            "Why do you think the tomato became popular even after two hundred years of fear?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(botany and cooking disagreed, and a tax law needed one clear answer)",
+            "(the everyday cooking use won over the scientific definition)",
+            "the acid pulled poisonous lead out of the plates, not from the fruit",
+            "(inference: its flavor and usefulness outweighed the old fear)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The tomato is a misunderstood fruit that overcame fear to become a global food",
+            "Tomatoes are the only food that has ever been taxed",
+            "Nightshade plants should never be eaten by anyone"
+          ],
+          "answers": ["The tomato is a misunderstood fruit that overcame fear to become a global food"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["botanist → ____", "imported → ____", "nightshade → ____"],
+          "rows": 1,
+          "answers": ["a scientist who studies plants", "brought in from another country", "a plant family that includes some poisonous plants"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: was the Supreme Court right to call the tomato a vegetable? Give two reasons for your answer.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Fruit That Everyone Calls a Vegetable",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-tomato", "templateLabel": "The Fruit That Everyone Calls a Vegetable", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tomato",
+          "notes": ["Native to the Andes of South America", "Domesticated in Mexico as tomatl", "Reached Europe on Spanish ships in the 1500s", "Feared as poison for about 200 years", "Southern Italy paired it with pasta", "Thousands of varieties exist today"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Poison Apple That Fed the World",
+          "text": "Few foods have traveled as far, or been misjudged as badly, as the tomato. Today it flavors pizza in Italy, curries in India, and salsa in Mexico, and it is easy to assume it has always belonged to those places. It has not. The tomato is a newcomer to almost every kitchen that now depends on it. The plant began in western South America, along the dry slopes of the Andes, where the wild fruit was no bigger than a pea. People in what is now Mexico were the first to tame it, growing larger fruit and giving it the name tomatl. When Spanish ships returned from the Americas in the 1500s, they carried tomato seeds back to Europe along with gold and new ideas. Europe was not grateful. The tomato belongs to the nightshade family, a group of plants that includes several genuine poisons, and its strange red fruit made people nervous. For roughly two hundred years, many Europeans grew the tomato only as a curious garden decoration and refused to put it on the table. There was even a grain of truth behind the fear. Rich households dined on plates made partly of lead, and the acid in tomatoes drew that lead into the food, slowly poisoning the very people who could afford such plates. The fruit took the blame for the plate's crime. What finally rescued the tomato was hunger and flavor. Poorer families, eating from wooden or clay dishes, had no lead to fear, and they discovered that the tomato made plain food delicious. In southern Italy it met wheat pasta and became a sauce the world would copy. By the 1800s the tomato had shed its dangerous reputation almost everywhere. Its comeback is remarkable. The tomato is now among the most grown fruits on the planet, and yes, it is a fruit, since it forms from a flower and holds its seeds inside. Thousands of varieties exist, from tiny sweet cherry types to beefsteaks as wide as a plate, in colors that run from deep red to yellow, orange, green, and near black. A plant once feared as poison now feeds more people than almost any other."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Is this passage written mainly to inform, persuade, or entertain? Point to two details that support your answer.",
+            "The passage says there was even a grain of truth behind the fear. What was the real danger, and whose fault was it?",
+            "Why does the author say the tomato is a fruit? Quote the reason from the text.",
+            "Explain how flavor, not science, finally rescued the tomato."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: origin in the Americas, fear in Europe, rise to a global food)",
+            "(inform, with detail: it gives dates, names, and facts, in a light storytelling tone)",
+            "(lead leached from the plates by the tomato's acid; the plate's fault, not the fruit's)",
+            "(it forms from a flower and holds its seeds; quote: since it forms from a flower and holds its seeds inside)",
+            "(poorer cooks with safe dishes found it made plain food delicious, so demand spread)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["misjudged → ____", "curious (garden decoration) → ____", "reputation → ____", "varieties → ____"],
+          "rows": 1,
+          "answers": ["judged wrongly", "strange or interesting to look at", "what people generally think of something", "different types of the same thing"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might a food eaten by poor families spread faster than one eaten only by the rich?",
+            "The title calls the tomato a poison apple that fed the world. Explain why that title fits."
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: far more people ate it, and it made cheap food better)",
+            "(it was once feared as poison but became one of the most eaten foods on Earth)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should we trust a food more because scientists approve of it, or because it tastes good and many people eat it? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Fruit That Everyone Calls a Vegetable",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-tomato", "templateLabel": "The Fruit That Everyone Calls a Vegetable", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "tomato",
+          "notes": ["Solanum lycopersicum, in the nightshade family", "Botanically a berry, legally a vegetable in the US since 1893", "Origin: wild in the Andes, tamed in Mexico", "Carried to Europe by Spanish ships in the 1500s", "Lycopene pigment deepens as it ripens", "Now one of the most grown fruits on Earth"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Tomato: A Berry That Rewrote the World's Cooking",
+          "text": "It is difficult to picture Italian cooking without tomato sauce, Indian curry without tomato gravy, or a Mexican table without salsa, and yet none of those cuisines knew the tomato until about five hundred years ago. The fruit that now seems native to half the world's kitchens is, historically speaking, a recent arrival everywhere except one corner of the Americas. Its journey from wild weed to global staple is a story of botany, fear, chemistry, and appetite. Botanically, the tomato is not a vegetable at all. It develops from the flower of the plant Solanum lycopersicum and encloses its seeds in fleshy pulp, which makes it a fruit and, more precisely, a berry. Cooks have never cared. Because the tomato is savory rather than sweet and shares a plate with onions and beans, kitchens have always filed it under vegetables. The disagreement became law in 1893, when the United States Supreme Court, deciding a tax case, ruled that tomatoes are vegetables because they are usually served at dinner and not, like fruits generally, as dessert. Science made its case and the kitchen won. The plant itself came from the western edge of South America, in the foothills of the Andes, where the wild fruit was tiny and sour. Farmers in what is now Mexico first domesticated it and called it tomatl, the root of the word we still use. Spanish ships carried its seeds to Europe in the sixteenth century, and there the tomato met a wall of suspicion. It belonged to the nightshade family, whose members include deadly plants, and its glossy red fruit looked more like a warning than a meal. For roughly two centuries many Europeans grew it only as an ornament. There was, oddly, real danger, though not from the fruit itself. The wealthy ate from pewter and lead-glazed plates, and the acid in tomatoes leached lead out of the metal and into the meal, causing sickness that people blamed on the tomato rather than the tableware. The poor, who ate from wood and earthenware, ran no such risk, and it was largely poorer cooks, especially in southern Italy, who proved how good the tomato could be. Paired with wheat pasta, it produced a sauce the rest of the world eventually imitated. By the nineteenth century the fear had faded and the tomato spread into cuisine after cuisine. Today it is one of the most widely grown fruits on Earth, bred into thousands of varieties: marble-sized cherry tomatoes, beefsteaks broad as a hand, and fruit colored red, yellow, orange, purple, green, and nearly black. The red ones owe their color to lycopene, a pigment that deepens as the fruit ripens. The tomato's history is a warning about trusting appearances. A fruit was mistaken for a vegetable, a harmless food was mistaken for a poison, and the real culprit, a lead plate, escaped blame entirely for years. What rescued the tomato was not an argument but a taste: once people cooked with it, its usefulness overwhelmed every rumor. The plant that Europe once grew as decoration and feared as death now feeds more people, in more countries, than almost any other fruit in the world."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a full phrase from it.",
+            "The author writes that the Supreme Court ruled tomatoes are vegetables because they are usually served at dinner and not, like fruits generally, as dessert. Explain that reasoning in your own words.",
+            "Find and quote the phrase the author uses to describe how Europe first reacted to the tomato, and explain what the phrase suggests.",
+            "The passage says the real danger was not from the fruit itself. What was it, and who or what got blamed instead?",
+            "Identify where the passage turns from history to a lesson, and explain how the author signals that shift."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary of origin, fear, and global rise)",
+            "(the court used everyday eating habits rather than botany to classify it)",
+            "(quote: a wall of suspicion; it suggests strong, widespread distrust)",
+            "(lead leached from pewter and lead-glazed plates by the tomato's acid; the tomato was blamed instead of the tableware)",
+            "(at the final paragraph, The tomato's history is a warning about trusting appearances; the direct statement of a moral signals the shift)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["domesticated → ____", "leached → ____", "ornament → ____", "culprit → ____"],
+          "rows": 2,
+          "answers": [
+            "tamed a wild plant or animal for human use",
+            "drew a substance out of something, usually by liquid",
+            "a decorative object grown or kept for its looks",
+            "the person or thing responsible for a problem"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author ends by saying the tomato feeds more people, in more countries, than almost any other fruit in the world. Why place this fact last, and what effect does it create?",
+            "The passage repeats the idea that appearances can mislead. List two separate examples the author uses to prove that point."
+          ],
+          "rows": 3,
+          "answers": [
+            "(it closes on the scale of the tomato's success, making the earlier fear look foolish and giving the essay a strong ending)",
+            "(a fruit mistaken for a vegetable; a harmless food mistaken for a poison; the lead plate escaping blame)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: People were foolish to fear the tomato for two hundred years. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

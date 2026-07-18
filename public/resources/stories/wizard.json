@@ -1,0 +1,304 @@
+{
+  "key": "wizard",
+  "title": "The Wizard Who Wasn't Magic",
+  "blurb": "Six wizard stories, from a starry hat and a lost pair of glasses to the old idea hiding under the pointed hat: that a wizard was once just a person wise enough to pay attention.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Wizard Who Wasn't Magic",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-wizard", "templateLabel": "The Wizard Who Wasn't Magic", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the wizard." },
+        {
+          "kind": "image",
+          "imageKey": "wizard",
+          "notes": ["The word wizard means wise", "Wizards live in old stories", "In stories they carry a wand", "Merlin is a story wizard"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a wizard. The wizard has a tall blue hat. Little stars are on the hat. The wizard holds a wand. Wave the wand and say the magic word. Look, a light. The wizard has a soft gray beard. The wizard has a big book of spells. At night the wizard reads by the light of the moon. The wizard likes tea."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the stars on each hat. Write how many in the box.",
+          "emoji": "⭐",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "wand    hat" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "wizard", "right": "wand" },
+            { "left": "king", "right": "crown" },
+            { "left": "bird", "right": "nest" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own wizard. Give the hat some stars.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Wizard Who Wasn't Magic",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-wizard", "templateLabel": "The Wizard Who Wasn't Magic", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "wizard",
+          "notes": ["The word wizard comes from wise", "Long ago it meant a clever person", "Merlin is a famous story wizard", "In stories wizards carry a wand or staff"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Wizard Pim and the Missing Glasses",
+          "text": "Old Wizard Pim lived in a tower by the sea. Every morning he climbed the stairs to feed his owl. The owl carried letters for people far away. Pim had a long white beard and a hat full of stars. When he waved his wand, small blue sparks danced in the air. But one day Pim could not find his glasses. He looked under his book. He looked in his boot. At last the owl pointed with one wing. The glasses were sitting on top of Pim's own head. Pim laughed and gave the owl a treat."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Where did Wizard Pim live?", "What did the owl carry?", "Where were the glasses in the end?"],
+          "rows": 2,
+          "answers": ["in a tower by the sea", "letters for people far away", "on top of his own head"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Wizard Pim lived in a ____ by the sea.", "His ____ carried letters for people.", "When he waved his ____, blue sparks danced.", "The glasses were on top of his ____."],
+          "wordBank": ["tower", "owl", "wand", "head"],
+          "answers": ["tower", "owl", "wand", "head"]
+        },
+        { "kind": "draw", "prompt": "Draw Wizard Pim in his tower. Add his owl and his starry hat.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Wizard Who Wasn't Magic",
+      "subtitle": "A reading sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-wizard", "templateLabel": "The Wizard Who Wasn't Magic", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "wizard",
+          "notes": ["The word wizard comes from an old word for wise", "Long ago a wizard just meant a wise person", "Merlin is a famous wizard in King Arthur stories", "In old pictures wizards wear starry hats", "In folklore wizards study from spell books"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Spell That Found Its Day",
+          "text": "Mira wanted to be a wizard more than anything. The trouble was that her spells never worked the way the book promised. When she tried to light a candle, she made it rain instead. When she tried to warm the soup, she turned it blue. Her teacher, old Master Bram, did not seem worried. One cold night the whole village lost its fire. The wood was too wet to burn. Mira stepped forward and tried her candle spell one more time. Rain poured from her hands, just as it always did. But this rain was warm, and where it fell the wet wood began to steam and then to glow. Soon every hearth in the village was lit. Master Bram smiled. A spell is not wrong, he said, just because it does something you did not expect. Sometimes the trick is finding the day it fits."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "What happened when Mira tried to light a candle?",
+            "Why could the village not light its fire that night?",
+            "What did Mira's warm rain do to the wet wood?",
+            "Why do you think Master Bram was not worried about Mira's spells?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it rained instead of lighting",
+            "the wood was too wet to burn",
+            "it made the wood steam and then glow until it lit",
+            "(inference: he knew a spell can be useful in the right moment)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Spell That Found Its Day", "How to Bake Bread", "The Longest River in the World"],
+          "answers": ["The Spell That Found Its Day"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A ____ is the place where a fire burns in a home.", "The wet wood would not ____ that night.", "Warm rain ____ from Mira's hands."],
+          "wordBank": ["hearth", "burn", "poured"],
+          "answers": ["hearth", "burn", "poured"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: if you had a spell that never worked the way you expected, when might it still come in handy?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Wizard Who Wasn't Magic",
+      "subtitle": "A reading sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-wizard", "templateLabel": "The Wizard Who Wasn't Magic", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "wizard",
+          "notes": ["The word wizard comes from wys, an old word for wise", "For centuries it meant a wise or learned person", "Merlin is the famous wizard of the King Arthur legends", "The starry pointed hat comes from old images of stargazers", "A book of spells is called a grimoire"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wand That Did Nothing",
+          "text": "Every apprentice at the Tower learned the same first lesson: a wizard's power is not in the wand. Toma did not believe it. He was sure the older students kept the real secret to themselves, and that a better wand would finally make his spells hold steady. So on the night of the harvest fair, he traded his savings for a wand of black river oak, carved with silver thread. It was the most beautiful thing he had ever owned. The next morning he stood in the practice yard and raised it high. He spoke the words for a floating light, the very first spell every student learns. Nothing happened. He tried again, louder. Still nothing. The beautiful wand lay dead in his hand. Master Sable watched from the doorway. She did not laugh. She handed Toma a plain stick of pine, no thicker than a finger, and told him to try once more. This time he was too tired to expect anything. He simply pictured the light, clearly and calmly, and asked it to come. A small gold flame rose from the tip of the pine and hung in the air like a tiny sun. The wand did nothing for you, Sable said, because it had nothing to give. What holds a spell steady is a steady mind. A wand only points the way your attention is already going. Toma looked at the plain pine stick and, for the first time, understood the lesson he had been told on his very first day."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Why did Toma trade his savings for the black oak wand?",
+            "Why do you think the beautiful wand did nothing, while the plain pine stick worked?",
+            "What changed about Toma between his first try and his last try?",
+            "In your own words, what does Master Sable mean when she says a wand points the way your attention is already going?"
+          ],
+          "rows": 2,
+          "answers": [
+            "he believed a better wand would make his spells hold steady",
+            "(inference: the power was in his focus, not the wand; once tired he stopped forcing it and simply pictured the light)",
+            "at first he expected the wand to do the work; the last time he was calm and pictured the light himself",
+            "a wand only follows the wizard's focus and cannot supply power on its own"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A wizard's power comes from a steady, focused mind, not from a special wand",
+            "Expensive wands are always better than cheap ones",
+            "Pine trees make the best magic wands"
+          ],
+          "answers": ["A wizard's power comes from a steady, focused mind, not from a special wand"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["apprentice → ____", "steady → ____", "attention → ____"],
+          "rows": 1,
+          "answers": ["a person learning a skill from a master", "calm and not shaking or changing", "the focus of your mind on one thing"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph about a time you thought you needed a special tool to do something, but the skill turned out to be in you. Give two details.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Wizard Who Wasn't Magic",
+      "subtitle": "A reading sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-wizard", "templateLabel": "The Wizard Who Wasn't Magic", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "wizard",
+          "notes": ["The word wizard comes from wys, meaning wise", "In the 1400s it simply meant a philosopher or sage", "Merlin, from the Arthur legends, is the best-known story wizard", "Europe's cunning folk once sold cures and advice", "The starry hat echoes old images of astronomers and magi", "A book of spells is called a grimoire"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Wizard of Harrow",
+          "text": "The village of Harrow had kept a wizard for as long as anyone could remember. The wizard's job was not to throw fire or turn enemies to stone, whatever the old songs claimed. The job was quieter and harder than that. When the river rose, the wizard read the water and told the farmers which fields to abandon. When fever came, the wizard knew which weeds to boil and which to burn. When two families quarreled over a boundary stone, the wizard was the one voice both sides would still listen to. Nessa became Harrow's wizard at nineteen, younger than any before her. She had studied for six years under old Corvin, and she knew every remedy in his cracked leather book. What she did not have was the thing the villagers trusted most, which was gray hair. The first winter, a farmer named Holt refused her advice about a sick flock, certain that a girl could not know better than he did. Half his sheep died. He did not apologize, but the next spring he came to her door before planting, cap in hand, and asked what she thought. Nessa learned something that year that Corvin had never written down. A wizard's real power was not in the spells at all. It was in being trusted, and trust could not be inherited with the title. It had to be earned one hard, patient season at a time. The book gave her knowledge. Only the years would give her authority. By the time Nessa was old, with gray hair of her own at last, the village had stopped questioning her. New children assumed she had always been wise, the way children do. She let them think it. But she kept Holt's story, and told it to her own apprentice on the girl's first day. The magic that matters, she said, is slow. Do not expect the village to believe in you because of what you know. They will believe in you because of what you have done, and that takes longer than any spell in this book."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in two or three sentences.",
+            "According to the passage, what was the wizard of Harrow's real job? Give two examples from the text.",
+            "Find the sentence that states the story's main lesson about a wizard's power. Write it down.",
+            "Is this passage written mainly to inform, to persuade, or to tell a story with a lesson? Point to two details that support your answer.",
+            "Why do you think the author includes the story of Holt and his sheep?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(summary: a young wizard named Nessa slowly earns the village's trust, learning that authority is earned over years, not handed over with the title)",
+            "(reading the river to guide the farmers, knowing which weeds to boil for fever, settling quarrels between families)",
+            "A wizard's real power was not in the spells at all. It was in being trusted.",
+            "(a story with a lesson: it follows Nessa across years and ends with a stated moral about trust)",
+            "(inference: it shows trust being earned the hard way and proves that her knowledge alone was not enough)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["remedy → ____", "inherited → ____", "authority → ____", "apprentice → ____"],
+          "rows": 1,
+          "answers": ["a cure or treatment for an illness", "received automatically, as if handed down", "the trusted right to be listened to and obeyed", "a person learning a craft from a master"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says trust could not be inherited with the title. Explain what that means in your own words.",
+            "Why might a whole village have depended on one trusted person more in the past than today?"
+          ],
+          "rows": 3,
+          "answers": ["(you can be given the job but not the villagers' belief in you; that has to be earned over time)", "(inference: fewer experts and no fast information, so one wise person handled medicine, weather, and disputes)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: was it fair that Nessa had to earn trust the hard way, even though she already knew the remedies? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Wizard Who Wasn't Magic",
+      "subtitle": "A reading sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-wizard", "templateLabel": "The Wizard Who Wasn't Magic", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "wizard",
+          "notes": ["The word wizard comes from wys, an Old English root for wise", "By the 1400s it meant a sage or philosopher", "Merlin, from the Arthurian legends, is the archetypal story wizard", "Europe's cunning folk really sold cures, charms, and advice", "The starry pointed hat draws on old images of astronomers and magi", "A book of magical spells is called a grimoire"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Oldest Magic",
+          "text": "There is a question every wizard's apprentice asks eventually, usually late at night, usually after a spell has failed for the tenth time: what is magic, really? Master Ines had a habit of answering questions with other questions, but this one she answered plainly, and only once. Kael had been her student for four years when he finally asked it. They were sitting in the tower's cold observatory, charting the winter stars, and he was tired enough to be honest. He said he had begun to suspect there was no such thing as magic at all, that everything they did could be explained by patience, herbs, and paying close attention. He expected her to be angry. Instead she looked pleased, the way a teacher looks when a student has finally noticed the trap in a problem. You are almost right, Ines said. Then she told him the truth she had been waiting four years to tell. Long ago, she explained, the first wizards were simply the people who paid attention when everyone else was too busy surviving. They noticed that certain leaves brought down a fever, that the river always flooded three days after a particular wind, that a sick child often needed a calm adult more than a potion. They wrote these observations down and guarded them, because knowledge was rare and rareness was power. To the frightened people around them, a person who could predict a flood or break a fever might as well have commanded the sky. The word for such a person became wizard, from an old word meaning wise. The pointed hat and the muttered spells came later, added by storytellers who found the plain truth too dull. So there is no magic, Kael said, disappointed. Ines shook her head. That is the wrong lesson, she said. There is no trick that breaks the laws of the world. But look at what these people actually did. They chose to notice. They chose to remember, to write it down, to pass it on to a stranger who would live after they were dead. Most people never bother. That choice, made over and over across a hundred lifetimes, is the closest thing to magic that has ever existed, and it is completely real. You are not learning to cheat the world, Kael. You are learning to see it clearly, and then to hand what you see to someone who has not been born yet. Kael did not answer for a long time. Above them the winter stars turned, exactly as the charts predicted they would, which had once seemed like sorcery and now seemed like something better. Years later, when Kael was the master and had his own tired, doubting apprentice, he did not answer the question with a question. He answered it plainly, and only once, the way it had been answered for him, so that the oldest magic, the handing on, would not stop with him."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a full phrase from it.",
+            "According to Ines, how did the first wizards actually gain their reputation? Quote the exact phrase she uses to describe what they did.",
+            "Ines says Kael has drawn the wrong lesson. In your own words, what is the right lesson she offers instead?",
+            "The passage begins and ends with almost the same image: a master answering a question plainly, and only once. What is the author doing by repeating it, and what does it add to the ending?",
+            "Find the sentence that redefines magic as a human choice rather than a trick. Write it down and explain how it changes the meaning of the whole passage."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary: real magic is the human habit of careful observation, recorded and passed on across generations)",
+            "(they paid attention and recorded what they learned; quote: the people who paid attention when everyone else was too busy surviving)",
+            "(there is no rule-breaking trick, but choosing to notice, record, and hand knowledge on across lifetimes is real and rare)",
+            "(the repeated frame shows the tradition continuing through Kael; it makes the ending feel like proof of the theme, the handing on of knowledge)",
+            "(sentence: That choice, made over and over across a hundred lifetimes, is the closest thing to magic that has ever existed; it reframes magic as human effort rather than supernatural power)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["observatory → ____", "observations → ____", "sorcery → ____", "apprentice → ____"],
+          "rows": 2,
+          "answers": [
+            "a place built for watching the stars and sky",
+            "careful notes about what a person has watched or measured",
+            "the use of magic powers, especially in stories",
+            "a person learning a craft or skill from a master"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "Ines says knowledge was rare and rareness was power. Explain how that idea connects a wizard's status to secrecy.",
+            "Do you agree with Ines that passing knowledge on to strangers who are not yet born is the closest thing to real magic? Explain."
+          ],
+          "rows": 3,
+          "answers": ["(when few people held useful knowledge, keeping it rare made the holder powerful and feared)", "(opinion, with reasoning)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: Ines is only redefining the word magic to comfort a disappointed student, and there is nothing truly magical in the story. State your position, support it with two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

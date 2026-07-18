@@ -1,0 +1,304 @@
+{
+  "key": "motorcycle",
+  "title": "The Two-Wheeled Machine That Won't Fall Over",
+  "blurb": "How a motorcycle balances on two wheels, why riders steer the wrong way to turn, and where the whole idea began.",
+  "topic": "vehicles",
+  "bands": {
+    "1": {
+      "title": "The Two-Wheeled Machine That Won't Fall Over",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-motorcycle", "templateLabel": "The Two-Wheeled Machine That Won't Fall Over", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Point to the two wheels." },
+        {
+          "kind": "image",
+          "imageKey": "motorcycle",
+          "notes": ["It has just two wheels", "The engine goes vroom", "The rider wears a helmet", "It stays up when it moves"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a motorcycle. It has two wheels. One in front and one in back. It has an engine that goes vroom. A rider sits on top. The rider wears a helmet to stay safe. The rider holds the handles and steers. When the motorcycle moves, it stays up. Fast wheels help it balance. Off it goes down the road."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the motorcycles in each row. Write how many in the box.",
+          "emoji": "🏍️",
+          "items": ["2", "3", "1", "4"],
+          "answers": ["2", "3", "1", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "ride    wheel" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one.",
+          "pairs": [
+            { "left": "motorcycle", "right": "two wheels" },
+            { "left": "car", "right": "four wheels" },
+            { "left": "truck", "right": "big load" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own motorcycle. Give it a rider with a helmet.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Two-Wheeled Machine That Won't Fall Over",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-motorcycle", "templateLabel": "The Two-Wheeled Machine That Won't Fall Over", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "motorcycle",
+          "notes": ["Like a bike with an engine", "The right handle makes it go", "It sips only a little gas", "Riders wear a helmet and gloves", "It leans to turn a corner"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Bike With an Engine",
+          "text": "A motorcycle is like a bicycle with an engine. It has two wheels, a seat, and handlebars. The rider twists the right handle to go faster. This is called the throttle. To slow down, the rider squeezes the brakes. A motorcycle can go many miles on a little bit of gas. That makes it cheap to ride. Riders wear a helmet, gloves, and a thick jacket. If they fall, the gear keeps them safe. When the motorcycle leans into a turn, it can go around a corner without tipping over. Fast wheels help it stay balanced and upright."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["How many wheels does a motorcycle have?", "What does the rider twist to go faster?", "What do riders wear to stay safe?"],
+          "rows": 2,
+          "answers": ["it has two wheels", "the right handle, called the throttle", "a helmet, gloves, and a thick jacket"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A motorcycle has two ____.", "The rider twists the ____ to go faster.", "The rider wears a ____ on their head.", "It ____ into a turn to go around a corner."],
+          "wordBank": ["wheels", "throttle", "helmet", "leans"],
+          "answers": ["wheels", "throttle", "helmet", "leans"]
+        },
+        { "kind": "draw", "prompt": "Draw a motorcycle going around a corner. Show it leaning over.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Two-Wheeled Machine That Won't Fall Over",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-motorcycle", "templateLabel": "The Two-Wheeled Machine That Won't Fall Over", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "motorcycle",
+          "notes": ["Spinning wheels resist tipping", "Riders push left to go left", "First one built in 1885", "Made in Germany with a wooden frame", "The engine turns the back wheel"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Machine That Balances Itself",
+          "text": "A motorcycle looks simple, but keeping it upright is a clever trick. When you push a bicycle without a rider, it can roll a long way on its own before it tips. The same is true for a motorcycle. As the wheels spin, they resist falling over, and the way the front wheel is built lets the bike steer itself back under its weight. This is why a moving motorcycle feels steady while a stopped one wants to fall. Riders steer in a surprising way. To turn left at speed, a rider gently pushes the left handle forward. The bike leans left, and around the corner it goes. This is called countersteering, and every rider does it, even if they do not notice. The first motorcycle was built in Germany in 1885 by Gottlieb Daimler and Wilhelm Maybach. It had a wooden frame and a small gas engine. It was slow and shaky, but it proved that an engine could move two wheels down a road. Today motorcycles carry people all over the world."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why does a moving motorcycle feel steadier than a stopped one?",
+            "Which way does a rider push the handle to turn left at speed?",
+            "Who built the first motorcycle, and in what year?",
+            "Why do you think the very first motorcycle was slow and shaky?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the spinning wheels resist falling and the front wheel steers back under its weight",
+            "the rider gently pushes the left handle forward",
+            "Gottlieb Daimler and Wilhelm Maybach, in 1885",
+            "(inference: it was the first try, with a wooden frame and a small early engine)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Machine That Balances Itself", "How to Cook a Family Dinner", "The Tallest Mountain in Germany"],
+          "answers": ["The Machine That Balances Itself"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Steering by pushing the handle the surprising way is called ____.", "The first motorcycle was built in the country of ____.", "As the wheels ____, they resist falling over."],
+          "wordBank": ["countersteering", "Germany", "spin"],
+          "answers": ["countersteering", "Germany", "spin"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the cleverest thing about how a motorcycle balances, and why do you think so?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Two-Wheeled Machine That Won't Fall Over",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-motorcycle", "templateLabel": "The Two-Wheeled Machine That Won't Fall Over", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "motorcycle",
+          "notes": ["A spinning wheel acts like a spinning top", "Gyroscopic stability resists tilting", "The front fork angle self-corrects the lean", "Engine size is measured in cc", "A chain drives the back wheel", "Often the main vehicle in many countries"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Physics Hiding in Two Wheels",
+          "text": "To a person standing on the curb, a motorcycle is a mystery. It has only two wheels, yet a rider can cruise for miles without tipping over. The secret is motion. A spinning wheel behaves like a spinning top. It resists any push that would tilt it, an effect called gyroscopic stability. Just as important is the shape of the front fork, which is angled so that the front wheel naturally rolls back underneath the bike whenever it starts to lean. Together these forces make a moving motorcycle want to stay upright. Steering a motorcycle is stranger than steering a car. At any real speed, a rider turns by countersteering: a light push on the left grip to go left, a light push on the right grip to go right. The push makes the bike lean, and the lean carries it through the curve. Riders learn this by feel long before anyone explains the physics to them. Under the seat sits the engine, measured in cubic centimeters, or cc. A larger number usually means more power. The engine sends its power through a chain to the back wheel, and the rider changes gears with a lever worked by the left foot. A skilled rider blends throttle, brakes, clutch, and balance without thinking. Motorcycles matter for more than fun. They use far less fuel than cars, fit through crowded traffic, and reach villages where wide roads never went. In many countries they are the main way families and goods move from place to place."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "In your own words, what is gyroscopic stability?",
+            "How does the shape of the front fork help the bike stay up?",
+            "Why does the passage say steering a motorcycle is stranger than steering a car?",
+            "The passage ends by saying motorcycles are the main way people move in many countries. Why might that be true where roads are narrow or poor?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(a spinning wheel resists being tilted, like a spinning top)",
+            "it is angled so the front wheel rolls back under the bike when it leans",
+            "at speed a rider countersteers, pushing left to go left and right to go right",
+            "(inference: bikes use little fuel and fit through narrow or rough roads cars cannot manage)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A motorcycle stays up through physics, is steered by countersteering, and matters far beyond fun",
+            "Motorcycles are the fastest vehicles ever built",
+            "Everyone should learn to fix a car engine"
+          ],
+          "answers": ["A motorcycle stays up through physics, is steered by countersteering, and matters far beyond fun"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["gyroscopic stability → ____", "countersteering → ____", "throttle → ____"],
+          "rows": 1,
+          "answers": ["a spinning wheel resisting a tilt", "steering the wrong way to make the bike lean and turn", "the control that sets how much power the engine makes"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: would you rather ride a motorcycle or ride in a car, and why? Give two reasons for your choice.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Two-Wheeled Machine That Won't Fall Over",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-motorcycle", "templateLabel": "The Two-Wheeled Machine That Won't Fall Over", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "motorcycle",
+          "notes": ["Two forces balance the bike: gyroscope and trail", "Trail: the steering axis meets the ground ahead of the tire", "Countersteering: push left to lean left", "Engine sized in cubic centimeters (cc)", "First built in 1885 by Daimler and Maybach", "The everyday vehicle across much of the world"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Ordinary Physics, Working Faster Than the Eye",
+          "text": "Balancing a motorcycle looks like magic, but it is ordinary physics working faster than the eye. Two effects do most of the work. The first is gyroscopic stability: a spinning wheel stores energy in its motion and resists being tilted, the same reason a spinning top does not fall. The second, and the more powerful, is the geometry of the front end. The steering axis meets the ground slightly ahead of where the tire touches down, a distance engineers call trail. Trail makes the front wheel behave like the caster on a shopping cart, swinging around to point straight and steering itself back beneath the bike the instant it begins to lean. A parked motorcycle falls over. A rolling one fights to stand up. Because of this, riders steer in a way that feels backward until it becomes instinct. To begin a left turn at speed, a rider pushes gently on the left grip, which momentarily steers the front wheel right. The bike drops into a left lean, and the same self-correcting geometry then carries it smoothly around the curve. This is countersteering, and every experienced rider does it without conscious thought. The machine itself is a chain of simple parts working together. The engine, sized in cubic centimeters, burns fuel to spin a crankshaft. That power flows through a clutch and gearbox and down a chain to the rear wheel. The rider controls speed with a twist grip throttle, changes gears with the left foot, and manages two separate brakes for the front and rear wheels. Coordinating all of this while balancing is a real skill, which is why riders train before they take to busy roads. Motorcycles were born in 1885, when Gottlieb Daimler and Wilhelm Maybach bolted a small gas engine to a wooden two wheeler in Germany. Within a few decades the design had spread worldwide. Today motorcycles are far more than a hobby. They sip fuel, slip through jammed city streets, and carry people and cargo along narrow tracks that cars cannot manage. In much of Asia, Africa, and South America, the motorcycle, not the car, is the vehicle that keeps daily life moving."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Name the two effects that keep a moving motorcycle upright, and say which the passage calls more powerful.",
+            "Explain what trail is. Quote the phrase the passage uses to compare it to something in a store.",
+            "Is this passage written mainly to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why does the author end with Asia, Africa, and South America instead of with the physics?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering self-balancing physics + countersteering + worldwide use)",
+            "gyroscopic stability and trail; the passage calls trail the more powerful",
+            "the steering axis meeting the ground ahead of the tire; quote: like the caster on a shopping cart",
+            "(inform, with detail: it defines terms and explains how the machine works)",
+            "(to show the motorcycle matters most as an everyday vehicle, not just a curiosity)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["trail → ____", "crankshaft → ____", "self-correcting → ____", "instinct → ____"],
+          "rows": 1,
+          "answers": ["the gap between the steering axis and the tire's contact point", "the spinning part the engine turns to send out power", "fixing its own lean without the rider forcing it", "something done automatically, without conscious thought"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The passage says a parked motorcycle falls over but a rolling one fights to stand up. Explain that difference in your own words.",
+            "Why might a country with crowded cities and narrow roads come to depend on motorcycles?"
+          ],
+          "rows": 3,
+          "answers": ["(motion gives the wheels stability and lets the geometry self-correct; standing still, both are gone)", "(inference: bikes are cheap on fuel and fit where cars cannot go)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: should new riders have to pass extra training before riding on busy roads? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Two-Wheeled Machine That Won't Fall Over",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-motorcycle", "templateLabel": "The Two-Wheeled Machine That Won't Fall Over", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "motorcycle",
+          "notes": ["Self-balancing: gyroscopic stability plus trail", "Trail acts like a furniture caster", "Countersteering: turn the bars the wrong way to lean", "Power path: engine, clutch, gearbox, chain, rear wheel", "First true motorcycle: 1885, Daimler and Maybach", "Now the everyday vehicle across much of the world"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Forever Upright: The Two Tricks Inside a Motorcycle",
+          "text": "Ask most people how a motorcycle stays upright and they will point to the rider, as if balance were pure human skill. The truth is more interesting. A motorcycle is largely self-balancing, and a good rider spends less effort holding it up than gently guiding forces that are already at work. Understanding those forces turns a mysterious machine into an elegant one. Two effects share the job of keeping a moving bike vertical. The first is gyroscopic stability. A spinning wheel is a store of angular momentum, and angular momentum resists change in direction. Try to tilt a spinning wheel and it pushes back, which is why a rolling wheel stands while a still one topples. The second effect, and the one engineers consider more important, is a piece of geometry called trail. The front wheel's steering axis, if extended to the ground, strikes the pavement slightly in front of the tire's contact point. That small distance makes the front wheel act like a furniture caster: whenever the bike leans, the wheel automatically swivels in the direction of the lean and steers the machine back underneath its own weight. A modern motorcycle is engineered so that these forces cooperate. The result is a vehicle that, once rolling, genuinely wants to stay up. This physics explains one of the strangest facts about riding: at speed, you steer a motorcycle by turning the handlebars the wrong way. To carve a left curve, a rider presses forward on the left grip. For a fraction of a second the front wheel points right, which tips the whole machine into a left lean, and trail then guides it gracefully around the corner. The technique is called countersteering, and although every fast rider relies on it, most learned it by feel and are surprised to hear it described. The machine that harnesses all this is a tidy sequence of parts. An engine, measured in cubic centimeters, burns fuel to turn a crankshaft. The power passes through a clutch and a gearbox, then runs down a chain or belt to the rear wheel. The rider meters power with a twist of the right grip, selects gears with the left foot, and works independent front and rear brakes. Doing all of that while reading traffic is why riding is a trained skill rather than a casual one. None of this is old. The first true motorcycle appeared in 1885, when the German engineers Gottlieb Daimler and Wilhelm Maybach fixed a small gasoline engine to a wooden frame with two main wheels. Their machine was slow and rough, yet it settled a question that mattered: an engine could drive two wheels down a road and stay balanced. From that shaky prototype grew a global industry. Today the motorcycle is not mainly a toy. It burns little fuel, threads through gridlocked cities, and reaches roads too narrow or too rough for cars. Across much of Asia, Africa, and Latin America, it is the everyday vehicle that carries workers, students, and goods, the quiet engine of ordinary life."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "Explain the claim that a motorcycle is self-balancing, and cite the exact phrase the passage uses to make that point.",
+            "Contrast the two effects that keep a bike upright. Why does the author say engineers consider trail the more important of the two?",
+            "Identify how the author signals the shift from physics to history near the end. Quote the words that mark the turn.",
+            "The passage ends by calling the motorcycle the quiet engine of ordinary life. Analyze what that final phrase is doing and whether the passage earns it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the bike stays up through physics, not the rider alone; cite: A motorcycle is largely self-balancing)",
+            "(gyroscope resists tilting; trail self-steers the wheel back under a lean, correcting continuously as the bike moves)",
+            "(the short sentence None of this is old signals the pivot from how it works to where it came from)",
+            "(it reframes the bike from toy to essential tool; earned by the fuel, traffic, and worldwide-use evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["angular momentum → ____", "trail → ____", "countersteering → ____", "prototype → ____"],
+          "rows": 2,
+          "answers": [
+            "the spinning motion that resists a change in direction",
+            "the gap between the front wheel's steering axis and the tire's contact point",
+            "steering the bars opposite to the turn so the bike leans into it",
+            "an early first version of a machine, built to test the idea"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says most riders learned countersteering by feel and are surprised to hear it described. Why can a person do something skillfully without being able to explain it?",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(the body can learn a motor skill through practice before the mind has words for the physics)", "(student question + a credible source type, such as an engineering text or safety study)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The motorcycle is a more important invention than the car. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

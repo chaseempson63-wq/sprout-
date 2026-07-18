@@ -1,0 +1,319 @@
+{
+  "key": "mermaid",
+  "title": "The Mermaid That Was Really a Sea Cow",
+  "blurb": "The half-fish woman sailors kept seeing, and the gentle sea animal that was really there.",
+  "topic": "make-believe",
+  "bands": {
+    "1": {
+      "title": "The Mermaid That Was Really a Sea Cow",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-mermaid", "templateLabel": "The Mermaid That Was Really a Sea Cow", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the mermaid's tail with your finger." },
+        {
+          "kind": "image",
+          "imageKey": "mermaid",
+          "notes": ["A mermaid is pretend", "Half girl, half fish", "People tell mermaid stories", "Sailors saw real sea animals"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a mermaid. A mermaid is pretend. She is a girl on top and a fish on the bottom. Nobody has ever seen a real one. But people love mermaids. They tell mermaid stories by the sea. Long ago, sailors saw big gray animals in the water. They thought the animals were mermaids. You can make up your own mermaid too."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the shells in each row. Write how many in the box.",
+          "emoji": "🐚",
+          "items": ["3", "5", "2", "4"],
+          "answers": ["3", "5", "2", "4"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "fish    tail" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each one to where it lives.",
+          "pairs": [
+            { "left": "mermaid", "right": "the sea" },
+            { "left": "bird", "right": "the sky" },
+            { "left": "mole", "right": "the ground" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw your own mermaid. Give her any color tail you like.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Mermaid That Was Really a Sea Cow",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-mermaid", "templateLabel": "The Mermaid That Was Really a Sea Cow", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "mermaid",
+          "notes": ["Mermaids are not real", "Sailors saw manatees instead", "A manatee is a sea animal", "It breathes air at the top", "It holds its baby with a flipper"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mermaid That Was Really a Sea Cow",
+          "text": "Mermaids are not real. But sailors used to think they were. Long ago, ships spent months at sea. The sailors were tired and far from home. Sometimes they saw a big animal lift its head out of the water. It had a round face. It held its baby with one flipper. From far away, in the fog, it looked a little like a person. So the sailors called it a mermaid. It was really a manatee, a slow and gentle sea animal. A manatee is not fancy like the mermaids in stories. But it is real, and it is kind."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["Are mermaids real?", "What did the sailors really see?", "How does a manatee hold its baby?"],
+          "rows": 2,
+          "answers": ["no, they are not real", "a manatee, a gentle sea animal", "with one flipper"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["Mermaids are not ____.", "The sailors spent months at ____.", "They really saw a ____.", "A manatee is slow and ____."],
+          "wordBank": ["real", "sea", "manatee", "gentle"],
+          "answers": ["real", "sea", "manatee", "gentle"]
+        },
+        { "kind": "draw", "prompt": "Draw a manatee floating in the sea. Add its baby and some plants.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Mermaid That Was Really a Sea Cow",
+      "subtitle": "A reading and thinking sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-mermaid", "templateLabel": "The Mermaid That Was Really a Sea Cow", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "mermaid",
+          "notes": ["Columbus wrote about mermaids in 1493", "He said they were not pretty", "He really saw manatees", "Manatees breathe at the surface", "They have round, whiskered faces"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Mermaids Columbus Saw",
+          "text": "In the year 1493, a sailor named Christopher Columbus was sailing near the islands of the Caribbean. One morning he wrote something strange in his journal. He said he had seen three mermaids rise up out of the sea. But Columbus was not impressed. He wrote that they were not as beautiful as people say. He thought real mermaids should be prettier. So what did Columbus really see? Almost certainly, he saw manatees. A manatee is a large, slow sea animal with a round tail and a whiskered face. It comes up to the surface to breathe. It can lift the top of its body out of the water. To a tired sailor who had been at sea for weeks, a manatee bobbing in the waves might look like a person with a fish tail. Columbus was not lying and he was not silly. He simply saw a real animal he did not know, and he reached for the closest word he had. That word was mermaid."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "In what year did Columbus write about the mermaids?",
+            "What did Columbus say about how the mermaids looked?",
+            "What animal did he really see?",
+            "Why do you think Columbus called a manatee a mermaid?"
+          ],
+          "rows": 2,
+          "answers": [
+            "in the year 1493",
+            "that they were not as beautiful as people say",
+            "he really saw manatees",
+            "(inference: he believed mermaids were real and reached for the closest word he had)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Mermaids Columbus Saw", "How to Sail a Big Ship", "The Deepest Part of the Ocean"],
+          "answers": ["The Mermaids Columbus Saw"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["Columbus was sailing near the ____ islands.", "He wrote about three ____ in his journal.", "He really saw a group of ____."],
+          "wordBank": ["Caribbean", "mermaids", "manatees"],
+          "answers": ["Caribbean", "mermaids", "manatees"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what would you have thought if you saw a manatee lift its head out of the sea, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Mermaid That Was Really a Sea Cow",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-mermaid", "templateLabel": "The Mermaid That Was Really a Sea Cow", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mermaid",
+          "notes": ["Mermaid stories are very old", "Greek sailors sang of sirens", "Manatees and dugongs form the order Sirenia", "Sirenia is named after the sirens", "A dugong holds its calf as it breathes"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why Half a Fish?",
+          "text": "Mermaid stories are older than almost any story we still tell. Ancient people who lived by the sea told of women who lived in the water. The Greeks sang of sirens, and the people of Syria honored a goddess who was said to be part fish. Wherever people lived close to the ocean, some version of the half-human, half-fish idea seemed to appear. Why a fish tail? Think about what the sea meant to people long ago. It fed them and it frightened them. It could be calm one day and sink a whole ship the next. A creature that was half like us and half like the deep water was a way to picture that mix of beauty and danger in one body. There is a real animal tangled up in the legend. When scientists sorted the animal world into groups, they gave a special name to the family that includes manatees and dugongs. They called it Sirenia, after the sirens of the old sea stories. The name is a quiet joke and a clue at the same time. It admits that these gentle, plant-eating sea animals are probably the creatures sailors mistook for mermaids for hundreds of years. A dugong is the best example. It lives in warm, shallow seas, it has a broad tail shaped like a paddle, and a mother dugong will hold her calf as she rises to breathe. Seen from a rocking ship, in poor light, by someone who wanted to see something, a dugong could become a mermaid in an instant. The legend and the animal have been swimming together for a very long time."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Name two things the sea meant to people long ago, according to the passage.",
+            "The passage says the name Sirenia is a quiet joke and a clue at the same time. What is the clue?",
+            "Explain in your own words why a dugong might be mistaken for a mermaid.",
+            "Why do you think the same half-fish idea appeared in so many different places?"
+          ],
+          "rows": 2,
+          "answers": [
+            "it fed them and it frightened them",
+            "(the name admits these animals are what sailors mistook for mermaids)",
+            "(it is a slow sea mammal that lifts its body to breathe and holds its calf, so from a distance it can look human)",
+            "(inference: people everywhere lived by a sea that was both beautiful and dangerous, so they pictured the same kind of creature)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "The mermaid legend spread everywhere and is probably built on real sea animals like manatees and dugongs",
+            "Dugongs are the fastest swimmers in the ocean",
+            "The Greeks were the only people who told mermaid stories"
+          ],
+          "answers": ["The mermaid legend spread everywhere and is probably built on real sea animals like manatees and dugongs"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["sirens → ____", "Sirenia → ____", "dugong → ____"],
+          "rows": 1,
+          "answers": [
+            "water women from old sea stories who drew sailors in",
+            "the animal group that includes manatees and dugongs",
+            "a slow, plant-eating sea mammal with a paddle-shaped tail"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph: if you had lived long ago and saw a strange animal in the water, what story might you have told about it? Give two reasons for your choices.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Mermaid That Was Really a Sea Cow",
+      "subtitle": "A reading and history sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-mermaid", "templateLabel": "The Mermaid That Was Really a Sea Cow", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mermaid",
+          "notes": ["Columbus logged mermaids in 1493", "Barnum showed a fake mermaid in 1842", "It was a monkey sewn to a fish", "Andersen wrote The Little Mermaid in 1837", "Manatees and dugongs are order Sirenia"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Beautiful Lie and the Gentle Truth",
+          "text": "For most of human history, educated people believed mermaids were real. This is easy to forget. We file mermaids next to fairies and unicorns, but for centuries they sat in a different drawer, alongside animals that had simply not been listed yet. Sailors reported them. Mapmakers drew them. In 1493, Christopher Columbus recorded in his log that he had seen three mermaids off the coast of the Caribbean, adding, with a note of disappointment, that they were not as beautiful as they are painted. He was almost certainly looking at manatees. That single line explains a great deal. Columbus did not think he was inventing anything. He believed mermaids existed, so when a strange animal lifted its face out of the water, mermaid was a reasonable label. The gap between the legend and the animal was filled by expectation. People saw what they already believed was there. Two forces kept the belief alive. The first was loneliness. A voyage could last months, the crew exhausted and homesick, the sea endlessly the same. A mind in that state is generous with what it sees. The second force was profit. In 1842, the showman P. T. Barnum exhibited what he called the Feejee Mermaid, and crowds paid to see it. It was a fake, the dried upper body of a monkey stitched to the tail of a fish, shriveled and ugly. People came anyway, because they wanted the creature to be real. Slowly, the mermaid changed jobs. As science identified the manatees and dugongs and grouped them under the name Sirenia, in honor of the sirens, the mermaid lost her place among real animals. She did not disappear. She moved into art. In 1837, the Danish writer Hans Christian Andersen published The Little Mermaid, a story not about a monster or a sailor's mistake, but about longing and sacrifice. The statue built for that story now sits in the harbor at Copenhagen, and people travel across the world to photograph it. That is the strange arc of the mermaid. She began as an honest error, a real animal seen through tired eyes and hopeful minds. She survived because people wanted her to. And when the ocean finally gave up its secret, she changed from a fact into a feeling, which turned out to be a much safer place to live."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "What does the author mean by the sentence People saw what they already believed was there?",
+            "Name the two forces the author says kept the belief in mermaids alive.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Explain the last sentence in your own words, and say why the author saved it for the end."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering the real belief in mermaids, the manatee explanation, and the move into art)",
+            "(their expectation of mermaids shaped what they thought they saw, so a manatee became a mermaid in their minds)",
+            "loneliness and profit",
+            "(inform, mainly: it presents dated facts and explanations; the closing turn is mildly persuasive)",
+            "(the mermaid became a feeling rather than a fact, which is safer because a feeling cannot be disproved; the author ends there because it is the real point)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["expectation → ____", "exhibited → ____", "arc → ____", "sacrifice → ____"],
+          "rows": 1,
+          "answers": [
+            "a strong belief about what you will find",
+            "put on public display",
+            "the shape of a story from start to finish",
+            "giving up something you value for something you want more"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls the mermaid a beautiful lie and a gentle truth in the title. Explain what each half of that title points to.",
+            "Why might a made-up creature survive better as art than as a claim about real animals?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(the beautiful lie is the mermaid people believed in; the gentle truth is the real manatee behind the story)",
+            "(inference: a claim about animals can be proven false, but a story about longing cannot)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: does learning that the mermaid was probably a manatee make the legend less interesting, or more? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Mermaid That Was Really a Sea Cow",
+      "subtitle": "A reading and analysis sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-mermaid", "templateLabel": "The Mermaid That Was Really a Sea Cow", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "mermaid",
+          "notes": ["Homer's sirens were part bird, not fish", "Atargatis: a fish-tailed goddess of Syria", "Columbus logged three mermaids in 1493", "Order Sirenia is named for the sirens", "Andersen's Little Mermaid, 1837", "Barnum's Feejee Mermaid, 1842"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Creature We Invented Twice",
+          "text": "The mermaid is a creature we invented twice. The first invention was a mistake, and the second was a choice, and the distance between them is the whole story. Begin with the mistake. For thousands of years, people who lived by the sea told of women who lived in the water. The oldest versions are not quite mermaids as we picture them. In Homer's Odyssey, written nearly three thousand years ago, the sirens who lure sailors to their deaths are part bird, not part fish. Over the centuries, in the retelling, their feathers slowly turned to scales, and the bird woman of Greek song became the fish tailed woman of the sailor's tale. Ancient Syria told of Atargatis, a goddess pictured with the tail of a fish. The idea belonged to no single people. Wherever the ocean fed a community and occasionally drowned it, a half human shape seemed to rise out of the water in its stories. The reason is not hard to find, and it is swimming in warm, shallow seas right now. Manatees and dugongs are large, slow, air breathing mammals. A manatee surfaces to breathe with the top of its body lifted clear of the water. A dugong mother cradles her calf against her chest with a flipper as she rises. Their tails are broad and flat. Their faces, seen head on, are oddly expressive. To a sailor who had been months at sea, straining to see through spray and fog, and who already believed mermaids were real, one of these animals was not evidence of a myth. It was the myth, confirmed. In January of 1493, Christopher Columbus wrote in his journal that he had seen three mermaids near the coast of what is now the Dominican Republic. He was unimpressed, and complained that they were not as beautiful as they are painted. He was looking at manatees. Science eventually caught the joke and made it official. When naturalists organized the animal kingdom, they placed the manatees and dugongs in an order they named Sirenia, after the sirens of the old stories. The name is an admission carved into the record: these are the animals people mistook for mermaids. Here the story turns from error to invention. Once the ocean surrendered its secret, the mermaid should have died, the way belief in a flat sea died. She did not. She was too useful. In 1842, the showman P. T. Barnum drew paying crowds to the Feejee Mermaid, a grotesque fake sewn together from a monkey and a fish, and people came precisely because they wished it were true. Five years earlier, in 1837, the Danish writer Hans Christian Andersen had already shown where the mermaid would live next. His story The Little Mermaid was not about a sailor or a sea cow. It was about wanting a life you were not born into badly enough to give up your own voice for it. The mermaid had stopped being a claim about the world and become a claim about us. That is the second invention, and it is the durable one. As a fact, the mermaid was always going to lose, because manatees exist and mermaids do not. As a feeling, she cannot be disproved, because the longing she carries is real even though she is not. We built her first out of a misread animal and a hopeful eye. When that excuse ran out, we kept her anyway, and gave her the only job that could outlast the truth."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any phrase from it.",
+            "The passage says the sirens in Homer's Odyssey are part bird, not part fish. Explain what happened to that image over time, and cite the phrase the author uses.",
+            "Why does the author say Sirenia is an admission carved into the record? Explain the reasoning.",
+            "Identify the shift in the passage: where does it turn from error to invention, and how does the author signal it?",
+            "Analyze the final claim, that the mermaid was given the only job that could outlast the truth. What is the author arguing, and does the passage earn it?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary)",
+            "(the bird sirens gradually became fish-tailed mermaids in retelling; cite: their feathers slowly turned to scales)",
+            "(scientists named the manatee-and-dugong order after the sirens, admitting in the official record that these animals are what sailors mistook for mermaids)",
+            "(at Here the story turns from error to invention; a short signal sentence marks the pivot from the mistaken animal to the mermaid as art)",
+            "(it argues the mermaid survives as a feeling because feelings cannot be disproved; earned if the student points to the Andersen and belief-as-feeling evidence)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["lure → ____", "naturalists → ____", "admission → ____", "durable → ____"],
+          "rows": 2,
+          "answers": [
+            "to tempt or draw someone toward something",
+            "people who study the natural world and its animals",
+            "a statement admitting something is true",
+            "able to last a long time without breaking down"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The author says the mermaid stopped being a claim about the world and became a claim about us. Explain the difference between those two kinds of claim.",
+            "Write a question this passage cannot answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(a claim about the world says an animal exists and can be checked; a claim about us describes human longing and cannot be proven false)",
+            "(student question plus a credible source type, such as a museum archive or a peer reviewed folklore study)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: A legend built on a mistake is worth less than the truth that replaced it. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

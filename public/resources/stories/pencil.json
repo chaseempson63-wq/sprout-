@@ -1,0 +1,304 @@
+{
+  "key": "pencil",
+  "title": "The Pencil That Never Held Any Lead",
+  "blurb": "The little wooden stick everyone calls lead, when its gray core is really graphite, the same carbon as a diamond.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Pencil That Never Held Any Lead",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-pencil", "templateLabel": "The Pencil That Never Held Any Lead", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Find the sharp point and the soft eraser." },
+        {
+          "kind": "image",
+          "imageKey": "pencil",
+          "notes": ["The gray tip is not lead", "The tip is a soft rock called graphite", "Wood keeps the tip safe", "You sharpen it when it gets dull"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a pencil. You draw with it. You write with it. The middle part is gray. It is not really lead. It is a soft gray rock called graphite. The wood keeps it safe. When the point gets dull, you sharpen it. Then it is ready to draw again."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the pencils in each row. Write how many in the box.",
+          "emoji": "✏️",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "write    draw" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each thing to what it does.",
+          "pairs": [
+            { "left": "pencil", "right": "write" },
+            { "left": "brush", "right": "paint" },
+            { "left": "ball", "right": "bounce" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a picture using your own pencil. Draw anything you like.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Pencil That Never Held Any Lead",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-pencil", "templateLabel": "The Pencil That Never Held Any Lead", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "pencil",
+          "notes": ["The gray core is graphite, not lead", "People found graphite under a tree in England", "Graphite makes dark marks", "The wood case keeps your hands clean", "You can sharpen it again and again"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Pencil That Never Held Any Lead",
+          "text": "A pencil looks simple, but it has a secret. The gray core is not lead at all. It is graphite, a soft kind of stone. Long ago, people found a big lump of graphite under a tree in England. It made dark marks on anything it touched. They wrapped the sticky sticks in string so their hands stayed clean. Later, someone had a smart idea. Put the graphite inside a case of wood. Now you can hold it, sharpen it, and write all day. That is the pencil we still use."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is the gray core really made of?", "Where did people find a big lump of graphite?", "Why did people wrap the sticks in string?"],
+          "rows": 2,
+          "answers": ["graphite, a soft stone", "under a tree in England", "so their hands stayed clean"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["The gray core is really ____.", "A big lump was found in ____.", "The graphite sits inside a case of ____.", "When the point is dull you ____ it."],
+          "wordBank": ["graphite", "England", "wood", "sharpen"],
+          "answers": ["graphite", "England", "wood", "sharpen"]
+        },
+        { "kind": "draw", "prompt": "Draw a pencil. Add the point, the wood, and an eraser on the end.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Pencil That Never Held Any Lead",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-pencil", "templateLabel": "The Pencil That Never Held Any Lead", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "pencil",
+          "notes": ["That gray tip is graphite, not lead", "Graphite is a soft form of carbon", "A huge deposit was found in Borrowdale, England", "Nicolas Conte mixed graphite with clay", "H means hard, B means black"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Why the Lead in Your Pencil Is Not Lead",
+          "text": "Pick up a pencil and look at the point. That gray tip is often called lead, but there is no lead in it at all. It is graphite, a soft form of carbon. Here is where the mix-up began. About five hundred years ago, a huge deposit of graphite was found in Borrowdale, England, after a storm tore up a tree. People saw a dark, shiny rock and guessed it was a kind of lead. The wrong name stuck, and we still say lead today. Pure graphite is messy and breaks easily. A French inventor named Nicolas Conte solved that. He ground graphite into powder, mixed it with clay, and baked it hard in an oven. More clay made a lighter, harder line. More graphite made a darker, softer one. That is why a pencil can be labeled H for hard or B for black. Every pencil in your desk carries a little of his idea inside it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why do people call the pencil tip lead when there is no lead in it?",
+            "What did Nicolas Conte mix with the graphite powder?",
+            "What does more clay do to the line a pencil makes?",
+            "Why do you think the wrong name lead has lasted so long?"
+          ],
+          "rows": 2,
+          "answers": [
+            "long ago people guessed the dark rock was a kind of lead",
+            "clay",
+            "it makes the line lighter and harder",
+            "(opinion: the name was easy and everyone kept using it)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["Why a Pencil Has No Lead in It", "How to Grow a Cedar Tree", "The Best Way to Paint a Wall"],
+          "answers": ["Why a Pencil Has No Lead in It"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the bank to finish each sentence.",
+          "items": ["Graphite is a soft form of the element ____.", "Conte mixed graphite powder with ____.", "The huge graphite deposit was found in ____.", "On a pencil, H stands for ____."],
+          "wordBank": ["carbon", "clay", "Borrowdale", "hard"],
+          "answers": ["carbon", "clay", "Borrowdale", "hard"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what surprised you most about the pencil, and why?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Pencil That Never Held Any Lead",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-pencil", "templateLabel": "The Pencil That Never Held Any Lead", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pencil",
+          "notes": ["The core is graphite, a form of carbon", "Diamond is also pure carbon", "Graphite atoms form sheets that slide", "The name lead began as a mistake in the 1500s", "Nicolas Conte perfected the clay recipe", "H is hard, B is black, HB is in between"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Same Stuff as a Diamond",
+          "text": "Almost everyone calls it the lead of a pencil, and almost everyone is wrong. There has never been any lead inside a modern pencil. The core is graphite, one of the pure forms of the element carbon. Diamond is another. The two could not look more different, yet they are made of exactly the same atoms. The difference is how those atoms are arranged. In diamond the carbon locks together in a rigid net, which is why diamond is the hardest natural material on Earth. In graphite the carbon forms flat sheets that slide over one another like cards in a deck. When you drag a pencil across paper, thin layers of graphite shear off and cling to the tiny fibers of the page. That sliding is the whole secret of writing. The confusion over lead is centuries old. In the 1500s a large body of graphite was discovered at Borrowdale in England. People had no word for it and assumed the dark mineral was a form of lead ore. The name outlived the mistake. Later a French inventor, Nicolas Conte, learned to grind graphite, blend it with clay, and fire it in a kiln. By changing the amount of clay he could control how hard or soft the line came out, and that recipe is still used today. So the humble pencil hides a small wonder: the same carbon that forms a diamond, sliding off in sheets too thin to see, leaving a trail of words behind it."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "Graphite and diamond are made of the same atoms. In your own words, why are they so different?",
+            "Why does dragging a pencil across paper leave a mark?",
+            "Why do you think the name lead stuck even after people knew the core was graphite?",
+            "What did changing the amount of clay let Conte control?"
+          ],
+          "rows": 2,
+          "answers": [
+            "the carbon atoms are arranged differently: a rigid net in diamond, sliding sheets in graphite",
+            "thin layers of graphite shear off and cling to the fibers of the paper",
+            "(inference: the wrong name was common and easy, so it kept being used)",
+            "how hard or soft the line came out"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A pencil is a small wonder: graphite, not lead, made of the same carbon as diamond",
+            "Diamonds are cheaper than pencils",
+            "France is the only place that makes pencils"
+          ],
+          "answers": ["A pencil is a small wonder: graphite, not lead, made of the same carbon as diamond"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["deposit → ____", "shear (off) → ____", "kiln → ____"],
+          "rows": 1,
+          "answers": ["a natural build-up of a mineral in the ground", "to break or slide away in thin layers", "a very hot oven used to bake or fire material"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining to a younger child why a pencil does not really have lead in it. Use at least two facts from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Pencil That Never Held Any Lead",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-pencil", "templateLabel": "The Pencil That Never Held Any Lead", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pencil",
+          "notes": ["Core is graphite, a form of pure carbon", "Same element as diamond, arranged differently", "Named lead from the Latin plumbago, lead ore", "Borrowdale, England: the great graphite find of the 1500s", "Conte fixed the graphite-and-clay recipe in the 1790s", "One pencil can draw a line for miles"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Most Misunderstood Object on Your Desk",
+          "text": "Few objects are as common, or as misunderstood, as the pencil. We call the gray core lead, we buy pencils by the box without a thought, and we throw the stubs away. Yet almost nothing about that description is accurate. There is no lead in a pencil and never has been. The core is graphite, a soft, dark form of pure carbon, arranged in flat sheets of atoms that slip apart at the lightest pressure. That slipping is what leaves a mark. Drag the point across a page and microscopic flakes of graphite peel away and lodge in the fibers of the paper. Writing, in other words, is a controlled landslide too small to see. The name is a five hundred year old error. Sometime in the 1500s, a violent storm in Borrowdale, England, uprooted a tree and exposed an enormous deposit of pure graphite. Nothing like it had been seen before. Shepherds first used it to mark their sheep. Scholars, lacking a better word, called the black mineral plumbago, meaning lead ore, and the misname has clung to the pencil ever since. Because pure graphite crumbles and stains the fingers, early users bound their sticks in string or hollowed wood. The pencil became a precise tool thanks to a French inventor, Nicolas Conte, working in the 1790s. He ground graphite to powder, mixed it with clay, pressed the paste into thin rods, and baked them in a kiln. The genius of his method was control. More clay yielded a harder rod that left a fainter line. More graphite yielded a softer rod that left a darker one. That is the meaning of the letters stamped on a pencil today. H stands for hard, B stands for black, and the familiar number two sits comfortably in the middle. So the pencil is not the simple object it pretends to be. It carries a mineral once mistaken for lead, shaped by a recipe two centuries old, made of the same element as diamond. A single one can draw a line for miles before it runs out. We treat it as nothing, and it is quietly remarkable."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in exactly two sentences.",
+            "Explain how graphite's flat sheets make writing possible. Quote the phrase the author uses to describe a written mark.",
+            "How did the pencil core come to be called lead? Use evidence from the passage.",
+            "Is this passage written to inform, persuade, or entertain? Point to two details that support your answer.",
+            "Why do you think the author saves the fact that a pencil is made of the same element as diamond for near the end?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary covering graphite not lead, the naming mistake, and Conte's recipe)",
+            "the sheets slip apart and flakes lodge in the paper fibers; quote: a controlled landslide too small to see",
+            "(scholars mistook the graphite for lead ore and called it plumbago; the name stuck)",
+            "(inform, with detail: it defines terms and gives facts, with a light, surprising tone)",
+            "(opinion: it lands as a memorable surprise after the reader already trusts the facts)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["plumbago → ____", "yielded → ____", "microscopic → ____"],
+          "rows": 1,
+          "answers": ["an old word for lead ore, wrongly applied to graphite", "produced or gave as a result", "far too small to see with the eye alone"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "The author calls writing a controlled landslide. Explain what that comparison means.",
+            "Why might the author end by calling the pencil quietly remarkable rather than just useful?"
+          ],
+          "rows": 3,
+          "answers": ["(tiny flakes of graphite slide off in a small, guided way, like a slow slide of rock)", "(opinion: quietly remarkable captures how something ordinary hides a real wonder)"]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: is the pencil still an important tool in a world of screens and keyboards? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Pencil That Never Held Any Lead",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-pencil", "templateLabel": "The Pencil That Never Held Any Lead", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "pencil",
+          "notes": ["Core is crystalline graphite, pure carbon", "Sheets bond tightly across, weakly between, so they slide", "Same element as diamond, different structure", "Misnamed plumbago (lead ore) in the 1500s", "Conte's clay-and-graphite recipe dates to the 1790s", "Hexagonal cedar body, eraser added in 1858"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Quiet Genius of the Pencil",
+          "text": "Everything you think you know about the pencil is probably a little wrong, starting with its most famous part. The gray core is universally called lead, yet no pencil has ever contained a trace of the metal. The core is graphite, one of the pure crystalline forms of carbon, and its behavior is the reason a pencil works at all. In graphite, carbon atoms bond tightly within flat sheets but only weakly between them, so the sheets slide apart under the slightest force. When the point meets paper, layers shear off and snag on the paper's rough fibers. A written word is nothing more than a smear of loose carbon, a controlled landslide too fine for the eye to follow. The misnomer is old and stubborn. In the early 1500s a storm uprooted a tree at Borrowdale, in the north of England, and revealed a deposit of graphite so pure it could be sawn into sticks. Nothing comparable existed anywhere else in Europe. Local shepherds used it to mark their flocks, and scholars, having no name for the strange black solid, filed it under the label they already knew: plumbago, or lead ore. The material was misidentified from the start, and the false name has outlasted every correction since. Because raw graphite is brittle and blackens the hand, the first users wrapped their sticks in string, unwinding a little more as the tip wore down. The pencil became an instrument of precision only in the 1790s, through the work of the French inventor Nicolas Conte. Rather than rely on scarce lumps of solid graphite, he pulverized the mineral, blended it with measured clay, extruded the paste into slender rods, and fired them in a kiln. His insight was that the clay was not a compromise but a control. A rod heavy with clay hardened and wrote pale and fine; a rod rich in graphite stayed soft and wrote dark and broad. That single adjustable ratio survives on every pencil sold today, encoded in the grading letters: H for hard, B for black, F for a fine point, and the everyday number two resting near the center of the scale. Consider what all of this means. The object rolling on the desk is hexagonal so it will not roll far, sheathed in fragrant cedar because that wood shaves cleanly, and tipped, since 1858, with an eraser that works by lifting the loose graphite back off the fibers it settled into. Inside is a mineral misnamed five centuries ago, refined by a recipe more than two hundred years old, built from the very element that also forms diamond. A single ordinary pencil can be drawn into a line some thirty five miles long, or set down roughly forty five thousand words, before there is nothing left to sharpen. We hand it to small children and lose it between couch cushions, and it remains one of the most quietly ingenious tools our species has ever made."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing any full phrase from it.",
+            "Explain how graphite's atomic structure makes writing possible. Quote the exact phrase the author uses to describe a written word.",
+            "How did the pencil core get the wrong name? Cite the two-word term the scholars used for it.",
+            "Analyze the sentence: his insight was that the clay was not a compromise but a control. What move is the author making by phrasing it that way?",
+            "The passage ends by calling the pencil one of the most quietly ingenious tools our species has ever made. Does the passage earn that claim? Cite two details that support it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary, no borrowed phrases)",
+            "the sheets slide apart and flakes snag on the paper fibers; quote: a controlled landslide too fine for the eye to follow",
+            "(they mistook it for lead ore; cite: plumbago, or lead ore)",
+            "(it reframes the clay from a weakness into the source of control, elevating Conte's method)",
+            "(yes; supported by details such as the hexagonal cedar body, the 1858 eraser, and the same-element-as-diamond fact)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["misnomer → ____", "extruded → ____", "plumbago → ____", "brittle → ____"],
+          "rows": 2,
+          "answers": [
+            "a name that is wrong or misleading",
+            "pushed or forced through a shaped opening to form a rod",
+            "an old term for lead ore, wrongly applied to graphite",
+            "hard but easily broken or snapped"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage gives figures like thirty five miles and forty five thousand words. Why might an author include such specific numbers?",
+            "Write a question this passage does not answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": ["(specific numbers make an abstract claim concrete and believable)", "(student question + a credible source type, such as a materials-science reference or manufacturer)"]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: an everyday object like the pencil is not worth a second thought. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}

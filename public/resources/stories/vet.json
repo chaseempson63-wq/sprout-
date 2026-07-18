@@ -1,0 +1,306 @@
+{
+  "key": "vet",
+  "title": "The Doctor Who Cannot Ask What Hurts",
+  "blurb": "The animal doctor who treats hundreds of species, reads clues instead of words, and quietly guards human health too.",
+  "topic": "our-world",
+  "bands": {
+    "1": {
+      "title": "The Doctor Who Cannot Ask What Hurts",
+      "subtitle": "A read-together story for ages 3 to 4",
+      "intro": "Read this story out loud together. Point to the picture as you go.",
+      "meta": { "templateId": "story-vet", "templateLabel": "The Doctor Who Cannot Ask What Hurts", "age": 4 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Look at the picture. Say hello to the vet and the puppy." },
+        {
+          "kind": "image",
+          "imageKey": "vet",
+          "notes": ["A vet is an animal doctor", "Dogs and cats visit the vet", "The vet is gentle and kind", "Vets help animals feel better"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "Read this out loud",
+          "text": "This is a vet. A vet is an animal doctor. When a puppy is sick, it goes to the vet. The vet is kind and gentle. She listens to the puppy's heart. She checks its ears and its paws. She helps the puppy feel better. Dogs and cats and even birds go to the vet. The vet loves animals."
+        },
+        {
+          "kind": "count",
+          "prompt": "Count the paw prints in each row. Write how many in the box.",
+          "emoji": "🐾",
+          "items": ["2", "4", "3", "5"],
+          "answers": ["2", "4", "3", "5"]
+        },
+        { "kind": "trace", "prompt": "Trace the word, then say it out loud.", "text": "vet    pet" },
+        {
+          "kind": "matching",
+          "prompt": "Draw a line to match each animal to where it lives.",
+          "pairs": [
+            { "left": "dog", "right": "a home" },
+            { "left": "cow", "right": "a farm" },
+            { "left": "fish", "right": "a pond" }
+          ]
+        },
+        { "kind": "draw", "prompt": "Draw a puppy at the vet. Give the vet a big smile.", "rows": 10 }
+      ]
+    },
+    "2": {
+      "title": "The Doctor Who Cannot Ask What Hurts",
+      "subtitle": "A reading sheet for ages 5 to 6",
+      "intro": "Read the story. Then do each part.",
+      "meta": { "templateId": "story-vet", "templateLabel": "The Doctor Who Cannot Ask What Hurts", "age": 6 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the story, then answer the questions. Take your time." },
+        {
+          "kind": "image",
+          "imageKey": "vet",
+          "notes": ["A vet cares for many kinds of animals", "Animals cannot say where it hurts", "A stethoscope hears the heart beat", "Some vets visit farms", "Shots keep animals from getting sick"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Animal Doctor",
+          "text": "A vet is a doctor for animals. Animals cannot say where it hurts. So the vet has to be a good detective. The vet watches how an animal moves. She feels its tummy with her hands. She listens to its heart with a stethoscope. She looks in its ears and mouth. A vet gives shots that keep animals from getting sick. She fixes broken bones and sore teeth. Some vets take care of cats and dogs. Other vets drive to farms to help big cows and horses. Every vet wants animals to feel well."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": ["What is a vet?", "Why does a vet need to be a good detective?", "What does a vet use to listen to a heart?"],
+          "rows": 2,
+          "answers": ["a doctor for animals", "because animals cannot say where it hurts", "a stethoscope"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Finish each sentence with a word from the bank.",
+          "items": ["A vet is a doctor for ____.", "A vet listens to the heart with a ____.", "Shots keep animals from getting ____.", "Some vets drive to ____ to help cows."],
+          "wordBank": ["animals", "stethoscope", "sick", "farms"],
+          "answers": ["animals", "stethoscope", "sick", "farms"]
+        },
+        { "kind": "draw", "prompt": "Draw a vet helping an animal. Add the tools she uses.", "rows": 9 }
+      ]
+    },
+    "3": {
+      "title": "The Doctor Who Cannot Ask What Hurts",
+      "subtitle": "A reading and science sheet for ages 7 to 8",
+      "intro": "Read the passage, then work through each part. You can look back at the passage any time.",
+      "meta": { "templateId": "story-vet", "templateLabel": "The Doctor Who Cannot Ask What Hurts", "age": 8 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then answer the questions." },
+        {
+          "kind": "image",
+          "imageKey": "vet",
+          "notes": ["A vet reads clues, not words", "One vet may treat a hamster and a horse", "Shots stop diseases before they start", "Some vets work at zoos", "A rabbit's heart beats very fast"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Doctor Who Cannot Ask What Hurts",
+          "text": "When you feel sick, you can tell a doctor exactly what is wrong. You can say your throat hurts or your tummy aches. Animals cannot do this. That is why being a vet is such interesting work. A vet has to read clues instead of words. A limping dog, a cat that will not eat, a horse that keeps shaking its head: each of these is a message the vet must figure out. To read those clues, a vet learns the bodies of many different animals. A human doctor studies just one kind of body, the human one. A vet may treat a hamster in the morning and a horse in the afternoon, and those two animals are built in very different ways. A vet knows how fast a rabbit's heart should beat and how a snake breathes. Vets do far more than treat sick animals. They give shots that stop diseases before they start. They clean teeth, set broken bones, and help animals have babies safely. Some vets care for pets, some care for farm animals, and some care for lions and seals at the zoo."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in a full sentence.",
+          "items": [
+            "Why can a vet not simply ask an animal what is wrong?",
+            "How is a vet's job different from a human doctor's job?",
+            "Name two things vets do besides treating sick animals.",
+            "Why do you think a vet must learn the bodies of many animals?"
+          ],
+          "rows": 2,
+          "answers": [
+            "because animals cannot use words, so the vet reads clues",
+            "a human doctor studies one kind of body; a vet studies many",
+            "they give shots and clean teeth and set broken bones",
+            "(opinion: because a vet treats many different animals in one day)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the best title for this passage.",
+          "items": ["The Doctor Who Cannot Ask What Hurts", "How to Train a Puppy to Sit", "The Tallest Animal in the Zoo"],
+          "answers": ["The Doctor Who Cannot Ask What Hurts"]
+        },
+        {
+          "kind": "fill-blank",
+          "prompt": "Use a word from the passage to finish each sentence.",
+          "items": ["A vet reads ____ instead of words.", "A human doctor studies just ____ kind of body.", "Vets give ____ that stop diseases before they start."],
+          "wordBank": ["clues", "one", "shots"],
+          "answers": ["clues", "one", "shots"]
+        },
+        { "kind": "handwriting", "prompt": "Write two sentences: what is the most interesting part of a vet's job, and why does it interest you?", "rows": 4 }
+      ]
+    },
+    "4": {
+      "title": "The Doctor Who Cannot Ask What Hurts",
+      "subtitle": "A reading and science sheet for ages 9 to 10",
+      "intro": "Read the passage, then answer in full sentences. Some questions ask what you think, not just what the passage says.",
+      "meta": { "templateId": "story-vet", "templateLabel": "The Doctor Who Cannot Ask What Hurts", "age": 10 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "vet",
+          "notes": ["Vets treat hundreds of species", "To diagnose is to find what is wrong", "Vaccines train the body to fight disease", "Rabies can pass from animals to people", "Vets work in clinics, farms, and zoos"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "A Doctor for Every Animal",
+          "text": "A human doctor spends a whole career learning one species: people. A veterinarian takes on a harder problem. The animal kingdom is enormous, and a vet may be asked to treat almost any part of it. A dog and a parrot and a goat do not share the same heartbeat, the same diet, or the same way of showing pain, yet a vet is expected to help them all. Because animals cannot describe their symptoms, a vet has to diagnose without a single spoken word. Diagnosing means working out what is wrong from evidence alone. The vet observes how the animal stands and moves, feels for swelling, listens to the lungs, checks the temperature, and sometimes takes an x-ray or a blood test. A twitching ear or a dull coat can be an important clue. Much of a vet's work is not treatment but prevention. Vaccinating an animal means giving it a small, safe dose that trains its body to fight a disease later. A vet who vaccinates a herd of cattle may stop an outbreak before it begins. Vets also guard human health. Many dangerous diseases, including rabies, can pass from animals to people, so a vet who keeps animals healthy is protecting families too. Vets work in many places. Some run clinics for pets. Some drive from farm to farm caring for livestock. Others work in zoos, aquariums, wildlife parks, or laboratories. Wherever animals are, a vet is usually not far away."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences.",
+          "items": [
+            "The passage says a vet must diagnose without a single spoken word. What does this tell you about how a vet works?",
+            "Why does keeping animals healthy also protect people?",
+            "The passage says a twitching ear or a dull coat can be an important clue. Why would a vet pay attention to such small signs?"
+          ],
+          "rows": 2,
+          "answers": [
+            "(inference: a vet relies on observation and evidence, not the patient's words)",
+            "some diseases pass from animals to people, so healthy animals mean safer families",
+            "(inference: small signs are the only messages an animal can give about being sick)"
+          ]
+        },
+        {
+          "kind": "multiple-choice",
+          "prompt": "Circle the main idea of this passage.",
+          "items": [
+            "A veterinarian has a uniquely hard job because they treat many species that cannot describe their symptoms, and their work also protects people",
+            "Dogs are the easiest animals for a vet to treat",
+            "Every vet works only inside a single pet clinic"
+          ],
+          "answers": ["A veterinarian has a uniquely hard job because they treat many species that cannot describe their symptoms, and their work also protects people"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary. Use the passage to work out what each word means.",
+          "items": ["diagnose → ____", "vaccinate → ____", "livestock → ____"],
+          "rows": 1,
+          "answers": ["to work out what is wrong from evidence", "to give a safe dose that trains the body to fight a disease", "farm animals such as cattle"]
+        },
+        { "kind": "handwriting", "prompt": "Write a paragraph explaining why being a vet might be harder than being a doctor for people. Give at least two reasons from the passage.", "rows": 7 }
+      ]
+    },
+    "5": {
+      "title": "The Doctor Who Cannot Ask What Hurts",
+      "subtitle": "A reading and science sheet for ages 11 to 12",
+      "intro": "Read the passage, then answer in full sentences. Use evidence from the text where the question asks for it.",
+      "meta": { "templateId": "story-vet", "templateLabel": "The Doctor Who Cannot Ask What Hurts", "age": 12 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "vet",
+          "notes": ["First vet school: Lyon, France, 1761", "Founded by Claude Bourgelat", "Veterinary comes from Latin for beasts of burden", "Prey animals hide their illness", "About 6 in 10 human diseases start in animals"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Hardest Kind of Doctor",
+          "text": "Ask most people to picture a veterinarian, and they imagine someone cuddling a puppy. The reality is far more demanding. A physician trains for years to understand one species. A veterinarian is asked to understand hundreds, from a two-gram finch to a two-ton bull, and to switch between them in a single working day. That breadth creates a genuine problem: the patient can never explain what is wrong. A person can point to an aching knee. An animal can only limp, or hide, or stop eating. Some animals, especially prey species like rabbits and birds, actively conceal illness, because in the wild a creature that looks weak is the one a predator chooses. So the vet becomes an investigator, gathering evidence the patient is trying to hide. Posture, breathing, temperature, the feel of an abdomen, the results of blood work and imaging: each is a clue in a case with no confession. Veterinary medicine is also older and broader than many people assume. The first veterinary school opened in Lyon, France, in 1761, founded by a horseman named Claude Bourgelat, at a time when working animals powered farms, armies, and cities. The very word veterinary comes from a Latin term for beasts of burden. For centuries the job was mostly about keeping horses and cattle useful. Only recently has the family pet moved to the center of the profession. Perhaps the most overlooked part of a vet's work is protecting people. A large share of human diseases, including rabies, bird flu, and many kinds of food poisoning, begin in animals. When a vet inspects a herd, vaccinates a dog, or spots a sick bird early, the barrier they build protects human families as much as animal ones. Doctors and veterinarians, it turns out, are guarding the same border from opposite sides. A vet, then, is not simply an animal lover in a white coat. A vet is a detective who works without a witness, a specialist in dozens of bodies at once, and a quiet guardian of human health. It is one of the hardest kinds of doctoring there is."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer each question in full sentences, using evidence where asked.",
+          "items": [
+            "Summarize the passage in two sentences.",
+            "What is the main reason the author says a vet's patient is harder than a human doctor's patient? Use evidence from the text.",
+            "Is this passage written mainly to inform, to persuade, or to entertain? Give two details that support your answer.",
+            "The passage says doctors and veterinarians are guarding the same border from opposite sides. Explain what this means."
+          ],
+          "rows": 2,
+          "answers": [
+            "(two-sentence summary: vets treat many species that cannot speak, the field is old and practical, and vets also protect human health)",
+            "(the patient cannot explain what is wrong and some prey animals hide illness; evidence: an animal can only limp, or hide, or stop eating)",
+            "(inform: it defines terms, gives history, and presents facts; cite two factual details)",
+            "(both protect health where animals and people meet; vets stop diseases in animals before they reach people)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Work each one out from the passage.",
+          "items": ["physician → ____", "conceal → ____", "abdomen → ____"],
+          "rows": 1,
+          "answers": ["a doctor for people", "to hide", "the belly, the part of the body below the chest"]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Think it through.",
+          "items": [
+            "Why might prey animals like rabbits and birds hide that they are sick?",
+            "The first veterinary school opened in 1761, long before pets were the focus. What does that tell you about why the job first existed?"
+          ],
+          "rows": 3,
+          "answers": [
+            "(inference: in the wild, looking weak makes a predator more likely to attack)",
+            "(inference: it existed to keep working animals like horses and cattle healthy and useful)"
+          ]
+        },
+        { "kind": "handwriting", "prompt": "Write a short opinion paragraph: which part of a vet's job do you think matters most, treating pets, helping farms, or protecting people from disease? Take a position and support it with two reasons.", "rows": 8 }
+      ]
+    },
+    "6": {
+      "title": "The Doctor Who Cannot Ask What Hurts",
+      "subtitle": "A reading and science sheet for age 13",
+      "intro": "Read the passage closely, then answer in full sentences. Cite the text directly where a question asks for evidence.",
+      "meta": { "templateId": "story-vet", "templateLabel": "The Doctor Who Cannot Ask What Hurts", "age": 13 },
+      "blocks": [
+        { "kind": "instructions", "prompt": "Read the passage, then work through each part." },
+        {
+          "kind": "image",
+          "imageKey": "vet",
+          "notes": ["Veterinary is Latin for beasts of burden", "First vet school opened in Lyon in 1761", "Zoonoses: diseases shared by animals and people", "One Health links animal, human, and environment", "Prey species conceal weakness to avoid predators", "Vets know normal vital signs for dozens of species"]
+        },
+        {
+          "kind": "passage",
+          "prompt": "The Detective Who Works Without a Witness",
+          "text": "A physician and a veterinarian both begin with the same goal, a healthy patient, but the veterinarian starts from a much harder position. A doctor of humans studies a single species across an entire career. A veterinarian is expected to hold in mind the anatomy, diet, temperament, and normal vital signs of dozens of species at once, and to move among them without warning. In one morning a small-animal vet might examine a cat, a rabbit, a lizard, and a cockatoo, four creatures whose bodies agree on almost nothing. This breadth is the first thing that makes veterinary medicine so difficult, and it is invisible to most of the people who drop off a sick puppy and expect a quick answer. The second difficulty is deeper: the patient cannot speak, and often does not want to be understood. A human describes the ache and points to the spot. An animal offers only behavior, and prey animals go further and lie. A rabbit or a bird will hide the very symptoms a vet needs to see, because in the wild, visible weakness is an invitation to a predator. The vet, therefore, is a detective working a case in which the victim actively destroys the evidence. Diagnosis becomes a craft of inference: reading posture, coat, breathing rate, the temperature of an ear, the tension in an abdomen, the shadows on an x-ray, and assembling those fragments into an explanation the animal will never confirm. It is worth remembering how old and how practical this profession is. The first veterinary school opened in Lyon, France, in 1761, founded by Claude Bourgelat during an age when horses and oxen were the engines of farms and armies. The word veterinary itself descends from a Latin term meaning beasts of burden. For most of its history, the field existed to keep working animals working. The house cat and the family dog are recent arrivals at the center of the vet's attention. The least visible part of the work may be the most important. Roughly six in ten known human infectious diseases can pass between animals and people, a category scientists call zoonoses, and rabies, bird flu, and many forms of food poisoning belong to it. Every time a veterinarian vaccinates a dog, inspects a herd of cattle, or isolates a sick bird, they are reinforcing a barrier that guards human families as directly as animal ones. This idea now has a name, One Health, the recognition that the wellbeing of animals, people, and the shared environment cannot be separated. Put these threads together and the cuddly image dissolves. A veterinarian is a specialist in many bodies rather than one, a detective who must solve cases without a cooperating witness, an inheritor of a centuries-old craft born among working horses, and a frontline guardian of human health who happens to wear the uniform of an animal lover. The white coat is real. What it conceals is a job far harder, and far more consequential, than the puppy in its arms suggests."
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Answer in full sentences. Quote the text exactly where a question says to cite it.",
+          "items": [
+            "Summarize the passage in ONE sentence without reusing a full phrase from it.",
+            "The author calls the vet a detective working a case in which the victim actively destroys the evidence. Explain this comparison and why it fits.",
+            "What does the passage mean by One Health? Quote the exact phrase the author uses to define it.",
+            "Identify how the author structures the passage. What does each of the middle paragraphs add to the argument?",
+            "The passage opens with a cuddly image and ends by saying it dissolves. Analyze what the author is doing with that framing, and whether the passage earns the conclusion."
+          ],
+          "rows": 3,
+          "answers": [
+            "(original one-sentence summary of the vet's difficulty and importance)",
+            "(prey animals hide their symptoms, so the vet must infer illness the patient conceals; the animal is both the patient and the one erasing clues)",
+            "(the health of animals, humans, and environment are linked; quote: the recognition that the wellbeing of animals, people, and the shared environment cannot be separated)",
+            "(breadth of species, the speechless patient, the history, and the protection of people; each middle paragraph adds one reason the job is hard and important)",
+            "(the frame moves from an easy stereotype to a fuller picture; the body paragraphs supply the evidence that justifies dissolving it)"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Vocabulary in context. Define each from the passage, then use it in a sentence of your own.",
+          "items": ["temperament → ____", "inference → ____", "zoonoses → ____", "consequential → ____"],
+          "rows": 2,
+          "answers": [
+            "an animal's usual nature or mood",
+            "a conclusion reached from evidence rather than direct statement",
+            "diseases that can pass between animals and people",
+            "having important results or effects"
+          ]
+        },
+        {
+          "kind": "short-answer",
+          "prompt": "Go further.",
+          "items": [
+            "The passage says the field existed to keep working animals working for most of its history. How does that history help explain the profession we have today?",
+            "Write one question this passage does not answer, and name the kind of source that could answer it."
+          ],
+          "rows": 3,
+          "answers": [
+            "(the job grew from protecting valuable working animals; pets became central only recently)",
+            "(student question + a credible source such as a veterinary school or a practicing veterinarian)"
+          ]
+        },
+        {
+          "kind": "handwriting",
+          "prompt": "Write a structured paragraph responding to this claim: The hardest thing about being a veterinarian is not the science but the silent patient. State your position, give two pieces of evidence from the passage, and answer one objection to your view.",
+          "rows": 10
+        }
+      ]
+    }
+  }
+}
