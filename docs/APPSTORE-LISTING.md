@@ -3,9 +3,10 @@
 *Drafted 2026-08-20. Within Apple's character limits. No em dashes, no exclamation marks.
 Modeled on ~/Desktop/ember/APPSTORE-LISTING.md, the app currently in review.*
 
-**CONFIRM BEFORE PASTING:** the price numbers below are the CLAUDE.md figures
-($29.99/mo, $287.99/yr). Whatever is actually saved in App Store Connect wins.
-Fix these lines if ASC says something different.
+**Live ASC state, confirmed by Rork 2026-08-20.** App ID **6787588724**, bundle
+`app.rork.e6zi0zhad86wwugoir6bj`, team `FF9S7QFZPF`. Prices are **$24.99/mo** and
+**$239.99/yr**, NOT the $29.99 / $287.99 in CLAUDE.md. The ASC numbers are the real
+ones and this doc follows them.
 
 ---
 
@@ -24,6 +25,15 @@ Primary: Education. Secondary: Productivity.
 
 ## Age rating
 4+. No user-generated content shown to others, no web browser, no ads.
+
+**Do NOT enroll in the Kids Category.** Sprout's user is the parent, not the child. The
+Kids Category triggers a stricter review, bans third-party analytics and outbound links
+without a parental gate, and would put our Terms and Privacy links at risk. 4+ as a
+plain age rating is correct; the Kids Category checkbox is a separate thing and stays off.
+
+## Export compliance
+Already answered in the build. `ITSAppUsesNonExemptEncryption = NO` is set in both app
+build configurations, so Apple will not ask at upload. Nothing for Chase to decide.
 
 ## Keywords (100 chars max, commas, no spaces)
 `homeschool,homeschooling,journal,record keeping,portfolio,learning log,kids,tracker,parent,school`
@@ -63,9 +73,14 @@ If someone ever asks what your year looked like, you have it. Dated, in order, i
 THE RESOURCE LIBRARY, INCLUDED
 Your membership includes the full Sprout worksheet library at hisprout.app, hundreds of printable templates you can pull at any difficulty level. It normally sells on its own. Members get it at no extra cost.
 
+START FREE
+Try Sprout free for 7 days on the monthly plan or 14 days on the yearly plan. Sprout is
+a subscription app, so a membership is needed to use it after the trial. Cancel any time
+before the trial ends and you will not be charged.
+
 You are not raising a student. You are raising a human, and you are keeping the proof.
 
-Sprout membership is billed through your Apple Account and renews automatically until you cancel in your Apple Account settings. Terms of Use and Privacy Policy are linked in the app and at hisprout.app.
+Sprout membership is $24.99 per month or $239.99 per year, billed through your Apple Account and renews automatically until you cancel in your Apple Account settings. Terms of Use and Privacy Policy are linked in the app and at hisprout.app.
 
 ## Screenshot plan (7 ready at 1290x2796, captions baked in)
 Assets: `~/Desktop/sprout-appstore/OFFICIAL SPROUT APP STORE CARD IMAGES/`
@@ -127,23 +142,28 @@ uploaded. Nothing about a child's content reaches our servers.
 - Version Release: **Manually release this version.** Approval must not auto-publish.
 - Content Rights: no third-party content.
 
-## Subscriptions to create in ASC (before the submission, not after)
-One subscription group, "Sprout Membership". Entitlement in RevenueCat: `premium`.
+## Subscriptions in ASC (state confirmed by Rork 2026-08-20)
+Group: "Sprout Membership". RevenueCat project `proj257d2da8`, offering `default`,
+entitlement `premium`. All three packages attached in RevenueCat.
 
-| Product | Price | Intro offer | Notes |
-|---|---|---|---|
-| Monthly | $29.99 (confirm) | **7-day free trial** | must match `trialDays()` fallback of 7 |
-| Yearly | $287.99 (confirm) | **14-day free trial** | must match `trialDays()` fallback of 14 |
+| Product | ASC ID | Price | Intro offer | State |
+|---|---|---|---|---|
+| `sprout_monthly` | 6787602115 | $24.99, 175 territories | 7-day free trial (ONE_WEEK), all territories | **MISSING_METADATA** |
+| `sprout_yearly` | 6787603039 | $239.99, 175 territories | 14-day free trial (TWO_WEEKS), all territories | **MISSING_METADATA** |
+| `sprout_weekly` | does not exist in ASC | n/a | none | RevenueCat only |
 
-**This is the highest-risk item in the whole submission.** `PaywallView.trialDays()`
-falls back to 7 days monthly / 14 days yearly when a product has no introductory
-offer. So if the intro offers are missing in ASC, the paywall still tells the user
-they get a free trial and Apple charges them on day one. Ember hit this exact bug
-before submitting. Every product needs: price, availability set for all regions,
-localization, promo image, review screenshot, and the intro offer.
+**The trial risk is resolved.** 7 monthly and 14 yearly match `trialDays()`'s fallbacks
+exactly, so the paywall tells the truth whether or not StoreKit returns the offer.
 
-Also confirm whether a weekly plan still exists. The current paywall renders only
-yearly and monthly cards, so a weekly product in ASC would be orphaned.
+**Still blocking "Add for Review": both products are MISSING_METADATA.** Each one needs
+a display name, a description, and a review screenshot saved before it can be added.
+
+**`sprout_weekly` needs a decision.** It is attached to the current RevenueCat offering
+as `$rc_weekly` but has no App Store product behind it. The paywall only renders yearly
+and monthly cards, so nobody can buy it today and nobody gets a false trial promise.
+Recommend detaching `$rc_weekly` from the `default` offering rather than creating a
+weekly product, since the paywall does not sell weekly any more. Leaving it attached
+just throws errors in RevenueCat.
 
 ## Sequencing (from the Ember handoff, learned the hard way)
 1. Rork Publish uploads the build only. It does NOT create an App Review submission.
