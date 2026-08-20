@@ -165,6 +165,29 @@ Recommend detaching `$rc_weekly` from the `default` offering rather than creatin
 weekly product, since the paywall does not sell weekly any more. Leaving it attached
 just throws errors in RevenueCat.
 
+## Subscription localization (the MISSING_METADATA fix, paste-ready)
+Each product needs all three of these saved before "Add for Review" will accept it.
+ASC limits: Display Name 30 chars, Description 45 chars.
+
+**sprout_monthly (6787602115)**
+- Display Name: `Sprout Monthly` (14)
+- Description: `Everything in Sprout, billed monthly.` (37)
+
+**sprout_yearly (6787603039)**
+- Display Name: `Sprout Yearly` (13)
+- Description: `Everything in Sprout, billed yearly.` (36)
+
+**Review screenshot (both products):** a real capture of the paywall screen showing the
+plan cards and the price. Not one of the marketing cards, Apple wants the actual screen
+the user buys from. The same image can be used on both products.
+
+**Review note (both products):**
+```
+The paywall appears at the end of onboarding and is also reachable from Settings.
+Sign in with Apple happens on the step immediately before it. Terms of Use and
+Privacy Policy are linked on the paywall itself.
+```
+
 ## Sequencing (from the Ember handoff, learned the hard way)
 1. Rork Publish uploads the build only. It does NOT create an App Review submission.
 2. Create the subscription products in ASC and get them to "Ready to submit".
