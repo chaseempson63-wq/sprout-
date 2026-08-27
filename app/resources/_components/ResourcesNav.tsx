@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { showsResourcesNav } from "@/lib/resources/nav";
 import { useResources } from "@/lib/resources/store";
 import { unseenAnnouncements } from "@/lib/resources/announcements";
-import { RESOURCES_DEMO } from "@/lib/resources/demo";
+import { RESOURCES_DEMO, RESOURCES_MINIMAL } from "@/lib/resources/demo";
 
 /* Floating bottom nav for Sprout Resources. A row of icon pills sitting on a
    raised, 3D, wavy green "blob" a couple shades brighter than the page canvas,
@@ -31,7 +31,13 @@ export function ResourcesNav() {
   // Demo stage: Privacy moves to the site-wide policy; Build + Community stay
   // visible as coming-soon teases (their pages carry the preview). No unread
   // badge while the community is closed.
-  const items = RESOURCES_DEMO ? ITEMS.filter((i) => i.label !== "Privacy") : ITEMS;
+  // Minimal stage: only Library and Guide. Build and Community are hidden
+  // rather than shown as dead ends.
+  const items = RESOURCES_MINIMAL
+    ? ITEMS.filter((i) => i.label === "Library" || i.label === "Guide")
+    : RESOURCES_DEMO
+      ? ITEMS.filter((i) => i.label !== "Privacy")
+      : ITEMS;
   const unseen = RESOURCES_DEMO ? 0 : unseenAnnouncements(announcementsSeenAt);
 
   return (

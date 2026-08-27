@@ -27,7 +27,7 @@ import { colorClasses, useResources } from "@/lib/resources/store";
 import { capName, firstImageKey } from "@/lib/resources/util";
 import { GlassButton } from "@/components/ui/glass";
 import { cn } from "@/lib/utils";
-import { RESOURCES_DEMO } from "@/lib/resources/demo";
+import { RESOURCES_DEMO, RESOURCES_MINIMAL } from "@/lib/resources/demo";
 import { ComingSoonModal, type TeaseFeature } from "./_components/ComingSoon";
 import type { SavedWorksheet, Worksheet } from "@/lib/resources/types";
 
@@ -91,9 +91,11 @@ export default function LibraryHome() {
             We were born to <Typewriter words={BORN_TO} className="text-sprout-lime block whitespace-nowrap sm:inline" />
           </h1>
           <p className="text-sprout-cream/70 mt-5 text-base sm:mt-6 sm:text-lg">
-            {RESOURCES_DEMO
-              ? "336 worksheet templates, every one in 6 difficulty levels, free to print. Build-your-own and slideshows are coming soon."
-              : "Worksheets and slideshows, made to order for your kid. Free to print, always."}
+            {RESOURCES_MINIMAL
+              ? "336 worksheet templates, every one in 6 difficulty levels. Free to print, no account, no email."
+              : RESOURCES_DEMO
+                ? "336 worksheet templates, every one in 6 difficulty levels, free to print. Build-your-own and slideshows are coming soon."
+                : "Worksheets and slideshows, made to order for your kid. Free to print, always."}
           </p>
           <Link
             href={RESOURCES_DEMO ? "/privacy" : "/resources/privacy"}
@@ -104,11 +106,12 @@ export default function LibraryHome() {
         </div>
       </div>
 
-      {/* 2 · the prompt bar — the hero action (teases the builder in demo) */}
-      {ready && <PromptBar onTease={() => setTease("build")} />}
+      {/* 2 · the prompt bar — the hero action (teases the builder in demo).
+          Minimal stage: hidden, the search box below is the only action. */}
+      {ready && !RESOURCES_MINIMAL && <PromptBar onTease={() => setTease("build")} />}
 
       {/* 3 · creation row */}
-      {ready && (
+      {ready && !RESOURCES_MINIMAL && (
         <div className="mt-12 mb-14 grid grid-cols-1 items-stretch gap-5 sm:mt-16 sm:mb-20 md:grid-cols-3">
           <SlideshowCard onTease={() => setTease("slides")} />
           <CommunityCard onTease={() => setTease("community")} />
@@ -116,8 +119,9 @@ export default function LibraryHome() {
         </div>
       )}
 
-      {/* demo stage: the coming-soon preview pop-up */}
-      {tease && <ComingSoonModal feature={tease} onClose={() => setTease(null)} />}
+      {/* demo stage: the coming-soon preview pop-up. Unreachable in the
+          minimal stage since nothing sets `tease`, but gated anyway. */}
+      {tease && !RESOURCES_MINIMAL && <ComingSoonModal feature={tease} onClose={() => setTease(null)} />}
 
       {/* 4 · the paper control sheet */}
       <div className={cn(sheet, "mb-12 p-4 sm:p-6")}>
@@ -131,8 +135,9 @@ export default function LibraryHome() {
               </button>
             )}
           </div>
-          {/* Templates / Mine segmented switch */}
-          <div className="flex items-center gap-1 rounded-full border border-[#2E5A35]/15 bg-white p-1">
+          {/* Templates / Mine segmented switch. Minimal stage: only worth
+              showing once they actually have saved worksheets. */}
+          <div className={cn("flex items-center gap-1 rounded-full border border-[#2E5A35]/15 bg-white p-1", RESOURCES_MINIMAL && mine.length === 0 && "hidden")}>
             {/* No count on Templates. The library is 336 templates (306 story
                 sheets in 6 difficulty levels each, plus 30 skill templates),
                 and a filtered grid count undercuts that. My worksheets keeps

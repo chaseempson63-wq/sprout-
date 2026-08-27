@@ -9,3 +9,17 @@
 //
 // Safe to import anywhere: it's a plain constant, no env, no server-only code.
 export const RESOURCES_DEMO = true;
+
+// MINIMAL STAGE (2026-08-27, Chase's call): the live site is being sent to real
+// people as "336 free worksheets, no signup", and the coming-soon furniture was
+// getting in the way of that promise. People tapped the teases expecting a
+// product and hit a dead end, with a broken close button on the pop-up.
+//
+// While this is true the library page is just: header, one line, search, tags,
+// worksheets. Hidden behind it: the build-your-own prompt bar, the slideshow +
+// community teases, the coming-soon pop-up, the kid profile cards, the help
+// mascot, the first-run tutorial, and the Build/Community items in the nav.
+//
+// NOTHING IS DELETED. Set this to false and every one of those comes straight
+// back exactly as it was.
+export const RESOURCES_MINIMAL = true;

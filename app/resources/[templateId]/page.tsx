@@ -16,7 +16,7 @@ import { useResources } from "@/lib/resources/store";
 import { capName } from "@/lib/resources/util";
 import { GlassButton, GlassLink, GlassPanel } from "@/components/ui/glass";
 import type { ChatMessage, Worksheet } from "@/lib/resources/types";
-import { RESOURCES_DEMO } from "@/lib/resources/demo";
+import { RESOURCES_DEMO, RESOURCES_MINIMAL } from "@/lib/resources/demo";
 import { ComingSoonPage } from "../_components/ComingSoon";
 
 function summarize(w: Worksheet): string {
@@ -332,8 +332,9 @@ export default function Builder() {
       </div>
 
       {/* who is this for. The kid's profile sets the STARTING level; the tune
-          buttons above the sheet do all the adjusting from there. */}
-      <div className="no-print mb-6 flex flex-wrap items-center gap-2">
+          buttons above the sheet do all the adjusting from there.
+          Minimal stage: hidden, there are no profiles anywhere right now. */}
+      <div className={`no-print mb-6 flex flex-wrap items-center gap-2${RESOURCES_MINIMAL ? " hidden" : ""}`}>
         <span className="text-sprout-cream/60 text-sm">Making for:</span>
         {kids.map((k) => (
           <GlassButton
@@ -365,7 +366,8 @@ export default function Builder() {
       {!isCustom && (
         <p className="no-print -mt-2 mb-6 max-w-2xl text-sm leading-relaxed text-sprout-cream/60">
           Harder and easier change the actual work. Longer and shorter change how much of it.
-          Pick a kid and the sheet starts at their level. New version deals a fresh take.
+          {RESOURCES_MINIMAL ? " " : " Pick a kid and the sheet starts at their level. "}
+          New version deals a fresh take.
         </p>
       )}
 
@@ -549,7 +551,7 @@ export default function Builder() {
                 <button onClick={save} disabled={isSaved} className={finishBtn}>
                   <Check className="size-5" /> {isSaved ? "Saved" : "Save"}
                 </button>
-                <AddToKid worksheet={worksheet} source={source ?? "ai"} className="h-12 px-6 text-base" />
+                {!RESOURCES_MINIMAL && <AddToKid worksheet={worksheet} source={source ?? "ai"} className="h-12 px-6 text-base" />}
                 {isCustom && (
                   <button onClick={() => void publishCustom()} disabled={publishedIdx === idx} className={finishBtn}>
                     <Globe className="size-5" /> {publishedIdx === idx ? "Published" : "Publish"}

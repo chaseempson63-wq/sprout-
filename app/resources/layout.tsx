@@ -8,7 +8,7 @@ import { ResourcesNav } from "./_components/ResourcesNav";
 import { ResourcesTutorial } from "./_components/ResourcesTutorial";
 import { GlassFilter } from "@/components/ui/glass";
 import { ResourcesProvider } from "@/lib/resources/store";
-import { RESOURCES_DEMO } from "@/lib/resources/demo";
+import { RESOURCES_DEMO, RESOURCES_MINIMAL } from "@/lib/resources/demo";
 
 export const metadata: Metadata = {
   title: "Sprout Resources. Worksheets tailored to your child.",
@@ -25,10 +25,11 @@ export default function ResourcesLayout({ children }: { children: React.ReactNod
     <ResourcesProvider>
       {/* The page-load intro is mounted site-wide in the root layout. */}
       <GlassFilter />
-      {/* First-run how-to, once per session, after the intro finishes. */}
-      <ResourcesTutorial />
+      {/* First-run how-to, once per session, after the intro finishes.
+          Minimal stage: nothing pops over the library, you land on worksheets. */}
+      {!RESOURCES_MINIMAL && <ResourcesTutorial />}
       {/* Floating "need help?" Sprout → the how-to guide (hides itself on it). */}
-      <HelpMascot />
+      {!RESOURCES_MINIMAL && <HelpMascot />}
       {/* Floating bottom nav on a 3D green blob (hidden on the builder; see lib/resources/nav). */}
       <ResourcesNav />
       <div className="text-sprout-cream relative flex min-h-screen flex-col overflow-x-hidden">
