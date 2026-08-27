@@ -14,6 +14,17 @@ export const metadata: Metadata = {
   title: "Sprout Resources. Worksheets tailored to your child.",
   description:
     "336 free printable worksheet templates for ages 3 to 13, every one in 6 difficulty levels. No account, no email, no watermark. Your data stays yours.",
+  // Without this the page inherits the root card ("Where your kid's week of
+  // learning lives"), which pitches the app on a link people are sharing for
+  // the free worksheets. Every share of /resources should say what /resources is.
+  openGraph: {
+    title: "336 free homeschool worksheets. No account, no email.",
+    description:
+      "Printable worksheets for ages 3 to 13. Every story comes in 6 levels, so a 5 year old and an 11 year old can work from the same one at the same table.",
+    url: "https://hisprout.app/resources",
+    siteName: "Sprout",
+    type: "website",
+  },
 };
 
 // Same fractal-noise overlay the homepage uses over the green canvas.
